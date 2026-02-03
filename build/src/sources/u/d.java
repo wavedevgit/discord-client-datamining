@@ -6,10 +6,10 @@ import androidx.camera.camera2.internal.compat.quirk.SmallDisplaySizeQuirk;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SmallDisplaySizeQuirk f49964a = (SmallDisplaySizeQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(SmallDisplaySizeQuirk.class);
+    private final SmallDisplaySizeQuirk f50020a = (SmallDisplaySizeQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(SmallDisplaySizeQuirk.class);
 
     public Size a() {
-        SmallDisplaySizeQuirk smallDisplaySizeQuirk = this.f49964a;
+        SmallDisplaySizeQuirk smallDisplaySizeQuirk = this.f50020a;
         if (smallDisplaySizeQuirk != null) {
             return smallDisplaySizeQuirk.c();
         }

@@ -1,10 +1,10 @@
 package com.discord.chat.bridge.botuikit;
 
-import at.a2;
-import at.h0;
-import at.k1;
-import at.n2;
-import at.p0;
+import bt.a2;
+import bt.h0;
+import bt.k1;
+import bt.n2;
+import bt.p0;
 import com.discord.chat.bridge.media.UnfurledMediaItem;
 import com.discord.chat.bridge.media.UnfurledMediaItem$$serializer;
 import com.facebook.react.devsupport.StackTraceHelper;
@@ -17,9 +17,9 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import org.jetbrains.annotations.NotNull;
-import xs.b0;
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/botuikit/FileDisplayComponent.$serializer", "Lat/h0;", "Lcom/discord/chat/bridge/botuikit/FileDisplayComponent;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/botuikit/FileDisplayComponent;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/botuikit/FileDisplayComponent;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@ir.c
+import ys.b0;
+@jr.c
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/chat/bridge/botuikit/FileDisplayComponent.$serializer", "Lbt/h0;", "Lcom/discord/chat/bridge/botuikit/FileDisplayComponent;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/chat/bridge/botuikit/FileDisplayComponent;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/chat/bridge/botuikit/FileDisplayComponent;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public /* synthetic */ class FileDisplayComponent$$serializer implements h0 {
     @NotNull
@@ -46,11 +46,11 @@ public /* synthetic */ class FileDisplayComponent$$serializer implements h0 {
     private FileDisplayComponent$$serializer() {
     }
 
-    @Override // at.h0
+    @Override // bt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f6848a;
-        return new KSerializer[]{p0.f6864a, n2Var, UnfurledMediaItem$$serializer.INSTANCE, n2Var, n2Var, at.h.f6812a, ys.a.u(n2Var), ys.a.u(n2Var), ys.a.u(k1.f6831a)};
+        n2 n2Var = n2.f7662a;
+        return new KSerializer[]{p0.f7678a, n2Var, UnfurledMediaItem$$serializer.INSTANCE, n2Var, n2Var, bt.h.f7626a, zs.a.u(n2Var), zs.a.u(n2Var), zs.a.u(k1.f7645a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -77,12 +77,12 @@ public /* synthetic */ class FileDisplayComponent$$serializer implements h0 {
             String m11 = b10.m(serialDescriptor, 3);
             String m12 = b10.m(serialDescriptor, 4);
             boolean C = b10.C(serialDescriptor, 5);
-            n2 n2Var = n2.f6848a;
+            n2 n2Var = n2.f7662a;
             str = (String) b10.n(serialDescriptor, 7, n2Var, null);
             str2 = (String) b10.n(serialDescriptor, 6, n2Var, null);
             z10 = C;
             str4 = m11;
-            r30 = (Void) b10.n(serialDescriptor, 8, k1.f6831a, null);
+            r30 = (Void) b10.n(serialDescriptor, 8, k1.f7645a, null);
             str5 = m12;
             unfurledMediaItem = (UnfurledMediaItem) b10.y(serialDescriptor, 2, UnfurledMediaItem$$serializer.INSTANCE, null);
             str3 = m10;
@@ -137,15 +137,15 @@ public /* synthetic */ class FileDisplayComponent$$serializer implements h0 {
                         i14 |= 32;
                         break;
                     case 6:
-                        str10 = (String) b10.n(serialDescriptor, i13, n2.f6848a, str10);
+                        str10 = (String) b10.n(serialDescriptor, i13, n2.f7662a, str10);
                         i14 |= 64;
                         break;
                     case 7:
-                        str6 = (String) b10.n(serialDescriptor, i12, n2.f6848a, str6);
+                        str6 = (String) b10.n(serialDescriptor, i12, n2.f7662a, str6);
                         i14 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         break;
                     case 8:
-                        r92 = (Void) b10.n(serialDescriptor, 8, k1.f6831a, r92);
+                        r92 = (Void) b10.n(serialDescriptor, 8, k1.f7645a, r92);
                         i14 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         break;
                     default:
@@ -167,13 +167,13 @@ public /* synthetic */ class FileDisplayComponent$$serializer implements h0 {
         return new FileDisplayComponent(i11, i15, str3, unfurledMediaItem, str4, str5, z10, str2, str, r30, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, ys.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // xs.o
+    @Override // ys.o
     public final void serialize(@NotNull Encoder encoder, @NotNull FileDisplayComponent value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -183,7 +183,7 @@ public /* synthetic */ class FileDisplayComponent$$serializer implements h0 {
         b10.c(serialDescriptor);
     }
 
-    @Override // at.h0
+    @Override // bt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

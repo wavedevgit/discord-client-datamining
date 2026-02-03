@@ -10,22 +10,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class OboeAudioProcessor implements pl.a {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f18254f = new a(null);
+    public static final a f17883f = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f18255a;
+    private final int f17884a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f18256b;
+    private final int f17885b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final double f18257c;
+    private final double f17886c;
 
     /* renamed from: d  reason: collision with root package name */
-    private double f18258d;
+    private double f17887d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f18259e;
+    private long f17888e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -42,13 +42,13 @@ public final class OboeAudioProcessor implements pl.a {
     }
 
     public OboeAudioProcessor(int i10, int i11, int i12, int i13) {
-        this.f18255a = i10;
-        this.f18256b = i12;
+        this.f17884a = i10;
+        this.f17885b = i12;
         initProcessor(i10, i11, i12, i13);
         double d10 = i13;
-        this.f18257c = d10 / i11;
-        this.f18258d = 1000000.0d / d10;
-        this.f18259e = 0L;
+        this.f17886c = d10 / i11;
+        this.f17887d = 1000000.0d / d10;
+        this.f17888e = 0L;
     }
 
     private final native void initProcessor(int i10, int i11, int i12, int i13);
@@ -61,18 +61,18 @@ public final class OboeAudioProcessor implements pl.a {
     public void a(c sourceFrame, c targetFrame) {
         Intrinsics.checkNotNullParameter(sourceFrame, "sourceFrame");
         Intrinsics.checkNotNullParameter(targetFrame, "targetFrame");
-        ByteBuffer byteBuffer = sourceFrame.f28593b;
-        if (byteBuffer != null && targetFrame.f28593b != null) {
-            int i10 = sourceFrame.f28594c.size / (this.f18255a * 2);
+        ByteBuffer byteBuffer = sourceFrame.f28240b;
+        if (byteBuffer != null && targetFrame.f28240b != null) {
+            int i10 = sourceFrame.f28241c.size / (this.f17884a * 2);
             Intrinsics.checkNotNullExpressionValue(byteBuffer, "sourceFrame.buffer");
-            ByteBuffer byteBuffer2 = targetFrame.f28593b;
+            ByteBuffer byteBuffer2 = targetFrame.f28240b;
             Intrinsics.checkNotNullExpressionValue(byteBuffer2, "targetFrame.buffer");
-            int processAudioFrame = processAudioFrame(byteBuffer, i10, byteBuffer2, targetFrame.f28593b.capacity());
-            int i11 = processAudioFrame * 2 * this.f18256b;
-            targetFrame.f28593b.rewind();
-            targetFrame.f28593b.limit(Math.min(i11, targetFrame.f28593b.capacity()));
-            targetFrame.f28594c.set(0, i11, this.f18259e, sourceFrame.f28594c.flags);
-            this.f18259e += (long) (processAudioFrame * this.f18258d);
+            int processAudioFrame = processAudioFrame(byteBuffer, i10, byteBuffer2, targetFrame.f28240b.capacity());
+            int i11 = processAudioFrame * 2 * this.f17885b;
+            targetFrame.f28240b.rewind();
+            targetFrame.f28240b.limit(Math.min(i11, targetFrame.f28240b.capacity()));
+            targetFrame.f28241c.set(0, i11, this.f17888e, sourceFrame.f28241c.flags);
+            this.f17888e += (long) (processAudioFrame * this.f17887d);
             return;
         }
         throw new IllegalArgumentException("Source or target frame doesn't have a buffer, cannot process it!");

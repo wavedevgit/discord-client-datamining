@@ -12,7 +12,7 @@ import org.json.JSONException;
 public abstract class a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final int f15179a = Runtime.getRuntime().availableProcessors();
+    public static final int f14808a = Runtime.getRuntime().availableProcessors();
 
     public static int a(Intent intent, String str) {
         if (intent == null) {

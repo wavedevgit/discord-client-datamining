@@ -7,7 +7,7 @@ import com.discord.reactions.ReactionView;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.devsupport.StackTraceHelper;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -27,7 +27,7 @@ public final class TapReactionData implements ReactEvent {
     }
 
     /* renamed from: copy-AFFcxXc$default  reason: not valid java name */
-    public static /* synthetic */ TapReactionData m826copyAFFcxXc$default(TapReactionData tapReactionData, String str, ReactionView.Reaction reaction, Boolean bool, String str2, int i10, Object obj) {
+    public static /* synthetic */ TapReactionData m828copyAFFcxXc$default(TapReactionData tapReactionData, String str, ReactionView.Reaction reaction, Boolean bool, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapReactionData.messageId;
         }
@@ -40,12 +40,12 @@ public final class TapReactionData implements ReactEvent {
         if ((i10 & 8) != 0) {
             str2 = tapReactionData.location;
         }
-        return tapReactionData.m828copyAFFcxXc(str, reaction, bool, str2);
+        return tapReactionData.m830copyAFFcxXc(str, reaction, bool, str2);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m827component13Eiw7ao() {
+    public final String m829component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -63,7 +63,7 @@ public final class TapReactionData implements ReactEvent {
 
     @NotNull
     /* renamed from: copy-AFFcxXc  reason: not valid java name */
-    public final TapReactionData m828copyAFFcxXc(@NotNull String messageId, ReactionView.Reaction reaction, Boolean bool, String str) {
+    public final TapReactionData m830copyAFFcxXc(@NotNull String messageId, ReactionView.Reaction reaction, Boolean bool, String str) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         return new TapReactionData(messageId, reaction, bool, str, null);
     }
@@ -74,7 +74,7 @@ public final class TapReactionData implements ReactEvent {
         }
         if (obj instanceof TapReactionData) {
             TapReactionData tapReactionData = (TapReactionData) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, tapReactionData.messageId) && Intrinsics.areEqual(this.reaction, tapReactionData.reaction) && Intrinsics.areEqual(this.isBurst, tapReactionData.isBurst) && Intrinsics.areEqual(this.location, tapReactionData.location);
+            return MessageId.m1090equalsimpl0(this.messageId, tapReactionData.messageId) && Intrinsics.areEqual(this.reaction, tapReactionData.reaction) && Intrinsics.areEqual(this.isBurst, tapReactionData.isBurst) && Intrinsics.areEqual(this.location, tapReactionData.location);
         }
         return false;
     }
@@ -85,7 +85,7 @@ public final class TapReactionData implements ReactEvent {
 
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m829getMessageId3Eiw7ao() {
+    public final String m831getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -94,9 +94,9 @@ public final class TapReactionData implements ReactEvent {
     }
 
     public int hashCode() {
-        int m1089hashCodeimpl = MessageId.m1089hashCodeimpl(this.messageId) * 31;
+        int m1091hashCodeimpl = MessageId.m1091hashCodeimpl(this.messageId) * 31;
         ReactionView.Reaction reaction = this.reaction;
-        int hashCode = (m1089hashCodeimpl + (reaction == null ? 0 : reaction.hashCode())) * 31;
+        int hashCode = (m1091hashCodeimpl + (reaction == null ? 0 : reaction.hashCode())) * 31;
         Boolean bool = this.isBurst;
         int hashCode2 = (hashCode + (bool == null ? 0 : bool.hashCode())) * 31;
         String str = this.location;
@@ -131,11 +131,11 @@ public final class TapReactionData implements ReactEvent {
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         ReactionView.Reaction reaction = this.reaction;
         Boolean bool = this.isBurst;
         String str = this.location;
-        return "TapReactionData(messageId=" + m1091toStringimpl + ", reaction=" + reaction + ", isBurst=" + bool + ", location=" + str + ")";
+        return "TapReactionData(messageId=" + m1093toStringimpl + ", reaction=" + reaction + ", isBurst=" + bool + ", location=" + str + ")";
     }
 
     private TapReactionData(String messageId, ReactionView.Reaction reaction, Boolean bool, String str) {

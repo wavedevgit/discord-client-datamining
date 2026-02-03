@@ -1,129 +1,81 @@
 package qs;
 
-import j$.time.ZoneOffset;
-import j$.time.format.DateTimeFormatter;
-import kotlin.Metadata;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.KSerializer;
-import org.jetbrains.annotations.NotNull;
-import rs.p0;
-@Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\n\b\u0007\u0018\u0000 \u00152\u00020\u0001:\u0002\u0010\u0016B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u000f\u0010\u0007\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\u0007\u0010\bJ\u001a\u0010\u000b\u001a\u00020\n2\b\u0010\t\u001a\u0004\u0018\u00010\u0001H\u0096\u0002¢\u0006\u0004\b\u000b\u0010\fJ\u000f\u0010\u000e\u001a\u00020\rH\u0016¢\u0006\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0003\u001a\u00020\u00028\u0000X\u0080\u0004¢\u0006\f\n\u0004\b\u0010\u0010\u0011\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\u0014\u001a\u00020\u00068F¢\u0006\u0006\u001a\u0004\b\u0010\u0010\b¨\u0006\u0017"}, d2 = {"Lqs/k;", "", "j$/time/ZoneOffset", "zoneOffset", "<init>", "(Lj$/time/ZoneOffset;)V", "", "hashCode", "()I", "other", "", "equals", "(Ljava/lang/Object;)Z", "", "toString", "()Ljava/lang/String;", "a", "Lj$/time/ZoneOffset;", "getZoneOffset$kotlinx_datetime", "()Lj$/time/ZoneOffset;", "totalSeconds", "Companion", "b", "kotlinx-datetime"}, k = 1, mv = {1, 9, 0}, xi = 48)
-@xs.m(with = ws.j.class)
+import ms.e0;
+import ms.h0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class k {
-    @NotNull
-    public static final a Companion = new a(null);
+public abstract class k {
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final k f47664b;
+    /* renamed from: a */
+    private static final int f47854a;
 
-    /* renamed from: a  reason: collision with root package name */
-    private final ZoneOffset f47665a;
+    /* renamed from: b */
+    private static final e0 f47855b;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: c */
+    private static final e0 f47856c;
 
-        public static /* synthetic */ k b(a aVar, CharSequence charSequence, rs.n nVar, int i10, Object obj) {
-            if ((i10 & 2) != 0) {
-                nVar = n.a();
-            }
-            return aVar.a(charSequence, nVar);
-        }
+    /* renamed from: d */
+    private static final e0 f47857d;
 
-        public final k a(CharSequence input, rs.n format) {
-            DateTimeFormatter f10;
-            k i10;
-            DateTimeFormatter g10;
-            k i11;
-            DateTimeFormatter h10;
-            k i12;
-            Intrinsics.checkNotNullParameter(input, "input");
-            Intrinsics.checkNotNullParameter(format, "format");
-            b bVar = b.f47666a;
-            if (format == bVar.b()) {
-                h10 = m.h();
-                Intrinsics.checkNotNullExpressionValue(h10, "access$getIsoFormat(...)");
-                i12 = m.i(input, h10);
-                return i12;
-            } else if (format == bVar.c()) {
-                g10 = m.g();
-                Intrinsics.checkNotNullExpressionValue(g10, "access$getIsoBasicFormat(...)");
-                i11 = m.i(input, g10);
-                return i11;
-            } else if (format == bVar.a()) {
-                f10 = m.f();
-                Intrinsics.checkNotNullExpressionValue(f10, "access$getFourDigitsFormat(...)");
-                i10 = m.i(input, f10);
-                return i10;
-            } else {
-                return (k) format.a(input);
-            }
-        }
+    /* renamed from: e */
+    private static final e0 f47858e;
 
-        @NotNull
-        public final KSerializer serializer() {
-            return ws.j.f52783a;
-        }
-
-        private a() {
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final b f47666a = new b();
-
-        private b() {
-        }
-
-        public final rs.n a() {
-            return p0.b();
-        }
-
-        public final rs.n b() {
-            return p0.c();
-        }
-
-        public final rs.n c() {
-            return p0.d();
-        }
-    }
+    /* renamed from: f */
+    private static final int f47859f;
 
     static {
-        ZoneOffset UTC = ZoneOffset.UTC;
-        Intrinsics.checkNotNullExpressionValue(UTC, "UTC");
-        f47664b = new k(UTC);
+        int e10;
+        int e11;
+        e10 = h0.e("kotlinx.coroutines.semaphore.maxSpinCycles", 100, 0, 0, 12, null);
+        f47854a = e10;
+        f47855b = new e0("PERMIT");
+        f47856c = new e0("TAKEN");
+        f47857d = new e0("BROKEN");
+        f47858e = new e0("CANCELLED");
+        e11 = h0.e("kotlinx.coroutines.semaphore.segmentSize", 16, 0, 0, 12, null);
+        f47859f = e11;
     }
 
-    public k(ZoneOffset zoneOffset) {
-        Intrinsics.checkNotNullParameter(zoneOffset, "zoneOffset");
-        this.f47665a = zoneOffset;
+    public static final g a(int i10, int i11) {
+        return new j(i10, i11);
     }
 
-    public final int a() {
-        return this.f47665a.getTotalSeconds();
-    }
-
-    public boolean equals(Object obj) {
-        if ((obj instanceof k) && Intrinsics.areEqual(this.f47665a, ((k) obj).f47665a)) {
-            return true;
+    public static /* synthetic */ g b(int i10, int i11, int i12, Object obj) {
+        if ((i12 & 2) != 0) {
+            i11 = 0;
         }
-        return false;
+        return a(i10, i11);
     }
 
-    public int hashCode() {
-        return this.f47665a.hashCode();
+    public static final /* synthetic */ l c(long j10, l lVar) {
+        return j(j10, lVar);
     }
 
-    public String toString() {
-        String zoneOffset = this.f47665a.toString();
-        Intrinsics.checkNotNullExpressionValue(zoneOffset, "toString(...)");
-        return zoneOffset;
+    public static final /* synthetic */ e0 d() {
+        return f47857d;
+    }
+
+    public static final /* synthetic */ e0 e() {
+        return f47858e;
+    }
+
+    public static final /* synthetic */ int f() {
+        return f47854a;
+    }
+
+    public static final /* synthetic */ e0 g() {
+        return f47855b;
+    }
+
+    public static final /* synthetic */ int h() {
+        return f47859f;
+    }
+
+    public static final /* synthetic */ e0 i() {
+        return f47856c;
+    }
+
+    public static final l j(long j10, l lVar) {
+        return new l(j10, lVar, 0);
     }
 }

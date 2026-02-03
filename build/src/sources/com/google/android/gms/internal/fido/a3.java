@@ -6,16 +6,16 @@ import java.util.Objects;
 abstract class a3 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final String f14970a;
+    static final String f14599a;
 
     /* renamed from: b  reason: collision with root package name */
-    static final Comparator f14971b;
+    static final Comparator f14600b;
 
     /* JADX WARN: Multi-variable type inference failed */
     static {
         Comparator comparator;
         String concat = a3.class.getName().concat("$UnsafeComparator");
-        f14970a = concat;
+        f14599a = concat;
         try {
             Object[] enumConstants = Class.forName(concat).getEnumConstants();
             Objects.requireNonNull(enumConstants);
@@ -23,6 +23,6 @@ abstract class a3 {
         } catch (Throwable unused) {
             comparator = z2.INSTANCE;
         }
-        f14971b = comparator;
+        f14600b = comparator;
     }
 }

@@ -26,10 +26,10 @@ import kotlin.jvm.internal.Lambda;
 public final class v implements m {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final a f25626b = new a(null);
+    private static final a f25721b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final CredentialManager f25627a;
+    private final CredentialManager f25722a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class a {
@@ -45,23 +45,23 @@ public final class v implements m {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ j f25628d;
+        final /* synthetic */ j f25723d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(j jVar) {
             super(0);
-            this.f25628d = jVar;
+            this.f25723d = jVar;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
-            m1170invoke();
-            return Unit.f33298a;
+            m1173invoke();
+            return Unit.f33074a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
-        public final void m1170invoke() {
-            this.f25628d.a(new h2.j("Your device doesn't support credential manager"));
+        public final void m1173invoke() {
+            this.f25723d.a(new h2.j("Your device doesn't support credential manager"));
         }
     }
 
@@ -69,32 +69,32 @@ public final class v implements m {
     public static final class c implements OutcomeReceiver {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ j f25629a;
+        final /* synthetic */ j f25724a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ g2.b f25630b;
+        final /* synthetic */ g2.b f25725b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ v f25631c;
+        final /* synthetic */ v f25726c;
 
         c(j jVar, g2.b bVar, v vVar) {
-            this.f25629a = jVar;
-            this.f25630b = bVar;
-            this.f25631c = vVar;
+            this.f25724a = jVar;
+            this.f25725b = bVar;
+            this.f25726c = vVar;
         }
 
         public void a(CreateCredentialException error) {
             Intrinsics.checkNotNullParameter(error, "error");
             Log.i("CredManProvService", "CreateCredentialResponse error returned from framework");
-            this.f25629a.a(this.f25631c.d(error));
+            this.f25724a.a(this.f25726c.d(error));
         }
 
         public void b(CreateCredentialResponse response) {
             Intrinsics.checkNotNullParameter(response, "response");
             Log.i("CredManProvService", "Create Result returned from framework: ");
-            j jVar = this.f25629a;
-            c.a aVar = g2.c.f25579c;
-            String e10 = this.f25630b.e();
+            j jVar = this.f25724a;
+            c.a aVar = g2.c.f25674c;
+            String e10 = this.f25725b.e();
             Bundle data = response.getData();
             Intrinsics.checkNotNullExpressionValue(data, "response.data");
             jVar.onResult(aVar.a(e10, data));
@@ -113,23 +113,23 @@ public final class v implements m {
     static final class d extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ j f25632d;
+        final /* synthetic */ j f25727d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(j jVar) {
             super(0);
-            this.f25632d = jVar;
+            this.f25727d = jVar;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
-            m1171invoke();
-            return Unit.f33298a;
+            m1174invoke();
+            return Unit.f33074a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
-        public final void m1171invoke() {
-            this.f25632d.a(new h2.q("Your device doesn't support credential manager"));
+        public final void m1174invoke() {
+            this.f25727d.a(new h2.q("Your device doesn't support credential manager"));
         }
     }
 
@@ -137,26 +137,26 @@ public final class v implements m {
     public static final class e implements OutcomeReceiver {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ j f25633a;
+        final /* synthetic */ j f25728a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ v f25634b;
+        final /* synthetic */ v f25729b;
 
         e(j jVar, v vVar) {
-            this.f25633a = jVar;
-            this.f25634b = vVar;
+            this.f25728a = jVar;
+            this.f25729b = vVar;
         }
 
         public void a(GetCredentialException error) {
             Intrinsics.checkNotNullParameter(error, "error");
             Log.i("CredManProvService", "GetCredentialResponse error returned from framework");
-            this.f25633a.a(this.f25634b.e(error));
+            this.f25728a.a(this.f25729b.e(error));
         }
 
         public void b(GetCredentialResponse response) {
             Intrinsics.checkNotNullParameter(response, "response");
             Log.i("CredManProvService", "GetCredentialResponse returned from framework");
-            this.f25633a.onResult(this.f25634b.c(response));
+            this.f25728a.onResult(this.f25729b.c(response));
         }
 
         public /* bridge */ /* synthetic */ void onError(Throwable th2) {
@@ -170,7 +170,7 @@ public final class v implements m {
 
     public v(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f25627a = u.a(context.getSystemService("credential"));
+        this.f25722a = u.a(context.getSystemService("credential"));
     }
 
     private final CreateCredentialRequest a(g2.b bVar, Context context) {
@@ -185,7 +185,7 @@ public final class v implements m {
 
     private final GetCredentialRequest b(c0 c0Var) {
         q.a();
-        GetCredentialRequest.Builder a10 = o.a(c0.f25582f.a(c0Var));
+        GetCredentialRequest.Builder a10 = o.a(c0.f25677f.a(c0Var));
         for (l lVar : c0Var.a()) {
             r.a();
             a10.addCredentialOption(p.a(lVar.d(), lVar.c(), lVar.b()).setIsSystemProviderRequired(lVar.e()).setAllowedProviders(lVar.a()).build());
@@ -197,7 +197,7 @@ public final class v implements m {
     }
 
     private final boolean f(Function0 function0) {
-        if (this.f25627a == null) {
+        if (this.f25722a == null) {
             function0.invoke();
             return true;
         }
@@ -220,7 +220,7 @@ public final class v implements m {
         Intrinsics.checkNotNullParameter(response, "response");
         Credential credential = response.getCredential();
         Intrinsics.checkNotNullExpressionValue(credential, "response.credential");
-        h.a aVar = h.f25602c;
+        h.a aVar = h.f25697c;
         String type = credential.getType();
         Intrinsics.checkNotNullExpressionValue(type, "credential.type");
         Bundle data = credential.getData();
@@ -244,7 +244,7 @@ public final class v implements m {
 
     @Override // g2.m
     public boolean isAvailableOnDevice() {
-        if (Build.VERSION.SDK_INT >= 34 && this.f25627a != null) {
+        if (Build.VERSION.SDK_INT >= 34 && this.f25722a != null) {
             return true;
         }
         return false;
@@ -260,7 +260,7 @@ public final class v implements m {
             return;
         }
         c cVar = new c(callback, request, this);
-        CredentialManager credentialManager = this.f25627a;
+        CredentialManager credentialManager = this.f25722a;
         Intrinsics.checkNotNull(credentialManager);
         credentialManager.createCredential(context, a(request, context), cancellationSignal, executor, cVar);
     }
@@ -275,7 +275,7 @@ public final class v implements m {
             return;
         }
         e eVar = new e(callback, this);
-        CredentialManager credentialManager = this.f25627a;
+        CredentialManager credentialManager = this.f25722a;
         Intrinsics.checkNotNull(credentialManager);
         credentialManager.getCredential(context, b(request), cancellationSignal, executor, eVar);
     }

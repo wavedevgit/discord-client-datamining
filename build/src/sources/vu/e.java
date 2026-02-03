@@ -2,52 +2,43 @@ package vu;
 
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import lu.c;
+import kotlin.jvm.internal.Lambda;
+import vu.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface e extends lu.c {
+public final class e implements lu.b, c {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final e f51542a = new e();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        private static boolean a(e eVar, List list, Function2 function2) {
-            boolean b10 = eVar.b(CollectionsKt.o((Comparable) CollectionsKt.firstOrNull(list), (Comparable) pv.c.b(list)), function2);
-            boolean b11 = eVar.b(CollectionsKt.o((Comparable) pv.c.b(list), (Comparable) pv.c.c(list)), function2);
-            if (!b10 || !b11) {
-                return false;
-            }
-            return true;
+    static final class a extends Lambda implements Function1 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f51543d = new a();
+
+        a() {
+            super(1);
         }
 
-        public static boolean b(e eVar, List list, Function2 operator) {
-            Intrinsics.checkNotNullParameter(operator, "operator");
-            return c.a.b(eVar, list, operator);
+        @Override // kotlin.jvm.functions.Function1
+        /* renamed from: a */
+        public final Double invoke(List it) {
+            Intrinsics.checkNotNullParameter(it, "it");
+            return CollectionsKt.G0(it);
         }
+    }
 
-        public static boolean c(e eVar, List list, Function2 operator) {
-            List d10;
-            Intrinsics.checkNotNullParameter(operator, "operator");
-            if (list != null && (d10 = pv.a.d(list)) != null) {
-                if (d10.size() == 2) {
-                    return eVar.b(d10, operator);
-                }
-                if (d10.size() > 2) {
-                    return a(eVar, d10, operator);
-                }
-            }
-            return false;
-        }
+    private e() {
+    }
 
-        public static List d(e eVar, Comparable comparable, Comparable comparable2) {
-            return c.a.d(eVar, comparable, comparable2);
-        }
+    public Double a(Object obj, Function1 function1) {
+        return c.a.a(this, obj, function1);
+    }
 
-        public static List e(e eVar, Comparable comparable, Comparable comparable2) {
-            return c.a.e(eVar, comparable, comparable2);
-        }
-
-        public static Boolean f(e eVar, Object obj) {
-            return c.a.f(eVar, obj);
-        }
+    @Override // lu.b
+    public Object f(Object obj, Object obj2) {
+        return a(obj, a.f51543d);
     }
 }

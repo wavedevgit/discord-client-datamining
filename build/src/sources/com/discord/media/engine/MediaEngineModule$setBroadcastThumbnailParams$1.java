@@ -29,8 +29,8 @@ final class MediaEngineModule$setBroadcastThumbnailParams$1 extends kotlin.corou
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit invokeSuspend$lambda$0(CoroutineScope coroutineScope, MediaEngineModule mediaEngineModule, String str) {
-        gs.i.d(coroutineScope, gs.m0.c(), null, new MediaEngineModule$setBroadcastThumbnailParams$1$1$1(mediaEngineModule, str, null), 2, null);
-        return Unit.f33298a;
+        hs.i.d(coroutineScope, hs.m0.c(), null, new MediaEngineModule$setBroadcastThumbnailParams$1$1$1(mediaEngineModule, str, null), 2, null);
+        return Unit.f33074a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -44,7 +44,7 @@ final class MediaEngineModule$setBroadcastThumbnailParams$1 extends kotlin.corou
     public final Object invokeSuspend(Object obj) {
         Object awaitMediaEngine;
         final CoroutineScope coroutineScope;
-        Object f10 = or.b.f();
+        Object f10 = pr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -74,11 +74,11 @@ final class MediaEngineModule$setBroadcastThumbnailParams$1 extends kotlin.corou
                 return invokeSuspend$lambda$0;
             }
         });
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$setBroadcastThumbnailParams$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((MediaEngineModule$setBroadcastThumbnailParams$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

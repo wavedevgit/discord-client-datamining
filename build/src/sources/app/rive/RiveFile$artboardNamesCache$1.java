@@ -9,8 +9,8 @@ import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.e;
 import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function1;
-import or.b;
 import org.jetbrains.annotations.NotNull;
+import pr.b;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001H\u008a@"}, d2 = {"<anonymous>", "", ""}, k = 3, mv = {1, 9, 0}, xi = 48)
 @e(c = "app.rive.RiveFile$artboardNamesCache$1", f = "RiveFile.kt", l = {96}, m = "invokeSuspend")
@@ -45,17 +45,17 @@ public final class RiveFile$artboardNamesCache$1 extends k implements Function1<
         }
         c.b(obj);
         CommandQueue commandQueue$kotlin_release = this.this$0.getCommandQueue$kotlin_release();
-        long m31getFileHandleENT3xMk$kotlin_release = this.this$0.m31getFileHandleENT3xMk$kotlin_release();
+        long m33getFileHandleENT3xMk$kotlin_release = this.this$0.m33getFileHandleENT3xMk$kotlin_release();
         this.label = 1;
-        Object m127getArtboardNamesevklBmw = commandQueue$kotlin_release.m127getArtboardNamesevklBmw(m31getFileHandleENT3xMk$kotlin_release, this);
-        if (m127getArtboardNamesevklBmw == f10) {
+        Object m129getArtboardNamesevklBmw = commandQueue$kotlin_release.m129getArtboardNamesevklBmw(m33getFileHandleENT3xMk$kotlin_release, this);
+        if (m129getArtboardNamesevklBmw == f10) {
             return f10;
         }
-        return m127getArtboardNamesevklBmw;
+        return m129getArtboardNamesevklBmw;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public final Object invoke(Continuation<? super List<String>> continuation) {
-        return ((RiveFile$artboardNamesCache$1) create(continuation)).invokeSuspend(Unit.f33298a);
+        return ((RiveFile$artboardNamesCache$1) create(continuation)).invokeSuspend(Unit.f33074a);
     }
 }

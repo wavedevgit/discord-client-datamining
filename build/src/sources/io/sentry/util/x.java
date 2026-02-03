@@ -25,15 +25,15 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 public final class x implements f3 {
 
     /* renamed from: a  reason: collision with root package name */
-    final Map f30844a;
+    final Map f30410a;
 
     /* renamed from: b  reason: collision with root package name */
-    final ArrayDeque f30845b;
+    final ArrayDeque f30411b;
 
     public x(Map map) {
-        this.f30844a = map;
+        this.f30410a = map;
         ArrayDeque arrayDeque = new ArrayDeque();
-        this.f30845b = arrayDeque;
+        this.f30411b = arrayDeque;
         arrayDeque.addLast(map);
     }
 
@@ -67,7 +67,7 @@ public final class x implements f3 {
     }
 
     private Map w() {
-        Object peekLast = this.f30845b.peekLast();
+        Object peekLast = this.f30411b.peekLast();
         if (peekLast != null) {
             if (peekLast instanceof Map) {
                 return (Map) peekLast;
@@ -78,11 +78,11 @@ public final class x implements f3 {
     }
 
     private void x(Object obj) {
-        Object peekLast = this.f30845b.peekLast();
+        Object peekLast = this.f30411b.peekLast();
         if (peekLast instanceof List) {
             ((List) peekLast).add(obj);
         } else if (peekLast instanceof String) {
-            w().put((String) this.f30845b.removeLast(), obj);
+            w().put((String) this.f30411b.removeLast(), obj);
         } else {
             throw new IllegalStateException("Invalid stack state, expected array or string on top");
         }
@@ -224,14 +224,14 @@ public final class x implements f3 {
     @Override // io.sentry.f3
     /* renamed from: m */
     public x u() {
-        this.f30845b.add(new ArrayList());
+        this.f30411b.add(new ArrayList());
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: n */
     public x r() {
-        this.f30845b.addLast(new HashMap());
+        this.f30411b.addLast(new HashMap());
         return this;
     }
 
@@ -245,14 +245,14 @@ public final class x implements f3 {
     @Override // io.sentry.f3
     /* renamed from: p */
     public x y() {
-        x(this.f30845b.removeLast());
+        x(this.f30411b.removeLast());
         return this;
     }
 
     @Override // io.sentry.f3
     /* renamed from: q */
     public x e(String str) {
-        this.f30845b.add(str);
+        this.f30411b.add(str);
         return this;
     }
 

@@ -1,47 +1,24 @@
 package ct;
 
-import kotlin.Unit;
-import kotlin.collections.ArrayDeque;
 import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.json.JsonElement;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class g {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final ArrayDeque f21348a = new ArrayDeque();
-
-    /* renamed from: b  reason: collision with root package name */
-    private int f21349b;
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final void a(byte[] array) {
-        Intrinsics.checkNotNullParameter(array, "array");
-        synchronized (this) {
-            try {
-                if (this.f21349b + array.length < e.a()) {
-                    this.f21349b += array.length / 2;
-                    this.f21348a.addLast(array);
-                }
-                Unit unit = Unit.f33298a;
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
+    public static final JsonElement a(x xVar, String key, Boolean bool) {
+        Intrinsics.checkNotNullParameter(xVar, "<this>");
+        Intrinsics.checkNotNullParameter(key, "key");
+        return xVar.b(key, h.b(bool));
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final byte[] b(int i10) {
-        byte[] bArr;
-        synchronized (this) {
-            bArr = (byte[]) this.f21348a.o();
-            if (bArr != null) {
-                this.f21349b -= bArr.length / 2;
-            } else {
-                bArr = null;
-            }
-        }
-        if (bArr == null) {
-            return new byte[i10];
-        }
-        return bArr;
+    public static final JsonElement b(x xVar, String key, Number number) {
+        Intrinsics.checkNotNullParameter(xVar, "<this>");
+        Intrinsics.checkNotNullParameter(key, "key");
+        return xVar.b(key, h.c(number));
+    }
+
+    public static final JsonElement c(x xVar, String key, String str) {
+        Intrinsics.checkNotNullParameter(xVar, "<this>");
+        Intrinsics.checkNotNullParameter(key, "key");
+        return xVar.b(key, h.d(str));
     }
 }

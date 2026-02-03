@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
+    var2 = exports;
     var0 = require;
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
@@ -12,66 +12,356 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
-    var0 = {};
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var0 = undefined;
+    var2.isAVIF = var0;
+    var2.isBMP = var0;
+    var2.isBPG = var0;
+    var2.isCR2 = var0;
+    var2.isEXR = var0;
+    var2.isGIF = var0;
+    var2.isHEIC = var0;
+    var2.isICO = var0;
+    var2.isJPEG = var0;
+    var2.isPBM = var0;
+    var2.isPGM = var0;
+    var2.isPNG = var0;
+    var2.isPPM = var0;
+    var2.isPSD = var0;
+    var2.isWEBP = var0;
     var3 = function arg0() {
-        _fun37947: for (var _fun37947_ip = 0;;) switch (_fun37947_ip) {
+        _fun37845: for (var _fun37845_ip = 0;;) switch (_fun37845_ip) {
             case 0:
-                var2 = arg0;
-                var0 = var2;
-                var5 = undefined;
-                var1 = undefined;
-                if (var2) {
-                    _fun37947_ip = 17;
-                    continue _fun37947
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'avif';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37845_ip = 111;
+                    continue _fun37845
                 }
-            case 13:
-                var2 = false;
-                return var2;
-            case 17: // try_start_0
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var4 = 0;
-                var2 = var2[var4];
-                var3 = var3.bind(var5)(var2);
-                var2 = var3.parseBox;
-                var2 = var2.bind(var3)(var0, var4);
-                var1 = var2;
-                var0 = var2;
-                if (!var2) {
-                    _fun37947_ip = 97;
-                    continue _fun37947
-                }
-            case 60:
-                var3 = ['heic', 'heix', 'hevc', 'hevx', 'heim', 'heis', 'hevm', 'hevs', 'mif1'];
-                var2 = var3.indexOf;
-                var1 = var1.majorBrand;
-                var2 = var2.bind(var3)(var1);
-                var1 = -1;
-                var0 = var1 !== var2;
-            case 97: // try_end0
-                return var0;
-            case 99: // catch_target0
-                CatchBlockStart(arg_register = 0);
-                var0 = false;
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isAvifStringIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
                 return var0;
         }
     };
-    var0.isHeicFile = var3;
-    var2 = function arg0() {
+    var2.isAVIF = var3;
+    var3 = function arg0() {
         var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
+        var4 = _closure1_slot1;
         var0 = 0;
-        var1 = var1[var0];
-        var0 = undefined;
-        var2 = var2.bind(var0)(var1);
-        var1 = var2.findOffsets;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
         var0 = arg0;
-        var0 = var1.bind(var2)(var0);
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'bmp';
+        var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var0.findHeicOffsets = var2;
-    var1.default = var0;
-    var0 = undefined;
+    var2.isBMP = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'bpg';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isBPG = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'cr2';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isCR2 = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'exr';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isEXR = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'gif';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isGIF = var3;
+    var3 = function arg0() {
+        _fun37851: for (var _fun37851_ip = 0;;) switch (_fun37851_ip) {
+            case 0:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'avif';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37851_ip = 111;
+                    continue _fun37851
+                }
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isHeicSignatureIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
+                return var0;
+        }
+    };
+    var2.isHEIC = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'ico';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isICO = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'jpeg';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isJPEG = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'pbm';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isPBM = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'pgm';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isPGM = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'png';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isPNG = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'ppm';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isPPM = var3;
+    var3 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'psd';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isPSD = var3;
+    var1 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'webp';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isWEBP = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4140]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4133, 4134]);

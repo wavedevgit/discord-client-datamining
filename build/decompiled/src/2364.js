@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/age_assurance',
+        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcw==',
         'scales': null,
-        'hash': '3e5a719d41981b7ee55606d232f15d27',
-        'name': 'AgeAssurance.compiled.messages',
+        'hash': '5401e9f45d5da71337e6b5b892fa5a51',
+        'name': 'bg.messages.5401e9f45d5da71337e6b5b892fa5a51.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

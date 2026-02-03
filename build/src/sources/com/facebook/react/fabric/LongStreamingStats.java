@@ -14,7 +14,7 @@ public final class LongStreamingStats {
     @NotNull
     private final Queue<Long> minHeap = new PriorityQueue(11);
     @NotNull
-    private final Queue<Long> maxHeap = new PriorityQueue(11, lr.a.g());
+    private final Queue<Long> maxHeap = new PriorityQueue(11, mr.a.g());
 
     public final void add(long j10) {
         int i10;

@@ -28,10 +28,10 @@ public final class R {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class id {
-        public static int gradient = 0x7f0a025a;
-        public static int gradient_divider = 0x7f0a025c;
-        public static int gradient_icon = 0x7f0a025d;
-        public static int gradients = 0x7f0a025e;
+        public static int gradient = 0x7f0a025b;
+        public static int gradient_divider = 0x7f0a025d;
+        public static int gradient_icon = 0x7f0a025e;
+        public static int gradients = 0x7f0a025f;
 
         private id() {
         }

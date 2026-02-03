@@ -6,26 +6,26 @@ import java.util.Set;
 public final class p implements xb.i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Set f55508a;
+    private final Set f55640a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final o f55509b;
+    private final o f55641b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final s f55510c;
+    private final s f55642c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(Set set, o oVar, s sVar) {
-        this.f55508a = set;
-        this.f55509b = oVar;
-        this.f55510c = sVar;
+        this.f55640a = set;
+        this.f55641b = oVar;
+        this.f55642c = sVar;
     }
 
     @Override // xb.i
     public xb.h a(String str, Class cls, xb.c cVar, xb.g gVar) {
-        if (this.f55508a.contains(cVar)) {
-            return new r(this.f55509b, str, cVar, gVar, this.f55510c);
+        if (this.f55640a.contains(cVar)) {
+            return new r(this.f55641b, str, cVar, gVar, this.f55642c);
         }
-        throw new IllegalArgumentException(String.format("%s is not supported byt this factory. Supported encodings are: %s.", cVar, this.f55508a));
+        throw new IllegalArgumentException(String.format("%s is not supported byt this factory. Supported encodings are: %s.", cVar, this.f55640a));
     }
 }

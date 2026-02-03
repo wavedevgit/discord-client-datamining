@@ -5,14 +5,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final p4.m f5517a;
+    private final p4.m f5561a;
 
     public a0(p4.m id2) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        this.f5517a = id2;
+        this.f5561a = id2;
     }
 
     public final p4.m a() {
-        return this.f5517a;
+        return this.f5561a;
     }
 }

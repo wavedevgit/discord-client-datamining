@@ -1,222 +1,155 @@
 package on;
 
-import android.content.Context;
-import android.hardware.camera2.CameraCharacteristics;
-import android.hardware.camera2.CameraManager;
-import android.hardware.camera2.params.StreamConfigurationMap;
-import android.media.MediaRecorder;
-import android.util.Range;
+import android.graphics.Rect;
+import android.media.Image;
 import android.util.Size;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.NoSuchElementException;
-import kotlin.collections.CollectionsKt;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import java.nio.ByteBuffer;
+import kotlin.Result;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import mn.v;
+import nn.i0;
+import nn.j0;
+import on.a;
+import org.webrtc.PeerConnection;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class j {
+public final class j implements e {
+
+    /* renamed from: c  reason: collision with root package name */
+    public static final a f44573c = new a(null);
+
+    /* renamed from: a  reason: collision with root package name */
+    private final byte[] f44574a = new byte[PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS];
+
+    /* renamed from: b  reason: collision with root package name */
+    private final Size f44575b = new Size(0, 0);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public /* synthetic */ class a {
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f44556a;
-
-        static {
-            int[] iArr = new int[n.values().length];
-            try {
-                iArr[n.f44589d.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                iArr[n.f44590e.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
-            }
-            try {
-                iArr[n.f44591i.ordinal()] = 3;
-            } catch (NoSuchFieldError unused3) {
-            }
-            f44556a = iArr;
+        private a() {
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class b implements Comparator {
-        @Override // java.util.Comparator
-        public final int compare(Object obj, Object obj2) {
-            l lVar = (l) obj2;
-            l lVar2 = (l) obj;
-            return lr.a.d(Integer.valueOf(lVar.f().getWidth() * lVar.f().getHeight()), Integer.valueOf(lVar2.f().getWidth() * lVar2.f().getHeight()));
+    private final i0 b(ByteBuffer byteBuffer, int i10, int i11, Rect rect) {
+        if (i10 == 0 || i11 == 0) {
+            return null;
         }
+        long[] jArr = new long[IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER];
+        byteBuffer.rewind();
+        int width = rect.width() * rect.height();
+        int width2 = rect.width();
+        if (width2 > 32768) {
+            return null;
+        }
+        int i12 = rect.bottom;
+        long j10 = 0;
+        for (int i13 = rect.top; i13 < i12; i13++) {
+            byteBuffer.position((i13 * i10) + rect.left);
+            byteBuffer.get(this.f44574a, 0, width2);
+            for (int i14 = 0; i14 < width2; i14++) {
+                int i15 = this.f44574a[i14] & 255;
+                j10 += i15;
+                jArr[i15] = jArr[i15] + 1;
+            }
+        }
+        double d10 = j10 / width;
+        return new i0(d10 / 255.0d, e(byteBuffer, i10, (int) d10, rect), d(this, jArr, width, 0.0d, 0.0d, 12, null) / 255.0d, width);
     }
 
-    public static final List a(Context context) {
-        int i10;
-        v.b bVar;
-        StreamConfigurationMap streamConfigurationMap;
-        String[] strArr;
-        int i11;
-        Range range;
-        Intrinsics.checkNotNullParameter(context, "context");
-        Object systemService = context.getSystemService("camera");
-        Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.hardware.camera2.CameraManager");
-        CameraManager cameraManager = (CameraManager) systemService;
-        ArrayList arrayList = new ArrayList();
-        String[] cameraIdList = cameraManager.getCameraIdList();
-        Intrinsics.checkNotNullExpressionValue(cameraIdList, "getCameraIdList(...)");
-        int length = cameraIdList.length;
+    private final int c(long[] jArr, int i10, double d10, double d11) {
+        double d12 = 100;
+        double d13 = i10;
+        double floor = Math.floor((d10 / d12) * d13);
+        double floor2 = Math.floor((d11 / d12) * d13);
+        int length = jArr.length;
+        int i11 = 0;
+        long j10 = 0;
         int i12 = 0;
-        int i13 = 0;
-        while (i13 < length) {
-            String str = cameraIdList[i13];
-            CameraCharacteristics cameraCharacteristics = cameraManager.getCameraCharacteristics(str);
-            Intrinsics.checkNotNullExpressionValue(cameraCharacteristics, "getCameraCharacteristics(...)");
-            Integer num = (Integer) cameraCharacteristics.get(CameraCharacteristics.LENS_FACING);
-            Integer num2 = (Integer) cameraCharacteristics.get(CameraCharacteristics.SENSOR_ORIENTATION);
-            if (num2 != null) {
-                i10 = num2.intValue();
+        long j11 = 0;
+        while (true) {
+            if (i12 < length) {
+                j11 += jArr[i12];
+                if (j11 > floor) {
+                    break;
+                }
+                i12++;
             } else {
-                i10 = i12;
+                i12 = 0;
+                break;
             }
-            if (num != null && num.intValue() == 0) {
-                bVar = v.b.f39335d;
-            } else if (num != null && num.intValue() == 1) {
-                bVar = v.b.f39336e;
-            } else {
-                bVar = v.b.f39337i;
-            }
-            v.b bVar2 = bVar;
-            int[] iArr = (int[]) cameraCharacteristics.get(CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES);
-            if (iArr != null && (streamConfigurationMap = (StreamConfigurationMap) cameraCharacteristics.get(CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP)) != null && kotlin.collections.i.L(iArr, i12)) {
-                Range c10 = c(cameraCharacteristics, 30);
-                Class<MediaRecorder> cls = MediaRecorder.class;
-                Size[] outputSizes = streamConfigurationMap.getOutputSizes(cls);
-                Intrinsics.checkNotNullExpressionValue(outputSizes, "getOutputSizes(...)");
-                int length2 = outputSizes.length;
-                int i14 = i12;
-                while (i14 < length2) {
-                    Size[] sizeArr = outputSizes;
-                    Size size = sizeArr[i14];
-                    int i15 = i13;
-                    double outputMinFrameDuration = streamConfigurationMap.getOutputMinFrameDuration(cls, size) / 1.0E9d;
-                    double d10 = 0.0d;
-                    if (outputMinFrameDuration > 0.0d) {
-                        d10 = 1.0d / outputMinFrameDuration;
-                    }
-                    Class<MediaRecorder> cls2 = cls;
-                    double d11 = d10;
-                    Intrinsics.checkNotNull(str);
-                    Intrinsics.checkNotNull(size);
-                    CameraManager cameraManager2 = cameraManager;
-                    if (c10 == null) {
-                        strArr = cameraIdList;
-                        int i16 = (int) d11;
-                        i11 = length;
-                        range = new Range(Integer.valueOf(i16), Integer.valueOf(i16));
-                    } else {
-                        strArr = cameraIdList;
-                        i11 = length;
-                        range = c10;
-                    }
-                    arrayList.add(new l(str, size, d11, range, i10, bVar2, new o(0L, false, 3, null)));
-                    i14++;
-                    outputSizes = sizeArr;
-                    length2 = length2;
-                    cls = cls2;
-                    i13 = i15;
-                    cameraManager = cameraManager2;
-                    cameraIdList = strArr;
-                    length = i11;
+        }
+        double d14 = d13 - floor2;
+        int length2 = jArr.length - 1;
+        if (length2 >= 0) {
+            while (true) {
+                int i13 = length2 - 1;
+                j10 += jArr[length2];
+                if (j10 > d14) {
+                    i11 = length2;
+                    break;
+                } else if (i13 < 0) {
+                    break;
+                } else {
+                    length2 = i13;
                 }
             }
-            i13++;
-            cameraManager = cameraManager;
-            cameraIdList = cameraIdList;
-            length = length;
-            i12 = 0;
         }
-        ArrayList arrayList2 = new ArrayList();
-        for (Object obj : arrayList) {
-            l lVar = (l) obj;
-            if (lVar.f().getWidth() < 2000 && lVar.f().getHeight() < 2000) {
-                arrayList2.add(obj);
-            }
-        }
-        return arrayList2;
+        return i11 - i12;
     }
 
-    public static final m b(Context context, n cameraDirection) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        Intrinsics.checkNotNullParameter(cameraDirection, "cameraDirection");
-        ArrayList arrayList = new ArrayList();
-        for (Object obj : a(context)) {
-            if (((l) obj).c() == d(cameraDirection)) {
-                arrayList.add(obj);
-            }
+    static /* synthetic */ int d(j jVar, long[] jArr, int i10, double d10, double d11, int i11, Object obj) {
+        if ((i11 & 4) != 0) {
+            d10 = 1.0d;
         }
-        List W0 = CollectionsKt.W0(arrayList, new b());
-        if (W0.isEmpty()) {
-            return null;
+        double d12 = d10;
+        if ((i11 & 8) != 0) {
+            d11 = 99.0d;
         }
-        return new m((l) CollectionsKt.o0(W0), CollectionsKt.a1(CollectionsKt.f0(W0, 1), 2));
+        return jVar.c(jArr, i10, d12, d11);
     }
 
-    private static final Range c(CameraCharacteristics cameraCharacteristics, int i10) {
-        Range[] rangeArr = (Range[]) cameraCharacteristics.get(CameraCharacteristics.CONTROL_AE_AVAILABLE_TARGET_FPS_RANGES);
-        Range range = null;
-        if (rangeArr == null || rangeArr.length == 0) {
-            return null;
-        }
-        for (Range range2 : rangeArr) {
-            Comparable upper = range2.getUpper();
-            Intrinsics.checkNotNullExpressionValue(upper, "getUpper(...)");
-            int intValue = ((Number) upper).intValue();
-            if (intValue >= i10 && (range == null || intValue < ((Number) range.getUpper()).intValue())) {
-                range = range2;
+    private final double e(ByteBuffer byteBuffer, int i10, int i11, Rect rect) {
+        int width = rect.width() * rect.height();
+        int width2 = rect.width();
+        int i12 = rect.bottom;
+        long j10 = 0;
+        for (int i13 = rect.top; i13 < i12; i13++) {
+            byteBuffer.position((i13 * i10) + rect.left);
+            byteBuffer.get(this.f44574a, 0, width2);
+            for (int i14 = 0; i14 < width2; i14++) {
+                int i15 = (this.f44574a[i14] & 255) - i11;
+                j10 += i15 * i15;
             }
         }
-        if (range == null) {
-            if (rangeArr.length != 0) {
-                Range range3 = rangeArr[0];
-                int a02 = kotlin.collections.i.a0(rangeArr);
-                if (a02 == 0) {
-                    return range3;
-                }
-                Integer num = (Integer) range3.getUpper();
-                int i11 = 1;
-                if (1 <= a02) {
-                    while (true) {
-                        Range range4 = rangeArr[i11];
-                        Integer num2 = (Integer) range4.getUpper();
-                        if (num.compareTo(num2) < 0) {
-                            range3 = range4;
-                            num = num2;
-                        }
-                        if (i11 == a02) {
-                            break;
-                        }
-                        i11++;
-                    }
-                }
-                return range3;
-            }
-            throw new NoSuchElementException();
-        }
-        return range;
+        return Math.sqrt(j10 / width) / 128.0d;
     }
 
-    private static final v.b d(n nVar) {
-        int i10 = a.f44556a[nVar.ordinal()];
-        if (i10 != 1) {
-            if (i10 != 2) {
-                if (i10 == 3) {
-                    return v.b.f39337i;
-                }
-                throw new ir.p();
+    @Override // on.e
+    public Object a(j0 j0Var, Rect rect, Continuation continuation) {
+        Image.Plane plane;
+        int width = j0Var.A().getWidth();
+        int height = j0Var.A().getHeight();
+        Image.Plane[] planes = j0Var.A().getPlanes();
+        if (planes != null && (plane = planes[0]) != null) {
+            if (rect == null) {
+                rect = new Rect(0, 0, width, height);
             }
-            return v.b.f39336e;
+            ByteBuffer buffer = plane.getBuffer();
+            Intrinsics.checkNotNullExpressionValue(buffer, "getBuffer(...)");
+            i0 b10 = b(buffer, width, height, rect);
+            if (b10 == null) {
+                Result.a aVar = Result.f33071e;
+                return Result.b(a.b.f44551a);
+            }
+            Result.a aVar2 = Result.f33071e;
+            return Result.b(new a.e(b10));
         }
-        return v.b.f39335d;
+        Result.a aVar3 = Result.f33071e;
+        return Result.b(a.b.f44551a);
     }
 }

@@ -8,28 +8,28 @@ import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
 public class n implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeConstructor f36035d;
+    private final TypeConstructor f35811d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f36036e;
+    private final List f35812e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final TypeAttributes f36037i;
+    private final TypeAttributes f35813i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f36038o;
+    private final boolean f35814o;
 
     public n(TypeConstructor typeConstructor, List list, TypeAttributes typeAttributes, boolean z10) {
-        this.f36035d = typeConstructor;
-        this.f36036e = list;
-        this.f36037i = typeAttributes;
-        this.f36038o = z10;
+        this.f35811d = typeConstructor;
+        this.f35812e = list;
+        this.f35813i = typeAttributes;
+        this.f35814o = z10;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         SimpleType e10;
-        e10 = KotlinTypeFactory.e(this.f36035d, this.f36036e, this.f36037i, this.f36038o, (KotlinTypeRefiner) obj);
+        e10 = KotlinTypeFactory.e(this.f35811d, this.f35812e, this.f35813i, this.f35814o, (KotlinTypeRefiner) obj);
         return e10;
     }
 }

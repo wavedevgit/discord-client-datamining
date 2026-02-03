@@ -13,40 +13,40 @@ import tc.z;
 public final class a implements g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f8231a;
+    private final f f8087a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f8232b;
+    private final long f8088b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f8233c;
+    private final long f8089c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final i f8234d;
+    private final i f8090d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f8235e;
+    private int f8091e;
 
     /* renamed from: f  reason: collision with root package name */
-    private long f8236f;
+    private long f8092f;
 
     /* renamed from: g  reason: collision with root package name */
-    private long f8237g;
+    private long f8093g;
 
     /* renamed from: h  reason: collision with root package name */
-    private long f8238h;
+    private long f8094h;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f8239i;
+    private long f8095i;
 
     /* renamed from: j  reason: collision with root package name */
-    private long f8240j;
+    private long f8096j;
 
     /* renamed from: k  reason: collision with root package name */
-    private long f8241k;
+    private long f8097k;
 
     /* renamed from: l  reason: collision with root package name */
-    private long f8242l;
+    private long f8098l;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -56,7 +56,7 @@ public final class a implements g {
 
         @Override // tc.z
         public z.a e(long j10) {
-            return new z.a(new a0(j10, w0.r((a.this.f8232b + BigInteger.valueOf(a.this.f8234d.c(j10)).multiply(BigInteger.valueOf(a.this.f8233c - a.this.f8232b)).divide(BigInteger.valueOf(a.this.f8236f)).longValue()) - 30000, a.this.f8232b, a.this.f8233c - 1)));
+            return new z.a(new a0(j10, w0.r((a.this.f8088b + BigInteger.valueOf(a.this.f8090d.c(j10)).multiply(BigInteger.valueOf(a.this.f8089c - a.this.f8088b)).divide(BigInteger.valueOf(a.this.f8092f)).longValue()) - 30000, a.this.f8088b, a.this.f8089c - 1)));
         }
 
         @Override // tc.z
@@ -66,7 +66,7 @@ public final class a implements g {
 
         @Override // tc.z
         public long i() {
-            return a.this.f8234d.b(a.this.f8236f);
+            return a.this.f8090d.b(a.this.f8092f);
         }
     }
 
@@ -78,53 +78,53 @@ public final class a implements g {
             z11 = false;
         }
         ne.a.a(z11);
-        this.f8234d = iVar;
-        this.f8232b = j10;
-        this.f8233c = j11;
+        this.f8090d = iVar;
+        this.f8088b = j10;
+        this.f8089c = j11;
         if (j12 != j11 - j10 && !z10) {
-            this.f8235e = 0;
+            this.f8091e = 0;
         } else {
-            this.f8236f = j13;
-            this.f8235e = 4;
+            this.f8092f = j13;
+            this.f8091e = 4;
         }
-        this.f8231a = new f();
+        this.f8087a = new f();
     }
 
     private long i(l lVar) {
         long j10;
-        if (this.f8239i == this.f8240j) {
+        if (this.f8095i == this.f8096j) {
             return -1L;
         }
         long position = lVar.getPosition();
-        if (!this.f8231a.d(lVar, this.f8240j)) {
-            long j11 = this.f8239i;
+        if (!this.f8087a.d(lVar, this.f8096j)) {
+            long j11 = this.f8095i;
             if (j11 != position) {
                 return j11;
             }
             throw new IOException("No ogg page can be found.");
         }
-        this.f8231a.a(lVar, false);
+        this.f8087a.a(lVar, false);
         lVar.e();
-        long j12 = this.f8238h;
-        f fVar = this.f8231a;
-        long j13 = fVar.f8261c;
+        long j12 = this.f8094h;
+        f fVar = this.f8087a;
+        long j13 = fVar.f8117c;
         long j14 = j12 - j13;
-        int i10 = fVar.f8266h + fVar.f8267i;
+        int i10 = fVar.f8122h + fVar.f8123i;
         if (0 <= j14 && j14 < 72000) {
             return -1L;
         }
         int i11 = (j14 > 0L ? 1 : (j14 == 0L ? 0 : -1));
         if (i11 < 0) {
-            this.f8240j = position;
-            this.f8242l = j13;
+            this.f8096j = position;
+            this.f8098l = j13;
         } else {
-            this.f8239i = lVar.getPosition() + i10;
-            this.f8241k = this.f8231a.f8261c;
+            this.f8095i = lVar.getPosition() + i10;
+            this.f8097k = this.f8087a.f8117c;
         }
-        long j15 = this.f8240j;
-        long j16 = this.f8239i;
+        long j15 = this.f8096j;
+        long j16 = this.f8095i;
         if (j15 - j16 < 100000) {
-            this.f8240j = j16;
+            this.f8096j = j16;
             return j16;
         }
         long j17 = i10;
@@ -134,29 +134,29 @@ public final class a implements g {
             j10 = 1;
         }
         long position2 = lVar.getPosition() - (j17 * j10);
-        long j18 = this.f8240j;
-        long j19 = this.f8239i;
-        return w0.r(position2 + ((j14 * (j18 - j19)) / (this.f8242l - this.f8241k)), j19, j18 - 1);
+        long j18 = this.f8096j;
+        long j19 = this.f8095i;
+        return w0.r(position2 + ((j14 * (j18 - j19)) / (this.f8098l - this.f8097k)), j19, j18 - 1);
     }
 
     private void k(l lVar) {
         while (true) {
-            this.f8231a.c(lVar);
-            this.f8231a.a(lVar, false);
-            f fVar = this.f8231a;
-            if (fVar.f8261c > this.f8238h) {
+            this.f8087a.c(lVar);
+            this.f8087a.a(lVar, false);
+            f fVar = this.f8087a;
+            if (fVar.f8117c > this.f8094h) {
                 lVar.e();
                 return;
             }
-            lVar.k(fVar.f8266h + fVar.f8267i);
-            this.f8239i = lVar.getPosition();
-            this.f8241k = this.f8231a.f8261c;
+            lVar.k(fVar.f8122h + fVar.f8123i);
+            this.f8095i = lVar.getPosition();
+            this.f8097k = this.f8087a.f8117c;
         }
     }
 
     @Override // cd.g
     public long a(l lVar) {
-        int i10 = this.f8235e;
+        int i10 = this.f8091e;
         if (i10 != 0) {
             if (i10 != 1) {
                 if (i10 != 2) {
@@ -171,62 +171,62 @@ public final class a implements g {
                     if (i11 != -1) {
                         return i11;
                     }
-                    this.f8235e = 3;
+                    this.f8091e = 3;
                 }
                 k(lVar);
-                this.f8235e = 4;
-                return -(this.f8241k + 2);
+                this.f8091e = 4;
+                return -(this.f8097k + 2);
             }
         } else {
             long position = lVar.getPosition();
-            this.f8237g = position;
-            this.f8235e = 1;
-            long j10 = this.f8233c - 65307;
+            this.f8093g = position;
+            this.f8091e = 1;
+            long j10 = this.f8089c - 65307;
             if (j10 > position) {
                 return j10;
             }
         }
-        this.f8236f = j(lVar);
-        this.f8235e = 4;
-        return this.f8237g;
+        this.f8092f = j(lVar);
+        this.f8091e = 4;
+        return this.f8093g;
     }
 
     @Override // cd.g
     public void c(long j10) {
-        this.f8238h = w0.r(j10, 0L, this.f8236f - 1);
-        this.f8235e = 2;
-        this.f8239i = this.f8232b;
-        this.f8240j = this.f8233c;
-        this.f8241k = 0L;
-        this.f8242l = this.f8236f;
+        this.f8094h = w0.r(j10, 0L, this.f8092f - 1);
+        this.f8091e = 2;
+        this.f8095i = this.f8088b;
+        this.f8096j = this.f8089c;
+        this.f8097k = 0L;
+        this.f8098l = this.f8092f;
     }
 
     @Override // cd.g
     /* renamed from: h */
     public b b() {
-        if (this.f8236f == 0) {
+        if (this.f8092f == 0) {
             return null;
         }
         return new b();
     }
 
     long j(l lVar) {
-        this.f8231a.b();
-        if (this.f8231a.c(lVar)) {
-            this.f8231a.a(lVar, false);
-            f fVar = this.f8231a;
-            lVar.k(fVar.f8266h + fVar.f8267i);
-            long j10 = this.f8231a.f8261c;
+        this.f8087a.b();
+        if (this.f8087a.c(lVar)) {
+            this.f8087a.a(lVar, false);
+            f fVar = this.f8087a;
+            lVar.k(fVar.f8122h + fVar.f8123i);
+            long j10 = this.f8087a.f8117c;
             while (true) {
-                f fVar2 = this.f8231a;
-                if ((fVar2.f8260b & 4) == 4 || !fVar2.c(lVar) || lVar.getPosition() >= this.f8233c || !this.f8231a.a(lVar, true)) {
+                f fVar2 = this.f8087a;
+                if ((fVar2.f8116b & 4) == 4 || !fVar2.c(lVar) || lVar.getPosition() >= this.f8089c || !this.f8087a.a(lVar, true)) {
                     break;
                 }
-                f fVar3 = this.f8231a;
-                if (!n.e(lVar, fVar3.f8266h + fVar3.f8267i)) {
+                f fVar3 = this.f8087a;
+                if (!n.e(lVar, fVar3.f8122h + fVar3.f8123i)) {
                     break;
                 }
-                j10 = this.f8231a.f8261c;
+                j10 = this.f8087a.f8117c;
             }
             return j10;
         }

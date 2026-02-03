@@ -3,14 +3,14 @@ package kotlin.ranges;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c extends b implements zr.a {
+public final class c extends b implements as.a {
     @NotNull
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f33400p = new a(null);
+    public static final a f33176p = new a(null);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final c f33401q = new c(1, 0);
+    private static final c f33177q = new c(1, 0);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -19,7 +19,7 @@ public final class c extends b implements zr.a {
         }
 
         public final c a() {
-            return c.f33401q;
+            return c.f33177q;
         }
 
         private a() {
@@ -53,13 +53,13 @@ public final class c extends b implements zr.a {
         return (int) ((31 * (d() ^ (d() >>> 32))) + (e() ^ (e() >>> 32)));
     }
 
-    @Override // zr.a
+    @Override // as.a
     /* renamed from: i */
     public Long c() {
         return Long.valueOf(e());
     }
 
-    @Override // kotlin.ranges.b, zr.a
+    @Override // kotlin.ranges.b, as.a
     public boolean isEmpty() {
         if (d() > e()) {
             return true;
@@ -67,7 +67,7 @@ public final class c extends b implements zr.a {
         return false;
     }
 
-    @Override // zr.a
+    @Override // as.a
     /* renamed from: j */
     public Long b() {
         return Long.valueOf(d());

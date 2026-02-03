@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class SubmitDocumentRequest_MetaJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19515a;
+    private final m.b f19148a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19516b;
+    private final h f19149b;
 
     public SubmitDocumentRequest_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("fromStep", "fromComponent");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19515a = a10;
+        this.f19148a = a10;
         h f10 = moshi.f(String.class, x0.d(), "fromStep");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19516b = f10;
+        this.f19149b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,20 +37,20 @@ public final class SubmitDocumentRequest_MetaJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f19515a);
-            if (A0 != -1) {
-                if (A0 != 0) {
-                    if (A0 == 1 && (str2 = (String) this.f19516b.fromJson(reader)) == null) {
-                        throw sm.c.x("fromComponent", "fromComponent", reader);
+            int t02 = reader.t0(this.f19148a);
+            if (t02 != -1) {
+                if (t02 != 0) {
+                    if (t02 == 1 && (str2 = (String) this.f19149b.fromJson(reader)) == null) {
+                        throw tm.c.x("fromComponent", "fromComponent", reader);
                     }
                 } else {
-                    str = (String) this.f19516b.fromJson(reader);
+                    str = (String) this.f19149b.fromJson(reader);
                     if (str == null) {
-                        throw sm.c.x("fromStep", "fromStep", reader);
+                        throw tm.c.x("fromStep", "fromStep", reader);
                     }
                 }
             } else {
-                reader.E0();
+                reader.F0();
                 reader.P();
             }
         }
@@ -59,9 +59,9 @@ public final class SubmitDocumentRequest_MetaJsonAdapter extends h {
             if (str2 != null) {
                 return new SubmitDocumentRequest.Meta(str, str2);
             }
-            throw sm.c.o("fromComponent", "fromComponent", reader);
+            throw tm.c.o("fromComponent", "fromComponent", reader);
         }
-        throw sm.c.o("fromStep", "fromStep", reader);
+        throw tm.c.o("fromStep", "fromStep", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -70,10 +70,10 @@ public final class SubmitDocumentRequest_MetaJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (meta != null) {
             writer.l();
-            writer.A0("fromStep");
-            this.f19516b.toJson(writer, meta.b());
-            writer.A0("fromComponent");
-            this.f19516b.toJson(writer, meta.a());
+            writer.t0("fromStep");
+            this.f19149b.toJson(writer, meta.b());
+            writer.t0("fromComponent");
+            this.f19149b.toJson(writer, meta.a());
             writer.E();
             return;
         }

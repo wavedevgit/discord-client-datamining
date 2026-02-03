@@ -17,13 +17,13 @@ public class ProfileInstallReceiver extends BroadcastReceiver {
 
         @Override // androidx.profileinstaller.f.c
         public void a(int i10, Object obj) {
-            f.f4666b.a(i10, obj);
+            f.f4710b.a(i10, obj);
             ProfileInstallReceiver.this.setResultCode(i10);
         }
 
         @Override // androidx.profileinstaller.f.c
         public void b(int i10, Object obj) {
-            f.f4666b.b(i10, obj);
+            f.f4710b.b(i10, obj);
         }
     }
 

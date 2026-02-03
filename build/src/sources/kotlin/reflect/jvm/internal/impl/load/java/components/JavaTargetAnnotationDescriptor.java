@@ -1,7 +1,7 @@
 package kotlin.reflect.jvm.internal.impl.load.java.components;
 
-import ir.v;
 import java.util.Map;
+import jr.v;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
@@ -25,17 +25,17 @@ import org.jetbrains.annotations.NotNull;
 public final class JavaTargetAnnotationDescriptor extends JavaAnnotationDescriptor {
 
     /* renamed from: h  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f34103h = {Reflection.property1(new PropertyReference1Impl(JavaTargetAnnotationDescriptor.class, "allValueArguments", "getAllValueArguments()Ljava/util/Map;", 0))};
+    static final /* synthetic */ KProperty[] f33879h = {Reflection.property1(new PropertyReference1Impl(JavaTargetAnnotationDescriptor.class, "allValueArguments", "getAllValueArguments()Ljava/util/Map;", 0))};
 
     /* renamed from: g  reason: collision with root package name */
-    private final NotNullLazyValue f34104g;
+    private final NotNullLazyValue f33880g;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public JavaTargetAnnotationDescriptor(@NotNull JavaAnnotation annotation, @NotNull LazyJavaResolverContext c10) {
         super(c10, annotation, StandardNames.FqNames.target);
         Intrinsics.checkNotNullParameter(annotation, "annotation");
         Intrinsics.checkNotNullParameter(c10, "c");
-        this.f34104g = c10.getStorageManager().createLazyValue(new e(this));
+        this.f33880g = c10.getStorageManager().createLazyValue(new e(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -62,6 +62,6 @@ public final class JavaTargetAnnotationDescriptor extends JavaAnnotationDescript
     @Override // kotlin.reflect.jvm.internal.impl.load.java.components.JavaAnnotationDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public Map<Name, ConstantValue<Object>> getAllValueArguments() {
-        return (Map) StorageKt.getValue(this.f34104g, this, f34103h[0]);
+        return (Map) StorageKt.getValue(this.f33880g, this, f33879h[0]);
     }
 }

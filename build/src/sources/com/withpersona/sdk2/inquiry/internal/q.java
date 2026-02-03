@@ -11,43 +11,43 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
-import mo.b2;
-@Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0018\b\u0000\u0018\u0000 32\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0003#\u001f\u001dBa\b\u0007\u0012\b\b\u0001\u0010\u0004\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0005\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0007\u001a\u00020\u0006\u0012\b\b\u0001\u0010\t\u001a\u00020\b\u0012\u0006\u0010\u000b\u001a\u00020\n\u0012\u0006\u0010\r\u001a\u00020\f\u0012\u0006\u0010\u000f\u001a\u00020\u000e\u0012\u0006\u0010\u0011\u001a\u00020\u0010\u0012\u0006\u0010\u0013\u001a\u00020\u0012\u0012\u0006\u0010\u0015\u001a\u00020\u0014¢\u0006\u0004\b\u0016\u0010\u0017J\u0015\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00020\u0018H\u0016¢\u0006\u0004\b\u0019\u0010\u001aJ\u001b\u0010\u001d\u001a\u00020\u001c2\n\u0010\u001b\u001a\u0006\u0012\u0002\b\u00030\u0001H\u0016¢\u0006\u0004\b\u001d\u0010\u001eR\u0017\u0010\u0004\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b\u001f\u0010 \u001a\u0004\b!\u0010\"R\u0017\u0010\u0005\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b#\u0010 \u001a\u0004\b$\u0010\"R\u0014\u0010\u0007\u001a\u00020\u00068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b%\u0010&R\u0014\u0010\t\u001a\u00020\b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b'\u0010(R\u0014\u0010\u000b\u001a\u00020\n8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b)\u0010*R\u0014\u0010\r\u001a\u00020\f8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b+\u0010,R\u0014\u0010\u000f\u001a\u00020\u000e8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b-\u0010.R\u0014\u0010\u0011\u001a\u00020\u00108\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b$\u0010/R\u0014\u0010\u0013\u001a\u00020\u00128\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b!\u00100R\u0014\u0010\u0015\u001a\u00020\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b1\u00102¨\u00064"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/q;", "Ltm/o;", "Lcom/withpersona/sdk2/inquiry/internal/q$c;", "", "sessionToken", "inquiryId", "Lmo/b2;", "pollingMode", "Lqp/g;", "inquirySessionConfig", "Landroid/content/Context;", "applicationContext", "Lso/r;", "service", "Lun/a;", "deviceIdProvider", "Lcp/c;", "sandboxFlags", "Lqo/i;", "fallbackModeManager", "Ldq/a;", "fontDownloader", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lmo/b2;Lqp/g;Landroid/content/Context;Lso/r;Lun/a;Lcp/c;Lqo/i;Ldq/a;)V", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "otherWorker", "", "a", "(Ltm/o;)Z", "b", "Ljava/lang/String;", "j", "()Ljava/lang/String;", "c", "i", "d", "Lmo/b2;", "e", "Lqp/g;", "f", "Landroid/content/Context;", "g", "Lso/r;", "h", "Lun/a;", "Lcp/c;", "Lqo/i;", "k", "Ldq/a;", "l", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import no.b2;
+@Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0018\b\u0000\u0018\u0000 32\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0003#\u001f\u001dBa\b\u0007\u0012\b\b\u0001\u0010\u0004\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0005\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0007\u001a\u00020\u0006\u0012\b\b\u0001\u0010\t\u001a\u00020\b\u0012\u0006\u0010\u000b\u001a\u00020\n\u0012\u0006\u0010\r\u001a\u00020\f\u0012\u0006\u0010\u000f\u001a\u00020\u000e\u0012\u0006\u0010\u0011\u001a\u00020\u0010\u0012\u0006\u0010\u0013\u001a\u00020\u0012\u0012\u0006\u0010\u0015\u001a\u00020\u0014¢\u0006\u0004\b\u0016\u0010\u0017J\u0015\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00020\u0018H\u0016¢\u0006\u0004\b\u0019\u0010\u001aJ\u001b\u0010\u001d\u001a\u00020\u001c2\n\u0010\u001b\u001a\u0006\u0012\u0002\b\u00030\u0001H\u0016¢\u0006\u0004\b\u001d\u0010\u001eR\u0017\u0010\u0004\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b\u001f\u0010 \u001a\u0004\b!\u0010\"R\u0017\u0010\u0005\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b#\u0010 \u001a\u0004\b$\u0010\"R\u0014\u0010\u0007\u001a\u00020\u00068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b%\u0010&R\u0014\u0010\t\u001a\u00020\b8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b'\u0010(R\u0014\u0010\u000b\u001a\u00020\n8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b)\u0010*R\u0014\u0010\r\u001a\u00020\f8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b+\u0010,R\u0014\u0010\u000f\u001a\u00020\u000e8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b-\u0010.R\u0014\u0010\u0011\u001a\u00020\u00108\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b$\u0010/R\u0014\u0010\u0013\u001a\u00020\u00128\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b!\u00100R\u0014\u0010\u0015\u001a\u00020\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b1\u00102¨\u00064"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/q;", "Lum/o;", "Lcom/withpersona/sdk2/inquiry/internal/q$c;", "", "sessionToken", "inquiryId", "Lno/b2;", "pollingMode", "Lrp/g;", "inquirySessionConfig", "Landroid/content/Context;", "applicationContext", "Lto/r;", "service", "Lvn/a;", "deviceIdProvider", "Ldp/c;", "sandboxFlags", "Lro/i;", "fallbackModeManager", "Leq/a;", "fontDownloader", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lno/b2;Lrp/g;Landroid/content/Context;Lto/r;Lvn/a;Ldp/c;Lro/i;Leq/a;)V", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "otherWorker", "", "a", "(Lum/o;)Z", "b", "Ljava/lang/String;", "j", "()Ljava/lang/String;", "c", "i", "d", "Lno/b2;", "e", "Lrp/g;", "f", "Landroid/content/Context;", "g", "Lto/r;", "h", "Lvn/a;", "Ldp/c;", "Lro/i;", "k", "Leq/a;", "l", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class q implements tm.o<c> {
+public final class q implements um.o<c> {
 
     /* renamed from: l  reason: collision with root package name */
-    public static final a f20327l = new a(null);
+    public static final a f19960l = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f20328b;
+    private final String f19961b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f20329c;
+    private final String f19962c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b2 f20330d;
+    private final b2 f19963d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final qp.g f20331e;
+    private final rp.g f19964e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Context f20332f;
+    private final Context f19965f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final so.r f20333g;
+    private final to.r f19966g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final un.a f20334h;
+    private final vn.a f19967h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final cp.c f20335i;
+    private final dp.c f19968i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final qo.i f20336j;
+    private final ro.i f19969j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final dq.a f20337k;
+    private final eq.a f19970k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -61,7 +61,7 @@ public final class q implements tm.o<c> {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface b {
-        q a(String str, String str2, b2 b2Var, qp.g gVar);
+        q a(String str, String str2, b2 b2Var, rp.g gVar);
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -71,32 +71,32 @@ public final class q implements tm.o<c> {
         public static final class a extends c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f20338a;
+            private final InternalErrorInfo f19971a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(InternalErrorInfo cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f20338a = cause;
+                this.f19971a = cause;
             }
 
             public final InternalErrorInfo a() {
-                return this.f20338a;
+                return this.f19971a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof a) && Intrinsics.areEqual(this.f20338a, ((a) obj).f20338a);
+                return (obj instanceof a) && Intrinsics.areEqual(this.f19971a, ((a) obj).f19971a);
             }
 
             public int hashCode() {
-                return this.f20338a.hashCode();
+                return this.f19971a.hashCode();
             }
 
             public String toString() {
-                InternalErrorInfo internalErrorInfo = this.f20338a;
+                InternalErrorInfo internalErrorInfo = this.f19971a;
                 return "Error(cause=" + internalErrorInfo + ")";
             }
         }
@@ -105,32 +105,32 @@ public final class q implements tm.o<c> {
         public static final class b extends c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final l f20339a;
+            private final l f19972a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public b(l nextState) {
                 super(null);
                 Intrinsics.checkNotNullParameter(nextState, "nextState");
-                this.f20339a = nextState;
+                this.f19972a = nextState;
             }
 
             public final l a() {
-                return this.f20339a;
+                return this.f19972a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof b) && Intrinsics.areEqual(this.f20339a, ((b) obj).f20339a);
+                return (obj instanceof b) && Intrinsics.areEqual(this.f19972a, ((b) obj).f19972a);
             }
 
             public int hashCode() {
-                return this.f20339a.hashCode();
+                return this.f19972a.hashCode();
             }
 
             public String toString() {
-                l lVar = this.f20339a;
+                l lVar = this.f19972a;
                 return "Success(nextState=" + lVar + ")";
             }
         }
@@ -147,25 +147,25 @@ public final class q implements tm.o<c> {
     static final class d extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f20340d;
+        Object f19973d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f20341e;
+        Object f19974e;
 
         /* renamed from: i  reason: collision with root package name */
-        long f20342i;
+        long f19975i;
 
         /* renamed from: o  reason: collision with root package name */
-        int f20343o;
+        int f19976o;
 
         /* renamed from: p  reason: collision with root package name */
-        private /* synthetic */ Object f20344p;
+        private /* synthetic */ Object f19977p;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public /* synthetic */ class a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f20346a;
+            public static final /* synthetic */ int[] f19979a;
 
             static {
                 int[] iArr = new int[CheckInquiryResponse.PollingMode.values().length];
@@ -181,7 +181,7 @@ public final class q implements tm.o<c> {
                     iArr[CheckInquiryResponse.PollingMode.None.ordinal()] = 3;
                 } catch (NoSuchFieldError unused3) {
                 }
-                f20346a = iArr;
+                f19979a = iArr;
             }
         }
 
@@ -192,7 +192,7 @@ public final class q implements tm.o<c> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             d dVar = new d(continuation);
-            dVar.f20344p = obj;
+            dVar.f19977p = obj;
             return dVar;
         }
 
@@ -209,7 +209,7 @@ public final class q implements tm.o<c> {
             if (r4.emit(r1, r17) == r6) goto L19;
          */
         /* JADX WARN: Code restructure failed: missing block: B:83:0x027e, code lost:
-            if (gs.i0.a(r7, r17) == r6) goto L19;
+            if (hs.i0.a(r7, r17) == r6) goto L19;
          */
         /* JADX WARN: Code restructure failed: missing block: B:89:0x02af, code lost:
             if (r14.emit(r0, r17) == r6) goto L19;
@@ -236,11 +236,11 @@ public final class q implements tm.o<c> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f33298a);
+            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
-    public q(String sessionToken, String inquiryId, b2 pollingMode, qp.g inquirySessionConfig, Context applicationContext, so.r service, un.a deviceIdProvider, cp.c sandboxFlags, qo.i fallbackModeManager, dq.a fontDownloader) {
+    public q(String sessionToken, String inquiryId, b2 pollingMode, rp.g inquirySessionConfig, Context applicationContext, to.r service, vn.a deviceIdProvider, dp.c sandboxFlags, ro.i fallbackModeManager, eq.a fontDownloader) {
         Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
         Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
         Intrinsics.checkNotNullParameter(pollingMode, "pollingMode");
@@ -251,24 +251,24 @@ public final class q implements tm.o<c> {
         Intrinsics.checkNotNullParameter(sandboxFlags, "sandboxFlags");
         Intrinsics.checkNotNullParameter(fallbackModeManager, "fallbackModeManager");
         Intrinsics.checkNotNullParameter(fontDownloader, "fontDownloader");
-        this.f20328b = sessionToken;
-        this.f20329c = inquiryId;
-        this.f20330d = pollingMode;
-        this.f20331e = inquirySessionConfig;
-        this.f20332f = applicationContext;
-        this.f20333g = service;
-        this.f20334h = deviceIdProvider;
-        this.f20335i = sandboxFlags;
-        this.f20336j = fallbackModeManager;
-        this.f20337k = fontDownloader;
+        this.f19961b = sessionToken;
+        this.f19962c = inquiryId;
+        this.f19963d = pollingMode;
+        this.f19964e = inquirySessionConfig;
+        this.f19965f = applicationContext;
+        this.f19966g = service;
+        this.f19967h = deviceIdProvider;
+        this.f19968i = sandboxFlags;
+        this.f19969j = fallbackModeManager;
+        this.f19970k = fontDownloader;
     }
 
-    @Override // tm.o
-    public boolean a(tm.o otherWorker) {
+    @Override // um.o
+    public boolean a(um.o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
         if (otherWorker instanceof q) {
             q qVar = (q) otherWorker;
-            if (Intrinsics.areEqual(this.f20328b, qVar.f20328b) && Intrinsics.areEqual(this.f20329c, qVar.f20329c) && this.f20330d == qVar.f20330d) {
+            if (Intrinsics.areEqual(this.f19961b, qVar.f19961b) && Intrinsics.areEqual(this.f19962c, qVar.f19962c) && this.f19963d == qVar.f19963d) {
                 return true;
             }
             return false;
@@ -277,15 +277,15 @@ public final class q implements tm.o<c> {
     }
 
     public final String i() {
-        return this.f20329c;
+        return this.f19962c;
     }
 
     public final String j() {
-        return this.f20328b;
+        return this.f19961b;
     }
 
-    @Override // tm.o
+    @Override // um.o
     public Flow run() {
-        return js.g.v(new d(null));
+        return ks.g.v(new d(null));
     }
 }

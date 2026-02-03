@@ -9,20 +9,20 @@ import kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptor
 public class m implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedClassDescriptor f35749d;
+    private final DeserializedClassDescriptor f35525d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ProtoBuf.EnumEntry f35750e;
+    private final ProtoBuf.EnumEntry f35526e;
 
     public m(DeserializedClassDescriptor deserializedClassDescriptor, ProtoBuf.EnumEntry enumEntry) {
-        this.f35749d = deserializedClassDescriptor;
-        this.f35750e = enumEntry;
+        this.f35525d = deserializedClassDescriptor;
+        this.f35526e = enumEntry;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List g10;
-        g10 = DeserializedClassDescriptor.b.g(this.f35749d, this.f35750e);
+        g10 = DeserializedClassDescriptor.b.g(this.f35525d, this.f35526e);
         return g10;
     }
 }

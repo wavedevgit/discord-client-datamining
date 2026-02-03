@@ -7,20 +7,20 @@ import og.ye;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f53397a;
+    private final int f53605a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f53398b;
+    private final List f53606b;
 
     public b(int i10, List list) {
-        this.f53397a = i10;
-        this.f53398b = list;
+        this.f53605a = i10;
+        this.f53606b = list;
     }
 
     public String toString() {
         xe a10 = ye.a("FaceContour");
-        a10.b("type", this.f53397a);
-        a10.c("points", this.f53398b.toArray());
+        a10.b("type", this.f53605a);
+        a10.c("points", this.f53606b.toArray());
         return a10.toString();
     }
 }

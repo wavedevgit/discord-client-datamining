@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/native/hooks/useIsForumChannelSearchActive.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun72178: for (var _fun72178_ip = 0;;) switch (_fun72178_ip) {
+        _fun72287: for (var _fun72287_ip = 0;;) switch (_fun72287_ip) {
             case 0:
                 var6 = arg0;
                 var _closure2_slot0 = var6;
@@ -49,14 +49,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var6;
                 var1 = function() { // Environment: var1
-                    _fun72179: for (var _fun72179_ip = 0;;) switch (_fun72179_ip) {
+                    _fun72288: for (var _fun72288_ip = 0;;) switch (_fun72288_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             var2 = var0 != var2;
                             if (!var2) {
-                                _fun72179_ip = 38;
-                                continue _fun72179
+                                _fun72288_ip = 38;
+                                continue _fun72288
                             }
                         case 16:
                             var3 = _closure1_slot2;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var2 = var4.bind(var5)(var3, var1, var2);
                 if (!var0) {
-                    _fun72178_ip = 105;
-                    continue _fun72178
+                    _fun72287_ip = 105;
+                    continue _fun72287
                 }
             case 99:
                 var1 = null;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsForumChannelSearchActive = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6434, 8953, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6465, 8985, 566, 2]);

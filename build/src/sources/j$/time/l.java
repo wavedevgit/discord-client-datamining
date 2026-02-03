@@ -5,10 +5,10 @@ import java.util.Objects;
 public final class l extends k {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f31641a;
+    public final String f31379a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final transient j$.time.zone.c f31642b;
+    public final transient j$.time.zone.c f31380b;
 
     public static l C(String str) {
         Objects.requireNonNull(str, "zoneId");
@@ -26,18 +26,18 @@ public final class l extends k {
     }
 
     public l(String str, j$.time.zone.c cVar) {
-        this.f31641a = str;
-        this.f31642b = cVar;
+        this.f31379a = str;
+        this.f31380b = cVar;
     }
 
     @Override // j$.time.k
     public final String r() {
-        return this.f31641a;
+        return this.f31379a;
     }
 
     @Override // j$.time.k
     public final j$.time.zone.c t() {
-        j$.time.zone.c cVar = this.f31642b;
-        return cVar != null ? cVar : j$.time.zone.e.a(this.f31641a);
+        j$.time.zone.c cVar = this.f31380b;
+        return cVar != null ? cVar : j$.time.zone.e.a(this.f31379a);
     }
 }

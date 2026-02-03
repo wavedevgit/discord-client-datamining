@@ -60,17 +60,17 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
         }
 
         /* renamed from: setComponentName  reason: collision with other method in class */
-        public final void m1156setComponentName(String str) {
+        public final void m1158setComponentName(String str) {
             this.componentName = str;
         }
 
         /* renamed from: setFabricEnabled  reason: collision with other method in class */
-        public final void m1157setFabricEnabled(boolean z10) {
+        public final void m1159setFabricEnabled(boolean z10) {
             this.fabricEnabled = z10;
         }
 
         /* renamed from: setLaunchOptions  reason: collision with other method in class */
-        public final void m1158setLaunchOptions(Bundle bundle) {
+        public final void m1160setLaunchOptions(Bundle bundle) {
             this.launchOptions = bundle;
         }
 
@@ -81,7 +81,7 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
             return this;
         }
 
-        @ir.c
+        @jr.c
         @NotNull
         public final Builder setFabricEnabled(boolean z10) {
             this.fabricEnabled = z10;
@@ -104,7 +104,7 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
             this();
         }
 
-        @ir.c
+        @jr.c
         protected static /* synthetic */ void getARG_DISABLE_HOST_LIFECYCLE_EVENTS$annotations() {
         }
 
@@ -123,7 +123,7 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
         }
     }
 
-    @ir.c
+    @jr.c
     protected static /* synthetic */ void getReactNativeHost$annotations() {
     }
 
@@ -188,7 +188,7 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
     }
 
     @Override // androidx.fragment.app.Fragment
-    @ir.c
+    @jr.c
     public void onActivityResult(int i10, int i11, Intent intent) {
         super.onActivityResult(i10, i11, intent);
         getReactDelegate().onActivityResult(i10, i11, intent, false);
@@ -266,7 +266,7 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
     }
 
     @Override // androidx.fragment.app.Fragment
-    @ir.c
+    @jr.c
     public void onRequestPermissionsResult(int i10, @NotNull String[] permissions, @NotNull int[] grantResults) {
         Intrinsics.checkNotNullParameter(permissions, "permissions");
         Intrinsics.checkNotNullParameter(grantResults, "grantResults");

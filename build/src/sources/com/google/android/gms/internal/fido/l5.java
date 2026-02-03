@@ -23,17 +23,17 @@ public abstract class l5 implements Comparable {
         return new g5(j10);
     }
 
-    public static j5 j(String str) {
+    public static j5 k(String str) {
         return new j5(str);
     }
 
-    public static l5 k(byte... bArr) {
+    public static l5 l(byte... bArr) {
         bArr.getClass();
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(Arrays.copyOf(bArr, bArr.length));
         return m5.a(byteArrayInputStream, new o5(byteArrayInputStream));
     }
 
-    public static l5 l(InputStream inputStream) {
+    public static l5 m(InputStream inputStream) {
         return m5.a(inputStream, new o5(inputStream));
     }
 

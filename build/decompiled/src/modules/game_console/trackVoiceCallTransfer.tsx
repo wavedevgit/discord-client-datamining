@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_console/trackVoiceCallTransfer.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2() {
-        _fun66924: for (var _fun66924_ip = 0;;) switch (_fun66924_ip) {
+        _fun67033: for (var _fun67033_ip = 0;;) switch (_fun67033_ip) {
             case 0:
                 var6 = arg0;
                 var11 = arg2;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7 != var11;
                 var8 = 'discord_client';
                 if (!var9) {
-                    _fun66924_ip = 102;
-                    continue _fun66924
+                    _fun67033_ip = 102;
+                    continue _fun67033
                 }
             case 63:
                 var10 = _closure1_slot4;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var7 == var10;
                 var9 = undefined;
                 if (var11) {
-                    _fun66924_ip = 99;
-                    continue _fun66924
+                    _fun67033_ip = 99;
+                    continue _fun67033
                 }
             case 87:
                 var10 = var10.clientInfo;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7 == var8;
                 var7 = undefined;
                 if (var9) {
-                    _fun66924_ip = 137;
-                    continue _fun66924
+                    _fun67033_ip = 137;
+                    continue _fun67033
                 }
             case 132:
                 var7 = var8.guild_id;
@@ -104,4 +104,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3479, 3481, 660, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3509, 3511, 660, 795, 2]);

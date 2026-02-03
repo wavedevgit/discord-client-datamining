@@ -13,10 +13,10 @@ import java.util.Locale;
 public abstract class b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final SimpleArrayMap f26745a = new SimpleArrayMap();
+    private static final SimpleArrayMap f26840a = new SimpleArrayMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private static Locale f26746b;
+    private static Locale f26841b;
 
     public static String a(Context context) {
         String packageName = context.getPackageName();
@@ -38,11 +38,11 @@ public abstract class b0 {
                 if (i10 != 3) {
                     return resources.getString(17039370);
                 }
-                return resources.getString(cf.b.f8313a);
+                return resources.getString(cf.b.f8169a);
             }
-            return resources.getString(cf.b.f8322j);
+            return resources.getString(cf.b.f8178j);
         }
-        return resources.getString(cf.b.f8316d);
+        return resources.getString(cf.b.f8172d);
     }
 
     public static String c(Context context, int i10) {
@@ -61,27 +61,27 @@ public abstract class b0 {
                                         case 17:
                                             return g(context, "common_google_play_services_sign_in_failed_text", a10);
                                         case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
-                                            return resources.getString(cf.b.f8325m, a10);
+                                            return resources.getString(cf.b.f8181m, a10);
                                         default:
-                                            return resources.getString(com.google.android.gms.common.l.f14828a, a10);
+                                            return resources.getString(com.google.android.gms.common.l.f14457a, a10);
                                     }
                                 }
                                 return g(context, "common_google_play_services_restricted_profile_text", a10);
                             }
-                            return resources.getString(cf.b.f8321i, a10);
+                            return resources.getString(cf.b.f8177i, a10);
                         }
                         return g(context, "common_google_play_services_network_error_text", a10);
                     }
                     return g(context, "common_google_play_services_invalid_account_text", a10);
                 }
-                return resources.getString(cf.b.f8314b, a10);
+                return resources.getString(cf.b.f8170b, a10);
             } else if (com.google.android.gms.common.util.g.d(context)) {
-                return resources.getString(cf.b.f8326n);
+                return resources.getString(cf.b.f8182n);
             } else {
-                return resources.getString(cf.b.f8323k, a10);
+                return resources.getString(cf.b.f8179k, a10);
             }
         }
-        return resources.getString(cf.b.f8317e, a10);
+        return resources.getString(cf.b.f8173e, a10);
     }
 
     public static String d(Context context, int i10) {
@@ -99,7 +99,7 @@ public abstract class b0 {
             f10 = f(context, i10);
         }
         if (f10 == null) {
-            return context.getResources().getString(cf.b.f8320h);
+            return context.getResources().getString(cf.b.f8176h);
         }
         return f10;
     }
@@ -108,11 +108,11 @@ public abstract class b0 {
         Resources resources = context.getResources();
         switch (i10) {
             case 1:
-                return resources.getString(cf.b.f8318f);
+                return resources.getString(cf.b.f8174f);
             case 2:
-                return resources.getString(cf.b.f8324l);
+                return resources.getString(cf.b.f8180l);
             case 3:
-                return resources.getString(cf.b.f8315c);
+                return resources.getString(cf.b.f8171c);
             case 4:
             case 6:
             case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
@@ -159,19 +159,19 @@ public abstract class b0 {
         Resources resources = context.getResources();
         String h10 = h(context, str);
         if (h10 == null) {
-            h10 = resources.getString(com.google.android.gms.common.l.f14828a);
+            h10 = resources.getString(com.google.android.gms.common.l.f14457a);
         }
         return String.format(resources.getConfiguration().locale, h10, str2);
     }
 
     private static String h(Context context, String str) {
-        SimpleArrayMap simpleArrayMap = f26745a;
+        SimpleArrayMap simpleArrayMap = f26840a;
         synchronized (simpleArrayMap) {
             try {
                 Locale c10 = w1.e.a(context.getResources().getConfiguration()).c(0);
-                if (!c10.equals(f26746b)) {
+                if (!c10.equals(f26841b)) {
                     simpleArrayMap.clear();
-                    f26746b = c10;
+                    f26841b = c10;
                 }
                 String str2 = (String) simpleArrayMap.get(str);
                 if (str2 != null) {

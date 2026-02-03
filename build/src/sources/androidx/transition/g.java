@@ -16,15 +16,15 @@ public class g extends androidx.fragment.app.o0 {
     class a extends Transition.e {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Rect f5245a;
+        final /* synthetic */ Rect f5289a;
 
         a(Rect rect) {
-            this.f5245a = rect;
+            this.f5289a = rect;
         }
 
         @Override // androidx.transition.Transition.e
         public Rect a(Transition transition) {
-            return this.f5245a;
+            return this.f5289a;
         }
     }
 
@@ -32,14 +32,14 @@ public class g extends androidx.fragment.app.o0 {
     class b implements Transition.h {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ View f5247a;
+        final /* synthetic */ View f5291a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ArrayList f5248b;
+        final /* synthetic */ ArrayList f5292b;
 
         b(View view, ArrayList arrayList) {
-            this.f5247a = view;
-            this.f5248b = arrayList;
+            this.f5291a = view;
+            this.f5292b = arrayList;
         }
 
         @Override // androidx.transition.Transition.h
@@ -49,10 +49,10 @@ public class g extends androidx.fragment.app.o0 {
         @Override // androidx.transition.Transition.h
         public void onTransitionEnd(Transition transition) {
             transition.e0(this);
-            this.f5247a.setVisibility(8);
-            int size = this.f5248b.size();
+            this.f5291a.setVisibility(8);
+            int size = this.f5292b.size();
             for (int i10 = 0; i10 < size; i10++) {
-                ((View) this.f5248b.get(i10)).setVisibility(0);
+                ((View) this.f5292b.get(i10)).setVisibility(0);
             }
         }
 
@@ -75,30 +75,30 @@ public class g extends androidx.fragment.app.o0 {
     class c extends w {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Object f5250a;
+        final /* synthetic */ Object f5294a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ArrayList f5251b;
+        final /* synthetic */ ArrayList f5295b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Object f5252c;
+        final /* synthetic */ Object f5296c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ArrayList f5253d;
+        final /* synthetic */ ArrayList f5297d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Object f5254e;
+        final /* synthetic */ Object f5298e;
 
         /* renamed from: f  reason: collision with root package name */
-        final /* synthetic */ ArrayList f5255f;
+        final /* synthetic */ ArrayList f5299f;
 
         c(Object obj, ArrayList arrayList, Object obj2, ArrayList arrayList2, Object obj3, ArrayList arrayList3) {
-            this.f5250a = obj;
-            this.f5251b = arrayList;
-            this.f5252c = obj2;
-            this.f5253d = arrayList2;
-            this.f5254e = obj3;
-            this.f5255f = arrayList3;
+            this.f5294a = obj;
+            this.f5295b = arrayList;
+            this.f5296c = obj2;
+            this.f5297d = arrayList2;
+            this.f5298e = obj3;
+            this.f5299f = arrayList3;
         }
 
         @Override // androidx.transition.w, androidx.transition.Transition.h
@@ -108,17 +108,17 @@ public class g extends androidx.fragment.app.o0 {
 
         @Override // androidx.transition.w, androidx.transition.Transition.h
         public void onTransitionStart(Transition transition) {
-            Object obj = this.f5250a;
+            Object obj = this.f5294a;
             if (obj != null) {
-                g.this.E(obj, this.f5251b, null);
+                g.this.E(obj, this.f5295b, null);
             }
-            Object obj2 = this.f5252c;
+            Object obj2 = this.f5296c;
             if (obj2 != null) {
-                g.this.E(obj2, this.f5253d, null);
+                g.this.E(obj2, this.f5297d, null);
             }
-            Object obj3 = this.f5254e;
+            Object obj3 = this.f5298e;
             if (obj3 != null) {
-                g.this.E(obj3, this.f5255f, null);
+                g.this.E(obj3, this.f5299f, null);
             }
         }
     }
@@ -128,10 +128,10 @@ public class g extends androidx.fragment.app.o0 {
     public class d implements Transition.h {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Runnable f5257a;
+        final /* synthetic */ Runnable f5301a;
 
         d(Runnable runnable) {
-            this.f5257a = runnable;
+            this.f5301a = runnable;
         }
 
         @Override // androidx.transition.Transition.h
@@ -140,7 +140,7 @@ public class g extends androidx.fragment.app.o0 {
 
         @Override // androidx.transition.Transition.h
         public void onTransitionEnd(Transition transition) {
-            this.f5257a.run();
+            this.f5301a.run();
         }
 
         @Override // androidx.transition.Transition.h
@@ -160,17 +160,17 @@ public class g extends androidx.fragment.app.o0 {
     class e extends Transition.e {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Rect f5259a;
+        final /* synthetic */ Rect f5303a;
 
         e(Rect rect) {
-            this.f5259a = rect;
+            this.f5303a = rect;
         }
 
         @Override // androidx.transition.Transition.e
         public Rect a(Transition transition) {
-            Rect rect = this.f5259a;
+            Rect rect = this.f5303a;
             if (rect != null && !rect.isEmpty()) {
-                return this.f5259a;
+                return this.f5303a;
             }
             return null;
         }
@@ -208,7 +208,7 @@ public class g extends androidx.fragment.app.o0 {
             return null;
         }
         a0 a0Var = new a0();
-        a0Var.v0((Transition) obj);
+        a0Var.w0((Transition) obj);
         return a0Var;
     }
 
@@ -218,9 +218,9 @@ public class g extends androidx.fragment.app.o0 {
         int i10 = 0;
         if (transition instanceof a0) {
             a0 a0Var = (a0) transition;
-            int y02 = a0Var.y0();
-            while (i10 < y02) {
-                E(a0Var.x0(i10), arrayList, arrayList2);
+            int z02 = a0Var.z0();
+            while (i10 < z02) {
+                E(a0Var.y0(i10), arrayList, arrayList2);
                 i10++;
             }
         } else if (!D(transition)) {
@@ -256,9 +256,9 @@ public class g extends androidx.fragment.app.o0 {
             int i10 = 0;
             if (transition instanceof a0) {
                 a0 a0Var = (a0) transition;
-                int y02 = a0Var.y0();
-                while (i10 < y02) {
-                    b(a0Var.x0(i10), arrayList);
+                int z02 = a0Var.z0();
+                while (i10 < z02) {
+                    b(a0Var.y0(i10), arrayList);
                     i10++;
                 }
             } else if (!D(transition) && androidx.fragment.app.o0.l(transition.K())) {
@@ -324,7 +324,7 @@ public class g extends androidx.fragment.app.o0 {
         Transition transition2 = (Transition) obj2;
         Transition transition3 = (Transition) obj3;
         if (transition != null && transition2 != null) {
-            transition = new a0().v0(transition).v0(transition2).G0(1);
+            transition = new a0().w0(transition).w0(transition2).H0(1);
         } else if (transition == null) {
             if (transition2 != null) {
                 transition = transition2;
@@ -335,9 +335,9 @@ public class g extends androidx.fragment.app.o0 {
         if (transition3 != null) {
             a0 a0Var = new a0();
             if (transition != null) {
-                a0Var.v0(transition);
+                a0Var.w0(transition);
             }
-            a0Var.v0(transition3);
+            a0Var.w0(transition3);
             return a0Var;
         }
         return transition;
@@ -347,13 +347,13 @@ public class g extends androidx.fragment.app.o0 {
     public Object p(Object obj, Object obj2, Object obj3) {
         a0 a0Var = new a0();
         if (obj != null) {
-            a0Var.v0((Transition) obj);
+            a0Var.w0((Transition) obj);
         }
         if (obj2 != null) {
-            a0Var.v0((Transition) obj2);
+            a0Var.w0((Transition) obj2);
         }
         if (obj3 != null) {
-            a0Var.v0((Transition) obj3);
+            a0Var.w0((Transition) obj3);
         }
         return a0Var;
     }

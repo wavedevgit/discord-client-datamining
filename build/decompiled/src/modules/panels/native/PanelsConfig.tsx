@@ -18,14 +18,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var1;
     var1 = function() { // Environment: var0
         var0 = function arg0() {
-            _fun100651: for (var _fun100651_ip = 0;;) switch (_fun100651_ip) {
+            _fun100626: for (var _fun100626_ip = 0;;) switch (_fun100626_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = null;
                     var0 = var2 != var1;
                     if (!var0) {
-                        _fun100651_ip = 21;
-                        continue _fun100651
+                        _fun100626_ip = 21;
+                        continue _fun100626
                     }
                 case 12:
                     var1 = var1.duration;
@@ -118,4 +118,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.DEFAULT_PANELS_ANIMATION_CONFIG = var3;
     var2.ANDROID_PANELS_ANIMATION_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4849, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4879, 2]);

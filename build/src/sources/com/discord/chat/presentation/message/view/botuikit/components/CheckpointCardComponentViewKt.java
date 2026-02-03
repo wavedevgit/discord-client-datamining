@@ -35,6 +35,6 @@ public final class CheckpointCardComponentViewKt {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void applyClickable$lambda$0(ComponentContext componentContext, CheckpointDataV2025 checkpointDataV2025, View view) {
-        componentContext.getComponentActionEventHandlers().getOnTapCheckpointCard().invoke(UserId.m1136boximpl(checkpointDataV2025.m260getAuthorIdre6GcUE()));
+        componentContext.getComponentActionEventHandlers().getOnTapCheckpointCard().invoke(UserId.m1138boximpl(checkpointDataV2025.m262getAuthorIdre6GcUE()));
     }
 }

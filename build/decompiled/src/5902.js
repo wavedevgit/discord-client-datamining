@@ -1,62 +1,35 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = metroImportDefault;
-    var2 = exports;
-    var4 = dependencyMap;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
-    var0 = 0;
-    var3 = var4[var0];
-    var0 = undefined;
-    var3 = var5.bind(var0)(var3);
-    var _closure1_slot0 = var3;
-    var3 = 1;
-    var3 = var4[var3];
-    var3 = var5.bind(var0)(var3);
-    var _closure1_slot1 = var3;
-    var3 = 2;
-    var4 = var4[var3];
-    var3 = require;
-    var3 = var3.bind(var0)(var4);
-    var3 = var3.NativeModules;
-    var3 = var3.PersonaInquiry2;
-    var _closure1_slot2 = var3;
-    var1 = function() { // Environment: var1
-        var4 = _closure1_slot1;
-        var3 = function() {
-            var3 = _closure1_slot0;
-            var2 = _closure2_slot0;
-            var0 = undefined;
-            var1 = this;
-            var1 = var3.bind(var0)(var1, var2);
-            return var0;
-        };
-        var _closure2_slot0 = var3;
-        var0 = {};
-        var2 = 'nativeSdkVersion';
-        var0.key = var2;
-        var1 = function() {
-            var1 = _closure1_slot2;
-            var0 = var1.getConstants;
-            var0 = var0.bind(var1)();
-            var0 = var0.INQUIRY_SDK_VERSION;
-            return var0;
-        };
-        var0.value = var1;
-        var2 = new Array(1);
-        var2[0] = var0;
-        var1 = undefined;
-        var0 = null;
-        var0 = var4.bind(var1)(var3, var0, var2);
-        return var0;
+    var1 = function arg0, arg1() {
+        _fun51838: for (var _fun51838_ip = 0;;) switch (_fun51838_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = var0.length;
+                var3 = var0.sort;
+                var2 = arg1;
+                var2 = var3.bind(var0)(var2);
+                var1 = parseFloat(var1);
+                var2 = var1 - 1;
+                if (!var1) {
+                    _fun51838_ip = 53;
+                    continue _fun51838
+                }
+            case 31:
+                var1 = var0[var2];
+                var1 = var1.value;
+                var0[var2] = var1;
+                var1 = parseFloat(var2);
+                var2 = var1 - 1;
+                if (var1) {
+                    _fun51838_ip = 31;
+                    continue _fun51838
+                }
+            case 53:
+                return var0;
+        }
     };
-    var1 = var1.bind(var0)();
-    var2.Versions = var1;
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 27]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

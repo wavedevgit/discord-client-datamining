@@ -1,10 +1,10 @@
 package kotlin.reflect.jvm.internal.impl.load.java;
 
-import ir.v;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import jr.v;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
@@ -19,16 +19,16 @@ public final class FakePureImplementationsProvider {
     public static final FakePureImplementationsProvider INSTANCE;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f33983a;
+    private static final Map f33759a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f33984b;
+    private static final Map f33760b;
 
     static {
         FakePureImplementationsProvider fakePureImplementationsProvider = new FakePureImplementationsProvider();
         INSTANCE = fakePureImplementationsProvider;
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        f33983a = linkedHashMap;
+        f33759a = linkedHashMap;
         StandardClassIds standardClassIds = StandardClassIds.INSTANCE;
         fakePureImplementationsProvider.b(standardClassIds.getMutableList(), fakePureImplementationsProvider.a("java.util.ArrayList", "java.util.LinkedList"));
         fakePureImplementationsProvider.b(standardClassIds.getMutableSet(), fakePureImplementationsProvider.a("java.util.HashSet", "java.util.TreeSet", "java.util.LinkedHashSet"));
@@ -40,7 +40,7 @@ public final class FakePureImplementationsProvider {
         for (Map.Entry entry : linkedHashMap.entrySet()) {
             arrayList.add(v.a(((ClassId) entry.getKey()).asSingleFqName(), ((ClassId) entry.getValue()).asSingleFqName()));
         }
-        f33984b = o0.u(arrayList);
+        f33760b = o0.u(arrayList);
     }
 
     private FakePureImplementationsProvider() {
@@ -55,7 +55,7 @@ public final class FakePureImplementationsProvider {
     }
 
     private final void b(ClassId classId, List list) {
-        Map map = f33983a;
+        Map map = f33759a;
         for (Object obj : list) {
             ClassId classId2 = (ClassId) obj;
             map.put(obj, classId);
@@ -64,6 +64,6 @@ public final class FakePureImplementationsProvider {
 
     public final FqName getPurelyImplementedInterface(@NotNull FqName classFqName) {
         Intrinsics.checkNotNullParameter(classFqName, "classFqName");
-        return (FqName) f33984b.get(classFqName);
+        return (FqName) f33760b.get(classFqName);
     }
 }

@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class m {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final m f36137d = new m("INVARIANT", 0);
+    public static final m f35913d = new m("INVARIANT", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final m f36138e = new m("IN", 1);
+    public static final m f35914e = new m("IN", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final m f36139i = new m("OUT", 2);
+    public static final m f35915i = new m("OUT", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ m[] f36140o;
+    private static final /* synthetic */ m[] f35916o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f36141p;
+    private static final /* synthetic */ EnumEntries f35917p;
 
     static {
         m[] a10 = a();
-        f36140o = a10;
-        f36141p = pr.a.a(a10);
+        f35916o = a10;
+        f35917p = qr.a.a(a10);
     }
 
     private m(String str, int i10) {
     }
 
     private static final /* synthetic */ m[] a() {
-        return new m[]{f36137d, f36138e, f36139i};
+        return new m[]{f35913d, f35914e, f35915i};
     }
 
     public static m valueOf(String str) {
@@ -39,6 +39,6 @@ public final class m {
     }
 
     public static m[] values() {
-        return (m[]) f36140o.clone();
+        return (m[]) f35916o.clone();
     }
 }

@@ -15,22 +15,22 @@ public abstract class f {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private jc.a f26609a;
+        private jc.a f26704a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Map f26610b = new HashMap();
+        private Map f26705b = new HashMap();
 
         public a a(xb.e eVar, b bVar) {
-            this.f26610b.put(eVar, bVar);
+            this.f26705b.put(eVar, bVar);
             return this;
         }
 
         public f b() {
-            if (this.f26609a != null) {
-                if (this.f26610b.keySet().size() >= xb.e.values().length) {
-                    Map map = this.f26610b;
-                    this.f26610b = new HashMap();
-                    return f.d(this.f26609a, map);
+            if (this.f26704a != null) {
+                if (this.f26705b.keySet().size() >= xb.e.values().length) {
+                    Map map = this.f26705b;
+                    this.f26705b = new HashMap();
+                    return f.d(this.f26704a, map);
                 }
                 throw new IllegalStateException("Not all priorities have been configured");
             }
@@ -38,7 +38,7 @@ public abstract class f {
         }
 
         public a c(jc.a aVar) {
-            this.f26609a = aVar;
+            this.f26704a = aVar;
             return this;
         }
     }

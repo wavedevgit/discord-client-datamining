@@ -7,13 +7,13 @@ import android.util.Log;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f48357a = "d";
+    private static final String f48559a = "d";
 
     public long a() {
         try {
             return new StatFs(Environment.getDataDirectory().getAbsolutePath()).getAvailableBytes();
         } catch (Exception unused) {
-            Log.e(f48357a, "Could not get Available Disk Space");
+            Log.e(f48559a, "Could not get Available Disk Space");
             return -1L;
         }
     }

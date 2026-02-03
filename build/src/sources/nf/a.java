@@ -17,29 +17,29 @@ import pf.c;
 public class a {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object f40956b = new Object();
+    private static final Object f40819b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private static volatile a f40957c;
+    private static volatile a f40820c;
 
     /* renamed from: a  reason: collision with root package name */
-    public final ConcurrentHashMap f40958a = new ConcurrentHashMap();
+    public final ConcurrentHashMap f40821a = new ConcurrentHashMap();
 
     private a() {
     }
 
     public static a b() {
-        if (f40957c == null) {
-            synchronized (f40956b) {
+        if (f40820c == null) {
+            synchronized (f40819b) {
                 try {
-                    if (f40957c == null) {
-                        f40957c = new a();
+                    if (f40820c == null) {
+                        f40820c = new a();
                     }
                 } finally {
                 }
             }
         }
-        a aVar = f40957c;
+        a aVar = f40820c;
         q.l(aVar);
         return aVar;
     }
@@ -65,7 +65,7 @@ public class a {
             }
         }
         if (g(serviceConnection)) {
-            ServiceConnection serviceConnection2 = (ServiceConnection) this.f40958a.putIfAbsent(serviceConnection, serviceConnection);
+            ServiceConnection serviceConnection2 = (ServiceConnection) this.f40821a.putIfAbsent(serviceConnection, serviceConnection);
             if (serviceConnection2 != null && serviceConnection != serviceConnection2) {
                 Log.w("ConnectionTracker", String.format("Duplicate binding with the same ServiceConnection: %s, %s, %s.", serviceConnection, str, intent.getAction()));
             }
@@ -76,7 +76,7 @@ public class a {
                 }
                 return h10;
             } finally {
-                this.f40958a.remove(serviceConnection, serviceConnection);
+                this.f40821a.remove(serviceConnection, serviceConnection);
             }
         }
         return h(context, intent, serviceConnection, i10, executor);
@@ -104,12 +104,12 @@ public class a {
     }
 
     public void c(Context context, ServiceConnection serviceConnection) {
-        if (g(serviceConnection) && this.f40958a.containsKey(serviceConnection)) {
+        if (g(serviceConnection) && this.f40821a.containsKey(serviceConnection)) {
             try {
-                e(context, (ServiceConnection) this.f40958a.get(serviceConnection));
+                e(context, (ServiceConnection) this.f40821a.get(serviceConnection));
                 return;
             } finally {
-                this.f40958a.remove(serviceConnection);
+                this.f40821a.remove(serviceConnection);
             }
         }
         e(context, serviceConnection);

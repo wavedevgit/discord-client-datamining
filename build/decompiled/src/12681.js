@@ -1,130 +1,51 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97171: for (var _fun97171_ip = 0;;) switch (_fun97171_ip) {
-        case 0:
-            var3 = global;
-            var1 = dependencyMap;
-            var0 = 0;
-            var2 = var1[var0];
-            var1 = require;
-            var0 = undefined;
-            var4 = var1.bind(var0)(var2);
-            if (!var4) {
-                _fun97171_ip = 50;
-                continue _fun97171
-            }
-        case 25:
-            var2 = 'object';
-            var1 = typeof var4;
-            if (!(var2 === var1)) {
-                _fun97171_ip = 50;
-                continue _fun97171
-            }
-        case 36:
-            var1 = 'default';
-            var2 = var1 in var4;
-            var1 = var4;
-            if (var2) {
-                _fun97171_ip = 59;
-                continue _fun97171
-            }
-        case 50:
-            var2 = {};
-            var2.default = var4;
-            var1 = var2;
-        case 59:
-            var2 = global;
-            var4 = var2.Intl;
-            var5 = 'undefined';
-            var4 = typeof var4;
-            if (!(var5 !== var4)) {
-                _fun97171_ip = 243;
-                continue _fun97171
-            }
-        case 81:
-            var4 = var2.Intl;
-            var4 = var4.PluralRules;
-            if (!var4) {
-                _fun97171_ip = 124;
-                continue _fun97171
-            }
-        case 96:
-            var4 = var2.Intl;
-            var4 = var4.PluralRules;
-            var4 = var4.prototype;
-            var4 = var4.selectRange;
-            if (var4) {
-                _fun97171_ip = 159;
-                continue _fun97171
-            }
-        case 124:
-            var6 = var2.Intl;
-            var4 = var1.default;
-            var6.PluralRules = var4;
-            var6 = var1.default;
-            var4 = true;
-            var6.polyfill = var4;
-            _fun97171_ip = 339;
-            continue _fun97171;
-        case 159:
-            var4 = ['en', 'es', 'ru', 'zh'];
-            var6 = var2.Intl;
-            var7 = var6.PluralRules;
-            var6 = var7.supportedLocalesOf;
-            var6 = var6.bind(var7)(var4);
-            var6 = var6.length;
-            var4 = var4.length;
-            if (!(var6 < var4)) {
-                _fun97171_ip = 339;
-                continue _fun97171
-            }
-        case 211:
-            var6 = var2.Intl;
-            var4 = var1.default;
-            var6.PluralRules = var4;
-            var6 = var1.default;
-            var4 = true;
-            var6.polyfill = var4;
-            _fun97171_ip = 339;
-            continue _fun97171;
-        case 243:
-            if (!(var0 === var3)) {
-                _fun97171_ip = 308;
-                continue _fun97171
-            }
-        case 247:
-            var4 = var2.window;
-            var4 = typeof var4;
-            if (!(var5 === var4)) {
-                _fun97171_ip = 282;
-                continue _fun97171
-            }
-        case 259:
-            var5 = {};
-            var4 = var1.default;
-            var5.PluralRules = var4;
-            var4 = this;
-            var4.Intl = var5;
-            _fun97171_ip = 326;
-            continue _fun97171;
-        case 282:
-            var4 = var2.window;
-            var2 = {};
-            var5 = var1.default;
-            var2.PluralRules = var5;
-            var4.Intl = var2;
-            _fun97171_ip = 326;
-            continue _fun97171;
-        case 308:
-            var2 = {};
-            var4 = var1.default;
-            var2.PluralRules = var4;
-            var3.Intl = var2;
-        case 326:
-            var2 = var1.default;
-            var1 = true;
-            var2.polyfill = var1;
-        case 339:
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12682]);
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = global;
+    var2 = var1.String;
+    var _closure1_slot2 = var2;
+    var1 = var1.TypeError;
+    var _closure1_slot3 = var1;
+    var1 = function(arg0) { // Environment: var0
+        _fun96873: for (var _fun96873_ip = 0;;) switch (_fun96873_ip) {
+            case 0:
+                var0 = arg0;
+                var4 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var2 = 0;
+                var3 = var3[var2];
+                var2 = undefined;
+                var3 = var4.bind(var2)(var3);
+                var3 = var3.bind(var2)(var0);
+                if (var3) {
+                    _fun96873_ip = 80;
+                    continue _fun96873
+                }
+            case 35:
+                var3 = _closure1_slot3;
+                var1 = _closure1_slot2;
+                var2 = var1.bind(var2)(var0);
+                var1 = ' is not an object';
+                var5 = var2 + var1;
+                var2 = var3.prototype;
+                var2 = Object.create(var2, {
+                    constructor: {
+                        value: var3
+                    }
+                });
+                var6 = var2;
+                var1 = new var6[var3](var5, var4);
+                var1 = var1 instanceof Object ? var1 : var2;
+                throw var1;
+            case 80:
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12654]);

@@ -61,6 +61,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = 'modules/safe_area/SafeAreaConstants.native.tsx';
             var5 = var6.bind(var7)(var5);
             var2.EMPTY_SAFE_AREA_INSETS = var4;
+            var4 = {
+                'top': 4,
+                'bottom': 4,
+                'left': 0,
+                'right': 0
+            };
+            var2.META_QUEST_SAFE_AREA_INSETS = var4;
             var2.INITIAL_SAFE_AREA_METRICS = var3;
             var2.INITIAL_SAFE_AREA_INSETS = var1;
             return var0;

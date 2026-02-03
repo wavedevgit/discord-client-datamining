@@ -6,15 +6,15 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f33299a;
+    private static final Object f33075a;
 
     static {
-        Result.a aVar = Result.f33295e;
-        f33299a = Result.b(or.b.f());
+        Result.a aVar = Result.f33071e;
+        f33075a = Result.b(pr.b.f());
     }
 
-    public static final Object b(ir.a aVar, Object obj) {
+    public static final Object b(jr.a aVar, Object obj) {
         Intrinsics.checkNotNullParameter(aVar, "<this>");
-        return new b(aVar.a(), obj).e();
+        return new b(aVar.a(), obj).d();
     }
 }

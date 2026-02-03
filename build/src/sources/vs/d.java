@@ -1,106 +1,36 @@
 package vs;
 
+import java.util.List;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import vs.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d extends e {
+public final class d implements e {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Function1 f51510a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final int f51511b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f51912c;
+    private final int f51512c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f51913d;
+    private final List f51513d;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final a f51914e;
-
-    /* JADX WARN: Illegal instructions before constructor call */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public d(int r3, int r4, vs.a r5, java.lang.String r6) {
-        /*
-            r2 = this;
-            java.lang.String r0 = "setter"
-            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
-            java.lang.String r0 = "name"
-            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r6, r0)
-            r0 = 0
-            if (r3 != r4) goto L12
-            java.lang.Integer r1 = java.lang.Integer.valueOf(r3)
-            goto L13
-        L12:
-            r1 = r0
-        L13:
-            r2.<init>(r1, r6, r0)
-            r2.f51912c = r3
-            r2.f51913d = r4
-            r2.f51914e = r5
-            r5 = 1
-            java.lang.String r6 = " for field "
-            if (r5 > r3) goto L5c
-            r5 = 10
-            if (r3 >= r5) goto L5c
-            if (r3 > r4) goto L2a
-            if (r4 >= r5) goto L2a
-            return
-        L2a:
-            java.lang.StringBuilder r5 = new java.lang.StringBuilder
-            r5.<init>()
-            java.lang.String r0 = "Invalid maximum length "
-            r5.append(r0)
-            r5.append(r4)
-            r5.append(r6)
-            java.lang.String r4 = r2.c()
-            r5.append(r4)
-            java.lang.String r4 = ": expected "
-            r5.append(r4)
-            r5.append(r3)
-            java.lang.String r3 = "..9"
-            r5.append(r3)
-            java.lang.String r3 = r5.toString()
-            java.lang.IllegalArgumentException r4 = new java.lang.IllegalArgumentException
-            java.lang.String r3 = r3.toString()
-            r4.<init>(r3)
-            throw r4
-        L5c:
-            java.lang.StringBuilder r4 = new java.lang.StringBuilder
-            r4.<init>()
-            java.lang.String r5 = "Invalid minimum length "
-            r4.append(r5)
-            r4.append(r3)
-            r4.append(r6)
-            java.lang.String r3 = r2.c()
-            r4.append(r3)
-            java.lang.String r3 = ": expected 1..9"
-            r4.append(r3)
-            java.lang.String r3 = r4.toString()
-            java.lang.IllegalArgumentException r4 = new java.lang.IllegalArgumentException
-            java.lang.String r3 = r3.toString()
-            r4.<init>(r3)
-            throw r4
-        */
-        throw new UnsupportedOperationException("Method not decompiled: vs.d.<init>(int, int, vs.a, java.lang.String):void");
-    }
-
-    @Override // vs.e
-    public g a(Object obj, CharSequence input, int i10, int i11) {
-        int d10;
-        g f10;
-        Intrinsics.checkNotNullParameter(input, "input");
-        int i12 = i11 - i10;
-        int i13 = this.f51912c;
-        if (i12 < i13) {
-            return new g.c(i13);
+    public d(Function1 number, int i10, int i11, List zerosToAdd) {
+        Intrinsics.checkNotNullParameter(number, "number");
+        Intrinsics.checkNotNullParameter(zerosToAdd, "zerosToAdd");
+        this.f51510a = number;
+        this.f51511b = i10;
+        this.f51512c = i11;
+        this.f51513d = zerosToAdd;
+        if (1 <= i10 && i10 < 10) {
+            if (i10 <= i11 && i11 < 10) {
+                return;
+            }
+            throw new IllegalArgumentException(("The maximum number of digits (" + i11 + ") is not in range " + i10 + "..9").toString());
         }
-        int i14 = this.f51913d;
-        if (i12 > i14) {
-            return new g.d(i14);
-        }
-        a aVar = this.f51914e;
-        d10 = f.d(input, i10, i11);
-        f10 = f.f(aVar, obj, new ss.a(d10, i12));
-        return f10;
+        throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") is not in range 1..9").toString());
     }
 }

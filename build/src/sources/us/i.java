@@ -1,15 +1,30 @@
 package us;
 
-import kotlin.jvm.functions.Function1;
+import java.util.Collection;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class i implements e {
+final class i implements v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function1 f50566a;
+    private final List f50651a;
 
-    public i(Function1 string) {
-        Intrinsics.checkNotNullParameter(string, "string");
-        this.f50566a = string;
+    public i(List predicates) {
+        Intrinsics.checkNotNullParameter(predicates, "predicates");
+        this.f50651a = predicates;
+    }
+
+    @Override // us.v
+    public boolean test(Object obj) {
+        List<v> list = this.f50651a;
+        if ((list instanceof Collection) && list.isEmpty()) {
+            return true;
+        }
+        for (v vVar : list) {
+            if (!vVar.test(obj)) {
+                return false;
+            }
+        }
+        return true;
     }
 }

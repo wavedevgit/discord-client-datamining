@@ -17,13 +17,13 @@ import yg.j;
 public abstract class BottomAppBar extends Toolbar implements CoordinatorLayout.b {
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final int f15578i0 = j.f54526m;
+    private static final int f15207i0 = j.f54501m;
 
     /* renamed from: j0  reason: collision with root package name */
-    private static final int f15579j0 = b.F;
+    private static final int f15208j0 = b.F;
 
     /* renamed from: k0  reason: collision with root package name */
-    private static final int f15580k0 = b.P;
+    private static final int f15209k0 = b.P;
 
     static /* synthetic */ void S(BottomAppBar bottomAppBar) {
         throw null;
@@ -47,7 +47,7 @@ public abstract class BottomAppBar extends Toolbar implements CoordinatorLayout.
 
     /* JADX INFO: Access modifiers changed from: private */
     public static void Y(BottomAppBar bottomAppBar, View view) {
-        ((CoordinatorLayout.f) view.getLayoutParams()).f2851d = 17;
+        ((CoordinatorLayout.f) view.getLayoutParams()).f2895d = 17;
         throw null;
     }
 
@@ -56,13 +56,13 @@ public abstract class BottomAppBar extends Toolbar implements CoordinatorLayout.
         private final View.OnLayoutChangeListener A;
 
         /* renamed from: x  reason: collision with root package name */
-        private final Rect f15581x;
+        private final Rect f15210x;
 
         /* renamed from: y  reason: collision with root package name */
-        private WeakReference f15582y;
+        private WeakReference f15211y;
 
         /* renamed from: z  reason: collision with root package name */
-        private int f15583z;
+        private int f15212z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         class a implements View.OnLayoutChangeListener {
@@ -71,14 +71,14 @@ public abstract class BottomAppBar extends Toolbar implements CoordinatorLayout.
 
             @Override // android.view.View.OnLayoutChangeListener
             public void onLayoutChange(View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
-                android.support.v4.media.session.b.a(Behavior.this.f15582y.get());
+                android.support.v4.media.session.b.a(Behavior.this.f15211y.get());
                 view.removeOnLayoutChangeListener(this);
             }
         }
 
         public Behavior() {
             this.A = new a();
-            this.f15581x = new Rect();
+            this.f15210x = new Rect();
         }
 
         @Override // com.google.android.material.behavior.HideBottomViewOnScrollBehavior, androidx.coordinatorlayout.widget.CoordinatorLayout.c
@@ -88,11 +88,11 @@ public abstract class BottomAppBar extends Toolbar implements CoordinatorLayout.
         }
 
         public boolean S(CoordinatorLayout coordinatorLayout, BottomAppBar bottomAppBar, int i10) {
-            this.f15582y = new WeakReference(bottomAppBar);
+            this.f15211y = new WeakReference(bottomAppBar);
             View T = BottomAppBar.T(bottomAppBar);
             if (T != null && !h0.S(T)) {
                 BottomAppBar.Y(bottomAppBar, T);
-                this.f15583z = ((ViewGroup.MarginLayoutParams) ((CoordinatorLayout.f) T.getLayoutParams())).bottomMargin;
+                this.f15212z = ((ViewGroup.MarginLayoutParams) ((CoordinatorLayout.f) T.getLayoutParams())).bottomMargin;
                 if (T instanceof FloatingActionButton) {
                     FloatingActionButton floatingActionButton = (FloatingActionButton) T;
                     if (BottomAppBar.X(bottomAppBar) == 0 && BottomAppBar.V(bottomAppBar)) {
@@ -100,10 +100,10 @@ public abstract class BottomAppBar extends Toolbar implements CoordinatorLayout.
                         floatingActionButton.setCompatElevation(0.0f);
                     }
                     if (floatingActionButton.getShowMotionSpec() == null) {
-                        floatingActionButton.setShowMotionSpecResource(yg.a.f54343b);
+                        floatingActionButton.setShowMotionSpecResource(yg.a.f54318b);
                     }
                     if (floatingActionButton.getHideMotionSpec() == null) {
-                        floatingActionButton.setHideMotionSpecResource(yg.a.f54342a);
+                        floatingActionButton.setHideMotionSpecResource(yg.a.f54317a);
                     }
                     BottomAppBar.W(bottomAppBar, floatingActionButton);
                 }
@@ -127,7 +127,7 @@ public abstract class BottomAppBar extends Toolbar implements CoordinatorLayout.
         public Behavior(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
             this.A = new a();
-            this.f15581x = new Rect();
+            this.f15210x = new Rect();
         }
     }
 }

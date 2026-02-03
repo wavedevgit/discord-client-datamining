@@ -12,34 +12,34 @@ import org.json.JSONException;
 public class c {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Lock f55653c = new ReentrantLock();
+    private static final Lock f55785c = new ReentrantLock();
 
     /* renamed from: d  reason: collision with root package name */
-    private static c f55654d;
+    private static c f55786d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lock f55655a = new ReentrantLock();
+    private final Lock f55787a = new ReentrantLock();
 
     /* renamed from: b  reason: collision with root package name */
-    private final SharedPreferences f55656b;
+    private final SharedPreferences f55788b;
 
     c(Context context) {
-        this.f55656b = context.getSharedPreferences("com.google.android.gms.signin", 0);
+        this.f55788b = context.getSharedPreferences("com.google.android.gms.signin", 0);
     }
 
     public static c b(Context context) {
         gf.q.l(context);
-        Lock lock = f55653c;
+        Lock lock = f55785c;
         lock.lock();
         try {
-            if (f55654d == null) {
-                f55654d = new c(context.getApplicationContext());
+            if (f55786d == null) {
+                f55786d = new c(context.getApplicationContext());
             }
-            c cVar = f55654d;
+            c cVar = f55786d;
             lock.unlock();
             return cVar;
         } catch (Throwable th2) {
-            f55653c.unlock();
+            f55785c.unlock();
             throw th2;
         }
     }
@@ -49,11 +49,11 @@ public class c {
     }
 
     public void a() {
-        this.f55655a.lock();
+        this.f55787a.lock();
         try {
-            this.f55656b.edit().clear().apply();
+            this.f55788b.edit().clear().apply();
         } finally {
-            this.f55655a.unlock();
+            this.f55787a.unlock();
         }
     }
 
@@ -97,20 +97,20 @@ public class c {
     }
 
     protected final String g(String str) {
-        this.f55655a.lock();
+        this.f55787a.lock();
         try {
-            return this.f55656b.getString(str, null);
+            return this.f55788b.getString(str, null);
         } finally {
-            this.f55655a.unlock();
+            this.f55787a.unlock();
         }
     }
 
     protected final void h(String str, String str2) {
-        this.f55655a.lock();
+        this.f55787a.lock();
         try {
-            this.f55656b.edit().putString(str, str2).apply();
+            this.f55788b.edit().putString(str, str2).apply();
         } finally {
-            this.f55655a.unlock();
+            this.f55787a.unlock();
         }
     }
 }

@@ -1,75 +1,191 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var1 = exports;
-    var6 = dependencyMap;
-    var4 = function arg0() {
-        _fun22461: for (var _fun22461_ip = 0;;) switch (_fun22461_ip) {
-            case 0:
-                var2 = arg0;
-                if (!var2) {
-                    _fun22461_ip = 18;
-                    continue _fun22461
-                }
-            case 6:
-                var1 = var2.__esModule;
-                var0 = var2;
-                if (var1) {
-                    _fun22461_ip = 27;
-                    continue _fun22461
-                }
-            case 18:
-                var1 = {};
-                var1.default = var2;
-                var0 = var1;
-            case 27:
+    _fun22219: for (var _fun22219_ip = 0;;) switch (_fun22219_ip) {
+        case 0:
+            var1 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var2 = {};
+            var0 = true;
+            var2.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var1, var0, var2);
+            var0 = undefined;
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun22219_ip = 77;
+                continue _fun22219
+            }
+        case 65:
+            var2 = var4.__esModule;
+            var3 = var4;
+            if (var2) {
+                _fun22219_ip = 86;
+                continue _fun22219
+            }
+        case 77:
+            var2 = {};
+            var2.default = var4;
+            var3 = var2;
+        case 86:
+            var2 = {};
+            var4 = function arg0, arg1() {
+                var0 = global;
+                var2 = var0.String;
+                var1 = undefined;
+                var0 = arg0;
+                var0 = var2.bind(var1)(var0);
                 return var0;
-        }
-    };
-    var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var7.bind(var8)(var1, var0, var2);
-    var0 = function arg0() {
-        var2 = undefined;
-        var1 = undefined;
-        var3 = _closure1_slot1;
-        var4 = var3.default;
-        var1 = arguments;
-        var3 = var1;
-        var1 = 1;
-        var1 = var4.bind(var2)(var1, var3);
-        var0 = _closure1_slot0;
-        var1 = var0.default;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        var2 = var0.setHours;
-        var9 = var0;
-        var8 = 0;
-        var7 = 0;
-        var6 = 0;
-        var5 = 0;
-        var1 = var9[var2](var8, var7, var6, var5, var4);
-        return var0;
-    };
-    var1.default = var0;
-    var0 = 0;
-    var2 = var6[var0];
-    var0 = undefined;
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot0 = var2;
-    var2 = 1;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot1 = var2;
-    var2 = var1.default;
-    var1 = arg4;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2534, 2535]);
+            };
+            var2.ordinalNumber = var4;
+            var6 = var3.default;
+            var4 = {};
+            var5 = {};
+            var8 = ['B', 'คศ'];
+            var5.narrow = var8;
+            var8 = ['BC', 'ค.ศ.'];
+            var5.abbreviated = var8;
+            var8 = ['ปีก่อนคริสตกาล', 'คริสต์ศักราช'];
+            var5.wide = var8;
+            var4.values = var5;
+            var5 = 'wide';
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.era = var4;
+            var6 = var3.default;
+            var4 = {};
+            var8 = {};
+            var9 = ['1', '2', '3', '4'];
+            var8.narrow = var9;
+            var9 = ['Q1', 'Q2', 'Q3', 'Q4'];
+            var8.abbreviated = var9;
+            var9 = ['ไตรมาสแรก', 'ไตรมาสที่สอง', 'ไตรมาสที่สาม', 'ไตรมาสที่สี่'];
+            var8.wide = var9;
+            var4.values = var8;
+            var4.defaultWidth = var5;
+            var7 = function arg0() {
+                var1 = arg0;
+                var0 = 1;
+                var0 = var1 - var0;
+                return var0;
+            };
+            var4.argumentCallback = var7;
+            var4 = var6.bind(var0)(var4);
+            var2.quarter = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
+            var7.narrow = var8;
+            var8 = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
+            var7.abbreviated = var8;
+            var8 = ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.month = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['อา.', 'จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.'];
+            var7.narrow = var8;
+            var8 = ['อา.', 'จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.'];
+            var7.short = var8;
+            var8 = ['อา.', 'จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.'];
+            var7.abbreviated = var8;
+            var8 = ['อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.day = var4;
+            var4 = var3.default;
+            var3 = {};
+            var6 = {};
+            var7 = {
+                'am': 'ก่อนเที่ยง',
+                'pm': 'หลังเที่ยง',
+                'midnight': 'เที่ยงคืน',
+                'noon': 'เที่ยง',
+                'morning': 'เช้า',
+                'afternoon': 'บ่าย',
+                'evening': 'เย็น',
+                'night': 'กลางคืน'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'ก่อนเที่ยง',
+                'pm': 'หลังเที่ยง',
+                'midnight': 'เที่ยงคืน',
+                'noon': 'เที่ยง',
+                'morning': 'เช้า',
+                'afternoon': 'บ่าย',
+                'evening': 'เย็น',
+                'night': 'กลางคืน'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'ก่อนเที่ยง',
+                'pm': 'หลังเที่ยง',
+                'midnight': 'เที่ยงคืน',
+                'noon': 'เที่ยง',
+                'morning': 'เช้า',
+                'afternoon': 'บ่าย',
+                'evening': 'เย็น',
+                'night': 'กลางคืน'
+            };
+            var6.wide = var7;
+            var3.values = var6;
+            var3.defaultWidth = var5;
+            var6 = {};
+            var7 = {
+                'am': 'ก่อนเที่ยง',
+                'pm': 'หลังเที่ยง',
+                'midnight': 'เที่ยงคืน',
+                'noon': 'เที่ยง',
+                'morning': 'ตอนเช้า',
+                'afternoon': 'ตอนกลางวัน',
+                'evening': 'ตอนเย็น',
+                'night': 'ตอนกลางคืน'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'ก่อนเที่ยง',
+                'pm': 'หลังเที่ยง',
+                'midnight': 'เที่ยงคืน',
+                'noon': 'เที่ยง',
+                'morning': 'ตอนเช้า',
+                'afternoon': 'ตอนกลางวัน',
+                'evening': 'ตอนเย็น',
+                'night': 'ตอนกลางคืน'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'ก่อนเที่ยง',
+                'pm': 'หลังเที่ยง',
+                'midnight': 'เที่ยงคืน',
+                'noon': 'เที่ยง',
+                'morning': 'ตอนเช้า',
+                'afternoon': 'ตอนกลางวัน',
+                'evening': 'ตอนเย็น',
+                'night': 'ตอนกลางคืน'
+            };
+            var6.wide = var7;
+            var3.formattingValues = var6;
+            var3.defaultFormattingWidth = var5;
+            var3 = var4.bind(var0)(var3);
+            var2.dayPeriod = var3;
+            var1.default = var2;
+            var2 = var1.default;
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1684]);

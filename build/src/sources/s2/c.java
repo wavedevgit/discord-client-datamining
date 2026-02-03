@@ -9,28 +9,28 @@ import android.view.ViewGroup;
 public abstract class c extends a {
 
     /* renamed from: t  reason: collision with root package name */
-    private int f48709t;
+    private int f48763t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f48710u;
+    private int f48764u;
 
     /* renamed from: v  reason: collision with root package name */
-    private LayoutInflater f48711v;
+    private LayoutInflater f48765v;
 
     public c(Context context, int i10, Cursor cursor, boolean z10) {
         super(context, cursor, z10);
-        this.f48710u = i10;
-        this.f48709t = i10;
-        this.f48711v = (LayoutInflater) context.getSystemService("layout_inflater");
+        this.f48764u = i10;
+        this.f48763t = i10;
+        this.f48765v = (LayoutInflater) context.getSystemService("layout_inflater");
     }
 
     @Override // s2.a
     public View f(Context context, Cursor cursor, ViewGroup viewGroup) {
-        return this.f48711v.inflate(this.f48710u, viewGroup, false);
+        return this.f48765v.inflate(this.f48764u, viewGroup, false);
     }
 
     @Override // s2.a
     public View g(Context context, Cursor cursor, ViewGroup viewGroup) {
-        return this.f48711v.inflate(this.f48709t, viewGroup, false);
+        return this.f48765v.inflate(this.f48763t, viewGroup, false);
     }
 }

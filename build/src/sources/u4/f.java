@@ -10,73 +10,73 @@ import java.util.concurrent.ExecutorService;
 public class f {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final ExecutorService f50059i = u4.b.a();
+    public static final ExecutorService f50115i = u4.b.a();
 
     /* renamed from: j  reason: collision with root package name */
-    private static final Executor f50060j = u4.b.b();
+    private static final Executor f50116j = u4.b.b();
 
     /* renamed from: k  reason: collision with root package name */
-    public static final Executor f50061k = u4.a.c();
+    public static final Executor f50117k = u4.a.c();
 
     /* renamed from: l  reason: collision with root package name */
-    private static f f50062l = new f((Object) null);
+    private static f f50118l = new f((Object) null);
 
     /* renamed from: m  reason: collision with root package name */
-    private static f f50063m = new f(Boolean.TRUE);
+    private static f f50119m = new f(Boolean.TRUE);
 
     /* renamed from: n  reason: collision with root package name */
-    private static f f50064n = new f(Boolean.FALSE);
+    private static f f50120n = new f(Boolean.FALSE);
 
     /* renamed from: o  reason: collision with root package name */
-    private static f f50065o = new f(true);
+    private static f f50121o = new f(true);
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f50067b;
+    private boolean f50123b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f50068c;
+    private boolean f50124c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Object f50069d;
+    private Object f50125d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Exception f50070e;
+    private Exception f50126e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f50071f;
+    private boolean f50127f;
 
     /* renamed from: g  reason: collision with root package name */
-    private h f50072g;
+    private h f50128g;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f50066a = new Object();
+    private final Object f50122a = new Object();
 
     /* renamed from: h  reason: collision with root package name */
-    private List f50073h = new ArrayList();
+    private List f50129h = new ArrayList();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements u4.d {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ g f50074a;
+        final /* synthetic */ g f50130a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ u4.d f50075b;
+        final /* synthetic */ u4.d f50131b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Executor f50076c;
+        final /* synthetic */ Executor f50132c;
 
         a(g gVar, u4.d dVar, Executor executor, u4.c cVar) {
-            this.f50074a = gVar;
-            this.f50075b = dVar;
-            this.f50076c = executor;
+            this.f50130a = gVar;
+            this.f50131b = dVar;
+            this.f50132c = executor;
         }
 
         @Override // u4.d
         /* renamed from: b */
         public Void a(f fVar) {
-            f.d(this.f50074a, this.f50075b, fVar, this.f50076c, null);
+            f.d(this.f50130a, this.f50131b, fVar, this.f50132c, null);
             return null;
         }
     }
@@ -86,28 +86,28 @@ public class f {
     public static class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ g f50078d;
+        final /* synthetic */ g f50134d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ u4.d f50079e;
+        final /* synthetic */ u4.d f50135e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ f f50080i;
+        final /* synthetic */ f f50136i;
 
         b(u4.c cVar, g gVar, u4.d dVar, f fVar) {
-            this.f50078d = gVar;
-            this.f50079e = dVar;
-            this.f50080i = fVar;
+            this.f50134d = gVar;
+            this.f50135e = dVar;
+            this.f50136i = fVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             try {
-                this.f50078d.d(this.f50079e.a(this.f50080i));
+                this.f50134d.d(this.f50135e.a(this.f50136i));
             } catch (CancellationException unused) {
-                this.f50078d.b();
+                this.f50134d.b();
             } catch (Exception e10) {
-                this.f50078d.c(e10);
+                this.f50134d.c(e10);
             }
         }
     }
@@ -117,24 +117,24 @@ public class f {
     public static class c implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ g f50081d;
+        final /* synthetic */ g f50137d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Callable f50082e;
+        final /* synthetic */ Callable f50138e;
 
         c(u4.c cVar, g gVar, Callable callable) {
-            this.f50081d = gVar;
-            this.f50082e = callable;
+            this.f50137d = gVar;
+            this.f50138e = callable;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             try {
-                this.f50081d.d(this.f50082e.call());
+                this.f50137d.d(this.f50138e.call());
             } catch (CancellationException unused) {
-                this.f50081d.b();
+                this.f50137d.b();
             } catch (Exception e10) {
-                this.f50081d.c(e10);
+                this.f50137d.c(e10);
             }
         }
     }
@@ -178,13 +178,13 @@ public class f {
 
     public static f h(Object obj) {
         if (obj == null) {
-            return f50062l;
+            return f50118l;
         }
         if (obj instanceof Boolean) {
             if (((Boolean) obj).booleanValue()) {
-                return f50063m;
+                return f50119m;
             }
-            return f50064n;
+            return f50120n;
         }
         g gVar = new g();
         gVar.d(obj);
@@ -196,8 +196,8 @@ public class f {
     }
 
     private void o() {
-        synchronized (this.f50066a) {
-            for (u4.d dVar : this.f50073h) {
+        synchronized (this.f50122a) {
+            for (u4.d dVar : this.f50129h) {
                 try {
                     dVar.a(this);
                 } catch (RuntimeException e10) {
@@ -206,12 +206,12 @@ public class f {
                     throw new RuntimeException(e11);
                 }
             }
-            this.f50073h = null;
+            this.f50129h = null;
         }
     }
 
     public f e(u4.d dVar) {
-        return f(dVar, f50060j, null);
+        return f(dVar, f50116j, null);
     }
 
     public f f(u4.d dVar, Executor executor, u4.c cVar) {
@@ -219,7 +219,7 @@ public class f {
         Executor executor2;
         u4.c cVar2;
         g gVar = new g();
-        synchronized (this.f50066a) {
+        synchronized (this.f50122a) {
             try {
                 try {
                     boolean m10 = m();
@@ -227,7 +227,7 @@ public class f {
                         dVar2 = dVar;
                         executor2 = executor;
                         cVar2 = cVar;
-                        this.f50073h.add(new a(gVar, dVar2, executor2, cVar2));
+                        this.f50129h.add(new a(gVar, dVar2, executor2, cVar2));
                     } else {
                         dVar2 = dVar;
                         executor2 = executor;
@@ -249,12 +249,12 @@ public class f {
 
     public Exception i() {
         Exception exc;
-        synchronized (this.f50066a) {
+        synchronized (this.f50122a) {
             try {
-                if (this.f50070e != null) {
-                    this.f50071f = true;
+                if (this.f50126e != null) {
+                    this.f50127f = true;
                 }
-                exc = this.f50070e;
+                exc = this.f50126e;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -264,31 +264,31 @@ public class f {
 
     public Object j() {
         Object obj;
-        synchronized (this.f50066a) {
-            obj = this.f50069d;
+        synchronized (this.f50122a) {
+            obj = this.f50125d;
         }
         return obj;
     }
 
     public boolean l() {
         boolean z10;
-        synchronized (this.f50066a) {
-            z10 = this.f50068c;
+        synchronized (this.f50122a) {
+            z10 = this.f50124c;
         }
         return z10;
     }
 
     public boolean m() {
         boolean z10;
-        synchronized (this.f50066a) {
-            z10 = this.f50067b;
+        synchronized (this.f50122a) {
+            z10 = this.f50123b;
         }
         return z10;
     }
 
     public boolean n() {
         boolean z10;
-        synchronized (this.f50066a) {
+        synchronized (this.f50122a) {
             if (i() != null) {
                 z10 = true;
             } else {
@@ -300,14 +300,14 @@ public class f {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean p() {
-        synchronized (this.f50066a) {
+        synchronized (this.f50122a) {
             try {
-                if (this.f50067b) {
+                if (this.f50123b) {
                     return false;
                 }
-                this.f50067b = true;
-                this.f50068c = true;
-                this.f50066a.notifyAll();
+                this.f50123b = true;
+                this.f50124c = true;
+                this.f50122a.notifyAll();
                 o();
                 return true;
             } catch (Throwable th2) {
@@ -318,17 +318,17 @@ public class f {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean q(Exception exc) {
-        synchronized (this.f50066a) {
+        synchronized (this.f50122a) {
             try {
-                if (this.f50067b) {
+                if (this.f50123b) {
                     return false;
                 }
-                this.f50067b = true;
-                this.f50070e = exc;
-                this.f50071f = false;
-                this.f50066a.notifyAll();
+                this.f50123b = true;
+                this.f50126e = exc;
+                this.f50127f = false;
+                this.f50122a.notifyAll();
                 o();
-                if (!this.f50071f) {
+                if (!this.f50127f) {
                     k();
                 }
                 return true;
@@ -340,14 +340,14 @@ public class f {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean r(Object obj) {
-        synchronized (this.f50066a) {
+        synchronized (this.f50122a) {
             try {
-                if (this.f50067b) {
+                if (this.f50123b) {
                     return false;
                 }
-                this.f50067b = true;
-                this.f50069d = obj;
-                this.f50066a.notifyAll();
+                this.f50123b = true;
+                this.f50125d = obj;
+                this.f50122a.notifyAll();
                 o();
                 return true;
             } catch (Throwable th2) {

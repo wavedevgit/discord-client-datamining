@@ -1,119 +1,90 @@
 package gp;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import ep.a1;
-import kotlin.jvm.internal.Intrinsics;
-import kp.f;
-import org.jetbrains.annotations.NotNull;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import androidx.viewbinding.ViewBinding;
+import com.withpersona.sdk2.inquiry.selfie.view.Pi2CircleMaskView;
+import com.withpersona.sdk2.inquiry.selfie.view.Pi2ProgressArcView;
+import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
+import fp.w0;
+import fp.x0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements f {
-    @NotNull
-    public static final Parcelable.Creator<b> CREATOR = new a();
+public final class b implements ViewBinding {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final View f27322a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final View f27323b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final Pi2CircleMaskView f27324c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f27059d;
+    public final ThemeableLottieAnimationView f27325d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a1 f27060e;
+    public final ImageView f27326e;
 
-    /* renamed from: i  reason: collision with root package name */
-    private final a1 f27061i;
+    /* renamed from: f  reason: collision with root package name */
+    public final View f27327f;
 
-    /* renamed from: o  reason: collision with root package name */
-    private final a1 f27062o;
+    /* renamed from: g  reason: collision with root package name */
+    public final View f27328g;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final b createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new b(parcel.readString(), (a1) parcel.readParcelable(b.class.getClassLoader()), (a1) parcel.readParcelable(b.class.getClassLoader()), (a1) parcel.readParcelable(b.class.getClassLoader()));
-        }
+    /* renamed from: h  reason: collision with root package name */
+    public final Pi2ProgressArcView f27329h;
 
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final b[] newArray(int i10) {
-            return new b[i10];
-        }
+    private b(View view, View view2, Pi2CircleMaskView pi2CircleMaskView, ThemeableLottieAnimationView themeableLottieAnimationView, ImageView imageView, View view3, View view4, Pi2ProgressArcView pi2ProgressArcView) {
+        this.f27322a = view;
+        this.f27323b = view2;
+        this.f27324c = pi2CircleMaskView;
+        this.f27325d = themeableLottieAnimationView;
+        this.f27326e = imageView;
+        this.f27327f = view3;
+        this.f27328g = view4;
+        this.f27329h = pi2ProgressArcView;
     }
 
-    public b(String stepName, a1 a1Var, a1 a1Var2, a1 a1Var3) {
-        Intrinsics.checkNotNullParameter(stepName, "stepName");
-        this.f27059d = stepName;
-        this.f27060e = a1Var;
-        this.f27061i = a1Var2;
-        this.f27062o = a1Var3;
-    }
-
-    public final a1 a() {
-        return this.f27060e;
-    }
-
-    public String b() {
-        return this.f27059d;
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    public static b a(View view) {
+        View a10;
+        View a11;
+        int i10 = w0.f25050d;
+        View a12 = e4.a.a(view, i10);
+        if (a12 != null) {
+            i10 = w0.f25057k;
+            Pi2CircleMaskView pi2CircleMaskView = (Pi2CircleMaskView) e4.a.a(view, i10);
+            if (pi2CircleMaskView != null) {
+                i10 = w0.f25064r;
+                ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
+                if (themeableLottieAnimationView != null) {
+                    i10 = w0.f25065s;
+                    ImageView imageView = (ImageView) e4.a.a(view, i10);
+                    if (imageView != null && (a10 = e4.a.a(view, (i10 = w0.f25069w))) != null && (a11 = e4.a.a(view, (i10 = w0.f25071y))) != null) {
+                        i10 = w0.L;
+                        Pi2ProgressArcView pi2ProgressArcView = (Pi2ProgressArcView) e4.a.a(view, i10);
+                        if (pi2ProgressArcView != null) {
+                            return new b(view, a12, pi2CircleMaskView, themeableLottieAnimationView, imageView, a10, a11, pi2ProgressArcView);
+                        }
+                    }
+                }
+            }
         }
-        if (!(obj instanceof b)) {
-            return false;
-        }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f27059d, bVar.f27059d) && Intrinsics.areEqual(this.f27060e, bVar.f27060e) && Intrinsics.areEqual(this.f27061i, bVar.f27061i) && Intrinsics.areEqual(this.f27062o, bVar.f27062o)) {
-            return true;
-        }
-        return false;
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
     }
 
-    public int hashCode() {
-        int hashCode;
-        int hashCode2;
-        int hashCode3 = this.f27059d.hashCode() * 31;
-        a1 a1Var = this.f27060e;
-        int i10 = 0;
-        if (a1Var == null) {
-            hashCode = 0;
-        } else {
-            hashCode = a1Var.hashCode();
+    public static b b(LayoutInflater layoutInflater, ViewGroup viewGroup) {
+        if (viewGroup != null) {
+            layoutInflater.inflate(x0.f25086b, viewGroup);
+            return a(viewGroup);
         }
-        int i11 = (hashCode3 + hashCode) * 31;
-        a1 a1Var2 = this.f27061i;
-        if (a1Var2 == null) {
-            hashCode2 = 0;
-        } else {
-            hashCode2 = a1Var2.hashCode();
-        }
-        int i12 = (i11 + hashCode2) * 31;
-        a1 a1Var3 = this.f27062o;
-        if (a1Var3 != null) {
-            i10 = a1Var3.hashCode();
-        }
-        return i12 + i10;
+        throw new NullPointerException("parent");
     }
 
-    public String toString() {
-        String str = this.f27059d;
-        a1 a1Var = this.f27060e;
-        a1 a1Var2 = this.f27061i;
-        a1 a1Var3 = this.f27062o;
-        return "SelfieStepData(stepName=" + str + ", centerCapture=" + a1Var + ", leftCapture=" + a1Var2 + ", rightCapture=" + a1Var3 + ")";
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f27059d);
-        dest.writeParcelable(this.f27060e, i10);
-        dest.writeParcelable(this.f27061i, i10);
-        dest.writeParcelable(this.f27062o, i10);
+    @Override // androidx.viewbinding.ViewBinding
+    public View getRoot() {
+        return this.f27322a;
     }
 }

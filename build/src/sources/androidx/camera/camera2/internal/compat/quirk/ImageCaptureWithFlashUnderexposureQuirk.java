@@ -10,11 +10,11 @@ import r.a0;
 public class ImageCaptureWithFlashUnderexposureQuirk implements UseTorchAsFlashQuirk {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final List f1912a = Arrays.asList("sm-a260f", "sm-j530f", "sm-j600g", "sm-j701f", "sm-g610f", "sm-j710mn");
+    public static final List f1956a = Arrays.asList("sm-a260f", "sm-j530f", "sm-j600g", "sm-j701f", "sm-g610f", "sm-j710mn");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean c(a0 a0Var) {
-        if (f1912a.contains(Build.MODEL.toLowerCase(Locale.US)) && ((Integer) a0Var.a(CameraCharacteristics.LENS_FACING)).intValue() == 1) {
+        if (f1956a.contains(Build.MODEL.toLowerCase(Locale.US)) && ((Integer) a0Var.a(CameraCharacteristics.LENS_FACING)).intValue() == 1) {
             return true;
         }
         return false;

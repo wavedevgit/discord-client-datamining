@@ -50,23 +50,23 @@ public final class CheckInquiryResponse_WaitForTransitionConfigJsonAdapter exten
         Long l11 = null;
         CheckInquiryResponse.PollingMode pollingMode = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 l10 = (Long) this.nullableLongAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 l11 = (Long) this.nullableLongAdapter.fromJson(reader);
-            } else if (A0 == 2 && (pollingMode = (CheckInquiryResponse.PollingMode) this.pollingModeAdapter.fromJson(reader)) == null) {
-                throw sm.c.x("pollingMode", "pollingMode", reader);
+            } else if (t02 == 2 && (pollingMode = (CheckInquiryResponse.PollingMode) this.pollingModeAdapter.fromJson(reader)) == null) {
+                throw tm.c.x("pollingMode", "pollingMode", reader);
             }
         }
         reader.y();
         if (pollingMode != null) {
             return new CheckInquiryResponse.WaitForTransitionConfig(l10, l11, pollingMode);
         }
-        throw sm.c.o("pollingMode", "pollingMode", reader);
+        throw tm.c.o("pollingMode", "pollingMode", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -74,11 +74,11 @@ public final class CheckInquiryResponse_WaitForTransitionConfigJsonAdapter exten
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (waitForTransitionConfig != null) {
             writer.l();
-            writer.A0("intervalMs");
+            writer.t0("intervalMs");
             this.nullableLongAdapter.toJson(writer, waitForTransitionConfig.getIntervalMs());
-            writer.A0("maxAttempts");
+            writer.t0("maxAttempts");
             this.nullableLongAdapter.toJson(writer, waitForTransitionConfig.getMaxAttempts());
-            writer.A0("pollingMode");
+            writer.t0("pollingMode");
             this.pollingModeAdapter.toJson(writer, waitForTransitionConfig.getPollingMode());
             writer.E();
             return;

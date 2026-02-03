@@ -8,7 +8,7 @@ public interface d extends Closeable {
 
     boolean isSuccessful();
 
-    String m0();
+    String n0();
 
-    InputStream u0();
+    InputStream w0();
 }

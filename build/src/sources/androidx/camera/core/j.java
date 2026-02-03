@@ -9,10 +9,10 @@ public final class j extends i {
     class a implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ n f2002a;
+        final /* synthetic */ n f2046a;
 
         a(n nVar) {
-            this.f2002a = nVar;
+            this.f2046a = nVar;
         }
 
         @Override // d0.c
@@ -22,7 +22,7 @@ public final class j extends i {
 
         @Override // d0.c
         public void onFailure(Throwable th2) {
-            this.f2002a.close();
+            this.f2046a.close();
         }
     }
 

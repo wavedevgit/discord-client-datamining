@@ -1,128 +1,167 @@
 package ks;
 
-import kotlin.Unit;
+import java.util.Collection;
+import java.util.List;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
-import kotlin.coroutines.d;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.channels.ProducerScope;
+import kotlin.jvm.functions.Function3;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
+import kotlinx.coroutines.flow.MutableStateFlow;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class g extends e {
-
-    /* renamed from: o  reason: collision with root package name */
-    protected final Flow f36476o;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        int f36477d;
-
-        /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f36478e;
-
-        a(Continuation continuation) {
-            super(2, continuation);
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Continuation create(Object obj, Continuation continuation) {
-            a aVar = new a(continuation);
-            aVar.f36478e = obj;
-            return aVar;
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            Object f10 = or.b.f();
-            int i10 = this.f36477d;
-            if (i10 != 0) {
-                if (i10 == 1) {
-                    kotlin.c.b(obj);
-                } else {
-                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-                }
-            } else {
-                kotlin.c.b(obj);
-                g gVar = g.this;
-                this.f36477d = 1;
-                if (gVar.q((FlowCollector) this.f36478e, this) == f10) {
-                    return f10;
-                }
-            }
-            return Unit.f33298a;
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((a) create(flowCollector, continuation)).invokeSuspend(Unit.f33298a);
-        }
+public abstract class g {
+    public static final Flow A(Iterable iterable) {
+        return u.b(iterable);
     }
 
-    public g(Flow flow, CoroutineContext coroutineContext, int i10, is.a aVar) {
-        super(coroutineContext, i10, aVar);
-        this.f36476o = flow;
+    public static final Flow B(Flow... flowArr) {
+        return u.c(flowArr);
     }
 
-    static /* synthetic */ Object n(g gVar, FlowCollector flowCollector, Continuation continuation) {
-        if (gVar.f36467e == -3) {
-            CoroutineContext context = continuation.getContext();
-            CoroutineContext j10 = gs.x.j(context, gVar.f36466d);
-            if (Intrinsics.areEqual(j10, context)) {
-                Object q10 = gVar.q(flowCollector, continuation);
-                if (q10 == or.b.f()) {
-                    return q10;
-                }
-                return Unit.f33298a;
-            }
-            d.b bVar = kotlin.coroutines.d.f33370h;
-            if (Intrinsics.areEqual(j10.l(bVar), context.l(bVar))) {
-                Object p10 = gVar.p(flowCollector, j10, continuation);
-                if (p10 == or.b.f()) {
-                    return p10;
-                }
-                return Unit.f33298a;
-            }
-        }
-        Object collect = super.collect(flowCollector, continuation);
-        if (collect == or.b.f()) {
-            return collect;
-        }
-        return Unit.f33298a;
+    public static final Flow C(Flow flow, Function2 function2) {
+        return x.b(flow, function2);
     }
 
-    static /* synthetic */ Object o(g gVar, ProducerScope producerScope, Continuation continuation) {
-        Object q10 = gVar.q(new z(producerScope), continuation);
-        if (q10 == or.b.f()) {
-            return q10;
-        }
-        return Unit.f33298a;
+    public static final a0 D(a0 a0Var, Function2 function2) {
+        return w.d(a0Var, function2);
     }
 
-    private final Object p(FlowCollector flowCollector, CoroutineContext coroutineContext, Continuation continuation) {
-        FlowCollector e10;
-        e10 = f.e(flowCollector, continuation.getContext());
-        return f.d(coroutineContext, e10, null, new a(null), continuation, 4, null);
+    public static final js.v E(Flow flow, CoroutineScope coroutineScope) {
+        return i.d(flow, coroutineScope);
     }
 
-    @Override // ks.e, kotlinx.coroutines.flow.Flow
-    public Object collect(FlowCollector flowCollector, Continuation continuation) {
-        return n(this, flowCollector, continuation);
+    public static final j0 F(Flow flow, CoroutineScope coroutineScope, g0 g0Var, Object obj) {
+        return w.e(flow, coroutineScope, g0Var, obj);
     }
 
-    @Override // ks.e
-    protected Object f(ProducerScope producerScope, Continuation continuation) {
-        return o(this, producerScope, continuation);
+    public static final Flow G(Flow flow, int i10) {
+        return t.e(flow, i10);
     }
 
-    protected abstract Object q(FlowCollector flowCollector, Continuation continuation);
+    public static final Flow H(Flow flow, Function2 function2) {
+        return t.f(flow, function2);
+    }
 
-    @Override // ks.e
-    public String toString() {
-        return this.f36476o + " -> " + super.toString();
+    public static final Flow I(Flow flow, long j10) {
+        return n.e(flow, j10);
+    }
+
+    public static final Object J(Flow flow, Collection collection, Continuation continuation) {
+        return k.a(flow, collection, continuation);
+    }
+
+    public static final Object K(Flow flow, List list, Continuation continuation) {
+        return k.b(flow, list, continuation);
+    }
+
+    public static final Flow M(Flow flow, Function3 function3) {
+        return u.d(flow, function3);
+    }
+
+    public static final Flow N(Flow flow, Function3 function3) {
+        return t.g(flow, function3);
+    }
+
+    public static final j0 a(MutableStateFlow mutableStateFlow) {
+        return w.a(mutableStateFlow);
+    }
+
+    public static final Flow b(Flow flow, int i10, js.a aVar) {
+        return l.a(flow, i10, aVar);
+    }
+
+    public static final Flow d(Function2 function2) {
+        return h.a(function2);
+    }
+
+    public static final Flow e(Flow flow) {
+        return l.c(flow);
+    }
+
+    public static final Flow f(Flow flow, Function3 function3) {
+        return s.a(flow, function3);
+    }
+
+    public static final Object g(Flow flow, FlowCollector flowCollector, Continuation continuation) {
+        return s.b(flow, flowCollector, continuation);
+    }
+
+    public static final Object h(Flow flow, Continuation continuation) {
+        return j.a(flow, continuation);
+    }
+
+    public static final Object i(Flow flow, Function2 function2, Continuation continuation) {
+        return j.b(flow, function2, continuation);
+    }
+
+    public static final Flow j(Flow flow) {
+        return l.e(flow);
+    }
+
+    public static final Flow k(Flow flow, long j10) {
+        return n.b(flow, j10);
+    }
+
+    public static final Flow l(Flow flow) {
+        return q.e(flow);
+    }
+
+    public static final Flow m(Flow flow, int i10) {
+        return t.b(flow, i10);
+    }
+
+    public static final Flow n(Flow flow, Function2 function2) {
+        return t.c(flow, function2);
+    }
+
+    public static final Object o(FlowCollector flowCollector, js.v vVar, Continuation continuation) {
+        return i.b(flowCollector, vVar, continuation);
+    }
+
+    public static final Object p(FlowCollector flowCollector, Flow flow, Continuation continuation) {
+        return j.c(flowCollector, flow, continuation);
+    }
+
+    public static final void q(FlowCollector flowCollector) {
+        r.a(flowCollector);
+    }
+
+    public static final Flow r(Flow flow) {
+        return x.a(flow);
+    }
+
+    public static final Object s(Flow flow, Continuation continuation) {
+        return v.a(flow, continuation);
+    }
+
+    public static final Object t(Flow flow, Function2 function2, Continuation continuation) {
+        return v.b(flow, function2, continuation);
+    }
+
+    public static final Object u(Flow flow, Continuation continuation) {
+        return v.c(flow, continuation);
+    }
+
+    public static final Flow v(Function2 function2) {
+        return h.b(function2);
+    }
+
+    public static final Flow w(Object obj) {
+        return h.c(obj);
+    }
+
+    public static final Flow x(Flow flow, CoroutineContext coroutineContext) {
+        return l.f(flow, coroutineContext);
+    }
+
+    public static final Job y(Flow flow, CoroutineScope coroutineScope) {
+        return j.d(flow, coroutineScope);
+    }
+
+    public static final Flow z(Flow flow, Function2 function2) {
+        return u.a(flow, function2);
     }
 }

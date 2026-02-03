@@ -7,18 +7,18 @@ import java.util.Map;
 final class r3 extends AbstractSet {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ t3 f15377d;
+    final /* synthetic */ t3 f15006d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ r3(t3 t3Var, q3 q3Var) {
-        this.f15377d = t3Var;
+        this.f15006d = t3Var;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final /* bridge */ /* synthetic */ boolean add(Object obj) {
         Map.Entry entry = (Map.Entry) obj;
         if (!contains(entry)) {
-            this.f15377d.put((Comparable) entry.getKey(), entry.getValue());
+            this.f15006d.put((Comparable) entry.getKey(), entry.getValue());
             return true;
         }
         return false;
@@ -26,13 +26,13 @@ final class r3 extends AbstractSet {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final void clear() {
-        this.f15377d.clear();
+        this.f15006d.clear();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean contains(Object obj) {
         Map.Entry entry = (Map.Entry) obj;
-        Object obj2 = this.f15377d.get(entry.getKey());
+        Object obj2 = this.f15006d.get(entry.getKey());
         Object value = entry.getValue();
         if (obj2 == value) {
             return true;
@@ -45,14 +45,14 @@ final class r3 extends AbstractSet {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final Iterator iterator() {
-        return new p3(this.f15377d, null);
+        return new p3(this.f15006d, null);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean remove(Object obj) {
         Map.Entry entry = (Map.Entry) obj;
         if (contains(entry)) {
-            this.f15377d.remove(entry.getKey());
+            this.f15006d.remove(entry.getKey());
             return true;
         }
         return false;
@@ -60,6 +60,6 @@ final class r3 extends AbstractSet {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f15377d.size();
+        return this.f15006d.size();
     }
 }

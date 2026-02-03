@@ -1,327 +1,110 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var15 = require;
-    var4 = metroImportDefault;
-    var2 = exports;
-    var16 = dependencyMap;
-    var _closure1_slot0 = var15;
-    var _closure1_slot1 = var16;
-    var0 = function arg0() {
-        _fun44784: for (var _fun44784_ip = 0;;) switch (_fun44784_ip) {
-            case 0:
-                var2 = arg0;
-                var3 = 'number';
-                var1 = typeof var2;
-                var0 = var2;
-                if (!(var3 !== var1)) {
-                    _fun44784_ip = 104;
-                    continue _fun44784
-                }
-            case 17:
-                var4 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var1 = 12;
-                var1 = var3[var1];
-                var3 = undefined;
-                var1 = var4.bind(var3)(var1);
-                var1 = var1.BaseGesture;
-                var1 = var2 instanceof var1;
-                if (var1) {
-                    _fun44784_ip = 95;
-                    continue _fun44784
-                }
-            case 55:
-                var4 = var2.current;
-                var1 = null;
-                var5 = var1 == var4;
-                var3 = undefined;
-                if (var5) {
-                    _fun44784_ip = 77;
-                    continue _fun44784
-                }
-            case 71:
-                var3 = var4.handlerTag;
-            case 77:
-                var4 = var1 != var3;
-                var1 = -1;
-                if (!var4) {
-                    _fun44784_ip = 93;
-                    continue _fun44784
-                }
-            case 90:
-                var1 = var3;
-            case 93:
-                _fun44784_ip = 101;
-                continue _fun44784;
-            case 95:
-                var1 = var2.handlerTag;
-            case 101:
-                var0 = var1;
-            case 104:
-                return var0;
-        }
-    };
-    var _closure1_slot6 = var0;
-    var0 = function arg0() {
-        _fun44785: for (var _fun44785_ip = 0;;) switch (_fun44785_ip) {
-            case 0:
-                var8 = arg0;
-                var0 = global;
-                var2 = var0.Array;
-                var1 = var2.from;
-                var4 = var0.Set;
-                var3 = null;
-                var5 = var3 == var8;
-                var0 = undefined;
-                if (var5) {
-                    _fun44785_ip = 76;
-                    continue _fun44785
-                }
-            case 33:
-                var7 = var8.map;
-                var5 = _closure1_slot6;
-                var7 = var7.bind(var8)(var5);
-                var5 = var3 == var7;
-                var0 = undefined;
-                if (var5) {
-                    _fun44785_ip = 76;
-                    continue _fun44785
-                }
-            case 59:
-                var6 = var7.filter;
-                var5 = function(arg0) { // Environment: var5
-                    var1 = arg0;
-                    var0 = 0;
-                    var0 = var1 > var0;
-                    return var0;
-                };
-                var0 = var6.bind(var7)(var5);
-            case 76:
-                if (!(var3 == var0)) {
-                    _fun44785_ip = 84;
-                    continue _fun44785
-                }
-            case 80:
-                var0 = new Array(0);
-            case 84:
-                var3 = var4.prototype;
-                var3 = Object.create(var3, {
-                    constructor: {
-                        value: var4
-                    }
-                });
-                var10 = var3;
-                var9 = var0;
-                var0 = new var10[var4](var9, var8);
-                var0 = var0 instanceof Object ? var0 : var3;
-                var0 = var1.bind(var2)(var0);
-                return var0;
-        }
-    };
-    var _closure1_slot7 = var0;
-    var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var3);
-    var0 = 0;
-    var3 = var16[var0];
-    var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot2 = var3;
-    var3 = 1;
-    var3 = var16[var3];
-    var14 = var4.bind(var0)(var3);
-    var3 = 2;
-    var3 = var16[var3];
-    var3 = var15.bind(var0)(var3);
-    var3 = var3.Platform;
-    var3 = 3;
-    var3 = var16[var3];
-    var3 = var15.bind(var0)(var3);
-    var4 = var3.useCallback;
-    var _closure1_slot3 = var4;
-    var4 = var3.useRef;
-    var _closure1_slot4 = var4;
-    var3 = var3.useState;
-    var _closure1_slot5 = var3;
-    var13 = new Array(0);
-    var12 = var13.concat;
-    var3 = 4;
-    var3 = var16[var3];
-    var3 = var15.bind(var0)(var3);
-    var3 = var3.baseGestureHandlerWithDetectorProps;
-    var11 = var14.bind(var0)(var3);
-    var3 = 5;
-    var3 = var16[var3];
-    var3 = var15.bind(var0)(var3);
-    var3 = var3.tapGestureHandlerProps;
-    var24 = var14.bind(var0)(var3);
-    var3 = 6;
-    var4 = var16[var3];
-    var4 = var15.bind(var0)(var4);
-    var4 = var4.panGestureHandlerProps;
-    var23 = var14.bind(var0)(var4);
-    var3 = var16[var3];
-    var3 = var15.bind(var0)(var3);
-    var3 = var3.panGestureHandlerCustomNativeProps;
-    var22 = var14.bind(var0)(var3);
-    var3 = 7;
-    var3 = var16[var3];
-    var3 = var15.bind(var0)(var3);
-    var3 = var3.longPressGestureHandlerProps;
-    var21 = var14.bind(var0)(var3);
-    var3 = 8;
-    var3 = var16[var3];
-    var3 = var15.bind(var0)(var3);
-    var3 = var3.forceTouchGestureHandlerProps;
-    var20 = var14.bind(var0)(var3);
-    var3 = 9;
-    var3 = var16[var3];
-    var3 = var15.bind(var0)(var3);
-    var3 = var3.flingGestureHandlerProps;
-    var19 = var14.bind(var0)(var3);
-    var3 = 10;
-    var3 = var16[var3];
-    var3 = var15.bind(var0)(var3);
-    var3 = var3.hoverGestureHandlerProps;
-    var18 = var14.bind(var0)(var3);
-    var3 = 11;
-    var3 = var16[var3];
-    var3 = var15.bind(var0)(var3);
-    var3 = var3.nativeViewGestureHandlerProps;
-    var17 = var14.bind(var0)(var3);
-    var26 = var13;
-    var25 = var11;
-    var3 = var26[var12](var25, var24, var23, var22, var21, var20, var19, var18, var17, var16);
-    var2.ALLOWED_PROPS = var3;
-    var3 = function arg0() {
-        var1 = arg0;
-        var2 = var1.config;
-        var4 = _closure1_slot7;
-        var0 = var1.config;
-        var0 = var0.requireToFail;
-        var3 = undefined;
-        var0 = var4.bind(var3)(var0);
-        var2.requireToFail = var0;
-        var2 = var1.config;
-        var0 = var1.config;
-        var0 = var0.simultaneousWith;
-        var0 = var4.bind(var3)(var0);
-        var2.simultaneousWith = var0;
-        var2 = var1.config;
-        var0 = var1.config;
-        var0 = var0.blocksHandlers;
-        var0 = var4.bind(var3)(var0);
-        var2.blocksHandlers = var0;
-        var0 = {};
-        var2 = var1.config;
-        var2 = var2.requireToFail;
-        var0.waitFor = var2;
-        var2 = var1.config;
-        var2 = var2.simultaneousWith;
-        var0.simultaneousHandlers = var2;
-        var1 = var1.config;
-        var1 = var1.blocksHandlers;
-        var0.blocksHandlers = var1;
-        return var0;
-    };
-    var2.extractGestureRelations = var3;
-    var3 = function arg0() {
-        var0 = undefined;
-        return var0;
-    };
-    var2.checkGestureCallbacksForWorklets = var3;
-    var3 = function arg0() {
-        var0 = undefined;
-        return var0;
-    };
-    var2.validateDetectorChildren = var3;
-    var3 = function() {
-        var4 = _closure1_slot5;
-        var3 = undefined;
-        var2 = false;
-        var5 = var4.bind(var3)(var2);
-        var4 = _closure1_slot2;
-        var2 = 2;
-        var4 = var4.bind(var3)(var5, var2);
-        var2 = 0;
-        var5 = var4[var2];
-        var _closure2_slot0 = var5;
-        var2 = 1;
-        var4 = var4[var2];
-        var _closure2_slot1 = var4;
-        var2 = _closure1_slot3;
-        var1 = new Array(2);
-        var1[0] = var5;
-        var1[1] = var4;
-        var0 = function() { // Environment: var0
-            var2 = _closure2_slot1;
-            var0 = _closure2_slot0;
-            var1 = !var0;
+    _fun44770: for (var _fun44770_ip = 0;;) switch (_fun44770_ip) {
+        case 0:
+            var4 = require;
+            var12 = exports;
+            var0 = dependencyMap;
+            var8 = var4;
+            var _closure1_slot0 = var4;
+            var2 = var12;
+            var7 = var0;
+            var _closure1_slot1 = var0;
             var0 = undefined;
-            var1 = var2.bind(var0)(var1);
-            return var0;
-        };
-        var0 = var2.bind(var3)(var0, var1);
-        return var0;
-    };
-    var2.useForceRender = var3;
-    var1 = function() {
-        _fun44792: for (var _fun44792_ip = 0;;) switch (_fun44792_ip) {
-            case 0:
-                var2 = _closure1_slot4;
-                var1 = {};
-                var3 = function arg0() {
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var0 = 15;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var3 = var2.bind(var0)(var1);
-                    var2 = var3.onGestureHandlerEvent;
-                    var1 = arg0;
-                    var1 = var1.nativeEvent;
-                    var1 = var2.bind(var3)(var1);
-                    return var0;
-                };
-                var1.onGestureHandlerEvent = var3;
-                var5 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var0 = 16;
-                var3 = var3[var0];
+            var6 = undefined;
+            var1 = undefined;
+            var5 = undefined;
+            var4 = global;
+            var11 = var4.Object;
+            var10 = var11.defineProperty;
+            var9 = {};
+            var4 = true;
+            var9.value = var4;
+            var4 = '__esModule';
+            var4 = var10.bind(var11)(var12, var4, var9);
+        case 68: // try_start_0
+            var9 = var8;
+            var10 = var7;
+            var4 = 0;
+            var4 = var10[var4];
+            var1 = var9.bind(var0)(var4);
+        case 85: // try_end0
+            _fun44770_ip = 91;
+            continue _fun44770;
+        case 87: // catch_target0
+            CatchBlockStart(arg_register = 4);
+            var1 = undefined;
+        case 91:
+            var10 = var1;
+            var6 = var10;
+            var9 = null;
+            var9 = var9 != var10;
+            var4 = var9;
+            if (!var9) {
+                _fun44770_ip = 115;
+                continue _fun44770
+            }
+        case 109:
+            var4 = var6.useSharedValue;
+        case 115:
+            if (var4) {
+                _fun44770_ip = 120;
+                continue _fun44770
+            }
+        case 118:
+            var1 = undefined;
+        case 120:
+            var4 = {};
+            var6 = "function pnpm_reanimatedWrapperTs1(){const{tagMessage}=this.__closure;console.warn(tagMessage('Please use newer version of react-native-reanimated in order to control state of the gestures.'));}";
+            var4.code = var6;
+            var5 = var4;
+            var6 = var1;
+            var6 = var0 === var6;
+            var4 = var6;
+            if (var6) {
+                _fun44770_ip = 157;
+                continue _fun44770
+            }
+        case 148:
+            var6 = var1;
+            var4 = var6.setGestureState;
+        case 157:
+            if (var4) {
+                _fun44770_ip = 230;
+                continue _fun44770
+            }
+        case 160:
+            var4 = var1;
+            var3 = function() {
+                var0 = global;
+                var3 = var0.console;
+                var2 = var3.warn;
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var1 = var1[var0];
                 var0 = undefined;
-                var5 = var5.bind(var0)(var3);
-                var3 = var5.isNewWebImplementationEnabled;
-                var5 = var3.bind(var5)();
-                var3 = undefined;
-                if (!var5) {
-                    _fun44792_ip = 63;
-                    continue _fun44792
-                }
-            case 58:
-                var3 = function(arg0) { // Environment: var4
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var0 = 15;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var3 = var2.bind(var0)(var1);
-                    var2 = var3.onGestureHandlerEvent;
-                    var1 = arg0;
-                    var1 = var1.nativeEvent;
-                    var1 = var2.bind(var3)(var1);
-                    return var0;
-                };
-            case 63:
-                var1.onGestureHandlerStateChange = var3;
-                var0 = var2.bind(var0)(var1);
+                var5 = var4.bind(var0)(var1);
+                var4 = var5.tagMessage;
+                var1 = 'Please use newer version of react-native-reanimated in order to control state of the gestures.';
+                var1 = var4.bind(var5)(var1);
+                var1 = var2.bind(var3)(var1);
                 return var0;
-        }
-    };
-    var2.useWebEventHandlers = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 65, 27, 31, 4943, 4944, 4956, 4955, 4953, 4959, 4964, 4961, 4965, 4930, 4933, 4928, 4966]);
+            };
+            var6 = {};
+            var9 = var7;
+            var7 = 1;
+            var7 = var9[var7];
+            var7 = var8.bind(var0)(var7);
+            var7 = var7.tagMessage;
+            var6.tagMessage = var7;
+            var3.__closure = var6;
+            var6 = 12835327155090.0;
+            var3.__workletHash = var6;
+            var3.__initData = var5;
+            var4.setGestureState = var3;
+        case 230:
+            var2.Reanimated = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3712, 4960]);

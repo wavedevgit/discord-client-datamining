@@ -1,7 +1,7 @@
 // modules/chat_input/native/ChatInputNativeComponent.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun90408: for (var _fun90408_ip = 0;;) switch (_fun90408_ip) {
+    _fun90366: for (var _fun90366_ip = 0;;) switch (_fun90366_ip) {
         case 0:
             var4 = require;
             var12 = metroImportDefault;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot5 = var1;
             var3 = var8.forwardRef;
             var1 = function(arg0, arg1) { // Environment: var6
-                _fun90409: for (var _fun90409_ip = 0;;) switch (_fun90409_ip) {
+                _fun90367: for (var _fun90367_ip = 0;;) switch (_fun90367_ip) {
                     case 0:
                         var0 = arg0;
                         var22 = var0.accessibilityLabel;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var21 = var0.markAsSpoilerTitle;
                         var3 = undefined;
                         if (!(var21 === var3)) {
-                            _fun90409_ip = 96;
-                            continue _fun90409
+                            _fun90367_ip = 96;
+                            continue _fun90367
                         }
                     case 38:
                         var5 = _closure1_slot0;
@@ -132,13 +132,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = var23.bind(var3)(var8);
                         var8 = var8.unsafe_rawColors;
                         if (var1) {
-                            _fun90409_ip = 313;
-                            continue _fun90409
+                            _fun90367_ip = 313;
+                            continue _fun90367
                         }
                     case 305:
                         var23 = var8.PRIMARY_500;
-                        _fun90409_ip = 319;
-                        continue _fun90409;
+                        _fun90367_ip = 319;
+                        continue _fun90367;
                     case 313:
                         var23 = var8.WHITE;
                     case 319:
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var27 = var8 != var27;
                         var8 = 0.6;
                         if (!var27) {
-                            _fun90409_ip = 358;
-                            continue _fun90409
+                            _fun90367_ip = 358;
+                            continue _fun90367
                         }
                     case 348:
                         var8 = 0.8;
@@ -164,8 +164,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var25 = var25.bind(var26)();
                         var26 = undefined;
                         if (var25) {
-                            _fun90409_ip = 402;
-                            continue _fun90409
+                            _fun90367_ip = 402;
+                            continue _fun90367
                         }
                     case 399:
                         var26 = var22;
@@ -178,8 +178,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var22 = var22.bind(var25)();
                         var25 = undefined;
                         if (var22) {
-                            _fun90409_ip = 437;
-                            continue _fun90409
+                            _fun90367_ip = 437;
+                            continue _fun90367
                         }
                     case 434:
                         var25 = var20;
@@ -192,16 +192,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var20 = var20.bind(var22)();
                         var22 = 'default';
                         if (!var20) {
-                            _fun90409_ip = 473;
-                            continue _fun90409
+                            _fun90367_ip = 473;
+                            continue _fun90367
                         }
                     case 471:
                         var22 = undefined;
                     case 473:
                         var23 = 2;
                         if (!var1) {
-                            _fun90409_ip = 482;
-                            continue _fun90409
+                            _fun90367_ip = 482;
+                            continue _fun90367
                         }
                     case 479:
                         var23 = 1;
@@ -251,14 +251,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var8.isAndroid;
             var3 = var3.bind(var8)();
             if (var3) {
-                _fun90408_ip = 288;
-                continue _fun90408
+                _fun90366_ip = 288;
+                continue _fun90366
             }
         case 275:
             var3 = 'DCDChatInput';
             var3 = var7.bind(var0)(var3);
-            _fun90408_ip = 305;
-            continue _fun90408;
+            _fun90366_ip = 305;
+            continue _fun90366;
         case 288:
             var7 = 12;
             var7 = var5[var7];
@@ -277,4 +277,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3170, 33, 1297, 671, 1234, 3207, 3167, 3201, 478, 11562, 11566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3200, 33, 1297, 671, 1234, 3237, 3197, 3231, 478, 11592, 11596, 2]);

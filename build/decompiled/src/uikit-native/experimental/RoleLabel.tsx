@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/experimental/RoleLabel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73800: for (var _fun73800_ip = 0;;) switch (_fun73800_ip) {
+        _fun73911: for (var _fun73911_ip = 0;;) switch (_fun73911_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.name;
@@ -83,16 +83,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 'username';
                 var0 = var0 === var6;
                 if (!var0) {
-                    _fun73800_ip = 94;
-                    continue _fun73800
+                    _fun73911_ip = 94;
+                    continue _fun73911
                 }
             case 88:
                 var1 = null;
                 var0 = var1 != var12;
             case 94:
                 if (!var0) {
-                    _fun73800_ip = 106;
-                    continue _fun73800
+                    _fun73911_ip = 106;
+                    continue _fun73911
                 }
             case 97:
                 var0 = {};
@@ -108,16 +108,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 'dot';
                 var6 = var4 === var6;
                 if (!var6) {
-                    _fun73800_ip = 146;
-                    continue _fun73800
+                    _fun73911_ip = 146;
+                    continue _fun73911
                 }
             case 140:
                 var4 = null;
                 var6 = var4 != var12;
             case 146:
                 if (!var6) {
-                    _fun73800_ip = 210;
-                    continue _fun73800
+                    _fun73911_ip = 210;
+                    continue _fun73911
                 }
             case 149:
                 var10 = _closure1_slot4;
@@ -156,4 +156,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.RoleLabel = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 566, 8155, 5342, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 566, 8187, 5373, 2]);

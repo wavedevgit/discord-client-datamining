@@ -16,31 +16,31 @@ import kotlin.jvm.internal.Intrinsics;
 public final class ProcessLifecycleOwner implements LifecycleOwner {
 
     /* renamed from: t  reason: collision with root package name */
-    public static final b f4432t = new b(null);
+    public static final b f4476t = new b(null);
 
     /* renamed from: u  reason: collision with root package name */
-    private static final ProcessLifecycleOwner f4433u = new ProcessLifecycleOwner();
+    private static final ProcessLifecycleOwner f4477u = new ProcessLifecycleOwner();
 
     /* renamed from: d  reason: collision with root package name */
-    private int f4434d;
+    private int f4478d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f4435e;
+    private int f4479e;
 
     /* renamed from: p  reason: collision with root package name */
-    private Handler f4438p;
+    private Handler f4482p;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f4436i = true;
+    private boolean f4480i = true;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f4437o = true;
+    private boolean f4481o = true;
 
     /* renamed from: q  reason: collision with root package name */
-    private final LifecycleRegistry f4439q = new LifecycleRegistry(this);
+    private final LifecycleRegistry f4483q = new LifecycleRegistry(this);
 
     /* renamed from: r  reason: collision with root package name */
-    private final Runnable f4440r = new Runnable() { // from class: androidx.lifecycle.x
+    private final Runnable f4484r = new Runnable() { // from class: androidx.lifecycle.x
         @Override // java.lang.Runnable
         public final void run() {
             ProcessLifecycleOwner.j(ProcessLifecycleOwner.this);
@@ -48,13 +48,13 @@ public final class ProcessLifecycleOwner implements LifecycleOwner {
     };
 
     /* renamed from: s  reason: collision with root package name */
-    private final a0.a f4441s = new d();
+    private final a0.a f4485s = new d();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f4442a = new a();
+        public static final a f4486a = new a();
 
         private a() {
         }
@@ -73,12 +73,12 @@ public final class ProcessLifecycleOwner implements LifecycleOwner {
         }
 
         public final LifecycleOwner a() {
-            return ProcessLifecycleOwner.f4433u;
+            return ProcessLifecycleOwner.f4477u;
         }
 
         public final void b(Context context) {
             Intrinsics.checkNotNullParameter(context, "context");
-            ProcessLifecycleOwner.f4433u.i(context);
+            ProcessLifecycleOwner.f4477u.i(context);
         }
 
         private b() {
@@ -116,7 +116,7 @@ public final class ProcessLifecycleOwner implements LifecycleOwner {
         public void onActivityCreated(Activity activity, Bundle bundle) {
             Intrinsics.checkNotNullParameter(activity, "activity");
             if (Build.VERSION.SDK_INT < 29) {
-                a0.f4458e.b(activity).e(ProcessLifecycleOwner.this.f4441s);
+                a0.f4502e.b(activity).e(ProcessLifecycleOwner.this.f4485s);
             }
         }
 
@@ -169,73 +169,73 @@ public final class ProcessLifecycleOwner implements LifecycleOwner {
     }
 
     public static final LifecycleOwner m() {
-        return f4432t.a();
+        return f4476t.a();
     }
 
     public final void e() {
-        int i10 = this.f4435e - 1;
-        this.f4435e = i10;
+        int i10 = this.f4479e - 1;
+        this.f4479e = i10;
         if (i10 == 0) {
-            Handler handler = this.f4438p;
+            Handler handler = this.f4482p;
             Intrinsics.checkNotNull(handler);
-            handler.postDelayed(this.f4440r, 700L);
+            handler.postDelayed(this.f4484r, 700L);
         }
     }
 
     public final void f() {
-        int i10 = this.f4435e + 1;
-        this.f4435e = i10;
+        int i10 = this.f4479e + 1;
+        this.f4479e = i10;
         if (i10 == 1) {
-            if (this.f4436i) {
-                this.f4439q.j(Lifecycle.a.ON_RESUME);
-                this.f4436i = false;
+            if (this.f4480i) {
+                this.f4483q.j(Lifecycle.a.ON_RESUME);
+                this.f4480i = false;
                 return;
             }
-            Handler handler = this.f4438p;
+            Handler handler = this.f4482p;
             Intrinsics.checkNotNull(handler);
-            handler.removeCallbacks(this.f4440r);
+            handler.removeCallbacks(this.f4484r);
         }
     }
 
     public final void g() {
-        int i10 = this.f4434d + 1;
-        this.f4434d = i10;
-        if (i10 == 1 && this.f4437o) {
-            this.f4439q.j(Lifecycle.a.ON_START);
-            this.f4437o = false;
+        int i10 = this.f4478d + 1;
+        this.f4478d = i10;
+        if (i10 == 1 && this.f4481o) {
+            this.f4483q.j(Lifecycle.a.ON_START);
+            this.f4481o = false;
         }
     }
 
     @Override // androidx.lifecycle.LifecycleOwner
     public Lifecycle getLifecycle() {
-        return this.f4439q;
+        return this.f4483q;
     }
 
     public final void h() {
-        this.f4434d--;
+        this.f4478d--;
         l();
     }
 
     public final void i(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f4438p = new Handler();
-        this.f4439q.j(Lifecycle.a.ON_CREATE);
+        this.f4482p = new Handler();
+        this.f4483q.j(Lifecycle.a.ON_CREATE);
         Context applicationContext = context.getApplicationContext();
         Intrinsics.checkNotNull(applicationContext, "null cannot be cast to non-null type android.app.Application");
         ((Application) applicationContext).registerActivityLifecycleCallbacks(new c());
     }
 
     public final void k() {
-        if (this.f4435e == 0) {
-            this.f4436i = true;
-            this.f4439q.j(Lifecycle.a.ON_PAUSE);
+        if (this.f4479e == 0) {
+            this.f4480i = true;
+            this.f4483q.j(Lifecycle.a.ON_PAUSE);
         }
     }
 
     public final void l() {
-        if (this.f4434d == 0 && this.f4436i) {
-            this.f4439q.j(Lifecycle.a.ON_STOP);
-            this.f4437o = true;
+        if (this.f4478d == 0 && this.f4480i) {
+            this.f4483q.j(Lifecycle.a.ON_STOP);
+            this.f4481o = true;
         }
     }
 }

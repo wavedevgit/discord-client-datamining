@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.HotwheelsHoldoutTheSequel = var5;
     var2.HotwheelsActivityFeedNvidiaExperiment = var4;
     var4 = function arg0() {
-        _fun95340: for (var _fun95340_ip = 0;;) switch (_fun95340_ip) {
+        _fun95316: for (var _fun95316_ip = 0;;) switch (_fun95316_ip) {
             case 0:
                 var4 = arg0;
                 var5 = _closure1_slot2;
@@ -167,8 +167,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = false;
                 var1 = var2.bind(var3)(var4, var1);
                 if (var0) {
-                    _fun95340_ip = 84;
-                    continue _fun95340
+                    _fun95316_ip = 84;
+                    continue _fun95316
                 }
             case 81:
                 var0 = var1;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isEligibleForContentInventoryV1 = var4;
     var4 = function arg0() {
-        _fun95341: for (var _fun95341_ip = 0;;) switch (_fun95341_ip) {
+        _fun95317: for (var _fun95317_ip = 0;;) switch (_fun95317_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.getCurrentConfig;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.enabled;
                 var2 = var1.impressionCappingEnabled;
                 if (!var0) {
-                    _fun95341_ip = 57;
-                    continue _fun95341
+                    _fun95317_ip = 57;
+                    continue _fun95317
                 }
             case 51:
                 var1 = true;
@@ -231,4 +231,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleForContentInventoryAnalyticsSampling = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 3076, 8828, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 3106, 8860, 2]);

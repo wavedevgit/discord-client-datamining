@@ -1,27 +1,27 @@
 package vn;
 
-import java.util.Set;
+import android.content.Context;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class k implements tq.d {
+public final class k implements uq.d {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static final class a {
+    /* renamed from: a  reason: collision with root package name */
+    private final uq.h f51451a;
 
-        /* renamed from: a  reason: collision with root package name */
-        static final k f51461a = new k();
+    public k(uq.h hVar) {
+        this.f51451a = hVar;
     }
 
-    public static k a() {
-        return a.f51461a;
+    public static k a(uq.h hVar) {
+        return new k(hVar);
     }
 
-    public static Set c() {
-        return (Set) tq.g.d(j.a());
+    public static j c(Context context) {
+        return new j(context);
     }
 
     @Override // javax.inject.Provider
     /* renamed from: b */
-    public Set get() {
-        return c();
+    public j get() {
+        return c((Context) this.f51451a.get());
     }
 }

@@ -9,14 +9,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class AddressAutocompleteResponse {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Meta f20745a;
+    private final Meta f20378a;
 
     public AddressAutocompleteResponse(Meta meta) {
         Intrinsics.checkNotNullParameter(meta, "meta");
-        this.f20745a = meta;
+        this.f20378a = meta;
     }
 
     public final Meta a() {
-        return this.f20745a;
+        return this.f20378a;
     }
 }

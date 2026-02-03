@@ -2,7 +2,7 @@ package com.discord.device.utils;
 
 import android.content.Context;
 import android.provider.Settings;
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.Intrinsics;
@@ -34,7 +34,7 @@ public final class DeviceReducedMotion {
         static {
             MotionPreference[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
         }
 
         private MotionPreference(String str, int i10) {

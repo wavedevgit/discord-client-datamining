@@ -24,31 +24,31 @@ import org.webrtc.PeerConnection;
 public abstract class y {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Pattern f25033a = Pattern.compile("^\\D?(\\d+)$");
+    private static final Pattern f24244a = Pattern.compile("^\\D?(\\d+)$");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final HashMap f25034b = new HashMap();
+    private static final HashMap f24245b = new HashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private static int f25035c = -1;
+    private static int f24246c = -1;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f25036a;
+        public final String f24247a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final boolean f25037b;
+        public final boolean f24248b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final boolean f25038c;
+        public final boolean f24249c;
 
         public b(String str, boolean z10, boolean z11) {
-            this.f25036a = str;
-            this.f25037b = z10;
-            this.f25038c = z11;
+            this.f24247a = str;
+            this.f24248b = z10;
+            this.f24249c = z11;
         }
 
         public boolean equals(Object obj) {
@@ -57,7 +57,7 @@ public abstract class y {
             }
             if (obj != null && obj.getClass() == b.class) {
                 b bVar = (b) obj;
-                if (TextUtils.equals(this.f25036a, bVar.f25036a) && this.f25037b == bVar.f25037b && this.f25038c == bVar.f25038c) {
+                if (TextUtils.equals(this.f24247a, bVar.f24247a) && this.f24248b == bVar.f24248b && this.f24249c == bVar.f24249c) {
                     return true;
                 }
             }
@@ -66,15 +66,15 @@ public abstract class y {
 
         public int hashCode() {
             int i10;
-            int hashCode = (this.f25036a.hashCode() + 31) * 31;
+            int hashCode = (this.f24247a.hashCode() + 31) * 31;
             int i11 = 1237;
-            if (this.f25037b) {
+            if (this.f24248b) {
                 i10 = 1231;
             } else {
                 i10 = 1237;
             }
             int i12 = (hashCode + i10) * 31;
-            if (this.f25038c) {
+            if (this.f24249c) {
                 i11 = 1231;
             }
             return i12 + i11;
@@ -142,10 +142,10 @@ public abstract class y {
     public static final class f implements d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f25039a;
+        private final int f24250a;
 
         /* renamed from: b  reason: collision with root package name */
-        private MediaCodecInfo[] f25040b;
+        private MediaCodecInfo[] f24251b;
 
         public f(boolean z10, boolean z11) {
             int i10;
@@ -154,19 +154,19 @@ public abstract class y {
             } else {
                 i10 = 1;
             }
-            this.f25039a = i10;
+            this.f24250a = i10;
         }
 
         private void f() {
-            if (this.f25040b == null) {
-                this.f25040b = new MediaCodecList(this.f25039a).getCodecInfos();
+            if (this.f24251b == null) {
+                this.f24251b = new MediaCodecList(this.f24250a).getCodecInfos();
             }
         }
 
         @Override // fd.y.d
         public MediaCodecInfo a(int i10) {
             f();
-            return this.f25040b[i10];
+            return this.f24251b[i10];
         }
 
         @Override // fd.y.d
@@ -182,7 +182,7 @@ public abstract class y {
         @Override // fd.y.d
         public int d() {
             f();
-            return this.f25040b.length;
+            return this.f24251b.length;
         }
 
         @Override // fd.y.d
@@ -444,7 +444,7 @@ public abstract class y {
     }
 
     private static boolean C(MediaCodecInfo mediaCodecInfo) {
-        if (w0.f40295a >= 29 && D(mediaCodecInfo)) {
+        if (w0.f40158a >= 29 && D(mediaCodecInfo)) {
             return true;
         }
         return false;
@@ -458,41 +458,41 @@ public abstract class y {
         if (mediaCodecInfo.isEncoder() || (!z10 && str.endsWith(".secure"))) {
             return false;
         }
-        int i10 = w0.f40295a;
+        int i10 = w0.f40158a;
         if (i10 < 21 && ("CIPAACDecoder".equals(str) || "CIPMP3Decoder".equals(str) || "CIPVorbisDecoder".equals(str) || "CIPAMRNBDecoder".equals(str) || "AACDecoder".equals(str) || "MP3Decoder".equals(str))) {
             return false;
         }
         if (i10 < 18 && "OMX.MTK.AUDIO.DECODER.AAC".equals(str)) {
-            String str3 = w0.f40296b;
-            if ("a70".equals(str3) || ("Xiaomi".equals(w0.f40297c) && str3.startsWith("HM"))) {
+            String str3 = w0.f40159b;
+            if ("a70".equals(str3) || ("Xiaomi".equals(w0.f40160c) && str3.startsWith("HM"))) {
                 return false;
             }
         }
         if (i10 == 16 && "OMX.qcom.audio.decoder.mp3".equals(str)) {
-            String str4 = w0.f40296b;
+            String str4 = w0.f40159b;
             if ("dlxu".equals(str4) || "protou".equals(str4) || "ville".equals(str4) || "villeplus".equals(str4) || "villec2".equals(str4) || str4.startsWith("gee") || "C6602".equals(str4) || "C6603".equals(str4) || "C6606".equals(str4) || "C6616".equals(str4) || "L36h".equals(str4) || "SO-02E".equals(str4)) {
                 return false;
             }
         }
         if (i10 == 16 && "OMX.qcom.audio.decoder.aac".equals(str)) {
-            String str5 = w0.f40296b;
+            String str5 = w0.f40159b;
             if ("C1504".equals(str5) || "C1505".equals(str5) || "C1604".equals(str5) || "C1605".equals(str5)) {
                 return false;
             }
         }
-        if (i10 < 24 && (("OMX.SEC.aac.dec".equals(str) || "OMX.Exynos.AAC.Decoder".equals(str)) && "samsung".equals(w0.f40297c))) {
-            String str6 = w0.f40296b;
+        if (i10 < 24 && (("OMX.SEC.aac.dec".equals(str) || "OMX.Exynos.AAC.Decoder".equals(str)) && "samsung".equals(w0.f40160c))) {
+            String str6 = w0.f40159b;
             if (str6.startsWith("zeroflte") || str6.startsWith("zerolte") || str6.startsWith("zenlte") || "SC-05G".equals(str6) || "marinelteatt".equals(str6) || "404SC".equals(str6) || "SC-04G".equals(str6) || "SCV31".equals(str6)) {
                 return false;
             }
         }
-        if (i10 <= 19 && "OMX.SEC.vp8.dec".equals(str) && "samsung".equals(w0.f40297c)) {
-            String str7 = w0.f40296b;
+        if (i10 <= 19 && "OMX.SEC.vp8.dec".equals(str) && "samsung".equals(w0.f40160c)) {
+            String str7 = w0.f40159b;
             if (str7.startsWith("d2") || str7.startsWith("serrano") || str7.startsWith("jflte") || str7.startsWith("santos") || str7.startsWith("t0")) {
                 return false;
             }
         }
-        if (i10 <= 19 && w0.f40296b.startsWith("jflte") && "OMX.qcom.video.decoder.vp8".equals(str)) {
+        if (i10 <= 19 && w0.f40159b.startsWith("jflte") && "OMX.qcom.video.decoder.vp8".equals(str)) {
             return false;
         }
         if (i10 <= 23 && "audio/eac3-joc".equals(str2) && "OMX.MTK.AUDIO.DECODER.DSPAC3".equals(str)) {
@@ -502,7 +502,7 @@ public abstract class y {
     }
 
     private static boolean F(MediaCodecInfo mediaCodecInfo, String str) {
-        if (w0.f40295a >= 29) {
+        if (w0.f40158a >= 29) {
             return G(mediaCodecInfo);
         }
         return !H(mediaCodecInfo, str);
@@ -513,7 +513,7 @@ public abstract class y {
     }
 
     private static boolean H(MediaCodecInfo mediaCodecInfo, String str) {
-        if (w0.f40295a >= 29) {
+        if (w0.f40158a >= 29) {
             return I(mediaCodecInfo);
         }
         if (c0.o(str)) {
@@ -534,7 +534,7 @@ public abstract class y {
     }
 
     private static boolean J(MediaCodecInfo mediaCodecInfo) {
-        if (w0.f40295a >= 29) {
+        if (w0.f40158a >= 29) {
             return K(mediaCodecInfo);
         }
         String e10 = ii.b.e(mediaCodecInfo.getName());
@@ -550,7 +550,7 @@ public abstract class y {
 
     public static int L() {
         int i10;
-        if (f25035c == -1) {
+        if (f24246c == -1) {
             int i11 = 0;
             q s10 = s("video/avc", false, false);
             if (s10 != null) {
@@ -561,16 +561,16 @@ public abstract class y {
                     i12 = Math.max(h(h10[i11].level), i12);
                     i11++;
                 }
-                if (w0.f40295a >= 21) {
+                if (w0.f40158a >= 21) {
                     i10 = 345600;
                 } else {
                     i10 = 172800;
                 }
                 i11 = Math.max(i12, i10);
             }
-            f25035c = i11;
+            f24246c = i11;
         }
-        return f25035c;
+        return f24246c;
     }
 
     private static int M(int i10) {
@@ -684,9 +684,9 @@ public abstract class y {
     }
 
     public static /* synthetic */ int b(q qVar) {
-        String str = qVar.f24983a;
+        String str = qVar.f24194a;
         if (!str.startsWith("OMX.google") && !str.startsWith("c2.android")) {
-            if (w0.f40295a < 26 && str.equals("OMX.MTK.AUDIO.DECODER.RAW")) {
+            if (w0.f40158a < 26 && str.equals("OMX.MTK.AUDIO.DECODER.RAW")) {
                 return -1;
             }
             return 0;
@@ -695,7 +695,7 @@ public abstract class y {
     }
 
     public static /* synthetic */ int c(q qVar) {
-        return qVar.f24983a.startsWith("OMX.google") ? 1 : 0;
+        return qVar.f24194a.startsWith("OMX.google") ? 1 : 0;
     }
 
     public static /* synthetic */ int d(Format format, q qVar) {
@@ -704,7 +704,7 @@ public abstract class y {
 
     private static void e(String str, List list) {
         if ("audio/raw".equals(str)) {
-            if (w0.f40295a < 26 && w0.f40296b.equals("R9") && list.size() == 1 && ((q) list.get(0)).f24983a.equals("OMX.MTK.AUDIO.DECODER.RAW")) {
+            if (w0.f40158a < 26 && w0.f40159b.equals("R9") && list.size() == 1 && ((q) list.get(0)).f24194a.equals("OMX.MTK.AUDIO.DECODER.RAW")) {
                 list.add(q.F("OMX.google.raw.decoder", "audio/raw", "audio/raw", null, false, true, false, false, false));
             }
             N(list, new g() { // from class: fd.u
@@ -714,9 +714,9 @@ public abstract class y {
                 }
             });
         }
-        int i10 = w0.f40295a;
+        int i10 = w0.f40158a;
         if (i10 < 21 && list.size() > 1) {
-            String str2 = ((q) list.get(0)).f24983a;
+            String str2 = ((q) list.get(0)).f24194a;
             if ("OMX.SEC.mp3.dec".equals(str2) || "OMX.SEC.MP3.Decoder".equals(str2) || "OMX.brcm.audio.mp3.decoder".equals(str2)) {
                 N(list, new g() { // from class: fd.v
                     @Override // fd.y.g
@@ -726,7 +726,7 @@ public abstract class y {
                 });
             }
         }
-        if (i10 < 32 && list.size() > 1 && "OMX.qti.audio.decoder.flac".equals(((q) list.get(0)).f24983a)) {
+        if (i10 < 32 && list.size() > 1 && "OMX.qti.audio.decoder.flac".equals(((q) list.get(0)).f24194a)) {
             list.add((q) list.remove(0));
         }
     }
@@ -1127,10 +1127,10 @@ public abstract class y {
 
     public static String m(Format format) {
         Pair r10;
-        if ("audio/eac3-joc".equals(format.f12706w)) {
+        if ("audio/eac3-joc".equals(format.f12335w)) {
             return "audio/eac3";
         }
-        if ("video/dolby-vision".equals(format.f12706w) && (r10 = r(format)) != null) {
+        if ("video/dolby-vision".equals(format.f12335w) && (r10 = r(format)) != null) {
             int intValue = ((Integer) r10.first).intValue();
             if (intValue != 16 && intValue != 256) {
                 if (intValue == 512) {
@@ -1170,7 +1170,7 @@ public abstract class y {
                 return null;
             } else {
                 if (parseInt3 != 8) {
-                    if (cVar != null && (cVar.f42544o != null || (i10 = cVar.f42543i) == 7 || i10 == 6)) {
+                    if (cVar != null && (cVar.f42672o != null || (i10 = cVar.f42671i) == 7 || i10 == 6)) {
                         i11 = RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                     } else {
                         i11 = 2;
@@ -1263,7 +1263,7 @@ public abstract class y {
     */
     public static android.util.Pair r(com.google.android.exoplayer2.Format r6) {
         /*
-            java.lang.String r0 = r6.f12703t
+            java.lang.String r0 = r6.f12332t
             r1 = 0
             if (r0 != 0) goto L6
             return r1
@@ -1271,10 +1271,10 @@ public abstract class y {
             java.lang.String r2 = "\\."
             java.lang.String[] r0 = r0.split(r2)
             java.lang.String r2 = "video/dolby-vision"
-            java.lang.String r3 = r6.f12706w
+            java.lang.String r3 = r6.f12335w
             boolean r2 = r2.equals(r3)
             if (r2 == 0) goto L1d
-            java.lang.String r6 = r6.f12703t
+            java.lang.String r6 = r6.f12332t
             android.util.Pair r6 = y(r6, r0)
             return r6
         L1d:
@@ -1363,24 +1363,24 @@ public abstract class y {
         L7b:
             return r1
         L7c:
-            java.lang.String r6 = r6.f12703t
+            java.lang.String r6 = r6.f12332t
             android.util.Pair r6 = A(r6, r0)
             return r6
         L83:
-            java.lang.String r6 = r6.f12703t
+            java.lang.String r6 = r6.f12332t
             android.util.Pair r6 = l(r6, r0)
             return r6
         L8a:
-            java.lang.String r1 = r6.f12703t
+            java.lang.String r1 = r6.f12332t
             oe.c r6 = r6.I
             android.util.Pair r6 = z(r1, r0, r6)
             return r6
         L93:
-            java.lang.String r6 = r6.f12703t
+            java.lang.String r6 = r6.f12332t
             android.util.Pair r6 = p(r6, r0)
             return r6
         L9a:
-            java.lang.String r1 = r6.f12703t
+            java.lang.String r1 = r6.f12332t
             oe.c r6 = r6.I
             android.util.Pair r6 = o(r1, r0, r6)
             return r6
@@ -1401,12 +1401,12 @@ public abstract class y {
         synchronized (y.class) {
             try {
                 b bVar = new b(str, z10, z11);
-                HashMap hashMap = f25034b;
+                HashMap hashMap = f24245b;
                 List list = (List) hashMap.get(bVar);
                 if (list != null) {
                     return list;
                 }
-                int i10 = w0.f40295a;
+                int i10 = w0.f40158a;
                 if (i10 >= 21) {
                     eVar = new f(z10, z11);
                 } else {
@@ -1416,7 +1416,7 @@ public abstract class y {
                 if (z10 && u10.isEmpty() && 21 <= i10 && i10 <= 23) {
                     u10 = u(bVar, new e());
                     if (!u10.isEmpty()) {
-                        ne.y.i("MediaCodecUtil", "MediaCodecList API didn't list secure decoder for: " + str + ". Assuming: " + ((q) u10.get(0)).f24983a);
+                        ne.y.i("MediaCodecUtil", "MediaCodecList API didn't list secure decoder for: " + str + ". Assuming: " + ((q) u10.get(0)).f24194a);
                     }
                 }
                 e(str, u10);
@@ -1430,10 +1430,10 @@ public abstract class y {
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:33:0x0088, code lost:
-        if (r1.f25037b != r12) goto L61;
+        if (r1.f24248b != r12) goto L61;
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x009b, code lost:
-        if (r1.f25037b == false) goto L40;
+        if (r1.f24248b == false) goto L40;
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x009e, code lost:
         r17 = r11;
@@ -1461,7 +1461,7 @@ public abstract class y {
     }
 
     public static List v(t tVar, Format format, boolean z10, boolean z11) {
-        List a10 = tVar.a(format.f12706w, z10, z11);
+        List a10 = tVar.a(format.f12335w, z10, z11);
         return ji.s.j().j(a10).j(n(tVar, format, z10, z11)).k();
     }
 
@@ -1485,7 +1485,7 @@ public abstract class y {
             ne.y.i("MediaCodecUtil", "Ignoring malformed Dolby Vision codec string: " + str);
             return null;
         }
-        Matcher matcher = f25033a.matcher(strArr[1]);
+        Matcher matcher = f24244a.matcher(strArr[1]);
         if (!matcher.matches()) {
             ne.y.i("MediaCodecUtil", "Ignoring malformed Dolby Vision codec string: " + str);
             return null;
@@ -1511,7 +1511,7 @@ public abstract class y {
             return null;
         }
         int i10 = 1;
-        Matcher matcher = f25033a.matcher(strArr[1]);
+        Matcher matcher = f24244a.matcher(strArr[1]);
         if (!matcher.matches()) {
             ne.y.i("MediaCodecUtil", "Ignoring malformed HEVC codec string: " + str);
             return null;
@@ -1519,7 +1519,7 @@ public abstract class y {
         String group = matcher.group(1);
         if (!"1".equals(group)) {
             if ("2".equals(group)) {
-                if (cVar != null && cVar.f42543i == 6) {
+                if (cVar != null && cVar.f42671i == 6) {
                     i10 = RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                 } else {
                     i10 = 2;

@@ -3,42 +3,42 @@ package q1;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f46815a;
+    private final float f47070a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f46816b;
+    private final float f47071b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f46817c;
+    private final float f47072c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f46818d;
+    private final float f47073d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f46819e;
+    private final float f47074e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f46820f;
+    private final float f47075f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f46821g;
+    private final float f47076g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final float f46822h;
+    private final float f47077h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final float f46823i;
+    private final float f47078i;
 
     a(float f10, float f11, float f12, float f13, float f14, float f15, float f16, float f17, float f18) {
-        this.f46815a = f10;
-        this.f46816b = f11;
-        this.f46817c = f12;
-        this.f46818d = f13;
-        this.f46819e = f14;
-        this.f46820f = f15;
-        this.f46821g = f16;
-        this.f46822h = f17;
-        this.f46823i = f18;
+        this.f47070a = f10;
+        this.f47071b = f11;
+        this.f47072c = f12;
+        this.f47073d = f13;
+        this.f47074e = f14;
+        this.f47075f = f15;
+        this.f47076g = f16;
+        this.f47077h = f17;
+        this.f47078i = f18;
     }
 
     private static a b(float f10, float f11, float f12) {
@@ -77,7 +77,7 @@ public class a {
     public static a c(int i10) {
         float[] fArr = new float[7];
         float[] fArr2 = new float[3];
-        d(i10, n.f46860k, fArr, fArr2);
+        d(i10, n.f47115k, fArr, fArr2);
         return new a(fArr2[0], fArr2[1], fArr[0], fArr[1], fArr[2], fArr[3], fArr[4], fArr[5], fArr[6]);
     }
 
@@ -85,7 +85,7 @@ public class a {
         float f10;
         float pow;
         b.f(i10, fArr2);
-        float[][] fArr3 = b.f46824a;
+        float[][] fArr3 = b.f47079a;
         float f11 = fArr2[0];
         float[] fArr4 = fArr3[0];
         float f12 = fArr2[1];
@@ -145,7 +145,7 @@ public class a {
     }
 
     private static a e(float f10, float f11, float f12) {
-        return f(f10, f11, f12, n.f46860k);
+        return f(f10, f11, f12, n.f47115k);
     }
 
     private static a f(float f10, float f11, float f12, n nVar) {
@@ -160,7 +160,7 @@ public class a {
     }
 
     public static int m(float f10, float f11, float f12) {
-        return n(f10, f11, f12, n.f46860k);
+        return n(f10, f11, f12, n.f47115k);
     }
 
     static int n(float f10, float f11, float f12, n nVar) {
@@ -209,29 +209,29 @@ public class a {
     }
 
     float g() {
-        return this.f46822h;
+        return this.f47077h;
     }
 
     float h() {
-        return this.f46823i;
+        return this.f47078i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float i() {
-        return this.f46816b;
+        return this.f47071b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float j() {
-        return this.f46815a;
+        return this.f47070a;
     }
 
     float k() {
-        return this.f46817c;
+        return this.f47072c;
     }
 
     float l() {
-        return this.f46821g;
+        return this.f47076g;
     }
 
     int o(n nVar) {
@@ -261,7 +261,7 @@ public class a {
         float f19 = signum / nVar.i()[0];
         float f20 = signum2 / nVar.i()[1];
         float f21 = signum3 / nVar.i()[2];
-        float[][] fArr = b.f46825b;
+        float[][] fArr = b.f47080b;
         float[] fArr2 = fArr[0];
         float f22 = (fArr2[0] * f19) + (fArr2[1] * f20) + (fArr2[2] * f21);
         float[] fArr3 = fArr[1];
@@ -270,6 +270,6 @@ public class a {
     }
 
     int p() {
-        return o(n.f46860k);
+        return o(n.f47115k);
     }
 }

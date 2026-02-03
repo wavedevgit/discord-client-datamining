@@ -12,19 +12,19 @@ import org.jetbrains.annotations.NotNull;
 public final class OneTimeLinkCodeResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20824a;
+    private final m.b f20457a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20825b;
+    private final h f20458b;
 
     public OneTimeLinkCodeResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20824a = a10;
+        this.f20457a = a10;
         h f10 = moshi.f(Metadata.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20825b = f10;
+        this.f20458b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -34,13 +34,13 @@ public final class OneTimeLinkCodeResponseJsonAdapter extends h {
         reader.r();
         Metadata metadata = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f20824a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    metadata = (Metadata) this.f20825b.fromJson(reader);
+            int t02 = reader.t0(this.f20457a);
+            if (t02 != -1) {
+                if (t02 == 0) {
+                    metadata = (Metadata) this.f20458b.fromJson(reader);
                 }
             } else {
-                reader.E0();
+                reader.F0();
                 reader.P();
             }
         }
@@ -54,8 +54,8 @@ public final class OneTimeLinkCodeResponseJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (oneTimeLinkCodeResponse != null) {
             writer.l();
-            writer.A0("meta");
-            this.f20825b.toJson(writer, oneTimeLinkCodeResponse.a());
+            writer.t0("meta");
+            this.f20458b.toJson(writer, oneTimeLinkCodeResponse.a());
             writer.E();
             return;
         }

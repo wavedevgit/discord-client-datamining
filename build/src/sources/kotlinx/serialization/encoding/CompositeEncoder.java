@@ -2,7 +2,7 @@ package kotlinx.serialization.encoding;
 
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.descriptors.SerialDescriptor;
-import xs.o;
+import ys.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface CompositeEncoder {
 
@@ -14,7 +14,7 @@ public interface CompositeEncoder {
         }
     }
 
-    boolean A(SerialDescriptor serialDescriptor, int i10);
+    void B(SerialDescriptor serialDescriptor, int i10, o oVar, Object obj);
 
     void C(SerialDescriptor serialDescriptor, int i10, short s10);
 
@@ -26,19 +26,19 @@ public interface CompositeEncoder {
 
     Encoder e(SerialDescriptor serialDescriptor, int i10);
 
-    void j(SerialDescriptor serialDescriptor, int i10, o oVar, Object obj);
+    void l(SerialDescriptor serialDescriptor, int i10, char c10);
 
-    void n(SerialDescriptor serialDescriptor, int i10, char c10);
+    void m(SerialDescriptor serialDescriptor, int i10, o oVar, Object obj);
 
-    void p(SerialDescriptor serialDescriptor, int i10, byte b10);
+    void o(SerialDescriptor serialDescriptor, int i10, byte b10);
 
-    void s(SerialDescriptor serialDescriptor, int i10, float f10);
+    void r(SerialDescriptor serialDescriptor, int i10, float f10);
 
-    void w(SerialDescriptor serialDescriptor, int i10, int i11);
+    void v(SerialDescriptor serialDescriptor, int i10, int i11);
 
-    void x(SerialDescriptor serialDescriptor, int i10, boolean z10);
+    void w(SerialDescriptor serialDescriptor, int i10, boolean z10);
 
-    void y(SerialDescriptor serialDescriptor, int i10, String str);
+    void x(SerialDescriptor serialDescriptor, int i10, String str);
 
-    void z(SerialDescriptor serialDescriptor, int i10, o oVar, Object obj);
+    boolean y(SerialDescriptor serialDescriptor, int i10);
 }

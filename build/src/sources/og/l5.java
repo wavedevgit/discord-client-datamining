@@ -5,51 +5,51 @@ import ui.c;
 final class l5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l5 f43254a = new l5();
+    static final l5 f43382a = new l5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43255b;
+    private static final ui.c f43383b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43256c;
+    private static final ui.c f43384c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43257d;
+    private static final ui.c f43385d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43258e;
+    private static final ui.c f43386e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f43259f;
+    private static final ui.c f43387f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f43260g;
+    private static final ui.c f43388g;
 
     static {
         c.b a10 = ui.c.a("mode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43255b = a10.b(s1Var.b()).a();
+        f43383b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("landmark");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43256c = a11.b(s1Var2.b()).a();
+        f43384c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("classification");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43257d = a12.b(s1Var3.b()).a();
+        f43385d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("prominentFaceOnly");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43258e = a13.b(s1Var4.b()).a();
+        f43386e = a13.b(s1Var4.b()).a();
         c.b a14 = ui.c.a("tracking");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f43259f = a14.b(s1Var5.b()).a();
+        f43387f = a14.b(s1Var5.b()).a();
         c.b a15 = ui.c.a("minFaceSize");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f43260g = a15.b(s1Var6.b()).a();
+        f43388g = a15.b(s1Var6.b()).a();
     }
 
     private l5() {

@@ -26,7 +26,7 @@ public enum v implements Parcelable {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f52576d = "public-key";
+    private final String f52143d = "public-key";
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a extends Exception {
@@ -41,7 +41,7 @@ public enum v implements Parcelable {
     public static v a(String str) {
         v[] values;
         for (v vVar : values()) {
-            if (str.equals(vVar.f52576d)) {
+            if (str.equals(vVar.f52143d)) {
                 return vVar;
             }
         }
@@ -55,11 +55,11 @@ public enum v implements Parcelable {
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f52576d;
+        return this.f52143d;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f52576d);
+        parcel.writeString(this.f52143d);
     }
 }

@@ -14,9 +14,9 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import gs.i;
-import ir.p;
+import hs.i;
 import java.util.function.Function;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -142,7 +142,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
     public static final Unit getAccountUrlAndAuthCode$lambda$1(SamsungModule samsungModule, Throwable th2) {
         Intrinsics.checkNotNull(th2);
         samsungModule.rejectConnection(th2);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final String getAccountUrlFromAuthServerUrl(String str) {
@@ -200,7 +200,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
     public static final Unit handleAuthResult$lambda$2(SamsungModule samsungModule, Throwable th2) {
         Intrinsics.checkNotNull(th2);
         samsungModule.rejectConnection(th2);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -208,9 +208,9 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         Uri uri;
         String query;
         String str = null;
-        String D0 = Response.D0(response, "Location", null, 2, null);
-        if (D0 != null) {
-            uri = Uri.parse(D0);
+        String E0 = Response.E0(response, "Location", null, 2, null);
+        if (E0 != null) {
+            uri = Uri.parse(E0);
         } else {
             uri = null;
         }
@@ -218,7 +218,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
         if (uri != null && (query = uri.getQuery()) != null) {
             z10 = StringsKt.V(query, "error", false, 2, null);
         }
-        if (!z10 && (response.isSuccessful() || response.F0())) {
+        if (!z10 && (response.isSuccessful() || response.G0())) {
             return uri;
         }
         String str2 = (uri == null || (str2 = uri.getQueryParameter("error")) == null) ? "unknown" : "unknown";
@@ -257,7 +257,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
     public static final Unit showConnectionDisclaimer$lambda$0(SamsungModule samsungModule, Throwable th2) {
         Intrinsics.checkNotNull(th2);
         samsungModule.rejectConnection(th2);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0021, code lost:

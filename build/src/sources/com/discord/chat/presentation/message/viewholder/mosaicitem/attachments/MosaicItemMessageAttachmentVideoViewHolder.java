@@ -33,7 +33,7 @@ public final class MosaicItemMessageAttachmentVideoViewHolder extends MediaVideo
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bindGalleryItem$lambda$0(MediaPlayFinishedAnalytics it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     public final void bindAttachment(@NotNull ChatEventHandler eventHandler, @NotNull VideoAttachmentMessageAccessory item, boolean z10, @NotNull View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super Boolean, Unit> onTapObscureToggle) {
@@ -48,8 +48,8 @@ public final class MosaicItemMessageAttachmentVideoViewHolder extends MediaVideo
         Intrinsics.checkNotNullParameter(onTapObscureToggle, "onTapObscureToggle");
         Attachment attachment = item.getAttachment();
         UploadItemProps uploadItemProps = item.getUploadItemProps(new MosaicItemMessageAttachmentVideoViewHolder$bindAttachment$uploadItemProps$1(eventHandler));
-        long m673getChannelIdo4g7jtM = item.m673getChannelIdo4g7jtM();
-        String mo536getMessageId3Eiw7ao = item.mo536getMessageId3Eiw7ao();
+        long m675getChannelIdo4g7jtM = item.m675getChannelIdo4g7jtM();
+        String mo538getMessageId3Eiw7ao = item.mo538getMessageId3Eiw7ao();
         int attachmentIndex = item.getAttachmentIndex();
         String videoUrl = attachment.getVideoUrl();
         Intrinsics.checkNotNull(videoUrl);
@@ -90,7 +90,7 @@ public final class MosaicItemMessageAttachmentVideoViewHolder extends MediaVideo
         if (obscureIsOpaque != null) {
             z15 = obscureIsOpaque.booleanValue();
         }
-        super.m727bindl_cVQvE(ChannelId.m1058boximpl(m673getChannelIdo4g7jtM), mo536getMessageId3Eiw7ao, Integer.valueOf(attachmentIndex), videoUrl, url, height, width, placeholder, placeholderVersion, isSpoiler, spoilerConfig, z11, z12, z13, z15, attachment.getShowDescription(), attachment.getDescription(), attachment.getHint(), item.getUseNewAltTextButton(), new MosaicItemMessageAttachmentVideoViewHolder$bindAttachment$1(eventHandler), radiusPx, z14, uploadItemProps, z10, item.getHideMediaPlayButton(), attachment.getAttachmentTagText(), attachment.getAttachmentTagIcon(), attachment.getAttachmentTagBackgroundColor(), attachment.getAttachmentTagTextColor(), attachment.getRole(), item.getPortal(), onClicked, onLongClickListener, new MosaicItemMessageAttachmentVideoViewHolder$bindAttachment$2(eventHandler), attachment.getPlayerSettings());
+        super.m729bindl_cVQvE(ChannelId.m1060boximpl(m675getChannelIdo4g7jtM), mo538getMessageId3Eiw7ao, Integer.valueOf(attachmentIndex), videoUrl, url, height, width, placeholder, placeholderVersion, isSpoiler, spoilerConfig, z11, z12, z13, z15, attachment.getShowDescription(), attachment.getDescription(), attachment.getHint(), item.getUseNewAltTextButton(), new MosaicItemMessageAttachmentVideoViewHolder$bindAttachment$1(eventHandler), radiusPx, z14, uploadItemProps, z10, item.getHideMediaPlayButton(), attachment.getAttachmentTagText(), attachment.getAttachmentTagIcon(), attachment.getAttachmentTagBackgroundColor(), attachment.getAttachmentTagTextColor(), attachment.getRole(), item.getPortal(), onClicked, onLongClickListener, new MosaicItemMessageAttachmentVideoViewHolder$bindAttachment$2(eventHandler), attachment.getPlayerSettings());
     }
 
     public final void bindGalleryItem(@NotNull String containerId, @NotNull String componentId, @NotNull MediaGalleryItem mediaGalleryItem, boolean z10, @NotNull View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super Boolean, Unit> onTapObscureToggle, @NotNull Function1<? super String, Unit> onAltTextButtonClicked) {
@@ -141,7 +141,7 @@ public final class MosaicItemMessageAttachmentVideoViewHolder extends MediaVideo
         String accessibilityRole = mediaGalleryItem.getAccessibilityRole();
         Double portalId = mediaGalleryItem.getPortalId();
         Intrinsics.checkNotNull(portalId);
-        super.m727bindl_cVQvE(null, null, null, proxyUrl, videoPreviewUrl, i11, i10, placeholder, placeholderVersion, isSpoiler, spoilerConfig2, isObscure, isObscureAwaitingScan, obscureHideControls, obscureIsOpaque, showDescription, description, descriptionHint, showDescription2, onAltTextButtonClicked, dimensionPixelSize, z11, null, z10, false, null, null, null, null, accessibilityRole, portalId.doubleValue(), onClicked, onLongClickListener, new Function1() { // from class: com.discord.chat.presentation.message.viewholder.mosaicitem.attachments.a
+        super.m729bindl_cVQvE(null, null, null, proxyUrl, videoPreviewUrl, i11, i10, placeholder, placeholderVersion, isSpoiler, spoilerConfig2, isObscure, isObscureAwaitingScan, obscureHideControls, obscureIsOpaque, showDescription, description, descriptionHint, showDescription2, onAltTextButtonClicked, dimensionPixelSize, z11, null, z10, false, null, null, null, null, accessibilityRole, portalId.doubleValue(), onClicked, onLongClickListener, new Function1() { // from class: com.discord.chat.presentation.message.viewholder.mosaicitem.attachments.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit bindGalleryItem$lambda$0;

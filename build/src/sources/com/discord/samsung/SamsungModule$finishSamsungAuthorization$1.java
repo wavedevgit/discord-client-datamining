@@ -1,7 +1,7 @@
 package com.discord.samsung;
 
-import gs.g;
-import gs.m0;
+import hs.g;
+import hs.m0;
 import java.util.concurrent.CancellationException;
 import kotlin.Metadata;
 import kotlin.Result;
@@ -44,7 +44,7 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object b10;
-        Object f10 = or.b.f();
+        Object f10 = pr.b.f();
         int i10 = this.label;
         try {
             if (i10 != 0) {
@@ -60,7 +60,7 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
                 SamsungModule samsungModule = this.this$0;
                 String str2 = this.$state;
                 String str3 = this.$authCode;
-                Result.a aVar = Result.f33295e;
+                Result.a aVar = Result.f33071e;
                 OkHttpClient c10 = new OkHttpClient.Builder().k(false).c();
                 CoroutineDispatcher b11 = m0.b();
                 SamsungModule$finishSamsungAuthorization$1$1$1 samsungModule$finishSamsungAuthorization$1$1$1 = new SamsungModule$finishSamsungAuthorization$1$1$1(str, samsungModule, c10, str2, str3, null);
@@ -69,9 +69,9 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
                     return f10;
                 }
             }
-            b10 = Result.b(Unit.f33298a);
+            b10 = Result.b(Unit.f33074a);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33295e;
+            Result.a aVar2 = Result.f33071e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         SamsungModule samsungModule2 = this.this$0;
@@ -83,11 +83,11 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
                 throw e10;
             }
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((SamsungModule$finishSamsungAuthorization$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((SamsungModule$finishSamsungAuthorization$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

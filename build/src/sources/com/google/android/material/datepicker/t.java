@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicReference;
 abstract class t {
 
     /* renamed from: a  reason: collision with root package name */
-    static AtomicReference f15998a = new AtomicReference();
+    static AtomicReference f15627a = new AtomicReference();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static long a(long j10) {
@@ -41,7 +41,7 @@ abstract class t {
     }
 
     static s e() {
-        s sVar = (s) f15998a.get();
+        s sVar = (s) f15627a.get();
         if (sVar == null) {
             return s.c();
         }

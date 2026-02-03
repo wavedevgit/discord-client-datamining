@@ -27,18 +27,18 @@ public final class ChannelChatListAdapter$processUpdate$1$1 extends kotlin.corou
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        or.b.f();
+        pr.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             this.this$0.isProcessingUpdate = false;
             this.this$0.processNextUpdate();
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChannelChatListAdapter$processUpdate$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((ChannelChatListAdapter$processUpdate$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

@@ -6,17 +6,17 @@ import io.sentry.l5;
 public final class t implements q {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final t f30782d = new t();
+    private static final t f30348d = new t();
 
     private t() {
     }
 
     public static t a() {
-        return f30782d;
+        return f30348d;
     }
 
     @Override // io.sentry.transport.q
-    public void Z(l5 l5Var, Hint hint) {
+    public void a0(l5 l5Var, Hint hint) {
     }
 
     @Override // io.sentry.transport.q

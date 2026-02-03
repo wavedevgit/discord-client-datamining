@@ -1,6 +1,6 @@
 package com.facebook.react.config;
 
-import ir.c;
+import jr.c;
 import kotlin.Metadata;
 import org.jetbrains.annotations.NotNull;
 @c

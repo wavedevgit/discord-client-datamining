@@ -7,7 +7,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class CheckResult {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f36071a;
+    private final boolean f35847a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class IllegalFunctionName extends CheckResult {
@@ -23,13 +23,13 @@ public abstract class CheckResult {
     public static final class IllegalSignature extends CheckResult {
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f36072b;
+        private final String f35848b;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public IllegalSignature(@NotNull String error) {
             super(false, null);
             Intrinsics.checkNotNullParameter(error, "error");
-            this.f36072b = error;
+            this.f35848b = error;
         }
     }
 
@@ -48,10 +48,10 @@ public abstract class CheckResult {
     }
 
     public final boolean isSuccess() {
-        return this.f36071a;
+        return this.f35847a;
     }
 
     private CheckResult(boolean z10) {
-        this.f36071a = z10;
+        this.f35847a = z10;
     }
 }

@@ -5,7 +5,7 @@ import com.google.android.gms.common.api.Status;
 public class b extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    protected final Status f22763d;
+    protected final Status f22795d;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -31,17 +31,17 @@ public class b extends Exception {
             r2.append(r1)
             java.lang.String r0 = r2.toString()
             r3.<init>(r0)
-            r3.f22763d = r4
+            r3.f22795d = r4
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: ef.b.<init>(com.google.android.gms.common.api.Status):void");
     }
 
     public Status a() {
-        return this.f22763d;
+        return this.f22795d;
     }
 
     public int b() {
-        return this.f22763d.d();
+        return this.f22795d.d();
     }
 }

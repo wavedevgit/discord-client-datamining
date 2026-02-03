@@ -7,16 +7,16 @@ import o8.j;
 public class d {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f48865d = new IdentityHashMap();
+    private static final Map f48919d = new IdentityHashMap();
 
     /* renamed from: a  reason: collision with root package name */
-    private Object f48866a;
+    private Object f48920a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f48867b = 1;
+    private int f48921b = 1;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f48868c;
+    private final c f48922c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a extends RuntimeException {
@@ -26,15 +26,15 @@ public class d {
     }
 
     public d(Object obj, c cVar, boolean z10) {
-        this.f48866a = j.g(obj);
-        this.f48868c = cVar;
+        this.f48920a = j.g(obj);
+        this.f48922c = cVar;
         if (z10) {
             a(obj);
         }
     }
 
     private static void a(Object obj) {
-        Map map = f48865d;
+        Map map = f48919d;
         synchronized (map) {
             try {
                 Integer num = (Integer) map.get(obj);
@@ -53,14 +53,14 @@ public class d {
         boolean z10;
         int i10;
         e();
-        if (this.f48867b > 0) {
+        if (this.f48921b > 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         j.b(Boolean.valueOf(z10));
-        i10 = this.f48867b - 1;
-        this.f48867b = i10;
+        i10 = this.f48921b - 1;
+        this.f48921b = i10;
         return i10;
     }
 
@@ -79,7 +79,7 @@ public class d {
     }
 
     private static void i(Object obj) {
-        Map map = f48865d;
+        Map map = f48919d;
         synchronized (map) {
             try {
                 Integer num = (Integer) map.get(obj);
@@ -98,18 +98,18 @@ public class d {
 
     public synchronized void b() {
         e();
-        this.f48867b++;
+        this.f48921b++;
     }
 
     public void d() {
         Object obj;
         if (c() == 0) {
             synchronized (this) {
-                obj = this.f48866a;
-                this.f48866a = null;
+                obj = this.f48920a;
+                this.f48920a = null;
             }
             if (obj != null) {
-                c cVar = this.f48868c;
+                c cVar = this.f48922c;
                 if (cVar != null) {
                     cVar.release(obj);
                 }
@@ -119,12 +119,12 @@ public class d {
     }
 
     public synchronized Object f() {
-        return this.f48866a;
+        return this.f48920a;
     }
 
     public synchronized boolean g() {
         boolean z10;
-        if (this.f48867b > 0) {
+        if (this.f48921b > 0) {
             z10 = true;
         } else {
             z10 = false;

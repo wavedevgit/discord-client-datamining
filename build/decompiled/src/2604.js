@@ -4,19 +4,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var9 = dependencyMap;
     var3 = function arg0() {
-        _fun21968: for (var _fun21968_ip = 0;;) switch (_fun21968_ip) {
+        _fun21973: for (var _fun21973_ip = 0;;) switch (_fun21973_ip) {
             case 0:
                 var2 = arg0;
                 if (!var2) {
-                    _fun21968_ip = 18;
-                    continue _fun21968
+                    _fun21973_ip = 18;
+                    continue _fun21973
                 }
             case 6:
                 var1 = var2.__esModule;
                 var0 = var2;
                 if (var1) {
-                    _fun21968_ip = 27;
-                    continue _fun21968
+                    _fun21973_ip = 27;
+                    continue _fun21973
                 }
             case 18:
                 var1 = {};
@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var8.bind(var0)(var2);
     var3 = var3.bind(var0)(var2);
     var2 = {};
-    var8 = 'ja';
+    var8 = 'fi';
     var2.code = var8;
     var7 = var7.default;
     var2.formatDistance = var7;
@@ -70,8 +70,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.default;
     var2.match = var3;
     var3 = {
-        'weekStartsOn': 0,
-        'firstWeekContainsDate': 1
+        'weekStartsOn': 1,
+        'firstWeekContainsDate': 4
     };
     var2.options = var3;
     var1.default = var2;

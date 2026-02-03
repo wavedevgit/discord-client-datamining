@@ -19,19 +19,19 @@ public final class ThreadEmbedMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ ThreadEmbedMessageAccessory m663copyntcYbpo$default(ThreadEmbedMessageAccessory threadEmbedMessageAccessory, String str, ThreadEmbed threadEmbed, int i10, Object obj) {
+    public static /* synthetic */ ThreadEmbedMessageAccessory m665copyntcYbpo$default(ThreadEmbedMessageAccessory threadEmbedMessageAccessory, String str, ThreadEmbed threadEmbed, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = threadEmbedMessageAccessory.messageId;
         }
         if ((i10 & 2) != 0) {
             threadEmbed = threadEmbedMessageAccessory.threadEmbed;
         }
-        return threadEmbedMessageAccessory.m665copyntcYbpo(str, threadEmbed);
+        return threadEmbedMessageAccessory.m667copyntcYbpo(str, threadEmbed);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m664component13Eiw7ao() {
+    public final String m666component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -42,7 +42,7 @@ public final class ThreadEmbedMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final ThreadEmbedMessageAccessory m665copyntcYbpo(@NotNull String messageId, @NotNull ThreadEmbed threadEmbed) {
+    public final ThreadEmbedMessageAccessory m667copyntcYbpo(@NotNull String messageId, @NotNull ThreadEmbed threadEmbed) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(threadEmbed, "threadEmbed");
         return new ThreadEmbedMessageAccessory(messageId, threadEmbed, null);
@@ -54,7 +54,7 @@ public final class ThreadEmbedMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof ThreadEmbedMessageAccessory) {
             ThreadEmbedMessageAccessory threadEmbedMessageAccessory = (ThreadEmbedMessageAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, threadEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.threadEmbed, threadEmbedMessageAccessory.threadEmbed);
+            return MessageId.m1090equalsimpl0(this.messageId, threadEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.threadEmbed, threadEmbedMessageAccessory.threadEmbed);
         }
         return false;
     }
@@ -62,7 +62,7 @@ public final class ThreadEmbedMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -72,14 +72,14 @@ public final class ThreadEmbedMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.threadEmbed.hashCode();
+        return (MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.threadEmbed.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         ThreadEmbed threadEmbed = this.threadEmbed;
-        return "ThreadEmbedMessageAccessory(messageId=" + m1091toStringimpl + ", threadEmbed=" + threadEmbed + ")";
+        return "ThreadEmbedMessageAccessory(messageId=" + m1093toStringimpl + ", threadEmbed=" + threadEmbed + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

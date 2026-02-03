@@ -13,7 +13,7 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
 import kotlinx.coroutines.CoroutineScope;
-import or.b;
+import pr.b;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.file_manager.FileModule$clearFolder$1", f = "FileModule.kt", l = {}, m = "invokeSuspend")
 @SourceDebugExtension({"SMAP\nFileModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FileModule.kt\ncom/discord/file_manager/FileModule$clearFolder$1\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,320:1\n13472#2,2:321\n*S KotlinDebug\n*F\n+ 1 FileModule.kt\ncom/discord/file_manager/FileModule$clearFolder$1\n*L\n278#1:321,2\n*E\n"})
@@ -68,19 +68,19 @@ final class FileModule$clearFolder$1 extends k implements Function2<CoroutineSco
                 } catch (Exception e10) {
                     this.$promise.reject("err", "Cannot clear the folder", e10);
                 }
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
             Promise promise2 = this.$promise;
             String str2 = this.$storageDir;
             hashMap2 = this.this$0.storageDirs;
             promise2.reject("err", "Unknown storage directory " + str2 + ". Supported storage directories: " + hashMap2.keySet());
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$clearFolder$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((FileModule$clearFolder$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

@@ -6,16 +6,16 @@ import java.util.Map;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f53355a;
+    private static final Map f53563a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f53356b;
+    private static final Map f53564b;
 
     static {
         HashMap hashMap = new HashMap();
-        f53355a = hashMap;
+        f53563a = hashMap;
         HashMap hashMap2 = new HashMap();
-        f53356b = hashMap2;
+        f53564b = hashMap2;
         hashMap.put(-1, "Standard Integrity API is not available.\nStandard Integrity API is not enabled, or the Play Store version might be old.\nRecommended actions:\n1) Make sure to be allowlisted to use Standard Integrity API.\n2) Make sure that Integrity API is enabled in Google Play Console.\n3) Ask the user to update Play Store.\n");
         hashMap.put(-2, "The Play Store app is either not installed or not the official version.\nAsk the user to install an official and recent version of Play Store.\n");
         hashMap.put(-3, "Network error: unable to obtain integrity details.\nAsk the user to check for a connection.\n");
@@ -51,10 +51,10 @@ public abstract class b {
     }
 
     public static String a(int i10) {
-        Map map = f53355a;
+        Map map = f53563a;
         Integer valueOf = Integer.valueOf(i10);
         if (map.containsKey(valueOf)) {
-            Map map2 = f53356b;
+            Map map2 = f53564b;
             if (map2.containsKey(valueOf)) {
                 return ((String) map.get(valueOf)) + " (https://developer.android.com/google/play/integrity/reference/com/google/android/play/core/integrity/model/StandardIntegrityErrorCode.html#" + ((String) map2.get(valueOf)) + ")";
             }

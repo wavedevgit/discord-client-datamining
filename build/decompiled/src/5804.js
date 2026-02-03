@@ -1,218 +1,101 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun51344: for (var _fun51344_ip = 0;;) switch (_fun51344_ip) {
+    _fun51204: for (var _fun51204_ip = 0;;) switch (_fun51204_ip) {
         case 0:
-            var12 = require;
-            var2 = exports;
-            var13 = dependencyMap;
-            var0 = global;
-            var4 = var0.Object;
-            var3 = var4.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var4)(var2, var0, var1);
-            var0 = 0;
-            var1 = var13[var0];
+            var7 = require;
+            var12 = exports;
+            var8 = dependencyMap;
+            var5 = var7;
+            var2 = var12;
+            var4 = var8;
             var0 = undefined;
-            var1 = var12.bind(var0)(var1);
-            var11 = var1.Platform;
-            var10 = {};
-            var1 = 'horizontal';
-            var10.gestureDirection = var1;
-            var3 = {};
-            var16 = 1;
-            var4 = var13[var16];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.TransitionIOSSpec;
-            var3.open = var4;
-            var4 = var13[var16];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.TransitionIOSSpec;
-            var3.close = var4;
-            var10.transitionSpec = var3;
-            var14 = 2;
-            var3 = var13[var14];
-            var3 = var12.bind(var0)(var3);
-            var3 = var3.forHorizontalIOS;
-            var10.cardStyleInterpolator = var3;
-            var3 = 3;
-            var4 = var13[var3];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFade;
-            var10.headerStyleInterpolator = var4;
+            var3 = undefined;
+            var6 = ['children'];
+            var _closure1_slot0 = var6;
+            var6 = global;
+            var11 = var6.Object;
+            var10 = var11.defineProperty;
             var9 = {};
-            var15 = 'vertical';
-            var9.gestureDirection = var15;
-            var4 = {};
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.TransitionIOSSpec;
-            var4.open = var5;
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.TransitionIOSSpec;
-            var4.close = var5;
-            var9.transitionSpec = var4;
-            var4 = var13[var14];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forVerticalIOS;
-            var9.cardStyleInterpolator = var4;
-            var4 = var13[var3];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFade;
-            var9.headerStyleInterpolator = var4;
-            var8 = {};
-            var8.gestureDirection = var15;
-            var4 = {};
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.TransitionIOSSpec;
-            var4.open = var5;
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.TransitionIOSSpec;
-            var4.close = var5;
-            var8.transitionSpec = var4;
-            var4 = var13[var14];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forModalPresentationIOS;
-            var8.cardStyleInterpolator = var4;
-            var4 = var13[var3];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFade;
-            var8.headerStyleInterpolator = var4;
-            var7 = {};
-            var7.gestureDirection = var15;
-            var4 = {};
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.FadeInFromBottomAndroidSpec;
-            var4.open = var5;
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.FadeOutToBottomAndroidSpec;
-            var4.close = var5;
-            var7.transitionSpec = var4;
-            var4 = var13[var14];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFadeFromBottomAndroid;
-            var7.cardStyleInterpolator = var4;
-            var4 = var13[var3];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFade;
-            var7.headerStyleInterpolator = var4;
-            var6 = {};
-            var6.gestureDirection = var15;
-            var4 = {};
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.RevealFromBottomAndroidSpec;
-            var4.open = var5;
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.RevealFromBottomAndroidSpec;
-            var4.close = var5;
-            var6.transitionSpec = var4;
-            var4 = var13[var14];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forRevealFromBottomAndroid;
-            var6.cardStyleInterpolator = var4;
-            var4 = var13[var3];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFade;
-            var6.headerStyleInterpolator = var4;
-            var5 = {};
-            var5.gestureDirection = var1;
-            var1 = {};
-            var4 = var13[var16];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.ScaleFromCenterAndroidSpec;
-            var1.open = var4;
-            var4 = var13[var16];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.ScaleFromCenterAndroidSpec;
-            var1.close = var4;
-            var5.transitionSpec = var1;
-            var1 = var13[var14];
-            var1 = var12.bind(var0)(var1);
-            var1 = var1.forScaleFromCenterAndroid;
-            var5.cardStyleInterpolator = var1;
-            var1 = var13[var3];
-            var1 = var12.bind(var0)(var1);
-            var1 = var1.forFade;
-            var5.headerStyleInterpolator = var1;
-            var1 = {};
-            var1.gestureDirection = var15;
-            var4 = {};
-            var17 = var13[var16];
-            var17 = var12.bind(var0)(var17);
-            var17 = var17.BottomSheetSlideInSpec;
-            var4.open = var17;
-            var17 = var13[var16];
-            var17 = var12.bind(var0)(var17);
-            var17 = var17.BottomSheetSlideOutSpec;
-            var4.close = var17;
-            var1.transitionSpec = var4;
-            var4 = var13[var14];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forBottomSheetAndroid;
-            var1.cardStyleInterpolator = var4;
-            var4 = var13[var3];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFade;
-            var1.headerStyleInterpolator = var4;
-            var4 = {};
-            var4.gestureDirection = var15;
-            var15 = {};
-            var17 = var13[var16];
-            var17 = var12.bind(var0)(var17);
-            var17 = var17.BottomSheetSlideInSpec;
-            var15.open = var17;
-            var16 = var13[var16];
-            var16 = var12.bind(var0)(var16);
-            var16 = var16.BottomSheetSlideOutSpec;
-            var15.close = var16;
-            var4.transitionSpec = var15;
-            var14 = var13[var14];
-            var14 = var12.bind(var0)(var14);
-            var14 = var14.forFadeFromCenter;
-            var4.cardStyleInterpolator = var14;
-            var3 = var13[var3];
-            var3 = var12.bind(var0)(var3);
-            var3 = var3.forFade;
-            var4.headerStyleInterpolator = var3;
-            var13 = var11.Version;
-            var12 = 29;
-            var3 = var5;
-            if (!(!(var13 >= var12))) {
-                _fun51344_ip = 867;
-                continue _fun51344
-            }
-        case 845:
-            var13 = var11.Version;
-            var12 = 28;
-            var11 = var7;
-            if (!(var13 >= var12)) {
-                _fun51344_ip = 864;
-                continue _fun51344
-            }
-        case 861:
-            var11 = var6;
-        case 864:
-            var3 = var11;
-        case 867:
-            var2.SlideFromRightIOS = var10;
-            var2.ModalSlideFromBottomIOS = var9;
-            var2.ModalPresentationIOS = var8;
-            var2.FadeFromBottomAndroid = var7;
-            var2.RevealFromBottomAndroid = var6;
-            var2.ScaleFromCenterAndroid = var5;
-            var2.BottomSheetAndroid = var1;
-            var2.ModalFadeTransition = var4;
-            var2.DefaultTransition = var3;
-            var2.ModalTransition = var1;
+            var6 = true;
+            var9.value = var6;
+            var6 = '__esModule';
+            var6 = var10.bind(var11)(var12, var6, var9);
+            var6 = 0;
+            var9 = var8[var6];
+            var6 = metroImportDefault;
+            var6 = var6.bind(var0)(var9);
+            var _closure1_slot2 = var6;
+            var6 = 1;
+            var9 = var8[var6];
+            var6 = metroImportAll;
+            var6 = var6.bind(var0)(var9);
+            var6 = 2;
+            var6 = var8[var6];
+            var6 = var7.bind(var0)(var6);
+            var3 = var6.UIManager;
+            var6 = 3;
+            var6 = var8[var6];
+            var6 = var7.bind(var0)(var6);
+            var6 = var6.jsx;
+            var _closure1_slot3 = var6;
+        case 142: // try_start_0
+            var6 = var4;
+            var4 = 4;
+            var4 = var6[var4];
+            var4 = var5.bind(var0)(var4);
+            var4 = var4.default;
+            var _closure1_slot1 = var4;
+        case 166: // try_end0
+            _fun51204_ip = 170;
+            continue _fun51204;
+        case 168: // catch_target0
+            CatchBlockStart(arg_register = 4);
+        case 170:
+            var5 = var3;
+            var4 = var5.getViewManagerConfig;
+            var3 = 'RNCMaskedView';
+            var4 = var4.bind(var5)(var3);
+            var3 = null;
+            var3 = var3 != var4;
+            var _closure1_slot4 = var3;
+            var1 = function arg0() {
+                _fun51205: for (var _fun51205_ip = 0;;) switch (_fun51205_ip) {
+                    case 0:
+                        var5 = arg0;
+                        var1 = var5.children;
+                        var3 = _closure1_slot2;
+                        var0 = _closure1_slot0;
+                        var4 = undefined;
+                        var8 = var3.bind(var4)(var5, var0);
+                        var3 = _closure1_slot4;
+                        var0 = var1;
+                        if (!var3) {
+                            _fun51205_ip = 89;
+                            continue _fun51205
+                        }
+                    case 37:
+                        var3 = _closure1_slot1;
+                        var0 = var1;
+                        if (!var3) {
+                            _fun51205_ip = 89;
+                            continue _fun51205
+                        }
+                    case 47:
+                        var3 = _closure1_slot3;
+                        var2 = _closure1_slot1;
+                        var5 = global;
+                        var7 = var5.Object;
+                        var6 = var7.assign;
+                        var5 = {};
+                        var5.children = var1;
+                        var1 = {};
+                        var1 = var6.bind(var7)(var1, var8, var5);
+                        var0 = var3.bind(var4)(var2, var1);
+                    case 89:
+                        return var0;
+                }
+            };
+            var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5805, 5802, 5782]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, null]);

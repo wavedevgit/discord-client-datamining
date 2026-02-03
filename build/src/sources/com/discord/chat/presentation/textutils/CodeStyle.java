@@ -107,10 +107,10 @@ public final class CodeStyle {
         String content = codeBlockContentNode.getContent();
         String str = "```" + obj + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + content + "\n```";
         try {
-            Result.a aVar = Result.f33295e;
-            b10 = Result.b(Parser.parse$default(getParser(), str, Unit.f33298a, null, 4, null));
+            Result.a aVar = Result.f33071e;
+            b10 = Result.b(Parser.parse$default(getParser(), str, Unit.f33074a, null, 4, null));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33295e;
+            Result.a aVar2 = Result.f33071e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         List e10 = CollectionsKt.e(new TextNode(content));

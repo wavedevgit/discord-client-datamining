@@ -9,30 +9,30 @@ import androidx.collection.SimpleArrayMap;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    final Context f32886a;
+    final Context f32632a;
 
     /* renamed from: b  reason: collision with root package name */
-    private SimpleArrayMap f32887b;
+    private SimpleArrayMap f32633b;
 
     /* renamed from: c  reason: collision with root package name */
-    private SimpleArrayMap f32888c;
+    private SimpleArrayMap f32634c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Context context) {
-        this.f32886a = context;
+        this.f32632a = context;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final MenuItem c(MenuItem menuItem) {
         if (menuItem instanceof t1.b) {
             t1.b bVar = (t1.b) menuItem;
-            if (this.f32887b == null) {
-                this.f32887b = new SimpleArrayMap();
+            if (this.f32633b == null) {
+                this.f32633b = new SimpleArrayMap();
             }
-            MenuItem menuItem2 = (MenuItem) this.f32887b.get(bVar);
+            MenuItem menuItem2 = (MenuItem) this.f32633b.get(bVar);
             if (menuItem2 == null) {
-                c cVar = new c(this.f32886a, bVar);
-                this.f32887b.put(bVar, cVar);
+                c cVar = new c(this.f32632a, bVar);
+                this.f32633b.put(bVar, cVar);
                 return cVar;
             }
             return menuItem2;
@@ -42,11 +42,11 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void e() {
-        SimpleArrayMap simpleArrayMap = this.f32887b;
+        SimpleArrayMap simpleArrayMap = this.f32633b;
         if (simpleArrayMap != null) {
             simpleArrayMap.clear();
         }
-        SimpleArrayMap simpleArrayMap2 = this.f32888c;
+        SimpleArrayMap simpleArrayMap2 = this.f32634c;
         if (simpleArrayMap2 != null) {
             simpleArrayMap2.clear();
         }
@@ -54,11 +54,11 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void f(int i10) {
-        if (this.f32887b != null) {
+        if (this.f32633b != null) {
             int i11 = 0;
-            while (i11 < this.f32887b.size()) {
-                if (((t1.b) this.f32887b.f(i11)).getGroupId() == i10) {
-                    this.f32887b.h(i11);
+            while (i11 < this.f32633b.size()) {
+                if (((t1.b) this.f32633b.f(i11)).getGroupId() == i10) {
+                    this.f32633b.h(i11);
                     i11--;
                 }
                 i11++;
@@ -68,10 +68,10 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void g(int i10) {
-        if (this.f32887b != null) {
-            for (int i11 = 0; i11 < this.f32887b.size(); i11++) {
-                if (((t1.b) this.f32887b.f(i11)).getItemId() == i10) {
-                    this.f32887b.h(i11);
+        if (this.f32633b != null) {
+            for (int i11 = 0; i11 < this.f32633b.size(); i11++) {
+                if (((t1.b) this.f32633b.f(i11)).getItemId() == i10) {
+                    this.f32633b.h(i11);
                     return;
                 }
             }

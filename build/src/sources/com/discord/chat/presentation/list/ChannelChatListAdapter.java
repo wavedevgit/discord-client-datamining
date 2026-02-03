@@ -80,7 +80,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
         static {
             PortalViewUpdateType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
         }
 
         private PortalViewUpdateType(String str, int i10) {
@@ -129,7 +129,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33298a;
+                unit = Unit.f33074a;
                 return unit;
             }
         } : function04);
@@ -272,7 +272,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
             r5.notifyItemRangeRemoved(r1, r0)
             goto L71
         Ldd:
-            ir.p r6 = new ir.p
+            jr.p r6 = new jr.p
             r6.<init>()
             throw r6
         Le3:
@@ -331,7 +331,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
                     Intrinsics.checkNotNull(portalChatListItem);
                     M0.set(n10, portalChatListItem);
                 } else {
-                    throw new ir.p();
+                    throw new jr.p();
                 }
             } else {
                 M0 = CollectionsKt.g0(getChatListItems$chat_release(), 1);
@@ -350,7 +350,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
                     notifyItemChanged(CollectionsKt.n(getChatListItems$chat_release()));
                     return;
                 }
-                throw new ir.p();
+                throw new jr.p();
             }
             notifyItemRemoved(CollectionsKt.n(getChatListItems$chat_release()) + 1);
             return;
@@ -374,12 +374,12 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
             } else if (channelChatListAdapterUpdate instanceof ChatListItemUpdate) {
                 processChatListItemUpdate((ChatListItemUpdate) channelChatListAdapterUpdate);
             } else {
-                throw new ir.p();
+                throw new jr.p();
             }
             getDoLayout().invoke();
             syncFirstMessageItemPosition();
             channelChatListAdapterUpdate.getPostCommit().invoke();
-            d10 = gs.i.d(kotlinx.coroutines.i.b(), null, null, new ChannelChatListAdapter$processUpdate$1$1(this, null), 3, null);
+            d10 = hs.i.d(kotlinx.coroutines.i.b(), null, null, new ChannelChatListAdapter$processUpdate$1$1(this, null), 3, null);
             this.processNextUpdateJob = d10;
             return;
         }
@@ -395,7 +395,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
     }
 
     public static final Unit setItems$lambda$4(boolean z10) {
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -511,7 +511,7 @@ public final class ChannelChatListAdapter extends BaseChatListAdapter {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33298a;
+                unit = Unit.f33074a;
                 return unit;
             }
         }, null, 16, null);

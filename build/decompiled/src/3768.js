@@ -1,178 +1,172 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var6 = var2.Object;
-    var5 = var6.defineProperty;
+    var5 = require;
+    var2 = exports;
+    var26 = dependencyMap;
+    var15 = global;
+    var4 = var15.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
     var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var1, var3, var4);
-    var2 = var2.WeakMap;
-    var3 = var2.prototype;
-    var3 = Object.create(var3, {
-        constructor: {
-            value: var2
-        }
-    });
-    var10 = var3;
-    var2 = new var10[var2](var9);
-    var2 = var2 instanceof Object ? var2 : var3;
-    var1.snapshots = var2;
-    var2 = function arg0, arg1() {
-        _fun33850: for (var _fun33850_ip = 0;;) switch (_fun33850_ip) {
-            case 0:
-                var3 = arg0;
-                var4 = arg1;
-                var _closure2_slot0 = var3;
-                var1 = 0;
-                if (!(var1 !== var4)) {
-                    _fun33850_ip = 51;
-                    continue _fun33850
-                }
-            case 18:
-                var2 = global;
-                var5 = var2.setTimeout;
-                var2 = 1000;
-                var4 = var2 * var4;
-                var2 = undefined;
-                var0 = function() { // Environment: var0
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var0 = 0;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var4 = var2.bind(var0)(var1);
-                    var3 = var4._updatePropsJS;
-                    var2 = {};
-                    var1 = 'initial';
-                    var2.visibility = var1;
-                    var1 = _closure2_slot0;
-                    var1 = var3.bind(var4)(var2, var1);
-                    return var0;
-                };
-                var0 = var5.bind(var2)(var0, var4);
-                _fun33850_ip = 96;
-                continue _fun33850;
-            case 51:
-                var2 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var1 = var0[var1];
-                var0 = undefined;
-                var2 = var2.bind(var0)(var1);
-                var1 = var2._updatePropsJS;
-                var0 = {};
-                var4 = 'initial';
-                var0.visibility = var4;
-                var0 = var1.bind(var2)(var0, var3);
-            case 96:
-                var0 = undefined;
-                return var0;
-        }
-    };
-    var1.makeElementVisible = var2;
-    var0 = function arg0, arg1() {
-        _fun33852: for (var _fun33852_ip = 0;;) switch (_fun33852_ip) {
-            case 0:
-                var1 = arg0;
-                var4 = arg1;
-                var0 = var1.style;
-                var7 = '';
-                var0.transform = var7;
-                var2 = var1.style;
-                var0 = 'absolute';
-                var2.position = var0;
-                var5 = var1.style;
-                var6 = var4.top;
-                var3 = global;
-                var0 = var3.HermesInternal;
-                var0 = var0.concat;
-                var2 = 'px';
-                var0 = var0.bind(var7)(var6, var2);
-                var5.top = var0;
-                var5 = var1.style;
-                var6 = var4.left;
-                var0 = var3.HermesInternal;
-                var0 = var0.concat;
-                var0 = var0.bind(var7)(var6, var2);
-                var5.left = var0;
-                var5 = var1.style;
-                var6 = var4.width;
-                var0 = var3.HermesInternal;
-                var0 = var0.concat;
-                var0 = var0.bind(var7)(var6, var2);
-                var5.width = var0;
-                var5 = var1.style;
-                var6 = var4.height;
-                var0 = var3.HermesInternal;
-                var0 = var0.concat;
-                var0 = var0.bind(var7)(var6, var2);
-                var5.height = var0;
-                var5 = var1.style;
-                var0 = '0px';
-                var5.margin = var0;
-                var0 = var1.parentElement;
-                if (!var0) {
-                    _fun33852_ip = 381;
-                    continue _fun33852
-                }
-            case 203:
-                var7 = var1.parentElement;
-                var0 = var7.getBoundingClientRect;
-                var0 = var0.bind(var7)();
-                var8 = var3.parseInt;
-                var5 = var3.getComputedStyle;
-                var6 = undefined;
-                var5 = var5.bind(var6)(var7);
-                var5 = var5.borderTopWidth;
-                var8 = var8.bind(var6)(var5);
-                var5 = var3.parseInt;
-                var3 = var3.getComputedStyle;
-                var3 = var3.bind(var6)(var7);
-                var3 = var3.borderLeftWidth;
-                var3 = var5.bind(var6)(var3);
-                var5 = var1.getBoundingClientRect;
-                var5 = var5.bind(var1)();
-                var7 = var5.top;
-                var6 = var4.top;
-                if (!(var7 !== var6)) {
-                    _fun33852_ip = 334;
-                    continue _fun33852
-                }
-            case 301:
-                var7 = var1.style;
-                var9 = var4.top;
-                var6 = var0.top;
-                var6 = var9 - var6;
-                var6 = var6 - var8;
-                var6 = var6 + var2;
-                var7.top = var6;
-            case 334:
-                var6 = var5.left;
-                var5 = var4.left;
-                if (!(var6 !== var5)) {
-                    _fun33852_ip = 381;
-                    continue _fun33852
-                }
-            case 348:
-                var1 = var1.style;
-                var4 = var4.left;
-                var0 = var0.left;
-                var0 = var4 - var0;
-                var0 = var0 - var3;
-                var0 = var0 + var2;
-                var1.left = var0;
-            case 381:
-                var0 = undefined;
-                return var0;
-        }
-    };
-    var1.setElementPosition = var0;
+    var14 = 0;
+    var4.LINEAR = var14;
+    var0 = 'LINEAR';
+    var4[var14] = var0;
+    var13 = 1;
+    var4.SEQUENCED = var13;
+    var0 = 'SEQUENCED';
+    var4[var13] = var0;
+    var12 = 2;
+    var4.FADING = var12;
+    var0 = 'FADING';
+    var4[var12] = var0;
+    var11 = 3;
+    var4.JUMPING = var11;
+    var0 = 'JUMPING';
+    var4[var11] = var0;
+    var10 = 4;
+    var4.CURVED = var10;
+    var0 = 'CURVED';
+    var4[var10] = var0;
+    var9 = 5;
+    var4.ENTRY_EXIT = var9;
+    var0 = 'ENTRY_EXIT';
+    var4[var9] = var0;
+    var37 = var15.Object;
+    var36 = var37.assign;
+    var1 = var26[var14];
     var0 = undefined;
+    var1 = var5.bind(var0)(var1);
+    var56 = var1.FadeInData;
+    var1 = var26[var14];
+    var1 = var5.bind(var0)(var1);
+    var55 = var1.FadeOutData;
+    var1 = var26[var13];
+    var1 = var5.bind(var0)(var1);
+    var54 = var1.BounceInData;
+    var1 = var26[var13];
+    var1 = var5.bind(var0)(var1);
+    var53 = var1.BounceOutData;
+    var1 = var26[var12];
+    var1 = var5.bind(var0)(var1);
+    var52 = var1.FlipInData;
+    var1 = var26[var12];
+    var1 = var5.bind(var0)(var1);
+    var51 = var1.FlipOutData;
+    var1 = var26[var11];
+    var1 = var5.bind(var0)(var1);
+    var50 = var1.StretchInData;
+    var1 = var26[var11];
+    var1 = var5.bind(var0)(var1);
+    var49 = var1.StretchOutData;
+    var1 = var26[var10];
+    var1 = var5.bind(var0)(var1);
+    var48 = var1.ZoomInData;
+    var1 = var26[var10];
+    var1 = var5.bind(var0)(var1);
+    var47 = var1.ZoomOutData;
+    var1 = var26[var9];
+    var1 = var5.bind(var0)(var1);
+    var46 = var1.SlideInData;
+    var1 = var26[var9];
+    var1 = var5.bind(var0)(var1);
+    var45 = var1.SlideOutData;
+    var8 = 6;
+    var1 = var26[var8];
+    var1 = var5.bind(var0)(var1);
+    var44 = var1.LightSpeedInData;
+    var1 = var26[var8];
+    var1 = var5.bind(var0)(var1);
+    var43 = var1.LightSpeedOutData;
+    var7 = 7;
+    var1 = var26[var7];
+    var1 = var5.bind(var0)(var1);
+    var42 = var1.PinwheelData;
+    var6 = 8;
+    var1 = var26[var6];
+    var1 = var5.bind(var0)(var1);
+    var41 = var1.RotateInData;
+    var1 = var26[var6];
+    var1 = var5.bind(var0)(var1);
+    var40 = var1.RotateOutData;
+    var1 = 9;
+    var3 = var26[var1];
+    var3 = var5.bind(var0)(var3);
+    var39 = var3.RollInData;
+    var3 = var26[var1];
+    var3 = var5.bind(var0)(var3);
+    var38 = var3.RollOutData;
+    var57 = {};
+    var58 = var37;
+    var3 = var58[var36](var57, var56, var55, var54, var53, var52, var51, var50, var49, var48, var47, var46, var45, var44, var43, var42, var41, var40, var39, var38, var37);
+    var25 = var15.Object;
+    var24 = var25.assign;
+    var15 = var26[var14];
+    var15 = var5.bind(var0)(var15);
+    var56 = var15.FadeIn;
+    var14 = var26[var14];
+    var14 = var5.bind(var0)(var14);
+    var55 = var14.FadeOut;
+    var14 = var26[var13];
+    var14 = var5.bind(var0)(var14);
+    var54 = var14.BounceIn;
+    var13 = var26[var13];
+    var13 = var5.bind(var0)(var13);
+    var53 = var13.BounceOut;
+    var13 = var26[var12];
+    var13 = var5.bind(var0)(var13);
+    var52 = var13.FlipIn;
+    var12 = var26[var12];
+    var12 = var5.bind(var0)(var12);
+    var51 = var12.FlipOut;
+    var12 = var26[var11];
+    var12 = var5.bind(var0)(var12);
+    var50 = var12.StretchIn;
+    var11 = var26[var11];
+    var11 = var5.bind(var0)(var11);
+    var49 = var11.StretchOut;
+    var11 = var26[var10];
+    var11 = var5.bind(var0)(var11);
+    var48 = var11.ZoomIn;
+    var10 = var26[var10];
+    var10 = var5.bind(var0)(var10);
+    var47 = var10.ZoomOut;
+    var10 = var26[var9];
+    var10 = var5.bind(var0)(var10);
+    var46 = var10.SlideIn;
+    var9 = var26[var9];
+    var9 = var5.bind(var0)(var9);
+    var45 = var9.SlideOut;
+    var9 = var26[var8];
+    var9 = var5.bind(var0)(var9);
+    var44 = var9.LightSpeedIn;
+    var8 = var26[var8];
+    var8 = var5.bind(var0)(var8);
+    var43 = var8.LightSpeedOut;
+    var7 = var26[var7];
+    var7 = var5.bind(var0)(var7);
+    var42 = var7.Pinwheel;
+    var7 = var26[var6];
+    var7 = var5.bind(var0)(var7);
+    var41 = var7.RotateIn;
+    var6 = var26[var6];
+    var6 = var5.bind(var0)(var6);
+    var40 = var6.RotateOut;
+    var6 = var26[var1];
+    var6 = var5.bind(var0)(var6);
+    var39 = var6.RollIn;
+    var1 = var26[var1];
+    var1 = var5.bind(var0)(var1);
+    var38 = var1.RollOut;
+    var57 = {};
+    var58 = var25;
+    var1 = var58[var24](var57, var56, var55, var54, var53, var52, var51, var50, var49, var48, var47, var46, var45, var44, var43, var42, var41, var40, var39, var38, var37);
+    var2.TransitionType = var4;
+    var2.AnimationsData = var3;
+    var2.Animations = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3692]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3769, 3772, 3773, 3774, 3775, 3776, 3777, 3778, 3779, 3780]);

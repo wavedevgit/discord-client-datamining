@@ -1,85 +1,35 @@
 package en;
 
-import android.content.Context;
-import android.view.MotionEvent;
-import android.view.ViewGroup;
-import com.facebook.react.uimanager.PointerEvents;
-import com.facebook.react.uimanager.ReactCompoundViewGroup;
-import com.facebook.react.uimanager.ReactPointerEventsView;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import com.facebook.react.bridge.WritableMap;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b extends ViewGroup implements ReactCompoundViewGroup, ReactPointerEventsView {
+public abstract class b {
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final a f22958e = new a(null);
+    /* renamed from: a  reason: collision with root package name */
+    private final int f22958a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final int f22959b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final int f22960c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final g f22959d;
+    private final int f22961d;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        private a() {
-        }
+    public b(dn.d handler) {
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        this.f22958a = handler.O();
+        this.f22959b = handler.T();
+        this.f22960c = handler.S();
+        this.f22961d = handler.Q();
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public b(Context context, float f10, g pointerEventsProxy) {
-        super(context);
-        Intrinsics.checkNotNullParameter(context, "context");
-        Intrinsics.checkNotNullParameter(pointerEventsProxy, "pointerEventsProxy");
-        this.f22959d = pointerEventsProxy;
-        pointerEventsProxy.a(new f(this));
-        setBackgroundColor(-16777216);
-        setAlpha(f10);
-    }
-
-    public final boolean getBlockGestures$react_native_screens_release() {
-        return !gn.b.b(getAlpha(), 0.0f, 0.0f, 2, null);
-    }
-
-    @Override // com.facebook.react.uimanager.ReactPointerEventsView
-    @NotNull
-    public PointerEvents getPointerEvents() {
-        return this.f22959d.getPointerEvents();
-    }
-
-    @Override // com.facebook.react.uimanager.ReactCompoundViewGroup
-    public boolean interceptsTouchEvent(float f10, float f11) {
-        return getBlockGestures$react_native_screens_release();
-    }
-
-    @Override // android.view.ViewGroup, android.view.View
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        this.f22959d.a(null);
-    }
-
-    @Override // android.view.View
-    public boolean onTouchEvent(MotionEvent motionEvent) {
-        if (getBlockGestures$react_native_screens_release()) {
-            callOnClick();
-        }
-        return getBlockGestures$react_native_screens_release();
-    }
-
-    @Override // com.facebook.react.uimanager.ReactCompoundView
-    public int reactTagForTouch(float f10, float f11) {
-        throw new IllegalStateException("[RNScreens] DimmingView should never be asked for the view tag!");
-    }
-
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public b(Context context, float f10) {
-        this(context, f10, new g(null));
-        Intrinsics.checkNotNullParameter(context, "context");
-    }
-
-    @Override // android.view.ViewGroup, android.view.View
-    protected void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
+    public void a(WritableMap eventData) {
+        Intrinsics.checkNotNullParameter(eventData, "eventData");
+        eventData.putInt("numberOfPointers", this.f22958a);
+        eventData.putInt("handlerTag", this.f22959b);
+        eventData.putInt("state", this.f22960c);
+        eventData.putInt("pointerType", this.f22961d);
     }
 }

@@ -5,10 +5,10 @@ import kotlin.Result;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-public final class c implements ku.b {
+public final class c implements lu.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f49228a = new c();
+    public static final c f49500a = new c();
 
     private c() {
     }
@@ -34,11 +34,11 @@ public final class c implements ku.b {
         Object b10;
         d dVar;
         try {
-            Result.a aVar = Result.f33295e;
-            Integer a10 = f49228a.a(list);
+            Result.a aVar = Result.f33071e;
+            Integer a10 = f49500a.a(list);
             if (a10 != null) {
                 int intValue = a10.intValue();
-                List c10 = pv.a.c(list.get(0));
+                List c10 = qv.a.c(list.get(0));
                 Object obj = list.get(1);
                 Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlin.String");
                 String str = (String) obj;
@@ -55,7 +55,7 @@ public final class c implements ku.b {
             }
             b10 = Result.b(dVar);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33295e;
+            Result.a aVar2 = Result.f33071e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.e(b10) != null) {
@@ -64,9 +64,9 @@ public final class c implements ku.b {
         return (d) b10;
     }
 
-    @Override // ku.b
+    @Override // lu.b
     public Object f(Object obj, Object obj2) {
-        d c10 = c(pv.a.c(obj));
+        d c10 = c(qv.a.c(obj));
         if (c10 != null) {
             return b(c10);
         }

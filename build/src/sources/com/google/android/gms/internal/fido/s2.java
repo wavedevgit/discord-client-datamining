@@ -4,7 +4,7 @@ final class s2 extends t2 {
     private s2(q2 q2Var, Character ch2) {
         super(q2Var, ch2);
         char[] cArr;
-        cArr = q2Var.f15100b;
+        cArr = q2Var.f14729b;
         k0.c(cArr.length == 64);
     }
 
@@ -14,10 +14,10 @@ final class s2 extends t2 {
         k0.e(0, i11, bArr.length);
         for (int i13 = i11; i13 >= 3; i13 -= 3) {
             int i14 = ((bArr[i12 + 1] & 255) << 8) | ((bArr[i12] & 255) << 16) | (bArr[i12 + 2] & 255);
-            appendable.append(this.f15127b.a(i14 >>> 18));
-            appendable.append(this.f15127b.a((i14 >>> 12) & 63));
-            appendable.append(this.f15127b.a((i14 >>> 6) & 63));
-            appendable.append(this.f15127b.a(i14 & 63));
+            appendable.append(this.f14756b.a(i14 >>> 18));
+            appendable.append(this.f14756b.a((i14 >>> 12) & 63));
+            appendable.append(this.f14756b.a((i14 >>> 6) & 63));
+            appendable.append(this.f14756b.a(i14 & 63));
             i12 += 3;
         }
         if (i12 < i11) {

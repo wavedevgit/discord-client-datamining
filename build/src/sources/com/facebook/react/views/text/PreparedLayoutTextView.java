@@ -216,7 +216,7 @@ public final class PreparedLayoutTextView extends ViewGroup implements ReactComp
         PreparedLayout preparedLayout = this.preparedLayout;
         boolean z10 = false;
         if (preparedLayout != null) {
-            i12 = xr.a.c(preparedLayout.getVerticalOffset());
+            i12 = yr.a.c(preparedLayout.getVerticalOffset());
         } else {
             i12 = 0;
         }
@@ -448,7 +448,7 @@ public final class PreparedLayoutTextView extends ViewGroup implements ReactComp
 
     @Override // com.facebook.react.uimanager.ReactCompoundView
     public int reactTagForTouch(float f10, float f11) {
-        ReactTagSpan reactTagSpan = (ReactTagSpan) getSpanInCoords(xr.a.c(f10), xr.a.c(f11), ReactTagSpan.class);
+        ReactTagSpan reactTagSpan = (ReactTagSpan) getSpanInCoords(yr.a.c(f10), yr.a.c(f11), ReactTagSpan.class);
         if (reactTagSpan != null) {
             return reactTagSpan.getReactTag();
         }

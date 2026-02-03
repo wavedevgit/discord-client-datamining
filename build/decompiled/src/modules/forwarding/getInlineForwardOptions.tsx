@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forwarding/getInlineForwardOptions.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun88711: for (var _fun88711_ip = 0;;) switch (_fun88711_ip) {
+        _fun89068: for (var _fun89068_ip = 0;;) switch (_fun89068_ip) {
             case 0:
                 var0 = arg0;
                 var1 = arg1;
@@ -35,33 +35,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.embedIndex;
                 var1 = 'media';
                 if (!(var1 !== var4)) {
-                    _fun88711_ip = 78;
-                    continue _fun88711
+                    _fun89068_ip = 78;
+                    continue _fun89068
                 }
             case 30:
                 var1 = 'embed';
                 if (!(var1 === var4)) {
-                    _fun88711_ip = 44;
-                    continue _fun88711
+                    _fun89068_ip = 44;
+                    continue _fun89068
                 }
             case 38:
                 var1 = null;
                 if (!(var1 == var5)) {
-                    _fun88711_ip = 58;
-                    continue _fun88711
+                    _fun89068_ip = 58;
+                    continue _fun89068
                 }
             case 44:
                 var3 = 'shortcut';
                 var1 = undefined;
                 if (!(var3 === var4)) {
-                    _fun88711_ip = 56;
-                    continue _fun88711
+                    _fun89068_ip = 56;
+                    continue _fun89068
                 }
             case 54:
                 var1 = {};
             case 56:
-                _fun88711_ip = 76;
-                continue _fun88711;
+                _fun89068_ip = 76;
+                continue _fun89068;
             case 58:
                 var3 = {};
                 var4 = new Array(1);
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4 == var3;
                 var6 = undefined;
                 if (var5) {
-                    _fun88711_ip = 100;
-                    continue _fun88711
+                    _fun89068_ip = 100;
+                    continue _fun89068
                 }
             case 95:
                 var6 = var3.type;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3.FORWARD;
                 var3 = var0;
                 if (!(var6 === var5)) {
-                    _fun88711_ip = 149;
-                    continue _fun88711
+                    _fun89068_ip = 149;
+                    continue _fun89068
                 }
             case 120:
                 var5 = var0.messageSnapshots;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var4 == var5;
                 var0 = undefined;
                 if (var6) {
-                    _fun88711_ip = 146;
-                    continue _fun88711
+                    _fun89068_ip = 146;
+                    continue _fun89068
                 }
             case 141:
                 var0 = var5.message;
@@ -108,14 +108,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4 == var3;
                 var1 = undefined;
                 if (var4) {
-                    _fun88711_ip = 200;
-                    continue _fun88711
+                    _fun89068_ip = 200;
+                    continue _fun89068
                 }
             case 160:
                 var5 = var3.attachments;
                 var4 = var5.filter;
                 var3 = function(arg0) { // Environment: var2
-                    _fun88712: for (var _fun88712_ip = 0;;) switch (_fun88712_ip) {
+                    _fun89069: for (var _fun89069_ip = 0;;) switch (_fun89069_ip) {
                         case 0:
                             var0 = arg0;
                             var3 = var0.filename;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var2.isImageFile;
                             var0 = var0.bind(var2)(var3);
                             if (var0) {
-                                _fun88712_ip = 76;
-                                continue _fun88712
+                                _fun89069_ip = 76;
+                                continue _fun89069
                             }
                         case 48:
                             var2 = _closure1_slot0;
@@ -157,4 +157,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getInlineForwardOptions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3941, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3971, 2]);

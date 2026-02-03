@@ -160,11 +160,11 @@ public abstract class a extends ImageView {
     @Override // android.widget.ImageView, android.view.View
     protected void onMeasure(int i10, int i11) {
         AspectRatioMeasure.Spec spec = this.mMeasureSpec;
-        spec.f11190a = i10;
-        spec.f11191b = i11;
+        spec.f10819a = i10;
+        spec.f10820b = i11;
         AspectRatioMeasure.b(spec, this.mAspectRatio, getLayoutParams(), getPaddingLeft() + getPaddingRight(), getPaddingTop() + getPaddingBottom());
         AspectRatioMeasure.Spec spec2 = this.mMeasureSpec;
-        super.onMeasure(spec2.f11190a, spec2.f11191b);
+        super.onMeasure(spec2.f10819a, spec2.f10820b);
     }
 
     @Override // android.view.View

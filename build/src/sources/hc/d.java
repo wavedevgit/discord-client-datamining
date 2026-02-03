@@ -5,19 +5,19 @@ import java.io.Closeable;
 public interface d extends Closeable {
     void G(Iterable iterable);
 
-    void S0(Iterable iterable);
+    void T0(Iterable iterable);
 
     Iterable X();
 
     Iterable X1(zb.o oVar);
 
-    void Y(zb.o oVar, long j10);
+    void Z(zb.o oVar, long j10);
 
-    k Z0(zb.o oVar, zb.i iVar);
+    k a1(zb.o oVar, zb.i iVar);
 
     int k();
 
-    boolean o0(zb.o oVar);
+    boolean p0(zb.o oVar);
 
-    long q0(zb.o oVar);
+    long r0(zb.o oVar);
 }

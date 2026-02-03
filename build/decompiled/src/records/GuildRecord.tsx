@@ -38,16 +38,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var _closure1_slot7 = var3;
-    var10 = global;
-    var6 = var10.Object;
+    var11 = global;
+    var6 = var11.Object;
     var5 = var6.defineProperty;
     var4 = {};
     var0 = true;
     var4.value = var0;
     var0 = '__esModule';
     var0 = var5.bind(var6)(var2, var0, var4);
-    var11 = 0;
-    var4 = var8[var11];
+    var12 = 0;
+    var4 = var8[var12];
     var0 = undefined;
     var4 = var7.bind(var0)(var4);
     var5 = var4.set;
@@ -56,19 +56,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 1;
     var4 = var8[var4];
     var4 = var7.bind(var0)(var4);
-    var13 = var4.BoostedGuildTiers;
-    var14 = var4.GuildExplicitContentFilterTypes;
-    var12 = var4.GuildNSFWContentLevel;
-    var _closure1_slot4 = var12;
+    var14 = var4.BoostedGuildTiers;
+    var10 = var4.GuildExplicitContentFilterTypes;
+    var13 = var4.GuildNSFWContentLevel;
+    var _closure1_slot4 = var13;
     var17 = var4.MFALevels;
     var _closure1_slot5 = var17;
     var16 = var4.UserNotificationSettings;
     var15 = var4.VerificationLevels;
-    var6 = var10.Set;
-    var5 = var12.EXPLICIT;
+    var6 = var11.Set;
+    var5 = var13.EXPLICIT;
     var4 = new Array(2);
     var4[0] = var5;
-    var5 = var12.AGE_RESTRICTED;
+    var5 = var13.AGE_RESTRICTED;
     var4[1] = var5;
     var5 = var6.prototype;
     var5 = Object.create(var5, {
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = new var21[var6](var20, var19);
     var5 = var4 instanceof Object ? var4 : var5;
     var _closure1_slot6 = var5;
-    var9 = var10.Object;
+    var9 = var11.Object;
     var6 = var9.freeze;
     var4 = {
         'mfaLevel': null,
@@ -94,32 +94,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.defaultMessageNotifications = var16;
     var15 = var15.NONE;
     var4.verificationLevel = var15;
-    var14 = var14.DISABLED;
-    var4.explicitContentFilter = var14;
-    var14 = false;
-    var4.premiumProgressBarEnabled = var14;
-    var4.systemChannelFlags = var11;
-    var14 = -1;
-    var4.maxStageVideoChannelUsers = var14;
-    var4.maxVideoChannelUsers = var14;
-    var4.maxMembers = var14;
-    var13 = var13.NONE;
-    var4.premiumTier = var13;
-    var12 = var12.DEFAULT;
-    var4.nsfwLevel = var12;
-    var4.premiumSubscriberCount = var11;
-    var10 = var10.Set;
-    var11 = var10.prototype;
-    var11 = Object.create(var11, {
+    var10 = var10.DISABLED;
+    var4.explicitContentFilter = var10;
+    var10 = false;
+    var4.premiumProgressBarEnabled = var10;
+    var10 = null;
+    var4.premiumProgressBarEnabledUserUpdatedAt = var10;
+    var4.systemChannelFlags = var12;
+    var15 = -1;
+    var4.maxStageVideoChannelUsers = var15;
+    var4.maxVideoChannelUsers = var15;
+    var4.maxMembers = var15;
+    var14 = var14.NONE;
+    var4.premiumTier = var14;
+    var13 = var13.DEFAULT;
+    var4.nsfwLevel = var13;
+    var4.premiumSubscriberCount = var12;
+    var11 = var11.Set;
+    var12 = var11.prototype;
+    var12 = Object.create(var12, {
         constructor: {
-            value: var10
+            value: var11
         }
     });
-    var21 = var11;
-    var10 = new var21[var10](var20);
-    var10 = var10 instanceof Object ? var10 : var11;
-    var4.features = var10;
-    var10 = null;
+    var21 = var12;
+    var11 = new var21[var11](var20);
+    var11 = var11 instanceof Object ? var11 : var12;
+    var4.features = var11;
     var4.description = var10;
     var4.icon = var10;
     var4.ownerId = var10;

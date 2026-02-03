@@ -27,10 +27,10 @@ public final class TypeIntersectionScope extends AbstractScopeAdapter {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f35524a;
+    private final String f35300a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final MemberScope f35525b;
+    private final MemberScope f35301b;
 
     @SourceDebugExtension({"SMAP\nTypeIntersectionScope.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TypeIntersectionScope.kt\norg/jetbrains/kotlin/resolve/scopes/TypeIntersectionScope$Companion\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,59:1\n1563#2:60\n1634#2,3:61\n*S KotlinDebug\n*F\n+ 1 TypeIntersectionScope.kt\norg/jetbrains/kotlin/resolve/scopes/TypeIntersectionScope$Companion\n*L\n50#1:60\n50#1:61,3\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -89,7 +89,7 @@ public final class TypeIntersectionScope extends AbstractScopeAdapter {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.AbstractScopeAdapter
     protected MemberScope a() {
-        return this.f35525b;
+        return this.f35301b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.AbstractScopeAdapter, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
@@ -109,7 +109,7 @@ public final class TypeIntersectionScope extends AbstractScopeAdapter {
         Pair pair = new Pair(arrayList, arrayList2);
         List list = (List) pair.a();
         Intrinsics.checkNotNull(list, "null cannot be cast to non-null type kotlin.collections.Collection<org.jetbrains.kotlin.descriptors.CallableDescriptor>");
-        return CollectionsKt.L0(OverridingUtilsKt.selectMostSpecificInEachOverridableGroup(list, j.f35535d), (List) pair.b());
+        return CollectionsKt.L0(OverridingUtilsKt.selectMostSpecificInEachOverridableGroup(list, j.f35311d), (List) pair.b());
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.AbstractScopeAdapter, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
@@ -117,7 +117,7 @@ public final class TypeIntersectionScope extends AbstractScopeAdapter {
     public Collection<SimpleFunctionDescriptor> getContributedFunctions(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        return OverridingUtilsKt.selectMostSpecificInEachOverridableGroup(super.getContributedFunctions(name, location), h.f35533d);
+        return OverridingUtilsKt.selectMostSpecificInEachOverridableGroup(super.getContributedFunctions(name, location), h.f35309d);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.AbstractScopeAdapter, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
@@ -125,11 +125,11 @@ public final class TypeIntersectionScope extends AbstractScopeAdapter {
     public Collection<PropertyDescriptor> getContributedVariables(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        return OverridingUtilsKt.selectMostSpecificInEachOverridableGroup(super.getContributedVariables(name, location), i.f35534d);
+        return OverridingUtilsKt.selectMostSpecificInEachOverridableGroup(super.getContributedVariables(name, location), i.f35310d);
     }
 
     private TypeIntersectionScope(String str, MemberScope memberScope) {
-        this.f35524a = str;
-        this.f35525b = memberScope;
+        this.f35300a = str;
+        this.f35301b = memberScope;
     }
 }

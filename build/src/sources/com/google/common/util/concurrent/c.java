@@ -12,39 +12,39 @@ public abstract class c extends d {
     private static final class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final Future f17293d;
+        final Future f16922d;
 
         /* renamed from: e  reason: collision with root package name */
-        final b f17294e;
+        final b f16923e;
 
         a(Future future, b bVar) {
-            this.f17293d = future;
-            this.f17294e = bVar;
+            this.f16922d = future;
+            this.f16923e = bVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             Throwable a10;
-            Future future = this.f17293d;
+            Future future = this.f16922d;
             if ((future instanceof mi.a) && (a10 = mi.b.a((mi.a) future)) != null) {
-                this.f17294e.onFailure(a10);
+                this.f16923e.onFailure(a10);
                 return;
             }
             try {
-                this.f17294e.onSuccess(c.b(this.f17293d));
+                this.f16923e.onSuccess(c.b(this.f16922d));
             } catch (Error e10) {
                 e = e10;
-                this.f17294e.onFailure(e);
+                this.f16923e.onFailure(e);
             } catch (RuntimeException e11) {
                 e = e11;
-                this.f17294e.onFailure(e);
+                this.f16923e.onFailure(e);
             } catch (ExecutionException e12) {
-                this.f17294e.onFailure(e12.getCause());
+                this.f16923e.onFailure(e12.getCause());
             }
         }
 
         public String toString() {
-            return h.b(this).c(this.f17294e).toString();
+            return h.b(this).c(this.f16923e).toString();
         }
     }
 

@@ -3,5 +3,5 @@ package u0;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f50027a = new Object();
+    private static final Object f50083a = new Object();
 }

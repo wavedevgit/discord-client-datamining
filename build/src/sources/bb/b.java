@@ -21,13 +21,13 @@ import w8.f;
 public final class b implements c {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f7267c = new a(null);
+    public static final a f6318c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Resources f7268a;
+    private final Resources f6319a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f7269b;
+    private final Map f6320b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -41,12 +41,12 @@ public final class b implements c {
 
     public b(Resources resources) {
         Intrinsics.checkNotNullParameter(resources, "resources");
-        this.f7268a = resources;
-        this.f7269b = new ConcurrentHashMap();
+        this.f6319a = resources;
+        this.f6320b = new ConcurrentHashMap();
     }
 
     private final int b(String str) {
-        Map map = this.f7269b;
+        Map map = this.f6320b;
         Object obj = map.get(str);
         if (obj == null) {
             Uri parse = Uri.parse(str);
@@ -78,9 +78,9 @@ public final class b implements c {
         Intrinsics.checkNotNullParameter(qualityInfo, "qualityInfo");
         Intrinsics.checkNotNullParameter(options, "options");
         try {
-            String D0 = encodedImage.D0();
-            if (D0 != null) {
-                Drawable f10 = j.f(this.f7268a, b(D0), null);
+            String E0 = encodedImage.E0();
+            if (E0 != null) {
+                Drawable f10 = j.f(this.f6319a, b(E0), null);
                 if (f10 == null) {
                     return null;
                 }

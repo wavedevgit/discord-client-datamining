@@ -6,11 +6,11 @@ import org.jetbrains.annotations.NotNull;
 public final class DescriptorBasedDeprecationInfoKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final CallableDescriptor.UserDataKey f35454a = new CallableDescriptor.UserDataKey<DescriptorBasedDeprecationInfo>() { // from class: kotlin.reflect.jvm.internal.impl.resolve.deprecation.DescriptorBasedDeprecationInfoKt$DEPRECATED_FUNCTION_KEY$1
+    private static final CallableDescriptor.UserDataKey f35230a = new CallableDescriptor.UserDataKey<DescriptorBasedDeprecationInfo>() { // from class: kotlin.reflect.jvm.internal.impl.resolve.deprecation.DescriptorBasedDeprecationInfoKt$DEPRECATED_FUNCTION_KEY$1
     };
 
     @NotNull
     public static final CallableDescriptor.UserDataKey<DescriptorBasedDeprecationInfo> getDEPRECATED_FUNCTION_KEY() {
-        return f35454a;
+        return f35230a;
     }
 }

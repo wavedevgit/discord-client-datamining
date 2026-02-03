@@ -6,27 +6,27 @@ import java.util.TimeZone;
 class s {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final s f15995c = new s(null, null);
+    private static final s f15624c = new s(null, null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Long f15996a;
+    private final Long f15625a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TimeZone f15997b;
+    private final TimeZone f15626b;
 
     private s(Long l10, TimeZone timeZone) {
-        this.f15996a = l10;
-        this.f15997b = timeZone;
+        this.f15625a = l10;
+        this.f15626b = timeZone;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static s c() {
-        return f15995c;
+        return f15624c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Calendar a() {
-        return b(this.f15997b);
+        return b(this.f15626b);
     }
 
     Calendar b(TimeZone timeZone) {
@@ -36,7 +36,7 @@ class s {
         } else {
             calendar = Calendar.getInstance(timeZone);
         }
-        Long l10 = this.f15996a;
+        Long l10 = this.f15625a;
         if (l10 != null) {
             calendar.setTimeInMillis(l10.longValue());
         }

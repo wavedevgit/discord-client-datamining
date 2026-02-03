@@ -3,21 +3,42 @@ package mo;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tq.h f39388a;
+    private final boolean f39118a;
 
-    public c(tq.h hVar) {
-        this.f39388a = hVar;
+    /* renamed from: b  reason: collision with root package name */
+    private final boolean f39119b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final boolean f39120c;
+
+    public c(boolean z10, boolean z11, boolean z12) {
+        this.f39118a = z10;
+        this.f39119b = z11;
+        this.f39120c = z12;
     }
 
-    public static c a(tq.h hVar) {
-        return new c(hVar);
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof c)) {
+            return false;
+        }
+        c cVar = (c) obj;
+        if (this.f39118a == cVar.f39118a && this.f39119b == cVar.f39119b && this.f39120c == cVar.f39120c) {
+            return true;
+        }
+        return false;
     }
 
-    public static com.withpersona.sdk2.inquiry.internal.a c(String str, com.withpersona.sdk2.inquiry.internal.network.e eVar) {
-        return new com.withpersona.sdk2.inquiry.internal.a(str, eVar);
+    public int hashCode() {
+        return (((Boolean.hashCode(this.f39118a) * 31) + Boolean.hashCode(this.f39119b)) * 31) + Boolean.hashCode(this.f39120c);
     }
 
-    public com.withpersona.sdk2.inquiry.internal.a b(String str) {
-        return c(str, (com.withpersona.sdk2.inquiry.internal.network.e) this.f39388a.get());
+    public String toString() {
+        boolean z10 = this.f39118a;
+        boolean z11 = this.f39119b;
+        boolean z12 = this.f39120c;
+        return "ScreenState(shouldShowBackButton=" + z10 + ", shouldShowCancelButton=" + z11 + ", isNavigationEnabled=" + z12 + ")";
     }
 }

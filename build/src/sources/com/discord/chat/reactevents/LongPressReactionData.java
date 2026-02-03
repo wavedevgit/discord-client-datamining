@@ -8,7 +8,7 @@ import com.discord.reactions.ReactionView;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.devsupport.StackTraceHelper;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -27,7 +27,7 @@ public final class LongPressReactionData implements ReactEvent {
     }
 
     /* renamed from: copy-Eqy5D80$default  reason: not valid java name */
-    public static /* synthetic */ LongPressReactionData m750copyEqy5D80$default(LongPressReactionData longPressReactionData, String str, long j10, ReactionView.Reaction reaction, int i10, Object obj) {
+    public static /* synthetic */ LongPressReactionData m752copyEqy5D80$default(LongPressReactionData longPressReactionData, String str, long j10, ReactionView.Reaction reaction, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = longPressReactionData.messageId;
         }
@@ -37,17 +37,17 @@ public final class LongPressReactionData implements ReactEvent {
         if ((i10 & 4) != 0) {
             reaction = longPressReactionData.reaction;
         }
-        return longPressReactionData.m753copyEqy5D80(str, j10, reaction);
+        return longPressReactionData.m755copyEqy5D80(str, j10, reaction);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m751component13Eiw7ao() {
+    public final String m753component13Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    public final long m752component2o4g7jtM() {
+    public final long m754component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -57,7 +57,7 @@ public final class LongPressReactionData implements ReactEvent {
 
     @NotNull
     /* renamed from: copy-Eqy5D80  reason: not valid java name */
-    public final LongPressReactionData m753copyEqy5D80(@NotNull String messageId, long j10, ReactionView.Reaction reaction) {
+    public final LongPressReactionData m755copyEqy5D80(@NotNull String messageId, long j10, ReactionView.Reaction reaction) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         return new LongPressReactionData(messageId, j10, reaction, null);
     }
@@ -68,19 +68,19 @@ public final class LongPressReactionData implements ReactEvent {
         }
         if (obj instanceof LongPressReactionData) {
             LongPressReactionData longPressReactionData = (LongPressReactionData) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, longPressReactionData.messageId) && ChannelId.m1062equalsimpl0(this.channelId, longPressReactionData.channelId) && Intrinsics.areEqual(this.reaction, longPressReactionData.reaction);
+            return MessageId.m1090equalsimpl0(this.messageId, longPressReactionData.messageId) && ChannelId.m1064equalsimpl0(this.channelId, longPressReactionData.channelId) && Intrinsics.areEqual(this.reaction, longPressReactionData.reaction);
         }
         return false;
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m754getChannelIdo4g7jtM() {
+    public final long m756getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m755getMessageId3Eiw7ao() {
+    public final String m757getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -89,9 +89,9 @@ public final class LongPressReactionData implements ReactEvent {
     }
 
     public int hashCode() {
-        int m1089hashCodeimpl = ((MessageId.m1089hashCodeimpl(this.messageId) * 31) + ChannelId.m1063hashCodeimpl(this.channelId)) * 31;
+        int m1091hashCodeimpl = ((MessageId.m1091hashCodeimpl(this.messageId) * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31;
         ReactionView.Reaction reaction = this.reaction;
-        return m1089hashCodeimpl + (reaction == null ? 0 : reaction.hashCode());
+        return m1091hashCodeimpl + (reaction == null ? 0 : reaction.hashCode());
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -106,7 +106,7 @@ public final class LongPressReactionData implements ReactEvent {
             writableNativeMap = null;
         }
         Pair a10 = v.a("messageId", this.messageId);
-        Pair a11 = v.a("channelId", ChannelId.m1065toStringimpl(this.channelId));
+        Pair a11 = v.a("channelId", ChannelId.m1067toStringimpl(this.channelId));
         Pair a12 = v.a("reaction", writableNativeMap);
         ReactionView.Reaction reaction2 = this.reaction;
         if (reaction2 != null) {
@@ -117,10 +117,10 @@ public final class LongPressReactionData implements ReactEvent {
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
-        String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
         ReactionView.Reaction reaction = this.reaction;
-        return "LongPressReactionData(messageId=" + m1091toStringimpl + ", channelId=" + m1065toStringimpl + ", reaction=" + reaction + ")";
+        return "LongPressReactionData(messageId=" + m1093toStringimpl + ", channelId=" + m1067toStringimpl + ", reaction=" + reaction + ")";
     }
 
     private LongPressReactionData(String messageId, long j10, ReactionView.Reaction reaction) {

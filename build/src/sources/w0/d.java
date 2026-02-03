@@ -6,13 +6,13 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final j0 f52019a;
+    private final j0 f51586a;
 
     public /* synthetic */ d(Function0 function0, DefaultConstructorMarker defaultConstructorMarker) {
         this(function0);
     }
 
     private d(Function0 function0) {
-        this.f52019a = new m(function0);
+        this.f51586a = new m(function0);
     }
 }

@@ -6,5 +6,5 @@ import kotlin.collections.x0;
 public final class ReflectKotlinClassKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f33899a = x0.i(Integer.class, Character.class, Byte.class, Long.class, Short.class, Boolean.class, Double.class, Float.class, int[].class, char[].class, byte[].class, long[].class, short[].class, boolean[].class, double[].class, float[].class, Class.class, String.class);
+    private static final Set f33675a = x0.i(Integer.class, Character.class, Byte.class, Long.class, Short.class, Boolean.class, Double.class, Float.class, int[].class, char[].class, byte[].class, long[].class, short[].class, boolean[].class, double[].class, float[].class, Class.class, String.class);
 }

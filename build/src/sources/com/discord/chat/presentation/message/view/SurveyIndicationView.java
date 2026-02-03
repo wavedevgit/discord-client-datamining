@@ -49,12 +49,12 @@ public final class SurveyIndicationView extends ConstraintLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setSurveyIndication_u7_MRrM$lambda$3$lambda$1(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        function2.invoke(MessageId.m1084boximpl(str), node);
-        return Unit.f33298a;
+        function2.invoke(MessageId.m1086boximpl(str), node);
+        return Unit.f33074a;
     }
 
     /* renamed from: setSurveyIndication-u7_MRrM  reason: not valid java name */
-    public final void m706setSurveyIndicationu7_MRrM(@NotNull final String messageId, @NotNull SurveyIndication surveyIndication, @NotNull final Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
+    public final void m708setSurveyIndicationu7_MRrM(@NotNull final String messageId, @NotNull SurveyIndication surveyIndication, @NotNull final Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(surveyIndication, "surveyIndication");
         Intrinsics.checkNotNullParameter(onLinkClicked, "onLinkClicked");

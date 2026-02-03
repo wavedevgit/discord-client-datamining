@@ -3,16 +3,16 @@ package j5;
 import g5.f;
 import g5.i;
 import g5.q;
-import ir.p;
 import j5.c;
+import jr.p;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class b implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f31873a;
+    private final d f31611a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i f31874b;
+    private final i f31612b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements c.a {
@@ -31,17 +31,17 @@ public final class b implements c {
     }
 
     public b(d dVar, i iVar) {
-        this.f31873a = dVar;
-        this.f31874b = iVar;
+        this.f31611a = dVar;
+        this.f31612b = iVar;
     }
 
     @Override // j5.c
     public void a() {
-        i iVar = this.f31874b;
+        i iVar = this.f31612b;
         if (iVar instanceof q) {
-            this.f31873a.a(((q) iVar).a());
+            this.f31611a.a(((q) iVar).a());
         } else if (iVar instanceof f) {
-            this.f31873a.c(((f) iVar).a());
+            this.f31611a.c(((f) iVar).a());
         } else {
             throw new p();
         }

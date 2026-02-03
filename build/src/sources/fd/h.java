@@ -5,17 +5,17 @@ import java.nio.ByteBuffer;
 final class h extends qc.f {
 
     /* renamed from: t  reason: collision with root package name */
-    private long f24962t;
+    private long f24173t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f24963u;
+    private int f24174u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f24964v;
+    private int f24175v;
 
     public h() {
         super(2);
-        this.f24964v = 32;
+        this.f24175v = 32;
     }
 
     private boolean A(qc.f fVar) {
@@ -23,30 +23,30 @@ final class h extends qc.f {
         if (!E()) {
             return true;
         }
-        if (this.f24963u >= this.f24964v || fVar.l() != l()) {
+        if (this.f24174u >= this.f24175v || fVar.m() != m()) {
             return false;
         }
-        ByteBuffer byteBuffer2 = fVar.f47092i;
-        if (byteBuffer2 == null || (byteBuffer = this.f47092i) == null || byteBuffer.position() + byteBuffer2.remaining() <= 3072000) {
+        ByteBuffer byteBuffer2 = fVar.f47347i;
+        if (byteBuffer2 == null || (byteBuffer = this.f47347i) == null || byteBuffer.position() + byteBuffer2.remaining() <= 3072000) {
             return true;
         }
         return false;
     }
 
     public long B() {
-        return this.f47094p;
+        return this.f47349p;
     }
 
     public long C() {
-        return this.f24962t;
+        return this.f24173t;
     }
 
     public int D() {
-        return this.f24963u;
+        return this.f24174u;
     }
 
     public boolean E() {
-        if (this.f24963u > 0) {
+        if (this.f24174u > 0) {
             return true;
         }
         return false;
@@ -60,39 +60,39 @@ final class h extends qc.f {
             z10 = false;
         }
         ne.a.a(z10);
-        this.f24964v = i10;
+        this.f24175v = i10;
     }
 
     @Override // qc.f, qc.a
     public void h() {
         super.h();
-        this.f24963u = 0;
+        this.f24174u = 0;
     }
 
     public boolean z(qc.f fVar) {
         ne.a.a(!fVar.w());
-        ne.a.a(!fVar.k());
+        ne.a.a(!fVar.l());
         ne.a.a(!fVar.o());
         if (!A(fVar)) {
             return false;
         }
-        int i10 = this.f24963u;
-        this.f24963u = i10 + 1;
+        int i10 = this.f24174u;
+        this.f24174u = i10 + 1;
         if (i10 == 0) {
-            this.f47094p = fVar.f47094p;
+            this.f47349p = fVar.f47349p;
             if (fVar.q()) {
                 s(1);
             }
         }
-        if (fVar.l()) {
+        if (fVar.m()) {
             s(Integer.MIN_VALUE);
         }
-        ByteBuffer byteBuffer = fVar.f47092i;
+        ByteBuffer byteBuffer = fVar.f47347i;
         if (byteBuffer != null) {
             u(byteBuffer.remaining());
-            this.f47092i.put(byteBuffer);
+            this.f47347i.put(byteBuffer);
         }
-        this.f24962t = fVar.f47094p;
+        this.f24173t = fVar.f47349p;
         return true;
     }
 }

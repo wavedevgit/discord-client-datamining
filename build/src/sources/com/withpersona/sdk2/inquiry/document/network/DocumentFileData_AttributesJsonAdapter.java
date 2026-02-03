@@ -16,19 +16,19 @@ import org.jetbrains.annotations.NotNull;
 public final class DocumentFileData_AttributesJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19495a;
+    private final m.b f19128a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19496b;
+    private final h f19129b;
 
     public DocumentFileData_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("originals");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19495a = a10;
+        this.f19128a = a10;
         h f10 = moshi.f(a0.j(List.class, DocumentFileData.RemoteDocumentFile.class), x0.d(), "originals");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19496b = f10;
+        this.f19129b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -38,13 +38,13 @@ public final class DocumentFileData_AttributesJsonAdapter extends h {
         reader.r();
         List list = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f19495a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    list = (List) this.f19496b.fromJson(reader);
+            int t02 = reader.t0(this.f19128a);
+            if (t02 != -1) {
+                if (t02 == 0) {
+                    list = (List) this.f19129b.fromJson(reader);
                 }
             } else {
-                reader.E0();
+                reader.F0();
                 reader.P();
             }
         }
@@ -58,8 +58,8 @@ public final class DocumentFileData_AttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.l();
-            writer.A0("originals");
-            this.f19496b.toJson(writer, attributes.a());
+            writer.t0("originals");
+            this.f19129b.toJson(writer, attributes.a());
             writer.E();
             return;
         }

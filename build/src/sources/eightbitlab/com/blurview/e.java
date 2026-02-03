@@ -12,22 +12,22 @@ import com.discord.blur.i;
 public class e implements BlurAlgorithm {
 
     /* renamed from: b  reason: collision with root package name */
-    private int f22843b;
+    private int f22875b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f22844c;
+    private int f22876c;
 
     /* renamed from: e  reason: collision with root package name */
-    public BlurAlgorithm f22846e;
+    public BlurAlgorithm f22878e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Context f22847f;
+    private Context f22879f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final RenderNode f22842a = i.a("BlurViewNode");
+    private final RenderNode f22874a = i.a("BlurViewNode");
 
     /* renamed from: d  reason: collision with root package name */
-    private float f22845d = 1.0f;
+    private float f22877d = 1.0f;
 
     @Override // eightbitlab.com.blurview.BlurAlgorithm
     public Bitmap.Config a() {
@@ -42,14 +42,14 @@ public class e implements BlurAlgorithm {
     @Override // eightbitlab.com.blurview.BlurAlgorithm
     public void c(Canvas canvas, Bitmap bitmap) {
         if (canvas.isHardwareAccelerated()) {
-            canvas.drawRenderNode(this.f22842a);
+            canvas.drawRenderNode(this.f22874a);
             return;
         }
-        if (this.f22846e == null) {
-            this.f22846e = new f(this.f22847f);
+        if (this.f22878e == null) {
+            this.f22878e = new f(this.f22879f);
         }
-        this.f22846e.e(bitmap, this.f22845d);
-        this.f22846e.c(canvas, bitmap);
+        this.f22878e.e(bitmap, this.f22877d);
+        this.f22878e.c(canvas, bitmap);
     }
 
     @Override // eightbitlab.com.blurview.BlurAlgorithm
@@ -59,8 +59,8 @@ public class e implements BlurAlgorithm {
 
     @Override // eightbitlab.com.blurview.BlurAlgorithm
     public void destroy() {
-        this.f22842a.discardDisplayList();
-        BlurAlgorithm blurAlgorithm = this.f22846e;
+        this.f22874a.discardDisplayList();
+        BlurAlgorithm blurAlgorithm = this.f22878e;
         if (blurAlgorithm != null) {
             blurAlgorithm.destroy();
         }
@@ -68,21 +68,21 @@ public class e implements BlurAlgorithm {
 
     @Override // eightbitlab.com.blurview.BlurAlgorithm
     public Bitmap e(Bitmap bitmap, float f10) {
-        this.f22845d = f10;
-        if (bitmap.getHeight() != this.f22843b || bitmap.getWidth() != this.f22844c) {
-            this.f22843b = bitmap.getHeight();
+        this.f22877d = f10;
+        if (bitmap.getHeight() != this.f22875b || bitmap.getWidth() != this.f22876c) {
+            this.f22875b = bitmap.getHeight();
             int width = bitmap.getWidth();
-            this.f22844c = width;
-            this.f22842a.setPosition(0, 0, width, this.f22843b);
+            this.f22876c = width;
+            this.f22874a.setPosition(0, 0, width, this.f22875b);
         }
-        this.f22842a.beginRecording().drawBitmap(bitmap, 0.0f, 0.0f, (Paint) null);
-        this.f22842a.endRecording();
-        this.f22842a.setRenderEffect(RenderEffect.createBlurEffect(f10, f10, Shader.TileMode.MIRROR));
+        this.f22874a.beginRecording().drawBitmap(bitmap, 0.0f, 0.0f, (Paint) null);
+        this.f22874a.endRecording();
+        this.f22874a.setRenderEffect(RenderEffect.createBlurEffect(f10, f10, Shader.TileMode.MIRROR));
         return bitmap;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(Context context) {
-        this.f22847f = context;
+        this.f22879f = context;
     }
 }

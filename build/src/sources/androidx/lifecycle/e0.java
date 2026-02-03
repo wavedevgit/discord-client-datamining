@@ -12,13 +12,13 @@ import kotlin.reflect.KClass;
 public abstract class e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final CreationExtras.c f4481a;
+    public static final CreationExtras.c f4525a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final CreationExtras.c f4482b;
+    public static final CreationExtras.c f4526b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final CreationExtras.c f4483c;
+    public static final CreationExtras.c f4527c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements ViewModelProvider.Factory {
@@ -46,20 +46,20 @@ public abstract class e0 {
     }
 
     static {
-        CreationExtras.a aVar = CreationExtras.f4529b;
-        f4481a = new b();
-        f4482b = new c();
-        f4483c = new d();
+        CreationExtras.a aVar = CreationExtras.f4573b;
+        f4525a = new b();
+        f4526b = new c();
+        f4527c = new d();
     }
 
     public static final b0 a(CreationExtras creationExtras) {
         Intrinsics.checkNotNullParameter(creationExtras, "<this>");
-        u3.f fVar = (u3.f) creationExtras.a(f4481a);
+        u3.f fVar = (u3.f) creationExtras.a(f4525a);
         if (fVar != null) {
-            q0 q0Var = (q0) creationExtras.a(f4482b);
+            q0 q0Var = (q0) creationExtras.a(f4526b);
             if (q0Var != null) {
-                Bundle bundle = (Bundle) creationExtras.a(f4483c);
-                String str = (String) creationExtras.a(ViewModelProvider.f4445c);
+                Bundle bundle = (Bundle) creationExtras.a(f4527c);
+                String str = (String) creationExtras.a(ViewModelProvider.f4489c);
                 if (str != null) {
                     return b(fVar, q0Var, str, bundle);
                 }
@@ -75,7 +75,7 @@ public abstract class e0 {
         i0 e10 = e(q0Var);
         b0 b0Var = (b0) e10.e().get(str);
         if (b0Var == null) {
-            b0 a10 = b0.f4461c.a(d10.c(str), bundle);
+            b0 a10 = b0.f4505c.a(d10.c(str), bundle);
             e10.e().put(str, a10);
             return a10;
         }
@@ -85,7 +85,7 @@ public abstract class e0 {
     public static final void c(u3.f fVar) {
         Intrinsics.checkNotNullParameter(fVar, "<this>");
         Lifecycle.State b10 = fVar.getLifecycle().b();
-        if (b10 != Lifecycle.State.f4393e && b10 != Lifecycle.State.f4394i) {
+        if (b10 != Lifecycle.State.f4437e && b10 != Lifecycle.State.f4438i) {
             throw new IllegalArgumentException("Failed requirement.");
         }
         if (fVar.getSavedStateRegistry().b("androidx.lifecycle.internal.SavedStateHandlesProvider") == null) {
@@ -112,6 +112,6 @@ public abstract class e0 {
 
     public static final i0 e(q0 q0Var) {
         Intrinsics.checkNotNullParameter(q0Var, "<this>");
-        return (i0) ViewModelProvider.b.c(ViewModelProvider.f4444b, q0Var, new a(), null, 4, null).b("androidx.lifecycle.internal.SavedStateHandlesVM", Reflection.getOrCreateKotlinClass(i0.class));
+        return (i0) ViewModelProvider.b.c(ViewModelProvider.f4488b, q0Var, new a(), null, 4, null).b("androidx.lifecycle.internal.SavedStateHandlesVM", Reflection.getOrCreateKotlinClass(i0.class));
     }
 }

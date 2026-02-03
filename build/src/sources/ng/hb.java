@@ -3,7 +3,7 @@ package ng;
 final class hb extends jb {
 
     /* renamed from: t  reason: collision with root package name */
-    private static final hb f41288t = new hb("unusedTag");
+    private static final hb f41151t = new hb("unusedTag");
 
     private hb(String str) {
         super();

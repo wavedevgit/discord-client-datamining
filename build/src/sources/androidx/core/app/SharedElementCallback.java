@@ -18,7 +18,7 @@ import java.util.Map;
 public abstract class SharedElementCallback {
 
     /* renamed from: a  reason: collision with root package name */
-    private Matrix f3064a;
+    private Matrix f3108a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -74,15 +74,15 @@ public abstract class SharedElementCallback {
             float min = Math.min(1.0f, 1048576.0f / (round * round2));
             int i10 = (int) (round * min);
             int i11 = (int) (round2 * min);
-            if (this.f3064a == null) {
-                this.f3064a = new Matrix();
+            if (this.f3108a == null) {
+                this.f3108a = new Matrix();
             }
-            this.f3064a.set(matrix);
-            this.f3064a.postTranslate(-rectF.left, -rectF.top);
-            this.f3064a.postScale(min, min);
+            this.f3108a.set(matrix);
+            this.f3108a.postTranslate(-rectF.left, -rectF.top);
+            this.f3108a.postScale(min, min);
             Bitmap createBitmap = Bitmap.createBitmap(i10, i11, Bitmap.Config.ARGB_8888);
             Canvas canvas = new Canvas(createBitmap);
-            canvas.concat(this.f3064a);
+            canvas.concat(this.f3108a);
             view.draw(canvas);
             return createBitmap;
         }

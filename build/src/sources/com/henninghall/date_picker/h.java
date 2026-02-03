@@ -31,15 +31,15 @@ public abstract class h {
                 return f.b(str.substring(0, str.indexOf("_")), cVar);
             }
         } catch (f.d | IndexOutOfBoundsException unused2) {
-            return (String) f.f17613a.get(cVar);
+            return (String) f.f17242a.get(cVar);
         }
     }
 
     public static Locale f(String str) {
         try {
-            return yu.a.e(str);
+            return zu.a.e(str);
         } catch (Exception unused) {
-            return yu.a.e(str.substring(0, str.indexOf("_")));
+            return zu.a.e(str.substring(0, str.indexOf("_")));
         }
     }
 

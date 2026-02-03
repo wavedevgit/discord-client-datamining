@@ -9,17 +9,17 @@ import android.view.MotionEvent;
 public final class GestureDetectorCompat {
 
     /* renamed from: a  reason: collision with root package name */
-    private final GestureDetector f3238a;
+    private final GestureDetector f3282a;
 
     public GestureDetectorCompat(Context context, GestureDetector.OnGestureListener onGestureListener) {
         this(context, onGestureListener, null);
     }
 
     public boolean a(MotionEvent motionEvent) {
-        return this.f3238a.onTouchEvent(motionEvent);
+        return this.f3282a.onTouchEvent(motionEvent);
     }
 
     public GestureDetectorCompat(Context context, GestureDetector.OnGestureListener onGestureListener, Handler handler) {
-        this.f3238a = new GestureDetector(context, onGestureListener, handler);
+        this.f3282a = new GestureDetector(context, onGestureListener, handler);
     }
 }

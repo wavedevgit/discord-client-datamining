@@ -3,9 +3,9 @@ package com.discord.portals.from_native;
 import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 import com.discord.portals.from_native.PortalFromNativeModule;
 import com.discord.reactevents.ReactEvents;
-import gs.g;
-import gs.i0;
-import gs.m0;
+import hs.g;
+import hs.i0;
+import hs.m0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -44,7 +44,7 @@ public final class PortalFromNativeModule$ViewManager$setPortal$1 extends k impl
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = or.b.f();
+            Object f10 = pr.b.f();
             int i10 = this.label;
             if (i10 != 0) {
                 if (i10 == 1) {
@@ -59,12 +59,12 @@ public final class PortalFromNativeModule$ViewManager$setPortal$1 extends k impl
                     return f10;
                 }
             }
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
@@ -82,7 +82,7 @@ public final class PortalFromNativeModule$ViewManager$setPortal$1 extends k impl
         ReactEvents reactEvents;
         reactEvents = viewManager.reactEvents;
         reactEvents.emitEvent(portalHolderViewGroup, new PortalFromNativeModule.OnPortalViewLoadedEvent(d10));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -92,7 +92,7 @@ public final class PortalFromNativeModule$ViewManager$setPortal$1 extends k impl
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        Object f10 = or.b.f();
+        Object f10 = pr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -121,11 +121,11 @@ public final class PortalFromNativeModule$ViewManager$setPortal$1 extends k impl
                 return invokeSuspend$lambda$0;
             }
         });
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((PortalFromNativeModule$ViewManager$setPortal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((PortalFromNativeModule$ViewManager$setPortal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

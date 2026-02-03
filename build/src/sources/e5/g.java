@@ -13,13 +13,13 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class g implements i {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f22634c = new a(null);
+    public static final a f22666c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final LinkedHashMap f22635a = new LinkedHashMap();
+    private final LinkedHashMap f22667a = new LinkedHashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private int f22636b;
+    private int f22668b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -35,44 +35,44 @@ public final class g implements i {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f22637a;
+        private final int f22669a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final WeakReference f22638b;
+        private final WeakReference f22670b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Map f22639c;
+        private final Map f22671c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f22640d;
+        private final int f22672d;
 
         public b(int i10, WeakReference weakReference, Map map, int i11) {
-            this.f22637a = i10;
-            this.f22638b = weakReference;
-            this.f22639c = map;
-            this.f22640d = i11;
+            this.f22669a = i10;
+            this.f22670b = weakReference;
+            this.f22671c = map;
+            this.f22672d = i11;
         }
 
         public final WeakReference a() {
-            return this.f22638b;
+            return this.f22670b;
         }
 
         public final Map b() {
-            return this.f22639c;
+            return this.f22671c;
         }
 
         public final int c() {
-            return this.f22637a;
+            return this.f22669a;
         }
 
         public final int d() {
-            return this.f22640d;
+            return this.f22672d;
         }
     }
 
     private final void f() {
-        int i10 = this.f22636b;
-        this.f22636b = i10 + 1;
+        int i10 = this.f22668b;
+        this.f22668b = i10 + 1;
         if (i10 >= 10) {
             e();
         }
@@ -86,11 +86,11 @@ public final class g implements i {
     }
 
     @Override // e5.i
-    public synchronized c.C0288c b(c.b bVar) {
-        c.C0288c c0288c;
+    public synchronized c.C0299c b(c.b bVar) {
+        c.C0299c c0299c;
         try {
-            ArrayList arrayList = (ArrayList) this.f22635a.get(bVar);
-            c.C0288c c0288c2 = null;
+            ArrayList arrayList = (ArrayList) this.f22667a.get(bVar);
+            c.C0299c c0299c2 = null;
             if (arrayList == null) {
                 return null;
             }
@@ -103,18 +103,18 @@ public final class g implements i {
                 b bVar2 = (b) arrayList.get(i10);
                 Bitmap bitmap = (Bitmap) bVar2.a().get();
                 if (bitmap != null) {
-                    c0288c = new c.C0288c(bitmap, bVar2.b());
+                    c0299c = new c.C0299c(bitmap, bVar2.b());
                 } else {
-                    c0288c = null;
+                    c0299c = null;
                 }
-                if (c0288c != null) {
-                    c0288c2 = c0288c;
+                if (c0299c != null) {
+                    c0299c2 = c0299c;
                     break;
                 }
                 i10++;
             }
             f();
-            return c0288c2;
+            return c0299c2;
         } catch (Throwable th2) {
             throw th2;
         }
@@ -122,14 +122,14 @@ public final class g implements i {
 
     @Override // e5.i
     public synchronized void c() {
-        this.f22636b = 0;
-        this.f22635a.clear();
+        this.f22668b = 0;
+        this.f22667a.clear();
     }
 
     @Override // e5.i
     public synchronized void d(c.b bVar, Bitmap bitmap, Map map, int i10) {
         try {
-            LinkedHashMap linkedHashMap = this.f22635a;
+            LinkedHashMap linkedHashMap = this.f22667a;
             Object obj = linkedHashMap.get(bVar);
             if (obj == null) {
                 obj = new ArrayList();
@@ -166,8 +166,8 @@ public final class g implements i {
     public final void e() {
         Bitmap bitmap;
         WeakReference a10;
-        this.f22636b = 0;
-        Iterator it = this.f22635a.values().iterator();
+        this.f22668b = 0;
+        Iterator it = this.f22667a.values().iterator();
         while (it.hasNext()) {
             ArrayList arrayList = (ArrayList) it.next();
             if (arrayList.size() <= 1) {

@@ -3,10 +3,10 @@ package com.appsflyer;
 import com.appsflyer.internal.AFc1jSDK;
 import com.appsflyer.internal.AFg1cSDK;
 import com.appsflyer.internal.AFh1ySDK;
-import ir.l;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
+import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -72,20 +72,20 @@ public final class AFLogger extends AFh1ySDK {
         ((Set) getMediationNetwork.getValue()).removeAll(i.f1(aFh1ySDKArr));
     }
 
-    @ir.c
+    @jr.c
     public static final void afDebugLog(@NotNull String str, boolean z10) {
         Intrinsics.checkNotNullParameter(str, "");
         INSTANCE.d(AFg1cSDK.OTHER, str, z10);
     }
 
-    @ir.c
+    @jr.c
     public static final void afErrorLog(@NotNull String str, @NotNull Throwable th2, boolean z10, boolean z11, boolean z12) {
         Intrinsics.checkNotNullParameter(str, "");
         Intrinsics.checkNotNullParameter(th2, "");
         AFh1ySDK.e$default(INSTANCE, AFg1cSDK.OTHER, str, th2, z10, z11, z12, false, 64, null);
     }
 
-    @ir.c
+    @jr.c
     public static final void afErrorLogForExcManagerOnly(String str, Throwable th2) {
         AFLogger aFLogger = INSTANCE;
         AFg1cSDK aFg1cSDK = AFg1cSDK.OTHER;
@@ -96,31 +96,31 @@ public final class AFLogger extends AFh1ySDK {
         AFh1ySDK.e$default(aFLogger, aFg1cSDK, str2, th2, false, false, true, false, 64, null);
     }
 
-    @ir.c
+    @jr.c
     public static final void afInfoLog(@NotNull String str, boolean z10) {
         Intrinsics.checkNotNullParameter(str, "");
         INSTANCE.i(AFg1cSDK.OTHER, str, z10);
     }
 
-    @ir.c
+    @jr.c
     public static final void afLogForce(@NotNull String str) {
         Intrinsics.checkNotNullParameter(str, "");
         INSTANCE.force(AFg1cSDK.OTHER, str);
     }
 
-    @ir.c
+    @jr.c
     public static final void afRDLog(@NotNull String str) {
         Intrinsics.checkNotNullParameter(str, "");
         INSTANCE.v(AFg1cSDK.OTHER, str, true);
     }
 
-    @ir.c
+    @jr.c
     public static final void afVerboseLog(@NotNull String str) {
         Intrinsics.checkNotNullParameter(str, "");
         INSTANCE.v(AFg1cSDK.OTHER, str, false);
     }
 
-    @ir.c
+    @jr.c
     public static final void afWarnLog(@NotNull String str, boolean z10) {
         Intrinsics.checkNotNullParameter(str, "");
         INSTANCE.w(AFg1cSDK.OTHER, str, z10);
@@ -156,7 +156,7 @@ public final class AFLogger extends AFh1ySDK {
             @Override // kotlin.jvm.functions.Function1
             public final /* synthetic */ Object invoke(Object obj) {
                 getMonetizationNetwork((AFh1ySDK) obj);
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
         }));
     }
@@ -180,7 +180,7 @@ public final class AFLogger extends AFh1ySDK {
             @Override // kotlin.jvm.functions.Function1
             public final /* synthetic */ Object invoke(Object obj) {
                 getCurrencyIso4217Code((AFh1ySDK) obj);
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
         }));
     }
@@ -203,7 +203,7 @@ public final class AFLogger extends AFh1ySDK {
             @Override // kotlin.jvm.functions.Function1
             public final /* synthetic */ Object invoke(Object obj) {
                 getMediationNetwork((AFh1ySDK) obj);
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
         }));
     }
@@ -226,7 +226,7 @@ public final class AFLogger extends AFh1ySDK {
             @Override // kotlin.jvm.functions.Function1
             public final /* synthetic */ Object invoke(Object obj) {
                 AFAdRevenueData((AFh1ySDK) obj);
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
         }));
     }
@@ -269,7 +269,7 @@ public final class AFLogger extends AFh1ySDK {
             @Override // kotlin.jvm.functions.Function1
             public final /* synthetic */ Object invoke(Object obj) {
                 AFAdRevenueData((AFh1ySDK) obj);
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
         }));
     }
@@ -292,30 +292,30 @@ public final class AFLogger extends AFh1ySDK {
             @Override // kotlin.jvm.functions.Function1
             public final /* synthetic */ Object invoke(Object obj) {
                 getMonetizationNetwork((AFh1ySDK) obj);
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
         }));
     }
 
-    @ir.c
+    @jr.c
     public static final void afDebugLog(@NotNull String str) {
         Intrinsics.checkNotNullParameter(str, "");
         INSTANCE.d(AFg1cSDK.OTHER, str, true);
     }
 
-    @ir.c
+    @jr.c
     public static final void afInfoLog(@NotNull String str) {
         Intrinsics.checkNotNullParameter(str, "");
         INSTANCE.i(AFg1cSDK.OTHER, str, true);
     }
 
-    @ir.c
+    @jr.c
     public static final void afWarnLog(@NotNull String str) {
         Intrinsics.checkNotNullParameter(str, "");
         AFh1ySDK.w$default(INSTANCE, AFg1cSDK.OTHER, str, false, 4, null);
     }
 
-    @ir.c
+    @jr.c
     public static final void afErrorLog(String str, Throwable th2) {
         AFLogger aFLogger = INSTANCE;
         AFg1cSDK aFg1cSDK = AFg1cSDK.OTHER;
@@ -326,7 +326,7 @@ public final class AFLogger extends AFh1ySDK {
         AFh1ySDK.e$default(aFLogger, aFg1cSDK, str2, th2, false, false, false, false, 120, null);
     }
 
-    @ir.c
+    @jr.c
     public static final void afErrorLogForExcManagerOnly(String str, Throwable th2, boolean z10) {
         AFLogger aFLogger = INSTANCE;
         AFg1cSDK aFg1cSDK = AFg1cSDK.OTHER;
@@ -337,7 +337,7 @@ public final class AFLogger extends AFh1ySDK {
         AFh1ySDK.e$default(aFLogger, aFg1cSDK, str2, th2, false, false, !z10, false, 64, null);
     }
 
-    @ir.c
+    @jr.c
     public static final void afErrorLog(String str, Throwable th2, boolean z10) {
         AFLogger aFLogger = INSTANCE;
         AFg1cSDK aFg1cSDK = AFg1cSDK.OTHER;
@@ -348,7 +348,7 @@ public final class AFLogger extends AFh1ySDK {
         AFh1ySDK.e$default(aFLogger, aFg1cSDK, str2, th2, false, z10, false, false, 104, null);
     }
 
-    @ir.c
+    @jr.c
     public static final void afErrorLog(String str, Throwable th2, boolean z10, boolean z11) {
         AFLogger aFLogger = INSTANCE;
         AFg1cSDK aFg1cSDK = AFg1cSDK.OTHER;

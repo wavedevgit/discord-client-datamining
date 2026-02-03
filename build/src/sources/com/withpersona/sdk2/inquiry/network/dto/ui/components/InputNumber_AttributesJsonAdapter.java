@@ -66,9 +66,9 @@ public final class InputNumber_AttributesJsonAdapter extends h {
         JsonLogicBoolean jsonLogicBoolean2 = null;
         Integer num = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -100,17 +100,17 @@ public final class InputNumber_AttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.l();
-            writer.A0("prefill");
+            writer.t0("prefill");
             this.nullableNumberAdapter.toJson(writer, attributes.getPrefill());
-            writer.A0("label");
+            writer.t0("label");
             this.nullableStringAdapter.toJson(writer, attributes.getLabel());
-            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.t0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableStringAdapter.toJson(writer, attributes.getPlaceholder());
-            writer.A0(ViewProps.HIDDEN);
+            writer.t0(ViewProps.HIDDEN);
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getHidden());
-            writer.A0("disabled");
+            writer.t0("disabled");
             this.nullableJsonLogicBooleanAdapter.toJson(writer, attributes.getDisabled());
-            writer.A0("precision");
+            writer.t0("precision");
             this.nullableIntAdapter.toJson(writer, attributes.getPrecision());
             writer.E();
             return;

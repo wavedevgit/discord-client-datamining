@@ -9,15 +9,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/guild_onboarding/native/images',
-        'width': 45,
-        'height': 34.5,
+        'httpServerLocation': '/assets/design/components/LottieIcon/native/generated/lotties',
         'scales': null,
-        'hash': '5048f3c6d8b18fc7809b7e99f1c62a70',
-        'name': 'stamp-wave',
-        'type': 'png'
+        'hash': '99f159454017c9a8930c299b70fe8f24',
+        'name': 'MessagesTab',
+        'type': 'lottie'
     };
-    var4 = [2, 3];
+    var4 = [1];
     var1.scales = var4;
     var2 = var2.bind(var3)(var1);
     var1 = module;

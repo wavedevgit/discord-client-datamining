@@ -6,19 +6,19 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class e {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f53864d = new a(null);
+    public static final a f53839d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final int f53865e = 8;
+    public static final int f53840e = 8;
 
     /* renamed from: a  reason: collision with root package name */
-    private h f53866a;
+    private h f53841a;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f53867b;
+    private long f53842b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f53868c;
+    private int f53843c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -39,7 +39,7 @@ public abstract class e {
     }
 
     public h a() {
-        return this.f53866a;
+        return this.f53841a;
     }
 
     public abstract Function1 b();
@@ -47,7 +47,7 @@ public abstract class e {
     public abstract boolean c();
 
     public long d() {
-        return this.f53867b;
+        return this.f53842b;
     }
 
     public abstract int e();
@@ -59,8 +59,8 @@ public abstract class e {
     public abstract void h(int i10);
 
     private e(long j10, h hVar) {
-        this.f53866a = hVar;
-        this.f53867b = j10;
-        this.f53868c = j10 != k.c() ? k.n(j10, a()) : -1;
+        this.f53841a = hVar;
+        this.f53842b = j10;
+        this.f53843c = j10 != k.c() ? k.n(j10, a()) : -1;
     }
 }

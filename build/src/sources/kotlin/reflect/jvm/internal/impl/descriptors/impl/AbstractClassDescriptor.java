@@ -30,16 +30,16 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Name f33686d;
+    private final Name f33462d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected final NotNullLazyValue f33687e;
+    protected final NotNullLazyValue f33463e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final NotNullLazyValue f33688i;
+    private final NotNullLazyValue f33464i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final NotNullLazyValue f33689o;
+    private final NotNullLazyValue f33465o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -48,8 +48,8 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: kotlin.reflect.jvm.internal.impl.descriptors.impl.AbstractClassDescriptor$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public class C0451a implements Function1 {
-            C0451a() {
+        public class C0443a implements Function1 {
+            C0443a() {
             }
 
             @Override // kotlin.jvm.functions.Function1
@@ -57,7 +57,7 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
             public SimpleType invoke(KotlinTypeRefiner kotlinTypeRefiner) {
                 ClassifierDescriptor refineDescriptor = kotlinTypeRefiner.refineDescriptor(AbstractClassDescriptor.this);
                 if (refineDescriptor == null) {
-                    return (SimpleType) AbstractClassDescriptor.this.f33687e.invoke();
+                    return (SimpleType) AbstractClassDescriptor.this.f33463e.invoke();
                 }
                 if (refineDescriptor instanceof TypeAliasDescriptor) {
                     return KotlinTypeFactory.computeExpandedType((TypeAliasDescriptor) refineDescriptor, TypeUtils.getDefaultTypeProjections(refineDescriptor.getTypeConstructor().getParameters()));
@@ -76,7 +76,7 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
         /* renamed from: a */
         public SimpleType invoke() {
             AbstractClassDescriptor abstractClassDescriptor = AbstractClassDescriptor.this;
-            return TypeUtils.makeUnsubstitutedType(abstractClassDescriptor, abstractClassDescriptor.getUnsubstitutedMemberScope(), new C0451a());
+            return TypeUtils.makeUnsubstitutedType(abstractClassDescriptor, abstractClassDescriptor.getUnsubstitutedMemberScope(), new C0443a());
         }
     }
 
@@ -111,10 +111,10 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
         if (name == null) {
             a(1);
         }
-        this.f33686d = name;
-        this.f33687e = storageManager.createLazyValue(new a());
-        this.f33688i = storageManager.createLazyValue(new b());
-        this.f33689o = storageManager.createLazyValue(new c());
+        this.f33462d = name;
+        this.f33463e = storageManager.createLazyValue(new a());
+        this.f33464i = storageManager.createLazyValue(new b());
+        this.f33465o = storageManager.createLazyValue(new c());
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -232,7 +232,7 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
     @NotNull
     public SimpleType getDefaultType() {
-        SimpleType simpleType = (SimpleType) this.f33687e.invoke();
+        SimpleType simpleType = (SimpleType) this.f33463e.invoke();
         if (simpleType == null) {
             a(20);
         }
@@ -261,7 +261,7 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.Named
     @NotNull
     public Name getName() {
-        Name name = this.f33686d;
+        Name name = this.f33462d;
         if (name == null) {
             a(2);
         }
@@ -277,7 +277,7 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public ReceiverParameterDescriptor getThisAsReceiverParameter() {
-        ReceiverParameterDescriptor receiverParameterDescriptor = (ReceiverParameterDescriptor) this.f33689o.invoke();
+        ReceiverParameterDescriptor receiverParameterDescriptor = (ReceiverParameterDescriptor) this.f33465o.invoke();
         if (receiverParameterDescriptor == null) {
             a(5);
         }
@@ -287,7 +287,7 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public MemberScope getUnsubstitutedInnerClassesScope() {
-        MemberScope memberScope = (MemberScope) this.f33688i.invoke();
+        MemberScope memberScope = (MemberScope) this.f33464i.invoke();
         if (memberScope == null) {
             a(4);
         }

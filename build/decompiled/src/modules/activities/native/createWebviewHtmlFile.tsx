@@ -14,14 +14,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*(arg0) { // Environment: var2
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun64698: for (var _fun64698_ip = 0;;) switch (_fun64698_ip) {
+                _fun64803: for (var _fun64803_ip = 0;;) switch (_fun64803_ip) {
                     case 0:
                         StartGenerator();
                         var1 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun64698_ip = 341;
-                            continue _fun64698
+                            _fun64803_ip = 341;
+                            continue _fun64803
                         }
                     case 13:
                         var10 = var1.iFrameUri;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 53:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun64698_ip = 338;
-                            continue _fun64698
+                            _fun64803_ip = 338;
+                            continue _fun64803
                         }
                     case 62:
                         var6 = 'discord_activity_data/activity.html';
@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3.insets = var7;
                         var3.messageForDisallowedNavigationError = var2;
                         var2 = function(arg0) { // Environment: var2
-                            _fun64699: for (var _fun64699_ip = 0;;) switch (_fun64699_ip) {
+                            _fun64804: for (var _fun64804_ip = 0;;) switch (_fun64804_ip) {
                                 case 0:
                                     var0 = arg0;
                                     var11 = var0.iFrameUri;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var8 = '';
                                     var7 = var8;
                                     if (!var1) {
-                                        _fun64699_ip = 168;
-                                        continue _fun64699
+                                        _fun64804_ip = 168;
+                                        continue _fun64804
                                     }
                                 case 78:
                                     var3 = _closure1_slot5;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var0 = null;
                                     var0 = var0 != var6;
                                     if (!var0) {
-                                        _fun64699_ip = 250;
-                                        continue _fun64699
+                                        _fun64804_ip = 250;
+                                        continue _fun64804
                                     }
                                 case 177:
                                     var0 = global;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var3.isAndroid;
                         var2 = var2.bind(var3)();
                         if (var2) {
-                            _fun64698_ip = 201;
-                            continue _fun64698
+                            _fun64803_ip = 201;
+                            continue _fun64803
                         }
                     case 143:
                         var2 = _closure1_slot4;
@@ -167,8 +167,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = var3;
                         var3 = var2;
                         if (!var8) {
-                            _fun64698_ip = 291;
-                            continue _fun64698
+                            _fun64803_ip = 291;
+                            continue _fun64803
                         }
                     case 198: // try_end0
                         return var2;
@@ -182,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = var2 == var8;
                         var2 = undefined;
                         if (var8) {
-                            _fun64698_ip = 278;
-                            continue _fun64698
+                            _fun64803_ip = 278;
+                            continue _fun64803
                         }
                     case 232:
                         var8 = _closure1_slot1;
@@ -205,8 +205,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 4);
                         var3 = var2;
                         if (var4) {
-                            _fun64698_ip = 294;
-                            continue _fun64698
+                            _fun64803_ip = 294;
+                            continue _fun64803
                         }
                     case 291: // try_end1
                         return var3;
@@ -262,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.NativeModules;
     var _closure1_slot4 = var3;
     var3 = function arg0() {
-        _fun64700: for (var _fun64700_ip = 0;;) switch (_fun64700_ip) {
+        _fun64805: for (var _fun64805_ip = 0;;) switch (_fun64805_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.insets;
@@ -270,8 +270,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var1.isIframeLoadedVarName;
                 var1 = null;
                 if (!(var1 == var0)) {
-                    _fun64700_ip = 37;
-                    continue _fun64700
+                    _fun64805_ip = 37;
+                    continue _fun64805
                 }
             case 27:
                 var0 = {

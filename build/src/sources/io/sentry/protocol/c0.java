@@ -15,37 +15,37 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class c0 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private Long f30326d;
+    private Long f29892d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Integer f30327e;
+    private Integer f29893e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30328i;
+    private String f29894i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f30329o;
+    private String f29895o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Boolean f30330p;
+    private Boolean f29896p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Boolean f30331q;
+    private Boolean f29897q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Boolean f30332r;
+    private Boolean f29898r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Boolean f30333s;
+    private Boolean f29899s;
 
     /* renamed from: t  reason: collision with root package name */
-    private b0 f30334t;
+    private b0 f29900t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Map f30335u;
+    private Map f29901u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Map f30336v;
+    private Map f29902v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -56,66 +56,66 @@ public final class c0 implements w1 {
             e3Var.r();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
+                String m02 = e3Var.m0();
+                m02.getClass();
                 char c10 = 65535;
-                switch (l02.hashCode()) {
+                switch (m02.hashCode()) {
                     case -1339353468:
-                        if (l02.equals("daemon")) {
+                        if (m02.equals("daemon")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -1165461084:
-                        if (l02.equals("priority")) {
+                        if (m02.equals("priority")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case -502917346:
-                        if (l02.equals("held_locks")) {
+                        if (m02.equals("held_locks")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case 3355:
-                        if (l02.equals(StackTraceHelper.ID_KEY)) {
+                        if (m02.equals(StackTraceHelper.ID_KEY)) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 3343801:
-                        if (l02.equals("main")) {
+                        if (m02.equals("main")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 3373707:
-                        if (l02.equals(StackTraceHelper.NAME_KEY)) {
+                        if (m02.equals(StackTraceHelper.NAME_KEY)) {
                             c10 = 5;
                             break;
                         }
                         break;
                     case 109757585:
-                        if (l02.equals("state")) {
+                        if (m02.equals("state")) {
                             c10 = 6;
                             break;
                         }
                         break;
                     case 1025385094:
-                        if (l02.equals("crashed")) {
+                        if (m02.equals("crashed")) {
                             c10 = 7;
                             break;
                         }
                         break;
                     case 1126940025:
-                        if (l02.equals("current")) {
+                        if (m02.equals("current")) {
                             c10 = '\b';
                             break;
                         }
                         break;
                     case 2055832509:
-                        if (l02.equals("stacktrace")) {
+                        if (m02.equals("stacktrace")) {
                             c10 = '\t';
                             break;
                         }
@@ -123,45 +123,45 @@ public final class c0 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        c0Var.f30332r = e3Var.v0();
+                        c0Var.f29898r = e3Var.x0();
                         break;
                     case 1:
-                        c0Var.f30327e = e3Var.j1();
+                        c0Var.f29893e = e3Var.k1();
                         break;
                     case 2:
                         Map u12 = e3Var.u1(iLogger, new w6.a());
                         if (u12 == null) {
                             break;
                         } else {
-                            c0Var.f30335u = new HashMap(u12);
+                            c0Var.f29901u = new HashMap(u12);
                             break;
                         }
                     case 3:
-                        c0Var.f30326d = e3Var.m1();
+                        c0Var.f29892d = e3Var.m1();
                         break;
                     case 4:
-                        c0Var.f30333s = e3Var.v0();
+                        c0Var.f29899s = e3Var.x0();
                         break;
                     case 5:
-                        c0Var.f30328i = e3Var.r1();
+                        c0Var.f29894i = e3Var.r1();
                         break;
                     case 6:
-                        c0Var.f30329o = e3Var.r1();
+                        c0Var.f29895o = e3Var.r1();
                         break;
                     case 7:
-                        c0Var.f30330p = e3Var.v0();
+                        c0Var.f29896p = e3Var.x0();
                         break;
                     case '\b':
-                        c0Var.f30331q = e3Var.v0();
+                        c0Var.f29897q = e3Var.x0();
                         break;
                     case '\t':
-                        c0Var.f30334t = (b0) e3Var.G0(iLogger, new b0.a());
+                        c0Var.f29900t = (b0) e3Var.H0(iLogger, new b0.a());
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, l02);
+                        e3Var.v1(iLogger, concurrentHashMap, m02);
                         break;
                 }
             }
@@ -172,82 +172,82 @@ public final class c0 implements w1 {
     }
 
     public void A(Map map) {
-        this.f30336v = map;
+        this.f29902v = map;
     }
 
     public Map k() {
-        return this.f30335u;
+        return this.f29901u;
     }
 
     public Long l() {
-        return this.f30326d;
+        return this.f29892d;
     }
 
     public String m() {
-        return this.f30328i;
+        return this.f29894i;
     }
 
     public b0 n() {
-        return this.f30334t;
+        return this.f29900t;
     }
 
     public Boolean o() {
-        return this.f30331q;
+        return this.f29897q;
     }
 
     public Boolean p() {
-        return this.f30333s;
+        return this.f29899s;
     }
 
     public void q(Boolean bool) {
-        this.f30330p = bool;
+        this.f29896p = bool;
     }
 
     public void r(Boolean bool) {
-        this.f30331q = bool;
+        this.f29897q = bool;
     }
 
     public void s(Boolean bool) {
-        this.f30332r = bool;
+        this.f29898r = bool;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30326d != null) {
-            f3Var.e(StackTraceHelper.ID_KEY).i(this.f30326d);
+        if (this.f29892d != null) {
+            f3Var.e(StackTraceHelper.ID_KEY).i(this.f29892d);
         }
-        if (this.f30327e != null) {
-            f3Var.e("priority").i(this.f30327e);
+        if (this.f29893e != null) {
+            f3Var.e("priority").i(this.f29893e);
         }
-        if (this.f30328i != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f30328i);
+        if (this.f29894i != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29894i);
         }
-        if (this.f30329o != null) {
-            f3Var.e("state").f(this.f30329o);
+        if (this.f29895o != null) {
+            f3Var.e("state").f(this.f29895o);
         }
-        if (this.f30330p != null) {
-            f3Var.e("crashed").k(this.f30330p);
+        if (this.f29896p != null) {
+            f3Var.e("crashed").k(this.f29896p);
         }
-        if (this.f30331q != null) {
-            f3Var.e("current").k(this.f30331q);
+        if (this.f29897q != null) {
+            f3Var.e("current").k(this.f29897q);
         }
-        if (this.f30332r != null) {
-            f3Var.e("daemon").k(this.f30332r);
+        if (this.f29898r != null) {
+            f3Var.e("daemon").k(this.f29898r);
         }
-        if (this.f30333s != null) {
-            f3Var.e("main").k(this.f30333s);
+        if (this.f29899s != null) {
+            f3Var.e("main").k(this.f29899s);
         }
-        if (this.f30334t != null) {
-            f3Var.e("stacktrace").j(iLogger, this.f30334t);
+        if (this.f29900t != null) {
+            f3Var.e("stacktrace").j(iLogger, this.f29900t);
         }
-        if (this.f30335u != null) {
-            f3Var.e("held_locks").j(iLogger, this.f30335u);
+        if (this.f29901u != null) {
+            f3Var.e("held_locks").j(iLogger, this.f29901u);
         }
-        Map map = this.f30336v;
+        Map map = this.f29902v;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30336v.get(str);
+                Object obj = this.f29902v.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -256,30 +256,30 @@ public final class c0 implements w1 {
     }
 
     public void t(Map map) {
-        this.f30335u = map;
+        this.f29901u = map;
     }
 
     public void u(Long l10) {
-        this.f30326d = l10;
+        this.f29892d = l10;
     }
 
     public void v(Boolean bool) {
-        this.f30333s = bool;
+        this.f29899s = bool;
     }
 
     public void w(String str) {
-        this.f30328i = str;
+        this.f29894i = str;
     }
 
     public void x(Integer num) {
-        this.f30327e = num;
+        this.f29893e = num;
     }
 
     public void y(b0 b0Var) {
-        this.f30334t = b0Var;
+        this.f29900t = b0Var;
     }
 
     public void z(String str) {
-        this.f30329o = str;
+        this.f29895o = str;
     }
 }

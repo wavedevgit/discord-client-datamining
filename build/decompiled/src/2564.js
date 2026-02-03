@@ -1,229 +1,260 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun21858: for (var _fun21858_ip = 0;;) switch (_fun21858_ip) {
+    _fun21871: for (var _fun21871_ip = 0;;) switch (_fun21871_ip) {
         case 0:
             var1 = exports;
+            var0 = function arg0() {
+                _fun21872: for (var _fun21872_ip = 0;;) switch (_fun21872_ip) {
+                    case 0:
+                        var1 = global;
+                        var2 = var1.Symbol;
+                        var3 = 'function';
+                        var2 = typeof var2;
+                        if (!(var3 === var2)) {
+                            _fun21872_ip = 43;
+                            continue _fun21872
+                        }
+                    case 20:
+                        var1 = var1.Symbol;
+                        var1 = var1.iterator;
+                        var2 = 'symbol';
+                        var1 = typeof var1;
+                        if (!(var2 !== var1)) {
+                            _fun21872_ip = 50;
+                            continue _fun21872
+                        }
+                    case 43:
+                        var2 = function arg0() {
+                            _fun21874: for (var _fun21874_ip = 0;;) switch (_fun21874_ip) {
+                                case 0:
+                                    var1 = arg0;
+                                    if (!var1) {
+                                        _fun21874_ip = 58;
+                                        continue _fun21874
+                                    }
+                                case 6:
+                                    var0 = global;
+                                    var2 = var0.Symbol;
+                                    var3 = 'function';
+                                    var2 = typeof var2;
+                                    if (!(var3 === var2)) {
+                                        _fun21874_ip = 58;
+                                        continue _fun21874
+                                    }
+                                case 24:
+                                    var3 = var1.constructor;
+                                    var2 = var0.Symbol;
+                                    if (!(var3 === var2)) {
+                                        _fun21874_ip = 58;
+                                        continue _fun21874
+                                    }
+                                case 39:
+                                    var0 = var0.Symbol;
+                                    var2 = var0.prototype;
+                                    var0 = 'symbol';
+                                    if (!(var1 === var2)) {
+                                        _fun21874_ip = 61;
+                                        continue _fun21874
+                                    }
+                                case 58:
+                                    var0 = typeof var1;
+                                case 61:
+                                    return var0;
+                            }
+                        };
+                        _fun21872_ip = 55;
+                        continue _fun21872;
+                    case 50:
+                        var2 = function arg0() {
+                            var0 = arg0;
+                            var0 = typeof var0;
+                            return var0;
+                        };
+                    case 55:
+                        _closure1_slot1 = var2;
+                        var1 = undefined;
+                        var0 = arg0;
+                        var0 = var2.bind(var1)(var0);
+                        return var0;
+                }
+            };
+            var _closure1_slot1 = var0;
             var0 = global;
-            var4 = var0.Object;
-            var3 = var4.defineProperty;
+            var5 = var0.Object;
+            var4 = var5.defineProperty;
             var2 = {};
             var0 = true;
             var2.value = var0;
             var0 = '__esModule';
-            var0 = var3.bind(var4)(var1, var0, var2);
-            var0 = undefined;
-            var1.default = var0;
-            var3 = dependencyMap;
-            var2 = 0;
-            var3 = var3[var2];
-            var2 = require;
-            var4 = var2.bind(var0)(var3);
-            if (!var4) {
-                _fun21858_ip = 77;
-                continue _fun21858
-            }
-        case 65:
-            var2 = var4.__esModule;
-            var3 = var4;
-            if (var2) {
-                _fun21858_ip = 86;
-                continue _fun21858
-            }
-        case 77:
-            var2 = {};
-            var2.default = var4;
-            var3 = var2;
-        case 86:
-            var2 = {};
-            var4 = function arg0, arg1() {
-                _fun21859: for (var _fun21859_ip = 0;;) switch (_fun21859_ip) {
+            var0 = var4.bind(var5)(var1, var0, var2);
+            var0 = function arg0() {
+                _fun21875: for (var _fun21875_ip = 0;;) switch (_fun21875_ip) {
                     case 0:
-                        var0 = arg1;
-                        var1 = global;
-                        var2 = var1.Number;
+                        var2 = arg0;
                         var3 = undefined;
-                        var1 = arg0;
-                        var1 = var2.bind(var3)(var1);
-                        var2 = null;
-                        var2 = var2 == var0;
-                        var4 = undefined;
-                        if (var2) {
-                            _fun21859_ip = 38;
-                            continue _fun21859
+                        var1 = undefined;
+                        var4 = _closure1_slot0;
+                        var5 = var4.default;
+                        var1 = arguments;
+                        var4 = var1;
+                        var1 = 1;
+                        var1 = var5.bind(var3)(var1, var4);
+                        var1 = global;
+                        var4 = var1.Object;
+                        var4 = var4.prototype;
+                        var5 = var4.toString;
+                        var4 = var5.call;
+                        var4 = var4.bind(var5)(var2);
+                        var5 = var1.Date;
+                        var5 = var2 instanceof var5;
+                        if (var5) {
+                            _fun21875_ip = 307;
+                            continue _fun21875
                         }
-                    case 32:
-                        var4 = var0.unit;
-                    case 38:
-                        var3 = 'ος';
-                        var2 = 'year';
-                        var0 = var3;
-                        if (!(var2 !== var4)) {
-                            _fun21859_ip = 121;
-                            continue _fun21859
+                    case 77:
+                        var0 = _closure1_slot1;
+                        var3 = var0.bind(var3)(var2);
+                        var0 = 'object';
+                        if (!(var0 === var3)) {
+                            _fun21875_ip = 105;
+                            continue _fun21875
                         }
-                    case 55:
-                        var2 = 'month';
-                        var0 = var3;
-                        if (!(var2 !== var4)) {
-                            _fun21859_ip = 121;
-                            continue _fun21859
+                    case 94:
+                        var0 = '[object Date]';
+                        if (!(var0 !== var4)) {
+                            _fun21875_ip = 307;
+                            continue _fun21875
                         }
-                    case 66:
-                        var2 = 'week';
-                        if (!(var2 !== var4)) {
-                            _fun21859_ip = 112;
-                            continue _fun21859
+                    case 105:
+                        var3 = typeof var2;
+                        var0 = 'number';
+                        if (!(var0 !== var3)) {
+                            _fun21875_ip = 276;
+                            continue _fun21875
                         }
-                    case 74:
-                        var2 = 'dayOfYear';
-                        if (!(var2 !== var4)) {
-                            _fun21859_ip = 112;
-                            continue _fun21859
+                    case 119:
+                        var0 = '[object Number]';
+                        if (!(var0 !== var4)) {
+                            _fun21875_ip = 276;
+                            continue _fun21875
                         }
-                    case 82:
-                        var2 = 'day';
-                        if (!(var2 !== var4)) {
-                            _fun21859_ip = 112;
-                            continue _fun21859
+                    case 130:
+                        var0 = 'string';
+                        var0 = var0 !== var3;
+                        if (!var0) {
+                            _fun21875_ip = 149;
+                            continue _fun21875
                         }
-                    case 90:
-                        var2 = 'hour';
-                        if (!(var2 !== var4)) {
-                            _fun21859_ip = 112;
-                            continue _fun21859
+                    case 141:
+                        var3 = '[object String]';
+                        var0 = var3 !== var4;
+                    case 149:
+                        if (var0) {
+                            _fun21875_ip = 169;
+                            continue _fun21875
                         }
-                    case 98:
-                        var2 = 'ο';
-                        var3 = 'date';
-                        if (!(var3 === var4)) {
-                            _fun21859_ip = 118;
-                            continue _fun21859
+                    case 152:
+                        var3 = var1.console;
+                        var4 = 'undefined';
+                        var3 = typeof var3;
+                        var0 = var4 === var3;
+                    case 169:
+                        if (var0) {
+                            _fun21875_ip = 242;
+                            continue _fun21875
                         }
-                    case 112:
-                        var2 = 'η';
-                    case 118:
-                        var0 = var2;
-                    case 121:
-                        var0 = var1 + var0;
+                    case 172:
+                        var4 = var1.console;
+                        var3 = var4.warn;
+                        var0 = "Starting with v2.0.0-beta.1 date-fns doesn't accept strings as date arguments. Please use `parseISO` to parse strings. See: https://github.com/date-fns/date-fns/blob/master/docs/upgradeGuide.md#string-arguments";
+                        var0 = var3.bind(var4)(var0);
+                        var4 = var1.console;
+                        var3 = var4.warn;
+                        var0 = var1.Error;
+                        var5 = var0.prototype;
+                        var5 = Object.create(var5, {
+                            constructor: {
+                                value: var0
+                            }
+                        });
+                        var8 = var5;
+                        var0 = new var8[var0](var7);
+                        var0 = var0 instanceof Object ? var0 : var5;
+                        var0 = var0.stack;
+                        var0 = var3.bind(var4)(var0);
+                    case 242:
+                        var4 = var1.Date;
+                        var7 = var1.NaN;
+                        var3 = var4.prototype;
+                        var3 = Object.create(var3, {
+                            constructor: {
+                                value: var4
+                            }
+                        });
+                        var8 = var3;
+                        var0 = new var8[var4](var7, var6);
+                        var0 = var0 instanceof Object ? var0 : var3;
+                        _fun21875_ip = 305;
+                        continue _fun21875;
+                    case 276:
+                        var3 = var1.Date;
+                        var4 = var3.prototype;
+                        var4 = Object.create(var4, {
+                            constructor: {
+                                value: var3
+                            }
+                        });
+                        var8 = var4;
+                        var7 = var2;
+                        var3 = new var8[var3](var7, var6);
+                        var0 = var3 instanceof Object ? var3 : var4;
+                    case 305:
+                        _fun21875_ip = 343;
+                        continue _fun21875;
+                    case 307:
+                        var3 = var1.Date;
+                        var1 = var2.getTime;
+                        var7 = var1.bind(var2)();
+                        var2 = var3.prototype;
+                        var2 = Object.create(var2, {
+                            constructor: {
+                                value: var3
+                            }
+                        });
+                        var8 = var2;
+                        var1 = new var8[var3](var7, var6);
+                        var0 = var1 instanceof Object ? var1 : var2;
+                    case 343:
                         return var0;
                 }
             };
-            var2.ordinalNumber = var4;
-            var6 = var3.default;
+            var1.default = var0;
+            var2 = arg6;
+            var0 = 0;
+            var4 = var2[var0];
+            var2 = arg1;
+            var0 = undefined;
+            var5 = var2.bind(var0)(var4);
+            if (!var5) {
+                _fun21871_ip = 91;
+                continue _fun21871
+            }
+        case 79:
+            var4 = var5.__esModule;
+            var2 = var5;
+            if (var4) {
+                _fun21871_ip = 100;
+                continue _fun21871
+            }
+        case 91:
             var4 = {};
-            var5 = {};
-            var8 = ['πΧ', 'μΧ'];
-            var5.narrow = var8;
-            var8 = ['π.Χ.', 'μ.Χ.'];
-            var5.abbreviated = var8;
-            var8 = ['προ Χριστού', 'μετά Χριστόν'];
-            var5.wide = var8;
-            var4.values = var5;
-            var5 = 'wide';
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.era = var4;
-            var6 = var3.default;
-            var4 = {};
-            var8 = {};
-            var9 = ['1', '2', '3', '4'];
-            var8.narrow = var9;
-            var9 = ['Τ1', 'Τ2', 'Τ3', 'Τ4'];
-            var8.abbreviated = var9;
-            var9 = ['1ο τρίμηνο', '2ο τρίμηνο', '3ο τρίμηνο', '4ο τρίμηνο'];
-            var8.wide = var9;
-            var4.values = var8;
-            var4.defaultWidth = var5;
-            var7 = function arg0() {
-                var1 = arg0;
-                var0 = 1;
-                var0 = var1 - var0;
-                return var0;
-            };
-            var4.argumentCallback = var7;
-            var4 = var6.bind(var0)(var4);
-            var2.quarter = var4;
-            var6 = var3.default;
-            var4 = {};
-            var7 = {};
-            var8 = ['Ι', 'Φ', 'Μ', 'Α', 'Μ', 'Ι', 'Ι', 'Α', 'Σ', 'Ο', 'Ν', 'Δ'];
-            var7.narrow = var8;
-            var8 = ['Ιαν', 'Φεβ', 'Μάρ', 'Απρ', 'Μάι', 'Ιούν', 'Ιούλ', 'Αύγ', 'Σεπ', 'Οκτ', 'Νοέ', 'Δεκ'];
-            var7.abbreviated = var8;
-            var8 = ['Ιανουάριος', 'Φεβρουάριος', 'Μάρτιος', 'Απρίλιος', 'Μάιος', 'Ιούνιος', 'Ιούλιος', 'Αύγουστος', 'Σεπτέμβριος', 'Οκτώβριος', 'Νοέμβριος', 'Δεκέμβριος'];
-            var7.wide = var8;
-            var4.values = var7;
-            var4.defaultWidth = var5;
-            var7 = {};
-            var8 = ['Ι', 'Φ', 'Μ', 'Α', 'Μ', 'Ι', 'Ι', 'Α', 'Σ', 'Ο', 'Ν', 'Δ'];
-            var7.narrow = var8;
-            var8 = ['Ιαν', 'Φεβ', 'Μαρ', 'Απρ', 'Μαΐ', 'Ιουν', 'Ιουλ', 'Αυγ', 'Σεπ', 'Οκτ', 'Νοε', 'Δεκ'];
-            var7.abbreviated = var8;
-            var8 = ['Ιανουαρίου', 'Φεβρουαρίου', 'Μαρτίου', 'Απριλίου', 'Μαΐου', 'Ιουνίου', 'Ιουλίου', 'Αυγούστου', 'Σεπτεμβρίου', 'Οκτωβρίου', 'Νοεμβρίου', 'Δεκεμβρίου'];
-            var7.wide = var8;
-            var4.formattingValues = var7;
-            var4.defaultFormattingWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.month = var4;
-            var6 = var3.default;
-            var4 = {};
-            var7 = {};
-            var8 = ['Κ', 'Δ', 'T', 'Τ', 'Π', 'Π', 'Σ'];
-            var7.narrow = var8;
-            var8 = ['Κυ', 'Δε', 'Τρ', 'Τε', 'Πέ', 'Πα', 'Σά'];
-            var7.short = var8;
-            var8 = ['Κυρ', 'Δευ', 'Τρί', 'Τετ', 'Πέμ', 'Παρ', 'Σάβ'];
-            var7.abbreviated = var8;
-            var8 = ['Κυριακή', 'Δευτέρα', 'Τρίτη', 'Τετάρτη', 'Πέμπτη', 'Παρασκευή', 'Σάββατο'];
-            var7.wide = var8;
-            var4.values = var7;
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.day = var4;
-            var4 = var3.default;
-            var3 = {};
-            var6 = {};
-            var7 = {
-                'am': 'πμ',
-                'pm': 'μμ',
-                'midnight': 'μεσάνυχτα',
-                'noon': 'μεσημέρι',
-                'morning': 'πρωί',
-                'afternoon': 'απόγευμα',
-                'evening': 'βράδυ',
-                'night': 'νύχτα'
-            };
-            var6.narrow = var7;
-            var7 = {
-                'am': 'π.μ.',
-                'pm': 'μ.μ.',
-                'midnight': 'μεσάνυχτα',
-                'noon': 'μεσημέρι',
-                'morning': 'πρωί',
-                'afternoon': 'απόγευμα',
-                'evening': 'βράδυ',
-                'night': 'νύχτα'
-            };
-            var6.abbreviated = var7;
-            var7 = {
-                'am': 'π.μ.',
-                'pm': 'μ.μ.',
-                'midnight': 'μεσάνυχτα',
-                'noon': 'μεσημέρι',
-                'morning': 'πρωί',
-                'afternoon': 'απόγευμα',
-                'evening': 'βράδυ',
-                'night': 'νύχτα'
-            };
-            var6.wide = var7;
-            var3.values = var6;
-            var3.defaultWidth = var5;
-            var3 = var4.bind(var0)(var3);
-            var2.dayPeriod = var3;
-            var1.default = var2;
+            var4.default = var5;
+            var2 = var4;
+        case 100:
+            var _closure1_slot0 = var2;
             var2 = var1.default;
             var1 = arg4;
             var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1684]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2565]);

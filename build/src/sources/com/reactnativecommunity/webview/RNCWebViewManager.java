@@ -132,19 +132,19 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
     public class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ g f18434d;
+        final /* synthetic */ g f18067d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ com.reactnativecommunity.webview.b f18435e;
+        final /* synthetic */ com.reactnativecommunity.webview.b f18068e;
 
         b(g gVar, com.reactnativecommunity.webview.b bVar) {
-            this.f18434d = gVar;
-            this.f18435e = bVar;
+            this.f18067d = gVar;
+            this.f18068e = bVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            a1.f18501a.b().put(Integer.valueOf(this.f18434d.getId()), Integer.valueOf(this.f18435e.getId()));
+            a1.f18134a.b().put(Integer.valueOf(this.f18067d.getId()), Integer.valueOf(this.f18068e.getId()));
         }
     }
 
@@ -153,20 +153,20 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
     public class c implements DownloadListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ g f18437a;
+        final /* synthetic */ g f18070a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ThemedReactContext f18438b;
+        final /* synthetic */ ThemedReactContext f18071b;
 
         c(g gVar, ThemedReactContext themedReactContext) {
-            this.f18437a = gVar;
-            this.f18438b = themedReactContext;
+            this.f18070a = gVar;
+            this.f18071b = themedReactContext;
         }
 
         @Override // android.webkit.DownloadListener
         public void onDownloadStart(String str, String str2, String str3, String str4, long j10) {
-            this.f18437a.setIgnoreErrFailedForThisURL(str);
-            RNCWebViewModule module = RNCWebViewManager.getModule(this.f18438b);
+            this.f18070a.setIgnoreErrFailedForThisURL(str);
+            RNCWebViewModule module = RNCWebViewManager.getModule(this.f18071b);
             try {
                 DownloadManager.Request request = new DownloadManager.Request(Uri.parse(str));
                 String guessFileName = URLUtil.guessFileName(str, str3, str4);
@@ -199,12 +199,12 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         final /* synthetic */ int A;
 
         /* renamed from: z  reason: collision with root package name */
-        final /* synthetic */ Activity f18440z;
+        final /* synthetic */ Activity f18073z;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(ReactContext reactContext, WebView webView, Activity activity, int i10) {
             super(reactContext, webView);
-            this.f18440z = activity;
+            this.f18073z = activity;
             this.A = i10;
         }
 
@@ -215,44 +215,44 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
         @Override // android.webkit.WebChromeClient
         public void onHideCustomView() {
-            if (this.f18445i == null) {
+            if (this.f18078i == null) {
                 return;
             }
             ViewGroup c10 = c();
-            if (c10.getRootView() != this.f18444e.getRootView()) {
-                this.f18444e.getRootView().setVisibility(0);
+            if (c10.getRootView() != this.f18077e.getRootView()) {
+                this.f18077e.getRootView().setVisibility(0);
             } else {
-                this.f18444e.setVisibility(0);
+                this.f18077e.setVisibility(0);
             }
-            this.f18440z.getWindow().clearFlags(IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING);
-            c10.removeView(this.f18445i);
-            this.f18446o.onCustomViewHidden();
-            this.f18445i = null;
-            this.f18446o = null;
-            this.f18440z.setRequestedOrientation(this.A);
-            this.f18443d.removeLifecycleEventListener(this);
+            this.f18073z.getWindow().clearFlags(IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING);
+            c10.removeView(this.f18078i);
+            this.f18079o.onCustomViewHidden();
+            this.f18078i = null;
+            this.f18079o = null;
+            this.f18073z.setRequestedOrientation(this.A);
+            this.f18076d.removeLifecycleEventListener(this);
         }
 
         @Override // android.webkit.WebChromeClient
         public void onShowCustomView(View view, WebChromeClient.CustomViewCallback customViewCallback) {
-            if (this.f18445i != null) {
+            if (this.f18078i != null) {
                 customViewCallback.onCustomViewHidden();
                 return;
             }
-            this.f18445i = view;
-            this.f18446o = customViewCallback;
-            this.f18440z.setRequestedOrientation(-1);
-            this.f18445i.setSystemUiVisibility(7942);
-            this.f18440z.getWindow().setFlags(IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING);
-            this.f18445i.setBackgroundColor(-16777216);
+            this.f18078i = view;
+            this.f18079o = customViewCallback;
+            this.f18073z.setRequestedOrientation(-1);
+            this.f18078i.setSystemUiVisibility(7942);
+            this.f18073z.getWindow().setFlags(IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING);
+            this.f18078i.setBackgroundColor(-16777216);
             ViewGroup c10 = c();
-            c10.addView(this.f18445i, f.f18442y);
-            if (c10.getRootView() != this.f18444e.getRootView()) {
-                this.f18444e.getRootView().setVisibility(8);
+            c10.addView(this.f18078i, f.f18075y);
+            if (c10.getRootView() != this.f18077e.getRootView()) {
+                this.f18077e.getRootView().setVisibility(8);
             } else {
-                this.f18444e.setVisibility(8);
+                this.f18077e.setVisibility(8);
             }
-            this.f18443d.addLifecycleEventListener(this);
+            this.f18076d.addLifecycleEventListener(this);
         }
     }
 
@@ -274,46 +274,46 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
     public static class f extends WebChromeClient implements LifecycleEventListener {
 
         /* renamed from: y  reason: collision with root package name */
-        protected static final FrameLayout.LayoutParams f18442y = new FrameLayout.LayoutParams(-1, -1, 17);
+        protected static final FrameLayout.LayoutParams f18075y = new FrameLayout.LayoutParams(-1, -1, 17);
 
         /* renamed from: d  reason: collision with root package name */
-        protected ReactContext f18443d;
+        protected ReactContext f18076d;
 
         /* renamed from: e  reason: collision with root package name */
-        protected View f18444e;
+        protected View f18077e;
 
         /* renamed from: i  reason: collision with root package name */
-        protected View f18445i;
+        protected View f18078i;
 
         /* renamed from: o  reason: collision with root package name */
-        protected WebChromeClient.CustomViewCallback f18446o;
+        protected WebChromeClient.CustomViewCallback f18079o;
 
         /* renamed from: p  reason: collision with root package name */
-        protected PermissionRequest f18447p;
+        protected PermissionRequest f18080p;
 
         /* renamed from: q  reason: collision with root package name */
-        protected List f18448q;
+        protected List f18081q;
 
         /* renamed from: r  reason: collision with root package name */
-        protected GeolocationPermissions.Callback f18449r;
+        protected GeolocationPermissions.Callback f18082r;
 
         /* renamed from: s  reason: collision with root package name */
-        protected String f18450s;
+        protected String f18083s;
 
         /* renamed from: t  reason: collision with root package name */
-        protected boolean f18451t = false;
+        protected boolean f18084t = false;
 
         /* renamed from: u  reason: collision with root package name */
-        protected List f18452u = new ArrayList();
+        protected List f18085u = new ArrayList();
 
         /* renamed from: v  reason: collision with root package name */
-        protected g.b f18453v = null;
+        protected g.b f18086v = null;
 
         /* renamed from: w  reason: collision with root package name */
-        protected boolean f18454w = false;
+        protected boolean f18087w = false;
 
         /* renamed from: x  reason: collision with root package name */
-        private PermissionListener f18455x = new PermissionListener() { // from class: com.reactnativecommunity.webview.y0
+        private PermissionListener f18088x = new PermissionListener() { // from class: com.reactnativecommunity.webview.y0
             @Override // com.facebook.react.modules.core.PermissionListener
             public final boolean onRequestPermissionsResult(int i10, String[] strArr, int[] iArr) {
                 boolean d10;
@@ -323,12 +323,12 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         };
 
         public f(ReactContext reactContext, WebView webView) {
-            this.f18443d = reactContext;
-            this.f18444e = webView;
+            this.f18076d = reactContext;
+            this.f18077e = webView;
         }
 
         private PermissionAwareActivity b() {
-            Activity currentActivity = this.f18443d.getCurrentActivity();
+            Activity currentActivity = this.f18076d.getCurrentActivity();
             if (currentActivity != null) {
                 if (currentActivity instanceof PermissionAwareActivity) {
                     return (PermissionAwareActivity) currentActivity;
@@ -348,7 +348,7 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
             List list4;
             GeolocationPermissions.Callback callback;
             String str;
-            this.f18451t = false;
+            this.f18084t = false;
             boolean z11 = false;
             for (int i11 = 0; i11 < strArr.length; i11++) {
                 String str2 = strArr[i11];
@@ -357,67 +357,67 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
                 } else {
                     z10 = false;
                 }
-                if (str2.equals("android.permission.ACCESS_FINE_LOCATION") && (callback = this.f18449r) != null && (str = this.f18450s) != null) {
+                if (str2.equals("android.permission.ACCESS_FINE_LOCATION") && (callback = this.f18082r) != null && (str = this.f18083s) != null) {
                     if (z10) {
                         callback.invoke(str, true, false);
                     } else {
                         callback.invoke(str, false, false);
                     }
-                    this.f18449r = null;
-                    this.f18450s = null;
+                    this.f18082r = null;
+                    this.f18083s = null;
                 }
                 if (str2.equals("android.permission.RECORD_AUDIO")) {
-                    if (z10 && (list4 = this.f18448q) != null) {
+                    if (z10 && (list4 = this.f18081q) != null) {
                         list4.add("android.webkit.resource.AUDIO_CAPTURE");
                     }
                     z11 = true;
                 }
                 if (str2.equals("android.permission.CAMERA")) {
-                    if (z10 && (list3 = this.f18448q) != null) {
+                    if (z10 && (list3 = this.f18081q) != null) {
                         list3.add("android.webkit.resource.VIDEO_CAPTURE");
                     }
                     z11 = true;
                 }
                 if (str2.equals("android.webkit.resource.PROTECTED_MEDIA_ID")) {
-                    if (z10 && (list2 = this.f18448q) != null) {
+                    if (z10 && (list2 = this.f18081q) != null) {
                         list2.add("android.webkit.resource.PROTECTED_MEDIA_ID");
                     }
                     z11 = true;
                 }
             }
-            if (z11 && (permissionRequest = this.f18447p) != null && (list = this.f18448q) != null) {
+            if (z11 && (permissionRequest = this.f18080p) != null && (list = this.f18081q) != null) {
                 permissionRequest.grant((String[]) list.toArray(new String[0]));
-                this.f18447p = null;
-                this.f18448q = null;
+                this.f18080p = null;
+                this.f18081q = null;
             }
-            if (this.f18452u.isEmpty()) {
+            if (this.f18085u.isEmpty()) {
                 return true;
             }
-            e(this.f18452u);
+            e(this.f18085u);
             return false;
         }
 
         private synchronized void e(List list) {
-            if (this.f18451t) {
-                this.f18452u.addAll(list);
+            if (this.f18084t) {
+                this.f18085u.addAll(list);
                 return;
             }
             PermissionAwareActivity b10 = b();
-            this.f18451t = true;
-            b10.requestPermissions((String[]) list.toArray(new String[0]), 3, this.f18455x);
-            this.f18452u.clear();
+            this.f18084t = true;
+            b10.requestPermissions((String[]) list.toArray(new String[0]), 3, this.f18088x);
+            this.f18085u.clear();
         }
 
         protected ViewGroup c() {
-            return (ViewGroup) this.f18443d.getCurrentActivity().findViewById(16908290);
+            return (ViewGroup) this.f18076d.getCurrentActivity().findViewById(16908290);
         }
 
         public void f(boolean z10) {
-            this.f18454w = z10;
+            this.f18087w = z10;
         }
 
         public void g(g.b bVar) {
-            this.f18453v = bVar;
+            this.f18086v = bVar;
         }
 
         @Override // android.webkit.WebChromeClient
@@ -437,9 +437,9 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
         @Override // android.webkit.WebChromeClient
         public void onGeolocationPermissionsShowPrompt(String str, GeolocationPermissions.Callback callback) {
-            if (androidx.core.content.a.a(this.f18443d, "android.permission.ACCESS_FINE_LOCATION") != 0) {
-                this.f18449r = callback;
-                this.f18450s = str;
+            if (androidx.core.content.a.a(this.f18076d, "android.permission.ACCESS_FINE_LOCATION") != 0) {
+                this.f18082r = callback;
+                this.f18083s = str;
                 e(Collections.singletonList("android.permission.ACCESS_FINE_LOCATION"));
                 return;
             }
@@ -456,15 +456,15 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
         @Override // com.facebook.react.bridge.LifecycleEventListener
         public void onHostResume() {
-            View view = this.f18445i;
+            View view = this.f18078i;
             if (view != null && view.getSystemUiVisibility() != 7942) {
-                this.f18445i.setSystemUiVisibility(7942);
+                this.f18078i.setSystemUiVisibility(7942);
             }
         }
 
         @Override // android.webkit.WebChromeClient
         public void onPermissionRequest(PermissionRequest permissionRequest) {
-            this.f18448q = new ArrayList();
+            this.f18081q = new ArrayList();
             ArrayList arrayList = new ArrayList();
             String[] resources = permissionRequest.getResources();
             int length = resources.length;
@@ -480,15 +480,15 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
                 } else if (str2.equals("android.webkit.resource.VIDEO_CAPTURE")) {
                     str = "android.permission.CAMERA";
                 } else if (str2.equals("android.webkit.resource.PROTECTED_MEDIA_ID")) {
-                    if (!this.f18454w) {
+                    if (!this.f18087w) {
                         str = "android.webkit.resource.PROTECTED_MEDIA_ID";
                     } else {
-                        this.f18448q.add(str2);
+                        this.f18081q.add(str2);
                     }
                 }
                 if (str != null) {
-                    if (androidx.core.content.a.a(this.f18443d, str) == 0) {
-                        this.f18448q.add(str2);
+                    if (androidx.core.content.a.a(this.f18076d, str) == 0) {
+                        this.f18081q.add(str2);
                     } else {
                         arrayList.add(str);
                     }
@@ -496,11 +496,11 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
                 i10++;
             }
             if (arrayList.isEmpty()) {
-                permissionRequest.grant((String[]) this.f18448q.toArray(new String[0]));
-                this.f18448q = null;
+                permissionRequest.grant((String[]) this.f18081q.toArray(new String[0]));
+                this.f18081q = null;
                 return;
             }
-            this.f18447p = permissionRequest;
+            this.f18080p = permissionRequest;
             e(arrayList);
         }
 
@@ -508,7 +508,7 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         public void onProgressChanged(WebView webView, int i10) {
             super.onProgressChanged(webView, i10);
             String url = webView.getUrl();
-            if (this.f18453v.a()) {
+            if (this.f18086v.a()) {
                 return;
             }
             WritableMap createMap = Arguments.createMap();
@@ -518,7 +518,7 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
             createMap.putBoolean("canGoBack", webView.canGoBack());
             createMap.putBoolean("canGoForward", webView.canGoForward());
             createMap.putDouble(ReactProgressBarViewManager.PROP_PROGRESS, i10 / 100.0f);
-            ((g) webView).g(webView, new bm.d(com.reactnativecommunity.webview.b.c(webView), createMap));
+            ((g) webView).g(webView, new cm.d(com.reactnativecommunity.webview.b.c(webView), createMap));
         }
 
         @Override // android.webkit.WebChromeClient
@@ -528,7 +528,7 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
             if (fileChooserParams.getMode() != 1) {
                 z10 = false;
             }
-            return RNCWebViewManager.getModule(this.f18443d).startPhotoPickerIntent(valueCallback, acceptTypes, z10);
+            return RNCWebViewManager.getModule(this.f18076d).startPhotoPickerIntent(valueCallback, acceptTypes, z10);
         }
     }
 
@@ -539,75 +539,75 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         WebChromeClient A;
 
         /* renamed from: d  reason: collision with root package name */
-        protected String f18456d;
+        protected String f18089d;
 
         /* renamed from: e  reason: collision with root package name */
-        protected String f18457e;
+        protected String f18090e;
 
         /* renamed from: i  reason: collision with root package name */
-        protected boolean f18458i;
+        protected boolean f18091i;
 
         /* renamed from: o  reason: collision with root package name */
-        protected boolean f18459o;
+        protected boolean f18092o;
 
         /* renamed from: p  reason: collision with root package name */
-        protected boolean f18460p;
+        protected boolean f18093p;
 
         /* renamed from: q  reason: collision with root package name */
-        protected String f18461q;
+        protected String f18094q;
 
         /* renamed from: r  reason: collision with root package name */
-        protected String f18462r;
+        protected String f18095r;
 
         /* renamed from: s  reason: collision with root package name */
-        protected h f18463s;
+        protected h f18096s;
 
         /* renamed from: t  reason: collision with root package name */
-        protected CatalystInstance f18464t;
+        protected CatalystInstance f18097t;
 
         /* renamed from: u  reason: collision with root package name */
-        protected boolean f18465u;
+        protected boolean f18098u;
 
         /* renamed from: v  reason: collision with root package name */
-        private OnScrollDispatchHelper f18466v;
+        private OnScrollDispatchHelper f18099v;
 
         /* renamed from: w  reason: collision with root package name */
-        protected boolean f18467w;
+        protected boolean f18100w;
 
         /* renamed from: x  reason: collision with root package name */
-        protected boolean f18468x;
+        protected boolean f18101x;
 
         /* renamed from: y  reason: collision with root package name */
-        protected b f18469y;
+        protected b f18102y;
 
         /* renamed from: z  reason: collision with root package name */
-        protected ReadableMap f18470z;
+        protected ReadableMap f18103z;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public class a implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ WebView f18471d;
+            final /* synthetic */ WebView f18104d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ String f18472e;
+            final /* synthetic */ String f18105e;
 
             a(WebView webView, String str) {
-                this.f18471d = webView;
-                this.f18472e = str;
+                this.f18104d = webView;
+                this.f18105e = str;
             }
 
             @Override // java.lang.Runnable
             public void run() {
-                h hVar = g.this.f18463s;
+                h hVar = g.this.f18096s;
                 if (hVar == null) {
                     return;
                 }
-                WebView webView = this.f18471d;
+                WebView webView = this.f18104d;
                 WritableMap a10 = hVar.a(webView, webView.getUrl());
-                a10.putString("data", this.f18472e);
-                g.this.g(this.f18471d, new bm.f(com.reactnativecommunity.webview.b.c(this.f18471d), a10));
+                a10.putString("data", this.f18105e);
+                g.this.g(this.f18104d, new cm.f(com.reactnativecommunity.webview.b.c(this.f18104d), a10));
             }
         }
 
@@ -616,17 +616,17 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         public static class b {
 
             /* renamed from: a  reason: collision with root package name */
-            private boolean f18474a = false;
+            private boolean f18107a = false;
 
             protected b() {
             }
 
             public boolean a() {
-                return this.f18474a;
+                return this.f18107a;
             }
 
             public void b(boolean z10) {
-                this.f18474a = z10;
+                this.f18107a = z10;
             }
         }
 
@@ -635,53 +635,53 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         public class c {
 
             /* renamed from: a  reason: collision with root package name */
-            g f18475a;
+            g f18108a;
 
             c(g gVar) {
-                this.f18475a = gVar;
+                this.f18108a = gVar;
             }
 
             @JavascriptInterface
             public void postMessage(String str) {
-                this.f18475a.k(str);
+                this.f18108a.k(str);
             }
         }
 
         public g(ThemedReactContext themedReactContext) {
             super(themedReactContext);
-            this.f18458i = true;
-            this.f18459o = true;
-            this.f18460p = false;
-            this.f18465u = false;
-            this.f18467w = false;
-            this.f18468x = false;
+            this.f18091i = true;
+            this.f18092o = true;
+            this.f18093p = false;
+            this.f18098u = false;
+            this.f18100w = false;
+            this.f18101x = false;
             int i10 = B + 1;
             B = i10;
             setId(i10);
             e();
-            this.f18469y = new b();
+            this.f18102y = new b();
             setBackgroundColor(0);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public /* synthetic */ void j(WebView webView, String str, ReactContext reactContext) {
-            WritableMap a10 = this.f18463s.a(webView, webView.getUrl());
-            a10.putString("webViewKey", this.f18461q);
+            WritableMap a10 = this.f18096s.a(webView, webView.getUrl());
+            a10.putString("webViewKey", this.f18094q);
             a10.putString("data", str);
             ((DeviceEventManagerModule.RCTDeviceEventEmitter) reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)).emit("ReactNativeWebViewOnMessageWithWebViewKey", a10);
         }
 
         public void b() {
             String str;
-            if (getSettings().getJavaScriptEnabled() && (str = this.f18456d) != null && !TextUtils.isEmpty(str)) {
-                h("(function() {\n" + this.f18456d + ";\n})();");
+            if (getSettings().getJavaScriptEnabled() && (str = this.f18089d) != null && !TextUtils.isEmpty(str)) {
+                h("(function() {\n" + this.f18089d + ";\n})();");
             }
         }
 
         public void c() {
             String str;
-            if (getSettings().getJavaScriptEnabled() && (str = this.f18457e) != null && !TextUtils.isEmpty(str)) {
-                h("(function() {\n" + this.f18457e + ";\n})();");
+            if (getSettings().getJavaScriptEnabled() && (str = this.f18090e) != null && !TextUtils.isEmpty(str)) {
+                h("(function() {\n" + this.f18090e + ";\n})();");
             }
         }
 
@@ -703,7 +703,7 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         protected void e() {
             ReactContext reactContext = (ReactContext) getContext();
             if (reactContext != null) {
-                this.f18464t = reactContext.getCatalystInstance();
+                this.f18097t = reactContext.getCatalystInstance();
             }
         }
 
@@ -725,7 +725,7 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         }
 
         public h getRNCWebViewClient() {
-            return this.f18463s;
+            return this.f18096s;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -736,19 +736,19 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         public boolean i(ReadableMap readableMap) {
             Map hashMap;
             Object hashMap2;
-            if (this.f18470z == null || readableMap == null) {
+            if (this.f18103z == null || readableMap == null) {
                 return true;
             }
             String[] strArr = {"uri", "method", "body", "html", "baseUrl"};
             for (int i10 = 0; i10 < 5; i10++) {
                 String str = strArr[i10];
-                String string = this.f18470z.getString(str);
+                String string = this.f18103z.getString(str);
                 String string2 = readableMap.getString(str);
                 if (string2 != null && !string2.equals(string)) {
                     return true;
                 }
             }
-            ReadableMap map = this.f18470z.getMap("headers");
+            ReadableMap map = this.f18103z.getMap("headers");
             ReadableMap map2 = readableMap.getMap("headers");
             if (map == null) {
                 hashMap = Collections.EMPTY_MAP;
@@ -765,19 +765,19 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
         public void k(final String str) {
             final ReactContext reactContext = (ReactContext) getContext();
-            if (this.f18461q != null && this.f18463s != null) {
+            if (this.f18094q != null && this.f18096s != null) {
                 reactContext.runOnUiQueueThread(new Runnable() { // from class: com.reactnativecommunity.webview.z0
                     @Override // java.lang.Runnable
                     public final void run() {
                         RNCWebViewManager.g.this.j(this, str, reactContext);
                     }
                 });
-            } else if (this.f18463s != null) {
+            } else if (this.f18096s != null) {
                 post(new a(this, str));
             } else {
                 WritableMap createMap = Arguments.createMap();
                 createMap.putString("data", str);
-                g(this, new bm.f(com.reactnativecommunity.webview.b.c(this), createMap));
+                g(this, new cm.f(com.reactnativecommunity.webview.b.c(this), createMap));
             }
         }
 
@@ -797,12 +797,12 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         @Override // android.webkit.WebView, android.view.View
         protected void onScrollChanged(int i10, int i11, int i12, int i13) {
             super.onScrollChanged(i10, i11, i12, i13);
-            if (this.f18467w) {
-                if (this.f18466v == null) {
-                    this.f18466v = new OnScrollDispatchHelper();
+            if (this.f18100w) {
+                if (this.f18099v == null) {
+                    this.f18099v = new OnScrollDispatchHelper();
                 }
-                if (this.f18466v.onScrollChanged(i10, i11)) {
-                    g(this, ScrollEvent.obtain(com.reactnativecommunity.webview.b.c(this), ScrollEventType.SCROLL, i10, i11, this.f18466v.getXFlingVelocity(), this.f18466v.getYFlingVelocity(), computeHorizontalScrollRange(), computeVerticalScrollRange(), getWidth(), getHeight()));
+                if (this.f18099v.onScrollChanged(i10, i11)) {
+                    g(this, ScrollEvent.obtain(com.reactnativecommunity.webview.b.c(this), ScrollEventType.SCROLL, i10, i11, this.f18099v.getXFlingVelocity(), this.f18099v.getYFlingVelocity(), computeHorizontalScrollRange(), computeVerticalScrollRange(), getWidth(), getHeight()));
                 }
             }
         }
@@ -810,53 +810,53 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         @Override // android.webkit.WebView, android.view.View
         protected void onSizeChanged(int i10, int i11, int i12, int i13) {
             super.onSizeChanged(i10, i11, i12, i13);
-            if (this.f18465u) {
+            if (this.f18098u) {
                 g(this, new ContentSizeChangeEvent(com.reactnativecommunity.webview.b.c(this), i10, i11));
             }
         }
 
         @Override // android.webkit.WebView, android.view.View
         public boolean onTouchEvent(MotionEvent motionEvent) {
-            if (this.f18468x) {
+            if (this.f18101x) {
                 requestDisallowInterceptTouchEvent(true);
             }
             return super.onTouchEvent(motionEvent);
         }
 
         public void setBasicAuthCredential(com.reactnativecommunity.webview.a aVar) {
-            this.f18463s.c(aVar);
+            this.f18096s.c(aVar);
         }
 
         public void setHasScrollEvent(boolean z10) {
-            this.f18467w = z10;
+            this.f18100w = z10;
         }
 
         public void setIgnoreErrFailedForThisURL(String str) {
-            this.f18463s.d(str);
+            this.f18096s.d(str);
         }
 
         public void setInjectedJavaScript(String str) {
-            this.f18456d = str;
+            this.f18089d = str;
         }
 
         public void setInjectedJavaScriptBeforeContentLoaded(String str) {
-            this.f18457e = str;
+            this.f18090e = str;
         }
 
         public void setInjectedJavaScriptBeforeContentLoadedForMainFrameOnly(boolean z10) {
-            this.f18459o = z10;
+            this.f18092o = z10;
         }
 
         public void setInjectedJavaScriptForMainFrameOnly(boolean z10) {
-            this.f18458i = z10;
+            this.f18091i = z10;
         }
 
         @SuppressLint({"AddJavascriptInterface"})
         public void setMessagingEnabled(boolean z10) {
-            if (this.f18460p == z10) {
+            if (this.f18093p == z10) {
                 return;
             }
-            this.f18460p = z10;
+            this.f18093p = z10;
             if (z10) {
                 addJavascriptInterface(f(this), RNCWebViewManager.JAVASCRIPT_INTERFACE);
             } else {
@@ -865,19 +865,19 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         }
 
         public void setMessagingModuleName(String str) {
-            this.f18462r = str;
+            this.f18095r = str;
         }
 
         public void setNestedScrollEnabled(boolean z10) {
-            this.f18468x = z10;
+            this.f18101x = z10;
         }
 
         public void setSendContentSizeChangeEvents(boolean z10) {
-            this.f18465u = z10;
+            this.f18098u = z10;
         }
 
         public void setSource(ReadableMap readableMap) {
-            this.f18470z = readableMap;
+            this.f18103z = readableMap;
         }
 
         @Override // android.webkit.WebView
@@ -885,12 +885,12 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
             this.A = webChromeClient;
             super.setWebChromeClient(webChromeClient);
             if (webChromeClient instanceof f) {
-                ((f) webChromeClient).g(this.f18469y);
+                ((f) webChromeClient).g(this.f18102y);
             }
         }
 
         public void setWebViewAssetLoader(f4.b bVar) {
-            this.f18463s.g(bVar);
+            this.f18096s.g(bVar);
         }
 
         @Override // android.webkit.WebView
@@ -898,13 +898,13 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
             super.setWebViewClient(webViewClient);
             if (webViewClient instanceof h) {
                 h hVar = (h) webViewClient;
-                this.f18463s = hVar;
-                hVar.e(this.f18469y);
+                this.f18096s = hVar;
+                hVar.e(this.f18102y);
             }
         }
 
         public void setWebViewKey(String str) {
-            this.f18461q = str;
+            this.f18094q = str;
         }
     }
 
@@ -949,7 +949,7 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     public static /* synthetic */ void O(String str, com.reactnativecommunity.webview.b bVar, Map map, g gVar) {
         gVar.setWebViewKey(str);
-        a1.f18501a.b().put(Integer.valueOf(gVar.getId()), Integer.valueOf(bVar.getId()));
+        a1.f18134a.b().put(Integer.valueOf(gVar.getId()), Integer.valueOf(bVar.getId()));
         map.put(str, gVar);
     }
 
@@ -1005,7 +1005,7 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
             case 336631465:
                 if (str.equals("loadUrl")) {
                     if (readableArray != null) {
-                        gVar.f18469y.b(false);
+                        gVar.f18102y.b(false);
                         gVar.loadUrl(readableArray.getString(0));
                         return;
                     }
@@ -1100,16 +1100,16 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void lambda$onDropViewInstance$46(com.reactnativecommunity.webview.b bVar, g gVar) {
-        if (gVar.f18461q == null) {
+        if (gVar.f18094q == null) {
             ((ThemedReactContext) gVar.getContext()).removeLifecycleEventListener(gVar);
             gVar.d();
             this.mWebChromeClient = null;
             return;
         }
         bVar.e();
-        a1.f18501a.b().remove(Integer.valueOf(gVar.getId()));
-        if (bVar.f18504d != 0) {
-            ViewGroup viewGroup = (ViewGroup) ((UIManagerModule) ((ReactContext) bVar.getContext()).getNativeModule(UIManagerModule.class)).resolveView(bVar.f18504d);
+        a1.f18134a.b().remove(Integer.valueOf(gVar.getId()));
+        if (bVar.f18137d != 0) {
+            ViewGroup viewGroup = (ViewGroup) ((UIManagerModule) ((ReactContext) bVar.getContext()).getNativeModule(UIManagerModule.class)).resolveView(bVar.f18137d);
             viewGroup.addView(gVar);
             gVar.measure(View.MeasureSpec.makeMeasureSpec(viewGroup.getMeasuredWidth(), 1073741824), View.MeasureSpec.makeMeasureSpec(viewGroup.getMeasuredHeight(), 1073741824));
             gVar.layout(0, 0, gVar.getMeasuredWidth(), gVar.getMeasuredHeight());
@@ -1149,7 +1149,7 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         g gVar2;
         byte[] bArr;
         String str;
-        if (gVar.f18461q == null || gVar.i(readableMap)) {
+        if (gVar.f18094q == null || gVar.i(readableMap)) {
             gVar.setSource(readableMap);
             if (readableMap != null) {
                 if (readableMap.hasKey("html")) {
@@ -1255,8 +1255,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "allowFileAccess")
     public void setAllowFileAccess(com.reactnativecommunity.webview.b bVar, final Boolean bool) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.q
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.q
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 RNCWebViewManager.i(bool, gVar);
             }
@@ -1265,8 +1265,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "allowFileAccessFromFileURLs")
     public void setAllowFileAccessFromFileURLs(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.a0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.a0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setAllowFileAccessFromFileURLs(z10);
             }
@@ -1275,8 +1275,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "allowUniversalAccessFromFileURLs")
     public void setAllowUniversalAccessFromFileURLs(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.z
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.z
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setAllowUniversalAccessFromFileURLs(z10);
             }
@@ -1292,8 +1292,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
             z10 = false;
         }
         this.mAllowsFullscreenVideo = z10;
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.k0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.k0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 RNCWebViewManager.this.lambda$setAllowsFullscreenVideo$37(bVar, gVar);
             }
@@ -1304,8 +1304,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
     public void setAllowsProtectedMedia(com.reactnativecommunity.webview.b bVar, final boolean z10) {
         this.mAllowsProtectedMedia = z10;
         if (Build.VERSION.SDK_INT >= 26) {
-            bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.g
-                @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+            bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.g
+                @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
                 public final void a(RNCWebViewManager.g gVar) {
                     RNCWebViewManager.r(z10, gVar);
                 }
@@ -1326,13 +1326,13 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "androidAssetLoaderConfig")
     public void setAssetLoaderConfig(com.reactnativecommunity.webview.b bVar, ReadableMap readableMap) {
-        b.C0319b c0319b = new b.C0319b();
+        b.C0312b c0312b = new b.C0312b();
         String string = readableMap.getString("domain");
         if (string != null) {
-            c0319b.c(string);
+            c0312b.c(string);
         }
         if (readableMap.hasKey("httpAllowed")) {
-            c0319b.d(readableMap.getBoolean("httpAllowed"));
+            c0312b.d(readableMap.getBoolean("httpAllowed"));
         }
         ReadableArray array = readableMap.getArray("pathHandlers");
         if (array != null && array.size() > 0) {
@@ -1348,15 +1348,15 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
                     if (string3 == null) {
                         p8.a.J(TAG, "WebViewAssetLoader error. Skipping Path Handler. Handler path is missing");
                     } else if (string2.equals("resources")) {
-                        c0319b.a(string3, new b.f(bVar.getContext()));
+                        c0312b.a(string3, new b.f(bVar.getContext()));
                     } else if (string2.equals("assets")) {
-                        c0319b.a(string3, new b.a(bVar.getContext()));
+                        c0312b.a(string3, new b.a(bVar.getContext()));
                     } else if (string2.equals("internal")) {
                         String string4 = map.getString("directory");
                         if (string4 == null) {
                             p8.a.J(TAG, "WebViewAssetLoader error. Skipping Path Handler. Directory is missing for internal handler path");
                         } else {
-                            c0319b.a(string3, new b.c(bVar.getContext(), new File(string4)));
+                            c0312b.a(string3, new b.c(bVar.getContext(), new File(string4)));
                         }
                     }
                 }
@@ -1364,9 +1364,9 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         } else {
             p8.a.J(TAG, "WebViewAssetLoader error. No Path Handlers found.");
         }
-        final f4.b b10 = c0319b.b();
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.i
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        final f4.b b10 = c0312b.b();
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.i
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 RNCWebViewManager.N(f4.b.this, gVar);
             }
@@ -1375,8 +1375,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "basicAuthCredential")
     public void setBasicAuthCredential(com.reactnativecommunity.webview.b bVar, final ReadableMap readableMap) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.n0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.n0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 RNCWebViewManager.y(ReadableMap.this, gVar);
             }
@@ -1385,8 +1385,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "setBuiltInZoomControls")
     public void setBuiltInZoomControls(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.r0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.r0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setBuiltInZoomControls(z10);
             }
@@ -1395,8 +1395,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "cacheEnabled")
     public void setCacheEnabled(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.t0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.t0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 RNCWebViewManager.B(z10, gVar);
             }
@@ -1437,8 +1437,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
                 i10 = -1;
                 break;
         }
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.p0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.p0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setCacheMode(i10.intValue());
             }
@@ -1447,8 +1447,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "setDisplayZoomControls")
     public void setDisplayZoomControls(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.f
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.f
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setDisplayZoomControls(z10);
             }
@@ -1457,8 +1457,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "domStorageEnabled")
     public void setDomStorageEnabled(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.e
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.e
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setDomStorageEnabled(z10);
             }
@@ -1472,8 +1472,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "forceDarkOn")
     public void setForceDarkOn(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.o0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.o0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 RNCWebViewManager.q(z10, gVar);
             }
@@ -1482,8 +1482,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "geolocationEnabled")
     public void setGeolocationEnabled(com.reactnativecommunity.webview.b bVar, final Boolean bool) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.c0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.c0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 RNCWebViewManager.e(bool, gVar);
             }
@@ -1493,8 +1493,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
     @ReactProp(name = "androidHardwareAccelerationDisabled")
     public void setHardwareAccelerationDisabled(com.reactnativecommunity.webview.b bVar, boolean z10) {
         if (z10) {
-            bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.o
-                @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+            bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.o
+                @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
                 public final void a(RNCWebViewManager.g gVar) {
                     gVar.setLayerType(1, null);
                 }
@@ -1508,8 +1508,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
             return;
         }
         CookieManager.getInstance().removeAllCookies(null);
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.x
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.x
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 RNCWebViewManager.E(gVar);
             }
@@ -1518,8 +1518,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "injectedJavaScript")
     public void setInjectedJavaScript(com.reactnativecommunity.webview.b bVar, final String str) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.u
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.u
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setInjectedJavaScript(str);
             }
@@ -1528,8 +1528,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "injectedJavaScriptBeforeContentLoaded")
     public void setInjectedJavaScriptBeforeContentLoaded(com.reactnativecommunity.webview.b bVar, final String str) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.k
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.k
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setInjectedJavaScriptBeforeContentLoaded(str);
             }
@@ -1538,8 +1538,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "injectedJavaScriptBeforeContentLoadedForMainFrameOnly")
     public void setInjectedJavaScriptBeforeContentLoadedForMainFrameOnly(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.s0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.s0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setInjectedJavaScriptBeforeContentLoadedForMainFrameOnly(z10);
             }
@@ -1548,8 +1548,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "injectedJavaScriptForMainFrameOnly")
     public void setInjectedJavaScriptForMainFrameOnly(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.w
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.w
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setInjectedJavaScriptForMainFrameOnly(z10);
             }
@@ -1558,8 +1558,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "javaScriptCanOpenWindowsAutomatically")
     public void setJavaScriptCanOpenWindowsAutomatically(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.j0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.j0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setJavaScriptCanOpenWindowsAutomatically(z10);
             }
@@ -1568,8 +1568,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "javaScriptEnabled")
     public void setJavaScriptEnabled(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.d
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.d
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setJavaScriptEnabled(z10);
             }
@@ -1594,8 +1594,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         } else {
             i10 = 2;
         }
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.x0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.x0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setLayerType(i10, null);
             }
@@ -1605,8 +1605,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
     @ReactProp(name = "mediaPlaybackRequiresUserAction")
     @TargetApi(17)
     public void setMediaPlaybackRequiresUserAction(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.n
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.n
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setMediaPlaybackRequiresUserGesture(z10);
             }
@@ -1615,8 +1615,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "messagingEnabled")
     public void setMessagingEnabled(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.i0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.i0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setMessagingEnabled(z10);
             }
@@ -1625,8 +1625,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "messagingModuleName")
     public void setMessagingModuleName(com.reactnativecommunity.webview.b bVar, final String str) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.h0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.h0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setMessagingModuleName(str);
             }
@@ -1635,8 +1635,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "minimumFontSize")
     public void setMinimumFontSize(com.reactnativecommunity.webview.b bVar, final int i10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.v0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.v0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setMinimumFontSize(i10);
             }
@@ -1647,16 +1647,16 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
     public void setMixedContentMode(com.reactnativecommunity.webview.b bVar, String str) {
         if (str != null && !ReactScrollViewHelper.OVER_SCROLL_NEVER.equals(str)) {
             if (ReactScrollViewHelper.OVER_SCROLL_ALWAYS.equals(str)) {
-                bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.f0
-                    @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+                bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.f0
+                    @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
                     public final void a(RNCWebViewManager.g gVar) {
                         gVar.getSettings().setMixedContentMode(0);
                     }
                 });
                 return;
             } else if ("compatibility".equals(str)) {
-                bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.g0
-                    @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+                bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.g0
+                    @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
                     public final void a(RNCWebViewManager.g gVar) {
                         gVar.getSettings().setMixedContentMode(2);
                     }
@@ -1666,8 +1666,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
                 return;
             }
         }
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.e0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.e0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setMixedContentMode(1);
             }
@@ -1676,8 +1676,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "nestedScrollEnabled")
     public void setNestedScrollEnabled(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.c
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.c
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setNestedScrollEnabled(z10);
             }
@@ -1686,8 +1686,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "onContentSizeChange")
     public void setOnContentSizeChange(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.r
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.r
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setSendContentSizeChangeEvents(z10);
             }
@@ -1696,8 +1696,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "onScroll")
     public void setOnScroll(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.l0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.l0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setHasScrollEvent(z10);
             }
@@ -1716,8 +1716,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
             } else if (str.equals(ReactScrollViewHelper.OVER_SCROLL_NEVER)) {
                 i10 = 2;
             }
-            bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.t
-                @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+            bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.t
+                @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
                 public final void a(RNCWebViewManager.g gVar) {
                     gVar.setOverScrollMode(i10.intValue());
                 }
@@ -1725,8 +1725,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         }
         str.equals(ReactScrollViewHelper.OVER_SCROLL_ALWAYS);
         i10 = 0;
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.t
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.t
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setOverScrollMode(i10.intValue());
             }
@@ -1735,8 +1735,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "saveFormDataDisabled")
     public void setSaveFormDataDisabled(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.m
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.m
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setSaveFormData(!z10);
             }
@@ -1745,8 +1745,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "scalesPageToFit")
     public void setScalesPageToFit(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.w0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.w0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 RNCWebViewManager.b(z10, gVar);
             }
@@ -1755,8 +1755,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "showsHorizontalScrollIndicator")
     public void setShowsHorizontalScrollIndicator(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.v
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.v
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setHorizontalScrollBarEnabled(z10);
             }
@@ -1765,8 +1765,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "showsVerticalScrollIndicator")
     public void setShowsVerticalScrollIndicator(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.y
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.y
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setVerticalScrollBarEnabled(z10);
             }
@@ -1775,8 +1775,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "source")
     public void setSource(com.reactnativecommunity.webview.b bVar, final ReadableMap readableMap) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.h
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.h
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 RNCWebViewManager.s(ReadableMap.this, gVar);
             }
@@ -1785,8 +1785,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "setSupportMultipleWindows")
     public void setSupportMultipleWindows(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.s
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.s
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setSupportMultipleWindows(z10);
             }
@@ -1795,13 +1795,13 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "temporaryParentNodeTag")
     public void setTemporaryParentNodeTag(com.reactnativecommunity.webview.b bVar, int i10) {
-        bVar.f18504d = i10;
+        bVar.f18137d = i10;
     }
 
     @ReactProp(name = "textZoom")
     public void setTextZoom(com.reactnativecommunity.webview.b bVar, final int i10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.d0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.d0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.getSettings().setTextZoom(i10);
             }
@@ -1810,8 +1810,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "thirdPartyCookiesEnabled")
     public void setThirdPartyCookiesEnabled(com.reactnativecommunity.webview.b bVar, final boolean z10) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.m0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.m0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 CookieManager.getInstance().setAcceptThirdPartyCookies(gVar, z10);
             }
@@ -1820,8 +1820,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "urlPrefixesForDefaultIntent")
     public void setUrlPrefixesForDefaultIntent(com.reactnativecommunity.webview.b bVar, final ReadableArray readableArray) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.u0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.u0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 RNCWebViewManager.S(ReadableArray.this, gVar);
             }
@@ -1851,7 +1851,7 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @ReactProp(name = "webViewKey")
     public void setWebViewKey(final com.reactnativecommunity.webview.b bVar, final String str) {
-        final Map a10 = a1.f18501a.a();
+        final Map a10 = a1.f18134a.a();
         if (a10.containsKey(str)) {
             g gVar = (g) a10.get(str);
             ViewGroup viewGroup = (ViewGroup) gVar.getParent();
@@ -1865,8 +1865,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
             }
             bVar.a(gVar);
         }
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.q0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.q0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar2) {
                 RNCWebViewManager.O(str, bVar, a10, gVar2);
             }
@@ -1897,8 +1897,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager
     public void addEventEmitters(ThemedReactContext themedReactContext, com.reactnativecommunity.webview.b bVar) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.b0
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.b0
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 gVar.setWebViewClient(new RNCWebViewManager.h());
             }
@@ -1939,8 +1939,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         if (bVar.getWebView() == null) {
             return;
         }
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.j
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.j
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 RNCWebViewManager.this.lambda$onDropViewInstance$46(bVar, gVar);
             }
@@ -1949,8 +1949,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
 
     @Override // com.facebook.react.uimanager.ViewManager
     public void receiveCommand(@NonNull com.reactnativecommunity.webview.b bVar, final String str, final ReadableArray readableArray) {
-        bVar.d(new b.InterfaceC0210b() { // from class: com.reactnativecommunity.webview.p
-            @Override // com.reactnativecommunity.webview.b.InterfaceC0210b
+        bVar.d(new b.InterfaceC0215b() { // from class: com.reactnativecommunity.webview.p
+            @Override // com.reactnativecommunity.webview.b.InterfaceC0215b
             public final void a(RNCWebViewManager.g gVar) {
                 RNCWebViewManager.a(str, readableArray, gVar);
             }
@@ -1963,22 +1963,22 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
     public static class h extends WebViewClient {
 
         /* renamed from: b  reason: collision with root package name */
-        protected ReadableArray f18478b;
+        protected ReadableArray f18111b;
 
         /* renamed from: f  reason: collision with root package name */
-        protected f4.b f18482f;
+        protected f4.b f18115f;
 
         /* renamed from: a  reason: collision with root package name */
-        protected boolean f18477a = false;
+        protected boolean f18110a = false;
 
         /* renamed from: c  reason: collision with root package name */
-        protected g.b f18479c = null;
+        protected g.b f18112c = null;
 
         /* renamed from: d  reason: collision with root package name */
-        protected String f18480d = null;
+        protected String f18113d = null;
 
         /* renamed from: e  reason: collision with root package name */
-        protected com.reactnativecommunity.webview.a f18481e = null;
+        protected com.reactnativecommunity.webview.a f18114e = null;
 
         protected h() {
         }
@@ -1988,7 +1988,7 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
             WritableMap createMap = Arguments.createMap();
             createMap.putDouble("target", com.reactnativecommunity.webview.b.c(webView));
             createMap.putString("url", str);
-            if (!this.f18477a && webView.getProgress() != 100) {
+            if (!this.f18110a && webView.getProgress() != 100) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -2001,33 +2001,33 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         }
 
         protected void b(WebView webView, String str) {
-            ((g) webView).g(webView, new bm.c(com.reactnativecommunity.webview.b.c(webView), a(webView, str)));
+            ((g) webView).g(webView, new cm.c(com.reactnativecommunity.webview.b.c(webView), a(webView, str)));
         }
 
         public void c(com.reactnativecommunity.webview.a aVar) {
-            this.f18481e = aVar;
+            this.f18114e = aVar;
         }
 
         public void d(String str) {
-            this.f18480d = str;
+            this.f18113d = str;
         }
 
         public void e(g.b bVar) {
-            this.f18479c = bVar;
+            this.f18112c = bVar;
         }
 
         public void f(ReadableArray readableArray) {
-            this.f18478b = readableArray;
+            this.f18111b = readableArray;
         }
 
         public void g(f4.b bVar) {
-            this.f18482f = bVar;
+            this.f18115f = bVar;
         }
 
         @Override // android.webkit.WebViewClient
         public void onPageFinished(WebView webView, String str) {
             super.onPageFinished(webView, str);
-            if (!this.f18477a) {
+            if (!this.f18110a) {
                 ((g) webView).b();
                 b(webView, str);
             }
@@ -2036,33 +2036,33 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         @Override // android.webkit.WebViewClient
         public void onPageStarted(WebView webView, String str, Bitmap bitmap) {
             super.onPageStarted(webView, str, bitmap);
-            this.f18477a = false;
+            this.f18110a = false;
             g gVar = (g) webView;
             gVar.c();
-            gVar.g(webView, new bm.e(com.reactnativecommunity.webview.b.c(webView), a(webView, str)));
+            gVar.g(webView, new cm.e(com.reactnativecommunity.webview.b.c(webView), a(webView, str)));
         }
 
         @Override // android.webkit.WebViewClient
         public void onReceivedError(WebView webView, int i10, String str, String str2) {
-            String str3 = this.f18480d;
+            String str3 = this.f18113d;
             if (str3 != null && str2.equals(str3) && i10 == -1 && str.equals("net::ERR_FAILED")) {
                 d(null);
                 return;
             }
             super.onReceivedError(webView, i10, str, str2);
-            this.f18477a = true;
+            this.f18110a = true;
             b(webView, str2);
             WritableMap a10 = a(webView, str2);
             a10.putDouble("code", i10);
             a10.putString("description", str);
-            ((g) webView).g(webView, new bm.b(com.reactnativecommunity.webview.b.c(webView), a10));
+            ((g) webView).g(webView, new cm.b(com.reactnativecommunity.webview.b.c(webView), a10));
         }
 
         @Override // android.webkit.WebViewClient
         public void onReceivedHttpAuthRequest(WebView webView, HttpAuthHandler httpAuthHandler, String str, String str2) {
-            com.reactnativecommunity.webview.a aVar = this.f18481e;
+            com.reactnativecommunity.webview.a aVar = this.f18114e;
             if (aVar != null) {
-                httpAuthHandler.proceed(aVar.f18498a, aVar.f18499b);
+                httpAuthHandler.proceed(aVar.f18131a, aVar.f18132b);
             } else {
                 super.onReceivedHttpAuthRequest(webView, httpAuthHandler, str, str2);
             }
@@ -2075,7 +2075,7 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
                 WritableMap a10 = a(webView, webResourceRequest.getUrl().toString());
                 a10.putInt("statusCode", webResourceResponse.getStatusCode());
                 a10.putString("description", webResourceResponse.getReasonPhrase());
-                ((g) webView).g(webView, new bm.a(com.reactnativecommunity.webview.b.c(webView), a10));
+                ((g) webView).g(webView, new cm.a(com.reactnativecommunity.webview.b.c(webView), a10));
             }
         }
 
@@ -2134,13 +2134,13 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
             }
             WritableMap a10 = a(webView, webView.getUrl());
             a10.putBoolean("didCrash", renderProcessGoneDetail.didCrash());
-            ((g) webView).g(webView, new bm.g(com.reactnativecommunity.webview.b.c(webView), a10));
+            ((g) webView).g(webView, new cm.g(com.reactnativecommunity.webview.b.c(webView), a10));
             return true;
         }
 
         @Override // android.webkit.WebViewClient
         public WebResourceResponse shouldInterceptRequest(WebView webView, WebResourceRequest webResourceRequest) {
-            f4.b bVar = this.f18482f;
+            f4.b bVar = this.f18115f;
             if (bVar == null) {
                 return super.shouldInterceptRequest(webView, webResourceRequest);
             }
@@ -2150,8 +2150,8 @@ public class RNCWebViewManager extends SimpleViewManager<com.reactnativecommunit
         @Override // android.webkit.WebViewClient
         public boolean shouldOverrideUrlLoading(WebView webView, String str) {
             p8.a.J(RNCWebViewManager.TAG, "Couldn't use blocking synchronous call for onShouldStartLoadWithRequest due to debugging or missing Catalyst instance, falling back to old event-and-load.");
-            this.f18479c.b(true);
-            ((g) webView).g(webView, new bm.h(com.reactnativecommunity.webview.b.c(webView), a(webView, str)));
+            this.f18112c.b(true);
+            ((g) webView).g(webView, new cm.h(com.reactnativecommunity.webview.b.c(webView), a(webView, str)));
             return true;
         }
 

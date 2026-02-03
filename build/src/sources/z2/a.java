@@ -15,19 +15,19 @@ import z2.d;
 public final class a extends d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f55286a;
+    private final Map f55418a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final AtomicBoolean f55287b;
+    private final AtomicBoolean f55419b;
 
     /* renamed from: z2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    static final class C0771a extends Lambda implements Function1 {
+    static final class C0782a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0771a f55288d = new C0771a();
+        public static final C0782a f55420d = new C0782a();
 
-        C0771a() {
+        C0782a() {
             super(1);
         }
 
@@ -45,7 +45,7 @@ public final class a extends d {
 
     @Override // z2.d
     public Map a() {
-        Map unmodifiableMap = Collections.unmodifiableMap(this.f55286a);
+        Map unmodifiableMap = Collections.unmodifiableMap(this.f55418a);
         Intrinsics.checkNotNullExpressionValue(unmodifiableMap, "unmodifiableMap(preferencesMap)");
         return unmodifiableMap;
     }
@@ -53,11 +53,11 @@ public final class a extends d {
     @Override // z2.d
     public Object b(d.a key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        return this.f55286a.get(key);
+        return this.f55418a.get(key);
     }
 
     public final void e() {
-        if (!this.f55287b.get()) {
+        if (!this.f55419b.get()) {
             return;
         }
         throw new IllegalStateException("Do mutate preferences once returned to DataStore.");
@@ -65,13 +65,13 @@ public final class a extends d {
 
     public boolean equals(Object obj) {
         if (obj instanceof a) {
-            return Intrinsics.areEqual(this.f55286a, ((a) obj).f55286a);
+            return Intrinsics.areEqual(this.f55418a, ((a) obj).f55418a);
         }
         return false;
     }
 
     public final void f() {
-        this.f55287b.set(true);
+        this.f55419b.set(true);
     }
 
     public final void g(d.b... pairs) {
@@ -87,11 +87,11 @@ public final class a extends d {
     public final Object h(d.a key) {
         Intrinsics.checkNotNullParameter(key, "key");
         e();
-        return this.f55286a.remove(key);
+        return this.f55418a.remove(key);
     }
 
     public int hashCode() {
-        return this.f55286a.hashCode();
+        return this.f55418a.hashCode();
     }
 
     public final void i(d.a key, Object obj) {
@@ -105,22 +105,22 @@ public final class a extends d {
         if (obj == null) {
             h(key);
         } else if (obj instanceof Set) {
-            Map map = this.f55286a;
+            Map map = this.f55418a;
             Set unmodifiableSet = Collections.unmodifiableSet(CollectionsKt.l1((Iterable) obj));
             Intrinsics.checkNotNullExpressionValue(unmodifiableSet, "unmodifiableSet(value.toSet())");
             map.put(key, unmodifiableSet);
         } else {
-            this.f55286a.put(key, obj);
+            this.f55418a.put(key, obj);
         }
     }
 
     public String toString() {
-        return CollectionsKt.x0(this.f55286a.entrySet(), ",\n", "{\n", "\n}", 0, null, C0771a.f55288d, 24, null);
+        return CollectionsKt.x0(this.f55418a.entrySet(), ",\n", "{\n", "\n}", 0, null, C0782a.f55420d, 24, null);
     }
 
     public a(Map preferencesMap, boolean z10) {
         Intrinsics.checkNotNullParameter(preferencesMap, "preferencesMap");
-        this.f55286a = preferencesMap;
-        this.f55287b = new AtomicBoolean(z10);
+        this.f55418a = preferencesMap;
+        this.f55419b = new AtomicBoolean(z10);
     }
 }

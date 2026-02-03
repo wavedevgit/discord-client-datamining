@@ -5,7 +5,7 @@ import ui.c;
 final class c8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c8 f38144a = new c8();
+    static final c8 f38124a = new c8();
 
     static {
         c.b a10 = ui.c.a("modelType");

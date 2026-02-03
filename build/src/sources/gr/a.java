@@ -1,5 +1,20 @@
 package gr;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
-    CharSequence a(String str, String str2);
+public abstract class a {
+    public static a a() {
+        return new b();
+    }
+
+    public abstract String b(String str);
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static class b extends a {
+        private b() {
+        }
+
+        @Override // gr.a
+        public String b(String str) {
+            return str;
+        }
+    }
 }

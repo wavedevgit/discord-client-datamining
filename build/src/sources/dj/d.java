@@ -6,7 +6,7 @@ import dj.c;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static d f22219a = a().a();
+    public static d f21795a = a().a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static abstract class a {

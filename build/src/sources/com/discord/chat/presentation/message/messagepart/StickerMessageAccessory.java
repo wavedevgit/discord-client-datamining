@@ -19,19 +19,19 @@ public final class StickerMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ StickerMessageAccessory m657copyntcYbpo$default(StickerMessageAccessory stickerMessageAccessory, String str, Sticker sticker, int i10, Object obj) {
+    public static /* synthetic */ StickerMessageAccessory m659copyntcYbpo$default(StickerMessageAccessory stickerMessageAccessory, String str, Sticker sticker, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = stickerMessageAccessory.messageId;
         }
         if ((i10 & 2) != 0) {
             sticker = stickerMessageAccessory.sticker;
         }
-        return stickerMessageAccessory.m659copyntcYbpo(str, sticker);
+        return stickerMessageAccessory.m661copyntcYbpo(str, sticker);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m658component13Eiw7ao() {
+    public final String m660component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -42,7 +42,7 @@ public final class StickerMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final StickerMessageAccessory m659copyntcYbpo(@NotNull String messageId, @NotNull Sticker sticker) {
+    public final StickerMessageAccessory m661copyntcYbpo(@NotNull String messageId, @NotNull Sticker sticker) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(sticker, "sticker");
         return new StickerMessageAccessory(messageId, sticker, null);
@@ -54,7 +54,7 @@ public final class StickerMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof StickerMessageAccessory) {
             StickerMessageAccessory stickerMessageAccessory = (StickerMessageAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, stickerMessageAccessory.messageId) && Intrinsics.areEqual(this.sticker, stickerMessageAccessory.sticker);
+            return MessageId.m1090equalsimpl0(this.messageId, stickerMessageAccessory.messageId) && Intrinsics.areEqual(this.sticker, stickerMessageAccessory.sticker);
         }
         return false;
     }
@@ -62,7 +62,7 @@ public final class StickerMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -72,14 +72,14 @@ public final class StickerMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.sticker.hashCode();
+        return (MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.sticker.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         Sticker sticker = this.sticker;
-        return "StickerMessageAccessory(messageId=" + m1091toStringimpl + ", sticker=" + sticker + ")";
+        return "StickerMessageAccessory(messageId=" + m1093toStringimpl + ", sticker=" + sticker + ")";
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

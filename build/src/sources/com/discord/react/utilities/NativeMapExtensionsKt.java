@@ -6,10 +6,10 @@ import com.facebook.react.bridge.ReadableMapKeySetIterator;
 import com.facebook.react.bridge.ReadableType;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.devsupport.StackTraceHelper;
-import ir.p;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -21,7 +21,7 @@ import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.JsonBuilder;
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
-import xs.w;
+import ys.w;
 @Metadata(d1 = {"\u0000\\\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010$\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u0006\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0005\u001a3\u0010\u0004\u001a\u00020\u00052&\u0010\u0006\u001a\u0014\u0012\u0010\b\u0001\u0012\f\u0012\u0004\u0012\u00020\t\u0012\u0002\b\u00030\b0\u0007\"\f\u0012\u0004\u0012\u00020\t\u0012\u0002\b\u00030\b¢\u0006\u0002\u0010\n\u001a\u001c\u0010\u000b\u001a\u00020\u0005\"\u0004\b\u0000\u0010\f*\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u0002H\f0\r\u001a%\u0010\u000e\u001a\u00020\u000f\"\u0004\b\u0000\u0010\f*\u00020\u00052\u0006\u0010\u0010\u001a\u00020\t2\u0006\u0010\u0011\u001a\u0002H\f¢\u0006\u0002\u0010\u0012\u001a\u001a\u0010\u0013\u001a\u00020\t*\u00020\u00142\u0006\u0010\u0010\u001a\u00020\t2\u0006\u0010\u0015\u001a\u00020\t\u001a\u0012\u0010\u0013\u001a\u00020\t*\u00020\u00142\u0006\u0010\u0010\u001a\u00020\t\u001a\u0012\u0010\u0016\u001a\u00020\t*\u00020\u00142\u0006\u0010\u0017\u001a\u00020\t\u001a\u0012\u0010\u0018\u001a\u00020\u0019*\u00020\u00142\u0006\u0010\u0010\u001a\u00020\t\u001a\u0012\u0010\u001a\u001a\u00020\u0014*\u00020\u00142\u0006\u0010\u0010\u001a\u00020\t\u001a\u001e\u0010\u001b\u001a\u00020\u001c*\u0004\u0018\u00010\u00142\u0006\u0010\u0010\u001a\u00020\t2\b\b\u0002\u0010\u0015\u001a\u00020\u001c\u001a\u001c\u0010\u001d\u001a\u00020\u001e*\u0004\u0018\u00010\u00142\u0006\u0010\u0010\u001a\u00020\t2\u0006\u0010\u0015\u001a\u00020\u001e\u001a'\u0010\u001f\u001a\u0004\u0018\u00010\u001e*\u0004\u0018\u00010\u00142\u0006\u0010\u0010\u001a\u00020\t2\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u001e¢\u0006\u0002\u0010 \u001a\u001c\u0010!\u001a\u00020\"*\u0004\u0018\u00010\u00142\u0006\u0010\u0010\u001a\u00020\t2\u0006\u0010\u0015\u001a\u00020\"\u001a'\u0010#\u001a\u0004\u0018\u00010\"*\u0004\u0018\u00010\u00142\u0006\u0010\u0010\u001a\u00020\t2\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\"¢\u0006\u0002\u0010$\u001a\u0016\u0010%\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\t0\r*\u00020\u0014\u001a\n\u0010&\u001a\u00020'*\u00020\u0014\u001a\n\u0010(\u001a\u00020\t*\u00020\u0014\u001a\u001a\u0010)\u001a\u0002H*\"\u0006\b\u0000\u0010*\u0018\u0001*\u00020\u0014H\u0086\b¢\u0006\u0002\u0010+\"\u0011\u0010\u0000\u001a\u00020\u0001¢\u0006\b\n\u0000\u001a\u0004\b\u0002\u0010\u0003¨\u0006,"}, d2 = {"json", "Lkotlinx/serialization/json/Json;", "getJson", "()Lkotlinx/serialization/json/Json;", "nativeMapOf", "Lcom/facebook/react/bridge/WritableNativeMap;", "pairs", "", "Lkotlin/Pair;", "", "([Lkotlin/Pair;)Lcom/facebook/react/bridge/WritableNativeMap;", "toNativeMap", "V", "", "put", "", "key", "value", "(Lcom/facebook/react/bridge/WritableNativeMap;Ljava/lang/String;Ljava/lang/Object;)V", "getNonNullString", "Lcom/facebook/react/bridge/ReadableMap;", "default", "getStringOrEmpty", StackTraceHelper.NAME_KEY, "getNonNullArray", "Lcom/facebook/react/bridge/ReadableArray;", "getNonNullMap", "getBoolean", "", "getInt", "", "getNullableInt", "(Lcom/facebook/react/bridge/ReadableMap;Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Integer;", "getDouble", "", "getNullableDouble", "(Lcom/facebook/react/bridge/ReadableMap;Ljava/lang/String;Ljava/lang/Double;)Ljava/lang/Double;", "toStringMap", "toJson", "Lorg/json/JSONObject;", "toJsonString", "toKotlinObject", "T", "(Lcom/facebook/react/bridge/ReadableMap;)Ljava/lang/Object;", "react_utilities_release"}, k = 2, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nNativeMapExtensions.kt\nKotlin\n*S Kotlin\n*F\n+ 1 NativeMapExtensions.kt\ncom/discord/react/utilities/NativeMapExtensionsKt\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 4 Json.kt\nkotlinx/serialization/json/Json\n*L\n1#1,138:1\n13472#2,2:139\n1869#3,2:141\n147#4:143\n*S KotlinDebug\n*F\n+ 1 NativeMapExtensions.kt\ncom/discord/react/utilities/NativeMapExtensionsKt\n*L\n23#1:139,2\n33#1:141,2\n137#1:143\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -172,7 +172,7 @@ public final class NativeMapExtensionsKt {
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @NotNull
@@ -262,7 +262,7 @@ public final class NativeMapExtensionsKt {
         Intrinsics.checkNotNullParameter(readableMap, "<this>");
         Json json2 = getJson();
         String jsonString = toJsonString(readableMap);
-        dt.b a10 = json2.a();
+        et.b a10 = json2.a();
         Intrinsics.reifiedOperationMarker(6, "T");
         MagicApiIntrinsics.voidMagicApiCall("kotlinx.serialization.serializer.withModule");
         return (T) json2.b(w.c(a10, null), jsonString);

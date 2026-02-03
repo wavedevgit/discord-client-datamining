@@ -1,10 +1,23 @@
 package wo;
+
+import uq.h;
+import wo.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class g {
+public final class g implements e.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f52752a = 2131362789;
+    private final f f52868a;
 
-    /* renamed from: b  reason: collision with root package name */
-    public static int f52753b = 2131362801;
+    g(f fVar) {
+        this.f52868a = fVar;
+    }
+
+    public static h b(f fVar) {
+        return uq.e.a(new g(fVar));
+    }
+
+    @Override // wo.e.a
+    public e a(String str) {
+        return this.f52868a.b(str);
+    }
 }

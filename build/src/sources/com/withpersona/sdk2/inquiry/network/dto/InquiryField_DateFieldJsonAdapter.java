@@ -52,16 +52,16 @@ public final class InquiryField_DateFieldJsonAdapter extends h {
         String str2 = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 str2 = (String) this.stringAdapter.fromJson(reader);
                 if (str2 == null) {
-                    throw sm.c.x("type", "type", reader);
+                    throw tm.c.x("type", "type", reader);
                 }
                 i10 = -3;
             } else {
@@ -75,7 +75,7 @@ public final class InquiryField_DateFieldJsonAdapter extends h {
         }
         Constructor<InquiryField.DateField> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InquiryField.DateField.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, sm.c.f49097c);
+            constructor = InquiryField.DateField.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, tm.c.f49935c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -89,9 +89,9 @@ public final class InquiryField_DateFieldJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (dateField != null) {
             writer.l();
-            writer.A0("value");
+            writer.t0("value");
             this.nullableStringAdapter.toJson(writer, dateField.getValue());
-            writer.A0("type");
+            writer.t0("type");
             this.stringAdapter.toJson(writer, dateField.getType());
             writer.E();
             return;

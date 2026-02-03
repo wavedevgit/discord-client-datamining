@@ -18,16 +18,16 @@ public final class TypeAliasExpansion {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final TypeAliasExpansion f35889a;
+    private final TypeAliasExpansion f35665a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TypeAliasDescriptor f35890b;
+    private final TypeAliasDescriptor f35666b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f35891c;
+    private final List f35667c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f35892d;
+    private final Map f35668d;
 
     @SourceDebugExtension({"SMAP\nTypeAliasExpansion.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TypeAliasExpansion.kt\norg/jetbrains/kotlin/types/TypeAliasExpansion$Companion\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,43:1\n1563#2:44\n1634#2,3:45\n*S KotlinDebug\n*F\n+ 1 TypeAliasExpansion.kt\norg/jetbrains/kotlin/types/TypeAliasExpansion$Companion\n*L\n34#1:44\n34#1:45,3\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -60,19 +60,19 @@ public final class TypeAliasExpansion {
 
     @NotNull
     public final List<TypeProjection> getArguments() {
-        return this.f35891c;
+        return this.f35667c;
     }
 
     @NotNull
     public final TypeAliasDescriptor getDescriptor() {
-        return this.f35890b;
+        return this.f35666b;
     }
 
     public final TypeProjection getReplacement(@NotNull TypeConstructor constructor) {
         Intrinsics.checkNotNullParameter(constructor, "constructor");
-        ClassifierDescriptor mo1198getDeclarationDescriptor = constructor.mo1198getDeclarationDescriptor();
-        if (mo1198getDeclarationDescriptor instanceof TypeParameterDescriptor) {
-            return (TypeProjection) this.f35892d.get(mo1198getDeclarationDescriptor);
+        ClassifierDescriptor mo1200getDeclarationDescriptor = constructor.mo1200getDeclarationDescriptor();
+        if (mo1200getDeclarationDescriptor instanceof TypeParameterDescriptor) {
+            return (TypeProjection) this.f35668d.get(mo1200getDeclarationDescriptor);
         }
         return null;
     }
@@ -80,8 +80,8 @@ public final class TypeAliasExpansion {
     public final boolean isRecursion(@NotNull TypeAliasDescriptor descriptor) {
         boolean z10;
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        if (!Intrinsics.areEqual(this.f35890b, descriptor)) {
-            TypeAliasExpansion typeAliasExpansion = this.f35889a;
+        if (!Intrinsics.areEqual(this.f35666b, descriptor)) {
+            TypeAliasExpansion typeAliasExpansion = this.f35665a;
             if (typeAliasExpansion != null) {
                 z10 = typeAliasExpansion.isRecursion(descriptor);
             } else {
@@ -96,9 +96,9 @@ public final class TypeAliasExpansion {
     }
 
     private TypeAliasExpansion(TypeAliasExpansion typeAliasExpansion, TypeAliasDescriptor typeAliasDescriptor, List list, Map map) {
-        this.f35889a = typeAliasExpansion;
-        this.f35890b = typeAliasDescriptor;
-        this.f35891c = list;
-        this.f35892d = map;
+        this.f35665a = typeAliasExpansion;
+        this.f35666b = typeAliasDescriptor;
+        this.f35667c = list;
+        this.f35668d = map;
     }
 }

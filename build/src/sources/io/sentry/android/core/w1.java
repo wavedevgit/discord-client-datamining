@@ -48,7 +48,7 @@ public abstract class w1 {
         } else {
             HashMap hashMap = new HashMap();
             hashMap.put("description", iVar.d());
-            hashMap.put("start_timestamp_ms", Long.valueOf(iVar.j()));
+            hashMap.put("start_timestamp_ms", Long.valueOf(iVar.k()));
             hashMap.put("end_timestamp_ms", Long.valueOf(iVar.g()));
             list.add(hashMap);
         }
@@ -144,7 +144,7 @@ public abstract class w1 {
         hashMap.put("spans", arrayList);
         hashMap.put("type", q10.n().toString().toLowerCase(Locale.ROOT));
         if (q10.l().q()) {
-            hashMap.put("app_start_timestamp_ms", Long.valueOf(q10.l().j()));
+            hashMap.put("app_start_timestamp_ms", Long.valueOf(q10.l().k()));
         }
         return hashMap;
     }
@@ -176,8 +176,8 @@ public abstract class w1 {
                 }
                 if (C.i() == null) {
                     try {
-                        C.o((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0405a() { // from class: io.sentry.android.core.s1
-                            @Override // io.sentry.util.runtime.a.InterfaceC0405a
+                        C.o((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0408a() { // from class: io.sentry.android.core.s1
+                            @Override // io.sentry.util.runtime.a.InterfaceC0408a
                             public final Object run() {
                                 String a10;
                                 a10 = r1.a(context);

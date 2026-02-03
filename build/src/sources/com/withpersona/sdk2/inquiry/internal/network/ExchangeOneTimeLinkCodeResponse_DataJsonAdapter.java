@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20198a;
+    private final m.b f19831a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20199b;
+    private final com.squareup.moshi.h f19832b;
 
     public ExchangeOneTimeLinkCodeResponse_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("relationships");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20198a = a10;
+        this.f19831a = a10;
         com.squareup.moshi.h f10 = moshi.f(a0.j(Map.class, String.class, ExchangeOneTimeLinkCodeResponse.Relationship.class), x0.d(), "relationships");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20199b = f10;
+        this.f19832b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,13 +37,13 @@ public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.s
         reader.r();
         Map map = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f20198a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    map = (Map) this.f20199b.fromJson(reader);
+            int t02 = reader.t0(this.f19831a);
+            if (t02 != -1) {
+                if (t02 == 0) {
+                    map = (Map) this.f19832b.fromJson(reader);
                 }
             } else {
-                reader.E0();
+                reader.F0();
                 reader.P();
             }
         }
@@ -57,8 +57,8 @@ public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.s
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (data != null) {
             writer.l();
-            writer.A0("relationships");
-            this.f20199b.toJson(writer, data.a());
+            writer.t0("relationships");
+            this.f19832b.toJson(writer, data.a());
             writer.E();
             return;
         }

@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/directory_channels/GuildDirectoryUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var5 = function arg0() {
-        _fun71245: for (var _fun71245_ip = 0;;) switch (_fun71245_ip) {
+        _fun71354: for (var _fun71354_ip = 0;;) switch (_fun71354_ip) {
             case 0:
                 var2 = arg0;
                 var4 = _closure1_slot0;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun71245_ip = 153;
-                    continue _fun71245
+                    _fun71354_ip = 153;
+                    continue _fun71354
                 }
             case 148:
                 var4 = var5.name;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun71245_ip = 176;
-                    continue _fun71245
+                    _fun71354_ip = 176;
+                    continue _fun71354
                 }
             case 171:
                 var4 = var5.icon;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun71245_ip = 200;
-                    continue _fun71245
+                    _fun71354_ip = 200;
+                    continue _fun71354
                 }
             case 194:
                 var4 = var5.splash;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var3 == var5;
                 var4 = undefined;
                 if (var7) {
-                    _fun71245_ip = 233;
-                    continue _fun71245
+                    _fun71354_ip = 233;
+                    continue _fun71354
                 }
             case 227:
                 var4 = var5.features;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun71245_ip = 281;
-                    continue _fun71245
+                    _fun71354_ip = 281;
+                    continue _fun71354
                 }
             case 275:
                 var4 = var5.approximate_member_count;
@@ -172,8 +172,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun71245_ip = 306;
-                    continue _fun71245
+                    _fun71354_ip = 306;
+                    continue _fun71354
                 }
             case 300:
                 var4 = var5.approximate_presence_count;
@@ -183,8 +183,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun71245_ip = 333;
-                    continue _fun71245
+                    _fun71354_ip = 333;
+                    continue _fun71354
                 }
             case 325:
                 var1 = var2.featurable_in_directory;
@@ -226,4 +226,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.rankGuildEntries = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8879, 44, 22, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8911, 44, 22, 2]);

@@ -103,13 +103,13 @@ public class MediaView extends FrameLayout {
         } else {
             setMediaData$default(mediaView, null, true, false, false, null, false, null, null, false, false, false, 0, null, null, null, null, null, null, 262137, null);
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit attachStateChangeListener$lambda$3(MediaView mediaView, boolean z10) {
         setMediaData$default(mediaView, null, false, z10, false, null, false, null, null, false, false, false, 0, null, null, null, null, null, null, 262139, null);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private static /* synthetic */ void getAttachStateChangeListener$annotations() {
@@ -136,7 +136,7 @@ public class MediaView extends FrameLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onMediaPlayFinishedAnalytics$lambda$1(MediaPlayFinishedAnalytics it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -235,7 +235,7 @@ public class MediaView extends FrameLayout {
     public static final Unit prepareMediaPlayer$lambda$19$lambda$16(MediaView mediaView, MediaPlayer.Event event) {
         Intrinsics.checkNotNullParameter(event, "event");
         setMediaData$default(mediaView, null, false, false, false, event, false, null, null, false, false, false, 0, null, null, null, null, null, null, 262127, null);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -247,14 +247,14 @@ public class MediaView extends FrameLayout {
             z10 = false;
         }
         setMediaData$default(mediaView, null, false, false, false, null, z10, null, null, false, false, false, 0, null, null, null, null, null, null, 262111, null);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit prepareMediaPlayer$lambda$19$lambda$18(MediaView mediaView, MediaPlayFinishedAnalytics event) {
         Intrinsics.checkNotNullParameter(event, "event");
         mediaView.onMediaPlayFinishedAnalytics.invoke(event);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void registerForPortal() {
@@ -311,7 +311,7 @@ public class MediaView extends FrameLayout {
         Intrinsics.checkNotNullParameter(view, "view");
         mediaView.removeOnAttachStateChangeListener(mediaView.attachStateChangeListener);
         ViewRemoveFromParentKt.removeFromParent(view);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -327,7 +327,7 @@ public class MediaView extends FrameLayout {
                 MediaView.registerForPortal$lambda$22$lambda$21(MediaPlayer.this, mediaPlayerView, mediaView);
             }
         });
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -355,7 +355,7 @@ public class MediaView extends FrameLayout {
         if (!Intrinsics.areEqual(portal, d10) || mediaPlayer.hasEnded() || !mediaView.isAttachedToWindow()) {
             mediaView.releasePlayer();
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -375,7 +375,7 @@ public class MediaView extends FrameLayout {
             ViewMeasureExtensionsKt.measureAndLayout(mediaView);
         }
         mediaView.addOnAttachStateChangeListener(mediaView.attachStateChangeListener);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void releasePlayer() {
@@ -401,7 +401,7 @@ public class MediaView extends FrameLayout {
         MediaPlayer mediaPlayer = this.mediaPlayer;
         if (mediaPlayer != null) {
             mediaPlayer.reset();
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
             this.mediaPlayer = null;
         }
         MediaPlayerView mediaPlayerView = this.mediaPlayerView;
@@ -542,8 +542,8 @@ public class MediaView extends FrameLayout {
         if (reactContext != null) {
             reactContext.addLifecycleEventListener(this.lifecycleListener);
         }
-        gs.i.d(CoroutineViewUtilsKt.attachedScope(this, true), null, null, new MediaView$onAttachedToWindow$1(this, null), 3, null);
-        gs.i.d(CoroutineViewUtilsKt.attachedScope(this, true), null, null, new MediaView$onAttachedToWindow$2(this, null), 3, null);
+        hs.i.d(CoroutineViewUtilsKt.attachedScope(this, true), null, null, new MediaView$onAttachedToWindow$1(this, null), 3, null);
+        hs.i.d(CoroutineViewUtilsKt.attachedScope(this, true), null, null, new MediaView$onAttachedToWindow$2(this, null), 3, null);
     }
 
     @Override // android.view.View
@@ -649,7 +649,7 @@ public class MediaView extends FrameLayout {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33298a;
+                unit = Unit.f33074a;
                 return unit;
             }
         };
@@ -706,7 +706,7 @@ public class MediaView extends FrameLayout {
         ReactAssetUtilsKt.setReactAsset(inlineMediaGifIndicator, ReactAsset.Gif);
         SimpleDraweeView simpleDraweeView = inflate.inlineMediaImagePreview;
         ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).z(new ColorDrawable(ThemeManagerKt.getTheme().getBackgroundModNormal()));
-        ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils$ScaleType.f11037e);
+        ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils$ScaleType.f10666e);
         GradientDrawable gradientDrawable = new GradientDrawable();
         gradientDrawable.setShape(0);
         gradientDrawable.setStroke(simpleDraweeView.getResources().getDimensionPixelSize(com.discord.chat.R.dimen.message_media_view_stroke), ColorUtilsKt.getColorCompat(context, com.discord.chat.R.color.chat_media_view_stroke));

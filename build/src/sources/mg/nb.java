@@ -5,7 +5,7 @@ import ui.c;
 final class nb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final nb f38513a = new nb();
+    static final nb f38493a = new nb();
 
     static {
         c.b a10 = ui.c.a("languageOption");

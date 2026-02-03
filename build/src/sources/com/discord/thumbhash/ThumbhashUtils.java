@@ -10,10 +10,10 @@ final class ThumbhashUtils {
     public static final class Channel {
 
         /* renamed from: ac  reason: collision with root package name */
-        float[] f10833ac;
+        float[] f10462ac;
 
         /* renamed from: dc  reason: collision with root package name */
-        float f10834dc;
+        float f10463dc;
         int nx;
         int ny;
         float scale;
@@ -34,13 +34,13 @@ final class ThumbhashUtils {
                     i12++;
                 }
             }
-            this.f10833ac = new float[i13];
+            this.f10462ac = new float[i13];
         }
 
         int decode(byte[] bArr, int i10, int i11, float f10) {
             int i12 = 0;
             while (true) {
-                float[] fArr = this.f10833ac;
+                float[] fArr = this.f10462ac;
                 if (i12 < fArr.length) {
                     fArr[i12] = ((((bArr[(i11 >> 1) + i10] >> ((i11 & 1) << 2)) & 15) / 7.5f) - 1.0f) * f10;
                     i11++;

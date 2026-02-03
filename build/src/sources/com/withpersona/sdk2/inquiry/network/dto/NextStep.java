@@ -24,11 +24,11 @@ import com.withpersona.sdk2.inquiry.network.dto.ui.components.RemoteImage;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.UiComponentConfig;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyles;
 import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StyleElements;
-import ir.l;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
@@ -121,7 +121,7 @@ public abstract class NextStep {
 
         @NotNull
         public final h.e createAdapter() {
-            rm.b e10 = rm.b.b(NextStep.class, "type").c(Unknown.INSTANCE).e(Ui.class, "ui").e(GovernmentId.class, "government_id").e(Selfie.class, "selfie").e(Document.class, "document").e(Complete.class, "complete");
+            sm.b e10 = sm.b.b(NextStep.class, "type").c(Unknown.INSTANCE).e(Ui.class, "ui").e(GovernmentId.class, "government_id").e(Selfie.class, "selfie").e(Document.class, "document").e(Complete.class, "complete");
             Intrinsics.checkNotNullExpressionValue(e10, "withSubtype(...)");
             return e10;
         }
@@ -1688,7 +1688,7 @@ public abstract class NextStep {
             static {
                 StartPage[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = pr.a.a($values);
+                $ENTRIES = qr.a.a($values);
             }
 
             private StartPage(String str, int i10) {
@@ -3140,7 +3140,7 @@ public abstract class NextStep {
             static {
                 CaptureFileType[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = pr.a.a($values);
+                $ENTRIES = qr.a.a($values);
                 Companion = new Companion(null);
             }
 
@@ -3965,7 +3965,7 @@ public abstract class NextStep {
             static {
                 PassportNfcOption[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = pr.a.a($values);
+                $ENTRIES = qr.a.a($values);
                 Companion = new Companion(null);
             }
 
@@ -4460,41 +4460,41 @@ public abstract class NextStep {
                     String str3 = str2;
                     String str4 = null;
                     while (reader.hasNext()) {
-                        String l02 = reader.l0();
-                        if (l02 != null) {
-                            switch (l02.hashCode()) {
+                        String m02 = reader.m0();
+                        if (m02 != null) {
+                            switch (m02.hashCode()) {
                                 case -979805852:
-                                    if (!l02.equals("prompt")) {
+                                    if (!m02.equals("prompt")) {
                                         break;
                                     } else {
-                                        str2 = reader.e1();
+                                        str2 = reader.f1();
                                         continue;
                                     }
                                 case 110371416:
-                                    if (!l02.equals("title")) {
+                                    if (!m02.equals("title")) {
                                         break;
                                     } else {
-                                        str = reader.e1();
+                                        str = reader.f1();
                                         continue;
                                     }
                                 case 432371099:
-                                    if (!l02.equals("disclaimer")) {
+                                    if (!m02.equals("disclaimer")) {
                                         break;
                                     } else {
                                         str4 = JsonReaderUtilsKt.nextStringOrNull(reader);
                                         continue;
                                     }
                                 case 1282023341:
-                                    if (!l02.equals("optionNotice")) {
+                                    if (!m02.equals("optionNotice")) {
                                         break;
                                     } else {
-                                        str3 = reader.e1();
+                                        str3 = reader.f1();
                                         continue;
                                     }
                             }
                         }
                         if (reader.hasNext() && reader.E() == m.c.STRING) {
-                            linkedHashMap.put(l02, reader.e1());
+                            linkedHashMap.put(m02, reader.f1());
                         } else {
                             reader.P();
                         }
@@ -4634,7 +4634,7 @@ public abstract class NextStep {
             static {
                 VideoCaptureMethod[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = pr.a.a($values);
+                $ENTRIES = qr.a.a($values);
                 Companion = new Companion(null);
             }
 
@@ -5192,7 +5192,7 @@ public abstract class NextStep {
             static {
                 CaptureFileType[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = pr.a.a($values);
+                $ENTRIES = qr.a.a($values);
                 Companion = new Companion(null);
             }
 
@@ -5235,7 +5235,7 @@ public abstract class NextStep {
             static {
                 CaptureMethod[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = pr.a.a($values);
+                $ENTRIES = qr.a.a($values);
             }
 
             private CaptureMethod(String str, int i10) {
@@ -5965,7 +5965,7 @@ public abstract class NextStep {
             static {
                 SelfiePose[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = pr.a.a($values);
+                $ENTRIES = qr.a.a($values);
             }
 
             private SelfiePose(String str, int i10) {
@@ -6032,7 +6032,7 @@ public abstract class NextStep {
             static {
                 VideoCaptureMethod[] $values = $values();
                 $VALUES = $values;
-                $ENTRIES = pr.a.a($values);
+                $ENTRIES = qr.a.a($values);
                 Companion = new Companion(null);
             }
 

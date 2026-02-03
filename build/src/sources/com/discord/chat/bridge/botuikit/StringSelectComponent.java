@@ -1,8 +1,8 @@
 package com.discord.chat.bridge.botuikit;
 
-import at.n2;
-import at.p0;
-import at.v1;
+import bt.n2;
+import bt.p0;
+import bt.v1;
 import com.discord.chat.bridge.botuikit.ActionComponentState;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
@@ -22,8 +22,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
+@ys.m
 @Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 E2\u00020\u0001:\u0002DEBu\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\b\b\u0002\u0010\r\u001a\u00020\u000e\u0012\f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010\u0012\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00030\u0010¢\u0006\u0004\b\u0013\u0010\u0014B\u008d\u0001\b\u0010\u0012\u0006\u0010\u0015\u001a\u00020\u0003\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\u0006\u0010\r\u001a\u00020\u000e\u0012\u000e\u0010\u000f\u001a\n\u0012\u0004\u0012\u00020\u0011\u0018\u00010\u0010\u0012\u000e\u0010\u0012\u001a\n\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u0010\u0012\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017¢\u0006\u0004\b\u0013\u0010\u0018J\u000e\u0010)\u001a\b\u0012\u0004\u0012\u00020*0\u0010H\u0016J\t\u0010+\u001a\u00020\u0003HÆ\u0003J\t\u0010,\u001a\u00020\u0005HÆ\u0003J\t\u0010-\u001a\u00020\u0007HÆ\u0003J\t\u0010.\u001a\u00020\u0005HÆ\u0003J\u000b\u0010/\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u00100\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u00101\u001a\u00020\u0003HÆ\u0003J\t\u00102\u001a\u00020\u0003HÆ\u0003J\t\u00103\u001a\u00020\u000eHÆ\u0003J\u000f\u00104\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010HÆ\u0003J\u000f\u00105\u001a\b\u0012\u0004\u0012\u00020\u00030\u0010HÆ\u0003J\u0087\u0001\u00106\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u000b\u001a\u00020\u00032\b\b\u0002\u0010\f\u001a\u00020\u00032\b\b\u0002\u0010\r\u001a\u00020\u000e2\u000e\b\u0002\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u00102\u000e\b\u0002\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00030\u0010HÆ\u0001J\u0013\u00107\u001a\u00020\u000e2\b\u00108\u001a\u0004\u0018\u000109HÖ\u0003J\t\u0010:\u001a\u00020\u0003HÖ\u0001J\t\u0010;\u001a\u00020\u0005HÖ\u0001J%\u0010<\u001a\u00020=2\u0006\u0010>\u001a\u00020\u00002\u0006\u0010?\u001a\u00020@2\u0006\u0010A\u001a\u00020BH\u0001¢\u0006\u0002\bCR\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u0014\u0010\u0006\u001a\u00020\u0007X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0014\u0010\b\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u001cR\u0016\u0010\t\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u001cR\u0016\u0010\n\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u001cR\u0014\u0010\u000b\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u001aR\u0014\u0010\f\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b#\u0010\u001aR\u0014\u0010\r\u001a\u00020\u000eX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b$\u0010%R\u0017\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010¢\u0006\b\n\u0000\u001a\u0004\b&\u0010'R\u0017\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00030\u0010¢\u0006\b\n\u0000\u001a\u0004\b(\u0010'¨\u0006F"}, d2 = {"Lcom/discord/chat/bridge/botuikit/StringSelectComponent;", "Lcom/discord/chat/bridge/botuikit/SelectComponent;", "type", "", StackTraceHelper.ID_KEY, "", "state", "Lcom/discord/chat/bridge/botuikit/ActionComponentState;", "customId", ReactTextInputShadowNode.PROP_PLACEHOLDER, ViewProps.ACCESSIBILITY_LABEL, "minValues", "maxValues", "disabled", "", "options", "", "Lcom/discord/chat/bridge/botuikit/StringSelectItem;", "selectedOptions", "<init>", "(ILjava/lang/String;Lcom/discord/chat/bridge/botuikit/ActionComponentState;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZLjava/util/List;Ljava/util/List;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILjava/lang/String;Lcom/discord/chat/bridge/botuikit/ActionComponentState;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZLjava/util/List;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getType", "()I", "getId", "()Ljava/lang/String;", "getState", "()Lcom/discord/chat/bridge/botuikit/ActionComponentState;", "getCustomId", "getPlaceholder", "getAccessibilityLabel", "getMinValues", "getMaxValues", "getDisabled", "()Z", "getOptions", "()Ljava/util/List;", "getSelectedOptions", "getSelectedItems", "Lcom/discord/chat/bridge/botuikit/SelectItem;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "copy", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@xs.m
 @SourceDebugExtension({"SMAP\nSelectComponent.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SelectComponent.kt\ncom/discord/chat/bridge/botuikit/StringSelectComponent\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,143:1\n1563#2:144\n1634#2,3:145\n*S KotlinDebug\n*F\n+ 1 SelectComponent.kt\ncom/discord/chat/bridge/botuikit/StringSelectComponent\n*L\n40#1:144\n40#1:145,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class StringSelectComponent extends SelectComponent {
@@ -38,7 +38,7 @@ public final class StringSelectComponent extends SelectComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9656id;
+    private final String f9285id;
     private final int maxValues;
     private final int minValues;
     @NotNull
@@ -67,15 +67,15 @@ public final class StringSelectComponent extends SelectComponent {
     }
 
     static {
-        ir.o oVar = ir.o.f31119e;
-        $childSerializers = new Lazy[]{null, null, null, null, null, null, null, null, null, ir.l.a(oVar, new Function0() { // from class: com.discord.chat.bridge.botuikit.n
+        jr.o oVar = jr.o.f32182e;
+        $childSerializers = new Lazy[]{null, null, null, null, null, null, null, null, null, jr.l.a(oVar, new Function0() { // from class: com.discord.chat.bridge.botuikit.n
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_;
                 _childSerializers$_anonymous_ = StringSelectComponent._childSerializers$_anonymous_();
                 return _childSerializers$_anonymous_;
             }
-        }), ir.l.a(oVar, new Function0() { // from class: com.discord.chat.bridge.botuikit.o
+        }), jr.l.a(oVar, new Function0() { // from class: com.discord.chat.bridge.botuikit.o
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_$1;
@@ -92,7 +92,7 @@ public final class StringSelectComponent extends SelectComponent {
             v1.b(i10, 1743, StringSelectComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f9656id = str;
+        this.f9285id = str;
         this.state = actionComponentState;
         this.customId = str2;
         if ((i10 & 16) == 0) {
@@ -118,12 +118,12 @@ public final class StringSelectComponent extends SelectComponent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new at.f(StringSelectItem$$serializer.INSTANCE);
+        return new bt.f(StringSelectItem$$serializer.INSTANCE);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$1() {
-        return new at.f(p0.f6864a);
+        return new bt.f(p0.f7678a);
     }
 
     public static /* synthetic */ StringSelectComponent copy$default(StringSelectComponent stringSelectComponent, int i10, String str, ActionComponentState actionComponentState, String str2, String str3, String str4, int i11, int i12, boolean z10, List list, List list2, int i13, Object obj) {
@@ -131,7 +131,7 @@ public final class StringSelectComponent extends SelectComponent {
             i10 = stringSelectComponent.type;
         }
         if ((i13 & 2) != 0) {
-            str = stringSelectComponent.f9656id;
+            str = stringSelectComponent.f9285id;
         }
         if ((i13 & 4) != 0) {
             actionComponentState = stringSelectComponent.state;
@@ -176,23 +176,23 @@ public final class StringSelectComponent extends SelectComponent {
     public static final /* synthetic */ void write$Self$chat_release(StringSelectComponent stringSelectComponent, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         SelectComponent.write$Self(stringSelectComponent, compositeEncoder, serialDescriptor);
         Lazy[] lazyArr = $childSerializers;
-        compositeEncoder.w(serialDescriptor, 0, stringSelectComponent.getType());
-        compositeEncoder.y(serialDescriptor, 1, stringSelectComponent.getId());
-        compositeEncoder.j(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, stringSelectComponent.getState());
-        compositeEncoder.y(serialDescriptor, 3, stringSelectComponent.getCustomId());
-        if (compositeEncoder.A(serialDescriptor, 4) || stringSelectComponent.getPlaceholder() != null) {
-            compositeEncoder.z(serialDescriptor, 4, n2.f6848a, stringSelectComponent.getPlaceholder());
+        compositeEncoder.v(serialDescriptor, 0, stringSelectComponent.getType());
+        compositeEncoder.x(serialDescriptor, 1, stringSelectComponent.getId());
+        compositeEncoder.m(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, stringSelectComponent.getState());
+        compositeEncoder.x(serialDescriptor, 3, stringSelectComponent.getCustomId());
+        if (compositeEncoder.y(serialDescriptor, 4) || stringSelectComponent.getPlaceholder() != null) {
+            compositeEncoder.B(serialDescriptor, 4, n2.f7662a, stringSelectComponent.getPlaceholder());
         }
-        if (compositeEncoder.A(serialDescriptor, 5) || stringSelectComponent.getAccessibilityLabel() != null) {
-            compositeEncoder.z(serialDescriptor, 5, n2.f6848a, stringSelectComponent.getAccessibilityLabel());
+        if (compositeEncoder.y(serialDescriptor, 5) || stringSelectComponent.getAccessibilityLabel() != null) {
+            compositeEncoder.B(serialDescriptor, 5, n2.f7662a, stringSelectComponent.getAccessibilityLabel());
         }
-        compositeEncoder.w(serialDescriptor, 6, stringSelectComponent.getMinValues());
-        compositeEncoder.w(serialDescriptor, 7, stringSelectComponent.getMaxValues());
-        if (compositeEncoder.A(serialDescriptor, 8) || stringSelectComponent.getDisabled()) {
-            compositeEncoder.x(serialDescriptor, 8, stringSelectComponent.getDisabled());
+        compositeEncoder.v(serialDescriptor, 6, stringSelectComponent.getMinValues());
+        compositeEncoder.v(serialDescriptor, 7, stringSelectComponent.getMaxValues());
+        if (compositeEncoder.y(serialDescriptor, 8) || stringSelectComponent.getDisabled()) {
+            compositeEncoder.w(serialDescriptor, 8, stringSelectComponent.getDisabled());
         }
-        compositeEncoder.j(serialDescriptor, 9, (xs.o) lazyArr[9].getValue(), stringSelectComponent.options);
-        compositeEncoder.j(serialDescriptor, 10, (xs.o) lazyArr[10].getValue(), stringSelectComponent.selectedOptions);
+        compositeEncoder.m(serialDescriptor, 9, (ys.o) lazyArr[9].getValue(), stringSelectComponent.options);
+        compositeEncoder.m(serialDescriptor, 10, (ys.o) lazyArr[10].getValue(), stringSelectComponent.selectedOptions);
     }
 
     public final int component1() {
@@ -211,7 +211,7 @@ public final class StringSelectComponent extends SelectComponent {
 
     @NotNull
     public final String component2() {
-        return this.f9656id;
+        return this.f9285id;
     }
 
     @NotNull
@@ -260,7 +260,7 @@ public final class StringSelectComponent extends SelectComponent {
         }
         if (obj instanceof StringSelectComponent) {
             StringSelectComponent stringSelectComponent = (StringSelectComponent) obj;
-            return this.type == stringSelectComponent.type && Intrinsics.areEqual(this.f9656id, stringSelectComponent.f9656id) && this.state == stringSelectComponent.state && Intrinsics.areEqual(this.customId, stringSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, stringSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, stringSelectComponent.accessibilityLabel) && this.minValues == stringSelectComponent.minValues && this.maxValues == stringSelectComponent.maxValues && this.disabled == stringSelectComponent.disabled && Intrinsics.areEqual(this.options, stringSelectComponent.options) && Intrinsics.areEqual(this.selectedOptions, stringSelectComponent.selectedOptions);
+            return this.type == stringSelectComponent.type && Intrinsics.areEqual(this.f9285id, stringSelectComponent.f9285id) && this.state == stringSelectComponent.state && Intrinsics.areEqual(this.customId, stringSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, stringSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, stringSelectComponent.accessibilityLabel) && this.minValues == stringSelectComponent.minValues && this.maxValues == stringSelectComponent.maxValues && this.disabled == stringSelectComponent.disabled && Intrinsics.areEqual(this.options, stringSelectComponent.options) && Intrinsics.areEqual(this.selectedOptions, stringSelectComponent.selectedOptions);
         }
         return false;
     }
@@ -284,7 +284,7 @@ public final class StringSelectComponent extends SelectComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f9656id;
+        return this.f9285id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.SelectComponent
@@ -335,7 +335,7 @@ public final class StringSelectComponent extends SelectComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f9656id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
+        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f9285id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
         String str = this.placeholder;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.accessibilityLabel;
@@ -345,7 +345,7 @@ public final class StringSelectComponent extends SelectComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f9656id;
+        String str = this.f9285id;
         ActionComponentState actionComponentState = this.state;
         String str2 = this.customId;
         String str3 = this.placeholder;
@@ -371,7 +371,7 @@ public final class StringSelectComponent extends SelectComponent {
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(selectedOptions, "selectedOptions");
         this.type = i10;
-        this.f9656id = id2;
+        this.f9285id = id2;
         this.state = state;
         this.customId = customId;
         this.placeholder = str;

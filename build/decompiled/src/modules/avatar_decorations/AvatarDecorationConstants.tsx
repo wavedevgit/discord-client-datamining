@@ -41,4 +41,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 50;
     var2.MOBILE_SETTINGS_AVATAR_DECORATION_SIZE = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5540, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5571, 2]);

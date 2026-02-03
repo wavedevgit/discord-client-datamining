@@ -188,28 +188,28 @@ public abstract class ByteString implements Iterable<Byte> {
     public static final class Output extends OutputStream {
 
         /* renamed from: q  reason: collision with root package name */
-        private static final byte[] f35192q = new byte[0];
+        private static final byte[] f34968q = new byte[0];
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f35193d;
+        private final int f34969d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ArrayList f35194e;
+        private final ArrayList f34970e;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f35195i;
+        private int f34971i;
 
         /* renamed from: o  reason: collision with root package name */
-        private byte[] f35196o;
+        private byte[] f34972o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f35197p;
+        private int f34973p;
 
         Output(int i10) {
             if (i10 >= 0) {
-                this.f35193d = i10;
-                this.f35194e = new ArrayList();
-                this.f35196o = new byte[i10];
+                this.f34969d = i10;
+                this.f34970e = new ArrayList();
+                this.f34972o = new byte[i10];
                 return;
             }
             throw new IllegalArgumentException("Buffer size < 0");
@@ -222,35 +222,35 @@ public abstract class ByteString implements Iterable<Byte> {
         }
 
         private void h(int i10) {
-            this.f35194e.add(new b(this.f35196o));
-            int length = this.f35195i + this.f35196o.length;
-            this.f35195i = length;
-            this.f35196o = new byte[Math.max(this.f35193d, Math.max(i10, length >>> 1))];
-            this.f35197p = 0;
+            this.f34970e.add(new b(this.f34972o));
+            int length = this.f34971i + this.f34972o.length;
+            this.f34971i = length;
+            this.f34972o = new byte[Math.max(this.f34969d, Math.max(i10, length >>> 1))];
+            this.f34973p = 0;
         }
 
         private void l() {
-            int i10 = this.f35197p;
-            byte[] bArr = this.f35196o;
+            int i10 = this.f34973p;
+            byte[] bArr = this.f34972o;
             if (i10 < bArr.length) {
                 if (i10 > 0) {
-                    this.f35194e.add(new b(a(bArr, i10)));
+                    this.f34970e.add(new b(a(bArr, i10)));
                 }
             } else {
-                this.f35194e.add(new b(this.f35196o));
-                this.f35196o = f35192q;
+                this.f34970e.add(new b(this.f34972o));
+                this.f34972o = f34968q;
             }
-            this.f35195i += this.f35197p;
-            this.f35197p = 0;
+            this.f34971i += this.f34973p;
+            this.f34973p = 0;
         }
 
         public synchronized int size() {
-            return this.f35195i + this.f35197p;
+            return this.f34971i + this.f34973p;
         }
 
         public synchronized ByteString toByteString() {
             l();
-            return ByteString.copyFrom(this.f35194e);
+            return ByteString.copyFrom(this.f34970e);
         }
 
         public String toString() {
@@ -260,12 +260,12 @@ public abstract class ByteString implements Iterable<Byte> {
         @Override // java.io.OutputStream
         public synchronized void write(int i10) {
             try {
-                if (this.f35197p == this.f35196o.length) {
+                if (this.f34973p == this.f34972o.length) {
                     h(1);
                 }
-                byte[] bArr = this.f35196o;
-                int i11 = this.f35197p;
-                this.f35197p = i11 + 1;
+                byte[] bArr = this.f34972o;
+                int i11 = this.f34973p;
+                this.f34973p = i11 + 1;
                 bArr[i11] = (byte) i10;
             } catch (Throwable th2) {
                 throw th2;
@@ -275,19 +275,19 @@ public abstract class ByteString implements Iterable<Byte> {
         @Override // java.io.OutputStream
         public synchronized void write(byte[] bArr, int i10, int i11) {
             try {
-                byte[] bArr2 = this.f35196o;
+                byte[] bArr2 = this.f34972o;
                 int length = bArr2.length;
-                int i12 = this.f35197p;
+                int i12 = this.f34973p;
                 if (i11 <= length - i12) {
                     System.arraycopy(bArr, i10, bArr2, i12, i11);
-                    this.f35197p += i11;
+                    this.f34973p += i11;
                 } else {
                     int length2 = bArr2.length - i12;
                     System.arraycopy(bArr, i10, bArr2, i12, length2);
                     int i13 = i11 - length2;
                     h(i13);
-                    System.arraycopy(bArr, i10 + length2, this.f35196o, 0, i13);
-                    this.f35197p = i13;
+                    System.arraycopy(bArr, i10 + length2, this.f34972o, 0, i13);
+                    this.f34973p = i13;
                 }
             } catch (Throwable th2) {
                 throw th2;

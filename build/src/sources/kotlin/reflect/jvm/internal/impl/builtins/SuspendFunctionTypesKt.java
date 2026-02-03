@@ -33,7 +33,7 @@ import org.jetbrains.annotations.NotNull;
 public final class SuspendFunctionTypesKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final MutableClassDescriptor f33459a;
+    private static final MutableClassDescriptor f33235a;
 
     static {
         EmptyPackageFragmentDescriptor emptyPackageFragmentDescriptor = new EmptyPackageFragmentDescriptor(ErrorUtils.INSTANCE.getErrorModule(), StandardNames.COROUTINES_PACKAGE_FQ_NAME);
@@ -46,7 +46,7 @@ public final class SuspendFunctionTypesKt {
         mutableClassDescriptor.setVisibility(DescriptorVisibilities.PUBLIC);
         mutableClassDescriptor.setTypeParameterDescriptors(CollectionsKt.e(TypeParameterDescriptorImpl.createWithDefaultBound(mutableClassDescriptor, Annotations.Companion.getEMPTY(), false, Variance.IN_VARIANCE, Name.identifier("T"), 0, storageManager)));
         mutableClassDescriptor.createTypeConstructor();
-        f33459a = mutableClassDescriptor;
+        f33235a = mutableClassDescriptor;
     }
 
     @NotNull
@@ -63,7 +63,7 @@ public final class SuspendFunctionTypesKt {
             arrayList.add(typeProjection.getType());
         }
         TypeAttributes empty = TypeAttributes.Companion.getEmpty();
-        TypeConstructor typeConstructor = f33459a.getTypeConstructor();
+        TypeConstructor typeConstructor = f33235a.getTypeConstructor();
         Intrinsics.checkNotNullExpressionValue(typeConstructor, "getTypeConstructor(...)");
         List M0 = CollectionsKt.M0(arrayList, KotlinTypeFactory.simpleType$default(empty, typeConstructor, CollectionsKt.e(TypeUtilsKt.asTypeProjection(FunctionTypesKt.getReturnTypeFromFunctionType(suspendFunType))), false, (KotlinTypeRefiner) null, 16, (Object) null));
         SimpleType nullableAnyType = TypeUtilsKt.getBuiltIns(suspendFunType).getNullableAnyType();

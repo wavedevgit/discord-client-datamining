@@ -7,13 +7,13 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.ParcelFileDescriptor;
 import com.discord.crash_reporting.CrashReporting;
-import gs.g;
-import gs.m0;
+import hs.g;
+import hs.m0;
 import id.zelory.compressor.constraint.Compression;
-import ir.v;
 import java.io.File;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.o0;
@@ -67,10 +67,10 @@ public final class MediaResolver {
     @SuppressLint({"UsableSpace"})
     public final Object checkFreeSpace(Continuation<? super Unit> continuation) {
         Object g10 = g.g(m0.b(), new MediaResolver$checkFreeSpace$2(this, null), continuation);
-        if (g10 == or.b.f()) {
+        if (g10 == pr.b.f()) {
             return g10;
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -105,7 +105,7 @@ public final class MediaResolver {
         File createTempFile$default = ContentResolverUtils.createTempFile$default(ContentResolverUtils.INSTANCE, getResolver(), uri3, null, "mp4", 2, null);
         boolean z10 = false;
         try {
-            z10 = st.a.a(openFileDescriptor.getFileDescriptor(), createTempFile$default);
+            z10 = tt.a.a(openFileDescriptor.getFileDescriptor(), createTempFile$default);
             if (z10) {
                 uri4 = Uri.fromFile(createTempFile$default);
             } else {
@@ -171,9 +171,9 @@ public final class MediaResolver {
     public static final Unit handleImage$lambda$7(int i10, boolean z10, MediaResolver mediaResolver, Uri uri, Compression compress) {
         Intrinsics.checkNotNullParameter(compress, "$this$compress");
         compress.a(new QualityAndResolutionConstraint(i10, z10));
-        zq.g.a(compress, Bitmap.CompressFormat.JPEG);
-        zq.e.a(compress, ContentResolverUtils.createTempFile$default(ContentResolverUtils.INSTANCE, mediaResolver.getResolver(), uri, null, "jpeg", 2, null));
-        return Unit.f33298a;
+        ar.g.a(compress, Bitmap.CompressFormat.JPEG);
+        ar.e.a(compress, ContentResolverUtils.createTempFile$default(ContentResolverUtils.INSTANCE, mediaResolver.getResolver(), uri, null, "jpeg", 2, null));
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -207,7 +207,7 @@ public final class MediaResolver {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit handleVideo$lambda$4$lambda$3(MediaResolver mediaResolver, Uri uri, float f10) {
         mediaResolver.onProgress.invoke(uri, Integer.valueOf((int) (f10 * 100)));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void logMediaError(String str, String str2, Uri uri, Uri uri2) {

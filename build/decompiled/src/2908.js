@@ -3,8 +3,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = require;
     var1 = exports;
     var6 = dependencyMap;
-    var _closure1_slot0 = var5;
-    var _closure1_slot1 = var6;
     var4 = function arg0() {
         _fun23716: for (var _fun23716_ip = 0;;) switch (_fun23716_ip) {
             case 0:
@@ -36,209 +34,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
-    var0 = function arg0, arg1() {
-        _fun23717: for (var _fun23717_ip = 0;;) switch (_fun23717_ip) {
-            case 0:
-                var7 = arg1;
-                var3 = undefined;
-                var1 = undefined;
-                var2 = _closure1_slot4;
-                var4 = var2.default;
-                var1 = arguments;
-                var2 = var1;
-                var1 = 1;
-                var1 = var4.bind(var3)(var1, var2);
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var1 = 3;
-                var1 = var4[var1];
-                var1 = var2.bind(var3)(var1);
-                var1 = var1.getDefaultOptions;
-                var1 = var1.bind(var3)();
-                var2 = _closure1_slot3;
-                var4 = var2.default;
-                var6 = null;
-                var2 = var6 == var7;
-                var5 = undefined;
-                if (var2) {
-                    _fun23717_ip = 89;
-                    continue _fun23717
-                }
-            case 83:
-                var5 = var7.weekStartsOn;
-            case 89:
-                if (!(var6 !== var5)) {
-                    _fun23717_ip = 97;
-                    continue _fun23717
-                }
-            case 93:
-                if (!(var3 === var5)) {
-                    _fun23717_ip = 150;
-                    continue _fun23717
-                }
-            case 97:
-                var8 = var6 == var7;
-                var2 = undefined;
-                if (var8) {
-                    _fun23717_ip = 147;
-                    continue _fun23717
-                }
-            case 106:
-                var7 = var7.locale;
-                var2 = undefined;
-                if (!(var6 !== var7)) {
-                    _fun23717_ip = 147;
-                    continue _fun23717
-                }
-            case 118:
-                var2 = undefined;
-                if (!(var3 !== var7)) {
-                    _fun23717_ip = 147;
-                    continue _fun23717
-                }
-            case 124:
-                var7 = var7.options;
-                var2 = undefined;
-                if (!(var6 !== var7)) {
-                    _fun23717_ip = 147;
-                    continue _fun23717
-                }
-            case 135:
-                var2 = undefined;
-                if (!(var3 !== var7)) {
-                    _fun23717_ip = 147;
-                    continue _fun23717
-                }
-            case 141:
-                var2 = var7.weekStartsOn;
-            case 147:
-                var5 = var2;
-            case 150:
-                if (!(var6 !== var5)) {
-                    _fun23717_ip = 158;
-                    continue _fun23717
-                }
-            case 154:
-                if (!(var3 === var5)) {
-                    _fun23717_ip = 164;
-                    continue _fun23717
-                }
-            case 158:
-                var5 = var1.weekStartsOn;
-            case 164:
-                if (!(var6 !== var5)) {
-                    _fun23717_ip = 172;
-                    continue _fun23717
-                }
-            case 168:
-                if (!(var3 === var5)) {
-                    _fun23717_ip = 216;
-                    continue _fun23717
-                }
-            case 172:
-                var2 = var1.locale;
-                var1 = undefined;
-                if (!(var6 !== var2)) {
-                    _fun23717_ip = 213;
-                    continue _fun23717
-                }
-            case 184:
-                var1 = undefined;
-                if (!(var3 !== var2)) {
-                    _fun23717_ip = 213;
-                    continue _fun23717
-                }
-            case 190:
-                var2 = var2.options;
-                var1 = undefined;
-                if (!(var6 !== var2)) {
-                    _fun23717_ip = 213;
-                    continue _fun23717
-                }
-            case 201:
-                var1 = undefined;
-                if (!(var1 !== var2)) {
-                    _fun23717_ip = 213;
-                    continue _fun23717
-                }
-            case 207:
-                var1 = var2.weekStartsOn;
-            case 213:
-                var5 = var1;
-            case 216:
-                var2 = 0;
-                var1 = 0;
-                if (!(var6 !== var5)) {
-                    _fun23717_ip = 233;
-                    continue _fun23717
-                }
-            case 224:
-                var1 = 0;
-                if (!(var3 !== var5)) {
-                    _fun23717_ip = 233;
-                    continue _fun23717
-                }
-            case 230:
-                var1 = var5;
-            case 233:
-                var5 = var4.bind(var3)(var1);
-                if (!(var5 >= var2)) {
-                    _fun23717_ip = 249;
-                    continue _fun23717
-                }
-            case 242:
-                var4 = 6;
-                if (!(!(var5 <= var4))) {
-                    _fun23717_ip = 285;
-                    continue _fun23717
-                }
-            case 249:
-                var1 = global;
-                var7 = var1.RangeError;
-                var1 = var7.prototype;
-                var6 = Object.create(var1, {
-                    constructor: {
-                        value: var7
-                    }
-                });
-                var12 = 'weekStartsOn must be between 0 and 6';
-                var13 = var6;
-                var1 = new var13[var7](var12, var11);
-                var1 = var1 instanceof Object ? var1 : var6;
-                throw var1;
-            case 285:
-                var0 = _closure1_slot2;
-                var1 = var0.default;
-                var0 = arg0;
-                var0 = var1.bind(var3)(var0);
-                var1 = var0.getDay;
-                var3 = var1.bind(var0)();
-                var6 = var3 < var5;
-                var1 = 0;
-                if (!var6) {
-                    _fun23717_ip = 327;
-                    continue _fun23717
-                }
-            case 321:
-                var1 = -7;
-            case 327:
-                var3 = var3 - var5;
-                var1 = var4 + var1;
-                var3 = var1 - var3;
-                var1 = var0.setHours;
-                var13 = var0;
-                var12 = 0;
-                var11 = 0;
-                var10 = 0;
-                var9 = 0;
-                var1 = var13[var1](var12, var11, var10, var9, var8);
-                var2 = var0.setDate;
-                var1 = var0.getDate;
-                var1 = var1.bind(var0)();
-                var1 = var1 + var3;
-                var1 = var2.bind(var0)(var1);
-                return var0;
-        }
+    var0 = function arg0() {
+        var2 = undefined;
+        var1 = undefined;
+        var3 = _closure1_slot1;
+        var4 = var3.default;
+        var1 = arguments;
+        var3 = var1;
+        var1 = 1;
+        var1 = var4.bind(var2)(var1, var3);
+        var0 = _closure1_slot0;
+        var1 = var0.default;
+        var0 = arg0;
+        var1 = var1.bind(var2)(var0);
+        var0 = var1.getTime;
+        var1 = var0.bind(var1)();
+        var0 = global;
+        var2 = var0.Date;
+        var0 = var2.now;
+        var0 = var0.bind(var2)();
+        var0 = var1 < var0;
+        return var0;
     };
     var1.default = var0;
     var0 = 0;
@@ -246,19 +62,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var2 = var5.bind(var0)(var2);
     var2 = var4.bind(var0)(var2);
-    var _closure1_slot2 = var2;
+    var _closure1_slot0 = var2;
     var2 = 1;
     var2 = var6[var2];
     var2 = var5.bind(var0)(var2);
     var2 = var4.bind(var0)(var2);
-    var _closure1_slot3 = var2;
-    var2 = 2;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot4 = var2;
+    var _closure1_slot1 = var2;
     var2 = var1.default;
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2534, 2538, 2535, 2539]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2564, 2565]);

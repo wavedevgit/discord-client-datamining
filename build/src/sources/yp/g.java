@@ -1,107 +1,49 @@
 package yp;
 
-import android.net.Uri;
-import android.os.Parcel;
-import android.os.Parcelable;
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import com.google.android.material.imageview.ShapeableImageView;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<g> CREATOR = new a();
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Uri f54951d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final Uri f54952e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final Uri f54953i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private final yo.a f54954o;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final g createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new g((Uri) parcel.readParcelable(g.class.getClassLoader()), (Uri) parcel.readParcelable(g.class.getClassLoader()), (Uri) parcel.readParcelable(g.class.getClassLoader()), yo.a.valueOf(parcel.readString()));
+public abstract class g {
+    public static final View b(e eVar, m5 uiComponentHelper) {
+        Intrinsics.checkNotNullParameter(eVar, "<this>");
+        Intrinsics.checkNotNullParameter(uiComponentHelper, "uiComponentHelper");
+        Context a10 = uiComponentHelper.a();
+        if (!eVar.a()) {
+            return null;
         }
+        final ShapeableImageView shapeableImageView = new ShapeableImageView(a10);
+        shapeableImageView.setImageResource(wp.d.f52873b);
+        shapeableImageView.setAdjustViewBounds(true);
+        int dimension = (int) a10.getResources().getDimension(kp.k.f36240b);
+        shapeableImageView.setPadding(dimension, shapeableImageView.getPaddingTop(), dimension, shapeableImageView.getPaddingBottom());
+        uiComponentHelper.d(new Function0() { // from class: yp.f
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                Unit c10;
+                c10 = g.c(ShapeableImageView.this);
+                return c10;
+            }
+        });
+        return shapeableImageView;
+    }
 
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final g[] newArray(int i10) {
-            return new g[i10];
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit c(ShapeableImageView shapeableImageView) {
+        ViewGroup.LayoutParams layoutParams = shapeableImageView.getLayoutParams();
+        if (layoutParams != null) {
+            ConstraintLayout.LayoutParams layoutParams2 = (ConstraintLayout.LayoutParams) layoutParams;
+            layoutParams2.G = 1.0f;
+            ((ViewGroup.MarginLayoutParams) layoutParams2).width = -2;
+            ((ViewGroup.MarginLayoutParams) layoutParams2).height = -2;
+            shapeableImageView.setLayoutParams(layoutParams2);
+            return Unit.f33074a;
         }
-    }
-
-    public g(Uri dg1Uri, Uri dg2Uri, Uri sodUri, yo.a chipAuthenticationStatus) {
-        Intrinsics.checkNotNullParameter(dg1Uri, "dg1Uri");
-        Intrinsics.checkNotNullParameter(dg2Uri, "dg2Uri");
-        Intrinsics.checkNotNullParameter(sodUri, "sodUri");
-        Intrinsics.checkNotNullParameter(chipAuthenticationStatus, "chipAuthenticationStatus");
-        this.f54951d = dg1Uri;
-        this.f54952e = dg2Uri;
-        this.f54953i = sodUri;
-        this.f54954o = chipAuthenticationStatus;
-    }
-
-    public final yo.a a() {
-        return this.f54954o;
-    }
-
-    public final Uri b() {
-        return this.f54951d;
-    }
-
-    public final Uri c() {
-        return this.f54952e;
-    }
-
-    public final Uri d() {
-        return this.f54953i;
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof g)) {
-            return false;
-        }
-        g gVar = (g) obj;
-        if (Intrinsics.areEqual(this.f54951d, gVar.f54951d) && Intrinsics.areEqual(this.f54952e, gVar.f54952e) && Intrinsics.areEqual(this.f54953i, gVar.f54953i) && this.f54954o == gVar.f54954o) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        return (((((this.f54951d.hashCode() * 31) + this.f54952e.hashCode()) * 31) + this.f54953i.hashCode()) * 31) + this.f54954o.hashCode();
-    }
-
-    public String toString() {
-        Uri uri = this.f54951d;
-        Uri uri2 = this.f54952e;
-        Uri uri3 = this.f54953i;
-        yo.a aVar = this.f54954o;
-        return "GovernmentIdNfcData(dg1Uri=" + uri + ", dg2Uri=" + uri2 + ", sodUri=" + uri3 + ", chipAuthenticationStatus=" + aVar + ")";
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeParcelable(this.f54951d, i10);
-        dest.writeParcelable(this.f54952e, i10);
-        dest.writeParcelable(this.f54953i, i10);
-        dest.writeString(this.f54954o.name());
+        throw new NullPointerException("null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout.LayoutParams");
     }
 }

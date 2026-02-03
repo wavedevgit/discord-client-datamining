@@ -19,14 +19,14 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$63 exten
 
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
-        m518invokesekaTiM(((ChannelId) obj).m1067unboximpl(), ((MessageId) obj2).m1093unboximpl(), (String) obj3);
-        return Unit.f33298a;
+        m520invokesekaTiM(((ChannelId) obj).m1069unboximpl(), ((MessageId) obj2).m1095unboximpl(), (String) obj3);
+        return Unit.f33074a;
     }
 
     /* renamed from: invoke-sekaTiM  reason: not valid java name */
-    public final void m518invokesekaTiM(long j10, String p12, String p22) {
+    public final void m520invokesekaTiM(long j10, String p12, String p22) {
         Intrinsics.checkNotNullParameter(p12, "p1");
         Intrinsics.checkNotNullParameter(p22, "p2");
-        ((ChatEventHandler) this.receiver).mo470onTapPollActionsekaTiM(j10, p12, p22);
+        ((ChatEventHandler) this.receiver).mo472onTapPollActionsekaTiM(j10, p12, p22);
     }
 }

@@ -1,6 +1,6 @@
 package kotlin.reflect.jvm.internal.impl.builtins;
 
-import ir.l;
+import jr.l;
 import kotlin.Lazy;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.reflect.jvm.internal.impl.storage.LockBasedStorageManager;
@@ -11,7 +11,7 @@ public final class DefaultBuiltIns extends KotlinBuiltIns {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Lazy f33425g = l.b(b.f33476d);
+    private static final Lazy f33201g = l.b(b.f33252d);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -21,7 +21,7 @@ public final class DefaultBuiltIns extends KotlinBuiltIns {
 
         @NotNull
         public final DefaultBuiltIns getInstance() {
-            return (DefaultBuiltIns) DefaultBuiltIns.f33425g.getValue();
+            return (DefaultBuiltIns) DefaultBuiltIns.f33201g.getValue();
         }
 
         private Companion() {

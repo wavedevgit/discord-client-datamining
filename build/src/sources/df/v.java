@@ -7,22 +7,22 @@ import android.util.Log;
 public abstract class v {
 
     /* renamed from: a  reason: collision with root package name */
-    final int f22138a;
+    final int f21714a;
 
     /* renamed from: b  reason: collision with root package name */
-    final wg.k f22139b = new wg.k();
+    final wg.k f21715b = new wg.k();
 
     /* renamed from: c  reason: collision with root package name */
-    final int f22140c;
+    final int f21716c;
 
     /* renamed from: d  reason: collision with root package name */
-    final Bundle f22141d;
+    final Bundle f21717d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public v(int i10, int i11, Bundle bundle) {
-        this.f22138a = i10;
-        this.f22140c = i11;
-        this.f22141d = bundle;
+        this.f21714a = i10;
+        this.f21716c = i11;
+        this.f21717d = bundle;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -38,7 +38,7 @@ public abstract class v {
             String obj2 = wVar.toString();
             Log.d("MessengerIpcClient", "Failing " + obj + " with " + obj2);
         }
-        this.f22139b.b(wVar);
+        this.f21715b.b(wVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -48,10 +48,10 @@ public abstract class v {
             String valueOf = String.valueOf(obj);
             Log.d("MessengerIpcClient", "Finishing " + obj2 + " with " + valueOf);
         }
-        this.f22139b.c(obj);
+        this.f21715b.c(obj);
     }
 
     public final String toString() {
-        return "Request { what=" + this.f22140c + " id=" + this.f22138a + " oneWay=" + b() + "}";
+        return "Request { what=" + this.f21716c + " id=" + this.f21714a + " oneWay=" + b() + "}";
     }
 }

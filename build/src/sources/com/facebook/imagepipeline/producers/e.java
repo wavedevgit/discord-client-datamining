@@ -13,49 +13,49 @@ import java.util.Set;
 public class e implements ProducerContext {
 
     /* renamed from: y  reason: collision with root package name */
-    public static final Set f11730y = o8.g.b(StackTraceHelper.ID_KEY, "uri_source");
+    public static final Set f11359y = o8.g.b(StackTraceHelper.ID_KEY, "uri_source");
 
     /* renamed from: z  reason: collision with root package name */
-    public static final Object f11731z = new Object();
+    public static final Object f11360z = new Object();
 
     /* renamed from: d  reason: collision with root package name */
-    private final ImageRequest f11732d;
+    private final ImageRequest f11361d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f11733e;
+    private final String f11362e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f11734i;
+    private final String f11363i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final y0 f11735o;
+    private final y0 f11364o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Object f11736p;
+    private final Object f11365p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final ImageRequest.RequestLevel f11737q;
+    private final ImageRequest.RequestLevel f11366q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Map f11738r;
+    private final Map f11367r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f11739s;
+    private boolean f11368s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Priority f11740t;
+    private Priority f11369t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f11741u;
+    private boolean f11370u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f11742v;
+    private boolean f11371v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final List f11743w;
+    private final List f11372w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final na.r f11744x;
+    private final na.r f11373x;
 
     public e(ImageRequest imageRequest, String str, y0 y0Var, Object obj, ImageRequest.RequestLevel requestLevel, boolean z10, boolean z11, Priority priority, na.r rVar) {
         this(imageRequest, str, null, null, y0Var, obj, requestLevel, z10, z11, priority, rVar);
@@ -98,30 +98,16 @@ public class e implements ProducerContext {
     }
 
     @Override // y9.a
-    public void A0(Map map) {
-        if (map != null) {
-            for (Map.Entry entry : map.entrySet()) {
-                B((String) entry.getKey(), entry.getValue());
-            }
-        }
-    }
-
-    @Override // y9.a
     public void B(String str, Object obj) {
-        if (f11730y.contains(str)) {
+        if (f11359y.contains(str)) {
             return;
         }
-        this.f11738r.put(str, obj);
+        this.f11367r.put(str, obj);
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
-    public synchronized boolean C0() {
-        return this.f11739s;
-    }
-
-    @Override // y9.a
-    public Object D0(String str) {
-        return this.f11738r.get(str);
+    public synchronized boolean D0() {
+        return this.f11368s;
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
@@ -129,34 +115,39 @@ public class e implements ProducerContext {
         n(str, "default");
     }
 
-    @Override // com.facebook.imagepipeline.producers.ProducerContext
-    public ImageRequest.RequestLevel E0() {
-        return this.f11737q;
+    @Override // y9.a
+    public Object E0(String str) {
+        return this.f11367r.get(str);
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public y0 F() {
-        return this.f11735o;
+        return this.f11364o;
+    }
+
+    @Override // com.facebook.imagepipeline.producers.ProducerContext
+    public ImageRequest.RequestLevel F0() {
+        return this.f11366q;
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public synchronized boolean L() {
-        return this.f11741u;
+        return this.f11370u;
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public synchronized Priority N() {
-        return this.f11740t;
+        return this.f11369t;
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public ImageRequest V() {
-        return this.f11732d;
+        return this.f11361d;
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public Object a() {
-        return this.f11736p;
+        return this.f11365p;
     }
 
     public void f() {
@@ -164,29 +155,29 @@ public class e implements ProducerContext {
     }
 
     public synchronized List g() {
-        if (this.f11742v) {
+        if (this.f11371v) {
             return null;
         }
-        this.f11742v = true;
-        return new ArrayList(this.f11743w);
+        this.f11371v = true;
+        return new ArrayList(this.f11372w);
     }
 
     @Override // y9.a
     public Map getExtras() {
-        return this.f11738r;
+        return this.f11367r;
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public String getId() {
-        return this.f11733e;
+        return this.f11362e;
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public void h(x0 x0Var) {
         boolean z10;
         synchronized (this) {
-            this.f11743w.add(x0Var);
-            z10 = this.f11742v;
+            this.f11372w.add(x0Var);
+            z10 = this.f11371v;
         }
         if (z10) {
             x0Var.b();
@@ -194,62 +185,71 @@ public class e implements ProducerContext {
     }
 
     public synchronized List i(boolean z10) {
-        if (z10 == this.f11741u) {
+        if (z10 == this.f11370u) {
             return null;
         }
-        this.f11741u = z10;
-        return new ArrayList(this.f11743w);
+        this.f11370u = z10;
+        return new ArrayList(this.f11372w);
     }
 
     public synchronized List j(boolean z10) {
-        if (z10 == this.f11739s) {
+        if (z10 == this.f11368s) {
             return null;
         }
-        this.f11739s = z10;
-        return new ArrayList(this.f11743w);
+        this.f11368s = z10;
+        return new ArrayList(this.f11372w);
     }
 
     public synchronized List k(Priority priority) {
-        if (priority == this.f11740t) {
+        if (priority == this.f11369t) {
             return null;
         }
-        this.f11740t = priority;
-        return new ArrayList(this.f11743w);
+        this.f11369t = priority;
+        return new ArrayList(this.f11372w);
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public na.r l() {
-        return this.f11744x;
+        return this.f11373x;
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public void n(String str, String str2) {
-        this.f11738r.put("origin", str);
-        this.f11738r.put("origin_sub", str2);
+        this.f11367r.put("origin", str);
+        this.f11367r.put("origin_sub", str2);
+    }
+
+    @Override // y9.a
+    public void t0(Map map) {
+        if (map != null) {
+            for (Map.Entry entry : map.entrySet()) {
+                B((String) entry.getKey(), entry.getValue());
+            }
+        }
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public String x() {
-        return this.f11734i;
+        return this.f11363i;
     }
 
     public e(ImageRequest imageRequest, String str, String str2, Map map, y0 y0Var, Object obj, ImageRequest.RequestLevel requestLevel, boolean z10, boolean z11, Priority priority, na.r rVar) {
-        this.f11732d = imageRequest;
-        this.f11733e = str;
+        this.f11361d = imageRequest;
+        this.f11362e = str;
         HashMap hashMap = new HashMap();
-        this.f11738r = hashMap;
+        this.f11367r = hashMap;
         hashMap.put(StackTraceHelper.ID_KEY, str);
         hashMap.put("uri_source", imageRequest == null ? "null-request" : imageRequest.getSourceUri());
-        A0(map);
-        this.f11734i = str2;
-        this.f11735o = y0Var;
-        this.f11736p = obj == null ? f11731z : obj;
-        this.f11737q = requestLevel;
-        this.f11739s = z10;
-        this.f11740t = priority;
-        this.f11741u = z11;
-        this.f11742v = false;
-        this.f11743w = new ArrayList();
-        this.f11744x = rVar;
+        t0(map);
+        this.f11363i = str2;
+        this.f11364o = y0Var;
+        this.f11365p = obj == null ? f11360z : obj;
+        this.f11366q = requestLevel;
+        this.f11368s = z10;
+        this.f11369t = priority;
+        this.f11370u = z11;
+        this.f11371v = false;
+        this.f11372w = new ArrayList();
+        this.f11373x = rVar;
     }
 }

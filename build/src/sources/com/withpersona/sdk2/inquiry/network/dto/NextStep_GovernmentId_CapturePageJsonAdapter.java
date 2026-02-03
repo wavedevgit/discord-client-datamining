@@ -79,9 +79,9 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
             String str29 = str5;
             if (reader.hasNext()) {
                 String str30 = str6;
-                switch (reader.A0(this.options)) {
+                switch (reader.t0(this.options)) {
                     case -1:
-                        reader.E0();
+                        reader.F0();
                         reader.P();
                         str6 = str30;
                         str = str25;
@@ -105,7 +105,7 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                             str4 = str28;
                             break;
                         } else {
-                            throw sm.c.x("scanFront", "scanFront", reader);
+                            throw tm.c.x("scanFront", "scanFront", reader);
                         }
                     case 2:
                         str3 = (String) this.stringAdapter.fromJson(reader);
@@ -116,7 +116,7 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                             str4 = str28;
                             break;
                         } else {
-                            throw sm.c.x("scanBack", "scanBack", reader);
+                            throw tm.c.x("scanBack", "scanBack", reader);
                         }
                     case 3:
                         str4 = (String) this.stringAdapter.fromJson(reader);
@@ -127,7 +127,7 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                             str3 = str27;
                             break;
                         } else {
-                            throw sm.c.x("scanPdf417", "scanPdf417", reader);
+                            throw tm.c.x("scanPdf417", "scanPdf417", reader);
                         }
                     case 4:
                         str5 = (String) this.stringAdapter.fromJson(reader);
@@ -139,12 +139,12 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                             str4 = str28;
                             continue;
                         } else {
-                            throw sm.c.x("scanFrontOrBack", "scanFrontOrBack", reader);
+                            throw tm.c.x("scanFrontOrBack", "scanFrontOrBack", reader);
                         }
                     case 5:
                         str6 = (String) this.stringAdapter.fromJson(reader);
                         if (str6 == null) {
-                            throw sm.c.x("scanSignature", "scanSignature", reader);
+                            throw tm.c.x("scanSignature", "scanSignature", reader);
                         }
                         str = str25;
                         str2 = str26;
@@ -154,7 +154,7 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                     case 6:
                         str7 = (String) this.stringAdapter.fromJson(reader);
                         if (str7 == null) {
-                            throw sm.c.x("capturing", "capturing", reader);
+                            throw tm.c.x("capturing", "capturing", reader);
                         }
                         str6 = str30;
                         str = str25;
@@ -165,7 +165,7 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                     case 7:
                         str8 = (String) this.stringAdapter.fromJson(reader);
                         if (str8 == null) {
-                            throw sm.c.x("confirmCapture", "confirmCapture", reader);
+                            throw tm.c.x("confirmCapture", "confirmCapture", reader);
                         }
                         str6 = str30;
                         str = str25;
@@ -322,19 +322,19 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
                                         if (str8 != null) {
                                             return new NextStep.GovernmentId.CapturePage(str25, str26, str27, str28, str29, str31, str7, str8, str9, str10, str11, str12, str13, str14, str15, str16, str17, str18, str19, str20, str21, str22, str23, str24);
                                         }
-                                        throw sm.c.o("confirmCapture", "confirmCapture", reader);
+                                        throw tm.c.o("confirmCapture", "confirmCapture", reader);
                                     }
-                                    throw sm.c.o("capturing", "capturing", reader);
+                                    throw tm.c.o("capturing", "capturing", reader);
                                 }
-                                throw sm.c.o("scanSignature", "scanSignature", reader);
+                                throw tm.c.o("scanSignature", "scanSignature", reader);
                             }
-                            throw sm.c.o("scanFrontOrBack", "scanFrontOrBack", reader);
+                            throw tm.c.o("scanFrontOrBack", "scanFrontOrBack", reader);
                         }
-                        throw sm.c.o("scanPdf417", "scanPdf417", reader);
+                        throw tm.c.o("scanPdf417", "scanPdf417", reader);
                     }
-                    throw sm.c.o("scanBack", "scanBack", reader);
+                    throw tm.c.o("scanBack", "scanBack", reader);
                 }
-                throw sm.c.o("scanFront", "scanFront", reader);
+                throw tm.c.o("scanFront", "scanFront", reader);
             }
         }
     }
@@ -344,53 +344,53 @@ public final class NextStep_GovernmentId_CapturePageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (capturePage != null) {
             writer.l();
-            writer.A0("title");
+            writer.t0("title");
             this.nullableStringAdapter.toJson(writer, capturePage.getTitle());
-            writer.A0("scanFront");
+            writer.t0("scanFront");
             this.stringAdapter.toJson(writer, capturePage.getScanFront());
-            writer.A0("scanBack");
+            writer.t0("scanBack");
             this.stringAdapter.toJson(writer, capturePage.getScanBack());
-            writer.A0("scanPdf417");
+            writer.t0("scanPdf417");
             this.stringAdapter.toJson(writer, capturePage.getScanPdf417());
-            writer.A0("scanFrontOrBack");
+            writer.t0("scanFrontOrBack");
             this.stringAdapter.toJson(writer, capturePage.getScanFrontOrBack());
-            writer.A0("scanSignature");
+            writer.t0("scanSignature");
             this.stringAdapter.toJson(writer, capturePage.getScanSignature());
-            writer.A0("capturing");
+            writer.t0("capturing");
             this.stringAdapter.toJson(writer, capturePage.getCapturing());
-            writer.A0("confirmCapture");
+            writer.t0("confirmCapture");
             this.stringAdapter.toJson(writer, capturePage.getConfirmCapture());
-            writer.A0("disclaimer");
+            writer.t0("disclaimer");
             this.nullableStringAdapter.toJson(writer, capturePage.getDisclaimer());
-            writer.A0("hintHoldStill");
+            writer.t0("hintHoldStill");
             this.nullableStringAdapter.toJson(writer, capturePage.getHintHoldStill());
-            writer.A0("hintLowLight");
+            writer.t0("hintLowLight");
             this.nullableStringAdapter.toJson(writer, capturePage.getHintLowLight());
-            writer.A0("btnHelp");
+            writer.t0("btnHelp");
             this.nullableStringAdapter.toJson(writer, capturePage.getBtnHelp());
-            writer.A0("barcodeHelpModalTitle");
+            writer.t0("barcodeHelpModalTitle");
             this.nullableStringAdapter.toJson(writer, capturePage.getBarcodeHelpModalTitle());
-            writer.A0("barcodeHelpModalPrompt");
+            writer.t0("barcodeHelpModalPrompt");
             this.nullableStringAdapter.toJson(writer, capturePage.getBarcodeHelpModalPrompt());
-            writer.A0("barcodeHelpModalHints");
+            writer.t0("barcodeHelpModalHints");
             this.nullableStringAdapter.toJson(writer, capturePage.getBarcodeHelpModalHints());
-            writer.A0("barcodeHelpModalContinueBtn");
+            writer.t0("barcodeHelpModalContinueBtn");
             this.nullableStringAdapter.toJson(writer, capturePage.getBarcodeHelpModalContinueBtn());
-            writer.A0("idFrontHelpModalTitle");
+            writer.t0("idFrontHelpModalTitle");
             this.nullableStringAdapter.toJson(writer, capturePage.getIdFrontHelpModalTitle());
-            writer.A0("idFrontHelpModalPrompt");
+            writer.t0("idFrontHelpModalPrompt");
             this.nullableStringAdapter.toJson(writer, capturePage.getIdFrontHelpModalPrompt());
-            writer.A0("idFrontHelpModalHintsMobile");
+            writer.t0("idFrontHelpModalHintsMobile");
             this.nullableStringAdapter.toJson(writer, capturePage.getIdFrontHelpModalHintsMobile());
-            writer.A0("idFrontHelpModalContinueBtn");
+            writer.t0("idFrontHelpModalContinueBtn");
             this.nullableStringAdapter.toJson(writer, capturePage.getIdFrontHelpModalContinueBtn());
-            writer.A0("idBackHelpModalTitle");
+            writer.t0("idBackHelpModalTitle");
             this.nullableStringAdapter.toJson(writer, capturePage.getIdBackHelpModalTitle());
-            writer.A0("idBackHelpModalPrompt");
+            writer.t0("idBackHelpModalPrompt");
             this.nullableStringAdapter.toJson(writer, capturePage.getIdBackHelpModalPrompt());
-            writer.A0("idBackHelpModalHintsMobile");
+            writer.t0("idBackHelpModalHintsMobile");
             this.nullableStringAdapter.toJson(writer, capturePage.getIdBackHelpModalHintsMobile());
-            writer.A0("idBackHelpModalContinueBtn");
+            writer.t0("idBackHelpModalContinueBtn");
             this.nullableStringAdapter.toJson(writer, capturePage.getIdBackHelpModalContinueBtn());
             writer.E();
             return;

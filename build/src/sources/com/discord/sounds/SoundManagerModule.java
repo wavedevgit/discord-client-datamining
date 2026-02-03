@@ -10,8 +10,8 @@ import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import ir.v;
 import java.io.File;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -35,13 +35,13 @@ public final class SoundManagerModule extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit prepare$lambda$0(Callback callback, int i10) {
         callback.invoke(null, NativeMapExtensionsKt.nativeMapOf(v.a("duration", Integer.valueOf(i10)), v.a("numberOfChannels", -1)));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit prepare$lambda$1(Callback callback, int i10) {
         callback.invoke(null, NativeMapExtensionsKt.nativeMapOf(v.a("duration", Integer.valueOf(i10)), v.a("numberOfChannels", -1)));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @SuppressLint({"DiscouragedApi"})

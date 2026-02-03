@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/threads/native/components/ThreadParentMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun104992: for (var _fun104992_ip = 0;;) switch (_fun104992_ip) {
+        _fun104932: for (var _fun104932_ip = 0;;) switch (_fun104932_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.guildId;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0 == var7;
                 var2 = undefined;
                 if (var1) {
-                    _fun104992_ip = 103;
-                    continue _fun104992
+                    _fun104932_ip = 103;
+                    continue _fun104932
                 }
             case 98:
                 var2 = var7.state;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.LOADED;
                 var0 = null;
                 if (!(var2 === var1)) {
-                    _fun104992_ip = 229;
-                    continue _fun104992
+                    _fun104932_ip = 229;
+                    continue _fun104932
                 }
             case 119:
                 var3 = _closure1_slot6;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ThreadChannelStarterMessage = var3;
     var1 = function arg0() {
-        _fun104995: for (var _fun104995_ip = 0;;) switch (_fun104995_ip) {
+        _fun104935: for (var _fun104935_ip = 0;;) switch (_fun104935_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.messageId;
@@ -193,8 +193,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var5;
                 if (var1) {
-                    _fun104995_ip = 132;
-                    continue _fun104995
+                    _fun104935_ip = 132;
+                    continue _fun104935
                 }
             case 87:
                 var3 = _closure1_slot6;
@@ -214,4 +214,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ThreadCreationStarterMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4234, 4215, 33, 6480, 566, 4867, 1220, 8762, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4264, 4245, 33, 6511, 566, 4897, 1220, 8794, 2]);

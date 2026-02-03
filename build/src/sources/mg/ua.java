@@ -5,7 +5,7 @@ import ui.c;
 final class ua implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ua f38716a = new ua();
+    static final ua f38696a = new ua();
 
     static {
         c.b a10 = ui.c.a("detectorOptions");

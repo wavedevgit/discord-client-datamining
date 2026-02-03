@@ -3,63 +3,31 @@ package xu;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface b {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
-        private static List a(b bVar, Object obj) {
-            List<Object> list;
-            if (obj instanceof List) {
-                list = (List) obj;
-            } else {
-                list = null;
-            }
-            if (list != null) {
-                ArrayList arrayList = new ArrayList();
-                for (Object obj2 : list) {
-                    CollectionsKt.B(arrayList, a(bVar, obj2));
+        private static Object a(b bVar, Object obj) {
+            while (!(obj instanceof Number)) {
+                if (obj instanceof String) {
+                    return StringsKt.p((String) obj);
                 }
-                return arrayList;
+                if (obj instanceof List) {
+                    obj = CollectionsKt.firstOrNull((List) obj);
+                } else {
+                    return null;
+                }
             }
-            return CollectionsKt.e(b(bVar, obj));
+            return Double.valueOf(((Number) obj).doubleValue());
         }
 
-        private static String b(b bVar, Object obj) {
-            if (obj instanceof Number) {
-                Number number = (Number) obj;
-                if (number.doubleValue() == number.intValue()) {
-                    return String.valueOf(number.intValue());
-                }
-            }
-            return pv.a.h(obj);
-        }
-
-        private static String c(b bVar, Object obj) {
-            List<Object> list;
-            if (obj instanceof List) {
-                list = (List) obj;
-            } else {
-                list = null;
-            }
-            if (list != null) {
-                ArrayList arrayList = new ArrayList();
-                for (Object obj2 : list) {
-                    CollectionsKt.B(arrayList, a(bVar, obj2));
-                }
-                String x02 = CollectionsKt.x0(arrayList, ",", null, null, 0, null, null, 62, null);
-                if (x02 != null) {
-                    return x02;
-                }
-            }
-            return b(bVar, obj);
-        }
-
-        public static List d(b bVar, Object obj) {
-            List<Object> c10 = pv.a.c(obj);
+        public static List b(b bVar, Object obj) {
+            List<Object> c10 = qv.a.c(obj);
             ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
             for (Object obj2 : c10) {
-                arrayList.add(c(bVar, obj2));
+                arrayList.add(a(bVar, obj2));
             }
             return arrayList;
         }

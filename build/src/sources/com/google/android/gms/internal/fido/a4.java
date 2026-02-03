@@ -7,10 +7,10 @@ import java.util.concurrent.locks.LockSupport;
 public abstract class a4 extends AtomicReference implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Runnable f14972d = new y3(null);
+    private static final Runnable f14601d = new y3(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Runnable f14973e = new y3(null);
+    private static final Runnable f14602e = new y3(null);
 
     private final void g(Thread thread) {
         Runnable runnable = (Runnable) get();
@@ -19,7 +19,7 @@ public abstract class a4 extends AtomicReference implements Runnable {
         int i10 = 0;
         while (true) {
             if (!(runnable instanceof x3)) {
-                if (runnable != f14973e) {
+                if (runnable != f14602e) {
                     break;
                 }
             } else {
@@ -27,7 +27,7 @@ public abstract class a4 extends AtomicReference implements Runnable {
             }
             i10++;
             if (i10 > 1000) {
-                Runnable runnable2 = f14973e;
+                Runnable runnable2 = f14602e;
                 if (runnable == runnable2 || compareAndSet(runnable, runnable2)) {
                     if (Thread.interrupted() || z10) {
                         z10 = true;
@@ -64,11 +64,11 @@ public abstract class a4 extends AtomicReference implements Runnable {
                 try {
                     Thread thread = (Thread) runnable;
                     thread.interrupt();
-                    if (((Runnable) getAndSet(f14972d)) == f14973e) {
+                    if (((Runnable) getAndSet(f14601d)) == f14602e) {
                         LockSupport.unpark(thread);
                     }
                 } catch (Throwable th2) {
-                    if (((Runnable) getAndSet(f14972d)) == f14973e) {
+                    if (((Runnable) getAndSet(f14601d)) == f14602e) {
                         LockSupport.unpark((Thread) runnable);
                     }
                     throw th2;
@@ -93,13 +93,13 @@ public abstract class a4 extends AtomicReference implements Runnable {
                         if (th2 instanceof InterruptedException) {
                             Thread.currentThread().interrupt();
                         }
-                        if (!compareAndSet(currentThread, f14972d)) {
+                        if (!compareAndSet(currentThread, f14601d)) {
                             g(currentThread);
                         }
                         c(th2);
                         return;
                     } catch (Throwable th3) {
-                        if (!compareAndSet(currentThread, f14972d)) {
+                        if (!compareAndSet(currentThread, f14601d)) {
                             g(currentThread);
                         }
                         d(null);
@@ -107,7 +107,7 @@ public abstract class a4 extends AtomicReference implements Runnable {
                     }
                 }
             }
-            if (!compareAndSet(currentThread, f14972d)) {
+            if (!compareAndSet(currentThread, f14601d)) {
                 g(currentThread);
             }
             if (!f10) {
@@ -120,7 +120,7 @@ public abstract class a4 extends AtomicReference implements Runnable {
     public final String toString() {
         String str;
         Runnable runnable = (Runnable) get();
-        if (runnable == f14972d) {
+        if (runnable == f14601d) {
             str = "running=[DONE]";
         } else if (runnable instanceof x3) {
             str = "running=[INTERRUPTED]";

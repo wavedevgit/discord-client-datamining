@@ -1,46 +1,73 @@
 package ss;
 
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
+import ss.c;
+import ss.f;
+import ss.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d {
-    public static final int a(char c10) {
-        return c10 - '0';
-    }
+public interface d extends c, f, o.a, o.c {
 
-    public static final boolean b(char c10) {
-        if ('0' > c10 || c10 >= ':') {
-            return false;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static void a(d dVar, us.o structure) {
+            Intrinsics.checkNotNullParameter(structure, "structure");
+            dVar.v(structure);
         }
-        return true;
-    }
 
-    private static final String c(String str, int i10) {
-        if (str.length() >= i10 + 12) {
-            int i11 = 0;
-            if (StringsKt.U("+-", str.charAt(0), false, 2, null)) {
-                int h02 = StringsKt.h0(str, '-', 1, false, 4, null);
-                if (h02 < 12) {
-                    return str;
-                }
-                while (true) {
-                    int i12 = i11 + 1;
-                    if (str.charAt(i12) != '0') {
-                        break;
-                    }
-                    i11 = i12;
-                }
-                if (h02 - i11 >= 12) {
-                    return str;
-                }
-                return StringsKt.C0(str, 1, h02 - 10).toString();
-            }
+        public static void b(d dVar, us.o structure) {
+            Intrinsics.checkNotNullParameter(structure, "structure");
+            dVar.v(structure);
         }
-        return str;
+
+        public static void c(d dVar, n format) {
+            Intrinsics.checkNotNullParameter(format, "format");
+            c.a.a(dVar, format);
+        }
+
+        public static void d(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            c.a.b(dVar, padding);
+        }
+
+        public static void e(d dVar, s names) {
+            Intrinsics.checkNotNullParameter(names, "names");
+            c.a.c(dVar, names);
+        }
+
+        public static void f(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            f.a.a(dVar, padding);
+        }
+
+        public static void g(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            f.a.b(dVar, padding);
+        }
+
+        public static void h(d dVar, f0 names) {
+            Intrinsics.checkNotNullParameter(names, "names");
+            c.a.d(dVar, names);
+        }
+
+        public static void i(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            c.a.e(dVar, padding);
+        }
+
+        public static void j(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            f.a.c(dVar, padding);
+        }
+
+        public static void k(d dVar, int i10, int i11) {
+            f.a.d(dVar, i10, i11);
+        }
+
+        public static void l(d dVar, h0 padding) {
+            Intrinsics.checkNotNullParameter(padding, "padding");
+            c.a.f(dVar, padding);
+        }
     }
 
-    public static final String d(String input) {
-        Intrinsics.checkNotNullParameter(input, "input");
-        return c(input.toString(), 6);
-    }
+    void v(us.o oVar);
 }

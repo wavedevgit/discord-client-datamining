@@ -8,7 +8,7 @@ import android.util.Size;
 public abstract class q {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final RectF f7139a = new RectF(-1.0f, -1.0f, 1.0f, 1.0f);
+    public static final RectF f6190a = new RectF(-1.0f, -1.0f, 1.0f, 1.0f);
 
     public static float a(float f10, float f11, float f12, float f13) {
         float f14 = (f10 * f12) + (f11 * f13);
@@ -23,7 +23,7 @@ public abstract class q {
 
     public static Matrix c(RectF rectF) {
         Matrix matrix = new Matrix();
-        matrix.setRectToRect(f7139a, rectF, Matrix.ScaleToFit.FILL);
+        matrix.setRectToRect(f6190a, rectF, Matrix.ScaleToFit.FILL);
         return matrix;
     }
 
@@ -33,7 +33,7 @@ public abstract class q {
 
     public static Matrix e(RectF rectF, RectF rectF2, int i10, boolean z10) {
         Matrix matrix = new Matrix();
-        matrix.setRectToRect(rectF, f7139a, Matrix.ScaleToFit.FILL);
+        matrix.setRectToRect(rectF, f6190a, Matrix.ScaleToFit.FILL);
         matrix.postRotate(i10);
         if (z10) {
             matrix.postScale(-1.0f, 1.0f);

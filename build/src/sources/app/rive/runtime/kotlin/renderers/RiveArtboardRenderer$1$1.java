@@ -15,12 +15,12 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
 
     @Override // kotlin.jvm.functions.Function0
     public /* bridge */ /* synthetic */ Object invoke() {
-        m206invoke();
-        return Unit.f33298a;
+        m208invoke();
+        return Unit.f33074a;
     }
 
     /* renamed from: invoke  reason: collision with other method in class */
-    public final void m206invoke() {
+    public final void m208invoke() {
         ((RiveArtboardRenderer) this.receiver).start();
     }
 }

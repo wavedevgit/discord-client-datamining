@@ -1,19 +1,15 @@
 package ts;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface b extends vs.a {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static Object a(b bVar, Object obj) {
-            Object a10 = bVar.a(obj);
-            if (a10 != null) {
-                return a10;
-            }
-            throw new IllegalStateException("Field " + bVar.getName() + " is not set");
-        }
+public abstract class b {
+    public static final long a(long j10, long j11) {
+        return Math.addExact(j10, j11);
     }
 
-    Object a(Object obj);
+    public static final int b(int i10, int i11) {
+        return Math.multiplyExact(i10, i11);
+    }
 
-    Object b(Object obj);
+    public static final long c(long j10, long j11) {
+        return Math.multiplyExact(j10, j11);
+    }
 }

@@ -9,13 +9,13 @@ import java.util.Locale;
 public abstract class v4 implements Iterable, Serializable {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final v4 f15145e = new t4(z4.f15163a);
+    public static final v4 f14774e = new t4(z4.f14792a);
 
     /* renamed from: d  reason: collision with root package name */
-    private int f15146d = 0;
+    private int f14775d = 0;
 
     static {
-        int i10 = n4.f15074a;
+        int i10 = n4.f14703a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -58,14 +58,14 @@ public abstract class v4 implements Iterable, Serializable {
     public abstract InputStream h();
 
     public final int hashCode() {
-        int i10 = this.f15146d;
+        int i10 = this.f14775d;
         if (i10 == 0) {
             int d10 = d();
             i10 = f(d10, 0, d10);
             if (i10 == 0) {
                 i10 = 1;
             }
-            this.f15146d = i10;
+            this.f14775d = i10;
         }
         return i10;
     }
@@ -79,13 +79,13 @@ public abstract class v4 implements Iterable, Serializable {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final int k() {
-        return this.f15146d;
+        return this.f14775d;
     }
 
     public final byte[] n() {
         int d10 = d();
         if (d10 == 0) {
-            return z4.f15163a;
+            return z4.f14792a;
         }
         byte[] bArr = new byte[d10];
         e(bArr, 0, 0, d10);

@@ -24,57 +24,57 @@ import p4.x;
 public class b implements d, f {
 
     /* renamed from: v  reason: collision with root package name */
-    static final String f5623v = m.i("SystemFgDispatcher");
+    static final String f5667v = m.i("SystemFgDispatcher");
 
     /* renamed from: d  reason: collision with root package name */
-    private Context f5624d;
+    private Context f5668d;
 
     /* renamed from: e  reason: collision with root package name */
-    private p0 f5625e;
+    private p0 f5669e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final r4.b f5626i;
+    private final r4.b f5670i;
 
     /* renamed from: o  reason: collision with root package name */
-    final Object f5627o = new Object();
+    final Object f5671o = new Object();
 
     /* renamed from: p  reason: collision with root package name */
-    p4.m f5628p;
+    p4.m f5672p;
 
     /* renamed from: q  reason: collision with root package name */
-    final Map f5629q;
+    final Map f5673q;
 
     /* renamed from: r  reason: collision with root package name */
-    final Map f5630r;
+    final Map f5674r;
 
     /* renamed from: s  reason: collision with root package name */
-    final Map f5631s;
+    final Map f5675s;
 
     /* renamed from: t  reason: collision with root package name */
-    final e f5632t;
+    final e f5676t;
 
     /* renamed from: u  reason: collision with root package name */
-    private InterfaceC0078b f5633u;
+    private InterfaceC0082b f5677u;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f5634d;
+        final /* synthetic */ String f5678d;
 
         a(String str) {
-            this.f5634d = str;
+            this.f5678d = str;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            u g10 = b.this.f5625e.m().g(this.f5634d);
+            u g10 = b.this.f5669e.m().g(this.f5678d);
             if (g10 != null && g10.k()) {
-                synchronized (b.this.f5627o) {
-                    b.this.f5630r.put(x.a(g10), g10);
+                synchronized (b.this.f5671o) {
+                    b.this.f5674r.put(x.a(g10), g10);
                     b bVar = b.this;
-                    b.this.f5631s.put(x.a(g10), m4.f.b(bVar.f5632t, g10, bVar.f5626i.b(), b.this));
+                    b.this.f5675s.put(x.a(g10), m4.f.b(bVar.f5676t, g10, bVar.f5670i.b(), b.this));
                 }
             }
         }
@@ -83,7 +83,7 @@ public class b implements d, f {
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: androidx.work.impl.foreground.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public interface InterfaceC0078b {
+    public interface InterfaceC0082b {
         void a(int i10, Notification notification);
 
         void c(int i10, int i11, Notification notification);
@@ -95,16 +95,16 @@ public class b implements d, f {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Context context) {
-        this.f5624d = context;
+        this.f5668d = context;
         p0 k10 = p0.k(context);
-        this.f5625e = k10;
-        this.f5626i = k10.q();
-        this.f5628p = null;
-        this.f5629q = new LinkedHashMap();
-        this.f5631s = new HashMap();
-        this.f5630r = new HashMap();
-        this.f5632t = new e(this.f5625e.o());
-        this.f5625e.m().e(this);
+        this.f5669e = k10;
+        this.f5670i = k10.q();
+        this.f5672p = null;
+        this.f5673q = new LinkedHashMap();
+        this.f5675s = new HashMap();
+        this.f5674r = new HashMap();
+        this.f5676t = new e(this.f5669e.o());
+        this.f5669e.m().e(this);
     }
 
     public static Intent e(Context context, p4.m mVar, g gVar) {
@@ -137,11 +137,11 @@ public class b implements d, f {
 
     private void h(Intent intent) {
         m e10 = m.e();
-        String str = f5623v;
+        String str = f5667v;
         e10.f(str, "Stopping foreground work for " + intent);
         String stringExtra = intent.getStringExtra("KEY_WORKSPEC_ID");
         if (stringExtra != null && !TextUtils.isEmpty(stringExtra)) {
-            this.f5625e.g(UUID.fromString(stringExtra));
+            this.f5669e.g(UUID.fromString(stringExtra));
         }
     }
 
@@ -153,23 +153,23 @@ public class b implements d, f {
         p4.m mVar = new p4.m(stringExtra, intent.getIntExtra("KEY_GENERATION", 0));
         Notification notification = (Notification) intent.getParcelableExtra("KEY_NOTIFICATION");
         m e10 = m.e();
-        String str = f5623v;
+        String str = f5667v;
         e10.a(str, "Notifying with (id:" + intExtra + ", workSpecId: " + stringExtra + ", notificationType :" + intExtra2 + ")");
-        if (notification != null && this.f5633u != null) {
-            this.f5629q.put(mVar, new g(intExtra, notification, intExtra2));
-            if (this.f5628p == null) {
-                this.f5628p = mVar;
-                this.f5633u.c(intExtra, intExtra2, notification);
+        if (notification != null && this.f5677u != null) {
+            this.f5673q.put(mVar, new g(intExtra, notification, intExtra2));
+            if (this.f5672p == null) {
+                this.f5672p = mVar;
+                this.f5677u.c(intExtra, intExtra2, notification);
                 return;
             }
-            this.f5633u.a(intExtra, notification);
+            this.f5677u.a(intExtra, notification);
             if (intExtra2 != 0 && Build.VERSION.SDK_INT >= 29) {
-                for (Map.Entry entry : this.f5629q.entrySet()) {
+                for (Map.Entry entry : this.f5673q.entrySet()) {
                     i10 |= ((g) entry.getValue()).a();
                 }
-                g gVar = (g) this.f5629q.get(this.f5628p);
+                g gVar = (g) this.f5673q.get(this.f5672p);
                 if (gVar != null) {
-                    this.f5633u.c(gVar.c(), i10, gVar.b());
+                    this.f5677u.c(gVar.c(), i10, gVar.b());
                 }
             }
         }
@@ -177,19 +177,19 @@ public class b implements d, f {
 
     private void j(Intent intent) {
         m e10 = m.e();
-        String str = f5623v;
+        String str = f5667v;
         e10.f(str, "Started foreground service " + intent);
-        this.f5626i.d(new a(intent.getStringExtra("KEY_WORKSPEC_ID")));
+        this.f5670i.d(new a(intent.getStringExtra("KEY_WORKSPEC_ID")));
     }
 
     @Override // m4.d
     public void a(u uVar, m4.b bVar) {
-        if (bVar instanceof b.C0491b) {
-            String str = uVar.f44926a;
+        if (bVar instanceof b.C0502b) {
+            String str = uVar.f45000a;
             m e10 = m.e();
-            String str2 = f5623v;
+            String str2 = f5667v;
             e10.a(str2, "Constraints unmet for WorkSpec " + str);
-            this.f5625e.u(x.a(uVar));
+            this.f5669e.u(x.a(uVar));
         }
     }
 
@@ -197,10 +197,10 @@ public class b implements d, f {
     public void b(p4.m mVar, boolean z10) {
         Job job;
         Map.Entry entry;
-        synchronized (this.f5627o) {
+        synchronized (this.f5671o) {
             try {
-                if (((u) this.f5630r.remove(mVar)) != null) {
-                    job = (Job) this.f5631s.remove(mVar);
+                if (((u) this.f5674r.remove(mVar)) != null) {
+                    job = (Job) this.f5675s.remove(mVar);
                 } else {
                     job = null;
                 }
@@ -211,10 +211,10 @@ public class b implements d, f {
                 throw th2;
             }
         }
-        g gVar = (g) this.f5629q.remove(mVar);
-        if (mVar.equals(this.f5628p)) {
-            if (this.f5629q.size() > 0) {
-                Iterator it = this.f5629q.entrySet().iterator();
+        g gVar = (g) this.f5673q.remove(mVar);
+        if (mVar.equals(this.f5672p)) {
+            if (this.f5673q.size() > 0) {
+                Iterator it = this.f5673q.entrySet().iterator();
                 Object next = it.next();
                 while (true) {
                     entry = (Map.Entry) next;
@@ -223,44 +223,44 @@ public class b implements d, f {
                     }
                     next = it.next();
                 }
-                this.f5628p = (p4.m) entry.getKey();
-                if (this.f5633u != null) {
+                this.f5672p = (p4.m) entry.getKey();
+                if (this.f5677u != null) {
                     g gVar2 = (g) entry.getValue();
-                    this.f5633u.c(gVar2.c(), gVar2.a(), gVar2.b());
-                    this.f5633u.e(gVar2.c());
+                    this.f5677u.c(gVar2.c(), gVar2.a(), gVar2.b());
+                    this.f5677u.e(gVar2.c());
                 }
             } else {
-                this.f5628p = null;
+                this.f5672p = null;
             }
         }
-        InterfaceC0078b interfaceC0078b = this.f5633u;
-        if (gVar != null && interfaceC0078b != null) {
-            m.e().a(f5623v, "Removing Notification (id: " + gVar.c() + ", workSpecId: " + mVar + ", notificationType: " + gVar.a());
-            interfaceC0078b.e(gVar.c());
+        InterfaceC0082b interfaceC0082b = this.f5677u;
+        if (gVar != null && interfaceC0082b != null) {
+            m.e().a(f5667v, "Removing Notification (id: " + gVar.c() + ", workSpecId: " + mVar + ", notificationType: " + gVar.a());
+            interfaceC0082b.e(gVar.c());
         }
     }
 
     void k(Intent intent) {
-        m.e().f(f5623v, "Stopping foreground service");
-        InterfaceC0078b interfaceC0078b = this.f5633u;
-        if (interfaceC0078b != null) {
-            interfaceC0078b.stop();
+        m.e().f(f5667v, "Stopping foreground service");
+        InterfaceC0082b interfaceC0082b = this.f5677u;
+        if (interfaceC0082b != null) {
+            interfaceC0082b.stop();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void l() {
-        this.f5633u = null;
-        synchronized (this.f5627o) {
+        this.f5677u = null;
+        synchronized (this.f5671o) {
             try {
-                for (Job job : this.f5631s.values()) {
+                for (Job job : this.f5675s.values()) {
                     job.h(null);
                 }
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        this.f5625e.m().m(this);
+        this.f5669e.m().m(this);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -279,11 +279,11 @@ public class b implements d, f {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public void n(InterfaceC0078b interfaceC0078b) {
-        if (this.f5633u != null) {
-            m.e().c(f5623v, "A callback already exists.");
+    public void n(InterfaceC0082b interfaceC0082b) {
+        if (this.f5677u != null) {
+            m.e().c(f5667v, "A callback already exists.");
         } else {
-            this.f5633u = interfaceC0078b;
+            this.f5677u = interfaceC0082b;
         }
     }
 }

@@ -5,14 +5,14 @@ import java.util.Set;
 public abstract class n extends g implements Set {
 
     /* renamed from: e  reason: collision with root package name */
-    private transient j f15332e;
+    private transient j f14961e;
 
     @Override // com.google.android.gms.internal.play_billing.g
     public j e() {
-        j jVar = this.f15332e;
+        j jVar = this.f14961e;
         if (jVar == null) {
             j h10 = h();
-            this.f15332e = h10;
+            this.f14961e = h10;
             return h10;
         }
         return jVar;
@@ -40,7 +40,7 @@ public abstract class n extends g implements Set {
 
     j h() {
         Object[] array = toArray();
-        int i10 = j.f15264i;
+        int i10 = j.f14893i;
         return j.i(array, array.length);
     }
 

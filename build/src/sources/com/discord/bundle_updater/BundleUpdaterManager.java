@@ -25,12 +25,12 @@ import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.runtime.ReactHostImpl;
 import com.facebook.react.runtime.internal.bolts.Task;
 import com.jakewharton.processphoenix.ProcessPhoenix;
-import gs.j1;
-import gs.m0;
-import ir.v;
+import hs.j1;
+import hs.m0;
 import java.io.File;
 import java.lang.reflect.Method;
 import java.util.List;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -76,20 +76,20 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         this.reactContext = reactContext;
         this.reactEvents = new ReactEvents(v.a(BUNDLE_DOWNLOADED, Reflection.getOrCreateKotlinClass(BundleDownloadedEvent.class)), v.a(OTA_UPDATE_CHECKED, Reflection.getOrCreateKotlinClass(OtaCheckAttemptEvent.class)));
-        this.coroutineScope = kotlinx.coroutines.i.a(m0.c().U0(j1.b(null, 1, null)));
+        this.coroutineScope = kotlinx.coroutines.i.a(m0.c().Z0(j1.b(null, 1, null)));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit addListener$lambda$3(BundleUpdaterManager bundleUpdaterManager, boolean z10) {
         bundleUpdaterManager.reactEvents.emitModuleEvent(bundleUpdaterManager.reactContext, new BundleDownloadedEvent(z10));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit addListener$lambda$4(BundleUpdaterManager bundleUpdaterManager, List metrics) {
         Intrinsics.checkNotNullParameter(metrics, "metrics");
         bundleUpdaterManager.reactEvents.emitModuleEvent(bundleUpdaterManager.reactContext, new OtaCheckAttemptEvent(metrics));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -103,14 +103,14 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
                 return checkForUpdateAndReload$lambda$1$lambda$0;
             }
         });
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit checkForUpdateAndReload$lambda$1$lambda$0(BundleUpdaterManager bundleUpdaterManager, ViewGroup runOnActivity) {
         Intrinsics.checkNotNullParameter(runOnActivity, "$this$runOnActivity");
         bundleUpdaterManager.update();
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void removeSpinnerView() {
@@ -132,7 +132,7 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
             runOnActivity.removeView(viewGroup);
         }
         bundleUpdaterManager.progressLayout = null;
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void runOnActivity(final Function1<? super ViewGroup, Unit> function1) {
@@ -185,7 +185,7 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
     public static final Unit showSpinnerView$lambda$7(BundleUpdaterManager bundleUpdaterManager, ViewGroup runOnActivity) {
         Intrinsics.checkNotNullParameter(runOnActivity, "$this$runOnActivity");
         runOnActivity.addView(bundleUpdaterManager.progressLayout);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void update() {
@@ -248,7 +248,7 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
         if (task != null) {
             task.waitForCompletion();
         }
-        gs.i.d(this.coroutineScope, null, null, new BundleUpdaterManager$update$1(this, null), 3, null);
+        hs.i.d(this.coroutineScope, null, null, new BundleUpdaterManager$update$1(this, null), 3, null);
     }
 
     @ReactMethod
@@ -288,7 +288,7 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
             }
         }, 1, null);
         ReactApplicationContext reactApplicationContext = this.reactContext;
-        int i10 = MainActivity.f10467d;
+        int i10 = MainActivity.f10096d;
         Intrinsics.checkNotNullExpressionValue(MainActivity.class, "forName(...)");
         companion.addClearBuildOverrideShortcut(reactApplicationContext, MainActivity.class);
     }

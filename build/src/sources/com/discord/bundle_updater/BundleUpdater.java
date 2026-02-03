@@ -16,9 +16,8 @@ import com.discord.shortcuts.ShortcutData;
 import com.discord.shortcuts.ShortcutUtilsKt;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableNativeMap;
-import gs.j1;
-import gs.m0;
-import ir.v;
+import hs.j1;
+import hs.m0;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -36,6 +35,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import javax.net.ssl.SSLException;
+import jr.v;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Pair;
@@ -292,7 +292,7 @@ public final class BundleUpdater {
         }
 
         /* renamed from: copy-fUqyM7Y$default */
-        public static /* synthetic */ OtaAssetDownloadAttempt m213copyfUqyM7Y$default(OtaAssetDownloadAttempt otaAssetDownloadAttempt, OtaAssetDownloadAttemptResult otaAssetDownloadAttemptResult, String str, Duration duration, Long l10, Integer num, String str2, int i10, Object obj) {
+        public static /* synthetic */ OtaAssetDownloadAttempt m215copyfUqyM7Y$default(OtaAssetDownloadAttempt otaAssetDownloadAttempt, OtaAssetDownloadAttemptResult otaAssetDownloadAttemptResult, String str, Duration duration, Long l10, Integer num, String str2, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 otaAssetDownloadAttemptResult = otaAssetDownloadAttempt.result;
             }
@@ -313,7 +313,7 @@ public final class BundleUpdater {
             }
             Integer num2 = num;
             String str3 = str2;
-            return otaAssetDownloadAttempt.m215copyfUqyM7Y(otaAssetDownloadAttemptResult, str, duration, l10, num2, str3);
+            return otaAssetDownloadAttempt.m217copyfUqyM7Y(otaAssetDownloadAttemptResult, str, duration, l10, num2, str3);
         }
 
         @NotNull
@@ -327,7 +327,7 @@ public final class BundleUpdater {
         }
 
         /* renamed from: component3-FghU774 */
-        public final Duration m214component3FghU774() {
+        public final Duration m216component3FghU774() {
             return this.duration;
         }
 
@@ -345,7 +345,7 @@ public final class BundleUpdater {
 
         @NotNull
         /* renamed from: copy-fUqyM7Y */
-        public final OtaAssetDownloadAttempt m215copyfUqyM7Y(@NotNull OtaAssetDownloadAttemptResult result, @NotNull String url, Duration duration, Long l10, Integer num, String str) {
+        public final OtaAssetDownloadAttempt m217copyfUqyM7Y(@NotNull OtaAssetDownloadAttemptResult result, @NotNull String url, Duration duration, Long l10, Integer num, String str) {
             Intrinsics.checkNotNullParameter(result, "result");
             Intrinsics.checkNotNullParameter(url, "url");
             return new OtaAssetDownloadAttempt(result, url, duration, l10, num, str, null);
@@ -367,7 +367,7 @@ public final class BundleUpdater {
         }
 
         /* renamed from: getDuration-FghU774 */
-        public final Duration m216getDurationFghU774() {
+        public final Duration m218getDurationFghU774() {
             return this.duration;
         }
 
@@ -411,7 +411,7 @@ public final class BundleUpdater {
             Pair a13 = v.a("bytesReceived", this.bytesReceived);
             Duration duration = this.duration;
             if (duration != null) {
-                d10 = Double.valueOf(Duration.J(duration.O(), es.b.f24009p));
+                d10 = Double.valueOf(Duration.J(duration.O(), fs.b.f25570p));
             } else {
                 d10 = null;
             }
@@ -462,7 +462,7 @@ public final class BundleUpdater {
         static {
             OtaAssetDownloadAttemptResult[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
         }
 
         private OtaAssetDownloadAttemptResult(String str, int i10, String str2) {
@@ -575,7 +575,7 @@ public final class BundleUpdater {
         }
 
         /* renamed from: copy-dWUq8MI$default */
-        public static /* synthetic */ OtaCheckAttempt m217copydWUq8MI$default(OtaCheckAttempt otaCheckAttempt, OtaCheckAttemptResult otaCheckAttemptResult, long j10, long j11, String str, int i10, Object obj) {
+        public static /* synthetic */ OtaCheckAttempt m219copydWUq8MI$default(OtaCheckAttempt otaCheckAttempt, OtaCheckAttemptResult otaCheckAttemptResult, long j10, long j11, String str, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 otaCheckAttemptResult = otaCheckAttempt.result;
             }
@@ -589,7 +589,7 @@ public final class BundleUpdater {
                 str = otaCheckAttempt.error;
             }
             String str2 = str;
-            return otaCheckAttempt.m219copydWUq8MI(otaCheckAttemptResult, j10, j11, str2);
+            return otaCheckAttempt.m221copydWUq8MI(otaCheckAttemptResult, j10, j11, str2);
         }
 
         @NotNull
@@ -598,7 +598,7 @@ public final class BundleUpdater {
         }
 
         /* renamed from: component2-UwyO8pc */
-        public final long m218component2UwyO8pc() {
+        public final long m220component2UwyO8pc() {
             return this.duration;
         }
 
@@ -612,7 +612,7 @@ public final class BundleUpdater {
 
         @NotNull
         /* renamed from: copy-dWUq8MI */
-        public final OtaCheckAttempt m219copydWUq8MI(@NotNull OtaCheckAttemptResult result, long j10, long j11, String str) {
+        public final OtaCheckAttempt m221copydWUq8MI(@NotNull OtaCheckAttemptResult result, long j10, long j11, String str) {
             Intrinsics.checkNotNullParameter(result, "result");
             return new OtaCheckAttempt(result, j10, j11, str, null);
         }
@@ -629,7 +629,7 @@ public final class BundleUpdater {
         }
 
         /* renamed from: getDuration-UwyO8pc */
-        public final long m220getDurationUwyO8pc() {
+        public final long m222getDurationUwyO8pc() {
             return this.duration;
         }
 
@@ -655,7 +655,7 @@ public final class BundleUpdater {
         @Override // com.discord.bundle_updater.BundleUpdater.OtaMetric
         @NotNull
         public ReadableMap toNativeMap() {
-            return NativeMapExtensionsKt.nativeMapOf(v.a("type", "OtaCheckAttempt"), v.a("result", this.result.getValue()), v.a("durationSeconds", Double.valueOf(Duration.J(this.duration, es.b.f24009p))), v.a("bytesReceived", Long.valueOf(this.totalBytesReceived)), v.a("error", this.error));
+            return NativeMapExtensionsKt.nativeMapOf(v.a("type", "OtaCheckAttempt"), v.a("result", this.result.getValue()), v.a("durationSeconds", Double.valueOf(Duration.J(this.duration, fs.b.f25570p))), v.a("bytesReceived", Long.valueOf(this.totalBytesReceived)), v.a("error", this.error));
         }
 
         @NotNull
@@ -700,7 +700,7 @@ public final class BundleUpdater {
         static {
             OtaCheckAttemptResult[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
         }
 
         private OtaCheckAttemptResult(String str, int i10, String str2) {
@@ -804,7 +804,7 @@ public final class BundleUpdater {
         this.filesDirectory = file;
         this.assetManager = assetManager;
         this.executor = executorService;
-        this.cookieManager$delegate = ir.l.b(new Function0() { // from class: com.discord.bundle_updater.f
+        this.cookieManager$delegate = jr.l.b(new Function0() { // from class: com.discord.bundle_updater.f
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 CookieManager cookieManager_delegate$lambda$0;
@@ -812,8 +812,8 @@ public final class BundleUpdater {
                 return cookieManager_delegate$lambda$0;
             }
         });
-        this.coroutineScope = kotlinx.coroutines.i.a(m0.c().U0(j1.b(null, 1, null)));
-        this.client$delegate = ir.l.b(new Function0() { // from class: com.discord.bundle_updater.g
+        this.coroutineScope = kotlinx.coroutines.i.a(m0.c().Z0(j1.b(null, 1, null)));
+        this.client$delegate = jr.l.b(new Function0() { // from class: com.discord.bundle_updater.g
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 OkHttpClient client_delegate$lambda$1;
@@ -821,7 +821,7 @@ public final class BundleUpdater {
                 return client_delegate$lambda$1;
             }
         });
-        this.otasRootDirectory$delegate = ir.l.b(new Function0() { // from class: com.discord.bundle_updater.h
+        this.otasRootDirectory$delegate = jr.l.b(new Function0() { // from class: com.discord.bundle_updater.h
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 File otasRootDirectory_delegate$lambda$2;
@@ -830,7 +830,7 @@ public final class BundleUpdater {
             }
         });
         this.otaMetrics = new ArrayList();
-        this.otaCheckTimeMark = g.a.d(kotlin.time.g.f36304a.a());
+        this.otaCheckTimeMark = g.a.d(kotlin.time.g.f36080a.a());
     }
 
     private final OtaCheckAttempt attemptOtaUpdate() {
@@ -856,11 +856,11 @@ public final class BundleUpdater {
         } else {
             list = null;
         }
-        Object m212downloadSingleFilehUnOzRk$default = m212downloadSingleFilehUnOzRk$default(this, manifestURL, list, null, null, otaTempFile, 0, 44, null);
-        Throwable e10 = Result.e(m212downloadSingleFilehUnOzRk$default);
+        Object m214downloadSingleFilehUnOzRk$default = m214downloadSingleFilehUnOzRk$default(this, manifestURL, list, null, null, otaTempFile, 0, 44, null);
+        Throwable e10 = Result.e(m214downloadSingleFilehUnOzRk$default);
         String str = "";
         if (e10 == null) {
-            Headers headers = (Headers) m212downloadSingleFilehUnOzRk$default;
+            Headers headers = (Headers) m214downloadSingleFilehUnOzRk$default;
             AppManifest manifestFromFile = BundleUpdaterUtils.INSTANCE.getManifestFromFile(otaTempFile);
             String commit = manifestFromFile.getMetadata().getCommit();
             if (Intrinsics.areEqual(commit, getExistingOtaCommit())) {
@@ -915,7 +915,7 @@ public final class BundleUpdater {
         Thread.sleep(i10 * 1000);
         try {
             bundleUpdater.otaMetrics.clear();
-            bundleUpdater.otaCheckTimeMark = g.a.d(kotlin.time.g.f36304a.a());
+            bundleUpdater.otaCheckTimeMark = g.a.d(kotlin.time.g.f36080a.a());
             bundleUpdater.totalBytesReceived = 0L;
             OtaCheckAttempt attemptOtaUpdate = bundleUpdater.attemptOtaUpdate();
             if (function0 != null) {
@@ -947,7 +947,7 @@ public final class BundleUpdater {
         setBundle(null);
         setManifestETag("");
         createOtaCheckAttempt$default(this, OtaCheckAttemptResult.CLEARED, null, 2, null);
-        gs.i.d(this.coroutineScope, null, null, new BundleUpdater$clearBundle$1(context, null), 3, null);
+        hs.i.d(this.coroutineScope, null, null, new BundleUpdater$clearBundle$1(context, null), 3, null);
     }
 
     public static final OkHttpClient client_delegate$lambda$1(BundleUpdater bundleUpdater) {
@@ -1016,7 +1016,7 @@ public final class BundleUpdater {
                 if (!kotlin.collections.i.N(strArr, file.getName())) {
                     CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, TAG + " - Deleting outdated/unknown OTA at " + file.getName() + "...", null, null, null, false, 30, null);
                     Intrinsics.checkNotNull(file);
-                    tr.j.r(file);
+                    ur.j.r(file);
                 }
             }
         }
@@ -1078,9 +1078,9 @@ public final class BundleUpdater {
                         Intrinsics.checkNotNull(open);
                         assetStatus = assetStatus2;
                         uri = build2;
-                        tr.b.b(open, fileOutputStream, 0, 2, null);
-                        tr.c.a(fileOutputStream, null);
-                        tr.c.a(open, null);
+                        ur.b.b(open, fileOutputStream, 0, 2, null);
+                        ur.c.a(fileOutputStream, null);
+                        ur.c.a(open, null);
                         String uri2 = build.buildUpon().appendEncodedPath(str5).build().toString();
                         Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
                         patch2 = new Patch(uri2, otaTempFile, otaTempFile2);
@@ -1167,13 +1167,13 @@ public final class BundleUpdater {
             if (i10 == 2) {
                 String uri2 = uri.toString();
                 Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
-                kotlin.c.b(m212downloadSingleFilehUnOzRk$default(bundleUpdater, uri2, null, appManifest.getHashes().get(str3), patch, file, 0, 34, null));
+                kotlin.c.b(m214downloadSingleFilehUnOzRk$default(bundleUpdater, uri2, null, appManifest.getHashes().get(str3), patch, file, 0, 34, null));
             } else {
-                throw new ir.p();
+                throw new jr.p();
             }
         } else {
             Intrinsics.checkNotNull(str);
-            tr.j.q(bundleUpdater.otaFile(str, str2), file, true, 0, 4, null);
+            ur.j.q(bundleUpdater.otaFile(str, str2), file, true, 0, 4, null);
         }
         bundleUpdater.moveFile(file, file2);
     }
@@ -1194,17 +1194,17 @@ public final class BundleUpdater {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    private final java.lang.Object m211downloadSingleFilehUnOzRk(java.lang.String r30, java.util.List<kotlin.Pair<java.lang.String, java.lang.String>> r31, java.lang.String r32, com.discord.bundle_updater.BundleUpdater.Patch r33, java.io.File r34, int r35) {
+    private final java.lang.Object m213downloadSingleFilehUnOzRk(java.lang.String r30, java.util.List<kotlin.Pair<java.lang.String, java.lang.String>> r31, java.lang.String r32, com.discord.bundle_updater.BundleUpdater.Patch r33, java.io.File r34, int r35) {
         /*
             Method dump skipped, instructions count: 745
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.bundle_updater.BundleUpdater.m211downloadSingleFilehUnOzRk(java.lang.String, java.util.List, java.lang.String, com.discord.bundle_updater.BundleUpdater$Patch, java.io.File, int):java.lang.Object");
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.bundle_updater.BundleUpdater.m213downloadSingleFilehUnOzRk(java.lang.String, java.util.List, java.lang.String, com.discord.bundle_updater.BundleUpdater$Patch, java.io.File, int):java.lang.Object");
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     /* renamed from: downloadSingleFile-hUnOzRk$default */
-    static /* synthetic */ Object m212downloadSingleFilehUnOzRk$default(BundleUpdater bundleUpdater, String str, List list, String str2, Patch patch, File file, int i10, int i11, Object obj) {
+    static /* synthetic */ Object m214downloadSingleFilehUnOzRk$default(BundleUpdater bundleUpdater, String str, List list, String str2, Patch patch, File file, int i10, int i11, Object obj) {
         if ((i11 & 2) != 0) {
             list = null;
         }
@@ -1217,7 +1217,7 @@ public final class BundleUpdater {
         if ((i11 & 32) != 0) {
             i10 = 0;
         }
-        return bundleUpdater.m211downloadSingleFilehUnOzRk(str, list, str2, patch, file, i10);
+        return bundleUpdater.m213downloadSingleFilehUnOzRk(str, list, str2, patch, file, i10);
     }
 
     private final File ensureEmptyFile(File file) {
@@ -1287,7 +1287,7 @@ public final class BundleUpdater {
         String y10;
         List L0;
         OtaBundle bundle = getBundle();
-        if (bundle != null && (location = bundle.getLocation()) != null && (y10 = tr.j.y(location, getOtasRootDirectory())) != null && (L0 = StringsKt.L0(y10, new char[]{File.separatorChar}, false, 0, 6, null)) != null) {
+        if (bundle != null && (location = bundle.getLocation()) != null && (y10 = ur.j.y(location, getOtasRootDirectory())) != null && (L0 = StringsKt.L0(y10, new char[]{File.separatorChar}, false, 0, 6, null)) != null) {
             return (String) CollectionsKt.firstOrNull(L0);
         }
         return null;
@@ -1400,7 +1400,7 @@ public final class BundleUpdater {
     }
 
     public final Cookie getBuildOverrideCookie() {
-        return Cookie.f44028j.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
+        return Cookie.f44156j.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
     }
 
     @NotNull

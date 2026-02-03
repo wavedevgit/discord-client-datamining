@@ -5,16 +5,16 @@ import ui.c;
 final class s3 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s3 f41622a = new s3();
+    static final s3 f41485a = new s3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41623b;
+    private static final ui.c f41486b;
 
     static {
         c.b a10 = ui.c.a("api");
         f fVar = new f();
         fVar.a(1);
-        f41623b = a10.b(fVar.b()).a();
+        f41486b = a10.b(fVar.b()).a();
     }
 
     private s3() {

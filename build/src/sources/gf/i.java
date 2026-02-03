@@ -5,17 +5,17 @@ import android.util.Log;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f26825a;
+    private final String f26920a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f26826b;
+    private final String f26921b;
 
     public i(String str) {
         this(str, null);
     }
 
     private final String g(String str) {
-        String str2 = this.f26826b;
+        String str2 = this.f26921b;
         if (str2 == null) {
             return str;
         }
@@ -23,7 +23,7 @@ public final class i {
     }
 
     public boolean a(int i10) {
-        return Log.isLoggable(this.f26825a, i10);
+        return Log.isLoggable(this.f26920a, i10);
     }
 
     public void b(String str, String str2) {
@@ -59,7 +59,7 @@ public final class i {
     public i(String str, String str2) {
         q.m(str, "log tag cannot be null");
         q.c(str.length() <= 23, "tag \"%s\" is longer than the %d character maximum", str, 23);
-        this.f26825a = str;
-        this.f26826b = (str2 == null || str2.length() <= 0) ? null : str2;
+        this.f26920a = str;
+        this.f26921b = (str2 == null || str2.length() <= 0) ? null : str2;
     }
 }

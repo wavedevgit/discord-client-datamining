@@ -12,7 +12,7 @@ import com.discord.media_player.reactevents.MediaPlayFinishedAnalytics;
 import com.discord.primitives.ChannelId;
 import com.discord.primitives.MessageId;
 import com.discord.reactions.ReactionView;
-import ir.c;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function2;
@@ -27,7 +27,7 @@ public interface ChatEventHandler {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class DefaultImpls {
         /* renamed from: onInitiateReply-8a0ehIg$default  reason: not valid java name */
-        public static /* synthetic */ void m488onInitiateReply8a0ehIg$default(ChatEventHandler chatEventHandler, String str, long j10, Boolean bool, String str2, int i10, Object obj) {
+        public static /* synthetic */ void m490onInitiateReply8a0ehIg$default(ChatEventHandler chatEventHandler, String str, long j10, Boolean bool, String str2, int i10, Object obj) {
             if (obj == null) {
                 if ((i10 & 4) != 0) {
                     bool = Boolean.FALSE;
@@ -36,26 +36,26 @@ public interface ChatEventHandler {
                 if ((i10 & 8) != 0) {
                     str2 = null;
                 }
-                chatEventHandler.mo435onInitiateReply8a0ehIg(str, j10, bool2, str2);
+                chatEventHandler.mo437onInitiateReply8a0ehIg(str, j10, bool2, str2);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: onInitiateReply-8a0ehIg");
         }
 
         /* renamed from: onLinkClicked-u7_MRrM$default  reason: not valid java name */
-        public static /* synthetic */ void m489onLinkClickedu7_MRrM$default(ChatEventHandler chatEventHandler, String str, String str2, String str3, int i10, Object obj) {
+        public static /* synthetic */ void m491onLinkClickedu7_MRrM$default(ChatEventHandler chatEventHandler, String str, String str2, String str3, int i10, Object obj) {
             if (obj == null) {
                 if ((i10 & 4) != 0) {
                     str3 = null;
                 }
-                chatEventHandler.mo438onLinkClickedu7_MRrM(str, str2, str3);
+                chatEventHandler.mo440onLinkClickedu7_MRrM(str, str2, str3);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: onLinkClicked-u7_MRrM");
         }
 
         /* renamed from: onTapInlineForward-j8a4Y88$default  reason: not valid java name */
-        public static /* synthetic */ void m490onTapInlineForwardj8a4Y88$default(ChatEventHandler chatEventHandler, long j10, String str, String str2, Integer num, Boolean bool, String str3, int i10, Object obj) {
+        public static /* synthetic */ void m492onTapInlineForwardj8a4Y88$default(ChatEventHandler chatEventHandler, long j10, String str, String str2, Integer num, Boolean bool, String str3, int i10, Object obj) {
             String str4;
             if (obj == null) {
                 if ((i10 & 16) != 0) {
@@ -67,14 +67,14 @@ public interface ChatEventHandler {
                 } else {
                     str4 = str3;
                 }
-                chatEventHandler.mo461onTapInlineForwardj8a4Y88(j10, str, str2, num, bool2, str4);
+                chatEventHandler.mo463onTapInlineForwardj8a4Y88(j10, str, str2, num, bool2, str4);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: onTapInlineForward-j8a4Y88");
         }
 
         /* renamed from: onTapReaction-AFFcxXc$default  reason: not valid java name */
-        public static /* synthetic */ void m491onTapReactionAFFcxXc$default(ChatEventHandler chatEventHandler, String str, ReactionView.Reaction reaction, Boolean bool, String str2, int i10, Object obj) {
+        public static /* synthetic */ void m493onTapReactionAFFcxXc$default(ChatEventHandler chatEventHandler, String str, ReactionView.Reaction reaction, Boolean bool, String str2, int i10, Object obj) {
             if (obj == null) {
                 if ((i10 & 4) != 0) {
                     bool = Boolean.FALSE;
@@ -82,7 +82,7 @@ public interface ChatEventHandler {
                 if ((i10 & 8) != 0) {
                     str2 = null;
                 }
-                chatEventHandler.mo475onTapReactionAFFcxXc(str, reaction, bool, str2);
+                chatEventHandler.mo477onTapReactionAFFcxXc(str, reaction, bool, str2);
                 return;
             }
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: onTapReaction-AFFcxXc");
@@ -103,32 +103,32 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: getOnMessageDoubleTapped  reason: collision with other method in class */
-        public /* bridge */ /* synthetic */ Function2 mo492getOnMessageDoubleTapped() {
+        public /* bridge */ /* synthetic */ Function2 mo494getOnMessageDoubleTapped() {
             return (Function2) getOnMessageDoubleTapped();
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: getOnMessageLongPressed  reason: collision with other method in class */
-        public /* bridge */ /* synthetic */ Function6 mo493getOnMessageLongPressed() {
+        public /* bridge */ /* synthetic */ Function6 mo495getOnMessageLongPressed() {
             return (Function6) getOnMessageLongPressed();
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: getOnMessageTapped  reason: collision with other method in class */
-        public /* bridge */ /* synthetic */ Function2 mo494getOnMessageTapped() {
+        public /* bridge */ /* synthetic */ Function2 mo496getOnMessageTapped() {
             return (Function2) getOnMessageTapped();
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: mediaAttachmentPlaybackEnded-O97gnAM */
-        public void mo432mediaAttachmentPlaybackEndedO97gnAM(@NotNull String messageId, float f10, float f11, long j10, float f12, boolean z10, @NotNull String attachmentId) {
+        public void mo434mediaAttachmentPlaybackEndedO97gnAM(@NotNull String messageId, float f10, float f11, long j10, float f12, boolean z10, @NotNull String attachmentId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(attachmentId, "attachmentId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: mediaAttachmentPlaybackStarted-jd4C3YQ */
-        public void mo433mediaAttachmentPlaybackStartedjd4C3YQ(@NotNull String messageId, float f10, float f11, long j10, boolean z10, @NotNull String attachmentId) {
+        public void mo435mediaAttachmentPlaybackStartedjd4C3YQ(@NotNull String messageId, float f10, float f11, long j10, boolean z10, @NotNull String attachmentId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(attachmentId, "attachmentId");
         }
@@ -143,32 +143,32 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onInitiateEdit-pfaIj0E */
-        public void mo434onInitiateEditpfaIj0E(@NotNull String messageId, long j10) {
+        public void mo436onInitiateEditpfaIj0E(@NotNull String messageId, long j10) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onInitiateReply-8a0ehIg */
-        public void mo435onInitiateReply8a0ehIg(@NotNull String messageId, long j10, Boolean bool, String str) {
+        public void mo437onInitiateReply8a0ehIg(@NotNull String messageId, long j10, Boolean bool, String str) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onInitiateThread-pfaIj0E */
-        public void mo436onInitiateThreadpfaIj0E(@NotNull String messageId, long j10) {
+        public void mo438onInitiateThreadpfaIj0E(@NotNull String messageId, long j10) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onLinkClicked-ntcYbpo */
-        public void mo437onLinkClickedntcYbpo(@NotNull String messageId, @NotNull LinkContentNode node) {
+        public void mo439onLinkClickedntcYbpo(@NotNull String messageId, @NotNull LinkContentNode node) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(node, "node");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onLinkClicked-u7_MRrM */
-        public void mo438onLinkClickedu7_MRrM(@NotNull String messageId, @NotNull String url, String str) {
+        public void mo440onLinkClickedu7_MRrM(@NotNull String messageId, @NotNull String url, String str) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(url, "url");
         }
@@ -186,7 +186,7 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onLongPressAvatar-x5gers8 */
-        public void mo439onLongPressAvatarx5gers8(@NotNull String messageId, long j10) {
+        public void mo441onLongPressAvatarx5gers8(@NotNull String messageId, long j10) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
@@ -202,7 +202,7 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onLongPressPollImage-YVExdug */
-        public void mo440onLongPressPollImageYVExdug(long j10, @NotNull String messageId, @NotNull String attachmentId, int i10, int i11, int i12, int i13, @NotNull ViewResizeMode viewResizeMode) {
+        public void mo442onLongPressPollImageYVExdug(long j10, @NotNull String messageId, @NotNull String attachmentId, int i10, int i11, int i12, int i13, @NotNull ViewResizeMode viewResizeMode) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(attachmentId, "attachmentId");
             Intrinsics.checkNotNullParameter(viewResizeMode, "viewResizeMode");
@@ -210,13 +210,13 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onLongPressReaction-Eqy5D80 */
-        public void mo441onLongPressReactionEqy5D80(@NotNull String messageId, long j10, ReactionView.Reaction reaction) {
+        public void mo443onLongPressReactionEqy5D80(@NotNull String messageId, long j10, ReactionView.Reaction reaction) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onLongPressUsername-x5gers8 */
-        public void mo442onLongPressUsernamex5gers8(@NotNull String messageId, long j10) {
+        public void mo444onLongPressUsernamex5gers8(@NotNull String messageId, long j10) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
@@ -232,20 +232,20 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onSharedClientThemeViewed-1xi1bu0 */
-        public void mo443onSharedClientThemeViewed1xi1bu0(@NotNull String messageId) {
+        public void mo445onSharedClientThemeViewed1xi1bu0(@NotNull String messageId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onStickerClicked-Ayv7vGE */
-        public void mo444onStickerClickedAyv7vGE(@NotNull Sticker sticker, @NotNull String messageId) {
+        public void mo446onStickerClickedAyv7vGE(@NotNull Sticker sticker, @NotNull String messageId) {
             Intrinsics.checkNotNullParameter(sticker, "sticker");
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onStickerLongClicked-Ayv7vGE */
-        public void mo445onStickerLongClickedAyv7vGE(@NotNull Sticker sticker, @NotNull String messageId) {
+        public void mo447onStickerLongClickedAyv7vGE(@NotNull Sticker sticker, @NotNull String messageId) {
             Intrinsics.checkNotNullParameter(sticker, "sticker");
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
@@ -265,32 +265,32 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapAutoModerationActions-pfaIj0E */
-        public void mo446onTapAutoModerationActionspfaIj0E(@NotNull String messageId, long j10) {
+        public void mo448onTapAutoModerationActionspfaIj0E(@NotNull String messageId, long j10) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapAutoModerationFeedback-pfaIj0E */
-        public void mo447onTapAutoModerationFeedbackpfaIj0E(@NotNull String messageId, long j10) {
+        public void mo449onTapAutoModerationFeedbackpfaIj0E(@NotNull String messageId, long j10) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapAvatar-x5gers8 */
-        public void mo448onTapAvatarx5gers8(@NotNull String messageId, long j10) {
+        public void mo450onTapAvatarx5gers8(@NotNull String messageId, long j10) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapButtonActionComponent-ntcYbpo */
-        public void mo449onTapButtonActionComponentntcYbpo(@NotNull String messageId, @NotNull String componentId) {
+        public void mo451onTapButtonActionComponentntcYbpo(@NotNull String messageId, @NotNull String componentId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(componentId, "componentId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapCall-pfaIj0E */
-        public void mo450onTapCallpfaIj0E(@NotNull String messageId, long j10) {
+        public void mo452onTapCallpfaIj0E(@NotNull String messageId, long j10) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
@@ -307,20 +307,20 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapChannelPromptButton-Eqy5D80 */
-        public void mo451onTapChannelPromptButtonEqy5D80(@NotNull String messageId, long j10, @NotNull String buttonType) {
+        public void mo453onTapChannelPromptButtonEqy5D80(@NotNull String messageId, long j10, @NotNull String buttonType) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(buttonType, "buttonType");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapCheckpointCard-x5gers8 */
-        public void mo452onTapCheckpointCardx5gers8(@NotNull String messageId, long j10) {
+        public void mo454onTapCheckpointCardx5gers8(@NotNull String messageId, long j10) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapClanTagChiplet-g3bFfsM */
-        public void mo453onTapClanTagChipletg3bFfsM(long j10) {
+        public void mo455onTapClanTagChipletg3bFfsM(long j10) {
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -338,7 +338,7 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapContentInventoryEntryEmbed-tsfjtEQ */
-        public void mo454onTapContentInventoryEntryEmbedtsfjtEQ(@NotNull String messageId, long j10, @NotNull String contentId, @NotNull String tappedElement) {
+        public void mo456onTapContentInventoryEntryEmbedtsfjtEQ(@NotNull String messageId, long j10, @NotNull String contentId, @NotNull String tappedElement) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(contentId, "contentId");
             Intrinsics.checkNotNullParameter(tappedElement, "tappedElement");
@@ -351,14 +351,14 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapCtaButton-sekaTiM */
-        public void mo455onTapCtaButtonsekaTiM(long j10, @NotNull String messageId, @NotNull String callback) {
+        public void mo457onTapCtaButtonsekaTiM(long j10, @NotNull String messageId, @NotNull String callback) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(callback, "callback");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapDismissMediaPostSharePrompt-1xi1bu0 */
-        public void mo456onTapDismissMediaPostSharePrompt1xi1bu0(@NotNull String messageId) {
+        public void mo458onTapDismissMediaPostSharePrompt1xi1bu0(@NotNull String messageId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
@@ -369,13 +369,13 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapFollowForumPost-pfaIj0E */
-        public void mo457onTapFollowForumPostpfaIj0E(@NotNull String messageId, long j10) {
+        public void mo459onTapFollowForumPostpfaIj0E(@NotNull String messageId, long j10) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapForwardFooter-SHRpUJI */
-        public void mo458onTapForwardFooterSHRpUJI(int i10, long j10, @NotNull String messageId) {
+        public void mo460onTapForwardFooterSHRpUJI(int i10, long j10, @NotNull String messageId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
@@ -387,7 +387,7 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapGiftCodeAccept-NU4t8f8 */
-        public void mo459onTapGiftCodeAcceptNU4t8f8(@NotNull String giftCode, String str) {
+        public void mo461onTapGiftCodeAcceptNU4t8f8(@NotNull String giftCode, String str) {
             Intrinsics.checkNotNullParameter(giftCode, "giftCode");
         }
 
@@ -398,7 +398,7 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapImage-JR3bP6M */
-        public void mo460onTapImageJR3bP6M(@NotNull String messageId, int i10, @NotNull String type, int i11, int i12, int i13, int i14, @NotNull ViewResizeMode viewResizeMode, Double d10, Integer num, String str, Integer num2) {
+        public void mo462onTapImageJR3bP6M(@NotNull String messageId, int i10, @NotNull String type, int i11, int i12, int i13, int i14, @NotNull ViewResizeMode viewResizeMode, Double d10, Integer num, String str, Integer num2) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(type, "type");
             Intrinsics.checkNotNullParameter(viewResizeMode, "viewResizeMode");
@@ -411,38 +411,38 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapInlineForward-j8a4Y88 */
-        public void mo461onTapInlineForwardj8a4Y88(long j10, @NotNull String messageId, @NotNull String targetKind, Integer num, Boolean bool, String str) {
+        public void mo463onTapInlineForwardj8a4Y88(long j10, @NotNull String messageId, @NotNull String targetKind, Integer num, Boolean bool, String str) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(targetKind, "targetKind");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapInviteEmbed-AFFcxXc */
-        public void mo462onTapInviteEmbedAFFcxXc(@NotNull String messageId, int i10, Boolean bool, Boolean bool2) {
+        public void mo464onTapInviteEmbedAFFcxXc(@NotNull String messageId, int i10, Boolean bool, Boolean bool2) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapInviteEmbedAccept-ntcYbpo */
-        public void mo463onTapInviteEmbedAcceptntcYbpo(@NotNull String messageId, int i10) {
+        public void mo465onTapInviteEmbedAcceptntcYbpo(@NotNull String messageId, int i10) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapInviteToSpeak-1xi1bu0 */
-        public void mo464onTapInviteToSpeak1xi1bu0(@NotNull String messageId) {
+        public void mo466onTapInviteToSpeak1xi1bu0(@NotNull String messageId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapJoinActivity-1xi1bu0 */
-        public void mo465onTapJoinActivity1xi1bu0(@NotNull String messageId) {
+        public void mo467onTapJoinActivity1xi1bu0(@NotNull String messageId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapJoinRichPresence-1xi1bu0 */
-        public void mo466onTapJoinRichPresence1xi1bu0(@NotNull String messageId) {
+        public void mo468onTapJoinRichPresence1xi1bu0(@NotNull String messageId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
@@ -461,19 +461,19 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapMessageReply-0eiqbug */
-        public void mo467onTapMessageReply0eiqbug(long j10, @NotNull String originId) {
+        public void mo469onTapMessageReply0eiqbug(long j10, @NotNull String originId) {
             Intrinsics.checkNotNullParameter(originId, "originId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapObscuredMediaLearnMore-8a0ehIg */
-        public void mo468onTapObscuredMediaLearnMore8a0ehIg(@NotNull String messageId, long j10, String str, String str2) {
+        public void mo470onTapObscuredMediaLearnMore8a0ehIg(@NotNull String messageId, long j10, String str, String str2) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapObscuredMediaToggle-ZQwuxwg */
-        public void mo469onTapObscuredMediaToggleZQwuxwg(@NotNull String messageId, long j10, boolean z10, String str, String str2) {
+        public void mo471onTapObscuredMediaToggleZQwuxwg(@NotNull String messageId, long j10, boolean z10, String str, String str2) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
@@ -483,14 +483,14 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapPollAction-sekaTiM */
-        public void mo470onTapPollActionsekaTiM(long j10, @NotNull String messageId, @NotNull String type) {
+        public void mo472onTapPollActionsekaTiM(long j10, @NotNull String messageId, @NotNull String type) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(type, "type");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapPollAnswer-sekaTiM */
-        public void mo471onTapPollAnswersekaTiM(long j10, @NotNull String messageId, @NotNull String answerId) {
+        public void mo473onTapPollAnswersekaTiM(long j10, @NotNull String messageId, @NotNull String answerId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(answerId, "answerId");
         }
@@ -498,31 +498,31 @@ public interface ChatEventHandler {
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         @c
         /* renamed from: onTapPollSubmitVote-0eiqbug */
-        public void mo472onTapPollSubmitVote0eiqbug(long j10, @NotNull String messageId) {
+        public void mo474onTapPollSubmitVote0eiqbug(long j10, @NotNull String messageId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapPostPreviewEmbed-kUTrp-s */
-        public void mo473onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, @NotNull String messageId) {
+        public void mo475onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, @NotNull String messageId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapPreviewSharedClientTheme-1xi1bu0 */
-        public void mo474onTapPreviewSharedClientTheme1xi1bu0(@NotNull String messageId) {
+        public void mo476onTapPreviewSharedClientTheme1xi1bu0(@NotNull String messageId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapReaction-AFFcxXc */
-        public void mo475onTapReactionAFFcxXc(@NotNull String messageId, ReactionView.Reaction reaction, Boolean bool, String str) {
+        public void mo477onTapReactionAFFcxXc(@NotNull String messageId, ReactionView.Reaction reaction, Boolean bool, String str) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapReactionOverflow-pfaIj0E */
-        public void mo476onTapReactionOverflowpfaIj0E(@NotNull String messageId, long j10) {
+        public void mo478onTapReactionOverflowpfaIj0E(@NotNull String messageId, long j10) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
@@ -549,20 +549,20 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapSeeMore-1xi1bu0 */
-        public void mo477onTapSeeMore1xi1bu0(@NotNull String messageId) {
+        public void mo479onTapSeeMore1xi1bu0(@NotNull String messageId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapSelectActionComponent-ntcYbpo */
-        public void mo478onTapSelectActionComponentntcYbpo(@NotNull String messageId, @NotNull String componentId) {
+        public void mo480onTapSelectActionComponentntcYbpo(@NotNull String messageId, @NotNull String componentId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(componentId, "componentId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapShareForumPost-mgk6anA */
-        public void mo479onTapShareForumPostmgk6anA(long j10, long j11) {
+        public void mo481onTapShareForumPostmgk6anA(long j10, long j11) {
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
@@ -577,14 +577,14 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapSummary-sekaTiM */
-        public void mo480onTapSummarysekaTiM(long j10, @NotNull String messageId, @NotNull String summaryId) {
+        public void mo482onTapSummarysekaTiM(long j10, @NotNull String messageId, @NotNull String summaryId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(summaryId, "summaryId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapSummaryJump-sekaTiM */
-        public void mo481onTapSummaryJumpsekaTiM(long j10, @NotNull String messageId, @NotNull String summaryId) {
+        public void mo483onTapSummaryJumpsekaTiM(long j10, @NotNull String messageId, @NotNull String summaryId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
             Intrinsics.checkNotNullParameter(summaryId, "summaryId");
         }
@@ -595,13 +595,13 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapTag-Eqy5D80 */
-        public void mo482onTapTagEqy5D80(@NotNull String messageId, long j10, String str) {
+        public void mo484onTapTagEqy5D80(@NotNull String messageId, long j10, String str) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapThreadEmbed-1xi1bu0 */
-        public void mo483onTapThreadEmbed1xi1bu0(@NotNull String messageId) {
+        public void mo485onTapThreadEmbed1xi1bu0(@NotNull String messageId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
@@ -612,26 +612,26 @@ public interface ChatEventHandler {
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapToggleBlockedMessages-1xi1bu0 */
-        public void mo484onTapToggleBlockedMessages1xi1bu0(@NotNull String messageId) {
+        public void mo486onTapToggleBlockedMessages1xi1bu0(@NotNull String messageId) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onTapUsername-x5gers8 */
-        public void mo485onTapUsernamex5gers8(@NotNull String messageId, long j10) {
+        public void mo487onTapUsernamex5gers8(@NotNull String messageId, long j10) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: onWelcomeReplyClicked-Ayv7vGE */
-        public void mo486onWelcomeReplyClickedAyv7vGE(@NotNull Sticker sticker, @NotNull String messageId) {
+        public void mo488onWelcomeReplyClickedAyv7vGE(@NotNull Sticker sticker, @NotNull String messageId) {
             Intrinsics.checkNotNullParameter(sticker, "sticker");
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
         @Override // com.discord.chat.presentation.events.ChatEventHandler
         /* renamed from: voiceMessagePlaybackFailed-ntcYbpo */
-        public void mo487voiceMessagePlaybackFailedntcYbpo(@NotNull String messageId, String str) {
+        public void mo489voiceMessagePlaybackFailedntcYbpo(@NotNull String messageId, String str) {
             Intrinsics.checkNotNullParameter(messageId, "messageId");
         }
 
@@ -649,156 +649,156 @@ public interface ChatEventHandler {
     }
 
     /* renamed from: getOnMessageDoubleTapped */
-    Function2<MessageId, ChannelId, Unit> mo492getOnMessageDoubleTapped();
+    Function2<MessageId, ChannelId, Unit> mo494getOnMessageDoubleTapped();
 
     /* renamed from: getOnMessageLongPressed */
-    Function6 mo493getOnMessageLongPressed();
+    Function6 mo495getOnMessageLongPressed();
 
     /* renamed from: getOnMessageTapped */
-    Function2<MessageId, ChannelId, Unit> mo494getOnMessageTapped();
+    Function2<MessageId, ChannelId, Unit> mo496getOnMessageTapped();
 
     /* renamed from: mediaAttachmentPlaybackEnded-O97gnAM  reason: not valid java name */
-    void mo432mediaAttachmentPlaybackEndedO97gnAM(@NotNull String str, float f10, float f11, long j10, float f12, boolean z10, @NotNull String str2);
+    void mo434mediaAttachmentPlaybackEndedO97gnAM(@NotNull String str, float f10, float f11, long j10, float f12, boolean z10, @NotNull String str2);
 
     /* renamed from: mediaAttachmentPlaybackStarted-jd4C3YQ  reason: not valid java name */
-    void mo433mediaAttachmentPlaybackStartedjd4C3YQ(@NotNull String str, float f10, float f11, long j10, boolean z10, @NotNull String str2);
+    void mo435mediaAttachmentPlaybackStartedjd4C3YQ(@NotNull String str, float f10, float f11, long j10, boolean z10, @NotNull String str2);
 
     void onCompleteFirstLayout();
 
     void onFirstLayout(int i10, Double d10, int i11, Double d11);
 
     /* renamed from: onInitiateEdit-pfaIj0E  reason: not valid java name */
-    void mo434onInitiateEditpfaIj0E(@NotNull String str, long j10);
+    void mo436onInitiateEditpfaIj0E(@NotNull String str, long j10);
 
     /* renamed from: onInitiateReply-8a0ehIg  reason: not valid java name */
-    void mo435onInitiateReply8a0ehIg(@NotNull String str, long j10, Boolean bool, String str2);
+    void mo437onInitiateReply8a0ehIg(@NotNull String str, long j10, Boolean bool, String str2);
 
     /* renamed from: onInitiateThread-pfaIj0E  reason: not valid java name */
-    void mo436onInitiateThreadpfaIj0E(@NotNull String str, long j10);
+    void mo438onInitiateThreadpfaIj0E(@NotNull String str, long j10);
 
     /* renamed from: onLinkClicked-ntcYbpo  reason: not valid java name */
-    void mo437onLinkClickedntcYbpo(@NotNull String str, @NotNull LinkContentNode linkContentNode);
+    void mo439onLinkClickedntcYbpo(@NotNull String str, @NotNull LinkContentNode linkContentNode);
 
     /* renamed from: onLinkClicked-u7_MRrM  reason: not valid java name */
-    void mo438onLinkClickedu7_MRrM(@NotNull String str, @NotNull String str2, String str3);
+    void mo440onLinkClickedu7_MRrM(@NotNull String str, @NotNull String str2, String str3);
 
     void onLinkLongClicked(@NotNull LinkContentNode linkContentNode);
 
     void onLongPressAttachmentLink(@NotNull String str, @NotNull String str2);
 
     /* renamed from: onLongPressAvatar-x5gers8  reason: not valid java name */
-    void mo439onLongPressAvatarx5gers8(@NotNull String str, long j10);
+    void mo441onLongPressAvatarx5gers8(@NotNull String str, long j10);
 
     void onLongPressChannel(@NotNull String str, String str2, String str3, String str4);
 
     void onLongPressCommand(@NotNull CommandMentionContentNode commandMentionContentNode);
 
     /* renamed from: onLongPressPollImage-YVExdug  reason: not valid java name */
-    void mo440onLongPressPollImageYVExdug(long j10, @NotNull String str, @NotNull String str2, int i10, int i11, int i12, int i13, @NotNull ViewResizeMode viewResizeMode);
+    void mo442onLongPressPollImageYVExdug(long j10, @NotNull String str, @NotNull String str2, int i10, int i11, int i12, int i13, @NotNull ViewResizeMode viewResizeMode);
 
     /* renamed from: onLongPressReaction-Eqy5D80  reason: not valid java name */
-    void mo441onLongPressReactionEqy5D80(@NotNull String str, long j10, ReactionView.Reaction reaction);
+    void mo443onLongPressReactionEqy5D80(@NotNull String str, long j10, ReactionView.Reaction reaction);
 
     /* renamed from: onLongPressUsername-x5gers8  reason: not valid java name */
-    void mo442onLongPressUsernamex5gers8(@NotNull String str, long j10);
+    void mo444onLongPressUsernamex5gers8(@NotNull String str, long j10);
 
     void onMediaPlayFinishedAnalytics(@NotNull MediaPlayFinishedAnalytics mediaPlayFinishedAnalytics);
 
     void onScrollStateChanged(@NotNull ScrollState scrollState, int i10);
 
     /* renamed from: onSharedClientThemeViewed-1xi1bu0  reason: not valid java name */
-    void mo443onSharedClientThemeViewed1xi1bu0(@NotNull String str);
+    void mo445onSharedClientThemeViewed1xi1bu0(@NotNull String str);
 
     /* renamed from: onStickerClicked-Ayv7vGE  reason: not valid java name */
-    void mo444onStickerClickedAyv7vGE(@NotNull Sticker sticker, @NotNull String str);
+    void mo446onStickerClickedAyv7vGE(@NotNull Sticker sticker, @NotNull String str);
 
     /* renamed from: onStickerLongClicked-Ayv7vGE  reason: not valid java name */
-    void mo445onStickerLongClickedAyv7vGE(@NotNull Sticker sticker, @NotNull String str);
+    void mo447onStickerLongClickedAyv7vGE(@NotNull Sticker sticker, @NotNull String str);
 
     void onTapAppMessageEmbed(@NotNull String str, @NotNull String str2, @NotNull String str3, @NotNull String str4);
 
     void onTapAttachmentLink(@NotNull String str);
 
     /* renamed from: onTapAutoModerationActions-pfaIj0E  reason: not valid java name */
-    void mo446onTapAutoModerationActionspfaIj0E(@NotNull String str, long j10);
+    void mo448onTapAutoModerationActionspfaIj0E(@NotNull String str, long j10);
 
     /* renamed from: onTapAutoModerationFeedback-pfaIj0E  reason: not valid java name */
-    void mo447onTapAutoModerationFeedbackpfaIj0E(@NotNull String str, long j10);
+    void mo449onTapAutoModerationFeedbackpfaIj0E(@NotNull String str, long j10);
 
     /* renamed from: onTapAvatar-x5gers8  reason: not valid java name */
-    void mo448onTapAvatarx5gers8(@NotNull String str, long j10);
+    void mo450onTapAvatarx5gers8(@NotNull String str, long j10);
 
     /* renamed from: onTapButtonActionComponent-ntcYbpo  reason: not valid java name */
-    void mo449onTapButtonActionComponentntcYbpo(@NotNull String str, @NotNull String str2);
+    void mo451onTapButtonActionComponentntcYbpo(@NotNull String str, @NotNull String str2);
 
     /* renamed from: onTapCall-pfaIj0E  reason: not valid java name */
-    void mo450onTapCallpfaIj0E(@NotNull String str, long j10);
+    void mo452onTapCallpfaIj0E(@NotNull String str, long j10);
 
     void onTapCancelUploadItem(@NotNull String str, @NotNull String str2);
 
     void onTapChannel(@NotNull String str, String str2, String str3);
 
     /* renamed from: onTapChannelPromptButton-Eqy5D80  reason: not valid java name */
-    void mo451onTapChannelPromptButtonEqy5D80(@NotNull String str, long j10, @NotNull String str2);
+    void mo453onTapChannelPromptButtonEqy5D80(@NotNull String str, long j10, @NotNull String str2);
 
     /* renamed from: onTapCheckpointCard-x5gers8  reason: not valid java name */
-    void mo452onTapCheckpointCardx5gers8(@NotNull String str, long j10);
+    void mo454onTapCheckpointCardx5gers8(@NotNull String str, long j10);
 
     /* renamed from: onTapClanTagChiplet-g3bFfsM  reason: not valid java name */
-    void mo453onTapClanTagChipletg3bFfsM(long j10);
+    void mo455onTapClanTagChipletg3bFfsM(long j10);
 
     void onTapCommand(@NotNull CommandMentionContentNode commandMentionContentNode);
 
     void onTapConnectionsRoleTag(@NotNull String str, @NotNull String str2, @NotNull String str3, @NotNull String str4);
 
     /* renamed from: onTapContentInventoryEntryEmbed-tsfjtEQ  reason: not valid java name */
-    void mo454onTapContentInventoryEntryEmbedtsfjtEQ(@NotNull String str, long j10, @NotNull String str2, @NotNull String str3);
+    void mo456onTapContentInventoryEntryEmbedtsfjtEQ(@NotNull String str, long j10, @NotNull String str2, @NotNull String str3);
 
     void onTapCopyText(@NotNull CharSequence charSequence);
 
     /* renamed from: onTapCtaButton-sekaTiM  reason: not valid java name */
-    void mo455onTapCtaButtonsekaTiM(long j10, @NotNull String str, @NotNull String str2);
+    void mo457onTapCtaButtonsekaTiM(long j10, @NotNull String str, @NotNull String str2);
 
     /* renamed from: onTapDismissMediaPostSharePrompt-1xi1bu0  reason: not valid java name */
-    void mo456onTapDismissMediaPostSharePrompt1xi1bu0(@NotNull String str);
+    void mo458onTapDismissMediaPostSharePrompt1xi1bu0(@NotNull String str);
 
     void onTapEmoji(@NotNull EmojiContentNode emojiContentNode);
 
     /* renamed from: onTapFollowForumPost-pfaIj0E  reason: not valid java name */
-    void mo457onTapFollowForumPostpfaIj0E(@NotNull String str, long j10);
+    void mo459onTapFollowForumPostpfaIj0E(@NotNull String str, long j10);
 
     /* renamed from: onTapForwardFooter-SHRpUJI  reason: not valid java name */
-    void mo458onTapForwardFooterSHRpUJI(int i10, long j10, @NotNull String str);
+    void mo460onTapForwardFooterSHRpUJI(int i10, long j10, @NotNull String str);
 
     void onTapGameIcon(@NotNull String str, @NotNull String str2);
 
     /* renamed from: onTapGiftCodeAccept-NU4t8f8  reason: not valid java name */
-    void mo459onTapGiftCodeAcceptNU4t8f8(@NotNull String str, String str2);
+    void mo461onTapGiftCodeAcceptNU4t8f8(@NotNull String str, String str2);
 
     void onTapGiftCodeEmbed(@NotNull String str);
 
     /* renamed from: onTapImage-JR3bP6M  reason: not valid java name */
-    void mo460onTapImageJR3bP6M(@NotNull String str, int i10, @NotNull String str2, int i11, int i12, int i13, int i14, @NotNull ViewResizeMode viewResizeMode, Double d10, Integer num, String str3, Integer num2);
+    void mo462onTapImageJR3bP6M(@NotNull String str, int i10, @NotNull String str2, int i11, int i12, int i13, int i14, @NotNull ViewResizeMode viewResizeMode, Double d10, Integer num, String str3, Integer num2);
 
     void onTapInlineCode(@NotNull InlineCodeContentNode inlineCodeContentNode);
 
     /* renamed from: onTapInlineForward-j8a4Y88  reason: not valid java name */
-    void mo461onTapInlineForwardj8a4Y88(long j10, @NotNull String str, @NotNull String str2, Integer num, Boolean bool, String str3);
+    void mo463onTapInlineForwardj8a4Y88(long j10, @NotNull String str, @NotNull String str2, Integer num, Boolean bool, String str3);
 
     /* renamed from: onTapInviteEmbed-AFFcxXc  reason: not valid java name */
-    void mo462onTapInviteEmbedAFFcxXc(@NotNull String str, int i10, Boolean bool, Boolean bool2);
+    void mo464onTapInviteEmbedAFFcxXc(@NotNull String str, int i10, Boolean bool, Boolean bool2);
 
     /* renamed from: onTapInviteEmbedAccept-ntcYbpo  reason: not valid java name */
-    void mo463onTapInviteEmbedAcceptntcYbpo(@NotNull String str, int i10);
+    void mo465onTapInviteEmbedAcceptntcYbpo(@NotNull String str, int i10);
 
     /* renamed from: onTapInviteToSpeak-1xi1bu0  reason: not valid java name */
-    void mo464onTapInviteToSpeak1xi1bu0(@NotNull String str);
+    void mo466onTapInviteToSpeak1xi1bu0(@NotNull String str);
 
     /* renamed from: onTapJoinActivity-1xi1bu0  reason: not valid java name */
-    void mo465onTapJoinActivity1xi1bu0(@NotNull String str);
+    void mo467onTapJoinActivity1xi1bu0(@NotNull String str);
 
     /* renamed from: onTapJoinRichPresence-1xi1bu0  reason: not valid java name */
-    void mo466onTapJoinRichPresence1xi1bu0(@NotNull String str);
+    void mo468onTapJoinRichPresence1xi1bu0(@NotNull String str);
 
     void onTapLoadMessagesAfter();
 
@@ -807,37 +807,37 @@ public interface ChatEventHandler {
     void onTapMention(String str, @NotNull String str2, String str3, String str4);
 
     /* renamed from: onTapMessageReply-0eiqbug  reason: not valid java name */
-    void mo467onTapMessageReply0eiqbug(long j10, @NotNull String str);
+    void mo469onTapMessageReply0eiqbug(long j10, @NotNull String str);
 
     /* renamed from: onTapObscuredMediaLearnMore-8a0ehIg  reason: not valid java name */
-    void mo468onTapObscuredMediaLearnMore8a0ehIg(@NotNull String str, long j10, String str2, String str3);
+    void mo470onTapObscuredMediaLearnMore8a0ehIg(@NotNull String str, long j10, String str2, String str3);
 
     /* renamed from: onTapObscuredMediaToggle-ZQwuxwg  reason: not valid java name */
-    void mo469onTapObscuredMediaToggleZQwuxwg(@NotNull String str, long j10, boolean z10, String str2, String str3);
+    void mo471onTapObscuredMediaToggleZQwuxwg(@NotNull String str, long j10, boolean z10, String str2, String str3);
 
     void onTapOpTag();
 
     /* renamed from: onTapPollAction-sekaTiM  reason: not valid java name */
-    void mo470onTapPollActionsekaTiM(long j10, @NotNull String str, @NotNull String str2);
+    void mo472onTapPollActionsekaTiM(long j10, @NotNull String str, @NotNull String str2);
 
     /* renamed from: onTapPollAnswer-sekaTiM  reason: not valid java name */
-    void mo471onTapPollAnswersekaTiM(long j10, @NotNull String str, @NotNull String str2);
+    void mo473onTapPollAnswersekaTiM(long j10, @NotNull String str, @NotNull String str2);
 
     @c
     /* renamed from: onTapPollSubmitVote-0eiqbug  reason: not valid java name */
-    void mo472onTapPollSubmitVote0eiqbug(long j10, @NotNull String str);
+    void mo474onTapPollSubmitVote0eiqbug(long j10, @NotNull String str);
 
     /* renamed from: onTapPostPreviewEmbed-kUTrp-s  reason: not valid java name */
-    void mo473onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, @NotNull String str);
+    void mo475onTapPostPreviewEmbedkUTrps(long j10, long j11, long j12, @NotNull String str);
 
     /* renamed from: onTapPreviewSharedClientTheme-1xi1bu0  reason: not valid java name */
-    void mo474onTapPreviewSharedClientTheme1xi1bu0(@NotNull String str);
+    void mo476onTapPreviewSharedClientTheme1xi1bu0(@NotNull String str);
 
     /* renamed from: onTapReaction-AFFcxXc  reason: not valid java name */
-    void mo475onTapReactionAFFcxXc(@NotNull String str, ReactionView.Reaction reaction, Boolean bool, String str2);
+    void mo477onTapReactionAFFcxXc(@NotNull String str, ReactionView.Reaction reaction, Boolean bool, String str2);
 
     /* renamed from: onTapReactionOverflow-pfaIj0E  reason: not valid java name */
-    void mo476onTapReactionOverflowpfaIj0E(@NotNull String str, long j10);
+    void mo478onTapReactionOverflowpfaIj0E(@NotNull String str, long j10);
 
     void onTapReferralRedeem(String str);
 
@@ -848,43 +848,43 @@ public interface ChatEventHandler {
     void onTapSafetySystemNotificationCta(@NotNull String str, @NotNull String str2);
 
     /* renamed from: onTapSeeMore-1xi1bu0  reason: not valid java name */
-    void mo477onTapSeeMore1xi1bu0(@NotNull String str);
+    void mo479onTapSeeMore1xi1bu0(@NotNull String str);
 
     /* renamed from: onTapSelectActionComponent-ntcYbpo  reason: not valid java name */
-    void mo478onTapSelectActionComponentntcYbpo(@NotNull String str, @NotNull String str2);
+    void mo480onTapSelectActionComponentntcYbpo(@NotNull String str, @NotNull String str2);
 
     /* renamed from: onTapShareForumPost-mgk6anA  reason: not valid java name */
-    void mo479onTapShareForumPostmgk6anA(long j10, long j11);
+    void mo481onTapShareForumPostmgk6anA(long j10, long j11);
 
     void onTapShowAltText(@NotNull String str);
 
     void onTapSoundmoji(@NotNull SoundmojiContentNode soundmojiContentNode);
 
     /* renamed from: onTapSummary-sekaTiM  reason: not valid java name */
-    void mo480onTapSummarysekaTiM(long j10, @NotNull String str, @NotNull String str2);
+    void mo482onTapSummarysekaTiM(long j10, @NotNull String str, @NotNull String str2);
 
     /* renamed from: onTapSummaryJump-sekaTiM  reason: not valid java name */
-    void mo481onTapSummaryJumpsekaTiM(long j10, @NotNull String str, @NotNull String str2);
+    void mo483onTapSummaryJumpsekaTiM(long j10, @NotNull String str, @NotNull String str2);
 
     void onTapSuppressNotificationsIcon();
 
     /* renamed from: onTapTag-Eqy5D80  reason: not valid java name */
-    void mo482onTapTagEqy5D80(@NotNull String str, long j10, String str2);
+    void mo484onTapTagEqy5D80(@NotNull String str, long j10, String str2);
 
     /* renamed from: onTapThreadEmbed-1xi1bu0  reason: not valid java name */
-    void mo483onTapThreadEmbed1xi1bu0(@NotNull String str);
+    void mo485onTapThreadEmbed1xi1bu0(@NotNull String str);
 
     void onTapTimestamp(@NotNull String str);
 
     /* renamed from: onTapToggleBlockedMessages-1xi1bu0  reason: not valid java name */
-    void mo484onTapToggleBlockedMessages1xi1bu0(@NotNull String str);
+    void mo486onTapToggleBlockedMessages1xi1bu0(@NotNull String str);
 
     /* renamed from: onTapUsername-x5gers8  reason: not valid java name */
-    void mo485onTapUsernamex5gers8(@NotNull String str, long j10);
+    void mo487onTapUsernamex5gers8(@NotNull String str, long j10);
 
     /* renamed from: onWelcomeReplyClicked-Ayv7vGE  reason: not valid java name */
-    void mo486onWelcomeReplyClickedAyv7vGE(@NotNull Sticker sticker, @NotNull String str);
+    void mo488onWelcomeReplyClickedAyv7vGE(@NotNull Sticker sticker, @NotNull String str);
 
     /* renamed from: voiceMessagePlaybackFailed-ntcYbpo  reason: not valid java name */
-    void mo487voiceMessagePlaybackFailedntcYbpo(@NotNull String str, String str2);
+    void mo489voiceMessagePlaybackFailedntcYbpo(@NotNull String str, String str2);
 }

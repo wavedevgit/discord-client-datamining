@@ -13,85 +13,85 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.default = var0;
     var3 = {};
     var4 = {
-        'one': 'λιγότερο από ένα δευτερόλεπτο',
-        'other': 'λιγότερο από {{count}} δευτερόλεπτα'
+        'one': 'по-малко от секунда',
+        'other': 'по-малко от {{count}} секунди'
     };
     var3.lessThanXSeconds = var4;
     var4 = {
-        'one': '1 δευτερόλεπτο',
-        'other': '{{count}} δευτερόλεπτα'
+        'one': '1 секунда',
+        'other': '{{count}} секунди'
     };
     var3.xSeconds = var4;
-    var4 = 'μισό λεπτό';
+    var4 = 'половин минута';
     var3.halfAMinute = var4;
     var4 = {
-        'one': 'λιγότερο από ένα λεπτό',
-        'other': 'λιγότερο από {{count}} λεπτά'
+        'one': 'по-малко от минута',
+        'other': 'по-малко от {{count}} минути'
     };
     var3.lessThanXMinutes = var4;
     var4 = {
-        'one': '1 λεπτό',
-        'other': '{{count}} λεπτά'
+        'one': '1 минута',
+        'other': '{{count}} минути'
     };
     var3.xMinutes = var4;
     var4 = {
-        'one': 'περίπου 1 ώρα',
-        'other': 'περίπου {{count}} ώρες'
+        'one': 'около час',
+        'other': 'около {{count}} часа'
     };
     var3.aboutXHours = var4;
     var4 = {
-        'one': '1 ώρα',
-        'other': '{{count}} ώρες'
+        'one': '1 час',
+        'other': '{{count}} часа'
     };
     var3.xHours = var4;
     var4 = {
-        'one': '1 ημέρα',
-        'other': '{{count}} ημέρες'
+        'one': '1 ден',
+        'other': '{{count}} дни'
     };
     var3.xDays = var4;
     var4 = {
-        'one': 'περίπου 1 εβδομάδα',
-        'other': 'περίπου {{count}} εβδομάδες'
+        'one': 'около седмица',
+        'other': 'около {{count}} седмици'
     };
     var3.aboutXWeeks = var4;
     var4 = {
-        'one': '1 εβδομάδα',
-        'other': '{{count}} εβδομάδες'
+        'one': '1 седмица',
+        'other': '{{count}} седмици'
     };
     var3.xWeeks = var4;
     var4 = {
-        'one': 'περίπου 1 μήνας',
-        'other': 'περίπου {{count}} μήνες'
+        'one': 'около месец',
+        'other': 'около {{count}} месеца'
     };
     var3.aboutXMonths = var4;
     var4 = {
-        'one': '1 μήνας',
-        'other': '{{count}} μήνες'
+        'one': '1 месец',
+        'other': '{{count}} месеца'
     };
     var3.xMonths = var4;
     var4 = {
-        'one': 'περίπου 1 χρόνο',
-        'other': 'περίπου {{count}} χρόνια'
+        'one': 'около година',
+        'other': 'около {{count}} години'
     };
     var3.aboutXYears = var4;
     var4 = {
-        'one': '1 χρόνο',
-        'other': '{{count}} χρόνια'
+        'one': '1 година',
+        'other': '{{count}} години'
     };
     var3.xYears = var4;
     var4 = {
-        'one': 'πάνω από 1 χρόνο',
-        'other': 'πάνω από {{count}} χρόνια'
+        'one': 'над година',
+        'other': 'над {{count}} години'
     };
     var3.overXYears = var4;
     var4 = {
-        'one': 'περίπου 1 χρόνο',
-        'other': 'περίπου {{count}} χρόνια'
+        'one': 'почти година',
+        'other': 'почти {{count}} години'
     };
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
     var2 = function arg0, arg1, arg2() {
-        _fun21853: for (var _fun21853_ip = 0;;) switch (_fun21853_ip) {
+        _fun21863: for (var _fun21863_ip = 0;;) switch (_fun21863_ip) {
             case 0:
                 var7 = arg1;
                 var1 = arg2;
@@ -102,14 +102,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = typeof var2;
                 var3 = var2;
                 if (!(var4 !== var0)) {
-                    _fun21853_ip = 90;
-                    continue _fun21853
+                    _fun21863_ip = 90;
+                    continue _fun21863
                 }
             case 34:
                 var0 = 1;
                 if (!(var0 !== var7)) {
-                    _fun21853_ip = 81;
-                    continue _fun21853
+                    _fun21863_ip = 81;
+                    continue _fun21863
                 }
             case 41:
                 var6 = var2.other;
@@ -120,8 +120,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.bind(var0)(var7);
                 var0 = '{{count}}';
                 var0 = var5.bind(var6)(var0, var4);
-                _fun21853_ip = 87;
-                continue _fun21853;
+                _fun21863_ip = 87;
+                continue _fun21863;
             case 81:
                 var0 = var2.one;
             case 87:
@@ -130,36 +130,36 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = null;
                 var0 = var3;
                 if (!(var2 != var1)) {
-                    _fun21853_ip = 157;
-                    continue _fun21853
+                    _fun21863_ip = 157;
+                    continue _fun21863
                 }
             case 99:
                 var2 = var1.addSuffix;
                 var0 = var3;
                 if (!var2) {
-                    _fun21853_ip = 157;
-                    continue _fun21853
+                    _fun21863_ip = 157;
+                    continue _fun21863
                 }
             case 111:
                 var2 = var1.comparison;
                 if (!var2) {
-                    _fun21853_ip = 132;
-                    continue _fun21853
+                    _fun21863_ip = 132;
+                    continue _fun21863
                 }
             case 120:
                 var2 = var1.comparison;
                 var1 = 0;
                 if (!(!(var2 > var1))) {
-                    _fun21853_ip = 144;
-                    continue _fun21853
+                    _fun21863_ip = 144;
+                    continue _fun21863
                 }
             case 132:
-                var1 = ' πριν';
-                var1 = var3 + var1;
-                _fun21853_ip = 154;
-                continue _fun21853;
+                var1 = 'преди ';
+                var1 = var1 + var3;
+                _fun21863_ip = 154;
+                continue _fun21863;
             case 144:
-                var2 = 'σε ';
+                var2 = 'след ';
                 var1 = var2 + var3;
             case 154:
                 var0 = var1;

@@ -6,13 +6,13 @@ import android.util.Size;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    final Matrix f48696a;
+    final Matrix f48750a;
 
     /* renamed from: b  reason: collision with root package name */
-    final Size f48697b;
+    final Size f48751b;
 
     public a(Matrix matrix, Size size) {
-        this.f48696a = matrix;
-        this.f48697b = size;
+        this.f48750a = matrix;
+        this.f48751b = size;
     }
 }

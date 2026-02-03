@@ -6,26 +6,26 @@ import java.util.Map;
 public final class h extends k {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f43975b = {6, 8, 10, 12, 14};
+    private static final int[] f44103b = {6, 8, 10, 12, 14};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f43976c = {1, 1, 1, 1};
+    private static final int[] f44104c = {1, 1, 1, 1};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[][] f43977d = {new int[]{1, 1, 2}, new int[]{1, 1, 3}};
+    private static final int[][] f44105d = {new int[]{1, 1, 2}, new int[]{1, 1, 3}};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int[][] f43978e = {new int[]{1, 1, 2, 2, 1}, new int[]{2, 1, 1, 1, 2}, new int[]{1, 2, 1, 1, 2}, new int[]{2, 2, 1, 1, 1}, new int[]{1, 1, 2, 1, 2}, new int[]{2, 1, 2, 1, 1}, new int[]{1, 2, 2, 1, 1}, new int[]{1, 1, 1, 2, 2}, new int[]{2, 1, 1, 2, 1}, new int[]{1, 2, 1, 2, 1}, new int[]{1, 1, 3, 3, 1}, new int[]{3, 1, 1, 1, 3}, new int[]{1, 3, 1, 1, 3}, new int[]{3, 3, 1, 1, 1}, new int[]{1, 1, 3, 1, 3}, new int[]{3, 1, 3, 1, 1}, new int[]{1, 3, 3, 1, 1}, new int[]{1, 1, 1, 3, 3}, new int[]{3, 1, 1, 3, 1}, new int[]{1, 3, 1, 3, 1}};
+    private static final int[][] f44106e = {new int[]{1, 1, 2, 2, 1}, new int[]{2, 1, 1, 1, 2}, new int[]{1, 2, 1, 1, 2}, new int[]{2, 2, 1, 1, 1}, new int[]{1, 1, 2, 1, 2}, new int[]{2, 1, 2, 1, 1}, new int[]{1, 2, 2, 1, 1}, new int[]{1, 1, 1, 2, 2}, new int[]{2, 1, 1, 2, 1}, new int[]{1, 2, 1, 2, 1}, new int[]{1, 1, 3, 3, 1}, new int[]{3, 1, 1, 1, 3}, new int[]{1, 3, 1, 1, 3}, new int[]{3, 3, 1, 1, 1}, new int[]{1, 1, 3, 1, 3}, new int[]{3, 1, 3, 1, 1}, new int[]{1, 3, 3, 1, 1}, new int[]{1, 1, 1, 3, 3}, new int[]{3, 1, 1, 3, 1}, new int[]{1, 3, 1, 3, 1}};
 
     /* renamed from: a  reason: collision with root package name */
-    private int f43979a = -1;
+    private int f44107a = -1;
 
     private static int g(int[] iArr) {
-        int length = f43978e.length;
+        int length = f44106e.length;
         float f10 = 0.38f;
         int i10 = -1;
         for (int i11 = 0; i11 < length; i11++) {
-            float d10 = k.d(iArr, f43978e[i11], 0.5f);
+            float d10 = k.d(iArr, f44106e[i11], 0.5f);
             if (d10 < f10) {
                 i10 = i11;
                 f10 = d10;
@@ -45,9 +45,9 @@ public final class h extends k {
         aVar.q();
         try {
             try {
-                k10 = k(aVar, l(aVar), f43977d[0]);
+                k10 = k(aVar, l(aVar), f44105d[0]);
             } catch (ck.k unused) {
-                k10 = k(aVar, i10, f43977d[1]);
+                k10 = k(aVar, i10, f44105d[1]);
             }
             m(aVar, k10[0]);
             int i11 = k10[0];
@@ -79,10 +79,10 @@ public final class h extends k {
     }
 
     private int[] j(gk.a aVar) {
-        int[] k10 = k(aVar, l(aVar), f43976c);
+        int[] k10 = k(aVar, l(aVar), f44104c);
         int i10 = k10[1];
         int i11 = k10[0];
-        this.f43979a = (i10 - i11) / 4;
+        this.f44107a = (i10 - i11) / 4;
         m(aVar, i11);
         return k10;
     }
@@ -138,7 +138,7 @@ public final class h extends k {
     private void m(gk.a r3, int r4) {
         /*
             r2 = this;
-            int r0 = r2.f43979a
+            int r0 = r2.f44107a
             int r0 = r0 * 10
             int r0 = java.lang.Math.min(r0, r4)
             int r4 = r4 + (-1)
@@ -177,7 +177,7 @@ public final class h extends k {
             iArr = null;
         }
         if (iArr == null) {
-            iArr = f43975b;
+            iArr = f44103b;
         }
         int length = sb3.length();
         int length2 = iArr.length;

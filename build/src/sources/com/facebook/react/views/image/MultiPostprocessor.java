@@ -82,7 +82,7 @@ public final class MultiPostprocessor implements Postprocessor {
         try {
             CloseableReference closeableReference2 = null;
             for (Postprocessor postprocessor : this.postprocessors) {
-                if (closeableReference2 != null && (r4 = (Bitmap) closeableReference2.D0()) != null) {
+                if (closeableReference2 != null && (r4 = (Bitmap) closeableReference2.F0()) != null) {
                     closeableReference = postprocessor.process(r4, bitmapFactory);
                     CloseableReference.N(closeableReference2);
                     closeableReference2 = closeableReference.clone();

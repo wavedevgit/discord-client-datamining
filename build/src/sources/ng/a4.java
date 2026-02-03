@@ -6,37 +6,37 @@ import ui.c;
 final class a4 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final a4 f40970a = new a4();
+    static final a4 f40833a = new a4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f40971b;
+    private static final ui.c f40834b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f40972c;
+    private static final ui.c f40835c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f40973d;
+    private static final ui.c f40836d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f40974e;
+    private static final ui.c f40837e;
 
     static {
         c.b a10 = ui.c.a(StackTraceHelper.NAME_KEY);
         f fVar = new f();
         fVar.a(1);
-        f40971b = a10.b(fVar.b()).a();
+        f40834b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("type");
         f fVar2 = new f();
         fVar2.a(2);
-        f40972c = a11.b(fVar2.b()).a();
+        f40835c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("version");
         f fVar3 = new f();
         fVar3.a(3);
-        f40973d = a12.b(fVar3.b()).a();
+        f40836d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("featureLevel");
         f fVar4 = new f();
         fVar4.a(4);
-        f40974e = a13.b(fVar4.b()).a();
+        f40837e = a13.b(fVar4.b()).a();
     }
 
     private a4() {

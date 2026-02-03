@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var5;
     var _closure1_slot2 = var7;
     var0 = function arg0, arg1, arg2() {
-        _fun37608: for (var _fun37608_ip = 0;;) switch (_fun37608_ip) {
+        _fun37698: for (var _fun37698_ip = 0;;) switch (_fun37698_ip) {
             case 0:
                 var3 = arg0;
                 var1 = arg1;
@@ -39,13 +39,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var0);
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun37608_ip = 44;
-                    continue _fun37608
+                    _fun37698_ip = 44;
+                    continue _fun37698
                 }
             case 40:
                 if (!(var0 == var1)) {
-                    _fun37608_ip = 67;
-                    continue _fun37608
+                    _fun37698_ip = 67;
+                    continue _fun37698
                 }
             case 44:
                 var0 = {};
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = copyDataProperties(var13, var12);
                 var2 = 'attachments';
                 var0[var2] = var9;
-                _fun37608_ip = 164;
-                continue _fun37608;
+                _fun37698_ip = 164;
+                continue _fun37698;
             case 67:
                 var4 = {};
                 var13 = var4;
@@ -136,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.default = var4;
     var3 = function arg0, arg1, arg2, arg3() {
-        _fun37611: for (var _fun37611_ip = 0;;) switch (_fun37611_ip) {
+        _fun37701: for (var _fun37701_ip = 0;;) switch (_fun37701_ip) {
             case 0:
                 var4 = _closure1_slot6;
                 var6 = undefined;
@@ -164,8 +164,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4.bind(var5)();
                 var4 = null;
                 if (!(var4 != var5)) {
-                    _fun37611_ip = 117;
-                    continue _fun37611
+                    _fun37701_ip = 117;
+                    continue _fun37701
                 }
             case 111:
                 var2['X-Super-Properties'] = var5;
@@ -174,8 +174,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.getFingerprint;
                 var3 = var3.bind(var5)();
                 if (!(var4 != var3)) {
-                    _fun37611_ip = 141;
-                    continue _fun37611
+                    _fun37701_ip = 141;
+                    continue _fun37701
                 }
             case 135:
                 var2['X-Fingerprint'] = var3;
@@ -188,4 +188,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.prepareMessagePayload = var3;
     var2.getUploadPayload = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1676, 1216, 803, 3968, 22, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1676, 1216, 803, 3998, 22, 795, 2]);

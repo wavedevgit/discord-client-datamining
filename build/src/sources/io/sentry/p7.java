@@ -8,14 +8,14 @@ import java.util.Map;
 public final class p7 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o7 f30266a;
+    private final o7 f29832a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final k7 f30267b;
+    private final k7 f29833b;
 
     public p7(o7 o7Var, k7 k7Var) {
-        this.f30266a = (o7) io.sentry.util.y.c(o7Var, "The SentryStackTraceFactory is required.");
-        this.f30267b = (k7) io.sentry.util.y.c(k7Var, "The SentryOptions is required");
+        this.f29832a = (o7) io.sentry.util.y.c(o7Var, "The SentryStackTraceFactory is required.");
+        this.f29833b = (k7) io.sentry.util.y.c(k7Var, "The SentryOptions is required");
     }
 
     private io.sentry.protocol.c0 d(boolean z10, StackTraceElement[] stackTraceElementArr, Thread thread) {
@@ -26,8 +26,8 @@ public final class p7 {
         c0Var.s(Boolean.valueOf(thread.isDaemon()));
         c0Var.z(thread.getState().name());
         c0Var.q(Boolean.valueOf(z10));
-        List a10 = this.f30266a.a(stackTraceElementArr, false);
-        if (this.f30267b.isAttachStacktrace() && a10 != null && !a10.isEmpty()) {
+        List a10 = this.f29832a.a(stackTraceElementArr, false);
+        if (this.f29833b.isAttachStacktrace() && a10 != null && !a10.isEmpty()) {
             io.sentry.protocol.b0 b0Var = new io.sentry.protocol.b0(a10);
             b0Var.f(Boolean.TRUE);
             c0Var.y(b0Var);

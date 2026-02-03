@@ -1,9 +1,9 @@
 package com.facebook.react.common;
 
-import ir.c;
-import ir.v;
 import java.util.HashMap;
 import java.util.Map;
+import jr.c;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.SourceDebugExtension;

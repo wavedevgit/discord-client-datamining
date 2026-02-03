@@ -7,23 +7,23 @@ import java.util.Map;
 final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LinkedHashMap f50940a;
+    private final LinkedHashMap f51064a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends LinkedHashMap {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f50941d;
+        final /* synthetic */ int f51065d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(int i10, float f10, boolean z10, int i11) {
             super(i10, f10, z10);
-            this.f50941d = i11;
+            this.f51065d = i11;
         }
 
         @Override // java.util.LinkedHashMap
         protected boolean removeEldestEntry(Map.Entry entry) {
-            if (size() > this.f50941d) {
+            if (size() > this.f51065d) {
                 return true;
             }
             return false;
@@ -31,21 +31,21 @@ final class e {
     }
 
     public e(int i10) {
-        this.f50940a = new a(i10 + 1, 1.0f, false, i10);
+        this.f51064a = new a(i10 + 1, 1.0f, false, i10);
     }
 
     public byte[] a(Uri uri) {
         if (uri == null) {
             return null;
         }
-        return (byte[]) this.f50940a.get(uri);
+        return (byte[]) this.f51064a.get(uri);
     }
 
     public byte[] b(Uri uri, byte[] bArr) {
-        return (byte[]) this.f50940a.put((Uri) ne.a.e(uri), (byte[]) ne.a.e(bArr));
+        return (byte[]) this.f51064a.put((Uri) ne.a.e(uri), (byte[]) ne.a.e(bArr));
     }
 
     public byte[] c(Uri uri) {
-        return (byte[]) this.f50940a.remove(ne.a.e(uri));
+        return (byte[]) this.f51064a.remove(ne.a.e(uri));
     }
 }

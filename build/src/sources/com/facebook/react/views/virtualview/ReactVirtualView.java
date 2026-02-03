@@ -15,7 +15,7 @@ import com.facebook.react.views.scroll.ReactScrollView;
 import com.facebook.react.views.scroll.ReactScrollViewHelper;
 import com.facebook.react.views.scroll.ScrollEventType;
 import com.facebook.react.views.view.ReactViewGroup;
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;

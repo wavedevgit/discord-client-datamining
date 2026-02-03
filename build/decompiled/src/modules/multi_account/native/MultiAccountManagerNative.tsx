@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.bind(var0)(var1);
     var1 = {};
     var7 = function() {
-        _fun113716: for (var _fun113716_ip = 0;;) switch (_fun113716_ip) {
+        _fun113663: for (var _fun113663_ip = 0;;) switch (_fun113663_ip) {
             case 0:
                 var4 = _closure1_slot1;
                 var1 = _closure1_slot2;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot5;
                 var1 = null;
                 if (!(var1 !== var3)) {
-                    _fun113716_ip = 107;
-                    continue _fun113716
+                    _fun113663_ip = 107;
+                    continue _fun113663
                 }
             case 90:
                 var1 = global;
@@ -96,12 +96,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var0.setTimeout;
         var0 = undefined;
         var2 = function() { // Environment: var1
-            _fun113719: for (var _fun113719_ip = 0;;) switch (_fun113719_ip) {
+            _fun113666: for (var _fun113666_ip = 0;;) switch (_fun113666_ip) {
                 case 0:
                     var0 = _closure2_slot1;
                     if (!var0) {
-                        _fun113719_ip = 56;
-                        continue _fun113719
+                        _fun113666_ip = 56;
+                        continue _fun113666
                     }
                 case 10:
                     var3 = _closure1_slot0;
@@ -225,4 +225,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [10182, 660, 14536, 4527, 14537, 1307, 1220, 3109, 1234, 14538, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [10260, 660, 14567, 4557, 14568, 1307, 1220, 3139, 1234, 14569, 2]);

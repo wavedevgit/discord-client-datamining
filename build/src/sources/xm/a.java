@@ -1,40 +1,49 @@
 package xm;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Reflection;
-import vm.b0;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.savedstate.SavedStateRegistry;
+import androidx.savedstate.SavedStateRegistryController;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public enum a {
-    None,
-    First,
-    Other;
-    
+public final class a implements u3.f, LifecycleOwner {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final C0739a f53467d = new C0739a(null);
+    private final String f53677d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final a f53468e;
+    private final /* synthetic */ LifecycleOwner f53678e;
 
-    /* renamed from: xm.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0739a extends b0 {
-        public /* synthetic */ C0739a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: i  reason: collision with root package name */
+    private final SavedStateRegistryController f53679i;
 
-        @Override // vm.b0
-        /* renamed from: b */
-        public a a() {
-            return a.f53468e;
-        }
-
-        private C0739a() {
-            super(Reflection.getOrCreateKotlinClass(a.class));
-        }
+    public a(String key, LifecycleOwner lifecycleOwner) {
+        Intrinsics.checkNotNullParameter(key, "key");
+        Intrinsics.checkNotNullParameter(lifecycleOwner, "lifecycleOwner");
+        this.f53677d = key;
+        this.f53678e = lifecycleOwner;
+        SavedStateRegistryController a10 = SavedStateRegistryController.a(this);
+        Intrinsics.checkNotNullExpressionValue(a10, "create(this)");
+        this.f53679i = a10;
     }
 
-    static {
-        f53468e = r0;
+    public final SavedStateRegistryController a() {
+        return this.f53679i;
+    }
+
+    public final String b() {
+        return this.f53677d;
+    }
+
+    @Override // androidx.lifecycle.LifecycleOwner
+    public Lifecycle getLifecycle() {
+        return this.f53678e.getLifecycle();
+    }
+
+    @Override // u3.f
+    public SavedStateRegistry getSavedStateRegistry() {
+        SavedStateRegistry b10 = this.f53679i.b();
+        Intrinsics.checkNotNullExpressionValue(b10, "controller.savedStateRegistry");
+        return b10;
     }
 }

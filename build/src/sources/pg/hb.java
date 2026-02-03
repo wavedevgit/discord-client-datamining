@@ -5,7 +5,7 @@ import ui.c;
 final class hb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final hb f45283a = new hb();
+    static final hb f45357a = new hb();
 
     static {
         c.b a10 = ui.c.a("durationMs");

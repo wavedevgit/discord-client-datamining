@@ -1,13 +1,13 @@
 package com.discord.user_search_worker;
 
 import com.facebook.react.devsupport.StackTraceHelper;
-import ir.p;
 import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -226,7 +226,7 @@ public final class UserSearchWorker {
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:35:0x00a1, code lost:
@@ -376,8 +376,8 @@ public final class UserSearchWorker {
             userSearchWorker.onResults.invoke(arrayList, query, str);
             return;
         }
-        String c12 = Regex.f36221e.c(query);
-        m mVar = m.f36281i;
+        String c12 = Regex.f35997e.c(query);
+        m mVar = m.f36057i;
         Regex regex = new Regex("^" + c12, mVar);
         Regex regex2 = new Regex(c12, mVar);
         for (Map.Entry<String, UserSearchTransformedUser> entry : userSearchWorker.users.entrySet()) {
@@ -481,7 +481,7 @@ public final class UserSearchWorker {
         Function1[] function1Arr = new Function1[2];
         function1Arr[c11] = function1;
         function1Arr[1] = function12;
-        userSearchWorker.onResults.invoke(CollectionsKt.a1(CollectionsKt.W0(arrayList, lr.a.b(function1Arr)), userSearchQuerySetPayload.getLimit()), query, str);
+        userSearchWorker.onResults.invoke(CollectionsKt.a1(CollectionsKt.W0(arrayList, mr.a.b(function1Arr)), userSearchQuerySetPayload.getLimit()), query, str);
     }
 
     /* JADX INFO: Access modifiers changed from: private */

@@ -1,102 +1,204 @@
 package gq;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import kotlin.enums.EnumEntries;
+import android.content.Context;
+import android.graphics.Typeface;
+import android.text.SpannableString;
+import android.text.style.AbsoluteSizeSpan;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewParent;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import com.google.android.material.textfield.TextInputLayout;
+import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StyleElements;
+import com.withpersona.sdk2.inquiry.network.dto.ui.styling.TextBasedComponentStyle;
+import jr.p;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import kotlin.text.StringsKt;
+import kp.h;
+import yp.p5;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<d> CREATOR;
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final d f27101d = new d("NetworkError", 0);
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final d f27102e = new d("CameraPermissionError", 1);
-
-    /* renamed from: i  reason: collision with root package name */
-    public static final d f27103i = new d("SdkConfigurationError", 2);
-
-    /* renamed from: o  reason: collision with root package name */
-    public static final d f27104o = new d("CameraCompatibilityError", 3);
-
-    /* renamed from: p  reason: collision with root package name */
-    public static final d f27105p = new d("IntegrationError", 4);
-
-    /* renamed from: q  reason: collision with root package name */
-    public static final d f27106q = new d("SessionTokenError", 5);
-
-    /* renamed from: r  reason: collision with root package name */
-    public static final d f27107r = new d("RateLimitExceeded", 6);
-
-    /* renamed from: s  reason: collision with root package name */
-    public static final d f27108s = new d("UnexpectedError", 7);
-
-    /* renamed from: t  reason: collision with root package name */
-    public static final d f27109t = new d("NoDiskSpaceError", 8);
-
-    /* renamed from: u  reason: collision with root package name */
-    public static final d f27110u = new d("WebRtcIntegrationError", 9);
-
-    /* renamed from: v  reason: collision with root package name */
-    public static final d f27111v = new d("InvalidOneTimeLinkCode", 10);
-
-    /* renamed from: w  reason: collision with root package name */
-    public static final d f27112w = new d("ExceptionError", 11);
-
-    /* renamed from: x  reason: collision with root package name */
-    private static final /* synthetic */ d[] f27113x;
-
-    /* renamed from: y  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f27114y;
-
-    static {
-        d[] a10 = a();
-        f27113x = a10;
-        f27114y = pr.a.a(a10);
-        CREATOR = new Parcelable.Creator() { // from class: gq.d.a
-            @Override // android.os.Parcelable.Creator
-            /* renamed from: a */
-            public final d createFromParcel(Parcel parcel) {
-                Intrinsics.checkNotNullParameter(parcel, "parcel");
-                return d.valueOf(parcel.readString());
+public abstract class d {
+    public static final void a(View view, StyleElements.Size size) {
+        Intrinsics.checkNotNullParameter(view, "<this>");
+        ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
+        if (layoutParams != null) {
+            if (size instanceof StyleElements.DPSize) {
+                Double dp2 = ((StyleElements.DPSize) size).getDp();
+                if (dp2 != null) {
+                    layoutParams.height = (int) h.a(dp2.doubleValue());
+                } else {
+                    return;
+                }
+            } else if (size instanceof StyleElements.Size.PercentSize) {
+                ViewParent parent = view.getParent();
+                if (layoutParams instanceof ConstraintLayout.LayoutParams) {
+                    ((ConstraintLayout.LayoutParams) layoutParams).W = (float) ((StyleElements.Size.PercentSize) size).getPercent();
+                } else if (parent instanceof View) {
+                    layoutParams.height = (int) (((StyleElements.Size.PercentSize) size).getPercent() * ((View) parent).getHeight());
+                }
+            } else if (size != null) {
+                throw new p();
             }
+            view.setLayoutParams(layoutParams);
+            return;
+        }
+        throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
+    }
 
-            @Override // android.os.Parcelable.Creator
-            /* renamed from: b */
-            public final d[] newArray(int i10) {
-                return new d[i10];
+    public static final void b(View view, StyleElements.Size size) {
+        View view2;
+        Intrinsics.checkNotNullParameter(view, "<this>");
+        ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
+        if (layoutParams != null) {
+            ViewParent parent = view.getParent();
+            ViewGroup.LayoutParams layoutParams2 = null;
+            if (parent instanceof View) {
+                view2 = (View) parent;
+            } else {
+                view2 = null;
             }
-        };
+            if (size instanceof StyleElements.DPSize) {
+                Double dp2 = ((StyleElements.DPSize) size).getDp();
+                if (dp2 != null) {
+                    int a10 = (int) h.a(dp2.doubleValue());
+                    if (view2 != null) {
+                        layoutParams2 = view2.getLayoutParams();
+                    }
+                    int i10 = Integer.MAX_VALUE;
+                    if ((layoutParams2 == null || layoutParams2.width != -2) && view2 != null) {
+                        i10 = view2.getWidth();
+                    }
+                    layoutParams.width = kotlin.ranges.d.i(a10, i10);
+                } else {
+                    return;
+                }
+            } else if (size instanceof StyleElements.Size.PercentSize) {
+                if (layoutParams instanceof ConstraintLayout.LayoutParams) {
+                    ((ConstraintLayout.LayoutParams) layoutParams).V = (float) ((StyleElements.Size.PercentSize) size).getPercent();
+                } else if (view2 != null) {
+                    layoutParams.width = (int) (((StyleElements.Size.PercentSize) size).getPercent() * view2.getWidth());
+                }
+            } else if (size != null) {
+                throw new p();
+            }
+            view.setLayoutParams(layoutParams);
+            return;
+        }
+        throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
 
-    private d(String str, int i10) {
+    public static final void c(View view, StyleElements.SizeSet margins) {
+        int i10;
+        int i11;
+        int i12;
+        int i13;
+        Double dp2;
+        Double dp3;
+        Double dp4;
+        Double dp5;
+        Intrinsics.checkNotNullParameter(view, "<this>");
+        Intrinsics.checkNotNullParameter(margins, "margins");
+        ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
+        if (layoutParams != null) {
+            if (layoutParams instanceof ViewGroup.MarginLayoutParams) {
+                ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
+                StyleElements.Size left = margins.getLeft();
+                if (left != null && (dp5 = left.getDp()) != null) {
+                    i10 = (int) h.a(dp5.doubleValue());
+                } else {
+                    i10 = marginLayoutParams.leftMargin;
+                }
+                marginLayoutParams.leftMargin = i10;
+                StyleElements.Size right = margins.getRight();
+                if (right != null && (dp4 = right.getDp()) != null) {
+                    i11 = (int) h.a(dp4.doubleValue());
+                } else {
+                    i11 = marginLayoutParams.rightMargin;
+                }
+                marginLayoutParams.rightMargin = i11;
+                StyleElements.Size top = margins.getTop();
+                if (top != null && (dp3 = top.getDp()) != null) {
+                    i12 = (int) h.a(dp3.doubleValue());
+                } else {
+                    i12 = marginLayoutParams.topMargin;
+                }
+                marginLayoutParams.topMargin = i12;
+                StyleElements.Size bottom = margins.getBottom();
+                if (bottom != null && (dp2 = bottom.getDp()) != null) {
+                    i13 = (int) h.a(dp2.doubleValue());
+                } else {
+                    i13 = marginLayoutParams.bottomMargin;
+                }
+                marginLayoutParams.bottomMargin = i13;
+            }
+            view.setLayoutParams(layoutParams);
+            return;
+        }
+        throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
 
-    private static final /* synthetic */ d[] a() {
-        return new d[]{f27101d, f27102e, f27103i, f27104o, f27105p, f27106q, f27107r, f27108s, f27109t, f27110u, f27111v, f27112w};
+    public static final void d(TextInputLayout textInputLayout, String str, TextBasedComponentStyle textBasedComponentStyle) {
+        Intrinsics.checkNotNullParameter(textInputLayout, "<this>");
+        if (str != null && !StringsKt.k0(str)) {
+            textInputLayout.setError(str);
+            if (textBasedComponentStyle != null) {
+                SpannableString spannableString = new SpannableString(textInputLayout.getError());
+                String fontNameValue = textBasedComponentStyle.getFontNameValue();
+                if (fontNameValue != null) {
+                    Context context = textInputLayout.getContext();
+                    Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
+                    Typeface a10 = p5.a(context, fontNameValue);
+                    if (a10 != null) {
+                        spannableString.setSpan(new c(a10), 0, spannableString.length(), 33);
+                    }
+                }
+                Double fontSizeValue = textBasedComponentStyle.getFontSizeValue();
+                if (fontSizeValue != null) {
+                    spannableString.setSpan(new AbsoluteSizeSpan((int) h.a(fontSizeValue.doubleValue())), 0, spannableString.length(), 33);
+                }
+                textInputLayout.setError(spannableString);
+                return;
+            }
+            return;
+        }
+        textInputLayout.setErrorEnabled(false);
     }
 
-    public static d valueOf(String str) {
-        return (d) Enum.valueOf(d.class, str);
-    }
-
-    public static d[] values() {
-        return (d[]) f27113x.clone();
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(name());
+    public static final void e(View view, StyleElements.SizeSet padding) {
+        int paddingLeft;
+        int paddingTop;
+        int paddingRight;
+        int paddingBottom;
+        Double dp2;
+        Double dp3;
+        Double dp4;
+        Double dp5;
+        Intrinsics.checkNotNullParameter(view, "<this>");
+        Intrinsics.checkNotNullParameter(padding, "padding");
+        StyleElements.Size left = padding.getLeft();
+        if (left != null && (dp5 = left.getDp()) != null) {
+            paddingLeft = (int) h.a(dp5.doubleValue());
+        } else {
+            paddingLeft = view.getPaddingLeft();
+        }
+        StyleElements.Size top = padding.getTop();
+        if (top != null && (dp4 = top.getDp()) != null) {
+            paddingTop = (int) h.a(dp4.doubleValue());
+        } else {
+            paddingTop = view.getPaddingTop();
+        }
+        StyleElements.Size right = padding.getRight();
+        if (right != null && (dp3 = right.getDp()) != null) {
+            paddingRight = (int) h.a(dp3.doubleValue());
+        } else {
+            paddingRight = view.getPaddingRight();
+        }
+        StyleElements.Size bottom = padding.getBottom();
+        if (bottom != null && (dp2 = bottom.getDp()) != null) {
+            paddingBottom = (int) h.a(dp2.doubleValue());
+        } else {
+            paddingBottom = view.getPaddingBottom();
+        }
+        view.setPadding(paddingLeft, paddingTop, paddingRight, paddingBottom);
     }
 }

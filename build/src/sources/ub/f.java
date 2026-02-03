@@ -3,5 +3,5 @@ package ub;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public long f50128a;
+    public long f50184a;
 }

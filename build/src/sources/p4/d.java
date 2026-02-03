@@ -5,23 +5,23 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f44894a;
+    private final String f44968a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Long f44895b;
+    private final Long f44969b;
 
     public d(String key, Long l10) {
         Intrinsics.checkNotNullParameter(key, "key");
-        this.f44894a = key;
-        this.f44895b = l10;
+        this.f44968a = key;
+        this.f44969b = l10;
     }
 
     public final String a() {
-        return this.f44894a;
+        return this.f44968a;
     }
 
     public final Long b() {
-        return this.f44895b;
+        return this.f44969b;
     }
 
     public boolean equals(Object obj) {
@@ -32,7 +32,7 @@ public final class d {
             return false;
         }
         d dVar = (d) obj;
-        if (Intrinsics.areEqual(this.f44894a, dVar.f44894a) && Intrinsics.areEqual(this.f44895b, dVar.f44895b)) {
+        if (Intrinsics.areEqual(this.f44968a, dVar.f44968a) && Intrinsics.areEqual(this.f44969b, dVar.f44969b)) {
             return true;
         }
         return false;
@@ -40,8 +40,8 @@ public final class d {
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = this.f44894a.hashCode() * 31;
-        Long l10 = this.f44895b;
+        int hashCode2 = this.f44968a.hashCode() * 31;
+        Long l10 = this.f44969b;
         if (l10 == null) {
             hashCode = 0;
         } else {
@@ -51,7 +51,7 @@ public final class d {
     }
 
     public String toString() {
-        return "Preference(key=" + this.f44894a + ", value=" + this.f44895b + ')';
+        return "Preference(key=" + this.f44968a + ", value=" + this.f44969b + ')';
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

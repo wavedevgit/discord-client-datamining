@@ -4,12 +4,12 @@ import android.content.Context;
 import android.util.AttributeSet;
 import com.airbnb.lottie.LottieAnimationView;
 import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
-import gs.m0;
-import iu.x;
+import hs.m0;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import ju.x;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -32,62 +32,62 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
     static final class a extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f20549d;
+        int f20182d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ String f20550e;
+        final /* synthetic */ String f20183e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ThemeableLottieAnimationView f20551i;
+        final /* synthetic */ ThemeableLottieAnimationView f20184i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0257a extends k implements Function2 {
+        public static final class C0262a extends k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f20552d;
+            int f20185d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ ThemeableLottieAnimationView f20553e;
+            final /* synthetic */ ThemeableLottieAnimationView f20186e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ String f20554i;
+            final /* synthetic */ String f20187i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0257a(ThemeableLottieAnimationView themeableLottieAnimationView, String str, Continuation continuation) {
+            C0262a(ThemeableLottieAnimationView themeableLottieAnimationView, String str, Continuation continuation) {
                 super(2, continuation);
-                this.f20553e = themeableLottieAnimationView;
-                this.f20554i = str;
+                this.f20186e = themeableLottieAnimationView;
+                this.f20187i = str;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new C0257a(this.f20553e, this.f20554i, continuation);
+                return new C0262a(this.f20186e, this.f20187i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                or.b.f();
-                if (this.f20552d == 0) {
+                pr.b.f();
+                if (this.f20185d == 0) {
                     kotlin.c.b(obj);
-                    this.f20553e.A(this.f20554i, null);
-                    return Unit.f33298a;
+                    this.f20186e.A(this.f20187i, null);
+                    return Unit.f33074a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((C0257a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+                return ((C0262a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(String str, ThemeableLottieAnimationView themeableLottieAnimationView, Continuation continuation) {
             super(2, continuation);
-            this.f20550e = str;
-            this.f20551i = themeableLottieAnimationView;
+            this.f20183e = str;
+            this.f20184i = themeableLottieAnimationView;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -96,7 +96,7 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
                 InputStream openStream = new URL(str).openStream();
                 Intrinsics.checkNotNull(openStream);
                 String T1 = x.d(x.k(openStream)).T1();
-                tr.c.a(openStream, null);
+                ur.c.a(openStream, null);
                 return T1;
             } catch (Exception unused) {
                 return null;
@@ -105,14 +105,14 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f20550e, this.f20551i, continuation);
+            return new a(this.f20183e, this.f20184i, continuation);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:11:0x0032, code lost:
             if (r7 == r0) goto L16;
          */
         /* JADX WARN: Code restructure failed: missing block: B:16:0x004b, code lost:
-            if (gs.g.g(r1, r3, r6) == r0) goto L16;
+            if (hs.g.g(r1, r3, r6) == r0) goto L16;
          */
         /* JADX WARN: Code restructure failed: missing block: B:17:0x004d, code lost:
             return r0;
@@ -125,8 +125,8 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
         public final java.lang.Object invokeSuspend(java.lang.Object r7) {
             /*
                 r6 = this;
-                java.lang.Object r0 = or.b.f()
-                int r1 = r6.f20549d
+                java.lang.Object r0 = pr.b.f()
+                int r1 = r6.f20182d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L1e
@@ -144,29 +144,29 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
                 goto L35
             L1e:
                 kotlin.c.b(r7)
-                kotlinx.coroutines.CoroutineDispatcher r7 = gs.m0.b()
-                java.lang.String r1 = r6.f20550e
+                kotlinx.coroutines.CoroutineDispatcher r7 = hs.m0.b()
+                java.lang.String r1 = r6.f20183e
                 com.withpersona.sdk2.inquiry.shared.ui.c r4 = new com.withpersona.sdk2.inquiry.shared.ui.c
                 r4.<init>()
-                r6.f20549d = r3
-                java.lang.Object r7 = gs.x0.b(r7, r4, r6)
+                r6.f20182d = r3
+                java.lang.Object r7 = hs.x0.b(r7, r4, r6)
                 if (r7 != r0) goto L35
                 goto L4d
             L35:
                 java.lang.String r7 = (java.lang.String) r7
                 if (r7 == 0) goto L4e
-                gs.c1 r1 = gs.m0.c()
+                hs.c1 r1 = hs.m0.c()
                 com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView$a$a r3 = new com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView$a$a
-                com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView r4 = r6.f20551i
+                com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView r4 = r6.f20184i
                 r5 = 0
                 r3.<init>(r4, r7, r5)
-                r6.f20549d = r2
-                java.lang.Object r7 = gs.g.g(r1, r3, r6)
+                r6.f20182d = r2
+                java.lang.Object r7 = hs.g.g(r1, r3, r6)
                 if (r7 != r0) goto L4e
             L4d:
                 return r0
             L4e:
-                kotlin.Unit r7 = kotlin.Unit.f33298a
+                kotlin.Unit r7 = kotlin.Unit.f33074a
                 return r7
             */
             throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView.a.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -174,7 +174,7 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
@@ -182,7 +182,7 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
         super(context, attributeSet);
         this.A = new LinkedHashMap();
         this.B = i.a(m0.a());
-        j(new z() { // from class: tp.q
+        j(new z() { // from class: up.q
             @Override // l5.z
             public final void a(l5.i iVar) {
                 ThemeableLottieAnimationView.G(ThemeableLottieAnimationView.this, iVar);
@@ -192,8 +192,8 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void G(ThemeableLottieAnimationView themeableLottieAnimationView, l5.i iVar) {
-        themeableLottieAnimationView.k(new e("**"), a0.f36862a, new com.withpersona.sdk2.inquiry.shared.ui.a(themeableLottieAnimationView));
-        themeableLottieAnimationView.k(new e("**"), a0.f36863b, new b(themeableLottieAnimationView));
+        themeableLottieAnimationView.k(new e("**"), a0.f36976a, new com.withpersona.sdk2.inquiry.shared.ui.a(themeableLottieAnimationView));
+        themeableLottieAnimationView.k(new e("**"), a0.f36977b, new b(themeableLottieAnimationView));
     }
 
     public final void I(int i10, int i11) {
@@ -203,7 +203,7 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
     public final Job J(String url) {
         Job d10;
         Intrinsics.checkNotNullParameter(url, "url");
-        d10 = gs.i.d(this.B, null, null, new a(url, this, null), 3, null);
+        d10 = hs.i.d(this.B, null, null, new a(url, this, null), 3, null);
         return d10;
     }
 

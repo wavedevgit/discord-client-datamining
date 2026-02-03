@@ -67,28 +67,28 @@ public final class NextStep_Selfie_LocalizationsJsonAdapter extends h {
         NextStep.CancelDialog cancelDialog = null;
         NextStep.Selfie.CheckPage checkPage = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 promptPage = (NextStep.Selfie.PromptPage) this.promptPageAdapter.fromJson(reader);
                 if (promptPage == null) {
-                    throw sm.c.x("promptPage", "promptPage", reader);
+                    throw tm.c.x("promptPage", "promptPage", reader);
                 }
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 capturePage = (NextStep.Selfie.CapturePage) this.capturePageAdapter.fromJson(reader);
                 if (capturePage == null) {
-                    throw sm.c.x("capturePage", "capturePage", reader);
+                    throw tm.c.x("capturePage", "capturePage", reader);
                 }
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 pendingPage = (NextStep.Selfie.PendingPage) this.pendingPageAdapter.fromJson(reader);
                 if (pendingPage == null) {
-                    throw sm.c.x("pendingPage", "pendingPage", reader);
+                    throw tm.c.x("pendingPage", "pendingPage", reader);
                 }
-            } else if (A0 == 3) {
+            } else if (t02 == 3) {
                 cancelDialog = (NextStep.CancelDialog) this.nullableCancelDialogAdapter.fromJson(reader);
-            } else if (A0 == 4) {
+            } else if (t02 == 4) {
                 checkPage = (NextStep.Selfie.CheckPage) this.nullableCheckPageAdapter.fromJson(reader);
             }
         }
@@ -98,11 +98,11 @@ public final class NextStep_Selfie_LocalizationsJsonAdapter extends h {
                 if (pendingPage != null) {
                     return new NextStep.Selfie.Localizations(promptPage, capturePage, pendingPage, cancelDialog, checkPage);
                 }
-                throw sm.c.o("pendingPage", "pendingPage", reader);
+                throw tm.c.o("pendingPage", "pendingPage", reader);
             }
-            throw sm.c.o("capturePage", "capturePage", reader);
+            throw tm.c.o("capturePage", "capturePage", reader);
         }
-        throw sm.c.o("promptPage", "promptPage", reader);
+        throw tm.c.o("promptPage", "promptPage", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -110,15 +110,15 @@ public final class NextStep_Selfie_LocalizationsJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (localizations != null) {
             writer.l();
-            writer.A0("promptPage");
+            writer.t0("promptPage");
             this.promptPageAdapter.toJson(writer, localizations.getPromptPage());
-            writer.A0("capturePage");
+            writer.t0("capturePage");
             this.capturePageAdapter.toJson(writer, localizations.getCapturePage());
-            writer.A0("pendingPage");
+            writer.t0("pendingPage");
             this.pendingPageAdapter.toJson(writer, localizations.getPendingPage());
-            writer.A0("cancelDialog");
+            writer.t0("cancelDialog");
             this.nullableCancelDialogAdapter.toJson(writer, localizations.getCancelDialog());
-            writer.A0("checkPage");
+            writer.t0("checkPage");
             this.nullableCheckPageAdapter.toJson(writer, localizations.getCheckPage());
             writer.E();
             return;

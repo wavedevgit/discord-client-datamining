@@ -29,7 +29,7 @@ import com.discord.theme.R;
 import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
-import gs.i;
+import hs.i;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.Metadata;
@@ -56,7 +56,7 @@ public final class CallSystemMessageView extends ChatListConstraintLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setMessage$lambda$3(ChatEventHandler chatEventHandler, Message message, View view) {
-        chatEventHandler.mo450onTapCallpfaIj0E(message.m237getId3Eiw7ao(), message.m234getChannelIdo4g7jtM());
+        chatEventHandler.mo452onTapCallpfaIj0E(message.m239getId3Eiw7ao(), message.m236getChannelIdo4g7jtM());
     }
 
     public final void setMessage(@NotNull final Message message, @NotNull final ChatEventHandler eventHandler) {

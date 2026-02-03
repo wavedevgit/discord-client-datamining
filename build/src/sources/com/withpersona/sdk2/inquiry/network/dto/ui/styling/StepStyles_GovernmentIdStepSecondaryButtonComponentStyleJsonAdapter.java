@@ -45,15 +45,15 @@ public final class StepStyles_GovernmentIdStepSecondaryButtonComponentStyleJsonA
         StepStyles.StepCancelButtonComponentStyleContainer stepCancelButtonComponentStyleContainer2 = null;
         StepStyles.StepCancelButtonComponentStyleContainer stepCancelButtonComponentStyleContainer3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 stepCancelButtonComponentStyleContainer = (StepStyles.StepCancelButtonComponentStyleContainer) this.nullableStepCancelButtonComponentStyleContainerAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 stepCancelButtonComponentStyleContainer2 = (StepStyles.StepCancelButtonComponentStyleContainer) this.nullableStepCancelButtonComponentStyleContainerAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 stepCancelButtonComponentStyleContainer3 = (StepStyles.StepCancelButtonComponentStyleContainer) this.nullableStepCancelButtonComponentStyleContainerAdapter.fromJson(reader);
             }
         }
@@ -66,11 +66,11 @@ public final class StepStyles_GovernmentIdStepSecondaryButtonComponentStyleJsonA
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepSecondaryButtonComponentStyle != null) {
             writer.l();
-            writer.A0("base");
+            writer.t0("base");
             this.nullableStepCancelButtonComponentStyleContainerAdapter.toJson(writer, governmentIdStepSecondaryButtonComponentStyle.getBase());
-            writer.A0("cancelDialogResume");
+            writer.t0("cancelDialogResume");
             this.nullableStepCancelButtonComponentStyleContainerAdapter.toJson(writer, governmentIdStepSecondaryButtonComponentStyle.getCancelDialogResume());
-            writer.A0("retakePhotoButton");
+            writer.t0("retakePhotoButton");
             this.nullableStepCancelButtonComponentStyleContainerAdapter.toJson(writer, governmentIdStepSecondaryButtonComponentStyle.getRetakePhotoButton());
             writer.E();
             return;

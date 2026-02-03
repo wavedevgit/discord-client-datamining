@@ -1,82 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = function arg0, arg1, arg2() {
-        _fun22045: for (var _fun22045_ip = 0;;) switch (_fun22045_ip) {
-            case 0:
-                var0 = arg0;
-                var4 = arg1;
-                var1 = 1;
-                if (!(var1 !== var4)) {
-                    _fun22045_ip = 79;
-                    continue _fun22045
-                }
-            case 13:
-                var1 = 100;
-                var2 = var4 % var1;
-                var1 = 20;
-                if (!(var2 <= var1)) {
-                    _fun22045_ip = 34;
-                    continue _fun22045
-                }
-            case 27:
-                var1 = 10;
-                if (!(!(var2 > var1))) {
-                    _fun22045_ip = 71;
-                    continue _fun22045
-                }
-            case 34:
-                var1 = 10;
-                var2 = var2 % var1;
-                var1 = 2;
-                if (!(var2 >= var1)) {
-                    _fun22045_ip = 55;
-                    continue _fun22045
-                }
-            case 48:
-                var1 = 4;
-                if (!(!(var2 <= var1))) {
-                    _fun22045_ip = 63;
-                    continue _fun22045
-                }
-            case 55:
-                var1 = var0.other;
-                _fun22045_ip = 69;
-                continue _fun22045;
-            case 63:
-                var1 = var0.twoFour;
-            case 69:
-                _fun22045_ip = 85;
-                continue _fun22045;
-            case 71:
-                var1 = var0.other;
-                _fun22045_ip = 85;
-                continue _fun22045;
-            case 79:
-                var1 = var0.one;
-            case 85:
-                var2 = 'string';
-                var0 = typeof var1;
-                var3 = var1;
-                if (!(var2 !== var0)) {
-                    _fun22045_ip = 106;
-                    continue _fun22045
-                }
-            case 99:
-                var0 = arg2;
-                var3 = var1[var0];
-            case 106:
-                var2 = var3.replace;
-                var0 = global;
-                var1 = var0.String;
-                var0 = undefined;
-                var1 = var1.bind(var0)(var4);
-                var0 = '{{count}}';
-                var0 = var2.bind(var3)(var0, var1);
-                return var0;
-        }
-    };
-    var _closure1_slot1 = var0;
     var0 = global;
     var5 = var0.Object;
     var4 = var5.defineProperty;
@@ -89,202 +13,203 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.default = var0;
     var3 = {};
     var4 = {
-        'one': null,
-        'twoFour': 'mniej niż {{count}} sekundy',
-        'other': 'mniej niż {{count}} sekund'
+        'one': '1秒未満',
+        'other': '{{count}}秒未満',
+        'oneWithSuffix': '約1秒',
+        'otherWithSuffix': '約{{count}}秒'
     };
-    var5 = {
-        'regular': 'mniej niż sekunda',
-        'past': 'mniej niż sekundę',
-        'future': 'mniej niż sekundę'
-    };
-    var4.one = var5;
     var3.lessThanXSeconds = var4;
     var4 = {
-        'one': null,
-        'twoFour': '{{count}} sekundy',
-        'other': '{{count}} sekund'
+        'one': '1秒',
+        'other': '{{count}}秒'
     };
-    var5 = {
-        'regular': 'sekunda',
-        'past': 'sekundę',
-        'future': 'sekundę'
-    };
-    var4.one = var5;
     var3.xSeconds = var4;
-    var4 = {
-        'one': 'pół minuty',
-        'twoFour': 'pół minuty',
-        'other': 'pół minuty'
-    };
+    var4 = '30秒';
     var3.halfAMinute = var4;
     var4 = {
-        'one': null,
-        'twoFour': 'mniej niż {{count}} minuty',
-        'other': 'mniej niż {{count}} minut'
+        'one': '1分未満',
+        'other': '{{count}}分未満',
+        'oneWithSuffix': '約1分',
+        'otherWithSuffix': '約{{count}}分'
     };
-    var5 = {
-        'regular': 'mniej niż minuta',
-        'past': 'mniej niż minutę',
-        'future': 'mniej niż minutę'
-    };
-    var4.one = var5;
     var3.lessThanXMinutes = var4;
     var4 = {
-        'one': null,
-        'twoFour': '{{count}} minuty',
-        'other': '{{count}} minut'
+        'one': '1分',
+        'other': '{{count}}分'
     };
-    var5 = {
-        'regular': 'minuta',
-        'past': 'minutę',
-        'future': 'minutę'
-    };
-    var4.one = var5;
     var3.xMinutes = var4;
     var4 = {
-        'one': null,
-        'twoFour': 'około {{count}} godziny',
-        'other': 'około {{count}} godzin'
+        'one': '約1時間',
+        'other': '約{{count}}時間'
     };
-    var5 = {
-        'regular': 'około godziny',
-        'past': 'około godziny',
-        'future': 'około godzinę'
-    };
-    var4.one = var5;
     var3.aboutXHours = var4;
     var4 = {
-        'one': null,
-        'twoFour': '{{count}} godziny',
-        'other': '{{count}} godzin'
+        'one': '1時間',
+        'other': '{{count}}時間'
     };
-    var5 = {
-        'regular': 'godzina',
-        'past': 'godzinę',
-        'future': 'godzinę'
-    };
-    var4.one = var5;
     var3.xHours = var4;
     var4 = {
-        'one': null,
-        'twoFour': '{{count}} dni',
-        'other': '{{count}} dni'
+        'one': '1日',
+        'other': '{{count}}日'
     };
-    var5 = {
-        'regular': 'dzień',
-        'past': 'dzień',
-        'future': '1 dzień'
-    };
-    var4.one = var5;
     var3.xDays = var4;
     var4 = {
-        'one': 'około tygodnia',
-        'twoFour': 'około {{count}} tygodni',
-        'other': 'około {{count}} tygodni'
+        'one': '約1週間',
+        'other': '約{{count}}週間'
     };
     var3.aboutXWeeks = var4;
     var4 = {
-        'one': 'tydzień',
-        'twoFour': '{{count}} tygodnie',
-        'other': '{{count}} tygodni'
+        'one': '1週間',
+        'other': '{{count}}週間'
     };
     var3.xWeeks = var4;
     var4 = {
-        'one': 'około miesiąc',
-        'twoFour': 'około {{count}} miesiące',
-        'other': 'około {{count}} miesięcy'
+        'one': '約1か月',
+        'other': '約{{count}}か月'
     };
     var3.aboutXMonths = var4;
     var4 = {
-        'one': 'miesiąc',
-        'twoFour': '{{count}} miesiące',
-        'other': '{{count}} miesięcy'
+        'one': '1か月',
+        'other': '{{count}}か月'
     };
     var3.xMonths = var4;
     var4 = {
-        'one': 'około rok',
-        'twoFour': 'około {{count}} lata',
-        'other': 'około {{count}} lat'
+        'one': '約1年',
+        'other': '約{{count}}年'
     };
     var3.aboutXYears = var4;
     var4 = {
-        'one': 'rok',
-        'twoFour': '{{count}} lata',
-        'other': '{{count}} lat'
+        'one': '1年',
+        'other': '{{count}}年'
     };
     var3.xYears = var4;
     var4 = {
-        'one': 'ponad rok',
-        'twoFour': 'ponad {{count}} lata',
-        'other': 'ponad {{count}} lat'
+        'one': '1年以上',
+        'other': '{{count}}年以上'
     };
     var3.overXYears = var4;
     var4 = {
-        'one': 'prawie rok',
-        'twoFour': 'prawie {{count}} lata',
-        'other': 'prawie {{count}} lat'
+        'one': '1年近く',
+        'other': '{{count}}年近く'
     };
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
     var2 = function arg0, arg1, arg2() {
-        _fun22046: for (var _fun22046_ip = 0;;) switch (_fun22046_ip) {
+        _fun22060: for (var _fun22060_ip = 0;;) switch (_fun22060_ip) {
             case 0:
-                var6 = arg1;
+                var8 = arg1;
                 var1 = arg2;
-                var3 = _closure1_slot0;
+                if (var1) {
+                    _fun22060_ip = 11;
+                    continue _fun22060
+                }
+            case 9:
+                var1 = {};
+            case 11:
+                var2 = _closure1_slot0;
                 var0 = arg0;
-                var5 = var3[var0];
-                var0 = null;
-                if (!(var0 != var1)) {
-                    _fun22046_ip = 35;
-                    continue _fun22046
+                var4 = var2[var0];
+                var2 = 'string';
+                var0 = typeof var4;
+                var3 = var4;
+                if (!(var2 !== var0)) {
+                    _fun22060_ip = 185;
+                    continue _fun22060
                 }
-            case 26:
+            case 42:
+                var0 = 1;
+                if (!(var0 !== var8)) {
+                    _fun22060_ip = 147;
+                    continue _fun22060
+                }
+            case 49:
                 var0 = var1.addSuffix;
+                if (!var0) {
+                    _fun22060_ip = 67;
+                    continue _fun22060
+                }
+            case 58:
+                var0 = var4.otherWithSuffix;
                 if (var0) {
-                    _fun22046_ip = 54;
-                    continue _fun22046
+                    _fun22060_ip = 107;
+                    continue _fun22060
                 }
-            case 35:
-                var4 = _closure1_slot1;
-                var3 = undefined;
-                var0 = 'regular';
-                var0 = var4.bind(var3)(var5, var6, var0);
-                _fun22046_ip = 134;
-                continue _fun22046;
-            case 54:
-                var3 = var1.comparison;
-                if (!var3) {
-                    _fun22046_ip = 75;
-                    continue _fun22046
+            case 67:
+                var6 = var4.other;
+                var5 = var6.replace;
+                var0 = global;
+                var2 = var0.String;
+                var0 = undefined;
+                var2 = var2.bind(var0)(var8);
+                var0 = '{{count}}';
+                var0 = var5.bind(var6)(var0, var2);
+                _fun22060_ip = 145;
+                continue _fun22060;
+            case 107:
+                var7 = var4.otherWithSuffix;
+                var6 = var7.replace;
+                var2 = global;
+                var5 = var2.String;
+                var2 = undefined;
+                var5 = var5.bind(var2)(var8);
+                var2 = '{{count}}';
+                var0 = var6.bind(var7)(var2, var5);
+            case 145:
+                _fun22060_ip = 182;
+                continue _fun22060;
+            case 147:
+                var2 = var1.addSuffix;
+                if (!var2) {
+                    _fun22060_ip = 165;
+                    continue _fun22060
                 }
-            case 63:
-                var3 = var1.comparison;
+            case 156:
+                var2 = var4.oneWithSuffix;
+                if (var2) {
+                    _fun22060_ip = 173;
+                    continue _fun22060
+                }
+            case 165:
+                var2 = var4.one;
+                _fun22060_ip = 179;
+                continue _fun22060;
+            case 173:
+                var2 = var4.oneWithSuffix;
+            case 179:
+                var0 = var2;
+            case 182:
+                var3 = var0;
+            case 185:
+                var2 = var1.addSuffix;
+                var0 = var3;
+                if (!var2) {
+                    _fun22060_ip = 243;
+                    continue _fun22060
+                }
+            case 197:
+                var2 = var1.comparison;
+                if (!var2) {
+                    _fun22060_ip = 218;
+                    continue _fun22060
+                }
+            case 206:
+                var2 = var1.comparison;
                 var1 = 0;
-                if (!(!(var3 > var1))) {
-                    _fun22046_ip = 104;
-                    continue _fun22046
+                if (!(!(var2 > var1))) {
+                    _fun22060_ip = 230;
+                    continue _fun22060
                 }
-            case 75:
-                var4 = _closure1_slot1;
-                var3 = undefined;
-                var1 = 'past';
-                var3 = var4.bind(var3)(var5, var6, var1);
-                var1 = ' temu';
+            case 218:
+                var1 = '前';
                 var1 = var3 + var1;
-                _fun22046_ip = 131;
-                continue _fun22046;
-            case 104:
-                var4 = _closure1_slot1;
-                var3 = undefined;
-                var2 = 'future';
-                var3 = var4.bind(var3)(var5, var6, var2);
-                var2 = 'za ';
-                var1 = var2 + var3;
-            case 131:
+                _fun22060_ip = 240;
+                continue _fun22060;
+            case 230:
+                var2 = '後';
+                var1 = var3 + var2;
+            case 240:
                 var0 = var1;
-            case 134:
+            case 243:
                 return var0;
         }
     };

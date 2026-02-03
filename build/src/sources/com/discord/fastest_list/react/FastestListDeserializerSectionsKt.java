@@ -35,7 +35,7 @@ public final class FastestListDeserializerSectionsKt {
         } else {
             str2 = null;
         }
-        return new FastestListSections.Entry.SectionFooter(companion.createKey(str, i10, str2), FastestListSections.Section.m903constructorimpl(i10), dpToPx, null);
+        return new FastestListSections.Entry.SectionFooter(companion.createKey(str, i10, str2), FastestListSections.Section.m905constructorimpl(i10), dpToPx, null);
     }
 
     private static final FastestListSections.Entry.SectionHeader createSectionHeader(String str, boolean z10, int i10, ReadableArray readableArray, Integer num, ReadableArray readableArray2) {
@@ -55,7 +55,7 @@ public final class FastestListDeserializerSectionsKt {
         } else {
             str2 = null;
         }
-        return new FastestListSections.Entry.SectionHeader(companion.createKey(str, i10, str2), FastestListSections.Section.m903constructorimpl(i10), dpToPx, null);
+        return new FastestListSections.Entry.SectionHeader(companion.createKey(str, i10, str2), FastestListSections.Section.m905constructorimpl(i10), dpToPx, null);
     }
 
     private static final FastestListSections.Entry.SectionItem createSectionItem(String str, boolean z10, int i10, int i11, int i12, ReadableArray readableArray, Integer num, ReadableArray readableArray2) {
@@ -79,8 +79,8 @@ public final class FastestListDeserializerSectionsKt {
             str2 = null;
         }
         String createKey = FastestListSections.Entry.SectionItem.Companion.createKey(str, i10, i12, str2);
-        int m903constructorimpl = FastestListSections.Section.m903constructorimpl(i10);
-        int m896constructorimpl = FastestListSections.Item.m896constructorimpl(i12);
+        int m905constructorimpl = FastestListSections.Section.m905constructorimpl(i10);
+        int m898constructorimpl = FastestListSections.Item.m898constructorimpl(i12);
         if (i12 == 0) {
             z11 = true;
         } else {
@@ -91,7 +91,7 @@ public final class FastestListDeserializerSectionsKt {
         } else {
             z12 = false;
         }
-        return new FastestListSections.Entry.SectionItem(createKey, m903constructorimpl, m896constructorimpl, i13, z11, z12, null);
+        return new FastestListSections.Entry.SectionItem(createKey, m905constructorimpl, m898constructorimpl, i13, z11, z12, null);
     }
 
     @NotNull
@@ -149,7 +149,7 @@ public final class FastestListDeserializerSectionsKt {
             readableArray2 = nonNullArray6;
             num4 = num2;
             readableArray3 = nonNullArray4;
-            listHeader = new FastestListSections.Entry.ListHeader(FastestListSections.Entry.ListHeader.Companion.createKey(nonNullString, nonNullString3), FastestListSections.Section.m903constructorimpl(0), dpToPx, null);
+            listHeader = new FastestListSections.Entry.ListHeader(FastestListSections.Entry.ListHeader.Companion.createKey(nonNullString, nonNullString3), FastestListSections.Section.m905constructorimpl(0), dpToPx, null);
         } else {
             readableArray2 = nonNullArray6;
             num4 = num2;
@@ -159,7 +159,7 @@ public final class FastestListDeserializerSectionsKt {
         String nonNullString4 = NativeMapExtensionsKt.getNonNullString(value, "listFooterKey");
         int dpToPx2 = SizeUtilsKt.getDpToPx(value.getDouble("listFooterSize"));
         if (dpToPx2 > 0) {
-            listFooter = new FastestListSections.Entry.ListFooter(FastestListSections.Entry.ListFooter.Companion.createKey(nonNullString, nonNullString4), FastestListSections.Section.m903constructorimpl(Math.max(0, CollectionsKt.n(intList))), dpToPx2, null);
+            listFooter = new FastestListSections.Entry.ListFooter(FastestListSections.Entry.ListFooter.Companion.createKey(nonNullString, nonNullString4), FastestListSections.Section.m905constructorimpl(Math.max(0, CollectionsKt.n(intList))), dpToPx2, null);
         } else {
             listFooter = null;
         }
@@ -242,6 +242,6 @@ public final class FastestListDeserializerSectionsKt {
             list2.add(Integer.valueOf(intRef.element));
             intRef.element += entry.getSize();
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 }

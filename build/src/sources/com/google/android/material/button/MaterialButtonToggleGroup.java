@@ -32,37 +32,37 @@ import yg.j;
 public class MaterialButtonToggleGroup extends LinearLayout {
 
     /* renamed from: v  reason: collision with root package name */
-    private static final int f15679v = j.f54534u;
+    private static final int f15308v = j.f54509u;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f15680d;
+    private final List f15309d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final e f15681e;
+    private final e f15310e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final LinkedHashSet f15682i;
+    private final LinkedHashSet f15311i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Comparator f15683o;
+    private final Comparator f15312o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Integer[] f15684p;
+    private Integer[] f15313p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f15685q;
+    private boolean f15314q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f15686r;
+    private boolean f15315r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f15687s;
+    private boolean f15316s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final int f15688t;
+    private final int f15317t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Set f15689u;
+    private Set f15318u;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements Comparator {
@@ -101,30 +101,30 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     public static class c {
 
         /* renamed from: e  reason: collision with root package name */
-        private static final oh.c f15692e = new oh.a(0.0f);
+        private static final oh.c f15321e = new oh.a(0.0f);
 
         /* renamed from: a  reason: collision with root package name */
-        oh.c f15693a;
+        oh.c f15322a;
 
         /* renamed from: b  reason: collision with root package name */
-        oh.c f15694b;
+        oh.c f15323b;
 
         /* renamed from: c  reason: collision with root package name */
-        oh.c f15695c;
+        oh.c f15324c;
 
         /* renamed from: d  reason: collision with root package name */
-        oh.c f15696d;
+        oh.c f15325d;
 
         c(oh.c cVar, oh.c cVar2, oh.c cVar3, oh.c cVar4) {
-            this.f15693a = cVar;
-            this.f15694b = cVar3;
-            this.f15695c = cVar4;
-            this.f15696d = cVar2;
+            this.f15322a = cVar;
+            this.f15323b = cVar3;
+            this.f15324c = cVar4;
+            this.f15325d = cVar2;
         }
 
         public static c a(c cVar) {
-            oh.c cVar2 = f15692e;
-            return new c(cVar2, cVar.f15696d, cVar2, cVar.f15695c);
+            oh.c cVar2 = f15321e;
+            return new c(cVar2, cVar.f15325d, cVar2, cVar.f15324c);
         }
 
         public static c b(c cVar, View view) {
@@ -135,15 +135,15 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         }
 
         public static c c(c cVar) {
-            oh.c cVar2 = cVar.f15693a;
-            oh.c cVar3 = cVar.f15696d;
-            oh.c cVar4 = f15692e;
+            oh.c cVar2 = cVar.f15322a;
+            oh.c cVar3 = cVar.f15325d;
+            oh.c cVar4 = f15321e;
             return new c(cVar2, cVar3, cVar4, cVar4);
         }
 
         public static c d(c cVar) {
-            oh.c cVar2 = f15692e;
-            return new c(cVar2, cVar2, cVar.f15694b, cVar.f15695c);
+            oh.c cVar2 = f15321e;
+            return new c(cVar2, cVar2, cVar.f15323b, cVar.f15324c);
         }
 
         public static c e(c cVar, View view) {
@@ -154,9 +154,9 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         }
 
         public static c f(c cVar) {
-            oh.c cVar2 = cVar.f15693a;
-            oh.c cVar3 = f15692e;
-            return new c(cVar2, cVar3, cVar.f15694b, cVar3);
+            oh.c cVar2 = cVar.f15322a;
+            oh.c cVar3 = f15321e;
+            return new c(cVar2, cVar3, cVar.f15323b, cVar3);
         }
     }
 
@@ -182,7 +182,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     }
 
     public MaterialButtonToggleGroup(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54380y);
+        this(context, attributeSet, yg.b.f54355y);
     }
 
     private void c() {
@@ -221,14 +221,14 @@ public class MaterialButtonToggleGroup extends LinearLayout {
             Log.e("MButtonToggleGroup", "Button ID is not valid: " + i10);
             return;
         }
-        HashSet hashSet = new HashSet(this.f15689u);
+        HashSet hashSet = new HashSet(this.f15318u);
         if (z10 && !hashSet.contains(Integer.valueOf(i10))) {
-            if (this.f15686r && !hashSet.isEmpty()) {
+            if (this.f15315r && !hashSet.isEmpty()) {
                 hashSet.clear();
             }
             hashSet.add(Integer.valueOf(i10));
         } else if (!z10 && hashSet.contains(Integer.valueOf(i10))) {
-            if (!this.f15687s || hashSet.size() > 1) {
+            if (!this.f15316s || hashSet.size() > 1) {
                 hashSet.remove(Integer.valueOf(i10));
             }
         } else {
@@ -238,7 +238,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     }
 
     private void g(int i10, boolean z10) {
-        Iterator it = this.f15682i.iterator();
+        Iterator it = this.f15311i.iterator();
         while (it.hasNext()) {
             ((d) it.next()).a(this, i10, z10);
         }
@@ -296,7 +296,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
 
     private c j(int i10, int i11, int i12) {
         boolean z10;
-        c cVar = (c) this.f15680d.get(i10);
+        c cVar = (c) this.f15309d.get(i10);
         if (i11 == i12) {
             return cVar;
         }
@@ -345,9 +345,9 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     private void o(int i10, boolean z10) {
         View findViewById = findViewById(i10);
         if (findViewById instanceof MaterialButton) {
-            this.f15685q = true;
+            this.f15314q = true;
             ((MaterialButton) findViewById).setChecked(z10);
-            this.f15685q = false;
+            this.f15314q = false;
         }
     }
 
@@ -355,13 +355,13 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         if (cVar == null) {
             bVar.o(0.0f);
         } else {
-            bVar.C(cVar.f15693a).t(cVar.f15696d).H(cVar.f15694b).x(cVar.f15695c);
+            bVar.C(cVar.f15322a).t(cVar.f15325d).H(cVar.f15323b).x(cVar.f15324c);
         }
     }
 
     private void q(Set set) {
-        Set set2 = this.f15689u;
-        this.f15689u = new HashSet(set);
+        Set set2 = this.f15318u;
+        this.f15318u = new HashSet(set);
         for (int i10 = 0; i10 < getChildCount(); i10++) {
             int id2 = h(i10).getId();
             o(id2, set.contains(Integer.valueOf(id2)));
@@ -373,12 +373,12 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     }
 
     private void r() {
-        TreeMap treeMap = new TreeMap(this.f15683o);
+        TreeMap treeMap = new TreeMap(this.f15312o);
         int childCount = getChildCount();
         for (int i10 = 0; i10 < childCount; i10++) {
             treeMap.put(h(i10), Integer.valueOf(i10));
         }
-        this.f15684p = (Integer[]) treeMap.values().toArray(new Integer[0]);
+        this.f15313p = (Integer[]) treeMap.values().toArray(new Integer[0]);
     }
 
     private void setGeneratedIdIfNeeded(@NonNull MaterialButton materialButton) {
@@ -391,14 +391,14 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         materialButton.setMaxLines(1);
         materialButton.setEllipsize(TextUtils.TruncateAt.END);
         materialButton.setCheckable(true);
-        materialButton.setOnPressedChangeListenerInternal(this.f15681e);
+        materialButton.setOnPressedChangeListenerInternal(this.f15310e);
         materialButton.setShouldDrawSurfaceColorStroke(true);
     }
 
     private void t() {
         Class cls;
         for (int i10 = 0; i10 < getChildCount(); i10++) {
-            if (this.f15686r) {
+            if (this.f15315r) {
                 cls = RadioButton.class;
             } else {
                 cls = ToggleButton.class;
@@ -419,13 +419,13 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         setupButtonChild(materialButton);
         e(materialButton.getId(), materialButton.isChecked());
         k shapeAppearanceModel = materialButton.getShapeAppearanceModel();
-        this.f15680d.add(new c(shapeAppearanceModel.r(), shapeAppearanceModel.j(), shapeAppearanceModel.t(), shapeAppearanceModel.l()));
+        this.f15309d.add(new c(shapeAppearanceModel.r(), shapeAppearanceModel.j(), shapeAppearanceModel.t(), shapeAppearanceModel.l()));
         materialButton.setEnabled(isEnabled());
         h0.n0(materialButton, new b());
     }
 
     public void b(d dVar) {
-        this.f15682i.add(dVar);
+        this.f15311i.add(dVar);
     }
 
     @Override // android.view.ViewGroup, android.view.View
@@ -439,8 +439,8 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     }
 
     public int getCheckedButtonId() {
-        if (this.f15686r && !this.f15689u.isEmpty()) {
-            return ((Integer) this.f15689u.iterator().next()).intValue();
+        if (this.f15315r && !this.f15318u.isEmpty()) {
+            return ((Integer) this.f15318u.iterator().next()).intValue();
         }
         return -1;
     }
@@ -450,7 +450,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         ArrayList arrayList = new ArrayList();
         for (int i10 = 0; i10 < getChildCount(); i10++) {
             int id2 = h(i10).getId();
-            if (this.f15689u.contains(Integer.valueOf(id2))) {
+            if (this.f15318u.contains(Integer.valueOf(id2))) {
                 arrayList.add(Integer.valueOf(id2));
             }
         }
@@ -459,7 +459,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
 
     @Override // android.view.ViewGroup
     protected int getChildDrawingOrder(int i10, int i11) {
-        Integer[] numArr = this.f15684p;
+        Integer[] numArr = this.f15313p;
         if (numArr != null && i11 < numArr.length) {
             return numArr[i11].intValue();
         }
@@ -468,12 +468,12 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     }
 
     public boolean l() {
-        return this.f15686r;
+        return this.f15315r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void m(MaterialButton materialButton, boolean z10) {
-        if (this.f15685q) {
+        if (this.f15314q) {
             return;
         }
         e(materialButton.getId(), z10);
@@ -482,7 +482,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     @Override // android.view.View
     protected void onFinishInflate() {
         super.onFinishInflate();
-        int i10 = this.f15688t;
+        int i10 = this.f15317t;
         if (i10 != -1) {
             q(Collections.singleton(Integer.valueOf(i10)));
         }
@@ -517,7 +517,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         }
         int indexOfChild = indexOfChild(view);
         if (indexOfChild >= 0) {
-            this.f15680d.remove(indexOfChild);
+            this.f15309d.remove(indexOfChild);
         }
         s();
         c();
@@ -546,12 +546,12 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     }
 
     public void setSelectionRequired(boolean z10) {
-        this.f15687s = z10;
+        this.f15316s = z10;
     }
 
     public void setSingleSelection(boolean z10) {
-        if (this.f15686r != z10) {
-            this.f15686r = z10;
+        if (this.f15315r != z10) {
+            this.f15315r = z10;
             f();
         }
         t();
@@ -565,46 +565,46 @@ public class MaterialButtonToggleGroup extends LinearLayout {
     public MaterialButtonToggleGroup(android.content.Context r7, android.util.AttributeSet r8, int r9) {
         /*
             r6 = this;
-            int r4 = com.google.android.material.button.MaterialButtonToggleGroup.f15679v
+            int r4 = com.google.android.material.button.MaterialButtonToggleGroup.f15308v
             android.content.Context r7 = rh.a.c(r7, r8, r9, r4)
             r6.<init>(r7, r8, r9)
             java.util.ArrayList r7 = new java.util.ArrayList
             r7.<init>()
-            r6.f15680d = r7
+            r6.f15309d = r7
             com.google.android.material.button.MaterialButtonToggleGroup$e r7 = new com.google.android.material.button.MaterialButtonToggleGroup$e
             r0 = 0
             r7.<init>(r6, r0)
-            r6.f15681e = r7
+            r6.f15310e = r7
             java.util.LinkedHashSet r7 = new java.util.LinkedHashSet
             r7.<init>()
-            r6.f15682i = r7
+            r6.f15311i = r7
             com.google.android.material.button.MaterialButtonToggleGroup$a r7 = new com.google.android.material.button.MaterialButtonToggleGroup$a
             r7.<init>()
-            r6.f15683o = r7
+            r6.f15312o = r7
             r7 = 0
-            r6.f15685q = r7
+            r6.f15314q = r7
             java.util.HashSet r0 = new java.util.HashSet
             r0.<init>()
-            r6.f15689u = r0
+            r6.f15318u = r0
             android.content.Context r0 = r6.getContext()
-            int[] r2 = yg.k.f54634j3
+            int[] r2 = yg.k.f54609j3
             int[] r5 = new int[r7]
             r1 = r8
             r3 = r9
             android.content.res.TypedArray r8 = com.google.android.material.internal.l.i(r0, r1, r2, r3, r4, r5)
-            int r9 = yg.k.f54673n3
+            int r9 = yg.k.f54648n3
             boolean r9 = r8.getBoolean(r9, r7)
             r6.setSingleSelection(r9)
-            int r9 = yg.k.f54654l3
+            int r9 = yg.k.f54629l3
             r0 = -1
             int r9 = r8.getResourceId(r9, r0)
-            r6.f15688t = r9
-            int r9 = yg.k.f54664m3
+            r6.f15317t = r9
+            int r9 = yg.k.f54639m3
             boolean r7 = r8.getBoolean(r9, r7)
-            r6.f15687s = r7
+            r6.f15316s = r7
             r7 = 1
             r6.setChildrenDrawingOrderEnabled(r7)
-            int r9 = yg.k.f54644k3
+            int r9 = yg.k.f54619k3
             boolean r9 = r8.getBoolean(r9, r7)
             r6.setEnabled(r9)
             r8.recycle()

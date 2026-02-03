@@ -80,22 +80,22 @@ public final class Inspector {
     public static final class Page {
 
         /* renamed from: id  reason: collision with root package name */
-        private final int f12040id;
+        private final int f11669id;
         @NotNull
         private final String title;
         @NotNull
 
         /* renamed from: vm  reason: collision with root package name */
-        private final String f12041vm;
+        private final String f11670vm;
 
         private Page(int i10, String str, String str2) {
-            this.f12040id = i10;
+            this.f11669id = i10;
             this.title = str;
-            this.f12041vm = str2;
+            this.f11670vm = str2;
         }
 
         public final int getId() {
-            return this.f12040id;
+            return this.f11669id;
         }
 
         @NotNull
@@ -105,12 +105,12 @@ public final class Inspector {
 
         @NotNull
         public final String getVM() {
-            return this.f12041vm;
+            return this.f11670vm;
         }
 
         @NotNull
         public String toString() {
-            int i10 = this.f12040id;
+            int i10 = this.f11669id;
             String str = this.title;
             return "Page{id=" + i10 + ", title='" + str + "'}";
         }

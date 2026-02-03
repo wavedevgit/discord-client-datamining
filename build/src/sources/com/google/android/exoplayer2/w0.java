@@ -5,71 +5,71 @@ import qd.r;
 final class w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public final qd.p f14525a;
+    public final qd.p f14154a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Object f14526b;
+    public final Object f14155b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final qd.m0[] f14527c;
+    public final qd.m0[] f14156c;
 
     /* renamed from: d  reason: collision with root package name */
-    public boolean f14528d;
+    public boolean f14157d;
 
     /* renamed from: e  reason: collision with root package name */
-    public boolean f14529e;
+    public boolean f14158e;
 
     /* renamed from: f  reason: collision with root package name */
-    public x0 f14530f;
+    public x0 f14159f;
 
     /* renamed from: g  reason: collision with root package name */
-    public boolean f14531g;
+    public boolean f14160g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean[] f14532h;
+    private final boolean[] f14161h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final w1[] f14533i;
+    private final w1[] f14162i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final je.q f14534j;
+    private final je.q f14163j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final o1 f14535k;
+    private final o1 f14164k;
 
     /* renamed from: l  reason: collision with root package name */
-    private w0 f14536l;
+    private w0 f14165l;
 
     /* renamed from: m  reason: collision with root package name */
-    private qd.w0 f14537m;
+    private qd.w0 f14166m;
 
     /* renamed from: n  reason: collision with root package name */
-    private je.r f14538n;
+    private je.r f14167n;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f14539o;
+    private long f14168o;
 
     public w0(w1[] w1VarArr, long j10, je.q qVar, le.b bVar, o1 o1Var, x0 x0Var, je.r rVar) {
-        this.f14533i = w1VarArr;
-        this.f14539o = j10;
-        this.f14534j = qVar;
-        this.f14535k = o1Var;
-        r.b bVar2 = x0Var.f14541a;
-        this.f14526b = bVar2.f47300a;
-        this.f14530f = x0Var;
-        this.f14537m = qd.w0.f47372o;
-        this.f14538n = rVar;
-        this.f14527c = new qd.m0[w1VarArr.length];
-        this.f14532h = new boolean[w1VarArr.length];
-        this.f14525a = e(bVar2, o1Var, bVar, x0Var.f14542b, x0Var.f14544d);
+        this.f14162i = w1VarArr;
+        this.f14168o = j10;
+        this.f14163j = qVar;
+        this.f14164k = o1Var;
+        r.b bVar2 = x0Var.f14170a;
+        this.f14155b = bVar2.f47555a;
+        this.f14159f = x0Var;
+        this.f14166m = qd.w0.f47627o;
+        this.f14167n = rVar;
+        this.f14156c = new qd.m0[w1VarArr.length];
+        this.f14161h = new boolean[w1VarArr.length];
+        this.f14154a = e(bVar2, o1Var, bVar, x0Var.f14171b, x0Var.f14173d);
     }
 
     private void c(qd.m0[] m0VarArr) {
         int i10 = 0;
         while (true) {
-            w1[] w1VarArr = this.f14533i;
+            w1[] w1VarArr = this.f14162i;
             if (i10 < w1VarArr.length) {
-                if (w1VarArr[i10].e() == -2 && this.f14538n.c(i10)) {
+                if (w1VarArr[i10].e() == -2 && this.f14167n.c(i10)) {
                     m0VarArr[i10] = new qd.k();
                 }
                 i10++;
@@ -91,10 +91,10 @@ final class w0 {
         if (r()) {
             int i10 = 0;
             while (true) {
-                je.r rVar = this.f14538n;
-                if (i10 < rVar.f32009a) {
+                je.r rVar = this.f14167n;
+                if (i10 < rVar.f31747a) {
                     boolean c10 = rVar.c(i10);
-                    com.google.android.exoplayer2.trackselection.g gVar = this.f14538n.f32011c[i10];
+                    com.google.android.exoplayer2.trackselection.g gVar = this.f14167n.f31749c[i10];
                     if (c10 && gVar != null) {
                         gVar.disable();
                     }
@@ -109,7 +109,7 @@ final class w0 {
     private void g(qd.m0[] m0VarArr) {
         int i10 = 0;
         while (true) {
-            w1[] w1VarArr = this.f14533i;
+            w1[] w1VarArr = this.f14162i;
             if (i10 < w1VarArr.length) {
                 if (w1VarArr[i10].e() == -2) {
                     m0VarArr[i10] = null;
@@ -125,10 +125,10 @@ final class w0 {
         if (r()) {
             int i10 = 0;
             while (true) {
-                je.r rVar = this.f14538n;
-                if (i10 < rVar.f32009a) {
+                je.r rVar = this.f14167n;
+                if (i10 < rVar.f31747a) {
                     boolean c10 = rVar.c(i10);
-                    com.google.android.exoplayer2.trackselection.g gVar = this.f14538n.f32011c[i10];
+                    com.google.android.exoplayer2.trackselection.g gVar = this.f14167n.f31749c[i10];
                     if (c10 && gVar != null) {
                         gVar.enable();
                     }
@@ -141,7 +141,7 @@ final class w0 {
     }
 
     private boolean r() {
-        if (this.f14536l == null) {
+        if (this.f14165l == null) {
             return true;
         }
         return false;
@@ -150,7 +150,7 @@ final class w0 {
     private static void u(o1 o1Var, qd.p pVar) {
         try {
             if (pVar instanceof qd.d) {
-                o1Var.y(((qd.d) pVar).f47135d);
+                o1Var.y(((qd.d) pVar).f47390d);
             } else {
                 o1Var.y(pVar);
             }
@@ -160,9 +160,9 @@ final class w0 {
     }
 
     public void A() {
-        qd.p pVar = this.f14525a;
+        qd.p pVar = this.f14154a;
         if (pVar instanceof qd.d) {
-            long j10 = this.f14530f.f14544d;
+            long j10 = this.f14159f.f14173d;
             if (j10 == -9223372036854775807L) {
                 j10 = Long.MIN_VALUE;
             }
@@ -171,7 +171,7 @@ final class w0 {
     }
 
     public long a(je.r rVar, long j10, boolean z10) {
-        return b(rVar, j10, z10, new boolean[this.f14533i.length]);
+        return b(rVar, j10, z10, new boolean[this.f14162i.length]);
     }
 
     public long b(je.r rVar, long j10, boolean z10, boolean[] zArr) {
@@ -179,34 +179,34 @@ final class w0 {
         int i10 = 0;
         while (true) {
             boolean z12 = true;
-            if (i10 >= rVar.f32009a) {
+            if (i10 >= rVar.f31747a) {
                 break;
             }
-            boolean[] zArr2 = this.f14532h;
-            if (z10 || !rVar.b(this.f14538n, i10)) {
+            boolean[] zArr2 = this.f14161h;
+            if (z10 || !rVar.b(this.f14167n, i10)) {
                 z12 = false;
             }
             zArr2[i10] = z12;
             i10++;
         }
-        g(this.f14527c);
+        g(this.f14156c);
         f();
-        this.f14538n = rVar;
+        this.f14167n = rVar;
         h();
-        long o10 = this.f14525a.o(rVar.f32011c, this.f14532h, this.f14527c, zArr, j10);
-        c(this.f14527c);
-        this.f14529e = false;
+        long o10 = this.f14154a.o(rVar.f31749c, this.f14161h, this.f14156c, zArr, j10);
+        c(this.f14156c);
+        this.f14158e = false;
         int i11 = 0;
         while (true) {
-            qd.m0[] m0VarArr = this.f14527c;
+            qd.m0[] m0VarArr = this.f14156c;
             if (i11 < m0VarArr.length) {
                 if (m0VarArr[i11] != null) {
                     ne.a.g(rVar.c(i11));
-                    if (this.f14533i[i11].e() != -2) {
-                        this.f14529e = true;
+                    if (this.f14162i[i11].e() != -2) {
+                        this.f14158e = true;
                     }
                 } else {
-                    if (rVar.f32011c[i11] == null) {
+                    if (rVar.f31749c[i11] == null) {
                         z11 = true;
                     } else {
                         z11 = false;
@@ -222,72 +222,72 @@ final class w0 {
 
     public void d(long j10) {
         ne.a.g(r());
-        this.f14525a.f(y(j10));
+        this.f14154a.f(y(j10));
     }
 
     public long i() {
         long j10;
-        if (!this.f14528d) {
-            return this.f14530f.f14542b;
+        if (!this.f14157d) {
+            return this.f14159f.f14171b;
         }
-        if (this.f14529e) {
-            j10 = this.f14525a.g();
+        if (this.f14158e) {
+            j10 = this.f14154a.g();
         } else {
             j10 = Long.MIN_VALUE;
         }
         if (j10 == Long.MIN_VALUE) {
-            return this.f14530f.f14545e;
+            return this.f14159f.f14174e;
         }
         return j10;
     }
 
     public w0 j() {
-        return this.f14536l;
+        return this.f14165l;
     }
 
     public long k() {
-        if (!this.f14528d) {
+        if (!this.f14157d) {
             return 0L;
         }
-        return this.f14525a.b();
+        return this.f14154a.b();
     }
 
     public long l() {
-        return this.f14539o;
+        return this.f14168o;
     }
 
     public long m() {
-        return this.f14530f.f14542b + this.f14539o;
+        return this.f14159f.f14171b + this.f14168o;
     }
 
     public qd.w0 n() {
-        return this.f14537m;
+        return this.f14166m;
     }
 
     public je.r o() {
-        return this.f14538n;
+        return this.f14167n;
     }
 
     public void p(float f10, Timeline timeline) {
-        this.f14528d = true;
-        this.f14537m = this.f14525a.t();
+        this.f14157d = true;
+        this.f14166m = this.f14154a.t();
         je.r v10 = v(f10, timeline);
-        x0 x0Var = this.f14530f;
-        long j10 = x0Var.f14542b;
-        long j11 = x0Var.f14545e;
+        x0 x0Var = this.f14159f;
+        long j10 = x0Var.f14171b;
+        long j11 = x0Var.f14174e;
         if (j11 != -9223372036854775807L && j10 >= j11) {
             j10 = Math.max(0L, j11 - 1);
         }
         long a10 = a(v10, j10, false);
-        long j12 = this.f14539o;
-        x0 x0Var2 = this.f14530f;
-        this.f14539o = j12 + (x0Var2.f14542b - a10);
-        this.f14530f = x0Var2.b(a10);
+        long j12 = this.f14168o;
+        x0 x0Var2 = this.f14159f;
+        this.f14168o = j12 + (x0Var2.f14171b - a10);
+        this.f14159f = x0Var2.b(a10);
     }
 
     public boolean q() {
-        if (this.f14528d) {
-            if (!this.f14529e || this.f14525a.g() == Long.MIN_VALUE) {
+        if (this.f14157d) {
+            if (!this.f14158e || this.f14154a.g() == Long.MIN_VALUE) {
                 return true;
             }
             return false;
@@ -297,20 +297,20 @@ final class w0 {
 
     public void s(long j10) {
         ne.a.g(r());
-        if (this.f14528d) {
-            this.f14525a.h(y(j10));
+        if (this.f14157d) {
+            this.f14154a.h(y(j10));
         }
     }
 
     public void t() {
         f();
-        u(this.f14535k, this.f14525a);
+        u(this.f14164k, this.f14154a);
     }
 
     public je.r v(float f10, Timeline timeline) {
         com.google.android.exoplayer2.trackselection.g[] gVarArr;
-        je.r j10 = this.f14534j.j(this.f14533i, n(), this.f14530f.f14541a, timeline);
-        for (com.google.android.exoplayer2.trackselection.g gVar : j10.f32011c) {
+        je.r j10 = this.f14163j.j(this.f14162i, n(), this.f14159f.f14170a, timeline);
+        for (com.google.android.exoplayer2.trackselection.g gVar : j10.f31749c) {
             if (gVar != null) {
                 gVar.g(f10);
             }
@@ -319,16 +319,16 @@ final class w0 {
     }
 
     public void w(w0 w0Var) {
-        if (w0Var == this.f14536l) {
+        if (w0Var == this.f14165l) {
             return;
         }
         f();
-        this.f14536l = w0Var;
+        this.f14165l = w0Var;
         h();
     }
 
     public void x(long j10) {
-        this.f14539o = j10;
+        this.f14168o = j10;
     }
 
     public long y(long j10) {

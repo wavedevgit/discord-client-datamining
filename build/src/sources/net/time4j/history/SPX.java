@@ -7,49 +7,49 @@ import java.io.InvalidClassException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
 import java.io.StreamCorruptedException;
-import jt.a0;
+import kt.a0;
 import net.time4j.f0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 final class SPX implements Externalizable {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final int[] f40639i = new int[0];
+    private static final int[] f40502i = new int[0];
     private static final long serialVersionUID = 1;
 
     /* renamed from: d  reason: collision with root package name */
-    private transient Object f40640d;
+    private transient Object f40503d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient int f40641e;
+    private transient int f40504e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f40642a;
+        static final /* synthetic */ int[] f40505a;
 
         static {
-            int[] iArr = new int[ot.b.values().length];
-            f40642a = iArr;
+            int[] iArr = new int[pt.b.values().length];
+            f40505a = iArr;
             try {
-                iArr[ot.b.PROLEPTIC_GREGORIAN.ordinal()] = 1;
+                iArr[pt.b.PROLEPTIC_GREGORIAN.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f40642a[ot.b.PROLEPTIC_JULIAN.ordinal()] = 2;
+                f40505a[pt.b.PROLEPTIC_JULIAN.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f40642a[ot.b.PROLEPTIC_BYZANTINE.ordinal()] = 3;
+                f40505a[pt.b.PROLEPTIC_BYZANTINE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f40642a[ot.b.SWEDEN.ordinal()] = 4;
+                f40505a[pt.b.SWEDEN.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f40642a[ot.b.INTRODUCTION_ON_1582_10_15.ordinal()] = 5;
+                f40505a[pt.b.INTRODUCTION_ON_1582_10_15.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
@@ -58,9 +58,9 @@ final class SPX implements Externalizable {
     public SPX() {
     }
 
-    private static ot.b a(int i10) {
-        ot.b[] values;
-        for (ot.b bVar : ot.b.values()) {
+    private static pt.b a(int i10) {
+        pt.b[] values;
+        for (pt.b bVar : pt.b.values()) {
             if (bVar.a() == i10) {
                 return bVar;
             }
@@ -69,7 +69,7 @@ final class SPX implements Externalizable {
     }
 
     private d b(DataInput dataInput, byte b10) {
-        int i10 = a.f40642a[a(b10 & 15).ordinal()];
+        int i10 = a.f40505a[a(b10 & 15).ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -102,15 +102,15 @@ final class SPX implements Externalizable {
 
     private void d(DataOutput dataOutput) {
         int[] iArr;
-        d dVar = (d) this.f40640d;
-        dataOutput.writeByte(dVar.s().a() | (this.f40641e << 4));
-        if (dVar.s() == ot.b.SINGLE_CUTOVER_DATE) {
-            dataOutput.writeLong(((f) dVar.p().get(0)).f40675a);
+        d dVar = (d) this.f40503d;
+        dataOutput.writeByte(dVar.s().a() | (this.f40504e << 4));
+        if (dVar.s() == pt.b.SINGLE_CUTOVER_DATE) {
+            dataOutput.writeLong(((f) dVar.p().get(0)).f40538a);
         }
         if (dVar.x()) {
             iArr = dVar.l().e();
         } else {
-            iArr = f40639i;
+            iArr = f40502i;
         }
         dataOutput.writeInt(iArr.length);
         for (int i10 : iArr) {
@@ -121,7 +121,7 @@ final class SPX implements Externalizable {
     }
 
     private Object readResolve() {
-        return this.f40640d;
+        return this.f40503d;
     }
 
     @Override // java.io.Externalizable
@@ -153,12 +153,12 @@ final class SPX implements Externalizable {
         } else {
             b10 = b(objectInput, readByte);
         }
-        this.f40640d = b10;
+        this.f40503d = b10;
     }
 
     @Override // java.io.Externalizable
     public void writeExternal(ObjectOutput objectOutput) {
-        int i10 = this.f40641e;
+        int i10 = this.f40504e;
         if (i10 != 1 && i10 != 2 && i10 != 3) {
             throw new InvalidClassException("Unknown serialized type.");
         }
@@ -167,7 +167,7 @@ final class SPX implements Externalizable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public SPX(Object obj, int i10) {
-        this.f40640d = obj;
-        this.f40641e = i10;
+        this.f40503d = obj;
+        this.f40504e = i10;
     }
 }

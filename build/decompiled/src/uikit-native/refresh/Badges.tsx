@@ -120,14 +120,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.BadgeColors = var3;
     var1 = function arg0() {
-        _fun66806: for (var _fun66806_ip = 0;;) switch (_fun66806_ip) {
+        _fun66915: for (var _fun66915_ip = 0;;) switch (_fun66915_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.color;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun66806_ip = 27;
-                    continue _fun66806
+                    _fun66915_ip = 27;
+                    continue _fun66915
                 }
             case 14:
                 var1 = _closure1_slot6;
@@ -181,4 +181,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TextBadge = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3902, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3932, 2]);

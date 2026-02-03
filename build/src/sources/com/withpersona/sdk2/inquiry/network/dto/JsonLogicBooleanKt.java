@@ -1,7 +1,7 @@
 package com.withpersona.sdk2.inquiry.network.dto;
 
 import defpackage.e;
-import ir.l;
+import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -25,7 +25,7 @@ public final class JsonLogicBooleanKt {
 
     public static final e jsonLogicEngine_delegate$lambda$0() {
         e.a aVar = new e.a();
-        i iVar = i.f28324a;
+        i iVar = i.f27971a;
         return aVar.d(iVar.b()).b(iVar.a()).e();
     }
 }

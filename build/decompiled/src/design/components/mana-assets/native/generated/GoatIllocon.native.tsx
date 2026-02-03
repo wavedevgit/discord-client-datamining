@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/GoatIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52507: for (var _fun52507_ip = 0;;) switch (_fun52507_ip) {
+        _fun52613: for (var _fun52613_ip = 0;;) switch (_fun52613_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun52507_ip = 32;
-                    continue _fun52507
+                    _fun52613_ip = 32;
+                    continue _fun52613
                 }
             case 29:
                 var7 = 64;
@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GoatIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4669, 6140, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4699, 6171, 2]);

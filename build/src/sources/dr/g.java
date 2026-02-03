@@ -1,34 +1,15 @@
 package dr;
 
-import android.text.TextPaint;
-import android.text.style.URLSpan;
-import android.view.View;
+import br.q;
+import br.s;
+import cr.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class g extends URLSpan {
-
-    /* renamed from: d  reason: collision with root package name */
-    private final br.c f22334d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final String f22335e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final ar.c f22336i;
-
-    public g(br.c cVar, String str, ar.c cVar2) {
-        super(str);
-        this.f22334d = cVar;
-        this.f22335e = str;
-        this.f22336i = cVar2;
-    }
-
-    @Override // android.text.style.URLSpan, android.text.style.ClickableSpan
-    public void onClick(View view) {
-        this.f22336i.a(view, this.f22335e);
-    }
-
-    @Override // android.text.style.ClickableSpan, android.text.style.CharacterStyle
-    public void updateDrawState(TextPaint textPaint) {
-        this.f22334d.f(textPaint);
+public class g implements s {
+    @Override // br.s
+    public Object a(br.g gVar, q qVar) {
+        if (b.a.BULLET == cr.b.f20737a.c(qVar)) {
+            return new er.b(gVar.e(), ((Integer) cr.b.f20738b.c(qVar)).intValue());
+        }
+        return new er.i(gVar.e(), String.valueOf(cr.b.f20739c.c(qVar)) + ". ");
     }
 }

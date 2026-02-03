@@ -1,37 +1,54 @@
 package cm;
 
-import android.content.Intent;
-import android.os.Build;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.events.Event;
+import com.facebook.react.uimanager.events.RCTEventEmitter;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d {
+public final class d extends Event {
+
+    /* renamed from: b  reason: collision with root package name */
+    public static final a f8340b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f8501a = new d();
+    private final WritableMap f8341a;
 
-    private d() {
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private a() {
+        }
     }
 
-    public final Intent a(f options) {
-        String str;
-        Intrinsics.checkNotNullParameter(options, "options");
-        Intent intent = new Intent(options.a());
-        String[] f10 = options.f();
-        if (f10.length > 1) {
-            intent.putExtra("android.intent.extra.MIME_TYPES", f10);
-            str = options.d();
-        } else {
-            str = f10[0];
-        }
-        intent.setType(str);
-        if (Build.VERSION.SDK_INT >= 26 && options.c() != null) {
-            intent.putExtra("android.provider.extra.INITIAL_URI", options.c());
-        }
-        if (!options.b()) {
-            intent.addCategory("android.intent.category.OPENABLE");
-        }
-        intent.putExtra("android.intent.extra.LOCAL_ONLY", options.e());
-        intent.putExtra("android.intent.extra.ALLOW_MULTIPLE", options.g());
-        return intent;
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public d(int i10, WritableMap mEventData) {
+        super(i10);
+        Intrinsics.checkNotNullParameter(mEventData, "mEventData");
+        this.f8341a = mEventData;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public boolean canCoalesce() {
+        return false;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public void dispatch(RCTEventEmitter rctEventEmitter) {
+        Intrinsics.checkNotNullParameter(rctEventEmitter, "rctEventEmitter");
+        rctEventEmitter.receiveEvent(getViewTag(), internal_getEventNameCompat(), this.f8341a);
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public short getCoalescingKey() {
+        return (short) 0;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public String getEventName() {
+        return "topLoadingProgress";
     }
 }

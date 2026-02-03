@@ -6,7 +6,7 @@ import android.view.animation.ScaleAnimation;
 import com.facebook.react.common.annotations.internal.LegacyArchitectureLogLevel;
 import com.facebook.react.common.annotations.internal.LegacyArchitectureLogger;
 import com.facebook.react.uimanager.IllegalViewOperationException;
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;

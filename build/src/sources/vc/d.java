@@ -7,30 +7,30 @@ import ne.y;
 final class d implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f50906a;
+    public final int f51030a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f50907b;
+    public final int f51031b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f50908c;
+    public final int f51032c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f50909d;
+    public final int f51033d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f50910e;
+    public final int f51034e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final int f50911f;
+    public final int f51035f;
 
     private d(int i10, int i11, int i12, int i13, int i14, int i15) {
-        this.f50906a = i10;
-        this.f50907b = i11;
-        this.f50908c = i12;
-        this.f50909d = i13;
-        this.f50910e = i14;
-        this.f50911f = i15;
+        this.f51030a = i10;
+        this.f51031b = i11;
+        this.f51032c = i12;
+        this.f51033d = i13;
+        this.f51034e = i14;
+        this.f51035f = i15;
     }
 
     public static d c(h0 h0Var) {
@@ -47,15 +47,15 @@ final class d implements a {
     }
 
     public long a() {
-        return w0.X0(this.f50910e, this.f50908c * 1000000, this.f50909d);
+        return w0.X0(this.f51034e, this.f51032c * 1000000, this.f51033d);
     }
 
     public int b() {
-        int i10 = this.f50906a;
+        int i10 = this.f51030a;
         if (i10 != 1935960438) {
             if (i10 != 1935963489) {
                 if (i10 != 1937012852) {
-                    y.i("AviStreamHeaderChunk", "Found unsupported streamType fourCC: " + Integer.toHexString(this.f50906a));
+                    y.i("AviStreamHeaderChunk", "Found unsupported streamType fourCC: " + Integer.toHexString(this.f51030a));
                     return -1;
                 }
                 return 3;

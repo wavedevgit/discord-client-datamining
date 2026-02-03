@@ -7,11 +7,11 @@ import com.facebook.react.uimanager.events.Event;
 public class f extends Event {
 
     /* renamed from: a  reason: collision with root package name */
-    private final double f18432a;
+    private final double f18065a;
 
     public f(int i10, double d10) {
         super(i10);
-        this.f18432a = d10;
+        this.f18065a = d10;
     }
 
     private WritableMap b() {
@@ -22,7 +22,7 @@ public class f extends Event {
     }
 
     public double a() {
-        return this.f18432a;
+        return this.f18065a;
     }
 
     @Override // com.facebook.react.uimanager.events.Event

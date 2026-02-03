@@ -5,18 +5,18 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class a {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final r f31577b;
+    public static final r f31315b;
 
     /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ s f31578a;
+    public final /* synthetic */ s f31316a;
 
     /* JADX WARN: Type inference failed for: r0v1, types: [j$.time.format.r, java.lang.Object] */
     static {
         new ConcurrentHashMap(16, 0.75f, 2);
-        f31577b = new Object();
+        f31315b = new Object();
     }
 
     public a(s sVar) {
-        this.f31578a = sVar;
+        this.f31316a = sVar;
     }
 }

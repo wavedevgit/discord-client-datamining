@@ -46,15 +46,15 @@ public final class StepStyles_GovernmentIdStepBorderRadiusJsonAdapter extends h 
         StyleElements.Measurement measurement2 = null;
         StyleElements.Measurement measurement3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 measurement2 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 measurement3 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
@@ -67,11 +67,11 @@ public final class StepStyles_GovernmentIdStepBorderRadiusJsonAdapter extends h 
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepBorderRadius != null) {
             writer.l();
-            writer.A0("modal");
+            writer.t0("modal");
             this.nullableMeasurementAdapter.toJson(writer, governmentIdStepBorderRadius.getModal());
-            writer.A0("governmentIdCaptureFeedBox");
+            writer.t0("governmentIdCaptureFeedBox");
             this.nullableMeasurementAdapter.toJson(writer, governmentIdStepBorderRadius.getGovernmentIdCaptureFeedBox());
-            writer.A0("governmentIdReviewImageBox");
+            writer.t0("governmentIdReviewImageBox");
             this.nullableMeasurementAdapter.toJson(writer, governmentIdStepBorderRadius.getGovernmentIdReviewImageBox());
             writer.E();
             return;

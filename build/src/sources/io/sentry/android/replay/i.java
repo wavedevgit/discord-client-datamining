@@ -39,53 +39,53 @@ import kotlin.text.StringsKt;
 public final class i implements Closeable {
 
     /* renamed from: w  reason: collision with root package name */
-    public static final a f29547w = new a(null);
+    public static final a f29113w = new a(null);
 
     /* renamed from: x  reason: collision with root package name */
-    public static final int f29548x = 8;
+    public static final int f29114x = 8;
 
     /* renamed from: d  reason: collision with root package name */
-    private final k7 f29549d;
+    private final k7 f29115d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final io.sentry.protocol.x f29550e;
+    private final io.sentry.protocol.x f29116e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final AtomicBoolean f29551i;
+    private final AtomicBoolean f29117i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final io.sentry.util.a f29552o;
+    private final io.sentry.util.a f29118o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final io.sentry.util.a f29553p;
+    private final io.sentry.util.a f29119p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final io.sentry.util.a f29554q;
+    private final io.sentry.util.a f29120q;
 
     /* renamed from: r  reason: collision with root package name */
-    private io.sentry.android.replay.video.c f29555r;
+    private io.sentry.android.replay.video.c f29121r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Lazy f29556s;
+    private final Lazy f29122s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final List f29557t;
+    private final List f29123t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final LinkedHashMap f29558u;
+    private final LinkedHashMap f29124u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Lazy f29559v;
+    private final Lazy f29125v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: io.sentry.android.replay.i$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0391a implements Comparator {
+        public static final class C0394a implements Comparator {
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
-                return lr.a.d(Long.valueOf(((j) obj).c()), Long.valueOf(((j) obj2).c()));
+                return mr.a.d(Long.valueOf(((j) obj).c()), Long.valueOf(((j) obj2).c()));
             }
         }
 
@@ -93,7 +93,7 @@ public final class i implements Closeable {
         public static final class b implements Comparator {
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
-                return lr.a.d(Long.valueOf(((io.sentry.rrweb.b) obj).e()), Long.valueOf(((io.sentry.rrweb.b) obj2).e()));
+                return mr.a.d(Long.valueOf(((io.sentry.rrweb.b) obj).e()), Long.valueOf(((io.sentry.rrweb.b) obj2).e()));
             }
         }
 
@@ -106,7 +106,7 @@ public final class i implements Closeable {
             Intrinsics.checkNotNull(str);
             if (StringsKt.z(str, ".jpg", false, 2, null)) {
                 File file2 = new File(file, str);
-                Long t10 = StringsKt.t(tr.j.t(file2));
+                Long t10 = StringsKt.t(ur.j.t(file2));
                 if (t10 != null) {
                     i.x(iVar, file2, t10.longValue(), null, 4, null);
                 }
@@ -157,10 +157,10 @@ public final class i implements Closeable {
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final File invoke() {
-            if (i.this.D0() == null) {
+            if (i.this.E0() == null) {
                 return null;
             }
-            File file = new File(i.this.D0(), ".ongoing_segment");
+            File file = new File(i.this.E0(), ".ongoing_segment");
             if (!file.exists()) {
                 file.createNewFile();
             }
@@ -172,7 +172,7 @@ public final class i implements Closeable {
     static final class c extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f29561d = new c();
+        public static final c f29127d = new c();
 
         c() {
             super(1);
@@ -195,7 +195,7 @@ public final class i implements Closeable {
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final File invoke() {
-            return i.f29547w.d(i.this.f29549d, i.this.f29550e);
+            return i.f29113w.d(i.this.f29115d, i.this.f29116e);
         }
     }
 
@@ -204,20 +204,20 @@ public final class i implements Closeable {
     public static final class e extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ long f29563d;
+        final /* synthetic */ long f29129d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ i f29564e;
+        final /* synthetic */ i f29130e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f29565i;
+        final /* synthetic */ Ref.ObjectRef f29131i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(long j10, i iVar, Ref.ObjectRef objectRef) {
             super(1);
-            this.f29563d = j10;
-            this.f29564e = iVar;
-            this.f29565i = objectRef;
+            this.f29129d = j10;
+            this.f29130e = iVar;
+            this.f29131i = objectRef;
         }
 
         /* JADX WARN: Type inference failed for: r5v2, types: [T, java.lang.String] */
@@ -225,11 +225,11 @@ public final class i implements Closeable {
         /* renamed from: a */
         public final Boolean invoke(j it) {
             Intrinsics.checkNotNullParameter(it, "it");
-            if (it.c() < this.f29563d) {
-                this.f29564e.L(it.b());
+            if (it.c() < this.f29129d) {
+                this.f29130e.L(it.b());
                 return Boolean.TRUE;
             }
-            Ref.ObjectRef objectRef = this.f29565i;
+            Ref.ObjectRef objectRef = this.f29131i;
             if (objectRef.element == 0) {
                 objectRef.element = it.a();
             }
@@ -240,28 +240,28 @@ public final class i implements Closeable {
     public i(k7 options, io.sentry.protocol.x replayId) {
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(replayId, "replayId");
-        this.f29549d = options;
-        this.f29550e = replayId;
-        this.f29551i = new AtomicBoolean(false);
-        this.f29552o = new io.sentry.util.a();
-        this.f29553p = new io.sentry.util.a();
-        this.f29554q = new io.sentry.util.a();
-        this.f29556s = ir.l.b(new d());
-        this.f29557t = new ArrayList();
-        this.f29558u = new LinkedHashMap();
-        this.f29559v = ir.l.b(new b());
+        this.f29115d = options;
+        this.f29116e = replayId;
+        this.f29117i = new AtomicBoolean(false);
+        this.f29118o = new io.sentry.util.a();
+        this.f29119p = new io.sentry.util.a();
+        this.f29120q = new io.sentry.util.a();
+        this.f29122s = jr.l.b(new d());
+        this.f29123t = new ArrayList();
+        this.f29124u = new LinkedHashMap();
+        this.f29125v = jr.l.b(new b());
     }
 
     public static /* synthetic */ io.sentry.android.replay.c F(i iVar, long j10, long j11, int i10, int i11, int i12, int i13, int i14, File file, int i15, Object obj) {
         int i16;
         File file2;
         if ((i15 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-            File D0 = iVar.D0();
+            File E0 = iVar.E0();
             StringBuilder sb2 = new StringBuilder();
             i16 = i10;
             sb2.append(i16);
             sb2.append(".mp4");
-            file2 = new File(D0, sb2.toString());
+            file2 = new File(E0, sb2.toString());
         } else {
             i16 = i10;
             file2 = file;
@@ -273,10 +273,10 @@ public final class i implements Closeable {
     public final void L(File file) {
         try {
             if (!file.delete()) {
-                this.f29549d.getLogger().c(SentryLevel.ERROR, "Failed to delete replay frame: %s", file.getAbsolutePath());
+                this.f29115d.getLogger().c(SentryLevel.ERROR, "Failed to delete replay frame: %s", file.getAbsolutePath());
             }
         } catch (Throwable th2) {
-            this.f29549d.getLogger().a(SentryLevel.ERROR, th2, "Failed to delete replay frame: %s", file.getAbsolutePath());
+            this.f29115d.getLogger().a(SentryLevel.ERROR, th2, "Failed to delete replay frame: %s", file.getAbsolutePath());
         }
     }
 
@@ -286,18 +286,18 @@ public final class i implements Closeable {
         }
         try {
             Bitmap decodeFile = BitmapFactory.decodeFile(jVar.b().getAbsolutePath());
-            a1 a10 = this.f29552o.a();
-            io.sentry.android.replay.video.c cVar = this.f29555r;
+            a1 a10 = this.f29118o.a();
+            io.sentry.android.replay.video.c cVar = this.f29121r;
             if (cVar != null) {
                 Intrinsics.checkNotNull(decodeFile);
                 cVar.b(decodeFile);
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
-            ur.a.a(a10, null);
+            vr.a.a(a10, null);
             decodeFile.recycle();
             return true;
         } catch (Throwable th2) {
-            this.f29549d.getLogger().b(SentryLevel.WARNING, "Unable to decode bitmap and encode it into a video, skipping frame", th2);
+            this.f29115d.getLogger().b(SentryLevel.WARNING, "Unable to decode bitmap and encode it into a video, skipping frame", th2);
             return false;
         }
     }
@@ -309,40 +309,32 @@ public final class i implements Closeable {
         iVar.n(file, j10, str);
     }
 
-    public final List A0() {
-        return this.f29557t;
-    }
-
     public final void B(Bitmap bitmap, long j10, String str) {
         Intrinsics.checkNotNullParameter(bitmap, "bitmap");
-        if (D0() != null && !bitmap.isRecycled()) {
-            File D0 = D0();
-            if (D0 != null) {
-                D0.mkdirs();
+        if (E0() != null && !bitmap.isRecycled()) {
+            File E0 = E0();
+            if (E0 != null) {
+                E0.mkdirs();
             }
-            File D02 = D0();
-            File file = new File(D02, j10 + ".jpg");
+            File E02 = E0();
+            File file = new File(E02, j10 + ".jpg");
             file.createNewFile();
             synchronized (bitmap) {
                 if (bitmap.isRecycled()) {
                     return;
                 }
                 FileOutputStream fileOutputStream = new FileOutputStream(file);
-                bitmap.compress(Bitmap.CompressFormat.JPEG, this.f29549d.getSessionReplay().m().screenshotQuality, fileOutputStream);
+                bitmap.compress(Bitmap.CompressFormat.JPEG, this.f29115d.getSessionReplay().m().screenshotQuality, fileOutputStream);
                 fileOutputStream.flush();
-                Unit unit = Unit.f33298a;
-                tr.c.a(fileOutputStream, null);
+                Unit unit = Unit.f33074a;
+                ur.c.a(fileOutputStream, null);
                 n(file, j10, str);
             }
         }
     }
 
-    public final File C0() {
-        return (File) this.f29559v.getValue();
-    }
-
     public final File D0() {
-        return (File) this.f29556s.getValue();
+        return (File) this.f29125v.getValue();
     }
 
     public final io.sentry.android.replay.c E(long j10, long j11, int i10, int i11, int i12, int i13, int i14, File videoFile) {
@@ -354,26 +346,26 @@ public final class i implements Closeable {
         if (videoFile.exists() && videoFile.length() > 0) {
             videoFile.delete();
         }
-        a1 a10 = this.f29554q.a();
+        a1 a10 = this.f29120q.a();
         try {
-            if (this.f29557t.isEmpty()) {
+            if (this.f29123t.isEmpty()) {
                 arrayList = new ArrayList();
             } else {
-                arrayList = CollectionsKt.j1(this.f29557t);
+                arrayList = CollectionsKt.j1(this.f29123t);
             }
-            ur.a.a(a10, null);
+            vr.a.a(a10, null);
             if (arrayList.isEmpty()) {
-                this.f29549d.getLogger().c(SentryLevel.DEBUG, "No captured frames, skipping generating a video segment", new Object[0]);
+                this.f29115d.getLogger().c(SentryLevel.DEBUG, "No captured frames, skipping generating a video segment", new Object[0]);
                 return null;
             }
-            a1 a11 = this.f29552o.a();
+            a1 a11 = this.f29118o.a();
             try {
                 a1Var = a11;
                 try {
-                    io.sentry.android.replay.video.c cVar = new io.sentry.android.replay.video.c(this.f29549d, new io.sentry.android.replay.video.a(videoFile, i12, i11, i13, i14, null, 32, null), null, 4, null);
+                    io.sentry.android.replay.video.c cVar = new io.sentry.android.replay.video.c(this.f29115d, new io.sentry.android.replay.video.a(videoFile, i12, i11, i13, i14, null, 32, null), null, 4, null);
                     cVar.j();
-                    ur.a.a(a1Var, null);
-                    this.f29555r = cVar;
+                    vr.a.a(a1Var, null);
+                    this.f29121r = cVar;
                     long j13 = 1000 / i13;
                     Object firstOrNull = CollectionsKt.firstOrNull(arrayList);
                     long j14 = j11 + j10;
@@ -409,10 +401,10 @@ public final class i implements Closeable {
                                 obj2 = obj;
                             } else if (obj != null) {
                                 L(((j) obj).b());
-                                a1 a12 = this.f29554q.a();
+                                a1 a12 = this.f29120q.a();
                                 try {
-                                    TypeIntrinsics.asMutableCollection(this.f29557t).remove(obj);
-                                    ur.a.a(a12, null);
+                                    TypeIntrinsics.asMutableCollection(this.f29123t).remove(obj);
+                                    vr.a.a(a12, null);
                                     arrayList.remove(obj);
                                     obj2 = null;
                                 } finally {
@@ -429,26 +421,26 @@ public final class i implements Closeable {
                         i15 = 0;
                     }
                     if (i15 == 0) {
-                        this.f29549d.getLogger().c(SentryLevel.DEBUG, "Generated a video with no frames, not capturing a replay segment", new Object[0]);
+                        this.f29115d.getLogger().c(SentryLevel.DEBUG, "Generated a video with no frames, not capturing a replay segment", new Object[0]);
                         L(videoFile);
                         return null;
                     }
-                    a1 a13 = this.f29552o.a();
+                    a1 a13 = this.f29118o.a();
                     try {
-                        io.sentry.android.replay.video.c cVar2 = this.f29555r;
+                        io.sentry.android.replay.video.c cVar2 = this.f29121r;
                         if (cVar2 != null) {
                             cVar2.i();
                         }
-                        io.sentry.android.replay.video.c cVar3 = this.f29555r;
+                        io.sentry.android.replay.video.c cVar3 = this.f29121r;
                         if (cVar3 != null) {
                             j12 = cVar3.c();
                         } else {
                             j12 = 0;
                         }
-                        this.f29555r = null;
-                        Unit unit = Unit.f33298a;
-                        ur.a.a(a13, null);
-                        F0(j14);
+                        this.f29121r = null;
+                        Unit unit = Unit.f33074a;
+                        vr.a.a(a13, null);
+                        G0(j14);
                         return new io.sentry.android.replay.c(videoFile, i15, j12);
                     } finally {
                     }
@@ -458,7 +450,7 @@ public final class i implements Closeable {
                     try {
                         throw th3;
                     } catch (Throwable th4) {
-                        ur.a.a(a1Var, th3);
+                        vr.a.a(a1Var, th3);
                         throw th4;
                     }
                 }
@@ -474,54 +466,58 @@ public final class i implements Closeable {
         }
     }
 
-    public final void E0(String key, String str) {
-        File C0;
-        File C02;
+    public final File E0() {
+        return (File) this.f29122s.getValue();
+    }
+
+    public final void F0(String key, String str) {
+        File D0;
+        File D02;
         Intrinsics.checkNotNullParameter(key, "key");
-        a1 a10 = this.f29553p.a();
+        a1 a10 = this.f29119p.a();
         try {
-            if (this.f29551i.get()) {
-                ur.a.a(a10, null);
+            if (this.f29117i.get()) {
+                vr.a.a(a10, null);
                 return;
             }
-            File C03 = C0();
-            if ((C03 == null || !C03.exists()) && (C0 = C0()) != null) {
-                C0.createNewFile();
+            File D03 = D0();
+            if ((D03 == null || !D03.exists()) && (D0 = D0()) != null) {
+                D0.createNewFile();
             }
-            if (this.f29558u.isEmpty() && (C02 = C0()) != null) {
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(C02), Charsets.UTF_8), 8192);
-                Sequence<String> e10 = tr.r.e(bufferedReader);
-                LinkedHashMap linkedHashMap = this.f29558u;
+            if (this.f29124u.isEmpty() && (D02 = D0()) != null) {
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(D02), Charsets.UTF_8), 8192);
+                Sequence<String> e10 = ur.r.e(bufferedReader);
+                LinkedHashMap linkedHashMap = this.f29124u;
                 for (String str2 : e10) {
                     List split$default = StringsKt.split$default(str2, new String[]{"="}, false, 2, 2, null);
-                    Pair a11 = ir.v.a((String) split$default.get(0), (String) split$default.get(1));
+                    Pair a11 = jr.v.a((String) split$default.get(0), (String) split$default.get(1));
                     linkedHashMap.put(a11.c(), a11.d());
                 }
-                tr.c.a(bufferedReader, null);
+                ur.c.a(bufferedReader, null);
             }
             if (str == null) {
-                this.f29558u.remove(key);
+                this.f29124u.remove(key);
             } else {
-                this.f29558u.put(key, str);
+                this.f29124u.put(key, str);
             }
-            File C04 = C0();
-            if (C04 != null) {
-                Set entrySet = this.f29558u.entrySet();
+            File D04 = D0();
+            if (D04 != null) {
+                Set entrySet = this.f29124u.entrySet();
                 Intrinsics.checkNotNullExpressionValue(entrySet, "<get-entries>(...)");
-                tr.j.l(C04, CollectionsKt.x0(entrySet, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, c.f29561d, 30, null), null, 2, null);
-                Unit unit = Unit.f33298a;
+                ur.j.l(D04, CollectionsKt.x0(entrySet, ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, c.f29127d, 30, null), null, 2, null);
+                Unit unit = Unit.f33074a;
             }
-            ur.a.a(a10, null);
+            vr.a.a(a10, null);
         } finally {
         }
     }
 
-    public final String F0(long j10) {
+    public final String G0(long j10) {
         Ref.ObjectRef objectRef = new Ref.ObjectRef();
-        a1 a10 = this.f29554q.a();
+        a1 a10 = this.f29120q.a();
         try {
-            CollectionsKt.J(this.f29557t, new e(j10, this, objectRef));
-            ur.a.a(a10, null);
+            CollectionsKt.J(this.f29123t, new e(j10, this, objectRef));
+            vr.a.a(a10, null);
             return (String) objectRef.element;
         } finally {
         }
@@ -529,21 +525,21 @@ public final class i implements Closeable {
 
     public final Long V() {
         Long l10;
-        a1 a10 = this.f29554q.a();
+        a1 a10 = this.f29120q.a();
         try {
-            j jVar = (j) CollectionsKt.firstOrNull(this.f29557t);
+            j jVar = (j) CollectionsKt.firstOrNull(this.f29123t);
             if (jVar != null) {
                 l10 = Long.valueOf(jVar.c());
             } else {
                 l10 = null;
             }
-            ur.a.a(a10, null);
+            vr.a.a(a10, null);
             return l10;
         } catch (Throwable th2) {
             try {
                 throw th2;
             } catch (Throwable th3) {
-                ur.a.a(a10, th2);
+                vr.a.a(a10, th2);
                 throw th3;
             }
         }
@@ -551,16 +547,16 @@ public final class i implements Closeable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        a1 a10 = this.f29552o.a();
+        a1 a10 = this.f29118o.a();
         try {
-            io.sentry.android.replay.video.c cVar = this.f29555r;
+            io.sentry.android.replay.video.c cVar = this.f29121r;
             if (cVar != null) {
                 cVar.i();
             }
-            this.f29555r = null;
-            Unit unit = Unit.f33298a;
-            ur.a.a(a10, null);
-            this.f29551i.set(true);
+            this.f29121r = null;
+            Unit unit = Unit.f33074a;
+            vr.a.a(a10, null);
+            this.f29117i.set(true);
         } finally {
         }
     }
@@ -568,12 +564,16 @@ public final class i implements Closeable {
     public final void n(File screenshot, long j10, String str) {
         Intrinsics.checkNotNullParameter(screenshot, "screenshot");
         j jVar = new j(screenshot, j10, str);
-        a1 a10 = this.f29554q.a();
+        a1 a10 = this.f29120q.a();
         try {
-            this.f29557t.add(jVar);
-            Unit unit = Unit.f33298a;
-            ur.a.a(a10, null);
+            this.f29123t.add(jVar);
+            Unit unit = Unit.f33074a;
+            vr.a.a(a10, null);
         } finally {
         }
+    }
+
+    public final List t0() {
+        return this.f29123t;
     }
 }

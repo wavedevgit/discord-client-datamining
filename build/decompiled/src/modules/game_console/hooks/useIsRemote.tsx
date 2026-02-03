@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var0;
         var0 = function() { // Environment: var0
-            _fun55487: for (var _fun55487_ip = 0;;) switch (_fun55487_ip) {
+            _fun55593: for (var _fun55593_ip = 0;;) switch (_fun55593_ip) {
                 case 0:
                     var2 = _closure1_slot2;
                     var0 = var2.getRemoteSessionId;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = null;
                     var0 = var2 != var0;
                     if (var0) {
-                        _fun55487_ip = 44;
-                        continue _fun55487
+                        _fun55593_ip = 44;
+                        continue _fun55593
                     }
                 case 26:
                     var3 = _closure1_slot2;
@@ -63,4 +63,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3480, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3510, 566, 2]);

@@ -201,7 +201,7 @@ public final class ViewManagerPropertyUpdater {
         return hashMap;
     }
 
-    @ir.c
+    @jr.c
     public static final <T extends ViewManagerDelegate<V>, V extends View> void updateProps(@NotNull T delegate, @NotNull V view, @NotNull ReactStylesDiffMap props) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
         Intrinsics.checkNotNullParameter(view, "view");
@@ -214,7 +214,7 @@ public final class ViewManagerPropertyUpdater {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @ir.c
+    @jr.c
     public static final <V extends View> void updateProps(@NotNull ViewManager<V, ?> manager, @NotNull V view, @NotNull ReactStylesDiffMap props) {
         Intrinsics.checkNotNullParameter(manager, "manager");
         Intrinsics.checkNotNullParameter(view, "view");
@@ -228,7 +228,7 @@ public final class ViewManagerPropertyUpdater {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @ir.c
+    @jr.c
     public static final <T extends ReactShadowNode<T>> void updateProps(@NotNull T node, @NotNull ReactStylesDiffMap props) {
         Intrinsics.checkNotNullParameter(node, "node");
         Intrinsics.checkNotNullParameter(props, "props");

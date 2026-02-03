@@ -2,44 +2,52 @@ package uu;
 
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface c {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
-        public static Double a(c cVar, Object obj, Function1 operation) {
-            List list;
-            List list2;
-            Integer num;
-            Integer num2;
-            List l02;
-            Intrinsics.checkNotNullParameter(operation, "operation");
-            if (obj != null) {
-                list = pv.a.b(obj);
+        private static Object a(c cVar, Object obj) {
+            String str;
+            String obj2;
+            Object intOrNull;
+            Object obj3 = null;
+            if (obj instanceof String) {
+                str = (String) obj;
             } else {
-                list = null;
+                str = null;
             }
-            if (list != null) {
-                list2 = CollectionsKt.l0(list);
-            } else {
-                list2 = null;
+            if (str != null && (intOrNull = StringsKt.toIntOrNull(str)) != null) {
+                obj3 = intOrNull;
+            } else if (str != null) {
+                obj3 = StringsKt.p(str);
             }
-            if (list2 != null) {
-                num = Integer.valueOf(list2.size());
-            } else {
-                num = null;
+            if (obj3 != null && (obj2 = obj3.toString()) != null) {
+                return obj2;
             }
-            if (list != null) {
-                num2 = Integer.valueOf(list.size());
-            } else {
-                num2 = null;
+            return obj;
+        }
+
+        private static Object b(c cVar, Object obj) {
+            if (obj instanceof List) {
+                List list = (List) obj;
+                if (list.size() == 1) {
+                    return b(cVar, CollectionsKt.firstOrNull(list));
+                }
             }
-            if (!Intrinsics.areEqual(num, num2) || list == null || (l02 = CollectionsKt.l0(list)) == null) {
-                return null;
+            return obj;
+        }
+
+        public static Object c(c cVar, Object obj) {
+            Object b10 = b(cVar, obj);
+            if (!Intrinsics.areEqual(b10, obj)) {
+                return new b(a(cVar, b10));
             }
-            return (Double) operation.invoke(l02);
+            return a(cVar, obj);
         }
     }
+
+    Object e(Object obj);
 }

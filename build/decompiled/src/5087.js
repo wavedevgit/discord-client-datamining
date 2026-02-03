@@ -1,51 +1,29 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = module;
-    var1 = function arg0() {
-        _fun45584: for (var _fun45584_ip = 0;;) switch (_fun45584_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = global;
-                var1 = var0.Symbol;
-                var3 = 'undefined';
-                var1 = typeof var1;
-                if (!(var3 !== var1)) {
-                    _fun45584_ip = 43;
-                    continue _fun45584
-                }
-            case 21:
-                var1 = var0.Symbol;
-                var1 = var1.iterator;
-                var3 = var2[var1];
-                var1 = null;
-                if (!(var1 == var3)) {
-                    _fun45584_ip = 59;
-                    continue _fun45584
-                }
-            case 43:
-                var3 = var2["@@iterator"];
-                var1 = null;
-                if (!(var1 == var3)) {
-                    _fun45584_ip = 59;
-                    continue _fun45584
-                }
-            case 55:
-                var1 = undefined;
-                return var1;
-            case 59:
-                var1 = var0.Array;
-                var0 = var1.from;
-                var0 = var0.bind(var1)(var2);
-                return var0;
-        }
-    };
-    var0.exports = var1;
-    var2 = var0.exports;
-    var1 = true;
-    var2.__esModule = var1;
-    var1 = var0.exports;
-    var0 = var0.exports;
-    var1.default = var0;
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var1 = dependencyMap;
+    var0 = 0;
+    var3 = var1[var0];
+    var1 = require;
     var0 = undefined;
+    var1 = var1.bind(var0)(var3);
+    var4 = var1.StyleSheet;
+    var3 = var4.create;
+    var1 = {};
+    var5 = {
+        'flex': 1,
+        'overflow': 'visible'
+    };
+    var1.container = var5;
+    var1 = var3.bind(var4)(var1);
+    var2.styles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

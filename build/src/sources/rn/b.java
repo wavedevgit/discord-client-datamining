@@ -1,91 +1,62 @@
 package rn;
 
-import android.content.Context;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
-import kotlin.jvm.internal.Intrinsics;
-import rn.a;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements rn.a {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final SensorManager f48381a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final Sensor f48382b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private long f48383c;
+public final class b {
 
     /* renamed from: d  reason: collision with root package name */
-    private double f48384d;
+    public static final b f48563d = new b("FaceNotCentered", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f48385e;
+    public static final b f48564e = new b("FaceTooClose", 1);
 
-    /* renamed from: f  reason: collision with root package name */
-    private final a f48386f;
+    /* renamed from: i  reason: collision with root package name */
+    public static final b f48565i = new b("FaceTooFar", 2);
 
-    public b(Context context) {
-        Intrinsics.checkNotNullParameter(context, "context");
-        Object systemService = context.getSystemService("sensor");
-        Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.hardware.SensorManager");
-        SensorManager sensorManager = (SensorManager) systemService;
-        this.f48381a = sensorManager;
-        this.f48382b = sensorManager.getDefaultSensor(4);
-        this.f48386f = new a();
+    /* renamed from: o  reason: collision with root package name */
+    public static final b f48566o = new b("MultipleFaces", 3);
+
+    /* renamed from: p  reason: collision with root package name */
+    public static final b f48567p = new b("IncompleteFace", 4);
+
+    /* renamed from: q  reason: collision with root package name */
+    public static final b f48568q = new b("FaceNotFound", 5);
+
+    /* renamed from: r  reason: collision with root package name */
+    public static final b f48569r = new b("IncorrectPose", 6);
+
+    /* renamed from: s  reason: collision with root package name */
+    public static final b f48570s = new b("FaceDetectionUnsupported", 7);
+
+    /* renamed from: t  reason: collision with root package name */
+    public static final b f48571t = new b("Other", 8);
+
+    /* renamed from: u  reason: collision with root package name */
+    private static final /* synthetic */ b[] f48572u;
+
+    /* renamed from: v  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f48573v;
+
+    static {
+        b[] a10 = a();
+        f48572u = a10;
+        f48573v = qr.a.a(a10);
     }
 
-    @Override // rn.a
-    public a.C0590a a() {
-        double d10;
-        long j10 = this.f48383c;
-        if (j10 == 0) {
-            d10 = 0.0d;
-        } else {
-            d10 = this.f48384d / j10;
-        }
-        return new a.C0590a(d10);
+    private b(String str, int i10) {
     }
 
-    @Override // rn.a
-    public void b() {
-        this.f48381a.unregisterListener(this.f48386f);
+    private static final /* synthetic */ b[] a() {
+        return new b[]{f48563d, f48564e, f48565i, f48566o, f48567p, f48568q, f48569r, f48570s, f48571t};
     }
 
-    @Override // rn.a
-    public void c() {
-        if (!this.f48385e) {
-            this.f48385e = true;
-            Sensor sensor = this.f48382b;
-            if (sensor != null) {
-                this.f48381a.registerListener(this.f48386f, sensor, 100000);
-            }
-        }
+    public static b valueOf(String str) {
+        return (b) Enum.valueOf(b.class, str);
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements SensorEventListener {
-        a() {
-        }
-
-        @Override // android.hardware.SensorEventListener
-        public void onSensorChanged(SensorEvent sensorEvent) {
-            float[] fArr;
-            if (sensorEvent != null && (fArr = sensorEvent.values) != null && fArr.length >= 3) {
-                float f10 = fArr[0];
-                float f11 = fArr[1];
-                float f12 = fArr[2];
-                b bVar = b.this;
-                bVar.f48384d = ((bVar.f48384d * b.this.f48383c) + (((Math.abs(f10) + Math.abs(f11)) + Math.abs(f12)) / 3.0d)) / (b.this.f48383c + 1);
-                b.this.f48383c++;
-            }
-        }
-
-        @Override // android.hardware.SensorEventListener
-        public void onAccuracyChanged(Sensor sensor, int i10) {
-        }
+    public static b[] values() {
+        return (b[]) f48572u.clone();
     }
 }

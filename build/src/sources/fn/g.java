@@ -1,41 +1,28 @@
 package fn;
 
-import com.facebook.react.bridge.Arguments;
-import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.events.Event;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import com.facebook.react.uimanager.PointerEvents;
+import com.facebook.react.uimanager.ReactPointerEventsView;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g extends Event {
+public final class g implements ReactPointerEventsView {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f25273a = new a(null);
+    /* renamed from: d  reason: collision with root package name */
+    private f f24505d;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    public g(f fVar) {
+        this.f24505d = fVar;
+    }
+
+    public final void a(f fVar) {
+        this.f24505d = fVar;
+    }
+
+    @Override // com.facebook.react.uimanager.ReactPointerEventsView
+    public PointerEvents getPointerEvents() {
+        PointerEvents pointerEvents;
+        f fVar = this.f24505d;
+        if (fVar != null && (pointerEvents = fVar.getPointerEvents()) != null) {
+            return pointerEvents;
         }
-
-        private a() {
-        }
-    }
-
-    public g(int i10, int i11) {
-        super(i10, i11);
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public short getCoalescingKey() {
-        return (short) 0;
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    protected WritableMap getEventData() {
-        return Arguments.createMap();
-    }
-
-    @Override // com.facebook.react.uimanager.events.Event
-    public String getEventName() {
-        return "topDisappear";
+        return PointerEvents.NONE;
     }
 }

@@ -9,13 +9,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b extends Event {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f19417c = new a(null);
+    public static final a f19050c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.th3rdwave.safeareacontext.a f19418a;
+    private final com.th3rdwave.safeareacontext.a f19051a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f19419b;
+    private final c f19052b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -32,16 +32,16 @@ public final class b extends Event {
         super(i10, i11);
         Intrinsics.checkNotNullParameter(mInsets, "mInsets");
         Intrinsics.checkNotNullParameter(mFrame, "mFrame");
-        this.f19418a = mInsets;
-        this.f19419b = mFrame;
+        this.f19051a = mInsets;
+        this.f19052b = mFrame;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
-        createMap.putMap("insets", q.b(this.f19418a));
-        createMap.putMap("frame", q.d(this.f19419b));
+        createMap.putMap("insets", q.b(this.f19051a));
+        createMap.putMap("frame", q.d(this.f19052b));
         return createMap;
     }
 

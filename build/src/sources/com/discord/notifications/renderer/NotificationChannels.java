@@ -12,12 +12,12 @@ import com.discord.notifications.renderer.NotificationChannels;
 import com.discord.notifications.renderer.utils.NotificationManagerUtilsKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.react.devsupport.StackTraceHelper;
-import ir.v;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -52,7 +52,7 @@ public final class NotificationChannels {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f10650id;
+        private final String f10279id;
         private final int resource;
         public static final CallRingtone Halloween = new CallRingtone("Halloween", 0, "halloween", com.discord.sounds.R.raw.halloween_call_ringing);
         public static final CallRingtone Default = new CallRingtone("Default", 1, "default", com.discord.sounds.R.raw.call_ringing);
@@ -84,12 +84,12 @@ public final class NotificationChannels {
         static {
             CallRingtone[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
             Companion = new Companion(null);
         }
 
         private CallRingtone(String str, int i10, String str2, int i11) {
-            this.f10650id = str2;
+            this.f10279id = str2;
             this.resource = i11;
         }
 
@@ -108,7 +108,7 @@ public final class NotificationChannels {
 
         @NotNull
         public final String getId() {
-            return this.f10650id;
+            return this.f10279id;
         }
 
         public final int getResource() {
@@ -131,7 +131,7 @@ public final class NotificationChannels {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f10652id;
+        private final String f10281id;
         public static final ChannelGroup Realtime = new ChannelGroup("Realtime", 0, "realtime", "111_realtime");
         public static final ChannelGroup Social = new ChannelGroup("Social", 1, "social", "222_social");
         public static final ChannelGroup Server = new ChannelGroup("Server", 2, "server", "333_server");
@@ -177,12 +177,12 @@ public final class NotificationChannels {
         static {
             ChannelGroup[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
             Companion = new Companion(null);
         }
 
         private ChannelGroup(String str, int i10, String str2, String str3) {
-            this.f10652id = str2;
+            this.f10281id = str2;
             this.groupId = str3;
         }
 
@@ -206,7 +206,7 @@ public final class NotificationChannels {
 
         @NotNull
         public final String getId() {
-            return this.f10652id;
+            return this.f10281id;
         }
     }
 
@@ -357,7 +357,7 @@ public final class NotificationChannels {
         } else {
             configureCallChannel$default(INSTANCE, context, notificationChannelCompat, builder, null, 8, null);
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final NotificationChannelCompat migrateOrCreateNotificationChannel(Context context, Category category, int i10, Map<String, String> map, Function2<? super NotificationChannelCompat, ? super NotificationChannelCompat.Builder, Unit> function2) {
@@ -422,7 +422,7 @@ public final class NotificationChannels {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit migrateOrCreateNotificationChannel$lambda$8(NotificationChannelCompat notificationChannelCompat, NotificationChannelCompat.Builder builder) {
         Intrinsics.checkNotNullParameter(builder, "<unused var>");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @NotNull
@@ -620,7 +620,7 @@ public final class NotificationChannels {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f10651id;
+        private final String f10280id;
         private final int importance;
         private final String legacyId;
 
@@ -774,12 +774,12 @@ public final class NotificationChannels {
             OtherHighPriority = new Category("OtherHighPriority", 16, "otherHighPriority", 4, channelGroup4, "GeneralHigh");
             Category[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
             Companion = new Companion(null);
         }
 
         private Category(String str, int i10, String str2, int i11, ChannelGroup channelGroup, String str3) {
-            this.f10651id = str2;
+            this.f10280id = str2;
             this.importance = i11;
             this.group = channelGroup;
             this.legacyId = str3;
@@ -805,7 +805,7 @@ public final class NotificationChannels {
 
         @NotNull
         public final String getId() {
-            return this.f10651id;
+            return this.f10280id;
         }
 
         public final int getImportance() {

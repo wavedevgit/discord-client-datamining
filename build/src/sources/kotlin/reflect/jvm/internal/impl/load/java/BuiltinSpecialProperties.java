@@ -1,13 +1,13 @@
 package kotlin.reflect.jvm.internal.impl.load.java;
 
 import com.facebook.react.devsupport.StackTraceHelper;
-import ir.v;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import jr.v;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.o0;
@@ -27,19 +27,19 @@ public final class BuiltinSpecialProperties {
     public static final BuiltinSpecialProperties INSTANCE = new BuiltinSpecialProperties();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f33977a;
+    private static final Map f33753a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f33978b;
+    private static final Map f33754b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Set f33979c;
+    private static final Set f33755c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Set f33980d;
+    private static final Set f33756d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Set f33981e;
+    private static final Set f33757e;
 
     static {
         FqName b10;
@@ -77,7 +77,7 @@ public final class BuiltinSpecialProperties {
         Pair a27 = v.a(a16, Name.identifier("length"));
         a17 = BuiltinSpecialPropertiesKt.a(StandardNames.FqNames.atomicArray, "size");
         Map m10 = o0.m(a18, a19, a20, a21, a22, a23, a24, a25, a26, a27, v.a(a17, Name.identifier("length")));
-        f33977a = m10;
+        f33753a = m10;
         Set<Map.Entry> entrySet = m10.entrySet();
         ArrayList<Pair> arrayList = new ArrayList(CollectionsKt.w(entrySet, 10));
         for (Map.Entry entry : entrySet) {
@@ -97,23 +97,23 @@ public final class BuiltinSpecialProperties {
         for (Map.Entry entry2 : linkedHashMap.entrySet()) {
             linkedHashMap2.put(entry2.getKey(), CollectionsKt.e0((Iterable) entry2.getValue()));
         }
-        f33978b = linkedHashMap2;
-        Map map = f33977a;
+        f33754b = linkedHashMap2;
+        Map map = f33753a;
         LinkedHashSet linkedHashSet = new LinkedHashSet();
         for (Map.Entry entry3 : map.entrySet()) {
             ClassId mapKotlinToJava = JavaToKotlinClassMap.INSTANCE.mapKotlinToJava(((FqName) entry3.getKey()).parent().toUnsafe());
             Intrinsics.checkNotNull(mapKotlinToJava);
             linkedHashSet.add(mapKotlinToJava.asSingleFqName().child((Name) entry3.getValue()));
         }
-        f33979c = linkedHashSet;
-        Set keySet = f33977a.keySet();
-        f33980d = keySet;
+        f33755c = linkedHashSet;
+        Set keySet = f33753a.keySet();
+        f33756d = keySet;
         Set<FqName> set = keySet;
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(set, 10));
         for (FqName fqName2 : set) {
             arrayList2.add(fqName2.shortName());
         }
-        f33981e = CollectionsKt.l1(arrayList2);
+        f33757e = CollectionsKt.l1(arrayList2);
     }
 
     private BuiltinSpecialProperties() {
@@ -121,13 +121,13 @@ public final class BuiltinSpecialProperties {
 
     @NotNull
     public final Map<FqName, Name> getPROPERTY_FQ_NAME_TO_JVM_GETTER_NAME_MAP() {
-        return f33977a;
+        return f33753a;
     }
 
     @NotNull
     public final List<Name> getPropertyNameCandidatesBySpecialGetterName(@NotNull Name name1) {
         Intrinsics.checkNotNullParameter(name1, "name1");
-        List<Name> list = (List) f33978b.get(name1);
+        List<Name> list = (List) f33754b.get(name1);
         if (list == null) {
             return CollectionsKt.l();
         }
@@ -136,11 +136,11 @@ public final class BuiltinSpecialProperties {
 
     @NotNull
     public final Set<FqName> getSPECIAL_FQ_NAMES() {
-        return f33980d;
+        return f33756d;
     }
 
     @NotNull
     public final Set<Name> getSPECIAL_SHORT_NAMES() {
-        return f33981e;
+        return f33757e;
     }
 }

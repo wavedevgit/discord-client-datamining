@@ -7,6 +7,6 @@ public abstract class d0 {
     public static final void a(View view, z onBackPressedDispatcherOwner) {
         Intrinsics.checkNotNullParameter(view, "<this>");
         Intrinsics.checkNotNullParameter(onBackPressedDispatcherOwner, "onBackPressedDispatcherOwner");
-        view.setTag(a0.f829b, onBackPressedDispatcherOwner);
+        view.setTag(a0.f873b, onBackPressedDispatcherOwner);
     }
 }

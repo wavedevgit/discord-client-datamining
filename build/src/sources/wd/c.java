@@ -33,49 +33,49 @@ public final class c implements k, i.b {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    private final vd.g f52313d;
+    private final vd.g f51880d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final j f52314e;
+    private final j f51881e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.h f52315i;
+    private final com.google.android.exoplayer2.upstream.h f51882i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final HashMap f52316o;
+    private final HashMap f51883o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final CopyOnWriteArrayList f52317p;
+    private final CopyOnWriteArrayList f51884p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final double f52318q;
+    private final double f51885q;
 
     /* renamed from: r  reason: collision with root package name */
-    private y.a f52319r;
+    private y.a f51886r;
 
     /* renamed from: s  reason: collision with root package name */
-    private com.google.android.exoplayer2.upstream.i f52320s;
+    private com.google.android.exoplayer2.upstream.i f51887s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Handler f52321t;
+    private Handler f51888t;
 
     /* renamed from: u  reason: collision with root package name */
-    private k.e f52322u;
+    private k.e f51889u;
 
     /* renamed from: v  reason: collision with root package name */
-    private g f52323v;
+    private g f51890v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Uri f52324w;
+    private Uri f51891w;
 
     /* renamed from: x  reason: collision with root package name */
-    private f f52325x;
+    private f f51892x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f52326y;
+    private boolean f51893y;
 
     /* renamed from: z  reason: collision with root package name */
-    private long f52327z;
+    private long f51894z;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -85,25 +85,25 @@ public final class c implements k, i.b {
 
         @Override // wd.k.b
         public void a() {
-            c.this.f52317p.remove(this);
+            c.this.f51884p.remove(this);
         }
 
         @Override // wd.k.b
         public boolean c(Uri uri, h.c cVar, boolean z10) {
-            C0718c c0718c;
-            if (c.this.f52325x == null) {
+            C0705c c0705c;
+            if (c.this.f51892x == null) {
                 long elapsedRealtime = SystemClock.elapsedRealtime();
-                List list = ((g) w0.j(c.this.f52323v)).f52388e;
+                List list = ((g) w0.j(c.this.f51890v)).f51955e;
                 int i10 = 0;
                 for (int i11 = 0; i11 < list.size(); i11++) {
-                    C0718c c0718c2 = (C0718c) c.this.f52316o.get(((g.b) list.get(i11)).f52401a);
-                    if (c0718c2 != null && elapsedRealtime < c0718c2.f52336s) {
+                    C0705c c0705c2 = (C0705c) c.this.f51883o.get(((g.b) list.get(i11)).f51968a);
+                    if (c0705c2 != null && elapsedRealtime < c0705c2.f51903s) {
                         i10++;
                     }
                 }
-                h.b c10 = c.this.f52315i.c(new h.a(1, 0, c.this.f52323v.f52388e.size(), i10), cVar);
-                if (c10 != null && c10.f14477a == 2 && (c0718c = (C0718c) c.this.f52316o.get(uri)) != null) {
-                    c0718c.h(c10.f14478b);
+                h.b c10 = c.this.f51882i.c(new h.a(1, 0, c.this.f51890v.f51955e.size(), i10), cVar);
+                if (c10 != null && c10.f14106a == 2 && (c0705c = (C0705c) c.this.f51883o.get(uri)) != null) {
+                    c0705c.h(c10.f14107b);
                 }
             }
             return false;
@@ -113,52 +113,52 @@ public final class c implements k, i.b {
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: wd.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public final class C0718c implements i.b {
+    public final class C0705c implements i.b {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Uri f52329d;
+        private final Uri f51896d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final com.google.android.exoplayer2.upstream.i f52330e = new com.google.android.exoplayer2.upstream.i("DefaultHlsPlaylistTracker:MediaPlaylist");
+        private final com.google.android.exoplayer2.upstream.i f51897e = new com.google.android.exoplayer2.upstream.i("DefaultHlsPlaylistTracker:MediaPlaylist");
 
         /* renamed from: i  reason: collision with root package name */
-        private final DataSource f52331i;
+        private final DataSource f51898i;
 
         /* renamed from: o  reason: collision with root package name */
-        private f f52332o;
+        private f f51899o;
 
         /* renamed from: p  reason: collision with root package name */
-        private long f52333p;
+        private long f51900p;
 
         /* renamed from: q  reason: collision with root package name */
-        private long f52334q;
+        private long f51901q;
 
         /* renamed from: r  reason: collision with root package name */
-        private long f52335r;
+        private long f51902r;
 
         /* renamed from: s  reason: collision with root package name */
-        private long f52336s;
+        private long f51903s;
 
         /* renamed from: t  reason: collision with root package name */
-        private boolean f52337t;
+        private boolean f51904t;
 
         /* renamed from: u  reason: collision with root package name */
-        private IOException f52338u;
+        private IOException f51905u;
 
-        public C0718c(Uri uri) {
-            this.f52329d = uri;
-            this.f52331i = c.this.f52313d.a(4);
+        public C0705c(Uri uri) {
+            this.f51896d = uri;
+            this.f51898i = c.this.f51880d.a(4);
         }
 
-        public static /* synthetic */ void a(C0718c c0718c, Uri uri) {
-            c0718c.f52337t = false;
-            c0718c.p(uri);
+        public static /* synthetic */ void a(C0705c c0705c, Uri uri) {
+            c0705c.f51904t = false;
+            c0705c.p(uri);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public boolean h(long j10) {
-            this.f52336s = SystemClock.elapsedRealtime() + j10;
-            if (this.f52329d.equals(c.this.f52324w) && !c.this.L()) {
+            this.f51903s = SystemClock.elapsedRealtime() + j10;
+            if (this.f51896d.equals(c.this.f51891w) && !c.this.L()) {
                 return true;
             }
             return false;
@@ -166,27 +166,27 @@ public final class c implements k, i.b {
 
         private Uri k() {
             String str;
-            f fVar = this.f52332o;
+            f fVar = this.f51899o;
             if (fVar != null) {
-                f.C0719f c0719f = fVar.f52362v;
-                if (c0719f.f52381a != -9223372036854775807L || c0719f.f52385e) {
-                    Uri.Builder buildUpon = this.f52329d.buildUpon();
-                    f fVar2 = this.f52332o;
-                    if (fVar2.f52362v.f52385e) {
-                        buildUpon.appendQueryParameter("_HLS_msn", String.valueOf(fVar2.f52351k + fVar2.f52358r.size()));
-                        f fVar3 = this.f52332o;
-                        if (fVar3.f52354n != -9223372036854775807L) {
-                            List list = fVar3.f52359s;
+                f.C0706f c0706f = fVar.f51929v;
+                if (c0706f.f51948a != -9223372036854775807L || c0706f.f51952e) {
+                    Uri.Builder buildUpon = this.f51896d.buildUpon();
+                    f fVar2 = this.f51899o;
+                    if (fVar2.f51929v.f51952e) {
+                        buildUpon.appendQueryParameter("_HLS_msn", String.valueOf(fVar2.f51918k + fVar2.f51925r.size()));
+                        f fVar3 = this.f51899o;
+                        if (fVar3.f51921n != -9223372036854775807L) {
+                            List list = fVar3.f51926s;
                             int size = list.size();
-                            if (!list.isEmpty() && ((f.b) v.c(list)).f52364x) {
+                            if (!list.isEmpty() && ((f.b) v.c(list)).f51931x) {
                                 size--;
                             }
                             buildUpon.appendQueryParameter("_HLS_part", String.valueOf(size));
                         }
                     }
-                    f.C0719f c0719f2 = this.f52332o.f52362v;
-                    if (c0719f2.f52381a != -9223372036854775807L) {
-                        if (c0719f2.f52382b) {
+                    f.C0706f c0706f2 = this.f51899o.f51929v;
+                    if (c0706f2.f51948a != -9223372036854775807L) {
+                        if (c0706f2.f51949b) {
                             str = "v2";
                         } else {
                             str = "YES";
@@ -196,27 +196,27 @@ public final class c implements k, i.b {
                     return buildUpon.build();
                 }
             }
-            return this.f52329d;
+            return this.f51896d;
         }
 
         private void p(Uri uri) {
-            com.google.android.exoplayer2.upstream.j jVar = new com.google.android.exoplayer2.upstream.j(this.f52331i, uri, 4, c.this.f52314e.a(c.this.f52323v, this.f52332o));
-            c.this.f52319r.s(new LoadEventInfo(jVar.f14503a, jVar.f14504b, this.f52330e.n(jVar, this, c.this.f52315i.b(jVar.f14505c))), jVar.f14505c);
+            com.google.android.exoplayer2.upstream.j jVar = new com.google.android.exoplayer2.upstream.j(this.f51898i, uri, 4, c.this.f51881e.a(c.this.f51890v, this.f51899o));
+            c.this.f51886r.s(new LoadEventInfo(jVar.f14132a, jVar.f14133b, this.f51897e.n(jVar, this, c.this.f51882i.b(jVar.f14134c))), jVar.f14134c);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public void q(final Uri uri) {
-            this.f52336s = 0L;
-            if (!this.f52337t && !this.f52330e.j() && !this.f52330e.i()) {
+            this.f51903s = 0L;
+            if (!this.f51904t && !this.f51897e.j() && !this.f51897e.i()) {
                 long elapsedRealtime = SystemClock.elapsedRealtime();
-                if (elapsedRealtime < this.f52335r) {
-                    this.f52337t = true;
-                    c.this.f52321t.postDelayed(new Runnable() { // from class: wd.d
+                if (elapsedRealtime < this.f51902r) {
+                    this.f51904t = true;
+                    c.this.f51888t.postDelayed(new Runnable() { // from class: wd.d
                         @Override // java.lang.Runnable
                         public final void run() {
-                            c.C0718c.a(c.C0718c.this, uri);
+                            c.C0705c.a(c.C0705c.this, uri);
                         }
-                    }, this.f52335r - elapsedRealtime);
+                    }, this.f51902r - elapsedRealtime);
                     return;
                 }
                 p(uri);
@@ -228,72 +228,72 @@ public final class c implements k, i.b {
             f fVar2;
             boolean z10;
             long j10;
-            f fVar3 = this.f52332o;
+            f fVar3 = this.f51899o;
             long elapsedRealtime = SystemClock.elapsedRealtime();
-            this.f52333p = elapsedRealtime;
+            this.f51900p = elapsedRealtime;
             f G = c.this.G(fVar3, fVar);
-            this.f52332o = G;
+            this.f51899o = G;
             IOException iOException = null;
             if (G != fVar3) {
-                this.f52338u = null;
-                this.f52334q = elapsedRealtime;
-                c.this.R(this.f52329d, G);
-            } else if (!G.f52355o) {
-                if (fVar.f52351k + fVar.f52358r.size() < this.f52332o.f52351k) {
-                    iOException = new k.c(this.f52329d);
+                this.f51905u = null;
+                this.f51901q = elapsedRealtime;
+                c.this.R(this.f51896d, G);
+            } else if (!G.f51922o) {
+                if (fVar.f51918k + fVar.f51925r.size() < this.f51899o.f51918k) {
+                    iOException = new k.c(this.f51896d);
                     z10 = true;
                 } else {
                     z10 = false;
-                    if (elapsedRealtime - this.f52334q > w0.p1(fVar2.f52353m) * c.this.f52318q) {
-                        iOException = new k.d(this.f52329d);
+                    if (elapsedRealtime - this.f51901q > w0.p1(fVar2.f51920m) * c.this.f51885q) {
+                        iOException = new k.d(this.f51896d);
                     }
                 }
                 if (iOException != null) {
-                    this.f52338u = iOException;
-                    c.this.N(this.f52329d, new h.c(loadEventInfo, new MediaLoadData(4), iOException, 1), z10);
+                    this.f51905u = iOException;
+                    c.this.N(this.f51896d, new h.c(loadEventInfo, new MediaLoadData(4), iOException, 1), z10);
                 }
             }
-            f fVar4 = this.f52332o;
-            if (!fVar4.f52362v.f52385e) {
+            f fVar4 = this.f51899o;
+            if (!fVar4.f51929v.f51952e) {
                 if (fVar4 != fVar3) {
-                    j10 = fVar4.f52353m;
+                    j10 = fVar4.f51920m;
                 } else {
-                    j10 = fVar4.f52353m / 2;
+                    j10 = fVar4.f51920m / 2;
                 }
             } else {
                 j10 = 0;
             }
-            this.f52335r = elapsedRealtime + w0.p1(j10);
-            if ((this.f52332o.f52354n != -9223372036854775807L || this.f52329d.equals(c.this.f52324w)) && !this.f52332o.f52355o) {
+            this.f51902r = elapsedRealtime + w0.p1(j10);
+            if ((this.f51899o.f51921n != -9223372036854775807L || this.f51896d.equals(c.this.f51891w)) && !this.f51899o.f51922o) {
                 q(k());
             }
         }
 
         public f l() {
-            return this.f52332o;
+            return this.f51899o;
         }
 
         public boolean m() {
             int i10;
-            if (this.f52332o == null) {
+            if (this.f51899o == null) {
                 return false;
             }
             long elapsedRealtime = SystemClock.elapsedRealtime();
-            long max = Math.max(30000L, w0.p1(this.f52332o.f52361u));
-            f fVar = this.f52332o;
-            if (!fVar.f52355o && (i10 = fVar.f52344d) != 2 && i10 != 1 && this.f52333p + max <= elapsedRealtime) {
+            long max = Math.max(30000L, w0.p1(this.f51899o.f51928u));
+            f fVar = this.f51899o;
+            if (!fVar.f51922o && (i10 = fVar.f51911d) != 2 && i10 != 1 && this.f51900p + max <= elapsedRealtime) {
                 return false;
             }
             return true;
         }
 
         public void o() {
-            q(this.f52329d);
+            q(this.f51896d);
         }
 
         public void r() {
-            this.f52330e.a();
-            IOException iOException = this.f52338u;
+            this.f51897e.a();
+            IOException iOException = this.f51905u;
             if (iOException == null) {
                 return;
             }
@@ -303,24 +303,24 @@ public final class c implements k, i.b {
         @Override // com.google.android.exoplayer2.upstream.i.b
         /* renamed from: s */
         public void i(com.google.android.exoplayer2.upstream.j jVar, long j10, long j11, boolean z10) {
-            LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f14503a, jVar.f14504b, jVar.f(), jVar.d(), j10, j11, jVar.a());
-            c.this.f52315i.d(jVar.f14503a);
-            c.this.f52319r.j(loadEventInfo, 4);
+            LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f14132a, jVar.f14133b, jVar.f(), jVar.d(), j10, j11, jVar.a());
+            c.this.f51882i.d(jVar.f14132a);
+            c.this.f51886r.j(loadEventInfo, 4);
         }
 
         @Override // com.google.android.exoplayer2.upstream.i.b
         /* renamed from: t */
         public void j(com.google.android.exoplayer2.upstream.j jVar, long j10, long j11) {
             h hVar = (h) jVar.e();
-            LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f14503a, jVar.f14504b, jVar.f(), jVar.d(), j10, j11, jVar.a());
+            LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f14132a, jVar.f14133b, jVar.f(), jVar.d(), j10, j11, jVar.a());
             if (hVar instanceof f) {
                 v((f) hVar, loadEventInfo);
-                c.this.f52319r.m(loadEventInfo, 4);
+                c.this.f51886r.m(loadEventInfo, 4);
             } else {
-                this.f52338u = l0.c("Loaded playlist has unexpected type.", null);
-                c.this.f52319r.q(loadEventInfo, 4, this.f52338u, true);
+                this.f51905u = l0.c("Loaded playlist has unexpected type.", null);
+                c.this.f51886r.q(loadEventInfo, 4, this.f51905u, true);
             }
-            c.this.f52315i.d(jVar.f14503a);
+            c.this.f51882i.d(jVar.f14132a);
         }
 
         @Override // com.google.android.exoplayer2.upstream.i.b
@@ -329,7 +329,7 @@ public final class c implements k, i.b {
             boolean z10;
             int i11;
             i.c cVar;
-            LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f14503a, jVar.f14504b, jVar.f(), jVar.d(), j10, j11, jVar.a());
+            LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f14132a, jVar.f14133b, jVar.f(), jVar.d(), j10, j11, jVar.a());
             if (jVar.f().getQueryParameter("_HLS_msn") != null) {
                 z10 = true;
             } else {
@@ -338,38 +338,38 @@ public final class c implements k, i.b {
             boolean z11 = iOException instanceof i.a;
             if (z10 || z11) {
                 if (iOException instanceof g.f) {
-                    i11 = ((g.f) iOException).f14467o;
+                    i11 = ((g.f) iOException).f14096o;
                 } else {
                     i11 = Integer.MAX_VALUE;
                 }
                 if (z11 || i11 == 400 || i11 == 503) {
-                    this.f52335r = SystemClock.elapsedRealtime();
+                    this.f51902r = SystemClock.elapsedRealtime();
                     o();
-                    ((y.a) w0.j(c.this.f52319r)).q(loadEventInfo, jVar.f14505c, iOException, true);
-                    return com.google.android.exoplayer2.upstream.i.f14485f;
+                    ((y.a) w0.j(c.this.f51886r)).q(loadEventInfo, jVar.f14134c, iOException, true);
+                    return com.google.android.exoplayer2.upstream.i.f14114f;
                 }
             }
-            h.c cVar2 = new h.c(loadEventInfo, new MediaLoadData(jVar.f14505c), iOException, i10);
-            if (c.this.N(this.f52329d, cVar2, false)) {
-                long a10 = c.this.f52315i.a(cVar2);
+            h.c cVar2 = new h.c(loadEventInfo, new MediaLoadData(jVar.f14134c), iOException, i10);
+            if (c.this.N(this.f51896d, cVar2, false)) {
+                long a10 = c.this.f51882i.a(cVar2);
                 if (a10 != -9223372036854775807L) {
                     cVar = com.google.android.exoplayer2.upstream.i.h(false, a10);
                 } else {
-                    cVar = com.google.android.exoplayer2.upstream.i.f14486g;
+                    cVar = com.google.android.exoplayer2.upstream.i.f14115g;
                 }
             } else {
-                cVar = com.google.android.exoplayer2.upstream.i.f14485f;
+                cVar = com.google.android.exoplayer2.upstream.i.f14114f;
             }
             boolean c10 = cVar.c();
-            c.this.f52319r.q(loadEventInfo, jVar.f14505c, iOException, !c10);
+            c.this.f51886r.q(loadEventInfo, jVar.f14134c, iOException, !c10);
             if (!c10) {
-                c.this.f52315i.d(jVar.f14503a);
+                c.this.f51882i.d(jVar.f14132a);
             }
             return cVar;
         }
 
         public void w() {
-            this.f52330e.l();
+            this.f51897e.l();
         }
     }
 
@@ -381,13 +381,13 @@ public final class c implements k, i.b {
         int size = list.size();
         for (int i10 = 0; i10 < size; i10++) {
             Uri uri = (Uri) list.get(i10);
-            this.f52316o.put(uri, new C0718c(uri));
+            this.f51883o.put(uri, new C0705c(uri));
         }
     }
 
     private static f.d F(f fVar, f fVar2) {
-        int i10 = (int) (fVar2.f52351k - fVar.f52351k);
-        List list = fVar.f52358r;
+        int i10 = (int) (fVar2.f51918k - fVar.f51918k);
+        List list = fVar.f51925r;
         if (i10 < list.size()) {
             return (f.d) list.get(i10);
         }
@@ -397,7 +397,7 @@ public final class c implements k, i.b {
     /* JADX INFO: Access modifiers changed from: private */
     public f G(f fVar, f fVar2) {
         if (!fVar2.f(fVar)) {
-            if (fVar2.f52355o) {
+            if (fVar2.f51922o) {
                 return fVar.d();
             }
             return fVar;
@@ -408,39 +408,39 @@ public final class c implements k, i.b {
     private int H(f fVar, f fVar2) {
         int i10;
         f.d F;
-        if (fVar2.f52349i) {
-            return fVar2.f52350j;
+        if (fVar2.f51916i) {
+            return fVar2.f51917j;
         }
-        f fVar3 = this.f52325x;
+        f fVar3 = this.f51892x;
         if (fVar3 != null) {
-            i10 = fVar3.f52350j;
+            i10 = fVar3.f51917j;
         } else {
             i10 = 0;
         }
         if (fVar != null && (F = F(fVar, fVar2)) != null) {
-            return (fVar.f52350j + F.f52373o) - ((f.d) fVar2.f52358r.get(0)).f52373o;
+            return (fVar.f51917j + F.f51940o) - ((f.d) fVar2.f51925r.get(0)).f51940o;
         }
         return i10;
     }
 
     private long I(f fVar, f fVar2) {
         long j10;
-        if (fVar2.f52356p) {
-            return fVar2.f52348h;
+        if (fVar2.f51923p) {
+            return fVar2.f51915h;
         }
-        f fVar3 = this.f52325x;
+        f fVar3 = this.f51892x;
         if (fVar3 != null) {
-            j10 = fVar3.f52348h;
+            j10 = fVar3.f51915h;
         } else {
             j10 = 0;
         }
         if (fVar != null) {
-            int size = fVar.f52358r.size();
+            int size = fVar.f51925r.size();
             f.d F = F(fVar, fVar2);
             if (F != null) {
-                return fVar.f52348h + F.f52374p;
+                return fVar.f51915h + F.f51941p;
             }
-            if (size == fVar2.f52351k - fVar.f52351k) {
+            if (size == fVar2.f51918k - fVar.f51918k) {
                 return fVar.e();
             }
         }
@@ -449,11 +449,11 @@ public final class c implements k, i.b {
 
     private Uri J(Uri uri) {
         f.c cVar;
-        f fVar = this.f52325x;
-        if (fVar != null && fVar.f52362v.f52385e && (cVar = (f.c) fVar.f52360t.get(uri)) != null) {
+        f fVar = this.f51892x;
+        if (fVar != null && fVar.f51929v.f51952e && (cVar = (f.c) fVar.f51927t.get(uri)) != null) {
             Uri.Builder buildUpon = uri.buildUpon();
-            buildUpon.appendQueryParameter("_HLS_msn", String.valueOf(cVar.f52366b));
-            int i10 = cVar.f52367c;
+            buildUpon.appendQueryParameter("_HLS_msn", String.valueOf(cVar.f51933b));
+            int i10 = cVar.f51934c;
             if (i10 != -1) {
                 buildUpon.appendQueryParameter("_HLS_part", String.valueOf(i10));
             }
@@ -463,9 +463,9 @@ public final class c implements k, i.b {
     }
 
     private boolean K(Uri uri) {
-        List list = this.f52323v.f52388e;
+        List list = this.f51890v.f51955e;
         for (int i10 = 0; i10 < list.size(); i10++) {
-            if (uri.equals(((g.b) list.get(i10)).f52401a)) {
+            if (uri.equals(((g.b) list.get(i10)).f51968a)) {
                 return true;
             }
         }
@@ -474,15 +474,15 @@ public final class c implements k, i.b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean L() {
-        List list = this.f52323v.f52388e;
+        List list = this.f51890v.f51955e;
         int size = list.size();
         long elapsedRealtime = SystemClock.elapsedRealtime();
         for (int i10 = 0; i10 < size; i10++) {
-            C0718c c0718c = (C0718c) ne.a.e((C0718c) this.f52316o.get(((g.b) list.get(i10)).f52401a));
-            if (elapsedRealtime > c0718c.f52336s) {
-                Uri uri = c0718c.f52329d;
-                this.f52324w = uri;
-                c0718c.q(J(uri));
+            C0705c c0705c = (C0705c) ne.a.e((C0705c) this.f51883o.get(((g.b) list.get(i10)).f51968a));
+            if (elapsedRealtime > c0705c.f51903s) {
+                Uri uri = c0705c.f51896d;
+                this.f51891w = uri;
+                c0705c.q(J(uri));
                 return true;
             }
         }
@@ -490,25 +490,25 @@ public final class c implements k, i.b {
     }
 
     private void M(Uri uri) {
-        if (!uri.equals(this.f52324w) && K(uri)) {
-            f fVar = this.f52325x;
-            if (fVar == null || !fVar.f52355o) {
-                this.f52324w = uri;
-                C0718c c0718c = (C0718c) this.f52316o.get(uri);
-                f fVar2 = c0718c.f52332o;
-                if (fVar2 == null || !fVar2.f52355o) {
-                    c0718c.q(J(uri));
+        if (!uri.equals(this.f51891w) && K(uri)) {
+            f fVar = this.f51892x;
+            if (fVar == null || !fVar.f51922o) {
+                this.f51891w = uri;
+                C0705c c0705c = (C0705c) this.f51883o.get(uri);
+                f fVar2 = c0705c.f51899o;
+                if (fVar2 == null || !fVar2.f51922o) {
+                    c0705c.q(J(uri));
                     return;
                 }
-                this.f52325x = fVar2;
-                this.f52322u.b(fVar2);
+                this.f51892x = fVar2;
+                this.f51889u.b(fVar2);
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean N(Uri uri, h.c cVar, boolean z10) {
-        Iterator it = this.f52317p.iterator();
+        Iterator it = this.f51884p.iterator();
         boolean z11 = false;
         while (it.hasNext()) {
             z11 |= !((k.b) it.next()).c(uri, cVar, z10);
@@ -518,15 +518,15 @@ public final class c implements k, i.b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void R(Uri uri, f fVar) {
-        if (uri.equals(this.f52324w)) {
-            if (this.f52325x == null) {
-                this.f52326y = !fVar.f52355o;
-                this.f52327z = fVar.f52348h;
+        if (uri.equals(this.f51891w)) {
+            if (this.f51892x == null) {
+                this.f51893y = !fVar.f51922o;
+                this.f51894z = fVar.f51915h;
             }
-            this.f52325x = fVar;
-            this.f52322u.b(fVar);
+            this.f51892x = fVar;
+            this.f51889u.b(fVar);
         }
-        Iterator it = this.f52317p.iterator();
+        Iterator it = this.f51884p.iterator();
         while (it.hasNext()) {
             ((k.b) it.next()).a();
         }
@@ -535,9 +535,9 @@ public final class c implements k, i.b {
     @Override // com.google.android.exoplayer2.upstream.i.b
     /* renamed from: O */
     public void i(com.google.android.exoplayer2.upstream.j jVar, long j10, long j11, boolean z10) {
-        LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f14503a, jVar.f14504b, jVar.f(), jVar.d(), j10, j11, jVar.a());
-        this.f52315i.d(jVar.f14503a);
-        this.f52319r.j(loadEventInfo, 4);
+        LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f14132a, jVar.f14133b, jVar.f(), jVar.d(), j10, j11, jVar.a());
+        this.f51882i.d(jVar.f14132a);
+        this.f51886r.j(loadEventInfo, 4);
     }
 
     @Override // com.google.android.exoplayer2.upstream.i.b
@@ -547,42 +547,42 @@ public final class c implements k, i.b {
         h hVar = (h) jVar.e();
         boolean z10 = hVar instanceof f;
         if (z10) {
-            gVar = g.e(hVar.f52407a);
+            gVar = g.e(hVar.f51974a);
         } else {
             gVar = (g) hVar;
         }
-        this.f52323v = gVar;
-        this.f52324w = ((g.b) gVar.f52388e.get(0)).f52401a;
-        this.f52317p.add(new b());
-        E(gVar.f52387d);
-        LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f14503a, jVar.f14504b, jVar.f(), jVar.d(), j10, j11, jVar.a());
-        C0718c c0718c = (C0718c) this.f52316o.get(this.f52324w);
+        this.f51890v = gVar;
+        this.f51891w = ((g.b) gVar.f51955e.get(0)).f51968a;
+        this.f51884p.add(new b());
+        E(gVar.f51954d);
+        LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f14132a, jVar.f14133b, jVar.f(), jVar.d(), j10, j11, jVar.a());
+        C0705c c0705c = (C0705c) this.f51883o.get(this.f51891w);
         if (z10) {
-            c0718c.v((f) hVar, loadEventInfo);
+            c0705c.v((f) hVar, loadEventInfo);
         } else {
-            c0718c.o();
+            c0705c.o();
         }
-        this.f52315i.d(jVar.f14503a);
-        this.f52319r.m(loadEventInfo, 4);
+        this.f51882i.d(jVar.f14132a);
+        this.f51886r.m(loadEventInfo, 4);
     }
 
     @Override // com.google.android.exoplayer2.upstream.i.b
     /* renamed from: Q */
     public i.c n(com.google.android.exoplayer2.upstream.j jVar, long j10, long j11, IOException iOException, int i10) {
         boolean z10;
-        LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f14503a, jVar.f14504b, jVar.f(), jVar.d(), j10, j11, jVar.a());
-        long a10 = this.f52315i.a(new h.c(loadEventInfo, new MediaLoadData(jVar.f14505c), iOException, i10));
+        LoadEventInfo loadEventInfo = new LoadEventInfo(jVar.f14132a, jVar.f14133b, jVar.f(), jVar.d(), j10, j11, jVar.a());
+        long a10 = this.f51882i.a(new h.c(loadEventInfo, new MediaLoadData(jVar.f14134c), iOException, i10));
         if (a10 == -9223372036854775807L) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f52319r.q(loadEventInfo, jVar.f14505c, iOException, z10);
+        this.f51886r.q(loadEventInfo, jVar.f14134c, iOException, z10);
         if (z10) {
-            this.f52315i.d(jVar.f14503a);
+            this.f51882i.d(jVar.f14132a);
         }
         if (z10) {
-            return com.google.android.exoplayer2.upstream.i.f14486g;
+            return com.google.android.exoplayer2.upstream.i.f14115g;
         }
         return com.google.android.exoplayer2.upstream.i.h(false, a10);
     }
@@ -590,73 +590,73 @@ public final class c implements k, i.b {
     @Override // wd.k
     public void a(Uri uri, y.a aVar, k.e eVar) {
         boolean z10;
-        this.f52321t = w0.w();
-        this.f52319r = aVar;
-        this.f52322u = eVar;
-        com.google.android.exoplayer2.upstream.j jVar = new com.google.android.exoplayer2.upstream.j(this.f52313d.a(4), uri, 4, this.f52314e.b());
-        if (this.f52320s == null) {
+        this.f51888t = w0.w();
+        this.f51886r = aVar;
+        this.f51889u = eVar;
+        com.google.android.exoplayer2.upstream.j jVar = new com.google.android.exoplayer2.upstream.j(this.f51880d.a(4), uri, 4, this.f51881e.b());
+        if (this.f51887s == null) {
             z10 = true;
         } else {
             z10 = false;
         }
         ne.a.g(z10);
         com.google.android.exoplayer2.upstream.i iVar = new com.google.android.exoplayer2.upstream.i("DefaultHlsPlaylistTracker:MultivariantPlaylist");
-        this.f52320s = iVar;
-        aVar.s(new LoadEventInfo(jVar.f14503a, jVar.f14504b, iVar.n(jVar, this, this.f52315i.b(jVar.f14505c))), jVar.f14505c);
+        this.f51887s = iVar;
+        aVar.s(new LoadEventInfo(jVar.f14132a, jVar.f14133b, iVar.n(jVar, this, this.f51882i.b(jVar.f14134c))), jVar.f14134c);
     }
 
     @Override // wd.k
     public void b(Uri uri) {
-        ((C0718c) this.f52316o.get(uri)).r();
+        ((C0705c) this.f51883o.get(uri)).r();
     }
 
     @Override // wd.k
     public long c() {
-        return this.f52327z;
+        return this.f51894z;
     }
 
     @Override // wd.k
     public g d() {
-        return this.f52323v;
+        return this.f51890v;
     }
 
     @Override // wd.k
     public void e(Uri uri) {
-        ((C0718c) this.f52316o.get(uri)).o();
+        ((C0705c) this.f51883o.get(uri)).o();
     }
 
     @Override // wd.k
     public void f(k.b bVar) {
         ne.a.e(bVar);
-        this.f52317p.add(bVar);
+        this.f51884p.add(bVar);
     }
 
     @Override // wd.k
     public boolean g(Uri uri) {
-        return ((C0718c) this.f52316o.get(uri)).m();
+        return ((C0705c) this.f51883o.get(uri)).m();
     }
 
     @Override // wd.k
     public boolean h() {
-        return this.f52326y;
+        return this.f51893y;
     }
 
     @Override // wd.k
     public boolean k(Uri uri, long j10) {
-        C0718c c0718c = (C0718c) this.f52316o.get(uri);
-        if (c0718c != null) {
-            return !c0718c.h(j10);
+        C0705c c0705c = (C0705c) this.f51883o.get(uri);
+        if (c0705c != null) {
+            return !c0705c.h(j10);
         }
         return false;
     }
 
     @Override // wd.k
     public void l() {
-        com.google.android.exoplayer2.upstream.i iVar = this.f52320s;
+        com.google.android.exoplayer2.upstream.i iVar = this.f51887s;
         if (iVar != null) {
             iVar.a();
         }
-        Uri uri = this.f52324w;
+        Uri uri = this.f51891w;
         if (uri != null) {
             b(uri);
         }
@@ -664,7 +664,7 @@ public final class c implements k, i.b {
 
     @Override // wd.k
     public f m(Uri uri, boolean z10) {
-        f l10 = ((C0718c) this.f52316o.get(uri)).l();
+        f l10 = ((C0705c) this.f51883o.get(uri)).l();
         if (l10 != null && z10) {
             M(uri);
         }
@@ -673,32 +673,32 @@ public final class c implements k, i.b {
 
     @Override // wd.k
     public void o(k.b bVar) {
-        this.f52317p.remove(bVar);
+        this.f51884p.remove(bVar);
     }
 
     @Override // wd.k
     public void stop() {
-        this.f52324w = null;
-        this.f52325x = null;
-        this.f52323v = null;
-        this.f52327z = -9223372036854775807L;
-        this.f52320s.l();
-        this.f52320s = null;
-        for (C0718c c0718c : this.f52316o.values()) {
-            c0718c.w();
+        this.f51891w = null;
+        this.f51892x = null;
+        this.f51890v = null;
+        this.f51894z = -9223372036854775807L;
+        this.f51887s.l();
+        this.f51887s = null;
+        for (C0705c c0705c : this.f51883o.values()) {
+            c0705c.w();
         }
-        this.f52321t.removeCallbacksAndMessages(null);
-        this.f52321t = null;
-        this.f52316o.clear();
+        this.f51888t.removeCallbacksAndMessages(null);
+        this.f51888t = null;
+        this.f51883o.clear();
     }
 
     public c(vd.g gVar, com.google.android.exoplayer2.upstream.h hVar, j jVar, double d10) {
-        this.f52313d = gVar;
-        this.f52314e = jVar;
-        this.f52315i = hVar;
-        this.f52318q = d10;
-        this.f52317p = new CopyOnWriteArrayList();
-        this.f52316o = new HashMap();
-        this.f52327z = -9223372036854775807L;
+        this.f51880d = gVar;
+        this.f51881e = jVar;
+        this.f51882i = hVar;
+        this.f51885q = d10;
+        this.f51884p = new CopyOnWriteArrayList();
+        this.f51883o = new HashMap();
+        this.f51894z = -9223372036854775807L;
     }
 }

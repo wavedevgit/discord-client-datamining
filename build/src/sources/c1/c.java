@@ -10,46 +10,46 @@ import kotlin.jvm.internal.ShortCompanionObject;
 public abstract class c implements Comparable {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f8093d = new a(null);
+    public static final a f7949d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final short f8094e = d(5120);
+    private static final short f7950e = d(5120);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final short f8095i = d(-1025);
+    private static final short f7951i = d(-1025);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final short f8096o = d(31743);
+    private static final short f7952o = d(31743);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final short f8097p = d(1024);
+    private static final short f7953p = d(1024);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final short f8098q = d(1);
+    private static final short f7954q = d(1);
 
     /* renamed from: r  reason: collision with root package name */
-    private static final short f8099r = d(32256);
+    private static final short f7955r = d(32256);
 
     /* renamed from: s  reason: collision with root package name */
-    private static final short f8100s = d(-1024);
+    private static final short f7956s = d(-1024);
 
     /* renamed from: t  reason: collision with root package name */
-    private static final short f8101t = d(ShortCompanionObject.MIN_VALUE);
+    private static final short f7957t = d(ShortCompanionObject.MIN_VALUE);
 
     /* renamed from: u  reason: collision with root package name */
-    private static final short f8102u = d(31744);
+    private static final short f7958u = d(31744);
 
     /* renamed from: v  reason: collision with root package name */
-    private static final short f8103v = d(0);
+    private static final short f7959v = d(0);
 
     /* renamed from: w  reason: collision with root package name */
-    private static final short f8104w = a(1.0f);
+    private static final short f7960w = a(1.0f);
 
     /* renamed from: x  reason: collision with root package name */
-    private static final short f8105x = a(-1.0f);
+    private static final short f7961x = a(-1.0f);
 
     /* renamed from: y  reason: collision with root package name */
-    private static final float f8106y;
+    private static final float f7962y;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -104,11 +104,11 @@ public abstract class c implements Comparable {
 
     static {
         FloatCompanionObject floatCompanionObject = FloatCompanionObject.INSTANCE;
-        f8106y = Float.intBitsToFloat(1056964608);
+        f7962y = Float.intBitsToFloat(1056964608);
     }
 
     public static short a(float f10) {
-        return d(f8093d.b(f10));
+        return d(f7949d.b(f10));
     }
 
     public static final float e(short s10) {
@@ -121,7 +121,7 @@ public abstract class c implements Comparable {
         if (i14 == 0) {
             if (i15 != 0) {
                 FloatCompanionObject floatCompanionObject = FloatCompanionObject.INSTANCE;
-                float intBitsToFloat = Float.intBitsToFloat(i15 + 1056964608) - f8106y;
+                float intBitsToFloat = Float.intBitsToFloat(i15 + 1056964608) - f7962y;
                 if (i13 == 0) {
                     return intBitsToFloat;
                 }

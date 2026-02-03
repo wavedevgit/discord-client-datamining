@@ -5,7 +5,7 @@ import ui.c;
 final class y7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final y7 f38852a = new y7();
+    static final y7 f38832a = new y7();
 
     static {
         c.b a10 = ui.c.a("scoreType");

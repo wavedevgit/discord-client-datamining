@@ -22,7 +22,7 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-LdU2QRA$default  reason: not valid java name */
-    public static /* synthetic */ RoleSubscriptionPurchaseAccessory m643copyLdU2QRA$default(RoleSubscriptionPurchaseAccessory roleSubscriptionPurchaseAccessory, String str, MessageMargins messageMargins, String str2, String str3, int i10, boolean z10, int i11, Object obj) {
+    public static /* synthetic */ RoleSubscriptionPurchaseAccessory m645copyLdU2QRA$default(RoleSubscriptionPurchaseAccessory roleSubscriptionPurchaseAccessory, String str, MessageMargins messageMargins, String str2, String str3, int i10, boolean z10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             str = roleSubscriptionPurchaseAccessory.messageId;
         }
@@ -43,12 +43,12 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
         }
         int i12 = i10;
         boolean z11 = z10;
-        return roleSubscriptionPurchaseAccessory.m645copyLdU2QRA(str, messageMargins, str2, str3, i12, z11);
+        return roleSubscriptionPurchaseAccessory.m647copyLdU2QRA(str, messageMargins, str2, str3, i12, z11);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m644component13Eiw7ao() {
+    public final String m646component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -75,7 +75,7 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-LdU2QRA  reason: not valid java name */
-    public final RoleSubscriptionPurchaseAccessory m645copyLdU2QRA(@NotNull String messageId, @NotNull MessageMargins margins, String str, String str2, int i10, boolean z10) {
+    public final RoleSubscriptionPurchaseAccessory m647copyLdU2QRA(@NotNull String messageId, @NotNull MessageMargins margins, String str, String str2, int i10, boolean z10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(margins, "margins");
         return new RoleSubscriptionPurchaseAccessory(messageId, margins, str, str2, i10, z10, null);
@@ -87,7 +87,7 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
         }
         if (obj instanceof RoleSubscriptionPurchaseAccessory) {
             RoleSubscriptionPurchaseAccessory roleSubscriptionPurchaseAccessory = (RoleSubscriptionPurchaseAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, roleSubscriptionPurchaseAccessory.messageId) && Intrinsics.areEqual(this.margins, roleSubscriptionPurchaseAccessory.margins) && Intrinsics.areEqual(this.authorUsername, roleSubscriptionPurchaseAccessory.authorUsername) && Intrinsics.areEqual(this.authorAvatar, roleSubscriptionPurchaseAccessory.authorAvatar) && this.constrainedWidth == roleSubscriptionPurchaseAccessory.constrainedWidth && this.isForwardedContent == roleSubscriptionPurchaseAccessory.isForwardedContent;
+            return MessageId.m1090equalsimpl0(this.messageId, roleSubscriptionPurchaseAccessory.messageId) && Intrinsics.areEqual(this.margins, roleSubscriptionPurchaseAccessory.margins) && Intrinsics.areEqual(this.authorUsername, roleSubscriptionPurchaseAccessory.authorUsername) && Intrinsics.areEqual(this.authorAvatar, roleSubscriptionPurchaseAccessory.authorAvatar) && this.constrainedWidth == roleSubscriptionPurchaseAccessory.constrainedWidth && this.isForwardedContent == roleSubscriptionPurchaseAccessory.isForwardedContent;
         }
         return false;
     }
@@ -112,14 +112,14 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        int m1089hashCodeimpl = ((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31;
+        int m1091hashCodeimpl = ((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31;
         String str = this.authorUsername;
-        int hashCode = (m1089hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31;
+        int hashCode = (m1091hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.authorAvatar;
         return ((((hashCode + (str2 != null ? str2.hashCode() : 0)) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Boolean.hashCode(this.isForwardedContent);
     }
@@ -130,13 +130,13 @@ public final class RoleSubscriptionPurchaseAccessory extends MessageAccessory {
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         String str = this.authorUsername;
         String str2 = this.authorAvatar;
         int i10 = this.constrainedWidth;
         boolean z10 = this.isForwardedContent;
-        return "RoleSubscriptionPurchaseAccessory(messageId=" + m1091toStringimpl + ", margins=" + messageMargins + ", authorUsername=" + str + ", authorAvatar=" + str2 + ", constrainedWidth=" + i10 + ", isForwardedContent=" + z10 + ")";
+        return "RoleSubscriptionPurchaseAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", authorUsername=" + str + ", authorAvatar=" + str2 + ", constrainedWidth=" + i10 + ", isForwardedContent=" + z10 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

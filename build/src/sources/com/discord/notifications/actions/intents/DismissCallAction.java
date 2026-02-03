@@ -34,7 +34,7 @@ public final class DismissCallAction implements NotificationAction {
         @Override // android.os.Parcelable.Creator
         public final DismissCallAction createFromParcel(Parcel parcel) {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new DismissCallAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DismissCallAction.class.getClassLoader())).m1067unboximpl(), parcel.readInt() != 0, (GuildId) parcel.readParcelable(DismissCallAction.class.getClassLoader()), ((UserId) parcel.readParcelable(DismissCallAction.class.getClassLoader())).m1145unboximpl(), null);
+            return new DismissCallAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DismissCallAction.class.getClassLoader())).m1069unboximpl(), parcel.readInt() != 0, (GuildId) parcel.readParcelable(DismissCallAction.class.getClassLoader()), ((UserId) parcel.readParcelable(DismissCallAction.class.getClassLoader())).m1147unboximpl(), null);
         }
 
         /* JADX WARN: Can't rename method to resolve collision */
@@ -49,7 +49,7 @@ public final class DismissCallAction implements NotificationAction {
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    private final long m976component2o4g7jtM() {
+    private final long m978component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -58,17 +58,17 @@ public final class DismissCallAction implements NotificationAction {
     }
 
     /* renamed from: component4-qOKuAAo  reason: not valid java name */
-    private final GuildId m977component4qOKuAAo() {
+    private final GuildId m979component4qOKuAAo() {
         return this.guildId;
     }
 
     /* renamed from: component5-re6GcUE  reason: not valid java name */
-    private final long m978component5re6GcUE() {
+    private final long m980component5re6GcUE() {
         return this.userId;
     }
 
     /* renamed from: copy-ZtnKfUs$default  reason: not valid java name */
-    public static /* synthetic */ DismissCallAction m979copyZtnKfUs$default(DismissCallAction dismissCallAction, String str, long j10, boolean z10, GuildId guildId, long j11, int i10, Object obj) {
+    public static /* synthetic */ DismissCallAction m981copyZtnKfUs$default(DismissCallAction dismissCallAction, String str, long j10, boolean z10, GuildId guildId, long j11, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = dismissCallAction.tag;
         }
@@ -84,7 +84,7 @@ public final class DismissCallAction implements NotificationAction {
         if ((i10 & 16) != 0) {
             j11 = dismissCallAction.userId;
         }
-        return dismissCallAction.m980copyZtnKfUs(str, j10, z10, guildId, j11);
+        return dismissCallAction.m982copyZtnKfUs(str, j10, z10, guildId, j11);
     }
 
     @NotNull
@@ -94,7 +94,7 @@ public final class DismissCallAction implements NotificationAction {
 
     @NotNull
     /* renamed from: copy-ZtnKfUs  reason: not valid java name */
-    public final DismissCallAction m980copyZtnKfUs(@NotNull String tag, long j10, boolean z10, GuildId guildId, long j11) {
+    public final DismissCallAction m982copyZtnKfUs(@NotNull String tag, long j10, boolean z10, GuildId guildId, long j11) {
         Intrinsics.checkNotNullParameter(tag, "tag");
         return new DismissCallAction(tag, j10, z10, guildId, j11, null);
     }
@@ -110,7 +110,7 @@ public final class DismissCallAction implements NotificationAction {
         }
         if (obj instanceof DismissCallAction) {
             DismissCallAction dismissCallAction = (DismissCallAction) obj;
-            return Intrinsics.areEqual(this.tag, dismissCallAction.tag) && ChannelId.m1062equalsimpl0(this.channelId, dismissCallAction.channelId) && this.isFullscreenCallUI == dismissCallAction.isFullscreenCallUI && Intrinsics.areEqual(this.guildId, dismissCallAction.guildId) && UserId.m1140equalsimpl0(this.userId, dismissCallAction.userId);
+            return Intrinsics.areEqual(this.tag, dismissCallAction.tag) && ChannelId.m1064equalsimpl0(this.channelId, dismissCallAction.channelId) && this.isFullscreenCallUI == dismissCallAction.isFullscreenCallUI && Intrinsics.areEqual(this.guildId, dismissCallAction.guildId) && UserId.m1142equalsimpl0(this.userId, dismissCallAction.userId);
         }
         return false;
     }
@@ -127,9 +127,9 @@ public final class DismissCallAction implements NotificationAction {
     }
 
     public int hashCode() {
-        int hashCode = ((((this.tag.hashCode() * 31) + ChannelId.m1063hashCodeimpl(this.channelId)) * 31) + Boolean.hashCode(this.isFullscreenCallUI)) * 31;
+        int hashCode = ((((this.tag.hashCode() * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31) + Boolean.hashCode(this.isFullscreenCallUI)) * 31;
         GuildId guildId = this.guildId;
-        return ((hashCode + (guildId == null ? 0 : GuildId.m1076hashCodeimpl(guildId.m1080unboximpl()))) * 31) + UserId.m1141hashCodeimpl(this.userId);
+        return ((hashCode + (guildId == null ? 0 : GuildId.m1078hashCodeimpl(guildId.m1082unboximpl()))) * 31) + UserId.m1143hashCodeimpl(this.userId);
     }
 
     @Override // com.discord.notifications.actions.intents.NotificationAction
@@ -143,7 +143,7 @@ public final class DismissCallAction implements NotificationAction {
         bundle.putBoolean("isFullscreenCallUI", this.isFullscreenCallUI);
         GuildId guildId = this.guildId;
         if (guildId != null) {
-            l10 = Long.valueOf(guildId.m1080unboximpl());
+            l10 = Long.valueOf(guildId.m1082unboximpl());
         } else {
             l10 = null;
         }
@@ -166,21 +166,21 @@ public final class DismissCallAction implements NotificationAction {
     @NotNull
     public String toString() {
         String str = this.tag;
-        String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
+        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
         boolean z10 = this.isFullscreenCallUI;
         GuildId guildId = this.guildId;
-        String m1143toStringimpl = UserId.m1143toStringimpl(this.userId);
-        return "DismissCallAction(tag=" + str + ", channelId=" + m1065toStringimpl + ", isFullscreenCallUI=" + z10 + ", guildId=" + guildId + ", userId=" + m1143toStringimpl + ")";
+        String m1145toStringimpl = UserId.m1145toStringimpl(this.userId);
+        return "DismissCallAction(tag=" + str + ", channelId=" + m1067toStringimpl + ", isFullscreenCallUI=" + z10 + ", guildId=" + guildId + ", userId=" + m1145toStringimpl + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(@NotNull Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
         dest.writeString(this.tag);
-        dest.writeParcelable(ChannelId.m1058boximpl(this.channelId), i10);
+        dest.writeParcelable(ChannelId.m1060boximpl(this.channelId), i10);
         dest.writeInt(this.isFullscreenCallUI ? 1 : 0);
         dest.writeParcelable(this.guildId, i10);
-        dest.writeParcelable(UserId.m1136boximpl(this.userId), i10);
+        dest.writeParcelable(UserId.m1138boximpl(this.userId), i10);
     }
 
     private DismissCallAction(String tag, long j10, boolean z10, GuildId guildId, long j11) {

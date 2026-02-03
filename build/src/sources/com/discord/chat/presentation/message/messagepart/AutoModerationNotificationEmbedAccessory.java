@@ -22,7 +22,7 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ AutoModerationNotificationEmbedAccessory m550copyu7_MRrM$default(AutoModerationNotificationEmbedAccessory autoModerationNotificationEmbedAccessory, String str, Message message, AutoModerationContext autoModerationContext, int i10, Object obj) {
+    public static /* synthetic */ AutoModerationNotificationEmbedAccessory m552copyu7_MRrM$default(AutoModerationNotificationEmbedAccessory autoModerationNotificationEmbedAccessory, String str, Message message, AutoModerationContext autoModerationContext, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = autoModerationNotificationEmbedAccessory.messageId;
         }
@@ -32,12 +32,12 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
         if ((i10 & 4) != 0) {
             autoModerationContext = autoModerationNotificationEmbedAccessory.moderationContext;
         }
-        return autoModerationNotificationEmbedAccessory.m552copyu7_MRrM(str, message, autoModerationContext);
+        return autoModerationNotificationEmbedAccessory.m554copyu7_MRrM(str, message, autoModerationContext);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m551component13Eiw7ao() {
+    public final String m553component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -53,7 +53,7 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
 
     @NotNull
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final AutoModerationNotificationEmbedAccessory m552copyu7_MRrM(@NotNull String messageId, @NotNull Message message, @NotNull AutoModerationContext moderationContext) {
+    public final AutoModerationNotificationEmbedAccessory m554copyu7_MRrM(@NotNull String messageId, @NotNull Message message, @NotNull AutoModerationContext moderationContext) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(message, "message");
         Intrinsics.checkNotNullParameter(moderationContext, "moderationContext");
@@ -66,7 +66,7 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
         }
         if (obj instanceof AutoModerationNotificationEmbedAccessory) {
             AutoModerationNotificationEmbedAccessory autoModerationNotificationEmbedAccessory = (AutoModerationNotificationEmbedAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, autoModerationNotificationEmbedAccessory.messageId) && Intrinsics.areEqual(this.message, autoModerationNotificationEmbedAccessory.message) && Intrinsics.areEqual(this.moderationContext, autoModerationNotificationEmbedAccessory.moderationContext);
+            return MessageId.m1090equalsimpl0(this.messageId, autoModerationNotificationEmbedAccessory.messageId) && Intrinsics.areEqual(this.message, autoModerationNotificationEmbedAccessory.message) && Intrinsics.areEqual(this.moderationContext, autoModerationNotificationEmbedAccessory.moderationContext);
         }
         return false;
     }
@@ -79,7 +79,7 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -89,15 +89,15 @@ public final class AutoModerationNotificationEmbedAccessory extends MessageAcces
     }
 
     public int hashCode() {
-        return (((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.message.hashCode()) * 31) + this.moderationContext.hashCode();
+        return (((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.message.hashCode()) * 31) + this.moderationContext.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         Message message = this.message;
         AutoModerationContext autoModerationContext = this.moderationContext;
-        return "AutoModerationNotificationEmbedAccessory(messageId=" + m1091toStringimpl + ", message=" + message + ", moderationContext=" + autoModerationContext + ")";
+        return "AutoModerationNotificationEmbedAccessory(messageId=" + m1093toStringimpl + ", message=" + message + ", moderationContext=" + autoModerationContext + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

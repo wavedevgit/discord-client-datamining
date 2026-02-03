@@ -13,16 +13,16 @@ import zd.b;
 public final class CueGroup implements g {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final CueGroup f13991i = new CueGroup(s.r(), 0);
+    public static final CueGroup f13620i = new CueGroup(s.r(), 0);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String f13992o = w0.B0(0);
+    private static final String f13621o = w0.B0(0);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f13993p = w0.B0(1);
+    private static final String f13622p = w0.B0(1);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final g.a f13994q = new g.a() { // from class: zd.d
+    public static final g.a f13623q = new g.a() { // from class: zd.d
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             CueGroup b10;
@@ -32,25 +32,25 @@ public final class CueGroup implements g {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    public final s f13995d;
+    public final s f13624d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f13996e;
+    public final long f13625e;
 
     public CueGroup(List list, long j10) {
-        this.f13995d = s.m(list);
-        this.f13996e = j10;
+        this.f13624d = s.m(list);
+        this.f13625e = j10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final CueGroup b(Bundle bundle) {
         s d10;
-        ArrayList parcelableArrayList = bundle.getParcelableArrayList(f13992o);
+        ArrayList parcelableArrayList = bundle.getParcelableArrayList(f13621o);
         if (parcelableArrayList == null) {
             d10 = s.r();
         } else {
             d10 = d.d(b.U, parcelableArrayList);
         }
-        return new CueGroup(d10, bundle.getLong(f13993p));
+        return new CueGroup(d10, bundle.getLong(f13622p));
     }
 }

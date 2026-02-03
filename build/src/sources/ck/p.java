@@ -3,24 +3,24 @@ package ck;
 public class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f8446a;
+    private final float f8302a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f8447b;
+    private final float f8303b;
 
     public p(float f10, float f11) {
-        this.f8446a = f10;
-        this.f8447b = f11;
+        this.f8302a = f10;
+        this.f8303b = f11;
     }
 
     private static float a(p pVar, p pVar2, p pVar3) {
-        float f10 = pVar2.f8446a;
-        float f11 = pVar2.f8447b;
-        return ((pVar3.f8446a - f10) * (pVar.f8447b - f11)) - ((pVar3.f8447b - f11) * (pVar.f8446a - f10));
+        float f10 = pVar2.f8302a;
+        float f11 = pVar2.f8303b;
+        return ((pVar3.f8302a - f10) * (pVar.f8303b - f11)) - ((pVar3.f8303b - f11) * (pVar.f8302a - f10));
     }
 
     public static float b(p pVar, p pVar2) {
-        return hk.a.a(pVar.f8446a, pVar.f8447b, pVar2.f8446a, pVar2.f8447b);
+        return hk.a.a(pVar.f8302a, pVar.f8303b, pVar2.f8302a, pVar2.f8303b);
     }
 
     public static void e(p[] pVarArr) {
@@ -54,17 +54,17 @@ public class p {
     }
 
     public final float c() {
-        return this.f8446a;
+        return this.f8302a;
     }
 
     public final float d() {
-        return this.f8447b;
+        return this.f8303b;
     }
 
     public final boolean equals(Object obj) {
         if (obj instanceof p) {
             p pVar = (p) obj;
-            if (this.f8446a == pVar.f8446a && this.f8447b == pVar.f8447b) {
+            if (this.f8302a == pVar.f8302a && this.f8303b == pVar.f8303b) {
                 return true;
             }
         }
@@ -72,10 +72,10 @@ public class p {
     }
 
     public final int hashCode() {
-        return (Float.floatToIntBits(this.f8446a) * 31) + Float.floatToIntBits(this.f8447b);
+        return (Float.floatToIntBits(this.f8302a) * 31) + Float.floatToIntBits(this.f8303b);
     }
 
     public final String toString() {
-        return "(" + this.f8446a + ',' + this.f8447b + ')';
+        return "(" + this.f8302a + ',' + this.f8303b + ')';
     }
 }

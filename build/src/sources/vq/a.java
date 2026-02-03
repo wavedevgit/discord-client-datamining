@@ -1,81 +1,28 @@
 package vq;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
+import java.net.URLEncoder;
+import kotlin.text.Charsets;
+import lu.b;
+import mv.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements h {
+public final class a implements b, o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f51908a;
+    public static final a f51506a = new a();
 
-    public a(b operations) {
-        Intrinsics.checkNotNullParameter(operations, "operations");
-        this.f51908a = operations;
+    private a() {
     }
 
-    private final Object b(Object obj, Object obj2) {
-        if (obj instanceof List) {
-            Iterable<Object> iterable = (Iterable) obj;
-            ArrayList arrayList = new ArrayList(CollectionsKt.w(iterable, 10));
-            for (Object obj3 : iterable) {
-                arrayList.add(b(obj3, obj2));
-            }
-            return arrayList;
-        } else if (!(obj instanceof Map)) {
-            return obj;
-        } else {
-            Map map = (Map) obj;
-            if (map.isEmpty()) {
-                return obj2;
-            }
-            return c(map, obj2);
-        }
+    public String a(Object obj) {
+        return o.a.a(this, obj);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v10, types: [java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r1v12, types: [java.util.Collection, java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r1v9, types: [java.lang.Object] */
-    private final Object c(Map map, Object obj) {
-        Object b10;
-        Object p02 = CollectionsKt.p0(map.keySet());
-        Object obj2 = map.get(p02);
-        if (CollectionsKt.d0(this.f51908a.a().keySet(), p02)) {
-            ku.a aVar = (ku.a) this.f51908a.a().get(p02);
-            if (aVar != null) {
-                return aVar.d(obj2, obj, this);
-            }
-            return null;
+    @Override // lu.b
+    public Object f(Object obj, Object obj2) {
+        String a10 = a(obj);
+        if (a10 != null) {
+            return URLEncoder.encode(a10, Charsets.UTF_8.name());
         }
-        ku.b d10 = d(this.f51908a.b(), p02);
-        if (obj2 instanceof List) {
-            Iterable<Object> iterable = (Iterable) obj2;
-            b10 = new ArrayList(CollectionsKt.w(iterable, 10));
-            for (Object obj3 : iterable) {
-                b10.add(b(obj3, obj));
-            }
-        } else if (obj2 instanceof Map) {
-            b10 = b(obj2, obj);
-        } else {
-            b10 = b(obj2, obj);
-        }
-        return d10.f(b10, obj);
-    }
-
-    private final ku.b d(Map map, Object obj) {
-        ku.b bVar = (ku.b) map.get(obj);
-        if (bVar != null) {
-            return bVar;
-        }
-        throw new f("Operation " + obj + " not found.");
-    }
-
-    @Override // defpackage.h
-    public Object a(Map expression, Object obj) {
-        Intrinsics.checkNotNullParameter(expression, "expression");
-        return b(expression, obj);
+        return null;
     }
 }

@@ -9,15 +9,15 @@ import java.util.Map;
 public final class i5 extends l5 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f15032d;
+    private final int f14661d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final l1 f15033e;
+    private final l1 f14662e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i5(l1 l1Var) {
         l1Var.getClass();
-        this.f15033e = l1Var;
+        this.f14662e = l1Var;
         c2 e10 = l1Var.c().e();
         int i10 = 0;
         while (e10.hasNext()) {
@@ -30,16 +30,17 @@ public final class i5 extends l5 {
             }
         }
         int i11 = i10 + 1;
-        this.f15032d = i11;
+        this.f14661d = i11;
         if (i11 <= 8) {
             return;
         }
         throw new b5("Exceeded cutoff limit for max depth of cbor value");
     }
 
+    /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.google.android.gms.internal.fido.l5
-    protected final int a() {
-        return this.f15032d;
+    public final int a() {
+        return this.f14661d;
     }
 
     @Override // java.lang.Comparable
@@ -53,12 +54,12 @@ public final class i5 extends l5 {
             size = l5.e((byte) -96);
         } else {
             i5 i5Var = (i5) l5Var;
-            if (this.f15033e.size() != i5Var.f15033e.size()) {
-                size = this.f15033e.size();
-                size2 = i5Var.f15033e.size();
+            if (this.f14662e.size() != i5Var.f14662e.size()) {
+                size = this.f14662e.size();
+                size2 = i5Var.f14662e.size();
             } else {
-                c2 e10 = this.f15033e.c().e();
-                c2 e11 = i5Var.f15033e.c().e();
+                c2 e10 = this.f14662e.c().e();
+                c2 e11 = i5Var.f14662e.c().e();
                 do {
                     if (!e10.hasNext() && !e11.hasNext()) {
                         return 0;
@@ -84,23 +85,23 @@ public final class i5 extends l5 {
         if (obj == null || i5.class != obj.getClass()) {
             return false;
         }
-        return this.f15033e.equals(((i5) obj).f15033e);
+        return this.f14662e.equals(((i5) obj).f14662e);
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(l5.e((byte) -96)), this.f15033e});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(l5.e((byte) -96)), this.f14662e});
     }
 
     public final l1 o() {
-        return this.f15033e;
+        return this.f14662e;
     }
 
     public final String toString() {
-        if (this.f15033e.isEmpty()) {
+        if (this.f14662e.isEmpty()) {
             return "{}";
         }
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        c2 e10 = this.f15033e.c().e();
+        c2 e10 = this.f14662e.c().e();
         while (e10.hasNext()) {
             Map.Entry entry = (Map.Entry) e10.next();
             linkedHashMap.put(((l5) entry.getKey()).toString().replace(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, "\n  "), ((l5) entry.getValue()).toString().replace(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, "\n  "));
@@ -116,8 +117,9 @@ public final class i5 extends l5 {
         }
     }
 
+    /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.google.android.gms.internal.fido.l5
-    protected final int zza() {
+    public final int zza() {
         return l5.e((byte) -96);
     }
 }

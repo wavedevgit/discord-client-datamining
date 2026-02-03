@@ -1,6 +1,6 @@
 package app.rive;
 
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;

@@ -18,12 +18,12 @@ public final class R {
     public static final class id {
         public static int add_reaction_image = 0x7f0a007c;
         public static int add_reaction_text = 0x7f0a007d;
-        public static int reaction_count_1 = 0x7f0a0423;
-        public static int reaction_count_2 = 0x7f0a0424;
-        public static int reaction_count_switcher = 0x7f0a0425;
-        public static int reaction_emoji = 0x7f0a0426;
-        public static int reaction_label_left = 0x7f0a0427;
-        public static int reaction_label_right = 0x7f0a0428;
+        public static int reaction_count_1 = 0x7f0a0424;
+        public static int reaction_count_2 = 0x7f0a0425;
+        public static int reaction_count_switcher = 0x7f0a0426;
+        public static int reaction_emoji = 0x7f0a0427;
+        public static int reaction_label_left = 0x7f0a0428;
+        public static int reaction_label_right = 0x7f0a0429;
 
         private id() {
         }

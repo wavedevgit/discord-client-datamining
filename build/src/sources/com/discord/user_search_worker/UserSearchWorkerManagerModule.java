@@ -5,8 +5,8 @@ import com.discord.user_search_worker.react_events.ReturnResultsEvent;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import ir.v;
 import java.util.List;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function3;
@@ -42,7 +42,7 @@ public final class UserSearchWorkerManagerModule extends ReactContextBaseJavaMod
         Intrinsics.checkNotNullParameter(query, "query");
         Intrinsics.checkNotNullParameter(uuid, "uuid");
         userSearchWorkerManagerModule.reactEvents.emitModuleEvent(reactApplicationContext, new ReturnResultsEvent(results, query, uuid, "USER_RESULTS"));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @ReactMethod

@@ -1,259 +1,290 @@
 package vn;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.recyclerview.widget.RecyclerView;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.ButtonSubmitComponentStyle;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyles;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.TextBasedComponentStyle;
-import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
-import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function3;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.FunctionReferenceImpl;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Reflection;
-import kotlin.reflect.KClass;
-import vm.k;
-import vn.d;
-import vn.r2;
+import kotlin.text.CharsKt;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class t implements vm.k {
+public abstract class t {
 
-    /* renamed from: c  reason: collision with root package name */
-    public static final a f51656c = new a(null);
+    /* renamed from: a  reason: collision with root package name */
+    private static final List f51462a = CollectionsKt.o("com.noshufou.android.su", "com.noshufou.android.su.elite", "eu.chainfire.supersu", "com.koushikdutta.superuser", "com.thirdparty.superuser", "com.yellowes.su", "com.topjohnwu.magisk", "com.kingroot.kinguser", "com.kingo.root", "com.smedialink.oneclickroot", "com.zhiqupk.root.global", "com.alephzain.framaroot");
 
     /* renamed from: b  reason: collision with root package name */
-    private final wn.c f51657b;
+    private static final List f51463b = CollectionsKt.o("com.koushikdutta.rommanager", "com.koushikdutta.rommanager.license", "com.dimonvideo.luckypatcher", "com.chelpus.lackypatch", "com.ramdroid.appquarantine", "com.ramdroid.appquarantinepro", "com.android.vending.billing.InAppBillingService.COIN", "com.android.vending.billing.InAppBillingService.LUCK", "com.chelpus.luckypatcher", "com.blackmartalpha", "org.blackmart.market", "com.allinone.free", "com.repodroid.app", "org.creeplays.hack", "com.baseappfull.fwd", "com.zmapp", "com.dv.marketmod.installer", "org.mobilism.android", "com.android.wp.net.log", "com.android.camera.update", "cc.madkite.freedom", "com.solohsu.android.edxp.manager", "org.meowcat.edxposed.manager", "com.xmodgame", "com.cih.game_cih", "com.charles.lpoqasert", "catch_.me_.if_.you_.can_");
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements vm.c0 {
+    /* renamed from: c  reason: collision with root package name */
+    private static final List f51464c = CollectionsKt.o("com.devadvance.rootcloak", "com.devadvance.rootcloakplus", "de.robv.android.xposed.installer", "com.saurik.substrate", "com.zachspong.temprootremovejb", "com.amphoras.hidemyroot", "com.amphoras.hidemyrootadfree", "com.formyhm.hiderootPremium", "com.formyhm.hideroot");
 
-        /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ vm.c0 f51658a;
+    /* renamed from: d  reason: collision with root package name */
+    private static final List f51465d = CollectionsKt.o("/data/local/", "/data/local/bin/", "/data/local/xbin/", "/sbin/", "/su/bin/", "/system/bin/", "/system/bin/.ext/", "/system/bin/failsafe/", "/system/sd/xbin/", "/system/usr/we-need-root/", "/system/xbin/", "/cache/", "/data/", "/dev/");
 
-        /* renamed from: vn.t$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        /* synthetic */ class C0699a extends FunctionReferenceImpl implements Function3 {
+    /* renamed from: e  reason: collision with root package name */
+    private static final List f51466e = CollectionsKt.o("/system", "/system/bin", "/system/sbin", "/system/xbin", "/vendor/bin", "/sbin", "/etc");
 
-            /* renamed from: d  reason: collision with root package name */
-            public static final C0699a f51659d = new C0699a();
+    /* renamed from: f  reason: collision with root package name */
+    private static Boolean f51467f;
 
-            C0699a() {
-                super(3, wn.c.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/document/databinding/Pi2DocumentReviewBinding;", 0);
-            }
+    private static final boolean a(Context context) {
+        return i(context, f51463b);
+    }
 
-            public final wn.c a(LayoutInflater p02, ViewGroup viewGroup, boolean z10) {
-                Intrinsics.checkNotNullParameter(p02, "p0");
-                return wn.c.c(p02, viewGroup, z10);
-            }
+    private static final boolean b(Context context) {
+        return i(context, f51462a);
+    }
 
-            @Override // kotlin.jvm.functions.Function3
-            public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
-                return a((LayoutInflater) obj, (ViewGroup) obj2, ((Boolean) obj3).booleanValue());
-            }
-        }
-
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
-
-            /* renamed from: d  reason: collision with root package name */
-            public static final b f51660d = new b();
-
-            b() {
-                super(1, t.class, "<init>", "<init>(Lcom/withpersona/sdk2/inquiry/document/databinding/Pi2DocumentReviewBinding;)V", 0);
-            }
-
-            @Override // kotlin.jvm.functions.Function1
-            /* renamed from: a */
-            public final t invoke(wn.c p02) {
-                Intrinsics.checkNotNullParameter(p02, "p0");
-                return new t(p02);
+    private static final boolean c(String str) {
+        for (String str2 : f51465d) {
+            if (new File(str2, str).exists()) {
+                return true;
             }
         }
+        return false;
+    }
 
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        @Override // vm.c0
-        /* renamed from: b */
-        public View a(r2.d.b initialRendering, vm.a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
-            Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
-            Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
-            Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f51658a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
-        }
-
-        @Override // vm.c0
-        public KClass getType() {
-            return this.f51658a.getType();
-        }
-
-        private a() {
-            k.a aVar = vm.k.f51283a;
-            this.f51658a = new vm.z(Reflection.getOrCreateKotlinClass(r2.d.b.class), C0699a.f51659d, b.f51660d);
+    private static final boolean d() {
+        boolean z10 = false;
+        Process process = null;
+        try {
+            process = Runtime.getRuntime().exec((String[]) StringsKt.split$default("which su", new String[]{" "}, false, 0, 6, null).toArray(new String[0]));
+            if (new BufferedReader(new InputStreamReader(process.getInputStream())).readLine() != null) {
+                z10 = true;
+            }
+            process.destroy();
+            return z10;
+        } catch (Exception unused) {
+            if (process != null) {
+                process.destroy();
+            }
+            return false;
+        } catch (Throwable th2) {
+            if (process != null) {
+                process.destroy();
+            }
+            throw th2;
         }
     }
 
-    public t(wn.c binding) {
-        Intrinsics.checkNotNullParameter(binding, "binding");
-        this.f51657b = binding;
-        CoordinatorLayout root = binding.getRoot();
-        Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
-        tp.f.d(root, false, false, false, false, 15, null);
-    }
-
-    private final void f(StepStyles.DocumentStepStyle documentStepStyle, vm.a0 a0Var) {
-        ButtonSubmitComponentStyle buttonPrimaryStyleValue;
-        TextBasedComponentStyle disclaimerStyleValue;
-        TextBasedComponentStyle textStyleValue;
-        TextBasedComponentStyle titleStyleValue;
-        Integer headerButtonColorValue;
-        Integer backgroundColorValue;
-        if (documentStepStyle != null && (backgroundColorValue = documentStepStyle.getBackgroundColorValue()) != null) {
-            int intValue = backgroundColorValue.intValue();
-            this.f51657b.getRoot().setBackgroundColor(intValue);
-            sp.c.a(a0Var, intValue);
+    private static final List e(String str) {
+        InputStream inputStream;
+        String str2;
+        try {
+            inputStream = Runtime.getRuntime().exec(str).getInputStream();
+        } catch (IOException unused) {
+            inputStream = null;
         }
-        if (documentStepStyle != null) {
-            Context context = this.f51657b.getRoot().getContext();
-            Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-            Drawable a10 = eq.c.a(documentStepStyle, context);
-            if (a10 != null) {
-                this.f51657b.getRoot().setBackground(a10);
+        try {
+            str2 = new Scanner(inputStream).useDelimiter("\\A").next();
+        } catch (NoSuchElementException unused2) {
+            str2 = "";
+        }
+        String str3 = str2;
+        Intrinsics.checkNotNull(str3);
+        List split$default = StringsKt.split$default(str3, new String[]{ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE}, false, 0, 6, null);
+        if (!split$default.isEmpty()) {
+            ListIterator listIterator = split$default.listIterator(split$default.size());
+            while (listIterator.hasPrevious()) {
+                if (((String) listIterator.previous()).length() != 0) {
+                    return CollectionsKt.a1(split$default, listIterator.nextIndex() + 1);
+                }
             }
         }
-        if (documentStepStyle != null && (headerButtonColorValue = documentStepStyle.getHeaderButtonColorValue()) != null) {
-            this.f51657b.f52732f.setControlsColor(headerButtonColorValue.intValue());
-        }
-        if (documentStepStyle != null && (titleStyleValue = documentStepStyle.getTitleStyleValue()) != null) {
-            TextView title = this.f51657b.f52736j;
-            Intrinsics.checkNotNullExpressionValue(title, "title");
-            cq.f0.n(title, titleStyleValue, null, 2, null);
-        }
-        if (documentStepStyle != null && (textStyleValue = documentStepStyle.getTextStyleValue()) != null) {
-            TextView body = this.f51657b.f52728b;
-            Intrinsics.checkNotNullExpressionValue(body, "body");
-            cq.f0.n(body, textStyleValue, null, 2, null);
-        }
-        if (documentStepStyle != null && (disclaimerStyleValue = documentStepStyle.getDisclaimerStyleValue()) != null) {
-            TextView disclaimer = this.f51657b.f52730d;
-            Intrinsics.checkNotNullExpressionValue(disclaimer, "disclaimer");
-            cq.f0.n(disclaimer, disclaimerStyleValue, null, 2, null);
-        }
-        if (documentStepStyle != null && (buttonPrimaryStyleValue = documentStepStyle.getButtonPrimaryStyleValue()) != null) {
-            Button submitButton = this.f51657b.f52735i;
-            Intrinsics.checkNotNullExpressionValue(submitButton, "submitButton");
-            cq.e.f(submitButton, buttonPrimaryStyleValue, false, false, 6, null);
-        }
+        return CollectionsKt.l();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit h(r2.d.b bVar, d it) {
-        Intrinsics.checkNotNullParameter(it, "it");
-        if (it instanceof d.b) {
-            bVar.k().invoke(it);
+    private static final boolean f() {
+        boolean z10 = false;
+        boolean z11 = true;
+        for (String str : l()) {
+            if (StringsKt.V(str, "[ro.debuggable]", false, 2, null) && StringsKt.V(str, "[1]", false, 2, null)) {
+                z10 = true;
+            } else if (StringsKt.V(str, "[ro.secure]", false, 2, null) && StringsKt.V(str, "[0]", false, 2, null)) {
+                z11 = false;
+            }
         }
-        return Unit.f33298a;
+        if (!z10 || z11) {
+            return false;
+        }
+        return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void i(r2.d.b bVar, View view) {
-        bVar.l().invoke();
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit j(r2.d.b bVar) {
-        bVar.h().invoke();
-        return Unit.f33298a;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit k(r2.d.b bVar) {
-        bVar.i().invoke();
-        return Unit.f33298a;
-    }
-
-    @Override // vm.k
-    /* renamed from: g */
-    public void a(final r2.d.b rendering, vm.a0 viewEnvironment) {
-        x xVar;
+    private static final boolean g() {
+        String str;
+        String str2;
+        int i10;
         boolean z10;
-        Intrinsics.checkNotNullParameter(rendering, "rendering");
-        Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        wn.c cVar = this.f51657b;
-        cVar.f52736j.setText(rendering.r());
-        String n10 = rendering.n();
-        if (n10 != null) {
-            ar.e.b(this.f51657b.getRoot().getContext()).c(cVar.f52728b, n10);
+        for (String str3 : k()) {
+            List split$default = StringsKt.split$default(str3, new String[]{" "}, false, 0, 6, null);
+            if (split$default.size() == 6) {
+                str = (String) split$default.get(2);
+                str2 = (String) split$default.get(5);
+            } else if (split$default.size() == 4) {
+                str = (String) split$default.get(1);
+                str2 = (String) split$default.get(3);
+            } else {
+                continue;
+            }
+            for (String str4 : f51466e) {
+                if (StringsKt.A(str, str4, true)) {
+                    int length = str2.length() - 1;
+                    int i11 = 0;
+                    boolean z11 = false;
+                    while (i11 <= length) {
+                        if (!z11) {
+                            i10 = i11;
+                        } else {
+                            i10 = length;
+                        }
+                        char charAt = str2.charAt(i10);
+                        if (!CharsKt.b(charAt) && charAt != '(' && charAt != ')') {
+                            z10 = false;
+                        } else {
+                            z10 = true;
+                        }
+                        if (!z11) {
+                            if (!z10) {
+                                z11 = true;
+                            } else {
+                                i11++;
+                            }
+                        } else if (!z10) {
+                            break;
+                        } else {
+                            length--;
+                        }
+                    }
+                    for (String str5 : StringsKt.split$default(str2.subSequence(i11, length + 1).toString(), new String[]{","}, false, 0, 6, null)) {
+                        if (StringsKt.A(str5, "rw", true)) {
+                            return true;
+                        }
+                    }
+                    continue;
+                }
+            }
+            continue;
         }
-        cVar.f52730d.setText(rendering.c());
-        if (cVar.f52733g.getAdapter() == null) {
-            Context context = this.f51657b.getRoot().getContext();
-            Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-            xVar = new x(context, rendering.f(), rendering.m(), rendering.o());
-            cVar.f52733g.setAdapter(xVar);
-        } else {
-            RecyclerView.Adapter adapter = cVar.f52733g.getAdapter();
-            Intrinsics.checkNotNull(adapter, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.document.DocumentTileAdapter");
-            xVar = (x) adapter;
+        return false;
+    }
+
+    private static final boolean h() {
+        String str = Build.TAGS;
+        String str2 = Build.FINGERPRINT;
+        String str3 = Build.PRODUCT;
+        String str4 = Build.HARDWARE;
+        String str5 = Build.DISPLAY;
+        if (str != null) {
+            if (!StringsKt.V(str, "test-keys", false, 2, null)) {
+                Intrinsics.checkNotNull(str2);
+                if (!StringsKt.V(str2, "genric.*test-keys", false, 2, null)) {
+                    Intrinsics.checkNotNull(str3);
+                    if (!StringsKt.V(str3, "generic", false, 2, null) && !StringsKt.V(str3, "sdk", false, 2, null)) {
+                        Intrinsics.checkNotNull(str4);
+                        if (!StringsKt.V(str4, "goldfish", false, 2, null)) {
+                            Intrinsics.checkNotNull(str5);
+                            if (StringsKt.V(str5, ".*test-keys", false, 2, null)) {
+                                return true;
+                            }
+                        } else {
+                            return true;
+                        }
+                    } else {
+                        return true;
+                    }
+                } else {
+                    return true;
+                }
+            } else {
+                return true;
+            }
         }
-        if (!rendering.b() && rendering.a()) {
-            z10 = true;
-        } else {
-            z10 = false;
+        return false;
+    }
+
+    private static final boolean i(Context context, List list) {
+        PackageManager packageManager = context.getPackageManager();
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            String str = (String) it.next();
+            try {
+                if (Build.VERSION.SDK_INT >= 33) {
+                    packageManager.getPackageInfo(str, PackageManager.PackageInfoFlags.of(0L));
+                    return true;
+                }
+                packageManager.getPackageInfo(str, 0);
+                return true;
+            } catch (PackageManager.NameNotFoundException unused) {
+            }
         }
-        xVar.i(z10, rendering.d());
-        xVar.h(new Function1() { // from class: vn.p
-            @Override // kotlin.jvm.functions.Function1
-            public final Object invoke(Object obj) {
-                Unit h10;
-                h10 = t.h(r2.d.b.this, (d) obj);
-                return h10;
-            }
-        });
-        cVar.f52735i.setText(rendering.q());
-        cVar.f52735i.setEnabled(rendering.p());
-        cVar.f52735i.setOnClickListener(new View.OnClickListener() { // from class: vn.q
-            @Override // android.view.View.OnClickListener
-            public final void onClick(View view) {
-                t.i(r2.d.b.this, view);
-            }
-        });
-        rp.a g10 = rendering.g();
-        Function0 function0 = new Function0() { // from class: vn.r
-            @Override // kotlin.jvm.functions.Function0
-            public final Object invoke() {
-                Unit j10;
-                j10 = t.j(r2.d.b.this);
-                return j10;
-            }
-        };
-        Function0 function02 = new Function0() { // from class: vn.s
-            @Override // kotlin.jvm.functions.Function0
-            public final Object invoke() {
-                Unit k10;
-                k10 = t.k(r2.d.b.this);
-                return k10;
-            }
-        };
-        Pi2NavigationBar navigationBar = cVar.f52732f;
-        Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
-        CoordinatorLayout root = cVar.getRoot();
-        Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
-        rp.e.b(g10, function0, function02, navigationBar, root);
-        CoordinatorLayout root2 = this.f51657b.getRoot();
-        Intrinsics.checkNotNullExpressionValue(root2, "getRoot(...)");
-        jp.z.a(root2, rendering.e(), rendering.j(), this.f51657b.f52735i, 4, 10000);
-        f(rendering.o(), viewEnvironment);
+        return false;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:24:0x0047, code lost:
+        if (d() != false) goto L29;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static final boolean j(android.content.Context r2) {
+        /*
+            java.lang.String r0 = "<this>"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r2, r0)
+            java.lang.Boolean r0 = vn.t.f51467f
+            if (r0 == 0) goto Le
+            boolean r2 = r0.booleanValue()
+            return r2
+        Le:
+            r0 = 0
+            boolean r1 = b(r2)     // Catch: java.lang.Exception -> L4a
+            if (r1 != 0) goto L49
+            boolean r2 = a(r2)     // Catch: java.lang.Exception -> L4a
+            if (r2 != 0) goto L49
+            java.lang.String r2 = "su"
+            boolean r2 = c(r2)     // Catch: java.lang.Exception -> L4a
+            if (r2 != 0) goto L49
+            java.lang.String r2 = "magisk"
+            boolean r2 = c(r2)     // Catch: java.lang.Exception -> L4a
+            if (r2 != 0) goto L49
+            boolean r2 = f()     // Catch: java.lang.Exception -> L4a
+            if (r2 != 0) goto L49
+            boolean r2 = g()     // Catch: java.lang.Exception -> L4a
+            if (r2 != 0) goto L49
+            boolean r2 = h()     // Catch: java.lang.Exception -> L4a
+            if (r2 == 0) goto L43
+            boolean r2 = vn.h.a()     // Catch: java.lang.Exception -> L4a
+            if (r2 == 0) goto L49
+        L43:
+            boolean r2 = d()     // Catch: java.lang.Exception -> L4a
+            if (r2 == 0) goto L4a
+        L49:
+            r0 = 1
+        L4a:
+            java.lang.Boolean r2 = java.lang.Boolean.valueOf(r0)
+            vn.t.f51467f = r2
+            return r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: vn.t.j(android.content.Context):boolean");
+    }
+
+    private static final List k() {
+        return e("mount");
+    }
+
+    private static final List l() {
+        return e("getprop");
     }
 }

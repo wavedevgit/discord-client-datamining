@@ -1,89 +1,30 @@
 package vs;
 
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface g {
+public final class g implements e {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a implements g {
+    /* renamed from: a  reason: collision with root package name */
+    private final Function1 f51517a;
 
-        /* renamed from: a  reason: collision with root package name */
-        private final Object f51917a;
+    /* renamed from: b  reason: collision with root package name */
+    private final int f51518b;
 
-        public a(Object conflicting) {
-            Intrinsics.checkNotNullParameter(conflicting, "conflicting");
-            this.f51917a = conflicting;
+    /* renamed from: c  reason: collision with root package name */
+    private final Integer f51519c;
+
+    public g(Function1 number, int i10, Integer num) {
+        Intrinsics.checkNotNullParameter(number, "number");
+        this.f51517a = number;
+        this.f51518b = i10;
+        this.f51519c = num;
+        if (i10 >= 0) {
+            if (i10 <= 9) {
+                return;
+            }
+            throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") exceeds the length of an Int").toString());
         }
-
-        @Override // vs.g
-        public String a() {
-            return "attempted to overwrite the existing value '" + this.f51917a + '\'';
-        }
+        throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") is negative").toString());
     }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b implements g {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final b f51918a = new b();
-
-        private b() {
-        }
-
-        @Override // vs.g
-        public String a() {
-            return "expected an Int value";
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class c implements g {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final int f51919a;
-
-        public c(int i10) {
-            this.f51919a = i10;
-        }
-
-        @Override // vs.g
-        public String a() {
-            return "expected at least " + this.f51919a + " digits";
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class d implements g {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final int f51920a;
-
-        public d(int i10) {
-            this.f51920a = i10;
-        }
-
-        @Override // vs.g
-        public String a() {
-            return "expected at most " + this.f51920a + " digits";
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class e implements g {
-
-        /* renamed from: a  reason: collision with root package name */
-        private final String f51921a;
-
-        public e(String expected) {
-            Intrinsics.checkNotNullParameter(expected, "expected");
-            this.f51921a = expected;
-        }
-
-        @Override // vs.g
-        public String a() {
-            return "expected '" + this.f51921a + '\'';
-        }
-    }
-
-    String a();
 }

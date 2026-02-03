@@ -18,25 +18,25 @@ import kotlin.jvm.internal.Intrinsics;
 public final class RNGestureHandlerRootHelper {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f19071g = new a(null);
+    public static final a f18704g = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReactContext f19072a;
+    private final ReactContext f18705a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final cn.i f19073b;
+    private final dn.i f18706b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final cn.d f19074c;
+    private final dn.d f18707c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ViewGroup f19075d;
+    private final ViewGroup f18708d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f19076e;
+    private boolean f18709e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f19077f;
+    private boolean f18710f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -62,16 +62,16 @@ public final class RNGestureHandlerRootHelper {
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public final class b extends cn.d {
+    public final class b extends dn.d {
         public b(int i10) {
             I0(i10);
         }
 
         private final void U0(MotionEvent motionEvent) {
-            cn.i P;
-            if (S() == 0 && (!RNGestureHandlerRootHelper.this.f19076e || (P = P()) == null || !P.v())) {
+            dn.i P;
+            if (S() == 0 && (!RNGestureHandlerRootHelper.this.f18709e || (P = P()) == null || !P.v())) {
                 p();
-                RNGestureHandlerRootHelper.this.f19076e = false;
+                RNGestureHandlerRootHelper.this.f18709e = false;
             }
             if (motionEvent.getActionMasked() != 1 && motionEvent.getActionMasked() != 10) {
                 return;
@@ -79,9 +79,9 @@ public final class RNGestureHandlerRootHelper {
             B();
         }
 
-        @Override // cn.d
+        @Override // dn.d
         protected void j0() {
-            RNGestureHandlerRootHelper.this.f19076e = true;
+            RNGestureHandlerRootHelper.this.f18709e = true;
             long uptimeMillis = SystemClock.uptimeMillis();
             MotionEvent obtain = MotionEvent.obtain(uptimeMillis, uptimeMillis, 3, 0.0f, 0.0f, 0);
             obtain.setAction(3);
@@ -93,14 +93,14 @@ public final class RNGestureHandlerRootHelper {
             obtain.recycle();
         }
 
-        @Override // cn.d
+        @Override // dn.d
         protected void l0(MotionEvent event, MotionEvent sourceEvent) {
             Intrinsics.checkNotNullParameter(event, "event");
             Intrinsics.checkNotNullParameter(sourceEvent, "sourceEvent");
             U0(event);
         }
 
-        @Override // cn.d
+        @Override // dn.d
         protected void m0(MotionEvent event, MotionEvent sourceEvent) {
             Intrinsics.checkNotNullParameter(event, "event");
             Intrinsics.checkNotNullParameter(sourceEvent, "sourceEvent");
@@ -111,21 +111,21 @@ public final class RNGestureHandlerRootHelper {
     public RNGestureHandlerRootHelper(ReactContext context, ViewGroup wrappedView) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(wrappedView, "wrappedView");
-        this.f19072a = context;
+        this.f18705a = context;
         UiThreadUtil.assertOnUiThread();
         int id2 = wrappedView.getId();
         NativeModule nativeModule = context.getNativeModule(RNGestureHandlerModule.class);
         Intrinsics.checkNotNull(nativeModule);
         RNGestureHandlerModule rNGestureHandlerModule = (RNGestureHandlerModule) nativeModule;
         i registry = rNGestureHandlerModule.getRegistry();
-        ViewGroup b10 = f19071g.b(wrappedView);
-        this.f19075d = b10;
+        ViewGroup b10 = f18704g.b(wrappedView);
+        this.f18708d = b10;
         Log.i(ReactConstants.TAG, "[GESTURE HANDLER] Initialize gesture handler for root view " + b10);
-        cn.i iVar = new cn.i(wrappedView, registry, new m(), b10);
+        dn.i iVar = new dn.i(wrappedView, registry, new m(), b10);
         iVar.F(0.1f);
-        this.f19073b = iVar;
+        this.f18706b = iVar;
         b bVar = new b(-id2);
-        this.f19074c = bVar;
+        this.f18707c = bVar;
         registry.j(bVar);
         registry.c(bVar.T(), id2, 3);
         rNGestureHandlerModule.registerRootHelper(this);
@@ -137,7 +137,7 @@ public final class RNGestureHandlerRootHelper {
     }
 
     private final void k() {
-        cn.d dVar = this.f19074c;
+        dn.d dVar = this.f18707c;
         if (dVar != null && dVar.S() == 2) {
             dVar.k();
             dVar.B();
@@ -146,7 +146,7 @@ public final class RNGestureHandlerRootHelper {
 
     public final void d(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
-        cn.i iVar = this.f19073b;
+        dn.i iVar = this.f18706b;
         if (iVar != null) {
             iVar.f(view);
         }
@@ -154,16 +154,16 @@ public final class RNGestureHandlerRootHelper {
 
     public final boolean e(MotionEvent event) {
         Intrinsics.checkNotNullParameter(event, "event");
-        this.f19077f = true;
-        cn.i iVar = this.f19073b;
+        this.f18710f = true;
+        dn.i iVar = this.f18706b;
         Intrinsics.checkNotNull(iVar);
         iVar.B(event);
-        this.f19077f = false;
-        return this.f19076e;
+        this.f18710f = false;
+        return this.f18709e;
     }
 
     public final ViewGroup f() {
-        return this.f19075d;
+        return this.f18708d;
     }
 
     public final void g(int i10, boolean z10) {
@@ -178,21 +178,21 @@ public final class RNGestureHandlerRootHelper {
     }
 
     public final void i() {
-        if (this.f19073b != null && !this.f19077f) {
+        if (this.f18706b != null && !this.f18710f) {
             k();
         }
     }
 
     public final void j() {
-        ViewGroup viewGroup = this.f19075d;
+        ViewGroup viewGroup = this.f18708d;
         Log.i(ReactConstants.TAG, "[GESTURE HANDLER] Tearing down gesture handler registered for root view " + viewGroup);
-        ReactContext reactContext = this.f19072a;
+        ReactContext reactContext = this.f18705a;
         Intrinsics.checkNotNull(reactContext, "null cannot be cast to non-null type com.facebook.react.uimanager.ThemedReactContext");
         NativeModule nativeModule = ((ThemedReactContext) reactContext).getReactApplicationContext().getNativeModule(RNGestureHandlerModule.class);
         Intrinsics.checkNotNull(nativeModule);
         RNGestureHandlerModule rNGestureHandlerModule = (RNGestureHandlerModule) nativeModule;
         i registry = rNGestureHandlerModule.getRegistry();
-        cn.d dVar = this.f19074c;
+        dn.d dVar = this.f18707c;
         Intrinsics.checkNotNull(dVar);
         registry.g(dVar.T());
         rNGestureHandlerModule.unregisterRootHelper(this);

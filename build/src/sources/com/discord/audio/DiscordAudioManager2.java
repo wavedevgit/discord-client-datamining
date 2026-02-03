@@ -94,7 +94,7 @@ public final class DiscordAudioManager2 implements DiscordAudioManagerInterface,
     public static final Unit emitEffectiveDevice$lambda$6(AndroidAudioDevice androidAudioDevice, DiscordAudioManagerListener listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
         listener.onActiveAudioDeviceChanged(androidAudioDevice);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

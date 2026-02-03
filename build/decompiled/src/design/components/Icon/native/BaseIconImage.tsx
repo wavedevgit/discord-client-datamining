@@ -72,15 +72,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/BaseIconImage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun27220: for (var _fun27220_ip = 0;;) switch (_fun27220_ip) {
+        _fun27310: for (var _fun27310_ip = 0;;) switch (_fun27310_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.source;
                 var9 = var0.size;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun27220_ip = 23;
-                    continue _fun27220
+                    _fun27310_ip = 23;
+                    continue _fun27310
                 }
             case 19:
                 var9 = 'md';
@@ -99,14 +99,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var1)(var2);
                 var0 = null;
                 if (!(var0 == var1)) {
-                    _fun27220_ip = 123;
-                    continue _fun27220
+                    _fun27310_ip = 123;
+                    continue _fun27310
                 }
             case 88:
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun27220_ip = 106;
-                    continue _fun27220
+                    _fun27310_ip = 106;
+                    continue _fun27310
                 }
             case 95:
                 var12 = 'string';
@@ -115,15 +115,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 106:
                 var8 = undefined;
                 if (!var0) {
-                    _fun27220_ip = 133;
-                    continue _fun27220
+                    _fun27310_ip = 133;
+                    continue _fun27310
                 }
             case 111:
                 var0 = {};
                 var0.tintColor = var2;
                 var8 = var0;
-                _fun27220_ip = 133;
-                continue _fun27220;
+                _fun27310_ip = 133;
+                continue _fun27310;
             case 123:
                 var0 = {};
                 var0.tintColor = var1;
@@ -151,4 +151,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.BaseIconImage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3112, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3142, 2]);

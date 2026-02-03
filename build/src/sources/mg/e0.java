@@ -8,25 +8,25 @@ import java.util.List;
 class e0 implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    final Iterator f38172d;
+    final Iterator f38152d;
 
     /* renamed from: e  reason: collision with root package name */
-    final Collection f38173e;
+    final Collection f38153e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ f0 f38174i;
+    final /* synthetic */ f0 f38154i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e0(f0 f0Var, Iterator it) {
-        this.f38174i = f0Var;
-        this.f38173e = f0Var.f38193e;
-        this.f38172d = it;
+        this.f38154i = f0Var;
+        this.f38153e = f0Var.f38173e;
+        this.f38152d = it;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void a() {
-        this.f38174i.zzb();
-        if (this.f38174i.f38193e == this.f38173e) {
+        this.f38154i.zzb();
+        if (this.f38154i.f38173e == this.f38153e) {
             return;
         }
         throw new ConcurrentModificationException();
@@ -35,36 +35,36 @@ class e0 implements Iterator {
     @Override // java.util.Iterator
     public final boolean hasNext() {
         a();
-        return this.f38172d.hasNext();
+        return this.f38152d.hasNext();
     }
 
     @Override // java.util.Iterator
     public final Object next() {
         a();
-        return this.f38172d.next();
+        return this.f38152d.next();
     }
 
     @Override // java.util.Iterator
     public final void remove() {
         int i10;
-        this.f38172d.remove();
-        i0 i0Var = this.f38174i.f38196p;
-        i10 = i0Var.f38274o;
-        i0Var.f38274o = i10 - 1;
-        this.f38174i.c();
+        this.f38152d.remove();
+        i0 i0Var = this.f38154i.f38176p;
+        i10 = i0Var.f38254o;
+        i0Var.f38254o = i10 - 1;
+        this.f38154i.c();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e0(f0 f0Var) {
         Iterator it;
-        this.f38174i = f0Var;
-        Collection collection = f0Var.f38193e;
-        this.f38173e = collection;
+        this.f38154i = f0Var;
+        Collection collection = f0Var.f38173e;
+        this.f38153e = collection;
         if (collection instanceof List) {
             it = ((List) collection).listIterator();
         } else {
             it = collection.iterator();
         }
-        this.f38172d = it;
+        this.f38152d = it;
     }
 }

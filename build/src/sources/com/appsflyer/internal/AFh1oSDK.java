@@ -189,7 +189,7 @@ public final class AFh1oSDK implements AFh1qSDK {
             long longValue = l10.longValue();
             Map<String, Object> monetizationNetwork = com.appsflyer.internal.AFa1uSDK.getMonetizationNetwork(map);
             Intrinsics.checkNotNullExpressionValue(monetizationNetwork, "");
-            monetizationNetwork.put("migration", o0.f(ir.v.a("delay", Long.valueOf(longValue))));
+            monetizationNetwork.put("migration", o0.f(jr.v.a("delay", Long.valueOf(longValue))));
         }
     }
 

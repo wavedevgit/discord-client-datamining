@@ -13,10 +13,10 @@ import java.security.NoSuchAlgorithmException;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f50090a;
+    private final e f50146a;
 
     public g(e eVar) {
-        this.f50090a = eVar;
+        this.f50146a = eVar;
     }
 
     private static String b(String str, c cVar, boolean z10) {
@@ -24,7 +24,7 @@ public class g {
         if (z10) {
             str2 = cVar.d();
         } else {
-            str2 = cVar.f50089d;
+            str2 = cVar.f50145d;
         }
         String replaceAll = str.replaceAll("\\W+", "");
         int length = 242 - str2.length();
@@ -64,7 +64,7 @@ public class g {
     }
 
     private File e() {
-        File a10 = this.f50090a.a();
+        File a10 = this.f50146a.a();
         if (a10.isFile()) {
             a10.delete();
         }

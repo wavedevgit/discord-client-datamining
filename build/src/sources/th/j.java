@@ -12,7 +12,7 @@ import java.util.Iterator;
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final k0 f49567a = new k0("PhoneskyVerificationUtils");
+    private static final k0 f49839a = new k0("PhoneskyVerificationUtils");
 
     public static boolean a(Context context) {
         String[] packagesForUid = context.getPackageManager().getPackagesForUid(Binder.getCallingUid());
@@ -25,7 +25,7 @@ public abstract class j {
     public static boolean b(Context context) {
         try {
             if (!context.getPackageManager().getApplicationInfo("com.android.vending", 0).enabled) {
-                f49567a.e("Play Store package is disabled.", new Object[0]);
+                f49839a.e("Play Store package is disabled.", new Object[0]);
             } else {
                 try {
                     Signature[] signatureArr = context.getPackageManager().getPackageInfo("com.android.vending", 64).signatures;
@@ -43,7 +43,7 @@ public abstract class j {
                                 return true;
                             }
                         }
-                        k0 k0Var = f49567a;
+                        k0 k0Var = f49839a;
                         StringBuilder sb2 = new StringBuilder();
                         Iterator it = arrayList.iterator();
                         if (it.hasNext()) {
@@ -57,14 +57,14 @@ public abstract class j {
                         }
                         k0Var.e(String.format("Play Store package certs are not valid. Found these sha256 certs: [%s].", sb2.toString()), new Object[0]);
                     } else {
-                        f49567a.e("Play Store package is not signed -- possibly self-built package. Could not verify.", new Object[0]);
+                        f49839a.e("Play Store package is not signed -- possibly self-built package. Could not verify.", new Object[0]);
                     }
                 } catch (PackageManager.NameNotFoundException unused) {
-                    f49567a.e("Play Store package is not found.", new Object[0]);
+                    f49839a.e("Play Store package is not found.", new Object[0]);
                 }
             }
         } catch (PackageManager.NameNotFoundException unused2) {
-            f49567a.e("Play Store package is not found.", new Object[0]);
+            f49839a.e("Play Store package is not found.", new Object[0]);
         }
         return false;
     }

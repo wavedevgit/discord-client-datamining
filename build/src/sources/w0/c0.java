@@ -14,35 +14,35 @@ public abstract /* synthetic */ class c0 {
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f52011d;
+        int f51578d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f52012e;
+        private /* synthetic */ Object f51579e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function2 f52013i;
+        final /* synthetic */ Function2 f51580i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ q f52014o;
+        final /* synthetic */ q f51581o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Function2 function2, q qVar, Continuation continuation) {
             super(2, continuation);
-            this.f52013i = function2;
-            this.f52014o = qVar;
+            this.f51580i = function2;
+            this.f51581o = qVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            a aVar = new a(this.f52013i, this.f52014o, continuation);
-            aVar.f52012e = obj;
+            a aVar = new a(this.f51580i, this.f51581o, continuation);
+            aVar.f51579e = obj;
             return aVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = or.b.f();
-            int i10 = this.f52011d;
+            Object f10 = pr.b.f();
+            int i10 = this.f51578d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -51,19 +51,19 @@ public abstract /* synthetic */ class c0 {
                 }
             } else {
                 kotlin.c.b(obj);
-                Function2 function2 = this.f52013i;
-                v vVar = new v(this.f52014o, ((CoroutineScope) this.f52012e).getCoroutineContext());
-                this.f52011d = 1;
+                Function2 function2 = this.f51580i;
+                v vVar = new v(this.f51581o, ((CoroutineScope) this.f51579e).getCoroutineContext());
+                this.f51578d = 1;
                 if (function2.invoke(vVar, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
@@ -72,35 +72,35 @@ public abstract /* synthetic */ class c0 {
     public static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f52015d;
+        int f51582d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f52016e;
+        private /* synthetic */ Object f51583e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function2 f52017i;
+        final /* synthetic */ Function2 f51584i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ q f52018o;
+        final /* synthetic */ q f51585o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Function2 function2, q qVar, Continuation continuation) {
             super(2, continuation);
-            this.f52017i = function2;
-            this.f52018o = qVar;
+            this.f51584i = function2;
+            this.f51585o = qVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            b bVar = new b(this.f52017i, this.f52018o, continuation);
-            bVar.f52016e = obj;
+            b bVar = new b(this.f51584i, this.f51585o, continuation);
+            bVar.f51583e = obj;
             return bVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = or.b.f();
-            int i10 = this.f52015d;
+            Object f10 = pr.b.f();
+            int i10 = this.f51582d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -109,19 +109,19 @@ public abstract /* synthetic */ class c0 {
                 }
             } else {
                 kotlin.c.b(obj);
-                Function2 function2 = this.f52017i;
-                v vVar = new v(this.f52018o, ((CoroutineScope) this.f52016e).getCoroutineContext());
-                this.f52015d = 1;
+                Function2 function2 = this.f51584i;
+                v vVar = new v(this.f51585o, ((CoroutineScope) this.f51583e).getCoroutineContext());
+                this.f51582d = 1;
                 if (function2.invoke(vVar, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
@@ -130,15 +130,15 @@ public abstract /* synthetic */ class c0 {
             c.e(1807205155, i10, -1, "androidx.compose.runtime.produceState (ProduceState.kt:170)");
         }
         Object d10 = aVar.d();
-        a.C0708a c0708a = w0.a.f52001a;
-        if (d10 == c0708a.a()) {
+        a.C0695a c0695a = w0.a.f51568a;
+        if (d10 == c0695a.a()) {
             d10 = e0.b(obj, null, 2, null);
             aVar.c(d10);
         }
         q qVar = (q) d10;
         boolean e10 = aVar.e(function2);
         Object d11 = aVar.d();
-        if (e10 || d11 == c0708a.a()) {
+        if (e10 || d11 == c0695a.a()) {
             d11 = new b(function2, qVar, null);
             aVar.c(d11);
         }
@@ -154,15 +154,15 @@ public abstract /* synthetic */ class c0 {
             c.e(-1928268701, i10, -1, "androidx.compose.runtime.produceState (ProduceState.kt:107)");
         }
         Object d10 = aVar.d();
-        a.C0708a c0708a = w0.a.f52001a;
-        if (d10 == c0708a.a()) {
+        a.C0695a c0695a = w0.a.f51568a;
+        if (d10 == c0695a.a()) {
             d10 = e0.b(obj, null, 2, null);
             aVar.c(d10);
         }
         q qVar = (q) d10;
         boolean e10 = aVar.e(function2);
         Object d11 = aVar.d();
-        if (e10 || d11 == c0708a.a()) {
+        if (e10 || d11 == c0695a.a()) {
             d11 = new a(function2, qVar, null);
             aVar.c(d11);
         }

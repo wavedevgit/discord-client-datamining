@@ -13,7 +13,7 @@ import java.util.concurrent.Future;
 public abstract class WorkletsMessageQueueThreadBase implements MessageQueueThread {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final MessageQueueThreadImpl f19401a = MessageQueueThreadImpl.create(MessageQueueThreadSpec.mainThreadSpec(), new QueueThreadExceptionHandler() { // from class: com.swmansion.worklets.c
+    protected final MessageQueueThreadImpl f19034a = MessageQueueThreadImpl.create(MessageQueueThreadSpec.mainThreadSpec(), new QueueThreadExceptionHandler() { // from class: com.swmansion.worklets.c
         @Override // com.facebook.react.bridge.queue.QueueThreadExceptionHandler
         public final void handleException(Exception exc) {
             WorkletsMessageQueueThreadBase.a(exc);
@@ -26,30 +26,30 @@ public abstract class WorkletsMessageQueueThreadBase implements MessageQueueThre
 
     @Override // com.facebook.react.bridge.queue.MessageQueueThread
     public void assertIsOnThread() {
-        this.f19401a.assertIsOnThread();
+        this.f19034a.assertIsOnThread();
     }
 
     @Override // com.facebook.react.bridge.queue.MessageQueueThread
     public Future callOnQueue(Callable callable) {
-        return this.f19401a.callOnQueue(callable);
+        return this.f19034a.callOnQueue(callable);
     }
 
     @Override // com.facebook.react.bridge.queue.MessageQueueThread
     public MessageQueueThreadPerfStats getPerfStats() {
-        return this.f19401a.getPerfStats();
+        return this.f19034a.getPerfStats();
     }
 
     @Override // com.facebook.react.bridge.queue.MessageQueueThread
     public boolean isOnThread() {
-        return this.f19401a.isOnThread();
+        return this.f19034a.isOnThread();
     }
 
     @Override // com.facebook.react.bridge.queue.MessageQueueThread
     public void quitSynchronous() {
         try {
-            Field declaredField = this.f19401a.getClass().getDeclaredField("mIsFinished");
+            Field declaredField = this.f19034a.getClass().getDeclaredField("mIsFinished");
             declaredField.setAccessible(true);
-            declaredField.set(this.f19401a, Boolean.TRUE);
+            declaredField.set(this.f19034a, Boolean.TRUE);
             declaredField.setAccessible(false);
         } catch (IllegalAccessException | NoSuchFieldException e10) {
             e10.printStackTrace();
@@ -58,11 +58,11 @@ public abstract class WorkletsMessageQueueThreadBase implements MessageQueueThre
 
     @Override // com.facebook.react.bridge.queue.MessageQueueThread
     public void resetPerfStats() {
-        this.f19401a.resetPerfStats();
+        this.f19034a.resetPerfStats();
     }
 
     @Override // com.facebook.react.bridge.queue.MessageQueueThread
     public void assertIsOnThread(String str) {
-        this.f19401a.assertIsOnThread(str);
+        this.f19034a.assertIsOnThread(str);
     }
 }

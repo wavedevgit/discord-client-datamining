@@ -6,16 +6,16 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class e implements ThreadFactory {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final AtomicInteger f53237d = new AtomicInteger(1);
+    private static final AtomicInteger f53445d = new AtomicInteger(1);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ThreadGroup f53238a;
+    private final ThreadGroup f53446a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final AtomicInteger f53239b = new AtomicInteger(1);
+    private final AtomicInteger f53447b = new AtomicInteger(1);
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f53240c;
+    private final String f53448c;
 
     public e() {
         ThreadGroup threadGroup;
@@ -25,14 +25,14 @@ public class e implements ThreadFactory {
         } else {
             threadGroup = securityManager.getThreadGroup();
         }
-        this.f53238a = threadGroup;
-        this.f53240c = "lottie-" + f53237d.getAndIncrement() + "-thread-";
+        this.f53446a = threadGroup;
+        this.f53448c = "lottie-" + f53445d.getAndIncrement() + "-thread-";
     }
 
     @Override // java.util.concurrent.ThreadFactory
     public Thread newThread(Runnable runnable) {
-        ThreadGroup threadGroup = this.f53238a;
-        Thread thread = new Thread(threadGroup, runnable, this.f53240c + this.f53239b.getAndIncrement(), 0L);
+        ThreadGroup threadGroup = this.f53446a;
+        Thread thread = new Thread(threadGroup, runnable, this.f53448c + this.f53447b.getAndIncrement(), 0L);
         thread.setDaemon(false);
         thread.setPriority(10);
         return thread;

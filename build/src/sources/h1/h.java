@@ -7,49 +7,49 @@ public class h implements Comparable {
     private static int C = 1;
 
     /* renamed from: d  reason: collision with root package name */
-    public boolean f27290d;
+    public boolean f27463d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f27291e;
+    private String f27464e;
 
     /* renamed from: q  reason: collision with root package name */
-    public float f27295q;
+    public float f27468q;
 
     /* renamed from: u  reason: collision with root package name */
-    a f27299u;
+    a f27472u;
 
     /* renamed from: i  reason: collision with root package name */
-    public int f27292i = -1;
+    public int f27465i = -1;
 
     /* renamed from: o  reason: collision with root package name */
-    int f27293o = -1;
+    int f27466o = -1;
 
     /* renamed from: p  reason: collision with root package name */
-    public int f27294p = 0;
+    public int f27467p = 0;
 
     /* renamed from: r  reason: collision with root package name */
-    public boolean f27296r = false;
+    public boolean f27469r = false;
 
     /* renamed from: s  reason: collision with root package name */
-    float[] f27297s = new float[9];
+    float[] f27470s = new float[9];
 
     /* renamed from: t  reason: collision with root package name */
-    float[] f27298t = new float[9];
+    float[] f27471t = new float[9];
 
     /* renamed from: v  reason: collision with root package name */
-    b[] f27300v = new b[16];
+    b[] f27473v = new b[16];
 
     /* renamed from: w  reason: collision with root package name */
-    int f27301w = 0;
+    int f27474w = 0;
 
     /* renamed from: x  reason: collision with root package name */
-    public int f27302x = 0;
+    public int f27475x = 0;
 
     /* renamed from: y  reason: collision with root package name */
-    boolean f27303y = false;
+    boolean f27476y = false;
 
     /* renamed from: z  reason: collision with root package name */
-    int f27304z = -1;
+    int f27477z = -1;
     float A = 0.0f;
     HashSet B = null;
 
@@ -63,7 +63,7 @@ public class h implements Comparable {
     }
 
     public h(a aVar, String str) {
-        this.f27299u = aVar;
+        this.f27472u = aVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -74,21 +74,21 @@ public class h implements Comparable {
     public final void a(b bVar) {
         int i10 = 0;
         while (true) {
-            int i11 = this.f27301w;
+            int i11 = this.f27474w;
             if (i10 < i11) {
-                if (this.f27300v[i10] == bVar) {
+                if (this.f27473v[i10] == bVar) {
                     return;
                 }
                 i10++;
             } else {
-                b[] bVarArr = this.f27300v;
+                b[] bVarArr = this.f27473v;
                 if (i11 >= bVarArr.length) {
-                    this.f27300v = (b[]) Arrays.copyOf(bVarArr, bVarArr.length * 2);
+                    this.f27473v = (b[]) Arrays.copyOf(bVarArr, bVarArr.length * 2);
                 }
-                b[] bVarArr2 = this.f27300v;
-                int i12 = this.f27301w;
+                b[] bVarArr2 = this.f27473v;
+                int i12 = this.f27474w;
                 bVarArr2[i12] = bVar;
-                this.f27301w = i12 + 1;
+                this.f27474w = i12 + 1;
                 return;
             }
         }
@@ -97,21 +97,21 @@ public class h implements Comparable {
     @Override // java.lang.Comparable
     /* renamed from: d */
     public int compareTo(h hVar) {
-        return this.f27292i - hVar.f27292i;
+        return this.f27465i - hVar.f27465i;
     }
 
     public final void f(b bVar) {
-        int i10 = this.f27301w;
+        int i10 = this.f27474w;
         int i11 = 0;
         while (i11 < i10) {
-            if (this.f27300v[i11] == bVar) {
+            if (this.f27473v[i11] == bVar) {
                 while (i11 < i10 - 1) {
-                    b[] bVarArr = this.f27300v;
+                    b[] bVarArr = this.f27473v;
                     int i12 = i11 + 1;
                     bVarArr[i11] = bVarArr[i12];
                     i11 = i12;
                 }
-                this.f27301w--;
+                this.f27474w--;
                 return;
             }
             i11++;
@@ -119,56 +119,56 @@ public class h implements Comparable {
     }
 
     public void g() {
-        this.f27291e = null;
-        this.f27299u = a.UNKNOWN;
-        this.f27294p = 0;
-        this.f27292i = -1;
-        this.f27293o = -1;
-        this.f27295q = 0.0f;
-        this.f27296r = false;
-        this.f27303y = false;
-        this.f27304z = -1;
+        this.f27464e = null;
+        this.f27472u = a.UNKNOWN;
+        this.f27467p = 0;
+        this.f27465i = -1;
+        this.f27466o = -1;
+        this.f27468q = 0.0f;
+        this.f27469r = false;
+        this.f27476y = false;
+        this.f27477z = -1;
         this.A = 0.0f;
-        int i10 = this.f27301w;
+        int i10 = this.f27474w;
         for (int i11 = 0; i11 < i10; i11++) {
-            this.f27300v[i11] = null;
+            this.f27473v[i11] = null;
         }
-        this.f27301w = 0;
-        this.f27302x = 0;
-        this.f27290d = false;
-        Arrays.fill(this.f27298t, 0.0f);
+        this.f27474w = 0;
+        this.f27475x = 0;
+        this.f27463d = false;
+        Arrays.fill(this.f27471t, 0.0f);
     }
 
     public void h(d dVar, float f10) {
-        this.f27295q = f10;
-        this.f27296r = true;
-        this.f27303y = false;
-        this.f27304z = -1;
+        this.f27468q = f10;
+        this.f27469r = true;
+        this.f27476y = false;
+        this.f27477z = -1;
         this.A = 0.0f;
-        int i10 = this.f27301w;
-        this.f27293o = -1;
+        int i10 = this.f27474w;
+        this.f27466o = -1;
         for (int i11 = 0; i11 < i10; i11++) {
-            this.f27300v[i11].A(dVar, this, false);
+            this.f27473v[i11].A(dVar, this, false);
         }
-        this.f27301w = 0;
+        this.f27474w = 0;
     }
 
     public void i(a aVar, String str) {
-        this.f27299u = aVar;
+        this.f27472u = aVar;
     }
 
-    public final void j(d dVar, b bVar) {
-        int i10 = this.f27301w;
+    public final void k(d dVar, b bVar) {
+        int i10 = this.f27474w;
         for (int i11 = 0; i11 < i10; i11++) {
-            this.f27300v[i11].B(dVar, bVar, false);
+            this.f27473v[i11].B(dVar, bVar, false);
         }
-        this.f27301w = 0;
+        this.f27474w = 0;
     }
 
     public String toString() {
-        if (this.f27291e != null) {
-            return "" + this.f27291e;
+        if (this.f27464e != null) {
+            return "" + this.f27464e;
         }
-        return "" + this.f27292i;
+        return "" + this.f27465i;
     }
 }

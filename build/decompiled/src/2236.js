@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/premium/game_server',
+        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2dhbWVfc2VydmVy',
         'scales': null,
-        'hash': '83bfadc8a89675101800ea0c2b5fc7fc',
-        'name': 'GameServer.compiled.messages',
+        'hash': '785272d75f21692c53ba074704ba6c94',
+        'name': 'bg.messages.785272d75f21692c53ba074704ba6c94.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

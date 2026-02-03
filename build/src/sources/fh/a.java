@@ -11,30 +11,30 @@ import android.view.ViewConfiguration;
 public class a implements View.OnTouchListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Dialog f25187d;
+    private final Dialog f24398d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f25188e;
+    private final int f24399e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f25189i;
+    private final int f24400i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f25190o;
+    private final int f24401o;
 
     public a(Dialog dialog, Rect rect) {
-        this.f25187d = dialog;
-        this.f25188e = rect.left;
-        this.f25189i = rect.top;
-        this.f25190o = ViewConfiguration.get(dialog.getContext()).getScaledWindowTouchSlop();
+        this.f24398d = dialog;
+        this.f24399e = rect.left;
+        this.f24400i = rect.top;
+        this.f24401o = ViewConfiguration.get(dialog.getContext()).getScaledWindowTouchSlop();
     }
 
     @Override // android.view.View.OnTouchListener
     public boolean onTouch(View view, MotionEvent motionEvent) {
         View findViewById = view.findViewById(16908290);
-        int left = this.f25188e + findViewById.getLeft();
+        int left = this.f24399e + findViewById.getLeft();
         int width = findViewById.getWidth() + left;
-        int top = this.f25189i + findViewById.getTop();
+        int top = this.f24400i + findViewById.getTop();
         if (new RectF(left, top, width, findViewById.getHeight() + top).contains(motionEvent.getX(), motionEvent.getY())) {
             return false;
         }
@@ -44,10 +44,10 @@ public class a implements View.OnTouchListener {
         }
         if (Build.VERSION.SDK_INT < 28) {
             obtain.setAction(0);
-            int i10 = this.f25190o;
+            int i10 = this.f24401o;
             obtain.setLocation((-i10) - 1, (-i10) - 1);
         }
         view.performClick();
-        return this.f25187d.onTouchEvent(obtain);
+        return this.f24398d.onTouchEvent(obtain);
     }
 }

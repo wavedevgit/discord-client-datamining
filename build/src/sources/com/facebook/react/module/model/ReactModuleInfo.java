@@ -2,7 +2,7 @@ package com.facebook.react.module.model;
 
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.turbomodule.core.interfaces.TurboModule;
-import ir.c;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;

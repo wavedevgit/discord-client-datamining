@@ -2,8 +2,8 @@ package com.discord.client_info;
 
 import com.discord.codegen.NativeClientInfoModuleSpec;
 import com.facebook.react.bridge.ReactApplicationContext;
-import ir.v;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.o0;

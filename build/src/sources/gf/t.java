@@ -7,23 +7,23 @@ import com.withpersona.sdk2.inquiry.network.dto.InquiryField;
 public class t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Resources f26894a;
+    private final Resources f26989a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f26895b;
+    private final String f26990b;
 
     public t(Context context) {
         q.l(context);
         Resources resources = context.getResources();
-        this.f26894a = resources;
-        this.f26895b = resources.getResourcePackageName(com.google.android.gms.common.l.f14828a);
+        this.f26989a = resources;
+        this.f26990b = resources.getResourcePackageName(com.google.android.gms.common.l.f14457a);
     }
 
     public String a(String str) {
-        int identifier = this.f26894a.getIdentifier(str, InquiryField.StringField.TYPE, this.f26895b);
+        int identifier = this.f26989a.getIdentifier(str, InquiryField.StringField.TYPE, this.f26990b);
         if (identifier == 0) {
             return null;
         }
-        return this.f26894a.getString(identifier);
+        return this.f26989a.getString(identifier);
     }
 }

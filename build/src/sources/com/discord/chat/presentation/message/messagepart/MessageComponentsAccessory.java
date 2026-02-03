@@ -26,7 +26,7 @@ public final class MessageComponentsAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-pPZZVto$default  reason: not valid java name */
-    public static /* synthetic */ MessageComponentsAccessory m620copypPZZVto$default(MessageComponentsAccessory messageComponentsAccessory, String str, MessageMargins messageMargins, Message message, List list, int i10, int i11, Object obj) {
+    public static /* synthetic */ MessageComponentsAccessory m622copypPZZVto$default(MessageComponentsAccessory messageComponentsAccessory, String str, MessageMargins messageMargins, Message message, List list, int i10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             str = messageComponentsAccessory.messageId;
         }
@@ -45,12 +45,12 @@ public final class MessageComponentsAccessory extends MessageAccessory {
         }
         int i12 = i10;
         Message message2 = message;
-        return messageComponentsAccessory.m622copypPZZVto(str, messageMargins, message2, list2, i12);
+        return messageComponentsAccessory.m624copypPZZVto(str, messageMargins, message2, list2, i12);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m621component13Eiw7ao() {
+    public final String m623component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -75,7 +75,7 @@ public final class MessageComponentsAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-pPZZVto  reason: not valid java name */
-    public final MessageComponentsAccessory m622copypPZZVto(@NotNull String messageId, @NotNull MessageMargins margins, @NotNull Message message, @NotNull List<? extends Component> messageComponents, int i10) {
+    public final MessageComponentsAccessory m624copypPZZVto(@NotNull String messageId, @NotNull MessageMargins margins, @NotNull Message message, @NotNull List<? extends Component> messageComponents, int i10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(margins, "margins");
         Intrinsics.checkNotNullParameter(message, "message");
@@ -89,7 +89,7 @@ public final class MessageComponentsAccessory extends MessageAccessory {
         }
         if (obj instanceof MessageComponentsAccessory) {
             MessageComponentsAccessory messageComponentsAccessory = (MessageComponentsAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, messageComponentsAccessory.messageId) && Intrinsics.areEqual(this.margins, messageComponentsAccessory.margins) && Intrinsics.areEqual(this.message, messageComponentsAccessory.message) && Intrinsics.areEqual(this.messageComponents, messageComponentsAccessory.messageComponents) && this.constrainedWidth == messageComponentsAccessory.constrainedWidth;
+            return MessageId.m1090equalsimpl0(this.messageId, messageComponentsAccessory.messageId) && Intrinsics.areEqual(this.margins, messageComponentsAccessory.margins) && Intrinsics.areEqual(this.message, messageComponentsAccessory.message) && Intrinsics.areEqual(this.messageComponents, messageComponentsAccessory.messageComponents) && this.constrainedWidth == messageComponentsAccessory.constrainedWidth;
         }
         return false;
     }
@@ -116,22 +116,22 @@ public final class MessageComponentsAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((((((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.message.hashCode()) * 31) + this.messageComponents.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
+        return (((((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.message.hashCode()) * 31) + this.messageComponents.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         Message message = this.message;
         List<Component> list = this.messageComponents;
         int i10 = this.constrainedWidth;
-        return "MessageComponentsAccessory(messageId=" + m1091toStringimpl + ", margins=" + messageMargins + ", message=" + message + ", messageComponents=" + list + ", constrainedWidth=" + i10 + ")";
+        return "MessageComponentsAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", message=" + message + ", messageComponents=" + list + ", constrainedWidth=" + i10 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

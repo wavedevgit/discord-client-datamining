@@ -1,75 +1,43 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun44884: for (var _fun44884_ip = 0;;) switch (_fun44884_ip) {
-        case 0:
-            var2 = exports;
-            var5 = global;
-            var4 = var5.Object;
-            var3 = var4.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var4)(var2, var0, var1);
-            var1 = dependencyMap;
-            var0 = 0;
-            var3 = var1[var0];
-            var1 = metroImportDefault;
-            var0 = undefined;
-            var3 = var1.bind(var0)(var3);
-            var1 = var5.window;
-            var6 = 'undefined';
-            var1 = typeof var1;
-            var4 = var6 === var1;
-            if (var4) {
-                _fun44884_ip = 89;
-                continue _fun44884
-            }
-        case 73:
-            var1 = var5.window;
-            var1 = var1.document;
-            var4 = var0 === var1;
-        case 89:
-            if (var4) {
-                _fun44884_ip = 114;
-                continue _fun44884
-            }
-        case 92:
-            var1 = var5.window;
-            var1 = var1.document;
-            var1 = var1.createElement;
-            var4 = var0 === var1;
-        case 114:
-            var1 = var5.navigator;
-            var1 = typeof var1;
-            var1 = var6 !== var1;
-            if (!var1) {
-                _fun44884_ip = 150;
-                continue _fun44884
-            }
-        case 130:
-            var5 = var5.navigator;
-            var6 = var5.product;
-            var5 = 'ReactNative';
-            var1 = var5 === var6;
-        case 150:
-            if (!var4) {
-                _fun44884_ip = 163;
-                continue _fun44884
-            }
-        case 153:
-            if (var1) {
-                _fun44884_ip = 163;
-                continue _fun44884
-            }
-        case 156:
-            var1 = var3.useEffect;
-            _fun44884_ip = 169;
-            continue _fun44884;
-        case 163:
-            var1 = var3.useLayoutEffect;
-        case 169:
-            var2.useIsomorphicLayoutEffect = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);
+    var3 = metroImportDefault;
+    var2 = exports;
+    var11 = dependencyMap;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var1 = {};
+    var7 = true;
+    var1.value = var7;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var1);
+    var0 = 0;
+    var1 = var11[var0];
+    var0 = undefined;
+    var10 = var3.bind(var0)(var1);
+    var4 = ['maxDurationMs', 'maxDelayMs', 'numberOfTaps', 'maxDeltaX', 'maxDeltaY', 'maxDist', 'minPointers'];
+    var1 = 1;
+    var1 = var11[var1];
+    var5 = var3.bind(var0)(var1);
+    var1 = {};
+    var3 = 'TapGestureHandler';
+    var1.name = var3;
+    var9 = new Array(0);
+    var8 = var9.concat;
+    var6 = 2;
+    var11 = var11[var6];
+    var6 = require;
+    var6 = var6.bind(var0)(var11);
+    var6 = var6.baseGestureHandlerProps;
+    var6 = var10.bind(var0)(var6);
+    var6 = var8.bind(var9)(var6, var4);
+    var1.allowedProps = var6;
+    var6 = {};
+    var6.shouldCancelWhenOutside = var7;
+    var1.config = var6;
+    var1 = var5.bind(var0)(var1);
+    var2.tapGestureHandlerProps = var4;
+    var2.tapHandlerName = var3;
+    var2.TapGestureHandler = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 4975, 4973]);

@@ -2,11 +2,11 @@ package com.discord.file_downloader.utils;
 
 import android.webkit.MimeTypeMap;
 import com.reactnativecommunity.clipboard.ClipboardModule;
-import ir.v;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.Locale;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;

@@ -8,93 +8,93 @@ import og.ye;
 public class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f53399a;
+    private final int f53607a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f53400b;
+    private final int f53608b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f53401c;
+    private final int f53609c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f53402d;
+    private final int f53610d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f53403e;
+    private final boolean f53611e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f53404f;
+    private final float f53612f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Executor f53405g;
+    private final Executor f53613g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f53406a = 1;
+        private int f53614a = 1;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f53407b = 1;
+        private int f53615b = 1;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f53408c = 1;
+        private int f53616c = 1;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f53409d = 1;
+        private int f53617d = 1;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f53410e = false;
+        private boolean f53618e = false;
 
         /* renamed from: f  reason: collision with root package name */
-        private float f53411f = 0.1f;
+        private float f53619f = 0.1f;
 
         /* renamed from: g  reason: collision with root package name */
-        private Executor f53412g;
+        private Executor f53620g;
 
         public e a() {
-            return new e(this.f53406a, this.f53407b, this.f53408c, this.f53409d, this.f53410e, this.f53411f, this.f53412g, null);
+            return new e(this.f53614a, this.f53615b, this.f53616c, this.f53617d, this.f53618e, this.f53619f, this.f53620g, null);
         }
 
         public a b(int i10) {
-            this.f53406a = i10;
+            this.f53614a = i10;
             return this;
         }
 
         public a c(float f10) {
-            this.f53411f = f10;
+            this.f53619f = f10;
             return this;
         }
     }
 
     /* synthetic */ e(int i10, int i11, int i12, int i13, boolean z10, float f10, Executor executor, g gVar) {
-        this.f53399a = i10;
-        this.f53400b = i11;
-        this.f53401c = i12;
-        this.f53402d = i13;
-        this.f53403e = z10;
-        this.f53404f = f10;
-        this.f53405g = executor;
+        this.f53607a = i10;
+        this.f53608b = i11;
+        this.f53609c = i12;
+        this.f53610d = i13;
+        this.f53611e = z10;
+        this.f53612f = f10;
+        this.f53613g = executor;
     }
 
     public final float a() {
-        return this.f53404f;
+        return this.f53612f;
     }
 
     public final int b() {
-        return this.f53401c;
+        return this.f53609c;
     }
 
     public final int c() {
-        return this.f53400b;
+        return this.f53608b;
     }
 
     public final int d() {
-        return this.f53399a;
+        return this.f53607a;
     }
 
     public final int e() {
-        return this.f53402d;
+        return this.f53610d;
     }
 
     public boolean equals(Object obj) {
@@ -105,32 +105,32 @@ public class e {
             return false;
         }
         e eVar = (e) obj;
-        if (Float.floatToIntBits(this.f53404f) == Float.floatToIntBits(eVar.f53404f) && o.a(Integer.valueOf(this.f53399a), Integer.valueOf(eVar.f53399a)) && o.a(Integer.valueOf(this.f53400b), Integer.valueOf(eVar.f53400b)) && o.a(Integer.valueOf(this.f53402d), Integer.valueOf(eVar.f53402d)) && o.a(Boolean.valueOf(this.f53403e), Boolean.valueOf(eVar.f53403e)) && o.a(Integer.valueOf(this.f53401c), Integer.valueOf(eVar.f53401c)) && o.a(this.f53405g, eVar.f53405g)) {
+        if (Float.floatToIntBits(this.f53612f) == Float.floatToIntBits(eVar.f53612f) && o.a(Integer.valueOf(this.f53607a), Integer.valueOf(eVar.f53607a)) && o.a(Integer.valueOf(this.f53608b), Integer.valueOf(eVar.f53608b)) && o.a(Integer.valueOf(this.f53610d), Integer.valueOf(eVar.f53610d)) && o.a(Boolean.valueOf(this.f53611e), Boolean.valueOf(eVar.f53611e)) && o.a(Integer.valueOf(this.f53609c), Integer.valueOf(eVar.f53609c)) && o.a(this.f53613g, eVar.f53613g)) {
             return true;
         }
         return false;
     }
 
     public final Executor f() {
-        return this.f53405g;
+        return this.f53613g;
     }
 
     public final boolean g() {
-        return this.f53403e;
+        return this.f53611e;
     }
 
     public int hashCode() {
-        return o.b(Integer.valueOf(Float.floatToIntBits(this.f53404f)), Integer.valueOf(this.f53399a), Integer.valueOf(this.f53400b), Integer.valueOf(this.f53402d), Boolean.valueOf(this.f53403e), Integer.valueOf(this.f53401c), this.f53405g);
+        return o.b(Integer.valueOf(Float.floatToIntBits(this.f53612f)), Integer.valueOf(this.f53607a), Integer.valueOf(this.f53608b), Integer.valueOf(this.f53610d), Boolean.valueOf(this.f53611e), Integer.valueOf(this.f53609c), this.f53613g);
     }
 
     public String toString() {
         xe a10 = ye.a("FaceDetectorOptions");
-        a10.b("landmarkMode", this.f53399a);
-        a10.b("contourMode", this.f53400b);
-        a10.b("classificationMode", this.f53401c);
-        a10.b("performanceMode", this.f53402d);
-        a10.d("trackingEnabled", this.f53403e);
-        a10.a("minFaceSize", this.f53404f);
+        a10.b("landmarkMode", this.f53607a);
+        a10.b("contourMode", this.f53608b);
+        a10.b("classificationMode", this.f53609c);
+        a10.b("performanceMode", this.f53610d);
+        a10.d("trackingEnabled", this.f53611e);
+        a10.a("minFaceSize", this.f53612f);
         return a10.toString();
     }
 }

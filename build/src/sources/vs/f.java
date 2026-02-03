@@ -1,37 +1,24 @@
 package vs;
 
-import vs.g;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class f {
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int d(CharSequence charSequence, int i10, int i11) {
-        int i12 = 0;
-        while (i10 < i11) {
-            i12 = (i12 * 10) + ss.d.a(charSequence.charAt(i10));
-            i10++;
-        }
-        return i12;
-    }
+public final class f implements e {
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Integer e(CharSequence charSequence, int i10, int i11) {
-        int i12 = 0;
-        while (i10 < i11) {
-            i12 = (i12 * 10) + ss.d.a(charSequence.charAt(i10));
-            if (i12 < 0) {
-                return null;
-            }
-            i10++;
-        }
-        return Integer.valueOf(i12);
-    }
+    /* renamed from: a  reason: collision with root package name */
+    private final e f51514a;
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final g f(a aVar, Object obj, Object obj2) {
-        Object c10 = aVar.c(obj, obj2);
-        if (c10 == null) {
-            return null;
-        }
-        return new g.a(c10);
+    /* renamed from: b  reason: collision with root package name */
+    private final Function1 f51515b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final boolean f51516c;
+
+    public f(e formatter, Function1 allSubFormatsNegative, boolean z10) {
+        Intrinsics.checkNotNullParameter(formatter, "formatter");
+        Intrinsics.checkNotNullParameter(allSubFormatsNegative, "allSubFormatsNegative");
+        this.f51514a = formatter;
+        this.f51515b = allSubFormatsNegative;
+        this.f51516c = z10;
     }
 }

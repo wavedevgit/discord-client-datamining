@@ -5,11 +5,11 @@ import java.util.Map;
 public final class a extends y5.c {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ ThemeableLottieAnimationView f20555d;
+    final /* synthetic */ ThemeableLottieAnimationView f20188d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(ThemeableLottieAnimationView themeableLottieAnimationView) {
-        this.f20555d = themeableLottieAnimationView;
+        this.f20188d = themeableLottieAnimationView;
     }
 
     @Override // y5.c
@@ -17,7 +17,7 @@ public final class a extends y5.c {
     public Integer a(y5.b bVar) {
         Map map;
         Integer num;
-        map = this.f20555d.A;
+        map = this.f20188d.A;
         if (bVar != null) {
             num = (Integer) bVar.g();
         } else {

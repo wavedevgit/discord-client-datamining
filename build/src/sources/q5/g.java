@@ -5,29 +5,29 @@ import androidx.collection.LruCache;
 public class g {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final g f47023b = new g();
+    private static final g f47278b = new g();
 
     /* renamed from: a  reason: collision with root package name */
-    private final LruCache f47024a = new LruCache(20);
+    private final LruCache f47279a = new LruCache(20);
 
     g() {
     }
 
     public static g b() {
-        return f47023b;
+        return f47278b;
     }
 
     public l5.i a(String str) {
         if (str == null) {
             return null;
         }
-        return (l5.i) this.f47024a.d(str);
+        return (l5.i) this.f47279a.d(str);
     }
 
     public void c(String str, l5.i iVar) {
         if (str == null) {
             return;
         }
-        this.f47024a.f(str, iVar);
+        this.f47279a.f(str, iVar);
     }
 }

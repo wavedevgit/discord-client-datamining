@@ -1,47 +1,42 @@
 package so;
 
 import android.content.Context;
+import kotlinx.coroutines.CoroutineDispatcher;
+import uq.h;
+import wo.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements tq.d {
+public final class c implements uq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tq.h f49112a;
+    private final h f49217a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tq.h f49113b;
+    private final h f49218b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final tq.h f49114c;
+    private final h f49219c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final tq.h f49115d;
+    private final h f49220d;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final tq.h f49116e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final tq.h f49117f;
-
-    public c(tq.h hVar, tq.h hVar2, tq.h hVar3, tq.h hVar4, tq.h hVar5, tq.h hVar6) {
-        this.f49112a = hVar;
-        this.f49113b = hVar2;
-        this.f49114c = hVar3;
-        this.f49115d = hVar4;
-        this.f49116e = hVar5;
-        this.f49117f = hVar6;
+    public c(h hVar, h hVar2, h hVar3, h hVar4) {
+        this.f49217a = hVar;
+        this.f49218b = hVar2;
+        this.f49219c = hVar3;
+        this.f49220d = hVar4;
     }
 
-    public static c a(tq.h hVar, tq.h hVar2, tq.h hVar3, tq.h hVar4, tq.h hVar5, tq.h hVar6) {
-        return new c(hVar, hVar2, hVar3, hVar4, hVar5, hVar6);
+    public static c a(h hVar, h hVar2, h hVar3, h hVar4) {
+        return new c(hVar, hVar2, hVar3, hVar4);
     }
 
-    public static com.withpersona.sdk2.inquiry.internal.network.e c(Context context, r rVar, qo.i iVar, cp.c cVar, un.a aVar, ro.a aVar2) {
-        return new com.withpersona.sdk2.inquiry.internal.network.e(context, rVar, iVar, cVar, aVar, aVar2);
+    public static a c(Context context, e.a aVar, f fVar, CoroutineDispatcher coroutineDispatcher) {
+        return new a(context, aVar, fVar, coroutineDispatcher);
     }
 
     @Override // javax.inject.Provider
     /* renamed from: b */
-    public com.withpersona.sdk2.inquiry.internal.network.e get() {
-        return c((Context) this.f49112a.get(), (r) this.f49113b.get(), (qo.i) this.f49114c.get(), (cp.c) this.f49115d.get(), (un.a) this.f49116e.get(), (ro.a) this.f49117f.get());
+    public a get() {
+        return c((Context) this.f49217a.get(), (e.a) this.f49218b.get(), (f) this.f49219c.get(), (CoroutineDispatcher) this.f49220d.get());
     }
 }

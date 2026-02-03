@@ -17,37 +17,37 @@ import org.webrtc.MediaStreamTrack;
 public class n0 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f11856a;
+    private final Executor f11485a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ContentResolver f11857b;
+    private final ContentResolver f11486b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends e1 {
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ y0 f11858q;
+        final /* synthetic */ y0 f11487q;
 
         /* renamed from: r  reason: collision with root package name */
-        final /* synthetic */ ProducerContext f11859r;
+        final /* synthetic */ ProducerContext f11488r;
 
         /* renamed from: s  reason: collision with root package name */
-        final /* synthetic */ ImageRequest f11860s;
+        final /* synthetic */ ImageRequest f11489s;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Consumer consumer, y0 y0Var, ProducerContext producerContext, String str, y0 y0Var2, ProducerContext producerContext2, ImageRequest imageRequest) {
             super(consumer, y0Var, producerContext, str);
-            this.f11858q = y0Var2;
-            this.f11859r = producerContext2;
-            this.f11860s = imageRequest;
+            this.f11487q = y0Var2;
+            this.f11488r = producerContext2;
+            this.f11489s = imageRequest;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.facebook.imagepipeline.producers.e1, m8.h
         public void e(Exception exc) {
             super.e(exc);
-            this.f11858q.b(this.f11859r, "VideoThumbnailProducer", false);
-            this.f11859r.n("local", MediaStreamTrack.VIDEO_TRACK_KIND);
+            this.f11487q.b(this.f11488r, "VideoThumbnailProducer", false);
+            this.f11488r.n("local", MediaStreamTrack.VIDEO_TRACK_KIND);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -77,25 +77,25 @@ public class n0 implements w0 {
             String str;
             Bitmap bitmap;
             try {
-                str = n0.this.i(this.f11860s);
+                str = n0.this.i(this.f11489s);
             } catch (IllegalArgumentException unused) {
                 str = null;
             }
             if (str != null) {
-                bitmap = ThumbnailUtils.createVideoThumbnail(str, n0.g(this.f11860s));
+                bitmap = ThumbnailUtils.createVideoThumbnail(str, n0.g(this.f11489s));
             } else {
                 bitmap = null;
             }
             if (bitmap == null) {
-                bitmap = n0.h(n0.this.f11857b, this.f11860s.getSourceUri());
+                bitmap = n0.h(n0.this.f11486b, this.f11489s.getSourceUri());
             }
             if (bitmap == null) {
                 return null;
             }
-            sa.f p12 = sa.f.p1(bitmap, ka.e.a(), sa.n.f48905d, 0);
-            this.f11859r.B("image_format", "thumbnail");
-            p12.A0(this.f11859r.getExtras());
-            return CloseableReference.J0(p12);
+            sa.f p12 = sa.f.p1(bitmap, ka.e.a(), sa.n.f48959d, 0);
+            this.f11488r.B("image_format", "thumbnail");
+            p12.t0(this.f11488r.getExtras());
+            return CloseableReference.L0(p12);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -104,15 +104,15 @@ public class n0 implements w0 {
         public void f(CloseableReference closeableReference) {
             boolean z10;
             super.f(closeableReference);
-            y0 y0Var = this.f11858q;
-            ProducerContext producerContext = this.f11859r;
+            y0 y0Var = this.f11487q;
+            ProducerContext producerContext = this.f11488r;
             if (closeableReference != null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             y0Var.b(producerContext, "VideoThumbnailProducer", z10);
-            this.f11859r.n("local", MediaStreamTrack.VIDEO_TRACK_KIND);
+            this.f11488r.n("local", MediaStreamTrack.VIDEO_TRACK_KIND);
         }
     }
 
@@ -120,21 +120,21 @@ public class n0 implements w0 {
     class b extends f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ e1 f11862a;
+        final /* synthetic */ e1 f11491a;
 
         b(e1 e1Var) {
-            this.f11862a = e1Var;
+            this.f11491a = e1Var;
         }
 
         @Override // com.facebook.imagepipeline.producers.x0
         public void b() {
-            this.f11862a.a();
+            this.f11491a.a();
         }
     }
 
     public n0(Executor executor, ContentResolver contentResolver) {
-        this.f11856a = executor;
-        this.f11857b = contentResolver;
+        this.f11485a = executor;
+        this.f11486b = contentResolver;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -189,7 +189,7 @@ public class n0 implements w0 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public String i(ImageRequest imageRequest) {
-        return w8.f.e(this.f11857b, imageRequest.getSourceUri());
+        return w8.f.e(this.f11486b, imageRequest.getSourceUri());
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -199,6 +199,6 @@ public class n0 implements w0 {
         producerContext.n("local", MediaStreamTrack.VIDEO_TRACK_KIND);
         a aVar = new a(consumer, F, producerContext, "VideoThumbnailProducer", F, producerContext, V);
         producerContext.h(new b(aVar));
-        this.f11856a.execute(aVar);
+        this.f11485a.execute(aVar);
     }
 }

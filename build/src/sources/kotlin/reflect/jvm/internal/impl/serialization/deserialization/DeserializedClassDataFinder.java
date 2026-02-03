@@ -12,18 +12,18 @@ import org.jetbrains.annotations.NotNull;
 public final class DeserializedClassDataFinder implements ClassDataFinder {
 
     /* renamed from: a  reason: collision with root package name */
-    private final PackageFragmentProvider f35614a;
+    private final PackageFragmentProvider f35390a;
 
     public DeserializedClassDataFinder(@NotNull PackageFragmentProvider packageFragmentProvider) {
         Intrinsics.checkNotNullParameter(packageFragmentProvider, "packageFragmentProvider");
-        this.f35614a = packageFragmentProvider;
+        this.f35390a = packageFragmentProvider;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.ClassDataFinder
     public ClassData findClassData(@NotNull ClassId classId) {
         ClassData findClassData;
         Intrinsics.checkNotNullParameter(classId, "classId");
-        for (PackageFragmentDescriptor packageFragmentDescriptor : PackageFragmentProviderKt.packageFragments(this.f35614a, classId.getPackageFqName())) {
+        for (PackageFragmentDescriptor packageFragmentDescriptor : PackageFragmentProviderKt.packageFragments(this.f35390a, classId.getPackageFqName())) {
             if ((packageFragmentDescriptor instanceof DeserializedPackageFragment) && (findClassData = ((DeserializedPackageFragment) packageFragmentDescriptor).getClassDataFinder().findClassData(classId)) != null) {
                 return findClassData;
             }

@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20202a;
+    private final m.b f19835a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20203b;
+    private final com.squareup.moshi.h f19836b;
 
     public ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("type", StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20202a = a10;
+        this.f19835a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "type");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20203b = f10;
+        this.f19836b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,17 +37,17 @@ public final class ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter e
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f20202a);
-            if (A0 != -1) {
-                if (A0 != 0) {
-                    if (A0 == 1) {
-                        str2 = (String) this.f20203b.fromJson(reader);
+            int t02 = reader.t0(this.f19835a);
+            if (t02 != -1) {
+                if (t02 != 0) {
+                    if (t02 == 1) {
+                        str2 = (String) this.f19836b.fromJson(reader);
                     }
                 } else {
-                    str = (String) this.f20203b.fromJson(reader);
+                    str = (String) this.f19836b.fromJson(reader);
                 }
             } else {
-                reader.E0();
+                reader.F0();
                 reader.P();
             }
         }
@@ -61,10 +61,10 @@ public final class ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter e
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (relationshipData != null) {
             writer.l();
-            writer.A0("type");
-            this.f20203b.toJson(writer, relationshipData.b());
-            writer.A0(StackTraceHelper.ID_KEY);
-            this.f20203b.toJson(writer, relationshipData.a());
+            writer.t0("type");
+            this.f19836b.toJson(writer, relationshipData.b());
+            writer.t0(StackTraceHelper.ID_KEY);
+            this.f19836b.toJson(writer, relationshipData.a());
             writer.E();
             return;
         }

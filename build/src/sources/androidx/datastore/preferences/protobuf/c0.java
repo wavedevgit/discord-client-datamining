@@ -10,19 +10,19 @@ import java.util.RandomAccess;
 public class c0 extends c implements d0, RandomAccess {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final c0 f3579i;
+    private static final c0 f3623i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final d0 f3580o;
+    public static final d0 f3624o;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f3581e;
+    private final List f3625e;
 
     static {
         c0 c0Var = new c0();
-        f3579i = c0Var;
+        f3623i = c0Var;
         c0Var.N();
-        f3580o = c0Var;
+        f3624o = c0Var;
     }
 
     public c0() {
@@ -40,20 +40,20 @@ public class c0 extends c implements d0, RandomAccess {
     }
 
     @Override // androidx.datastore.preferences.protobuf.c, androidx.datastore.preferences.protobuf.y.b
-    public /* bridge */ /* synthetic */ boolean D0() {
-        return super.D0();
+    public /* bridge */ /* synthetic */ boolean F0() {
+        return super.F0();
     }
 
     @Override // androidx.datastore.preferences.protobuf.d0
-    public void I0(g gVar) {
+    public void K0(g gVar) {
         b();
-        this.f3581e.add(gVar);
+        this.f3625e.add(gVar);
         ((AbstractList) this).modCount++;
     }
 
     @Override // androidx.datastore.preferences.protobuf.d0
-    public Object R0(int i10) {
-        return this.f3581e.get(i10);
+    public Object O0(int i10) {
+        return this.f3625e.get(i10);
     }
 
     @Override // androidx.datastore.preferences.protobuf.c, java.util.AbstractCollection, java.util.Collection, java.util.List
@@ -65,21 +65,21 @@ public class c0 extends c implements d0, RandomAccess {
     /* renamed from: c */
     public void add(int i10, String str) {
         b();
-        this.f3581e.add(i10, str);
+        this.f3625e.add(i10, str);
         ((AbstractList) this).modCount++;
     }
 
     @Override // androidx.datastore.preferences.protobuf.c, java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
     public void clear() {
         b();
-        this.f3581e.clear();
+        this.f3625e.clear();
         ((AbstractList) this).modCount++;
     }
 
     @Override // java.util.AbstractList, java.util.List
     /* renamed from: e */
     public String get(int i10) {
-        Object obj = this.f3581e.get(i10);
+        Object obj = this.f3625e.get(i10);
         if (obj instanceof String) {
             return (String) obj;
         }
@@ -87,14 +87,14 @@ public class c0 extends c implements d0, RandomAccess {
             g gVar = (g) obj;
             String s10 = gVar.s();
             if (gVar.j()) {
-                this.f3581e.set(i10, s10);
+                this.f3625e.set(i10, s10);
             }
             return s10;
         }
         byte[] bArr = (byte[]) obj;
         String j10 = y.j(bArr);
         if (y.g(bArr)) {
-            this.f3581e.set(i10, j10);
+            this.f3625e.set(i10, j10);
         }
         return j10;
     }
@@ -106,10 +106,10 @@ public class c0 extends c implements d0, RandomAccess {
 
     @Override // androidx.datastore.preferences.protobuf.y.b
     /* renamed from: f */
-    public c0 F0(int i10) {
+    public c0 J0(int i10) {
         if (i10 >= size()) {
             ArrayList arrayList = new ArrayList(i10);
-            arrayList.addAll(this.f3581e);
+            arrayList.addAll(this.f3625e);
             return new c0(arrayList);
         }
         throw new IllegalArgumentException();
@@ -119,19 +119,19 @@ public class c0 extends c implements d0, RandomAccess {
     /* renamed from: g */
     public String remove(int i10) {
         b();
-        Object remove = this.f3581e.remove(i10);
+        Object remove = this.f3625e.remove(i10);
         ((AbstractList) this).modCount++;
         return d(remove);
     }
 
     @Override // androidx.datastore.preferences.protobuf.d0
     public List getUnderlyingElements() {
-        return Collections.unmodifiableList(this.f3581e);
+        return Collections.unmodifiableList(this.f3625e);
     }
 
     @Override // androidx.datastore.preferences.protobuf.d0
     public d0 getUnmodifiableView() {
-        if (D0()) {
+        if (F0()) {
             return new n1(this);
         }
         return this;
@@ -141,7 +141,7 @@ public class c0 extends c implements d0, RandomAccess {
     /* renamed from: h */
     public String set(int i10, String str) {
         b();
-        return d(this.f3581e.set(i10, str));
+        return d(this.f3625e.set(i10, str));
     }
 
     @Override // androidx.datastore.preferences.protobuf.c, java.util.AbstractList, java.util.Collection, java.util.List
@@ -161,7 +161,7 @@ public class c0 extends c implements d0, RandomAccess {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public int size() {
-        return this.f3581e.size();
+        return this.f3625e.size();
     }
 
     public c0(int i10) {
@@ -174,7 +174,7 @@ public class c0 extends c implements d0, RandomAccess {
         if (collection instanceof d0) {
             collection = ((d0) collection).getUnderlyingElements();
         }
-        boolean addAll = this.f3581e.addAll(i10, collection);
+        boolean addAll = this.f3625e.addAll(i10, collection);
         ((AbstractList) this).modCount++;
         return addAll;
     }
@@ -185,6 +185,6 @@ public class c0 extends c implements d0, RandomAccess {
     }
 
     private c0(ArrayList arrayList) {
-        this.f3581e = arrayList;
+        this.f3625e = arrayList;
     }
 }

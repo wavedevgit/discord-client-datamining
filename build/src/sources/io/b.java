@@ -1,33 +1,32 @@
 package io;
 
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
-import mn.h0;
+import android.content.Context;
+import bo.c4;
+import nn.f0;
+import uq.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-    public static final boolean a(a aVar) {
-        Intrinsics.checkNotNullParameter(aVar, "<this>");
-        if (aVar.b().size() < 3) {
-            return false;
-        }
-        int i10 = 0;
-        for (h0 h0Var : aVar.b()) {
-            i10 += h0Var.a().length();
-        }
-        double size = i10 / aVar.b().size();
-        double d10 = 0.0d;
-        for (h0 h0Var2 : aVar.b()) {
-            d10 += (h0Var2.a().length() - size) * (h0Var2.a().length() - size);
-        }
-        if (Math.sqrt(d10 / aVar.b().size()) / size >= 0.05d) {
-            return false;
-        }
-        return true;
+public final class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final h f28272a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final h f28273b;
+
+    public b(h hVar, h hVar2) {
+        this.f28272a = hVar;
+        this.f28273b = hVar2;
     }
 
-    public static final a b(a aVar, h0 newFrame) {
-        Intrinsics.checkNotNullParameter(aVar, "<this>");
-        Intrinsics.checkNotNullParameter(newFrame, "newFrame");
-        return aVar.a(CollectionsKt.M0(CollectionsKt.b1(aVar.b(), 2), newFrame));
+    public static b a(h hVar, h hVar2) {
+        return new b(hVar, hVar2);
+    }
+
+    public static a c(Context context, f0 f0Var, c4.e eVar) {
+        return new a(context, f0Var, eVar);
+    }
+
+    public a b(c4.e eVar) {
+        return c((Context) this.f28272a.get(), (f0) this.f28273b.get(), eVar);
     }
 }

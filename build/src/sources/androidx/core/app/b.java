@@ -50,7 +50,7 @@ public abstract class b extends androidx.core.content.a {
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: androidx.core.app.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class C0031b {
+    public static class C0035b {
         /* JADX INFO: Access modifiers changed from: package-private */
         public static void a(Object obj) {
             ((SharedElementCallback.OnSharedElementsReadyListener) obj).onSharedElementsReady();
@@ -92,48 +92,48 @@ public abstract class b extends androidx.core.content.a {
     static class f extends android.app.SharedElementCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        private final SharedElementCallback f3068a;
+        private final SharedElementCallback f3112a;
 
         f(SharedElementCallback sharedElementCallback) {
-            this.f3068a = sharedElementCallback;
+            this.f3112a = sharedElementCallback;
         }
 
         @Override // android.app.SharedElementCallback
         public Parcelable onCaptureSharedElementSnapshot(View view, Matrix matrix, RectF rectF) {
-            return this.f3068a.b(view, matrix, rectF);
+            return this.f3112a.b(view, matrix, rectF);
         }
 
         @Override // android.app.SharedElementCallback
         public View onCreateSnapshotView(Context context, Parcelable parcelable) {
-            return this.f3068a.c(context, parcelable);
+            return this.f3112a.c(context, parcelable);
         }
 
         @Override // android.app.SharedElementCallback
         public void onMapSharedElements(List list, Map map) {
-            this.f3068a.d(list, map);
+            this.f3112a.d(list, map);
         }
 
         @Override // android.app.SharedElementCallback
         public void onRejectSharedElements(List list) {
-            this.f3068a.e(list);
+            this.f3112a.e(list);
         }
 
         @Override // android.app.SharedElementCallback
         public void onSharedElementEnd(List list, List list2, List list3) {
-            this.f3068a.f(list, list2, list3);
+            this.f3112a.f(list, list2, list3);
         }
 
         @Override // android.app.SharedElementCallback
         public void onSharedElementStart(List list, List list2, List list3) {
-            this.f3068a.g(list, list2, list3);
+            this.f3112a.g(list, list2, list3);
         }
 
         @Override // android.app.SharedElementCallback
         public void onSharedElementsArrived(List list, List list2, final SharedElementCallback.OnSharedElementsReadyListener onSharedElementsReadyListener) {
-            this.f3068a.h(list, list2, new SharedElementCallback.a() { // from class: androidx.core.app.c
+            this.f3112a.h(list, list2, new SharedElementCallback.a() { // from class: androidx.core.app.c
                 @Override // androidx.core.app.SharedElementCallback.a
                 public final void onSharedElementsReady() {
-                    b.C0031b.a(onSharedElementsReadyListener);
+                    b.C0035b.a(onSharedElementsReadyListener);
                 }
             });
         }
@@ -211,7 +211,7 @@ public abstract class b extends androidx.core.content.a {
         if (activity instanceof e) {
             ((e) activity).validateRequestPermissionsRequestCode(i10);
         }
-        C0031b.b(activity, strArr, i10);
+        C0035b.b(activity, strArr, i10);
     }
 
     public static void w(Activity activity, SharedElementCallback sharedElementCallback) {
@@ -245,7 +245,7 @@ public abstract class b extends androidx.core.content.a {
         if (i10 == 31) {
             return c.a(activity, str);
         }
-        return C0031b.c(activity, str);
+        return C0035b.c(activity, str);
     }
 
     public static void z(Activity activity, Intent intent, int i10, Bundle bundle) {

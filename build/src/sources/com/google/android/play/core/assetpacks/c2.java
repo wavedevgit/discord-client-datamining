@@ -4,5 +4,5 @@ package com.google.android.play.core.assetpacks;
 public abstract class c2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final d2 f16722a = new d2();
+    private static final d2 f16351a = new d2();
 }

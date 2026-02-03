@@ -3,102 +3,102 @@ package j$.time;
 public abstract /* synthetic */ class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int[] f31562a;
+    public static final /* synthetic */ int[] f31300a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ int[] f31563b;
+    public static final /* synthetic */ int[] f31301b;
 
     static {
         int[] iArr = new int[j$.time.temporal.b.values().length];
-        f31563b = iArr;
+        f31301b = iArr;
         try {
             iArr[j$.time.temporal.b.NANOS.ordinal()] = 1;
         } catch (NoSuchFieldError unused) {
         }
         try {
-            f31563b[j$.time.temporal.b.MICROS.ordinal()] = 2;
+            f31301b[j$.time.temporal.b.MICROS.ordinal()] = 2;
         } catch (NoSuchFieldError unused2) {
         }
         try {
-            f31563b[j$.time.temporal.b.MILLIS.ordinal()] = 3;
+            f31301b[j$.time.temporal.b.MILLIS.ordinal()] = 3;
         } catch (NoSuchFieldError unused3) {
         }
         try {
-            f31563b[j$.time.temporal.b.SECONDS.ordinal()] = 4;
+            f31301b[j$.time.temporal.b.SECONDS.ordinal()] = 4;
         } catch (NoSuchFieldError unused4) {
         }
         try {
-            f31563b[j$.time.temporal.b.MINUTES.ordinal()] = 5;
+            f31301b[j$.time.temporal.b.MINUTES.ordinal()] = 5;
         } catch (NoSuchFieldError unused5) {
         }
         try {
-            f31563b[j$.time.temporal.b.HOURS.ordinal()] = 6;
+            f31301b[j$.time.temporal.b.HOURS.ordinal()] = 6;
         } catch (NoSuchFieldError unused6) {
         }
         try {
-            f31563b[j$.time.temporal.b.HALF_DAYS.ordinal()] = 7;
+            f31301b[j$.time.temporal.b.HALF_DAYS.ordinal()] = 7;
         } catch (NoSuchFieldError unused7) {
         }
         int[] iArr2 = new int[j$.time.temporal.a.values().length];
-        f31562a = iArr2;
+        f31300a = iArr2;
         try {
             iArr2[j$.time.temporal.a.NANO_OF_SECOND.ordinal()] = 1;
         } catch (NoSuchFieldError unused8) {
         }
         try {
-            f31562a[j$.time.temporal.a.NANO_OF_DAY.ordinal()] = 2;
+            f31300a[j$.time.temporal.a.NANO_OF_DAY.ordinal()] = 2;
         } catch (NoSuchFieldError unused9) {
         }
         try {
-            f31562a[j$.time.temporal.a.MICRO_OF_SECOND.ordinal()] = 3;
+            f31300a[j$.time.temporal.a.MICRO_OF_SECOND.ordinal()] = 3;
         } catch (NoSuchFieldError unused10) {
         }
         try {
-            f31562a[j$.time.temporal.a.MICRO_OF_DAY.ordinal()] = 4;
+            f31300a[j$.time.temporal.a.MICRO_OF_DAY.ordinal()] = 4;
         } catch (NoSuchFieldError unused11) {
         }
         try {
-            f31562a[j$.time.temporal.a.MILLI_OF_SECOND.ordinal()] = 5;
+            f31300a[j$.time.temporal.a.MILLI_OF_SECOND.ordinal()] = 5;
         } catch (NoSuchFieldError unused12) {
         }
         try {
-            f31562a[j$.time.temporal.a.MILLI_OF_DAY.ordinal()] = 6;
+            f31300a[j$.time.temporal.a.MILLI_OF_DAY.ordinal()] = 6;
         } catch (NoSuchFieldError unused13) {
         }
         try {
-            f31562a[j$.time.temporal.a.SECOND_OF_MINUTE.ordinal()] = 7;
+            f31300a[j$.time.temporal.a.SECOND_OF_MINUTE.ordinal()] = 7;
         } catch (NoSuchFieldError unused14) {
         }
         try {
-            f31562a[j$.time.temporal.a.SECOND_OF_DAY.ordinal()] = 8;
+            f31300a[j$.time.temporal.a.SECOND_OF_DAY.ordinal()] = 8;
         } catch (NoSuchFieldError unused15) {
         }
         try {
-            f31562a[j$.time.temporal.a.MINUTE_OF_HOUR.ordinal()] = 9;
+            f31300a[j$.time.temporal.a.MINUTE_OF_HOUR.ordinal()] = 9;
         } catch (NoSuchFieldError unused16) {
         }
         try {
-            f31562a[j$.time.temporal.a.MINUTE_OF_DAY.ordinal()] = 10;
+            f31300a[j$.time.temporal.a.MINUTE_OF_DAY.ordinal()] = 10;
         } catch (NoSuchFieldError unused17) {
         }
         try {
-            f31562a[j$.time.temporal.a.HOUR_OF_AMPM.ordinal()] = 11;
+            f31300a[j$.time.temporal.a.HOUR_OF_AMPM.ordinal()] = 11;
         } catch (NoSuchFieldError unused18) {
         }
         try {
-            f31562a[j$.time.temporal.a.CLOCK_HOUR_OF_AMPM.ordinal()] = 12;
+            f31300a[j$.time.temporal.a.CLOCK_HOUR_OF_AMPM.ordinal()] = 12;
         } catch (NoSuchFieldError unused19) {
         }
         try {
-            f31562a[j$.time.temporal.a.HOUR_OF_DAY.ordinal()] = 13;
+            f31300a[j$.time.temporal.a.HOUR_OF_DAY.ordinal()] = 13;
         } catch (NoSuchFieldError unused20) {
         }
         try {
-            f31562a[j$.time.temporal.a.CLOCK_HOUR_OF_DAY.ordinal()] = 14;
+            f31300a[j$.time.temporal.a.CLOCK_HOUR_OF_DAY.ordinal()] = 14;
         } catch (NoSuchFieldError unused21) {
         }
         try {
-            f31562a[j$.time.temporal.a.AMPM_OF_DAY.ordinal()] = 15;
+            f31300a[j$.time.temporal.a.AMPM_OF_DAY.ordinal()] = 15;
         } catch (NoSuchFieldError unused22) {
         }
     }

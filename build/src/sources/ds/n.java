@@ -1,352 +1,182 @@
 package ds;
 
-import cs.c1;
-import cs.j3;
-import ds.h;
-import ds.i;
-import java.lang.reflect.Member;
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
+import java.util.Comparator;
 import java.util.List;
-import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.ranges.IntRange;
-import kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
-import kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor;
-import kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor;
-import kotlin.reflect.jvm.internal.impl.descriptors.ParameterDescriptor;
 import kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectClassUtilKt;
-import kotlin.reflect.jvm.internal.impl.resolve.InlineClassesUtilsKt;
-import kotlin.reflect.jvm.internal.impl.types.KotlinType;
-import kotlin.reflect.jvm.internal.impl.types.TypeSubstitutionKt;
-import kotlin.text.StringsKt;
+import kotlin.reflect.jvm.internal.impl.metadata.jvm.deserialization.JvmMemberSignature;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class n implements h {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final boolean f22393a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final h f22394b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final Member f22395c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final a f22396d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final IntRange[] f22397e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final boolean f22398f;
+public abstract class n {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static final class a {
+    public static final class a extends n {
 
         /* renamed from: a  reason: collision with root package name */
-        private final IntRange f22399a;
+        private final Class f22255a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final List[] f22400b;
+        private final List f22256b;
 
-        /* renamed from: c  reason: collision with root package name */
-        private final Method f22401c;
-
-        public a(IntRange argumentRange, List[] unboxParameters, Method method) {
-            Intrinsics.checkNotNullParameter(argumentRange, "argumentRange");
-            Intrinsics.checkNotNullParameter(unboxParameters, "unboxParameters");
-            this.f22399a = argumentRange;
-            this.f22400b = unboxParameters;
-            this.f22401c = method;
+        /* renamed from: ds.n$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class C0292a implements Comparator {
+            @Override // java.util.Comparator
+            public final int compare(Object obj, Object obj2) {
+                return mr.a.d(((Method) obj).getName(), ((Method) obj2).getName());
+            }
         }
 
-        public final IntRange a() {
-            return this.f22399a;
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public a(Class jClass) {
+            super(null);
+            Intrinsics.checkNotNullParameter(jClass, "jClass");
+            this.f22255a = jClass;
+            Method[] declaredMethods = jClass.getDeclaredMethods();
+            Intrinsics.checkNotNullExpressionValue(declaredMethods, "getDeclaredMethods(...)");
+            this.f22256b = kotlin.collections.i.F0(declaredMethods, new C0292a());
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final CharSequence c(Method method) {
+            Class<?> returnType = method.getReturnType();
+            Intrinsics.checkNotNullExpressionValue(returnType, "getReturnType(...)");
+            return ReflectClassUtilKt.getDesc(returnType);
+        }
+
+        @Override // ds.n
+        public String a() {
+            return CollectionsKt.x0(this.f22256b, "", "<init>(", ")V", 0, null, m.f22251d, 24, null);
+        }
+
+        public final List d() {
+            return this.f22256b;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b extends n {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final Constructor f22257a;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public b(Constructor constructor) {
+            super(null);
+            Intrinsics.checkNotNullParameter(constructor, "constructor");
+            this.f22257a = constructor;
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final CharSequence c(Class cls) {
+            Intrinsics.checkNotNull(cls);
+            return ReflectClassUtilKt.getDesc(cls);
+        }
+
+        @Override // ds.n
+        public String a() {
+            Class<?>[] parameterTypes = this.f22257a.getParameterTypes();
+            Intrinsics.checkNotNullExpressionValue(parameterTypes, "getParameterTypes(...)");
+            return kotlin.collections.i.v0(parameterTypes, "", "<init>(", ")V", 0, null, o.f22266d, 24, null);
+        }
+
+        public final Constructor d() {
+            return this.f22257a;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class c extends n {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final Method f22258a;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public c(Method method) {
+            super(null);
+            Intrinsics.checkNotNullParameter(method, "method");
+            this.f22258a = method;
+        }
+
+        @Override // ds.n
+        public String a() {
+            String d10;
+            d10 = g3.d(this.f22258a);
+            return d10;
         }
 
         public final Method b() {
-            return this.f22401c;
-        }
-
-        public final List[] c() {
-            return this.f22400b;
+            return this.f22258a;
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b implements h {
+    public static final class d extends n {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f22402a;
+        private final JvmMemberSignature.Method f22259a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Method f22403b;
+        private final String f22260b;
 
-        /* renamed from: c  reason: collision with root package name */
-        private final List f22404c;
-
-        /* renamed from: d  reason: collision with root package name */
-        private final List f22405d;
-
-        /* renamed from: e  reason: collision with root package name */
-        private final List f22406e;
-
-        public b(FunctionDescriptor descriptor, c1 container, String constructorDesc, List originalParameters) {
-            Collection e10;
-            Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-            Intrinsics.checkNotNullParameter(container, "container");
-            Intrinsics.checkNotNullParameter(constructorDesc, "constructorDesc");
-            Intrinsics.checkNotNullParameter(originalParameters, "originalParameters");
-            Method m10 = container.m("constructor-impl", constructorDesc);
-            Intrinsics.checkNotNull(m10);
-            this.f22402a = m10;
-            Method m11 = container.m("box-impl", StringsKt.D0(constructorDesc, "V") + ReflectClassUtilKt.getDesc(container.getJClass()));
-            Intrinsics.checkNotNull(m11);
-            this.f22403b = m11;
-            List<ParameterDescriptor> list = originalParameters;
-            ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-            for (ParameterDescriptor parameterDescriptor : list) {
-                KotlinType type = parameterDescriptor.getType();
-                Intrinsics.checkNotNullExpressionValue(type, "getType(...)");
-                arrayList.add(o.d(TypeSubstitutionKt.asSimpleType(type), descriptor));
-            }
-            this.f22404c = arrayList;
-            ArrayList arrayList2 = new ArrayList(CollectionsKt.w(list, 10));
-            int i10 = 0;
-            for (Object obj : list) {
-                int i11 = i10 + 1;
-                if (i10 < 0) {
-                    CollectionsKt.v();
-                }
-                ClassifierDescriptor mo1198getDeclarationDescriptor = ((ParameterDescriptor) obj).getType().getConstructor().mo1198getDeclarationDescriptor();
-                Intrinsics.checkNotNull(mo1198getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
-                ClassDescriptor classDescriptor = (ClassDescriptor) mo1198getDeclarationDescriptor;
-                List list2 = (List) this.f22404c.get(i10);
-                if (list2 != null) {
-                    List<Method> list3 = list2;
-                    e10 = new ArrayList(CollectionsKt.w(list3, 10));
-                    for (Method method : list3) {
-                        e10.add(method.getReturnType());
-                    }
-                } else {
-                    Class q10 = j3.q(classDescriptor);
-                    Intrinsics.checkNotNull(q10);
-                    e10 = CollectionsKt.e(q10);
-                }
-                arrayList2.add(e10);
-                i10 = i11;
-            }
-            this.f22405d = arrayList2;
-            this.f22406e = CollectionsKt.y(arrayList2);
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public d(JvmMemberSignature.Method signature) {
+            super(null);
+            Intrinsics.checkNotNullParameter(signature, "signature");
+            this.f22259a = signature;
+            this.f22260b = signature.asString();
         }
 
-        @Override // ds.h
-        public List a() {
-            return this.f22406e;
+        @Override // ds.n
+        public String a() {
+            return this.f22260b;
         }
 
-        @Override // ds.h
-        public /* bridge */ /* synthetic */ Member b() {
-            return (Member) d();
-        }
-
-        @Override // ds.h
-        public boolean c() {
-            return h.a.b(this);
-        }
-
-        @Override // ds.h
-        public Object call(Object[] args) {
-            Collection e10;
-            Intrinsics.checkNotNullParameter(args, "args");
-            ArrayList arrayList = new ArrayList();
-            for (Pair pair : kotlin.collections.i.i1(args, this.f22404c)) {
-                Object a10 = pair.a();
-                List list = (List) pair.b();
-                if (list != null) {
-                    List<Method> list2 = list;
-                    e10 = new ArrayList(CollectionsKt.w(list2, 10));
-                    for (Method method : list2) {
-                        e10.add(method.invoke(a10, null));
-                    }
-                } else {
-                    e10 = CollectionsKt.e(a10);
-                }
-                CollectionsKt.B(arrayList, e10);
-            }
-            Object[] array = arrayList.toArray(new Object[0]);
-            this.f22402a.invoke(null, Arrays.copyOf(array, array.length));
-            return this.f22403b.invoke(null, Arrays.copyOf(array, array.length));
-        }
-
-        public Void d() {
-            return null;
-        }
-
-        public final List e() {
-            return this.f22405d;
-        }
-
-        @Override // ds.h
-        public Type getReturnType() {
-            Class<?> returnType = this.f22403b.getReturnType();
-            Intrinsics.checkNotNullExpressionValue(returnType, "getReturnType(...)");
-            return returnType;
+        public final String b() {
+            return this.f22259a.getDesc();
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:55:0x010f, code lost:
-        if ((r12 instanceof ds.g) != false) goto L86;
-     */
-    /* JADX WARN: Removed duplicated region for block: B:27:0x0082 A[LOOP:1: B:25:0x007c->B:27:0x0082, LOOP_END] */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public n(kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor r11, ds.h r12, boolean r13) {
-        /*
-            Method dump skipped, instructions count: 596
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: ds.n.<init>(kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor, ds.h, boolean):void");
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class e extends n {
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final boolean e(ClassDescriptor makeKotlinParameterTypes) {
-        Intrinsics.checkNotNullParameter(makeKotlinParameterTypes, "$this$makeKotlinParameterTypes");
-        return InlineClassesUtilsKt.isValueClass(makeKotlinParameterTypes);
-    }
+        /* renamed from: a  reason: collision with root package name */
+        private final JvmMemberSignature.Method f22261a;
 
-    @Override // ds.h
-    public List a() {
-        return this.f22394b.a();
-    }
+        /* renamed from: b  reason: collision with root package name */
+        private final String f22262b;
 
-    @Override // ds.h
-    public Member b() {
-        return this.f22395c;
-    }
-
-    @Override // ds.h
-    public boolean c() {
-        return this.f22394b instanceof i.h.a;
-    }
-
-    @Override // ds.h
-    public Object call(Object[] args) {
-        Object invoke;
-        Object obj;
-        Method method;
-        Object g10;
-        Intrinsics.checkNotNullParameter(args, "args");
-        IntRange a10 = this.f22396d.a();
-        List[] c10 = this.f22396d.c();
-        Method b10 = this.f22396d.b();
-        if (!a10.isEmpty()) {
-            if (this.f22398f) {
-                List d10 = CollectionsKt.d(args.length);
-                int d11 = a10.d();
-                for (int i10 = 0; i10 < d11; i10++) {
-                    d10.add(args[i10]);
-                }
-                int d12 = a10.d();
-                int e10 = a10.e();
-                if (d12 <= e10) {
-                    while (true) {
-                        List<Method> list = c10[d12];
-                        Object obj2 = args[d12];
-                        if (list != null) {
-                            for (Method method2 : list) {
-                                List list2 = d10;
-                                if (obj2 != null) {
-                                    g10 = method2.invoke(obj2, null);
-                                } else {
-                                    Class<?> returnType = method2.getReturnType();
-                                    Intrinsics.checkNotNullExpressionValue(returnType, "getReturnType(...)");
-                                    g10 = j3.g(returnType);
-                                }
-                                list2.add(g10);
-                            }
-                        } else {
-                            d10.add(obj2);
-                        }
-                        if (d12 == e10) {
-                            break;
-                        }
-                        d12++;
-                    }
-                }
-                int e11 = a10.e() + 1;
-                int a02 = kotlin.collections.i.a0(args);
-                if (e11 <= a02) {
-                    while (true) {
-                        d10.add(args[e11]);
-                        if (e11 == a02) {
-                            break;
-                        }
-                        e11++;
-                    }
-                }
-                args = CollectionsKt.a(d10).toArray(new Object[0]);
-            } else {
-                int length = args.length;
-                Object[] objArr = new Object[length];
-                for (int i11 = 0; i11 < length; i11++) {
-                    int d13 = a10.d();
-                    if (i11 <= a10.e() && d13 <= i11) {
-                        List list3 = c10[i11];
-                        if (list3 != null) {
-                            method = (Method) CollectionsKt.Q0(list3);
-                        } else {
-                            method = null;
-                        }
-                        obj = args[i11];
-                        if (method != null) {
-                            if (obj != null) {
-                                obj = method.invoke(obj, null);
-                            } else {
-                                Class<?> returnType2 = method.getReturnType();
-                                Intrinsics.checkNotNullExpressionValue(returnType2, "getReturnType(...)");
-                                obj = j3.g(returnType2);
-                            }
-                        }
-                    } else {
-                        obj = args[i11];
-                    }
-                    objArr[i11] = obj;
-                }
-                args = objArr;
-            }
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public e(JvmMemberSignature.Method signature) {
+            super(null);
+            Intrinsics.checkNotNullParameter(signature, "signature");
+            this.f22261a = signature;
+            this.f22262b = signature.asString();
         }
-        Object call = this.f22394b.call(args);
-        if (call != or.b.f() && b10 != null && (invoke = b10.invoke(null, call)) != null) {
-            return invoke;
+
+        @Override // ds.n
+        public String a() {
+            return this.f22262b;
         }
-        return call;
+
+        public final String b() {
+            return this.f22261a.getDesc();
+        }
+
+        public final String c() {
+            return this.f22261a.getName();
+        }
     }
 
-    public final IntRange f(int i10) {
-        if (i10 >= 0) {
-            IntRange[] intRangeArr = this.f22397e;
-            if (i10 < intRangeArr.length) {
-                return intRangeArr[i10];
-            }
-        }
-        IntRange[] intRangeArr2 = this.f22397e;
-        if (intRangeArr2.length == 0) {
-            return new IntRange(i10, i10);
-        }
-        int length = (i10 - intRangeArr2.length) + ((IntRange) kotlin.collections.i.w0(intRangeArr2)).e() + 1;
-        return new IntRange(length, length);
+    public /* synthetic */ n(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
     }
 
-    @Override // ds.h
-    public Type getReturnType() {
-        return this.f22394b.getReturnType();
+    public abstract String a();
+
+    private n() {
     }
 }

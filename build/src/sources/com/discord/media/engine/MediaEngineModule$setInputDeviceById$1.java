@@ -29,7 +29,7 @@ final class MediaEngineModule$setInputDeviceById$1 extends kotlin.coroutines.jvm
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object awaitMediaEngine;
-        Object f10 = or.b.f();
+        Object f10 = pr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -47,11 +47,11 @@ final class MediaEngineModule$setInputDeviceById$1 extends kotlin.coroutines.jvm
             }
         }
         this.this$0.getMediaEngine().setInputDevice$media_engine_release(this.$deviceName);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$setInputDeviceById$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((MediaEngineModule$setInputDeviceById$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

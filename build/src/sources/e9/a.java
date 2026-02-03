@@ -8,22 +8,22 @@ import com.facebook.drawee.drawable.g;
 public class a implements ra.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Resources f22647a;
+    private final Resources f22679a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ra.a f22648b;
+    private final ra.a f22680b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ra.a f22649c;
+    private final ra.a f22681c;
 
     public a(Resources resources, ra.a aVar, ra.a aVar2) {
-        this.f22647a = resources;
-        this.f22648b = aVar;
-        this.f22649c = aVar2;
+        this.f22679a = resources;
+        this.f22680b = aVar;
+        this.f22681c = aVar2;
     }
 
     private static boolean c(sa.f fVar) {
-        if (fVar.a1() != 1 && fVar.a1() != 0) {
+        if (fVar.b1() != 1 && fVar.b1() != 0) {
             return true;
         }
         return false;
@@ -44,30 +44,30 @@ public class a implements ra.a {
             }
             if (eVar instanceof sa.f) {
                 sa.f fVar = (sa.f) eVar;
-                BitmapDrawable bitmapDrawable = new BitmapDrawable(this.f22647a, fVar.N1());
+                BitmapDrawable bitmapDrawable = new BitmapDrawable(this.f22679a, fVar.N1());
                 if (!d(fVar) && !c(fVar)) {
                     if (ya.b.d()) {
                         ya.b.b();
                     }
                     return bitmapDrawable;
                 }
-                g gVar = new g(bitmapDrawable, fVar.q1(), fVar.a1());
+                g gVar = new g(bitmapDrawable, fVar.q1(), fVar.b1());
                 if (ya.b.d()) {
                     ya.b.b();
                 }
                 return gVar;
             }
-            ra.a aVar = this.f22648b;
+            ra.a aVar = this.f22680b;
             if (aVar != null && aVar.b(eVar)) {
-                Drawable a10 = this.f22648b.a(eVar);
+                Drawable a10 = this.f22680b.a(eVar);
                 if (ya.b.d()) {
                     ya.b.b();
                 }
                 return a10;
             }
-            ra.a aVar2 = this.f22649c;
+            ra.a aVar2 = this.f22681c;
             if (aVar2 != null && aVar2.b(eVar)) {
-                Drawable a11 = this.f22649c.a(eVar);
+                Drawable a11 = this.f22681c.a(eVar);
                 if (ya.b.d()) {
                     ya.b.b();
                 }

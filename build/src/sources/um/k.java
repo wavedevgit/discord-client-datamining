@@ -1,102 +1,60 @@
 package um;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
-import okio.Buffer;
-import okio.ByteString;
-import tm.q;
-import tm.s;
-import tm.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class k {
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final a f50471c = new a(null);
-
-    /* renamed from: a  reason: collision with root package name */
-    private final s f50472a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final String f50473b;
+public abstract class k implements q {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    public final class a implements um.a {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final /* synthetic */ um.a f50486a;
+
+        /* renamed from: b  reason: collision with root package name */
+        final /* synthetic */ k f50487b;
+
+        public a(k this$0, um.a baseContext) {
+            Intrinsics.checkNotNullParameter(this$0, "this$0");
+            Intrinsics.checkNotNullParameter(baseContext, "baseContext");
+            this.f50487b = this$0;
+            this.f50486a = baseContext;
         }
 
-        public final k a(ByteString bytes) {
-            Intrinsics.checkNotNullParameter(bytes, "bytes");
-            Buffer buffer = new Buffer();
-            buffer.a2(bytes);
-            return new k(s.f49758f.a(tm.j.a(buffer)), tm.j.b(buffer));
+        @Override // um.a
+        public void a(String key, Function2 sideEffect) {
+            Intrinsics.checkNotNullParameter(key, "key");
+            Intrinsics.checkNotNullParameter(sideEffect, "sideEffect");
+            this.f50486a.a(key, sideEffect);
         }
 
-        private a() {
+        @Override // um.a
+        public Object b(q child, Object obj, String key, Function1 handler) {
+            Intrinsics.checkNotNullParameter(child, "child");
+            Intrinsics.checkNotNullParameter(key, "key");
+            Intrinsics.checkNotNullParameter(handler, "handler");
+            return this.f50486a.b(child, obj, key, handler);
+        }
+
+        @Override // um.a
+        public h c() {
+            return this.f50486a.c();
         }
     }
 
-    public k(s identifier, String name) {
-        Intrinsics.checkNotNullParameter(identifier, "identifier");
-        Intrinsics.checkNotNullParameter(name, "name");
-        this.f50472a = identifier;
-        this.f50473b = name;
+    public abstract Object d(Object obj, i iVar);
+
+    public abstract Object f(Object obj, Object obj2, a aVar);
+
+    public abstract i g(Object obj);
+
+    @Override // um.q
+    public final k b() {
+        return this;
     }
 
-    public final s a() {
-        return this.f50472a;
-    }
-
-    public final String b() {
-        return this.f50473b;
-    }
-
-    public final boolean c(q otherWorkflow, String otherName) {
-        Intrinsics.checkNotNullParameter(otherWorkflow, "otherWorkflow");
-        Intrinsics.checkNotNullParameter(otherName, "otherName");
-        if (Intrinsics.areEqual(this.f50472a, w.j(otherWorkflow)) && Intrinsics.areEqual(this.f50473b, otherName)) {
-            return true;
-        }
-        return false;
-    }
-
-    public final ByteString d() {
-        ByteString e10 = this.f50472a.e();
-        if (e10 == null) {
-            return null;
-        }
-        Buffer buffer = new Buffer();
-        tm.j.c(buffer, e10);
-        tm.j.d(buffer, b());
-        return buffer.L1();
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof k)) {
-            return false;
-        }
-        k kVar = (k) obj;
-        if (Intrinsics.areEqual(this.f50472a, kVar.f50472a) && Intrinsics.areEqual(this.f50473b, kVar.f50473b)) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        return (this.f50472a.hashCode() * 31) + this.f50473b.hashCode();
-    }
-
-    public String toString() {
-        return "WorkflowNodeId(identifier=" + this.f50472a + ", name=" + this.f50473b + ')';
-    }
-
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public k(q workflow, String name) {
-        this(w.j(workflow), name);
-        Intrinsics.checkNotNullParameter(workflow, "workflow");
-        Intrinsics.checkNotNullParameter(name, "name");
+    public Object e(Object obj, Object obj2, Object obj3) {
+        return obj3;
     }
 }

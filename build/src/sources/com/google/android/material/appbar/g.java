@@ -14,7 +14,7 @@ import com.google.android.material.internal.l;
 abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f15546a = {16843848};
+    private static final int[] f15175a = {16843848};
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void a(View view) {
@@ -23,10 +23,10 @@ abstract class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void b(View view, float f10) {
-        int integer = view.getResources().getInteger(yg.g.f54463a);
+        int integer = view.getResources().getInteger(yg.g.f54438a);
         StateListAnimator stateListAnimator = new StateListAnimator();
         long j10 = integer;
-        stateListAnimator.addState(new int[]{16842910, yg.b.f54353d0, -yg.b.f54355e0}, ObjectAnimator.ofFloat(view, ViewProps.ELEVATION, 0.0f).setDuration(j10));
+        stateListAnimator.addState(new int[]{16842910, yg.b.f54328d0, -yg.b.f54330e0}, ObjectAnimator.ofFloat(view, ViewProps.ELEVATION, 0.0f).setDuration(j10));
         stateListAnimator.addState(new int[]{16842910}, ObjectAnimator.ofFloat(view, ViewProps.ELEVATION, f10).setDuration(j10));
         stateListAnimator.addState(new int[0], ObjectAnimator.ofFloat(view, ViewProps.ELEVATION, 0.0f).setDuration(0L));
         view.setStateListAnimator(stateListAnimator);
@@ -35,7 +35,7 @@ abstract class g {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void c(View view, AttributeSet attributeSet, int i10, int i11) {
         Context context = view.getContext();
-        TypedArray i12 = l.i(context, attributeSet, f15546a, i10, i11, new int[0]);
+        TypedArray i12 = l.i(context, attributeSet, f15175a, i10, i11, new int[0]);
         try {
             if (i12.hasValue(0)) {
                 view.setStateListAnimator(AnimatorInflater.loadStateListAnimator(context, i12.getResourceId(0, 0)));

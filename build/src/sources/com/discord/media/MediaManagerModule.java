@@ -24,13 +24,13 @@ import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.ViewProps;
 import com.swmansion.reanimated.layoutReanimation.Snapshot;
-import gs.g;
-import gs.m0;
-import ir.v;
+import hs.g;
+import hs.m0;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.CancellationException;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -101,7 +101,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
                 WritableMap createMap2 = Arguments.createMap();
                 createMap2.putInt("width", i10);
                 createMap2.putInt("height", i11);
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
                 createMap.putMap("current", createMap2);
                 createArray.pushMap(createMap);
                 return createArray;
@@ -123,7 +123,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
         WritableMap createMap5 = Arguments.createMap();
         createMap5.putInt("width", i10);
         createMap5.putInt("height", i11);
-        Unit unit2 = Unit.f33298a;
+        Unit unit2 = Unit.f33074a;
         createMap4.putMap("current", createMap5);
         WritableMap createMap6 = Arguments.createMap();
         createMap6.putInt("width", videoCapabilities.getWidthAlignment());
@@ -330,7 +330,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
         String uri2 = uri.toString();
         Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
         reactEvents.emitModuleEvent(reactApplicationContext, new CompressionProgressEvent(uri2, i10));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @ReactMethod
@@ -343,7 +343,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
         Intrinsics.checkNotNullParameter(originalUri, "originalUri");
         Intrinsics.checkNotNullParameter(compressedUri, "compressedUri");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        gs.i.d(this.scope, null, null, new MediaManagerModule$calculateImageQualityMetrics$1(this, originalUri, compressedUri, promise, null), 3, null);
+        hs.i.d(this.scope, null, null, new MediaManagerModule$calculateImageQualityMetrics$1(this, originalUri, compressedUri, promise, null), 3, null);
     }
 
     @ReactMethod
@@ -400,7 +400,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
     public final void downloadMediaAssetWithContentType(@NotNull String uri, int i10, String str, @NotNull Promise promise) {
         Intrinsics.checkNotNullParameter(uri, "uri");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        gs.i.d(this.scope, m0.b(), null, new MediaManagerModule$downloadMediaAssetWithContentType$1(uri, str, this, promise, null), 2, null);
+        hs.i.d(this.scope, m0.b(), null, new MediaManagerModule$downloadMediaAssetWithContentType$1(uri, str, this, promise, null), 2, null);
     }
 
     @Override // com.facebook.react.bridge.BaseJavaModule
@@ -481,7 +481,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
     public final void getVideoMetadata(@NotNull String uri, ReadableMap readableMap, @NotNull Promise promise) {
         Intrinsics.checkNotNullParameter(uri, "uri");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        gs.i.d(this.scope, null, null, new MediaManagerModule$getVideoMetadata$1(this, Uri.parse(uri), promise, null), 3, null);
+        hs.i.d(this.scope, null, null, new MediaManagerModule$getVideoMetadata$1(this, Uri.parse(uri), promise, null), 3, null);
     }
 
     @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule, com.facebook.react.turbomodule.core.interfaces.TurboModule
@@ -588,6 +588,6 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
             z10 = z11;
             encodingConfig = null;
         }
-        gs.i.d(this.scope, null, null, new MediaManagerModule$resolveToMediaFilePath$1(this, parse, i10, z10, z12, z13, encodingConfig, promise, uri, null), 3, null);
+        hs.i.d(this.scope, null, null, new MediaManagerModule$resolveToMediaFilePath$1(this, parse, i10, z10, z12, z13, encodingConfig, promise, uri, null), 3, null);
     }
 }

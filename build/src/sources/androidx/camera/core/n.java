@@ -18,10 +18,12 @@ public interface n extends AutoCloseable {
 
     Image A();
 
-    a[] c1();
+    void B0(Rect rect);
 
     @Override // java.lang.AutoCloseable
     void close();
+
+    a[] d1();
 
     int getFormat();
 
@@ -30,6 +32,4 @@ public interface n extends AutoCloseable {
     int getWidth();
 
     p0 z();
-
-    void z0(Rect rect);
 }

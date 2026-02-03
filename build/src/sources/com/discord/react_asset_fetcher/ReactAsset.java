@@ -122,7 +122,7 @@ public final class ReactAsset {
     static {
         ReactAsset[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = pr.a.a($values);
+        $ENTRIES = qr.a.a($values);
     }
 
     private ReactAsset(String str, int i10) {

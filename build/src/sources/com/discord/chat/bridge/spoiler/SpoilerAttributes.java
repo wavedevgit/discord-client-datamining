@@ -44,7 +44,7 @@ public final class SpoilerAttributes {
         private final SpoilerAttributes forItem(SpoilerableData spoilerableData, String str, String str2, Boolean bool) {
             final String obscureOrNull = spoilerableData.getObscureOrNull();
             if (obscureOrNull != null) {
-                return new SpoilerAttributes(SpoilerIdentifier.m413constructorimpl("obscure:containerId(" + str + "):" + str2), new Function1() { // from class: com.discord.chat.bridge.spoiler.c
+                return new SpoilerAttributes(SpoilerIdentifier.m415constructorimpl("obscure:containerId(" + str + "):" + str2), new Function1() { // from class: com.discord.chat.bridge.spoiler.c
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj) {
                         String forItem$lambda$2$lambda$0;
@@ -62,7 +62,7 @@ public final class SpoilerAttributes {
             }
             final String spoilerOrNull = spoilerableData.getSpoilerOrNull();
             if (spoilerOrNull != null) {
-                return new SpoilerAttributes(SpoilerIdentifier.m413constructorimpl("spoiler:containerId(" + str + "):" + str2), new Function1() { // from class: com.discord.chat.bridge.spoiler.e
+                return new SpoilerAttributes(SpoilerIdentifier.m415constructorimpl("spoiler:containerId(" + str + "):" + str2), new Function1() { // from class: com.discord.chat.bridge.spoiler.e
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj) {
                         String forItem$lambda$5$lambda$3;
@@ -110,13 +110,13 @@ public final class SpoilerAttributes {
         public final SpoilerAttributes forAttachment(@NotNull Attachment attachment, @NotNull Message message, int i10, Boolean bool) {
             Intrinsics.checkNotNullParameter(attachment, "attachment");
             Intrinsics.checkNotNullParameter(message, "message");
-            return forItem(attachment, "messageId(" + MessageId.m1091toStringimpl(message.m237getId3Eiw7ao()) + ")", attachment.type().getIndexLabel() + "(" + i10 + ")", bool);
+            return forItem(attachment, "messageId(" + MessageId.m1093toStringimpl(message.m239getId3Eiw7ao()) + ")", attachment.type().getIndexLabel() + "(" + i10 + ")", bool);
         }
 
         public final SpoilerAttributes forEmbed(@NotNull Embed embed, @NotNull Message message, int i10, Boolean bool) {
             Intrinsics.checkNotNullParameter(embed, "embed");
             Intrinsics.checkNotNullParameter(message, "message");
-            return forItem(embed, "messageId(" + MessageId.m1091toStringimpl(message.m237getId3Eiw7ao()) + ")", "embedIndex(" + i10 + ")", bool);
+            return forItem(embed, "messageId(" + MessageId.m1093toStringimpl(message.m239getId3Eiw7ao()) + ")", "embedIndex(" + i10 + ")", bool);
         }
 
         public final SpoilerAttributes forGenericMedia(@NotNull SpoilerableData spoilerableData, @NotNull String containerId, @NotNull String itemType, @NotNull String itemKey, Boolean bool) {
@@ -130,7 +130,7 @@ public final class SpoilerAttributes {
         public final SpoilerAttributes forMediaPostPreviewEmbed(@NotNull PostPreviewEmbed embed, @NotNull Message message, int i10, Boolean bool) {
             Intrinsics.checkNotNullParameter(embed, "embed");
             Intrinsics.checkNotNullParameter(message, "message");
-            return forItem(embed, "messageId(" + MessageId.m1091toStringimpl(message.m237getId3Eiw7ao()) + ")", "mediaPostPreviewEmbed(" + i10 + ")", bool);
+            return forItem(embed, "messageId(" + MessageId.m1093toStringimpl(message.m239getId3Eiw7ao()) + ")", "mediaPostPreviewEmbed(" + i10 + ")", bool);
         }
 
         private Companion() {
@@ -148,7 +148,7 @@ public final class SpoilerAttributes {
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit unit;
-                    unit = Unit.f33298a;
+                    unit = Unit.f33074a;
                     return unit;
                 }
             };
@@ -168,11 +168,11 @@ public final class SpoilerAttributes {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configure$lambda$1(boolean z10) {
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* renamed from: copy-5Uv3usY$default  reason: not valid java name */
-    public static /* synthetic */ SpoilerAttributes m406copy5Uv3usY$default(SpoilerAttributes spoilerAttributes, String str, Function1 function1, Function1 function12, SpoilerType spoilerType, Boolean bool, int i10, Object obj) {
+    public static /* synthetic */ SpoilerAttributes m408copy5Uv3usY$default(SpoilerAttributes spoilerAttributes, String str, Function1 function1, Function1 function12, SpoilerType spoilerType, Boolean bool, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = spoilerAttributes.identifier;
         }
@@ -192,11 +192,11 @@ public final class SpoilerAttributes {
         }
         Boolean bool2 = bool;
         Function1 function15 = function14;
-        return spoilerAttributes.m408copy5Uv3usY(str, function13, function15, spoilerType, bool2);
+        return spoilerAttributes.m410copy5Uv3usY(str, function13, function15, spoilerType, bool2);
     }
 
     private final boolean hasSpoilerConfig() {
-        if (!SpoilerManager.INSTANCE.m420isNotRevealedV2PEE7g(this.identifier) && this.type != SpoilerType.OBSCURE) {
+        if (!SpoilerManager.INSTANCE.m422isNotRevealedV2PEE7g(this.identifier) && this.type != SpoilerType.OBSCURE) {
             return false;
         }
         return true;
@@ -204,7 +204,7 @@ public final class SpoilerAttributes {
 
     @NotNull
     /* renamed from: component1-Bq9X6Gg  reason: not valid java name */
-    public final String m407component1Bq9X6Gg() {
+    public final String m409component1Bq9X6Gg() {
         return this.identifier;
     }
 
@@ -242,27 +242,27 @@ public final class SpoilerAttributes {
         return new SpoilerConfig(spoilerAttributes, onTapObscureToggle, new Function1<SpoilerIdentifier, Unit>() { // from class: com.discord.chat.bridge.spoiler.SpoilerAttributes$configure$4$1
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-                m410invokeV2PEE7g(((SpoilerIdentifier) obj).m418unboximpl());
-                return Unit.f33298a;
+                m412invokeV2PEE7g(((SpoilerIdentifier) obj).m420unboximpl());
+                return Unit.f33074a;
             }
 
             /* renamed from: invoke-V2PEE7g  reason: not valid java name */
-            public final void m410invokeV2PEE7g(String spoilerId) {
+            public final void m412invokeV2PEE7g(String spoilerId) {
                 Intrinsics.checkNotNullParameter(spoilerId, "spoilerId");
-                SpoilerManager.INSTANCE.m423markRevealedV2PEE7g(spoilerId);
+                SpoilerManager.INSTANCE.m425markRevealedV2PEE7g(spoilerId);
                 onTapSpoiler.invoke();
             }
         }, new Function1<SpoilerIdentifier, Unit>() { // from class: com.discord.chat.bridge.spoiler.SpoilerAttributes$configure$4$2
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-                m411invokeV2PEE7g(((SpoilerIdentifier) obj).m418unboximpl());
-                return Unit.f33298a;
+                m413invokeV2PEE7g(((SpoilerIdentifier) obj).m420unboximpl());
+                return Unit.f33074a;
             }
 
             /* renamed from: invoke-V2PEE7g  reason: not valid java name */
-            public final void m411invokeV2PEE7g(String spoilerId) {
+            public final void m413invokeV2PEE7g(String spoilerId) {
                 Intrinsics.checkNotNullParameter(spoilerId, "spoilerId");
-                SpoilerManager.INSTANCE.m422markHiddenV2PEE7g(spoilerId);
+                SpoilerManager.INSTANCE.m424markHiddenV2PEE7g(spoilerId);
                 onTapSpoiler.invoke();
             }
         });
@@ -270,7 +270,7 @@ public final class SpoilerAttributes {
 
     @NotNull
     /* renamed from: copy-5Uv3usY  reason: not valid java name */
-    public final SpoilerAttributes m408copy5Uv3usY(@NotNull String identifier, @NotNull Function1<? super Context, String> label, @NotNull Function1<? super Context, String> description, @NotNull SpoilerType type, Boolean bool) {
+    public final SpoilerAttributes m410copy5Uv3usY(@NotNull String identifier, @NotNull Function1<? super Context, String> label, @NotNull Function1<? super Context, String> description, @NotNull SpoilerType type, Boolean bool) {
         Intrinsics.checkNotNullParameter(identifier, "identifier");
         Intrinsics.checkNotNullParameter(label, "label");
         Intrinsics.checkNotNullParameter(description, "description");
@@ -284,7 +284,7 @@ public final class SpoilerAttributes {
         }
         if (obj instanceof SpoilerAttributes) {
             SpoilerAttributes spoilerAttributes = (SpoilerAttributes) obj;
-            return SpoilerIdentifier.m415equalsimpl0(this.identifier, spoilerAttributes.identifier) && Intrinsics.areEqual(this.label, spoilerAttributes.label) && Intrinsics.areEqual(this.description, spoilerAttributes.description) && this.type == spoilerAttributes.type && Intrinsics.areEqual(this.verifyAge, spoilerAttributes.verifyAge);
+            return SpoilerIdentifier.m417equalsimpl0(this.identifier, spoilerAttributes.identifier) && Intrinsics.areEqual(this.label, spoilerAttributes.label) && Intrinsics.areEqual(this.description, spoilerAttributes.description) && this.type == spoilerAttributes.type && Intrinsics.areEqual(this.verifyAge, spoilerAttributes.verifyAge);
         }
         return false;
     }
@@ -296,7 +296,7 @@ public final class SpoilerAttributes {
 
     @NotNull
     /* renamed from: getIdentifier-Bq9X6Gg  reason: not valid java name */
-    public final String m409getIdentifierBq9X6Gg() {
+    public final String m411getIdentifierBq9X6Gg() {
         return this.identifier;
     }
 
@@ -315,19 +315,19 @@ public final class SpoilerAttributes {
     }
 
     public int hashCode() {
-        int m416hashCodeimpl = ((((((SpoilerIdentifier.m416hashCodeimpl(this.identifier) * 31) + this.label.hashCode()) * 31) + this.description.hashCode()) * 31) + this.type.hashCode()) * 31;
+        int m418hashCodeimpl = ((((((SpoilerIdentifier.m418hashCodeimpl(this.identifier) * 31) + this.label.hashCode()) * 31) + this.description.hashCode()) * 31) + this.type.hashCode()) * 31;
         Boolean bool = this.verifyAge;
-        return m416hashCodeimpl + (bool == null ? 0 : bool.hashCode());
+        return m418hashCodeimpl + (bool == null ? 0 : bool.hashCode());
     }
 
     @NotNull
     public String toString() {
-        String m417toStringimpl = SpoilerIdentifier.m417toStringimpl(this.identifier);
+        String m419toStringimpl = SpoilerIdentifier.m419toStringimpl(this.identifier);
         Function1<Context, String> function1 = this.label;
         Function1<Context, String> function12 = this.description;
         SpoilerType spoilerType = this.type;
         Boolean bool = this.verifyAge;
-        return "SpoilerAttributes(identifier=" + m417toStringimpl + ", label=" + function1 + ", description=" + function12 + ", type=" + spoilerType + ", verifyAge=" + bool + ")";
+        return "SpoilerAttributes(identifier=" + m419toStringimpl + ", label=" + function1 + ", description=" + function12 + ", type=" + spoilerType + ", verifyAge=" + bool + ")";
     }
 
     /* JADX WARN: Multi-variable type inference failed */

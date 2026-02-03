@@ -26,13 +26,13 @@ import org.jetbrains.annotations.NotNull;
 public class DeserializedPackageMemberScope extends DeserializedMemberScope {
 
     /* renamed from: f  reason: collision with root package name */
-    private final PackageFragmentDescriptor f35718f;
+    private final PackageFragmentDescriptor f35494f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f35719g;
+    private final String f35495g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final FqName f35720h;
+    private final FqName f35496h;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -88,10 +88,10 @@ public class DeserializedPackageMemberScope extends DeserializedMemberScope {
             r5 = r8
             r0 = r9
             r0.<init>(r1, r2, r3, r4, r5)
-            r9.f35718f = r10
-            r9.f35719g = r7
+            r9.f35494f = r10
+            r9.f35495g = r7
             kotlin.reflect.jvm.internal.impl.name.FqName r1 = r10.getFqName()
-            r9.f35720h = r1
+            r9.f35496h = r1
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedPackageMemberScope.<init>(kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentDescriptor, kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$Package, kotlin.reflect.jvm.internal.impl.metadata.deserialization.NameResolver, kotlin.reflect.jvm.internal.impl.metadata.deserialization.BinaryVersion, kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedContainerSource, kotlin.reflect.jvm.internal.impl.serialization.deserialization.DeserializationComponents, java.lang.String, kotlin.jvm.functions.Function0):void");
@@ -105,11 +105,11 @@ public class DeserializedPackageMemberScope extends DeserializedMemberScope {
 
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     /* renamed from: getContributedClassifier */
-    public ClassifierDescriptor mo1199getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
+    public ClassifierDescriptor mo1201getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        mo1202recordLookup(name, location);
-        return super.mo1199getContributedClassifier(name, location);
+        mo1204recordLookup(name, location);
+        return super.mo1201getContributedClassifier(name, location);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
@@ -120,7 +120,7 @@ public class DeserializedPackageMemberScope extends DeserializedMemberScope {
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope
     protected ClassId i(Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return new ClassId(this.f35720h, name);
+        return new ClassId(this.f35496h, name);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope
@@ -145,7 +145,7 @@ public class DeserializedPackageMemberScope extends DeserializedMemberScope {
             Iterable<ClassDescriptorFactory> fictitiousClassDescriptorFactories = l().getComponents().getFictitiousClassDescriptorFactories();
             if (!(fictitiousClassDescriptorFactories instanceof Collection) || !((Collection) fictitiousClassDescriptorFactories).isEmpty()) {
                 for (ClassDescriptorFactory classDescriptorFactory : fictitiousClassDescriptorFactories) {
-                    if (classDescriptorFactory.shouldCreateClass(this.f35720h, name)) {
+                    if (classDescriptorFactory.shouldCreateClass(this.f35496h, name)) {
                         return true;
                     }
                 }
@@ -158,15 +158,15 @@ public class DeserializedPackageMemberScope extends DeserializedMemberScope {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     /* renamed from: recordLookup */
-    public void mo1202recordLookup(@NotNull Name name, @NotNull LookupLocation location) {
+    public void mo1204recordLookup(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        UtilsKt.record(l().getComponents().getLookupTracker(), location, this.f35718f, name);
+        UtilsKt.record(l().getComponents().getLookupTracker(), location, this.f35494f, name);
     }
 
     @NotNull
     public String toString() {
-        return this.f35719g;
+        return this.f35495g;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
@@ -178,7 +178,7 @@ public class DeserializedPackageMemberScope extends DeserializedMemberScope {
         Iterable<ClassDescriptorFactory> fictitiousClassDescriptorFactories = l().getComponents().getFictitiousClassDescriptorFactories();
         ArrayList arrayList = new ArrayList();
         for (ClassDescriptorFactory classDescriptorFactory : fictitiousClassDescriptorFactories) {
-            CollectionsKt.B(arrayList, classDescriptorFactory.getAllContributedClassesIfPossible(this.f35720h));
+            CollectionsKt.B(arrayList, classDescriptorFactory.getAllContributedClassesIfPossible(this.f35496h));
         }
         return CollectionsKt.L0(f10, arrayList);
     }

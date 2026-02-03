@@ -1,57 +1,83 @@
 package tu;
 
 import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.text.StringsKt;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Lambda;
+import tu.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a {
+public final class a implements lu.b, c {
 
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f50010a = new a();
+
+    /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: tu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0658a {
-        private static Object a(a aVar, List list) {
-            if (pv.a.g(list)) {
-                return Double.valueOf(0.0d);
-            }
-            if (list.isEmpty()) {
-                return "";
-            }
-            return b(aVar, list);
+    public static final class C0655a extends Lambda implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final C0655a f50011d = new C0655a();
+
+        C0655a() {
+            super(2);
         }
 
-        private static Object b(a aVar, List list) {
-            List list2;
-            if (list.size() == 1 && !(CollectionsKt.firstOrNull(list) instanceof Boolean)) {
-                list2 = list;
+        public final Boolean a(int i10, int i11) {
+            boolean z10;
+            if (i10 == i11) {
+                z10 = true;
             } else {
-                list2 = null;
+                z10 = false;
             }
-            if (list2 == null) {
-                return null;
-            }
-            return aVar.a(CollectionsKt.firstOrNull(list));
+            return Boolean.valueOf(z10);
         }
 
-        public static Object c(a aVar, Object obj) {
-            if (obj instanceof Number) {
-                return Double.valueOf(((Number) obj).doubleValue());
-            }
-            if (obj instanceof String) {
-                Double p10 = StringsKt.p((String) obj);
-                if (p10 != null) {
-                    return p10;
-                }
-            } else if (obj instanceof List) {
-                Object a10 = a(aVar, (List) obj);
-                if (a10 != null) {
-                    return a10;
-                }
-            } else if (obj instanceof Boolean) {
-                return Double.valueOf(pv.b.a(((Boolean) obj).booleanValue()));
-            }
-            return obj;
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
         }
     }
 
-    Object a(Object obj);
+    private a() {
+    }
+
+    @Override // tu.c, uu.a
+    public Object a(Object obj) {
+        return c.a.f(this, obj);
+    }
+
+    @Override // mu.c
+    public boolean b(List list, Function2 function2) {
+        return c.a.b(this, list, function2);
+    }
+
+    @Override // mu.a
+    public Boolean c(Object obj) {
+        return c.a.g(this, obj);
+    }
+
+    @Override // mu.b
+    public List d(Comparable comparable, Comparable comparable2) {
+        return c.a.d(this, comparable, comparable2);
+    }
+
+    @Override // uu.c
+    public Object e(Object obj) {
+        return c.a.e(this, obj);
+    }
+
+    @Override // mu.b
+    public List g(Comparable comparable, Comparable comparable2) {
+        return c.a.c(this, comparable, comparable2);
+    }
+
+    public boolean h(Object obj, Function2 function2) {
+        return c.a.a(this, obj, function2);
+    }
+
+    @Override // lu.b
+    /* renamed from: i */
+    public Boolean f(Object obj, Object obj2) {
+        return Boolean.valueOf(!h(obj, C0655a.f50011d));
+    }
 }

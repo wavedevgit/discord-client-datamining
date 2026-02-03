@@ -1,98 +1,82 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var1 = exports;
-    var6 = dependencyMap;
-    var4 = function arg0() {
-        _fun22456: for (var _fun22456_ip = 0;;) switch (_fun22456_ip) {
-            case 0:
-                var2 = arg0;
-                if (!var2) {
-                    _fun22456_ip = 18;
-                    continue _fun22456
-                }
-            case 6:
-                var1 = var2.__esModule;
-                var0 = var2;
-                if (var1) {
-                    _fun22456_ip = 27;
-                    continue _fun22456
-                }
-            case 18:
-                var1 = {};
-                var1.default = var2;
-                var0 = var1;
-            case 27:
-                return var0;
-        }
-    };
-    var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var7.bind(var8)(var1, var0, var2);
-    var0 = function arg0, arg1() {
-        var5 = undefined;
-        var1 = undefined;
-        var2 = _closure1_slot2;
-        var3 = var2.default;
-        var1 = arguments;
-        var2 = var1;
-        var1 = 2;
-        var1 = var3.bind(var5)(var1, var2);
-        var1 = _closure1_slot1;
-        var2 = var1.default;
-        var1 = arg0;
-        var4 = var2.bind(var5)(var1);
-        var1 = _closure1_slot1;
-        var2 = var1.default;
-        var1 = arg1;
-        var3 = var2.bind(var5)(var1);
-        var1 = var4.getTime;
-        var2 = var1.bind(var4)();
-        var1 = _closure1_slot0;
-        var1 = var1.default;
-        var1 = var1.bind(var5)(var4);
-        var4 = var2 - var1;
-        var1 = var3.getTime;
-        var2 = var1.bind(var3)();
-        var1 = _closure1_slot0;
-        var1 = var1.default;
-        var1 = var1.bind(var5)(var3);
-        var3 = var2 - var1;
-        var1 = global;
-        var2 = var1.Math;
-        var1 = var2.round;
-        var3 = var4 - var3;
-        var0 = _closure1_slot3;
-        var0 = var3 / var0;
-        var0 = var1.bind(var2)(var0);
-        return var0;
-    };
-    var1.default = var0;
-    var0 = 0;
-    var2 = var6[var0];
-    var0 = undefined;
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot0 = var2;
-    var2 = 1;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot1 = var2;
-    var2 = 2;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot2 = var2;
-    var2 = 86400000;
-    var _closure1_slot3 = var2;
-    var2 = var1.default;
-    var1 = arg4;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2697, 2698, 2535]);
+    _fun22216: for (var _fun22216_ip = 0;;) switch (_fun22216_ip) {
+        case 0:
+            var1 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var2 = {};
+            var0 = true;
+            var2.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var1, var0, var2);
+            var0 = undefined;
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun22216_ip = 75;
+                continue _fun22216
+            }
+        case 63:
+            var2 = var4.__esModule;
+            var3 = var4;
+            if (var2) {
+                _fun22216_ip = 84;
+                continue _fun22216
+            }
+        case 75:
+            var2 = {};
+            var2.default = var4;
+            var3 = var2;
+        case 84:
+            var2 = {};
+            var6 = var3.default;
+            var4 = {};
+            var5 = {
+                'full': 'วันEEEEที่ do MMMM y',
+                'long': 'do MMMM y',
+                'medium': 'd MMM y',
+                'short': 'dd/MM/yyyy'
+            };
+            var4.formats = var5;
+            var5 = 'full';
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.date = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {
+                'full': 'H:mm:ss น. zzzz',
+                'long': 'H:mm:ss น. z',
+                'medium': 'H:mm:ss น.',
+                'short': 'H:mm น.'
+            };
+            var4.formats = var7;
+            var7 = 'medium';
+            var4.defaultWidth = var7;
+            var4 = var6.bind(var0)(var4);
+            var2.time = var4;
+            var4 = var3.default;
+            var3 = {};
+            var6 = {
+                'full': "{{date}} 'เวลา' {{time}}",
+                'long': "{{date}} 'เวลา' {{time}}",
+                'medium': '{{date}}, {{time}}',
+                'short': '{{date}}, {{time}}'
+            };
+            var3.formats = var6;
+            var3.defaultWidth = var5;
+            var3 = var4.bind(var0)(var3);
+            var2.dateTime = var3;
+            var1.default = var2;
+            var2 = var1.default;
+            var1 = module;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1681]);

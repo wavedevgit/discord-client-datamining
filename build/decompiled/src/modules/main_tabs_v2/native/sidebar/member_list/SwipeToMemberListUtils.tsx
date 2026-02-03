@@ -58,4 +58,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isSwipeToMemberListEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8944, 1311, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8976, 1311, 2]);

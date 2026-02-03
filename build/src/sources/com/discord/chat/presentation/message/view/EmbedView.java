@@ -368,7 +368,7 @@ public final class EmbedView extends FrameLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setEmbed_uKkM4jM$lambda$5$lambda$4(Function3 function3, String str, String str2, DraweeSpanStringBuilder draweeSpanStringBuilder, View view) {
         String str3;
-        MessageId m1084boximpl = MessageId.m1084boximpl(str);
+        MessageId m1086boximpl = MessageId.m1086boximpl(str);
         if (draweeSpanStringBuilder != null) {
             str3 = draweeSpanStringBuilder.toString();
         } else {
@@ -377,19 +377,19 @@ public final class EmbedView extends FrameLayout {
         if (str3 == null) {
             str3 = "";
         }
-        function3.invoke(m1084boximpl, str2, str3);
+        function3.invoke(m1086boximpl, str2, str3);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setEmbed_uKkM4jM$lambda$6(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        function2.invoke(MessageId.m1084boximpl(str), node);
-        return Unit.f33298a;
+        function2.invoke(MessageId.m1086boximpl(str), node);
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setEmbed_uKkM4jM$lambda$8$lambda$7(Function3 function3, String str, Embed embed, View view) {
-        function3.invoke(MessageId.m1084boximpl(str), embed.getAuthor().getUrl(), embed.getAuthor().getName());
+        function3.invoke(MessageId.m1086boximpl(str), embed.getAuthor().getUrl(), embed.getAuthor().getName());
     }
 
     private final void setError(String str, int i10, String str2, Integer num) {
@@ -433,7 +433,7 @@ public final class EmbedView extends FrameLayout {
     }
 
     /* renamed from: setFields-SAQFhFE  reason: not valid java name */
-    private final void m687setFieldsSAQFhFE(List<EmbedField> list, String str, boolean z10, boolean z11, boolean z12, boolean z13, final Function2<? super MessageId, ? super LinkContentNode, Unit> function2, Function1<? super LinkContentNode, Unit> function1, Function1<? super CharSequence, Unit> function12, Function0<Unit> function0, Function1<? super EmojiContentNode, Unit> function13, Function3 function3, Function4 function4) {
+    private final void m689setFieldsSAQFhFE(List<EmbedField> list, String str, boolean z10, boolean z11, boolean z12, boolean z13, final Function2<? super MessageId, ? super LinkContentNode, Unit> function2, Function1<? super LinkContentNode, Unit> function1, Function1<? super CharSequence, Unit> function12, Function0<Unit> function0, Function1<? super EmojiContentNode, Unit> function13, Function3 function3, Function4 function4) {
         LinearLayout linearLayout;
         String str2;
         String str3;
@@ -523,8 +523,8 @@ public final class EmbedView extends FrameLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setFields_SAQFhFE$lambda$27(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        function2.invoke(MessageId.m1084boximpl(str), node);
-        return Unit.f33298a;
+        function2.invoke(MessageId.m1086boximpl(str), node);
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -616,7 +616,7 @@ public final class EmbedView extends FrameLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setMediaEmbed$lambda$33(EmbedView embedView) {
         embedView.binding.spoiler.makeObscureHideButtonHidden();
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void setProvider(final CharSequence charSequence, Integer num, final Function1<? super CharSequence, Unit> function1) {
@@ -732,7 +732,7 @@ public final class EmbedView extends FrameLayout {
     }
 
     /* renamed from: setEmbed-uKkM4jM  reason: not valid java name */
-    public final void m688setEmbeduKkM4jM(@NotNull MessageMargins margins, @NotNull final Embed embed, long j10, @NotNull String messageId, int i10, int i11, int i12, boolean z10, boolean z11, boolean z12, boolean z13, boolean z14, @NotNull final Function3 onTitleLinkClicked, @NotNull final Function3 onAuthorLinkClicked, @NotNull final Function2<? super Double, ? super Integer, Unit> onMediaClicked, View.OnLongClickListener onLongClickListener, @NotNull final Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, @NotNull Function1<? super LinkContentNode, Unit> onLongTapLinkNode, @NotNull Function1<? super CharSequence, Unit> onTapCopyText, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super EmojiContentNode, Unit> onTapEmoji, @NotNull Function3 onTapChannel, @NotNull Function4 onTapMention, @NotNull Function1<? super CommandMentionContentNode, Unit> onTapCommand, SpoilerConfig spoilerConfig, double d10, final boolean z15, boolean z16, boolean z17, boolean z18) {
+    public final void m690setEmbeduKkM4jM(@NotNull MessageMargins margins, @NotNull final Embed embed, long j10, @NotNull String messageId, int i10, int i11, int i12, boolean z10, boolean z11, boolean z12, boolean z13, boolean z14, @NotNull final Function3 onTitleLinkClicked, @NotNull final Function3 onAuthorLinkClicked, @NotNull final Function2<? super Double, ? super Integer, Unit> onMediaClicked, View.OnLongClickListener onLongClickListener, @NotNull final Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, @NotNull Function1<? super LinkContentNode, Unit> onLongTapLinkNode, @NotNull Function1<? super CharSequence, Unit> onTapCopyText, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super EmojiContentNode, Unit> onTapEmoji, @NotNull Function3 onTapChannel, @NotNull Function4 onTapMention, @NotNull Function1<? super CommandMentionContentNode, Unit> onTapCommand, SpoilerConfig spoilerConfig, double d10, final boolean z15, boolean z16, boolean z17, boolean z18) {
         final String str;
         final DraweeSpanStringBuilder draweeSpanStringBuilder;
         Integer headerTextColor;
@@ -773,19 +773,19 @@ public final class EmbedView extends FrameLayout {
         Intrinsics.checkNotNullExpressionValue(thumbnail, "thumbnail");
         ViewClippingUtilsKt.clipToRoundedRectangle(thumbnail, i12);
         if (EmbedUtilsKt.isInlineMedia(embed)) {
-            final MediaSource m391toMediaSourceUBIQNlQ = EmbedUtilsKt.m391toMediaSourceUBIQNlQ(embed, j10, messageId, z10, Double.valueOf(d10));
-            if (m391toMediaSourceUBIQNlQ != null) {
+            final MediaSource m393toMediaSourceUBIQNlQ = EmbedUtilsKt.m393toMediaSourceUBIQNlQ(embed, j10, messageId, z10, Double.valueOf(d10));
+            if (m393toMediaSourceUBIQNlQ != null) {
                 Space spacer = embedView.binding.spacer;
                 Intrinsics.checkNotNullExpressionValue(spacer, "spacer");
                 spacer.setVisibility(8);
-                if (m391toMediaSourceUBIQNlQ.getPreviewUrl() != null) {
+                if (m393toMediaSourceUBIQNlQ.getPreviewUrl() != null) {
                     EmbedViewResizingMediaView mediaView2 = embedView.binding.mediaView;
                     Intrinsics.checkNotNullExpressionValue(mediaView2, "mediaView");
-                    embedView.setMediaEmbed(mediaView2, embed, m391toMediaSourceUBIQNlQ, i11, MessageMargins.Companion.getWidth(margins, i10, z18));
+                    embedView.setMediaEmbed(mediaView2, embed, m393toMediaSourceUBIQNlQ, i11, MessageMargins.Companion.getWidth(margins, i10, z18));
                     embedView.binding.mediaView.setOnMediaClickListeners(new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.f0
                         @Override // android.view.View.OnClickListener
                         public final void onClick(View view) {
-                            EmbedView.setEmbed_uKkM4jM$lambda$3$lambda$2(Function2.this, m391toMediaSourceUBIQNlQ, z15, embedView, view);
+                            EmbedView.setEmbed_uKkM4jM$lambda$3$lambda$2(Function2.this, m393toMediaSourceUBIQNlQ, z15, embedView, view);
                         }
                     }, onLongClickListener);
                     z21 = false;
@@ -876,7 +876,7 @@ public final class EmbedView extends FrameLayout {
             if (fields == null) {
                 fields = CollectionsKt.l();
             }
-            embedView.m687setFieldsSAQFhFE(fields, str2, z11, z12, z13, z14, onLinkClicked, onLongTapLinkNode, onTapCopyText, onTapSpoiler, onTapEmoji, onTapChannel, onTapMention);
+            embedView.m689setFieldsSAQFhFE(fields, str2, z11, z12, z13, z14, onLinkClicked, onLongTapLinkNode, onTapCopyText, onTapSpoiler, onTapEmoji, onTapChannel, onTapMention);
             EmbedFooter footer = embed.getFooter();
             String imageUrl2 = footer != null ? footer.getImageUrl() : null;
             EmbedFooter footer2 = embed.getFooter();
@@ -886,8 +886,8 @@ public final class EmbedView extends FrameLayout {
             } else {
                 embedView.setError(embed.getMessageSendError(), embed.getBodyTextColor(), embed.getIconURL(), null);
             }
-            List<MediaSource> m390toImageMediaSourcesSHRpUJI = EmbedUtilsKt.m390toImageMediaSourcesSHRpUJI(embed, j10, messageId);
-            if (m390toImageMediaSourcesSHRpUJI != null) {
+            List<MediaSource> m392toImageMediaSourcesSHRpUJI = EmbedUtilsKt.m392toImageMediaSourcesSHRpUJI(embed, j10, messageId);
+            if (m392toImageMediaSourcesSHRpUJI != null) {
                 int i13 = (int) (i11 * 0.75d);
                 int widthForEmbedContent = MessageMargins.Companion.getWidthForEmbedContent(margins, i10, z18);
                 MediaContainingViewResizer mediaContainingViewResizer = MediaContainingViewResizer.INSTANCE;
@@ -896,7 +896,7 @@ public final class EmbedView extends FrameLayout {
                 MediaContainingViewResizer.resizeLayoutParams$default(mediaContainingViewResizer, inlineMediaContainer2, widthForEmbedContent, i13, widthForEmbedContent, i13, null, 16, null);
                 EmbedViewBinding embedViewBinding = embedView.binding;
                 final int i14 = 0;
-                for (Object obj : CollectionsKt.q1(m390toImageMediaSourcesSHRpUJI, new EmbedViewResizingMediaView[]{embedViewBinding.inlineMediaView, embedViewBinding.inlineMediaView2, embedViewBinding.inlineMediaView3, embedViewBinding.inlineMediaView4})) {
+                for (Object obj : CollectionsKt.q1(m392toImageMediaSourcesSHRpUJI, new EmbedViewResizingMediaView[]{embedViewBinding.inlineMediaView, embedViewBinding.inlineMediaView2, embedViewBinding.inlineMediaView3, embedViewBinding.inlineMediaView4})) {
                     int i15 = i14 + 1;
                     if (i14 < 0) {
                         CollectionsKt.v();
@@ -917,20 +917,20 @@ public final class EmbedView extends FrameLayout {
                 }
                 z20 = true;
             } else {
-                final MediaSource m391toMediaSourceUBIQNlQ2 = EmbedUtilsKt.m391toMediaSourceUBIQNlQ(embed, j10, messageId, z10, Double.valueOf(d10));
-                if (m391toMediaSourceUBIQNlQ2 != null) {
+                final MediaSource m393toMediaSourceUBIQNlQ2 = EmbedUtilsKt.m393toMediaSourceUBIQNlQ(embed, j10, messageId, z10, Double.valueOf(d10));
+                if (m393toMediaSourceUBIQNlQ2 != null) {
                     EmbedViewResizingMediaView inlineMediaView = embedView.binding.inlineMediaView;
                     Intrinsics.checkNotNullExpressionValue(inlineMediaView, "inlineMediaView");
-                    embedView.setMediaEmbed(inlineMediaView, embed, m391toMediaSourceUBIQNlQ2, i11, MessageMargins.Companion.getWidthForEmbedContent(margins, i10, z18));
+                    embedView.setMediaEmbed(inlineMediaView, embed, m393toMediaSourceUBIQNlQ2, i11, MessageMargins.Companion.getWidthForEmbedContent(margins, i10, z18));
                     embedView.binding.inlineMediaView.setOnMediaClickListeners(new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.o0
                         @Override // android.view.View.OnClickListener
                         public final void onClick(View view) {
-                            EmbedView.setEmbed_uKkM4jM$lambda$14$lambda$13(Function2.this, m391toMediaSourceUBIQNlQ2, z15, embedView, view);
+                            EmbedView.setEmbed_uKkM4jM$lambda$14$lambda$13(Function2.this, m393toMediaSourceUBIQNlQ2, z15, embedView, view);
                         }
                     }, onLongClickListener);
                 }
                 z20 = true;
-                if (WhenMappings.$EnumSwitchMapping$0[embed.getType().ordinal()] != 1 ? m391toMediaSourceUBIQNlQ2 == null : embed.getVideo() == null) {
+                if (WhenMappings.$EnumSwitchMapping$0[embed.getType().ordinal()] != 1 ? m393toMediaSourceUBIQNlQ2 == null : embed.getVideo() == null) {
                     embedView.setThumbnail(embed.getThumbnail(), z10);
                 }
             }

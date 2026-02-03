@@ -10,28 +10,28 @@ import java.util.List;
 public final class AdapterHelper implements n.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private b2.d f4691a;
+    private b2.d f4735a;
 
     /* renamed from: b  reason: collision with root package name */
-    final ArrayList f4692b;
+    final ArrayList f4736b;
 
     /* renamed from: c  reason: collision with root package name */
-    final ArrayList f4693c;
+    final ArrayList f4737c;
 
     /* renamed from: d  reason: collision with root package name */
-    final a f4694d;
+    final a f4738d;
 
     /* renamed from: e  reason: collision with root package name */
-    Runnable f4695e;
+    Runnable f4739e;
 
     /* renamed from: f  reason: collision with root package name */
-    final boolean f4696f;
+    final boolean f4740f;
 
     /* renamed from: g  reason: collision with root package name */
-    final n f4697g;
+    final n f4741g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f4698h;
+    private int f4742h;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -58,26 +58,26 @@ public final class AdapterHelper implements n.a {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        int f4699a;
+        int f4743a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f4700b;
+        int f4744b;
 
         /* renamed from: c  reason: collision with root package name */
-        Object f4701c;
+        Object f4745c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f4702d;
+        int f4746d;
 
         b(int i10, int i11, int i12, Object obj) {
-            this.f4699a = i10;
-            this.f4700b = i11;
-            this.f4702d = i12;
-            this.f4701c = obj;
+            this.f4743a = i10;
+            this.f4744b = i11;
+            this.f4746d = i12;
+            this.f4745c = obj;
         }
 
         String a() {
-            int i10 = this.f4699a;
+            int i10 = this.f4743a;
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 4) {
@@ -101,33 +101,33 @@ public final class AdapterHelper implements n.a {
                 return false;
             }
             b bVar = (b) obj;
-            int i10 = this.f4699a;
-            if (i10 != bVar.f4699a) {
+            int i10 = this.f4743a;
+            if (i10 != bVar.f4743a) {
                 return false;
             }
-            if (i10 == 8 && Math.abs(this.f4702d - this.f4700b) == 1 && this.f4702d == bVar.f4700b && this.f4700b == bVar.f4702d) {
+            if (i10 == 8 && Math.abs(this.f4746d - this.f4744b) == 1 && this.f4746d == bVar.f4744b && this.f4744b == bVar.f4746d) {
                 return true;
             }
-            if (this.f4702d != bVar.f4702d || this.f4700b != bVar.f4700b) {
+            if (this.f4746d != bVar.f4746d || this.f4744b != bVar.f4744b) {
                 return false;
             }
-            Object obj2 = this.f4701c;
+            Object obj2 = this.f4745c;
             if (obj2 != null) {
-                if (!obj2.equals(bVar.f4701c)) {
+                if (!obj2.equals(bVar.f4745c)) {
                     return false;
                 }
-            } else if (bVar.f4701c != null) {
+            } else if (bVar.f4745c != null) {
                 return false;
             }
             return true;
         }
 
         public int hashCode() {
-            return (((this.f4699a * 31) + this.f4700b) * 31) + this.f4702d;
+            return (((this.f4743a * 31) + this.f4744b) * 31) + this.f4746d;
         }
 
         public String toString() {
-            return Integer.toHexString(System.identityHashCode(this)) + "[" + a() + ",s:" + this.f4700b + "c:" + this.f4702d + ",p:" + this.f4701c + "]";
+            return Integer.toHexString(System.identityHashCode(this)) + "[" + a() + ",s:" + this.f4744b + "c:" + this.f4746d + ",p:" + this.f4745c + "]";
         }
     }
 
@@ -147,13 +147,13 @@ public final class AdapterHelper implements n.a {
     private void f(b bVar) {
         boolean z10;
         char c10;
-        int i10 = bVar.f4700b;
-        int i11 = bVar.f4702d + i10;
+        int i10 = bVar.f4744b;
+        int i11 = bVar.f4746d + i10;
         char c11 = 65535;
         int i12 = i10;
         int i13 = 0;
         while (i12 < i11) {
-            if (this.f4694d.f(i12) == null && !h(i12)) {
+            if (this.f4738d.f(i12) == null && !h(i12)) {
                 if (c11 == 1) {
                     v(a(2, i10, i13, null));
                     z10 = true;
@@ -180,7 +180,7 @@ public final class AdapterHelper implements n.a {
             i12++;
             c11 = c10;
         }
-        if (i13 != bVar.f4702d) {
+        if (i13 != bVar.f4746d) {
             b(bVar);
             bVar = a(2, i10, i13, null);
         }
@@ -192,22 +192,22 @@ public final class AdapterHelper implements n.a {
     }
 
     private void g(b bVar) {
-        int i10 = bVar.f4700b;
-        int i11 = bVar.f4702d + i10;
+        int i10 = bVar.f4744b;
+        int i11 = bVar.f4746d + i10;
         int i12 = 0;
         boolean z10 = true;
         int i13 = i10;
         while (i10 < i11) {
-            if (this.f4694d.f(i10) == null && !h(i10)) {
+            if (this.f4738d.f(i10) == null && !h(i10)) {
                 if (z10) {
-                    v(a(4, i13, i12, bVar.f4701c));
+                    v(a(4, i13, i12, bVar.f4745c));
                     i13 = i10;
                     i12 = 0;
                 }
                 z10 = false;
             } else {
                 if (!z10) {
-                    k(a(4, i13, i12, bVar.f4701c));
+                    k(a(4, i13, i12, bVar.f4745c));
                     i13 = i10;
                     i12 = 0;
                 }
@@ -216,8 +216,8 @@ public final class AdapterHelper implements n.a {
             i12++;
             i10++;
         }
-        if (i12 != bVar.f4702d) {
-            Object obj = bVar.f4701c;
+        if (i12 != bVar.f4746d) {
+            Object obj = bVar.f4745c;
             b(bVar);
             bVar = a(4, i13, i12, obj);
         }
@@ -229,17 +229,17 @@ public final class AdapterHelper implements n.a {
     }
 
     private boolean h(int i10) {
-        int size = this.f4693c.size();
+        int size = this.f4737c.size();
         for (int i11 = 0; i11 < size; i11++) {
-            b bVar = (b) this.f4693c.get(i11);
-            int i12 = bVar.f4699a;
+            b bVar = (b) this.f4737c.get(i11);
+            int i12 = bVar.f4743a;
             if (i12 == 8) {
-                if (n(bVar.f4702d, i11 + 1) == i10) {
+                if (n(bVar.f4746d, i11 + 1) == i10) {
                     return true;
                 }
             } else if (i12 == 1) {
-                int i13 = bVar.f4700b;
-                int i14 = bVar.f4702d + i13;
+                int i13 = bVar.f4744b;
+                int i14 = bVar.f4746d + i13;
                 while (i13 < i14) {
                     if (n(i13, i11 + 1) == i10) {
                         return true;
@@ -256,11 +256,11 @@ public final class AdapterHelper implements n.a {
 
     private void k(b bVar) {
         int i10;
-        int i11 = bVar.f4699a;
+        int i11 = bVar.f4743a;
         if (i11 != 1 && i11 != 8) {
-            int z10 = z(bVar.f4700b, i11);
-            int i12 = bVar.f4700b;
-            int i13 = bVar.f4699a;
+            int z10 = z(bVar.f4744b, i11);
+            int i12 = bVar.f4744b;
+            int i13 = bVar.f4743a;
             if (i13 != 2) {
                 if (i13 == 4) {
                     i10 = 1;
@@ -271,26 +271,26 @@ public final class AdapterHelper implements n.a {
                 i10 = 0;
             }
             int i14 = 1;
-            for (int i15 = 1; i15 < bVar.f4702d; i15++) {
-                int z11 = z(bVar.f4700b + (i10 * i15), bVar.f4699a);
-                int i16 = bVar.f4699a;
+            for (int i15 = 1; i15 < bVar.f4746d; i15++) {
+                int z11 = z(bVar.f4744b + (i10 * i15), bVar.f4743a);
+                int i16 = bVar.f4743a;
                 if (i16 == 2 ? z11 == z10 : !(i16 != 4 || z11 != z10 + 1)) {
                     i14++;
                 } else {
-                    b a10 = a(i16, z10, i14, bVar.f4701c);
+                    b a10 = a(i16, z10, i14, bVar.f4745c);
                     l(a10, i12);
                     b(a10);
-                    if (bVar.f4699a == 4) {
+                    if (bVar.f4743a == 4) {
                         i12 += i14;
                     }
                     i14 = 1;
                     z10 = z11;
                 }
             }
-            Object obj = bVar.f4701c;
+            Object obj = bVar.f4745c;
             b(bVar);
             if (i14 > 0) {
-                b a11 = a(bVar.f4699a, z10, i14, obj);
+                b a11 = a(bVar.f4743a, z10, i14, obj);
                 l(a11, i12);
                 b(a11);
                 return;
@@ -301,35 +301,35 @@ public final class AdapterHelper implements n.a {
     }
 
     private void v(b bVar) {
-        this.f4693c.add(bVar);
-        int i10 = bVar.f4699a;
+        this.f4737c.add(bVar);
+        int i10 = bVar.f4743a;
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 4) {
                     if (i10 == 8) {
-                        this.f4694d.a(bVar.f4700b, bVar.f4702d);
+                        this.f4738d.a(bVar.f4744b, bVar.f4746d);
                         return;
                     }
                     throw new IllegalArgumentException("Unknown update op type for " + bVar);
                 }
-                this.f4694d.e(bVar.f4700b, bVar.f4702d, bVar.f4701c);
+                this.f4738d.e(bVar.f4744b, bVar.f4746d, bVar.f4745c);
                 return;
             }
-            this.f4694d.d(bVar.f4700b, bVar.f4702d);
+            this.f4738d.d(bVar.f4744b, bVar.f4746d);
             return;
         }
-        this.f4694d.g(bVar.f4700b, bVar.f4702d);
+        this.f4738d.g(bVar.f4744b, bVar.f4746d);
     }
 
     private int z(int i10, int i11) {
         int i12;
         int i13;
-        for (int size = this.f4693c.size() - 1; size >= 0; size--) {
-            b bVar = (b) this.f4693c.get(size);
-            int i14 = bVar.f4699a;
+        for (int size = this.f4737c.size() - 1; size >= 0; size--) {
+            b bVar = (b) this.f4737c.get(size);
+            int i14 = bVar.f4743a;
             if (i14 == 8) {
-                int i15 = bVar.f4700b;
-                int i16 = bVar.f4702d;
+                int i15 = bVar.f4744b;
+                int i16 = bVar.f4746d;
                 if (i15 < i16) {
                     i13 = i15;
                     i12 = i16;
@@ -340,53 +340,53 @@ public final class AdapterHelper implements n.a {
                 if (i10 >= i13 && i10 <= i12) {
                     if (i13 == i15) {
                         if (i11 == 1) {
-                            bVar.f4702d = i16 + 1;
+                            bVar.f4746d = i16 + 1;
                         } else if (i11 == 2) {
-                            bVar.f4702d = i16 - 1;
+                            bVar.f4746d = i16 - 1;
                         }
                         i10++;
                     } else {
                         if (i11 == 1) {
-                            bVar.f4700b = i15 + 1;
+                            bVar.f4744b = i15 + 1;
                         } else if (i11 == 2) {
-                            bVar.f4700b = i15 - 1;
+                            bVar.f4744b = i15 - 1;
                         }
                         i10--;
                     }
                 } else if (i10 < i15) {
                     if (i11 == 1) {
-                        bVar.f4700b = i15 + 1;
-                        bVar.f4702d = i16 + 1;
+                        bVar.f4744b = i15 + 1;
+                        bVar.f4746d = i16 + 1;
                     } else if (i11 == 2) {
-                        bVar.f4700b = i15 - 1;
-                        bVar.f4702d = i16 - 1;
+                        bVar.f4744b = i15 - 1;
+                        bVar.f4746d = i16 - 1;
                     }
                 }
             } else {
-                int i17 = bVar.f4700b;
+                int i17 = bVar.f4744b;
                 if (i17 <= i10) {
                     if (i14 == 1) {
-                        i10 -= bVar.f4702d;
+                        i10 -= bVar.f4746d;
                     } else if (i14 == 2) {
-                        i10 += bVar.f4702d;
+                        i10 += bVar.f4746d;
                     }
                 } else if (i11 == 1) {
-                    bVar.f4700b = i17 + 1;
+                    bVar.f4744b = i17 + 1;
                 } else if (i11 == 2) {
-                    bVar.f4700b = i17 - 1;
+                    bVar.f4744b = i17 - 1;
                 }
             }
         }
-        for (int size2 = this.f4693c.size() - 1; size2 >= 0; size2--) {
-            b bVar2 = (b) this.f4693c.get(size2);
-            if (bVar2.f4699a == 8) {
-                int i18 = bVar2.f4702d;
-                if (i18 == bVar2.f4700b || i18 < 0) {
-                    this.f4693c.remove(size2);
+        for (int size2 = this.f4737c.size() - 1; size2 >= 0; size2--) {
+            b bVar2 = (b) this.f4737c.get(size2);
+            if (bVar2.f4743a == 8) {
+                int i18 = bVar2.f4746d;
+                if (i18 == bVar2.f4744b || i18 < 0) {
+                    this.f4737c.remove(size2);
                     b(bVar2);
                 }
-            } else if (bVar2.f4702d <= 0) {
-                this.f4693c.remove(size2);
+            } else if (bVar2.f4746d <= 0) {
+                this.f4737c.remove(size2);
                 b(bVar2);
             }
         }
@@ -395,49 +395,49 @@ public final class AdapterHelper implements n.a {
 
     @Override // androidx.recyclerview.widget.n.a
     public b a(int i10, int i11, int i12, Object obj) {
-        b bVar = (b) this.f4691a.acquire();
+        b bVar = (b) this.f4735a.acquire();
         if (bVar == null) {
             return new b(i10, i11, i12, obj);
         }
-        bVar.f4699a = i10;
-        bVar.f4700b = i11;
-        bVar.f4702d = i12;
-        bVar.f4701c = obj;
+        bVar.f4743a = i10;
+        bVar.f4744b = i11;
+        bVar.f4746d = i12;
+        bVar.f4745c = obj;
         return bVar;
     }
 
     @Override // androidx.recyclerview.widget.n.a
     public void b(b bVar) {
-        if (!this.f4696f) {
-            bVar.f4701c = null;
-            this.f4691a.release(bVar);
+        if (!this.f4740f) {
+            bVar.f4745c = null;
+            this.f4735a.release(bVar);
         }
     }
 
     public int e(int i10) {
-        int size = this.f4692b.size();
+        int size = this.f4736b.size();
         for (int i11 = 0; i11 < size; i11++) {
-            b bVar = (b) this.f4692b.get(i11);
-            int i12 = bVar.f4699a;
+            b bVar = (b) this.f4736b.get(i11);
+            int i12 = bVar.f4743a;
             if (i12 != 1) {
                 if (i12 != 2) {
                     if (i12 == 8) {
-                        int i13 = bVar.f4700b;
+                        int i13 = bVar.f4744b;
                         if (i13 == i10) {
-                            i10 = bVar.f4702d;
+                            i10 = bVar.f4746d;
                         } else {
                             if (i13 < i10) {
                                 i10--;
                             }
-                            if (bVar.f4702d <= i10) {
+                            if (bVar.f4746d <= i10) {
                                 i10++;
                             }
                         }
                     }
                 } else {
-                    int i14 = bVar.f4700b;
+                    int i14 = bVar.f4744b;
                     if (i14 <= i10) {
-                        int i15 = bVar.f4702d;
+                        int i15 = bVar.f4746d;
                         if (i14 + i15 > i10) {
                             return -1;
                         }
@@ -446,8 +446,8 @@ public final class AdapterHelper implements n.a {
                         continue;
                     }
                 }
-            } else if (bVar.f4700b <= i10) {
-                i10 += bVar.f4702d;
+            } else if (bVar.f4744b <= i10) {
+                i10 += bVar.f4746d;
             }
         }
         return i10;
@@ -455,60 +455,60 @@ public final class AdapterHelper implements n.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void i() {
-        int size = this.f4693c.size();
+        int size = this.f4737c.size();
         for (int i10 = 0; i10 < size; i10++) {
-            this.f4694d.c((b) this.f4693c.get(i10));
+            this.f4738d.c((b) this.f4737c.get(i10));
         }
-        x(this.f4693c);
-        this.f4698h = 0;
+        x(this.f4737c);
+        this.f4742h = 0;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void j() {
         i();
-        int size = this.f4692b.size();
+        int size = this.f4736b.size();
         for (int i10 = 0; i10 < size; i10++) {
-            b bVar = (b) this.f4692b.get(i10);
-            int i11 = bVar.f4699a;
+            b bVar = (b) this.f4736b.get(i10);
+            int i11 = bVar.f4743a;
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 != 4) {
                         if (i11 == 8) {
-                            this.f4694d.c(bVar);
-                            this.f4694d.a(bVar.f4700b, bVar.f4702d);
+                            this.f4738d.c(bVar);
+                            this.f4738d.a(bVar.f4744b, bVar.f4746d);
                         }
                     } else {
-                        this.f4694d.c(bVar);
-                        this.f4694d.e(bVar.f4700b, bVar.f4702d, bVar.f4701c);
+                        this.f4738d.c(bVar);
+                        this.f4738d.e(bVar.f4744b, bVar.f4746d, bVar.f4745c);
                     }
                 } else {
-                    this.f4694d.c(bVar);
-                    this.f4694d.h(bVar.f4700b, bVar.f4702d);
+                    this.f4738d.c(bVar);
+                    this.f4738d.h(bVar.f4744b, bVar.f4746d);
                 }
             } else {
-                this.f4694d.c(bVar);
-                this.f4694d.g(bVar.f4700b, bVar.f4702d);
+                this.f4738d.c(bVar);
+                this.f4738d.g(bVar.f4744b, bVar.f4746d);
             }
-            Runnable runnable = this.f4695e;
+            Runnable runnable = this.f4739e;
             if (runnable != null) {
                 runnable.run();
             }
         }
-        x(this.f4692b);
-        this.f4698h = 0;
+        x(this.f4736b);
+        this.f4742h = 0;
     }
 
     void l(b bVar, int i10) {
-        this.f4694d.b(bVar);
-        int i11 = bVar.f4699a;
+        this.f4738d.b(bVar);
+        int i11 = bVar.f4743a;
         if (i11 != 2) {
             if (i11 == 4) {
-                this.f4694d.e(i10, bVar.f4702d, bVar.f4701c);
+                this.f4738d.e(i10, bVar.f4746d, bVar.f4745c);
                 return;
             }
             throw new IllegalArgumentException("only remove and update ops can be dispatched in first pass");
         }
-        this.f4694d.h(i10, bVar.f4702d);
+        this.f4738d.h(i10, bVar.f4746d);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -517,34 +517,34 @@ public final class AdapterHelper implements n.a {
     }
 
     int n(int i10, int i11) {
-        int size = this.f4693c.size();
+        int size = this.f4737c.size();
         while (i11 < size) {
-            b bVar = (b) this.f4693c.get(i11);
-            int i12 = bVar.f4699a;
+            b bVar = (b) this.f4737c.get(i11);
+            int i12 = bVar.f4743a;
             if (i12 == 8) {
-                int i13 = bVar.f4700b;
+                int i13 = bVar.f4744b;
                 if (i13 == i10) {
-                    i10 = bVar.f4702d;
+                    i10 = bVar.f4746d;
                 } else {
                     if (i13 < i10) {
                         i10--;
                     }
-                    if (bVar.f4702d <= i10) {
+                    if (bVar.f4746d <= i10) {
                         i10++;
                     }
                 }
             } else {
-                int i14 = bVar.f4700b;
+                int i14 = bVar.f4744b;
                 if (i14 > i10) {
                     continue;
                 } else if (i12 == 2) {
-                    int i15 = bVar.f4702d;
+                    int i15 = bVar.f4746d;
                     if (i10 < i14 + i15) {
                         return -1;
                     }
                     i10 -= i15;
                 } else if (i12 == 1) {
-                    i10 += bVar.f4702d;
+                    i10 += bVar.f4746d;
                 }
             }
             i11++;
@@ -554,7 +554,7 @@ public final class AdapterHelper implements n.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean o(int i10) {
-        if ((i10 & this.f4698h) != 0) {
+        if ((i10 & this.f4742h) != 0) {
             return true;
         }
         return false;
@@ -562,7 +562,7 @@ public final class AdapterHelper implements n.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean p() {
-        if (this.f4692b.size() > 0) {
+        if (this.f4736b.size() > 0) {
             return true;
         }
         return false;
@@ -570,7 +570,7 @@ public final class AdapterHelper implements n.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean q() {
-        if (!this.f4693c.isEmpty() && !this.f4692b.isEmpty()) {
+        if (!this.f4737c.isEmpty() && !this.f4736b.isEmpty()) {
             return true;
         }
         return false;
@@ -581,9 +581,9 @@ public final class AdapterHelper implements n.a {
         if (i11 < 1) {
             return false;
         }
-        this.f4692b.add(a(4, i10, i11, obj));
-        this.f4698h |= 4;
-        if (this.f4692b.size() != 1) {
+        this.f4736b.add(a(4, i10, i11, obj));
+        this.f4742h |= 4;
+        if (this.f4736b.size() != 1) {
             return false;
         }
         return true;
@@ -594,9 +594,9 @@ public final class AdapterHelper implements n.a {
         if (i11 < 1) {
             return false;
         }
-        this.f4692b.add(a(1, i10, i11, null));
-        this.f4698h |= 1;
-        if (this.f4692b.size() != 1) {
+        this.f4736b.add(a(1, i10, i11, null));
+        this.f4742h |= 1;
+        if (this.f4736b.size() != 1) {
             return false;
         }
         return true;
@@ -608,9 +608,9 @@ public final class AdapterHelper implements n.a {
             return false;
         }
         if (i12 == 1) {
-            this.f4692b.add(a(8, i10, i11, null));
-            this.f4698h |= 8;
-            if (this.f4692b.size() != 1) {
+            this.f4736b.add(a(8, i10, i11, null));
+            this.f4742h |= 8;
+            if (this.f4736b.size() != 1) {
                 return false;
             }
             return true;
@@ -623,9 +623,9 @@ public final class AdapterHelper implements n.a {
         if (i11 < 1) {
             return false;
         }
-        this.f4692b.add(a(2, i10, i11, null));
-        this.f4698h |= 2;
-        if (this.f4692b.size() != 1) {
+        this.f4736b.add(a(2, i10, i11, null));
+        this.f4742h |= 2;
+        if (this.f4736b.size() != 1) {
             return false;
         }
         return true;
@@ -633,11 +633,11 @@ public final class AdapterHelper implements n.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void w() {
-        this.f4697g.b(this.f4692b);
-        int size = this.f4692b.size();
+        this.f4741g.b(this.f4736b);
+        int size = this.f4736b.size();
         for (int i10 = 0; i10 < size; i10++) {
-            b bVar = (b) this.f4692b.get(i10);
-            int i11 = bVar.f4699a;
+            b bVar = (b) this.f4736b.get(i10);
+            int i11 = bVar.f4743a;
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 != 4) {
@@ -653,12 +653,12 @@ public final class AdapterHelper implements n.a {
             } else {
                 c(bVar);
             }
-            Runnable runnable = this.f4695e;
+            Runnable runnable = this.f4739e;
             if (runnable != null) {
                 runnable.run();
             }
         }
-        this.f4692b.clear();
+        this.f4736b.clear();
     }
 
     void x(List list) {
@@ -671,18 +671,18 @@ public final class AdapterHelper implements n.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void y() {
-        x(this.f4692b);
-        x(this.f4693c);
-        this.f4698h = 0;
+        x(this.f4736b);
+        x(this.f4737c);
+        this.f4742h = 0;
     }
 
     AdapterHelper(a aVar, boolean z10) {
-        this.f4691a = new Pools$SimplePool(30);
-        this.f4692b = new ArrayList();
-        this.f4693c = new ArrayList();
-        this.f4698h = 0;
-        this.f4694d = aVar;
-        this.f4696f = z10;
-        this.f4697g = new n(this);
+        this.f4735a = new Pools$SimplePool(30);
+        this.f4736b = new ArrayList();
+        this.f4737c = new ArrayList();
+        this.f4742h = 0;
+        this.f4738d = aVar;
+        this.f4740f = z10;
+        this.f4741g = new n(this);
     }
 }

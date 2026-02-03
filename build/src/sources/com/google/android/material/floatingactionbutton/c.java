@@ -48,12 +48,12 @@ class c extends b {
         stateListAnimator.addState(b.L, h0(f10, f11));
         AnimatorSet animatorSet = new AnimatorSet();
         ArrayList arrayList = new ArrayList();
-        arrayList.add(ObjectAnimator.ofFloat(this.f16066w, ViewProps.ELEVATION, f10).setDuration(0L));
+        arrayList.add(ObjectAnimator.ofFloat(this.f15695w, ViewProps.ELEVATION, f10).setDuration(0L));
         if (Build.VERSION.SDK_INT <= 24) {
-            FloatingActionButton floatingActionButton = this.f16066w;
+            FloatingActionButton floatingActionButton = this.f15695w;
             arrayList.add(ObjectAnimator.ofFloat(floatingActionButton, View.TRANSLATION_Z, floatingActionButton.getTranslationZ()).setDuration(100L));
         }
-        arrayList.add(ObjectAnimator.ofFloat(this.f16066w, View.TRANSLATION_Z, 0.0f).setDuration(100L));
+        arrayList.add(ObjectAnimator.ofFloat(this.f15695w, View.TRANSLATION_Z, 0.0f).setDuration(100L));
         animatorSet.playSequentially((Animator[]) arrayList.toArray(new Animator[0]));
         animatorSet.setInterpolator(b.D);
         stateListAnimator.addState(b.M, animatorSet);
@@ -63,7 +63,7 @@ class c extends b {
 
     private Animator h0(float f10, float f11) {
         AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.play(ObjectAnimator.ofFloat(this.f16066w, ViewProps.ELEVATION, f10).setDuration(0L)).with(ObjectAnimator.ofFloat(this.f16066w, View.TRANSLATION_Z, f11).setDuration(100L));
+        animatorSet.play(ObjectAnimator.ofFloat(this.f15695w, ViewProps.ELEVATION, f10).setDuration(0L)).with(ObjectAnimator.ofFloat(this.f15695w, View.TRANSLATION_Z, f11).setDuration(100L));
         animatorSet.setInterpolator(b.D);
         return animatorSet;
     }
@@ -75,10 +75,10 @@ class c extends b {
 
     @Override // com.google.android.material.floatingactionbutton.b
     void C(float f10, float f11, float f12) {
-        if (this.f16066w.getStateListAnimator() == this.O) {
+        if (this.f15695w.getStateListAnimator() == this.O) {
             StateListAnimator g02 = g0(f10, f11, f12);
             this.O = g02;
-            this.f16066w.setStateListAnimator(g02);
+            this.f15695w.setStateListAnimator(g02);
         }
         if (W()) {
             c0();
@@ -93,7 +93,7 @@ class c extends b {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.floatingactionbutton.b
     public void S(ColorStateList colorStateList) {
-        Drawable drawable = this.f16046c;
+        Drawable drawable = this.f15675c;
         if (drawable instanceof RippleDrawable) {
             ((RippleDrawable) drawable).setColor(mh.b.a(colorStateList));
         } else {
@@ -103,7 +103,7 @@ class c extends b {
 
     @Override // com.google.android.material.floatingactionbutton.b
     boolean W() {
-        if (!this.f16067x.c() && Y()) {
+        if (!this.f15696x.c() && Y()) {
             return false;
         }
         return true;
@@ -114,30 +114,30 @@ class c extends b {
     }
 
     com.google.android.material.floatingactionbutton.a f0(int i10, ColorStateList colorStateList) {
-        Context context = this.f16066w.getContext();
-        com.google.android.material.floatingactionbutton.a aVar = new com.google.android.material.floatingactionbutton.a((k) e.g(this.f16044a));
-        aVar.e(androidx.core.content.a.c(context, yg.c.f54386e), androidx.core.content.a.c(context, yg.c.f54385d), androidx.core.content.a.c(context, yg.c.f54383b), androidx.core.content.a.c(context, yg.c.f54384c));
+        Context context = this.f15695w.getContext();
+        com.google.android.material.floatingactionbutton.a aVar = new com.google.android.material.floatingactionbutton.a((k) e.g(this.f15673a));
+        aVar.e(androidx.core.content.a.c(context, yg.c.f54361e), androidx.core.content.a.c(context, yg.c.f54360d), androidx.core.content.a.c(context, yg.c.f54358b), androidx.core.content.a.c(context, yg.c.f54359c));
         aVar.d(i10);
         aVar.c(colorStateList);
         return aVar;
     }
 
     g i0() {
-        return new a((k) e.g(this.f16044a));
+        return new a((k) e.g(this.f15673a));
     }
 
     @Override // com.google.android.material.floatingactionbutton.b
     public float j() {
-        return this.f16066w.getElevation();
+        return this.f15695w.getElevation();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.floatingactionbutton.b
     public void o(Rect rect) {
-        if (this.f16067x.c()) {
+        if (this.f15696x.c()) {
             super.o(rect);
         } else if (!Y()) {
-            int sizeDimension = (this.f16054k - this.f16066w.getSizeDimension()) / 2;
+            int sizeDimension = (this.f15683k - this.f15695w.getSizeDimension()) / 2;
             rect.set(sizeDimension, sizeDimension, sizeDimension, sizeDimension);
         } else {
             rect.set(0, 0, 0, 0);
@@ -149,22 +149,22 @@ class c extends b {
     public void u(ColorStateList colorStateList, PorterDuff.Mode mode, ColorStateList colorStateList2, int i10) {
         Drawable drawable;
         g i02 = i0();
-        this.f16045b = i02;
+        this.f15674b = i02;
         i02.setTintList(colorStateList);
         if (mode != null) {
-            this.f16045b.setTintMode(mode);
+            this.f15674b.setTintMode(mode);
         }
-        this.f16045b.N(this.f16066w.getContext());
+        this.f15674b.N(this.f15695w.getContext());
         if (i10 > 0) {
-            this.f16047d = f0(i10, colorStateList);
-            drawable = new LayerDrawable(new Drawable[]{(Drawable) e.g(this.f16047d), (Drawable) e.g(this.f16045b)});
+            this.f15676d = f0(i10, colorStateList);
+            drawable = new LayerDrawable(new Drawable[]{(Drawable) e.g(this.f15676d), (Drawable) e.g(this.f15674b)});
         } else {
-            this.f16047d = null;
-            drawable = this.f16045b;
+            this.f15676d = null;
+            drawable = this.f15674b;
         }
         RippleDrawable rippleDrawable = new RippleDrawable(mh.b.a(colorStateList2), drawable, null);
-        this.f16046c = rippleDrawable;
-        this.f16048e = rippleDrawable;
+        this.f15675c = rippleDrawable;
+        this.f15677e = rippleDrawable;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

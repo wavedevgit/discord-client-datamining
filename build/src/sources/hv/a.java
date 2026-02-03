@@ -1,20 +1,15 @@
 package hv;
 
-import com.facebook.react.ReactPackage;
-import com.facebook.react.bridge.ReactApplicationContext;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import org.linusu.RNGetRandomValuesModule;
+import ev.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class a implements ReactPackage {
-    @Override // com.facebook.react.ReactPackage
-    public List createNativeModules(ReactApplicationContext reactApplicationContext) {
-        return Arrays.asList(new RNGetRandomValuesModule(reactApplicationContext));
-    }
+public interface a {
+    char a();
 
-    @Override // com.facebook.react.ReactPackage
-    public List createViewManagers(ReactApplicationContext reactApplicationContext) {
-        return Collections.EMPTY_LIST;
-    }
+    int b();
+
+    int c(b bVar, b bVar2);
+
+    char d();
+
+    void e(w wVar, w wVar2, int i10);
 }

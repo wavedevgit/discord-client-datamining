@@ -1,11 +1,11 @@
 package kotlin.reflect.jvm.internal.impl.descriptors.annotations;
 
-import ir.v;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import jr.v;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.o0;
 import kotlin.enums.EnumEntries;
@@ -26,49 +26,49 @@ public final class KotlinTarget {
     private static final /* synthetic */ EnumEntries E;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final HashMap f33657i;
+    private static final HashMap f33433i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Set f33658o;
+    private static final Set f33434o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Set f33659p;
+    private static final Set f33435p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final List f33660q;
+    private static final List f33436q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final List f33661r;
+    private static final List f33437r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final List f33662s;
+    private static final List f33438s;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final List f33663t;
+    private static final List f33439t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final List f33664u;
+    private static final List f33440u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final List f33665v;
+    private static final List f33441v;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final List f33666w;
+    private static final List f33442w;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final List f33667x;
+    private static final List f33443x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final List f33668y;
+    private static final List f33444y;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final List f33669z;
+    private static final List f33445z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f33670d;
+    private final String f33446d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f33671e;
+    private final boolean f33447e;
     public static final KotlinTarget CLASS = new KotlinTarget("CLASS", 0, "class", false, 2, null);
     public static final KotlinTarget ANNOTATION_CLASS = new KotlinTarget("ANNOTATION_CLASS", 1, "annotation class", false, 2, null);
     public static final KotlinTarget TYPE_PARAMETER = new KotlinTarget("TYPE_PARAMETER", 2, "type parameter", false);
@@ -126,40 +126,40 @@ public final class KotlinTarget {
     static {
         KotlinTarget[] a10 = a();
         D = a10;
-        E = pr.a.a(a10);
+        E = qr.a.a(a10);
         Companion = new Companion(null);
-        f33657i = new HashMap();
+        f33433i = new HashMap();
         for (KotlinTarget kotlinTarget : getEntries()) {
-            f33657i.put(kotlinTarget.name(), kotlinTarget);
+            f33433i.put(kotlinTarget.name(), kotlinTarget);
         }
         EnumEntries entries = getEntries();
         ArrayList arrayList = new ArrayList();
         for (Object obj : entries) {
-            if (((KotlinTarget) obj).f33671e) {
+            if (((KotlinTarget) obj).f33447e) {
                 arrayList.add(obj);
             }
         }
-        f33658o = CollectionsKt.l1(arrayList);
-        f33659p = CollectionsKt.l1(getEntries());
+        f33434o = CollectionsKt.l1(arrayList);
+        f33435p = CollectionsKt.l1(getEntries());
         KotlinTarget kotlinTarget2 = ANNOTATION_CLASS;
         KotlinTarget kotlinTarget3 = CLASS;
-        f33660q = CollectionsKt.o(kotlinTarget2, kotlinTarget3);
-        f33661r = CollectionsKt.o(LOCAL_CLASS, kotlinTarget3);
-        f33662s = CollectionsKt.o(CLASS_ONLY, kotlinTarget3);
+        f33436q = CollectionsKt.o(kotlinTarget2, kotlinTarget3);
+        f33437r = CollectionsKt.o(LOCAL_CLASS, kotlinTarget3);
+        f33438s = CollectionsKt.o(CLASS_ONLY, kotlinTarget3);
         KotlinTarget kotlinTarget4 = COMPANION_OBJECT;
         KotlinTarget kotlinTarget5 = OBJECT;
-        f33663t = CollectionsKt.o(kotlinTarget4, kotlinTarget5, kotlinTarget3);
-        f33664u = CollectionsKt.o(STANDALONE_OBJECT, kotlinTarget5, kotlinTarget3);
-        f33665v = CollectionsKt.o(INTERFACE, kotlinTarget3);
-        f33666w = CollectionsKt.o(ENUM_CLASS, kotlinTarget3);
+        f33439t = CollectionsKt.o(kotlinTarget4, kotlinTarget5, kotlinTarget3);
+        f33440u = CollectionsKt.o(STANDALONE_OBJECT, kotlinTarget5, kotlinTarget3);
+        f33441v = CollectionsKt.o(INTERFACE, kotlinTarget3);
+        f33442w = CollectionsKt.o(ENUM_CLASS, kotlinTarget3);
         KotlinTarget kotlinTarget6 = ENUM_ENTRY;
         KotlinTarget kotlinTarget7 = PROPERTY;
         KotlinTarget kotlinTarget8 = FIELD;
-        f33667x = CollectionsKt.o(kotlinTarget6, kotlinTarget7, kotlinTarget8);
+        f33443x = CollectionsKt.o(kotlinTarget6, kotlinTarget7, kotlinTarget8);
         KotlinTarget kotlinTarget9 = PROPERTY_SETTER;
-        f33668y = CollectionsKt.e(kotlinTarget9);
+        f33444y = CollectionsKt.e(kotlinTarget9);
         KotlinTarget kotlinTarget10 = PROPERTY_GETTER;
-        f33669z = CollectionsKt.e(kotlinTarget10);
+        f33445z = CollectionsKt.e(kotlinTarget10);
         A = CollectionsKt.e(FUNCTION);
         KotlinTarget kotlinTarget11 = FILE;
         B = CollectionsKt.e(kotlinTarget11);
@@ -169,8 +169,8 @@ public final class KotlinTarget {
     }
 
     private KotlinTarget(String str, int i10, String str2, boolean z10) {
-        this.f33670d = str2;
-        this.f33671e = z10;
+        this.f33446d = str2;
+        this.f33447e = z10;
     }
 
     private static final /* synthetic */ KotlinTarget[] a() {

@@ -1,16 +1,20 @@
 package iv;
 
-import android.os.Handler;
-import android.os.Looper;
-import java.util.concurrent.Executor;
+import com.facebook.react.ReactPackage;
+import com.facebook.react.bridge.ReactApplicationContext;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import org.linusu.RNGetRandomValuesModule;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class a implements Executor {
+public class a implements ReactPackage {
+    @Override // com.facebook.react.ReactPackage
+    public List createNativeModules(ReactApplicationContext reactApplicationContext) {
+        return Arrays.asList(new RNGetRandomValuesModule(reactApplicationContext));
+    }
 
-    /* renamed from: d  reason: collision with root package name */
-    private final Handler f31309d = new Handler(Looper.getMainLooper());
-
-    @Override // java.util.concurrent.Executor
-    public void execute(Runnable runnable) {
-        this.f31309d.post(runnable);
+    @Override // com.facebook.react.ReactPackage
+    public List createViewManagers(ReactApplicationContext reactApplicationContext) {
+        return Collections.EMPTY_LIST;
     }
 }

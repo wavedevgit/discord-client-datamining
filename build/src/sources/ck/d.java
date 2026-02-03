@@ -3,21 +3,21 @@ package ck;
 public final class d extends n {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final d f8386i;
+    private static final d f8242i;
 
     static {
         d dVar = new d();
-        f8386i = dVar;
-        dVar.setStackTrace(n.f8430e);
+        f8242i = dVar;
+        dVar.setStackTrace(n.f8286e);
     }
 
     private d() {
     }
 
     public static d a() {
-        if (n.f8429d) {
+        if (n.f8285d) {
             return new d();
         }
-        return f8386i;
+        return f8242i;
     }
 }

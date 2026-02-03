@@ -40,13 +40,13 @@ public final class ErrorResponse_Error_InvalidFieldValueErrorJsonAdapter extends
         String str = null;
         Map map = null;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
-                mVar.E0();
+            int t02 = mVar.t0(this.options);
+            if (t02 == -1) {
+                mVar.F0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(mVar);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 map = (Map) this.nullableMapOfStringUiComponentErrorAdapter.fromJson(mVar);
             }
         }
@@ -58,9 +58,9 @@ public final class ErrorResponse_Error_InvalidFieldValueErrorJsonAdapter extends
     public void toJson(@NotNull t tVar, ErrorResponse.Error.InvalidFieldValueError invalidFieldValueError) {
         if (invalidFieldValueError != null) {
             tVar.l();
-            tVar.A0("title");
+            tVar.t0("title");
             this.nullableStringAdapter.toJson(tVar, invalidFieldValueError.getTitle());
-            tVar.A0("details");
+            tVar.t0("details");
             this.nullableMapOfStringUiComponentErrorAdapter.toJson(tVar, invalidFieldValueError.getDetails());
             tVar.E();
             return;

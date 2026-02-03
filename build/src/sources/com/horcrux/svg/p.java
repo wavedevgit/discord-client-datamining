@@ -11,13 +11,13 @@ import java.util.HashMap;
 class p extends q {
 
     /* renamed from: i  reason: collision with root package name */
-    String f18019i;
+    String f17648i;
 
     /* renamed from: o  reason: collision with root package name */
-    SVGLength f18020o;
+    SVGLength f17649o;
 
     /* renamed from: p  reason: collision with root package name */
-    SVGLength f18021p;
+    SVGLength f17650p;
 
     public p(ReactContext reactContext) {
         super(reactContext);
@@ -27,16 +27,16 @@ class p extends q {
     public Bitmap c(HashMap hashMap, Bitmap bitmap) {
         float f10;
         float f11;
-        Bitmap e10 = q.e(hashMap, bitmap, this.f18019i);
+        Bitmap e10 = q.e(hashMap, bitmap, this.f17648i);
         Bitmap createBitmap = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(createBitmap);
-        SVGLength sVGLength = this.f18020o;
+        SVGLength sVGLength = this.f17649o;
         if (sVGLength != null) {
             f10 = (float) relativeOnWidth(sVGLength);
         } else {
             f10 = 0.0f;
         }
-        SVGLength sVGLength2 = this.f18021p;
+        SVGLength sVGLength2 = this.f17650p;
         if (sVGLength2 != null) {
             f11 = (float) relativeOnHeight(sVGLength2);
         } else {
@@ -57,17 +57,17 @@ class p extends q {
     }
 
     public void k(Dynamic dynamic) {
-        this.f18020o = SVGLength.b(dynamic);
+        this.f17649o = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void l(Dynamic dynamic) {
-        this.f18021p = SVGLength.b(dynamic);
+        this.f17650p = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void m(String str) {
-        this.f18019i = str;
+        this.f17648i = str;
         invalidate();
     }
 }

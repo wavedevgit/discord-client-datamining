@@ -8,13 +8,13 @@ import java.util.Map;
 public final class h implements Comparable, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final jt.c f40471d = kt.a.e("LEAP_MONTH_INDICATOR", Character.class);
+    public static final kt.c f40334d = lt.a.e("LEAP_MONTH_INDICATOR", Character.class);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final jt.c f40472e = kt.a.e("LEAP_MONTH_IS_TRAILING", Boolean.class);
+    public static final kt.c f40335e = lt.a.e("LEAP_MONTH_IS_TRAILING", Boolean.class);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final h[] f40473i;
+    private static final h[] f40336i;
     private static final long serialVersionUID = 7544059597266533279L;
     private final int index;
     private final boolean leap;
@@ -25,7 +25,7 @@ public final class h implements Comparable, Serializable {
             hVarArr[i10] = new h(i10, false);
             hVarArr[i10 + 12] = new h(i10, true);
         }
-        f40473i = hVarArr;
+        f40336i = hVarArr;
     }
 
     private h(int i10, boolean z10) {
@@ -35,7 +35,7 @@ public final class h implements Comparable, Serializable {
 
     public static h f(int i10) {
         if (i10 >= 1 && i10 <= 12) {
-            return f40473i[i10 - 1];
+            return f40336i[i10 - 1];
         }
         throw new IllegalArgumentException("Out of range: " + i10);
     }
@@ -43,7 +43,7 @@ public final class h implements Comparable, Serializable {
     private Object readResolve() {
         int i10;
         try {
-            h[] hVarArr = f40473i;
+            h[] hVarArr = f40336i;
             int i11 = this.index;
             if (this.leap) {
                 i10 = 12;
@@ -77,13 +77,13 @@ public final class h implements Comparable, Serializable {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public String d(Locale locale, kt.j jVar, jt.d dVar) {
+    public String d(Locale locale, lt.j jVar, kt.d dVar) {
         StringBuilder sb2;
-        Map m10 = kt.b.c("generic", locale).m();
-        String a10 = mt.b.a(jVar, ((Character) dVar.b(kt.a.f36556m, Character.valueOf(jVar.l().charAt(0)))).charValue(), getNumber());
+        Map m10 = lt.b.c("generic", locale).m();
+        String a10 = nt.b.a(jVar, ((Character) dVar.a(lt.a.f37638m, Character.valueOf(jVar.m().charAt(0)))).charValue(), getNumber());
         if (this.leap) {
-            boolean booleanValue = ((Boolean) dVar.b(f40472e, Boolean.valueOf("R".equals(m10.get("leap-alignment"))))).booleanValue();
-            char charValue = ((Character) dVar.b(f40471d, Character.valueOf(((String) m10.get("leap-indicator")).charAt(0)))).charValue();
+            boolean booleanValue = ((Boolean) dVar.a(f40335e, Boolean.valueOf("R".equals(m10.get("leap-alignment"))))).booleanValue();
+            char charValue = ((Character) dVar.a(f40334d, Character.valueOf(((String) m10.get("leap-indicator")).charAt(0)))).charValue();
             if (booleanValue) {
                 sb2 = new StringBuilder();
                 sb2.append(a10);
@@ -116,7 +116,7 @@ public final class h implements Comparable, Serializable {
     }
 
     public h g() {
-        return f40473i[this.index + 12];
+        return f40336i[this.index + 12];
     }
 
     public int getNumber() {

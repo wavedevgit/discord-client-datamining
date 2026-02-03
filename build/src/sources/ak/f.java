@@ -120,10 +120,10 @@ final class f implements o {
         try {
             if (this.f664b.d()) {
                 Log.d("DecoupledTextDelegate", "Start loading thick OCR module.");
-                B = ok.e(DynamiteModule.d(this.f663a, DynamiteModule.f14871c, this.f664b.f()).c("com.google.mlkit.vision.text.bundled.common.BundledTextRecognizerCreator")).B(sf.b.S0(this.f663a), b(this.f664b, null));
+                B = ok.e(DynamiteModule.d(this.f663a, DynamiteModule.f14500c, this.f664b.f()).c("com.google.mlkit.vision.text.bundled.common.BundledTextRecognizerCreator")).B(sf.b.S0(this.f663a), b(this.f664b, null));
             } else {
                 Log.d("DecoupledTextDelegate", "Start loading thin OCR module.");
-                pk e10 = ok.e(DynamiteModule.d(this.f663a, DynamiteModule.f14870b, this.f664b.f()).c("com.google.android.gms.vision.text.mlkit.TextRecognizerCreator"));
+                pk e10 = ok.e(DynamiteModule.d(this.f663a, DynamiteModule.f14499b, this.f664b.f()).c("com.google.android.gms.vision.text.mlkit.TextRecognizerCreator"));
                 if (this.f664b.h() == 1) {
                     B = e10.H(sf.b.S0(this.f663a));
                 } else {

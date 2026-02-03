@@ -38,7 +38,7 @@ public final class AFc1rSDK implements AFc1uSDK {
         this.getMediationNetwork = aFc1gSDK;
         this.getCurrencyIso4217Code = aFc1oSDK;
         this.AFAdRevenueData = new AFc1sSDK(CollectionsKt.o(new AFc1vSDK("ConversionsCache", CollectionsKt.e(AFe1mSDK.CONVERSION), 1), new AFc1vSDK("AttrCache", CollectionsKt.e(AFe1mSDK.ATTR), 1), new AFc1vSDK("OtherCache", CollectionsKt.o(AFe1mSDK.LAUNCH, AFe1mSDK.INAPP, AFe1mSDK.ADREVENUE, AFe1mSDK.ARS_VALIDATE, AFe1mSDK.PURCHASE_VALIDATE, AFe1mSDK.MANUAL_PURCHASE_VALIDATION, AFe1mSDK.SDK_SERVICES), 40)));
-        this.getRevenue = o0.n(ir.v.a("ConversionsCache", 0), ir.v.a("AttrCache", 0), ir.v.a("OtherCache", 0));
+        this.getRevenue = o0.n(jr.v.a("ConversionsCache", 0), jr.v.a("AttrCache", 0), jr.v.a("OtherCache", 0));
     }
 
     private final void AFAdRevenueData() {
@@ -83,7 +83,7 @@ public final class AFc1rSDK implements AFc1uSDK {
                 if (new File(context.getFilesDir(), "AFRequestCache").exists()) {
                     Context context2 = this.getMediationNetwork.getRevenue;
                     Intrinsics.checkNotNull(context2);
-                    tr.j.r(new File(context2.getFilesDir(), "AFRequestCache"));
+                    ur.j.r(new File(context2.getFilesDir(), "AFRequestCache"));
                     Context context3 = this.getMediationNetwork.getRevenue;
                     Intrinsics.checkNotNull(context3);
                     new File(context3.getFilesDir(), "AFRequestCache").mkdir();
@@ -180,7 +180,7 @@ public final class AFc1rSDK implements AFc1uSDK {
             }
             Context context4 = this.getMediationNetwork.getRevenue;
             Intrinsics.checkNotNull(context4);
-            tr.j.r(new File(context4.getFilesDir(), "AFRequestCache"));
+            ur.j.r(new File(context4.getFilesDir(), "AFRequestCache"));
             AFAdRevenueData();
         } catch (Exception e10) {
             AFh1ySDK.e$default(AFLogger.INSTANCE, AFg1cSDK.CACHE, "Could not clearCache request", e10, false, false, false, false, 120, null);
@@ -194,7 +194,7 @@ public final class AFc1rSDK implements AFc1uSDK {
             inputStreamReader.read(cArr);
             AFc1tSDK aFc1tSDK = new AFc1tSDK(cArr);
             aFc1tSDK.getMediationNetwork = file.getName();
-            tr.c.a(inputStreamReader, null);
+            ur.c.a(inputStreamReader, null);
             return aFc1tSDK;
         } catch (Exception e10) {
             AFLogger.INSTANCE.e(AFg1cSDK.CACHE, "Error while loading request from cache", e10, false, false, true, false);
@@ -301,8 +301,8 @@ public final class AFc1rSDK implements AFc1uSDK {
             outputStreamWriter.write(aFe1mSDK2.name());
             outputStreamWriter.write(10);
             outputStreamWriter.flush();
-            Unit unit = Unit.f33298a;
-            tr.c.a(outputStreamWriter, null);
+            Unit unit = Unit.f33074a;
+            ur.c.a(outputStreamWriter, null);
             AFh1ySDK.i$default(aFLogger, aFg1cSDK, "Cache request: done, cacheKey: " + valueOf, false, 4, null);
             AFe1mSDK aFe1mSDK3 = aFc1tSDK.AFAdRevenueData;
             Intrinsics.checkNotNullExpressionValue(aFe1mSDK3, "");
@@ -328,7 +328,7 @@ public final class AFc1rSDK implements AFc1uSDK {
                         if (listFiles != null && (F0 = kotlin.collections.i.F0(listFiles, new Comparator() { // from class: com.appsflyer.internal.AFc1rSDK.1
                             @Override // java.util.Comparator
                             public final int compare(T t10, T t11) {
-                                return lr.a.d(((File) t10).getName(), ((File) t11).getName());
+                                return mr.a.d(((File) t10).getName(), ((File) t11).getName());
                             }
                         })) != null && (a12 = CollectionsKt.a1(F0, i10)) != null) {
                             for (File file4 : a12) {

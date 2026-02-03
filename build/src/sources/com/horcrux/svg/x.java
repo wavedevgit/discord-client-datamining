@@ -14,51 +14,51 @@ import java.util.HashMap;
 class x extends e {
 
     /* renamed from: d  reason: collision with root package name */
-    private final HashMap f18093d;
+    private final HashMap f17722d;
 
     /* renamed from: e  reason: collision with root package name */
-    private w f18094e;
+    private w f17723e;
 
     /* renamed from: i  reason: collision with root package name */
-    private w f18095i;
+    private w f17724i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final FilterRegion f18096o;
+    private final FilterRegion f17725o;
 
     public x(ReactContext reactContext) {
         super(reactContext);
-        this.f18093d = new HashMap();
-        this.f18096o = new FilterRegion();
+        this.f17722d = new HashMap();
+        this.f17725o = new FilterRegion();
     }
 
     public Bitmap c(Bitmap bitmap, Bitmap bitmap2, RectF rectF) {
         RectF rectF2;
-        this.f18093d.clear();
-        this.f18093d.put("SourceGraphic", bitmap);
-        this.f18093d.put("SourceAlpha", FilterUtils.applySourceAlphaFilter(bitmap));
-        this.f18093d.put("BackgroundImage", bitmap2);
-        this.f18093d.put("BackgroundAlpha", FilterUtils.applySourceAlphaFilter(bitmap2));
+        this.f17722d.clear();
+        this.f17722d.put("SourceGraphic", bitmap);
+        this.f17722d.put("SourceAlpha", FilterUtils.applySourceAlphaFilter(bitmap));
+        this.f17722d.put("BackgroundImage", bitmap2);
+        this.f17722d.put("BackgroundAlpha", FilterUtils.applySourceAlphaFilter(bitmap2));
         Bitmap createBitmap = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), bitmap.getConfig());
         Canvas canvas = new Canvas(createBitmap);
-        Rect cropRect = this.f18096o.getCropRect(this, this.f18094e, rectF);
+        Rect cropRect = this.f17725o.getCropRect(this, this.f17723e, rectF);
         for (int i10 = 0; i10 < getChildCount(); i10++) {
             View childAt = getChildAt(i10);
             if (childAt instanceof q) {
                 q qVar = (q) childAt;
                 createBitmap.eraseColor(0);
-                FilterRegion filterRegion = qVar.f18027e;
-                w wVar = this.f18095i;
+                FilterRegion filterRegion = qVar.f17656e;
+                w wVar = this.f17724i;
                 if (wVar == w.USER_SPACE_ON_USE) {
                     rectF2 = new RectF(cropRect);
                 } else {
                     rectF2 = rectF;
                 }
                 Rect cropRect2 = filterRegion.getCropRect(qVar, wVar, rectF2);
-                canvas.drawBitmap(qVar.c(this.f18093d, bitmap), cropRect2, cropRect2, (Paint) null);
+                canvas.drawBitmap(qVar.c(this.f17722d, bitmap), cropRect2, cropRect2, (Paint) null);
                 bitmap = createBitmap.copy(Bitmap.Config.ARGB_8888, true);
                 String d10 = qVar.d();
                 if (d10 != null) {
-                    this.f18093d.put(d10, bitmap);
+                    this.f17722d.put(d10, bitmap);
                 }
             } else {
                 Log.e("RNSVG", "Invalid `Filter` child: Filter children can only be `Fe...` components");
@@ -70,32 +70,32 @@ class x extends e {
     }
 
     public void d(String str) {
-        this.f18094e = w.d(str);
+        this.f17723e = w.d(str);
         invalidate();
     }
 
     public void e(Dynamic dynamic) {
-        this.f18096o.setHeight(dynamic);
+        this.f17725o.setHeight(dynamic);
         invalidate();
     }
 
     public void f(String str) {
-        this.f18095i = w.d(str);
+        this.f17724i = w.d(str);
         invalidate();
     }
 
     public void g(Dynamic dynamic) {
-        this.f18096o.setWidth(dynamic);
+        this.f17725o.setWidth(dynamic);
         invalidate();
     }
 
     public void h(Dynamic dynamic) {
-        this.f18096o.setX(dynamic);
+        this.f17725o.setX(dynamic);
         invalidate();
     }
 
     public void i(Dynamic dynamic) {
-        this.f18096o.setY(dynamic);
+        this.f17725o.setY(dynamic);
         invalidate();
     }
 

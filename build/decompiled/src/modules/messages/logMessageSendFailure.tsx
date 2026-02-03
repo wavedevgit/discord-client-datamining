@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = arg0;
         var1 = var2.map;
         var0 = function(arg0) { // Environment: var0
-            _fun54720: for (var _fun54720_ip = 0;;) switch (_fun54720_ip) {
+            _fun54826: for (var _fun54826_ip = 0;;) switch (_fun54826_ip) {
                 case 0:
                     var0 = arg0;
                     var1 = var0.mimeType;
@@ -18,8 +18,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 != var1;
                     var0 = 'unknown';
                     if (!var2) {
-                        _fun54720_ip = 25;
-                        continue _fun54720
+                        _fun54826_ip = 25;
+                        continue _fun54826
                     }
                 case 22:
                     var0 = var1;
@@ -52,19 +52,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/messages/logMessageSendFailure.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun54721: for (var _fun54721_ip = 0;;) switch (_fun54721_ip) {
+        _fun54827: for (var _fun54827_ip = 0;;) switch (_fun54827_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.fileItems;
                 var2 = null;
                 if (!(var2 == var0)) {
-                    _fun54721_ip = 21;
-                    continue _fun54721
+                    _fun54827_ip = 21;
+                    continue _fun54827
                 }
             case 15:
                 var5 = new Array(0);
-                _fun54721_ip = 41;
-                continue _fun54721;
+                _fun54827_ip = 41;
+                continue _fun54827;
             case 21:
                 var4 = _closure1_slot3;
                 var3 = var1.fileItems;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var6 = undefined;
                 if (!var4) {
-                    _fun54721_ip = 61;
-                    continue _fun54721
+                    _fun54827_ip = 61;
+                    continue _fun54827
                 }
             case 58:
                 var6 = var3;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 != var1;
                 var7 = undefined;
                 if (!var2) {
-                    _fun54721_ip = 79;
-                    continue _fun54721
+                    _fun54827_ip = 79;
+                    continue _fun54827
                 }
             case 76:
                 var7 = var1;
@@ -111,4 +111,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.logMessageSendFailure = var3;
     var2.getAttachmentMimeTypes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4268, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4298, 2]);

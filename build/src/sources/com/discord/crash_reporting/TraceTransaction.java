@@ -23,7 +23,7 @@ public final class TraceTransaction {
     static {
         TraceTransaction[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = pr.a.a($values);
+        $ENTRIES = qr.a.a($values);
     }
 
     private TraceTransaction(String str, int i10, String str2, String str3) {

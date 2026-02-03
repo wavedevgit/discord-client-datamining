@@ -1,73 +1,27 @@
 package jr;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Set;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.markers.KMutableSet;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f extends kotlin.collections.g implements Set, KMutableSet {
-
-    /* renamed from: d  reason: collision with root package name */
-    private final d f32466d;
-
-    public f(d backing) {
-        Intrinsics.checkNotNullParameter(backing, "backing");
-        this.f32466d = backing;
+public class f {
+    public static void a(Throwable th2, Throwable exception) {
+        Intrinsics.checkNotNullParameter(th2, "<this>");
+        Intrinsics.checkNotNullParameter(exception, "exception");
+        if (th2 != exception) {
+            rr.b.f48655a.a(th2, exception);
+        }
     }
 
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean add(Object obj) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean addAll(Collection elements) {
-        Intrinsics.checkNotNullParameter(elements, "elements");
-        throw new UnsupportedOperationException();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public void clear() {
-        this.f32466d.clear();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean contains(Object obj) {
-        return this.f32466d.containsKey(obj);
-    }
-
-    @Override // kotlin.collections.g
-    public int getSize() {
-        return this.f32466d.size();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean isEmpty() {
-        return this.f32466d.isEmpty();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
-    public Iterator iterator() {
-        return this.f32466d.C();
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean remove(Object obj) {
-        return this.f32466d.L(obj);
-    }
-
-    @Override // java.util.AbstractSet, java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean removeAll(Collection elements) {
-        Intrinsics.checkNotNullParameter(elements, "elements");
-        this.f32466d.l();
-        return super.removeAll(elements);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public boolean retainAll(Collection elements) {
-        Intrinsics.checkNotNullParameter(elements, "elements");
-        this.f32466d.l();
-        return super.retainAll(elements);
+    public static String b(Throwable th2) {
+        Intrinsics.checkNotNullParameter(th2, "<this>");
+        StringWriter stringWriter = new StringWriter();
+        PrintWriter printWriter = new PrintWriter(stringWriter);
+        th2.printStackTrace(printWriter);
+        printWriter.flush();
+        String stringWriter2 = stringWriter.toString();
+        Intrinsics.checkNotNullExpressionValue(stringWriter2, "toString(...)");
+        return stringWriter2;
     }
 }

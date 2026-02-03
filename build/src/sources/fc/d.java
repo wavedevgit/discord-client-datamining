@@ -7,26 +7,26 @@ import javax.inject.Provider;
 public final class d implements bc.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Provider f24907a;
+    private final Provider f24118a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Provider f24908b;
+    private final Provider f24119b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Provider f24909c;
+    private final Provider f24120c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Provider f24910d;
+    private final Provider f24121d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Provider f24911e;
+    private final Provider f24122e;
 
     public d(Provider provider, Provider provider2, Provider provider3, Provider provider4, Provider provider5) {
-        this.f24907a = provider;
-        this.f24908b = provider2;
-        this.f24909c = provider3;
-        this.f24910d = provider4;
-        this.f24911e = provider5;
+        this.f24118a = provider;
+        this.f24119b = provider2;
+        this.f24120c = provider3;
+        this.f24121d = provider4;
+        this.f24122e = provider5;
     }
 
     public static d a(Provider provider, Provider provider2, Provider provider3, Provider provider4, Provider provider5) {
@@ -40,6 +40,6 @@ public final class d implements bc.b {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public c get() {
-        return c((Executor) this.f24907a.get(), (ac.e) this.f24908b.get(), (x) this.f24909c.get(), (hc.d) this.f24910d.get(), (ic.b) this.f24911e.get());
+        return c((Executor) this.f24118a.get(), (ac.e) this.f24119b.get(), (x) this.f24120c.get(), (hc.d) this.f24121d.get(), (ic.b) this.f24122e.get());
     }
 }

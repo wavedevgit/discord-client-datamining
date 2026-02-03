@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 public class i implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final JvmBuiltInsCustomizer f33581d;
+    private final JvmBuiltInsCustomizer f33357d;
 
     public i(JvmBuiltInsCustomizer jvmBuiltInsCustomizer) {
-        this.f33581d = jvmBuiltInsCustomizer;
+        this.f33357d = jvmBuiltInsCustomizer;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         KotlinType m10;
-        m10 = JvmBuiltInsCustomizer.m(this.f33581d);
+        m10 = JvmBuiltInsCustomizer.m(this.f33357d);
         return m10;
     }
 }

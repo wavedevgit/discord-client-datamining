@@ -59,7 +59,6 @@ import com.facebook.react.views.text.TextAttributeProps;
 import com.facebook.react.views.text.TextLayoutManager;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
 import com.facebook.react.views.text.internal.span.TextInlineImageSpan;
-import ir.v;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -70,6 +69,7 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Locale;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.o0;
@@ -1301,7 +1301,7 @@ public class ReactTextInputManager extends BaseViewManager<ReactEditText, Layout
     }
 
     @Override // com.facebook.react.uimanager.ViewManager
-    @ir.c
+    @jr.c
     public void receiveCommand(@NotNull ReactEditText reactEditText, int i10, ReadableArray readableArray) {
         Intrinsics.checkNotNullParameter(reactEditText, "reactEditText");
         if (i10 == 1) {

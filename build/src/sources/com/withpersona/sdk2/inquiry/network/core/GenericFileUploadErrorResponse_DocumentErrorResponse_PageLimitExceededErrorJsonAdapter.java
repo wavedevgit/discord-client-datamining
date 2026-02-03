@@ -38,22 +38,22 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_PageLimi
         String str2 = null;
         GenericFileUploadErrorResponse.DocumentErrorResponse.PageLimitExceededError.Details details = null;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
-                mVar.E0();
+            int t02 = mVar.t0(this.options);
+            if (t02 == -1) {
+                mVar.F0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw sm.c.x("title", "title", mVar);
+                    throw tm.c.x("title", "title", mVar);
                 }
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 str2 = (String) this.stringAdapter.fromJson(mVar);
                 if (str2 == null) {
-                    throw sm.c.x("code", "code", mVar);
+                    throw tm.c.x("code", "code", mVar);
                 }
-            } else if (A0 == 2 && (details = (GenericFileUploadErrorResponse.DocumentErrorResponse.PageLimitExceededError.Details) this.detailsAdapter.fromJson(mVar)) == null) {
-                throw sm.c.x("details", "details", mVar);
+            } else if (t02 == 2 && (details = (GenericFileUploadErrorResponse.DocumentErrorResponse.PageLimitExceededError.Details) this.detailsAdapter.fromJson(mVar)) == null) {
+                throw tm.c.x("details", "details", mVar);
             }
         }
         mVar.y();
@@ -62,22 +62,22 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_PageLimi
                 if (details != null) {
                     return new GenericFileUploadErrorResponse.DocumentErrorResponse.PageLimitExceededError(str, str2, details);
                 }
-                throw sm.c.o("details", "details", mVar);
+                throw tm.c.o("details", "details", mVar);
             }
-            throw sm.c.o("code", "code", mVar);
+            throw tm.c.o("code", "code", mVar);
         }
-        throw sm.c.o("title", "title", mVar);
+        throw tm.c.o("title", "title", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.PageLimitExceededError pageLimitExceededError) {
         if (pageLimitExceededError != null) {
             tVar.l();
-            tVar.A0("title");
+            tVar.t0("title");
             this.stringAdapter.toJson(tVar, pageLimitExceededError.getTitle());
-            tVar.A0("code");
+            tVar.t0("code");
             this.stringAdapter.toJson(tVar, pageLimitExceededError.getCode());
-            tVar.A0("details");
+            tVar.t0("details");
             this.detailsAdapter.toJson(tVar, pageLimitExceededError.getDetails());
             tVar.E();
             return;

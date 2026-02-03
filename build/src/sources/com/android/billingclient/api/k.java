@@ -8,10 +8,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class k implements ThreadFactory {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ThreadFactory f9087a = Executors.defaultThreadFactory();
+    private final ThreadFactory f8716a = Executors.defaultThreadFactory();
 
     /* renamed from: b  reason: collision with root package name */
-    private final AtomicInteger f9088b = new AtomicInteger(1);
+    private final AtomicInteger f8717b = new AtomicInteger(1);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k(b bVar) {
@@ -19,8 +19,8 @@ public final class k implements ThreadFactory {
 
     @Override // java.util.concurrent.ThreadFactory
     public final Thread newThread(Runnable runnable) {
-        AtomicInteger atomicInteger = this.f9088b;
-        Thread newThread = this.f9087a.newThread(runnable);
+        AtomicInteger atomicInteger = this.f8717b;
+        Thread newThread = this.f8716a.newThread(runnable);
         int andIncrement = atomicInteger.getAndIncrement();
         newThread.setName("PlayBillingLibrary-" + andIncrement);
         return newThread;

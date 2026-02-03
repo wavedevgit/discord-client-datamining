@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun21988: for (var _fun21988_ip = 0;;) switch (_fun21988_ip) {
+    _fun22001: for (var _fun22001_ip = 0;;) switch (_fun22001_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun21988_ip = 77;
-                continue _fun21988
+                _fun22001_ip = 77;
+                continue _fun22001
             }
         case 65:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun21988_ip = 86;
-                continue _fun21988
+                _fun22001_ip = 86;
+                continue _fun22001
             }
         case 77:
             var2 = {};
@@ -36,54 +36,61 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 86:
             var2 = {};
             var4 = function arg0, arg1() {
-                _fun21989: for (var _fun21989_ip = 0;;) switch (_fun21989_ip) {
+                _fun22002: for (var _fun22002_ip = 0;;) switch (_fun22002_ip) {
                     case 0:
-                        var5 = arg1;
-                        var0 = global;
-                        var3 = var0.Number;
-                        var2 = undefined;
-                        var1 = arg0;
-                        var1 = var3.bind(var2)(var1);
-                        var4 = var0.String;
-                        var3 = null;
-                        var6 = var3 == var5;
+                        var0 = arg1;
+                        var1 = global;
+                        var2 = var1.Number;
                         var3 = undefined;
-                        if (var6) {
-                            _fun21989_ip = 44;
-                            continue _fun21989
+                        var1 = arg0;
+                        var1 = var2.bind(var3)(var1);
+                        var2 = null;
+                        var2 = var2 == var0;
+                        var6 = undefined;
+                        if (var2) {
+                            _fun22002_ip = 38;
+                            continue _fun22002
                         }
+                    case 32:
+                        var6 = var0.unit;
                     case 38:
-                        var3 = var5.unit;
+                        var0 = 0;
+                        if (!(var0 !== var1)) {
+                            _fun22002_ip = 110;
+                            continue _fun22002
+                        }
                     case 44:
-                        var4 = var4.bind(var2)(var3);
-                        var3 = 'minute';
-                        if (!(var3 !== var4)) {
-                            _fun21989_ip = 97;
-                            continue _fun21989
+                        var0 = 'ème';
+                        var2 = 1;
+                        if (!(var2 === var1)) {
+                            _fun22002_ip = 104;
+                            continue _fun22002
                         }
                     case 57:
-                        var3 = 'second';
-                        if (!(var3 !== var4)) {
-                            _fun21989_ip = 97;
-                            continue _fun21989
+                        var4 = 'er';
+                        var2 = var4;
+                        if (!var6) {
+                            _fun22002_ip = 101;
+                            continue _fun22002
                         }
-                    case 65:
-                        var3 = 'date';
-                        if (!(var3 !== var4)) {
-                            _fun21989_ip = 85;
-                            continue _fun21989
+                    case 69:
+                        var5 = ['year', 'week', 'hour', 'minute', 'second'];
+                        var3 = var5.includes;
+                        var3 = var3.bind(var5)(var6);
+                        var2 = var4;
+                        if (!var3) {
+                            _fun22002_ip = 101;
+                            continue _fun22002
                         }
-                    case 73:
-                        var3 = '번째';
-                        var3 = var1 + var3;
-                        return var3;
-                    case 85:
-                        var3 = '일';
-                        var3 = var1 + var3;
-                        return var3;
-                    case 97:
-                        var0 = var0.String;
-                        var0 = var0.bind(var2)(var1);
+                    case 95:
+                        var2 = 'ère';
+                    case 101:
+                        var0 = var2;
+                    case 104:
+                        var0 = var1 + var0;
+                        return var0;
+                    case 110:
+                        var0 = '0';
                         return var0;
                 }
             };
@@ -91,11 +98,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var5 = {};
-            var8 = ['BC', 'AD'];
+            var8 = ['av. J.-C', 'ap. J.-C'];
             var5.narrow = var8;
-            var8 = ['BC', 'AD'];
+            var8 = ['av. J.-C', 'ap. J.-C'];
             var5.abbreviated = var8;
-            var8 = ['기원전', '서기'];
+            var8 = ['avant Jésus-Christ', 'après Jésus-Christ'];
             var5.wide = var8;
             var4.values = var5;
             var5 = 'wide';
@@ -105,11 +112,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var8 = {};
-            var9 = ['1', '2', '3', '4'];
+            var9 = ['T1', 'T2', 'T3', 'T4'];
             var8.narrow = var9;
-            var9 = ['Q1', 'Q2', 'Q3', 'Q4'];
+            var9 = ['1er trim.', '2ème trim.', '3ème trim.', '4ème trim.'];
             var8.abbreviated = var9;
-            var9 = ['1분기', '2분기', '3분기', '4분기'];
+            var9 = ['1er trimestre', '2ème trimestre', '3ème trimestre', '4ème trimestre'];
             var8.wide = var9;
             var4.values = var8;
             var4.defaultWidth = var5;
@@ -125,11 +132,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var7 = {};
-            var8 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
+            var8 = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
             var7.narrow = var8;
-            var8 = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'];
+            var8 = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];
             var7.abbreviated = var8;
-            var8 = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'];
+            var8 = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
             var7.wide = var8;
             var4.values = var7;
             var4.defaultWidth = var5;
@@ -138,13 +145,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var7 = {};
-            var8 = ['일', '월', '화', '수', '목', '금', '토'];
+            var8 = ['D', 'L', 'M', 'M', 'J', 'V', 'S'];
             var7.narrow = var8;
-            var8 = ['일', '월', '화', '수', '목', '금', '토'];
+            var8 = ['di', 'lu', 'ma', 'me', 'je', 've', 'sa'];
             var7.short = var8;
-            var8 = ['일', '월', '화', '수', '목', '금', '토'];
+            var8 = ['dim.', 'lun.', 'mar.', 'mer.', 'jeu.', 'ven.', 'sam.'];
             var7.abbreviated = var8;
-            var8 = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
+            var8 = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
             var7.wide = var8;
             var4.values = var7;
             var4.defaultWidth = var5;
@@ -154,76 +161,40 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = {};
             var6 = {};
             var7 = {
-                'am': '오전',
-                'pm': '오후',
-                'midnight': '자정',
-                'noon': '정오',
-                'morning': '아침',
-                'afternoon': '오후',
-                'evening': '저녁',
-                'night': '밤'
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'minuit',
+                'noon': 'midi',
+                'morning': 'mat.',
+                'afternoon': 'ap.m.',
+                'evening': 'soir',
+                'night': 'mat.'
             };
             var6.narrow = var7;
             var7 = {
-                'am': '오전',
-                'pm': '오후',
-                'midnight': '자정',
-                'noon': '정오',
-                'morning': '아침',
-                'afternoon': '오후',
-                'evening': '저녁',
-                'night': '밤'
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'minuit',
+                'noon': 'midi',
+                'morning': 'matin',
+                'afternoon': 'après-midi',
+                'evening': 'soir',
+                'night': 'matin'
             };
             var6.abbreviated = var7;
             var7 = {
-                'am': '오전',
-                'pm': '오후',
-                'midnight': '자정',
-                'noon': '정오',
-                'morning': '아침',
-                'afternoon': '오후',
-                'evening': '저녁',
-                'night': '밤'
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'minuit',
+                'noon': 'midi',
+                'morning': 'du matin',
+                'afternoon': 'de l’après-midi',
+                'evening': 'du soir',
+                'night': 'du matin'
             };
             var6.wide = var7;
             var3.values = var6;
             var3.defaultWidth = var5;
-            var6 = {};
-            var7 = {
-                'am': '오전',
-                'pm': '오후',
-                'midnight': '자정',
-                'noon': '정오',
-                'morning': '아침',
-                'afternoon': '오후',
-                'evening': '저녁',
-                'night': '밤'
-            };
-            var6.narrow = var7;
-            var7 = {
-                'am': '오전',
-                'pm': '오후',
-                'midnight': '자정',
-                'noon': '정오',
-                'morning': '아침',
-                'afternoon': '오후',
-                'evening': '저녁',
-                'night': '밤'
-            };
-            var6.abbreviated = var7;
-            var7 = {
-                'am': '오전',
-                'pm': '오후',
-                'midnight': '자정',
-                'noon': '정오',
-                'morning': '아침',
-                'afternoon': '오후',
-                'evening': '저녁',
-                'night': '밤'
-            };
-            var6.wide = var7;
-            var3.formattingValues = var6;
-            var3.defaultFormattingWidth = var5;
             var3 = var4.bind(var0)(var3);
             var2.dayPeriod = var3;
             var1.default = var2;

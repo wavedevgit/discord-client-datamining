@@ -35,10 +35,10 @@ public final class NotificationMessageSerializer implements KSerializer {
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
-    @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, ys.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
         return NotificationMessage.Companion.serializer().getDescriptor();
@@ -51,7 +51,7 @@ public final class NotificationMessageSerializer implements KSerializer {
         return (NotificationMessage) json.b(NotificationMessage.Companion.serializer(), decoder.z());
     }
 
-    @Override // xs.o
+    @Override // ys.o
     public void serialize(@NotNull Encoder encoder, @NotNull NotificationMessage value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");

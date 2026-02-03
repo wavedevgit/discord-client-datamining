@@ -1,6 +1,6 @@
 package x4;
 
-import iu.c0;
+import ju.c0;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import okio.BufferedSource;
@@ -9,29 +9,29 @@ import x4.r;
 public final class w extends r {
 
     /* renamed from: d  reason: collision with root package name */
-    private final r.a f53219d;
+    private final r.a f53427d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f53220e;
+    private boolean f53428e;
 
     /* renamed from: i  reason: collision with root package name */
-    private BufferedSource f53221i;
+    private BufferedSource f53429i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Function0 f53222o;
+    private Function0 f53430o;
 
     /* renamed from: p  reason: collision with root package name */
-    private c0 f53223p;
+    private c0 f53431p;
 
     public w(BufferedSource bufferedSource, Function0 function0, r.a aVar) {
         super(null);
-        this.f53219d = aVar;
-        this.f53221i = bufferedSource;
-        this.f53222o = function0;
+        this.f53427d = aVar;
+        this.f53429i = bufferedSource;
+        this.f53430o = function0;
     }
 
     private final void l() {
-        if (!this.f53220e) {
+        if (!this.f53428e) {
             return;
         }
         throw new IllegalStateException("closed");
@@ -39,18 +39,18 @@ public final class w extends r {
 
     @Override // x4.r
     public r.a a() {
-        return this.f53219d;
+        return this.f53427d;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public synchronized void close() {
         try {
-            this.f53220e = true;
-            BufferedSource bufferedSource = this.f53221i;
+            this.f53428e = true;
+            BufferedSource bufferedSource = this.f53429i;
             if (bufferedSource != null) {
                 k5.k.d(bufferedSource);
             }
-            c0 c0Var = this.f53223p;
+            c0 c0Var = this.f53431p;
             if (c0Var != null) {
                 n().h(c0Var);
             }
@@ -62,19 +62,19 @@ public final class w extends r {
     @Override // x4.r
     public synchronized BufferedSource h() {
         l();
-        BufferedSource bufferedSource = this.f53221i;
+        BufferedSource bufferedSource = this.f53429i;
         if (bufferedSource != null) {
             return bufferedSource;
         }
-        iu.h n10 = n();
-        c0 c0Var = this.f53223p;
+        ju.h n10 = n();
+        c0 c0Var = this.f53431p;
         Intrinsics.checkNotNull(c0Var);
-        BufferedSource d10 = iu.x.d(n10.q(c0Var));
-        this.f53221i = d10;
+        BufferedSource d10 = ju.x.d(n10.q(c0Var));
+        this.f53429i = d10;
         return d10;
     }
 
-    public iu.h n() {
-        return iu.h.f31273b;
+    public ju.h n() {
+        return ju.h.f32370b;
     }
 }

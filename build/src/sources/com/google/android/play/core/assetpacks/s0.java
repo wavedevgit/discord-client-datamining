@@ -3,46 +3,46 @@ package com.google.android.play.core.assetpacks;
 final class s0 extends AssetPackState {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f17001a;
+    private final String f16630a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f17002b;
+    private final int f16631b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f17003c;
+    private final int f16632c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f17004d;
+    private final long f16633d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f17005e;
+    private final long f16634e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f17006f;
+    private final int f16635f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f17007g;
+    private final int f16636g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f17008h;
+    private final String f16637h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f17009i;
+    private final String f16638i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s0(String str, int i10, int i11, long j10, long j11, int i12, int i13, String str2, String str3) {
         if (str != null) {
-            this.f17001a = str;
-            this.f17002b = i10;
-            this.f17003c = i11;
-            this.f17004d = j10;
-            this.f17005e = j11;
-            this.f17006f = i12;
-            this.f17007g = i13;
+            this.f16630a = str;
+            this.f16631b = i10;
+            this.f16632c = i11;
+            this.f16633d = j10;
+            this.f16634e = j11;
+            this.f16635f = i12;
+            this.f16636g = i13;
             if (str2 != null) {
-                this.f17008h = str2;
+                this.f16637h = str2;
                 if (str3 != null) {
-                    this.f17009i = str3;
+                    this.f16638i = str3;
                     return;
                 }
                 throw new NullPointerException("Null installedVersionTag");
@@ -54,12 +54,12 @@ final class s0 extends AssetPackState {
 
     @Override // com.google.android.play.core.assetpacks.AssetPackState
     public final String b() {
-        return this.f17008h;
+        return this.f16637h;
     }
 
     @Override // com.google.android.play.core.assetpacks.AssetPackState
     public final long d() {
-        return this.f17004d;
+        return this.f16633d;
     }
 
     public final boolean equals(Object obj) {
@@ -68,7 +68,7 @@ final class s0 extends AssetPackState {
         }
         if (obj instanceof AssetPackState) {
             AssetPackState assetPackState = (AssetPackState) obj;
-            if (this.f17001a.equals(assetPackState.h()) && this.f17002b == assetPackState.i() && this.f17003c == assetPackState.f() && this.f17004d == assetPackState.d() && this.f17005e == assetPackState.j() && this.f17006f == assetPackState.k() && this.f17007g == assetPackState.l() && this.f17008h.equals(assetPackState.b()) && this.f17009i.equals(assetPackState.g())) {
+            if (this.f16630a.equals(assetPackState.h()) && this.f16631b == assetPackState.i() && this.f16632c == assetPackState.f() && this.f16633d == assetPackState.d() && this.f16634e == assetPackState.j() && this.f16635f == assetPackState.k() && this.f16636g == assetPackState.l() && this.f16637h.equals(assetPackState.b()) && this.f16638i.equals(assetPackState.g())) {
                 return true;
             }
         }
@@ -77,47 +77,47 @@ final class s0 extends AssetPackState {
 
     @Override // com.google.android.play.core.assetpacks.AssetPackState
     public final int f() {
-        return this.f17003c;
+        return this.f16632c;
     }
 
     @Override // com.google.android.play.core.assetpacks.AssetPackState
     public final String g() {
-        return this.f17009i;
+        return this.f16638i;
     }
 
     @Override // com.google.android.play.core.assetpacks.AssetPackState
     public final String h() {
-        return this.f17001a;
+        return this.f16630a;
     }
 
     public final int hashCode() {
-        long j10 = this.f17005e;
-        String str = this.f17008h;
-        long j11 = this.f17004d;
-        return ((((((((((((((((this.f17001a.hashCode() ^ 1000003) * 1000003) ^ this.f17002b) * 1000003) ^ this.f17003c) * 1000003) ^ ((int) ((j11 >>> 32) ^ j11))) * 1000003) ^ ((int) (j10 ^ (j10 >>> 32)))) * 1000003) ^ this.f17006f) * 1000003) ^ this.f17007g) * 1000003) ^ str.hashCode()) * 1000003) ^ this.f17009i.hashCode();
+        long j10 = this.f16634e;
+        String str = this.f16637h;
+        long j11 = this.f16633d;
+        return ((((((((((((((((this.f16630a.hashCode() ^ 1000003) * 1000003) ^ this.f16631b) * 1000003) ^ this.f16632c) * 1000003) ^ ((int) ((j11 >>> 32) ^ j11))) * 1000003) ^ ((int) (j10 ^ (j10 >>> 32)))) * 1000003) ^ this.f16635f) * 1000003) ^ this.f16636g) * 1000003) ^ str.hashCode()) * 1000003) ^ this.f16638i.hashCode();
     }
 
     @Override // com.google.android.play.core.assetpacks.AssetPackState
     public final int i() {
-        return this.f17002b;
+        return this.f16631b;
     }
 
     @Override // com.google.android.play.core.assetpacks.AssetPackState
     public final long j() {
-        return this.f17005e;
+        return this.f16634e;
     }
 
     @Override // com.google.android.play.core.assetpacks.AssetPackState
     public final int k() {
-        return this.f17006f;
+        return this.f16635f;
     }
 
     @Override // com.google.android.play.core.assetpacks.AssetPackState
     public final int l() {
-        return this.f17007g;
+        return this.f16636g;
     }
 
     public final String toString() {
-        return "AssetPackState{name=" + this.f17001a + ", status=" + this.f17002b + ", errorCode=" + this.f17003c + ", bytesDownloaded=" + this.f17004d + ", totalBytesToDownload=" + this.f17005e + ", transferProgressPercentage=" + this.f17006f + ", updateAvailability=" + this.f17007g + ", availableVersionTag=" + this.f17008h + ", installedVersionTag=" + this.f17009i + "}";
+        return "AssetPackState{name=" + this.f16630a + ", status=" + this.f16631b + ", errorCode=" + this.f16632c + ", bytesDownloaded=" + this.f16633d + ", totalBytesToDownload=" + this.f16634e + ", transferProgressPercentage=" + this.f16635f + ", updateAvailability=" + this.f16636g + ", availableVersionTag=" + this.f16637h + ", installedVersionTag=" + this.f16638i + "}";
     }
 }

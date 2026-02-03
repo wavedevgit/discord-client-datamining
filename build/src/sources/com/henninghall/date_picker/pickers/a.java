@@ -7,7 +7,7 @@ public interface a {
 
     /* renamed from: com.henninghall.date_picker.pickers.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface InterfaceC0198a {
+    public interface InterfaceC0203a {
         void a();
 
         void b();
@@ -38,7 +38,7 @@ public interface a {
 
     void setOnValueChangeListenerInScrolling(b bVar);
 
-    void setOnValueChangedListener(InterfaceC0198a interfaceC0198a);
+    void setOnValueChangedListener(InterfaceC0203a interfaceC0203a);
 
     void setTextAlign(Paint.Align align);
 

@@ -25,7 +25,7 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-eTS4JUY$default  reason: not valid java name */
-    public static /* synthetic */ InfoLinkMessageAccessory m607copyeTS4JUY$default(InfoLinkMessageAccessory infoLinkMessageAccessory, String str, long j10, String str2, String str3, String str4, ReactAsset reactAsset, int i10, Object obj) {
+    public static /* synthetic */ InfoLinkMessageAccessory m609copyeTS4JUY$default(InfoLinkMessageAccessory infoLinkMessageAccessory, String str, long j10, String str2, String str3, String str4, ReactAsset reactAsset, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = infoLinkMessageAccessory.messageId;
         }
@@ -44,17 +44,17 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
         if ((i10 & 32) != 0) {
             reactAsset = infoLinkMessageAccessory.icon;
         }
-        return infoLinkMessageAccessory.m610copyeTS4JUY(str, j10, str2, str3, str4, reactAsset);
+        return infoLinkMessageAccessory.m612copyeTS4JUY(str, j10, str2, str3, str4, reactAsset);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m608component13Eiw7ao() {
+    public final String m610component13Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    public final long m609component2o4g7jtM() {
+    public final long m611component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -78,7 +78,7 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-eTS4JUY  reason: not valid java name */
-    public final InfoLinkMessageAccessory m610copyeTS4JUY(@NotNull String messageId, long j10, String str, String str2, @NotNull String text, @NotNull ReactAsset icon) {
+    public final InfoLinkMessageAccessory m612copyeTS4JUY(@NotNull String messageId, long j10, String str, String str2, @NotNull String text, @NotNull ReactAsset icon) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(text, "text");
         Intrinsics.checkNotNullParameter(icon, "icon");
@@ -91,7 +91,7 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof InfoLinkMessageAccessory) {
             InfoLinkMessageAccessory infoLinkMessageAccessory = (InfoLinkMessageAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, infoLinkMessageAccessory.messageId) && ChannelId.m1062equalsimpl0(this.channelId, infoLinkMessageAccessory.channelId) && Intrinsics.areEqual(this.attachmentId, infoLinkMessageAccessory.attachmentId) && Intrinsics.areEqual(this.embedId, infoLinkMessageAccessory.embedId) && Intrinsics.areEqual(this.text, infoLinkMessageAccessory.text) && this.icon == infoLinkMessageAccessory.icon;
+            return MessageId.m1090equalsimpl0(this.messageId, infoLinkMessageAccessory.messageId) && ChannelId.m1064equalsimpl0(this.channelId, infoLinkMessageAccessory.channelId) && Intrinsics.areEqual(this.attachmentId, infoLinkMessageAccessory.attachmentId) && Intrinsics.areEqual(this.embedId, infoLinkMessageAccessory.embedId) && Intrinsics.areEqual(this.text, infoLinkMessageAccessory.text) && this.icon == infoLinkMessageAccessory.icon;
         }
         return false;
     }
@@ -101,7 +101,7 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m611getChannelIdo4g7jtM() {
+    public final long m613getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -117,7 +117,7 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -127,22 +127,22 @@ public final class InfoLinkMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int m1089hashCodeimpl = ((MessageId.m1089hashCodeimpl(this.messageId) * 31) + ChannelId.m1063hashCodeimpl(this.channelId)) * 31;
+        int m1091hashCodeimpl = ((MessageId.m1091hashCodeimpl(this.messageId) * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31;
         String str = this.attachmentId;
-        int hashCode = (m1089hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31;
+        int hashCode = (m1091hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.embedId;
         return ((((hashCode + (str2 != null ? str2.hashCode() : 0)) * 31) + this.text.hashCode()) * 31) + this.icon.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
-        String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
         String str = this.attachmentId;
         String str2 = this.embedId;
         String str3 = this.text;
         ReactAsset reactAsset = this.icon;
-        return "InfoLinkMessageAccessory(messageId=" + m1091toStringimpl + ", channelId=" + m1065toStringimpl + ", attachmentId=" + str + ", embedId=" + str2 + ", text=" + str3 + ", icon=" + reactAsset + ")";
+        return "InfoLinkMessageAccessory(messageId=" + m1093toStringimpl + ", channelId=" + m1067toStringimpl + ", attachmentId=" + str + ", embedId=" + str2 + ", text=" + str3 + ", icon=" + reactAsset + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

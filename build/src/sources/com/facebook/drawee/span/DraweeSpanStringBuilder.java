@@ -19,19 +19,19 @@ import o8.j;
 public class DraweeSpanStringBuilder extends SpannableStringBuilder {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Set f11179d;
+    private final Set f10808d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Set f11180e;
+    private final Set f10809e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final b f11181i;
+    private final b f10810i;
 
     /* renamed from: o  reason: collision with root package name */
-    private View f11182o;
+    private View f10811o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Drawable f11183p;
+    private Drawable f10812p;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -41,28 +41,28 @@ public class DraweeSpanStringBuilder extends SpannableStringBuilder {
 
         @Override // android.graphics.drawable.Drawable.Callback
         public void invalidateDrawable(Drawable drawable) {
-            if (DraweeSpanStringBuilder.this.f11182o != null) {
-                DraweeSpanStringBuilder.this.f11182o.invalidate();
-            } else if (DraweeSpanStringBuilder.this.f11183p != null) {
-                DraweeSpanStringBuilder.this.f11183p.invalidateSelf();
+            if (DraweeSpanStringBuilder.this.f10811o != null) {
+                DraweeSpanStringBuilder.this.f10811o.invalidate();
+            } else if (DraweeSpanStringBuilder.this.f10812p != null) {
+                DraweeSpanStringBuilder.this.f10812p.invalidateSelf();
             }
         }
 
         @Override // android.graphics.drawable.Drawable.Callback
         public void scheduleDrawable(Drawable drawable, Runnable runnable, long j10) {
-            if (DraweeSpanStringBuilder.this.f11182o != null) {
-                DraweeSpanStringBuilder.this.f11182o.postDelayed(runnable, j10 - SystemClock.uptimeMillis());
-            } else if (DraweeSpanStringBuilder.this.f11183p != null) {
-                DraweeSpanStringBuilder.this.f11183p.scheduleSelf(runnable, j10);
+            if (DraweeSpanStringBuilder.this.f10811o != null) {
+                DraweeSpanStringBuilder.this.f10811o.postDelayed(runnable, j10 - SystemClock.uptimeMillis());
+            } else if (DraweeSpanStringBuilder.this.f10812p != null) {
+                DraweeSpanStringBuilder.this.f10812p.scheduleSelf(runnable, j10);
             }
         }
 
         @Override // android.graphics.drawable.Drawable.Callback
         public void unscheduleDrawable(Drawable drawable, Runnable runnable) {
-            if (DraweeSpanStringBuilder.this.f11182o != null) {
-                DraweeSpanStringBuilder.this.f11182o.removeCallbacks(runnable);
-            } else if (DraweeSpanStringBuilder.this.f11183p != null) {
-                DraweeSpanStringBuilder.this.f11183p.unscheduleSelf(runnable);
+            if (DraweeSpanStringBuilder.this.f10811o != null) {
+                DraweeSpanStringBuilder.this.f10811o.removeCallbacks(runnable);
+            } else if (DraweeSpanStringBuilder.this.f10812p != null) {
+                DraweeSpanStringBuilder.this.f10812p.unscheduleSelf(runnable);
             }
         }
     }
@@ -72,32 +72,32 @@ public class DraweeSpanStringBuilder extends SpannableStringBuilder {
     public class c extends i9.a {
 
         /* renamed from: d  reason: collision with root package name */
-        private final com.facebook.drawee.span.a f11185d;
+        private final com.facebook.drawee.span.a f10814d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f11186e;
+        private final boolean f10815e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f11187i;
+        private final int f10816i;
 
         public c(com.facebook.drawee.span.a aVar, boolean z10, int i10) {
             j.g(aVar);
-            this.f11185d = aVar;
-            this.f11186e = z10;
-            this.f11187i = i10;
+            this.f10814d = aVar;
+            this.f10815e = z10;
+            this.f10816i = i10;
         }
 
         @Override // i9.a, com.facebook.drawee.controller.ControllerListener
         /* renamed from: a */
         public void onFinalImageSet(String str, ImageInfo imageInfo, Animatable animatable) {
-            if (this.f11186e && imageInfo != null && this.f11185d.f().g() != null) {
-                Drawable g10 = this.f11185d.f().g();
+            if (this.f10815e && imageInfo != null && this.f10814d.f().g() != null) {
+                Drawable g10 = this.f10814d.f().g();
                 Rect bounds = g10.getBounds();
-                int i10 = this.f11187i;
+                int i10 = this.f10816i;
                 if (i10 != -1) {
                     int height = (int) ((i10 / imageInfo.getHeight()) * imageInfo.getWidth());
-                    if (bounds.width() != height || bounds.height() != this.f11187i) {
-                        g10.setBounds(0, 0, height, this.f11187i);
+                    if (bounds.width() != height || bounds.height() != this.f10816i) {
+                        g10.setBounds(0, 0, height, this.f10816i);
                         DraweeSpanStringBuilder.c(DraweeSpanStringBuilder.this);
                     }
                 } else if (bounds.width() != imageInfo.getWidth() || bounds.height() != imageInfo.getHeight()) {
@@ -113,9 +113,9 @@ public class DraweeSpanStringBuilder extends SpannableStringBuilder {
     }
 
     public DraweeSpanStringBuilder() {
-        this.f11179d = new HashSet();
-        this.f11180e = new HashSet();
-        this.f11181i = new b();
+        this.f10808d = new HashSet();
+        this.f10809e = new HashSet();
+        this.f10810i = new b();
     }
 
     static /* synthetic */ d c(DraweeSpanStringBuilder draweeSpanStringBuilder) {
@@ -125,14 +125,14 @@ public class DraweeSpanStringBuilder extends SpannableStringBuilder {
 
     protected void d(View view) {
         m();
-        this.f11182o = view;
+        this.f10811o = view;
     }
 
     void e() {
-        for (com.facebook.drawee.span.a aVar : this.f11179d) {
+        for (com.facebook.drawee.span.a aVar : this.f10808d) {
             aVar.g();
         }
-        Iterator it = this.f11180e.iterator();
+        Iterator it = this.f10809e.iterator();
         if (!it.hasNext()) {
             return;
         }
@@ -146,10 +146,10 @@ public class DraweeSpanStringBuilder extends SpannableStringBuilder {
     }
 
     void g() {
-        for (com.facebook.drawee.span.a aVar : this.f11179d) {
+        for (com.facebook.drawee.span.a aVar : this.f10808d) {
             aVar.h();
         }
-        for (Object obj : this.f11180e) {
+        for (Object obj : this.f10809e) {
             android.support.v4.media.session.b.a(obj);
             ca.b.a(null);
         }
@@ -179,46 +179,46 @@ public class DraweeSpanStringBuilder extends SpannableStringBuilder {
             if (g10.getBounds().isEmpty()) {
                 g10.setBounds(0, 0, i12, i13);
             }
-            g10.setCallback(this.f11181i);
+            g10.setCallback(this.f10810i);
         }
         com.facebook.drawee.span.a aVar = new com.facebook.drawee.span.a(draweeHolder, i14);
         DraweeController e10 = draweeHolder.e();
         if (e10 instanceof com.facebook.drawee.controller.a) {
             ((com.facebook.drawee.controller.a) e10).e(new c(aVar, z10, i13));
         }
-        this.f11179d.add(aVar);
+        this.f10808d.add(aVar);
         setSpan(aVar, i10, i11 + 1, 33);
     }
 
     protected void l(Drawable drawable) {
-        if (drawable != this.f11183p) {
+        if (drawable != this.f10812p) {
             return;
         }
-        this.f11183p = null;
+        this.f10812p = null;
     }
 
     protected void m() {
-        View view = this.f11182o;
+        View view = this.f10811o;
         if (view != null) {
             n(view);
         }
-        Drawable drawable = this.f11183p;
+        Drawable drawable = this.f10812p;
         if (drawable != null) {
             l(drawable);
         }
     }
 
     protected void n(View view) {
-        if (view != this.f11182o) {
+        if (view != this.f10811o) {
             return;
         }
-        this.f11182o = null;
+        this.f10811o = null;
     }
 
     public DraweeSpanStringBuilder(CharSequence charSequence) {
         super(charSequence);
-        this.f11179d = new HashSet();
-        this.f11180e = new HashSet();
-        this.f11181i = new b();
+        this.f10808d = new HashSet();
+        this.f10809e = new HashSet();
+        this.f10810i = new b();
     }
 }

@@ -5,30 +5,30 @@ import ui.c;
 final class g6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final g6 f41248a = new g6();
+    static final g6 f41111a = new g6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41249b;
+    private static final ui.c f41112b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41250c;
+    private static final ui.c f41113c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41251d;
+    private static final ui.c f41114d;
 
     static {
         c.b a10 = ui.c.a("language");
         f fVar = new f();
         fVar.a(1);
-        f41249b = a10.b(fVar.b()).a();
+        f41112b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("durationMs");
         f fVar2 = new f();
         fVar2.a(2);
-        f41250c = a11.b(fVar2.b()).a();
+        f41113c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("errorCode");
         f fVar3 = new f();
         fVar3.a(3);
-        f41251d = a12.b(fVar3.b()).a();
+        f41114d = a12.b(fVar3.b()).a();
     }
 
     private g6() {

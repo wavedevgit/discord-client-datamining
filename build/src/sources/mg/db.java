@@ -5,7 +5,7 @@ import ui.c;
 final class db implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final db f38158a = new db();
+    static final db f38138a = new db();
 
     static {
         c.b a10 = ui.c.a("shadowRemovalType");

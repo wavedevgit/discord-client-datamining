@@ -2,8 +2,8 @@ package com.discord.crash_reporting;
 
 import com.discord.crash_reporting.CrashReporting;
 import com.discord.logging.Log;
-import ir.v;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
@@ -16,7 +16,7 @@ public final class FLogDelegate implements p8.c {
         if (th2 == null) {
             f10 = o0.i();
         } else {
-            f10 = o0.f(v.a("stacktrace", ir.e.b(th2)));
+            f10 = o0.f(v.a("stacktrace", jr.e.b(th2)));
         }
         CrashReporting.INSTANCE.addBreadcrumb(str, f10, "react.native", breadcrumbLevel, false);
     }

@@ -2,63 +2,80 @@ package nu;
 
 import java.util.List;
 import java.util.Map;
-import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
-import nu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements ku.a, d {
+public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f42218a = new b();
+    private final List f42334a;
 
-    private b() {
+    /* renamed from: b  reason: collision with root package name */
+    private final Map f42335b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final Object f42336c;
+
+    public b(List list, Map map, Object obj) {
+        this.f42334a = list;
+        this.f42335b = map;
+        this.f42336c = obj;
     }
 
-    @Override // mu.f
-    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
-        return d.a.f(this, obj, obj2, hVar, function2);
+    public final Map a() {
+        return this.f42335b;
     }
 
-    @Override // mu.a
-    public mu.b c(List list, Object obj, h hVar) {
-        return d.a.c(this, list, obj, hVar);
+    public final List b() {
+        return this.f42334a;
     }
 
-    @Override // ku.a
-    public Object d(Object obj, Object obj2, h evaluator) {
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        return f(obj, obj2, evaluator);
+    public final Object c() {
+        return this.f42336c;
     }
 
-    @Override // ov.a
-    public List e(List list, Object obj, h hVar) {
-        return d.a.h(this, list, obj, hVar);
-    }
-
-    public Object f(Object obj, Object obj2, h hVar) {
-        return d.a.b(this, obj, obj2, hVar);
-    }
-
-    @Override // nu.d
-    public Object g(c data, h evaluator) {
-        Intrinsics.checkNotNullParameter(data, "data");
-        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-        for (Object obj : data.b()) {
-            if (f42218a.i(evaluator.a(data.a(), obj))) {
-                return Boolean.FALSE;
-            }
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        return data.c();
+        if (!(obj instanceof b)) {
+            return false;
+        }
+        b bVar = (b) obj;
+        if (Intrinsics.areEqual(this.f42334a, bVar.f42334a) && Intrinsics.areEqual(this.f42335b, bVar.f42335b) && Intrinsics.areEqual(this.f42336c, bVar.f42336c)) {
+            return true;
+        }
+        return false;
     }
 
-    @Override // mu.a
-    /* renamed from: h */
-    public Boolean a(Map map, List expressionValues) {
-        Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
-        return Boolean.TRUE;
+    public int hashCode() {
+        int hashCode;
+        int hashCode2;
+        List list = this.f42334a;
+        int i10 = 0;
+        if (list == null) {
+            hashCode = 0;
+        } else {
+            hashCode = list.hashCode();
+        }
+        int i11 = hashCode * 31;
+        Map map = this.f42335b;
+        if (map == null) {
+            hashCode2 = 0;
+        } else {
+            hashCode2 = map.hashCode();
+        }
+        int i12 = (i11 + hashCode2) * 31;
+        Object obj = this.f42336c;
+        if (obj != null) {
+            i10 = obj.hashCode();
+        }
+        return i12 + i10;
     }
 
-    public boolean i(Object obj) {
-        return d.a.i(this, obj);
+    public String toString() {
+        List list = this.f42334a;
+        Map map = this.f42335b;
+        Object obj = this.f42336c;
+        return "ArrayOperationInputData(operationData=" + list + ", mappingOperation=" + map + ", operationDefault=" + obj + ")";
     }
 }

@@ -15,7 +15,7 @@ abstract class b {
         b10.addAll(c());
         ExifInterface exifInterface = new ExifInterface(str);
         try {
-            wl.a aVar = new wl.a(exifInterface);
+            xl.a aVar = new xl.a(exifInterface);
             if (aVar.b() != null && aVar.c() != null) {
                 writableNativeMap.putDouble("Latitude", aVar.b().floatValue());
                 writableNativeMap.putDouble("Longitude", aVar.c().floatValue());

@@ -10,16 +10,16 @@ import ji.s;
 public abstract class c extends Binder {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int f37068c;
+    private static final int f37182c;
 
     static {
         int i10;
-        if (ne.w0.f40295a >= 30) {
+        if (ne.w0.f40158a >= 30) {
             i10 = IBinder.getSuggestedMaxIpcSizeBytes();
         } else {
             i10 = 65536;
         }
-        f37068c = i10;
+        f37182c = i10;
     }
 
     public static ji.s a(IBinder iBinder) {

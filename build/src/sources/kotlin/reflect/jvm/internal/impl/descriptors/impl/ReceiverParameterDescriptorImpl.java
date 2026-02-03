@@ -11,10 +11,10 @@ import org.jetbrains.annotations.NotNull;
 public class ReceiverParameterDescriptorImpl extends AbstractReceiverParameterDescriptor {
 
     /* renamed from: i  reason: collision with root package name */
-    private final DeclarationDescriptor f33859i;
+    private final DeclarationDescriptor f33635i;
 
     /* renamed from: o  reason: collision with root package name */
-    private ReceiverValue f33860o;
+    private ReceiverValue f33636o;
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ReceiverParameterDescriptorImpl(@NotNull DeclarationDescriptor declarationDescriptor, @NotNull ReceiverValue receiverValue, @NotNull Annotations annotations) {
@@ -91,7 +91,7 @@ public class ReceiverParameterDescriptorImpl extends AbstractReceiverParameterDe
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     @NotNull
     public DeclarationDescriptor getContainingDeclaration() {
-        DeclarationDescriptor declarationDescriptor = this.f33859i;
+        DeclarationDescriptor declarationDescriptor = this.f33635i;
         if (declarationDescriptor == null) {
             a(8);
         }
@@ -101,7 +101,7 @@ public class ReceiverParameterDescriptorImpl extends AbstractReceiverParameterDe
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ReceiverParameterDescriptor
     @NotNull
     public ReceiverValue getValue() {
-        ReceiverValue receiverValue = this.f33860o;
+        ReceiverValue receiverValue = this.f33636o;
         if (receiverValue == null) {
             a(7);
         }
@@ -123,7 +123,7 @@ public class ReceiverParameterDescriptorImpl extends AbstractReceiverParameterDe
         if (name == null) {
             a(6);
         }
-        this.f33859i = declarationDescriptor;
-        this.f33860o = receiverValue;
+        this.f33635i = declarationDescriptor;
+        this.f33636o = receiverValue;
     }
 }

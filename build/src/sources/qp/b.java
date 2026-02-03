@@ -1,52 +1,83 @@
 package qp;
 
-import android.location.Location;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import kotlin.collections.CollectionsKt;
+import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.ranges.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final Location f47601a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final c f47602b;
-
-    public b(Location location, c precision) {
-        Intrinsics.checkNotNullParameter(location, "location");
-        Intrinsics.checkNotNullParameter(precision, "precision");
-        this.f47601a = location;
-        this.f47602b = precision;
-    }
-
-    public final Location a() {
-        return this.f47601a;
-    }
-
-    public final c b() {
-        return this.f47602b;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+public final class b implements a {
+    private final int b(BitmapFactory.Options options, int i10, int i11) {
+        int i12 = options.outHeight;
+        int i13 = options.outWidth;
+        if (i12 <= i11 && i13 <= i10) {
+            return 1;
         }
-        if (!(obj instanceof b)) {
-            return false;
-        }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f47601a, bVar.f47601a) && this.f47602b == bVar.f47602b) {
-            return true;
-        }
-        return false;
+        return Math.min(yr.a.c(i12 / i11), yr.a.c(i13 / i10));
     }
 
-    public int hashCode() {
-        return (this.f47601a.hashCode() * 31) + this.f47602b.hashCode();
+    private final Map c(File file) {
+        try {
+            List o10 = CollectionsKt.o("DateTime", "DateTimeDigitized", "ExposureTime", "Flash", "FocalLength", "GPSAltitude", "GPSAltitudeRef", "GPSDateStamp", "GPSLatitude", "GPSLatitudeRef", "GPSLongitude", "GPSLongitudeRef", "GPSProcessingMethod", "GPSTimeStamp", "Make", "Model", "Orientation", "SubSecTime", "WhiteBalance");
+            FileInputStream fileInputStream = new FileInputStream(file);
+            e3.a aVar = new e3.a(fileInputStream);
+            List list = o10;
+            LinkedHashMap linkedHashMap = new LinkedHashMap(d.d(o0.e(CollectionsKt.w(list, 10)), 16));
+            for (Object obj : list) {
+                linkedHashMap.put(obj, aVar.k((String) obj));
+            }
+            ur.c.a(fileInputStream, null);
+            return linkedHashMap;
+        } catch (IOException unused) {
+            return o0.i();
+        }
     }
 
-    public String toString() {
-        Location location = this.f47601a;
-        c cVar = this.f47602b;
-        return "GpsData(location=" + location + ", precision=" + cVar + ")";
+    private final void d(File file, Map map) {
+        try {
+            e3.a aVar = new e3.a(file.getAbsolutePath());
+            for (Map.Entry entry : map.entrySet()) {
+                String str = (String) entry.getKey();
+                String str2 = (String) entry.getValue();
+                if (str2 != null) {
+                    aVar.h0(str, str2);
+                }
+            }
+            aVar.c0();
+        } catch (IOException unused) {
+        }
+    }
+
+    @Override // qp.a
+    public void a(File file) {
+        Intrinsics.checkNotNullParameter(file, "file");
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(file.getAbsolutePath(), options);
+        Map c10 = c(file);
+        try {
+            String absolutePath = file.getAbsolutePath();
+            BitmapFactory.Options options2 = new BitmapFactory.Options();
+            options2.inSampleSize = b(options, 2000, 2000);
+            Bitmap decodeFile = BitmapFactory.decodeFile(absolutePath, options2);
+            FileOutputStream fileOutputStream = new FileOutputStream(file);
+            if (decodeFile != null) {
+                decodeFile.compress(Bitmap.CompressFormat.JPEG, 80, fileOutputStream);
+            }
+            ur.c.a(fileOutputStream, null);
+            if (decodeFile != null) {
+                decodeFile.recycle();
+            }
+        } catch (IllegalArgumentException unused) {
+        }
+        d(file, c10);
     }
 }

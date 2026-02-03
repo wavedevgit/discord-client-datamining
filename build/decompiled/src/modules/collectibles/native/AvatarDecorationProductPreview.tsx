@@ -28,16 +28,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var3 = 2;
     var3 = var5[var3];
-    var3 = var10.bind(var0)(var3);
-    var _closure1_slot4 = var3;
-    var3 = 3;
-    var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var6 = var3.jsx;
-    var _closure1_slot5 = var6;
+    var _closure1_slot4 = var6;
     var3 = var3.jsxs;
-    var _closure1_slot6 = var3;
-    var3 = 4;
+    var _closure1_slot5 = var3;
+    var3 = 3;
     var3 = var5[var3];
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
@@ -48,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'marginHorizontal': null,
         'justifyContent': 'center'
     };
-    var9 = 5;
+    var9 = 4;
     var11 = var5[var9];
     var11 = var10.bind(var0)(var11);
     var11 = var11.spacing;
@@ -146,75 +142,51 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.chatIcon = var8;
     var3 = var6.bind(var7)(var3);
-    var _closure1_slot7 = var3;
-    var3 = 21;
+    var _closure1_slot6 = var3;
+    var3 = 19;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/AvatarDecorationProductPreview.tsx';
     var3 = var4.bind(var5)(var3);
-    var1 = function() {
-        _fun87107: for (var _fun87107_ip = 0;;) switch (_fun87107_ip) {
+    var1 = function arg0() {
+        _fun87466: for (var _fun87466_ip = 0;;) switch (_fun87466_ip) {
             case 0:
-                var0 = _closure1_slot7;
-                var3 = undefined;
-                var5 = var0.bind(var3)();
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot2;
+                var0 = arg0;
+                var2 = var0.product;
+                var0 = _closure1_slot6;
+                var4 = undefined;
+                var7 = var0.bind(var4)();
+                var1 = _closure1_slot0;
+                var3 = _closure1_slot2;
+                var0 = 5;
+                var0 = var3[var0];
+                var5 = var1.bind(var4)(var0);
+                var0 = var5.useCurrentUser;
+                var13 = var0.bind(var5)();
                 var0 = 6;
-                var0 = var4[var0];
-                var6 = var2.bind(var3)(var0);
-                var0 = var6.useCurrentUser;
-                var12 = var0.bind(var6)();
-                var0 = 7;
-                var0 = var4[var0];
-                var7 = var2.bind(var3)(var0);
-                var6 = var7.useStateFromStoresObject;
-                var0 = _closure1_slot4;
-                var2 = new Array(1);
-                var2[0] = var0;
-                var0 = function() { // Environment: var1
-                    var1 = _closure1_slot4;
-                    var0 = var1.getPendingChanges;
-                    var0 = var0.bind(var1)();
-                    return var0;
-                };
-                var0 = var6.bind(var7)(var2, var0);
-                var8 = var0.pendingAvatarDecoration;
-                var15 = var0.pendingProfileEffect;
+                var0 = var3[var0];
+                var1 = var1.bind(var4)(var0);
+                var0 = var1.useShopProductItems;
+                var0 = var0.bind(var1)(var2);
+                var14 = var0.firstProfileEffect;
+                var9 = var0.firstAvatarDecoration;
                 var2 = _closure1_slot1;
-                var0 = 8;
-                var0 = var4[var0];
-                var2 = var2.bind(var3)(var0);
-                var11 = null;
-                var4 = var11 == var8;
-                var0 = undefined;
-                if (var4) {
-                    _fun87107_ip = 133;
-                    continue _fun87107
-                }
-            case 127:
-                var0 = var8.skuId;
-            case 133:
-                var0 = var2.bind(var3)(var0);
-                var13 = var0.product;
-                var4 = _closure1_slot1;
-                var6 = _closure1_slot2;
-                var0 = 9;
-                var0 = var6[var0];
-                var7 = var4.bind(var3)(var0);
-                var2 = var7.useConfig;
+                var0 = 7;
+                var0 = var3[var0];
+                var5 = var2.bind(var4)(var0);
+                var1 = var5.useConfig;
                 var0 = {};
-                var9 = 'AvatarDecorationProductPreview';
-                var0.location = var9;
-                var0 = var2.bind(var7)(var0);
-                var2 = 10;
-                var2 = var6[var2];
-                var2 = var4.bind(var3)(var2);
-                var1 = function() { // Environment: var1
+                var8 = 'AvatarDecorationProductPreview';
+                var0.location = var8;
+                var1 = var1.bind(var5)(var0);
+                var0 = 8;
+                var0 = var3[var0];
+                var2 = var2.bind(var4)(var0);
+                var0 = function() { // Environment: var0
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
-                    var0 = 11;
+                    var0 = 9;
                     var1 = var1[var0];
                     var0 = undefined;
                     var2 = var2.bind(var0)(var1);
@@ -233,79 +205,72 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var2)(var0);
                     return var0;
                 };
-                var28 = var2.bind(var3)(var1);
-                var2 = _closure1_slot5;
-                var1 = _closure1_slot3;
-                if (!var0) {
-                    _fun87107_ip = 229;
-                    continue _fun87107
+                var27 = var2.bind(var4)(var0);
+                var0 = null;
+                var2 = var0 == var9;
+                if (var2) {
+                    _fun87466_ip = 1103;
+                    continue _fun87466
                 }
-            case 222:
-                if (!(var11 == var8)) {
-                    _fun87107_ip = 981;
-                    continue _fun87107
+            case 164:
+                var3 = _closure1_slot4;
+                var2 = _closure1_slot3;
+                var5 = {};
+                if (var1) {
+                    _fun87466_ip = 916;
+                    continue _fun87466
                 }
-            case 229:
-                var0 = {};
-                var4 = var5.container;
-                var0.style = var4;
-                var4 = 'box-none';
-                var0.pointerEvents = var4;
-                var6 = _closure1_slot0;
-                var4 = _closure1_slot2;
-                var26 = 12;
-                var7 = var4[var26];
-                var7 = var6.bind(var3)(var7);
-                var9 = var7.intl;
-                var7 = var9.formatToPlainString;
-                var4 = var4[var26];
-                var4 = var6.bind(var3)(var4);
-                var4 = var4.t;
-                var6 = var4.hORo2W;
-                var4 = {};
-                var16 = var11 == var13;
-                var14 = undefined;
-                if (var16) {
-                    _fun87107_ip = 317;
-                    continue _fun87107
-                }
-            case 312:
-                var14 = var13.name;
-            case 317:
-                var4.avatarDecoration = var14;
-                var4 = var7.bind(var9)(var6, var4);
-                var0.accessibilityLabel = var4;
-                var4 = 'image';
-                var0.accessibilityRole = var4;
-                var7 = _closure1_slot6;
-                var6 = _closure1_slot3;
-                var4 = {};
-                var20 = _closure1_slot5;
-                var22 = _closure1_slot1;
-                var23 = _closure1_slot2;
-                var9 = 14;
-                var9 = var23[var9];
-                var14 = var22.bind(var3)(var9);
-                var9 = {};
-                var9.user = var12;
-                var16 = true;
-                var9.compact = var16;
-                var16 = var5.profilePreview;
-                var9.style = var16;
-                var9.pendingProfileEffectRecord = var15;
-                var14 = var20.bind(var3)(var14, var9);
-                var9 = new Array(2);
-                var9[0] = var14;
+            case 180:
+                var1 = var7.container;
+                var5.style = var1;
+                var1 = 'box-none';
+                var5.pointerEvents = var1;
+                var17 = _closure1_slot0;
+                var22 = _closure1_slot2;
+                var25 = 10;
+                var1 = var22[var25];
+                var1 = var17.bind(var4)(var1);
+                var11 = var1.intl;
+                var10 = var11.formatToPlainString;
+                var1 = var22[var25];
+                var1 = var17.bind(var4)(var1);
+                var1 = var1.t;
+                var8 = var1.Do2lxE;
+                var1 = {};
+                var12 = var9.label;
+                var1.a11y_text = var12;
+                var1 = var10.bind(var11)(var8, var1);
+                var5.accessibilityLabel = var1;
+                var1 = 'image';
+                var5.accessibilityRole = var1;
+                var10 = _closure1_slot5;
+                var8 = _closure1_slot3;
+                var1 = {};
+                var19 = _closure1_slot4;
+                var21 = _closure1_slot1;
+                var11 = 12;
+                var11 = var22[var11];
+                var12 = var21.bind(var4)(var11);
+                var11 = {};
+                var11.user = var13;
+                var15 = true;
+                var11.compact = var15;
+                var15 = var7.profilePreview;
+                var11.style = var15;
+                var11.pendingProfileEffectRecord = var14;
+                var12 = var19.bind(var4)(var12, var11);
+                var11 = new Array(2);
+                var11[0] = var12;
+                var12 = {};
+                var14 = var7.chat;
+                var12.style = var14;
                 var14 = {};
-                var15 = var5.chat;
+                var15 = var7.messageRow;
                 var14.style = var15;
-                var15 = {};
-                var16 = var5.messageRow;
-                var15.style = var16;
-                var16 = 15;
-                var16 = var23[var16];
-                var17 = var22.bind(var3)(var16);
-                var16 = {
+                var15 = 13;
+                var15 = var22[var15];
+                var16 = var21.bind(var4)(var15);
+                var15 = {
                     'user': null,
                     'pendingAvatarDecoration': null,
                     'size': null,
@@ -313,183 +278,173 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'importantForAccessibility': 'no',
                     'accessibilityLabel': ''
                 };
-                var16.user = var12;
-                var16.pendingAvatarDecoration = var8;
-                var18 = _closure1_slot0;
-                var19 = 13;
-                var19 = var23[var19];
-                var19 = var18.bind(var3)(var19);
-                var19 = var19.AvatarSizes;
-                var19 = var19.NORMAL;
-                var16.size = var19;
-                var17 = var20.bind(var3)(var17, var16);
-                var16 = new Array(2);
-                var16[0] = var17;
-                var17 = {};
-                var19 = var5.messageColumn;
-                var17.style = var19;
-                var19 = {};
-                var21 = var5.messageHeader;
-                var19.style = var21;
-                var21 = 16;
-                var21 = var23[var21];
-                var24 = var22.bind(var3)(var21);
-                var21 = {
+                var15.user = var13;
+                var15.pendingAvatarDecoration = var9;
+                var18 = 11;
+                var18 = var22[var18];
+                var18 = var17.bind(var4)(var18);
+                var18 = var18.AvatarSizes;
+                var18 = var18.NORMAL;
+                var15.size = var18;
+                var16 = var19.bind(var4)(var16, var15);
+                var15 = new Array(2);
+                var15[0] = var16;
+                var16 = {};
+                var18 = var7.messageColumn;
+                var16.style = var18;
+                var18 = {};
+                var20 = var7.messageHeader;
+                var18.style = var20;
+                var20 = 14;
+                var20 = var22[var20];
+                var23 = var21.bind(var4)(var20);
+                var20 = {
                     'user': null,
                     'textVariant': 'heading-sm/extrabold',
                     'hideSubname': true
                 };
-                var21.user = var12;
-                var24 = var20.bind(var3)(var24, var21);
-                var21 = new Array(2);
-                var21[0] = var24;
-                var24 = 17;
-                var25 = var23[var24];
-                var25 = var18.bind(var3)(var25);
-                var27 = var25.Text;
-                var25 = {
+                var20.user = var13;
+                var23 = var19.bind(var4)(var23, var20);
+                var20 = new Array(2);
+                var20[0] = var23;
+                var23 = 15;
+                var24 = var22[var23];
+                var24 = var17.bind(var4)(var24);
+                var26 = var24.Text;
+                var24 = {
                     'variant': 'text-xxs/normal',
                     'color': 'text-default'
                 };
-                var25.children = var28;
-                var25 = var20.bind(var3)(var27, var25);
-                var21[1] = var25;
-                var19.children = var21;
-                var21 = var7.bind(var3)(var6, var19);
-                var19 = new Array(2);
-                var19[0] = var21;
-                var21 = {};
-                var25 = var5.messagePreview;
-                var21.style = var25;
-                var24 = var23[var24];
-                var24 = var18.bind(var3)(var24);
-                var25 = var24.Text;
-                var24 = {
+                var24.children = var27;
+                var24 = var19.bind(var4)(var26, var24);
+                var20[1] = var24;
+                var18.children = var20;
+                var20 = var10.bind(var4)(var8, var18);
+                var18 = new Array(2);
+                var18[0] = var20;
+                var20 = {};
+                var24 = var7.messagePreview;
+                var20.style = var24;
+                var23 = var22[var23];
+                var23 = var17.bind(var4)(var23);
+                var24 = var23.Text;
+                var23 = {
                     'variant': 'text-sm/normal',
                     'color': 'text-default',
                     'lineClamp': 2
                 };
-                var27 = var23[var26];
-                var27 = var18.bind(var3)(var27);
-                var28 = var27.intl;
-                var27 = var28.string;
-                var26 = var23[var26];
-                var26 = var18.bind(var3)(var26);
-                var26 = var26.t;
-                var26 = var26.d5YwK5;
-                var26 = var27.bind(var28)(var26);
-                var24.children = var26;
-                var24 = var20.bind(var3)(var25, var24);
-                var21.children = var24;
-                var21 = var20.bind(var3)(var6, var21);
-                var19[1] = var21;
-                var17.children = var19;
-                var17 = var7.bind(var3)(var6, var17);
-                var16[1] = var17;
-                var15.children = var16;
-                var16 = var7.bind(var3)(var6, var15);
-                var15 = new Array(2);
-                var15[0] = var16;
-                var16 = {};
-                var17 = var5.chatInput;
-                var16.style = var17;
-                var17 = 18;
-                var17 = var23[var17];
-                var17 = var18.bind(var3)(var17);
-                var18 = var17.CirclePlusIcon;
-                var17 = {};
-                var19 = 5;
-                var19 = var23[var19];
-                var19 = var22.bind(var3)(var19);
-                var19 = var19.colors;
-                var19 = var19.INTERACTIVE_TEXT_DEFAULT;
-                var17.color = var19;
-                var19 = var5.chatIcon;
-                var17.style = var19;
-                var18 = var20.bind(var3)(var18, var17);
-                var17 = new Array(2);
-                var17[0] = var18;
-                var18 = 19;
-                var18 = var23[var18];
-                var19 = var22.bind(var3)(var18);
-                var18 = {};
-                var21 = 20;
-                var21 = var23[var21];
-                var21 = var22.bind(var3)(var21);
-                var18.source = var21;
-                var21 = var5.chatIcon;
-                var18.style = var21;
-                var18 = var20.bind(var3)(var19, var18);
-                var17[1] = var18;
-                var16.children = var17;
-                var16 = var7.bind(var3)(var6, var16);
+                var26 = var22[var25];
+                var26 = var17.bind(var4)(var26);
+                var27 = var26.intl;
+                var26 = var27.string;
+                var25 = var22[var25];
+                var25 = var17.bind(var4)(var25);
+                var25 = var25.t;
+                var25 = var25.d5YwK5;
+                var25 = var26.bind(var27)(var25);
+                var23.children = var25;
+                var23 = var19.bind(var4)(var24, var23);
+                var20.children = var23;
+                var20 = var19.bind(var4)(var8, var20);
+                var18[1] = var20;
+                var16.children = var18;
+                var16 = var10.bind(var4)(var8, var16);
                 var15[1] = var16;
                 var14.children = var15;
-                var14 = var7.bind(var3)(var6, var14);
-                var9[1] = var14;
-                var4.children = var9;
-                var4 = var7.bind(var3)(var6, var4);
-                var0.children = var4;
-                _fun87107_ip = 1181;
-                continue _fun87107;
-            case 981:
-                var4 = {};
-                var5 = var5.fullSizePreview;
-                var4.style = var5;
-                var5 = 'box-none';
-                var4.pointerEvents = var5;
-                var6 = _closure1_slot0;
-                var14 = _closure1_slot2;
-                var5 = 12;
-                var7 = var14[var5];
-                var7 = var6.bind(var3)(var7);
-                var9 = var7.intl;
-                var7 = var9.formatToPlainString;
-                var5 = var14[var5];
-                var5 = var6.bind(var3)(var5);
-                var5 = var5.t;
-                var6 = var5.hORo2W;
-                var5 = {};
-                var14 = var11 == var13;
-                var11 = undefined;
-                if (var14) {
-                    _fun87107_ip = 1070;
-                    continue _fun87107
-                }
-            case 1065:
-                var11 = var13.name;
-            case 1070:
-                var5.avatarDecoration = var11;
-                var5 = var7.bind(var9)(var6, var5);
-                var4.accessibilityLabel = var5;
-                var5 = 'image';
-                var4.accessibilityRole = var5;
-                var7 = _closure1_slot5;
-                var6 = _closure1_slot1;
-                var11 = _closure1_slot2;
-                var9 = 13;
-                var5 = var11[var9];
-                var6 = var6.bind(var3)(var5);
-                var5 = {};
-                var5.user = var12;
-                var5.guildId = var3;
-                var10 = _closure1_slot0;
-                var9 = var11[var9];
-                var9 = var10.bind(var3)(var9);
-                var9 = var9.AvatarSizes;
-                var9 = var9.GIFT_START;
-                var5.size = var9;
-                var5.avatarDecoration = var8;
-                var8 = true;
-                var5.animate = var8;
-                var5 = var7.bind(var3)(var6, var5);
-                var4.children = var5;
-                var0 = var4;
-            case 1181:
-                var0 = var2.bind(var3)(var1, var0);
+                var15 = var10.bind(var4)(var8, var14);
+                var14 = new Array(2);
+                var14[0] = var15;
+                var15 = {};
+                var16 = var7.chatInput;
+                var15.style = var16;
+                var16 = 16;
+                var16 = var22[var16];
+                var16 = var17.bind(var4)(var16);
+                var17 = var16.CirclePlusIcon;
+                var16 = {};
+                var18 = 4;
+                var18 = var22[var18];
+                var18 = var21.bind(var4)(var18);
+                var18 = var18.colors;
+                var18 = var18.INTERACTIVE_TEXT_DEFAULT;
+                var16.color = var18;
+                var18 = var7.chatIcon;
+                var16.style = var18;
+                var17 = var19.bind(var4)(var17, var16);
+                var16 = new Array(2);
+                var16[0] = var17;
+                var17 = 17;
+                var17 = var22[var17];
+                var18 = var21.bind(var4)(var17);
+                var17 = {};
+                var20 = 18;
+                var20 = var22[var20];
+                var20 = var21.bind(var4)(var20);
+                var17.source = var20;
+                var20 = var7.chatIcon;
+                var17.style = var20;
+                var17 = var19.bind(var4)(var18, var17);
+                var16[1] = var17;
+                var15.children = var16;
+                var15 = var10.bind(var4)(var8, var15);
+                var14[1] = var15;
+                var12.children = var14;
+                var12 = var10.bind(var4)(var8, var12);
+                var11[1] = var12;
+                var1.children = var11;
+                var1 = var10.bind(var4)(var8, var1);
+                var5.children = var1;
+                var1 = var5;
+                _fun87466_ip = 1097;
+                continue _fun87466;
+            case 916:
+                var7 = var7.fullSizePreview;
+                var5.style = var7;
+                var7 = 'box-none';
+                var5.pointerEvents = var7;
+                var11 = _closure1_slot0;
+                var12 = _closure1_slot2;
+                var7 = 10;
+                var8 = var12[var7];
+                var8 = var11.bind(var4)(var8);
+                var14 = var8.intl;
+                var10 = var14.formatToPlainString;
+                var7 = var12[var7];
+                var7 = var11.bind(var4)(var7);
+                var7 = var7.t;
+                var8 = var7.Do2lxE;
+                var7 = {};
+                var15 = var9.label;
+                var7.a11y_text = var15;
+                var7 = var10.bind(var14)(var8, var7);
+                var5.accessibilityLabel = var7;
+                var7 = 'image';
+                var5.accessibilityRole = var7;
+                var8 = _closure1_slot4;
+                var7 = _closure1_slot1;
+                var10 = 11;
+                var6 = var12[var10];
+                var7 = var7.bind(var4)(var6);
+                var6 = {};
+                var6.user = var13;
+                var6.guildId = var4;
+                var10 = var12[var10];
+                var10 = var11.bind(var4)(var10);
+                var10 = var10.AvatarSizes;
+                var10 = var10.GIFT_START;
+                var6.size = var10;
+                var6.avatarDecoration = var9;
+                var9 = true;
+                var6.animate = var9;
+                var6 = var8.bind(var4)(var7, var6);
+                var5.children = var6;
+                var1 = var5;
+            case 1097:
+                var0 = var3.bind(var4)(var2, var1);
+            case 1103:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5547, 33, 1297, 671, 9446, 566, 5542, 11226, 4893, 3093, 1234, 5416, 6921, 5698, 11227, 3902, 10815, 4047, 7641, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 9478, 6876, 11301, 4923, 3123, 1234, 5447, 6952, 5729, 11302, 3932, 10891, 4077, 7672, 2]);

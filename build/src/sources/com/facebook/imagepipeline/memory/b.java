@@ -7,19 +7,19 @@ import o8.j;
 class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f11643a;
+    public final int f11272a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f11644b;
+    public final int f11273b;
 
     /* renamed from: c  reason: collision with root package name */
-    final Queue f11645c;
+    final Queue f11274c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f11646d;
+    private final boolean f11275d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f11647e;
+    private int f11276e;
 
     public b(int i10, int i11, int i12, boolean z10) {
         boolean z11;
@@ -37,72 +37,72 @@ class b {
         }
         j.i(z12);
         j.i(i12 >= 0);
-        this.f11643a = i10;
-        this.f11644b = i11;
-        this.f11645c = new LinkedList();
-        this.f11647e = i12;
-        this.f11646d = z10;
+        this.f11272a = i10;
+        this.f11273b = i11;
+        this.f11274c = new LinkedList();
+        this.f11276e = i12;
+        this.f11275d = z10;
     }
 
     void a(Object obj) {
-        this.f11645c.add(obj);
+        this.f11274c.add(obj);
     }
 
     public void b() {
         boolean z10;
-        if (this.f11647e > 0) {
+        if (this.f11276e > 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         j.i(z10);
-        this.f11647e--;
+        this.f11276e--;
     }
 
     public Object c() {
         Object g10 = g();
         if (g10 != null) {
-            this.f11647e++;
+            this.f11276e++;
         }
         return g10;
     }
 
     int d() {
-        return this.f11645c.size();
+        return this.f11274c.size();
     }
 
     public void e() {
-        this.f11647e++;
+        this.f11276e++;
     }
 
     public boolean f() {
-        if (this.f11647e + d() > this.f11644b) {
+        if (this.f11276e + d() > this.f11273b) {
             return true;
         }
         return false;
     }
 
     public Object g() {
-        return this.f11645c.poll();
+        return this.f11274c.poll();
     }
 
     public void h(Object obj) {
         boolean z10;
         j.g(obj);
-        if (this.f11646d) {
-            if (this.f11647e > 0) {
+        if (this.f11275d) {
+            if (this.f11276e > 0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             j.i(z10);
-            this.f11647e--;
+            this.f11276e--;
             a(obj);
             return;
         }
-        int i10 = this.f11647e;
+        int i10 = this.f11276e;
         if (i10 > 0) {
-            this.f11647e = i10 - 1;
+            this.f11276e = i10 - 1;
             a(obj);
             return;
         }

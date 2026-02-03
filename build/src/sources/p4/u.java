@@ -15,82 +15,82 @@ import org.webrtc.PeerConnection;
 public final class u {
 
     /* renamed from: x  reason: collision with root package name */
-    public static final a f44923x = new a(null);
+    public static final a f44997x = new a(null);
 
     /* renamed from: y  reason: collision with root package name */
-    private static final String f44924y;
+    private static final String f44998y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final Function f44925z;
+    public static final Function f44999z;
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f44926a;
+    public final String f45000a;
 
     /* renamed from: b  reason: collision with root package name */
-    public k4.x f44927b;
+    public k4.x f45001b;
 
     /* renamed from: c  reason: collision with root package name */
-    public String f44928c;
+    public String f45002c;
 
     /* renamed from: d  reason: collision with root package name */
-    public String f44929d;
+    public String f45003d;
 
     /* renamed from: e  reason: collision with root package name */
-    public androidx.work.b f44930e;
+    public androidx.work.b f45004e;
 
     /* renamed from: f  reason: collision with root package name */
-    public androidx.work.b f44931f;
+    public androidx.work.b f45005f;
 
     /* renamed from: g  reason: collision with root package name */
-    public long f44932g;
+    public long f45006g;
 
     /* renamed from: h  reason: collision with root package name */
-    public long f44933h;
+    public long f45007h;
 
     /* renamed from: i  reason: collision with root package name */
-    public long f44934i;
+    public long f45008i;
 
     /* renamed from: j  reason: collision with root package name */
-    public k4.d f44935j;
+    public k4.d f45009j;
 
     /* renamed from: k  reason: collision with root package name */
-    public int f44936k;
+    public int f45010k;
 
     /* renamed from: l  reason: collision with root package name */
-    public k4.a f44937l;
+    public k4.a f45011l;
 
     /* renamed from: m  reason: collision with root package name */
-    public long f44938m;
+    public long f45012m;
 
     /* renamed from: n  reason: collision with root package name */
-    public long f44939n;
+    public long f45013n;
 
     /* renamed from: o  reason: collision with root package name */
-    public long f44940o;
+    public long f45014o;
 
     /* renamed from: p  reason: collision with root package name */
-    public long f44941p;
+    public long f45015p;
 
     /* renamed from: q  reason: collision with root package name */
-    public boolean f44942q;
+    public boolean f45016q;
 
     /* renamed from: r  reason: collision with root package name */
-    public k4.r f44943r;
+    public k4.r f45017r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f44944s;
+    private int f45018s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final int f44945t;
+    private final int f45019t;
 
     /* renamed from: u  reason: collision with root package name */
-    private long f44946u;
+    private long f45020u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f44947v;
+    private int f45021v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final int f44948w;
+    private final int f45022w;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -139,16 +139,16 @@ public final class u {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public String f44949a;
+        public String f45023a;
 
         /* renamed from: b  reason: collision with root package name */
-        public k4.x f44950b;
+        public k4.x f45024b;
 
         public b(String id2, k4.x state) {
             Intrinsics.checkNotNullParameter(id2, "id");
             Intrinsics.checkNotNullParameter(state, "state");
-            this.f44949a = id2;
-            this.f44950b = state;
+            this.f45023a = id2;
+            this.f45024b = state;
         }
 
         public boolean equals(Object obj) {
@@ -159,26 +159,26 @@ public final class u {
                 return false;
             }
             b bVar = (b) obj;
-            if (Intrinsics.areEqual(this.f44949a, bVar.f44949a) && this.f44950b == bVar.f44950b) {
+            if (Intrinsics.areEqual(this.f45023a, bVar.f45023a) && this.f45024b == bVar.f45024b) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f44949a.hashCode() * 31) + this.f44950b.hashCode();
+            return (this.f45023a.hashCode() * 31) + this.f45024b.hashCode();
         }
 
         public String toString() {
-            return "IdAndState(id=" + this.f44949a + ", state=" + this.f44950b + ')';
+            return "IdAndState(id=" + this.f45023a + ", state=" + this.f45024b + ')';
         }
     }
 
     static {
         String i10 = k4.m.i("WorkSpec");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"WorkSpec\")");
-        f44924y = i10;
-        f44925z = new Function() { // from class: p4.t
+        f44998y = i10;
+        f44999z = new Function() { // from class: p4.t
             @Override // androidx.arch.core.util.Function
             public final Object apply(Object obj) {
                 List b10;
@@ -198,29 +198,29 @@ public final class u {
         Intrinsics.checkNotNullParameter(constraints, "constraints");
         Intrinsics.checkNotNullParameter(backoffPolicy, "backoffPolicy");
         Intrinsics.checkNotNullParameter(outOfQuotaPolicy, "outOfQuotaPolicy");
-        this.f44926a = id2;
-        this.f44927b = state;
-        this.f44928c = workerClassName;
-        this.f44929d = inputMergerClassName;
-        this.f44930e = input;
-        this.f44931f = output;
-        this.f44932g = j10;
-        this.f44933h = j11;
-        this.f44934i = j12;
-        this.f44935j = constraints;
-        this.f44936k = i10;
-        this.f44937l = backoffPolicy;
-        this.f44938m = j13;
-        this.f44939n = j14;
-        this.f44940o = j15;
-        this.f44941p = j16;
-        this.f44942q = z10;
-        this.f44943r = outOfQuotaPolicy;
-        this.f44944s = i11;
-        this.f44945t = i12;
-        this.f44946u = j17;
-        this.f44947v = i13;
-        this.f44948w = i14;
+        this.f45000a = id2;
+        this.f45001b = state;
+        this.f45002c = workerClassName;
+        this.f45003d = inputMergerClassName;
+        this.f45004e = input;
+        this.f45005f = output;
+        this.f45006g = j10;
+        this.f45007h = j11;
+        this.f45008i = j12;
+        this.f45009j = constraints;
+        this.f45010k = i10;
+        this.f45011l = backoffPolicy;
+        this.f45012m = j13;
+        this.f45013n = j14;
+        this.f45014o = j15;
+        this.f45015p = j16;
+        this.f45016q = z10;
+        this.f45017r = outOfQuotaPolicy;
+        this.f45018s = i11;
+        this.f45019t = i12;
+        this.f45020u = j17;
+        this.f45021v = i13;
+        this.f45022w = i14;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -239,29 +239,29 @@ public final class u {
     }
 
     public static /* synthetic */ u e(u uVar, String str, k4.x xVar, String str2, String str3, androidx.work.b bVar, androidx.work.b bVar2, long j10, long j11, long j12, k4.d dVar, int i10, k4.a aVar, long j13, long j14, long j15, long j16, boolean z10, k4.r rVar, int i11, int i12, long j17, int i13, int i14, int i15, Object obj) {
-        String str4 = (i15 & 1) != 0 ? uVar.f44926a : str;
-        k4.x xVar2 = (i15 & 2) != 0 ? uVar.f44927b : xVar;
-        String str5 = (i15 & 4) != 0 ? uVar.f44928c : str2;
-        String str6 = (i15 & 8) != 0 ? uVar.f44929d : str3;
-        androidx.work.b bVar3 = (i15 & 16) != 0 ? uVar.f44930e : bVar;
-        androidx.work.b bVar4 = (i15 & 32) != 0 ? uVar.f44931f : bVar2;
-        long j18 = (i15 & 64) != 0 ? uVar.f44932g : j10;
-        long j19 = (i15 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? uVar.f44933h : j11;
-        long j20 = (i15 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? uVar.f44934i : j12;
-        k4.d dVar2 = (i15 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? uVar.f44935j : dVar;
-        int i16 = (i15 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? uVar.f44936k : i10;
+        String str4 = (i15 & 1) != 0 ? uVar.f45000a : str;
+        k4.x xVar2 = (i15 & 2) != 0 ? uVar.f45001b : xVar;
+        String str5 = (i15 & 4) != 0 ? uVar.f45002c : str2;
+        String str6 = (i15 & 8) != 0 ? uVar.f45003d : str3;
+        androidx.work.b bVar3 = (i15 & 16) != 0 ? uVar.f45004e : bVar;
+        androidx.work.b bVar4 = (i15 & 32) != 0 ? uVar.f45005f : bVar2;
+        long j18 = (i15 & 64) != 0 ? uVar.f45006g : j10;
+        long j19 = (i15 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? uVar.f45007h : j11;
+        long j20 = (i15 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? uVar.f45008i : j12;
+        k4.d dVar2 = (i15 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? uVar.f45009j : dVar;
+        int i16 = (i15 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? uVar.f45010k : i10;
         String str7 = str4;
-        k4.a aVar2 = (i15 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? uVar.f44937l : aVar;
+        k4.a aVar2 = (i15 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? uVar.f45011l : aVar;
         k4.x xVar3 = xVar2;
-        long j21 = (i15 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? uVar.f44938m : j13;
-        long j22 = (i15 & 8192) != 0 ? uVar.f44939n : j14;
-        long j23 = (i15 & 16384) != 0 ? uVar.f44940o : j15;
-        long j24 = (i15 & PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS) != 0 ? uVar.f44941p : j16;
-        return uVar.d(str7, xVar3, str5, str6, bVar3, bVar4, j18, j19, j20, dVar2, i16, aVar2, j21, j22, j23, j24, (i15 & 65536) != 0 ? uVar.f44942q : z10, (i15 & 131072) != 0 ? uVar.f44943r : rVar, (i15 & 262144) != 0 ? uVar.f44944s : i11, (i15 & 524288) != 0 ? uVar.f44945t : i12, (i15 & 1048576) != 0 ? uVar.f44946u : j17, (i15 & 2097152) != 0 ? uVar.f44947v : i13, (i15 & 4194304) != 0 ? uVar.f44948w : i14);
+        long j21 = (i15 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? uVar.f45012m : j13;
+        long j22 = (i15 & 8192) != 0 ? uVar.f45013n : j14;
+        long j23 = (i15 & 16384) != 0 ? uVar.f45014o : j15;
+        long j24 = (i15 & PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS) != 0 ? uVar.f45015p : j16;
+        return uVar.d(str7, xVar3, str5, str6, bVar3, bVar4, j18, j19, j20, dVar2, i16, aVar2, j21, j22, j23, j24, (i15 & 65536) != 0 ? uVar.f45016q : z10, (i15 & 131072) != 0 ? uVar.f45017r : rVar, (i15 & 262144) != 0 ? uVar.f45018s : i11, (i15 & 524288) != 0 ? uVar.f45019t : i12, (i15 & 1048576) != 0 ? uVar.f45020u : j17, (i15 & 2097152) != 0 ? uVar.f45021v : i13, (i15 & 4194304) != 0 ? uVar.f45022w : i14);
     }
 
     public final long c() {
-        return f44923x.a(l(), this.f44936k, this.f44937l, this.f44938m, this.f44939n, this.f44944s, m(), this.f44932g, this.f44934i, this.f44933h, this.f44946u);
+        return f44997x.a(l(), this.f45010k, this.f45011l, this.f45012m, this.f45013n, this.f45018s, m(), this.f45006g, this.f45008i, this.f45007h, this.f45020u);
     }
 
     public final u d(String id2, k4.x state, String workerClassName, String inputMergerClassName, androidx.work.b input, androidx.work.b output, long j10, long j11, long j12, k4.d constraints, int i10, k4.a backoffPolicy, long j13, long j14, long j15, long j16, boolean z10, k4.r outOfQuotaPolicy, int i11, int i12, long j17, int i13, int i14) {
@@ -285,63 +285,63 @@ public final class u {
             return false;
         }
         u uVar = (u) obj;
-        if (Intrinsics.areEqual(this.f44926a, uVar.f44926a) && this.f44927b == uVar.f44927b && Intrinsics.areEqual(this.f44928c, uVar.f44928c) && Intrinsics.areEqual(this.f44929d, uVar.f44929d) && Intrinsics.areEqual(this.f44930e, uVar.f44930e) && Intrinsics.areEqual(this.f44931f, uVar.f44931f) && this.f44932g == uVar.f44932g && this.f44933h == uVar.f44933h && this.f44934i == uVar.f44934i && Intrinsics.areEqual(this.f44935j, uVar.f44935j) && this.f44936k == uVar.f44936k && this.f44937l == uVar.f44937l && this.f44938m == uVar.f44938m && this.f44939n == uVar.f44939n && this.f44940o == uVar.f44940o && this.f44941p == uVar.f44941p && this.f44942q == uVar.f44942q && this.f44943r == uVar.f44943r && this.f44944s == uVar.f44944s && this.f44945t == uVar.f44945t && this.f44946u == uVar.f44946u && this.f44947v == uVar.f44947v && this.f44948w == uVar.f44948w) {
+        if (Intrinsics.areEqual(this.f45000a, uVar.f45000a) && this.f45001b == uVar.f45001b && Intrinsics.areEqual(this.f45002c, uVar.f45002c) && Intrinsics.areEqual(this.f45003d, uVar.f45003d) && Intrinsics.areEqual(this.f45004e, uVar.f45004e) && Intrinsics.areEqual(this.f45005f, uVar.f45005f) && this.f45006g == uVar.f45006g && this.f45007h == uVar.f45007h && this.f45008i == uVar.f45008i && Intrinsics.areEqual(this.f45009j, uVar.f45009j) && this.f45010k == uVar.f45010k && this.f45011l == uVar.f45011l && this.f45012m == uVar.f45012m && this.f45013n == uVar.f45013n && this.f45014o == uVar.f45014o && this.f45015p == uVar.f45015p && this.f45016q == uVar.f45016q && this.f45017r == uVar.f45017r && this.f45018s == uVar.f45018s && this.f45019t == uVar.f45019t && this.f45020u == uVar.f45020u && this.f45021v == uVar.f45021v && this.f45022w == uVar.f45022w) {
             return true;
         }
         return false;
     }
 
     public final int f() {
-        return this.f44945t;
+        return this.f45019t;
     }
 
     public final long g() {
-        return this.f44946u;
+        return this.f45020u;
     }
 
     public final int h() {
-        return this.f44947v;
+        return this.f45021v;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     public int hashCode() {
-        int hashCode = ((((((((((((((((((((((((((((((this.f44926a.hashCode() * 31) + this.f44927b.hashCode()) * 31) + this.f44928c.hashCode()) * 31) + this.f44929d.hashCode()) * 31) + this.f44930e.hashCode()) * 31) + this.f44931f.hashCode()) * 31) + Long.hashCode(this.f44932g)) * 31) + Long.hashCode(this.f44933h)) * 31) + Long.hashCode(this.f44934i)) * 31) + this.f44935j.hashCode()) * 31) + Integer.hashCode(this.f44936k)) * 31) + this.f44937l.hashCode()) * 31) + Long.hashCode(this.f44938m)) * 31) + Long.hashCode(this.f44939n)) * 31) + Long.hashCode(this.f44940o)) * 31) + Long.hashCode(this.f44941p)) * 31;
-        boolean z10 = this.f44942q;
+        int hashCode = ((((((((((((((((((((((((((((((this.f45000a.hashCode() * 31) + this.f45001b.hashCode()) * 31) + this.f45002c.hashCode()) * 31) + this.f45003d.hashCode()) * 31) + this.f45004e.hashCode()) * 31) + this.f45005f.hashCode()) * 31) + Long.hashCode(this.f45006g)) * 31) + Long.hashCode(this.f45007h)) * 31) + Long.hashCode(this.f45008i)) * 31) + this.f45009j.hashCode()) * 31) + Integer.hashCode(this.f45010k)) * 31) + this.f45011l.hashCode()) * 31) + Long.hashCode(this.f45012m)) * 31) + Long.hashCode(this.f45013n)) * 31) + Long.hashCode(this.f45014o)) * 31) + Long.hashCode(this.f45015p)) * 31;
+        boolean z10 = this.f45016q;
         int i10 = z10;
         if (z10 != 0) {
             i10 = 1;
         }
-        return ((((((((((((hashCode + i10) * 31) + this.f44943r.hashCode()) * 31) + Integer.hashCode(this.f44944s)) * 31) + Integer.hashCode(this.f44945t)) * 31) + Long.hashCode(this.f44946u)) * 31) + Integer.hashCode(this.f44947v)) * 31) + Integer.hashCode(this.f44948w);
+        return ((((((((((((hashCode + i10) * 31) + this.f45017r.hashCode()) * 31) + Integer.hashCode(this.f45018s)) * 31) + Integer.hashCode(this.f45019t)) * 31) + Long.hashCode(this.f45020u)) * 31) + Integer.hashCode(this.f45021v)) * 31) + Integer.hashCode(this.f45022w);
     }
 
     public final int i() {
-        return this.f44944s;
+        return this.f45018s;
     }
 
     public final int j() {
-        return this.f44948w;
+        return this.f45022w;
     }
 
     public final boolean k() {
-        return !Intrinsics.areEqual(k4.d.f32964j, this.f44935j);
+        return !Intrinsics.areEqual(k4.d.f32710j, this.f45009j);
     }
 
     public final boolean l() {
-        if (this.f44927b == k4.x.ENQUEUED && this.f44936k > 0) {
+        if (this.f45001b == k4.x.ENQUEUED && this.f45010k > 0) {
             return true;
         }
         return false;
     }
 
     public final boolean m() {
-        if (this.f44933h != 0) {
+        if (this.f45007h != 0) {
             return true;
         }
         return false;
     }
 
     public String toString() {
-        return "{WorkSpec: " + this.f44926a + '}';
+        return "{WorkSpec: " + this.f45000a + '}';
     }
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -366,7 +366,7 @@ public final class u {
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public u(String newId, u other) {
-        this(newId, other.f44927b, other.f44928c, other.f44929d, new androidx.work.b(other.f44930e), new androidx.work.b(other.f44931f), other.f44932g, other.f44933h, other.f44934i, new k4.d(other.f44935j), other.f44936k, other.f44937l, other.f44938m, other.f44939n, other.f44940o, other.f44941p, other.f44942q, other.f44943r, other.f44944s, 0, other.f44946u, other.f44947v, other.f44948w, 524288, null);
+        this(newId, other.f45001b, other.f45002c, other.f45003d, new androidx.work.b(other.f45004e), new androidx.work.b(other.f45005f), other.f45006g, other.f45007h, other.f45008i, new k4.d(other.f45009j), other.f45010k, other.f45011l, other.f45012m, other.f45013n, other.f45014o, other.f45015p, other.f45016q, other.f45017r, other.f45018s, 0, other.f45020u, other.f45021v, other.f45022w, 524288, null);
         Intrinsics.checkNotNullParameter(newId, "newId");
         Intrinsics.checkNotNullParameter(other, "other");
     }

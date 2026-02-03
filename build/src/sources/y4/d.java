@@ -1,7 +1,7 @@
 package y4;
 
-import iu.j;
 import java.io.IOException;
+import ju.j;
 import kotlin.jvm.functions.Function1;
 import okio.Buffer;
 import okio.Sink;
@@ -9,47 +9,47 @@ import okio.Sink;
 public final class d extends j {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function1 f54000e;
+    private final Function1 f53975e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f54001i;
+    private boolean f53976i;
 
     public d(Sink sink, Function1 function1) {
         super(sink);
-        this.f54000e = function1;
+        this.f53975e = function1;
     }
 
-    @Override // iu.j, okio.Sink, java.io.Closeable, java.lang.AutoCloseable
+    @Override // ju.j, okio.Sink, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
         try {
             super.close();
         } catch (IOException e10) {
-            this.f54001i = true;
-            this.f54000e.invoke(e10);
+            this.f53976i = true;
+            this.f53975e.invoke(e10);
         }
     }
 
-    @Override // iu.j, okio.Sink, java.io.Flushable
+    @Override // ju.j, okio.Sink, java.io.Flushable
     public void flush() {
         try {
             super.flush();
         } catch (IOException e10) {
-            this.f54001i = true;
-            this.f54000e.invoke(e10);
+            this.f53976i = true;
+            this.f53975e.invoke(e10);
         }
     }
 
-    @Override // iu.j, okio.Sink
-    public void t0(Buffer buffer, long j10) {
-        if (this.f54001i) {
+    @Override // ju.j, okio.Sink
+    public void v0(Buffer buffer, long j10) {
+        if (this.f53976i) {
             buffer.skip(j10);
             return;
         }
         try {
-            super.t0(buffer, j10);
+            super.v0(buffer, j10);
         } catch (IOException e10) {
-            this.f54001i = true;
-            this.f54000e.invoke(e10);
+            this.f53976i = true;
+            this.f53975e.invoke(e10);
         }
     }
 }

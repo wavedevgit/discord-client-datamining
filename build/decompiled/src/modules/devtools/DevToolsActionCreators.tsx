@@ -84,4 +84,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.clearAnalyticsLog = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11014, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5257, 806, 2]);

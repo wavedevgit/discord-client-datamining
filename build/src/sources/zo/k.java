@@ -1,335 +1,240 @@
 package zo;
 
-import android.content.Context;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.TextView;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.ButtonCancelComponentStyle;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.ButtonSubmitComponentStyle;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyle;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.TextBasedComponentStyle;
-import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function3;
-import kotlin.jvm.internal.FunctionReferenceImpl;
+import android.net.Uri;
+import android.os.Parcel;
+import android.os.Parcelable;
+import kotlin.enums.EnumEntries;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Reflection;
-import vm.k;
-import zo.k;
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class k implements vm.b {
-
-    /* renamed from: d  reason: collision with root package name */
-    private final String f55950d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final String f55951e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private final String f55952i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private final StepStyle f55953o;
-
-    /* renamed from: p  reason: collision with root package name */
-    private final Function0 f55954p;
-
-    /* renamed from: q  reason: collision with root package name */
-    private final String f55955q;
-
-    /* renamed from: r  reason: collision with root package name */
-    private final Function0 f55956r;
-
-    /* renamed from: s  reason: collision with root package name */
-    private final vm.c0 f55957s;
+public abstract class k implements Parcelable {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements View.OnAttachStateChangeListener {
+    public static final class a extends k {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ BottomSheetBehavior f55958d;
+        public static final a f55957d = new a();
+        @NotNull
+        public static final Parcelable.Creator<a> CREATOR = new C0793a();
 
-        a(BottomSheetBehavior bottomSheetBehavior) {
-            this.f55958d = bottomSheetBehavior;
+        /* renamed from: zo.k$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0793a implements Parcelable.Creator {
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: a */
+            public final a createFromParcel(Parcel parcel) {
+                Intrinsics.checkNotNullParameter(parcel, "parcel");
+                parcel.readInt();
+                return a.f55957d;
+            }
+
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: b */
+            public final a[] newArray(int i10) {
+                return new a[i10];
+            }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
-        public static final void b(BottomSheetBehavior bottomSheetBehavior) {
-            bottomSheetBehavior.Y0(3);
+        private a() {
+            super(null);
         }
 
-        @Override // android.view.View.OnAttachStateChangeListener
-        public void onViewAttachedToWindow(View view) {
-            Intrinsics.checkNotNullParameter(view, "view");
-            final BottomSheetBehavior bottomSheetBehavior = this.f55958d;
-            view.postDelayed(new Runnable() { // from class: zo.j
-                @Override // java.lang.Runnable
-                public final void run() {
-                    k.a.b(BottomSheetBehavior.this);
-                }
-            }, 100L);
+        @Override // android.os.Parcelable
+        public final int describeContents() {
+            return 0;
         }
 
-        @Override // android.view.View.OnAttachStateChangeListener
-        public void onViewDetachedFromWindow(View view) {
-            Intrinsics.checkNotNullParameter(view, "view");
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof a)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return -869674698;
+        }
+
+        public String toString() {
+            return "Cancel";
+        }
+
+        @Override // android.os.Parcelable
+        public final void writeToParcel(Parcel dest, int i10) {
+            Intrinsics.checkNotNullParameter(dest, "dest");
+            dest.writeInt(1);
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    /* synthetic */ class b extends FunctionReferenceImpl implements Function3 {
+    public static final class b extends k {
+        @NotNull
+        public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f55959d = new b();
+        private final String f55958d;
 
-        b() {
-            super(3, ap.b.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/permissions/databinding/Pi2RequestPermissionRationaleBinding;", 0);
-        }
+        /* renamed from: e  reason: collision with root package name */
+        private final c f55959e;
 
-        public final ap.b a(LayoutInflater p02, ViewGroup viewGroup, boolean z10) {
-            Intrinsics.checkNotNullParameter(p02, "p0");
-            return ap.b.c(p02, viewGroup, z10);
-        }
-
-        @Override // kotlin.jvm.functions.Function3
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
-            return a((LayoutInflater) obj, (ViewGroup) obj2, ((Boolean) obj3).booleanValue());
-        }
-    }
-
-    public k(String titleText, String messageText, String positiveButtonText, StepStyle stepStyle, Function0 onPositiveButtonClick, String negativeButtonText, Function0 onNegativeButtonClick) {
-        Intrinsics.checkNotNullParameter(titleText, "titleText");
-        Intrinsics.checkNotNullParameter(messageText, "messageText");
-        Intrinsics.checkNotNullParameter(positiveButtonText, "positiveButtonText");
-        Intrinsics.checkNotNullParameter(onPositiveButtonClick, "onPositiveButtonClick");
-        Intrinsics.checkNotNullParameter(negativeButtonText, "negativeButtonText");
-        Intrinsics.checkNotNullParameter(onNegativeButtonClick, "onNegativeButtonClick");
-        this.f55950d = titleText;
-        this.f55951e = messageText;
-        this.f55952i = positiveButtonText;
-        this.f55953o = stepStyle;
-        this.f55954p = onPositiveButtonClick;
-        this.f55955q = negativeButtonText;
-        this.f55956r = onNegativeButtonClick;
-        k.a aVar = vm.k.f51283a;
-        this.f55957s = new vm.z(Reflection.getOrCreateKotlinClass(k.class), b.f55959d, new Function1() { // from class: zo.a
-            @Override // kotlin.jvm.functions.Function1
-            public final Object invoke(Object obj) {
-                vm.k u10;
-                u10 = k.u(k.this, (ap.b) obj);
-                return u10;
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class a implements Parcelable.Creator {
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: a */
+            public final b createFromParcel(Parcel parcel) {
+                Intrinsics.checkNotNullParameter(parcel, "parcel");
+                return new b(parcel.readString(), c.valueOf(parcel.readString()));
             }
-        });
-    }
 
-    private final void k(StepStyle stepStyle, ap.b bVar, boolean z10) {
-        ButtonCancelComponentStyle buttonSecondaryStyleValue;
-        ButtonSubmitComponentStyle buttonPrimaryStyleValue;
-        TextBasedComponentStyle textStyleValue;
-        TextBasedComponentStyle titleStyleValue;
-        FrameLayout bottomSheet = bVar.f6577b;
-        Intrinsics.checkNotNullExpressionValue(bottomSheet, "bottomSheet");
-        ConstraintLayout bottomSheetContent = bVar.f6578c;
-        Intrinsics.checkNotNullExpressionValue(bottomSheetContent, "bottomSheetContent");
-        cq.c.c(bottomSheet, stepStyle, bottomSheetContent, null, 4, null);
-        if (stepStyle != null && (titleStyleValue = stepStyle.getTitleStyleValue()) != null) {
-            TextView title = bVar.f6584i;
-            Intrinsics.checkNotNullExpressionValue(title, "title");
-            cq.f0.n(title, titleStyleValue, null, 2, null);
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: b */
+            public final b[] newArray(int i10) {
+                return new b[i10];
+            }
         }
-        if (stepStyle != null && (textStyleValue = stepStyle.getTextStyleValue()) != null) {
-            TextView message = bVar.f6580e;
-            Intrinsics.checkNotNullExpressionValue(message, "message");
-            cq.f0.n(message, textStyleValue, null, 2, null);
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public b(String str, c cause) {
+            super(null);
+            Intrinsics.checkNotNullParameter(cause, "cause");
+            this.f55958d = str;
+            this.f55959e = cause;
         }
-        if (stepStyle != null && (buttonPrimaryStyleValue = stepStyle.getButtonPrimaryStyleValue()) != null) {
-            Button positiveButton = bVar.f6582g;
-            Intrinsics.checkNotNullExpressionValue(positiveButton, "positiveButton");
-            cq.e.f(positiveButton, buttonPrimaryStyleValue, false, !z10, 2, null);
+
+        @Override // android.os.Parcelable
+        public final int describeContents() {
+            return 0;
         }
-        if (stepStyle != null && (buttonSecondaryStyleValue = stepStyle.getButtonSecondaryStyleValue()) != null) {
-            Button negativeButton = bVar.f6581f;
-            Intrinsics.checkNotNullExpressionValue(negativeButton, "negativeButton");
-            cq.e.f(negativeButton, buttonSecondaryStyleValue, false, !z10, 2, null);
+
+        @Override // android.os.Parcelable
+        public final void writeToParcel(Parcel dest, int i10) {
+            Intrinsics.checkNotNullParameter(dest, "dest");
+            dest.writeString(this.f55958d);
+            dest.writeString(this.f55959e.name());
         }
     }
 
-    private final void l(ap.b bVar) {
-        int d10;
-        Integer backgroundColorValue;
-        final BottomSheetBehavior q02 = BottomSheetBehavior.q0(bVar.f6577b);
-        Intrinsics.checkNotNullExpressionValue(q02, "from(...)");
-        Function0 function0 = new Function0() { // from class: zo.g
-            @Override // kotlin.jvm.functions.Function0
-            public final Object invoke() {
-                Unit m10;
-                m10 = k.m(k.this);
-                return m10;
-            }
-        };
-        FrameLayout bottomSheet = bVar.f6577b;
-        Intrinsics.checkNotNullExpressionValue(bottomSheet, "bottomSheet");
-        tp.b.b(q02, function0, bottomSheet, null, bVar.f6583h);
-        bVar.getRoot().addOnAttachStateChangeListener(new a(q02));
-        bVar.f6577b.setOnClickListener(new View.OnClickListener() { // from class: zo.h
-            @Override // android.view.View.OnClickListener
-            public final void onClick(View view) {
-                k.n(view);
-            }
-        });
-        bVar.f6583h.setOnClickListener(new View.OnClickListener() { // from class: zo.i
-            @Override // android.view.View.OnClickListener
-            public final void onClick(View view) {
-                k.o(BottomSheetBehavior.this, view);
-            }
-        });
-        StepStyle stepStyle = this.f55953o;
-        if (stepStyle != null && (backgroundColorValue = stepStyle.getBackgroundColorValue()) != null) {
-            d10 = backgroundColorValue.intValue();
-        } else {
-            Context context = bVar.getRoot().getContext();
-            Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-            d10 = jp.s.d(context, yg.b.f54370o, null, false, 6, null);
+    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final c f55960d = new c("AuthenticationError", 0);
+
+        /* renamed from: e  reason: collision with root package name */
+        public static final c f55961e = new c("Unknown", 1);
+
+        /* renamed from: i  reason: collision with root package name */
+        private static final /* synthetic */ c[] f55962i;
+
+        /* renamed from: o  reason: collision with root package name */
+        private static final /* synthetic */ EnumEntries f55963o;
+
+        static {
+            c[] a10 = a();
+            f55962i = a10;
+            f55963o = qr.a.a(a10);
         }
-        bVar.getRoot().setTag(wo.g.f52752a, Integer.valueOf(d10));
-    }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit m(k kVar) {
-        kVar.f55956r.invoke();
-        return Unit.f33298a;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void o(BottomSheetBehavior bottomSheetBehavior, View view) {
-        bottomSheetBehavior.Y0(5);
-    }
-
-    private final void p(final ap.b bVar, final k kVar, vm.a0 a0Var) {
-        if (this.f55950d.length() > 0) {
-            TextView title = bVar.f6584i;
-            Intrinsics.checkNotNullExpressionValue(title, "title");
-            yp.f.d(title, this.f55950d);
-        } else {
-            bVar.f6584i.setVisibility(8);
+        private c(String str, int i10) {
         }
-        TextView message = bVar.f6580e;
-        Intrinsics.checkNotNullExpressionValue(message, "message");
-        yp.f.d(message, this.f55951e);
-        bVar.f6582g.setText(kVar.f55952i);
-        bVar.f6582g.setOnClickListener(new View.OnClickListener() { // from class: zo.c
-            @Override // android.view.View.OnClickListener
-            public final void onClick(View view) {
-                k.r(k.this, view);
-            }
-        });
-        bVar.f6581f.setText(kVar.f55955q);
-        bVar.f6581f.setOnClickListener(new View.OnClickListener() { // from class: zo.d
-            @Override // android.view.View.OnClickListener
-            public final void onClick(View view) {
-                k.s(k.this, view);
-            }
-        });
-        FrameLayout bottomSheet = bVar.f6577b;
-        Intrinsics.checkNotNullExpressionValue(bottomSheet, "bottomSheet");
-        vm.e.c(bottomSheet, new Function0() { // from class: zo.e
-            @Override // kotlin.jvm.functions.Function0
-            public final Object invoke() {
-                Unit t10;
-                t10 = k.t(k.this);
-                return t10;
-            }
-        });
-        Button negativeButton = bVar.f6581f;
-        Intrinsics.checkNotNullExpressionValue(negativeButton, "negativeButton");
-        tp.s.b(negativeButton, new Function0() { // from class: zo.f
-            @Override // kotlin.jvm.functions.Function0
-            public final Object invoke() {
-                Unit q10;
-                q10 = k.q(ap.b.this, this);
-                return q10;
-            }
-        });
+
+        private static final /* synthetic */ c[] a() {
+            return new c[]{f55960d, f55961e};
+        }
+
+        public static c valueOf(String str) {
+            return (c) Enum.valueOf(c.class, str);
+        }
+
+        public static c[] values() {
+            return (c[]) f55962i.clone();
+        }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit q(ap.b bVar, k kVar) {
-        boolean z10 = true;
-        if (bVar.f6581f.getLineCount() <= 1 && bVar.f6582g.getLineCount() <= 1) {
-            z10 = false;
-        } else {
-            Button negativeButton = bVar.f6581f;
-            Intrinsics.checkNotNullExpressionValue(negativeButton, "negativeButton");
-            ViewGroup.LayoutParams layoutParams = negativeButton.getLayoutParams();
-            if (layoutParams != null) {
-                layoutParams.width = bVar.f6579d.getWidth();
-                negativeButton.setLayoutParams(layoutParams);
-                Button positiveButton = bVar.f6582g;
-                Intrinsics.checkNotNullExpressionValue(positiveButton, "positiveButton");
-                ViewGroup.LayoutParams layoutParams2 = positiveButton.getLayoutParams();
-                if (layoutParams2 != null) {
-                    layoutParams2.width = bVar.f6579d.getWidth();
-                    positiveButton.setLayoutParams(layoutParams2);
-                    bVar.f6579d.setReferencedIds(new int[]{bVar.f6582g.getId(), bVar.f6581f.getId()});
-                } else {
-                    throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
-                }
-            } else {
-                throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class d extends k {
+        @NotNull
+        public static final Parcelable.Creator<d> CREATOR = new a();
+
+        /* renamed from: d  reason: collision with root package name */
+        private final Uri f55964d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private final Uri f55965e;
+
+        /* renamed from: i  reason: collision with root package name */
+        private final Uri f55966i;
+
+        /* renamed from: o  reason: collision with root package name */
+        private final zo.a f55967o;
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class a implements Parcelable.Creator {
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: a */
+            public final d createFromParcel(Parcel parcel) {
+                Intrinsics.checkNotNullParameter(parcel, "parcel");
+                return new d((Uri) parcel.readParcelable(d.class.getClassLoader()), (Uri) parcel.readParcelable(d.class.getClassLoader()), (Uri) parcel.readParcelable(d.class.getClassLoader()), zo.a.valueOf(parcel.readString()));
+            }
+
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: b */
+            public final d[] newArray(int i10) {
+                return new d[i10];
             }
         }
-        kVar.k(kVar.f55953o, bVar, z10);
-        return Unit.f33298a;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public d(Uri dg1Uri, Uri dg2Uri, Uri sodUri, zo.a chipAuthenticationStatus) {
+            super(null);
+            Intrinsics.checkNotNullParameter(dg1Uri, "dg1Uri");
+            Intrinsics.checkNotNullParameter(dg2Uri, "dg2Uri");
+            Intrinsics.checkNotNullParameter(sodUri, "sodUri");
+            Intrinsics.checkNotNullParameter(chipAuthenticationStatus, "chipAuthenticationStatus");
+            this.f55964d = dg1Uri;
+            this.f55965e = dg2Uri;
+            this.f55966i = sodUri;
+            this.f55967o = chipAuthenticationStatus;
+        }
+
+        public final zo.a a() {
+            return this.f55967o;
+        }
+
+        public final Uri b() {
+            return this.f55964d;
+        }
+
+        public final Uri c() {
+            return this.f55965e;
+        }
+
+        public final Uri d() {
+            return this.f55966i;
+        }
+
+        @Override // android.os.Parcelable
+        public final int describeContents() {
+            return 0;
+        }
+
+        @Override // android.os.Parcelable
+        public final void writeToParcel(Parcel dest, int i10) {
+            Intrinsics.checkNotNullParameter(dest, "dest");
+            dest.writeParcelable(this.f55964d, i10);
+            dest.writeParcelable(this.f55965e, i10);
+            dest.writeParcelable(this.f55966i, i10);
+            dest.writeString(this.f55967o.name());
+        }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void r(k kVar, View view) {
-        kVar.f55954p.invoke();
+    public /* synthetic */ k(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void s(k kVar, View view) {
-        kVar.f55956r.invoke();
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final Unit t(k kVar) {
-        kVar.f55956r.invoke();
-        return Unit.f33298a;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final vm.k u(final k kVar, final ap.b it) {
-        Intrinsics.checkNotNullParameter(it, "it");
-        kVar.l(it);
-        return new vm.k() { // from class: zo.b
-            @Override // vm.k
-            public final void a(Object obj, vm.a0 a0Var) {
-                k.v(k.this, it, (k) obj, a0Var);
-            }
-        };
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void v(k kVar, ap.b bVar, k rendering, vm.a0 viewEnvironment) {
-        Intrinsics.checkNotNullParameter(rendering, "rendering");
-        Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        Intrinsics.checkNotNull(bVar);
-        kVar.p(bVar, rendering, viewEnvironment);
-    }
-
-    @Override // vm.b
-    public vm.c0 a() {
-        return this.f55957s;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void n(View view) {
+    private k() {
     }
 }

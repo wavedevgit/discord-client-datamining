@@ -6,6 +6,6 @@ public abstract class m2 {
     }
 
     public static j2 a() {
-        return l2.f15057a;
+        return l2.f14686a;
     }
 }

@@ -21,8 +21,8 @@ import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.viewmanagers.FastestListManagerDelegate;
 import com.facebook.react.viewmanagers.FastestListManagerInterface;
-import ir.v;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -79,7 +79,7 @@ public final class FastestListViewManager extends InitialPropsViewGroupManager<F
     public static final Unit createViewInstance$lambda$0(FastestListViewManager fastestListViewManager, FastestListView view, int i10, int i11, int i12, int i13) {
         Intrinsics.checkNotNullParameter(view, "view");
         fastestListViewManager.reactEvents.emitEvent(view, new OnLayoutEvent(SizeUtilsKt.getPxToDp(i10), SizeUtilsKt.getPxToDp(i11), SizeUtilsKt.getPxToDp(i12), SizeUtilsKt.getPxToDp(i13)));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -87,7 +87,7 @@ public final class FastestListViewManager extends InitialPropsViewGroupManager<F
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(data, "data");
         fastestListViewManager.reactEvents.emitEvent(view, new OnScrollEvent(data));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -95,7 +95,7 @@ public final class FastestListViewManager extends InitialPropsViewGroupManager<F
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(data, "data");
         fastestListViewManager.reactEvents.emitEvent(view, new OnScrollBeginDragEvent(data));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -103,7 +103,7 @@ public final class FastestListViewManager extends InitialPropsViewGroupManager<F
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(data, "data");
         fastestListViewManager.reactEvents.emitEvent(view, new OnScrollEndDragEvent(data));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -111,7 +111,7 @@ public final class FastestListViewManager extends InitialPropsViewGroupManager<F
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(entry, "entry");
         fastestListViewManager.reactEvents.emitEvent(view, new OnUnexpectedItemSizeEvent(entry, i10));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -119,7 +119,7 @@ public final class FastestListViewManager extends InitialPropsViewGroupManager<F
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(sectionsId, "sectionsId");
         fastestListViewManager.reactEvents.emitEvent(view, new OnVisibleItemsChangedEvent(sectionsId, i10, i11, i12, i13));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

@@ -28,56 +28,56 @@ import zg.i;
 public abstract class FabTransformationBehavior extends ExpandableTransformationBehavior {
 
     /* renamed from: i  reason: collision with root package name */
-    private final Rect f16653i;
+    private final Rect f16282i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final RectF f16654o;
+    private final RectF f16283o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final RectF f16655p;
+    private final RectF f16284p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int[] f16656q;
+    private final int[] f16285q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f16657r;
+    private float f16286r;
 
     /* renamed from: s  reason: collision with root package name */
-    private float f16658s;
+    private float f16287s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ boolean f16659a;
+        final /* synthetic */ boolean f16288a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ View f16660b;
+        final /* synthetic */ View f16289b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ View f16661c;
+        final /* synthetic */ View f16290c;
 
         a(boolean z10, View view, View view2) {
-            this.f16659a = z10;
-            this.f16660b = view;
-            this.f16661c = view2;
+            this.f16288a = z10;
+            this.f16289b = view;
+            this.f16290c = view2;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            if (!this.f16659a) {
-                this.f16660b.setVisibility(4);
-                this.f16661c.setAlpha(1.0f);
-                this.f16661c.setVisibility(0);
+            if (!this.f16288a) {
+                this.f16289b.setVisibility(4);
+                this.f16290c.setAlpha(1.0f);
+                this.f16290c.setVisibility(0);
             }
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            if (this.f16659a) {
-                this.f16660b.setVisibility(0);
-                this.f16661c.setAlpha(0.0f);
-                this.f16661c.setVisibility(4);
+            if (this.f16288a) {
+                this.f16289b.setVisibility(0);
+                this.f16290c.setAlpha(0.0f);
+                this.f16290c.setVisibility(4);
             }
         }
     }
@@ -87,17 +87,17 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public g f16663a;
+        public g f16292a;
 
         /* renamed from: b  reason: collision with root package name */
-        public i f16664b;
+        public i f16293b;
     }
 
     public FabTransformationBehavior() {
-        this.f16653i = new Rect();
-        this.f16654o = new RectF();
-        this.f16655p = new RectF();
-        this.f16656q = new int[2];
+        this.f16282i = new Rect();
+        this.f16283o = new RectF();
+        this.f16284p = new RectF();
+        this.f16285q = new int[2];
     }
 
     private ViewGroup O(View view) {
@@ -111,11 +111,11 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
     private void P(View view, b bVar, h hVar, h hVar2, float f10, float f11, float f12, float f13, RectF rectF) {
         float U = U(bVar, hVar, f10, f12);
         float U2 = U(bVar, hVar2, f11, f13);
-        Rect rect = this.f16653i;
+        Rect rect = this.f16282i;
         view.getWindowVisibleDisplayFrame(rect);
-        RectF rectF2 = this.f16654o;
+        RectF rectF2 = this.f16283o;
         rectF2.set(rect);
-        RectF rectF3 = this.f16655p;
+        RectF rectF3 = this.f16284p;
         V(view, rectF3);
         rectF3.offset(U, U2);
         rectF3.intersect(rectF2);
@@ -124,7 +124,7 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
 
     private void Q(View view, RectF rectF) {
         V(view, rectF);
-        rectF.offset(this.f16657r, this.f16658s);
+        rectF.offset(this.f16286r, this.f16287s);
     }
 
     private Pair R(float f10, float f11, boolean z10, b bVar) {
@@ -133,15 +133,15 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         int i10;
         if (f10 != 0.0f && f11 != 0.0f) {
             if ((z10 && f11 < 0.0f) || (!z10 && i10 > 0)) {
-                e10 = bVar.f16663a.e("translationXCurveUpwards");
-                e11 = bVar.f16663a.e("translationYCurveUpwards");
+                e10 = bVar.f16292a.e("translationXCurveUpwards");
+                e11 = bVar.f16292a.e("translationYCurveUpwards");
             } else {
-                e10 = bVar.f16663a.e("translationXCurveDownwards");
-                e11 = bVar.f16663a.e("translationYCurveDownwards");
+                e10 = bVar.f16292a.e("translationXCurveDownwards");
+                e11 = bVar.f16292a.e("translationYCurveDownwards");
             }
         } else {
-            e10 = bVar.f16663a.e("translationXLinear");
-            e11 = bVar.f16663a.e("translationYLinear");
+            e10 = bVar.f16292a.e("translationXLinear");
+            e11 = bVar.f16292a.e("translationYLinear");
         }
         return new Pair(e10, e11);
     }
@@ -150,16 +150,16 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         float centerX;
         float centerX2;
         float f10;
-        RectF rectF = this.f16654o;
-        RectF rectF2 = this.f16655p;
+        RectF rectF = this.f16283o;
+        RectF rectF2 = this.f16284p;
         Q(view, rectF);
         V(view2, rectF2);
-        int i10 = iVar.f55692a & 7;
+        int i10 = iVar.f55824a & 7;
         if (i10 != 1) {
             if (i10 != 3) {
                 if (i10 != 5) {
                     f10 = 0.0f;
-                    return f10 + iVar.f55693b;
+                    return f10 + iVar.f55825b;
                 }
                 centerX = rectF2.right;
                 centerX2 = rectF.right;
@@ -172,23 +172,23 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
             centerX2 = rectF.centerX();
         }
         f10 = centerX - centerX2;
-        return f10 + iVar.f55693b;
+        return f10 + iVar.f55825b;
     }
 
     private float T(View view, View view2, i iVar) {
         float centerY;
         float centerY2;
         float f10;
-        RectF rectF = this.f16654o;
-        RectF rectF2 = this.f16655p;
+        RectF rectF = this.f16283o;
+        RectF rectF2 = this.f16284p;
         Q(view, rectF);
         V(view2, rectF2);
-        int i10 = iVar.f55692a & 112;
+        int i10 = iVar.f55824a & 112;
         if (i10 != 16) {
             if (i10 != 48) {
                 if (i10 != 80) {
                     f10 = 0.0f;
-                    return f10 + iVar.f55694c;
+                    return f10 + iVar.f55826c;
                 }
                 centerY = rectF2.bottom;
                 centerY2 = rectF.bottom;
@@ -201,19 +201,19 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
             centerY2 = rectF.centerY();
         }
         f10 = centerY - centerY2;
-        return f10 + iVar.f55694c;
+        return f10 + iVar.f55826c;
     }
 
     private float U(b bVar, h hVar, float f10, float f11) {
         long c10 = hVar.c();
         long d10 = hVar.d();
-        h e10 = bVar.f16663a.e("expansion");
+        h e10 = bVar.f16292a.e("expansion");
         return zg.a.a(f10, f11, hVar.e().getInterpolation(((float) (((e10.c() + e10.d()) + 17) - c10)) / ((float) d10)));
     }
 
     private void V(View view, RectF rectF) {
         rectF.set(0.0f, 0.0f, view.getWidth(), view.getHeight());
-        int[] iArr = this.f16656q;
+        int[] iArr = this.f16285q;
         view.getLocationInWindow(iArr);
         rectF.offsetTo(iArr[0], iArr[1]);
         rectF.offset((int) (-view.getTranslationX()), (int) (-view.getTranslationY()));
@@ -227,13 +227,13 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         }
         if (z10) {
             if (!z11) {
-                d.f55680a.set(O, Float.valueOf(0.0f));
+                d.f55812a.set(O, Float.valueOf(0.0f));
             }
-            ofFloat = ObjectAnimator.ofFloat(O, d.f55680a, 1.0f);
+            ofFloat = ObjectAnimator.ofFloat(O, d.f55812a, 1.0f);
         } else {
-            ofFloat = ObjectAnimator.ofFloat(O, d.f55680a, 0.0f);
+            ofFloat = ObjectAnimator.ofFloat(O, d.f55812a, 0.0f);
         }
-        bVar.f16663a.e("contentFade").a(ofFloat);
+        bVar.f16292a.e("contentFade").a(ofFloat);
         list.add(ofFloat);
     }
 
@@ -241,19 +241,19 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
     }
 
     private void Y(View view, View view2, boolean z10, b bVar, List list) {
-        float S = S(view, view2, bVar.f16664b);
-        float T = T(view, view2, bVar.f16664b);
+        float S = S(view, view2, bVar.f16293b);
+        float T = T(view, view2, bVar.f16293b);
         Pair R = R(S, T, z10, bVar);
         h hVar = (h) R.first;
         h hVar2 = (h) R.second;
         Property property = View.TRANSLATION_X;
         if (!z10) {
-            S = this.f16657r;
+            S = this.f16286r;
         }
         ObjectAnimator ofFloat = ObjectAnimator.ofFloat(view, property, S);
         Property property2 = View.TRANSLATION_Y;
         if (!z10) {
-            T = this.f16658s;
+            T = this.f16287s;
         }
         ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat(view, property2, T);
         hVar.a(ofFloat);
@@ -273,7 +273,7 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         } else {
             ofFloat = ObjectAnimator.ofFloat(view2, View.TRANSLATION_Z, -u10);
         }
-        bVar.f16663a.e(ViewProps.ELEVATION).a(ofFloat);
+        bVar.f16292a.e(ViewProps.ELEVATION).a(ofFloat);
         list.add(ofFloat);
     }
 
@@ -288,8 +288,8 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         h hVar2;
         ObjectAnimator ofFloat;
         ObjectAnimator ofFloat2;
-        float S = S(view, view2, bVar.f16664b);
-        float T = T(view, view2, bVar.f16664b);
+        float S = S(view, view2, bVar.f16293b);
+        float T = T(view, view2, bVar.f16293b);
         Pair R = R(S, T, z10, bVar);
         h hVar3 = (h) R.first;
         h hVar4 = (h) R.second;
@@ -326,13 +326,13 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
     protected AnimatorSet N(View view, View view2, boolean z10, boolean z11) {
         b d02 = d0(view2.getContext(), z10);
         if (z10) {
-            this.f16657r = view.getTranslationX();
-            this.f16658s = view.getTranslationY();
+            this.f16286r = view.getTranslationX();
+            this.f16287s = view.getTranslationY();
         }
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
         Z(view, view2, z10, z11, d02, arrayList, arrayList2);
-        RectF rectF = this.f16654o;
+        RectF rectF = this.f16283o;
         c0(view, view2, z10, z11, d02, arrayList, arrayList2, rectF);
         float width = rectF.width();
         float height = rectF.height();
@@ -370,16 +370,16 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public void k(CoordinatorLayout.f fVar) {
-        if (fVar.f2855h == 0) {
-            fVar.f2855h = 80;
+        if (fVar.f2899h == 0) {
+            fVar.f2899h = 80;
         }
     }
 
     public FabTransformationBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f16653i = new Rect();
-        this.f16654o = new RectF();
-        this.f16655p = new RectF();
-        this.f16656q = new int[2];
+        this.f16282i = new Rect();
+        this.f16283o = new RectF();
+        this.f16284p = new RectF();
+        this.f16285q = new int[2];
     }
 }

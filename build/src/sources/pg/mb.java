@@ -5,7 +5,7 @@ import ui.c;
 final class mb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final mb f45593a = new mb();
+    static final mb f45667a = new mb();
 
     static {
         c.b a10 = ui.c.a("modelLanguage");

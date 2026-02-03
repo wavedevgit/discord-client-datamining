@@ -135,9 +135,9 @@ public final class ESignature_ESignatureComponentStyleJsonAdapter extends h {
         AttributeStyles.ESignatureBorderColorStyle eSignatureBorderColorStyle = null;
         AttributeStyles.InputMarginStyle inputMarginStyle = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -199,37 +199,37 @@ public final class ESignature_ESignatureComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (eSignatureComponentStyle != null) {
             writer.l();
-            writer.A0("buttonPrimaryStyle");
+            writer.t0("buttonPrimaryStyle");
             this.nullableESignaturePrimaryButtonStylesAdapter.toJson(writer, eSignatureComponentStyle.getButtonPrimaryStyle());
-            writer.A0("buttonSecondaryStyle");
+            writer.t0("buttonSecondaryStyle");
             this.nullableESignatureSecondaryButtonStylesAdapter.toJson(writer, eSignatureComponentStyle.getButtonSecondaryStyle());
-            writer.A0("titleStyle");
+            writer.t0("titleStyle");
             this.nullableESignatureTitleStylesContainerAdapter.toJson(writer, eSignatureComponentStyle.getTitleStyle());
-            writer.A0("textStyle");
+            writer.t0("textStyle");
             this.nullableESignatureTextStylesContainerAdapter.toJson(writer, eSignatureComponentStyle.getTextStyle());
-            writer.A0("fillColor");
+            writer.t0("fillColor");
             this.nullableESignatureFillColorStyleAdapter.toJson(writer, eSignatureComponentStyle.getFillColor());
-            writer.A0(ViewProps.BACKGROUND_COLOR);
+            writer.t0(ViewProps.BACKGROUND_COLOR);
             this.nullableESignatureBackgroundColorStyleAdapter.toJson(writer, eSignatureComponentStyle.getBackgroundColor());
-            writer.A0(ViewProps.FONT_FAMILY);
+            writer.t0(ViewProps.FONT_FAMILY);
             this.nullableComplexTextBasedFontFamilyStyleAdapter.toJson(writer, eSignatureComponentStyle.getFontFamily());
-            writer.A0(ViewProps.FONT_SIZE);
+            writer.t0(ViewProps.FONT_SIZE);
             this.nullableComplexTextBasedFontSizeStyleAdapter.toJson(writer, eSignatureComponentStyle.getFontSize());
-            writer.A0(ViewProps.FONT_WEIGHT);
+            writer.t0(ViewProps.FONT_WEIGHT);
             this.nullableComplexTextBasedFontWeightStyleAdapter.toJson(writer, eSignatureComponentStyle.getFontWeight());
-            writer.A0(ViewProps.LETTER_SPACING);
+            writer.t0(ViewProps.LETTER_SPACING);
             this.nullableComplexTextBasedLetterSpacingStyleAdapter.toJson(writer, eSignatureComponentStyle.getLetterSpacing());
-            writer.A0(ViewProps.LINE_HEIGHT);
+            writer.t0(ViewProps.LINE_HEIGHT);
             this.nullableComplexTextBasedLineHeightStyleAdapter.toJson(writer, eSignatureComponentStyle.getLineHeight());
-            writer.A0("textColor");
+            writer.t0("textColor");
             this.nullableESignatureTextColorStyleAdapter.toJson(writer, eSignatureComponentStyle.getTextColor());
-            writer.A0("borderRadius");
+            writer.t0("borderRadius");
             this.nullableESignatureBorderRadiusStyleAdapter.toJson(writer, eSignatureComponentStyle.getBorderRadius());
-            writer.A0(ViewProps.BORDER_WIDTH);
+            writer.t0(ViewProps.BORDER_WIDTH);
             this.nullableESignatureBorderWidthStyleAdapter.toJson(writer, eSignatureComponentStyle.getBorderWidth());
-            writer.A0(ViewProps.BORDER_COLOR);
+            writer.t0(ViewProps.BORDER_COLOR);
             this.nullableESignatureBorderColorStyleAdapter.toJson(writer, eSignatureComponentStyle.getBorderColor());
-            writer.A0(ViewProps.MARGIN);
+            writer.t0(ViewProps.MARGIN);
             this.nullableInputMarginStyleAdapter.toJson(writer, eSignatureComponentStyle.getMargin());
             writer.E();
             return;

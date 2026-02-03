@@ -1,8 +1,8 @@
 package com.discord.contact_sync.react;
 
-import at.f;
-import at.n2;
-import at.u0;
+import bt.f;
+import bt.n2;
+import bt.u0;
 import com.discord.contact_sync.ContactSyncBlobEntry;
 import com.discord.contact_sync.ContactSyncPayloadEntry;
 import com.discord.contact_sync.ContactSyncProvider;
@@ -66,7 +66,7 @@ public final class ContactSyncSerializerKt {
                     return serializeHasContactPermissionsResult$lambda$0;
                 }
             }, null, 4, null));
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
         return null;
     }
@@ -90,9 +90,9 @@ public final class ContactSyncSerializerKt {
         Intrinsics.checkNotNullParameter(callback, "callback");
         try {
             Map<String, ContactSyncBlobEntry> contactsMap = ContactSyncProvider.INSTANCE.getContactsMap(reactContext);
-            Json.a aVar = Json.f36410d;
+            Json.a aVar = Json.f36186d;
             aVar.a();
-            String c10 = aVar.c(new u0(n2.f6848a, ContactSyncBlobEntry.Companion.serializer()), contactsMap);
+            String c10 = aVar.c(new u0(n2.f7662a, ContactSyncBlobEntry.Companion.serializer()), contactsMap);
             Collection<ContactSyncBlobEntry> values = contactsMap.values();
             ArrayList arrayList = new ArrayList(CollectionsKt.w(values, 10));
             for (ContactSyncBlobEntry contactSyncBlobEntry : values) {

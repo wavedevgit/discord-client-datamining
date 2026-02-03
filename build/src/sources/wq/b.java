@@ -1,43 +1,52 @@
 package wq;
 
-import java.util.List;
-import kotlin.Result;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
+import java.util.Map;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.Regex;
-import kotlin.text.StringsKt;
-import pv.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface b {
+public final class b {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        private static String a(b bVar, String str, String str2, Function2 function2) {
-            Double p10;
-            if (!new Regex("%[\\d|.]*[f]").i(str) || (p10 = StringsKt.p(str2)) == null) {
-                return null;
-            }
-            return (String) function2.invoke(str, Double.valueOf(p10.doubleValue()));
-        }
+    /* renamed from: a  reason: collision with root package name */
+    private final Map f52985a;
 
-        public static String b(b bVar, Object obj, Object obj2, Function2 formatFloatingPoint) {
-            Object b10;
-            Intrinsics.checkNotNullParameter(formatFloatingPoint, "formatFloatingPoint");
-            List c10 = pv.a.c(obj);
-            String valueOf = String.valueOf(CollectionsKt.firstOrNull(c10));
-            String valueOf2 = String.valueOf(c.b(c10));
-            try {
-                Result.a aVar = Result.f33295e;
-                b10 = Result.b(a(bVar, valueOf, valueOf2, formatFloatingPoint));
-            } catch (Throwable th2) {
-                Result.a aVar2 = Result.f33295e;
-                b10 = Result.b(kotlin.c.a(th2));
-            }
-            if (Result.e(b10) == null) {
-                return (String) b10;
-            }
-            return null;
+    /* renamed from: b  reason: collision with root package name */
+    private final Map f52986b;
+
+    public b(Map standardOperations, Map functionalOperations) {
+        Intrinsics.checkNotNullParameter(standardOperations, "standardOperations");
+        Intrinsics.checkNotNullParameter(functionalOperations, "functionalOperations");
+        this.f52985a = standardOperations;
+        this.f52986b = functionalOperations;
+    }
+
+    public final Map a() {
+        return this.f52986b;
+    }
+
+    public final Map b() {
+        return this.f52985a;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
+        if (!(obj instanceof b)) {
+            return false;
+        }
+        b bVar = (b) obj;
+        if (Intrinsics.areEqual(this.f52985a, bVar.f52985a) && Intrinsics.areEqual(this.f52986b, bVar.f52986b)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return (this.f52985a.hashCode() * 31) + this.f52986b.hashCode();
+    }
+
+    public String toString() {
+        Map map = this.f52985a;
+        Map map2 = this.f52986b;
+        return "LogicOperations(standardOperations=" + map + ", functionalOperations=" + map2 + ")";
     }
 }

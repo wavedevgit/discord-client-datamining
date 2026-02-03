@@ -1,6 +1,6 @@
 package kotlinx.coroutines;
 
-import gs.n0;
+import hs.n0;
 import java.util.concurrent.CancellationException;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
@@ -11,7 +11,7 @@ import kotlin.sequences.Sequence;
 public interface Job extends CoroutineContext.Element {
 
     /* renamed from: j  reason: collision with root package name */
-    public static final b f36307j = b.f36308d;
+    public static final b f36083j = b.f36084d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -47,23 +47,23 @@ public interface Job extends CoroutineContext.Element {
     public static final class b implements CoroutineContext.b {
 
         /* renamed from: d  reason: collision with root package name */
-        static final /* synthetic */ b f36308d = new b();
+        static final /* synthetic */ b f36084d = new b();
 
         private b() {
         }
     }
 
-    n0 C0(Function1 function1);
+    n0 D0(Function1 function1);
+
+    hs.n J0(hs.o oVar);
 
     n0 L(boolean z10, boolean z11, Function1 function1);
 
     CancellationException N();
 
-    Object X0(Continuation continuation);
-
-    gs.n Y0(gs.o oVar);
-
     boolean a();
+
+    Object e1(Continuation continuation);
 
     Sequence getChildren();
 

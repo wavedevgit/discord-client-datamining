@@ -23,68 +23,68 @@ import kotlin.jvm.internal.Intrinsics;
 public final class v0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static boolean f19365b;
+    private static boolean f18998b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f19366c;
+    private static boolean f18999c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static boolean f19367d;
+    private static boolean f19000d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static Integer f19368e;
+    private static Integer f19001e;
 
     /* renamed from: a  reason: collision with root package name */
-    public static final v0 f19364a = new v0();
+    public static final v0 f18997a = new v0();
 
     /* renamed from: f  reason: collision with root package name */
-    private static d f19369f = new d();
+    private static d f19002f = new d();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f19370a;
+        public static final /* synthetic */ int[] f19003a;
 
         static {
             int[] iArr = new int[Screen.b.values().length];
             try {
-                iArr[Screen.b.f19169d.ordinal()] = 1;
+                iArr[Screen.b.f18802d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[Screen.b.f19170e.ordinal()] = 2;
+                iArr[Screen.b.f18803e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[Screen.b.f19171i.ordinal()] = 3;
+                iArr[Screen.b.f18804i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[Screen.b.f19172o.ordinal()] = 4;
+                iArr[Screen.b.f18805o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[Screen.b.f19173p.ordinal()] = 5;
+                iArr[Screen.b.f18806p.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr[Screen.b.f19174q.ordinal()] = 6;
+                iArr[Screen.b.f18807q.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                iArr[Screen.b.f19175r.ordinal()] = 7;
+                iArr[Screen.b.f18808r.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr[Screen.b.f19176s.ordinal()] = 8;
+                iArr[Screen.b.f18809s.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                iArr[Screen.b.f19177t.ordinal()] = 9;
+                iArr[Screen.b.f18810t.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
-            f19370a = iArr;
+            f19003a = iArr;
         }
     }
 
@@ -92,20 +92,20 @@ public final class v0 {
     public static final class b extends GuardedRunnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Activity f19371d;
+        final /* synthetic */ Activity f19004d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Integer f19372e;
+        final /* synthetic */ Integer f19005e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ boolean f19373i;
+        final /* synthetic */ boolean f19006i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Activity activity, Integer num, boolean z10, JSExceptionHandler jSExceptionHandler) {
             super(jSExceptionHandler);
-            this.f19371d = activity;
-            this.f19372e = num;
-            this.f19373i = z10;
+            this.f19004d = activity;
+            this.f19005e = num;
+            this.f19006i = z10;
             Intrinsics.checkNotNull(jSExceptionHandler);
         }
 
@@ -119,15 +119,15 @@ public final class v0 {
 
         @Override // com.facebook.react.bridge.GuardedRunnable
         public void runGuarded() {
-            final Window window = this.f19371d.getWindow();
-            ValueAnimator ofObject = ValueAnimator.ofObject(new ArgbEvaluator(), Integer.valueOf(window.getStatusBarColor()), this.f19372e);
+            final Window window = this.f19004d.getWindow();
+            ValueAnimator ofObject = ValueAnimator.ofObject(new ArgbEvaluator(), Integer.valueOf(window.getStatusBarColor()), this.f19005e);
             ofObject.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: com.swmansion.rnscreens.w0
                 @Override // android.animation.ValueAnimator.AnimatorUpdateListener
                 public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                     v0.b.b(window, valueAnimator);
                 }
             });
-            if (this.f19373i) {
+            if (this.f19006i) {
                 ofObject.setDuration(300L).setStartDelay(0L);
             } else {
                 ofObject.setDuration(0L).setStartDelay(300L);
@@ -140,29 +140,29 @@ public final class v0 {
     public static final class c extends GuardedRunnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Activity f19374d;
+        final /* synthetic */ Activity f19007d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ boolean f19375e;
+        final /* synthetic */ boolean f19008e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(Activity activity, boolean z10, JSExceptionHandler jSExceptionHandler) {
             super(jSExceptionHandler);
-            this.f19374d = activity;
-            this.f19375e = z10;
+            this.f19007d = activity;
+            this.f19008e = z10;
             Intrinsics.checkNotNull(jSExceptionHandler);
         }
 
         @Override // com.facebook.react.bridge.GuardedRunnable
         public void runGuarded() {
-            View decorView = this.f19374d.getWindow().getDecorView();
+            View decorView = this.f19007d.getWindow().getDecorView();
             Intrinsics.checkNotNullExpressionValue(decorView, "getDecorView(...)");
-            if (this.f19375e) {
-                j jVar = j.f19275d;
+            if (this.f19008e) {
+                j jVar = j.f18908d;
                 jVar.e(decorView);
-                jVar.b(v0.f19369f);
+                jVar.b(v0.f19002f);
             } else {
-                j.f19275d.g(v0.f19369f);
+                j.f18908d.g(v0.f19002f);
             }
             androidx.core.view.h0.k0(decorView);
         }
@@ -182,7 +182,7 @@ public final class v0 {
             if (Build.VERSION.SDK_INT >= 30) {
                 Insets f10 = Z.f(WindowInsetsCompat.p.g());
                 Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
-                WindowInsetsCompat a10 = new WindowInsetsCompat.a().b(WindowInsetsCompat.p.g(), Insets.c(f10.f3150a, 0, f10.f3152c, f10.f3153d)).a();
+                WindowInsetsCompat a10 = new WindowInsetsCompat.a().b(WindowInsetsCompat.p.g(), Insets.c(f10.f3194a, 0, f10.f3196c, f10.f3197d)).a();
                 Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
                 return a10;
             }
@@ -196,7 +196,7 @@ public final class v0 {
     }
 
     private final boolean h(Screen screen, Screen.b bVar) {
-        switch (a.f19370a[bVar.ordinal()]) {
+        switch (a.f19003a[bVar.ordinal()]) {
             case 1:
                 if (screen.getScreenOrientation() == null) {
                     return false;
@@ -243,7 +243,7 @@ public final class v0 {
                 }
                 return true;
             default:
-                throw new ir.p();
+                throw new jr.p();
         }
     }
 
@@ -252,7 +252,7 @@ public final class v0 {
         if (screen != null && (fragmentWrapper = screen.getFragmentWrapper()) != null) {
             for (ScreenContainer screenContainer : fragmentWrapper.k()) {
                 Screen topScreen = screenContainer.getTopScreen();
-                v0 v0Var = f19364a;
+                v0 v0Var = f18997a;
                 Screen i10 = v0Var.i(topScreen, bVar);
                 if (i10 != null) {
                     return i10;
@@ -307,7 +307,7 @@ public final class v0 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void p(Window window, int i10) {
-        new WindowInsetsControllerCompat(window, window.getDecorView()).d(f19364a.l(i10));
+        new WindowInsetsControllerCompat(window, window.getDecorView()).d(f18997a.l(i10));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -318,15 +318,15 @@ public final class v0 {
     }
 
     public final void e() {
-        f19367d = true;
+        f19000d = true;
     }
 
     public final void f() {
-        f19365b = true;
+        f18998b = true;
     }
 
     public final void g() {
-        f19366c = true;
+        f18999c = true;
     }
 
     public final void m(Screen screen, Activity activity, ReactContext reactContext) {
@@ -335,13 +335,13 @@ public final class v0 {
         Boolean isStatusBarAnimated;
         Intrinsics.checkNotNullParameter(screen, "screen");
         if (activity != null && reactContext != null) {
-            if (f19368e == null) {
-                f19368e = Integer.valueOf(activity.getWindow().getStatusBarColor());
+            if (f19001e == null) {
+                f19001e = Integer.valueOf(activity.getWindow().getStatusBarColor());
             }
-            Screen k10 = k(screen, Screen.b.f19170e);
-            Screen k11 = k(screen, Screen.b.f19174q);
+            Screen k10 = k(screen, Screen.b.f18803e);
+            Screen k11 = k(screen, Screen.b.f18807q);
             if (k10 == null || (num = k10.getStatusBarColor()) == null) {
-                num = f19368e;
+                num = f19001e;
             }
             if (k11 != null && (isStatusBarAnimated = k11.isStatusBarAnimated()) != null) {
                 z10 = isStatusBarAnimated.booleanValue();
@@ -359,7 +359,7 @@ public final class v0 {
         if (activity == null) {
             return;
         }
-        Screen k10 = k(screen, Screen.b.f19173p);
+        Screen k10 = k(screen, Screen.b.f18806p);
         if (k10 != null && (isStatusBarHidden = k10.isStatusBarHidden()) != null) {
             z10 = isStatusBarHidden.booleanValue();
         } else {
@@ -383,7 +383,7 @@ public final class v0 {
             return;
         }
         final Window window = activity.getWindow();
-        Screen k10 = k(screen, Screen.b.f19175r);
+        Screen k10 = k(screen, Screen.b.f18808r);
         if (k10 != null && (navigationBarColor2 = k10.getNavigationBarColor()) != null) {
             navigationBarColor = navigationBarColor2.intValue();
         } else {
@@ -406,7 +406,7 @@ public final class v0 {
             return;
         }
         Window window = activity.getWindow();
-        Screen k10 = k(screen, Screen.b.f19177t);
+        Screen k10 = k(screen, Screen.b.f18810t);
         if (k10 != null && (isNavigationBarHidden = k10.isNavigationBarHidden()) != null) {
             z10 = isNavigationBarHidden.booleanValue();
         } else {
@@ -424,9 +424,9 @@ public final class v0 {
     public final void s(Screen screen, Activity activity) {
         Boolean isNavigationBarTranslucent;
         Intrinsics.checkNotNullParameter(screen, "screen");
-        if (activity != null && !kn.b.f33287a.a()) {
+        if (activity != null && !ln.b.f37510a.a()) {
             Window window = activity.getWindow();
-            Screen k10 = k(screen, Screen.b.f19176s);
+            Screen k10 = k(screen, Screen.b.f18809s);
             if (k10 != null && (isNavigationBarTranslucent = k10.isNavigationBarTranslucent()) != null) {
                 androidx.core.view.w0.c(window, !isNavigationBarTranslucent.booleanValue());
             }
@@ -440,7 +440,7 @@ public final class v0 {
         if (activity == null) {
             return;
         }
-        Screen k10 = k(screen, Screen.b.f19169d);
+        Screen k10 = k(screen, Screen.b.f18802d);
         if (k10 != null && (screenOrientation = k10.getScreenOrientation()) != null) {
             i10 = screenOrientation.intValue();
         } else {
@@ -452,7 +452,7 @@ public final class v0 {
     public final void v(Screen screen, final Activity activity, ReactContext reactContext) {
         Intrinsics.checkNotNullParameter(screen, "screen");
         if (activity != null && reactContext != null) {
-            Screen k10 = k(screen, Screen.b.f19171i);
+            Screen k10 = k(screen, Screen.b.f18804i);
             final String str = (k10 == null || (str = k10.getStatusBarStyle()) == null) ? "light" : "light";
             UiThreadUtil.runOnUiThread(new Runnable() { // from class: com.swmansion.rnscreens.t0
                 @Override // java.lang.Runnable
@@ -467,8 +467,8 @@ public final class v0 {
         boolean z10;
         Boolean isStatusBarTranslucent;
         Intrinsics.checkNotNullParameter(screen, "screen");
-        if (activity != null && reactContext != null && !kn.b.f33287a.a()) {
-            Screen k10 = k(screen, Screen.b.f19172o);
+        if (activity != null && reactContext != null && !ln.b.f37510a.a()) {
+            Screen k10 = k(screen, Screen.b.f18805o);
             if (k10 != null && (isStatusBarTranslucent = k10.isStatusBarTranslucent()) != null) {
                 z10 = isStatusBarTranslucent.booleanValue();
             } else {
@@ -480,16 +480,16 @@ public final class v0 {
 
     public final void x(Screen screen, Activity activity, ReactContext reactContext) {
         Intrinsics.checkNotNullParameter(screen, "screen");
-        if (f19365b) {
+        if (f18998b) {
             t(screen, activity);
         }
-        if (f19366c) {
+        if (f18999c) {
             m(screen, activity, reactContext);
             v(screen, activity, reactContext);
             w(screen, activity, reactContext);
             o(screen, activity);
         }
-        if (f19367d) {
+        if (f19000d) {
             q(screen, activity);
             s(screen, activity);
             r(screen, activity);

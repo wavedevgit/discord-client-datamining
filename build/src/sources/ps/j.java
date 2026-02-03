@@ -1,7 +1,13 @@
 package ps;
+
+import kotlin.jvm.functions.Function3;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class j extends i implements g {
-    public j(int i10, int i11) {
-        super(i10, i11);
-    }
+public interface j {
+    Function3 a();
+
+    Function3 b();
+
+    Function3 c();
+
+    Object d();
 }

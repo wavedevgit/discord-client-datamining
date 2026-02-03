@@ -1,250 +1,28 @@
 package ju;
 
-import iu.c0;
-import java.util.ArrayList;
-import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 import okio.Buffer;
-import okio.ByteString;
+import okio.Sink;
+import okio.Timeout;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class d {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final ByteString f32806a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final ByteString f32807b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final ByteString f32808c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private static final ByteString f32809d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final ByteString f32810e;
-
-    static {
-        ByteString.a aVar = ByteString.f44379o;
-        f32806a = aVar.g("/");
-        f32807b = aVar.g("\\");
-        f32808c = aVar.g("/\\");
-        f32809d = aVar.g(".");
-        f32810e = aVar.g("..");
+public final class d implements Sink {
+    @Override // okio.Sink
+    public Timeout timeout() {
+        return Timeout.f44513e;
     }
 
-    public static final c0 j(c0 c0Var, c0 child, boolean z10) {
-        Intrinsics.checkNotNullParameter(c0Var, "<this>");
-        Intrinsics.checkNotNullParameter(child, "child");
-        if (!child.isAbsolute() && child.q() == null) {
-            ByteString m10 = m(c0Var);
-            if (m10 == null && (m10 = m(child)) == null) {
-                m10 = s(c0.f31230i);
-            }
-            Buffer buffer = new Buffer();
-            buffer.a2(c0Var.d());
-            if (buffer.size() > 0) {
-                buffer.a2(m10);
-            }
-            buffer.a2(child.d());
-            return q(buffer, z10);
-        }
-        return child;
+    @Override // okio.Sink
+    public void v0(Buffer source, long j10) {
+        Intrinsics.checkNotNullParameter(source, "source");
+        source.skip(j10);
     }
 
-    public static final c0 k(String str, boolean z10) {
-        Intrinsics.checkNotNullParameter(str, "<this>");
-        return q(new Buffer().n0(str), z10);
+    @Override // okio.Sink, java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int l(c0 c0Var) {
-        int y10 = ByteString.y(c0Var.d(), f32806a, 0, 2, null);
-        if (y10 != -1) {
-            return y10;
-        }
-        return ByteString.y(c0Var.d(), f32807b, 0, 2, null);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final ByteString m(c0 c0Var) {
-        ByteString d10 = c0Var.d();
-        ByteString byteString = f32806a;
-        if (ByteString.t(d10, byteString, 0, 2, null) != -1) {
-            return byteString;
-        }
-        ByteString d11 = c0Var.d();
-        ByteString byteString2 = f32807b;
-        if (ByteString.t(d11, byteString2, 0, 2, null) == -1) {
-            return null;
-        }
-        return byteString2;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final boolean n(c0 c0Var) {
-        if (!c0Var.d().i(f32810e) || (c0Var.d().G() != 2 && !c0Var.d().A(c0Var.d().G() - 3, f32806a, 0, 1) && !c0Var.d().A(c0Var.d().G() - 3, f32807b, 0, 1))) {
-            return false;
-        }
-        return true;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int o(c0 c0Var) {
-        if (c0Var.d().G() == 0) {
-            return -1;
-        }
-        if (c0Var.d().j(0) == 47) {
-            return 1;
-        }
-        if (c0Var.d().j(0) == 92) {
-            if (c0Var.d().G() <= 2 || c0Var.d().j(1) != 92) {
-                return 1;
-            }
-            int r10 = c0Var.d().r(f32807b, 2);
-            if (r10 == -1) {
-                return c0Var.d().G();
-            }
-            return r10;
-        }
-        if (c0Var.d().G() > 2 && c0Var.d().j(1) == 58 && c0Var.d().j(2) == 92) {
-            char j10 = (char) c0Var.d().j(0);
-            if ('a' > j10 || j10 >= '{') {
-                if ('A' <= j10 && j10 < '[') {
-                    return 3;
-                }
-            } else {
-                return 3;
-            }
-        }
-        return -1;
-    }
-
-    private static final boolean p(Buffer buffer, ByteString byteString) {
-        if (!Intrinsics.areEqual(byteString, f32807b) || buffer.size() < 2 || buffer.E0(1L) != 58) {
-            return false;
-        }
-        char E0 = (char) buffer.E0(0L);
-        if ('a' > E0 || E0 >= '{') {
-            if ('A' > E0 || E0 >= '[') {
-                return false;
-            }
-            return true;
-        }
-        return true;
-    }
-
-    public static final c0 q(Buffer buffer, boolean z10) {
-        ByteString byteString;
-        boolean z11;
-        boolean z12;
-        ByteString f12;
-        Intrinsics.checkNotNullParameter(buffer, "<this>");
-        Buffer buffer2 = new Buffer();
-        ByteString byteString2 = null;
-        int i10 = 0;
-        while (true) {
-            if (!buffer.p0(0L, f32806a)) {
-                byteString = f32807b;
-                if (!buffer.p0(0L, byteString)) {
-                    break;
-                }
-            }
-            byte readByte = buffer.readByte();
-            if (byteString2 == null) {
-                byteString2 = r(readByte);
-            }
-            i10++;
-        }
-        if (i10 >= 2 && Intrinsics.areEqual(byteString2, byteString)) {
-            z11 = true;
-        } else {
-            z11 = false;
-        }
-        if (z11) {
-            Intrinsics.checkNotNull(byteString2);
-            buffer2.a2(byteString2);
-            buffer2.a2(byteString2);
-        } else if (i10 > 0) {
-            Intrinsics.checkNotNull(byteString2);
-            buffer2.a2(byteString2);
-        } else {
-            long c02 = buffer.c0(f32808c);
-            if (byteString2 == null) {
-                if (c02 == -1) {
-                    byteString2 = s(c0.f31230i);
-                } else {
-                    byteString2 = r(buffer.E0(c02));
-                }
-            }
-            if (p(buffer, byteString2)) {
-                if (c02 == 2) {
-                    buffer2.t0(buffer, 3L);
-                } else {
-                    buffer2.t0(buffer, 2L);
-                }
-            }
-        }
-        if (buffer2.size() > 0) {
-            z12 = true;
-        } else {
-            z12 = false;
-        }
-        ArrayList arrayList = new ArrayList();
-        while (!buffer.o1()) {
-            long c03 = buffer.c0(f32808c);
-            if (c03 == -1) {
-                f12 = buffer.L1();
-            } else {
-                f12 = buffer.f1(c03);
-                buffer.readByte();
-            }
-            ByteString byteString3 = f32810e;
-            if (Intrinsics.areEqual(f12, byteString3)) {
-                if (!z12 || !arrayList.isEmpty()) {
-                    if (z10 && (z12 || (!arrayList.isEmpty() && !Intrinsics.areEqual(CollectionsKt.z0(arrayList), byteString3)))) {
-                        if (!z11 || arrayList.size() != 1) {
-                            CollectionsKt.M(arrayList);
-                        }
-                    } else {
-                        arrayList.add(f12);
-                    }
-                }
-            } else if (!Intrinsics.areEqual(f12, f32809d) && !Intrinsics.areEqual(f12, ByteString.f44380p)) {
-                arrayList.add(f12);
-            }
-        }
-        int size = arrayList.size();
-        for (int i11 = 0; i11 < size; i11++) {
-            if (i11 > 0) {
-                buffer2.a2(byteString2);
-            }
-            buffer2.a2((ByteString) arrayList.get(i11));
-        }
-        if (buffer2.size() == 0) {
-            buffer2.a2(f32809d);
-        }
-        return new c0(buffer2.L1());
-    }
-
-    private static final ByteString r(byte b10) {
-        if (b10 != 47) {
-            if (b10 == 92) {
-                return f32807b;
-            }
-            throw new IllegalArgumentException("not a directory separator: " + ((int) b10));
-        }
-        return f32806a;
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final ByteString s(String str) {
-        if (Intrinsics.areEqual(str, "/")) {
-            return f32806a;
-        }
-        if (Intrinsics.areEqual(str, "\\")) {
-            return f32807b;
-        }
-        throw new IllegalArgumentException("not a directory separator: " + str);
+    @Override // okio.Sink, java.io.Flushable
+    public void flush() {
     }
 }

@@ -9,10 +9,10 @@ import kotlin.jvm.internal.Lambda;
 public final class w extends d1.c {
 
     /* renamed from: t  reason: collision with root package name */
-    public static final a f21612t = new a(null);
+    public static final a f21188t = new a(null);
 
     /* renamed from: u  reason: collision with root package name */
-    private static final i f21613u = new i() { // from class: d1.p
+    private static final i f21189u = new i() { // from class: d1.p
         @Override // d1.i
         public final double a(double d10) {
             double t10;
@@ -22,49 +22,49 @@ public final class w extends d1.c {
     };
 
     /* renamed from: e  reason: collision with root package name */
-    private final y f21614e;
+    private final y f21190e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f21615f;
+    private final float f21191f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f21616g;
+    private final float f21192g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final x f21617h;
+    private final x f21193h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final float[] f21618i;
+    private final float[] f21194i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final float[] f21619j;
+    private final float[] f21195j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final float[] f21620k;
+    private final float[] f21196k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final i f21621l;
+    private final i f21197l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Function1 f21622m;
+    private final Function1 f21198m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final i f21623n;
+    private final i f21199n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final i f21624o;
+    private final i f21200o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Function1 f21625p;
+    private final Function1 f21201p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final i f21626q;
+    private final i f21202q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f21627r;
+    private final boolean f21203r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f21628s;
+    private final boolean f21204s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -144,8 +144,8 @@ public final class w extends d1.c {
             if (i10 == 0) {
                 return true;
             }
-            g gVar = g.f21545a;
-            if (!d.g(fArr, gVar.i()) || !d.f(yVar, j.f21582a.e()) || f10 != 0.0f || f11 != 1.0f) {
+            g gVar = g.f21121a;
+            if (!d.g(fArr, gVar.i()) || !d.f(yVar, j.f21158a.e()) || f10 != 0.0f || f11 != 1.0f) {
                 return false;
             }
             w h10 = gVar.h();
@@ -160,7 +160,7 @@ public final class w extends d1.c {
         /* JADX INFO: Access modifiers changed from: private */
         public final boolean k(float[] fArr, float f10, float f11) {
             float e10 = e(fArr);
-            g gVar = g.f21545a;
+            g gVar = g.f21121a;
             if (e10 / e(gVar.f()) <= 0.9f || !h(fArr, gVar.i())) {
                 if (f10 < 0.0f && f11 > 1.0f) {
                     return true;
@@ -206,7 +206,7 @@ public final class w extends d1.c {
         }
 
         public final Double a(double d10) {
-            return Double.valueOf(w.this.E().a(kotlin.ranges.d.k(d10, w.this.f21615f, w.this.f21616g)));
+            return Double.valueOf(w.this.E().a(kotlin.ranges.d.k(d10, w.this.f21191f, w.this.f21192g)));
         }
 
         @Override // kotlin.jvm.functions.Function1
@@ -222,7 +222,7 @@ public final class w extends d1.c {
         }
 
         public final Double a(double d10) {
-            return Double.valueOf(kotlin.ranges.d.k(w.this.H().a(d10), w.this.f21615f, w.this.f21616g));
+            return Double.valueOf(kotlin.ranges.d.k(w.this.H().a(d10), w.this.f21191f, w.this.f21192g));
         }
 
         @Override // kotlin.jvm.functions.Function1
@@ -233,19 +233,19 @@ public final class w extends d1.c {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public w(String name, float[] primaries, y whitePoint, float[] fArr, i oetf, i eotf, float f10, float f11, x xVar, int i10) {
-        super(name, d1.b.f21536a.b(), i10, null);
+        super(name, d1.b.f21112a.b(), i10, null);
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(primaries, "primaries");
         Intrinsics.checkNotNullParameter(whitePoint, "whitePoint");
         Intrinsics.checkNotNullParameter(oetf, "oetf");
         Intrinsics.checkNotNullParameter(eotf, "eotf");
-        this.f21614e = whitePoint;
-        this.f21615f = f10;
-        this.f21616g = f11;
-        this.f21617h = xVar;
-        this.f21621l = oetf;
-        this.f21622m = new c();
-        this.f21623n = new i() { // from class: d1.n
+        this.f21190e = whitePoint;
+        this.f21191f = f10;
+        this.f21192g = f11;
+        this.f21193h = xVar;
+        this.f21197l = oetf;
+        this.f21198m = new c();
+        this.f21199n = new i() { // from class: d1.n
             @Override // d1.i
             public final double a(double d10) {
                 double K;
@@ -253,9 +253,9 @@ public final class w extends d1.c {
                 return K;
             }
         };
-        this.f21624o = eotf;
-        this.f21625p = new b();
-        this.f21626q = new i() { // from class: d1.o
+        this.f21200o = eotf;
+        this.f21201p = new b();
+        this.f21202q = new i() { // from class: d1.o
             @Override // d1.i
             public final double a(double d10) {
                 double C;
@@ -267,19 +267,19 @@ public final class w extends d1.c {
             throw new IllegalArgumentException("The color space's primaries must be defined as an array of 6 floats in xyY or 9 floats in XYZ");
         }
         if (f10 < f11) {
-            a aVar = f21612t;
+            a aVar = f21188t;
             float[] l10 = aVar.l(primaries);
-            this.f21618i = l10;
+            this.f21194i = l10;
             if (fArr == null) {
-                this.f21619j = aVar.g(l10, whitePoint);
+                this.f21195j = aVar.g(l10, whitePoint);
             } else if (fArr.length == 9) {
-                this.f21619j = fArr;
+                this.f21195j = fArr;
             } else {
                 throw new IllegalArgumentException("Transform must have 9 entries! Has " + fArr.length);
             }
-            this.f21620k = d.j(this.f21619j);
-            this.f21627r = aVar.k(l10, f10, f11);
-            this.f21628s = aVar.j(l10, whitePoint, oetf, eotf, f10, f11, i10);
+            this.f21196k = d.j(this.f21195j);
+            this.f21203r = aVar.k(l10, f10, f11);
+            this.f21204s = aVar.j(l10, whitePoint, oetf, eotf, f10, f11, i10);
             return;
         }
         throw new IllegalArgumentException("Invalid range: min=" + f10 + ", max=" + f11 + "; min must be strictly < max");
@@ -288,13 +288,13 @@ public final class w extends d1.c {
     /* JADX INFO: Access modifiers changed from: private */
     public static final double C(w this$0, double d10) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        return this$0.f21624o.a(kotlin.ranges.d.k(d10, this$0.f21615f, this$0.f21616g));
+        return this$0.f21200o.a(kotlin.ranges.d.k(d10, this$0.f21191f, this$0.f21192g));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final double K(w this$0, double d10) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        return kotlin.ranges.d.k(this$0.f21621l.a(d10), this$0.f21615f, this$0.f21616g);
+        return kotlin.ranges.d.k(this$0.f21197l.a(d10), this$0.f21191f, this$0.f21192g);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -338,41 +338,41 @@ public final class w extends d1.c {
     }
 
     public final i D() {
-        return this.f21626q;
+        return this.f21202q;
     }
 
     public final i E() {
-        return this.f21624o;
+        return this.f21200o;
     }
 
     public final float[] F() {
-        return this.f21620k;
+        return this.f21196k;
     }
 
     public final i G() {
-        return this.f21623n;
+        return this.f21199n;
     }
 
     public final i H() {
-        return this.f21621l;
+        return this.f21197l;
     }
 
     public final float[] I() {
-        return this.f21619j;
+        return this.f21195j;
     }
 
     public final y J() {
-        return this.f21614e;
+        return this.f21190e;
     }
 
     @Override // d1.c
     public float c(int i10) {
-        return this.f21616g;
+        return this.f21192g;
     }
 
     @Override // d1.c
     public float d(int i10) {
-        return this.f21615f;
+        return this.f21191f;
     }
 
     @Override // d1.c
@@ -384,41 +384,41 @@ public final class w extends d1.c {
             return false;
         }
         w wVar = (w) obj;
-        if (Float.compare(wVar.f21615f, this.f21615f) != 0 || Float.compare(wVar.f21616g, this.f21616g) != 0 || !Intrinsics.areEqual(this.f21614e, wVar.f21614e) || !Arrays.equals(this.f21618i, wVar.f21618i)) {
+        if (Float.compare(wVar.f21191f, this.f21191f) != 0 || Float.compare(wVar.f21192g, this.f21192g) != 0 || !Intrinsics.areEqual(this.f21190e, wVar.f21190e) || !Arrays.equals(this.f21194i, wVar.f21194i)) {
             return false;
         }
-        x xVar = this.f21617h;
+        x xVar = this.f21193h;
         if (xVar != null) {
-            return Intrinsics.areEqual(xVar, wVar.f21617h);
+            return Intrinsics.areEqual(xVar, wVar.f21193h);
         }
-        if (wVar.f21617h == null) {
+        if (wVar.f21193h == null) {
             return true;
         }
-        if (!Intrinsics.areEqual(this.f21621l, wVar.f21621l)) {
+        if (!Intrinsics.areEqual(this.f21197l, wVar.f21197l)) {
             return false;
         }
-        return Intrinsics.areEqual(this.f21624o, wVar.f21624o);
+        return Intrinsics.areEqual(this.f21200o, wVar.f21200o);
     }
 
     @Override // d1.c
     public boolean g() {
-        return this.f21628s;
+        return this.f21204s;
     }
 
     @Override // d1.c
     public long h(float f10, float f11, float f12) {
-        float a10 = (float) this.f21626q.a(f10);
-        float a11 = (float) this.f21626q.a(f11);
-        float a12 = (float) this.f21626q.a(f12);
-        return (Float.floatToIntBits(d.n(this.f21619j, a10, a11, a12)) << 32) | (Float.floatToIntBits(d.o(this.f21619j, a10, a11, a12)) & 4294967295L);
+        float a10 = (float) this.f21202q.a(f10);
+        float a11 = (float) this.f21202q.a(f11);
+        float a12 = (float) this.f21202q.a(f12);
+        return (Float.floatToIntBits(d.n(this.f21195j, a10, a11, a12)) << 32) | (Float.floatToIntBits(d.o(this.f21195j, a10, a11, a12)) & 4294967295L);
     }
 
     @Override // d1.c
     public int hashCode() {
         int floatToIntBits;
         int floatToIntBits2;
-        int hashCode = ((((super.hashCode() * 31) + this.f21614e.hashCode()) * 31) + Arrays.hashCode(this.f21618i)) * 31;
-        float f10 = this.f21615f;
+        int hashCode = ((((super.hashCode() * 31) + this.f21190e.hashCode()) * 31) + Arrays.hashCode(this.f21194i)) * 31;
+        float f10 = this.f21191f;
         int i10 = 0;
         if (f10 == 0.0f) {
             floatToIntBits = 0;
@@ -426,33 +426,33 @@ public final class w extends d1.c {
             floatToIntBits = Float.floatToIntBits(f10);
         }
         int i11 = (hashCode + floatToIntBits) * 31;
-        float f11 = this.f21616g;
+        float f11 = this.f21192g;
         if (f11 == 0.0f) {
             floatToIntBits2 = 0;
         } else {
             floatToIntBits2 = Float.floatToIntBits(f11);
         }
         int i12 = (i11 + floatToIntBits2) * 31;
-        x xVar = this.f21617h;
+        x xVar = this.f21193h;
         if (xVar != null) {
             i10 = xVar.hashCode();
         }
         int i13 = i12 + i10;
-        if (this.f21617h == null) {
-            return (((i13 * 31) + this.f21621l.hashCode()) * 31) + this.f21624o.hashCode();
+        if (this.f21193h == null) {
+            return (((i13 * 31) + this.f21197l.hashCode()) * 31) + this.f21200o.hashCode();
         }
         return i13;
     }
 
     @Override // d1.c
     public float i(float f10, float f11, float f12) {
-        return d.p(this.f21619j, (float) this.f21626q.a(f10), (float) this.f21626q.a(f11), (float) this.f21626q.a(f12));
+        return d.p(this.f21195j, (float) this.f21202q.a(f10), (float) this.f21202q.a(f11), (float) this.f21202q.a(f12));
     }
 
     @Override // d1.c
     public long j(float f10, float f11, float f12, float f13, d1.c colorSpace) {
         Intrinsics.checkNotNullParameter(colorSpace, "colorSpace");
-        return c1.b.a((float) this.f21623n.a(d.n(this.f21620k, f10, f11, f12)), (float) this.f21623n.a(d.o(this.f21620k, f10, f11, f12)), (float) this.f21623n.a(d.p(this.f21620k, f10, f11, f12)), f13, colorSpace);
+        return c1.b.a((float) this.f21199n.a(d.n(this.f21196k, f10, f11, f12)), (float) this.f21199n.a(d.o(this.f21196k, f10, f11, f12)), (float) this.f21199n.a(d.p(this.f21196k, f10, f11, f12)), f13, colorSpace);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -518,7 +518,7 @@ public final class w extends d1.c {
             r6 = 4607182418800017408(0x3ff0000000000000, double:1.0)
             int r0 = (r1 > r6 ? 1 : (r1 == r6 ? 0 : -1))
             if (r0 != 0) goto L22
-            d1.i r6 = d1.w.f21613u
+            d1.i r6 = d1.w.f21189u
         L1f:
             r17 = r6
             goto L28
@@ -528,7 +528,7 @@ public final class w extends d1.c {
             goto L1f
         L28:
             if (r0 != 0) goto L2f
-            d1.i r0 = d1.w.f21613u
+            d1.i r0 = d1.w.f21189u
         L2c:
             r18 = r0
             goto L35
@@ -567,7 +567,7 @@ public final class w extends d1.c {
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public w(w colorSpace, float[] transform, y whitePoint) {
-        this(colorSpace.f(), colorSpace.f21618i, whitePoint, transform, colorSpace.f21621l, colorSpace.f21624o, colorSpace.f21615f, colorSpace.f21616g, colorSpace.f21617h, -1);
+        this(colorSpace.f(), colorSpace.f21194i, whitePoint, transform, colorSpace.f21197l, colorSpace.f21200o, colorSpace.f21191f, colorSpace.f21192g, colorSpace.f21193h, -1);
         Intrinsics.checkNotNullParameter(colorSpace, "colorSpace");
         Intrinsics.checkNotNullParameter(transform, "transform");
         Intrinsics.checkNotNullParameter(whitePoint, "whitePoint");

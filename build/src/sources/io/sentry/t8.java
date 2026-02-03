@@ -54,7 +54,7 @@ public final class t8 extends e8 {
         this.A = (String) io.sentry.util.y.c(str, "name is required");
         this.B = g0Var;
         u(s8Var);
-        this.f29989x = io.sentry.util.j0.d(null, s8Var);
+        this.f29555x = io.sentry.util.j0.d(null, s8Var);
     }
 
     public t8(io.sentry.protocol.x xVar, j8 j8Var, j8 j8Var2, s8 s8Var, d dVar) {
@@ -63,6 +63,6 @@ public final class t8 extends e8 {
         this.A = "<unlabeled transaction>";
         this.C = s8Var;
         this.B = E;
-        this.f29989x = io.sentry.util.j0.d(dVar, s8Var);
+        this.f29555x = io.sentry.util.j0.d(dVar, s8Var);
     }
 }

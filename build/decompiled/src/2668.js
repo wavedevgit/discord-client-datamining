@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22129: for (var _fun22129_ip = 0;;) switch (_fun22129_ip) {
+    _fun22141: for (var _fun22141_ip = 0;;) switch (_fun22141_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun22129_ip = 77;
-                continue _fun22129
+                _fun22141_ip = 77;
+                continue _fun22141
             }
         case 65:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun22129_ip = 86;
-                continue _fun22129
+                _fun22141_ip = 86;
+                continue _fun22141
             }
         case 77:
             var2 = {};
@@ -47,11 +47,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var5 = {};
-            var8 = ['B', 'คศ'];
+            var8 = ['p.n.e.', 'n.e.'];
             var5.narrow = var8;
-            var8 = ['BC', 'ค.ศ.'];
+            var8 = ['p.n.e.', 'n.e.'];
             var5.abbreviated = var8;
-            var8 = ['ปีก่อนคริสตกาล', 'คริสต์ศักราช'];
+            var8 = ['przed naszą erą', 'naszej ery'];
             var5.wide = var8;
             var4.values = var5;
             var5 = 'wide';
@@ -63,9 +63,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var8 = {};
             var9 = ['1', '2', '3', '4'];
             var8.narrow = var9;
-            var9 = ['Q1', 'Q2', 'Q3', 'Q4'];
+            var9 = ['I kw.', 'II kw.', 'III kw.', 'IV kw.'];
             var8.abbreviated = var9;
-            var9 = ['ไตรมาสแรก', 'ไตรมาสที่สอง', 'ไตรมาสที่สาม', 'ไตรมาสที่สี่'];
+            var9 = ['I kwartał', 'II kwartał', 'III kwartał', 'IV kwartał'];
             var8.wide = var9;
             var4.values = var8;
             var4.defaultWidth = var5;
@@ -81,101 +81,121 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var7 = {};
-            var8 = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
+            var8 = ['S', 'L', 'M', 'K', 'M', 'C', 'L', 'S', 'W', 'P', 'L', 'G'];
             var7.narrow = var8;
-            var8 = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
+            var8 = ['sty', 'lut', 'mar', 'kwi', 'maj', 'cze', 'lip', 'sie', 'wrz', 'paź', 'lis', 'gru'];
             var7.abbreviated = var8;
-            var8 = ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'];
+            var8 = ['styczeń', 'luty', 'marzec', 'kwiecień', 'maj', 'czerwiec', 'lipiec', 'sierpień', 'wrzesień', 'październik', 'listopad', 'grudzień'];
             var7.wide = var8;
             var4.values = var7;
             var4.defaultWidth = var5;
+            var7 = {};
+            var8 = ['s', 'l', 'm', 'k', 'm', 'c', 'l', 's', 'w', 'p', 'l', 'g'];
+            var7.narrow = var8;
+            var8 = ['sty', 'lut', 'mar', 'kwi', 'maj', 'cze', 'lip', 'sie', 'wrz', 'paź', 'lis', 'gru'];
+            var7.abbreviated = var8;
+            var8 = ['stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca', 'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia'];
+            var7.wide = var8;
+            var4.formattingValues = var7;
+            var4.defaultFormattingWidth = var5;
             var4 = var6.bind(var0)(var4);
             var2.month = var4;
             var6 = var3.default;
             var4 = {};
             var7 = {};
-            var8 = ['อา.', 'จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.'];
+            var8 = ['N', 'P', 'W', 'Ś', 'C', 'P', 'S'];
             var7.narrow = var8;
-            var8 = ['อา.', 'จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.'];
+            var8 = ['nie', 'pon', 'wto', 'śro', 'czw', 'pią', 'sob'];
             var7.short = var8;
-            var8 = ['อา.', 'จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.'];
+            var8 = ['niedz.', 'pon.', 'wt.', 'śr.', 'czw.', 'pt.', 'sob.'];
             var7.abbreviated = var8;
-            var8 = ['อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์'];
+            var8 = ['niedziela', 'poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota'];
             var7.wide = var8;
             var4.values = var7;
             var4.defaultWidth = var5;
+            var7 = {};
+            var8 = ['n', 'p', 'w', 'ś', 'c', 'p', 's'];
+            var7.narrow = var8;
+            var8 = ['nie', 'pon', 'wto', 'śro', 'czw', 'pią', 'sob'];
+            var7.short = var8;
+            var8 = ['niedz.', 'pon.', 'wt.', 'śr.', 'czw.', 'pt.', 'sob.'];
+            var7.abbreviated = var8;
+            var8 = ['niedziela', 'poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota'];
+            var7.wide = var8;
+            var4.formattingValues = var7;
+            var4.defaultFormattingWidth = var5;
             var4 = var6.bind(var0)(var4);
             var2.day = var4;
             var4 = var3.default;
             var3 = {};
             var6 = {};
             var7 = {
-                'am': 'ก่อนเที่ยง',
-                'pm': 'หลังเที่ยง',
-                'midnight': 'เที่ยงคืน',
-                'noon': 'เที่ยง',
-                'morning': 'เช้า',
-                'afternoon': 'บ่าย',
-                'evening': 'เย็น',
-                'night': 'กลางคืน'
+                'am': 'a',
+                'pm': 'p',
+                'midnight': 'półn.',
+                'noon': 'poł',
+                'morning': 'rano',
+                'afternoon': 'popoł.',
+                'evening': 'wiecz.',
+                'night': 'noc'
             };
             var6.narrow = var7;
             var7 = {
-                'am': 'ก่อนเที่ยง',
-                'pm': 'หลังเที่ยง',
-                'midnight': 'เที่ยงคืน',
-                'noon': 'เที่ยง',
-                'morning': 'เช้า',
-                'afternoon': 'บ่าย',
-                'evening': 'เย็น',
-                'night': 'กลางคืน'
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'północ',
+                'noon': 'południe',
+                'morning': 'rano',
+                'afternoon': 'popołudnie',
+                'evening': 'wieczór',
+                'night': 'noc'
             };
             var6.abbreviated = var7;
             var7 = {
-                'am': 'ก่อนเที่ยง',
-                'pm': 'หลังเที่ยง',
-                'midnight': 'เที่ยงคืน',
-                'noon': 'เที่ยง',
-                'morning': 'เช้า',
-                'afternoon': 'บ่าย',
-                'evening': 'เย็น',
-                'night': 'กลางคืน'
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'północ',
+                'noon': 'południe',
+                'morning': 'rano',
+                'afternoon': 'popołudnie',
+                'evening': 'wieczór',
+                'night': 'noc'
             };
             var6.wide = var7;
             var3.values = var6;
             var3.defaultWidth = var5;
             var6 = {};
             var7 = {
-                'am': 'ก่อนเที่ยง',
-                'pm': 'หลังเที่ยง',
-                'midnight': 'เที่ยงคืน',
-                'noon': 'เที่ยง',
-                'morning': 'ตอนเช้า',
-                'afternoon': 'ตอนกลางวัน',
-                'evening': 'ตอนเย็น',
-                'night': 'ตอนกลางคืน'
+                'am': 'a',
+                'pm': 'p',
+                'midnight': 'o półn.',
+                'noon': 'w poł.',
+                'morning': 'rano',
+                'afternoon': 'po poł.',
+                'evening': 'wiecz.',
+                'night': 'w nocy'
             };
             var6.narrow = var7;
             var7 = {
-                'am': 'ก่อนเที่ยง',
-                'pm': 'หลังเที่ยง',
-                'midnight': 'เที่ยงคืน',
-                'noon': 'เที่ยง',
-                'morning': 'ตอนเช้า',
-                'afternoon': 'ตอนกลางวัน',
-                'evening': 'ตอนเย็น',
-                'night': 'ตอนกลางคืน'
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'o północy',
+                'noon': 'w południe',
+                'morning': 'rano',
+                'afternoon': 'po południu',
+                'evening': 'wieczorem',
+                'night': 'w nocy'
             };
             var6.abbreviated = var7;
             var7 = {
-                'am': 'ก่อนเที่ยง',
-                'pm': 'หลังเที่ยง',
-                'midnight': 'เที่ยงคืน',
-                'noon': 'เที่ยง',
-                'morning': 'ตอนเช้า',
-                'afternoon': 'ตอนกลางวัน',
-                'evening': 'ตอนเย็น',
-                'night': 'ตอนกลางคืน'
+                'am': 'AM',
+                'pm': 'PM',
+                'midnight': 'o północy',
+                'noon': 'w południe',
+                'morning': 'rano',
+                'afternoon': 'po południu',
+                'evening': 'wieczorem',
+                'night': 'w nocy'
             };
             var6.wide = var7;
             var3.formattingValues = var6;

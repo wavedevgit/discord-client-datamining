@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/launchpad/native/shared/renderChannelItem.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun110107: for (var _fun110107_ip = 0;;) switch (_fun110107_ip) {
+        _fun110053: for (var _fun110053_ip = 0;;) switch (_fun110053_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.channel;
@@ -161,24 +161,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var0.locked;
                 var3 = undefined;
                 if (!(var20 === var3)) {
-                    _fun110107_ip = 46;
-                    continue _fun110107
+                    _fun110053_ip = 46;
+                    continue _fun110053
                 }
             case 44:
                 var20 = false;
             case 46:
                 var25 = var0.unread;
                 if (!(var25 === var3)) {
-                    _fun110107_ip = 58;
-                    continue _fun110107
+                    _fun110053_ip = 58;
+                    continue _fun110053
                 }
             case 56:
                 var25 = false;
             case 58:
                 var24 = var0.resolvedUnreadSetting;
                 if (!(var24 === var3)) {
-                    _fun110107_ip = 81;
-                    continue _fun110107
+                    _fun110053_ip = 81;
+                    continue _fun110053
                 }
             case 68:
                 var1 = _closure1_slot5;
@@ -186,16 +186,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 81:
                 var18 = var0.live;
                 if (!(var18 === var3)) {
-                    _fun110107_ip = 93;
-                    continue _fun110107
+                    _fun110053_ip = 93;
+                    continue _fun110053
                 }
             case 91:
                 var18 = false;
             case 93:
                 var23 = var0.muted;
                 if (!(var23 === var3)) {
-                    _fun110107_ip = 105;
-                    continue _fun110107
+                    _fun110053_ip = 105;
+                    continue _fun110053
                 }
             case 103:
                 var23 = false;
@@ -208,16 +208,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0.fontScale;
                 var15 = var0.isSubscriptionGated;
                 if (!(var15 === var3)) {
-                    _fun110107_ip = 152;
-                    continue _fun110107
+                    _fun110053_ip = 152;
+                    continue _fun110053
                 }
             case 150:
                 var15 = false;
             case 152:
                 var13 = var0.needSubscriptionToAccess;
                 if (!(var13 === var3)) {
-                    _fun110107_ip = 164;
-                    continue _fun110107
+                    _fun110053_ip = 164;
+                    continue _fun110053
                 }
             case 162:
                 var13 = false;
@@ -226,14 +226,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var8 == var2;
                 var22 = null;
                 if (var0) {
-                    _fun110107_ip = 214;
-                    continue _fun110107
+                    _fun110053_ip = 214;
+                    continue _fun110053
                 }
             case 175:
                 var22 = null;
                 if (var23) {
-                    _fun110107_ip = 214;
-                    continue _fun110107
+                    _fun110053_ip = 214;
+                    continue _fun110053
                 }
             case 180:
                 var1 = _closure1_slot0;
@@ -292,16 +292,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var29 = var29.bind(var5)();
                 var32 = _closure1_slot6;
                 if (var29) {
-                    _fun110107_ip = 420;
-                    continue _fun110107
+                    _fun110053_ip = 420;
+                    continue _fun110053
                 }
             case 402:
                 var30 = _closure1_slot10;
                 var29 = {};
                 var29.channel = var5;
                 var29 = var32.bind(var3)(var30, var29);
-                _fun110107_ip = 467;
-                continue _fun110107;
+                _fun110053_ip = 467;
+                continue _fun110053;
             case 420:
                 var31 = _closure1_slot1;
                 var34 = _closure1_slot2;
@@ -325,8 +325,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.bind(var3)(var10);
                 var10 = {};
                 if (!(var8 == var27)) {
-                    _fun110107_ip = 512;
-                    continue _fun110107
+                    _fun110053_ip = 512;
+                    continue _fun110053
                 }
             case 507:
                 var27 = var5.name;
@@ -351,8 +351,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var8 != var12;
                 var8 = null;
                 if (!var10) {
-                    _fun110107_ip = 634;
-                    continue _fun110107
+                    _fun110053_ip = 634;
+                    continue _fun110053
                 }
             case 603:
                 var11 = _closure1_slot6;
@@ -404,4 +404,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getChannelAccessibilityProps = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1410, 4270, 33, 7839, 1297, 671, 14124, 566, 7357, 13703, 4188, 14126, 8988, 14129, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1410, 4300, 33, 7870, 1297, 671, 14154, 566, 7388, 13730, 4218, 14156, 9020, 14159, 2]);

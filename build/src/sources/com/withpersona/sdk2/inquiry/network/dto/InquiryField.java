@@ -28,10 +28,10 @@ public abstract class InquiryField implements Parcelable {
 
         @NotNull
         public final h.e createAdapter() {
-            rm.b b10 = rm.b.b(InquiryField.class, "type");
+            sm.b b10 = sm.b.b(InquiryField.class, "type");
             UnknownAdapter unknownAdapter = UnknownAdapter.INSTANCE;
             Intrinsics.checkNotNull(unknownAdapter, "null cannot be cast to non-null type com.squareup.moshi.JsonAdapter<kotlin.Any>");
-            rm.b e10 = b10.d(unknownAdapter).e(StringField.class, StringField.TYPE).e(IntegerField.class, IntegerField.TYPE).e(BooleanField.class, BooleanField.TYPE).e(FloatField.class, FloatField.TYPE).e(FloatField.class, FloatField.TYPE2).e(DateField.class, DateField.TYPE).e(DatetimeField.class, DatetimeField.TYPE).e(ChoicesField.class, ChoicesField.TYPE).e(MultiChoicesField.class, MultiChoicesField.TYPE);
+            sm.b e10 = b10.d(unknownAdapter).e(StringField.class, StringField.TYPE).e(IntegerField.class, IntegerField.TYPE).e(BooleanField.class, BooleanField.TYPE).e(FloatField.class, FloatField.TYPE).e(FloatField.class, FloatField.TYPE2).e(DateField.class, DateField.TYPE).e(DatetimeField.class, DatetimeField.TYPE).e(ChoicesField.class, ChoicesField.TYPE).e(MultiChoicesField.class, MultiChoicesField.TYPE);
             Intrinsics.checkNotNullExpressionValue(e10, "withSubtype(...)");
             return e10;
         }
@@ -106,8 +106,8 @@ public abstract class InquiryField implements Parcelable {
             reader.r();
             String str = "";
             while (reader.hasNext()) {
-                if (Intrinsics.areEqual(reader.l0(), "type")) {
-                    str = reader.e1();
+                if (Intrinsics.areEqual(reader.m0(), "type")) {
+                    str = reader.f1();
                 } else {
                     reader.P();
                 }
@@ -120,7 +120,7 @@ public abstract class InquiryField implements Parcelable {
         public void toJson(@NotNull t writer, InquiryField inquiryField) {
             Intrinsics.checkNotNullParameter(writer, "writer");
             writer.l();
-            writer.A0("type");
+            writer.t0("type");
             writer.x1(inquiryField != null ? inquiryField.getType() : null);
             writer.E();
         }

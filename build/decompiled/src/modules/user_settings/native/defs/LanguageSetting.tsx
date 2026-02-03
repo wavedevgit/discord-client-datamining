@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.LanguageIcon;
     var1.IconComponent = var7;
     var7 = function() {
-        _fun84954: for (var _fun84954_ip = 0;;) switch (_fun84954_ip) {
+        _fun85325: for (var _fun85325_ip = 0;;) switch (_fun85325_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var3 = var0 != var1;
                 if (!var3) {
-                    _fun84954_ip = 147;
-                    continue _fun84954
+                    _fun85325_ip = 147;
+                    continue _fun85325
                 }
             case 109:
                 var3 = _closure1_slot0;
@@ -131,4 +131,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1676, 660, 566, 1234, 8945, 10861, 10863, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1676, 660, 566, 1234, 8977, 10937, 10939, 2]);

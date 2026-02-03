@@ -56,20 +56,20 @@ import org.jetbrains.annotations.NotNull;
 public final class MemberDeserializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DeserializationContext f35628a;
+    private final DeserializationContext f35404a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final AnnotationDeserializer f35629b;
+    private final AnnotationDeserializer f35405b;
 
     public MemberDeserializer(@NotNull DeserializationContext c10) {
         Intrinsics.checkNotNullParameter(c10, "c");
-        this.f35628a = c10;
-        this.f35629b = new AnnotationDeserializer(c10.getComponents().getModuleDescriptor(), c10.getComponents().getNotFoundClasses());
+        this.f35404a = c10;
+        this.f35405b = new AnnotationDeserializer(c10.getComponents().getModuleDescriptor(), c10.getComponents().getNotFoundClasses());
     }
 
     private final ProtoContainer i(DeclarationDescriptor declarationDescriptor) {
         if (declarationDescriptor instanceof PackageFragmentDescriptor) {
-            return new ProtoContainer.Package(((PackageFragmentDescriptor) declarationDescriptor).getFqName(), this.f35628a.getNameResolver(), this.f35628a.getTypeTable(), this.f35628a.getContainerSource());
+            return new ProtoContainer.Package(((PackageFragmentDescriptor) declarationDescriptor).getFqName(), this.f35404a.getNameResolver(), this.f35404a.getTypeTable(), this.f35404a.getContainerSource());
         }
         if (declarationDescriptor instanceof DeserializedClassDescriptor) {
             return ((DeserializedClassDescriptor) declarationDescriptor).getThisAsProtoContainer$deserialization();
@@ -81,15 +81,15 @@ public final class MemberDeserializer {
         if (!Flags.HAS_ANNOTATIONS.get(i10).booleanValue()) {
             return Annotations.Companion.getEMPTY();
         }
-        return new NonEmptyDeserializedAnnotations(this.f35628a.getStorageManager(), new g(this, messageLite, annotatedCallableKind));
+        return new NonEmptyDeserializedAnnotations(this.f35404a.getStorageManager(), new g(this, messageLite, annotatedCallableKind));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List k(MemberDeserializer memberDeserializer, MessageLite messageLite, AnnotatedCallableKind annotatedCallableKind) {
         List list;
-        ProtoContainer i10 = memberDeserializer.i(memberDeserializer.f35628a.getContainingDeclaration());
+        ProtoContainer i10 = memberDeserializer.i(memberDeserializer.f35404a.getContainingDeclaration());
         if (i10 != null) {
-            list = CollectionsKt.h1(memberDeserializer.f35628a.getComponents().getAnnotationAndConstantLoader().loadCallableAnnotations(i10, messageLite, annotatedCallableKind));
+            list = CollectionsKt.h1(memberDeserializer.f35404a.getComponents().getAnnotationAndConstantLoader().loadCallableAnnotations(i10, messageLite, annotatedCallableKind));
         } else {
             list = null;
         }
@@ -101,7 +101,7 @@ public final class MemberDeserializer {
 
     private final ReceiverParameterDescriptor l() {
         ClassDescriptor classDescriptor;
-        DeclarationDescriptor containingDeclaration = this.f35628a.getContainingDeclaration();
+        DeclarationDescriptor containingDeclaration = this.f35404a.getContainingDeclaration();
         if (containingDeclaration instanceof ClassDescriptor) {
             classDescriptor = (ClassDescriptor) containingDeclaration;
         } else {
@@ -117,18 +117,18 @@ public final class MemberDeserializer {
         if (!Flags.HAS_ANNOTATIONS.get(property.getFlags()).booleanValue()) {
             return Annotations.Companion.getEMPTY();
         }
-        return new NonEmptyDeserializedAnnotations(this.f35628a.getStorageManager(), new h(this, z10, property));
+        return new NonEmptyDeserializedAnnotations(this.f35404a.getStorageManager(), new h(this, z10, property));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List n(MemberDeserializer memberDeserializer, boolean z10, ProtoBuf.Property property) {
         List list;
-        ProtoContainer i10 = memberDeserializer.i(memberDeserializer.f35628a.getContainingDeclaration());
+        ProtoContainer i10 = memberDeserializer.i(memberDeserializer.f35404a.getContainingDeclaration());
         if (i10 != null) {
             if (z10) {
-                list = CollectionsKt.h1(memberDeserializer.f35628a.getComponents().getAnnotationAndConstantLoader().loadPropertyDelegateFieldAnnotations(i10, property));
+                list = CollectionsKt.h1(memberDeserializer.f35404a.getComponents().getAnnotationAndConstantLoader().loadPropertyDelegateFieldAnnotations(i10, property));
             } else {
-                list = CollectionsKt.h1(memberDeserializer.f35628a.getComponents().getAnnotationAndConstantLoader().loadPropertyBackingFieldAnnotations(i10, property));
+                list = CollectionsKt.h1(memberDeserializer.f35404a.getComponents().getAnnotationAndConstantLoader().loadPropertyBackingFieldAnnotations(i10, property));
             }
         } else {
             list = null;
@@ -140,15 +140,15 @@ public final class MemberDeserializer {
     }
 
     private final Annotations o(MessageLite messageLite, AnnotatedCallableKind annotatedCallableKind) {
-        return new DeserializedAnnotations(this.f35628a.getStorageManager(), new i(this, messageLite, annotatedCallableKind));
+        return new DeserializedAnnotations(this.f35404a.getStorageManager(), new i(this, messageLite, annotatedCallableKind));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List p(MemberDeserializer memberDeserializer, MessageLite messageLite, AnnotatedCallableKind annotatedCallableKind) {
         List<AnnotationDescriptor> list;
-        ProtoContainer i10 = memberDeserializer.i(memberDeserializer.f35628a.getContainingDeclaration());
+        ProtoContainer i10 = memberDeserializer.i(memberDeserializer.f35404a.getContainingDeclaration());
         if (i10 != null) {
-            list = memberDeserializer.f35628a.getComponents().getAnnotationAndConstantLoader().loadExtensionReceiverParameterAnnotations(i10, messageLite, annotatedCallableKind);
+            list = memberDeserializer.f35404a.getComponents().getAnnotationAndConstantLoader().loadExtensionReceiverParameterAnnotations(i10, messageLite, annotatedCallableKind);
         } else {
             list = null;
         }
@@ -168,14 +168,14 @@ public final class MemberDeserializer {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final NullableLazyValue s(MemberDeserializer memberDeserializer, ProtoBuf.Property property, DeserializedPropertyDescriptor deserializedPropertyDescriptor) {
-        return memberDeserializer.f35628a.getStorageManager().createNullableLazyValue(new k(memberDeserializer, property, deserializedPropertyDescriptor));
+        return memberDeserializer.f35404a.getStorageManager().createNullableLazyValue(new k(memberDeserializer, property, deserializedPropertyDescriptor));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ConstantValue t(MemberDeserializer memberDeserializer, ProtoBuf.Property property, DeserializedPropertyDescriptor deserializedPropertyDescriptor) {
-        ProtoContainer i10 = memberDeserializer.i(memberDeserializer.f35628a.getContainingDeclaration());
+        ProtoContainer i10 = memberDeserializer.i(memberDeserializer.f35404a.getContainingDeclaration());
         Intrinsics.checkNotNull(i10);
-        AnnotationAndConstantLoader<AnnotationDescriptor, ConstantValue<?>> annotationAndConstantLoader = memberDeserializer.f35628a.getComponents().getAnnotationAndConstantLoader();
+        AnnotationAndConstantLoader<AnnotationDescriptor, ConstantValue<?>> annotationAndConstantLoader = memberDeserializer.f35404a.getComponents().getAnnotationAndConstantLoader();
         KotlinType returnType = deserializedPropertyDescriptor.getReturnType();
         Intrinsics.checkNotNullExpressionValue(returnType, "getReturnType(...)");
         return annotationAndConstantLoader.loadPropertyConstant(i10, property, returnType);
@@ -183,14 +183,14 @@ public final class MemberDeserializer {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final NullableLazyValue u(MemberDeserializer memberDeserializer, ProtoBuf.Property property, DeserializedPropertyDescriptor deserializedPropertyDescriptor) {
-        return memberDeserializer.f35628a.getStorageManager().createNullableLazyValue(new l(memberDeserializer, property, deserializedPropertyDescriptor));
+        return memberDeserializer.f35404a.getStorageManager().createNullableLazyValue(new l(memberDeserializer, property, deserializedPropertyDescriptor));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ConstantValue v(MemberDeserializer memberDeserializer, ProtoBuf.Property property, DeserializedPropertyDescriptor deserializedPropertyDescriptor) {
-        ProtoContainer i10 = memberDeserializer.i(memberDeserializer.f35628a.getContainingDeclaration());
+        ProtoContainer i10 = memberDeserializer.i(memberDeserializer.f35404a.getContainingDeclaration());
         Intrinsics.checkNotNull(i10);
-        AnnotationAndConstantLoader<AnnotationDescriptor, ConstantValue<?>> annotationAndConstantLoader = memberDeserializer.f35628a.getComponents().getAnnotationAndConstantLoader();
+        AnnotationAndConstantLoader<AnnotationDescriptor, ConstantValue<?>> annotationAndConstantLoader = memberDeserializer.f35404a.getComponents().getAnnotationAndConstantLoader();
         KotlinType returnType = deserializedPropertyDescriptor.getReturnType();
         Intrinsics.checkNotNullExpressionValue(returnType, "getReturnType(...)");
         return annotationAndConstantLoader.loadAnnotationDefaultValue(i10, property, returnType);
@@ -204,7 +204,7 @@ public final class MemberDeserializer {
         int i10;
         Annotations empty;
         KotlinType kotlinType;
-        DeclarationDescriptor containingDeclaration = this.f35628a.getContainingDeclaration();
+        DeclarationDescriptor containingDeclaration = this.f35404a.getContainingDeclaration();
         Intrinsics.checkNotNull(containingDeclaration, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.CallableDescriptor");
         CallableDescriptor callableDescriptor = (CallableDescriptor) containingDeclaration;
         DeclarationDescriptor containingDeclaration2 = callableDescriptor.getContainingDeclaration();
@@ -225,12 +225,12 @@ public final class MemberDeserializer {
                 i10 = 0;
             }
             if (i11 != null && Flags.HAS_ANNOTATIONS.get(i10).booleanValue()) {
-                empty = new NonEmptyDeserializedAnnotations(this.f35628a.getStorageManager(), new j(this, i11, messageLite, annotatedCallableKind, i12, valueParameter));
+                empty = new NonEmptyDeserializedAnnotations(this.f35404a.getStorageManager(), new j(this, i11, messageLite, annotatedCallableKind, i12, valueParameter));
             } else {
                 empty = Annotations.Companion.getEMPTY();
             }
-            Name name = NameResolverUtilKt.getName(this.f35628a.getNameResolver(), valueParameter.getName());
-            KotlinType type = this.f35628a.getTypeDeserializer().type(ProtoTypeTableUtilKt.type(valueParameter, this.f35628a.getTypeTable()));
+            Name name = NameResolverUtilKt.getName(this.f35404a.getNameResolver(), valueParameter.getName());
+            KotlinType type = this.f35404a.getTypeDeserializer().type(ProtoTypeTableUtilKt.type(valueParameter, this.f35404a.getTypeTable()));
             Boolean bool = Flags.DECLARES_DEFAULT_VALUE.get(i10);
             Intrinsics.checkNotNullExpressionValue(bool, "get(...)");
             boolean booleanValue = bool.booleanValue();
@@ -240,9 +240,9 @@ public final class MemberDeserializer {
             Boolean bool3 = Flags.IS_NOINLINE.get(i10);
             Intrinsics.checkNotNullExpressionValue(bool3, "get(...)");
             boolean booleanValue3 = bool3.booleanValue();
-            ProtoBuf.Type varargElementType = ProtoTypeTableUtilKt.varargElementType(valueParameter, this.f35628a.getTypeTable());
+            ProtoBuf.Type varargElementType = ProtoTypeTableUtilKt.varargElementType(valueParameter, this.f35404a.getTypeTable());
             if (varargElementType != null) {
-                kotlinType = this.f35628a.getTypeDeserializer().type(varargElementType);
+                kotlinType = this.f35404a.getTypeDeserializer().type(varargElementType);
             } else {
                 kotlinType = null;
             }
@@ -259,19 +259,19 @@ public final class MemberDeserializer {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List y(MemberDeserializer memberDeserializer, ProtoContainer protoContainer, MessageLite messageLite, AnnotatedCallableKind annotatedCallableKind, int i10, ProtoBuf.ValueParameter valueParameter) {
-        return CollectionsKt.h1(memberDeserializer.f35628a.getComponents().getAnnotationAndConstantLoader().loadValueParameterAnnotations(protoContainer, messageLite, annotatedCallableKind, i10, valueParameter));
+        return CollectionsKt.h1(memberDeserializer.f35404a.getComponents().getAnnotationAndConstantLoader().loadValueParameterAnnotations(protoContainer, messageLite, annotatedCallableKind, i10, valueParameter));
     }
 
     @NotNull
     public final ClassConstructorDescriptor loadConstructor(@NotNull ProtoBuf.Constructor proto, boolean z10) {
         Intrinsics.checkNotNullParameter(proto, "proto");
-        DeclarationDescriptor containingDeclaration = this.f35628a.getContainingDeclaration();
+        DeclarationDescriptor containingDeclaration = this.f35404a.getContainingDeclaration();
         Intrinsics.checkNotNull(containingDeclaration, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
         ClassDescriptor classDescriptor = (ClassDescriptor) containingDeclaration;
         int flags = proto.getFlags();
         AnnotatedCallableKind annotatedCallableKind = AnnotatedCallableKind.FUNCTION;
-        DeserializedClassConstructorDescriptor deserializedClassConstructorDescriptor = new DeserializedClassConstructorDescriptor(classDescriptor, null, j(proto, flags, annotatedCallableKind), z10, CallableMemberDescriptor.Kind.DECLARATION, proto, this.f35628a.getNameResolver(), this.f35628a.getTypeTable(), this.f35628a.getVersionRequirementTable(), this.f35628a.getContainerSource(), null, IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET, null);
-        MemberDeserializer memberDeserializer = DeserializationContext.childContext$default(this.f35628a, deserializedClassConstructorDescriptor, CollectionsKt.l(), null, null, null, null, 60, null).getMemberDeserializer();
+        DeserializedClassConstructorDescriptor deserializedClassConstructorDescriptor = new DeserializedClassConstructorDescriptor(classDescriptor, null, j(proto, flags, annotatedCallableKind), z10, CallableMemberDescriptor.Kind.DECLARATION, proto, this.f35404a.getNameResolver(), this.f35404a.getTypeTable(), this.f35404a.getVersionRequirementTable(), this.f35404a.getContainerSource(), null, IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET, null);
+        MemberDeserializer memberDeserializer = DeserializationContext.childContext$default(this.f35404a, deserializedClassConstructorDescriptor, CollectionsKt.l(), null, null, null, null, 60, null).getMemberDeserializer();
         List<ProtoBuf.ValueParameter> valueParameterList = proto.getValueParameterList();
         Intrinsics.checkNotNullExpressionValue(valueParameterList, "getValueParameterList(...)");
         deserializedClassConstructorDescriptor.initialize(memberDeserializer.x(valueParameterList, proto, annotatedCallableKind), ProtoEnumFlagsUtilsKt.descriptorVisibility(ProtoEnumFlags.INSTANCE, Flags.VISIBILITY.get(proto.getFlags())));
@@ -302,25 +302,25 @@ public final class MemberDeserializer {
         } else {
             empty = Annotations.Companion.getEMPTY();
         }
-        if (Intrinsics.areEqual(DescriptorUtilsKt.getFqNameSafe(this.f35628a.getContainingDeclaration()).child(NameResolverUtilKt.getName(this.f35628a.getNameResolver(), proto.getName())), SuspendFunctionTypeUtilKt.KOTLIN_SUSPEND_BUILT_IN_FUNCTION_FQ_NAME)) {
+        if (Intrinsics.areEqual(DescriptorUtilsKt.getFqNameSafe(this.f35404a.getContainingDeclaration()).child(NameResolverUtilKt.getName(this.f35404a.getNameResolver(), proto.getName())), SuspendFunctionTypeUtilKt.KOTLIN_SUSPEND_BUILT_IN_FUNCTION_FQ_NAME)) {
             versionRequirementTable = VersionRequirementTable.Companion.getEMPTY();
         } else {
-            versionRequirementTable = this.f35628a.getVersionRequirementTable();
+            versionRequirementTable = this.f35404a.getVersionRequirementTable();
         }
         Annotations annotations = empty;
-        DeserializedSimpleFunctionDescriptor deserializedSimpleFunctionDescriptor = new DeserializedSimpleFunctionDescriptor(this.f35628a.getContainingDeclaration(), null, j10, NameResolverUtilKt.getName(this.f35628a.getNameResolver(), proto.getName()), ProtoEnumFlagsUtilsKt.memberKind(ProtoEnumFlags.INSTANCE, Flags.MEMBER_KIND.get(i10)), proto, this.f35628a.getNameResolver(), this.f35628a.getTypeTable(), versionRequirementTable, this.f35628a.getContainerSource(), null, IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET, null);
-        DeserializationContext deserializationContext = this.f35628a;
+        DeserializedSimpleFunctionDescriptor deserializedSimpleFunctionDescriptor = new DeserializedSimpleFunctionDescriptor(this.f35404a.getContainingDeclaration(), null, j10, NameResolverUtilKt.getName(this.f35404a.getNameResolver(), proto.getName()), ProtoEnumFlagsUtilsKt.memberKind(ProtoEnumFlags.INSTANCE, Flags.MEMBER_KIND.get(i10)), proto, this.f35404a.getNameResolver(), this.f35404a.getTypeTable(), versionRequirementTable, this.f35404a.getContainerSource(), null, IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET, null);
+        DeserializationContext deserializationContext = this.f35404a;
         List<ProtoBuf.TypeParameter> typeParameterList = proto.getTypeParameterList();
         Intrinsics.checkNotNullExpressionValue(typeParameterList, "getTypeParameterList(...)");
         DeserializationContext childContext$default = DeserializationContext.childContext$default(deserializationContext, deserializedSimpleFunctionDescriptor, typeParameterList, null, null, null, null, 60, null);
-        ProtoBuf.Type receiverType = ProtoTypeTableUtilKt.receiverType(proto, this.f35628a.getTypeTable());
+        ProtoBuf.Type receiverType = ProtoTypeTableUtilKt.receiverType(proto, this.f35404a.getTypeTable());
         if (receiverType != null && (type = childContext$default.getTypeDeserializer().type(receiverType)) != null) {
             receiverParameterDescriptor = DescriptorFactory.createExtensionReceiverParameterForCallable(deserializedSimpleFunctionDescriptor, type, annotations);
         } else {
             receiverParameterDescriptor = null;
         }
         ReceiverParameterDescriptor l10 = l();
-        List<ProtoBuf.Type> contextReceiverTypes = ProtoTypeTableUtilKt.contextReceiverTypes(proto, this.f35628a.getTypeTable());
+        List<ProtoBuf.Type> contextReceiverTypes = ProtoTypeTableUtilKt.contextReceiverTypes(proto, this.f35404a.getTypeTable());
         List arrayList = new ArrayList();
         int i11 = 0;
         for (Object obj : contextReceiverTypes) {
@@ -339,7 +339,7 @@ public final class MemberDeserializer {
         List valueParameterList = proto.getValueParameterList();
         Intrinsics.checkNotNullExpressionValue(valueParameterList, "getValueParameterList(...)");
         List x10 = memberDeserializer.x(valueParameterList, proto, AnnotatedCallableKind.FUNCTION);
-        KotlinType type2 = childContext$default.getTypeDeserializer().type(ProtoTypeTableUtilKt.returnType(proto, this.f35628a.getTypeTable()));
+        KotlinType type2 = childContext$default.getTypeDeserializer().type(ProtoTypeTableUtilKt.returnType(proto, this.f35404a.getTypeTable()));
         ProtoEnumFlags protoEnumFlags = ProtoEnumFlags.INSTANCE;
         q(deserializedSimpleFunctionDescriptor, receiverParameterDescriptor, l10, arrayList, ownTypeParameters, x10, type2, protoEnumFlags.modality(Flags.MODALITY.get(i10)), ProtoEnumFlagsUtilsKt.descriptorVisibility(protoEnumFlags, Flags.VISIBILITY.get(i10)), o0.i());
         Boolean bool = Flags.IS_OPERATOR.get(i10);
@@ -364,7 +364,7 @@ public final class MemberDeserializer {
         Intrinsics.checkNotNullExpressionValue(bool7, "get(...)");
         deserializedSimpleFunctionDescriptor.setExpect(bool7.booleanValue());
         deserializedSimpleFunctionDescriptor.setHasStableParameterNames(!Flags.IS_FUNCTION_WITH_NON_STABLE_PARAMETER_NAMES.get(i10).booleanValue());
-        Pair<CallableDescriptor.UserDataKey<?>, Object> deserializeContractFromFunction = this.f35628a.getComponents().getContractDeserializer().deserializeContractFromFunction(proto, deserializedSimpleFunctionDescriptor, this.f35628a.getTypeTable(), childContext$default.getTypeDeserializer());
+        Pair<CallableDescriptor.UserDataKey<?>, Object> deserializeContractFromFunction = this.f35404a.getComponents().getContractDeserializer().deserializeContractFromFunction(proto, deserializedSimpleFunctionDescriptor, this.f35404a.getTypeTable(), childContext$default.getTypeDeserializer());
         if (deserializeContractFromFunction != null) {
             deserializedSimpleFunctionDescriptor.putInUserDataMap((CallableDescriptor.UserDataKey) deserializeContractFromFunction.c(), deserializeContractFromFunction.d());
         }
@@ -392,7 +392,7 @@ public final class MemberDeserializer {
         } else {
             r10 = r(proto.getOldFlags());
         }
-        DeclarationDescriptor containingDeclaration = this.f35628a.getContainingDeclaration();
+        DeclarationDescriptor containingDeclaration = this.f35404a.getContainingDeclaration();
         Annotations j10 = j(proto, r10, AnnotatedCallableKind.PROPERTY);
         ProtoEnumFlags protoEnumFlags = ProtoEnumFlags.INSTANCE;
         Modality modality = protoEnumFlags.modality(Flags.MODALITY.get(r10));
@@ -400,7 +400,7 @@ public final class MemberDeserializer {
         Boolean bool = Flags.IS_VAR.get(r10);
         Intrinsics.checkNotNullExpressionValue(bool, "get(...)");
         boolean booleanValue = bool.booleanValue();
-        Name name = NameResolverUtilKt.getName(this.f35628a.getNameResolver(), proto.getName());
+        Name name = NameResolverUtilKt.getName(this.f35404a.getNameResolver(), proto.getName());
         CallableMemberDescriptor.Kind memberKind = ProtoEnumFlagsUtilsKt.memberKind(protoEnumFlags, Flags.MEMBER_KIND.get(r10));
         Boolean bool2 = Flags.IS_LATEINIT.get(r10);
         Intrinsics.checkNotNullExpressionValue(bool2, "get(...)");
@@ -417,8 +417,8 @@ public final class MemberDeserializer {
         Boolean bool6 = Flags.IS_EXPECT_PROPERTY.get(r10);
         Intrinsics.checkNotNullExpressionValue(bool6, "get(...)");
         int i11 = r10;
-        DeserializedPropertyDescriptor deserializedPropertyDescriptor = new DeserializedPropertyDescriptor(containingDeclaration, null, j10, modality, descriptorVisibility, booleanValue, name, memberKind, booleanValue2, booleanValue3, booleanValue4, booleanValue5, bool6.booleanValue(), proto, this.f35628a.getNameResolver(), this.f35628a.getTypeTable(), this.f35628a.getVersionRequirementTable(), this.f35628a.getContainerSource());
-        DeserializationContext deserializationContext2 = this.f35628a;
+        DeserializedPropertyDescriptor deserializedPropertyDescriptor = new DeserializedPropertyDescriptor(containingDeclaration, null, j10, modality, descriptorVisibility, booleanValue, name, memberKind, booleanValue2, booleanValue3, booleanValue4, booleanValue5, bool6.booleanValue(), proto, this.f35404a.getNameResolver(), this.f35404a.getTypeTable(), this.f35404a.getVersionRequirementTable(), this.f35404a.getContainerSource());
+        DeserializationContext deserializationContext2 = this.f35404a;
         List<ProtoBuf.TypeParameter> typeParameterList = proto.getTypeParameterList();
         Intrinsics.checkNotNullExpressionValue(typeParameterList, "getTypeParameterList(...)");
         DeserializationContext childContext$default = DeserializationContext.childContext$default(deserializationContext2, deserializedPropertyDescriptor, typeParameterList, null, null, null, null, 60, null);
@@ -430,17 +430,17 @@ public final class MemberDeserializer {
         } else {
             empty = Annotations.Companion.getEMPTY();
         }
-        KotlinType type2 = childContext$default.getTypeDeserializer().type(ProtoTypeTableUtilKt.returnType(proto, this.f35628a.getTypeTable()));
+        KotlinType type2 = childContext$default.getTypeDeserializer().type(ProtoTypeTableUtilKt.returnType(proto, this.f35404a.getTypeTable()));
         List<TypeParameterDescriptor> ownTypeParameters = childContext$default.getTypeDeserializer().getOwnTypeParameters();
         ReceiverParameterDescriptor l10 = l();
-        ProtoBuf.Type receiverType = ProtoTypeTableUtilKt.receiverType(proto, this.f35628a.getTypeTable());
+        ProtoBuf.Type receiverType = ProtoTypeTableUtilKt.receiverType(proto, this.f35404a.getTypeTable());
         ClassKind classKind = null;
         if (receiverType != null && (type = childContext$default.getTypeDeserializer().type(receiverType)) != null) {
             receiverParameterDescriptor = DescriptorFactory.createExtensionReceiverParameterForCallable(deserializedPropertyDescriptor, type, empty);
         } else {
             receiverParameterDescriptor = null;
         }
-        List<ProtoBuf.Type> contextReceiverTypes = ProtoTypeTableUtilKt.contextReceiverTypes(proto, this.f35628a.getTypeTable());
+        List<ProtoBuf.Type> contextReceiverTypes = ProtoTypeTableUtilKt.contextReceiverTypes(proto, this.f35404a.getTypeTable());
         ArrayList arrayList = new ArrayList(CollectionsKt.w(contextReceiverTypes, 10));
         int i12 = 0;
         for (Object obj : contextReceiverTypes) {
@@ -533,7 +533,7 @@ public final class MemberDeserializer {
         if (Flags.HAS_CONSTANT.get(i11).booleanValue()) {
             deserializedPropertyDescriptor.setCompileTimeInitializerFactory(new e(this, proto, deserializedPropertyDescriptor));
         }
-        DeclarationDescriptor containingDeclaration2 = this.f35628a.getContainingDeclaration();
+        DeclarationDescriptor containingDeclaration2 = this.f35404a.getContainingDeclaration();
         if (containingDeclaration2 instanceof ClassDescriptor) {
             classDescriptor = (ClassDescriptor) containingDeclaration2;
         } else {
@@ -558,16 +558,16 @@ public final class MemberDeserializer {
         List<ProtoBuf.Annotation> list = annotationList;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (ProtoBuf.Annotation annotation : list) {
-            AnnotationDeserializer annotationDeserializer = this.f35629b;
+            AnnotationDeserializer annotationDeserializer = this.f35405b;
             Intrinsics.checkNotNull(annotation);
-            arrayList.add(annotationDeserializer.deserializeAnnotation(annotation, this.f35628a.getNameResolver()));
+            arrayList.add(annotationDeserializer.deserializeAnnotation(annotation, this.f35404a.getNameResolver()));
         }
-        DeserializedTypeAliasDescriptor deserializedTypeAliasDescriptor = new DeserializedTypeAliasDescriptor(this.f35628a.getStorageManager(), this.f35628a.getContainingDeclaration(), companion.create(arrayList), NameResolverUtilKt.getName(this.f35628a.getNameResolver(), proto.getName()), ProtoEnumFlagsUtilsKt.descriptorVisibility(ProtoEnumFlags.INSTANCE, Flags.VISIBILITY.get(proto.getFlags())), proto, this.f35628a.getNameResolver(), this.f35628a.getTypeTable(), this.f35628a.getVersionRequirementTable(), this.f35628a.getContainerSource());
-        DeserializationContext deserializationContext = this.f35628a;
+        DeserializedTypeAliasDescriptor deserializedTypeAliasDescriptor = new DeserializedTypeAliasDescriptor(this.f35404a.getStorageManager(), this.f35404a.getContainingDeclaration(), companion.create(arrayList), NameResolverUtilKt.getName(this.f35404a.getNameResolver(), proto.getName()), ProtoEnumFlagsUtilsKt.descriptorVisibility(ProtoEnumFlags.INSTANCE, Flags.VISIBILITY.get(proto.getFlags())), proto, this.f35404a.getNameResolver(), this.f35404a.getTypeTable(), this.f35404a.getVersionRequirementTable(), this.f35404a.getContainerSource());
+        DeserializationContext deserializationContext = this.f35404a;
         List<ProtoBuf.TypeParameter> typeParameterList = proto.getTypeParameterList();
         Intrinsics.checkNotNullExpressionValue(typeParameterList, "getTypeParameterList(...)");
         DeserializationContext childContext$default = DeserializationContext.childContext$default(deserializationContext, deserializedTypeAliasDescriptor, typeParameterList, null, null, null, null, 60, null);
-        deserializedTypeAliasDescriptor.initialize(childContext$default.getTypeDeserializer().getOwnTypeParameters(), childContext$default.getTypeDeserializer().simpleType(ProtoTypeTableUtilKt.underlyingType(proto, this.f35628a.getTypeTable()), false), childContext$default.getTypeDeserializer().simpleType(ProtoTypeTableUtilKt.expandedType(proto, this.f35628a.getTypeTable()), false));
+        deserializedTypeAliasDescriptor.initialize(childContext$default.getTypeDeserializer().getOwnTypeParameters(), childContext$default.getTypeDeserializer().simpleType(ProtoTypeTableUtilKt.underlyingType(proto, this.f35404a.getTypeTable()), false), childContext$default.getTypeDeserializer().simpleType(ProtoTypeTableUtilKt.expandedType(proto, this.f35404a.getTypeTable()), false));
         return deserializedTypeAliasDescriptor;
     }
 }

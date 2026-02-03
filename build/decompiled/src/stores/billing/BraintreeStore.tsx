@@ -1,7 +1,7 @@
 // stores/billing/BraintreeStore.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun25419: for (var _fun25419_ip = 0;;) switch (_fun25419_ip) {
+    _fun25509: for (var _fun25509_ip = 0;;) switch (_fun25509_ip) {
         case 0:
             var4 = require;
             var6 = metroImportDefault;
@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var5;
             var0 = function() {
-                _fun25420: for (var _fun25420_ip = 0;;) switch (_fun25420_ip) {
+                _fun25510: for (var _fun25510_ip = 0;;) switch (_fun25510_ip) {
                     case 0:
                     case 2: // try_start_0
                         var1 = global;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = !var1;
                         var _closure2_slot0 = var1;
                     case 70: // try_end0
-                        _fun25420_ip = 74;
-                        continue _fun25420;
+                        _fun25510_ip = 74;
+                        continue _fun25510;
                     case 72: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 74:
@@ -97,20 +97,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var8.isDesktop;
             var7 = var7.bind(var8)();
             if (!var7) {
-                _fun25419_ip = 259;
-                continue _fun25419
+                _fun25509_ip = 259;
+                continue _fun25509
             }
         case 225:
             var7 = var1.window;
             var1 = {};
             var8 = function() {
-                _fun25423: for (var _fun25423_ip = 0;;) switch (_fun25423_ip) {
+                _fun25513: for (var _fun25513_ip = 0;;) switch (_fun25513_ip) {
                     case 0:
                         var2 = _closure1_slot10;
                         var1 = null;
                         if (!(var1 != var2)) {
-                            _fun25423_ip = 81;
-                            continue _fun25423
+                            _fun25513_ip = 81;
+                            continue _fun25513
                         }
                     case 13:
                         var3 = _closure1_slot0;
@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var1.Store;
             var1 = function(arg0) { // Environment: var3
                 var3 = function() {
-                    _fun25426: for (var _fun25426_ip = 0;;) switch (_fun25426_ip) {
+                    _fun25516: for (var _fun25516_ip = 0;;) switch (_fun25516_ip) {
                         case 0:
                             var3 = this;
                             var2 = undefined;
@@ -182,16 +182,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = _closure1_slot16;
                             var0 = var0.bind(var2)();
                             if (var0) {
-                                _fun25426_ip = 69;
-                                continue _fun25426
+                                _fun25516_ip = 69;
+                                continue _fun25516
                             }
                         case 51:
                             var6 = var8.apply;
                             var4 = arguments;
                             var0 = var4;
                             var0 = var6.bind(var8)(var3, var0);
-                            _fun25426_ip = 105;
-                            continue _fun25426;
+                            _fun25516_ip = 105;
+                            continue _fun25516;
                         case 69:
                             var6 = global;
                             var7 = var6.Reflect;
@@ -276,7 +276,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS = var6;
             var6 = function arg0() {
-                _fun25433: for (var _fun25433_ip = 0;;) switch (_fun25433_ip) {
+                _fun25523: for (var _fun25523_ip = 0;;) switch (_fun25523_ip) {
                     case 0:
                         var0 = arg0;
                         var5 = var0.paymentSourceType;
@@ -286,14 +286,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = _closure1_slot9;
                         var4 = var4.PAYPAL;
                         if (!(var5 === var4)) {
-                            _fun25433_ip = 104;
-                            continue _fun25433
+                            _fun25523_ip = 104;
+                            continue _fun25523
                         }
                     case 43:
                         var2 = _closure1_slot10;
                         if (!(var3 === var2)) {
-                            _fun25433_ip = 104;
-                            continue _fun25433
+                            _fun25523_ip = 104;
+                            continue _fun25523
                         }
                     case 51:
                         var2 = global;
@@ -303,8 +303,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = 'function';
                         var2 = typeof var3;
                         if (!(var4 === var2)) {
-                            _fun25433_ip = 104;
-                            continue _fun25433
+                            _fun25523_ip = 104;
+                            continue _fun25523
                         }
                     case 82:
                         var2 = {};
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.BILLING_POPUP_BRIDGE_CALLBACK = var6;
             var6 = function arg0() {
-                _fun25434: for (var _fun25434_ip = 0;;) switch (_fun25434_ip) {
+                _fun25524: for (var _fun25524_ip = 0;;) switch (_fun25524_ip) {
                     case 0:
                         var0 = arg0;
                         var3 = var0.paymentSourceType;
@@ -328,8 +328,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = _closure1_slot9;
                         var2 = var2.PAYPAL;
                         if (!(var3 === var2)) {
-                            _fun25434_ip = 35;
-                            continue _fun25434
+                            _fun25524_ip = 35;
+                            continue _fun25524
                         }
                     case 31:
                         var _closure1_slot10 = var1;

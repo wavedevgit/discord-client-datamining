@@ -7,13 +7,13 @@ public enum g {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f12609d;
+    private final int f12238d;
 
     g(int i10) {
-        this.f12609d = i10;
+        this.f12238d = i10;
     }
 
     public int d() {
-        return this.f12609d;
+        return this.f12238d;
     }
 }

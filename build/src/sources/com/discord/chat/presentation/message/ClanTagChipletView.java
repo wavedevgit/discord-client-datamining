@@ -69,15 +69,15 @@ public final class ClanTagChipletView extends FrameLayout {
     }
 
     /* renamed from: configure-D0ylKIU$default  reason: not valid java name */
-    public static /* synthetic */ void m501configureD0ylKIU$default(ClanTagChipletView clanTagChipletView, String str, String str2, long j10, ChatEventHandler chatEventHandler, float f10, int i10, Object obj) {
+    public static /* synthetic */ void m503configureD0ylKIU$default(ClanTagChipletView clanTagChipletView, String str, String str2, long j10, ChatEventHandler chatEventHandler, float f10, int i10, Object obj) {
         if ((i10 & 16) != 0) {
             f10 = 1.0f;
         }
-        clanTagChipletView.m502configureD0ylKIU(str, str2, j10, chatEventHandler, f10);
+        clanTagChipletView.m504configureD0ylKIU(str, str2, j10, chatEventHandler, f10);
     }
 
     /* renamed from: configure-D0ylKIU  reason: not valid java name */
-    public final void m502configureD0ylKIU(@NotNull String tagContent, String str, final long j10, final ChatEventHandler chatEventHandler, float f10) {
+    public final void m504configureD0ylKIU(@NotNull String tagContent, String str, final long j10, final ChatEventHandler chatEventHandler, float f10) {
         Intrinsics.checkNotNullParameter(tagContent, "tagContent");
         this.binding.container.getLayoutParams().height = SizeUtilsKt.getDpToPx(BASE_HEIGHT * f10);
         int dpToPx = SizeUtilsKt.getDpToPx(4.0f * f10);
@@ -108,7 +108,7 @@ public final class ClanTagChipletView extends FrameLayout {
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(linearLayout, false, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.a
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    ChatEventHandler.this.mo453onTapClanTagChipletg3bFfsM(j10);
+                    ChatEventHandler.this.mo455onTapClanTagChipletg3bFfsM(j10);
                 }
             }, 1, null);
         }

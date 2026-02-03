@@ -9,24 +9,24 @@ import kotlin.reflect.jvm.internal.impl.storage.NullableLazyValue;
 public class f implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final MemberDeserializer f35769d;
+    private final MemberDeserializer f35545d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ProtoBuf.Property f35770e;
+    private final ProtoBuf.Property f35546e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final DeserializedPropertyDescriptor f35771i;
+    private final DeserializedPropertyDescriptor f35547i;
 
     public f(MemberDeserializer memberDeserializer, ProtoBuf.Property property, DeserializedPropertyDescriptor deserializedPropertyDescriptor) {
-        this.f35769d = memberDeserializer;
-        this.f35770e = property;
-        this.f35771i = deserializedPropertyDescriptor;
+        this.f35545d = memberDeserializer;
+        this.f35546e = property;
+        this.f35547i = deserializedPropertyDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         NullableLazyValue u10;
-        u10 = MemberDeserializer.u(this.f35769d, this.f35770e, this.f35771i);
+        u10 = MemberDeserializer.u(this.f35545d, this.f35546e, this.f35547i);
         return u10;
     }
 }

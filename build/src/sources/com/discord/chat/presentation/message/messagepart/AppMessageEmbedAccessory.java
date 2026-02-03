@@ -23,7 +23,7 @@ public final class AppMessageEmbedAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-pPZZVto$default  reason: not valid java name */
-    public static /* synthetic */ AppMessageEmbedAccessory m540copypPZZVto$default(AppMessageEmbedAccessory appMessageEmbedAccessory, String str, MessageMargins messageMargins, int i10, AppMessageEmbedImpl appMessageEmbedImpl, int i11, int i12, Object obj) {
+    public static /* synthetic */ AppMessageEmbedAccessory m542copypPZZVto$default(AppMessageEmbedAccessory appMessageEmbedAccessory, String str, MessageMargins messageMargins, int i10, AppMessageEmbedImpl appMessageEmbedImpl, int i11, int i12, Object obj) {
         if ((i12 & 1) != 0) {
             str = appMessageEmbedAccessory.messageId;
         }
@@ -41,12 +41,12 @@ public final class AppMessageEmbedAccessory extends MessageAccessory {
         }
         int i13 = i11;
         int i14 = i10;
-        return appMessageEmbedAccessory.m542copypPZZVto(str, messageMargins, i14, appMessageEmbedImpl, i13);
+        return appMessageEmbedAccessory.m544copypPZZVto(str, messageMargins, i14, appMessageEmbedImpl, i13);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m541component13Eiw7ao() {
+    public final String m543component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -70,7 +70,7 @@ public final class AppMessageEmbedAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-pPZZVto  reason: not valid java name */
-    public final AppMessageEmbedAccessory m542copypPZZVto(@NotNull String messageId, @NotNull MessageMargins margins, int i10, @NotNull AppMessageEmbedImpl appMessageEmbed, int i11) {
+    public final AppMessageEmbedAccessory m544copypPZZVto(@NotNull String messageId, @NotNull MessageMargins margins, int i10, @NotNull AppMessageEmbedImpl appMessageEmbed, int i11) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(margins, "margins");
         Intrinsics.checkNotNullParameter(appMessageEmbed, "appMessageEmbed");
@@ -83,7 +83,7 @@ public final class AppMessageEmbedAccessory extends MessageAccessory {
         }
         if (obj instanceof AppMessageEmbedAccessory) {
             AppMessageEmbedAccessory appMessageEmbedAccessory = (AppMessageEmbedAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, appMessageEmbedAccessory.messageId) && Intrinsics.areEqual(this.margins, appMessageEmbedAccessory.margins) && this.codedLinkIndex == appMessageEmbedAccessory.codedLinkIndex && Intrinsics.areEqual(this.appMessageEmbed, appMessageEmbedAccessory.appMessageEmbed) && this.constrainedWidth == appMessageEmbedAccessory.constrainedWidth;
+            return MessageId.m1090equalsimpl0(this.messageId, appMessageEmbedAccessory.messageId) && Intrinsics.areEqual(this.margins, appMessageEmbedAccessory.margins) && this.codedLinkIndex == appMessageEmbedAccessory.codedLinkIndex && Intrinsics.areEqual(this.appMessageEmbed, appMessageEmbedAccessory.appMessageEmbed) && this.constrainedWidth == appMessageEmbedAccessory.constrainedWidth;
         }
         return false;
     }
@@ -109,22 +109,22 @@ public final class AppMessageEmbedAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((((((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.appMessageEmbed.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
+        return (((((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + Integer.hashCode(this.codedLinkIndex)) * 31) + this.appMessageEmbed.hashCode()) * 31) + Integer.hashCode(this.constrainedWidth);
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         int i10 = this.codedLinkIndex;
         AppMessageEmbedImpl appMessageEmbedImpl = this.appMessageEmbed;
         int i11 = this.constrainedWidth;
-        return "AppMessageEmbedAccessory(messageId=" + m1091toStringimpl + ", margins=" + messageMargins + ", codedLinkIndex=" + i10 + ", appMessageEmbed=" + appMessageEmbedImpl + ", constrainedWidth=" + i11 + ")";
+        return "AppMessageEmbedAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", codedLinkIndex=" + i10 + ", appMessageEmbed=" + appMessageEmbedImpl + ", constrainedWidth=" + i11 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

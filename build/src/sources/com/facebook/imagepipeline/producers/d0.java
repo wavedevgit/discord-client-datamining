@@ -6,25 +6,25 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d0 extends c0 implements ua.d {
 
     /* renamed from: c  reason: collision with root package name */
-    private final RequestListener f11728c;
+    private final RequestListener f11357c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ua.d f11729d;
+    private final ua.d f11358d;
 
     public d0(RequestListener requestListener, ua.d dVar) {
         super(requestListener, dVar);
-        this.f11728c = requestListener;
-        this.f11729d = dVar;
+        this.f11357c = requestListener;
+        this.f11358d = dVar;
     }
 
     @Override // ua.d
     public void a(ProducerContext producerContext) {
         Intrinsics.checkNotNullParameter(producerContext, "producerContext");
-        RequestListener requestListener = this.f11728c;
+        RequestListener requestListener = this.f11357c;
         if (requestListener != null) {
-            requestListener.onRequestStart(producerContext.V(), producerContext.a(), producerContext.getId(), producerContext.C0());
+            requestListener.onRequestStart(producerContext.V(), producerContext.a(), producerContext.getId(), producerContext.D0());
         }
-        ua.d dVar = this.f11729d;
+        ua.d dVar = this.f11358d;
         if (dVar != null) {
             dVar.a(producerContext);
         }
@@ -33,11 +33,11 @@ public final class d0 extends c0 implements ua.d {
     @Override // ua.d
     public void e(ProducerContext producerContext) {
         Intrinsics.checkNotNullParameter(producerContext, "producerContext");
-        RequestListener requestListener = this.f11728c;
+        RequestListener requestListener = this.f11357c;
         if (requestListener != null) {
-            requestListener.onRequestSuccess(producerContext.V(), producerContext.getId(), producerContext.C0());
+            requestListener.onRequestSuccess(producerContext.V(), producerContext.getId(), producerContext.D0());
         }
-        ua.d dVar = this.f11729d;
+        ua.d dVar = this.f11358d;
         if (dVar != null) {
             dVar.e(producerContext);
         }
@@ -46,11 +46,11 @@ public final class d0 extends c0 implements ua.d {
     @Override // ua.d
     public void g(ProducerContext producerContext) {
         Intrinsics.checkNotNullParameter(producerContext, "producerContext");
-        RequestListener requestListener = this.f11728c;
+        RequestListener requestListener = this.f11357c;
         if (requestListener != null) {
             requestListener.onRequestCancellation(producerContext.getId());
         }
-        ua.d dVar = this.f11729d;
+        ua.d dVar = this.f11358d;
         if (dVar != null) {
             dVar.g(producerContext);
         }
@@ -59,11 +59,11 @@ public final class d0 extends c0 implements ua.d {
     @Override // ua.d
     public void i(ProducerContext producerContext, Throwable th2) {
         Intrinsics.checkNotNullParameter(producerContext, "producerContext");
-        RequestListener requestListener = this.f11728c;
+        RequestListener requestListener = this.f11357c;
         if (requestListener != null) {
-            requestListener.onRequestFailure(producerContext.V(), producerContext.getId(), th2, producerContext.C0());
+            requestListener.onRequestFailure(producerContext.V(), producerContext.getId(), th2, producerContext.D0());
         }
-        ua.d dVar = this.f11729d;
+        ua.d dVar = this.f11358d;
         if (dVar != null) {
             dVar.i(producerContext, th2);
         }

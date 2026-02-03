@@ -2,9 +2,9 @@ package com.withpersona.sdk2.inquiry.network.core;
 
 import com.squareup.moshi.h;
 import java.util.Set;
-import tq.g;
+import uq.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class NetworkCoreModule_ProvideMoshiJsonAdapterFactoryFactory implements tq.d {
+public final class NetworkCoreModule_ProvideMoshiJsonAdapterFactoryFactory implements uq.d {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class InstanceHolder {

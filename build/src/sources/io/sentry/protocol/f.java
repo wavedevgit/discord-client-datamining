@@ -12,13 +12,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class f implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f30357d;
+    private String f29923d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f30358e;
+    private boolean f29924e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f30359i;
+    private Map f29925i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -30,19 +30,19 @@ public final class f implements w1 {
             Boolean bool = null;
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
-                if (!l02.equals("result")) {
-                    if (!l02.equals("flag")) {
+                String m02 = e3Var.m0();
+                m02.getClass();
+                if (!m02.equals("result")) {
+                    if (!m02.equals("flag")) {
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, l02);
+                        e3Var.v1(iLogger, concurrentHashMap, m02);
                     } else {
                         str = e3Var.r1();
                     }
                 } else {
-                    bool = e3Var.v0();
+                    bool = e3Var.x0();
                 }
             }
             if (str != null) {
@@ -63,20 +63,20 @@ public final class f implements w1 {
     }
 
     public f(String str, boolean z10) {
-        this.f30357d = str;
-        this.f30358e = z10;
+        this.f29923d = str;
+        this.f29924e = z10;
     }
 
     public String a() {
-        return this.f30357d;
+        return this.f29923d;
     }
 
     public Boolean b() {
-        return Boolean.valueOf(this.f30358e);
+        return Boolean.valueOf(this.f29924e);
     }
 
     public void c(Map map) {
-        this.f30359i = map;
+        this.f29925i = map;
     }
 
     public boolean equals(Object obj) {
@@ -85,7 +85,7 @@ public final class f implements w1 {
         }
         if (obj != null && f.class == obj.getClass()) {
             f fVar = (f) obj;
-            if (io.sentry.util.y.a(this.f30357d, fVar.f30357d) && io.sentry.util.y.a(Boolean.valueOf(this.f30358e), Boolean.valueOf(fVar.f30358e))) {
+            if (io.sentry.util.y.a(this.f29923d, fVar.f29923d) && io.sentry.util.y.a(Boolean.valueOf(this.f29924e), Boolean.valueOf(fVar.f29924e))) {
                 return true;
             }
         }
@@ -93,18 +93,18 @@ public final class f implements w1 {
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f30357d, Boolean.valueOf(this.f30358e));
+        return io.sentry.util.y.b(this.f29923d, Boolean.valueOf(this.f29924e));
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("flag").f(this.f30357d);
-        f3Var.e("result").d(this.f30358e);
-        Map map = this.f30359i;
+        f3Var.e("flag").f(this.f29923d);
+        f3Var.e("result").d(this.f29924e);
+        Map map = this.f29925i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30359i.get(str));
+                f3Var.e(str).j(iLogger, this.f29925i.get(str));
             }
         }
         f3Var.y();

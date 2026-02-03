@@ -8,22 +8,22 @@ import ne.w0;
 public final class VideoSize implements g {
 
     /* renamed from: p  reason: collision with root package name */
-    public static final VideoSize f14513p = new VideoSize(0, 0);
+    public static final VideoSize f14142p = new VideoSize(0, 0);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String f14514q = w0.B0(0);
+    private static final String f14143q = w0.B0(0);
 
     /* renamed from: r  reason: collision with root package name */
-    private static final String f14515r = w0.B0(1);
+    private static final String f14144r = w0.B0(1);
 
     /* renamed from: s  reason: collision with root package name */
-    private static final String f14516s = w0.B0(2);
+    private static final String f14145s = w0.B0(2);
 
     /* renamed from: t  reason: collision with root package name */
-    private static final String f14517t = w0.B0(3);
+    private static final String f14146t = w0.B0(3);
 
     /* renamed from: u  reason: collision with root package name */
-    public static final g.a f14518u = new g.a() { // from class: oe.z
+    public static final g.a f14147u = new g.a() { // from class: oe.z
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             return VideoSize.a(bundle);
@@ -31,23 +31,23 @@ public final class VideoSize implements g {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f14519d;
+    public final int f14148d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f14520e;
+    public final int f14149e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final int f14521i;
+    public final int f14150i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final float f14522o;
+    public final float f14151o;
 
     public VideoSize(int i10, int i11) {
         this(i10, i11, 0, 1.0f);
     }
 
     public static /* synthetic */ VideoSize a(Bundle bundle) {
-        return new VideoSize(bundle.getInt(f14514q, 0), bundle.getInt(f14515r, 0), bundle.getInt(f14516s, 0), bundle.getFloat(f14517t, 1.0f));
+        return new VideoSize(bundle.getInt(f14143q, 0), bundle.getInt(f14144r, 0), bundle.getInt(f14145s, 0), bundle.getFloat(f14146t, 1.0f));
     }
 
     public boolean equals(Object obj) {
@@ -56,7 +56,7 @@ public final class VideoSize implements g {
         }
         if (obj instanceof VideoSize) {
             VideoSize videoSize = (VideoSize) obj;
-            if (this.f14519d == videoSize.f14519d && this.f14520e == videoSize.f14520e && this.f14521i == videoSize.f14521i && this.f14522o == videoSize.f14522o) {
+            if (this.f14148d == videoSize.f14148d && this.f14149e == videoSize.f14149e && this.f14150i == videoSize.f14150i && this.f14151o == videoSize.f14151o) {
                 return true;
             }
         }
@@ -64,13 +64,13 @@ public final class VideoSize implements g {
     }
 
     public int hashCode() {
-        return ((((((217 + this.f14519d) * 31) + this.f14520e) * 31) + this.f14521i) * 31) + Float.floatToRawIntBits(this.f14522o);
+        return ((((((217 + this.f14148d) * 31) + this.f14149e) * 31) + this.f14150i) * 31) + Float.floatToRawIntBits(this.f14151o);
     }
 
     public VideoSize(int i10, int i11, int i12, float f10) {
-        this.f14519d = i10;
-        this.f14520e = i11;
-        this.f14521i = i12;
-        this.f14522o = f10;
+        this.f14148d = i10;
+        this.f14149e = i11;
+        this.f14150i = i12;
+        this.f14151o = f10;
     }
 }

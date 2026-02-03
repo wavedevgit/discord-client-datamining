@@ -5,7 +5,7 @@ import ui.c;
 final class d7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d7 f38154a = new d7();
+    static final d7 f38134a = new d7();
 
     static {
         c.b a10 = ui.c.a("remoteModelOptions");

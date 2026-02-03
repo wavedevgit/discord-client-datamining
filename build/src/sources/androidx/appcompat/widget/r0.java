@@ -11,37 +11,37 @@ import android.view.View;
 public abstract class r0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ThreadLocal f1777a = new ThreadLocal();
+    private static final ThreadLocal f1821a = new ThreadLocal();
 
     /* renamed from: b  reason: collision with root package name */
-    static final int[] f1778b = {-16842910};
+    static final int[] f1822b = {-16842910};
 
     /* renamed from: c  reason: collision with root package name */
-    static final int[] f1779c = {16842908};
+    static final int[] f1823c = {16842908};
 
     /* renamed from: d  reason: collision with root package name */
-    static final int[] f1780d = {16843518};
+    static final int[] f1824d = {16843518};
 
     /* renamed from: e  reason: collision with root package name */
-    static final int[] f1781e = {16842919};
+    static final int[] f1825e = {16842919};
 
     /* renamed from: f  reason: collision with root package name */
-    static final int[] f1782f = {16842912};
+    static final int[] f1826f = {16842912};
 
     /* renamed from: g  reason: collision with root package name */
-    static final int[] f1783g = {16842913};
+    static final int[] f1827g = {16842913};
 
     /* renamed from: h  reason: collision with root package name */
-    static final int[] f1784h = {-16842919, -16842908};
+    static final int[] f1828h = {-16842919, -16842908};
 
     /* renamed from: i  reason: collision with root package name */
-    static final int[] f1785i = new int[0];
+    static final int[] f1829i = new int[0];
 
     /* renamed from: j  reason: collision with root package name */
-    private static final int[] f1786j = new int[1];
+    private static final int[] f1830j = new int[1];
 
     public static void a(View view, Context context) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(f.j.f24328y0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(f.j.f23539y0);
         try {
             if (!obtainStyledAttributes.hasValue(f.j.D0)) {
                 Log.e("ThemeUtils", "View " + view.getClass() + " is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant).");
@@ -54,7 +54,7 @@ public abstract class r0 {
     public static int b(Context context, int i10) {
         ColorStateList e10 = e(context, i10);
         if (e10 != null && e10.isStateful()) {
-            return e10.getColorForState(f1778b, e10.getDefaultColor());
+            return e10.getColorForState(f1822b, e10.getDefaultColor());
         }
         TypedValue f10 = f();
         context.getTheme().resolveAttribute(16842803, f10, true);
@@ -62,7 +62,7 @@ public abstract class r0 {
     }
 
     public static int c(Context context, int i10) {
-        int[] iArr = f1786j;
+        int[] iArr = f1830j;
         iArr[0] = i10;
         v0 u10 = v0.u(context, null, iArr);
         try {
@@ -78,7 +78,7 @@ public abstract class r0 {
     }
 
     public static ColorStateList e(Context context, int i10) {
-        int[] iArr = f1786j;
+        int[] iArr = f1830j;
         iArr[0] = i10;
         v0 u10 = v0.u(context, null, iArr);
         try {
@@ -89,7 +89,7 @@ public abstract class r0 {
     }
 
     private static TypedValue f() {
-        ThreadLocal threadLocal = f1777a;
+        ThreadLocal threadLocal = f1821a;
         TypedValue typedValue = (TypedValue) threadLocal.get();
         if (typedValue == null) {
             TypedValue typedValue2 = new TypedValue();

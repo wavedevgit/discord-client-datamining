@@ -17,40 +17,40 @@ import yg.b;
 public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorLayout.c {
 
     /* renamed from: u  reason: collision with root package name */
-    private static final int f15547u = b.F;
+    private static final int f15176u = b.F;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final int f15548v = b.I;
+    private static final int f15177v = b.I;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final int f15549w = b.P;
+    private static final int f15178w = b.P;
 
     /* renamed from: d  reason: collision with root package name */
-    private final LinkedHashSet f15550d;
+    private final LinkedHashSet f15179d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f15551e;
+    private int f15180e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f15552i;
+    private int f15181i;
 
     /* renamed from: o  reason: collision with root package name */
-    private TimeInterpolator f15553o;
+    private TimeInterpolator f15182o;
 
     /* renamed from: p  reason: collision with root package name */
-    private TimeInterpolator f15554p;
+    private TimeInterpolator f15183p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f15555q;
+    private int f15184q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f15556r;
+    private int f15185r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f15557s;
+    private int f15186s;
 
     /* renamed from: t  reason: collision with root package name */
-    private ViewPropertyAnimator f15558t;
+    private ViewPropertyAnimator f15187t;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -60,24 +60,24 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            HideBottomViewOnScrollBehavior.this.f15558t = null;
+            HideBottomViewOnScrollBehavior.this.f15187t = null;
         }
     }
 
     public HideBottomViewOnScrollBehavior() {
-        this.f15550d = new LinkedHashSet();
-        this.f15555q = 0;
-        this.f15556r = 2;
-        this.f15557s = 0;
+        this.f15179d = new LinkedHashSet();
+        this.f15184q = 0;
+        this.f15185r = 2;
+        this.f15186s = 0;
     }
 
     private void J(View view, int i10, long j10, TimeInterpolator timeInterpolator) {
-        this.f15558t = view.animate().translationY(i10).setInterpolator(timeInterpolator).setDuration(j10).setListener(new a());
+        this.f15187t = view.animate().translationY(i10).setInterpolator(timeInterpolator).setDuration(j10).setListener(new a());
     }
 
     private void Q(View view, int i10) {
-        this.f15556r = i10;
-        Iterator it = this.f15550d.iterator();
+        this.f15185r = i10;
+        Iterator it = this.f15179d.iterator();
         if (!it.hasNext()) {
             return;
         }
@@ -91,14 +91,14 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
     }
 
     public boolean K() {
-        if (this.f15556r == 1) {
+        if (this.f15185r == 1) {
             return true;
         }
         return false;
     }
 
     public boolean L() {
-        if (this.f15556r == 2) {
+        if (this.f15185r == 2) {
             return true;
         }
         return false;
@@ -112,15 +112,15 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
         if (K()) {
             return;
         }
-        ViewPropertyAnimator viewPropertyAnimator = this.f15558t;
+        ViewPropertyAnimator viewPropertyAnimator = this.f15187t;
         if (viewPropertyAnimator != null) {
             viewPropertyAnimator.cancel();
             view.clearAnimation();
         }
         Q(view, 1);
-        int i10 = this.f15555q + this.f15557s;
+        int i10 = this.f15184q + this.f15186s;
         if (z10) {
-            J(view, i10, this.f15552i, this.f15554p);
+            J(view, i10, this.f15181i, this.f15183p);
         } else {
             view.setTranslationY(i10);
         }
@@ -134,14 +134,14 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
         if (L()) {
             return;
         }
-        ViewPropertyAnimator viewPropertyAnimator = this.f15558t;
+        ViewPropertyAnimator viewPropertyAnimator = this.f15187t;
         if (viewPropertyAnimator != null) {
             viewPropertyAnimator.cancel();
             view.clearAnimation();
         }
         Q(view, 2);
         if (z10) {
-            J(view, 0, this.f15551e, this.f15553o);
+            J(view, 0, this.f15180e, this.f15182o);
         } else {
             view.setTranslationY(0);
         }
@@ -149,13 +149,13 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public boolean p(CoordinatorLayout coordinatorLayout, View view, int i10) {
-        this.f15555q = view.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) view.getLayoutParams()).bottomMargin;
-        this.f15551e = g.f(view.getContext(), f15547u, 225);
-        this.f15552i = g.f(view.getContext(), f15548v, 175);
+        this.f15184q = view.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) view.getLayoutParams()).bottomMargin;
+        this.f15180e = g.f(view.getContext(), f15176u, 225);
+        this.f15181i = g.f(view.getContext(), f15177v, 175);
         Context context = view.getContext();
-        int i11 = f15549w;
-        this.f15553o = g.g(context, i11, zg.a.f55677d);
-        this.f15554p = g.g(view.getContext(), i11, zg.a.f55676c);
+        int i11 = f15178w;
+        this.f15182o = g.g(context, i11, zg.a.f55809d);
+        this.f15183p = g.g(view.getContext(), i11, zg.a.f55808c);
         return super.p(coordinatorLayout, view, i10);
     }
 
@@ -170,9 +170,9 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
 
     public HideBottomViewOnScrollBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f15550d = new LinkedHashSet();
-        this.f15555q = 0;
-        this.f15556r = 2;
-        this.f15557s = 0;
+        this.f15179d = new LinkedHashSet();
+        this.f15184q = 0;
+        this.f15185r = 2;
+        this.f15186s = 0;
     }
 }

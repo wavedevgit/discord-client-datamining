@@ -7,13 +7,13 @@ import java.math.RoundingMode;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    static final BigInteger f33228a = new BigInteger("16a09e667f3bcc908b2fb1366ea957d3e3adec17512775099da2f590b0667322a", 16);
+    static final BigInteger f32974a = new BigInteger("16a09e667f3bcc908b2fb1366ea957d3e3adec17512775099da2f590b0667322a", 16);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final double f33229b = Math.log(10.0d);
+    private static final double f32975b = Math.log(10.0d);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final double f33230c = Math.log(2.0d);
+    private static final double f32976c = Math.log(2.0d);
 
     public static BigInteger a(BigInteger bigInteger, BigInteger bigInteger2, RoundingMode roundingMode) {
         return new BigDecimal(bigInteger).divide(new BigDecimal(bigInteger2), 0, roundingMode).toBigIntegerExact();

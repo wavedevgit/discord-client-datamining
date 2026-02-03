@@ -4,17 +4,17 @@ package wg;
 public final class j0 implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ k f52619a;
+    final /* synthetic */ k f52186a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j0(k kVar) {
-        this.f52619a = kVar;
+        this.f52186a = kVar;
     }
 
     @Override // wg.h
     public final void a() {
         m0 m0Var;
-        m0Var = this.f52619a.f52620a;
+        m0Var = this.f52186a.f52187a;
         m0Var.u();
     }
 }

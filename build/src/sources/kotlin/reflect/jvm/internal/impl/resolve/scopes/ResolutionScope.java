@@ -39,7 +39,7 @@ public interface ResolutionScope {
     }
 
     /* renamed from: getContributedClassifier */
-    ClassifierDescriptor mo1199getContributedClassifier(@NotNull Name name, @NotNull LookupLocation lookupLocation);
+    ClassifierDescriptor mo1201getContributedClassifier(@NotNull Name name, @NotNull LookupLocation lookupLocation);
 
     @NotNull
     Collection<DeclarationDescriptor> getContributedDescriptors(@NotNull DescriptorKindFilter descriptorKindFilter, @NotNull Function1<? super Name, Boolean> function1);
@@ -48,5 +48,5 @@ public interface ResolutionScope {
     Collection<? extends FunctionDescriptor> getContributedFunctions(@NotNull Name name, @NotNull LookupLocation lookupLocation);
 
     /* renamed from: recordLookup */
-    void mo1202recordLookup(@NotNull Name name, @NotNull LookupLocation lookupLocation);
+    void mo1204recordLookup(@NotNull Name name, @NotNull LookupLocation lookupLocation);
 }

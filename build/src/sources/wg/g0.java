@@ -6,37 +6,37 @@ import java.util.concurrent.Executor;
 final class g0 implements g, f, e, h0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f52613a;
+    private final Executor f52180a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final j f52614b;
+    private final j f52181b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final m0 f52615c;
+    private final m0 f52182c;
 
     public g0(Executor executor, j jVar, m0 m0Var) {
-        this.f52613a = executor;
-        this.f52614b = jVar;
-        this.f52615c = m0Var;
+        this.f52180a = executor;
+        this.f52181b = jVar;
+        this.f52182c = m0Var;
     }
 
     @Override // wg.e
     public final void a() {
-        this.f52615c.u();
+        this.f52182c.u();
     }
 
     @Override // wg.h0
     public final void b(Task task) {
-        this.f52613a.execute(new f0(this, task));
+        this.f52180a.execute(new f0(this, task));
     }
 
     @Override // wg.f
     public final void onFailure(Exception exc) {
-        this.f52615c.s(exc);
+        this.f52182c.s(exc);
     }
 
     @Override // wg.g
     public final void onSuccess(Object obj) {
-        this.f52615c.t(obj);
+        this.f52182c.t(obj);
     }
 }

@@ -2,17 +2,16 @@ package com.discord.media_player;
 
 import android.content.Context;
 import com.discord.media_player.MediaPlayer;
-import gs.j1;
-import gs.m0;
-import gs.u0;
-import ir.v;
+import hs.j1;
+import hs.m0;
+import hs.u0;
 import java.lang.ref.WeakReference;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import js.l0;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
@@ -21,6 +20,7 @@ import kotlinx.coroutines.CompletableJob;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.MutableStateFlow;
+import ks.l0;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000n\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010%\n\u0002\u0010\u0006\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001-B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u001d\u0010\u001b\u001a\u00020\u000f2\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\bH\u0000¢\u0006\u0002\b\u001fJ\u0006\u0010 \u001a\u00020\u000fJ\u0006\u0010!\u001a\u00020\u000fJ\u0016\u0010\"\u001a\u00020\u000f2\f\u0010#\u001a\b\u0012\u0004\u0012\u00020\b0\rH\u0002J\u001e\u0010$\u001a\u00020\b2\u0006\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020\u000b2\u0006\u0010(\u001a\u00020)J\u0015\u0010*\u001a\u00020+2\b\u0010'\u001a\u0004\u0018\u00010\u000b¢\u0006\u0002\u0010,R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\b0\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\f\u001a\n\u0012\u0004\u0012\u00020\b\u0018\u00010\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R(\u0010\u0012\u001a\u0016\u0012\u0012\u0012\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u0015\u0012\u0004\u0012\u00020\u000b0\u00140\u0013X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u001a\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00190\u0013X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0017¨\u0006."}, d2 = {"Lcom/discord/media_player/MediaPlayerManager;", "", "<init>", "()V", "MAX_PLAYER_SIZE", "", "playerPool", "Ljava/util/concurrent/ArrayBlockingQueue;", "Lcom/discord/media_player/MediaPlayer;", "acquiredPlayerMap", "", "", "activePlayerRef", "Ljava/lang/ref/WeakReference;", "activeMonitoringJob", "Lkotlinx/coroutines/Job;", "scope", "Lkotlinx/coroutines/CoroutineScope;", "playbackRateFlow", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Lkotlin/Pair;", "Lcom/discord/media_player/MediaSource;", "getPlaybackRateFlow$media_player_release", "()Lkotlinx/coroutines/flow/MutableStateFlow;", "playbackProgressFlow", "Lcom/discord/media_player/MediaPlayerManager$PlaybackProgress;", "getPlaybackProgressFlow$media_player_release", "mediaPlayerEventHandler", "event", "Lcom/discord/media_player/MediaPlayer$Event;", "mediaPlayer", "mediaPlayerEventHandler$media_player_release", "playActivePlayer", "pauseActivePlayer", "startProgressMonitor", "playerRef", "acquire", "context", "Landroid/content/Context;", "key", "playerSettings", "Lcom/discord/media_player/MediaPlayer$PlayerSettings;", "release", "", "(Ljava/lang/Double;)Z", "PlaybackProgress", "media_player_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nMediaPlayerManager.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MediaPlayerManager.kt\ncom/discord/media_player/MediaPlayerManager\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,161:1\n1#2:162\n*E\n"})
@@ -126,7 +126,7 @@ public final class MediaPlayerManager {
         CompletableJob b10 = j1.b(null, 1, null);
         ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor();
         Intrinsics.checkNotNullExpressionValue(newSingleThreadExecutor, "newSingleThreadExecutor(...)");
-        scope = kotlinx.coroutines.i.a(b10.U0(u0.c(newSingleThreadExecutor)));
+        scope = kotlinx.coroutines.i.a(b10.Z0(u0.c(newSingleThreadExecutor)));
         playbackRateFlow = l0.a(v.a(null, Double.valueOf(0.0d)));
         playbackProgressFlow = l0.a(new PlaybackProgress(null, 0L, 0L));
     }
@@ -137,7 +137,7 @@ public final class MediaPlayerManager {
     /* JADX INFO: Access modifiers changed from: private */
     public final Job startProgressMonitor(WeakReference<MediaPlayer> weakReference) {
         Job d10;
-        d10 = gs.i.d(scope, m0.c(), null, new MediaPlayerManager$startProgressMonitor$1(weakReference, null), 2, null);
+        d10 = hs.i.d(scope, m0.c(), null, new MediaPlayerManager$startProgressMonitor$1(weakReference, null), 2, null);
         return d10;
     }
 
@@ -190,21 +190,21 @@ public final class MediaPlayerManager {
         Job d10;
         Intrinsics.checkNotNullParameter(event, "event");
         Intrinsics.checkNotNullParameter(mediaPlayer, "mediaPlayer");
-        d10 = gs.i.d(scope, null, null, new MediaPlayerManager$mediaPlayerEventHandler$1(mediaPlayer, event, null), 3, null);
+        d10 = hs.i.d(scope, null, null, new MediaPlayerManager$mediaPlayerEventHandler$1(mediaPlayer, event, null), 3, null);
         return d10;
     }
 
     @NotNull
     public final Job pauseActivePlayer() {
         Job d10;
-        d10 = gs.i.d(scope, m0.c(), null, new MediaPlayerManager$pauseActivePlayer$1(null), 2, null);
+        d10 = hs.i.d(scope, m0.c(), null, new MediaPlayerManager$pauseActivePlayer$1(null), 2, null);
         return d10;
     }
 
     @NotNull
     public final Job playActivePlayer() {
         Job d10;
-        d10 = gs.i.d(scope, m0.c(), null, new MediaPlayerManager$playActivePlayer$1(null), 2, null);
+        d10 = hs.i.d(scope, m0.c(), null, new MediaPlayerManager$playActivePlayer$1(null), 2, null);
         return d10;
     }
 

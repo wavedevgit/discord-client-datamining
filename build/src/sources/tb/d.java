@@ -15,43 +15,43 @@ import ub.i;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final Set f49380a;
+    protected final Set f49652a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected final c.b f49381b;
+    protected final c.b f49653b;
 
     /* renamed from: c  reason: collision with root package name */
-    protected final c.a f49382c;
+    protected final c.a f49654c;
 
     /* renamed from: d  reason: collision with root package name */
-    protected boolean f49383d;
+    protected boolean f49655d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected boolean f49384e;
+    protected boolean f49656e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Context f49385d;
+        final /* synthetic */ Context f49657d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ String f49386e;
+        final /* synthetic */ String f49658e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f49387i;
+        final /* synthetic */ String f49659i;
 
-        a(Context context, String str, String str2, c.InterfaceC0636c interfaceC0636c) {
-            this.f49385d = context;
-            this.f49386e = str;
-            this.f49387i = str2;
+        a(Context context, String str, String str2, c.InterfaceC0647c interfaceC0647c) {
+            this.f49657d = context;
+            this.f49658e = str;
+            this.f49659i = str2;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             try {
-                d.this.g(this.f49385d, this.f49386e, this.f49387i);
+                d.this.g(this.f49657d, this.f49658e, this.f49659i);
                 throw null;
             } catch (UnsatisfiedLinkError unused) {
                 throw null;
@@ -66,15 +66,15 @@ public class d {
     public class b implements FilenameFilter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ String f49389a;
+        final /* synthetic */ String f49661a;
 
         b(String str) {
-            this.f49389a = str;
+            this.f49661a = str;
         }
 
         @Override // java.io.FilenameFilter
         public boolean accept(File file, String str) {
-            return str.startsWith(this.f49389a);
+            return str.startsWith(this.f49661a);
         }
     }
 
@@ -88,39 +88,39 @@ public class d {
         d dVar;
         Context context2;
         i iVar;
-        if (this.f49380a.contains(str) && !this.f49383d) {
+        if (this.f49652a.contains(str) && !this.f49655d) {
             i("%s already loaded previously!", str);
             return;
         }
         try {
-            this.f49381b.a(str);
-            this.f49380a.add(str);
+            this.f49653b.a(str);
+            this.f49652a.add(str);
             i("%s (%s) was loaded normally!", str, str2);
         } catch (UnsatisfiedLinkError e10) {
             i("Loading the library normally failed: %s", Log.getStackTraceString(e10));
             i("%s (%s) was not loaded normally, re-linking...", str, str2);
             File d10 = d(context, str, str2);
-            if (d10.exists() && !this.f49383d) {
+            if (d10.exists() && !this.f49655d) {
                 dVar = this;
                 context2 = context;
             } else {
-                if (this.f49383d) {
+                if (this.f49655d) {
                     i("Forcing a re-link of %s (%s)...", str, str2);
                 }
                 b(context, str, str2);
                 dVar = this;
                 context2 = context;
-                this.f49382c.a(context2, this.f49381b.d(), this.f49381b.b(str), d10, dVar);
+                this.f49654c.a(context2, this.f49653b.d(), this.f49653b.b(str), d10, dVar);
             }
             try {
-                if (dVar.f49384e) {
+                if (dVar.f49656e) {
                     try {
                         iVar = new i(d10);
                         try {
                             List<String> l10 = iVar.l();
                             iVar.close();
                             for (String str3 : l10) {
-                                e(context2, dVar.f49381b.c(str3));
+                                e(context2, dVar.f49653b.c(str3));
                             }
                         } catch (Throwable th2) {
                             th = th2;
@@ -137,8 +137,8 @@ public class d {
                 }
             } catch (IOException unused) {
             }
-            dVar.f49381b.e(d10.getAbsolutePath());
-            dVar.f49380a.add(str);
+            dVar.f49653b.e(d10.getAbsolutePath());
+            dVar.f49652a.add(str);
             i("%s (%s) was re-linked!", str, str2);
         }
     }
@@ -146,10 +146,10 @@ public class d {
     protected void b(Context context, String str, String str2) {
         File c10 = c(context);
         File d10 = d(context, str, str2);
-        File[] listFiles = c10.listFiles(new b(this.f49381b.b(str)));
+        File[] listFiles = c10.listFiles(new b(this.f49653b.b(str)));
         if (listFiles != null) {
             for (File file : listFiles) {
-                if (this.f49383d || !file.getAbsolutePath().equals(d10.getAbsolutePath())) {
+                if (this.f49655d || !file.getAbsolutePath().equals(d10.getAbsolutePath())) {
                     file.delete();
                 }
             }
@@ -161,7 +161,7 @@ public class d {
     }
 
     protected File d(Context context, String str, String str2) {
-        String b10 = this.f49381b.b(str);
+        String b10 = this.f49653b.b(str);
         if (f.a(str2)) {
             return new File(c(context), b10);
         }
@@ -173,15 +173,15 @@ public class d {
         f(context, str, null, null);
     }
 
-    public void f(Context context, String str, String str2, c.InterfaceC0636c interfaceC0636c) {
+    public void f(Context context, String str, String str2, c.InterfaceC0647c interfaceC0647c) {
         if (context != null) {
             if (!f.a(str)) {
                 i("Beginning load of %s...", str);
-                if (interfaceC0636c == null) {
+                if (interfaceC0647c == null) {
                     g(context, str, str2);
                     return;
                 } else {
-                    new Thread(new a(context, str, str2, interfaceC0636c)).start();
+                    new Thread(new a(context, str, str2, interfaceC0647c)).start();
                     return;
                 }
             }
@@ -195,18 +195,18 @@ public class d {
     }
 
     public d j() {
-        this.f49384e = true;
+        this.f49656e = true;
         return this;
     }
 
     protected d(c.b bVar, c.a aVar) {
-        this.f49380a = new HashSet();
+        this.f49652a = new HashSet();
         if (bVar == null) {
             throw new IllegalArgumentException("Cannot pass null library loader");
         }
         if (aVar != null) {
-            this.f49381b = bVar;
-            this.f49382c = aVar;
+            this.f49653b = bVar;
+            this.f49654c = aVar;
             return;
         }
         throw new IllegalArgumentException("Cannot pass null library installer");

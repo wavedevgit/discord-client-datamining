@@ -5,22 +5,22 @@ import kotlin.coroutines.CoroutineContext;
 public interface a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0708a f52001a = C0708a.f52002a;
+    public static final C0695a f51568a = C0695a.f51569a;
 
     /* renamed from: w0.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0708a {
+    public static final class C0695a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ C0708a f52002a = new C0708a();
+        static final /* synthetic */ C0695a f51569a = new C0695a();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Object f52003b = new C0709a();
+        private static final Object f51570b = new C0696a();
 
         /* renamed from: w0.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0709a {
-            C0709a() {
+        public static final class C0696a {
+            C0696a() {
             }
 
             public String toString() {
@@ -28,11 +28,11 @@ public interface a {
             }
         }
 
-        private C0708a() {
+        private C0695a() {
         }
 
         public final Object a() {
-            return f52003b;
+            return f51570b;
         }
     }
 

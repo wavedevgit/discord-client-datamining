@@ -8,16 +8,16 @@ import java.util.List;
 abstract class e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final e0 f3584a = new b();
+    private static final e0 f3628a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final e0 f3585b = new c();
+    private static final e0 f3629b = new c();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class b extends e0 {
 
         /* renamed from: c  reason: collision with root package name */
-        private static final Class f3586c = Collections.unmodifiableList(Collections.EMPTY_LIST).getClass();
+        private static final Class f3630c = Collections.unmodifiableList(Collections.EMPTY_LIST).getClass();
 
         private b() {
             super();
@@ -34,13 +34,13 @@ abstract class e0 {
                 if (f10 instanceof d0) {
                     arrayList = new c0(i10);
                 } else if ((f10 instanceof x0) && (f10 instanceof y.b)) {
-                    arrayList = ((y.b) f10).F0(i10);
+                    arrayList = ((y.b) f10).J0(i10);
                 } else {
                     arrayList = new ArrayList(i10);
                 }
                 o1.O(obj, j10, arrayList);
                 return arrayList;
-            } else if (f3586c.isAssignableFrom(f10.getClass())) {
+            } else if (f3630c.isAssignableFrom(f10.getClass())) {
                 ArrayList arrayList2 = new ArrayList(f10.size() + i10);
                 arrayList2.addAll(f10);
                 o1.O(obj, j10, arrayList2);
@@ -53,10 +53,10 @@ abstract class e0 {
             } else {
                 if ((f10 instanceof x0) && (f10 instanceof y.b)) {
                     y.b bVar = (y.b) f10;
-                    if (!bVar.D0()) {
-                        y.b F0 = bVar.F0(f10.size() + i10);
-                        o1.O(obj, j10, F0);
-                        return F0;
+                    if (!bVar.F0()) {
+                        y.b J0 = bVar.J0(f10.size() + i10);
+                        o1.O(obj, j10, J0);
+                        return J0;
                     }
                 }
                 return f10;
@@ -69,10 +69,10 @@ abstract class e0 {
             List list = (List) o1.A(obj, j10);
             if (list instanceof d0) {
                 unmodifiableList = ((d0) list).getUnmodifiableView();
-            } else if (!f3586c.isAssignableFrom(list.getClass())) {
+            } else if (!f3630c.isAssignableFrom(list.getClass())) {
                 if ((list instanceof x0) && (list instanceof y.b)) {
                     y.b bVar = (y.b) list;
-                    if (bVar.D0()) {
+                    if (bVar.F0()) {
                         bVar.N();
                         return;
                     }
@@ -128,8 +128,8 @@ abstract class e0 {
             int size = f10.size();
             int size2 = f11.size();
             if (size > 0 && size2 > 0) {
-                if (!f10.D0()) {
-                    f10 = f10.F0(size2 + size);
+                if (!f10.F0()) {
+                    f10 = f10.J0(size2 + size);
                 }
                 f10.addAll(f11);
             }
@@ -143,16 +143,16 @@ abstract class e0 {
         List e(Object obj, long j10) {
             int i10;
             y.b f10 = f(obj, j10);
-            if (!f10.D0()) {
+            if (!f10.F0()) {
                 int size = f10.size();
                 if (size == 0) {
                     i10 = 10;
                 } else {
                     i10 = size * 2;
                 }
-                y.b F0 = f10.F0(i10);
-                o1.O(obj, j10, F0);
-                return F0;
+                y.b J0 = f10.J0(i10);
+                o1.O(obj, j10, J0);
+                return J0;
             }
             return f10;
         }
@@ -160,12 +160,12 @@ abstract class e0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static e0 a() {
-        return f3584a;
+        return f3628a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static e0 b() {
-        return f3585b;
+        return f3629b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

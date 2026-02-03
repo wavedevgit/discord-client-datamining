@@ -28,8 +28,8 @@ public abstract class b {
             } finally {
             }
         }
-        Unit unit = Unit.f33298a;
-        tr.c.a(H1, null);
+        Unit unit = Unit.f33074a;
+        ur.c.a(H1, null);
         for (String triggerName : CollectionsKt.a(c10)) {
             Intrinsics.checkNotNullExpressionValue(triggerName, "triggerName");
             if (StringsKt.P(triggerName, "room_fts_content_sync_", false, 2, null)) {
@@ -69,7 +69,7 @@ public abstract class b {
             if (channel.read(allocate) == 4) {
                 allocate.rewind();
                 int i10 = allocate.getInt();
-                tr.c.a(channel, null);
+                ur.c.a(channel, null);
                 return i10;
             }
             throw new IOException("Bad database header, unable to read 4 bytes at offset 60");
@@ -77,7 +77,7 @@ public abstract class b {
             try {
                 throw th2;
             } catch (Throwable th3) {
-                tr.c.a(channel, th2);
+                ur.c.a(channel, th2);
                 throw th3;
             }
         }

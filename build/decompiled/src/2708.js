@@ -1,174 +1,81 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var1 = exports;
-    var6 = dependencyMap;
-    var4 = function arg0() {
-        _fun22499: for (var _fun22499_ip = 0;;) switch (_fun22499_ip) {
-            case 0:
-                var2 = arg0;
-                if (!var2) {
-                    _fun22499_ip = 18;
-                    continue _fun22499
-                }
-            case 6:
-                var1 = var2.__esModule;
-                var0 = var2;
-                if (var1) {
-                    _fun22499_ip = 27;
-                    continue _fun22499
-                }
-            case 18:
-                var1 = {};
-                var1.default = var2;
-                var0 = var1;
-            case 27:
-                return var0;
-        }
-    };
-    var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var7.bind(var8)(var1, var0, var2);
-    var0 = function arg0, arg1() {
-        _fun22500: for (var _fun22500_ip = 0;;) switch (_fun22500_ip) {
-            case 0:
-                var5 = arg1;
-                var6 = undefined;
-                var2 = undefined;
-                var3 = _closure1_slot1;
-                var4 = var3.default;
-                var2 = arguments;
-                var3 = var2;
-                var2 = 2;
-                var2 = var4.bind(var6)(var2, var3);
-                var0 = _closure1_slot0;
-                var2 = var0.default;
-                var0 = arg0;
-                var3 = var2.bind(var6)(var0);
-                var0 = global;
-                var4 = var0.isNaN;
-                var2 = var0.Number;
-                var2 = var2.bind(var6)(var3);
-                var2 = var4.bind(var6)(var2);
-                if (var2) {
-                    _fun22500_ip = 171;
-                    continue _fun22500
-                }
-            case 79:
-                var2 = var3.getTime;
-                var2 = var2.bind(var3)();
-                var _closure2_slot2 = var2;
-                var2 = null;
-                if (!(var2 != var5)) {
-                    _fun22500_ip = 146;
-                    continue _fun22500
-                }
-            case 99:
-                var2 = var5.forEach;
-                var3 = 'function';
-                var2 = typeof var2;
-                var4 = var5;
-                if (!(var3 !== var2)) {
-                    _fun22500_ip = 144;
-                    continue _fun22500
-                }
-            case 118:
-                var2 = var0.Array;
-                var2 = var2.prototype;
-                var3 = var2.slice;
-                var2 = var3.call;
-                var4 = var2.bind(var3)(var5);
-            case 144:
-                _fun22500_ip = 150;
-                continue _fun22500;
-            case 146:
-                var4 = new Array(0);
-            case 150:
-                var3 = var4.forEach;
-                var2 = function(arg0, arg1) { // Environment: var1
-                    _fun22501: for (var _fun22501_ip = 0;;) switch (_fun22501_ip) {
-                        case 0:
-                            var0 = _closure1_slot0;
-                            var2 = var0.default;
-                            var1 = undefined;
-                            var0 = arg0;
-                            var7 = var2.bind(var1)(var0);
-                            var0 = global;
-                            var3 = var0.isNaN;
-                            var2 = var0.Number;
-                            var2 = var2.bind(var1)(var7);
-                            var2 = var3.bind(var1)(var2);
-                            if (var2) {
-                                _fun22501_ip = 135;
-                                continue _fun22501
-                            }
-                        case 49:
-                            var5 = var0.Math;
-                            var4 = var5.abs;
-                            var6 = _closure2_slot2;
-                            var2 = var7.getTime;
-                            var2 = var2.bind(var7)();
-                            var2 = var6 - var2;
-                            var2 = var4.bind(var5)(var2);
-                            var5 = _closure2_slot0;
-                            var4 = null;
-                            var4 = var4 == var5;
-                            if (var4) {
-                                _fun22501_ip = 119;
-                                continue _fun22501
-                            }
-                        case 100:
-                            var6 = var0.Number;
-                            var5 = _closure2_slot1;
-                            var5 = var6.bind(var1)(var5);
-                            var4 = var2 < var5;
-                        case 119:
-                            if (!var4) {
-                                _fun22501_ip = 133;
-                                continue _fun22501
-                            }
-                        case 122:
-                            var4 = arg1;
-                            var _closure2_slot0 = var4;
-                            var _closure2_slot1 = var2;
-                        case 133:
-                            return var1;
-                        case 135:
-                            var2 = var0.NaN;
-                            _closure2_slot0 = var2;
-                            var0 = var0.NaN;
-                            _closure2_slot1 = var0;
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var2 = var3.bind(var4)(var2);
-                var1 = _closure2_slot0;
-                return var1;
-            case 171:
-                var0 = var0.NaN;
-                return var0;
-        }
-    };
-    var1.default = var0;
-    var0 = 0;
-    var2 = var6[var0];
-    var0 = undefined;
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot0 = var2;
-    var2 = 1;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot1 = var2;
-    var2 = var1.default;
-    var1 = arg4;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2534, 2535]);
+    _fun22248: for (var _fun22248_ip = 0;;) switch (_fun22248_ip) {
+        case 0:
+            var1 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var2 = {};
+            var0 = true;
+            var2.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var1, var0, var2);
+            var0 = undefined;
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun22248_ip = 75;
+                continue _fun22248
+            }
+        case 63:
+            var2 = var4.__esModule;
+            var3 = var4;
+            if (var2) {
+                _fun22248_ip = 84;
+                continue _fun22248
+            }
+        case 75:
+            var2 = {};
+            var2.default = var4;
+            var3 = var2;
+        case 84:
+            var2 = {};
+            var6 = var3.default;
+            var4 = {};
+            var5 = {
+                'full': "EEEE, do MMMM y 'р.'",
+                'long': "do MMMM y 'р.'",
+                'medium': "d MMM y 'р.'",
+                'short': 'dd.MM.y'
+            };
+            var4.formats = var5;
+            var5 = 'full';
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.date = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {
+                'full': 'H:mm:ss zzzz',
+                'long': 'H:mm:ss z',
+                'medium': 'H:mm:ss',
+                'short': 'H:mm'
+            };
+            var4.formats = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.time = var4;
+            var4 = var3.default;
+            var3 = {};
+            var6 = {
+                'full': "{{date}} 'о' {{time}}",
+                'long': "{{date}} 'о' {{time}}",
+                'medium': '{{date}}, {{time}}',
+                'short': '{{date}}, {{time}}'
+            };
+            var3.formats = var6;
+            var3.defaultWidth = var5;
+            var3 = var4.bind(var0)(var3);
+            var2.dateTime = var3;
+            var1.default = var2;
+            var2 = var1.default;
+            var1 = module;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1681]);

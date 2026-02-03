@@ -88,20 +88,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = undefined;
             var1 = function*(arg0, arg1) { // Environment: var0
                 var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                    _fun71424: for (var _fun71424_ip = 0;;) switch (_fun71424_ip) {
+                    _fun71533: for (var _fun71533_ip = 0;;) switch (_fun71533_ip) {
                         case 0:
                             StartGenerator();
                             ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                             if (var1) {
-                                _fun71424_ip = 276;
-                                continue _fun71424
+                                _fun71533_ip = 276;
+                                continue _fun71533
                             }
                         case 10:
                             var1 = _closure2_slot3;
                             var3 = null;
                             if (!(var3 != var1)) {
-                                _fun71424_ip = 136;
-                                continue _fun71424
+                                _fun71533_ip = 136;
+                                continue _fun71533
                             }
                         case 23:
                             var1 = _closure2_slot3;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8 = var1.icon;
                             var7 = var1.template;
                             if (!(var3 != var7)) {
-                                _fun71424_ip = 271;
-                                continue _fun71424
+                                _fun71533_ip = 271;
+                                continue _fun71533
                             }
                         case 50:
                             var4 = _closure1_slot1;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 92:
                             ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                             if (var4) {
-                                _fun71424_ip = 268;
-                                continue _fun71424
+                                _fun71533_ip = 268;
+                                continue _fun71533
                             }
                         case 101:
                             var4 = _closure1_slot0;
@@ -142,8 +142,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 136:
                             var2 = _closure2_slot2;
                             if (!(var3 != var2)) {
-                                _fun71424_ip = 260;
-                                continue _fun71424
+                                _fun71533_ip = 260;
+                                continue _fun71533
                             }
                         case 144:
                             var3 = _closure1_slot0;
@@ -177,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 254:
                             ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 3);
                             if (var3) {
-                                _fun71424_ip = 265;
-                                continue _fun71424
+                                _fun71533_ip = 265;
+                                continue _fun71533
                             }
                         case 260:
                             var3 = undefined;
@@ -309,4 +309,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 33, 1297, 8898, 1598, 8899, 8882, 8883, 3902, 1234, 8891, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 33, 1297, 8930, 1598, 8931, 8914, 8915, 3932, 1234, 8923, 2]);

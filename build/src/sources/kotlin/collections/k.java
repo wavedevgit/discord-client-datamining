@@ -56,20 +56,20 @@ public class k extends j {
                     if (!Arrays.equals((boolean[]) obj, (boolean[]) obj2)) {
                         return false;
                     }
-                } else if ((obj instanceof ir.y) && (obj2 instanceof ir.y)) {
-                    if (!kr.a.c(((ir.y) obj).r(), ((ir.y) obj2).r())) {
+                } else if ((obj instanceof jr.y) && (obj2 instanceof jr.y)) {
+                    if (!lr.a.c(((jr.y) obj).r(), ((jr.y) obj2).r())) {
                         return false;
                     }
-                } else if ((obj instanceof ir.f0) && (obj2 instanceof ir.f0)) {
-                    if (!kr.a.a(((ir.f0) obj).r(), ((ir.f0) obj2).r())) {
+                } else if ((obj instanceof jr.f0) && (obj2 instanceof jr.f0)) {
+                    if (!lr.a.a(((jr.f0) obj).r(), ((jr.f0) obj2).r())) {
                         return false;
                     }
-                } else if ((obj instanceof ir.a0) && (obj2 instanceof ir.a0)) {
-                    if (!kr.a.b(((ir.a0) obj).r(), ((ir.a0) obj2).r())) {
+                } else if ((obj instanceof jr.a0) && (obj2 instanceof jr.a0)) {
+                    if (!lr.a.b(((jr.a0) obj).r(), ((jr.a0) obj2).r())) {
                         return false;
                     }
-                } else if ((obj instanceof ir.c0) && (obj2 instanceof ir.c0)) {
-                    if (!kr.a.d(((ir.c0) obj).r(), ((ir.c0) obj2).r())) {
+                } else if ((obj instanceof jr.c0) && (obj2 instanceof jr.c0)) {
+                    if (!lr.a.d(((jr.c0) obj).r(), ((jr.c0) obj2).r())) {
                         return false;
                     }
                 } else if (!Intrinsics.areEqual(obj, obj2)) {

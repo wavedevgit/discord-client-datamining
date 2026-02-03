@@ -1,136 +1,55 @@
 package bt;
 
-import java.util.List;
-import kotlin.Lazy;
 import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Reflection;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
+import kotlin.reflect.KClass;
+import kotlinx.serialization.KSerializer;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class p {
+final class p implements k2 {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Function1 f7674a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final r f7675b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a implements SerialDescriptor {
+    public static final class a implements Function0 {
 
-        /* renamed from: a */
-        private final Lazy f7826a;
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ KClass f7677e;
 
-        a(Function0 function0) {
-            this.f7826a = ir.l.b(function0);
+        public a(KClass kClass) {
+            this.f7677e = kClass;
         }
 
-        private final SerialDescriptor a() {
-            return (SerialDescriptor) this.f7826a.getValue();
-        }
-
-        @Override // kotlinx.serialization.descriptors.SerialDescriptor
-        public boolean b() {
-            return SerialDescriptor.a.c(this);
-        }
-
-        @Override // kotlinx.serialization.descriptors.SerialDescriptor
-        public int c(String name) {
-            Intrinsics.checkNotNullParameter(name, "name");
-            return a().c(name);
-        }
-
-        @Override // kotlinx.serialization.descriptors.SerialDescriptor
-        public int d() {
-            return a().d();
-        }
-
-        @Override // kotlinx.serialization.descriptors.SerialDescriptor
-        public String e(int i10) {
-            return a().e(i10);
-        }
-
-        @Override // kotlinx.serialization.descriptors.SerialDescriptor
-        public List f(int i10) {
-            return a().f(i10);
-        }
-
-        @Override // kotlinx.serialization.descriptors.SerialDescriptor
-        public SerialDescriptor g(int i10) {
-            return a().g(i10);
-        }
-
-        @Override // kotlinx.serialization.descriptors.SerialDescriptor
-        public List getAnnotations() {
-            return SerialDescriptor.a.a(this);
-        }
-
-        @Override // kotlinx.serialization.descriptors.SerialDescriptor
-        public zs.k getKind() {
-            return a().getKind();
-        }
-
-        @Override // kotlinx.serialization.descriptors.SerialDescriptor
-        public String h() {
-            return a().h();
-        }
-
-        @Override // kotlinx.serialization.descriptors.SerialDescriptor
-        public boolean i(int i10) {
-            return a().i(i10);
-        }
-
-        @Override // kotlinx.serialization.descriptors.SerialDescriptor
-        public boolean isInline() {
-            return SerialDescriptor.a.b(this);
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            return new k((KSerializer) p.this.b().invoke(this.f7677e));
         }
     }
 
-    public static final /* synthetic */ SerialDescriptor a(Function0 function0) {
-        return f(function0);
+    public p(Function1 compute) {
+        Intrinsics.checkNotNullParameter(compute, "compute");
+        this.f7674a = compute;
+        this.f7675b = new r();
     }
 
-    public static final /* synthetic */ void b(Decoder decoder) {
-        g(decoder);
-    }
-
-    public static final /* synthetic */ void c(Encoder encoder) {
-        h(encoder);
-    }
-
-    public static final f d(Decoder decoder) {
-        f fVar;
-        Intrinsics.checkNotNullParameter(decoder, "<this>");
-        if (decoder instanceof f) {
-            fVar = (f) decoder;
-        } else {
-            fVar = null;
+    @Override // bt.k2
+    public KSerializer a(KClass key) {
+        Intrinsics.checkNotNullParameter(key, "key");
+        Object obj = this.f7675b.get(wr.a.b(key));
+        Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
+        e1 e1Var = (e1) obj;
+        Object obj2 = e1Var.f7612a.get();
+        if (obj2 == null) {
+            obj2 = e1Var.a(new a(key));
         }
-        if (fVar != null) {
-            return fVar;
-        }
-        throw new IllegalStateException("This serializer can be used only with Json format.Expected Decoder to be JsonDecoder, got " + Reflection.getOrCreateKotlinClass(decoder.getClass()));
+        return ((k) obj2).f7644a;
     }
 
-    public static final q e(Encoder encoder) {
-        q qVar;
-        Intrinsics.checkNotNullParameter(encoder, "<this>");
-        if (encoder instanceof q) {
-            qVar = (q) encoder;
-        } else {
-            qVar = null;
-        }
-        if (qVar != null) {
-            return qVar;
-        }
-        throw new IllegalStateException("This serializer can be used only with Json format.Expected Encoder to be JsonEncoder, got " + Reflection.getOrCreateKotlinClass(encoder.getClass()));
-    }
-
-    public static final SerialDescriptor f(Function0 function0) {
-        return new a(function0);
-    }
-
-    public static final void g(Decoder decoder) {
-        d(decoder);
-    }
-
-    public static final void h(Encoder encoder) {
-        e(encoder);
+    public final Function1 b() {
+        return this.f7674a;
     }
 }

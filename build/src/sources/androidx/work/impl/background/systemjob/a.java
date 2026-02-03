@@ -15,43 +15,43 @@ import p4.u;
 public class a {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String f5582c = m.i("SystemJobInfoConverter");
+    private static final String f5626c = m.i("SystemJobInfoConverter");
 
     /* renamed from: a  reason: collision with root package name */
-    private final ComponentName f5583a;
+    private final ComponentName f5627a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final k4.b f5584b;
+    private final k4.b f5628b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: androidx.work.impl.background.systemjob.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static /* synthetic */ class C0077a {
+    public static /* synthetic */ class C0081a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f5585a;
+        static final /* synthetic */ int[] f5629a;
 
         static {
             int[] iArr = new int[n.values().length];
-            f5585a = iArr;
+            f5629a = iArr;
             try {
                 iArr[n.NOT_REQUIRED.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f5585a[n.CONNECTED.ordinal()] = 2;
+                f5629a[n.CONNECTED.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f5585a[n.UNMETERED.ordinal()] = 3;
+                f5629a[n.UNMETERED.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f5585a[n.NOT_ROAMING.ordinal()] = 4;
+                f5629a[n.NOT_ROAMING.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f5585a[n.METERED.ordinal()] = 5;
+                f5629a[n.METERED.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
@@ -59,8 +59,8 @@ public class a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(Context context, k4.b bVar) {
-        this.f5584b = bVar;
-        this.f5583a = new ComponentName(context.getApplicationContext(), SystemJobService.class);
+        this.f5628b = bVar;
+        this.f5627a = new ComponentName(context.getApplicationContext(), SystemJobService.class);
     }
 
     private static JobInfo.TriggerContentUri b(d.b bVar) {
@@ -68,7 +68,7 @@ public class a {
     }
 
     static int c(n nVar) {
-        int i10 = C0077a.f5585a[nVar.ordinal()];
+        int i10 = C0081a.f5629a[nVar.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return 1;
@@ -83,7 +83,7 @@ public class a {
                 return 4;
             }
             m e10 = m.e();
-            String str = f5582c;
+            String str = f5626c;
             e10.a(str, "API version too low. Cannot convert network type value " + nVar);
             return 1;
         }
@@ -102,28 +102,28 @@ public class a {
     public JobInfo a(u uVar, int i10) {
         boolean z10;
         int i11;
-        d dVar = uVar.f44935j;
+        d dVar = uVar.f45009j;
         PersistableBundle persistableBundle = new PersistableBundle();
-        persistableBundle.putString("EXTRA_WORK_SPEC_ID", uVar.f44926a);
+        persistableBundle.putString("EXTRA_WORK_SPEC_ID", uVar.f45000a);
         persistableBundle.putInt("EXTRA_WORK_SPEC_GENERATION", uVar.f());
         persistableBundle.putBoolean("EXTRA_IS_PERIODIC", uVar.m());
-        JobInfo.Builder extras = new JobInfo.Builder(i10, this.f5583a).setRequiresCharging(dVar.g()).setRequiresDeviceIdle(dVar.h()).setExtras(persistableBundle);
+        JobInfo.Builder extras = new JobInfo.Builder(i10, this.f5627a).setRequiresCharging(dVar.g()).setRequiresDeviceIdle(dVar.h()).setExtras(persistableBundle);
         d(extras, dVar.d());
         boolean z11 = false;
         if (!dVar.h()) {
-            if (uVar.f44937l == k4.a.LINEAR) {
+            if (uVar.f45011l == k4.a.LINEAR) {
                 i11 = 0;
             } else {
                 i11 = 1;
             }
-            extras.setBackoffCriteria(uVar.f44938m, i11);
+            extras.setBackoffCriteria(uVar.f45012m, i11);
         }
-        long max = Math.max(uVar.c() - this.f5584b.a(), 0L);
+        long max = Math.max(uVar.c() - this.f5628b.a(), 0L);
         if (Build.VERSION.SDK_INT <= 28) {
             extras.setMinimumLatency(max);
         } else if (max > 0) {
             extras.setMinimumLatency(max);
-        } else if (!uVar.f44942q) {
+        } else if (!uVar.f45016q) {
             extras.setImportantWhileForeground(true);
         }
         if (dVar.e()) {
@@ -139,7 +139,7 @@ public class a {
             extras.setRequiresBatteryNotLow(dVar.f());
             extras.setRequiresStorageNotLow(dVar.i());
         }
-        if (uVar.f44936k > 0) {
+        if (uVar.f45010k > 0) {
             z10 = true;
         } else {
             z10 = false;
@@ -147,7 +147,7 @@ public class a {
         if (max > 0) {
             z11 = true;
         }
-        if (i12 >= 31 && uVar.f44942q && !z10 && !z11) {
+        if (i12 >= 31 && uVar.f45016q && !z10 && !z11) {
             extras.setExpedited(true);
         }
         return extras.build();

@@ -60,9 +60,9 @@ public final class NextStep_GovernmentId_ReviewUploadPageJsonAdapter extends h {
             String str16 = str6;
             if (reader.hasNext()) {
                 String str17 = str7;
-                switch (reader.A0(this.options)) {
+                switch (reader.t0(this.options)) {
                     case -1:
-                        reader.E0();
+                        reader.F0();
                         reader.P();
                         str7 = str17;
                         str = str11;
@@ -81,7 +81,7 @@ public final class NextStep_GovernmentId_ReviewUploadPageJsonAdapter extends h {
                             str5 = str15;
                             break;
                         } else {
-                            throw sm.c.x("titleFront", "titleFront", reader);
+                            throw tm.c.x("titleFront", "titleFront", reader);
                         }
                     case 1:
                         str2 = (String) this.stringAdapter.fromJson(reader);
@@ -93,7 +93,7 @@ public final class NextStep_GovernmentId_ReviewUploadPageJsonAdapter extends h {
                             str5 = str15;
                             break;
                         } else {
-                            throw sm.c.x("titleBack", "titleBack", reader);
+                            throw tm.c.x("titleBack", "titleBack", reader);
                         }
                     case 2:
                         str3 = (String) this.stringAdapter.fromJson(reader);
@@ -105,7 +105,7 @@ public final class NextStep_GovernmentId_ReviewUploadPageJsonAdapter extends h {
                             str5 = str15;
                             break;
                         } else {
-                            throw sm.c.x("titlePdf417", "titlePdf417", reader);
+                            throw tm.c.x("titlePdf417", "titlePdf417", reader);
                         }
                     case 3:
                         str4 = (String) this.stringAdapter.fromJson(reader);
@@ -117,7 +117,7 @@ public final class NextStep_GovernmentId_ReviewUploadPageJsonAdapter extends h {
                             str5 = str15;
                             break;
                         } else {
-                            throw sm.c.x("titlePassportSignature", "titlePassportSignature", reader);
+                            throw tm.c.x("titlePassportSignature", "titlePassportSignature", reader);
                         }
                     case 4:
                         str5 = (String) this.stringAdapter.fromJson(reader);
@@ -129,7 +129,7 @@ public final class NextStep_GovernmentId_ReviewUploadPageJsonAdapter extends h {
                             str4 = str14;
                             break;
                         } else {
-                            throw sm.c.x("descriptionFront", "descriptionFront", reader);
+                            throw tm.c.x("descriptionFront", "descriptionFront", reader);
                         }
                     case 5:
                         str6 = (String) this.stringAdapter.fromJson(reader);
@@ -142,12 +142,12 @@ public final class NextStep_GovernmentId_ReviewUploadPageJsonAdapter extends h {
                             str5 = str15;
                             continue;
                         } else {
-                            throw sm.c.x("descriptionBack", "descriptionBack", reader);
+                            throw tm.c.x("descriptionBack", "descriptionBack", reader);
                         }
                     case 6:
                         str7 = (String) this.stringAdapter.fromJson(reader);
                         if (str7 == null) {
-                            throw sm.c.x("descriptionPdf417", "descriptionPdf417", reader);
+                            throw tm.c.x("descriptionPdf417", "descriptionPdf417", reader);
                         }
                         str = str11;
                         str2 = str12;
@@ -158,7 +158,7 @@ public final class NextStep_GovernmentId_ReviewUploadPageJsonAdapter extends h {
                     case 7:
                         str8 = (String) this.stringAdapter.fromJson(reader);
                         if (str8 == null) {
-                            throw sm.c.x("descriptionPassportSignature", "descriptionPassportSignature", reader);
+                            throw tm.c.x("descriptionPassportSignature", "descriptionPassportSignature", reader);
                         }
                         str7 = str17;
                         str = str11;
@@ -170,7 +170,7 @@ public final class NextStep_GovernmentId_ReviewUploadPageJsonAdapter extends h {
                     case 8:
                         str9 = (String) this.stringAdapter.fromJson(reader);
                         if (str9 == null) {
-                            throw sm.c.x("confirmButtonText", "confirmButtonText", reader);
+                            throw tm.c.x("confirmButtonText", "confirmButtonText", reader);
                         }
                         str7 = str17;
                         str = str11;
@@ -182,7 +182,7 @@ public final class NextStep_GovernmentId_ReviewUploadPageJsonAdapter extends h {
                     case 9:
                         str10 = (String) this.stringAdapter.fromJson(reader);
                         if (str10 == null) {
-                            throw sm.c.x("chooseAnotherButtonText", "chooseAnotherButtonText", reader);
+                            throw tm.c.x("chooseAnotherButtonText", "chooseAnotherButtonText", reader);
                         }
                         str7 = str17;
                         str = str11;
@@ -216,25 +216,25 @@ public final class NextStep_GovernmentId_ReviewUploadPageJsonAdapter extends h {
                                                     if (str10 != null) {
                                                         return new NextStep.GovernmentId.ReviewUploadPage(str11, str12, str13, str14, str15, str16, str18, str8, str9, str10);
                                                     }
-                                                    throw sm.c.o("chooseAnotherButtonText", "chooseAnotherButtonText", reader);
+                                                    throw tm.c.o("chooseAnotherButtonText", "chooseAnotherButtonText", reader);
                                                 }
-                                                throw sm.c.o("confirmButtonText", "confirmButtonText", reader);
+                                                throw tm.c.o("confirmButtonText", "confirmButtonText", reader);
                                             }
-                                            throw sm.c.o("descriptionPassportSignature", "descriptionPassportSignature", reader);
+                                            throw tm.c.o("descriptionPassportSignature", "descriptionPassportSignature", reader);
                                         }
-                                        throw sm.c.o("descriptionPdf417", "descriptionPdf417", reader);
+                                        throw tm.c.o("descriptionPdf417", "descriptionPdf417", reader);
                                     }
-                                    throw sm.c.o("descriptionBack", "descriptionBack", reader);
+                                    throw tm.c.o("descriptionBack", "descriptionBack", reader);
                                 }
-                                throw sm.c.o("descriptionFront", "descriptionFront", reader);
+                                throw tm.c.o("descriptionFront", "descriptionFront", reader);
                             }
-                            throw sm.c.o("titlePassportSignature", "titlePassportSignature", reader);
+                            throw tm.c.o("titlePassportSignature", "titlePassportSignature", reader);
                         }
-                        throw sm.c.o("titlePdf417", "titlePdf417", reader);
+                        throw tm.c.o("titlePdf417", "titlePdf417", reader);
                     }
-                    throw sm.c.o("titleBack", "titleBack", reader);
+                    throw tm.c.o("titleBack", "titleBack", reader);
                 }
-                throw sm.c.o("titleFront", "titleFront", reader);
+                throw tm.c.o("titleFront", "titleFront", reader);
             }
         }
     }
@@ -244,25 +244,25 @@ public final class NextStep_GovernmentId_ReviewUploadPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (reviewUploadPage != null) {
             writer.l();
-            writer.A0("titleFront");
+            writer.t0("titleFront");
             this.stringAdapter.toJson(writer, reviewUploadPage.getTitleFront());
-            writer.A0("titleBack");
+            writer.t0("titleBack");
             this.stringAdapter.toJson(writer, reviewUploadPage.getTitleBack());
-            writer.A0("titlePdf417");
+            writer.t0("titlePdf417");
             this.stringAdapter.toJson(writer, reviewUploadPage.getTitlePdf417());
-            writer.A0("titlePassportSignature");
+            writer.t0("titlePassportSignature");
             this.stringAdapter.toJson(writer, reviewUploadPage.getTitlePassportSignature());
-            writer.A0("descriptionFront");
+            writer.t0("descriptionFront");
             this.stringAdapter.toJson(writer, reviewUploadPage.getDescriptionFront());
-            writer.A0("descriptionBack");
+            writer.t0("descriptionBack");
             this.stringAdapter.toJson(writer, reviewUploadPage.getDescriptionBack());
-            writer.A0("descriptionPdf417");
+            writer.t0("descriptionPdf417");
             this.stringAdapter.toJson(writer, reviewUploadPage.getDescriptionPdf417());
-            writer.A0("descriptionPassportSignature");
+            writer.t0("descriptionPassportSignature");
             this.stringAdapter.toJson(writer, reviewUploadPage.getDescriptionPassportSignature());
-            writer.A0("confirmButtonText");
+            writer.t0("confirmButtonText");
             this.stringAdapter.toJson(writer, reviewUploadPage.getConfirmButtonText());
-            writer.A0("chooseAnotherButtonText");
+            writer.t0("chooseAnotherButtonText");
             this.stringAdapter.toJson(writer, reviewUploadPage.getChooseAnotherButtonText());
             writer.E();
             return;

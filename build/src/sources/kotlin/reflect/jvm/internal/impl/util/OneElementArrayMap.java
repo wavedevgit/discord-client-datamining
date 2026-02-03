@@ -7,29 +7,29 @@ import org.jetbrains.annotations.NotNull;
 public final class OneElementArrayMap<T> extends ArrayMap<T> {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f36082d;
+    private final Object f35858d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f36083e;
+    private final int f35859e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public OneElementArrayMap(@NotNull T value, int i10) {
         super(null);
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f36082d = value;
-        this.f36083e = i10;
+        this.f35858d = value;
+        this.f35859e = i10;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.util.ArrayMap
     public T get(int i10) {
-        if (i10 == this.f36083e) {
-            return (T) this.f36082d;
+        if (i10 == this.f35859e) {
+            return (T) this.f35858d;
         }
         return null;
     }
 
     public final int getIndex() {
-        return this.f36083e;
+        return this.f35859e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.util.ArrayMap
@@ -39,7 +39,7 @@ public final class OneElementArrayMap<T> extends ArrayMap<T> {
 
     @NotNull
     public final T getValue() {
-        return (T) this.f36082d;
+        return (T) this.f35858d;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.util.ArrayMap, java.lang.Iterable

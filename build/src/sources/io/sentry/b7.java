@@ -3,14 +3,14 @@ package io.sentry;
 public final class b7 extends j5 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f29776d;
+    private final long f29342d;
 
     public b7(long j10) {
-        this.f29776d = j10;
+        this.f29342d = j10;
     }
 
     @Override // io.sentry.j5
     public long h() {
-        return this.f29776d;
+        return this.f29342d;
     }
 }

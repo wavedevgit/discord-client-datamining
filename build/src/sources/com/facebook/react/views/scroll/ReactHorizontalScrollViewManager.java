@@ -385,7 +385,7 @@ public class ReactHorizontalScrollViewManager extends ViewGroupManager<ReactHori
     }
 
     @Override // com.facebook.react.uimanager.ViewManager
-    @ir.c
+    @jr.c
     public void receiveCommand(@NotNull ReactHorizontalScrollView scrollView, int i10, ReadableArray readableArray) {
         Intrinsics.checkNotNullParameter(scrollView, "scrollView");
         ReactScrollViewCommandHelper.Companion.receiveCommand((ReactScrollViewCommandHelper.ScrollCommandHandler<ReactHorizontalScrollViewManager>) this, (ReactHorizontalScrollViewManager) scrollView, i10, readableArray);

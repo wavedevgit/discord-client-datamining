@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.AutoOpenTIVExperiment = var3;
     var1 = function arg0() {
-        _fun62602: for (var _fun62602_ip = 0;;) switch (_fun62602_ip) {
+        _fun62707: for (var _fun62707_ip = 0;;) switch (_fun62707_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.channel;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var3;
                 if (var2) {
-                    _fun62602_ip = 65;
-                    continue _fun62602
+                    _fun62707_ip = 65;
+                    continue _fun62707
                 }
             case 52:
                 var0 = var3.isGuildVocal;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 65:
                 var0 = !var2;
                 if (var2) {
-                    _fun62602_ip = 74;
-                    continue _fun62602
+                    _fun62707_ip = 74;
+                    continue _fun62707
                 }
             case 71:
                 var0 = var1;

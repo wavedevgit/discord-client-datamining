@@ -5,30 +5,30 @@ import ui.c;
 final class q5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q5 f41577a = new q5();
+    static final q5 f41440a = new q5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41578b;
+    private static final ui.c f41441b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41579c;
+    private static final ui.c f41442c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41580d;
+    private static final ui.c f41443d;
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f41578b = a10.b(fVar.b()).a();
+        f41441b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("imageInfo");
         f fVar2 = new f();
         fVar2.a(2);
-        f41579c = a11.b(fVar2.b()).a();
+        f41442c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("recognizerOptions");
         f fVar3 = new f();
         fVar3.a(3);
-        f41580d = a12.b(fVar3.b()).a();
+        f41443d = a12.b(fVar3.b()).a();
     }
 
     private q5() {

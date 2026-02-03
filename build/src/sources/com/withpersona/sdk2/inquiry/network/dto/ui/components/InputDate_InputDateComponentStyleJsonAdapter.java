@@ -117,9 +117,9 @@ public final class InputDate_InputDateComponentStyleJsonAdapter extends h {
         AttributeStyles.TextBasedJustifyStyle textBasedJustifyStyle = null;
         AttributeStyles.DateSelectStrokeColorStyle dateSelectStrokeColorStyle = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -172,31 +172,31 @@ public final class InputDate_InputDateComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputDateComponentStyle != null) {
             writer.l();
-            writer.A0(ViewProps.FONT_FAMILY);
+            writer.t0(ViewProps.FONT_FAMILY);
             this.nullableComplexTextBasedFontFamilyStyleAdapter.toJson(writer, inputDateComponentStyle.getFontFamily());
-            writer.A0(ViewProps.FONT_SIZE);
+            writer.t0(ViewProps.FONT_SIZE);
             this.nullableComplexTextBasedFontSizeStyleAdapter.toJson(writer, inputDateComponentStyle.getFontSize());
-            writer.A0(ViewProps.FONT_WEIGHT);
+            writer.t0(ViewProps.FONT_WEIGHT);
             this.nullableComplexTextBasedFontWeightStyleAdapter.toJson(writer, inputDateComponentStyle.getFontWeight());
-            writer.A0(ViewProps.LETTER_SPACING);
+            writer.t0(ViewProps.LETTER_SPACING);
             this.nullableComplexTextBasedLetterSpacingStyleAdapter.toJson(writer, inputDateComponentStyle.getLetterSpacing());
-            writer.A0(ViewProps.LINE_HEIGHT);
+            writer.t0(ViewProps.LINE_HEIGHT);
             this.nullableComplexTextBasedLineHeightStyleAdapter.toJson(writer, inputDateComponentStyle.getLineHeight());
-            writer.A0("textColor");
+            writer.t0("textColor");
             this.nullableDateSelectTextColorStyleAdapter.toJson(writer, inputDateComponentStyle.getTextColor());
-            writer.A0("borderRadius");
+            writer.t0("borderRadius");
             this.nullableDateSelectBorderRadiusStyleAdapter.toJson(writer, inputDateComponentStyle.getBorderRadius());
-            writer.A0(ViewProps.BORDER_WIDTH);
+            writer.t0(ViewProps.BORDER_WIDTH);
             this.nullableDateSelectBorderWidthStyleAdapter.toJson(writer, inputDateComponentStyle.getBorderWidth());
-            writer.A0(ViewProps.BACKGROUND_COLOR);
+            writer.t0(ViewProps.BACKGROUND_COLOR);
             this.nullableDateSelectBackgroundColorStyleAdapter.toJson(writer, inputDateComponentStyle.getBackgroundColor());
-            writer.A0(ViewProps.BORDER_COLOR);
+            writer.t0(ViewProps.BORDER_COLOR);
             this.nullableDateSelectBorderColorStyleAdapter.toJson(writer, inputDateComponentStyle.getBorderColor());
-            writer.A0(ViewProps.MARGIN);
+            writer.t0(ViewProps.MARGIN);
             this.nullableInputMarginStyleAdapter.toJson(writer, inputDateComponentStyle.getMargin());
-            writer.A0("justify");
+            writer.t0("justify");
             this.nullableTextBasedJustifyStyleAdapter.toJson(writer, inputDateComponentStyle.getJustify());
-            writer.A0("strokeColor");
+            writer.t0("strokeColor");
             this.nullableDateSelectStrokeColorStyleAdapter.toJson(writer, inputDateComponentStyle.getStrokeColor());
             writer.E();
             return;

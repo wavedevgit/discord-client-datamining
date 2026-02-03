@@ -25,7 +25,7 @@ public class TypeSubstitutor {
     public static final TypeSubstitutor EMPTY = create(TypeSubstitution.EMPTY);
 
     /* renamed from: a  reason: collision with root package name */
-    private final TypeSubstitution f35922a;
+    private final TypeSubstitution f35698a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -52,21 +52,21 @@ public class TypeSubstitutor {
     public static /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f35923a;
+        static final /* synthetic */ int[] f35699a;
 
         static {
             int[] iArr = new int[d.values().length];
-            f35923a = iArr;
+            f35699a = iArr;
             try {
                 iArr[d.OUT_IN_IN_POSITION.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f35923a[d.IN_IN_OUT_POSITION.ordinal()] = 2;
+                f35699a[d.IN_IN_OUT_POSITION.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f35923a[d.NO_CONFLICT.ordinal()] = 3;
+                f35699a[d.NO_CONFLICT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -92,7 +92,7 @@ public class TypeSubstitutor {
         if (typeSubstitution == null) {
             a(7);
         }
-        this.f35922a = typeSubstitution;
+        this.f35698a = typeSubstitution;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:13:0x0021 A[FALL_THROUGH] */
@@ -252,7 +252,7 @@ public class TypeSubstitutor {
         KotlinType kotlinType;
         KotlinType type = typeProjection.getType();
         Variance projectionKind = typeProjection.getProjectionKind();
-        if (type.getConstructor().mo1198getDeclarationDescriptor() instanceof TypeParameterDescriptor) {
+        if (type.getConstructor().mo1200getDeclarationDescriptor() instanceof TypeParameterDescriptor) {
             return typeProjection;
         }
         SimpleType abbreviation = SpecialTypesKt.getAbbreviation(type);
@@ -261,7 +261,7 @@ public class TypeSubstitutor {
         } else {
             kotlinType = null;
         }
-        KotlinType replace = TypeSubstitutionKt.replace(type, h(type.getConstructor().getParameters(), type.getArguments(), i10), this.f35922a.filterAnnotations(type.getAnnotations()));
+        KotlinType replace = TypeSubstitutionKt.replace(type, h(type.getConstructor().getParameters(), type.getArguments(), i10), this.f35698a.filterAnnotations(type.getAnnotations()));
         if ((replace instanceof SimpleType) && (kotlinType instanceof SimpleType)) {
             replace = SpecialTypesKt.withAbbreviation((SimpleType) replace, (SimpleType) kotlinType);
         }
@@ -275,7 +275,7 @@ public class TypeSubstitutor {
             TypeParameterDescriptor typeParameterDescriptor = (TypeParameterDescriptor) list.get(i11);
             TypeProjection typeProjection = (TypeProjection) list2.get(i11);
             TypeProjection i12 = i(typeProjection, typeParameterDescriptor, i10 + 1);
-            int i13 = b.f35923a[c(typeParameterDescriptor.getVariance(), i12.getProjectionKind()).ordinal()];
+            int i13 = b.f35699a[c(typeParameterDescriptor.getVariance(), i12.getProjectionKind()).ordinal()];
             if (i13 != 1 && i13 != 2) {
                 if (i13 == 3) {
                     Variance variance = typeParameterDescriptor.getVariance();
@@ -304,7 +304,7 @@ public class TypeSubstitutor {
         if (typeProjection == null) {
             a(18);
         }
-        b(i10, typeProjection, this.f35922a);
+        b(i10, typeProjection, this.f35698a);
         if (!typeProjection.isStarProjection()) {
             KotlinType type = typeProjection.getType();
             if (type instanceof TypeWithEnhancement) {
@@ -317,9 +317,9 @@ public class TypeSubstitutor {
                 }
                 return new TypeProjectionImpl(i11.getProjectionKind(), TypeWithEnhancementKt.wrapEnhancement(i11.getType().unwrap(), substitute(enhancement, typeProjection.getProjectionKind())));
             } else if (!DynamicTypesKt.isDynamic(type) && !(type.unwrap() instanceof RawType)) {
-                TypeProjection mo1201get = this.f35922a.mo1201get(type);
-                if (mo1201get != null) {
-                    typeProjection2 = e(type, mo1201get, typeParameterDescriptor, typeProjection);
+                TypeProjection mo1203get = this.f35698a.mo1203get(type);
+                if (mo1203get != null) {
+                    typeProjection2 = e(type, mo1203get, typeParameterDescriptor, typeProjection);
                 } else {
                     typeProjection2 = null;
                 }
@@ -337,7 +337,7 @@ public class TypeSubstitutor {
                     if (typeProjection2 != null) {
                         d c10 = c(projectionKind, typeProjection2.getProjectionKind());
                         if (!CapturedTypeConstructorKt.isCaptured(type)) {
-                            int i15 = b.f35923a[c10.ordinal()];
+                            int i15 = b.f35699a[c10.ordinal()];
                             if (i15 != 1) {
                                 if (i15 == 2) {
                                     return new TypeProjectionImpl(Variance.OUT_VARIANCE, type.getConstructor().getBuiltIns().getNullableAnyType());
@@ -356,7 +356,7 @@ public class TypeSubstitutor {
                             makeNullableIfNeeded = TypeUtils.makeNullableIfNeeded(typeProjection2.getType(), type.isMarkedNullable());
                         }
                         if (!type.getAnnotations().isEmpty()) {
-                            makeNullableIfNeeded = TypeUtilsKt.replaceAnnotations(makeNullableIfNeeded, new CompositeAnnotations(makeNullableIfNeeded.getAnnotations(), d(this.f35922a.filterAnnotations(type.getAnnotations()))));
+                            makeNullableIfNeeded = TypeUtilsKt.replaceAnnotations(makeNullableIfNeeded, new CompositeAnnotations(makeNullableIfNeeded.getAnnotations(), d(this.f35698a.filterAnnotations(type.getAnnotations()))));
                         }
                         if (c10 == d.NO_CONFLICT) {
                             projectionKind = combine(projectionKind, typeProjection2.getProjectionKind());
@@ -375,7 +375,7 @@ public class TypeSubstitutor {
 
     @NotNull
     public TypeSubstitution getSubstitution() {
-        TypeSubstitution typeSubstitution = this.f35922a;
+        TypeSubstitution typeSubstitution = this.f35698a;
         if (typeSubstitution == null) {
             a(8);
         }
@@ -383,14 +383,14 @@ public class TypeSubstitutor {
     }
 
     public boolean isEmpty() {
-        return this.f35922a.isEmpty();
+        return this.f35698a.isEmpty();
     }
 
     @NotNull
     public TypeSubstitutor replaceWithNonApproximatingSubstitution() {
-        TypeSubstitution typeSubstitution = this.f35922a;
+        TypeSubstitution typeSubstitution = this.f35698a;
         if ((typeSubstitution instanceof IndexedParametersSubstitution) && typeSubstitution.approximateContravariantCapturedTypes()) {
-            return new TypeSubstitutor(new IndexedParametersSubstitution(((IndexedParametersSubstitution) this.f35922a).getParameters(), ((IndexedParametersSubstitution) this.f35922a).getArguments(), false));
+            return new TypeSubstitutor(new IndexedParametersSubstitution(((IndexedParametersSubstitution) this.f35698a).getParameters(), ((IndexedParametersSubstitution) this.f35698a).getArguments(), false));
         }
         return this;
     }
@@ -494,6 +494,6 @@ public class TypeSubstitutor {
             a(16);
         }
         TypeProjection substituteWithoutApproximation = substituteWithoutApproximation(typeProjection);
-        return (this.f35922a.approximateCapturedTypes() || this.f35922a.approximateContravariantCapturedTypes()) ? CapturedTypeApproximationKt.approximateCapturedTypesIfNecessary(substituteWithoutApproximation, this.f35922a.approximateContravariantCapturedTypes()) : substituteWithoutApproximation;
+        return (this.f35698a.approximateCapturedTypes() || this.f35698a.approximateContravariantCapturedTypes()) ? CapturedTypeApproximationKt.approximateCapturedTypesIfNecessary(substituteWithoutApproximation, this.f35698a.approximateContravariantCapturedTypes()) : substituteWithoutApproximation;
     }
 }

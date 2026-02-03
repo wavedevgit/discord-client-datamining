@@ -1,101 +1,159 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
-    var2 = exports;
-    var4 = dependencyMap;
-    var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var1);
-    var0 = 0;
-    var1 = var4[var0];
+    var1 = exports;
+    var2 = function arg0() {
+        _fun34159: for (var _fun34159_ip = 0;;) switch (_fun34159_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = {};
+                var3 = null;
+                var5 = var3 == var2;
+                var4 = undefined;
+                if (var5) {
+                    _fun34159_ip = 37;
+                    continue _fun34159
+                }
+            case 16:
+                var5 = var2.viewConfig;
+                var6 = var3 == var5;
+                var4 = undefined;
+                if (var6) {
+                    _fun34159_ip = 37;
+                    continue _fun34159
+                }
+            case 31:
+                var4 = var5.uiViewClassName;
+            case 37:
+                var0.viewName = var4;
+                var5 = var3 == var2;
+                var4 = undefined;
+                if (var5) {
+                    _fun34159_ip = 57;
+                    continue _fun34159
+                }
+            case 51:
+                var4 = var2._nativeTag;
+            case 57:
+                var0.viewTag = var4;
+                var3 = var3 == var2;
+                var1 = undefined;
+                if (var3) {
+                    _fun34159_ip = 77;
+                    continue _fun34159
+                }
+            case 71:
+                var1 = var2.viewConfig;
+            case 77:
+                var0.viewConfig = var1;
+                return var0;
+        }
+    };
+    var _closure1_slot0 = var2;
+    var2 = function arg0() {
+        _fun34160: for (var _fun34160_ip = 0;;) switch (_fun34160_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = {};
+                var3 = null;
+                var5 = var3 == var2;
+                var4 = undefined;
+                if (var5) {
+                    _fun34160_ip = 37;
+                    continue _fun34160
+                }
+            case 16:
+                var5 = var2._viewConfig;
+                var6 = var3 == var5;
+                var4 = undefined;
+                if (var6) {
+                    _fun34160_ip = 37;
+                    continue _fun34160
+                }
+            case 31:
+                var4 = var5.uiViewClassName;
+            case 37:
+                var0.viewName = var4;
+                var5 = var3 == var2;
+                var4 = undefined;
+                if (var5) {
+                    _fun34160_ip = 57;
+                    continue _fun34160
+                }
+            case 51:
+                var4 = var2.__nativeTag;
+            case 57:
+                var0.viewTag = var4;
+                var3 = var3 == var2;
+                var1 = undefined;
+                if (var3) {
+                    _fun34160_ip = 77;
+                    continue _fun34160
+                }
+            case 71:
+                var1 = var2._viewConfig;
+            case 77:
+                var0.viewConfig = var1;
+                return var0;
+        }
+    };
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var0 = function arg0() {
+        _fun34161: for (var _fun34161_ip = 0;;) switch (_fun34161_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = var3._nativeTag;
+                var2 = undefined;
+                if (!(var2 !== var0)) {
+                    _fun34161_ip = 27;
+                    continue _fun34161
+                }
+            case 15:
+                var1 = var3.__nativeTag;
+                var0 = null;
+                if (!(var0 === var1)) {
+                    _fun34161_ip = 77;
+                    continue _fun34161
+                }
+            case 27:
+                var0 = var3.__nativeTag;
+                if (!(var2 !== var0)) {
+                    _fun34161_ip = 49;
+                    continue _fun34161
+                }
+            case 37:
+                var1 = var3.__nativeTag;
+                var0 = null;
+                if (!(var0 === var1)) {
+                    _fun34161_ip = 63;
+                    continue _fun34161
+                }
+            case 49:
+                var0 = _closure1_slot0;
+                var0 = var0.bind(var2)(var3);
+                _fun34161_ip = 75;
+                continue _fun34161;
+            case 63:
+                var1 = _closure1_slot1;
+                var0 = var1.bind(var2)(var3);
+            case 75:
+                _fun34161_ip = 89;
+                continue _fun34161;
+            case 77:
+                var1 = _closure1_slot0;
+                var0 = var1.bind(var2)(var3);
+            case 89:
+                return var0;
+        }
+    };
+    var1.getViewInfo = var0;
     var0 = undefined;
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useAnimatedGestureHandler;
-    var2.useAnimatedGestureHandler = var1;
-    var1 = 1;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useAnimatedKeyboard;
-    var2.useAnimatedKeyboard = var1;
-    var1 = 2;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useAnimatedProps;
-    var2.useAnimatedProps = var1;
-    var1 = 3;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useAnimatedReaction;
-    var2.useAnimatedReaction = var1;
-    var1 = 4;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useAnimatedRef;
-    var2.useAnimatedRef = var1;
-    var1 = 5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useAnimatedScrollHandler;
-    var2.useAnimatedScrollHandler = var1;
-    var1 = 6;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useAnimatedSensor;
-    var2.useAnimatedSensor = var1;
-    var1 = 7;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useAnimatedStyle;
-    var2.useAnimatedStyle = var1;
-    var1 = 8;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useComposedEventHandler;
-    var2.useComposedEventHandler = var1;
-    var1 = 9;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useDerivedValue;
-    var2.useDerivedValue = var1;
-    var1 = 10;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useEvent;
-    var2.useEvent = var1;
-    var1 = 11;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useFrameCallback;
-    var2.useFrameCallback = var1;
-    var1 = 12;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useHandler;
-    var2.useHandler = var1;
-    var1 = 13;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useReducedMotion;
-    var2.useReducedMotion = var1;
-    var1 = 14;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useScrollViewOffset;
-    var2.useScrollViewOffset = var1;
-    var1 = 15;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useSharedValue;
-    var2.useSharedValue = var1;
-    var1 = 16;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.useWorkletCallback;
-    var2.useWorkletCallback = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3826, 3830, 3831, 3835, 3836, 3837, 3838, 3832, 3839, 3840, 3829, 3841, 3827, 3844, 3845, 3834, 3846]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

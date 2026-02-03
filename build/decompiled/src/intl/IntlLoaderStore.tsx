@@ -573,4 +573,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useLocaleData = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 797, 1678, 1234, 1688, 1272, 2529, 3004, 3006, 1207, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 797, 1678, 1234, 1688, 1272, 2559, 3034, 3036, 1207, 2]);

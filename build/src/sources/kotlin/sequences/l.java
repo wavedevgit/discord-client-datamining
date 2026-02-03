@@ -11,22 +11,22 @@ public class l {
     public static final class a implements Sequence {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function2 f36188a;
+        final /* synthetic */ Function2 f35964a;
 
         public a(Function2 function2) {
-            this.f36188a = function2;
+            this.f35964a = function2;
         }
 
         @Override // kotlin.sequences.Sequence
         public Iterator iterator() {
-            return l.a(this.f36188a);
+            return l.a(this.f35964a);
         }
     }
 
     public static Iterator a(Function2 block) {
         Intrinsics.checkNotNullParameter(block, "block");
         i iVar = new i();
-        iVar.k(or.b.a(block, iVar, iVar));
+        iVar.k(pr.b.a(block, iVar, iVar));
         return iVar;
     }
 

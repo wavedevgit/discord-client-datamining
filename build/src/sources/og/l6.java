@@ -5,23 +5,23 @@ import ui.c;
 final class l6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l6 f43261a = new l6();
+    static final l6 f43389a = new l6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43262b;
+    private static final ui.c f43390b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43263c;
+    private static final ui.c f43391c;
 
     static {
         c.b a10 = ui.c.a("errorCode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43262b = a10.b(s1Var.b()).a();
+        f43390b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("durationMs");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43263c = a11.b(s1Var2.b()).a();
+        f43391c = a11.b(s1Var2.b()).a();
     }
 
     private l6() {

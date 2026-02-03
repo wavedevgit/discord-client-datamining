@@ -1,29 +1,27 @@
 package vo;
 
-import kotlin.jvm.internal.Intrinsics;
+import androidx.activity.result.ActivityResultLauncher;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e {
+public final class e implements uq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f51789a;
+    private final b f51473a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final String f51790b;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface a {
-        e a(String str);
+    public e(b bVar) {
+        this.f51473a = bVar;
     }
 
-    public e(b logger, String subsystem) {
-        Intrinsics.checkNotNullParameter(logger, "logger");
-        Intrinsics.checkNotNullParameter(subsystem, "subsystem");
-        this.f51789a = logger;
-        this.f51790b = subsystem;
+    public static e a(b bVar) {
+        return new e(bVar);
     }
 
-    public final void a(String message) {
-        Intrinsics.checkNotNullParameter(message, "message");
-        this.f51789a.f(this.f51790b, vo.a.f51761i, message);
+    public static ActivityResultLauncher b(b bVar) {
+        return (ActivityResultLauncher) uq.g.d(bVar.a());
+    }
+
+    @Override // javax.inject.Provider
+    /* renamed from: c */
+    public ActivityResultLauncher get() {
+        return b(this.f51473a);
     }
 }

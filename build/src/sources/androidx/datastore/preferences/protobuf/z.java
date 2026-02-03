@@ -5,7 +5,7 @@ import java.io.IOException;
 public class z extends IOException {
 
     /* renamed from: d  reason: collision with root package name */
-    private o0 f3850d;
+    private o0 f3894d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a extends z {
@@ -16,7 +16,7 @@ public class z extends IOException {
 
     public z(String str) {
         super(str);
-        this.f3850d = null;
+        this.f3894d = null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -70,7 +70,7 @@ public class z extends IOException {
     }
 
     public z i(o0 o0Var) {
-        this.f3850d = o0Var;
+        this.f3894d = o0Var;
         return this;
     }
 }

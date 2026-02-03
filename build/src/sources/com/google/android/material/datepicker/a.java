@@ -7,33 +7,33 @@ import java.util.Arrays;
 import java.util.Objects;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class a implements Parcelable {
-    public static final Parcelable.Creator<a> CREATOR = new C0180a();
+    public static final Parcelable.Creator<a> CREATOR = new C0185a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final m f15880d;
+    private final m f15509d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final m f15881e;
+    private final m f15510e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final c f15882i;
+    private final c f15511i;
 
     /* renamed from: o  reason: collision with root package name */
-    private m f15883o;
+    private m f15512o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f15884p;
+    private final int f15513p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f15885q;
+    private final int f15514q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final int f15886r;
+    private final int f15515r;
 
     /* renamed from: com.google.android.material.datepicker.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    class C0180a implements Parcelable.Creator {
-        C0180a() {
+    class C0185a implements Parcelable.Creator {
+        C0185a() {
         }
 
         @Override // android.os.Parcelable.Creator
@@ -53,66 +53,66 @@ public final class a implements Parcelable {
     public static final class b {
 
         /* renamed from: f  reason: collision with root package name */
-        static final long f15887f = t.a(m.d(1900, 0).f15978q);
+        static final long f15516f = t.a(m.d(1900, 0).f15607q);
 
         /* renamed from: g  reason: collision with root package name */
-        static final long f15888g = t.a(m.d(2100, 11).f15978q);
+        static final long f15517g = t.a(m.d(2100, 11).f15607q);
 
         /* renamed from: a  reason: collision with root package name */
-        private long f15889a;
+        private long f15518a;
 
         /* renamed from: b  reason: collision with root package name */
-        private long f15890b;
+        private long f15519b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Long f15891c;
+        private Long f15520c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f15892d;
+        private int f15521d;
 
         /* renamed from: e  reason: collision with root package name */
-        private c f15893e;
+        private c f15522e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public b(a aVar) {
-            this.f15889a = f15887f;
-            this.f15890b = f15888g;
-            this.f15893e = f.a(Long.MIN_VALUE);
-            this.f15889a = aVar.f15880d.f15978q;
-            this.f15890b = aVar.f15881e.f15978q;
-            this.f15891c = Long.valueOf(aVar.f15883o.f15978q);
-            this.f15892d = aVar.f15884p;
-            this.f15893e = aVar.f15882i;
+            this.f15518a = f15516f;
+            this.f15519b = f15517g;
+            this.f15522e = f.a(Long.MIN_VALUE);
+            this.f15518a = aVar.f15509d.f15607q;
+            this.f15519b = aVar.f15510e.f15607q;
+            this.f15520c = Long.valueOf(aVar.f15512o.f15607q);
+            this.f15521d = aVar.f15513p;
+            this.f15522e = aVar.f15511i;
         }
 
         public a a() {
             m e10;
             Bundle bundle = new Bundle();
-            bundle.putParcelable("DEEP_COPY_VALIDATOR_KEY", this.f15893e);
-            m e11 = m.e(this.f15889a);
-            m e12 = m.e(this.f15890b);
+            bundle.putParcelable("DEEP_COPY_VALIDATOR_KEY", this.f15522e);
+            m e11 = m.e(this.f15518a);
+            m e12 = m.e(this.f15519b);
             c cVar = (c) bundle.getParcelable("DEEP_COPY_VALIDATOR_KEY");
-            Long l10 = this.f15891c;
+            Long l10 = this.f15520c;
             if (l10 == null) {
                 e10 = null;
             } else {
                 e10 = m.e(l10.longValue());
             }
-            return new a(e11, e12, cVar, e10, this.f15892d, null);
+            return new a(e11, e12, cVar, e10, this.f15521d, null);
         }
 
         public b b(long j10) {
-            this.f15891c = Long.valueOf(j10);
+            this.f15520c = Long.valueOf(j10);
             return this;
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface c extends Parcelable {
-        boolean D0(long j10);
+        boolean E0(long j10);
     }
 
-    /* synthetic */ a(m mVar, m mVar2, c cVar, m mVar3, int i10, C0180a c0180a) {
+    /* synthetic */ a(m mVar, m mVar2, c cVar, m mVar3, int i10, C0185a c0185a) {
         this(mVar, mVar2, cVar, mVar3, i10);
     }
 
@@ -129,68 +129,68 @@ public final class a implements Parcelable {
             return false;
         }
         a aVar = (a) obj;
-        if (this.f15880d.equals(aVar.f15880d) && this.f15881e.equals(aVar.f15881e) && b2.b.a(this.f15883o, aVar.f15883o) && this.f15884p == aVar.f15884p && this.f15882i.equals(aVar.f15882i)) {
+        if (this.f15509d.equals(aVar.f15509d) && this.f15510e.equals(aVar.f15510e) && b2.b.a(this.f15512o, aVar.f15512o) && this.f15513p == aVar.f15513p && this.f15511i.equals(aVar.f15511i)) {
             return true;
         }
         return false;
     }
 
     public c f() {
-        return this.f15882i;
+        return this.f15511i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m g() {
-        return this.f15881e;
+        return this.f15510e;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(new Object[]{this.f15880d, this.f15881e, this.f15883o, Integer.valueOf(this.f15884p), this.f15882i});
+        return Arrays.hashCode(new Object[]{this.f15509d, this.f15510e, this.f15512o, Integer.valueOf(this.f15513p), this.f15511i});
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int i() {
-        return this.f15884p;
+        return this.f15513p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int j() {
-        return this.f15886r;
+        return this.f15515r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m k() {
-        return this.f15883o;
+        return this.f15512o;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m m() {
-        return this.f15880d;
+        return this.f15509d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int n() {
-        return this.f15885q;
+        return this.f15514q;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeParcelable(this.f15880d, 0);
-        parcel.writeParcelable(this.f15881e, 0);
-        parcel.writeParcelable(this.f15883o, 0);
-        parcel.writeParcelable(this.f15882i, 0);
-        parcel.writeInt(this.f15884p);
+        parcel.writeParcelable(this.f15509d, 0);
+        parcel.writeParcelable(this.f15510e, 0);
+        parcel.writeParcelable(this.f15512o, 0);
+        parcel.writeParcelable(this.f15511i, 0);
+        parcel.writeInt(this.f15513p);
     }
 
     private a(m mVar, m mVar2, c cVar, m mVar3, int i10) {
         Objects.requireNonNull(mVar, "start cannot be null");
         Objects.requireNonNull(mVar2, "end cannot be null");
         Objects.requireNonNull(cVar, "validator cannot be null");
-        this.f15880d = mVar;
-        this.f15881e = mVar2;
-        this.f15883o = mVar3;
-        this.f15884p = i10;
-        this.f15882i = cVar;
+        this.f15509d = mVar;
+        this.f15510e = mVar2;
+        this.f15512o = mVar3;
+        this.f15513p = i10;
+        this.f15511i = cVar;
         if (mVar3 != null && mVar.compareTo(mVar3) > 0) {
             throw new IllegalArgumentException("start Month cannot be after current Month");
         }
@@ -198,8 +198,8 @@ public final class a implements Parcelable {
             throw new IllegalArgumentException("current Month cannot be after end Month");
         }
         if (i10 >= 0 && i10 <= t.i().getMaximum(7)) {
-            this.f15886r = mVar.q(mVar2) + 1;
-            this.f15885q = (mVar2.f15975i - mVar.f15975i) + 1;
+            this.f15515r = mVar.q(mVar2) + 1;
+            this.f15514q = (mVar2.f15604i - mVar.f15604i) + 1;
             return;
         }
         throw new IllegalArgumentException("firstDayOfWeek is not valid");

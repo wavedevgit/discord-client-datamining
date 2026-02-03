@@ -5,10 +5,11 @@ import android.os.Build;
 import android.os.Process;
 import android.telephony.SignalStrength;
 import android.telephony.TelephonyManager;
+import au.e;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.WritableNativeMap;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -19,7 +20,6 @@ import okhttp3.Response;
 import okhttp3.ResponseBody;
 import okio.BufferedSource;
 import org.jetbrains.annotations.NotNull;
-import zt.e;
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0005\u0018\u0000 \u00052\u00020\u0001:\u0002\u0004\u0005B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0006"}, d2 = {"Lcom/discord/resource_usage/DeviceResourceUsageRecorder;", "", "<init>", "()V", "RequestStats", "Companion", "resource_usage_monitor_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class DeviceResourceUsageRecorder {
@@ -56,7 +56,7 @@ public final class DeviceResourceUsageRecorder {
             requestStats.setNumRequests(requestStats.getNumRequests() + 1);
             if (e.b(a10) && x10 != null) {
                 BufferedSource source = x10.source();
-                source.B0(LongCompanionObject.MAX_VALUE);
+                source.C0(LongCompanionObject.MAX_VALUE);
                 requestStats.setBytesReceived(requestStats.getBytesReceived() + source.e().size());
             }
             return a10;

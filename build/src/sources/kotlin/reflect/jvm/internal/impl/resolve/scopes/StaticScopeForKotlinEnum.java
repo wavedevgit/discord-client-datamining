@@ -28,48 +28,48 @@ import org.jetbrains.annotations.NotNull;
 public final class StaticScopeForKotlinEnum extends MemberScopeImpl {
 
     /* renamed from: e  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f35514e = {Reflection.property1(new PropertyReference1Impl(StaticScopeForKotlinEnum.class, "functions", "getFunctions()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(StaticScopeForKotlinEnum.class, "properties", "getProperties()Ljava/util/List;", 0))};
+    static final /* synthetic */ KProperty[] f35290e = {Reflection.property1(new PropertyReference1Impl(StaticScopeForKotlinEnum.class, "functions", "getFunctions()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(StaticScopeForKotlinEnum.class, "properties", "getProperties()Ljava/util/List;", 0))};
 
     /* renamed from: a  reason: collision with root package name */
-    private final ClassDescriptor f35515a;
+    private final ClassDescriptor f35291a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f35516b;
+    private final boolean f35292b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NotNullLazyValue f35517c;
+    private final NotNullLazyValue f35293c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final NotNullLazyValue f35518d;
+    private final NotNullLazyValue f35294d;
 
     public StaticScopeForKotlinEnum(@NotNull StorageManager storageManager, @NotNull ClassDescriptor containingClass, boolean z10) {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(containingClass, "containingClass");
-        this.f35515a = containingClass;
-        this.f35516b = z10;
+        this.f35291a = containingClass;
+        this.f35292b = z10;
         containingClass.getKind();
         ClassKind classKind = ClassKind.CLASS;
-        this.f35517c = storageManager.createLazyValue(new d(this));
-        this.f35518d = storageManager.createLazyValue(new e(this));
+        this.f35293c = storageManager.createLazyValue(new d(this));
+        this.f35294d = storageManager.createLazyValue(new e(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List c(StaticScopeForKotlinEnum staticScopeForKotlinEnum) {
-        return CollectionsKt.o(DescriptorFactory.createEnumValueOfMethod(staticScopeForKotlinEnum.f35515a), DescriptorFactory.createEnumValuesMethod(staticScopeForKotlinEnum.f35515a));
+        return CollectionsKt.o(DescriptorFactory.createEnumValueOfMethod(staticScopeForKotlinEnum.f35291a), DescriptorFactory.createEnumValuesMethod(staticScopeForKotlinEnum.f35291a));
     }
 
     private final List d() {
-        return (List) StorageKt.getValue(this.f35517c, this, f35514e[0]);
+        return (List) StorageKt.getValue(this.f35293c, this, f35290e[0]);
     }
 
     private final List e() {
-        return (List) StorageKt.getValue(this.f35518d, this, f35514e[1]);
+        return (List) StorageKt.getValue(this.f35294d, this, f35290e[1]);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List f(StaticScopeForKotlinEnum staticScopeForKotlinEnum) {
-        if (staticScopeForKotlinEnum.f35516b) {
-            return CollectionsKt.p(DescriptorFactory.createEnumEntriesProperty(staticScopeForKotlinEnum.f35515a));
+        if (staticScopeForKotlinEnum.f35292b) {
+            return CollectionsKt.p(DescriptorFactory.createEnumEntriesProperty(staticScopeForKotlinEnum.f35291a));
         }
         return CollectionsKt.l();
     }
@@ -101,7 +101,7 @@ public final class StaticScopeForKotlinEnum extends MemberScopeImpl {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     /* renamed from: getContributedClassifier  reason: collision with other method in class */
-    public /* bridge */ /* synthetic */ ClassifierDescriptor mo1199getContributedClassifier(Name name, LookupLocation lookupLocation) {
+    public /* bridge */ /* synthetic */ ClassifierDescriptor mo1201getContributedClassifier(Name name, LookupLocation lookupLocation) {
         return (ClassifierDescriptor) getContributedClassifier(name, lookupLocation);
     }
 

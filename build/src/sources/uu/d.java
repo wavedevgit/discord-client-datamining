@@ -1,44 +1,39 @@
 package uu;
 
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function1;
+import java.util.Collection;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
-import uu.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements ku.b, c {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final d f50584a = new d();
+public interface d {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f50585d = new a();
-
-        a() {
-            super(1);
+    public static final class a {
+        public static boolean a(d dVar, Object obj) {
+            if (obj == null) {
+                return false;
+            }
+            if (obj instanceof Boolean) {
+                return ((Boolean) obj).booleanValue();
+            }
+            if (obj instanceof Number) {
+                if (((Number) obj).doubleValue() == 0.0d) {
+                    return false;
+                }
+                return true;
+            } else if (obj instanceof String) {
+                if (((CharSequence) obj).length() <= 0 || Intrinsics.areEqual(obj, "[]") || Intrinsics.areEqual(obj, "null")) {
+                    return false;
+                }
+                return true;
+            } else if (obj instanceof Collection) {
+                if (((Collection) obj).isEmpty()) {
+                    return false;
+                }
+                return true;
+            } else if ((obj instanceof Object[]) && ((Object[]) obj).length == 0) {
+                return false;
+            } else {
+                return true;
+            }
         }
-
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final Double invoke(List it) {
-            Intrinsics.checkNotNullParameter(it, "it");
-            return CollectionsKt.D0(it);
-        }
-    }
-
-    private d() {
-    }
-
-    public Double a(Object obj, Function1 function1) {
-        return c.a.a(this, obj, function1);
-    }
-
-    @Override // ku.b
-    public Object f(Object obj, Object obj2) {
-        return a(obj, a.f50585d);
     }
 }

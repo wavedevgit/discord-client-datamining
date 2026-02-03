@@ -11,7 +11,7 @@ public abstract class w2 {
             if (i13 != 0) {
                 int i14 = 1;
                 int i15 = ((i10 ^ i11) >> 31) | 1;
-                switch (v2.f15144a[roundingMode.ordinal()]) {
+                switch (v2.f14773a[roundingMode.ordinal()]) {
                     case 1:
                         x2.a(false);
                         return i12;
@@ -61,7 +61,7 @@ public abstract class w2 {
     public static int b(int i10, RoundingMode roundingMode) {
         boolean z10;
         if (i10 > 0) {
-            switch (v2.f15144a[roundingMode.ordinal()]) {
+            switch (v2.f14773a[roundingMode.ordinal()]) {
                 case 1:
                     if (((i10 - 1) & i10) == 0) {
                         z10 = true;

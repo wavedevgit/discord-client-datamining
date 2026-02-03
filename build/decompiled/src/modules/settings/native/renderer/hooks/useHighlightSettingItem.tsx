@@ -41,4 +41,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useHighlightSettingItem = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [10094, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [10171, 2]);

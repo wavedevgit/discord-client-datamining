@@ -65,14 +65,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.StickyContext = var3;
     var1 = function arg0() {
-        _fun89015: for (var _fun89015_ip = 0;;) switch (_fun89015_ip) {
+        _fun76867: for (var _fun76867_ip = 0;;) switch (_fun76867_ip) {
             case 0:
                 var1 = arg0;
                 var11 = var1.initiallyShowHeader;
                 var3 = undefined;
                 if (!(var11 === var3)) {
-                    _fun89015_ip = 19;
-                    continue _fun89015
+                    _fun76867_ip = 19;
+                    continue _fun76867
                 }
             case 17:
                 var11 = true;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var9.bind(var3)(var2);
                 var9 = var12.useAnimatedStyle;
                 var2 = function() {
-                    _fun89018: for (var _fun89018_ip = 0;;) switch (_fun89018_ip) {
+                    _fun76870: for (var _fun76870_ip = 0;;) switch (_fun76870_ip) {
                         case 0:
                             var0 = {
                                 'position': 'relative',
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var1.bind(var3)();
                             var1 = 0;
                             if (!var3) {
-                                _fun89018_ip = 48;
-                                continue _fun89018
+                                _fun76870_ip = 48;
+                                continue _fun76870
                             }
                         case 35:
                             var3 = _closure2_slot2;
@@ -203,4 +203,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.StickyWrapper = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 660, 33, 5220, 3681, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 660, 33, 5250, 3711, 2]);

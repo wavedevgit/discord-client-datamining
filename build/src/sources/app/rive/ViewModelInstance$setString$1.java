@@ -18,14 +18,14 @@ import org.jetbrains.annotations.NotNull;
 
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
-        m57invokeiFQtAB8(((ViewModelInstanceHandle) obj).m203unboximpl(), (String) obj2, (String) obj3);
-        return Unit.f33298a;
+        m59invokeiFQtAB8(((ViewModelInstanceHandle) obj).m205unboximpl(), (String) obj2, (String) obj3);
+        return Unit.f33074a;
     }
 
     /* renamed from: invoke-iFQtAB8  reason: not valid java name */
-    public final void m57invokeiFQtAB8(long j10, @NotNull String p12, @NotNull String p22) {
+    public final void m59invokeiFQtAB8(long j10, @NotNull String p12, @NotNull String p22) {
         Intrinsics.checkNotNullParameter(p12, "p1");
         Intrinsics.checkNotNullParameter(p22, "p2");
-        ((CommandQueue) this.receiver).m150setStringPropertyiFQtAB8(j10, p12, p22);
+        ((CommandQueue) this.receiver).m152setStringPropertyiFQtAB8(j10, p12, p22);
     }
 }

@@ -8,47 +8,47 @@ import ne.w0;
 public final class v implements b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private Format f22078a;
+    private Format f21654a;
 
     /* renamed from: b  reason: collision with root package name */
-    private s0 f22079b;
+    private s0 f21655b;
 
     /* renamed from: c  reason: collision with root package name */
-    private tc.b0 f22080c;
+    private tc.b0 f21656c;
 
     public v(String str) {
-        this.f22078a = new Format.b().g0(str).G();
+        this.f21654a = new Format.b().g0(str).G();
     }
 
     private void c() {
-        ne.a.i(this.f22079b);
-        w0.j(this.f22080c);
+        ne.a.i(this.f21655b);
+        w0.j(this.f21656c);
     }
 
     @Override // dd.b0
     public void a(s0 s0Var, tc.m mVar, i0.d dVar) {
-        this.f22079b = s0Var;
+        this.f21655b = s0Var;
         dVar.a();
         tc.b0 c10 = mVar.c(dVar.c(), 5);
-        this.f22080c = c10;
-        c10.b(this.f22078a);
+        this.f21656c = c10;
+        c10.b(this.f21654a);
     }
 
     @Override // dd.b0
     public void b(ne.h0 h0Var) {
         c();
-        long d10 = this.f22079b.d();
-        long e10 = this.f22079b.e();
+        long d10 = this.f21655b.d();
+        long e10 = this.f21655b.e();
         if (d10 != -9223372036854775807L && e10 != -9223372036854775807L) {
-            Format format = this.f22078a;
+            Format format = this.f21654a;
             if (e10 != format.A) {
                 Format G = format.b().k0(e10).G();
-                this.f22078a = G;
-                this.f22080c.b(G);
+                this.f21654a = G;
+                this.f21656c.b(G);
             }
             int a10 = h0Var.a();
-            this.f22080c.f(h0Var, a10);
-            this.f22080c.d(d10, 1, a10, 0, null);
+            this.f21656c.f(h0Var, a10);
+            this.f21656c.d(d10, 1, a10, 0, null);
         }
     }
 }

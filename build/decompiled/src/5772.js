@@ -1,20 +1,26 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var2, var0, var1);
     var1 = dependencyMap;
     var0 = 0;
-    var3 = var1[var0];
-    var1 = metroImportDefault;
+    var2 = var1[var0];
+    var1 = require;
     var0 = undefined;
-    var1 = var1.bind(var0)(var3);
-    var2.default = var1;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/modules/user_settings/native/connections/two_way_link/images',
+        'width': 18,
+        'height': 18.5,
+        'scales': null,
+        'hash': '84a5f82b0047a661ec45232254da9031',
+        'name': 'app_installed_check',
+        'type': 'png'
+    };
+    var4 = [2, 3];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5773]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);

@@ -1,129 +1,116 @@
 package ks;
 
-import java.util.Arrays;
-import js.j0;
-import kotlin.Result;
-import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
+public final class b extends e {
 
-    /* renamed from: d  reason: collision with root package name */
-    private d[] f36455d;
+    /* renamed from: p  reason: collision with root package name */
+    private final Function2 f36394p;
 
-    /* renamed from: e  reason: collision with root package name */
-    private int f36456e;
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a extends kotlin.coroutines.jvm.internal.d {
 
-    /* renamed from: i  reason: collision with root package name */
-    private int f36457i;
+        /* renamed from: d  reason: collision with root package name */
+        Object f36395d;
 
-    /* renamed from: o  reason: collision with root package name */
-    private b0 f36458o;
+        /* renamed from: e  reason: collision with root package name */
+        /* synthetic */ Object f36396e;
 
-    public static final /* synthetic */ int c(b bVar) {
-        return bVar.f36456e;
+        /* renamed from: o  reason: collision with root package name */
+        int f36398o;
+
+        a(Continuation continuation) {
+            super(continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            this.f36396e = obj;
+            this.f36398o |= Integer.MIN_VALUE;
+            return b.this.e(null, this);
+        }
     }
 
-    public static final /* synthetic */ d[] d(b bVar) {
-        return bVar.f36455d;
-    }
-
-    public final j0 e() {
-        b0 b0Var;
-        synchronized (this) {
-            b0Var = this.f36458o;
-            if (b0Var == null) {
-                b0Var = new b0(this.f36456e);
-                this.f36458o = b0Var;
-            }
-        }
-        return b0Var;
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final d f() {
-        d dVar;
-        b0 b0Var;
-        synchronized (this) {
-            try {
-                d[] dVarArr = this.f36455d;
-                if (dVarArr == null) {
-                    dVarArr = j(2);
-                    this.f36455d = dVarArr;
-                } else if (this.f36456e >= dVarArr.length) {
-                    Object[] copyOf = Arrays.copyOf(dVarArr, dVarArr.length * 2);
-                    Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-                    this.f36455d = (d[]) copyOf;
-                    dVarArr = (d[]) copyOf;
-                }
-                int i10 = this.f36457i;
-                do {
-                    dVar = dVarArr[i10];
-                    if (dVar == null) {
-                        dVar = g();
-                        dVarArr[i10] = dVar;
-                    }
-                    i10++;
-                    if (i10 >= dVarArr.length) {
-                        i10 = 0;
-                    }
-                    Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot<kotlin.Any>");
-                } while (!dVar.a(this));
-                this.f36457i = i10;
-                this.f36456e++;
-                b0Var = this.f36458o;
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
-        if (b0Var != null) {
-            b0Var.Z(1);
-        }
-        return dVar;
-    }
-
-    protected abstract d g();
-
-    protected abstract d[] j(int i10);
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final void k(d dVar) {
-        b0 b0Var;
-        int i10;
-        Continuation[] b10;
-        synchronized (this) {
-            try {
-                int i11 = this.f36456e - 1;
-                this.f36456e = i11;
-                b0Var = this.f36458o;
-                if (i11 == 0) {
-                    this.f36457i = 0;
-                }
-                Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot<kotlin.Any>");
-                b10 = dVar.b(this);
-            } catch (Throwable th2) {
-                throw th2;
-            }
-        }
-        for (Continuation continuation : b10) {
-            if (continuation != null) {
-                Result.a aVar = Result.f33295e;
-                continuation.resumeWith(Result.b(Unit.f33298a));
-            }
-        }
-        if (b0Var != null) {
-            b0Var.Z(-1);
-        }
+    public /* synthetic */ b(Function2 function2, CoroutineContext coroutineContext, int i10, js.a aVar, int i11, DefaultConstructorMarker defaultConstructorMarker) {
+        this(function2, (i11 & 2) != 0 ? kotlin.coroutines.e.f33148d : coroutineContext, (i11 & 4) != 0 ? -2 : i10, (i11 & 8) != 0 ? js.a.f32204d : aVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    public final int l() {
-        return this.f36456e;
+    /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
+    /* JADX WARN: Removed duplicated region for block: B:14:0x0035  */
+    /* JADX WARN: Removed duplicated region for block: B:19:0x0049  */
+    /* JADX WARN: Removed duplicated region for block: B:21:0x004c  */
+    @Override // ks.e, ls.e
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public java.lang.Object e(kotlinx.coroutines.channels.ProducerScope r5, kotlin.coroutines.Continuation r6) {
+        /*
+            r4 = this;
+            boolean r0 = r6 instanceof ks.b.a
+            if (r0 == 0) goto L13
+            r0 = r6
+            ks.b$a r0 = (ks.b.a) r0
+            int r1 = r0.f36398o
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.f36398o = r1
+            goto L18
+        L13:
+            ks.b$a r0 = new ks.b$a
+            r0.<init>(r6)
+        L18:
+            java.lang.Object r6 = r0.f36396e
+            java.lang.Object r1 = pr.b.f()
+            int r2 = r0.f36398o
+            r3 = 1
+            if (r2 == 0) goto L35
+            if (r2 != r3) goto L2d
+            java.lang.Object r5 = r0.f36395d
+            kotlinx.coroutines.channels.ProducerScope r5 = (kotlinx.coroutines.channels.ProducerScope) r5
+            kotlin.c.b(r6)
+            goto L43
+        L2d:
+            java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
+            java.lang.String r6 = "call to 'resume' before 'invoke' with coroutine"
+            r5.<init>(r6)
+            throw r5
+        L35:
+            kotlin.c.b(r6)
+            r0.f36395d = r5
+            r0.f36398o = r3
+            java.lang.Object r6 = super.e(r5, r0)
+            if (r6 != r1) goto L43
+            return r1
+        L43:
+            boolean r5 = r5.v()
+            if (r5 == 0) goto L4c
+            kotlin.Unit r5 = kotlin.Unit.f33074a
+            return r5
+        L4c:
+            java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
+            java.lang.String r6 = "'awaitClose { yourCallbackOrListener.cancel() }' should be used in the end of callbackFlow block.\nOtherwise, a callback/listener may leak in case of external cancellation.\nSee callbackFlow API documentation for the details."
+            r5.<init>(r6)
+            throw r5
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ks.b.e(kotlinx.coroutines.channels.ProducerScope, kotlin.coroutines.Continuation):java.lang.Object");
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    public final d[] m() {
-        return this.f36455d;
+    @Override // ls.e
+    protected ls.e f(CoroutineContext coroutineContext, int i10, js.a aVar) {
+        return new b(this.f36394p, coroutineContext, i10, aVar);
+    }
+
+    public b(Function2 function2, CoroutineContext coroutineContext, int i10, js.a aVar) {
+        super(function2, coroutineContext, i10, aVar);
+        this.f36394p = function2;
     }
 }

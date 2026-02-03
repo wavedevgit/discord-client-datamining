@@ -1,15 +1,21 @@
 package ir;
 
-import kotlin.coroutines.Continuation;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import android.content.Context;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-    public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
-        this();
+public class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final float f31157a;
+
+    public b(float f10) {
+        this.f31157a = f10;
     }
 
-    public abstract Object b(Object obj, Continuation continuation);
+    public static b a(Context context) {
+        return new b(context.getResources().getDisplayMetrics().density);
+    }
 
-    private b() {
+    public int b(int i10) {
+        return (int) ((i10 * this.f31157a) + 0.5f);
     }
 }

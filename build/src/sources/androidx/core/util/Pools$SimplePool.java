@@ -6,23 +6,23 @@ import kotlin.jvm.internal.Intrinsics;
 public class Pools$SimplePool implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object[] f3211a;
+    private final Object[] f3255a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f3212b;
+    private int f3256b;
 
     public Pools$SimplePool(int i10) {
         if (i10 > 0) {
-            this.f3211a = new Object[i10];
+            this.f3255a = new Object[i10];
             return;
         }
         throw new IllegalArgumentException("The max pool size must be > 0");
     }
 
     private final boolean a(Object obj) {
-        int i10 = this.f3212b;
+        int i10 = this.f3256b;
         for (int i11 = 0; i11 < i10; i11++) {
-            if (this.f3211a[i11] == obj) {
+            if (this.f3255a[i11] == obj) {
                 return true;
             }
         }
@@ -31,15 +31,15 @@ public class Pools$SimplePool implements d {
 
     @Override // b2.d
     public Object acquire() {
-        int i10 = this.f3212b;
+        int i10 = this.f3256b;
         if (i10 <= 0) {
             return null;
         }
         int i11 = i10 - 1;
-        Object obj = this.f3211a[i11];
+        Object obj = this.f3255a[i11];
         Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type T of androidx.core.util.Pools.SimplePool");
-        this.f3211a[i11] = null;
-        this.f3212b--;
+        this.f3255a[i11] = null;
+        this.f3256b--;
         return obj;
     }
 
@@ -47,11 +47,11 @@ public class Pools$SimplePool implements d {
     public boolean release(Object instance) {
         Intrinsics.checkNotNullParameter(instance, "instance");
         if (!a(instance)) {
-            int i10 = this.f3212b;
-            Object[] objArr = this.f3211a;
+            int i10 = this.f3256b;
+            Object[] objArr = this.f3255a;
             if (i10 < objArr.length) {
                 objArr[i10] = instance;
-                this.f3212b = i10 + 1;
+                this.f3256b = i10 + 1;
                 return true;
             }
             return false;

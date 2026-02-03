@@ -1,58 +1,108 @@
 package kt;
+
+import java.util.Set;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-final class q implements jt.c {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final String f36642a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final Class f36643b;
-
-    private q(String str, Class cls) {
-        if (str != null) {
-            if (cls != null) {
-                this.f36642a = str;
-                this.f36643b = cls;
-                return;
-            }
-            throw new NullPointerException("Missing type of attribute.");
-        }
-        throw new NullPointerException("Missing name of attribute key.");
+public abstract class q implements o {
+    public boolean A(p pVar, long j10) {
+        return B(pVar, Long.valueOf(j10));
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static q a(String str, Class cls) {
-        return new q(str, cls);
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj instanceof q) {
-            q qVar = (q) obj;
-            if (this.f36642a.equals(qVar.f36642a) && this.f36643b.equals(qVar.f36643b)) {
+    public boolean B(p pVar, Object obj) {
+        if (pVar != null) {
+            if (s(pVar) && z(pVar).l(x(), obj)) {
                 return true;
             }
+            return false;
         }
+        throw new NullPointerException("Missing chronological element.");
+    }
+
+    public q C(p pVar, int i10) {
+        c0 x10 = w().x(pVar);
+        if (x10 != null) {
+            return (q) x10.i(x(), i10, pVar.f());
+        }
+        return E(pVar, Integer.valueOf(i10));
+    }
+
+    public q D(p pVar, long j10) {
+        return E(pVar, Long.valueOf(j10));
+    }
+
+    public q E(p pVar, Object obj) {
+        return (q) z(pVar).v(x(), obj, pVar.f());
+    }
+
+    public q F(v vVar) {
+        return (q) vVar.apply(x());
+    }
+
+    @Override // kt.o
+    public Object k(p pVar) {
+        return z(pVar).o(x());
+    }
+
+    @Override // kt.o
+    public boolean l() {
         return false;
     }
 
-    public int hashCode() {
-        return this.f36642a.hashCode();
+    @Override // kt.o
+    public Object p(p pVar) {
+        return z(pVar).h(x());
     }
 
-    @Override // jt.c
-    public String name() {
-        return this.f36642a;
+    @Override // kt.o
+    public boolean s(p pVar) {
+        return w().F(pVar);
     }
 
-    public String toString() {
-        return this.f36643b.getName() + "@" + this.f36642a;
+    @Override // kt.o
+    public int t(p pVar) {
+        c0 x10 = w().x(pVar);
+        try {
+            if (x10 == null) {
+                return ((Integer) v(pVar)).intValue();
+            }
+            return x10.t(x());
+        } catch (r unused) {
+            return Integer.MIN_VALUE;
+        }
     }
 
-    @Override // jt.c
-    public Class type() {
-        return this.f36643b;
+    @Override // kt.o
+    public net.time4j.tz.k u() {
+        throw new r("Timezone not available: " + this);
+    }
+
+    @Override // kt.o
+    public Object v(p pVar) {
+        return z(pVar).x(x());
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public abstract x w();
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public q x() {
+        x w10 = w();
+        Class o10 = w10.o();
+        if (o10.isInstance(this)) {
+            return (q) o10.cast(this);
+        }
+        for (p pVar : w10.B()) {
+            if (o10 == pVar.getType()) {
+                return (q) o10.cast(v(pVar));
+            }
+        }
+        throw new IllegalStateException("Implementation error: Cannot find entity context.");
+    }
+
+    public Set y() {
+        return w().B();
+    }
+
+    z z(p pVar) {
+        return w().D(pVar);
     }
 }

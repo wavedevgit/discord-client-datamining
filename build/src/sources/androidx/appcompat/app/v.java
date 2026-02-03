@@ -37,82 +37,82 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
     private static final Interpolator E = new DecelerateInterpolator();
 
     /* renamed from: a  reason: collision with root package name */
-    Context f1107a;
+    Context f1151a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Context f1108b;
+    private Context f1152b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Activity f1109c;
+    private Activity f1153c;
 
     /* renamed from: d  reason: collision with root package name */
-    ActionBarOverlayLayout f1110d;
+    ActionBarOverlayLayout f1154d;
 
     /* renamed from: e  reason: collision with root package name */
-    ActionBarContainer f1111e;
+    ActionBarContainer f1155e;
 
     /* renamed from: f  reason: collision with root package name */
-    z f1112f;
+    z f1156f;
 
     /* renamed from: g  reason: collision with root package name */
-    ActionBarContextView f1113g;
+    ActionBarContextView f1157g;
 
     /* renamed from: h  reason: collision with root package name */
-    View f1114h;
+    View f1158h;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f1117k;
+    private boolean f1161k;
 
     /* renamed from: l  reason: collision with root package name */
-    d f1118l;
+    d f1162l;
 
     /* renamed from: m  reason: collision with root package name */
-    ActionMode f1119m;
+    ActionMode f1163m;
 
     /* renamed from: n  reason: collision with root package name */
-    ActionMode.Callback f1120n;
+    ActionMode.Callback f1164n;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f1121o;
+    private boolean f1165o;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f1123q;
+    private boolean f1167q;
 
     /* renamed from: t  reason: collision with root package name */
-    boolean f1126t;
+    boolean f1170t;
 
     /* renamed from: u  reason: collision with root package name */
-    boolean f1127u;
+    boolean f1171u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f1128v;
+    private boolean f1172v;
 
     /* renamed from: x  reason: collision with root package name */
-    androidx.appcompat.view.f f1130x;
+    androidx.appcompat.view.f f1174x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f1131y;
+    private boolean f1175y;
 
     /* renamed from: z  reason: collision with root package name */
-    boolean f1132z;
+    boolean f1176z;
 
     /* renamed from: i  reason: collision with root package name */
-    private ArrayList f1115i = new ArrayList();
+    private ArrayList f1159i = new ArrayList();
 
     /* renamed from: j  reason: collision with root package name */
-    private int f1116j = -1;
+    private int f1160j = -1;
 
     /* renamed from: p  reason: collision with root package name */
-    private ArrayList f1122p = new ArrayList();
+    private ArrayList f1166p = new ArrayList();
 
     /* renamed from: r  reason: collision with root package name */
-    private int f1124r = 0;
+    private int f1168r = 0;
 
     /* renamed from: s  reason: collision with root package name */
-    boolean f1125s = true;
+    boolean f1169s = true;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f1129w = true;
+    private boolean f1173w = true;
     final s0 A = new a();
     final s0 B = new b();
     final u0 C = new c();
@@ -126,16 +126,16 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
         public void b(View view) {
             View view2;
             v vVar = v.this;
-            if (vVar.f1125s && (view2 = vVar.f1114h) != null) {
+            if (vVar.f1169s && (view2 = vVar.f1158h) != null) {
                 view2.setTranslationY(0.0f);
-                v.this.f1111e.setTranslationY(0.0f);
+                v.this.f1155e.setTranslationY(0.0f);
             }
-            v.this.f1111e.setVisibility(8);
-            v.this.f1111e.setTransitioning(false);
+            v.this.f1155e.setVisibility(8);
+            v.this.f1155e.setTransitioning(false);
             v vVar2 = v.this;
-            vVar2.f1130x = null;
+            vVar2.f1174x = null;
             vVar2.B();
-            ActionBarOverlayLayout actionBarOverlayLayout = v.this.f1110d;
+            ActionBarOverlayLayout actionBarOverlayLayout = v.this.f1154d;
             if (actionBarOverlayLayout != null) {
                 h0.k0(actionBarOverlayLayout);
             }
@@ -150,8 +150,8 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
         @Override // androidx.core.view.s0
         public void b(View view) {
             v vVar = v.this;
-            vVar.f1130x = null;
-            vVar.f1111e.requestLayout();
+            vVar.f1174x = null;
+            vVar.f1155e.requestLayout();
         }
     }
 
@@ -162,7 +162,7 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
 
         @Override // androidx.core.view.u0
         public void a(View view) {
-            ((View) v.this.f1111e.getParent()).invalidate();
+            ((View) v.this.f1155e.getParent()).invalidate();
         }
     }
 
@@ -170,28 +170,28 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
     public class d extends ActionMode implements e.a {
 
         /* renamed from: i  reason: collision with root package name */
-        private final Context f1136i;
+        private final Context f1180i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final androidx.appcompat.view.menu.e f1137o;
+        private final androidx.appcompat.view.menu.e f1181o;
 
         /* renamed from: p  reason: collision with root package name */
-        private ActionMode.Callback f1138p;
+        private ActionMode.Callback f1182p;
 
         /* renamed from: q  reason: collision with root package name */
-        private WeakReference f1139q;
+        private WeakReference f1183q;
 
         public d(Context context, ActionMode.Callback callback) {
-            this.f1136i = context;
-            this.f1138p = callback;
+            this.f1180i = context;
+            this.f1182p = callback;
             androidx.appcompat.view.menu.e T = new androidx.appcompat.view.menu.e(context).T(1);
-            this.f1137o = T;
+            this.f1181o = T;
             T.S(this);
         }
 
         @Override // androidx.appcompat.view.menu.e.a
         public boolean a(androidx.appcompat.view.menu.e eVar, MenuItem menuItem) {
-            ActionMode.Callback callback = this.f1138p;
+            ActionMode.Callback callback = this.f1182p;
             if (callback != null) {
                 return callback.c(this, menuItem);
             }
@@ -200,37 +200,37 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
 
         @Override // androidx.appcompat.view.menu.e.a
         public void b(androidx.appcompat.view.menu.e eVar) {
-            if (this.f1138p == null) {
+            if (this.f1182p == null) {
                 return;
             }
             k();
-            v.this.f1113g.l();
+            v.this.f1157g.l();
         }
 
         @Override // androidx.appcompat.view.ActionMode
         public void c() {
             v vVar = v.this;
-            if (vVar.f1118l != this) {
+            if (vVar.f1162l != this) {
                 return;
             }
-            if (!v.A(vVar.f1126t, vVar.f1127u, false)) {
+            if (!v.A(vVar.f1170t, vVar.f1171u, false)) {
                 v vVar2 = v.this;
-                vVar2.f1119m = this;
-                vVar2.f1120n = this.f1138p;
+                vVar2.f1163m = this;
+                vVar2.f1164n = this.f1182p;
             } else {
-                this.f1138p.a(this);
+                this.f1182p.a(this);
             }
-            this.f1138p = null;
+            this.f1182p = null;
             v.this.z(false);
-            v.this.f1113g.g();
+            v.this.f1157g.g();
             v vVar3 = v.this;
-            vVar3.f1110d.setHideOnContentScrollEnabled(vVar3.f1132z);
-            v.this.f1118l = null;
+            vVar3.f1154d.setHideOnContentScrollEnabled(vVar3.f1176z);
+            v.this.f1162l = null;
         }
 
         @Override // androidx.appcompat.view.ActionMode
         public View d() {
-            WeakReference weakReference = this.f1139q;
+            WeakReference weakReference = this.f1183q;
             if (weakReference != null) {
                 return (View) weakReference.get();
             }
@@ -239,92 +239,92 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
 
         @Override // androidx.appcompat.view.ActionMode
         public Menu e() {
-            return this.f1137o;
+            return this.f1181o;
         }
 
         @Override // androidx.appcompat.view.ActionMode
         public MenuInflater f() {
-            return new androidx.appcompat.view.e(this.f1136i);
+            return new androidx.appcompat.view.e(this.f1180i);
         }
 
         @Override // androidx.appcompat.view.ActionMode
         public CharSequence g() {
-            return v.this.f1113g.getSubtitle();
+            return v.this.f1157g.getSubtitle();
         }
 
         @Override // androidx.appcompat.view.ActionMode
         public CharSequence i() {
-            return v.this.f1113g.getTitle();
+            return v.this.f1157g.getTitle();
         }
 
         @Override // androidx.appcompat.view.ActionMode
         public void k() {
-            if (v.this.f1118l != this) {
+            if (v.this.f1162l != this) {
                 return;
             }
-            this.f1137o.e0();
+            this.f1181o.e0();
             try {
-                this.f1138p.d(this, this.f1137o);
+                this.f1182p.d(this, this.f1181o);
             } finally {
-                this.f1137o.d0();
+                this.f1181o.d0();
             }
         }
 
         @Override // androidx.appcompat.view.ActionMode
         public boolean l() {
-            return v.this.f1113g.j();
+            return v.this.f1157g.j();
         }
 
         @Override // androidx.appcompat.view.ActionMode
         public void m(View view) {
-            v.this.f1113g.setCustomView(view);
-            this.f1139q = new WeakReference(view);
+            v.this.f1157g.setCustomView(view);
+            this.f1183q = new WeakReference(view);
         }
 
         @Override // androidx.appcompat.view.ActionMode
         public void n(int i10) {
-            o(v.this.f1107a.getResources().getString(i10));
+            o(v.this.f1151a.getResources().getString(i10));
         }
 
         @Override // androidx.appcompat.view.ActionMode
         public void o(CharSequence charSequence) {
-            v.this.f1113g.setSubtitle(charSequence);
+            v.this.f1157g.setSubtitle(charSequence);
         }
 
         @Override // androidx.appcompat.view.ActionMode
         public void q(int i10) {
-            r(v.this.f1107a.getResources().getString(i10));
+            r(v.this.f1151a.getResources().getString(i10));
         }
 
         @Override // androidx.appcompat.view.ActionMode
         public void r(CharSequence charSequence) {
-            v.this.f1113g.setTitle(charSequence);
+            v.this.f1157g.setTitle(charSequence);
         }
 
         @Override // androidx.appcompat.view.ActionMode
         public void s(boolean z10) {
             super.s(z10);
-            v.this.f1113g.setTitleOptional(z10);
+            v.this.f1157g.setTitleOptional(z10);
         }
 
         public boolean t() {
-            this.f1137o.e0();
+            this.f1181o.e0();
             try {
-                return this.f1138p.b(this, this.f1137o);
+                return this.f1182p.b(this, this.f1181o);
             } finally {
-                this.f1137o.d0();
+                this.f1181o.d0();
             }
         }
     }
 
     public v(Activity activity, boolean z10) {
-        this.f1109c = activity;
+        this.f1153c = activity;
         View decorView = activity.getWindow().getDecorView();
         H(decorView);
         if (z10) {
             return;
         }
-        this.f1114h = decorView.findViewById(16908290);
+        this.f1158h = decorView.findViewById(16908290);
     }
 
     static boolean A(boolean z10, boolean z11, boolean z12) {
@@ -354,9 +354,9 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
     }
 
     private void G() {
-        if (this.f1128v) {
-            this.f1128v = false;
-            ActionBarOverlayLayout actionBarOverlayLayout = this.f1110d;
+        if (this.f1172v) {
+            this.f1172v = false;
+            ActionBarOverlayLayout actionBarOverlayLayout = this.f1154d;
             if (actionBarOverlayLayout != null) {
                 actionBarOverlayLayout.setShowingForActionMode(false);
             }
@@ -367,27 +367,27 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
     private void H(View view) {
         boolean z10;
         boolean z11;
-        ActionBarOverlayLayout actionBarOverlayLayout = (ActionBarOverlayLayout) view.findViewById(f.f.f24159q);
-        this.f1110d = actionBarOverlayLayout;
+        ActionBarOverlayLayout actionBarOverlayLayout = (ActionBarOverlayLayout) view.findViewById(f.f.f23370q);
+        this.f1154d = actionBarOverlayLayout;
         if (actionBarOverlayLayout != null) {
             actionBarOverlayLayout.setActionBarVisibilityCallback(this);
         }
-        this.f1112f = E(view.findViewById(f.f.f24143a));
-        this.f1113g = (ActionBarContextView) view.findViewById(f.f.f24149g);
-        ActionBarContainer actionBarContainer = (ActionBarContainer) view.findViewById(f.f.f24145c);
-        this.f1111e = actionBarContainer;
-        z zVar = this.f1112f;
-        if (zVar != null && this.f1113g != null && actionBarContainer != null) {
-            this.f1107a = zVar.getContext();
-            if ((this.f1112f.u() & 4) != 0) {
+        this.f1156f = E(view.findViewById(f.f.f23354a));
+        this.f1157g = (ActionBarContextView) view.findViewById(f.f.f23360g);
+        ActionBarContainer actionBarContainer = (ActionBarContainer) view.findViewById(f.f.f23356c);
+        this.f1155e = actionBarContainer;
+        z zVar = this.f1156f;
+        if (zVar != null && this.f1157g != null && actionBarContainer != null) {
+            this.f1151a = zVar.getContext();
+            if ((this.f1156f.u() & 4) != 0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             if (z10) {
-                this.f1117k = true;
+                this.f1161k = true;
             }
-            androidx.appcompat.view.a b10 = androidx.appcompat.view.a.b(this.f1107a);
+            androidx.appcompat.view.a b10 = androidx.appcompat.view.a.b(this.f1151a);
             if (!b10.a() && !z10) {
                 z11 = false;
             } else {
@@ -395,11 +395,11 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
             }
             M(z11);
             K(b10.e());
-            TypedArray obtainStyledAttributes = this.f1107a.obtainStyledAttributes(null, f.j.f24207a, f.a.f24071c, 0);
-            if (obtainStyledAttributes.getBoolean(f.j.f24257k, false)) {
+            TypedArray obtainStyledAttributes = this.f1151a.obtainStyledAttributes(null, f.j.f23418a, f.a.f23282c, 0);
+            if (obtainStyledAttributes.getBoolean(f.j.f23468k, false)) {
                 L(true);
             }
-            int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(f.j.f24247i, 0);
+            int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(f.j.f23458i, 0);
             if (dimensionPixelSize != 0) {
                 J(dimensionPixelSize);
             }
@@ -412,13 +412,13 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
     private void K(boolean z10) {
         boolean z11;
         boolean z12;
-        this.f1123q = z10;
+        this.f1167q = z10;
         if (!z10) {
-            this.f1112f.r(null);
-            this.f1111e.setTabContainer(null);
+            this.f1156f.r(null);
+            this.f1155e.setTabContainer(null);
         } else {
-            this.f1111e.setTabContainer(null);
-            this.f1112f.r(null);
+            this.f1155e.setTabContainer(null);
+            this.f1156f.r(null);
         }
         boolean z13 = false;
         if (F() == 2) {
@@ -426,28 +426,28 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
         } else {
             z11 = false;
         }
-        z zVar = this.f1112f;
-        if (!this.f1123q && z11) {
+        z zVar = this.f1156f;
+        if (!this.f1167q && z11) {
             z12 = true;
         } else {
             z12 = false;
         }
         zVar.p(z12);
-        ActionBarOverlayLayout actionBarOverlayLayout = this.f1110d;
-        if (!this.f1123q && z11) {
+        ActionBarOverlayLayout actionBarOverlayLayout = this.f1154d;
+        if (!this.f1167q && z11) {
             z13 = true;
         }
         actionBarOverlayLayout.setHasNonEmbeddedTabs(z13);
     }
 
     private boolean N() {
-        return this.f1111e.isLaidOut();
+        return this.f1155e.isLaidOut();
     }
 
     private void O() {
-        if (!this.f1128v) {
-            this.f1128v = true;
-            ActionBarOverlayLayout actionBarOverlayLayout = this.f1110d;
+        if (!this.f1172v) {
+            this.f1172v = true;
+            ActionBarOverlayLayout actionBarOverlayLayout = this.f1154d;
             if (actionBarOverlayLayout != null) {
                 actionBarOverlayLayout.setShowingForActionMode(true);
             }
@@ -456,52 +456,52 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
     }
 
     private void P(boolean z10) {
-        if (A(this.f1126t, this.f1127u, this.f1128v)) {
-            if (!this.f1129w) {
-                this.f1129w = true;
+        if (A(this.f1170t, this.f1171u, this.f1172v)) {
+            if (!this.f1173w) {
+                this.f1173w = true;
                 D(z10);
             }
-        } else if (this.f1129w) {
-            this.f1129w = false;
+        } else if (this.f1173w) {
+            this.f1173w = false;
             C(z10);
         }
     }
 
     void B() {
-        ActionMode.Callback callback = this.f1120n;
+        ActionMode.Callback callback = this.f1164n;
         if (callback != null) {
-            callback.a(this.f1119m);
-            this.f1119m = null;
-            this.f1120n = null;
+            callback.a(this.f1163m);
+            this.f1163m = null;
+            this.f1164n = null;
         }
     }
 
     public void C(boolean z10) {
         View view;
         int[] iArr;
-        androidx.appcompat.view.f fVar = this.f1130x;
+        androidx.appcompat.view.f fVar = this.f1174x;
         if (fVar != null) {
             fVar.a();
         }
-        if (this.f1124r == 0 && (this.f1131y || z10)) {
-            this.f1111e.setAlpha(1.0f);
-            this.f1111e.setTransitioning(true);
+        if (this.f1168r == 0 && (this.f1175y || z10)) {
+            this.f1155e.setAlpha(1.0f);
+            this.f1155e.setTransitioning(true);
             androidx.appcompat.view.f fVar2 = new androidx.appcompat.view.f();
-            float f10 = -this.f1111e.getHeight();
+            float f10 = -this.f1155e.getHeight();
             if (z10) {
-                this.f1111e.getLocationInWindow(new int[]{0, 0});
+                this.f1155e.getLocationInWindow(new int[]{0, 0});
                 f10 -= iArr[1];
             }
-            r0 l10 = h0.e(this.f1111e).l(f10);
+            r0 l10 = h0.e(this.f1155e).l(f10);
             l10.j(this.C);
             fVar2.c(l10);
-            if (this.f1125s && (view = this.f1114h) != null) {
+            if (this.f1169s && (view = this.f1158h) != null) {
                 fVar2.c(h0.e(view).l(f10));
             }
             fVar2.f(D);
             fVar2.e(250L);
             fVar2.g(this.A);
-            this.f1130x = fVar2;
+            this.f1174x = fVar2;
             fVar2.h();
             return;
         }
@@ -512,78 +512,78 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
         View view;
         View view2;
         int[] iArr;
-        androidx.appcompat.view.f fVar = this.f1130x;
+        androidx.appcompat.view.f fVar = this.f1174x;
         if (fVar != null) {
             fVar.a();
         }
-        this.f1111e.setVisibility(0);
-        if (this.f1124r == 0 && (this.f1131y || z10)) {
-            this.f1111e.setTranslationY(0.0f);
-            float f10 = -this.f1111e.getHeight();
+        this.f1155e.setVisibility(0);
+        if (this.f1168r == 0 && (this.f1175y || z10)) {
+            this.f1155e.setTranslationY(0.0f);
+            float f10 = -this.f1155e.getHeight();
             if (z10) {
-                this.f1111e.getLocationInWindow(new int[]{0, 0});
+                this.f1155e.getLocationInWindow(new int[]{0, 0});
                 f10 -= iArr[1];
             }
-            this.f1111e.setTranslationY(f10);
+            this.f1155e.setTranslationY(f10);
             androidx.appcompat.view.f fVar2 = new androidx.appcompat.view.f();
-            r0 l10 = h0.e(this.f1111e).l(0.0f);
+            r0 l10 = h0.e(this.f1155e).l(0.0f);
             l10.j(this.C);
             fVar2.c(l10);
-            if (this.f1125s && (view2 = this.f1114h) != null) {
+            if (this.f1169s && (view2 = this.f1158h) != null) {
                 view2.setTranslationY(f10);
-                fVar2.c(h0.e(this.f1114h).l(0.0f));
+                fVar2.c(h0.e(this.f1158h).l(0.0f));
             }
             fVar2.f(E);
             fVar2.e(250L);
             fVar2.g(this.B);
-            this.f1130x = fVar2;
+            this.f1174x = fVar2;
             fVar2.h();
         } else {
-            this.f1111e.setAlpha(1.0f);
-            this.f1111e.setTranslationY(0.0f);
-            if (this.f1125s && (view = this.f1114h) != null) {
+            this.f1155e.setAlpha(1.0f);
+            this.f1155e.setTranslationY(0.0f);
+            if (this.f1169s && (view = this.f1158h) != null) {
                 view.setTranslationY(0.0f);
             }
             this.B.b(null);
         }
-        ActionBarOverlayLayout actionBarOverlayLayout = this.f1110d;
+        ActionBarOverlayLayout actionBarOverlayLayout = this.f1154d;
         if (actionBarOverlayLayout != null) {
             h0.k0(actionBarOverlayLayout);
         }
     }
 
     public int F() {
-        return this.f1112f.k();
+        return this.f1156f.k();
     }
 
     public void I(int i10, int i11) {
-        int u10 = this.f1112f.u();
+        int u10 = this.f1156f.u();
         if ((i11 & 4) != 0) {
-            this.f1117k = true;
+            this.f1161k = true;
         }
-        this.f1112f.i((i10 & i11) | ((~i11) & u10));
+        this.f1156f.i((i10 & i11) | ((~i11) & u10));
     }
 
     public void J(float f10) {
-        h0.v0(this.f1111e, f10);
+        h0.v0(this.f1155e, f10);
     }
 
     public void L(boolean z10) {
-        if (z10 && !this.f1110d.r()) {
+        if (z10 && !this.f1154d.r()) {
             throw new IllegalStateException("Action bar must be in overlay mode (Window.FEATURE_OVERLAY_ACTION_BAR) to enable hide on content scroll");
         }
-        this.f1132z = z10;
-        this.f1110d.setHideOnContentScrollEnabled(z10);
+        this.f1176z = z10;
+        this.f1154d.setHideOnContentScrollEnabled(z10);
     }
 
     public void M(boolean z10) {
-        this.f1112f.n(z10);
+        this.f1156f.n(z10);
     }
 
     @Override // androidx.appcompat.widget.ActionBarOverlayLayout.d
     public void a() {
-        if (this.f1127u) {
-            this.f1127u = false;
+        if (this.f1171u) {
+            this.f1171u = false;
             P(true);
         }
     }
@@ -594,31 +594,31 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
 
     @Override // androidx.appcompat.widget.ActionBarOverlayLayout.d
     public void c(boolean z10) {
-        this.f1125s = z10;
+        this.f1169s = z10;
     }
 
     @Override // androidx.appcompat.widget.ActionBarOverlayLayout.d
     public void d() {
-        if (!this.f1127u) {
-            this.f1127u = true;
+        if (!this.f1171u) {
+            this.f1171u = true;
             P(true);
         }
     }
 
     @Override // androidx.appcompat.widget.ActionBarOverlayLayout.d
     public void e() {
-        androidx.appcompat.view.f fVar = this.f1130x;
+        androidx.appcompat.view.f fVar = this.f1174x;
         if (fVar != null) {
             fVar.a();
-            this.f1130x = null;
+            this.f1174x = null;
         }
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public boolean g() {
-        z zVar = this.f1112f;
+        z zVar = this.f1156f;
         if (zVar != null && zVar.h()) {
-            this.f1112f.collapseActionView();
+            this.f1156f.collapseActionView();
             return true;
         }
         return false;
@@ -626,54 +626,54 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
 
     @Override // androidx.appcompat.app.ActionBar
     public void h(boolean z10) {
-        if (z10 != this.f1121o) {
-            this.f1121o = z10;
-            if (this.f1122p.size() <= 0) {
+        if (z10 != this.f1165o) {
+            this.f1165o = z10;
+            if (this.f1166p.size() <= 0) {
                 return;
             }
-            android.support.v4.media.session.b.a(this.f1122p.get(0));
+            android.support.v4.media.session.b.a(this.f1166p.get(0));
             throw null;
         }
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public int i() {
-        return this.f1112f.u();
+        return this.f1156f.u();
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public Context j() {
-        if (this.f1108b == null) {
+        if (this.f1152b == null) {
             TypedValue typedValue = new TypedValue();
-            this.f1107a.getTheme().resolveAttribute(f.a.f24073e, typedValue, true);
+            this.f1151a.getTheme().resolveAttribute(f.a.f23284e, typedValue, true);
             int i10 = typedValue.resourceId;
             if (i10 != 0) {
-                this.f1108b = new ContextThemeWrapper(this.f1107a, i10);
+                this.f1152b = new ContextThemeWrapper(this.f1151a, i10);
             } else {
-                this.f1108b = this.f1107a;
+                this.f1152b = this.f1151a;
             }
         }
-        return this.f1108b;
+        return this.f1152b;
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public void k() {
-        if (!this.f1126t) {
-            this.f1126t = true;
+        if (!this.f1170t) {
+            this.f1170t = true;
             P(false);
         }
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public void m(Configuration configuration) {
-        K(androidx.appcompat.view.a.b(this.f1107a).e());
+        K(androidx.appcompat.view.a.b(this.f1151a).e());
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public boolean o(int i10, KeyEvent keyEvent) {
         Menu e10;
         int i11;
-        d dVar = this.f1118l;
+        d dVar = this.f1162l;
         if (dVar == null || (e10 = dVar.e()) == null) {
             return false;
         }
@@ -692,12 +692,12 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
 
     @Override // androidx.appcompat.widget.ActionBarOverlayLayout.d
     public void onWindowVisibilityChanged(int i10) {
-        this.f1124r = i10;
+        this.f1168r = i10;
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public void r(boolean z10) {
-        if (!this.f1117k) {
+        if (!this.f1161k) {
             s(z10);
         }
     }
@@ -726,41 +726,41 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
 
     @Override // androidx.appcompat.app.ActionBar
     public void u(Drawable drawable) {
-        this.f1112f.w(drawable);
+        this.f1156f.w(drawable);
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public void v(boolean z10) {
         androidx.appcompat.view.f fVar;
-        this.f1131y = z10;
-        if (!z10 && (fVar = this.f1130x) != null) {
+        this.f1175y = z10;
+        if (!z10 && (fVar = this.f1174x) != null) {
             fVar.a();
         }
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public void w(CharSequence charSequence) {
-        this.f1112f.setTitle(charSequence);
+        this.f1156f.setTitle(charSequence);
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public void x(CharSequence charSequence) {
-        this.f1112f.setWindowTitle(charSequence);
+        this.f1156f.setWindowTitle(charSequence);
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public ActionMode y(ActionMode.Callback callback) {
-        d dVar = this.f1118l;
+        d dVar = this.f1162l;
         if (dVar != null) {
             dVar.c();
         }
-        this.f1110d.setHideOnContentScrollEnabled(false);
-        this.f1113g.k();
-        d dVar2 = new d(this.f1113g.getContext(), callback);
+        this.f1154d.setHideOnContentScrollEnabled(false);
+        this.f1157g.k();
+        d dVar2 = new d(this.f1157g.getContext(), callback);
         if (dVar2.t()) {
-            this.f1118l = dVar2;
+            this.f1162l = dVar2;
             dVar2.k();
-            this.f1113g.h(dVar2);
+            this.f1157g.h(dVar2);
             z(true);
             return dVar2;
         }
@@ -777,21 +777,21 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
         }
         if (N()) {
             if (z10) {
-                f10 = this.f1112f.l(4, 100L);
-                l10 = this.f1113g.f(0, 200L);
+                f10 = this.f1156f.l(4, 100L);
+                l10 = this.f1157g.f(0, 200L);
             } else {
-                l10 = this.f1112f.l(0, 200L);
-                f10 = this.f1113g.f(8, 100L);
+                l10 = this.f1156f.l(0, 200L);
+                f10 = this.f1157g.f(8, 100L);
             }
             androidx.appcompat.view.f fVar = new androidx.appcompat.view.f();
             fVar.d(f10, l10);
             fVar.h();
         } else if (z10) {
-            this.f1112f.setVisibility(4);
-            this.f1113g.setVisibility(0);
+            this.f1156f.setVisibility(4);
+            this.f1157g.setVisibility(0);
         } else {
-            this.f1112f.setVisibility(0);
-            this.f1113g.setVisibility(8);
+            this.f1156f.setVisibility(0);
+            this.f1157g.setVisibility(8);
         }
     }
 

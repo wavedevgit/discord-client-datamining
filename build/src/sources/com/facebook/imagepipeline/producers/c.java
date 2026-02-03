@@ -3,7 +3,7 @@ package com.facebook.imagepipeline.producers;
 public abstract class c implements Consumer {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f11709a = false;
+    private boolean f11338a = false;
 
     public static boolean d(int i10) {
         return (i10 & 1) == 1;
@@ -31,10 +31,10 @@ public abstract class c implements Consumer {
 
     @Override // com.facebook.imagepipeline.producers.Consumer
     public synchronized void a() {
-        if (this.f11709a) {
+        if (this.f11338a) {
             return;
         }
-        this.f11709a = true;
+        this.f11338a = true;
         try {
             f();
         } catch (Exception e10) {
@@ -44,10 +44,10 @@ public abstract class c implements Consumer {
 
     @Override // com.facebook.imagepipeline.producers.Consumer
     public synchronized void b(Object obj, int i10) {
-        if (this.f11709a) {
+        if (this.f11338a) {
             return;
         }
-        this.f11709a = d(i10);
+        this.f11338a = d(i10);
         try {
             h(obj, i10);
         } catch (Exception e10) {
@@ -57,7 +57,7 @@ public abstract class c implements Consumer {
 
     @Override // com.facebook.imagepipeline.producers.Consumer
     public synchronized void c(float f10) {
-        if (this.f11709a) {
+        if (this.f11338a) {
             return;
         }
         try {
@@ -81,10 +81,10 @@ public abstract class c implements Consumer {
 
     @Override // com.facebook.imagepipeline.producers.Consumer
     public synchronized void onFailure(Throwable th2) {
-        if (this.f11709a) {
+        if (this.f11338a) {
             return;
         }
-        this.f11709a = true;
+        this.f11338a = true;
         try {
             g(th2);
         } catch (Exception e10) {

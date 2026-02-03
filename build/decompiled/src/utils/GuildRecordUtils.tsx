@@ -208,144 +208,166 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8.premiumProgressBarEnabled;
             case 499:
                 var2.premiumProgressBarEnabled = var6;
+                var6 = var5.premium_progress_bar_enabled_user_updated_at;
+                var8 = var0 != var6;
+                var6 = null;
+                if (!var8) {
+                    _fun17771_ip = 553;
+                    continue _fun17771
+                }
+            case 519:
+                var8 = global;
+                var10 = var8.Date;
+                var13 = var5.premium_progress_bar_enabled_user_updated_at;
+                var9 = var10.prototype;
+                var9 = Object.create(var9, {
+                    constructor: {
+                        value: var10
+                    }
+                });
+                var14 = var9;
+                var8 = new var14[var10](var13, var12);
+                var6 = var8 instanceof Object ? var8 : var9;
+            case 553:
+                var2.premiumProgressBarEnabledUserUpdatedAt = var6;
                 var6 = var5.system_channel_flags;
                 var2.systemChannelFlags = var6;
                 var8 = var5.discovery_splash;
                 var9 = var0 != var8;
                 var6 = null;
                 if (!var9) {
-                    _fun17771_ip = 533;
+                    _fun17771_ip = 587;
                     continue _fun17771
                 }
-            case 530:
+            case 584:
                 var6 = var8;
-            case 533:
+            case 587:
                 var2.discoverySplash = var6;
                 var8 = var5.rules_channel_id;
                 var9 = var0 != var8;
                 var6 = null;
                 if (!var9) {
-                    _fun17771_ip = 556;
+                    _fun17771_ip = 610;
                     continue _fun17771
                 }
-            case 553:
+            case 607:
                 var6 = var8;
-            case 556:
+            case 610:
                 var2.rulesChannelId = var6;
                 var8 = var5.safety_alerts_channel_id;
                 var9 = var0 != var8;
                 var6 = null;
                 if (!var9) {
-                    _fun17771_ip = 579;
+                    _fun17771_ip = 633;
                     continue _fun17771
                 }
-            case 576:
+            case 630:
                 var6 = var8;
-            case 579:
+            case 633:
                 var2.safetyAlertsChannelId = var6;
                 var8 = var5.public_updates_channel_id;
                 var9 = var0 != var8;
                 var6 = null;
                 if (!var9) {
-                    _fun17771_ip = 602;
+                    _fun17771_ip = 656;
                     continue _fun17771
                 }
-            case 599:
+            case 653:
                 var6 = var8;
-            case 602:
+            case 656:
                 var2.publicUpdatesChannelId = var6;
                 var6 = var5.max_stage_video_channel_users;
                 if (!(var0 == var6)) {
-                    _fun17771_ip = 627;
+                    _fun17771_ip = 681;
                     continue _fun17771
                 }
-            case 617:
+            case 671:
                 var8 = _closure1_slot7;
                 var6 = var8.maxStageVideoChannelUsers;
-            case 627:
+            case 681:
                 var2.maxStageVideoChannelUsers = var6;
                 var6 = var5.max_video_channel_users;
                 if (!(var0 == var6)) {
-                    _fun17771_ip = 652;
+                    _fun17771_ip = 706;
                     continue _fun17771
                 }
-            case 642:
+            case 696:
                 var8 = _closure1_slot7;
                 var6 = var8.maxVideoChannelUsers;
-            case 652:
+            case 706:
                 var2.maxVideoChannelUsers = var6;
                 var6 = var5.max_members;
                 if (!(var0 == var6)) {
-                    _fun17771_ip = 677;
+                    _fun17771_ip = 731;
                     continue _fun17771
                 }
-            case 667:
+            case 721:
                 var8 = _closure1_slot7;
                 var6 = var8.maxMembers;
-            case 677:
+            case 731:
                 var2.maxMembers = var6;
                 var6 = var5.nsfw_level;
                 if (!(var0 == var6)) {
-                    _fun17771_ip = 702;
+                    _fun17771_ip = 756;
                     continue _fun17771
                 }
-            case 692:
+            case 746:
                 var7 = _closure1_slot7;
                 var6 = var7.nsfwLevel;
-            case 702:
+            case 756:
                 var2.nsfwLevel = var6;
                 var7 = var5.owner_configured_content_level;
                 var8 = var0 != var7;
                 var6 = null;
                 if (!var8) {
-                    _fun17771_ip = 725;
+                    _fun17771_ip = 779;
                     continue _fun17771
                 }
-            case 722:
+            case 776:
                 var6 = var7;
-            case 725:
+            case 779:
                 var2.ownerConfiguredContentLevel = var6;
                 var7 = var5.hub_type;
                 var8 = var0 != var7;
                 var6 = null;
                 if (!var8) {
-                    _fun17771_ip = 748;
+                    _fun17771_ip = 802;
                     continue _fun17771
                 }
-            case 745:
+            case 799:
                 var6 = var7;
-            case 748:
+            case 802:
                 var2.hubType = var6;
                 var7 = var5.latest_onboarding_question_id;
                 var8 = var0 != var7;
                 var6 = null;
                 if (!var8) {
-                    _fun17771_ip = 771;
+                    _fun17771_ip = 825;
                     continue _fun17771
                 }
-            case 768:
+            case 822:
                 var6 = var7;
-            case 771:
+            case 825:
                 var2.latestOnboardingQuestionId = var6;
                 var7 = var5.profile;
                 var8 = var0 != var7;
                 var6 = null;
                 if (!var8) {
-                    _fun17771_ip = 794;
+                    _fun17771_ip = 848;
                     continue _fun17771
                 }
-            case 791:
+            case 845:
                 var6 = var7;
-            case 794:
+            case 848:
                 var2.profile = var6;
                 var6 = var5.premium_features;
                 var7 = var0 != var6;
                 var6 = null;
                 if (!var7) {
-                    _fun17771_ip = 869;
+                    _fun17771_ip = 923;
                     continue _fun17771
                 }
-            case 814:
+            case 868:
                 var8 = var5.premium_features;
                 var7 = {};
                 var9 = var8.features;
@@ -357,16 +379,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.additional_sound_slots;
                 var7.additionalSoundSlots = var8;
                 var6 = var7;
-            case 869:
+            case 923:
                 var2.premiumFeatures = var6;
                 var6 = var5.moderator_reporting;
                 var6 = var0 != var6;
                 var0 = null;
                 if (!var6) {
-                    _fun17771_ip = 922;
+                    _fun17771_ip = 976;
                     continue _fun17771
                 }
-            case 889:
+            case 943:
                 var6 = var5.moderator_reporting;
                 var5 = {};
                 var7 = var6.moderator_reporting_enabled;
@@ -374,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.moderator_report_channel_id;
                 var5.moderatorReportChannelId = var6;
                 var0 = var5;
-            case 922:
+            case 976:
                 var2.moderatorReporting = var0;
                 var0 = arg2;
                 var0 = var4.bind(var1)(var3, var0, var2);
@@ -568,6 +590,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 51:
                 var4 = 'joinedAt';
                 var0[var4] = var5;
+                var4 = var1.premiumProgressBarEnabledUserUpdatedAt;
+                var4 = var2 != var4;
+                var5 = null;
+                if (!var4) {
+                    _fun17776_ip = 91;
+                    continue _fun17776
+                }
+            case 75:
+                var6 = var1.premiumProgressBarEnabledUserUpdatedAt;
+                var4 = var6.toISOString;
+                var5 = var4.bind(var6)();
+            case 91:
+                var4 = 'premiumProgressBarEnabledUserUpdatedAt';
+                var0[var4] = var5;
                 var4 = global;
                 var5 = var4.Array;
                 var4 = var5.from;
@@ -581,17 +617,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2 != var3;
                 var2 = null;
                 if (!var1) {
-                    _fun17776_ip = 139;
+                    _fun17776_ip = 179;
                     continue _fun17776
                 }
-            case 114:
+            case 154:
                 var1 = {};
                 var4 = var3.userId;
                 var1.userId = var4;
                 var3 = var3.roles;
                 var1.roles = var3;
                 var2 = var1;
-            case 139:
+            case 179:
                 var1 = 'member';
                 var0[var1] = var2;
                 return var0;
@@ -1309,17 +1345,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun17787_ip = 337;
                 continue _fun17787;
             case 305:
-                var9 = var7.Date;
-                var10 = var4.joinedAt;
-                var8 = var9.prototype;
-                var8 = Object.create(var8, {
+                var10 = var7.Date;
+                var11 = var4.joinedAt;
+                var9 = var10.prototype;
+                var9 = Object.create(var9, {
                     constructor: {
-                        value: var9
+                        value: var10
                     }
                 });
-                var11 = var8;
-                var7 = new var11[var9](var10, var9);
-                var3 = var7 instanceof Object ? var7 : var8;
+                var12 = var9;
+                var8 = new var12[var10](var11, var10);
+                var3 = var8 instanceof Object ? var8 : var9;
             case 337:
                 _fun17787_ip = 342;
                 continue _fun17787;
@@ -1405,95 +1441,129 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.premiumProgressBarEnabled;
             case 518:
                 var1.premiumProgressBarEnabled = var3;
+                var5 = var4.premiumProgressBarEnabledUserUpdatedAt;
+                var3 = var7.Date;
+                var3 = var5 instanceof var3;
+                var5 = var4.premiumProgressBarEnabledUserUpdatedAt;
+                if (var3) {
+                    _fun17787_ip = 591;
+                    continue _fun17787
+                }
+            case 548:
+                var3 = null;
+                var8 = var3 != var5;
+                if (!var8) {
+                    _fun17787_ip = 589;
+                    continue _fun17787
+                }
+            case 557:
+                var9 = var7.Date;
+                var11 = var4.premiumProgressBarEnabledUserUpdatedAt;
+                var8 = var9.prototype;
+                var8 = Object.create(var8, {
+                    constructor: {
+                        value: var9
+                    }
+                });
+                var12 = var8;
+                var7 = new var12[var9](var11, var10);
+                var3 = var7 instanceof Object ? var7 : var8;
+            case 589:
+                _fun17787_ip = 594;
+                continue _fun17787;
+            case 591:
+                var3 = var5;
+            case 594:
+                var1.premiumProgressBarEnabledUserUpdatedAt = var3;
                 var3 = var4.systemChannelFlags;
                 var1.systemChannelFlags = var3;
                 var3 = var4.discoverySplash;
                 if (var3) {
-                    _fun17787_ip = 545;
+                    _fun17787_ip = 621;
                     continue _fun17787
                 }
-            case 543:
+            case 619:
                 var3 = null;
-            case 545:
+            case 621:
                 var1.discoverySplash = var3;
                 var3 = var4.rulesChannelId;
                 if (var3) {
-                    _fun17787_ip = 561;
+                    _fun17787_ip = 637;
                     continue _fun17787
                 }
-            case 559:
+            case 635:
                 var3 = null;
-            case 561:
+            case 637:
                 var1.rulesChannelId = var3;
                 var3 = var4.safetyAlertsChannelId;
                 if (var3) {
-                    _fun17787_ip = 577;
+                    _fun17787_ip = 653;
                     continue _fun17787
                 }
-            case 575:
+            case 651:
                 var3 = null;
-            case 577:
+            case 653:
                 var1.safetyAlertsChannelId = var3;
                 var3 = var4.publicUpdatesChannelId;
                 if (var3) {
-                    _fun17787_ip = 593;
+                    _fun17787_ip = 669;
                     continue _fun17787
                 }
-            case 591:
+            case 667:
                 var3 = null;
-            case 593:
+            case 669:
                 var1.publicUpdatesChannelId = var3;
                 var3 = var4.maxStageVideoChannelUsers;
                 if (var3) {
-                    _fun17787_ip = 617;
+                    _fun17787_ip = 693;
                     continue _fun17787
                 }
-            case 607:
+            case 683:
                 var5 = _closure1_slot7;
                 var3 = var5.maxStageVideoChannelUsers;
-            case 617:
+            case 693:
                 var1.maxStageVideoChannelUsers = var3;
                 var3 = var4.maxVideoChannelUsers;
                 if (var3) {
-                    _fun17787_ip = 641;
+                    _fun17787_ip = 717;
                     continue _fun17787
                 }
-            case 631:
+            case 707:
                 var5 = _closure1_slot7;
                 var3 = var5.maxVideoChannelUsers;
-            case 641:
+            case 717:
                 var1.maxVideoChannelUsers = var3;
                 var3 = var4.maxMembers;
                 if (var3) {
-                    _fun17787_ip = 665;
+                    _fun17787_ip = 741;
                     continue _fun17787
                 }
-            case 655:
+            case 731:
                 var5 = _closure1_slot7;
                 var3 = var5.maxMembers;
-            case 665:
+            case 741:
                 var1.maxMembers = var3;
                 var5 = var4.nsfwLevel;
                 var3 = null;
                 if (!(var3 == var5)) {
-                    _fun17787_ip = 692;
+                    _fun17787_ip = 768;
                     continue _fun17787
                 }
-            case 682:
+            case 758:
                 var6 = _closure1_slot7;
                 var5 = var6.nsfwLevel;
-            case 692:
+            case 768:
                 var1.nsfwLevel = var5;
                 var6 = var4.ownerConfiguredContentLevel;
                 var7 = var3 != var6;
                 var5 = null;
                 if (!var7) {
-                    _fun17787_ip = 715;
+                    _fun17787_ip = 791;
                     continue _fun17787
                 }
-            case 712:
+            case 788:
                 var5 = var6;
-            case 715:
+            case 791:
                 var1.ownerConfiguredContentLevel = var5;
                 var5 = var4.hubType;
                 var1.hubType = var5;
@@ -1501,45 +1571,45 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var3 != var6;
                 var5 = null;
                 if (!var7) {
-                    _fun17787_ip = 749;
+                    _fun17787_ip = 825;
                     continue _fun17787
                 }
-            case 746:
+            case 822:
                 var5 = var6;
-            case 749:
+            case 825:
                 var1.latestOnboardingQuestionId = var5;
                 var6 = var4.profile;
                 var7 = var3 != var6;
                 var5 = null;
                 if (!var7) {
-                    _fun17787_ip = 772;
+                    _fun17787_ip = 848;
                     continue _fun17787
                 }
-            case 769:
+            case 845:
                 var5 = var6;
-            case 772:
+            case 848:
                 var1.profile = var5;
                 var6 = var4.premiumFeatures;
                 var7 = var3 != var6;
                 var5 = null;
                 if (!var7) {
-                    _fun17787_ip = 795;
+                    _fun17787_ip = 871;
                     continue _fun17787
                 }
-            case 792:
+            case 868:
                 var5 = var6;
-            case 795:
+            case 871:
                 var1.premiumFeatures = var5;
                 var4 = var4.moderatorReporting;
                 var5 = var3 != var4;
                 var3 = null;
                 if (!var5) {
-                    _fun17787_ip = 818;
+                    _fun17787_ip = 894;
                     continue _fun17787
                 }
-            case 815:
+            case 891:
                 var3 = var4;
-            case 818:
+            case 894:
                 var1.moderatorReporting = var3;
                 var0 = var2.bind(var0)(var1);
                 return var0;
@@ -1607,14 +1677,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.premium_tier = var2;
                 var2 = var3.premiumProgressBarEnabled;
                 var0.premium_progress_bar_enabled = var2;
+                var5 = var3.premiumProgressBarEnabledUserUpdatedAt;
+                var2 = var1 == var5;
+                var4 = undefined;
+                if (var2) {
+                    _fun17788_ip = 285;
+                    continue _fun17788
+                }
+            case 275:
+                var2 = var5.toISOString;
+                var4 = var2.bind(var5)();
+            case 285:
+                var5 = var1 != var4;
+                var2 = null;
+                if (!var5) {
+                    _fun17788_ip = 297;
+                    continue _fun17788
+                }
+            case 294:
+                var2 = var4;
+            case 297:
+                var0.premium_progress_bar_enabled_user_updated_at = var2;
                 var2 = var3.premiumFeatures;
                 var4 = var1 != var2;
                 var2 = null;
                 if (!var4) {
-                    _fun17788_ip = 330;
+                    _fun17788_ip = 372;
                     continue _fun17788
                 }
-            case 275:
+            case 317:
                 var5 = var3.premiumFeatures;
                 var4 = {};
                 var6 = var5.features;
@@ -1626,7 +1717,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.additionalSoundSlots;
                 var4.additional_sound_slots = var5;
                 var2 = var4;
-            case 330:
+            case 372:
                 var0.premium_features = var2;
                 var2 = var3.systemChannelFlags;
                 var0.system_channel_flags = var2;
@@ -1668,10 +1759,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1 != var2;
                 var2 = null;
                 if (!var4) {
-                    _fun17788_ip = 578;
+                    _fun17788_ip = 620;
                     continue _fun17788
                 }
-            case 545:
+            case 587:
                 var4 = var3.moderatorReporting;
                 var3 = {};
                 var5 = var4.moderatorReportingEnabled;
@@ -1679,7 +1770,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.moderatorReportChannelId;
                 var3.moderator_report_channel_id = var4;
                 var2 = var3;
-            case 578:
+            case 620:
                 var0.moderator_reporting = var2;
                 var0.incidents_data = var1;
                 return var0;
@@ -1691,9 +1782,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 0:
                 var3 = arg0;
                 var2 = {};
-                var8 = var2;
-                var7 = var3;
-                var0 = copyDataProperties(var8, var7);
+                var10 = var2;
+                var9 = var3;
+                var0 = copyDataProperties(var10, var9);
                 var5 = _closure1_slot0;
                 var4 = _closure1_slot2;
                 var1 = 3;
@@ -1708,25 +1799,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3.joinedAt;
                 var4 = null;
                 var5 = var4 != var5;
+                var6 = null;
                 if (!var5) {
-                    _fun17789_ip = 115;
+                    _fun17789_ip = 117;
                     continue _fun17789
                 }
-            case 81:
+            case 83:
+                var5 = global;
+                var8 = var5.Date;
+                var10 = var3.joinedAt;
+                var7 = var8.prototype;
+                var7 = Object.create(var7, {
+                    constructor: {
+                        value: var8
+                    }
+                });
+                var11 = var7;
+                var5 = new var11[var8](var10, var9);
+                var6 = var5 instanceof Object ? var5 : var7;
+            case 117:
+                var5 = 'joinedAt';
+                var2[var5] = var6;
+                var5 = var3.premiumProgressBarEnabledUserUpdatedAt;
+                var5 = var4 != var5;
+                var4 = null;
+                if (!var5) {
+                    _fun17789_ip = 175;
+                    continue _fun17789
+                }
+            case 141:
                 var5 = global;
                 var6 = var5.Date;
-                var8 = var3.joinedAt;
+                var10 = var3.premiumProgressBarEnabledUserUpdatedAt;
                 var5 = var6.prototype;
                 var5 = Object.create(var5, {
                     constructor: {
                         value: var6
                     }
                 });
-                var9 = var5;
-                var3 = new var9[var6](var8, var7);
+                var11 = var5;
+                var3 = new var11[var6](var10, var9);
                 var4 = var3 instanceof Object ? var3 : var5;
-            case 115:
-                var3 = 'joinedAt';
+            case 175:
+                var3 = 'premiumProgressBarEnabledUserUpdatedAt';
                 var2[var3] = var4;
                 var3 = delete var2.roles;
                 var3 = delete var2.member;

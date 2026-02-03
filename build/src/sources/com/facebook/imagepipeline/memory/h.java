@@ -6,30 +6,30 @@ import o8.j;
 class h extends b {
 
     /* renamed from: f  reason: collision with root package name */
-    private LinkedList f11656f;
+    private LinkedList f11285f;
 
     public h(int i10, int i11, int i12) {
         super(i10, i11, i12, false);
-        this.f11656f = new LinkedList();
+        this.f11285f = new LinkedList();
     }
 
     @Override // com.facebook.imagepipeline.memory.b
     void a(Object obj) {
-        s8.b bVar = (s8.b) this.f11656f.poll();
+        s8.b bVar = (s8.b) this.f11285f.poll();
         if (bVar == null) {
             bVar = new s8.b();
         }
         bVar.c(obj);
-        this.f11645c.add(bVar);
+        this.f11274c.add(bVar);
     }
 
     @Override // com.facebook.imagepipeline.memory.b
     public Object g() {
-        s8.b bVar = (s8.b) this.f11645c.poll();
+        s8.b bVar = (s8.b) this.f11274c.poll();
         j.g(bVar);
         Object b10 = bVar.b();
         bVar.a();
-        this.f11656f.add(bVar);
+        this.f11285f.add(bVar);
         return b10;
     }
 }

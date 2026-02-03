@@ -14,14 +14,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*(arg0) { // Environment: var2
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun86029: for (var _fun86029_ip = 0;;) switch (_fun86029_ip) {
+                _fun86385: for (var _fun86385_ip = 0;;) switch (_fun86385_ip) {
                     case 0:
                         StartGenerator();
                         var8 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun86029_ip = 254;
-                            continue _fun86029
+                            _fun86385_ip = 254;
+                            continue _fun86385
                         }
                     case 13:
                         var5 = var8;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 140:
                         ResumeGenerator(result_out_reg = 3, return_bool_out_reg = 6);
                         if (var6) {
-                            _fun86029_ip = 203;
-                            continue _fun86029
+                            _fun86385_ip = 203;
+                            continue _fun86385
                         }
                     case 146:
                         var7 = _closure1_slot1;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6.guild = var9;
                         var6 = var7.bind(var8)(var6);
                     case 201: // try_end0
-                        _fun86029_ip = 251;
-                        continue _fun86029;
+                        _fun86385_ip = 251;
+                        continue _fun86385;
                     case 203:
                         return var3;
                     case 206: // catch_target0

@@ -3,7 +3,7 @@ package oh;
 public class j extends d {
 
     /* renamed from: a  reason: collision with root package name */
-    float f43878a = -1.0f;
+    float f44006a = -1.0f;
 
     @Override // oh.d
     public void a(m mVar, float f10, float f11, float f12) {

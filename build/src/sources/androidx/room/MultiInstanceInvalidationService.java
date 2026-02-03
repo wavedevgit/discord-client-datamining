@@ -18,16 +18,16 @@ import r3.k;
 public final class MultiInstanceInvalidationService extends Service {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f5039d;
+    private int f5083d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f5040e = new LinkedHashMap();
+    private final Map f5084e = new LinkedHashMap();
 
     /* renamed from: i  reason: collision with root package name */
-    private final RemoteCallbackList f5041i = new b();
+    private final RemoteCallbackList f5085i = new b();
 
     /* renamed from: o  reason: collision with root package name */
-    private final k.a f5042o = new a();
+    private final k.a f5086o = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends k.a {
@@ -61,7 +61,7 @@ public final class MultiInstanceInvalidationService extends Service {
                     }
                 }
                 multiInstanceInvalidationService.a().finishBroadcast();
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
         }
 
@@ -119,24 +119,24 @@ public final class MultiInstanceInvalidationService extends Service {
     }
 
     public final RemoteCallbackList a() {
-        return this.f5041i;
+        return this.f5085i;
     }
 
     public final Map b() {
-        return this.f5040e;
+        return this.f5084e;
     }
 
     public final int c() {
-        return this.f5039d;
+        return this.f5083d;
     }
 
     public final void d(int i10) {
-        this.f5039d = i10;
+        this.f5083d = i10;
     }
 
     @Override // android.app.Service
     public IBinder onBind(Intent intent) {
         Intrinsics.checkNotNullParameter(intent, "intent");
-        return this.f5042o;
+        return this.f5086o;
     }
 }

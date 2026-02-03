@@ -6,12 +6,12 @@ import java.util.Locale;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final AccessibilityManager f8448a = (AccessibilityManager) com.henninghall.date_picker.c.f17608a.getApplicationContext().getSystemService("accessibility");
+    private static final AccessibilityManager f8304a = (AccessibilityManager) com.henninghall.date_picker.c.f17237a.getApplicationContext().getSystemService("accessibility");
 
     /* renamed from: b  reason: collision with root package name */
-    private static Locale f8449b = Locale.getDefault();
+    private static Locale f8305b = Locale.getDefault();
 
     public static void a(Locale locale) {
-        f8449b = locale;
+        f8305b = locale;
     }
 }

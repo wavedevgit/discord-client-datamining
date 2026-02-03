@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot8 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun69236: for (var _fun69236_ip = 0;;) switch (_fun69236_ip) {
+        _fun69345: for (var _fun69345_ip = 0;;) switch (_fun69345_ip) {
             case 0:
                 var1 = arg0;
                 var9 = var1.channel;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3 == var10;
                 var0 = null;
                 if (var1) {
-                    _fun69236_ip = 398;
-                    continue _fun69236
+                    _fun69345_ip = 394;
+                    continue _fun69345
                 }
             case 186:
                 var2 = var10.type;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ACTIVITY;
                 var0 = null;
                 if (!(var2 !== var1)) {
-                    _fun69236_ip = 398;
-                    continue _fun69236
+                    _fun69345_ip = 394;
+                    continue _fun69345
                 }
             case 210:
                 var3 = _closure1_slot7;
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3.bind(var4)(var6, var5);
                 var1.children = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 398:
+            case 394:
                 return var0;
         }
     };
@@ -189,4 +189,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3909, 3484, 33, 1297, 671, 8616, 5326, 566, 8626, 5416, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3939, 3514, 33, 1297, 671, 8648, 5357, 566, 8658, 5447, 2]);

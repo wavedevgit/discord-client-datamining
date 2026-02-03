@@ -5,17 +5,17 @@ import java.io.File;
 final class c extends u {
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f22168a;
+    private final File f21744a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f22169b;
+    private final String f21745b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(File file, String str) {
         if (file != null) {
-            this.f22168a = file;
+            this.f21744a = file;
             if (str != null) {
-                this.f22169b = str;
+                this.f21745b = str;
                 return;
             }
             throw new NullPointerException("Null splitId");
@@ -26,13 +26,13 @@ final class c extends u {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // di.u
     public final File a() {
-        return this.f22168a;
+        return this.f21744a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // di.u
     public final String b() {
-        return this.f22169b;
+        return this.f21745b;
     }
 
     public final boolean equals(Object obj) {
@@ -41,7 +41,7 @@ final class c extends u {
         }
         if (obj instanceof u) {
             u uVar = (u) obj;
-            if (this.f22168a.equals(uVar.a()) && this.f22169b.equals(uVar.b())) {
+            if (this.f21744a.equals(uVar.a()) && this.f21745b.equals(uVar.b())) {
                 return true;
             }
         }
@@ -49,12 +49,12 @@ final class c extends u {
     }
 
     public final int hashCode() {
-        return ((this.f22168a.hashCode() ^ 1000003) * 1000003) ^ this.f22169b.hashCode();
+        return ((this.f21744a.hashCode() ^ 1000003) * 1000003) ^ this.f21745b.hashCode();
     }
 
     public final String toString() {
-        String obj = this.f22168a.toString();
-        String str = this.f22169b;
+        String obj = this.f21744a.toString();
+        String str = this.f21745b;
         return "SplitFileInfo{splitFile=" + obj + ", splitId=" + str + "}";
     }
 }

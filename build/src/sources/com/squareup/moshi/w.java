@@ -16,39 +16,39 @@ import java.util.Set;
 public final class w {
 
     /* renamed from: e  reason: collision with root package name */
-    static final List f19005e;
+    static final List f18638e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f19006a;
+    private final List f18639a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f19007b;
+    private final int f18640b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ThreadLocal f19008c = new ThreadLocal();
+    private final ThreadLocal f18641c = new ThreadLocal();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f19009d = new LinkedHashMap();
+    private final Map f18642d = new LinkedHashMap();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a implements h.e {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Type f19010a;
+        final /* synthetic */ Type f18643a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ h f19011b;
+        final /* synthetic */ h f18644b;
 
         a(Type type, h hVar) {
-            this.f19010a = type;
-            this.f19011b = hVar;
+            this.f18643a = type;
+            this.f18644b = hVar;
         }
 
         @Override // com.squareup.moshi.h.e
         public h create(Type type, Set set, w wVar) {
-            if (set.isEmpty() && sm.c.w(this.f19010a, type)) {
-                return this.f19011b;
+            if (set.isEmpty() && tm.c.w(this.f18643a, type)) {
+                return this.f18644b;
             }
             return null;
         }
@@ -58,16 +58,16 @@ public final class w {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        final List f19012a = new ArrayList();
+        final List f18645a = new ArrayList();
 
         /* renamed from: b  reason: collision with root package name */
-        int f19013b = 0;
+        int f18646b = 0;
 
         public b a(h.e eVar) {
             if (eVar != null) {
-                List list = this.f19012a;
-                int i10 = this.f19013b;
-                this.f19013b = i10 + 1;
+                List list = this.f18645a;
+                int i10 = this.f18646b;
+                this.f18646b = i10 + 1;
                 list.add(i10, eVar);
                 return this;
             }
@@ -95,26 +95,26 @@ public final class w {
     public static final class c extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        final Type f19014a;
+        final Type f18647a;
 
         /* renamed from: b  reason: collision with root package name */
-        final String f19015b;
+        final String f18648b;
 
         /* renamed from: c  reason: collision with root package name */
-        final Object f19016c;
+        final Object f18649c;
 
         /* renamed from: d  reason: collision with root package name */
-        h f19017d;
+        h f18650d;
 
         c(Type type, String str, Object obj) {
-            this.f19014a = type;
-            this.f19015b = str;
-            this.f19016c = obj;
+            this.f18647a = type;
+            this.f18648b = str;
+            this.f18649c = obj;
         }
 
         @Override // com.squareup.moshi.h
         public Object fromJson(m mVar) {
-            h hVar = this.f19017d;
+            h hVar = this.f18650d;
             if (hVar != null) {
                 return hVar.fromJson(mVar);
             }
@@ -123,7 +123,7 @@ public final class w {
 
         @Override // com.squareup.moshi.h
         public void toJson(t tVar, Object obj) {
-            h hVar = this.f19017d;
+            h hVar = this.f18650d;
             if (hVar != null) {
                 hVar.toJson(tVar, obj);
                 return;
@@ -132,7 +132,7 @@ public final class w {
         }
 
         public String toString() {
-            h hVar = this.f19017d;
+            h hVar = this.f18650d;
             if (hVar != null) {
                 return hVar.toString();
             }
@@ -145,34 +145,34 @@ public final class w {
     public final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        final List f19018a = new ArrayList();
+        final List f18651a = new ArrayList();
 
         /* renamed from: b  reason: collision with root package name */
-        final Deque f19019b = new ArrayDeque();
+        final Deque f18652b = new ArrayDeque();
 
         /* renamed from: c  reason: collision with root package name */
-        boolean f19020c;
+        boolean f18653c;
 
         d() {
         }
 
         void a(h hVar) {
-            ((c) this.f19019b.getLast()).f19017d = hVar;
+            ((c) this.f18652b.getLast()).f18650d = hVar;
         }
 
         IllegalArgumentException b(IllegalArgumentException illegalArgumentException) {
-            if (!this.f19020c) {
-                this.f19020c = true;
-                if (this.f19019b.size() != 1 || ((c) this.f19019b.getFirst()).f19015b != null) {
+            if (!this.f18653c) {
+                this.f18653c = true;
+                if (this.f18652b.size() != 1 || ((c) this.f18652b.getFirst()).f18648b != null) {
                     StringBuilder sb2 = new StringBuilder(illegalArgumentException.getMessage());
-                    Iterator descendingIterator = this.f19019b.descendingIterator();
+                    Iterator descendingIterator = this.f18652b.descendingIterator();
                     while (descendingIterator.hasNext()) {
                         c cVar = (c) descendingIterator.next();
                         sb2.append("\nfor ");
-                        sb2.append(cVar.f19014a);
-                        if (cVar.f19015b != null) {
+                        sb2.append(cVar.f18647a);
+                        if (cVar.f18648b != null) {
                             sb2.append(' ');
-                            sb2.append(cVar.f19015b);
+                            sb2.append(cVar.f18648b);
                         }
                     }
                     return new IllegalArgumentException(sb2.toString(), illegalArgumentException);
@@ -182,19 +182,19 @@ public final class w {
         }
 
         void c(boolean z10) {
-            this.f19019b.removeLast();
-            if (this.f19019b.isEmpty()) {
-                w.this.f19008c.remove();
+            this.f18652b.removeLast();
+            if (this.f18652b.isEmpty()) {
+                w.this.f18641c.remove();
                 if (z10) {
-                    synchronized (w.this.f19009d) {
+                    synchronized (w.this.f18642d) {
                         try {
-                            int size = this.f19018a.size();
+                            int size = this.f18651a.size();
                             for (int i10 = 0; i10 < size; i10++) {
-                                c cVar = (c) this.f19018a.get(i10);
-                                h hVar = (h) w.this.f19009d.put(cVar.f19016c, cVar.f19017d);
+                                c cVar = (c) this.f18651a.get(i10);
+                                h hVar = (h) w.this.f18642d.put(cVar.f18649c, cVar.f18650d);
                                 if (hVar != null) {
-                                    cVar.f19017d = hVar;
-                                    w.this.f19009d.put(cVar.f19016c, hVar);
+                                    cVar.f18650d = hVar;
+                                    w.this.f18642d.put(cVar.f18649c, hVar);
                                 }
                             }
                         } catch (Throwable th2) {
@@ -206,12 +206,12 @@ public final class w {
         }
 
         h d(Type type, String str, Object obj) {
-            int size = this.f19018a.size();
+            int size = this.f18651a.size();
             for (int i10 = 0; i10 < size; i10++) {
-                c cVar = (c) this.f19018a.get(i10);
-                if (cVar.f19016c.equals(obj)) {
-                    this.f19019b.add(cVar);
-                    h hVar = cVar.f19017d;
+                c cVar = (c) this.f18651a.get(i10);
+                if (cVar.f18649c.equals(obj)) {
+                    this.f18652b.add(cVar);
+                    h hVar = cVar.f18650d;
                     if (hVar != null) {
                         return hVar;
                     }
@@ -219,31 +219,31 @@ public final class w {
                 }
             }
             c cVar2 = new c(type, str, obj);
-            this.f19018a.add(cVar2);
-            this.f19019b.add(cVar2);
+            this.f18651a.add(cVar2);
+            this.f18652b.add(cVar2);
             return null;
         }
     }
 
     static {
         ArrayList arrayList = new ArrayList(5);
-        f19005e = arrayList;
-        arrayList.add(y.f19023a);
-        arrayList.add(e.f18898b);
-        arrayList.add(v.f19002c);
-        arrayList.add(com.squareup.moshi.b.f18878c);
-        arrayList.add(x.f19022a);
-        arrayList.add(com.squareup.moshi.d.f18891d);
+        f18638e = arrayList;
+        arrayList.add(y.f18656a);
+        arrayList.add(e.f18531b);
+        arrayList.add(v.f18635c);
+        arrayList.add(com.squareup.moshi.b.f18511c);
+        arrayList.add(x.f18655a);
+        arrayList.add(com.squareup.moshi.d.f18524d);
     }
 
     w(b bVar) {
-        int size = bVar.f19012a.size();
-        List list = f19005e;
+        int size = bVar.f18645a.size();
+        List list = f18638e;
         ArrayList arrayList = new ArrayList(size + list.size());
-        arrayList.addAll(bVar.f19012a);
+        arrayList.addAll(bVar.f18645a);
         arrayList.addAll(list);
-        this.f19006a = Collections.unmodifiableList(arrayList);
-        this.f19007b = bVar.f19013b;
+        this.f18639a = Collections.unmodifiableList(arrayList);
+        this.f18640b = bVar.f18646b;
     }
 
     private Object g(Type type, Set set) {
@@ -264,11 +264,11 @@ public final class w {
     }
 
     public h c(Class cls) {
-        return e(cls, sm.c.f49095a);
+        return e(cls, tm.c.f49933a);
     }
 
     public h d(Type type) {
-        return e(type, sm.c.f49095a);
+        return e(type, tm.c.f49933a);
     }
 
     public h e(Type type, Set set) {
@@ -278,18 +278,18 @@ public final class w {
     public h f(Type type, Set set, String str) {
         if (type != null) {
             if (set != null) {
-                Type p10 = sm.c.p(sm.c.a(type));
+                Type p10 = tm.c.p(tm.c.a(type));
                 Object g10 = g(p10, set);
-                synchronized (this.f19009d) {
+                synchronized (this.f18642d) {
                     try {
-                        h hVar = (h) this.f19009d.get(g10);
+                        h hVar = (h) this.f18642d.get(g10);
                         if (hVar != null) {
                             return hVar;
                         }
-                        d dVar = (d) this.f19008c.get();
+                        d dVar = (d) this.f18641c.get();
                         if (dVar == null) {
                             dVar = new d();
-                            this.f19008c.set(dVar);
+                            this.f18641c.set(dVar);
                         }
                         h d10 = dVar.d(p10, str, g10);
                         try {
@@ -297,16 +297,16 @@ public final class w {
                                 return d10;
                             }
                             try {
-                                int size = this.f19006a.size();
+                                int size = this.f18639a.size();
                                 for (int i10 = 0; i10 < size; i10++) {
-                                    h create = ((h.e) this.f19006a.get(i10)).create(p10, set, this);
+                                    h create = ((h.e) this.f18639a.get(i10)).create(p10, set, this);
                                     if (create != null) {
                                         dVar.a(create);
                                         dVar.c(true);
                                         return create;
                                     }
                                 }
-                                throw new IllegalArgumentException("No JsonAdapter for " + sm.c.u(p10, set));
+                                throw new IllegalArgumentException("No JsonAdapter for " + tm.c.u(p10, set));
                             } catch (IllegalArgumentException e10) {
                                 throw dVar.b(e10);
                             }
@@ -324,17 +324,17 @@ public final class w {
 
     public h i(h.e eVar, Type type, Set set) {
         if (set != null) {
-            Type p10 = sm.c.p(sm.c.a(type));
-            int indexOf = this.f19006a.indexOf(eVar);
+            Type p10 = tm.c.p(tm.c.a(type));
+            int indexOf = this.f18639a.indexOf(eVar);
             if (indexOf != -1) {
-                int size = this.f19006a.size();
+                int size = this.f18639a.size();
                 for (int i10 = indexOf + 1; i10 < size; i10++) {
-                    h create = ((h.e) this.f19006a.get(i10)).create(p10, set, this);
+                    h create = ((h.e) this.f18639a.get(i10)).create(p10, set, this);
                     if (create != null) {
                         return create;
                     }
                 }
-                throw new IllegalArgumentException("No next JsonAdapter for " + sm.c.u(p10, set));
+                throw new IllegalArgumentException("No next JsonAdapter for " + tm.c.u(p10, set));
             }
             throw new IllegalArgumentException("Unable to skip past unknown factory " + eVar);
         }

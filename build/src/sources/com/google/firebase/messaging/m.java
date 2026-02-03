@@ -11,19 +11,19 @@ import java.util.concurrent.Executor;
 public class m {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f17515c = new Object();
+    private static final Object f17144c = new Object();
 
     /* renamed from: d  reason: collision with root package name */
-    private static i1 f17516d;
+    private static i1 f17145d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f17517a;
+    private final Context f17146a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Executor f17518b = new g2.i();
+    private final Executor f17147b = new g2.i();
 
     public m(Context context) {
-        this.f17517a = context;
+        this.f17146a = context;
     }
 
     public static /* synthetic */ Task a(Context context, Intent intent, boolean z10, Task task) {
@@ -69,12 +69,12 @@ public class m {
 
     private static i1 f(Context context, String str) {
         i1 i1Var;
-        synchronized (f17515c) {
+        synchronized (f17144c) {
             try {
-                if (f17516d == null) {
-                    f17516d = new i1(context, str);
+                if (f17145d == null) {
+                    f17145d = new i1(context, str);
                 }
-                i1Var = f17516d;
+                i1Var = f17145d;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -88,7 +88,7 @@ public class m {
             intent.putExtra("rawData", Base64.decode(stringExtra, 0));
             intent.removeExtra("gcm.rawData64");
         }
-        return h(this.f17517a, intent);
+        return h(this.f17146a, intent);
     }
 
     public Task h(final Context context, final Intent intent) {
@@ -105,14 +105,14 @@ public class m {
         if (z10 && !z11) {
             return e(context, intent, z11);
         }
-        return wg.m.c(this.f17518b, new Callable() { // from class: com.google.firebase.messaging.i
+        return wg.m.c(this.f17147b, new Callable() { // from class: com.google.firebase.messaging.i
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 Integer valueOf;
                 valueOf = Integer.valueOf(s0.b().g(context, intent));
                 return valueOf;
             }
-        }).i(this.f17518b, new wg.c() { // from class: com.google.firebase.messaging.j
+        }).i(this.f17147b, new wg.c() { // from class: com.google.firebase.messaging.j
             @Override // wg.c
             public final Object a(Task task) {
                 return m.a(context, intent, z11, task);

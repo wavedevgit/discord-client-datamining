@@ -267,7 +267,7 @@ public class AppCompatEditText extends EditText implements androidx.core.view.x 
     }
 
     public AppCompatEditText(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.f24094z);
+        this(context, attributeSet, f.a.f23305z);
     }
 
     @Override // android.widget.EditText, android.widget.TextView

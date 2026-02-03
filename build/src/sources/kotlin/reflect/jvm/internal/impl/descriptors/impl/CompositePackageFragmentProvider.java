@@ -20,16 +20,16 @@ import org.jetbrains.annotations.NotNull;
 public final class CompositePackageFragmentProvider implements PackageFragmentProviderOptimized {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f33724a;
+    private final List f33500a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f33725b;
+    private final String f33501b;
 
     public CompositePackageFragmentProvider(@NotNull List<? extends PackageFragmentProvider> providers, @NotNull String debugName) {
         Intrinsics.checkNotNullParameter(providers, "providers");
         Intrinsics.checkNotNullParameter(debugName, "debugName");
-        this.f33724a = providers;
-        this.f33725b = debugName;
+        this.f33500a = providers;
+        this.f33501b = debugName;
         providers.size();
         CollectionsKt.l1(providers).size();
     }
@@ -38,18 +38,18 @@ public final class CompositePackageFragmentProvider implements PackageFragmentPr
     public void collectPackageFragments(@NotNull FqName fqName, @NotNull Collection<PackageFragmentDescriptor> packageFragments) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
         Intrinsics.checkNotNullParameter(packageFragments, "packageFragments");
-        for (PackageFragmentProvider packageFragmentProvider : this.f33724a) {
+        for (PackageFragmentProvider packageFragmentProvider : this.f33500a) {
             PackageFragmentProviderKt.collectPackageFragmentsOptimizedIfPossible(packageFragmentProvider, fqName, packageFragments);
         }
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProvider
-    @ir.c
+    @jr.c
     @NotNull
     public List<PackageFragmentDescriptor> getPackageFragments(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
         ArrayList arrayList = new ArrayList();
-        for (PackageFragmentProvider packageFragmentProvider : this.f33724a) {
+        for (PackageFragmentProvider packageFragmentProvider : this.f33500a) {
             PackageFragmentProviderKt.collectPackageFragmentsOptimizedIfPossible(packageFragmentProvider, fqName, arrayList);
         }
         return CollectionsKt.h1(arrayList);
@@ -61,7 +61,7 @@ public final class CompositePackageFragmentProvider implements PackageFragmentPr
         Intrinsics.checkNotNullParameter(fqName, "fqName");
         Intrinsics.checkNotNullParameter(nameFilter, "nameFilter");
         HashSet hashSet = new HashSet();
-        for (PackageFragmentProvider packageFragmentProvider : this.f33724a) {
+        for (PackageFragmentProvider packageFragmentProvider : this.f33500a) {
             hashSet.addAll(packageFragmentProvider.getSubPackagesOf(fqName, nameFilter));
         }
         return hashSet;
@@ -70,7 +70,7 @@ public final class CompositePackageFragmentProvider implements PackageFragmentPr
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProviderOptimized
     public boolean isEmpty(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        List<PackageFragmentProvider> list = this.f33724a;
+        List<PackageFragmentProvider> list = this.f33500a;
         if ((list instanceof Collection) && list.isEmpty()) {
             return true;
         }
@@ -84,6 +84,6 @@ public final class CompositePackageFragmentProvider implements PackageFragmentPr
 
     @NotNull
     public String toString() {
-        return this.f33725b;
+        return this.f33501b;
     }
 }

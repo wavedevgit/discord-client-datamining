@@ -10,10 +10,10 @@ import com.google.android.gms.internal.play_billing.x4;
 public abstract /* synthetic */ class s {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int f9119a = 0;
+    public static final /* synthetic */ int f8748a = 0;
 
     static {
-        com.google.android.gms.internal.play_billing.m mVar = t.f9120a;
+        com.google.android.gms.internal.play_billing.m mVar = t.f8749a;
     }
 
     public static r4 a(int i10, int i11, BillingResult billingResult) {

@@ -10,12 +10,12 @@ import android.media.AudioDeviceInfo;
 import android.media.AudioManager;
 import com.discord.logging.Log;
 import com.facebook.react.uimanager.ViewProps;
-import ir.p;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -190,7 +190,7 @@ public final class DiscordAudioManager implements DiscordAudioManagerInterface {
     public static final Unit emitEffectiveDevice$lambda$3(AndroidAudioDevice androidAudioDevice, DiscordAudioManagerListener listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
         listener.onActiveAudioDeviceChanged(androidAudioDevice);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final SimpleDeviceType getActiveAudioDevice() {

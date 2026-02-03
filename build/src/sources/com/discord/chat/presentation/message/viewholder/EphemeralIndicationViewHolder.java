@@ -28,13 +28,13 @@ public final class EphemeralIndicationViewHolder extends MessagePartViewHolder {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$1$lambda$0(EphemeralIndicationViewHolder ephemeralIndicationViewHolder, EphemeralIndicationMessageAccessory ephemeralIndicationMessageAccessory, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        ChatEventHandler.DefaultImpls.m489onLinkClickedu7_MRrM$default(ephemeralIndicationViewHolder.eventHandler, ephemeralIndicationMessageAccessory.mo536getMessageId3Eiw7ao(), it, null, 4, null);
-        return Unit.f33298a;
+        ChatEventHandler.DefaultImpls.m491onLinkClickedu7_MRrM$default(ephemeralIndicationViewHolder.eventHandler, ephemeralIndicationMessageAccessory.mo538getMessageId3Eiw7ao(), it, null, 4, null);
+        return Unit.f33074a;
     }
 
     public final void bind(@NotNull final EphemeralIndicationMessageAccessory ephemeralAccessory) {
         Intrinsics.checkNotNullParameter(ephemeralAccessory, "ephemeralAccessory");
-        this.ephemeralIndicationView.m690setEphemeralIndicationAFFcxXc(ephemeralAccessory.mo536getMessageId3Eiw7ao(), ephemeralAccessory.getEphemeralIndication(), new EphemeralIndicationViewHolder$bind$1$1(this.eventHandler), new Function1() { // from class: com.discord.chat.presentation.message.viewholder.l
+        this.ephemeralIndicationView.m692setEphemeralIndicationAFFcxXc(ephemeralAccessory.mo538getMessageId3Eiw7ao(), ephemeralAccessory.getEphemeralIndication(), new EphemeralIndicationViewHolder$bind$1$1(this.eventHandler), new Function1() { // from class: com.discord.chat.presentation.message.viewholder.l
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit bind$lambda$1$lambda$0;

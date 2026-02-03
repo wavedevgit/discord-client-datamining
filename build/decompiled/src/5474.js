@@ -1,205 +1,155 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var7 = require;
-    var5 = metroImportDefault;
-    var2 = exports;
-    var6 = dependencyMap;
-    var _closure1_slot0 = var7;
-    var _closure1_slot1 = var5;
-    var _closure1_slot2 = var6;
-    var0 = function() {
-        _fun48573: for (var _fun48573_ip = 0;;) switch (_fun48573_ip) {
+    var1 = exports;
+    var2 = function arg0() {
+        _fun48475: for (var _fun48475_ip = 0;;) switch (_fun48475_ip) {
             case 0:
-            case 2: // try_start_0
+                var1 = arg0;
+                var3 = _closure1_slot0;
+                var2 = var3.exec;
+                var4 = var2.bind(var3)(var1);
+                if (var4) {
+                    _fun48475_ip = 71;
+                    continue _fun48475
+                }
+            case 24:
+                var2 = global;
+                var5 = var2.console;
+                var3 = var5.warn;
+                var2 = var2.HermesInternal;
+                var7 = var2.concat;
+                var6 = '"';
+                var2 = '" is not a valid percentage rgb/rgba color';
+                var2 = var7.bind(var6)(var1, var2);
+                var2 = var3.bind(var5)(var2);
+                return var1;
+            case 71:
+                var1 = 1;
+                var5 = var4[var1];
+                var1 = 3;
+                var3 = var4[var1];
+                var1 = 5;
+                var1 = var4[var1];
+                var2 = 7;
+                var7 = var4[var2];
+                var2 = _closure1_slot1;
+                var4 = undefined;
+                var8 = var2.bind(var4)(var5);
+                var2 = _closure1_slot1;
+                var11 = var2.bind(var4)(var3);
+                var0 = _closure1_slot1;
+                var9 = var0.bind(var4)(var1);
                 var1 = global;
-                var2 = var1.Boolean;
-                var2 = var2.prototype;
-                var3 = var2.valueOf;
-                var2 = var3.call;
-                var7 = var1.Reflect;
-                var6 = var7.construct;
-                var5 = var1.Boolean;
-                var4 = new Array(0);
-                var1 = function() { // Environment: var0
-                    var0 = undefined;
-                    return var0;
-                };
-                var1 = var6.bind(var7)(var5, var4, var1);
-                var1 = var2.bind(var3)(var1);
-                var1 = !var1;
-                var _closure2_slot0 = var1;
-            case 70: // try_end0
-                _fun48573_ip = 74;
-                continue _fun48573;
-            case 72: // catch_target0
-                CatchBlockStart(arg_register = 1);
-            case 74:
-                var1 = function() {
-                    var0 = _closure2_slot0;
-                    var0 = !var0;
-                    var0 = !var0;
-                    return var0;
-                };
-                _closure1_slot9 = var1;
-                var0 = undefined;
-                var0 = var1.bind(var0)();
+                var0 = var1.HermesInternal;
+                var2 = var0.concat;
+                var14 = '';
+                var6 = ', ';
+                var13 = var8;
+                var12 = var6;
+                var10 = var6;
+                var5 = var14[var2](var13, var12, var11, var10, var9, var8);
+                if (var7) {
+                    _fun48475_ip = 196;
+                    continue _fun48475
+                }
+            case 167:
+                var0 = var1.HermesInternal;
+                var3 = var0.concat;
+                var2 = 'rgb(';
+                var0 = ')';
+                var0 = var3.bind(var2)(var5, var0);
+                _fun48475_ip = 271;
+                continue _fun48475;
+            case 196:
+                var3 = var7.endsWith;
+                var2 = '%';
+                var2 = var3.bind(var7)(var2);
+                var3 = var1.parseFloat;
+                var3 = var3.bind(var4)(var7);
+                if (var2) {
+                    _fun48475_ip = 230;
+                    continue _fun48475
+                }
+            case 225:
+                var4 = var3;
+                _fun48475_ip = 237;
+                continue _fun48475;
+            case 230:
+                var2 = 100;
+                var4 = var3 / var2;
+            case 237:
+                var1 = var1.HermesInternal;
+                var3 = var1.concat;
+                var14 = 'rgba(';
+                var10 = ')';
+                var13 = var5;
+                var12 = var6;
+                var11 = var4;
+                var0 = var14[var3](var13, var12, var11, var10, var9);
+            case 271:
                 return var0;
         }
     };
-    var _closure1_slot9 = var0;
-    var3 = global;
-    var9 = var3.Object;
-    var8 = var9.defineProperty;
-    var4 = {};
-    var0 = true;
-    var4.value = var0;
-    var0 = '__esModule';
-    var0 = var8.bind(var9)(var2, var0, var4);
-    var0 = 0;
-    var4 = var6[var0];
-    var0 = undefined;
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot3 = var4;
-    var4 = 1;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot4 = var4;
-    var4 = 2;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot5 = var4;
-    var4 = 3;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot6 = var4;
-    var4 = 4;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot7 = var4;
-    var4 = 5;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var4 = 6;
-    var4 = var6[var4];
-    var4 = var7.bind(var0)(var4);
-    var4 = var4.jsx;
-    var _closure1_slot8 = var4;
-    var4 = 9;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var1 = function(arg0) { // Environment: var1
-        var3 = function() {
-            _fun48577: for (var _fun48577_ip = 0;;) switch (_fun48577_ip) {
-                case 0:
-                    var3 = this;
-                    var2 = undefined;
-                    var4 = undefined;
-                    var0 = _closure1_slot3;
-                    var1 = _closure2_slot0;
-                    var0 = var0.bind(var2)(var3, var1);
-                    var0 = _closure1_slot6;
-                    var8 = var0.bind(var2)(var1);
-                    var1 = _closure1_slot5;
-                    var0 = _closure1_slot9;
-                    var0 = var0.bind(var2)();
-                    if (var0) {
-                        _fun48577_ip = 69;
-                        continue _fun48577
-                    }
-                case 51:
-                    var6 = var8.apply;
-                    var4 = arguments;
-                    var0 = var4;
-                    var0 = var6.bind(var8)(var3, var0);
-                    _fun48577_ip = 105;
-                    continue _fun48577;
-                case 69:
-                    var6 = global;
-                    var7 = var6.Reflect;
-                    var6 = var7.construct;
-                    var5 = _closure1_slot6;
-                    var5 = var5.bind(var2)(var3);
-                    var5 = var5.constructor;
-                    var4 = arguments;
-                    var0 = var6.bind(var7)(var8, var4, var5);
-                case 105:
-                    var0 = var1.bind(var2)(var3, var0);
-                    return var0;
-            }
-        };
-        var _closure2_slot0 = var3;
-        var5 = _closure1_slot7;
-        var2 = undefined;
-        var4 = arg0;
-        var4 = var5.bind(var2)(var3, var4);
-        var1 = _closure1_slot4;
-        var4 = {};
-        var5 = 'render';
-        var4.key = var5;
-        var0 = function() {
-            var0 = this;
-            var _closure3_slot0 = var0;
-            var3 = _closure1_slot8;
-            var6 = _closure1_slot1;
-            var11 = _closure1_slot2;
-            var1 = 7;
-            var1 = var11[var1];
-            var2 = undefined;
-            var1 = var6.bind(var2)(var1);
-            var6 = global;
-            var8 = var6.Object;
-            var7 = var8.assign;
-            var6 = {};
-            var5 = function arg0() {
-                var2 = _closure3_slot0;
-                var1 = var2.refMethod;
-                var0 = arg0;
-                var0 = var1.bind(var2)(var0);
-                return var0;
-            };
-            var6.ref = var5;
-            var10 = _closure1_slot0;
-            var9 = 8;
-            var4 = var11[var9];
-            var12 = var10.bind(var2)(var4);
-            var5 = var12.extractFilter;
-            var4 = var0.props;
-            var16 = var5.bind(var12)(var4);
-            var4 = var11[var9];
-            var13 = var10.bind(var2)(var4);
-            var12 = var13.extractIn;
-            var4 = var0.props;
-            var15 = var12.bind(var13)(var4);
-            var9 = var11[var9];
-            var10 = var10.bind(var2)(var9);
-            var9 = var10.extractFeGaussianBlur;
-            var0 = var0.props;
-            var14 = var9.bind(var10)(var0);
-            var18 = var8;
-            var17 = var6;
-            var0 = var18[var7](var17, var16, var15, var14, var13);
-            var0 = var3.bind(var2)(var1, var0);
-            return var0;
-        };
-        var4.value = var0;
-        var0 = new Array(1);
-        var0[0] = var4;
-        var0 = var1.bind(var2)(var3, var0);
+    var _closure1_slot2 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = /^rgba?\(\s*(100%|\d{1,2}(\.\d+)?%)\s*,\s*(100%|\d{1,2}(\.\d+)?%)\s*,\s*(100%|\d{1,2}(\.\d+)?%)\s*(?:,\s*(1|0(\.\d+)?|100%|\d{1,2}(\.\d+)?%)\s*)?\)$/;
+    var _closure1_slot0 = var2;
+    var3 = function arg0() {
+        var0 = global;
+        var2 = var0.Math;
+        var1 = var2.round;
+        var4 = var0.parseFloat;
+        var3 = undefined;
+        var0 = arg0;
+        var3 = var4.bind(var3)(var0);
+        var0 = 2.55;
+        var0 = var0 * var3;
+        var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var1 = var1.bind(var0)(var4);
-    var4 = 'FeGaussianBlur';
-    var1.displayName = var4;
-    var7 = var3.Object;
-    var6 = var7.assign;
-    var5 = var1.defaultPrimitiveProps;
-    var4 = {};
-    var3 = {
-        'stdDeviation': 0,
-        'edgeMode': 'none'
+    var _closure1_slot1 = var3;
+    var1.RGB_RGBA_PATTERN = var2;
+    var0 = function arg0() {
+        _fun48477: for (var _fun48477_ip = 0;;) switch (_fun48477_ip) {
+            case 0:
+                var0 = arg0;
+                var2 = 'string';
+                var1 = typeof var0;
+                if (!(var2 === var1)) {
+                    _fun48477_ip = 79;
+                    continue _fun48477
+                }
+            case 14:
+                var3 = var0.replace;
+                var2 = /\s/g;
+                var1 = '';
+                var4 = var3.bind(var0)(var2, var1);
+                var3 = _closure1_slot0;
+                var1 = var3.test;
+                var3 = var1.bind(var3)(var4);
+                var1 = var0;
+                if (!var3) {
+                    _fun48477_ip = 77;
+                    continue _fun48477
+                }
+            case 66:
+                var3 = _closure1_slot2;
+                var2 = undefined;
+                var1 = var3.bind(var2)(var4);
+            case 77:
+                return var1;
+            case 79:
+                return var0;
+        }
     };
-    var3 = var6.bind(var7)(var4, var5, var3);
-    var1.defaultProps = var3;
-    var2.default = var1;
+    var1.convertPercentageColor = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 33, 5475, 5462, 5463]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

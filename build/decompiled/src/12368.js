@@ -1,26 +1,29 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var7 = require;
-    var8 = dependencyMap;
-    var2 = {};
-    var0 = 0;
-    var1 = var8[var0];
+    var1 = function(arg0) { // Environment: var0
+        _fun94349: for (var _fun94349_ip = 0;;) switch (_fun94349_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = var1.stopPropagation;
+                if (var0) {
+                    _fun94349_ip = 22;
+                    continue _fun94349
+                }
+            case 12:
+                var0 = true;
+                var1.cancelBubble = var0;
+                _fun94349_ip = 32;
+                continue _fun94349;
+            case 22:
+                var0 = var1.stopPropagation;
+                var0 = var0.bind(var1)();
+            case 32:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
     var0 = undefined;
-    var6 = var7.bind(var0)(var1);
-    var5 = var6.assign;
-    var1 = 1;
-    var1 = var8[var1];
-    var11 = var7.bind(var0)(var1);
-    var1 = 2;
-    var1 = var8[var1];
-    var10 = var7.bind(var0)(var1);
-    var1 = 3;
-    var1 = var8[var1];
-    var9 = var7.bind(var0)(var1);
-    var13 = var6;
-    var12 = var2;
-    var1 = var13[var5](var12, var11, var10, var9, var8);
-    var1 = module;
-    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12369, 12370, 12378, 12382]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -11,10 +11,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class f0 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f30360d;
+    private final String f29926d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f30361e;
+    private Map f29927e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -25,13 +25,13 @@ public final class f0 implements w1 {
             String str = null;
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
-                if (!l02.equals("source")) {
+                String m02 = e3Var.m0();
+                m02.getClass();
+                if (!m02.equals("source")) {
                     if (concurrentHashMap == null) {
                         concurrentHashMap = new ConcurrentHashMap();
                     }
-                    e3Var.v1(iLogger, concurrentHashMap, l02);
+                    e3Var.v1(iLogger, concurrentHashMap, m02);
                 } else {
                     str = e3Var.r1();
                 }
@@ -44,23 +44,23 @@ public final class f0 implements w1 {
     }
 
     public f0(String str) {
-        this.f30360d = str;
+        this.f29926d = str;
     }
 
     public void a(Map map) {
-        this.f30361e = map;
+        this.f29927e = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30360d != null) {
-            f3Var.e("source").j(iLogger, this.f30360d);
+        if (this.f29926d != null) {
+            f3Var.e("source").j(iLogger, this.f29926d);
         }
-        Map map = this.f30361e;
+        Map map = this.f29927e;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30361e.get(str);
+                Object obj = this.f29927e.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }

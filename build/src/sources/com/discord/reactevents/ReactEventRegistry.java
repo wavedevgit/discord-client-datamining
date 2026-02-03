@@ -1,9 +1,9 @@
 package com.discord.reactevents;
 
 import com.facebook.react.uimanager.ViewProps;
-import ir.v;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;

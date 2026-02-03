@@ -3,19 +3,19 @@ package x5;
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private float f53256a;
+    private float f53464a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f53257b;
+    private int f53465b;
 
     public void a(float f10) {
-        float f11 = this.f53256a + f10;
-        this.f53256a = f11;
-        int i10 = this.f53257b + 1;
-        this.f53257b = i10;
+        float f11 = this.f53464a + f10;
+        this.f53464a = f11;
+        int i10 = this.f53465b + 1;
+        this.f53465b = i10;
         if (i10 == Integer.MAX_VALUE) {
-            this.f53256a = f11 / 2.0f;
-            this.f53257b = i10 / 2;
+            this.f53464a = f11 / 2.0f;
+            this.f53465b = i10 / 2;
         }
     }
 }

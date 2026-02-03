@@ -3,16 +3,16 @@ package pg;
 public final class oh {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ie f45637a;
+    private final ie f45711a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ oh(mh mhVar, nh nhVar) {
         ie ieVar;
-        ieVar = mhVar.f45600a;
-        this.f45637a = ieVar;
+        ieVar = mhVar.f45674a;
+        this.f45711a = ieVar;
     }
 
     public final ie a() {
-        return this.f45637a;
+        return this.f45711a;
     }
 }

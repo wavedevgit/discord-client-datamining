@@ -1,151 +1,196 @@
 package zt;
 
+import java.lang.ref.Reference;
+import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.TimeUnit;
+import kotlin.Unit;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import okhttp3.Call;
-import okhttp3.Interceptor;
-import okhttp3.Request;
-import okhttp3.Response;
+import zt.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g implements Interceptor.Chain {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final yt.e f56130a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final List f56131b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final int f56132c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final yt.c f56133d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final Request f56134e;
+public final class g {
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f56135f;
+    public static final a f56133f = new a(null);
 
-    /* renamed from: g  reason: collision with root package name */
-    private final int f56136g;
+    /* renamed from: a  reason: collision with root package name */
+    private final int f56134a;
 
-    /* renamed from: h  reason: collision with root package name */
-    private final int f56137h;
+    /* renamed from: b  reason: collision with root package name */
+    private final long f56135b;
 
-    /* renamed from: i  reason: collision with root package name */
-    private int f56138i;
+    /* renamed from: c  reason: collision with root package name */
+    private final yt.d f56136c;
 
-    public g(yt.e call, List interceptors, int i10, yt.c cVar, Request request, int i11, int i12, int i13) {
+    /* renamed from: d  reason: collision with root package name */
+    private final b f56137d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final ConcurrentLinkedQueue f56138e;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private a() {
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b extends yt.a {
+        b(String str) {
+            super(str, false, 2, null);
+        }
+
+        @Override // yt.a
+        public long f() {
+            return g.this.b(System.nanoTime());
+        }
+    }
+
+    public g(yt.e taskRunner, int i10, long j10, TimeUnit timeUnit) {
+        Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
+        Intrinsics.checkNotNullParameter(timeUnit, "timeUnit");
+        this.f56134a = i10;
+        this.f56135b = timeUnit.toNanos(j10);
+        this.f56136c = taskRunner.i();
+        this.f56137d = new b(vt.e.f51536i + " ConnectionPool");
+        this.f56138e = new ConcurrentLinkedQueue();
+        if (j10 > 0) {
+            return;
+        }
+        throw new IllegalArgumentException(("keepAliveDuration <= 0: " + j10).toString());
+    }
+
+    private final int d(f fVar, long j10) {
+        if (vt.e.f51535h && !Thread.holdsLock(fVar)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + fVar);
+        }
+        List n10 = fVar.n();
+        int i10 = 0;
+        while (i10 < n10.size()) {
+            Reference reference = (Reference) n10.get(i10);
+            if (reference.get() != null) {
+                i10++;
+            } else {
+                Intrinsics.checkNotNull(reference, "null cannot be cast to non-null type okhttp3.internal.connection.RealCall.CallReference");
+                eu.h.f23247a.g().m("A connection to " + fVar.A().a().l() + " was leaked. Did you forget to close a response body?", ((e.b) reference).a());
+                n10.remove(i10);
+                fVar.D(true);
+                if (n10.isEmpty()) {
+                    fVar.C(j10 - this.f56135b);
+                    return 0;
+                }
+            }
+        }
+        return n10.size();
+    }
+
+    public final boolean a(okhttp3.a address, e call, List list, boolean z10) {
+        Intrinsics.checkNotNullParameter(address, "address");
         Intrinsics.checkNotNullParameter(call, "call");
-        Intrinsics.checkNotNullParameter(interceptors, "interceptors");
-        Intrinsics.checkNotNullParameter(request, "request");
-        this.f56130a = call;
-        this.f56131b = interceptors;
-        this.f56132c = i10;
-        this.f56133d = cVar;
-        this.f56134e = request;
-        this.f56135f = i11;
-        this.f56136g = i12;
-        this.f56137h = i13;
-    }
-
-    public static /* synthetic */ g c(g gVar, int i10, yt.c cVar, Request request, int i11, int i12, int i13, int i14, Object obj) {
-        if ((i14 & 1) != 0) {
-            i10 = gVar.f56132c;
-        }
-        if ((i14 & 2) != 0) {
-            cVar = gVar.f56133d;
-        }
-        if ((i14 & 4) != 0) {
-            request = gVar.f56134e;
-        }
-        if ((i14 & 8) != 0) {
-            i11 = gVar.f56135f;
-        }
-        if ((i14 & 16) != 0) {
-            i12 = gVar.f56136g;
-        }
-        if ((i14 & 32) != 0) {
-            i13 = gVar.f56137h;
-        }
-        int i15 = i12;
-        int i16 = i13;
-        return gVar.b(i10, cVar, request, i11, i15, i16);
-    }
-
-    @Override // okhttp3.Interceptor.Chain
-    public Response a(Request request) {
-        Intrinsics.checkNotNullParameter(request, "request");
-        if (this.f56132c < this.f56131b.size()) {
-            this.f56138i++;
-            yt.c cVar = this.f56133d;
-            if (cVar != null) {
-                if (cVar.j().g(request.n())) {
-                    if (this.f56138i != 1) {
-                        throw new IllegalStateException(("network interceptor " + this.f56131b.get(this.f56132c - 1) + " must call proceed() exactly once").toString());
+        Iterator it = this.f56138e.iterator();
+        while (it.hasNext()) {
+            f connection = (f) it.next();
+            Intrinsics.checkNotNullExpressionValue(connection, "connection");
+            synchronized (connection) {
+                if (z10) {
+                    try {
+                        if (connection.v()) {
+                        }
+                        Unit unit = Unit.f33074a;
+                    } catch (Throwable th2) {
+                        throw th2;
                     }
-                } else {
-                    throw new IllegalStateException(("network interceptor " + this.f56131b.get(this.f56132c - 1) + " must retain the same host and port").toString());
                 }
-            }
-            g c10 = c(this, this.f56132c + 1, null, request, 0, 0, 0, 58, null);
-            Interceptor interceptor = (Interceptor) this.f56131b.get(this.f56132c);
-            Response intercept = interceptor.intercept(c10);
-            if (intercept != null) {
-                if (this.f56133d != null && this.f56132c + 1 < this.f56131b.size() && c10.f56138i != 1) {
-                    throw new IllegalStateException(("network interceptor " + interceptor + " must call proceed() exactly once").toString());
-                } else if (intercept.x() != null) {
-                    return intercept;
-                } else {
-                    throw new IllegalStateException(("interceptor " + interceptor + " returned a response with no body").toString());
+                if (connection.t(address, list)) {
+                    call.c(connection);
+                    return true;
                 }
+                Unit unit2 = Unit.f33074a;
             }
-            throw new NullPointerException("interceptor " + interceptor + " returned null");
         }
-        throw new IllegalStateException("Check failed.");
+        return false;
     }
 
-    public final g b(int i10, yt.c cVar, Request request, int i11, int i12, int i13) {
-        Intrinsics.checkNotNullParameter(request, "request");
-        return new g(this.f56130a, this.f56131b, i10, cVar, request, i11, i12, i13);
+    public final long b(long j10) {
+        Iterator it = this.f56138e.iterator();
+        int i10 = 0;
+        long j11 = Long.MIN_VALUE;
+        f fVar = null;
+        int i11 = 0;
+        while (it.hasNext()) {
+            f connection = (f) it.next();
+            Intrinsics.checkNotNullExpressionValue(connection, "connection");
+            synchronized (connection) {
+                if (d(connection, j10) > 0) {
+                    i11++;
+                } else {
+                    i10++;
+                    long o10 = j10 - connection.o();
+                    if (o10 > j11) {
+                        fVar = connection;
+                        j11 = o10;
+                    }
+                    Unit unit = Unit.f33074a;
+                }
+            }
+        }
+        long j12 = this.f56135b;
+        if (j11 < j12 && i10 <= this.f56134a) {
+            if (i10 > 0) {
+                return j12 - j11;
+            }
+            if (i11 > 0) {
+                return j12;
+            }
+            return -1L;
+        }
+        Intrinsics.checkNotNull(fVar);
+        synchronized (fVar) {
+            if (!fVar.n().isEmpty()) {
+                return 0L;
+            }
+            if (fVar.o() + j11 != j10) {
+                return 0L;
+            }
+            fVar.D(true);
+            this.f56138e.remove(fVar);
+            vt.e.n(fVar.E());
+            if (this.f56138e.isEmpty()) {
+                this.f56136c.a();
+            }
+            return 0L;
+        }
     }
 
-    @Override // okhttp3.Interceptor.Chain
-    public Call call() {
-        return this.f56130a;
+    public final boolean c(f connection) {
+        Intrinsics.checkNotNullParameter(connection, "connection");
+        if (vt.e.f51535h && !Thread.holdsLock(connection)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
+        } else if (!connection.p() && this.f56134a != 0) {
+            yt.d.j(this.f56136c, this.f56137d, 0L, 2, null);
+            return false;
+        } else {
+            connection.D(true);
+            this.f56138e.remove(connection);
+            if (this.f56138e.isEmpty()) {
+                this.f56136c.a();
+            }
+            return true;
+        }
     }
 
-    public final yt.e d() {
-        return this.f56130a;
-    }
-
-    public final int e() {
-        return this.f56135f;
-    }
-
-    public final yt.c f() {
-        return this.f56133d;
-    }
-
-    public final int g() {
-        return this.f56136g;
-    }
-
-    @Override // okhttp3.Interceptor.Chain
-    public Request h() {
-        return this.f56134e;
-    }
-
-    public final Request i() {
-        return this.f56134e;
-    }
-
-    public final int j() {
-        return this.f56137h;
-    }
-
-    public int k() {
-        return this.f56136g;
+    public final void e(f connection) {
+        Intrinsics.checkNotNullParameter(connection, "connection");
+        if (vt.e.f51535h && !Thread.holdsLock(connection)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
+        }
+        this.f56138e.add(connection);
+        yt.d.j(this.f56136c, this.f56137d, 0L, 2, null);
     }
 }

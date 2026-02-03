@@ -3,13 +3,13 @@ package net.time4j.calendar;
 import java.io.Serializable;
 import java.text.ParsePosition;
 import java.util.Locale;
-import jt.z;
-import kt.t;
+import kt.z;
+import lt.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 class i implements t, z, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final i f40474d = new i();
+    private static final i f40337d = new i();
     private static final long serialVersionUID = 4572549754637955194L;
 
     i() {
@@ -17,61 +17,61 @@ class i implements t, z, Serializable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static i D() {
-        return f40474d;
+        return f40337d;
     }
 
-    @Override // jt.p
+    @Override // kt.p
     /* renamed from: B */
     public p A() {
         return p.MINOR_01_LICHUN_315;
     }
 
-    @Override // jt.p
+    @Override // kt.p
     public boolean C() {
         return false;
     }
 
-    @Override // jt.z
+    @Override // kt.z
     /* renamed from: E */
-    public p j(f fVar) {
+    public p h(f fVar) {
         d U = fVar.U();
-        return p.j(U.n(U.q(fVar.V(), fVar.f0().getNumber()) + fVar.lengthOfYear()));
+        return p.k(U.n(U.q(fVar.V(), fVar.f0().getNumber()) + fVar.lengthOfYear()));
     }
 
-    @Override // jt.z
+    @Override // kt.z
     /* renamed from: F */
-    public p p(f fVar) {
+    public p o(f fVar) {
         d U = fVar.U();
-        return p.j(U.n(U.q(fVar.V(), fVar.f0().getNumber()) + 1));
+        return p.k(U.n(U.q(fVar.V(), fVar.f0().getNumber()) + 1));
     }
 
-    @Override // jt.z
+    @Override // kt.z
     /* renamed from: G */
     public p x(f fVar) {
-        return p.j(fVar.U().n(fVar.j() + 1));
+        return p.k(fVar.U().n(fVar.i() + 1));
     }
 
-    @Override // jt.z
+    @Override // kt.z
     /* renamed from: H */
     public boolean l(f fVar, p pVar) {
         return pVar != null;
     }
 
-    @Override // kt.t
+    @Override // lt.t
     /* renamed from: I */
-    public p z(CharSequence charSequence, ParsePosition parsePosition, jt.d dVar) {
-        Locale locale = (Locale) dVar.b(kt.a.f36546c, Locale.ROOT);
+    public p k(CharSequence charSequence, ParsePosition parsePosition, kt.d dVar) {
+        Locale locale = (Locale) dVar.a(lt.a.f37628c, Locale.ROOT);
         int length = charSequence.length();
         if (parsePosition.getIndex() >= length) {
             parsePosition.setErrorIndex(length);
             return null;
         }
-        return p.l(charSequence, locale, parsePosition);
+        return p.m(charSequence, locale, parsePosition);
     }
 
-    @Override // jt.z
+    @Override // kt.z
     /* renamed from: J */
-    public f w(f fVar, p pVar, boolean z10) {
+    public f v(f fVar, p pVar, boolean z10) {
         if (pVar != null) {
             return (f) fVar.F(pVar.o());
         }
@@ -80,58 +80,58 @@ class i implements t, z, Serializable {
 
     @Override // java.util.Comparator
     /* renamed from: b */
-    public int compare(jt.o oVar, jt.o oVar2) {
-        return ((p) oVar.p(this)).compareTo((p) oVar2.p(this));
+    public int compare(kt.o oVar, kt.o oVar2) {
+        return ((p) oVar.v(this)).compareTo((p) oVar2.v(this));
     }
 
-    @Override // jt.z
+    @Override // kt.z
     /* renamed from: c */
-    public jt.p a(f fVar) {
+    public kt.p a(f fVar) {
         throw new AbstractMethodError();
     }
 
-    @Override // jt.p
+    @Override // kt.p
     public char d() {
         return (char) 0;
     }
 
-    @Override // jt.p
+    @Override // kt.p
+    public boolean f() {
+        return false;
+    }
+
+    @Override // kt.p
     public Class getType() {
         return p.class;
     }
 
-    @Override // jt.p
-    public boolean i() {
-        return false;
-    }
-
-    @Override // jt.z
-    /* renamed from: m */
-    public jt.p h(f fVar) {
+    @Override // kt.z
+    /* renamed from: j */
+    public kt.p g(f fVar) {
         throw new AbstractMethodError();
     }
 
-    @Override // jt.p
+    @Override // kt.p
     /* renamed from: n */
     public p e() {
         return p.MAJOR_12_DAHAN_300;
     }
 
-    @Override // jt.p
+    @Override // kt.p
     public String name() {
         return "SOLAR_TERM";
     }
 
     protected Object readResolve() {
-        return f40474d;
+        return f40337d;
     }
 
-    @Override // kt.t
-    public void u(jt.o oVar, Appendable appendable, jt.d dVar) {
-        appendable.append(((p) oVar.p(this)).e((Locale) dVar.b(kt.a.f36546c, Locale.ROOT)));
+    @Override // lt.t
+    public void s(kt.o oVar, Appendable appendable, kt.d dVar) {
+        appendable.append(((p) oVar.v(this)).e((Locale) dVar.a(lt.a.f37628c, Locale.ROOT)));
     }
 
-    @Override // jt.p
+    @Override // kt.p
     public boolean y() {
         return true;
     }

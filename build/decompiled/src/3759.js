@@ -1,180 +1,233 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = metroImportDefault;
     var2 = exports;
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = global;
-    var5 = var1.Object;
-    var4 = var5.defineProperty;
+    var5 = dependencyMap;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var _closure1_slot1 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
     var3 = {};
-    var1 = true;
-    var3.value = var1;
-    var1 = '__esModule';
-    var1 = var4.bind(var5)(var2, var1, var3);
-    var1 = {};
-    var3 = 'function rubberBandDecay_Pnpm_rubberBandDecayTs1(animation,now,config){const{SLOPE_FACTOR,DERIVATIVE_EPS,VELOCITY_EPS}=this.__closure;const{lastTimestamp:lastTimestamp,startTimestamp:startTimestamp,current:current,velocity:velocity}=animation;const deltaTime=Math.min(now-lastTimestamp,64);const clampIndex=Math.abs(current-config.clamp[0])<Math.abs(current-config.clamp[1])?0:1;let derivative=0;if(current<config.clamp[0]||current>config.clamp[1]){derivative=current-config.clamp[clampIndex];}const v=velocity*Math.exp(-(1-config.deceleration)*(now-startTimestamp)*SLOPE_FACTOR)-derivative*config.rubberBandFactor;if(Math.abs(derivative)>DERIVATIVE_EPS){animation.springActive=true;}else if(animation.springActive){animation.current=config.clamp[clampIndex];return true;}else if(Math.abs(v)<VELOCITY_EPS){return true;}animation.current=current+v*config.velocityFactor*deltaTime/1000;animation.velocity=v;animation.lastTimestamp=now;return false;}';
-    var1.code = var3;
-    var _closure1_slot2 = var1;
-    var1 = function() { // Environment: var0
-        var0 = function arg0, arg1, arg2() {
-            _fun33730: for (var _fun33730_ip = 0;;) switch (_fun33730_ip) {
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var1 = function() { // Environment: var1
+        var3 = _closure1_slot3;
+        var2 = function arg0, arg1() {
+            _fun33621: for (var _fun33621_ip = 0;;) switch (_fun33621_ip) {
                 case 0:
-                    var1 = arg0;
-                    var0 = arg1;
-                    var3 = arg2;
-                    var2 = var1.lastTimestamp;
-                    var6 = var1.startTimestamp;
-                    var4 = var1.current;
-                    var9 = var1.velocity;
-                    var8 = global;
-                    var10 = var8.Math;
-                    var7 = var10.min;
-                    var5 = var0 - var2;
-                    var2 = 64;
-                    var5 = var7.bind(var10)(var5, var2);
-                    var10 = var8.Math;
-                    var7 = var10.abs;
-                    var2 = var3.clamp;
-                    var11 = 0;
-                    var2 = var2[var11];
-                    var2 = var4 - var2;
-                    var7 = var7.bind(var10)(var2);
-                    var13 = var8.Math;
-                    var12 = var13.abs;
-                    var2 = var3.clamp;
-                    var10 = 1;
-                    var2 = var2[var10];
-                    var2 = var4 - var2;
-                    var2 = var12.bind(var13)(var2);
-                    var2 = var7 < var2;
-                    var7 = var10;
-                    if (!var2) {
-                        _fun33730_ip = 137;
-                        continue _fun33730
-                    }
-                case 135:
-                    var7 = 0;
-                case 137:
-                    var2 = var3.clamp;
-                    var2 = var2[var11];
-                    var2 = var4 < var2;
-                    if (var2) {
-                        _fun33730_ip = 168;
-                        continue _fun33730
-                    }
-                case 154:
-                    var12 = var3.clamp;
-                    var12 = var12[var10];
-                    var2 = var4 > var12;
-                case 168:
-                    var13 = 0;
-                    if (!var2) {
-                        _fun33730_ip = 187;
-                        continue _fun33730
-                    }
-                case 173:
-                    var2 = var3.clamp;
-                    var2 = var2[var7];
-                    var13 = var4 - var2;
-                case 187:
-                    var14 = var8.Math;
-                    var12 = var14.exp;
-                    var2 = var3.deceleration;
-                    var2 = var10 - var2;
-                    var6 = var0 - var6;
-                    var2 = -var2;
-                    var15 = var2 * var6;
-                    var16 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var2 = var2[var11];
-                    var10 = undefined;
-                    var2 = var16.bind(var10)(var2);
-                    var2 = var2.SLOPE_FACTOR;
-                    var2 = var15 * var2;
-                    var2 = var12.bind(var14)(var2);
-                    var9 = var9 * var2;
-                    var2 = var3.rubberBandFactor;
-                    var2 = var13 * var2;
-                    var2 = var9 - var2;
-                    var12 = var8.Math;
-                    var9 = var12.abs;
-                    var12 = var9.bind(var12)(var13);
-                    var9 = 0.1;
-                    if (!(!(var12 > var9))) {
-                        _fun33730_ip = 383;
-                        continue _fun33730
-                    }
-                case 306:
-                    var9 = var1.springActive;
-                    if (var9) {
-                        _fun33730_ip = 363;
-                        continue _fun33730
-                    }
-                case 315:
-                    var9 = var8.Math;
-                    var8 = var9.abs;
-                    var8 = var8.bind(var9)(var2);
-                    var9 = _closure1_slot0;
+                    var4 = arg0;
+                    var2 = this;
+                    var5 = _closure1_slot2;
+                    var1 = _closure2_slot0;
+                    var0 = undefined;
+                    var1 = var5.bind(var0)(var2, var1);
+                    var1 = 0;
+                    var2.listenersNumber = var1;
+                    var1 = null;
+                    var2.sensorId = var1;
+                    var2.sensorType = var4;
+                    var1 = arg1;
+                    var2.config = var1;
+                    var5 = _closure1_slot0;
                     var6 = _closure1_slot1;
-                    var6 = var6[var11];
-                    var6 = var9.bind(var10)(var6);
-                    var6 = var6.VELOCITY_EPS;
-                    if (!(var8 < var6)) {
-                        _fun33730_ip = 391;
-                        continue _fun33730
+                    var1 = 2;
+                    var1 = var6[var1];
+                    var1 = var5.bind(var0)(var1);
+                    var1 = var1.SensorType;
+                    var1 = var1.ROTATION;
+                    if (!(var4 !== var1)) {
+                        _fun33621_ip = 142;
+                        continue _fun33621
                     }
-                case 359:
-                    var6 = true;
-                    return var6;
-                case 363:
-                    var6 = var3.clamp;
-                    var6 = var6[var7];
-                    var1.current = var6;
-                    var6 = true;
-                    return var6;
-                case 383:
-                    var6 = true;
-                    var1.springActive = var6;
-                case 391:
-                    var3 = var3.velocityFactor;
-                    var3 = var2 * var3;
-                    var5 = var3 * var5;
-                    var3 = 1000;
-                    var3 = var5 / var3;
-                    var3 = var4 + var3;
-                    var1.current = var3;
-                    var1.velocity = var2;
-                    var1.lastTimestamp = var0;
-                    var0 = false;
+                case 95:
+                    var4 = _closure1_slot0;
+                    var5 = _closure1_slot1;
+                    var1 = 3;
+                    var1 = var5[var1];
+                    var5 = var4.bind(var0)(var1);
+                    var4 = var5.makeMutable;
+                    var1 = {
+                        'x': 0,
+                        'y': 0,
+                        'z': 0,
+                        'interfaceOrientation': 0
+                    };
+                    var1 = var4.bind(var5)(var1);
+                    _fun33621_ip = 187;
+                    continue _fun33621;
+                case 142:
+                    var4 = _closure1_slot0;
+                    var5 = _closure1_slot1;
+                    var3 = 3;
+                    var3 = var5[var3];
+                    var5 = var4.bind(var0)(var3);
+                    var4 = var5.makeMutable;
+                    var3 = {
+                        'qw': 0,
+                        'qx': 0,
+                        'qy': 0,
+                        'qz': 0,
+                        'yaw': 0,
+                        'pitch': 0,
+                        'roll': 0,
+                        'interfaceOrientation': 0
+                    };
+                    var1 = var4.bind(var5)(var3);
+                case 187:
+                    var2.data = var1;
                     return var0;
             }
         };
-        var2 = {};
-        var5 = _closure1_slot0;
-        var6 = _closure1_slot1;
-        var3 = 0;
-        var7 = var6[var3];
-        var4 = undefined;
-        var7 = var5.bind(var4)(var7);
-        var7 = var7.SLOPE_FACTOR;
-        var2.SLOPE_FACTOR = var7;
-        var7 = 0.1;
-        var2.DERIVATIVE_EPS = var7;
-        var3 = var6[var3];
-        var3 = var5.bind(var4)(var3);
-        var3 = var3.VELOCITY_EPS;
-        var2.VELOCITY_EPS = var3;
-        var0.__closure = var2;
-        var2 = 5389749401303.0;
-        var0.__workletHash = var2;
-        var1 = _closure1_slot2;
-        var0.__initData = var1;
+        var _closure2_slot0 = var2;
+        var0 = {};
+        var1 = 'register';
+        var0.key = var1;
+        var1 = function arg0() {
+            _fun33622: for (var _fun33622_ip = 0;;) switch (_fun33622_ip) {
+                case 0:
+                    var0 = this;
+                    var2 = var0.config;
+                    var7 = var0.sensorType;
+                    var4 = _closure1_slot0;
+                    var3 = _closure1_slot1;
+                    var1 = 4;
+                    var3 = var3[var1];
+                    var1 = undefined;
+                    var1 = var4.bind(var1)(var3);
+                    var6 = var1.ReanimatedModule;
+                    var5 = var6.registerSensor;
+                    var8 = var2.interval;
+                    var1 = -1;
+                    var3 = 'auto';
+                    var4 = var1;
+                    if (!(var3 !== var8)) {
+                        _fun33622_ip = 80;
+                        continue _fun33622
+                    }
+                case 74:
+                    var4 = var2.interval;
+                case 80:
+                    var10 = var2.iosReferenceFrame;
+                    var9 = arg0;
+                    var13 = var6;
+                    var12 = var7;
+                    var11 = var4;
+                    var2 = var13[var5](var12, var11, var10, var9, var8);
+                    var0.sensorId = var2;
+                    var0 = var0.sensorId;
+                    var0 = var1 !== var0;
+                    return var0;
+            }
+        };
+        var0.value = var1;
+        var1 = new Array(5);
+        var1[0] = var0;
+        var0 = {};
+        var5 = 'isRunning';
+        var0.key = var5;
+        var5 = function() {
+            _fun33623: for (var _fun33623_ip = 0;;) switch (_fun33623_ip) {
+                case 0:
+                    var1 = this;
+                    var2 = var1.sensorId;
+                    var0 = -1;
+                    var0 = var0 !== var2;
+                    if (!var0) {
+                        _fun33623_ip = 34;
+                        continue _fun33623
+                    }
+                case 22:
+                    var2 = var1.sensorId;
+                    var1 = null;
+                    var0 = var1 !== var2;
+                case 34:
+                    return var0;
+            }
+        };
+        var0.value = var5;
+        var1[1] = var0;
+        var0 = {};
+        var5 = 'isAvailable';
+        var0.key = var5;
+        var5 = function() {
+            var0 = this;
+            var1 = var0.sensorId;
+            var0 = -1;
+            var0 = var0 !== var1;
+            return var0;
+        };
+        var0.value = var5;
+        var1[2] = var0;
+        var0 = {};
+        var5 = 'getSharedValue';
+        var0.key = var5;
+        var5 = function() {
+            var0 = this;
+            var0 = var0.data;
+            return var0;
+        };
+        var0.value = var5;
+        var1[3] = var0;
+        var0 = {};
+        var5 = 'unregister';
+        var0.key = var5;
+        var4 = function() {
+            _fun33626: for (var _fun33626_ip = 0;;) switch (_fun33626_ip) {
+                case 0:
+                    var1 = this;
+                    var2 = var1.sensorId;
+                    var0 = null;
+                    var2 = var0 !== var2;
+                    if (!var2) {
+                        _fun33626_ip = 34;
+                        continue _fun33626
+                    }
+                case 18:
+                    var4 = var1.sensorId;
+                    var3 = -1;
+                    var2 = var3 !== var4;
+                case 34:
+                    if (!var2) {
+                        _fun33626_ip = 85;
+                        continue _fun33626
+                    }
+                case 37:
+                    var4 = _closure1_slot0;
+                    var3 = _closure1_slot1;
+                    var2 = 4;
+                    var3 = var3[var2];
+                    var2 = undefined;
+                    var2 = var4.bind(var2)(var3);
+                    var4 = var2.ReanimatedModule;
+                    var3 = var4.unregisterSensor;
+                    var2 = var1.sensorId;
+                    var2 = var3.bind(var4)(var2);
+                case 85:
+                    var1.sensorId = var0;
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var0.value = var4;
+        var1[4] = var0;
+        var0 = undefined;
+        var0 = var3.bind(var0)(var2, var1);
         return var0;
     };
-    var0 = undefined;
     var1 = var1.bind(var0)();
-    var2.rubberBandDecay = var1;
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3758]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 3737, 3749, 3720]);

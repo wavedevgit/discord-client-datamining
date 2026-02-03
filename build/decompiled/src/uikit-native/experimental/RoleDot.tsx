@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/experimental/RoleDot.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun66148: for (var _fun66148_ip = 0;;) switch (_fun66148_ip) {
+        _fun66257: for (var _fun66257_ip = 0;;) switch (_fun66257_ip) {
             case 0:
                 var0 = arg0;
                 var18 = var0.color;
@@ -101,16 +101,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.size;
                 var4 = undefined;
                 if (!(var3 === var4)) {
-                    _fun66148_ip = 28;
-                    continue _fun66148
+                    _fun66257_ip = 28;
+                    continue _fun66257
                 }
             case 24:
                 var3 = 'normal';
             case 28:
                 var10 = var0.background;
                 if (!(var10 === var4)) {
-                    _fun66148_ip = 40;
-                    continue _fun66148
+                    _fun66257_ip = 40;
+                    continue _fun66257
                 }
             case 38:
                 var10 = true;
@@ -133,20 +133,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var8 = var1.bind(var4)(var2, var0);
                 if (!(var0 == var18)) {
-                    _fun66148_ip = 127;
-                    continue _fun66148
+                    _fun66257_ip = 127;
+                    continue _fun66257
                 }
             case 120:
                 if (!(var0 != var15)) {
-                    _fun66148_ip = 765;
-                    continue _fun66148
+                    _fun66257_ip = 765;
+                    continue _fun66257
                 }
             case 127:
                 var1 = 16;
                 var2 = 'normal';
                 if (!(var2 === var3)) {
-                    _fun66148_ip = 141;
-                    continue _fun66148
+                    _fun66257_ip = 141;
+                    continue _fun66257
                 }
             case 138:
                 var1 = 20;
@@ -168,13 +168,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var11.isAndroid;
                 var9 = var9.bind(var11)();
                 if (var9) {
-                    _fun66148_ip = 212;
-                    continue _fun66148
+                    _fun66257_ip = 212;
+                    continue _fun66257
                 }
             case 206:
                 var9 = var3 * var16;
-                _fun66148_ip = 219;
-                continue _fun66148;
+                _fun66257_ip = 219;
+                continue _fun66257;
             case 212:
                 var11 = 3;
                 var9 = var11 * var16;
@@ -217,8 +217,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7[0] = var9;
                 var9 = null;
                 if (!var10) {
-                    _fun66148_ip = 371;
-                    continue _fun66148
+                    _fun66257_ip = 371;
+                    continue _fun66257
                 }
             case 366:
                 var9 = var12.backgroundColor;
@@ -244,8 +244,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var0 != var18;
                 var19 = undefined;
                 if (!var20) {
-                    _fun66148_ip = 457;
-                    continue _fun66148
+                    _fun66257_ip = 457;
+                    continue _fun66257
                 }
             case 454:
                 var19 = var18;
@@ -259,19 +259,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = new Array(2);
                 var7[0] = var9;
                 if (!var8) {
-                    _fun66148_ip = 510;
-                    continue _fun66148
+                    _fun66257_ip = 510;
+                    continue _fun66257
                 }
             case 496:
                 if (!(var0 != var15)) {
-                    _fun66148_ip = 510;
-                    continue _fun66148
+                    _fun66257_ip = 510;
+                    continue _fun66257
                 }
             case 500:
                 var8 = var15.secondaryColor;
                 if (!(var0 == var8)) {
-                    _fun66148_ip = 581;
-                    continue _fun66148
+                    _fun66257_ip = 581;
+                    continue _fun66257
                 }
             case 510:
                 var10 = _closure1_slot4;
@@ -286,8 +286,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var0 != var18;
                 var17 = undefined;
                 if (!var19) {
-                    _fun66148_ip = 558;
-                    continue _fun66148
+                    _fun66257_ip = 558;
+                    continue _fun66257
                 }
             case 555:
                 var17 = var18;
@@ -296,8 +296,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11[2] = var16;
                 var8.style = var11;
                 var8 = var10.bind(var4)(var9, var8);
-                _fun66148_ip = 739;
-                continue _fun66148;
+                _fun66257_ip = 739;
+                continue _fun66257;
             case 581:
                 var11 = _closure1_slot4;
                 var10 = _closure1_slot1;
@@ -351,4 +351,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.RoleDot = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 478, 4051, 4754, 4059, 1304, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 478, 4081, 4784, 4089, 1304, 2]);

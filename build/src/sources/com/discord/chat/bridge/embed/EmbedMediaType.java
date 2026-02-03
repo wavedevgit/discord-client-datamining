@@ -22,7 +22,7 @@ final class EmbedMediaType {
     static {
         EmbedMediaType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = pr.a.a($values);
+        $ENTRIES = qr.a.a($values);
     }
 
     private EmbedMediaType(String str, int i10) {

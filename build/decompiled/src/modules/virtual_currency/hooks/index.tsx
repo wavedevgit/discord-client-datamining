@@ -1,7 +1,7 @@
 // modules/virtual_currency/hooks/index.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun78522: for (var _fun78522_ip = 0;;) switch (_fun78522_ip) {
+    _fun78915: for (var _fun78915_ip = 0;;) switch (_fun78915_ip) {
         case 0:
             var9 = require;
             var8 = exports;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun78522_ip = 90;
-                    continue _fun78522;
+                    _fun78915_ip = 90;
+                    continue _fun78915;
                 }
         case 121:
             var2 = 2;
@@ -45,10 +45,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun78522_ip = 141;
-                    continue _fun78522;
+                    _fun78915_ip = 141;
+                    continue _fun78915;
                 }
         case 172:
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 9496, 9964]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 9528, 10041]);

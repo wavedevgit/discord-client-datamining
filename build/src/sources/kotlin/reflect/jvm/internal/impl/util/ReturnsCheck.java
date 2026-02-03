@@ -14,13 +14,13 @@ import org.jetbrains.annotations.NotNull;
 public abstract class ReturnsCheck implements Check {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f36088a;
+    private final String f35864a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function1 f36089b;
+    private final Function1 f35865b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f36090c;
+    private final String f35866c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class ReturnsBoolean extends ReturnsCheck {
@@ -28,7 +28,7 @@ public abstract class ReturnsCheck implements Check {
         public static final ReturnsBoolean INSTANCE = new ReturnsBoolean();
 
         private ReturnsBoolean() {
-            super("Boolean", f.f36103d, null);
+            super("Boolean", f.f35879d, null);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -46,7 +46,7 @@ public abstract class ReturnsCheck implements Check {
         public static final ReturnsInt INSTANCE = new ReturnsInt();
 
         private ReturnsInt() {
-            super("Int", g.f36104d, null);
+            super("Int", g.f35880d, null);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -64,7 +64,7 @@ public abstract class ReturnsCheck implements Check {
         public static final ReturnsUnit INSTANCE = new ReturnsUnit();
 
         private ReturnsUnit() {
-            super("Unit", h.f36105d, null);
+            super("Unit", h.f35881d, null);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -83,13 +83,13 @@ public abstract class ReturnsCheck implements Check {
     @Override // kotlin.reflect.jvm.internal.impl.util.Check
     public boolean check(@NotNull FunctionDescriptor functionDescriptor) {
         Intrinsics.checkNotNullParameter(functionDescriptor, "functionDescriptor");
-        return Intrinsics.areEqual(functionDescriptor.getReturnType(), this.f36089b.invoke(DescriptorUtilsKt.getBuiltIns(functionDescriptor)));
+        return Intrinsics.areEqual(functionDescriptor.getReturnType(), this.f35865b.invoke(DescriptorUtilsKt.getBuiltIns(functionDescriptor)));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.util.Check
     @NotNull
     public String getDescription() {
-        return this.f36090c;
+        return this.f35866c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.util.Check
@@ -98,8 +98,8 @@ public abstract class ReturnsCheck implements Check {
     }
 
     private ReturnsCheck(String str, Function1 function1) {
-        this.f36088a = str;
-        this.f36089b = function1;
-        this.f36090c = "must return " + str;
+        this.f35864a = str;
+        this.f35865b = function1;
+        this.f35866c = "must return " + str;
     }
 }

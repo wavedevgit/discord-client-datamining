@@ -15,10 +15,10 @@ public abstract class b {
             try {
                 return factory.b(modelClass, extras);
             } catch (AbstractMethodError unused) {
-                return factory.c(vr.a.b(modelClass));
+                return factory.c(wr.a.b(modelClass));
             }
         } catch (AbstractMethodError unused2) {
-            return factory.a(vr.a.b(modelClass), extras);
+            return factory.a(wr.a.b(modelClass), extras);
         }
     }
 }

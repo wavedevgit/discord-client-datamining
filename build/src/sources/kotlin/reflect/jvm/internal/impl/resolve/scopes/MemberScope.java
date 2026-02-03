@@ -14,16 +14,16 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface MemberScope extends ResolutionScope {
     @NotNull
-    public static final Companion Companion = Companion.f35512a;
+    public static final Companion Companion = Companion.f35288a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f35512a = new Companion();
+        static final /* synthetic */ Companion f35288a = new Companion();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Function1 f35513b = c.f35528d;
+        private static final Function1 f35289b = c.f35304d;
 
         private Companion() {
         }
@@ -36,7 +36,7 @@ public interface MemberScope extends ResolutionScope {
 
         @NotNull
         public final Function1<Name, Boolean> getALL_NAME_FILTER() {
-            return f35513b;
+            return f35289b;
         }
     }
 

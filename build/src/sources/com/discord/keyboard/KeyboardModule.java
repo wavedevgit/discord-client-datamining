@@ -8,7 +8,7 @@ import com.discord.keyboard.KeyboardModule;
 import com.discord.misc.utilities.keyboard.KeyboardExtensionsKt;
 import com.discord.misc.utilities.view.ViewUtilsKt;
 import com.facebook.react.bridge.ReactApplicationContext;
-import jm.a;
+import km.a;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -56,13 +56,13 @@ public final class KeyboardModule extends NativeKeyboardModuleSpec {
     @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule, com.facebook.react.turbomodule.core.interfaces.TurboModule
     public void initialize() {
         super.initialize();
-        a.f32253a.c(this.reactContext);
+        a.f33029a.d(this.reactContext);
     }
 
     @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule, com.facebook.react.turbomodule.core.interfaces.TurboModule
     public void invalidate() {
         super.invalidate();
-        a.f32253a.c(null);
+        a.f33029a.d(null);
     }
 
     @Override // com.discord.codegen.NativeKeyboardModuleSpec

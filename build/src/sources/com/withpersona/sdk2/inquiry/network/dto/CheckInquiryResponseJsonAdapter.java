@@ -57,18 +57,18 @@ public final class CheckInquiryResponseJsonAdapter extends h {
         String str = null;
         List list = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 data = (CheckInquiryResponse.Data) this.dataAdapter.fromJson(reader);
                 if (data == null) {
-                    throw sm.c.x("data_", "data", reader);
+                    throw tm.c.x("data_", "data", reader);
                 }
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 list = (List) this.nullableListOfIncludedAdapter.fromJson(reader);
             }
         }
@@ -76,7 +76,7 @@ public final class CheckInquiryResponseJsonAdapter extends h {
         if (data != null) {
             return new CheckInquiryResponse(data, str, list);
         }
-        throw sm.c.o("data_", "data", reader);
+        throw tm.c.o("data_", "data", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -84,11 +84,11 @@ public final class CheckInquiryResponseJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkInquiryResponse != null) {
             writer.l();
-            writer.A0("data");
+            writer.t0("data");
             this.dataAdapter.toJson(writer, checkInquiryResponse.getData());
-            writer.A0("token");
+            writer.t0("token");
             this.nullableStringAdapter.toJson(writer, checkInquiryResponse.getToken());
-            writer.A0("included");
+            writer.t0("included");
             this.nullableListOfIncludedAdapter.toJson(writer, checkInquiryResponse.getIncluded());
             writer.E();
             return;

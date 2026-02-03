@@ -1,63 +1,64 @@
 package ou;
 
 import java.util.List;
-import kotlin.collections.CollectionsKt;
-import pv.d;
+import java.util.Map;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import ou.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements ku.b {
+public final class b implements lu.a, d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f44794a = new b();
+    public static final b f44863a = new b();
 
     private b() {
     }
 
-    @Override // ku.b
-    public Object f(Object obj, Object obj2) {
-        List list;
-        long j10;
-        List list2;
-        Object obj3;
-        List list3;
-        Object firstOrNull;
-        String obj4;
-        boolean z10 = obj instanceof List;
-        List list4 = null;
-        if (z10) {
-            list = (List) obj;
-        } else {
-            list = null;
+    @Override // nu.f
+    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
+        return d.a.f(this, obj, obj2, hVar, function2);
+    }
+
+    @Override // nu.a
+    public nu.b c(List list, Object obj, h hVar) {
+        return d.a.c(this, list, obj, hVar);
+    }
+
+    @Override // ou.d
+    public Object d(c data, h evaluator) {
+        Intrinsics.checkNotNullParameter(data, "data");
+        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+        for (Object obj : data.b()) {
+            if (f44863a.i(evaluator.a(data.a(), obj))) {
+                return Boolean.FALSE;
+            }
         }
-        if (list != null && (firstOrNull = CollectionsKt.firstOrNull(list)) != null && (obj4 = firstOrNull.toString()) != null) {
-            j10 = d.c(obj4);
-        } else {
-            j10 = 0;
-        }
-        if (z10) {
-            list2 = (List) obj;
-        } else {
-            list2 = null;
-        }
-        if (list2 != null) {
-            obj3 = pv.c.b(list2);
-        } else {
-            obj3 = null;
-        }
-        if (obj3 instanceof List) {
-            list3 = (List) obj3;
-        } else {
-            list3 = null;
-        }
-        if (list3 == null) {
-            list3 = CollectionsKt.l();
-        }
-        List f10 = a.f44793a.f(list3, obj2);
-        if (list3.size() - f10.size() < j10) {
-            list4 = f10;
-        }
-        if (list4 == null) {
-            return CollectionsKt.l();
-        }
-        return list4;
+        return data.c();
+    }
+
+    @Override // lu.a
+    public Object e(Object obj, Object obj2, h evaluator) {
+        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+        return g(obj, obj2, evaluator);
+    }
+
+    @Override // pv.a
+    public List f(List list, Object obj, h hVar) {
+        return d.a.h(this, list, obj, hVar);
+    }
+
+    public Object g(Object obj, Object obj2, h hVar) {
+        return d.a.b(this, obj, obj2, hVar);
+    }
+
+    @Override // nu.a
+    /* renamed from: h */
+    public Boolean a(Map map, List expressionValues) {
+        Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
+        return Boolean.TRUE;
+    }
+
+    public boolean i(Object obj) {
+        return d.a.i(this, obj);
     }
 }

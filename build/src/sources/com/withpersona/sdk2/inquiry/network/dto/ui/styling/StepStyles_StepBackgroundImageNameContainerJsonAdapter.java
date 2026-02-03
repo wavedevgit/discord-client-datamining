@@ -43,11 +43,11 @@ public final class StepStyles_StepBackgroundImageNameContainerJsonAdapter extend
         reader.r();
         String str = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
             }
         }
@@ -60,7 +60,7 @@ public final class StepStyles_StepBackgroundImageNameContainerJsonAdapter extend
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepBackgroundImageNameContainer != null) {
             writer.l();
-            writer.A0("localName");
+            writer.t0("localName");
             this.nullableStringAdapter.toJson(writer, stepBackgroundImageNameContainer.getLocalName());
             writer.E();
             return;

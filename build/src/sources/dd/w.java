@@ -6,57 +6,57 @@ import ne.s0;
 public final class w implements i0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m f22081a;
+    private final m f21657a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ne.g0 f22082b = new ne.g0(new byte[10]);
+    private final ne.g0 f21658b = new ne.g0(new byte[10]);
 
     /* renamed from: c  reason: collision with root package name */
-    private int f22083c = 0;
+    private int f21659c = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f22084d;
+    private int f21660d;
 
     /* renamed from: e  reason: collision with root package name */
-    private s0 f22085e;
+    private s0 f21661e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f22086f;
+    private boolean f21662f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f22087g;
+    private boolean f21663g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f22088h;
+    private boolean f21664h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f22089i;
+    private int f21665i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f22090j;
+    private int f21666j;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f22091k;
+    private boolean f21667k;
 
     /* renamed from: l  reason: collision with root package name */
-    private long f22092l;
+    private long f21668l;
 
     public w(m mVar) {
-        this.f22081a = mVar;
+        this.f21657a = mVar;
     }
 
     private boolean d(ne.h0 h0Var, byte[] bArr, int i10) {
-        int min = Math.min(h0Var.a(), i10 - this.f22084d);
+        int min = Math.min(h0Var.a(), i10 - this.f21660d);
         if (min <= 0) {
             return true;
         }
         if (bArr == null) {
             h0Var.V(min);
         } else {
-            h0Var.l(bArr, this.f22084d, min);
+            h0Var.l(bArr, this.f21660d, min);
         }
-        int i11 = this.f22084d + min;
-        this.f22084d = i11;
+        int i11 = this.f21660d + min;
+        this.f21660d = i11;
         if (i11 == i10) {
             return true;
         }
@@ -64,80 +64,80 @@ public final class w implements i0 {
     }
 
     private boolean e() {
-        this.f22082b.p(0);
-        int h10 = this.f22082b.h(24);
+        this.f21658b.p(0);
+        int h10 = this.f21658b.h(24);
         if (h10 != 1) {
             ne.y.i("PesReader", "Unexpected start code prefix: " + h10);
-            this.f22090j = -1;
+            this.f21666j = -1;
             return false;
         }
-        this.f22082b.r(8);
-        int h11 = this.f22082b.h(16);
-        this.f22082b.r(5);
-        this.f22091k = this.f22082b.g();
-        this.f22082b.r(2);
-        this.f22086f = this.f22082b.g();
-        this.f22087g = this.f22082b.g();
-        this.f22082b.r(6);
-        int h12 = this.f22082b.h(8);
-        this.f22089i = h12;
+        this.f21658b.r(8);
+        int h11 = this.f21658b.h(16);
+        this.f21658b.r(5);
+        this.f21667k = this.f21658b.g();
+        this.f21658b.r(2);
+        this.f21662f = this.f21658b.g();
+        this.f21663g = this.f21658b.g();
+        this.f21658b.r(6);
+        int h12 = this.f21658b.h(8);
+        this.f21665i = h12;
         if (h11 == 0) {
-            this.f22090j = -1;
+            this.f21666j = -1;
         } else {
             int i10 = (h11 - 3) - h12;
-            this.f22090j = i10;
+            this.f21666j = i10;
             if (i10 < 0) {
-                ne.y.i("PesReader", "Found negative packet payload size: " + this.f22090j);
-                this.f22090j = -1;
+                ne.y.i("PesReader", "Found negative packet payload size: " + this.f21666j);
+                this.f21666j = -1;
             }
         }
         return true;
     }
 
     private void f() {
-        this.f22082b.p(0);
-        this.f22092l = -9223372036854775807L;
-        if (this.f22086f) {
-            this.f22082b.r(4);
-            this.f22082b.r(1);
-            this.f22082b.r(1);
-            long h10 = (this.f22082b.h(3) << 30) | (this.f22082b.h(15) << 15) | this.f22082b.h(15);
-            this.f22082b.r(1);
-            if (!this.f22088h && this.f22087g) {
-                this.f22082b.r(4);
-                this.f22082b.r(1);
-                this.f22082b.r(1);
-                this.f22082b.r(1);
-                this.f22085e.b((this.f22082b.h(3) << 30) | (this.f22082b.h(15) << 15) | this.f22082b.h(15));
-                this.f22088h = true;
+        this.f21658b.p(0);
+        this.f21668l = -9223372036854775807L;
+        if (this.f21662f) {
+            this.f21658b.r(4);
+            this.f21658b.r(1);
+            this.f21658b.r(1);
+            long h10 = (this.f21658b.h(3) << 30) | (this.f21658b.h(15) << 15) | this.f21658b.h(15);
+            this.f21658b.r(1);
+            if (!this.f21664h && this.f21663g) {
+                this.f21658b.r(4);
+                this.f21658b.r(1);
+                this.f21658b.r(1);
+                this.f21658b.r(1);
+                this.f21661e.b((this.f21658b.h(3) << 30) | (this.f21658b.h(15) << 15) | this.f21658b.h(15));
+                this.f21664h = true;
             }
-            this.f22092l = this.f22085e.b(h10);
+            this.f21668l = this.f21661e.b(h10);
         }
     }
 
     private void g(int i10) {
-        this.f22083c = i10;
-        this.f22084d = 0;
+        this.f21659c = i10;
+        this.f21660d = 0;
     }
 
     @Override // dd.i0
     public void a(s0 s0Var, tc.m mVar, i0.d dVar) {
-        this.f22085e = s0Var;
-        this.f22081a.f(mVar, dVar);
+        this.f21661e = s0Var;
+        this.f21657a.f(mVar, dVar);
     }
 
     @Override // dd.i0
     public final void b(ne.h0 h0Var, int i10) {
-        ne.a.i(this.f22085e);
+        ne.a.i(this.f21661e);
         if ((i10 & 1) != 0) {
-            int i11 = this.f22083c;
+            int i11 = this.f21659c;
             if (i11 != 0 && i11 != 1) {
                 if (i11 != 2) {
                     if (i11 == 3) {
-                        if (this.f22090j != -1) {
-                            ne.y.i("PesReader", "Unexpected start indicator: expected " + this.f22090j + " more bytes");
+                        if (this.f21666j != -1) {
+                            ne.y.i("PesReader", "Unexpected start indicator: expected " + this.f21666j + " more bytes");
                         }
-                        this.f22081a.d();
+                        this.f21657a.d();
                     } else {
                         throw new IllegalStateException();
                     }
@@ -148,14 +148,14 @@ public final class w implements i0 {
             g(1);
         }
         while (h0Var.a() > 0) {
-            int i12 = this.f22083c;
+            int i12 = this.f21659c;
             if (i12 != 0) {
                 int i13 = 0;
                 if (i12 != 1) {
                     if (i12 != 2) {
                         if (i12 == 3) {
                             int a10 = h0Var.a();
-                            int i14 = this.f22090j;
+                            int i14 = this.f21666j;
                             if (i14 != -1) {
                                 i13 = a10 - i14;
                             }
@@ -163,13 +163,13 @@ public final class w implements i0 {
                                 a10 -= i13;
                                 h0Var.T(h0Var.f() + a10);
                             }
-                            this.f22081a.b(h0Var);
-                            int i15 = this.f22090j;
+                            this.f21657a.b(h0Var);
+                            int i15 = this.f21666j;
                             if (i15 != -1) {
                                 int i16 = i15 - a10;
-                                this.f22090j = i16;
+                                this.f21666j = i16;
                                 if (i16 == 0) {
-                                    this.f22081a.d();
+                                    this.f21657a.d();
                                     g(1);
                                 }
                             }
@@ -177,17 +177,17 @@ public final class w implements i0 {
                             throw new IllegalStateException();
                         }
                     } else {
-                        if (d(h0Var, this.f22082b.f40204a, Math.min(10, this.f22089i)) && d(h0Var, null, this.f22089i)) {
+                        if (d(h0Var, this.f21658b.f40067a, Math.min(10, this.f21665i)) && d(h0Var, null, this.f21665i)) {
                             f();
-                            if (this.f22091k) {
+                            if (this.f21667k) {
                                 i13 = 4;
                             }
                             i10 |= i13;
-                            this.f22081a.e(this.f22092l, i10);
+                            this.f21657a.e(this.f21668l, i10);
                             g(3);
                         }
                     }
-                } else if (d(h0Var, this.f22082b.f40204a, 9)) {
+                } else if (d(h0Var, this.f21658b.f40067a, 9)) {
                     if (e()) {
                         i13 = 2;
                     }
@@ -201,9 +201,9 @@ public final class w implements i0 {
 
     @Override // dd.i0
     public final void c() {
-        this.f22083c = 0;
-        this.f22084d = 0;
-        this.f22088h = false;
-        this.f22081a.c();
+        this.f21659c = 0;
+        this.f21660d = 0;
+        this.f21664h = false;
+        this.f21657a.c();
     }
 }

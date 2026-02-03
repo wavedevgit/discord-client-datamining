@@ -559,7 +559,7 @@ public class RiveFileController implements Observable<Listener>, RefCount {
                             viewModelInstance2.pollChanges$kotlin_release();
                         }
                         notifyAdvance(f10);
-                        Unit unit = Unit.f33298a;
+                        Unit unit = Unit.f33074a;
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -581,7 +581,7 @@ public class RiveFileController implements Observable<Listener>, RefCount {
             Function0<Unit> onStart = getOnStart();
             if (onStart != null) {
                 onStart.invoke();
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
         }
     }
@@ -832,7 +832,7 @@ public class RiveFileController implements Observable<Listener>, RefCount {
             Function0<Unit> onStart = getOnStart();
             if (onStart != null) {
                 onStart.invoke();
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
         }
         notifyPlay(stateMachineInstance);
@@ -879,7 +879,7 @@ public class RiveFileController implements Observable<Listener>, RefCount {
             Function0<Unit> onStart = getOnStart();
             if (onStart != null) {
                 onStart.invoke();
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
         }
     }
@@ -943,7 +943,7 @@ public class RiveFileController implements Observable<Listener>, RefCount {
                 }
                 setActive(state.isActive());
                 state.dispose();
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -1018,7 +1018,7 @@ public class RiveFileController implements Observable<Listener>, RefCount {
                     if (activeArtboard != null) {
                         activeArtboard.setVolume$kotlin_release(floatValue);
                     }
-                    Unit unit = Unit.f33298a;
+                    Unit unit = Unit.f33074a;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -1033,7 +1033,7 @@ public class RiveFileController implements Observable<Listener>, RefCount {
             Function0<Unit> onStart = getOnStart();
             if (onStart != null) {
                 onStart.invoke();
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
         }
     }
@@ -1088,7 +1088,7 @@ public class RiveFileController implements Observable<Listener>, RefCount {
             Function0<Unit> onStart = getOnStart();
             if (onStart != null) {
                 onStart.invoke();
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
         }
     }
@@ -1100,7 +1100,7 @@ public class RiveFileController implements Observable<Listener>, RefCount {
             Function0<Unit> onStart = getOnStart();
             if (onStart != null) {
                 onStart.invoke();
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
         }
     }
@@ -1112,7 +1112,7 @@ public class RiveFileController implements Observable<Listener>, RefCount {
             Function0<Unit> onStart = getOnStart();
             if (onStart != null) {
                 onStart.invoke();
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
         }
     }
@@ -1242,7 +1242,7 @@ public class RiveFileController implements Observable<Listener>, RefCount {
             Function0<Unit> onStart = getOnStart();
             if (onStart != null) {
                 onStart.invoke();
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
         }
     }
@@ -1501,7 +1501,7 @@ public class RiveFileController implements Observable<Listener>, RefCount {
             Function0<Unit> onStart = getOnStart();
             if (onStart != null) {
                 onStart.invoke();
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
         }
         notifyPlay(animationInstance);

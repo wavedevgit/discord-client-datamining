@@ -19,22 +19,22 @@ import java.lang.ref.WeakReference;
 public class f1 extends n0 {
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f1652c = false;
+    private static boolean f1696c = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private final WeakReference f1653b;
+    private final WeakReference f1697b;
 
     public f1(Context context, Resources resources) {
         super(resources);
-        this.f1653b = new WeakReference(context);
+        this.f1697b = new WeakReference(context);
     }
 
     public static boolean b() {
-        return f1652c;
+        return f1696c;
     }
 
     public static void c(boolean z10) {
-        f1652c = z10;
+        f1696c = z10;
     }
 
     public static boolean d() {
@@ -229,7 +229,7 @@ public class f1 extends n0 {
 
     @Override // android.content.res.Resources
     public Drawable getDrawable(int i10) {
-        Context context = (Context) this.f1653b.get();
+        Context context = (Context) this.f1697b.get();
         if (context != null) {
             return m0.g().s(context, this, i10);
         }

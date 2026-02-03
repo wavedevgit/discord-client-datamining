@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/ServerIconCoincordExample.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52735: for (var _fun52735_ip = 0;;) switch (_fun52735_ip) {
+        _fun52841: for (var _fun52841_ip = 0;;) switch (_fun52841_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52735_ip = 32;
-                    continue _fun52735
+                    _fun52841_ip = 32;
+                    continue _fun52841
                 }
             case 29:
                 var9 = 100;
             case 32:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52735_ip = 44;
-                    continue _fun52735
+                    _fun52841_ip = 44;
+                    continue _fun52841
                 }
             case 41:
                 var7 = 100;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ServerIconCoincordExample = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4669, 6292, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4699, 6323, 2]);

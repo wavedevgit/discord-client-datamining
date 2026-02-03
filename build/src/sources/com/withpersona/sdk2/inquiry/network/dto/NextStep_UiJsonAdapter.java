@@ -60,21 +60,21 @@ public final class NextStep_UiJsonAdapter extends h {
         StepStyles.UiStepStyle uiStepStyle = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw sm.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+                    throw tm.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
                 }
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 config = (NextStep.Ui.Config) this.configAdapter.fromJson(reader);
                 if (config == null) {
-                    throw sm.c.x("config", "config", reader);
+                    throw tm.c.x("config", "config", reader);
                 }
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 uiStepStyle = (StepStyles.UiStepStyle) this.nullableUiStepStyleAdapter.fromJson(reader);
                 i10 = -5;
             }
@@ -85,13 +85,13 @@ public final class NextStep_UiJsonAdapter extends h {
                 if (config != null) {
                     return new NextStep.Ui(str, config, uiStepStyle);
                 }
-                throw sm.c.o("config", "config", reader);
+                throw tm.c.o("config", "config", reader);
             }
-            throw sm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+            throw tm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
         }
         Constructor<NextStep.Ui> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Ui.class.getDeclaredConstructor(String.class, NextStep.Ui.Config.class, StepStyles.UiStepStyle.class, Integer.TYPE, sm.c.f49097c);
+            constructor = NextStep.Ui.class.getDeclaredConstructor(String.class, NextStep.Ui.Config.class, StepStyles.UiStepStyle.class, Integer.TYPE, tm.c.f49935c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -101,9 +101,9 @@ public final class NextStep_UiJsonAdapter extends h {
                 Intrinsics.checkNotNullExpressionValue(newInstance, "newInstance(...)");
                 return newInstance;
             }
-            throw sm.c.o("config", "config", reader);
+            throw tm.c.o("config", "config", reader);
         }
-        throw sm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw tm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -111,11 +111,11 @@ public final class NextStep_UiJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (ui2 != null) {
             writer.l();
-            writer.A0(StackTraceHelper.NAME_KEY);
+            writer.t0(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(writer, ui2.getName());
-            writer.A0("config");
+            writer.t0("config");
             this.configAdapter.toJson(writer, ui2.getConfig());
-            writer.A0("styles");
+            writer.t0("styles");
             this.nullableUiStepStyleAdapter.toJson(writer, ui2.getStyles());
             writer.E();
             return;

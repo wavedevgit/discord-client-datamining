@@ -28,8 +28,8 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Malforme
     public GenericFileUploadErrorResponse.DocumentErrorResponse.MalformedPdfError.Details fromJson(@NotNull m mVar) {
         mVar.r();
         while (mVar.hasNext()) {
-            if (mVar.A0(this.options) == -1) {
-                mVar.E0();
+            if (mVar.t0(this.options) == -1) {
+                mVar.F0();
                 mVar.P();
             }
         }

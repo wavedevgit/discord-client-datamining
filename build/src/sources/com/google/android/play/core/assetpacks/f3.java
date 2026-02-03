@@ -3,19 +3,19 @@ package com.google.android.play.core.assetpacks;
 final class f3 extends t2 {
 
     /* renamed from: c  reason: collision with root package name */
-    final int f16776c;
+    final int f16405c;
 
     /* renamed from: d  reason: collision with root package name */
-    final long f16777d;
+    final long f16406d;
 
     /* renamed from: e  reason: collision with root package name */
-    final String f16778e;
+    final String f16407e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f3(int i10, String str, int i11, long j10, String str2) {
         super(i10, str);
-        this.f16776c = i11;
-        this.f16777d = j10;
-        this.f16778e = str2;
+        this.f16405c = i11;
+        this.f16406d = j10;
+        this.f16407e = str2;
     }
 }

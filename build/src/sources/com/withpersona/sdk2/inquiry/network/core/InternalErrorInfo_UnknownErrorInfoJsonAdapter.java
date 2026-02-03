@@ -33,26 +33,26 @@ public final class InternalErrorInfo_UnknownErrorInfoJsonAdapter extends h {
         mVar.r();
         String str = null;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
-                mVar.E0();
+            int t02 = mVar.t0(this.options);
+            if (t02 == -1) {
+                mVar.F0();
                 mVar.P();
-            } else if (A0 == 0 && (str = (String) this.stringAdapter.fromJson(mVar)) == null) {
-                throw sm.c.x("message", "message", mVar);
+            } else if (t02 == 0 && (str = (String) this.stringAdapter.fromJson(mVar)) == null) {
+                throw tm.c.x("message", "message", mVar);
             }
         }
         mVar.y();
         if (str != null) {
             return new InternalErrorInfo.UnknownErrorInfo(str);
         }
-        throw sm.c.o("message", "message", mVar);
+        throw tm.c.o("message", "message", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, InternalErrorInfo.UnknownErrorInfo unknownErrorInfo) {
         if (unknownErrorInfo != null) {
             tVar.l();
-            tVar.A0("message");
+            tVar.t0("message");
             this.stringAdapter.toJson(tVar, unknownErrorInfo.getMessage());
             tVar.E();
             return;

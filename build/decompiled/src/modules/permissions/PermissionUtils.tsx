@@ -9,21 +9,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var0 = function arg0() {
-        _fun109135: for (var _fun109135_ip = 0;;) switch (_fun109135_ip) {
+        _fun109084: for (var _fun109084_ip = 0;;) switch (_fun109084_ip) {
             case 0:
                 var0 = arg0;
                 var1 = arguments[1];
                 var2 = undefined;
                 if (!(var1 === var2)) {
-                    _fun109135_ip = 14;
-                    continue _fun109135
+                    _fun109084_ip = 14;
+                    continue _fun109084
                 }
             case 12:
                 var1 = false;
             case 14:
                 if (var1) {
-                    _fun109135_ip = 48;
-                    continue _fun109135
+                    _fun109084_ip = 48;
+                    continue _fun109084
                 }
             case 17:
                 var3 = var0.permissions;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot5 = var0;
     var3 = function arg0() {
-        _fun109139: for (var _fun109139_ip = 0;;) switch (_fun109139_ip) {
+        _fun109088: for (var _fun109088_ip = 0;;) switch (_fun109088_ip) {
             case 0:
                 var8 = arg0;
                 var0 = {};
@@ -395,14 +395,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var11.bind(var6)(var5);
                 var5 = var5.t;
                 if (var4) {
-                    _fun109139_ip = 1600;
-                    continue _fun109139
+                    _fun109088_ip = 1600;
+                    continue _fun109088
                 }
             case 1587:
                 var4 = var5.pBNv6i;
                 var4 = var9.bind(var10)(var4);
-                _fun109139_ip = 1613;
-                continue _fun109139;
+                _fun109088_ip = 1613;
+                continue _fun109088;
             case 1600:
                 var5 = var5["9TxXwb"];
                 var4 = var9.bind(var10)(var5);
@@ -415,13 +415,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var9.bind(var6)(var5);
                 var5 = var5.t;
                 if (var4) {
-                    _fun109139_ip = 1658;
-                    continue _fun109139
+                    _fun109088_ip = 1658;
+                    continue _fun109088
                 }
             case 1648:
                 var4 = var5.rwdPaE;
-                _fun109139_ip = 1666;
-                continue _fun109139;
+                _fun109088_ip = 1666;
+                continue _fun109088;
             case 1658:
                 var4 = var5.hGBAnw;
             case 1666:
@@ -640,14 +640,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var11.bind(var6)(var5);
                 var5 = var5.t;
                 if (var4) {
-                    _fun109139_ip = 2702;
-                    continue _fun109139
+                    _fun109088_ip = 2702;
+                    continue _fun109088
                 }
             case 2689:
                 var4 = var5.Y78KGC;
                 var4 = var9.bind(var10)(var4);
-                _fun109139_ip = 2713;
-                continue _fun109139;
+                _fun109088_ip = 2713;
+                continue _fun109088;
             case 2702:
                 var5 = var5.lEO7Wr;
                 var4 = var9.bind(var10)(var5);
@@ -664,14 +664,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var11.bind(var6)(var5);
                 var5 = var5.t;
                 if (var4) {
-                    _fun109139_ip = 2782;
-                    continue _fun109139
+                    _fun109088_ip = 2782;
+                    continue _fun109088
                 }
             case 2767:
                 var4 = var5.ryj6N5;
                 var4 = var9.bind(var10)(var4);
-                _fun109139_ip = 2793;
-                continue _fun109139;
+                _fun109088_ip = 2793;
+                continue _fun109088;
             case 2782:
                 var5 = var5.wdHpIC;
                 var4 = var9.bind(var10)(var5);
@@ -1014,15 +1014,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var5 == var8;
                 var4 = undefined;
                 if (var9) {
-                    _fun109139_ip = 4406;
-                    continue _fun109139
+                    _fun109088_ip = 4406;
+                    continue _fun109088
                 }
             case 4400:
                 var4 = var8.SOUNDBOARD_DESCRIPTION;
             case 4406:
                 if (!(var5 == var4)) {
-                    _fun109139_ip = 4440;
-                    continue _fun109139
+                    _fun109088_ip = 4440;
+                    continue _fun109088
                 }
             case 4410:
                 var10 = _closure1_slot0;
@@ -1105,15 +1105,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var5 == var8;
                 var4 = undefined;
                 if (var9) {
-                    _fun109139_ip = 4784;
-                    continue _fun109139
+                    _fun109088_ip = 4784;
+                    continue _fun109088
                 }
             case 4778:
                 var4 = var8.PRIORITY_SPEAKER_DESCRIPTION;
             case 4784:
                 if (!(var5 == var4)) {
-                    _fun109139_ip = 4818;
-                    continue _fun109139
+                    _fun109088_ip = 4818;
+                    continue _fun109088
                 }
             case 4788:
                 var8 = _closure1_slot0;
@@ -1250,8 +1250,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'string';
                 var4 = typeof var4;
                 if (!(var5 !== var4)) {
-                    _fun109139_ip = 5474;
-                    continue _fun109139
+                    _fun109088_ip = 5474;
+                    continue _fun109088
                 }
             case 5417:
                 var5 = _closure1_slot0;
@@ -1266,8 +1266,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4.UJxMrK;
                 var4 = {};
                 var4 = var8.bind(var9)(var5, var4);
-                _fun109139_ip = 5502;
-                continue _fun109139;
+                _fun109088_ip = 5502;
+                continue _fun109088;
             case 5474:
                 var8 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -1456,7 +1456,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot6 = var3;
     var0 = function arg0, arg1() {
-        _fun109140: for (var _fun109140_ip = 0;;) switch (_fun109140_ip) {
+        _fun109089: for (var _fun109089_ip = 0;;) switch (_fun109089_ip) {
             case 0:
                 var0 = _closure1_slot3;
                 var0 = var0.VIEW_CHANNEL;
@@ -1483,8 +1483,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = arg1;
                 var0 = var0.showCreatorMonetizationAnalyticsPermission;
                 if (!var0) {
-                    _fun109140_ip = 137;
-                    continue _fun109140
+                    _fun109089_ip = 137;
+                    continue _fun109089
                 }
             case 117:
                 var1 = var5.push;
@@ -1570,101 +1570,84 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var0;
     var0 = function arg0, arg1() {
-        _fun109142: for (var _fun109142_ip = 0;;) switch (_fun109142_ip) {
+        _fun109091: for (var _fun109091_ip = 0;;) switch (_fun109091_ip) {
             case 0:
-                var1 = arg1;
-                var2 = _closure1_slot3;
-                var2 = var2.SEND_MESSAGES;
-                var6 = new Array(19);
-                var6[0] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.SEND_MESSAGES_IN_THREADS;
-                var6[1] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.CREATE_PUBLIC_THREADS;
-                var6[2] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.CREATE_PRIVATE_THREADS;
-                var6[3] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.EMBED_LINKS;
-                var6[4] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.ATTACH_FILES;
-                var6[5] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.ADD_REACTIONS;
-                var6[6] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.USE_EXTERNAL_EMOJIS;
-                var6[7] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.USE_EXTERNAL_STICKERS;
-                var6[8] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.USE_EXTERNAL_SOUNDS;
-                var6[9] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.MENTION_EVERYONE;
-                var6[10] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.MANAGE_MESSAGES;
-                var6[11] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.PIN_MESSAGES;
-                var6[12] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.BYPASS_SLOWMODE;
-                var6[13] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.MANAGE_THREADS;
-                var6[14] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.READ_MESSAGE_HISTORY;
-                var6[15] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.SEND_TTS_MESSAGES;
-                var6[16] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.SEND_VOICE_MESSAGES;
-                var6[17] = var2;
-                var2 = _closure1_slot3;
-                var2 = var2.SEND_POLLS;
-                var6[18] = var2;
-                var4 = var1.inSoundmojiExperiment;
-                var2 = var6;
-                if (var4) {
-                    _fun109142_ip = 307;
-                    continue _fun109142
+                var0 = _closure1_slot3;
+                var0 = var0.SEND_MESSAGES;
+                var2 = new Array(19);
+                var2[0] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.SEND_MESSAGES_IN_THREADS;
+                var2[1] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.CREATE_PUBLIC_THREADS;
+                var2[2] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.CREATE_PRIVATE_THREADS;
+                var2[3] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.EMBED_LINKS;
+                var2[4] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.ATTACH_FILES;
+                var2[5] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.ADD_REACTIONS;
+                var2[6] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.USE_EXTERNAL_EMOJIS;
+                var2[7] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.USE_EXTERNAL_STICKERS;
+                var2[8] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.USE_EXTERNAL_SOUNDS;
+                var2[9] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.MENTION_EVERYONE;
+                var2[10] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.MANAGE_MESSAGES;
+                var2[11] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.PIN_MESSAGES;
+                var2[12] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.BYPASS_SLOWMODE;
+                var2[13] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.MANAGE_THREADS;
+                var2[14] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.READ_MESSAGE_HISTORY;
+                var2[15] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.SEND_TTS_MESSAGES;
+                var2[16] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.SEND_VOICE_MESSAGES;
+                var2[17] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.SEND_POLLS;
+                var2[18] = var0;
+                var0 = arg1;
+                var0 = var0.inSoundmojiExperiment;
+                var5 = var2;
+                if (var0) {
+                    _fun109091_ip = 307;
+                    continue _fun109091
                 }
-            case 290:
-                var5 = var6.filter;
-                var4 = function(arg0) { // Environment: var0
+            case 288:
+                var1 = var2.filter;
+                var0 = function(arg0) { // Environment: var0
                     var0 = _closure1_slot3;
                     var1 = var0.USE_EXTERNAL_SOUNDS;
                     var0 = arg0;
                     var0 = var0 !== var1;
                     return var0;
                 };
-                var2 = var5.bind(var6)(var4);
-            case 307:
-                var1 = var1.inBypassSlowmodePermissionExperiment;
-                var5 = var2;
-                if (var1) {
-                    _fun109142_ip = 336;
-                    continue _fun109142
-                }
-            case 319:
-                var1 = var2.filter;
-                var0 = function(arg0) { // Environment: var0
-                    var0 = _closure1_slot3;
-                    var1 = var0.BYPASS_SLOWMODE;
-                    var0 = arg0;
-                    var0 = var0 !== var1;
-                    return var0;
-                };
                 var5 = var1.bind(var2)(var0);
-            case 336:
+            case 307:
                 var2 = _closure1_slot4;
                 var0 = {};
                 var8 = _closure1_slot0;
@@ -1806,7 +1789,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.getGuildPermissionSpec = var3;
     var3 = function arg0() {
-        _fun109147: for (var _fun109147_ip = 0;;) switch (_fun109147_ip) {
+        _fun109095: for (var _fun109095_ip = 0;;) switch (_fun109095_ip) {
             case 0:
                 var9 = arg0;
                 var0 = _closure1_slot6;
@@ -1830,8 +1813,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[4] = var1;
                 var1 = var9.showStageChannelPermissions;
                 if (!var1) {
-                    _fun109147_ip = 217;
-                    continue _fun109147
+                    _fun109095_ip = 217;
+                    continue _fun109095
                 }
             case 97:
                 var2 = var0.push;
@@ -1915,13 +1898,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateGuildPermissionSpec = var3;
     var3 = function arg0, arg1() {
-        _fun109148: for (var _fun109148_ip = 0;;) switch (_fun109148_ip) {
+        _fun109096: for (var _fun109096_ip = 0;;) switch (_fun109096_ip) {
             case 0:
                 var1 = arguments[2];
                 var4 = undefined;
                 if (!(var1 === var4)) {
-                    _fun109148_ip = 21;
-                    continue _fun109148
+                    _fun109096_ip = 21;
+                    continue _fun109096
                 }
             case 9:
                 var0 = {};
@@ -1935,14 +1918,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot5;
                 var2 = null;
                 if (!(var2 != var1)) {
-                    _fun109148_ip = 52;
-                    continue _fun109148
+                    _fun109096_ip = 52;
+                    continue _fun109096
                 }
             case 43:
                 var1 = var1.showManageWebhooks;
                 if (var1) {
-                    _fun109148_ip = 100;
-                    continue _fun109148
+                    _fun109096_ip = 100;
+                    continue _fun109096
                 }
             case 52:
                 var1 = _closure1_slot3;
@@ -1955,8 +1938,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot3;
                 var1 = var1.MANAGE_ROLES;
                 var2[2] = var1;
-                _fun109148_ip = 163;
-                continue _fun109148;
+                _fun109096_ip = 163;
+                continue _fun109096;
             case 100:
                 var1 = _closure1_slot3;
                 var6 = var1.VIEW_CHANNEL;
@@ -1997,75 +1980,75 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateChannelMembershipSection = var3;
     var3 = function arg0, arg1, arg2() {
-        _fun109150: for (var _fun109150_ip = 0;;) switch (_fun109150_ip) {
+        _fun109098: for (var _fun109098_ip = 0;;) switch (_fun109098_ip) {
             case 0:
                 var2 = arg2;
                 var3 = _closure1_slot3;
                 var3 = var3.SEND_MESSAGES;
-                var6 = new Array(19);
-                var6[0] = var3;
+                var5 = new Array(19);
+                var5[0] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.SEND_MESSAGES_IN_THREADS;
-                var6[1] = var3;
+                var5[1] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.CREATE_PUBLIC_THREADS;
-                var6[2] = var3;
+                var5[2] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.CREATE_PRIVATE_THREADS;
-                var6[3] = var3;
+                var5[3] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.EMBED_LINKS;
-                var6[4] = var3;
+                var5[4] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.ATTACH_FILES;
-                var6[5] = var3;
+                var5[5] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.ADD_REACTIONS;
-                var6[6] = var3;
+                var5[6] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.USE_EXTERNAL_EMOJIS;
-                var6[7] = var3;
+                var5[7] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.USE_EXTERNAL_STICKERS;
-                var6[8] = var3;
+                var5[8] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.USE_EXTERNAL_SOUNDS;
-                var6[9] = var3;
+                var5[9] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.MENTION_EVERYONE;
-                var6[10] = var3;
+                var5[10] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.MANAGE_MESSAGES;
-                var6[11] = var3;
+                var5[11] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.PIN_MESSAGES;
-                var6[12] = var3;
+                var5[12] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.BYPASS_SLOWMODE;
-                var6[13] = var3;
+                var5[13] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.MANAGE_THREADS;
-                var6[14] = var3;
+                var5[14] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.READ_MESSAGE_HISTORY;
-                var6[15] = var3;
+                var5[15] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.SEND_TTS_MESSAGES;
-                var6[16] = var3;
+                var5[16] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.SEND_VOICE_MESSAGES;
-                var6[17] = var3;
+                var5[17] = var3;
                 var3 = _closure1_slot3;
                 var3 = var3.SEND_POLLS;
-                var6[18] = var3;
+                var5[18] = var3;
                 var3 = var2.inSoundmojiExperiment;
-                var5 = var6;
+                var6 = var5;
                 if (var3) {
-                    _fun109150_ip = 307;
-                    continue _fun109150
+                    _fun109098_ip = 307;
+                    continue _fun109098
                 }
             case 290:
-                var4 = var6.filter;
+                var4 = var5.filter;
                 var3 = function(arg0) { // Environment: var0
                     var0 = _closure1_slot3;
                     var1 = var0.USE_EXTERNAL_SOUNDS;
@@ -2073,23 +2056,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0 !== var1;
                     return var0;
                 };
-                var5 = var4.bind(var6)(var3);
+                var6 = var4.bind(var5)(var3);
             case 307:
                 var3 = var2.showPrivateThreads;
                 if (!var3) {
-                    _fun109150_ip = 322;
-                    continue _fun109150
+                    _fun109098_ip = 322;
+                    continue _fun109098
                 }
             case 316:
                 var3 = var2.showCreateThreads;
             case 322:
-                var6 = var5;
+                var5 = var6;
                 if (var3) {
-                    _fun109150_ip = 345;
-                    continue _fun109150
+                    _fun109098_ip = 345;
+                    continue _fun109098
                 }
             case 328:
-                var4 = var5.filter;
+                var4 = var6.filter;
                 var3 = function(arg0) { // Environment: var0
                     var0 = _closure1_slot3;
                     var1 = var0.CREATE_PRIVATE_THREADS;
@@ -2097,42 +2080,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0 !== var1;
                     return var0;
                 };
-                var6 = var4.bind(var5)(var3);
+                var5 = var4.bind(var6)(var3);
             case 345:
                 var3 = var2.showCreateThreads;
-                var5 = var6;
+                var4 = var5;
                 if (var3) {
-                    _fun109150_ip = 374;
-                    continue _fun109150
+                    _fun109098_ip = 374;
+                    continue _fun109098
                 }
             case 357:
-                var4 = var6.filter;
-                var3 = function(arg0) { // Environment: var0
+                var3 = var5.filter;
+                var0 = function(arg0) { // Environment: var0
                     var0 = _closure1_slot3;
                     var1 = var0.CREATE_PUBLIC_THREADS;
                     var0 = arg0;
                     var0 = var0 !== var1;
                     return var0;
                 };
-                var5 = var4.bind(var6)(var3);
-            case 374:
-                var3 = var2.inBypassSlowmodePermissionExperiment;
-                var4 = var5;
-                if (var3) {
-                    _fun109150_ip = 403;
-                    continue _fun109150
-                }
-            case 386:
-                var3 = var5.filter;
-                var0 = function(arg0) { // Environment: var0
-                    var0 = _closure1_slot3;
-                    var1 = var0.BYPASS_SLOWMODE;
-                    var0 = arg0;
-                    var0 = var0 !== var1;
-                    return var0;
-                };
                 var4 = var3.bind(var5)(var0);
-            case 403:
+            case 374:
                 var0 = {};
                 var3 = arg1;
                 var0.title = var3;
@@ -2194,86 +2160,69 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateChannelVoiceSection = var3;
     var3 = function arg0, arg1, arg2() {
-        _fun109156: for (var _fun109156_ip = 0;;) switch (_fun109156_ip) {
+        _fun109103: for (var _fun109103_ip = 0;;) switch (_fun109103_ip) {
             case 0:
                 var2 = arg2;
-                var3 = _closure1_slot3;
-                var3 = var3.SEND_MESSAGES;
-                var6 = new Array(14);
-                var6[0] = var3;
-                var3 = _closure1_slot3;
-                var3 = var3.EMBED_LINKS;
-                var6[1] = var3;
-                var3 = _closure1_slot3;
-                var3 = var3.ATTACH_FILES;
-                var6[2] = var3;
-                var3 = _closure1_slot3;
-                var3 = var3.ADD_REACTIONS;
-                var6[3] = var3;
-                var3 = _closure1_slot3;
-                var3 = var3.USE_EXTERNAL_EMOJIS;
-                var6[4] = var3;
-                var3 = _closure1_slot3;
-                var3 = var3.USE_EXTERNAL_STICKERS;
-                var6[5] = var3;
-                var3 = _closure1_slot3;
-                var3 = var3.USE_EXTERNAL_SOUNDS;
-                var6[6] = var3;
-                var3 = _closure1_slot3;
-                var3 = var3.MENTION_EVERYONE;
-                var6[7] = var3;
-                var3 = _closure1_slot3;
-                var3 = var3.MANAGE_MESSAGES;
-                var6[8] = var3;
-                var3 = _closure1_slot3;
-                var3 = var3.BYPASS_SLOWMODE;
-                var6[9] = var3;
-                var3 = _closure1_slot3;
-                var3 = var3.READ_MESSAGE_HISTORY;
-                var6[10] = var3;
-                var3 = _closure1_slot3;
-                var3 = var3.SEND_TTS_MESSAGES;
-                var6[11] = var3;
-                var3 = _closure1_slot3;
-                var3 = var3.SEND_VOICE_MESSAGES;
-                var6[12] = var3;
-                var3 = _closure1_slot3;
-                var3 = var3.SEND_POLLS;
-                var6[13] = var3;
-                var3 = var2.inSoundmojiExperiment;
-                var5 = var6;
-                if (var3) {
-                    _fun109156_ip = 237;
-                    continue _fun109156
+                var0 = _closure1_slot3;
+                var0 = var0.SEND_MESSAGES;
+                var5 = new Array(14);
+                var5[0] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.EMBED_LINKS;
+                var5[1] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.ATTACH_FILES;
+                var5[2] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.ADD_REACTIONS;
+                var5[3] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.USE_EXTERNAL_EMOJIS;
+                var5[4] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.USE_EXTERNAL_STICKERS;
+                var5[5] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.USE_EXTERNAL_SOUNDS;
+                var5[6] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.MENTION_EVERYONE;
+                var5[7] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.MANAGE_MESSAGES;
+                var5[8] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.BYPASS_SLOWMODE;
+                var5[9] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.READ_MESSAGE_HISTORY;
+                var5[10] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.SEND_TTS_MESSAGES;
+                var5[11] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.SEND_VOICE_MESSAGES;
+                var5[12] = var0;
+                var0 = _closure1_slot3;
+                var0 = var0.SEND_POLLS;
+                var5[13] = var0;
+                var0 = var2.inSoundmojiExperiment;
+                var4 = var5;
+                if (var0) {
+                    _fun109103_ip = 237;
+                    continue _fun109103
                 }
-            case 220:
-                var4 = var6.filter;
-                var3 = function(arg0) { // Environment: var0
+            case 218:
+                var3 = var5.filter;
+                var0 = function(arg0) { // Environment: var0
                     var0 = _closure1_slot3;
                     var1 = var0.USE_EXTERNAL_SOUNDS;
                     var0 = arg0;
                     var0 = var0 !== var1;
                     return var0;
                 };
-                var5 = var4.bind(var6)(var3);
-            case 237:
-                var3 = var2.inBypassSlowmodePermissionExperiment;
-                var4 = var5;
-                if (var3) {
-                    _fun109156_ip = 266;
-                    continue _fun109156
-                }
-            case 249:
-                var3 = var5.filter;
-                var0 = function(arg0) { // Environment: var0
-                    var0 = _closure1_slot3;
-                    var1 = var0.BYPASS_SLOWMODE;
-                    var0 = arg0;
-                    var0 = var0 !== var1;
-                    return var0;
-                };
                 var4 = var3.bind(var5)(var0);
-            case 266:
+            case 237:
                 var0 = {};
                 var3 = arg1;
                 var0.title = var3;
@@ -2289,13 +2238,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateChannelVoiceChatSection = var3;
     var3 = function arg0, arg1() {
-        _fun109159: for (var _fun109159_ip = 0;;) switch (_fun109159_ip) {
+        _fun109105: for (var _fun109105_ip = 0;;) switch (_fun109105_ip) {
             case 0:
                 var2 = arguments[2];
                 var4 = undefined;
                 if (!(var2 === var4)) {
-                    _fun109159_ip = 21;
-                    continue _fun109159
+                    _fun109105_ip = 21;
+                    continue _fun109105
                 }
             case 9:
                 var0 = {};
@@ -2314,8 +2263,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2.showActivities;
                 var2 = null;
                 if (!var6) {
-                    _fun109159_ip = 76;
-                    continue _fun109159
+                    _fun109105_ip = 76;
+                    continue _fun109105
                 }
             case 66:
                 var6 = _closure1_slot3;
@@ -2341,7 +2290,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateChannelAppsSection = var3;
     var3 = function arg0, arg1, arg2() {
-        _fun109160: for (var _fun109160_ip = 0;;) switch (_fun109160_ip) {
+        _fun109106: for (var _fun109106_ip = 0;;) switch (_fun109106_ip) {
             case 0:
                 var0 = {};
                 var1 = arg1;
@@ -2351,8 +2300,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.CONNECT;
                 var1 = arg2;
                 if (var1) {
-                    _fun109160_ip = 70;
-                    continue _fun109160
+                    _fun109106_ip = 70;
+                    continue _fun109106
                 }
             case 32:
                 var3 = new Array(3);
@@ -2363,8 +2312,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot3;
                 var1 = var1.MOVE_MEMBERS;
                 var3[2] = var1;
-                _fun109160_ip = 123;
-                continue _fun109160;
+                _fun109106_ip = 123;
+                continue _fun109106;
             case 70:
                 var1 = new Array(4);
                 var1[0] = var5;
@@ -2426,28 +2375,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateChannelEventsSection = var3;
     var3 = function arg0() {
-        _fun109163: for (var _fun109163_ip = 0;;) switch (_fun109163_ip) {
+        _fun109109: for (var _fun109109_ip = 0;;) switch (_fun109109_ip) {
             case 0:
                 var3 = arg0;
                 var1 = null;
                 var0 = var3;
                 if (!(var1 != var0)) {
-                    _fun109163_ip = 92;
-                    continue _fun109163
+                    _fun109109_ip = 92;
+                    continue _fun109109
                 }
             case 12:
                 var4 = typeof var3;
                 var1 = 'string';
                 if (!(var1 !== var4)) {
-                    _fun109163_ip = 79;
-                    continue _fun109163
+                    _fun109109_ip = 79;
+                    continue _fun109109
                 }
             case 23:
                 var2 = 'function';
                 var1 = var3;
                 if (!(var2 === var4)) {
-                    _fun109163_ip = 77;
-                    continue _fun109163
+                    _fun109109_ip = 77;
+                    continue _fun109109
                 }
             case 34:
                 var5 = _closure1_slot0;
@@ -2461,8 +2410,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = {};
                 var1 = var4.bind(var5)(var3, var2);
             case 77:
-                _fun109163_ip = 89;
-                continue _fun109163;
+                _fun109109_ip = 89;
+                continue _fun109109;
             case 79:
                 var2 = var3.trim;
                 var1 = var2.bind(var3)();
@@ -2473,199 +2422,137 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.renderDescription = var3;
-    var1 = function arg0, arg1, arg2() {
-        _fun109164: for (var _fun109164_ip = 0;;) switch (_fun109164_ip) {
+    var1 = function arg0, arg1() {
+        _fun109110: for (var _fun109110_ip = 0;;) switch (_fun109110_ip) {
             case 0:
-                var5 = arg0;
-                var1 = arg1;
-                var2 = _closure1_slot1;
-                var4 = _closure1_slot2;
+                var4 = arg0;
+                var1 = _closure1_slot1;
+                var3 = _closure1_slot2;
                 var0 = 3;
-                var0 = var4[var0];
-                var7 = undefined;
-                var4 = var2.bind(var7)(var0);
-                var2 = var4.getCurrentConfig;
+                var0 = var3[var0];
+                var6 = undefined;
+                var3 = var1.bind(var6)(var0);
+                var1 = var3.getCurrentConfig;
                 var0 = {};
-                var6 = arg2;
-                var0.guildId = var6;
-                var6 = 'getMigrationWarning';
-                var0.location = var6;
-                var0 = var2.bind(var4)(var0);
+                var5 = arg1;
+                var0.guildId = var5;
+                var5 = 'getMigrationWarning';
+                var0.location = var5;
+                var0 = var1.bind(var3)(var0);
                 var0 = var0.enabled;
-                var2 = _closure1_slot3;
+                var1 = _closure1_slot3;
+                var1 = var1.MANAGE_CHANNELS;
                 if (var0) {
-                    _fun109164_ip = 315;
-                    continue _fun109164
-                }
-            case 74:
-                if (var1) {
-                    _fun109164_ip = 151;
-                    continue _fun109164
+                    _fun109110_ip = 232;
+                    continue _fun109110
                 }
             case 77:
-                var4 = var2.MANAGE_MESSAGES;
+                if (!(var4 !== var1)) {
+                    _fun109110_ip = 170;
+                    continue _fun109110
+                }
+            case 81:
+                var0 = _closure1_slot3;
+                var0 = var0.MANAGE_THREADS;
+                if (!(var4 !== var0)) {
+                    _fun109110_ip = 170;
+                    continue _fun109110
+                }
+            case 95:
+                var0 = _closure1_slot3;
+                var3 = var0.MANAGE_MESSAGES;
                 var0 = null;
-                if (!(var5 === var4)) {
-                    _fun109164_ip = 146;
-                    continue _fun109164
+                if (!(var4 === var3)) {
+                    _fun109110_ip = 168;
+                    continue _fun109110
                 }
-            case 89:
-                var9 = _closure1_slot0;
-                var10 = _closure1_slot2;
-                var4 = 1;
-                var6 = var10[var4];
-                var6 = var9.bind(var7)(var6);
-                var8 = var6.intl;
-                var6 = var8.string;
-                var4 = var10[var4];
-                var4 = var9.bind(var7)(var4);
-                var4 = var4.t;
-                var4 = var4["2XIdPp"];
-                var0 = var6.bind(var8)(var4);
-            case 146:
-                _fun109164_ip = 310;
-                continue _fun109164;
-            case 151:
-                var4 = var2.MANAGE_CHANNELS;
-                if (!(var5 !== var4)) {
-                    _fun109164_ip = 250;
-                    continue _fun109164
-                }
-            case 161:
-                var4 = _closure1_slot3;
-                var4 = var4.MANAGE_THREADS;
-                if (!(var5 !== var4)) {
-                    _fun109164_ip = 250;
-                    continue _fun109164
-                }
-            case 175:
-                var4 = _closure1_slot3;
-                var6 = var4.MANAGE_MESSAGES;
-                var4 = null;
-                if (!(var5 === var6)) {
-                    _fun109164_ip = 248;
-                    continue _fun109164
-                }
-            case 191:
-                var10 = _closure1_slot0;
-                var11 = _closure1_slot2;
-                var6 = 1;
-                var8 = var11[var6];
-                var8 = var10.bind(var7)(var8);
-                var9 = var8.intl;
-                var8 = var9.string;
-                var6 = var11[var6];
-                var6 = var10.bind(var7)(var6);
-                var6 = var6.t;
-                var6 = var6.zSc2tb;
-                var4 = var8.bind(var9)(var6);
-            case 248:
-                _fun109164_ip = 307;
-                continue _fun109164;
-            case 250:
-                var10 = _closure1_slot0;
-                var11 = _closure1_slot2;
-                var6 = 1;
-                var8 = var11[var6];
-                var8 = var10.bind(var7)(var8);
-                var9 = var8.intl;
-                var8 = var9.string;
-                var6 = var11[var6];
-                var6 = var10.bind(var7)(var6);
-                var6 = var6.t;
-                var6 = var6.Han3PH;
-                var4 = var8.bind(var9)(var6);
-            case 307:
-                var0 = var4;
-            case 310:
-                _fun109164_ip = 554;
-                continue _fun109164;
-            case 315:
-                if (var1) {
-                    _fun109164_ip = 392;
-                    continue _fun109164
-                }
-            case 318:
-                var4 = var2.MANAGE_MESSAGES;
-                var1 = null;
-                if (!(var5 === var4)) {
-                    _fun109164_ip = 387;
-                    continue _fun109164
-                }
-            case 330:
-                var9 = _closure1_slot0;
-                var10 = _closure1_slot2;
-                var4 = 1;
-                var6 = var10[var4];
-                var6 = var9.bind(var7)(var6);
-                var8 = var6.intl;
-                var6 = var8.string;
-                var4 = var10[var4];
-                var4 = var9.bind(var7)(var4);
-                var4 = var4.t;
-                var4 = var4.bU1J1V;
-                var1 = var6.bind(var8)(var4);
-            case 387:
-                _fun109164_ip = 551;
-                continue _fun109164;
-            case 392:
-                var2 = var2.MANAGE_CHANNELS;
-                if (!(var5 !== var2)) {
-                    _fun109164_ip = 491;
-                    continue _fun109164
-                }
-            case 402:
-                var2 = _closure1_slot3;
-                var2 = var2.MANAGE_THREADS;
-                if (!(var5 !== var2)) {
-                    _fun109164_ip = 491;
-                    continue _fun109164
-                }
-            case 416:
-                var2 = _closure1_slot3;
-                var4 = var2.MANAGE_MESSAGES;
-                var2 = null;
-                if (!(var5 === var4)) {
-                    _fun109164_ip = 489;
-                    continue _fun109164
-                }
-            case 432:
+            case 111:
                 var8 = _closure1_slot0;
                 var9 = _closure1_slot2;
-                var4 = 1;
-                var5 = var9[var4];
-                var5 = var8.bind(var7)(var5);
-                var6 = var5.intl;
-                var5 = var6.string;
-                var4 = var9[var4];
-                var4 = var8.bind(var7)(var4);
-                var4 = var4.t;
-                var4 = var4["62sGhW"];
-                var2 = var5.bind(var6)(var4);
-            case 489:
-                _fun109164_ip = 548;
-                continue _fun109164;
-            case 491:
-                var6 = _closure1_slot0;
+                var3 = 1;
+                var5 = var9[var3];
+                var5 = var8.bind(var6)(var5);
+                var7 = var5.intl;
+                var5 = var7.string;
+                var3 = var9[var3];
+                var3 = var8.bind(var6)(var3);
+                var3 = var3.t;
+                var3 = var3.zSc2tb;
+                var0 = var5.bind(var7)(var3);
+            case 168:
+                _fun109110_ip = 227;
+                continue _fun109110;
+            case 170:
+                var8 = _closure1_slot0;
+                var9 = _closure1_slot2;
+                var3 = 1;
+                var5 = var9[var3];
+                var5 = var8.bind(var6)(var5);
+                var7 = var5.intl;
+                var5 = var7.string;
+                var3 = var9[var3];
+                var3 = var8.bind(var6)(var3);
+                var3 = var3.t;
+                var3 = var3.Han3PH;
+                var0 = var5.bind(var7)(var3);
+            case 227:
+                _fun109110_ip = 385;
+                continue _fun109110;
+            case 232:
+                if (!(var4 !== var1)) {
+                    _fun109110_ip = 325;
+                    continue _fun109110
+                }
+            case 236:
+                var1 = _closure1_slot3;
+                var1 = var1.MANAGE_THREADS;
+                if (!(var4 !== var1)) {
+                    _fun109110_ip = 325;
+                    continue _fun109110
+                }
+            case 250:
+                var1 = _closure1_slot3;
+                var3 = var1.MANAGE_MESSAGES;
+                var1 = null;
+                if (!(var4 === var3)) {
+                    _fun109110_ip = 323;
+                    continue _fun109110
+                }
+            case 266:
+                var7 = _closure1_slot0;
                 var8 = _closure1_slot2;
                 var3 = 1;
                 var4 = var8[var3];
-                var4 = var6.bind(var7)(var4);
+                var4 = var7.bind(var6)(var4);
                 var5 = var4.intl;
                 var4 = var5.string;
                 var3 = var8[var3];
-                var3 = var6.bind(var7)(var3);
+                var3 = var7.bind(var6)(var3);
                 var3 = var3.t;
-                var3 = var3.JD3HnA;
-                var2 = var4.bind(var5)(var3);
-            case 548:
-                var1 = var2;
-            case 551:
+                var3 = var3["62sGhW"];
+                var1 = var4.bind(var5)(var3);
+            case 323:
+                _fun109110_ip = 382;
+                continue _fun109110;
+            case 325:
+                var5 = _closure1_slot0;
+                var7 = _closure1_slot2;
+                var2 = 1;
+                var3 = var7[var2];
+                var3 = var5.bind(var6)(var3);
+                var4 = var3.intl;
+                var3 = var4.string;
+                var2 = var7[var2];
+                var2 = var5.bind(var6)(var2);
+                var2 = var2.t;
+                var2 = var2.JD3HnA;
+                var1 = var3.bind(var4)(var2);
+            case 382:
                 var0 = var1;
-            case 554:
+            case 385:
                 return var0;
         }
     };
     var2.getMigrationWarning = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [483, 1234, 1304, 6501, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [483, 1234, 1304, 6532, 2]);

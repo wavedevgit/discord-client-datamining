@@ -105,9 +105,9 @@ public final class HorizontalStack_HorizontalStackComponentStyleJsonAdapter exte
         AttributeStyles.HorizontalStackGapStyle horizontalStackGapStyle = null;
         AttributeStyles.HorizontalStackWidthStyle horizontalStackWidthStyle = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -154,27 +154,27 @@ public final class HorizontalStack_HorizontalStackComponentStyleJsonAdapter exte
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (horizontalStackComponentStyle != null) {
             writer.l();
-            writer.A0(ViewProps.BACKGROUND_COLOR);
+            writer.t0(ViewProps.BACKGROUND_COLOR);
             this.nullableHorizontalStackBackgroundColorStyleAdapter.toJson(writer, horizontalStackComponentStyle.getBackgroundColor());
-            writer.A0(ViewProps.BORDER_WIDTH);
+            writer.t0(ViewProps.BORDER_WIDTH);
             this.nullableHorizontalStackBorderWidthStyleAdapter.toJson(writer, horizontalStackComponentStyle.getBorderWidth());
-            writer.A0(ViewProps.BORDER_COLOR);
+            writer.t0(ViewProps.BORDER_COLOR);
             this.nullableHorizontalStackBorderColorStyleAdapter.toJson(writer, horizontalStackComponentStyle.getBorderColor());
-            writer.A0("borderRadius");
+            writer.t0("borderRadius");
             this.nullableHorizontalStackBorderRadiusStyleAdapter.toJson(writer, horizontalStackComponentStyle.getBorderRadius());
-            writer.A0(ViewProps.PADDING);
+            writer.t0(ViewProps.PADDING);
             this.nullableHorizontalStackPaddingStyleAdapter.toJson(writer, horizontalStackComponentStyle.getPadding());
-            writer.A0(ViewProps.MARGIN);
+            writer.t0(ViewProps.MARGIN);
             this.nullableHorizontalStackMarginStyleAdapter.toJson(writer, horizontalStackComponentStyle.getMargin());
-            writer.A0("axis");
+            writer.t0("axis");
             this.nullableHorizontalStackAxisStyleAdapter.toJson(writer, horizontalStackComponentStyle.getAxis());
-            writer.A0("childSizes");
+            writer.t0("childSizes");
             this.nullableHorizontalStackChildSizesStyleAdapter.toJson(writer, horizontalStackComponentStyle.getChildSizes());
-            writer.A0("alignment");
+            writer.t0("alignment");
             this.nullableHorizontalStackAlignmentStyleAdapter.toJson(writer, horizontalStackComponentStyle.getAlignment());
-            writer.A0(ViewProps.GAP);
+            writer.t0(ViewProps.GAP);
             this.nullableHorizontalStackGapStyleAdapter.toJson(writer, horizontalStackComponentStyle.getGap());
-            writer.A0("width");
+            writer.t0("width");
             this.nullableHorizontalStackWidthStyleAdapter.toJson(writer, horizontalStackComponentStyle.getWidth());
             writer.E();
             return;

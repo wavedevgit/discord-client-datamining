@@ -15,28 +15,28 @@ import java.util.concurrent.TimeoutException;
 public class b extends d implements Runnable {
 
     /* renamed from: i  reason: collision with root package name */
-    private d0.a f21480i;
+    private d0.a f21056i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final BlockingQueue f21481o = new LinkedBlockingQueue(1);
+    private final BlockingQueue f21057o = new LinkedBlockingQueue(1);
 
     /* renamed from: p  reason: collision with root package name */
-    private final CountDownLatch f21482p = new CountDownLatch(1);
+    private final CountDownLatch f21058p = new CountDownLatch(1);
 
     /* renamed from: q  reason: collision with root package name */
-    private ListenableFuture f21483q;
+    private ListenableFuture f21059q;
 
     /* renamed from: r  reason: collision with root package name */
-    volatile ListenableFuture f21484r;
+    volatile ListenableFuture f21060r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ListenableFuture f21485d;
+        final /* synthetic */ ListenableFuture f21061d;
 
         a(ListenableFuture listenableFuture) {
-            this.f21485d = listenableFuture;
+            this.f21061d = listenableFuture;
         }
 
         @Override // java.lang.Runnable
@@ -44,7 +44,7 @@ public class b extends d implements Runnable {
             try {
                 try {
                     try {
-                        b.this.c(n.m(this.f21485d));
+                        b.this.c(n.m(this.f21061d));
                     } catch (CancellationException unused) {
                         b.this.cancel(false);
                     }
@@ -52,15 +52,15 @@ public class b extends d implements Runnable {
                     b.this.d(e10.getCause());
                 }
             } finally {
-                b.this.f21484r = null;
+                b.this.f21060r = null;
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(d0.a aVar, ListenableFuture listenableFuture) {
-        this.f21480i = (d0.a) b2.e.g(aVar);
-        this.f21483q = (ListenableFuture) b2.e.g(listenableFuture);
+        this.f21056i = (d0.a) b2.e.g(aVar);
+        this.f21059q = (ListenableFuture) b2.e.g(listenableFuture);
     }
 
     private void g(Future future, boolean z10) {
@@ -114,9 +114,9 @@ public class b extends d implements Runnable {
     @Override // d0.d, java.util.concurrent.Future
     public boolean cancel(boolean z10) {
         if (super.cancel(z10)) {
-            h(this.f21481o, Boolean.valueOf(z10));
-            g(this.f21483q, z10);
-            g(this.f21484r, z10);
+            h(this.f21057o, Boolean.valueOf(z10));
+            g(this.f21059q, z10);
+            g(this.f21060r, z10);
             return true;
         }
         return false;
@@ -125,12 +125,12 @@ public class b extends d implements Runnable {
     @Override // d0.d, java.util.concurrent.Future
     public Object get() {
         if (!isDone()) {
-            ListenableFuture listenableFuture = this.f21483q;
+            ListenableFuture listenableFuture = this.f21059q;
             if (listenableFuture != null) {
                 listenableFuture.get();
             }
-            this.f21482p.await();
-            ListenableFuture listenableFuture2 = this.f21484r;
+            this.f21058p.await();
+            ListenableFuture listenableFuture2 = this.f21060r;
             if (listenableFuture2 != null) {
                 listenableFuture2.get();
             }
@@ -165,11 +165,11 @@ public class b extends d implements Runnable {
                 try {
                     try {
                         try {
-                            ListenableFuture apply = this.f21480i.apply(n.m(this.f21483q));
-                            this.f21484r = apply;
+                            ListenableFuture apply = this.f21056i.apply(n.m(this.f21059q));
+                            this.f21060r = apply;
                             if (isCancelled()) {
-                                apply.cancel(((Boolean) i(this.f21481o)).booleanValue());
-                                this.f21484r = null;
+                                apply.cancel(((Boolean) i(this.f21057o)).booleanValue());
+                                this.f21060r = null;
                             } else {
                                 apply.a(new a(apply), c0.a.a());
                             }
@@ -182,9 +182,9 @@ public class b extends d implements Runnable {
                         r02 = r03;
                     }
                 } finally {
-                    this.f21480i = r03;
-                    this.f21483q = r03;
-                    this.f21482p.countDown();
+                    this.f21056i = r03;
+                    this.f21059q = r03;
+                    this.f21058p.countDown();
                 }
             } catch (CancellationException unused) {
                 cancel(false);
@@ -205,16 +205,16 @@ public class b extends d implements Runnable {
                 j10 = timeUnit2.convert(j10, timeUnit);
                 timeUnit = timeUnit2;
             }
-            ListenableFuture listenableFuture = this.f21483q;
+            ListenableFuture listenableFuture = this.f21059q;
             if (listenableFuture != null) {
                 long nanoTime = System.nanoTime();
                 listenableFuture.get(j10, timeUnit);
                 j10 -= Math.max(0L, System.nanoTime() - nanoTime);
             }
             long nanoTime2 = System.nanoTime();
-            if (this.f21482p.await(j10, timeUnit)) {
+            if (this.f21058p.await(j10, timeUnit)) {
                 j10 -= Math.max(0L, System.nanoTime() - nanoTime2);
-                ListenableFuture listenableFuture2 = this.f21484r;
+                ListenableFuture listenableFuture2 = this.f21060r;
                 if (listenableFuture2 != null) {
                     listenableFuture2.get(j10, timeUnit);
                 }

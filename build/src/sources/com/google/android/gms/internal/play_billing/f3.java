@@ -3,25 +3,25 @@ package com.google.android.gms.internal.play_billing;
 final class f3 implements s2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final v2 f15227a;
+    private final v2 f14856a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f15228b;
+    private final String f14857b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object[] f15229c;
+    private final Object[] f14858c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f15230d;
+    private final int f14859d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f3(v2 v2Var, String str, Object[] objArr) {
-        this.f15227a = v2Var;
-        this.f15228b = str;
-        this.f15229c = objArr;
+        this.f14856a = v2Var;
+        this.f14857b = str;
+        this.f14858c = objArr;
         char charAt = str.charAt(0);
         if (charAt < 55296) {
-            this.f15230d = charAt;
+            this.f14859d = charAt;
             return;
         }
         int i10 = charAt & 8191;
@@ -35,7 +35,7 @@ final class f3 implements s2 {
                 i12 += 13;
                 i11 = i13;
             } else {
-                this.f15230d = i10 | (charAt2 << i12);
+                this.f14859d = i10 | (charAt2 << i12);
                 return;
             }
         }
@@ -43,7 +43,7 @@ final class f3 implements s2 {
 
     @Override // com.google.android.gms.internal.play_billing.s2
     public final int a() {
-        int i10 = this.f15230d;
+        int i10 = this.f14859d;
         if ((i10 & 1) != 0) {
             return 1;
         }
@@ -52,21 +52,21 @@ final class f3 implements s2 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final String b() {
-        return this.f15228b;
+        return this.f14857b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final Object[] c() {
-        return this.f15229c;
+        return this.f14858c;
     }
 
     @Override // com.google.android.gms.internal.play_billing.s2
     public final v2 zza() {
-        return this.f15227a;
+        return this.f14856a;
     }
 
     @Override // com.google.android.gms.internal.play_billing.s2
     public final boolean zzb() {
-        return (this.f15230d & 2) == 2;
+        return (this.f14859d & 2) == 2;
     }
 }

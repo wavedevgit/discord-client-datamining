@@ -1,350 +1,199 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = function() {
-        _fun58663: for (var _fun58663_ip = 0;;) switch (_fun58663_ip) {
-            case 0:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var0 = var2.bind(var0)(var1);
-                var1 = var0.GLOBAL_OBJ;
-                var0 = 'fetch';
-                var0 = var0 in var1;
-                if (var0) {
-                    _fun58663_ip = 45;
-                    continue _fun58663
-                }
-            case 41:
-                var0 = false;
-                return var0;
-            case 45: // try_start_0
-                var0 = global;
-                var2 = var0.Headers;
-                var1 = var2.prototype;
-                var5 = Object.create(var1, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var1 = new var5[var2](var4);
-                var3 = var0.Request;
-                var1 = var3.prototype;
-                var5 = Object.create(var1, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var4 = 'http://www.example.com';
-                var1 = new var5[var3](var4, var3);
-                var1 = var0.Response;
-                var0 = var1.prototype;
-                var5 = Object.create(var0, {
-                    constructor: {
-                        value: var1
-                    }
-                });
-                var0 = new var5[var1](var4);
-            case 110: // try_end0
-                var0 = true;
-                return var0;
-            case 114: // catch_target0
-                CatchBlockStart(arg_register = 0);
-                var0 = false;
-                return var0;
-        }
-    };
-    var _closure1_slot2 = var2;
-    var3 = function arg0() {
-        _fun58664: for (var _fun58664_ip = 0;;) switch (_fun58664_ip) {
-            case 0:
-                var4 = arg0;
-                var0 = var4;
-                if (!var0) {
-                    _fun58664_ip = 42;
-                    continue _fun58664
-                }
-            case 9:
-                var3 = /^function\s+\w+\(\)\s+\{\s+\[native code\]\s+\}$/;
-                var2 = var3.test;
-                var1 = var4.toString;
-                var1 = var1.bind(var4)();
-                var0 = var2.bind(var3)(var1);
-            case 42:
-                return var0;
-        }
-    };
-    var _closure1_slot3 = var3;
-    var4 = global;
-    var7 = var4.Object;
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = global;
+    var7 = var0.Object;
     var6 = var7.defineProperty;
-    var5 = {};
-    var4 = true;
-    var5.value = var4;
-    var4 = '__esModule';
-    var4 = var6.bind(var7)(var1, var4, var5);
-    var1.isNativeFunction = var3;
-    var3 = function() {
-        _fun58665: for (var _fun58665_ip = 0;;) switch (_fun58665_ip) {
-            case 0: // try_start_0
-                var0 = global;
-                var2 = var0.DOMError;
-                var0 = var2.prototype;
-                var4 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var3 = '';
-                var0 = new var4[var2](var3, var2);
-            case 25: // try_end0
-                var0 = true;
-                return var0;
-            case 29: // catch_target0
-                CatchBlockStart(arg_register = 0);
-                var0 = false;
-                return var0;
-        }
-    };
-    var1.supportsDOMError = var3;
-    var3 = function() {
-        _fun58666: for (var _fun58666_ip = 0;;) switch (_fun58666_ip) {
-            case 0: // try_start_0
-                var0 = global;
-                var2 = var0.DOMException;
-                var0 = var2.prototype;
-                var4 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var3 = '';
-                var0 = new var4[var2](var3, var2);
-            case 25: // try_end0
-                var0 = true;
-                return var0;
-            case 29: // catch_target0
-                CatchBlockStart(arg_register = 0);
-                var0 = false;
-                return var0;
-        }
-    };
-    var1.supportsDOMException = var3;
-    var3 = function() {
-        _fun58667: for (var _fun58667_ip = 0;;) switch (_fun58667_ip) {
-            case 0: // try_start_0
-                var0 = global;
-                var2 = var0.ErrorEvent;
-                var0 = var2.prototype;
-                var4 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var3 = '';
-                var0 = new var4[var2](var3, var2);
-            case 25: // try_end0
-                var0 = true;
-                return var0;
-            case 29: // catch_target0
-                CatchBlockStart(arg_register = 0);
-                var0 = false;
-                return var0;
-        }
-    };
-    var1.supportsErrorEvent = var3;
-    var1.supportsFetch = var2;
-    var2 = function() {
-        _fun58668: for (var _fun58668_ip = 0;;) switch (_fun58668_ip) {
-            case 0:
-                var4 = undefined;
-                var0 = undefined;
-                var5 = undefined;
-                var3 = undefined;
-                var2 = global;
-                var2 = var2.EdgeRuntime;
-                var6 = 'string';
-                var2 = typeof var2;
-                if (!(var6 !== var2)) {
-                    _fun58668_ip = 359;
-                    continue _fun58668
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportDefault;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.NativeModules;
+    var5 = var3.RNIapAmazonModule;
+    var _closure1_slot3 = var5;
+    var3 = function() { // Environment: var1
+        var3 = _closure1_slot2;
+        var2 = undefined;
+        var1 = function*(arg0) { // Environment: var0
+            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
+                _fun58440: for (var _fun58440_ip = 0;;) switch (_fun58440_ip) {
+                    case 0:
+                        StartGenerator();
+                        var1 = arg0;
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
+                        if (var2) {
+                            _fun58440_ip = 164;
+                            continue _fun58440
+                        }
+                    case 13:
+                        var10 = var1.developerSecret;
+                        var9 = var1.userId;
+                        var8 = var1.receiptId;
+                        var1 = var1.useSandbox;
+                        var4 = undefined;
+                        if (!(var4 !== var1)) {
+                            _fun58440_ip = 55;
+                            continue _fun58440
+                        }
+                    case 48:
+                        var7 = '';
+                        if (!var1) {
+                            _fun58440_ip = 61;
+                            continue _fun58440
+                        }
+                    case 55:
+                        var7 = 'sandbox/';
+                    case 61:
+                        var1 = global;
+                        var1 = var1.HermesInternal;
+                        var6 = var1.concat;
+                        var18 = 'https://appstore-sdk.amazon.com/';
+                        var16 = 'version/1.0/verifyReceiptId/developer/';
+                        var14 = '/user/';
+                        var12 = '/receiptId/';
+                        var17 = var7;
+                        var15 = var10;
+                        var13 = var9;
+                        var11 = var8;
+                        var3 = var18[var6](var17, var16, var15, var14, var13, var12, var11, var10);
+                        var2 = _closure1_slot0;
+                        var5 = _closure1_slot1;
+                        var1 = 2;
+                        var1 = var5[var1];
+                        var2 = var2.bind(var4)(var1);
+                        var1 = var2.enhancedFetch;
+                        var1 = var1.bind(var2)(var3);
+                        SaveGenerator(address = 152);
+                    case 150:
+                        return var1;
+                    case 152:
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
+                        if (var2) {
+                            _fun58440_ip = 161;
+                            continue _fun58440
+                        }
+                    case 158:
+                        return var1;
+                    case 161:
+                        return var1;
+                    case 164:
+                        return var0;
                 }
-            case 30:
-                var6 = _closure1_slot2;
-                var6 = var6.bind(var4)();
-                if (var6) {
-                    _fun58668_ip = 48;
-                    continue _fun58668
-                }
-            case 44:
-                var6 = false;
-                return var6;
-            case 48:
-                var7 = _closure1_slot3;
-                var9 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var8 = 0;
-                var6 = var6[var8];
-                var6 = var9.bind(var4)(var6);
-                var6 = var6.GLOBAL_OBJ;
-                var6 = var6.fetch;
-                var6 = var7.bind(var4)(var6);
-                if (var6) {
-                    _fun58668_ip = 355;
-                    continue _fun58668
-                }
-            case 94:
-                var0 = false;
-                var7 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var6 = var6[var8];
-                var6 = var7.bind(var4)(var6);
-                var6 = var6.GLOBAL_OBJ;
-                var6 = var6.document;
-                var5 = var6;
-                if (!var6) {
-                    _fun58668_ip = 353;
-                    continue _fun58668
-                }
-            case 134:
-                var6 = var5;
-                var6 = var6.createElement;
-                var7 = 'function';
-                var6 = typeof var6;
-                if (!(var7 === var6)) {
-                    _fun58668_ip = 353;
-                    continue _fun58668
-                }
-            case 157: // try_start_0
-                var6 = var5;
-                var8 = var6.createElement;
-                var7 = 'iframe';
-                var7 = var8.bind(var6)(var7);
-                var3 = var7;
-                var8 = true;
-                var7.hidden = var8;
-                var8 = var6.head;
-                var6 = var8.appendChild;
-                var6 = var6.bind(var8)(var7);
-                var7 = var7.contentWindow;
-                var6 = var7;
-                if (!var7) {
-                    _fun58668_ip = 230;
-                    continue _fun58668
-                }
-            case 215:
-                var7 = var3;
-                var7 = var7.contentWindow;
-                var6 = var7.fetch;
-            case 230:
-                if (!var6) {
-                    _fun58668_ip = 257;
-                    continue _fun58668
-                }
-            case 233:
-                var7 = _closure1_slot3;
-                var6 = var3;
-                var6 = var6.contentWindow;
-                var6 = var6.fetch;
-                var0 = var7.bind(var4)(var6);
-            case 257:
-                var6 = var5.head;
-                var5 = var6.removeChild;
-                var3 = var5.bind(var6)(var3);
-            case 274: // try_end0
-                _fun58668_ip = 353;
-                continue _fun58668;
-            case 276: // catch_target0
-                CatchBlockStart(arg_register = 1);
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var3 = 1;
-                var3 = var6[var3];
-                var3 = var5.bind(var4)(var3);
-                var3 = var3.DEBUG_BUILD;
-                if (!var3) {
-                    _fun58668_ip = 353;
-                    continue _fun58668
-                }
-            case 307:
-                var3 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var2 = 2;
-                var2 = var5[var2];
-                var2 = var3.bind(var4)(var2);
-                var4 = var2.logger;
-                var3 = var4.warn;
-                var2 = var1;
-                var1 = 'Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ';
-                var1 = var3.bind(var4)(var1, var2);
-            case 353:
-                return var0;
-            case 355:
-                var0 = true;
-                return var0;
-            case 359:
-                var0 = true;
-                return var0;
-        }
-    };
-    var1.supportsNativeFetch = var2;
-    var2 = function() {
-        _fun58669: for (var _fun58669_ip = 0;;) switch (_fun58669_ip) {
-            case 0:
-                var1 = _closure1_slot2;
-                var0 = undefined;
-                var0 = var1.bind(var0)();
-                if (var0) {
-                    _fun58669_ip = 20;
-                    continue _fun58669
-                }
-            case 16:
-                var0 = false;
-                return var0;
-            case 20: // try_start_0
-                var0 = global;
-                var3 = var0.Request;
-                var2 = {};
-                var0 = 'origin';
-                var2.referrerPolicy = var0;
-                var0 = var3.prototype;
-                var6 = Object.create(var0, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var5 = '_';
-                var4 = var2;
-                var0 = new var6[var3](var5, var4, var3);
-            case 59: // try_end0
-                var0 = true;
-                return var0;
-            case 63: // catch_target0
-                CatchBlockStart(arg_register = 0);
-                var0 = false;
-                return var0;
-        }
-    };
-    var1.supportsReferrerPolicy = var2;
-    var0 = function() {
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 0;
-        var1 = var1[var0];
-        var0 = undefined;
-        var0 = var2.bind(var0)(var1);
-        var1 = var0.GLOBAL_OBJ;
-        var0 = 'ReportingObserver';
-        var0 = var0 in var1;
+            };
+            return var0;
+        };
+        var1 = var3.bind(var2)(var1);
+        var _closure2_slot0 = var1;
+        var0 = function arg0() {
+            var0 = undefined;
+            var3 = _closure2_slot0;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
         return var0;
     };
-    var1.supportsReportingObserver = var0;
-    var0 = undefined;
+    var4 = var3.bind(var0)();
+    var3 = function() { // Environment: var1
+        var3 = _closure1_slot2;
+        var2 = undefined;
+        var1 = function*() { // Environment: var0
+            var0 = function*() { // Original name: ?anon_0_, environment: var0
+                _fun58444: for (var _fun58444_ip = 0;;) switch (_fun58444_ip) {
+                    case 0:
+                        StartGenerator();
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                        if (var1) {
+                            _fun58444_ip = 27;
+                            continue _fun58444
+                        }
+                    case 7:
+                        var2 = _closure1_slot3;
+                        var1 = var2.verifyLicense;
+                        var1 = var1.bind(var2)();
+                        return var1;
+                    case 27:
+                        return var0;
+                }
+            };
+            return var0;
+        };
+        var1 = var3.bind(var2)(var1);
+        var _closure2_slot0 = var1;
+        var0 = function() {
+            var0 = undefined;
+            var3 = _closure2_slot0;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
+        return var0;
+    };
+    var3 = var3.bind(var0)();
+    var1 = function() { // Environment: var1
+        var3 = _closure1_slot2;
+        var2 = undefined;
+        var1 = function*(arg0) { // Environment: var0
+            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
+                _fun58448: for (var _fun58448_ip = 0;;) switch (_fun58448_ip) {
+                    case 0:
+                        StartGenerator();
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                        if (var1) {
+                            _fun58448_ip = 37;
+                            continue _fun58448
+                        }
+                    case 7:
+                        var1 = arg0;
+                        var3 = var1.isAmazonDevice;
+                        var2 = _closure1_slot3;
+                        var1 = var2.deepLinkToSubscriptions;
+                        var1 = var1.bind(var2)(var3);
+                        return var1;
+                    case 37:
+                        return var0;
+                }
+            };
+            return var0;
+        };
+        var1 = var3.bind(var2)(var1);
+        var _closure2_slot0 = var1;
+        var0 = function arg0() {
+            var0 = undefined;
+            var3 = _closure2_slot0;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var2.AmazonModule = var5;
+    var2.validateReceiptAmazon = var4;
+    var2.verifyLicense = var3;
+    var2.deepLinkToSubscriptionsAmazon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7134, 7138, 7137]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 7139]);

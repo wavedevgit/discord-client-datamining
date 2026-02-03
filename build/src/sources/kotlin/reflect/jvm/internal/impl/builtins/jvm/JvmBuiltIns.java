@@ -1,7 +1,7 @@
 package kotlin.reflect.jvm.internal.impl.builtins.jvm;
 
-import ir.p;
 import java.util.List;
+import jr.p;
 import kotlin.collections.CollectionsKt;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.functions.Function0;
@@ -24,16 +24,16 @@ import org.jetbrains.annotations.NotNull;
 public final class JvmBuiltIns extends KotlinBuiltIns {
 
     /* renamed from: j  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f33534j = {Reflection.property1(new PropertyReference1Impl(JvmBuiltIns.class, "customizer", "getCustomizer()Lorg/jetbrains/kotlin/builtins/jvm/JvmBuiltInsCustomizer;", 0))};
+    static final /* synthetic */ KProperty[] f33310j = {Reflection.property1(new PropertyReference1Impl(JvmBuiltIns.class, "customizer", "getCustomizer()Lorg/jetbrains/kotlin/builtins/jvm/JvmBuiltInsCustomizer;", 0))};
 
     /* renamed from: g  reason: collision with root package name */
-    private final Kind f33535g;
+    private final Kind f33311g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Function0 f33536h;
+    private Function0 f33312h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final NotNullLazyValue f33537i;
+    private final NotNullLazyValue f33313i;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -41,18 +41,18 @@ public final class JvmBuiltIns extends KotlinBuiltIns {
     public static final class Kind {
 
         /* renamed from: d  reason: collision with root package name */
-        private static final /* synthetic */ Kind[] f33538d;
+        private static final /* synthetic */ Kind[] f33314d;
 
         /* renamed from: e  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f33539e;
+        private static final /* synthetic */ EnumEntries f33315e;
         public static final Kind FROM_DEPENDENCIES = new Kind("FROM_DEPENDENCIES", 0);
         public static final Kind FROM_CLASS_LOADER = new Kind("FROM_CLASS_LOADER", 1);
         public static final Kind FALLBACK = new Kind("FALLBACK", 2);
 
         static {
             Kind[] a10 = a();
-            f33538d = a10;
-            f33539e = pr.a.a(a10);
+            f33314d = a10;
+            f33315e = qr.a.a(a10);
         }
 
         private Kind(String str, int i10) {
@@ -67,7 +67,7 @@ public final class JvmBuiltIns extends KotlinBuiltIns {
         }
 
         public static Kind[] values() {
-            return (Kind[]) f33538d.clone();
+            return (Kind[]) f33314d.clone();
         }
     }
 
@@ -75,24 +75,24 @@ public final class JvmBuiltIns extends KotlinBuiltIns {
     public static final class Settings {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ModuleDescriptor f33540a;
+        private final ModuleDescriptor f33316a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f33541b;
+        private final boolean f33317b;
 
         public Settings(@NotNull ModuleDescriptor ownerModuleDescriptor, boolean z10) {
             Intrinsics.checkNotNullParameter(ownerModuleDescriptor, "ownerModuleDescriptor");
-            this.f33540a = ownerModuleDescriptor;
-            this.f33541b = z10;
+            this.f33316a = ownerModuleDescriptor;
+            this.f33317b = z10;
         }
 
         @NotNull
         public final ModuleDescriptor getOwnerModuleDescriptor() {
-            return this.f33540a;
+            return this.f33316a;
         }
 
         public final boolean isAdditionalBuiltInsFeatureSupported() {
-            return this.f33541b;
+            return this.f33317b;
         }
     }
 
@@ -123,8 +123,8 @@ public final class JvmBuiltIns extends KotlinBuiltIns {
         super(storageManager);
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(kind, "kind");
-        this.f33535g = kind;
-        this.f33537i = storageManager.createLazyValue(new c(this, storageManager));
+        this.f33311g = kind;
+        this.f33313i = storageManager.createLazyValue(new c(this, storageManager));
         int i10 = WhenMappings.$EnumSwitchMapping$0[kind.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
@@ -147,10 +147,10 @@ public final class JvmBuiltIns extends KotlinBuiltIns {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Settings u(JvmBuiltIns jvmBuiltIns) {
-        Function0 function0 = jvmBuiltIns.f33536h;
+        Function0 function0 = jvmBuiltIns.f33312h;
         if (function0 != null) {
             Settings settings = (Settings) function0.invoke();
-            jvmBuiltIns.f33536h = null;
+            jvmBuiltIns.f33312h = null;
             return settings;
         }
         throw new AssertionError("JvmBuiltins instance has not been initialized properly");
@@ -168,7 +168,7 @@ public final class JvmBuiltIns extends KotlinBuiltIns {
 
     @NotNull
     public final JvmBuiltInsCustomizer getCustomizer() {
-        return (JvmBuiltInsCustomizer) StorageKt.getValue(this.f33537i, this, f33534j[0]);
+        return (JvmBuiltInsCustomizer) StorageKt.getValue(this.f33313i, this, f33310j[0]);
     }
 
     public final void initialize(@NotNull ModuleDescriptor moduleDescriptor, boolean z10) {
@@ -183,7 +183,7 @@ public final class JvmBuiltIns extends KotlinBuiltIns {
 
     public final void setPostponedSettingsComputation(@NotNull Function0<Settings> computation) {
         Intrinsics.checkNotNullParameter(computation, "computation");
-        this.f33536h = computation;
+        this.f33312h = computation;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

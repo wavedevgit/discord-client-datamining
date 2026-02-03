@@ -106,7 +106,7 @@ public final class GuildInviteView extends ConstraintLayout {
     public final Unit setHeaderColor(Integer num) {
         if (num != null) {
             this.binding.itemInviteHeader.setTextColor(num.intValue());
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
         return null;
     }
@@ -225,7 +225,7 @@ public final class GuildInviteView extends ConstraintLayout {
     public final Unit setTitleColor(Integer num) {
         if (num != null) {
             this.binding.itemInviteTitle.setTextColor(num.intValue());
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
         return null;
     }

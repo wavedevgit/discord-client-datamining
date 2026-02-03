@@ -887,7 +887,7 @@ public class LayoutShadowNode extends ReactShadowNodeImpl {
         int i11 = AnonymousClass1.$SwitchMap$com$facebook$yoga$YogaUnit[this.mTempYogaValue.unit.ordinal()];
         if (i11 != 1 && i11 != 2) {
             if (i11 == 4) {
-                mo910setPaddingPercent(maybeTransformLeftRightToStartEnd, this.mTempYogaValue.value);
+                mo912setPaddingPercent(maybeTransformLeftRightToStartEnd, this.mTempYogaValue.value);
             }
         } else {
             setPadding(maybeTransformLeftRightToStartEnd, this.mTempYogaValue.value);

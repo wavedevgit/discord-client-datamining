@@ -2,7 +2,7 @@ package com.facebook.react.uimanager.layoutanimation;
 
 import com.facebook.react.common.annotations.internal.LegacyArchitectureLogLevel;
 import com.facebook.react.common.annotations.internal.LegacyArchitectureLogger;
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -79,7 +79,7 @@ public final class LayoutAnimationType {
     static {
         LayoutAnimationType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = pr.a.a($values);
+        $ENTRIES = qr.a.a($values);
         Companion = new Companion(null);
         LegacyArchitectureLogger.assertLegacyArchitecture("LayoutAnimationType", LegacyArchitectureLogLevel.ERROR);
     }

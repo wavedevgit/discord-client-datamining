@@ -5,7 +5,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.net.Uri;
 import android.view.Window;
-import at.f;
+import bt.f;
 import com.discord.chat.input.bridge.ChatInputNode;
 import com.discord.chat.input.events.OnContentSizeChangeEvent;
 import com.discord.chat.input.events.OnEndBlurEvent;
@@ -27,9 +27,9 @@ import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.viewmanagers.DCDChatInputManagerDelegate;
 import com.facebook.react.viewmanagers.DCDChatInputManagerInterface;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
-import ir.v;
 import java.util.List;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -112,7 +112,7 @@ public final class ChatInputViewManager extends ViewGroupManager<ChatInputRootVi
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

@@ -8,22 +8,22 @@ import ne.w0;
 public final class i extends BufferedOutputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f14458d;
+    private boolean f14087d;
 
     public i(OutputStream outputStream) {
         super(outputStream);
     }
 
     public void a(OutputStream outputStream) {
-        ne.a.g(this.f14458d);
+        ne.a.g(this.f14087d);
         ((BufferedOutputStream) this).out = outputStream;
         ((BufferedOutputStream) this).count = 0;
-        this.f14458d = false;
+        this.f14087d = false;
     }
 
     @Override // java.io.FilterOutputStream, java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f14458d = true;
+        this.f14087d = true;
         try {
             flush();
             th = null;

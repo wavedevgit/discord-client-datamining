@@ -1,5 +1,7 @@
 package com.discord.chat.bridge.sticker;
 
+import at.e;
+import at.j;
 import java.util.NoSuchElementException;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
@@ -11,14 +13,12 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import org.jetbrains.annotations.NotNull;
-import pr.a;
-import xs.m;
-import zs.e;
-import zs.j;
+import qr.a;
+import ys.m;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-@Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\u000b\b\u0087\u0081\u0002\u0018\u0000 \r2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0002\f\rB\u0011\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000b¨\u0006\u000e"}, d2 = {"Lcom/discord/chat/bridge/sticker/StickerFormatType;", "", "intType", "", "<init>", "(Ljava/lang/String;II)V", "getIntType", "()I", "PNG", "APNG", "LOTTIE", "GIF", "StickerFormatTypeSerializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @m(with = StickerFormatTypeSerializer.class)
+@Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\u000b\b\u0087\u0081\u0002\u0018\u0000 \r2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0002\f\rB\u0011\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000b¨\u0006\u000e"}, d2 = {"Lcom/discord/chat/bridge/sticker/StickerFormatType;", "", "intType", "", "<init>", "(Ljava/lang/String;II)V", "getIntType", "()I", "PNG", "APNG", "LOTTIE", "GIF", "StickerFormatTypeSerializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class StickerFormatType {
     private static final /* synthetic */ EnumEntries $ENTRIES;
@@ -57,10 +57,10 @@ public final class StickerFormatType {
         private StickerFormatTypeSerializer() {
         }
 
-        @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
+        @Override // kotlinx.serialization.KSerializer, ys.o, kotlinx.serialization.DeserializationStrategy
         @NotNull
         public SerialDescriptor getDescriptor() {
-            return j.b("StickerFormatType", e.f.f56104a);
+            return j.b("StickerFormatType", e.f.f6075a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy
@@ -77,11 +77,11 @@ public final class StickerFormatType {
             throw new NoSuchElementException("Array contains no element matching the predicate.");
         }
 
-        @Override // xs.o
+        @Override // ys.o
         public void serialize(@NotNull Encoder encoder, @NotNull StickerFormatType value) {
             Intrinsics.checkNotNullParameter(encoder, "encoder");
             Intrinsics.checkNotNullParameter(value, "value");
-            encoder.B(value.getIntType());
+            encoder.A(value.getIntType());
         }
     }
 

@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/read_states/ReadStateUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun55049: for (var _fun55049_ip = 0;;) switch (_fun55049_ip) {
+        _fun55155: for (var _fun55155_ip = 0;;) switch (_fun55155_ip) {
             case 0:
                 var4 = arg0;
                 var3 = _closure1_slot2;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.id;
                 var0 = var2.bind(var3)(var0);
                 if (!var0) {
-                    _fun55049_ip = 58;
-                    continue _fun55049
+                    _fun55155_ip = 58;
+                    continue _fun55155
                 }
             case 29:
                 var3 = _closure1_slot3;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot3;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun55051: for (var _fun55051_ip = 0;;) switch (_fun55051_ip) {
+            _fun55157: for (var _fun55157_ip = 0;;) switch (_fun55157_ip) {
                 case 0:
                     var4 = _closure1_slot2;
                     var3 = var4.hasUnread;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.id;
                     var0 = var3.bind(var4)(var0);
                     if (!var0) {
-                        _fun55051_ip = 66;
-                        continue _fun55051
+                        _fun55157_ip = 66;
+                        continue _fun55157
                     }
                 case 33:
                     var4 = _closure1_slot3;
@@ -103,4 +103,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useHasImportantUnread = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3908, 4269, 4270, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3938, 4299, 4300, 566, 2]);

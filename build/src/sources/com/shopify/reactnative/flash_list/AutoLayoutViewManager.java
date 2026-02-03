@@ -7,8 +7,8 @@ import com.facebook.react.uimanager.ViewManagerDelegate;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.viewmanagers.AutoLayoutViewManagerDelegate;
 import com.facebook.react.viewmanagers.AutoLayoutViewManagerInterface;
-import ir.v;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -43,7 +43,7 @@ public final class AutoLayoutViewManager extends ViewGroupManager<b> implements 
     }
 
     private final int convertToPixelLayout(double d10, double d11) {
-        return xr.a.b(d10 * d11);
+        return yr.a.b(d10 * d11);
     }
 
     @Override // com.facebook.react.uimanager.ViewManager

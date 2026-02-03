@@ -1,8 +1,8 @@
 package com.withpersona.sdk2.inquiry.ui.network;
 
 import com.withpersona.sdk2.inquiry.ui.network.ComponentParam;
-import ir.p;
-import ir.v;
+import jr.p;
+import jr.v;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */

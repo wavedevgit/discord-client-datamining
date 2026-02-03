@@ -201,7 +201,7 @@ public abstract class EmojiPickerViewHolder extends RecyclerView.ViewHolder {
             Intrinsics.checkNotNullParameter(context, "context");
             Intrinsics.checkNotNullParameter(onPressEmoji, "onPressEmoji");
             Intrinsics.checkNotNullParameter(onLongPressEmoji, "onLongPressEmoji");
-            this.placeholder$delegate = ir.l.b(new Function0() { // from class: com.discord.emoji_picker.c0
+            this.placeholder$delegate = jr.l.b(new Function0() { // from class: com.discord.emoji_picker.c0
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Drawable placeholder_delegate$lambda$0;
@@ -216,7 +216,7 @@ public abstract class EmojiPickerViewHolder extends RecyclerView.ViewHolder {
             this.emojiLoadListener = new EmojiLoadListener(false);
             RippleUtilsKt.addCircleRipple(simpleDraweeView, true);
             ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).w(context.getResources().getInteger(com.discord.image.fresco.R.integer.image_fade_duration) / 3);
-            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils$ScaleType.f11037e);
+            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils$ScaleType.f10666e);
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView, false, new View.OnClickListener() { // from class: com.discord.emoji_picker.d0
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {

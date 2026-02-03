@@ -33,21 +33,21 @@ public class DefaultItemAnimator extends q {
     class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4716d;
+        final /* synthetic */ ArrayList f4760d;
 
         a(ArrayList arrayList) {
-            this.f4716d = arrayList;
+            this.f4760d = arrayList;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            Iterator it = this.f4716d.iterator();
+            Iterator it = this.f4760d.iterator();
             while (it.hasNext()) {
                 i iVar = (i) it.next();
-                DefaultItemAnimator.this.animateMoveImpl(iVar.f4744a, iVar.f4745b, iVar.f4746c, iVar.f4747d, iVar.f4748e);
+                DefaultItemAnimator.this.animateMoveImpl(iVar.f4788a, iVar.f4789b, iVar.f4790c, iVar.f4791d, iVar.f4792e);
             }
-            this.f4716d.clear();
-            DefaultItemAnimator.this.mMovesList.remove(this.f4716d);
+            this.f4760d.clear();
+            DefaultItemAnimator.this.mMovesList.remove(this.f4760d);
         }
     }
 
@@ -55,20 +55,20 @@ public class DefaultItemAnimator extends q {
     class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4718d;
+        final /* synthetic */ ArrayList f4762d;
 
         b(ArrayList arrayList) {
-            this.f4718d = arrayList;
+            this.f4762d = arrayList;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            Iterator it = this.f4718d.iterator();
+            Iterator it = this.f4762d.iterator();
             while (it.hasNext()) {
                 DefaultItemAnimator.this.animateChangeImpl((ChangeInfo) it.next());
             }
-            this.f4718d.clear();
-            DefaultItemAnimator.this.mChangesList.remove(this.f4718d);
+            this.f4762d.clear();
+            DefaultItemAnimator.this.mChangesList.remove(this.f4762d);
         }
     }
 
@@ -76,20 +76,20 @@ public class DefaultItemAnimator extends q {
     class c implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ArrayList f4720d;
+        final /* synthetic */ ArrayList f4764d;
 
         c(ArrayList arrayList) {
-            this.f4720d = arrayList;
+            this.f4764d = arrayList;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            Iterator it = this.f4720d.iterator();
+            Iterator it = this.f4764d.iterator();
             while (it.hasNext()) {
                 DefaultItemAnimator.this.animateAddImpl((RecyclerView.ViewHolder) it.next());
             }
-            this.f4720d.clear();
-            DefaultItemAnimator.this.mAdditionsList.remove(this.f4720d);
+            this.f4764d.clear();
+            DefaultItemAnimator.this.mAdditionsList.remove(this.f4764d);
         }
     }
 
@@ -98,32 +98,32 @@ public class DefaultItemAnimator extends q {
     public class d extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ RecyclerView.ViewHolder f4722a;
+        final /* synthetic */ RecyclerView.ViewHolder f4766a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ViewPropertyAnimator f4723b;
+        final /* synthetic */ ViewPropertyAnimator f4767b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ View f4724c;
+        final /* synthetic */ View f4768c;
 
         d(RecyclerView.ViewHolder viewHolder, ViewPropertyAnimator viewPropertyAnimator, View view) {
-            this.f4722a = viewHolder;
-            this.f4723b = viewPropertyAnimator;
-            this.f4724c = view;
+            this.f4766a = viewHolder;
+            this.f4767b = viewPropertyAnimator;
+            this.f4768c = view;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            this.f4723b.setListener(null);
-            this.f4724c.setAlpha(1.0f);
-            DefaultItemAnimator.this.dispatchRemoveFinished(this.f4722a);
-            DefaultItemAnimator.this.mRemoveAnimations.remove(this.f4722a);
+            this.f4767b.setListener(null);
+            this.f4768c.setAlpha(1.0f);
+            DefaultItemAnimator.this.dispatchRemoveFinished(this.f4766a);
+            DefaultItemAnimator.this.mRemoveAnimations.remove(this.f4766a);
             DefaultItemAnimator.this.dispatchFinishedWhenDone();
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            DefaultItemAnimator.this.dispatchRemoveStarting(this.f4722a);
+            DefaultItemAnimator.this.dispatchRemoveStarting(this.f4766a);
         }
     }
 
@@ -132,36 +132,36 @@ public class DefaultItemAnimator extends q {
     public class e extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ RecyclerView.ViewHolder f4726a;
+        final /* synthetic */ RecyclerView.ViewHolder f4770a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ View f4727b;
+        final /* synthetic */ View f4771b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ ViewPropertyAnimator f4728c;
+        final /* synthetic */ ViewPropertyAnimator f4772c;
 
         e(RecyclerView.ViewHolder viewHolder, View view, ViewPropertyAnimator viewPropertyAnimator) {
-            this.f4726a = viewHolder;
-            this.f4727b = view;
-            this.f4728c = viewPropertyAnimator;
+            this.f4770a = viewHolder;
+            this.f4771b = view;
+            this.f4772c = viewPropertyAnimator;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationCancel(Animator animator) {
-            this.f4727b.setAlpha(1.0f);
+            this.f4771b.setAlpha(1.0f);
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            this.f4728c.setListener(null);
-            DefaultItemAnimator.this.dispatchAddFinished(this.f4726a);
-            DefaultItemAnimator.this.mAddAnimations.remove(this.f4726a);
+            this.f4772c.setListener(null);
+            DefaultItemAnimator.this.dispatchAddFinished(this.f4770a);
+            DefaultItemAnimator.this.mAddAnimations.remove(this.f4770a);
             DefaultItemAnimator.this.dispatchFinishedWhenDone();
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            DefaultItemAnimator.this.dispatchAddStarting(this.f4726a);
+            DefaultItemAnimator.this.dispatchAddStarting(this.f4770a);
         }
     }
 
@@ -170,49 +170,49 @@ public class DefaultItemAnimator extends q {
     public class f extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ RecyclerView.ViewHolder f4730a;
+        final /* synthetic */ RecyclerView.ViewHolder f4774a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ int f4731b;
+        final /* synthetic */ int f4775b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ View f4732c;
+        final /* synthetic */ View f4776c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f4733d;
+        final /* synthetic */ int f4777d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ ViewPropertyAnimator f4734e;
+        final /* synthetic */ ViewPropertyAnimator f4778e;
 
         f(RecyclerView.ViewHolder viewHolder, int i10, View view, int i11, ViewPropertyAnimator viewPropertyAnimator) {
-            this.f4730a = viewHolder;
-            this.f4731b = i10;
-            this.f4732c = view;
-            this.f4733d = i11;
-            this.f4734e = viewPropertyAnimator;
+            this.f4774a = viewHolder;
+            this.f4775b = i10;
+            this.f4776c = view;
+            this.f4777d = i11;
+            this.f4778e = viewPropertyAnimator;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationCancel(Animator animator) {
-            if (this.f4731b != 0) {
-                this.f4732c.setTranslationX(0.0f);
+            if (this.f4775b != 0) {
+                this.f4776c.setTranslationX(0.0f);
             }
-            if (this.f4733d != 0) {
-                this.f4732c.setTranslationY(0.0f);
+            if (this.f4777d != 0) {
+                this.f4776c.setTranslationY(0.0f);
             }
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            this.f4734e.setListener(null);
-            DefaultItemAnimator.this.dispatchMoveFinished(this.f4730a);
-            DefaultItemAnimator.this.mMoveAnimations.remove(this.f4730a);
+            this.f4778e.setListener(null);
+            DefaultItemAnimator.this.dispatchMoveFinished(this.f4774a);
+            DefaultItemAnimator.this.mMoveAnimations.remove(this.f4774a);
             DefaultItemAnimator.this.dispatchFinishedWhenDone();
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            DefaultItemAnimator.this.dispatchMoveStarting(this.f4730a);
+            DefaultItemAnimator.this.dispatchMoveStarting(this.f4774a);
         }
     }
 
@@ -221,34 +221,34 @@ public class DefaultItemAnimator extends q {
     public class g extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ ChangeInfo f4736a;
+        final /* synthetic */ ChangeInfo f4780a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ViewPropertyAnimator f4737b;
+        final /* synthetic */ ViewPropertyAnimator f4781b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ View f4738c;
+        final /* synthetic */ View f4782c;
 
         g(ChangeInfo changeInfo, ViewPropertyAnimator viewPropertyAnimator, View view) {
-            this.f4736a = changeInfo;
-            this.f4737b = viewPropertyAnimator;
-            this.f4738c = view;
+            this.f4780a = changeInfo;
+            this.f4781b = viewPropertyAnimator;
+            this.f4782c = view;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            this.f4737b.setListener(null);
-            this.f4738c.setAlpha(1.0f);
-            this.f4738c.setTranslationX(0.0f);
-            this.f4738c.setTranslationY(0.0f);
-            DefaultItemAnimator.this.dispatchChangeFinished(this.f4736a.f4710a, true);
-            DefaultItemAnimator.this.mChangeAnimations.remove(this.f4736a.f4710a);
+            this.f4781b.setListener(null);
+            this.f4782c.setAlpha(1.0f);
+            this.f4782c.setTranslationX(0.0f);
+            this.f4782c.setTranslationY(0.0f);
+            DefaultItemAnimator.this.dispatchChangeFinished(this.f4780a.f4754a, true);
+            DefaultItemAnimator.this.mChangeAnimations.remove(this.f4780a.f4754a);
             DefaultItemAnimator.this.dispatchFinishedWhenDone();
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            DefaultItemAnimator.this.dispatchChangeStarting(this.f4736a.f4710a, true);
+            DefaultItemAnimator.this.dispatchChangeStarting(this.f4780a.f4754a, true);
         }
     }
 
@@ -257,34 +257,34 @@ public class DefaultItemAnimator extends q {
     public class h extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ ChangeInfo f4740a;
+        final /* synthetic */ ChangeInfo f4784a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ViewPropertyAnimator f4741b;
+        final /* synthetic */ ViewPropertyAnimator f4785b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ View f4742c;
+        final /* synthetic */ View f4786c;
 
         h(ChangeInfo changeInfo, ViewPropertyAnimator viewPropertyAnimator, View view) {
-            this.f4740a = changeInfo;
-            this.f4741b = viewPropertyAnimator;
-            this.f4742c = view;
+            this.f4784a = changeInfo;
+            this.f4785b = viewPropertyAnimator;
+            this.f4786c = view;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            this.f4741b.setListener(null);
-            this.f4742c.setAlpha(1.0f);
-            this.f4742c.setTranslationX(0.0f);
-            this.f4742c.setTranslationY(0.0f);
-            DefaultItemAnimator.this.dispatchChangeFinished(this.f4740a.f4711b, false);
-            DefaultItemAnimator.this.mChangeAnimations.remove(this.f4740a.f4711b);
+            this.f4785b.setListener(null);
+            this.f4786c.setAlpha(1.0f);
+            this.f4786c.setTranslationX(0.0f);
+            this.f4786c.setTranslationY(0.0f);
+            DefaultItemAnimator.this.dispatchChangeFinished(this.f4784a.f4755b, false);
+            DefaultItemAnimator.this.mChangeAnimations.remove(this.f4784a.f4755b);
             DefaultItemAnimator.this.dispatchFinishedWhenDone();
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            DefaultItemAnimator.this.dispatchChangeStarting(this.f4740a.f4711b, false);
+            DefaultItemAnimator.this.dispatchChangeStarting(this.f4784a.f4755b, false);
         }
     }
 
@@ -293,26 +293,26 @@ public class DefaultItemAnimator extends q {
     public static class i {
 
         /* renamed from: a  reason: collision with root package name */
-        public RecyclerView.ViewHolder f4744a;
+        public RecyclerView.ViewHolder f4788a;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f4745b;
+        public int f4789b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f4746c;
+        public int f4790c;
 
         /* renamed from: d  reason: collision with root package name */
-        public int f4747d;
+        public int f4791d;
 
         /* renamed from: e  reason: collision with root package name */
-        public int f4748e;
+        public int f4792e;
 
         i(RecyclerView.ViewHolder viewHolder, int i10, int i11, int i12, int i13) {
-            this.f4744a = viewHolder;
-            this.f4745b = i10;
-            this.f4746c = i11;
-            this.f4747d = i12;
-            this.f4748e = i13;
+            this.f4788a = viewHolder;
+            this.f4789b = i10;
+            this.f4790c = i11;
+            this.f4791d = i12;
+            this.f4792e = i13;
         }
     }
 
@@ -326,18 +326,18 @@ public class DefaultItemAnimator extends q {
     private void b(List list, RecyclerView.ViewHolder viewHolder) {
         for (int size = list.size() - 1; size >= 0; size--) {
             ChangeInfo changeInfo = (ChangeInfo) list.get(size);
-            if (d(changeInfo, viewHolder) && changeInfo.f4710a == null && changeInfo.f4711b == null) {
+            if (d(changeInfo, viewHolder) && changeInfo.f4754a == null && changeInfo.f4755b == null) {
                 list.remove(changeInfo);
             }
         }
     }
 
     private void c(ChangeInfo changeInfo) {
-        RecyclerView.ViewHolder viewHolder = changeInfo.f4710a;
+        RecyclerView.ViewHolder viewHolder = changeInfo.f4754a;
         if (viewHolder != null) {
             d(changeInfo, viewHolder);
         }
-        RecyclerView.ViewHolder viewHolder2 = changeInfo.f4711b;
+        RecyclerView.ViewHolder viewHolder2 = changeInfo.f4755b;
         if (viewHolder2 != null) {
             d(changeInfo, viewHolder2);
         }
@@ -345,12 +345,12 @@ public class DefaultItemAnimator extends q {
 
     private boolean d(ChangeInfo changeInfo, RecyclerView.ViewHolder viewHolder) {
         boolean z10 = false;
-        if (changeInfo.f4711b == viewHolder) {
-            changeInfo.f4711b = null;
-        } else if (changeInfo.f4710a != viewHolder) {
+        if (changeInfo.f4755b == viewHolder) {
+            changeInfo.f4755b = null;
+        } else if (changeInfo.f4754a != viewHolder) {
             return false;
         } else {
-            changeInfo.f4710a = null;
+            changeInfo.f4754a = null;
             z10 = true;
         }
         viewHolder.itemView.setAlpha(1.0f);
@@ -409,27 +409,27 @@ public class DefaultItemAnimator extends q {
 
     void animateChangeImpl(ChangeInfo changeInfo) {
         View view;
-        RecyclerView.ViewHolder viewHolder = changeInfo.f4710a;
+        RecyclerView.ViewHolder viewHolder = changeInfo.f4754a;
         View view2 = null;
         if (viewHolder == null) {
             view = null;
         } else {
             view = viewHolder.itemView;
         }
-        RecyclerView.ViewHolder viewHolder2 = changeInfo.f4711b;
+        RecyclerView.ViewHolder viewHolder2 = changeInfo.f4755b;
         if (viewHolder2 != null) {
             view2 = viewHolder2.itemView;
         }
         if (view != null) {
             ViewPropertyAnimator duration = view.animate().setDuration(getChangeDuration());
-            this.mChangeAnimations.add(changeInfo.f4710a);
-            duration.translationX(changeInfo.f4714e - changeInfo.f4712c);
-            duration.translationY(changeInfo.f4715f - changeInfo.f4713d);
+            this.mChangeAnimations.add(changeInfo.f4754a);
+            duration.translationX(changeInfo.f4758e - changeInfo.f4756c);
+            duration.translationY(changeInfo.f4759f - changeInfo.f4757d);
             duration.alpha(0.0f).setListener(new g(changeInfo, duration, view)).start();
         }
         if (view2 != null) {
             ViewPropertyAnimator animate = view2.animate();
-            this.mChangeAnimations.add(changeInfo.f4711b);
+            this.mChangeAnimations.add(changeInfo.f4755b);
             animate.translationX(0.0f).translationY(0.0f).setDuration(getChangeDuration()).alpha(1.0f).setListener(new h(changeInfo, animate, view2)).start();
         }
     }
@@ -508,7 +508,7 @@ public class DefaultItemAnimator extends q {
             size--;
             if (size < 0) {
                 break;
-            } else if (this.mPendingMoves.get(size).f4744a == viewHolder) {
+            } else if (this.mPendingMoves.get(size).f4788a == viewHolder) {
                 view.setTranslationY(0.0f);
                 view.setTranslationX(0.0f);
                 dispatchMoveFinished(viewHolder);
@@ -537,7 +537,7 @@ public class DefaultItemAnimator extends q {
             while (true) {
                 if (size4 < 0) {
                     break;
-                } else if (arrayList2.get(size4).f4744a == viewHolder) {
+                } else if (arrayList2.get(size4).f4788a == viewHolder) {
                     view.setTranslationY(0.0f);
                     view.setTranslationX(0.0f);
                     dispatchMoveFinished(viewHolder);
@@ -576,10 +576,10 @@ public class DefaultItemAnimator extends q {
                 break;
             }
             i iVar = this.mPendingMoves.get(size);
-            View view = iVar.f4744a.itemView;
+            View view = iVar.f4788a.itemView;
             view.setTranslationY(0.0f);
             view.setTranslationX(0.0f);
-            dispatchMoveFinished(iVar.f4744a);
+            dispatchMoveFinished(iVar.f4788a);
             this.mPendingMoves.remove(size);
         }
         for (int size2 = this.mPendingRemovals.size() - 1; size2 >= 0; size2--) {
@@ -608,10 +608,10 @@ public class DefaultItemAnimator extends q {
             ArrayList<i> arrayList = this.mMovesList.get(size5);
             for (int size6 = arrayList.size() - 1; size6 >= 0; size6--) {
                 i iVar2 = arrayList.get(size6);
-                View view2 = iVar2.f4744a.itemView;
+                View view2 = iVar2.f4788a.itemView;
                 view2.setTranslationY(0.0f);
                 view2.setTranslationX(0.0f);
-                dispatchMoveFinished(iVar2.f4744a);
+                dispatchMoveFinished(iVar2.f4788a);
                 arrayList.remove(size6);
                 if (arrayList.isEmpty()) {
                     this.mMovesList.remove(arrayList);
@@ -675,7 +675,7 @@ public class DefaultItemAnimator extends q {
                 this.mPendingMoves.clear();
                 a aVar = new a(arrayList);
                 if (!isEmpty) {
-                    h0.g0(arrayList.get(0).f4744a.itemView, aVar, getRemoveDuration());
+                    h0.g0(arrayList.get(0).f4788a.itemView, aVar, getRemoveDuration());
                 } else {
                     aVar.run();
                 }
@@ -687,7 +687,7 @@ public class DefaultItemAnimator extends q {
                 this.mPendingChanges.clear();
                 b bVar = new b(arrayList2);
                 if (!isEmpty) {
-                    h0.g0(arrayList2.get(0).f4710a.itemView, bVar, getRemoveDuration());
+                    h0.g0(arrayList2.get(0).f4754a.itemView, bVar, getRemoveDuration());
                 } else {
                     bVar.run();
                 }
@@ -726,38 +726,38 @@ public class DefaultItemAnimator extends q {
     public static class ChangeInfo {
 
         /* renamed from: a  reason: collision with root package name */
-        public RecyclerView.ViewHolder f4710a;
+        public RecyclerView.ViewHolder f4754a;
 
         /* renamed from: b  reason: collision with root package name */
-        public RecyclerView.ViewHolder f4711b;
+        public RecyclerView.ViewHolder f4755b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f4712c;
+        public int f4756c;
 
         /* renamed from: d  reason: collision with root package name */
-        public int f4713d;
+        public int f4757d;
 
         /* renamed from: e  reason: collision with root package name */
-        public int f4714e;
+        public int f4758e;
 
         /* renamed from: f  reason: collision with root package name */
-        public int f4715f;
+        public int f4759f;
 
         private ChangeInfo(RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder viewHolder2) {
-            this.f4710a = viewHolder;
-            this.f4711b = viewHolder2;
+            this.f4754a = viewHolder;
+            this.f4755b = viewHolder2;
         }
 
         public String toString() {
-            return "ChangeInfo{oldHolder=" + this.f4710a + ", newHolder=" + this.f4711b + ", fromX=" + this.f4712c + ", fromY=" + this.f4713d + ", toX=" + this.f4714e + ", toY=" + this.f4715f + '}';
+            return "ChangeInfo{oldHolder=" + this.f4754a + ", newHolder=" + this.f4755b + ", fromX=" + this.f4756c + ", fromY=" + this.f4757d + ", toX=" + this.f4758e + ", toY=" + this.f4759f + '}';
         }
 
         ChangeInfo(RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder viewHolder2, int i10, int i11, int i12, int i13) {
             this(viewHolder, viewHolder2);
-            this.f4712c = i10;
-            this.f4713d = i11;
-            this.f4714e = i12;
-            this.f4715f = i13;
+            this.f4756c = i10;
+            this.f4757d = i11;
+            this.f4758e = i12;
+            this.f4759f = i13;
         }
     }
 }

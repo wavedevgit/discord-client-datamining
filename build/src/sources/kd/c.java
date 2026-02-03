@@ -10,13 +10,13 @@ public final class c implements Metadata.b {
     public static final Parcelable.Creator<c> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final byte[] f33094d;
+    public final byte[] f32840d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f33095e;
+    public final String f32841e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final String f33096i;
+    public final String f32842i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -37,17 +37,9 @@ public final class c implements Metadata.b {
     }
 
     public c(byte[] bArr, String str, String str2) {
-        this.f33094d = bArr;
-        this.f33095e = str;
-        this.f33096i = str2;
-    }
-
-    @Override // com.google.android.exoplayer2.metadata.Metadata.b
-    public void d1(MediaMetadata.b bVar) {
-        String str = this.f33095e;
-        if (str != null) {
-            bVar.m0(str);
-        }
+        this.f32840d = bArr;
+        this.f32841e = str;
+        this.f32842i = str2;
     }
 
     @Override // android.os.Parcelable
@@ -55,34 +47,42 @@ public final class c implements Metadata.b {
         return 0;
     }
 
+    @Override // com.google.android.exoplayer2.metadata.Metadata.b
+    public void e1(MediaMetadata.b bVar) {
+        String str = this.f32841e;
+        if (str != null) {
+            bVar.m0(str);
+        }
+    }
+
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
         if (obj != null && c.class == obj.getClass()) {
-            return Arrays.equals(this.f33094d, ((c) obj).f33094d);
+            return Arrays.equals(this.f32840d, ((c) obj).f32840d);
         }
         return false;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(this.f33094d);
+        return Arrays.hashCode(this.f32840d);
     }
 
     public String toString() {
-        return String.format("ICY: title=\"%s\", url=\"%s\", rawMetadata.length=\"%s\"", this.f33095e, this.f33096i, Integer.valueOf(this.f33094d.length));
+        return String.format("ICY: title=\"%s\", url=\"%s\", rawMetadata.length=\"%s\"", this.f32841e, this.f32842i, Integer.valueOf(this.f32840d.length));
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeByteArray(this.f33094d);
-        parcel.writeString(this.f33095e);
-        parcel.writeString(this.f33096i);
+        parcel.writeByteArray(this.f32840d);
+        parcel.writeString(this.f32841e);
+        parcel.writeString(this.f32842i);
     }
 
     c(Parcel parcel) {
-        this.f33094d = (byte[]) ne.a.e(parcel.createByteArray());
-        this.f33095e = parcel.readString();
-        this.f33096i = parcel.readString();
+        this.f32840d = (byte[]) ne.a.e(parcel.createByteArray());
+        this.f32841e = parcel.readString();
+        this.f32842i = parcel.readString();
     }
 }

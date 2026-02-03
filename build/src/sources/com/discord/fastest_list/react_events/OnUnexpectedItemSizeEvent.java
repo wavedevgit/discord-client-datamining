@@ -5,7 +5,7 @@ import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.Intrinsics;
@@ -27,10 +27,10 @@ public final class OnUnexpectedItemSizeEvent implements ReactEvent {
     @NotNull
     public WritableMap serialize() {
         int i10;
-        Pair a10 = v.a("section", Integer.valueOf(this.entry.mo877getSectionsZRFyWU()));
+        Pair a10 = v.a("section", Integer.valueOf(this.entry.mo879getSectionsZRFyWU()));
         FastestListSections.Entry entry = this.entry;
         if (entry instanceof FastestListSections.Entry.SectionItem) {
-            i10 = ((FastestListSections.Entry.SectionItem) entry).m894getItemJXkbwXs();
+            i10 = ((FastestListSections.Entry.SectionItem) entry).m896getItemJXkbwXs();
         } else {
             i10 = 0;
         }

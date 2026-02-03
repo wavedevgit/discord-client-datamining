@@ -15,11 +15,11 @@ import kotlin.collections.i;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f31863a = i.R(new Class[]{Boolean.TYPE, boolean[].class, Double.TYPE, double[].class, Integer.TYPE, int[].class, Long.TYPE, long[].class, String.class, String[].class, Binder.class, Bundle.class, Byte.TYPE, byte[].class, Character.TYPE, char[].class, CharSequence.class, CharSequence[].class, ArrayList.class, Float.TYPE, float[].class, Parcelable.class, Parcelable[].class, Serializable.class, Short.TYPE, short[].class, SparseArray.class, Size.class, SizeF.class});
+    private static final List f31601a = i.R(new Class[]{Boolean.TYPE, boolean[].class, Double.TYPE, double[].class, Integer.TYPE, int[].class, Long.TYPE, long[].class, String.class, String[].class, Binder.class, Bundle.class, Byte.TYPE, byte[].class, Character.TYPE, char[].class, CharSequence.class, CharSequence[].class, ArrayList.class, Float.TYPE, float[].class, Parcelable.class, Parcelable[].class, Serializable.class, Short.TYPE, short[].class, SparseArray.class, Size.class, SizeF.class});
 
     public static final boolean a(Object obj) {
         if (obj != null) {
-            List<Class> list = f31863a;
+            List<Class> list = f31601a;
             if (!(list instanceof Collection) || !list.isEmpty()) {
                 for (Class cls : list) {
                     if (cls.isInstance(obj)) {

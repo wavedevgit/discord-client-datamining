@@ -1,4 +1,6 @@
 package xr;
+
+import kotlin.Function;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-class b {
+public interface b extends Function {
 }

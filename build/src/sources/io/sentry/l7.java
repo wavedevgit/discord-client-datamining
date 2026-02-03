@@ -43,60 +43,60 @@ public final class l7 extends e5 implements w1 {
             List list2 = null;
             List list3 = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
+                String m02 = e3Var.m0();
+                m02.getClass();
                 char c10 = 65535;
-                switch (l02.hashCode()) {
+                switch (m02.hashCode()) {
                     case -454767501:
-                        if (l02.equals("replay_id")) {
+                        if (m02.equals("replay_id")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -264026847:
-                        if (l02.equals("replay_start_timestamp")) {
+                        if (m02.equals("replay_start_timestamp")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 3575610:
-                        if (l02.equals("type")) {
+                        if (m02.equals("type")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case 3598564:
-                        if (l02.equals("urls")) {
+                        if (m02.equals("urls")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 55126294:
-                        if (l02.equals("timestamp")) {
+                        if (m02.equals("timestamp")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 329864193:
-                        if (l02.equals("error_ids")) {
+                        if (m02.equals("error_ids")) {
                             c10 = 5;
                             break;
                         }
                         break;
                     case 724602046:
-                        if (l02.equals("trace_ids")) {
+                        if (m02.equals("trace_ids")) {
                             c10 = 6;
                             break;
                         }
                         break;
                     case 1055447186:
-                        if (l02.equals("replay_type")) {
+                        if (m02.equals("replay_type")) {
                             c10 = 7;
                             break;
                         }
                         break;
                     case 1077649831:
-                        if (l02.equals("segment_id")) {
+                        if (m02.equals("segment_id")) {
                             c10 = '\b';
                             break;
                         }
@@ -104,10 +104,10 @@ public final class l7 extends e5 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        xVar = (io.sentry.protocol.x) e3Var.G0(iLogger, new x.a());
+                        xVar = (io.sentry.protocol.x) e3Var.H0(iLogger, new x.a());
                         break;
                     case 1:
-                        date2 = e3Var.r0(iLogger);
+                        date2 = e3Var.s0(iLogger);
                         break;
                     case 2:
                         str = e3Var.r1();
@@ -116,7 +116,7 @@ public final class l7 extends e5 implements w1 {
                         list = (List) e3Var.V1();
                         break;
                     case 4:
-                        date = e3Var.r0(iLogger);
+                        date = e3Var.s0(iLogger);
                         break;
                     case 5:
                         list2 = (List) e3Var.V1();
@@ -125,17 +125,17 @@ public final class l7 extends e5 implements w1 {
                         list3 = (List) e3Var.V1();
                         break;
                     case 7:
-                        bVar = (b) e3Var.G0(iLogger, new b.a());
+                        bVar = (b) e3Var.H0(iLogger, new b.a());
                         break;
                     case '\b':
-                        num = e3Var.j1();
+                        num = e3Var.k1();
                         break;
                     default:
-                        if (!aVar.a(l7Var, l02, e3Var, iLogger)) {
+                        if (!aVar.a(l7Var, m02, e3Var, iLogger)) {
                             if (hashMap == null) {
                                 hashMap = new HashMap();
                             }
-                            e3Var.v1(iLogger, hashMap, l02);
+                            e3Var.v1(iLogger, hashMap, m02);
                             break;
                         } else {
                             break;
@@ -175,7 +175,7 @@ public final class l7 extends e5 implements w1 {
             @Override // io.sentry.m1
             /* renamed from: b */
             public b a(e3 e3Var, ILogger iLogger) {
-                return b.valueOf(e3Var.e1().toUpperCase(Locale.ROOT));
+                return b.valueOf(e3Var.f1().toUpperCase(Locale.ROOT));
             }
         }
 

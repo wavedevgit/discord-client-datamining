@@ -6,25 +6,25 @@ import java.util.Set;
 final class u0 extends c.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f17244a;
+    private final String f16873a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f17245b;
+    private final Set f16874b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ u0(String str, Set set, wh.g gVar) {
-        this.f17244a = str;
-        this.f17245b = set;
+        this.f16873a = str;
+        this.f16874b = set;
     }
 
     @Override // com.google.android.play.core.integrity.c.d
     public final String b() {
-        return this.f17244a;
+        return this.f16873a;
     }
 
     @Override // com.google.android.play.core.integrity.c.d
     public final Set c() {
-        return this.f17245b;
+        return this.f16874b;
     }
 
     public final boolean equals(Object obj) {
@@ -33,9 +33,9 @@ final class u0 extends c.d {
         }
         if (obj instanceof c.d) {
             c.d dVar = (c.d) obj;
-            String str = this.f17244a;
+            String str = this.f16873a;
             if (str != null ? str.equals(dVar.b()) : dVar.b() == null) {
-                if (this.f17245b.equals(dVar.c())) {
+                if (this.f16874b.equals(dVar.c())) {
                     return true;
                 }
             }
@@ -45,17 +45,17 @@ final class u0 extends c.d {
 
     public final int hashCode() {
         int hashCode;
-        String str = this.f17244a;
+        String str = this.f16873a;
         if (str == null) {
             hashCode = 0;
         } else {
             hashCode = str.hashCode();
         }
-        return ((hashCode ^ 1000003) * 1000003) ^ this.f17245b.hashCode();
+        return ((hashCode ^ 1000003) * 1000003) ^ this.f16874b.hashCode();
     }
 
     public final String toString() {
-        String obj = this.f17245b.toString();
-        return "StandardIntegrityTokenRequest{requestHash=" + this.f17244a + ", verdictOptOut=" + obj + "}";
+        String obj = this.f16874b.toString();
+        return "StandardIntegrityTokenRequest{requestHash=" + this.f16873a + ", verdictOptOut=" + obj + "}";
     }
 }

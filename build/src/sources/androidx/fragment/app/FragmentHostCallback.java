@@ -15,28 +15,28 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class FragmentHostCallback extends FragmentContainer {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Activity f4079d;
+    private final Activity f4123d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Context f4080e;
+    private final Context f4124e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Handler f4081i;
+    private final Handler f4125i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f4082o;
+    private final int f4126o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final FragmentManager f4083p;
+    private final FragmentManager f4127p;
 
     public FragmentHostCallback(Activity activity, Context context, Handler handler, int i10) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(handler, "handler");
-        this.f4079d = activity;
-        this.f4080e = context;
-        this.f4081i = handler;
-        this.f4082o = i10;
-        this.f4083p = new e0();
+        this.f4123d = activity;
+        this.f4124e = context;
+        this.f4125i = handler;
+        this.f4126o = i10;
+        this.f4127p = new e0();
     }
 
     @Override // androidx.fragment.app.FragmentContainer
@@ -50,19 +50,19 @@ public abstract class FragmentHostCallback extends FragmentContainer {
     }
 
     public final Activity f() {
-        return this.f4079d;
+        return this.f4123d;
     }
 
     public final Context g() {
-        return this.f4080e;
+        return this.f4124e;
     }
 
     public final FragmentManager h() {
-        return this.f4083p;
+        return this.f4127p;
     }
 
     public final Handler i() {
-        return this.f4081i;
+        return this.f4125i;
     }
 
     public void j(String prefix, FileDescriptor fileDescriptor, PrintWriter writer, String[] strArr) {
@@ -73,7 +73,7 @@ public abstract class FragmentHostCallback extends FragmentContainer {
     public abstract Object k();
 
     public LayoutInflater l() {
-        LayoutInflater from = LayoutInflater.from(this.f4080e);
+        LayoutInflater from = LayoutInflater.from(this.f4124e);
         Intrinsics.checkNotNullExpressionValue(from, "from(context)");
         return from;
     }
@@ -92,7 +92,7 @@ public abstract class FragmentHostCallback extends FragmentContainer {
         Intrinsics.checkNotNullParameter(fragment, "fragment");
         Intrinsics.checkNotNullParameter(intent, "intent");
         if (i10 == -1) {
-            androidx.core.content.a.o(this.f4080e, intent, bundle);
+            androidx.core.content.a.o(this.f4124e, intent, bundle);
             return;
         }
         throw new IllegalStateException("Starting activity with a requestCode requires a FragmentActivity host");
@@ -102,7 +102,7 @@ public abstract class FragmentHostCallback extends FragmentContainer {
         Intrinsics.checkNotNullParameter(fragment, "fragment");
         Intrinsics.checkNotNullParameter(intent, "intent");
         if (i10 == -1) {
-            Activity activity = this.f4079d;
+            Activity activity = this.f4123d;
             if (activity != null) {
                 androidx.core.app.b.A(activity, intent, i10, intent2, i11, i12, i13, bundle);
                 return;

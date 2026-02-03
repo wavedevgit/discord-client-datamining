@@ -1,29 +1,39 @@
 package in;
 
-import java.util.Collections;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.Transformation;
+import com.swmansion.rnscreens.w;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b extends a {
+public final class b extends Animation {
 
-    /* renamed from: b  reason: collision with root package name */
-    private final int f28655b;
+    /* renamed from: d  reason: collision with root package name */
+    private final w f28252d;
 
-    public b(int i10) {
-        super(false, 1, null);
-        this.f28655b = i10;
+    public b(w mFragment) {
+        Intrinsics.checkNotNullParameter(mFragment, "mFragment");
+        this.f28252d = mFragment;
     }
 
-    @Override // com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy
-    public void a(List drawingOperations) {
-        Intrinsics.checkNotNullParameter(drawingOperations, "drawingOperations");
-        if (b()) {
-            int i10 = this.f28655b;
-            for (int n10 = CollectionsKt.n(drawingOperations); i10 < n10; n10--) {
-                Collections.swap(drawingOperations, i10, n10);
-                i10++;
-            }
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void b(b bVar, float f10) {
+        w wVar = bVar.f28252d;
+        wVar.F(f10, !wVar.isResumed());
+    }
+
+    @Override // android.view.animation.Animation
+    protected void applyTransformation(final float f10, Transformation t10) {
+        Intrinsics.checkNotNullParameter(t10, "t");
+        super.applyTransformation(f10, t10);
+        View view = this.f28252d.getView();
+        if (view != null) {
+            view.post(new Runnable() { // from class: in.a
+                @Override // java.lang.Runnable
+                public final void run() {
+                    b.b(b.this, f10);
+                }
+            });
         }
     }
 }

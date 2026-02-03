@@ -1,15 +1,19 @@
 package us;
-
-import java.util.List;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements e {
+public interface b extends ws.a {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final List f50552a;
-
-    public b(List formatters) {
-        Intrinsics.checkNotNullParameter(formatters, "formatters");
-        this.f50552a = formatters;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static Object a(b bVar, Object obj) {
+            Object a10 = bVar.a(obj);
+            if (a10 != null) {
+                return a10;
+            }
+            throw new IllegalStateException("Field " + bVar.getName() + " is not set");
+        }
     }
+
+    Object a(Object obj);
+
+    Object b(Object obj);
 }

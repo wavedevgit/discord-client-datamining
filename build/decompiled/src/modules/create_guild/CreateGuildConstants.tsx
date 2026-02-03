@@ -1425,4 +1425,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildTemplatesMap = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1234, 3057, 484, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1234, 3087, 484, 2]);

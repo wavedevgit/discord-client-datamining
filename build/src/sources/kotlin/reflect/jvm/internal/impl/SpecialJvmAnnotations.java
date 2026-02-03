@@ -20,10 +20,10 @@ public final class SpecialJvmAnnotations {
     public static final SpecialJvmAnnotations INSTANCE = new SpecialJvmAnnotations();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f33419a;
+    private static final Set f33195a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ClassId f33420b;
+    private static final ClassId f33196b;
 
     static {
         LinkedHashSet linkedHashSet = new LinkedHashSet();
@@ -31,11 +31,11 @@ public final class SpecialJvmAnnotations {
         for (FqName fqName : CollectionsKt.o(JvmAnnotationNames.METADATA_FQ_NAME, JvmAnnotationNames.JETBRAINS_NOT_NULL_ANNOTATION, JvmAnnotationNames.JETBRAINS_NULLABLE_ANNOTATION, JvmAnnotationNames.TARGET_ANNOTATION, JvmAnnotationNames.RETENTION_ANNOTATION, JvmAnnotationNames.DOCUMENTED_ANNOTATION)) {
             linkedHashSet.add(companion.topLevel(fqName));
         }
-        f33419a = linkedHashSet;
+        f33195a = linkedHashSet;
         ClassId.Companion companion2 = ClassId.Companion;
         FqName REPEATABLE_ANNOTATION = JvmAnnotationNames.REPEATABLE_ANNOTATION;
         Intrinsics.checkNotNullExpressionValue(REPEATABLE_ANNOTATION, "REPEATABLE_ANNOTATION");
-        f33420b = companion2.topLevel(REPEATABLE_ANNOTATION);
+        f33196b = companion2.topLevel(REPEATABLE_ANNOTATION);
     }
 
     private SpecialJvmAnnotations() {
@@ -43,12 +43,12 @@ public final class SpecialJvmAnnotations {
 
     @NotNull
     public final ClassId getJAVA_LANG_ANNOTATION_REPEATABLE() {
-        return f33420b;
+        return f33196b;
     }
 
     @NotNull
     public final Set<ClassId> getSPECIAL_ANNOTATIONS() {
-        return f33419a;
+        return f33195a;
     }
 
     public final boolean isAnnotatedWithContainerMetaAnnotation(@NotNull KotlinJvmBinaryClass klass) {

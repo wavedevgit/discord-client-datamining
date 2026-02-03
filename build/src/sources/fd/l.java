@@ -15,30 +15,30 @@ public interface l {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final q f24975a;
+        public final q f24186a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final MediaFormat f24976b;
+        public final MediaFormat f24187b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final Format f24977c;
+        public final Format f24188c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final Surface f24978d;
+        public final Surface f24189d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final MediaCrypto f24979e;
+        public final MediaCrypto f24190e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final int f24980f;
+        public final int f24191f;
 
         private a(q qVar, MediaFormat mediaFormat, Format format, Surface surface, MediaCrypto mediaCrypto, int i10) {
-            this.f24975a = qVar;
-            this.f24976b = mediaFormat;
-            this.f24977c = format;
-            this.f24978d = surface;
-            this.f24979e = mediaCrypto;
-            this.f24980f = i10;
+            this.f24186a = qVar;
+            this.f24187b = mediaFormat;
+            this.f24188c = format;
+            this.f24189d = surface;
+            this.f24190e = mediaCrypto;
+            this.f24191f = i10;
         }
 
         public static a a(q qVar, MediaFormat mediaFormat, Format format, MediaCrypto mediaCrypto) {

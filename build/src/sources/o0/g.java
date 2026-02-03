@@ -41,62 +41,62 @@ import x.z1;
 public final class g {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f42244i = new a(null);
+    public static final a f42372i = new a(null);
 
     /* renamed from: j  reason: collision with root package name */
-    private static final g f42245j = new g();
+    private static final g f42373j = new g();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f42246a = new Object();
+    private final Object f42374a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private w.b f42247b;
+    private w.b f42375b;
 
     /* renamed from: c  reason: collision with root package name */
-    private ListenableFuture f42248c;
+    private ListenableFuture f42376c;
 
     /* renamed from: d  reason: collision with root package name */
-    private ListenableFuture f42249d;
+    private ListenableFuture f42377d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final o0.c f42250e;
+    private final o0.c f42378e;
 
     /* renamed from: f  reason: collision with root package name */
-    private v f42251f;
+    private v f42379f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Context f42252g;
+    private Context f42380g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Map f42253h;
+    private final Map f42381h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: o0.g$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        static final class C0528a extends Lambda implements Function1 {
+        static final class C0536a extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Context f42254d;
+            final /* synthetic */ Context f42382d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0528a(Context context) {
+            C0536a(Context context) {
                 super(1);
-                this.f42254d = context;
+                this.f42382d = context;
             }
 
             @Override // kotlin.jvm.functions.Function1
             /* renamed from: a */
             public final g invoke(v cameraX) {
-                g gVar = g.f42245j;
+                g gVar = g.f42373j;
                 Intrinsics.checkNotNullExpressionValue(cameraX, "cameraX");
                 gVar.w(cameraX);
-                g gVar2 = g.f42245j;
-                Context a10 = b0.e.a(this.f42254d);
+                g gVar2 = g.f42373j;
+                Context a10 = b0.e.a(this.f42382d);
                 Intrinsics.checkNotNullExpressionValue(a10, "getApplicationContext(context)");
                 gVar2.x(a10);
-                return g.f42245j;
+                return g.f42373j;
             }
         }
 
@@ -113,8 +113,8 @@ public final class g {
         public final ListenableFuture b(Context context) {
             Intrinsics.checkNotNullParameter(context, "context");
             b2.e.g(context);
-            ListenableFuture s10 = g.f42245j.s(context);
-            final C0528a c0528a = new C0528a(context);
+            ListenableFuture s10 = g.f42373j.s(context);
+            final C0536a c0536a = new C0536a(context);
             ListenableFuture x10 = n.x(s10, new Function() { // from class: o0.f
                 @Override // androidx.arch.core.util.Function
                 public final Object apply(Object obj) {
@@ -135,26 +135,26 @@ public final class g {
     public static final class b implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c.a f42255a;
+        final /* synthetic */ c.a f42383a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ v f42256b;
+        final /* synthetic */ v f42384b;
 
         b(c.a aVar, v vVar) {
-            this.f42255a = aVar;
-            this.f42256b = vVar;
+            this.f42383a = aVar;
+            this.f42384b = vVar;
         }
 
         @Override // d0.c
         /* renamed from: a */
         public void onSuccess(Void r22) {
-            this.f42255a.c(this.f42256b);
+            this.f42383a.c(this.f42384b);
         }
 
         @Override // d0.c
         public void onFailure(Throwable t10) {
             Intrinsics.checkNotNullParameter(t10, "t");
-            this.f42255a.f(t10);
+            this.f42383a.f(t10);
         }
     }
 
@@ -163,27 +163,27 @@ public final class g {
     public static final class c extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ v f42257d;
+        final /* synthetic */ v f42385d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(v vVar) {
             super(1);
-            this.f42257d = vVar;
+            this.f42385d = vVar;
         }
 
         @Override // kotlin.jvm.functions.Function1
         /* renamed from: a */
         public final ListenableFuture invoke(Void r12) {
-            return this.f42257d.i();
+            return this.f42385d.i();
         }
     }
 
     private g() {
         ListenableFuture p10 = n.p(null);
         Intrinsics.checkNotNullExpressionValue(p10, "immediateFuture<Void>(null)");
-        this.f42249d = p10;
-        this.f42250e = new o0.c();
-        this.f42253h = new HashMap();
+        this.f42377d = p10;
+        this.f42378e = new o0.c();
+        this.f42381h = new HashMap();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -194,9 +194,9 @@ public final class g {
             Object next = it.next();
             Intrinsics.checkNotNullExpressionValue(next, "cameraSelector.cameraFilterSet");
             x.n nVar = (x.n) next;
-            if (!Intrinsics.areEqual(nVar.a(), x.n.f52935a)) {
+            if (!Intrinsics.areEqual(nVar.a(), x.n.f53143a)) {
                 y a10 = b1.a(nVar.a());
-                Context context = this.f42252g;
+                Context context = this.f42380g;
                 Intrinsics.checkNotNull(context);
                 a0.w a11 = a10.a(oVar, context);
                 if (a11 == null) {
@@ -216,7 +216,7 @@ public final class g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final int r() {
-        v vVar = this.f42251f;
+        v vVar = this.f42379f;
         if (vVar == null) {
             return 0;
         }
@@ -226,22 +226,22 @@ public final class g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final ListenableFuture s(Context context) {
-        synchronized (this.f42246a) {
-            ListenableFuture listenableFuture = this.f42248c;
+        synchronized (this.f42374a) {
+            ListenableFuture listenableFuture = this.f42376c;
             if (listenableFuture != null) {
                 Intrinsics.checkNotNull(listenableFuture, "null cannot be cast to non-null type com.google.common.util.concurrent.ListenableFuture<androidx.camera.core.CameraX>");
                 return listenableFuture;
             }
-            final v vVar = new v(context, this.f42247b);
-            ListenableFuture a10 = androidx.concurrent.futures.c.a(new c.InterfaceC0026c() { // from class: o0.d
-                @Override // androidx.concurrent.futures.c.InterfaceC0026c
+            final v vVar = new v(context, this.f42375b);
+            ListenableFuture a10 = androidx.concurrent.futures.c.a(new c.InterfaceC0030c() { // from class: o0.d
+                @Override // androidx.concurrent.futures.c.InterfaceC0030c
                 public final Object a(c.a aVar) {
                     Object t10;
                     t10 = g.t(g.this, vVar, aVar);
                     return t10;
                 }
             });
-            this.f42248c = a10;
+            this.f42376c = a10;
             Intrinsics.checkNotNull(a10, "null cannot be cast to non-null type com.google.common.util.concurrent.ListenableFuture<androidx.camera.core.CameraX>");
             return a10;
         }
@@ -252,8 +252,8 @@ public final class g {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(cameraX, "$cameraX");
         Intrinsics.checkNotNullParameter(completer, "completer");
-        synchronized (this$0.f42246a) {
-            d0.d b10 = d0.d.b(this$0.f42249d);
+        synchronized (this$0.f42374a) {
+            d0.d b10 = d0.d.b(this$0.f42377d);
             final c cVar = new c(cameraX);
             d0.d f10 = b10.f(new d0.a() { // from class: o0.e
                 @Override // d0.a
@@ -265,7 +265,7 @@ public final class g {
             }, c0.a.a());
             Intrinsics.checkNotNullExpressionValue(f10, "cameraX = CameraX(contex…                        )");
             n.j(f10, new b(completer, cameraX), c0.a.a());
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
         }
         return "ProcessCameraProvider-initializeCameraX";
     }
@@ -278,7 +278,7 @@ public final class g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void v(int i10) {
-        v vVar = this.f42251f;
+        v vVar = this.f42379f;
         if (vVar == null) {
             return;
         }
@@ -288,12 +288,12 @@ public final class g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void w(v vVar) {
-        this.f42251f = vVar;
+        this.f42379f = vVar;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void x(Context context) {
-        this.f42252g = context;
+        this.f42380g = context;
     }
 
     public final i n(LifecycleOwner lifecycleOwner, p cameraSelector, y1 useCaseGroup) {
@@ -304,7 +304,7 @@ public final class g {
         try {
             if (r() != 2) {
                 v(1);
-                x0 DEFAULT = x0.f53071f;
+                x0 DEFAULT = x0.f53279f;
                 Intrinsics.checkNotNullExpressionValue(DEFAULT, "DEFAULT");
                 Intrinsics.checkNotNullExpressionValue(DEFAULT, "DEFAULT");
                 z1 c10 = useCaseGroup.c();
@@ -336,7 +336,7 @@ public final class g {
         c4.a.c("CX:bindToLifecycle-internal");
         try {
             b0.p.a();
-            v vVar = this.f42251f;
+            v vVar = this.f42379f;
             Intrinsics.checkNotNull(vVar);
             e0 e10 = primaryCameraSelector.e(vVar.f().a());
             Intrinsics.checkNotNullExpressionValue(e10, "primaryCameraSelector.se…cameraRepository.cameras)");
@@ -345,7 +345,7 @@ public final class g {
             Intrinsics.checkNotNull(q10, "null cannot be cast to non-null type androidx.camera.core.impl.RestrictedCameraInfo");
             g2 g2Var2 = (g2) q10;
             if (pVar != null) {
-                v vVar2 = this.f42251f;
+                v vVar2 = this.f42379f;
                 Intrinsics.checkNotNull(vVar2);
                 e0 e11 = pVar.e(vVar2.f().a());
                 e11.r(false);
@@ -357,8 +357,8 @@ public final class g {
                 e0Var = null;
                 g2Var = null;
             }
-            o0.b c10 = this.f42250e.c(lifecycleOwner, e0.f.B(g2Var2, g2Var));
-            Collection e12 = this.f42250e.e();
+            o0.b c10 = this.f42378e.c(lifecycleOwner, e0.f.B(g2Var2, g2Var));
+            Collection e12 = this.f42378e.e();
             for (x1 x1Var : kotlin.collections.i.R(useCases)) {
                 for (Object lifecycleCameras : e12) {
                     Intrinsics.checkNotNullExpressionValue(lifecycleCameras, "lifecycleCameras");
@@ -372,23 +372,23 @@ public final class g {
                 }
             }
             if (c10 == null) {
-                o0.c cVar = this.f42250e;
-                v vVar3 = this.f42251f;
+                o0.c cVar = this.f42378e;
+                v vVar3 = this.f42379f;
                 Intrinsics.checkNotNull(vVar3);
                 y.a d10 = vVar3.e().d();
-                v vVar4 = this.f42251f;
+                v vVar4 = this.f42379f;
                 Intrinsics.checkNotNull(vVar4);
                 b0 d11 = vVar4.d();
-                v vVar5 = this.f42251f;
+                v vVar5 = this.f42379f;
                 Intrinsics.checkNotNull(vVar5);
                 c10 = cVar.b(lifecycleOwner, new e0.f(e10, e0Var, g2Var2, g2Var, primaryLayoutSettings, secondaryLayoutSettings, d10, d11, vVar5.h()));
             }
             o0.b bVar2 = c10;
             if (useCases.length != 0) {
-                o0.c cVar2 = this.f42250e;
+                o0.c cVar2 = this.f42378e;
                 Intrinsics.checkNotNull(bVar2);
                 List o10 = CollectionsKt.o(Arrays.copyOf(useCases, useCases.length));
-                v vVar6 = this.f42251f;
+                v vVar6 = this.f42379f;
                 Intrinsics.checkNotNull(vVar6);
                 cVar2.a(bVar2, z1Var, effects, o10, vVar6.e().d());
             } else {
@@ -407,20 +407,20 @@ public final class g {
         Intrinsics.checkNotNullParameter(cameraSelector, "cameraSelector");
         c4.a.c("CX:getCameraInfo");
         try {
-            v vVar = this.f42251f;
+            v vVar = this.f42379f;
             Intrinsics.checkNotNull(vVar);
             d0 m10 = cameraSelector.e(vVar.f().a()).m();
             Intrinsics.checkNotNullExpressionValue(m10, "cameraSelector.select(mC…meras).cameraInfoInternal");
             a0.w p10 = p(cameraSelector, m10);
             f.b a10 = f.b.a(m10.b(), p10.N());
             Intrinsics.checkNotNullExpressionValue(a10, "create(\n                …ilityId\n                )");
-            synchronized (this.f42246a) {
-                obj = this.f42253h.get(a10);
+            synchronized (this.f42374a) {
+                obj = this.f42381h.get(a10);
                 if (obj == null) {
                     obj = new g2(m10, p10);
-                    this.f42253h.put(a10, obj);
+                    this.f42381h.put(a10, obj);
                 }
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
             return (g2) obj;
         } finally {
@@ -433,8 +433,8 @@ public final class g {
         try {
             b0.p.a();
             v(0);
-            this.f42250e.k();
-            Unit unit = Unit.f33298a;
+            this.f42378e.k();
+            Unit unit = Unit.f33074a;
         } finally {
             c4.a.f();
         }

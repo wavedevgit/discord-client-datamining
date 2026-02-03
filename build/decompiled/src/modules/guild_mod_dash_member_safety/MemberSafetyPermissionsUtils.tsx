@@ -78,13 +78,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var4.Permissions;
     var _closure1_slot8 = var4;
     var6 = function arg0() {
-        _fun49873: for (var _fun49873_ip = 0;;) switch (_fun49873_ip) {
+        _fun49979: for (var _fun49979_ip = 0;;) switch (_fun49979_ip) {
             case 0:
                 var3 = arguments[1];
                 var0 = undefined;
                 if (!(var3 === var0)) {
-                    _fun49873_ip = 35;
-                    continue _fun49873
+                    _fun49979_ip = 35;
+                    continue _fun49979
                 }
             case 9:
                 var4 = _closure1_slot7;
@@ -111,13 +111,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot9 = var6;
     var5 = function arg0() {
-        _fun49874: for (var _fun49874_ip = 0;;) switch (_fun49874_ip) {
+        _fun49980: for (var _fun49980_ip = 0;;) switch (_fun49980_ip) {
             case 0:
                 var3 = arguments[1];
                 var2 = undefined;
                 if (!(var3 === var2)) {
-                    _fun49874_ip = 35;
-                    continue _fun49874
+                    _fun49980_ip = 35;
+                    continue _fun49980
                 }
             case 9:
                 var4 = _closure1_slot4;
@@ -136,13 +136,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot10 = var5;
     var4 = function arg0() {
-        _fun49875: for (var _fun49875_ip = 0;;) switch (_fun49875_ip) {
+        _fun49981: for (var _fun49981_ip = 0;;) switch (_fun49981_ip) {
             case 0:
                 var3 = arguments[1];
                 var2 = undefined;
                 if (!(var3 === var2)) {
-                    _fun49875_ip = 35;
-                    continue _fun49875
+                    _fun49981_ip = 35;
+                    continue _fun49981
                 }
             case 9:
                 var4 = _closure1_slot4;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.hasBulkBanningPermissions = var4;
     var2.useCanAccessMemberSafetyPage = var3;
     var3 = function arg0() {
-        _fun49876: for (var _fun49876_ip = 0;;) switch (_fun49876_ip) {
+        _fun49982: for (var _fun49982_ip = 0;;) switch (_fun49982_ip) {
             case 0:
                 var6 = arg0;
                 var _closure2_slot0 = var6;
@@ -206,8 +206,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var4.bind(var5)(var3, var1, var2);
                 if (!var0) {
-                    _fun49876_ip = 94;
-                    continue _fun49876
+                    _fun49982_ip = 94;
+                    continue _fun49982
                 }
             case 91:
                 var0 = var1;
@@ -234,7 +234,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun49879: for (var _fun49879_ip = 0;;) switch (_fun49879_ip) {
+            _fun49985: for (var _fun49985_ip = 0;;) switch (_fun49985_ip) {
                 case 0:
                     var3 = _closure1_slot4;
                     var2 = var3.getGuild;
@@ -243,8 +243,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 != var4;
                     if (!var0) {
-                        _fun49879_ip = 59;
-                        continue _fun49879
+                        _fun49985_ip = 59;
+                        continue _fun49985
                     }
                 case 33:
                     var3 = _closure1_slot5;
@@ -284,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[1] = var6;
         var1[2] = var5;
         var0 = function() { // Environment: var0
-            _fun49881: for (var _fun49881_ip = 0;;) switch (_fun49881_ip) {
+            _fun49987: for (var _fun49987_ip = 0;;) switch (_fun49987_ip) {
                 case 0:
                     var4 = _closure1_slot4;
                     var1 = var4.getGuild;
@@ -293,14 +293,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 != var6;
                     if (!var0) {
-                        _fun49881_ip = 74;
-                        continue _fun49881
+                        _fun49987_ip = 74;
+                        continue _fun49987
                     }
                 case 33:
                     var1 = _closure2_slot1;
                     if (!var1) {
-                        _fun49881_ip = 71;
-                        continue _fun49881
+                        _fun49987_ip = 71;
+                        continue _fun49987
                     }
                 case 40:
                     var5 = _closure1_slot5;
@@ -320,7 +320,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanBulkBanUser = var3;
     var1 = function arg0, arg1, arg2() {
-        _fun49882: for (var _fun49882_ip = 0;;) switch (_fun49882_ip) {
+        _fun49988: for (var _fun49988_ip = 0;;) switch (_fun49988_ip) {
             case 0:
                 var1 = arg1;
                 var4 = _closure1_slot4;
@@ -330,13 +330,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var6;
                 if (!var0) {
-                    _fun49882_ip = 68;
-                    continue _fun49882
+                    _fun49988_ip = 68;
+                    continue _fun49988
                 }
             case 32:
                 if (!var1) {
-                    _fun49882_ip = 65;
-                    continue _fun49882
+                    _fun49988_ip = 65;
+                    continue _fun49988
                 }
             case 35:
                 var5 = _closure1_slot5;
@@ -353,4 +353,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canBulkBanUser = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1410, 3052, 1613, 3056, 660, 484, 3057, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1410, 3082, 1613, 3086, 660, 484, 3087, 566, 2]);

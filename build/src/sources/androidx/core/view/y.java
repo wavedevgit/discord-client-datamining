@@ -6,18 +6,18 @@ import android.view.ViewTreeObserver;
 public final class y implements ViewTreeObserver.OnPreDrawListener, View.OnAttachStateChangeListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private final View f3432d;
+    private final View f3476d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ViewTreeObserver f3433e;
+    private ViewTreeObserver f3477e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Runnable f3434i;
+    private final Runnable f3478i;
 
     private y(View view, Runnable runnable) {
-        this.f3432d = view;
-        this.f3433e = view.getViewTreeObserver();
-        this.f3434i = runnable;
+        this.f3476d = view;
+        this.f3477e = view.getViewTreeObserver();
+        this.f3478i = runnable;
     }
 
     public static y a(View view, Runnable runnable) {
@@ -34,24 +34,24 @@ public final class y implements ViewTreeObserver.OnPreDrawListener, View.OnAttac
     }
 
     public void b() {
-        if (this.f3433e.isAlive()) {
-            this.f3433e.removeOnPreDrawListener(this);
+        if (this.f3477e.isAlive()) {
+            this.f3477e.removeOnPreDrawListener(this);
         } else {
-            this.f3432d.getViewTreeObserver().removeOnPreDrawListener(this);
+            this.f3476d.getViewTreeObserver().removeOnPreDrawListener(this);
         }
-        this.f3432d.removeOnAttachStateChangeListener(this);
+        this.f3476d.removeOnAttachStateChangeListener(this);
     }
 
     @Override // android.view.ViewTreeObserver.OnPreDrawListener
     public boolean onPreDraw() {
         b();
-        this.f3434i.run();
+        this.f3478i.run();
         return true;
     }
 
     @Override // android.view.View.OnAttachStateChangeListener
     public void onViewAttachedToWindow(View view) {
-        this.f3433e = view.getViewTreeObserver();
+        this.f3477e = view.getViewTreeObserver();
     }
 
     @Override // android.view.View.OnAttachStateChangeListener

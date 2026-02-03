@@ -5,37 +5,37 @@ import ui.c;
 final class f6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final f6 f43033a = new f6();
+    static final f6 f43161a = new f6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43034b;
+    private static final ui.c f43162b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43035c;
+    private static final ui.c f43163c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43036d;
+    private static final ui.c f43164d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43037e;
+    private static final ui.c f43165e;
 
     static {
         c.b a10 = ui.c.a("category");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43034b = a10.b(s1Var.b()).a();
+        f43162b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("classificationConfidence");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43035c = a11.b(s1Var2.b()).a();
+        f43163c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("trackingId");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43036d = a12.b(s1Var3.b()).a();
+        f43164d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("labelCount");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43037e = a13.b(s1Var4.b()).a();
+        f43165e = a13.b(s1Var4.b()).a();
     }
 
     private f6() {

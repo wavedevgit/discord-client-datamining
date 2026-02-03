@@ -6,47 +6,47 @@ import java.io.Serializable;
 public final class o0 implements Serializable, n0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient t0 f15077d = new t0();
+    private final transient t0 f14706d = new t0();
 
     /* renamed from: e  reason: collision with root package name */
-    final n0 f15078e;
+    final n0 f14707e;
 
     /* renamed from: i  reason: collision with root package name */
-    volatile transient boolean f15079i;
+    volatile transient boolean f14708i;
 
     /* renamed from: o  reason: collision with root package name */
-    transient Object f15080o;
+    transient Object f14709o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o0(n0 n0Var) {
-        this.f15078e = n0Var;
+        this.f14707e = n0Var;
     }
 
     public final String toString() {
         Object obj;
-        if (this.f15079i) {
-            obj = "<supplier that returned " + String.valueOf(this.f15080o) + ">";
+        if (this.f14708i) {
+            obj = "<supplier that returned " + String.valueOf(this.f14709o) + ">";
         } else {
-            obj = this.f15078e;
+            obj = this.f14707e;
         }
         return "Suppliers.memoize(" + obj.toString() + ")";
     }
 
     @Override // com.google.android.gms.internal.fido.n0
     public final Object zza() {
-        if (!this.f15079i) {
-            synchronized (this.f15077d) {
+        if (!this.f14708i) {
+            synchronized (this.f14706d) {
                 try {
-                    if (!this.f15079i) {
-                        Object zza = this.f15078e.zza();
-                        this.f15080o = zza;
-                        this.f15079i = true;
+                    if (!this.f14708i) {
+                        Object zza = this.f14707e.zza();
+                        this.f14709o = zza;
+                        this.f14708i = true;
                         return zza;
                     }
                 } finally {
                 }
             }
         }
-        return this.f15080o;
+        return this.f14709o;
     }
 }

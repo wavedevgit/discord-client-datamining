@@ -4,7 +4,7 @@ import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.fabric.FabricUIManager;
 import com.facebook.react.uimanager.events.RCTModernEventEmitter;
-import ir.c;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;

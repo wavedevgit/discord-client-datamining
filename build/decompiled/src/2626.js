@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22021: for (var _fun22021_ip = 0;;) switch (_fun22021_ip) {
+    _fun22033: for (var _fun22033_ip = 0;;) switch (_fun22033_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun22021_ip = 77;
-                continue _fun22021
+                _fun22033_ip = 77;
+                continue _fun22033
             }
         case 65:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun22021_ip = 86;
-                continue _fun22021
+                _fun22033_ip = 86;
+                continue _fun22033
             }
         case 77:
             var2 = {};
@@ -41,7 +41,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = undefined;
                 var0 = arg0;
                 var1 = var2.bind(var1)(var0);
-                var0 = 'e';
+                var0 = '.';
                 var0 = var1 + var0;
                 return var0;
             };
@@ -49,11 +49,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var5 = {};
-            var8 = ['v.C.', 'n.C.'];
+            var8 = ['ie.', 'isz.'];
             var5.narrow = var8;
-            var8 = ['v.Chr.', 'n.Chr.'];
+            var8 = ['i. e.', 'i. sz.'];
             var5.abbreviated = var8;
-            var8 = ['voor Christus', 'na Christus'];
+            var8 = ['Krisztus előtt', 'időszámításunk szerint'];
             var5.wide = var8;
             var4.values = var5;
             var5 = 'wide';
@@ -63,11 +63,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var8 = {};
-            var9 = ['1', '2', '3', '4'];
+            var9 = ['1.', '2.', '3.', '4.'];
             var8.narrow = var9;
-            var9 = ['K1', 'K2', 'K3', 'K4'];
+            var9 = ['1. n.év', '2. n.év', '3. n.év', '4. n.év'];
             var8.abbreviated = var9;
-            var9 = ['1e kwartaal', '2e kwartaal', '3e kwartaal', '4e kwartaal'];
+            var9 = ['1. negyedév', '2. negyedév', '3. negyedév', '4. negyedév'];
             var8.wide = var9;
             var4.values = var8;
             var4.defaultWidth = var5;
@@ -78,16 +78,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
             };
             var4.argumentCallback = var7;
+            var7 = {};
+            var8 = ['I.', 'II.', 'III.', 'IV.'];
+            var7.narrow = var8;
+            var8 = ['I. n.év', 'II. n.év', 'III. n.év', 'IV. n.év'];
+            var7.abbreviated = var8;
+            var8 = ['I. negyedév', 'II. negyedév', 'III. negyedév', 'IV. negyedév'];
+            var7.wide = var8;
+            var4.formattingValues = var7;
+            var4.defaultFormattingWidth = var5;
             var4 = var6.bind(var0)(var4);
             var2.quarter = var4;
             var6 = var3.default;
             var4 = {};
             var7 = {};
-            var8 = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
+            var8 = ['J', 'F', 'M', 'Á', 'M', 'J', 'J', 'A', 'Sz', 'O', 'N', 'D'];
             var7.narrow = var8;
-            var8 = ['jan.', 'feb.', 'mrt.', 'apr.', 'mei', 'jun.', 'jul.', 'aug.', 'sep.', 'okt.', 'nov.', 'dec.'];
+            var8 = ['jan.', 'febr.', 'márc.', 'ápr.', 'máj.', 'jún.', 'júl.', 'aug.', 'szept.', 'okt.', 'nov.', 'dec.'];
             var7.abbreviated = var8;
-            var8 = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
+            var8 = ['január', 'február', 'március', 'április', 'május', 'június', 'július', 'augusztus', 'szeptember', 'október', 'november', 'december'];
             var7.wide = var8;
             var4.values = var7;
             var4.defaultWidth = var5;
@@ -96,13 +105,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var7 = {};
-            var8 = ['Z', 'M', 'D', 'W', 'D', 'V', 'Z'];
+            var8 = ['V', 'H', 'K', 'Sz', 'Cs', 'P', 'Sz'];
             var7.narrow = var8;
-            var8 = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'];
+            var8 = ['V', 'H', 'K', 'Sze', 'Cs', 'P', 'Szo'];
             var7.short = var8;
-            var8 = ['zon', 'maa', 'din', 'woe', 'don', 'vri', 'zat'];
+            var8 = ['V', 'H', 'K', 'Sze', 'Cs', 'P', 'Szo'];
             var7.abbreviated = var8;
-            var8 = ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'];
+            var8 = ['vasárnap', 'hétfő', 'kedd', 'szerda', 'csütörtök', 'péntek', 'szombat'];
             var7.wide = var8;
             var4.values = var7;
             var4.defaultWidth = var5;
@@ -112,36 +121,36 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = {};
             var6 = {};
             var7 = {
-                'am': 'AM',
-                'pm': 'PM',
-                'midnight': 'middernacht',
-                'noon': 'het middaguur',
-                'morning': "'s ochtends",
-                'afternoon': "'s middags",
-                'evening': "'s avonds",
-                'night': "'s nachts"
+                'am': 'de.',
+                'pm': 'du.',
+                'midnight': 'éjfél',
+                'noon': 'dél',
+                'morning': 'reggel',
+                'afternoon': 'du.',
+                'evening': 'este',
+                'night': 'éjjel'
             };
             var6.narrow = var7;
             var7 = {
-                'am': 'AM',
-                'pm': 'PM',
-                'midnight': 'middernacht',
-                'noon': 'het middaguur',
-                'morning': "'s ochtends",
-                'afternoon': "'s middags",
-                'evening': "'s avonds",
-                'night': "'s nachts"
+                'am': 'de.',
+                'pm': 'du.',
+                'midnight': 'éjfél',
+                'noon': 'dél',
+                'morning': 'reggel',
+                'afternoon': 'du.',
+                'evening': 'este',
+                'night': 'éjjel'
             };
             var6.abbreviated = var7;
             var7 = {
-                'am': 'AM',
-                'pm': 'PM',
-                'midnight': 'middernacht',
-                'noon': 'het middaguur',
-                'morning': "'s ochtends",
-                'afternoon': "'s middags",
-                'evening': "'s avonds",
-                'night': "'s nachts"
+                'am': 'de.',
+                'pm': 'du.',
+                'midnight': 'éjfél',
+                'noon': 'dél',
+                'morning': 'reggel',
+                'afternoon': 'délután',
+                'evening': 'este',
+                'night': 'éjjel'
             };
             var6.wide = var7;
             var3.values = var6;

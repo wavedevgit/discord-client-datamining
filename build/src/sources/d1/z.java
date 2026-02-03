@@ -5,7 +5,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class z extends c {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public z(String name, int i10) {
-        super(name, b.f21536a.c(), i10, null);
+        super(name, b.f21112a.c(), i10, null);
         Intrinsics.checkNotNullParameter(name, "name");
     }
 

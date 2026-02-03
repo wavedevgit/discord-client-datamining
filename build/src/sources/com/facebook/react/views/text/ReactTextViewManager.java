@@ -17,9 +17,9 @@ import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.views.text.ReactTextViewAccessibilityDelegate;
 import com.facebook.react.views.text.internal.span.TextInlineImageSpan;
-import ir.v;
 import java.util.HashMap;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.o0;
@@ -183,8 +183,8 @@ public final class ReactTextViewManager extends ReactTextAnchorViewManager<React
             }
             view.setTag(i10, accessibilityLinks);
             ReactTextViewAccessibilityDelegate.Companion.resetDelegate(view, view.isFocusable(), view.getImportantForAccessibility());
-            Unit unit = Unit.f33298a;
-            ur.a.a(systraceSection, null);
+            Unit unit = Unit.f33074a;
+            vr.a.a(systraceSection, null);
         } finally {
         }
     }
@@ -198,13 +198,13 @@ public final class ReactTextViewManager extends ReactTextAnchorViewManager<React
         try {
             ReadableMapBuffer stateDataMapBuffer = stateWrapper.getStateDataMapBuffer();
             Object reactTextUpdate = stateDataMapBuffer != null ? getReactTextUpdate(view, props, stateDataMapBuffer) : null;
-            ur.a.a(systraceSection, null);
+            vr.a.a(systraceSection, null);
             return reactTextUpdate;
         } catch (Throwable th2) {
             try {
                 throw th2;
             } catch (Throwable th3) {
-                ur.a.a(systraceSection, th2);
+                vr.a.a(systraceSection, th2);
                 throw th3;
             }
         }

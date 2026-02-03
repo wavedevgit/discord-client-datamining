@@ -30,19 +30,19 @@ public final class DeserializedDescriptorResolver {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f34500a = x0.c(KotlinClassHeader.Kind.CLASS);
+    private static final Set f34276a = x0.c(KotlinClassHeader.Kind.CLASS);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Set f34501b = x0.i(KotlinClassHeader.Kind.FILE_FACADE, KotlinClassHeader.Kind.MULTIFILE_CLASS_PART);
+    private static final Set f34277b = x0.i(KotlinClassHeader.Kind.FILE_FACADE, KotlinClassHeader.Kind.MULTIFILE_CLASS_PART);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final MetadataVersion f34502c = new MetadataVersion(1, 1, 2);
+    private static final MetadataVersion f34278c = new MetadataVersion(1, 1, 2);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final MetadataVersion f34503d = new MetadataVersion(1, 1, 11);
+    private static final MetadataVersion f34279d = new MetadataVersion(1, 1, 11);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final MetadataVersion f34504e = new MetadataVersion(1, 1, 13);
+    private static final MetadataVersion f34280e = new MetadataVersion(1, 1, 13);
     public DeserializationComponents components;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -53,7 +53,7 @@ public final class DeserializedDescriptorResolver {
 
         @NotNull
         public final MetadataVersion getKOTLIN_1_3_RC_METADATA_VERSION$descriptors_jvm() {
-            return DeserializedDescriptorResolver.f34504e;
+            return DeserializedDescriptorResolver.f34280e;
         }
 
         private Companion() {
@@ -91,14 +91,14 @@ public final class DeserializedDescriptorResolver {
     }
 
     private final boolean g(KotlinJvmBinaryClass kotlinJvmBinaryClass) {
-        if (!getComponents().getConfiguration().getSkipPrereleaseCheck() && kotlinJvmBinaryClass.getClassHeader().isPreRelease() && Intrinsics.areEqual(kotlinJvmBinaryClass.getClassHeader().getMetadataVersion(), f34503d)) {
+        if (!getComponents().getConfiguration().getSkipPrereleaseCheck() && kotlinJvmBinaryClass.getClassHeader().isPreRelease() && Intrinsics.areEqual(kotlinJvmBinaryClass.getClassHeader().getMetadataVersion(), f34279d)) {
             return true;
         }
         return false;
     }
 
     private final boolean h(KotlinJvmBinaryClass kotlinJvmBinaryClass) {
-        if ((getComponents().getConfiguration().getReportErrorsOnPreReleaseDependencies() && (kotlinJvmBinaryClass.getClassHeader().isPreRelease() || Intrinsics.areEqual(kotlinJvmBinaryClass.getClassHeader().getMetadataVersion(), f34502c))) || g(kotlinJvmBinaryClass)) {
+        if ((getComponents().getConfiguration().getReportErrorsOnPreReleaseDependencies() && (kotlinJvmBinaryClass.getClassHeader().isPreRelease() || Intrinsics.areEqual(kotlinJvmBinaryClass.getClassHeader().getMetadataVersion(), f34278c))) || g(kotlinJvmBinaryClass)) {
             return true;
         }
         return false;
@@ -121,7 +121,7 @@ public final class DeserializedDescriptorResolver {
         Pair<JvmNameResolver, ProtoBuf.Package> pair;
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         Intrinsics.checkNotNullParameter(kotlinClass, "kotlinClass");
-        String[] i10 = i(kotlinClass, f34501b);
+        String[] i10 = i(kotlinClass, f34277b);
         if (i10 == null || (strings = kotlinClass.getClassHeader().getStrings()) == null) {
             return null;
         }
@@ -144,7 +144,7 @@ public final class DeserializedDescriptorResolver {
         JvmNameResolver jvmNameResolver = (JvmNameResolver) pair.a();
         ProtoBuf.Package r42 = (ProtoBuf.Package) pair.b();
         JvmPackagePartSource jvmPackagePartSource = new JvmPackagePartSource(kotlinClass, r42, jvmNameResolver, d(kotlinClass), h(kotlinClass), c(kotlinClass));
-        return new DeserializedPackageMemberScope(descriptor, r42, jvmNameResolver, kotlinClass.getClassHeader().getMetadataVersion(), jvmPackagePartSource, getComponents(), "scope for " + jvmPackagePartSource + " in " + descriptor, d.f34551d);
+        return new DeserializedPackageMemberScope(descriptor, r42, jvmNameResolver, kotlinClass.getClassHeader().getMetadataVersion(), jvmPackagePartSource, getComponents(), "scope for " + jvmPackagePartSource + " in " + descriptor, d.f34327d);
     }
 
     @NotNull
@@ -161,7 +161,7 @@ public final class DeserializedDescriptorResolver {
         String[] strings;
         Pair<JvmNameResolver, ProtoBuf.Class> pair;
         Intrinsics.checkNotNullParameter(kotlinClass, "kotlinClass");
-        String[] i10 = i(kotlinClass, f34500a);
+        String[] i10 = i(kotlinClass, f34276a);
         if (i10 == null || (strings = kotlinClass.getClassHeader().getStrings()) == null) {
             return null;
         }

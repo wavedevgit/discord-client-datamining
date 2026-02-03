@@ -1,20 +1,28 @@
 package wo;
 
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
+import android.content.Context;
+import uq.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class d {
-    public static final c a(Object obj, Object baseScreen, String compatibilityKey) {
-        Intrinsics.checkNotNullParameter(obj, "<this>");
-        Intrinsics.checkNotNullParameter(baseScreen, "baseScreen");
-        Intrinsics.checkNotNullParameter(compatibilityKey, "compatibilityKey");
-        return b(new xm.c(obj, CollectionsKt.l()), baseScreen, compatibilityKey);
+public final class d implements uq.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final h f52864a;
+
+    public d(h hVar) {
+        this.f52864a = hVar;
     }
 
-    public static final c b(xm.c cVar, Object baseScreen, String compatibilityKey) {
-        Intrinsics.checkNotNullParameter(cVar, "<this>");
-        Intrinsics.checkNotNullParameter(baseScreen, "baseScreen");
-        Intrinsics.checkNotNullParameter(compatibilityKey, "compatibilityKey");
-        return new c(baseScreen, CollectionsKt.e(cVar), compatibilityKey);
+    public static d a(h hVar) {
+        return new d(hVar);
+    }
+
+    public static b c(Context context) {
+        return new b(context);
+    }
+
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public b get() {
+        return c((Context) this.f52864a.get());
     }
 }

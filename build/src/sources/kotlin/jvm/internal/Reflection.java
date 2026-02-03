@@ -1,6 +1,6 @@
 package kotlin.jvm.internal;
 
-import cs.a3;
+import ds.a3;
 import java.util.Arrays;
 import java.util.Collections;
 import kotlin.collections.i;

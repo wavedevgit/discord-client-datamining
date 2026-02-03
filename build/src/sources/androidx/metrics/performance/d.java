@@ -13,28 +13,28 @@ import kotlin.jvm.internal.Intrinsics;
 public class d extends o3.c {
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f4618p = new a(null);
+    public static final a f4662p = new a(null);
 
     /* renamed from: q  reason: collision with root package name */
-    private static Handler f4619q;
+    private static Handler f4663q;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Window f4620j;
+    private final Window f4664j;
 
     /* renamed from: k  reason: collision with root package name */
-    private long f4621k;
+    private long f4665k;
 
     /* renamed from: l  reason: collision with root package name */
-    private long f4622l;
+    private long f4666l;
 
     /* renamed from: m  reason: collision with root package name */
-    private long f4623m;
+    private long f4667m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final o3.a f4624n;
+    private final o3.a f4668n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Window.OnFrameMetricsAvailableListener f4625o;
+    private final Window.OnFrameMetricsAvailableListener f4669o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -52,9 +52,9 @@ public class d extends o3.c {
         Intrinsics.checkNotNullParameter(jankStats, "jankStats");
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(window, "window");
-        this.f4620j = window;
-        this.f4624n = new o3.a(0L, 0L, 0L, false, h());
-        this.f4625o = new Window.OnFrameMetricsAvailableListener() { // from class: o3.d
+        this.f4664j = window;
+        this.f4668n = new o3.a(0L, 0L, 0L, false, h());
+        this.f4669o = new Window.OnFrameMetricsAvailableListener() { // from class: o3.d
             @Override // android.view.Window.OnFrameMetricsAvailableListener
             public final void onFrameMetricsAvailable(Window window2, FrameMetrics frameMetrics, int i10) {
                 androidx.metrics.performance.d.j(androidx.metrics.performance.d.this, jankStats, window2, frameMetrics, i10);
@@ -67,31 +67,31 @@ public class d extends o3.c {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(jankStats, "$jankStats");
         Intrinsics.checkNotNullExpressionValue(frameMetrics, "frameMetrics");
-        long max = Math.max(this$0.m(frameMetrics), this$0.f4623m);
-        if (max >= this$0.f4622l && max != this$0.f4621k) {
+        long max = Math.max(this$0.m(frameMetrics), this$0.f4667m);
+        if (max >= this$0.f4666l && max != this$0.f4665k) {
             jankStats.b(this$0.l(max, ((float) this$0.k(frameMetrics)) * jankStats.a(), frameMetrics));
-            this$0.f4621k = max;
+            this$0.f4665k = max;
         }
     }
 
     private final androidx.metrics.performance.a n(Window window) {
-        androidx.metrics.performance.a aVar = (androidx.metrics.performance.a) window.getDecorView().getTag(o3.g.f42397a);
+        androidx.metrics.performance.a aVar = (androidx.metrics.performance.a) window.getDecorView().getTag(o3.g.f42525a);
         if (aVar == null) {
             androidx.metrics.performance.a aVar2 = new androidx.metrics.performance.a(new ArrayList());
-            if (f4619q == null) {
+            if (f4663q == null) {
                 HandlerThread handlerThread = new HandlerThread("FrameMetricsAggregator");
                 handlerThread.start();
-                f4619q = new Handler(handlerThread.getLooper());
+                f4663q = new Handler(handlerThread.getLooper());
             }
-            window.addOnFrameMetricsAvailableListener(aVar2, f4619q);
-            window.getDecorView().setTag(o3.g.f42397a, aVar2);
+            window.addOnFrameMetricsAvailableListener(aVar2, f4663q);
+            window.getDecorView().setTag(o3.g.f42525a, aVar2);
             return aVar2;
         }
         return aVar;
     }
 
     private final void p(Window window, Window.OnFrameMetricsAvailableListener onFrameMetricsAvailableListener) {
-        androidx.metrics.performance.a aVar = (androidx.metrics.performance.a) window.getDecorView().getTag(o3.g.f42397a);
+        androidx.metrics.performance.a aVar = (androidx.metrics.performance.a) window.getDecorView().getTag(o3.g.f42525a);
         if (aVar != null) {
             aVar.b(onFrameMetricsAvailableListener, window);
         }
@@ -99,18 +99,18 @@ public class d extends o3.c {
 
     @Override // androidx.metrics.performance.f
     public void c(boolean z10) {
-        synchronized (this.f4620j) {
+        synchronized (this.f4664j) {
             try {
                 if (z10) {
-                    if (this.f4622l == 0) {
-                        n(this.f4620j).a(this.f4625o);
-                        this.f4622l = System.nanoTime();
+                    if (this.f4666l == 0) {
+                        n(this.f4664j).a(this.f4669o);
+                        this.f4666l = System.nanoTime();
                     }
                 } else {
-                    p(this.f4620j, this.f4625o);
-                    this.f4622l = 0L;
+                    p(this.f4664j, this.f4669o);
+                    this.f4666l = 0L;
                 }
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -126,18 +126,18 @@ public class d extends o3.c {
         boolean z10;
         Intrinsics.checkNotNullParameter(frameMetrics, "frameMetrics");
         long metric = frameMetrics.getMetric(0) + frameMetrics.getMetric(1) + frameMetrics.getMetric(2) + frameMetrics.getMetric(3) + frameMetrics.getMetric(4) + frameMetrics.getMetric(5);
-        this.f4623m = j10 + metric;
+        this.f4667m = j10 + metric;
         g a10 = g().a();
         if (a10 != null) {
-            a10.c(j10, this.f4623m, h());
+            a10.c(j10, this.f4667m, h());
         }
         if (metric > j11) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f4624n.g(j10, metric, frameMetrics.getMetric(8), z10);
-        return this.f4624n;
+        this.f4668n.g(j10, metric, frameMetrics.getMetric(8), z10);
+        return this.f4668n;
     }
 
     public long m(FrameMetrics frameMetrics) {
@@ -146,10 +146,10 @@ public class d extends o3.c {
     }
 
     public final long o() {
-        return this.f4623m;
+        return this.f4667m;
     }
 
     public final void q(long j10) {
-        this.f4623m = j10;
+        this.f4667m = j10;
     }
 }

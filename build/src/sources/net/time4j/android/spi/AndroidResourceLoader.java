@@ -18,47 +18,47 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.ServiceLoader;
 import java.util.Set;
-import kt.o;
-import kt.u;
-import kt.x;
-import kt.y;
+import lt.o;
+import lt.u;
+import lt.x;
+import lt.y;
 import net.time4j.tz.r;
 import net.time4j.tz.s;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class AndroidResourceLoader extends gt.d {
+public class AndroidResourceLoader extends ht.d {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Map f40377f;
+    private static final Map f40240f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Set f40378g;
+    private static final Set f40241g;
 
     /* renamed from: d  reason: collision with root package name */
-    private Context f40379d = null;
+    private Context f40242d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f40380e = Collections.EMPTY_LIST;
+    private List f40243e = Collections.EMPTY_LIST;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f40381a;
+        static final /* synthetic */ int[] f40244a;
 
         static {
-            int[] iArr = new int[kt.e.values().length];
-            f40381a = iArr;
+            int[] iArr = new int[lt.e.values().length];
+            f40244a = iArr;
             try {
-                iArr[kt.e.FULL.ordinal()] = 1;
+                iArr[lt.e.FULL.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f40381a[kt.e.LONG.ordinal()] = 2;
+                f40244a[lt.e.LONG.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f40381a[kt.e.MEDIUM.ordinal()] = 3;
+                f40244a[lt.e.MEDIUM.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -66,15 +66,15 @@ public class AndroidResourceLoader extends gt.d {
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public class b implements mt.c {
+    public class b implements nt.c {
         private b() {
         }
 
-        private mt.c a() {
-            return c.f40383a;
+        private nt.c b() {
+            return c.f40246a;
         }
 
-        private String b(String str) {
+        private String d(String str) {
             StringBuilder sb2 = new StringBuilder();
             int length = str.length();
             int i10 = 0;
@@ -107,53 +107,53 @@ public class AndroidResourceLoader extends gt.d {
             return sb2.toString();
         }
 
-        @Override // kt.f
-        public String c(kt.e eVar, Locale locale) {
-            return a().c(eVar, locale);
+        @Override // lt.f
+        public String a(lt.e eVar, Locale locale) {
+            return j(eVar, locale, false);
         }
 
-        @Override // kt.f
-        public String d(kt.e eVar, Locale locale) {
-            return i(eVar, locale, false);
+        @Override // lt.f
+        public String c(lt.e eVar, lt.e eVar2, Locale locale) {
+            return b().c(eVar, eVar2, locale);
         }
 
-        @Override // kt.f
-        public String f(kt.e eVar, kt.e eVar2, Locale locale) {
-            return a().f(eVar, eVar2, locale);
+        @Override // lt.f
+        public String h(lt.e eVar, Locale locale) {
+            return b().h(eVar, locale);
         }
 
-        @Override // mt.c
-        public String i(kt.e eVar, Locale locale, boolean z10) {
+        @Override // nt.c
+        public String j(lt.e eVar, Locale locale, boolean z10) {
             String str;
             boolean z11;
             String str2;
-            String i10 = a().i(eVar, locale, z10);
+            String j10 = b().j(eVar, locale, z10);
             if (Locale.getDefault().equals(locale)) {
-                kt.e eVar2 = kt.e.SHORT;
+                lt.e eVar2 = lt.e.SHORT;
                 if (eVar != eVar2) {
-                    str = a().d(eVar2, locale);
+                    str = b().a(eVar2, locale);
                 } else {
-                    str = i10;
+                    str = j10;
                 }
                 if (str.indexOf(97) == -1) {
                     z11 = true;
                 } else {
                     z11 = false;
                 }
-                boolean is24HourFormat = DateFormat.is24HourFormat(AndroidResourceLoader.this.f40379d);
+                boolean is24HourFormat = DateFormat.is24HourFormat(AndroidResourceLoader.this.f40242d);
                 if (is24HourFormat != z11) {
                     if (is24HourFormat) {
-                        return b(i10).replace("  ", " ").trim();
+                        return d(j10).replace("  ", " ").trim();
                     }
                     if (locale.getLanguage().equals("en")) {
                         str2 = "b";
                     } else {
                         str2 = "B";
                     }
-                    int i11 = a.f40381a[eVar.ordinal()];
-                    if (i11 != 1) {
-                        if (i11 != 2) {
-                            if (i11 != 3) {
+                    int i10 = a.f40244a[eVar.ordinal()];
+                    if (i10 != 1) {
+                        if (i10 != 2) {
+                            if (i10 != 3) {
                                 return "h:mm " + str2;
                             }
                             return "h:mm:ss " + str2;
@@ -163,7 +163,7 @@ public class AndroidResourceLoader extends gt.d {
                     return "h:mm:ss " + str2 + " zzzz";
                 }
             }
-            return i10;
+            return j10;
         }
 
         /* synthetic */ b(AndroidResourceLoader androidResourceLoader, a aVar) {
@@ -176,23 +176,23 @@ public class AndroidResourceLoader extends gt.d {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final pt.c f40383a;
+        private static final qt.c f40246a;
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Iterable f40384b;
+        private static final Iterable f40247b;
 
         /* renamed from: c  reason: collision with root package name */
-        private static final Iterable f40385c;
+        private static final Iterable f40248c;
 
         /* renamed from: d  reason: collision with root package name */
-        private static final Iterable f40386d;
+        private static final Iterable f40249d;
 
         static {
-            pt.c cVar = new pt.c();
-            f40383a = cVar;
-            f40384b = Collections.singleton(pt.f.f46230d);
-            f40385c = Collections.singletonList(new pt.i());
-            f40386d = Collections.unmodifiableList(Arrays.asList(cVar, new net.time4j.calendar.service.b()));
+            qt.c cVar = new qt.c();
+            f40246a = cVar;
+            f40247b = Collections.singleton(qt.f.f47887d);
+            f40248c = Collections.singletonList(new qt.i());
+            f40249d = Collections.unmodifiableList(Arrays.asList(cVar, new net.time4j.calendar.service.b()));
         }
     }
 
@@ -203,7 +203,7 @@ public class AndroidResourceLoader extends gt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return l.f40388b.iterator();
+            return l.f40251b.iterator();
         }
 
         /* synthetic */ d(a aVar) {
@@ -218,7 +218,7 @@ public class AndroidResourceLoader extends gt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return m.f40391c.iterator();
+            return m.f40254c.iterator();
         }
 
         /* synthetic */ e(a aVar) {
@@ -233,7 +233,7 @@ public class AndroidResourceLoader extends gt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return c.f40384b.iterator();
+            return c.f40247b.iterator();
         }
 
         /* synthetic */ f(a aVar) {
@@ -248,7 +248,7 @@ public class AndroidResourceLoader extends gt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return l.f40387a.iterator();
+            return l.f40250a.iterator();
         }
 
         /* synthetic */ g(a aVar) {
@@ -263,7 +263,7 @@ public class AndroidResourceLoader extends gt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return c.f40386d.iterator();
+            return c.f40249d.iterator();
         }
 
         /* synthetic */ h(a aVar) {
@@ -278,7 +278,7 @@ public class AndroidResourceLoader extends gt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return c.f40385c.iterator();
+            return c.f40248c.iterator();
         }
 
         /* synthetic */ i(a aVar) {
@@ -293,7 +293,7 @@ public class AndroidResourceLoader extends gt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return m.f40390b.iterator();
+            return m.f40253b.iterator();
         }
 
         /* synthetic */ j(a aVar) {
@@ -308,7 +308,7 @@ public class AndroidResourceLoader extends gt.d {
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return m.f40389a.iterator();
+            return m.f40252a.iterator();
         }
 
         /* synthetic */ k(a aVar) {
@@ -320,35 +320,35 @@ public class AndroidResourceLoader extends gt.d {
     private static final class l {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final Iterable f40387a = Collections.singleton(new pt.a());
+        private static final Iterable f40250a = Collections.singleton(new qt.a());
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Iterable f40388b = Arrays.asList(new pt.b(), new net.time4j.calendar.service.c());
+        private static final Iterable f40251b = Arrays.asList(new qt.b(), new net.time4j.calendar.service.c());
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static final class m {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final Iterable f40389a;
+        private static final Iterable f40252a;
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Iterable f40390b;
+        private static final Iterable f40253b;
 
         /* renamed from: c  reason: collision with root package name */
-        private static final Iterable f40391c;
+        private static final Iterable f40254c;
 
         static {
-            qt.c cVar;
-            Set singleton = Collections.singleton(new rt.a());
-            f40389a = singleton;
-            f40390b = Collections.singleton(new rt.b());
+            rt.c cVar;
+            Set singleton = Collections.singleton(new st.a());
+            f40252a = singleton;
+            f40253b = Collections.singleton(new st.b());
             Iterator it = singleton.iterator();
             while (true) {
                 if (it.hasNext()) {
                     r rVar = (r) it.next();
-                    if (rVar instanceof qt.c) {
-                        cVar = (qt.c) qt.c.class.cast(rVar);
+                    if (rVar instanceof rt.c) {
+                        cVar = (rt.c) rt.c.class.cast(rVar);
                         break;
                     }
                 } else {
@@ -357,9 +357,9 @@ public class AndroidResourceLoader extends gt.d {
                 }
             }
             if (cVar == null) {
-                f40391c = Collections.EMPTY_LIST;
+                f40254c = Collections.EMPTY_LIST;
             } else {
-                f40391c = Collections.singleton(cVar);
+                f40254c = Collections.singleton(cVar);
             }
         }
     }
@@ -369,27 +369,27 @@ public class AndroidResourceLoader extends gt.d {
         hashMap.put(u.class, new h(null));
         hashMap.put(r.class, new k(null));
         hashMap.put(s.class, new j(null));
-        hashMap.put(qt.c.class, new e(null));
-        hashMap.put(jt.s.class, new d(null));
-        hashMap.put(kt.i.class, new f(null));
+        hashMap.put(rt.c.class, new e(null));
+        hashMap.put(kt.s.class, new d(null));
+        hashMap.put(lt.i.class, new f(null));
         hashMap.put(o.class, new g(null));
-        hashMap.put(x.class, Collections.singleton(new pt.h()));
+        hashMap.put(x.class, Collections.singleton(new qt.h()));
         hashMap.put(y.class, new i(null));
-        hashMap.put(qt.e.class, Collections.singleton(new net.time4j.android.spi.a()));
-        f40377f = Collections.unmodifiableMap(hashMap);
+        hashMap.put(rt.e.class, Collections.singleton(new net.time4j.android.spi.a()));
+        f40240f = Collections.unmodifiableMap(hashMap);
         HashSet hashSet = new HashSet();
         hashSet.add("i18n");
         hashSet.add("calendar");
         hashSet.add("olson");
         hashSet.add("tzdata");
-        f40378g = Collections.unmodifiableSet(hashSet);
+        f40241g = Collections.unmodifiableSet(hashSet);
     }
 
     private static Object i(Object obj) {
         return obj;
     }
 
-    @Override // gt.d
+    @Override // ht.d
     public InputStream e(URI uri, boolean z10) {
         if (uri == null) {
             return null;
@@ -400,7 +400,7 @@ public class AndroidResourceLoader extends gt.d {
                 openConnection.setUseCaches(false);
                 return openConnection.getInputStream();
             }
-            Context context = this.f40379d;
+            Context context = this.f40242d;
             if (context != null) {
                 return context.getAssets().open(uri.toString());
             }
@@ -410,10 +410,10 @@ public class AndroidResourceLoader extends gt.d {
         }
     }
 
-    @Override // gt.d
+    @Override // ht.d
     public URI f(String str, Class cls, String str2) {
         try {
-            if (f40378g.contains(str)) {
+            if (f40241g.contains(str)) {
                 return new URI("net/time4j/" + str + '/' + str2);
             }
             URL resource = cls.getClassLoader().getResource(str2);
@@ -426,12 +426,12 @@ public class AndroidResourceLoader extends gt.d {
         }
     }
 
-    @Override // gt.d
+    @Override // ht.d
     public Iterable g(Class cls) {
-        Object obj = (Iterable) f40377f.get(cls);
+        Object obj = (Iterable) f40240f.get(cls);
         if (obj == null) {
-            if (cls == kt.f.class) {
-                obj = this.f40380e;
+            if (cls == lt.f.class) {
+                obj = this.f40243e;
             } else {
                 return ServiceLoader.load(cls, cls.getClassLoader());
             }
@@ -439,10 +439,10 @@ public class AndroidResourceLoader extends gt.d {
         return (Iterable) i(obj);
     }
 
-    public void j(Context context, ft.b bVar) {
+    public void j(Context context, gt.b bVar) {
         if (context != null) {
-            this.f40379d = context;
-            this.f40380e = Collections.singletonList(new b(this, null));
+            this.f40242d = context;
+            this.f40243e = Collections.singletonList(new b(this, null));
             return;
         }
         throw new NullPointerException("Missing Android-context.");

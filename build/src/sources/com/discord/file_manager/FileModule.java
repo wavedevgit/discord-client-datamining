@@ -10,13 +10,13 @@ import com.discord.codegen.NativeFileModuleSpec;
 import com.facebook.react.bridge.BaseJavaModule;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
-import gs.m0;
-import ir.v;
+import hs.m0;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.o0;
@@ -47,14 +47,14 @@ public final class FileModule extends NativeFileModuleSpec {
         Intrinsics.checkNotNullParameter(storageDir, "storageDir");
         Intrinsics.checkNotNullParameter(path, "path");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        gs.i.d(this.ioScope, null, null, new FileModule$clearFolder$1(this, storageDir, promise, path, null), 3, null);
+        hs.i.d(this.ioScope, null, null, new FileModule$clearFolder$1(this, storageDir, promise, path, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeFileModuleSpec
     public void fileExists(@NotNull String path, @NotNull Promise promise) {
         Intrinsics.checkNotNullParameter(path, "path");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        gs.i.d(this.ioScope, null, null, new FileModule$fileExists$1(promise, path, null), 3, null);
+        hs.i.d(this.ioScope, null, null, new FileModule$fileExists$1(promise, path, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeFileModuleSpec
@@ -62,14 +62,14 @@ public final class FileModule extends NativeFileModuleSpec {
         Intrinsics.checkNotNullParameter(uri, "uri");
         Intrinsics.checkNotNullParameter(algorithm, "algorithm");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        gs.i.d(this.ioScope, null, null, new FileModule$getFileHash$1(algorithm, this, uri, promise, d10, null), 3, null);
+        hs.i.d(this.ioScope, null, null, new FileModule$getFileHash$1(algorithm, this, uri, promise, d10, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeFileModuleSpec
     public void getSize(@NotNull String uri, @NotNull Promise promise) {
         Intrinsics.checkNotNullParameter(uri, "uri");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        gs.i.d(this.ioScope, null, null, new FileModule$getSize$1(this, uri, promise, null), 3, null);
+        hs.i.d(this.ioScope, null, null, new FileModule$getSize$1(this, uri, promise, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeFileModuleSpec
@@ -89,7 +89,7 @@ public final class FileModule extends NativeFileModuleSpec {
         Intrinsics.checkNotNullParameter(sourcePath, "sourcePath");
         Intrinsics.checkNotNullParameter(destinationPath, "destinationPath");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        gs.i.d(this.ioScope, null, null, new FileModule$moveFile$1(this, storageDir, promise, sourcePath, destinationPath, null), 3, null);
+        hs.i.d(this.ioScope, null, null, new FileModule$moveFile$1(this, storageDir, promise, sourcePath, destinationPath, null), 3, null);
     }
 
     @SuppressLint({"DiscouragedApi"})
@@ -106,7 +106,7 @@ public final class FileModule extends NativeFileModuleSpec {
         Intrinsics.checkNotNullParameter(assetUri, "assetUri");
         Intrinsics.checkNotNullParameter(encoding, "encoding");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        gs.i.d(this.ioScope, null, null, new FileModule$readAsset$1(assetUri, this, encoding, promise, null), 3, null);
+        hs.i.d(this.ioScope, null, null, new FileModule$readAsset$1(assetUri, this, encoding, promise, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeFileModuleSpec
@@ -114,7 +114,7 @@ public final class FileModule extends NativeFileModuleSpec {
         Intrinsics.checkNotNullParameter(path, "path");
         Intrinsics.checkNotNullParameter(encoding, "encoding");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        gs.i.d(this.ioScope, null, null, new FileModule$readFile$1(path, encoding, promise, null), 3, null);
+        hs.i.d(this.ioScope, null, null, new FileModule$readFile$1(path, encoding, promise, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeFileModuleSpec
@@ -122,7 +122,7 @@ public final class FileModule extends NativeFileModuleSpec {
         Intrinsics.checkNotNullParameter(storageDir, "storageDir");
         Intrinsics.checkNotNullParameter(path, "path");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        gs.i.d(this.ioScope, null, null, new FileModule$removeFile$1(this, storageDir, promise, path, null), 3, null);
+        hs.i.d(this.ioScope, null, null, new FileModule$removeFile$1(this, storageDir, promise, path, null), 3, null);
     }
 
     @Override // com.discord.codegen.NativeFileModuleSpec
@@ -159,6 +159,6 @@ public final class FileModule extends NativeFileModuleSpec {
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(encoding, "encoding");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        gs.i.d(this.ioScope, null, null, new FileModule$writeFile$1(this, storageDir, promise, path, encoding, data, null), 3, null);
+        hs.i.d(this.ioScope, null, null, new FileModule$writeFile$1(this, storageDir, promise, path, encoding, data, null), 3, null);
     }
 }

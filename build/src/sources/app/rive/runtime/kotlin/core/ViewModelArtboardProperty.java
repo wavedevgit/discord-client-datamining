@@ -1,8 +1,8 @@
 package app.rive.runtime.kotlin.core;
 
 import app.rive.runtime.kotlin.core.errors.RiveException;
-import ir.c;
 import java.util.ArrayList;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
@@ -56,7 +56,7 @@ public final class ViewModelArtboardProperty extends ViewModelProperty<Unit> {
     @Override // app.rive.runtime.kotlin.core.ViewModelProperty
     public /* bridge */ /* synthetic */ Unit nativeGetValue() {
         nativeGetValue2();
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     public final void set(BindableArtboard bindableArtboard) {

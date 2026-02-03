@@ -6,19 +6,19 @@ import android.content.Context;
 public abstract class v {
 
     /* renamed from: a  reason: collision with root package name */
-    private static u f17246a;
+    private static u f16875a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static synchronized u a(Context context) {
         u uVar;
         synchronized (v.class) {
             try {
-                if (f17246a == null) {
+                if (f16875a == null) {
                     e1 e1Var = new e1(null);
                     e1Var.a(gi.h.a(context));
-                    f17246a = e1Var.b();
+                    f16875a = e1Var.b();
                 }
-                uVar = f17246a;
+                uVar = f16875a;
             } catch (Throwable th2) {
                 throw th2;
             }

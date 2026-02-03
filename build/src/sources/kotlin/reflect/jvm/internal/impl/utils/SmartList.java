@@ -13,22 +13,22 @@ import org.jetbrains.annotations.NotNull;
 public class SmartList<E> extends AbstractList<E> implements RandomAccess {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f36118d;
+    private int f35894d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f36119e;
+    private Object f35895e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class b implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private static final b f36120d = new b();
+        private static final b f35896d = new b();
 
         private b() {
         }
 
         public static b a() {
-            return f36120d;
+            return f35896d;
         }
 
         @Override // java.util.Iterator
@@ -51,24 +51,24 @@ public class SmartList<E> extends AbstractList<E> implements RandomAccess {
     private class c extends d {
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f36121e;
+        private final int f35897e;
 
         public c() {
             super();
-            this.f36121e = ((AbstractList) SmartList.this).modCount;
+            this.f35897e = ((AbstractList) SmartList.this).modCount;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.utils.SmartList.d
         protected void a() {
-            if (((AbstractList) SmartList.this).modCount == this.f36121e) {
+            if (((AbstractList) SmartList.this).modCount == this.f35897e) {
                 return;
             }
-            throw new ConcurrentModificationException("ModCount: " + ((AbstractList) SmartList.this).modCount + "; expected: " + this.f36121e);
+            throw new ConcurrentModificationException("ModCount: " + ((AbstractList) SmartList.this).modCount + "; expected: " + this.f35897e);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.utils.SmartList.d
         protected Object b() {
-            return SmartList.this.f36119e;
+            return SmartList.this.f35895e;
         }
 
         @Override // java.util.Iterator
@@ -82,7 +82,7 @@ public class SmartList<E> extends AbstractList<E> implements RandomAccess {
     private static abstract class d implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f36123d;
+        private boolean f35899d;
 
         private d() {
         }
@@ -93,13 +93,13 @@ public class SmartList<E> extends AbstractList<E> implements RandomAccess {
 
         @Override // java.util.Iterator
         public final boolean hasNext() {
-            return !this.f36123d;
+            return !this.f35899d;
         }
 
         @Override // java.util.Iterator
         public final Object next() {
-            if (!this.f36123d) {
-                this.f36123d = true;
+            if (!this.f35899d) {
+                this.f35899d = true;
                 a();
                 return b();
             }
@@ -155,13 +155,13 @@ public class SmartList<E> extends AbstractList<E> implements RandomAccess {
 
     @Override // java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
     public boolean add(E e10) {
-        int i10 = this.f36118d;
+        int i10 = this.f35894d;
         if (i10 == 0) {
-            this.f36119e = e10;
+            this.f35895e = e10;
         } else if (i10 == 1) {
-            this.f36119e = new Object[]{this.f36119e, e10};
+            this.f35895e = new Object[]{this.f35895e, e10};
         } else {
-            Object[] objArr = (Object[]) this.f36119e;
+            Object[] objArr = (Object[]) this.f35895e;
             int length = objArr.length;
             if (i10 >= length) {
                 int i11 = ((length * 3) / 2) + 1;
@@ -170,40 +170,40 @@ public class SmartList<E> extends AbstractList<E> implements RandomAccess {
                     i11 = i12;
                 }
                 Object[] objArr2 = new Object[i11];
-                this.f36119e = objArr2;
+                this.f35895e = objArr2;
                 System.arraycopy(objArr, 0, objArr2, 0, length);
                 objArr = objArr2;
             }
-            objArr[this.f36118d] = e10;
+            objArr[this.f35894d] = e10;
         }
-        this.f36118d++;
+        this.f35894d++;
         ((AbstractList) this).modCount++;
         return true;
     }
 
     @Override // java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
     public void clear() {
-        this.f36119e = null;
-        this.f36118d = 0;
+        this.f35895e = null;
+        this.f35894d = 0;
         ((AbstractList) this).modCount++;
     }
 
     @Override // java.util.AbstractList, java.util.List
     public E get(int i10) {
         int i11;
-        if (i10 >= 0 && i10 < (i11 = this.f36118d)) {
+        if (i10 >= 0 && i10 < (i11 = this.f35894d)) {
             if (i11 == 1) {
-                return (E) this.f36119e;
+                return (E) this.f35895e;
             }
-            return (E) ((Object[]) this.f36119e)[i10];
+            return (E) ((Object[]) this.f35895e)[i10];
         }
-        throw new IndexOutOfBoundsException("Index: " + i10 + ", Size: " + this.f36118d);
+        throw new IndexOutOfBoundsException("Index: " + i10 + ", Size: " + this.f35894d);
     }
 
     @Override // java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.List
     @NotNull
     public Iterator<E> iterator() {
-        int i10 = this.f36118d;
+        int i10 = this.f35894d;
         if (i10 == 0) {
             b a10 = b.a();
             if (a10 == null) {
@@ -225,58 +225,58 @@ public class SmartList<E> extends AbstractList<E> implements RandomAccess {
     public E remove(int i10) {
         int i11;
         E e10;
-        if (i10 >= 0 && i10 < (i11 = this.f36118d)) {
+        if (i10 >= 0 && i10 < (i11 = this.f35894d)) {
             if (i11 == 1) {
-                e10 = (E) this.f36119e;
-                this.f36119e = null;
+                e10 = (E) this.f35895e;
+                this.f35895e = null;
             } else {
-                Object[] objArr = (Object[]) this.f36119e;
+                Object[] objArr = (Object[]) this.f35895e;
                 Object obj = objArr[i10];
                 if (i11 == 2) {
-                    this.f36119e = objArr[1 - i10];
+                    this.f35895e = objArr[1 - i10];
                 } else {
                     int i12 = (i11 - i10) - 1;
                     if (i12 > 0) {
                         System.arraycopy(objArr, i10 + 1, objArr, i10, i12);
                     }
-                    objArr[this.f36118d - 1] = null;
+                    objArr[this.f35894d - 1] = null;
                 }
                 e10 = (E) obj;
             }
-            this.f36118d--;
+            this.f35894d--;
             ((AbstractList) this).modCount++;
             return e10;
         }
-        throw new IndexOutOfBoundsException("Index: " + i10 + ", Size: " + this.f36118d);
+        throw new IndexOutOfBoundsException("Index: " + i10 + ", Size: " + this.f35894d);
     }
 
     @Override // java.util.AbstractList, java.util.List
     public E set(int i10, E e10) {
         int i11;
-        if (i10 >= 0 && i10 < (i11 = this.f36118d)) {
+        if (i10 >= 0 && i10 < (i11 = this.f35894d)) {
             if (i11 == 1) {
-                E e11 = (E) this.f36119e;
-                this.f36119e = e10;
+                E e11 = (E) this.f35895e;
+                this.f35895e = e10;
                 return e11;
             }
-            Object[] objArr = (Object[]) this.f36119e;
+            Object[] objArr = (Object[]) this.f35895e;
             E e12 = (E) objArr[i10];
             objArr[i10] = e10;
             return e12;
         }
-        throw new IndexOutOfBoundsException("Index: " + i10 + ", Size: " + this.f36118d);
+        throw new IndexOutOfBoundsException("Index: " + i10 + ", Size: " + this.f35894d);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public int size() {
-        return this.f36118d;
+        return this.f35894d;
     }
 
     @Override // java.util.List
     public void sort(Comparator<? super E> comparator) {
-        int i10 = this.f36118d;
+        int i10 = this.f35894d;
         if (i10 >= 2) {
-            Arrays.sort((Object[]) this.f36119e, 0, i10, comparator);
+            Arrays.sort((Object[]) this.f35895e, 0, i10, comparator);
         }
     }
 
@@ -288,25 +288,25 @@ public class SmartList<E> extends AbstractList<E> implements RandomAccess {
             b(4);
         }
         int length = tArr.length;
-        int i10 = this.f36118d;
+        int i10 = this.f35894d;
         if (i10 == 1) {
             if (length != 0) {
-                tArr[0] = this.f36119e;
+                tArr[0] = this.f35895e;
             } else {
                 T[] tArr2 = (T[]) ((Object[]) Array.newInstance(tArr.getClass().getComponentType(), 1));
-                tArr2[0] = this.f36119e;
+                tArr2[0] = this.f35895e;
                 return tArr2;
             }
         } else if (length < i10) {
-            T[] tArr3 = (T[]) Arrays.copyOf((Object[]) this.f36119e, i10, tArr.getClass());
+            T[] tArr3 = (T[]) Arrays.copyOf((Object[]) this.f35895e, i10, tArr.getClass());
             if (tArr3 == null) {
                 b(6);
             }
             return tArr3;
         } else if (i10 != 0) {
-            System.arraycopy(this.f36119e, 0, tArr, 0, i10);
+            System.arraycopy(this.f35895e, 0, tArr, 0, i10);
         }
-        int i11 = this.f36118d;
+        int i11 = this.f35894d;
         if (length > i11) {
             tArr[i11] = 0;
         }
@@ -316,27 +316,27 @@ public class SmartList<E> extends AbstractList<E> implements RandomAccess {
     @Override // java.util.AbstractList, java.util.List
     public void add(int i10, E e10) {
         int i11;
-        if (i10 >= 0 && i10 <= (i11 = this.f36118d)) {
+        if (i10 >= 0 && i10 <= (i11 = this.f35894d)) {
             if (i11 == 0) {
-                this.f36119e = e10;
+                this.f35895e = e10;
             } else if (i11 == 1 && i10 == 0) {
-                this.f36119e = new Object[]{e10, this.f36119e};
+                this.f35895e = new Object[]{e10, this.f35895e};
             } else {
                 Object[] objArr = new Object[i11 + 1];
                 if (i11 == 1) {
-                    objArr[0] = this.f36119e;
+                    objArr[0] = this.f35895e;
                 } else {
-                    Object[] objArr2 = (Object[]) this.f36119e;
+                    Object[] objArr2 = (Object[]) this.f35895e;
                     System.arraycopy(objArr2, 0, objArr, 0, i10);
-                    System.arraycopy(objArr2, i10, objArr, i10 + 1, this.f36118d - i10);
+                    System.arraycopy(objArr2, i10, objArr, i10 + 1, this.f35894d - i10);
                 }
                 objArr[i10] = e10;
-                this.f36119e = objArr;
+                this.f35895e = objArr;
             }
-            this.f36118d++;
+            this.f35894d++;
             ((AbstractList) this).modCount++;
             return;
         }
-        throw new IndexOutOfBoundsException("Index: " + i10 + ", Size: " + this.f36118d);
+        throw new IndexOutOfBoundsException("Index: " + i10 + ", Size: " + this.f35894d);
     }
 }

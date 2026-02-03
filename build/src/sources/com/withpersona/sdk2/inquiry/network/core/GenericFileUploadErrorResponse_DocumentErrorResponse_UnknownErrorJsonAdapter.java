@@ -44,20 +44,20 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_UnknownE
         ErrorDetails errorDetails = null;
         int i10 = -1;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
-                mVar.E0();
+            int t02 = mVar.t0(this.options);
+            if (t02 == -1) {
+                mVar.F0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw sm.c.x("title", "title", mVar);
+                    throw tm.c.x("title", "title", mVar);
                 }
                 i10 &= -2;
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(mVar);
                 i10 &= -3;
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 errorDetails = (ErrorDetails) this.nullableErrorDetailsAdapter.fromJson(mVar);
                 i10 &= -5;
             }
@@ -68,7 +68,7 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_UnknownE
         }
         Constructor<GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError.class.getDeclaredConstructor(String.class, String.class, ErrorDetails.class, Integer.TYPE, sm.c.f49097c);
+            constructor = GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError.class.getDeclaredConstructor(String.class, String.class, ErrorDetails.class, Integer.TYPE, tm.c.f49935c);
             this.constructorRef = constructor;
         }
         return constructor.newInstance(str, str2, errorDetails, Integer.valueOf(i10), null);
@@ -78,11 +78,11 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_UnknownE
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError unknownError) {
         if (unknownError != null) {
             tVar.l();
-            tVar.A0("title");
+            tVar.t0("title");
             this.stringAdapter.toJson(tVar, unknownError.getTitle());
-            tVar.A0("code");
+            tVar.t0("code");
             this.nullableStringAdapter.toJson(tVar, unknownError.getCode());
-            tVar.A0("details");
+            tVar.t0("details");
             this.nullableErrorDetailsAdapter.toJson(tVar, unknownError.getDetails());
             tVar.E();
             return;

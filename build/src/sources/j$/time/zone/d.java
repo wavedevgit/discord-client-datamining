@@ -7,10 +7,10 @@ import java.util.List;
 public final class d implements PrivilegedAction {
 
     /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ List f31687a;
+    public final /* synthetic */ List f31425a;
 
     public d(List list) {
-        this.f31687a = list;
+        this.f31425a = list;
     }
 
     @Override // java.security.PrivilegedAction
@@ -20,7 +20,7 @@ public final class d implements PrivilegedAction {
             try {
                 e eVar = (e) e.class.cast(Class.forName(property, true, e.class.getClassLoader()).newInstance());
                 e.b(eVar);
-                ((ArrayList) this.f31687a).add(eVar);
+                ((ArrayList) this.f31425a).add(eVar);
                 return null;
             } catch (Exception e10) {
                 throw new Error(e10);

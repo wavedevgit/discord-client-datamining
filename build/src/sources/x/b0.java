@@ -7,42 +7,42 @@ import java.util.List;
 public final class b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f52853a;
+    private final List f53061a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f52854b;
+    private final List f53062b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f52855c;
+    private final List f53063c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f52856d;
+    private final long f53064d;
 
     b0(a aVar) {
-        this.f52853a = Collections.unmodifiableList(aVar.f52857a);
-        this.f52854b = Collections.unmodifiableList(aVar.f52858b);
-        this.f52855c = Collections.unmodifiableList(aVar.f52859c);
-        this.f52856d = aVar.f52860d;
+        this.f53061a = Collections.unmodifiableList(aVar.f53065a);
+        this.f53062b = Collections.unmodifiableList(aVar.f53066b);
+        this.f53063c = Collections.unmodifiableList(aVar.f53067c);
+        this.f53064d = aVar.f53068d;
     }
 
     public long a() {
-        return this.f52856d;
+        return this.f53064d;
     }
 
     public List b() {
-        return this.f52854b;
+        return this.f53062b;
     }
 
     public List c() {
-        return this.f52853a;
+        return this.f53061a;
     }
 
     public List d() {
-        return this.f52855c;
+        return this.f53063c;
     }
 
     public boolean e() {
-        if (this.f52856d > 0) {
+        if (this.f53064d > 0) {
             return true;
         }
         return false;
@@ -52,22 +52,22 @@ public final class b0 {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final List f52857a;
+        final List f53065a;
 
         /* renamed from: b  reason: collision with root package name */
-        final List f52858b;
+        final List f53066b;
 
         /* renamed from: c  reason: collision with root package name */
-        final List f52859c;
+        final List f53067c;
 
         /* renamed from: d  reason: collision with root package name */
-        long f52860d;
+        long f53068d;
 
         public a(b1 b1Var, int i10) {
-            this.f52857a = new ArrayList();
-            this.f52858b = new ArrayList();
-            this.f52859c = new ArrayList();
-            this.f52860d = 5000L;
+            this.f53065a = new ArrayList();
+            this.f53066b = new ArrayList();
+            this.f53067c = new ArrayList();
+            this.f53068d = 5000L;
             a(b1Var, i10);
         }
 
@@ -85,13 +85,13 @@ public final class b0 {
             }
             b2.e.b(z11, "Invalid metering mode " + i10);
             if ((i10 & 1) != 0) {
-                this.f52857a.add(b1Var);
+                this.f53065a.add(b1Var);
             }
             if ((i10 & 2) != 0) {
-                this.f52858b.add(b1Var);
+                this.f53066b.add(b1Var);
             }
             if ((i10 & 4) != 0) {
-                this.f52859c.add(b1Var);
+                this.f53067c.add(b1Var);
             }
             return this;
         }
@@ -102,29 +102,29 @@ public final class b0 {
 
         public a c(int i10) {
             if ((i10 & 1) != 0) {
-                this.f52857a.clear();
+                this.f53065a.clear();
             }
             if ((i10 & 2) != 0) {
-                this.f52858b.clear();
+                this.f53066b.clear();
             }
             if ((i10 & 4) != 0) {
-                this.f52859c.clear();
+                this.f53067c.clear();
             }
             return this;
         }
 
         public a(b0 b0Var) {
             ArrayList arrayList = new ArrayList();
-            this.f52857a = arrayList;
+            this.f53065a = arrayList;
             ArrayList arrayList2 = new ArrayList();
-            this.f52858b = arrayList2;
+            this.f53066b = arrayList2;
             ArrayList arrayList3 = new ArrayList();
-            this.f52859c = arrayList3;
-            this.f52860d = 5000L;
+            this.f53067c = arrayList3;
+            this.f53068d = 5000L;
             arrayList.addAll(b0Var.c());
             arrayList2.addAll(b0Var.b());
             arrayList3.addAll(b0Var.d());
-            this.f52860d = b0Var.a();
+            this.f53068d = b0Var.a();
         }
     }
 }

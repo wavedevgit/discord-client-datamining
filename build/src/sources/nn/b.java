@@ -1,35 +1,49 @@
 package nn;
 
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.Result;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b extends RuntimeException {
+public final class b {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a extends b {
-        public a() {
-            super(null);
+    /* renamed from: a  reason: collision with root package name */
+    private final Object f41926a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final boolean f41927b;
+
+    public b(Object obj, boolean z10) {
+        this.f41926a = obj;
+        this.f41927b = z10;
+    }
+
+    public final Object a() {
+        return this.f41926a;
+    }
+
+    public final boolean b() {
+        return this.f41927b;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-    }
-
-    /* renamed from: nn.b$b  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0521b extends b {
-        public C0521b() {
-            super(null);
+        if (!(obj instanceof b)) {
+            return false;
         }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class c extends b {
-        public c() {
-            super(null);
+        b bVar = (b) obj;
+        if (Result.d(this.f41926a, bVar.f41926a) && this.f41927b == bVar.f41927b) {
+            return true;
         }
+        return false;
     }
 
-    public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
-        this();
+    public int hashCode() {
+        return (Result.f(this.f41926a) * 31) + Boolean.hashCode(this.f41927b);
     }
 
-    private b() {
+    public String toString() {
+        String i10 = Result.i(this.f41926a);
+        boolean z10 = this.f41927b;
+        return "AnalyzerResult(result=" + i10 + ", isActiveAnalyzer=" + z10 + ")";
     }
 }

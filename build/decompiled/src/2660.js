@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22112: for (var _fun22112_ip = 0;;) switch (_fun22112_ip) {
+    _fun22122: for (var _fun22122_ip = 0;;) switch (_fun22122_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun22112_ip = 75;
-                continue _fun22112
+                _fun22122_ip = 75;
+                continue _fun22122
             }
         case 63:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun22112_ip = 84;
-                continue _fun22112
+                _fun22122_ip = 84;
+                continue _fun22122
             }
         case 75:
             var2 = {};
@@ -38,10 +38,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var5 = {
-                'full': 'EEEE d MMMM y',
-                'long': 'd MMMM y',
-                'medium': 'd MMM y',
-                'short': 'y-MM-dd'
+                'full': 'EEEE d. MMMM y',
+                'long': 'd. MMMM y',
+                'medium': 'd. MMM y',
+                'short': 'dd.MM.y'
             };
             var4.formats = var5;
             var5 = 'full';

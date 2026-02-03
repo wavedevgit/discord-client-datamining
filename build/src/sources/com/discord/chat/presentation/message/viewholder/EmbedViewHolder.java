@@ -46,8 +46,8 @@ public final class EmbedViewHolder extends MessagePartViewHolder {
         EmbedView embedView = this.embedView;
         MessageMargins margins = accessory.getMargins();
         Embed embed = accessory.getEmbed();
-        long m562getChannelIdo4g7jtM = accessory.m562getChannelIdo4g7jtM();
-        String mo536getMessageId3Eiw7ao = accessory.mo536getMessageId3Eiw7ao();
+        long m564getChannelIdo4g7jtM = accessory.m564getChannelIdo4g7jtM();
+        String mo538getMessageId3Eiw7ao = accessory.mo538getMessageId3Eiw7ao();
         int constrainedWidth = accessory.getConstrainedWidth();
         if (accessory.getShouldAutoPlayGifs() && z10) {
             z11 = true;
@@ -79,6 +79,6 @@ public final class EmbedViewHolder extends MessagePartViewHolder {
         } else {
             z13 = false;
         }
-        embedView.m688setEmbeduKkM4jM(margins, embed, m562getChannelIdo4g7jtM, mo536getMessageId3Eiw7ao, constrainedWidth, i10, i11, z11, shouldAnimateEmoji, shouldShowLinkDecorations, shouldShowRoleDot, shouldShowRoleOnName, embedViewHolder$bind$1, embedViewHolder$bind$2, onMediaClicked, onLongClickListener, embedViewHolder$bind$3, embedViewHolder$bind$4, embedViewHolder$bind$5, onTapSpoiler, embedViewHolder$bind$6, embedViewHolder$bind$7, embedViewHolder$bind$8, embedViewHolder$bind$9, spoilerConfig, d10, z14, z13, z12, accessory.isForwardedContent());
+        embedView.m690setEmbeduKkM4jM(margins, embed, m564getChannelIdo4g7jtM, mo538getMessageId3Eiw7ao, constrainedWidth, i10, i11, z11, shouldAnimateEmoji, shouldShowLinkDecorations, shouldShowRoleDot, shouldShowRoleOnName, embedViewHolder$bind$1, embedViewHolder$bind$2, onMediaClicked, onLongClickListener, embedViewHolder$bind$3, embedViewHolder$bind$4, embedViewHolder$bind$5, onTapSpoiler, embedViewHolder$bind$6, embedViewHolder$bind$7, embedViewHolder$bind$8, embedViewHolder$bind$9, spoilerConfig, d10, z14, z13, z12, accessory.isForwardedContent());
     }
 }

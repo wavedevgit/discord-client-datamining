@@ -5,18 +5,18 @@ import java.io.Serializable;
 final class f0 extends i0 implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final f0 f32109d = new f0();
+    static final f0 f31847d = new f0();
 
     private f0() {
     }
 
     @Override // ji.i0
-    public i0 h() {
-        return n0.f32166d;
+    public i0 g() {
+        return n0.f31904d;
     }
 
     @Override // ji.i0, java.util.Comparator
-    /* renamed from: j */
+    /* renamed from: h */
     public int compare(Comparable comparable, Comparable comparable2) {
         ii.m.j(comparable);
         ii.m.j(comparable2);

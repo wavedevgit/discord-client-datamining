@@ -3,13 +3,13 @@ package b3;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private float f7154a = 0.0f;
+    private float f6205a = 0.0f;
 
     public float a() {
-        return this.f7154a;
+        return this.f6205a;
     }
 
     public void b(float f10) {
-        this.f7154a = f10;
+        this.f6205a = f10;
     }
 }

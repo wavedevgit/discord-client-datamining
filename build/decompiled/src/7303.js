@@ -9,15 +9,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/premium/tiered_tenure_badging/native/images',
-        'width': 78,
-        'height': 63.666666666666664,
+        'httpServerLocation': '/assets/modules/premium/native/images/perks',
+        'width': 320.5,
+        'height': 175,
         'scales': null,
-        'hash': 'f5c4d9fde9a55ad09e91263f9bebf46a',
-        'name': 'asset_emerald_badge_small',
+        'hash': 'd422ef91f74da1b3cc395d635485063d',
+        'name': 'early_access',
         'type': 'png'
     };
-    var4 = [3];
+    var4 = [2, 3];
     var1.scales = var4;
     var2 = var2.bind(var3)(var1);
     var1 = module;

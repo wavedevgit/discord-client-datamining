@@ -70,16 +70,16 @@ public final class t extends io.sentry.android.replay.a {
 
     @Override // io.sentry.android.replay.a, io.sentry.t3
     public io.sentry.rrweb.b a(Breadcrumb breadcrumb) {
-        if (breadcrumb.l() == null || "sentry.event".equals(breadcrumb.l()) || "sentry.transaction".equals(breadcrumb.l()) || "http".equals(breadcrumb.l())) {
+        if (breadcrumb.m() == null || "sentry.event".equals(breadcrumb.m()) || "sentry.transaction".equals(breadcrumb.m()) || "http".equals(breadcrumb.m())) {
             return null;
         }
-        if (PointerEventHelper.POINTER_TYPE_TOUCH.equals(breadcrumb.l())) {
+        if (PointerEventHelper.POINTER_TYPE_TOUCH.equals(breadcrumb.m())) {
             return h(breadcrumb);
         }
-        if ("navigation".equals(breadcrumb.l())) {
+        if ("navigation".equals(breadcrumb.m())) {
             return f(breadcrumb);
         }
-        if ("xhr".equals(breadcrumb.l())) {
+        if ("xhr".equals(breadcrumb.m())) {
             return g(breadcrumb);
         }
         io.sentry.rrweb.b a10 = super.a(breadcrumb);
@@ -91,7 +91,7 @@ public final class t extends io.sentry.android.replay.a {
 
     public io.sentry.rrweb.b f(Breadcrumb breadcrumb) {
         io.sentry.rrweb.a aVar = new io.sentry.rrweb.a();
-        aVar.t(breadcrumb.l());
+        aVar.t(breadcrumb.m());
         j(aVar, breadcrumb);
         return aVar;
     }

@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 public final class TypeTable {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f35017a;
+    private final List f34793a;
 
     public TypeTable(@NotNull ProtoBuf.TypeTable typeTable) {
         Intrinsics.checkNotNullParameter(typeTable, "typeTable");
@@ -39,11 +39,11 @@ public final class TypeTable {
             typeList = arrayList;
         }
         Intrinsics.checkNotNullExpressionValue(typeList, "run(...)");
-        this.f35017a = typeList;
+        this.f34793a = typeList;
     }
 
     @NotNull
     public final ProtoBuf.Type get(int i10) {
-        return (ProtoBuf.Type) this.f35017a.get(i10);
+        return (ProtoBuf.Type) this.f34793a.get(i10);
     }
 }

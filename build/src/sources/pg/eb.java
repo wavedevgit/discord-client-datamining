@@ -5,7 +5,7 @@ import ui.c;
 final class eb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final eb f45234a = new eb();
+    static final eb f45308a = new eb();
 
     static {
         c.b a10 = ui.c.a("deviceInfo");

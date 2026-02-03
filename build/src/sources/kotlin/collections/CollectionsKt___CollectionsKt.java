@@ -31,15 +31,15 @@ public class CollectionsKt___CollectionsKt extends a0 {
     public static final class a implements Sequence {
 
         /* renamed from: a */
-        final /* synthetic */ Iterable f33309a;
+        final /* synthetic */ Iterable f33085a;
 
         public a(Iterable iterable) {
-            this.f33309a = iterable;
+            this.f33085a = iterable;
         }
 
         @Override // kotlin.sequences.Sequence
         public Iterator iterator() {
-            return this.f33309a.iterator();
+            return this.f33085a.iterator();
         }
     }
 
@@ -320,7 +320,7 @@ public class CollectionsKt___CollectionsKt extends a0 {
 
     public static List V0(Iterable iterable) {
         Intrinsics.checkNotNullParameter(iterable, "<this>");
-        return W0(iterable, lr.a.g());
+        return W0(iterable, mr.a.g());
     }
 
     public static List W0(Iterable iterable, Comparator comparator) {
@@ -795,7 +795,7 @@ public class CollectionsKt___CollectionsKt extends a0 {
         Iterator it2 = other.iterator();
         ArrayList arrayList = new ArrayList(Math.min(u.w(iterable, 10), u.w(other, 10)));
         while (it.hasNext() && it2.hasNext()) {
-            arrayList.add(ir.v.a(it.next(), it2.next()));
+            arrayList.add(jr.v.a(it.next(), it2.next()));
         }
         return arrayList;
     }
@@ -818,7 +818,7 @@ public class CollectionsKt___CollectionsKt extends a0 {
             if (i10 >= length) {
                 break;
             }
-            arrayList.add(ir.v.a(obj, other[i10]));
+            arrayList.add(jr.v.a(obj, other[i10]));
             i10++;
         }
         return arrayList;

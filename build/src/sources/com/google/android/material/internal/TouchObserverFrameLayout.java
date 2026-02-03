@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 public class TouchObserverFrameLayout extends FrameLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private View.OnTouchListener f16125d;
+    private View.OnTouchListener f15754d;
 
     public TouchObserverFrameLayout(@NonNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -18,7 +18,7 @@ public class TouchObserverFrameLayout extends FrameLayout {
 
     @Override // android.view.ViewGroup
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
-        View.OnTouchListener onTouchListener = this.f16125d;
+        View.OnTouchListener onTouchListener = this.f15754d;
         if (onTouchListener != null) {
             onTouchListener.onTouch(this, motionEvent);
         }
@@ -27,6 +27,6 @@ public class TouchObserverFrameLayout extends FrameLayout {
 
     @Override // android.view.View
     public void setOnTouchListener(View.OnTouchListener onTouchListener) {
-        this.f16125d = onTouchListener;
+        this.f15754d = onTouchListener;
     }
 }

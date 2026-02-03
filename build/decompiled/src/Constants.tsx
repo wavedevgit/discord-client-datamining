@@ -14245,6 +14245,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var90.CREATE_DM_USER_LIST_CLICKED = var29;
             var29 = 'search_user_list_started';
             var90.SEARCH_USER_LIST_STARTED = var29;
+            var29 = 'create_dm_user_row_interacted';
+            var90.CREATE_DM_USER_ROW_INTERACTED = var29;
             var29 = 'user_account_email_change_attempted';
             var90.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED = var29;
             var29 = 'user_account_email_change_reason_continue';
@@ -14839,8 +14841,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var43 = 'minimized';
             var83.MINIMIZED = var43;
             var82 = {};
-            var43 = 'USER_SETTINGS';
-            var82.USER_SETTINGS = var43;
             var82.CHANNEL_SETTINGS = var42;
             var42 = 'GUILD_SETTINGS';
             var82.GUILD_SETTINGS = var42;
@@ -16698,28 +16698,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var231 = var221[var236];
             var234 = var220.bind(var0)(var231);
             for (var231 in var234)
-                case 62144: {
-                    case 62153: var238 = var231;
+                case 62146: {
+                    case 62155: var238 = var231;
                     var237 = var221[var236];
                     var237 = var220.bind(var0)(var237);
                     var237 = var237[var238];
                     var2[var238] = var237;
-                    _fun7394_ip = 62144;
+                    _fun7394_ip = 62146;
                     continue _fun7394;
                 }
-        case 62175:
+        case 62177:
             var230 = var221[var230];
             var235 = var220.bind(var0)(var230);
             var233 = var235;
             for (var230 in var233)
-                case 62195: {
-                    case 62204: var237 = var230;
+                case 62197: {
+                    case 62206: var237 = var230;
                     var236 = var235[var237];
                     var2[var237] = var236;
-                    _fun7394_ip = 62195;
+                    _fun7394_ip = 62197;
                     continue _fun7394;
                 }
-        case 62217:
+        case 62219:
             var2.Routes = var229;
             var2.ME = var228;
             var2.FAVORITES = var227;

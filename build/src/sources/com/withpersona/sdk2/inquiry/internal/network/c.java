@@ -2,7 +2,7 @@ package com.withpersona.sdk2.inquiry.internal.network;
 
 import com.withpersona.sdk2.inquiry.internal.network.ErrorRequest;
 import com.withpersona.sdk2.inquiry.network.core.InternalErrorInfo;
-import ir.p;
+import jr.p;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {

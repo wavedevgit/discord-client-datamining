@@ -6,27 +6,27 @@ import android.os.Bundle;
 abstract class j extends ai.g {
 
     /* renamed from: c  reason: collision with root package name */
-    final ai.i f55703c;
+    final ai.i f55835c;
 
     /* renamed from: d  reason: collision with root package name */
-    final wg.k f55704d;
+    final wg.k f55836d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ l f55705e;
+    final /* synthetic */ l f55837e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(l lVar, ai.i iVar, wg.k kVar) {
-        this.f55705e = lVar;
-        this.f55703c = iVar;
-        this.f55704d = kVar;
+        this.f55837e = lVar;
+        this.f55835c = iVar;
+        this.f55836d = kVar;
     }
 
     @Override // ai.h
     public void B0(Bundle bundle) {
-        t tVar = this.f55705e.f55708a;
+        t tVar = this.f55837e.f55840a;
         if (tVar != null) {
-            tVar.r(this.f55704d);
+            tVar.r(this.f55836d);
         }
-        this.f55703c.d("onGetLaunchReviewFlowInfo", new Object[0]);
+        this.f55835c.d("onGetLaunchReviewFlowInfo", new Object[0]);
     }
 }

@@ -6,15 +6,15 @@ import org.jetbrains.annotations.NotNull;
 public final class ModuleCapability<T> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f33603a;
+    private final String f33379a;
 
     public ModuleCapability(@NotNull String name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f33603a = name;
+        this.f33379a = name;
     }
 
     @NotNull
     public String toString() {
-        return this.f33603a;
+        return this.f33379a;
     }
 }

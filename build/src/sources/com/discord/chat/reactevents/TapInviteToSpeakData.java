@@ -4,7 +4,7 @@ import com.discord.primitives.MessageId;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -20,22 +20,22 @@ public final class TapInviteToSpeakData implements ReactEvent {
     }
 
     /* renamed from: copy-1xi1bu0$default  reason: not valid java name */
-    public static /* synthetic */ TapInviteToSpeakData m802copy1xi1bu0$default(TapInviteToSpeakData tapInviteToSpeakData, String str, int i10, Object obj) {
+    public static /* synthetic */ TapInviteToSpeakData m804copy1xi1bu0$default(TapInviteToSpeakData tapInviteToSpeakData, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = tapInviteToSpeakData.messageId;
         }
-        return tapInviteToSpeakData.m804copy1xi1bu0(str);
+        return tapInviteToSpeakData.m806copy1xi1bu0(str);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m803component13Eiw7ao() {
+    public final String m805component13Eiw7ao() {
         return this.messageId;
     }
 
     @NotNull
     /* renamed from: copy-1xi1bu0  reason: not valid java name */
-    public final TapInviteToSpeakData m804copy1xi1bu0(@NotNull String messageId) {
+    public final TapInviteToSpeakData m806copy1xi1bu0(@NotNull String messageId) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         return new TapInviteToSpeakData(messageId, null);
     }
@@ -44,29 +44,29 @@ public final class TapInviteToSpeakData implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof TapInviteToSpeakData) && MessageId.m1088equalsimpl0(this.messageId, ((TapInviteToSpeakData) obj).messageId);
+        return (obj instanceof TapInviteToSpeakData) && MessageId.m1090equalsimpl0(this.messageId, ((TapInviteToSpeakData) obj).messageId);
     }
 
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m805getMessageId3Eiw7ao() {
+    public final String m807getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return MessageId.m1089hashCodeimpl(this.messageId);
+        return MessageId.m1091hashCodeimpl(this.messageId);
     }
 
     @Override // com.discord.reactevents.ReactEvent
     @NotNull
     public WritableMap serialize() {
-        return NativeMapExtensionsKt.nativeMapOf(v.a("messageId", MessageId.m1091toStringimpl(this.messageId)));
+        return NativeMapExtensionsKt.nativeMapOf(v.a("messageId", MessageId.m1093toStringimpl(this.messageId)));
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
-        return "TapInviteToSpeakData(messageId=" + m1091toStringimpl + ")";
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        return "TapInviteToSpeakData(messageId=" + m1093toStringimpl + ")";
     }
 
     private TapInviteToSpeakData(String messageId) {

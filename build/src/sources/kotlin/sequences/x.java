@@ -9,45 +9,45 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public final class x implements Sequence {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Sequence f36200a;
+    private final Sequence f35976a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function1 f36201b;
+    private final Function1 f35977b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements Iterator, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Iterator f36202d;
+        private final Iterator f35978d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f36203e = -1;
+        private int f35979e = -1;
 
         /* renamed from: i  reason: collision with root package name */
-        private Object f36204i;
+        private Object f35980i;
 
         a() {
-            this.f36202d = x.this.f36200a.iterator();
+            this.f35978d = x.this.f35976a.iterator();
         }
 
         private final void a() {
-            if (this.f36202d.hasNext()) {
-                Object next = this.f36202d.next();
-                if (((Boolean) x.this.f36201b.invoke(next)).booleanValue()) {
-                    this.f36203e = 1;
-                    this.f36204i = next;
+            if (this.f35978d.hasNext()) {
+                Object next = this.f35978d.next();
+                if (((Boolean) x.this.f35977b.invoke(next)).booleanValue()) {
+                    this.f35979e = 1;
+                    this.f35980i = next;
                     return;
                 }
             }
-            this.f36203e = 0;
+            this.f35979e = 0;
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f36203e == -1) {
+            if (this.f35979e == -1) {
                 a();
             }
-            if (this.f36203e == 1) {
+            if (this.f35979e == 1) {
                 return true;
             }
             return false;
@@ -55,13 +55,13 @@ public final class x implements Sequence {
 
         @Override // java.util.Iterator
         public Object next() {
-            if (this.f36203e == -1) {
+            if (this.f35979e == -1) {
                 a();
             }
-            if (this.f36203e != 0) {
-                Object obj = this.f36204i;
-                this.f36204i = null;
-                this.f36203e = -1;
+            if (this.f35979e != 0) {
+                Object obj = this.f35980i;
+                this.f35980i = null;
+                this.f35979e = -1;
                 return obj;
             }
             throw new NoSuchElementException();
@@ -76,8 +76,8 @@ public final class x implements Sequence {
     public x(Sequence sequence, Function1 predicate) {
         Intrinsics.checkNotNullParameter(sequence, "sequence");
         Intrinsics.checkNotNullParameter(predicate, "predicate");
-        this.f36200a = sequence;
-        this.f36201b = predicate;
+        this.f35976a = sequence;
+        this.f35977b = predicate;
     }
 
     @Override // kotlin.sequences.Sequence

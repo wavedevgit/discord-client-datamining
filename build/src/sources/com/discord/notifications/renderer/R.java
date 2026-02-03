@@ -25,17 +25,17 @@ public final class R {
         public static int acceptButton = 0x7f0a0028;
         public static int acceptCallContainer = 0x7f0a002a;
         public static int acceptCallText = 0x7f0a002b;
-        public static int buttonContainer = 0x7f0a00f4;
-        public static int buttonLabels = 0x7f0a00f5;
-        public static int channelName = 0x7f0a0115;
-        public static int declineButton = 0x7f0a0179;
-        public static int declineCallContainer = 0x7f0a017a;
-        public static int declineCallText = 0x7f0a017b;
-        public static int imageView = 0x7f0a02a7;
-        public static int incoming_call_screen = 0x7f0a02b9;
-        public static int textContainer = 0x7f0a051e;
-        public static int textView = 0x7f0a0524;
-        public static int userName = 0x7f0a058e;
+        public static int buttonContainer = 0x7f0a00f5;
+        public static int buttonLabels = 0x7f0a00f6;
+        public static int channelName = 0x7f0a0116;
+        public static int declineButton = 0x7f0a017a;
+        public static int declineCallContainer = 0x7f0a017b;
+        public static int declineCallText = 0x7f0a017c;
+        public static int imageView = 0x7f0a02a8;
+        public static int incoming_call_screen = 0x7f0a02ba;
+        public static int textContainer = 0x7f0a051f;
+        public static int textView = 0x7f0a0525;
+        public static int userName = 0x7f0a058f;
 
         private id() {
         }

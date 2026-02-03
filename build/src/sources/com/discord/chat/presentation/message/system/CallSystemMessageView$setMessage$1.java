@@ -6,7 +6,7 @@ import com.discord.chat.bridge.Message;
 import com.discord.chat.databinding.CallSystemMessageViewBinding;
 import com.discord.misc.utilities.coroutines.CoroutineViewUtilsKt;
 import com.discord.misc.utilities.time.IntervalFlowKt;
-import gs.m0;
+import hs.m0;
 import java.util.Arrays;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -56,7 +56,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = or.b.f();
+            Object f10 = pr.b.f();
             int i10 = this.label;
             if (i10 != 0) {
                 if (i10 == 1) {
@@ -66,10 +66,10 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                 }
             } else {
                 kotlin.c.b(obj);
-                Duration.a aVar = Duration.f36297e;
-                final Flow m954intervalFlowQTBD994 = IntervalFlowKt.m954intervalFlowQTBD994(kotlin.time.b.s(1, es.b.f24009p), Duration.f36297e.c());
+                Duration.a aVar = Duration.f36073e;
+                final Flow m956intervalFlowQTBD994 = IntervalFlowKt.m956intervalFlowQTBD994(kotlin.time.b.s(1, fs.b.f25570p), Duration.f36073e.c());
                 final long j10 = this.$start;
-                Flow x10 = js.g.x(new Flow() { // from class: com.discord.chat.presentation.message.system.CallSystemMessageView$setMessage$1$1$invokeSuspend$$inlined$map$1
+                Flow x10 = ks.g.x(new Flow() { // from class: com.discord.chat.presentation.message.system.CallSystemMessageView$setMessage$1$1$invokeSuspend$$inlined$map$1
 
                     @Metadata(k = 3, mv = {2, 1, 0}, xi = 48)
                     @SourceDebugExtension({"SMAP\nEmitters.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Emitters.kt\nkotlinx/coroutines/flow/FlowKt__EmittersKt$unsafeTransform$1$1\n+ 2 Transform.kt\nkotlinx/coroutines/flow/FlowKt__TransformKt\n+ 3 CallSystemMessageView.kt\ncom/discord/chat/presentation/message/system/CallSystemMessageView$setMessage$1$1\n*L\n1#1,49:1\n50#2:50\n97#3,3:51\n*E\n"})
@@ -131,7 +131,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                                 r0.<init>(r10)
                             L18:
                                 java.lang.Object r10 = r0.result
-                                java.lang.Object r1 = or.b.f()
+                                java.lang.Object r1 = pr.b.f()
                                 int r2 = r0.label
                                 r3 = 1
                                 if (r2 == 0) goto L31
@@ -147,14 +147,14 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                                 kotlin.c.b(r10)
                                 kotlinx.coroutines.flow.FlowCollector r10 = r8.$this_unsafeFlow
                                 kotlin.Unit r9 = (kotlin.Unit) r9
-                                kotlin.time.Duration$a r9 = kotlin.time.Duration.f36297e
+                                kotlin.time.Duration$a r9 = kotlin.time.Duration.f36073e
                                 long r4 = java.lang.System.currentTimeMillis()
                                 long r6 = r8.$start$inlined
                                 long r4 = r4 - r6
-                                es.b r9 = es.b.f24008o
+                                fs.b r9 = fs.b.f25569o
                                 long r4 = kotlin.time.b.t(r4, r9)
                                 kotlin.time.Duration r9 = kotlin.time.Duration.h(r4)
-                                kotlin.time.Duration$a r2 = kotlin.time.Duration.f36297e
+                                kotlin.time.Duration$a r2 = kotlin.time.Duration.f36073e
                                 long r4 = r2.c()
                                 kotlin.time.Duration r2 = kotlin.time.Duration.h(r4)
                                 java.lang.Comparable r9 = kotlin.ranges.d.f(r9, r2)
@@ -163,7 +163,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                                 if (r9 != r1) goto L62
                                 return r1
                             L62:
-                                kotlin.Unit r9 = kotlin.Unit.f33298a
+                                kotlin.Unit r9 = kotlin.Unit.f33074a
                                 return r9
                             */
                             throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.system.CallSystemMessageView$setMessage$1$1$invokeSuspend$$inlined$map$1.AnonymousClass2.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -173,10 +173,10 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                     @Override // kotlinx.coroutines.flow.Flow
                     public Object collect(FlowCollector flowCollector, Continuation continuation) {
                         Object collect = Flow.this.collect(new AnonymousClass2(flowCollector, j10), continuation);
-                        if (collect == or.b.f()) {
+                        if (collect == pr.b.f()) {
                             return collect;
                         }
-                        return Unit.f33298a;
+                        return Unit.f33074a;
                     }
                 }, m0.a());
                 final CallSystemMessageView callSystemMessageView = this.this$0;
@@ -184,11 +184,11 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                 FlowCollector flowCollector = new FlowCollector() { // from class: com.discord.chat.presentation.message.system.CallSystemMessageView.setMessage.1.1.2
                     @Override // kotlinx.coroutines.flow.FlowCollector
                     public /* bridge */ /* synthetic */ Object emit(Object obj2, Continuation continuation) {
-                        return m678emitVtjQ1oo(((Duration) obj2).O(), continuation);
+                        return m680emitVtjQ1oo(((Duration) obj2).O(), continuation);
                     }
 
                     /* renamed from: emit-VtjQ1oo  reason: not valid java name */
-                    public final Object m678emitVtjQ1oo(long j11, Continuation<? super Unit> continuation) {
+                    public final Object m680emitVtjQ1oo(long j11, Continuation<? super Unit> continuation) {
                         CallSystemMessageViewBinding callSystemMessageViewBinding;
                         CallSystemMessageView callSystemMessageView2 = CallSystemMessageView.this;
                         Message message2 = message;
@@ -201,7 +201,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                         String format = String.format("%02d:%02d:%02d%s", Arrays.copyOf(new Object[]{kotlin.coroutines.jvm.internal.b.f(s10), kotlin.coroutines.jvm.internal.b.e(w10), kotlin.coroutines.jvm.internal.b.e(y10), message2.getDescription()}, 4));
                         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
                         textView.setText(format);
-                        return Unit.f33298a;
+                        return Unit.f33074a;
                     }
                 };
                 this.label = 1;
@@ -209,12 +209,12 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                     return f10;
                 }
             }
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
@@ -234,7 +234,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        Object f10 = or.b.f();
+        Object f10 = pr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -245,18 +245,18 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
         } else {
             kotlin.c.b(obj);
             CallSystemMessageView callSystemMessageView = this.this$0;
-            Lifecycle.State state = Lifecycle.State.f4395o;
+            Lifecycle.State state = Lifecycle.State.f4439o;
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$start, callSystemMessageView, this.$message, null);
             this.label = 1;
             if (CoroutineViewUtilsKt.repeatOnLifecycleOwner(callSystemMessageView, state, anonymousClass1, this) == f10) {
                 return f10;
             }
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((CallSystemMessageView$setMessage$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((CallSystemMessageView$setMessage$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

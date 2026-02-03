@@ -1,25 +1,27 @@
 package ro;
+
+import com.withpersona.sdk2.inquiry.FallbackMode;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e implements tq.d {
+public final class e implements uq.d {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static final class a {
+    /* renamed from: a  reason: collision with root package name */
+    private final c f48586a;
 
-        /* renamed from: a  reason: collision with root package name */
-        static final e f48440a = new e();
+    public e(c cVar) {
+        this.f48586a = cVar;
     }
 
-    public static e a() {
-        return a.f48440a;
+    public static e a(c cVar) {
+        return new e(cVar);
     }
 
-    public static d c() {
-        return new d();
+    public static FallbackMode b(c cVar) {
+        return (FallbackMode) uq.g.d(cVar.b());
     }
 
     @Override // javax.inject.Provider
-    /* renamed from: b */
-    public d get() {
-        return c();
+    /* renamed from: c */
+    public FallbackMode get() {
+        return b(this.f48586a);
     }
 }

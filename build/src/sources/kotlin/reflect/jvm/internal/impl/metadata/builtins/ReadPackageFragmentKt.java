@@ -1,14 +1,14 @@
 package kotlin.reflect.jvm.internal.impl.metadata.builtins;
 
-import ir.v;
 import java.io.InputStream;
+import jr.v;
 import kotlin.Pair;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf;
 import kotlin.reflect.jvm.internal.impl.protobuf.ExtensionRegistryLite;
 import org.jetbrains.annotations.NotNull;
-import tr.c;
+import ur.c;
 @SourceDebugExtension({"SMAP\nreadPackageFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 readPackageFragment.kt\norg/jetbrains/kotlin/metadata/builtins/ReadPackageFragmentKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,23:1\n1#2:24\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class ReadPackageFragmentKt {

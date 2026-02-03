@@ -11,38 +11,38 @@ import java.util.ArrayList;
 public class e0 extends RenderableView {
 
     /* renamed from: d  reason: collision with root package name */
-    private SVGLength f17880d;
+    private SVGLength f17509d;
 
     /* renamed from: e  reason: collision with root package name */
-    private SVGLength f17881e;
+    private SVGLength f17510e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SVGLength f17882i;
+    private SVGLength f17511i;
 
     /* renamed from: o  reason: collision with root package name */
-    private SVGLength f17883o;
+    private SVGLength f17512o;
 
     public e0(ReactContext reactContext) {
         super(reactContext);
     }
 
     public void c(Dynamic dynamic) {
-        this.f17880d = SVGLength.b(dynamic);
+        this.f17509d = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void d(Dynamic dynamic) {
-        this.f17882i = SVGLength.b(dynamic);
+        this.f17511i = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void e(Dynamic dynamic) {
-        this.f17881e = SVGLength.b(dynamic);
+        this.f17510e = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void f(Dynamic dynamic) {
-        this.f17883o = SVGLength.b(dynamic);
+        this.f17512o = SVGLength.b(dynamic);
         invalidate();
     }
 
@@ -50,10 +50,10 @@ public class e0 extends RenderableView {
     @Override // com.horcrux.svg.RenderableView, com.horcrux.svg.VirtualView
     public Path getPath(Canvas canvas, Paint paint) {
         Path path = new Path();
-        double relativeOnWidth = relativeOnWidth(this.f17880d);
-        double relativeOnHeight = relativeOnHeight(this.f17881e);
-        double relativeOnWidth2 = relativeOnWidth(this.f17882i);
-        double relativeOnHeight2 = relativeOnHeight(this.f17883o);
+        double relativeOnWidth = relativeOnWidth(this.f17509d);
+        double relativeOnHeight = relativeOnHeight(this.f17510e);
+        double relativeOnWidth2 = relativeOnWidth(this.f17511i);
+        double relativeOnHeight2 = relativeOnHeight(this.f17512o);
         path.moveTo((float) relativeOnWidth, (float) relativeOnHeight);
         path.lineTo((float) relativeOnWidth2, (float) relativeOnHeight2);
         ArrayList<i0> arrayList = new ArrayList<>();

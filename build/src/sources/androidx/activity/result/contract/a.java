@@ -13,12 +13,12 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a extends ActivityResultContract {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0012a f881a = new C0012a(null);
+    public static final C0016a f925a = new C0016a(null);
 
     /* renamed from: androidx.activity.result.contract.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0012a {
-        public /* synthetic */ C0012a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0016a {
+        public /* synthetic */ C0016a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -45,7 +45,7 @@ public abstract class a extends ActivityResultContract {
             return new ArrayList(linkedHashSet);
         }
 
-        private C0012a() {
+        private C0016a() {
         }
     }
 }

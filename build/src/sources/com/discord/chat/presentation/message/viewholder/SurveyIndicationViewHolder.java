@@ -25,6 +25,6 @@ public final class SurveyIndicationViewHolder extends MessagePartViewHolder {
 
     public final void bind(@NotNull SurveyIndicationMessageAccessory surveyAccessory) {
         Intrinsics.checkNotNullParameter(surveyAccessory, "surveyAccessory");
-        this.surveyIndicationView.m706setSurveyIndicationu7_MRrM(surveyAccessory.mo536getMessageId3Eiw7ao(), surveyAccessory.getSurveyIndication(), new SurveyIndicationViewHolder$bind$1$1(this.eventHandler));
+        this.surveyIndicationView.m708setSurveyIndicationu7_MRrM(surveyAccessory.mo538getMessageId3Eiw7ao(), surveyAccessory.getSurveyIndication(), new SurveyIndicationViewHolder$bind$1$1(this.eventHandler));
     }
 }

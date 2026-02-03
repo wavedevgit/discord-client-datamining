@@ -13,55 +13,55 @@ import java.util.concurrent.CopyOnWriteArraySet;
 public abstract class o0 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    final Map f11892a;
+    final Map f11521a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final w0 f11893b;
+    private final w0 f11522b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f11894c;
+    private final boolean f11523c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f11895d;
+    private final String f11524d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f11896e;
+    private final String f11525e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f11897a;
+        private final Object f11526a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final CopyOnWriteArraySet f11898b = o8.l.a();
+        private final CopyOnWriteArraySet f11527b = o8.l.a();
 
         /* renamed from: c  reason: collision with root package name */
-        private Closeable f11899c;
+        private Closeable f11528c;
 
         /* renamed from: d  reason: collision with root package name */
-        private float f11900d;
+        private float f11529d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f11901e;
+        private int f11530e;
 
         /* renamed from: f  reason: collision with root package name */
-        private e f11902f;
+        private e f11531f;
 
         /* renamed from: g  reason: collision with root package name */
-        private b f11903g;
+        private b f11532g;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: com.facebook.imagepipeline.producers.o0$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public class C0160a extends f {
+        public class C0165a extends f {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ Pair f11905a;
+            final /* synthetic */ Pair f11534a;
 
-            C0160a(Pair pair) {
-                this.f11905a = pair;
+            C0165a(Pair pair) {
+                this.f11534a = pair;
             }
 
             @Override // com.facebook.imagepipeline.producers.f, com.facebook.imagepipeline.producers.x0
@@ -78,11 +78,11 @@ public abstract class o0 implements w0 {
                 List list3;
                 synchronized (a.this) {
                     try {
-                        remove = a.this.f11898b.remove(this.f11905a);
+                        remove = a.this.f11527b.remove(this.f11534a);
                         list = null;
                         if (remove) {
-                            if (a.this.f11898b.isEmpty()) {
-                                eVar = a.this.f11902f;
+                            if (a.this.f11527b.isEmpty()) {
+                                eVar = a.this.f11531f;
                                 list2 = null;
                             } else {
                                 List s10 = a.this.s();
@@ -104,14 +104,14 @@ public abstract class o0 implements w0 {
                 e.e(list2);
                 e.c(list3);
                 if (eVar != null) {
-                    if (o0.this.f11894c && !eVar.C0()) {
-                        e.e(eVar.k(Priority.f11459e));
+                    if (o0.this.f11523c && !eVar.D0()) {
+                        e.e(eVar.k(Priority.f11088e));
                     } else {
                         eVar.f();
                     }
                 }
                 if (remove) {
-                    ((Consumer) this.f11905a.first).a();
+                    ((Consumer) this.f11534a.first).a();
                 }
             }
 
@@ -208,11 +208,11 @@ public abstract class o0 implements w0 {
         }
 
         public a(Object obj) {
-            this.f11897a = obj;
+            this.f11526a = obj;
         }
 
         private void g(Pair pair, ProducerContext producerContext) {
-            producerContext.h(new C0160a(pair));
+            producerContext.h(new C0165a(pair));
         }
 
         private void i(Closeable closeable) {
@@ -226,7 +226,7 @@ public abstract class o0 implements w0 {
         }
 
         private synchronized boolean j() {
-            Iterator it = this.f11898b.iterator();
+            Iterator it = this.f11527b.iterator();
             while (it.hasNext()) {
                 if (((ProducerContext) ((Pair) it.next()).second).L()) {
                     return true;
@@ -236,9 +236,9 @@ public abstract class o0 implements w0 {
         }
 
         private synchronized boolean k() {
-            Iterator it = this.f11898b.iterator();
+            Iterator it = this.f11527b.iterator();
             while (it.hasNext()) {
-                if (!((ProducerContext) ((Pair) it.next()).second).C0()) {
+                if (!((ProducerContext) ((Pair) it.next()).second).D0()) {
                     return false;
                 }
             }
@@ -247,8 +247,8 @@ public abstract class o0 implements w0 {
 
         private synchronized Priority l() {
             Priority priority;
-            priority = Priority.f11459e;
-            Iterator it = this.f11898b.iterator();
+            priority = Priority.f11088e;
+            Iterator it = this.f11527b.iterator();
             while (it.hasNext()) {
                 priority = Priority.d(priority, ((ProducerContext) ((Pair) it.next()).second).N());
             }
@@ -261,30 +261,30 @@ public abstract class o0 implements w0 {
             synchronized (this) {
                 try {
                     boolean z11 = false;
-                    if (this.f11902f == null) {
+                    if (this.f11531f == null) {
                         z10 = true;
                     } else {
                         z10 = false;
                     }
                     o8.j.b(Boolean.valueOf(z10));
-                    if (this.f11903g == null) {
+                    if (this.f11532g == null) {
                         z11 = true;
                     }
                     o8.j.b(Boolean.valueOf(z11));
-                    if (this.f11898b.isEmpty()) {
-                        o0.this.k(this.f11897a, this);
+                    if (this.f11527b.isEmpty()) {
+                        o0.this.k(this.f11526a, this);
                         return;
                     }
-                    ProducerContext producerContext = (ProducerContext) ((Pair) this.f11898b.iterator().next()).second;
-                    e eVar2 = new e(producerContext.V(), producerContext.getId(), producerContext.F(), producerContext.a(), producerContext.E0(), k(), j(), l(), producerContext.l());
-                    this.f11902f = eVar2;
-                    eVar2.A0(producerContext.getExtras());
+                    ProducerContext producerContext = (ProducerContext) ((Pair) this.f11527b.iterator().next()).second;
+                    e eVar2 = new e(producerContext.V(), producerContext.getId(), producerContext.F(), producerContext.a(), producerContext.F0(), k(), j(), l(), producerContext.l());
+                    this.f11531f = eVar2;
+                    eVar2.t0(producerContext.getExtras());
                     if (eVar.d()) {
-                        this.f11902f.B("started_as_prefetch", Boolean.valueOf(eVar.a()));
+                        this.f11531f.B("started_as_prefetch", Boolean.valueOf(eVar.a()));
                     }
                     b bVar = new b();
-                    this.f11903g = bVar;
-                    o0.this.f11893b.b(bVar, this.f11902f);
+                    this.f11532g = bVar;
+                    o0.this.f11522b.b(bVar, this.f11531f);
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -293,7 +293,7 @@ public abstract class o0 implements w0 {
 
         /* JADX INFO: Access modifiers changed from: private */
         public synchronized List r() {
-            e eVar = this.f11902f;
+            e eVar = this.f11531f;
             if (eVar == null) {
                 return null;
             }
@@ -302,7 +302,7 @@ public abstract class o0 implements w0 {
 
         /* JADX INFO: Access modifiers changed from: private */
         public synchronized List s() {
-            e eVar = this.f11902f;
+            e eVar = this.f11531f;
             if (eVar == null) {
                 return null;
             }
@@ -311,7 +311,7 @@ public abstract class o0 implements w0 {
 
         /* JADX INFO: Access modifiers changed from: private */
         public synchronized List t() {
-            e eVar = this.f11902f;
+            e eVar = this.f11531f;
             if (eVar == null) {
                 return null;
             }
@@ -322,23 +322,23 @@ public abstract class o0 implements w0 {
             Pair create = Pair.create(consumer, producerContext);
             synchronized (this) {
                 try {
-                    if (o0.this.i(this.f11897a) != this) {
+                    if (o0.this.i(this.f11526a) != this) {
                         return false;
                     }
-                    this.f11898b.add(create);
+                    this.f11527b.add(create);
                     List s10 = s();
                     List t10 = t();
                     List r10 = r();
-                    Closeable closeable = this.f11899c;
-                    float f10 = this.f11900d;
-                    int i10 = this.f11901e;
+                    Closeable closeable = this.f11528c;
+                    float f10 = this.f11529d;
+                    int i10 = this.f11530e;
                     e.d(s10);
                     e.e(t10);
                     e.c(r10);
                     synchronized (create) {
                         try {
                             synchronized (this) {
-                                if (closeable != this.f11899c) {
+                                if (closeable != this.f11528c) {
                                     closeable = null;
                                 } else if (closeable != null) {
                                     closeable = o0.this.g(closeable);
@@ -364,13 +364,13 @@ public abstract class o0 implements w0 {
         public void m(b bVar) {
             synchronized (this) {
                 try {
-                    if (this.f11903g != bVar) {
+                    if (this.f11532g != bVar) {
                         return;
                     }
-                    this.f11903g = null;
-                    this.f11902f = null;
-                    i(this.f11899c);
-                    this.f11899c = null;
+                    this.f11532g = null;
+                    this.f11531f = null;
+                    i(this.f11528c);
+                    this.f11528c = null;
                     q(w8.e.UNSET);
                 } catch (Throwable th2) {
                     throw th2;
@@ -381,22 +381,22 @@ public abstract class o0 implements w0 {
         public void n(b bVar, Throwable th2) {
             synchronized (this) {
                 try {
-                    if (this.f11903g != bVar) {
+                    if (this.f11532g != bVar) {
                         return;
                     }
-                    Iterator it = this.f11898b.iterator();
-                    this.f11898b.clear();
-                    o0.this.k(this.f11897a, this);
-                    i(this.f11899c);
-                    this.f11899c = null;
+                    Iterator it = this.f11527b.iterator();
+                    this.f11527b.clear();
+                    o0.this.k(this.f11526a, this);
+                    i(this.f11528c);
+                    this.f11528c = null;
                     while (it.hasNext()) {
                         Pair pair = (Pair) it.next();
                         synchronized (pair) {
                             try {
-                                ((ProducerContext) pair.second).F().k((ProducerContext) pair.second, o0.this.f11895d, th2, null);
-                                e eVar = this.f11902f;
+                                ((ProducerContext) pair.second).F().k((ProducerContext) pair.second, o0.this.f11524d, th2, null);
+                                e eVar = this.f11531f;
                                 if (eVar != null) {
-                                    ((ProducerContext) pair.second).A0(eVar.getExtras());
+                                    ((ProducerContext) pair.second).t0(eVar.getExtras());
                                 }
                                 ((Consumer) pair.first).onFailure(th2);
                             } finally {
@@ -411,31 +411,31 @@ public abstract class o0 implements w0 {
         public void o(b bVar, Closeable closeable, int i10) {
             synchronized (this) {
                 try {
-                    if (this.f11903g != bVar) {
+                    if (this.f11532g != bVar) {
                         return;
                     }
-                    i(this.f11899c);
-                    this.f11899c = null;
-                    Iterator it = this.f11898b.iterator();
-                    int size = this.f11898b.size();
+                    i(this.f11528c);
+                    this.f11528c = null;
+                    Iterator it = this.f11527b.iterator();
+                    int size = this.f11527b.size();
                     if (c.e(i10)) {
-                        this.f11899c = o0.this.g(closeable);
-                        this.f11901e = i10;
+                        this.f11528c = o0.this.g(closeable);
+                        this.f11530e = i10;
                     } else {
-                        this.f11898b.clear();
-                        o0.this.k(this.f11897a, this);
+                        this.f11527b.clear();
+                        o0.this.k(this.f11526a, this);
                     }
                     while (it.hasNext()) {
                         Pair pair = (Pair) it.next();
                         synchronized (pair) {
                             try {
                                 if (c.d(i10)) {
-                                    ((ProducerContext) pair.second).F().j((ProducerContext) pair.second, o0.this.f11895d, null);
-                                    e eVar = this.f11902f;
+                                    ((ProducerContext) pair.second).F().j((ProducerContext) pair.second, o0.this.f11524d, null);
+                                    e eVar = this.f11531f;
                                     if (eVar != null) {
-                                        ((ProducerContext) pair.second).A0(eVar.getExtras());
+                                        ((ProducerContext) pair.second).t0(eVar.getExtras());
                                     }
-                                    ((ProducerContext) pair.second).B(o0.this.f11896e, Integer.valueOf(size));
+                                    ((ProducerContext) pair.second).B(o0.this.f11525e, Integer.valueOf(size));
                                 }
                                 ((Consumer) pair.first).b(closeable, i10);
                             } finally {
@@ -450,11 +450,11 @@ public abstract class o0 implements w0 {
         public void p(b bVar, float f10) {
             synchronized (this) {
                 try {
-                    if (this.f11903g != bVar) {
+                    if (this.f11532g != bVar) {
                         return;
                     }
-                    this.f11900d = f10;
-                    Iterator it = this.f11898b.iterator();
+                    this.f11529d = f10;
+                    Iterator it = this.f11527b.iterator();
                     while (it.hasNext()) {
                         Pair pair = (Pair) it.next();
                         synchronized (pair) {
@@ -475,7 +475,7 @@ public abstract class o0 implements w0 {
     private synchronized a h(Object obj) {
         a aVar;
         aVar = new a(obj);
-        this.f11892a.put(obj, aVar);
+        this.f11521a.put(obj, aVar);
         return aVar;
     }
 
@@ -487,7 +487,7 @@ public abstract class o0 implements w0 {
             if (ya.b.d()) {
                 ya.b.a("MultiplexProducer#produceResults");
             }
-            producerContext.F().d(producerContext, this.f11895d);
+            producerContext.F().d(producerContext, this.f11524d);
             Object j10 = j(producerContext);
             do {
                 synchronized (this) {
@@ -501,7 +501,7 @@ public abstract class o0 implements w0 {
                 }
             } while (!i10.h(consumer, producerContext));
             if (z10) {
-                i10.q(w8.e.e(producerContext.C0()));
+                i10.q(w8.e.e(producerContext.D0()));
             }
             if (ya.b.d()) {
                 ya.b.b();
@@ -517,23 +517,23 @@ public abstract class o0 implements w0 {
     protected abstract Closeable g(Closeable closeable);
 
     protected synchronized a i(Object obj) {
-        return (a) this.f11892a.get(obj);
+        return (a) this.f11521a.get(obj);
     }
 
     protected abstract Object j(ProducerContext producerContext);
 
     protected synchronized void k(Object obj, a aVar) {
-        if (this.f11892a.get(obj) == aVar) {
-            this.f11892a.remove(obj);
+        if (this.f11521a.get(obj) == aVar) {
+            this.f11521a.remove(obj);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public o0(w0 w0Var, String str, String str2, boolean z10) {
-        this.f11893b = w0Var;
-        this.f11892a = new HashMap();
-        this.f11894c = z10;
-        this.f11895d = str;
-        this.f11896e = str2;
+        this.f11522b = w0Var;
+        this.f11521a = new HashMap();
+        this.f11523c = z10;
+        this.f11524d = str;
+        this.f11525e = str2;
     }
 }

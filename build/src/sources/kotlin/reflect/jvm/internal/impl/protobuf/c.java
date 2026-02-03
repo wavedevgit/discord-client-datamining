@@ -13,43 +13,43 @@ import kotlin.reflect.jvm.internal.impl.protobuf.ByteString;
 public class c extends ByteString {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final int[] f35281r;
+    private static final int[] f35057r;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f35282d;
+    private final int f35058d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ByteString f35283e;
+    private final ByteString f35059e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ByteString f35284i;
+    private final ByteString f35060i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f35285o;
+    private final int f35061o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f35286p;
+    private final int f35062p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f35287q;
+    private int f35063q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Stack f35288a;
+        private final Stack f35064a;
 
         private b() {
-            this.f35288a = new Stack();
+            this.f35064a = new Stack();
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public ByteString b(ByteString byteString, ByteString byteString2) {
             c(byteString);
             c(byteString2);
-            ByteString byteString3 = (ByteString) this.f35288a.pop();
-            while (!this.f35288a.isEmpty()) {
-                byteString3 = new c((ByteString) this.f35288a.pop(), byteString3);
+            ByteString byteString3 = (ByteString) this.f35064a.pop();
+            while (!this.f35064a.isEmpty()) {
+                byteString3 = new c((ByteString) this.f35064a.pop(), byteString3);
             }
             return byteString3;
         }
@@ -59,8 +59,8 @@ public class c extends ByteString {
                 e(byteString);
             } else if (byteString instanceof c) {
                 c cVar = (c) byteString;
-                c(cVar.f35283e);
-                c(cVar.f35284i);
+                c(cVar.f35059e);
+                c(cVar.f35060i);
             } else {
                 String valueOf = String.valueOf(byteString.getClass());
                 StringBuilder sb2 = new StringBuilder(valueOf.length() + 49);
@@ -71,7 +71,7 @@ public class c extends ByteString {
         }
 
         private int d(int i10) {
-            int binarySearch = Arrays.binarySearch(c.f35281r, i10);
+            int binarySearch = Arrays.binarySearch(c.f35057r, i10);
             if (binarySearch < 0) {
                 return (-(binarySearch + 1)) - 1;
             }
@@ -80,50 +80,50 @@ public class c extends ByteString {
 
         private void e(ByteString byteString) {
             int d10 = d(byteString.size());
-            int i10 = c.f35281r[d10 + 1];
-            if (!this.f35288a.isEmpty() && ((ByteString) this.f35288a.peek()).size() < i10) {
-                int i11 = c.f35281r[d10];
-                ByteString byteString2 = (ByteString) this.f35288a.pop();
-                while (!this.f35288a.isEmpty() && ((ByteString) this.f35288a.peek()).size() < i11) {
-                    byteString2 = new c((ByteString) this.f35288a.pop(), byteString2);
+            int i10 = c.f35057r[d10 + 1];
+            if (!this.f35064a.isEmpty() && ((ByteString) this.f35064a.peek()).size() < i10) {
+                int i11 = c.f35057r[d10];
+                ByteString byteString2 = (ByteString) this.f35064a.pop();
+                while (!this.f35064a.isEmpty() && ((ByteString) this.f35064a.peek()).size() < i11) {
+                    byteString2 = new c((ByteString) this.f35064a.pop(), byteString2);
                 }
                 c cVar = new c(byteString2, byteString);
-                while (!this.f35288a.isEmpty()) {
-                    if (((ByteString) this.f35288a.peek()).size() >= c.f35281r[d(cVar.size()) + 1]) {
+                while (!this.f35064a.isEmpty()) {
+                    if (((ByteString) this.f35064a.peek()).size() >= c.f35057r[d(cVar.size()) + 1]) {
                         break;
                     }
-                    cVar = new c((ByteString) this.f35288a.pop(), cVar);
+                    cVar = new c((ByteString) this.f35064a.pop(), cVar);
                 }
-                this.f35288a.push(cVar);
+                this.f35064a.push(cVar);
                 return;
             }
-            this.f35288a.push(byteString);
+            this.f35064a.push(byteString);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: kotlin.reflect.jvm.internal.impl.protobuf.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class C0456c implements Iterator {
+    public static class C0448c implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Stack f35289d;
+        private final Stack f35065d;
 
         /* renamed from: e  reason: collision with root package name */
-        private kotlin.reflect.jvm.internal.impl.protobuf.b f35290e;
+        private kotlin.reflect.jvm.internal.impl.protobuf.b f35066e;
 
         private kotlin.reflect.jvm.internal.impl.protobuf.b a(ByteString byteString) {
             while (byteString instanceof c) {
                 c cVar = (c) byteString;
-                this.f35289d.push(cVar);
-                byteString = cVar.f35283e;
+                this.f35065d.push(cVar);
+                byteString = cVar.f35059e;
             }
             return (kotlin.reflect.jvm.internal.impl.protobuf.b) byteString;
         }
 
         private kotlin.reflect.jvm.internal.impl.protobuf.b b() {
-            while (!this.f35289d.isEmpty()) {
-                kotlin.reflect.jvm.internal.impl.protobuf.b a10 = a(((c) this.f35289d.pop()).f35284i);
+            while (!this.f35065d.isEmpty()) {
+                kotlin.reflect.jvm.internal.impl.protobuf.b a10 = a(((c) this.f35065d.pop()).f35060i);
                 if (!a10.isEmpty()) {
                     return a10;
                 }
@@ -134,9 +134,9 @@ public class c extends ByteString {
         @Override // java.util.Iterator
         /* renamed from: c */
         public kotlin.reflect.jvm.internal.impl.protobuf.b next() {
-            kotlin.reflect.jvm.internal.impl.protobuf.b bVar = this.f35290e;
+            kotlin.reflect.jvm.internal.impl.protobuf.b bVar = this.f35066e;
             if (bVar != null) {
-                this.f35290e = b();
+                this.f35066e = b();
                 return bVar;
             }
             throw new NoSuchElementException();
@@ -144,7 +144,7 @@ public class c extends ByteString {
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f35290e != null) {
+            if (this.f35066e != null) {
                 return true;
             }
             return false;
@@ -155,9 +155,9 @@ public class c extends ByteString {
             throw new UnsupportedOperationException();
         }
 
-        private C0456c(ByteString byteString) {
-            this.f35289d = new Stack();
-            this.f35290e = a(byteString);
+        private C0448c(ByteString byteString) {
+            this.f35065d = new Stack();
+            this.f35066e = a(byteString);
         }
     }
 
@@ -166,13 +166,13 @@ public class c extends ByteString {
     public class d implements ByteString.ByteIterator {
 
         /* renamed from: d  reason: collision with root package name */
-        private final C0456c f35291d;
+        private final C0448c f35067d;
 
         /* renamed from: e  reason: collision with root package name */
-        private ByteString.ByteIterator f35292e;
+        private ByteString.ByteIterator f35068e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f35293i;
+        int f35069i;
 
         @Override // java.util.Iterator
         /* renamed from: a */
@@ -182,7 +182,7 @@ public class c extends ByteString {
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f35293i > 0) {
+            if (this.f35069i > 0) {
                 return true;
             }
             return false;
@@ -191,11 +191,11 @@ public class c extends ByteString {
         /* JADX WARN: Type inference failed for: r0v8, types: [kotlin.reflect.jvm.internal.impl.protobuf.ByteString$ByteIterator] */
         @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString.ByteIterator
         public byte nextByte() {
-            if (!this.f35292e.hasNext()) {
-                this.f35292e = this.f35291d.next().iterator();
+            if (!this.f35068e.hasNext()) {
+                this.f35068e = this.f35067d.next().iterator();
             }
-            this.f35293i--;
-            return this.f35292e.nextByte();
+            this.f35069i--;
+            return this.f35068e.nextByte();
         }
 
         @Override // java.util.Iterator
@@ -205,10 +205,10 @@ public class c extends ByteString {
 
         /* JADX WARN: Type inference failed for: r0v2, types: [kotlin.reflect.jvm.internal.impl.protobuf.ByteString$ByteIterator] */
         private d() {
-            C0456c c0456c = new C0456c(c.this);
-            this.f35291d = c0456c;
-            this.f35292e = c0456c.next().iterator();
-            this.f35293i = c.this.size();
+            C0448c c0448c = new C0448c(c.this);
+            this.f35067d = c0448c;
+            this.f35068e = c0448c.next().iterator();
+            this.f35069i = c.this.size();
         }
     }
 
@@ -223,10 +223,10 @@ public class c extends ByteString {
             i10 = i12;
         }
         arrayList.add(Integer.MAX_VALUE);
-        f35281r = new int[arrayList.size()];
+        f35057r = new int[arrayList.size()];
         int i13 = 0;
         while (true) {
-            int[] iArr = f35281r;
+            int[] iArr = f35057r;
             if (i13 < iArr.length) {
                 iArr[i13] = ((Integer) arrayList.get(i13)).intValue();
                 i13++;
@@ -254,12 +254,12 @@ public class c extends ByteString {
         if (size < 128) {
             return p(byteString, byteString2);
         }
-        if (cVar != null && cVar.f35284i.size() + byteString2.size() < 128) {
-            return new c(cVar.f35283e, p(cVar.f35284i, byteString2));
-        } else if (cVar != null && cVar.f35283e.d() > cVar.f35284i.d() && cVar.d() > byteString2.d()) {
-            return new c(cVar.f35283e, new c(cVar.f35284i, byteString2));
+        if (cVar != null && cVar.f35060i.size() + byteString2.size() < 128) {
+            return new c(cVar.f35059e, p(cVar.f35060i, byteString2));
+        } else if (cVar != null && cVar.f35059e.d() > cVar.f35060i.d() && cVar.d() > byteString2.d()) {
+            return new c(cVar.f35059e, new c(cVar.f35060i, byteString2));
         } else {
-            if (size < f35281r[Math.max(byteString.d(), byteString2.d()) + 1]) {
+            if (size < f35057r[Math.max(byteString.d(), byteString2.d()) + 1]) {
                 return new b().b(byteString, byteString2);
             }
             return new c(byteString, byteString2);
@@ -277,10 +277,10 @@ public class c extends ByteString {
 
     private boolean q(ByteString byteString) {
         boolean m10;
-        C0456c c0456c = new C0456c(this);
-        kotlin.reflect.jvm.internal.impl.protobuf.b bVar = (kotlin.reflect.jvm.internal.impl.protobuf.b) c0456c.next();
-        C0456c c0456c2 = new C0456c(byteString);
-        kotlin.reflect.jvm.internal.impl.protobuf.b bVar2 = (kotlin.reflect.jvm.internal.impl.protobuf.b) c0456c2.next();
+        C0448c c0448c = new C0448c(this);
+        kotlin.reflect.jvm.internal.impl.protobuf.b bVar = (kotlin.reflect.jvm.internal.impl.protobuf.b) c0448c.next();
+        C0448c c0448c2 = new C0448c(byteString);
+        kotlin.reflect.jvm.internal.impl.protobuf.b bVar2 = (kotlin.reflect.jvm.internal.impl.protobuf.b) c0448c2.next();
         int i10 = 0;
         int i11 = 0;
         int i12 = 0;
@@ -297,7 +297,7 @@ public class c extends ByteString {
                 return false;
             }
             i12 += min;
-            int i13 = this.f35282d;
+            int i13 = this.f35058d;
             if (i12 >= i13) {
                 if (i12 == i13) {
                     return true;
@@ -305,13 +305,13 @@ public class c extends ByteString {
                 throw new IllegalStateException();
             }
             if (min == size) {
-                bVar = (kotlin.reflect.jvm.internal.impl.protobuf.b) c0456c.next();
+                bVar = (kotlin.reflect.jvm.internal.impl.protobuf.b) c0448c.next();
                 i10 = 0;
             } else {
                 i10 += min;
             }
             if (min == size2) {
-                bVar2 = (kotlin.reflect.jvm.internal.impl.protobuf.b) c0456c2.next();
+                bVar2 = (kotlin.reflect.jvm.internal.impl.protobuf.b) c0448c2.next();
                 i11 = 0;
             } else {
                 i11 += min;
@@ -322,26 +322,26 @@ public class c extends ByteString {
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     protected void c(byte[] bArr, int i10, int i11, int i12) {
         int i13 = i10 + i12;
-        int i14 = this.f35285o;
+        int i14 = this.f35061o;
         if (i13 <= i14) {
-            this.f35283e.c(bArr, i10, i11, i12);
+            this.f35059e.c(bArr, i10, i11, i12);
         } else if (i10 >= i14) {
-            this.f35284i.c(bArr, i10 - i14, i11, i12);
+            this.f35060i.c(bArr, i10 - i14, i11, i12);
         } else {
             int i15 = i14 - i10;
-            this.f35283e.c(bArr, i10, i11, i15);
-            this.f35284i.c(bArr, 0, i11 + i15, i12 - i15);
+            this.f35059e.c(bArr, i10, i11, i15);
+            this.f35060i.c(bArr, 0, i11 + i15, i12 - i15);
         }
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     protected int d() {
-        return this.f35286p;
+        return this.f35062p;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     protected boolean e() {
-        if (this.f35282d >= f35281r[this.f35286p]) {
+        if (this.f35058d >= f35057r[this.f35062p]) {
             return true;
         }
         return false;
@@ -356,13 +356,13 @@ public class c extends ByteString {
             return false;
         }
         ByteString byteString = (ByteString) obj;
-        if (this.f35282d != byteString.size()) {
+        if (this.f35058d != byteString.size()) {
             return false;
         }
-        if (this.f35282d == 0) {
+        if (this.f35058d == 0) {
             return true;
         }
-        if (this.f35287q != 0 && (h10 = byteString.h()) != 0 && this.f35287q != h10) {
+        if (this.f35063q != 0 && (h10 = byteString.h()) != 0 && this.f35063q != h10) {
             return false;
         }
         return q(byteString);
@@ -371,53 +371,53 @@ public class c extends ByteString {
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     protected int f(int i10, int i11, int i12) {
         int i13 = i11 + i12;
-        int i14 = this.f35285o;
+        int i14 = this.f35061o;
         if (i13 <= i14) {
-            return this.f35283e.f(i10, i11, i12);
+            return this.f35059e.f(i10, i11, i12);
         }
         if (i11 >= i14) {
-            return this.f35284i.f(i10, i11 - i14, i12);
+            return this.f35060i.f(i10, i11 - i14, i12);
         }
         int i15 = i14 - i11;
-        return this.f35284i.f(this.f35283e.f(i10, i11, i15), 0, i12 - i15);
+        return this.f35060i.f(this.f35059e.f(i10, i11, i15), 0, i12 - i15);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     protected int g(int i10, int i11, int i12) {
         int i13 = i11 + i12;
-        int i14 = this.f35285o;
+        int i14 = this.f35061o;
         if (i13 <= i14) {
-            return this.f35283e.g(i10, i11, i12);
+            return this.f35059e.g(i10, i11, i12);
         }
         if (i11 >= i14) {
-            return this.f35284i.g(i10, i11 - i14, i12);
+            return this.f35060i.g(i10, i11 - i14, i12);
         }
         int i15 = i14 - i11;
-        return this.f35284i.g(this.f35283e.g(i10, i11, i15), 0, i12 - i15);
+        return this.f35060i.g(this.f35059e.g(i10, i11, i15), 0, i12 - i15);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     protected int h() {
-        return this.f35287q;
+        return this.f35063q;
     }
 
     public int hashCode() {
-        int i10 = this.f35287q;
+        int i10 = this.f35063q;
         if (i10 == 0) {
-            int i11 = this.f35282d;
+            int i11 = this.f35058d;
             i10 = f(i11, 0, i11);
             if (i10 == 0) {
                 i10 = 1;
             }
-            this.f35287q = i10;
+            this.f35063q = i10;
         }
         return i10;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     public boolean isValidUtf8() {
-        int g10 = this.f35283e.g(0, 0, this.f35285o);
-        ByteString byteString = this.f35284i;
+        int g10 = this.f35059e.g(0, 0, this.f35061o);
+        ByteString byteString = this.f35060i;
         if (byteString.g(g10, 0, byteString.size()) != 0) {
             return false;
         }
@@ -427,15 +427,15 @@ public class c extends ByteString {
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     void j(OutputStream outputStream, int i10, int i11) {
         int i12 = i10 + i11;
-        int i13 = this.f35285o;
+        int i13 = this.f35061o;
         if (i12 <= i13) {
-            this.f35283e.j(outputStream, i10, i11);
+            this.f35059e.j(outputStream, i10, i11);
         } else if (i10 >= i13) {
-            this.f35284i.j(outputStream, i10 - i13, i11);
+            this.f35060i.j(outputStream, i10 - i13, i11);
         } else {
             int i14 = i13 - i10;
-            this.f35283e.j(outputStream, i10, i14);
-            this.f35284i.j(outputStream, 0, i11 - i14);
+            this.f35059e.j(outputStream, i10, i14);
+            this.f35060i.j(outputStream, 0, i11 - i14);
         }
     }
 
@@ -446,7 +446,7 @@ public class c extends ByteString {
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
     public int size() {
-        return this.f35282d;
+        return this.f35058d;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString
@@ -455,13 +455,13 @@ public class c extends ByteString {
     }
 
     private c(ByteString byteString, ByteString byteString2) {
-        this.f35287q = 0;
-        this.f35283e = byteString;
-        this.f35284i = byteString2;
+        this.f35063q = 0;
+        this.f35059e = byteString;
+        this.f35060i = byteString2;
         int size = byteString.size();
-        this.f35285o = size;
-        this.f35282d = size + byteString2.size();
-        this.f35286p = Math.max(byteString.d(), byteString2.d()) + 1;
+        this.f35061o = size;
+        this.f35058d = size + byteString2.size();
+        this.f35062p = Math.max(byteString.d(), byteString2.d()) + 1;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.ByteString, java.lang.Iterable
@@ -473,54 +473,54 @@ public class c extends ByteString {
     private class e extends InputStream {
 
         /* renamed from: d  reason: collision with root package name */
-        private C0456c f35295d;
+        private C0448c f35071d;
 
         /* renamed from: e  reason: collision with root package name */
-        private kotlin.reflect.jvm.internal.impl.protobuf.b f35296e;
+        private kotlin.reflect.jvm.internal.impl.protobuf.b f35072e;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f35297i;
+        private int f35073i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f35298o;
+        private int f35074o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f35299p;
+        private int f35075p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f35300q;
+        private int f35076q;
 
         public e() {
             h();
         }
 
         private void a() {
-            if (this.f35296e != null) {
-                int i10 = this.f35298o;
-                int i11 = this.f35297i;
+            if (this.f35072e != null) {
+                int i10 = this.f35074o;
+                int i11 = this.f35073i;
                 if (i10 == i11) {
-                    this.f35299p += i11;
-                    this.f35298o = 0;
-                    if (this.f35295d.hasNext()) {
-                        kotlin.reflect.jvm.internal.impl.protobuf.b next = this.f35295d.next();
-                        this.f35296e = next;
-                        this.f35297i = next.size();
+                    this.f35075p += i11;
+                    this.f35074o = 0;
+                    if (this.f35071d.hasNext()) {
+                        kotlin.reflect.jvm.internal.impl.protobuf.b next = this.f35071d.next();
+                        this.f35072e = next;
+                        this.f35073i = next.size();
                         return;
                     }
-                    this.f35296e = null;
-                    this.f35297i = 0;
+                    this.f35072e = null;
+                    this.f35073i = 0;
                 }
             }
         }
 
         private void h() {
-            C0456c c0456c = new C0456c(c.this);
-            this.f35295d = c0456c;
-            kotlin.reflect.jvm.internal.impl.protobuf.b next = c0456c.next();
-            this.f35296e = next;
-            this.f35297i = next.size();
-            this.f35298o = 0;
-            this.f35299p = 0;
+            C0448c c0448c = new C0448c(c.this);
+            this.f35071d = c0448c;
+            kotlin.reflect.jvm.internal.impl.protobuf.b next = c0448c.next();
+            this.f35072e = next;
+            this.f35073i = next.size();
+            this.f35074o = 0;
+            this.f35075p = 0;
         }
 
         private int l(byte[] bArr, int i10, int i11) {
@@ -530,17 +530,17 @@ public class c extends ByteString {
                     break;
                 }
                 a();
-                if (this.f35296e == null) {
+                if (this.f35072e == null) {
                     if (i12 == i11) {
                         return -1;
                     }
                 } else {
-                    int min = Math.min(this.f35297i - this.f35298o, i12);
+                    int min = Math.min(this.f35073i - this.f35074o, i12);
                     if (bArr != null) {
-                        this.f35296e.copyTo(bArr, this.f35298o, i10, min);
+                        this.f35072e.copyTo(bArr, this.f35074o, i10, min);
                         i10 += min;
                     }
-                    this.f35298o += min;
+                    this.f35074o += min;
                     i12 -= min;
                 }
             }
@@ -549,12 +549,12 @@ public class c extends ByteString {
 
         @Override // java.io.InputStream
         public int available() {
-            return c.this.size() - (this.f35299p + this.f35298o);
+            return c.this.size() - (this.f35075p + this.f35074o);
         }
 
         @Override // java.io.InputStream
         public void mark(int i10) {
-            this.f35300q = this.f35299p + this.f35298o;
+            this.f35076q = this.f35075p + this.f35074o;
         }
 
         @Override // java.io.InputStream
@@ -574,7 +574,7 @@ public class c extends ByteString {
         @Override // java.io.InputStream
         public synchronized void reset() {
             h();
-            l(null, 0, this.f35300q);
+            l(null, 0, this.f35076q);
         }
 
         @Override // java.io.InputStream
@@ -591,12 +591,12 @@ public class c extends ByteString {
         @Override // java.io.InputStream
         public int read() {
             a();
-            kotlin.reflect.jvm.internal.impl.protobuf.b bVar = this.f35296e;
+            kotlin.reflect.jvm.internal.impl.protobuf.b bVar = this.f35072e;
             if (bVar == null) {
                 return -1;
             }
-            int i10 = this.f35298o;
-            this.f35298o = i10 + 1;
+            int i10 = this.f35074o;
+            this.f35074o = i10 + 1;
             return bVar.k(i10) & 255;
         }
     }

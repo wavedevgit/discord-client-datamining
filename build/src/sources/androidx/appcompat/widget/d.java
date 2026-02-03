@@ -14,19 +14,19 @@ import android.widget.AutoCompleteTextView;
 public class d extends AutoCompleteTextView {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final int[] f1593o = {16843126};
+    private static final int[] f1637o = {16843126};
 
     /* renamed from: d  reason: collision with root package name */
-    private final AppCompatBackgroundHelper f1594d;
+    private final AppCompatBackgroundHelper f1638d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AppCompatTextHelper f1595e;
+    private final AppCompatTextHelper f1639e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final AppCompatEmojiEditTextHelper f1596i;
+    private final AppCompatEmojiEditTextHelper f1640i;
 
     public d(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.f24081m);
+        this(context, attributeSet, f.a.f23292m);
     }
 
     void a(AppCompatEmojiEditTextHelper appCompatEmojiEditTextHelper) {
@@ -50,11 +50,11 @@ public class d extends AutoCompleteTextView {
     @Override // android.widget.TextView, android.view.View
     protected void drawableStateChanged() {
         super.drawableStateChanged();
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1594d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1638d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.b();
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1595e;
+        AppCompatTextHelper appCompatTextHelper = this.f1639e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.b();
         }
@@ -66,7 +66,7 @@ public class d extends AutoCompleteTextView {
     }
 
     public ColorStateList getSupportBackgroundTintList() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1594d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1638d;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.c();
         }
@@ -74,7 +74,7 @@ public class d extends AutoCompleteTextView {
     }
 
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1594d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1638d;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.d();
         }
@@ -82,22 +82,22 @@ public class d extends AutoCompleteTextView {
     }
 
     public ColorStateList getSupportCompoundDrawablesTintList() {
-        return this.f1595e.j();
+        return this.f1639e.j();
     }
 
     public PorterDuff.Mode getSupportCompoundDrawablesTintMode() {
-        return this.f1595e.k();
+        return this.f1639e.k();
     }
 
     @Override // android.widget.TextView, android.view.View
     public InputConnection onCreateInputConnection(EditorInfo editorInfo) {
-        return this.f1596i.e(k.a(super.onCreateInputConnection(editorInfo), editorInfo, this), editorInfo);
+        return this.f1640i.e(k.a(super.onCreateInputConnection(editorInfo), editorInfo, this), editorInfo);
     }
 
     @Override // android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1594d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1638d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.f(drawable);
         }
@@ -106,7 +106,7 @@ public class d extends AutoCompleteTextView {
     @Override // android.view.View
     public void setBackgroundResource(int i10) {
         super.setBackgroundResource(i10);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1594d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1638d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.g(i10);
         }
@@ -115,7 +115,7 @@ public class d extends AutoCompleteTextView {
     @Override // android.widget.TextView
     public void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
-        AppCompatTextHelper appCompatTextHelper = this.f1595e;
+        AppCompatTextHelper appCompatTextHelper = this.f1639e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.p();
         }
@@ -124,7 +124,7 @@ public class d extends AutoCompleteTextView {
     @Override // android.widget.TextView
     public void setCompoundDrawablesRelative(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawablesRelative(drawable, drawable2, drawable3, drawable4);
-        AppCompatTextHelper appCompatTextHelper = this.f1595e;
+        AppCompatTextHelper appCompatTextHelper = this.f1639e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.p();
         }
@@ -141,42 +141,42 @@ public class d extends AutoCompleteTextView {
     }
 
     public void setEmojiCompatEnabled(boolean z10) {
-        this.f1596i.f(z10);
+        this.f1640i.f(z10);
     }
 
     @Override // android.widget.TextView
     public void setKeyListener(KeyListener keyListener) {
-        super.setKeyListener(this.f1596i.a(keyListener));
+        super.setKeyListener(this.f1640i.a(keyListener));
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1594d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1638d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.i(colorStateList);
         }
     }
 
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1594d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1638d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.j(mode);
         }
     }
 
     public void setSupportCompoundDrawablesTintList(ColorStateList colorStateList) {
-        this.f1595e.w(colorStateList);
-        this.f1595e.b();
+        this.f1639e.w(colorStateList);
+        this.f1639e.b();
     }
 
     public void setSupportCompoundDrawablesTintMode(PorterDuff.Mode mode) {
-        this.f1595e.x(mode);
-        this.f1595e.b();
+        this.f1639e.x(mode);
+        this.f1639e.b();
     }
 
     @Override // android.widget.TextView
     public void setTextAppearance(Context context, int i10) {
         super.setTextAppearance(context, i10);
-        AppCompatTextHelper appCompatTextHelper = this.f1595e;
+        AppCompatTextHelper appCompatTextHelper = this.f1639e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.q(context, i10);
         }
@@ -185,20 +185,20 @@ public class d extends AutoCompleteTextView {
     public d(Context context, AttributeSet attributeSet, int i10) {
         super(s0.b(context), attributeSet, i10);
         r0.a(this, getContext());
-        v0 v10 = v0.v(getContext(), attributeSet, f1593o, i10, 0);
+        v0 v10 = v0.v(getContext(), attributeSet, f1637o, i10, 0);
         if (v10.s(0)) {
             setDropDownBackgroundDrawable(v10.g(0));
         }
         v10.x();
         AppCompatBackgroundHelper appCompatBackgroundHelper = new AppCompatBackgroundHelper(this);
-        this.f1594d = appCompatBackgroundHelper;
+        this.f1638d = appCompatBackgroundHelper;
         appCompatBackgroundHelper.e(attributeSet, i10);
         AppCompatTextHelper appCompatTextHelper = new AppCompatTextHelper(this);
-        this.f1595e = appCompatTextHelper;
+        this.f1639e = appCompatTextHelper;
         appCompatTextHelper.m(attributeSet, i10);
         appCompatTextHelper.b();
         AppCompatEmojiEditTextHelper appCompatEmojiEditTextHelper = new AppCompatEmojiEditTextHelper(this);
-        this.f1596i = appCompatEmojiEditTextHelper;
+        this.f1640i = appCompatEmojiEditTextHelper;
         appCompatEmojiEditTextHelper.d(attributeSet, i10);
         a(appCompatEmojiEditTextHelper);
     }

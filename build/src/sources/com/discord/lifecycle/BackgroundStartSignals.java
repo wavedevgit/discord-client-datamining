@@ -40,7 +40,7 @@ public final class BackgroundStartSignals {
                 return;
             }
             emitted = true;
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
             Iterator<T> it = listeners.iterator();
             while (it.hasNext()) {
                 try {

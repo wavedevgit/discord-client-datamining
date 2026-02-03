@@ -12,7 +12,7 @@ public final class GooglePlayServicesIncorrectManifestValueException extends Goo
     public GooglePlayServicesIncorrectManifestValueException(int r4) {
         /*
             r3 = this;
-            int r0 = com.google.android.gms.common.g.f14817a
+            int r0 = com.google.android.gms.common.g.f14446a
             java.lang.StringBuilder r1 = new java.lang.StringBuilder
             r1.<init>()
             java.lang.String r2 = "The meta-data tag in your app's AndroidManifest.xml does not have the right value.  Expected "

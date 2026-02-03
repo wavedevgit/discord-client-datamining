@@ -1,7 +1,7 @@
 package com.discord.chat.bridge.summaries;
 
-import at.f;
-import at.v1;
+import bt.f;
+import bt.v1;
 import com.discord.chat.bridge.summaries.Summary;
 import com.discord.primitives.ChannelId;
 import com.discord.primitives.ChannelId$$serializer;
@@ -12,9 +12,9 @@ import com.discord.primitives.UserId$$serializer;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import ir.l;
-import ir.o;
 import java.util.List;
+import jr.l;
+import jr.o;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -25,9 +25,9 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-import xs.m;
-@Metadata(d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u001e\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 @2\u00020\u0001:\u0002?@BM\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\n\u0012\u0006\u0010\f\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f¢\u0006\u0004\b\u0010\u0010\u0011Bo\b\u0010\u0012\u0006\u0010\u0012\u001a\u00020\r\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\u000e\u0010\u0006\u001a\n\u0012\u0004\u0012\u00020\b\u0018\u00010\u0007\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\n\u0012\u0006\u0010\f\u001a\u00020\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014¢\u0006\u0004\b\u0010\u0010\u0015J\t\u0010$\u001a\u00020\u0003HÆ\u0003J\t\u0010%\u001a\u00020\u0003HÆ\u0003J\t\u0010&\u001a\u00020\u0003HÆ\u0003J\u000f\u0010'\u001a\b\u0012\u0004\u0012\u00020\b0\u0007HÆ\u0003J\u0010\u0010(\u001a\u00020\nHÆ\u0003¢\u0006\u0004\b)\u0010\u0017J\u0010\u0010*\u001a\u00020\nHÆ\u0003¢\u0006\u0004\b+\u0010\u0017J\t\u0010,\u001a\u00020\rHÆ\u0003J\u0010\u0010-\u001a\u00020\u000fHÆ\u0003¢\u0006\u0004\b.\u0010\"Jf\u0010/\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\n2\b\b\u0002\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u000fHÆ\u0001¢\u0006\u0004\b0\u00101J\u0013\u00102\u001a\u0002032\b\u00104\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00105\u001a\u00020\rHÖ\u0001J\t\u00106\u001a\u00020\u0003HÖ\u0001J%\u00107\u001a\u0002082\u0006\u00109\u001a\u00020\u00002\u0006\u0010:\u001a\u00020;2\u0006\u0010<\u001a\u00020=H\u0001¢\u0006\u0002\b>R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0017R\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0017R\u0017\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u0013\u0010\t\u001a\u00020\n¢\u0006\n\n\u0002\u0010\u001d\u001a\u0004\b\u001c\u0010\u0017R\u0013\u0010\u000b\u001a\u00020\n¢\u0006\n\n\u0002\u0010\u001d\u001a\u0004\b\u001e\u0010\u0017R\u0011\u0010\f\u001a\u00020\r¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010 R\u0013\u0010\u000e\u001a\u00020\u000f¢\u0006\n\n\u0002\u0010#\u001a\u0004\b!\u0010\"¨\u0006A"}, d2 = {"Lcom/discord/chat/bridge/summaries/Summary;", "", StackTraceHelper.ID_KEY, "", "topic", "summShort", "people", "", "Lcom/discord/primitives/UserId;", "startId", "Lcom/discord/primitives/MessageId;", "endId", "count", "", "channelId", "Lcom/discord/primitives/ChannelId;", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;IJLkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;ILcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getId", "()Ljava/lang/String;", "getTopic", "getSummShort", "getPeople", "()Ljava/util/List;", "getStartId-3Eiw7ao", "Ljava/lang/String;", "getEndId-3Eiw7ao", "getCount", "()I", "getChannelId-o4g7jtM", "()J", "J", "component1", "component2", "component3", "component4", "component5", "component5-3Eiw7ao", "component6", "component6-3Eiw7ao", "component7", "component8", "component8-o4g7jtM", "copy", "copy-H5KhIT0", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;IJ)Lcom/discord/chat/bridge/summaries/Summary;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+import ys.m;
 @m
+@Metadata(d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u001e\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 @2\u00020\u0001:\u0002?@BM\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\n\u0012\u0006\u0010\f\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f¢\u0006\u0004\b\u0010\u0010\u0011Bo\b\u0010\u0012\u0006\u0010\u0012\u001a\u00020\r\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\u000e\u0010\u0006\u001a\n\u0012\u0004\u0012\u00020\b\u0018\u00010\u0007\u0012\b\u0010\t\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\n\u0012\u0006\u0010\f\u001a\u00020\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014¢\u0006\u0004\b\u0010\u0010\u0015J\t\u0010$\u001a\u00020\u0003HÆ\u0003J\t\u0010%\u001a\u00020\u0003HÆ\u0003J\t\u0010&\u001a\u00020\u0003HÆ\u0003J\u000f\u0010'\u001a\b\u0012\u0004\u0012\u00020\b0\u0007HÆ\u0003J\u0010\u0010(\u001a\u00020\nHÆ\u0003¢\u0006\u0004\b)\u0010\u0017J\u0010\u0010*\u001a\u00020\nHÆ\u0003¢\u0006\u0004\b+\u0010\u0017J\t\u0010,\u001a\u00020\rHÆ\u0003J\u0010\u0010-\u001a\u00020\u000fHÆ\u0003¢\u0006\u0004\b.\u0010\"Jf\u0010/\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\n2\b\b\u0002\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u000fHÆ\u0001¢\u0006\u0004\b0\u00101J\u0013\u00102\u001a\u0002032\b\u00104\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00105\u001a\u00020\rHÖ\u0001J\t\u00106\u001a\u00020\u0003HÖ\u0001J%\u00107\u001a\u0002082\u0006\u00109\u001a\u00020\u00002\u0006\u0010:\u001a\u00020;2\u0006\u0010<\u001a\u00020=H\u0001¢\u0006\u0002\b>R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0017R\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0017R\u0017\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u0013\u0010\t\u001a\u00020\n¢\u0006\n\n\u0002\u0010\u001d\u001a\u0004\b\u001c\u0010\u0017R\u0013\u0010\u000b\u001a\u00020\n¢\u0006\n\n\u0002\u0010\u001d\u001a\u0004\b\u001e\u0010\u0017R\u0011\u0010\f\u001a\u00020\r¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010 R\u0013\u0010\u000e\u001a\u00020\u000f¢\u0006\n\n\u0002\u0010#\u001a\u0004\b!\u0010\"¨\u0006A"}, d2 = {"Lcom/discord/chat/bridge/summaries/Summary;", "", StackTraceHelper.ID_KEY, "", "topic", "summShort", "people", "", "Lcom/discord/primitives/UserId;", "startId", "Lcom/discord/primitives/MessageId;", "endId", "count", "", "channelId", "Lcom/discord/primitives/ChannelId;", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;IJLkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;ILcom/discord/primitives/ChannelId;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getId", "()Ljava/lang/String;", "getTopic", "getSummShort", "getPeople", "()Ljava/util/List;", "getStartId-3Eiw7ao", "Ljava/lang/String;", "getEndId-3Eiw7ao", "getCount", "()I", "getChannelId-o4g7jtM", "()J", "J", "component1", "component2", "component3", "component4", "component5", "component5-3Eiw7ao", "component6", "component6-3Eiw7ao", "component7", "component8", "component8-o4g7jtM", "copy", "copy-H5KhIT0", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;IJ)Lcom/discord/chat/bridge/summaries/Summary;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class Summary {
     private final long channelId;
@@ -37,7 +37,7 @@ public final class Summary {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9683id;
+    private final String f9312id;
     @NotNull
     private final List<UserId> people;
     @NotNull
@@ -49,7 +49,7 @@ public final class Summary {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, l.a(o.f31119e, new Function0() { // from class: p6.a
+    private static final Lazy[] $childSerializers = {null, null, null, l.a(o.f32182e, new Function0() { // from class: p6.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -84,9 +84,9 @@ public final class Summary {
     }
 
     /* renamed from: copy-H5KhIT0$default  reason: not valid java name */
-    public static /* synthetic */ Summary m424copyH5KhIT0$default(Summary summary, String str, String str2, String str3, List list, String str4, String str5, int i10, long j10, int i11, Object obj) {
+    public static /* synthetic */ Summary m426copyH5KhIT0$default(Summary summary, String str, String str2, String str3, List list, String str4, String str5, int i10, long j10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = summary.f9683id;
+            str = summary.f9312id;
         }
         if ((i11 & 2) != 0) {
             str2 = summary.topic;
@@ -115,25 +115,25 @@ public final class Summary {
         int i12 = i10;
         String str7 = str4;
         String str8 = str3;
-        return summary.m428copyH5KhIT0(str, str2, str8, list2, str7, str6, i12, j11);
+        return summary.m430copyH5KhIT0(str, str2, str8, list2, str7, str6, i12, j11);
     }
 
     public static final /* synthetic */ void write$Self$chat_release(Summary summary, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
-        compositeEncoder.y(serialDescriptor, 0, summary.f9683id);
-        compositeEncoder.y(serialDescriptor, 1, summary.topic);
-        compositeEncoder.y(serialDescriptor, 2, summary.summShort);
-        compositeEncoder.j(serialDescriptor, 3, (xs.o) lazyArr[3].getValue(), summary.people);
+        compositeEncoder.x(serialDescriptor, 0, summary.f9312id);
+        compositeEncoder.x(serialDescriptor, 1, summary.topic);
+        compositeEncoder.x(serialDescriptor, 2, summary.summShort);
+        compositeEncoder.m(serialDescriptor, 3, (ys.o) lazyArr[3].getValue(), summary.people);
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        compositeEncoder.j(serialDescriptor, 4, messageId$$serializer, MessageId.m1084boximpl(summary.startId));
-        compositeEncoder.j(serialDescriptor, 5, messageId$$serializer, MessageId.m1084boximpl(summary.endId));
-        compositeEncoder.w(serialDescriptor, 6, summary.count);
-        compositeEncoder.j(serialDescriptor, 7, ChannelId$$serializer.INSTANCE, ChannelId.m1058boximpl(summary.channelId));
+        compositeEncoder.m(serialDescriptor, 4, messageId$$serializer, MessageId.m1086boximpl(summary.startId));
+        compositeEncoder.m(serialDescriptor, 5, messageId$$serializer, MessageId.m1086boximpl(summary.endId));
+        compositeEncoder.v(serialDescriptor, 6, summary.count);
+        compositeEncoder.m(serialDescriptor, 7, ChannelId$$serializer.INSTANCE, ChannelId.m1060boximpl(summary.channelId));
     }
 
     @NotNull
     public final String component1() {
-        return this.f9683id;
+        return this.f9312id;
     }
 
     @NotNull
@@ -153,13 +153,13 @@ public final class Summary {
 
     @NotNull
     /* renamed from: component5-3Eiw7ao  reason: not valid java name */
-    public final String m425component53Eiw7ao() {
+    public final String m427component53Eiw7ao() {
         return this.startId;
     }
 
     @NotNull
     /* renamed from: component6-3Eiw7ao  reason: not valid java name */
-    public final String m426component63Eiw7ao() {
+    public final String m428component63Eiw7ao() {
         return this.endId;
     }
 
@@ -168,13 +168,13 @@ public final class Summary {
     }
 
     /* renamed from: component8-o4g7jtM  reason: not valid java name */
-    public final long m427component8o4g7jtM() {
+    public final long m429component8o4g7jtM() {
         return this.channelId;
     }
 
     @NotNull
     /* renamed from: copy-H5KhIT0  reason: not valid java name */
-    public final Summary m428copyH5KhIT0(@NotNull String id2, @NotNull String topic, @NotNull String summShort, @NotNull List<UserId> people, @NotNull String startId, @NotNull String endId, int i10, long j10) {
+    public final Summary m430copyH5KhIT0(@NotNull String id2, @NotNull String topic, @NotNull String summShort, @NotNull List<UserId> people, @NotNull String startId, @NotNull String endId, int i10, long j10) {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(topic, "topic");
         Intrinsics.checkNotNullParameter(summShort, "summShort");
@@ -190,13 +190,13 @@ public final class Summary {
         }
         if (obj instanceof Summary) {
             Summary summary = (Summary) obj;
-            return Intrinsics.areEqual(this.f9683id, summary.f9683id) && Intrinsics.areEqual(this.topic, summary.topic) && Intrinsics.areEqual(this.summShort, summary.summShort) && Intrinsics.areEqual(this.people, summary.people) && MessageId.m1088equalsimpl0(this.startId, summary.startId) && MessageId.m1088equalsimpl0(this.endId, summary.endId) && this.count == summary.count && ChannelId.m1062equalsimpl0(this.channelId, summary.channelId);
+            return Intrinsics.areEqual(this.f9312id, summary.f9312id) && Intrinsics.areEqual(this.topic, summary.topic) && Intrinsics.areEqual(this.summShort, summary.summShort) && Intrinsics.areEqual(this.people, summary.people) && MessageId.m1090equalsimpl0(this.startId, summary.startId) && MessageId.m1090equalsimpl0(this.endId, summary.endId) && this.count == summary.count && ChannelId.m1064equalsimpl0(this.channelId, summary.channelId);
         }
         return false;
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m429getChannelIdo4g7jtM() {
+    public final long m431getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -206,13 +206,13 @@ public final class Summary {
 
     @NotNull
     /* renamed from: getEndId-3Eiw7ao  reason: not valid java name */
-    public final String m430getEndId3Eiw7ao() {
+    public final String m432getEndId3Eiw7ao() {
         return this.endId;
     }
 
     @NotNull
     public final String getId() {
-        return this.f9683id;
+        return this.f9312id;
     }
 
     @NotNull
@@ -222,7 +222,7 @@ public final class Summary {
 
     @NotNull
     /* renamed from: getStartId-3Eiw7ao  reason: not valid java name */
-    public final String m431getStartId3Eiw7ao() {
+    public final String m433getStartId3Eiw7ao() {
         return this.startId;
     }
 
@@ -237,20 +237,20 @@ public final class Summary {
     }
 
     public int hashCode() {
-        return (((((((((((((this.f9683id.hashCode() * 31) + this.topic.hashCode()) * 31) + this.summShort.hashCode()) * 31) + this.people.hashCode()) * 31) + MessageId.m1089hashCodeimpl(this.startId)) * 31) + MessageId.m1089hashCodeimpl(this.endId)) * 31) + Integer.hashCode(this.count)) * 31) + ChannelId.m1063hashCodeimpl(this.channelId);
+        return (((((((((((((this.f9312id.hashCode() * 31) + this.topic.hashCode()) * 31) + this.summShort.hashCode()) * 31) + this.people.hashCode()) * 31) + MessageId.m1091hashCodeimpl(this.startId)) * 31) + MessageId.m1091hashCodeimpl(this.endId)) * 31) + Integer.hashCode(this.count)) * 31) + ChannelId.m1065hashCodeimpl(this.channelId);
     }
 
     @NotNull
     public String toString() {
-        String str = this.f9683id;
+        String str = this.f9312id;
         String str2 = this.topic;
         String str3 = this.summShort;
         List<UserId> list = this.people;
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.startId);
-        String m1091toStringimpl2 = MessageId.m1091toStringimpl(this.endId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.startId);
+        String m1093toStringimpl2 = MessageId.m1093toStringimpl(this.endId);
         int i10 = this.count;
-        String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
-        return "Summary(id=" + str + ", topic=" + str2 + ", summShort=" + str3 + ", people=" + list + ", startId=" + m1091toStringimpl + ", endId=" + m1091toStringimpl2 + ", count=" + i10 + ", channelId=" + m1065toStringimpl + ")";
+        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
+        return "Summary(id=" + str + ", topic=" + str2 + ", summShort=" + str3 + ", people=" + list + ", startId=" + m1093toStringimpl + ", endId=" + m1093toStringimpl2 + ", count=" + i10 + ", channelId=" + m1067toStringimpl + ")";
     }
 
     public /* synthetic */ Summary(String str, String str2, String str3, List list, String str4, String str5, int i10, long j10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -261,14 +261,14 @@ public final class Summary {
         if (255 != (i10 & SetSpanOperation.SPAN_MAX_PRIORITY)) {
             v1.b(i10, SetSpanOperation.SPAN_MAX_PRIORITY, Summary$$serializer.INSTANCE.getDescriptor());
         }
-        this.f9683id = str;
+        this.f9312id = str;
         this.topic = str2;
         this.summShort = str3;
         this.people = list;
         this.startId = str4;
         this.endId = str5;
         this.count = i11;
-        this.channelId = channelId.m1067unboximpl();
+        this.channelId = channelId.m1069unboximpl();
     }
 
     private Summary(String id2, String topic, String summShort, List<UserId> people, String startId, String endId, int i10, long j10) {
@@ -278,7 +278,7 @@ public final class Summary {
         Intrinsics.checkNotNullParameter(people, "people");
         Intrinsics.checkNotNullParameter(startId, "startId");
         Intrinsics.checkNotNullParameter(endId, "endId");
-        this.f9683id = id2;
+        this.f9312id = id2;
         this.topic = topic;
         this.summShort = summShort;
         this.people = people;

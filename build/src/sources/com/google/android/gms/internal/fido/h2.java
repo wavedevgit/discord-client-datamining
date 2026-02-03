@@ -5,17 +5,17 @@ import java.io.Serializable;
 final class h2 extends i2 implements Serializable {
 
     /* renamed from: i  reason: collision with root package name */
-    final byte[] f15020i;
+    final byte[] f14649i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h2(byte[] bArr) {
         bArr.getClass();
-        this.f15020i = bArr;
+        this.f14649i = bArr;
     }
 
     @Override // com.google.android.gms.internal.fido.i2
     public final int a() {
-        byte[] bArr = this.f15020i;
+        byte[] bArr = this.f14649i;
         int length = bArr.length;
         if (length >= 4) {
             return ((bArr[3] & 255) << 24) | (bArr[0] & 255) | ((bArr[1] & 255) << 8) | ((bArr[2] & 255) << 16);
@@ -25,19 +25,19 @@ final class h2 extends i2 implements Serializable {
 
     @Override // com.google.android.gms.internal.fido.i2
     public final int b() {
-        return this.f15020i.length * 8;
+        return this.f14649i.length * 8;
     }
 
     @Override // com.google.android.gms.internal.fido.i2
     final boolean c(i2 i2Var) {
         boolean z10;
-        if (this.f15020i.length != i2Var.e().length) {
+        if (this.f14649i.length != i2Var.e().length) {
             return false;
         }
         boolean z11 = true;
         int i10 = 0;
         while (true) {
-            byte[] bArr = this.f15020i;
+            byte[] bArr = this.f14649i;
             if (i10 < bArr.length) {
                 if (bArr[i10] == i2Var.e()[i10]) {
                     z10 = true;
@@ -54,12 +54,12 @@ final class h2 extends i2 implements Serializable {
 
     @Override // com.google.android.gms.internal.fido.i2
     public final byte[] d() {
-        return (byte[]) this.f15020i.clone();
+        return (byte[]) this.f14649i.clone();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.i2
     public final byte[] e() {
-        return this.f15020i;
+        return this.f14649i;
     }
 }

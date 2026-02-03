@@ -6,7 +6,7 @@ import androidx.core.view.a;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import com.discord.chat.bridge.polls.PollChatAnswerInteractionType;
 import com.discord.chat.presentation.message.messagepart.polls.PollAnswerAccessory;
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;

@@ -121,7 +121,7 @@ public class Snackbar extends BaseTransientBottomBar {
     }
 
     private SnackbarContentLayout i0() {
-        return (SnackbarContentLayout) this.f16343i.getChildAt(0);
+        return (SnackbarContentLayout) this.f15972i.getChildAt(0);
     }
 
     private TextView j0() {
@@ -152,9 +152,9 @@ public class Snackbar extends BaseTransientBottomBar {
             }
             LayoutInflater from = LayoutInflater.from(context);
             if (k0(context)) {
-                i11 = h.f54488u;
+                i11 = h.f54463u;
             } else {
-                i11 = h.f54470c;
+                i11 = h.f54445c;
             }
             SnackbarContentLayout snackbarContentLayout = (SnackbarContentLayout) from.inflate(i11, h02, false);
             Snackbar snackbar = new Snackbar(context, h02, snackbarContentLayout, snackbarContentLayout);

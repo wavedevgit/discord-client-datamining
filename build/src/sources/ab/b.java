@@ -14,9 +14,9 @@ public final class b {
 
     public static final boolean a(a aVar, CloseableReference closeableReference) {
         if (aVar != null && closeableReference != null) {
-            Object D0 = closeableReference.D0();
-            Intrinsics.checkNotNullExpressionValue(D0, "get(...)");
-            Bitmap bitmap = (Bitmap) D0;
+            Object F0 = closeableReference.F0();
+            Intrinsics.checkNotNullExpressionValue(F0, "get(...)");
+            Bitmap bitmap = (Bitmap) F0;
             if (aVar.a()) {
                 bitmap.setHasAlpha(true);
             }

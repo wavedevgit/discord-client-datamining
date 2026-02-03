@@ -46,14 +46,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_analytics/ThreadAnalyticsUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53473: for (var _fun53473_ip = 0;;) switch (_fun53473_ip) {
+        _fun53579: for (var _fun53579_ip = 0;;) switch (_fun53579_ip) {
             case 0:
                 var2 = arg0;
                 var7 = arguments[1];
                 var6 = undefined;
                 if (!(var7 === var6)) {
-                    _fun53473_ip = 14;
-                    continue _fun53473
+                    _fun53579_ip = 14;
+                    continue _fun53579
                 }
             case 12:
                 var7 = false;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4 != var2;
                 var0 = null;
                 if (!var1) {
-                    _fun53473_ip = 353;
-                    continue _fun53473
+                    _fun53579_ip = 353;
+                    continue _fun53579
                 }
             case 28:
                 var8 = _closure1_slot5;
@@ -72,15 +72,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var5.bind(var8)(var1);
                 var0 = null;
                 if (!var1) {
-                    _fun53473_ip = 353;
-                    continue _fun53473
+                    _fun53579_ip = 353;
+                    continue _fun53579
                 }
             case 58:
                 var1 = {};
                 var5 = undefined;
                 if (!var7) {
-                    _fun53473_ip = 95;
-                    continue _fun53473
+                    _fun53579_ip = 95;
+                    continue _fun53579
                 }
             case 65:
                 var8 = _closure1_slot0;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var4 == var5;
                 var7 = undefined;
                 if (var8) {
-                    _fun53473_ip = 174;
-                    continue _fun53473
+                    _fun53579_ip = 174;
+                    continue _fun53579
                 }
             case 168:
                 var7 = var5.archived;
@@ -119,16 +119,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var4 == var5;
                 var7 = undefined;
                 if (var8) {
-                    _fun53473_ip = 208;
-                    continue _fun53473
+                    _fun53579_ip = 208;
+                    continue _fun53579
                 }
             case 202:
                 var7 = var5.locked;
             case 208:
                 var5 = var4 != var7;
                 if (!var5) {
-                    _fun53473_ip = 218;
-                    continue _fun53473
+                    _fun53579_ip = 218;
+                    continue _fun53579
                 }
             case 215:
                 var5 = var7;
@@ -138,8 +138,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var4 == var7;
                 var5 = undefined;
                 if (var8) {
-                    _fun53473_ip = 246;
-                    continue _fun53473
+                    _fun53579_ip = 246;
+                    continue _fun53579
                 }
             case 240:
                 var5 = var7.autoArchiveDuration;
@@ -147,8 +147,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var4 != var5;
                 var4 = 0;
                 if (!var7) {
-                    _fun53473_ip = 258;
-                    continue _fun53473
+                    _fun53579_ip = 258;
+                    continue _fun53579
                 }
             case 255:
                 var4 = var5;
@@ -178,4 +178,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.collectThreadMetadata = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6436, 6437, 1376, 3052, 660, 1220, 21, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6467, 6468, 1376, 3082, 660, 1220, 21, 2]);

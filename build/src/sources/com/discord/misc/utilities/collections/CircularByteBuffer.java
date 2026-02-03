@@ -2,11 +2,11 @@ package com.discord.misc.utilities.collections;
 
 import com.facebook.react.bridge.BaseJavaModule;
 import com.facebook.react.uimanager.ViewProps;
-import ir.v;
 import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Locale;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -241,7 +241,7 @@ public final class CircularByteBuffer {
             byte[] bytes = line.getBytes(CHARSET);
             Intrinsics.checkNotNullExpressionValue(bytes, "getBytes(...)");
             addLineBytes(bytes);
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
         }
     }
 
@@ -255,7 +255,7 @@ public final class CircularByteBuffer {
                     sb2.append(readLine(((Number) pair.a()).intValue(), ((Number) pair.b()).intValue()));
                     sb2.append('\n');
                 }
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -269,7 +269,7 @@ public final class CircularByteBuffer {
             this.size = 0;
             this.isEmpty = true;
             this.lines.clear();
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
         }
     }
 

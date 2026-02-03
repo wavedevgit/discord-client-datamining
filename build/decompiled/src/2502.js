@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3RlbnVyZV9yZXdhcmQ=',
+        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcw==',
         'scales': null,
-        'hash': '7cf05769676326410ce5190743a77bc7',
-        'name': 'es-419.messages.7cf05769676326410ce5190743a77bc7.compiled.messages',
+        'hash': '60f60ab2432d7c8e3c846608bf0bdee9',
+        'name': 'hi.messages.60f60ab2432d7c8e3c846608bf0bdee9.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

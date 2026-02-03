@@ -12,57 +12,57 @@ import java.util.HashMap;
 class l extends q {
 
     /* renamed from: i  reason: collision with root package name */
-    String f17978i;
+    String f17607i;
 
     /* renamed from: o  reason: collision with root package name */
-    String f17979o;
+    String f17608o;
 
     /* renamed from: p  reason: collision with root package name */
-    float f17980p;
+    float f17609p;
 
     /* renamed from: q  reason: collision with root package name */
-    float f17981q;
+    float f17610q;
 
     /* renamed from: r  reason: collision with root package name */
-    float f17982r;
+    float f17611r;
 
     /* renamed from: s  reason: collision with root package name */
-    float f17983s;
+    float f17612s;
 
     /* renamed from: t  reason: collision with root package name */
-    v f17984t;
+    v f17613t;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f17985a;
+        static final /* synthetic */ int[] f17614a;
 
         static {
             int[] iArr = new int[v.values().length];
-            f17985a = iArr;
+            f17614a = iArr;
             try {
                 iArr[v.OVER.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f17985a[v.IN.ordinal()] = 2;
+                f17614a[v.IN.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f17985a[v.OUT.ordinal()] = 3;
+                f17614a[v.OUT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f17985a[v.ATOP.ordinal()] = 4;
+                f17614a[v.ATOP.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f17985a[v.XOR.ordinal()] = 5;
+                f17614a[v.XOR.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f17985a[v.ARITHMETIC.ordinal()] = 6;
+                f17614a[v.ARITHMETIC.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
         }
@@ -74,13 +74,13 @@ class l extends q {
 
     @Override // com.horcrux.svg.q
     public Bitmap c(HashMap hashMap, Bitmap bitmap) {
-        Bitmap e10 = q.e(hashMap, bitmap, this.f17978i);
-        Bitmap e11 = q.e(hashMap, bitmap, this.f17979o);
+        Bitmap e10 = q.e(hashMap, bitmap, this.f17607i);
+        Bitmap e11 = q.e(hashMap, bitmap, this.f17608o);
         Bitmap createBitmap = Bitmap.createBitmap(e10.getWidth(), e10.getHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(createBitmap);
         Paint paint = new Paint(1);
         canvas.drawBitmap(e10, 0.0f, 0.0f, paint);
-        switch (a.f17985a[this.f17984t.ordinal()]) {
+        switch (a.f17614a[this.f17613t.ordinal()]) {
             case 1:
                 paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_OVER));
                 break;
@@ -117,14 +117,14 @@ class l extends q {
                     int i18 = (i12 >> 8) & SetSpanOperation.SPAN_MAX_PRIORITY;
                     int i19 = i12 & SetSpanOperation.SPAN_MAX_PRIORITY;
                     int[] iArr3 = iArr2;
-                    float f10 = this.f17980p;
+                    float f10 = this.f17609p;
                     float f11 = i13;
                     float f12 = i16;
-                    float f13 = this.f17981q;
+                    float f13 = this.f17610q;
                     float f14 = (f10 * f11 * f12) + (f11 * f13);
-                    float f15 = this.f17982r;
+                    float f15 = this.f17611r;
                     float f16 = f14 + (f12 * f15);
-                    float f17 = this.f17983s;
+                    float f17 = this.f17612s;
                     float f18 = i14;
                     float f19 = i18;
                     float f20 = i15;
@@ -143,44 +143,44 @@ class l extends q {
                 createBitmap.setPixels(iArr, 0, width4, 0, 0, width5, createBitmap.getHeight());
                 break;
         }
-        if (this.f17984t != v.ARITHMETIC) {
+        if (this.f17613t != v.ARITHMETIC) {
             canvas.drawBitmap(e11, 0.0f, 0.0f, paint);
         }
         return createBitmap;
     }
 
     public void k(String str) {
-        this.f17978i = str;
+        this.f17607i = str;
         invalidate();
     }
 
     public void l(String str) {
-        this.f17979o = str;
+        this.f17608o = str;
         invalidate();
     }
 
     public void m(Float f10) {
-        this.f17980p = f10.floatValue();
+        this.f17609p = f10.floatValue();
         invalidate();
     }
 
     public void n(Float f10) {
-        this.f17981q = f10.floatValue();
+        this.f17610q = f10.floatValue();
         invalidate();
     }
 
     public void o(Float f10) {
-        this.f17982r = f10.floatValue();
+        this.f17611r = f10.floatValue();
         invalidate();
     }
 
     public void p(Float f10) {
-        this.f17983s = f10.floatValue();
+        this.f17612s = f10.floatValue();
         invalidate();
     }
 
     public void q(String str) {
-        this.f17984t = v.d(str);
+        this.f17613t = v.d(str);
         invalidate();
     }
 }

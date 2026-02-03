@@ -10,7 +10,7 @@ import android.view.TextureView;
 import android.view.View;
 import androidx.lifecycle.o;
 import app.rive.runtime.kotlin.renderers.Renderer;
-import ir.l;
+import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -151,7 +151,7 @@ public abstract class RiveTextureView extends TextureView implements TextureView
     public RiveTextureView(@NotNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.activity$delegate = l.a(ir.o.f31120i, new Function0<Activity>() { // from class: app.rive.runtime.kotlin.RiveTextureView$activity$2
+        this.activity$delegate = l.a(jr.o.f32183i, new Function0<Activity>() { // from class: app.rive.runtime.kotlin.RiveTextureView$activity$2
             /* JADX INFO: Access modifiers changed from: package-private */
             {
                 super(0);

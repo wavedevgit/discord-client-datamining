@@ -6,35 +6,35 @@ import android.net.Uri;
 public final class j1 {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Uri f26827f = new Uri.Builder().scheme("content").authority("com.google.android.gms.chimera").build();
+    private static final Uri f26922f = new Uri.Builder().scheme("content").authority("com.google.android.gms.chimera").build();
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f26828a;
+    private final String f26923a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f26829b;
+    private final String f26924b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ComponentName f26830c;
+    private final ComponentName f26925c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f26831d;
+    private final int f26926d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f26832e;
+    private final boolean f26927e;
 
     public j1(String str, String str2, int i10, boolean z10) {
         q.f(str);
-        this.f26828a = str;
+        this.f26923a = str;
         q.f(str2);
-        this.f26829b = str2;
-        this.f26830c = null;
-        this.f26831d = 4225;
-        this.f26832e = z10;
+        this.f26924b = str2;
+        this.f26925c = null;
+        this.f26926d = 4225;
+        this.f26927e = z10;
     }
 
     public final ComponentName a() {
-        return this.f26830c;
+        return this.f26925c;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:28:0x0052  */
@@ -49,18 +49,18 @@ public final class j1 {
         /*
             r5 = this;
             java.lang.String r0 = "ConnectionStatusConfig"
-            java.lang.String r1 = r5.f26828a
+            java.lang.String r1 = r5.f26923a
             if (r1 == 0) goto Lb2
-            boolean r1 = r5.f26832e
+            boolean r1 = r5.f26927e
             r2 = 0
             if (r1 == 0) goto La1
             android.os.Bundle r1 = new android.os.Bundle
             r1.<init>()
-            java.lang.String r3 = r5.f26828a
+            java.lang.String r3 = r5.f26923a
             java.lang.String r4 = "serviceActionBundleKey"
             r1.putString(r4, r3)
             android.content.ContentResolver r6 = r6.getContentResolver()     // Catch: java.lang.IllegalArgumentException -> L36 android.os.RemoteException -> L38
-            android.net.Uri r3 = gf.j1.f26827f     // Catch: java.lang.IllegalArgumentException -> L36 android.os.RemoteException -> L38
+            android.net.Uri r3 = gf.j1.f26922f     // Catch: java.lang.IllegalArgumentException -> L36 android.os.RemoteException -> L38
             android.content.ContentProviderClient r6 = r6.acquireUnstableContentProviderClient(r3)     // Catch: java.lang.IllegalArgumentException -> L36 android.os.RemoteException -> L38
             if (r6 == 0) goto L3a
             java.lang.String r3 = "serviceIntentCall"
@@ -108,7 +108,7 @@ public final class j1 {
             if (r6 != 0) goto L68
             goto L90
         L68:
-            java.lang.String r1 = r5.f26828a
+            java.lang.String r1 = r5.f26923a
             java.lang.StringBuilder r2 = new java.lang.StringBuilder
             r2.<init>()
             java.lang.String r3 = "Dynamic lookup for intent failed for action "
@@ -126,17 +126,17 @@ public final class j1 {
             throw r0
         L90:
             if (r2 != 0) goto La1
-            java.lang.String r6 = r5.f26828a
+            java.lang.String r6 = r5.f26923a
             java.lang.String r1 = "Dynamic lookup for intent failed for action: "
             java.lang.String r6 = java.lang.String.valueOf(r6)
             java.lang.String r6 = r1.concat(r6)
             android.util.Log.w(r0, r6)
         La1:
             if (r2 != 0) goto Lb1
-            java.lang.String r6 = r5.f26828a
+            java.lang.String r6 = r5.f26923a
             android.content.Intent r0 = new android.content.Intent
             r0.<init>(r6)
-            java.lang.String r6 = r5.f26829b
+            java.lang.String r6 = r5.f26924b
             android.content.Intent r6 = r0.setPackage(r6)
             return r6
         Lb1:
@@ -144,7 +144,7 @@ public final class j1 {
         Lb2:
             android.content.Intent r6 = new android.content.Intent
             r6.<init>()
-            android.content.ComponentName r0 = r5.f26830c
+            android.content.ComponentName r0 = r5.f26925c
             android.content.Intent r6 = r6.setComponent(r0)
             return r6
         */
@@ -152,7 +152,7 @@ public final class j1 {
     }
 
     public final String c() {
-        return this.f26829b;
+        return this.f26924b;
     }
 
     public final boolean equals(Object obj) {
@@ -163,21 +163,21 @@ public final class j1 {
             return false;
         }
         j1 j1Var = (j1) obj;
-        if (o.a(this.f26828a, j1Var.f26828a) && o.a(this.f26829b, j1Var.f26829b) && o.a(this.f26830c, j1Var.f26830c) && this.f26832e == j1Var.f26832e) {
+        if (o.a(this.f26923a, j1Var.f26923a) && o.a(this.f26924b, j1Var.f26924b) && o.a(this.f26925c, j1Var.f26925c) && this.f26927e == j1Var.f26927e) {
             return true;
         }
         return false;
     }
 
     public final int hashCode() {
-        return o.b(this.f26828a, this.f26829b, this.f26830c, 4225, Boolean.valueOf(this.f26832e));
+        return o.b(this.f26923a, this.f26924b, this.f26925c, 4225, Boolean.valueOf(this.f26927e));
     }
 
     public final String toString() {
-        String str = this.f26828a;
+        String str = this.f26923a;
         if (str == null) {
-            q.l(this.f26830c);
-            return this.f26830c.flattenToString();
+            q.l(this.f26925c);
+            return this.f26925c.flattenToString();
         }
         return str;
     }

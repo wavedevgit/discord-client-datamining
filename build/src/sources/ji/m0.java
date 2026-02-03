@@ -4,56 +4,56 @@ package ji;
 public final class m0 extends u {
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Object[] f32159s;
+    private static final Object[] f31897s;
 
     /* renamed from: t  reason: collision with root package name */
-    static final m0 f32160t;
+    static final m0 f31898t;
 
     /* renamed from: i  reason: collision with root package name */
-    final transient Object[] f32161i;
+    final transient Object[] f31899i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f32162o;
+    private final transient int f31900o;
 
     /* renamed from: p  reason: collision with root package name */
-    final transient Object[] f32163p;
+    final transient Object[] f31901p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient int f32164q;
+    private final transient int f31902q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient int f32165r;
+    private final transient int f31903r;
 
     static {
         Object[] objArr = new Object[0];
-        f32159s = objArr;
-        f32160t = new m0(objArr, 0, objArr, 0, 0);
+        f31897s = objArr;
+        f31898t = new m0(objArr, 0, objArr, 0, 0);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m0(Object[] objArr, int i10, Object[] objArr2, int i11, int i12) {
-        this.f32161i = objArr;
-        this.f32162o = i10;
-        this.f32163p = objArr2;
-        this.f32164q = i11;
-        this.f32165r = i12;
+        this.f31899i = objArr;
+        this.f31900o = i10;
+        this.f31901p = objArr2;
+        this.f31902q = i11;
+        this.f31903r = i12;
     }
 
     @Override // ji.q
     int c(Object[] objArr, int i10) {
-        System.arraycopy(this.f32161i, 0, objArr, i10, this.f32165r);
-        return i10 + this.f32165r;
+        System.arraycopy(this.f31899i, 0, objArr, i10, this.f31903r);
+        return i10 + this.f31903r;
     }
 
     @Override // ji.q, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean contains(Object obj) {
-        Object[] objArr = this.f32163p;
+        Object[] objArr = this.f31901p;
         if (obj == null || objArr.length == 0) {
             return false;
         }
         int c10 = p.c(obj);
         while (true) {
-            int i10 = c10 & this.f32164q;
+            int i10 = c10 & this.f31902q;
             Object obj2 = objArr[i10];
             if (obj2 == null) {
                 return false;
@@ -68,12 +68,12 @@ public final class m0 extends u {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // ji.q
     public Object[] d() {
-        return this.f32161i;
+        return this.f31899i;
     }
 
     @Override // ji.q
     int e() {
-        return this.f32165r;
+        return this.f31903r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -90,12 +90,12 @@ public final class m0 extends u {
 
     @Override // ji.u, java.util.Collection, java.util.Set
     public int hashCode() {
-        return this.f32162o;
+        return this.f31900o;
     }
 
     @Override // ji.u
     s o() {
-        return s.i(this.f32161i, this.f32165r);
+        return s.i(this.f31899i, this.f31903r);
     }
 
     @Override // ji.u
@@ -111,6 +111,6 @@ public final class m0 extends u {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public int size() {
-        return this.f32165r;
+        return this.f31903r;
     }
 }

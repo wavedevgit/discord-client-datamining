@@ -49,9 +49,9 @@ public final class StepStyles_GovernmentIdStepStrokeColorJsonAdapter extends h {
         StyleElements.SimpleElementColor simpleElementColor5 = null;
         StyleElements.SimpleElementColor simpleElementColor6 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -83,17 +83,17 @@ public final class StepStyles_GovernmentIdStepStrokeColorJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepStrokeColor != null) {
             writer.l();
-            writer.A0("base");
+            writer.t0("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getBase());
-            writer.A0("governmentIdSelectOptionIcon");
+            writer.t0("governmentIdSelectOptionIcon");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getGovernmentIdSelectOptionIcon());
-            writer.A0("governmentIdSelectOptionChevron");
+            writer.t0("governmentIdSelectOptionChevron");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getGovernmentIdSelectOptionChevron());
-            writer.A0("capturePageHintIcon");
+            writer.t0("capturePageHintIcon");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getCapturePageHintIcon());
-            writer.A0("governmentIdCaptureFeedBox");
+            writer.t0("governmentIdCaptureFeedBox");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getGovernmentIdCaptureFeedBox());
-            writer.A0("captureOverlayHeaderButton");
+            writer.t0("captureOverlayHeaderButton");
             this.nullableSimpleElementColorAdapter.toJson(writer, governmentIdStepStrokeColor.getCaptureOverlayHeaderButton());
             writer.E();
             return;

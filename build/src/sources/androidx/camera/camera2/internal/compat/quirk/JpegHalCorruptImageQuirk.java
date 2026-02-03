@@ -11,10 +11,10 @@ import r.a0;
 public final class JpegHalCorruptImageQuirk implements SoftwareJpegEncodingPreferredQuirk {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f1917a = new HashSet(Arrays.asList("heroqltevzw", "heroqltetmo", "k61v1_basic_ref"));
+    private static final Set f1961a = new HashSet(Arrays.asList("heroqltevzw", "heroqltetmo", "k61v1_basic_ref"));
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean c(a0 a0Var) {
-        return f1917a.contains(Build.DEVICE.toLowerCase(Locale.US));
+        return f1961a.contains(Build.DEVICE.toLowerCase(Locale.US));
     }
 }

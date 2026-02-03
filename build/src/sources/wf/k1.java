@@ -13,20 +13,20 @@ public final class k1 extends hf.a {
     public static final Parcelable.Creator<k1> CREATOR = new l1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f52495d;
+    private final boolean f52062d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final v4 f52496e;
+    private final v4 f52063e;
 
     public k1(boolean z10, v4 v4Var) {
-        this.f52495d = z10;
-        this.f52496e = v4Var;
+        this.f52062d = z10;
+        this.f52063e = v4Var;
     }
 
     public final JSONObject b() {
         try {
             JSONObject jSONObject = new JSONObject();
-            if (this.f52495d) {
+            if (this.f52062d) {
                 jSONObject.put(ViewProps.ENABLED, true);
             }
             byte[] c10 = c();
@@ -45,7 +45,7 @@ public final class k1 extends hf.a {
     }
 
     public final byte[] c() {
-        v4 v4Var = this.f52496e;
+        v4 v4Var = this.f52063e;
         if (v4Var == null) {
             return null;
         }
@@ -57,14 +57,14 @@ public final class k1 extends hf.a {
             return false;
         }
         k1 k1Var = (k1) obj;
-        if (this.f52495d != k1Var.f52495d || !gf.o.a(this.f52496e, k1Var.f52496e)) {
+        if (this.f52062d != k1Var.f52062d || !gf.o.a(this.f52063e, k1Var.f52063e)) {
             return false;
         }
         return true;
     }
 
     public final int hashCode() {
-        return gf.o.b(Boolean.valueOf(this.f52495d), this.f52496e);
+        return gf.o.b(Boolean.valueOf(this.f52062d), this.f52063e);
     }
 
     public final String toString() {
@@ -72,7 +72,7 @@ public final class k1 extends hf.a {
         byte[] c10 = c();
         StringBuilder sb2 = new StringBuilder();
         sb2.append("AuthenticationExtensionsPrfOutputs{enabled:");
-        sb2.append(this.f52495d);
+        sb2.append(this.f52062d);
         sb2.append("outputs:");
         if (c10 != null) {
             z10 = true;
@@ -86,7 +86,7 @@ public final class k1 extends hf.a {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        boolean z10 = this.f52495d;
+        boolean z10 = this.f52062d;
         int a10 = hf.c.a(parcel);
         hf.c.c(parcel, 1, z10);
         hf.c.f(parcel, 2, c(), false);

@@ -6,8 +6,8 @@ import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import ir.v;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.o0;
@@ -32,44 +32,44 @@ public final class OrientationModule extends ReactContextBaseJavaModule {
     public static final class a {
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f12610e = new a("LOCKED_PORTRAIT", 0, 1);
+        public static final a f12239e = new a("LOCKED_PORTRAIT", 0, 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final a f12611i = new a("LOCKED_LANDSCAPE", 1, 6);
+        public static final a f12240i = new a("LOCKED_LANDSCAPE", 1, 6);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final a f12612o = new a("LOCKED_LANDSCAPE_LEFT", 2, 0);
+        public static final a f12241o = new a("LOCKED_LANDSCAPE_LEFT", 2, 0);
 
         /* renamed from: p  reason: collision with root package name */
-        public static final a f12613p = new a("LOCKED_LANDSCAPE_RIGHT", 3, 8);
+        public static final a f12242p = new a("LOCKED_LANDSCAPE_RIGHT", 3, 8);
 
         /* renamed from: q  reason: collision with root package name */
-        public static final a f12614q = new a("UNLOCKED", 4, 4);
+        public static final a f12243q = new a("UNLOCKED", 4, 4);
 
         /* renamed from: r  reason: collision with root package name */
-        public static final a f12615r = new a("UNSPECIFIED", 5, -1);
+        public static final a f12244r = new a("UNSPECIFIED", 5, -1);
 
         /* renamed from: s  reason: collision with root package name */
-        private static final /* synthetic */ a[] f12616s;
+        private static final /* synthetic */ a[] f12245s;
 
         /* renamed from: t  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f12617t;
+        private static final /* synthetic */ EnumEntries f12246t;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f12618d;
+        private final int f12247d;
 
         static {
             a[] a10 = a();
-            f12616s = a10;
-            f12617t = pr.a.a(a10);
+            f12245s = a10;
+            f12246t = qr.a.a(a10);
         }
 
         private a(String str, int i10, int i11) {
-            this.f12618d = i11;
+            this.f12247d = i11;
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f12610e, f12611i, f12612o, f12613p, f12614q, f12615r};
+            return new a[]{f12239e, f12240i, f12241o, f12242p, f12243q, f12244r};
         }
 
         public static a valueOf(String str) {
@@ -77,11 +77,11 @@ public final class OrientationModule extends ReactContextBaseJavaModule {
         }
 
         public static a[] values() {
-            return (a[]) f12616s.clone();
+            return (a[]) f12245s.clone();
         }
 
         public final int d() {
-            return this.f12618d;
+            return this.f12247d;
         }
     }
 
@@ -119,7 +119,7 @@ public final class OrientationModule extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$0(OrientationModule orientationModule, boolean z10) {
         updateOrientation$default(orientationModule, null, z10, false, 5, null);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -157,7 +157,7 @@ public final class OrientationModule extends ReactContextBaseJavaModule {
                 if ((z10 || z11) && (currentActivity = this.reactContext.getCurrentActivity()) != null) {
                     currentActivity.setRequestedOrientation(aVar.d());
                 }
-                if (!z10 && !z11 && aVar != (aVar2 = a.f12615r) && (currentActivity2 = this.reactContext.getCurrentActivity()) != null) {
+                if (!z10 && !z11 && aVar != (aVar2 = a.f12244r) && (currentActivity2 = this.reactContext.getCurrentActivity()) != null) {
                     currentActivity2.setRequestedOrientation(aVar2.d());
                 }
             }
@@ -213,27 +213,27 @@ public final class OrientationModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public final void lockToLandscape() {
-        updateOrientation$default(this, a.f12611i, false, false, 6, null);
+        updateOrientation$default(this, a.f12240i, false, false, 6, null);
     }
 
     @ReactMethod
     public final void lockToLandscapeLeft() {
-        updateOrientation$default(this, a.f12612o, false, false, 6, null);
+        updateOrientation$default(this, a.f12241o, false, false, 6, null);
     }
 
     @ReactMethod
     public final void lockToLandscapeRight() {
-        updateOrientation$default(this, a.f12613p, false, false, 6, null);
+        updateOrientation$default(this, a.f12242p, false, false, 6, null);
     }
 
     @ReactMethod
     @SuppressLint({"SourceLockedOrientationActivity"})
     public final void lockToPortrait() {
-        updateOrientation$default(this, a.f12610e, false, false, 6, null);
+        updateOrientation$default(this, a.f12239e, false, false, 6, null);
     }
 
     @ReactMethod
     public final void unlockAllOrientations() {
-        updateOrientation$default(this, a.f12614q, false, false, 6, null);
+        updateOrientation$default(this, a.f12243q, false, false, 6, null);
     }
 }

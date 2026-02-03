@@ -12,162 +12,51 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var1.default = var0;
     var3 = {
-        'about': 'körülbelül',
-        'over': 'több mint',
-        'almost': 'majdnem',
-        'lessthan': 'kevesebb mint'
+        'lastWeek': null,
+        'yesterday': "'χθες στις' p",
+        'today': "'σήμερα στις' p",
+        'tomorrow': "'αύριο στις' p",
+        'nextWeek': "eeee 'στις' p",
+        'other': 'P'
     };
-    var _closure1_slot0 = var3;
-    var3 = {
-        'xseconds': ' másodperc',
-        'halfaminute': 'fél perc',
-        'xminutes': ' perc',
-        'xhours': ' óra',
-        'xdays': ' nap',
-        'xweeks': ' hét',
-        'xmonths': ' hónap',
-        'xyears': ' év'
-    };
-    var _closure1_slot1 = var3;
-    var3 = {};
-    var4 = {
-        '-1': ' másodperccel ezelőtt',
-        1: ' másodperc múlva',
-        0: ' másodperce'
-    };
-    var3.xseconds = var4;
-    var4 = {
-        '-1': 'fél perccel ezelőtt',
-        1: 'fél perc múlva',
-        0: 'fél perce'
-    };
-    var3.halfaminute = var4;
-    var4 = {
-        '-1': ' perccel ezelőtt',
-        1: ' perc múlva',
-        0: ' perce'
-    };
-    var3.xminutes = var4;
-    var4 = {
-        '-1': ' órával ezelőtt',
-        1: ' óra múlva',
-        0: ' órája'
-    };
-    var3.xhours = var4;
-    var4 = {
-        '-1': ' nappal ezelőtt',
-        1: ' nap múlva',
-        0: ' napja'
-    };
-    var3.xdays = var4;
-    var4 = {
-        '-1': ' héttel ezelőtt',
-        1: ' hét múlva',
-        0: ' hete'
-    };
-    var3.xweeks = var4;
-    var4 = {
-        '-1': ' hónappal ezelőtt',
-        1: ' hónap múlva',
-        0: ' hónapja'
-    };
-    var3.xmonths = var4;
-    var4 = {
-        '-1': ' évvel ezelőtt',
-        1: ' év múlva',
-        0: ' éve'
-    };
-    var3.xyears = var4;
-    var _closure1_slot2 = var3;
-    var2 = function arg0, arg1, arg2() {
-        _fun21937: for (var _fun21937_ip = 0;;) switch (_fun21937_ip) {
+    var4 = function arg0() {
+        _fun21946: for (var _fun21946_ip = 0;;) switch (_fun21946_ip) {
             case 0:
-                var5 = arg0;
-                var0 = arg2;
-                var2 = var5.match;
-                var1 = /about|over|almost|lessthan/i;
-                var3 = var2.bind(var5)(var1);
-                var6 = var5;
-                if (!var3) {
-                    _fun21937_ip = 58;
-                    continue _fun21937
+                var1 = arg0;
+                var0 = var1.getUTCDay;
+                var2 = var0.bind(var1)();
+                var0 = "'την προηγούμενη' eeee 'στις' p";
+                var1 = 6;
+                if (!(var1 === var2)) {
+                    _fun21946_ip = 32;
+                    continue _fun21946
                 }
-            case 37:
-                var4 = var5.replace;
-                var1 = 0;
-                var2 = var3[var1];
-                var1 = '';
-                var6 = var4.bind(var5)(var2, var1);
-            case 58:
-                var5 = null;
-                var4 = var5 == var0;
-                var1 = undefined;
-                if (var4) {
-                    _fun21937_ip = 75;
-                    continue _fun21937
-                }
-            case 69:
-                var1 = var0.addSuffix;
-            case 75:
-                var4 = var6.toLowerCase;
-                var4 = var4.bind(var6)();
-                var5 = var5 == var0;
-                var2 = undefined;
-                if (var5) {
-                    _fun21937_ip = 100;
-                    continue _fun21937
-                }
-            case 94:
-                var2 = var0.comparison;
-            case 100:
-                if (var2) {
-                    _fun21937_ip = 105;
-                    continue _fun21937
-                }
-            case 103:
-                var2 = 0;
-            case 105:
-                var0 = true;
-                if (!(var0 !== var1)) {
-                    _fun21937_ip = 124;
-                    continue _fun21937
-                }
-            case 111:
-                var0 = _closure1_slot1;
-                var1 = var0[var4];
-                _fun21937_ip = 139;
-                continue _fun21937;
-            case 124:
-                var0 = _closure1_slot2;
-                var0 = var0[var4];
-                var1 = var0[var2];
-            case 139:
-                var0 = 'halfaminute';
-                var2 = var1;
-                if (!(var0 !== var4)) {
-                    _fun21937_ip = 157;
-                    continue _fun21937
-                }
-            case 150:
-                var0 = arg1;
-                var2 = var0 + var1;
-            case 157:
-                var0 = var2;
-                if (!var3) {
-                    _fun21937_ip = 204;
-                    continue _fun21937
-                }
-            case 163:
-                var1 = 0;
-                var3 = var3[var1];
-                var1 = var3.toLowerCase;
-                var3 = var1.bind(var3)();
+            case 26:
+                var0 = "'το προηγούμενο' eeee 'στις' p";
+            case 32:
+                return var0;
+        }
+    };
+    var3.lastWeek = var4;
+    var _closure1_slot0 = var3;
+    var2 = function arg0, arg1() {
+        _fun21947: for (var _fun21947_ip = 0;;) switch (_fun21947_ip) {
+            case 0:
                 var1 = _closure1_slot0;
-                var3 = var1[var3];
-                var1 = ' ';
-                var1 = var3 + var1;
-                var0 = var1 + var2;
-            case 204:
+                var0 = arg0;
+                var3 = var1[var0];
+                var2 = 'function';
+                var1 = typeof var3;
+                var0 = var3;
+                if (!(var2 === var1)) {
+                    _fun21947_ip = 38;
+                    continue _fun21947
+                }
+            case 28:
+                var2 = undefined;
+                var1 = arg1;
+                var0 = var3.bind(var2)(var1);
+            case 38:
                 return var0;
         }
     };

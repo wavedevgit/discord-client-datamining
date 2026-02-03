@@ -21,55 +21,55 @@ import x.y0;
 public class h {
 
     /* renamed from: c  reason: collision with root package name */
-    static final String[] f7099c = {"", "BYTE", "STRING", "USHORT", "ULONG", "URATIONAL", "SBYTE", "UNDEFINED", "SSHORT", "SLONG", "SRATIONAL", "SINGLE", "DOUBLE", "IFD"};
+    static final String[] f6150c = {"", "BYTE", "STRING", "USHORT", "ULONG", "URATIONAL", "SBYTE", "UNDEFINED", "SSHORT", "SLONG", "SRATIONAL", "SINGLE", "DOUBLE", "IFD"};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final j[] f7100d;
+    private static final j[] f6151d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final j[] f7101e;
+    private static final j[] f6152e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final j[] f7102f;
+    private static final j[] f6153f;
 
     /* renamed from: g  reason: collision with root package name */
-    static final j[] f7103g;
+    static final j[] f6154g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final j[] f7104h;
+    private static final j[] f6155h;
 
     /* renamed from: i  reason: collision with root package name */
-    static final j[][] f7105i;
+    static final j[][] f6156i;
 
     /* renamed from: j  reason: collision with root package name */
-    static final HashSet f7106j;
+    static final HashSet f6157j;
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f7107a;
+    private final List f6158a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ByteOrder f7108b;
+    private final ByteOrder f6159b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f7109a;
+        static final /* synthetic */ int[] f6160a;
 
         static {
             int[] iArr = new int[t.values().length];
-            f7109a = iArr;
+            f6160a = iArr;
             try {
                 iArr[t.READY.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f7109a[t.NONE.ordinal()] = 2;
+                f6160a[t.NONE.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f7109a[t.FIRED.ordinal()] = 3;
+                f6160a[t.FIRED.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -79,28 +79,28 @@ public class h {
     public static final class b {
 
         /* renamed from: c  reason: collision with root package name */
-        private static final Pattern f7110c = Pattern.compile("^(\\d{2}):(\\d{2}):(\\d{2})$");
+        private static final Pattern f6161c = Pattern.compile("^(\\d{2}):(\\d{2}):(\\d{2})$");
 
         /* renamed from: d  reason: collision with root package name */
-        private static final Pattern f7111d = Pattern.compile("^(\\d{4}):(\\d{2}):(\\d{2})\\s(\\d{2}):(\\d{2}):(\\d{2})$");
+        private static final Pattern f6162d = Pattern.compile("^(\\d{4}):(\\d{2}):(\\d{2})\\s(\\d{2}):(\\d{2}):(\\d{2})$");
 
         /* renamed from: e  reason: collision with root package name */
-        private static final Pattern f7112e = Pattern.compile("^(\\d{4})-(\\d{2})-(\\d{2})\\s(\\d{2}):(\\d{2}):(\\d{2})$");
+        private static final Pattern f6163e = Pattern.compile("^(\\d{4})-(\\d{2})-(\\d{2})\\s(\\d{2}):(\\d{2}):(\\d{2})$");
 
         /* renamed from: f  reason: collision with root package name */
-        static final List f7113f = Collections.list(new a());
+        static final List f6164f = Collections.list(new a());
 
         /* renamed from: a  reason: collision with root package name */
-        final List f7114a = Collections.list(new C0106b());
+        final List f6165a = Collections.list(new C0105b());
 
         /* renamed from: b  reason: collision with root package name */
-        private final ByteOrder f7115b;
+        private final ByteOrder f6166b;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Enumeration {
 
             /* renamed from: a  reason: collision with root package name */
-            int f7116a = 0;
+            int f6167a = 0;
 
             a() {
             }
@@ -110,16 +110,16 @@ public class h {
             public HashMap nextElement() {
                 j[] jVarArr;
                 HashMap hashMap = new HashMap();
-                for (j jVar : h.f7105i[this.f7116a]) {
-                    hashMap.put(jVar.f7132b, jVar);
+                for (j jVar : h.f6156i[this.f6167a]) {
+                    hashMap.put(jVar.f6183b, jVar);
                 }
-                this.f7116a++;
+                this.f6167a++;
                 return hashMap;
             }
 
             @Override // java.util.Enumeration
             public boolean hasMoreElements() {
-                if (this.f7116a < h.f7105i.length) {
+                if (this.f6167a < h.f6156i.length) {
                     return true;
                 }
                 return false;
@@ -128,24 +128,24 @@ public class h {
 
         /* renamed from: b0.h$b$b  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        class C0106b implements Enumeration {
+        class C0105b implements Enumeration {
 
             /* renamed from: a  reason: collision with root package name */
-            int f7117a = 0;
+            int f6168a = 0;
 
-            C0106b() {
+            C0105b() {
             }
 
             @Override // java.util.Enumeration
             /* renamed from: a */
             public Map nextElement() {
-                this.f7117a++;
+                this.f6168a++;
                 return new HashMap();
             }
 
             @Override // java.util.Enumeration
             public boolean hasMoreElements() {
-                if (this.f7117a < h.f7105i.length) {
+                if (this.f6168a < h.f6156i.length) {
                     return true;
                 }
                 return false;
@@ -157,26 +157,26 @@ public class h {
         public class c implements Enumeration {
 
             /* renamed from: a  reason: collision with root package name */
-            final Enumeration f7119a;
+            final Enumeration f6170a;
 
             c() {
-                this.f7119a = Collections.enumeration(b.this.f7114a);
+                this.f6170a = Collections.enumeration(b.this.f6165a);
             }
 
             @Override // java.util.Enumeration
             /* renamed from: a */
             public Map nextElement() {
-                return new HashMap((Map) this.f7119a.nextElement());
+                return new HashMap((Map) this.f6170a.nextElement());
             }
 
             @Override // java.util.Enumeration
             public boolean hasMoreElements() {
-                return this.f7119a.hasMoreElements();
+                return this.f6170a.hasMoreElements();
             }
         }
 
         b(ByteOrder byteOrder) {
-            this.f7115b = byteOrder;
+            this.f6166b = byteOrder;
         }
 
         private static Pair b(String str) {
@@ -300,11 +300,11 @@ public class h {
                 d("GPSDestBearingRef", "T", list);
                 d("GPSDestDistanceRef", "K", list);
             }
-            return new h(this.f7115b, list);
+            return new h(this.f6166b, list);
         }
 
         public b c(String str, String str2) {
-            e(str, str2, this.f7114a);
+            e(str, str2, this.f6165a);
             return this;
         }
 
@@ -317,7 +317,7 @@ public class h {
             if (tVar == t.UNKNOWN) {
                 return this;
             }
-            int i11 = a.f7109a[tVar.ordinal()];
+            int i11 = a.f6160a[tVar.ordinal()];
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 != 3) {
@@ -404,28 +404,28 @@ public class h {
 
     static {
         j[] jVarArr = {new j("ImageWidth", IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, 3, 4), new j("ImageLength", 257, 3, 4), new j("Make", 271, 2), new j("Model", 272, 2), new j("Orientation", 274, 3), new j("XResolution", 282, 5), new j("YResolution", 283, 5), new j("ResolutionUnit", 296, 3), new j("Software", 305, 2), new j("DateTime", 306, 2), new j("YCbCrPositioning", 531, 3), new j("SubIFDPointer", 330, 4), new j("ExifIFDPointer", 34665, 4), new j("GPSInfoIFDPointer", 34853, 4)};
-        f7100d = jVarArr;
+        f6151d = jVarArr;
         j[] jVarArr2 = {new j("ExposureTime", 33434, 5), new j("FNumber", 33437, 5), new j("ExposureProgram", 34850, 3), new j("PhotographicSensitivity", 34855, 3), new j("SensitivityType", 34864, 3), new j("ExifVersion", 36864, 2), new j("DateTimeOriginal", 36867, 2), new j("DateTimeDigitized", 36868, 2), new j("ComponentsConfiguration", 37121, 7), new j("ShutterSpeedValue", 37377, 10), new j("ApertureValue", 37378, 5), new j("BrightnessValue", 37379, 10), new j("ExposureBiasValue", 37380, 10), new j("MaxApertureValue", 37381, 5), new j("MeteringMode", 37383, 3), new j("LightSource", 37384, 3), new j("Flash", 37385, 3), new j("FocalLength", 37386, 5), new j("SubSecTime", 37520, 2), new j("SubSecTimeOriginal", 37521, 2), new j("SubSecTimeDigitized", 37522, 2), new j("FlashpixVersion", 40960, 7), new j("ColorSpace", 40961, 3), new j("PixelXDimension", 40962, 3, 4), new j("PixelYDimension", 40963, 3, 4), new j("InteroperabilityIFDPointer", 40965, 4), new j("FocalPlaneResolutionUnit", 41488, 3), new j("SensingMethod", 41495, 3), new j("FileSource", 41728, 7), new j("SceneType", 41729, 7), new j("CustomRendered", 41985, 3), new j("ExposureMode", 41986, 3), new j("WhiteBalance", 41987, 3), new j("SceneCaptureType", 41990, 3), new j("Contrast", 41992, 3), new j("Saturation", 41993, 3), new j("Sharpness", 41994, 3)};
-        f7101e = jVarArr2;
+        f6152e = jVarArr2;
         j[] jVarArr3 = {new j("GPSVersionID", 0, 1), new j("GPSLatitudeRef", 1, 2), new j("GPSLatitude", 2, 5, 10), new j("GPSLongitudeRef", 3, 2), new j("GPSLongitude", 4, 5, 10), new j("GPSAltitudeRef", 5, 1), new j("GPSAltitude", 6, 5), new j("GPSTimeStamp", 7, 5), new j("GPSSpeedRef", 12, 2), new j("GPSTrackRef", 14, 2), new j("GPSImgDirectionRef", 16, 2), new j("GPSDestBearingRef", 23, 2), new j("GPSDestDistanceRef", 25, 2)};
-        f7102f = jVarArr3;
-        f7103g = new j[]{new j("SubIFDPointer", 330, 4), new j("ExifIFDPointer", 34665, 4), new j("GPSInfoIFDPointer", 34853, 4), new j("InteroperabilityIFDPointer", 40965, 4)};
+        f6153f = jVarArr3;
+        f6154g = new j[]{new j("SubIFDPointer", 330, 4), new j("ExifIFDPointer", 34665, 4), new j("GPSInfoIFDPointer", 34853, 4), new j("InteroperabilityIFDPointer", 40965, 4)};
         j[] jVarArr4 = {new j("InteroperabilityIndex", 1, 2)};
-        f7104h = jVarArr4;
-        f7105i = new j[][]{jVarArr, jVarArr2, jVarArr3, jVarArr4};
-        f7106j = new HashSet(Arrays.asList("FNumber", "ExposureTime", "GPSTimeStamp"));
+        f6155h = jVarArr4;
+        f6156i = new j[][]{jVarArr, jVarArr2, jVarArr3, jVarArr4};
+        f6157j = new HashSet(Arrays.asList("FNumber", "ExposureTime", "GPSTimeStamp"));
     }
 
     h(ByteOrder byteOrder, List list) {
         boolean z10;
-        if (list.size() == f7105i.length) {
+        if (list.size() == f6156i.length) {
             z10 = true;
         } else {
             z10 = false;
         }
         b2.e.j(z10, "Malformed attributes list. Number of IFDs mismatch.");
-        this.f7108b = byteOrder;
-        this.f7107a = list;
+        this.f6159b = byteOrder;
+        this.f6158a = list;
     }
 
     public static b a() {
@@ -443,12 +443,12 @@ public class h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Map c(int i10) {
-        int length = f7105i.length;
+        int length = f6156i.length;
         b2.e.c(i10, 0, length, "Invalid IFD index: " + i10 + ". Index should be between [0, EXIF_TAGS.length] ");
-        return (Map) this.f7107a.get(i10);
+        return (Map) this.f6158a.get(i10);
     }
 
     public ByteOrder d() {
-        return this.f7108b;
+        return this.f6159b;
     }
 }

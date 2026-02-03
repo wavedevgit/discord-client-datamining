@@ -8,13 +8,13 @@ public abstract class SurfaceUtil {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public int f1993a = 0;
+        public int f2037a = 0;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f1994b = 0;
+        public int f2038b = 0;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f1995c = 0;
+        public int f2039c = 0;
     }
 
     static {
@@ -24,9 +24,9 @@ public abstract class SurfaceUtil {
     public static a a(Surface surface) {
         int[] nativeGetSurfaceInfo = nativeGetSurfaceInfo(surface);
         a aVar = new a();
-        aVar.f1993a = nativeGetSurfaceInfo[0];
-        aVar.f1994b = nativeGetSurfaceInfo[1];
-        aVar.f1995c = nativeGetSurfaceInfo[2];
+        aVar.f2037a = nativeGetSurfaceInfo[0];
+        aVar.f2038b = nativeGetSurfaceInfo[1];
+        aVar.f2039c = nativeGetSurfaceInfo[2];
         return aVar;
     }
 

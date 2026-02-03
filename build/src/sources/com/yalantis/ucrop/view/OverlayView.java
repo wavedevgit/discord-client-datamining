@@ -12,9 +12,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import androidx.annotation.NonNull;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import nq.h;
-import oq.d;
-import rq.g;
+import oq.h;
+import pq.d;
+import sq.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class OverlayView extends View {
     private Paint A;
@@ -32,49 +32,49 @@ public class OverlayView extends View {
     private boolean M;
 
     /* renamed from: d  reason: collision with root package name */
-    private final RectF f20903d;
+    private final RectF f20536d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final RectF f20904e;
+    private final RectF f20537e;
 
     /* renamed from: i  reason: collision with root package name */
-    protected int f20905i;
+    protected int f20538i;
 
     /* renamed from: o  reason: collision with root package name */
-    protected int f20906o;
+    protected int f20539o;
 
     /* renamed from: p  reason: collision with root package name */
-    protected float[] f20907p;
+    protected float[] f20540p;
 
     /* renamed from: q  reason: collision with root package name */
-    protected float[] f20908q;
+    protected float[] f20541q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f20909r;
+    private int f20542r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f20910s;
+    private int f20543s;
 
     /* renamed from: t  reason: collision with root package name */
-    private float f20911t;
+    private float f20544t;
 
     /* renamed from: u  reason: collision with root package name */
-    private float[] f20912u;
+    private float[] f20545u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f20913v;
+    private boolean f20546v;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f20914w;
+    private boolean f20547w;
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f20915x;
+    private boolean f20548x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f20916y;
+    private int f20549y;
 
     /* renamed from: z  reason: collision with root package name */
-    private Path f20917z;
+    private Path f20550z;
 
     public OverlayView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0);
@@ -84,21 +84,21 @@ public class OverlayView extends View {
         double d10 = this.I;
         int i10 = -1;
         for (int i11 = 0; i11 < 8; i11 += 2) {
-            double sqrt = Math.sqrt(Math.pow(f10 - this.f20907p[i11], 2.0d) + Math.pow(f11 - this.f20907p[i11 + 1], 2.0d));
+            double sqrt = Math.sqrt(Math.pow(f10 - this.f20540p[i11], 2.0d) + Math.pow(f11 - this.f20540p[i11 + 1], 2.0d));
             if (sqrt < d10) {
                 i10 = i11 / 2;
                 d10 = sqrt;
             }
         }
-        if (this.E == 1 && i10 < 0 && this.f20903d.contains(f10, f11)) {
+        if (this.E == 1 && i10 < 0 && this.f20536d.contains(f10, f11)) {
             return 4;
         }
         return i10;
     }
 
     private void e(TypedArray typedArray) {
-        int dimensionPixelSize = typedArray.getDimensionPixelSize(h.f42147k, getResources().getDimensionPixelSize(nq.b.f42089a));
-        int color = typedArray.getColor(h.f42146j, getResources().getColor(nq.a.f42079c));
+        int dimensionPixelSize = typedArray.getDimensionPixelSize(h.f44701k, getResources().getDimensionPixelSize(oq.b.f44643a));
+        int color = typedArray.getColor(h.f44700j, getResources().getColor(oq.a.f44633c));
         this.C.setStrokeWidth(dimensionPixelSize);
         this.C.setColor(color);
         Paint paint = this.C;
@@ -110,12 +110,12 @@ public class OverlayView extends View {
     }
 
     private void f(TypedArray typedArray) {
-        int dimensionPixelSize = typedArray.getDimensionPixelSize(h.f42151o, getResources().getDimensionPixelSize(nq.b.f42090b));
-        int color = typedArray.getColor(h.f42148l, getResources().getColor(nq.a.f42080d));
+        int dimensionPixelSize = typedArray.getDimensionPixelSize(h.f44705o, getResources().getDimensionPixelSize(oq.b.f44644b));
+        int color = typedArray.getColor(h.f44702l, getResources().getColor(oq.a.f44634d));
         this.B.setStrokeWidth(dimensionPixelSize);
         this.B.setColor(color);
-        this.f20909r = typedArray.getInt(h.f42150n, 2);
-        this.f20910s = typedArray.getInt(h.f42149m, 2);
+        this.f20542r = typedArray.getInt(h.f44704n, 2);
+        this.f20543s = typedArray.getInt(h.f44703m, 2);
     }
 
     private void i(float f10, float f11) {
@@ -124,7 +124,7 @@ public class OverlayView extends View {
         float f13;
         float f14;
         float f15;
-        this.f20904e.set(this.f20903d);
+        this.f20537e.set(this.f20536d);
         int i10 = this.H;
         boolean z11 = true;
         if (i10 != 0) {
@@ -132,9 +132,9 @@ public class OverlayView extends View {
                 if (i10 != 2) {
                     if (i10 != 3) {
                         if (i10 == 4) {
-                            this.f20904e.offset(f10 - this.F, f11 - this.G);
-                            if (this.f20904e.left > getLeft() && this.f20904e.top > getTop() && this.f20904e.right < getRight() && this.f20904e.bottom < getBottom()) {
-                                this.f20903d.set(this.f20904e);
+                            this.f20537e.offset(f10 - this.F, f11 - this.G);
+                            if (this.f20537e.left > getLeft() && this.f20537e.top > getTop() && this.f20537e.right < getRight() && this.f20537e.bottom < getBottom()) {
+                                this.f20536d.set(this.f20537e);
                                 j();
                                 postInvalidate();
                                 return;
@@ -142,51 +142,51 @@ public class OverlayView extends View {
                             return;
                         }
                     } else {
-                        RectF rectF = this.f20904e;
-                        RectF rectF2 = this.f20903d;
+                        RectF rectF = this.f20537e;
+                        RectF rectF2 = this.f20536d;
                         rectF.set(f10, rectF2.top, rectF2.right, f11);
                     }
                 } else {
-                    RectF rectF3 = this.f20904e;
-                    RectF rectF4 = this.f20903d;
+                    RectF rectF3 = this.f20537e;
+                    RectF rectF4 = this.f20536d;
                     rectF3.set(rectF4.left, rectF4.top, f10, f11);
                 }
             } else {
-                RectF rectF5 = this.f20904e;
-                RectF rectF6 = this.f20903d;
+                RectF rectF5 = this.f20537e;
+                RectF rectF6 = this.f20536d;
                 rectF5.set(rectF6.left, f11, f10, rectF6.bottom);
             }
         } else {
-            RectF rectF7 = this.f20904e;
-            RectF rectF8 = this.f20903d;
+            RectF rectF7 = this.f20537e;
+            RectF rectF8 = this.f20536d;
             rectF7.set(f10, f11, rectF8.right, rectF8.bottom);
         }
-        if (this.f20904e.height() >= this.J) {
+        if (this.f20537e.height() >= this.J) {
             z10 = true;
         } else {
             z10 = false;
         }
-        if (this.f20904e.width() < this.J) {
+        if (this.f20537e.width() < this.J) {
             z11 = false;
         }
-        RectF rectF9 = this.f20903d;
+        RectF rectF9 = this.f20536d;
         if (z11) {
-            f12 = this.f20904e.left;
+            f12 = this.f20537e.left;
         } else {
             f12 = rectF9.left;
         }
         if (z10) {
-            f13 = this.f20904e.top;
+            f13 = this.f20537e.top;
         } else {
             f13 = rectF9.top;
         }
         if (z11) {
-            f14 = this.f20904e.right;
+            f14 = this.f20537e.right;
         } else {
             f14 = rectF9.right;
         }
         if (z10) {
-            f15 = this.f20904e.bottom;
+            f15 = this.f20537e.bottom;
         } else {
             f15 = rectF9.bottom;
         }
@@ -199,84 +199,84 @@ public class OverlayView extends View {
     }
 
     private void j() {
-        this.f20907p = g.b(this.f20903d);
-        this.f20908q = g.a(this.f20903d);
-        this.f20912u = null;
-        this.f20917z.reset();
-        this.f20917z.addCircle(this.f20903d.centerX(), this.f20903d.centerY(), Math.min(this.f20903d.width(), this.f20903d.height()) / 2.0f, Path.Direction.CW);
+        this.f20540p = g.b(this.f20536d);
+        this.f20541q = g.a(this.f20536d);
+        this.f20545u = null;
+        this.f20550z.reset();
+        this.f20550z.addCircle(this.f20536d.centerX(), this.f20536d.centerY(), Math.min(this.f20536d.width(), this.f20536d.height()) / 2.0f, Path.Direction.CW);
     }
 
     protected void a(Canvas canvas) {
         int i10;
         int i11;
-        if (this.f20914w) {
-            if (this.f20912u == null && !this.f20903d.isEmpty()) {
-                this.f20912u = new float[(this.f20909r * 4) + (this.f20910s * 4)];
+        if (this.f20547w) {
+            if (this.f20545u == null && !this.f20536d.isEmpty()) {
+                this.f20545u = new float[(this.f20542r * 4) + (this.f20543s * 4)];
                 int i12 = 0;
-                for (int i13 = 0; i13 < this.f20909r; i13++) {
-                    float[] fArr = this.f20912u;
-                    RectF rectF = this.f20903d;
+                for (int i13 = 0; i13 < this.f20542r; i13++) {
+                    float[] fArr = this.f20545u;
+                    RectF rectF = this.f20536d;
                     fArr[i12] = rectF.left;
                     float f10 = i13 + 1.0f;
-                    float height = rectF.height() * (f10 / (this.f20909r + 1));
-                    RectF rectF2 = this.f20903d;
+                    float height = rectF.height() * (f10 / (this.f20542r + 1));
+                    RectF rectF2 = this.f20536d;
                     fArr[i12 + 1] = height + rectF2.top;
-                    float[] fArr2 = this.f20912u;
+                    float[] fArr2 = this.f20545u;
                     int i14 = i12 + 3;
                     fArr2[i12 + 2] = rectF2.right;
                     i12 += 4;
-                    fArr2[i14] = (rectF2.height() * (f10 / (this.f20909r + 1))) + this.f20903d.top;
+                    fArr2[i14] = (rectF2.height() * (f10 / (this.f20542r + 1))) + this.f20536d.top;
                 }
-                for (int i15 = 0; i15 < this.f20910s; i15++) {
-                    float[] fArr3 = this.f20912u;
+                for (int i15 = 0; i15 < this.f20543s; i15++) {
+                    float[] fArr3 = this.f20545u;
                     float f11 = i15 + 1.0f;
-                    float width = this.f20903d.width() * (f11 / (this.f20910s + 1));
-                    RectF rectF3 = this.f20903d;
+                    float width = this.f20536d.width() * (f11 / (this.f20543s + 1));
+                    RectF rectF3 = this.f20536d;
                     fArr3[i12] = width + rectF3.left;
-                    float[] fArr4 = this.f20912u;
+                    float[] fArr4 = this.f20545u;
                     fArr4[i12 + 1] = rectF3.top;
                     int i16 = i12 + 3;
-                    float width2 = rectF3.width() * (f11 / (this.f20910s + 1));
-                    RectF rectF4 = this.f20903d;
+                    float width2 = rectF3.width() * (f11 / (this.f20543s + 1));
+                    RectF rectF4 = this.f20536d;
                     fArr4[i12 + 2] = width2 + rectF4.left;
                     i12 += 4;
-                    this.f20912u[i16] = rectF4.bottom;
+                    this.f20545u[i16] = rectF4.bottom;
                 }
             }
-            float[] fArr5 = this.f20912u;
+            float[] fArr5 = this.f20545u;
             if (fArr5 != null) {
                 canvas.drawLines(fArr5, this.B);
             }
         }
-        if (this.f20913v) {
-            canvas.drawRect(this.f20903d, this.C);
+        if (this.f20546v) {
+            canvas.drawRect(this.f20536d, this.C);
         }
         if (this.E != 0) {
             canvas.save();
-            this.f20904e.set(this.f20903d);
-            this.f20904e.inset(this.K, -i10);
-            RectF rectF5 = this.f20904e;
+            this.f20537e.set(this.f20536d);
+            this.f20537e.inset(this.K, -i10);
+            RectF rectF5 = this.f20537e;
             Region.Op op2 = Region.Op.DIFFERENCE;
             canvas.clipRect(rectF5, op2);
-            this.f20904e.set(this.f20903d);
-            this.f20904e.inset(-i11, this.K);
-            canvas.clipRect(this.f20904e, op2);
-            canvas.drawRect(this.f20903d, this.D);
+            this.f20537e.set(this.f20536d);
+            this.f20537e.inset(-i11, this.K);
+            canvas.clipRect(this.f20537e, op2);
+            canvas.drawRect(this.f20536d, this.D);
             canvas.restore();
         }
     }
 
     protected void b(Canvas canvas) {
         canvas.save();
-        if (this.f20915x) {
-            canvas.clipPath(this.f20917z, Region.Op.DIFFERENCE);
+        if (this.f20548x) {
+            canvas.clipPath(this.f20550z, Region.Op.DIFFERENCE);
         } else {
-            canvas.clipRect(this.f20903d, Region.Op.DIFFERENCE);
+            canvas.clipRect(this.f20536d, Region.Op.DIFFERENCE);
         }
-        canvas.drawColor(this.f20916y);
+        canvas.drawColor(this.f20549y);
         canvas.restore();
-        if (this.f20915x) {
-            canvas.drawCircle(this.f20903d.centerX(), this.f20903d.centerY(), Math.min(this.f20903d.width(), this.f20903d.height()) / 2.0f, this.A);
+        if (this.f20548x) {
+            canvas.drawCircle(this.f20536d.centerX(), this.f20536d.centerY(), Math.min(this.f20536d.width(), this.f20536d.height()) / 2.0f, this.A);
         }
     }
 
@@ -285,21 +285,21 @@ public class OverlayView extends View {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void g(TypedArray typedArray) {
-        this.f20915x = typedArray.getBoolean(h.f42144h, false);
-        int color = typedArray.getColor(h.f42145i, getResources().getColor(nq.a.f42081e));
-        this.f20916y = color;
+        this.f20548x = typedArray.getBoolean(h.f44698h, false);
+        int color = typedArray.getColor(h.f44699i, getResources().getColor(oq.a.f44635e));
+        this.f20549y = color;
         this.A.setColor(color);
         this.A.setStyle(Paint.Style.STROKE);
         this.A.setStrokeWidth(1.0f);
         e(typedArray);
-        this.f20913v = typedArray.getBoolean(h.f42152p, true);
+        this.f20546v = typedArray.getBoolean(h.f44706p, true);
         f(typedArray);
-        this.f20914w = typedArray.getBoolean(h.f42153q, true);
+        this.f20547w = typedArray.getBoolean(h.f44707q, true);
     }
 
     @NonNull
     public RectF getCropViewRect() {
-        return this.f20903d;
+        return this.f20536d;
     }
 
     public int getFreestyleCropMode() {
@@ -311,21 +311,21 @@ public class OverlayView extends View {
     }
 
     public void h() {
-        int i10 = this.f20905i;
-        float f10 = this.f20911t;
+        int i10 = this.f20538i;
+        float f10 = this.f20544t;
         int i11 = (int) (i10 / f10);
-        int i12 = this.f20906o;
+        int i12 = this.f20539o;
         if (i11 > i12) {
             int i13 = (int) (i12 * f10);
             int i14 = (i10 - i13) / 2;
-            this.f20903d.set(getPaddingLeft() + i14, getPaddingTop(), getPaddingLeft() + i13 + i14, getPaddingTop() + this.f20906o);
+            this.f20536d.set(getPaddingLeft() + i14, getPaddingTop(), getPaddingLeft() + i13 + i14, getPaddingTop() + this.f20539o);
         } else {
             int i15 = (i12 - i11) / 2;
-            this.f20903d.set(getPaddingLeft(), getPaddingTop() + i15, getPaddingLeft() + this.f20905i, getPaddingTop() + i11 + i15);
+            this.f20536d.set(getPaddingLeft(), getPaddingTop() + i15, getPaddingLeft() + this.f20538i, getPaddingTop() + i11 + i15);
         }
         d dVar = this.L;
         if (dVar != null) {
-            dVar.a(this.f20903d);
+            dVar.a(this.f20536d);
         }
         j();
     }
@@ -343,11 +343,11 @@ public class OverlayView extends View {
         if (z10) {
             int paddingLeft = getPaddingLeft();
             int paddingTop = getPaddingTop();
-            this.f20905i = (getWidth() - getPaddingRight()) - paddingLeft;
-            this.f20906o = (getHeight() - getPaddingBottom()) - paddingTop;
+            this.f20538i = (getWidth() - getPaddingRight()) - paddingLeft;
+            this.f20539o = (getHeight() - getPaddingBottom()) - paddingTop;
             if (this.M) {
                 this.M = false;
-                setTargetAspectRatio(this.f20911t);
+                setTargetAspectRatio(this.f20544t);
             }
         }
     }
@@ -355,7 +355,7 @@ public class OverlayView extends View {
     @Override // android.view.View
     public boolean onTouchEvent(MotionEvent motionEvent) {
         boolean z10 = false;
-        if (!this.f20903d.isEmpty() && this.E != 0) {
+        if (!this.f20536d.isEmpty() && this.E != 0) {
             float x10 = motionEvent.getX();
             float y10 = motionEvent.getY();
             if ((motionEvent.getAction() & SetSpanOperation.SPAN_MAX_PRIORITY) == 0) {
@@ -387,7 +387,7 @@ public class OverlayView extends View {
                 this.H = -1;
                 d dVar = this.L;
                 if (dVar != null) {
-                    dVar.a(this.f20903d);
+                    dVar.a(this.f20536d);
                 }
             }
         }
@@ -395,7 +395,7 @@ public class OverlayView extends View {
     }
 
     public void setCircleDimmedLayer(boolean z10) {
-        this.f20915x = z10;
+        this.f20548x = z10;
     }
 
     public void setCropFrameColor(int i10) {
@@ -411,8 +411,8 @@ public class OverlayView extends View {
     }
 
     public void setCropGridColumnCount(int i10) {
-        this.f20910s = i10;
-        this.f20912u = null;
+        this.f20543s = i10;
+        this.f20545u = null;
     }
 
     public void setCropGridCornerColor(int i10) {
@@ -420,8 +420,8 @@ public class OverlayView extends View {
     }
 
     public void setCropGridRowCount(int i10) {
-        this.f20909r = i10;
-        this.f20912u = null;
+        this.f20542r = i10;
+        this.f20545u = null;
     }
 
     public void setCropGridStrokeWidth(int i10) {
@@ -429,7 +429,7 @@ public class OverlayView extends View {
     }
 
     public void setDimmedColor(int i10) {
-        this.f20916y = i10;
+        this.f20549y = i10;
     }
 
     @Deprecated
@@ -447,16 +447,16 @@ public class OverlayView extends View {
     }
 
     public void setShowCropFrame(boolean z10) {
-        this.f20913v = z10;
+        this.f20546v = z10;
     }
 
     public void setShowCropGrid(boolean z10) {
-        this.f20914w = z10;
+        this.f20547w = z10;
     }
 
     public void setTargetAspectRatio(float f10) {
-        this.f20911t = f10;
-        if (this.f20905i > 0) {
+        this.f20544t = f10;
+        if (this.f20538i > 0) {
             h();
             postInvalidate();
             return;
@@ -466,10 +466,10 @@ public class OverlayView extends View {
 
     public OverlayView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f20903d = new RectF();
-        this.f20904e = new RectF();
-        this.f20912u = null;
-        this.f20917z = new Path();
+        this.f20536d = new RectF();
+        this.f20537e = new RectF();
+        this.f20545u = null;
+        this.f20550z = new Path();
         this.A = new Paint(1);
         this.B = new Paint(1);
         this.C = new Paint(1);
@@ -478,9 +478,9 @@ public class OverlayView extends View {
         this.F = -1.0f;
         this.G = -1.0f;
         this.H = -1;
-        this.I = getResources().getDimensionPixelSize(nq.b.f42092d);
-        this.J = getResources().getDimensionPixelSize(nq.b.f42093e);
-        this.K = getResources().getDimensionPixelSize(nq.b.f42091c);
+        this.I = getResources().getDimensionPixelSize(oq.b.f44646d);
+        this.J = getResources().getDimensionPixelSize(oq.b.f44647e);
+        this.K = getResources().getDimensionPixelSize(oq.b.f44645c);
         d();
     }
 }

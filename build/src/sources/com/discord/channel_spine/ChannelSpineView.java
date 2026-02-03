@@ -10,9 +10,9 @@ import android.view.View;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
-import ir.p;
 import java.util.ArrayList;
 import java.util.List;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
 import kotlin.enums.EnumEntries;
@@ -56,7 +56,7 @@ public final class ChannelSpineView extends View {
         static {
             SpineDirection[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
         }
 
         private SpineDirection(String str, int i10, float f10) {

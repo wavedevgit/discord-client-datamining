@@ -3,13 +3,13 @@ package j$.time.temporal;
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f31657a = h.QUARTER_OF_YEAR;
+    public static final h f31395a = h.QUARTER_OF_YEAR;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final h f31658b = h.WEEK_OF_WEEK_BASED_YEAR;
+    public static final h f31396b = h.WEEK_OF_WEEK_BASED_YEAR;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final h f31659c = h.WEEK_BASED_YEAR;
+    public static final h f31397c = h.WEEK_BASED_YEAR;
 
     static {
         i iVar = i.WEEK_BASED_YEARS;

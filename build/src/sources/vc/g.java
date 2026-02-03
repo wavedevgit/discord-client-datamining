@@ -9,10 +9,10 @@ import ne.y;
 final class g implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Format f50926a;
+    public final Format f51050a;
 
     public g(Format format) {
-        this.f50926a = format;
+        this.f51050a = format;
     }
 
     private static String a(int i10) {

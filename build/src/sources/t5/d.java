@@ -36,7 +36,7 @@ public class d extends b {
         if (aVar != null && (bitmap = (Bitmap) aVar.h()) != null) {
             return bitmap;
         }
-        Bitmap H = this.f49258p.H(this.f49259q.n());
+        Bitmap H = this.f49530p.H(this.f49531q.n());
         if (H != null) {
             return H;
         }
@@ -71,7 +71,7 @@ public class d extends b {
         if (this.G != null) {
             float e10 = j.e();
             rectF.set(0.0f, 0.0f, this.G.f() * e10, this.G.d() * e10);
-            this.f49257o.mapRect(rectF);
+            this.f49529o.mapRect(rectF);
         }
     }
 
@@ -88,7 +88,7 @@ public class d extends b {
             canvas.save();
             canvas.concat(matrix);
             this.E.set(0, 0, P.getWidth(), P.getHeight());
-            if (this.f49258p.R()) {
+            if (this.f49530p.R()) {
                 this.F.set(0, 0, (int) (this.G.f() * e10), (int) (this.G.d() * e10));
             } else {
                 this.F.set(0, 0, (int) (P.getWidth() * e10), (int) (P.getHeight() * e10));

@@ -6,35 +6,35 @@ import androidx.recyclerview.widget.RecyclerView;
 class k {
 
     /* renamed from: b  reason: collision with root package name */
-    int f5022b;
+    int f5066b;
 
     /* renamed from: c  reason: collision with root package name */
-    int f5023c;
+    int f5067c;
 
     /* renamed from: d  reason: collision with root package name */
-    int f5024d;
+    int f5068d;
 
     /* renamed from: e  reason: collision with root package name */
-    int f5025e;
+    int f5069e;
 
     /* renamed from: h  reason: collision with root package name */
-    boolean f5028h;
+    boolean f5072h;
 
     /* renamed from: i  reason: collision with root package name */
-    boolean f5029i;
+    boolean f5073i;
 
     /* renamed from: a  reason: collision with root package name */
-    boolean f5021a = true;
+    boolean f5065a = true;
 
     /* renamed from: f  reason: collision with root package name */
-    int f5026f = 0;
+    int f5070f = 0;
 
     /* renamed from: g  reason: collision with root package name */
-    int f5027g = 0;
+    int f5071g = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean a(RecyclerView.State state) {
-        int i10 = this.f5023c;
+        int i10 = this.f5067c;
         if (i10 >= 0 && i10 < state.b()) {
             return true;
         }
@@ -43,12 +43,12 @@ class k {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public View b(RecyclerView.Recycler recycler) {
-        View o10 = recycler.o(this.f5023c);
-        this.f5023c += this.f5024d;
+        View o10 = recycler.o(this.f5067c);
+        this.f5067c += this.f5068d;
         return o10;
     }
 
     public String toString() {
-        return "LayoutState{mAvailable=" + this.f5022b + ", mCurrentPosition=" + this.f5023c + ", mItemDirection=" + this.f5024d + ", mLayoutDirection=" + this.f5025e + ", mStartLine=" + this.f5026f + ", mEndLine=" + this.f5027g + '}';
+        return "LayoutState{mAvailable=" + this.f5066b + ", mCurrentPosition=" + this.f5067c + ", mItemDirection=" + this.f5068d + ", mLayoutDirection=" + this.f5069e + ", mStartLine=" + this.f5070f + ", mEndLine=" + this.f5071g + '}';
     }
 }

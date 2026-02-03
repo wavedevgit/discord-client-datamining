@@ -7,13 +7,13 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class i extends AsyncTask {
 
     /* renamed from: a  reason: collision with root package name */
-    private g f18817a;
+    private g f18450a;
 
     /* renamed from: b  reason: collision with root package name */
-    private h f18818b;
+    private h f18451b;
 
     /* renamed from: c  reason: collision with root package name */
-    private AtomicBoolean f18819c = new AtomicBoolean(false);
+    private AtomicBoolean f18452c = new AtomicBoolean(false);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -25,11 +25,11 @@ public class i extends AsyncTask {
         public void run() {
             try {
                 i iVar = i.this;
-                iVar.g(iVar.f18817a, i.this.f18818b);
-                i.this.f18817a.f18810g.a(i.this.f18818b);
+                iVar.g(iVar.f18450a, i.this.f18451b);
+                i.this.f18450a.f18443g.a(i.this.f18451b);
             } catch (Exception e10) {
-                i.this.f18818b.f18815c = e10;
-                i.this.f18817a.f18810g.a(i.this.f18818b);
+                i.this.f18451b.f18448c = e10;
+                i.this.f18450a.f18443g.a(i.this.f18451b);
             }
         }
     }
@@ -55,10 +55,10 @@ public class i extends AsyncTask {
     @Override // android.os.AsyncTask
     /* renamed from: d */
     public h doInBackground(g... gVarArr) {
-        this.f18817a = gVarArr[0];
-        this.f18818b = new h();
+        this.f18450a = gVarArr[0];
+        this.f18451b = new h();
         new Thread(new a()).start();
-        return this.f18818b;
+        return this.f18451b;
     }
 
     protected String e(String str) {
@@ -77,6 +77,6 @@ public class i extends AsyncTask {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void f() {
-        this.f18819c.set(true);
+        this.f18452c.set(true);
     }
 }

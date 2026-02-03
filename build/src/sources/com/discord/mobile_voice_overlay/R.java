@@ -41,37 +41,37 @@ public final class R {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class id {
-        public static int category_name = 0x7f0a010b;
-        public static int channel_name = 0x7f0a0118;
-        public static int channel_select = 0x7f0a0119;
-        public static int close = 0x7f0a0139;
-        public static int container = 0x7f0a014a;
-        public static int dialog_card = 0x7f0a018a;
-        public static int disconnect_btn = 0x7f0a0196;
-        public static int empty_results = 0x7f0a01b7;
-        public static int guild_name = 0x7f0a0269;
-        public static int menu_bottom = 0x7f0a033c;
-        public static int menu_container = 0x7f0a033d;
-        public static int menu_top = 0x7f0a0340;
-        public static int menu_top_status_container = 0x7f0a0341;
-        public static int mute_toggle = 0x7f0a0378;
-        public static int overlay_bubble_iv = 0x7f0a03b3;
-        public static int overlay_channel_name = 0x7f0a03b5;
-        public static int overlay_channel_search = 0x7f0a03b6;
-        public static int overlay_guild_name = 0x7f0a03ba;
-        public static int overlay_header = 0x7f0a03bb;
-        public static int overlay_invite_link = 0x7f0a03c0;
-        public static int overlay_linked_anchor_view = 0x7f0a03c2;
-        public static int overlay_members_overflow_text = 0x7f0a03c3;
-        public static int overlay_members_recycler = 0x7f0a03c4;
-        public static int overlay_menu = 0x7f0a03c5;
-        public static int overlay_network_icon = 0x7f0a03c6;
-        public static int overlay_open_app = 0x7f0a03c7;
-        public static int overlay_switch_channels = 0x7f0a03c8;
-        public static int results_rv = 0x7f0a043f;
-        public static int trash_wrap_icon = 0x7f0a0570;
-        public static int trash_wrap_target_container = 0x7f0a0571;
-        public static int trash_wrap_target_zone = 0x7f0a0572;
+        public static int category_name = 0x7f0a010c;
+        public static int channel_name = 0x7f0a0119;
+        public static int channel_select = 0x7f0a011a;
+        public static int close = 0x7f0a013a;
+        public static int container = 0x7f0a014b;
+        public static int dialog_card = 0x7f0a018b;
+        public static int disconnect_btn = 0x7f0a0197;
+        public static int empty_results = 0x7f0a01b8;
+        public static int guild_name = 0x7f0a026a;
+        public static int menu_bottom = 0x7f0a033d;
+        public static int menu_container = 0x7f0a033e;
+        public static int menu_top = 0x7f0a0341;
+        public static int menu_top_status_container = 0x7f0a0342;
+        public static int mute_toggle = 0x7f0a0379;
+        public static int overlay_bubble_iv = 0x7f0a03b4;
+        public static int overlay_channel_name = 0x7f0a03b6;
+        public static int overlay_channel_search = 0x7f0a03b7;
+        public static int overlay_guild_name = 0x7f0a03bb;
+        public static int overlay_header = 0x7f0a03bc;
+        public static int overlay_invite_link = 0x7f0a03c1;
+        public static int overlay_linked_anchor_view = 0x7f0a03c3;
+        public static int overlay_members_overflow_text = 0x7f0a03c4;
+        public static int overlay_members_recycler = 0x7f0a03c5;
+        public static int overlay_menu = 0x7f0a03c6;
+        public static int overlay_network_icon = 0x7f0a03c7;
+        public static int overlay_open_app = 0x7f0a03c8;
+        public static int overlay_switch_channels = 0x7f0a03c9;
+        public static int results_rv = 0x7f0a0440;
+        public static int trash_wrap_icon = 0x7f0a0571;
+        public static int trash_wrap_target_container = 0x7f0a0572;
+        public static int trash_wrap_target_zone = 0x7f0a0573;
 
         private id() {
         }

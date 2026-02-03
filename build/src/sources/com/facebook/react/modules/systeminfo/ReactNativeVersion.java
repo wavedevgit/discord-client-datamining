@@ -1,7 +1,7 @@
 package com.facebook.react.modules.systeminfo;
 
-import ir.v;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.collections.o0;
 import org.jetbrains.annotations.NotNull;

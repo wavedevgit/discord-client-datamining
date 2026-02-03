@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/native/GiftModalEmojis.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56630: for (var _fun56630_ip = 0;;) switch (_fun56630_ip) {
+        _fun56736: for (var _fun56736_ip = 0;;) switch (_fun56736_ip) {
             case 0:
                 var1 = arg0;
                 var4 = var1.emojiName;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.randomizeSizing;
                 var3 = undefined;
                 if (!(var1 === var3)) {
-                    _fun56630_ip = 29;
-                    continue _fun56630
+                    _fun56736_ip = 29;
+                    continue _fun56736
                 }
             case 27:
                 var1 = false;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot5;
                 var1 = var2.map;
                 var0 = function(arg0, arg1) { // Environment: var0
-                    _fun56631: for (var _fun56631_ip = 0;;) switch (_fun56631_ip) {
+                    _fun56737: for (var _fun56737_ip = 0;;) switch (_fun56737_ip) {
                         case 0:
                             var3 = _closure1_slot2;
                             var4 = undefined;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var9 = {};
                             var11 = _closure2_slot1;
                             if (!var11) {
-                                _fun56631_ip = 240;
-                                continue _fun56631
+                                _fun56737_ip = 240;
+                                continue _fun56737
                             }
                         case 196:
                             var12 = var0.Math;
@@ -203,4 +203,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 3069, 5733, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 3099, 5764, 2]);

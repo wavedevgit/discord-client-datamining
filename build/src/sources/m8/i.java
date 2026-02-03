@@ -6,17 +6,17 @@ import android.os.Looper;
 public class i extends e {
 
     /* renamed from: e  reason: collision with root package name */
-    private static i f37862e;
+    private static i f37842e;
 
     private i() {
         super(new Handler(Looper.getMainLooper()));
     }
 
     public static i F() {
-        if (f37862e == null) {
-            f37862e = new i();
+        if (f37842e == null) {
+            f37842e = new i();
         }
-        return f37862e;
+        return f37842e;
     }
 
     @Override // m8.e, java.util.concurrent.Executor

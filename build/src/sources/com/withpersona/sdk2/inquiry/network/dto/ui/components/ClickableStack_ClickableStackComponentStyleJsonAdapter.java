@@ -105,9 +105,9 @@ public final class ClickableStack_ClickableStackComponentStyleJsonAdapter extend
         AttributeStyles.ClickableStackGapStyle clickableStackGapStyle = null;
         AttributeStyles.ClickableStackWidthStyle clickableStackWidthStyle = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -154,27 +154,27 @@ public final class ClickableStack_ClickableStackComponentStyleJsonAdapter extend
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (clickableStackComponentStyle != null) {
             writer.l();
-            writer.A0(ViewProps.BACKGROUND_COLOR);
+            writer.t0(ViewProps.BACKGROUND_COLOR);
             this.nullableClickableStackBackgroundColorStyleAdapter.toJson(writer, clickableStackComponentStyle.getBackgroundColor());
-            writer.A0(ViewProps.BORDER_WIDTH);
+            writer.t0(ViewProps.BORDER_WIDTH);
             this.nullableClickableStackBorderWidthStyleAdapter.toJson(writer, clickableStackComponentStyle.getBorderWidth());
-            writer.A0(ViewProps.BORDER_COLOR);
+            writer.t0(ViewProps.BORDER_COLOR);
             this.nullableClickableStackBorderColorStyleAdapter.toJson(writer, clickableStackComponentStyle.getBorderColor());
-            writer.A0("borderRadius");
+            writer.t0("borderRadius");
             this.nullableClickableStackBorderRadiusStyleAdapter.toJson(writer, clickableStackComponentStyle.getBorderRadius());
-            writer.A0(ViewProps.PADDING);
+            writer.t0(ViewProps.PADDING);
             this.nullableClickableStackPaddingStyleAdapter.toJson(writer, clickableStackComponentStyle.getPadding());
-            writer.A0(ViewProps.MARGIN);
+            writer.t0(ViewProps.MARGIN);
             this.nullableClickableStackMarginStyleAdapter.toJson(writer, clickableStackComponentStyle.getMargin());
-            writer.A0("axis");
+            writer.t0("axis");
             this.nullableClickableStackAxisStyleAdapter.toJson(writer, clickableStackComponentStyle.getAxis());
-            writer.A0("childSizes");
+            writer.t0("childSizes");
             this.nullableClickableStackChildSizesStyleAdapter.toJson(writer, clickableStackComponentStyle.getChildSizes());
-            writer.A0("alignment");
+            writer.t0("alignment");
             this.nullableClickableStackAlignmentStyleAdapter.toJson(writer, clickableStackComponentStyle.getAlignment());
-            writer.A0(ViewProps.GAP);
+            writer.t0(ViewProps.GAP);
             this.nullableClickableStackGapStyleAdapter.toJson(writer, clickableStackComponentStyle.getGap());
-            writer.A0("width");
+            writer.t0("width");
             this.nullableClickableStackWidthStyleAdapter.toJson(writer, clickableStackComponentStyle.getWidth());
             writer.E();
             return;

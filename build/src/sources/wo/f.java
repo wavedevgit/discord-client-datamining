@@ -1,27 +1,25 @@
 package wo;
 
-import java.util.Set;
+import uq.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class f implements tq.d {
+public final class f {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static final class a {
+    /* renamed from: a  reason: collision with root package name */
+    private final h f52867a;
 
-        /* renamed from: a  reason: collision with root package name */
-        static final f f52751a = new f();
+    public f(h hVar) {
+        this.f52867a = hVar;
     }
 
-    public static f a() {
-        return a.f52751a;
+    public static f a(h hVar) {
+        return new f(hVar);
     }
 
-    public static Set c() {
-        return (Set) tq.g.d(e.a());
+    public static e c(b bVar, String str) {
+        return new e(bVar, str);
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public Set get() {
-        return c();
+    public e b(String str) {
+        return c((b) this.f52867a.get(), str);
     }
 }

@@ -22,7 +22,7 @@ public final class ViewResizeMode {
     static {
         ViewResizeMode[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = pr.a.a($values);
+        $ENTRIES = qr.a.a($values);
     }
 
     private ViewResizeMode(String str, int i10, String str2) {

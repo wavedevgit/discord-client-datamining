@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22004: for (var _fun22004_ip = 0;;) switch (_fun22004_ip) {
+    _fun22012: for (var _fun22012_ip = 0;;) switch (_fun22012_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun22004_ip = 75;
-                continue _fun22004
+                _fun22012_ip = 75;
+                continue _fun22012
             }
         case 63:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun22004_ip = 84;
-                continue _fun22004
+                _fun22012_ip = 84;
+                continue _fun22012
             }
         case 75:
             var2 = {};
@@ -38,10 +38,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var5 = {
-                'full': "y 'm'. MMMM d 'd'., EEEE",
-                'long': "y 'm'. MMMM d 'd'.",
-                'medium': 'y-MM-dd',
-                'short': 'y-MM-dd'
+                'full': 'EEEE, d. MMMM y.',
+                'long': 'd. MMMM y.',
+                'medium': 'd. MMM y.',
+                'short': 'dd. MM. y.'
             };
             var4.formats = var5;
             var5 = 'full';
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var7 = {
-                'full': 'HH:mm:ss zzzz',
+                'full': 'HH:mm:ss (zzzz)',
                 'long': 'HH:mm:ss z',
                 'medium': 'HH:mm:ss',
                 'short': 'HH:mm'
@@ -63,8 +63,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var3.default;
             var3 = {};
             var6 = {
-                'full': '{{date}} {{time}}',
-                'long': '{{date}} {{time}}',
+                'full': "{{date}} 'u' {{time}}",
+                'long': "{{date}} 'u' {{time}}",
                 'medium': '{{date}} {{time}}',
                 'short': '{{date}} {{time}}'
             };

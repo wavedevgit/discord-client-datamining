@@ -2,7 +2,7 @@ package net.time4j;
 
 import java.util.Locale;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public enum z implements jt.n {
+public enum z implements kt.n {
     AM,
     PM;
 
@@ -17,16 +17,16 @@ public enum z implements jt.n {
     }
 
     public String a(Locale locale) {
-        return d(locale, kt.v.WIDE, kt.m.FORMAT);
+        return d(locale, lt.v.WIDE, lt.m.FORMAT);
     }
 
-    public String d(Locale locale, kt.v vVar, kt.m mVar) {
-        return kt.b.d(locale).h(vVar, mVar).f(this);
+    public String d(Locale locale, lt.v vVar, lt.m mVar) {
+        return lt.b.d(locale).h(vVar, mVar).f(this);
     }
 
-    @Override // jt.n
+    @Override // kt.n
     /* renamed from: f */
-    public boolean test(gt.g gVar) {
+    public boolean test(ht.g gVar) {
         int h10 = gVar.h();
         if (this == AM) {
             if (h10 < 12 || h10 == 24) {

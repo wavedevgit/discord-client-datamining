@@ -12,11 +12,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var1.default = var0;
     var3 = {
-        'lastWeek': "eeee 'trecută la' p",
-        'yesterday': "'ieri la' p",
-        'today': "'astăzi la' p",
-        'tomorrow': "'mâine la' p",
-        'nextWeek': "eeee 'viitoare la' p",
+        'lastWeek': "'Praėjusį' eeee p",
+        'yesterday': "'Vakar' p",
+        'today': "'Šiandien' p",
+        'tomorrow': "'Rytoj' p",
+        'nextWeek': 'eeee p',
         'other': 'P'
     };
     var _closure1_slot0 = var3;

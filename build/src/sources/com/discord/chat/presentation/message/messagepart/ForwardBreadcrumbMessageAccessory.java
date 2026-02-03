@@ -21,7 +21,7 @@ public final class ForwardBreadcrumbMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-Eqy5D80$default  reason: not valid java name */
-    public static /* synthetic */ ForwardBreadcrumbMessageAccessory m581copyEqy5D80$default(ForwardBreadcrumbMessageAccessory forwardBreadcrumbMessageAccessory, String str, long j10, ForwardInfo forwardInfo, int i10, Object obj) {
+    public static /* synthetic */ ForwardBreadcrumbMessageAccessory m583copyEqy5D80$default(ForwardBreadcrumbMessageAccessory forwardBreadcrumbMessageAccessory, String str, long j10, ForwardInfo forwardInfo, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = forwardBreadcrumbMessageAccessory.messageId;
         }
@@ -31,17 +31,17 @@ public final class ForwardBreadcrumbMessageAccessory extends MessageAccessory {
         if ((i10 & 4) != 0) {
             forwardInfo = forwardBreadcrumbMessageAccessory.forwardInfo;
         }
-        return forwardBreadcrumbMessageAccessory.m584copyEqy5D80(str, j10, forwardInfo);
+        return forwardBreadcrumbMessageAccessory.m586copyEqy5D80(str, j10, forwardInfo);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m582component13Eiw7ao() {
+    public final String m584component13Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    public final long m583component2o4g7jtM() {
+    public final long m585component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -52,7 +52,7 @@ public final class ForwardBreadcrumbMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-Eqy5D80  reason: not valid java name */
-    public final ForwardBreadcrumbMessageAccessory m584copyEqy5D80(@NotNull String messageId, long j10, @NotNull ForwardInfo forwardInfo) {
+    public final ForwardBreadcrumbMessageAccessory m586copyEqy5D80(@NotNull String messageId, long j10, @NotNull ForwardInfo forwardInfo) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(forwardInfo, "forwardInfo");
         return new ForwardBreadcrumbMessageAccessory(messageId, j10, forwardInfo, null);
@@ -64,13 +64,13 @@ public final class ForwardBreadcrumbMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof ForwardBreadcrumbMessageAccessory) {
             ForwardBreadcrumbMessageAccessory forwardBreadcrumbMessageAccessory = (ForwardBreadcrumbMessageAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, forwardBreadcrumbMessageAccessory.messageId) && ChannelId.m1062equalsimpl0(this.channelId, forwardBreadcrumbMessageAccessory.channelId) && Intrinsics.areEqual(this.forwardInfo, forwardBreadcrumbMessageAccessory.forwardInfo);
+            return MessageId.m1090equalsimpl0(this.messageId, forwardBreadcrumbMessageAccessory.messageId) && ChannelId.m1064equalsimpl0(this.channelId, forwardBreadcrumbMessageAccessory.channelId) && Intrinsics.areEqual(this.forwardInfo, forwardBreadcrumbMessageAccessory.forwardInfo);
         }
         return false;
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m585getChannelIdo4g7jtM() {
+    public final long m587getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -82,20 +82,20 @@ public final class ForwardBreadcrumbMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m1089hashCodeimpl(this.messageId) * 31) + ChannelId.m1063hashCodeimpl(this.channelId)) * 31) + this.forwardInfo.hashCode();
+        return (((MessageId.m1091hashCodeimpl(this.messageId) * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31) + this.forwardInfo.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
-        String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
         ForwardInfo forwardInfo = this.forwardInfo;
-        return "ForwardBreadcrumbMessageAccessory(messageId=" + m1091toStringimpl + ", channelId=" + m1065toStringimpl + ", forwardInfo=" + forwardInfo + ")";
+        return "ForwardBreadcrumbMessageAccessory(messageId=" + m1093toStringimpl + ", channelId=" + m1067toStringimpl + ", forwardInfo=" + forwardInfo + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

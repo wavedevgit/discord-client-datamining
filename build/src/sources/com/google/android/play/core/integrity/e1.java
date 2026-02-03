@@ -6,7 +6,7 @@ import android.content.Context;
 public final class e1 implements t {
 
     /* renamed from: a  reason: collision with root package name */
-    private Context f17170a;
+    private Context f16799a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ e1(wh.j jVar) {
@@ -14,13 +14,13 @@ public final class e1 implements t {
 
     public final e1 a(Context context) {
         context.getClass();
-        this.f17170a = context;
+        this.f16799a = context;
         return this;
     }
 
     @Override // com.google.android.play.core.integrity.t
     public final u b() {
-        gi.c0.a(this.f17170a, Context.class);
-        return new f1(this.f17170a, null);
+        gi.c0.a(this.f16799a, Context.class);
+        return new f1(this.f16799a, null);
     }
 }

@@ -27,18 +27,18 @@ abstract class e {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static List b(e4 e4Var) {
-        double sin = Math.sin(Math.toRadians(e4Var.f45227p));
-        double cos = Math.cos(Math.toRadians(e4Var.f45227p));
-        double d10 = e4Var.f45225i;
-        Point point = new Point((int) (e4Var.f45223d + (d10 * cos)), (int) (e4Var.f45224e + (d10 * sin)));
-        int i10 = e4Var.f45226o;
+        double sin = Math.sin(Math.toRadians(e4Var.f45301p));
+        double cos = Math.cos(Math.toRadians(e4Var.f45301p));
+        double d10 = e4Var.f45299i;
+        Point point = new Point((int) (e4Var.f45297d + (d10 * cos)), (int) (e4Var.f45298e + (d10 * sin)));
+        int i10 = e4Var.f45300o;
         double d11 = i10 * sin;
         Point point2 = r0[0];
         int i11 = point2.x;
         Point point3 = r0[2];
         int i12 = point3.x;
         Point point4 = r0[1];
-        Point[] pointArr = {new Point(e4Var.f45223d, e4Var.f45224e), point, new Point((int) (point.x - d11), (int) (pointArr[1].y + (i10 * cos))), new Point(i11 + (i12 - point4.x), point2.y + (point3.y - point4.y))};
+        Point[] pointArr = {new Point(e4Var.f45297d, e4Var.f45298e), point, new Point((int) (point.x - d11), (int) (pointArr[1].y + (i10 * cos))), new Point(i11 + (i12 - point4.x), point2.y + (point3.y - point4.y))};
         return Arrays.asList(pointArr);
     }
 }

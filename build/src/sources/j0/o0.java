@@ -20,71 +20,71 @@ public final class o0 implements l1 {
     private Matrix C;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Surface f31769e;
+    private final Surface f31507e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f31770i;
+    private final int f31508i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f31771o;
+    private final int f31509o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Size f31772p;
+    private final Size f31510p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final l1.a f31773q;
+    private final l1.a f31511q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final l1.a f31774r;
+    private final l1.a f31512r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final float[] f31775s;
+    private final float[] f31513s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final float[] f31776t;
+    private final float[] f31514t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final float[] f31777u;
+    private final float[] f31515u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final float[] f31778v;
+    private final float[] f31516v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Consumer f31779w;
+    private Consumer f31517w;
 
     /* renamed from: x  reason: collision with root package name */
-    private Executor f31780x;
+    private Executor f31518x;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f31768d = new Object();
+    private final Object f31506d = new Object();
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f31781y = false;
+    private boolean f31519y = false;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f31782z = false;
+    private boolean f31520z = false;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o0(Surface surface, int i10, int i11, Size size, l1.a aVar, l1.a aVar2, Matrix matrix) {
         float[] fArr = new float[16];
-        this.f31775s = fArr;
+        this.f31513s = fArr;
         float[] fArr2 = new float[16];
-        this.f31776t = fArr2;
+        this.f31514t = fArr2;
         float[] fArr3 = new float[16];
-        this.f31777u = fArr3;
+        this.f31515u = fArr3;
         float[] fArr4 = new float[16];
-        this.f31778v = fArr4;
-        this.f31769e = surface;
-        this.f31770i = i10;
-        this.f31771o = i11;
-        this.f31772p = size;
-        this.f31773q = aVar;
-        this.f31774r = aVar2;
+        this.f31516v = fArr4;
+        this.f31507e = surface;
+        this.f31508i = i10;
+        this.f31509o = i11;
+        this.f31510p = size;
+        this.f31511q = aVar;
+        this.f31512r = aVar2;
         this.C = matrix;
         l(fArr, fArr3, aVar);
         l(fArr2, fArr4, aVar2);
-        this.A = androidx.concurrent.futures.c.a(new c.InterfaceC0026c() { // from class: j0.m0
-            @Override // androidx.concurrent.futures.c.InterfaceC0026c
+        this.A = androidx.concurrent.futures.c.a(new c.InterfaceC0030c() { // from class: j0.m0
+            @Override // androidx.concurrent.futures.c.InterfaceC0030c
             public final Object a(c.a aVar3) {
                 return o0.a(o0.this, aVar3);
             }
@@ -140,17 +140,17 @@ public final class o0 implements l1 {
         Executor executor;
         Consumer consumer;
         final AtomicReference atomicReference = new AtomicReference();
-        synchronized (this.f31768d) {
+        synchronized (this.f31506d) {
             try {
-                if (this.f31780x != null && (consumer = this.f31779w) != null) {
-                    if (!this.f31782z) {
+                if (this.f31518x != null && (consumer = this.f31517w) != null) {
+                    if (!this.f31520z) {
                         atomicReference.set(consumer);
-                        executor = this.f31780x;
-                        this.f31781y = false;
+                        executor = this.f31518x;
+                        this.f31519y = false;
                     }
                     executor = null;
                 }
-                this.f31781y = true;
+                this.f31519y = true;
                 executor = null;
             } catch (Throwable th2) {
                 throw th2;
@@ -174,19 +174,19 @@ public final class o0 implements l1 {
     public void M(float[] fArr, float[] fArr2, boolean z10) {
         float[] fArr3;
         if (z10) {
-            fArr3 = this.f31775s;
+            fArr3 = this.f31513s;
         } else {
-            fArr3 = this.f31776t;
+            fArr3 = this.f31514t;
         }
         android.opengl.Matrix.multiplyMM(fArr, 0, fArr2, 0, fArr3, 0);
     }
 
     @Override // x.l1, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        synchronized (this.f31768d) {
+        synchronized (this.f31506d) {
             try {
-                if (!this.f31782z) {
-                    this.f31782z = true;
+                if (!this.f31520z) {
+                    this.f31520z = true;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -197,31 +197,31 @@ public final class o0 implements l1 {
 
     @Override // x.l1
     public int getFormat() {
-        return this.f31771o;
+        return this.f31509o;
     }
 
     @Override // x.l1
     public Size getSize() {
-        return this.f31772p;
+        return this.f31510p;
     }
 
     @Override // x.l1
-    public void h1(float[] fArr, float[] fArr2) {
+    public void i1(float[] fArr, float[] fArr2) {
         M(fArr, fArr2, true);
     }
 
     @Override // x.l1
-    public Surface i1(Executor executor, Consumer consumer) {
+    public Surface j1(Executor executor, Consumer consumer) {
         boolean z10;
-        synchronized (this.f31768d) {
-            this.f31780x = executor;
-            this.f31779w = consumer;
-            z10 = this.f31781y;
+        synchronized (this.f31506d) {
+            this.f31518x = executor;
+            this.f31517w = consumer;
+            z10 = this.f31519y;
         }
         if (z10) {
             B();
         }
-        return this.f31769e;
+        return this.f31507e;
     }
 
     public ListenableFuture x() {

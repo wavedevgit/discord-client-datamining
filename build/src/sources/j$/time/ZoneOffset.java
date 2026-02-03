@@ -11,27 +11,27 @@ import java.util.concurrent.ConcurrentMap;
 public final class ZoneOffset extends k implements TemporalAccessor, j$.time.temporal.l, Comparable<ZoneOffset>, Serializable {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f31542a;
+    public final int f31280a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final transient String f31543b;
+    public final transient String f31281b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final ConcurrentMap f31538c = new ConcurrentHashMap(16, 0.75f, 4);
+    public static final ConcurrentMap f31276c = new ConcurrentHashMap(16, 0.75f, 4);
 
     /* renamed from: d  reason: collision with root package name */
-    public static final ConcurrentMap f31539d = new ConcurrentHashMap(16, 0.75f, 4);
+    public static final ConcurrentMap f31277d = new ConcurrentHashMap(16, 0.75f, 4);
     public static final ZoneOffset UTC = ofTotalSeconds(0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final ZoneOffset f31540e = ofTotalSeconds(-64800);
+    public static final ZoneOffset f31278e = ofTotalSeconds(-64800);
 
     /* renamed from: f  reason: collision with root package name */
-    public static final ZoneOffset f31541f = ofTotalSeconds(64800);
+    public static final ZoneOffset f31279f = ofTotalSeconds(64800);
 
     @Override // java.lang.Comparable
     public final int compareTo(ZoneOffset zoneOffset) {
-        return zoneOffset.f31542a - this.f31542a;
+        return zoneOffset.f31280a - this.f31280a;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:28:0x0091 A[ADDED_TO_REGION] */
@@ -45,7 +45,7 @@ public final class ZoneOffset extends k implements TemporalAccessor, j$.time.tem
         /*
             java.lang.String r0 = "offsetId"
             java.util.Objects.requireNonNull(r7, r0)
-            java.util.concurrent.ConcurrentMap r0 = j$.time.ZoneOffset.f31539d
+            java.util.concurrent.ConcurrentMap r0 = j$.time.ZoneOffset.f31277d
             java.util.concurrent.ConcurrentHashMap r0 = (java.util.concurrent.ConcurrentHashMap) r0
             java.lang.Object r0 = r0.get(r7)
             j$.time.ZoneOffset r0 = (j$.time.ZoneOffset) r0
@@ -157,7 +157,7 @@ public final class ZoneOffset extends k implements TemporalAccessor, j$.time.tem
 
     public static ZoneOffset from(TemporalAccessor temporalAccessor) {
         Objects.requireNonNull(temporalAccessor, "temporal");
-        ZoneOffset zoneOffset = (ZoneOffset) temporalAccessor.a(o.f31664d);
+        ZoneOffset zoneOffset = (ZoneOffset) temporalAccessor.a(o.f31402d);
         if (zoneOffset != null) {
             return zoneOffset;
         }
@@ -196,12 +196,12 @@ public final class ZoneOffset extends k implements TemporalAccessor, j$.time.tem
         }
         if (i10 % 900 == 0) {
             Integer valueOf = Integer.valueOf(i10);
-            ConcurrentMap concurrentMap = f31538c;
+            ConcurrentMap concurrentMap = f31276c;
             ZoneOffset zoneOffset = (ZoneOffset) ((ConcurrentHashMap) concurrentMap).get(valueOf);
             if (zoneOffset == null) {
                 ((ConcurrentHashMap) concurrentMap).putIfAbsent(valueOf, new ZoneOffset(i10));
                 ZoneOffset zoneOffset2 = (ZoneOffset) ((ConcurrentHashMap) concurrentMap).get(valueOf);
-                ((ConcurrentHashMap) f31539d).putIfAbsent(zoneOffset2.f31543b, zoneOffset2);
+                ((ConcurrentHashMap) f31277d).putIfAbsent(zoneOffset2.f31281b, zoneOffset2);
                 return zoneOffset2;
             }
             return zoneOffset;
@@ -211,7 +211,7 @@ public final class ZoneOffset extends k implements TemporalAccessor, j$.time.tem
 
     public ZoneOffset(int i10) {
         String sb2;
-        this.f31542a = i10;
+        this.f31280a = i10;
         if (i10 == 0) {
             sb2 = "Z";
         } else {
@@ -231,16 +231,16 @@ public final class ZoneOffset extends k implements TemporalAccessor, j$.time.tem
             }
             sb2 = sb3.toString();
         }
-        this.f31543b = sb2;
+        this.f31281b = sb2;
     }
 
     public int getTotalSeconds() {
-        return this.f31542a;
+        return this.f31280a;
     }
 
     @Override // j$.time.k
     public final String r() {
-        return this.f31543b;
+        return this.f31281b;
     }
 
     @Override // j$.time.temporal.TemporalAccessor
@@ -251,7 +251,7 @@ public final class ZoneOffset extends k implements TemporalAccessor, j$.time.tem
     @Override // j$.time.temporal.TemporalAccessor
     public final int g(j$.time.temporal.n nVar) {
         if (nVar == j$.time.temporal.a.OFFSET_SECONDS) {
-            return this.f31542a;
+            return this.f31280a;
         }
         if (nVar != null) {
             throw new DateTimeException("Unsupported field: " + nVar);
@@ -262,7 +262,7 @@ public final class ZoneOffset extends k implements TemporalAccessor, j$.time.tem
     @Override // j$.time.temporal.TemporalAccessor
     public final long m(j$.time.temporal.n nVar) {
         if (nVar == j$.time.temporal.a.OFFSET_SECONDS) {
-            return this.f31542a;
+            return this.f31280a;
         }
         if (nVar instanceof j$.time.temporal.a) {
             throw new DateTimeException("Unsupported field: " + nVar);
@@ -272,12 +272,12 @@ public final class ZoneOffset extends k implements TemporalAccessor, j$.time.tem
 
     @Override // j$.time.temporal.TemporalAccessor
     public final Object a(TemporalQuery temporalQuery) {
-        return (temporalQuery == o.f31664d || temporalQuery == o.f31665e) ? this : super.a(temporalQuery);
+        return (temporalQuery == o.f31402d || temporalQuery == o.f31403e) ? this : super.a(temporalQuery);
     }
 
     @Override // j$.time.temporal.l
     public final j$.time.temporal.k d(j$.time.temporal.k kVar) {
-        return kVar.b(this.f31542a, j$.time.temporal.a.OFFSET_SECONDS);
+        return kVar.b(this.f31280a, j$.time.temporal.a.OFFSET_SECONDS);
     }
 
     @Override // j$.time.k
@@ -285,16 +285,16 @@ public final class ZoneOffset extends k implements TemporalAccessor, j$.time.tem
         if (this == obj) {
             return true;
         }
-        return (obj instanceof ZoneOffset) && this.f31542a == ((ZoneOffset) obj).f31542a;
+        return (obj instanceof ZoneOffset) && this.f31280a == ((ZoneOffset) obj).f31280a;
     }
 
     @Override // j$.time.k
     public int hashCode() {
-        return this.f31542a;
+        return this.f31280a;
     }
 
     @Override // j$.time.k
     public String toString() {
-        return this.f31543b;
+        return this.f31281b;
     }
 }

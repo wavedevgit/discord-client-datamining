@@ -6,7 +6,7 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.devsupport.StackTraceHelper;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -24,14 +24,14 @@ public final class TapStickerData implements ReactEvent {
     }
 
     /* renamed from: copy-Ayv7vGE$default  reason: not valid java name */
-    public static /* synthetic */ TapStickerData m842copyAyv7vGE$default(TapStickerData tapStickerData, Sticker sticker, String str, int i10, Object obj) {
+    public static /* synthetic */ TapStickerData m844copyAyv7vGE$default(TapStickerData tapStickerData, Sticker sticker, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             sticker = tapStickerData.sticker;
         }
         if ((i10 & 2) != 0) {
             str = tapStickerData.messageId;
         }
-        return tapStickerData.m844copyAyv7vGE(sticker, str);
+        return tapStickerData.m846copyAyv7vGE(sticker, str);
     }
 
     @NotNull
@@ -41,13 +41,13 @@ public final class TapStickerData implements ReactEvent {
 
     @NotNull
     /* renamed from: component2-3Eiw7ao  reason: not valid java name */
-    public final String m843component23Eiw7ao() {
+    public final String m845component23Eiw7ao() {
         return this.messageId;
     }
 
     @NotNull
     /* renamed from: copy-Ayv7vGE  reason: not valid java name */
-    public final TapStickerData m844copyAyv7vGE(@NotNull Sticker sticker, @NotNull String messageId) {
+    public final TapStickerData m846copyAyv7vGE(@NotNull Sticker sticker, @NotNull String messageId) {
         Intrinsics.checkNotNullParameter(sticker, "sticker");
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         return new TapStickerData(sticker, messageId, null);
@@ -59,14 +59,14 @@ public final class TapStickerData implements ReactEvent {
         }
         if (obj instanceof TapStickerData) {
             TapStickerData tapStickerData = (TapStickerData) obj;
-            return Intrinsics.areEqual(this.sticker, tapStickerData.sticker) && MessageId.m1088equalsimpl0(this.messageId, tapStickerData.messageId);
+            return Intrinsics.areEqual(this.sticker, tapStickerData.sticker) && MessageId.m1090equalsimpl0(this.messageId, tapStickerData.messageId);
         }
         return false;
     }
 
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m845getMessageId3Eiw7ao() {
+    public final String m847getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -76,7 +76,7 @@ public final class TapStickerData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (this.sticker.hashCode() * 31) + MessageId.m1089hashCodeimpl(this.messageId);
+        return (this.sticker.hashCode() * 31) + MessageId.m1091hashCodeimpl(this.messageId);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -88,8 +88,8 @@ public final class TapStickerData implements ReactEvent {
     @NotNull
     public String toString() {
         Sticker sticker = this.sticker;
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
-        return "TapStickerData(sticker=" + sticker + ", messageId=" + m1091toStringimpl + ")";
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        return "TapStickerData(sticker=" + sticker + ", messageId=" + m1093toStringimpl + ")";
     }
 
     private TapStickerData(Sticker sticker, String messageId) {

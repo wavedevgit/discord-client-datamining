@@ -20,9 +20,9 @@ import com.discord.chat.presentation.message.viewholder.mosaicitem.attachments.M
 import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 import com.facebook.react.modules.dialog.AlertFragment;
 import com.facebook.react.uimanager.ViewProps;
-import ir.p;
 import java.util.ArrayList;
 import java.util.List;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -114,13 +114,13 @@ public final class MediaGalleryDisplayComponentAdapter extends RecyclerView.Adap
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$2(MediaGalleryDisplayComponentAdapter mediaGalleryDisplayComponentAdapter, MediaGalleryItem mediaGalleryItem) {
         mediaGalleryDisplayComponentAdapter.onItemSpoilerClicked.invoke(mediaGalleryItem);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$3(MediaGalleryDisplayComponentAdapter mediaGalleryDisplayComponentAdapter, boolean z10) {
         mediaGalleryDisplayComponentAdapter.onItemObscureToggle.invoke(Boolean.valueOf(z10));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -132,7 +132,7 @@ public final class MediaGalleryDisplayComponentAdapter extends RecyclerView.Adap
             description = "";
         }
         function1.invoke(description);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -153,13 +153,13 @@ public final class MediaGalleryDisplayComponentAdapter extends RecyclerView.Adap
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$7(MediaGalleryDisplayComponentAdapter mediaGalleryDisplayComponentAdapter, MediaGalleryItem mediaGalleryItem) {
         mediaGalleryDisplayComponentAdapter.onItemSpoilerClicked.invoke(mediaGalleryItem);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$8(MediaGalleryDisplayComponentAdapter mediaGalleryDisplayComponentAdapter, boolean z10) {
         mediaGalleryDisplayComponentAdapter.onItemObscureToggle.invoke(Boolean.valueOf(z10));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -171,7 +171,7 @@ public final class MediaGalleryDisplayComponentAdapter extends RecyclerView.Adap
             description = "";
         }
         function1.invoke(description);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     public final MediaGalleryDisplayComponent getComponent() {

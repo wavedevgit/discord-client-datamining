@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun21971: for (var _fun21971_ip = 0;;) switch (_fun21971_ip) {
+    _fun21984: for (var _fun21984_ip = 0;;) switch (_fun21984_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun21971_ip = 75;
-                continue _fun21971
+                _fun21984_ip = 75;
+                continue _fun21984
             }
         case 63:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun21971_ip = 84;
-                continue _fun21971
+                _fun21984_ip = 84;
+                continue _fun21984
             }
         case 75:
             var2 = {};
@@ -38,10 +38,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var5 = {
-                'full': 'y年M月d日EEEE',
-                'long': 'y年M月d日',
-                'medium': 'y/MM/dd',
-                'short': 'y/MM/dd'
+                'full': 'eeee d. MMMM y',
+                'long': 'd. MMMM y',
+                'medium': 'd. MMM y',
+                'short': 'd.M.y'
             };
             var4.formats = var5;
             var5 = 'full';
@@ -51,10 +51,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var7 = {
-                'full': 'H時mm分ss秒 zzzz',
-                'long': 'H:mm:ss z',
-                'medium': 'H:mm:ss',
-                'short': 'H:mm'
+                'full': 'HH.mm.ss zzzz',
+                'long': 'HH.mm.ss z',
+                'medium': 'HH.mm.ss',
+                'short': 'HH.mm'
             };
             var4.formats = var7;
             var4.defaultWidth = var5;
@@ -63,8 +63,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var3.default;
             var3 = {};
             var6 = {
-                'full': '{{date}} {{time}}',
-                'long': '{{date}} {{time}}',
+                'full': "{{date}} 'klo' {{time}}",
+                'long': "{{date}} 'klo' {{time}}",
                 'medium': '{{date}} {{time}}',
                 'short': '{{date}} {{time}}'
             };

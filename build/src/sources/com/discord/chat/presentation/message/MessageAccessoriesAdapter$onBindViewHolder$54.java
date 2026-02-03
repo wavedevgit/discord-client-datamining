@@ -17,13 +17,13 @@ import kotlin.jvm.internal.Intrinsics;
 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-        m514invoke1xi1bu0(((MessageId) obj).m1093unboximpl());
-        return Unit.f33298a;
+        m516invoke1xi1bu0(((MessageId) obj).m1095unboximpl());
+        return Unit.f33074a;
     }
 
     /* renamed from: invoke-1xi1bu0  reason: not valid java name */
-    public final void m514invoke1xi1bu0(String p02) {
+    public final void m516invoke1xi1bu0(String p02) {
         Intrinsics.checkNotNullParameter(p02, "p0");
-        ((ChatEventHandler) this.receiver).mo466onTapJoinRichPresence1xi1bu0(p02);
+        ((ChatEventHandler) this.receiver).mo468onTapJoinRichPresence1xi1bu0(p02);
     }
 }

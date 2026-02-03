@@ -9,12 +9,12 @@ import android.database.sqlite.SQLiteStatement;
 import com.discord.crash_reporting.TelemetryRingTypes;
 import com.discord.logging.Log;
 import com.facebook.react.devsupport.StackTraceHelper;
-import ir.p;
-import ir.v;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import jr.p;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Result;
@@ -130,7 +130,7 @@ public final class TelemetryRingSqliteStore {
             Cursor rawQuery = sQLiteDatabase.rawQuery(str, null);
             try {
                 rawQuery.moveToFirst();
-                tr.c.a(rawQuery, null);
+                ur.c.a(rawQuery, null);
             } finally {
             }
         }
@@ -147,7 +147,7 @@ public final class TelemetryRingSqliteStore {
             db2.beginTransaction();
             try {
                 TelemetryRingSqliteStore.Companion.createSchema(db2, this.capacity);
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
                 db2.setTransactionSuccessful();
             } finally {
                 db2.endTransaction();
@@ -579,14 +579,14 @@ public final class TelemetryRingSqliteStore {
         try {
             if (!query.moveToFirst()) {
                 Companion.createSchema(sQLiteDatabase, this.capacity);
-                tr.c.a(query, null);
+                ur.c.a(query, null);
                 return;
             }
             if (query.getInt(0) != this.capacity) {
                 resetSchema(sQLiteDatabase);
             }
-            Unit unit = Unit.f33298a;
-            tr.c.a(query, null);
+            Unit unit = Unit.f33074a;
+            ur.c.a(query, null);
         } finally {
         }
     }
@@ -627,7 +627,7 @@ public final class TelemetryRingSqliteStore {
         Intrinsics.checkNotNullExpressionValue(query, "query(...)");
         try {
             boolean moveToFirst = query.moveToFirst();
-            tr.c.a(query, null);
+            ur.c.a(query, null);
             return moveToFirst;
         } finally {
         }
@@ -648,8 +648,8 @@ public final class TelemetryRingSqliteStore {
             } finally {
             }
         }
-        Unit unit = Unit.f33298a;
-        tr.c.a(query, null);
+        Unit unit = Unit.f33074a;
+        ur.c.a(query, null);
     }
 
     private final void loadState() {
@@ -665,7 +665,7 @@ public final class TelemetryRingSqliteStore {
             this.totalBytes = readMeta.getTotalBytes();
             this.nextSeq = readMeta.getNextSeq();
             loadSlots(writableDatabase);
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
             writableDatabase.setTransactionSuccessful();
         } finally {
             writableDatabase.endTransaction();
@@ -678,17 +678,17 @@ public final class TelemetryRingSqliteStore {
         try {
             if (!query.moveToFirst()) {
                 MetaState metaState = new MetaState(-1, 0, 0, 0L, 1L);
-                tr.c.a(query, null);
+                ur.c.a(query, null);
                 return metaState;
             }
             MetaState metaState2 = new MetaState(query.getInt(0), query.getInt(1), query.getInt(2), query.getLong(3), query.getLong(4));
-            tr.c.a(query, null);
+            ur.c.a(query, null);
             return metaState2;
         } catch (Throwable th2) {
             try {
                 throw th2;
             } catch (Throwable th3) {
-                tr.c.a(query, th2);
+                ur.c.a(query, th2);
                 throw th3;
             }
         }
@@ -705,7 +705,7 @@ public final class TelemetryRingSqliteStore {
         Intrinsics.checkNotNullExpressionValue(rawQuery, "rawQuery(...)");
         try {
             boolean moveToFirst = rawQuery.moveToFirst();
-            tr.c.a(rawQuery, null);
+            ur.c.a(rawQuery, null);
             return moveToFirst;
         } finally {
         }
@@ -730,13 +730,13 @@ public final class TelemetryRingSqliteStore {
         if (!entries.isEmpty()) {
             SQLiteDatabase writableDatabase = this.dbHelper.getWritableDatabase();
             try {
-                Result.a aVar = Result.f33295e;
+                Result.a aVar = Result.f33071e;
                 Intrinsics.checkNotNull(writableDatabase);
                 writableDatabase.beginTransaction();
                 compileStatement = writableDatabase.compileStatement("UPDATE telemetry_ring_slots SET seq=?, channel_mask=?, payload_json=?, payload_size=? WHERE slot_id=?");
                 compileStatement2 = writableDatabase.compileStatement("UPDATE telemetry_ring_slots SET seq=0, channel_mask=0, payload_json=NULL, payload_size=0 WHERE slot_id=?");
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f33295e;
+                Result.a aVar2 = Result.f33071e;
                 b10 = Result.b(kotlin.c.a(th2));
             }
             try {
@@ -745,13 +745,13 @@ public final class TelemetryRingSqliteStore {
                     Intrinsics.checkNotNull(compileStatement2);
                     appendEntry(compileStatement, compileStatement2, entryPayload);
                 }
-                Unit unit = Unit.f33298a;
-                tr.c.a(compileStatement2, null);
-                tr.c.a(compileStatement, null);
+                Unit unit = Unit.f33074a;
+                ur.c.a(compileStatement2, null);
+                ur.c.a(compileStatement, null);
                 updateMeta(writableDatabase);
                 writableDatabase.setTransactionSuccessful();
                 writableDatabase.endTransaction();
-                b10 = Result.b(Unit.f33298a);
+                b10 = Result.b(Unit.f33074a);
                 Throwable e10 = Result.e(b10);
                 if (e10 == null) {
                     return;
@@ -759,9 +759,9 @@ public final class TelemetryRingSqliteStore {
                 Log.INSTANCE.w(TAG, "TelemetryRing append rolled back; reloading in-memory state", e10);
                 try {
                     loadState();
-                    b11 = Result.b(Unit.f33298a);
+                    b11 = Result.b(Unit.f33074a);
                 } catch (Throwable th3) {
-                    Result.a aVar3 = Result.f33295e;
+                    Result.a aVar3 = Result.f33071e;
                     b11 = Result.b(kotlin.c.a(th3));
                 }
                 Throwable e11 = Result.e(b11);
@@ -773,7 +773,7 @@ public final class TelemetryRingSqliteStore {
                 try {
                     throw th4;
                 } catch (Throwable th5) {
-                    tr.c.a(compileStatement2, th4);
+                    ur.c.a(compileStatement2, th4);
                     throw th5;
                 }
             }
@@ -785,7 +785,7 @@ public final class TelemetryRingSqliteStore {
         Object b11;
         SQLiteDatabase writableDatabase = this.dbHelper.getWritableDatabase();
         try {
-            Result.a aVar = Result.f33295e;
+            Result.a aVar = Result.f33071e;
             Intrinsics.checkNotNull(writableDatabase);
             writableDatabase.beginTransaction();
             writableDatabase.execSQL("UPDATE telemetry_ring_slots SET seq=0, channel_mask=0, payload_json=NULL, payload_size=0");
@@ -797,12 +797,12 @@ public final class TelemetryRingSqliteStore {
             kotlin.collections.i.y(this.slotSeq, 0L, 0, 0, 6, null);
             kotlin.collections.i.x(this.slotSize, 0, 0, 0, 6, null);
             updateMeta(writableDatabase);
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
             writableDatabase.setTransactionSuccessful();
             writableDatabase.endTransaction();
-            b10 = Result.b(Unit.f33298a);
+            b10 = Result.b(Unit.f33074a);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33295e;
+            Result.a aVar2 = Result.f33071e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         Throwable e10 = Result.e(b10);
@@ -810,9 +810,9 @@ public final class TelemetryRingSqliteStore {
             Log.INSTANCE.w(TAG, "TelemetryRing clear failed; reloading in-memory state", e10);
             try {
                 loadState();
-                b11 = Result.b(Unit.f33298a);
+                b11 = Result.b(Unit.f33074a);
             } catch (Throwable th3) {
-                Result.a aVar3 = Result.f33295e;
+                Result.a aVar3 = Result.f33071e;
                 b11 = Result.b(kotlin.c.a(th3));
             }
             Throwable e11 = Result.e(b11);
@@ -907,8 +907,8 @@ public final class TelemetryRingSqliteStore {
             arrayList = arrayList2;
             j12 = j16;
             j13 = j15;
-            Unit unit = Unit.f33298a;
-            tr.c.a(query, null);
+            Unit unit = Unit.f33074a;
+            ur.c.a(query, null);
             if (arrayList.isEmpty()) {
                 List l11 = CollectionsKt.l();
                 if (effectiveAckedEndOffset != null) {

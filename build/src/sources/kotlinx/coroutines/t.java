@@ -1,8 +1,8 @@
 package kotlinx.coroutines;
 
-import gs.m0;
-import gs.n0;
-import gs.s0;
+import hs.m0;
+import hs.n0;
+import hs.s0;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.RejectedExecutionException;
@@ -14,11 +14,11 @@ import kotlin.coroutines.CoroutineContext;
 public final class t extends s implements k {
 
     /* renamed from: o  reason: collision with root package name */
-    private final Executor f36373o;
+    private final Executor f36149o;
 
     public t(Executor executor) {
-        this.f36373o = executor;
-        ls.a.a(f2());
+        this.f36149o = executor;
+        ms.a.a(f2());
     }
 
     private final void h2(CoroutineContext coroutineContext, RejectedExecutionException rejectedExecutionException) {
@@ -35,7 +35,7 @@ public final class t extends s implements k {
     }
 
     @Override // kotlinx.coroutines.k
-    public n0 D0(long j10, Runnable runnable, CoroutineContext coroutineContext) {
+    public n0 E0(long j10, Runnable runnable, CoroutineContext coroutineContext) {
         ScheduledExecutorService scheduledExecutorService;
         long j11;
         Runnable runnable2;
@@ -60,17 +60,17 @@ public final class t extends s implements k {
         if (scheduledFuture != null) {
             return new n(scheduledFuture);
         }
-        return j.f36356t.D0(j11, runnable2, coroutineContext2);
+        return j.f36132t.E0(j11, runnable2, coroutineContext2);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public void E1(CoroutineContext coroutineContext, Runnable runnable) {
         try {
             Executor f22 = f2();
-            gs.b.a();
+            hs.b.a();
             f22.execute(runnable);
         } catch (RejectedExecutionException e10) {
-            gs.b.a();
+            hs.b.a();
             h2(coroutineContext, e10);
             m0.b().E1(coroutineContext, runnable);
         }
@@ -94,9 +94,9 @@ public final class t extends s implements k {
             j11 = j10;
         }
         if (scheduledFuture != null) {
-            gs.l.c(cancellableContinuation, new c(scheduledFuture));
+            hs.l.c(cancellableContinuation, new c(scheduledFuture));
         } else {
-            j.f36356t.F(j11, cancellableContinuation);
+            j.f36132t.F(j11, cancellableContinuation);
         }
     }
 
@@ -123,7 +123,7 @@ public final class t extends s implements k {
 
     @Override // kotlinx.coroutines.s
     public Executor f2() {
-        return this.f36373o;
+        return this.f36149o;
     }
 
     public int hashCode() {

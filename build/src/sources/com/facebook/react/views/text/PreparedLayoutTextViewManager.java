@@ -25,9 +25,9 @@ import com.facebook.react.uimanager.style.BorderStyle;
 import com.facebook.react.uimanager.style.LogicalEdge;
 import com.facebook.react.uimanager.style.Overflow;
 import com.facebook.react.views.text.ReactTextViewAccessibilityDelegate;
-import ir.v;
 import java.util.HashMap;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.o0;
@@ -247,8 +247,8 @@ public final class PreparedLayoutTextViewManager extends BaseViewManager<Prepare
                 view.setTag(i10, accessibilityLinks);
                 ReactTextViewAccessibilityDelegate.Companion.resetDelegate(view, view.isFocusable(), view.getImportantForAccessibility());
             }
-            Unit unit = Unit.f33298a;
-            ur.a.a(systraceSection, null);
+            Unit unit = Unit.f33074a;
+            vr.a.a(systraceSection, null);
         } finally {
         }
     }

@@ -1,106 +1,64 @@
 package on;
 
-import android.util.Range;
-import android.util.Size;
+import android.graphics.Rect;
+import com.google.android.gms.tasks.Task;
+import java.util.concurrent.ExecutionException;
+import kotlin.Lazy;
+import kotlin.Result;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
-import mn.v;
+import nn.g;
+import nn.j0;
+import nn.p0;
+import on.a;
+import on.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class l {
+public final class l implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f44579a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final Size f44580b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final double f44581c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Range f44582d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final int f44583e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final v.b f44584f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private final o f44585g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private final v f44586h;
-
-    public l(String id2, Size size, double d10, Range targetFpsRange, int i10, v.b facingMode, o additionalOptions) {
-        Intrinsics.checkNotNullParameter(id2, "id");
-        Intrinsics.checkNotNullParameter(size, "size");
-        Intrinsics.checkNotNullParameter(targetFpsRange, "targetFpsRange");
-        Intrinsics.checkNotNullParameter(facingMode, "facingMode");
-        Intrinsics.checkNotNullParameter(additionalOptions, "additionalOptions");
-        this.f44579a = id2;
-        this.f44580b = size;
-        this.f44581c = d10;
-        this.f44582d = targetFpsRange;
-        this.f44583e = i10;
-        this.f44584f = facingMode;
-        this.f44585g = additionalOptions;
-        this.f44586h = new v(id2, facingMode, size, (int) d10);
-    }
-
-    public final o a() {
-        return this.f44585g;
-    }
-
-    public final v b() {
-        return this.f44586h;
-    }
-
-    public final v.b c() {
-        return this.f44584f;
-    }
-
-    public final String d() {
-        return this.f44579a;
-    }
-
-    public final int e() {
-        return this.f44583e;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    private final Lazy f44576a = jr.l.b(new Function0() { // from class: on.k
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            zj.c d10;
+            d10 = l.d();
+            return d10;
         }
-        if (!(obj instanceof l)) {
-            return false;
+    });
+
+    private final zj.c c() {
+        return (zj.c) this.f44576a.getValue();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final zj.c d() {
+        zj.c a10 = zj.b.a(bk.a.f6572d);
+        Intrinsics.checkNotNullExpressionValue(a10, "getClient(...)");
+        return a10;
+    }
+
+    @Override // on.e
+    public Object a(j0 j0Var, Rect rect, Continuation continuation) {
+        Task g10 = c().g(j0Var.f());
+        Intrinsics.checkNotNullExpressionValue(g10, "process(...)");
+        try {
+            zj.a aVar = (zj.a) wg.m.a(g10);
+            String a10 = ((zj.a) g10.l()).a();
+            Intrinsics.checkNotNullExpressionValue(a10, "getText(...)");
+            if (Intrinsics.areEqual(a10, "")) {
+                Result.a aVar2 = Result.f33071e;
+                return Result.b(a.b.f44551a);
+            }
+            p0 e10 = p0.f42007p.e(a10);
+            if (e10 == null) {
+                Result.a aVar3 = Result.f33071e;
+                return Result.b(a.b.f44551a);
+            }
+            Result.a aVar4 = Result.f33071e;
+            return Result.b(new a.C0550a(new g.a(e10.i(), e10.h(), e10.f(), e10.g())));
+        } catch (ExecutionException unused) {
+            Result.a aVar5 = Result.f33071e;
+            return Result.b(kotlin.c.a(new b.C0551b()));
         }
-        l lVar = (l) obj;
-        if (Intrinsics.areEqual(this.f44579a, lVar.f44579a) && Intrinsics.areEqual(this.f44580b, lVar.f44580b) && Double.compare(this.f44581c, lVar.f44581c) == 0 && Intrinsics.areEqual(this.f44582d, lVar.f44582d) && this.f44583e == lVar.f44583e && this.f44584f == lVar.f44584f && Intrinsics.areEqual(this.f44585g, lVar.f44585g)) {
-            return true;
-        }
-        return false;
-    }
-
-    public final Size f() {
-        return this.f44580b;
-    }
-
-    public final Range g() {
-        return this.f44582d;
-    }
-
-    public int hashCode() {
-        return (((((((((((this.f44579a.hashCode() * 31) + this.f44580b.hashCode()) * 31) + Double.hashCode(this.f44581c)) * 31) + this.f44582d.hashCode()) * 31) + Integer.hashCode(this.f44583e)) * 31) + this.f44584f.hashCode()) * 31) + this.f44585g.hashCode();
-    }
-
-    public String toString() {
-        String str = this.f44579a;
-        Size size = this.f44580b;
-        double d10 = this.f44581c;
-        Range range = this.f44582d;
-        int i10 = this.f44583e;
-        v.b bVar = this.f44584f;
-        o oVar = this.f44585g;
-        return "CameraChoice(id=" + str + ", size=" + size + ", maxFps=" + d10 + ", targetFpsRange=" + range + ", rotation=" + i10 + ", facingMode=" + bVar + ", additionalOptions=" + oVar + ")";
     }
 }

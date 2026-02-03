@@ -4,18 +4,18 @@ package com.google.android.play.core.assetpacks;
 public final class o2 {
 
     /* renamed from: a  reason: collision with root package name */
-    final int f16950a;
+    final int f16579a;
 
     /* renamed from: b  reason: collision with root package name */
-    final int f16951b;
+    final int f16580b;
 
     /* renamed from: c  reason: collision with root package name */
-    final n2 f16952c;
+    final n2 f16581c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o2(int i10, int i11, n2 n2Var) {
-        this.f16950a = i10;
-        this.f16951b = i11;
-        this.f16952c = n2Var;
+        this.f16579a = i10;
+        this.f16580b = i11;
+        this.f16581c = n2Var;
     }
 }

@@ -4,7 +4,6 @@ import android.content.Context;
 import com.squareup.moshi.h;
 import com.squareup.moshi.w;
 import com.withpersona.sdk2.inquiry.network.core.NetworkCoreModule;
-import iv.a0;
 import java.io.IOException;
 import java.net.ConnectException;
 import java.net.SocketTimeoutException;
@@ -14,6 +13,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import jv.a0;
 import kotlin.collections.x0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import okhttp3.Interceptor;
@@ -23,8 +23,8 @@ import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 import org.jetbrains.annotations.NotNull;
-import tt.j;
-import un.g;
+import ut.j;
+import vn.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class NetworkCoreModule {
     @NotNull
@@ -79,28 +79,28 @@ public final class NetworkCoreModule {
             if (localizedMessage != null) {
                 str = localizedMessage;
             }
-            return g10.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e10.getLocalizedMessage())), MediaType.f44085e.b("application/json"))).c();
+            return g10.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e10.getLocalizedMessage())), MediaType.f44213e.b("application/json"))).c();
         } catch (SocketTimeoutException e11) {
             Response.a g11 = new Response.a().r(chain.h()).p(j.HTTP_2).g(0);
             String localizedMessage2 = e11.getLocalizedMessage();
             if (localizedMessage2 != null) {
                 str = localizedMessage2;
             }
-            return g11.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e11.getLocalizedMessage())), MediaType.f44085e.b("application/json"))).c();
+            return g11.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e11.getLocalizedMessage())), MediaType.f44213e.b("application/json"))).c();
         } catch (UnknownHostException e12) {
             Response.a g12 = new Response.a().r(chain.h()).p(j.HTTP_2).g(0);
             String localizedMessage3 = e12.getLocalizedMessage();
             if (localizedMessage3 != null) {
                 str = localizedMessage3;
             }
-            return g12.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e12.getLocalizedMessage())), MediaType.f44085e.b("application/json"))).c();
+            return g12.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e12.getLocalizedMessage())), MediaType.f44213e.b("application/json"))).c();
         } catch (IOException e13) {
             Response.a g13 = new Response.a().r(chain.h()).p(j.HTTP_2).g(0);
             String localizedMessage4 = e13.getLocalizedMessage();
             if (localizedMessage4 != null) {
                 str = localizedMessage4;
             }
-            return g13.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e13.getLocalizedMessage())), MediaType.f44085e.b("application/json"))).c();
+            return g13.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e13.getLocalizedMessage())), MediaType.f44213e.b("application/json"))).c();
         }
     }
 
@@ -112,11 +112,11 @@ public final class NetworkCoreModule {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Response responseInterceptor$lambda$7(NetworkCoreModule networkCoreModule, Interceptor.Chain chain) {
         Response a10 = chain.a(chain.h());
-        String c10 = a10.E0().c(NetworkConstants.HEADER_KEY_PERSONA_ORGANIZATION_ID);
+        String c10 = a10.F0().c(NetworkConstants.HEADER_KEY_PERSONA_ORGANIZATION_ID);
         if (c10 != null) {
             networkCoreModule.organizationId = c10;
         }
-        String c11 = a10.E0().c(NetworkConstants.HEADER_KEY_PERSONA_ENVIRONMENT_ID);
+        String c11 = a10.F0().c(NetworkConstants.HEADER_KEY_PERSONA_ENVIRONMENT_ID);
         if (c11 != null) {
             networkCoreModule.environmentId = c11;
         }
@@ -158,7 +158,7 @@ public final class NetworkCoreModule {
     }
 
     @NotNull
-    public final OkHttpClient okhttpClient(@NotNull Set<Interceptor> set, @NotNull final Map<String, String> map, @NotNull final Context context, @NotNull final g gVar, @NotNull final un.b bVar, @NotNull final vo.b bVar2) {
+    public final OkHttpClient okhttpClient(@NotNull Set<Interceptor> set, @NotNull final Map<String, String> map, @NotNull final Context context, @NotNull final g gVar, @NotNull final vn.b bVar, @NotNull final wo.b bVar2) {
         OkHttpClient.Builder b10 = new OkHttpClient.Builder().b(new Interceptor() { // from class: com.withpersona.sdk2.inquiry.network.core.NetworkCoreModule$okhttpClient$$inlined$-addNetworkInterceptor$1
             @Override // okhttp3.Interceptor
             @NotNull
@@ -171,7 +171,7 @@ public final class NetworkCoreModule {
                 if (!chain.h().h().f().contains("Accept")) {
                     k10 = k10.e("Accept", "application/json");
                 }
-                Request.Builder e10 = k10.e("Persona-Version", "2023-08-08").e("Persona-Device-Manufacturer", un.b.this.c()).e("Persona-Device-Model", un.b.this.b()).e("Persona-Device-OS", "Android").e("Persona-Device-OS-Version", un.b.this.d()).e("Persona-Device-Vendor-Id", gVar.b()).e("VTDGJLGG", String.valueOf(un.b.this.a()));
+                Request.Builder e10 = k10.e("Persona-Version", "2023-08-08").e("Persona-Device-Manufacturer", vn.b.this.c()).e("Persona-Device-Model", vn.b.this.b()).e("Persona-Device-OS", "Android").e("Persona-Device-OS-Version", vn.b.this.d()).e("Persona-Device-Vendor-Id", gVar.b()).e("VTDGJLGG", String.valueOf(vn.b.this.a()));
                 if ((context.getResources().getConfiguration().uiMode & 48) == 32) {
                     str = "dark";
                 } else {
@@ -194,7 +194,7 @@ public final class NetworkCoreModule {
                 for (Map.Entry entry : map.entrySet()) {
                     e12.e((String) entry.getKey(), (String) entry.getValue());
                 }
-                return chain.a(a.a(a.f20397a, e12.b(), bVar2, 0L, 2, (Object) null));
+                return chain.a(a.a(a.f20030a, e12.b(), bVar2, 0L, 2, (Object) null));
             }
         });
         TimeUnit timeUnit = TimeUnit.MINUTES;
@@ -219,7 +219,7 @@ public final class NetworkCoreModule {
 
     @NotNull
     public final a0 retrofit(@NotNull String str, @NotNull OkHttpClient okHttpClient, @NotNull w wVar) {
-        return new a0.b().f(okHttpClient).b(str).a(jv.a.f(wVar)).d();
+        return new a0.b().f(okHttpClient).b(str).a(kv.a.f(wVar)).d();
     }
 
     @NotNull

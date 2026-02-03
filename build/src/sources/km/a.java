@@ -1,65 +1,83 @@
 package km;
 
+import android.util.Log;
 import com.facebook.react.bridge.ReactApplicationContext;
-import com.facebook.react.common.MapBuilder;
-import com.facebook.react.uimanager.ThemedReactContext;
-import em.f;
-import java.util.Map;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import java.util.ArrayList;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0448a f33283a = new C0448a(null);
+    public static final a f33029a = new a();
 
-    /* renamed from: km.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0448a {
-        public /* synthetic */ C0448a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    /* renamed from: b  reason: collision with root package name */
+    private static final boolean f33030b = true;
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final List f33031c = new ArrayList();
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final long f33032d = System.currentTimeMillis();
+
+    /* renamed from: e  reason: collision with root package name */
+    private static ReactApplicationContext f33033e;
+
+    private a() {
+    }
+
+    private final void a(String str) {
+        if (f33033e != null && System.currentTimeMillis() - f33032d > 10000) {
+            for (String str2 : f33031c) {
+                ReactApplicationContext reactApplicationContext = f33033e;
+                if (reactApplicationContext != null) {
+                    reactApplicationContext.emitDeviceEvent("KeyboardStateDebugging", "Startup flushed: " + str2);
+                }
+            }
+            f33031c.clear();
+            ReactApplicationContext reactApplicationContext2 = f33033e;
+            if (reactApplicationContext2 != null) {
+                reactApplicationContext2.emitDeviceEvent("KeyboardStateDebugging", str);
+                return;
+            }
+            return;
         }
+        f33031c.add(str);
+    }
 
-        private C0448a() {
+    public static /* synthetic */ void c(a aVar, String str, String str2, Throwable th2, int i10, Object obj) {
+        if ((i10 & 4) != 0) {
+            th2 = null;
+        }
+        aVar.b(str, str2, th2);
+    }
+
+    public static /* synthetic */ void f(a aVar, String str, String str2, Throwable th2, int i10, Object obj) {
+        if ((i10 & 4) != 0) {
+            th2 = null;
+        }
+        aVar.e(str, str2, th2);
+    }
+
+    public final void b(String str, String message, Throwable th2) {
+        Intrinsics.checkNotNullParameter(message, "message");
+        if (f33030b) {
+            Log.i(str, message, th2);
+            String str2 = (th2 == null || (str2 = th2.toString()) == null) ? "" : "";
+            a(message + ", " + str2);
         }
     }
 
-    public a(ReactApplicationContext mReactContext) {
-        Intrinsics.checkNotNullParameter(mReactContext, "mReactContext");
+    public final void d(ReactApplicationContext reactApplicationContext) {
+        f33033e = reactApplicationContext;
     }
 
-    public final om.c a(ThemedReactContext reactContext) {
-        Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        return new om.c(reactContext);
-    }
-
-    public final Map b() {
-        f.a aVar = f.f22941f;
-        return MapBuilder.of(aVar.c().d(), MapBuilder.of("registrationName", "onKeyboardMove"), aVar.d().d(), MapBuilder.of("registrationName", "onKeyboardMoveStart"), aVar.a().d(), MapBuilder.of("registrationName", "onKeyboardMoveEnd"), aVar.b().d(), MapBuilder.of("registrationName", "onKeyboardMoveInteractive"), "topFocusedInputLayoutChanged", MapBuilder.of("registrationName", "onFocusedInputLayoutChanged"), "topFocusedInputTextChanged", MapBuilder.of("registrationName", "onFocusedInputTextChanged"), "topFocusedInputSelectionChanged", MapBuilder.of("registrationName", "onFocusedInputSelectionChanged"));
-    }
-
-    public final void c(om.c view) {
-        Intrinsics.checkNotNullParameter(view, "view");
-        view.m();
-    }
-
-    public final void d(om.c view, boolean z10) {
-        Intrinsics.checkNotNullParameter(view, "view");
-        view.setActive(z10);
-    }
-
-    public final void e(om.c view, boolean z10) {
-        Intrinsics.checkNotNullParameter(view, "view");
-        view.setNavigationBarTranslucent(z10);
-    }
-
-    public final void f(om.c view, boolean z10) {
-        Intrinsics.checkNotNullParameter(view, "view");
-        view.setPreserveEdgeToEdge(z10);
-    }
-
-    public final void g(om.c view, boolean z10) {
-        Intrinsics.checkNotNullParameter(view, "view");
-        view.setStatusBarTranslucent(z10);
+    public final void e(String str, String message, Throwable th2) {
+        Intrinsics.checkNotNullParameter(message, "message");
+        if (f33030b) {
+            Log.w(str, message, th2);
+            String str2 = (th2 == null || (str2 = th2.toString()) == null) ? "" : "";
+            a(message + ", " + str2);
+        }
     }
 }

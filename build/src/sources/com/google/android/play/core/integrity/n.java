@@ -5,30 +5,30 @@ import com.google.android.play.core.integrity.IntegrityTokenRequest;
 final class n extends IntegrityTokenRequest.Builder {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f17221a;
+    private String f16850a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Long f17222b;
+    private Long f16851b;
 
     @Override // com.google.android.play.core.integrity.IntegrityTokenRequest.Builder
     public final IntegrityTokenRequest build() {
-        String str = this.f17221a;
+        String str = this.f16850a;
         if (str != null) {
-            return new o(str, this.f17222b, null, null);
+            return new o(str, this.f16851b, null, null);
         }
         throw new IllegalStateException("Missing required properties: nonce");
     }
 
     @Override // com.google.android.play.core.integrity.IntegrityTokenRequest.Builder
     public final IntegrityTokenRequest.Builder setCloudProjectNumber(long j10) {
-        this.f17222b = Long.valueOf(j10);
+        this.f16851b = Long.valueOf(j10);
         return this;
     }
 
     @Override // com.google.android.play.core.integrity.IntegrityTokenRequest.Builder
     public final IntegrityTokenRequest.Builder setNonce(String str) {
         if (str != null) {
-            this.f17221a = str;
+            this.f16850a = str;
             return this;
         }
         throw new NullPointerException("Null nonce");

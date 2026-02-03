@@ -81,8 +81,8 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     }
 
     private final void configureClanTagChiplet(Message message) {
-        if (message.getClanTag() != null && message.m235getClanTagGuildIdqOKuAAo() != null) {
-            this.binding.tagChiplet.m502configureD0ylKIU(message.getClanTag(), message.getClanBadgeUrl(), message.m235getClanTagGuildIdqOKuAAo().m1080unboximpl(), null, 0.89f);
+        if (message.getClanTag() != null && message.m237getClanTagGuildIdqOKuAAo() != null) {
+            this.binding.tagChiplet.m504configureD0ylKIU(message.getClanTag(), message.getClanBadgeUrl(), message.m237getClanTagGuildIdqOKuAAo().m1082unboximpl(), null, 0.89f);
             ClanTagChipletView tagChiplet = this.binding.tagChiplet;
             Intrinsics.checkNotNullExpressionValue(tagChiplet, "tagChiplet");
             tagChiplet.setVisibility(0);
@@ -95,28 +95,28 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void configureExecutedCommand_dB0_bEw$lambda$10(ChatEventHandler chatEventHandler, String str, ExecutedCommand executedCommand, View view) {
-        chatEventHandler.mo448onTapAvatarx5gers8(str, executedCommand.m395getUserIdre6GcUE());
+        chatEventHandler.mo450onTapAvatarx5gers8(str, executedCommand.m397getUserIdre6GcUE());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureExecutedCommand_dB0_bEw$lambda$11(ChatEventHandler chatEventHandler, String str, LinkContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        chatEventHandler.mo437onLinkClickedntcYbpo(str, it);
-        return Unit.f33298a;
+        chatEventHandler.mo439onLinkClickedntcYbpo(str, it);
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureExecutedCommand_dB0_bEw$lambda$12(ChatEventHandler chatEventHandler, CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
         chatEventHandler.onTapCommand(it);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureExecutedCommand_dB0_bEw$lambda$13(ChatEventHandler chatEventHandler, CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
         chatEventHandler.onLongPressCommand(it);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -285,7 +285,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
     }
 
     /* renamed from: configureExecutedCommand-dB0-bEw  reason: not valid java name */
-    public final void m532configureExecutedCommanddB0bEw(@NotNull final String messageId, @NotNull final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, boolean z13, @NotNull final ChatEventHandler eventHandler) {
+    public final void m534configureExecutedCommanddB0bEw(@NotNull final String messageId, @NotNull final ExecutedCommand executedCommand, boolean z10, boolean z11, boolean z12, boolean z13, @NotNull final ChatEventHandler eventHandler) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(executedCommand, "executedCommand");
         Intrinsics.checkNotNullParameter(eventHandler, "eventHandler");
@@ -365,7 +365,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
         MessageContentView replyText2 = this.binding.replyText;
         Intrinsics.checkNotNullExpressionValue(replyText2, "replyText");
         SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(replyText2));
-        Unit unit = Unit.f33298a;
+        Unit unit = Unit.f33074a;
         messageContentView.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(replyLeadingViews2, spannable$default));
         MessageContentView replyText3 = this.binding.replyText;
         Intrinsics.checkNotNullExpressionValue(replyText3, "replyText");
@@ -415,7 +415,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
             Context context = getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
             String avatarUrl = MessageKt.avatarUrl(message, context);
-            if (avatarUrl != null && message.getUsername() != null && message.m233getAuthorIdwUX8bhU() != null) {
+            if (avatarUrl != null && message.getUsername() != null && message.m235getAuthorIdwUX8bhU() != null) {
                 SimpleDraweeView replyAuthorAvatar = this.binding.replyAuthorAvatar;
                 Intrinsics.checkNotNullExpressionValue(replyAuthorAvatar, "replyAuthorAvatar");
                 replyAuthorAvatar.setVisibility(0);
@@ -452,7 +452,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 StructurableText systemContent = loadedReferencedMessage.getSystemContent();
                 Context context2 = getContext();
                 Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
-                String m237getId3Eiw7ao = message.m237getId3Eiw7ao();
+                String m239getId3Eiw7ao = message.m239getId3Eiw7ao();
                 boolean shouldAnimateEmoji = MessageKt.shouldAnimateEmoji(message);
                 boolean shouldShowLinkDecorations = MessageKt.shouldShowLinkDecorations(message);
                 boolean shouldShowRoleDot = message.getShouldShowRoleDot();
@@ -462,11 +462,11 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 float baselineHeightPx = TextUtilsKt.getBaselineHeightPx(fontMetrics);
                 TextPaint paint = this.binding.replyText.getPaint();
                 Intrinsics.checkNotNullExpressionValue(paint, "getPaint(...)");
-                DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(systemContent, context2, m237getId3Eiw7ao, shouldAnimateEmoji, shouldShowLinkDecorations, shouldShowRoleDot, shouldShowRoleOnName, paint, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, true, null, baselineHeightPx, null, false, 113246080, null);
+                DraweeSpanStringBuilder spannable$default = TextUtilsKt.toSpannable$default(systemContent, context2, m239getId3Eiw7ao, shouldAnimateEmoji, shouldShowLinkDecorations, shouldShowRoleDot, shouldShowRoleOnName, paint, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, true, null, baselineHeightPx, null, false, 113246080, null);
                 MessageContentView replyText2 = this.binding.replyText;
                 Intrinsics.checkNotNullExpressionValue(replyText2, "replyText");
                 SpannableExtensionsKt.coverWithSpan(spannable$default, new BackgroundSpanDrawer(replyText2));
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
                 messageContentView.setDraweeSpanStringBuilder(ReplyUtilsKt.createSystemReplyContentFromBuilder(replyLeadingViews2, spannable$default));
             } else if (message.getContent() != null) {
                 MessageViewReplyPreviewBinding messageViewReplyPreviewBinding2 = this.binding;
@@ -476,7 +476,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 StructurableText content = message.getContent();
                 Context context3 = getContext();
                 Intrinsics.checkNotNullExpressionValue(context3, "getContext(...)");
-                String m237getId3Eiw7ao2 = message.m237getId3Eiw7ao();
+                String m239getId3Eiw7ao2 = message.m239getId3Eiw7ao();
                 boolean shouldAnimateEmoji2 = MessageKt.shouldAnimateEmoji(message);
                 boolean shouldShowLinkDecorations2 = MessageKt.shouldShowLinkDecorations(message);
                 boolean shouldShowRoleDot2 = message.getShouldShowRoleDot();
@@ -486,11 +486,11 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
                 float baselineHeightPx2 = TextUtilsKt.getBaselineHeightPx(fontMetrics2);
                 TextPaint paint2 = this.binding.replyText.getPaint();
                 Intrinsics.checkNotNullExpressionValue(paint2, "getPaint(...)");
-                DraweeSpanStringBuilder spannable$default2 = TextUtilsKt.toSpannable$default(content, context3, m237getId3Eiw7ao2, shouldAnimateEmoji2, shouldShowLinkDecorations2, shouldShowRoleDot2, shouldShowRoleOnName2, paint2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, true, null, baselineHeightPx2, null, false, 113246080, null);
+                DraweeSpanStringBuilder spannable$default2 = TextUtilsKt.toSpannable$default(content, context3, m239getId3Eiw7ao2, shouldAnimateEmoji2, shouldShowLinkDecorations2, shouldShowRoleDot2, shouldShowRoleOnName2, paint2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, true, null, baselineHeightPx2, null, false, 113246080, null);
                 MessageContentView replyText3 = this.binding.replyText;
                 Intrinsics.checkNotNullExpressionValue(replyText3, "replyText");
                 SpannableExtensionsKt.coverWithSpan(spannable$default2, new BackgroundSpanDrawer(replyText3));
-                Unit unit2 = Unit.f33298a;
+                Unit unit2 = Unit.f33074a;
                 messageContentView2.setDraweeSpanStringBuilder(ReplyUtilsKt.createReplyContent(replyLeadingViews3, spannable$default2));
             } else {
                 this.binding.replyText.setText((CharSequence) null);
@@ -530,7 +530,7 @@ public final class MessageViewReplyPreview extends ConstraintLayout implements S
             Intrinsics.checkNotNullExpressionValue(tagChiplet, "tagChiplet");
             tagChiplet.setVisibility(8);
         } else {
-            throw new ir.p();
+            throw new jr.p();
         }
         if (this.binding.replyText.isLaidOut() && !this.binding.replyText.isLayoutRequested()) {
             measureAndSetReplyLeadingViewsHeight();

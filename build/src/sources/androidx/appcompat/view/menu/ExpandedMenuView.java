@@ -11,13 +11,13 @@ import androidx.appcompat.widget.v0;
 public final class ExpandedMenuView extends ListView implements e.b, k, AdapterView.OnItemClickListener {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final int[] f1220i = {16842964, 16843049};
+    private static final int[] f1264i = {16842964, 16843049};
 
     /* renamed from: d  reason: collision with root package name */
-    private e f1221d;
+    private e f1265d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f1222e;
+    private int f1266e;
 
     public ExpandedMenuView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 16842868);
@@ -25,16 +25,16 @@ public final class ExpandedMenuView extends ListView implements e.b, k, AdapterV
 
     @Override // androidx.appcompat.view.menu.k
     public void a(e eVar) {
-        this.f1221d = eVar;
+        this.f1265d = eVar;
     }
 
     @Override // androidx.appcompat.view.menu.e.b
     public boolean b(g gVar) {
-        return this.f1221d.M(gVar, 0);
+        return this.f1265d.M(gVar, 0);
     }
 
     public int getWindowAnimations() {
-        return this.f1222e;
+        return this.f1266e;
     }
 
     @Override // android.widget.ListView, android.widget.AbsListView, android.widget.AdapterView, android.view.ViewGroup, android.view.View
@@ -51,7 +51,7 @@ public final class ExpandedMenuView extends ListView implements e.b, k, AdapterV
     public ExpandedMenuView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet);
         setOnItemClickListener(this);
-        v0 v10 = v0.v(context, attributeSet, f1220i, i10, 0);
+        v0 v10 = v0.v(context, attributeSet, f1264i, i10, 0);
         if (v10.s(0)) {
             setBackgroundDrawable(v10.g(0));
         }

@@ -5,7 +5,7 @@ import ui.c;
 final class y4 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final y4 f45951a = new y4();
+    static final y4 f46025a = new y4();
 
     static {
         c.b a10 = ui.c.a("logEventKey");

@@ -1,33 +1,13 @@
 package ar;
 
-import android.content.Context;
-import android.text.Spanned;
-import android.widget.TextView;
+import id.zelory.compressor.constraint.Compression;
+import java.io.File;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class e {
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface a {
-        a a(i iVar);
-
-        e build();
+    public static final void a(Compression destination, File destination2) {
+        Intrinsics.checkParameterIsNotNull(destination, "$this$destination");
+        Intrinsics.checkParameterIsNotNull(destination2, "destination");
+        destination.a(new d(destination2));
     }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface b {
-    }
-
-    public static a a(Context context) {
-        return new f(context).a(br.a.r());
-    }
-
-    public static e b(Context context) {
-        return a(context).a(br.a.r()).build();
-    }
-
-    public abstract void c(TextView textView, String str);
-
-    public abstract void d(TextView textView, Spanned spanned);
-
-    public abstract Spanned e(String str);
 }

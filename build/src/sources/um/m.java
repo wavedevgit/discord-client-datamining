@@ -1,160 +1,215 @@
 package um;
 
-import is.v;
-import java.util.concurrent.CancellationException;
-import js.j0;
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
-import kotlin.jvm.functions.Function2;
+import java.util.Map;
+import kotlin.Lazy;
+import kotlin.collections.o0;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.CoroutineScope;
-import tm.q;
-import tm.t;
+import kotlin.jvm.internal.Lambda;
+import okio.Buffer;
+import okio.BufferedSource;
+import okio.ByteString;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class m {
 
+    /* renamed from: c  reason: collision with root package name */
+    public static final a f50493c = new a(null);
+
     /* renamed from: a  reason: collision with root package name */
-    private final tm.k f50474a;
+    private final Lazy f50494a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d f50475b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private Object f50476c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final v f50477d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final j f50478e;
+    private final Lazy f50495b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
+    public static final class a {
 
-        /* renamed from: d  reason: collision with root package name */
-        int f50479d;
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: um.m$a$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0667a extends Lambda implements Function0 {
 
-        /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f50480e;
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ BufferedSource f50496d;
 
-        a(Continuation continuation) {
-            super(2, continuation);
-        }
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            C0667a(BufferedSource bufferedSource) {
+                super(0);
+                this.f50496d = bufferedSource;
+            }
 
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Continuation create(Object obj, Continuation continuation) {
-            a aVar = new a(continuation);
-            aVar.f50480e = obj;
-            return aVar;
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return j(((is.k) obj).k(), (Continuation) obj2);
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            or.b.f();
-            if (this.f50479d == 0) {
-                kotlin.c.b(obj);
-                Object k10 = ((is.k) this.f50480e).k();
-                Throwable e10 = is.k.e(k10);
-                if (e10 == null) {
-                    Object f10 = is.k.f(k10);
-                    if (f10 != null) {
-                        m mVar = m.this;
-                        if (!Intrinsics.areEqual(mVar.f50476c, f10)) {
-                            mVar.f50476c = f10;
-                            return null;
-                        }
-                        return null;
-                    }
-                    return null;
+            @Override // kotlin.jvm.functions.Function0
+            /* renamed from: a */
+            public final Map invoke() {
+                int readInt = this.f50496d.readInt();
+                BufferedSource bufferedSource = this.f50496d;
+                Map d10 = o0.d(readInt);
+                int i10 = 0;
+                while (i10 < readInt) {
+                    i10++;
+                    d10.put(vm.k.f51427c.a(j.a(bufferedSource)), m.f50493c.a(j.a(bufferedSource)));
                 }
-                throw e10;
+                return o0.b(d10);
             }
-            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
-        public final Object j(Object obj, Continuation continuation) {
-            return ((a) create(is.k.b(obj), continuation)).invokeSuspend(Unit.f33298a);
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final m a(ByteString bytes) {
+            Intrinsics.checkNotNullParameter(bytes, "bytes");
+            Buffer a22 = new Buffer().a2(bytes);
+            return new m(i.f50480c.b(j.a(a22)), new C0667a(a22));
+        }
+
+        private a() {
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
+    static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f50482d;
+        final /* synthetic */ i f50497d;
 
-        /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f50483e;
-
-        b(Continuation continuation) {
-            super(2, continuation);
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        b(i iVar) {
+            super(0);
+            this.f50497d = iVar;
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Continuation create(Object obj, Continuation continuation) {
-            b bVar = new b(continuation);
-            bVar.f50483e = obj;
-            return bVar;
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            or.b.f();
-            if (this.f50482d == 0) {
-                kotlin.c.b(obj);
-                return kotlin.coroutines.jvm.internal.b.a(Intrinsics.areEqual(this.f50483e, m.this.f50476c));
+        @Override // kotlin.jvm.functions.Function0
+        /* renamed from: a */
+        public final i invoke() {
+            i iVar = this.f50497d;
+            if (iVar == null || iVar.b().G() == 0) {
+                return null;
             }
-            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        /* renamed from: j */
-        public final Object invoke(Object obj, Continuation continuation) {
-            return ((b) create(obj, continuation)).invokeSuspend(Unit.f33298a);
+            return iVar;
         }
     }
 
-    public m(CoroutineScope scope, q protoWorkflow, j0 props, tm.m mVar, t interceptor) {
-        Intrinsics.checkNotNullParameter(scope, "scope");
-        Intrinsics.checkNotNullParameter(protoWorkflow, "protoWorkflow");
-        Intrinsics.checkNotNullParameter(props, "props");
-        Intrinsics.checkNotNullParameter(interceptor, "interceptor");
-        tm.k b10 = protoWorkflow.b();
-        this.f50474a = b10;
-        d dVar = new d();
-        this.f50475b = dVar;
-        this.f50476c = props.getValue();
-        this.f50477d = js.g.E(js.g.n(props, new b(null)), scope);
-        this.f50478e = new j(l.b(b10, null, 1, null), b10, this.f50476c, mVar, scope.getCoroutineContext(), null, null, interceptor, dVar, 96, null);
+    public m(i iVar, Function0 childTreeSnapshots) {
+        Intrinsics.checkNotNullParameter(childTreeSnapshots, "childTreeSnapshots");
+        jr.o oVar = jr.o.f32183i;
+        this.f50494a = jr.l.a(oVar, new b(iVar));
+        this.f50495b = jr.l.a(oVar, childTreeSnapshots);
     }
 
-    public final void e(CancellationException cancellationException) {
-        this.f50478e.d(cancellationException);
+    public final Map a() {
+        return (Map) this.f50495b.getValue();
     }
 
-    public final Object f(Continuation continuation) {
-        os.e eVar = new os.e(continuation);
-        try {
-            if (!this.f50477d.i()) {
-                eVar.a(this.f50477d.k(), new a(null));
-            }
-            this.f50478e.o(eVar);
-        } catch (Throwable th2) {
-            eVar.C(th2);
+    public final i b() {
+        return (i) this.f50494a.getValue();
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:29:0x0060 A[SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:32:0x002a A[SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final okio.ByteString c() {
+        /*
+            r7 = this;
+            okio.Buffer r0 = new okio.Buffer
+            r0.<init>()
+            um.i r1 = r7.b()
+            r2 = 0
+            if (r1 != 0) goto Le
+            r1 = r2
+            goto L12
+        Le:
+            okio.ByteString r1 = r1.b()
+        L12:
+            if (r1 != 0) goto L16
+            okio.ByteString r1 = okio.ByteString.f44508p
+        L16:
+            um.j.c(r0, r1)
+            java.util.Map r1 = r7.a()
+            java.util.ArrayList r3 = new java.util.ArrayList
+            r3.<init>()
+            java.util.Set r1 = r1.entrySet()
+            java.util.Iterator r1 = r1.iterator()
+        L2a:
+            boolean r4 = r1.hasNext()
+            if (r4 == 0) goto L64
+            java.lang.Object r4 = r1.next()
+            java.util.Map$Entry r4 = (java.util.Map.Entry) r4
+            java.lang.Object r5 = r4.getKey()
+            vm.k r5 = (vm.k) r5
+            java.lang.Object r4 = r4.getValue()
+            um.m r4 = (um.m) r4
+            okio.ByteString r5 = r5.d()
+            if (r5 != 0) goto L4a
+        L48:
+            r6 = r2
+            goto L5d
+        L4a:
+            okio.ByteString r4 = r4.c()
+            int r6 = r4.G()
+            if (r6 != 0) goto L55
+            r4 = r2
+        L55:
+            if (r4 != 0) goto L58
+            goto L48
+        L58:
+            kotlin.Pair r6 = new kotlin.Pair
+            r6.<init>(r5, r4)
+        L5d:
+            if (r6 != 0) goto L60
+            goto L2a
+        L60:
+            r3.add(r6)
+            goto L2a
+        L64:
+            int r1 = r3.size()
+            r0.writeInt(r1)
+            java.util.Iterator r1 = r3.iterator()
+        L6f:
+            boolean r2 = r1.hasNext()
+            if (r2 == 0) goto L8e
+            java.lang.Object r2 = r1.next()
+            kotlin.Pair r2 = (kotlin.Pair) r2
+            java.lang.Object r3 = r2.a()
+            okio.ByteString r3 = (okio.ByteString) r3
+            java.lang.Object r2 = r2.b()
+            okio.ByteString r2 = (okio.ByteString) r2
+            um.j.c(r0, r3)
+            um.j.c(r0, r2)
+            goto L6f
+        L8e:
+            okio.ByteString r0 = r0.L1()
+            return r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: um.m.c():okio.ByteString");
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
         }
-        Object B = eVar.B();
-        if (B == or.b.f()) {
-            kotlin.coroutines.jvm.internal.g.c(continuation);
+        if (!(obj instanceof m)) {
+            return false;
         }
-        return B;
+        m mVar = (m) obj;
+        if (Intrinsics.areEqual(mVar.b(), b()) && Intrinsics.areEqual(mVar.a(), a())) {
+            return true;
+        }
+        return false;
     }
 
-    public final tm.g g() {
-        return new tm.g(this.f50478e.l(this.f50474a, this.f50476c), this.f50478e.n(this.f50474a));
+    public int hashCode() {
+        int hashCode;
+        i b10 = b();
+        if (b10 == null) {
+            hashCode = 0;
+        } else {
+            hashCode = b10.hashCode();
+        }
+        return (hashCode * 31) + a().hashCode();
     }
 }

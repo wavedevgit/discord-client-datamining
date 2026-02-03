@@ -1,63 +1,81 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0() {
-        var1 = arg0;
-        var2 = var1.getForwardedRef;
-        var _closure2_slot0 = var2;
-        var1 = var1.setLocalRef;
-        var _closure2_slot1 = var1;
-        var0 = function arg0() {
-            _fun34010: for (var _fun34010_ip = 0;;) switch (_fun34010_ip) {
-                case 0:
-                    var2 = arg0;
-                    var1 = _closure2_slot0;
-                    var0 = undefined;
-                    var1 = var1.bind(var0)();
-                    var3 = _closure2_slot1;
-                    var3 = var3.bind(var0)(var2);
-                    var4 = typeof var1;
-                    var3 = 'function';
-                    if (!(var3 !== var4)) {
-                        _fun34010_ip = 64;
-                        continue _fun34010
-                    }
-                case 36:
-                    var3 = 'object';
-                    var3 = var3 === var4;
-                    if (!var3) {
-                        _fun34010_ip = 53;
-                        continue _fun34010
-                    }
-                case 47:
-                    var4 = null;
-                    var3 = var4 != var1;
-                case 53:
-                    if (!var3) {
-                        _fun34010_ip = 69;
-                        continue _fun34010
-                    }
-                case 56:
-                    var1.current = var2;
-                    _fun34010_ip = 69;
-                    continue _fun34010;
-                case 64:
-                    var1 = var1.bind(var0)(var2);
-                case 69:
-                    return var0;
+    _fun33815: for (var _fun33815_ip = 0;;) switch (_fun33815_ip) {
+        case 0:
+            var2 = exports;
+            var0 = global;
+            var5 = var0.Object;
+            var4 = var5.defineProperty;
+            var3 = {};
+            var0 = true;
+            var3.value = var0;
+            var0 = '__esModule';
+            var0 = var4.bind(var5)(var2, var0, var3);
+            var3 = dependencyMap;
+            var0 = 0;
+            var4 = var3[var0];
+            var3 = require;
+            var0 = undefined;
+            var4 = var3.bind(var0)(var4);
+            var3 = var4.isWeb;
+            var4 = var3.bind(var4)();
+            var3 = 1;
+            if (!var4) {
+                _fun33815_ip = 82;
+                continue _fun33815
             }
-        };
-        return var0;
-    };
-    var1.default = var0;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+        case 72:
+            var3 = 0.05;
+        case 82:
+            var4 = {};
+            var5 = 'function isValidRubberBandConfig_Pnpm_utilsTs1(config){return!!config.rubberBandEffect&&Array.isArray(config.clamp)&&config.clamp.length===2;}';
+            var4.code = var5;
+            var _closure1_slot0 = var4;
+            var1 = function() { // Environment: var1
+                var0 = function arg0() {
+                    _fun33817: for (var _fun33817_ip = 0;;) switch (_fun33817_ip) {
+                        case 0:
+                            var1 = arg0;
+                            var0 = var1.rubberBandEffect;
+                            var2 = !var0;
+                            var0 = !var2;
+                            if (var2) {
+                                _fun33817_ip = 42;
+                                continue _fun33817
+                            }
+                        case 18:
+                            var2 = global;
+                            var4 = var2.Array;
+                            var3 = var4.isArray;
+                            var2 = var1.clamp;
+                            var0 = var3.bind(var4)(var2);
+                        case 42:
+                            if (!var0) {
+                                _fun33817_ip = 63;
+                                continue _fun33817
+                            }
+                        case 45:
+                            var1 = var1.clamp;
+                            var2 = var1.length;
+                            var1 = 2;
+                            var0 = var1 === var2;
+                        case 63:
+                            return var0;
+                    }
+                };
+                var1 = {};
+                var0.__closure = var1;
+                var1 = 5674674993606.0;
+                var0.__workletHash = var1;
+                var1 = _closure1_slot0;
+                var0.__initData = var1;
+                return var0;
+            };
+            var1 = var1.bind(var0)();
+            var2.VELOCITY_EPS = var3;
+            var3 = 0.1;
+            var2.SLOPE_FACTOR = var3;
+            var2.isValidRubberBandConfig = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3715]);

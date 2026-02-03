@@ -1,8 +1,8 @@
 package com.google.firebase.installations.ktx;
 
 import com.google.firebase.components.ComponentRegistrar;
-import ir.c;
 import java.util.List;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
 @c

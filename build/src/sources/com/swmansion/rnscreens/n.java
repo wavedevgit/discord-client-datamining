@@ -3,10 +3,10 @@ package com.swmansion.rnscreens;
 public final class n extends m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f19286a;
+    private final int f18919a;
 
     public n(int i10) {
         super(null);
-        this.f19286a = i10;
+        this.f18919a = i10;
     }
 }

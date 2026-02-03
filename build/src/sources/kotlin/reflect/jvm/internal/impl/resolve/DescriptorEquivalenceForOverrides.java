@@ -46,7 +46,7 @@ public final class DescriptorEquivalenceForOverrides {
     /* JADX WARN: Multi-variable type inference failed */
     public static /* synthetic */ boolean areTypeParametersEquivalent$default(DescriptorEquivalenceForOverrides descriptorEquivalenceForOverrides, TypeParameterDescriptor typeParameterDescriptor, TypeParameterDescriptor typeParameterDescriptor2, boolean z10, Function2 function2, int i10, Object obj) {
         if ((i10 & 8) != 0) {
-            function2 = b.f35413d;
+            function2 = b.f35189d;
         }
         return descriptorEquivalenceForOverrides.areTypeParametersEquivalent(typeParameterDescriptor, typeParameterDescriptor2, z10, function2);
     }
@@ -63,10 +63,10 @@ public final class DescriptorEquivalenceForOverrides {
         if (Intrinsics.areEqual(c12, c22)) {
             return true;
         }
-        ClassifierDescriptor mo1198getDeclarationDescriptor = c12.mo1198getDeclarationDescriptor();
-        ClassifierDescriptor mo1198getDeclarationDescriptor2 = c22.mo1198getDeclarationDescriptor();
-        if ((mo1198getDeclarationDescriptor instanceof TypeParameterDescriptor) && (mo1198getDeclarationDescriptor2 instanceof TypeParameterDescriptor)) {
-            return INSTANCE.areTypeParametersEquivalent((TypeParameterDescriptor) mo1198getDeclarationDescriptor, (TypeParameterDescriptor) mo1198getDeclarationDescriptor2, z10, new e(callableDescriptor, callableDescriptor2));
+        ClassifierDescriptor mo1200getDeclarationDescriptor = c12.mo1200getDeclarationDescriptor();
+        ClassifierDescriptor mo1200getDeclarationDescriptor2 = c22.mo1200getDeclarationDescriptor();
+        if ((mo1200getDeclarationDescriptor instanceof TypeParameterDescriptor) && (mo1200getDeclarationDescriptor2 instanceof TypeParameterDescriptor)) {
+            return INSTANCE.areTypeParametersEquivalent((TypeParameterDescriptor) mo1200getDeclarationDescriptor, (TypeParameterDescriptor) mo1200getDeclarationDescriptor2, z10, new e(callableDescriptor, callableDescriptor2));
         }
         return false;
     }
@@ -126,7 +126,7 @@ public final class DescriptorEquivalenceForOverrides {
         if (z11 && (a10 instanceof MemberDescriptor) && (b10 instanceof MemberDescriptor) && ((MemberDescriptor) a10).isExpect() != ((MemberDescriptor) b10).isExpect()) {
             return false;
         }
-        if ((Intrinsics.areEqual(a10.getContainingDeclaration(), b10.getContainingDeclaration()) && (!z10 || !Intrinsics.areEqual(k(a10), k(b10)))) || DescriptorUtils.isLocal(a10) || DescriptorUtils.isLocal(b10) || !j(a10, b10, c.f35414d, z10)) {
+        if ((Intrinsics.areEqual(a10.getContainingDeclaration(), b10.getContainingDeclaration()) && (!z10 || !Intrinsics.areEqual(k(a10), k(b10)))) || DescriptorUtils.isLocal(a10) || DescriptorUtils.isLocal(b10) || !j(a10, b10, c.f35190d, z10)) {
             return false;
         }
         OverridingUtil create = OverridingUtil.create(kotlinTypeRefiner, new d(z10, a10, b10));

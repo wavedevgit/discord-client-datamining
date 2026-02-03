@@ -70,7 +70,7 @@ public final class JsonWriterHelper {
                 ReadableMap asMap = dynamic.asMap();
                 if (asMap != null) {
                     readableMapValue(jsonWriter, asMap);
-                    Unit unit = Unit.f33298a;
+                    Unit unit = Unit.f33074a;
                     return;
                 }
                 throw new IllegalStateException("Required value was null.");
@@ -78,12 +78,12 @@ public final class JsonWriterHelper {
                 ReadableArray asArray = dynamic.asArray();
                 if (asArray != null) {
                     readableArrayValue(jsonWriter, asArray);
-                    Unit unit2 = Unit.f33298a;
+                    Unit unit2 = Unit.f33074a;
                     return;
                 }
                 throw new IllegalStateException("Required value was null.");
             default:
-                throw new ir.p();
+                throw new jr.p();
         }
     }
 
@@ -146,7 +146,7 @@ public final class JsonWriterHelper {
                         JsonWriterHelper jsonWriterHelper = INSTANCE;
                         if (map != null) {
                             jsonWriterHelper.readableMapValue(writer, map);
-                            Unit unit = Unit.f33298a;
+                            Unit unit = Unit.f33074a;
                             break;
                         } else {
                             throw new IllegalStateException("Required value was null.");
@@ -155,13 +155,13 @@ public final class JsonWriterHelper {
                         ReadableArray array = value.getArray(i10);
                         if (array != null) {
                             readableArrayValue(writer, array);
-                            Unit unit2 = Unit.f33298a;
+                            Unit unit2 = Unit.f33074a;
                             break;
                         } else {
                             throw new IllegalStateException("Required value was null.");
                         }
                     default:
-                        throw new ir.p();
+                        throw new jr.p();
                 }
             }
             writer.endArray();
@@ -195,7 +195,7 @@ public final class JsonWriterHelper {
                         ReadableMap map = readableMap.getMap(nextKey);
                         if (map != null) {
                             readableMapValue(jsonWriter, map);
-                            Unit unit = Unit.f33298a;
+                            Unit unit = Unit.f33074a;
                             break;
                         } else {
                             throw new IllegalStateException("Required value was null.");
@@ -204,13 +204,13 @@ public final class JsonWriterHelper {
                         ReadableArray array = readableMap.getArray(nextKey);
                         if (array != null) {
                             readableArrayValue(jsonWriter, array);
-                            Unit unit2 = Unit.f33298a;
+                            Unit unit2 = Unit.f33074a;
                             break;
                         } else {
                             throw new IllegalStateException("Required value was null.");
                         }
                     default:
-                        throw new ir.p();
+                        throw new jr.p();
                 }
             }
             jsonWriter.endObject();

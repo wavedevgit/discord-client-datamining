@@ -11,14 +11,14 @@ public interface j {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f55730d;
+        private final int f55862d;
 
         a(int i10) {
-            this.f55730d = i10;
+            this.f55862d = i10;
         }
 
         public int d() {
-            return this.f55730d;
+            return this.f55862d;
         }
     }
 

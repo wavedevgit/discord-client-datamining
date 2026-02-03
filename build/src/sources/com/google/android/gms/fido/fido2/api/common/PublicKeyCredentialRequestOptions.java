@@ -24,127 +24,127 @@ public class PublicKeyCredentialRequestOptions extends y {
     public static final Parcelable.Creator<PublicKeyCredentialRequestOptions> CREATOR = new b();
 
     /* renamed from: d  reason: collision with root package name */
-    private final byte[] f14928d;
+    private final byte[] f14557d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Double f14929e;
+    private final Double f14558e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f14930i;
+    private final String f14559i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final List f14931o;
+    private final List f14560o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Integer f14932p;
+    private final Integer f14561p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final a f14933q;
+    private final a f14562q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final b0 f14934r;
+    private final b0 f14563r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final AuthenticationExtensions f14935s;
+    private final AuthenticationExtensions f14564s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Long f14936t;
+    private final Long f14565t;
 
     /* renamed from: u  reason: collision with root package name */
-    private ResultReceiver f14937u;
+    private ResultReceiver f14566u;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class Builder {
 
         /* renamed from: a  reason: collision with root package name */
-        private byte[] f14938a;
+        private byte[] f14567a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Double f14939b;
+        private Double f14568b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f14940c;
+        private String f14569c;
 
         /* renamed from: d  reason: collision with root package name */
-        private List f14941d;
+        private List f14570d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Integer f14942e;
+        private Integer f14571e;
 
         /* renamed from: f  reason: collision with root package name */
-        private a f14943f;
+        private a f14572f;
 
         /* renamed from: g  reason: collision with root package name */
-        private b0 f14944g;
+        private b0 f14573g;
 
         /* renamed from: h  reason: collision with root package name */
-        private AuthenticationExtensions f14945h;
+        private AuthenticationExtensions f14574h;
 
         /* renamed from: i  reason: collision with root package name */
-        private Long f14946i;
+        private Long f14575i;
 
         /* renamed from: j  reason: collision with root package name */
-        private ResultReceiver f14947j;
+        private ResultReceiver f14576j;
 
         public PublicKeyCredentialRequestOptions a() {
             String b0Var;
-            byte[] bArr = this.f14938a;
-            Double d10 = this.f14939b;
-            String str = this.f14940c;
-            List list = this.f14941d;
-            Integer num = this.f14942e;
-            a aVar = this.f14943f;
-            b0 b0Var2 = this.f14944g;
+            byte[] bArr = this.f14567a;
+            Double d10 = this.f14568b;
+            String str = this.f14569c;
+            List list = this.f14570d;
+            Integer num = this.f14571e;
+            a aVar = this.f14572f;
+            b0 b0Var2 = this.f14573g;
             if (b0Var2 == null) {
                 b0Var = null;
             } else {
                 b0Var = b0Var2.toString();
             }
-            return new PublicKeyCredentialRequestOptions(bArr, d10, str, list, num, aVar, b0Var, this.f14945h, this.f14946i, null, this.f14947j);
+            return new PublicKeyCredentialRequestOptions(bArr, d10, str, list, num, aVar, b0Var, this.f14574h, this.f14575i, null, this.f14576j);
         }
 
         public Builder b(List list) {
-            this.f14941d = list;
+            this.f14570d = list;
             return this;
         }
 
         public Builder c(AuthenticationExtensions authenticationExtensions) {
-            this.f14945h = authenticationExtensions;
+            this.f14574h = authenticationExtensions;
             return this;
         }
 
         public Builder d(byte[] bArr) {
-            this.f14938a = (byte[]) q.l(bArr);
+            this.f14567a = (byte[]) q.l(bArr);
             return this;
         }
 
         public Builder e(Integer num) {
-            this.f14942e = num;
+            this.f14571e = num;
             return this;
         }
 
         public Builder f(String str) {
-            this.f14940c = (String) q.l(str);
+            this.f14569c = (String) q.l(str);
             return this;
         }
 
         public Builder g(Double d10) {
-            this.f14939b = d10;
+            this.f14568b = d10;
             return this;
         }
 
         public Builder h(a aVar) {
-            this.f14943f = aVar;
+            this.f14572f = aVar;
             return this;
         }
 
         public final Builder i(Long l10) {
-            this.f14946i = l10;
+            this.f14575i = l10;
             return this;
         }
 
         public final Builder j(b0 b0Var) {
-            this.f14944g = b0Var;
+            this.f14573g = b0Var;
             return this;
         }
     }
@@ -152,7 +152,7 @@ public class PublicKeyCredentialRequestOptions extends y {
     /* JADX INFO: Access modifiers changed from: package-private */
     public PublicKeyCredentialRequestOptions(byte[] bArr, Double d10, String str, List list, Integer num, a aVar, String str2, AuthenticationExtensions authenticationExtensions, Long l10, String str3, ResultReceiver resultReceiver) {
         JSONArray jSONArray;
-        this.f14937u = resultReceiver;
+        this.f14566u = resultReceiver;
         if (str3 != null && q5.b()) {
             try {
                 JSONObject jSONObject = new JSONObject(str3);
@@ -197,15 +197,15 @@ public class PublicKeyCredentialRequestOptions extends y {
                     builder.i(Long.valueOf(jSONObject.getLong("longRequestId")));
                 }
                 PublicKeyCredentialRequestOptions a10 = builder.a();
-                this.f14928d = a10.f14928d;
-                this.f14929e = a10.f14929e;
-                this.f14930i = a10.f14930i;
-                this.f14931o = a10.f14931o;
-                this.f14932p = a10.f14932p;
-                this.f14933q = a10.f14933q;
-                this.f14934r = a10.f14934r;
-                this.f14935s = a10.f14935s;
-                this.f14936t = a10.f14936t;
+                this.f14557d = a10.f14557d;
+                this.f14558e = a10.f14558e;
+                this.f14559i = a10.f14559i;
+                this.f14560o = a10.f14560o;
+                this.f14561p = a10.f14561p;
+                this.f14562q = a10.f14562q;
+                this.f14563r = a10.f14563r;
+                this.f14564s = a10.f14564s;
+                this.f14565t = a10.f14565t;
                 return;
             } catch (JSONException e10) {
                 e = e10;
@@ -215,39 +215,39 @@ public class PublicKeyCredentialRequestOptions extends y {
                 throw new IllegalArgumentException(e);
             }
         }
-        this.f14928d = (byte[]) q.l(bArr);
-        this.f14929e = d10;
-        this.f14930i = (String) q.l(str);
-        this.f14931o = list;
-        this.f14932p = num;
-        this.f14933q = aVar;
-        this.f14936t = l10;
+        this.f14557d = (byte[]) q.l(bArr);
+        this.f14558e = d10;
+        this.f14559i = (String) q.l(str);
+        this.f14560o = list;
+        this.f14561p = num;
+        this.f14562q = aVar;
+        this.f14565t = l10;
         if (str2 != null) {
             try {
-                this.f14934r = b0.a(str2);
+                this.f14563r = b0.a(str2);
             } catch (d1 e12) {
                 throw new IllegalArgumentException(e12);
             }
         } else {
-            this.f14934r = null;
+            this.f14563r = null;
         }
-        this.f14935s = authenticationExtensions;
+        this.f14564s = authenticationExtensions;
     }
 
     public List b() {
-        return this.f14931o;
+        return this.f14560o;
     }
 
     public AuthenticationExtensions c() {
-        return this.f14935s;
+        return this.f14564s;
     }
 
     public byte[] d() {
-        return this.f14928d;
+        return this.f14557d;
     }
 
     public Integer e() {
-        return this.f14932p;
+        return this.f14561p;
     }
 
     public boolean equals(Object obj) {
@@ -257,39 +257,39 @@ public class PublicKeyCredentialRequestOptions extends y {
             return false;
         }
         PublicKeyCredentialRequestOptions publicKeyCredentialRequestOptions = (PublicKeyCredentialRequestOptions) obj;
-        if (!Arrays.equals(this.f14928d, publicKeyCredentialRequestOptions.f14928d) || !o.a(this.f14929e, publicKeyCredentialRequestOptions.f14929e) || !o.a(this.f14930i, publicKeyCredentialRequestOptions.f14930i) || ((((list = this.f14931o) != null || publicKeyCredentialRequestOptions.f14931o != null) && (list == null || (list2 = publicKeyCredentialRequestOptions.f14931o) == null || !list.containsAll(list2) || !publicKeyCredentialRequestOptions.f14931o.containsAll(this.f14931o))) || !o.a(this.f14932p, publicKeyCredentialRequestOptions.f14932p) || !o.a(this.f14933q, publicKeyCredentialRequestOptions.f14933q) || !o.a(this.f14934r, publicKeyCredentialRequestOptions.f14934r) || !o.a(this.f14935s, publicKeyCredentialRequestOptions.f14935s) || !o.a(this.f14936t, publicKeyCredentialRequestOptions.f14936t))) {
+        if (!Arrays.equals(this.f14557d, publicKeyCredentialRequestOptions.f14557d) || !o.a(this.f14558e, publicKeyCredentialRequestOptions.f14558e) || !o.a(this.f14559i, publicKeyCredentialRequestOptions.f14559i) || ((((list = this.f14560o) != null || publicKeyCredentialRequestOptions.f14560o != null) && (list == null || (list2 = publicKeyCredentialRequestOptions.f14560o) == null || !list.containsAll(list2) || !publicKeyCredentialRequestOptions.f14560o.containsAll(this.f14560o))) || !o.a(this.f14561p, publicKeyCredentialRequestOptions.f14561p) || !o.a(this.f14562q, publicKeyCredentialRequestOptions.f14562q) || !o.a(this.f14563r, publicKeyCredentialRequestOptions.f14563r) || !o.a(this.f14564s, publicKeyCredentialRequestOptions.f14564s) || !o.a(this.f14565t, publicKeyCredentialRequestOptions.f14565t))) {
             return false;
         }
         return true;
     }
 
     public String f() {
-        return this.f14930i;
+        return this.f14559i;
     }
 
     public Double g() {
-        return this.f14929e;
+        return this.f14558e;
     }
 
     public int hashCode() {
-        return o.b(Integer.valueOf(Arrays.hashCode(this.f14928d)), this.f14929e, this.f14930i, this.f14931o, this.f14932p, this.f14933q, this.f14934r, this.f14935s, this.f14936t);
+        return o.b(Integer.valueOf(Arrays.hashCode(this.f14557d)), this.f14558e, this.f14559i, this.f14560o, this.f14561p, this.f14562q, this.f14563r, this.f14564s, this.f14565t);
     }
 
     public a i() {
-        return this.f14933q;
+        return this.f14562q;
     }
 
     public final String toString() {
-        AuthenticationExtensions authenticationExtensions = this.f14935s;
-        b0 b0Var = this.f14934r;
-        a aVar = this.f14933q;
-        List list = this.f14931o;
-        String b10 = com.google.android.gms.common.util.c.b(this.f14928d);
+        AuthenticationExtensions authenticationExtensions = this.f14564s;
+        b0 b0Var = this.f14563r;
+        a aVar = this.f14562q;
+        List list = this.f14560o;
+        String b10 = com.google.android.gms.common.util.c.b(this.f14557d);
         String valueOf = String.valueOf(list);
         String valueOf2 = String.valueOf(aVar);
         String valueOf3 = String.valueOf(b0Var);
         String valueOf4 = String.valueOf(authenticationExtensions);
-        return "PublicKeyCredentialRequestOptions{\n challenge=" + b10 + ", \n timeoutSeconds=" + this.f14929e + ", \n rpId='" + this.f14930i + "', \n allowList=" + valueOf + ", \n requestId=" + this.f14932p + ", \n tokenBinding=" + valueOf2 + ", \n userVerification=" + valueOf3 + ", \n authenticationExtensions=" + valueOf4 + ", \n longRequestId=" + this.f14936t + "}";
+        return "PublicKeyCredentialRequestOptions{\n challenge=" + b10 + ", \n timeoutSeconds=" + this.f14558e + ", \n rpId='" + this.f14559i + "', \n allowList=" + valueOf + ", \n requestId=" + this.f14561p + ", \n tokenBinding=" + valueOf2 + ", \n userVerification=" + valueOf3 + ", \n authenticationExtensions=" + valueOf4 + ", \n longRequestId=" + this.f14565t + "}";
     }
 
     @Override // android.os.Parcelable
@@ -302,7 +302,7 @@ public class PublicKeyCredentialRequestOptions extends y {
         hf.c.w(parcel, 5, b(), false);
         hf.c.n(parcel, 6, e(), false);
         hf.c.q(parcel, 7, i(), i10, false);
-        b0 b0Var2 = this.f14934r;
+        b0 b0Var2 = this.f14563r;
         if (b0Var2 == null) {
             b0Var = null;
         } else {
@@ -310,9 +310,9 @@ public class PublicKeyCredentialRequestOptions extends y {
         }
         hf.c.s(parcel, 8, b0Var, false);
         hf.c.q(parcel, 9, c(), i10, false);
-        hf.c.p(parcel, 10, this.f14936t, false);
+        hf.c.p(parcel, 10, this.f14565t, false);
         hf.c.s(parcel, 11, null, false);
-        hf.c.q(parcel, 12, this.f14937u, i10, false);
+        hf.c.q(parcel, 12, this.f14566u, i10, false);
         hf.c.b(parcel, a10);
     }
 }

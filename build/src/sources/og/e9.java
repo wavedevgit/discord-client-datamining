@@ -3,22 +3,22 @@ package og;
 public final class e9 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Long f43006a;
+    private final Long f43134a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Long f43007b;
+    private final Long f43135b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Long f43008c;
+    private final Long f43136c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Long f43009d;
+    private final Long f43137d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Long f43010e;
+    private final Long f43138e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Long f43011f;
+    private final Long f43139f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ e9(c9 c9Var, d9 d9Var) {
@@ -28,41 +28,41 @@ public final class e9 {
         Long l13;
         Long l14;
         Long l15;
-        l10 = c9Var.f42807a;
-        this.f43006a = l10;
-        l11 = c9Var.f42808b;
-        this.f43007b = l11;
-        l12 = c9Var.f42809c;
-        this.f43008c = l12;
-        l13 = c9Var.f42810d;
-        this.f43009d = l13;
-        l14 = c9Var.f42811e;
-        this.f43010e = l14;
-        l15 = c9Var.f42812f;
-        this.f43011f = l15;
+        l10 = c9Var.f42935a;
+        this.f43134a = l10;
+        l11 = c9Var.f42936b;
+        this.f43135b = l11;
+        l12 = c9Var.f42937c;
+        this.f43136c = l12;
+        l13 = c9Var.f42938d;
+        this.f43137d = l13;
+        l14 = c9Var.f42939e;
+        this.f43138e = l14;
+        l15 = c9Var.f42940f;
+        this.f43139f = l15;
     }
 
     public final Long a() {
-        return this.f43008c;
+        return this.f43136c;
     }
 
     public final Long b() {
-        return this.f43009d;
+        return this.f43137d;
     }
 
     public final Long c() {
-        return this.f43006a;
+        return this.f43134a;
     }
 
     public final Long d() {
-        return this.f43010e;
+        return this.f43138e;
     }
 
     public final Long e() {
-        return this.f43007b;
+        return this.f43135b;
     }
 
     public final Long f() {
-        return this.f43011f;
+        return this.f43139f;
     }
 }

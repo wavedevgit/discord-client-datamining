@@ -24,7 +24,7 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-AFFcxXc$default  reason: not valid java name */
-    public static /* synthetic */ FlaggedMessageEmbedAccessory m575copyAFFcxXc$default(FlaggedMessageEmbedAccessory flaggedMessageEmbedAccessory, String str, MessageMargins messageMargins, Message message, MessageContext messageContext, int i10, Object obj) {
+    public static /* synthetic */ FlaggedMessageEmbedAccessory m577copyAFFcxXc$default(FlaggedMessageEmbedAccessory flaggedMessageEmbedAccessory, String str, MessageMargins messageMargins, Message message, MessageContext messageContext, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = flaggedMessageEmbedAccessory.messageId;
         }
@@ -37,12 +37,12 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
         if ((i10 & 8) != 0) {
             messageContext = flaggedMessageEmbedAccessory.messageContext;
         }
-        return flaggedMessageEmbedAccessory.m577copyAFFcxXc(str, messageMargins, message, messageContext);
+        return flaggedMessageEmbedAccessory.m579copyAFFcxXc(str, messageMargins, message, messageContext);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m576component13Eiw7ao() {
+    public final String m578component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -63,7 +63,7 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-AFFcxXc  reason: not valid java name */
-    public final FlaggedMessageEmbedAccessory m577copyAFFcxXc(@NotNull String messageId, @NotNull MessageMargins margins, @NotNull Message message, @NotNull MessageContext messageContext) {
+    public final FlaggedMessageEmbedAccessory m579copyAFFcxXc(@NotNull String messageId, @NotNull MessageMargins margins, @NotNull Message message, @NotNull MessageContext messageContext) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(margins, "margins");
         Intrinsics.checkNotNullParameter(message, "message");
@@ -77,7 +77,7 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
         }
         if (obj instanceof FlaggedMessageEmbedAccessory) {
             FlaggedMessageEmbedAccessory flaggedMessageEmbedAccessory = (FlaggedMessageEmbedAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, flaggedMessageEmbedAccessory.messageId) && Intrinsics.areEqual(this.margins, flaggedMessageEmbedAccessory.margins) && Intrinsics.areEqual(this.message, flaggedMessageEmbedAccessory.message) && Intrinsics.areEqual(this.messageContext, flaggedMessageEmbedAccessory.messageContext);
+            return MessageId.m1090equalsimpl0(this.messageId, flaggedMessageEmbedAccessory.messageId) && Intrinsics.areEqual(this.margins, flaggedMessageEmbedAccessory.margins) && Intrinsics.areEqual(this.message, flaggedMessageEmbedAccessory.message) && Intrinsics.areEqual(this.messageContext, flaggedMessageEmbedAccessory.messageContext);
         }
         return false;
     }
@@ -100,21 +100,21 @@ public final class FlaggedMessageEmbedAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.message.hashCode()) * 31) + this.messageContext.hashCode();
+        return (((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.message.hashCode()) * 31) + this.messageContext.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         Message message = this.message;
         MessageContext messageContext = this.messageContext;
-        return "FlaggedMessageEmbedAccessory(messageId=" + m1091toStringimpl + ", margins=" + messageMargins + ", message=" + message + ", messageContext=" + messageContext + ")";
+        return "FlaggedMessageEmbedAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", message=" + message + ", messageContext=" + messageContext + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

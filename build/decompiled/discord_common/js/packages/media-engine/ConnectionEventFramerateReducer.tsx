@@ -60,15 +60,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = arg1;
             var2.sinkWants = var4;
             var4 = function(arg0, arg1) { // Environment: var3
-                _fun32715: for (var _fun32715_ip = 0;;) switch (_fun32715_ip) {
+                _fun32805: for (var _fun32805_ip = 0;;) switch (_fun32805_ip) {
                     case 0:
                         var1 = _closure3_slot0;
                         var1 = var1.connection;
                         var2 = var1.userId;
                         var1 = arg0;
                         if (!(var1 === var2)) {
-                            _fun32715_ip = 60;
-                            continue _fun32715
+                            _fun32805_ip = 60;
+                            continue _fun32805
                         }
                     case 25:
                         var2 = _closure3_slot0;
@@ -85,15 +85,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.handleSpeaking = var4;
             var3 = function(arg0) { // Environment: var3
-                _fun32716: for (var _fun32716_ip = 0;;) switch (_fun32716_ip) {
+                _fun32806: for (var _fun32806_ip = 0;;) switch (_fun32806_ip) {
                     case 0:
                         var1 = _closure3_slot0;
                         var2 = var1.connection;
                         var1 = var2.hasDesktopSource;
                         var1 = var1.bind(var2)();
                         if (var1) {
-                            _fun32716_ip = 65;
-                            continue _fun32716
+                            _fun32806_ip = 65;
+                            continue _fun32806
                         }
                     case 26:
                         var1 = _closure3_slot0;
@@ -154,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'userSpeakingChange';
         var0.key = var5;
         var5 = function arg0() {
-            _fun32718: for (var _fun32718_ip = 0;;) switch (_fun32718_ip) {
+            _fun32808: for (var _fun32808_ip = 0;;) switch (_fun32808_ip) {
                 case 0:
                     var1 = this;
                     var _closure3_slot0 = var1;
@@ -162,23 +162,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.hasDesktopSource;
                     var2 = var2.bind(var3)();
                     if (var2) {
-                        _fun32718_ip = 119;
-                        continue _fun32718
+                        _fun32808_ip = 119;
+                        continue _fun32808
                     }
                 case 28:
                     var2 = var1.destroyFramerateScaleFactorTimers;
                     var2 = var2.bind(var1)();
                     var2 = arg0;
                     if (var2) {
-                        _fun32718_ip = 85;
-                        continue _fun32718
+                        _fun32808_ip = 85;
+                        continue _fun32808
                     }
                 case 44:
                     var2 = var1.sinkWants;
                     var2 = var2.isMuted;
                     if (!var2) {
-                        _fun32718_ip = 119;
-                        continue _fun32718
+                        _fun32808_ip = 119;
+                        continue _fun32808
                     }
                 case 59:
                     var3 = var1.sinkWants;
@@ -186,22 +186,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3.isMuted = var2;
                     var2 = var1.updateRemoteWantsFramerate;
                     var2 = var2.bind(var1)();
-                    _fun32718_ip = 119;
-                    continue _fun32718;
+                    _fun32808_ip = 119;
+                    continue _fun32808;
                 case 85:
                     var2 = global;
                     var4 = var2.setTimeout;
                     var3 = _closure1_slot5;
                     var2 = undefined;
                     var0 = function() { // Environment: var0
-                        _fun32719: for (var _fun32719_ip = 0;;) switch (_fun32719_ip) {
+                        _fun32809: for (var _fun32809_ip = 0;;) switch (_fun32809_ip) {
                             case 0:
                                 var1 = _closure3_slot0;
                                 var1 = var1.connection;
                                 var1 = var1.destroyed;
                                 if (var1) {
-                                    _fun32719_ip = 111;
-                                    continue _fun32719
+                                    _fun32809_ip = 111;
+                                    continue _fun32809
                                 }
                             case 22:
                                 var3 = _closure1_slot6;
@@ -240,15 +240,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'destroyFramerateScaleFactorTimers';
         var0.key = var5;
         var5 = function() {
-            _fun32720: for (var _fun32720_ip = 0;;) switch (_fun32720_ip) {
+            _fun32810: for (var _fun32810_ip = 0;;) switch (_fun32810_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.framerateReductionTimeout;
                     var2 = 'number';
                     var0 = typeof var0;
                     if (!(var2 === var0)) {
-                        _fun32720_ip = 47;
-                        continue _fun32720
+                        _fun32810_ip = 47;
+                        continue _fun32810
                     }
                 case 20:
                     var0 = global;
@@ -303,4 +303,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 3471, 4, 3594, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 3501, 4, 3624, 2]);

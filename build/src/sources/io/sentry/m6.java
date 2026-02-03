@@ -8,31 +8,31 @@ import java.util.concurrent.Callable;
 public final class m6 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f30210d;
+    private final String f29776d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Integer f30211e;
+    private final Integer f29777e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f30212i;
+    private final String f29778i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f30213o;
+    private final String f29779o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final v6 f30214p;
+    private final v6 f29780p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f30215q;
+    private final int f29781q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Callable f30216r;
+    private final Callable f29782r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f30217s;
+    private final String f29783s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Map f30218t;
+    private Map f29784t;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -56,48 +56,48 @@ public final class m6 implements w1 {
             Integer num = null;
             int i10 = 0;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
+                String m02 = e3Var.m0();
+                m02.getClass();
                 char c10 = 65535;
-                switch (l02.hashCode()) {
+                switch (m02.hashCode()) {
                     case -1966910237:
-                        if (l02.equals("item_count")) {
+                        if (m02.equals("item_count")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -1106363674:
-                        if (l02.equals("length")) {
+                        if (m02.equals("length")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case -734768633:
-                        if (l02.equals("filename")) {
+                        if (m02.equals("filename")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case -672977706:
-                        if (l02.equals("attachment_type")) {
+                        if (m02.equals("attachment_type")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 3575610:
-                        if (l02.equals("type")) {
+                        if (m02.equals("type")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 831846208:
-                        if (l02.equals("content_type")) {
+                        if (m02.equals("content_type")) {
                             c10 = 5;
                             break;
                         }
                         break;
                     case 1874684019:
-                        if (l02.equals("platform")) {
+                        if (m02.equals("platform")) {
                             c10 = 6;
                             break;
                         }
@@ -105,7 +105,7 @@ public final class m6 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        num = e3Var.j1();
+                        num = e3Var.k1();
                         break;
                     case 1:
                         i10 = e3Var.nextInt();
@@ -117,7 +117,7 @@ public final class m6 implements w1 {
                         str3 = e3Var.r1();
                         break;
                     case 4:
-                        v6Var = (v6) e3Var.G0(iLogger, new v6.a());
+                        v6Var = (v6) e3Var.H0(iLogger, new v6.a());
                         break;
                     case 5:
                         str = e3Var.r1();
@@ -129,7 +129,7 @@ public final class m6 implements w1 {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, l02);
+                        e3Var.v1(iLogger, hashMap, m02);
                         break;
                 }
             }
@@ -144,18 +144,18 @@ public final class m6 implements w1 {
     }
 
     public m6(v6 v6Var, int i10, String str, String str2, String str3, String str4, Integer num) {
-        this.f30214p = (v6) io.sentry.util.y.c(v6Var, "type is required");
-        this.f30210d = str;
-        this.f30215q = i10;
-        this.f30212i = str2;
-        this.f30216r = null;
-        this.f30217s = str3;
-        this.f30213o = str4;
-        this.f30211e = num;
+        this.f29780p = (v6) io.sentry.util.y.c(v6Var, "type is required");
+        this.f29776d = str;
+        this.f29781q = i10;
+        this.f29778i = str2;
+        this.f29782r = null;
+        this.f29783s = str3;
+        this.f29779o = str4;
+        this.f29777e = num;
     }
 
     public int a() {
-        Callable callable = this.f30216r;
+        Callable callable = this.f29782r;
         if (callable != null) {
             try {
                 return ((Integer) callable.call()).intValue();
@@ -163,41 +163,41 @@ public final class m6 implements w1 {
                 return -1;
             }
         }
-        return this.f30215q;
+        return this.f29781q;
     }
 
     public v6 b() {
-        return this.f30214p;
+        return this.f29780p;
     }
 
     public void c(Map map) {
-        this.f30218t = map;
+        this.f29784t = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30210d != null) {
-            f3Var.e("content_type").f(this.f30210d);
+        if (this.f29776d != null) {
+            f3Var.e("content_type").f(this.f29776d);
         }
-        if (this.f30212i != null) {
-            f3Var.e("filename").f(this.f30212i);
+        if (this.f29778i != null) {
+            f3Var.e("filename").f(this.f29778i);
         }
-        f3Var.e("type").j(iLogger, this.f30214p);
-        if (this.f30217s != null) {
-            f3Var.e("attachment_type").f(this.f30217s);
+        f3Var.e("type").j(iLogger, this.f29780p);
+        if (this.f29783s != null) {
+            f3Var.e("attachment_type").f(this.f29783s);
         }
-        if (this.f30213o != null) {
-            f3Var.e("platform").f(this.f30213o);
+        if (this.f29779o != null) {
+            f3Var.e("platform").f(this.f29779o);
         }
-        if (this.f30211e != null) {
-            f3Var.e("item_count").i(this.f30211e);
+        if (this.f29777e != null) {
+            f3Var.e("item_count").i(this.f29777e);
         }
         f3Var.e("length").b(a());
-        Map map = this.f30218t;
+        Map map = this.f29784t;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30218t.get(str);
+                Object obj = this.f29784t.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -212,14 +212,14 @@ public final class m6 implements w1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m6(v6 v6Var, Callable callable, String str, String str2, String str3, String str4, Integer num) {
-        this.f30214p = (v6) io.sentry.util.y.c(v6Var, "type is required");
-        this.f30210d = str;
-        this.f30215q = -1;
-        this.f30212i = str2;
-        this.f30216r = callable;
-        this.f30217s = str3;
-        this.f30213o = str4;
-        this.f30211e = num;
+        this.f29780p = (v6) io.sentry.util.y.c(v6Var, "type is required");
+        this.f29776d = str;
+        this.f29781q = -1;
+        this.f29778i = str2;
+        this.f29782r = callable;
+        this.f29783s = str3;
+        this.f29779o = str4;
+        this.f29777e = num;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

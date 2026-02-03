@@ -10,8 +10,8 @@ import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.viewmanagers.EmojiPickerRowViewManagerInterface;
-import ir.v;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -45,14 +45,14 @@ public final class EmojiPickerRowViewManager extends SimpleViewManager<EmojiPick
     public static final Unit createViewInstance$lambda$2$lambda$0(EmojiPickerRowViewManager emojiPickerRowViewManager, ThemedReactContext themedReactContext, EmojiPickerRowView emojiPickerRowView, String emojiName) {
         Intrinsics.checkNotNullParameter(emojiName, "emojiName");
         emojiPickerRowViewManager.reactEvents.emitEvent(themedReactContext, emojiPickerRowView, new OnPressEmojiEvent(emojiName, (String) null, 2, (DefaultConstructorMarker) null));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createViewInstance$lambda$2$lambda$1(EmojiPickerRowViewManager emojiPickerRowViewManager, ThemedReactContext themedReactContext, EmojiPickerRowView emojiPickerRowView, String emojiName) {
         Intrinsics.checkNotNullParameter(emojiName, "emojiName");
         emojiPickerRowViewManager.reactEvents.emitEvent(themedReactContext, emojiPickerRowView, new OnLongPressEmojiEvent(emojiName, (String) null, 2, (DefaultConstructorMarker) null));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

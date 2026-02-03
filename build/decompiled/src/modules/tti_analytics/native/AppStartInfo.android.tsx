@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var1;
     var1 = {};
     var6 = function() {
-        _fun93316: for (var _fun93316_ip = 0;;) switch (_fun93316_ip) {
+        _fun93290: for (var _fun93290_ip = 0;;) switch (_fun93290_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var4;
                 if (!var0) {
-                    _fun93316_ip = 76;
-                    continue _fun93316
+                    _fun93290_ip = 76;
+                    continue _fun93290
                 }
             case 44:
                 var1 = _closure1_slot4;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = !var1;
                 var1 = !var3;
                 if (!var3) {
-                    _fun93316_ip = 73;
-                    continue _fun93316
+                    _fun93290_ip = 73;
+                    continue _fun93290
                 }
             case 61:
                 var3 = _closure1_slot4;
@@ -65,29 +65,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.getAppUIViewed = var6;
     var6 = function arg0() {
-        _fun93317: for (var _fun93317_ip = 0;;) switch (_fun93317_ip) {
+        _fun93291: for (var _fun93291_ip = 0;;) switch (_fun93291_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var1 = var1.TTIManager;
                 var2 = var1.ApplicationStartedTimestamp;
                 var1 = null;
                 if (!(var1 != var2)) {
-                    _fun93317_ip = 133;
-                    continue _fun93317
+                    _fun93291_ip = 133;
+                    continue _fun93291
                 }
             case 25:
                 var1 = 0;
                 if (!(!(var2 <= var1))) {
-                    _fun93317_ip = 133;
-                    continue _fun93317
+                    _fun93291_ip = 133;
+                    continue _fun93291
                 }
             case 31:
                 var1 = _closure1_slot3;
                 var3 = var1.Version;
                 var1 = 28;
                 if (!(!(var3 < var1))) {
-                    _fun93317_ip = 99;
-                    continue _fun93317
+                    _fun93291_ip = 99;
+                    continue _fun93291
                 }
             case 48:
                 var3 = _closure1_slot0;
@@ -100,22 +100,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var1)();
                 var0 = 'COLD';
                 if (!var1) {
-                    _fun93317_ip = 97;
-                    continue _fun93317
+                    _fun93291_ip = 97;
+                    continue _fun93291
                 }
             case 91:
                 var0 = 'WARM';
             case 97:
-                _fun93317_ip = 131;
-                continue _fun93317;
+                _fun93291_ip = 131;
+                continue _fun93291;
             case 99:
                 var1 = arg0;
                 var3 = var1 - var2;
                 var1 = 'WARM';
                 var2 = 3000;
                 if (!(var3 < var2)) {
-                    _fun93317_ip = 128;
-                    continue _fun93317
+                    _fun93291_ip = 128;
+                    continue _fun93291
                 }
             case 122:
                 var1 = 'COLD';
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.getAppStartType = var6;
     var3 = function() {
-        _fun93318: for (var _fun93318_ip = 0;;) switch (_fun93318_ip) {
+        _fun93292: for (var _fun93292_ip = 0;;) switch (_fun93292_ip) {
             case 0:
                 var7 = this;
                 var1 = _closure1_slot2;
@@ -138,14 +138,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.ApplicationStartedTimestamp;
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun93318_ip = 193;
-                    continue _fun93318
+                    _fun93292_ip = 193;
+                    continue _fun93292
                 }
             case 31:
                 var2 = 0;
                 if (!(!(var3 <= var2))) {
-                    _fun93318_ip = 193;
-                    continue _fun93318
+                    _fun93292_ip = 193;
+                    continue _fun93292
                 }
             case 40:
                 var4 = _closure1_slot0;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.getMainActivityCreationTime;
                 var2 = var2.bind(var4)();
                 if (!(var1 != var2)) {
-                    _fun93318_ip = 157;
-                    continue _fun93318
+                    _fun93292_ip = 157;
+                    continue _fun93292
                 }
             case 76:
                 var1 = {};
@@ -218,4 +218,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.AppStartInfo = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 12176, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 12209, 2]);

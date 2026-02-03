@@ -32,8 +32,6 @@ import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
-import ir.p;
-import ir.v;
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -46,6 +44,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
+import jr.p;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -114,7 +114,7 @@ public final class TouchLogger {
         static {
             PointerEvents[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
         }
 
         private PointerEvents(String str, int i10) {
@@ -1086,7 +1086,7 @@ public final class TouchLogger {
             set.clear();
             Log log = Log.INSTANCE;
             Log.i$default(log, TAG, "✅ Cleared " + size + " listeners", (Throwable) null, 4, (Object) null);
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
         }
     }
 
@@ -1303,7 +1303,7 @@ public final class TouchLogger {
             String simpleName = listener.getClass().getSimpleName();
             int size = set.size();
             Log.i$default(log, TAG, "✅ Registered listener: " + simpleName + " (total: " + size + ")", (Throwable) null, 4, (Object) null);
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
         }
     }
 
@@ -1322,7 +1322,7 @@ public final class TouchLogger {
                     int size = set.size();
                     Log.i$default(log, TAG, "✅ Unregistered listener: " + simpleName + " (total: " + size + ")", (Throwable) null, 4, (Object) null);
                 }
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             } catch (Throwable th2) {
                 throw th2;
             }

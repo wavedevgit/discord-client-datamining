@@ -5,23 +5,23 @@ import ui.c;
 final class w7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w7 f43703a = new w7();
+    static final w7 f43831a = new w7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43704b;
+    private static final ui.c f43832b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43705c;
+    private static final ui.c f43833c;
 
     static {
         c.b a10 = ui.c.a("options");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43704b = a10.b(s1Var.b()).a();
+        f43832b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("errorCode");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43705c = a11.b(s1Var2.b()).a();
+        f43833c = a11.b(s1Var2.b()).a();
     }
 
     private w7() {

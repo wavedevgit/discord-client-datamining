@@ -46,13 +46,13 @@ public final class AttributeStyles_LocalImageFillColorStyleJsonAdapter extends h
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
@@ -65,9 +65,9 @@ public final class AttributeStyles_LocalImageFillColorStyleJsonAdapter extends h
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (localImageFillColorStyle != null) {
             writer.l();
-            writer.A0("base");
+            writer.t0("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, localImageFillColorStyle.getBase());
-            writer.A0(AppStateModule.APP_STATE_BACKGROUND);
+            writer.t0(AppStateModule.APP_STATE_BACKGROUND);
             this.nullableSimpleElementColorAdapter.toJson(writer, localImageFillColorStyle.getBackground());
             writer.E();
             return;

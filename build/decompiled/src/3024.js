@@ -1,164 +1,81 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun24415: for (var _fun24415_ip = 0;;) switch (_fun24415_ip) {
+    _fun24047: for (var _fun24047_ip = 0;;) switch (_fun24047_ip) {
         case 0:
-            var3 = require;
-            var2 = function arg0() {
-                var3 = arg0;
-                var2 = var3.defineLocale;
-                var1 = {};
-                var4 = 'janeiro_fevereiro_março_abril_maio_junho_julho_agosto_setembro_outubro_novembro_dezembro';
-                var0 = var4.split;
-                var5 = '_';
-                var0 = var0.bind(var4)(var5);
-                var1.months = var0;
-                var4 = 'jan_fev_mar_abr_mai_jun_jul_ago_set_out_nov_dez';
-                var0 = var4.split;
-                var0 = var0.bind(var4)(var5);
-                var1.monthsShort = var0;
-                var4 = 'Domingo_Segunda-feira_Terça-feira_Quarta-feira_Quinta-feira_Sexta-feira_Sábado';
-                var0 = var4.split;
-                var0 = var0.bind(var4)(var5);
-                var1.weekdays = var0;
-                var4 = 'Dom_Seg_Ter_Qua_Qui_Sex_Sáb';
-                var0 = var4.split;
-                var0 = var0.bind(var4)(var5);
-                var1.weekdaysShort = var0;
-                var4 = 'Do_2ª_3ª_4ª_5ª_6ª_Sá';
-                var0 = var4.split;
-                var0 = var0.bind(var4)(var5);
-                var1.weekdaysMin = var0;
-                var0 = true;
-                var1.weekdaysParseExact = var0;
-                var0 = {
-                    'LT': 'HH:mm',
-                    'LTS': 'HH:mm:ss',
-                    'L': 'DD/MM/YYYY',
-                    'LL': 'D [de] MMMM [de] YYYY',
-                    'LLL': 'D [de] MMMM [de] YYYY [às] HH:mm',
-                    'LLLL': 'dddd, D [de] MMMM [de] YYYY [às] HH:mm'
-                };
-                var1.longDateFormat = var0;
-                var0 = {
-                    'sameDay': '[Hoje às] LT',
-                    'nextDay': '[Amanhã às] LT',
-                    'nextWeek': 'dddd [às] LT',
-                    'lastDay': '[Ontem às] LT',
-                    'lastWeek': null,
-                    'sameElse': 'L'
-                };
-                var4 = function() {
-                    _fun24417: for (var _fun24417_ip = 0;;) switch (_fun24417_ip) {
-                        case 0:
-                            var1 = this;
-                            var0 = var1.day;
-                            var2 = var0.bind(var1)();
-                            var0 = 0;
-                            if (!(var0 !== var2)) {
-                                _fun24417_ip = 42;
-                                continue _fun24417
-                            }
-                        case 19:
-                            var0 = var1.day;
-                            var2 = var0.bind(var1)();
-                            var0 = '[Última] dddd [às] LT';
-                            var1 = 6;
-                            if (!(var1 === var2)) {
-                                _fun24417_ip = 48;
-                                continue _fun24417
-                            }
-                        case 42:
-                            var0 = '[Último] dddd [às] LT';
-                        case 48:
-                            return var0;
-                    }
-                };
-                var0.lastWeek = var4;
-                var1.calendar = var0;
-                var0 = {
-                    'future': 'em %s',
-                    'past': 'há %s',
-                    's': 'poucos segundos',
-                    'ss': '%d segundos',
-                    'm': 'um minuto',
-                    'mm': '%d minutos',
-                    'h': 'uma hora',
-                    'hh': '%d horas',
-                    'd': 'um dia',
-                    'dd': '%d dias',
-                    'M': 'um mês',
-                    'MM': '%d meses',
-                    'y': 'um ano',
-                    'yy': '%d anos'
-                };
-                var1.relativeTime = var0;
-                var0 = /\d{1,2}º/;
-                var1.dayOfMonthOrdinalParse = var0;
-                var0 = '%dº';
-                var1.ordinal = var0;
-                var0 = 'pt-br';
-                var0 = var2.bind(var3)(var0, var1);
-                return var0;
-            };
-            var1 = 'object';
-            var0 = arg5;
-            var0 = typeof var0;
-            if (!(var1 === var0)) {
-                _fun24415_ip = 44;
-                continue _fun24415
-            }
-        case 24:
-            var1 = undefined;
-            var0 = arg4;
-            if (!(var1 !== var0)) {
-                _fun24415_ip = 44;
-                continue _fun24415
-            }
-        case 33:
-            var4 = 'function';
-            var0 = typeof var3;
-            if (!(var4 !== var0)) {
-                _fun24415_ip = 121;
-                continue _fun24415
-            }
-        case 44:
+            var1 = exports;
             var0 = global;
-            var4 = var0.define;
-            var5 = 'function';
-            var4 = typeof var4;
-            if (!(var5 === var4)) {
-                _fun24415_ip = 78;
-                continue _fun24415
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var2 = {};
+            var0 = true;
+            var2.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var1, var0, var2);
+            var0 = undefined;
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun24047_ip = 75;
+                continue _fun24047
             }
         case 63:
-            var4 = var0.define;
-            var4 = var4.amd;
-            if (var4) {
-                _fun24415_ip = 95;
-                continue _fun24415
+            var2 = var4.__esModule;
+            var3 = var4;
+            if (var2) {
+                _fun24047_ip = 84;
+                continue _fun24047
             }
-        case 78:
-            var4 = this;
-            var5 = var4.moment;
-            var4 = undefined;
-            var4 = var2.bind(var4)(var5);
-            _fun24415_ip = 140;
-            continue _fun24415;
-        case 95:
-            var5 = var0.define;
-            var4 = undefined;
-            var0 = ['../moment'];
-            var0 = var5.bind(var4)(var0, var2);
-            _fun24415_ip = 140;
-            continue _fun24415;
-        case 121:
-            var4 = arg6;
-            var0 = 0;
-            var0 = var4[var0];
-            var0 = var3.bind(var1)(var0);
-            var0 = var2.bind(var1)(var0);
-        case 140:
-            var0 = undefined;
+        case 75:
+            var2 = {};
+            var2.default = var4;
+            var3 = var2;
+        case 84:
+            var2 = {};
+            var6 = var3.default;
+            var4 = {};
+            var5 = {
+                'full': "y'年'M'月'd'日' EEEE",
+                'long': "y'年'M'月'd'日'",
+                'medium': 'yyyy-MM-dd',
+                'short': 'yy-MM-dd'
+            };
+            var4.formats = var5;
+            var5 = 'full';
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.date = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {
+                'full': 'zzzz a h:mm:ss',
+                'long': 'z a h:mm:ss',
+                'medium': 'a h:mm:ss',
+                'short': 'a h:mm'
+            };
+            var4.formats = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.time = var4;
+            var4 = var3.default;
+            var3 = {};
+            var6 = {
+                'full': '{{date}} {{time}}',
+                'long': '{{date}} {{time}}',
+                'medium': '{{date}} {{time}}',
+                'short': '{{date}} {{time}}'
+            };
+            var3.formats = var6;
+            var3.defaultWidth = var5;
+            var3 = var4.bind(var0)(var3);
+            var2.dateTime = var3;
+            var1.default = var2;
+            var2 = var1.default;
+            var1 = module;
+            var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3006]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1681]);

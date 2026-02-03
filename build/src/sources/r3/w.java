@@ -9,19 +9,19 @@ import x3.h;
 public class w extends h.a {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f48013g = new a(null);
+    public static final a f48215g = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private f f48014c;
+    private f f48216c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f48015d;
+    private final b f48217d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f48016e;
+    private final String f48218e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f48017f;
+    private final String f48219f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -39,13 +39,13 @@ public class w extends h.a {
                         z10 = true;
                     }
                 }
-                tr.c.a(H1, null);
+                ur.c.a(H1, null);
                 return z10;
             } catch (Throwable th2) {
                 try {
                     throw th2;
                 } catch (Throwable th3) {
-                    tr.c.a(H1, th2);
+                    ur.c.a(H1, th2);
                     throw th3;
                 }
             }
@@ -61,13 +61,13 @@ public class w extends h.a {
                         z10 = true;
                     }
                 }
-                tr.c.a(H1, null);
+                ur.c.a(H1, null);
                 return z10;
             } catch (Throwable th2) {
                 try {
                     throw th2;
                 } catch (Throwable th3) {
-                    tr.c.a(H1, th2);
+                    ur.c.a(H1, th2);
                     throw th3;
                 }
             }
@@ -81,10 +81,10 @@ public class w extends h.a {
     public static abstract class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f48018a;
+        public final int f48220a;
 
         public b(int i10) {
-            this.f48018a = i10;
+            this.f48220a = i10;
         }
 
         public abstract void a(x3.g gVar);
@@ -106,61 +106,61 @@ public class w extends h.a {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final boolean f48019a;
+        public final boolean f48221a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final String f48020b;
+        public final String f48222b;
 
         public c(boolean z10, String str) {
-            this.f48019a = z10;
-            this.f48020b = str;
+            this.f48221a = z10;
+            this.f48222b = str;
         }
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public w(f configuration, b delegate, String identityHash, String legacyHash) {
-        super(delegate.f48018a);
+        super(delegate.f48220a);
         Intrinsics.checkNotNullParameter(configuration, "configuration");
         Intrinsics.checkNotNullParameter(delegate, "delegate");
         Intrinsics.checkNotNullParameter(identityHash, "identityHash");
         Intrinsics.checkNotNullParameter(legacyHash, "legacyHash");
-        this.f48014c = configuration;
-        this.f48015d = delegate;
-        this.f48016e = identityHash;
-        this.f48017f = legacyHash;
+        this.f48216c = configuration;
+        this.f48217d = delegate;
+        this.f48218e = identityHash;
+        this.f48219f = legacyHash;
     }
 
     private final void h(x3.g gVar) {
         c g10;
         String str;
-        if (f48013g.b(gVar)) {
-            Cursor Q0 = gVar.Q0(new x3.a("SELECT identity_hash FROM room_master_table WHERE id = 42 LIMIT 1"));
+        if (f48215g.b(gVar)) {
+            Cursor S0 = gVar.S0(new x3.a("SELECT identity_hash FROM room_master_table WHERE id = 42 LIMIT 1"));
             try {
-                if (Q0.moveToFirst()) {
-                    str = Q0.getString(0);
+                if (S0.moveToFirst()) {
+                    str = S0.getString(0);
                 } else {
                     str = null;
                 }
-                tr.c.a(Q0, null);
-                if (!Intrinsics.areEqual(this.f48016e, str) && !Intrinsics.areEqual(this.f48017f, str)) {
-                    throw new IllegalStateException("Room cannot verify the data integrity. Looks like you've changed schema but forgot to update the version number. You can simply fix this by increasing the version number. Expected identity hash: " + this.f48016e + ", found: " + str);
+                ur.c.a(S0, null);
+                if (!Intrinsics.areEqual(this.f48218e, str) && !Intrinsics.areEqual(this.f48219f, str)) {
+                    throw new IllegalStateException("Room cannot verify the data integrity. Looks like you've changed schema but forgot to update the version number. You can simply fix this by increasing the version number. Expected identity hash: " + this.f48218e + ", found: " + str);
                 }
                 return;
             } catch (Throwable th2) {
                 try {
                     throw th2;
                 } catch (Throwable th3) {
-                    tr.c.a(Q0, th2);
+                    ur.c.a(S0, th2);
                     throw th3;
                 }
             }
         }
-        if (this.f48015d.g(gVar).f48019a) {
-            this.f48015d.e(gVar);
+        if (this.f48217d.g(gVar).f48221a) {
+            this.f48217d.e(gVar);
             j(gVar);
             return;
         }
-        throw new IllegalStateException("Pre-packaged database has an invalid schema: " + g10.f48020b);
+        throw new IllegalStateException("Pre-packaged database has an invalid schema: " + g10.f48222b);
     }
 
     private final void i(x3.g gVar) {
@@ -169,7 +169,7 @@ public class w extends h.a {
 
     private final void j(x3.g gVar) {
         i(gVar);
-        gVar.K(v.a(this.f48016e));
+        gVar.K(v.a(this.f48218e));
     }
 
     @Override // x3.h.a
@@ -181,16 +181,16 @@ public class w extends h.a {
     @Override // x3.h.a
     public void d(x3.g db2) {
         Intrinsics.checkNotNullParameter(db2, "db");
-        boolean a10 = f48013g.a(db2);
-        this.f48015d.a(db2);
+        boolean a10 = f48215g.a(db2);
+        this.f48217d.a(db2);
         if (!a10) {
-            c g10 = this.f48015d.g(db2);
-            if (!g10.f48019a) {
-                throw new IllegalStateException("Pre-packaged database has an invalid schema: " + g10.f48020b);
+            c g10 = this.f48217d.g(db2);
+            if (!g10.f48221a) {
+                throw new IllegalStateException("Pre-packaged database has an invalid schema: " + g10.f48222b);
             }
         }
         j(db2);
-        this.f48015d.c(db2);
+        this.f48217d.c(db2);
     }
 
     @Override // x3.h.a
@@ -204,32 +204,32 @@ public class w extends h.a {
         Intrinsics.checkNotNullParameter(db2, "db");
         super.f(db2);
         h(db2);
-        this.f48015d.d(db2);
-        this.f48014c = null;
+        this.f48217d.d(db2);
+        this.f48216c = null;
     }
 
     @Override // x3.h.a
     public void g(x3.g db2, int i10, int i11) {
         List<s3.b> d10;
         Intrinsics.checkNotNullParameter(db2, "db");
-        f fVar = this.f48014c;
-        if (fVar != null && (d10 = fVar.f47895d.d(i10, i11)) != null) {
-            this.f48015d.f(db2);
+        f fVar = this.f48216c;
+        if (fVar != null && (d10 = fVar.f48097d.d(i10, i11)) != null) {
+            this.f48217d.f(db2);
             for (s3.b bVar : d10) {
                 bVar.a(db2);
             }
-            c g10 = this.f48015d.g(db2);
-            if (g10.f48019a) {
-                this.f48015d.e(db2);
+            c g10 = this.f48217d.g(db2);
+            if (g10.f48221a) {
+                this.f48217d.e(db2);
                 j(db2);
                 return;
             }
-            throw new IllegalStateException("Migration didn't properly handle: " + g10.f48020b);
+            throw new IllegalStateException("Migration didn't properly handle: " + g10.f48222b);
         }
-        f fVar2 = this.f48014c;
+        f fVar2 = this.f48216c;
         if (fVar2 != null && !fVar2.a(i10, i11)) {
-            this.f48015d.b(db2);
-            this.f48015d.a(db2);
+            this.f48217d.b(db2);
+            this.f48217d.a(db2);
             return;
         }
         throw new IllegalStateException("A migration from " + i10 + " to " + i11 + " was required but not found. Please provide the necessary Migration path via RoomDatabase.Builder.addMigration(Migration ...) or allow for destructive migrations via one of the RoomDatabase.Builder.fallbackToDestructiveMigration* methods.");

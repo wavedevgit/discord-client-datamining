@@ -7,26 +7,26 @@ import android.graphics.Rect;
 abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    b f16298a;
+    b f15927a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     protected static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        float f16299a;
+        float f15928a;
 
         /* renamed from: b  reason: collision with root package name */
-        float f16300b;
+        float f15929b;
 
         /* renamed from: c  reason: collision with root package name */
-        int f16301c;
+        int f15930c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f16302d;
+        int f15931d;
     }
 
     public h(b bVar) {
-        this.f16298a = bVar;
+        this.f15927a = bVar;
     }
 
     abstract void a(Canvas canvas, Rect rect, float f10, boolean z10, boolean z11);
@@ -48,7 +48,7 @@ abstract class h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(Canvas canvas, Rect rect, float f10, boolean z10, boolean z11) {
-        this.f16298a.e();
+        this.f15927a.e();
         a(canvas, rect, f10, z10, z11);
     }
 }

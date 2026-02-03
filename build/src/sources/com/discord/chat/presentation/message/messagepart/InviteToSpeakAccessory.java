@@ -12,7 +12,7 @@ public final class InviteToSpeakAccessory extends MessageAccessory {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public InviteToSpeakAccessory(@NotNull Message message) {
-        super(message.m237getId3Eiw7ao(), "invite to speak", false, 4, null);
+        super(message.m239getId3Eiw7ao(), "invite to speak", false, 4, null);
         Intrinsics.checkNotNullParameter(message, "message");
         this.message = message;
     }

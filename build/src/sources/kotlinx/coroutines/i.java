@@ -1,8 +1,8 @@
 package kotlinx.coroutines;
 
-import gs.j1;
-import gs.m0;
-import gs.s0;
+import hs.j1;
+import hs.m0;
+import hs.s0;
 import java.util.concurrent.CancellationException;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
@@ -11,15 +11,15 @@ import kotlin.jvm.functions.Function2;
 public abstract class i {
     public static final CoroutineScope a(CoroutineContext coroutineContext) {
         CompletableJob b10;
-        if (coroutineContext.l(Job.f36307j) == null) {
+        if (coroutineContext.l(Job.f36083j) == null) {
             b10 = a0.b(null, 1, null);
-            coroutineContext = coroutineContext.U0(b10);
+            coroutineContext = coroutineContext.Z0(b10);
         }
-        return new ls.e(coroutineContext);
+        return new ms.e(coroutineContext);
     }
 
     public static final CoroutineScope b() {
-        return new ls.e(j1.b(null, 1, null).U0(m0.c()));
+        return new ms.e(j1.b(null, 1, null).Z0(m0.c()));
     }
 
     public static final void c(CoroutineScope coroutineScope, String str, Throwable th2) {
@@ -27,7 +27,7 @@ public abstract class i {
     }
 
     public static final void d(CoroutineScope coroutineScope, CancellationException cancellationException) {
-        Job job = (Job) coroutineScope.getCoroutineContext().l(Job.f36307j);
+        Job job = (Job) coroutineScope.getCoroutineContext().l(Job.f36083j);
         if (job != null) {
             job.h(cancellationException);
             return;
@@ -50,9 +50,9 @@ public abstract class i {
     }
 
     public static final Object g(Function2 function2, Continuation continuation) {
-        ls.a0 a0Var = new ls.a0(continuation.getContext(), continuation);
-        Object d10 = ms.b.d(a0Var, a0Var, function2);
-        if (d10 == or.b.f()) {
+        ms.a0 a0Var = new ms.a0(continuation.getContext(), continuation);
+        Object d10 = ns.b.d(a0Var, a0Var, function2);
+        if (d10 == pr.b.f()) {
             kotlin.coroutines.jvm.internal.g.c(continuation);
         }
         return d10;
@@ -63,7 +63,7 @@ public abstract class i {
     }
 
     public static final boolean i(CoroutineScope coroutineScope) {
-        Job job = (Job) coroutineScope.getCoroutineContext().l(Job.f36307j);
+        Job job = (Job) coroutineScope.getCoroutineContext().l(Job.f36083j);
         if (job != null) {
             return job.a();
         }
@@ -71,6 +71,6 @@ public abstract class i {
     }
 
     public static final CoroutineScope j(CoroutineScope coroutineScope, CoroutineContext coroutineContext) {
-        return new ls.e(coroutineScope.getCoroutineContext().U0(coroutineContext));
+        return new ms.e(coroutineScope.getCoroutineContext().Z0(coroutineContext));
     }
 }

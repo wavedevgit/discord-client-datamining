@@ -8,28 +8,28 @@ import android.os.SystemClock;
 public class b extends f implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f11054d;
+    private int f10683d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f11055e;
+    private boolean f10684e;
 
     /* renamed from: i  reason: collision with root package name */
-    float f11056i;
+    float f10685i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f11057o;
+    private boolean f10686o;
 
     public b(Drawable drawable, int i10) {
         this(drawable, i10, true);
     }
 
     private int i() {
-        return (int) ((20.0f / this.f11054d) * 360.0f);
+        return (int) ((20.0f / this.f10683d) * 360.0f);
     }
 
     private void j() {
-        if (!this.f11057o) {
-            this.f11057o = true;
+        if (!this.f10686o) {
+            this.f10686o = true;
             scheduleSelf(this, SystemClock.uptimeMillis() + 20);
         }
     }
@@ -44,8 +44,8 @@ public class b extends f implements Runnable {
         int i13 = bounds.bottom;
         int i14 = bounds.top;
         int i15 = i13 - i14;
-        float f10 = this.f11056i;
-        if (!this.f11055e) {
+        float f10 = this.f10685i;
+        if (!this.f10684e) {
             f10 = 360.0f - f10;
         }
         canvas.rotate(f10, i11 + (i12 / 2), i14 + (i15 / 2));
@@ -56,16 +56,16 @@ public class b extends f implements Runnable {
 
     @Override // java.lang.Runnable
     public void run() {
-        this.f11057o = false;
-        this.f11056i += i();
+        this.f10686o = false;
+        this.f10685i += i();
         invalidateSelf();
     }
 
     public b(Drawable drawable, int i10, boolean z10) {
         super((Drawable) o8.j.g(drawable));
-        this.f11056i = 0.0f;
-        this.f11057o = false;
-        this.f11054d = i10;
-        this.f11055e = z10;
+        this.f10685i = 0.0f;
+        this.f10686o = false;
+        this.f10683d = i10;
+        this.f10684e = z10;
     }
 }

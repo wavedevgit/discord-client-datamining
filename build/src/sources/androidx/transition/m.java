@@ -6,7 +6,7 @@ import android.graphics.Rect;
 class m implements TypeEvaluator {
 
     /* renamed from: a  reason: collision with root package name */
-    private Rect f5280a;
+    private Rect f5324a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m() {
@@ -23,16 +23,16 @@ class m implements TypeEvaluator {
         int i15 = i14 + ((int) ((rect2.right - i14) * f10));
         int i16 = rect.bottom;
         int i17 = i16 + ((int) ((rect2.bottom - i16) * f10));
-        Rect rect3 = this.f5280a;
+        Rect rect3 = this.f5324a;
         if (rect3 == null) {
             return new Rect(i11, i13, i15, i17);
         }
         rect3.set(i11, i13, i15, i17);
-        return this.f5280a;
+        return this.f5324a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m(Rect rect) {
-        this.f5280a = rect;
+        this.f5324a = rect;
     }
 }

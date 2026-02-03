@@ -43,7 +43,7 @@ public abstract class BaseReactPackage implements ReactPackage {
     }
 
     @Override // com.facebook.react.ReactPackage
-    @ir.c
+    @jr.c
     @NotNull
     public List<NativeModule> createNativeModules(@NotNull ReactApplicationContext reactContext) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");

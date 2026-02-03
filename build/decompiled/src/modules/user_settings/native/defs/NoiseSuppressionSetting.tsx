@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useValue = var8;
     var8 = function arg0() {
-        _fun84400: for (var _fun84400_ip = 0;;) switch (_fun84400_ip) {
+        _fun84771: for (var _fun84771_ip = 0;;) switch (_fun84771_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -86,13 +86,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1.NoiseSuppressionOpt;
                 var1 = arg0;
                 if (var1) {
-                    _fun84400_ip = 68;
-                    continue _fun84400
+                    _fun84771_ip = 68;
+                    continue _fun84771
                 }
             case 60:
                 var1 = var4.NONE;
-                _fun84400_ip = 74;
-                continue _fun84400;
+                _fun84771_ip = 74;
+                continue _fun84771;
             case 68:
                 var1 = var4.STANDARD;
             case 74:
@@ -132,4 +132,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3437, 6969, 566, 10758, 8945, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3467, 7000, 566, 10834, 8977, 1234, 2]);

@@ -27,7 +27,7 @@ public final class c extends e {
         Intrinsics.checkNotNullParameter(intent, "intent");
         if (intent.getAction() != null) {
             k4.m e10 = k4.m.e();
-            str = d.f42400a;
+            str = d.f42528a;
             e10.a(str, "Received " + intent.getAction());
             String action = intent.getAction();
             if (action != null) {
@@ -50,7 +50,7 @@ public final class c extends e {
         Intent registerReceiver = d().registerReceiver(null, new IntentFilter("android.intent.action.BATTERY_CHANGED"));
         if (registerReceiver == null) {
             k4.m e10 = k4.m.e();
-            str = d.f42400a;
+            str = d.f42528a;
             e10.c(str, "getInitialState - null intent received");
             return Boolean.FALSE;
         }

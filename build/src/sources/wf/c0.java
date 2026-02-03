@@ -13,23 +13,23 @@ public class c0 extends hf.a {
     public static final Parcelable.Creator<c0> CREATOR = new e1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f52461d;
+    private final List f52028d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c0(List list) {
-        this.f52461d = list;
+        this.f52028d = list;
     }
 
     public List b() {
-        return this.f52461d;
+        return this.f52028d;
     }
 
     public final JSONArray c() {
         try {
             JSONArray jSONArray = new JSONArray();
-            if (this.f52461d != null) {
-                for (int i10 = 0; i10 < this.f52461d.size(); i10++) {
-                    d0 d0Var = (d0) this.f52461d.get(i10);
+            if (this.f52028d != null) {
+                for (int i10 = 0; i10 < this.f52028d.size(); i10++) {
+                    d0 d0Var = (d0) this.f52028d.get(i10);
                     JSONArray jSONArray2 = new JSONArray();
                     jSONArray2.put(d0Var.d());
                     jSONArray2.put(Short.toString(d0Var.b()));
@@ -49,11 +49,11 @@ public class c0 extends hf.a {
             return false;
         }
         c0 c0Var = (c0) obj;
-        List list2 = this.f52461d;
-        if (list2 == null && c0Var.f52461d == null) {
+        List list2 = this.f52028d;
+        if (list2 == null && c0Var.f52028d == null) {
             return true;
         }
-        if (list2 == null || (list = c0Var.f52461d) == null || !list2.containsAll(list) || !c0Var.f52461d.containsAll(this.f52461d)) {
+        if (list2 == null || (list = c0Var.f52028d) == null || !list2.containsAll(list) || !c0Var.f52028d.containsAll(this.f52028d)) {
             return false;
         }
         return true;
@@ -61,7 +61,7 @@ public class c0 extends hf.a {
 
     public int hashCode() {
         HashSet hashSet;
-        List list = this.f52461d;
+        List list = this.f52028d;
         if (list == null) {
             hashSet = null;
         } else {

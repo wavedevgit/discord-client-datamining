@@ -6,21 +6,21 @@ import android.os.Bundle;
 public final class g0 extends e0 {
 
     /* renamed from: e  reason: collision with root package name */
-    private final gi.t0 f17180e;
+    private final gi.t0 f16809e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final long f17181f;
+    private final long f16810f;
 
     /* renamed from: g  reason: collision with root package name */
-    final /* synthetic */ j0 f17182g;
+    final /* synthetic */ j0 f16811g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public g0(j0 j0Var, wg.k kVar, long j10) {
         super(j0Var, kVar);
-        this.f17182g = j0Var;
-        this.f17180e = new gi.t0("OnRequestIntegrityTokenCallback");
-        this.f17181f = j10;
+        this.f16811g = j0Var;
+        this.f16809e = new gi.t0("OnRequestIntegrityTokenCallback");
+        this.f16810f = j10;
     }
 
     @Override // com.google.android.play.core.integrity.e0, gi.n0
@@ -28,17 +28,17 @@ public final class g0 extends e0 {
         x0 x0Var;
         String str;
         super.c(bundle);
-        this.f17180e.c("onRequestExpressIntegrityToken", new Object[0]);
-        x0Var = this.f17182g.f17205e;
+        this.f16809e.c("onRequestExpressIntegrityToken", new Object[0]);
+        x0Var = this.f16811g.f16834e;
         ef.b a10 = x0Var.a(bundle);
         if (a10 != null) {
-            this.f17168c.d(a10);
+            this.f16797c.d(a10);
             return;
         }
         long j10 = bundle.getLong("request.token.sid");
-        str = this.f17182g.f17202b;
+        str = this.f16811g.f16831b;
         f0 f0Var = new f0(this, str, j10);
-        wg.k kVar = this.f17168c;
+        wg.k kVar = this.f16797c;
         y yVar = new y();
         yVar.b(bundle.getString("token"));
         yVar.a(f0Var);

@@ -1,25 +1,29 @@
 package kotlinx.serialization.encoding;
 
-import at.i1;
+import bt.i1;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.encoding.Encoder;
-import xs.o;
+import ys.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class b implements Encoder, CompositeEncoder {
-    public boolean A(SerialDescriptor serialDescriptor, int i10) {
-        return CompositeEncoder.a.a(this, serialDescriptor, i10);
-    }
-
     @Override // kotlinx.serialization.encoding.Encoder
-    public abstract void B(int i10);
+    public abstract void A(int i10);
+
+    public void B(SerialDescriptor descriptor, int i10, o serializer, Object obj) {
+        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
+        Intrinsics.checkNotNullParameter(serializer, "serializer");
+        if (G(descriptor, i10)) {
+            H(serializer, obj);
+        }
+    }
 
     @Override // kotlinx.serialization.encoding.CompositeEncoder
     public final void C(SerialDescriptor descriptor, int i10, short s10) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         if (G(descriptor, i10)) {
-            q(s10);
+            p(s10);
         }
     }
 
@@ -35,7 +39,7 @@ public abstract class b implements Encoder, CompositeEncoder {
     public final void E(SerialDescriptor descriptor, int i10, long j10) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         if (G(descriptor, i10)) {
-            m(j10);
+            k(j10);
         }
     }
 
@@ -65,9 +69,9 @@ public abstract class b implements Encoder, CompositeEncoder {
     public final Encoder e(SerialDescriptor descriptor, int i10) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         if (G(descriptor, i10)) {
-            return l(descriptor.g(i10));
+            return j(descriptor.g(i10));
         }
-        return i1.f6817a;
+        return i1.f7631a;
     }
 
     @Override // kotlinx.serialization.encoding.Encoder
@@ -77,43 +81,38 @@ public abstract class b implements Encoder, CompositeEncoder {
     public abstract void g(byte b10);
 
     @Override // kotlinx.serialization.encoding.Encoder
-    public void h(o oVar, Object obj) {
-        Encoder.a.d(this, oVar, obj);
-    }
-
-    @Override // kotlinx.serialization.encoding.Encoder
-    public CompositeEncoder i(SerialDescriptor serialDescriptor, int i10) {
+    public CompositeEncoder h(SerialDescriptor serialDescriptor, int i10) {
         return Encoder.a.a(this, serialDescriptor, i10);
     }
 
-    @Override // kotlinx.serialization.encoding.CompositeEncoder
-    public void j(SerialDescriptor descriptor, int i10, o serializer, Object obj) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        Intrinsics.checkNotNullParameter(serializer, "serializer");
-        if (G(descriptor, i10)) {
-            h(serializer, obj);
-        }
-    }
-
     @Override // kotlinx.serialization.encoding.Encoder
-    public Encoder l(SerialDescriptor descriptor) {
+    public Encoder j(SerialDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         return this;
     }
 
     @Override // kotlinx.serialization.encoding.Encoder
-    public abstract void m(long j10);
+    public abstract void k(long j10);
 
     @Override // kotlinx.serialization.encoding.CompositeEncoder
-    public final void n(SerialDescriptor descriptor, int i10, char c10) {
+    public final void l(SerialDescriptor descriptor, int i10, char c10) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         if (G(descriptor, i10)) {
-            u(c10);
+            t(c10);
         }
     }
 
     @Override // kotlinx.serialization.encoding.CompositeEncoder
-    public final void p(SerialDescriptor descriptor, int i10, byte b10) {
+    public void m(SerialDescriptor descriptor, int i10, o serializer, Object obj) {
+        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
+        Intrinsics.checkNotNullParameter(serializer, "serializer");
+        if (G(descriptor, i10)) {
+            z(serializer, obj);
+        }
+    }
+
+    @Override // kotlinx.serialization.encoding.CompositeEncoder
+    public final void o(SerialDescriptor descriptor, int i10, byte b10) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         if (G(descriptor, i10)) {
             g(b10);
@@ -121,48 +120,48 @@ public abstract class b implements Encoder, CompositeEncoder {
     }
 
     @Override // kotlinx.serialization.encoding.Encoder
-    public abstract void q(short s10);
+    public abstract void p(short s10);
 
     @Override // kotlinx.serialization.encoding.Encoder
-    public abstract void r(boolean z10);
+    public abstract void q(boolean z10);
 
     @Override // kotlinx.serialization.encoding.CompositeEncoder
-    public final void s(SerialDescriptor descriptor, int i10, float f10) {
+    public final void r(SerialDescriptor descriptor, int i10, float f10) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         if (G(descriptor, i10)) {
-            t(f10);
+            s(f10);
         }
     }
 
     @Override // kotlinx.serialization.encoding.Encoder
-    public abstract void t(float f10);
+    public abstract void s(float f10);
 
     @Override // kotlinx.serialization.encoding.Encoder
-    public abstract void u(char c10);
+    public abstract void t(char c10);
 
     @Override // kotlinx.serialization.encoding.Encoder
-    public void v() {
+    public void u() {
         Encoder.a.b(this);
     }
 
     @Override // kotlinx.serialization.encoding.CompositeEncoder
-    public final void w(SerialDescriptor descriptor, int i10, int i11) {
+    public final void v(SerialDescriptor descriptor, int i10, int i11) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         if (G(descriptor, i10)) {
-            B(i11);
+            A(i11);
         }
     }
 
     @Override // kotlinx.serialization.encoding.CompositeEncoder
-    public final void x(SerialDescriptor descriptor, int i10, boolean z10) {
+    public final void w(SerialDescriptor descriptor, int i10, boolean z10) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         if (G(descriptor, i10)) {
-            r(z10);
+            q(z10);
         }
     }
 
     @Override // kotlinx.serialization.encoding.CompositeEncoder
-    public final void y(SerialDescriptor descriptor, int i10, String value) {
+    public final void x(SerialDescriptor descriptor, int i10, String value) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         Intrinsics.checkNotNullParameter(value, "value");
         if (G(descriptor, i10)) {
@@ -170,11 +169,12 @@ public abstract class b implements Encoder, CompositeEncoder {
         }
     }
 
-    public void z(SerialDescriptor descriptor, int i10, o serializer, Object obj) {
-        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        Intrinsics.checkNotNullParameter(serializer, "serializer");
-        if (G(descriptor, i10)) {
-            H(serializer, obj);
-        }
+    public boolean y(SerialDescriptor serialDescriptor, int i10) {
+        return CompositeEncoder.a.a(this, serialDescriptor, i10);
+    }
+
+    @Override // kotlinx.serialization.encoding.Encoder
+    public void z(o oVar, Object obj) {
+        Encoder.a.d(this, oVar, obj);
     }
 }

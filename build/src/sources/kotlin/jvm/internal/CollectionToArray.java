@@ -1,10 +1,10 @@
 package kotlin.jvm.internal;
 
-import ir.c;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;

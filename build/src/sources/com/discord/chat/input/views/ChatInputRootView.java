@@ -40,7 +40,6 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.UUID;
-import js.l0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -53,6 +52,7 @@ import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.MutableStateFlow;
+import ks.l0;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000\u009c\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010#\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u000b\n\u0002\u0010\u000e\n\u0002\b\u0011\n\u0002\u0010\r\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u00012\u00020\u0002:\u0002bcB'\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\b\b\u0002\u0010\u0007\u001a\u00020\b¢\u0006\u0004\b\t\u0010\nJ\u000e\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fJ\u0018\u0010 \u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\b2\b\b\u0002\u0010\"\u001a\u00020\bJ\u0006\u0010#\u001a\u00020$J\u0006\u0010%\u001a\u00020\u001dJ\u000e\u0010I\u001a\u00020\u001d2\u0006\u0010J\u001a\u00020$J\b\u0010K\u001a\u00020\u001dH\u0014J>\u0010L\u001a\u00020\u001d2\u0006\u0010M\u001a\u00020\b2\u0006\u0010N\u001a\u00020\b2\u0006\u0010;\u001a\u0002002\f\u0010O\u001a\b\u0012\u0004\u0012\u00020Q0P2\u0006\u0010R\u001a\u00020$2\b\u0010S\u001a\u0004\u0018\u000100J\u0006\u0010T\u001a\u00020\u001dJ\u001e\u0010U\u001a\u00020\u001d2\b\u0010S\u001a\u0004\u0018\u0001002\f\u0010V\u001a\b\u0012\u0004\u0012\u00020Q0PJ \u0010W\u001a\u00020\u001d2\f\u0010V\u001a\b\u0012\u0004\u0012\u00020Q0P2\b\b\u0002\u0010X\u001a\u00020\bH\u0002J\u0010\u0010Y\u001a\u00020\u001d2\u0006\u0010Z\u001a\u00020$H\u0016J\b\u0010[\u001a\u00020\u001dH\u0002J!\u0010\\\u001a\u00020\u001d*\u00020\u001b2\u0012\u0010]\u001a\u000e\u0012\u0004\u0012\u00020_\u0012\u0004\u0012\u00020\u001d0^H\u0082\bJ!\u0010`\u001a\u00020\u001d*\u00020\u001b2\u0012\u0010]\u001a\u000e\u0012\u0004\u0012\u00020a\u0012\u0004\u0012\u00020\u001d0^H\u0082\bR\u0010\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\r\u001a\u0004\u0018\u00010\u000eX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u0010\"\u0004\b\u0011\u0010\u0012R\u000e\u0010\u0013\u001a\u00020\u0014X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0016X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0018X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u001b0\u001aX\u0082\u0004¢\u0006\u0002\n\u0000R\u0013\u0010&\u001a\u0004\u0018\u00010\b8F¢\u0006\u0006\u001a\u0004\b'\u0010(R$\u0010*\u001a\u00020$2\u0006\u0010)\u001a\u00020$8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b*\u0010+\"\u0004\b,\u0010-R$\u0010.\u001a\u00020$2\u0006\u0010)\u001a\u00020$8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b.\u0010+\"\u0004\b/\u0010-R(\u00101\u001a\u0004\u0018\u0001002\b\u0010)\u001a\u0004\u0018\u0001008F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b2\u00103\"\u0004\b4\u00105R&\u00106\u001a\u00020\b2\b\b\u0001\u0010)\u001a\u00020\b8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b7\u00108\"\u0004\b9\u0010:R$\u0010;\u001a\u0002002\u0006\u0010)\u001a\u0002008F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b<\u00103\"\u0004\b=\u00105R&\u0010>\u001a\u00020\b2\b\b\u0001\u0010)\u001a\u00020\b8F@FX\u0086\u000e¢\u0006\f\u001a\u0004\b?\u00108\"\u0004\b@\u0010:R\u0010\u0010A\u001a\u0004\u0018\u00010BX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010C\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010D\u001a\u000200X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010E\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010G0FX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010H\u001a\b\u0012\u0004\u0012\u00020\b0FX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006d"}, d2 = {"Lcom/discord/chat/input/views/ChatInputRootView;", "Landroid/widget/RelativeLayout;", "Lcom/discord/keyboard/KeyboardEvent;", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "defStyleAttr", "", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "blurJob", "Lkotlinx/coroutines/Job;", "listener", "Lcom/discord/chat/input/views/ChatInputRootView$ChatInputListener;", "getListener", "()Lcom/discord/chat/input/views/ChatInputRootView$ChatInputListener;", "setListener", "(Lcom/discord/chat/input/views/ChatInputRootView$ChatInputListener;)V", "binding", "Lcom/discord/chat/input/databinding/ChatInputRootViewBinding;", "lineHeightMeasurer", "Lcom/discord/chat/input/views/ChatInputRootViewMeasurer;", "editText", "Lcom/discord/chat/input/views/DCDChatInput;", "insertedPayloads", "", "Landroidx/core/view/ContentInfoCompat;", "showKeyboard", "", "window", "Landroid/view/Window;", "setSelection", ViewProps.START, "stop", "requestInputFocus", "", "clearInputFocus", "lineCount", "getLineCount", "()Ljava/lang/Integer;", "value", "isCursorVisible", "()Z", "setCursorVisible", "(Z)V", "isEditTextEnabled", "setEditTextEnabled", "", "hint", "getHint", "()Ljava/lang/String;", "setHint", "(Ljava/lang/String;)V", "hintTextColor", "getHintTextColor", "()I", "setHintTextColor", "(I)V", "text", "getText", "setText", "textColor", "getTextColor", "setTextColor", "editTextHint", "", "editTextMaxLines", "lastEditId", "currentTextFlow", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Lcom/discord/chat/input/views/ChatInputRootView$CurrentTextAndSelection;", "currentLayoutFlow", "setNoExtractUI", ViewProps.ENABLED, "onAttachedToWindow", "replaceRange", "location", "length", "styleBlocks", "", "Lcom/discord/chat/input/bridge/ChatInputNode;", "keepCursorPosition", "editId", "backspace", "clearAndApplyChatNodes", "chatInputNodes", "updateChatNodes", "offset", "onKeyboardStateChanged", "opened", "updateHintEllipsis", "forEachUri", "action", "Lkotlin/Function1;", "Landroid/net/Uri;", "forEachIntent", "Landroid/content/Intent;", "ChatInputListener", "CurrentTextAndSelection", "chat_input_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nChatInputRootView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ChatInputRootView.kt\ncom/discord/chat/input/views/ChatInputRootView\n+ 2 TextView.kt\nandroidx/core/widget/TextViewKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 5 SpannableExtensions.kt\ncom/discord/span/utilities/SpannableExtensionsKt\n+ 6 Pair.kt\nandroidx/core/util/PairKt\n*L\n1#1,386:1\n375#1,4:421\n381#1,4:427\n48#2,19:387\n84#2,3:406\n13472#3,2:409\n1563#4:411\n1634#4,3:412\n1869#4,2:415\n5#5:417\n5#5:418\n66#6:419\n78#6:420\n66#6:425\n78#6:426\n*S KotlinDebug\n*F\n+ 1 ChatInputRootView.kt\ncom/discord/chat/input/views/ChatInputRootView\n*L\n208#1:421,4\n219#1:427,4\n238#1:387,19\n238#1:406,3\n313#1:409,2\n320#1:411\n320#1:412,3\n320#1:415,2\n324#1:417\n328#1:418\n198#1:419\n198#1:420\n212#1:425\n212#1:426\n*E\n"})
@@ -210,7 +210,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
         if (chatInputListener != null) {
             chatInputListener.onRequestSend();
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -222,7 +222,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$2(ChatInputRootView chatInputRootView, int i10, int i11) {
         chatInputRootView.currentTextFlow.setValue(new CurrentTextAndSelection(i10, i11, String.valueOf(chatInputRootView.editText.getText()), chatInputRootView.lastEditId));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -343,7 +343,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
         if (chatInputListener != null) {
             chatInputListener.onContentSizeChange((int) SizeUtilsKt.getPxToDp(chatInputRootView.getWidth()), (int) SizeUtilsKt.getPxToDp(i10));
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     public static /* synthetic */ void setSelection$default(ChatInputRootView chatInputRootView, int i10, int i11, int i12, Object obj) {
@@ -477,8 +477,8 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     @Override // android.view.ViewGroup, android.view.View
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        js.g.y(js.g.C(js.g.k(this.currentTextFlow, 100L), new ChatInputRootView$onAttachedToWindow$1(this, null)), CoroutineViewUtilsKt.getAttachedScope(this));
-        js.g.y(js.g.C(js.g.k(this.currentLayoutFlow, 32L), new ChatInputRootView$onAttachedToWindow$2(this, null)), CoroutineViewUtilsKt.getAttachedScope(this));
+        ks.g.y(ks.g.C(ks.g.k(this.currentTextFlow, 100L), new ChatInputRootView$onAttachedToWindow$1(this, null)), CoroutineViewUtilsKt.getAttachedScope(this));
+        ks.g.y(ks.g.C(ks.g.k(this.currentLayoutFlow, 32L), new ChatInputRootView$onAttachedToWindow$2(this, null)), CoroutineViewUtilsKt.getAttachedScope(this));
     }
 
     @Override // com.discord.keyboard.KeyboardEvent
@@ -489,7 +489,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
             Job.a.a(job, null, 1, null);
         }
         if (!z10) {
-            d10 = gs.i.d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new ChatInputRootView$onKeyboardStateChanged$1(this, null), 3, null);
+            d10 = hs.i.d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new ChatInputRootView$onKeyboardStateChanged$1(this, null), 3, null);
             this.blurJob = d10;
         }
     }

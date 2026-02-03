@@ -5,7 +5,7 @@ import java.util.List;
 public interface t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final t f25030a = new t() { // from class: fd.s
+    public static final t f24241a = new t() { // from class: fd.s
         @Override // fd.t
         public final List a(String str, boolean z10, boolean z11) {
             return y.t(str, z10, z11);

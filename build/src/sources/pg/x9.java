@@ -5,7 +5,7 @@ import ui.c;
 final class x9 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x9 f45920a = new x9();
+    static final x9 f45994a = new x9();
 
     static {
         c.b a10 = ui.c.a("options");

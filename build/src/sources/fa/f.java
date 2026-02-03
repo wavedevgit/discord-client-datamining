@@ -12,7 +12,7 @@ import kotlin.ranges.IntRange;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final f f24893a = new f();
+    public static final f f24104a = new f();
 
     private f() {
     }

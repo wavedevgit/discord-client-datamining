@@ -48,7 +48,7 @@ public final class SystemLogUtils {
     @NotNull
     private static final String LIBDISCORD_VERSION_CATEGORY = "libdiscord_version";
     @NotNull
-    private static final Regex regexExtractTombstone = new Regex("(?:^(?:[^\\s]+\\s+){4}F\\s+DEBUG\\s+:\\s(.+))|(^.+(\\[" + Regex.f36221e.c(LIBDISCORD_VERSION_CATEGORY) + "\\].+))");
+    private static final Regex regexExtractTombstone = new Regex("(?:^(?:[^\\s]+\\s+){4}F\\s+DEBUG\\s+:\\s(.+))|(^.+(\\[" + Regex.f35997e.c(LIBDISCORD_VERSION_CATEGORY) + "\\].+))");
 
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0016\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B9\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003¢\u0006\u0004\b\t\u0010\nJ\t\u0010\u0012\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0013\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u0010\u0014\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0015\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0017\u001a\u00020\u0003HÆ\u0003JG\u0010\u0018\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u0019\u001a\u00020\u001a2\b\u0010\u001b\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001c\u001a\u00020\u001dHÖ\u0001J\t\u0010\u001e\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\fR\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\fR\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\fR\u0011\u0010\u0007\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\fR\u0011\u0010\b\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\f¨\u0006\u001f"}, d2 = {"Lcom/discord/crash_reporting/system_logs/SystemLogUtils$Tombstone;", "", "text", "", "cause", "groupBy", "origin", "groupHash", "textHash", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getText", "()Ljava/lang/String;", "getCause", "getGroupBy", "getOrigin", "getGroupHash", "getTextHash", "component1", "component2", "component3", "component4", "component5", "component6", "copy", "equals", "", "other", "hashCode", "", "toString", "crash_reporting_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -277,7 +277,7 @@ public final class SystemLogUtils {
             goto L3c
         L8a:
             r8.invoke(r5)
-            kotlin.Unit r5 = kotlin.Unit.f33298a
+            kotlin.Unit r5 = kotlin.Unit.f33074a
             return r5
         L90:
             if (r0 == 0) goto L95
@@ -292,7 +292,7 @@ public final class SystemLogUtils {
     public static final Unit fetchLastTombstone$lambda$0(Function1 function1, LinkedList crashes) {
         Intrinsics.checkNotNullParameter(crashes, "crashes");
         function1.invoke(INSTANCE.fetchLastTombstone(crashes));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -497,7 +497,7 @@ public final class SystemLogUtils {
         if (StringsKt.k0(sb3)) {
             return null;
         }
-        m mVar = m.f36282o;
+        m mVar = m.f36058o;
         Regex regex = new Regex("^Cause: (.+)$", mVar);
         Regex regex2 = new Regex("^\\s+#\\d+ pc .+/(.+? .+?)\\+?[+)]", mVar);
         final Regex regex3 = new Regex("classes\\d+.dex");
@@ -538,7 +538,7 @@ public final class SystemLogUtils {
             function1.invoke(linkedList);
             return;
         }
-        mr.a.b(false, false, null, null, 0, new Function0() { // from class: com.discord.crash_reporting.system_logs.d
+        nr.a.b(false, false, null, null, 0, new Function0() { // from class: com.discord.crash_reporting.system_logs.d
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit fetch$lambda$6;

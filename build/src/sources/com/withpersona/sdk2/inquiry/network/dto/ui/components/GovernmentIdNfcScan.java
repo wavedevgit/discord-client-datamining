@@ -418,7 +418,7 @@ public final class GovernmentIdNfcScan implements UiComponentConfig {
         static {
             DataGroupTypes[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
             Companion = new Companion(null);
         }
 

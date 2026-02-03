@@ -12,7 +12,7 @@ import le.m;
 public class f implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f14462a;
+    private final int f14091a;
 
     public f() {
         this(-1);
@@ -20,16 +20,16 @@ public class f implements h {
 
     @Override // com.google.android.exoplayer2.upstream.h
     public long a(h.c cVar) {
-        IOException iOException = cVar.f14481c;
+        IOException iOException = cVar.f14110c;
         if (!(iOException instanceof l0) && !(iOException instanceof FileNotFoundException) && !(iOException instanceof g.b) && !(iOException instanceof i.h) && !m.a(iOException)) {
-            return Math.min((cVar.f14482d - 1) * 1000, 5000);
+            return Math.min((cVar.f14111d - 1) * 1000, 5000);
         }
         return -9223372036854775807L;
     }
 
     @Override // com.google.android.exoplayer2.upstream.h
     public int b(int i10) {
-        int i11 = this.f14462a;
+        int i11 = this.f14091a;
         if (i11 == -1) {
             if (i10 == 7) {
                 return 6;
@@ -41,7 +41,7 @@ public class f implements h {
 
     @Override // com.google.android.exoplayer2.upstream.h
     public h.b c(h.a aVar, h.c cVar) {
-        if (!e(cVar.f14481c)) {
+        if (!e(cVar.f14110c)) {
             return null;
         }
         if (aVar.a(1)) {
@@ -57,7 +57,7 @@ public class f implements h {
         if (!(iOException instanceof g.f)) {
             return false;
         }
-        int i10 = ((g.f) iOException).f14467o;
+        int i10 = ((g.f) iOException).f14096o;
         if (i10 != 403 && i10 != 404 && i10 != 410 && i10 != 416 && i10 != 500 && i10 != 503) {
             return false;
         }
@@ -65,6 +65,6 @@ public class f implements h {
     }
 
     public f(int i10) {
-        this.f14462a = i10;
+        this.f14091a = i10;
     }
 }

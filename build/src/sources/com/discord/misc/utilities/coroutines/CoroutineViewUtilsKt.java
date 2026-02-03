@@ -13,8 +13,8 @@ import kotlin.coroutines.Continuation;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
-import or.b;
 import org.jetbrains.annotations.NotNull;
+import pr.b;
 @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0010\u0000\n\u0002\b\u0006\u001a\u0019\u0010\u0004\u001a\u00020\u0003*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u0001¢\u0006\u0004\b\u0004\u0010\u0005\u001a\u0011\u0010\u0007\u001a\u00020\u0006*\u00020\u0000¢\u0006\u0004\b\u0007\u0010\b\u001a@\u0010\u0011\u001a\u00020\u000e*\u00020\u00002\u0006\u0010\n\u001a\u00020\t2\"\u0010\u0010\u001a\u001e\b\u0001\u0012\u0004\u0012\u00020\f\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u000e0\r\u0012\u0006\u0012\u0004\u0018\u00010\u000f0\u000bH\u0086@¢\u0006\u0004\b\u0011\u0010\u0012\"\u0015\u0010\u0004\u001a\u00020\u0003*\u00020\u00008F¢\u0006\u0006\u001a\u0004\b\u0013\u0010\u0014¨\u0006\u0015"}, d2 = {"Landroid/view/View;", "", "verifyAttached", "Lcom/discord/misc/utilities/coroutines/AttachedViewCoroutineScope;", "attachedScope", "(Landroid/view/View;Z)Lcom/discord/misc/utilities/coroutines/AttachedViewCoroutineScope;", "Landroidx/lifecycle/LifecycleOwner;", "requireLifecycleOwner", "(Landroid/view/View;)Landroidx/lifecycle/LifecycleOwner;", "Landroidx/lifecycle/Lifecycle$State;", "state", "Lkotlin/Function2;", "Lkotlinx/coroutines/CoroutineScope;", "Lkotlin/coroutines/Continuation;", "", "", "block", "repeatOnLifecycleOwner", "(Landroid/view/View;Landroidx/lifecycle/Lifecycle$State;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "getAttachedScope", "(Landroid/view/View;)Lcom/discord/misc/utilities/coroutines/AttachedViewCoroutineScope;", "misc_utilities_release"}, k = 2, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class CoroutineViewUtilsKt {
@@ -50,7 +50,7 @@ public final class CoroutineViewUtilsKt {
         if (b10 == b.f()) {
             return b10;
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @NotNull

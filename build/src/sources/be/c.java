@@ -6,10 +6,10 @@ import zd.g;
 final class c implements g {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f7508d;
+    private final List f6559d;
 
     public c(List list) {
-        this.f7508d = list;
+        this.f6559d = list;
     }
 
     @Override // zd.g
@@ -19,7 +19,7 @@ final class c implements g {
 
     @Override // zd.g
     public List d(long j10) {
-        return this.f7508d;
+        return this.f6559d;
     }
 
     @Override // zd.g

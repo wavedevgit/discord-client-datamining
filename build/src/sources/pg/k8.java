@@ -5,7 +5,7 @@ import ui.c;
 final class k8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k8 f45521a = new k8();
+    static final k8 f45595a = new k8();
 
     static {
         c.b a10 = ui.c.a("status");

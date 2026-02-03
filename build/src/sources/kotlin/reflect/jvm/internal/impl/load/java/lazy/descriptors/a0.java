@@ -9,24 +9,24 @@ import kotlin.reflect.jvm.internal.impl.resolve.constants.ConstantValue;
 public class a0 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaScope f34261d;
+    private final LazyJavaScope f34037d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JavaField f34262e;
+    private final JavaField f34038e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Ref.ObjectRef f34263i;
+    private final Ref.ObjectRef f34039i;
 
     public a0(LazyJavaScope lazyJavaScope, JavaField javaField, Ref.ObjectRef objectRef) {
-        this.f34261d = lazyJavaScope;
-        this.f34262e = javaField;
-        this.f34263i = objectRef;
+        this.f34037d = lazyJavaScope;
+        this.f34038e = javaField;
+        this.f34039i = objectRef;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         ConstantValue S;
-        S = LazyJavaScope.S(this.f34261d, this.f34262e, this.f34263i);
+        S = LazyJavaScope.S(this.f34037d, this.f34038e, this.f34039i);
         return S;
     }
 }

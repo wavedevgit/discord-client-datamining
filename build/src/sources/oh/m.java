@@ -10,50 +10,50 @@ import java.util.List;
 public class m {
 
     /* renamed from: a  reason: collision with root package name */
-    public float f43922a;
+    public float f44050a;
 
     /* renamed from: b  reason: collision with root package name */
-    public float f43923b;
+    public float f44051b;
 
     /* renamed from: c  reason: collision with root package name */
-    public float f43924c;
+    public float f44052c;
 
     /* renamed from: d  reason: collision with root package name */
-    public float f43925d;
+    public float f44053d;
 
     /* renamed from: e  reason: collision with root package name */
-    public float f43926e;
+    public float f44054e;
 
     /* renamed from: f  reason: collision with root package name */
-    public float f43927f;
+    public float f44055f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f43928g = new ArrayList();
+    private final List f44056g = new ArrayList();
 
     /* renamed from: h  reason: collision with root package name */
-    private final List f43929h = new ArrayList();
+    private final List f44057h = new ArrayList();
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f43930i;
+    private boolean f44058i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends g {
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ List f43931c;
+        final /* synthetic */ List f44059c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Matrix f43932d;
+        final /* synthetic */ Matrix f44060d;
 
         a(List list, Matrix matrix) {
-            this.f43931c = list;
-            this.f43932d = matrix;
+            this.f44059c = list;
+            this.f44060d = matrix;
         }
 
         @Override // oh.m.g
         public void a(Matrix matrix, nh.a aVar, int i10, Canvas canvas) {
-            for (g gVar : this.f43931c) {
-                gVar.a(this.f43932d, aVar, i10, canvas);
+            for (g gVar : this.f44059c) {
+                gVar.a(this.f44060d, aVar, i10, canvas);
             }
         }
     }
@@ -63,15 +63,15 @@ public class m {
     public static class b extends g {
 
         /* renamed from: c  reason: collision with root package name */
-        private final d f43934c;
+        private final d f44062c;
 
         public b(d dVar) {
-            this.f43934c = dVar;
+            this.f44062c = dVar;
         }
 
         @Override // oh.m.g
         public void a(Matrix matrix, nh.a aVar, int i10, Canvas canvas) {
-            aVar.a(canvas, matrix, new RectF(this.f43934c.k(), this.f43934c.o(), this.f43934c.l(), this.f43934c.j()), i10, this.f43934c.m(), this.f43934c.n());
+            aVar.a(canvas, matrix, new RectF(this.f44062c.k(), this.f44062c.o(), this.f44062c.l(), this.f44062c.j()), i10, this.f44062c.m(), this.f44062c.n());
         }
     }
 
@@ -79,31 +79,31 @@ public class m {
     static class c extends g {
 
         /* renamed from: c  reason: collision with root package name */
-        private final e f43935c;
+        private final e f44063c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final float f43936d;
+        private final float f44064d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final float f43937e;
+        private final float f44065e;
 
         public c(e eVar, float f10, float f11) {
-            this.f43935c = eVar;
-            this.f43936d = f10;
-            this.f43937e = f11;
+            this.f44063c = eVar;
+            this.f44064d = f10;
+            this.f44065e = f11;
         }
 
         @Override // oh.m.g
         public void a(Matrix matrix, nh.a aVar, int i10, Canvas canvas) {
-            RectF rectF = new RectF(0.0f, 0.0f, (float) Math.hypot(this.f43935c.f43946c - this.f43937e, this.f43935c.f43945b - this.f43936d), 0.0f);
-            this.f43949a.set(matrix);
-            this.f43949a.preTranslate(this.f43936d, this.f43937e);
-            this.f43949a.preRotate(c());
-            aVar.b(canvas, this.f43949a, rectF, i10);
+            RectF rectF = new RectF(0.0f, 0.0f, (float) Math.hypot(this.f44063c.f44074c - this.f44065e, this.f44063c.f44073b - this.f44064d), 0.0f);
+            this.f44077a.set(matrix);
+            this.f44077a.preTranslate(this.f44064d, this.f44065e);
+            this.f44077a.preRotate(c());
+            aVar.b(canvas, this.f44077a, rectF, i10);
         }
 
         float c() {
-            return (float) Math.toDegrees(Math.atan((this.f43935c.f43946c - this.f43937e) / (this.f43935c.f43945b - this.f43936d)));
+            return (float) Math.toDegrees(Math.atan((this.f44063c.f44074c - this.f44065e) / (this.f44063c.f44073b - this.f44064d)));
         }
     }
 
@@ -111,25 +111,25 @@ public class m {
     public static class d extends f {
 
         /* renamed from: h  reason: collision with root package name */
-        private static final RectF f43938h = new RectF();
+        private static final RectF f44066h = new RectF();
 
         /* renamed from: b  reason: collision with root package name */
-        public float f43939b;
+        public float f44067b;
 
         /* renamed from: c  reason: collision with root package name */
-        public float f43940c;
+        public float f44068c;
 
         /* renamed from: d  reason: collision with root package name */
-        public float f43941d;
+        public float f44069d;
 
         /* renamed from: e  reason: collision with root package name */
-        public float f43942e;
+        public float f44070e;
 
         /* renamed from: f  reason: collision with root package name */
-        public float f43943f;
+        public float f44071f;
 
         /* renamed from: g  reason: collision with root package name */
-        public float f43944g;
+        public float f44072g;
 
         public d(float f10, float f11, float f12, float f13) {
             q(f10);
@@ -140,66 +140,66 @@ public class m {
 
         /* JADX INFO: Access modifiers changed from: private */
         public float j() {
-            return this.f43942e;
+            return this.f44070e;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public float k() {
-            return this.f43939b;
+            return this.f44067b;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public float l() {
-            return this.f43941d;
+            return this.f44069d;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public float m() {
-            return this.f43943f;
+            return this.f44071f;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public float n() {
-            return this.f43944g;
+            return this.f44072g;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public float o() {
-            return this.f43940c;
+            return this.f44068c;
         }
 
         private void p(float f10) {
-            this.f43942e = f10;
+            this.f44070e = f10;
         }
 
         private void q(float f10) {
-            this.f43939b = f10;
+            this.f44067b = f10;
         }
 
         private void r(float f10) {
-            this.f43941d = f10;
+            this.f44069d = f10;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public void s(float f10) {
-            this.f43943f = f10;
+            this.f44071f = f10;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public void t(float f10) {
-            this.f43944g = f10;
+            this.f44072g = f10;
         }
 
         private void u(float f10) {
-            this.f43940c = f10;
+            this.f44068c = f10;
         }
 
         @Override // oh.m.f
         public void a(Matrix matrix, Path path) {
-            Matrix matrix2 = this.f43947a;
+            Matrix matrix2 = this.f44075a;
             matrix.invert(matrix2);
             path.transform(matrix2);
-            RectF rectF = f43938h;
+            RectF rectF = f44066h;
             rectF.set(k(), o(), l(), j());
             path.arcTo(rectF, m(), n(), false);
             path.transform(matrix);
@@ -210,17 +210,17 @@ public class m {
     public static class e extends f {
 
         /* renamed from: b  reason: collision with root package name */
-        private float f43945b;
+        private float f44073b;
 
         /* renamed from: c  reason: collision with root package name */
-        private float f43946c;
+        private float f44074c;
 
         @Override // oh.m.f
         public void a(Matrix matrix, Path path) {
-            Matrix matrix2 = this.f43947a;
+            Matrix matrix2 = this.f44075a;
             matrix.invert(matrix2);
             path.transform(matrix2);
-            path.lineTo(this.f43945b, this.f43946c);
+            path.lineTo(this.f44073b, this.f44074c);
             path.transform(matrix);
         }
     }
@@ -229,7 +229,7 @@ public class m {
     public static abstract class f {
 
         /* renamed from: a  reason: collision with root package name */
-        protected final Matrix f43947a = new Matrix();
+        protected final Matrix f44075a = new Matrix();
 
         public abstract void a(Matrix matrix, Path path);
     }
@@ -239,10 +239,10 @@ public class m {
     public static abstract class g {
 
         /* renamed from: b  reason: collision with root package name */
-        static final Matrix f43948b = new Matrix();
+        static final Matrix f44076b = new Matrix();
 
         /* renamed from: a  reason: collision with root package name */
-        final Matrix f43949a = new Matrix();
+        final Matrix f44077a = new Matrix();
 
         g() {
         }
@@ -250,7 +250,7 @@ public class m {
         public abstract void a(Matrix matrix, nh.a aVar, int i10, Canvas canvas);
 
         public final void b(nh.a aVar, int i10, Canvas canvas) {
-            a(f43948b, aVar, i10, canvas);
+            a(f44076b, aVar, i10, canvas);
         }
     }
 
@@ -267,47 +267,47 @@ public class m {
             d dVar = new d(i(), j(), i(), j());
             dVar.s(g());
             dVar.t(g10);
-            this.f43929h.add(new b(dVar));
+            this.f44057h.add(new b(dVar));
             p(f10);
         }
     }
 
     private void c(g gVar, float f10, float f11) {
         b(f10);
-        this.f43929h.add(gVar);
+        this.f44057h.add(gVar);
         p(f11);
     }
 
     private float g() {
-        return this.f43926e;
+        return this.f44054e;
     }
 
     private float h() {
-        return this.f43927f;
+        return this.f44055f;
     }
 
     private void p(float f10) {
-        this.f43926e = f10;
+        this.f44054e = f10;
     }
 
     private void q(float f10) {
-        this.f43927f = f10;
+        this.f44055f = f10;
     }
 
     private void r(float f10) {
-        this.f43924c = f10;
+        this.f44052c = f10;
     }
 
     private void s(float f10) {
-        this.f43925d = f10;
+        this.f44053d = f10;
     }
 
     private void t(float f10) {
-        this.f43922a = f10;
+        this.f44050a = f10;
     }
 
     private void u(float f10) {
-        this.f43923b = f10;
+        this.f44051b = f10;
     }
 
     public void a(float f10, float f11, float f12, float f13, float f14, float f15) {
@@ -316,7 +316,7 @@ public class m {
         d dVar = new d(f10, f11, f12, f13);
         dVar.s(f14);
         dVar.t(f15);
-        this.f43928g.add(dVar);
+        this.f44056g.add(dVar);
         b bVar = new b(dVar);
         float f17 = f14 + f15;
         if (f15 < 0.0f) {
@@ -339,48 +339,48 @@ public class m {
     }
 
     public void d(Matrix matrix, Path path) {
-        int size = this.f43928g.size();
+        int size = this.f44056g.size();
         for (int i10 = 0; i10 < size; i10++) {
-            ((f) this.f43928g.get(i10)).a(matrix, path);
+            ((f) this.f44056g.get(i10)).a(matrix, path);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean e() {
-        return this.f43930i;
+        return this.f44058i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g f(Matrix matrix) {
         b(h());
-        return new a(new ArrayList(this.f43929h), new Matrix(matrix));
+        return new a(new ArrayList(this.f44057h), new Matrix(matrix));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float i() {
-        return this.f43924c;
+        return this.f44052c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float j() {
-        return this.f43925d;
+        return this.f44053d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float k() {
-        return this.f43922a;
+        return this.f44050a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float l() {
-        return this.f43923b;
+        return this.f44051b;
     }
 
     public void m(float f10, float f11) {
         e eVar = new e();
-        eVar.f43945b = f10;
-        eVar.f43946c = f11;
-        this.f43928g.add(eVar);
+        eVar.f44073b = f10;
+        eVar.f44074c = f11;
+        this.f44056g.add(eVar);
         c cVar = new c(eVar, i(), j());
         c(cVar, cVar.c() + 270.0f, cVar.c() + 270.0f);
         r(f10);
@@ -398,8 +398,8 @@ public class m {
         s(f11);
         p(f12);
         q((f12 + f13) % 360.0f);
-        this.f43928g.clear();
-        this.f43929h.clear();
-        this.f43930i = false;
+        this.f44056g.clear();
+        this.f44057h.clear();
+        this.f44058i = false;
     }
 }

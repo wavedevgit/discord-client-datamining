@@ -13,7 +13,7 @@ import kotlin.text.Charsets;
 import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.JsonBuilder;
 import org.jetbrains.annotations.NotNull;
-import tr.r;
+import ur.r;
 @Metadata(d1 = {"\u0000\u001a\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u001a\u0014\u0010\u0004\u001a\u00020\u0005*\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0000\"\u0011\u0010\u0000\u001a\u00020\u0001¢\u0006\b\n\u0000\u001a\u0004\b\u0002\u0010\u0003¨\u0006\t"}, d2 = {"json", "Lkotlinx/serialization/json/Json;", "getJson", "()Lkotlinx/serialization/json/Json;", "getManifestFromAsset", "Lcom/discord/bundle_updater/AppManifest;", "Landroid/content/res/AssetManager;", "asset", "", "bundle_updater_release"}, k = 2, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nBundleUpdaterUtils.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BundleUpdaterUtils.kt\ncom/discord/bundle_updater/BundleUpdaterUtilsKt\n+ 2 Json.kt\nkotlinx/serialization/json/Json\n*L\n1#1,81:1\n147#2:82\n*S KotlinDebug\n*F\n+ 1 BundleUpdaterUtils.kt\ncom/discord/bundle_updater/BundleUpdaterUtilsKt\n*L\n47#1:82\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -45,7 +45,7 @@ public final class BundleUpdaterUtilsKt {
             String h10 = r.h(bufferedReader);
             json2.a();
             AppManifest appManifest = (AppManifest) json2.b(AppManifest.Companion.serializer(), h10);
-            tr.c.a(bufferedReader, null);
+            ur.c.a(bufferedReader, null);
             return appManifest;
         } finally {
         }
@@ -55,6 +55,6 @@ public final class BundleUpdaterUtilsKt {
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 }

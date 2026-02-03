@@ -40,10 +40,10 @@ public final class NotificationManagerUtilsKt {
             return null;
         }
         try {
-            Result.a aVar = Result.f33295e;
+            Result.a aVar = Result.f33071e;
             b10 = Result.b(notificationManager.getActiveNotifications());
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33295e;
+            Result.a aVar2 = Result.f33071e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {
@@ -98,10 +98,10 @@ public final class NotificationManagerUtilsKt {
             return null;
         }
         try {
-            Result.a aVar = Result.f33295e;
+            Result.a aVar = Result.f33071e;
             b10 = Result.b(notificationManager.getActiveNotifications());
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33295e;
+            Result.a aVar2 = Result.f33071e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {
@@ -141,7 +141,7 @@ public final class NotificationManagerUtilsKt {
     }
 
     /* renamed from: getCallNotifications-mJqaSGE */
-    public static final List<StatusBarNotification> m1044getCallNotificationsmJqaSGE(@NotNull Context getCallNotifications, long j10) {
+    public static final List<StatusBarNotification> m1046getCallNotificationsmJqaSGE(@NotNull Context getCallNotifications, long j10) {
         Object b10;
         boolean P;
         Intrinsics.checkNotNullParameter(getCallNotifications, "$this$getCallNotifications");
@@ -150,10 +150,10 @@ public final class NotificationManagerUtilsKt {
             return null;
         }
         try {
-            Result.a aVar = Result.f33295e;
+            Result.a aVar = Result.f33071e;
             b10 = Result.b(notificationManager.getActiveNotifications());
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33295e;
+            Result.a aVar2 = Result.f33071e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {
@@ -170,7 +170,7 @@ public final class NotificationManagerUtilsKt {
             } else {
                 String tag = statusBarNotification.getTag();
                 Intrinsics.checkNotNullExpressionValue(tag, "getTag(...)");
-                P = StringsKt.P(tag, NotificationData.TYPE_CALL_RING + ChannelId.m1065toStringimpl(j10), false, 2, null);
+                P = StringsKt.P(tag, NotificationData.TYPE_CALL_RING + ChannelId.m1067toStringimpl(j10), false, 2, null);
             }
             if (P) {
                 arrayList.add(statusBarNotification);

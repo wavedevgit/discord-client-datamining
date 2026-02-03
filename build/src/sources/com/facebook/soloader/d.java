@@ -16,26 +16,26 @@ import java.util.zip.ZipFile;
 public class d extends e0 implements w {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f12438a = new HashMap();
+    private final Map f12067a = new HashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f12439b = new HashMap();
+    private final Map f12068b = new HashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f12440c;
+    private final Set f12069c;
 
     public d(Context context) {
-        this.f12440c = l(context);
+        this.f12069c = l(context);
     }
 
     private void f(String str, String str2, String str3) {
-        synchronized (this.f12439b) {
+        synchronized (this.f12068b) {
             try {
                 String str4 = str + str2;
-                if (!this.f12439b.containsKey(str4)) {
-                    this.f12439b.put(str4, new HashSet());
+                if (!this.f12068b.containsKey(str4)) {
+                    this.f12068b.put(str4, new HashSet());
                 }
-                ((Set) this.f12439b.get(str4)).add(str3);
+                ((Set) this.f12068b.get(str4)).add(str3);
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -43,12 +43,12 @@ public class d extends e0 implements w {
     }
 
     private void g(String str, String str2) {
-        synchronized (this.f12438a) {
+        synchronized (this.f12067a) {
             try {
-                if (!this.f12438a.containsKey(str)) {
-                    this.f12438a.put(str, new HashSet());
+                if (!this.f12067a.containsKey(str)) {
+                    this.f12067a.put(str, new HashSet());
                 }
-                ((Set) this.f12438a.get(str)).add(str2);
+                ((Set) this.f12067a.get(str)).add(str2);
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -104,8 +104,8 @@ public class d extends e0 implements w {
 
     private Set k(String str, String str2) {
         Set set;
-        synchronized (this.f12439b) {
-            set = (Set) this.f12439b.get(str + str2);
+        synchronized (this.f12068b) {
+            set = (Set) this.f12068b.get(str + str2);
         }
         return set;
     }
@@ -175,7 +175,7 @@ public class d extends e0 implements w {
         String str;
         int indexOf;
         int i10;
-        for (String str2 : this.f12440c) {
+        for (String str2 : this.f12069c) {
             if (!TextUtils.isEmpty(str2) && (indexOf = str2.indexOf(33)) >= 0 && (i10 = indexOf + 2) < str2.length()) {
                 str = str2.substring(i10);
             } else {
@@ -222,14 +222,14 @@ public class d extends e0 implements w {
 
     @Override // com.facebook.soloader.e0
     public int d(String str, int i10, StrictMode.ThreadPolicy threadPolicy) {
-        if (SoLoader.f12418b != null) {
-            for (String str2 : this.f12440c) {
-                Set set = (Set) this.f12438a.get(str2);
+        if (SoLoader.f12047b != null) {
+            for (String str2 : this.f12069c) {
+                Set set = (Set) this.f12067a.get(str2);
                 if (!TextUtils.isEmpty(str2) && set != null && set.contains(str)) {
                     p(str2, str, i10, threadPolicy);
                     try {
                         i10 |= 4;
-                        SoLoader.f12418b.a(str2 + File.separator + str, i10);
+                        SoLoader.f12047b.a(str2 + File.separator + str, i10);
                         p.a("SoLoader", str + " found on " + str2);
                         return 1;
                     } catch (UnsatisfiedLinkError e10) {
@@ -251,11 +251,11 @@ public class d extends e0 implements w {
     }
 
     public boolean o() {
-        return !this.f12440c.isEmpty();
+        return !this.f12069c.isEmpty();
     }
 
     @Override // com.facebook.soloader.e0
     public String toString() {
-        return c() + "[root = " + this.f12440c.toString() + ']';
+        return c() + "[root = " + this.f12069c.toString() + ']';
     }
 }

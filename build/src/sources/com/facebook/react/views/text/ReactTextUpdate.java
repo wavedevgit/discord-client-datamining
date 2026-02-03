@@ -59,7 +59,7 @@ public final class ReactTextUpdate {
         return Companion.buildReactTextUpdateFromState(spannable, i10, i11, i12, i13);
     }
 
-    @ir.c
+    @jr.c
     public final boolean containsImages() {
         return this.containsImages;
     }

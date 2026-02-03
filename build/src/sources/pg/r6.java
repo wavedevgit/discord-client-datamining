@@ -5,7 +5,7 @@ import ui.c;
 final class r6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r6 f45690a = new r6();
+    static final r6 f45764a = new r6();
 
     static {
         c.b a10 = ui.c.a("sdkVersion");

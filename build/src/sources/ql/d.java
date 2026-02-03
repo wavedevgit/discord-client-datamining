@@ -10,7 +10,7 @@ import pl.i;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f47527a = "d";
+    private static final String f47782a = "d";
 
     public c a(int i10, int i11, ol.e eVar, il.a aVar, i iVar, il.b bVar, f fVar, MediaFormat mediaFormat) {
         if (mediaFormat == null) {
@@ -38,7 +38,7 @@ public class d {
                 }
                 return new a(eVar, i10, fVar, i11, mediaFormat, iVar, aVar, bVar);
             } else {
-                String str = f47527a;
+                String str = f47782a;
                 Log.i(str, "Unsupported track mime type: " + string + ", will use passthrough transcoder");
                 return new b(eVar, i10, fVar, i11);
             }

@@ -9,7 +9,7 @@ public interface a extends d {
 
     /* renamed from: o9.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public interface InterfaceC0532a {
+    public interface InterfaceC0540a {
     }
 
     int c();
@@ -24,7 +24,7 @@ public interface a extends d {
 
     boolean h(Drawable drawable, Canvas canvas, int i10);
 
-    void k(InterfaceC0532a interfaceC0532a);
+    void k(InterfaceC0540a interfaceC0540a);
 
     void m(int i10);
 }

@@ -1,239 +1,774 @@
 package lt;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.util.Set;
-import net.time4j.h0;
-/* JADX INFO: Access modifiers changed from: package-private */
+import com.facebook.react.views.text.ReactFontManager;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class j implements h {
+public abstract class j {
+    private static final int[] A;
+    private static final String[] B;
+    private static final int[] C;
+    private static final /* synthetic */ j[] D;
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f37626d;
+    public static final j f37686d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final jt.p f37627e;
+    public static final j f37687e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f37628i;
+    public static final j f37688i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f37629o;
+    public static final j f37689o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f37630p;
+    public static final j f37690p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final char f37631q;
+    public static final j f37691q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final kt.g f37632r;
+    public static final j f37692r;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public j(jt.p pVar, int i10, int i11, boolean z10) {
-        this.f37627e = pVar;
-        this.f37628i = i10;
-        this.f37629o = i11;
-        this.f37630p = !z10 && i10 == i11;
-        this.f37626d = z10 ? new m(kt.a.f36558o) : null;
-        if (pVar == null) {
-            throw new NullPointerException("Missing element.");
+    /* renamed from: s  reason: collision with root package name */
+    public static final j f37693s;
+
+    /* renamed from: t  reason: collision with root package name */
+    public static final j f37694t;
+
+    /* renamed from: u  reason: collision with root package name */
+    public static final j f37695u;
+
+    /* renamed from: v  reason: collision with root package name */
+    public static final j f37696v;
+
+    /* renamed from: w  reason: collision with root package name */
+    public static final j f37697w;
+
+    /* renamed from: x  reason: collision with root package name */
+    public static final j f37698x;
+
+    /* renamed from: y  reason: collision with root package name */
+    public static final j f37699y;
+
+    /* renamed from: z  reason: collision with root package name */
+    public static final j f37700z;
+    private final String code;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    enum g extends j {
+        g(String str, int i10, String str2) {
+            super(str, i10, str2, null);
         }
-        if (i10 < 0) {
-            throw new IllegalArgumentException("Negative min digits: " + i10);
-        } else if (i10 > i11) {
-            throw new IllegalArgumentException("Max smaller than min: " + i11 + " < " + i10);
-        } else if (i10 > 9) {
-            throw new IllegalArgumentException("Min digits out of range: " + i10);
-        } else if (i11 <= 9) {
-            this.f37631q = '0';
-            this.f37632r = kt.g.SMART;
-        } else {
-            throw new IllegalArgumentException("Max digits out of range: " + i11);
+
+        @Override // lt.j
+        public boolean k(char c10) {
+            if (c10 >= '0' && c10 <= '9') {
+                return true;
+            }
+            return false;
         }
-    }
 
-    private int b(BigDecimal bigDecimal, int i10, int i11) {
-        BigDecimal valueOf = BigDecimal.valueOf(i10);
-        return bigDecimal.multiply(BigDecimal.valueOf(i11).subtract(valueOf).add(BigDecimal.ONE)).setScale(0, RoundingMode.FLOOR).add(valueOf).intValueExact();
-    }
+        @Override // lt.j
+        public String m() {
+            return "0123456789";
+        }
 
-    private boolean c() {
-        if (this.f37626d != null) {
+        @Override // lt.j
+        public boolean p() {
             return true;
         }
-        return false;
+
+        @Override // lt.j
+        public int r(String str, lt.g gVar) {
+            int parseInt = Integer.parseInt(str);
+            if (parseInt >= 0) {
+                return parseInt;
+            }
+            throw new NumberFormatException("Cannot convert negative number: " + str);
+        }
+
+        @Override // lt.j
+        public String t(int i10) {
+            if (i10 >= 0) {
+                return Integer.toString(i10);
+            }
+            throw new IllegalArgumentException("Cannot convert: " + i10);
+        }
     }
 
-    private static BigDecimal h(Number number) {
-        return BigDecimal.valueOf(number.longValue());
-    }
+    static {
+        g gVar = new g("ARABIC", 0, "latn");
+        f37686d = gVar;
+        j jVar = new j("ARABIC_INDIC", 1, "arab") { // from class: lt.j.h
+            @Override // lt.j
+            public String m() {
+                return "٠١٢٣٤٥٦٧٨٩";
+            }
 
-    @Override // lt.h
-    public h a(c cVar, jt.d dVar, int i10) {
-        return new j(this.f37626d, this.f37627e, this.f37628i, this.f37629o, this.f37630p, ((Character) dVar.b(kt.a.f36556m, '0')).charValue(), (kt.g) dVar.b(kt.a.f36549f, kt.g.SMART));
-    }
+            @Override // lt.j
+            public boolean p() {
+                return true;
+            }
+        };
+        f37687e = jVar;
+        j jVar2 = new j("ARABIC_INDIC_EXT", 2, "arabext") { // from class: lt.j.i
+            @Override // lt.j
+            public String m() {
+                return "۰۱۲۳۴۵۶۷۸۹";
+            }
 
-    @Override // lt.h
-    public int d(jt.o oVar, Appendable appendable, jt.d dVar, Set set, boolean z10) {
-        jt.d dVar2;
-        char charValue;
-        int i10;
-        Set set2;
-        int i11;
-        int i12;
-        BigDecimal h10 = h((Number) oVar.p(this.f37627e));
-        BigDecimal h11 = h((Number) oVar.t(this.f37627e));
-        BigDecimal h12 = h((Number) oVar.i(this.f37627e));
-        if (h10.compareTo(h12) > 0) {
-            h10 = h12;
-        }
-        BigDecimal subtract = h10.subtract(h11);
-        BigDecimal add = h12.subtract(h11).add(BigDecimal.ONE);
-        RoundingMode roundingMode = RoundingMode.FLOOR;
-        BigDecimal divide = subtract.divide(add, 9, roundingMode);
-        BigDecimal bigDecimal = BigDecimal.ZERO;
-        if (divide.compareTo(bigDecimal) != 0) {
-            bigDecimal = h0.a(divide);
-        }
-        BigDecimal bigDecimal2 = bigDecimal;
-        if (z10) {
-            charValue = this.f37631q;
-            dVar2 = dVar;
-        } else {
-            dVar2 = dVar;
-            charValue = ((Character) dVar2.b(kt.a.f36556m, '0')).charValue();
-        }
-        char c10 = charValue;
-        if (appendable instanceof CharSequence) {
-            i10 = ((CharSequence) appendable).length();
-        } else {
-            i10 = -1;
-        }
-        int i13 = 0;
-        if (bigDecimal2.scale() == 0) {
-            if (this.f37628i > 0) {
-                if (c()) {
-                    this.f37626d.d(oVar, appendable, dVar2, set, z10);
-                    i11 = 1;
-                } else {
-                    i11 = 0;
+            @Override // lt.j
+            public boolean p() {
+                return true;
+            }
+        };
+        f37688i = jVar2;
+        j jVar3 = new j("BENGALI", 3, "beng") { // from class: lt.j.j
+            @Override // lt.j
+            public String m() {
+                return "০১২৩৪৫৬৭৮৯";
+            }
+
+            @Override // lt.j
+            public boolean p() {
+                return true;
+            }
+        };
+        f37689o = jVar3;
+        j jVar4 = new j("DEVANAGARI", 4, "deva") { // from class: lt.j.k
+            @Override // lt.j
+            public String m() {
+                return "०१२३४५६७८९";
+            }
+
+            @Override // lt.j
+            public boolean p() {
+                return true;
+            }
+        };
+        f37690p = jVar4;
+        j jVar5 = new j("DOZENAL", 5, "dozenal") { // from class: lt.j.l
+            @Override // lt.j
+            public boolean k(char c10) {
+                if ((c10 < '0' || c10 > '9') && c10 != 8586 && c10 != 8587) {
+                    return false;
                 }
-                while (true) {
-                    i12 = this.f37628i;
-                    if (i13 >= i12) {
-                        break;
+                return true;
+            }
+
+            @Override // lt.j
+            public String m() {
+                return "0123456789↊↋";
+            }
+
+            @Override // lt.j
+            public boolean p() {
+                return false;
+            }
+
+            @Override // lt.j
+            public int r(String str, lt.g gVar2) {
+                int parseInt = Integer.parseInt(str.replace((char) 8586, 'a').replace((char) 8587, 'b'), 12);
+                if (parseInt >= 0) {
+                    return parseInt;
+                }
+                throw new NumberFormatException("Cannot convert negative number: " + str);
+            }
+
+            @Override // lt.j
+            public int s(int i10, Appendable appendable) {
+                char c10;
+                if (i10 >= 0) {
+                    int i11 = 1;
+                    while (true) {
+                        if (i11 <= 4) {
+                            if (i10 < j.C[i11]) {
+                                break;
+                            }
+                            i11++;
+                        } else {
+                            i11 = 0;
+                            break;
+                        }
                     }
-                    appendable.append(c10);
-                    i13++;
+                    if (i11 > 0) {
+                        int i12 = i11 - 1;
+                        do {
+                            int i13 = i10 / j.C[i12];
+                            if (i13 == 11) {
+                                c10 = 8587;
+                            } else if (i13 == 10) {
+                                c10 = 8586;
+                            } else {
+                                c10 = (char) (i13 + 48);
+                            }
+                            appendable.append(c10);
+                            i10 -= i13 * j.C[i12];
+                            i12--;
+                        } while (i12 >= 0);
+                        return i11;
+                    }
                 }
-                i13 = i11 + i12;
+                return super.s(i10, appendable);
             }
-            set2 = set;
-        } else {
-            if (c()) {
-                set2 = set;
-                this.f37626d.d(oVar, appendable, dVar, set2, z10);
-                i13 = 1;
+
+            @Override // lt.j
+            public String t(int i10) {
+                if (i10 >= 0) {
+                    return Integer.toString(i10, 12).replace('a', (char) 8586).replace('b', (char) 8587);
+                }
+                throw new IllegalArgumentException("Cannot convert: " + i10);
+            }
+        };
+        f37691q = jVar5;
+        j jVar6 = new j("ETHIOPIC", 6, "ethiopic") { // from class: lt.j.m
+            @Override // lt.j
+            public boolean k(char c10) {
+                if (c10 >= 4969 && c10 <= 4988) {
+                    return true;
+                }
+                return false;
+            }
+
+            @Override // lt.j
+            public String m() {
+                return "፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼";
+            }
+
+            @Override // lt.j
+            public boolean p() {
+                return false;
+            }
+
+            @Override // lt.j
+            public int r(String str, lt.g gVar2) {
+                int i10;
+                int i11 = 1;
+                int i12 = 1;
+                boolean z10 = false;
+                boolean z11 = false;
+                int i13 = 0;
+                int i14 = 0;
+                for (int length = str.length() - 1; length >= 0; length--) {
+                    char charAt = str.charAt(length);
+                    if (charAt >= 4969 && charAt < 4978) {
+                        i10 = charAt - 4968;
+                    } else if (charAt >= 4978 && charAt < 4987) {
+                        i10 = (charAt - 4977) * 10;
+                    } else {
+                        if (charAt == 4988) {
+                            if (z10 && i14 == 0) {
+                                i14 = 1;
+                            }
+                            i13 = j.i(i13, i14, i12);
+                            if (z10) {
+                                i12 *= 100;
+                            } else {
+                                i12 *= 10000;
+                            }
+                            z11 = true;
+                            z10 = false;
+                            i14 = 0;
+                        } else if (charAt == 4987) {
+                            i13 = j.i(i13, i14, i12);
+                            i12 *= 100;
+                            z10 = true;
+                            z11 = false;
+                            i14 = 0;
+                        }
+                    }
+                    i14 += i10;
+                }
+                if ((!z10 && !z11) || i14 != 0) {
+                    i11 = i14;
+                }
+                return j.i(i13, i11, i12);
+            }
+
+            /* JADX WARN: Removed duplicated region for block: B:34:0x006f  */
+            /* JADX WARN: Removed duplicated region for block: B:36:0x0074  */
+            /* JADX WARN: Removed duplicated region for block: B:38:0x0079  */
+            /* JADX WARN: Removed duplicated region for block: B:46:0x007c A[SYNTHETIC] */
+            @Override // lt.j
+            /*
+                Code decompiled incorrectly, please refer to instructions dump.
+                To view partially-correct add '--show-bad-code' argument
+            */
+            public java.lang.String t(int r11) {
+                /*
+                    r10 = this;
+                    r0 = 1
+                    if (r11 < r0) goto L84
+                    java.lang.String r11 = java.lang.String.valueOf(r11)
+                    int r1 = r11.length()
+                    int r2 = r1 + (-1)
+                    int r3 = r2 % 2
+                    if (r3 != 0) goto L23
+                    java.lang.StringBuilder r2 = new java.lang.StringBuilder
+                    r2.<init>()
+                    java.lang.String r3 = "0"
+                    r2.append(r3)
+                    r2.append(r11)
+                    java.lang.String r11 = r2.toString()
+                    goto L24
+                L23:
+                    r1 = r2
+                L24:
+                    java.lang.StringBuilder r2 = new java.lang.StringBuilder
+                    r2.<init>()
+                    r3 = r1
+                L2a:
+                    if (r3 < 0) goto L7f
+                    int r4 = r1 - r3
+                    char r4 = r11.charAt(r4)
+                    int r5 = r3 + (-1)
+                    int r6 = r1 - r5
+                    char r6 = r11.charAt(r6)
+                    r7 = 48
+                    r8 = 0
+                    if (r6 == r7) goto L43
+                    int r6 = r6 + 4920
+                    char r6 = (char) r6
+                    goto L44
+                L43:
+                    r6 = r8
+                L44:
+                    if (r4 == r7) goto L4a
+                    int r4 = r4 + 4929
+                    char r4 = (char) r4
+                    goto L4b
+                L4a:
+                    r4 = r8
+                L4b:
+                    int r7 = r5 % 4
+                    int r7 = r7 / 2
+                    r9 = 4987(0x137b, float:6.988E-42)
+                    if (r5 == 0) goto L5e
+                    if (r7 == 0) goto L5b
+                    if (r6 != 0) goto L59
+                    if (r4 == 0) goto L5e
+                L59:
+                    r5 = r9
+                    goto L5f
+                L5b:
+                    r5 = 4988(0x137c, float:6.99E-42)
+                    goto L5f
+                L5e:
+                    r5 = r8
+                L5f:
+                    r7 = 4969(0x1369, float:6.963E-42)
+                    if (r6 != r7) goto L6c
+                    if (r4 != 0) goto L6c
+                    if (r1 <= r0) goto L6c
+                    if (r5 == r9) goto L6d
+                    if (r3 != r1) goto L6c
+                    goto L6d
+                L6c:
+                    r8 = r6
+                L6d:
+                    if (r4 == 0) goto L72
+                    r2.append(r4)
+                L72:
+                    if (r8 == 0) goto L77
+                    r2.append(r8)
+                L77:
+                    if (r5 == 0) goto L7c
+                    r2.append(r5)
+                L7c:
+                    int r3 = r3 + (-2)
+                    goto L2a
+                L7f:
+                    java.lang.String r11 = r2.toString()
+                    return r11
+                L84:
+                    java.lang.IllegalArgumentException r0 = new java.lang.IllegalArgumentException
+                    java.lang.StringBuilder r1 = new java.lang.StringBuilder
+                    r1.<init>()
+                    java.lang.String r2 = "Can only convert positive numbers: "
+                    r1.append(r2)
+                    r1.append(r11)
+                    java.lang.String r11 = r1.toString()
+                    r0.<init>(r11)
+                    throw r0
+                */
+                throw new UnsupportedOperationException("Method not decompiled: lt.j.m.t(int):java.lang.String");
+            }
+        };
+        f37692r = jVar6;
+        j jVar7 = new j("GUJARATI", 7, "gujr") { // from class: lt.j.n
+            @Override // lt.j
+            public String m() {
+                return "૦૧૨૩૪૫૬૭૮૯";
+            }
+
+            @Override // lt.j
+            public boolean p() {
+                return true;
+            }
+        };
+        f37693s = jVar7;
+        j jVar8 = new j("JAPANESE", 8, "jpan") { // from class: lt.j.o
+            @Override // lt.j
+            public String m() {
+                return "一二三四五六七八九十百千";
+            }
+
+            @Override // lt.j
+            public boolean p() {
+                return false;
+            }
+
+            @Override // lt.j
+            public int r(String str, lt.g gVar2) {
+                boolean z10;
+                String m10 = m();
+                int i10 = 0;
+                int i11 = 0;
+                int i12 = 0;
+                int i13 = 0;
+                for (int length = str.length() - 1; length >= 0; length--) {
+                    char charAt = str.charAt(length);
+                    if (charAt != 21313) {
+                        if (charAt != 21315) {
+                            if (charAt != 30334) {
+                                int i14 = 0;
+                                while (true) {
+                                    if (i14 < 9) {
+                                        if (m10.charAt(i14) == charAt) {
+                                            int i15 = i14 + 1;
+                                            if (i13 == 1) {
+                                                i11 += i15 * 1000;
+                                                i13 = -1;
+                                            } else if (i12 == 1) {
+                                                i11 += i15 * 100;
+                                                i12 = -1;
+                                            } else if (i10 == 1) {
+                                                i11 += i15 * 10;
+                                                i10 = -1;
+                                            } else {
+                                                i11 += i15;
+                                            }
+                                            z10 = true;
+                                        } else {
+                                            i14++;
+                                        }
+                                    } else {
+                                        z10 = false;
+                                        break;
+                                    }
+                                }
+                                if (!z10) {
+                                    throw new IllegalArgumentException("Invalid Japanese numeral: " + str);
+                                }
+                            } else if (i12 == 0 && i13 == 0) {
+                                i12++;
+                            } else {
+                                throw new IllegalArgumentException("Invalid Japanese numeral: " + str);
+                            }
+                        } else if (i13 == 0) {
+                            i13++;
+                        } else {
+                            throw new IllegalArgumentException("Invalid Japanese numeral: " + str);
+                        }
+                    } else if (i10 == 0 && i12 == 0 && i13 == 0) {
+                        i10++;
+                    } else {
+                        throw new IllegalArgumentException("Invalid Japanese numeral: " + str);
+                    }
+                }
+                if (i10 == 1) {
+                    i11 += 10;
+                }
+                if (i12 == 1) {
+                    i11 += 100;
+                }
+                if (i13 == 1) {
+                    return i11 + 1000;
+                }
+                return i11;
+            }
+
+            @Override // lt.j
+            public String t(int i10) {
+                if (i10 >= 1 && i10 <= 9999) {
+                    String m10 = m();
+                    int i11 = i10 / 1000;
+                    int i12 = i10 % 1000;
+                    int i13 = i12 / 100;
+                    int i14 = i12 % 100;
+                    int i15 = i14 / 10;
+                    int i16 = i14 % 10;
+                    StringBuilder sb2 = new StringBuilder();
+                    if (i11 >= 1) {
+                        if (i11 > 1) {
+                            sb2.append(m10.charAt(i11 - 1));
+                        }
+                        sb2.append((char) 21315);
+                    }
+                    if (i13 >= 1) {
+                        if (i13 > 1) {
+                            sb2.append(m10.charAt(i13 - 1));
+                        }
+                        sb2.append((char) 30334);
+                    }
+                    if (i15 >= 1) {
+                        if (i15 > 1) {
+                            sb2.append(m10.charAt(i15 - 1));
+                        }
+                        sb2.append((char) 21313);
+                    }
+                    if (i16 > 0) {
+                        sb2.append(m10.charAt(i16 - 1));
+                    }
+                    return sb2.toString();
+                }
+                throw new IllegalArgumentException("Cannot convert: " + i10);
+            }
+        };
+        f37694t = jVar8;
+        j jVar9 = new j("KHMER", 9, "khmr") { // from class: lt.j.a
+            @Override // lt.j
+            public String m() {
+                return "០១២៣៤៥៦៧៨៩";
+            }
+
+            @Override // lt.j
+            public boolean p() {
+                return true;
+            }
+        };
+        f37695u = jVar9;
+        j jVar10 = new j("MYANMAR", 10, "mymr") { // from class: lt.j.b
+            @Override // lt.j
+            public String m() {
+                return "၀၁၂၃၄၅၆၇၈၉";
+            }
+
+            @Override // lt.j
+            public boolean p() {
+                return true;
+            }
+        };
+        f37696v = jVar10;
+        j jVar11 = new j("ORYA", 11, "orya") { // from class: lt.j.c
+            @Override // lt.j
+            public String m() {
+                return "୦୧୨୩୪୫୬୭୮୯";
+            }
+
+            @Override // lt.j
+            public boolean p() {
+                return true;
+            }
+        };
+        f37697w = jVar11;
+        j jVar12 = new j("ROMAN", 12, "roman") { // from class: lt.j.d
+            @Override // lt.j
+            public boolean k(char c10) {
+                char upperCase = Character.toUpperCase(c10);
+                if (upperCase != 'I' && upperCase != 'V' && upperCase != 'X' && upperCase != 'L' && upperCase != 'C' && upperCase != 'D' && upperCase != 'M') {
+                    return false;
+                }
+                return true;
+            }
+
+            @Override // lt.j
+            public String m() {
+                return "IVXLCDM";
+            }
+
+            @Override // lt.j
+            public boolean p() {
+                return false;
+            }
+
+            /* JADX WARN: Code restructure failed: missing block: B:71:0x0016, code lost:
+                continue;
+             */
+            @Override // lt.j
+            /*
+                Code decompiled incorrectly, please refer to instructions dump.
+                To view partially-correct add '--show-bad-code' argument
+            */
+            public int r(java.lang.String r12, lt.g r13) {
+                /*
+                    Method dump skipped, instructions count: 221
+                    To view this dump add '--comments-level debug' option
+                */
+                throw new UnsupportedOperationException("Method not decompiled: lt.j.d.r(java.lang.String, lt.g):int");
+            }
+
+            @Override // lt.j
+            public String t(int i10) {
+                if (i10 >= 1 && i10 <= 3999) {
+                    StringBuilder sb2 = new StringBuilder();
+                    for (int i11 = 0; i11 < j.A.length; i11++) {
+                        while (i10 >= j.A[i11]) {
+                            sb2.append(j.B[i11]);
+                            i10 -= j.A[i11];
+                        }
+                    }
+                    return sb2.toString();
+                }
+                throw new IllegalArgumentException("Out of range (1-3999): " + i10);
+            }
+        };
+        f37698x = jVar12;
+        j jVar13 = new j("TELUGU", 13, "telu") { // from class: lt.j.e
+            @Override // lt.j
+            public String m() {
+                return "౦౧౨౩౪౫౬౭౮౯";
+            }
+
+            @Override // lt.j
+            public boolean p() {
+                return true;
+            }
+        };
+        f37699y = jVar13;
+        j jVar14 = new j("THAI", 14, "thai") { // from class: lt.j.f
+            @Override // lt.j
+            public String m() {
+                return "๐๑๒๓๔๕๖๗๘๙";
+            }
+
+            @Override // lt.j
+            public boolean p() {
+                return true;
+            }
+        };
+        f37700z = jVar14;
+        D = new j[]{gVar, jVar, jVar2, jVar3, jVar4, jVar5, jVar6, jVar7, jVar8, jVar9, jVar10, jVar11, jVar12, jVar13, jVar14};
+        A = new int[]{1000, 900, 500, ReactFontManager.TypefaceStyle.NORMAL, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        B = new String[]{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        C = new int[]{1, 12, 144, 1728, 20736};
+    }
+
+    /* synthetic */ j(String str, int i10, String str2, g gVar) {
+        this(str, i10, str2);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static int i(int i10, int i11, int i12) {
+        return ht.c.e(i10, ht.c.h(i11, i12));
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static int o(char c10) {
+        if (c10 != 'C') {
+            if (c10 != 'D') {
+                if (c10 != 'I') {
+                    if (c10 != 'V') {
+                        if (c10 != 'X') {
+                            if (c10 != 'L') {
+                                if (c10 == 'M') {
+                                    return 1000;
+                                }
+                                throw new NumberFormatException("Invalid Roman digit: " + c10);
+                            }
+                            return 50;
+                        }
+                        return 10;
+                    }
+                    return 5;
+                }
+                return 1;
+            }
+            return 500;
+        }
+        return 100;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static boolean q(char c10, char c11) {
+        if (c10 != 'C') {
+            if (c10 != 'I') {
+                if (c10 != 'X') {
+                    return false;
+                }
+                if (c11 == 'C' || c11 == 'L') {
+                    return true;
+                }
+                return false;
+            } else if (c11 == 'X' || c11 == 'V') {
+                return true;
             } else {
-                set2 = set;
+                return false;
             }
-            String plainString = bigDecimal2.setScale(Math.min(Math.max(bigDecimal2.scale(), this.f37628i), this.f37629o), roundingMode).toPlainString();
-            int i14 = c10 - '0';
-            int length = plainString.length();
-            for (int i15 = 2; i15 < length; i15++) {
-                appendable.append((char) (plainString.charAt(i15) + i14));
-                i13++;
-            }
-        }
-        if (i10 != -1 && i13 > 1 && set2 != null) {
-            set2.add(new g(this.f37627e, i10 + 1, i10 + i13));
-        }
-        return i13;
-    }
-
-    /* JADX WARN: Removed duplicated region for block: B:48:0x0118  */
-    /* JADX WARN: Removed duplicated region for block: B:49:0x0126  */
-    @Override // lt.h
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public void e(java.lang.CharSequence r20, lt.s r21, jt.d r22, lt.t r23, boolean r24) {
-        /*
-            Method dump skipped, instructions count: 312
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: lt.j.e(java.lang.CharSequence, lt.s, jt.d, lt.t, boolean):void");
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
+        } else if (c11 == 'M' || c11 == 'D') {
             return true;
+        } else {
+            return false;
         }
-        if (obj instanceof j) {
-            j jVar = (j) obj;
-            if (this.f37627e.equals(jVar.f37627e) && this.f37628i == jVar.f37628i && this.f37629o == jVar.f37629o && c() == jVar.c()) {
+    }
+
+    public static j valueOf(String str) {
+        return (j) Enum.valueOf(j.class, str);
+    }
+
+    public static j[] values() {
+        return (j[]) D.clone();
+    }
+
+    public boolean k(char c10) {
+        String m10 = m();
+        int length = m10.length();
+        for (int i10 = 0; i10 < length; i10++) {
+            if (m10.charAt(i10) == c10) {
                 return true;
             }
         }
         return false;
     }
 
-    @Override // lt.h
-    public boolean f() {
-        return true;
+    public String l() {
+        return this.code;
     }
 
-    @Override // lt.h
-    public h g(jt.p pVar) {
-        if (this.f37627e == pVar) {
-            return this;
+    public abstract String m();
+
+    public abstract boolean p();
+
+    public int r(String str, lt.g gVar) {
+        if (p()) {
+            int charAt = m().charAt(0) - '0';
+            StringBuilder sb2 = new StringBuilder();
+            int length = str.length();
+            for (int i10 = 0; i10 < length; i10++) {
+                sb2.append((char) (str.charAt(i10) - charAt));
+            }
+            int parseInt = Integer.parseInt(sb2.toString());
+            if (parseInt >= 0) {
+                return parseInt;
+            }
+            throw new NumberFormatException("Cannot convert negative number: " + str);
         }
-        return new j(pVar, this.f37628i, this.f37629o, c());
+        throw new NumberFormatException("Cannot convert: " + str);
     }
 
-    @Override // lt.h
-    public jt.p getElement() {
-        return this.f37627e;
+    public int s(int i10, Appendable appendable) {
+        String t10 = t(i10);
+        appendable.append(t10);
+        return t10.length();
     }
 
-    public int hashCode() {
-        return (this.f37627e.hashCode() * 7) + ((this.f37628i + (this.f37629o * 10)) * 31);
-    }
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public jt.q i(jt.q qVar, jt.q qVar2) {
-        k kVar = k.FRACTION;
-        if (!qVar2.o(kVar)) {
-            return qVar;
+    public String t(int i10) {
+        if (p() && i10 >= 0) {
+            int charAt = m().charAt(0) - '0';
+            String num = Integer.toString(i10);
+            StringBuilder sb2 = new StringBuilder();
+            int length = num.length();
+            for (int i11 = 0; i11 < length; i11++) {
+                sb2.append((char) (num.charAt(i11) + charAt));
+            }
+            return sb2.toString();
         }
-        int b10 = b((BigDecimal) qVar2.p(kVar), ((Integer) qVar.t(this.f37627e)).intValue(), ((Integer) qVar.i(this.f37627e)).intValue());
-        qVar2.E(kVar, null);
-        qVar2.C(this.f37627e, b10);
-        return qVar.C(this.f37627e, b10);
+        throw new IllegalArgumentException("Cannot convert: " + i10);
     }
 
-    public String toString() {
-        StringBuilder sb2 = new StringBuilder(64);
-        sb2.append(j.class.getName());
-        sb2.append("[element=");
-        sb2.append(this.f37627e.name());
-        sb2.append(", min-digits=");
-        sb2.append(this.f37628i);
-        sb2.append(", max-digits=");
-        sb2.append(this.f37629o);
-        sb2.append(']');
-        return sb2.toString();
-    }
-
-    private j(h hVar, jt.p pVar, int i10, int i11, boolean z10, char c10, kt.g gVar) {
-        this.f37626d = hVar;
-        this.f37627e = pVar;
-        this.f37628i = i10;
-        this.f37629o = i11;
-        this.f37630p = z10;
-        this.f37631q = c10;
-        this.f37632r = gVar;
+    private j(String str, int i10, String str2) {
+        this.code = str2;
     }
 }

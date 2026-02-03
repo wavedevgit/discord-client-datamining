@@ -73,7 +73,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     private static AFa1uSDK areAllFieldsValid = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private static int f9247d = 1;
+    private static int f8876d = 1;
     static AppsFlyerInAppPurchaseValidatorListener getCurrencyIso4217Code;
     public static final String getRevenue;
     private static boolean registerClient;
@@ -112,8 +112,8 @@ public final class AFa1uSDK extends AppsFlyerLib {
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: com.appsflyer.internal.AFa1uSDK$AFa1uSDK  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public class C0140AFa1uSDK implements AFe1sSDK {
-        C0140AFa1uSDK() {
+    public class C0145AFa1uSDK implements AFe1sSDK {
+        C0145AFa1uSDK() {
         }
 
         @Override // com.appsflyer.internal.AFe1sSDK
@@ -143,7 +143,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
                             Unit monetizationNetwork;
-                            monetizationNetwork = AFa1uSDK.C0140AFa1uSDK.this.getMonetizationNetwork();
+                            monetizationNetwork = AFa1uSDK.C0145AFa1uSDK.this.getMonetizationNetwork();
                             return monetizationNetwork;
                         }
                     });
@@ -184,7 +184,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         /* JADX INFO: Access modifiers changed from: private */
         public /* synthetic */ Unit getMonetizationNetwork() {
             AFa1uSDK.this.getCurrencyIso4217Code(new AFh1kSDK());
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
     }
 
@@ -194,7 +194,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         AFAdRevenueData = "6.17";
         getCurrencyIso4217Code = null;
         areAllFieldsValid = new AFa1uSDK();
-        int i10 = f9247d + 61;
+        int i10 = f8876d + 61;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             int i11 = 48 / 0;
@@ -205,18 +205,18 @@ public final class AFa1uSDK extends AppsFlyerLib {
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).afErrorLog().getMediationNetwork();
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).afErrorLog().getRevenue();
         AFe1nSDK copydefault = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).copydefault();
-        copydefault.getMonetizationNetwork.add(new C0140AFa1uSDK());
+        copydefault.getMonetizationNetwork.add(new C0145AFa1uSDK());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void AFAdRevenueData(AFf1oSDK aFf1oSDK) {
-        int i10 = f9247d + 61;
+        int i10 = f8876d + 61;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             AFc1bSDK aFc1bSDK = (AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this));
             if (aFf1oSDK == AFf1oSDK.SUCCESS) {
                 int i11 = AFKeystoreWrapper + 103;
-                f9247d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i11 % 2 != 0) {
                     aFc1bSDK.afWarnLog().getRevenue();
                 } else {
@@ -225,7 +225,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 }
             }
             if (!aFc1bSDK.equals().getCurrencyIso4217Code()) {
-                f9247d = (AFKeystoreWrapper + 77) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = (AFKeystoreWrapper + 77) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 aFc1bSDK.afErrorLog().AFAdRevenueData();
                 return;
             }
@@ -240,14 +240,14 @@ public final class AFa1uSDK extends AppsFlyerLib {
     private static /* synthetic */ Object areAllFieldsValid(Object[] objArr) {
         AFa1uSDK aFa1uSDK = (AFa1uSDK) objArr[0];
         String[] strArr = (String[]) objArr[1];
-        int i10 = f9247d + 47;
+        int i10 = f8876d + 47;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             List<String> asList = Arrays.asList(strArr);
             List<List<String>> list = ((AFc1bSDK) getRevenue(new Object[]{aFa1uSDK}, 389316487, -389316474, System.identityHashCode(aFa1uSDK))).i().AFAdRevenueData;
             if (!list.contains(asList)) {
                 list.add(asList);
-                f9247d = (AFKeystoreWrapper + 71) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = (AFKeystoreWrapper + 71) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             }
             return null;
         }
@@ -261,13 +261,13 @@ public final class AFa1uSDK extends AppsFlyerLib {
             ApplicationInfo applicationInfo = packageInfo.applicationInfo;
             if (applicationInfo != null) {
                 int i10 = AFKeystoreWrapper + 7;
-                f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i10 % 2 != 0) {
                     if ((applicationInfo.flags & PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS) != 0) {
                         if (Build.VERSION.SDK_INT >= 31) {
                             if (context.getResources().getIdentifier("appsflyer_data_extraction_rules", "xml", context.getPackageName()) != 0) {
                                 AFLogger.INSTANCE.i(AFg1cSDK.GENERAL, "appsflyer_data_extraction_rules.xml detected, using AppsFlyer data extraction rules for AppsFlyer SDK data", true);
-                                AFKeystoreWrapper = (f9247d + 109) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                                AFKeystoreWrapper = (f8876d + 109) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                                 return;
                             }
                             AFLogger.INSTANCE.w(AFg1cSDK.GENERAL, "'allowBackup' is set to true; appsflyer_data_extraction_rules.xml is NOT detected.\nAppsFlyer shared preferences should be excluded from auto backup by adding: <exclude domain=\"sharedpref\" path=\"appsflyer-data\"/> to the Application's <data-extraction-rules> both in <device-transfer> and <cloud-backup>.\nIf Appsflyer's Purchase Connector is in use then you also must add to <device-transfer> and <cloud-backup> the following excludes: <exclude domain=\"sharedpref\" path=\"appsflyer-purchase-data\"/> AND <exclude domain=\"database\" path=\"afpurchases.db\"/>", true);
@@ -297,7 +297,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         AppsFlyerConversionListener appsFlyerConversionListener = (AppsFlyerConversionListener) objArr[2];
         Context context = (Context) objArr[3];
         int i11 = AFKeystoreWrapper + 65;
-        f9247d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i11 % 2 != 0) {
             if (aFa1uSDK.toString) {
                 return aFa1uSDK;
@@ -345,7 +345,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 int length = aFj1qSDKArr.length;
                 while (i10 < length) {
                     int i12 = AFKeystoreWrapper + 89;
-                    f9247d = i12 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                    f8876d = i12 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                     if (i12 % 2 == 0) {
                         aFj1qSDKArr[i10].getCurrencyIso4217Code(AFLogger2.getMonetizationNetwork.registerClient().getRevenue);
                         i10 += 21;
@@ -356,7 +356,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 }
                 if (!AFLogger2.getMediationNetwork()) {
                     AFLogger2.AFAdRevenueData(AFLogger2.getMonetizationNetwork.registerClient().getRevenue, revenue, AFLogger2.getMonetizationNetwork);
-                    f9247d = (AFKeystoreWrapper + 47) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                    f8876d = (AFKeystoreWrapper + 47) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 }
             } else {
                 AFLogger.INSTANCE.w(AFg1cSDK.REFERRER, "context is null, Google Install Referrer will be not initialized");
@@ -371,11 +371,11 @@ public final class AFa1uSDK extends AppsFlyerLib {
     }
 
     private static /* synthetic */ Object component2(Object[] objArr) {
-        int i10 = (f9247d + 45) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        int i10 = (f8876d + 45) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         AFKeystoreWrapper = i10;
         AFc1dSDK aFc1dSDK = ((AFa1uSDK) objArr[0]).hashCode;
         int i11 = i10 + 73;
-        f9247d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i11 % 2 == 0) {
             int i12 = 82 / 0;
         }
@@ -383,10 +383,10 @@ public final class AFa1uSDK extends AppsFlyerLib {
     }
 
     private static /* synthetic */ Object component3(Object[] objArr) {
-        f9247d = (AFKeystoreWrapper + 59) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 59) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         ((AFa1uSDK) objArr[0]).subscribeForDeepLink((DeepLinkListener) objArr[1], TimeUnit.SECONDS.toMillis(3L));
         int i10 = AFKeystoreWrapper + 11;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             return null;
         }
@@ -396,14 +396,14 @@ public final class AFa1uSDK extends AppsFlyerLib {
     private static /* synthetic */ Object component4(Object[] objArr) {
         AFa1uSDK aFa1uSDK = (AFa1uSDK) objArr[0];
         int i10 = AFKeystoreWrapper + 21;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             ((AFc1bSDK) getRevenue(new Object[]{aFa1uSDK}, 389316487, -389316474, System.identityHashCode(aFa1uSDK))).equals().getCurrencyIso4217Code("unregisterConversionListener", new String[0]);
         } else {
             ((AFc1bSDK) getRevenue(new Object[]{aFa1uSDK}, 389316487, -389316474, System.identityHashCode(aFa1uSDK))).equals().getCurrencyIso4217Code("unregisterConversionListener", new String[0]);
         }
         aFa1uSDK.getMediationNetwork = null;
-        int i11 = f9247d + 57;
+        int i11 = f8876d + 57;
         AFKeystoreWrapper = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i11 % 2 != 0) {
             int i12 = 95 / 0;
@@ -415,7 +415,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         String str = (String) objArr[0];
         boolean booleanValue = ((Boolean) objArr[1]).booleanValue();
         int i10 = AFKeystoreWrapper + 83;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             AppsFlyerProperties.getInstance().set(str, booleanValue);
             return null;
@@ -428,12 +428,12 @@ public final class AFa1uSDK extends AppsFlyerLib {
         AFa1uSDK aFa1uSDK = (AFa1uSDK) objArr[0];
         Context context = (Context) objArr[1];
         int i10 = AFKeystoreWrapper + 51;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             aFa1uSDK.getMediationNetwork(context);
             AFc1oSDK component2 = ((AFc1bSDK) getRevenue(new Object[]{aFa1uSDK}, 389316487, -389316474, System.identityHashCode(aFa1uSDK))).component2();
             int i11 = AFKeystoreWrapper + 47;
-            f9247d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i11 % 2 == 0) {
                 int i12 = 57 / 0;
             }
@@ -446,7 +446,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     public static SharedPreferences d_(Context context) {
         int i10 = AFKeystoreWrapper + 43;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             if (getMonetizationNetwork().copy == null) {
                 StrictMode.ThreadPolicy allowThreadDiskReads = StrictMode.allowThreadDiskReads();
@@ -458,7 +458,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             }
             SharedPreferences sharedPreferences = getMonetizationNetwork().copy;
             int i11 = AFKeystoreWrapper + 21;
-            f9247d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i11 % 2 != 0) {
                 return sharedPreferences;
             }
@@ -477,7 +477,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     public /* synthetic */ void equals() {
         getCurrencyIso4217Code(new AFh1kSDK());
         int i10 = AFKeystoreWrapper + 69;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             int i11 = 11 / 0;
         }
@@ -485,11 +485,11 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     private static void getCurrencyIso4217Code(String str, String str2) {
         int i10 = AFKeystoreWrapper + 5;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             AppsFlyerProperties.getInstance().set(str, str2);
             int i11 = AFKeystoreWrapper + 105;
-            f9247d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i11 % 2 == 0) {
                 int i12 = 84 / 0;
                 return;
@@ -501,10 +501,10 @@ public final class AFa1uSDK extends AppsFlyerLib {
     }
 
     public static AFa1uSDK getMonetizationNetwork() {
-        int i10 = (f9247d + 87) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        int i10 = (f8876d + 87) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         AFKeystoreWrapper = i10;
         AFa1uSDK aFa1uSDK = areAllFieldsValid;
-        f9247d = (i10 + 85) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (i10 + 85) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         return aFa1uSDK;
     }
 
@@ -518,16 +518,16 @@ public final class AFa1uSDK extends AppsFlyerLib {
             case 1:
                 return getCurrencyIso4217Code(objArr);
             case 2:
-                f9247d = (AFKeystoreWrapper + 89) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = (AFKeystoreWrapper + 89) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 ((AFa1uSDK) objArr[0]).setSharingFilterForPartners((String[]) objArr[1]);
-                f9247d = (AFKeystoreWrapper + 21) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = (AFKeystoreWrapper + 21) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 return null;
             case 3:
                 AFa1uSDK aFa1uSDK = (AFa1uSDK) objArr[0];
                 boolean booleanValue = ((Boolean) objArr[1]).booleanValue();
-                AFKeystoreWrapper = (f9247d + 109) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 109) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 getCurrencyIso4217Code(AppsFlyerProperties.ENABLE_TCF_DATA_COLLECTION, Boolean.toString(booleanValue));
-                AFKeystoreWrapper = (f9247d + 105) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 105) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 return null;
             case 4:
                 return getMonetizationNetwork(objArr);
@@ -535,9 +535,9 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 return getRevenue(objArr);
             case 6:
                 int intValue = ((Number) objArr[1]).intValue();
-                f9247d = (AFKeystoreWrapper + 61) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = (AFKeystoreWrapper + 61) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 ((AFa1uSDK) objArr[0]).component2 = TimeUnit.SECONDS.toMillis(intValue);
-                AFKeystoreWrapper = (f9247d + 111) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 111) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 return null;
             case 7:
                 return getMediationNetwork(objArr);
@@ -546,9 +546,9 @@ public final class AFa1uSDK extends AppsFlyerLib {
             case 9:
                 return areAllFieldsValid(objArr);
             case 10:
-                f9247d = (AFKeystoreWrapper + 7) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = (AFKeystoreWrapper + 7) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 ((AFa1uSDK) objArr[0]).logEvent((Context) objArr[1], (String) objArr[2], (Map) objArr[3], null);
-                f9247d = (AFKeystoreWrapper + 119) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = (AFKeystoreWrapper + 119) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 return null;
             case 11:
                 return component4(objArr);
@@ -556,10 +556,10 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 AFa1uSDK aFa1uSDK2 = (AFa1uSDK) objArr[0];
                 Boolean bool = (Boolean) objArr[1];
                 boolean booleanValue2 = bool.booleanValue();
-                AFKeystoreWrapper = (f9247d + 111) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 111) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 AFLogger.afDebugLog("setDisableNetworkData: ".concat(String.valueOf(booleanValue2)));
                 getRevenue(new Object[]{AppsFlyerProperties.DISABLE_NETWORK_DATA, bool}, -222394073, 222394090, (int) System.currentTimeMillis());
-                f9247d = (AFKeystoreWrapper + 69) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = (AFKeystoreWrapper + 69) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 return null;
             case 13:
                 return component2(objArr);
@@ -572,7 +572,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 Context context = (Context) objArr[1];
                 URI uri = (URI) objArr[2];
                 int i16 = (AFKeystoreWrapper + 37) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                f9247d = i16;
+                f8876d = i16;
                 if (uri != null) {
                     AFKeystoreWrapper = (i16 + 1) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                     if (!uri.toString().isEmpty()) {
@@ -599,7 +599,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 return copy(objArr);
             case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                 AFa1uSDK aFa1uSDK4 = (AFa1uSDK) objArr[0];
-                int i19 = f9247d + 47;
+                int i19 = f8876d + 47;
                 AFKeystoreWrapper = i19 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i19 % 2 != 0) {
                     array = ((AFc1bSDK) getRevenue(new Object[]{aFa1uSDK4}, 389316487, -389316474, System.identityHashCode(aFa1uSDK4))).AFLogger().getCurrencyIso4217Code.toArray(new AFj1qSDK[1]);
@@ -612,7 +612,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             case 20:
                 AFa1uSDK aFa1uSDK5 = (AFa1uSDK) objArr[0];
                 ((AFc1bSDK) getRevenue(new Object[]{aFa1uSDK5}, 389316487, -389316474, System.identityHashCode(aFa1uSDK5))).afInfoLog().getRevenue = new AFb1uSDK((String[]) objArr[1]);
-                AFKeystoreWrapper = (f9247d + 31) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 31) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 return null;
             case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
                 return hashCode(objArr);
@@ -651,7 +651,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 AFa1uSDK aFa1uSDK6 = (AFa1uSDK) objArr[0];
                 Map<String, Object> map = (Map) objArr[2];
                 PurchaseHandler.PurchaseValidationCallback purchaseValidationCallback = (PurchaseHandler.PurchaseValidationCallback) objArr[3];
-                AFKeystoreWrapper = (f9247d + 5) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 5) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 aFa1uSDK6.getMediationNetwork((Context) objArr[1]);
                 PurchaseHandler areAllFieldsValid2 = ((AFc1bSDK) getRevenue(new Object[]{aFa1uSDK6}, 389316487, -389316474, System.identityHashCode(aFa1uSDK6))).areAllFieldsValid();
                 if (areAllFieldsValid2.getMonetizationNetwork(map, purchaseValidationCallback, "purchases")) {
@@ -659,13 +659,13 @@ public final class AFa1uSDK extends AppsFlyerLib {
                     AFe1nSDK aFe1nSDK = areAllFieldsValid2.getCurrencyIso4217Code;
                     aFe1nSDK.AFAdRevenueData.execute(new AFe1nSDK.AnonymousClass3(aFe1bSDK));
                 }
-                AFKeystoreWrapper = (f9247d + 65) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 65) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 return null;
             default:
                 AFa1uSDK aFa1uSDK7 = (AFa1uSDK) objArr[0];
                 boolean booleanValue3 = ((Boolean) objArr[1]).booleanValue();
                 int i20 = AFKeystoreWrapper + 57;
-                f9247d = i20 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = i20 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i20 % 2 == 0) {
                     AFd1mSDK equals = ((AFc1bSDK) getRevenue(new Object[]{aFa1uSDK7}, 389316487, -389316474, System.identityHashCode(aFa1uSDK7))).equals();
                     String[] strArr = new String[1];
@@ -715,7 +715,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r7 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r7 = r7 + 35
             int r8 = r7 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r8
+            com.appsflyer.internal.AFa1uSDK.f8876d = r8
             int r7 = r7 % r4
             java.lang.String r8 = "android.intent.action.VIEW"
             if (r7 == 0) goto L5b
@@ -735,13 +735,13 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r8 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r8 = r8 + 7
             int r9 = r8 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r9
+            com.appsflyer.internal.AFa1uSDK.f8876d = r9
             int r8 = r8 % r4
             if (r8 == 0) goto L84
             java.lang.String r7 = r7.toString()
             boolean r7 = r7.isEmpty()
             if (r7 != 0) goto L8c
-            int r7 = com.appsflyer.internal.AFa1uSDK.f9247d
+            int r7 = com.appsflyer.internal.AFa1uSDK.f8876d
             int r7 = r7 + 93
             int r7 = r7 % 128
             com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = r7
@@ -760,7 +760,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r10 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r10 = r10 + 93
             int r1 = r10 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r1
+            com.appsflyer.internal.AFa1uSDK.f8876d = r1
             int r10 = r10 % r4
             java.lang.String r1 = "No direct deep link"
             if (r10 != 0) goto Lab
@@ -786,7 +786,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         boolean monetizationNetwork;
         AFa1uSDK aFa1uSDK = (AFa1uSDK) objArr[0];
         int i10 = AFKeystoreWrapper + 99;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             monetizationNetwork = ((AFc1bSDK) getRevenue(new Object[]{aFa1uSDK}, 389316487, -389316474, System.identityHashCode(aFa1uSDK))).AFKeystoreWrapper().getMonetizationNetwork();
             int i11 = 64 / 0;
@@ -794,7 +794,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             monetizationNetwork = ((AFc1bSDK) getRevenue(new Object[]{aFa1uSDK}, 389316487, -389316474, System.identityHashCode(aFa1uSDK))).AFKeystoreWrapper().getMonetizationNetwork();
         }
         int i12 = AFKeystoreWrapper + 107;
-        f9247d = i12 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i12 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i12 % 2 != 0) {
             return Boolean.valueOf(monetizationNetwork);
         }
@@ -808,7 +808,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void anonymizeUser(boolean z10) {
-        int i10 = f9247d + 67;
+        int i10 = f8876d + 67;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             AFd1mSDK equals = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals();
@@ -820,7 +820,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         }
         AppsFlyerProperties.getInstance().set(AppsFlyerProperties.DEVICE_TRACKING_DISABLED, z10);
         int i11 = AFKeystoreWrapper + 87;
-        f9247d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i11 % 2 == 0) {
             int i12 = 42 / 0;
         }
@@ -828,13 +828,13 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void appendParametersToDeepLinkingURL(String str, Map<String, String> map) {
-        int i10 = f9247d + 45;
+        int i10 = f8876d + 45;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             AFa1rSDK i11 = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).i();
             i11.getMonetizationNetwork = str;
             i11.getMediationNetwork = map;
-            f9247d = (AFKeystoreWrapper + 99) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = (AFKeystoreWrapper + 99) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             return;
         }
         AFa1rSDK i12 = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).i();
@@ -851,7 +851,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     public final void disableAppSetId() {
         Object revenue;
         int i10 = AFKeystoreWrapper + 11;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             revenue = getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this));
         } else {
@@ -859,7 +859,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         }
         ((AFc1bSDK) revenue).afInfoLog().component1 = true;
         int i11 = AFKeystoreWrapper + 33;
-        f9247d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i11 % 2 != 0) {
             return;
         }
@@ -868,9 +868,9 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void enableFacebookDeferredApplinks(boolean z10) {
-        f9247d = (AFKeystoreWrapper + 47) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 47) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).unregisterClient().getMonetizationNetwork(z10);
-        f9247d = (AFKeystoreWrapper + 73) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 73) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     @Override // com.appsflyer.AppsFlyerLib
@@ -894,7 +894,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         if (r7 == null) goto L8;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0048, code lost:
-        com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = (com.appsflyer.internal.AFa1uSDK.f9247d + 115) % com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = (com.appsflyer.internal.AFa1uSDK.f8876d + 115) % com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
      */
     @Override // com.appsflyer.AppsFlyerLib
     /*
@@ -904,7 +904,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     public final java.lang.String getAppsFlyerUID(@androidx.annotation.NonNull android.content.Context r7) {
         /*
             r6 = this;
-            int r0 = com.appsflyer.internal.AFa1uSDK.f9247d
+            int r0 = com.appsflyer.internal.AFa1uSDK.f8876d
             int r0 = r0 + 55
             int r1 = r0 % 128
             com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = r1
@@ -933,7 +933,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             r0.getCurrencyIso4217Code(r2, r1)
             if (r7 != 0) goto L52
         L48:
-            int r7 = com.appsflyer.internal.AFa1uSDK.f9247d
+            int r7 = com.appsflyer.internal.AFa1uSDK.f8876d
             int r7 = r7 + 115
             int r7 = r7 % 128
             com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = r7
@@ -955,7 +955,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final String getAttributionId(Context context) {
-        int i10 = f9247d + 21;
+        int i10 = f8876d + 21;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             getMediationNetwork(context);
@@ -968,7 +968,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final String getHostName() {
-        int i10 = f9247d + 59;
+        int i10 = f8876d + 59;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             return ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).AFInAppEventParameterName().getCurrencyIso4217Code();
@@ -983,16 +983,16 @@ public final class AFa1uSDK extends AppsFlyerLib {
     }
 
     public final void getMediationNetwork(@NonNull Context context) {
-        int i10 = (f9247d + 37) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        int i10 = (f8876d + 37) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         AFKeystoreWrapper = i10;
         AFc1dSDK aFc1dSDK = this.hashCode;
         if (context != null) {
             int i11 = i10 + 25;
-            f9247d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i11 % 2 != 0) {
                 AFc1gSDK aFc1gSDK = aFc1dSDK.getMonetizationNetwork;
                 int i12 = i10 + 3;
-                f9247d = i12 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = i12 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i12 % 2 != 0) {
                     aFc1gSDK.getRevenue = context.getApplicationContext();
                     return;
@@ -1009,7 +1009,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     @Override // com.appsflyer.AppsFlyerLib
     public final String getOutOfStore(Context context) {
         int i10 = AFKeystoreWrapper + 107;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             String string = AppsFlyerProperties.getInstance().getString(AppsFlyerProperties.AF_STORE_FROM_API);
             if (string != null) {
@@ -1018,7 +1018,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             String currencyIso4217Code = getCurrencyIso4217Code(context, "AF_STORE");
             if (currencyIso4217Code != null) {
                 int i11 = AFKeystoreWrapper + 71;
-                f9247d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i11 % 2 == 0) {
                     int i12 = 72 / 0;
                 }
@@ -1033,11 +1033,11 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final String getSdkVersion() {
-        f9247d = (AFKeystoreWrapper + 105) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 105) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("getSdkVersion", new String[0]);
         String component2 = AFc1pSDK.component2();
         int i10 = AFKeystoreWrapper + 125;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             return component2;
         }
@@ -1051,10 +1051,10 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final boolean isPreInstalledApp(Context context) {
-        f9247d = (AFKeystoreWrapper + 35) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 35) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         getMediationNetwork(context);
         boolean mediationNetwork = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).getCurrencyIso4217Code().getMediationNetwork(context);
-        f9247d = (AFKeystoreWrapper + 15) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 15) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         return mediationNetwork;
     }
 
@@ -1068,10 +1068,10 @@ public final class AFa1uSDK extends AppsFlyerLib {
     public final void logAdRevenue(@NonNull AFAdRevenueData aFAdRevenueData, Map<String, Object> map) {
         if (!this.toString) {
             getMediationNetwork("logAdRevenue");
-            f9247d = (AFKeystoreWrapper + 119) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = (AFKeystoreWrapper + 119) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         } else if (!aFAdRevenueData.areAllFieldsValid()) {
             int i10 = AFKeystoreWrapper + 9;
-            f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i10 % 2 == 0) {
                 AFLogger.INSTANCE.w(AFg1cSDK.AD_REVENUE, "Invalid ad revenue parameters provided");
                 int i11 = 32 / 0;
@@ -1080,7 +1080,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             AFLogger.INSTANCE.w(AFg1cSDK.AD_REVENUE, "Invalid ad revenue parameters provided");
         } else if (((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).AFKeystoreWrapper().getMonetizationNetwork()) {
             int i12 = AFKeystoreWrapper + 87;
-            f9247d = i12 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i12 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i12 % 2 != 0) {
                 AFLogger.INSTANCE.w(AFg1cSDK.AD_REVENUE, "SDK is stopped");
             } else {
@@ -1140,7 +1140,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         hashMap.put(AFInAppEventParameterName.LONGITUDE, Double.toString(d11));
         hashMap.put(AFInAppEventParameterName.LATITUDE, Double.toString(d10));
         AFAdRevenueData(context, AFInAppEventType.LOCATION_COORDINATES, hashMap);
-        int i10 = f9247d + 59;
+        int i10 = f8876d + 59;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             int i11 = 60 / 0;
@@ -1149,13 +1149,13 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void logSession(Context context) {
-        f9247d = (AFKeystoreWrapper + 25) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 25) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("logSession", new String[0]);
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getMonetizationNetwork();
         getMediationNetwork(context, AFh1xSDK.logSession);
         AFAdRevenueData(context, (String) null, (Map<String, Object>) null);
         int i10 = AFKeystoreWrapper + 107;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             int i11 = 63 / 0;
         }
@@ -1163,7 +1163,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void onPause(Context context) {
-        int i10 = f9247d + 57;
+        int i10 = f8876d + 57;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).afDebugLog().getMonetizationNetwork();
@@ -1182,7 +1182,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     @Override // com.appsflyer.AppsFlyerLib
     public final void performOnDeepLinking(@NonNull final Intent intent, @NonNull Context context) {
         int i10 = (AFKeystoreWrapper + 45) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-        f9247d = i10;
+        f8876d = i10;
         if (intent == null) {
             int i11 = i10 + 71;
             AFKeystoreWrapper = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
@@ -1210,7 +1210,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                     AFa1uSDK.this.e_(applicationContext, intent);
                 }
             });
-            int i14 = f9247d + 97;
+            int i14 = f8876d + 97;
             AFKeystoreWrapper = i14 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i14 % 2 == 0) {
                 return;
@@ -1221,7 +1221,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void registerConversionListener(Context context, AppsFlyerConversionListener appsFlyerConversionListener) {
-        int i10 = f9247d + 111;
+        int i10 = f8876d + 111;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("registerConversionListener", new String[1]);
@@ -1247,7 +1247,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         if (r8 == null) goto L8;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0050, code lost:
-        com.appsflyer.internal.AFa1uSDK.f9247d = (com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper + 9) % com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        com.appsflyer.internal.AFa1uSDK.f8876d = (com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper + 9) % com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         com.appsflyer.AFLogger.afDebugLog("registerValidatorListener null listener");
      */
     @Override // com.appsflyer.AppsFlyerLib
@@ -1261,7 +1261,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r7 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r7 = r7 + 97
             int r0 = r7 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r0
+            com.appsflyer.internal.AFa1uSDK.f8876d = r0
             int r7 = r7 % 2
             java.lang.String r0 = "registerValidatorListener called"
             r1 = 0
@@ -1293,7 +1293,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r7 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r7 = r7 + 9
             int r7 = r7 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r7
+            com.appsflyer.internal.AFa1uSDK.f8876d = r7
             java.lang.String r7 = "registerValidatorListener null listener"
             com.appsflyer.AFLogger.afDebugLog(r7)
             return
@@ -1311,14 +1311,14 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void sendPurchaseData(Context context, Map<String, Object> map, PurchaseHandler.PurchaseValidationCallback purchaseValidationCallback) {
-        AFKeystoreWrapper = (f9247d + 65) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 65) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         getMediationNetwork(context);
         PurchaseHandler areAllFieldsValid2 = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).areAllFieldsValid();
         if (areAllFieldsValid2.getMonetizationNetwork(map, purchaseValidationCallback, "subscriptions")) {
             AFe1jSDK aFe1jSDK = new AFe1jSDK(map, purchaseValidationCallback, areAllFieldsValid2.AFAdRevenueData);
             AFe1nSDK aFe1nSDK = areAllFieldsValid2.getCurrencyIso4217Code;
             aFe1nSDK.AFAdRevenueData.execute(new AFe1nSDK.AnonymousClass3(aFe1jSDK));
-            f9247d = (AFKeystoreWrapper + 91) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = (AFKeystoreWrapper + 91) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         }
     }
 
@@ -1328,7 +1328,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         r9 = new java.lang.StringBuilder("activity_intent_");
         r9.append(r19.getIntent().toString());
         r3.getCurrencyIso4217Code("sendPushNotificationData", r8, r9.toString());
-        com.appsflyer.internal.AFa1uSDK.f9247d = (com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper + 85) % com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        com.appsflyer.internal.AFa1uSDK.f8876d = (com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper + 85) % com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
      */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0065, code lost:
         if (r19 == null) goto L58;
@@ -1364,26 +1364,26 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setAdditionalData(Map<String, Object> map) {
-        AFKeystoreWrapper = (f9247d + 23) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 23) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (map != null) {
             ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("setAdditionalData", map.toString());
             AppsFlyerProperties.getInstance().setCustomData(new JSONObject(map).toString());
         }
-        f9247d = (AFKeystoreWrapper + 9) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 9) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setAndroidIdData(String str) {
-        f9247d = (AFKeystoreWrapper + 25) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 25) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("setAndroidIdData", str);
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).afInfoLog().AFAdRevenueData = str;
-        AFKeystoreWrapper = (f9247d + 53) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 53) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setAppId(String str) {
         int i10 = AFKeystoreWrapper + 111;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             AFd1mSDK equals = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals();
             String[] strArr = new String[0];
@@ -1393,12 +1393,12 @@ public final class AFa1uSDK extends AppsFlyerLib {
             ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("setAppId", str);
         }
         getCurrencyIso4217Code(AppsFlyerProperties.APP_ID, str);
-        AFKeystoreWrapper = (f9247d + 89) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 89) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setAppInviteOneLink(String str) {
-        AFKeystoreWrapper = (f9247d + 89) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 89) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("setAppInviteOneLink", str);
         AFLogger.afInfoLog("setAppInviteOneLink = ".concat(String.valueOf(str)));
         if (str == null || !str.equals(AppsFlyerProperties.getInstance().getString(AppsFlyerProperties.ONELINK_ID))) {
@@ -1407,7 +1407,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             AppsFlyerProperties.getInstance().remove(AppsFlyerProperties.ONELINK_SCHEME);
         }
         getCurrencyIso4217Code(AppsFlyerProperties.ONELINK_ID, str);
-        AFKeystoreWrapper = (f9247d + 91) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 91) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     @Override // com.appsflyer.AppsFlyerLib
@@ -1417,42 +1417,42 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setCollectIMEI(boolean z10) {
-        f9247d = (AFKeystoreWrapper + 111) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 111) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("setCollectIMEI", String.valueOf(z10));
         getCurrencyIso4217Code(AppsFlyerProperties.COLLECT_IMEI, Boolean.toString(z10));
         getCurrencyIso4217Code(AppsFlyerProperties.COLLECT_IMEI_FORCE_BY_USER, Boolean.toString(z10));
-        AFKeystoreWrapper = (f9247d + 115) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 115) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     @Override // com.appsflyer.AppsFlyerLib
     @Deprecated
     public final void setCollectOaid(boolean z10) {
-        AFKeystoreWrapper = (f9247d + 43) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 43) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("setCollectOaid", String.valueOf(z10));
         getCurrencyIso4217Code(AppsFlyerProperties.COLLECT_OAID, Boolean.toString(z10));
-        f9247d = (AFKeystoreWrapper + 55) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 55) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setConsentData(@NonNull AppsFlyerConsent appsFlyerConsent) {
-        f9247d = (AFKeystoreWrapper + 117) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 117) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         Objects.requireNonNull(appsFlyerConsent);
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).afInfoLog().areAllFieldsValid = appsFlyerConsent;
-        f9247d = (AFKeystoreWrapper + 63) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 63) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setCurrencyCode(String str) {
-        f9247d = (AFKeystoreWrapper + 117) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 117) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("setCurrencyCode", str);
         AppsFlyerProperties.getInstance().set(AppsFlyerProperties.CURRENCY_CODE, str);
-        AFKeystoreWrapper = (f9247d + 15) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 15) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setCustomerIdAndLogSession(String str, @NonNull Context context) {
         if (context != null) {
-            int i10 = f9247d + 101;
+            int i10 = f8876d + 101;
             AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i10 % 2 == 0) {
                 if (getRevenue()) {
@@ -1468,7 +1468,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                         referrer = "";
                     }
                     if (context instanceof Activity) {
-                        int i11 = f9247d + 113;
+                        int i11 = f8876d + 113;
                         AFKeystoreWrapper = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         if (i11 % 2 != 0) {
                             ((Activity) context).getIntent();
@@ -1482,7 +1482,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 }
                 setCustomerUserId(str);
                 AFLogger.afInfoLog("waitForCustomerUserId is false; setting CustomerUserID: ".concat(String.valueOf(str)), true);
-                f9247d = (AFKeystoreWrapper + 51) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = (AFKeystoreWrapper + 51) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 return;
             }
             getRevenue();
@@ -1492,25 +1492,25 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setCustomerUserId(String str) {
-        f9247d = (AFKeystoreWrapper + 25) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 25) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("setCustomerUserId", str);
         AFLogger.afInfoLog("setCustomerUserId = ".concat(String.valueOf(str)));
         getCurrencyIso4217Code(AppsFlyerProperties.APP_USER_ID, str);
         getRevenue(new Object[]{AppsFlyerProperties.AF_WAITFOR_CUSTOMERID, Boolean.FALSE}, -222394073, 222394090, (int) System.currentTimeMillis());
-        f9247d = (AFKeystoreWrapper + 5) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 5) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setDebugLog(boolean z10) {
         AFLogger.LogLevel logLevel;
-        AFKeystoreWrapper = (f9247d + 65) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 65) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (z10) {
             logLevel = AFLogger.LogLevel.DEBUG;
         } else {
             logLevel = AFLogger.LogLevel.NONE;
         }
         setLogLevel(logLevel);
-        f9247d = (AFKeystoreWrapper + 3) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 3) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:5:0x001d, code lost:
@@ -1533,7 +1533,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r0 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r0 = r0 + 39
             int r1 = r0 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r1
+            com.appsflyer.internal.AFa1uSDK.f8876d = r1
             int r0 = r0 % 2
             r1 = 0
             java.lang.String r2 = "setDisableAdvertisingIdentifiers: "
@@ -1564,7 +1564,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             com.appsflyer.internal.AFc1eSDK r1 = r0.afInfoLog()
             r1.component3 = r5
             if (r5 == 0) goto L78
-            int r5 = com.appsflyer.internal.AFa1uSDK.f9247d
+            int r5 = com.appsflyer.internal.AFa1uSDK.f8876d
             int r5 = r5 + 109
             int r1 = r5 % 128
             com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = r1
@@ -1573,7 +1573,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             if (r5 != 0) goto L71
             com.appsflyer.internal.AFc1eSDK r5 = r0.afInfoLog()
             r5.component2 = r1
-            int r5 = com.appsflyer.internal.AFa1uSDK.f9247d
+            int r5 = com.appsflyer.internal.AFa1uSDK.f8876d
             int r5 = r5 + 7
             int r0 = r5 % 128
             com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = r0
@@ -1607,11 +1607,11 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setExtension(String str) {
-        AFKeystoreWrapper = (f9247d + 9) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 9) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("setExtension", str);
         AppsFlyerProperties.getInstance().set(AppsFlyerProperties.EXTENSION, str);
         int i10 = AFKeystoreWrapper + 23;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             int i11 = 59 / 0;
         }
@@ -1621,7 +1621,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     public final void setHost(String str, @NonNull String str2) {
         String str3;
         if (!AFk1xSDK.getMonetizationNetwork(str2)) {
-            int i10 = f9247d;
+            int i10 = f8876d;
             AFKeystoreWrapper = (i10 + 5) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (str != null) {
                 AFKeystoreWrapper = (i10 + 67) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
@@ -1638,7 +1638,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     @Override // com.appsflyer.AppsFlyerLib
     public final void setImeiData(String str) {
         Object revenue;
-        int i10 = f9247d + 37;
+        int i10 = f8876d + 37;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("setImeiData", str);
@@ -1649,7 +1649,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         }
         ((AFc1bSDK) revenue).AFKeystoreWrapper().getCurrencyIso4217Code(str);
         int i11 = AFKeystoreWrapper + 61;
-        f9247d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i11 % 2 != 0) {
             return;
         }
@@ -1679,7 +1679,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x008b, code lost:
         r7 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper + 83;
-        com.appsflyer.internal.AFa1uSDK.f9247d = r7 % com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        com.appsflyer.internal.AFa1uSDK.f8876d = r7 % com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0097, code lost:
         if ((r7 % 2) == 0) goto L15;
@@ -1713,7 +1713,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x004c, code lost:
         com.appsflyer.AFLogger.INSTANCE.d(com.appsflyer.internal.AFg1cSDK.GENERAL, "AppsFlyerLib.init() method should be called first");
-        r7 = com.appsflyer.internal.AFa1uSDK.f9247d + 57;
+        r7 = com.appsflyer.internal.AFa1uSDK.f8876d + 57;
         com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = r7 % com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
      */
     @Override // com.appsflyer.AppsFlyerLib
@@ -1727,7 +1727,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r0 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r0 = r0 + 95
             int r1 = r0 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r1
+            com.appsflyer.internal.AFa1uSDK.f8876d = r1
             int r0 = r0 % 2
             java.lang.String r1 = "setInstallId"
             r2 = 0
@@ -1759,7 +1759,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             com.appsflyer.internal.AFg1cSDK r0 = com.appsflyer.internal.AFg1cSDK.GENERAL
             java.lang.String r1 = "AppsFlyerLib.init() method should be called first"
             r7.d(r0, r1)
-            int r7 = com.appsflyer.internal.AFa1uSDK.f9247d
+            int r7 = com.appsflyer.internal.AFa1uSDK.f8876d
             int r7 = r7 + 57
             int r0 = r7 % 128
             com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = r0
@@ -1788,7 +1788,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r7 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r7 = r7 + 83
             int r0 = r7 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r0
+            com.appsflyer.internal.AFa1uSDK.f8876d = r0
             int r7 = r7 % 2
             java.lang.String r0 = "AppsFlyer installId can't be null"
             if (r7 == 0) goto La1
@@ -1816,7 +1816,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setIsUpdate(boolean z10) {
-        int i10 = f9247d + 55;
+        int i10 = f8876d + 55;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("setIsUpdate", String.valueOf(z10));
@@ -1830,10 +1830,10 @@ public final class AFa1uSDK extends AppsFlyerLib {
     public final void setLogLevel(@NonNull AFLogger.LogLevel logLevel) {
         boolean z10;
         if (logLevel.getLevel() > AFLogger.LogLevel.NONE.getLevel()) {
-            AFKeystoreWrapper = (f9247d + 125) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            AFKeystoreWrapper = (f8876d + 125) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             z10 = true;
         } else {
-            AFKeystoreWrapper = (f9247d + 43) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            AFKeystoreWrapper = (f8876d + 43) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             z10 = false;
         }
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("log", String.valueOf(z10));
@@ -1841,7 +1841,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         if (!z10) {
             ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).afErrorLog().getRevenue();
             int i10 = AFKeystoreWrapper + 11;
-            f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i10 % 2 != 0) {
                 return;
             }
@@ -1857,11 +1857,11 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setOaidData(String str) {
-        f9247d = (AFKeystoreWrapper + 3) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 3) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("setOaidData", str);
         AFb1kSDK.getRevenue = str;
         int i10 = AFKeystoreWrapper + 3;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             return;
         }
@@ -1871,7 +1871,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     @Override // com.appsflyer.AppsFlyerLib
     public final void setOneLinkCustomDomain(String... strArr) {
         Object revenue;
-        int i10 = f9247d + 91;
+        int i10 = f8876d + 91;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             AFLogger.afDebugLog(String.format("setOneLinkCustomDomain %s", Arrays.toString(strArr)));
@@ -1885,7 +1885,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setOutOfStore(String str) {
-        int i10 = f9247d;
+        int i10 = f8876d;
         AFKeystoreWrapper = (i10 + 75) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (str != null) {
             int i11 = i10 + 1;
@@ -1907,17 +1907,17 @@ public final class AFa1uSDK extends AppsFlyerLib {
     @Override // com.appsflyer.AppsFlyerLib
     public final void setPartnerData(@NonNull String str, Map<String, Object> map) {
         String concat;
-        f9247d = (AFKeystoreWrapper + 9) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 9) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         AFc1eSDK afInfoLog = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).afInfoLog();
         if (afInfoLog.getCurrencyIso4217Code == null) {
             afInfoLog.getCurrencyIso4217Code = new AFb1rSDK();
         }
         AFb1rSDK aFb1rSDK = afInfoLog.getCurrencyIso4217Code;
         if (str != null) {
-            AFKeystoreWrapper = (f9247d + 53) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            AFKeystoreWrapper = (f8876d + 53) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (!str.isEmpty()) {
                 if (map != null) {
-                    int i10 = f9247d + 5;
+                    int i10 = f8876d + 5;
                     AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                     if (i10 % 2 == 0) {
                         if (!map.isEmpty()) {
@@ -1949,7 +1949,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                     concat = "Cleared partner data for ".concat(str);
                 }
                 AFLogger.afWarnLog(concat);
-                int i11 = f9247d + 65;
+                int i11 = f8876d + 65;
                 AFKeystoreWrapper = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i11 % 2 == 0) {
                     return;
@@ -1963,10 +1963,10 @@ public final class AFa1uSDK extends AppsFlyerLib {
     @Override // com.appsflyer.AppsFlyerLib
     public final void setPhoneNumber(String str) {
         int i10 = AFKeystoreWrapper + 23;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).afInfoLog().getMonetizationNetwork = AFj1bSDK.getCurrencyIso4217Code(str);
-            f9247d = (AFKeystoreWrapper + 5) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = (AFKeystoreWrapper + 5) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             return;
         }
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).afInfoLog().getMonetizationNetwork = AFj1bSDK.getCurrencyIso4217Code(str);
@@ -1984,7 +1984,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         JSONObject jSONObject = new JSONObject();
         try {
             if (str != null) {
-                int i10 = f9247d + 73;
+                int i10 = f8876d + 73;
                 AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i10 % 2 != 0) {
                     jSONObject.put("pid", str);
@@ -1995,7 +1995,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             }
             if (str2 != null) {
                 jSONObject.put("c", str2);
-                AFKeystoreWrapper = (f9247d + 69) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 69) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             }
             if (str3 != null) {
                 jSONObject.put("af_siteid", str3);
@@ -2004,7 +2004,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             AFLogger.afErrorLog(e10.getMessage(), e10);
         }
         if (jSONObject.has("pid")) {
-            AFKeystoreWrapper = (f9247d + 77) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            AFKeystoreWrapper = (f8876d + 77) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             getCurrencyIso4217Code("preInstallName", jSONObject.toString());
             return;
         }
@@ -2013,12 +2013,12 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setResolveDeepLinkURLs(String... strArr) {
-        AFKeystoreWrapper = (f9247d + 51) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 51) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         AFLogger.afDebugLog(String.format("setResolveDeepLinkURLs %s", Arrays.toString(strArr)));
         AFa1rSDK i10 = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).i();
         i10.component4.clear();
         i10.component4.addAll(Arrays.asList(strArr));
-        f9247d = (AFKeystoreWrapper + 37) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 37) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     @Override // com.appsflyer.AppsFlyerLib
@@ -2030,10 +2030,10 @@ public final class AFa1uSDK extends AppsFlyerLib {
     @Override // com.appsflyer.AppsFlyerLib
     @Deprecated
     public final void setSharingFilterForAllPartners() {
-        AFKeystoreWrapper = (f9247d + 113) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 113) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         setSharingFilterForPartners("all");
         int i10 = AFKeystoreWrapper + 57;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             return;
         }
@@ -2047,7 +2047,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void setUserEmails(String... strArr) {
-        int i10 = f9247d + 89;
+        int i10 = f8876d + 89;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code("setUserEmails", strArr);
@@ -2061,11 +2061,11 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void start(@NonNull Context context) {
-        int i10 = f9247d + 27;
+        int i10 = f8876d + 27;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             start(context, null);
-            AFKeystoreWrapper = (f9247d + 61) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            AFKeystoreWrapper = (f8876d + 61) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             return;
         }
         start(context, null);
@@ -2076,7 +2076,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     public final void stop(boolean z10, Context context) {
         AFc1oSDK component2;
         boolean z11;
-        f9247d = (AFKeystoreWrapper + 63) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 63) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         getMediationNetwork(context);
         final AFc1bSDK aFc1bSDK = (AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this));
         aFc1bSDK.AFKeystoreWrapper().getRevenue(z10);
@@ -2088,7 +2088,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         });
         if (z10) {
             int i10 = AFKeystoreWrapper + 31;
-            f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i10 % 2 == 0) {
                 component2 = aFc1bSDK.component2();
                 z11 = false;
@@ -2103,7 +2103,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     @Override // com.appsflyer.AppsFlyerLib
     public final void subscribeForDeepLink(@NonNull DeepLinkListener deepLinkListener, long j10) {
         int i10 = AFKeystoreWrapper + 61;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).i().getRevenue = deepLinkListener;
             ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).i().component2 = j10;
@@ -2140,11 +2140,11 @@ public final class AFa1uSDK extends AppsFlyerLib {
         }
         if (str != null && str4 != null) {
             int i10 = AFKeystoreWrapper;
-            f9247d = (i10 + 55) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = (i10 + 55) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (str2 != null) {
                 int i11 = i10 + 105;
                 int i12 = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                f9247d = i12;
+                f8876d = i12;
                 if (i11 % 2 == 0) {
                     throw null;
                 }
@@ -2165,10 +2165,10 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void waitForCustomerUserId(boolean z10) {
-        AFKeystoreWrapper = (f9247d + 43) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 43) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         AFLogger.afInfoLog("initAfterCustomerUserID: ".concat(String.valueOf(z10)), true);
         getRevenue(new Object[]{AppsFlyerProperties.AF_WAITFOR_CUSTOMERID, Boolean.valueOf(z10)}, -222394073, 222394090, (int) System.currentTimeMillis());
-        f9247d = (AFKeystoreWrapper + 107) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 107) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:0:?, code lost:
@@ -2190,14 +2190,14 @@ public final class AFa1uSDK extends AppsFlyerLib {
     }
 
     private void component2() {
-        f9247d = (AFKeystoreWrapper + 77) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 77) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         try {
             final AFi1jSDK v10 = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).v();
             if (v10 == null) {
                 return;
             }
             if (v10.getMonetizationNetwork()) {
-                AFKeystoreWrapper = (f9247d + 9) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 9) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 v10.getMonetizationNetwork(new AFi1eSDK() { // from class: com.appsflyer.internal.a
                     @Override // com.appsflyer.internal.AFi1eSDK
                     public final void onRequestFinished() {
@@ -2236,13 +2236,13 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 jSONObject = jSONObject2;
             }
             if (jSONArray2.length() < 5) {
-                f9247d = (AFKeystoreWrapper + 21) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = (AFKeystoreWrapper + 21) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 jSONArray2.put(currentTimeMillis);
-                AFKeystoreWrapper = (f9247d + 57) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 57) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             }
             if (jSONObject.length() >= 4) {
                 int i10 = AFKeystoreWrapper + 117;
-                f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i10 % 2 == 0) {
                     AFAdRevenueData(jSONObject);
                     int i11 = 14 / 0;
@@ -2273,7 +2273,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     public /* synthetic */ void copy() {
         AFi1pSDK aFi1qSDK;
         int i10 = AFKeystoreWrapper + 125;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             if (((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).afRDLog().getMonetizationNetwork()) {
                 ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).afRDLog().getRevenue();
@@ -2283,7 +2283,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 aFi1qSDK = new AFi1oSDK(w10.getCurrencyIso4217Code);
             } else {
                 aFi1qSDK = new AFi1qSDK(w10.getCurrencyIso4217Code);
-                AFKeystoreWrapper = (f9247d + 67) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 67) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             }
             w10.getMediationNetwork = aFi1qSDK;
             AFf1cSDK AFKeystoreWrapper2 = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).AFKeystoreWrapper();
@@ -2292,11 +2292,11 @@ public final class AFa1uSDK extends AppsFlyerLib {
             component3.component2 = System.currentTimeMillis();
             int mediationNetwork = component3.getMediationNetwork.getMonetizationNetwork.getMediationNetwork("appsFlyerCount", 0);
             if (mediationNetwork == 1 && component3.getCurrencyIso4217Code.getRevenue("first_launch")) {
-                AFKeystoreWrapper = (f9247d + 71) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 71) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 component3.getMonetizationNetwork.putAll(component3.AFAdRevenueData("first_launch"));
             }
             if (mediationNetwork > 0 && component3.getCurrencyIso4217Code.getRevenue("gcd")) {
-                AFKeystoreWrapper = (f9247d + 75) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 75) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 component3.AFAdRevenueData.putAll(component3.AFAdRevenueData("gcd"));
             }
             component3.hashCode = component3.getCurrencyIso4217Code.getCurrencyIso4217Code("prev_session_dur", 0L);
@@ -2309,7 +2309,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     }
 
     private static void copydefault() {
-        int i10 = f9247d + 121;
+        int i10 = f8876d + 121;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             AFLogger.INSTANCE.w(AFg1cSDK.SDK_LIFECYCLE, "ERROR: AppsFlyer SDK is not initialized! You must provide AppsFlyer Dev-Key either in the 'init' API method (should be called on Application's onCreate),or in the start() API (should be called on Activity's onCreate).");
@@ -2321,7 +2321,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     private static String getCurrencyIso4217Code(String str) {
         int i10 = AFKeystoreWrapper + 105;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             return AppsFlyerProperties.getInstance().getString(str);
         }
@@ -2330,10 +2330,10 @@ public final class AFa1uSDK extends AppsFlyerLib {
     }
 
     final void component4() {
-        f9247d = (AFKeystoreWrapper + 9) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 9) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (AFe1dSDK.component2()) {
             int i10 = AFKeystoreWrapper + 45;
-            f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i10 % 2 == 0) {
                 int i11 = 68 / 0;
                 return;
@@ -2347,9 +2347,9 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     @Override // com.appsflyer.AppsFlyerLib
     public final void start(@NonNull Context context, String str) {
-        f9247d = (AFKeystoreWrapper + 1) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 1) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         start(context, str, null);
-        f9247d = (AFKeystoreWrapper + 29) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 29) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     final void getCurrencyIso4217Code(AFh1jSDK aFh1jSDK) {
@@ -2358,7 +2358,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         Context context = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).registerClient().getRevenue;
         boolean z10 = true;
         if (context == null) {
-            int i10 = f9247d + 71;
+            int i10 = f8876d + 71;
             AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i10 % 2 != 0) {
                 AFLogger.INSTANCE.d(AFg1cSDK.ATTRIBUTION, "sendWithEvent - got null context. skipping event/launch.", true);
@@ -2384,7 +2384,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             Map<String, ?> revenue = getRevenue(aFh1jSDK);
             if (((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).AFKeystoreWrapper().getMonetizationNetwork()) {
                 AFLogger.INSTANCE.i(AFg1cSDK.GENERAL, "AppsFlyerLib.sendWithEvent");
-                AFKeystoreWrapper = (f9247d + 109) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 109) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             }
             int monetizationNetwork = getMonetizationNetwork(aFc1oSDK, false);
             getRevenue(new Object[]{this, revenue}, 1290570600, -1290570599, System.identityHashCode(this));
@@ -2407,7 +2407,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                     z11 = true;
                 }
                 if (((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).AFKeystoreWrapper().AFAdRevenueData()) {
-                    AFKeystoreWrapper = (f9247d + 15) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                    AFKeystoreWrapper = (f8876d + 15) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 } else {
                     z10 = z11;
                 }
@@ -2417,7 +2417,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             ScheduledExecutorService monetizationNetwork2 = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).getMonetizationNetwork();
             if (z10) {
                 int i11 = AFKeystoreWrapper + 99;
-                f9247d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i11 % 2 == 0) {
                     int i12 = 29 / 0;
                 }
@@ -2449,7 +2449,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         int length = strArr.length;
         String str = null;
         for (int i10 = 0; i10 < length; i10++) {
-            int i11 = f9247d + 121;
+            int i11 = f8876d + 121;
             AFKeystoreWrapper = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i11 % 2 == 0) {
                 String str2 = strArr[i10];
@@ -2468,7 +2468,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         }
         hashMap.put(str, arrayList2);
         AppsFlyerProperties.getInstance().setUserEmails(new JSONObject(hashMap).toString());
-        int i13 = f9247d + 35;
+        int i13 = f8876d + 35;
         AFKeystoreWrapper = i13 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i13 % 2 != 0) {
             throw null;
@@ -2485,7 +2485,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             if (str == null) {
                 int i10 = AFKeystoreWrapper + 79;
                 int i11 = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                f9247d = i11;
+                f8876d = i11;
                 if (i10 % 2 == 0) {
                     throw null;
                 }
@@ -2507,12 +2507,12 @@ public final class AFa1uSDK extends AppsFlyerLib {
         final AFh1tSDK component3 = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).component3();
         component3.getRevenue(AFh1uSDK.getRevenue(context));
         if (this.component3 == null) {
-            f9247d = (AFKeystoreWrapper + 35) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = (AFKeystoreWrapper + 35) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             Application O_ = AFj1iSDK.O_(context);
             if (O_ == null) {
                 return;
             }
-            f9247d = (AFKeystoreWrapper + 109) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = (AFKeystoreWrapper + 109) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             this.component3 = O_;
         }
         ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).equals().getCurrencyIso4217Code(ViewProps.START, str);
@@ -2528,7 +2528,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).AFKeystoreWrapper().getMonetizationNetwork(str);
         } else if (TextUtils.isEmpty(((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).AFKeystoreWrapper().getMediationNetwork())) {
             int i13 = AFKeystoreWrapper + 63;
-            f9247d = i13 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i13 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i13 % 2 == 0) {
                 copydefault();
                 int i14 = 69 / 0;
@@ -2541,7 +2541,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                     return;
                 }
             }
-            AFKeystoreWrapper = (f9247d + 29) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            AFKeystoreWrapper = (f8876d + 29) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             appsFlyerRequestListener.onError(41, "No dev key");
             return;
         }
@@ -2635,7 +2635,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     }
 
     private boolean areAllFieldsValid() {
-        f9247d = (AFKeystoreWrapper + 19) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 19) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (this.component4 > 0) {
             long currentTimeMillis = System.currentTimeMillis() - this.component4;
             Locale locale = Locale.US;
@@ -2644,7 +2644,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             String mediationNetwork2 = getMediationNetwork(simpleDateFormat, this.getMonetizationNetwork);
             if (currentTimeMillis < this.component2 && !isStopped()) {
                 int i10 = AFKeystoreWrapper + 121;
-                f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i10 % 2 != 0) {
                     AFLogger.afInfoLog(String.format(locale, "Last Launch attempt: %s;\nLast successful Launch event: %s;\nThis launch is blocked: %s ms < %s ms", mediationNetwork, mediationNetwork2, Long.valueOf(currentTimeMillis), Long.valueOf(this.component2)));
                     return true;
@@ -2657,12 +2657,12 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 AFLogger.afInfoLog(String.format(locale, "Last Launch attempt: %s;\nLast successful Launch event: %s;\nThis launch is blocked: %s ms < %s ms", objArr));
                 return false;
             } else if (!isStopped()) {
-                AFKeystoreWrapper = (f9247d + 97) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 97) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 AFLogger.afInfoLog(String.format(locale, "Last Launch attempt: %s;\nLast successful Launch event: %s;\nSending launch (+%s ms)", mediationNetwork, mediationNetwork2, Long.valueOf(currentTimeMillis)));
             }
         } else if (!isStopped()) {
             int i11 = AFKeystoreWrapper + 77;
-            f9247d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i11 % 2 != 0) {
                 AFLogger.afInfoLog("Sending first launch for this session!");
             } else {
@@ -2679,7 +2679,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         AFj1kSDK aFj1kSDK = new AFj1kSDK((Intent) objArr[2]);
         if (aFj1kSDK.getCurrencyIso4217Code("appsflyer_preinstall") != null) {
             int i10 = AFKeystoreWrapper + 53;
-            f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i10 % 2 == 0) {
                 getRevenue(new Object[]{aFj1kSDK.getCurrencyIso4217Code("appsflyer_preinstall")}, 698517988, -698517984, (int) System.currentTimeMillis());
                 throw null;
@@ -2691,7 +2691,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         String currencyIso4217Code = aFj1kSDK.getCurrencyIso4217Code("referrer");
         AFLogger.afInfoLog("Play store referrer: ".concat(String.valueOf(currencyIso4217Code)));
         if (currencyIso4217Code != null) {
-            f9247d = (AFKeystoreWrapper + 87) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = (AFKeystoreWrapper + 87) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             ((AFc1oSDK) getRevenue(new Object[]{aFa1uSDK, context}, -1595266545, 1595266567, System.identityHashCode(aFa1uSDK))).AFAdRevenueData("referrer", currencyIso4217Code);
             AppsFlyerProperties appsFlyerProperties = AppsFlyerProperties.getInstance();
             appsFlyerProperties.set("AF_REFERRER", currencyIso4217Code);
@@ -2700,10 +2700,10 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 AFLogger.afInfoLog("onReceive: isLaunchCalled");
                 aFa1uSDK.getMediationNetwork(context, AFh1xSDK.onReceive);
                 aFa1uSDK.getRevenue(currencyIso4217Code);
-                AFKeystoreWrapper = (f9247d + 55) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 55) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             }
         }
-        int i11 = f9247d + 35;
+        int i11 = f8876d + 35;
         AFKeystoreWrapper = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i11 % 2 != 0) {
             int i12 = 83 / 0;
@@ -2715,18 +2715,18 @@ public final class AFa1uSDK extends AppsFlyerLib {
         try {
             List asList = Arrays.asList(context.getPackageManager().getPackageInfo(context.getPackageName(), RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT).requestedPermissions);
             if (!asList.contains("android.permission.INTERNET")) {
-                f9247d = (AFKeystoreWrapper + 73) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = (AFKeystoreWrapper + 73) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 AFLogger.INSTANCE.w(AFg1cSDK.GENERAL, "Permission android.permission.INTERNET is missing in the AndroidManifest.xml");
             }
             if (!asList.contains("android.permission.ACCESS_NETWORK_STATE")) {
-                AFKeystoreWrapper = (f9247d + 95) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                AFKeystoreWrapper = (f8876d + 95) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 AFLogger.INSTANCE.w(AFg1cSDK.GENERAL, "Permission android.permission.ACCESS_NETWORK_STATE is missing in the AndroidManifest.xml");
             }
             if (Build.VERSION.SDK_INT <= 32 || asList.contains("com.google.android.gms.permission.AD_ID")) {
                 return;
             }
             AFLogger.INSTANCE.w(AFg1cSDK.GENERAL, "Permission com.google.android.gms.permission.AD_ID is missing in the AndroidManifest.xml");
-            f9247d = (AFKeystoreWrapper + 33) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = (AFKeystoreWrapper + 33) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         } catch (Exception e10) {
             AFLogger.INSTANCE.e(AFg1cSDK.GENERAL, "Exception while validation permissions. ", e10);
         }
@@ -2765,7 +2765,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r0 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper     // Catch: java.lang.Throwable -> L18
             int r0 = r0 + 83
             int r1 = r0 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r1     // Catch: java.lang.Throwable -> L18
+            com.appsflyer.internal.AFa1uSDK.f8876d = r1     // Catch: java.lang.Throwable -> L18
             int r0 = r0 % 2
             if (r0 != 0) goto L1a
             com.appsflyer.internal.AFf1nSDK r0 = r3.equals     // Catch: java.lang.Throwable -> L18
@@ -2813,7 +2813,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     public final void validateAndLogInAppPurchase(@NonNull AFPurchaseDetails aFPurchaseDetails, Map<String, String> map, AppsFlyerInAppPurchaseValidationCallback appsFlyerInAppPurchaseValidationCallback) {
         AFe1nSDK copydefault = this.hashCode.copydefault();
         copydefault.AFAdRevenueData.execute(new AFe1nSDK.AnonymousClass3(new AFf1zSDK(this.hashCode, AppsFlyerProperties.getInstance(), aFPurchaseDetails, map, appsFlyerInAppPurchaseValidationCallback)));
-        int i10 = f9247d + 119;
+        int i10 = f8876d + 119;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             throw null;
@@ -2837,12 +2837,12 @@ public final class AFa1uSDK extends AppsFlyerLib {
         AFf1ySDK aFf1ySDK = new AFf1ySDK(aFi1jSDK, getCurrencyIso4217Code().getCurrencyIso4217Code(), getCurrencyIso4217Code(), getCurrencyIso4217Code().component4(), getCurrencyIso4217Code().registerClient());
         AFe1nSDK copydefault = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).copydefault();
         copydefault.AFAdRevenueData.execute(new AFe1nSDK.AnonymousClass3(aFf1ySDK));
-        f9247d = (AFKeystoreWrapper + 1) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 1) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static /* synthetic */ void getMediationNetwork(AFc1bSDK aFc1bSDK) {
-        int i10 = f9247d + 49;
+        int i10 = f8876d + 49;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         int i11 = i10 % 2;
         aFc1bSDK.AFInAppEventType().getMonetizationNetwork();
@@ -2859,9 +2859,9 @@ public final class AFa1uSDK extends AppsFlyerLib {
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void getMediationNetwork(boolean z10) {
         int i10 = AFKeystoreWrapper;
-        f9247d = (i10 + 113) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (i10 + 113) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (z10) {
-            f9247d = (i10 + 99) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = (i10 + 99) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).afErrorLog().getCurrencyIso4217Code();
             return;
         }
@@ -2870,7 +2870,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void getMediationNetwork(AFi1jSDK aFi1jSDK) {
-        int i10 = f9247d + 57;
+        int i10 = f8876d + 57;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         int i11 = i10 % 2;
         getMonetizationNetwork(aFi1jSDK);
@@ -2880,10 +2880,10 @@ public final class AFa1uSDK extends AppsFlyerLib {
     }
 
     public static String getMediationNetwork() {
-        AFKeystoreWrapper = (f9247d + 63) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 63) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         String currencyIso4217Code = getCurrencyIso4217Code(AppsFlyerProperties.APP_USER_ID);
         int i10 = AFKeystoreWrapper + 85;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             int i11 = 76 / 0;
         }
@@ -2891,12 +2891,12 @@ public final class AFa1uSDK extends AppsFlyerLib {
     }
 
     private void getMediationNetwork(Context context, AFh1xSDK aFh1xSDK) {
-        AFKeystoreWrapper = (f9247d + 29) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 29) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         getMediationNetwork(context);
         AFh1tSDK component3 = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).component3();
         AFh1uSDK revenue = AFh1uSDK.getRevenue(context);
         if (component3.getCurrencyIso4217Code()) {
-            int i10 = f9247d + 125;
+            int i10 = f8876d + 125;
             AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i10 % 2 != 0) {
                 component3.getMonetizationNetwork.put("api_name", aFh1xSDK.toString());
@@ -2913,9 +2913,9 @@ public final class AFa1uSDK extends AppsFlyerLib {
     @Deprecated
     public static Map<String, Object> getMonetizationNetwork(Map<String, Object> map) {
         Map<String, Object> map2;
-        AFKeystoreWrapper = (f9247d + 27) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 27) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (map.containsKey("meta")) {
-            f9247d = (AFKeystoreWrapper + 109) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = (AFKeystoreWrapper + 109) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             map2 = (Map) map.get("meta");
         } else {
             HashMap hashMap = new HashMap();
@@ -2923,7 +2923,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             map2 = hashMap;
         }
         int i10 = AFKeystoreWrapper + 7;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             int i11 = 71 / 0;
         }
@@ -2935,17 +2935,17 @@ public final class AFa1uSDK extends AppsFlyerLib {
         try {
             if (new JSONObject(str).has("pid")) {
                 int i10 = AFKeystoreWrapper + 45;
-                f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i10 % 2 != 0) {
                     getCurrencyIso4217Code("preInstallName", str);
-                    AFKeystoreWrapper = (f9247d + 43) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                    AFKeystoreWrapper = (f8876d + 43) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                     return null;
                 }
                 getCurrencyIso4217Code("preInstallName", str);
                 throw null;
             }
             AFLogger.afWarnLog("Cannot set preinstall attribution data without a media source");
-            f9247d = (AFKeystoreWrapper + 113) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = (AFKeystoreWrapper + 113) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             return null;
         } catch (JSONException e10) {
             AFLogger.afErrorLog("Error parsing JSON for preinstall", e10);
@@ -2955,19 +2955,19 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     private static boolean AFAdRevenueData(String str) {
         int i10 = AFKeystoreWrapper + 63;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         int i11 = i10 % 2;
         boolean z10 = AppsFlyerProperties.getInstance().getBoolean(str, false);
-        AFKeystoreWrapper = (f9247d + 87) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 87) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         return z10;
     }
 
     private AFh1rSDK AFAdRevenueData(Context context) {
-        f9247d = (AFKeystoreWrapper + 87) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 87) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (context instanceof Activity) {
             AFh1rSDK aFh1rSDK = new AFh1rSDK((Activity) context, getCurrencyIso4217Code().d());
             int i10 = AFKeystoreWrapper + 67;
-            f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i10 % 2 != 0) {
                 return aFh1rSDK;
             }
@@ -2998,7 +2998,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         com.appsflyer.AFLogger.afInfoLog("validateGaidAndIMEI :: removing: imei");
      */
     /* JADX WARN: Code restructure failed: missing block: B:35:0x00c7, code lost:
-        com.appsflyer.internal.AFa1uSDK.f9247d = (com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper + 55) % com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        com.appsflyer.internal.AFa1uSDK.f8876d = (com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper + 55) % com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x00cf, code lost:
         return null;
@@ -3018,7 +3018,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r3 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r3 = r3 + 85
             int r4 = r3 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r4
+            com.appsflyer.internal.AFa1uSDK.f8876d = r4
             int r3 = r3 % 2
             r4 = 0
             java.lang.String r5 = "collectAndroidIdForceByUser"
@@ -3044,7 +3044,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r2 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r2 = r2 + 39
             int r3 = r2 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r3
+            com.appsflyer.internal.AFa1uSDK.f8876d = r3
             int r2 = r2 % 2
             r3 = -389316474(0xffffffffe8cb8086, float:-7.68809E24)
             r5 = 389316487(0x17347f87, float:5.83221E-25)
@@ -3098,7 +3098,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r7 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r7 = r7 + 55
             int r7 = r7 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r7
+            com.appsflyer.internal.AFa1uSDK.f8876d = r7
         Lcf:
             return r4
         Ld0:
@@ -3115,7 +3115,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         AFAdRevenueData(aFh1jSDK, aFh1rSDK);
         if (((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).AFKeystoreWrapper().getMediationNetwork() == null) {
             int i10 = AFKeystoreWrapper + 117;
-            f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i10 % 2 == 0) {
                 AFLogger.afWarnLog("[LogEvent/Launch] AppsFlyer's SDK cannot send any event without providing DevKey.");
                 appsFlyerRequestListener = aFh1jSDK.getMonetizationNetwork;
@@ -3135,7 +3135,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         }
         String referrer = AppsFlyerProperties.getInstance().getReferrer(((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).component2());
         if (referrer == null) {
-            int i12 = f9247d + 117;
+            int i12 = f8876d + 117;
             AFKeystoreWrapper = i12 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i12 % 2 == 0) {
                 referrer = "";
@@ -3157,7 +3157,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         aFh1hSDK.component4 = str;
         aFh1hSDK.AFAdRevenueData = map;
         getMediationNetwork(aFh1hSDK, AFAdRevenueData(context));
-        int i10 = f9247d + 7;
+        int i10 = f8876d + 7;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             int i11 = 38 / 0;
@@ -3165,14 +3165,14 @@ public final class AFa1uSDK extends AppsFlyerLib {
     }
 
     public static int getMonetizationNetwork(AFc1oSDK aFc1oSDK, boolean z10) {
-        int i10 = f9247d + 95;
+        int i10 = f8876d + 95;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             AFAdRevenueData(aFc1oSDK, "appsFlyerCount", z10);
             throw null;
         }
         int AFAdRevenueData2 = AFAdRevenueData(aFc1oSDK, "appsFlyerCount", z10);
-        AFKeystoreWrapper = (f9247d + 97) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 97) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         return AFAdRevenueData2;
     }
 
@@ -3189,7 +3189,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         if (r5 == null) goto L25;
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x005b, code lost:
-        com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = (com.appsflyer.internal.AFa1uSDK.f9247d + 7) % com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = (com.appsflyer.internal.AFa1uSDK.f8876d + 7) % com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         r5.onError(10, "Event timeout. Check 'minTimeBetweenSessions' param");
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x006a, code lost:
@@ -3212,7 +3212,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r0 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r0 = r0 + 25
             int r0 = r0 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r0
+            com.appsflyer.internal.AFa1uSDK.f8876d = r0
             r0 = r2
             goto L11
         L10:
@@ -3223,7 +3223,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r5 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r5 = r5 + 107
             int r0 = r5 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r0
+            com.appsflyer.internal.AFa1uSDK.f8876d = r0
             int r5 = r5 % 2
             java.lang.String r0 = "CustomerUserId not set, reporting is disabled"
             if (r5 != 0) goto L29
@@ -3241,7 +3241,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r0 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r0 = r0 + 105
             int r2 = r0 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r2
+            com.appsflyer.internal.AFa1uSDK.f8876d = r2
             int r0 = r0 % 2
             if (r0 != 0) goto L51
             boolean r0 = r4.areAllFieldsValid()
@@ -3255,7 +3255,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         L57:
             com.appsflyer.attribution.AppsFlyerRequestListener r5 = r5.getMonetizationNetwork
             if (r5 == 0) goto L6a
-            int r0 = com.appsflyer.internal.AFa1uSDK.f9247d
+            int r0 = com.appsflyer.internal.AFa1uSDK.f8876d
             int r0 = r0 + 7
             int r0 = r0 % 128
             com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = r0
@@ -3278,7 +3278,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
     }
 
     private static void AFAdRevenueData(@NonNull AFh1jSDK aFh1jSDK, AFh1rSDK aFh1rSDK) {
-        int i10 = f9247d + 89;
+        int i10 = f8876d + 89;
         int i11 = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         AFKeystoreWrapper = i11;
         if (i10 % 2 != 0) {
@@ -3287,7 +3287,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         if (aFh1rSDK != null) {
             aFh1jSDK.getMediationNetwork = aFh1rSDK.AFAdRevenueData;
             aFh1jSDK.component2 = aFh1rSDK.getMonetizationNetwork;
-            f9247d = (i11 + 95) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = (i11 + 95) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         }
     }
 
@@ -3310,7 +3310,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r0 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r0 = r0 + 33
             int r1 = r0 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r1
+            com.appsflyer.internal.AFa1uSDK.f8876d = r1
             int r0 = r0 % 2
             r1 = 0
             r2 = 1
@@ -3325,7 +3325,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r0 = r0 + r2
             r3.getRevenue(r4, r0)
         L1f:
-            int r3 = com.appsflyer.internal.AFa1uSDK.f9247d
+            int r3 = com.appsflyer.internal.AFa1uSDK.f8876d
             int r3 = r3 + 99
             int r4 = r3 % 128
             com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = r4
@@ -3342,13 +3342,13 @@ public final class AFa1uSDK extends AppsFlyerLib {
     public static String getMediationNetwork(SimpleDateFormat simpleDateFormat, long j10) {
         simpleDateFormat.setTimeZone(DesugarTimeZone.getTimeZone("UTC"));
         String format = simpleDateFormat.format(new Date(j10));
-        f9247d = (AFKeystoreWrapper + 35) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 35) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         return format;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void getMediationNetwork(AFh1jSDK aFh1jSDK) {
-        int i10 = f9247d + 11;
+        int i10 = f8876d + 11;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         int i11 = i10 % 2;
         getCurrencyIso4217Code(aFh1jSDK);
@@ -3358,9 +3358,9 @@ public final class AFa1uSDK extends AppsFlyerLib {
     }
 
     public final boolean getRevenue() {
-        AFKeystoreWrapper = (f9247d + 27) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        AFKeystoreWrapper = (f8876d + 27) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (AFAdRevenueData(AppsFlyerProperties.AF_WAITFOR_CUSTOMERID) && getMediationNetwork() == null) {
-            int i10 = f9247d + 49;
+            int i10 = f8876d + 49;
             AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             return i10 % 2 == 0;
         }
@@ -3369,7 +3369,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     private static int getMediationNetwork(AFc1oSDK aFc1oSDK, boolean z10) {
         int i10 = AFKeystoreWrapper + 15;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             return AFAdRevenueData(aFc1oSDK, "appsFlyerInAppEventCount", z10);
         }
@@ -3379,11 +3379,11 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     private void getRevenue(AppsFlyerConversionListener appsFlyerConversionListener) {
         if (appsFlyerConversionListener == null) {
-            AFKeystoreWrapper = (f9247d + 13) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            AFKeystoreWrapper = (f8876d + 13) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             return;
         }
         this.getMediationNetwork = appsFlyerConversionListener;
-        int i10 = f9247d + 109;
+        int i10 = f8876d + 109;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             int i11 = 20 / 0;
@@ -3392,7 +3392,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
 
     private static /* synthetic */ Object AFAdRevenueData(Object[] objArr) {
         AFa1uSDK aFa1uSDK = (AFa1uSDK) objArr[0];
-        int i10 = f9247d + 11;
+        int i10 = f8876d + 11;
         AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             int i11 = 26 / 0;
@@ -3409,7 +3409,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         sb2.append("()' must be called after the 'init(String, AppsFlyerConversionListener)' API method, which should be called on the Application's onCreate.");
         aFLogger.w(aFg1cSDK, sb2.toString());
         int i10 = AFKeystoreWrapper + 3;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 == 0) {
             throw null;
         }
@@ -3427,7 +3427,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         aFh1eSDK.areAllFieldsValid = str;
         aFh1eSDK.getMediationNetwork = null;
         getMonetizationNetwork(aFh1eSDK);
-        f9247d = (AFKeystoreWrapper + 5) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 5) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0036, code lost:
@@ -3443,7 +3443,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             if (r7 == 0) goto L6b
             android.content.Intent r1 = r7.getIntent()
             if (r1 == 0) goto L6b
-            int r2 = com.appsflyer.internal.AFa1uSDK.f9247d
+            int r2 = com.appsflyer.internal.AFa1uSDK.f8876d
             int r2 = r2 + 123
             int r2 = r2 % 128
             com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = r2
@@ -3452,7 +3452,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             int r3 = com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper
             int r3 = r3 + 125
             int r4 = r3 % 128
-            com.appsflyer.internal.AFa1uSDK.f9247d = r4
+            com.appsflyer.internal.AFa1uSDK.f8876d = r4
             int r3 = r3 % 2
             java.lang.String r4 = "af"
             if (r3 != 0) goto L32
@@ -3468,7 +3468,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             java.lang.String r0 = r2.getString(r4)     // Catch: java.lang.Throwable -> L30
             if (r0 == 0) goto L5f
         L38:
-            int r3 = com.appsflyer.internal.AFa1uSDK.f9247d
+            int r3 = com.appsflyer.internal.AFa1uSDK.f8876d
             int r3 = r3 + 11
             int r3 = r3 % 128
             com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = r3
@@ -3480,7 +3480,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             r2.remove(r4)     // Catch: java.lang.Throwable -> L30
             android.content.Intent r1 = r1.putExtras(r2)     // Catch: java.lang.Throwable -> L30
             r7.setIntent(r1)     // Catch: java.lang.Throwable -> L30
-            int r7 = com.appsflyer.internal.AFa1uSDK.f9247d
+            int r7 = com.appsflyer.internal.AFa1uSDK.f8876d
             int r7 = r7 + 69
             int r7 = r7 % 128
             com.appsflyer.internal.AFa1uSDK.AFKeystoreWrapper = r7
@@ -3501,10 +3501,10 @@ public final class AFa1uSDK extends AppsFlyerLib {
         final AFh1jSDK monetizationNetwork = new AFh1lSDK().getMonetizationNetwork(((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).getCurrencyIso4217Code().getMonetizationNetwork.getMediationNetwork("appsFlyerCount", 0));
         monetizationNetwork.areAllFieldsValid = str;
         if (str != null) {
-            int i10 = f9247d + 39;
+            int i10 = f8876d + 39;
             AFKeystoreWrapper = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i10 % 2 == 0 ? str.length() > 5 : str.length() > 2) {
-                int i11 = f9247d + 35;
+                int i11 = f8876d + 35;
                 AFKeystoreWrapper = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i11 % 2 == 0) {
                     if (((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).AFLogger().AFAdRevenueData(monetizationNetwork)) {
@@ -3521,24 +3521,24 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 }
             }
         }
-        f9247d = (AFKeystoreWrapper + 111) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 111) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
     }
 
     private String getCurrencyIso4217Code(Context context, String str) {
-        f9247d = (AFKeystoreWrapper + 117) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 117) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (context == null) {
             return null;
         }
         getMediationNetwork(context);
         String monetizationNetwork = ((AFc1bSDK) getRevenue(new Object[]{this}, 389316487, -389316474, System.identityHashCode(this))).getCurrencyIso4217Code().getMonetizationNetwork(str);
-        f9247d = (AFKeystoreWrapper + 33) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 33) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         return monetizationNetwork;
     }
 
     public static String getCurrencyIso4217Code(AFc1oSDK aFc1oSDK, String str) {
         String monetizationNetwork = aFc1oSDK.getMonetizationNetwork("CACHED_CHANNEL", null);
         if (monetizationNetwork != null) {
-            int i10 = f9247d;
+            int i10 = f8876d;
             int i11 = i10 + 99;
             AFKeystoreWrapper = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i11 % 2 != 0) {
@@ -3552,7 +3552,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
             throw null;
         }
         aFc1oSDK.AFAdRevenueData("CACHED_CHANNEL", str);
-        int i14 = f9247d + 77;
+        int i14 = f8876d + 77;
         AFKeystoreWrapper = i14 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i14 % 2 == 0) {
             return str;
@@ -3576,7 +3576,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         map.put(((String) objArr[0]).intern(), Long.toString(time));
         try {
             if (monetizationNetwork) {
-                f9247d = (AFKeystoreWrapper + 29) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = (AFKeystoreWrapper + 29) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 AFLogger.INSTANCE.i(AFg1cSDK.GENERAL, "AppsFlyer SDK Reporting has been stopped", true);
                 i10 = AFKeystoreWrapper + 123;
             } else {
@@ -3587,7 +3587,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
                 aFLogger.i(aFg1cSDK, sb2.toString(), true);
                 i10 = AFKeystoreWrapper + 57;
             }
-            f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+            f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             component2(context);
             int monetizationNetwork2 = getMonetizationNetwork(aFc1oSDK, mediationNetwork);
             int mediationNetwork2 = getMediationNetwork(aFc1oSDK, aFh1jSDK.component4 != null);
@@ -3598,7 +3598,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         } catch (Throwable th2) {
             AFLogger.INSTANCE.e(AFg1cSDK.GENERAL, "Error while preparing to send event", th2, true, true, true);
         }
-        f9247d = (AFKeystoreWrapper + 115) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = (AFKeystoreWrapper + 115) % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         return map;
     }
 
@@ -3614,7 +3614,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         try {
             if (com.google.android.gms.common.f.m().g(context) == 0) {
                 int i10 = AFKeystoreWrapper + 71;
-                f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+                f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (i10 % 2 != 0) {
                     return true;
                 }
@@ -3625,7 +3625,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         }
         try {
             context.getPackageManager().getPackageInfo("com.google.android.gms", 0);
-            int i11 = f9247d + 107;
+            int i11 = f8876d + 107;
             AFKeystoreWrapper = i11 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             if (i11 % 2 != 0) {
                 int i12 = 15 / 0;
@@ -3641,7 +3641,7 @@ public final class AFa1uSDK extends AppsFlyerLib {
         AFa1uSDK aFa1uSDK = (AFa1uSDK) objArr[0];
         PluginInfo pluginInfo = (PluginInfo) objArr[1];
         int i10 = AFKeystoreWrapper + 79;
-        f9247d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
+        f8876d = i10 % IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
         if (i10 % 2 != 0) {
             Objects.requireNonNull(pluginInfo);
             ((AFc1bSDK) getRevenue(new Object[]{aFa1uSDK}, 389316487, -389316474, System.identityHashCode(aFa1uSDK))).e().getMediationNetwork(pluginInfo);

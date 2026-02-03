@@ -6,8 +6,6 @@ import android.os.Build;
 import android.os.Parcelable;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.b;
-import bt.h;
-import bt.x;
 import com.discord.logging.Log;
 import com.discord.misc.utilities.intent.IntentUtilsKt;
 import com.discord.notifications.actions.intents.ContentAction;
@@ -24,12 +22,14 @@ import com.discord.primitives.UserId;
 import com.discord.shortcuts.ShortcutData;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.modules.appstate.AppStateModule;
-import et.a;
-import ir.v;
+import ct.h;
+import ct.x;
+import ft.a;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -45,7 +45,7 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.JsonObject;
 import org.jetbrains.annotations.NotNull;
-import tr.c;
+import ur.c;
 @Metadata(d1 = {"\u0000l\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u001b\n\u0002\u0010\t\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u0000 c2\u00020\u0001:\u0001cB\u0007¢\u0006\u0004\b\u0002\u0010\u0003J%\u0010\b\u001a\u00020\u00072\u0014\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0006\u0012\u0004\u0018\u00010\u00050\u0004H\u0002¢\u0006\u0004\b\b\u0010\tJ;\u0010\u0011\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\f2\u0012\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0010\u001a\u00020\u000fH\u0003¢\u0006\u0004\b\u0011\u0010\u0012J\u0017\u0010\u0013\u001a\u00020\u000f2\u0006\u0010\u000b\u001a\u00020\nH\u0002¢\u0006\u0004\b\u0013\u0010\u0014J'\u0010\u0015\u001a\u00020\u00072\u0016\u0010\u0006\u001a\u0012\u0012\u0004\u0012\u00020\u0005\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0018\u00010\u0004H\u0002¢\u0006\u0004\b\u0015\u0010\tJ\u0019\u0010\u0017\u001a\u0004\u0018\u00010\u00162\u0006\u0010\u000b\u001a\u00020\nH\u0002¢\u0006\u0004\b\u0017\u0010\u0018J\u001f\u0010\u0019\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\fH\u0003¢\u0006\u0004\b\u0019\u0010\u001aJ=\u0010\u001d\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0012\u0010\u001b\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00050\u00042\u0012\u0010\u001c\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\u0004\b\u001d\u0010\u001eJ\u001d\u0010 \u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u001f\u001a\u00020\u0005¢\u0006\u0004\b \u0010!J\u001d\u0010$\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010#\u001a\u00020\"¢\u0006\u0004\b$\u0010%J\u001d\u0010&\u001a\u0012\u0012\u0004\u0012\u00020\u0005\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0018\u00010\u0004¢\u0006\u0004\b&\u0010'J\u0015\u0010)\u001a\u00020\u00072\u0006\u0010(\u001a\u00020\u0005¢\u0006\u0004\b)\u0010*J!\u0010-\u001a\u00020\u00072\u0012\u0010,\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00070+¢\u0006\u0004\b-\u0010.J/\u00100\u001a\u00020\u00072 \u0010/\u001a\u001c\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0006\u0012\u0004\u0018\u00010\u00050\u0004\u0012\u0004\u0012\u00020\u00070+¢\u0006\u0004\b0\u0010.J/\u00101\u001a\u00020\u00072 \u0010/\u001a\u001c\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0006\u0012\u0004\u0018\u00010\u00050\u0004\u0012\u0004\u0012\u00020\u00070+¢\u0006\u0004\b1\u0010.J\u001d\u00103\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u00102\u001a\u00020\u000f¢\u0006\u0004\b3\u00104J\u0015\u00105\u001a\u00020\u000f2\u0006\u0010\u000b\u001a\u00020\n¢\u0006\u0004\b5\u0010\u0014J\u001d\u00107\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u00106\u001a\u00020\u000f¢\u0006\u0004\b7\u00104J\u0015\u00108\u001a\u00020\u000f2\u0006\u0010\u000b\u001a\u00020\n¢\u0006\u0004\b8\u0010\u0014J\u001d\u0010:\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u00109\u001a\u00020\u000f¢\u0006\u0004\b:\u00104J\u0015\u0010;\u001a\u00020\u000f2\u0006\u0010\u000b\u001a\u00020\n¢\u0006\u0004\b;\u0010\u0014J\u001d\u0010=\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010<\u001a\u00020\u000f¢\u0006\u0004\b=\u00104J)\u0010@\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\b\u0010>\u001a\u0004\u0018\u00010\u00052\b\u0010?\u001a\u0004\u0018\u00010\u0005¢\u0006\u0004\b@\u0010AJ\u001d\u0010C\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010B\u001a\u00020\u000f¢\u0006\u0004\bC\u00104J\u0015\u0010D\u001a\u00020\u000f2\u0006\u0010\u000b\u001a\u00020\n¢\u0006\u0004\bD\u0010\u0014J\u001f\u0010F\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010E\u001a\u00020\u0005H\u0007¢\u0006\u0004\bF\u0010!J\u001f\u0010I\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010H\u001a\u00020GH\u0007¢\u0006\u0004\bI\u0010JJ+\u0010K\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0012\u0010E\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00050\u0004H\u0007¢\u0006\u0004\bK\u0010LJ\u001d\u0010M\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010H\u001a\u00020\u0005¢\u0006\u0004\bM\u0010!J+\u0010N\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n2\u0012\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00010\u0004H\u0007¢\u0006\u0004\bN\u0010LJ\u0015\u0010O\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\n¢\u0006\u0004\bO\u0010PR(\u0010R\u001a\b\u0012\u0004\u0012\u00020\u000f0Q8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\bR\u0010S\u001a\u0004\bT\u0010U\"\u0004\bV\u0010WR\u0018\u0010(\u001a\u0004\u0018\u00010\u00058\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b(\u0010XR\"\u0010,\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00070+8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b,\u0010YR&\u0010Z\u001a\u0012\u0012\u0004\u0012\u00020\u0005\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0018\u00010\u00048\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\bZ\u0010[R2\u0010/\u001a\u001e\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0006\u0012\u0004\u0018\u00010\u00050\u0004\u0012\u0004\u0012\u00020\u0007\u0018\u00010+8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b/\u0010YR2\u0010\\\u001a\u001e\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0006\u0012\u0004\u0018\u00010\u00050\u0004\u0012\u0004\u0012\u00020\u0007\u0018\u00010+8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b\\\u0010YR\u0016\u0010^\u001a\u00020]8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b^\u0010_R\u0016\u0010a\u001a\u00020`8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\ba\u0010b¨\u0006d"}, d2 = {"Lcom/discord/notifications/client/NotificationClient;", "", "<init>", "()V", "", "", "notification", "", "setLocalNotification", "(Ljava/util/Map;)V", "Landroid/content/Context;", "context", "Lcom/discord/notifications/api/NotificationData;", "notificationData", "notificationDataMap", "", "makeOrUpdateShortcut", "showNotification", "(Landroid/content/Context;Lcom/discord/notifications/api/NotificationData;Ljava/util/Map;Z)V", "updateAndComputeIfShouldRunBackgroundSync", "(Landroid/content/Context;)Z", "setNotification", "Lcom/discord/notifications/renderer/NotificationBehaviors;", "getBehaviors", "(Landroid/content/Context;)Lcom/discord/notifications/renderer/NotificationBehaviors;", "appendNotificationToCacheFile", "(Landroid/content/Context;Lcom/discord/notifications/api/NotificationData;)V", "localizedCategoryNames", "localizedGroupNames", "initNotificationCategories", "(Landroid/content/Context;Ljava/util/Map;Ljava/util/Map;)V", StackTraceHelper.NAME_KEY, "setIncomingRingtone", "(Landroid/content/Context;Ljava/lang/String;)V", "Landroid/content/Intent;", "intent", "handleIntent", "(Landroid/content/Context;Landroid/content/Intent;)V", "getPendingNotification", "()Ljava/util/Map;", "token", "setToken", "(Ljava/lang/String;)V", "Lkotlin/Function1;", "tokenListener", "setTokenListener", "(Lkotlin/jvm/functions/Function1;)V", "notificationListener", "setNotificationListener", "setLocalNotificationListener", "isAuthed", "setIsAuthed", "(Landroid/content/Context;Z)V", "isSoundsEnabled", "soundsEnabled", "setSoundsEnabled", "isVibrationsEnabled", "vibrationsEnabled", "setVibrationsEnabled", "isLightsEnabled", "lightsEnabled", "setLightsEnabled", NotificationRenderer.USERNAME, "userId", "setCurrentUser", "(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V", "notifyEveryTime", "setNotifyEveryTime", "shouldNotifyEveryTime", "data", "onDirectReplySuccess", "", "channelId", "markNotificationAsDirectReply", "(Landroid/content/Context;J)V", "onNotificationReceived", "(Landroid/content/Context;Ljava/util/Map;)V", "ackReactionNotifications", "showLocalNotification", "clearAllNotifications", "(Landroid/content/Context;)V", "Lkotlin/Function0;", "shouldDisplayNotification", "Lkotlin/jvm/functions/Function0;", "getShouldDisplayNotification", "()Lkotlin/jvm/functions/Function0;", "setShouldDisplayNotification", "(Lkotlin/jvm/functions/Function0;)V", "Ljava/lang/String;", "Lkotlin/jvm/functions/Function1;", "notificationPending", "Ljava/util/Map;", "notificationLocalListener", "Lcom/discord/notifications/client/NotificationCache;", "cache", "Lcom/discord/notifications/client/NotificationCache;", "Lcom/discord/notifications/renderer/NotificationRenderer;", "renderer", "Lcom/discord/notifications/renderer/NotificationRenderer;", "Companion", "notification_client_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nNotificationClient.kt\nKotlin\n*S Kotlin\n*F\n+ 1 NotificationClient.kt\ncom/discord/notifications/client/NotificationClient\n+ 2 NotificationAction.kt\ncom/discord/notifications/actions/intents/NotificationAction$Companion\n+ 3 IntentUtils.kt\ncom/discord/misc/utilities/intent/IntentUtilsKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 5 SerialFormat.kt\nkotlinx/serialization/SerialFormatKt\n+ 6 JsonElementBuilders.kt\nkotlinx/serialization/json/JsonElementBuildersKt\n*L\n1#1,420:1\n96#2,2:421\n99#2,2:424\n14#3:423\n1#4:426\n113#5:427\n113#5:431\n29#6,3:428\n*S KotlinDebug\n*F\n+ 1 NotificationClient.kt\ncom/discord/notifications/client/NotificationClient\n*L\n62#1:421,2\n62#1:424,2\n62#1:423\n307#1:427\n406#1:431\n386#1:428,3\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -135,29 +135,29 @@ public final class NotificationClient {
         if (joinId != null) {
             xVar.b("join_id", h.d(joinId));
         }
-        UserId m1026getUserIdwUX8bhU = notificationData.m1026getUserIdwUX8bhU();
-        if (m1026getUserIdwUX8bhU != null) {
-            xVar.b("notif_user_id", h.d(UserId.m1143toStringimpl(m1026getUserIdwUX8bhU.m1145unboximpl())));
+        UserId m1028getUserIdwUX8bhU = notificationData.m1028getUserIdwUX8bhU();
+        if (m1028getUserIdwUX8bhU != null) {
+            xVar.b("notif_user_id", h.d(UserId.m1145toStringimpl(m1028getUserIdwUX8bhU.m1147unboximpl())));
         }
-        UserId m1025getReceivingUserIdwUX8bhU = notificationData.m1025getReceivingUserIdwUX8bhU();
-        if (m1025getReceivingUserIdwUX8bhU != null) {
-            xVar.b("receiving_user_id", h.d(UserId.m1143toStringimpl(m1025getReceivingUserIdwUX8bhU.m1145unboximpl())));
+        UserId m1027getReceivingUserIdwUX8bhU = notificationData.m1027getReceivingUserIdwUX8bhU();
+        if (m1027getReceivingUserIdwUX8bhU != null) {
+            xVar.b("receiving_user_id", h.d(UserId.m1145toStringimpl(m1027getReceivingUserIdwUX8bhU.m1147unboximpl())));
         }
-        String m1023getMessageIdN_6c4I0 = notificationData.m1023getMessageIdN_6c4I0();
-        if (m1023getMessageIdN_6c4I0 != null) {
-            xVar.b("message_id", h.d(MessageId.m1091toStringimpl(MessageId.m1084boximpl(m1023getMessageIdN_6c4I0).m1093unboximpl())));
+        String m1025getMessageIdN_6c4I0 = notificationData.m1025getMessageIdN_6c4I0();
+        if (m1025getMessageIdN_6c4I0 != null) {
+            xVar.b("message_id", h.d(MessageId.m1093toStringimpl(MessageId.m1086boximpl(m1025getMessageIdN_6c4I0).m1095unboximpl())));
         }
         Integer messageType = notificationData.getMessageType();
         if (messageType != null) {
             xVar.b("message_type", h.c(Integer.valueOf(messageType.intValue())));
         }
-        GuildId m1022getGuildIdqOKuAAo = notificationData.m1022getGuildIdqOKuAAo();
-        if (m1022getGuildIdqOKuAAo != null) {
-            xVar.b("guild_id", h.d(GuildId.m1078toStringimpl(m1022getGuildIdqOKuAAo.m1080unboximpl())));
+        GuildId m1024getGuildIdqOKuAAo = notificationData.m1024getGuildIdqOKuAAo();
+        if (m1024getGuildIdqOKuAAo != null) {
+            xVar.b("guild_id", h.d(GuildId.m1080toStringimpl(m1024getGuildIdqOKuAAo.m1082unboximpl())));
         }
-        ChannelId m1021getChannelIdqMVnFVQ = notificationData.m1021getChannelIdqMVnFVQ();
-        if (m1021getChannelIdqMVnFVQ != null) {
-            xVar.b("channel_id", h.d(ChannelId.m1065toStringimpl(m1021getChannelIdqMVnFVQ.m1067unboximpl())));
+        ChannelId m1023getChannelIdqMVnFVQ = notificationData.m1023getChannelIdqMVnFVQ();
+        if (m1023getChannelIdqMVnFVQ != null) {
+            xVar.b("channel_id", h.d(ChannelId.m1067toStringimpl(m1023getChannelIdqMVnFVQ.m1069unboximpl())));
         }
         Integer channelType = notificationData.getChannelType();
         if (channelType != null) {
@@ -178,13 +178,13 @@ public final class NotificationClient {
         JsonObject a11 = xVar.a();
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(file, true), 8192);
         try {
-            Json.a aVar = Json.f36410d;
+            Json.a aVar = Json.f36186d;
             aVar.a();
             byte[] bytes = aVar.c(JsonObject.Companion.serializer(), a11).getBytes(Charsets.UTF_8);
             Intrinsics.checkNotNullExpressionValue(bytes, "getBytes(...)");
             bufferedOutputStream.write(bytes);
             bufferedOutputStream.write(10);
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
             c.a(bufferedOutputStream, null);
         } finally {
         }
@@ -250,7 +250,7 @@ public final class NotificationClient {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit tokenListener$lambda$1(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final boolean updateAndComputeIfShouldRunBackgroundSync(Context context) {
@@ -353,26 +353,26 @@ public final class NotificationClient {
     }
 
     public final void onDirectReplySuccess(@NotNull Context context, @NotNull String data) {
-        String m1091toStringimpl;
+        String m1093toStringimpl;
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(data, "data");
         NotificationData notificationData = DirectReplyMessage.Companion.toNotificationData(data);
         Pair a10 = v.a("type", notificationData.getType());
-        Pair a11 = v.a("channel_id", String.valueOf(notificationData.m1021getChannelIdqMVnFVQ()));
-        String m1023getMessageIdN_6c4I0 = notificationData.m1023getMessageIdN_6c4I0();
-        if (m1023getMessageIdN_6c4I0 == null) {
-            m1091toStringimpl = "null";
+        Pair a11 = v.a("channel_id", String.valueOf(notificationData.m1023getChannelIdqMVnFVQ()));
+        String m1025getMessageIdN_6c4I0 = notificationData.m1025getMessageIdN_6c4I0();
+        if (m1025getMessageIdN_6c4I0 == null) {
+            m1093toStringimpl = "null";
         } else {
-            m1091toStringimpl = MessageId.m1091toStringimpl(m1023getMessageIdN_6c4I0);
+            m1093toStringimpl = MessageId.m1093toStringimpl(m1025getMessageIdN_6c4I0);
         }
-        showNotification(context, notificationData, o0.m(a10, a11, v.a("message_id", m1091toStringimpl)), false);
+        showNotification(context, notificationData, o0.m(a10, a11, v.a("message_id", m1093toStringimpl)), false);
     }
 
     public final void onNotificationReceived(@NotNull Context context, @NotNull Map<String, String> data) {
         String str;
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(data, "data");
-        a.C0316a c0316a = a.f24016b;
+        a.C0341a c0341a = a.f25577b;
         KSerializer serializer = NotificationData.Companion.serializer();
         Map y10 = o0.y(data);
         y10.put("time_received", String.valueOf(System.currentTimeMillis()));
@@ -382,8 +382,8 @@ public final class NotificationClient {
             str = AppStateModule.APP_STATE_ACTIVE;
         }
         y10.put("app_state", str);
-        Unit unit = Unit.f33298a;
-        NotificationData notificationData = (NotificationData) c0316a.d(serializer, y10);
+        Unit unit = Unit.f33074a;
+        NotificationData notificationData = (NotificationData) c0341a.d(serializer, y10);
         appendNotificationToCacheFile(context, notificationData);
         showNotification(context, notificationData, data, true);
     }

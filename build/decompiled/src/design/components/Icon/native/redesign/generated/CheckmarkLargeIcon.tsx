@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/CheckmarkLargeIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun28063: for (var _fun28063_ip = 0;;) switch (_fun28063_ip) {
+        _fun28153: for (var _fun28153_ip = 0;;) switch (_fun28153_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun28063_ip = 53;
-                    continue _fun28063
+                    _fun28153_ip = 53;
+                    continue _fun28153
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CheckmarkLargeIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3111, 3224, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3141, 3254, 2]);

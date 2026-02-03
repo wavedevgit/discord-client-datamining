@@ -49,7 +49,7 @@ public abstract class APNGImageView extends FrameLayout {
         if (aPNGImageViewEventHandler != null) {
             aPNGImageViewEventHandler.onImageLoaded(url);
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     public static /* synthetic */ void recycleChild$default(APNGImageView aPNGImageView, View view, boolean z10, int i10, Object obj) {

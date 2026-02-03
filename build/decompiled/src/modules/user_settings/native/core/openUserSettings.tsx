@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/core/openUserSettings.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun51826: for (var _fun51826_ip = 0;;) switch (_fun51826_ip) {
+        _fun51932: for (var _fun51932_ip = 0;;) switch (_fun51932_ip) {
             case 0:
                 var4 = arg0;
                 var2 = _closure1_slot0;
@@ -46,16 +46,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = null;
                 var1 = var6 != var3;
                 if (!var1) {
-                    _fun51826_ip = 57;
-                    continue _fun51826
+                    _fun51932_ip = 57;
+                    continue _fun51932
                 }
             case 47:
                 var2 = var3.isReady;
                 var1 = var2.bind(var3)();
             case 57:
                 if (!var1) {
-                    _fun51826_ip = 199;
-                    continue _fun51826
+                    _fun51932_ip = 199;
+                    continue _fun51932
                 }
             case 63:
                 var2 = _closure1_slot1;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.type = var7;
                 var7 = var4.screen;
                 if (!(var6 == var7)) {
-                    _fun51826_ip = 118;
-                    continue _fun51826
+                    _fun51932_ip = 118;
+                    continue _fun51932
                 }
             case 108:
                 var8 = _closure1_slot3;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6 != var7;
                 var6 = null;
                 if (!var8) {
-                    _fun51826_ip = 140;
-                    continue _fun51826
+                    _fun51932_ip = 140;
+                    continue _fun51932
                 }
             case 137:
                 var6 = var7;
@@ -104,4 +104,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openUserSettings = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5887, 660, 3881, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5918, 660, 3911, 806, 2]);

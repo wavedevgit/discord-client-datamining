@@ -10,19 +10,19 @@ import org.jetbrains.annotations.NotNull;
 public abstract class FunctionTypeKind {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FqName f33495a;
+    private final FqName f33271a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f33496b;
+    private final String f33272b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f33497c;
+    private final boolean f33273c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ClassId f33498d;
+    private final ClassId f33274d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f33499e;
+    private final boolean f33275e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Function extends FunctionTypeKind {
@@ -67,32 +67,32 @@ public abstract class FunctionTypeKind {
     public FunctionTypeKind(@NotNull FqName packageFqName, @NotNull String classNamePrefix, boolean z10, ClassId classId, boolean z11) {
         Intrinsics.checkNotNullParameter(packageFqName, "packageFqName");
         Intrinsics.checkNotNullParameter(classNamePrefix, "classNamePrefix");
-        this.f33495a = packageFqName;
-        this.f33496b = classNamePrefix;
-        this.f33497c = z10;
-        this.f33498d = classId;
-        this.f33499e = z11;
+        this.f33271a = packageFqName;
+        this.f33272b = classNamePrefix;
+        this.f33273c = z10;
+        this.f33274d = classId;
+        this.f33275e = z11;
     }
 
     @NotNull
     public final String getClassNamePrefix() {
-        return this.f33496b;
+        return this.f33272b;
     }
 
     @NotNull
     public final FqName getPackageFqName() {
-        return this.f33495a;
+        return this.f33271a;
     }
 
     @NotNull
     public final Name numberedClassName(int i10) {
-        Name identifier = Name.identifier(this.f33496b + i10);
+        Name identifier = Name.identifier(this.f33272b + i10);
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
         return identifier;
     }
 
     @NotNull
     public String toString() {
-        return this.f33495a + '.' + this.f33496b + 'N';
+        return this.f33271a + '.' + this.f33272b + 'N';
     }
 }

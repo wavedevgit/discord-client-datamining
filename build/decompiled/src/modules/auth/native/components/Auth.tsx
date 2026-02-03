@@ -179,4 +179,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.TrackRegistrationContext = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 13005, 13047, 5750, 1234, 13048, 4330, 13052, 13015, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 13038, 13080, 5781, 1234, 13081, 4360, 13085, 13048, 2]);

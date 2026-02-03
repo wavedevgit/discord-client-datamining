@@ -13,7 +13,7 @@ import x3.h;
 public abstract class WorkDatabase extends r3.u {
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f5507p = new a(null);
+    public static final a f5551p = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -25,8 +25,8 @@ public abstract class WorkDatabase extends r3.u {
         public static final x3.h c(Context context, h.b configuration) {
             Intrinsics.checkNotNullParameter(context, "$context");
             Intrinsics.checkNotNullParameter(configuration, "configuration");
-            h.b.a a10 = h.b.f53155f.a(context);
-            a10.d(configuration.f53157b).c(configuration.f53158c).e(true).a(true);
+            h.b.a a10 = h.b.f53363f.a(context);
+            a10.d(configuration.f53365b).c(configuration.f53366c).e(true).a(true);
             return new y3.f().a(a10.b());
         }
 
@@ -47,7 +47,7 @@ public abstract class WorkDatabase extends r3.u {
                     }
                 });
             }
-            return (WorkDatabase) f10.g(queryExecutor).a(new d(clock)).b(k.f5643c).b(new v(context, 2, 3)).b(l.f5644c).b(m.f5645c).b(new v(context, 5, 6)).b(n.f5647c).b(o.f5648c).b(p.f5651c).b(new r0(context)).b(new v(context, 10, 11)).b(g.f5636c).b(h.f5639c).b(i.f5640c).b(j.f5642c).e().d();
+            return (WorkDatabase) f10.g(queryExecutor).a(new d(clock)).b(k.f5687c).b(new v(context, 2, 3)).b(l.f5688c).b(m.f5689c).b(new v(context, 5, 6)).b(n.f5691c).b(o.f5692c).b(p.f5695c).b(new r0(context)).b(new v(context, 10, 11)).b(g.f5680c).b(h.f5683c).b(i.f5684c).b(j.f5686c).e().d();
         }
 
         private a() {

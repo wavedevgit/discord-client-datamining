@@ -8,25 +8,25 @@ import x.p0;
 public final class c implements p0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f22487a;
+    private final u f22519a;
 
     public c(u uVar) {
-        this.f22487a = uVar;
+        this.f22519a = uVar;
     }
 
     @Override // x.p0
     public long a() {
-        return this.f22487a.a();
+        return this.f22519a.a();
     }
 
     @Override // x.p0
     public void b(h.b bVar) {
-        this.f22487a.b(bVar);
+        this.f22519a.b(bVar);
     }
 
     @Override // x.p0
     public q2 c() {
-        return this.f22487a.c();
+        return this.f22519a.c();
     }
 
     @Override // x.p0
@@ -35,6 +35,6 @@ public final class c implements p0 {
     }
 
     public u e() {
-        return this.f22487a;
+        return this.f22519a;
     }
 }

@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotation;
 public class c implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaAnnotations f34176d;
+    private final LazyJavaAnnotations f33952d;
 
     public c(LazyJavaAnnotations lazyJavaAnnotations) {
-        this.f34176d = lazyJavaAnnotations;
+        this.f33952d = lazyJavaAnnotations;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         AnnotationDescriptor c10;
-        c10 = LazyJavaAnnotations.c(this.f34176d, (JavaAnnotation) obj);
+        c10 = LazyJavaAnnotations.c(this.f33952d, (JavaAnnotation) obj);
         return c10;
     }
 }

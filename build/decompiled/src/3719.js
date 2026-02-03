@@ -1,795 +1,869 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun33289: for (var _fun33289_ip = 0;;) switch (_fun33289_ip) {
+    _fun33133: for (var _fun33133_ip = 0;;) switch (_fun33133_ip) {
         case 0:
-            var5 = require;
+            var11 = require;
+            var3 = metroImportDefault;
             var2 = exports;
-            var6 = dependencyMap;
-            var _closure1_slot0 = var5;
-            var _closure1_slot1 = var6;
-            var0 = function() {
-                var0 = undefined;
-                return var0;
-            };
-            var _closure1_slot13 = var0;
-            var0 = function() {
-                var0 = undefined;
-                return var0;
-            };
-            var _closure1_slot14 = var0;
+            var12 = dependencyMap;
             var0 = global;
-            var7 = var0.Object;
-            var3 = var7.defineProperty;
+            var _closure1_slot0 = var0;
+            var _closure1_slot1 = var11;
+            var _closure1_slot2 = var12;
+            var10 = function arg0() {
+                _fun33134: for (var _fun33134_ip = 0;;) switch (_fun33134_ip) {
+                    case 0:
+                        var3 = arg0;
+                        var0 = undefined;
+                        var6 = undefined;
+                        var5 = arguments.length;
+                        var1 = global;
+                        var7 = var1.Array;
+                        var4 = 1;
+                        var2 = var5 > var4;
+                        var1 = 0;
+                        if (!var2) {
+                            _fun33134_ip = 34;
+                            continue _fun33134
+                        }
+                    case 30:
+                        var1 = var5 - var4;
+                    case 34:
+                        var2 = var7.prototype;
+                        var2 = Object.create(var2, {
+                            constructor: {
+                                value: var7
+                            }
+                        });
+                        var11 = var2;
+                        var10 = var1;
+                        var1 = new var11[var7](var10, var9);
+                        var2 = var1 instanceof Object ? var1 : var2;
+                        var7 = var4 < var5;
+                        var1 = var4;
+                        if (!var7) {
+                            _fun33134_ip = 86;
+                            continue _fun33134
+                        }
+                    case 67:
+                        var8 = var1 - var4;
+                        var7 = arguments[var1];
+                        var2[var8] = var7;
+                        var1 = var1 + 1;
+                        if (var1 < var5) {
+                            _fun33134_ip = 67;
+                            continue _fun33134
+                        }
+                    case 86:
+                        var1 = var3.apply;
+                        var1 = var1.bind(var3)(var0, var2);
+                        return var0;
+                }
+            };
+            var _closure1_slot18 = var10;
+            var0 = global;
+            var6 = var0.Object;
+            var5 = var6.defineProperty;
             var1 = {};
             var0 = true;
             var1.value = var0;
             var0 = '__esModule';
-            var0 = var3.bind(var7)(var2, var0, var1);
-            var3 = 0;
-            var1 = var6[var3];
+            var0 = var5.bind(var6)(var2, var0, var1);
+            var0 = 0;
+            var1 = var12[var0];
             var0 = undefined;
-            var7 = var5.bind(var0)(var1);
-            var1 = var7.shouldBeUseWeb;
-            var1 = var1.bind(var7)();
-            var3 = var6[var3];
-            var5 = var5.bind(var0)(var3);
+            var1 = var3.bind(var0)(var1);
+            var _closure1_slot3 = var1;
+            var1 = 1;
+            var1 = var12[var1];
+            var1 = var3.bind(var0)(var1);
+            var _closure1_slot4 = var1;
+            var1 = 2;
+            var3 = var12[var1];
+            var5 = var11.bind(var0)(var3);
             var3 = var5.isJest;
             var3 = var3.bind(var5)();
-            var _closure1_slot2 = var3;
-            var3 = {};
-            var5 = "function addCompilerSafeGetAndSet_Pnpm_mutablesTs1(mutable){Object.defineProperties(mutable,{get:{value:function(){return mutable.value;},configurable:false,enumerable:false},set:{value:function(newValue){if(typeof newValue==='function'&&!newValue.__isAnimationDefinition){mutable.value=newValue(mutable.value);}else{mutable.value=newValue;}},configurable:false,enumerable:false}});}";
-            var3.code = var5;
-            var _closure1_slot3 = var3;
-            var3 = function() { // Environment: var4
-                var0 = function arg0() {
-                    var4 = arg0;
-                    var _closure3_slot0 = var4;
-                    var0 = global;
-                    var3 = var0.Object;
-                    var2 = var3.defineProperties;
-                    var1 = {};
-                    var0 = {
-                        'value': null,
-                        'configurable': false,
-                        'enumerable': false
-                    };
-                    var5 = function() {
-                        var0 = _closure3_slot0;
-                        var0 = var0.value;
-                        return var0;
-                    };
-                    var0.value = var5;
-                    var1.get = var0;
-                    var5 = {
-                        'value': null,
-                        'configurable': false,
-                        'enumerable': false
-                    };
-                    var7 = function(arg0) { // Environment: var6
-                        var0 = arg0;
-                        var _closure4_slot0 = var0;
-                        var0 = function arg0() {
-                            var0 = undefined;
-                            var3 = _closure4_slot0;
-                            var2 = var3.apply;
-                            var0 = arguments;
-                            var1 = var0;
-                            var0 = this;
-                            var0 = var2.bind(var3)(var0, var1);
-                            return var0;
-                        };
-                        var1 = function() { // Environment: var1
-                            var1 = _closure4_slot0;
-                            var0 = var1.toString;
-                            var0 = var0.bind(var1)();
-                            return var0;
-                        };
-                        var0.toString = var1;
-                        return var0;
-                    };
-                    var0 = undefined;
-                    var6 = function(arg0) { // Environment: var6
-                        _fun33298: for (var _fun33298_ip = 0;;) switch (_fun33298_ip) {
-                            case 0:
-                                var1 = arg0;
-                                var2 = 'function';
-                                var0 = typeof var1;
-                                if (!(var2 === var0)) {
-                                    _fun33298_ip = 50;
-                                    continue _fun33298
-                                }
-                            case 14:
-                                var0 = var1.__isAnimationDefinition;
-                                if (var0) {
-                                    _fun33298_ip = 50;
-                                    continue _fun33298
-                                }
-                            case 23:
-                                var2 = _closure3_slot0;
-                                var3 = var2.value;
-                                var0 = undefined;
-                                var0 = var1.bind(var0)(var3);
-                                var2.value = var0;
-                                _fun33298_ip = 63;
-                                continue _fun33298;
-                            case 50:
-                                var0 = _closure3_slot0;
-                                var0.value = var1;
-                            case 63:
-                                var0 = undefined;
-                                return var0;
-                        }
-                    };
-                    var6 = var7.bind(var0)(var6);
-                    var5.value = var6;
-                    var1.set = var5;
-                    var1 = var2.bind(var3)(var4, var1);
-                    return var0;
-                };
-                var1 = {};
-                var0.__closure = var1;
-                var1 = 14094096506039.0;
-                var0.__workletHash = var1;
-                var1 = _closure1_slot3;
-                var0.__initData = var1;
-                return var0;
-            };
-            var3 = var3.bind(var0)();
-            var _closure1_slot4 = var3;
-            var3 = {};
-            var5 = "function hideInternalValueProp_Pnpm_mutablesTs2(mutable){Object.defineProperty(mutable,'_value',{configurable:false,enumerable:false});}";
-            var3.code = var5;
             var _closure1_slot5 = var3;
-            var3 = function() { // Environment: var4
-                var0 = function arg0() {
-                    var0 = global;
-                    var4 = var0.Object;
-                    var3 = var4.defineProperty;
-                    var2 = arg0;
-                    var1 = '_value';
-                    var0 = {
-                        'configurable': false,
-                        'enumerable': false
-                    };
-                    var0 = var3.bind(var4)(var2, var1, var0);
-                    var0 = undefined;
-                    return var0;
-                };
-                var1 = {};
-                var0.__closure = var1;
-                var1 = 3380393180484.0;
-                var0.__workletHash = var1;
-                var1 = _closure1_slot5;
-                var0.__initData = var1;
-                return var0;
-            };
-            var3 = var3.bind(var0)();
-            var _closure1_slot6 = var3;
-            var3 = {};
-            var5 = 'function makeMutableUI_Pnpm_mutablesTs3(initial){const{valueSetter,hideInternalValueProp,addCompilerSafeGetAndSet}=this.__closure;const listeners=new Map();let value=initial;const mutable={get value(){return value;},set value(newValue){valueSetter(mutable,newValue);},get _value(){return value;},set _value(newValue){value=newValue;listeners.forEach(function(listener){listener(newValue);});},modify:function(modifier,forceUpdate=true){valueSetter(mutable,modifier!==undefined?modifier(value):value,forceUpdate);},addListener:function(id,listener){listeners.set(id,listener);},removeListener:function(id){listeners.delete(id);},_animation:null,_isReanimatedSharedValue:true};hideInternalValueProp(mutable);addCompilerSafeGetAndSet(mutable);return mutable;}';
-            var3.code = var5;
-            var _closure1_slot7 = var3;
-            var3 = function() { // Environment: var4
-                var0 = function arg0() {
-                    var0 = global;
-                    var0 = var0.Map;
-                    var2 = var0.prototype;
-                    var2 = Object.create(var2, {
-                        constructor: {
-                            value: var0
-                        }
-                    });
-                    var6 = var2;
-                    var0 = new var6[var0](var5);
-                    var0 = var0 instanceof Object ? var0 : var2;
-                    var _closure3_slot0 = var0;
-                    var0 = arg0;
-                    var _closure3_slot1 = var0;
-                    var0 = {};
-                    var4 = function() {
-                        var0 = _closure3_slot1;
-                        return var0;
-                    };
-                    var3 = function arg0() {
-                        var2 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var0 = 2;
-                        var1 = var1[var0];
-                        var0 = undefined;
-                        var4 = var2.bind(var0)(var1);
-                        var3 = var4.valueSetter;
-                        var2 = _closure3_slot2;
-                        var1 = arg0;
-                        var1 = var3.bind(var4)(var2, var1);
-                        return var0;
-                    };
-                    var2 = 'value';
-                    Object.defineProperty(var0, var2, {
-                        get: var4,
-                        set: var3,
-                        enumerable: true
-                    });
-                    var4 = function() {
-                        var0 = _closure3_slot1;
-                        return var0;
-                    };
-                    var3 = function arg0() {
-                        var2 = arg0;
-                        var _closure4_slot0 = var2;
-                        _closure3_slot1 = var2;
+            var1 = var12[var1];
+            var3 = var11.bind(var0)(var1);
+            var1 = var3.shouldBeUseWeb;
+            var13 = var1.bind(var3)();
+            var _closure1_slot6 = var13;
+            var1 = new Array(0);
+            var _closure1_slot7 = var1;
+            var1 = {};
+            var3 = 'function setupMicrotasks_Pnpm_threadsTs1(){let microtasksQueue=[];let isExecutingMicrotasksQueue=false;global.queueMicrotask=function(callback){microtasksQueue.push(callback);};global.__callMicrotasks=function(){if(isExecutingMicrotasksQueue){return;}try{isExecutingMicrotasksQueue=true;for(let index=0;index<microtasksQueue.length;index+=1){microtasksQueue[index]();}microtasksQueue=[];global._maybeFlushUIUpdatesQueue();}finally{isExecutingMicrotasksQueue=false;}};}';
+            var1.code = var3;
+            var _closure1_slot8 = var1;
+            var1 = function() { // Environment: var4
+                var0 = function() {
+                    var1 = new Array(0);
+                    var _closure3_slot0 = var1;
+                    var1 = false;
+                    var _closure3_slot1 = var1;
+                    var1 = _closure1_slot0;
+                    var2 = function(arg0) { // Environment: var0
                         var2 = _closure3_slot0;
-                        var1 = var2.forEach;
-                        var0 = function(arg0) { // Environment: var0
-                            var2 = _closure4_slot0;
-                            var1 = arg0;
-                            var0 = undefined;
-                            var1 = var1.bind(var0)(var2);
-                            return var0;
-                        };
+                        var1 = var2.push;
+                        var0 = arg0;
                         var0 = var1.bind(var2)(var0);
                         var0 = undefined;
                         return var0;
                     };
-                    var2 = '_value';
-                    Object.defineProperty(var0, var2, {
-                        get: var4,
-                        set: var3,
-                        enumerable: true
-                    });
-                    var2 = function arg0() {
-                        _fun33308: for (var _fun33308_ip = 0;;) switch (_fun33308_ip) {
+                    var1.queueMicrotask = var2;
+                    var0 = function() { // Environment: var0
+                        _fun33138: for (var _fun33138_ip = 0;;) switch (_fun33138_ip) {
                             case 0:
-                                var7 = arg0;
                                 var0 = undefined;
-                                var2 = undefined;
-                                var3 = arguments.length;
-                                var1 = 1;
-                                var3 = var3 > var1;
-                                if (!var3) {
-                                    _fun33308_ip = 28;
-                                    continue _fun33308
+                                var5 = undefined;
+                                var1 = _closure3_slot1;
+                                if (var1) {
+                                    _fun33138_ip = 120;
+                                    continue _fun33138
                                 }
-                            case 20:
-                                var4 = arguments[var1];
-                                var3 = var0 !== var4;
-                            case 28:
-                                var5 = !var3;
-                                if (!var3) {
-                                    _fun33308_ip = 38;
-                                    continue _fun33308
+                            case 14: // try_start_0
+                                var1 = true;
+                                _closure3_slot1 = var1;
+                                var2 = 0;
+                                var5 = 0;
+                                var1 = _closure3_slot0;
+                                var1 = var1.length;
+                                var4 = 1;
+                                if (!(var2 < var1)) {
+                                    _fun33138_ip = 75;
+                                    continue _fun33138
                                 }
-                            case 34:
-                                var5 = arguments[var1];
-                            case 38:
+                            case 40:
+                                var6 = _closure3_slot0;
+                                var1 = var5;
+                                var2 = var6[var1];
+                                var2 = var2.bind(var6)();
+                                var2 = var1 + var4;
+                                var5 = var2;
+                                var1 = _closure3_slot0;
+                                var1 = var1.length;
+                                if (var2 < var1) {
+                                    _fun33138_ip = 40;
+                                    continue _fun33138
+                                }
+                            case 75:
+                                var1 = new Array(0);
+                                _closure3_slot0 = var1;
                                 var2 = _closure1_slot0;
-                                var3 = _closure1_slot1;
-                                var1 = 2;
-                                var1 = var3[var1];
-                                var4 = var2.bind(var0)(var1);
-                                var3 = var4.valueSetter;
-                                var2 = _closure3_slot2;
-                                if (!(var0 === var7)) {
-                                    _fun33308_ip = 84;
-                                    continue _fun33308
+                                var1 = var2._maybeFlushUIUpdatesQueue;
+                                var1 = var1.bind(var2)();
+                            case 102: // try_end0
+                                var1 = false;
+                                _closure3_slot1 = var1;
+                                _fun33138_ip = 120;
+                                continue _fun33138;
+                            case 110: // catch_target0
+                                CatchBlockStart(arg_register = 1);
+                                var2 = false;
+                                _closure3_slot1 = var2;
+                                throw var1;
+                            case 120:
+                                return var0;
+                        }
+                    };
+                    var1.__callMicrotasks = var0;
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = {};
+                var0.__closure = var1;
+                var1 = 2487728156345.0;
+                var0.__workletHash = var1;
+                var1 = _closure1_slot8;
+                var0.__initData = var1;
+                return var0;
+            };
+            var7 = var1.bind(var0)();
+            var1 = {};
+            var3 = 'function callMicrotasksOnUIThread_Pnpm_threadsTs2(){global.__callMicrotasks();}';
+            var1.code = var3;
+            var _closure1_slot9 = var1;
+            var1 = function() { // Environment: var4
+                var0 = function() {
+                    var1 = _closure1_slot0;
+                    var0 = var1.__callMicrotasks;
+                    var0 = var0.bind(var1)();
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = {};
+                var0.__closure = var1;
+                var1 = 741957556389.0;
+                var0.__workletHash = var1;
+                var1 = _closure1_slot9;
+                var0.__initData = var1;
+                return var0;
+            };
+            var6 = var1.bind(var0)();
+            if (!var13) {
+                _fun33133_ip = 218;
+                continue _fun33133
+            }
+        case 213:
+            var6 = function() { // Environment: var4
+                var0 = undefined;
+                return var0;
+            };
+        case 218:
+            var _closure1_slot10 = var6;
+            var1 = {};
+            var3 = "function runOnUI_Pnpm_threadsTs3(worklet){const{__DEV__,SHOULD_BE_USE_WEB,isWorkletFunction,IS_JEST,ReanimatedModule,makeShareableCloneRecursive,callMicrotasks}=this.__closure;if(__DEV__&&!SHOULD_BE_USE_WEB&&_WORKLET){throw new ReanimatedError('`runOnUI` cannot be called on the UI runtime. Please call the function synchronously or use `queueMicrotask` or `requestAnimationFrame` instead.');}if(__DEV__&&!SHOULD_BE_USE_WEB&&!isWorkletFunction(worklet)){throw new ReanimatedError('`runOnUI` can only be used with worklets.');}return function(...args){if(IS_JEST){ReanimatedModule.scheduleOnUI(makeShareableCloneRecursive(function(){'worklet';worklet(...args);}));return;}if(__DEV__){makeShareableCloneRecursive(worklet);makeShareableCloneRecursive(args);}_runOnUIQueue.push([worklet,args]);if(_runOnUIQueue.length===1){queueMicrotask(function(){const queue=_runOnUIQueue;_runOnUIQueue=[];ReanimatedModule.scheduleOnUI(makeShareableCloneRecursive(function(){'worklet';queue.forEach(function([worklet,args]){worklet(...args);});callMicrotasks();}));});}};}";
+            var1.code = var3;
+            var _closure1_slot11 = var1;
+            var1 = {};
+            var3 = 'function pnpm_threadsTs4(){const{worklet,args}=this.__closure;worklet(...args);}';
+            var1.code = var3;
+            var _closure1_slot12 = var1;
+            var1 = {};
+            var3 = 'function pnpm_threadsTs5(){const{queue,callMicrotasks}=this.__closure;queue.forEach(function([worklet,args]){worklet(...args);});callMicrotasks();}';
+            var1.code = var3;
+            var _closure1_slot13 = var1;
+            var1 = function() { // Environment: var4
+                var0 = function arg0() {
+                    var1 = arg0;
+                    var _closure3_slot0 = var1;
+                    var0 = function() { // Environment: var0
+                        _fun33144: for (var _fun33144_ip = 0;;) switch (_fun33144_ip) {
+                            case 0:
+                                var0 = undefined;
+                                var5 = undefined;
+                                var4 = arguments.length;
+                                var2 = global;
+                                var3 = var2.Array;
+                                var6 = var3.prototype;
+                                var6 = Object.create(var6, {
+                                    constructor: {
+                                        value: var3
+                                    }
+                                });
+                                var11 = var6;
+                                var10 = var4;
+                                var3 = new var11[var3](var10, var9);
+                                var8 = var3 instanceof Object ? var3 : var6;
+                                var _closure4_slot0 = var8;
+                                var3 = 0;
+                                var6 = var3 < var4;
+                                if (!var6) {
+                                    _fun33144_ip = 68;
+                                    continue _fun33144
+                                }
+                            case 53:
+                                var6 = arguments[var3];
+                                var8[var3] = var6;
+                                var3 = var3 + 1;
+                                if (var3 < var4) {
+                                    _fun33144_ip = 53;
+                                    continue _fun33144
+                                }
+                            case 68:
+                                var3 = _closure1_slot5;
+                                if (var3) {
+                                    _fun33144_ip = 148;
+                                    continue _fun33144
                                 }
                             case 78:
-                                var1 = _closure3_slot1;
-                                _fun33308_ip = 93;
-                                continue _fun33308;
-                            case 84:
-                                var6 = _closure3_slot1;
-                                var1 = var7.bind(var0)(var6);
-                            case 93:
-                                var1 = var3.bind(var4)(var2, var1, var5);
+                                var5 = _closure1_slot7;
+                                var4 = var5.push;
+                                var7 = _closure3_slot0;
+                                var3 = new Array(2);
+                                var3[0] = var7;
+                                var3[1] = var8;
+                                var3 = var4.bind(var5)(var3);
+                                var3 = _closure1_slot7;
+                                var4 = var3.length;
+                                var3 = 1;
+                                if (!(var3 === var4)) {
+                                    _fun33144_ip = 264;
+                                    continue _fun33144
+                                }
+                            case 130:
+                                var3 = var2.queueMicrotask;
+                                var2 = function() { // Environment: var1
+                                    var8 = _closure1_slot7;
+                                    var _closure5_slot0 = var8;
+                                    var0 = new Array(0);
+                                    _closure1_slot7 = var0;
+                                    var5 = _closure1_slot1;
+                                    var7 = _closure1_slot2;
+                                    var0 = 3;
+                                    var2 = var7[var0];
+                                    var0 = undefined;
+                                    var2 = var5.bind(var0)(var2);
+                                    var3 = var2.ReanimatedModule;
+                                    var2 = var3.scheduleOnUI;
+                                    var4 = 4;
+                                    var4 = var7[var4];
+                                    var5 = var5.bind(var0)(var4);
+                                    var4 = var5.makeShareableCloneRecursive;
+                                    var1 = function() {
+                                        var2 = _closure5_slot0;
+                                        var1 = var2.forEach;
+                                        var0 = function(arg0) { // Environment: var0
+                                            var4 = _closure1_slot4;
+                                            var0 = undefined;
+                                            var3 = arg0;
+                                            var2 = 2;
+                                            var4 = var4.bind(var0)(var3, var2);
+                                            var2 = 0;
+                                            var3 = var4[var2];
+                                            var2 = 1;
+                                            var4 = var4[var2];
+                                            var2 = var3.apply;
+                                            var1 = _closure1_slot3;
+                                            var1 = var1.bind(var0)(var4);
+                                            var1 = var2.bind(var3)(var0, var1);
+                                            return var0;
+                                        };
+                                        var0 = var1.bind(var2)(var0);
+                                        var1 = _closure1_slot10;
+                                        var0 = undefined;
+                                        var1 = var1.bind(var0)();
+                                        return var0;
+                                    };
+                                    var7 = {};
+                                    var7.queue = var8;
+                                    var8 = _closure1_slot10;
+                                    var7.callMicrotasks = var8;
+                                    var1.__closure = var7;
+                                    var7 = 2773761092576.0;
+                                    var1.__workletHash = var7;
+                                    var6 = _closure1_slot13;
+                                    var1.__initData = var6;
+                                    var1 = var4.bind(var5)(var1);
+                                    var1 = var2.bind(var3)(var1);
+                                    return var0;
+                                };
+                                var2 = var3.bind(var0)(var2);
+                                _fun33144_ip = 264;
+                                continue _fun33144;
+                            case 148:
+                                var5 = _closure1_slot1;
+                                var7 = _closure1_slot2;
+                                var2 = 3;
+                                var2 = var7[var2];
+                                var2 = var5.bind(var0)(var2);
+                                var3 = var2.ReanimatedModule;
+                                var2 = var3.scheduleOnUI;
+                                var4 = 4;
+                                var4 = var7[var4];
+                                var5 = var5.bind(var0)(var4);
+                                var4 = var5.makeShareableCloneRecursive;
+                                var1 = function() {
+                                    var3 = _closure3_slot0;
+                                    var2 = var3.apply;
+                                    var1 = _closure4_slot0;
+                                    var0 = undefined;
+                                    var1 = var2.bind(var3)(var0, var1);
+                                    return var0;
+                                };
+                                var7 = {};
+                                var9 = _closure3_slot0;
+                                var7.worklet = var9;
+                                var7.args = var8;
+                                var1.__closure = var7;
+                                var7 = 10268384484340.0;
+                                var1.__workletHash = var7;
+                                var6 = _closure1_slot12;
+                                var1.__initData = var6;
+                                var1 = var4.bind(var5)(var1);
+                                var1 = var2.bind(var3)(var1);
+                            case 264:
                                 return var0;
                         }
                     };
-                    var0.modify = var2;
-                    var2 = function arg0, arg1() {
-                        var3 = _closure3_slot0;
-                        var2 = var3.set;
-                        var1 = arg0;
-                        var0 = arg1;
-                        var0 = var2.bind(var3)(var1, var0);
-                        var0 = undefined;
-                        return var0;
-                    };
-                    var0.addListener = var2;
-                    var2 = function arg0() {
-                        var2 = _closure3_slot0;
-                        var1 = var2.delete;
-                        var0 = arg0;
-                        var0 = var1.bind(var2)(var0);
-                        var0 = undefined;
-                        return var0;
-                    };
-                    var0.removeListener = var2;
-                    var2 = null;
-                    var0._animation = var2;
-                    var2 = true;
-                    var0._isReanimatedSharedValue = var2;
-                    var _closure3_slot2 = var0;
-                    var3 = _closure1_slot6;
-                    var2 = undefined;
-                    var3 = var3.bind(var2)(var0);
-                    var1 = _closure1_slot4;
-                    var1 = var1.bind(var2)(var0);
                     return var0;
                 };
                 var2 = {};
-                var5 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var3 = 2;
-                var4 = var4[var3];
-                var3 = undefined;
-                var3 = var5.bind(var3)(var4);
-                var3 = var3.valueSetter;
-                var2.valueSetter = var3;
+                var1 = false;
+                var2.__DEV__ = var1;
                 var3 = _closure1_slot6;
-                var2.hideInternalValueProp = var3;
-                var3 = _closure1_slot4;
-                var2.addCompilerSafeGetAndSet = var3;
+                var2.SHOULD_BE_USE_WEB = var3;
+                var5 = _closure1_slot1;
+                var6 = _closure1_slot2;
+                var3 = 5;
+                var3 = var6[var3];
+                var4 = undefined;
+                var3 = var5.bind(var4)(var3);
+                var3 = var3.isWorkletFunction;
+                var2.isWorkletFunction = var3;
+                var3 = _closure1_slot5;
+                var2.IS_JEST = var3;
+                var3 = 3;
+                var3 = var6[var3];
+                var3 = var5.bind(var4)(var3);
+                var3 = var3.ReanimatedModule;
+                var2.ReanimatedModule = var3;
+                var3 = 4;
+                var3 = var6[var3];
+                var3 = var5.bind(var4)(var3);
+                var3 = var3.makeShareableCloneRecursive;
+                var2.makeShareableCloneRecursive = var3;
+                var3 = _closure1_slot10;
+                var2.callMicrotasks = var3;
                 var0.__closure = var2;
-                var2 = 8132940328790.0;
+                var2 = 8710271011487.0;
                 var0.__workletHash = var2;
-                var1 = _closure1_slot7;
+                var1 = _closure1_slot11;
                 var0.__initData = var1;
                 return var0;
             };
-            var3 = var3.bind(var0)();
-            var _closure1_slot8 = var3;
-            var5 = {};
-            var6 = 'function pnpm_mutablesTs4(){const{makeMutableUI,initial}=this.__closure;return makeMutableUI(initial);}';
-            var5.code = var6;
-            var _closure1_slot9 = var5;
-            var5 = {};
-            var6 = 'function pnpm_mutablesTs5(sv){return sv.value;}';
-            var5.code = var6;
-            var _closure1_slot10 = var5;
-            var5 = {};
-            var6 = 'function pnpm_mutablesTs6(){const{mutable,newValue}=this.__closure;mutable.value=newValue;}';
-            var5.code = var6;
-            var _closure1_slot11 = var5;
-            var5 = {};
-            var6 = 'function pnpm_mutablesTs7(){const{mutable,modifier,forceUpdate}=this.__closure;mutable.modify(modifier,forceUpdate);}';
-            var5.code = var6;
-            var _closure1_slot12 = var5;
-            if (var1) {
-                _fun33289_ip = 276;
-                continue _fun33289
-            }
-        case 269:
-            var1 = function arg0() {
-                var10 = arg0;
-                var _closure2_slot0 = var10;
-                var4 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var0 = 3;
-                var0 = var5[var0];
-                var2 = undefined;
-                var7 = var4.bind(var2)(var0);
-                var3 = var7.makeShareableCloneRecursive;
-                var0 = {};
-                var8 = function() {
-                    var2 = _closure1_slot8;
-                    var1 = _closure2_slot0;
-                    var0 = undefined;
-                    var0 = var2.bind(var0)(var1);
-                    return var0;
-                };
-                var9 = {};
-                var11 = _closure1_slot8;
-                var9.makeMutableUI = var11;
-                var9.initial = var10;
-                var8.__closure = var9;
-                var9 = 38746935544.0;
-                var8.__workletHash = var9;
-                var9 = _closure1_slot9;
-                var8.__initData = var9;
-                var0.__init = var8;
-                var3 = var3.bind(var7)(var0);
-                var0 = {};
-                var9 = function() {
-                    var0 = _closure1_slot13;
-                    var2 = undefined;
-                    var0 = var0.bind(var2)();
-                    var1 = _closure1_slot0;
-                    var3 = _closure1_slot1;
-                    var0 = 4;
-                    var0 = var3[var0];
-                    var3 = var1.bind(var2)(var0);
-                    var1 = var3.executeOnUIRuntimeSync;
-                    var0 = function arg0() {
-                        var0 = arg0;
-                        var0 = var0.value;
-                        return var0;
-                    };
-                    var5 = {};
-                    var0.__closure = var5;
-                    var5 = 5375306386445.0;
-                    var0.__workletHash = var5;
-                    var4 = _closure1_slot10;
-                    var0.__initData = var4;
-                    var1 = var1.bind(var3)(var0);
-                    var0 = _closure2_slot1;
-                    var0 = var1.bind(var2)(var0);
-                    return var0;
-                };
-                var8 = function arg0() {
-                    var6 = arg0;
-                    var _closure3_slot0 = var6;
-                    var2 = _closure1_slot14;
-                    var0 = undefined;
-                    var2 = var2.bind(var0)();
-                    var3 = _closure1_slot0;
-                    var5 = _closure1_slot1;
-                    var2 = 4;
-                    var2 = var5[var2];
-                    var3 = var3.bind(var0)(var2);
-                    var2 = var3.runOnUI;
-                    var1 = function() {
-                        var1 = _closure2_slot1;
-                        var0 = _closure3_slot0;
-                        var1.value = var0;
-                        var0 = undefined;
-                        return var0;
-                    };
-                    var5 = {};
-                    var7 = _closure2_slot1;
-                    var5.mutable = var7;
-                    var5.newValue = var6;
-                    var1.__closure = var5;
-                    var5 = 11269088169577.0;
-                    var1.__workletHash = var5;
-                    var4 = _closure1_slot11;
-                    var1.__initData = var4;
-                    var1 = var2.bind(var3)(var1);
-                    var1 = var1.bind(var0)();
-                    return var0;
-                };
-                var7 = 'value';
-                Object.defineProperty(var0, var7, {
-                    get: var9,
-                    set: var8,
-                    enumerable: true
-                });
-                var9 = function() {
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var0 = 5;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var0 = var2.bind(var0)(var1);
-                    var2 = var0.ReanimatedError;
-                    var0 = var2.prototype;
-                    var1 = Object.create(var0, {
-                        constructor: {
-                            value: var2
-                        }
-                    });
-                    var3 = 'Reading from `_value` directly is only possible on the UI runtime. Perhaps you passed an Animated Style to a non-animated component?';
-                    var4 = var1;
-                    var0 = new var4[var2](var3, var2);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
-                };
-                var8 = function arg0() {
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var0 = 5;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var0 = var2.bind(var0)(var1);
-                    var2 = var0.ReanimatedError;
-                    var0 = var2.prototype;
-                    var1 = Object.create(var0, {
-                        constructor: {
-                            value: var2
-                        }
-                    });
-                    var3 = 'Setting `_value` directly is only possible on the UI runtime. Perhaps you want to assign to `value` instead?';
-                    var4 = var1;
-                    var0 = new var4[var2](var3, var2);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
-                };
-                var7 = '_value';
-                Object.defineProperty(var0, var7, {
-                    get: var9,
-                    set: var8,
-                    enumerable: true
-                });
-                var7 = function arg0() {
-                    _fun33329: for (var _fun33329_ip = 0;;) switch (_fun33329_ip) {
-                        case 0:
-                            var7 = arg0;
-                            var0 = undefined;
-                            var3 = undefined;
-                            var _closure3_slot0 = var7;
-                            var4 = arguments.length;
-                            var2 = 1;
-                            var4 = var4 > var2;
-                            if (!var4) {
-                                _fun33329_ip = 34;
-                                continue _fun33329
-                            }
-                        case 26:
-                            var5 = arguments[var2];
-                            var4 = var0 !== var5;
-                        case 34:
-                            var6 = !var4;
-                            if (!var4) {
-                                _fun33329_ip = 44;
-                                continue _fun33329
-                            }
-                        case 40:
-                            var6 = arguments[var2];
-                        case 44:
-                            var _closure3_slot1 = var6;
-                            var3 = _closure1_slot0;
-                            var5 = _closure1_slot1;
-                            var2 = 4;
-                            var2 = var5[var2];
-                            var3 = var3.bind(var0)(var2);
-                            var2 = var3.runOnUI;
-                            var1 = function() {
-                                var3 = _closure2_slot1;
-                                var2 = var3.modify;
-                                var1 = _closure3_slot0;
-                                var0 = _closure3_slot1;
-                                var0 = var2.bind(var3)(var1, var0);
+            var5 = var1.bind(var0)();
+            var1 = {};
+            var3 = 'function pnpm_threadsTs6(){const{worklet,args,makeShareableCloneOnUIRecursive}=this.__closure;const result=worklet(...args);return makeShareableCloneOnUIRecursive(result);}';
+            var1.code = var3;
+            var _closure1_slot14 = var1;
+            var1 = {};
+            var3 = "function runOnUIImmediately_Pnpm_threadsTs7(worklet){const{__DEV__,SHOULD_BE_USE_WEB,isWorkletFunction,ReanimatedModule,makeShareableCloneRecursive}=this.__closure;if(__DEV__&&!SHOULD_BE_USE_WEB&&_WORKLET){throw new ReanimatedError('`runOnUIImmediately` cannot be called on the UI runtime. Please call the function synchronously or use `queueMicrotask` or `requestAnimationFrame` instead.');}if(__DEV__&&!SHOULD_BE_USE_WEB&&!isWorkletFunction(worklet)){throw new ReanimatedError('`runOnUIImmediately` can only be used with worklets.');}return function(...args){ReanimatedModule.scheduleOnUI(makeShareableCloneRecursive(function(){'worklet';worklet(...args);}));};}";
+            var1.code = var3;
+            var _closure1_slot15 = var1;
+            var1 = {};
+            var3 = 'function pnpm_threadsTs8(){const{worklet,args}=this.__closure;worklet(...args);}';
+            var1.code = var3;
+            var _closure1_slot16 = var1;
+            var1 = function() { // Environment: var4
+                var0 = function arg0() {
+                    var1 = arg0;
+                    var _closure3_slot0 = var1;
+                    var0 = function() { // Environment: var0
+                        _fun33151: for (var _fun33151_ip = 0;;) switch (_fun33151_ip) {
+                            case 0:
                                 var0 = undefined;
+                                var4 = undefined;
+                                var3 = arguments.length;
+                                var2 = global;
+                                var2 = var2.Array;
+                                var5 = var2.prototype;
+                                var5 = Object.create(var5, {
+                                    constructor: {
+                                        value: var2
+                                    }
+                                });
+                                var11 = var5;
+                                var10 = var3;
+                                var2 = new var11[var2](var10, var9);
+                                var8 = var2 instanceof Object ? var2 : var5;
+                                var _closure4_slot0 = var8;
+                                var2 = 0;
+                                var5 = var2 < var3;
+                                if (!var5) {
+                                    _fun33151_ip = 68;
+                                    continue _fun33151
+                                }
+                            case 53:
+                                var5 = arguments[var2];
+                                var8[var2] = var5;
+                                var2 = var2 + 1;
+                                if (var2 < var3) {
+                                    _fun33151_ip = 53;
+                                    continue _fun33151
+                                }
+                            case 68:
+                                var5 = _closure1_slot1;
+                                var7 = _closure1_slot2;
+                                var2 = 3;
+                                var2 = var7[var2];
+                                var2 = var5.bind(var0)(var2);
+                                var3 = var2.ReanimatedModule;
+                                var2 = var3.scheduleOnUI;
+                                var4 = 4;
+                                var4 = var7[var4];
+                                var5 = var5.bind(var0)(var4);
+                                var4 = var5.makeShareableCloneRecursive;
+                                var1 = function() {
+                                    var3 = _closure3_slot0;
+                                    var2 = var3.apply;
+                                    var1 = _closure4_slot0;
+                                    var0 = undefined;
+                                    var1 = var2.bind(var3)(var0, var1);
+                                    return var0;
+                                };
+                                var7 = {};
+                                var9 = _closure3_slot0;
+                                var7.worklet = var9;
+                                var7.args = var8;
+                                var1.__closure = var7;
+                                var7 = 6969436050040.0;
+                                var1.__workletHash = var7;
+                                var6 = _closure1_slot16;
+                                var1.__initData = var6;
+                                var1 = var4.bind(var5)(var1);
+                                var1 = var2.bind(var3)(var1);
                                 return var0;
-                            };
-                            var5 = {};
-                            var8 = _closure2_slot1;
-                            var5.mutable = var8;
-                            var5.modifier = var7;
-                            var5.forceUpdate = var6;
-                            var1.__closure = var5;
-                            var5 = 15983399508815.0;
-                            var1.__workletHash = var5;
-                            var4 = _closure1_slot12;
-                            var1.__initData = var4;
-                            var1 = var2.bind(var3)(var1);
-                            var1 = var1.bind(var0)();
-                            return var0;
-                    }
-                };
-                var0.modify = var7;
-                var7 = function() {
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var0 = 5;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var0 = var2.bind(var0)(var1);
-                    var2 = var0.ReanimatedError;
-                    var0 = var2.prototype;
-                    var1 = Object.create(var0, {
-                        constructor: {
-                            value: var2
                         }
-                    });
-                    var3 = 'Adding listeners is only possible on the UI runtime.';
-                    var4 = var1;
-                    var0 = new var4[var2](var3, var2);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
+                    };
+                    return var0;
                 };
-                var0.addListener = var7;
-                var7 = function() {
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var0 = 5;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var0 = var2.bind(var0)(var1);
-                    var2 = var0.ReanimatedError;
-                    var0 = var2.prototype;
-                    var1 = Object.create(var0, {
-                        constructor: {
-                            value: var2
-                        }
-                    });
-                    var3 = 'Removing listeners is only possible on the UI runtime.';
-                    var4 = var1;
-                    var0 = new var4[var2](var3, var2);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
-                };
-                var0.removeListener = var7;
-                var7 = true;
-                var0._isReanimatedSharedValue = var7;
-                var _closure2_slot1 = var0;
-                var6 = _closure1_slot6;
-                var6 = var6.bind(var2)(var0);
-                var1 = _closure1_slot4;
-                var1 = var1.bind(var2)(var0);
-                var1 = 6;
-                var1 = var5[var1];
-                var1 = var4.bind(var2)(var1);
-                var2 = var1.shareableMappingCache;
-                var1 = var2.set;
-                var1 = var1.bind(var2)(var0, var3);
+                var2 = {};
+                var1 = false;
+                var2.__DEV__ = var1;
+                var3 = _closure1_slot6;
+                var2.SHOULD_BE_USE_WEB = var3;
+                var5 = _closure1_slot1;
+                var6 = _closure1_slot2;
+                var3 = 5;
+                var3 = var6[var3];
+                var4 = undefined;
+                var3 = var5.bind(var4)(var3);
+                var3 = var3.isWorkletFunction;
+                var2.isWorkletFunction = var3;
+                var3 = 3;
+                var3 = var6[var3];
+                var3 = var5.bind(var4)(var3);
+                var3 = var3.ReanimatedModule;
+                var2.ReanimatedModule = var3;
+                var3 = 4;
+                var3 = var6[var3];
+                var3 = var5.bind(var4)(var3);
+                var3 = var3.makeShareableCloneRecursive;
+                var2.makeShareableCloneRecursive = var3;
+                var0.__closure = var2;
+                var2 = 3385146413149.0;
+                var0.__workletHash = var2;
+                var1 = _closure1_slot15;
+                var0.__initData = var1;
                 return var0;
             };
-            _fun33289_ip = 281;
-            continue _fun33289;
-        case 276:
+            var3 = var1.bind(var0)();
+            var8 = {};
+            var1 = "function runOnJS_Pnpm_threadsTs9(fun){const runOnJS_Pnpm_threadsTs9=this._recur;const{SHOULD_BE_USE_WEB,isWorkletFunction,runWorkletOnJS,makeShareableCloneOnUIRecursive}=this.__closure;if(SHOULD_BE_USE_WEB||!_WORKLET){return function(...args){return queueMicrotask(args.length?function(){return fun(...args);}:fun);};}if(isWorkletFunction(fun)){return function(...args){return runOnJS_Pnpm_threadsTs9(runWorkletOnJS)(fun,...args);};}if(fun.__remoteFunction){fun=fun.__remoteFunction;}const scheduleOnJS=typeof fun==='function'?global._scheduleHostFunctionOnJS:global._scheduleRemoteFunctionOnJS;return function(...args){scheduleOnJS(fun,args.length>0?makeShareableCloneOnUIRecursive(args):undefined);};}";
+            var8.code = var1;
             var1 = function arg0() {
-                _fun33311: for (var _fun33311_ip = 0;;) switch (_fun33311_ip) {
+                _fun33153: for (var _fun33153_ip = 0;;) switch (_fun33153_ip) {
                     case 0:
-                        var0 = arg0;
-                        var _closure2_slot0 = var0;
-                        var0 = global;
-                        var0 = var0.Map;
-                        var2 = var0.prototype;
-                        var2 = Object.create(var2, {
-                            constructor: {
-                                value: var0
-                            }
-                        });
-                        var6 = var2;
-                        var0 = new var6[var0](var5);
-                        var0 = var0 instanceof Object ? var0 : var2;
-                        var _closure2_slot1 = var0;
-                        var0 = {};
-                        var4 = function() {
-                            var1 = _closure1_slot13;
-                            var0 = undefined;
-                            var0 = var1.bind(var0)();
-                            var0 = _closure2_slot0;
-                            return var0;
-                        };
-                        var3 = function arg0() {
-                            var2 = _closure1_slot14;
-                            var0 = undefined;
-                            var2 = var2.bind(var0)();
-                            var2 = _closure1_slot0;
-                            var3 = _closure1_slot1;
-                            var1 = 2;
-                            var1 = var3[var1];
-                            var4 = var2.bind(var0)(var1);
-                            var3 = var4.valueSetter;
-                            var2 = _closure2_slot2;
-                            var1 = arg0;
-                            var1 = var3.bind(var4)(var2, var1);
-                            return var0;
-                        };
-                        var2 = 'value';
-                        Object.defineProperty(var0, var2, {
-                            get: var4,
-                            set: var3,
-                            enumerable: true
-                        });
-                        var4 = function() {
-                            var0 = _closure2_slot0;
-                            return var0;
-                        };
-                        var3 = function arg0() {
-                            var2 = arg0;
-                            var _closure3_slot0 = var2;
-                            _closure2_slot0 = var2;
-                            var2 = _closure2_slot1;
-                            var1 = var2.forEach;
-                            var0 = function(arg0) { // Environment: var0
-                                var2 = _closure3_slot0;
-                                var1 = arg0;
-                                var0 = undefined;
-                                var1 = var1.bind(var0)(var2);
-                                return var0;
-                            };
-                            var0 = var1.bind(var2)(var0);
-                            var0 = undefined;
-                            return var0;
-                        };
-                        var2 = '_value';
-                        Object.defineProperty(var0, var2, {
-                            get: var4,
-                            set: var3,
-                            enumerable: true
-                        });
-                        var2 = function arg0() {
-                            _fun33317: for (var _fun33317_ip = 0;;) switch (_fun33317_ip) {
+                        var3 = arg0;
+                        var _closure2_slot0 = var3;
+                        var1 = _closure1_slot6;
+                        if (var1) {
+                            _fun33153_ip = 147;
+                            continue _fun33153
+                        }
+                    case 22:
+                        var1 = global;
+                        var1 = var1._WORKLET;
+                        if (!var1) {
+                            _fun33153_ip = 147;
+                            continue _fun33153
+                        }
+                    case 33:
+                        var5 = _closure1_slot1;
+                        var4 = _closure1_slot2;
+                        var1 = 5;
+                        var4 = var4[var1];
+                        var1 = undefined;
+                        var4 = var5.bind(var1)(var4);
+                        var1 = var4.isWorkletFunction;
+                        var1 = var1.bind(var4)(var3);
+                        if (var1) {
+                            _fun33153_ip = 140;
+                            continue _fun33153
+                        }
+                    case 69:
+                        var4 = var3.__remoteFunction;
+                        var1 = var3;
+                        if (!var4) {
+                            _fun33153_ip = 94;
+                            continue _fun33153
+                        }
+                    case 81:
+                        var3 = var3.__remoteFunction;
+                        _closure2_slot0 = var3;
+                        var1 = var3;
+                    case 94:
+                        var3 = 'function';
+                        var1 = typeof var1;
+                        if (!(var3 !== var1)) {
+                            _fun33153_ip = 119;
+                            continue _fun33153
+                        }
+                    case 105:
+                        var1 = _closure1_slot0;
+                        var1 = var1._scheduleRemoteFunctionOnJS;
+                        _fun33153_ip = 129;
+                        continue _fun33153;
+                    case 119:
+                        var2 = _closure1_slot0;
+                        var1 = var2._scheduleHostFunctionOnJS;
+                    case 129:
+                        var _closure2_slot1 = var1;
+                        var1 = function() { // Environment: var0
+                            _fun33157: for (var _fun33157_ip = 0;;) switch (_fun33157_ip) {
                                 case 0:
-                                    var7 = arg0;
                                     var0 = undefined;
-                                    var2 = undefined;
-                                    var3 = arguments.length;
-                                    var1 = 1;
-                                    var3 = var3 > var1;
-                                    if (!var3) {
-                                        _fun33317_ip = 28;
-                                        continue _fun33317
+                                    var3 = undefined;
+                                    var2 = arguments.length;
+                                    var1 = global;
+                                    var1 = var1.Array;
+                                    var4 = var1.prototype;
+                                    var4 = Object.create(var4, {
+                                        constructor: {
+                                            value: var1
+                                        }
+                                    });
+                                    var10 = var4;
+                                    var9 = var2;
+                                    var1 = new var10[var1](var9, var8);
+                                    var6 = var1 instanceof Object ? var1 : var4;
+                                    var4 = 0;
+                                    var5 = var4 < var2;
+                                    var1 = 0;
+                                    if (!var5) {
+                                        _fun33157_ip = 64;
+                                        continue _fun33157
                                     }
-                                case 20:
-                                    var4 = arguments[var1];
-                                    var3 = var0 !== var4;
-                                case 28:
-                                    var5 = !var3;
-                                    if (!var3) {
-                                        _fun33317_ip = 38;
-                                        continue _fun33317
-                                    }
-                                case 34:
+                                case 49:
                                     var5 = arguments[var1];
-                                case 38:
-                                    var2 = _closure1_slot0;
-                                    var3 = _closure1_slot1;
-                                    var1 = 2;
-                                    var1 = var3[var1];
-                                    var4 = var2.bind(var0)(var1);
-                                    var3 = var4.valueSetter;
-                                    var2 = _closure2_slot2;
-                                    if (!(var0 === var7)) {
-                                        _fun33317_ip = 89;
-                                        continue _fun33317
+                                    var6[var1] = var5;
+                                    var1 = var1 + 1;
+                                    if (var1 < var2) {
+                                        _fun33157_ip = 49;
+                                        continue _fun33157
                                     }
-                                case 78:
-                                    var1 = _closure2_slot2;
-                                    var1 = var1.value;
-                                    _fun33317_ip = 103;
-                                    continue _fun33317;
+                                case 64:
+                                    var3 = _closure2_slot1;
+                                    var2 = _closure2_slot0;
+                                    var1 = var6.length;
+                                    var4 = var1 > var4;
+                                    var1 = undefined;
+                                    if (!var4) {
+                                        _fun33157_ip = 123;
+                                        continue _fun33157
+                                    }
                                 case 89:
-                                    var6 = _closure2_slot2;
-                                    var6 = var6.value;
-                                    var1 = var7.bind(var0)(var6);
-                                case 103:
-                                    var1 = var3.bind(var4)(var2, var1, var5);
+                                    var5 = _closure1_slot1;
+                                    var7 = _closure1_slot2;
+                                    var4 = 4;
+                                    var4 = var7[var4];
+                                    var5 = var5.bind(var0)(var4);
+                                    var4 = var5.makeShareableCloneOnUIRecursive;
+                                    var1 = var4.bind(var5)(var6);
+                                case 123:
+                                    var1 = var3.bind(var0)(var2, var1);
                                     return var0;
                             }
                         };
-                        var0.modify = var2;
-                        var2 = function arg0, arg1() {
-                            var3 = _closure2_slot1;
-                            var2 = var3.set;
-                            var1 = arg0;
-                            var0 = arg1;
-                            var0 = var2.bind(var3)(var1, var0);
-                            var0 = undefined;
-                            return var0;
+                        return var1;
+                    case 140:
+                        var1 = function() { // Environment: var0
+                            _fun33156: for (var _fun33156_ip = 0;;) switch (_fun33156_ip) {
+                                case 0:
+                                    var3 = undefined;
+                                    var2 = undefined;
+                                    var1 = arguments.length;
+                                    var0 = global;
+                                    var0 = var0.Array;
+                                    var4 = var0.prototype;
+                                    var4 = Object.create(var4, {
+                                        constructor: {
+                                            value: var0
+                                        }
+                                    });
+                                    var8 = var4;
+                                    var7 = var1;
+                                    var0 = new var8[var0](var7, var6);
+                                    var5 = var0 instanceof Object ? var0 : var4;
+                                    var0 = 0;
+                                    var4 = var0 < var1;
+                                    if (!var4) {
+                                        _fun33156_ip = 62;
+                                        continue _fun33156
+                                    }
+                                case 47:
+                                    var4 = arguments[var0];
+                                    var5[var0] = var4;
+                                    var0 = var0 + 1;
+                                    if (var0 < var1) {
+                                        _fun33156_ip = 47;
+                                        continue _fun33156
+                                    }
+                                case 62:
+                                    var1 = _closure1_slot17;
+                                    var0 = _closure1_slot18;
+                                    var2 = var1.bind(var3)(var0);
+                                    var1 = var2.apply;
+                                    var0 = _closure2_slot0;
+                                    var4 = new Array(1);
+                                    var4[0] = var0;
+                                    var0 = var4.concat;
+                                    var0 = var0.bind(var4)(var5);
+                                    var0 = var1.bind(var2)(var3, var0);
+                                    return var0;
+                            }
                         };
-                        var0.addListener = var2;
-                        var2 = function arg0() {
-                            var2 = _closure2_slot1;
-                            var1 = var2.delete;
-                            var0 = arg0;
-                            var0 = var1.bind(var2)(var0);
-                            var0 = undefined;
-                            return var0;
+                        return var1;
+                    case 147:
+                        var0 = function() { // Environment: var0
+                            _fun33154: for (var _fun33154_ip = 0;;) switch (_fun33154_ip) {
+                                case 0:
+                                    var2 = undefined;
+                                    var6 = undefined;
+                                    var5 = arguments.length;
+                                    var1 = global;
+                                    var0 = var1.Array;
+                                    var4 = var0.prototype;
+                                    var4 = Object.create(var4, {
+                                        constructor: {
+                                            value: var0
+                                        }
+                                    });
+                                    var9 = var4;
+                                    var8 = var5;
+                                    var0 = new var9[var0](var8, var7);
+                                    var0 = var0 instanceof Object ? var0 : var4;
+                                    var _closure3_slot0 = var0;
+                                    var4 = 0;
+                                    var7 = var4 < var5;
+                                    if (!var7) {
+                                        _fun33154_ip = 68;
+                                        continue _fun33154
+                                    }
+                                case 53:
+                                    var7 = arguments[var4];
+                                    var0[var4] = var7;
+                                    var4 = var4 + 1;
+                                    if (var4 < var5) {
+                                        _fun33154_ip = 53;
+                                        continue _fun33154
+                                    }
+                                case 68:
+                                    var1 = var1.queueMicrotask;
+                                    var0 = var0.length;
+                                    if (var0) {
+                                        _fun33154_ip = 91;
+                                        continue _fun33154
+                                    }
+                                case 82:
+                                    var0 = _closure2_slot0;
+                                    _fun33154_ip = 96;
+                                    continue _fun33154;
+                                case 91:
+                                    var0 = function() { // Environment: var3
+                                        var3 = _closure2_slot0;
+                                        var2 = var3.apply;
+                                        var1 = _closure3_slot0;
+                                        var0 = undefined;
+                                        var0 = var2.bind(var3)(var0, var1);
+                                        return var0;
+                                    };
+                                case 96:
+                                    var0 = var1.bind(var2)(var0);
+                                    return var0;
+                            }
                         };
-                        var0.removeListener = var2;
-                        var2 = true;
-                        var0._isReanimatedSharedValue = var2;
-                        var _closure2_slot2 = var0;
-                        var3 = _closure1_slot6;
-                        var4 = undefined;
-                        var3 = var3.bind(var4)(var0);
-                        var3 = _closure1_slot4;
-                        var3 = var3.bind(var4)(var0);
-                        var2 = _closure1_slot2;
-                        if (!var2) {
-                            _fun33311_ip = 165;
-                            continue _fun33311
-                        }
-                    case 154:
-                        var1 = function() { // Environment: var1
-                            var2 = _closure2_slot0;
-                            var0 = global;
-                            var1 = var0.JSON;
-                            var0 = var1.stringify;
-                            var0 = var0.bind(var1)(var2);
-                            return var0;
-                        };
-                        var0.toJSON = var1;
-                    case 165:
                         return var0;
                 }
             };
-        case 281:
-            var2.makeMutableUI = var3;
-            var2.makeMutable = var1;
+            var _closure1_slot17 = var1;
+            var9 = {};
+            var9.SHOULD_BE_USE_WEB = var13;
+            var13 = 5;
+            var13 = var12[var13];
+            var13 = var11.bind(var0)(var13);
+            var13 = var13.isWorkletFunction;
+            var9.isWorkletFunction = var13;
+            var9.runWorkletOnJS = var10;
+            var10 = 4;
+            var10 = var12[var10];
+            var10 = var11.bind(var0)(var10);
+            var10 = var10.makeShareableCloneOnUIRecursive;
+            var9.makeShareableCloneOnUIRecursive = var10;
+            var1.__closure = var9;
+            var9 = 4576792393858.0;
+            var1.__workletHash = var9;
+            var1.__initData = var8;
+            var2.setupMicrotasks = var7;
+            var2.callMicrotasks = var6;
+            var2.runOnUI = var5;
+            var4 = function arg0() {
+                var1 = arg0;
+                var _closure2_slot0 = var1;
+                var0 = function() { // Environment: var0
+                    _fun33159: for (var _fun33159_ip = 0;;) switch (_fun33159_ip) {
+                        case 0:
+                            var9 = undefined;
+                            var3 = undefined;
+                            var2 = arguments.length;
+                            var1 = global;
+                            var1 = var1.Array;
+                            var4 = var1.prototype;
+                            var4 = Object.create(var4, {
+                                constructor: {
+                                    value: var1
+                                }
+                            });
+                            var14 = var4;
+                            var13 = var2;
+                            var1 = new var14[var1](var13, var12);
+                            var11 = var1 instanceof Object ? var1 : var4;
+                            var _closure3_slot0 = var11;
+                            var1 = 0;
+                            var4 = var1 < var2;
+                            if (!var4) {
+                                _fun33159_ip = 68;
+                                continue _fun33159
+                            }
+                        case 53:
+                            var4 = arguments[var1];
+                            var11[var1] = var4;
+                            var1 = var1 + 1;
+                            if (var1 < var2) {
+                                _fun33159_ip = 53;
+                                continue _fun33159
+                            }
+                        case 68:
+                            var8 = _closure1_slot1;
+                            var10 = _closure1_slot2;
+                            var1 = 3;
+                            var1 = var10[var1];
+                            var1 = var8.bind(var9)(var1);
+                            var2 = var1.ReanimatedModule;
+                            var1 = var2.executeOnUIRuntimeSync;
+                            var7 = 4;
+                            var3 = var10[var7];
+                            var4 = var8.bind(var9)(var3);
+                            var3 = var4.makeShareableCloneRecursive;
+                            var0 = function() {
+                                var2 = _closure2_slot0;
+                                var1 = var2.apply;
+                                var0 = _closure3_slot0;
+                                var3 = undefined;
+                                var2 = var1.bind(var2)(var3, var0);
+                                var1 = _closure1_slot1;
+                                var4 = _closure1_slot2;
+                                var0 = 4;
+                                var0 = var4[var0];
+                                var1 = var1.bind(var3)(var0);
+                                var0 = var1.makeShareableCloneOnUIRecursive;
+                                var0 = var0.bind(var1)(var2);
+                                return var0;
+                            };
+                            var6 = {};
+                            var12 = _closure2_slot0;
+                            var6.worklet = var12;
+                            var6.args = var11;
+                            var7 = var10[var7];
+                            var7 = var8.bind(var9)(var7);
+                            var7 = var7.makeShareableCloneOnUIRecursive;
+                            var6.makeShareableCloneOnUIRecursive = var7;
+                            var0.__closure = var6;
+                            var6 = 6038069575410.0;
+                            var0.__workletHash = var6;
+                            var5 = _closure1_slot14;
+                            var0.__initData = var5;
+                            var0 = var3.bind(var4)(var0);
+                            var0 = var1.bind(var2)(var0);
+                            return var0;
+                    }
+                };
+                return var0;
+            };
+            var2.executeOnUIRuntimeSync = var4;
+            var2.runOnUIImmediately = var3;
+            var2.runOnJS = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3685, 3686, 3720, 3712, 3689, 3693, 3713]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 57, 3715, 3720, 3742, 3737]);

@@ -23,7 +23,7 @@ public interface CancellableContinuation extends Continuation {
 
     void c(Function1 function1);
 
-    Object d(Throwable th2);
+    Object e(Throwable th2);
 
     void f(CoroutineDispatcher coroutineDispatcher, Throwable th2);
 

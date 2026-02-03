@@ -4,31 +4,37 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = global;
-    var1 = var1.Math;
-    var1 = var1.min;
-    var _closure1_slot2 = var1;
-    var1 = function(arg0) { // Environment: var0
-        _fun96890: for (var _fun96890_ip = 0;;) switch (_fun96890_ip) {
+    var1 = function(arg0, arg1) { // Environment: var0
+        _fun96802: for (var _fun96802_ip = 0;;) switch (_fun96802_ip) {
             case 0:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 0;
-                var2 = var2[var0];
-                var4 = undefined;
-                var3 = var3.bind(var4)(var2);
-                var2 = arg0;
-                var3 = var3.bind(var4)(var2);
-                var2 = var3 > var0;
-                if (!var2) {
-                    _fun96890_ip = 59;
-                    continue _fun96890
+                var3 = arg0;
+                var1 = arg1;
+                var4 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var6 = 0;
+                var0 = var0[var6];
+                var5 = undefined;
+                var0 = var4.bind(var5)(var0);
+                var0 = var0[var3];
+                if (var0) {
+                    _fun96802_ip = 66;
+                    continue _fun96802
                 }
-            case 39:
-                var2 = _closure1_slot2;
-                var1 = 9007199254740991.0;
-                var0 = var2.bind(var4)(var3, var1);
+            case 37:
+                var4 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var2 = var2[var6];
+                var2 = var4.bind(var5)(var2);
+                if (var1) {
+                    _fun96802_ip = 59;
+                    continue _fun96802
+                }
+            case 57:
+                var1 = {};
             case 59:
+                var2[var3] = var1;
+                var0 = var1;
+            case 66:
                 return var0;
         }
     };

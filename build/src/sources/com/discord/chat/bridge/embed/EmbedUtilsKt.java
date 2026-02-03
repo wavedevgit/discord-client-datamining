@@ -4,11 +4,11 @@ import com.discord.media_player.MediaSource;
 import com.discord.media_player.MediaType;
 import com.discord.primitives.ChannelId;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import ir.p;
-import ir.v;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import jr.p;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
@@ -233,7 +233,7 @@ public final class EmbedUtilsKt {
     }
 
     /* renamed from: toImageMediaSources-SHRpUJI  reason: not valid java name */
-    public static final List<MediaSource> m390toImageMediaSourcesSHRpUJI(@NotNull Embed toImageMediaSources, long j10, @NotNull String str) {
+    public static final List<MediaSource> m392toImageMediaSourcesSHRpUJI(@NotNull Embed toImageMediaSources, long j10, @NotNull String str) {
         Intrinsics.checkNotNullParameter(toImageMediaSources, "$this$toImageMediaSources");
         String messageId = str;
         Intrinsics.checkNotNullParameter(messageId, "messageId");
@@ -244,7 +244,7 @@ public final class EmbedUtilsKt {
             for (Iterator it = list.iterator(); it.hasNext(); it = it) {
                 EmbedMedia embedMedia = (EmbedMedia) it.next();
                 ArrayList arrayList2 = arrayList;
-                arrayList2.add(new MediaSource(null, embedMedia.getEmbedUrl(), null, null, getTag(toImageMediaSources), MediaType.IMAGE, false, ChannelId.m1058boximpl(j10), messageId, null, null, Boolean.valueOf(embedMedia.getSrcIsAnimated()), 1549, null));
+                arrayList2.add(new MediaSource(null, embedMedia.getEmbedUrl(), null, null, getTag(toImageMediaSources), MediaType.IMAGE, false, ChannelId.m1060boximpl(j10), messageId, null, null, Boolean.valueOf(embedMedia.getSrcIsAnimated()), 1549, null));
                 messageId = str;
                 arrayList = arrayList2;
             }
@@ -254,7 +254,7 @@ public final class EmbedUtilsKt {
     }
 
     /* renamed from: toMediaSource-UBIQNlQ  reason: not valid java name */
-    public static final MediaSource m391toMediaSourceUBIQNlQ(@NotNull Embed toMediaSource, long j10, @NotNull String messageId, boolean z10, Double d10) {
+    public static final MediaSource m393toMediaSourceUBIQNlQ(@NotNull Embed toMediaSource, long j10, @NotNull String messageId, boolean z10, Double d10) {
         String str;
         String str2;
         String str3;
@@ -303,7 +303,7 @@ public final class EmbedUtilsKt {
                 if (image4 != null) {
                     bool = Boolean.valueOf(image4.getSrcIsAnimated());
                 }
-                return new MediaSource(null, str7, str8, num, tag, mediaType, z10, ChannelId.m1058boximpl(j10), messageId, null, null, bool, 1537, null);
+                return new MediaSource(null, str7, str8, num, tag, mediaType, z10, ChannelId.m1060boximpl(j10), messageId, null, null, bool, 1537, null);
             }
             EmbedMedia video = toMediaSource.getVideo();
             if (video != null) {
@@ -333,7 +333,7 @@ public final class EmbedUtilsKt {
             if (thumbnail2 != null) {
                 z11 = thumbnail2.getSrcIsAnimated();
             }
-            return new MediaSource(str4, str5, str6, num3, tag2, mediaType2, false, ChannelId.m1058boximpl(j10), messageId, null, d10, Boolean.valueOf(z11), IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, null);
+            return new MediaSource(str4, str5, str6, num3, tag2, mediaType2, false, ChannelId.m1060boximpl(j10), messageId, null, d10, Boolean.valueOf(z11), IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, null);
         }
         EmbedMedia video4 = toMediaSource.getVideo();
         if (video4 != null) {
@@ -363,6 +363,6 @@ public final class EmbedUtilsKt {
         if (thumbnail4 != null) {
             z11 = thumbnail4.getSrcIsAnimated();
         }
-        return new MediaSource(str, str2, str3, num2, tag3, mediaType3, z10, ChannelId.m1058boximpl(j10), messageId, null, d10, Boolean.valueOf(z11), IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, null);
+        return new MediaSource(str, str2, str3, num2, tag3, mediaType3, z10, ChannelId.m1060boximpl(j10), messageId, null, d10, Boolean.valueOf(z11), IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, null);
     }
 }

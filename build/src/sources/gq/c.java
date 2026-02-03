@@ -1,70 +1,32 @@
 package gq;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.io.File;
+import android.graphics.Typeface;
+import android.text.TextPaint;
+import android.text.style.MetricAffectingSpan;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import kotlin.jvm.internal.Intrinsics;
-import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<c> CREATOR = new a();
+final class c extends MetricAffectingSpan {
 
     /* renamed from: d  reason: collision with root package name */
-    private final File f27100d;
+    private final Typeface f27389d;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final c createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new c((File) parcel.readSerializable());
-        }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final c[] newArray(int i10) {
-            return new c[i10];
-        }
+    public c(Typeface typeface) {
+        Intrinsics.checkNotNullParameter(typeface, "typeface");
+        this.f27389d = typeface;
     }
 
-    public c(File data) {
-        Intrinsics.checkNotNullParameter(data, "data");
-        this.f27100d = data;
+    @Override // android.text.style.CharacterStyle
+    public void updateDrawState(TextPaint textPaint) {
+        Intrinsics.checkNotNullParameter(textPaint, "textPaint");
+        textPaint.setTypeface(this.f27389d);
+        textPaint.setFlags(textPaint.getFlags() | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
     }
 
-    public final File a() {
-        return this.f27100d;
-    }
-
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if ((obj instanceof c) && Intrinsics.areEqual(this.f27100d, ((c) obj).f27100d)) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        return this.f27100d.hashCode();
-    }
-
-    public String toString() {
-        File file = this.f27100d;
-        return "DocumentFile(data=" + file + ")";
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeSerializable(this.f27100d);
+    @Override // android.text.style.MetricAffectingSpan
+    public void updateMeasureState(TextPaint paint) {
+        Intrinsics.checkNotNullParameter(paint, "paint");
+        paint.setTypeface(this.f27389d);
+        paint.setFlags(paint.getFlags() | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
     }
 }

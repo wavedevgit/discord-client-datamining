@@ -6,16 +6,16 @@ import kotlin.reflect.jvm.internal.impl.name.FqName;
 class c implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final FqName f33674d;
+    private final FqName f33450d;
 
     public c(FqName fqName) {
-        this.f33674d = fqName;
+        this.f33450d = fqName;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         AnnotationDescriptor d10;
-        d10 = CompositeAnnotations.d(this.f33674d, (Annotations) obj);
+        d10 = CompositeAnnotations.d(this.f33450d, (Annotations) obj);
         return d10;
     }
 }

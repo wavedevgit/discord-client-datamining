@@ -1,7 +1,7 @@
 package com.facebook.react.fabric.interop;
 
 import com.facebook.react.common.annotations.UnstableReactNativeAPI;
-import ir.c;
+import jr.c;
 import kotlin.Metadata;
 import org.jetbrains.annotations.NotNull;
 @c

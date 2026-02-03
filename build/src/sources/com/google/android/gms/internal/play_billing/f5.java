@@ -8,18 +8,18 @@ public enum f5 implements s1 {
     
 
     /* renamed from: q  reason: collision with root package name */
-    private static final t1 f15236q = new t1() { // from class: com.google.android.gms.internal.play_billing.d5
+    private static final t1 f14865q = new t1() { // from class: com.google.android.gms.internal.play_billing.d5
     };
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f15238d;
+    private final int f14867d;
 
     f5(int i10) {
-        this.f15238d = i10;
+        this.f14867d = i10;
     }
 
     @Override // java.lang.Enum
     public final String toString() {
-        return Integer.toString(this.f15238d);
+        return Integer.toString(this.f14867d);
     }
 }

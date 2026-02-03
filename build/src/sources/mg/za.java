@@ -5,7 +5,7 @@ import ui.c;
 final class za implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final za f39049a = new za();
+    static final za f39029a = new za();
 
     static {
         c.b a10 = ui.c.a("detectorMode");

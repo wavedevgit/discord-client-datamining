@@ -1,49 +1,49 @@
 package ds;
 
-import ds.h;
-import java.lang.reflect.Member;
-import java.lang.reflect.Type;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.functions.Function4;
+import kotlin.jvm.functions.Function5;
+import kotlin.jvm.functions.Function6;
+import kotlin.jvm.functions.Function8;
+import kotlin.reflect.KCallable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class l implements h {
+public interface l extends Function0, Function1, xr.a, xr.b, xr.c, xr.d, xr.e, xr.f, xr.g, xr.h, xr.i, xr.j, Function2, xr.k, xr.l, xr.m, Function3, Function4, Function5, Function6, xr.n, Function8, xr.o, KCallable {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final l f22391a = new l();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static Object a(l lVar) {
+            return lVar.call(new Object[0]);
+        }
 
-    private l() {
-    }
+        public static Object b(l lVar, Object obj) {
+            return lVar.call(obj);
+        }
 
-    @Override // ds.h
-    public List a() {
-        return CollectionsKt.l();
-    }
+        public static Object c(l lVar, Object obj, Object obj2) {
+            return lVar.call(obj, obj2);
+        }
 
-    @Override // ds.h
-    public /* bridge */ /* synthetic */ Member b() {
-        return (Member) d();
-    }
+        public static Object d(l lVar, Object obj, Object obj2, Object obj3) {
+            return lVar.call(obj, obj2, obj3);
+        }
 
-    @Override // ds.h
-    public boolean c() {
-        return h.a.b(this);
-    }
+        public static Object e(l lVar, Object obj, Object obj2, Object obj3, Object obj4) {
+            return lVar.call(obj, obj2, obj3, obj4);
+        }
 
-    @Override // ds.h
-    public Object call(Object[] args) {
-        Intrinsics.checkNotNullParameter(args, "args");
-        throw new UnsupportedOperationException("call/callBy are not supported for this declaration.");
-    }
+        public static Object f(l lVar, Object obj, Object obj2, Object obj3, Object obj4, Object obj5) {
+            return lVar.call(obj, obj2, obj3, obj4, obj5);
+        }
 
-    public Void d() {
-        return null;
-    }
+        public static Object g(l lVar, Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6) {
+            return lVar.call(obj, obj2, obj3, obj4, obj5, obj6);
+        }
 
-    @Override // ds.h
-    public Type getReturnType() {
-        Class TYPE = Void.TYPE;
-        Intrinsics.checkNotNullExpressionValue(TYPE, "TYPE");
-        return TYPE;
+        public static Object h(l lVar, Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6, Object obj7, Object obj8) {
+            return lVar.call(obj, obj2, obj3, obj4, obj5, obj6, obj7, obj8);
+        }
     }
 }

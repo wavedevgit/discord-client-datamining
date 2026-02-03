@@ -6,8 +6,8 @@ import com.discord.codegen.NativeBrowserManagerModuleSpec;
 import com.facebook.react.bridge.BaseJavaModule;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
-import ir.v;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.o0;
@@ -51,14 +51,14 @@ public final class BrowserManagerModule extends NativeBrowserManagerModuleSpec {
     public static final Unit openInAppURL$lambda$1(Promise promise, Exception e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
         promise.reject(null, e10.getMessage(), e10, null);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit openInChromeURL$lambda$0(Promise promise, Exception e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
         promise.reject(null, e10.getMessage(), e10, null);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @NotNull

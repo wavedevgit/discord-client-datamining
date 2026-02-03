@@ -2,93 +2,69 @@ package ou;
 
 import java.util.List;
 import java.util.Map;
-import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
-import pu.a;
-import pv.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements ku.b, pu.a {
+public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f44795a = new c();
+    private final List f44864a;
 
-    private c() {
+    /* renamed from: b  reason: collision with root package name */
+    private final Map f44865b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final Object f44866c;
+
+    public c(List operationData, Map mappingOperation, Object obj) {
+        Intrinsics.checkNotNullParameter(operationData, "operationData");
+        Intrinsics.checkNotNullParameter(mappingOperation, "mappingOperation");
+        this.f44864a = operationData;
+        this.f44865b = mappingOperation;
+        this.f44866c = obj;
     }
 
-    private final Object a(List list, Object obj, Object obj2) {
-        List list2;
-        if (!list.isEmpty()) {
-            obj2 = b(obj2, list);
-        }
-        if (d(obj2, obj)) {
-            obj2 = null;
-            if (obj instanceof List) {
-                list2 = (List) obj;
-            } else {
-                list2 = null;
-            }
-            if (list2 != null) {
-                return pv.c.b(list2);
-            }
-        }
-        return obj2;
+    public final Map a() {
+        return this.f44865b;
     }
 
-    private final Object b(Object obj, List list) {
-        Map map;
-        if (obj instanceof List) {
-            if (list.size() == 1) {
-                return ((List) obj).get(d.b((String) CollectionsKt.o0(list)));
-            }
-            return c(list, (List) obj);
-        }
-        if (obj instanceof Map) {
-            obj = ((Map) obj).get(CollectionsKt.o0(list));
-            for (String str : CollectionsKt.f0(list, 1)) {
-                if (obj instanceof Map) {
-                    map = (Map) obj;
-                } else {
-                    map = null;
-                }
-                if (map != null) {
-                    obj = map.get(str);
-                } else {
-                    obj = null;
-                }
-            }
-        }
-        return obj;
+    public final List b() {
+        return this.f44864a;
     }
 
-    private final Object c(List list, List list2) {
-        String str = (String) CollectionsKt.firstOrNull(list);
-        if (str != null) {
-            Object q02 = CollectionsKt.q0(list2, d.b(str));
-            if (q02 instanceof List) {
-                return f44795a.c(list.subList(1, list.size()), (List) q02);
-            }
-            return CollectionsKt.q0(list2, d.b(str));
-        }
-        return null;
+    public final Object c() {
+        return this.f44866c;
     }
 
-    private final boolean d(Object obj, Object obj2) {
-        if ((Intrinsics.areEqual(obj, obj2) || obj == null) && (obj2 instanceof List) && ((List) obj2).size() > 1) {
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof c)) {
+            return false;
+        }
+        c cVar = (c) obj;
+        if (Intrinsics.areEqual(this.f44864a, cVar.f44864a) && Intrinsics.areEqual(this.f44865b, cVar.f44865b) && Intrinsics.areEqual(this.f44866c, cVar.f44866c)) {
             return true;
         }
         return false;
     }
 
-    public List e(Object obj) {
-        return a.C0558a.b(this, obj);
+    public int hashCode() {
+        int hashCode;
+        int hashCode2 = ((this.f44864a.hashCode() * 31) + this.f44865b.hashCode()) * 31;
+        Object obj = this.f44866c;
+        if (obj == null) {
+            hashCode = 0;
+        } else {
+            hashCode = obj.hashCode();
+        }
+        return hashCode2 + hashCode;
     }
 
-    @Override // ku.b
-    public Object f(Object obj, Object obj2) {
-        List e10 = e(pv.a.c(obj));
-        if (e10 != null) {
-            return a(e10, obj, obj2);
-        }
-        return null;
+    public String toString() {
+        List list = this.f44864a;
+        Map map = this.f44865b;
+        Object obj = this.f44866c;
+        return "OccurrenceCheckInputData(operationData=" + list + ", mappingOperation=" + map + ", operationDefault=" + obj + ")";
     }
 }

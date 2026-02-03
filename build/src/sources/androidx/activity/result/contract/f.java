@@ -3,10 +3,10 @@ package androidx.activity.result.contract;
 import android.content.Context;
 import android.content.Intent;
 import androidx.activity.result.contract.ActivityResultContract;
-import ir.v;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import jr.v;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.i;
@@ -17,7 +17,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f extends ActivityResultContract {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f890a = new a(null);
+    public static final a f934a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -41,7 +41,7 @@ public final class f extends ActivityResultContract {
     public Intent createIntent(Context context, String[] input) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(input, "input");
-        return f890a.a(input);
+        return f934a.a(input);
     }
 
     @Override // androidx.activity.result.contract.ActivityResultContract

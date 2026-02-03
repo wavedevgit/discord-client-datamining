@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22077: for (var _fun22077_ip = 0;;) switch (_fun22077_ip) {
+    _fun22094: for (var _fun22094_ip = 0;;) switch (_fun22094_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun22077_ip = 75;
-                continue _fun22077
+                _fun22094_ip = 75;
+                continue _fun22094
             }
         case 63:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun22077_ip = 84;
-                continue _fun22077
+                _fun22094_ip = 84;
+                continue _fun22094
             }
         case 75:
             var2 = {};
@@ -38,10 +38,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var5 = {
-                'full': 'EEEE, d MMMM yyyy',
-                'long': 'd MMMM yyyy',
-                'medium': 'd MMM yyyy',
-                'short': 'dd.MM.yyyy'
+                'full': "y 'm'. MMMM d 'd'., EEEE",
+                'long': "y 'm'. MMMM d 'd'.",
+                'medium': 'y-MM-dd',
+                'short': 'y-MM-dd'
             };
             var4.formats = var5;
             var5 = 'full';
@@ -63,10 +63,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var3.default;
             var3 = {};
             var6 = {
-                'full': "{{date}} 'la' {{time}}",
-                'long': "{{date}} 'la' {{time}}",
-                'medium': '{{date}}, {{time}}',
-                'short': '{{date}}, {{time}}'
+                'full': '{{date}} {{time}}',
+                'long': '{{date}} {{time}}',
+                'medium': '{{date}} {{time}}',
+                'short': '{{date}} {{time}}'
             };
             var3.formats = var6;
             var3.defaultWidth = var5;

@@ -1,31 +1,31 @@
 package cp;
-
-import okhttp3.Interceptor;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class g implements tq.d {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final f f20993a;
+public abstract class g {
 
     /* renamed from: b  reason: collision with root package name */
-    private final tq.h f20994b;
+    public static int f20667b = 0;
 
-    public g(f fVar, tq.h hVar) {
-        this.f20993a = fVar;
-        this.f20994b = hVar;
-    }
+    /* renamed from: c  reason: collision with root package name */
+    public static int f20668c = 1;
 
-    public static g a(f fVar, tq.h hVar) {
-        return new g(fVar, hVar);
-    }
+    /* renamed from: d  reason: collision with root package name */
+    public static int f20669d = 2;
 
-    public static Interceptor c(f fVar, c cVar) {
-        return (Interceptor) tq.g.d(fVar.b(cVar));
-    }
+    /* renamed from: f  reason: collision with root package name */
+    public static int f20671f = 0;
 
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public Interceptor get() {
-        return c(this.f20993a, (c) this.f20994b.get());
-    }
+    /* renamed from: g  reason: collision with root package name */
+    public static int f20672g = 1;
+
+    /* renamed from: i  reason: collision with root package name */
+    public static int f20674i = 25;
+
+    /* renamed from: a  reason: collision with root package name */
+    public static int[] f20666a = {2130969649, 2130969657, 2130969658};
+
+    /* renamed from: e  reason: collision with root package name */
+    public static int[] f20670e = {2130969650, 2130969653};
+
+    /* renamed from: h  reason: collision with root package name */
+    public static int[] f20673h = {2130969440, 2130969568, 2130969617, 2130969618, 2130969619, 2130969620, 2130969621, 2130969622, 2130969623, 2130969624, 2130969625, 2130969626, 2130969627, 2130969628, 2130969629, 2130969630, 2130969631, 2130969632, 2130969633, 2130969634, 2130969635, 2130969636, 2130969637, 2130969638, 2130969639, 2130969640, 2130969641, 2130969642, 2130969643, 2130969644, 2130969645};
 }

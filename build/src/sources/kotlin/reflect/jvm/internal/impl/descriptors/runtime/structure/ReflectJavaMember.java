@@ -32,7 +32,7 @@ public abstract class ReflectJavaMember extends ReflectJavaElement implements Re
         Intrinsics.checkNotNullParameter(parameterTypes, "parameterTypes");
         Intrinsics.checkNotNullParameter(parameterAnnotations, "parameterAnnotations");
         ArrayList arrayList = new ArrayList(parameterTypes.length);
-        List b10 = Java8ParameterNamesLoader.f33915a.b(getMember());
+        List b10 = Java8ParameterNamesLoader.f33691a.b(getMember());
         if (b10 != null) {
             i10 = b10.size() - parameterTypes.length;
         } else {

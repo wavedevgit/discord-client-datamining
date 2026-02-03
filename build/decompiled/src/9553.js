@@ -1,26 +1,64 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = dependencyMap;
+    var3 = require;
+    var2 = exports;
+    var4 = dependencyMap;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var1);
     var0 = 0;
-    var2 = var1[var0];
-    var1 = require;
+    var1 = var4[var0];
     var0 = undefined;
-    var3 = var1.bind(var0)(var2);
-    var2 = var3.registerAsset;
-    var1 = {
-        '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/media_keyboard/native/images',
-        'width': 173.5,
-        'height': 80,
-        'scales': null,
-        'hash': 'bef971c8357e3a1bbe631b70aec03333',
-        'name': 'empty_permission',
-        'type': 'png'
-    };
-    var4 = [2, 3];
-    var1.scales = var4;
-    var2 = var2.bind(var3)(var1);
-    var1 = module;
-    var1.exports = var2;
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.isKnownType;
+    var2.isKnownType = var1;
+    var1 = 1;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.keepLocalCopy;
+    var2.keepLocalCopy = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.types;
+    var2.types = var1;
+    var1 = 3;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.errorCodes;
+    var2.errorCodes = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.isErrorWithCode;
+    var2.isErrorWithCode = var1;
+    var1 = 4;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.pickDirectory;
+    var2.pickDirectory = var1;
+    var1 = 5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.pick;
+    var2.pick = var1;
+    var1 = 6;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.saveDocuments;
+    var2.saveDocuments = var1;
+    var1 = 7;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.releaseLongTermAccess;
+    var2.releaseLongTermAccess = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.releaseSecureAccess;
+    var2.releaseSecureAccess = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9554, 9556, 9557, 9558, 9559, 9560, 9562, 9563]);

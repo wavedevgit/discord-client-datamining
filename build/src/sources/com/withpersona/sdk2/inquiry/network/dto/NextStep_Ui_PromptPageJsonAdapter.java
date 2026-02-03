@@ -49,9 +49,9 @@ public final class NextStep_Ui_PromptPageJsonAdapter extends h {
         String str6 = null;
         String str7 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -86,19 +86,19 @@ public final class NextStep_Ui_PromptPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (promptPage != null) {
             writer.l();
-            writer.A0("gpsPermissionsBtnCancel");
+            writer.t0("gpsPermissionsBtnCancel");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsPermissionsBtnCancel());
-            writer.A0("gpsPermissionsBtnContinueMobile");
+            writer.t0("gpsPermissionsBtnContinueMobile");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsPermissionsAllowButtonText());
-            writer.A0("gpsDeviceFeatureBtnContinueMobile");
+            writer.t0("gpsDeviceFeatureBtnContinueMobile");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsFeatureTurnOnText());
-            writer.A0("gpsPermissionsPrompt");
+            writer.t0("gpsPermissionsPrompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsPermissionsPrompt());
-            writer.A0("gpsPermissionsTitle");
+            writer.t0("gpsPermissionsTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsPermissionsTitle());
-            writer.A0("gpsFeaturePrompt");
+            writer.t0("gpsFeaturePrompt");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsFeaturePrompt());
-            writer.A0("gpsFeatureTitle");
+            writer.t0("gpsFeatureTitle");
             this.nullableStringAdapter.toJson(writer, promptPage.getGpsFeatureTitle());
             writer.E();
             return;

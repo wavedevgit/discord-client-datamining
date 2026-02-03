@@ -40,7 +40,7 @@ public final class AFf1hSDK {
         Intrinsics.checkNotNullParameter(aFf1iSDK, "");
         this.getRevenue = aFc1pSDK;
         this.getCurrencyIso4217Code = aFf1iSDK;
-        this.getMediationNetwork = ir.l.b(new Function0<Boolean>() { // from class: com.appsflyer.internal.AFf1hSDK.2
+        this.getMediationNetwork = jr.l.b(new Function0<Boolean>() { // from class: com.appsflyer.internal.AFf1hSDK.2
             {
                 super(0);
             }
@@ -52,7 +52,7 @@ public final class AFf1hSDK {
                 return Boolean.valueOf(Boolean.parseBoolean(AFf1hSDK.this.getRevenue.getMonetizationNetwork("com.appsflyer.rc.sandbox")));
             }
         });
-        this.getMonetizationNetwork = ir.l.b(new Function0<Boolean>() { // from class: com.appsflyer.internal.AFf1hSDK.1
+        this.getMonetizationNetwork = jr.l.b(new Function0<Boolean>() { // from class: com.appsflyer.internal.AFf1hSDK.1
             {
                 super(0);
             }
@@ -79,10 +79,10 @@ public final class AFf1hSDK {
         String monetizationNetwork = this.getRevenue.getMonetizationNetwork("com.appsflyer.rc.cache.max-age-fallback");
         if (monetizationNetwork != null) {
             try {
-                Result.a aVar = Result.f33295e;
+                Result.a aVar = Result.f33071e;
                 b10 = Result.b(Long.valueOf(Long.parseLong(monetizationNetwork)));
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f33295e;
+                Result.a aVar2 = Result.f33071e;
                 b10 = Result.b(kotlin.c.a(th2));
             }
             Throwable e10 = Result.e(b10);

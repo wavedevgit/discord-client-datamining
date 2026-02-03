@@ -20,7 +20,7 @@ import x8.b;
 public class WebpBitmapFactoryImpl implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static a f12497a;
+    private static a f12126a;
 
     private static byte[] c(InputStream inputStream, BitmapFactory.Options options) {
         byte[] bArr;
@@ -43,7 +43,7 @@ public class WebpBitmapFactoryImpl implements b {
         if (options != null && (bitmap = options.inBitmap) != null && bitmap.isMutable()) {
             return options.inBitmap;
         }
-        return f12497a.a(i10, i11, Bitmap.Config.ARGB_8888);
+        return f12126a.a(i10, i11, Bitmap.Config.ARGB_8888);
     }
 
     private static void d(String str) {
@@ -263,7 +263,7 @@ public class WebpBitmapFactoryImpl implements b {
 
     @Override // x8.b
     public void a(a aVar) {
-        f12497a = aVar;
+        f12126a = aVar;
     }
 
     @Override // x8.b

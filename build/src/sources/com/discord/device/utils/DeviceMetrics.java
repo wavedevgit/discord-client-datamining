@@ -23,7 +23,7 @@ public final class DeviceMetrics {
             return null;
         }
         try {
-            return new MetricsSize(i4.a.f28378a.a().a(activity));
+            return new MetricsSize(i4.a.f28025a.a().a(activity));
         } catch (Exception unused) {
             return null;
         }
@@ -34,11 +34,11 @@ public final class DeviceMetrics {
             return null;
         }
         try {
-            WindowMetrics a10 = i4.a.f28378a.a().a(activity);
+            WindowMetrics a10 = i4.a.f28025a.a().a(activity);
             if (Build.VERSION.SDK_INT >= 34) {
                 Insets g10 = a10.b().g(WindowInsetsCompat.p.h() | WindowInsetsCompat.p.b());
                 Intrinsics.checkNotNullExpressionValue(g10, "getInsetsIgnoringVisibility(...)");
-                return new MetricsSize((a10.a().width() - g10.f3150a) - g10.f3152c, (a10.a().height() - g10.f3151b) - g10.f3153d);
+                return new MetricsSize((a10.a().width() - g10.f3194a) - g10.f3196c, (a10.a().height() - g10.f3195b) - g10.f3197d);
             }
         } catch (Exception unused) {
         }

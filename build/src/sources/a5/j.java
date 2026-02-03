@@ -4,9 +4,9 @@ import a5.h;
 import android.net.Uri;
 import android.webkit.MimeTypeMap;
 import g5.m;
-import iu.x;
 import java.io.IOException;
 import java.util.Map;
+import ju.x;
 import kotlin.Lazy;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -183,7 +183,7 @@ public final class j implements h {
             r0.<init>(r6)
         L18:
             java.lang.Object r6 = r0.f409d
-            java.lang.Object r1 = or.b.f()
+            java.lang.Object r1 = pr.b.f()
             int r2 = r0.f411i
             r3 = 1
             if (r2 == 0) goto L31
@@ -252,7 +252,7 @@ public final class j implements h {
         return h10;
     }
 
-    private final iu.h e() {
+    private final ju.h e() {
         Object value = this.f404d.getValue();
         Intrinsics.checkNotNull(value);
         return ((y4.a) value).getFileSystem();
@@ -260,7 +260,7 @@ public final class j implements h {
 
     private final boolean g(Request request, Response response) {
         if (this.f402b.i().e()) {
-            if (!this.f405e || f5.d.f24374c.c(request, response)) {
+            if (!this.f405e || f5.d.f23585c.c(request, response)) {
                 return true;
             }
             return false;
@@ -278,10 +278,10 @@ public final class j implements h {
         boolean d10 = this.f402b.i().d();
         boolean d11 = this.f402b.k().d();
         if (!d11 && d10) {
-            f10.c(CacheControl.f44006p);
+            f10.c(CacheControl.f44134p);
         } else if (d11 && !d10) {
             if (this.f402b.i().e()) {
-                f10.c(CacheControl.f44005o);
+                f10.c(CacheControl.f44133o);
             } else {
                 f10.c(f399g);
             }
@@ -321,10 +321,10 @@ public final class j implements h {
     }
 
     private final x4.h k(Response response) {
-        if (response.J0() != null) {
-            return x4.h.f53185o;
+        if (response.K0() != null) {
+            return x4.h.f53393o;
         }
-        return x4.h.f53184i;
+        return x4.h.f53392i;
     }
 
     private final r l(ResponseBody responseBody) {
@@ -361,11 +361,11 @@ public final class j implements h {
             }
             try {
                 if (response.L() == 304 && cVar2 != null) {
-                    Response c10 = response.M0().k(f5.d.f24374c.a(cVar2.h(), response.E0())).c();
+                    Response c10 = response.L0().k(f5.d.f23585c.a(cVar2.h(), response.F0())).c();
                     BufferedSink c11 = x.c(e().p(bVar.getMetadata(), false));
                     try {
                         new f5.c(c10).k(c11);
-                        Unit unit = Unit.f33298a;
+                        Unit unit = Unit.f33074a;
                         if (c11 != null) {
                             try {
                                 c11.close();
@@ -379,7 +379,7 @@ public final class j implements h {
                             try {
                                 c11.close();
                             } catch (Throwable th6) {
-                                ir.e.a(th3, th6);
+                                jr.e.a(th3, th6);
                             }
                         }
                     }
@@ -390,7 +390,7 @@ public final class j implements h {
                     BufferedSink c12 = x.c(e().p(bVar.getMetadata(), false));
                     try {
                         new f5.c(response).k(c12);
-                        Unit unit2 = Unit.f33298a;
+                        Unit unit2 = Unit.f33074a;
                         if (c12 != null) {
                             try {
                                 c12.close();
@@ -404,7 +404,7 @@ public final class j implements h {
                             try {
                                 c12.close();
                             } catch (Throwable th9) {
-                                ir.e.a(th8, th9);
+                                jr.e.a(th8, th9);
                             }
                         }
                         th2 = th8;
@@ -428,7 +428,7 @@ public final class j implements h {
                                 try {
                                     c13.close();
                                 } catch (Throwable th12) {
-                                    ir.e.a(th3, th12);
+                                    jr.e.a(th3, th12);
                                 }
                             }
                         }

@@ -3,14 +3,14 @@ package b2;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Object f7147a;
+    public final Object f6198a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Object f7148b;
+    public final Object f6199b;
 
     public c(Object obj, Object obj2) {
-        this.f7147a = obj;
-        this.f7148b = obj2;
+        this.f6198a = obj;
+        this.f6199b = obj2;
     }
 
     public boolean equals(Object obj) {
@@ -18,7 +18,7 @@ public class c {
             return false;
         }
         c cVar = (c) obj;
-        if (!b.a(cVar.f7147a, this.f7147a) || !b.a(cVar.f7148b, this.f7148b)) {
+        if (!b.a(cVar.f6198a, this.f6198a) || !b.a(cVar.f6199b, this.f6199b)) {
             return false;
         }
         return true;
@@ -26,14 +26,14 @@ public class c {
 
     public int hashCode() {
         int hashCode;
-        Object obj = this.f7147a;
+        Object obj = this.f6198a;
         int i10 = 0;
         if (obj == null) {
             hashCode = 0;
         } else {
             hashCode = obj.hashCode();
         }
-        Object obj2 = this.f7148b;
+        Object obj2 = this.f6199b;
         if (obj2 != null) {
             i10 = obj2.hashCode();
         }
@@ -41,6 +41,6 @@ public class c {
     }
 
     public String toString() {
-        return "Pair{" + this.f7147a + " " + this.f7148b + "}";
+        return "Pair{" + this.f6198a + " " + this.f6199b + "}";
     }
 }

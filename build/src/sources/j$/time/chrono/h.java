@@ -3,17 +3,17 @@ package j$.time.chrono;
 public abstract /* synthetic */ class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int[] f31554a;
+    public static final /* synthetic */ int[] f31292a;
 
     static {
         int[] iArr = new int[j$.time.temporal.a.values().length];
-        f31554a = iArr;
+        f31292a = iArr;
         try {
             iArr[j$.time.temporal.a.INSTANT_SECONDS.ordinal()] = 1;
         } catch (NoSuchFieldError unused) {
         }
         try {
-            f31554a[j$.time.temporal.a.OFFSET_SECONDS.ordinal()] = 2;
+            f31292a[j$.time.temporal.a.OFFSET_SECONDS.ordinal()] = 2;
         } catch (NoSuchFieldError unused2) {
         }
     }

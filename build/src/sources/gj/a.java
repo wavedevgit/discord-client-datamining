@@ -11,23 +11,23 @@ import yi.c;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f26971a;
+    private final Context f27066a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final SharedPreferences f26972b;
+    private final SharedPreferences f27067b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f26973c;
+    private final c f27068c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f26974d;
+    private boolean f27069d;
 
     public a(Context context, String str, c cVar) {
         Context a10 = a(context);
-        this.f26971a = a10;
-        this.f26972b = a10.getSharedPreferences("com.google.firebase.common.prefs:" + str, 0);
-        this.f26973c = cVar;
-        this.f26974d = c();
+        this.f27066a = a10;
+        this.f27067b = a10.getSharedPreferences("com.google.firebase.common.prefs:" + str, 0);
+        this.f27068c = cVar;
+        this.f27069d = c();
     }
 
     private static Context a(Context context) {
@@ -35,8 +35,8 @@ public class a {
     }
 
     private boolean c() {
-        if (this.f26972b.contains("firebase_data_collection_default_enabled")) {
-            return this.f26972b.getBoolean("firebase_data_collection_default_enabled", true);
+        if (this.f27067b.contains("firebase_data_collection_default_enabled")) {
+            return this.f27067b.getBoolean("firebase_data_collection_default_enabled", true);
         }
         return d();
     }
@@ -45,8 +45,8 @@ public class a {
         ApplicationInfo applicationInfo;
         Bundle bundle;
         try {
-            PackageManager packageManager = this.f26971a.getPackageManager();
-            if (packageManager != null && (applicationInfo = packageManager.getApplicationInfo(this.f26971a.getPackageName(), IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT)) != null && (bundle = applicationInfo.metaData) != null && bundle.containsKey("firebase_data_collection_default_enabled")) {
+            PackageManager packageManager = this.f27066a.getPackageManager();
+            if (packageManager != null && (applicationInfo = packageManager.getApplicationInfo(this.f27066a.getPackageName(), IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT)) != null && (bundle = applicationInfo.metaData) != null && bundle.containsKey("firebase_data_collection_default_enabled")) {
                 return applicationInfo.metaData.getBoolean("firebase_data_collection_default_enabled");
             }
             return true;
@@ -56,6 +56,6 @@ public class a {
     }
 
     public synchronized boolean b() {
-        return this.f26974d;
+        return this.f27069d;
     }
 }

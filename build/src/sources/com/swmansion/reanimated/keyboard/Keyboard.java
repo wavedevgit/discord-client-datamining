@@ -55,11 +55,11 @@ public class Keyboard {
 
     public void updateHeight(WindowInsetsCompat windowInsetsCompat, boolean z10) {
         int i10;
-        int i11 = windowInsetsCompat.f(CONTENT_TYPE_MASK).f3153d;
+        int i11 = windowInsetsCompat.f(CONTENT_TYPE_MASK).f3197d;
         if (z10) {
             i10 = 0;
         } else {
-            i10 = windowInsetsCompat.f(SYSTEM_BAR_TYPE_MASK).f3153d;
+            i10 = windowInsetsCompat.f(SYSTEM_BAR_TYPE_MASK).f3197d;
         }
         int dIPFromPixel = (int) PixelUtil.toDIPFromPixel(Math.max(0, i11 - i10));
         if (dIPFromPixel <= 0 && this.mState == KeyboardState.OPEN) {

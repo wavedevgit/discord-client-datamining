@@ -1,12 +1,18 @@
 package ls;
-/* JADX INFO: Access modifiers changed from: package-private */
+
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class n extends p {
+final class n extends ms.a0 {
+    public n(CoroutineContext coroutineContext, Continuation continuation) {
+        super(coroutineContext, continuation);
+    }
 
-    /* renamed from: o  reason: collision with root package name */
-    public final int f37479o;
-
-    public n(int i10) {
-        this.f37479o = i10;
+    @Override // kotlinx.coroutines.b0
+    public boolean O(Throwable th2) {
+        if (th2 instanceof k) {
+            return true;
+        }
+        return H(th2);
     }
 }

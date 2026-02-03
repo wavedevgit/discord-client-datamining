@@ -6,26 +6,26 @@ import androidx.fragment.app.FragmentActivity;
 public class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f25099a;
+    private final Object f24310a;
 
     public f(Activity activity) {
         gf.q.m(activity, "Activity must not be null");
-        this.f25099a = activity;
+        this.f24310a = activity;
     }
 
     public final Activity a() {
-        return (Activity) this.f25099a;
+        return (Activity) this.f24310a;
     }
 
     public final FragmentActivity b() {
-        return (FragmentActivity) this.f25099a;
+        return (FragmentActivity) this.f24310a;
     }
 
     public final boolean c() {
-        return this.f25099a instanceof Activity;
+        return this.f24310a instanceof Activity;
     }
 
     public final boolean d() {
-        return this.f25099a instanceof FragmentActivity;
+        return this.f24310a instanceof FragmentActivity;
     }
 }

@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/ProfileEffectSampleV2.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56663: for (var _fun56663_ip = 0;;) switch (_fun56663_ip) {
+        _fun56769: for (var _fun56769_ip = 0;;) switch (_fun56769_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.item;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var7;
                 if (!var6) {
-                    _fun56663_ip = 130;
-                    continue _fun56663
+                    _fun56769_ip = 130;
+                    continue _fun56769
                 }
             case 124:
                 var6 = var12.purchasedProfileEffect;
@@ -127,13 +127,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot4;
                 var4 = {};
                 if (var11) {
-                    _fun56663_ip = 159;
-                    continue _fun56663
+                    _fun56769_ip = 159;
+                    continue _fun56769
                 }
             case 151:
                 var13 = var12.profileSkeletonBackground;
-                _fun56663_ip = 165;
-                continue _fun56663;
+                _fun56769_ip = 165;
+                continue _fun56769;
             case 159:
                 var13 = var12.profileSkeletonBackgroundBundle;
             case 165:
@@ -143,14 +143,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = _closure1_slot1;
                 var14 = _closure1_slot2;
                 if (var9) {
-                    _fun56663_ip = 197;
-                    continue _fun56663
+                    _fun56769_ip = 197;
+                    continue _fun56769
                 }
             case 188:
                 var9 = 6;
                 var9 = var14[var9];
-                _fun56663_ip = 204;
-                continue _fun56663;
+                _fun56769_ip = 204;
+                continue _fun56769;
             case 197:
                 var13 = 5;
                 var9 = var14[var13];
@@ -191,15 +191,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var13.bind(var3)(var12);
                 var18 = var19.hexWithOpacity;
                 if (var11) {
-                    _fun56663_ip = 385;
-                    continue _fun56663
+                    _fun56769_ip = 385;
+                    continue _fun56769
                 }
             case 362:
                 var12 = 0.35;
                 var12 = var18.bind(var19)(var17, var12);
                 var12 = var14.bind(var15)(var12);
-                _fun56663_ip = 406;
-                continue _fun56663;
+                _fun56769_ip = 406;
+                continue _fun56769;
             case 385:
                 var13 = 0.75;
                 var13 = var18.bind(var19)(var17, var13);
@@ -215,15 +215,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var15.bind(var3)(var12);
                 var15 = var16.hexWithOpacity;
                 if (var11) {
-                    _fun56663_ip = 474;
-                    continue _fun56663
+                    _fun56769_ip = 474;
+                    continue _fun56769
                 }
             case 451:
                 var11 = 0.7;
                 var11 = var15.bind(var16)(var17, var11);
                 var11 = var13.bind(var14)(var11);
-                _fun56663_ip = 488;
-                continue _fun56663;
+                _fun56769_ip = 488;
+                continue _fun56769;
             case 474:
                 var12 = 1;
                 var12 = var15.bind(var16)(var17, var12);
@@ -267,4 +267,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 3112, 6863, 6864, 4059, 3201, 6865, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 3142, 6894, 6895, 4089, 3231, 6896, 2]);

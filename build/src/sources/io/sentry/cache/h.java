@@ -8,14 +8,14 @@ import java.util.Map;
 public final class h implements q0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k7 f29816a;
+    private final k7 f29382a;
 
     public h(k7 k7Var) {
-        this.f29816a = k7Var;
+        this.f29382a = k7Var;
     }
 
     private void a(String str) {
-        d.a(this.f29816a, ".options-cache", str);
+        d.a(this.f29382a, ".options-cache", str);
     }
 
     public static Object b(k7 k7Var, String str, Class cls) {
@@ -27,7 +27,7 @@ public final class h implements q0 {
     }
 
     private void k(Object obj, String str) {
-        d.d(this.f29816a, obj, ".options-cache", str);
+        d.d(this.f29382a, obj, ".options-cache", str);
     }
 
     @Override // io.sentry.q0

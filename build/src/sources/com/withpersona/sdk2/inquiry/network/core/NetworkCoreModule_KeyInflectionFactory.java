@@ -1,8 +1,8 @@
 package com.withpersona.sdk2.inquiry.network.core;
 
-import tq.g;
+import uq.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class NetworkCoreModule_KeyInflectionFactory implements tq.d {
+public final class NetworkCoreModule_KeyInflectionFactory implements uq.d {
     private final NetworkCoreModule module;
 
     public NetworkCoreModule_KeyInflectionFactory(NetworkCoreModule networkCoreModule) {

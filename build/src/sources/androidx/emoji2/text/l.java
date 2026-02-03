@@ -10,37 +10,37 @@ abstract class l {
     private static class a implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ByteBuffer f4004a;
+        private final ByteBuffer f4048a;
 
         a(ByteBuffer byteBuffer) {
-            this.f4004a = byteBuffer;
+            this.f4048a = byteBuffer;
             byteBuffer.order(ByteOrder.BIG_ENDIAN);
         }
 
         @Override // androidx.emoji2.text.l.c
         public void a(int i10) {
-            ByteBuffer byteBuffer = this.f4004a;
+            ByteBuffer byteBuffer = this.f4048a;
             byteBuffer.position(byteBuffer.position() + i10);
         }
 
         @Override // androidx.emoji2.text.l.c
         public int b() {
-            return this.f4004a.getInt();
+            return this.f4048a.getInt();
         }
 
         @Override // androidx.emoji2.text.l.c
         public long c() {
-            return l.c(this.f4004a.getInt());
+            return l.c(this.f4048a.getInt());
         }
 
         @Override // androidx.emoji2.text.l.c
         public long getPosition() {
-            return this.f4004a.position();
+            return this.f4048a.position();
         }
 
         @Override // androidx.emoji2.text.l.c
         public int readUnsignedShort() {
-            return l.d(this.f4004a.getShort());
+            return l.d(this.f4048a.getShort());
         }
     }
 
@@ -49,18 +49,18 @@ abstract class l {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final long f4005a;
+        private final long f4049a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final long f4006b;
+        private final long f4050b;
 
         b(long j10, long j11) {
-            this.f4005a = j10;
-            this.f4006b = j11;
+            this.f4049a = j10;
+            this.f4050b = j11;
         }
 
         long a() {
-            return this.f4005a;
+            return this.f4049a;
         }
     }
 

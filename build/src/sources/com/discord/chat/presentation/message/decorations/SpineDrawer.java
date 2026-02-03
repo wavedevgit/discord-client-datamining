@@ -10,7 +10,7 @@ import com.discord.channel_spine.ChannelSpineView;
 import com.discord.chat.R;
 import com.discord.chat.presentation.message.decorations.SpineDrawer;
 import com.discord.theme.ThemeManagerKt;
-import ir.l;
+import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;

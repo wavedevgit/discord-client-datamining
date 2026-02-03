@@ -12,20 +12,51 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var6)(var2, var0, var1);
     var1 = {};
-    var6 = 'RNSVGSvgView';
+    var6 = 'RNSVGMarker';
     var1.uiViewClassName = var6;
     var4 = {
-        'bbWidth': true,
-        'bbHeight': true,
+        'name': true,
+        'opacity': true,
+        'matrix': true,
+        'mask': true,
+        'markerStart': true,
+        'markerMid': true,
+        'markerEnd': true,
+        'clipPath': true,
+        'clipRule': true,
+        'responsible': true,
+        'display': true,
+        'pointerEvents': true,
+        'color': null,
+        'fill': true,
+        'fillOpacity': true,
+        'fillRule': true,
+        'stroke': true,
+        'strokeOpacity': true,
+        'strokeWidth': true,
+        'strokeLinecap': true,
+        'strokeLinejoin': true,
+        'strokeDasharray': true,
+        'strokeDashoffset': true,
+        'strokeMiterlimit': true,
+        'vectorEffect': true,
+        'propList': true,
+        'filter': true,
+        'fontSize': true,
+        'fontWeight': true,
+        'font': true,
+        'refX': true,
+        'refY': true,
+        'markerHeight': true,
+        'markerWidth': true,
+        'markerUnits': true,
+        'orient': true,
         'minX': true,
         'minY': true,
         'vbWidth': true,
         'vbHeight': true,
         'align': true,
-        'meetOrSlice': true,
-        'color': null,
-        'pointerEvents': true,
-        'hitSlop': true
+        'meetOrSlice': true
     };
     var8 = {};
     var0 = 0;

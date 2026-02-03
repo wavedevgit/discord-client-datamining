@@ -111,9 +111,9 @@ public final class StepStyles_UiStepStyleJsonAdapter extends h {
         StepStyles.StepPaddingStyle stepPaddingStyle = null;
         StepStyles.StepBorderRadiusStyle stepBorderRadiusStyle = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -163,29 +163,29 @@ public final class StepStyles_UiStepStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (uiStepStyle != null) {
             writer.l();
-            writer.A0("textColor");
+            writer.t0("textColor");
             this.nullableHeaderButtonColorStyleAdapter.toJson(writer, uiStepStyle.getHeaderButtonColor());
-            writer.A0(ViewProps.BACKGROUND_COLOR);
+            writer.t0(ViewProps.BACKGROUND_COLOR);
             this.nullableStepBackgroundColorStyleAdapter.toJson(writer, uiStepStyle.getBackgroundColor());
-            writer.A0("backgroundImage");
+            writer.t0("backgroundImage");
             this.nullableStepBackgroundImageStyleAdapter.toJson(writer, uiStepStyle.getBackgroundImage());
-            writer.A0("titleStyle");
+            writer.t0("titleStyle");
             this.nullableUiStepTitleComponentStyleAdapter.toJson(writer, uiStepStyle.getTitleStyle());
-            writer.A0("textStyle");
+            writer.t0("textStyle");
             this.nullableUiStepTextBasedComponentStyleAdapter.toJson(writer, uiStepStyle.getTextStyle());
-            writer.A0("buttonPrimaryStyle");
+            writer.t0("buttonPrimaryStyle");
             this.nullableStepPrimaryButtonComponentStyleAdapter.toJson(writer, uiStepStyle.getButtonPrimaryStyle());
-            writer.A0("buttonSecondaryStyle");
+            writer.t0("buttonSecondaryStyle");
             this.nullableStepSecondaryButtonComponentStyleAdapter.toJson(writer, uiStepStyle.getButtonSecondaryStyle());
-            writer.A0("strokeColor");
+            writer.t0("strokeColor");
             this.nullableUiStepStrokeColorAdapter.toJson(writer, uiStepStyle.getStrokeColor());
-            writer.A0("fillColor");
+            writer.t0("fillColor");
             this.nullableUiStepFillColorAdapter.toJson(writer, uiStepStyle.getFillColor());
-            writer.A0("alignment");
+            writer.t0("alignment");
             this.nullableUiStepAlignmentAdapter.toJson(writer, uiStepStyle.getAlignment());
-            writer.A0(ViewProps.PADDING);
+            writer.t0(ViewProps.PADDING);
             this.nullableStepPaddingStyleAdapter.toJson(writer, uiStepStyle.getPadding());
-            writer.A0("borderRadius");
+            writer.t0("borderRadius");
             this.nullableStepBorderRadiusStyleAdapter.toJson(writer, uiStepStyle.getBorderRadius());
             writer.E();
             return;

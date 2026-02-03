@@ -56,12 +56,12 @@ public final class EphemeralIndicationView extends ConstraintLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setEphemeralIndication_AFFcxXc$lambda$7$lambda$5(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        function2.invoke(MessageId.m1084boximpl(str), node);
-        return Unit.f33298a;
+        function2.invoke(MessageId.m1086boximpl(str), node);
+        return Unit.f33074a;
     }
 
     /* renamed from: setEphemeralIndication-AFFcxXc  reason: not valid java name */
-    public final void m690setEphemeralIndicationAFFcxXc(@NotNull final String messageId, @NotNull final EphemeralIndication ephemeralIndication, @NotNull final Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, @NotNull final Function1<? super String, Unit> onHelpArticleClicked) {
+    public final void m692setEphemeralIndicationAFFcxXc(@NotNull final String messageId, @NotNull final EphemeralIndication ephemeralIndication, @NotNull final Function2<? super MessageId, ? super LinkContentNode, Unit> onLinkClicked, @NotNull final Function1<? super String, Unit> onHelpArticleClicked) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(ephemeralIndication, "ephemeralIndication");
         Intrinsics.checkNotNullParameter(onLinkClicked, "onLinkClicked");

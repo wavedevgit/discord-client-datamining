@@ -1,78 +1,23 @@
 package ru;
 
-import java.util.ArrayList;
-import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
-import lu.c;
-import tu.a;
-import tu.c;
+import uu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface b extends lu.c, tu.a, tu.c {
+public final class b implements lu.b, uu.d {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static boolean a(b bVar, Object obj, Function2 operator) {
-            boolean z10;
-            boolean z11;
-            Intrinsics.checkNotNullParameter(operator, "operator");
-            List c10 = pv.a.c(obj);
-            Object e10 = bVar.e(CollectionsKt.firstOrNull(c10));
-            Object e11 = bVar.e(pv.c.b(c10));
-            c cVar = c.f48663a;
-            List a10 = cVar.a(e10);
-            List a11 = cVar.a(e11);
-            if (a10 == null && a11 == null) {
-                List<Object> list = c10;
-                ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-                for (Object obj2 : list) {
-                    arrayList.add(bVar.a(obj2));
-                }
-                return bVar.b(arrayList, operator);
-            }
-            if (a10 != null) {
-                z10 = a10.contains(e11);
-            } else {
-                z10 = false;
-            }
-            if (!z10) {
-                if (a11 != null) {
-                    z11 = a11.contains(e10);
-                } else {
-                    z11 = false;
-                }
-                if (!z11) {
-                    return false;
-                }
-                return true;
-            }
-            return true;
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f48717a = new b();
 
-        public static boolean b(b bVar, List list, Function2 operator) {
-            Intrinsics.checkNotNullParameter(operator, "operator");
-            return c.a.b(bVar, list, operator);
-        }
+    private b() {
+    }
 
-        public static List c(b bVar, Comparable comparable, Comparable comparable2) {
-            return c.a.d(bVar, comparable, comparable2);
-        }
+    @Override // lu.b
+    /* renamed from: a */
+    public Boolean f(Object obj, Object obj2) {
+        return Boolean.valueOf(b(CollectionsKt.firstOrNull(qv.a.c(obj))));
+    }
 
-        public static List d(b bVar, Comparable comparable, Comparable comparable2) {
-            return c.a.e(bVar, comparable, comparable2);
-        }
-
-        public static Object e(b bVar, Object obj) {
-            return c.a.c(bVar, obj);
-        }
-
-        public static Object f(b bVar, Object obj) {
-            return a.C0658a.c(bVar, obj);
-        }
-
-        public static Boolean g(b bVar, Object obj) {
-            return c.a.f(bVar, obj);
-        }
+    public boolean b(Object obj) {
+        return d.a.a(this, obj);
     }
 }

@@ -1,53 +1,64 @@
 package tu;
 
+import java.util.ArrayList;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
+import su.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface c {
+public interface c extends su.b {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
-        private static Object a(c cVar, Object obj) {
-            String str;
-            String obj2;
-            Object intOrNull;
-            Object obj3 = null;
-            if (obj instanceof String) {
-                str = (String) obj;
-            } else {
-                str = null;
-            }
-            if (str != null && (intOrNull = StringsKt.toIntOrNull(str)) != null) {
-                obj3 = intOrNull;
-            } else if (str != null) {
-                obj3 = StringsKt.p(str);
-            }
-            if (obj3 != null && (obj2 = obj3.toString()) != null) {
-                return obj2;
-            }
-            return obj;
-        }
-
-        private static Object b(c cVar, Object obj) {
-            if (obj instanceof List) {
-                List list = (List) obj;
-                if (list.size() == 1) {
-                    return b(cVar, CollectionsKt.firstOrNull(list));
+        public static boolean a(c cVar, Object obj, Function2 operator) {
+            Intrinsics.checkNotNullParameter(operator, "operator");
+            List c10 = qv.a.c(obj);
+            if (c10.size() != 1) {
+                List<Object> list = c10;
+                ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+                for (Object obj2 : list) {
+                    arrayList.add(cVar.a(obj2));
                 }
+                return cVar.b(arrayList, operator);
+            }
+            return false;
+        }
+
+        public static boolean b(c cVar, List list, Function2 operator) {
+            Intrinsics.checkNotNullParameter(operator, "operator");
+            return b.a.b(cVar, list, operator);
+        }
+
+        public static List c(c cVar, Comparable comparable, Comparable comparable2) {
+            return cVar.d(comparable, comparable2);
+        }
+
+        public static List d(c cVar, Comparable comparable, Comparable comparable2) {
+            return b.a.d(cVar, comparable, comparable2);
+        }
+
+        public static Object e(c cVar, Object obj) {
+            return b.a.e(cVar, obj);
+        }
+
+        public static Object f(c cVar, Object obj) {
+            Number number;
+            if (obj instanceof Number) {
+                number = (Number) obj;
+            } else {
+                number = null;
+            }
+            if (number != null) {
+                return Double.valueOf(number.doubleValue());
             }
             return obj;
         }
 
-        public static Object c(c cVar, Object obj) {
-            Object b10 = b(cVar, obj);
-            if (!Intrinsics.areEqual(b10, obj)) {
-                return new b(a(cVar, b10));
-            }
-            return a(cVar, obj);
+        public static Boolean g(c cVar, Object obj) {
+            return b.a.g(cVar, obj);
         }
     }
 
-    Object e(Object obj);
+    Object a(Object obj);
 }

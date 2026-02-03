@@ -1,180 +1,197 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var1 = exports;
-    var6 = dependencyMap;
-    var4 = function arg0() {
-        _fun22479: for (var _fun22479_ip = 0;;) switch (_fun22479_ip) {
-            case 0:
-                var2 = arg0;
-                if (!var2) {
-                    _fun22479_ip = 18;
-                    continue _fun22479
-                }
-            case 6:
-                var1 = var2.__esModule;
-                var0 = var2;
-                if (var1) {
-                    _fun22479_ip = 27;
-                    continue _fun22479
-                }
-            case 18:
-                var1 = {};
-                var1.default = var2;
-                var0 = var1;
-            case 27:
+    _fun22233: for (var _fun22233_ip = 0;;) switch (_fun22233_ip) {
+        case 0:
+            var1 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var2 = {};
+            var0 = true;
+            var2.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var1, var0, var2);
+            var0 = undefined;
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun22233_ip = 77;
+                continue _fun22233
+            }
+        case 65:
+            var2 = var4.__esModule;
+            var3 = var4;
+            if (var2) {
+                _fun22233_ip = 86;
+                continue _fun22233
+            }
+        case 77:
+            var2 = {};
+            var2.default = var4;
+            var3 = var2;
+        case 86:
+            var2 = {};
+            var4 = function arg0, arg1() {
+                var0 = global;
+                var2 = var0.Number;
+                var1 = undefined;
+                var0 = arg0;
+                var1 = var2.bind(var1)(var0);
+                var0 = '.';
+                var0 = var1 + var0;
                 return var0;
-        }
-    };
-    var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var7.bind(var8)(var1, var0, var2);
-    var0 = function arg0, arg1, arg2() {
-        _fun22480: for (var _fun22480_ip = 0;;) switch (_fun22480_ip) {
-            case 0:
-                var6 = arg0;
-                var8 = arg1;
-                var4 = arg2;
-                var7 = undefined;
+            };
+            var2.ordinalNumber = var4;
+            var6 = var3.default;
+            var4 = {};
+            var5 = {};
+            var8 = ['MÖ', 'MS'];
+            var5.narrow = var8;
+            var8 = ['MÖ', 'MS'];
+            var5.abbreviated = var8;
+            var8 = ['Milattan Önce', 'Milattan Sonra'];
+            var5.wide = var8;
+            var4.values = var5;
+            var5 = 'wide';
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.era = var4;
+            var6 = var3.default;
+            var4 = {};
+            var8 = {};
+            var9 = ['1', '2', '3', '4'];
+            var8.narrow = var9;
+            var9 = ['1Ç', '2Ç', '3Ç', '4Ç'];
+            var8.abbreviated = var9;
+            var9 = ['İlk çeyrek', 'İkinci Çeyrek', 'Üçüncü çeyrek', 'Son çeyrek'];
+            var8.wide = var9;
+            var4.values = var8;
+            var4.defaultWidth = var5;
+            var7 = function arg0() {
+                var0 = global;
+                var2 = var0.Number;
                 var1 = undefined;
-                var2 = _closure1_slot1;
-                var3 = var2.default;
-                var1 = arguments;
-                var2 = var1;
-                var1 = 2;
-                var1 = var3.bind(var7)(var1, var2);
-                var1 = _closure1_slot0;
-                var2 = var1.default;
-                var5 = null;
-                var3 = var5 == var6;
-                var1 = undefined;
-                if (var3) {
-                    _fun22480_ip = 64;
-                    continue _fun22480
-                }
-            case 59:
-                var1 = var6.start;
-            case 64:
-                var2 = var2.bind(var7)(var1);
-                var1 = var2.getTime;
-                var3 = var1.bind(var2)();
-                var1 = _closure1_slot0;
-                var2 = var1.default;
-                var9 = var5 == var6;
-                var1 = undefined;
-                if (var9) {
-                    _fun22480_ip = 102;
-                    continue _fun22480
-                }
-            case 97:
-                var1 = var6.end;
-            case 102:
-                var2 = var2.bind(var7)(var1);
-                var1 = var2.getTime;
-                var2 = var1.bind(var2)();
-                var1 = _closure1_slot0;
-                var6 = var1.default;
-                var9 = var5 == var8;
-                var1 = undefined;
-                if (var9) {
-                    _fun22480_ip = 140;
-                    continue _fun22480
-                }
-            case 135:
-                var1 = var8.start;
-            case 140:
-                var6 = var6.bind(var7)(var1);
-                var1 = var6.getTime;
-                var1 = var1.bind(var6)();
-                var0 = _closure1_slot0;
-                var6 = var0.default;
-                var9 = var5 == var8;
-                var0 = undefined;
-                if (var9) {
-                    _fun22480_ip = 178;
-                    continue _fun22480
-                }
-            case 173:
-                var0 = var8.end;
-            case 178:
-                var6 = var6.bind(var7)(var0);
-                var0 = var6.getTime;
-                var0 = var0.bind(var6)();
-                if (!(var3 <= var2)) {
-                    _fun22480_ip = 201;
-                    continue _fun22480
-                }
-            case 197:
-                if (!(!(var1 <= var0))) {
-                    _fun22480_ip = 237;
-                    continue _fun22480
-                }
-            case 201:
-                var6 = global;
-                var8 = var6.RangeError;
-                var6 = var8.prototype;
-                var7 = Object.create(var6, {
-                    constructor: {
-                        value: var8
-                    }
-                });
-                var11 = 'Invalid interval';
-                var12 = var7;
-                var6 = new var12[var8](var11, var10);
-                var6 = var6 instanceof Object ? var6 : var7;
-                throw var6;
-            case 237:
-                if (!(var5 != var4)) {
-                    _fun22480_ip = 250;
-                    continue _fun22480
-                }
-            case 241:
-                var4 = var4.inclusive;
-                if (var4) {
-                    _fun22480_ip = 263;
-                    continue _fun22480
-                }
-            case 250:
-                var4 = var3 < var0;
-                if (!var4) {
-                    _fun22480_ip = 261;
-                    continue _fun22480
-                }
-            case 257:
-                var4 = var1 < var2;
-            case 261:
-                return var4;
-            case 263:
-                var0 = var3 <= var0;
-                if (!var0) {
-                    _fun22480_ip = 274;
-                    continue _fun22480
-                }
-            case 270:
-                var0 = var1 <= var2;
-            case 274:
+                var0 = arg0;
+                var1 = var2.bind(var1)(var0);
+                var0 = 1;
+                var0 = var1 - var0;
                 return var0;
-        }
-    };
-    var1.default = var0;
-    var0 = 0;
-    var2 = var6[var0];
-    var0 = undefined;
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot0 = var2;
-    var2 = 1;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var2 = var4.bind(var0)(var2);
-    var _closure1_slot1 = var2;
-    var2 = var1.default;
-    var1 = arg4;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2534, 2535]);
+            };
+            var4.argumentCallback = var7;
+            var4 = var6.bind(var0)(var4);
+            var2.quarter = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['O', 'Ş', 'M', 'N', 'M', 'H', 'T', 'A', 'E', 'E', 'K', 'A'];
+            var7.narrow = var8;
+            var8 = ['Oca', 'Şub', 'Mar', 'Nis', 'May', 'Haz', 'Tem', 'Ağu', 'Eyl', 'Eki', 'Kas', 'Ara'];
+            var7.abbreviated = var8;
+            var8 = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.month = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['P', 'P', 'S', 'Ç', 'P', 'C', 'C'];
+            var7.narrow = var8;
+            var8 = ['Pz', 'Pt', 'Sa', 'Ça', 'Pe', 'Cu', 'Ct'];
+            var7.short = var8;
+            var8 = ['Paz', 'Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cts'];
+            var7.abbreviated = var8;
+            var8 = ['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.day = var4;
+            var4 = var3.default;
+            var3 = {};
+            var6 = {};
+            var7 = {
+                'am': 'öö',
+                'pm': 'ös',
+                'midnight': 'gy',
+                'noon': 'ö',
+                'morning': 'sa',
+                'afternoon': 'ös',
+                'evening': 'ak',
+                'night': 'ge'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'ÖÖ',
+                'pm': 'ÖS',
+                'midnight': 'gece yarısı',
+                'noon': 'öğle',
+                'morning': 'sabah',
+                'afternoon': 'öğleden sonra',
+                'evening': 'akşam',
+                'night': 'gece'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'Ö.Ö.',
+                'pm': 'Ö.S.',
+                'midnight': 'gece yarısı',
+                'noon': 'öğle',
+                'morning': 'sabah',
+                'afternoon': 'öğleden sonra',
+                'evening': 'akşam',
+                'night': 'gece'
+            };
+            var6.wide = var7;
+            var3.values = var6;
+            var3.defaultWidth = var5;
+            var6 = {};
+            var7 = {
+                'am': 'öö',
+                'pm': 'ös',
+                'midnight': 'gy',
+                'noon': 'ö',
+                'morning': 'sa',
+                'afternoon': 'ös',
+                'evening': 'ak',
+                'night': 'ge'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'ÖÖ',
+                'pm': 'ÖS',
+                'midnight': 'gece yarısı',
+                'noon': 'öğlen',
+                'morning': 'sabahleyin',
+                'afternoon': 'öğleden sonra',
+                'evening': 'akşamleyin',
+                'night': 'geceleyin'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'ö.ö.',
+                'pm': 'ö.s.',
+                'midnight': 'gece yarısı',
+                'noon': 'öğlen',
+                'morning': 'sabahleyin',
+                'afternoon': 'öğleden sonra',
+                'evening': 'akşamleyin',
+                'night': 'geceleyin'
+            };
+            var6.wide = var7;
+            var3.formattingValues = var6;
+            var3.defaultFormattingWidth = var5;
+            var3 = var4.bind(var0)(var3);
+            var2.dayPeriod = var3;
+            var1.default = var2;
+            var2 = var1.default;
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1684]);

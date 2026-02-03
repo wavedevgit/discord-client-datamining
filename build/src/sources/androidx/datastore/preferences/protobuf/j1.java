@@ -5,11 +5,11 @@ import java.util.List;
 public class j1 extends RuntimeException {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f3671d;
+    private final List f3715d;
 
     public j1(o0 o0Var) {
         super("Message was missing required fields.  (Lite runtime could not determine which fields were missing).");
-        this.f3671d = null;
+        this.f3715d = null;
     }
 
     public z a() {

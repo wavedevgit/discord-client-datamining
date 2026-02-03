@@ -20,48 +20,48 @@ import com.facebook.react.views.text.internal.span.SetSpanOperation;
 public class CircularProgressDrawable extends Drawable implements Animatable {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Interpolator f5078r = new LinearInterpolator();
+    private static final Interpolator f5122r = new LinearInterpolator();
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Interpolator f5079s = new h3.b();
+    private static final Interpolator f5123s = new h3.b();
 
     /* renamed from: t  reason: collision with root package name */
-    private static final int[] f5080t = {-16777216};
+    private static final int[] f5124t = {-16777216};
 
     /* renamed from: d  reason: collision with root package name */
-    private final c f5081d;
+    private final c f5125d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f5082e;
+    private float f5126e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Resources f5083i;
+    private Resources f5127i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Animator f5084o;
+    private Animator f5128o;
 
     /* renamed from: p  reason: collision with root package name */
-    float f5085p;
+    float f5129p;
 
     /* renamed from: q  reason: collision with root package name */
-    boolean f5086q;
+    boolean f5130q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements ValueAnimator.AnimatorUpdateListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c f5087a;
+        final /* synthetic */ c f5131a;
 
         a(c cVar) {
-            this.f5087a = cVar;
+            this.f5131a = cVar;
         }
 
         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
             float floatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
-            CircularProgressDrawable.this.n(floatValue, this.f5087a);
-            CircularProgressDrawable.this.b(floatValue, this.f5087a, false);
+            CircularProgressDrawable.this.n(floatValue, this.f5131a);
+            CircularProgressDrawable.this.b(floatValue, this.f5131a, false);
             CircularProgressDrawable.this.invalidateSelf();
         }
     }
@@ -71,10 +71,10 @@ public class CircularProgressDrawable extends Drawable implements Animatable {
     public class b implements Animator.AnimatorListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c f5089a;
+        final /* synthetic */ c f5133a;
 
         b(c cVar) {
-            this.f5089a = cVar;
+            this.f5133a = cVar;
         }
 
         @Override // android.animation.Animator.AnimatorListener
@@ -87,24 +87,24 @@ public class CircularProgressDrawable extends Drawable implements Animatable {
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationRepeat(Animator animator) {
-            CircularProgressDrawable.this.b(1.0f, this.f5089a, true);
-            this.f5089a.A();
-            this.f5089a.l();
+            CircularProgressDrawable.this.b(1.0f, this.f5133a, true);
+            this.f5133a.A();
+            this.f5133a.l();
             CircularProgressDrawable circularProgressDrawable = CircularProgressDrawable.this;
-            if (circularProgressDrawable.f5086q) {
-                circularProgressDrawable.f5086q = false;
+            if (circularProgressDrawable.f5130q) {
+                circularProgressDrawable.f5130q = false;
                 animator.cancel();
                 animator.setDuration(1332L);
                 animator.start();
-                this.f5089a.x(false);
+                this.f5133a.x(false);
                 return;
             }
-            circularProgressDrawable.f5085p += 1.0f;
+            circularProgressDrawable.f5129p += 1.0f;
         }
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            CircularProgressDrawable.this.f5085p = 0.0f;
+            CircularProgressDrawable.this.f5129p = 0.0f;
         }
     }
 
@@ -113,81 +113,81 @@ public class CircularProgressDrawable extends Drawable implements Animatable {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        final RectF f5091a = new RectF();
+        final RectF f5135a = new RectF();
 
         /* renamed from: b  reason: collision with root package name */
-        final Paint f5092b;
+        final Paint f5136b;
 
         /* renamed from: c  reason: collision with root package name */
-        final Paint f5093c;
+        final Paint f5137c;
 
         /* renamed from: d  reason: collision with root package name */
-        final Paint f5094d;
+        final Paint f5138d;
 
         /* renamed from: e  reason: collision with root package name */
-        float f5095e;
+        float f5139e;
 
         /* renamed from: f  reason: collision with root package name */
-        float f5096f;
+        float f5140f;
 
         /* renamed from: g  reason: collision with root package name */
-        float f5097g;
+        float f5141g;
 
         /* renamed from: h  reason: collision with root package name */
-        float f5098h;
+        float f5142h;
 
         /* renamed from: i  reason: collision with root package name */
-        int[] f5099i;
+        int[] f5143i;
 
         /* renamed from: j  reason: collision with root package name */
-        int f5100j;
+        int f5144j;
 
         /* renamed from: k  reason: collision with root package name */
-        float f5101k;
+        float f5145k;
 
         /* renamed from: l  reason: collision with root package name */
-        float f5102l;
+        float f5146l;
 
         /* renamed from: m  reason: collision with root package name */
-        float f5103m;
+        float f5147m;
 
         /* renamed from: n  reason: collision with root package name */
-        boolean f5104n;
+        boolean f5148n;
 
         /* renamed from: o  reason: collision with root package name */
-        Path f5105o;
+        Path f5149o;
 
         /* renamed from: p  reason: collision with root package name */
-        float f5106p;
+        float f5150p;
 
         /* renamed from: q  reason: collision with root package name */
-        float f5107q;
+        float f5151q;
 
         /* renamed from: r  reason: collision with root package name */
-        int f5108r;
+        int f5152r;
 
         /* renamed from: s  reason: collision with root package name */
-        int f5109s;
+        int f5153s;
 
         /* renamed from: t  reason: collision with root package name */
-        int f5110t;
+        int f5154t;
 
         /* renamed from: u  reason: collision with root package name */
-        int f5111u;
+        int f5155u;
 
         c() {
             Paint paint = new Paint();
-            this.f5092b = paint;
+            this.f5136b = paint;
             Paint paint2 = new Paint();
-            this.f5093c = paint2;
+            this.f5137c = paint2;
             Paint paint3 = new Paint();
-            this.f5094d = paint3;
-            this.f5095e = 0.0f;
-            this.f5096f = 0.0f;
-            this.f5097g = 0.0f;
-            this.f5098h = 5.0f;
-            this.f5106p = 1.0f;
-            this.f5110t = SetSpanOperation.SPAN_MAX_PRIORITY;
+            this.f5138d = paint3;
+            this.f5139e = 0.0f;
+            this.f5140f = 0.0f;
+            this.f5141g = 0.0f;
+            this.f5142h = 5.0f;
+            this.f5150p = 1.0f;
+            this.f5154t = SetSpanOperation.SPAN_MAX_PRIORITY;
             paint.setStrokeCap(Paint.Cap.SQUARE);
             paint.setAntiAlias(true);
             paint.setStyle(Paint.Style.STROKE);
@@ -197,94 +197,94 @@ public class CircularProgressDrawable extends Drawable implements Animatable {
         }
 
         void A() {
-            this.f5101k = this.f5095e;
-            this.f5102l = this.f5096f;
-            this.f5103m = this.f5097g;
+            this.f5145k = this.f5139e;
+            this.f5146l = this.f5140f;
+            this.f5147m = this.f5141g;
         }
 
         void a(Canvas canvas, Rect rect) {
-            RectF rectF = this.f5091a;
-            float f10 = this.f5107q;
-            float f11 = (this.f5098h / 2.0f) + f10;
+            RectF rectF = this.f5135a;
+            float f10 = this.f5151q;
+            float f11 = (this.f5142h / 2.0f) + f10;
             if (f10 <= 0.0f) {
-                f11 = (Math.min(rect.width(), rect.height()) / 2.0f) - Math.max((this.f5108r * this.f5106p) / 2.0f, this.f5098h / 2.0f);
+                f11 = (Math.min(rect.width(), rect.height()) / 2.0f) - Math.max((this.f5152r * this.f5150p) / 2.0f, this.f5142h / 2.0f);
             }
             rectF.set(rect.centerX() - f11, rect.centerY() - f11, rect.centerX() + f11, rect.centerY() + f11);
-            float f12 = this.f5095e;
-            float f13 = this.f5097g;
+            float f12 = this.f5139e;
+            float f13 = this.f5141g;
             float f14 = (f12 + f13) * 360.0f;
-            float f15 = ((this.f5096f + f13) * 360.0f) - f14;
-            this.f5092b.setColor(this.f5111u);
-            this.f5092b.setAlpha(this.f5110t);
-            float f16 = this.f5098h / 2.0f;
+            float f15 = ((this.f5140f + f13) * 360.0f) - f14;
+            this.f5136b.setColor(this.f5155u);
+            this.f5136b.setAlpha(this.f5154t);
+            float f16 = this.f5142h / 2.0f;
             rectF.inset(f16, f16);
-            canvas.drawCircle(rectF.centerX(), rectF.centerY(), rectF.width() / 2.0f, this.f5094d);
+            canvas.drawCircle(rectF.centerX(), rectF.centerY(), rectF.width() / 2.0f, this.f5138d);
             float f17 = -f16;
             rectF.inset(f17, f17);
-            canvas.drawArc(rectF, f14, f15, false, this.f5092b);
+            canvas.drawArc(rectF, f14, f15, false, this.f5136b);
             b(canvas, f14, f15, rectF);
         }
 
         void b(Canvas canvas, float f10, float f11, RectF rectF) {
-            if (this.f5104n) {
-                Path path = this.f5105o;
+            if (this.f5148n) {
+                Path path = this.f5149o;
                 if (path == null) {
                     Path path2 = new Path();
-                    this.f5105o = path2;
+                    this.f5149o = path2;
                     path2.setFillType(Path.FillType.EVEN_ODD);
                 } else {
                     path.reset();
                 }
-                this.f5105o.moveTo(0.0f, 0.0f);
-                this.f5105o.lineTo(this.f5108r * this.f5106p, 0.0f);
-                Path path3 = this.f5105o;
-                float f12 = this.f5106p;
-                path3.lineTo((this.f5108r * f12) / 2.0f, this.f5109s * f12);
-                this.f5105o.offset(((Math.min(rectF.width(), rectF.height()) / 2.0f) + rectF.centerX()) - ((this.f5108r * this.f5106p) / 2.0f), rectF.centerY() + (this.f5098h / 2.0f));
-                this.f5105o.close();
-                this.f5093c.setColor(this.f5111u);
-                this.f5093c.setAlpha(this.f5110t);
+                this.f5149o.moveTo(0.0f, 0.0f);
+                this.f5149o.lineTo(this.f5152r * this.f5150p, 0.0f);
+                Path path3 = this.f5149o;
+                float f12 = this.f5150p;
+                path3.lineTo((this.f5152r * f12) / 2.0f, this.f5153s * f12);
+                this.f5149o.offset(((Math.min(rectF.width(), rectF.height()) / 2.0f) + rectF.centerX()) - ((this.f5152r * this.f5150p) / 2.0f), rectF.centerY() + (this.f5142h / 2.0f));
+                this.f5149o.close();
+                this.f5137c.setColor(this.f5155u);
+                this.f5137c.setAlpha(this.f5154t);
                 canvas.save();
                 canvas.rotate(f10 + f11, rectF.centerX(), rectF.centerY());
-                canvas.drawPath(this.f5105o, this.f5093c);
+                canvas.drawPath(this.f5149o, this.f5137c);
                 canvas.restore();
             }
         }
 
         int c() {
-            return this.f5110t;
+            return this.f5154t;
         }
 
         float d() {
-            return this.f5096f;
+            return this.f5140f;
         }
 
         int e() {
-            return this.f5099i[f()];
+            return this.f5143i[f()];
         }
 
         int f() {
-            return (this.f5100j + 1) % this.f5099i.length;
+            return (this.f5144j + 1) % this.f5143i.length;
         }
 
         float g() {
-            return this.f5095e;
+            return this.f5139e;
         }
 
         int h() {
-            return this.f5099i[this.f5100j];
+            return this.f5143i[this.f5144j];
         }
 
         float i() {
-            return this.f5102l;
+            return this.f5146l;
         }
 
         float j() {
-            return this.f5103m;
+            return this.f5147m;
         }
 
         float k() {
-            return this.f5101k;
+            return this.f5145k;
         }
 
         void l() {
@@ -292,80 +292,80 @@ public class CircularProgressDrawable extends Drawable implements Animatable {
         }
 
         void m() {
-            this.f5101k = 0.0f;
-            this.f5102l = 0.0f;
-            this.f5103m = 0.0f;
+            this.f5145k = 0.0f;
+            this.f5146l = 0.0f;
+            this.f5147m = 0.0f;
             y(0.0f);
             v(0.0f);
             w(0.0f);
         }
 
         void n(int i10) {
-            this.f5110t = i10;
+            this.f5154t = i10;
         }
 
         void o(float f10, float f11) {
-            this.f5108r = (int) f10;
-            this.f5109s = (int) f11;
+            this.f5152r = (int) f10;
+            this.f5153s = (int) f11;
         }
 
         void p(float f10) {
-            if (f10 != this.f5106p) {
-                this.f5106p = f10;
+            if (f10 != this.f5150p) {
+                this.f5150p = f10;
             }
         }
 
         void q(float f10) {
-            this.f5107q = f10;
+            this.f5151q = f10;
         }
 
         void r(int i10) {
-            this.f5111u = i10;
+            this.f5155u = i10;
         }
 
         void s(ColorFilter colorFilter) {
-            this.f5092b.setColorFilter(colorFilter);
+            this.f5136b.setColorFilter(colorFilter);
         }
 
         void t(int i10) {
-            this.f5100j = i10;
-            this.f5111u = this.f5099i[i10];
+            this.f5144j = i10;
+            this.f5155u = this.f5143i[i10];
         }
 
         void u(int[] iArr) {
-            this.f5099i = iArr;
+            this.f5143i = iArr;
             t(0);
         }
 
         void v(float f10) {
-            this.f5096f = f10;
+            this.f5140f = f10;
         }
 
         void w(float f10) {
-            this.f5097g = f10;
+            this.f5141g = f10;
         }
 
         void x(boolean z10) {
-            if (this.f5104n != z10) {
-                this.f5104n = z10;
+            if (this.f5148n != z10) {
+                this.f5148n = z10;
             }
         }
 
         void y(float f10) {
-            this.f5095e = f10;
+            this.f5139e = f10;
         }
 
         void z(float f10) {
-            this.f5098h = f10;
-            this.f5092b.setStrokeWidth(f10);
+            this.f5142h = f10;
+            this.f5136b.setStrokeWidth(f10);
         }
     }
 
     public CircularProgressDrawable(Context context) {
-        this.f5083i = ((Context) e.g(context)).getResources();
+        this.f5127i = ((Context) e.g(context)).getResources();
         c cVar = new c();
-        this.f5081d = cVar;
-        cVar.u(f5080t);
+        this.f5125d = cVar;
+        cVar.u(f5124t);
         k(2.5f);
         m();
     }
@@ -386,12 +386,12 @@ public class CircularProgressDrawable extends Drawable implements Animatable {
     }
 
     private void h(float f10) {
-        this.f5082e = f10;
+        this.f5126e = f10;
     }
 
     private void i(float f10, float f11, float f12, float f13) {
-        c cVar = this.f5081d;
-        float f14 = this.f5083i.getDisplayMetrics().density;
+        c cVar = this.f5125d;
+        float f14 = this.f5127i.getDisplayMetrics().density;
         cVar.z(f11 * f14);
         cVar.q(f10 * f14);
         cVar.t(0);
@@ -399,41 +399,41 @@ public class CircularProgressDrawable extends Drawable implements Animatable {
     }
 
     private void m() {
-        c cVar = this.f5081d;
+        c cVar = this.f5125d;
         ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, 1.0f);
         ofFloat.addUpdateListener(new a(cVar));
         ofFloat.setRepeatCount(-1);
         ofFloat.setRepeatMode(1);
-        ofFloat.setInterpolator(f5078r);
+        ofFloat.setInterpolator(f5122r);
         ofFloat.addListener(new b(cVar));
-        this.f5084o = ofFloat;
+        this.f5128o = ofFloat;
     }
 
     void b(float f10, c cVar, boolean z10) {
         float interpolation;
         float f11;
-        if (this.f5086q) {
+        if (this.f5130q) {
             a(f10, cVar);
         } else if (f10 == 1.0f && !z10) {
         } else {
             float j10 = cVar.j();
             if (f10 < 0.5f) {
                 interpolation = cVar.k();
-                f11 = (f5079s.getInterpolation(f10 / 0.5f) * 0.79f) + 0.01f + interpolation;
+                f11 = (f5123s.getInterpolation(f10 / 0.5f) * 0.79f) + 0.01f + interpolation;
             } else {
                 float k10 = cVar.k() + 0.79f;
-                interpolation = k10 - (((1.0f - f5079s.getInterpolation((f10 - 0.5f) / 0.5f)) * 0.79f) + 0.01f);
+                interpolation = k10 - (((1.0f - f5123s.getInterpolation((f10 - 0.5f) / 0.5f)) * 0.79f) + 0.01f);
                 f11 = k10;
             }
             cVar.y(interpolation);
             cVar.v(f11);
             cVar.w(j10 + (0.20999998f * f10));
-            h((f10 + this.f5085p) * 216.0f);
+            h((f10 + this.f5129p) * 216.0f);
         }
     }
 
     public void d(boolean z10) {
-        this.f5081d.x(z10);
+        this.f5125d.x(z10);
         invalidateSelf();
     }
 
@@ -441,30 +441,30 @@ public class CircularProgressDrawable extends Drawable implements Animatable {
     public void draw(Canvas canvas) {
         Rect bounds = getBounds();
         canvas.save();
-        canvas.rotate(this.f5082e, bounds.exactCenterX(), bounds.exactCenterY());
-        this.f5081d.a(canvas, bounds);
+        canvas.rotate(this.f5126e, bounds.exactCenterX(), bounds.exactCenterY());
+        this.f5125d.a(canvas, bounds);
         canvas.restore();
     }
 
     public void e(float f10) {
-        this.f5081d.p(f10);
+        this.f5125d.p(f10);
         invalidateSelf();
     }
 
     public void f(int... iArr) {
-        this.f5081d.u(iArr);
-        this.f5081d.t(0);
+        this.f5125d.u(iArr);
+        this.f5125d.t(0);
         invalidateSelf();
     }
 
     public void g(float f10) {
-        this.f5081d.w(f10);
+        this.f5125d.w(f10);
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getAlpha() {
-        return this.f5081d.c();
+        return this.f5125d.c();
     }
 
     @Override // android.graphics.drawable.Drawable
@@ -474,17 +474,17 @@ public class CircularProgressDrawable extends Drawable implements Animatable {
 
     @Override // android.graphics.drawable.Animatable
     public boolean isRunning() {
-        return this.f5084o.isRunning();
+        return this.f5128o.isRunning();
     }
 
     public void j(float f10, float f11) {
-        this.f5081d.y(f10);
-        this.f5081d.v(f11);
+        this.f5125d.y(f10);
+        this.f5125d.v(f11);
         invalidateSelf();
     }
 
     public void k(float f10) {
-        this.f5081d.z(f10);
+        this.f5125d.z(f10);
         invalidateSelf();
     }
 
@@ -507,39 +507,39 @@ public class CircularProgressDrawable extends Drawable implements Animatable {
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        this.f5081d.n(i10);
+        this.f5125d.n(i10);
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f5081d.s(colorFilter);
+        this.f5125d.s(colorFilter);
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Animatable
     public void start() {
-        this.f5084o.cancel();
-        this.f5081d.A();
-        if (this.f5081d.d() != this.f5081d.g()) {
-            this.f5086q = true;
-            this.f5084o.setDuration(666L);
-            this.f5084o.start();
+        this.f5128o.cancel();
+        this.f5125d.A();
+        if (this.f5125d.d() != this.f5125d.g()) {
+            this.f5130q = true;
+            this.f5128o.setDuration(666L);
+            this.f5128o.start();
             return;
         }
-        this.f5081d.t(0);
-        this.f5081d.m();
-        this.f5084o.setDuration(1332L);
-        this.f5084o.start();
+        this.f5125d.t(0);
+        this.f5125d.m();
+        this.f5128o.setDuration(1332L);
+        this.f5128o.start();
     }
 
     @Override // android.graphics.drawable.Animatable
     public void stop() {
-        this.f5084o.cancel();
+        this.f5128o.cancel();
         h(0.0f);
-        this.f5081d.x(false);
-        this.f5081d.t(0);
-        this.f5081d.m();
+        this.f5125d.x(false);
+        this.f5125d.t(0);
+        this.f5125d.m();
         invalidateSelf();
     }
 }

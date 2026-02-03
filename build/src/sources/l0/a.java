@@ -5,49 +5,49 @@ import l0.e;
 final class a extends e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f36681a;
+    private final String f36795a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f36682b;
+    private final String f36796b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f36683c;
+    private final String f36797c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f36684d;
+    private final String f36798d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class b extends e.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f36685a;
+        private String f36799a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f36686b;
+        private String f36800b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f36687c;
+        private String f36801c;
 
         /* renamed from: d  reason: collision with root package name */
-        private String f36688d;
+        private String f36802d;
 
         @Override // l0.e.a
         public e a() {
             String str = "";
-            if (this.f36685a == null) {
+            if (this.f36799a == null) {
                 str = " glVersion";
             }
-            if (this.f36686b == null) {
+            if (this.f36800b == null) {
                 str = str + " eglVersion";
             }
-            if (this.f36687c == null) {
+            if (this.f36801c == null) {
                 str = str + " glExtensions";
             }
-            if (this.f36688d == null) {
+            if (this.f36802d == null) {
                 str = str + " eglExtensions";
             }
             if (str.isEmpty()) {
-                return new a(this.f36685a, this.f36686b, this.f36687c, this.f36688d);
+                return new a(this.f36799a, this.f36800b, this.f36801c, this.f36802d);
             }
             throw new IllegalStateException("Missing required properties:" + str);
         }
@@ -55,7 +55,7 @@ final class a extends e {
         @Override // l0.e.a
         public e.a b(String str) {
             if (str != null) {
-                this.f36688d = str;
+                this.f36802d = str;
                 return this;
             }
             throw new NullPointerException("Null eglExtensions");
@@ -64,7 +64,7 @@ final class a extends e {
         @Override // l0.e.a
         public e.a c(String str) {
             if (str != null) {
-                this.f36686b = str;
+                this.f36800b = str;
                 return this;
             }
             throw new NullPointerException("Null eglVersion");
@@ -73,7 +73,7 @@ final class a extends e {
         @Override // l0.e.a
         public e.a d(String str) {
             if (str != null) {
-                this.f36687c = str;
+                this.f36801c = str;
                 return this;
             }
             throw new NullPointerException("Null glExtensions");
@@ -82,7 +82,7 @@ final class a extends e {
         @Override // l0.e.a
         public e.a e(String str) {
             if (str != null) {
-                this.f36685a = str;
+                this.f36799a = str;
                 return this;
             }
             throw new NullPointerException("Null glVersion");
@@ -91,22 +91,22 @@ final class a extends e {
 
     @Override // l0.e
     public String b() {
-        return this.f36684d;
+        return this.f36798d;
     }
 
     @Override // l0.e
     public String c() {
-        return this.f36682b;
+        return this.f36796b;
     }
 
     @Override // l0.e
     public String d() {
-        return this.f36683c;
+        return this.f36797c;
     }
 
     @Override // l0.e
     public String e() {
-        return this.f36681a;
+        return this.f36795a;
     }
 
     public boolean equals(Object obj) {
@@ -115,7 +115,7 @@ final class a extends e {
         }
         if (obj instanceof e) {
             e eVar = (e) obj;
-            if (this.f36681a.equals(eVar.e()) && this.f36682b.equals(eVar.c()) && this.f36683c.equals(eVar.d()) && this.f36684d.equals(eVar.b())) {
+            if (this.f36795a.equals(eVar.e()) && this.f36796b.equals(eVar.c()) && this.f36797c.equals(eVar.d()) && this.f36798d.equals(eVar.b())) {
                 return true;
             }
         }
@@ -123,17 +123,17 @@ final class a extends e {
     }
 
     public int hashCode() {
-        return ((((((this.f36681a.hashCode() ^ 1000003) * 1000003) ^ this.f36682b.hashCode()) * 1000003) ^ this.f36683c.hashCode()) * 1000003) ^ this.f36684d.hashCode();
+        return ((((((this.f36795a.hashCode() ^ 1000003) * 1000003) ^ this.f36796b.hashCode()) * 1000003) ^ this.f36797c.hashCode()) * 1000003) ^ this.f36798d.hashCode();
     }
 
     public String toString() {
-        return "GraphicDeviceInfo{glVersion=" + this.f36681a + ", eglVersion=" + this.f36682b + ", glExtensions=" + this.f36683c + ", eglExtensions=" + this.f36684d + "}";
+        return "GraphicDeviceInfo{glVersion=" + this.f36795a + ", eglVersion=" + this.f36796b + ", glExtensions=" + this.f36797c + ", eglExtensions=" + this.f36798d + "}";
     }
 
     private a(String str, String str2, String str3, String str4) {
-        this.f36681a = str;
-        this.f36682b = str2;
-        this.f36683c = str3;
-        this.f36684d = str4;
+        this.f36795a = str;
+        this.f36796b = str2;
+        this.f36797c = str3;
+        this.f36798d = str4;
     }
 }

@@ -48,47 +48,47 @@ import zb.i;
 public final class d implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ui.a f12642a;
+    private final ui.a f12271a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ConnectivityManager f12643b;
+    private final ConnectivityManager f12272b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f12644c;
+    private final Context f12273c;
 
     /* renamed from: d  reason: collision with root package name */
-    final URL f12645d;
+    final URL f12274d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final jc.a f12646e;
+    private final jc.a f12275e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final jc.a f12647f;
+    private final jc.a f12276f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f12648g;
+    private final int f12277g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final URL f12649a;
+        final URL f12278a;
 
         /* renamed from: b  reason: collision with root package name */
-        final j f12650b;
+        final j f12279b;
 
         /* renamed from: c  reason: collision with root package name */
-        final String f12651c;
+        final String f12280c;
 
         a(URL url, j jVar, String str) {
-            this.f12649a = url;
-            this.f12650b = jVar;
-            this.f12651c = str;
+            this.f12278a = url;
+            this.f12279b = jVar;
+            this.f12280c = str;
         }
 
         a a(URL url) {
-            return new a(url, this.f12650b, this.f12651c);
+            return new a(url, this.f12279b, this.f12280c);
         }
     }
 
@@ -97,46 +97,46 @@ public final class d implements m {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        final int f12652a;
+        final int f12281a;
 
         /* renamed from: b  reason: collision with root package name */
-        final URL f12653b;
+        final URL f12282b;
 
         /* renamed from: c  reason: collision with root package name */
-        final long f12654c;
+        final long f12283c;
 
         b(int i10, URL url, long j10) {
-            this.f12652a = i10;
-            this.f12653b = url;
-            this.f12654c = j10;
+            this.f12281a = i10;
+            this.f12282b = url;
+            this.f12283c = j10;
         }
     }
 
     d(Context context, jc.a aVar, jc.a aVar2, int i10) {
-        this.f12642a = j.b();
-        this.f12644c = context;
-        this.f12643b = (ConnectivityManager) context.getSystemService("connectivity");
-        this.f12645d = m(com.google.android.datatransport.cct.a.f12633c);
-        this.f12646e = aVar2;
-        this.f12647f = aVar;
-        this.f12648g = i10;
+        this.f12271a = j.b();
+        this.f12273c = context;
+        this.f12272b = (ConnectivityManager) context.getSystemService("connectivity");
+        this.f12274d = m(com.google.android.datatransport.cct.a.f12262c);
+        this.f12275e = aVar2;
+        this.f12276f = aVar;
+        this.f12277g = i10;
     }
 
     public static /* synthetic */ a d(a aVar, b bVar) {
-        URL url = bVar.f12653b;
+        URL url = bVar.f12282b;
         if (url != null) {
             dc.a.b("CctTransportBackend", "Following redirect to: %s", url);
-            return aVar.a(bVar.f12653b);
+            return aVar.a(bVar.f12282b);
         }
         return null;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public b e(a aVar) {
-        dc.a.f("CctTransportBackend", "Making request to: %s", aVar.f12649a);
-        HttpURLConnection httpURLConnection = (HttpURLConnection) aVar.f12649a.openConnection();
+        dc.a.f("CctTransportBackend", "Making request to: %s", aVar.f12278a);
+        HttpURLConnection httpURLConnection = (HttpURLConnection) aVar.f12278a.openConnection();
         httpURLConnection.setConnectTimeout(30000);
-        httpURLConnection.setReadTimeout(this.f12648g);
+        httpURLConnection.setReadTimeout(this.f12277g);
         httpURLConnection.setDoOutput(true);
         httpURLConnection.setInstanceFollowRedirects(false);
         httpURLConnection.setRequestMethod("POST");
@@ -144,7 +144,7 @@ public final class d implements m {
         httpURLConnection.setRequestProperty("Content-Encoding", "gzip");
         httpURLConnection.setRequestProperty("Content-Type", "application/json");
         httpURLConnection.setRequestProperty("Accept-Encoding", "gzip");
-        String str = aVar.f12651c;
+        String str = aVar.f12280c;
         if (str != null) {
             httpURLConnection.setRequestProperty("X-Goog-Api-Key", str);
         }
@@ -152,7 +152,7 @@ public final class d implements m {
             OutputStream outputStream = httpURLConnection.getOutputStream();
             try {
                 GZIPOutputStream gZIPOutputStream = new GZIPOutputStream(outputStream);
-                this.f12642a.a(aVar.f12650b, new BufferedWriter(new OutputStreamWriter(gZIPOutputStream)));
+                this.f12271a.a(aVar.f12279b, new BufferedWriter(new OutputStreamWriter(gZIPOutputStream)));
                 gZIPOutputStream.close();
                 if (outputStream != null) {
                     outputStream.close();
@@ -263,7 +263,7 @@ public final class d implements m {
         ArrayList arrayList2 = new ArrayList();
         for (Map.Entry entry : hashMap.entrySet()) {
             i iVar2 = (i) ((List) entry.getValue()).get(0);
-            m.a b10 = yb.m.a().f(p.DEFAULT).g(this.f12647f.a()).h(this.f12646e.a()).b(k.a().c(k.b.ANDROID_FIREBASE).b(yb.a.a().m(Integer.valueOf(iVar2.g("sdk-version"))).j(iVar2.b("model")).f(iVar2.b("hardware")).d(iVar2.b("device")).l(iVar2.b("product")).k(iVar2.b("os-uild")).h(iVar2.b("manufacturer")).e(iVar2.b("fingerprint")).c(iVar2.b(AdRevenueScheme.COUNTRY)).g(iVar2.b("locale")).i(iVar2.b("mcc_mnc")).b(iVar2.b("application_build")).a()).a());
+            m.a b10 = yb.m.a().f(p.DEFAULT).g(this.f12276f.a()).h(this.f12275e.a()).b(k.a().c(k.b.ANDROID_FIREBASE).b(yb.a.a().m(Integer.valueOf(iVar2.g("sdk-version"))).j(iVar2.b("model")).f(iVar2.b("hardware")).d(iVar2.b("device")).l(iVar2.b("product")).k(iVar2.b("os-uild")).h(iVar2.b("manufacturer")).e(iVar2.b("fingerprint")).c(iVar2.b(AdRevenueScheme.COUNTRY)).g(iVar2.b("locale")).i(iVar2.b("mcc_mnc")).b(iVar2.b("application_build")).a()).a());
             try {
                 b10.i(Integer.parseInt((String) entry.getKey()));
             } catch (NumberFormatException unused) {
@@ -318,14 +318,14 @@ public final class d implements m {
 
     @Override // ac.m
     public i a(i iVar) {
-        NetworkInfo activeNetworkInfo = this.f12643b.getActiveNetworkInfo();
-        return iVar.l().a("sdk-version", Build.VERSION.SDK_INT).c("model", Build.MODEL).c("hardware", Build.HARDWARE).c("device", Build.DEVICE).c("product", Build.PRODUCT).c("os-uild", Build.ID).c("manufacturer", Build.MANUFACTURER).c("fingerprint", Build.FINGERPRINT).b("tz-offset", k()).a("net-type", g(activeNetworkInfo)).a("mobile-subtype", f(activeNetworkInfo)).c(AdRevenueScheme.COUNTRY, Locale.getDefault().getCountry()).c("locale", Locale.getDefault().getLanguage()).c("mcc_mnc", j(this.f12644c).getSimOperator()).c("application_build", Integer.toString(h(this.f12644c))).d();
+        NetworkInfo activeNetworkInfo = this.f12272b.getActiveNetworkInfo();
+        return iVar.l().a("sdk-version", Build.VERSION.SDK_INT).c("model", Build.MODEL).c("hardware", Build.HARDWARE).c("device", Build.DEVICE).c("product", Build.PRODUCT).c("os-uild", Build.ID).c("manufacturer", Build.MANUFACTURER).c("fingerprint", Build.FINGERPRINT).b("tz-offset", k()).a("net-type", g(activeNetworkInfo)).a("mobile-subtype", f(activeNetworkInfo)).c(AdRevenueScheme.COUNTRY, Locale.getDefault().getCountry()).c("locale", Locale.getDefault().getLanguage()).c("mcc_mnc", j(this.f12273c).getSimOperator()).c("application_build", Integer.toString(h(this.f12273c))).d();
     }
 
     @Override // ac.m
     public g b(f fVar) {
         j i10 = i(fVar);
-        URL url = this.f12645d;
+        URL url = this.f12274d;
         String str = null;
         if (fVar.c() != null) {
             try {
@@ -354,9 +354,9 @@ public final class d implements m {
                     return d.d((d.a) obj, (d.b) obj2);
                 }
             });
-            int i11 = bVar.f12652a;
+            int i11 = bVar.f12281a;
             if (i11 == 200) {
-                return g.e(bVar.f12654c);
+                return g.e(bVar.f12283c);
             }
             if (i11 < 500 && i11 != 404) {
                 if (i11 == 400) {

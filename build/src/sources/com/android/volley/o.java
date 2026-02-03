@@ -13,37 +13,37 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final AtomicInteger f9206a;
+    private final AtomicInteger f8835a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f9207b;
+    private final Set f8836b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final PriorityBlockingQueue f9208c;
+    private final PriorityBlockingQueue f8837c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final PriorityBlockingQueue f9209d;
+    private final PriorityBlockingQueue f8838d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b f9210e;
+    private final b f8839e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final h f9211f;
+    private final h f8840f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final q f9212g;
+    private final q f8841g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final i[] f9213h;
+    private final i[] f8842h;
 
     /* renamed from: i  reason: collision with root package name */
-    private c f9214i;
+    private c f8843i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final List f9215j;
+    private final List f8844j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final List f9216k;
+    private final List f8845k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -51,22 +51,22 @@ public class o {
     }
 
     public o(b bVar, h hVar, int i10, q qVar) {
-        this.f9206a = new AtomicInteger();
-        this.f9207b = new HashSet();
-        this.f9208c = new PriorityBlockingQueue();
-        this.f9209d = new PriorityBlockingQueue();
-        this.f9215j = new ArrayList();
-        this.f9216k = new ArrayList();
-        this.f9210e = bVar;
-        this.f9211f = hVar;
-        this.f9213h = new i[i10];
-        this.f9212g = qVar;
+        this.f8835a = new AtomicInteger();
+        this.f8836b = new HashSet();
+        this.f8837c = new PriorityBlockingQueue();
+        this.f8838d = new PriorityBlockingQueue();
+        this.f8844j = new ArrayList();
+        this.f8845k = new ArrayList();
+        this.f8839e = bVar;
+        this.f8840f = hVar;
+        this.f8842h = new i[i10];
+        this.f8841g = qVar;
     }
 
     public n a(n nVar) {
         nVar.setRequestQueue(this);
-        synchronized (this.f9207b) {
-            this.f9207b.add(nVar);
+        synchronized (this.f8836b) {
+            this.f8836b.add(nVar);
         }
         nVar.setSequence(e());
         nVar.addMarker("add-to-queue");
@@ -79,14 +79,14 @@ public class o {
         if (!nVar.shouldCache()) {
             g(nVar);
         } else {
-            this.f9208c.add(nVar);
+            this.f8837c.add(nVar);
         }
     }
 
     public void c(a aVar) {
-        synchronized (this.f9207b) {
+        synchronized (this.f8836b) {
             try {
-                for (n nVar : this.f9207b) {
+                for (n nVar : this.f8836b) {
                     if (aVar.a(nVar)) {
                         nVar.cancel();
                     }
@@ -99,11 +99,11 @@ public class o {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d(n nVar) {
-        synchronized (this.f9207b) {
-            this.f9207b.remove(nVar);
+        synchronized (this.f8836b) {
+            this.f8836b.remove(nVar);
         }
-        synchronized (this.f9215j) {
-            Iterator it = this.f9215j.iterator();
+        synchronized (this.f8844j) {
+            Iterator it = this.f8844j.iterator();
             if (it.hasNext()) {
                 android.support.v4.media.session.b.a(it.next());
                 throw null;
@@ -113,14 +113,14 @@ public class o {
     }
 
     public int e() {
-        return this.f9206a.incrementAndGet();
+        return this.f8835a.incrementAndGet();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(n nVar, int i10) {
-        synchronized (this.f9216k) {
+        synchronized (this.f8845k) {
             try {
-                Iterator it = this.f9216k.iterator();
+                Iterator it = this.f8845k.iterator();
                 if (it.hasNext()) {
                     android.support.v4.media.session.b.a(it.next());
                     throw null;
@@ -133,28 +133,28 @@ public class o {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(n nVar) {
-        this.f9209d.add(nVar);
+        this.f8838d.add(nVar);
     }
 
     public void h() {
         i();
-        c cVar = new c(this.f9208c, this.f9209d, this.f9210e, this.f9212g);
-        this.f9214i = cVar;
+        c cVar = new c(this.f8837c, this.f8838d, this.f8839e, this.f8841g);
+        this.f8843i = cVar;
         cVar.start();
-        for (int i10 = 0; i10 < this.f9213h.length; i10++) {
-            i iVar = new i(this.f9209d, this.f9211f, this.f9210e, this.f9212g);
-            this.f9213h[i10] = iVar;
+        for (int i10 = 0; i10 < this.f8842h.length; i10++) {
+            i iVar = new i(this.f8838d, this.f8840f, this.f8839e, this.f8841g);
+            this.f8842h[i10] = iVar;
             iVar.start();
         }
     }
 
     public void i() {
         i[] iVarArr;
-        c cVar = this.f9214i;
+        c cVar = this.f8843i;
         if (cVar != null) {
             cVar.d();
         }
-        for (i iVar : this.f9213h) {
+        for (i iVar : this.f8842h) {
             if (iVar != null) {
                 iVar.e();
             }

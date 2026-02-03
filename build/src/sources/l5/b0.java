@@ -5,22 +5,22 @@ import java.util.Arrays;
 public final class b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f36888a;
+    private final Object f37002a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Throwable f36889b;
+    private final Throwable f37003b;
 
     public b0(Object obj) {
-        this.f36888a = obj;
-        this.f36889b = null;
+        this.f37002a = obj;
+        this.f37003b = null;
     }
 
     public Throwable a() {
-        return this.f36889b;
+        return this.f37003b;
     }
 
     public Object b() {
-        return this.f36888a;
+        return this.f37002a;
     }
 
     public boolean equals(Object obj) {
@@ -45,7 +45,7 @@ public final class b0 {
     }
 
     public b0(Throwable th2) {
-        this.f36889b = th2;
-        this.f36888a = null;
+        this.f37003b = th2;
+        this.f37002a = null;
     }
 }

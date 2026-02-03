@@ -1,8 +1,8 @@
 package com.discord.chat.presentation.list;
 
 import androidx.recyclerview.widget.RecyclerView;
-import gs.c1;
-import gs.m0;
+import hs.c1;
+import hs.m0;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -38,17 +38,17 @@ final class ChatListViewFactoryKt$fillAccessories$1$1$1 extends kotlin.coroutine
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            or.b.f();
+            pr.b.f();
             if (this.label == 0) {
                 kotlin.c.b(obj);
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
@@ -67,7 +67,7 @@ final class ChatListViewFactoryKt$fillAccessories$1$1$1 extends kotlin.coroutine
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        Object f10 = or.b.f();
+        Object f10 = pr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -84,15 +84,15 @@ final class ChatListViewFactoryKt$fillAccessories$1$1$1 extends kotlin.coroutine
             c1 c10 = m0.c();
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(null);
             this.label = 1;
-            if (gs.g.g(c10, anonymousClass2, this) == f10) {
+            if (hs.g.g(c10, anonymousClass2, this) == f10) {
                 return f10;
             }
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatListViewFactoryKt$fillAccessories$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((ChatListViewFactoryKt$fillAccessories$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

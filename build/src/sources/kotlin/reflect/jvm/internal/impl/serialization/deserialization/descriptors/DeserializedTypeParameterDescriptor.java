@@ -18,13 +18,13 @@ import org.jetbrains.annotations.NotNull;
 public final class DeserializedTypeParameterDescriptor extends AbstractLazyTypeParameterDescriptor {
 
     /* renamed from: v  reason: collision with root package name */
-    private final DeserializationContext f35726v;
+    private final DeserializationContext f35502v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final ProtoBuf.TypeParameter f35727w;
+    private final ProtoBuf.TypeParameter f35503w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final DeserializedAnnotations f35728x;
+    private final DeserializedAnnotations f35504x;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -56,14 +56,14 @@ public final class DeserializedTypeParameterDescriptor extends AbstractLazyTypeP
             r1 = r11
             r8 = r14
             r1.<init>(r2, r3, r4, r5, r6, r7, r8, r9, r10)
-            r1.f35726v = r12
-            r1.f35727w = r13
+            r1.f35502v = r12
+            r1.f35503w = r13
             kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedAnnotations r13 = new kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedAnnotations
             kotlin.reflect.jvm.internal.impl.storage.StorageManager r12 = r12.getStorageManager()
             kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.e0 r14 = new kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.e0
             r14.<init>(r11)
             r13.<init>(r12, r14)
-            r1.f35728x = r13
+            r1.f35504x = r13
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedTypeParameterDescriptor.<init>(kotlin.reflect.jvm.internal.impl.serialization.deserialization.DeserializationContext, kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$TypeParameter, int):void");
@@ -71,17 +71,17 @@ public final class DeserializedTypeParameterDescriptor extends AbstractLazyTypeP
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List e(DeserializedTypeParameterDescriptor deserializedTypeParameterDescriptor) {
-        return CollectionsKt.h1(deserializedTypeParameterDescriptor.f35726v.getComponents().getAnnotationAndConstantLoader().loadTypeParameterAnnotations(deserializedTypeParameterDescriptor.f35727w, deserializedTypeParameterDescriptor.f35726v.getNameResolver()));
+        return CollectionsKt.h1(deserializedTypeParameterDescriptor.f35502v.getComponents().getAnnotationAndConstantLoader().loadTypeParameterAnnotations(deserializedTypeParameterDescriptor.f35503w, deserializedTypeParameterDescriptor.f35502v.getNameResolver()));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.AbstractTypeParameterDescriptor
     protected List c() {
-        List<ProtoBuf.Type> upperBounds = ProtoTypeTableUtilKt.upperBounds(this.f35727w, this.f35726v.getTypeTable());
+        List<ProtoBuf.Type> upperBounds = ProtoTypeTableUtilKt.upperBounds(this.f35503w, this.f35502v.getTypeTable());
         if (upperBounds.isEmpty()) {
             return CollectionsKt.e(DescriptorUtilsKt.getBuiltIns(this).getDefaultBound());
         }
         List<ProtoBuf.Type> list = upperBounds;
-        TypeDeserializer typeDeserializer = this.f35726v.getTypeDeserializer();
+        TypeDeserializer typeDeserializer = this.f35502v.getTypeDeserializer();
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (ProtoBuf.Type type : list) {
             arrayList.add(typeDeserializer.type(type));
@@ -100,6 +100,6 @@ public final class DeserializedTypeParameterDescriptor extends AbstractLazyTypeP
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotatedImpl, kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotated
     @NotNull
     public DeserializedAnnotations getAnnotations() {
-        return this.f35728x;
+        return this.f35504x;
     }
 }

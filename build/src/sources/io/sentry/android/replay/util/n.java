@@ -16,9 +16,9 @@ import android.view.ViewParent;
 import android.view.ViewTreeObserver;
 import android.widget.TextView;
 import io.sentry.k7;
-import ir.v;
 import java.util.ArrayList;
 import java.util.List;
+import jr.v;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
@@ -184,7 +184,7 @@ public abstract class n {
         Intrinsics.checkNotNullParameter(view, "<this>");
         Intrinsics.checkNotNullParameter(parentNode, "parentNode");
         Intrinsics.checkNotNullParameter(options, "options");
-        if ((view instanceof ViewGroup) && !io.sentry.android.replay.viewhierarchy.a.f29730a.a(view, parentNode, options)) {
+        if ((view instanceof ViewGroup) && !io.sentry.android.replay.viewhierarchy.a.f29296a.a(view, parentNode, options)) {
             ViewGroup viewGroup = (ViewGroup) view;
             if (viewGroup.getChildCount() == 0) {
                 return;
@@ -194,7 +194,7 @@ public abstract class n {
             for (int i10 = 0; i10 < childCount; i10++) {
                 View childAt = viewGroup.getChildAt(i10);
                 if (childAt != null) {
-                    io.sentry.android.replay.viewhierarchy.b a10 = io.sentry.android.replay.viewhierarchy.b.f29734m.a(childAt, parentNode, viewGroup.indexOfChild(childAt), options);
+                    io.sentry.android.replay.viewhierarchy.b a10 = io.sentry.android.replay.viewhierarchy.b.f29300m.a(childAt, parentNode, viewGroup.indexOfChild(childAt), options);
                     arrayList.add(a10);
                     k(childAt, a10, options);
                 }

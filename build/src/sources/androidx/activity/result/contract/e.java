@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.ext.SdkExtensions;
 import androidx.activity.result.contract.ActivityResultContract;
-import ir.p;
+import jr.p;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -16,7 +16,7 @@ import kotlin.jvm.internal.Intrinsics;
 public class e extends ActivityResultContract {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f884a = new a(null);
+    public static final a f928a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -34,7 +34,7 @@ public class e extends ActivityResultContract {
             if (input instanceof d) {
                 return "image/*";
             }
-            if (input instanceof C0013e) {
+            if (input instanceof C0017e) {
                 return "video/*";
             }
             if (input instanceof c) {
@@ -73,10 +73,10 @@ public class e extends ActivityResultContract {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final a f885a = new a();
+            public static final a f929a = new a();
 
             /* renamed from: b  reason: collision with root package name */
-            private static final int f886b = 1;
+            private static final int f930b = 1;
 
             private a() {
                 super(null);
@@ -84,7 +84,7 @@ public class e extends ActivityResultContract {
 
             @Override // androidx.activity.result.contract.e.b
             public int a() {
-                return f886b;
+                return f930b;
             }
         }
 
@@ -102,7 +102,7 @@ public class e extends ActivityResultContract {
     public static final class c implements f {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final c f887a = new c();
+        public static final c f931a = new c();
 
         private c() {
         }
@@ -112,7 +112,7 @@ public class e extends ActivityResultContract {
     public static final class d implements f {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final d f888a = new d();
+        public static final d f932a = new d();
 
         private d() {
         }
@@ -120,12 +120,12 @@ public class e extends ActivityResultContract {
 
     /* renamed from: androidx.activity.result.contract.e$e  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0013e implements f {
+    public static final class C0017e implements f {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0013e f889a = new C0013e();
+        public static final C0017e f933a = new C0017e();
 
-        private C0013e() {
+        private C0017e() {
         }
     }
 
@@ -138,7 +138,7 @@ public class e extends ActivityResultContract {
     public Intent createIntent(Context context, d.f input) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(input, "input");
-        a aVar = f884a;
+        a aVar = f928a;
         if (aVar.d()) {
             Intent intent = new Intent("android.provider.action.PICK_IMAGES");
             intent.setType(aVar.b(input.d()));
@@ -191,7 +191,7 @@ public class e extends ActivityResultContract {
         }
         Uri data = intent.getData();
         if (data == null) {
-            return (Uri) CollectionsKt.firstOrNull(androidx.activity.result.contract.a.f881a.a(intent));
+            return (Uri) CollectionsKt.firstOrNull(androidx.activity.result.contract.a.f925a.a(intent));
         }
         return data;
     }

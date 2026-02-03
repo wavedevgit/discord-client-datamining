@@ -8,34 +8,34 @@ import java.util.Comparator;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Rational f7072a = new Rational(4, 3);
+    public static final Rational f6123a = new Rational(4, 3);
 
     /* renamed from: b  reason: collision with root package name */
-    public static final Rational f7073b = new Rational(3, 4);
+    public static final Rational f6124b = new Rational(3, 4);
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Rational f7074c = new Rational(16, 9);
+    public static final Rational f6125c = new Rational(16, 9);
 
     /* renamed from: d  reason: collision with root package name */
-    public static final Rational f7075d = new Rational(9, 16);
+    public static final Rational f6126d = new Rational(9, 16);
 
     /* renamed from: b0.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0105a implements Comparator {
+    public static final class C0104a implements Comparator {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Rational f7076d;
+        private final Rational f6127d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final RectF f7077e;
+        private final RectF f6128e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Rational f7078i;
+        private final Rational f6129i;
 
-        public C0105a(Rational rational, Rational rational2) {
-            this.f7076d = rational;
-            this.f7078i = rational2 == null ? new Rational(4, 3) : rational2;
-            this.f7077e = h(rational);
+        public C0104a(Rational rational, Rational rational2) {
+            this.f6127d = rational;
+            this.f6129i = rational2 == null ? new Rational(4, 3) : rational2;
+            this.f6128e = g(rational);
         }
 
         private float b(RectF rectF) {
@@ -58,17 +58,17 @@ public abstract class a {
             return width * height;
         }
 
-        private RectF h(Rational rational) {
-            if (rational.floatValue() == this.f7078i.floatValue()) {
-                return new RectF(0.0f, 0.0f, this.f7078i.getNumerator(), this.f7078i.getDenominator());
+        private RectF g(Rational rational) {
+            if (rational.floatValue() == this.f6129i.floatValue()) {
+                return new RectF(0.0f, 0.0f, this.f6129i.getNumerator(), this.f6129i.getDenominator());
             }
-            if (rational.floatValue() > this.f7078i.floatValue()) {
-                return new RectF(0.0f, 0.0f, this.f7078i.getNumerator(), (rational.getDenominator() * this.f7078i.getNumerator()) / rational.getNumerator());
+            if (rational.floatValue() > this.f6129i.floatValue()) {
+                return new RectF(0.0f, 0.0f, this.f6129i.getNumerator(), (rational.getDenominator() * this.f6129i.getNumerator()) / rational.getNumerator());
             }
-            return new RectF(0.0f, 0.0f, (rational.getNumerator() * this.f7078i.getDenominator()) / rational.getDenominator(), this.f7078i.getDenominator());
+            return new RectF(0.0f, 0.0f, (rational.getNumerator() * this.f6129i.getDenominator()) / rational.getDenominator(), this.f6129i.getDenominator());
         }
 
-        private boolean j(RectF rectF, RectF rectF2) {
+        private boolean h(RectF rectF, RectF rectF2) {
             if (rectF.width() >= rectF2.width() && rectF.height() >= rectF2.height()) {
                 return true;
             }
@@ -81,25 +81,25 @@ public abstract class a {
             if (rational.equals(rational2)) {
                 return 0;
             }
-            RectF h10 = h(rational);
-            RectF h11 = h(rational2);
-            boolean j10 = j(h10, this.f7077e);
-            boolean j11 = j(h11, this.f7077e);
-            if (j10 && j11) {
-                return (int) Math.signum(b(h10) - b(h11));
+            RectF g10 = g(rational);
+            RectF g11 = g(rational2);
+            boolean h10 = h(g10, this.f6128e);
+            boolean h11 = h(g11, this.f6128e);
+            if (h10 && h11) {
+                return (int) Math.signum(b(g10) - b(g11));
             }
-            if (j10) {
+            if (h10) {
                 return -1;
             }
-            if (j11) {
+            if (h11) {
                 return 1;
             }
-            return -((int) Math.signum(c(h10, this.f7077e) - c(h11, this.f7077e)));
+            return -((int) Math.signum(c(g10, this.f6128e) - c(g11, this.f6128e)));
         }
     }
 
     public static boolean a(Size size, Rational rational) {
-        return b(size, rational, i0.d.f28339c);
+        return b(size, rational, i0.d.f27986c);
     }
 
     public static boolean b(Size size, Rational rational, Size size2) {

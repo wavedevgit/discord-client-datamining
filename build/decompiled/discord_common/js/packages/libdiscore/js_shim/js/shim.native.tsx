@@ -112,4 +112,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.isLibdiscoreInitialized;
     var2.isLibdiscoreInitialized = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4085, 2, 4087]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4115, 2, 4117]);

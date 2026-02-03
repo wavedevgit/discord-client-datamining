@@ -1,27 +1,20 @@
 package tp;
 
-import java.util.HashMap;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import wm.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f49796a = new a(null);
-
-    /* renamed from: b  reason: collision with root package name */
-    private static final HashMap f49797b = new HashMap();
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    public static final void a(a0 a0Var, int i10) {
+        a aVar;
+        Intrinsics.checkNotNullParameter(a0Var, "<this>");
+        Object obj = a0Var.b().get(b.f49990b);
+        if (obj instanceof a) {
+            aVar = (a) obj;
+        } else {
+            aVar = null;
         }
-
-        public final HashMap a() {
-            return c.f49797b;
-        }
-
-        private a() {
+        if (aVar != null) {
+            aVar.a(i10);
         }
     }
 }

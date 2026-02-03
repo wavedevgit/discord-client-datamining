@@ -8,36 +8,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var0.Object;
     var3 = var6.defineProperty;
     var1 = {};
-    var10 = true;
-    var1.value = var10;
+    var9 = true;
+    var1.value = var9;
     var0 = '__esModule';
     var0 = var3.bind(var6)(var2, var0, var1);
     var0 = 0;
     var1 = var5[var0];
     var0 = undefined;
-    var7 = var4.bind(var0)(var1);
-    var6 = var7.createExperiment;
+    var6 = var4.bind(var0)(var1);
+    var3 = var6.createApexExperiment;
     var1 = {
-        'kind': 'user',
-        'id': '2024-09_bug_reporter',
-        'label': 'Bug Reporter'
+        'name': '2026-01-bug-reporter',
+        'kind': 'user'
     };
-    var3 = {};
+    var7 = {};
     var8 = false;
-    var3.hasBugReporterAccess = var8;
-    var1.defaultConfig = var3;
-    var9 = {
-        'id': 1,
-        'label': '🐛'
-    };
-    var3 = 1;
+    var7.hasBugReporterAccess = var8;
+    var1.defaultConfig = var7;
+    var7 = {};
     var8 = {};
-    var8.hasBugReporterAccess = var10;
-    var9.config = var8;
-    var8 = new Array(1);
-    var8[0] = var9;
-    var1.treatments = var8;
-    var1 = var6.bind(var7)(var1);
+    var8.hasBugReporterAccess = var9;
+    var7[1] = var8;
+    var1.variations = var7;
+    var1 = var3.bind(var6)(var1);
+    var3 = 1;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -45,4 +39,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3076, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1301, 2]);

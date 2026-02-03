@@ -22,6 +22,6 @@ public final class ForwardBreadcrumbViewHolder extends MessagePartViewHolder {
     public final void bind(@NotNull ForwardBreadcrumbMessageAccessory accessory, @NotNull Function3 onTapForwardFooter) {
         Intrinsics.checkNotNullParameter(accessory, "accessory");
         Intrinsics.checkNotNullParameter(onTapForwardFooter, "onTapForwardFooter");
-        this.breadcrumbView.m694configureJjTCmh4(accessory.m585getChannelIdo4g7jtM(), accessory.mo536getMessageId3Eiw7ao(), accessory.getForwardInfo(), onTapForwardFooter);
+        this.breadcrumbView.m696configureJjTCmh4(accessory.m587getChannelIdo4g7jtM(), accessory.mo538getMessageId3Eiw7ao(), accessory.getForwardInfo(), onTapForwardFooter);
     }
 }

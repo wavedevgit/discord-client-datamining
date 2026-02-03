@@ -8,38 +8,38 @@ import java.util.Set;
 public final class e0 implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Set f47435a;
+    private final Set f47690a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f47436b;
+    private final Set f47691b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f47437c;
+    private final Set f47692c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Set f47438d;
+    private final Set f47693d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Set f47439e;
+    private final Set f47694e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Set f47440f;
+    private final Set f47695f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final d f47441g;
+    private final d f47696g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static class a implements yi.c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Set f47442a;
+        private final Set f47697a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final yi.c f47443b;
+        private final yi.c f47698b;
 
         public a(Set set, yi.c cVar) {
-            this.f47442a = set;
-            this.f47443b = cVar;
+            this.f47697a = set;
+            this.f47698b = cVar;
         }
     }
 
@@ -68,23 +68,23 @@ public final class e0 implements d {
         if (!cVar.k().isEmpty()) {
             hashSet.add(d0.b(yi.c.class));
         }
-        this.f47435a = Collections.unmodifiableSet(hashSet);
-        this.f47436b = Collections.unmodifiableSet(hashSet2);
-        this.f47437c = Collections.unmodifiableSet(hashSet3);
-        this.f47438d = Collections.unmodifiableSet(hashSet4);
-        this.f47439e = Collections.unmodifiableSet(hashSet5);
-        this.f47440f = cVar.k();
-        this.f47441g = dVar;
+        this.f47690a = Collections.unmodifiableSet(hashSet);
+        this.f47691b = Collections.unmodifiableSet(hashSet2);
+        this.f47692c = Collections.unmodifiableSet(hashSet3);
+        this.f47693d = Collections.unmodifiableSet(hashSet4);
+        this.f47694e = Collections.unmodifiableSet(hashSet5);
+        this.f47695f = cVar.k();
+        this.f47696g = dVar;
     }
 
     @Override // qi.d
     public Object a(Class cls) {
-        if (this.f47435a.contains(d0.b(cls))) {
-            Object a10 = this.f47441g.a(cls);
+        if (this.f47690a.contains(d0.b(cls))) {
+            Object a10 = this.f47696g.a(cls);
             if (!cls.equals(yi.c.class)) {
                 return a10;
             }
-            return new a(this.f47440f, (yi.c) a10);
+            return new a(this.f47695f, (yi.c) a10);
         }
         throw new s(String.format("Attempting to request an undeclared dependency %s.", cls));
     }
@@ -96,32 +96,32 @@ public final class e0 implements d {
 
     @Override // qi.d
     public Object d(d0 d0Var) {
-        if (this.f47435a.contains(d0Var)) {
-            return this.f47441g.d(d0Var);
+        if (this.f47690a.contains(d0Var)) {
+            return this.f47696g.d(d0Var);
         }
         throw new s(String.format("Attempting to request an undeclared dependency %s.", d0Var));
     }
 
     @Override // qi.d
     public bj.b e(d0 d0Var) {
-        if (this.f47439e.contains(d0Var)) {
-            return this.f47441g.e(d0Var);
+        if (this.f47694e.contains(d0Var)) {
+            return this.f47696g.e(d0Var);
         }
         throw new s(String.format("Attempting to request an undeclared dependency Provider<Set<%s>>.", d0Var));
     }
 
     @Override // qi.d
     public Set f(d0 d0Var) {
-        if (this.f47438d.contains(d0Var)) {
-            return this.f47441g.f(d0Var);
+        if (this.f47693d.contains(d0Var)) {
+            return this.f47696g.f(d0Var);
         }
         throw new s(String.format("Attempting to request an undeclared dependency Set<%s>.", d0Var));
     }
 
     @Override // qi.d
     public bj.b g(d0 d0Var) {
-        if (this.f47436b.contains(d0Var)) {
-            return this.f47441g.g(d0Var);
+        if (this.f47691b.contains(d0Var)) {
+            return this.f47696g.g(d0Var);
         }
         throw new s(String.format("Attempting to request an undeclared dependency Provider<%s>.", d0Var));
     }

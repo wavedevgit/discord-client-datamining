@@ -226,7 +226,7 @@ public final class InputText implements UiComponentConfig {
         static {
             AutofillHint[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
             Companion = new Companion(null);
         }
 
@@ -322,7 +322,7 @@ public final class InputText implements UiComponentConfig {
         static {
             InputType[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
             Companion = new Companion(null);
         }
 

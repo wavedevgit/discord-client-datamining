@@ -6,29 +6,29 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f extends i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Drawable f25733a;
+    private final Drawable f25828a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f25734b;
+    private final h f25829b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Throwable f25735c;
+    private final Throwable f25830c;
 
     public f(Drawable drawable, h hVar, Throwable th2) {
         super(null);
-        this.f25733a = drawable;
-        this.f25734b = hVar;
-        this.f25735c = th2;
+        this.f25828a = drawable;
+        this.f25829b = hVar;
+        this.f25830c = th2;
     }
 
     @Override // g5.i
     public Drawable a() {
-        return this.f25733a;
+        return this.f25828a;
     }
 
     @Override // g5.i
     public h b() {
-        return this.f25734b;
+        return this.f25829b;
     }
 
     public boolean equals(Object obj) {
@@ -37,7 +37,7 @@ public final class f extends i {
         }
         if (obj instanceof f) {
             f fVar = (f) obj;
-            if (Intrinsics.areEqual(a(), fVar.a()) && Intrinsics.areEqual(b(), fVar.b()) && Intrinsics.areEqual(this.f25735c, fVar.f25735c)) {
+            if (Intrinsics.areEqual(a(), fVar.a()) && Intrinsics.areEqual(b(), fVar.b()) && Intrinsics.areEqual(this.f25830c, fVar.f25830c)) {
                 return true;
             }
             return false;
@@ -53,6 +53,6 @@ public final class f extends i {
         } else {
             i10 = 0;
         }
-        return (((i10 * 31) + b().hashCode()) * 31) + this.f25735c.hashCode();
+        return (((i10 * 31) + b().hashCode()) * 31) + this.f25830c.hashCode();
     }
 }

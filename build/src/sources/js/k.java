@@ -1,120 +1,153 @@
 package js;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
-/* JADX INFO: Access modifiers changed from: package-private */
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract /* synthetic */ class k {
+public final class k {
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* renamed from: b  reason: collision with root package name */
+    public static final b f32268b = new b(null);
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final c f32269c = new c();
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Object f32270a;
+
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a extends kotlin.coroutines.jvm.internal.d {
+    public static final class a extends c {
 
-        /* renamed from: d  reason: collision with root package name */
-        Object f32548d;
+        /* renamed from: a  reason: collision with root package name */
+        public final Throwable f32271a;
 
-        /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f32549e;
-
-        /* renamed from: i  reason: collision with root package name */
-        int f32550i;
-
-        a(Continuation continuation) {
-            super(continuation);
+        public a(Throwable th2) {
+            this.f32271a = th2;
         }
 
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Object invokeSuspend(Object obj) {
-            this.f32549e = obj;
-            this.f32550i |= Integer.MIN_VALUE;
-            return g.J(null, null, this);
+        public boolean equals(Object obj) {
+            if ((obj instanceof a) && Intrinsics.areEqual(this.f32271a, ((a) obj).f32271a)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            Throwable th2 = this.f32271a;
+            if (th2 != null) {
+                return th2.hashCode();
+            }
+            return 0;
+        }
+
+        @Override // js.k.c
+        public String toString() {
+            return "Closed(" + this.f32271a + ')';
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b implements FlowCollector {
-
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Collection f32551d;
-
-        b(Collection collection) {
-            this.f32551d = collection;
+    public static final class b {
+        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
 
-        @Override // kotlinx.coroutines.flow.FlowCollector
-        public final Object emit(Object obj, Continuation continuation) {
-            this.f32551d.add(obj);
-            return Unit.f33298a;
+        public final Object a(Throwable th2) {
+            return k.c(new a(th2));
+        }
+
+        public final Object b() {
+            return k.c(k.f32269c);
+        }
+
+        public final Object c(Object obj) {
+            return k.c(obj);
+        }
+
+        private b() {
         }
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
-    /* JADX WARN: Removed duplicated region for block: B:15:0x0035  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public static final java.lang.Object a(kotlinx.coroutines.flow.Flow r4, java.util.Collection r5, kotlin.coroutines.Continuation r6) {
-        /*
-            boolean r0 = r6 instanceof js.k.a
-            if (r0 == 0) goto L13
-            r0 = r6
-            js.k$a r0 = (js.k.a) r0
-            int r1 = r0.f32550i
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r3 = r1 & r2
-            if (r3 == 0) goto L13
-            int r1 = r1 - r2
-            r0.f32550i = r1
-            goto L18
-        L13:
-            js.k$a r0 = new js.k$a
-            r0.<init>(r6)
-        L18:
-            java.lang.Object r6 = r0.f32549e
-            java.lang.Object r1 = or.b.f()
-            int r2 = r0.f32550i
-            r3 = 1
-            if (r2 == 0) goto L35
-            if (r2 != r3) goto L2d
-            java.lang.Object r4 = r0.f32548d
-            java.util.Collection r4 = (java.util.Collection) r4
-            kotlin.c.b(r6)
-            return r4
-        L2d:
-            java.lang.IllegalStateException r4 = new java.lang.IllegalStateException
-            java.lang.String r5 = "call to 'resume' before 'invoke' with coroutine"
-            r4.<init>(r5)
-            throw r4
-        L35:
-            kotlin.c.b(r6)
-            js.k$b r6 = new js.k$b
-            r6.<init>(r5)
-            r0.f32548d = r5
-            r0.f32550i = r3
-            java.lang.Object r4 = r4.collect(r6, r0)
-            if (r4 != r1) goto L48
-            return r1
-        L48:
-            return r5
-        */
-        throw new UnsupportedOperationException("Method not decompiled: js.k.a(kotlinx.coroutines.flow.Flow, java.util.Collection, kotlin.coroutines.Continuation):java.lang.Object");
-    }
-
-    public static final Object b(Flow flow, List list, Continuation continuation) {
-        return g.J(flow, list, continuation);
-    }
-
-    public static /* synthetic */ Object c(Flow flow, List list, Continuation continuation, int i10, Object obj) {
-        if ((i10 & 1) != 0) {
-            list = new ArrayList();
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static class c {
+        public String toString() {
+            return "Failed";
         }
-        return g.K(flow, list, continuation);
+    }
+
+    private /* synthetic */ k(Object obj) {
+        this.f32270a = obj;
+    }
+
+    public static final /* synthetic */ k b(Object obj) {
+        return new k(obj);
+    }
+
+    public static boolean d(Object obj, Object obj2) {
+        if (!(obj2 instanceof k) || !Intrinsics.areEqual(obj, ((k) obj2).k())) {
+            return false;
+        }
+        return true;
+    }
+
+    public static final Throwable e(Object obj) {
+        a aVar;
+        if (obj instanceof a) {
+            aVar = (a) obj;
+        } else {
+            aVar = null;
+        }
+        if (aVar == null) {
+            return null;
+        }
+        return aVar.f32271a;
+    }
+
+    public static final Object f(Object obj) {
+        if (!(obj instanceof c)) {
+            return obj;
+        }
+        return null;
+    }
+
+    public static int g(Object obj) {
+        if (obj == null) {
+            return 0;
+        }
+        return obj.hashCode();
+    }
+
+    public static final boolean h(Object obj) {
+        return obj instanceof a;
+    }
+
+    public static final boolean i(Object obj) {
+        return !(obj instanceof c);
+    }
+
+    public static String j(Object obj) {
+        if (obj instanceof a) {
+            return ((a) obj).toString();
+        }
+        return "Value(" + obj + ')';
+    }
+
+    public boolean equals(Object obj) {
+        return d(this.f32270a, obj);
+    }
+
+    public int hashCode() {
+        return g(this.f32270a);
+    }
+
+    public final /* synthetic */ Object k() {
+        return this.f32270a;
+    }
+
+    public String toString() {
+        return j(this.f32270a);
+    }
+
+    public static Object c(Object obj) {
+        return obj;
     }
 }

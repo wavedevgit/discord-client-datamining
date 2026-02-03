@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations;
 public class h implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final JvmBuiltInsCustomizer f33580d;
+    private final JvmBuiltInsCustomizer f33356d;
 
     public h(JvmBuiltInsCustomizer jvmBuiltInsCustomizer) {
-        this.f33580d = jvmBuiltInsCustomizer;
+        this.f33356d = jvmBuiltInsCustomizer;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Annotations n10;
-        n10 = JvmBuiltInsCustomizer.n(this.f33580d, (Pair) obj);
+        n10 = JvmBuiltInsCustomizer.n(this.f33356d, (Pair) obj);
         return n10;
     }
 }

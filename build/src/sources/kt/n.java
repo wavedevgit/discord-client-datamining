@@ -1,10 +1,5 @@
 package kt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public enum n {
-    ZERO,
-    ONE,
-    TWO,
-    FEW,
-    MANY,
-    OTHER
+public interface n {
+    boolean test(Object obj);
 }

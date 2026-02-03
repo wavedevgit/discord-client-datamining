@@ -11,10 +11,10 @@ public final class x extends tc.a {
     private static final class b implements a.f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final s0 f22093a;
+        private final s0 f21669a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ne.h0 f22094b;
+        private final ne.h0 f21670b;
 
         private a.e c(ne.h0 h0Var, long j10, long j11) {
             int i10 = -1;
@@ -27,7 +27,7 @@ public final class x extends tc.a {
                     h0Var.V(4);
                     long l10 = y.l(h0Var);
                     if (l10 != -9223372036854775807L) {
-                        long b10 = this.f22093a.b(l10);
+                        long b10 = this.f21669a.b(l10);
                         if (b10 > j10) {
                             if (j12 == -9223372036854775807L) {
                                 return a.e.d(b10, j11);
@@ -47,7 +47,7 @@ public final class x extends tc.a {
             if (j12 != -9223372036854775807L) {
                 return a.e.f(j12, j11 + i10);
             }
-            return a.e.f49410d;
+            return a.e.f49682d;
         }
 
         private static void d(ne.h0 h0Var) {
@@ -91,19 +91,19 @@ public final class x extends tc.a {
         public a.e a(tc.l lVar, long j10) {
             long position = lVar.getPosition();
             int min = (int) Math.min(20000L, lVar.getLength() - position);
-            this.f22094b.Q(min);
-            lVar.n(this.f22094b.e(), 0, min);
-            return c(this.f22094b, j10, position);
+            this.f21670b.Q(min);
+            lVar.n(this.f21670b.e(), 0, min);
+            return c(this.f21670b, j10, position);
         }
 
         @Override // tc.a.f
         public void b() {
-            this.f22094b.R(w0.f40300f);
+            this.f21670b.R(w0.f40163f);
         }
 
         private b(s0 s0Var) {
-            this.f22093a = s0Var;
-            this.f22094b = new ne.h0();
+            this.f21669a = s0Var;
+            this.f21670b = new ne.h0();
         }
     }
 

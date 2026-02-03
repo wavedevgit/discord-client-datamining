@@ -14,15 +14,15 @@ import java.util.concurrent.TimeUnit;
 public class o implements ScheduledExecutorService, AutoCloseable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ExecutorService f17348d;
+    private final ExecutorService f16977d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ScheduledExecutorService f17349e;
+    private final ScheduledExecutorService f16978e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o(ExecutorService executorService, ScheduledExecutorService scheduledExecutorService) {
-        this.f17348d = executorService;
-        this.f17349e = scheduledExecutorService;
+        this.f16977d = executorService;
+        this.f16978e = scheduledExecutorService;
     }
 
     public static /* synthetic */ void B(Runnable runnable, p.b bVar) {
@@ -61,7 +61,7 @@ public class o implements ScheduledExecutorService, AutoCloseable {
 
     @Override // java.util.concurrent.ExecutorService
     public boolean awaitTermination(long j10, TimeUnit timeUnit) {
-        return this.f17348d.awaitTermination(j10, timeUnit);
+        return this.f16977d.awaitTermination(j10, timeUnit);
     }
 
     @Override // java.lang.AutoCloseable
@@ -71,27 +71,27 @@ public class o implements ScheduledExecutorService, AutoCloseable {
 
     @Override // java.util.concurrent.Executor
     public void execute(Runnable runnable) {
-        this.f17348d.execute(runnable);
+        this.f16977d.execute(runnable);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public List invokeAll(Collection collection) {
-        return this.f17348d.invokeAll(collection);
+        return this.f16977d.invokeAll(collection);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public Object invokeAny(Collection collection) {
-        return this.f17348d.invokeAny(collection);
+        return this.f16977d.invokeAny(collection);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public boolean isShutdown() {
-        return this.f17348d.isShutdown();
+        return this.f16977d.isShutdown();
     }
 
     @Override // java.util.concurrent.ExecutorService
     public boolean isTerminated() {
-        return this.f17348d.isTerminated();
+        return this.f16977d.isTerminated();
     }
 
     @Override // java.util.concurrent.ScheduledExecutorService
@@ -100,10 +100,10 @@ public class o implements ScheduledExecutorService, AutoCloseable {
             @Override // com.google.firebase.concurrent.p.c
             public final ScheduledFuture a(p.b bVar) {
                 ScheduledFuture schedule;
-                schedule = r0.f17349e.schedule(new Runnable() { // from class: com.google.firebase.concurrent.j
+                schedule = r0.f16978e.schedule(new Runnable() { // from class: com.google.firebase.concurrent.j
                     @Override // java.lang.Runnable
                     public final void run() {
-                        o.this.f17348d.execute(new Runnable() { // from class: com.google.firebase.concurrent.m
+                        o.this.f16977d.execute(new Runnable() { // from class: com.google.firebase.concurrent.m
                             @Override // java.lang.Runnable
                             public final void run() {
                                 o.V(r1, r2);
@@ -122,10 +122,10 @@ public class o implements ScheduledExecutorService, AutoCloseable {
             @Override // com.google.firebase.concurrent.p.c
             public final ScheduledFuture a(p.b bVar) {
                 ScheduledFuture scheduleAtFixedRate;
-                scheduleAtFixedRate = r0.f17349e.scheduleAtFixedRate(new Runnable() { // from class: com.google.firebase.concurrent.i
+                scheduleAtFixedRate = r0.f16978e.scheduleAtFixedRate(new Runnable() { // from class: com.google.firebase.concurrent.i
                     @Override // java.lang.Runnable
                     public final void run() {
-                        o.this.f17348d.execute(new Runnable() { // from class: com.google.firebase.concurrent.d
+                        o.this.f16977d.execute(new Runnable() { // from class: com.google.firebase.concurrent.d
                             @Override // java.lang.Runnable
                             public final void run() {
                                 o.B(r1, r2);
@@ -144,10 +144,10 @@ public class o implements ScheduledExecutorService, AutoCloseable {
             @Override // com.google.firebase.concurrent.p.c
             public final ScheduledFuture a(p.b bVar) {
                 ScheduledFuture scheduleWithFixedDelay;
-                scheduleWithFixedDelay = r0.f17349e.scheduleWithFixedDelay(new Runnable() { // from class: com.google.firebase.concurrent.l
+                scheduleWithFixedDelay = r0.f16978e.scheduleWithFixedDelay(new Runnable() { // from class: com.google.firebase.concurrent.l
                     @Override // java.lang.Runnable
                     public final void run() {
-                        o.this.f17348d.execute(new Runnable() { // from class: com.google.firebase.concurrent.e
+                        o.this.f16977d.execute(new Runnable() { // from class: com.google.firebase.concurrent.e
                             @Override // java.lang.Runnable
                             public final void run() {
                                 o.L(r1, r2);
@@ -172,17 +172,17 @@ public class o implements ScheduledExecutorService, AutoCloseable {
 
     @Override // java.util.concurrent.ExecutorService
     public Future submit(Callable callable) {
-        return this.f17348d.submit(callable);
+        return this.f16977d.submit(callable);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public List invokeAll(Collection collection, long j10, TimeUnit timeUnit) {
-        return this.f17348d.invokeAll(collection, j10, timeUnit);
+        return this.f16977d.invokeAll(collection, j10, timeUnit);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public Object invokeAny(Collection collection, long j10, TimeUnit timeUnit) {
-        return this.f17348d.invokeAny(collection, j10, timeUnit);
+        return this.f16977d.invokeAny(collection, j10, timeUnit);
     }
 
     @Override // java.util.concurrent.ScheduledExecutorService
@@ -191,11 +191,11 @@ public class o implements ScheduledExecutorService, AutoCloseable {
             @Override // com.google.firebase.concurrent.p.c
             public final ScheduledFuture a(p.b bVar) {
                 ScheduledFuture schedule;
-                schedule = r0.f17349e.schedule(new Callable() { // from class: com.google.firebase.concurrent.k
+                schedule = r0.f16978e.schedule(new Callable() { // from class: com.google.firebase.concurrent.k
                     @Override // java.util.concurrent.Callable
                     public final Object call() {
                         Future submit;
-                        submit = o.this.f17348d.submit(new Runnable() { // from class: com.google.firebase.concurrent.n
+                        submit = o.this.f16977d.submit(new Runnable() { // from class: com.google.firebase.concurrent.n
                             @Override // java.lang.Runnable
                             public final void run() {
                                 o.n(r1, r2);
@@ -211,11 +211,11 @@ public class o implements ScheduledExecutorService, AutoCloseable {
 
     @Override // java.util.concurrent.ExecutorService
     public Future submit(Runnable runnable, Object obj) {
-        return this.f17348d.submit(runnable, obj);
+        return this.f16977d.submit(runnable, obj);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public Future submit(Runnable runnable) {
-        return this.f17348d.submit(runnable);
+        return this.f16977d.submit(runnable);
     }
 }

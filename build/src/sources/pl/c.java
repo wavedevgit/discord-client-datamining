@@ -16,52 +16,52 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c implements i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final il.b f46096a;
+    private final il.b f46170a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f46097b;
+    private final List f46171b;
 
     /* renamed from: c  reason: collision with root package name */
-    private MediaFormat f46098c;
+    private MediaFormat f46172c;
 
     /* renamed from: d  reason: collision with root package name */
-    private MediaFormat f46099d;
+    private MediaFormat f46173d;
 
     /* renamed from: e  reason: collision with root package name */
-    private double f46100e;
+    private double f46174e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f46101f;
+    private int f46175f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f46102g;
+    private int f46176g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f46103h;
+    private int f46177h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f46104i;
+    private int f46178i;
 
     /* renamed from: j  reason: collision with root package name */
-    private double f46105j;
+    private double f46179j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final rl.a f46106k;
+    private final rl.a f46180k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final b f46107l;
+    private final b f46181l;
 
     /* renamed from: m  reason: collision with root package name */
-    private pl.a f46108m;
+    private pl.a f46182m;
 
     /* renamed from: n  reason: collision with root package name */
-    private AtomicBoolean f46109n;
+    private AtomicBoolean f46183n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final LinkedBlockingDeque f46110o;
+    private final LinkedBlockingDeque f46184o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final a f46111p;
+    private final a f46185p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private final class a extends Thread {
@@ -71,45 +71,45 @@ public final class c implements i {
         private final void a(int i10, il.c cVar) {
             ByteBuffer byteBuffer;
             boolean z10;
-            il.c a10 = c.this.f46096a.a(i10);
+            il.c a10 = c.this.f46170a.a(i10);
             if (a10 != null) {
                 c cVar2 = c.this;
-                if (a10.f28593b != null && (byteBuffer = cVar.f28593b) != null) {
-                    MediaCodec.BufferInfo bufferInfo = a10.f28594c;
+                if (a10.f28240b != null && (byteBuffer = cVar.f28240b) != null) {
+                    MediaCodec.BufferInfo bufferInfo = a10.f28241c;
                     bufferInfo.offset = 0;
-                    MediaCodec.BufferInfo bufferInfo2 = cVar.f28594c;
+                    MediaCodec.BufferInfo bufferInfo2 = cVar.f28241c;
                     bufferInfo.flags = bufferInfo2.flags;
-                    bufferInfo.presentationTimeUs = bufferInfo2.presentationTimeUs + ((long) ((byteBuffer.position() / (cVar2.f46102g * 2)) * cVar2.f46100e));
-                    if (a10.f28593b.limit() >= cVar.f28593b.remaining()) {
-                        a10.f28594c.size = cVar.f28593b.remaining();
+                    bufferInfo.presentationTimeUs = bufferInfo2.presentationTimeUs + ((long) ((byteBuffer.position() / (cVar2.f46176g * 2)) * cVar2.f46174e));
+                    if (a10.f28240b.limit() >= cVar.f28240b.remaining()) {
+                        a10.f28241c.size = cVar.f28240b.remaining();
                         z10 = true;
                     } else {
-                        a10.f28594c.size = a10.f28593b.limit();
-                        a10.f28594c.flags &= -5;
+                        a10.f28241c.size = a10.f28240b.limit();
+                        a10.f28241c.flags &= -5;
                         z10 = false;
                     }
-                    int i11 = a10.f28594c.size;
+                    int i11 = a10.f28241c.size;
                     for (int i12 = 0; i12 < i11; i12++) {
-                        a10.f28593b.put(cVar.f28593b.get());
+                        a10.f28240b.put(cVar.f28240b.get());
                     }
                     if (z10) {
-                        cVar2.f46110o.removeFirst();
-                        rl.a aVar = cVar2.f46106k;
-                        ByteBuffer byteBuffer2 = cVar.f28593b;
+                        cVar2.f46184o.removeFirst();
+                        rl.a aVar = cVar2.f46180k;
+                        ByteBuffer byteBuffer2 = cVar.f28240b;
                         Intrinsics.checkNotNullExpressionValue(byteBuffer2, "inputFrame.buffer");
                         aVar.d(byteBuffer2);
                     }
-                    cVar2.f46096a.c(a10);
+                    cVar2.f46170a.c(a10);
                 }
             }
         }
 
         @Override // java.lang.Thread, java.lang.Runnable
         public void run() {
-            while (!c.this.f46109n.get()) {
-                il.c cVar = (il.c) c.this.f46110o.peekFirst();
+            while (!c.this.f46183n.get()) {
+                il.c cVar = (il.c) c.this.f46184o.peekFirst();
                 if (cVar != null) {
-                    int d10 = c.this.f46096a.d(0L);
+                    int d10 = c.this.f46170a.d(0L);
                     if (d10 >= 0) {
                         a(d10, cVar);
                     } else if (d10 != -1) {
@@ -117,7 +117,7 @@ public final class c implements i {
                     }
                 }
             }
-            c.this.f46110o.clear();
+            c.this.f46184o.clear();
         }
     }
 
@@ -129,20 +129,20 @@ public final class c implements i {
 
     @Override // pl.i
     public boolean a() {
-        return !this.f46097b.isEmpty();
+        return !this.f46171b.isEmpty();
     }
 
     @Override // pl.i
     public void b(il.c cVar, long j10) {
-        if (!this.f46109n.get() && cVar != null) {
-            il.c cVar2 = new il.c(cVar.f28592a, this.f46106k.c(((int) Math.ceil((cVar.f28594c.size / (this.f46101f * 2)) * this.f46105j)) * this.f46102g * 2), new MediaCodec.BufferInfo());
-            pl.a aVar = this.f46108m;
+        if (!this.f46183n.get() && cVar != null) {
+            il.c cVar2 = new il.c(cVar.f28239a, this.f46180k.c(((int) Math.ceil((cVar.f28241c.size / (this.f46175f * 2)) * this.f46179j)) * this.f46176g * 2), new MediaCodec.BufferInfo());
+            pl.a aVar = this.f46182m;
             if (aVar != null) {
                 aVar.a(cVar, cVar2);
             }
-            Iterator it = this.f46097b.iterator();
+            Iterator it = this.f46171b.iterator();
             if (!it.hasNext()) {
-                this.f46110o.add(cVar2);
+                this.f46184o.add(cVar2);
             } else {
                 android.support.v4.media.session.b.a(it.next());
                 throw null;
@@ -153,9 +153,9 @@ public final class c implements i {
     @Override // pl.i
     public void c(Surface surface, MediaFormat mediaFormat, MediaFormat mediaFormat2) {
         d(mediaFormat, mediaFormat2);
-        this.f46109n.set(false);
-        this.f46111p.start();
-        Iterator it = this.f46097b.iterator();
+        this.f46183n.set(false);
+        this.f46185p.start();
+        Iterator it = this.f46171b.iterator();
         if (!it.hasNext()) {
             return;
         }
@@ -170,55 +170,55 @@ public final class c implements i {
         Number number3;
         Number d10;
         Integer num = -1;
-        if (mediaFormat == null || (number = rl.e.f48358a.a(mediaFormat, num)) == null) {
+        if (mediaFormat == null || (number = rl.e.f48560a.a(mediaFormat, num)) == null) {
             number = num;
         }
-        if (mediaFormat2 == null || (number2 = rl.e.f48358a.a(mediaFormat2, num)) == null) {
+        if (mediaFormat2 == null || (number2 = rl.e.f48560a.a(mediaFormat2, num)) == null) {
             number2 = num;
         }
-        if (mediaFormat == null || (number3 = rl.e.f48358a.d(mediaFormat, num)) == null) {
+        if (mediaFormat == null || (number3 = rl.e.f48560a.d(mediaFormat, num)) == null) {
             number3 = num;
         }
-        if (mediaFormat2 != null && (d10 = rl.e.f48358a.d(mediaFormat2, num)) != null) {
+        if (mediaFormat2 != null && (d10 = rl.e.f48560a.d(mediaFormat2, num)) != null) {
             num = d10;
         }
-        int i10 = this.f46101f;
+        int i10 = this.f46175f;
         if ((number instanceof Integer) && i10 == number.intValue()) {
-            int i11 = this.f46102g;
+            int i11 = this.f46176g;
             if ((number2 instanceof Integer) && i11 == number2.intValue()) {
-                int i12 = this.f46103h;
+                int i12 = this.f46177h;
                 if ((number3 instanceof Integer) && i12 == number3.intValue()) {
-                    int i13 = this.f46104i;
+                    int i13 = this.f46178i;
                     if ((num instanceof Integer) && i13 == num.intValue()) {
                         return;
                     }
                 }
             }
         }
-        pl.a aVar = this.f46108m;
+        pl.a aVar = this.f46182m;
         if (aVar != null) {
             aVar.release();
         }
-        this.f46108m = this.f46107l.a(mediaFormat, mediaFormat2);
-        this.f46101f = number.intValue();
-        this.f46102g = number2.intValue();
-        this.f46103h = number3.intValue();
-        this.f46104i = num.intValue();
-        this.f46100e = 1000000.0d / num.doubleValue();
-        this.f46105j = num.doubleValue() / number3.doubleValue();
-        this.f46098c = mediaFormat;
-        this.f46099d = mediaFormat2;
+        this.f46182m = this.f46181l.a(mediaFormat, mediaFormat2);
+        this.f46175f = number.intValue();
+        this.f46176g = number2.intValue();
+        this.f46177h = number3.intValue();
+        this.f46178i = num.intValue();
+        this.f46174e = 1000000.0d / num.doubleValue();
+        this.f46179j = num.doubleValue() / number3.doubleValue();
+        this.f46172c = mediaFormat;
+        this.f46173d = mediaFormat2;
     }
 
     @Override // pl.i
     public void release() {
-        this.f46109n.set(true);
-        pl.a aVar = this.f46108m;
+        this.f46183n.set(true);
+        pl.a aVar = this.f46182m;
         if (aVar != null) {
             aVar.release();
         }
-        this.f46106k.b();
-        Iterator it = this.f46097b.iterator();
+        this.f46180k.b();
+        Iterator it = this.f46171b.iterator();
         if (!it.hasNext()) {
             return;
         }
@@ -228,18 +228,18 @@ public final class c implements i {
 
     public c(il.b encoder, List list) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
-        this.f46096a = encoder;
-        this.f46097b = list == null ? CollectionsKt.l() : list;
-        this.f46101f = -1;
-        this.f46102g = -1;
-        this.f46103h = -1;
-        this.f46104i = -1;
-        this.f46105j = 1.0d;
-        this.f46106k = new rl.a(true);
-        this.f46107l = new b();
-        this.f46109n = new AtomicBoolean(false);
-        this.f46110o = new LinkedBlockingDeque();
-        this.f46111p = new a();
+        this.f46170a = encoder;
+        this.f46171b = list == null ? CollectionsKt.l() : list;
+        this.f46175f = -1;
+        this.f46176g = -1;
+        this.f46177h = -1;
+        this.f46178i = -1;
+        this.f46179j = 1.0d;
+        this.f46180k = new rl.a(true);
+        this.f46181l = new b();
+        this.f46183n = new AtomicBoolean(false);
+        this.f46184o = new LinkedBlockingDeque();
+        this.f46185p = new a();
     }
 
     public /* synthetic */ c(il.b bVar, List list, int i10, DefaultConstructorMarker defaultConstructorMarker) {

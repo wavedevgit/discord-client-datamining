@@ -19,49 +19,49 @@ public class b extends Drawable implements Animatable, c9.a {
     private final Runnable B;
 
     /* renamed from: d  reason: collision with root package name */
-    private o9.a f50745d;
+    private o9.a f50869d;
 
     /* renamed from: e  reason: collision with root package name */
-    private x9.b f50746e;
+    private x9.b f50870e;
 
     /* renamed from: i  reason: collision with root package name */
-    private volatile boolean f50747i;
+    private volatile boolean f50871i;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f50748o;
+    private long f50872o;
 
     /* renamed from: p  reason: collision with root package name */
-    private long f50749p;
+    private long f50873p;
 
     /* renamed from: q  reason: collision with root package name */
-    private long f50750q;
+    private long f50874q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f50751r;
+    private int f50875r;
 
     /* renamed from: s  reason: collision with root package name */
-    private long f50752s;
+    private long f50876s;
 
     /* renamed from: t  reason: collision with root package name */
-    private long f50753t;
+    private long f50877t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f50754u;
+    private int f50878u;
 
     /* renamed from: w  reason: collision with root package name */
-    private long f50756w;
+    private long f50880w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f50757x;
+    private int f50881x;
 
     /* renamed from: z  reason: collision with root package name */
-    private final a.InterfaceC0532a f50759z;
+    private final a.InterfaceC0540a f50883z;
 
     /* renamed from: v  reason: collision with root package name */
-    private long f50755v = 8;
+    private long f50879v = 8;
 
     /* renamed from: y  reason: collision with root package name */
-    private volatile d f50758y = E;
+    private volatile d f50882y = E;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -83,8 +83,8 @@ public class b extends Drawable implements Animatable, c9.a {
 
     /* renamed from: v9.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class RunnableC0669b implements Runnable {
-        RunnableC0669b() {
+    public static final class RunnableC0681b implements Runnable {
+        RunnableC0681b() {
         }
 
         @Override // java.lang.Runnable
@@ -95,15 +95,15 @@ public class b extends Drawable implements Animatable, c9.a {
     }
 
     public b(o9.a aVar) {
-        this.f50745d = aVar;
-        a.InterfaceC0532a interfaceC0532a = new a.InterfaceC0532a() { // from class: v9.a
+        this.f50869d = aVar;
+        a.InterfaceC0540a interfaceC0540a = new a.InterfaceC0540a() { // from class: v9.a
         };
-        this.f50759z = interfaceC0532a;
-        this.B = new RunnableC0669b();
-        this.f50746e = C.b(this.f50745d);
-        o9.a aVar2 = this.f50745d;
+        this.f50883z = interfaceC0540a;
+        this.B = new RunnableC0681b();
+        this.f50870e = C.b(this.f50869d);
+        o9.a aVar2 = this.f50869d;
         if (aVar2 != null) {
-            aVar2.k(interfaceC0532a);
+            aVar2.k(interfaceC0540a);
         }
     }
 
@@ -112,21 +112,21 @@ public class b extends Drawable implements Animatable, c9.a {
     }
 
     private final void c() {
-        this.f50757x++;
+        this.f50881x++;
         if (p8.a.w(2)) {
-            p8.a.z(D, "Dropped a frame. Count: %s", Integer.valueOf(this.f50757x));
+            p8.a.z(D, "Dropped a frame. Count: %s", Integer.valueOf(this.f50881x));
         }
     }
 
     private final void d(long j10) {
-        long j11 = this.f50748o + j10;
-        this.f50750q = j11;
+        long j11 = this.f50872o + j10;
+        this.f50874q = j11;
         scheduleSelf(this.B, j11);
     }
 
     @Override // c9.a
     public void a() {
-        o9.a aVar = this.f50745d;
+        o9.a aVar = this.f50869d;
         if (aVar != null) {
             aVar.clear();
         }
@@ -136,56 +136,56 @@ public class b extends Drawable implements Animatable, c9.a {
     public void draw(Canvas canvas) {
         long max;
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        if (this.f50745d != null && this.f50746e != null) {
+        if (this.f50869d != null && this.f50870e != null) {
             long b10 = b();
-            if (this.f50747i) {
-                max = (b10 - this.f50748o) + this.f50756w;
+            if (this.f50871i) {
+                max = (b10 - this.f50872o) + this.f50880w;
             } else {
-                max = (long) Math.max(this.f50749p, 0.0d);
+                max = (long) Math.max(this.f50873p, 0.0d);
             }
-            x9.b bVar = this.f50746e;
+            x9.b bVar = this.f50870e;
             Intrinsics.checkNotNull(bVar);
-            int b11 = bVar.b(max, this.f50749p);
+            int b11 = bVar.b(max, this.f50873p);
             if (b11 != -1) {
-                if (b11 == 0 && this.f50751r != -1 && b10 >= this.f50750q) {
-                    this.f50758y.a(this);
+                if (b11 == 0 && this.f50875r != -1 && b10 >= this.f50874q) {
+                    this.f50882y.a(this);
                 }
             } else {
-                o9.a aVar = this.f50745d;
+                o9.a aVar = this.f50869d;
                 Intrinsics.checkNotNull(aVar);
                 b11 = aVar.a() - 1;
-                this.f50758y.c(this);
-                this.f50747i = false;
+                this.f50882y.c(this);
+                this.f50871i = false;
             }
-            o9.a aVar2 = this.f50745d;
+            o9.a aVar2 = this.f50869d;
             Intrinsics.checkNotNull(aVar2);
             boolean h10 = aVar2.h(this, canvas, b11);
             if (h10) {
-                this.f50758y.d(this, b11);
-                this.f50751r = b11;
+                this.f50882y.d(this, b11);
+                this.f50875r = b11;
             }
             if (!h10) {
                 c();
             }
             long b12 = b();
-            if (this.f50747i) {
-                x9.b bVar2 = this.f50746e;
+            if (this.f50871i) {
+                x9.b bVar2 = this.f50870e;
                 Intrinsics.checkNotNull(bVar2);
-                long a10 = bVar2.a(b12 - this.f50748o);
+                long a10 = bVar2.a(b12 - this.f50872o);
                 if (a10 != -1) {
-                    d(a10 + this.f50755v);
+                    d(a10 + this.f50879v);
                 } else {
-                    this.f50758y.c(this);
-                    this.f50747i = false;
+                    this.f50882y.c(this);
+                    this.f50871i = false;
                 }
             }
-            this.f50749p = max;
+            this.f50873p = max;
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicHeight() {
-        o9.a aVar = this.f50745d;
+        o9.a aVar = this.f50869d;
         if (aVar != null) {
             return aVar.c();
         }
@@ -194,7 +194,7 @@ public class b extends Drawable implements Animatable, c9.a {
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicWidth() {
-        o9.a aVar = this.f50745d;
+        o9.a aVar = this.f50869d;
         if (aVar != null) {
             return aVar.e();
         }
@@ -208,14 +208,14 @@ public class b extends Drawable implements Animatable, c9.a {
 
     @Override // android.graphics.drawable.Animatable
     public boolean isRunning() {
-        return this.f50747i;
+        return this.f50871i;
     }
 
     @Override // android.graphics.drawable.Drawable
     protected void onBoundsChange(Rect bounds) {
         Intrinsics.checkNotNullParameter(bounds, "bounds");
         super.onBoundsChange(bounds);
-        o9.a aVar = this.f50745d;
+        o9.a aVar = this.f50869d;
         if (aVar != null) {
             aVar.d(bounds);
         }
@@ -223,14 +223,14 @@ public class b extends Drawable implements Animatable, c9.a {
 
     @Override // android.graphics.drawable.Drawable
     protected boolean onLevelChange(int i10) {
-        if (this.f50747i) {
+        if (this.f50871i) {
             return false;
         }
         long j10 = i10;
-        if (this.f50749p == j10) {
+        if (this.f50873p == j10) {
             return false;
         }
-        this.f50749p = j10;
+        this.f50873p = j10;
         invalidateSelf();
         return true;
     }
@@ -243,7 +243,7 @@ public class b extends Drawable implements Animatable, c9.a {
         DrawableProperties drawableProperties = this.A;
         Intrinsics.checkNotNull(drawableProperties);
         drawableProperties.b(i10);
-        o9.a aVar = this.f50745d;
+        o9.a aVar = this.f50869d;
         if (aVar != null) {
             aVar.m(i10);
         }
@@ -257,7 +257,7 @@ public class b extends Drawable implements Animatable, c9.a {
         DrawableProperties drawableProperties = this.A;
         Intrinsics.checkNotNull(drawableProperties);
         drawableProperties.c(colorFilter);
-        o9.a aVar = this.f50745d;
+        o9.a aVar = this.f50869d;
         if (aVar != null) {
             aVar.f(colorFilter);
         }
@@ -266,37 +266,37 @@ public class b extends Drawable implements Animatable, c9.a {
     @Override // android.graphics.drawable.Animatable
     public void start() {
         o9.a aVar;
-        if (!this.f50747i && (aVar = this.f50745d) != null) {
+        if (!this.f50871i && (aVar = this.f50869d) != null) {
             Intrinsics.checkNotNull(aVar);
             if (aVar.a() > 1) {
-                this.f50747i = true;
+                this.f50871i = true;
                 long b10 = b();
-                long j10 = b10 - this.f50752s;
-                this.f50748o = j10;
-                this.f50750q = j10;
-                this.f50749p = b10 - this.f50753t;
-                this.f50751r = this.f50754u;
+                long j10 = b10 - this.f50876s;
+                this.f50872o = j10;
+                this.f50874q = j10;
+                this.f50873p = b10 - this.f50877t;
+                this.f50875r = this.f50878u;
                 invalidateSelf();
-                this.f50758y.b(this);
+                this.f50882y.b(this);
             }
         }
     }
 
     @Override // android.graphics.drawable.Animatable
     public void stop() {
-        if (!this.f50747i) {
+        if (!this.f50871i) {
             return;
         }
         long b10 = b();
-        this.f50752s = b10 - this.f50748o;
-        this.f50753t = b10 - this.f50749p;
-        this.f50754u = this.f50751r;
-        this.f50747i = false;
-        this.f50748o = 0L;
-        this.f50750q = 0L;
-        this.f50749p = -1L;
-        this.f50751r = -1;
+        this.f50876s = b10 - this.f50872o;
+        this.f50877t = b10 - this.f50873p;
+        this.f50878u = this.f50875r;
+        this.f50871i = false;
+        this.f50872o = 0L;
+        this.f50874q = 0L;
+        this.f50873p = -1L;
+        this.f50875r = -1;
         unscheduleSelf(this.B);
-        this.f50758y.c(this);
+        this.f50882y.c(this);
     }
 }

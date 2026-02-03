@@ -35,11 +35,11 @@ public final class ErrorResponseJsonAdapter extends h {
         mVar.r();
         List list = null;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
-                mVar.E0();
+            int t02 = mVar.t0(this.options);
+            if (t02 == -1) {
+                mVar.F0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 list = (List) this.nullableListOfErrorAdapter.fromJson(mVar);
             }
         }
@@ -51,7 +51,7 @@ public final class ErrorResponseJsonAdapter extends h {
     public void toJson(@NotNull t tVar, ErrorResponse errorResponse) {
         if (errorResponse != null) {
             tVar.l();
-            tVar.A0("errors");
+            tVar.t0("errors");
             this.nullableListOfErrorAdapter.toJson(tVar, errorResponse.getErrors());
             tVar.E();
             return;

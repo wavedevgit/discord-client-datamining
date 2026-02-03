@@ -6,13 +6,13 @@ import java.util.concurrent.atomic.AtomicLong;
 public final class b0 implements Serializable {
 
     /* renamed from: i  reason: collision with root package name */
-    static final AtomicLong f30814i = new AtomicLong(System.nanoTime());
+    static final AtomicLong f30380i = new AtomicLong(System.nanoTime());
 
     /* renamed from: d  reason: collision with root package name */
-    private long f30815d;
+    private long f30381d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f30816e;
+    private long f30382e;
 
     public b0() {
         this(a(), a());
@@ -23,7 +23,7 @@ public final class b0 implements Serializable {
         long j10;
         long j11;
         do {
-            atomicLong = f30814i;
+            atomicLong = f30380i;
             j10 = atomicLong.get();
             long j12 = (j10 >> 12) ^ j10;
             long j13 = j12 ^ (j12 << 25);
@@ -34,24 +34,24 @@ public final class b0 implements Serializable {
 
     public void b(byte[] bArr) {
         for (int i10 = 0; i10 < bArr.length; i10++) {
-            long j10 = (this.f30815d * 6364136223846793005L) + this.f30816e;
-            this.f30815d = j10;
+            long j10 = (this.f30381d * 6364136223846793005L) + this.f30382e;
+            this.f30381d = j10;
             bArr[i10] = (byte) ((((j10 >>> 22) ^ j10) >>> ((int) ((j10 >>> 61) + 22))) >>> 24);
         }
     }
 
     public double c() {
-        long j10 = this.f30816e;
-        long j11 = (this.f30815d * 6364136223846793005L) + j10;
+        long j10 = this.f30382e;
+        long j11 = (this.f30381d * 6364136223846793005L) + j10;
         long j12 = (j11 * 6364136223846793005L) + j10;
-        this.f30815d = j12;
+        this.f30381d = j12;
         return (((((((j11 >>> 22) ^ j11) >>> ((int) ((j11 >>> 61) + 22))) & 4294967295L) >>> 6) << 27) + (((((j12 >>> 22) ^ j12) >>> ((int) ((j12 >>> 61) + 22))) & 4294967295L) >>> 5)) / 9.007199254740992E15d;
     }
 
     public void d(long j10, long j11) {
         long j12 = (j11 << 1) | 1;
-        this.f30816e = j12;
-        this.f30815d = j12 + j10;
+        this.f30382e = j12;
+        this.f30381d = j12 + j10;
     }
 
     public b0(long j10, long j11) {

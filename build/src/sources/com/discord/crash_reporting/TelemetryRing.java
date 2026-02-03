@@ -6,7 +6,6 @@ import android.os.SystemClock;
 import com.discord.crash_reporting.TelemetryRingSqliteStore;
 import com.discord.crash_reporting.TelemetryRingTypes;
 import com.discord.logging.Log;
-import ir.v;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +20,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
+import jr.v;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Pair;
@@ -59,7 +59,7 @@ public final class TelemetryRing {
     @NotNull
     private static final AtomicReference<Thread> ioThread = new AtomicReference<>();
     @NotNull
-    private static final Lazy ioExecutor$delegate = ir.l.b(new Function0() { // from class: com.discord.crash_reporting.n
+    private static final Lazy ioExecutor$delegate = jr.l.b(new Function0() { // from class: com.discord.crash_reporting.n
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             ScheduledExecutorService ioExecutor_delegate$lambda$2;
@@ -376,7 +376,7 @@ public final class TelemetryRing {
             synchronized (initLock) {
                 if (store == null && !initScheduled) {
                     initScheduled = true;
-                    Unit unit = Unit.f33298a;
+                    Unit unit = Unit.f33074a;
                     final Context applicationContext = context.getApplicationContext();
                     if (budget == null) {
                         budget = TelemetryRingTypes.INSTANCE.defaultBudget();
@@ -412,10 +412,10 @@ public final class TelemetryRing {
         });
         Intrinsics.checkNotNullExpressionValue(submit, "submit(...)");
         try {
-            Result.a aVar = Result.f33295e;
+            Result.a aVar = Result.f33071e;
             b10 = Result.b((Map) submit.get());
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33295e;
+            Result.a aVar2 = Result.f33071e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         Throwable e10 = Result.e(b10);

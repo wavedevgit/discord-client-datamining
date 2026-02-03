@@ -1,167 +1,228 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = metroImportDefault;
-    var2 = exports;
-    var5 = dependencyMap;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
+    var4 = require;
+    var5 = exports;
+    var7 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var7;
+    var2 = global;
+    var9 = var2.Object;
+    var8 = var9.defineProperty;
     var3 = {};
-    var0 = true;
-    var3.value = var0;
+    var6 = true;
+    var3.value = var6;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
-    var0 = 0;
-    var3 = var5[var0];
+    var0 = var8.bind(var9)(var5, var0, var3);
     var0 = undefined;
+    var5.ContextProvider = var0;
+    var5.DataProvider = var0;
+    var5.LayoutProvider = var0;
+    var5.BaseLayoutProvider = var0;
+    var5.LayoutManager = var0;
+    var5.WrapGridLayoutManager = var0;
+    var5.GridLayoutProvider = var0;
+    var5.GridLayoutManager = var0;
+    var5.RecyclerListView = var0;
+    var5.ProgressiveListView = var0;
+    var5.BaseItemAnimator = var0;
+    var5.BaseScrollView = var0;
+    var5.AutoScroll = var0;
+    var5.BaseDataProvider = var0;
+    var5.ComponentCompat = var0;
+    var3 = 0;
+    var3 = var7[var3];
     var3 = var4.bind(var0)(var3);
-    var _closure1_slot0 = var3;
+    var3 = var3.default;
+    var5.ContextProvider = var3;
     var3 = 1;
-    var3 = var5[var3];
+    var3 = var7[var3];
     var3 = var4.bind(var0)(var3);
-    var _closure1_slot1 = var3;
-    var1 = function() { // Environment: var1
-        var3 = _closure1_slot1;
-        var2 = function arg0, arg1() {
-            _fun46143: for (var _fun46143_ip = 0;;) switch (_fun46143_ip) {
-                case 0:
-                    var3 = arg1;
-                    var1 = this;
-                    var4 = _closure1_slot0;
-                    var2 = _closure2_slot0;
-                    var0 = undefined;
-                    var2 = var4.bind(var0)(var1, var2);
-                    var2 = 0;
-                    var1.nextIndex = var2;
-                    var4 = global;
-                    var7 = var4.Array;
-                    var8 = var4.Math;
-                    var6 = var8.max;
-                    var4 = 1;
-                    var5 = arg0;
-                    var10 = var6.bind(var8)(var4, var5);
-                    var6 = var7.prototype;
-                    var6 = Object.create(var6, {
-                        constructor: {
-                            value: var7
-                        }
-                    });
-                    var11 = var6;
-                    var5 = new var11[var7](var10, var9);
-                    var5 = var5 instanceof Object ? var5 : var6;
-                    var1.inputValues = var5;
-                    var5 = null;
-                    var6 = var5 != var3;
-                    var5 = 0;
-                    if (!var6) {
-                        _fun46143_ip = 107;
-                        continue _fun46143
-                    }
-                case 104:
-                    var5 = var3;
-                case 107:
-                    var1.currentAverage = var5;
-                    if (!(var0 === var3)) {
-                        _fun46143_ip = 119;
-                        continue _fun46143
-                    }
-                case 117:
-                    var4 = 0;
-                case 119:
-                    var1.currentCount = var4;
-                    var4 = var1.currentCount;
-                    var1.nextIndex = var4;
-                    var1 = var1.inputValues;
-                    var1[var2] = var3;
-                    return var0;
-            }
-        };
-        var _closure2_slot0 = var2;
-        var0 = {};
-        var1 = 'currentValue';
-        var0.key = var1;
-        var1 = function() {
-            var0 = this;
-            var0 = var0.currentAverage;
-            return var0;
-        };
-        var0.get = var1;
-        var1 = new Array(3);
-        var1[0] = var0;
-        var0 = {};
-        var5 = 'addValue';
-        var0.key = var5;
-        var5 = function arg0() {
-            _fun46145: for (var _fun46145_ip = 0;;) switch (_fun46145_ip) {
-                case 0:
-                    var5 = arg0;
-                    var2 = this;
-                    var0 = var2.getNextIndex;
-                    var4 = var0.bind(var2)();
-                    var0 = var2.inputValues;
-                    var6 = var0[var4];
-                    var0 = undefined;
-                    if (!(var0 !== var6)) {
-                        _fun46145_ip = 42;
-                        continue _fun46145
-                    }
-                case 34:
-                    var1 = var2.currentCount;
-                    _fun46145_ip = 55;
-                    continue _fun46145;
-                case 42:
-                    var7 = var2.currentCount;
-                    var3 = 1;
-                    var1 = var7 + var3;
-                case 55:
-                    var3 = var2.inputValues;
-                    var3[var4] = var5;
-                    var4 = var2.currentAverage;
-                    var3 = var2.currentCount;
-                    var3 = var3 / var1;
-                    var4 = var4 * var3;
-                    var3 = null;
-                    var7 = var3 != var6;
-                    var3 = 0;
-                    if (!var7) {
-                        _fun46145_ip = 99;
-                        continue _fun46145
-                    }
-                case 96:
-                    var3 = var6;
-                case 99:
-                    var3 = var5 - var3;
-                    var3 = var3 / var1;
-                    var3 = var4 + var3;
-                    var2.currentAverage = var3;
-                    var2.currentCount = var1;
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[1] = var0;
-        var0 = {};
-        var5 = 'getNextIndex';
-        var0.key = var5;
-        var4 = function() {
-            var2 = this;
-            var0 = var2.nextIndex;
-            var3 = var2.nextIndex;
-            var1 = 1;
-            var3 = var3 + var1;
-            var1 = var2.inputValues;
-            var1 = var1.length;
-            var1 = var3 % var1;
-            var2.nextIndex = var1;
-            return var0;
-        };
-        var0.value = var4;
-        var1[2] = var0;
+    var3 = var3.default;
+    var5.DataProvider = var3;
+    var10 = var2.Object;
+    var9 = var10.defineProperty;
+    var8 = {};
+    var8.enumerable = var6;
+    var3 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 1;
+        var1 = var1[var0];
         var0 = undefined;
-        var0 = var3.bind(var0)(var2, var1);
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.BaseDataProvider;
         return var0;
     };
-    var1 = var1.bind(var0)();
-    var2.AverageWindow = var1;
+    var8.get = var3;
+    var3 = 'BaseDataProvider';
+    var3 = var9.bind(var10)(var5, var3, var8);
+    var10 = var2.Object;
+    var9 = var10.defineProperty;
+    var8 = {};
+    var8.enumerable = var6;
+    var3 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 2;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.BaseLayoutProvider;
+        return var0;
+    };
+    var8.get = var3;
+    var3 = 'BaseLayoutProvider';
+    var3 = var9.bind(var10)(var5, var3, var8);
+    var10 = var2.Object;
+    var9 = var10.defineProperty;
+    var8 = {};
+    var8.enumerable = var6;
+    var3 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 2;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.LayoutProvider;
+        return var0;
+    };
+    var8.get = var3;
+    var3 = 'LayoutProvider';
+    var3 = var9.bind(var10)(var5, var3, var8);
+    var10 = var2.Object;
+    var9 = var10.defineProperty;
+    var8 = {};
+    var8.enumerable = var6;
+    var3 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 3;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.GridLayoutProvider;
+        return var0;
+    };
+    var8.get = var3;
+    var3 = 'GridLayoutProvider';
+    var3 = var9.bind(var10)(var5, var3, var8);
+    var3 = 4;
+    var3 = var7[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.default;
+    var5.RecyclerListView = var3;
+    var3 = 5;
+    var3 = var7[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.default;
+    var5.BaseScrollView = var3;
+    var10 = var2.Object;
+    var9 = var10.defineProperty;
+    var8 = {};
+    var8.enumerable = var6;
+    var3 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 6;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.BaseItemAnimator;
+        return var0;
+    };
+    var8.get = var3;
+    var3 = 'BaseItemAnimator';
+    var3 = var9.bind(var10)(var5, var3, var8);
+    var10 = var2.Object;
+    var9 = var10.defineProperty;
+    var8 = {};
+    var8.enumerable = var6;
+    var3 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 7;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.AutoScroll;
+        return var0;
+    };
+    var8.get = var3;
+    var3 = 'AutoScroll';
+    var3 = var9.bind(var10)(var5, var3, var8);
+    var10 = var2.Object;
+    var9 = var10.defineProperty;
+    var8 = {};
+    var8.enumerable = var6;
+    var3 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 8;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.LayoutManager;
+        return var0;
+    };
+    var8.get = var3;
+    var3 = 'LayoutManager';
+    var3 = var9.bind(var10)(var5, var3, var8);
+    var10 = var2.Object;
+    var9 = var10.defineProperty;
+    var8 = {};
+    var8.enumerable = var6;
+    var3 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 8;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.WrapGridLayoutManager;
+        return var0;
+    };
+    var8.get = var3;
+    var3 = 'WrapGridLayoutManager';
+    var3 = var9.bind(var10)(var5, var3, var8);
+    var10 = var2.Object;
+    var9 = var10.defineProperty;
+    var8 = {};
+    var8.enumerable = var6;
+    var3 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 9;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.GridLayoutManager;
+        return var0;
+    };
+    var8.get = var3;
+    var3 = 'GridLayoutManager';
+    var3 = var9.bind(var10)(var5, var3, var8);
+    var3 = 10;
+    var3 = var7[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.default;
+    var5.ProgressiveListView = var3;
+    var4 = var2.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var2.enumerable = var6;
+    var1 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 11;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.ComponentCompat;
+        return var0;
+    };
+    var2.get = var1;
+    var1 = 'ComponentCompat';
+    var1 = var3.bind(var4)(var5, var1, var2);
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5067, 5068]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5141, 5142, 5146, 5148, 5150, 5163, 5153, 5164, 5147, 5149, 5165, 5134]);

@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_StatusResponseJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19823a;
+    private final m.b f19456a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19824b;
+    private final com.squareup.moshi.h f19457b;
 
     public FallbackModeService_StatusResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("static-inquiry-template");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19823a = a10;
+        this.f19456a = a10;
         com.squareup.moshi.h f10 = moshi.f(FallbackModeService.StaticTemplate.class, x0.d(), "staticInquiryTemplate");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19824b = f10;
+        this.f19457b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,13 +35,13 @@ public final class FallbackModeService_StatusResponseJsonAdapter extends com.squ
         reader.r();
         FallbackModeService.StaticTemplate staticTemplate = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f19823a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    staticTemplate = (FallbackModeService.StaticTemplate) this.f19824b.fromJson(reader);
+            int t02 = reader.t0(this.f19456a);
+            if (t02 != -1) {
+                if (t02 == 0) {
+                    staticTemplate = (FallbackModeService.StaticTemplate) this.f19457b.fromJson(reader);
                 }
             } else {
-                reader.E0();
+                reader.F0();
                 reader.P();
             }
         }
@@ -55,8 +55,8 @@ public final class FallbackModeService_StatusResponseJsonAdapter extends com.squ
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (statusResponse != null) {
             writer.l();
-            writer.A0("static-inquiry-template");
-            this.f19824b.toJson(writer, statusResponse.a());
+            writer.t0("static-inquiry-template");
+            this.f19457b.toJson(writer, statusResponse.a());
             writer.E();
             return;
         }

@@ -3,17 +3,17 @@ package jj;
 final class a extends f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f32206a;
+    private final String f31944a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f32207b;
+    private final String f31945b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(String str, String str2) {
         if (str != null) {
-            this.f32206a = str;
+            this.f31944a = str;
             if (str2 != null) {
-                this.f32207b = str2;
+                this.f31945b = str2;
                 return;
             }
             throw new NullPointerException("Null version");
@@ -23,12 +23,12 @@ final class a extends f {
 
     @Override // jj.f
     public String b() {
-        return this.f32206a;
+        return this.f31944a;
     }
 
     @Override // jj.f
     public String c() {
-        return this.f32207b;
+        return this.f31945b;
     }
 
     public boolean equals(Object obj) {
@@ -37,7 +37,7 @@ final class a extends f {
         }
         if (obj instanceof f) {
             f fVar = (f) obj;
-            if (this.f32206a.equals(fVar.b()) && this.f32207b.equals(fVar.c())) {
+            if (this.f31944a.equals(fVar.b()) && this.f31945b.equals(fVar.c())) {
                 return true;
             }
         }
@@ -45,10 +45,10 @@ final class a extends f {
     }
 
     public int hashCode() {
-        return ((this.f32206a.hashCode() ^ 1000003) * 1000003) ^ this.f32207b.hashCode();
+        return ((this.f31944a.hashCode() ^ 1000003) * 1000003) ^ this.f31945b.hashCode();
     }
 
     public String toString() {
-        return "LibraryVersion{libraryName=" + this.f32206a + ", version=" + this.f32207b + "}";
+        return "LibraryVersion{libraryName=" + this.f31944a + ", version=" + this.f31945b + "}";
     }
 }

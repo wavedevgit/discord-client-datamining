@@ -21,19 +21,19 @@ public abstract class b {
     public static final class a extends Exception {
 
         /* renamed from: d  reason: collision with root package name */
-        private final EnumC0368a f28332d;
+        private final EnumC0369a f27979d;
 
         /* renamed from: i0.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public enum EnumC0368a {
+        public enum EnumC0369a {
             ENCODE_FAILED,
             DECODE_FAILED,
             UNKNOWN
         }
 
-        a(String str, EnumC0368a enumC0368a) {
+        a(String str, EnumC0369a enumC0369a) {
             super(str);
-            this.f28332d = enumC0368a;
+            this.f27979d = enumC0369a;
         }
     }
 
@@ -89,8 +89,8 @@ public abstract class b {
 
     private static Bitmap d(n nVar) {
         Bitmap createBitmap = Bitmap.createBitmap(nVar.getWidth(), nVar.getHeight(), Bitmap.Config.ARGB_8888);
-        nVar.c1()[0].e().rewind();
-        ImageProcessingUtil.j(createBitmap, nVar.c1()[0].e(), nVar.c1()[0].f());
+        nVar.d1()[0].e().rewind();
+        ImageProcessingUtil.j(createBitmap, nVar.d1()[0].e(), nVar.d1()[0].f());
         return createBitmap;
     }
 
@@ -138,7 +138,7 @@ public abstract class b {
 
     public static byte[] j(n nVar) {
         if (i(nVar.getFormat())) {
-            ByteBuffer e10 = nVar.c1()[0].e();
+            ByteBuffer e10 = nVar.d1()[0].e();
             byte[] bArr = new byte[e10.capacity()];
             e10.rewind();
             e10.get(bArr);
@@ -164,15 +164,15 @@ public abstract class b {
             if (yuvImage.compressToJpeg(rect, i10, iVar)) {
                 return byteArrayOutputStream.toByteArray();
             }
-            throw new a("YuvImage failed to encode jpeg.", a.EnumC0368a.ENCODE_FAILED);
+            throw new a("YuvImage failed to encode jpeg.", a.EnumC0369a.ENCODE_FAILED);
         }
         throw new IllegalArgumentException("Incorrect image format of the input image proxy: " + nVar.getFormat());
     }
 
     public static byte[] m(n nVar) {
-        n.a aVar = nVar.c1()[0];
-        n.a aVar2 = nVar.c1()[1];
-        n.a aVar3 = nVar.c1()[2];
+        n.a aVar = nVar.d1()[0];
+        n.a aVar2 = nVar.d1()[1];
+        n.a aVar3 = nVar.d1()[2];
         ByteBuffer e10 = aVar.e();
         ByteBuffer e11 = aVar2.e();
         ByteBuffer e12 = aVar3.e();

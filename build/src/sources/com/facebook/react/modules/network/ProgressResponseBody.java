@@ -1,7 +1,7 @@
 package com.facebook.react.modules.network;
 
-import iu.b;
-import iu.k;
+import ju.b;
+import ju.k;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import okhttp3.MediaType;
@@ -57,7 +57,7 @@ public final class ProgressResponseBody extends ResponseBody {
 
     private final Source source(final Source source) {
         return new k(source) { // from class: com.facebook.react.modules.network.ProgressResponseBody$source$1
-            @Override // iu.k, okio.Source
+            @Override // ju.k, okio.Source
             public long read(Buffer sink, long j10) {
                 ProgressListener progressListener;
                 long j11;

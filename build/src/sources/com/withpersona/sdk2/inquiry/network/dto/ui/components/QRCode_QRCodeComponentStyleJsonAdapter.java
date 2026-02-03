@@ -69,19 +69,19 @@ public final class QRCode_QRCodeComponentStyleJsonAdapter extends h {
         AttributeStyles.QRCodeStrokeColorStyle qRCodeStrokeColorStyle = null;
         AttributeStyles.QRCodeFillColorStyle qRCodeFillColorStyle = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 qRCodeWidthStyle = (AttributeStyles.QRCodeWidthStyle) this.nullableQRCodeWidthStyleAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 qRCodeJustifyStyle = (AttributeStyles.QRCodeJustifyStyle) this.nullableQRCodeJustifyStyleAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 qRCodeMarginStyle = (AttributeStyles.QRCodeMarginStyle) this.nullableQRCodeMarginStyleAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (t02 == 3) {
                 qRCodeStrokeColorStyle = (AttributeStyles.QRCodeStrokeColorStyle) this.nullableQRCodeStrokeColorStyleAdapter.fromJson(reader);
-            } else if (A0 == 4) {
+            } else if (t02 == 4) {
                 qRCodeFillColorStyle = (AttributeStyles.QRCodeFillColorStyle) this.nullableQRCodeFillColorStyleAdapter.fromJson(reader);
             }
         }
@@ -94,15 +94,15 @@ public final class QRCode_QRCodeComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (qRCodeComponentStyle != null) {
             writer.l();
-            writer.A0("width");
+            writer.t0("width");
             this.nullableQRCodeWidthStyleAdapter.toJson(writer, qRCodeComponentStyle.getWidth());
-            writer.A0("justify");
+            writer.t0("justify");
             this.nullableQRCodeJustifyStyleAdapter.toJson(writer, qRCodeComponentStyle.getJustify());
-            writer.A0(ViewProps.MARGIN);
+            writer.t0(ViewProps.MARGIN);
             this.nullableQRCodeMarginStyleAdapter.toJson(writer, qRCodeComponentStyle.getMargin());
-            writer.A0("strokeColor");
+            writer.t0("strokeColor");
             this.nullableQRCodeStrokeColorStyleAdapter.toJson(writer, qRCodeComponentStyle.getStrokeColor());
-            writer.A0("fillColor");
+            writer.t0("fillColor");
             this.nullableQRCodeFillColorStyleAdapter.toJson(writer, qRCodeComponentStyle.getFillColor());
             writer.E();
             return;

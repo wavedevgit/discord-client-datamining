@@ -13,14 +13,14 @@ import java.util.WeakHashMap;
 public final class j1 extends Fragment implements h {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final WeakHashMap f25124e = new WeakHashMap();
+    private static final WeakHashMap f24335e = new WeakHashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final i1 f25125d = new i1();
+    private final i1 f24336d = new i1();
 
     public static j1 x(FragmentActivity fragmentActivity) {
         j1 j1Var;
-        WeakHashMap weakHashMap = f25124e;
+        WeakHashMap weakHashMap = f24335e;
         WeakReference weakReference = (WeakReference) weakHashMap.get(fragmentActivity);
         if (weakReference != null && (j1Var = (j1) weakReference.get()) != null) {
             return j1Var;
@@ -40,18 +40,18 @@ public final class j1 extends Fragment implements h {
 
     @Override // ff.h
     public final g b(String str, Class cls) {
-        return this.f25125d.c(str, cls);
+        return this.f24336d.c(str, cls);
     }
 
     @Override // androidx.fragment.app.Fragment
     public final void dump(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         super.dump(str, fileDescriptor, printWriter, strArr);
-        this.f25125d.e(str, fileDescriptor, printWriter, strArr);
+        this.f24336d.e(str, fileDescriptor, printWriter, strArr);
     }
 
     @Override // ff.h
     public final void e(String str, g gVar) {
-        this.f25125d.d(str, gVar);
+        this.f24336d.d(str, gVar);
     }
 
     @Override // ff.h
@@ -62,42 +62,42 @@ public final class j1 extends Fragment implements h {
     @Override // androidx.fragment.app.Fragment
     public final void onActivityResult(int i10, int i11, Intent intent) {
         super.onActivityResult(i10, i11, intent);
-        this.f25125d.f(i10, i11, intent);
+        this.f24336d.f(i10, i11, intent);
     }
 
     @Override // androidx.fragment.app.Fragment
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.f25125d.g(bundle);
+        this.f24336d.g(bundle);
     }
 
     @Override // androidx.fragment.app.Fragment
     public final void onDestroy() {
         super.onDestroy();
-        this.f25125d.h();
+        this.f24336d.h();
     }
 
     @Override // androidx.fragment.app.Fragment
     public final void onResume() {
         super.onResume();
-        this.f25125d.i();
+        this.f24336d.i();
     }
 
     @Override // androidx.fragment.app.Fragment
     public final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        this.f25125d.j(bundle);
+        this.f24336d.j(bundle);
     }
 
     @Override // androidx.fragment.app.Fragment
     public final void onStart() {
         super.onStart();
-        this.f25125d.k();
+        this.f24336d.k();
     }
 
     @Override // androidx.fragment.app.Fragment
     public final void onStop() {
         super.onStop();
-        this.f25125d.l();
+        this.f24336d.l();
     }
 }

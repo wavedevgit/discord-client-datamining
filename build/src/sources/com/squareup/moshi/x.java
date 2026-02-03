@@ -7,7 +7,7 @@ import java.util.Set;
 abstract class x extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    static final h.e f19022a = new a();
+    static final h.e f18655a = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements h.e {

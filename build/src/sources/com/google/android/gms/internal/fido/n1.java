@@ -5,26 +5,26 @@ import java.util.NoSuchElementException;
 final class n1 extends c2 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f15069d;
+    private final Object f14698d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f15070e;
+    private boolean f14699e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n1(Object obj) {
-        this.f15069d = obj;
+        this.f14698d = obj;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return !this.f15070e;
+        return !this.f14699e;
     }
 
     @Override // java.util.Iterator
     public final Object next() {
-        if (!this.f15070e) {
-            this.f15070e = true;
-            return this.f15069d;
+        if (!this.f14699e) {
+            this.f14699e = true;
+            return this.f14698d;
         }
         throw new NoSuchElementException();
     }

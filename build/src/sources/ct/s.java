@@ -1,41 +1,77 @@
 package ct;
+
+import at.e;
+import dt.g0;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Reflection;
+import kotlin.text.StringsKt;
+import kotlin.text.e0;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
+import kotlinx.serialization.json.JsonElement;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract /* synthetic */ class s {
-    public static /* synthetic */ String a(long j10, int i10) {
-        long a10;
-        int i11 = (j10 > 0L ? 1 : (j10 == 0L ? 0 : -1));
-        if (i11 == 0) {
-            return "0";
+public final class s implements KSerializer {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final s f20828a = new s();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final SerialDescriptor f20829b = at.j.b("kotlinx.serialization.json.JsonLiteral", e.i.f6078a);
+
+    private s() {
+    }
+
+    @Override // kotlinx.serialization.DeserializationStrategy
+    /* renamed from: a */
+    public r deserialize(Decoder decoder) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        JsonElement g10 = p.d(decoder).g();
+        if (g10 instanceof r) {
+            return (r) g10;
         }
-        if (i11 > 0) {
-            return Long.toString(j10, i10);
-        }
-        i10 = (i10 < 2 || i10 > 36) ? 10 : 10;
-        int i12 = 64;
-        char[] cArr = new char[64];
-        int i13 = i10 - 1;
-        if ((i10 & i13) == 0) {
-            int numberOfTrailingZeros = Integer.numberOfTrailingZeros(i10);
-            do {
-                i12--;
-                cArr[i12] = Character.forDigit(((int) j10) & i13, i10);
-                j10 >>>= numberOfTrailingZeros;
-            } while (j10 != 0);
+        throw g0.e(-1, "Unexpected JSON element, expected JsonLiteral, had " + Reflection.getOrCreateKotlinClass(g10.getClass()), g10.toString());
+    }
+
+    @Override // ys.o
+    /* renamed from: b */
+    public void serialize(Encoder encoder, r value) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        Intrinsics.checkNotNullParameter(value, "value");
+        p.h(encoder);
+        if (value.c()) {
+            encoder.F(value.b());
+        } else if (value.d() != null) {
+            encoder.j(value.d()).F(value.b());
         } else {
-            if ((i10 & 1) == 0) {
-                a10 = (j10 >>> 1) / (i10 >>> 1);
-            } else {
-                a10 = kotlin.text.b0.a(j10, i10);
+            Long t10 = StringsKt.t(value.b());
+            if (t10 != null) {
+                encoder.k(t10.longValue());
+                return;
             }
-            long j11 = i10;
-            cArr[63] = Character.forDigit((int) (j10 - (a10 * j11)), i10);
-            i12 = 63;
-            while (a10 > 0) {
-                i12--;
-                cArr[i12] = Character.forDigit((int) (a10 % j11), i10);
-                a10 /= j11;
+            jr.b0 h10 = e0.h(value.b());
+            if (h10 != null) {
+                encoder.j(zs.a.y(jr.b0.f32154e).getDescriptor()).k(h10.h());
+                return;
+            }
+            Double p10 = StringsKt.p(value.b());
+            if (p10 != null) {
+                encoder.f(p10.doubleValue());
+                return;
+            }
+            Boolean j12 = StringsKt.j1(value.b());
+            if (j12 != null) {
+                encoder.q(j12.booleanValue());
+            } else {
+                encoder.F(value.b());
             }
         }
-        return new String(cArr, i12, 64 - i12);
+    }
+
+    @Override // kotlinx.serialization.KSerializer, ys.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return f20829b;
     }
 }

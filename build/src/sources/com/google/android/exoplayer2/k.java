@@ -13,82 +13,82 @@ public final class k {
     boolean C;
 
     /* renamed from: a  reason: collision with root package name */
-    final Context f13633a;
+    final Context f13262a;
 
     /* renamed from: b  reason: collision with root package name */
-    ne.e f13634b;
+    ne.e f13263b;
 
     /* renamed from: c  reason: collision with root package name */
-    long f13635c;
+    long f13264c;
 
     /* renamed from: d  reason: collision with root package name */
-    ii.r f13636d;
+    ii.r f13265d;
 
     /* renamed from: e  reason: collision with root package name */
-    ii.r f13637e;
+    ii.r f13266e;
 
     /* renamed from: f  reason: collision with root package name */
-    ii.r f13638f;
+    ii.r f13267f;
 
     /* renamed from: g  reason: collision with root package name */
-    ii.r f13639g;
+    ii.r f13268g;
 
     /* renamed from: h  reason: collision with root package name */
-    ii.r f13640h;
+    ii.r f13269h;
 
     /* renamed from: i  reason: collision with root package name */
-    ii.f f13641i;
+    ii.f f13270i;
 
     /* renamed from: j  reason: collision with root package name */
-    Looper f13642j;
+    Looper f13271j;
 
     /* renamed from: k  reason: collision with root package name */
-    AudioAttributes f13643k;
+    AudioAttributes f13272k;
 
     /* renamed from: l  reason: collision with root package name */
-    boolean f13644l;
+    boolean f13273l;
 
     /* renamed from: m  reason: collision with root package name */
-    int f13645m;
+    int f13274m;
 
     /* renamed from: n  reason: collision with root package name */
-    boolean f13646n;
+    boolean f13275n;
 
     /* renamed from: o  reason: collision with root package name */
-    boolean f13647o;
+    boolean f13276o;
 
     /* renamed from: p  reason: collision with root package name */
-    boolean f13648p;
+    boolean f13277p;
 
     /* renamed from: q  reason: collision with root package name */
-    int f13649q;
+    int f13278q;
 
     /* renamed from: r  reason: collision with root package name */
-    int f13650r;
+    int f13279r;
 
     /* renamed from: s  reason: collision with root package name */
-    boolean f13651s;
+    boolean f13280s;
 
     /* renamed from: t  reason: collision with root package name */
-    lc.t0 f13652t;
+    lc.t0 f13281t;
 
     /* renamed from: u  reason: collision with root package name */
-    long f13653u;
+    long f13282u;
 
     /* renamed from: v  reason: collision with root package name */
-    long f13654v;
+    long f13283v;
 
     /* renamed from: w  reason: collision with root package name */
-    v0 f13655w;
+    v0 f13284w;
 
     /* renamed from: x  reason: collision with root package name */
-    long f13656x;
+    long f13285x;
 
     /* renamed from: y  reason: collision with root package name */
-    long f13657y;
+    long f13286y;
 
     /* renamed from: z  reason: collision with root package name */
-    boolean f13658z;
+    boolean f13287z;
 
     public k(final Context context, final lc.s0 s0Var) {
         this(context, new ii.r() { // from class: lc.l
@@ -139,7 +139,7 @@ public final class k {
     public k i(final le.e eVar) {
         ne.a.g(!this.C);
         ne.a.e(eVar);
-        this.f13640h = new ii.r() { // from class: lc.n
+        this.f13269h = new ii.r() { // from class: lc.n
             @Override // ii.r
             public final Object get() {
                 return com.google.android.exoplayer2.k.e(le.e.this);
@@ -151,7 +151,7 @@ public final class k {
     public k j(final lc.a0 a0Var) {
         ne.a.g(!this.C);
         ne.a.e(a0Var);
-        this.f13639g = new ii.r() { // from class: lc.j
+        this.f13268g = new ii.r() { // from class: lc.j
             @Override // ii.r
             public final Object get() {
                 return com.google.android.exoplayer2.k.g(a0.this);
@@ -163,7 +163,7 @@ public final class k {
     public k k(final je.q qVar) {
         ne.a.g(!this.C);
         ne.a.e(qVar);
-        this.f13638f = new ii.r() { // from class: lc.k
+        this.f13267f = new ii.r() { // from class: lc.k
             @Override // ii.r
             public final Object get() {
                 return com.google.android.exoplayer2.k.a(je.q.this);
@@ -199,26 +199,26 @@ public final class k {
     }
 
     private k(Context context, ii.r rVar, ii.r rVar2, ii.r rVar3, ii.r rVar4, ii.r rVar5, ii.f fVar) {
-        this.f13633a = (Context) ne.a.e(context);
-        this.f13636d = rVar;
-        this.f13637e = rVar2;
-        this.f13638f = rVar3;
-        this.f13639g = rVar4;
-        this.f13640h = rVar5;
-        this.f13641i = fVar;
-        this.f13642j = ne.w0.R();
-        this.f13643k = AudioAttributes.f13193r;
-        this.f13645m = 0;
-        this.f13649q = 1;
-        this.f13650r = 0;
-        this.f13651s = true;
-        this.f13652t = lc.t0.f37119g;
-        this.f13653u = 5000L;
-        this.f13654v = 15000L;
-        this.f13655w = new h.b().a();
-        this.f13634b = ne.e.f40188a;
-        this.f13656x = 500L;
-        this.f13657y = 2000L;
+        this.f13262a = (Context) ne.a.e(context);
+        this.f13265d = rVar;
+        this.f13266e = rVar2;
+        this.f13267f = rVar3;
+        this.f13268g = rVar4;
+        this.f13269h = rVar5;
+        this.f13270i = fVar;
+        this.f13271j = ne.w0.R();
+        this.f13272k = AudioAttributes.f12822r;
+        this.f13274m = 0;
+        this.f13278q = 1;
+        this.f13279r = 0;
+        this.f13280s = true;
+        this.f13281t = lc.t0.f37233g;
+        this.f13282u = 5000L;
+        this.f13283v = 15000L;
+        this.f13284w = new h.b().a();
+        this.f13263b = ne.e.f40051a;
+        this.f13285x = 500L;
+        this.f13286y = 2000L;
         this.A = true;
     }
 }

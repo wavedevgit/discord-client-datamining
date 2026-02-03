@@ -19,17 +19,17 @@ public abstract class h {
         for (int i10 = 0; i10 < mappedTrackInfo.d(); i10++) {
             w0 f10 = mappedTrackInfo.f(i10);
             List list = listArr[i10];
-            for (int i11 = 0; i11 < f10.f47375d; i11++) {
+            for (int i11 = 0; i11 < f10.f47630d; i11++) {
                 u0 b10 = f10.b(i11);
                 if (mappedTrackInfo.a(i10, i11, false) != 0) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
-                int i12 = b10.f47359d;
+                int i12 = b10.f47614d;
                 int[] iArr = new int[i12];
                 boolean[] zArr = new boolean[i12];
-                for (int i13 = 0; i13 < b10.f47359d; i13++) {
+                for (int i13 = 0; i13 < b10.f47614d; i13++) {
                     iArr[i13] = mappedTrackInfo.g(i10, i11, i13);
                     int i14 = 0;
                     while (true) {
@@ -51,11 +51,11 @@ public abstract class h {
             }
         }
         w0 h10 = mappedTrackInfo.h();
-        for (int i15 = 0; i15 < h10.f47375d; i15++) {
+        for (int i15 = 0; i15 < h10.f47630d; i15++) {
             u0 b11 = h10.b(i15);
-            int[] iArr2 = new int[b11.f47359d];
+            int[] iArr2 = new int[b11.f47614d];
             Arrays.fill(iArr2, 0);
-            aVar.a(new Tracks.a(b11, false, iArr2, new boolean[b11.f47359d]));
+            aVar.a(new Tracks.a(b11, false, iArr2, new boolean[b11.f47614d]));
         }
         return new Tracks(aVar.k());
     }

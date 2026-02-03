@@ -5,7 +5,7 @@ import ui.c;
 final class r8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r8 f45692a = new r8();
+    static final r8 f45766a = new r8();
 
     static {
         c.b a10 = ui.c.a("totalGroups");

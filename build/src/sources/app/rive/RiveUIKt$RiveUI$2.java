@@ -58,14 +58,14 @@ final class RiveUIKt$RiveUI$2 extends Lambda implements Function1<h, g> {
                     @Override // kotlin.jvm.functions.Function0
                     @NotNull
                     public final String invoke() {
-                        String m195toStringimpl = StateMachineHandle.m195toStringimpl(j12);
+                        String m197toStringimpl = StateMachineHandle.m197toStringimpl(j12);
                         String str3 = str2;
-                        String m97toStringimpl = ArtboardHandle.m97toStringimpl(j13);
-                        String m170toStringimpl = FileHandle.m170toStringimpl(riveFile2.m31getFileHandleENT3xMk$kotlin_release());
-                        return "Deleting " + m195toStringimpl + " with name " + str3 + " (" + m97toStringimpl + "; " + m170toStringimpl + ")";
+                        String m99toStringimpl = ArtboardHandle.m99toStringimpl(j13);
+                        String m172toStringimpl = FileHandle.m172toStringimpl(riveFile2.m33getFileHandleENT3xMk$kotlin_release());
+                        return "Deleting " + m197toStringimpl + " with name " + str3 + " (" + m99toStringimpl + "; " + m172toStringimpl + ")";
                     }
                 });
-                CommandQueue.this.m123deleteStateMachineAkTCgDQ(j10);
+                CommandQueue.this.m125deleteStateMachineAkTCgDQ(j10);
             }
         };
     }

@@ -6,22 +6,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class v extends s3.b {
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f5757c;
+    private final Context f5801c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public v(Context mContext, int i10, int i11) {
         super(i10, i11);
         Intrinsics.checkNotNullParameter(mContext, "mContext");
-        this.f5757c = mContext;
+        this.f5801c = mContext;
     }
 
     @Override // s3.b
     public void a(x3.g db2) {
         Intrinsics.checkNotNullParameter(db2, "db");
-        if (this.f48713b >= 10) {
-            db2.h0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"reschedule_needed", 1});
+        if (this.f48767b >= 10) {
+            db2.i0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"reschedule_needed", 1});
         } else {
-            this.f5757c.getSharedPreferences("androidx.work.util.preferences", 0).edit().putBoolean("reschedule_needed", true).apply();
+            this.f5801c.getSharedPreferences("androidx.work.util.preferences", 0).edit().putBoolean("reschedule_needed", true).apply();
         }
     }
 }

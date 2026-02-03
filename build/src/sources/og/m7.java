@@ -5,30 +5,30 @@ import ui.c;
 final class m7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final m7 f43306a = new m7();
+    static final m7 f43434a = new m7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43307b;
+    private static final ui.c f43435b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43308c;
+    private static final ui.c f43436c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43309d;
+    private static final ui.c f43437d;
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43307b = a10.b(s1Var.b()).a();
+        f43435b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("imageInfo");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43308c = a11.b(s1Var2.b()).a();
+        f43436c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("recognizerOptions");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43309d = a12.b(s1Var3.b()).a();
+        f43437d = a12.b(s1Var3.b()).a();
     }
 
     private m7() {

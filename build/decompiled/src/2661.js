@@ -12,10 +12,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var1.default = var0;
     var3 = {
-        'lastWeek': "'i' EEEE's kl.' p",
-        'yesterday': "'igår kl.' p",
-        'today': "'idag kl.' p",
-        'tomorrow': "'imorgon kl.' p",
+        'lastWeek': "'forrige' eeee 'kl.' p",
+        'yesterday': "'i går kl.' p",
+        'today': "'i dag kl.' p",
+        'tomorrow': "'i morgen kl.' p",
         'nextWeek': "EEEE 'kl.' p",
         'other': 'P'
     };

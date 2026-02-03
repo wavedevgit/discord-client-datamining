@@ -7,13 +7,13 @@ import java.util.Set;
 public abstract class k1 implements Map, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private transient l1 f38326d;
+    private transient l1 f38306d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient l1 f38327e;
+    private transient l1 f38307e;
 
     /* renamed from: i  reason: collision with root package name */
-    private transient d1 f38328i;
+    private transient d1 f38308i;
 
     public static k1 c(Object obj, Object obj2) {
         n0.b("optional-module-barcode", "com.google.android.gms.vision.barcode");
@@ -25,10 +25,10 @@ public abstract class k1 implements Map, Serializable {
     @Override // java.util.Map
     /* renamed from: b */
     public final d1 values() {
-        d1 d1Var = this.f38328i;
+        d1 d1Var = this.f38308i;
         if (d1Var == null) {
             d1 a10 = a();
-            this.f38328i = a10;
+            this.f38308i = a10;
             return a10;
         }
         return d1Var;
@@ -70,10 +70,10 @@ public abstract class k1 implements Map, Serializable {
     @Override // java.util.Map
     /* renamed from: f */
     public final l1 entrySet() {
-        l1 l1Var = this.f38326d;
+        l1 l1Var = this.f38306d;
         if (l1Var == null) {
             l1 d10 = d();
-            this.f38326d = d10;
+            this.f38306d = d10;
             return d10;
         }
         return l1Var;
@@ -103,10 +103,10 @@ public abstract class k1 implements Map, Serializable {
 
     @Override // java.util.Map
     public final /* bridge */ /* synthetic */ Set keySet() {
-        l1 l1Var = this.f38327e;
+        l1 l1Var = this.f38307e;
         if (l1Var == null) {
             l1 e10 = e();
-            this.f38327e = e10;
+            this.f38307e = e10;
             return e10;
         }
         return l1Var;

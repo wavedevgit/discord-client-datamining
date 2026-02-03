@@ -16,8 +16,8 @@ public final class h extends ef.d implements qf.b {
             java.lang.String r0 = "context"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r4, r0)
             ef.a r0 = rf.c.a()
-            ef.a$d$a r1 = ef.a.d.f22762c
-            ef.d$a r2 = ef.d.a.f22774c
+            ef.a$d$a r1 = ef.a.d.f22794c
+            ef.d$a r2 = ef.d.a.f22806c
             r3.<init>(r4, r0, r1, r2)
             return
         */
@@ -26,7 +26,7 @@ public final class h extends ef.d implements qf.b {
 
     @Override // qf.b
     public final Task a() {
-        Task p10 = p(q.a().d(ig.d.f28522a).b(g.f48297a).e(28601).a());
+        Task p10 = p(q.a().d(ig.d.f28169a).b(g.f48499a).e(28601).a());
         Intrinsics.checkNotNullExpressionValue(p10, "doRead(\n      TaskApiCal…Y)\n        .build()\n    )");
         return p10;
     }

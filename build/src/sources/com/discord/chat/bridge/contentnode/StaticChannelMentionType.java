@@ -1,5 +1,6 @@
 package com.discord.chat.bridge.contentnode;
 
+import at.e;
 import com.facebook.react.devsupport.StackTraceHelper;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
@@ -11,11 +12,10 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import org.jetbrains.annotations.NotNull;
-import zs.e;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+@ys.m(with = Serializer.class)
 @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0002\b\r\b\u0087\u0081\u0002\u0018\u0000 \u000e2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0002\u000e\u000fB\u0011\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\r¨\u0006\u0010"}, d2 = {"Lcom/discord/chat/bridge/contentnode/StaticChannelMentionType;", "", StackTraceHelper.ID_KEY, "", "<init>", "(Ljava/lang/String;ILjava/lang/String;)V", "getId", "()Ljava/lang/String;", "Home", "Guide", "Customize", "Browse", "LinkedRoles", "Unknown", "Companion", "Serializer", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@xs.m(with = Serializer.class)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class StaticChannelMentionType {
     private static final /* synthetic */ EnumEntries $ENTRIES;
@@ -25,7 +25,7 @@ public final class StaticChannelMentionType {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9668id;
+    private final String f9297id;
     public static final StaticChannelMentionType Home = new StaticChannelMentionType("Home", 0, "home");
     public static final StaticChannelMentionType Guide = new StaticChannelMentionType("Guide", 1, "guide");
     public static final StaticChannelMentionType Customize = new StaticChannelMentionType("Customize", 2, "customize");
@@ -84,10 +84,10 @@ public final class StaticChannelMentionType {
         private Serializer() {
         }
 
-        @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
+        @Override // kotlinx.serialization.KSerializer, ys.o, kotlinx.serialization.DeserializationStrategy
         @NotNull
         public SerialDescriptor getDescriptor() {
-            return zs.j.b("StaticChannelMentionType", e.i.f56107a);
+            return at.j.b("StaticChannelMentionType", e.i.f6078a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy
@@ -97,7 +97,7 @@ public final class StaticChannelMentionType {
             return StaticChannelMentionType.Companion.fromValue(decoder.z());
         }
 
-        @Override // xs.o
+        @Override // ys.o
         public void serialize(@NotNull Encoder encoder, @NotNull StaticChannelMentionType value) {
             Intrinsics.checkNotNullParameter(encoder, "encoder");
             Intrinsics.checkNotNullParameter(value, "value");
@@ -112,12 +112,12 @@ public final class StaticChannelMentionType {
     static {
         StaticChannelMentionType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = pr.a.a($values);
+        $ENTRIES = qr.a.a($values);
         Companion = new Companion(null);
     }
 
     private StaticChannelMentionType(String str, int i10, String str2) {
-        this.f9668id = str2;
+        this.f9297id = str2;
     }
 
     @NotNull
@@ -135,6 +135,6 @@ public final class StaticChannelMentionType {
 
     @NotNull
     public final String getId() {
-        return this.f9668id;
+        return this.f9297id;
     }
 }

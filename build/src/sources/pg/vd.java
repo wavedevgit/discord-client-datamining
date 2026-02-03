@@ -5,42 +5,42 @@ import kotlin.jvm.internal.LongCompanionObject;
 public final class vd {
 
     /* renamed from: a  reason: collision with root package name */
-    private Long f45801a;
+    private Long f45875a;
 
     /* renamed from: b  reason: collision with root package name */
-    private ie f45802b;
+    private ie f45876b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Boolean f45803c;
+    private Boolean f45877c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Boolean f45804d;
+    private Boolean f45878d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Boolean f45805e;
+    private Boolean f45879e;
 
     public final vd a(Boolean bool) {
-        this.f45804d = bool;
+        this.f45878d = bool;
         return this;
     }
 
     public final vd b(Boolean bool) {
-        this.f45805e = bool;
+        this.f45879e = bool;
         return this;
     }
 
     public final vd c(Long l10) {
-        this.f45801a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f45875a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final vd d(ie ieVar) {
-        this.f45802b = ieVar;
+        this.f45876b = ieVar;
         return this;
     }
 
     public final vd e(Boolean bool) {
-        this.f45803c = bool;
+        this.f45877c = bool;
         return this;
     }
 

@@ -3,10 +3,10 @@ package io.sentry;
 public final class g3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Class f30017a;
+    private final Class f29583a;
 
     private g3(Class cls) {
-        this.f30017a = cls;
+        this.f29583a = cls;
     }
 
     public static g3 a(Class cls) {
@@ -14,6 +14,6 @@ public final class g3 {
     }
 
     public Object b() {
-        return this.f30017a.getDeclaredConstructor(null).newInstance(null);
+        return this.f29583a.getDeclaredConstructor(null).newInstance(null);
     }
 }

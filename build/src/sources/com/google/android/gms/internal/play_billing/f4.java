@@ -6,11 +6,11 @@ import sun.misc.Unsafe;
 public abstract class f4 {
 
     /* renamed from: a  reason: collision with root package name */
-    final Unsafe f15231a;
+    final Unsafe f14860a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f4(Unsafe unsafe) {
-        this.f15231a = unsafe;
+        this.f14860a = unsafe;
     }
 
     public abstract double a(Object obj, long j10);

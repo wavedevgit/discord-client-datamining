@@ -6,31 +6,31 @@ import ck.p;
 final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gk.b f49618a;
+    private final gk.b f49890a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final p f49619b;
+    private final p f49891b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final p f49620c;
+    private final p f49892c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final p f49621d;
+    private final p f49893d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final p f49622e;
+    private final p f49894e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f49623f;
+    private final int f49895f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f49624g;
+    private final int f49896g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f49625h;
+    private final int f49897h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f49626i;
+    private final int f49898i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(gk.b bVar, p pVar, p pVar2, p pVar3, p pVar4) {
@@ -47,15 +47,15 @@ final class c {
             pVar3 = new p(bVar.l() - 1, pVar.d());
             pVar4 = new p(bVar.l() - 1, pVar2.d());
         }
-        this.f49618a = bVar;
-        this.f49619b = pVar;
-        this.f49620c = pVar2;
-        this.f49621d = pVar3;
-        this.f49622e = pVar4;
-        this.f49623f = (int) Math.min(pVar.c(), pVar2.c());
-        this.f49624g = (int) Math.max(pVar3.c(), pVar4.c());
-        this.f49625h = (int) Math.min(pVar.d(), pVar3.d());
-        this.f49626i = (int) Math.max(pVar2.d(), pVar4.d());
+        this.f49890a = bVar;
+        this.f49891b = pVar;
+        this.f49892c = pVar2;
+        this.f49893d = pVar3;
+        this.f49894e = pVar4;
+        this.f49895f = (int) Math.min(pVar.c(), pVar2.c());
+        this.f49896g = (int) Math.max(pVar3.c(), pVar4.c());
+        this.f49897h = (int) Math.min(pVar.d(), pVar3.d());
+        this.f49898i = (int) Math.max(pVar2.d(), pVar4.d());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -66,7 +66,7 @@ final class c {
         if (cVar2 == null) {
             return cVar;
         }
-        return new c(cVar.f49618a, cVar.f49619b, cVar.f49620c, cVar2.f49621d, cVar2.f49622e);
+        return new c(cVar.f49890a, cVar.f49891b, cVar.f49892c, cVar2.f49893d, cVar2.f49894e);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -79,10 +79,10 @@ final class c {
     public tk.c a(int r13, int r14, boolean r15) {
         /*
             r12 = this;
-            ck.p r0 = r12.f49619b
-            ck.p r1 = r12.f49620c
-            ck.p r2 = r12.f49621d
-            ck.p r3 = r12.f49622e
+            ck.p r0 = r12.f49891b
+            ck.p r1 = r12.f49892c
+            ck.p r2 = r12.f49893d
+            ck.p r3 = r12.f49894e
             if (r13 <= 0) goto L2a
             if (r15 == 0) goto Le
             r4 = r0
@@ -115,18 +115,18 @@ final class c {
         L2c:
             if (r14 <= 0) goto L5d
             if (r15 == 0) goto L33
-            ck.p r13 = r12.f49620c
+            ck.p r13 = r12.f49892c
             goto L35
         L33:
-            ck.p r13 = r12.f49622e
+            ck.p r13 = r12.f49894e
         L35:
             float r0 = r13.d()
             int r0 = (int) r0
             int r0 = r0 + r14
-            gk.b r14 = r12.f49618a
+            gk.b r14 = r12.f49890a
             int r14 = r14.i()
             if (r0 < r14) goto L4b
-            gk.b r14 = r12.f49618a
+            gk.b r14 = r12.f49890a
             int r14 = r14.i()
             int r0 = r14 + (-1)
         L4b:
@@ -148,7 +148,7 @@ final class c {
             goto L58
         L5f:
             tk.c r6 = new tk.c
-            gk.b r7 = r12.f49618a
+            gk.b r7 = r12.f49890a
             r6.<init>(r7, r8, r9, r10, r11)
             return r6
         */
@@ -157,54 +157,54 @@ final class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p b() {
-        return this.f49620c;
+        return this.f49892c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p c() {
-        return this.f49622e;
+        return this.f49894e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int d() {
-        return this.f49624g;
+        return this.f49896g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int e() {
-        return this.f49626i;
+        return this.f49898i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int f() {
-        return this.f49623f;
+        return this.f49895f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int g() {
-        return this.f49625h;
+        return this.f49897h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p h() {
-        return this.f49619b;
+        return this.f49891b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p i() {
-        return this.f49621d;
+        return this.f49893d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(c cVar) {
-        this.f49618a = cVar.f49618a;
-        this.f49619b = cVar.f49619b;
-        this.f49620c = cVar.f49620c;
-        this.f49621d = cVar.f49621d;
-        this.f49622e = cVar.f49622e;
-        this.f49623f = cVar.f49623f;
-        this.f49624g = cVar.f49624g;
-        this.f49625h = cVar.f49625h;
-        this.f49626i = cVar.f49626i;
+        this.f49890a = cVar.f49890a;
+        this.f49891b = cVar.f49891b;
+        this.f49892c = cVar.f49892c;
+        this.f49893d = cVar.f49893d;
+        this.f49894e = cVar.f49894e;
+        this.f49895f = cVar.f49895f;
+        this.f49896g = cVar.f49896g;
+        this.f49897h = cVar.f49897h;
+        this.f49898i = cVar.f49898i;
     }
 }

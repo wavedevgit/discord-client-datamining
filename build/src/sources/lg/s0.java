@@ -3,7 +3,7 @@ package lg;
 public final class s0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static s0 f37351a;
+    private static s0 f37465a;
 
     private s0() {
     }
@@ -12,10 +12,10 @@ public final class s0 {
         s0 s0Var;
         synchronized (s0.class) {
             try {
-                if (f37351a == null) {
-                    f37351a = new s0();
+                if (f37465a == null) {
+                    f37465a = new s0();
                 }
-                s0Var = f37351a;
+                s0Var = f37465a;
             } catch (Throwable th2) {
                 throw th2;
             }

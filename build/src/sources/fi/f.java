@@ -8,26 +8,26 @@ import org.xmlpull.v1.XmlPullParserException;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final di.b f25203a;
+    private final di.b f24414a;
 
     /* renamed from: b  reason: collision with root package name */
-    private XmlPullParser f25204b;
+    private XmlPullParser f24415b;
 
     public f(di.b bVar) {
-        this.f25203a = bVar;
+        this.f24414a = bVar;
     }
 
     public final long a() {
-        if (this.f25204b != null) {
+        if (this.f24415b != null) {
             while (true) {
-                int next = this.f25204b.next();
+                int next = this.f24415b.next();
                 if (next != 2) {
                     if (next == 1) {
                         break;
                     }
-                } else if (this.f25204b.getName().equals("manifest")) {
-                    String attributeValue = this.f25204b.getAttributeValue("http://schemas.android.com/apk/res/android", "versionCode");
-                    String attributeValue2 = this.f25204b.getAttributeValue("http://schemas.android.com/apk/res/android", "versionCodeMajor");
+                } else if (this.f24415b.getName().equals("manifest")) {
+                    String attributeValue = this.f24415b.getAttributeValue("http://schemas.android.com/apk/res/android", "versionCode");
+                    String attributeValue2 = this.f24415b.getAttributeValue("http://schemas.android.com/apk/res/android", "versionCodeMajor");
                     if (attributeValue != null) {
                         try {
                             int parseInt = Integer.parseInt(attributeValue);
@@ -52,6 +52,6 @@ public final class f {
     }
 
     public final void b(AssetManager assetManager, File file) {
-        this.f25204b = assetManager.openXmlResourceParser(di.b.c(assetManager, file), "AndroidManifest.xml");
+        this.f24415b = assetManager.openXmlResourceParser(di.b.c(assetManager, file), "AndroidManifest.xml");
     }
 }

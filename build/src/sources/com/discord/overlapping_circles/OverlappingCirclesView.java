@@ -28,9 +28,9 @@ import com.facebook.drawee.generic.GenericDraweeHierarchyBuilder;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.react.modules.dialog.AlertFragment;
 import com.google.android.material.textview.MaterialTextView;
-import ir.l;
-import ir.o;
 import java.util.List;
+import jr.l;
+import jr.o;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -197,7 +197,7 @@ public final class OverlappingCirclesView extends LinearLayout {
             this.showSeparation = z10;
             this.overlapPx = i11;
             this.radius = i13 / 2.0f;
-            this.separatorClipPath$delegate = l.a(o.f31120i, new Function0() { // from class: com.discord.overlapping_circles.a
+            this.separatorClipPath$delegate = l.a(o.f32183i, new Function0() { // from class: com.discord.overlapping_circles.a
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Path separatorClipPath_delegate$lambda$0;
@@ -312,7 +312,7 @@ public final class OverlappingCirclesView extends LinearLayout {
             View overflowItem = new OverflowItem(context5, items.size() - i10, this.overflowTextSizePx, this.overflowTextColor, this.overflowBgColor, getLayoutParams().height);
             LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-2, -1);
             layoutParams2.setMarginStart(this.overlapNegativeMargin);
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
             addView(overflowItem, layoutParams2);
         }
     }

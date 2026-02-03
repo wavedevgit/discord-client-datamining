@@ -3,13 +3,13 @@ package com.google.android.gms.internal.play_billing;
 final class n1 implements t2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final n1 f15333a = new n1();
+    private static final n1 f14962a = new n1();
 
     private n1() {
     }
 
     public static n1 c() {
-        return f15333a;
+        return f14962a;
     }
 
     @Override // com.google.android.gms.internal.play_billing.t2

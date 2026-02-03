@@ -12,16 +12,16 @@ import java.util.ArrayList;
 public class i extends RelativeLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private cl.e f17684d;
+    private cl.e f17313d;
 
     /* renamed from: e  reason: collision with root package name */
-    private n f17685e;
+    private n f17314e;
 
     /* renamed from: i  reason: collision with root package name */
-    private ArrayList f17686i;
+    private ArrayList f17315i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Runnable f17687o;
+    private final Runnable f17316o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements Runnable {
@@ -38,19 +38,19 @@ public class i extends RelativeLayout {
     }
 
     public i(ViewGroup.LayoutParams layoutParams) {
-        super(c.f17608a);
-        this.f17685e = new n();
-        this.f17686i = new ArrayList();
-        this.f17687o = new a();
+        super(c.f17237a);
+        this.f17314e = new n();
+        this.f17315i = new ArrayList();
+        this.f17316o = new a();
         LinearLayout linearLayout = new LinearLayout(getContext());
-        LayoutInflater.from(getContext()).inflate(this.f17685e.f17726o.d(), linearLayout);
+        LayoutInflater.from(getContext()).inflate(this.f17314e.f17355o.d(), linearLayout);
         addView(linearLayout, layoutParams);
-        this.f17684d = new cl.e(this.f17685e, this);
+        this.f17313d = new cl.e(this.f17314e, this);
     }
 
     private boolean b(String... strArr) {
         for (String str : strArr) {
-            if (this.f17686i.contains(str)) {
+            if (this.f17315i.contains(str)) {
                 return true;
             }
         }
@@ -58,48 +58,48 @@ public class i extends RelativeLayout {
     }
 
     public void a(cl.d dVar) {
-        this.f17684d.b(dVar);
+        this.f17313d.b(dVar);
     }
 
     public void c() {
         if (b("textColor")) {
-            this.f17684d.j();
+            this.f17313d.j();
         }
         if (b("mode", "is24hourSource")) {
-            this.f17684d.l();
+            this.f17313d.l();
         }
         if (b("mode", "locale", "is24hourSource")) {
-            this.f17684d.k();
+            this.f17313d.k();
         }
         if (b(InquiryField.DateField.TYPE, "locale", "maximumDate", "minimumDate", "minuteInterval", "mode", "timezoneOffsetInMinutes")) {
-            this.f17684d.h();
+            this.f17313d.h();
         }
         if (b("locale")) {
-            cl.a.a(this.f17685e.u());
+            cl.a.a(this.f17314e.u());
         }
         if (b("dividerColor")) {
-            this.f17684d.f(this.f17685e.p());
+            this.f17313d.f(this.f17314e.p());
         }
-        this.f17684d.g();
-        this.f17686i = new ArrayList();
+        this.f17313d.g();
+        this.f17315i = new ArrayList();
     }
 
     public void d(String str, Dynamic dynamic) {
-        this.f17685e.F(str, dynamic);
-        this.f17686i.add(str);
+        this.f17314e.F(str, dynamic);
+        this.f17315i.add(str);
     }
 
     public String getDate() {
-        return this.f17685e.f17726o.a();
+        return this.f17314e.f17355o.a();
     }
 
     public String getPickerId() {
-        return this.f17685e.q();
+        return this.f17314e.q();
     }
 
     @Override // android.widget.RelativeLayout, android.view.View, android.view.ViewParent
     public void requestLayout() {
         super.requestLayout();
-        post(this.f17687o);
+        post(this.f17316o);
     }
 }

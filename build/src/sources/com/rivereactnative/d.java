@@ -11,51 +11,51 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f18609e;
+    public static final a f18242e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final d f18610i = new d("Backwards", 0, "backwards");
+    public static final d f18243i = new d("Backwards", 0, "backwards");
 
     /* renamed from: o  reason: collision with root package name */
-    public static final d f18611o = new d("Auto", 1, "auto");
+    public static final d f18244o = new d("Auto", 1, "auto");
 
     /* renamed from: p  reason: collision with root package name */
-    public static final d f18612p = new d("Forwards", 2, "forwards");
+    public static final d f18245p = new d("Forwards", 2, "forwards");
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ d[] f18613q;
+    private static final /* synthetic */ d[] f18246q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f18614r;
+    private static final /* synthetic */ EnumEntries f18247r;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f18615d;
+    private final String f18248d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: com.rivereactnative.d$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public /* synthetic */ class C0214a {
+        public /* synthetic */ class C0219a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f18616a;
+            public static final /* synthetic */ int[] f18249a;
 
             static {
                 int[] iArr = new int[d.values().length];
                 try {
-                    iArr[d.f18610i.ordinal()] = 1;
+                    iArr[d.f18243i.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[d.f18611o.ordinal()] = 2;
+                    iArr[d.f18244o.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
                 try {
-                    iArr[d.f18612p.ordinal()] = 3;
+                    iArr[d.f18245p.ordinal()] = 3;
                 } catch (NoSuchFieldError unused3) {
                 }
-                f18616a = iArr;
+                f18249a = iArr;
             }
         }
 
@@ -76,13 +76,13 @@ public final class d {
 
         public final Direction b(d rnDirection) {
             Intrinsics.checkNotNullParameter(rnDirection, "rnDirection");
-            int i10 = C0214a.f18616a[rnDirection.ordinal()];
+            int i10 = C0219a.f18249a[rnDirection.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
                         return Direction.FORWARDS;
                     }
-                    throw new ir.p();
+                    throw new jr.p();
                 }
                 return Direction.AUTO;
             }
@@ -95,17 +95,17 @@ public final class d {
 
     static {
         d[] a10 = a();
-        f18613q = a10;
-        f18614r = pr.a.a(a10);
-        f18609e = new a(null);
+        f18246q = a10;
+        f18247r = qr.a.a(a10);
+        f18242e = new a(null);
     }
 
     private d(String str, int i10, String str2) {
-        this.f18615d = str2;
+        this.f18248d = str2;
     }
 
     private static final /* synthetic */ d[] a() {
-        return new d[]{f18610i, f18611o, f18612p};
+        return new d[]{f18243i, f18244o, f18245p};
     }
 
     public static d valueOf(String str) {
@@ -113,11 +113,11 @@ public final class d {
     }
 
     public static d[] values() {
-        return (d[]) f18613q.clone();
+        return (d[]) f18246q.clone();
     }
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f18615d;
+        return this.f18248d;
     }
 }

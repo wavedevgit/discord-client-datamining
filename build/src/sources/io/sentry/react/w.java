@@ -11,10 +11,10 @@ import java.util.Map;
 public abstract class w {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f30641a = new a(51, 0.75f, true);
+    private static final Map f30207a = new a(51, 0.75f, true);
 
     /* renamed from: b  reason: collision with root package name */
-    private static String f30642b = null;
+    private static String f30208b = null;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends LinkedHashMap {
@@ -60,20 +60,20 @@ public abstract class w {
     }
 
     public static Double d(String str) {
-        return (Double) f30641a.remove(str);
+        return (Double) f30207a.remove(str);
     }
 
     public static void e(String str, Double d10) {
-        f30641a.put(str, d10);
+        f30207a.put(str, d10);
     }
 
     public static void f(Double d10) {
-        if (f30642b != null) {
-            e("ttid-navigation-" + f30642b, d10);
+        if (f30208b != null) {
+            e("ttid-navigation-" + f30208b, d10);
         }
     }
 
     public static void g(String str) {
-        f30642b = str;
+        f30208b = str;
     }
 }

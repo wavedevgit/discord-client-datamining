@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun44021: for (var _fun44021_ip = 0;;) switch (_fun44021_ip) {
+            _fun44111: for (var _fun44111_ip = 0;;) switch (_fun44111_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var2 = var3.getGuild;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 != var2;
                     if (!var0) {
-                        _fun44021_ip = 59;
-                        continue _fun44021
+                        _fun44111_ip = 59;
+                        continue _fun44111
                     }
                 case 33:
                     var3 = var2.features;
@@ -72,13 +72,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var3 = function arg0() {
-        _fun44022: for (var _fun44022_ip = 0;;) switch (_fun44022_ip) {
+        _fun44112: for (var _fun44112_ip = 0;;) switch (_fun44112_ip) {
             case 0:
                 var4 = arg0;
                 var0 = null;
                 if (!(var0 != var4)) {
-                    _fun44022_ip = 61;
-                    continue _fun44022
+                    _fun44112_ip = 61;
+                    continue _fun44112
                 }
             case 9:
                 var3 = _closure1_slot2;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var3)(var4);
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun44022_ip = 59;
-                    continue _fun44022
+                    _fun44112_ip = 59;
+                    continue _fun44112
                 }
             case 33:
                 var3 = var2.features;
@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun44024: for (var _fun44024_ip = 0;;) switch (_fun44024_ip) {
+            _fun44114: for (var _fun44114_ip = 0;;) switch (_fun44114_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var2 = var3.getGuild;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 != var2;
                     if (!var0) {
-                        _fun44024_ip = 59;
-                        continue _fun44024
+                        _fun44114_ip = 59;
+                        continue _fun44114
                     }
                 case 33:
                     var3 = var2.features;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useHasEnhancedRoleColorsForRole = var3;
     var1 = function arg0() {
-        _fun44025: for (var _fun44025_ip = 0;;) switch (_fun44025_ip) {
+        _fun44115: for (var _fun44115_ip = 0;;) switch (_fun44115_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.getGuild;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun44025_ip = 55;
-                    continue _fun44025
+                    _fun44115_ip = 55;
+                    continue _fun44115
                 }
             case 29:
                 var3 = var2.features;

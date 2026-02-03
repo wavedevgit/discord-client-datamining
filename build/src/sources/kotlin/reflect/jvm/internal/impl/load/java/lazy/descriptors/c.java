@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.name.FqName;
 public class c implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaAnnotationDescriptor f34266d;
+    private final LazyJavaAnnotationDescriptor f34042d;
 
     public c(LazyJavaAnnotationDescriptor lazyJavaAnnotationDescriptor) {
-        this.f34266d = lazyJavaAnnotationDescriptor;
+        this.f34042d = lazyJavaAnnotationDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         FqName f10;
-        f10 = LazyJavaAnnotationDescriptor.f(this.f34266d);
+        f10 = LazyJavaAnnotationDescriptor.f(this.f34042d);
         return f10;
     }
 }

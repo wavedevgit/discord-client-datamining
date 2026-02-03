@@ -45,7 +45,7 @@ public abstract class q0 {
             return obj.equals("");
         } else {
             if (obj instanceof g) {
-                return obj.equals(g.f3591e);
+                return obj.equals(g.f3635e);
             }
             if (obj instanceof o0) {
                 if (obj == ((o0) obj).getDefaultInstanceForType()) {

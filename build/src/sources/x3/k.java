@@ -3,5 +3,5 @@ package x3;
 public interface k extends i {
     int R();
 
-    long W0();
+    long X0();
 }

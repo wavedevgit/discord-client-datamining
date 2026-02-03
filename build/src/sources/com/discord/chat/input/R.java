@@ -4,7 +4,7 @@ public final class R {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class id {
-        public static int chat_input_edit_text = 0x7f0a011c;
+        public static int chat_input_edit_text = 0x7f0a011d;
 
         private id() {
         }

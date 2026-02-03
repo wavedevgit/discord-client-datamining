@@ -47,4 +47,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useRecentlyActiveChannelsEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4557, 4558, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4587, 4588, 2]);

@@ -12,53 +12,53 @@ public final class PlaybackStateCompat implements Parcelable {
     public static final Parcelable.Creator<PlaybackStateCompat> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    final int f758d;
+    final int f802d;
 
     /* renamed from: e  reason: collision with root package name */
-    final long f759e;
+    final long f803e;
 
     /* renamed from: i  reason: collision with root package name */
-    final long f760i;
+    final long f804i;
 
     /* renamed from: o  reason: collision with root package name */
-    final float f761o;
+    final float f805o;
 
     /* renamed from: p  reason: collision with root package name */
-    final long f762p;
+    final long f806p;
 
     /* renamed from: q  reason: collision with root package name */
-    final int f763q;
+    final int f807q;
 
     /* renamed from: r  reason: collision with root package name */
-    final CharSequence f764r;
+    final CharSequence f808r;
 
     /* renamed from: s  reason: collision with root package name */
-    final long f765s;
+    final long f809s;
 
     /* renamed from: t  reason: collision with root package name */
-    List f766t;
+    List f810t;
 
     /* renamed from: u  reason: collision with root package name */
-    final long f767u;
+    final long f811u;
 
     /* renamed from: v  reason: collision with root package name */
-    final Bundle f768v;
+    final Bundle f812v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class CustomAction implements Parcelable {
         public static final Parcelable.Creator<CustomAction> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f769d;
+        private final String f813d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final CharSequence f770e;
+        private final CharSequence f814e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f771i;
+        private final int f815i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final Bundle f772o;
+        private final Bundle f816o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Parcelable.Creator {
@@ -79,10 +79,10 @@ public final class PlaybackStateCompat implements Parcelable {
         }
 
         CustomAction(Parcel parcel) {
-            this.f769d = parcel.readString();
-            this.f770e = (CharSequence) TextUtils.CHAR_SEQUENCE_CREATOR.createFromParcel(parcel);
-            this.f771i = parcel.readInt();
-            this.f772o = parcel.readBundle(MediaSessionCompat.class.getClassLoader());
+            this.f813d = parcel.readString();
+            this.f814e = (CharSequence) TextUtils.CHAR_SEQUENCE_CREATOR.createFromParcel(parcel);
+            this.f815i = parcel.readInt();
+            this.f816o = parcel.readBundle(MediaSessionCompat.class.getClassLoader());
         }
 
         @Override // android.os.Parcelable
@@ -91,15 +91,15 @@ public final class PlaybackStateCompat implements Parcelable {
         }
 
         public String toString() {
-            return "Action:mName='" + ((Object) this.f770e) + ", mIcon=" + this.f771i + ", mExtras=" + this.f772o;
+            return "Action:mName='" + ((Object) this.f814e) + ", mIcon=" + this.f815i + ", mExtras=" + this.f816o;
         }
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeString(this.f769d);
-            TextUtils.writeToParcel(this.f770e, parcel, i10);
-            parcel.writeInt(this.f771i);
-            parcel.writeBundle(this.f772o);
+            parcel.writeString(this.f813d);
+            TextUtils.writeToParcel(this.f814e, parcel, i10);
+            parcel.writeInt(this.f815i);
+            parcel.writeBundle(this.f816o);
         }
     }
 
@@ -122,17 +122,17 @@ public final class PlaybackStateCompat implements Parcelable {
     }
 
     PlaybackStateCompat(Parcel parcel) {
-        this.f758d = parcel.readInt();
-        this.f759e = parcel.readLong();
-        this.f761o = parcel.readFloat();
-        this.f765s = parcel.readLong();
-        this.f760i = parcel.readLong();
-        this.f762p = parcel.readLong();
-        this.f764r = (CharSequence) TextUtils.CHAR_SEQUENCE_CREATOR.createFromParcel(parcel);
-        this.f766t = parcel.createTypedArrayList(CustomAction.CREATOR);
-        this.f767u = parcel.readLong();
-        this.f768v = parcel.readBundle(MediaSessionCompat.class.getClassLoader());
-        this.f763q = parcel.readInt();
+        this.f802d = parcel.readInt();
+        this.f803e = parcel.readLong();
+        this.f805o = parcel.readFloat();
+        this.f809s = parcel.readLong();
+        this.f804i = parcel.readLong();
+        this.f806p = parcel.readLong();
+        this.f808r = (CharSequence) TextUtils.CHAR_SEQUENCE_CREATOR.createFromParcel(parcel);
+        this.f810t = parcel.createTypedArrayList(CustomAction.CREATOR);
+        this.f811u = parcel.readLong();
+        this.f812v = parcel.readBundle(MediaSessionCompat.class.getClassLoader());
+        this.f807q = parcel.readInt();
     }
 
     @Override // android.os.Parcelable
@@ -141,21 +141,21 @@ public final class PlaybackStateCompat implements Parcelable {
     }
 
     public String toString() {
-        return "PlaybackState {state=" + this.f758d + ", position=" + this.f759e + ", buffered position=" + this.f760i + ", speed=" + this.f761o + ", updated=" + this.f765s + ", actions=" + this.f762p + ", error code=" + this.f763q + ", error message=" + this.f764r + ", custom actions=" + this.f766t + ", active item id=" + this.f767u + "}";
+        return "PlaybackState {state=" + this.f802d + ", position=" + this.f803e + ", buffered position=" + this.f804i + ", speed=" + this.f805o + ", updated=" + this.f809s + ", actions=" + this.f806p + ", error code=" + this.f807q + ", error message=" + this.f808r + ", custom actions=" + this.f810t + ", active item id=" + this.f811u + "}";
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeInt(this.f758d);
-        parcel.writeLong(this.f759e);
-        parcel.writeFloat(this.f761o);
-        parcel.writeLong(this.f765s);
-        parcel.writeLong(this.f760i);
-        parcel.writeLong(this.f762p);
-        TextUtils.writeToParcel(this.f764r, parcel, i10);
-        parcel.writeTypedList(this.f766t);
-        parcel.writeLong(this.f767u);
-        parcel.writeBundle(this.f768v);
-        parcel.writeInt(this.f763q);
+        parcel.writeInt(this.f802d);
+        parcel.writeLong(this.f803e);
+        parcel.writeFloat(this.f805o);
+        parcel.writeLong(this.f809s);
+        parcel.writeLong(this.f804i);
+        parcel.writeLong(this.f806p);
+        TextUtils.writeToParcel(this.f808r, parcel, i10);
+        parcel.writeTypedList(this.f810t);
+        parcel.writeLong(this.f811u);
+        parcel.writeBundle(this.f812v);
+        parcel.writeInt(this.f807q);
     }
 }

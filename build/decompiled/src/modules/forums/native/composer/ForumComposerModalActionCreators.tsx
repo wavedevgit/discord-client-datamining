@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/native/composer/ForumComposerModalActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Environment: var1
-        _fun73643: for (var _fun73643_ip = 0;;) switch (_fun73643_ip) {
+        _fun73754: for (var _fun73754_ip = 0;;) switch (_fun73754_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot0;
@@ -46,15 +46,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var1 = var1 != var3;
                 if (!var1) {
-                    _fun73643_ip = 90;
-                    continue _fun73643
+                    _fun73754_ip = 90;
+                    continue _fun73754
                 }
             case 84:
                 var1 = var5.isEdit;
             case 90:
                 if (var1) {
-                    _fun73643_ip = 142;
-                    continue _fun73643
+                    _fun73754_ip = 142;
+                    continue _fun73754
                 }
             case 93:
                 var3 = _closure1_slot0;
@@ -90,20 +90,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openCreateForumPostModal = var3;
     var1 = function() { // Environment: var1
-        _fun73644: for (var _fun73644_ip = 0;;) switch (_fun73644_ip) {
+        _fun73755: for (var _fun73755_ip = 0;;) switch (_fun73755_ip) {
             case 0:
                 var1 = arguments[0];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun73644_ip = 11;
-                    continue _fun73644
+                    _fun73755_ip = 11;
+                    continue _fun73755
                 }
             case 9:
                 var1 = false;
             case 11:
                 if (var1) {
-                    _fun73644_ip = 46;
-                    continue _fun73644
+                    _fun73755_ip = 46;
+                    continue _fun73755
                 }
             case 14:
                 var2 = _closure1_slot0;
@@ -127,4 +127,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.closeCreateForumPostModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6433, 4527, 9215, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6464, 4557, 9247, 1307, 2]);

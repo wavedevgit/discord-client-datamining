@@ -23,7 +23,7 @@ public class JavaDescriptorVisibilities {
     public static final DescriptorVisibility PROTECTED_STATIC_VISIBILITY;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f33996a;
+    private static final Map f33772a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static class a extends DelegatedDescriptorVisibility {
@@ -130,7 +130,7 @@ public class JavaDescriptorVisibilities {
         PROTECTED_STATIC_VISIBILITY = bVar;
         c cVar = new c(JavaVisibilities.ProtectedAndPackage.INSTANCE);
         PROTECTED_AND_PACKAGE = cVar;
-        f33996a = new HashMap();
+        f33772a = new HashMap();
         f(aVar);
         f(bVar);
         f(cVar);
@@ -210,7 +210,7 @@ public class JavaDescriptorVisibilities {
     }
 
     private static void f(DescriptorVisibility descriptorVisibility) {
-        f33996a.put(descriptorVisibility.getDelegate(), descriptorVisibility);
+        f33772a.put(descriptorVisibility.getDelegate(), descriptorVisibility);
     }
 
     @NotNull
@@ -218,7 +218,7 @@ public class JavaDescriptorVisibilities {
         if (visibility == null) {
             a(4);
         }
-        DescriptorVisibility descriptorVisibility = (DescriptorVisibility) f33996a.get(visibility);
+        DescriptorVisibility descriptorVisibility = (DescriptorVisibility) f33772a.get(visibility);
         if (descriptorVisibility == null) {
             DescriptorVisibility descriptorVisibility2 = DescriptorVisibilities.toDescriptorVisibility(visibility);
             if (descriptorVisibility2 == null) {

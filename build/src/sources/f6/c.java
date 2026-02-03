@@ -3,15 +3,15 @@ package f6;
 class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f24462a;
+    private int f23673a;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f24463b;
+    private long f23674b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(long j10, int i10) {
-        this.f24463b = j10;
-        this.f24462a = i10;
+        this.f23674b = j10;
+        this.f23673a = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -93,10 +93,10 @@ class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int a() {
-        return this.f24462a;
+        return this.f23673a;
     }
 
     public int d() {
-        return (int) this.f24463b;
+        return (int) this.f23674b;
     }
 }

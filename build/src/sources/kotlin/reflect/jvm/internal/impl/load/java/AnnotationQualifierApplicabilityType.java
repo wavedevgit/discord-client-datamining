@@ -8,13 +8,13 @@ import org.jetbrains.annotations.NotNull;
 public final class AnnotationQualifierApplicabilityType {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ AnnotationQualifierApplicabilityType[] f33974e;
+    private static final /* synthetic */ AnnotationQualifierApplicabilityType[] f33750e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f33975i;
+    private static final /* synthetic */ EnumEntries f33751i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f33976d;
+    private final String f33752d;
     public static final AnnotationQualifierApplicabilityType METHOD_RETURN_TYPE = new AnnotationQualifierApplicabilityType("METHOD_RETURN_TYPE", 0, "METHOD");
     public static final AnnotationQualifierApplicabilityType VALUE_PARAMETER = new AnnotationQualifierApplicabilityType("VALUE_PARAMETER", 1, "PARAMETER");
     public static final AnnotationQualifierApplicabilityType FIELD = new AnnotationQualifierApplicabilityType("FIELD", 2, "FIELD");
@@ -24,12 +24,12 @@ public final class AnnotationQualifierApplicabilityType {
 
     static {
         AnnotationQualifierApplicabilityType[] a10 = a();
-        f33974e = a10;
-        f33975i = pr.a.a(a10);
+        f33750e = a10;
+        f33751i = qr.a.a(a10);
     }
 
     private AnnotationQualifierApplicabilityType(String str, int i10, String str2) {
-        this.f33976d = str2;
+        this.f33752d = str2;
     }
 
     private static final /* synthetic */ AnnotationQualifierApplicabilityType[] a() {
@@ -41,11 +41,11 @@ public final class AnnotationQualifierApplicabilityType {
     }
 
     public static AnnotationQualifierApplicabilityType[] values() {
-        return (AnnotationQualifierApplicabilityType[]) f33974e.clone();
+        return (AnnotationQualifierApplicabilityType[]) f33750e.clone();
     }
 
     @NotNull
     public final String getJavaTarget() {
-        return this.f33976d;
+        return this.f33752d;
     }
 }

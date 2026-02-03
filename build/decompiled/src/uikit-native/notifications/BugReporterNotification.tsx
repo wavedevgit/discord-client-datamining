@@ -157,4 +157,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.BugReporterNotification = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4669, 3902, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4699, 3932, 2]);

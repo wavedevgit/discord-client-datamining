@@ -3,51 +3,51 @@ package tk;
 final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f49612a;
+    private final int f49884a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f49613b;
+    private final int f49885b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f49614c;
+    private final int f49886c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f49615d;
+    private final int f49887d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f49616e;
+    private final int f49888e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(int i10, int i11, int i12, int i13) {
-        this.f49612a = i10;
-        this.f49613b = i13;
-        this.f49614c = i11;
-        this.f49615d = i12;
-        this.f49616e = i11 + i12;
+        this.f49884a = i10;
+        this.f49885b = i13;
+        this.f49886c = i11;
+        this.f49887d = i12;
+        this.f49888e = i11 + i12;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int a() {
-        return this.f49612a;
+        return this.f49884a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int b() {
-        return this.f49613b;
+        return this.f49885b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int c() {
-        return this.f49616e;
+        return this.f49888e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int d() {
-        return this.f49615d;
+        return this.f49887d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int e() {
-        return this.f49614c;
+        return this.f49886c;
     }
 }

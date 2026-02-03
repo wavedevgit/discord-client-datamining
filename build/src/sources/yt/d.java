@@ -1,193 +1,206 @@
 package yt;
 
-import bu.n;
-import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.RejectedExecutionException;
+import java.util.logging.Level;
+import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
-import okhttp3.HttpUrl;
-import okhttp3.OkHttpClient;
-import tt.k;
-import yt.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f54999a;
+    private final e f55188a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final okhttp3.a f55000b;
+    private final String f55189b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e f55001c;
+    private boolean f55190c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final okhttp3.e f55002d;
+    private a f55191d;
 
     /* renamed from: e  reason: collision with root package name */
-    private j.b f55003e;
+    private final List f55192e;
 
     /* renamed from: f  reason: collision with root package name */
-    private j f55004f;
+    private boolean f55193f;
 
-    /* renamed from: g  reason: collision with root package name */
-    private int f55005g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private int f55006h;
-
-    /* renamed from: i  reason: collision with root package name */
-    private int f55007i;
-
-    /* renamed from: j  reason: collision with root package name */
-    private k f55008j;
-
-    public d(g connectionPool, okhttp3.a address, e call, okhttp3.e eventListener) {
-        Intrinsics.checkNotNullParameter(connectionPool, "connectionPool");
-        Intrinsics.checkNotNullParameter(address, "address");
-        Intrinsics.checkNotNullParameter(call, "call");
-        Intrinsics.checkNotNullParameter(eventListener, "eventListener");
-        this.f54999a = connectionPool;
-        this.f55000b = address;
-        this.f55001c = call;
-        this.f55002d = eventListener;
+    public d(e taskRunner, String name) {
+        Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
+        Intrinsics.checkNotNullParameter(name, "name");
+        this.f55188a = taskRunner;
+        this.f55189b = name;
+        this.f55192e = new ArrayList();
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:56:0x012c  */
-    /* JADX WARN: Removed duplicated region for block: B:58:0x0146  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    private final yt.f b(int r13, int r14, int r15, int r16, boolean r17) {
-        /*
-            Method dump skipped, instructions count: 376
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: yt.d.b(int, int, int, int, boolean):yt.f");
-    }
-
-    private final f c(int i10, int i11, int i12, int i13, boolean z10, boolean z11) {
-        boolean z12;
-        while (true) {
-            f b10 = b(i10, i11, i12, i13, z10);
-            boolean z13 = z10;
-            int i14 = i13;
-            int i15 = i12;
-            int i16 = i11;
-            int i17 = i10;
-            if (b10.u(z11)) {
-                return b10;
-            }
-            b10.z();
-            if (this.f55008j == null) {
-                j.b bVar = this.f55003e;
-                boolean z14 = true;
-                if (bVar != null) {
-                    z12 = bVar.b();
-                } else {
-                    z12 = true;
-                }
-                if (z12) {
-                    continue;
-                } else {
-                    j jVar = this.f55004f;
-                    if (jVar != null) {
-                        z14 = jVar.a();
-                    }
-                    if (!z14) {
-                        throw new IOException("exhausted all routes");
-                    }
-                }
-            }
-            i10 = i17;
-            i11 = i16;
-            i12 = i15;
-            i13 = i14;
-            z10 = z13;
+    public static /* synthetic */ void j(d dVar, a aVar, long j10, int i10, Object obj) {
+        if ((i10 & 2) != 0) {
+            j10 = 0;
         }
+        dVar.i(aVar, j10);
     }
 
-    private final k f() {
-        f l10;
-        if (this.f55005g > 1 || this.f55006h > 1 || this.f55007i > 0 || (l10 = this.f55001c.l()) == null) {
-            return null;
+    public final void a() {
+        if (vt.e.f51535h && Thread.holdsLock(this)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
-        synchronized (l10) {
-            if (l10.q() != 0) {
-                return null;
-            }
-            if (!ut.e.j(l10.A().a().l(), this.f55000b.l())) {
-                return null;
-            }
-            return l10.A();
-        }
-    }
-
-    public final zt.d a(OkHttpClient client, zt.g chain) {
-        Intrinsics.checkNotNullParameter(client, "client");
-        Intrinsics.checkNotNullParameter(chain, "chain");
-        try {
+        synchronized (this.f55188a) {
             try {
-                return c(chain.e(), chain.g(), chain.j(), client.F(), client.M(), !Intrinsics.areEqual(chain.i().j(), "GET")).w(client, chain);
-            } catch (IOException e10) {
-                e = e10;
-                IOException iOException = e;
-                h(iOException);
-                throw new i(iOException);
-            } catch (i e11) {
-                e = e11;
-                i iVar = e;
-                h(iVar.c());
-                throw iVar;
+                if (b()) {
+                    this.f55188a.h(this);
+                }
+                Unit unit = Unit.f33074a;
+            } catch (Throwable th2) {
+                throw th2;
             }
-        } catch (IOException e12) {
-            e = e12;
-        } catch (i e13) {
-            e = e13;
         }
     }
 
-    public final okhttp3.a d() {
-        return this.f55000b;
+    public final boolean b() {
+        a aVar = this.f55191d;
+        if (aVar != null) {
+            Intrinsics.checkNotNull(aVar);
+            if (aVar.a()) {
+                this.f55193f = true;
+            }
+        }
+        boolean z10 = false;
+        for (int size = this.f55192e.size() - 1; -1 < size; size--) {
+            if (((a) this.f55192e.get(size)).a()) {
+                a aVar2 = (a) this.f55192e.get(size);
+                if (e.f55194h.a().isLoggable(Level.FINE)) {
+                    b.a(aVar2, this, "canceled");
+                }
+                this.f55192e.remove(size);
+                z10 = true;
+            }
+        }
+        return z10;
     }
 
-    public final boolean e() {
-        j jVar;
-        if (this.f55005g == 0 && this.f55006h == 0 && this.f55007i == 0) {
+    public final a c() {
+        return this.f55191d;
+    }
+
+    public final boolean d() {
+        return this.f55193f;
+    }
+
+    public final List e() {
+        return this.f55192e;
+    }
+
+    public final String f() {
+        return this.f55189b;
+    }
+
+    public final boolean g() {
+        return this.f55190c;
+    }
+
+    public final e h() {
+        return this.f55188a;
+    }
+
+    public final void i(a task, long j10) {
+        Intrinsics.checkNotNullParameter(task, "task");
+        synchronized (this.f55188a) {
+            if (this.f55190c) {
+                if (task.a()) {
+                    if (e.f55194h.a().isLoggable(Level.FINE)) {
+                        b.a(task, this, "schedule canceled (queue is shutdown)");
+                    }
+                    return;
+                }
+                if (e.f55194h.a().isLoggable(Level.FINE)) {
+                    b.a(task, this, "schedule failed (queue is shutdown)");
+                }
+                throw new RejectedExecutionException();
+            }
+            if (k(task, j10, false)) {
+                this.f55188a.h(this);
+            }
+            Unit unit = Unit.f33074a;
+        }
+    }
+
+    public final boolean k(a task, long j10, boolean z10) {
+        String str;
+        Intrinsics.checkNotNullParameter(task, "task");
+        task.e(this);
+        long c10 = this.f55188a.g().c();
+        long j11 = c10 + j10;
+        int indexOf = this.f55192e.indexOf(task);
+        if (indexOf != -1) {
+            if (task.c() <= j11) {
+                if (e.f55194h.a().isLoggable(Level.FINE)) {
+                    b.a(task, this, "already scheduled");
+                }
+                return false;
+            }
+            this.f55192e.remove(indexOf);
+        }
+        task.g(j11);
+        if (e.f55194h.a().isLoggable(Level.FINE)) {
+            if (z10) {
+                str = "run again after " + b.b(j11 - c10);
+            } else {
+                str = "scheduled after " + b.b(j11 - c10);
+            }
+            b.a(task, this, str);
+        }
+        Iterator it = this.f55192e.iterator();
+        int i10 = 0;
+        while (true) {
+            if (it.hasNext()) {
+                if (((a) it.next()).c() - c10 > j10) {
+                    break;
+                }
+                i10++;
+            } else {
+                i10 = -1;
+                break;
+            }
+        }
+        if (i10 == -1) {
+            i10 = this.f55192e.size();
+        }
+        this.f55192e.add(i10, task);
+        if (i10 != 0) {
             return false;
         }
-        if (this.f55008j != null) {
-            return true;
-        }
-        k f10 = f();
-        if (f10 != null) {
-            this.f55008j = f10;
-            return true;
-        }
-        j.b bVar = this.f55003e;
-        if ((bVar != null && bVar.b()) || (jVar = this.f55004f) == null) {
-            return true;
-        }
-        return jVar.a();
+        return true;
     }
 
-    public final boolean g(HttpUrl url) {
-        Intrinsics.checkNotNullParameter(url, "url");
-        HttpUrl l10 = this.f55000b.l();
-        if (url.o() == l10.o() && Intrinsics.areEqual(url.i(), l10.i())) {
-            return true;
-        }
-        return false;
+    public final void l(a aVar) {
+        this.f55191d = aVar;
     }
 
-    public final void h(IOException e10) {
-        Intrinsics.checkNotNullParameter(e10, "e");
-        this.f55008j = null;
-        if ((e10 instanceof n) && ((n) e10).f8025d == bu.b.REFUSED_STREAM) {
-            this.f55005g++;
-        } else if (e10 instanceof bu.a) {
-            this.f55006h++;
-        } else {
-            this.f55007i++;
+    public final void m(boolean z10) {
+        this.f55193f = z10;
+    }
+
+    public final void n() {
+        if (vt.e.f51535h && Thread.holdsLock(this)) {
+            throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
+        synchronized (this.f55188a) {
+            try {
+                this.f55190c = true;
+                if (b()) {
+                    this.f55188a.h(this);
+                }
+                Unit unit = Unit.f33074a;
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+    }
+
+    public String toString() {
+        return this.f55189b;
     }
 }

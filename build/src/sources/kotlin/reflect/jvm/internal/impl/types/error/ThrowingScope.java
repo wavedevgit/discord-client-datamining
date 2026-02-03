@@ -31,7 +31,7 @@ public final class ThrowingScope extends ErrorScope {
     @Override // kotlin.reflect.jvm.internal.impl.types.error.ErrorScope, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     @NotNull
     /* renamed from: getContributedClassifier */
-    public ClassifierDescriptor mo1199getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
+    public ClassifierDescriptor mo1201getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
         throw new IllegalStateException(a() + ", required name: " + name);
@@ -82,7 +82,7 @@ public final class ThrowingScope extends ErrorScope {
     @Override // kotlin.reflect.jvm.internal.impl.types.error.ErrorScope, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     @NotNull
     /* renamed from: recordLookup */
-    public Void mo1202recordLookup(@NotNull Name name, @NotNull LookupLocation location) {
+    public Void mo1204recordLookup(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
         throw new IllegalStateException();

@@ -12,7 +12,7 @@ import com.google.firebase.messaging.i1;
 public class f1 extends Binder {
 
     /* renamed from: c  reason: collision with root package name */
-    private final a f17484c;
+    private final a f17113c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -22,7 +22,7 @@ public class f1 extends Binder {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f1(a aVar) {
-        this.f17484c = aVar;
+        this.f17113c = aVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -31,7 +31,7 @@ public class f1 extends Binder {
             if (Log.isLoggable("FirebaseMessaging", 3)) {
                 Log.d("FirebaseMessaging", "service received new intent via bind strategy");
             }
-            this.f17484c.a(aVar.f17506a).c(new g2.i(), new OnCompleteListener() { // from class: com.google.firebase.messaging.e1
+            this.f17113c.a(aVar.f17135a).c(new g2.i(), new OnCompleteListener() { // from class: com.google.firebase.messaging.e1
                 @Override // com.google.android.gms.tasks.OnCompleteListener
                 public final void onComplete(Task task) {
                     i1.a.this.d();

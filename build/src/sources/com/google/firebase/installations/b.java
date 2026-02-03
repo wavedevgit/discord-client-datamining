@@ -8,14 +8,14 @@ import java.nio.channels.FileLock;
 class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FileChannel f17358a;
+    private final FileChannel f16987a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final FileLock f17359b;
+    private final FileLock f16988b;
 
     private b(FileChannel fileChannel, FileLock fileLock) {
-        this.f17358a = fileChannel;
-        this.f17359b = fileLock;
+        this.f16987a = fileChannel;
+        this.f16988b = fileLock;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -89,8 +89,8 @@ class b {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b() {
         try {
-            this.f17359b.release();
-            this.f17358a.close();
+            this.f16988b.release();
+            this.f16987a.close();
         } catch (IOException e10) {
             Log.e("CrossProcessLock", "encountered error while releasing, ignoring", e10);
         }

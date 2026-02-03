@@ -6,10 +6,10 @@ import java.util.List;
 public class r extends s {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f47476d;
+    private final List f47731d;
 
     public r(List list) {
         super("Dependency cycle detected: " + Arrays.toString(list.toArray()));
-        this.f47476d = list;
+        this.f47731d = list;
     }
 }

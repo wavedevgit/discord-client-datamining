@@ -6,7 +6,7 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface VariableDescriptor extends ValueDescriptor {
     /* renamed from: getCompileTimeInitializer */
-    ConstantValue<?> mo1195getCompileTimeInitializer();
+    ConstantValue<?> mo1197getCompileTimeInitializer();
 
     boolean isConst();
 

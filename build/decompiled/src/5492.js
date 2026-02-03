@@ -10,16 +10,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var2, var0, var1);
     var1 = {};
-    var6 = 'RNSVGFilter';
+    var6 = 'RNSVGFeBlend';
     var1.uiViewClassName = var6;
     var0 = {
-        'name': true,
         'x': true,
         'y': true,
-        'height': true,
         'width': true,
-        'filterUnits': true,
-        'primitiveUnits': true
+        'height': true,
+        'result': true,
+        'in1': true,
+        'in2': true,
+        'mode': true
     };
     var1.validAttributes = var0;
     var _closure1_slot0 = var1;

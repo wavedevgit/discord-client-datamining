@@ -1,32 +1,21 @@
 package fq;
 
-import android.graphics.Typeface;
-import android.text.TextPaint;
-import android.text.style.MetricAffectingSpan;
-import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyle;
 import kotlin.jvm.internal.Intrinsics;
+import kp.s;
+import kp.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class c extends MetricAffectingSpan {
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Typeface f25496d;
-
-    public c(Typeface typeface) {
-        Intrinsics.checkNotNullParameter(typeface, "typeface");
-        this.f25496d = typeface;
-    }
-
-    @Override // android.text.style.CharacterStyle
-    public void updateDrawState(TextPaint textPaint) {
-        Intrinsics.checkNotNullParameter(textPaint, "textPaint");
-        textPaint.setTypeface(this.f25496d);
-        textPaint.setFlags(textPaint.getFlags() | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-    }
-
-    @Override // android.text.style.MetricAffectingSpan
-    public void updateMeasureState(TextPaint paint) {
-        Intrinsics.checkNotNullParameter(paint, "paint");
-        paint.setTypeface(this.f25496d);
-        paint.setFlags(paint.getFlags() | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+public abstract class c {
+    public static final Drawable a(StepStyle stepStyle, Context context) {
+        Integer g10;
+        Intrinsics.checkNotNullParameter(stepStyle, "<this>");
+        Intrinsics.checkNotNullParameter(context, "context");
+        String backgroundImageName = stepStyle.getBackgroundImageName();
+        if (backgroundImageName == null || (g10 = s.g(context, backgroundImageName, t.f36312e)) == null) {
+            return null;
+        }
+        return androidx.core.content.a.e(context, g10.intValue());
     }
 }

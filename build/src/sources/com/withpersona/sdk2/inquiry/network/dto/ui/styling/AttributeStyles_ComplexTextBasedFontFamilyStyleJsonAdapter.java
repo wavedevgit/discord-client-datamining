@@ -49,19 +49,19 @@ public final class AttributeStyles_ComplexTextBasedFontFamilyStyleJsonAdapter ex
         StyleElements.FontName fontName4 = null;
         StyleElements.FontName fontName5 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 fontName = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 fontName2 = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 fontName3 = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (t02 == 3) {
                 fontName4 = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
-            } else if (A0 == 4) {
+            } else if (t02 == 4) {
                 fontName5 = (StyleElements.FontName) this.nullableFontNameAdapter.fromJson(reader);
             }
         }
@@ -74,15 +74,15 @@ public final class AttributeStyles_ComplexTextBasedFontFamilyStyleJsonAdapter ex
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complexTextBasedFontFamilyStyle != null) {
             writer.l();
-            writer.A0("base");
+            writer.t0("base");
             this.nullableFontNameAdapter.toJson(writer, complexTextBasedFontFamilyStyle.getBase());
-            writer.A0("value");
+            writer.t0("value");
             this.nullableFontNameAdapter.toJson(writer, complexTextBasedFontFamilyStyle.getValue());
-            writer.A0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
+            writer.t0(ReactTextInputShadowNode.PROP_PLACEHOLDER);
             this.nullableFontNameAdapter.toJson(writer, complexTextBasedFontFamilyStyle.getPlaceholder());
-            writer.A0("label");
+            writer.t0("label");
             this.nullableFontNameAdapter.toJson(writer, complexTextBasedFontFamilyStyle.getLabel());
-            writer.A0("error");
+            writer.t0("error");
             this.nullableFontNameAdapter.toJson(writer, complexTextBasedFontFamilyStyle.getError());
             writer.E();
             return;

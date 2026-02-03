@@ -37,16 +37,16 @@ public class m extends fd.r implements a0 {
     private boolean Z0;
 
     /* renamed from: a1  reason: collision with root package name */
-    private boolean f13384a1;
+    private boolean f13013a1;
 
     /* renamed from: b1  reason: collision with root package name */
-    private boolean f13385b1;
+    private boolean f13014b1;
 
     /* renamed from: c1  reason: collision with root package name */
-    private boolean f13386c1;
+    private boolean f13015c1;
 
     /* renamed from: d1  reason: collision with root package name */
-    private v1.a f13387d1;
+    private v1.a f13016d1;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class b {
@@ -73,8 +73,8 @@ public class m extends fd.r implements a0 {
 
         @Override // com.google.android.exoplayer2.audio.f.c
         public void c() {
-            if (m.this.f13387d1 != null) {
-                m.this.f13387d1.a();
+            if (m.this.f13016d1 != null) {
+                m.this.f13016d1.a();
             }
         }
 
@@ -95,8 +95,8 @@ public class m extends fd.r implements a0 {
 
         @Override // com.google.android.exoplayer2.audio.f.c
         public void g() {
-            if (m.this.f13387d1 != null) {
-                m.this.f13387d1.b();
+            if (m.this.f13016d1 != null) {
+                m.this.f13016d1.b();
             }
         }
 
@@ -115,8 +115,8 @@ public class m extends fd.r implements a0 {
     }
 
     private static boolean E1(String str) {
-        if (w0.f40295a < 24 && "OMX.SEC.aac.dec".equals(str) && "samsung".equals(w0.f40297c)) {
-            String str2 = w0.f40296b;
+        if (w0.f40158a < 24 && "OMX.SEC.aac.dec".equals(str) && "samsung".equals(w0.f40160c)) {
+            String str2 = w0.f40159b;
             if (str2.startsWith("zeroflte") || str2.startsWith("herolte") || str2.startsWith("heroqlte")) {
                 return true;
             }
@@ -126,8 +126,8 @@ public class m extends fd.r implements a0 {
     }
 
     private static boolean F1() {
-        if (w0.f40295a == 23) {
-            String str = w0.f40298d;
+        if (w0.f40158a == 23) {
+            String str = w0.f40161d;
             if ("ZTE B2017G".equals(str) || "AXON 7 mini".equals(str)) {
                 return true;
             }
@@ -138,15 +138,15 @@ public class m extends fd.r implements a0 {
 
     private int G1(fd.q qVar, Format format) {
         int i10;
-        if ("OMX.google.raw.decoder".equals(qVar.f24983a) && (i10 = w0.f40295a) < 24 && (i10 != 23 || !w0.H0(this.R0))) {
+        if ("OMX.google.raw.decoder".equals(qVar.f24194a) && (i10 = w0.f40158a) < 24 && (i10 != 23 || !w0.H0(this.R0))) {
             return -1;
         }
-        return format.f12707x;
+        return format.f12336x;
     }
 
     private static List I1(t tVar, Format format, boolean z10, f fVar) {
         fd.q x10;
-        if (format.f12706w == null) {
+        if (format.f12335w == null) {
             return ji.s.r();
         }
         if (fVar.a(format) && (x10 = fd.y.x()) != null) {
@@ -158,11 +158,11 @@ public class m extends fd.r implements a0 {
     private void L1() {
         long p10 = this.T0.p(d());
         if (p10 != Long.MIN_VALUE) {
-            if (!this.f13384a1) {
+            if (!this.f13013a1) {
                 p10 = Math.max(this.Y0, p10);
             }
             this.Y0 = p10;
-            this.f13384a1 = false;
+            this.f13013a1 = false;
         }
     }
 
@@ -190,9 +190,9 @@ public class m extends fd.r implements a0 {
     protected l.a E0(fd.q qVar, Format format, MediaCrypto mediaCrypto, float f10) {
         Format format2;
         this.U0 = H1(qVar, format, M());
-        this.V0 = E1(qVar.f24983a);
-        MediaFormat J1 = J1(format, qVar.f24985c, this.U0, f10);
-        if ("audio/raw".equals(qVar.f24984b) && !"audio/raw".equals(format.f12706w)) {
+        this.V0 = E1(qVar.f24194a);
+        MediaFormat J1 = J1(format, qVar.f24196c, this.U0, f10);
+        if ("audio/raw".equals(qVar.f24195b) && !"audio/raw".equals(format.f12335w)) {
             format2 = format;
         } else {
             format2 = null;
@@ -207,7 +207,7 @@ public class m extends fd.r implements a0 {
             return G1;
         }
         for (Format format2 : formatArr) {
-            if (qVar.f(format, format2).f13500d != 0) {
+            if (qVar.f(format, format2).f13129d != 0) {
                 G1 = Math.max(G1, G1(qVar, format2));
             }
         }
@@ -219,16 +219,16 @@ public class m extends fd.r implements a0 {
         mediaFormat.setString("mime", str);
         mediaFormat.setInteger("channel-count", format.J);
         mediaFormat.setInteger("sample-rate", format.K);
-        b0.e(mediaFormat, format.f12708y);
+        b0.e(mediaFormat, format.f12337y);
         b0.d(mediaFormat, "max-input-size", i10);
-        int i11 = w0.f40295a;
+        int i11 = w0.f40158a;
         if (i11 >= 23) {
             mediaFormat.setInteger("priority", 0);
             if (f10 != -1.0f && !F1()) {
                 mediaFormat.setFloat("operating-rate", f10);
             }
         }
-        if (i11 <= 28 && "audio/ac4".equals(format.f12706w)) {
+        if (i11 <= 28 && "audio/ac4".equals(format.f12335w)) {
             mediaFormat.setInteger("ac4-is-sync", 1);
         }
         if (i11 >= 24 && this.T0.m(w0.h0(4, format.J, format.K)) == 2) {
@@ -241,13 +241,13 @@ public class m extends fd.r implements a0 {
     }
 
     protected void K1() {
-        this.f13384a1 = true;
+        this.f13013a1 = true;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // fd.r, com.google.android.exoplayer2.f
     public void O() {
-        this.f13385b1 = true;
+        this.f13014b1 = true;
         this.W0 = null;
         try {
             this.T0.flush();
@@ -269,7 +269,7 @@ public class m extends fd.r implements a0 {
     public void P(boolean z10, boolean z11) {
         super.P(z10, z11);
         this.S0.p(this.M0);
-        if (I().f37114a) {
+        if (I().f37228a) {
             this.T0.u();
         } else {
             this.T0.i();
@@ -281,14 +281,14 @@ public class m extends fd.r implements a0 {
     @Override // fd.r, com.google.android.exoplayer2.f
     public void Q(long j10, boolean z10) {
         super.Q(j10, z10);
-        if (this.f13386c1) {
+        if (this.f13015c1) {
             this.T0.n();
         } else {
             this.T0.flush();
         }
         this.Y0 = j10;
         this.Z0 = true;
-        this.f13384a1 = true;
+        this.f13013a1 = true;
     }
 
     @Override // com.google.android.exoplayer2.f
@@ -308,8 +308,8 @@ public class m extends fd.r implements a0 {
         try {
             super.T();
         } finally {
-            if (this.f13385b1) {
-                this.f13385b1 = false;
+            if (this.f13014b1) {
+                this.f13014b1 = false;
                 this.T0.reset();
             }
         }
@@ -343,7 +343,7 @@ public class m extends fd.r implements a0 {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // fd.r
     public DecoderReuseEvaluation V0(x xVar) {
-        this.W0 = (Format) ne.a.e(xVar.f37126b);
+        this.W0 = (Format) ne.a.e(xVar.f37240b);
         DecoderReuseEvaluation V0 = super.V0(xVar);
         this.S0.q(this.W0, V0);
         return V0;
@@ -358,9 +358,9 @@ public class m extends fd.r implements a0 {
         if (format2 != null) {
             format = format2;
         } else if (y0() != null) {
-            if ("audio/raw".equals(format.f12706w)) {
+            if ("audio/raw".equals(format.f12335w)) {
                 i10 = format.L;
-            } else if (w0.f40295a >= 24 && mediaFormat.containsKey("pcm-encoding")) {
+            } else if (w0.f40158a >= 24 && mediaFormat.containsKey("pcm-encoding")) {
                 i10 = mediaFormat.getInteger("pcm-encoding");
             } else if (mediaFormat.containsKey("v-bits-per-sample")) {
                 i10 = w0.g0(mediaFormat.getInteger("v-bits-per-sample"));
@@ -379,7 +379,7 @@ public class m extends fd.r implements a0 {
         try {
             this.T0.w(format, 0, iArr);
         } catch (f.a e10) {
-            throw G(e10, e10.f13245d, 5001);
+            throw G(e10, e10.f12874d, 5001);
         }
     }
 
@@ -397,9 +397,9 @@ public class m extends fd.r implements a0 {
 
     @Override // fd.r
     protected void a1(qc.f fVar) {
-        if (this.Z0 && !fVar.l()) {
-            if (Math.abs(fVar.f47094p - this.Y0) > 500000) {
-                this.Y0 = fVar.f47094p;
+        if (this.Z0 && !fVar.m()) {
+            if (Math.abs(fVar.f47349p - this.Y0) > 500000) {
+                this.Y0 = fVar.f47349p;
             }
             this.Z0 = false;
         }
@@ -414,7 +414,7 @@ public class m extends fd.r implements a0 {
     protected DecoderReuseEvaluation c0(fd.q qVar, Format format, Format format2) {
         int i10;
         DecoderReuseEvaluation f10 = qVar.f(format, format2);
-        int i11 = f10.f13501e;
+        int i11 = f10.f13130e;
         if (L0(format2)) {
             i11 |= PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
         }
@@ -422,11 +422,11 @@ public class m extends fd.r implements a0 {
             i11 |= 64;
         }
         int i12 = i11;
-        String str = qVar.f24983a;
+        String str = qVar.f24194a;
         if (i12 != 0) {
             i10 = 0;
         } else {
-            i10 = f10.f13500d;
+            i10 = f10.f13129d;
         }
         return new DecoderReuseEvaluation(str, format, format2, i10, i12);
     }
@@ -449,7 +449,7 @@ public class m extends fd.r implements a0 {
             if (lVar != null) {
                 lVar.releaseOutputBuffer(i10, false);
             }
-            this.M0.f13490f += i12;
+            this.M0.f13119f += i12;
             this.T0.s();
             return true;
         } else {
@@ -460,12 +460,12 @@ public class m extends fd.r implements a0 {
                 if (lVar != null) {
                     lVar.releaseOutputBuffer(i10, false);
                 }
-                this.M0.f13489e += i12;
+                this.M0.f13118e += i12;
                 return true;
             } catch (f.b e10) {
-                throw H(e10, this.W0, e10.f13247e, 5001);
+                throw H(e10, this.W0, e10.f12876e, 5001);
             } catch (f.e e11) {
-                throw H(e11, format, e11.f13252e, 5002);
+                throw H(e11, format, e11.f12881e, 5002);
             }
         }
     }
@@ -485,7 +485,7 @@ public class m extends fd.r implements a0 {
         try {
             this.T0.o();
         } catch (f.e e10) {
-            throw H(e10, e10.f13253i, e10.f13252e, 5002);
+            throw H(e10, e10.f12882i, e10.f12881e, 5002);
         }
     }
 
@@ -510,10 +510,10 @@ public class m extends fd.r implements a0 {
                             this.T0.h(((Integer) obj).intValue());
                             return;
                         case 11:
-                            this.f13387d1 = (v1.a) obj;
+                            this.f13016d1 = (v1.a) obj;
                             return;
                         case 12:
-                            if (w0.f40295a >= 23) {
+                            if (w0.f40158a >= 23) {
                                 b.a(this.T0, obj);
                                 return;
                             }
@@ -552,10 +552,10 @@ public class m extends fd.r implements a0 {
         boolean z11;
         int i11;
         int i12 = 0;
-        if (!c0.o(format.f12706w)) {
+        if (!c0.o(format.f12335w)) {
             return w1.b(0);
         }
-        if (w0.f40295a >= 21) {
+        if (w0.f40158a >= 21) {
             i10 = 32;
         } else {
             i10 = 0;
@@ -572,7 +572,7 @@ public class m extends fd.r implements a0 {
         if (x12 && this.T0.a(format) && (!z10 || fd.y.x() != null)) {
             return w1.u(4, 8, i10);
         }
-        if ("audio/raw".equals(format.f12706w) && !this.T0.a(format)) {
+        if ("audio/raw".equals(format.f12335w) && !this.T0.a(format)) {
             return w1.b(1);
         }
         if (!this.T0.a(w0.h0(2, format.J, format.K))) {
@@ -605,7 +605,7 @@ public class m extends fd.r implements a0 {
         if (z12 && qVar.r(format)) {
             i13 = 16;
         }
-        if (qVar.f24990h) {
+        if (qVar.f24201h) {
             i11 = 64;
         } else {
             i11 = 0;

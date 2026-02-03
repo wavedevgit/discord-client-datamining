@@ -57,8 +57,8 @@ public final class PackagerStatusCheck {
     public final void run(@NotNull String host, @NotNull final PackagerStatusCallback callback) {
         Intrinsics.checkNotNullParameter(host, "host");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        this.client.a(new Request.Builder().l(Companion.createPackagerStatusURL(host)).b()).C0(new tt.b() { // from class: com.facebook.react.devsupport.PackagerStatusCheck$run$1
-            @Override // tt.b
+        this.client.a(new Request.Builder().l(Companion.createPackagerStatusURL(host)).b()).t0(new ut.b() { // from class: com.facebook.react.devsupport.PackagerStatusCheck$run$1
+            @Override // ut.b
             public void onFailure(Call call, IOException e10) {
                 Intrinsics.checkNotNullParameter(call, "call");
                 Intrinsics.checkNotNullParameter(e10, "e");
@@ -67,7 +67,7 @@ public final class PackagerStatusCheck {
                 PackagerStatusCallback.this.onPackagerStatusFetched(false);
             }
 
-            @Override // tt.b
+            @Override // ut.b
             public void onResponse(Call call, Response response) {
                 Intrinsics.checkNotNullParameter(call, "call");
                 Intrinsics.checkNotNullParameter(response, "response");

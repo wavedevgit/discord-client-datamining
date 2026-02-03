@@ -6,34 +6,34 @@ import android.widget.ImageView;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final g5.c f33030a = new g5.c(null, null, null, null, null, null, null, false, false, null, null, null, null, null, null, 32767, null);
+    private static final g5.c f32776a = new g5.c(null, null, null, null, null, null, null, false, false, null, null, null, null, null, null, 32767, null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f33031a;
+        public static final /* synthetic */ int[] f32777a;
 
         static {
             int[] iArr = new int[h5.e.values().length];
             try {
-                iArr[h5.e.f27361d.ordinal()] = 1;
+                iArr[h5.e.f27534d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[h5.e.f27362e.ordinal()] = 2;
+                iArr[h5.e.f27535e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[h5.e.f27363i.ordinal()] = 3;
+                iArr[h5.e.f27536i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f33031a = iArr;
+            f32777a = iArr;
         }
     }
 
     public static final boolean a(g5.h hVar) {
-        int i10 = a.f33031a[hVar.H().ordinal()];
+        int i10 = a.f32777a[hVar.H().ordinal()];
         if (i10 == 1) {
             return false;
         }
@@ -49,11 +49,11 @@ public abstract class i {
             }
             return true;
         }
-        throw new ir.p();
+        throw new jr.p();
     }
 
     public static final g5.c b() {
-        return f33030a;
+        return f32776a;
     }
 
     public static final Drawable c(g5.h hVar, Drawable drawable, Integer num, Drawable drawable2) {

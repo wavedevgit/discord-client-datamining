@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.h;
 import com.discord.crash_reporting.CrashReporting;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.c;
@@ -20,7 +20,7 @@ import kotlin.coroutines.jvm.internal.k;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
-import or.b;
+import pr.b;
 /* JADX INFO: Access modifiers changed from: package-private */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.core.LocalImageThumbnailView$setLocalImageSource$1", f = "LocalImageThumbnailView.kt", l = {65}, m = "invokeSuspend")
@@ -108,11 +108,11 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
             simpleDraweeView = localImageThumbnailView2.simpleDraweeView;
             localImageThumbnailView2.loadDefaultBitmap(simpleDraweeView, this.$uri);
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

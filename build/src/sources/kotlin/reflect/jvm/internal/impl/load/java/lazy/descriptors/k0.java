@@ -7,7 +7,7 @@ import kotlin.reflect.jvm.internal.impl.load.java.structure.JavaMember;
 public class k0 implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final k0 f34284d = new k0();
+    public static final k0 f34060d = new k0();
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {

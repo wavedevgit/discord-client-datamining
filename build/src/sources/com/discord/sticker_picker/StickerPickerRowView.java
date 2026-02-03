@@ -11,7 +11,7 @@ import com.discord.ripple.RippleUtilsKt;
 import com.discord.sticker.StickerView;
 import com.discord.sticker_picker.StickerPickerRow;
 import com.discord.sticker_picker.StickerPickerRowView;
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -187,13 +187,13 @@ public final class StickerPickerRowView extends LinearLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onLongPressSticker$lambda$1(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onPressSticker$lambda$0(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     public final void clean() {

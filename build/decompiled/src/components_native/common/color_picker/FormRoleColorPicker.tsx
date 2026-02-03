@@ -56,14 +56,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'components_native/common/color_picker/FormRoleColorPicker.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun100822: for (var _fun100822_ip = 0;;) switch (_fun100822_ip) {
+        _fun100797: for (var _fun100797_ip = 0;;) switch (_fun100797_ip) {
             case 0:
                 var1 = arg0;
                 var8 = var1.color;
                 var3 = undefined;
                 if (!(var8 === var3)) {
-                    _fun100822_ip = 23;
-                    continue _fun100822
+                    _fun100797_ip = 23;
+                    continue _fun100797
                 }
             case 16:
                 var8 = _closure1_slot4;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var8;
                 var5 = var1.disabled;
                 if (!(var5 === var3)) {
-                    _fun100822_ip = 38;
-                    continue _fun100822
+                    _fun100797_ip = 38;
+                    continue _fun100797
                 }
             case 36:
                 var5 = false;
@@ -144,4 +144,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 3239, 13096, 1307, 5342, 10108, 668, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 3269, 13129, 1307, 5373, 10185, 668, 2]);

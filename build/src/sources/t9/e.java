@@ -2,11 +2,11 @@ package t9;
 
 import android.os.Handler;
 import android.os.HandlerThread;
-import ir.p;
 import java.util.Date;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
+import jr.p;
 import kotlin.Lazy;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
@@ -15,61 +15,61 @@ import t9.l;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f49334a;
+    public static final e f49606a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final AtomicInteger f49335b;
+    private static final AtomicInteger f49607b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final AtomicInteger f49336c;
+    private static final AtomicInteger f49608c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final AtomicInteger f49337d;
+    private static final AtomicInteger f49609d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ConcurrentHashMap f49338e;
+    private static final ConcurrentHashMap f49610e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Lazy f49339f;
+    private static final Lazy f49611f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Runnable f49340g;
+    private static final Runnable f49612g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Runnable f49341h;
+    private static final Runnable f49613h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f49342a;
+        public static final /* synthetic */ int[] f49614a;
 
         static {
             int[] iArr = new int[l.a.values().length];
             try {
-                iArr[l.a.f49370d.ordinal()] = 1;
+                iArr[l.a.f49642d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[l.a.f49371e.ordinal()] = 2;
+                iArr[l.a.f49643e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[l.a.f49372i.ordinal()] = 3;
+                iArr[l.a.f49644i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f49342a = iArr;
+            f49614a = iArr;
         }
     }
 
     static {
         e eVar = new e();
-        f49334a = eVar;
-        f49335b = new AtomicInteger(0);
-        f49336c = new AtomicInteger(0);
-        f49337d = new AtomicInteger(0);
-        f49338e = new ConcurrentHashMap();
-        f49339f = ir.l.b(new Function0() { // from class: t9.b
+        f49606a = eVar;
+        f49607b = new AtomicInteger(0);
+        f49608c = new AtomicInteger(0);
+        f49609d = new AtomicInteger(0);
+        f49610e = new ConcurrentHashMap();
+        f49611f = jr.l.b(new Function0() { // from class: t9.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Handler g10;
@@ -83,14 +83,14 @@ public final class e {
                 e.d();
             }
         };
-        f49340g = runnable;
+        f49612g = runnable;
         Runnable runnable2 = new Runnable() { // from class: t9.d
             @Override // java.lang.Runnable
             public final void run() {
                 e.e();
             }
         };
-        f49341h = runnable2;
+        f49613h = runnable2;
         eVar.f().post(runnable);
         eVar.f().post(runnable2);
     }
@@ -100,37 +100,37 @@ public final class e {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void d() {
-        float andSet = f49335b.getAndSet(0);
-        float andSet2 = f49336c.getAndSet(0);
-        float andSet3 = f49337d.getAndSet(0);
+        float andSet = f49607b.getAndSet(0);
+        float andSet2 = f49608c.getAndSet(0);
+        float andSet3 = f49609d.getAndSet(0);
         float f10 = andSet + andSet2 + andSet3;
         if (f10 > 0.0f) {
             float f11 = andSet / f10;
             float f12 = andSet3 / f10;
             if (andSet2 / f10 <= 0.25f && f12 <= 0.1f) {
                 if (f11 > 0.98f) {
-                    for (Map.Entry entry : f49338e.entrySet()) {
-                        f49334a.k((i) entry.getKey(), ((Number) entry.getValue()).intValue());
+                    for (Map.Entry entry : f49610e.entrySet()) {
+                        f49606a.k((i) entry.getKey(), ((Number) entry.getValue()).intValue());
                     }
                 }
             } else {
-                for (Map.Entry entry2 : f49338e.entrySet()) {
-                    f49334a.k((i) entry2.getKey(), -((Number) entry2.getValue()).intValue());
+                for (Map.Entry entry2 : f49610e.entrySet()) {
+                    f49606a.k((i) entry2.getKey(), -((Number) entry2.getValue()).intValue());
                 }
             }
-            f49338e.clear();
+            f49610e.clear();
         }
-        f49334a.j();
+        f49606a.j();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void e() {
-        k.f49363d.a(new Date(System.currentTimeMillis() - 10000));
-        f49334a.i();
+        k.f49635d.a(new Date(System.currentTimeMillis() - 10000));
+        f49606a.i();
     }
 
     private final Handler f() {
-        return (Handler) f49339f.getValue();
+        return (Handler) f49611f.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -141,11 +141,11 @@ public final class e {
     }
 
     private final boolean i() {
-        return f().postDelayed(f49341h, 10000L);
+        return f().postDelayed(f49613h, 10000L);
     }
 
     private final boolean j() {
-        return f().postDelayed(f49340g, 2000L);
+        return f().postDelayed(f49612g, 2000L);
     }
 
     private final void k(i iVar, int i10) {
@@ -158,22 +158,22 @@ public final class e {
     public final void h(i animation, l frameResult) {
         Intrinsics.checkNotNullParameter(animation, "animation");
         Intrinsics.checkNotNullParameter(frameResult, "frameResult");
-        ConcurrentHashMap concurrentHashMap = f49338e;
+        ConcurrentHashMap concurrentHashMap = f49610e;
         if (!concurrentHashMap.contains(animation)) {
             concurrentHashMap.put(animation, Integer.valueOf((int) (animation.c() * 0.2f)));
         }
-        int i10 = a.f49342a[frameResult.b().ordinal()];
+        int i10 = a.f49614a[frameResult.b().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    f49337d.incrementAndGet();
+                    f49609d.incrementAndGet();
                     return;
                 }
                 throw new p();
             }
-            f49336c.incrementAndGet();
+            f49608c.incrementAndGet();
             return;
         }
-        f49335b.incrementAndGet();
+        f49607b.incrementAndGet();
     }
 }

@@ -13,18 +13,18 @@ import org.jetbrains.annotations.NotNull;
 public abstract class PackageFragmentDescriptorImpl extends DeclarationDescriptorNonRootImpl implements PackageFragmentDescriptor {
 
     /* renamed from: p  reason: collision with root package name */
-    private final FqName f33823p;
+    private final FqName f33599p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f33824q;
+    private final String f33600q;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PackageFragmentDescriptorImpl(@NotNull ModuleDescriptor module, @NotNull FqName fqName) {
         super(module, Annotations.Companion.getEMPTY(), fqName.shortNameOrSpecial(), SourceElement.NO_SOURCE);
         Intrinsics.checkNotNullParameter(module, "module");
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        this.f33823p = fqName;
-        this.f33824q = "package " + fqName + " of " + module;
+        this.f33599p = fqName;
+        this.f33600q = "package " + fqName + " of " + module;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
@@ -36,7 +36,7 @@ public abstract class PackageFragmentDescriptorImpl extends DeclarationDescripto
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentDescriptor
     @NotNull
     public final FqName getFqName() {
-        return this.f33823p;
+        return this.f33599p;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorNonRootImpl, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithSource
@@ -50,7 +50,7 @@ public abstract class PackageFragmentDescriptorImpl extends DeclarationDescripto
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorImpl
     @NotNull
     public String toString() {
-        return this.f33824q;
+        return this.f33600q;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorNonRootImpl, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor

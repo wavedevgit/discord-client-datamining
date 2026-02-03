@@ -45,7 +45,7 @@ public final class Loop {
     static {
         Loop[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = pr.a.a($values);
+        $ENTRIES = qr.a.a($values);
         Companion = new Companion(null);
     }
 

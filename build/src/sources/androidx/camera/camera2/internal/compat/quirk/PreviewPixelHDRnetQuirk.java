@@ -9,11 +9,11 @@ import java.util.Locale;
 public class PreviewPixelHDRnetQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f1919a = Arrays.asList("sunfish", "bramble", "redfin", "barbet");
+    private static final List f1963a = Arrays.asList("sunfish", "bramble", "redfin", "barbet");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean c() {
-        if ("Google".equals(Build.MANUFACTURER) && f1919a.contains(Build.DEVICE.toLowerCase(Locale.getDefault()))) {
+        if ("Google".equals(Build.MANUFACTURER) && f1963a.contains(Build.DEVICE.toLowerCase(Locale.getDefault()))) {
             return true;
         }
         return false;

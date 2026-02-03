@@ -12,50 +12,50 @@ import java.util.List;
 public abstract class ExpandableBehavior extends CoordinatorLayout.c {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f16646d;
+    private int f16275d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements ViewTreeObserver.OnPreDrawListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ View f16647d;
+        final /* synthetic */ View f16276d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f16648e;
+        final /* synthetic */ int f16277e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ hh.a f16649i;
+        final /* synthetic */ hh.a f16278i;
 
         a(View view, int i10, hh.a aVar) {
-            this.f16647d = view;
-            this.f16648e = i10;
-            this.f16649i = aVar;
+            this.f16276d = view;
+            this.f16277e = i10;
+            this.f16278i = aVar;
         }
 
         @Override // android.view.ViewTreeObserver.OnPreDrawListener
         public boolean onPreDraw() {
-            this.f16647d.getViewTreeObserver().removeOnPreDrawListener(this);
-            if (ExpandableBehavior.this.f16646d == this.f16648e) {
+            this.f16276d.getViewTreeObserver().removeOnPreDrawListener(this);
+            if (ExpandableBehavior.this.f16275d == this.f16277e) {
                 ExpandableBehavior expandableBehavior = ExpandableBehavior.this;
-                hh.a aVar = this.f16649i;
-                expandableBehavior.L((View) aVar, this.f16647d, aVar.a(), false);
+                hh.a aVar = this.f16278i;
+                expandableBehavior.L((View) aVar, this.f16276d, aVar.a(), false);
             }
             return false;
         }
     }
 
     public ExpandableBehavior() {
-        this.f16646d = 0;
+        this.f16275d = 0;
     }
 
     private boolean J(boolean z10) {
         if (z10) {
-            int i10 = this.f16646d;
+            int i10 = this.f16275d;
             if (i10 != 0 && i10 != 2) {
                 return false;
             }
             return true;
-        } else if (this.f16646d != 1) {
+        } else if (this.f16275d != 1) {
             return false;
         } else {
             return true;
@@ -89,7 +89,7 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.c {
             } else {
                 i10 = 2;
             }
-            this.f16646d = i10;
+            this.f16275d = i10;
             return L((View) aVar, view, aVar.a(), true);
         }
         return false;
@@ -105,7 +105,7 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.c {
             } else {
                 i11 = 2;
             }
-            this.f16646d = i11;
+            this.f16275d = i11;
             view.getViewTreeObserver().addOnPreDrawListener(new a(view, i11, K));
             return false;
         }
@@ -114,6 +114,6 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.c {
 
     public ExpandableBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f16646d = 0;
+        this.f16275d = 0;
     }
 }

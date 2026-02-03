@@ -3,10 +3,10 @@ package ef;
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private k f22780a;
+    private k f22812a;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public j(k kVar) {
-        this.f22780a = kVar;
+        this.f22812a = kVar;
     }
 }

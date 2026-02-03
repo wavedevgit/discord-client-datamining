@@ -1,23 +1,9 @@
 package rs;
+
+import rs.f;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface h {
-    Integer A();
-
-    void B(Integer num);
-
-    Integer C();
-
-    void E(Integer num);
-
-    Integer f();
-
-    Integer g();
-
-    Integer i();
-
-    void p(Integer num);
-
-    void v(Integer num);
-
-    void y(Integer num);
+public abstract class h {
+    public static final ss.n a() {
+        return f.b.f48682a.a();
+    }
 }

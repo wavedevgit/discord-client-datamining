@@ -5,19 +5,19 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class BackEventCompat {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f773e = new a(null);
+    public static final a f817e = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f774a;
+    private final float f818a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f775b;
+    private final float f819b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f776c;
+    private final float f820c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f777d;
+    private final int f821d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -30,22 +30,22 @@ public final class BackEventCompat {
     }
 
     public BackEventCompat(float f10, float f11, float f12, int i10) {
-        this.f774a = f10;
-        this.f775b = f11;
-        this.f776c = f12;
-        this.f777d = i10;
+        this.f818a = f10;
+        this.f819b = f11;
+        this.f820c = f12;
+        this.f821d = i10;
     }
 
     public final float a() {
-        return this.f776c;
+        return this.f820c;
     }
 
     public final int b() {
-        return this.f777d;
+        return this.f821d;
     }
 
     public String toString() {
-        return "BackEventCompat{touchX=" + this.f774a + ", touchY=" + this.f775b + ", progress=" + this.f776c + ", swipeEdge=" + this.f777d + '}';
+        return "BackEventCompat{touchX=" + this.f818a + ", touchY=" + this.f819b + ", progress=" + this.f820c + ", swipeEdge=" + this.f821d + '}';
     }
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -58,7 +58,7 @@ public final class BackEventCompat {
             r4 = this;
             java.lang.String r0 = "backEvent"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
-            androidx.activity.a r0 = androidx.activity.a.f827a
+            androidx.activity.a r0 = androidx.activity.a.f871a
             float r1 = r0.c(r5)
             float r2 = r0.d(r5)
             float r3 = r0.a(r5)

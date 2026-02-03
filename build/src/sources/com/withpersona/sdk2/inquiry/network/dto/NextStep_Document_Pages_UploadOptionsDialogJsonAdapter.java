@@ -49,16 +49,16 @@ public final class NextStep_Document_Pages_UploadOptionsDialogJsonAdapter extend
         NextStep.Ui ui2 = null;
         NextStep.Document.Pages.UploadOptionsDialog.ComponentNameMapping componentNameMapping = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 ui2 = (NextStep.Ui) this.uiAdapter.fromJson(reader);
                 if (ui2 == null) {
-                    throw sm.c.x("uiStep", "uiStep", reader);
+                    throw tm.c.x("uiStep", "uiStep", reader);
                 }
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 componentNameMapping = (NextStep.Document.Pages.UploadOptionsDialog.ComponentNameMapping) this.nullableComponentNameMappingAdapter.fromJson(reader);
             }
         }
@@ -66,7 +66,7 @@ public final class NextStep_Document_Pages_UploadOptionsDialogJsonAdapter extend
         if (ui2 != null) {
             return new NextStep.Document.Pages.UploadOptionsDialog(ui2, componentNameMapping);
         }
-        throw sm.c.o("uiStep", "uiStep", reader);
+        throw tm.c.o("uiStep", "uiStep", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -74,9 +74,9 @@ public final class NextStep_Document_Pages_UploadOptionsDialogJsonAdapter extend
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (uploadOptionsDialog != null) {
             writer.l();
-            writer.A0("uiStep");
+            writer.t0("uiStep");
             this.uiAdapter.toJson(writer, uploadOptionsDialog.getUiStep());
-            writer.A0("componentNameMapping");
+            writer.t0("componentNameMapping");
             this.nullableComponentNameMappingAdapter.toJson(writer, uploadOptionsDialog.getComponentNameMapping());
             writer.E();
             return;

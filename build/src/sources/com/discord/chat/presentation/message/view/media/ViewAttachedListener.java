@@ -4,7 +4,7 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import com.discord.chat.presentation.message.view.media.ViewAttachedListener;
 import com.discord.chat.presentation.message.view.media.ViewScrollStateListener;
-import ir.l;
+import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -37,7 +37,7 @@ public final class ViewAttachedListener implements View.OnAttachStateChangeListe
         this.view = view;
         this.viewAttached = viewAttached;
         this.viewScrolling = viewScrolling;
-        this.isAttachedDelay = view.getResources().getInteger(g.f54466d);
+        this.isAttachedDelay = view.getResources().getInteger(g.f54441d);
         this.isAttachedRunnable = new Runnable() { // from class: a7.a
             @Override // java.lang.Runnable
             public final void run() {
@@ -56,7 +56,7 @@ public final class ViewAttachedListener implements View.OnAttachStateChangeListe
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$0(boolean z10) {
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final ViewScrollStateListener getScrollStateListener() {

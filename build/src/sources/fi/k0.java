@@ -5,15 +5,15 @@ import java.security.cert.X509Certificate;
 final class k0 extends l0 {
 
     /* renamed from: e  reason: collision with root package name */
-    private final byte[] f25218e;
+    private final byte[] f24429e;
 
     public k0(X509Certificate x509Certificate, byte[] bArr) {
         super(x509Certificate);
-        this.f25218e = bArr;
+        this.f24429e = bArr;
     }
 
     @Override // java.security.cert.Certificate
     public final byte[] getEncoded() {
-        return this.f25218e;
+        return this.f24429e;
     }
 }

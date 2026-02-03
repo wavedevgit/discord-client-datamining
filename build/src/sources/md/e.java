@@ -8,10 +8,10 @@ public final class e implements Metadata.b {
     public static final Parcelable.Creator<e> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final float f38042d;
+    public final float f38022d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f38043e;
+    public final int f38023e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -46,7 +46,7 @@ public final class e implements Metadata.b {
         }
         if (obj != null && e.class == obj.getClass()) {
             e eVar = (e) obj;
-            if (this.f38042d == eVar.f38042d && this.f38043e == eVar.f38043e) {
+            if (this.f38022d == eVar.f38022d && this.f38023e == eVar.f38023e) {
                 return true;
             }
         }
@@ -54,26 +54,26 @@ public final class e implements Metadata.b {
     }
 
     public int hashCode() {
-        return ((527 + li.c.a(this.f38042d)) * 31) + this.f38043e;
+        return ((527 + li.c.a(this.f38022d)) * 31) + this.f38023e;
     }
 
     public String toString() {
-        return "smta: captureFrameRate=" + this.f38042d + ", svcTemporalLayerCount=" + this.f38043e;
+        return "smta: captureFrameRate=" + this.f38022d + ", svcTemporalLayerCount=" + this.f38023e;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeFloat(this.f38042d);
-        parcel.writeInt(this.f38043e);
+        parcel.writeFloat(this.f38022d);
+        parcel.writeInt(this.f38023e);
     }
 
     public e(float f10, int i10) {
-        this.f38042d = f10;
-        this.f38043e = i10;
+        this.f38022d = f10;
+        this.f38023e = i10;
     }
 
     private e(Parcel parcel) {
-        this.f38042d = parcel.readFloat();
-        this.f38043e = parcel.readInt();
+        this.f38022d = parcel.readFloat();
+        this.f38023e = parcel.readInt();
     }
 }

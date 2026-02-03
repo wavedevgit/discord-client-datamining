@@ -1,51 +1,115 @@
 package ct;
+
+import java.util.List;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
+import kotlinx.serialization.json.JsonArray;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
-    public static final byte a(char c10) {
-        if (c10 < '~') {
-            return k.f21364c[c10];
+public final class b implements KSerializer {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f20800a = new b();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final SerialDescriptor f20801b = a.f20802b;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    private static final class a implements SerialDescriptor {
+
+        /* renamed from: b  reason: collision with root package name */
+        public static final a f20802b = new a();
+
+        /* renamed from: c  reason: collision with root package name */
+        private static final String f20803c = "kotlinx.serialization.json.JsonArray";
+
+        /* renamed from: a  reason: collision with root package name */
+        private final /* synthetic */ SerialDescriptor f20804a = zs.a.h(o.f20822a).getDescriptor();
+
+        private a() {
         }
-        return (byte) 0;
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public boolean b() {
+            return this.f20804a.b();
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public int c(String name) {
+            Intrinsics.checkNotNullParameter(name, "name");
+            return this.f20804a.c(name);
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public int d() {
+            return this.f20804a.d();
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public String e(int i10) {
+            return this.f20804a.e(i10);
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public List f(int i10) {
+            return this.f20804a.f(i10);
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public SerialDescriptor g(int i10) {
+            return this.f20804a.g(i10);
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public List getAnnotations() {
+            return this.f20804a.getAnnotations();
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public at.k getKind() {
+            return this.f20804a.getKind();
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public String h() {
+            return f20803c;
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public boolean i(int i10) {
+            return this.f20804a.i(i10);
+        }
+
+        @Override // kotlinx.serialization.descriptors.SerialDescriptor
+        public boolean isInline() {
+            return this.f20804a.isInline();
+        }
     }
 
-    public static final char b(int i10) {
-        if (i10 < 117) {
-            return k.f21363b[i10];
-        }
-        return (char) 0;
+    private b() {
     }
 
-    public static final String c(byte b10) {
-        if (b10 == 1) {
-            return "quotation mark '\"'";
-        }
-        if (b10 == 2) {
-            return "string escape sequence '\\'";
-        }
-        if (b10 == 4) {
-            return "comma ','";
-        }
-        if (b10 == 5) {
-            return "colon ':'";
-        }
-        if (b10 == 6) {
-            return "start of the object '{'";
-        }
-        if (b10 == 7) {
-            return "end of the object '}'";
-        }
-        if (b10 == 8) {
-            return "start of the array '['";
-        }
-        if (b10 == 9) {
-            return "end of the array ']'";
-        }
-        if (b10 == 10) {
-            return "end of the input";
-        }
-        if (b10 == Byte.MAX_VALUE) {
-            return "invalid token";
-        }
-        return "valid token";
+    @Override // kotlinx.serialization.DeserializationStrategy
+    /* renamed from: a */
+    public JsonArray deserialize(Decoder decoder) {
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        p.g(decoder);
+        return new JsonArray((List) zs.a.h(o.f20822a).deserialize(decoder));
+    }
+
+    @Override // ys.o
+    /* renamed from: b */
+    public void serialize(Encoder encoder, JsonArray value) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        Intrinsics.checkNotNullParameter(value, "value");
+        p.h(encoder);
+        zs.a.h(o.f20822a).serialize(encoder, value);
+    }
+
+    @Override // kotlinx.serialization.KSerializer, ys.o, kotlinx.serialization.DeserializationStrategy
+    public SerialDescriptor getDescriptor() {
+        return f20801b;
     }
 }

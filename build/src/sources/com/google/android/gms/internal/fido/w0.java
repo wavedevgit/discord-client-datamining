@@ -6,17 +6,17 @@ import java.util.Comparator;
 final class w0 extends s1 implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    final Comparator f15150d;
+    final Comparator f14779d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public w0(Comparator comparator) {
         comparator.getClass();
-        this.f15150d = comparator;
+        this.f14779d = comparator;
     }
 
     @Override // com.google.android.gms.internal.fido.s1, java.util.Comparator
     public final int compare(Object obj, Object obj2) {
-        return this.f15150d.compare(obj, obj2);
+        return this.f14779d.compare(obj, obj2);
     }
 
     @Override // java.util.Comparator
@@ -25,16 +25,16 @@ final class w0 extends s1 implements Serializable {
             return true;
         }
         if (obj instanceof w0) {
-            return this.f15150d.equals(((w0) obj).f15150d);
+            return this.f14779d.equals(((w0) obj).f14779d);
         }
         return false;
     }
 
     public final int hashCode() {
-        return this.f15150d.hashCode();
+        return this.f14779d.hashCode();
     }
 
     public final String toString() {
-        return this.f15150d.toString();
+        return this.f14779d.toString();
     }
 }

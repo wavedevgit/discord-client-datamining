@@ -11,10 +11,10 @@ import org.jetbrains.annotations.NotNull;
 public abstract class RenderingFormat {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ RenderingFormat[] f35361d;
+    private static final /* synthetic */ RenderingFormat[] f35137d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f35362e;
+    private static final /* synthetic */ EnumEntries f35138e;
     public static final RenderingFormat PLAIN = new RenderingFormat("PLAIN", 0) { // from class: kotlin.reflect.jvm.internal.impl.renderer.RenderingFormat.b
         @Override // kotlin.reflect.jvm.internal.impl.renderer.RenderingFormat
         public String escape(String string) {
@@ -32,8 +32,8 @@ public abstract class RenderingFormat {
 
     static {
         RenderingFormat[] a10 = a();
-        f35361d = a10;
-        f35362e = pr.a.a(a10);
+        f35137d = a10;
+        f35138e = qr.a.a(a10);
     }
 
     public /* synthetic */ RenderingFormat(String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -49,7 +49,7 @@ public abstract class RenderingFormat {
     }
 
     public static RenderingFormat[] values() {
-        return (RenderingFormat[]) f35361d.clone();
+        return (RenderingFormat[]) f35137d.clone();
     }
 
     @NotNull

@@ -24,7 +24,7 @@ public final class SimpleDeviceType {
     static {
         SimpleDeviceType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = pr.a.a($values);
+        $ENTRIES = qr.a.a($values);
     }
 
     private SimpleDeviceType(String str, int i10) {

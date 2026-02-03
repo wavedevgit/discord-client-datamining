@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/double_tap_to_react/native/DoubleTapReminderToast.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun57293: for (var _fun57293_ip = 0;;) switch (_fun57293_ip) {
+        _fun57399: for (var _fun57399_ip = 0;;) switch (_fun57399_ip) {
             case 0:
                 var9 = arg0;
                 var _closure2_slot0 = var9;
@@ -136,8 +136,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.DOUBLE_TAP_TO_REACT_REMINDER;
                 var1 = var2.bind(var4)(var1);
                 if (var1) {
-                    _fun57293_ip = 363;
-                    continue _fun57293
+                    _fun57399_ip = 363;
+                    continue _fun57399
                 }
             case 75:
                 var1 = _closure1_slot3;
@@ -147,15 +147,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 == var1;
                 var11 = undefined;
                 if (var4) {
-                    _fun57293_ip = 108;
-                    continue _fun57293
+                    _fun57399_ip = 108;
+                    continue _fun57399
                 }
             case 102:
                 var11 = var1.defaultReactionEmoji;
             case 108:
                 if (!(var2 == var11)) {
-                    _fun57293_ip = 114;
-                    continue _fun57293
+                    _fun57399_ip = 114;
+                    continue _fun57399
                 }
             case 112:
                 var11 = {};
@@ -164,16 +164,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var2 == var1;
                 var4 = undefined;
                 if (var7) {
-                    _fun57293_ip = 134;
-                    continue _fun57293
+                    _fun57399_ip = 134;
+                    continue _fun57399
                 }
             case 129:
                 var4 = var1.value;
             case 134:
                 var1 = var2 != var4;
                 if (!var1) {
-                    _fun57293_ip = 144;
-                    continue _fun57293
+                    _fun57399_ip = 144;
+                    continue _fun57399
                 }
             case 141:
                 var1 = var4;
@@ -187,15 +187,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var4.bind(var7)(var11);
                 var1 = !var1;
                 if (!var1) {
-                    _fun57293_ip = 185;
-                    continue _fun57293
+                    _fun57399_ip = 185;
+                    continue _fun57399
                 }
             case 181:
                 var1 = var2 != var7;
             case 185:
                 if (!var1) {
-                    _fun57293_ip = 217;
-                    continue _fun57293
+                    _fun57399_ip = 217;
+                    continue _fun57399
                 }
             case 188:
                 var4 = _closure1_slot0;
@@ -206,8 +206,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var4)(var7, var9);
             case 217:
                 if (!var1) {
-                    _fun57293_ip = 363;
-                    continue _fun57293
+                    _fun57399_ip = 363;
+                    continue _fun57399
                 }
             case 223:
                 var4 = _closure1_slot1;
@@ -270,4 +270,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.maybeShowDoubleTapReminderToast = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1310, 1369, 33, 1297, 671, 3902, 1234, 3173, 1358, 6963, 3109, 6972, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1310, 1369, 33, 1297, 671, 3932, 1234, 3203, 1358, 6994, 3139, 7003, 2]);

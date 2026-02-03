@@ -8,21 +8,21 @@ import o8.j;
 public class e implements CacheKey {
 
     /* renamed from: a  reason: collision with root package name */
-    final List f28414a;
+    final List f28061a;
 
     public e(List list) {
-        this.f28414a = (List) j.g(list);
+        this.f28061a = (List) j.g(list);
     }
 
     @Override // com.facebook.cache.common.CacheKey
     public String a() {
-        return ((CacheKey) this.f28414a.get(0)).a();
+        return ((CacheKey) this.f28061a.get(0)).a();
     }
 
     @Override // com.facebook.cache.common.CacheKey
     public boolean b(Uri uri) {
-        for (int i10 = 0; i10 < this.f28414a.size(); i10++) {
-            if (((CacheKey) this.f28414a.get(i10)).b(uri)) {
+        for (int i10 = 0; i10 < this.f28061a.size(); i10++) {
+            if (((CacheKey) this.f28061a.get(i10)).b(uri)) {
                 return true;
             }
         }
@@ -35,7 +35,7 @@ public class e implements CacheKey {
     }
 
     public List d() {
-        return this.f28414a;
+        return this.f28061a;
     }
 
     @Override // com.facebook.cache.common.CacheKey
@@ -44,17 +44,17 @@ public class e implements CacheKey {
             return true;
         }
         if (obj instanceof e) {
-            return this.f28414a.equals(((e) obj).f28414a);
+            return this.f28061a.equals(((e) obj).f28061a);
         }
         return false;
     }
 
     @Override // com.facebook.cache.common.CacheKey
     public int hashCode() {
-        return this.f28414a.hashCode();
+        return this.f28061a.hashCode();
     }
 
     public String toString() {
-        return "MultiCacheKey:" + this.f28414a.toString();
+        return "MultiCacheKey:" + this.f28061a.toString();
     }
 }

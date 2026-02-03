@@ -21,7 +21,7 @@ public final class ActivityRichPresenceInviteEmbedMessageAccessory extends Messa
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ ActivityRichPresenceInviteEmbedMessageAccessory m537copyu7_MRrM$default(ActivityRichPresenceInviteEmbedMessageAccessory activityRichPresenceInviteEmbedMessageAccessory, String str, MessageMargins messageMargins, ActivityRichPresenceInviteEmbed activityRichPresenceInviteEmbed, int i10, Object obj) {
+    public static /* synthetic */ ActivityRichPresenceInviteEmbedMessageAccessory m539copyu7_MRrM$default(ActivityRichPresenceInviteEmbedMessageAccessory activityRichPresenceInviteEmbedMessageAccessory, String str, MessageMargins messageMargins, ActivityRichPresenceInviteEmbed activityRichPresenceInviteEmbed, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = activityRichPresenceInviteEmbedMessageAccessory.messageId;
         }
@@ -31,12 +31,12 @@ public final class ActivityRichPresenceInviteEmbedMessageAccessory extends Messa
         if ((i10 & 4) != 0) {
             activityRichPresenceInviteEmbed = activityRichPresenceInviteEmbedMessageAccessory.activityRichPresenceInviteEmbed;
         }
-        return activityRichPresenceInviteEmbedMessageAccessory.m539copyu7_MRrM(str, messageMargins, activityRichPresenceInviteEmbed);
+        return activityRichPresenceInviteEmbedMessageAccessory.m541copyu7_MRrM(str, messageMargins, activityRichPresenceInviteEmbed);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m538component13Eiw7ao() {
+    public final String m540component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -52,7 +52,7 @@ public final class ActivityRichPresenceInviteEmbedMessageAccessory extends Messa
 
     @NotNull
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final ActivityRichPresenceInviteEmbedMessageAccessory m539copyu7_MRrM(@NotNull String messageId, @NotNull MessageMargins margins, @NotNull ActivityRichPresenceInviteEmbed activityRichPresenceInviteEmbed) {
+    public final ActivityRichPresenceInviteEmbedMessageAccessory m541copyu7_MRrM(@NotNull String messageId, @NotNull MessageMargins margins, @NotNull ActivityRichPresenceInviteEmbed activityRichPresenceInviteEmbed) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(margins, "margins");
         Intrinsics.checkNotNullParameter(activityRichPresenceInviteEmbed, "activityRichPresenceInviteEmbed");
@@ -65,7 +65,7 @@ public final class ActivityRichPresenceInviteEmbedMessageAccessory extends Messa
         }
         if (obj instanceof ActivityRichPresenceInviteEmbedMessageAccessory) {
             ActivityRichPresenceInviteEmbedMessageAccessory activityRichPresenceInviteEmbedMessageAccessory = (ActivityRichPresenceInviteEmbedMessageAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, activityRichPresenceInviteEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, activityRichPresenceInviteEmbedMessageAccessory.margins) && Intrinsics.areEqual(this.activityRichPresenceInviteEmbed, activityRichPresenceInviteEmbedMessageAccessory.activityRichPresenceInviteEmbed);
+            return MessageId.m1090equalsimpl0(this.messageId, activityRichPresenceInviteEmbedMessageAccessory.messageId) && Intrinsics.areEqual(this.margins, activityRichPresenceInviteEmbedMessageAccessory.margins) && Intrinsics.areEqual(this.activityRichPresenceInviteEmbed, activityRichPresenceInviteEmbedMessageAccessory.activityRichPresenceInviteEmbed);
         }
         return false;
     }
@@ -83,20 +83,20 @@ public final class ActivityRichPresenceInviteEmbedMessageAccessory extends Messa
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.activityRichPresenceInviteEmbed.hashCode();
+        return (((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.margins.hashCode()) * 31) + this.activityRichPresenceInviteEmbed.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         MessageMargins messageMargins = this.margins;
         ActivityRichPresenceInviteEmbed activityRichPresenceInviteEmbed = this.activityRichPresenceInviteEmbed;
-        return "ActivityRichPresenceInviteEmbedMessageAccessory(messageId=" + m1091toStringimpl + ", margins=" + messageMargins + ", activityRichPresenceInviteEmbed=" + activityRichPresenceInviteEmbed + ")";
+        return "ActivityRichPresenceInviteEmbedMessageAccessory(messageId=" + m1093toStringimpl + ", margins=" + messageMargins + ", activityRichPresenceInviteEmbed=" + activityRichPresenceInviteEmbed + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

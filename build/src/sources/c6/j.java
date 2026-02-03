@@ -6,10 +6,10 @@ import java.io.ByteArrayOutputStream;
 public class j extends ByteArrayOutputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    private final c f8154d;
+    private final c f8010d;
 
     public j(c cVar, int i10) {
-        this.f8154d = cVar;
+        this.f8010d = cVar;
         ((ByteArrayOutputStream) this).buf = cVar.a(Math.max(i10, (int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER));
     }
 
@@ -18,21 +18,21 @@ public class j extends ByteArrayOutputStream {
         if (i11 + i10 <= ((ByteArrayOutputStream) this).buf.length) {
             return;
         }
-        byte[] a10 = this.f8154d.a((i11 + i10) * 2);
+        byte[] a10 = this.f8010d.a((i11 + i10) * 2);
         System.arraycopy(((ByteArrayOutputStream) this).buf, 0, a10, 0, ((ByteArrayOutputStream) this).count);
-        this.f8154d.b(((ByteArrayOutputStream) this).buf);
+        this.f8010d.b(((ByteArrayOutputStream) this).buf);
         ((ByteArrayOutputStream) this).buf = a10;
     }
 
     @Override // java.io.ByteArrayOutputStream, java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f8154d.b(((ByteArrayOutputStream) this).buf);
+        this.f8010d.b(((ByteArrayOutputStream) this).buf);
         ((ByteArrayOutputStream) this).buf = null;
         super.close();
     }
 
     public void finalize() {
-        this.f8154d.b(((ByteArrayOutputStream) this).buf);
+        this.f8010d.b(((ByteArrayOutputStream) this).buf);
     }
 
     @Override // java.io.ByteArrayOutputStream, java.io.OutputStream

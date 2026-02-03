@@ -5,5 +5,5 @@ import android.content.Intent;
 abstract class l {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Intent f17214a = new Intent("com.google.android.play.core.integrityservice.BIND_INTEGRITY_SERVICE").setPackage("com.android.vending");
+    static final Intent f16843a = new Intent("com.google.android.play.core.integrityservice.BIND_INTEGRITY_SERVICE").setPackage("com.android.vending");
 }

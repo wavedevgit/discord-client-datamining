@@ -3,34 +3,34 @@ package ni;
 final class a extends l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f41953a;
+    private final long f41816a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f41954b;
+    private final long f41817b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f41955c;
+    private final long f41818c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(long j10, long j11, long j12) {
-        this.f41953a = j10;
-        this.f41954b = j11;
-        this.f41955c = j12;
+        this.f41816a = j10;
+        this.f41817b = j11;
+        this.f41818c = j12;
     }
 
     @Override // ni.l
     public long b() {
-        return this.f41954b;
+        return this.f41817b;
     }
 
     @Override // ni.l
     public long c() {
-        return this.f41953a;
+        return this.f41816a;
     }
 
     @Override // ni.l
     public long d() {
-        return this.f41955c;
+        return this.f41818c;
     }
 
     public boolean equals(Object obj) {
@@ -39,7 +39,7 @@ final class a extends l {
         }
         if (obj instanceof l) {
             l lVar = (l) obj;
-            if (this.f41953a == lVar.c() && this.f41954b == lVar.b() && this.f41955c == lVar.d()) {
+            if (this.f41816a == lVar.c() && this.f41817b == lVar.b() && this.f41818c == lVar.d()) {
                 return true;
             }
         }
@@ -47,13 +47,13 @@ final class a extends l {
     }
 
     public int hashCode() {
-        long j10 = this.f41953a;
-        long j11 = this.f41954b;
-        long j12 = this.f41955c;
+        long j10 = this.f41816a;
+        long j11 = this.f41817b;
+        long j12 = this.f41818c;
         return ((((((int) (j10 ^ (j10 >>> 32))) ^ 1000003) * 1000003) ^ ((int) (j11 ^ (j11 >>> 32)))) * 1000003) ^ ((int) ((j12 >>> 32) ^ j12));
     }
 
     public String toString() {
-        return "StartupTime{epochMillis=" + this.f41953a + ", elapsedRealtime=" + this.f41954b + ", uptimeMillis=" + this.f41955c + "}";
+        return "StartupTime{epochMillis=" + this.f41816a + ", elapsedRealtime=" + this.f41817b + ", uptimeMillis=" + this.f41818c + "}";
     }
 }

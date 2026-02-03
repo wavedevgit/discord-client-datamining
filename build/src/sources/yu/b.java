@@ -1,49 +1,67 @@
 package yu;
+
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
-    public static boolean a(CharSequence charSequence) {
-        if (charSequence == null || c(charSequence)) {
-            return false;
-        }
-        int length = charSequence.length();
-        for (int i10 = 0; i10 < length; i10++) {
-            if (!Character.isLowerCase(charSequence.charAt(i10))) {
-                return false;
-            }
-        }
-        return true;
-    }
+public interface b {
 
-    public static boolean b(CharSequence charSequence) {
-        if (charSequence == null || c(charSequence)) {
-            return false;
-        }
-        int length = charSequence.length();
-        for (int i10 = 0; i10 < length; i10++) {
-            if (!Character.isUpperCase(charSequence.charAt(i10))) {
-                return false;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        private static List a(b bVar, Object obj) {
+            List<Object> list;
+            if (obj instanceof List) {
+                list = (List) obj;
+            } else {
+                list = null;
             }
-        }
-        return true;
-    }
-
-    public static boolean c(CharSequence charSequence) {
-        if (charSequence != null && charSequence.length() != 0) {
-            return false;
-        }
-        return true;
-    }
-
-    public static boolean d(CharSequence charSequence) {
-        if (c(charSequence)) {
-            return false;
-        }
-        int length = charSequence.length();
-        for (int i10 = 0; i10 < length; i10++) {
-            if (!Character.isDigit(charSequence.charAt(i10))) {
-                return false;
+            if (list != null) {
+                ArrayList arrayList = new ArrayList();
+                for (Object obj2 : list) {
+                    CollectionsKt.B(arrayList, a(bVar, obj2));
+                }
+                return arrayList;
             }
+            return CollectionsKt.e(b(bVar, obj));
         }
-        return true;
+
+        private static String b(b bVar, Object obj) {
+            if (obj instanceof Number) {
+                Number number = (Number) obj;
+                if (number.doubleValue() == number.intValue()) {
+                    return String.valueOf(number.intValue());
+                }
+            }
+            return qv.a.h(obj);
+        }
+
+        private static String c(b bVar, Object obj) {
+            List<Object> list;
+            if (obj instanceof List) {
+                list = (List) obj;
+            } else {
+                list = null;
+            }
+            if (list != null) {
+                ArrayList arrayList = new ArrayList();
+                for (Object obj2 : list) {
+                    CollectionsKt.B(arrayList, a(bVar, obj2));
+                }
+                String x02 = CollectionsKt.x0(arrayList, ",", null, null, 0, null, null, 62, null);
+                if (x02 != null) {
+                    return x02;
+                }
+            }
+            return b(bVar, obj);
+        }
+
+        public static List d(b bVar, Object obj) {
+            List<Object> c10 = qv.a.c(obj);
+            ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
+            for (Object obj2 : c10) {
+                arrayList.add(c(bVar, obj2));
+            }
+            return arrayList;
+        }
     }
 }

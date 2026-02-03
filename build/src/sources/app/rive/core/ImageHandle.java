@@ -12,38 +12,38 @@ public final class ImageHandle {
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ ImageHandle m179boximpl(long j10) {
+    public static final /* synthetic */ ImageHandle m181boximpl(long j10) {
         return new ImageHandle(j10);
     }
 
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static long m180constructorimpl(long j10) {
+    public static long m182constructorimpl(long j10) {
         return j10;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m181equalsimpl(long j10, Object obj) {
-        return (obj instanceof ImageHandle) && j10 == ((ImageHandle) obj).m185unboximpl();
+    public static boolean m183equalsimpl(long j10, Object obj) {
+        return (obj instanceof ImageHandle) && j10 == ((ImageHandle) obj).m187unboximpl();
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m182equalsimpl0(long j10, long j11) {
+    public static final boolean m184equalsimpl0(long j10, long j11) {
         return j10 == j11;
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m183hashCodeimpl(long j10) {
+    public static int m185hashCodeimpl(long j10) {
         return Long.hashCode(j10);
     }
 
     @NotNull
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m184toStringimpl(long j10) {
+    public static String m186toStringimpl(long j10) {
         return "ImageHandle(" + j10 + ")";
     }
 
     public boolean equals(Object obj) {
-        return m181equalsimpl(this.handle, obj);
+        return m183equalsimpl(this.handle, obj);
     }
 
     public final long getHandle() {
@@ -51,16 +51,16 @@ public final class ImageHandle {
     }
 
     public int hashCode() {
-        return m183hashCodeimpl(this.handle);
+        return m185hashCodeimpl(this.handle);
     }
 
     @NotNull
     public String toString() {
-        return m184toStringimpl(this.handle);
+        return m186toStringimpl(this.handle);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ long m185unboximpl() {
+    public final /* synthetic */ long m187unboximpl() {
         return this.handle;
     }
 }

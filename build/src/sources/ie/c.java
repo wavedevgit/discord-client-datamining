@@ -15,22 +15,22 @@ import ne.y;
 final class c {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f28464c = Pattern.compile("\\[voice=\"([^\"]*)\"\\]");
+    private static final Pattern f28111c = Pattern.compile("\\[voice=\"([^\"]*)\"\\]");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Pattern f28465d = Pattern.compile("^((?:[0-9]*\\.)?[0-9]+)(px|em|%)$");
+    private static final Pattern f28112d = Pattern.compile("^((?:[0-9]*\\.)?[0-9]+)(px|em|%)$");
 
     /* renamed from: a  reason: collision with root package name */
-    private final h0 f28466a = new h0();
+    private final h0 f28113a = new h0();
 
     /* renamed from: b  reason: collision with root package name */
-    private final StringBuilder f28467b = new StringBuilder();
+    private final StringBuilder f28114b = new StringBuilder();
 
     private void a(d dVar, String str) {
         if (!"".equals(str)) {
             int indexOf = str.indexOf(91);
             if (indexOf != -1) {
-                Matcher matcher = f28464c.matcher(str.substring(indexOf));
+                Matcher matcher = f28111c.matcher(str.substring(indexOf));
                 if (matcher.matches()) {
                     dVar.z((String) ne.a.e(matcher.group(1)));
                 }
@@ -94,7 +94,7 @@ final class c {
     }
 
     private static void e(String str, d dVar) {
-        Matcher matcher = f28465d.matcher(ii.b.e(str));
+        Matcher matcher = f28112d.matcher(ii.b.e(str));
         if (!matcher.matches()) {
             y.i("WebvttCssParser", "Invalid font-size: '" + str + "'.");
             return;
@@ -305,15 +305,15 @@ final class c {
 
     public List d(h0 h0Var) {
         boolean z10;
-        this.f28467b.setLength(0);
+        this.f28114b.setLength(0);
         int f10 = h0Var.f();
         m(h0Var);
-        this.f28466a.S(h0Var.e(), h0Var.f());
-        this.f28466a.U(f10);
+        this.f28113a.S(h0Var.e(), h0Var.f());
+        this.f28113a.U(f10);
         ArrayList arrayList = new ArrayList();
         while (true) {
-            String i10 = i(this.f28466a, this.f28467b);
-            if (i10 == null || !"{".equals(g(this.f28466a, this.f28467b))) {
+            String i10 = i(this.f28113a, this.f28114b);
+            if (i10 == null || !"{".equals(g(this.f28113a, this.f28114b))) {
                 break;
             }
             d dVar = new d();
@@ -321,16 +321,16 @@ final class c {
             String str = null;
             boolean z11 = false;
             while (!z11) {
-                int f11 = this.f28466a.f();
-                String g10 = g(this.f28466a, this.f28467b);
+                int f11 = this.f28113a.f();
+                String g10 = g(this.f28113a, this.f28114b);
                 if (g10 != null && !"}".equals(g10)) {
                     z10 = false;
                 } else {
                     z10 = true;
                 }
                 if (!z10) {
-                    this.f28466a.U(f11);
-                    j(this.f28466a, dVar, this.f28467b);
+                    this.f28113a.U(f11);
+                    j(this.f28113a, dVar, this.f28114b);
                 }
                 str = g10;
                 z11 = z10;

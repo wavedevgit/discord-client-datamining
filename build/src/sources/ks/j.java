@@ -2,46 +2,40 @@ package ks;
 
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
-import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlinx.coroutines.CoroutineScope;
-import kotlinx.coroutines.channels.ProducerScope;
+import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.FlowCollector;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class j extends e {
+public abstract /* synthetic */ class j {
 
-    /* renamed from: o  reason: collision with root package name */
-    private final Iterable f36499o;
-
+    /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
+    public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f36500d;
+        int f36465d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Flow f36501e;
-
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ z f36502i;
+        final /* synthetic */ Flow f36466e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        a(Flow flow, z zVar, Continuation continuation) {
+        a(Flow flow, Continuation continuation) {
             super(2, continuation);
-            this.f36501e = flow;
-            this.f36502i = zVar;
+            this.f36466e = flow;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f36501e, this.f36502i, continuation);
+            return new a(this.f36466e, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = or.b.f();
-            int i10 = this.f36500d;
+            Object f10 = pr.b.f();
+            int i10 = this.f36465d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -50,47 +44,51 @@ public final class j extends e {
                 }
             } else {
                 kotlin.c.b(obj);
-                Flow flow = this.f36501e;
-                z zVar = this.f36502i;
-                this.f36500d = 1;
-                if (flow.collect(zVar, this) == f10) {
+                Flow flow = this.f36466e;
+                this.f36465d = 1;
+                if (g.h(flow, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
-    public /* synthetic */ j(Iterable iterable, CoroutineContext coroutineContext, int i10, is.a aVar, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-        this(iterable, (i11 & 2) != 0 ? kotlin.coroutines.e.f33372d : coroutineContext, (i11 & 4) != 0 ? -2 : i10, (i11 & 8) != 0 ? is.a.f31141d : aVar);
-    }
-
-    @Override // ks.e
-    protected Object f(ProducerScope producerScope, Continuation continuation) {
-        z zVar = new z(producerScope);
-        for (Flow flow : this.f36499o) {
-            gs.i.d(producerScope, null, null, new a(flow, zVar, null), 3, null);
+    public static final Object a(Flow flow, Continuation continuation) {
+        Object collect = flow.collect(ls.s.f37614d, continuation);
+        if (collect == pr.b.f()) {
+            return collect;
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
-    @Override // ks.e
-    protected e g(CoroutineContext coroutineContext, int i10, is.a aVar) {
-        return new j(this.f36499o, coroutineContext, i10, aVar);
+    public static final Object b(Flow flow, Function2 function2, Continuation continuation) {
+        Flow b10;
+        b10 = l.b(g.z(flow, function2), 0, null, 2, null);
+        Object h10 = g.h(b10, continuation);
+        if (h10 == pr.b.f()) {
+            return h10;
+        }
+        return Unit.f33074a;
     }
 
-    @Override // ks.e
-    public is.v m(CoroutineScope coroutineScope) {
-        return is.s.c(coroutineScope, this.f36466d, this.f36467e, k());
+    public static final Object c(FlowCollector flowCollector, Flow flow, Continuation continuation) {
+        g.q(flowCollector);
+        Object collect = flow.collect(flowCollector, continuation);
+        if (collect == pr.b.f()) {
+            return collect;
+        }
+        return Unit.f33074a;
     }
 
-    public j(Iterable iterable, CoroutineContext coroutineContext, int i10, is.a aVar) {
-        super(coroutineContext, i10, aVar);
-        this.f36499o = iterable;
+    public static final Job d(Flow flow, CoroutineScope coroutineScope) {
+        Job d10;
+        d10 = hs.i.d(coroutineScope, null, null, new a(flow, null), 3, null);
+        return d10;
     }
 }

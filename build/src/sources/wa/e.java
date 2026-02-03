@@ -9,7 +9,7 @@ import va.y;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f52289a = new e();
+    public static final e f51856a = new e();
 
     private e() {
     }
@@ -30,7 +30,7 @@ public final class e {
     public static final b2.d b(y poolFactory, boolean z10) {
         Intrinsics.checkNotNullParameter(poolFactory, "poolFactory");
         if (z10) {
-            r8.b INSTANCE = r8.b.f48072a;
+            r8.b INSTANCE = r8.b.f48274a;
             Intrinsics.checkNotNullExpressionValue(INSTANCE, "INSTANCE");
             return INSTANCE;
         }

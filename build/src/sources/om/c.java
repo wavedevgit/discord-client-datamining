@@ -1,299 +1,152 @@
 package om;
 
-import android.app.Activity;
-import android.content.res.Configuration;
-import android.os.Handler;
-import android.os.Looper;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import androidx.core.graphics.Insets;
-import androidx.core.view.WindowInsetsCompat;
-import androidx.core.view.h0;
-import androidx.core.view.v;
-import androidx.core.view.w0;
-import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.views.view.ReactViewGroup;
-import fm.g;
-import fm.h;
-import fm.i;
-import im.k;
-import im.l;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.FunctionReferenceImpl;
+import android.view.ViewParent;
+import android.widget.EditText;
+import com.facebook.react.bridge.UiThreadUtil;
+import java.util.ArrayList;
+import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Reflection;
+import kotlin.ranges.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c extends ReactViewGroup {
+public final class c {
 
-    /* renamed from: w  reason: collision with root package name */
-    public static final a f44420w = new a(null);
+    /* renamed from: a  reason: collision with root package name */
+    public static final c f44549a = new c();
 
-    /* renamed from: x  reason: collision with root package name */
-    private static final String f44421x = Reflection.getOrCreateKotlinClass(c.class).getSimpleName();
+    private c() {
+    }
 
-    /* renamed from: d  reason: collision with root package name */
-    private final ThemedReactContext f44422d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private boolean f44423e;
-
-    /* renamed from: i  reason: collision with root package name */
-    private boolean f44424i;
-
-    /* renamed from: o  reason: collision with root package name */
-    private boolean f44425o;
-
-    /* renamed from: p  reason: collision with root package name */
-    private boolean f44426p;
-
-    /* renamed from: q  reason: collision with root package name */
-    private boolean f44427q;
-
-    /* renamed from: r  reason: collision with root package name */
-    private ReactViewGroup f44428r;
-
-    /* renamed from: s  reason: collision with root package name */
-    private boolean f44429s;
-
-    /* renamed from: t  reason: collision with root package name */
-    private k f44430t;
-
-    /* renamed from: u  reason: collision with root package name */
-    private final l f44431u;
-
-    /* renamed from: v  reason: collision with root package name */
-    private final lm.b f44432v;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    private final EditText b(View view, int i10) {
+        ViewGroup viewGroup;
+        int i11;
+        int i12;
+        ViewParent parent = view.getParent();
+        if (parent instanceof ViewGroup) {
+            viewGroup = (ViewGroup) parent;
+        } else {
+            viewGroup = null;
         }
-
-        public final String a() {
-            return c.f44421x;
+        if (viewGroup == null) {
+            return null;
         }
+        int indexOfChild = viewGroup.indexOfChild(view);
+        if (i10 > 0) {
+            i11 = indexOfChild + 1;
+        } else {
+            i11 = indexOfChild - 1;
+        }
+        if (i10 > 0) {
+            i12 = viewGroup.getChildCount();
+        } else {
+            i12 = -1;
+        }
+        while (i11 != i12) {
+            View childAt = viewGroup.getChildAt(i11);
+            Intrinsics.checkNotNull(childAt);
+            EditText d10 = d(childAt, i10);
+            if (d10 != null) {
+                return d10;
+            }
+            i11 += i10;
+        }
+        return b(viewGroup, i10);
+    }
 
-        private a() {
+    private final EditText c(ViewGroup viewGroup, int i10) {
+        kotlin.ranges.a p10;
+        int childCount = viewGroup.getChildCount();
+        if (i10 > 0) {
+            p10 = d.u(0, childCount);
+        } else {
+            p10 = d.p(childCount - 1, 0);
+        }
+        int d10 = p10.d();
+        int e10 = p10.e();
+        int f10 = p10.f();
+        if ((f10 <= 0 || d10 > e10) && (f10 >= 0 || e10 > d10)) {
+            return null;
+        }
+        while (true) {
+            View childAt = viewGroup.getChildAt(d10);
+            Intrinsics.checkNotNull(childAt);
+            EditText d11 = d(childAt, i10);
+            if (d11 != null) {
+                return d11;
+            }
+            if (d10 != e10) {
+                d10 += f10;
+            } else {
+                return null;
+            }
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    /* synthetic */ class b extends FunctionReferenceImpl implements Function0 {
-        b(Object obj) {
-            super(0, obj, c.class, "getKeyboardCallback", "getKeyboardCallback()Lcom/reactnativekeyboardcontroller/listeners/KeyboardAnimationCallback;", 0);
-        }
-
-        @Override // kotlin.jvm.functions.Function0
-        /* renamed from: a */
-        public final k invoke() {
-            return ((c) this.receiver).getKeyboardCallback();
+    private final EditText d(View view, int i10) {
+        if (i(view)) {
+            Intrinsics.checkNotNull(view, "null cannot be cast to non-null type android.widget.EditText");
+            return (EditText) view;
+        } else if (view instanceof ViewGroup) {
+            return c((ViewGroup) view, i10);
+        } else {
+            return null;
         }
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public c(ThemedReactContext reactContext) {
-        super(reactContext);
-        Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.f44422d = reactContext;
-        l lVar = new l(WindowInsetsCompat.p.h(), WindowInsetsCompat.p.c(), 1, this.f44424i);
-        this.f44431u = lVar;
-        this.f44432v = new lm.b(this, reactContext, lVar, new b(this));
-        g.e(reactContext);
-        setTag(f44421x);
+    private final EditText e(View view) {
+        return b(view, 1);
     }
 
-    private final void g() {
-        o();
-        k();
-        this.f44432v.b();
+    private final EditText f(View view) {
+        return b(view, -1);
+    }
+
+    private static final void h(List list, View view) {
+        if (f44549a.i(view)) {
+            Intrinsics.checkNotNull(view, "null cannot be cast to non-null type android.widget.EditText");
+            list.add((EditText) view);
+        } else if (view instanceof ViewGroup) {
+            ViewGroup viewGroup = (ViewGroup) view;
+            int childCount = viewGroup.getChildCount();
+            for (int i10 = 0; i10 < childCount; i10++) {
+                h(list, viewGroup.getChildAt(i10));
+            }
+        }
+    }
+
+    private final boolean i(View view) {
+        if ((view instanceof EditText) && ((EditText) view).isEnabled()) {
+            return true;
+        }
+        return false;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public final k getKeyboardCallback() {
-        return this.f44430t;
+    public static final void k(EditText editText) {
+        gm.c.e(editText);
     }
 
-    private final void h() {
-        o();
-        n();
-        this.f44432v.c();
+    public final List g(View view) {
+        ArrayList arrayList = new ArrayList();
+        h(arrayList, view);
+        return arrayList;
     }
 
-    private final void j() {
-        o();
-        i.c(this);
-    }
-
-    private final void k() {
-        k kVar = this.f44430t;
-        if (kVar != null) {
-            kVar.e();
+    public final void j(String direction, View view) {
+        final EditText f10;
+        Intrinsics.checkNotNullParameter(direction, "direction");
+        Intrinsics.checkNotNullParameter(view, "view");
+        if (Intrinsics.areEqual(direction, "next")) {
+            f10 = e(view);
+        } else {
+            f10 = f(view);
         }
-        final ReactViewGroup reactViewGroup = this.f44428r;
-        new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: om.b
+        UiThreadUtil.runOnUiThread(new Runnable() { // from class: om.b
             @Override // java.lang.Runnable
             public final void run() {
-                c.l(ReactViewGroup.this);
+                c.k(f10);
             }
         });
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final void l(ReactViewGroup reactViewGroup) {
-        h.a(reactViewGroup);
-    }
-
-    private final void n() {
-        if (this.f44422d.getCurrentActivity() != null) {
-            this.f44428r = new ReactViewGroup(getContext());
-            ViewGroup a10 = fm.f.a(this.f44422d);
-            if (a10 != null) {
-                a10.addView(this.f44428r);
-            }
-            k kVar = new k(this, this, this.f44422d, this.f44431u);
-            this.f44430t = kVar;
-            ReactViewGroup reactViewGroup = this.f44428r;
-            if (reactViewGroup != null) {
-                h0.L0(reactViewGroup, kVar);
-                h0.D0(reactViewGroup, this.f44430t);
-                i.c(reactViewGroup);
-                return;
-            }
-            return;
-        }
-        jm.a.e(jm.a.f32253a, d.a(), "Can not setup keyboard animation listener, since `currentActivity` is null", null, 4, null);
-    }
-
-    private final void o() {
-        View b10 = fm.f.b(this.f44422d);
-        if (b10 != null) {
-            h0.D0(b10, new v() { // from class: om.a
-                @Override // androidx.core.view.v
-                public final WindowInsetsCompat a(View view, WindowInsetsCompat windowInsetsCompat) {
-                    WindowInsetsCompat p10;
-                    p10 = c.p(c.this, view, windowInsetsCompat);
-                    return p10;
-                }
-            });
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final WindowInsetsCompat p(c cVar, View v10, WindowInsetsCompat insets) {
-        boolean z10;
-        int i10;
-        int i11;
-        Intrinsics.checkNotNullParameter(v10, "v");
-        Intrinsics.checkNotNullParameter(insets, "insets");
-        ViewGroup a10 = fm.f.a(cVar.f44422d);
-        FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
-        boolean z11 = cVar.f44426p;
-        boolean z12 = true;
-        int i12 = 0;
-        if (z11 && !cVar.f44423e) {
-            z10 = false;
-        } else {
-            z10 = true;
-        }
-        if (z11 && !cVar.f44424i) {
-            z12 = false;
-        }
-        Insets f10 = insets.f(WindowInsetsCompat.p.f());
-        Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
-        Insets f11 = insets.f(WindowInsetsCompat.p.h());
-        Intrinsics.checkNotNullExpressionValue(f11, "getInsets(...)");
-        int i13 = f10.f3150a;
-        if (z10) {
-            i10 = 0;
-        } else {
-            i10 = f11.f3151b;
-        }
-        int i14 = f10.f3152c;
-        if (z12) {
-            i11 = 0;
-        } else {
-            i11 = f10.f3153d;
-        }
-        layoutParams.setMargins(i13, i10, i14, i11);
-        if (a10 != null) {
-            a10.setLayoutParams(layoutParams);
-        }
-        WindowInsetsCompat Z = h0.Z(v10, insets);
-        Intrinsics.checkNotNullExpressionValue(Z, "onApplyWindowInsets(...)");
-        int o10 = Z.o();
-        if (!cVar.f44423e) {
-            i12 = Z.q();
-        }
-        return Z.v(o10, i12, Z.p(), Z.n());
-    }
-
-    public final void i(boolean z10) {
-        if (this.f44426p && this.f44423e != z10) {
-            this.f44423e = z10;
-            j();
-        }
-    }
-
-    public final void m() {
-        boolean z10;
-        if (!this.f44426p && !this.f44425o) {
-            z10 = false;
-        } else {
-            z10 = true;
-        }
-        if (this.f44427q != z10) {
-            this.f44427q = z10;
-            Activity currentActivity = this.f44422d.getCurrentActivity();
-            if (currentActivity != null) {
-                w0.c(currentActivity.getWindow(), true ^ this.f44427q);
-            }
-        }
-    }
-
-    /* JADX INFO: Access modifiers changed from: protected */
-    @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup, android.view.View
-    public void onAttachedToWindow() {
-        super.onAttachedToWindow();
-        if (!this.f44429s) {
-            this.f44429s = true;
-        } else {
-            n();
-        }
-    }
-
-    @Override // android.view.View
-    protected void onConfigurationChanged(Configuration configuration) {
-        j();
-    }
-
-    @Override // android.view.ViewGroup, android.view.View
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        k();
-    }
-
-    public final void setActive(boolean z10) {
-        this.f44426p = z10;
-        if (z10) {
-            h();
-        } else {
-            g();
-        }
-    }
-
-    public final void setNavigationBarTranslucent(boolean z10) {
-        this.f44424i = z10;
-        this.f44431u.e(z10);
-    }
-
-    public final void setPreserveEdgeToEdge(boolean z10) {
-        this.f44425o = z10;
-    }
-
-    public final void setStatusBarTranslucent(boolean z10) {
-        this.f44423e = z10;
     }
 }

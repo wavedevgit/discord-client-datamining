@@ -1,16 +1,20 @@
 package yq;
 
-import android.graphics.Bitmap;
+import com.facebook.react.ReactPackage;
+import com.facebook.react.bridge.ReactApplicationContext;
+import fr.greweb.reactnativeviewshot.RNViewShotModule;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract /* synthetic */ class b {
+public class b implements ReactPackage {
+    @Override // com.facebook.react.ReactPackage
+    public List createNativeModules(ReactApplicationContext reactApplicationContext) {
+        return Arrays.asList(new RNViewShotModule(reactApplicationContext));
+    }
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int[] f54974a;
-
-    static {
-        int[] iArr = new int[Bitmap.CompressFormat.values().length];
-        f54974a = iArr;
-        iArr[Bitmap.CompressFormat.PNG.ordinal()] = 1;
-        iArr[Bitmap.CompressFormat.WEBP.ordinal()] = 2;
+    @Override // com.facebook.react.ReactPackage
+    public List createViewManagers(ReactApplicationContext reactApplicationContext) {
+        return Collections.EMPTY_LIST;
     }
 }

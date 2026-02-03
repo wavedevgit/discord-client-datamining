@@ -5,7 +5,7 @@ import android.content.ComponentCallbacks2;
 import android.content.Context;
 import android.content.res.Configuration;
 import e9.d;
-import ir.c;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
@@ -36,7 +36,7 @@ public final class FrescoMemoryTrimmer {
 
             private final boolean getMemoryIsLow() {
                 this.activityManager.getMemoryInfo(this.memoryInfo);
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
                 return this.memoryInfo.lowMemory;
             }
 

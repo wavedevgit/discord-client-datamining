@@ -14,7 +14,7 @@ public abstract class b {
 
     public static /* synthetic */ Json b(Json json, Function1 function1, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            json = Json.f36410d;
+            json = Json.f36186d;
         }
         return a(json, function1);
     }

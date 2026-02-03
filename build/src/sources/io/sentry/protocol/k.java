@@ -12,13 +12,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class k implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Number f30408d;
+    private final Number f29974d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f30409e;
+    private final String f29975e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f30410i;
+    private Map f29976i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -30,14 +30,14 @@ public final class k implements w1 {
             String str = null;
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
-                if (!l02.equals("unit")) {
-                    if (!l02.equals("value")) {
+                String m02 = e3Var.m0();
+                m02.getClass();
+                if (!m02.equals("unit")) {
+                    if (!m02.equals("value")) {
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, l02);
+                        e3Var.v1(iLogger, concurrentHashMap, m02);
                     } else {
                         number = (Number) e3Var.V1();
                     }
@@ -58,25 +58,25 @@ public final class k implements w1 {
     }
 
     public k(Number number, String str) {
-        this.f30408d = number;
-        this.f30409e = str;
+        this.f29974d = number;
+        this.f29975e = str;
     }
 
     public void a(Map map) {
-        this.f30410i = map;
+        this.f29976i = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("value").i(this.f30408d);
-        if (this.f30409e != null) {
-            f3Var.e("unit").f(this.f30409e);
+        f3Var.e("value").i(this.f29974d);
+        if (this.f29975e != null) {
+            f3Var.e("unit").f(this.f29975e);
         }
-        Map map = this.f30410i;
+        Map map = this.f29976i;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30410i.get(str);
+                Object obj = this.f29976i.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }

@@ -25,18 +25,18 @@ enum y0 {
     private static final Map C = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f18129d;
+    private final String f17758d;
 
     static {
         y0[] values;
         int i10;
         for (y0 y0Var : values()) {
-            C.put(y0Var.f18129d, y0Var);
+            C.put(y0Var.f17758d, y0Var);
         }
     }
 
     y0(String str) {
-        this.f18129d = str;
+        this.f17758d = str;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -50,6 +50,6 @@ enum y0 {
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f18129d;
+        return this.f17758d;
     }
 }

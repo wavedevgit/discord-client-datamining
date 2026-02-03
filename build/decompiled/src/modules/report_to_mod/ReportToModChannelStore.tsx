@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0.setShowResolvedFlags = var2;
         var1 = function arg0() {
-            _fun91347: for (var _fun91347_ip = 0;;) switch (_fun91347_ip) {
+            _fun91309: for (var _fun91309_ip = 0;;) switch (_fun91309_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     var0 = undefined;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 == var1;
                     if (var0) {
-                        _fun91347_ip = 38;
-                        continue _fun91347
+                        _fun91309_ip = 38;
+                        continue _fun91309
                     }
                 case 35:
                     var0 = var1;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.useReportToModChannelFiltersStore = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun91349: for (var _fun91349_ip = 0;;) switch (_fun91349_ip) {
+        _fun91311: for (var _fun91311_ip = 0;;) switch (_fun91311_ip) {
             case 0:
                 var5 = arg0;
                 var _closure2_slot0 = var5;
@@ -124,8 +124,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var4;
                 var1 = null;
                 if (!(var1 != var5)) {
-                    _fun91349_ip = 74;
-                    continue _fun91349
+                    _fun91311_ip = 74;
+                    continue _fun91311
                 }
             case 32:
                 var0 = {};
@@ -133,8 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.bind(var4)(var5);
                 var1 = var1 == var3;
                 if (var1) {
-                    _fun91349_ip = 55;
-                    continue _fun91349
+                    _fun91311_ip = 55;
+                    continue _fun91311
                 }
             case 52:
                 var1 = var3;
@@ -149,8 +149,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var0.setShowResolvedFlags = var1;
-                _fun91349_ip = 98;
-                continue _fun91349;
+                _fun91311_ip = 98;
+                continue _fun91311;
             case 74:
                 var1 = {};
                 var3 = true;
@@ -167,4 +167,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useShouldShowResolvedFlagsForChannel = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [629, 3878, 802, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [629, 3908, 802, 2]);

@@ -6,20 +6,20 @@ import y4.a;
 public final class u {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final u f33055a = new u();
+    public static final u f32801a = new u();
 
     /* renamed from: b  reason: collision with root package name */
-    private static y4.a f33056b;
+    private static y4.a f32802b;
 
     private u() {
     }
 
     public final synchronized y4.a a(Context context) {
         y4.a aVar;
-        aVar = f33056b;
+        aVar = f32802b;
         if (aVar == null) {
-            aVar = new a.C0750a().c(tr.j.x(k.m(context), "image_cache")).a();
-            f33056b = aVar;
+            aVar = new a.C0759a().b(ur.j.x(k.m(context), "image_cache")).a();
+            f32802b = aVar;
         }
         return aVar;
     }

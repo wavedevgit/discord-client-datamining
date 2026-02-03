@@ -3,15 +3,15 @@ package ng;
 final class e implements j {
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f41063b;
+    private final int f40926b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final i f41064c;
+    private final i f40927c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(int i10, i iVar) {
-        this.f41063b = i10;
-        this.f41064c = iVar;
+        this.f40926b = i10;
+        this.f40927c = iVar;
     }
 
     @Override // java.lang.annotation.Annotation
@@ -28,7 +28,7 @@ final class e implements j {
             return false;
         }
         j jVar = (j) obj;
-        if (this.f41063b == jVar.zza() && this.f41064c.equals(jVar.zzb())) {
+        if (this.f40926b == jVar.zza() && this.f40927c.equals(jVar.zzb())) {
             return true;
         }
         return false;
@@ -36,21 +36,21 @@ final class e implements j {
 
     @Override // java.lang.annotation.Annotation
     public final int hashCode() {
-        return (this.f41063b ^ 14552422) + (this.f41064c.hashCode() ^ 2041407134);
+        return (this.f40926b ^ 14552422) + (this.f40927c.hashCode() ^ 2041407134);
     }
 
     @Override // java.lang.annotation.Annotation
     public final String toString() {
-        return "@com.google.firebase.encoders.proto.Protobuf(tag=" + this.f41063b + "intEncoding=" + this.f41064c + ')';
+        return "@com.google.firebase.encoders.proto.Protobuf(tag=" + this.f40926b + "intEncoding=" + this.f40927c + ')';
     }
 
     @Override // ng.j
     public final int zza() {
-        return this.f41063b;
+        return this.f40926b;
     }
 
     @Override // ng.j
     public final i zzb() {
-        return this.f41064c;
+        return this.f40927c;
     }
 }

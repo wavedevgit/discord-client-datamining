@@ -48,19 +48,19 @@ public final class StyleElements_ComplexElementColorJsonAdapter extends h {
         StyleElements.SimpleElementColorValue simpleElementColorValue4 = null;
         StyleElements.SimpleElementColorValue simpleElementColorValue5 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 simpleElementColorValue = (StyleElements.SimpleElementColorValue) this.nullableSimpleElementColorValueAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 simpleElementColorValue2 = (StyleElements.SimpleElementColorValue) this.nullableSimpleElementColorValueAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 simpleElementColorValue3 = (StyleElements.SimpleElementColorValue) this.nullableSimpleElementColorValueAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (t02 == 3) {
                 simpleElementColorValue4 = (StyleElements.SimpleElementColorValue) this.nullableSimpleElementColorValueAdapter.fromJson(reader);
-            } else if (A0 == 4) {
+            } else if (t02 == 4) {
                 simpleElementColorValue5 = (StyleElements.SimpleElementColorValue) this.nullableSimpleElementColorValueAdapter.fromJson(reader);
             }
         }
@@ -73,15 +73,15 @@ public final class StyleElements_ComplexElementColorJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (complexElementColor != null) {
             writer.l();
-            writer.A0("base");
+            writer.t0("base");
             this.nullableSimpleElementColorValueAdapter.toJson(writer, complexElementColor.get_base());
-            writer.A0("focused");
+            writer.t0("focused");
             this.nullableSimpleElementColorValueAdapter.toJson(writer, complexElementColor.get_focused());
-            writer.A0(AppStateModule.APP_STATE_ACTIVE);
+            writer.t0(AppStateModule.APP_STATE_ACTIVE);
             this.nullableSimpleElementColorValueAdapter.toJson(writer, complexElementColor.get_active());
-            writer.A0("disabled");
+            writer.t0("disabled");
             this.nullableSimpleElementColorValueAdapter.toJson(writer, complexElementColor.get_disabled());
-            writer.A0("errored");
+            writer.t0("errored");
             this.nullableSimpleElementColorValueAdapter.toJson(writer, complexElementColor.get_errored());
             writer.E();
             return;

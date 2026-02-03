@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.descriptors.SimpleFunctionDescriptor;
 public class b implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final SimpleFunctionDescriptor f34081d;
+    private final SimpleFunctionDescriptor f33857d;
 
     public b(SimpleFunctionDescriptor simpleFunctionDescriptor) {
-        this.f34081d = simpleFunctionDescriptor;
+        this.f33857d = simpleFunctionDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         boolean b10;
-        b10 = BuiltinMethodsWithDifferentJvmName.b(this.f34081d, (CallableMemberDescriptor) obj);
+        b10 = BuiltinMethodsWithDifferentJvmName.b(this.f33857d, (CallableMemberDescriptor) obj);
         return Boolean.valueOf(b10);
     }
 }

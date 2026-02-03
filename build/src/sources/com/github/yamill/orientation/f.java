@@ -1,7 +1,7 @@
 package com.github.yamill.orientation;
 
-import gs.i;
-import gs.i0;
+import hs.i;
+import hs.i0;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.k;
@@ -18,38 +18,38 @@ public abstract class f {
     public static final class a extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f12628d;
+        int f12257d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ long f12629e;
+        final /* synthetic */ long f12258e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function2 f12630i;
+        final /* synthetic */ Function2 f12259i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f12631o;
+        final /* synthetic */ Ref.ObjectRef f12260o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f12632p;
+        final /* synthetic */ Ref.ObjectRef f12261p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(long j10, Function2 function2, Ref.ObjectRef objectRef, Ref.ObjectRef objectRef2, Continuation continuation) {
             super(2, continuation);
-            this.f12629e = j10;
-            this.f12630i = function2;
-            this.f12631o = objectRef;
-            this.f12632p = objectRef2;
+            this.f12258e = j10;
+            this.f12259i = function2;
+            this.f12260o = objectRef;
+            this.f12261p = objectRef2;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f12629e, this.f12630i, this.f12631o, this.f12632p, continuation);
+            return new a(this.f12258e, this.f12259i, this.f12260o, this.f12261p, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = or.b.f();
-            int i10 = this.f12628d;
+            Object f10 = pr.b.f();
+            int i10 = this.f12257d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -58,19 +58,19 @@ public abstract class f {
                 }
             } else {
                 kotlin.c.b(obj);
-                long j10 = this.f12629e;
-                this.f12628d = 1;
+                long j10 = this.f12258e;
+                this.f12257d = 1;
                 if (i0.a(j10, this) == f10) {
                     return f10;
                 }
             }
-            this.f12630i.invoke(this.f12631o.element, this.f12632p.element);
-            return Unit.f33298a;
+            this.f12259i.invoke(this.f12260o.element, this.f12261p.element);
+            return Unit.f33074a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
@@ -102,6 +102,6 @@ public abstract class f {
             d10 = i.d(coroutineScope, null, null, new a(j10, function2, objectRef, objectRef2, null), 3, null);
             objectRef3.element = d10;
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 }

@@ -12,18 +12,18 @@ import sa.k;
 public class NativeJpegTranscoder implements za.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f11660a;
+    private boolean f11289a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f11661b;
+    private int f11290b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f11662c;
+    private boolean f11291c;
 
     public NativeJpegTranscoder(boolean z10, int i10, boolean z11, boolean z12) {
-        this.f11660a = z10;
-        this.f11661b = i10;
-        this.f11662c = z11;
+        this.f11289a = z10;
+        this.f11290b = i10;
+        this.f11291c = z11;
         if (z12) {
             e.a();
         }
@@ -123,7 +123,7 @@ public class NativeJpegTranscoder implements za.c {
         if (rotationOptions == null) {
             rotationOptions = RotationOptions.d();
         }
-        if (za.e.f(rotationOptions, resizeOptions, kVar, this.f11660a) < 8) {
+        if (za.e.f(rotationOptions, resizeOptions, kVar, this.f11289a) < 8) {
             return true;
         }
         return false;
@@ -137,15 +137,15 @@ public class NativeJpegTranscoder implements za.c {
         if (rotationOptions == null) {
             rotationOptions = RotationOptions.d();
         }
-        int b10 = za.a.b(rotationOptions, resizeOptions, kVar, this.f11661b);
+        int b10 = za.a.b(rotationOptions, resizeOptions, kVar, this.f11290b);
         try {
-            int f10 = za.e.f(rotationOptions, resizeOptions, kVar, this.f11660a);
+            int f10 = za.e.f(rotationOptions, resizeOptions, kVar, this.f11289a);
             int a10 = za.e.a(b10);
-            if (this.f11662c) {
+            if (this.f11291c) {
                 f10 = a10;
             }
             InputStream N = kVar.N();
-            if (za.e.f55427b.contains(Integer.valueOf(kVar.a1()))) {
+            if (za.e.f55559b.contains(Integer.valueOf(kVar.b1()))) {
                 f((InputStream) j.h(N, "Cannot transcode from null input stream!"), outputStream, za.e.d(rotationOptions, kVar), f10, num.intValue());
             } else {
                 e((InputStream) j.h(N, "Cannot transcode from null input stream!"), outputStream, za.e.e(rotationOptions, kVar), f10, num.intValue());
@@ -164,7 +164,7 @@ public class NativeJpegTranscoder implements za.c {
 
     @Override // za.c
     public boolean d(fa.c cVar) {
-        if (cVar == fa.b.f24868b) {
+        if (cVar == fa.b.f24079b) {
             return true;
         }
         return false;

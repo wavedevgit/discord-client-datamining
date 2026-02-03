@@ -3,21 +3,21 @@ package r5;
 public class k {
 
     /* renamed from: a  reason: collision with root package name */
-    public final a f48051a;
+    public final a f48253a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final a f48052b;
+    public final a f48254b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final b f48053c;
+    public final b f48255c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final b f48054d;
+    public final b f48256d;
 
     public k(a aVar, a aVar2, b bVar, b bVar2) {
-        this.f48051a = aVar;
-        this.f48052b = aVar2;
-        this.f48053c = bVar;
-        this.f48054d = bVar2;
+        this.f48253a = aVar;
+        this.f48254b = aVar2;
+        this.f48255c = bVar;
+        this.f48256d = bVar2;
     }
 }

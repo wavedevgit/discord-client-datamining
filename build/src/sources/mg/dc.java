@@ -5,7 +5,7 @@ import ui.c;
 final class dc implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final dc f38159a = new dc();
+    static final dc f38139a = new dc();
 
     static {
         c.b a10 = ui.c.a("width");

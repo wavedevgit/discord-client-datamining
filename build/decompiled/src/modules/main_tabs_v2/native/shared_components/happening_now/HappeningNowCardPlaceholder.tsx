@@ -104,15 +104,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardPlaceholder.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun101589: for (var _fun101589_ip = 0;;) switch (_fun101589_ip) {
+        _fun101520: for (var _fun101520_ip = 0;;) switch (_fun101520_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.fullWidth;
                 var4 = var0.panelVariant;
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun101589_ip = 23;
-                    continue _fun101589
+                    _fun101520_ip = 23;
+                    continue _fun101520
                 }
             case 21:
                 var4 = false;
@@ -245,8 +245,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = 'medium';
                 if (!var6) {
-                    _fun101589_ip = 99;
-                    continue _fun101589
+                    _fun101520_ip = 99;
+                    continue _fun101520
                 }
             case 95:
                 var5 = 'full';
@@ -308,4 +308,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HappeningNowCardPlaceholder = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10804, 33, 1297, 671, 3681, 4058, 10805, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10880, 33, 1297, 671, 3711, 4088, 10881, 2]);

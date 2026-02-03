@@ -16,7 +16,7 @@ public final class AFc1qSDK implements AFc1oSDK {
     public AFc1qSDK(@NotNull AFc1hSDK<SharedPreferences> aFc1hSDK) {
         Intrinsics.checkNotNullParameter(aFc1hSDK, "");
         this.getRevenue = aFc1hSDK;
-        this.getCurrencyIso4217Code = ir.l.b(new Function0<SharedPreferences>() { // from class: com.appsflyer.internal.AFc1qSDK.4
+        this.getCurrencyIso4217Code = jr.l.b(new Function0<SharedPreferences>() { // from class: com.appsflyer.internal.AFc1qSDK.4
             {
                 super(0);
             }

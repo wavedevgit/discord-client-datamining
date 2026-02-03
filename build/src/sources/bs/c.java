@@ -1,80 +1,34 @@
 package bs;
 
-import cs.a0;
-import cs.j2;
-import cs.j3;
-import cs.t2;
-import ds.h;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.Member;
-import java.lang.reflect.Method;
-import java.lang.reflect.Type;
+import ds.a0;
+import ds.w0;
+import java.util.ArrayList;
+import java.util.Collection;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.reflect.KFunction;
-import kotlin.reflect.KProperty;
-import kotlin.reflect.KType;
-import kotlin.reflect.e;
-import kotlin.reflect.p;
-/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+import kotlin.reflect.KClass;
+import kotlin.reflect.KProperty1;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class c {
-    public static final Constructor a(KFunction kFunction) {
-        Member member;
-        h A;
-        Intrinsics.checkNotNullParameter(kFunction, "<this>");
-        a0 b10 = j3.b(kFunction);
-        if (b10 != null && (A = b10.A()) != null) {
-            member = A.b();
-        } else {
-            member = null;
+    public static final Collection a(KClass kClass) {
+        Intrinsics.checkNotNullParameter(kClass, "<this>");
+        ArrayList arrayList = new ArrayList();
+        for (Object obj : ((w0.a) ((w0) kClass).J().getValue()).I()) {
+            a0 a0Var = (a0) obj;
+            if (c(a0Var) && (a0Var instanceof KProperty1)) {
+                arrayList.add(obj);
+            }
         }
-        if (!(member instanceof Constructor)) {
-            return null;
-        }
-        return (Constructor) member;
+        return arrayList;
     }
 
-    public static final Field b(KProperty kProperty) {
-        Intrinsics.checkNotNullParameter(kProperty, "<this>");
-        j2 d10 = j3.d(kProperty);
-        if (d10 != null) {
-            return d10.R();
+    private static final boolean b(a0 a0Var) {
+        if (a0Var.D().getExtensionReceiverParameter() != null) {
+            return true;
         }
-        return null;
+        return false;
     }
 
-    public static final Method c(KProperty kProperty) {
-        Intrinsics.checkNotNullParameter(kProperty, "<this>");
-        return d(kProperty.getGetter());
-    }
-
-    public static final Method d(KFunction kFunction) {
-        Member member;
-        h A;
-        Intrinsics.checkNotNullParameter(kFunction, "<this>");
-        a0 b10 = j3.b(kFunction);
-        if (b10 != null && (A = b10.A()) != null) {
-            member = A.b();
-        } else {
-            member = null;
-        }
-        if (!(member instanceof Method)) {
-            return null;
-        }
-        return (Method) member;
-    }
-
-    public static final Method e(e eVar) {
-        Intrinsics.checkNotNullParameter(eVar, "<this>");
-        return d(eVar.getSetter());
-    }
-
-    public static final Type f(KType kType) {
-        Intrinsics.checkNotNullParameter(kType, "<this>");
-        Type javaType = ((t2) kType).getJavaType();
-        if (javaType == null) {
-            return p.f(kType);
-        }
-        return javaType;
+    private static final boolean c(a0 a0Var) {
+        return !b(a0Var);
     }
 }

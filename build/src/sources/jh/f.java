@@ -16,52 +16,52 @@ import androidx.core.view.j;
 public class f extends jh.a {
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f32042g;
+    private final float f31780g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final float f32043h;
+    private final float f31781h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final float f32044i;
+    private final float f31782i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ boolean f32045a;
+        final /* synthetic */ boolean f31783a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ int f32046b;
+        final /* synthetic */ int f31784b;
 
         a(boolean z10, int i10) {
-            this.f32045a = z10;
-            this.f32046b = i10;
+            this.f31783a = z10;
+            this.f31784b = i10;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            f.this.f32027b.setTranslationX(0.0f);
-            f.this.k(0.0f, this.f32045a, this.f32046b);
+            f.this.f31765b.setTranslationX(0.0f);
+            f.this.k(0.0f, this.f31783a, this.f31784b);
         }
     }
 
     public f(View view) {
         super(view);
         Resources resources = view.getResources();
-        this.f32042g = resources.getDimension(yg.d.f54411l);
-        this.f32043h = resources.getDimension(yg.d.f54410k);
-        this.f32044i = resources.getDimension(yg.d.f54412m);
+        this.f31780g = resources.getDimension(yg.d.f54386l);
+        this.f31781h = resources.getDimension(yg.d.f54385k);
+        this.f31782i = resources.getDimension(yg.d.f54387m);
     }
 
     private boolean g(int i10, int i11) {
-        if ((j.b(i10, h0.z(this.f32027b)) & i11) == i11) {
+        if ((j.b(i10, h0.z(this.f31765b)) & i11) == i11) {
             return true;
         }
         return false;
     }
 
     private int i(boolean z10) {
-        ViewGroup.LayoutParams layoutParams = this.f32027b.getLayoutParams();
+        ViewGroup.LayoutParams layoutParams = this.f31765b.getLayoutParams();
         if (layoutParams instanceof ViewGroup.MarginLayoutParams) {
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
             if (z10) {
@@ -77,15 +77,15 @@ public class f extends jh.a {
             return;
         }
         AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.playTogether(ObjectAnimator.ofFloat(this.f32027b, View.SCALE_X, 1.0f), ObjectAnimator.ofFloat(this.f32027b, View.SCALE_Y, 1.0f));
-        View view = this.f32027b;
+        animatorSet.playTogether(ObjectAnimator.ofFloat(this.f31765b, View.SCALE_X, 1.0f), ObjectAnimator.ofFloat(this.f31765b, View.SCALE_Y, 1.0f));
+        View view = this.f31765b;
         if (view instanceof ViewGroup) {
             ViewGroup viewGroup = (ViewGroup) view;
             for (int i10 = 0; i10 < viewGroup.getChildCount(); i10++) {
                 animatorSet.playTogether(ObjectAnimator.ofFloat(viewGroup.getChildAt(i10), View.SCALE_Y, 1.0f));
             }
         }
-        animatorSet.setDuration(this.f32030e);
+        animatorSet.setDuration(this.f31768e);
         animatorSet.start();
     }
 
@@ -97,8 +97,8 @@ public class f extends jh.a {
             z10 = false;
         }
         boolean g10 = g(i10, 3);
-        float width = (this.f32027b.getWidth() * this.f32027b.getScaleX()) + i(g10);
-        View view = this.f32027b;
+        float width = (this.f31765b.getWidth() * this.f31765b.getScaleX()) + i(g10);
+        View view = this.f31765b;
         Property property = View.TRANSLATION_X;
         if (g10) {
             width = -width;
@@ -108,7 +108,7 @@ public class f extends jh.a {
             ofFloat.addUpdateListener(animatorUpdateListener);
         }
         ofFloat.setInterpolator(new h3.b());
-        ofFloat.setDuration(zg.a.c(this.f32028c, this.f32029d, backEventCompat.a()));
+        ofFloat.setDuration(zg.a.c(this.f31766c, this.f31767d, backEventCompat.a()));
         ofFloat.addListener(new a(z10, i10));
         if (animatorListener != null) {
             ofFloat.addListener(animatorListener);
@@ -132,16 +132,16 @@ public class f extends jh.a {
         } else {
             z11 = false;
         }
-        int width = this.f32027b.getWidth();
-        int height = this.f32027b.getHeight();
+        int width = this.f31765b.getWidth();
+        int height = this.f31765b.getHeight();
         float f13 = width;
         if (f13 > 0.0f) {
             float f14 = height;
             if (f14 > 0.0f) {
-                float f15 = this.f32042g / f13;
-                float f16 = this.f32043h / f13;
-                float f17 = this.f32044i / f14;
-                View view = this.f32027b;
+                float f15 = this.f31780g / f13;
+                float f16 = this.f31781h / f13;
+                float f17 = this.f31782i / f14;
+                View view = this.f31765b;
                 if (g10) {
                     f13 = 0.0f;
                 }
@@ -151,10 +151,10 @@ public class f extends jh.a {
                 }
                 float a11 = zg.a.a(0.0f, f16, a10);
                 float f18 = a11 + 1.0f;
-                this.f32027b.setScaleX(f18);
+                this.f31765b.setScaleX(f18);
                 float a12 = 1.0f - zg.a.a(0.0f, f17, a10);
-                this.f32027b.setScaleY(a12);
-                View view2 = this.f32027b;
+                this.f31765b.setScaleY(a12);
+                View view2 = this.f31765b;
                 if (view2 instanceof ViewGroup) {
                     ViewGroup viewGroup = (ViewGroup) view2;
                     for (int i12 = 0; i12 < viewGroup.getChildCount(); i12++) {

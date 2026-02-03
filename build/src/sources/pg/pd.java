@@ -14,14 +14,14 @@ public enum pd implements x1 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f45661d;
+    private final int f45735d;
 
     pd(int i10) {
-        this.f45661d = i10;
+        this.f45735d = i10;
     }
 
     @Override // pg.x1
     public final int zza() {
-        return this.f45661d;
+        return this.f45735d;
     }
 }

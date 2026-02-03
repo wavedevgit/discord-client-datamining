@@ -34,14 +34,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/row_data/ConnectionsRoleTag.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56133: for (var _fun56133_ip = 0;;) switch (_fun56133_ip) {
+        _fun56239: for (var _fun56239_ip = 0;;) switch (_fun56239_ip) {
             case 0:
                 var5 = arg0;
                 var4 = var5.colorString;
                 var0 = null;
                 if (!(var0 == var4)) {
-                    _fun56133_ip = 22;
-                    continue _fun56133
+                    _fun56239_ip = 22;
+                    continue _fun56239
                 }
             case 15:
                 var4 = _closure1_slot4;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0.bind(var6)(var8);
                 var0 = 0.3;
                 if (!(var6 < var0)) {
-                    _fun56133_ip = 147;
-                    continue _fun56133
+                    _fun56239_ip = 147;
+                    continue _fun56239
                 }
             case 119:
                 var6 = _closure1_slot1;

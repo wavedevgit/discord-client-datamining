@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.VERSION_TO_FORCE_RESYNCING_ALL_DATA_KEY = var1;
     var1 = 3;
     var2.VERSION_TO_SKIP_READING_THE_DATABASE = var1;
-    var1 = 'stable-294';
+    var1 = 'stable-295';
     var2.VERSION_TO_FORCE_RESYNCING_ALL_DATA = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

@@ -14,7 +14,7 @@ import com.discord.misc.utilities.intent.PendingIntentUtils;
 import com.discord.reactevents.ReactEvents;
 import com.discord.share.react.events.ShareBroadcastReceiverAppClicked;
 import com.facebook.react.bridge.ReactApplicationContext;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -50,7 +50,7 @@ public final class ShareBroadcastReceiver extends BroadcastReceiver {
             Intrinsics.checkNotNullParameter(context, "context");
             Intent intent = new Intent(ShareBroadcastReceiver.SHARE_SHEET_CLICK);
             intent.putExtra(ShareBroadcastReceiver.SHARE_SHEET_LOCATION, str);
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
             IntentSender intentSender = PendingIntent.getBroadcast(context, 0, intent, PendingIntentUtils.immutablePendingIntentFlag$default(PendingIntentUtils.INSTANCE, 0, 1, null)).getIntentSender();
             Intrinsics.checkNotNullExpressionValue(intentSender, "getIntentSender(...)");
             return intentSender;

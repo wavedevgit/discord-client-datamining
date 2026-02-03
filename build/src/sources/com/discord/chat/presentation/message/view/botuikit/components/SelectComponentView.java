@@ -50,8 +50,8 @@ import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.views.text.ReactFontManager;
 import com.google.android.flexbox.FlexboxLayout;
 import com.google.android.material.textview.MaterialTextView;
-import ir.p;
 import java.util.List;
+import jr.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
@@ -154,7 +154,7 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
         }
         com.facebook.drawee.controller.a build = ((PipelineDraweeControllerBuilder) e9.d.g().E(I.a())).build();
         Intrinsics.checkNotNullExpressionValue(build, "build(...)");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(getContext().getResources()).w(ScalingUtils$ScaleType.f11037e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(getContext().getResources()).w(ScalingUtils$ScaleType.f10666e);
         Intrinsics.checkNotNullExpressionValue(w10, "setActualImageScaleType(...)");
         if (num != null) {
             w10.v(new PorterDuffColorFilter(num.intValue(), PorterDuff.Mode.SRC_IN));
@@ -356,7 +356,7 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
         MessageComponentSelectViewBinding inflate = MessageComponentSelectViewBinding.inflate(LayoutInflater.from(context), this);
         Intrinsics.checkNotNullExpressionValue(inflate, "inflate(...)");
         this.binding = inflate;
-        this.progressDots$delegate = ir.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.k
+        this.progressDots$delegate = jr.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.k
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 ProgressDots progressDots_delegate$lambda$0;
@@ -364,7 +364,7 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
                 return progressDots_delegate$lambda$0;
             }
         });
-        this.postProcessor$delegate = ir.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.l
+        this.postProcessor$delegate = jr.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.l
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 BasePostprocessor postProcessor_delegate$lambda$1;

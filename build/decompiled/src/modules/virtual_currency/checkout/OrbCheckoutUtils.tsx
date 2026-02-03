@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/virtual_currency/checkout/OrbCheckoutUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun86637: for (var _fun86637_ip = 0;;) switch (_fun86637_ip) {
+        _fun86993: for (var _fun86993_ip = 0;;) switch (_fun86993_ip) {
             case 0:
                 var4 = arg0;
                 var8 = _closure1_slot0;
@@ -76,15 +76,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot3;
                 var3 = var3.ORB_PROFILE_BADGE;
                 if (!(var4 !== var3)) {
-                    _fun86637_ip = 275;
-                    continue _fun86637
+                    _fun86993_ip = 275;
+                    continue _fun86993
                 }
             case 205:
                 var3 = _closure1_slot3;
                 var3 = var3.FRACTIONAL_PREMIUM;
                 if (!(var4 === var3)) {
-                    _fun86637_ip = 329;
-                    continue _fun86637
+                    _fun86993_ip = 329;
+                    continue _fun86993
                 }
             case 219:
                 var8 = _closure1_slot0;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.t;
                 var3 = var3.FhJ74j;
                 var1 = var4.bind(var5)(var3);
-                _fun86637_ip = 329;
-                continue _fun86637;
+                _fun86993_ip = 329;
+                continue _fun86993;
             case 275:
                 var5 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -123,4 +123,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getOrbCheckoutDisclaimerMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3244, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3274, 1234, 2]);

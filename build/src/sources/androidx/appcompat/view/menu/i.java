@@ -12,40 +12,40 @@ import androidx.appcompat.view.menu.j;
 public class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f1347a;
+    private final Context f1391a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e f1348b;
+    private final e f1392b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f1349c;
+    private final boolean f1393c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f1350d;
+    private final int f1394d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f1351e;
+    private final int f1395e;
 
     /* renamed from: f  reason: collision with root package name */
-    private View f1352f;
+    private View f1396f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f1353g;
+    private int f1397g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f1354h;
+    private boolean f1398h;
 
     /* renamed from: i  reason: collision with root package name */
-    private j.a f1355i;
+    private j.a f1399i;
 
     /* renamed from: j  reason: collision with root package name */
-    private h f1356j;
+    private h f1400j;
 
     /* renamed from: k  reason: collision with root package name */
-    private PopupWindow.OnDismissListener f1357k;
+    private PopupWindow.OnDismissListener f1401k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final PopupWindow.OnDismissListener f1358l;
+    private final PopupWindow.OnDismissListener f1402l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements PopupWindow.OnDismissListener {
@@ -64,20 +64,20 @@ public class i {
 
     private h a() {
         h lVar;
-        Display defaultDisplay = ((WindowManager) this.f1347a.getSystemService("window")).getDefaultDisplay();
+        Display defaultDisplay = ((WindowManager) this.f1391a.getSystemService("window")).getDefaultDisplay();
         Point point = new Point();
         defaultDisplay.getRealSize(point);
-        if (Math.min(point.x, point.y) >= this.f1347a.getResources().getDimensionPixelSize(f.d.f24104a)) {
-            lVar = new b(this.f1347a, this.f1352f, this.f1350d, this.f1351e, this.f1349c);
+        if (Math.min(point.x, point.y) >= this.f1391a.getResources().getDimensionPixelSize(f.d.f23315a)) {
+            lVar = new b(this.f1391a, this.f1396f, this.f1394d, this.f1395e, this.f1393c);
         } else {
-            lVar = new l(this.f1347a, this.f1348b, this.f1352f, this.f1350d, this.f1351e, this.f1349c);
+            lVar = new l(this.f1391a, this.f1392b, this.f1396f, this.f1394d, this.f1395e, this.f1393c);
         }
-        lVar.i(this.f1348b);
-        lVar.s(this.f1358l);
-        lVar.m(this.f1352f);
-        lVar.c(this.f1355i);
-        lVar.p(this.f1354h);
-        lVar.q(this.f1353g);
+        lVar.i(this.f1392b);
+        lVar.s(this.f1402l);
+        lVar.m(this.f1396f);
+        lVar.c(this.f1399i);
+        lVar.p(this.f1398h);
+        lVar.q(this.f1397g);
         return lVar;
     }
 
@@ -85,12 +85,12 @@ public class i {
         h c10 = c();
         c10.t(z11);
         if (z10) {
-            if ((androidx.core.view.j.b(this.f1353g, this.f1352f.getLayoutDirection()) & 7) == 5) {
-                i10 -= this.f1352f.getWidth();
+            if ((androidx.core.view.j.b(this.f1397g, this.f1396f.getLayoutDirection()) & 7) == 5) {
+                i10 -= this.f1396f.getWidth();
             }
             c10.r(i10);
             c10.u(i11);
-            int i12 = (int) ((this.f1347a.getResources().getDisplayMetrics().density * 48.0f) / 2.0f);
+            int i12 = (int) ((this.f1391a.getResources().getDisplayMetrics().density * 48.0f) / 2.0f);
             c10.o(new Rect(i10 - i12, i11 - i12, i10 + i12, i11 + i12));
         }
         c10.show();
@@ -98,19 +98,19 @@ public class i {
 
     public void b() {
         if (d()) {
-            this.f1356j.dismiss();
+            this.f1400j.dismiss();
         }
     }
 
     public h c() {
-        if (this.f1356j == null) {
-            this.f1356j = a();
+        if (this.f1400j == null) {
+            this.f1400j = a();
         }
-        return this.f1356j;
+        return this.f1400j;
     }
 
     public boolean d() {
-        h hVar = this.f1356j;
+        h hVar = this.f1400j;
         if (hVar != null && hVar.isShowing()) {
             return true;
         }
@@ -119,36 +119,36 @@ public class i {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void e() {
-        this.f1356j = null;
-        PopupWindow.OnDismissListener onDismissListener = this.f1357k;
+        this.f1400j = null;
+        PopupWindow.OnDismissListener onDismissListener = this.f1401k;
         if (onDismissListener != null) {
             onDismissListener.onDismiss();
         }
     }
 
     public void f(View view) {
-        this.f1352f = view;
+        this.f1396f = view;
     }
 
     public void g(boolean z10) {
-        this.f1354h = z10;
-        h hVar = this.f1356j;
+        this.f1398h = z10;
+        h hVar = this.f1400j;
         if (hVar != null) {
             hVar.p(z10);
         }
     }
 
     public void h(int i10) {
-        this.f1353g = i10;
+        this.f1397g = i10;
     }
 
     public void i(PopupWindow.OnDismissListener onDismissListener) {
-        this.f1357k = onDismissListener;
+        this.f1401k = onDismissListener;
     }
 
     public void j(j.a aVar) {
-        this.f1355i = aVar;
-        h hVar = this.f1356j;
+        this.f1399i = aVar;
+        h hVar = this.f1400j;
         if (hVar != null) {
             hVar.c(aVar);
         }
@@ -165,7 +165,7 @@ public class i {
         if (d()) {
             return true;
         }
-        if (this.f1352f == null) {
+        if (this.f1396f == null) {
             return false;
         }
         l(0, 0, false, false);
@@ -176,7 +176,7 @@ public class i {
         if (d()) {
             return true;
         }
-        if (this.f1352f == null) {
+        if (this.f1396f == null) {
             return false;
         }
         l(i10, i11, true, true);
@@ -184,13 +184,13 @@ public class i {
     }
 
     public i(Context context, e eVar, View view, boolean z10, int i10, int i11) {
-        this.f1353g = 8388611;
-        this.f1358l = new a();
-        this.f1347a = context;
-        this.f1348b = eVar;
-        this.f1352f = view;
-        this.f1349c = z10;
-        this.f1350d = i10;
-        this.f1351e = i11;
+        this.f1397g = 8388611;
+        this.f1402l = new a();
+        this.f1391a = context;
+        this.f1392b = eVar;
+        this.f1396f = view;
+        this.f1393c = z10;
+        this.f1394d = i10;
+        this.f1395e = i11;
     }
 }

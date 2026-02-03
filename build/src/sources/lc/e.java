@@ -6,109 +6,109 @@ import com.google.android.exoplayer2.v1;
 public class e implements a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final le.p f37074a;
+    private final le.p f37188a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f37075b;
+    private final long f37189b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f37076c;
+    private final long f37190c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f37077d;
+    private final long f37191d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f37078e;
+    private final long f37192e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f37079f;
+    private final int f37193f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f37080g;
+    private final boolean f37194g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final long f37081h;
+    private final long f37195h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f37082i;
+    private final boolean f37196i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f37083j;
+    private int f37197j;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f37084k;
+    private boolean f37198k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private le.p f37085a;
+        private le.p f37199a;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f37086b = 50000;
+        private int f37200b = 50000;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f37087c = 50000;
+        private int f37201c = 50000;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f37088d = 2500;
+        private int f37202d = 2500;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f37089e = 5000;
+        private int f37203e = 5000;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f37090f = -1;
+        private int f37204f = -1;
 
         /* renamed from: g  reason: collision with root package name */
-        private boolean f37091g = false;
+        private boolean f37205g = false;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f37092h = 0;
+        private int f37206h = 0;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f37093i = false;
+        private boolean f37207i = false;
 
         /* renamed from: j  reason: collision with root package name */
-        private boolean f37094j;
+        private boolean f37208j;
 
         public e a() {
-            ne.a.g(!this.f37094j);
-            this.f37094j = true;
-            if (this.f37085a == null) {
-                this.f37085a = new le.p(true, 65536);
+            ne.a.g(!this.f37208j);
+            this.f37208j = true;
+            if (this.f37199a == null) {
+                this.f37199a = new le.p(true, 65536);
             }
-            return new e(this.f37085a, this.f37086b, this.f37087c, this.f37088d, this.f37089e, this.f37090f, this.f37091g, this.f37092h, this.f37093i);
+            return new e(this.f37199a, this.f37200b, this.f37201c, this.f37202d, this.f37203e, this.f37204f, this.f37205g, this.f37206h, this.f37207i);
         }
 
         public a b(le.p pVar) {
-            ne.a.g(!this.f37094j);
-            this.f37085a = pVar;
+            ne.a.g(!this.f37208j);
+            this.f37199a = pVar;
             return this;
         }
 
         public a c(int i10, int i11, int i12, int i13) {
-            ne.a.g(!this.f37094j);
+            ne.a.g(!this.f37208j);
             e.b(i12, 0, "bufferForPlaybackMs", "0");
             e.b(i13, 0, "bufferForPlaybackAfterRebufferMs", "0");
             e.b(i10, i12, "minBufferMs", "bufferForPlaybackMs");
             e.b(i10, i13, "minBufferMs", "bufferForPlaybackAfterRebufferMs");
             e.b(i11, i10, "maxBufferMs", "minBufferMs");
-            this.f37086b = i10;
-            this.f37087c = i11;
-            this.f37088d = i12;
-            this.f37089e = i13;
+            this.f37200b = i10;
+            this.f37201c = i11;
+            this.f37202d = i12;
+            this.f37203e = i13;
             return this;
         }
 
         public a d(boolean z10) {
-            ne.a.g(!this.f37094j);
-            this.f37091g = z10;
+            ne.a.g(!this.f37208j);
+            this.f37205g = z10;
             return this;
         }
 
         public a e(int i10) {
-            ne.a.g(!this.f37094j);
-            this.f37090f = i10;
+            ne.a.g(!this.f37208j);
+            this.f37204f = i10;
             return this;
         }
     }
@@ -150,14 +150,14 @@ public class e implements a0 {
     }
 
     private void n(boolean z10) {
-        int i10 = this.f37079f;
+        int i10 = this.f37193f;
         if (i10 == -1) {
             i10 = 13107200;
         }
-        this.f37083j = i10;
-        this.f37084k = false;
+        this.f37197j = i10;
+        this.f37198k = false;
         if (z10) {
-            this.f37074a.g();
+            this.f37188a.g();
         }
     }
 
@@ -168,12 +168,12 @@ public class e implements a0 {
 
     @Override // lc.a0
     public boolean d() {
-        return this.f37082i;
+        return this.f37196i;
     }
 
     @Override // lc.a0
     public long e() {
-        return this.f37081h;
+        return this.f37195h;
     }
 
     @Override // lc.a0
@@ -181,15 +181,15 @@ public class e implements a0 {
         long j12;
         long j02 = ne.w0.j0(j10, f10);
         if (z10) {
-            j12 = this.f37078e;
+            j12 = this.f37192e;
         } else {
-            j12 = this.f37077d;
+            j12 = this.f37191d;
         }
         if (j11 != -9223372036854775807L) {
             j12 = Math.min(j11 / 2, j12);
         }
         if (j12 > 0 && j02 < j12) {
-            if (this.f37080g || this.f37074a.f() < this.f37083j) {
+            if (this.f37194g || this.f37188a.f() < this.f37197j) {
                 return false;
             }
             return true;
@@ -199,7 +199,7 @@ public class e implements a0 {
 
     @Override // lc.a0
     public le.b g() {
-        return this.f37074a;
+        return this.f37188a;
     }
 
     @Override // lc.a0
@@ -209,12 +209,12 @@ public class e implements a0 {
 
     @Override // lc.a0
     public void i(Timeline timeline, qd.q qVar, v1[] v1VarArr, qd.w0 w0Var, com.google.android.exoplayer2.trackselection.g[] gVarArr) {
-        int i10 = this.f37079f;
+        int i10 = this.f37193f;
         if (i10 == -1) {
             i10 = l(v1VarArr, gVarArr);
         }
-        this.f37083j = i10;
-        this.f37074a.h(i10);
+        this.f37197j = i10;
+        this.f37188a.h(i10);
     }
 
     @Override // lc.a0
@@ -226,27 +226,27 @@ public class e implements a0 {
     public boolean k(long j10, long j11, float f10) {
         boolean z10;
         boolean z11 = true;
-        if (this.f37074a.f() >= this.f37083j) {
+        if (this.f37188a.f() >= this.f37197j) {
             z10 = true;
         } else {
             z10 = false;
         }
-        long j12 = this.f37075b;
+        long j12 = this.f37189b;
         if (f10 > 1.0f) {
-            j12 = Math.min(ne.w0.e0(j12, f10), this.f37076c);
+            j12 = Math.min(ne.w0.e0(j12, f10), this.f37190c);
         }
         if (j11 < Math.max(j12, 500000L)) {
-            if (!this.f37080g && z10) {
+            if (!this.f37194g && z10) {
                 z11 = false;
             }
-            this.f37084k = z11;
+            this.f37198k = z11;
             if (!z11 && j11 < 500000) {
                 ne.y.i("DefaultLoadControl", "Target buffer size reached with less than 500ms of buffered media data.");
             }
-        } else if (j11 >= this.f37076c || z10) {
-            this.f37084k = false;
+        } else if (j11 >= this.f37190c || z10) {
+            this.f37198k = false;
         }
-        return this.f37084k;
+        return this.f37198k;
     }
 
     protected int l(v1[] v1VarArr, com.google.android.exoplayer2.trackselection.g[] gVarArr) {
@@ -266,15 +266,15 @@ public class e implements a0 {
         b(i10, i13, "minBufferMs", "bufferForPlaybackAfterRebufferMs");
         b(i11, i10, "maxBufferMs", "minBufferMs");
         b(i15, 0, "backBufferDurationMs", "0");
-        this.f37074a = pVar;
-        this.f37075b = ne.w0.K0(i10);
-        this.f37076c = ne.w0.K0(i11);
-        this.f37077d = ne.w0.K0(i12);
-        this.f37078e = ne.w0.K0(i13);
-        this.f37079f = i14;
-        this.f37083j = i14 == -1 ? 13107200 : i14;
-        this.f37080g = z10;
-        this.f37081h = ne.w0.K0(i15);
-        this.f37082i = z11;
+        this.f37188a = pVar;
+        this.f37189b = ne.w0.K0(i10);
+        this.f37190c = ne.w0.K0(i11);
+        this.f37191d = ne.w0.K0(i12);
+        this.f37192e = ne.w0.K0(i13);
+        this.f37193f = i14;
+        this.f37197j = i14 == -1 ? 13107200 : i14;
+        this.f37194g = z10;
+        this.f37195h = ne.w0.K0(i15);
+        this.f37196i = z11;
     }
 }

@@ -27,43 +27,43 @@ public final class f extends w implements p0 {
 
         public a q(boolean z10) {
             k();
-            ((f) this.f3831e).U(z10);
+            ((f) this.f3875e).U(z10);
             return this;
         }
 
         public a r(double d10) {
             k();
-            ((f) this.f3831e).V(d10);
+            ((f) this.f3875e).V(d10);
             return this;
         }
 
         public a s(float f10) {
             k();
-            ((f) this.f3831e).W(f10);
+            ((f) this.f3875e).W(f10);
             return this;
         }
 
         public a t(int i10) {
             k();
-            ((f) this.f3831e).X(i10);
+            ((f) this.f3875e).X(i10);
             return this;
         }
 
         public a u(long j10) {
             k();
-            ((f) this.f3831e).Y(j10);
+            ((f) this.f3875e).Y(j10);
             return this;
         }
 
         public a v(String str) {
             k();
-            ((f) this.f3831e).Z(str);
+            ((f) this.f3875e).Z(str);
             return this;
         }
 
         public a w(e.a aVar) {
             k();
-            ((f) this.f3831e).a0(aVar);
+            ((f) this.f3875e).a0(aVar);
             return this;
         }
 
@@ -85,10 +85,10 @@ public final class f extends w implements p0 {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f53919d;
+        private final int f53894d;
 
         b(int i10) {
-            this.f53919d = i10;
+            this.f53894d = i10;
         }
 
         public static b a(int i10) {
@@ -231,7 +231,7 @@ public final class f extends w implements p0 {
     @Override // androidx.datastore.preferences.protobuf.w
     protected final Object m(w.d dVar, Object obj, Object obj2) {
         w0 w0Var;
-        switch (c.f53908a[dVar.ordinal()]) {
+        switch (c.f53883a[dVar.ordinal()]) {
             case 1:
                 return new f();
             case 2:

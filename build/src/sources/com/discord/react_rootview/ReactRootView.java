@@ -30,7 +30,7 @@ public final class ReactRootView extends com.facebook.react.ReactRootView implem
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit dispatchDraw$lambda$0(ReactRootView reactRootView, Canvas canvas) {
         super.dispatchDraw(canvas);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // com.facebook.react.ReactRootView, android.view.ViewGroup, android.view.View

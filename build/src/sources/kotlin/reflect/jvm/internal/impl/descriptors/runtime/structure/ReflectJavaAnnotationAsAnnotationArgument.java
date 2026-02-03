@@ -10,18 +10,18 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaAnnotationAsAnnotationArgument extends ReflectJavaAnnotationArgument implements JavaAnnotationAsAnnotationArgument {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Annotation f33925b;
+    private final Annotation f33701b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ReflectJavaAnnotationAsAnnotationArgument(Name name, @NotNull Annotation annotation) {
         super(name, null);
         Intrinsics.checkNotNullParameter(annotation, "annotation");
-        this.f33925b = annotation;
+        this.f33701b = annotation;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationAsAnnotationArgument
     @NotNull
     public JavaAnnotation getAnnotation() {
-        return new ReflectJavaAnnotation(this.f33925b);
+        return new ReflectJavaAnnotation(this.f33701b);
     }
 }

@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope;
 public class f implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyPackageViewDescriptorImpl f33882d;
+    private final LazyPackageViewDescriptorImpl f33658d;
 
     public f(LazyPackageViewDescriptorImpl lazyPackageViewDescriptorImpl) {
-        this.f33882d = lazyPackageViewDescriptorImpl;
+        this.f33658d = lazyPackageViewDescriptorImpl;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         MemberScope h10;
-        h10 = LazyPackageViewDescriptorImpl.h(this.f33882d);
+        h10 = LazyPackageViewDescriptorImpl.h(this.f33658d);
         return h10;
     }
 }

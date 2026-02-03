@@ -10,6 +10,6 @@ public class g extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public void s() {
-        this.f16536b.W(null);
+        this.f16165b.W(null);
     }
 }

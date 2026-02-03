@@ -3,34 +3,34 @@ package com.google.android.play.core.assetpacks;
 final class r0 extends b {
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f16985c;
+    private final int f16614c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f16986d;
+    private final String f16615d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f16987e;
+    private final String f16616e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r0(int i10, String str, String str2) {
-        this.f16985c = i10;
-        this.f16986d = str;
-        this.f16987e = str2;
+        this.f16614c = i10;
+        this.f16615d = str;
+        this.f16616e = str2;
     }
 
     @Override // com.google.android.play.core.assetpacks.b
     public final String b() {
-        return this.f16987e;
+        return this.f16616e;
     }
 
     @Override // com.google.android.play.core.assetpacks.b
     public final int c() {
-        return this.f16985c;
+        return this.f16614c;
     }
 
     @Override // com.google.android.play.core.assetpacks.b
     public final String d() {
-        return this.f16986d;
+        return this.f16615d;
     }
 
     public final boolean equals(Object obj) {
@@ -41,7 +41,7 @@ final class r0 extends b {
         }
         if (obj instanceof b) {
             b bVar = (b) obj;
-            if (this.f16985c == bVar.c() && ((str = this.f16986d) != null ? str.equals(bVar.d()) : bVar.d() == null) && ((str2 = this.f16987e) != null ? str2.equals(bVar.b()) : bVar.b() == null)) {
+            if (this.f16614c == bVar.c() && ((str = this.f16615d) != null ? str.equals(bVar.d()) : bVar.d() == null) && ((str2 = this.f16616e) != null ? str2.equals(bVar.b()) : bVar.b() == null)) {
                 return true;
             }
         }
@@ -50,15 +50,15 @@ final class r0 extends b {
 
     public final int hashCode() {
         int hashCode;
-        String str = this.f16986d;
+        String str = this.f16615d;
         int i10 = 0;
         if (str == null) {
             hashCode = 0;
         } else {
             hashCode = str.hashCode();
         }
-        int i11 = this.f16985c;
-        String str2 = this.f16987e;
+        int i11 = this.f16614c;
+        String str2 = this.f16616e;
         if (str2 != null) {
             i10 = str2.hashCode();
         }
@@ -66,6 +66,6 @@ final class r0 extends b {
     }
 
     public final String toString() {
-        return "AssetPackLocation{packStorageMethod=" + this.f16985c + ", path=" + this.f16986d + ", assetsPath=" + this.f16987e + "}";
+        return "AssetPackLocation{packStorageMethod=" + this.f16614c + ", path=" + this.f16615d + ", assetsPath=" + this.f16616e + "}";
     }
 }

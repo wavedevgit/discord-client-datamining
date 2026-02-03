@@ -5,7 +5,7 @@ import ui.c;
 final class gb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final gb f45272a = new gb();
+    static final gb f45346a = new gb();
 
     static {
         c.b a10 = ui.c.a("x");

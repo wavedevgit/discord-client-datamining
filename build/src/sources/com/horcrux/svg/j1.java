@@ -15,56 +15,56 @@ public class j1 extends c0 {
     double A;
 
     /* renamed from: q  reason: collision with root package name */
-    SVGLength f17958q;
+    SVGLength f17587q;
 
     /* renamed from: r  reason: collision with root package name */
-    SVGLength f17959r;
+    SVGLength f17588r;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f17960s;
+    private String f17589s;
 
     /* renamed from: t  reason: collision with root package name */
-    e1 f17961t;
+    e1 f17590t;
 
     /* renamed from: u  reason: collision with root package name */
-    private y0 f17962u;
+    private y0 f17591u;
 
     /* renamed from: v  reason: collision with root package name */
-    private ArrayList f17963v;
+    private ArrayList f17592v;
 
     /* renamed from: w  reason: collision with root package name */
-    private ArrayList f17964w;
+    private ArrayList f17593w;
 
     /* renamed from: x  reason: collision with root package name */
-    private ArrayList f17965x;
+    private ArrayList f17594x;
 
     /* renamed from: y  reason: collision with root package name */
-    private ArrayList f17966y;
+    private ArrayList f17595y;
 
     /* renamed from: z  reason: collision with root package name */
-    private ArrayList f17967z;
+    private ArrayList f17596z;
 
     public j1(ReactContext reactContext) {
         super(reactContext);
-        this.f17958q = null;
-        this.f17959r = null;
-        this.f17960s = null;
-        this.f17961t = e1.spacing;
+        this.f17587q = null;
+        this.f17588r = null;
+        this.f17589s = null;
+        this.f17590t = e1.spacing;
         this.A = Double.NaN;
     }
 
     public void A(Dynamic dynamic) {
-        this.f17964w = SVGLength.a(dynamic);
+        this.f17593w = SVGLength.a(dynamic);
         invalidate();
     }
 
     public void B(Dynamic dynamic) {
-        this.f17965x = SVGLength.a(dynamic);
+        this.f17594x = SVGLength.a(dynamic);
         invalidate();
     }
 
     public void C(Dynamic dynamic) {
-        this.f17959r = SVGLength.b(dynamic);
+        this.f17588r = SVGLength.b(dynamic);
         invalidate();
     }
 
@@ -74,18 +74,18 @@ public class j1 extends c0 {
             String trim = c10.trim();
             int lastIndexOf = trim.lastIndexOf(32);
             try {
-                this.f17962u = y0.d(trim.substring(lastIndexOf));
+                this.f17591u = y0.d(trim.substring(lastIndexOf));
             } catch (IllegalArgumentException unused) {
-                this.f17962u = y0.baseline;
+                this.f17591u = y0.baseline;
             }
             try {
-                this.f17960s = trim.substring(0, lastIndexOf);
+                this.f17589s = trim.substring(0, lastIndexOf);
             } catch (IndexOutOfBoundsException unused2) {
-                this.f17960s = null;
+                this.f17589s = null;
             }
         } else {
-            this.f17962u = y0.baseline;
-            this.f17960s = null;
+            this.f17591u = y0.baseline;
+            this.f17589s = null;
         }
         invalidate();
     }
@@ -134,7 +134,7 @@ public class j1 extends c0 {
         } else {
             z10 = false;
         }
-        g().p(z10, this, this.f17852d, this.f17963v, this.f17964w, this.f17966y, this.f17967z, this.f17965x);
+        g().p(z10, this, this.f17481d, this.f17592v, this.f17593w, this.f17595y, this.f17596z, this.f17594x);
     }
 
     @Override // com.horcrux.svg.VirtualView, android.view.View
@@ -149,32 +149,32 @@ public class j1 extends c0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public y0 n() {
         y0 y0Var;
-        if (this.f17962u == null) {
+        if (this.f17591u == null) {
             for (ViewParent parent = getParent(); parent != null; parent = parent.getParent()) {
-                if ((parent instanceof j1) && (y0Var = ((j1) parent).f17962u) != null) {
-                    this.f17962u = y0Var;
+                if ((parent instanceof j1) && (y0Var = ((j1) parent).f17591u) != null) {
+                    this.f17591u = y0Var;
                     return y0Var;
                 }
             }
         }
-        if (this.f17962u == null) {
-            this.f17962u = y0.baseline;
+        if (this.f17591u == null) {
+            this.f17591u = y0.baseline;
         }
-        return this.f17962u;
+        return this.f17591u;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public String o() {
         String str;
-        if (this.f17960s == null) {
+        if (this.f17589s == null) {
             for (ViewParent parent = getParent(); parent != null; parent = parent.getParent()) {
-                if ((parent instanceof j1) && (str = ((j1) parent).f17960s) != null) {
-                    this.f17960s = str;
+                if ((parent instanceof j1) && (str = ((j1) parent).f17589s) != null) {
+                    this.f17589s = str;
                     return str;
                 }
             }
         }
-        return this.f17960s;
+        return this.f17589s;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -207,10 +207,10 @@ public class j1 extends c0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j1 r() {
-        ArrayList arrayList = g().f17802a;
+        ArrayList arrayList = g().f17431a;
         ViewParent parent = getParent();
         j1 j1Var = this;
-        for (int size = arrayList.size() - 1; size >= 0 && (parent instanceof j1) && ((y) arrayList.get(size)).f18107j != c1.start && j1Var.f17963v == null; size--) {
+        for (int size = arrayList.size() - 1; size >= 0 && (parent instanceof j1) && ((y) arrayList.get(size)).f17736j != c1.start && j1Var.f17592v == null; size--) {
             j1Var = (j1) parent;
             parent = j1Var.getParent();
         }
@@ -229,37 +229,37 @@ public class j1 extends c0 {
     }
 
     public void t(Dynamic dynamic) {
-        this.f17960s = SVGLength.c(dynamic);
+        this.f17589s = SVGLength.c(dynamic);
         invalidate();
     }
 
     public void u(Dynamic dynamic) {
-        this.f17966y = SVGLength.a(dynamic);
+        this.f17595y = SVGLength.a(dynamic);
         invalidate();
     }
 
     public void v(Dynamic dynamic) {
-        this.f17967z = SVGLength.a(dynamic);
+        this.f17596z = SVGLength.a(dynamic);
         invalidate();
     }
 
     public void w(Dynamic dynamic) {
-        this.f17958q = SVGLength.b(dynamic);
+        this.f17587q = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void x(String str) {
-        this.f17961t = e1.valueOf(str);
+        this.f17590t = e1.valueOf(str);
         invalidate();
     }
 
     public void y(String str) {
-        this.f17962u = y0.d(str);
+        this.f17591u = y0.d(str);
         invalidate();
     }
 
     public void z(Dynamic dynamic) {
-        this.f17963v = SVGLength.a(dynamic);
+        this.f17592v = SVGLength.a(dynamic);
         invalidate();
     }
 }

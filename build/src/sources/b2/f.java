@@ -9,18 +9,18 @@ public abstract class f {
     public static final class a extends m0 {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f7149d;
+        private int f6200d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ SparseBooleanArray f7150e;
+        final /* synthetic */ SparseBooleanArray f6201e;
 
         a(SparseBooleanArray sparseBooleanArray) {
-            this.f7150e = sparseBooleanArray;
+            this.f6201e = sparseBooleanArray;
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f7149d < this.f7150e.size()) {
+            if (this.f6200d < this.f6201e.size()) {
                 return true;
             }
             return false;
@@ -28,9 +28,9 @@ public abstract class f {
 
         @Override // kotlin.collections.m0
         public int nextInt() {
-            SparseBooleanArray sparseBooleanArray = this.f7150e;
-            int i10 = this.f7149d;
-            this.f7149d = i10 + 1;
+            SparseBooleanArray sparseBooleanArray = this.f6201e;
+            int i10 = this.f6200d;
+            this.f6200d = i10 + 1;
             return sparseBooleanArray.keyAt(i10);
         }
     }

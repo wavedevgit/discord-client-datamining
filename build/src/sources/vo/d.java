@@ -1,28 +1,48 @@
 package vo;
 
 import android.content.Context;
-import tq.h;
+import android.content.Intent;
+import android.net.Uri;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.contract.ActivityResultContract;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements tq.d {
+public abstract class d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final h f51788a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a extends ActivityResultContract {
+        a() {
+        }
 
-    public d(h hVar) {
-        this.f51788a = hVar;
+        @Override // androidx.activity.result.contract.ActivityResultContract
+        /* renamed from: a */
+        public Intent createIntent(Context context, vo.a input) {
+            Intrinsics.checkNotNullParameter(context, "context");
+            Intrinsics.checkNotNullParameter(input, "input");
+            Intent intent = input.a().f1925a;
+            Intrinsics.checkNotNullExpressionValue(intent, "intent");
+            intent.setData(Uri.parse(input.b()));
+            return intent;
+        }
+
+        @Override // androidx.activity.result.contract.ActivityResultContract
+        /* renamed from: b */
+        public Integer parseResult(int i10, Intent intent) {
+            return Integer.valueOf(i10);
+        }
     }
 
-    public static d a(h hVar) {
-        return new d(hVar);
+    public static final f0 b() {
+        return new f0(new a(), new ActivityResultCallback() { // from class: vo.c
+            @Override // androidx.activity.result.ActivityResultCallback
+            public final void a(Object obj) {
+                d.c(((Integer) obj).intValue());
+            }
+        });
     }
 
-    public static b c(Context context) {
-        return new b(context);
-    }
-
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public b get() {
-        return c((Context) this.f51788a.get());
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void c(int i10) {
+        new f().a(i10);
     }
 }

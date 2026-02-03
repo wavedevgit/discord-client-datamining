@@ -5,19 +5,19 @@ import android.graphics.drawable.Drawable;
 public final class j extends h implements g {
 
     /* renamed from: o  reason: collision with root package name */
-    private Drawable f48884o;
+    private Drawable f48938o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f48885p;
+    private boolean f48939p;
 
     public j(Drawable drawable) {
-        this.f48884o = drawable;
+        this.f48938o = drawable;
     }
 
     @Override // sa.g
     public Drawable F1() {
         Drawable.ConstantState constantState;
-        Drawable drawable = this.f48884o;
+        Drawable drawable = this.f48938o;
         if (drawable != null && (constantState = drawable.getConstantState()) != null) {
             return constantState.newDrawable();
         }
@@ -26,13 +26,13 @@ public final class j extends h implements g {
 
     @Override // sa.e, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f48884o = null;
-        this.f48885p = true;
+        this.f48938o = null;
+        this.f48939p = true;
     }
 
     @Override // sa.e, com.facebook.imagepipeline.image.ImageInfo
     public int getHeight() {
-        Drawable drawable = this.f48884o;
+        Drawable drawable = this.f48938o;
         if (drawable != null) {
             Integer valueOf = Integer.valueOf(drawable.getIntrinsicHeight());
             if (valueOf.intValue() < 0) {
@@ -48,7 +48,7 @@ public final class j extends h implements g {
 
     @Override // sa.e, com.facebook.imagepipeline.image.ImageInfo
     public int getWidth() {
-        Drawable drawable = this.f48884o;
+        Drawable drawable = this.f48938o;
         if (drawable != null) {
             Integer valueOf = Integer.valueOf(drawable.getIntrinsicWidth());
             if (valueOf.intValue() < 0) {
@@ -64,7 +64,7 @@ public final class j extends h implements g {
 
     @Override // sa.e
     public boolean isClosed() {
-        return this.f48885p;
+        return this.f48939p;
     }
 
     @Override // sa.e

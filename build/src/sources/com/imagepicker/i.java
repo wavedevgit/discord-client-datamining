@@ -11,10 +11,10 @@ import java.io.IOException;
 public class i extends f {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f18168d;
+    private int f17797d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f18169e;
+    private int f17798e;
 
     public i(Uri uri, Context context) {
         MediaMetadataRetriever mediaMetadataRetriever = new MediaMetadataRetriever();
@@ -24,17 +24,17 @@ public class i extends f {
         String extractMetadata2 = mediaMetadataRetriever.extractMetadata(20);
         String extractMetadata3 = mediaMetadataRetriever.extractMetadata(5);
         if (extractMetadata != null) {
-            this.f18168d = Math.round(Float.parseFloat(extractMetadata)) / 1000;
+            this.f17797d = Math.round(Float.parseFloat(extractMetadata)) / 1000;
         }
         if (extractMetadata2 != null) {
-            this.f18169e = Integer.parseInt(extractMetadata2);
+            this.f17798e = Integer.parseInt(extractMetadata2);
         }
         if (extractMetadata3 != null) {
-            this.f18144a = a(extractMetadata3.substring(0, extractMetadata3.indexOf(".")).replace("T", " "), "yyyyMMdd HHmmss");
+            this.f17773a = a(extractMetadata3.substring(0, extractMetadata3.indexOf(".")).replace("T", " "), "yyyyMMdd HHmmss");
         }
         if (b10 != null) {
-            this.f18146c = b10.getWidth();
-            this.f18145b = b10.getHeight();
+            this.f17775c = b10.getWidth();
+            this.f17774b = b10.getHeight();
         }
         try {
             mediaMetadataRetriever.release();
@@ -54,22 +54,22 @@ public class i extends f {
     }
 
     public int c() {
-        return this.f18169e;
+        return this.f17798e;
     }
 
     public String d() {
-        return this.f18144a;
+        return this.f17773a;
     }
 
     public int e() {
-        return this.f18168d;
+        return this.f17797d;
     }
 
     public int f() {
-        return this.f18145b;
+        return this.f17774b;
     }
 
     public int g() {
-        return this.f18146c;
+        return this.f17775c;
     }
 }

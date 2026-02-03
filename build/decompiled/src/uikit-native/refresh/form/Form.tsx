@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var1;
     var4 = var7.forwardRef;
     var3 = function(arg0, arg1) { // Environment: var3
-        _fun44395: for (var _fun44395_ip = 0;;) switch (_fun44395_ip) {
+        _fun44485: for (var _fun44485_ip = 0;;) switch (_fun44485_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.style;
@@ -62,16 +62,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.keyboardShouldPersistTaps;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun44395_ip = 31;
-                    continue _fun44395
+                    _fun44485_ip = 31;
+                    continue _fun44485
                 }
             case 25:
                 var9 = 'never';
             case 31:
                 var8 = var0.alwaysBounceVertical;
                 if (!(var8 === var3)) {
-                    _fun44395_ip = 43;
-                    continue _fun44395
+                    _fun44485_ip = 43;
+                    continue _fun44485
                 }
             case 41:
                 var8 = true;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12[0] = var16;
                 var12[1] = var15;
                 if (!var13) {
-                    _fun44395_ip = 224;
-                    continue _fun44395
+                    _fun44485_ip = 224;
+                    continue _fun44485
                 }
             case 218:
                 var13 = var14.redesign;
@@ -159,4 +159,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.FormContext = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4858, 4862, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4888, 4892, 2]);

@@ -1,17 +1,19 @@
 package vm;
 
-import android.content.Context;
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
 import kotlin.jvm.internal.Intrinsics;
+import um.q;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class l {
-    public static final LayoutInflater a(Context context, ViewGroup viewGroup) {
-        Context context2;
-        Intrinsics.checkNotNullParameter(context, "<this>");
-        if (viewGroup == null || (context2 = viewGroup.getContext()) == null) {
-            context2 = context;
+    public static final k a(q qVar, String key) {
+        Intrinsics.checkNotNullParameter(qVar, "<this>");
+        Intrinsics.checkNotNullParameter(key, "key");
+        return new k(qVar, key);
+    }
+
+    public static /* synthetic */ k b(q qVar, String str, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            str = "";
         }
-        return LayoutInflater.from(context2).cloneInContext(context);
+        return a(qVar, str);
     }
 }

@@ -31,7 +31,7 @@ public final class SharedCustomThemeMessageAccessory extends MessageAccessory {
         public final SharedCustomThemeMessageAccessory create(@NotNull Message message, @NotNull SharedCustomThemeData sharedCustomThemeData) {
             Intrinsics.checkNotNullParameter(message, "message");
             Intrinsics.checkNotNullParameter(sharedCustomThemeData, "sharedCustomThemeData");
-            return new SharedCustomThemeMessageAccessory(message.m234getChannelIdo4g7jtM(), message.m237getId3Eiw7ao(), sharedCustomThemeData, message.getUsername(), null);
+            return new SharedCustomThemeMessageAccessory(message.m236getChannelIdo4g7jtM(), message.m239getId3Eiw7ao(), sharedCustomThemeData, message.getUsername(), null);
         }
 
         private Companion() {
@@ -43,7 +43,7 @@ public final class SharedCustomThemeMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-JjTCmh4$default  reason: not valid java name */
-    public static /* synthetic */ SharedCustomThemeMessageAccessory m652copyJjTCmh4$default(SharedCustomThemeMessageAccessory sharedCustomThemeMessageAccessory, long j10, String str, SharedCustomThemeData sharedCustomThemeData, String str2, int i10, Object obj) {
+    public static /* synthetic */ SharedCustomThemeMessageAccessory m654copyJjTCmh4$default(SharedCustomThemeMessageAccessory sharedCustomThemeMessageAccessory, long j10, String str, SharedCustomThemeData sharedCustomThemeData, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             j10 = sharedCustomThemeMessageAccessory.channelId;
         }
@@ -59,17 +59,17 @@ public final class SharedCustomThemeMessageAccessory extends MessageAccessory {
         if ((i10 & 8) != 0) {
             str2 = sharedCustomThemeMessageAccessory.author;
         }
-        return sharedCustomThemeMessageAccessory.m655copyJjTCmh4(j11, str3, sharedCustomThemeData2, str2);
+        return sharedCustomThemeMessageAccessory.m657copyJjTCmh4(j11, str3, sharedCustomThemeData2, str2);
     }
 
     /* renamed from: component1-o4g7jtM  reason: not valid java name */
-    public final long m653component1o4g7jtM() {
+    public final long m655component1o4g7jtM() {
         return this.channelId;
     }
 
     @NotNull
     /* renamed from: component2-3Eiw7ao  reason: not valid java name */
-    public final String m654component23Eiw7ao() {
+    public final String m656component23Eiw7ao() {
         return this.messageId;
     }
 
@@ -84,7 +84,7 @@ public final class SharedCustomThemeMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-JjTCmh4  reason: not valid java name */
-    public final SharedCustomThemeMessageAccessory m655copyJjTCmh4(long j10, @NotNull String messageId, @NotNull SharedCustomThemeData data, String str) {
+    public final SharedCustomThemeMessageAccessory m657copyJjTCmh4(long j10, @NotNull String messageId, @NotNull SharedCustomThemeData data, String str) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(data, "data");
         return new SharedCustomThemeMessageAccessory(j10, messageId, data, str, null);
@@ -96,7 +96,7 @@ public final class SharedCustomThemeMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof SharedCustomThemeMessageAccessory) {
             SharedCustomThemeMessageAccessory sharedCustomThemeMessageAccessory = (SharedCustomThemeMessageAccessory) obj;
-            return ChannelId.m1062equalsimpl0(this.channelId, sharedCustomThemeMessageAccessory.channelId) && MessageId.m1088equalsimpl0(this.messageId, sharedCustomThemeMessageAccessory.messageId) && Intrinsics.areEqual(this.data, sharedCustomThemeMessageAccessory.data) && Intrinsics.areEqual(this.author, sharedCustomThemeMessageAccessory.author);
+            return ChannelId.m1064equalsimpl0(this.channelId, sharedCustomThemeMessageAccessory.channelId) && MessageId.m1090equalsimpl0(this.messageId, sharedCustomThemeMessageAccessory.messageId) && Intrinsics.areEqual(this.data, sharedCustomThemeMessageAccessory.data) && Intrinsics.areEqual(this.author, sharedCustomThemeMessageAccessory.author);
         }
         return false;
     }
@@ -106,7 +106,7 @@ public final class SharedCustomThemeMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m656getChannelIdo4g7jtM() {
+    public final long m658getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -118,23 +118,23 @@ public final class SharedCustomThemeMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        int m1063hashCodeimpl = ((((ChannelId.m1063hashCodeimpl(this.channelId) * 31) + MessageId.m1089hashCodeimpl(this.messageId)) * 31) + this.data.hashCode()) * 31;
+        int m1065hashCodeimpl = ((((ChannelId.m1065hashCodeimpl(this.channelId) * 31) + MessageId.m1091hashCodeimpl(this.messageId)) * 31) + this.data.hashCode()) * 31;
         String str = this.author;
-        return m1063hashCodeimpl + (str == null ? 0 : str.hashCode());
+        return m1065hashCodeimpl + (str == null ? 0 : str.hashCode());
     }
 
     @NotNull
     public String toString() {
-        String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         SharedCustomThemeData sharedCustomThemeData = this.data;
         String str = this.author;
-        return "SharedCustomThemeMessageAccessory(channelId=" + m1065toStringimpl + ", messageId=" + m1091toStringimpl + ", data=" + sharedCustomThemeData + ", author=" + str + ")";
+        return "SharedCustomThemeMessageAccessory(channelId=" + m1067toStringimpl + ", messageId=" + m1093toStringimpl + ", data=" + sharedCustomThemeData + ", author=" + str + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

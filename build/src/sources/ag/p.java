@@ -12,7 +12,7 @@ public final class p extends ef.d implements te.b {
     private static final a.g f617m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final a.AbstractC0290a f618n;
+    private static final a.AbstractC0301a f618n;
 
     /* renamed from: o  reason: collision with root package name */
     private static final ef.a f619o;
@@ -33,7 +33,7 @@ public final class p extends ef.d implements te.b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(Context context, com.google.android.gms.common.g gVar) {
-        super(context, f619o, a.d.f22762c, d.a.f22774c);
+        super(context, f619o, a.d.f22794c, d.a.f22806c);
         this.f620k = context;
         this.f621l = gVar;
     }
@@ -41,7 +41,7 @@ public final class p extends ef.d implements te.b {
     @Override // te.b
     public final Task h() {
         if (this.f621l.h(this.f620k, 212800000) == 0) {
-            return p(ff.q.a().d(te.h.f49537a).b(new ff.m() { // from class: ag.m
+            return p(ff.q.a().d(te.h.f49809a).b(new ff.m() { // from class: ag.m
                 @Override // ff.m
                 public final void accept(Object obj, Object obj2) {
                     ((g) ((d) obj).C()).h(new te.d(null, null), new o(p.this, (wg.k) obj2));

@@ -1,7 +1,7 @@
 package kotlinx.coroutines;
 
-import gs.e1;
-import gs.n0;
+import hs.e1;
+import hs.n0;
 import java.util.concurrent.CancellationException;
 import kotlin.coroutines.Continuation;
 import kotlin.jvm.functions.Function1;
@@ -10,20 +10,25 @@ import kotlin.sequences.Sequence;
 public final class d0 extends kotlin.coroutines.a implements Job {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final d0 f36336e = new d0();
+    public static final d0 f36112e = new d0();
 
     private d0() {
-        super(Job.f36307j);
+        super(Job.f36083j);
     }
 
     @Override // kotlinx.coroutines.Job
-    public n0 C0(Function1 function1) {
-        return e1.f27169d;
+    public n0 D0(Function1 function1) {
+        return e1.f27916d;
+    }
+
+    @Override // kotlinx.coroutines.Job
+    public hs.n J0(hs.o oVar) {
+        return e1.f27916d;
     }
 
     @Override // kotlinx.coroutines.Job
     public n0 L(boolean z10, boolean z11, Function1 function1) {
-        return e1.f27169d;
+        return e1.f27916d;
     }
 
     @Override // kotlinx.coroutines.Job
@@ -32,18 +37,13 @@ public final class d0 extends kotlin.coroutines.a implements Job {
     }
 
     @Override // kotlinx.coroutines.Job
-    public Object X0(Continuation continuation) {
-        throw new UnsupportedOperationException("This job is always active");
-    }
-
-    @Override // kotlinx.coroutines.Job
-    public gs.n Y0(gs.o oVar) {
-        return e1.f27169d;
-    }
-
-    @Override // kotlinx.coroutines.Job
     public boolean a() {
         return true;
+    }
+
+    @Override // kotlinx.coroutines.Job
+    public Object e1(Continuation continuation) {
+        throw new UnsupportedOperationException("This job is always active");
     }
 
     @Override // kotlinx.coroutines.Job
@@ -51,7 +51,7 @@ public final class d0 extends kotlin.coroutines.a implements Job {
         return kotlin.sequences.k.j();
     }
 
-    @Override // kotlinx.coroutines.Job, is.v
+    @Override // kotlinx.coroutines.Job, js.v
     public void h(CancellationException cancellationException) {
     }
 

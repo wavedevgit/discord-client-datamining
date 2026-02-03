@@ -70,14 +70,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'trigger';
         var0.key = var5;
         var5 = function() {
-            _fun58053: for (var _fun58053_ip = 0;;) switch (_fun58053_ip) {
+            _fun58159: for (var _fun58159_ip = 0;;) switch (_fun58159_ip) {
                 case 0:
                     var1 = arguments[0];
                     var4 = this;
                     var0 = undefined;
                     if (!(var1 === var0)) {
-                        _fun58053_ip = 14;
-                        continue _fun58053
+                        _fun58159_ip = 14;
+                        continue _fun58159
                     }
                 case 12:
                     var1 = {};

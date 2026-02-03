@@ -4,19 +4,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var6 = dependencyMap;
     var4 = function arg0() {
-        _fun22724: for (var _fun22724_ip = 0;;) switch (_fun22724_ip) {
+        _fun22690: for (var _fun22690_ip = 0;;) switch (_fun22690_ip) {
             case 0:
                 var2 = arg0;
                 if (!var2) {
-                    _fun22724_ip = 18;
-                    continue _fun22724
+                    _fun22690_ip = 18;
+                    continue _fun22690
                 }
             case 6:
                 var1 = var2.__esModule;
                 var0 = var2;
                 if (var1) {
-                    _fun22724_ip = 27;
-                    continue _fun22724
+                    _fun22690_ip = 27;
+                    continue _fun22690
                 }
             case 18:
                 var1 = {};
@@ -34,46 +34,136 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var7.bind(var8)(var1, var0, var2);
-    var0 = function arg0() {
-        _fun22725: for (var _fun22725_ip = 0;;) switch (_fun22725_ip) {
+    var0 = function arg0, arg1() {
+        _fun22691: for (var _fun22691_ip = 0;;) switch (_fun22691_ip) {
             case 0:
-                var2 = undefined;
-                var1 = undefined;
-                var3 = _closure1_slot1;
-                var3 = var3.default;
-                var1 = arguments;
-                var5 = 1;
-                var1 = var3.bind(var2)(var5, var1);
-                var0 = _closure1_slot0;
-                var1 = var0.default;
                 var0 = arg0;
-                var0 = var1.bind(var2)(var0);
-                var1 = var0.getUTCDay;
-                var3 = var1.bind(var0)();
-                var4 = var3 < var5;
-                var1 = 0;
-                if (!var4) {
-                    _fun22725_ip = 66;
-                    continue _fun22725
+                var4 = arg1;
+                var7 = undefined;
+                var1 = undefined;
+                var2 = _closure1_slot2;
+                var3 = var2.default;
+                var1 = arguments;
+                var2 = 1;
+                var1 = var3.bind(var7)(var2, var1);
+                if (var0) {
+                    _fun22691_ip = 38;
+                    continue _fun22691
                 }
-            case 63:
-                var1 = 7;
-            case 66:
-                var1 = var1 + var3;
-                var3 = var0.setUTCDate;
-                var4 = var0.getUTCDate;
-                var4 = var4.bind(var0)();
-                var1 = var1 - var5;
-                var1 = var4 - var1;
-                var1 = var3.bind(var0)(var1);
-                var1 = var0.setUTCHours;
-                var10 = var0;
-                var9 = 0;
-                var8 = 0;
-                var7 = 0;
-                var6 = 0;
-                var1 = var10[var1](var9, var8, var7, var6, var5);
-                return var0;
+            case 36:
+                var0 = {};
+            case 38:
+                var1 = _closure1_slot1;
+                var3 = var1.default;
+                var1 = var0.start;
+                var3 = var3.bind(var7)(var1);
+                var1 = _closure1_slot1;
+                var1 = var1.default;
+                var0 = var0.end;
+                var5 = var1.bind(var7)(var0);
+                var0 = var3.getTime;
+                var0 = var0.bind(var3)();
+                var1 = var5.getTime;
+                var5 = var1.bind(var5)();
+                if (!(!(var0 <= var5))) {
+                    _fun22691_ip = 136;
+                    continue _fun22691
+                }
+            case 100:
+                var0 = global;
+                var8 = var0.RangeError;
+                var0 = var8.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var8
+                    }
+                });
+                var14 = 'Invalid interval';
+                var15 = var1;
+                var0 = new var15[var8](var14, var13);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+            case 136:
+                var1 = new Array(0);
+                var8 = var3.setMinutes;
+                var0 = 0;
+                var0 = var8.bind(var3)(var0, var0, var0);
+                var0 = global;
+                var8 = var0.Number;
+                var10 = null;
+                var11 = var10 == var4;
+                var9 = undefined;
+                if (var11) {
+                    _fun22691_ip = 180;
+                    continue _fun22691
+                }
+            case 174:
+                var9 = var4.step;
+            case 180:
+                var4 = var2;
+                if (!(var10 !== var9)) {
+                    _fun22691_ip = 197;
+                    continue _fun22691
+                }
+            case 187:
+                var4 = var2;
+                if (!(var7 !== var9)) {
+                    _fun22691_ip = 197;
+                    continue _fun22691
+                }
+            case 194:
+                var4 = var9;
+            case 197:
+                var4 = var8.bind(var7)(var4);
+                if (!(!(var4 < var2))) {
+                    _fun22691_ip = 292;
+                    continue _fun22691
+                }
+            case 206:
+                var2 = var0.isNaN;
+                var2 = var2.bind(var7)(var4);
+                if (var2) {
+                    _fun22691_ip = 292;
+                    continue _fun22691
+                }
+            case 220:
+                var2 = var3.getTime;
+                var2 = var2.bind(var3)();
+                if (!(var2 <= var5)) {
+                    _fun22691_ip = 290;
+                    continue _fun22691
+                }
+            case 234:
+                var8 = var1.push;
+                var2 = _closure1_slot1;
+                var2 = var2.default;
+                var2 = var2.bind(var7)(var3);
+                var2 = var8.bind(var1)(var2);
+                var2 = _closure1_slot0;
+                var2 = var2.default;
+                var8 = var2.bind(var7)(var3, var4);
+                var2 = var8.getTime;
+                var2 = var2.bind(var8)();
+                var3 = var8;
+                if (var2 <= var5) {
+                    _fun22691_ip = 234;
+                    continue _fun22691
+                }
+            case 290:
+                return var1;
+            case 292:
+                var2 = var0.RangeError;
+                var0 = var2.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var14 = '`options.step` must be a number greater than 1';
+                var15 = var1;
+                var0 = new var15[var2](var14, var13);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
         }
     };
     var1.default = var0;
@@ -88,8 +178,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var5.bind(var0)(var2);
     var2 = var4.bind(var0)(var2);
     var _closure1_slot1 = var2;
+    var2 = 2;
+    var2 = var6[var2];
+    var2 = var5.bind(var0)(var2);
+    var2 = var4.bind(var0)(var2);
+    var _closure1_slot2 = var2;
     var2 = var1.default;
     var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2534, 2535]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2718, 2564, 2565]);

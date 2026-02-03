@@ -16,19 +16,19 @@ public class b extends CloseableReference {
         String name;
         try {
             synchronized (this) {
-                if (this.f10960d) {
+                if (this.f10589d) {
                     return;
                 }
-                Object f10 = this.f10961e.f();
+                Object f10 = this.f10590e.f();
                 Integer valueOf = Integer.valueOf(System.identityHashCode(this));
-                Integer valueOf2 = Integer.valueOf(System.identityHashCode(this.f10961e));
+                Integer valueOf2 = Integer.valueOf(System.identityHashCode(this.f10590e));
                 if (f10 == null) {
                     name = null;
                 } else {
                     name = f10.getClass().getName();
                 }
                 p8.a.L("FinalizerCloseableReference", "Finalized without closing: %x %x (type = %s)", valueOf, valueOf2, name);
-                this.f10961e.d();
+                this.f10590e.d();
             }
         } finally {
             super.finalize();

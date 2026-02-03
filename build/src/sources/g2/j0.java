@@ -7,10 +7,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j0 extends h {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f25609e = new a(null);
+    public static final a f25704e = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f25610d;
+    private final String f25705d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -37,8 +37,8 @@ public final class j0 extends h {
 
     private j0(String str, Bundle bundle) {
         super("androidx.credentials.TYPE_RESTORE_CREDENTIAL", bundle);
-        this.f25610d = str;
-        if (!k2.c.f32954a.a(str)) {
+        this.f25705d = str;
+        if (!k2.c.f32700a.a(str)) {
             throw new IllegalArgumentException("authenticationResponseJson must not be empty, and must be a valid JSON");
         }
     }

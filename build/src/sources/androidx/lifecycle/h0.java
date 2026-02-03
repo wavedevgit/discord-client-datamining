@@ -13,22 +13,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class h0 implements SavedStateRegistry.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SavedStateRegistry f4485a;
+    private final SavedStateRegistry f4529a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f4486b;
+    private boolean f4530b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Bundle f4487c;
+    private Bundle f4531c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lazy f4488d;
+    private final Lazy f4532d;
 
     public h0(SavedStateRegistry savedStateRegistry, final q0 viewModelStoreOwner) {
         Intrinsics.checkNotNullParameter(savedStateRegistry, "savedStateRegistry");
         Intrinsics.checkNotNullParameter(viewModelStoreOwner, "viewModelStoreOwner");
-        this.f4485a = savedStateRegistry;
-        this.f4488d = ir.l.b(new Function0() { // from class: androidx.lifecycle.g0
+        this.f4529a = savedStateRegistry;
+        this.f4532d = jr.l.b(new Function0() { // from class: androidx.lifecycle.g0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 i0 f10;
@@ -39,7 +39,7 @@ public final class h0 implements SavedStateRegistry.b {
     }
 
     private final i0 d() {
-        return (i0) this.f4488d.getValue();
+        return (i0) this.f4532d.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -56,13 +56,13 @@ public final class h0 implements SavedStateRegistry.b {
         } else {
             ArrayList arrayList = new ArrayList(i10.size());
             for (Map.Entry entry : i10.entrySet()) {
-                arrayList.add(ir.v.a((String) entry.getKey(), entry.getValue()));
+                arrayList.add(jr.v.a((String) entry.getKey(), entry.getValue()));
             }
             pairArr = (Pair[]) arrayList.toArray(new Pair[0]);
         }
         Bundle a10 = w1.c.a((Pair[]) Arrays.copyOf(pairArr, pairArr.length));
         Bundle a11 = u3.g.a(a10);
-        Bundle bundle = this.f4487c;
+        Bundle bundle = this.f4531c;
         if (bundle != null) {
             u3.g.b(a11, bundle);
         }
@@ -73,7 +73,7 @@ public final class h0 implements SavedStateRegistry.b {
                 u3.g.c(a11, str, a12);
             }
         }
-        this.f4486b = false;
+        this.f4530b = false;
         return a10;
     }
 
@@ -81,7 +81,7 @@ public final class h0 implements SavedStateRegistry.b {
         Pair[] pairArr;
         Intrinsics.checkNotNullParameter(key, "key");
         e();
-        Bundle bundle = this.f4487c;
+        Bundle bundle = this.f4531c;
         if (bundle == null || !u3.b.b(u3.b.a(bundle), key)) {
             return null;
         }
@@ -93,7 +93,7 @@ public final class h0 implements SavedStateRegistry.b {
             } else {
                 ArrayList arrayList = new ArrayList(i10.size());
                 for (Map.Entry entry : i10.entrySet()) {
-                    arrayList.add(ir.v.a((String) entry.getKey(), entry.getValue()));
+                    arrayList.add(jr.v.a((String) entry.getKey(), entry.getValue()));
                 }
                 pairArr = (Pair[]) arrayList.toArray(new Pair[0]);
             }
@@ -102,36 +102,36 @@ public final class h0 implements SavedStateRegistry.b {
         }
         u3.g.e(u3.g.a(bundle), key);
         if (u3.b.f(u3.b.a(bundle))) {
-            this.f4487c = null;
+            this.f4531c = null;
         }
         return d10;
     }
 
     public final void e() {
         Pair[] pairArr;
-        if (!this.f4486b) {
-            Bundle a10 = this.f4485a.a("androidx.lifecycle.internal.SavedStateHandlesProvider");
+        if (!this.f4530b) {
+            Bundle a10 = this.f4529a.a("androidx.lifecycle.internal.SavedStateHandlesProvider");
             Map i10 = kotlin.collections.o0.i();
             if (i10.isEmpty()) {
                 pairArr = new Pair[0];
             } else {
                 ArrayList arrayList = new ArrayList(i10.size());
                 for (Map.Entry entry : i10.entrySet()) {
-                    arrayList.add(ir.v.a((String) entry.getKey(), entry.getValue()));
+                    arrayList.add(jr.v.a((String) entry.getKey(), entry.getValue()));
                 }
                 pairArr = (Pair[]) arrayList.toArray(new Pair[0]);
             }
             Bundle a11 = w1.c.a((Pair[]) Arrays.copyOf(pairArr, pairArr.length));
             Bundle a12 = u3.g.a(a11);
-            Bundle bundle = this.f4487c;
+            Bundle bundle = this.f4531c;
             if (bundle != null) {
                 u3.g.b(a12, bundle);
             }
             if (a10 != null) {
                 u3.g.b(a12, a10);
             }
-            this.f4487c = a11;
-            this.f4486b = true;
+            this.f4531c = a11;
+            this.f4530b = true;
             d();
         }
     }

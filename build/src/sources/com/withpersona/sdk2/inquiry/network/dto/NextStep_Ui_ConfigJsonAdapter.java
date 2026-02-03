@@ -70,9 +70,9 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
         NextStep.Ui.Localizations localizations = null;
         List list2 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -115,7 +115,7 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
         List list5 = list;
         Constructor<NextStep.Ui.Config> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Ui.Config.class.getDeclaredConstructor(List.class, Boolean.class, Boolean.class, Boolean.class, NextStep.Ui.Localizations.class, List.class, Integer.TYPE, sm.c.f49097c);
+            constructor = NextStep.Ui.Config.class.getDeclaredConstructor(List.class, Boolean.class, Boolean.class, Boolean.class, NextStep.Ui.Localizations.class, List.class, Integer.TYPE, tm.c.f49935c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -129,17 +129,17 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (config != null) {
             writer.l();
-            writer.A0("components");
+            writer.t0("components");
             this.nullableListOfUiComponentConfigAdapter.toJson(writer, config.getComponents());
-            writer.A0("backStepEnabled");
+            writer.t0("backStepEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getBackStepEnabled());
-            writer.A0("cancelButtonEnabled");
+            writer.t0("cancelButtonEnabled");
             this.nullableBooleanAdapter.toJson(writer, config.getCancelButtonEnabled());
-            writer.A0("terminal");
+            writer.t0("terminal");
             this.nullableBooleanAdapter.toJson(writer, config.getTerminal());
-            writer.A0("localizations");
+            writer.t0("localizations");
             this.nullableLocalizationsAdapter.toJson(writer, config.getLocalizations());
-            writer.A0("serverComponentErrors");
+            writer.t0("serverComponentErrors");
             this.nullableListOfUiComponentErrorAdapter.toJson(writer, config.getServerComponentErrors());
             writer.E();
             return;

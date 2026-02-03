@@ -11,8 +11,8 @@ public interface a extends IInterface {
 
     /* renamed from: yf.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static abstract class AbstractBinderC0761a extends jg.b implements a {
-        public AbstractBinderC0761a() {
+    public static abstract class AbstractBinderC0770a extends jg.b implements a {
+        public AbstractBinderC0770a() {
             super("com.google.android.gms.identitycredentials.internal.IIdentityCredentialCallbacks");
         }
 

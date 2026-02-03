@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/SystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55366: for (var _fun55366_ip = 0;;) switch (_fun55366_ip) {
+        _fun55472: for (var _fun55472_ip = 0;;) switch (_fun55472_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2.message;
@@ -37,323 +37,323 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot2;
                 var1 = var1.RECIPIENT_ADD;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 2238;
-                    continue _fun55366
+                    _fun55472_ip = 2238;
+                    continue _fun55472
                 }
             case 33:
                 var1 = _closure1_slot2;
                 var1 = var1.RECIPIENT_REMOVE;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 2203;
-                    continue _fun55366
+                    _fun55472_ip = 2203;
+                    continue _fun55472
                 }
             case 50:
                 var1 = _closure1_slot2;
                 var1 = var1.CALL;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 2168;
-                    continue _fun55366
+                    _fun55472_ip = 2168;
+                    continue _fun55472
                 }
             case 67:
                 var1 = _closure1_slot2;
                 var1 = var1.CHANNEL_NAME_CHANGE;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 2133;
-                    continue _fun55366
+                    _fun55472_ip = 2133;
+                    continue _fun55472
                 }
             case 84:
                 var1 = _closure1_slot2;
                 var1 = var1.CHANNEL_ICON_CHANGE;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 2098;
-                    continue _fun55366
+                    _fun55472_ip = 2098;
+                    continue _fun55472
                 }
             case 101:
                 var1 = _closure1_slot2;
                 var1 = var1.CHANNEL_PINNED_MESSAGE;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 2063;
-                    continue _fun55366
+                    _fun55472_ip = 2063;
+                    continue _fun55472
                 }
             case 118:
                 var1 = _closure1_slot2;
                 var1 = var1.USER_JOIN;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 2028;
-                    continue _fun55366
+                    _fun55472_ip = 2028;
+                    continue _fun55472
                 }
             case 135:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_BOOST;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1993;
-                    continue _fun55366
+                    _fun55472_ip = 1993;
+                    continue _fun55472
                 }
             case 152:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_BOOST_TIER_1;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1947;
-                    continue _fun55366
+                    _fun55472_ip = 1947;
+                    continue _fun55472
                 }
             case 169:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_BOOST_TIER_2;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1901;
-                    continue _fun55366
+                    _fun55472_ip = 1901;
+                    continue _fun55472
                 }
             case 186:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_BOOST_TIER_3;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1855;
-                    continue _fun55366
+                    _fun55472_ip = 1855;
+                    continue _fun55472
                 }
             case 203:
                 var1 = _closure1_slot2;
                 var1 = var1.CHANNEL_FOLLOW_ADD;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1820;
-                    continue _fun55366
+                    _fun55472_ip = 1820;
+                    continue _fun55472
                 }
             case 220:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_STREAM;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1785;
-                    continue _fun55366
+                    _fun55472_ip = 1785;
+                    continue _fun55472
                 }
             case 237:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_DISCOVERY_DISQUALIFIED;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1750;
-                    continue _fun55366
+                    _fun55472_ip = 1750;
+                    continue _fun55472
                 }
             case 254:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_DISCOVERY_REQUALIFIED;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1715;
-                    continue _fun55366
+                    _fun55472_ip = 1715;
+                    continue _fun55472
                 }
             case 271:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_DISCOVERY_GRACE_PERIOD_INITIAL_WARNING;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1680;
-                    continue _fun55366
+                    _fun55472_ip = 1680;
+                    continue _fun55472
                 }
             case 288:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_DISCOVERY_GRACE_PERIOD_FINAL_WARNING;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1645;
-                    continue _fun55366
+                    _fun55472_ip = 1645;
+                    continue _fun55472
                 }
             case 305:
                 var1 = _closure1_slot2;
                 var1 = var1.CHAT_INPUT_COMMAND;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1610;
-                    continue _fun55366
+                    _fun55472_ip = 1610;
+                    continue _fun55472
                 }
             case 322:
                 var1 = _closure1_slot2;
                 var1 = var1.CONTEXT_MENU_COMMAND;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1610;
-                    continue _fun55366
+                    _fun55472_ip = 1610;
+                    continue _fun55472
                 }
             case 339:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_INVITE_REMINDER;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1606;
-                    continue _fun55366
+                    _fun55472_ip = 1606;
+                    continue _fun55472
                 }
             case 356:
                 var1 = _closure1_slot2;
                 var1 = var1.THREAD_CREATED;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1571;
-                    continue _fun55366
+                    _fun55472_ip = 1571;
+                    continue _fun55472
                 }
             case 373:
                 var1 = _closure1_slot2;
                 var1 = var1.THREAD_STARTER_MESSAGE;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1536;
-                    continue _fun55366
+                    _fun55472_ip = 1536;
+                    continue _fun55472
                 }
             case 390:
                 var1 = _closure1_slot2;
                 var1 = var1.AUTO_MODERATION_ACTION;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1501;
-                    continue _fun55366
+                    _fun55472_ip = 1501;
+                    continue _fun55472
                 }
             case 407:
                 var1 = _closure1_slot2;
                 var1 = var1.ROLE_SUBSCRIPTION_PURCHASE;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1466;
-                    continue _fun55366
+                    _fun55472_ip = 1466;
+                    continue _fun55472
                 }
             case 424:
                 var1 = _closure1_slot2;
                 var1 = var1.PURCHASE_NOTIFICATION;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1431;
-                    continue _fun55366
+                    _fun55472_ip = 1431;
+                    continue _fun55472
                 }
             case 441:
                 var1 = _closure1_slot2;
                 var1 = var1.STAGE_START;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1396;
-                    continue _fun55366
+                    _fun55472_ip = 1396;
+                    continue _fun55472
                 }
             case 458:
                 var1 = _closure1_slot2;
                 var1 = var1.STAGE_END;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1361;
-                    continue _fun55366
+                    _fun55472_ip = 1361;
+                    continue _fun55472
                 }
             case 475:
                 var1 = _closure1_slot2;
                 var1 = var1.STAGE_TOPIC;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1326;
-                    continue _fun55366
+                    _fun55472_ip = 1326;
+                    continue _fun55472
                 }
             case 492:
                 var1 = _closure1_slot2;
                 var1 = var1.STAGE_SPEAKER;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1291;
-                    continue _fun55366
+                    _fun55472_ip = 1291;
+                    continue _fun55472
                 }
             case 509:
                 var1 = _closure1_slot2;
                 var1 = var1.STAGE_RAISE_HAND;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1256;
-                    continue _fun55366
+                    _fun55472_ip = 1256;
+                    continue _fun55472
                 }
             case 526:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1221;
-                    continue _fun55366
+                    _fun55472_ip = 1221;
+                    continue _fun55472
                 }
             case 543:
                 var1 = _closure1_slot2;
                 var1 = var1.PRIVATE_CHANNEL_INTEGRATION_ADDED;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1175;
-                    continue _fun55366
+                    _fun55472_ip = 1175;
+                    continue _fun55472
                 }
             case 560:
                 var1 = _closure1_slot2;
                 var1 = var1.PRIVATE_CHANNEL_INTEGRATION_REMOVED;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1175;
-                    continue _fun55366
+                    _fun55472_ip = 1175;
+                    continue _fun55472
                 }
             case 577:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_INCIDENT_ALERT_MODE_ENABLED;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1140;
-                    continue _fun55366
+                    _fun55472_ip = 1140;
+                    continue _fun55472
                 }
             case 594:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_INCIDENT_ALERT_MODE_DISABLED;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1105;
-                    continue _fun55366
+                    _fun55472_ip = 1105;
+                    continue _fun55472
                 }
             case 611:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_INCIDENT_REPORT_RAID;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1070;
-                    continue _fun55366
+                    _fun55472_ip = 1070;
+                    continue _fun55472
                 }
             case 628:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_INCIDENT_REPORT_FALSE_ALARM;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1035;
-                    continue _fun55366
+                    _fun55472_ip = 1035;
+                    continue _fun55472
                 }
             case 645:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_DEADCHAT_REVIVE_PROMPT;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 1000;
-                    continue _fun55366
+                    _fun55472_ip = 1000;
+                    continue _fun55472
                 }
             case 662:
                 var1 = _closure1_slot2;
                 var1 = var1.POLL_RESULT;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 965;
-                    continue _fun55366
+                    _fun55472_ip = 965;
+                    continue _fun55472
                 }
             case 679:
                 var1 = _closure1_slot2;
                 var1 = var1.CHANNEL_LINKED_TO_LOBBY;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 930;
-                    continue _fun55366
+                    _fun55472_ip = 930;
+                    continue _fun55472
                 }
             case 696:
                 var1 = _closure1_slot2;
                 var1 = var1.IN_GAME_MESSAGE_NUX;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 895;
-                    continue _fun55366
+                    _fun55472_ip = 895;
+                    continue _fun55472
                 }
             case 713:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 860;
-                    continue _fun55366
+                    _fun55472_ip = 860;
+                    continue _fun55472
                 }
             case 730:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_JOIN_REQUEST_REJECT_NOTIFICATION;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 860;
-                    continue _fun55366
+                    _fun55472_ip = 860;
+                    continue _fun55472
                 }
             case 744:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 860;
-                    continue _fun55366
+                    _fun55472_ip = 860;
+                    continue _fun55472
                 }
             case 758:
                 var1 = _closure1_slot2;
                 var1 = var1.EMOJI_ADDED;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 825;
-                    continue _fun55366
+                    _fun55472_ip = 825;
+                    continue _fun55472
                 }
             case 772:
                 var1 = _closure1_slot2;
                 var1 = var1.PREMIUM_GROUP_INVITE;
                 if (!(var1 !== var3)) {
-                    _fun55366_ip = 790;
-                    continue _fun55366
+                    _fun55472_ip = 790;
+                    continue _fun55472
                 }
             case 786:
                 var1 = null;
@@ -783,4 +783,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createSystemMessageContent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 6639, 6645, 6646, 6649, 6650, 6651, 6652, 6668, 6670, 6683, 6684, 6685, 6686, 6689, 6690, 6691, 6703, 6704, 6706, 6707, 6708, 6709, 6710, 6711, 6712, 6713, 6720, 6721, 6722, 6725, 6727, 6728, 6729, 6730, 6732, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 6670, 6676, 6677, 6680, 6681, 6682, 6683, 6699, 6701, 6714, 6715, 6716, 6717, 6720, 6721, 6722, 6734, 6735, 6737, 6738, 6739, 6740, 6741, 6742, 6743, 6744, 6751, 6752, 6753, 6756, 6758, 6759, 6760, 6761, 6763, 2]);

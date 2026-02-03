@@ -1,19 +1,43 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
+    var2 = exports;
     var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var1 = {};
     var0 = true;
-    var2.value = var0;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = var4.bind(var5)(var2, var0, var1);
+    var1 = {};
+    var6 = 'RNSVGFeGaussianBlur';
+    var1.uiViewClassName = var6;
     var0 = {
-        'luminance': 0,
-        'alpha': 1
+        'x': true,
+        'y': true,
+        'width': true,
+        'height': true,
+        'result': true,
+        'in1': true,
+        'stdDeviationX': true,
+        'stdDeviationY': true,
+        'edgeMode': true
     };
-    var1.maskType = var0;
+    var1.validAttributes = var0;
+    var _closure1_slot0 = var1;
+    var4 = dependencyMap;
+    var0 = 0;
+    var5 = var4[var0];
+    var4 = require;
     var0 = undefined;
+    var5 = var4.bind(var0)(var5);
+    var4 = var5.get;
+    var3 = function() { // Environment: var3
+        var0 = _closure1_slot0;
+        return var0;
+    };
+    var3 = var4.bind(var5)(var6, var3);
+    var2.default = var3;
+    var2.__INTERNAL_VIEW_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [42]);

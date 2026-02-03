@@ -68,7 +68,7 @@ public final class WebAuthn {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit authenticateSecurityKey$lambda$3(Activity activity, PendingIntent pendingIntent) {
         activity.startIntentSenderForResult(pendingIntent.getIntentSender(), REQUEST_CODE_AUTHENTICATE_SK, null, 0, 0, 0);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -185,8 +185,8 @@ public final class WebAuthn {
                 }
             }
             jsonReader.endObject();
-            Unit unit = Unit.f33298a;
-            tr.c.a(jsonReader, null);
+            Unit unit = Unit.f33074a;
+            ur.c.a(jsonReader, null);
             PublicKeyCredentialRequestOptions a10 = builder.a();
             Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
             return a10;
@@ -253,7 +253,7 @@ public final class WebAuthn {
                             String nextString3 = jsonReader.nextString();
                             Log log4 = Log.INSTANCE;
                             Log.w$default(log4, TAG, "parseRequestOptions: userVerification: `" + nextString3 + "`, skipping", (Throwable) null, 4, (Object) null);
-                            Unit unit = Unit.f33298a;
+                            Unit unit = Unit.f33074a;
                             continue;
                         }
                 }
@@ -261,7 +261,7 @@ public final class WebAuthn {
             Log log5 = Log.INSTANCE;
             Log.w$default(log5, TAG, "parseRequestOptions: Found unrecognized option: `" + nextName + "`, skipping", (Throwable) null, 4, (Object) null);
             jsonReader.skipValue();
-            Unit unit2 = Unit.f33298a;
+            Unit unit2 = Unit.f33074a;
         }
         jsonReader.endObject();
     }
@@ -269,7 +269,7 @@ public final class WebAuthn {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit registerSecurityKey$lambda$0(Activity activity, PendingIntent pendingIntent) {
         activity.startIntentSenderForResult(pendingIntent.getIntentSender(), 4001, null, 0, 0, 0);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

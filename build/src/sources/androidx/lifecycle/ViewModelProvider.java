@@ -10,25 +10,25 @@ import kotlin.reflect.KClass;
 public class ViewModelProvider {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final b f4444b = new b(null);
+    public static final b f4488b = new b(null);
 
     /* renamed from: c  reason: collision with root package name */
-    public static final CreationExtras.c f4445c;
+    public static final CreationExtras.c f4489c;
 
     /* renamed from: a  reason: collision with root package name */
-    private final androidx.lifecycle.viewmodel.b f4446a;
+    private final androidx.lifecycle.viewmodel.b f4490a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface Factory {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f4447a = a.f4448a;
+        public static final a f4491a = a.f4492a;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class a {
 
             /* renamed from: a  reason: collision with root package name */
-            static final /* synthetic */ a f4448a = new a();
+            static final /* synthetic */ a f4492a = new a();
 
             private a() {
             }
@@ -43,12 +43,12 @@ public class ViewModelProvider {
         default n0 b(KClass modelClass, CreationExtras extras) {
             Intrinsics.checkNotNullParameter(modelClass, "modelClass");
             Intrinsics.checkNotNullParameter(extras, "extras");
-            return a(vr.a.b(modelClass), extras);
+            return a(wr.a.b(modelClass), extras);
         }
 
         default n0 c(Class modelClass) {
             Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-            return m3.h.f37825a.d();
+            return m3.h.f37805a.d();
         }
     }
 
@@ -60,10 +60,10 @@ public class ViewModelProvider {
 
         public static /* synthetic */ ViewModelProvider c(b bVar, q0 q0Var, Factory factory, CreationExtras creationExtras, int i10, Object obj) {
             if ((i10 & 2) != 0) {
-                factory = m3.h.f37825a.b(q0Var);
+                factory = m3.h.f37805a.b(q0Var);
             }
             if ((i10 & 4) != 0) {
-                creationExtras = m3.h.f37825a.a(q0Var);
+                creationExtras = m3.h.f37805a.a(q0Var);
             }
             return bVar.b(q0Var, factory, creationExtras);
         }
@@ -90,13 +90,13 @@ public class ViewModelProvider {
     public static class c implements Factory {
 
         /* renamed from: c  reason: collision with root package name */
-        private static c f4454c;
+        private static c f4498c;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final a f4453b = new a(null);
+        public static final a f4497b = new a(null);
 
         /* renamed from: d  reason: collision with root package name */
-        public static final CreationExtras.c f4455d = ViewModelProvider.f4445c;
+        public static final CreationExtras.c f4499d = ViewModelProvider.f4489c;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class a {
@@ -105,10 +105,10 @@ public class ViewModelProvider {
             }
 
             public final c a() {
-                if (c.f4454c == null) {
-                    c.f4454c = new c();
+                if (c.f4498c == null) {
+                    c.f4498c = new c();
                 }
-                c cVar = c.f4454c;
+                c cVar = c.f4498c;
                 Intrinsics.checkNotNull(cVar);
                 return cVar;
             }
@@ -128,13 +128,13 @@ public class ViewModelProvider {
         public n0 b(KClass modelClass, CreationExtras extras) {
             Intrinsics.checkNotNullParameter(modelClass, "modelClass");
             Intrinsics.checkNotNullParameter(extras, "extras");
-            return a(vr.a.b(modelClass), extras);
+            return a(wr.a.b(modelClass), extras);
         }
 
         @Override // androidx.lifecycle.ViewModelProvider.Factory
         public n0 c(Class modelClass) {
             Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-            return m3.e.f37820a.a(modelClass);
+            return m3.e.f37800a.a(modelClass);
         }
     }
 
@@ -148,8 +148,8 @@ public class ViewModelProvider {
     }
 
     static {
-        CreationExtras.a aVar = CreationExtras.f4529b;
-        f4445c = new e();
+        CreationExtras.a aVar = CreationExtras.f4573b;
+        f4489c = new e();
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
@@ -161,53 +161,53 @@ public class ViewModelProvider {
 
     public n0 a(Class modelClass) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        return c(vr.a.e(modelClass));
+        return c(wr.a.e(modelClass));
     }
 
     public final n0 b(String key, KClass modelClass) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        return this.f4446a.d(modelClass, key);
+        return this.f4490a.d(modelClass, key);
     }
 
     public final n0 c(KClass modelClass) {
         Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-        return androidx.lifecycle.viewmodel.b.e(this.f4446a, modelClass, null, 2, null);
+        return androidx.lifecycle.viewmodel.b.e(this.f4490a, modelClass, null, 2, null);
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a extends c {
 
         /* renamed from: f  reason: collision with root package name */
-        public static final C0055a f4449f = new C0055a(null);
+        public static final C0059a f4493f = new C0059a(null);
 
         /* renamed from: g  reason: collision with root package name */
-        private static a f4450g;
+        private static a f4494g;
 
         /* renamed from: h  reason: collision with root package name */
-        public static final CreationExtras.c f4451h;
+        public static final CreationExtras.c f4495h;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Application f4452e;
+        private final Application f4496e;
 
         /* renamed from: androidx.lifecycle.ViewModelProvider$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public static final class C0055a {
-            public /* synthetic */ C0055a(DefaultConstructorMarker defaultConstructorMarker) {
+        public static final class C0059a {
+            public /* synthetic */ C0059a(DefaultConstructorMarker defaultConstructorMarker) {
                 this();
             }
 
             public final a a(Application application) {
                 Intrinsics.checkNotNullParameter(application, "application");
-                if (a.f4450g == null) {
-                    a.f4450g = new a(application);
+                if (a.f4494g == null) {
+                    a.f4494g = new a(application);
                 }
-                a aVar = a.f4450g;
+                a aVar = a.f4494g;
                 Intrinsics.checkNotNull(aVar);
                 return aVar;
             }
 
-            private C0055a() {
+            private C0059a() {
             }
         }
 
@@ -216,12 +216,12 @@ public class ViewModelProvider {
         }
 
         static {
-            CreationExtras.a aVar = CreationExtras.f4529b;
-            f4451h = new b();
+            CreationExtras.a aVar = CreationExtras.f4573b;
+            f4495h = new b();
         }
 
         private a(Application application, int i10) {
-            this.f4452e = application;
+            this.f4496e = application;
         }
 
         private final n0 h(Class cls, Application application) {
@@ -247,10 +247,10 @@ public class ViewModelProvider {
         public n0 a(Class modelClass, CreationExtras extras) {
             Intrinsics.checkNotNullParameter(modelClass, "modelClass");
             Intrinsics.checkNotNullParameter(extras, "extras");
-            if (this.f4452e != null) {
+            if (this.f4496e != null) {
                 return c(modelClass);
             }
-            Application application = (Application) extras.a(f4451h);
+            Application application = (Application) extras.a(f4495h);
             if (application != null) {
                 return h(modelClass, application);
             }
@@ -263,7 +263,7 @@ public class ViewModelProvider {
         @Override // androidx.lifecycle.ViewModelProvider.c, androidx.lifecycle.ViewModelProvider.Factory
         public n0 c(Class modelClass) {
             Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-            Application application = this.f4452e;
+            Application application = this.f4496e;
             if (application != null) {
                 return h(modelClass, application);
             }
@@ -282,11 +282,11 @@ public class ViewModelProvider {
     }
 
     private ViewModelProvider(androidx.lifecycle.viewmodel.b bVar) {
-        this.f4446a = bVar;
+        this.f4490a = bVar;
     }
 
     public /* synthetic */ ViewModelProvider(ViewModelStore viewModelStore, Factory factory, CreationExtras creationExtras, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(viewModelStore, factory, (i10 & 4) != 0 ? CreationExtras.b.f4531c : creationExtras);
+        this(viewModelStore, factory, (i10 & 4) != 0 ? CreationExtras.b.f4575c : creationExtras);
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

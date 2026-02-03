@@ -49,10 +49,10 @@ import com.discord.ripple.RippleUtilsKt;
 import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
-import ir.v;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -289,7 +289,7 @@ public final class SystemMessageView extends ChatListConstraintLayout implements
         StructurableText content = message.getContent();
         if (content != null) {
             ArrayList<MessageAccessory> arrayList = this.accessories;
-            String m237getId3Eiw7ao = message.m237getId3Eiw7ao();
+            String m239getId3Eiw7ao = message.m239getId3Eiw7ao();
             boolean shouldAnimateEmoji = MessageKt.shouldAnimateEmoji(message);
             boolean shouldShowLinkDecorations = MessageKt.shouldShowLinkDecorations(message);
             boolean shouldShowRoleDot = message.getShouldShowRoleDot();
@@ -313,23 +313,23 @@ public final class SystemMessageView extends ChatListConstraintLayout implements
             }
             z11 = z10;
             i11 = 1;
-            arrayList.add(new MessageContentAccessory(m237getId3Eiw7ao, messageMargins, content, shouldAnimateEmoji, shouldShowLinkDecorations, shouldShowRoleDot, shouldShowRoleOnName, dimensionPixelSize, textDefault, textDefault2, DiscordFont.PrimaryNormal, 16, true, i13, null, message.getEditedColor(), false, null, null, 393216, null));
+            arrayList.add(new MessageContentAccessory(m239getId3Eiw7ao, messageMargins, content, shouldAnimateEmoji, shouldShowLinkDecorations, shouldShowRoleDot, shouldShowRoleOnName, dimensionPixelSize, textDefault, textDefault2, DiscordFont.PrimaryNormal, 16, true, i13, null, message.getEditedColor(), false, null, null, 393216, null));
         } else {
             z11 = z10;
             i11 = 1;
         }
         if (z11 && (timestamp = message.getTimestamp()) != null) {
-            this.accessories.add(new TimestampMessageAccessory(message.m237getId3Eiw7ao(), timestamp, ThemeManagerKt.getTheme().getTextMuted(), DiscordFont.PrimaryMedium, null));
+            this.accessories.add(new TimestampMessageAccessory(message.m239getId3Eiw7ao(), timestamp, ThemeManagerKt.getTheme().getTextMuted(), DiscordFont.PrimaryMedium, null));
         }
         Integer totalMonthsSubscribed = message.getTotalMonthsSubscribed();
         if (totalMonthsSubscribed != null && totalMonthsSubscribed.intValue() <= i11) {
             ArrayList<MessageAccessory> arrayList2 = this.accessories;
-            String m237getId3Eiw7ao2 = message.m237getId3Eiw7ao();
+            String m239getId3Eiw7ao2 = message.m239getId3Eiw7ao();
             String username = message.getUsername();
             Context context = this.binding.getRoot().getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
             message2 = message;
-            arrayList2.add(new RoleSubscriptionPurchaseAccessory(m237getId3Eiw7ao2, messageMargins, username, MessageKt.avatarUrl(message2, context), i13, false, null));
+            arrayList2.add(new RoleSubscriptionPurchaseAccessory(m239getId3Eiw7ao2, messageMargins, username, MessageKt.avatarUrl(message2, context), i13, false, null));
         } else {
             message2 = message;
         }
@@ -359,7 +359,7 @@ public final class SystemMessageView extends ChatListConstraintLayout implements
                     }
                     int i16 = i13;
                     i13 = i16;
-                    this.accessories.add(new EmbedMessageAccessory(message.m237getId3Eiw7ao(), messageMargins, i15, message.m234getChannelIdo4g7jtM(), i16, 16, (Embed) next, false, false, false, false, false, null, null, false, null));
+                    this.accessories.add(new EmbedMessageAccessory(message.m239getId3Eiw7ao(), messageMargins, i15, message.m236getChannelIdo4g7jtM(), i16, 16, (Embed) next, false, false, false, false, false, null, null, false, null));
                     message2 = message;
                     i11 = i11;
                     it = it;
@@ -370,19 +370,19 @@ public final class SystemMessageView extends ChatListConstraintLayout implements
             this.accessories.add(new ChannelPromptActionsAccessory(message3));
         }
         if (message3.getReactions() != null && (!reactions.isEmpty()) == i12) {
-            this.accessories.add(new ReactionsMessageAccessory(message3.m237getId3Eiw7ao(), message3.getReactions(), messageContext.getCanAddNewReactions(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getReactionsTheme(), null, null, null, false, false, 960, null));
+            this.accessories.add(new ReactionsMessageAccessory(message3.m239getId3Eiw7ao(), message3.getReactions(), messageContext.getCanAddNewReactions(), messageContext.getAddNewReactionAccessibilityLabel(), messageContext.getReactionsTheme(), null, null, null, false, false, 960, null));
         }
         ThreadEmbed threadEmbed = message3.getThreadEmbed();
         if (threadEmbed != null) {
-            this.accessories.add(new ThreadEmbedMessageAccessory(message3.m237getId3Eiw7ao(), threadEmbed, null));
+            this.accessories.add(new ThreadEmbedMessageAccessory(message3.m239getId3Eiw7ao(), threadEmbed, null));
         }
         EphemeralIndication ephemeralIndication = message3.getEphemeralIndication();
         if (ephemeralIndication != null) {
-            this.accessories.add(new EphemeralIndicationMessageAccessory(message3.m237getId3Eiw7ao(), ephemeralIndication, null));
+            this.accessories.add(new EphemeralIndicationMessageAccessory(message3.m239getId3Eiw7ao(), ephemeralIndication, null));
         }
         SafetyPolicyNoticeEmbed safetyPolicyNoticeEmbed = message3.getSafetyPolicyNoticeEmbed();
         if (safetyPolicyNoticeEmbed != null) {
-            this.accessories.add(new SafetyPolicyNoticeMessageAccessory(message3.m237getId3Eiw7ao(), safetyPolicyNoticeEmbed, null));
+            this.accessories.add(new SafetyPolicyNoticeMessageAccessory(message3.m239getId3Eiw7ao(), safetyPolicyNoticeEmbed, null));
         }
         return this.accessories;
     }
@@ -471,9 +471,9 @@ public final class SystemMessageView extends ChatListConstraintLayout implements
         if (MessageKt.isEphemeral(message)) {
             return false;
         }
-        Function6 mo493getOnMessageLongPressed = chatEventHandler.mo493getOnMessageLongPressed();
-        if (mo493getOnMessageLongPressed != null) {
-            mo493getOnMessageLongPressed.invoke(MessageId.m1084boximpl(message.m237getId3Eiw7ao()), ChannelId.m1058boximpl(message.m234getChannelIdo4g7jtM()), null, null, null, null);
+        Function6 mo495getOnMessageLongPressed = chatEventHandler.mo495getOnMessageLongPressed();
+        if (mo495getOnMessageLongPressed != null) {
+            mo495getOnMessageLongPressed.invoke(MessageId.m1086boximpl(message.m239getId3Eiw7ao()), ChannelId.m1060boximpl(message.m236getChannelIdo4g7jtM()), null, null, null, null);
             return true;
         }
         return true;
@@ -481,7 +481,7 @@ public final class SystemMessageView extends ChatListConstraintLayout implements
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setMessage$lambda$2$lambda$1(Function2 function2, Message message, View view) {
-        function2.invoke(MessageId.m1084boximpl(message.m237getId3Eiw7ao()), ChannelId.m1058boximpl(message.m234getChannelIdo4g7jtM()));
+        function2.invoke(MessageId.m1086boximpl(message.m239getId3Eiw7ao()), ChannelId.m1060boximpl(message.m236getChannelIdo4g7jtM()));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -513,9 +513,9 @@ public final class SystemMessageView extends ChatListConstraintLayout implements
                 return message$lambda$0;
             }
         };
-        final Function2<MessageId, ChannelId, Unit> mo492getOnMessageDoubleTapped = eventHandler.mo492getOnMessageDoubleTapped();
+        final Function2<MessageId, ChannelId, Unit> mo494getOnMessageDoubleTapped = eventHandler.mo494getOnMessageDoubleTapped();
         View.OnClickListener onClickListener = null;
-        if (mo492getOnMessageDoubleTapped != null && !MessageKt.isEphemeral(message)) {
+        if (mo494getOnMessageDoubleTapped != null && !MessageKt.isEphemeral(message)) {
             onClickListener = new View.OnClickListener() { // from class: com.discord.chat.presentation.message.system.f
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
@@ -538,7 +538,7 @@ public final class SystemMessageView extends ChatListConstraintLayout implements
         int i10 = 0;
         MessageMargins messageMargins = new MessageMargins(resources, context, false);
         List<MessageAccessory> generateMessageAccessories = generateMessageAccessories(messageMargins, message, context);
-        this.binding.accessoriesView.m528setAccessoriesdvvEyHs(messageMargins, message.m237getId3Eiw7ao(), message.m234getChannelIdo4g7jtM(), message.m236getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, null, false);
+        this.binding.accessoriesView.m530setAccessoriesdvvEyHs(messageMargins, message.m239getId3Eiw7ao(), message.m236getChannelIdo4g7jtM(), message.m238getGuildIdqOKuAAo(), generateMessageAccessories, eventHandler, null, false);
         MessageAccessoriesView accessoriesView = this.binding.accessoriesView;
         Intrinsics.checkNotNullExpressionValue(accessoriesView, "accessoriesView");
         if (generateMessageAccessories.isEmpty()) {

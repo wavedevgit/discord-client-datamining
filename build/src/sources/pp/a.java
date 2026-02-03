@@ -1,7 +1,18 @@
 package pp;
 
-import java.io.File;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
-    void a(File file);
+public final class a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final c f46415a;
+
+    public a(c sdkFilesManager) {
+        Intrinsics.checkNotNullParameter(sdkFilesManager, "sdkFilesManager");
+        this.f46415a = sdkFilesManager;
+    }
+
+    public final c a() {
+        return this.f46415a;
+    }
 }

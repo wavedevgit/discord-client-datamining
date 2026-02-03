@@ -45,7 +45,7 @@ public final class TouchEventType {
     static {
         TouchEventType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = pr.a.a($values);
+        $ENTRIES = qr.a.a($values);
         Companion = new Companion(null);
     }
 

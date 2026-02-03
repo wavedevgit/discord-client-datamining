@@ -6,18 +6,18 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements j {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final C0731a f53145i = new C0731a(null);
+    public static final C0736a f53353i = new C0736a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f53146d;
+    private final String f53354d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object[] f53147e;
+    private final Object[] f53355e;
 
     /* renamed from: x3.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0731a {
-        public /* synthetic */ C0731a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0736a {
+        public /* synthetic */ C0736a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
@@ -40,7 +40,7 @@ public final class a implements j {
             } else if (obj instanceof Byte) {
                 iVar.w1(i10, ((Number) obj).byteValue());
             } else if (obj instanceof String) {
-                iVar.g1(i10, (String) obj);
+                iVar.h1(i10, (String) obj);
             } else if (obj instanceof Boolean) {
                 if (((Boolean) obj).booleanValue()) {
                     j10 = 1;
@@ -66,25 +66,25 @@ public final class a implements j {
             }
         }
 
-        private C0731a() {
+        private C0736a() {
         }
     }
 
     public a(String query, Object[] objArr) {
         Intrinsics.checkNotNullParameter(query, "query");
-        this.f53146d = query;
-        this.f53147e = objArr;
+        this.f53354d = query;
+        this.f53355e = objArr;
     }
 
     @Override // x3.j
     public String a() {
-        return this.f53146d;
+        return this.f53354d;
     }
 
     @Override // x3.j
     public void h(i statement) {
         Intrinsics.checkNotNullParameter(statement, "statement");
-        f53145i.b(statement, this.f53147e);
+        f53353i.b(statement, this.f53355e);
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

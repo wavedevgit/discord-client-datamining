@@ -1,29 +1,44 @@
 package tn;
 
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.enums.EnumEntries;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
+public final class a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final C0648a f49782a = new C0648a(null);
+    /* renamed from: d  reason: collision with root package name */
+    public static final a f49944d = new a("Stream", 0);
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final List f49783b = CollectionsKt.o("RootedDevice", "DebuggerThreatDetected", "AppIsDebuggable", "AppIntegrityError", "EmulatorFound", "GoogleEmulatorDetected", "MagiskManagerDetected", "FridaDetected", "FridaCustomDetected");
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f49945e = new a("Upload", 1);
 
-    /* renamed from: tn.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0648a {
-        public /* synthetic */ C0648a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    /* renamed from: i  reason: collision with root package name */
+    public static final a f49946i = new a("None", 2);
 
-        public final List a() {
-            return a.f49783b;
-        }
+    /* renamed from: o  reason: collision with root package name */
+    private static final /* synthetic */ a[] f49947o;
 
-        private C0648a() {
-        }
+    /* renamed from: p  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f49948p;
+
+    static {
+        a[] a10 = a();
+        f49947o = a10;
+        f49948p = qr.a.a(a10);
+    }
+
+    private a(String str, int i10) {
+    }
+
+    private static final /* synthetic */ a[] a() {
+        return new a[]{f49944d, f49945e, f49946i};
+    }
+
+    public static a valueOf(String str) {
+        return (a) Enum.valueOf(a.class, str);
+    }
+
+    public static a[] values() {
+        return (a[]) f49947o.clone();
     }
 }

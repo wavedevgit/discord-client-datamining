@@ -6,34 +6,34 @@ import java.util.List;
 final class d implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ List f25195d;
+    final /* synthetic */ List f24406d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ ei.d f25196e;
+    final /* synthetic */ ei.d f24407e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ e f25197i;
+    final /* synthetic */ e f24408i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(e eVar, List list, ei.d dVar) {
-        this.f25197i = eVar;
-        this.f25195d = list;
-        this.f25196e = dVar;
+        this.f24408i = eVar;
+        this.f24406d = list;
+        this.f24407e = dVar;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
         g gVar;
         try {
-            gVar = this.f25197i.f25200c;
-            if (gVar.b(this.f25195d)) {
-                e.d(this.f25197i, this.f25196e);
+            gVar = this.f24408i.f24411c;
+            if (gVar.b(this.f24406d)) {
+                e.d(this.f24408i, this.f24407e);
             } else {
-                e.c(this.f25197i, this.f25195d, this.f25196e);
+                e.c(this.f24408i, this.f24406d, this.f24407e);
             }
         } catch (Exception e10) {
             Log.e("SplitCompat", "Error checking verified files.", e10);
-            this.f25196e.b(-11);
+            this.f24407e.b(-11);
         }
     }
 }

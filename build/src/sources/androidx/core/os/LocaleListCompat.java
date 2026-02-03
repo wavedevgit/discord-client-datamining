@@ -6,16 +6,16 @@ import java.util.Locale;
 public final class LocaleListCompat {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final LocaleListCompat f3165b = a(new Locale[0]);
+    private static final LocaleListCompat f3209b = a(new Locale[0]);
 
     /* renamed from: a  reason: collision with root package name */
-    private final androidx.core.os.a f3166a;
+    private final androidx.core.os.a f3210a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final Locale[] f3167a = {new Locale("en", "XA"), new Locale("ar", "XB")};
+        private static final Locale[] f3211a = {new Locale("en", "XA"), new Locale("ar", "XB")};
 
         static Locale a(String str) {
             return Locale.forLanguageTag(str);
@@ -31,7 +31,7 @@ public final class LocaleListCompat {
     }
 
     private LocaleListCompat(androidx.core.os.a aVar) {
-        this.f3166a = aVar;
+        this.f3210a = aVar;
     }
 
     public static LocaleListCompat a(Locale... localeArr) {
@@ -52,7 +52,7 @@ public final class LocaleListCompat {
     }
 
     public static LocaleListCompat d() {
-        return f3165b;
+        return f3209b;
     }
 
     public static LocaleListCompat h(LocaleList localeList) {
@@ -60,33 +60,33 @@ public final class LocaleListCompat {
     }
 
     public Locale c(int i10) {
-        return this.f3166a.get(i10);
+        return this.f3210a.get(i10);
     }
 
     public boolean e() {
-        return this.f3166a.isEmpty();
+        return this.f3210a.isEmpty();
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof LocaleListCompat) && this.f3166a.equals(((LocaleListCompat) obj).f3166a)) {
+        if ((obj instanceof LocaleListCompat) && this.f3210a.equals(((LocaleListCompat) obj).f3210a)) {
             return true;
         }
         return false;
     }
 
     public int f() {
-        return this.f3166a.size();
+        return this.f3210a.size();
     }
 
     public String g() {
-        return this.f3166a.a();
+        return this.f3210a.a();
     }
 
     public int hashCode() {
-        return this.f3166a.hashCode();
+        return this.f3210a.hashCode();
     }
 
     public String toString() {
-        return this.f3166a.toString();
+        return this.f3210a.toString();
     }
 }

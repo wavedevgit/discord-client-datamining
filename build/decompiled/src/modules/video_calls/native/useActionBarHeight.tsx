@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/video_calls/native/useActionBarHeight.tsx';
     var5 = var6.bind(var7)(var5);
     var4 = function arg0() {
-        _fun62860: for (var _fun62860_ip = 0;;) switch (_fun62860_ip) {
+        _fun62965: for (var _fun62965_ip = 0;;) switch (_fun62965_ip) {
             case 0:
                 var2 = arg0;
                 var5 = _closure1_slot0;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var6)(var4, var1);
                 var1 = 88;
                 if (!var3) {
-                    _fun62860_ip = 112;
-                    continue _fun62860
+                    _fun62965_ip = 112;
+                    continue _fun62965
                 }
             case 108:
                 var1 = _closure1_slot6;
@@ -93,14 +93,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 + var0;
                 var0 = 0;
                 if (!var4) {
-                    _fun62860_ip = 133;
-                    continue _fun62860
+                    _fun62965_ip = 133;
+                    continue _fun62965
                 }
             case 125:
                 var0 = 0;
                 if (!var2) {
-                    _fun62860_ip = 133;
-                    continue _fun62860
+                    _fun62965_ip = 133;
+                    continue _fun62965
                 }
             case 130:
                 var0 = 56;
@@ -116,4 +116,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.FIVE_BUTTON_CONTAINER_PADDING_BOTTOM = var3;
     var2.FIVE_BUTTON_LAYOUT_ACTION_BAR_HEIGHT = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3437, 660, 4897, 7869, 7872, 7954, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3467, 660, 4927, 7900, 7903, 7985, 566, 2]);

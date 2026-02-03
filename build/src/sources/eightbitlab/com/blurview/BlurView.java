@@ -22,8 +22,8 @@ public class BlurView extends FrameLayout {
     }
 
     private void a(AttributeSet attributeSet, int i10) {
-        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, d.f22840a, i10, 0);
-        this.overlayColor = obtainStyledAttributes.getColor(d.f22841b, 0);
+        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, d.f22872a, i10, 0);
+        this.overlayColor = obtainStyledAttributes.getColor(d.f22873b, 0);
         obtainStyledAttributes.recycle();
     }
 

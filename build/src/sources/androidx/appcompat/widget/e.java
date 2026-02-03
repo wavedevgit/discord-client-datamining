@@ -16,34 +16,34 @@ import androidx.annotation.NonNull;
 public class e extends Button implements androidx.core.widget.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AppCompatBackgroundHelper f1609d;
+    private final AppCompatBackgroundHelper f1653d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AppCompatTextHelper f1610e;
+    private final AppCompatTextHelper f1654e;
 
     /* renamed from: i  reason: collision with root package name */
-    private AppCompatEmojiTextHelper f1611i;
+    private AppCompatEmojiTextHelper f1655i;
 
     public e(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.f24082n);
+        this(context, attributeSet, f.a.f23293n);
     }
 
     @NonNull
     private AppCompatEmojiTextHelper getEmojiTextViewHelper() {
-        if (this.f1611i == null) {
-            this.f1611i = new AppCompatEmojiTextHelper(this);
+        if (this.f1655i == null) {
+            this.f1655i = new AppCompatEmojiTextHelper(this);
         }
-        return this.f1611i;
+        return this.f1655i;
     }
 
     @Override // android.widget.TextView, android.view.View
     protected void drawableStateChanged() {
         super.drawableStateChanged();
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1609d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1653d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.b();
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.b();
         }
@@ -51,10 +51,10 @@ public class e extends Button implements androidx.core.widget.b {
 
     @Override // android.widget.TextView
     public int getAutoSizeMaxTextSize() {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             return super.getAutoSizeMaxTextSize();
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
         if (appCompatTextHelper != null) {
             return appCompatTextHelper.e();
         }
@@ -63,10 +63,10 @@ public class e extends Button implements androidx.core.widget.b {
 
     @Override // android.widget.TextView, androidx.core.widget.b
     public int getAutoSizeMinTextSize() {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             return super.getAutoSizeMinTextSize();
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
         if (appCompatTextHelper != null) {
             return appCompatTextHelper.f();
         }
@@ -75,10 +75,10 @@ public class e extends Button implements androidx.core.widget.b {
 
     @Override // android.widget.TextView, androidx.core.widget.b
     public int getAutoSizeStepGranularity() {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             return super.getAutoSizeStepGranularity();
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
         if (appCompatTextHelper != null) {
             return appCompatTextHelper.g();
         }
@@ -87,10 +87,10 @@ public class e extends Button implements androidx.core.widget.b {
 
     @Override // android.widget.TextView
     public int[] getAutoSizeTextAvailableSizes() {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             return super.getAutoSizeTextAvailableSizes();
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
         if (appCompatTextHelper != null) {
             return appCompatTextHelper.h();
         }
@@ -100,13 +100,13 @@ public class e extends Button implements androidx.core.widget.b {
     @Override // android.widget.TextView, androidx.core.widget.b
     @SuppressLint({"WrongConstant"})
     public int getAutoSizeTextType() {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             if (super.getAutoSizeTextType() != 1) {
                 return 0;
             }
             return 1;
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
         if (appCompatTextHelper == null) {
             return 0;
         }
@@ -119,7 +119,7 @@ public class e extends Button implements androidx.core.widget.b {
     }
 
     public ColorStateList getSupportBackgroundTintList() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1609d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1653d;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.c();
         }
@@ -127,7 +127,7 @@ public class e extends Button implements androidx.core.widget.b {
     }
 
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1609d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1653d;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.d();
         }
@@ -135,11 +135,11 @@ public class e extends Button implements androidx.core.widget.b {
     }
 
     public ColorStateList getSupportCompoundDrawablesTintList() {
-        return this.f1610e.j();
+        return this.f1654e.j();
     }
 
     public PorterDuff.Mode getSupportCompoundDrawablesTintMode() {
-        return this.f1610e.k();
+        return this.f1654e.k();
     }
 
     @Override // android.view.View
@@ -158,7 +158,7 @@ public class e extends Button implements androidx.core.widget.b {
     @Override // android.widget.TextView, android.view.View
     public void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         super.onLayout(z10, i10, i11, i12, i13);
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.o(z10, i10, i11, i12, i13);
         }
@@ -168,9 +168,9 @@ public class e extends Button implements androidx.core.widget.b {
     @Override // android.widget.TextView
     public void onTextChanged(CharSequence charSequence, int i10, int i11, int i12) {
         super.onTextChanged(charSequence, i10, i11, i12);
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
-        if (appCompatTextHelper != null && !g1.f1660c && appCompatTextHelper.l()) {
-            this.f1610e.c();
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
+        if (appCompatTextHelper != null && !g1.f1704c && appCompatTextHelper.l()) {
+            this.f1654e.c();
         }
     }
 
@@ -182,11 +182,11 @@ public class e extends Button implements androidx.core.widget.b {
 
     @Override // android.widget.TextView, androidx.core.widget.b
     public void setAutoSizeTextTypeUniformWithConfiguration(int i10, int i11, int i12, int i13) {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             super.setAutoSizeTextTypeUniformWithConfiguration(i10, i11, i12, i13);
             return;
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.t(i10, i11, i12, i13);
         }
@@ -194,11 +194,11 @@ public class e extends Button implements androidx.core.widget.b {
 
     @Override // android.widget.TextView
     public void setAutoSizeTextTypeUniformWithPresetSizes(int[] iArr, int i10) {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             super.setAutoSizeTextTypeUniformWithPresetSizes(iArr, i10);
             return;
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.u(iArr, i10);
         }
@@ -206,11 +206,11 @@ public class e extends Button implements androidx.core.widget.b {
 
     @Override // android.widget.TextView
     public void setAutoSizeTextTypeWithDefaults(int i10) {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             super.setAutoSizeTextTypeWithDefaults(i10);
             return;
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.v(i10);
         }
@@ -219,7 +219,7 @@ public class e extends Button implements androidx.core.widget.b {
     @Override // android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1609d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1653d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.f(drawable);
         }
@@ -228,7 +228,7 @@ public class e extends Button implements androidx.core.widget.b {
     @Override // android.view.View
     public void setBackgroundResource(int i10) {
         super.setBackgroundResource(i10);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1609d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1653d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.g(i10);
         }
@@ -249,40 +249,40 @@ public class e extends Button implements androidx.core.widget.b {
     }
 
     public void setSupportAllCaps(boolean z10) {
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.s(z10);
         }
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1609d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1653d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.i(colorStateList);
         }
     }
 
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1609d;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1653d;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.j(mode);
         }
     }
 
     public void setSupportCompoundDrawablesTintList(ColorStateList colorStateList) {
-        this.f1610e.w(colorStateList);
-        this.f1610e.b();
+        this.f1654e.w(colorStateList);
+        this.f1654e.b();
     }
 
     public void setSupportCompoundDrawablesTintMode(PorterDuff.Mode mode) {
-        this.f1610e.x(mode);
-        this.f1610e.b();
+        this.f1654e.x(mode);
+        this.f1654e.b();
     }
 
     @Override // android.widget.TextView
     public void setTextAppearance(Context context, int i10) {
         super.setTextAppearance(context, i10);
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.q(context, i10);
         }
@@ -290,11 +290,11 @@ public class e extends Button implements androidx.core.widget.b {
 
     @Override // android.widget.TextView
     public void setTextSize(int i10, float f10) {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             super.setTextSize(i10, f10);
             return;
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1610e;
+        AppCompatTextHelper appCompatTextHelper = this.f1654e;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.A(i10, f10);
         }
@@ -304,10 +304,10 @@ public class e extends Button implements androidx.core.widget.b {
         super(s0.b(context), attributeSet, i10);
         r0.a(this, getContext());
         AppCompatBackgroundHelper appCompatBackgroundHelper = new AppCompatBackgroundHelper(this);
-        this.f1609d = appCompatBackgroundHelper;
+        this.f1653d = appCompatBackgroundHelper;
         appCompatBackgroundHelper.e(attributeSet, i10);
         AppCompatTextHelper appCompatTextHelper = new AppCompatTextHelper(this);
-        this.f1610e = appCompatTextHelper;
+        this.f1654e = appCompatTextHelper;
         appCompatTextHelper.m(attributeSet, i10);
         appCompatTextHelper.b();
         getEmojiTextViewHelper().c(attributeSet, i10);

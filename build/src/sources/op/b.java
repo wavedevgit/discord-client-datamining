@@ -1,28 +1,105 @@
 package op;
-
-import tq.d;
-import tq.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements d {
+public interface b {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final a f44626a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a implements b {
 
-    public b(a aVar) {
-        this.f44626a = aVar;
+        /* renamed from: a  reason: collision with root package name */
+        public static final a f44594a = new a();
+
+        private a() {
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof a)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return -1611120582;
+        }
+
+        public String toString() {
+            return "Pending";
+        }
     }
 
-    public static b a(a aVar) {
-        return new b(aVar);
+    /* renamed from: op.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0553b implements b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final C0553b f44595a = new C0553b();
+
+        private C0553b() {
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof C0553b)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return -39927199;
+        }
+
+        public String toString() {
+            return "Prompt";
+        }
     }
 
-    public static c c(a aVar) {
-        return (c) g.d(aVar.a());
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c implements b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final c f44596a = new c();
+
+        private c() {
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof c)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return 5529685;
+        }
+
+        public String toString() {
+            return "Review";
+        }
     }
 
-    @Override // javax.inject.Provider
-    /* renamed from: b */
-    public c get() {
-        return c(this.f44626a);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class d implements b {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final d f44597a = new d();
+
+        private d() {
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj || (obj instanceof d)) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return -1776980018;
+        }
+
+        public String toString() {
+            return "TakePhoto";
+        }
     }
 }

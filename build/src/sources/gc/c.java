@@ -6,54 +6,54 @@ import java.util.Set;
 final class c extends f.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f26598a;
+    private final long f26693a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f26599b;
+    private final long f26694b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f26600c;
+    private final Set f26695c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     static final class b extends f.b.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private Long f26601a;
+        private Long f26696a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Long f26602b;
+        private Long f26697b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Set f26603c;
+        private Set f26698c;
 
         @Override // gc.f.b.a
         public f.b a() {
             String str = "";
-            if (this.f26601a == null) {
+            if (this.f26696a == null) {
                 str = " delta";
             }
-            if (this.f26602b == null) {
+            if (this.f26697b == null) {
                 str = str + " maxAllowedDelay";
             }
-            if (this.f26603c == null) {
+            if (this.f26698c == null) {
                 str = str + " flags";
             }
             if (str.isEmpty()) {
-                return new c(this.f26601a.longValue(), this.f26602b.longValue(), this.f26603c);
+                return new c(this.f26696a.longValue(), this.f26697b.longValue(), this.f26698c);
             }
             throw new IllegalStateException("Missing required properties:" + str);
         }
 
         @Override // gc.f.b.a
         public f.b.a b(long j10) {
-            this.f26601a = Long.valueOf(j10);
+            this.f26696a = Long.valueOf(j10);
             return this;
         }
 
         @Override // gc.f.b.a
         public f.b.a c(Set set) {
             if (set != null) {
-                this.f26603c = set;
+                this.f26698c = set;
                 return this;
             }
             throw new NullPointerException("Null flags");
@@ -61,24 +61,24 @@ final class c extends f.b {
 
         @Override // gc.f.b.a
         public f.b.a d(long j10) {
-            this.f26602b = Long.valueOf(j10);
+            this.f26697b = Long.valueOf(j10);
             return this;
         }
     }
 
     @Override // gc.f.b
     long b() {
-        return this.f26598a;
+        return this.f26693a;
     }
 
     @Override // gc.f.b
     Set c() {
-        return this.f26600c;
+        return this.f26695c;
     }
 
     @Override // gc.f.b
     long d() {
-        return this.f26599b;
+        return this.f26694b;
     }
 
     public boolean equals(Object obj) {
@@ -87,7 +87,7 @@ final class c extends f.b {
         }
         if (obj instanceof f.b) {
             f.b bVar = (f.b) obj;
-            if (this.f26598a == bVar.b() && this.f26599b == bVar.d() && this.f26600c.equals(bVar.c())) {
+            if (this.f26693a == bVar.b() && this.f26694b == bVar.d() && this.f26695c.equals(bVar.c())) {
                 return true;
             }
         }
@@ -95,18 +95,18 @@ final class c extends f.b {
     }
 
     public int hashCode() {
-        long j10 = this.f26598a;
-        long j11 = this.f26599b;
-        return ((((((int) (j10 ^ (j10 >>> 32))) ^ 1000003) * 1000003) ^ ((int) ((j11 >>> 32) ^ j11))) * 1000003) ^ this.f26600c.hashCode();
+        long j10 = this.f26693a;
+        long j11 = this.f26694b;
+        return ((((((int) (j10 ^ (j10 >>> 32))) ^ 1000003) * 1000003) ^ ((int) ((j11 >>> 32) ^ j11))) * 1000003) ^ this.f26695c.hashCode();
     }
 
     public String toString() {
-        return "ConfigValue{delta=" + this.f26598a + ", maxAllowedDelay=" + this.f26599b + ", flags=" + this.f26600c + "}";
+        return "ConfigValue{delta=" + this.f26693a + ", maxAllowedDelay=" + this.f26694b + ", flags=" + this.f26695c + "}";
     }
 
     private c(long j10, long j11, Set set) {
-        this.f26598a = j10;
-        this.f26599b = j11;
-        this.f26600c = set;
+        this.f26693a = j10;
+        this.f26694b = j11;
+        this.f26695c = set;
     }
 }

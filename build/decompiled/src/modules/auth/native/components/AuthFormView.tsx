@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/auth/native/components/AuthFormView.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun60788: for (var _fun60788_ip = 0;;) switch (_fun60788_ip) {
+        _fun60893: for (var _fun60893_ip = 0;;) switch (_fun60893_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.children;
@@ -134,8 +134,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var9 != var16;
                 var11 = null;
                 if (!var7) {
-                    _fun60788_ip = 280;
-                    continue _fun60788
+                    _fun60893_ip = 280;
+                    continue _fun60893
                 }
             case 244:
                 var15 = _closure1_slot4;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var9 != var13;
                 var9 = null;
                 if (!var11) {
-                    _fun60788_ip = 327;
-                    continue _fun60788
+                    _fun60893_ip = 327;
+                    continue _fun60893
                 }
             case 297:
                 var12 = _closure1_slot4;
@@ -177,4 +177,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 7493, 7496, 7497, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 7524, 7527, 7528, 2]);

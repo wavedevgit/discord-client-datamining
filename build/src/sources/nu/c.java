@@ -1,70 +1,88 @@
 package nu;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
+import nu.f;
+import uu.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c {
+public final class c implements lu.a, f, uu.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f42219a;
+    public static final c f42337a = new c();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Map f42220b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final Object f42221c;
-
-    public c(List operationData, Map mappingOperation, Object obj) {
-        Intrinsics.checkNotNullParameter(operationData, "operationData");
-        Intrinsics.checkNotNullParameter(mappingOperation, "mappingOperation");
-        this.f42219a = operationData;
-        this.f42220b = mappingOperation;
-        this.f42221c = obj;
-    }
-
-    public final Map a() {
-        return this.f42220b;
-    }
-
-    public final List b() {
-        return this.f42219a;
-    }
-
-    public final Object c() {
-        return this.f42221c;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
+        a(Object obj) {
+            super(2, obj, c.class, "filterOrEmptyList", "filterOrEmptyList(Loperations/array/ArrayOperationInputData;LLogicEvaluator;)Ljava/util/List;", 0);
         }
-        if (!(obj instanceof c)) {
-            return false;
+
+        @Override // kotlin.jvm.functions.Function2
+        /* renamed from: a */
+        public final List invoke(b p02, h p12) {
+            Intrinsics.checkNotNullParameter(p02, "p0");
+            Intrinsics.checkNotNullParameter(p12, "p1");
+            return ((c) this.receiver).h(p02, p12);
         }
-        c cVar = (c) obj;
-        if (Intrinsics.areEqual(this.f42219a, cVar.f42219a) && Intrinsics.areEqual(this.f42220b, cVar.f42220b) && Intrinsics.areEqual(this.f42221c, cVar.f42221c)) {
-            return true;
-        }
-        return false;
     }
 
-    public int hashCode() {
-        int hashCode;
-        int hashCode2 = ((this.f42219a.hashCode() * 31) + this.f42220b.hashCode()) * 31;
-        Object obj = this.f42221c;
-        if (obj == null) {
-            hashCode = 0;
-        } else {
-            hashCode = obj.hashCode();
-        }
-        return hashCode2 + hashCode;
+    private c() {
     }
 
-    public String toString() {
-        List list = this.f42219a;
-        Map map = this.f42220b;
-        Object obj = this.f42221c;
-        return "OccurrenceCheckInputData(operationData=" + list + ", mappingOperation=" + map + ", operationDefault=" + obj + ")";
+    /* JADX INFO: Access modifiers changed from: private */
+    public final List h(b bVar, h hVar) {
+        List b10 = bVar.b();
+        if (b10 == null) {
+            b10 = CollectionsKt.l();
+        }
+        ArrayList arrayList = new ArrayList();
+        for (Object obj : b10) {
+            if (f42337a.i(hVar, obj, bVar.a(), bVar.c())) {
+                arrayList.add(obj);
+            }
+        }
+        return arrayList;
+    }
+
+    private final boolean i(h hVar, Object obj, Map map, Object obj2) {
+        Object a10;
+        if (map != null && (a10 = hVar.a(map, obj)) != null) {
+            obj2 = a10;
+        }
+        return j(obj2);
+    }
+
+    @Override // nu.a
+    public Object a(Map map, List list) {
+        return f.a.b(this, map, list);
+    }
+
+    @Override // nu.f
+    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
+        return f.a.c(this, obj, obj2, hVar, function2);
+    }
+
+    @Override // nu.a
+    public b c(List list, Object obj, h hVar) {
+        return f.a.a(this, list, obj, hVar);
+    }
+
+    @Override // lu.a
+    public Object e(Object obj, Object obj2, h evaluator) {
+        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+        return b(obj, obj2, evaluator, new a(this));
+    }
+
+    @Override // pv.a
+    public List f(List list, Object obj, h hVar) {
+        return f.a.d(this, list, obj, hVar);
+    }
+
+    public boolean j(Object obj) {
+        return d.a.a(this, obj);
     }
 }

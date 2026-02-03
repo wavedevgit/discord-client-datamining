@@ -9,15 +9,15 @@ import th.w;
 public final class k implements t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w f49067a;
+    private final w f49121a;
 
     public k(w wVar) {
-        this.f49067a = wVar;
+        this.f49121a = wVar;
     }
 
     @Override // th.w
     public final /* bridge */ /* synthetic */ Object a() {
-        y e10 = y.e(((q4) this.f49067a).b());
+        y e10 = y.e(((q4) this.f49121a).b());
         s.a(e10);
         return e10;
     }

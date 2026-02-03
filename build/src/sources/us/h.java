@@ -1,18 +1,59 @@
 package us;
 
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class h implements e {
+public class h implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f50564a;
+    private final List f50650a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final int f50565b;
+    public h(List formats) {
+        Intrinsics.checkNotNullParameter(formats, "formats");
+        this.f50650a = formats;
+    }
 
-    public h(e formatter, int i10) {
-        Intrinsics.checkNotNullParameter(formatter, "formatter");
-        this.f50564a = formatter;
-        this.f50565b = i10;
+    @Override // us.o
+    public vs.e a() {
+        List<s> list = this.f50650a;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+        for (s sVar : list) {
+            arrayList.add(sVar.a());
+        }
+        if (arrayList.size() == 1) {
+            return (vs.e) CollectionsKt.Q0(arrayList);
+        }
+        return new vs.a(arrayList);
+    }
+
+    @Override // us.o
+    public ws.q b() {
+        List<s> list = this.f50650a;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+        for (s sVar : list) {
+            arrayList.add(sVar.b());
+        }
+        return ws.n.b(arrayList);
+    }
+
+    public final List c() {
+        return this.f50650a;
+    }
+
+    public boolean equals(Object obj) {
+        if ((obj instanceof h) && Intrinsics.areEqual(this.f50650a, ((h) obj).f50650a)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return this.f50650a.hashCode();
+    }
+
+    public String toString() {
+        return "ConcatenatedFormatStructure(" + CollectionsKt.x0(this.f50650a, ", ", null, null, 0, null, null, 62, null) + ')';
     }
 }

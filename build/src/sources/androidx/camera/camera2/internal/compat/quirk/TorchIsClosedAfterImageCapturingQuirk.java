@@ -9,10 +9,10 @@ import java.util.Locale;
 public class TorchIsClosedAfterImageCapturingQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final List f1923a = Arrays.asList("mi a1", "mi a2", "mi a2 lite", "redmi 4x", "redmi 5a", "redmi note 5", "redmi note 5 pro", "redmi 6 pro");
+    public static final List f1967a = Arrays.asList("mi a1", "mi a2", "mi a2 lite", "redmi 4x", "redmi 5a", "redmi note 5", "redmi note 5 pro", "redmi 6 pro");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean c() {
-        return f1923a.contains(Build.MODEL.toLowerCase(Locale.US));
+        return f1967a.contains(Build.MODEL.toLowerCase(Locale.US));
     }
 }

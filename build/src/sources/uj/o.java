@@ -7,23 +7,23 @@ import mg.zh;
 public final class o implements tj.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final zh f50339a;
+    private final zh f50395a;
 
     public o(zh zhVar) {
-        this.f50339a = zhVar;
+        this.f50395a = zhVar;
     }
 
     @Override // tj.a
     public final Rect a() {
-        zh zhVar = this.f50339a;
-        if (zhVar.f39062p != null) {
+        zh zhVar = this.f50395a;
+        if (zhVar.f39042p != null) {
             int i10 = 0;
             int i11 = Integer.MIN_VALUE;
             int i12 = Integer.MAX_VALUE;
             int i13 = Integer.MAX_VALUE;
             int i14 = Integer.MIN_VALUE;
             while (true) {
-                Point[] pointArr = zhVar.f39062p;
+                Point[] pointArr = zhVar.f39042p;
                 if (i10 < pointArr.length) {
                     Point point = pointArr[i10];
                     i12 = Math.min(i12, point.x);
@@ -42,21 +42,21 @@ public final class o implements tj.a {
 
     @Override // tj.a
     public final String b() {
-        return this.f50339a.f39059e;
+        return this.f50395a.f39039e;
     }
 
     @Override // tj.a
     public final int c() {
-        return this.f50339a.f39061o;
+        return this.f50395a.f39041o;
     }
 
     @Override // tj.a
     public final Point[] d() {
-        return this.f50339a.f39062p;
+        return this.f50395a.f39042p;
     }
 
     @Override // tj.a
     public final int getFormat() {
-        return this.f50339a.f39058d;
+        return this.f50395a.f39038d;
     }
 }

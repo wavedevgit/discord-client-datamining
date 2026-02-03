@@ -1,138 +1,150 @@
 package ht;
 
-import java.io.ObjectInputStream;
-import java.io.Serializable;
-import java.io.StreamCorruptedException;
-import net.time4j.a0;
-import net.time4j.f0;
-import qt.f;
+import kotlin.jvm.internal.LongCompanionObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c implements Serializable {
-    private static final long serialVersionUID = 486345450973062467L;
-    private final f scale;
-    private final double value;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static /* synthetic */ class a {
-
-        /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f28215a;
-
-        static {
-            int[] iArr = new int[f.values().length];
-            f28215a = iArr;
-            try {
-                iArr[f.UT.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                f28215a[f.TT.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
-            }
-            try {
-                f28215a[f.POSIX.ordinal()] = 3;
-            } catch (NoSuchFieldError unused3) {
-            }
+public abstract class c {
+    public static int a(int i10, int i11) {
+        if (i10 >= 0) {
+            return i10 / i11;
         }
+        return ((i10 + 1) / i11) - 1;
     }
 
-    private c(double d10, f fVar) {
-        a(d10, fVar);
-        this.value = d10;
-        this.scale = fVar;
-    }
-
-    private static void a(double d10, f fVar) {
-        if (!Double.isNaN(d10) && !Double.isInfinite(d10)) {
-            int i10 = a.f28215a[fVar.ordinal()];
-            if (i10 != 1 && i10 != 2 && i10 != 3) {
-                throw new IllegalArgumentException("Unsupported time scale: " + fVar);
-            } else if (Double.compare(990575.0d, d10) <= 0 && Double.compare(d10, 2817152.0d) <= 0) {
-                return;
-            } else {
-                throw new IllegalArgumentException("Out of range: " + d10);
-            }
+    public static long b(long j10, int i10) {
+        if (j10 >= 0) {
+            return j10 / i10;
         }
-        throw new IllegalArgumentException("Value is not finite: " + d10);
+        return ((j10 + 1) / i10) - 1;
     }
 
-    static double d(a0 a0Var, f fVar) {
-        return ((a0Var.s(fVar) + e(fVar)) + (a0Var.k(fVar) / 1.0E9d)) / 86400.0d;
+    public static int c(int i10, int i11) {
+        return i10 - (i11 * a(i10, i11));
     }
 
-    private static long e(f fVar) {
-        int i10 = a.f28215a[fVar.ordinal()];
-        if (i10 != 1 && i10 != 2) {
-            if (i10 == 3) {
-                return 210866760000L;
-            }
-            throw new UnsupportedOperationException(fVar.name());
+    public static int d(long j10, int i10) {
+        return (int) (j10 - (i10 * b(j10, i10)));
+    }
+
+    public static int e(int i10, int i11) {
+        if (i11 == 0) {
+            return i10;
         }
-        return 210929832000L;
-    }
-
-    public static c f(double d10) {
-        return new c(d10, f.TT);
-    }
-
-    public static c g(a0 a0Var) {
-        f fVar = f.TT;
-        return new c(d(a0Var, fVar), fVar);
-    }
-
-    private void readObject(ObjectInputStream objectInputStream) {
-        try {
-            objectInputStream.defaultReadObject();
-            a(this.value, this.scale);
-        } catch (ClassNotFoundException unused) {
-            throw new StreamCorruptedException();
-        } catch (IllegalArgumentException unused2) {
-            throw new StreamCorruptedException();
+        long j10 = i10 + i11;
+        if (j10 >= -2147483648L && j10 <= 2147483647L) {
+            return (int) j10;
         }
+        StringBuilder sb2 = new StringBuilder(32);
+        sb2.append("Integer overflow: (");
+        sb2.append(i10);
+        sb2.append(',');
+        sb2.append(i11);
+        sb2.append(')');
+        throw new ArithmeticException(sb2.toString());
     }
 
-    public double b() {
-        return this.value - 2400000.5d;
-    }
-
-    public double c() {
-        return this.value;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+    public static long f(long j10, long j11) {
+        int i10 = (j11 > 0L ? 1 : (j11 == 0L ? 0 : -1));
+        if (i10 == 0) {
+            return j10;
         }
-        if (obj instanceof c) {
-            c cVar = (c) obj;
-            if (this.value == cVar.value && this.scale == cVar.scale) {
-                return true;
-            }
+        if (i10 <= 0 ? j10 >= Long.MIN_VALUE - j11 : j10 <= LongCompanionObject.MAX_VALUE - j11) {
+            return j10 + j11;
         }
-        return false;
+        StringBuilder sb2 = new StringBuilder(32);
+        sb2.append("Long overflow: (");
+        sb2.append(j10);
+        sb2.append(',');
+        sb2.append(j11);
+        sb2.append(')');
+        throw new ArithmeticException(sb2.toString());
     }
 
-    public a0 h() {
-        f fVar;
-        double d10 = this.value * 86400.0d;
-        f fVar2 = this.scale;
-        if (!qt.d.p().D() && fVar2 != (fVar = f.POSIX)) {
-            if (fVar2 == f.TT) {
-                f0 M0 = f0.M0((long) Math.floor(b()), jt.a0.MODIFIED_JULIAN_DATE);
-                d10 -= f.d(M0.f(), M0.u());
-            }
-            d10 += 6.3072E7d;
-            fVar2 = fVar;
+    public static int g(long j10) {
+        if (j10 >= -2147483648L && j10 <= 2147483647L) {
+            return (int) j10;
         }
-        return a0.l0(gt.c.m((long) d10, e(fVar2)), (int) ((d10 - Math.floor(d10)) * 1.0E9d), fVar2);
+        throw new ArithmeticException("Out of range: " + j10);
     }
 
-    public int hashCode() {
-        return ht.a.a(this.value) ^ this.scale.hashCode();
+    public static int h(int i10, int i11) {
+        if (i11 == 1) {
+            return i10;
+        }
+        long j10 = i10 * i11;
+        if (j10 >= -2147483648L && j10 <= 2147483647L) {
+            return (int) j10;
+        }
+        StringBuilder sb2 = new StringBuilder(32);
+        sb2.append("Integer overflow: (");
+        sb2.append(i10);
+        sb2.append(',');
+        sb2.append(i11);
+        sb2.append(')');
+        throw new ArithmeticException(sb2.toString());
     }
 
-    public String toString() {
-        return "JD(" + this.scale.name() + ')' + this.value;
+    public static long i(long j10, long j11) {
+        int i10;
+        if (j11 == 1) {
+            return j10;
+        }
+        if (j11 <= 0 ? !(j11 >= -1 ? i10 != 0 || j10 != Long.MIN_VALUE : j10 <= Long.MIN_VALUE / j11 && j10 >= LongCompanionObject.MAX_VALUE / j11) : !(j10 <= LongCompanionObject.MAX_VALUE / j11 && j10 >= Long.MIN_VALUE / j11)) {
+            StringBuilder sb2 = new StringBuilder(32);
+            sb2.append("Long overflow: (");
+            sb2.append(j10);
+            sb2.append(',');
+            sb2.append(j11);
+            sb2.append(')');
+            throw new ArithmeticException(sb2.toString());
+        }
+        return j10 * j11;
+    }
+
+    public static int j(int i10) {
+        if (i10 != Integer.MIN_VALUE) {
+            return -i10;
+        }
+        throw new ArithmeticException("Not negatable: " + i10);
+    }
+
+    public static long k(long j10) {
+        if (j10 != Long.MIN_VALUE) {
+            return -j10;
+        }
+        throw new ArithmeticException("Not negatable: " + j10);
+    }
+
+    public static int l(int i10, int i11) {
+        if (i11 == 0) {
+            return i10;
+        }
+        long j10 = i10 - i11;
+        if (j10 >= -2147483648L && j10 <= 2147483647L) {
+            return (int) j10;
+        }
+        StringBuilder sb2 = new StringBuilder(32);
+        sb2.append("Integer overflow: (");
+        sb2.append(i10);
+        sb2.append(',');
+        sb2.append(i11);
+        sb2.append(')');
+        throw new ArithmeticException(sb2.toString());
+    }
+
+    public static long m(long j10, long j11) {
+        int i10 = (j11 > 0L ? 1 : (j11 == 0L ? 0 : -1));
+        if (i10 == 0) {
+            return j10;
+        }
+        if (i10 <= 0 ? j10 <= LongCompanionObject.MAX_VALUE + j11 : j10 >= Long.MIN_VALUE + j11) {
+            return j10 - j11;
+        }
+        StringBuilder sb2 = new StringBuilder(32);
+        sb2.append("Long overflow: (");
+        sb2.append(j10);
+        sb2.append(',');
+        sb2.append(j11);
+        sb2.append(')');
+        throw new ArithmeticException(sb2.toString());
     }
 }

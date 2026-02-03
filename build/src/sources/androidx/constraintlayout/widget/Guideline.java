@@ -9,11 +9,11 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 public class Guideline extends View {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f2590d;
+    private boolean f2634d;
 
     public Guideline(Context context) {
         super(context);
-        this.f2590d = true;
+        this.f2634d = true;
         super.setVisibility(8);
     }
 
@@ -27,33 +27,33 @@ public class Guideline extends View {
     }
 
     public void setFilterRedundantCalls(boolean z10) {
-        this.f2590d = z10;
+        this.f2634d = z10;
     }
 
     public void setGuidelineBegin(int i10) {
         ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) getLayoutParams();
-        if (this.f2590d && layoutParams.f2406a == i10) {
+        if (this.f2634d && layoutParams.f2450a == i10) {
             return;
         }
-        layoutParams.f2406a = i10;
+        layoutParams.f2450a = i10;
         setLayoutParams(layoutParams);
     }
 
     public void setGuidelineEnd(int i10) {
         ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) getLayoutParams();
-        if (this.f2590d && layoutParams.f2408b == i10) {
+        if (this.f2634d && layoutParams.f2452b == i10) {
             return;
         }
-        layoutParams.f2408b = i10;
+        layoutParams.f2452b = i10;
         setLayoutParams(layoutParams);
     }
 
     public void setGuidelinePercent(float f10) {
         ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) getLayoutParams();
-        if (this.f2590d && layoutParams.f2410c == f10) {
+        if (this.f2634d && layoutParams.f2454c == f10) {
             return;
         }
-        layoutParams.f2410c = f10;
+        layoutParams.f2454c = f10;
         setLayoutParams(layoutParams);
     }
 
@@ -63,7 +63,7 @@ public class Guideline extends View {
 
     public Guideline(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f2590d = true;
+        this.f2634d = true;
         super.setVisibility(8);
     }
 }

@@ -5,38 +5,38 @@ import android.util.Rational;
 public class b1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private float f52861a;
+    private float f53069a;
 
     /* renamed from: b  reason: collision with root package name */
-    private float f52862b;
+    private float f53070b;
 
     /* renamed from: c  reason: collision with root package name */
-    private float f52863c;
+    private float f53071c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Rational f52864d;
+    private Rational f53072d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b1(float f10, float f11, float f12, Rational rational) {
-        this.f52861a = f10;
-        this.f52862b = f11;
-        this.f52863c = f12;
-        this.f52864d = rational;
+        this.f53069a = f10;
+        this.f53070b = f11;
+        this.f53071c = f12;
+        this.f53072d = rational;
     }
 
     public float a() {
-        return this.f52863c;
+        return this.f53071c;
     }
 
     public Rational b() {
-        return this.f52864d;
+        return this.f53072d;
     }
 
     public float c() {
-        return this.f52861a;
+        return this.f53069a;
     }
 
     public float d() {
-        return this.f52862b;
+        return this.f53070b;
     }
 }

@@ -1,81 +1,85 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0, arg1, arg2() {
-        _fun68443: for (var _fun68443_ip = 0;;) switch (_fun68443_ip) {
-            case 0:
-                var4 = arg0;
-                var6 = arg1;
-                var5 = arg2;
-                var1 = var4.length;
-                var3 = 0;
-                var0 = var6;
-                if (!(var0 < var3)) {
-                    _fun68443_ip = 42;
-                    continue _fun68443
-                }
-            case 23:
-                var2 = -var6;
-                var7 = var2 > var1;
-                var2 = 0;
-                if (var7) {
-                    _fun68443_ip = 39;
-                    continue _fun68443
-                }
-            case 35:
-                var2 = var1 + var6;
-            case 39:
-                var0 = var2;
-            case 42:
-                if (!(var5 > var1)) {
-                    _fun68443_ip = 49;
-                    continue _fun68443
-                }
-            case 46:
-                var5 = var1;
-            case 49:
-                var2 = var5;
-                if (!(var2 < var3)) {
-                    _fun68443_ip = 60;
-                    continue _fun68443
-                }
-            case 56:
-                var2 = var5 + var1;
-            case 60:
-                var5 = var0 > var2;
-                var1 = 0;
-                if (var5) {
-                    _fun68443_ip = 77;
-                    continue _fun68443
-                }
-            case 69:
-                var2 = var2 - var0;
-                var1 = var2 >>> var3;
-            case 77:
-                var2 = var0 >>> var3;
-                var0 = global;
-                var5 = var0.Array;
-                var0 = undefined;
-                var0 = var5.bind(var0)(var1);
-                var3 = 0;
-                if (!(var3 < var1)) {
-                    _fun68443_ip = 121;
-                    continue _fun68443
-                }
-            case 102:
-                var5 = var3 + var2;
-                var5 = var4[var5];
-                var0[var3] = var5;
-                var3 = var3 + 1;
-                if (var3 < var1) {
-                    _fun68443_ip = 102;
-                    continue _fun68443
-                }
-            case 121:
-                return var0;
-        }
-    };
-    var0 = arg4;
-    var0.exports = var1;
+    var5 = require;
+    var2 = exports;
+    var7 = dependencyMap;
+    var0 = global;
+    var8 = var0.Object;
+    var6 = var8.defineProperty;
+    var4 = {};
+    var1 = true;
+    var4.value = var1;
+    var1 = '__esModule';
+    var1 = var6.bind(var8)(var2, var1, var4);
+    var1 = {};
+    var6 = 'KeyboardControllerView';
+    var1.uiViewClassName = var6;
+    var4 = {};
+    var8 = {};
+    var9 = 'onKeyboardMoveStart';
+    var8.registrationName = var9;
+    var4.topKeyboardMoveStart = var8;
+    var8 = {};
+    var9 = 'onKeyboardMove';
+    var8.registrationName = var9;
+    var4.topKeyboardMove = var8;
+    var8 = {};
+    var9 = 'onKeyboardMoveEnd';
+    var8.registrationName = var9;
+    var4.topKeyboardMoveEnd = var8;
+    var8 = {};
+    var9 = 'onKeyboardMoveInteractive';
+    var8.registrationName = var9;
+    var4.topKeyboardMoveInteractive = var8;
+    var8 = {};
+    var9 = 'onFocusedInputLayoutChanged';
+    var8.registrationName = var9;
+    var4.topFocusedInputLayoutChanged = var8;
+    var8 = {};
+    var9 = 'onFocusedInputTextChanged';
+    var8.registrationName = var9;
+    var4.topFocusedInputTextChanged = var8;
+    var8 = {};
+    var9 = 'onFocusedInputSelectionChanged';
+    var8.registrationName = var9;
+    var4.topFocusedInputSelectionChanged = var8;
+    var1.directEventTypes = var4;
+    var10 = var0.Object;
+    var9 = var10.assign;
+    var0 = 0;
+    var4 = var7[var0];
     var0 = undefined;
+    var11 = var5.bind(var0)(var4);
+    var8 = var11.ConditionallyIgnoredEventHandlers;
+    var4 = {
+        'onKeyboardMoveStart': true,
+        'onKeyboardMove': true,
+        'onKeyboardMoveEnd': true,
+        'onKeyboardMoveInteractive': true,
+        'onFocusedInputLayoutChanged': true,
+        'onFocusedInputTextChanged': true,
+        'onFocusedInputSelectionChanged': true
+    };
+    var8 = var8.bind(var11)(var4);
+    var4 = {
+        'enabled': true,
+        'statusBarTranslucent': true,
+        'navigationBarTranslucent': true,
+        'preserveEdgeToEdge': true
+    };
+    var4 = var9.bind(var10)(var4, var8);
+    var1.validAttributes = var4;
+    var _closure1_slot0 = var1;
+    var4 = 1;
+    var4 = var7[var4];
+    var5 = var5.bind(var0)(var4);
+    var4 = var5.get;
+    var3 = function() { // Environment: var3
+        var0 = _closure1_slot0;
+        return var0;
+    };
+    var3 = var4.bind(var5)(var6, var3);
+    var2.default = var3;
+    var2.__INTERNAL_VIEW_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [110, 42]);

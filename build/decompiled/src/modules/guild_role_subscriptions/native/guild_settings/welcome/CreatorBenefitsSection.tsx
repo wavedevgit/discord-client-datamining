@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = function arg0, arg1() {
-        _fun116442: for (var _fun116442_ip = 0;;) switch (_fun116442_ip) {
+        _fun116386: for (var _fun116386_ip = 0;;) switch (_fun116386_ip) {
             case 0:
                 var1 = arg0;
                 var3 = _closure1_slot0;
@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = arg1;
                 var0 = var2.bind(var3)(var0);
                 if (var0) {
-                    _fun116442_ip = 53;
-                    continue _fun116442
+                    _fun116386_ip = 53;
+                    continue _fun116386
                 }
             case 45:
                 var0 = var1.greenTextLightMode;
-                _fun116442_ip = 59;
-                continue _fun116442;
+                _fun116386_ip = 59;
+                continue _fun116386;
             case 53:
                 var0 = var1.greenTextDarkMode;
             case 59:
@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var0;
     var0 = function() {
-        _fun116443: for (var _fun116443_ip = 0;;) switch (_fun116443_ip) {
+        _fun116387: for (var _fun116387_ip = 0;;) switch (_fun116387_ip) {
             case 0:
                 var1 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.isThemeDark;
                 var5 = var5.bind(var6)(var19);
                 if (!var5) {
-                    _fun116443_ip = 97;
-                    continue _fun116443
+                    _fun116387_ip = 97;
+                    continue _fun116387
                 }
             case 91:
                 var5 = var11.earningMetricsShadowContainerDarkMode;
@@ -84,13 +84,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var10.isThemeDark;
                 var9 = var9.bind(var10)(var19);
                 if (var9) {
-                    _fun116443_ip = 178;
-                    continue _fun116443
+                    _fun116387_ip = 178;
+                    continue _fun116387
                 }
             case 170:
                 var9 = var11.earningMetricsLightMode;
-                _fun116443_ip = 184;
-                continue _fun116443;
+                _fun116387_ip = 184;
+                continue _fun116387;
             case 178:
                 var9 = var11.earningMetricsDarkMode;
             case 184:
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot9 = var0;
     var0 = function() {
-        _fun116444: for (var _fun116444_ip = 0;;) switch (_fun116444_ip) {
+        _fun116388: for (var _fun116388_ip = 0;;) switch (_fun116388_ip) {
             case 0:
                 var1 = _closure1_slot1;
                 var15 = _closure1_slot2;
@@ -241,15 +241,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = _closure1_slot1;
                 var15 = _closure1_slot2;
                 if (var12) {
-                    _fun116444_ip = 291;
-                    continue _fun116444
+                    _fun116388_ip = 291;
+                    continue _fun116388
                 }
             case 277:
                 var12 = 13;
                 var12 = var15[var12];
                 var12 = var14.bind(var3)(var12);
-                _fun116444_ip = 303;
-                continue _fun116444;
+                _fun116388_ip = 303;
+                continue _fun116388;
             case 291:
                 var13 = 12;
                 var13 = var15[var13];
@@ -692,4 +692,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5599, 33, 1297, 671, 3167, 3207, 3902, 1234, 4669, 14801, 14802, 14803, 14804, 14805, 14806, 14807, 14808, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5630, 33, 1297, 671, 3197, 3237, 3932, 1234, 4699, 14832, 14833, 14834, 14835, 14836, 14837, 14838, 14839, 2]);

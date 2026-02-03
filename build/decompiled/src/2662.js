@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22115: for (var _fun22115_ip = 0;;) switch (_fun22115_ip) {
+    _fun22125: for (var _fun22125_ip = 0;;) switch (_fun22125_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun22115_ip = 77;
-                continue _fun22115
+                _fun22125_ip = 77;
+                continue _fun22125
             }
         case 65:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun22115_ip = 86;
-                continue _fun22115
+                _fun22125_ip = 86;
+                continue _fun22125
             }
         case 77:
             var2 = {};
@@ -36,49 +36,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 86:
             var2 = {};
             var4 = function arg0, arg1() {
-                _fun22116: for (var _fun22116_ip = 0;;) switch (_fun22116_ip) {
-                    case 0:
-                        var0 = global;
-                        var2 = var0.Number;
-                        var1 = undefined;
-                        var0 = arg0;
-                        var1 = var2.bind(var1)(var0);
-                        var0 = 100;
-                        var2 = var1 % var0;
-                        var0 = 20;
-                        if (!(!(var2 > var0))) {
-                            _fun22116_ip = 39;
-                            continue _fun22116
-                        }
-                    case 32:
-                        var0 = 10;
-                        if (!(var2 < var0)) {
-                            _fun22116_ip = 60;
-                            continue _fun22116
-                        }
-                    case 39:
-                        var0 = 10;
-                        var2 = var2 % var0;
-                        var0 = 1;
-                        if (!(var0 !== var2)) {
-                            _fun22116_ip = 72;
-                            continue _fun22116
-                        }
-                    case 53:
-                        var0 = 2;
-                        if (!(var0 !== var2)) {
-                            _fun22116_ip = 72;
-                            continue _fun22116
-                        }
-                    case 60:
-                        var0 = ':e';
-                        var0 = var1 + var0;
-                        return var0;
-                    case 72:
-                        var0 = ':a';
-                        var0 = var1 + var0;
-                        return var0;
-                }
+                var0 = global;
+                var2 = var0.Number;
+                var1 = undefined;
+                var0 = arg0;
+                var1 = var2.bind(var1)(var0);
+                var0 = '.';
+                var0 = var1 + var0;
+                return var0;
             };
             var2.ordinalNumber = var4;
             var6 = var3.default;
@@ -88,7 +53,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5.narrow = var8;
             var8 = ['f.Kr.', 'e.Kr.'];
             var5.abbreviated = var8;
-            var8 = ['före Kristus', 'efter Kristus'];
+            var8 = ['før Kristus', 'etter Kristus'];
             var5.wide = var8;
             var4.values = var5;
             var5 = 'wide';
@@ -102,7 +67,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var8.narrow = var9;
             var9 = ['Q1', 'Q2', 'Q3', 'Q4'];
             var8.abbreviated = var9;
-            var9 = ['1:a kvartalet', '2:a kvartalet', '3:e kvartalet', '4:e kvartalet'];
+            var9 = ['1. kvartal', '2. kvartal', '3. kvartal', '4. kvartal'];
             var8.wide = var9;
             var4.values = var8;
             var4.defaultWidth = var5;
@@ -120,9 +85,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = {};
             var8 = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
             var7.narrow = var8;
-            var8 = ['jan.', 'feb.', 'mars', 'apr.', 'maj', 'juni', 'juli', 'aug.', 'sep.', 'okt.', 'nov.', 'dec.'];
+            var8 = ['jan.', 'feb.', 'mars', 'apr.', 'mai', 'juni', 'juli', 'aug.', 'sep.', 'okt.', 'nov.', 'des.'];
             var7.abbreviated = var8;
-            var8 = ['januari', 'februari', 'mars', 'april', 'maj', 'juni', 'juli', 'augusti', 'september', 'oktober', 'november', 'december'];
+            var8 = ['januar', 'februar', 'mars', 'april', 'mai', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'desember'];
             var7.wide = var8;
             var4.values = var7;
             var4.defaultWidth = var5;
@@ -133,11 +98,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var7 = {};
             var8 = ['S', 'M', 'T', 'O', 'T', 'F', 'L'];
             var7.narrow = var8;
-            var8 = ['sö', 'må', 'ti', 'on', 'to', 'fr', 'lö'];
+            var8 = ['sø', 'ma', 'ti', 'on', 'to', 'fr', 'lø'];
             var7.short = var8;
-            var8 = ['sön', 'mån', 'tis', 'ons', 'tors', 'fre', 'lör'];
+            var8 = ['søn', 'man', 'tir', 'ons', 'tor', 'fre', 'lør'];
             var7.abbreviated = var8;
-            var8 = ['söndag', 'måndag', 'tisdag', 'onsdag', 'torsdag', 'fredag', 'lördag'];
+            var8 = ['søndag', 'mandag', 'tirsdag', 'onsdag', 'torsdag', 'fredag', 'lørdag'];
             var7.wide = var8;
             var4.values = var7;
             var4.defaultWidth = var5;
@@ -147,76 +112,40 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = {};
             var6 = {};
             var7 = {
-                'am': 'fm',
-                'pm': 'em',
+                'am': 'a',
+                'pm': 'p',
                 'midnight': 'midnatt',
                 'noon': 'middag',
-                'morning': 'morg.',
-                'afternoon': 'efterm.',
-                'evening': 'kväll',
-                'night': 'natt'
+                'morning': 'på morg.',
+                'afternoon': 'på etterm.',
+                'evening': 'på kvelden',
+                'night': 'på natten'
             };
             var6.narrow = var7;
             var7 = {
-                'am': 'f.m.',
-                'pm': 'e.m.',
+                'am': 'a.m.',
+                'pm': 'p.m.',
                 'midnight': 'midnatt',
                 'noon': 'middag',
-                'morning': 'morgon',
-                'afternoon': 'efterm.',
-                'evening': 'kväll',
-                'night': 'natt'
+                'morning': 'på morg.',
+                'afternoon': 'på etterm.',
+                'evening': 'på kvelden',
+                'night': 'på natten'
             };
             var6.abbreviated = var7;
             var7 = {
-                'am': 'förmiddag',
-                'pm': 'eftermiddag',
+                'am': 'a.m.',
+                'pm': 'p.m.',
                 'midnight': 'midnatt',
                 'noon': 'middag',
-                'morning': 'morgon',
-                'afternoon': 'eftermiddag',
-                'evening': 'kväll',
-                'night': 'natt'
+                'morning': 'på morgenen',
+                'afternoon': 'på ettermiddagen',
+                'evening': 'på kvelden',
+                'night': 'på natten'
             };
             var6.wide = var7;
             var3.values = var6;
             var3.defaultWidth = var5;
-            var6 = {};
-            var7 = {
-                'am': 'fm',
-                'pm': 'em',
-                'midnight': 'midnatt',
-                'noon': 'middag',
-                'morning': 'på morg.',
-                'afternoon': 'på efterm.',
-                'evening': 'på kvällen',
-                'night': 'på natten'
-            };
-            var6.narrow = var7;
-            var7 = {
-                'am': 'fm',
-                'pm': 'em',
-                'midnight': 'midnatt',
-                'noon': 'middag',
-                'morning': 'på morg.',
-                'afternoon': 'på efterm.',
-                'evening': 'på kvällen',
-                'night': 'på natten'
-            };
-            var6.abbreviated = var7;
-            var7 = {
-                'am': 'fm',
-                'pm': 'em',
-                'midnight': 'midnatt',
-                'noon': 'middag',
-                'morning': 'på morgonen',
-                'afternoon': 'på eftermiddagen',
-                'evening': 'på kvällen',
-                'night': 'på natten'
-            };
-            var6.wide = var7;
-            var3.formattingValues = var6;
-            var3.defaultFormattingWidth = var5;
             var3 = var4.bind(var0)(var3);
             var2.dayPeriod = var3;
             var1.default = var2;

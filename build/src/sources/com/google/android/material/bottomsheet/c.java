@@ -9,32 +9,32 @@ import java.util.List;
 class c extends x0.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private final View f15662d;
+    private final View f15291d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f15663e;
+    private int f15292e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f15664i;
+    private int f15293i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int[] f15665o;
+    private final int[] f15294o;
 
     public c(View view) {
         super(0);
-        this.f15665o = new int[2];
-        this.f15662d = view;
+        this.f15294o = new int[2];
+        this.f15291d = view;
     }
 
     @Override // androidx.core.view.x0.b
     public void onEnd(x0 x0Var) {
-        this.f15662d.setTranslationY(0.0f);
+        this.f15291d.setTranslationY(0.0f);
     }
 
     @Override // androidx.core.view.x0.b
     public void onPrepare(x0 x0Var) {
-        this.f15662d.getLocationOnScreen(this.f15665o);
-        this.f15663e = this.f15665o[1];
+        this.f15291d.getLocationOnScreen(this.f15294o);
+        this.f15292e = this.f15294o[1];
     }
 
     @Override // androidx.core.view.x0.b
@@ -46,7 +46,7 @@ class c extends x0.b {
             }
             x0 x0Var = (x0) it.next();
             if ((x0Var.c() & WindowInsetsCompat.p.c()) != 0) {
-                this.f15662d.setTranslationY(zg.a.c(this.f15664i, 0, x0Var.b()));
+                this.f15291d.setTranslationY(zg.a.c(this.f15293i, 0, x0Var.b()));
                 break;
             }
         }
@@ -55,10 +55,10 @@ class c extends x0.b {
 
     @Override // androidx.core.view.x0.b
     public x0.a onStart(x0 x0Var, x0.a aVar) {
-        this.f15662d.getLocationOnScreen(this.f15665o);
-        int i10 = this.f15663e - this.f15665o[1];
-        this.f15664i = i10;
-        this.f15662d.setTranslationY(i10);
+        this.f15291d.getLocationOnScreen(this.f15294o);
+        int i10 = this.f15292e - this.f15294o[1];
+        this.f15293i = i10;
+        this.f15291d.setTranslationY(i10);
         return aVar;
     }
 }

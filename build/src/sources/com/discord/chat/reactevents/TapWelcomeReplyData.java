@@ -4,7 +4,7 @@ import com.discord.primitives.MessageId;
 import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -21,14 +21,14 @@ public final class TapWelcomeReplyData implements ReactEvent {
     }
 
     /* renamed from: copy-Ayv7vGE$default  reason: not valid java name */
-    public static /* synthetic */ TapWelcomeReplyData m852copyAyv7vGE$default(TapWelcomeReplyData tapWelcomeReplyData, long j10, String str, int i10, Object obj) {
+    public static /* synthetic */ TapWelcomeReplyData m854copyAyv7vGE$default(TapWelcomeReplyData tapWelcomeReplyData, long j10, String str, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             j10 = tapWelcomeReplyData.stickerId;
         }
         if ((i10 & 2) != 0) {
             str = tapWelcomeReplyData.messageId;
         }
-        return tapWelcomeReplyData.m854copyAyv7vGE(j10, str);
+        return tapWelcomeReplyData.m856copyAyv7vGE(j10, str);
     }
 
     public final long component1() {
@@ -37,13 +37,13 @@ public final class TapWelcomeReplyData implements ReactEvent {
 
     @NotNull
     /* renamed from: component2-3Eiw7ao  reason: not valid java name */
-    public final String m853component23Eiw7ao() {
+    public final String m855component23Eiw7ao() {
         return this.messageId;
     }
 
     @NotNull
     /* renamed from: copy-Ayv7vGE  reason: not valid java name */
-    public final TapWelcomeReplyData m854copyAyv7vGE(long j10, @NotNull String messageId) {
+    public final TapWelcomeReplyData m856copyAyv7vGE(long j10, @NotNull String messageId) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         return new TapWelcomeReplyData(j10, messageId, null);
     }
@@ -54,14 +54,14 @@ public final class TapWelcomeReplyData implements ReactEvent {
         }
         if (obj instanceof TapWelcomeReplyData) {
             TapWelcomeReplyData tapWelcomeReplyData = (TapWelcomeReplyData) obj;
-            return this.stickerId == tapWelcomeReplyData.stickerId && MessageId.m1088equalsimpl0(this.messageId, tapWelcomeReplyData.messageId);
+            return this.stickerId == tapWelcomeReplyData.stickerId && MessageId.m1090equalsimpl0(this.messageId, tapWelcomeReplyData.messageId);
         }
         return false;
     }
 
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m855getMessageId3Eiw7ao() {
+    public final String m857getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -70,20 +70,20 @@ public final class TapWelcomeReplyData implements ReactEvent {
     }
 
     public int hashCode() {
-        return (Long.hashCode(this.stickerId) * 31) + MessageId.m1089hashCodeimpl(this.messageId);
+        return (Long.hashCode(this.stickerId) * 31) + MessageId.m1091hashCodeimpl(this.messageId);
     }
 
     @Override // com.discord.reactevents.ReactEvent
     @NotNull
     public WritableMap serialize() {
-        return NativeMapExtensionsKt.nativeMapOf(v.a("messageId", MessageId.m1091toStringimpl(this.messageId)), v.a("stickerId", String.valueOf(this.stickerId)));
+        return NativeMapExtensionsKt.nativeMapOf(v.a("messageId", MessageId.m1093toStringimpl(this.messageId)), v.a("stickerId", String.valueOf(this.stickerId)));
     }
 
     @NotNull
     public String toString() {
         long j10 = this.stickerId;
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
-        return "TapWelcomeReplyData(stickerId=" + j10 + ", messageId=" + m1091toStringimpl + ")";
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        return "TapWelcomeReplyData(stickerId=" + j10 + ", messageId=" + m1093toStringimpl + ")";
     }
 
     private TapWelcomeReplyData(long j10, String messageId) {

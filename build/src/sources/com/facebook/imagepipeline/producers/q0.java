@@ -10,27 +10,27 @@ import java.util.Map;
 public class q0 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final r8.i f11914a;
+    protected final r8.i f11543a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r8.a f11915b;
+    private final r8.a f11544b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NetworkFetcher f11916c;
+    private final NetworkFetcher f11545c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements NetworkFetcher.Callback {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ FetchState f11917a;
+        final /* synthetic */ FetchState f11546a;
 
         a(FetchState fetchState) {
-            this.f11917a = fetchState;
+            this.f11546a = fetchState;
         }
 
         @Override // com.facebook.imagepipeline.producers.NetworkFetcher.Callback
         public void a() {
-            q0.this.k(this.f11917a);
+            q0.this.k(this.f11546a);
         }
 
         @Override // com.facebook.imagepipeline.producers.NetworkFetcher.Callback
@@ -38,7 +38,7 @@ public class q0 implements w0 {
             if (ya.b.d()) {
                 ya.b.a("NetworkFetcher->onResponse");
             }
-            q0.this.m(this.f11917a, inputStream, i10);
+            q0.this.m(this.f11546a, inputStream, i10);
             if (ya.b.d()) {
                 ya.b.b();
             }
@@ -46,14 +46,14 @@ public class q0 implements w0 {
 
         @Override // com.facebook.imagepipeline.producers.NetworkFetcher.Callback
         public void onFailure(Throwable th2) {
-            q0.this.l(this.f11917a, th2);
+            q0.this.l(this.f11546a, th2);
         }
     }
 
     public q0(r8.i iVar, r8.a aVar, NetworkFetcher networkFetcher) {
-        this.f11914a = iVar;
-        this.f11915b = aVar;
-        this.f11916c = networkFetcher;
+        this.f11543a = iVar;
+        this.f11544b = aVar;
+        this.f11545c = networkFetcher;
     }
 
     protected static float e(int i10, int i11) {
@@ -67,29 +67,29 @@ public class q0 implements w0 {
         if (!fetchState.d().f(fetchState.b(), "NetworkFetchProducer")) {
             return null;
         }
-        return this.f11916c.getExtraMap(fetchState, i10);
+        return this.f11545c.getExtraMap(fetchState, i10);
     }
 
     protected static void j(r8.k kVar, int i10, BytesRange bytesRange, Consumer consumer, ProducerContext producerContext) {
         sa.k kVar2;
-        CloseableReference J0 = CloseableReference.J0(kVar.a());
+        CloseableReference L0 = CloseableReference.L0(kVar.a());
         sa.k kVar3 = null;
         try {
-            kVar2 = new sa.k(J0);
+            kVar2 = new sa.k(L0);
         } catch (Throwable th2) {
             th = th2;
         }
         try {
             kVar2.x1(bytesRange);
-            kVar2.U0();
+            kVar2.V0();
             consumer.b(kVar2, i10);
             sa.k.l(kVar2);
-            CloseableReference.N(J0);
+            CloseableReference.N(L0);
         } catch (Throwable th3) {
             th = th3;
             kVar3 = kVar2;
             sa.k.l(kVar3);
-            CloseableReference.N(J0);
+            CloseableReference.N(L0);
             throw th;
         }
     }
@@ -113,14 +113,14 @@ public class q0 implements w0 {
         if (h10 == null || !h10.c() || !fetchState.b().L()) {
             return false;
         }
-        return this.f11916c.shouldPropagate(fetchState);
+        return this.f11545c.shouldPropagate(fetchState);
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
     public void b(Consumer consumer, ProducerContext producerContext) {
         producerContext.F().d(producerContext, "NetworkFetchProducer");
-        FetchState createFetchState = this.f11916c.createFetchState(consumer, producerContext);
-        this.f11916c.fetch(createFetchState, new a(createFetchState));
+        FetchState createFetchState = this.f11545c.createFetchState(consumer, producerContext);
+        this.f11545c.fetch(createFetchState, new a(createFetchState));
     }
 
     protected long g() {
@@ -150,11 +150,11 @@ public class q0 implements w0 {
     protected void m(FetchState fetchState, InputStream inputStream, int i10) {
         r8.k c10;
         if (i10 > 0) {
-            c10 = this.f11914a.e(i10);
+            c10 = this.f11543a.e(i10);
         } else {
-            c10 = this.f11914a.c();
+            c10 = this.f11543a.c();
         }
-        byte[] bArr = (byte[]) this.f11915b.get(16384);
+        byte[] bArr = (byte[]) this.f11544b.get(16384);
         while (true) {
             try {
                 int read = inputStream.read(bArr);
@@ -165,14 +165,14 @@ public class q0 implements w0 {
                         fetchState.a().c(e(c10.size(), i10));
                     }
                 } else {
-                    this.f11916c.onFetchCompletion(fetchState, c10.size());
+                    this.f11545c.onFetchCompletion(fetchState, c10.size());
                     h(c10, fetchState);
-                    this.f11915b.release(bArr);
+                    this.f11544b.release(bArr);
                     c10.close();
                     return;
                 }
             } catch (Throwable th2) {
-                this.f11915b.release(bArr);
+                this.f11544b.release(bArr);
                 c10.close();
                 throw th2;
             }

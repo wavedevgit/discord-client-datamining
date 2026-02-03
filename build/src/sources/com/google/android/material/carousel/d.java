@@ -6,10 +6,10 @@ import android.view.View;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private float f15791a;
+    private float f15420a;
 
     /* renamed from: b  reason: collision with root package name */
-    private float f15792b;
+    private float f15421b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int[] a(int[] iArr) {
@@ -27,25 +27,25 @@ public abstract class d {
     }
 
     public float c() {
-        return this.f15792b;
+        return this.f15421b;
     }
 
     public float d() {
-        return this.f15791a;
+        return this.f15420a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e(Context context) {
-        float f10 = this.f15791a;
+        float f10 = this.f15420a;
         if (f10 <= 0.0f) {
             f10 = e.h(context);
         }
-        this.f15791a = f10;
-        float f11 = this.f15792b;
+        this.f15420a = f10;
+        float f11 = this.f15421b;
         if (f11 <= 0.0f) {
             f11 = e.g(context);
         }
-        this.f15792b = f11;
+        this.f15421b = f11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

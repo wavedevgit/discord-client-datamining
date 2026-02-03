@@ -3,25 +3,25 @@ package ng;
 public final class z7 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Long f41933a;
+    private final Long f41796a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final x7 f41934b;
+    private final x7 f41797b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r7 f41935c;
+    private final r7 f41798c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Integer f41936d;
+    private final Integer f41799d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Integer f41937e;
+    private final Integer f41800e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Integer f41938f;
+    private final Integer f41801f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Integer f41939g;
+    private final Integer f41802g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ z7(w7 w7Var, y7 y7Var) {
@@ -32,47 +32,47 @@ public final class z7 {
         Integer num2;
         Integer num3;
         Integer num4;
-        l10 = w7Var.f41824a;
-        this.f41933a = l10;
-        x7Var = w7Var.f41825b;
-        this.f41934b = x7Var;
-        r7Var = w7Var.f41826c;
-        this.f41935c = r7Var;
-        num = w7Var.f41827d;
-        this.f41936d = num;
-        num2 = w7Var.f41828e;
-        this.f41937e = num2;
-        num3 = w7Var.f41829f;
-        this.f41938f = num3;
-        num4 = w7Var.f41830g;
-        this.f41939g = num4;
+        l10 = w7Var.f41687a;
+        this.f41796a = l10;
+        x7Var = w7Var.f41688b;
+        this.f41797b = x7Var;
+        r7Var = w7Var.f41689c;
+        this.f41798c = r7Var;
+        num = w7Var.f41690d;
+        this.f41799d = num;
+        num2 = w7Var.f41691e;
+        this.f41800e = num2;
+        num3 = w7Var.f41692f;
+        this.f41801f = num3;
+        num4 = w7Var.f41693g;
+        this.f41802g = num4;
     }
 
     public final r7 a() {
-        return this.f41935c;
+        return this.f41798c;
     }
 
     public final x7 b() {
-        return this.f41934b;
+        return this.f41797b;
     }
 
     public final Integer c() {
-        return this.f41936d;
+        return this.f41799d;
     }
 
     public final Integer d() {
-        return this.f41938f;
+        return this.f41801f;
     }
 
     public final Integer e() {
-        return this.f41937e;
+        return this.f41800e;
     }
 
     public final Integer f() {
-        return this.f41939g;
+        return this.f41802g;
     }
 
     public final Long g() {
-        return this.f41933a;
+        return this.f41796a;
     }
 }

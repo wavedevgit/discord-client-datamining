@@ -5,46 +5,46 @@ import android.graphics.Path;
 public class e implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f48728a;
+    private final g f48782a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Path.FillType f48729b;
+    private final Path.FillType f48783b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r5.c f48730c;
+    private final r5.c f48784c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final r5.d f48731d;
+    private final r5.d f48785d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final r5.f f48732e;
+    private final r5.f f48786e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final r5.f f48733f;
+    private final r5.f f48787f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f48734g;
+    private final String f48788g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final r5.b f48735h;
+    private final r5.b f48789h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final r5.b f48736i;
+    private final r5.b f48790i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final boolean f48737j;
+    private final boolean f48791j;
 
     public e(String str, g gVar, Path.FillType fillType, r5.c cVar, r5.d dVar, r5.f fVar, r5.f fVar2, r5.b bVar, r5.b bVar2, boolean z10) {
-        this.f48728a = gVar;
-        this.f48729b = fillType;
-        this.f48730c = cVar;
-        this.f48731d = dVar;
-        this.f48732e = fVar;
-        this.f48733f = fVar2;
-        this.f48734g = str;
-        this.f48735h = bVar;
-        this.f48736i = bVar2;
-        this.f48737j = z10;
+        this.f48782a = gVar;
+        this.f48783b = fillType;
+        this.f48784c = cVar;
+        this.f48785d = dVar;
+        this.f48786e = fVar;
+        this.f48787f = fVar2;
+        this.f48788g = str;
+        this.f48789h = bVar;
+        this.f48790i = bVar2;
+        this.f48791j = z10;
     }
 
     @Override // s5.c
@@ -53,34 +53,34 @@ public class e implements c {
     }
 
     public r5.f b() {
-        return this.f48733f;
+        return this.f48787f;
     }
 
     public Path.FillType c() {
-        return this.f48729b;
+        return this.f48783b;
     }
 
     public r5.c d() {
-        return this.f48730c;
+        return this.f48784c;
     }
 
     public g e() {
-        return this.f48728a;
+        return this.f48782a;
     }
 
     public String f() {
-        return this.f48734g;
+        return this.f48788g;
     }
 
     public r5.d g() {
-        return this.f48731d;
+        return this.f48785d;
     }
 
     public r5.f h() {
-        return this.f48732e;
+        return this.f48786e;
     }
 
     public boolean i() {
-        return this.f48737j;
+        return this.f48791j;
     }
 }

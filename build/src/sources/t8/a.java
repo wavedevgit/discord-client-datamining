@@ -12,35 +12,35 @@ import o8.n;
 public class a {
 
     /* renamed from: h  reason: collision with root package name */
-    private static a f49320h;
+    private static a f49592h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final long f49321i = TimeUnit.MINUTES.toMillis(2);
+    private static final long f49593i = TimeUnit.MINUTES.toMillis(2);
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile File f49323b;
+    private volatile File f49595b;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile File f49325d;
+    private volatile File f49597d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f49326e;
+    private long f49598e;
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile StatFs f49322a = null;
+    private volatile StatFs f49594a = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile StatFs f49324c = null;
+    private volatile StatFs f49596c = null;
 
     /* renamed from: g  reason: collision with root package name */
-    private volatile boolean f49328g = false;
+    private volatile boolean f49600g = false;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Lock f49327f = new ReentrantLock();
+    private final Lock f49599f = new ReentrantLock();
 
     /* renamed from: t8.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public enum EnumC0634a {
+    public enum EnumC0645a {
         INTERNAL,
         EXTERNAL
     }
@@ -53,17 +53,17 @@ public class a {
     }
 
     private void b() {
-        if (!this.f49328g) {
-            this.f49327f.lock();
+        if (!this.f49600g) {
+            this.f49599f.lock();
             try {
-                if (!this.f49328g) {
-                    this.f49323b = Environment.getDataDirectory();
-                    this.f49325d = Environment.getExternalStorageDirectory();
+                if (!this.f49600g) {
+                    this.f49595b = Environment.getDataDirectory();
+                    this.f49597d = Environment.getExternalStorageDirectory();
                     g();
-                    this.f49328g = true;
+                    this.f49600g = true;
                 }
             } finally {
-                this.f49327f.unlock();
+                this.f49599f.unlock();
             }
         }
     }
@@ -72,10 +72,10 @@ public class a {
         a aVar;
         synchronized (a.class) {
             try {
-                if (f49320h == null) {
-                    f49320h = new a();
+                if (f49592h == null) {
+                    f49592h = new a();
                 }
-                aVar = f49320h;
+                aVar = f49592h;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -84,21 +84,21 @@ public class a {
     }
 
     private void e() {
-        if (this.f49327f.tryLock()) {
+        if (this.f49599f.tryLock()) {
             try {
-                if (SystemClock.uptimeMillis() - this.f49326e > f49321i) {
+                if (SystemClock.uptimeMillis() - this.f49598e > f49593i) {
                     g();
                 }
             } finally {
-                this.f49327f.unlock();
+                this.f49599f.unlock();
             }
         }
     }
 
     private void g() {
-        this.f49322a = h(this.f49322a, this.f49323b);
-        this.f49324c = h(this.f49324c, this.f49325d);
-        this.f49326e = SystemClock.uptimeMillis();
+        this.f49594a = h(this.f49594a, this.f49595b);
+        this.f49596c = h(this.f49596c, this.f49597d);
+        this.f49598e = SystemClock.uptimeMillis();
     }
 
     private StatFs h(StatFs statFs, File file) {
@@ -117,14 +117,14 @@ public class a {
         return null;
     }
 
-    public long c(EnumC0634a enumC0634a) {
+    public long c(EnumC0645a enumC0645a) {
         StatFs statFs;
         b();
         e();
-        if (enumC0634a == EnumC0634a.INTERNAL) {
-            statFs = this.f49322a;
+        if (enumC0645a == EnumC0645a.INTERNAL) {
+            statFs = this.f49594a;
         } else {
-            statFs = this.f49324c;
+            statFs = this.f49596c;
         }
         if (statFs != null) {
             return statFs.getBlockSizeLong() * statFs.getAvailableBlocksLong();
@@ -132,9 +132,9 @@ public class a {
         return 0L;
     }
 
-    public boolean f(EnumC0634a enumC0634a, long j10) {
+    public boolean f(EnumC0645a enumC0645a, long j10) {
         b();
-        long c10 = c(enumC0634a);
+        long c10 = c(enumC0645a);
         if (c10 <= 0 || c10 < j10) {
             return true;
         }

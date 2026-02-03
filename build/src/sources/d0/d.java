@@ -9,32 +9,32 @@ import java.util.concurrent.TimeUnit;
 public class d implements ListenableFuture {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ListenableFuture f21487d;
+    private final ListenableFuture f21063d;
 
     /* renamed from: e  reason: collision with root package name */
-    c.a f21488e;
+    c.a f21064e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    class a implements c.InterfaceC0026c {
+    class a implements c.InterfaceC0030c {
         a() {
         }
 
-        @Override // androidx.concurrent.futures.c.InterfaceC0026c
+        @Override // androidx.concurrent.futures.c.InterfaceC0030c
         public Object a(c.a aVar) {
             boolean z10;
-            if (d.this.f21488e == null) {
+            if (d.this.f21064e == null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             b2.e.j(z10, "The result can only set once!");
-            d.this.f21488e = aVar;
+            d.this.f21064e = aVar;
             return "FutureChain[" + d.this + "]";
         }
     }
 
     d(ListenableFuture listenableFuture) {
-        this.f21487d = (ListenableFuture) b2.e.g(listenableFuture);
+        this.f21063d = (ListenableFuture) b2.e.g(listenableFuture);
     }
 
     public static d b(ListenableFuture listenableFuture) {
@@ -46,12 +46,12 @@ public class d implements ListenableFuture {
 
     @Override // com.google.common.util.concurrent.ListenableFuture
     public void a(Runnable runnable, Executor executor) {
-        this.f21487d.a(runnable, executor);
+        this.f21063d.a(runnable, executor);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean c(Object obj) {
-        c.a aVar = this.f21488e;
+        c.a aVar = this.f21064e;
         if (aVar != null) {
             return aVar.c(obj);
         }
@@ -60,12 +60,12 @@ public class d implements ListenableFuture {
 
     @Override // java.util.concurrent.Future
     public boolean cancel(boolean z10) {
-        return this.f21487d.cancel(z10);
+        return this.f21063d.cancel(z10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean d(Throwable th2) {
-        c.a aVar = this.f21488e;
+        c.a aVar = this.f21064e;
         if (aVar != null) {
             return aVar.f(th2);
         }
@@ -82,26 +82,26 @@ public class d implements ListenableFuture {
 
     @Override // java.util.concurrent.Future
     public Object get() {
-        return this.f21487d.get();
+        return this.f21063d.get();
     }
 
     @Override // java.util.concurrent.Future
     public boolean isCancelled() {
-        return this.f21487d.isCancelled();
+        return this.f21063d.isCancelled();
     }
 
     @Override // java.util.concurrent.Future
     public boolean isDone() {
-        return this.f21487d.isDone();
+        return this.f21063d.isDone();
     }
 
     @Override // java.util.concurrent.Future
     public Object get(long j10, TimeUnit timeUnit) {
-        return this.f21487d.get(j10, timeUnit);
+        return this.f21063d.get(j10, timeUnit);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d() {
-        this.f21487d = androidx.concurrent.futures.c.a(new a());
+        this.f21063d = androidx.concurrent.futures.c.a(new a());
     }
 }

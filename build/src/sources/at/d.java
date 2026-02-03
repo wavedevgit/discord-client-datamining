@@ -1,17 +1,36 @@
 package at;
 
-import kotlin.jvm.internal.Intrinsics;
-import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d extends x0 {
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public d(SerialDescriptor elementDesc) {
-        super(elementDesc, null);
-        Intrinsics.checkNotNullParameter(elementDesc, "elementDesc");
+public abstract class d extends k {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a extends d {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final a f6068a = new a();
+
+        private a() {
+            super(null);
+        }
     }
 
-    @Override // kotlinx.serialization.descriptors.SerialDescriptor
-    public String h() {
-        return "kotlin.Array";
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class b extends d {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final b f6069a = new b();
+
+        private b() {
+            super(null);
+        }
+    }
+
+    public /* synthetic */ d(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    private d() {
+        super(null);
     }
 }

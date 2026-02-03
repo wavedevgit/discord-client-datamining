@@ -7,10 +7,10 @@ import java.lang.ref.WeakReference;
 class MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver extends ResultReceiver {
 
     /* renamed from: d  reason: collision with root package name */
-    private WeakReference f745d;
+    private WeakReference f789d;
 
     @Override // android.os.ResultReceiver
     protected void onReceiveResult(int i10, Bundle bundle) {
-        b.a(this.f745d.get());
+        b.a(this.f789d.get());
     }
 }

@@ -3,13 +3,13 @@ package le;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final byte[] f37174a;
+    public final byte[] f37288a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f37175b;
+    public final int f37289b;
 
     public a(byte[] bArr, int i10) {
-        this.f37174a = bArr;
-        this.f37175b = i10;
+        this.f37288a = bArr;
+        this.f37289b = i10;
     }
 }

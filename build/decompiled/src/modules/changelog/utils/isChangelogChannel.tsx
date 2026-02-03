@@ -30,14 +30,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/changelog/utils/isChangelogChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun51565: for (var _fun51565_ip = 0;;) switch (_fun51565_ip) {
+        _fun51671: for (var _fun51671_ip = 0;;) switch (_fun51671_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun51565_ip = 38;
-                    continue _fun51565
+                    _fun51671_ip = 38;
+                    continue _fun51671
                 }
             case 12:
                 var4 = _closure1_slot0;

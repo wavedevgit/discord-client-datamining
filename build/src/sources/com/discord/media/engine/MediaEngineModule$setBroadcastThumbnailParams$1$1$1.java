@@ -32,18 +32,18 @@ public final class MediaEngineModule$setBroadcastThumbnailParams$1$1$1 extends k
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         ReactEvents reactEvents;
-        or.b.f();
+        pr.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             reactEvents = this.this$0.reactEvents;
             reactEvents.emitModuleEvent(this.this$0.getReactContext(), new OnBroadcastThumbnailEvent(this.$imgdata));
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$setBroadcastThumbnailParams$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((MediaEngineModule$setBroadcastThumbnailParams$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

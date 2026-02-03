@@ -15,10 +15,10 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquirySessionResponse {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Data f20150a;
+    private final Data f19783a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Meta f20151b;
+    private final Meta f19784b;
 
     @com.squareup.moshi.i(generateAdapter = true)
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\b\u0007\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\b\u0010\t\u001a\u0004\b\n\u0010\u000bR\u0017\u0010\u0005\u001a\u00020\u00048\u0006¢\u0006\f\n\u0004\b\n\u0010\f\u001a\u0004\b\b\u0010\r¨\u0006\u000e"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$Data;", "", "", StackTraceHelper.ID_KEY, "Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$Attributes;", "attributes", "<init>", "(Ljava/lang/String;Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$Attributes;)V", "a", "Ljava/lang/String;", "b", "()Ljava/lang/String;", "Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$Attributes;", "()Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$Attributes;", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -26,24 +26,24 @@ public final class CreateInquirySessionResponse {
     public static final class Data {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f20155a;
+        private final String f19788a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Attributes f20156b;
+        private final Attributes f19789b;
 
         public Data(String id2, Attributes attributes) {
             Intrinsics.checkNotNullParameter(id2, "id");
             Intrinsics.checkNotNullParameter(attributes, "attributes");
-            this.f20155a = id2;
-            this.f20156b = attributes;
+            this.f19788a = id2;
+            this.f19789b = attributes;
         }
 
         public final Attributes a() {
-            return this.f20156b;
+            return this.f19789b;
         }
 
         public final String b() {
-            return this.f20155a;
+            return this.f19788a;
         }
     }
 
@@ -88,7 +88,7 @@ public final class CreateInquirySessionResponse {
         static {
             GpsCollectionRequirement[] a10 = a();
             $VALUES = a10;
-            $ENTRIES = pr.a.a(a10);
+            $ENTRIES = qr.a.a(a10);
             Companion = new Companion(null);
         }
 
@@ -147,7 +147,7 @@ public final class CreateInquirySessionResponse {
         static {
             GpsPrecisionRequirement[] a10 = a();
             $VALUES = a10;
-            $ENTRIES = pr.a.a(a10);
+            $ENTRIES = qr.a.a(a10);
             Companion = new Companion(null);
         }
 
@@ -173,31 +173,31 @@ public final class CreateInquirySessionResponse {
     public static final class Meta {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f20157a;
+        private final String f19790a;
 
         public Meta(String accessToken) {
             Intrinsics.checkNotNullParameter(accessToken, "accessToken");
-            this.f20157a = accessToken;
+            this.f19790a = accessToken;
         }
 
         public final String a() {
-            return this.f20157a;
+            return this.f19790a;
         }
     }
 
     public CreateInquirySessionResponse(Data data, Meta meta) {
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(meta, "meta");
-        this.f20150a = data;
-        this.f20151b = meta;
+        this.f19783a = data;
+        this.f19784b = meta;
     }
 
     public final Data a() {
-        return this.f20150a;
+        return this.f19783a;
     }
 
     public final Meta b() {
-        return this.f20151b;
+        return this.f19784b;
     }
 
     @com.squareup.moshi.i(generateAdapter = true)
@@ -206,30 +206,30 @@ public final class CreateInquirySessionResponse {
     public static final class Attributes {
 
         /* renamed from: a  reason: collision with root package name */
-        private final GpsCollectionRequirement f20152a;
+        private final GpsCollectionRequirement f19785a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final GpsPrecisionRequirement f20153b;
+        private final GpsPrecisionRequirement f19786b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f20154c;
+        private final String f19787c;
 
         public Attributes(GpsCollectionRequirement gpsCollectionRequirement, GpsPrecisionRequirement gpsPrecisionRequirement, String str) {
-            this.f20152a = gpsCollectionRequirement;
-            this.f20153b = gpsPrecisionRequirement;
-            this.f20154c = str;
+            this.f19785a = gpsCollectionRequirement;
+            this.f19786b = gpsPrecisionRequirement;
+            this.f19787c = str;
         }
 
         public final GpsCollectionRequirement a() {
-            return this.f20152a;
+            return this.f19785a;
         }
 
         public final GpsPrecisionRequirement b() {
-            return this.f20153b;
+            return this.f19786b;
         }
 
         public final String c() {
-            return this.f20154c;
+            return this.f19787c;
         }
 
         public /* synthetic */ Attributes(GpsCollectionRequirement gpsCollectionRequirement, GpsPrecisionRequirement gpsPrecisionRequirement, String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {

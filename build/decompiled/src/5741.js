@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/user_settings/native/connections/two_way_link/images',
-        'width': 18,
-        'height': 18.5,
+        'httpServerLocation': '/assets/modules/collectibles/native/images',
+        'width': 20.5,
+        'height': 20,
         'scales': null,
-        'hash': '84a5f82b0047a661ec45232254da9031',
-        'name': 'app_installed_check',
+        'hash': '1852cc5a5de0318feebc04948ebfbffa',
+        'name': 'img_collectibles_shop',
         'type': 'png'
     };
     var4 = [2, 3];

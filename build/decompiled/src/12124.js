@@ -1,24 +1,8 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = dependencyMap;
-    var0 = 0;
-    var2 = var1[var0];
-    var1 = require;
+    var1 = ['7z', 'ade', 'adp', 'arj', 'apk', 'appimage', 'application', 'appx', 'appxbundle', 'asx', 'bas', 'bat', 'cab', 'cer', 'chm', 'cmd', 'cnt', 'cpl', 'crt', 'csh', 'deb', 'der', 'diagcab', 'dll', 'dmg', 'docm', 'dotm', 'ex', 'ex_', 'exe', 'flatpak', 'flatpakref', 'fxp', 'gadget', 'grp', 'gz', 'hlp', 'hpj', 'hta', 'htc', 'inf', 'ins', 'ipa', 'iso', 'isp', 'its', 'jar', 'jnlp', 'jse', 'ksh', 'lib', 'lnk', 'mad', 'maf', 'mag', 'mam', 'maq', 'mar', 'mas', 'mat', 'mau', 'mav', 'maw', 'mcf', 'mda', 'mdb', 'mde', 'mdt', 'mdw', 'mdz', 'msc', 'msh', 'msh1', 'msh1xml', 'msh2', 'msh2xml', 'mshxml', 'msi', 'msix', 'msixbundle', 'msp', 'mst', 'msu', 'nsh', 'ops', 'osd', 'pcd', 'pif', 'pkg', 'pl', 'plg', 'potm', 'ppam', 'ppsm', 'pptm', 'prf', 'prg', 'printerexport', 'ps1', 'ps1xml', 'ps2', 'ps2xml', 'psc1', 'psc2', 'psd1', 'psdm1', 'pst', 'py', 'pyc', 'pyo', 'pyw', 'pyz', 'pyzw', 'rar', 'reg', 'rpm', 'scf', 'scr', 'sct', 'shb', 'shs', 'sldm', 'snap', 'sys', 'theme', 'tmp', 'url', 'vb', 'vbe', 'vbp', 'vbs', 'vhd', 'vhdx', 'vsmacros', 'vsw', 'vxd', 'webpnp', 'ws', 'wsc', 'wsf', 'wsh', 'xbap', 'xlam', 'xll', 'xlsm', 'xltm', 'xnk', 'z', 'zip'];
+    var0 = module;
+    var0.exports = var1;
     var0 = undefined;
-    var3 = var1.bind(var0)(var2);
-    var2 = var3.registerAsset;
-    var1 = {
-        '__packager_asset': true,
-        'httpServerLocation': '/assets/design/components/LottieIcon/native/generated/lotties',
-        'scales': null,
-        'hash': 'bc4f103d29d98767eb7ae693f67ae198',
-        'name': 'NitroGem2',
-        'type': 'lottie'
-    };
-    var4 = [1];
-    var1.scales = var4;
-    var2 = var2.bind(var3)(var1);
-    var1 = module;
-    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

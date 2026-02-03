@@ -522,7 +522,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.TrackUserProfileWishlistActions = var7;
     var2.TrackUserProfileUi = var6;
     var5 = function arg0() {
-        _fun57073: for (var _fun57073_ip = 0;;) switch (_fun57073_ip) {
+        _fun57179: for (var _fun57179_ip = 0;;) switch (_fun57179_ip) {
             case 0:
                 var6 = arg0;
                 var1 = global;
@@ -532,8 +532,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.CDN_HOST;
                 var0 = null;
                 if (!(var0 == var5)) {
-                    _fun57073_ip = 89;
-                    continue _fun57073
+                    _fun57179_ip = 89;
+                    continue _fun57179
                 }
             case 35:
                 var0 = var1.location;
@@ -545,8 +545,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.concat;
                 var0 = '';
                 var0 = var2.bind(var0)(var4, var7, var3);
-                _fun57073_ip = 128;
-                continue _fun57073;
+                _fun57179_ip = 128;
+                continue _fun57179;
             case 89:
                 var1 = var1.HermesInternal;
                 var4 = var1.concat;

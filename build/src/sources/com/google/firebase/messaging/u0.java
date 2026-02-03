@@ -11,32 +11,32 @@ import java.util.concurrent.Executor;
 public final class u0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SharedPreferences f17539a;
+    private final SharedPreferences f17168a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f17540b;
+    private final String f17169b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f17541c;
+    private final String f17170c;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Executor f17543e;
+    private final Executor f17172e;
 
     /* renamed from: d  reason: collision with root package name */
-    final ArrayDeque f17542d = new ArrayDeque();
+    final ArrayDeque f17171d = new ArrayDeque();
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f17544f = false;
+    private boolean f17173f = false;
 
     private u0(SharedPreferences sharedPreferences, String str, String str2, Executor executor) {
-        this.f17539a = sharedPreferences;
-        this.f17540b = str;
-        this.f17541c = str2;
-        this.f17543e = executor;
+        this.f17168a = sharedPreferences;
+        this.f17169b = str;
+        this.f17170c = str2;
+        this.f17172e = executor;
     }
 
     private boolean b(boolean z10) {
-        if (z10 && !this.f17544f) {
+        if (z10 && !this.f17173f) {
             i();
         }
         return z10;
@@ -50,18 +50,18 @@ public final class u0 {
     }
 
     private void d() {
-        synchronized (this.f17542d) {
+        synchronized (this.f17171d) {
             try {
-                this.f17542d.clear();
-                String string = this.f17539a.getString(this.f17540b, "");
-                if (!TextUtils.isEmpty(string) && string.contains(this.f17541c)) {
-                    String[] split = string.split(this.f17541c, -1);
+                this.f17171d.clear();
+                String string = this.f17168a.getString(this.f17169b, "");
+                if (!TextUtils.isEmpty(string) && string.contains(this.f17170c)) {
+                    String[] split = string.split(this.f17170c, -1);
                     if (split.length == 0) {
                         Log.e("FirebaseMessaging", "Corrupted queue. Please check the queue contents and item separator provided");
                     }
                     for (String str : split) {
                         if (!TextUtils.isEmpty(str)) {
-                            this.f17542d.add(str);
+                            this.f17171d.add(str);
                         }
                     }
                 }
@@ -72,13 +72,13 @@ public final class u0 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void h() {
-        synchronized (this.f17542d) {
-            this.f17539a.edit().putString(this.f17540b, g()).commit();
+        synchronized (this.f17171d) {
+            this.f17168a.edit().putString(this.f17169b, g()).commit();
         }
     }
 
     private void i() {
-        this.f17543e.execute(new Runnable() { // from class: com.google.firebase.messaging.t0
+        this.f17172e.execute(new Runnable() { // from class: com.google.firebase.messaging.t0
             @Override // java.lang.Runnable
             public final void run() {
                 u0.this.h();
@@ -88,26 +88,26 @@ public final class u0 {
 
     public String e() {
         String str;
-        synchronized (this.f17542d) {
-            str = (String) this.f17542d.peek();
+        synchronized (this.f17171d) {
+            str = (String) this.f17171d.peek();
         }
         return str;
     }
 
     public boolean f(Object obj) {
         boolean b10;
-        synchronized (this.f17542d) {
-            b10 = b(this.f17542d.remove(obj));
+        synchronized (this.f17171d) {
+            b10 = b(this.f17171d.remove(obj));
         }
         return b10;
     }
 
     public String g() {
         StringBuilder sb2 = new StringBuilder();
-        Iterator it = this.f17542d.iterator();
+        Iterator it = this.f17171d.iterator();
         while (it.hasNext()) {
             sb2.append((String) it.next());
-            sb2.append(this.f17541c);
+            sb2.append(this.f17170c);
         }
         return sb2.toString();
     }

@@ -71,7 +71,7 @@ public final class AppLifecycle {
     }
 
     public final void init() {
-        ProcessLifecycleOwner.f4432t.a().getLifecycle().a(appLifecycleObserver);
+        ProcessLifecycleOwner.f4476t.a().getLifecycle().a(appLifecycleObserver);
     }
 
     public final boolean isForegrounded() {

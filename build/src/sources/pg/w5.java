@@ -5,7 +5,7 @@ import ui.c;
 final class w5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w5 f45825a = new w5();
+    static final w5 f45899a = new w5();
 
     static {
         c.b a10 = ui.c.a("cameraSource");

@@ -5,14 +5,14 @@ import java.util.ArrayList;
 public final class l5 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m5 f30149a;
+    private final m5 f29715a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Iterable f30150b;
+    private final Iterable f29716b;
 
     public l5(m5 m5Var, Iterable iterable) {
-        this.f30149a = (m5) io.sentry.util.y.c(m5Var, "SentryEnvelopeHeader is required.");
-        this.f30150b = (Iterable) io.sentry.util.y.c(iterable, "SentryEnvelope items are required.");
+        this.f29715a = (m5) io.sentry.util.y.c(m5Var, "SentryEnvelopeHeader is required.");
+        this.f29716b = (Iterable) io.sentry.util.y.c(iterable, "SentryEnvelope items are required.");
     }
 
     public static l5 a(b1 b1Var, z7 z7Var, io.sentry.protocol.r rVar) {
@@ -22,18 +22,18 @@ public final class l5 {
     }
 
     public m5 b() {
-        return this.f30149a;
+        return this.f29715a;
     }
 
     public Iterable c() {
-        return this.f30150b;
+        return this.f29716b;
     }
 
     public l5(io.sentry.protocol.x xVar, io.sentry.protocol.r rVar, l6 l6Var) {
         io.sentry.util.y.c(l6Var, "SentryEnvelopeItem is required.");
-        this.f30149a = new m5(xVar, rVar);
+        this.f29715a = new m5(xVar, rVar);
         ArrayList arrayList = new ArrayList(1);
         arrayList.add(l6Var);
-        this.f30150b = arrayList;
+        this.f29716b = arrayList;
     }
 }

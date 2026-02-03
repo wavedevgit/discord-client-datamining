@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
-        _fun101139: for (var _fun101139_ip = 0;;) switch (_fun101139_ip) {
+        _fun101090: for (var _fun101090_ip = 0;;) switch (_fun101090_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.restrictedGuild;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4 != var2;
                 var9 = null;
                 if (!var2) {
-                    _fun101139_ip = 111;
-                    continue _fun101139
+                    _fun101090_ip = 111;
+                    continue _fun101090
                 }
             case 70:
                 var5 = _closure1_slot1;
@@ -241,8 +241,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2.bind(var3)(var6, var5);
                 var0.expandedChildren = var5;
                 if (!(var4 == var9)) {
-                    _fun101139_ip = 388;
-                    continue _fun101139
+                    _fun101090_ip = 388;
+                    continue _fun101090
                 }
             case 302:
                 var6 = _closure1_slot4;
@@ -265,8 +265,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.LARGE;
                 var4.size = var7;
                 var4 = var6.bind(var3)(var5, var4);
-                _fun101139_ip = 445;
-                continue _fun101139;
+                _fun101090_ip = 445;
+                continue _fun101090;
             case 388:
                 var7 = _closure1_slot4;
                 var6 = _closure1_slot1;
@@ -297,4 +297,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 13088, 33, 13102, 13099, 1417, 7357, 3964, 1234, 8116, 13139, 13130, 4669, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 13121, 33, 13135, 13132, 1417, 7388, 3994, 1234, 8147, 13170, 13161, 4699, 2]);

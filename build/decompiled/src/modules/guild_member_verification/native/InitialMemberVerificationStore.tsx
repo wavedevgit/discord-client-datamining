@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() {
-        _fun60304: for (var _fun60304_ip = 0;;) switch (_fun60304_ip) {
+        _fun60409: for (var _fun60409_ip = 0;;) switch (_fun60409_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun60304_ip = 74;
-                continue _fun60304;
+                _fun60409_ip = 74;
+                continue _fun60409;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var3.Store;
     var3 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun60308: for (var _fun60308_ip = 0;;) switch (_fun60308_ip) {
+            _fun60413: for (var _fun60413_ip = 0;;) switch (_fun60413_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -106,16 +106,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun60308_ip = 69;
-                        continue _fun60308
+                        _fun60413_ip = 69;
+                        continue _fun60413
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun60308_ip = 105;
-                    continue _fun60308;
+                    _fun60413_ip = 105;
+                    continue _fun60413;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -140,15 +140,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'getInitialVerificationState';
         var4.key = var5;
         var0 = function arg0() {
-            _fun60309: for (var _fun60309_ip = 0;;) switch (_fun60309_ip) {
+            _fun60414: for (var _fun60414_ip = 0;;) switch (_fun60414_ip) {
                 case 0:
                     var4 = arg0;
                     var1 = null;
                     var2 = var1 == var4;
                     var0 = null;
                     if (var2) {
-                        _fun60309_ip = 46;
-                        continue _fun60309
+                        _fun60414_ip = 46;
+                        continue _fun60414
                     }
                 case 14:
                     var3 = _closure1_slot7;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var1 != var2;
                     var1 = null;
                     if (!var3) {
-                        _fun60309_ip = 43;
-                        continue _fun60309
+                        _fun60414_ip = 43;
+                        continue _fun60414
                     }
                 case 40:
                     var1 = var2;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var4.bind(var0)(var3);
     var3 = {};
     var4 = function arg0() {
-        _fun60310: for (var _fun60310_ip = 0;;) switch (_fun60310_ip) {
+        _fun60415: for (var _fun60415_ip = 0;;) switch (_fun60415_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.guildId;
@@ -191,8 +191,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.has;
                 var1 = var1.bind(var4)(var3);
                 if (var1) {
-                    _fun60310_ip = 48;
-                    continue _fun60310
+                    _fun60415_ip = 48;
+                    continue _fun60415
                 }
             case 33:
                 var1 = _closure1_slot7;

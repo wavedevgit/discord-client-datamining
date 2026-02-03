@@ -7,10 +7,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g extends c {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f25600e = new a(null);
+    public static final a f25695e = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f25601d;
+    private final String f25696d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -45,20 +45,20 @@ public final class g extends c {
     }
 
     public final String b() {
-        return this.f25601d;
+        return this.f25696d;
     }
 
     private g(String str, Bundle bundle) {
         super("androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL", bundle);
-        this.f25601d = str;
-        if (!k2.c.f32954a.a(str)) {
+        this.f25696d = str;
+        if (!k2.c.f32700a.a(str)) {
             throw new IllegalArgumentException("registrationResponseJson must not be empty, and must be a valid JSON");
         }
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public g(String registrationResponseJson) {
-        this(registrationResponseJson, f25600e.b(registrationResponseJson));
+        this(registrationResponseJson, f25695e.b(registrationResponseJson));
         Intrinsics.checkNotNullParameter(registrationResponseJson, "registrationResponseJson");
     }
 }

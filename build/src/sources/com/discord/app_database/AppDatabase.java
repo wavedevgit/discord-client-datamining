@@ -1,7 +1,7 @@
 package com.discord.app_database;
 
 import android.content.Context;
-import at.i2;
+import bt.i2;
 import com.discord.kvstorage.discordapp.DiscordMobileApi;
 import com.discord.logging.Log;
 import kotlin.Metadata;
@@ -36,7 +36,7 @@ public final class AppDatabase {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit initializeAppDatabase$lambda$0(Context context) {
         INSTANCE.initializeAppDatabaseAsync(context);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void initializeAppDatabaseAsync(Context context) {
@@ -72,7 +72,7 @@ public final class AppDatabase {
                 String guildVersions = DiscordMobileApi.getGuildVersions(databaseName, "guild_versions");
                 String guildVersions2 = DiscordMobileApi.getGuildVersions(databaseName, "non_guild_versions");
                 String guildVersions3 = DiscordMobileApi.getGuildVersions(databaseName, "force_resync_version");
-                Json.a aVar = Json.f36410d;
+                Json.a aVar = Json.f36186d;
                 Intrinsics.checkNotNull(guildVersions);
                 aVar.a();
                 GuildVersion[] guildVersionArr = (GuildVersion[]) aVar.b(new i2(Reflection.getOrCreateKotlinClass(GuildVersion.class), GuildVersion.Companion.serializer()), guildVersions);
@@ -98,7 +98,7 @@ public final class AppDatabase {
     public final void initializeAppDatabase(@NotNull final Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
         dataDirectory = context.getFilesDir().getAbsolutePath();
-        mr.a.b(false, false, null, "AppDatabaseLoader", 0, new Function0() { // from class: com.discord.app_database.a
+        nr.a.b(false, false, null, "AppDatabaseLoader", 0, new Function0() { // from class: com.discord.app_database.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit initializeAppDatabase$lambda$0;

@@ -8,16 +8,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c implements CoroutineContext, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineContext f33368d;
+    private final CoroutineContext f33144d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CoroutineContext.Element f33369e;
+    private final CoroutineContext.Element f33145e;
 
     public c(CoroutineContext left, CoroutineContext.Element element) {
         Intrinsics.checkNotNullParameter(left, "left");
         Intrinsics.checkNotNullParameter(element, "element");
-        this.f33368d = left;
-        this.f33369e = element;
+        this.f33144d = left;
+        this.f33145e = element;
     }
 
     private final boolean c(CoroutineContext.Element element) {
@@ -25,8 +25,8 @@ public final class c implements CoroutineContext, Serializable {
     }
 
     private final boolean d(c cVar) {
-        while (c(cVar.f33369e)) {
-            CoroutineContext coroutineContext = cVar.f33368d;
+        while (c(cVar.f33145e)) {
+            CoroutineContext coroutineContext = cVar.f33144d;
             if (coroutineContext instanceof c) {
                 cVar = (c) coroutineContext;
             } else {
@@ -41,7 +41,7 @@ public final class c implements CoroutineContext, Serializable {
         int i10 = 2;
         c cVar = this;
         while (true) {
-            CoroutineContext coroutineContext = cVar.f33368d;
+            CoroutineContext coroutineContext = cVar.f33144d;
             if (coroutineContext instanceof c) {
                 cVar = (c) coroutineContext;
             } else {
@@ -67,11 +67,11 @@ public final class c implements CoroutineContext, Serializable {
     @Override // kotlin.coroutines.CoroutineContext
     public Object A1(Object obj, Function2 operation) {
         Intrinsics.checkNotNullParameter(operation, "operation");
-        return operation.invoke(this.f33368d.A1(obj, operation), this.f33369e);
+        return operation.invoke(this.f33144d.A1(obj, operation), this.f33145e);
     }
 
     @Override // kotlin.coroutines.CoroutineContext
-    public CoroutineContext U0(CoroutineContext coroutineContext) {
+    public CoroutineContext Z0(CoroutineContext coroutineContext) {
         return CoroutineContext.a.b(this, coroutineContext);
     }
 
@@ -90,7 +90,7 @@ public final class c implements CoroutineContext, Serializable {
     }
 
     public int hashCode() {
-        return this.f33368d.hashCode() + this.f33369e.hashCode();
+        return this.f33144d.hashCode() + this.f33145e.hashCode();
     }
 
     @Override // kotlin.coroutines.CoroutineContext
@@ -98,11 +98,11 @@ public final class c implements CoroutineContext, Serializable {
         Intrinsics.checkNotNullParameter(key, "key");
         c cVar = this;
         while (true) {
-            CoroutineContext.Element l10 = cVar.f33369e.l(key);
+            CoroutineContext.Element l10 = cVar.f33145e.l(key);
             if (l10 != null) {
                 return l10;
             }
-            CoroutineContext coroutineContext = cVar.f33368d;
+            CoroutineContext coroutineContext = cVar.f33144d;
             if (coroutineContext instanceof c) {
                 cVar = (c) coroutineContext;
             } else {
@@ -112,7 +112,7 @@ public final class c implements CoroutineContext, Serializable {
     }
 
     public String toString() {
-        return '[' + ((String) A1("", new Function2() { // from class: nr.a
+        return '[' + ((String) A1("", new Function2() { // from class: or.a
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 String f10;
@@ -123,18 +123,18 @@ public final class c implements CoroutineContext, Serializable {
     }
 
     @Override // kotlin.coroutines.CoroutineContext
-    public CoroutineContext x1(CoroutineContext.b key) {
+    public CoroutineContext y1(CoroutineContext.b key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        if (this.f33369e.l(key) != null) {
-            return this.f33368d;
+        if (this.f33145e.l(key) != null) {
+            return this.f33144d;
         }
-        CoroutineContext x12 = this.f33368d.x1(key);
-        if (x12 == this.f33368d) {
+        CoroutineContext y12 = this.f33144d.y1(key);
+        if (y12 == this.f33144d) {
             return this;
         }
-        if (x12 == e.f33372d) {
-            return this.f33369e;
+        if (y12 == e.f33148d) {
+            return this.f33145e;
         }
-        return new c(x12, this.f33369e);
+        return new c(y12, this.f33145e);
     }
 }

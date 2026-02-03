@@ -53,7 +53,7 @@ public final class MessageViewAccessibilityDelegate extends androidx.core.view.a
     public static final Unit getReferencedMessageLabel$lambda$0(String str, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put(NotificationRenderer.USERNAME, str);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // androidx.core.view.a
@@ -75,7 +75,7 @@ public final class MessageViewAccessibilityDelegate extends androidx.core.view.a
             arrayList.add(referencedMessageLabel);
         }
         info.b1(CollectionsKt.x0(arrayList, ", ", null, null, 0, null, null, 62, null));
-        info.o0(AccessibilityNodeInfoCompat.a.f3303i);
+        info.o0(AccessibilityNodeInfoCompat.a.f3347i);
         info.N0(15);
     }
 

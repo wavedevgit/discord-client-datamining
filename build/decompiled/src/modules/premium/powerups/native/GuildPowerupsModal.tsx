@@ -312,22 +312,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var15[1] = var18;
         var18 = var19.map;
         var16 = function(arg0) { // Environment: var16
-            _fun102197: for (var _fun102197_ip = 0;;) switch (_fun102197_ip) {
+            _fun102128: for (var _fun102128_ip = 0;;) switch (_fun102128_ip) {
                 case 0:
                     var0 = arg0;
                     var3 = var0.type;
                     var2 = _closure1_slot7;
                     var2 = var2.LEVEL;
                     if (!(var2 !== var3)) {
-                        _fun102197_ip = 107;
-                        continue _fun102197
+                        _fun102128_ip = 107;
+                        continue _fun102128
                     }
                 case 25:
                     var2 = _closure1_slot7;
                     var2 = var2.PERK;
                     if (!(var2 !== var3)) {
-                        _fun102197_ip = 43;
-                        continue _fun102197
+                        _fun102128_ip = 43;
+                        continue _fun102128
                     }
                 case 39:
                     var2 = null;
@@ -404,4 +404,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6681, 33, 1297, 671, 5606, 13291, 13297, 1568, 5690, 13306, 4527, 6677, 4674, 1234, 1881, 8850, 4670, 13307, 13309, 13316, 13346, 13358, 13360, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6712, 33, 1297, 671, 5637, 13318, 13324, 1568, 5721, 13333, 4557, 6708, 4704, 1234, 1881, 8882, 4700, 13334, 13336, 13343, 13373, 13385, 13387, 2]);

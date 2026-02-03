@@ -1,8 +1,8 @@
 package com.facebook.react.uimanager.common;
 
-import ir.c;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+import jr.c;
 import kotlin.Metadata;
 import org.jetbrains.annotations.NotNull;
 @Retention(RetentionPolicy.SOURCE)

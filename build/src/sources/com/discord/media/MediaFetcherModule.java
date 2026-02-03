@@ -11,9 +11,9 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.uimanager.ViewProps;
-import ir.v;
 import java.util.Comparator;
 import java.util.List;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
@@ -73,7 +73,7 @@ public final class MediaFetcherModule extends ReactContextBaseJavaModule {
             List a12 = CollectionsKt.a1(CollectionsKt.W0(companion.getMedia(reactApplicationContext, queryType, i10, num), new Comparator() { // from class: com.discord.media.MediaFetcherModule$getPhotos$$inlined$sortedByDescending$1
                 @Override // java.util.Comparator
                 public final int compare(T t10, T t11) {
-                    return lr.a.d(Integer.valueOf(((ContentResolverMedia) t11).getDateAdded()), Integer.valueOf(((ContentResolverMedia) t10).getDateAdded()));
+                    return mr.a.d(Integer.valueOf(((ContentResolverMedia) t11).getDateAdded()), Integer.valueOf(((ContentResolverMedia) t10).getDateAdded()));
                 }
             }), i10);
             if (a12.size() == i10) {

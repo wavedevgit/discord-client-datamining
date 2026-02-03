@@ -30,82 +30,82 @@ import ne.y;
 public class DefaultHttpDataSource extends le.f implements g {
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f14322e;
+    private final boolean f13951e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f14323f;
+    private final int f13952f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f14324g;
+    private final int f13953g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f14325h;
+    private final String f13954h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final g.C0174g f14326i;
+    private final g.C0179g f13955i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final g.C0174g f14327j;
+    private final g.C0179g f13956j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final boolean f14328k;
+    private final boolean f13957k;
 
     /* renamed from: l  reason: collision with root package name */
-    private n f14329l;
+    private n f13958l;
 
     /* renamed from: m  reason: collision with root package name */
-    private com.google.android.exoplayer2.upstream.a f14330m;
+    private com.google.android.exoplayer2.upstream.a f13959m;
 
     /* renamed from: n  reason: collision with root package name */
-    private HttpURLConnection f14331n;
+    private HttpURLConnection f13960n;
 
     /* renamed from: o  reason: collision with root package name */
-    private InputStream f14332o;
+    private InputStream f13961o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f14333p;
+    private boolean f13962p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f14334q;
+    private int f13963q;
 
     /* renamed from: r  reason: collision with root package name */
-    private long f14335r;
+    private long f13964r;
 
     /* renamed from: s  reason: collision with root package name */
-    private long f14336s;
+    private long f13965s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class Factory implements g.c {
 
         /* renamed from: b  reason: collision with root package name */
-        private c0 f14338b;
+        private c0 f13967b;
 
         /* renamed from: c  reason: collision with root package name */
-        private n f14339c;
+        private n f13968c;
 
         /* renamed from: d  reason: collision with root package name */
-        private String f14340d;
+        private String f13969d;
 
         /* renamed from: g  reason: collision with root package name */
-        private boolean f14343g;
+        private boolean f13972g;
 
         /* renamed from: h  reason: collision with root package name */
-        private boolean f14344h;
+        private boolean f13973h;
 
         /* renamed from: a  reason: collision with root package name */
-        private final g.C0174g f14337a = new g.C0174g();
+        private final g.C0179g f13966a = new g.C0179g();
 
         /* renamed from: e  reason: collision with root package name */
-        private int f14341e = 8000;
+        private int f13970e = 8000;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f14342f = 8000;
+        private int f13971f = 8000;
 
         @Override // com.google.android.exoplayer2.upstream.DataSource.Factory
         /* renamed from: a */
         public DefaultHttpDataSource createDataSource() {
-            DefaultHttpDataSource defaultHttpDataSource = new DefaultHttpDataSource(this.f14340d, this.f14341e, this.f14342f, this.f14343g, this.f14337a, this.f14339c, this.f14344h);
-            c0 c0Var = this.f14338b;
+            DefaultHttpDataSource defaultHttpDataSource = new DefaultHttpDataSource(this.f13969d, this.f13970e, this.f13971f, this.f13972g, this.f13966a, this.f13968c, this.f13973h);
+            c0 c0Var = this.f13967b;
             if (c0Var != null) {
                 defaultHttpDataSource.j(c0Var);
             }
@@ -113,7 +113,7 @@ public class DefaultHttpDataSource extends le.f implements g {
         }
 
         public Factory b(String str) {
-            this.f14340d = str;
+            this.f13969d = str;
             return this;
         }
     }
@@ -122,10 +122,10 @@ public class DefaultHttpDataSource extends le.f implements g {
     private static class b extends ji.n {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Map f14345d;
+        private final Map f13974d;
 
         public b(Map map) {
-            this.f14345d = map;
+            this.f13974d = map;
         }
 
         public static /* synthetic */ boolean f(String str) {
@@ -146,7 +146,7 @@ public class DefaultHttpDataSource extends le.f implements g {
         @Override // ji.o
         /* renamed from: b */
         public Map a() {
-            return this.f14345d;
+            return this.f13974d;
         }
 
         @Override // ji.n, java.util.Map
@@ -222,7 +222,7 @@ public class DefaultHttpDataSource extends le.f implements g {
         if (j10 != 0) {
             byte[] bArr = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
             while (j10 > 0) {
-                int read = ((InputStream) w0.j(this.f14332o)).read(bArr, 0, (int) Math.min(j10, (long) RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT));
+                int read = ((InputStream) w0.j(this.f13961o)).read(bArr, 0, (int) Math.min(j10, (long) RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT));
                 if (!Thread.currentThread().isInterrupted()) {
                     if (read != -1) {
                         j10 -= read;
@@ -238,14 +238,14 @@ public class DefaultHttpDataSource extends le.f implements g {
     }
 
     private void s() {
-        HttpURLConnection httpURLConnection = this.f14331n;
+        HttpURLConnection httpURLConnection = this.f13960n;
         if (httpURLConnection != null) {
             try {
                 httpURLConnection.disconnect();
             } catch (Exception e10) {
                 y.d("DefaultHttpDataSource", "Unexpected error while disconnecting", e10);
             }
-            this.f14331n = null;
+            this.f13960n = null;
         }
     }
 
@@ -256,7 +256,7 @@ public class DefaultHttpDataSource extends le.f implements g {
                 String protocol = url2.getProtocol();
                 if (!"https".equals(protocol) && !"http".equals(protocol)) {
                     throw new g.d("Unsupported protocol redirect: " + protocol, aVar, 2001, 1);
-                } else if (!this.f14322e && !protocol.equals(url.getProtocol())) {
+                } else if (!this.f13951e && !protocol.equals(url.getProtocol())) {
                     throw new g.d("Disallowed cross-protocol redirect (" + url.getProtocol() + " to " + protocol + ")", aVar, 2001, 1);
                 } else {
                     return url2;
@@ -274,21 +274,21 @@ public class DefaultHttpDataSource extends le.f implements g {
 
     private HttpURLConnection v(com.google.android.exoplayer2.upstream.a aVar) {
         HttpURLConnection w10;
-        URL url = new URL(aVar.f14346a.toString());
-        int i10 = aVar.f14348c;
-        byte[] bArr = aVar.f14349d;
-        long j10 = aVar.f14352g;
-        long j11 = aVar.f14353h;
+        URL url = new URL(aVar.f13975a.toString());
+        int i10 = aVar.f13977c;
+        byte[] bArr = aVar.f13978d;
+        long j10 = aVar.f13981g;
+        long j11 = aVar.f13982h;
         int i11 = 1;
         boolean d10 = aVar.d(1);
-        if (!this.f14322e && !this.f14328k) {
-            return w(url, i10, bArr, j10, j11, d10, true, aVar.f14350e);
+        if (!this.f13951e && !this.f13957k) {
+            return w(url, i10, bArr, j10, j11, d10, true, aVar.f13979e);
         }
         int i12 = 0;
         while (true) {
             int i13 = i12 + 1;
             if (i12 <= 20) {
-                w10 = w(url, i10, bArr, j10, j11, d10, false, aVar.f14350e);
+                w10 = w(url, i10, bArr, j10, j11, d10, false, aVar.f13979e);
                 int responseCode = w10.getResponseCode();
                 String headerField = w10.getHeaderField("Location");
                 if ((i10 != i11 && i10 != 3) || (responseCode != 300 && responseCode != 301 && responseCode != 302 && responseCode != 303 && responseCode != 307 && responseCode != 308)) {
@@ -296,7 +296,7 @@ public class DefaultHttpDataSource extends le.f implements g {
                         break;
                     }
                     w10.disconnect();
-                    if (!this.f14328k || responseCode != 302) {
+                    if (!this.f13957k || responseCode != 302) {
                         bArr = null;
                         i10 = 1;
                     }
@@ -318,14 +318,14 @@ public class DefaultHttpDataSource extends le.f implements g {
         String str;
         boolean z12;
         HttpURLConnection y10 = y(url);
-        y10.setConnectTimeout(this.f14323f);
-        y10.setReadTimeout(this.f14324g);
+        y10.setConnectTimeout(this.f13952f);
+        y10.setReadTimeout(this.f13953g);
         HashMap hashMap = new HashMap();
-        g.C0174g c0174g = this.f14326i;
-        if (c0174g != null) {
-            hashMap.putAll(c0174g.b());
+        g.C0179g c0179g = this.f13955i;
+        if (c0179g != null) {
+            hashMap.putAll(c0179g.b());
         }
-        hashMap.putAll(this.f14327j.b());
+        hashMap.putAll(this.f13956j.b());
         hashMap.putAll(map);
         for (Map.Entry entry : hashMap.entrySet()) {
             y10.setRequestProperty((String) entry.getKey(), (String) entry.getValue());
@@ -334,7 +334,7 @@ public class DefaultHttpDataSource extends le.f implements g {
         if (a10 != null) {
             y10.setRequestProperty("Range", a10);
         }
-        String str2 = this.f14325h;
+        String str2 = this.f13954h;
         if (str2 != null) {
             y10.setRequestProperty("User-Agent", str2);
         }
@@ -366,7 +366,7 @@ public class DefaultHttpDataSource extends le.f implements g {
 
     private static void x(HttpURLConnection httpURLConnection, long j10) {
         int i10;
-        if (httpURLConnection != null && (i10 = w0.f40295a) >= 19 && i10 <= 20) {
+        if (httpURLConnection != null && (i10 = w0.f40158a) >= 19 && i10 <= 20) {
             try {
                 InputStream inputStream = httpURLConnection.getInputStream();
                 if (j10 == -1) {
@@ -391,19 +391,19 @@ public class DefaultHttpDataSource extends le.f implements g {
         if (i11 == 0) {
             return 0;
         }
-        long j10 = this.f14335r;
+        long j10 = this.f13964r;
         if (j10 != -1) {
-            long j11 = j10 - this.f14336s;
+            long j11 = j10 - this.f13965s;
             if (j11 == 0) {
                 return -1;
             }
             i11 = (int) Math.min(i11, j11);
         }
-        int read = ((InputStream) w0.j(this.f14332o)).read(bArr, i10, i11);
+        int read = ((InputStream) w0.j(this.f13961o)).read(bArr, i10, i11);
         if (read == -1) {
             return -1;
         }
-        this.f14336s += read;
+        this.f13965s += read;
         o(read);
         return read;
     }
@@ -412,56 +412,56 @@ public class DefaultHttpDataSource extends le.f implements g {
     public long b(com.google.android.exoplayer2.upstream.a aVar) {
         byte[] bArr;
         m mVar;
-        this.f14330m = aVar;
+        this.f13959m = aVar;
         long j10 = 0;
-        this.f14336s = 0L;
-        this.f14335r = 0L;
+        this.f13965s = 0L;
+        this.f13964r = 0L;
         q(aVar);
         try {
             HttpURLConnection v10 = v(aVar);
-            this.f14331n = v10;
-            this.f14334q = v10.getResponseCode();
+            this.f13960n = v10;
+            this.f13963q = v10.getResponseCode();
             String responseMessage = v10.getResponseMessage();
-            int i10 = this.f14334q;
+            int i10 = this.f13963q;
             long j11 = -1;
             if (i10 >= 200 && i10 <= 299) {
                 String contentType = v10.getContentType();
-                n nVar = this.f14329l;
+                n nVar = this.f13958l;
                 if (nVar != null && !nVar.apply(contentType)) {
                     s();
                     throw new g.e(contentType, aVar);
                 }
-                if (this.f14334q == 200) {
-                    long j12 = aVar.f14352g;
+                if (this.f13963q == 200) {
+                    long j12 = aVar.f13981g;
                     if (j12 != 0) {
                         j10 = j12;
                     }
                 }
                 boolean u10 = u(v10);
                 if (!u10) {
-                    long j13 = aVar.f14353h;
+                    long j13 = aVar.f13982h;
                     if (j13 != -1) {
-                        this.f14335r = j13;
+                        this.f13964r = j13;
                     } else {
                         long b10 = t.b(v10.getHeaderField("Content-Length"), v10.getHeaderField("Content-Range"));
                         if (b10 != -1) {
                             j11 = b10 - j10;
                         }
-                        this.f14335r = j11;
+                        this.f13964r = j11;
                     }
                 } else {
-                    this.f14335r = aVar.f14353h;
+                    this.f13964r = aVar.f13982h;
                 }
                 try {
-                    this.f14332o = v10.getInputStream();
+                    this.f13961o = v10.getInputStream();
                     if (u10) {
-                        this.f14332o = new GZIPInputStream(this.f14332o);
+                        this.f13961o = new GZIPInputStream(this.f13961o);
                     }
-                    this.f14333p = true;
+                    this.f13962p = true;
                     r(aVar);
                     try {
                         A(j10, aVar);
-                        return this.f14335r;
+                        return this.f13964r;
                     } catch (IOException e10) {
                         s();
                         if (e10 instanceof g.d) {
@@ -475,11 +475,11 @@ public class DefaultHttpDataSource extends le.f implements g {
                 }
             }
             Map<String, List<String>> headerFields = v10.getHeaderFields();
-            if (this.f14334q == 416) {
-                if (aVar.f14352g == t.c(v10.getHeaderField("Content-Range"))) {
-                    this.f14333p = true;
+            if (this.f13963q == 416) {
+                if (aVar.f13981g == t.c(v10.getHeaderField("Content-Range"))) {
+                    this.f13962p = true;
                     r(aVar);
-                    long j14 = aVar.f14353h;
+                    long j14 = aVar.f13982h;
                     if (j14 == -1) {
                         return 0L;
                     }
@@ -491,19 +491,19 @@ public class DefaultHttpDataSource extends le.f implements g {
                 if (errorStream != null) {
                     bArr = w0.i1(errorStream);
                 } else {
-                    bArr = w0.f40300f;
+                    bArr = w0.f40163f;
                 }
             } catch (IOException unused) {
-                bArr = w0.f40300f;
+                bArr = w0.f40163f;
             }
             byte[] bArr2 = bArr;
             s();
-            if (this.f14334q == 416) {
+            if (this.f13963q == 416) {
                 mVar = new m(2008);
             } else {
                 mVar = null;
             }
-            throw new g.f(this.f14334q, responseMessage, mVar, headerFields, aVar, bArr2);
+            throw new g.f(this.f13963q, responseMessage, mVar, headerFields, aVar, bArr2);
         } catch (IOException e12) {
             s();
             throw g.d.c(e12, aVar, 1);
@@ -513,25 +513,25 @@ public class DefaultHttpDataSource extends le.f implements g {
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void close() {
         try {
-            InputStream inputStream = this.f14332o;
+            InputStream inputStream = this.f13961o;
             if (inputStream != null) {
-                long j10 = this.f14335r;
+                long j10 = this.f13964r;
                 long j11 = -1;
                 if (j10 != -1) {
-                    j11 = j10 - this.f14336s;
+                    j11 = j10 - this.f13965s;
                 }
-                x(this.f14331n, j11);
+                x(this.f13960n, j11);
                 try {
                     inputStream.close();
                 } catch (IOException e10) {
-                    throw new g.d(e10, (com.google.android.exoplayer2.upstream.a) w0.j(this.f14330m), 2000, 3);
+                    throw new g.d(e10, (com.google.android.exoplayer2.upstream.a) w0.j(this.f13959m), 2000, 3);
                 }
             }
         } finally {
-            this.f14332o = null;
+            this.f13961o = null;
             s();
-            if (this.f14333p) {
-                this.f14333p = false;
+            if (this.f13962p) {
+                this.f13962p = false;
                 p();
             }
         }
@@ -539,7 +539,7 @@ public class DefaultHttpDataSource extends le.f implements g {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Map d() {
-        HttpURLConnection httpURLConnection = this.f14331n;
+        HttpURLConnection httpURLConnection = this.f13960n;
         if (httpURLConnection == null) {
             return ji.t.j();
         }
@@ -548,7 +548,7 @@ public class DefaultHttpDataSource extends le.f implements g {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Uri m() {
-        HttpURLConnection httpURLConnection = this.f14331n;
+        HttpURLConnection httpURLConnection = this.f13960n;
         if (httpURLConnection == null) {
             return null;
         }
@@ -560,7 +560,7 @@ public class DefaultHttpDataSource extends le.f implements g {
         try {
             return z(bArr, i10, i11);
         } catch (IOException e10) {
-            throw g.d.c(e10, (com.google.android.exoplayer2.upstream.a) w0.j(this.f14330m), 2);
+            throw g.d.c(e10, (com.google.android.exoplayer2.upstream.a) w0.j(this.f13959m), 2);
         }
     }
 
@@ -568,15 +568,15 @@ public class DefaultHttpDataSource extends le.f implements g {
         return (HttpURLConnection) url.openConnection();
     }
 
-    private DefaultHttpDataSource(String str, int i10, int i11, boolean z10, g.C0174g c0174g, n nVar, boolean z11) {
+    private DefaultHttpDataSource(String str, int i10, int i11, boolean z10, g.C0179g c0179g, n nVar, boolean z11) {
         super(true);
-        this.f14325h = str;
-        this.f14323f = i10;
-        this.f14324g = i11;
-        this.f14322e = z10;
-        this.f14326i = c0174g;
-        this.f14329l = nVar;
-        this.f14327j = new g.C0174g();
-        this.f14328k = z11;
+        this.f13954h = str;
+        this.f13952f = i10;
+        this.f13953g = i11;
+        this.f13951e = z10;
+        this.f13955i = c0179g;
+        this.f13958l = nVar;
+        this.f13956j = new g.C0179g();
+        this.f13957k = z11;
     }
 }

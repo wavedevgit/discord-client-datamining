@@ -5,39 +5,39 @@ import java.io.InputStream;
 public final class s3 extends t2 {
 
     /* renamed from: c  reason: collision with root package name */
-    final int f17023c;
+    final int f16652c;
 
     /* renamed from: d  reason: collision with root package name */
-    final long f17024d;
+    final long f16653d;
 
     /* renamed from: e  reason: collision with root package name */
-    final int f17025e;
+    final int f16654e;
 
     /* renamed from: f  reason: collision with root package name */
-    final long f17026f;
+    final long f16655f;
 
     /* renamed from: g  reason: collision with root package name */
-    final int f17027g;
+    final int f16656g;
 
     /* renamed from: h  reason: collision with root package name */
-    final String f17028h;
+    final String f16657h;
 
     /* renamed from: i  reason: collision with root package name */
-    final long f17029i;
+    final long f16658i;
 
     /* renamed from: j  reason: collision with root package name */
-    final InputStream f17030j;
+    final InputStream f16659j;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s3(int i10, String str, int i11, long j10, int i12, long j11, int i13, String str2, long j12, InputStream inputStream) {
         super(i10, str);
-        this.f17023c = i11;
-        this.f17024d = j10;
-        this.f17025e = i12;
-        this.f17026f = j11;
-        this.f17027g = i13;
-        this.f17028h = str2;
-        this.f17029i = j12;
-        this.f17030j = inputStream;
+        this.f16652c = i11;
+        this.f16653d = j10;
+        this.f16654e = i12;
+        this.f16655f = j11;
+        this.f16656g = i13;
+        this.f16657h = str2;
+        this.f16658i = j12;
+        this.f16659j = inputStream;
     }
 }

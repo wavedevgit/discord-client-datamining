@@ -5,22 +5,22 @@ import android.content.Context;
 public final class m implements gi.z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gi.e0 f17218a;
+    private final gi.e0 f16847a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final gi.e0 f17219b;
+    private final gi.e0 f16848b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final gi.e0 f17220c;
+    private final gi.e0 f16849c;
 
     public m(gi.e0 e0Var, gi.e0 e0Var2, gi.e0 e0Var3, gi.e0 e0Var4) {
-        this.f17218a = e0Var;
-        this.f17219b = e0Var2;
-        this.f17220c = e0Var3;
+        this.f16847a = e0Var;
+        this.f16848b = e0Var2;
+        this.f16849c = e0Var3;
     }
 
     @Override // gi.e0
     public final /* bridge */ /* synthetic */ Object a() {
-        return new k((Context) this.f17218a.a(), (gi.t0) this.f17219b.a(), ((s) this.f17220c).a(), new v0());
+        return new k((Context) this.f16847a.a(), (gi.t0) this.f16848b.a(), ((s) this.f16849c).a(), new v0());
     }
 }

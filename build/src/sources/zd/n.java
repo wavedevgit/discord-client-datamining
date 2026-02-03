@@ -33,7 +33,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
     private long Q;
 
     public n(m mVar, Looper looper) {
-        this(mVar, looper, j.f55645a);
+        this(mVar, looper, j.f55777a);
     }
 
     private void a0() {
@@ -49,7 +49,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
             }
             return this.L.e(a10 - 1);
         }
-        return this.L.f47100e;
+        return this.L.f47355e;
     }
 
     private long c0() {
@@ -91,7 +91,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
     }
 
     private void g0(CueGroup cueGroup) {
-        this.B.onCues(cueGroup.f13995d);
+        this.B.onCues(cueGroup.f13624d);
         this.B.onCues(cueGroup);
     }
 
@@ -177,7 +177,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                 i10 = 2;
             }
             return w1.b(i10);
-        } else if (c0.r(format.f12706w)) {
+        } else if (c0.r(format.f12335w)) {
             return w1.b(1);
         } else {
             return w1.b(0);
@@ -257,7 +257,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                                 this.F = true;
                             }
                         }
-                    } else if (lVar.f47100e <= j10) {
+                    } else if (lVar.f47355e <= j10) {
                         l lVar2 = this.L;
                         if (lVar2 != null) {
                             lVar2.t();
@@ -297,9 +297,9 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                                     this.E = true;
                                     this.G = false;
                                 } else {
-                                    Format format = this.D.f37126b;
+                                    Format format = this.D.f37240b;
                                     if (format != null) {
-                                        kVar.f55646t = format.A;
+                                        kVar.f55778t = format.A;
                                         kVar.v();
                                         this.G &= !kVar.q();
                                     } else {

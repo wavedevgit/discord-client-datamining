@@ -32,9 +32,9 @@ import com.facebook.react.uimanager.style.BackgroundImageLayer;
 import com.facebook.react.uimanager.style.BorderRadiusProp;
 import com.facebook.react.uimanager.style.BorderStyle;
 import com.facebook.react.uimanager.style.LogicalEdge;
-import ir.v;
 import java.util.ArrayList;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -427,7 +427,7 @@ public class ReactViewManager extends ReactClippingViewManager<ReactViewGroup> {
     }
 
     @Override // com.facebook.react.uimanager.ViewManager
-    @ir.c
+    @jr.c
     public void receiveCommand(@NotNull ReactViewGroup root, int i10, ReadableArray readableArray) {
         Intrinsics.checkNotNullParameter(root, "root");
         if (i10 == 1) {
@@ -449,7 +449,7 @@ public class ReactViewManager extends ReactClippingViewManager<ReactViewGroup> {
         }
     }
 
-    @ir.c
+    @jr.c
     public void setBorderRadius(@NotNull ReactViewGroup view, int i10, float f10) {
         Intrinsics.checkNotNullParameter(view, "view");
         setBorderRadius(view, i10, new DynamicFromObject(Float.valueOf(f10)));

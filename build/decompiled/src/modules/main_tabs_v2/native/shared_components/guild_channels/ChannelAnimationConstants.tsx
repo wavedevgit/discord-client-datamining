@@ -131,4 +131,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.TYPING_ENTERING = var3;
     var2.TYPING_EXITING = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4042, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4072, 2]);

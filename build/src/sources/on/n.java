@@ -1,44 +1,96 @@
 package on;
 
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+import java.util.HashMap;
+import kotlin.Result;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class n {
+public final class n implements e {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final n f44589d = new n("FRONT", 0);
+    /* renamed from: b  reason: collision with root package name */
+    public static final a f44577b = new a(null);
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final n f44590e = new n("BACK", 1);
+    /* renamed from: a  reason: collision with root package name */
+    private final HashMap f44578a;
 
-    /* renamed from: i  reason: collision with root package name */
-    public static final n f44591i = new n("EXTERNAL", 2);
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
 
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ n[] f44592o;
-
-    /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f44593p;
-
-    static {
-        n[] a10 = a();
-        f44592o = a10;
-        f44593p = pr.a.a(a10);
+        private a() {
+        }
     }
 
-    private n(String str, int i10) {
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b extends kotlin.coroutines.jvm.internal.d {
+
+        /* renamed from: d  reason: collision with root package name */
+        Object f44579d;
+
+        /* renamed from: e  reason: collision with root package name */
+        /* synthetic */ Object f44580e;
+
+        /* renamed from: o  reason: collision with root package name */
+        int f44582o;
+
+        b(Continuation continuation) {
+            super(continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            this.f44580e = obj;
+            this.f44582o |= Integer.MIN_VALUE;
+            Object a10 = n.this.a(null, null, this);
+            if (a10 == pr.b.f()) {
+                return a10;
+            }
+            return Result.a(a10);
+        }
     }
 
-    private static final /* synthetic */ n[] a() {
-        return new n[]{f44589d, f44590e, f44591i};
+    public n() {
+        b();
+        this.f44578a = new HashMap();
     }
 
-    public static n valueOf(String str) {
-        return (n) Enum.valueOf(n.class, str);
+    private final m b() {
+        try {
+            Object newInstance = Class.forName("com.withpersona.sdk2.inquiry.extraction.impl.TextEntityExtractorImpl").newInstance();
+            Intrinsics.checkNotNull(newInstance, "null cannot be cast to non-null type com.withpersona.sdk2.camera.analyzers.TextEntityExtractor");
+            android.support.v4.media.session.b.a(newInstance);
+        } catch (ClassNotFoundException unused) {
+        }
+        return null;
     }
 
-    public static n[] values() {
-        return (n[]) f44592o.clone();
+    /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
+    /* JADX WARN: Removed duplicated region for block: B:14:0x0037  */
+    /* JADX WARN: Removed duplicated region for block: B:16:0x003e  */
+    /* JADX WARN: Removed duplicated region for block: B:20:0x004c  */
+    /* JADX WARN: Removed duplicated region for block: B:23:0x0051  */
+    /* JADX WARN: Removed duplicated region for block: B:24:0x0064  */
+    /* JADX WARN: Removed duplicated region for block: B:30:0x0083  */
+    /* JADX WARN: Removed duplicated region for block: B:31:0x0088  */
+    /* JADX WARN: Removed duplicated region for block: B:39:0x00b1  */
+    /* JADX WARN: Removed duplicated region for block: B:40:0x00b6  */
+    /* JADX WARN: Removed duplicated region for block: B:44:0x00bb  */
+    /* JADX WARN: Removed duplicated region for block: B:50:0x00d9  */
+    /* JADX WARN: Removed duplicated region for block: B:52:0x00e2  */
+    @Override // on.e
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public java.lang.Object a(nn.j0 r8, android.graphics.Rect r9, kotlin.coroutines.Continuation r10) {
+        /*
+            Method dump skipped, instructions count: 242
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: on.n.a(nn.j0, android.graphics.Rect, kotlin.coroutines.Continuation):java.lang.Object");
     }
 }

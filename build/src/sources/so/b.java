@@ -1,38 +1,22 @@
 package so;
 
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
+import wg.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
+final /* synthetic */ class b implements g {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public /* synthetic */ class a {
+    /* renamed from: a  reason: collision with root package name */
+    private final /* synthetic */ Function1 f49216a;
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f49111a;
-
-        static {
-            int[] iArr = new int[mo.f.values().length];
-            try {
-                iArr[mo.f.f39408d.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                iArr[mo.f.f39409e.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
-            }
-            f49111a = iArr;
-        }
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public b(Function1 function) {
+        Intrinsics.checkNotNullParameter(function, "function");
+        this.f49216a = function;
     }
 
-    public static final String a(mo.f fVar) {
-        Intrinsics.checkNotNullParameter(fVar, "<this>");
-        int i10 = a.f49111a[fVar.ordinal()];
-        if (i10 != 1) {
-            if (i10 == 2) {
-                return "sandbox";
-            }
-            throw new ir.p();
-        }
-        return "production";
+    @Override // wg.g
+    public final /* synthetic */ void onSuccess(Object obj) {
+        this.f49216a.invoke(obj);
     }
 }

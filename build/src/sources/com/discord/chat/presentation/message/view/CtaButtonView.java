@@ -31,7 +31,7 @@ public final class CtaButtonView extends LinearLayout {
     }
 
     /* renamed from: setButtonCallback-JjTCmh4  reason: not valid java name */
-    private final void m684setButtonCallbackJjTCmh4(final long j10, final String str, final String str2, final Function3 function3) {
+    private final void m686setButtonCallbackJjTCmh4(final long j10, final String str, final String str2, final Function3 function3) {
         if (str2 != null && !StringsKt.k0(str2)) {
             this.binding.ctaButton.setOnClickButtonListener(new View.OnClickListener() { // from class: com.discord.chat.presentation.message.view.b0
                 @Override // android.view.View.OnClickListener
@@ -55,7 +55,7 @@ public final class CtaButtonView extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setButtonCallback_JjTCmh4$lambda$0(Function3 function3, long j10, String str, String str2, View view) {
-        function3.invoke(ChannelId.m1058boximpl(j10), MessageId.m1084boximpl(str), str2);
+        function3.invoke(ChannelId.m1060boximpl(j10), MessageId.m1086boximpl(str), str2);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -63,7 +63,7 @@ public final class CtaButtonView extends LinearLayout {
     }
 
     /* renamed from: setContent-P6jPPyA$default  reason: not valid java name */
-    public static /* synthetic */ void m685setContentP6jPPyA$default(CtaButtonView ctaButtonView, long j10, String str, String str2, Integer num, Integer num2, String str3, Function3 function3, int i10, Object obj) {
+    public static /* synthetic */ void m687setContentP6jPPyA$default(CtaButtonView ctaButtonView, long j10, String str, String str2, Integer num, Integer num2, String str3, Function3 function3, int i10, Object obj) {
         if ((i10 & 8) != 0) {
             num = null;
         }
@@ -73,7 +73,7 @@ public final class CtaButtonView extends LinearLayout {
         if ((i10 & 32) != 0) {
             str3 = null;
         }
-        ctaButtonView.m686setContentP6jPPyA(j10, str, str2, num, num2, str3, function3);
+        ctaButtonView.m688setContentP6jPPyA(j10, str, str2, num, num2, str3, function3);
     }
 
     @NotNull
@@ -82,7 +82,7 @@ public final class CtaButtonView extends LinearLayout {
     }
 
     /* renamed from: setContent-P6jPPyA  reason: not valid java name */
-    public final void m686setContentP6jPPyA(long j10, @NotNull String messageId, @NotNull String text, Integer num, Integer num2, String str, @NotNull Function3 onTapCtaButton) {
+    public final void m688setContentP6jPPyA(long j10, @NotNull String messageId, @NotNull String text, Integer num, Integer num2, String str, @NotNull Function3 onTapCtaButton) {
         int i10;
         int color;
         Intrinsics.checkNotNullParameter(messageId, "messageId");
@@ -105,7 +105,7 @@ public final class CtaButtonView extends LinearLayout {
         dCDButton2.setBackgroundColor(color);
         this.binding.ctaButton.setTextSizeSp(14.0f);
         this.binding.ctaButton.setCornerRadius(32);
-        m684setButtonCallbackJjTCmh4(j10, messageId, str, onTapCtaButton);
+        m686setButtonCallbackJjTCmh4(j10, messageId, str, onTapCtaButton);
     }
 
     public /* synthetic */ CtaButtonView(Context context, AttributeSet attributeSet, int i10, DefaultConstructorMarker defaultConstructorMarker) {

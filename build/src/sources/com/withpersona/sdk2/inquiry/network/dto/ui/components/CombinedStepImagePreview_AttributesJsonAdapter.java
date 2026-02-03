@@ -36,8 +36,8 @@ public final class CombinedStepImagePreview_AttributesJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(reader, "reader");
         reader.r();
         while (reader.hasNext()) {
-            if (reader.A0(this.options) == -1) {
-                reader.E0();
+            if (reader.t0(this.options) == -1) {
+                reader.F0();
                 reader.P();
             }
         }

@@ -6,12 +6,12 @@ import com.facebook.react.bridge.ReadableNativeArray;
 import com.facebook.react.bridge.ReadableType;
 import com.facebook.react.bridge.WritableNativeArray;
 import com.facebook.react.uimanager.ViewProps;
-import ir.p;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -177,7 +177,7 @@ public final class NativeArrayExtensionsKt {
         for (int i10 = 0; i10 < size; i10++) {
             switch (WhenMappings.$EnumSwitchMapping$0[readableArray.getType(i10).ordinal()]) {
                 case 1:
-                    Unit unit = Unit.f33298a;
+                    Unit unit = Unit.f33074a;
                     break;
                 case 2:
                     jSONArray.put(readableArray.getBoolean(i10));

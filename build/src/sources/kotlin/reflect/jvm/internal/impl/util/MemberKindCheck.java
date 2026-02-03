@@ -9,7 +9,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class MemberKindCheck implements Check {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f36081a;
+    private final String f35857a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Member extends MemberKindCheck {
@@ -56,7 +56,7 @@ public abstract class MemberKindCheck implements Check {
     @Override // kotlin.reflect.jvm.internal.impl.util.Check
     @NotNull
     public String getDescription() {
-        return this.f36081a;
+        return this.f35857a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.util.Check
@@ -65,6 +65,6 @@ public abstract class MemberKindCheck implements Check {
     }
 
     private MemberKindCheck(String str) {
-        this.f36081a = str;
+        this.f35857a = str;
     }
 }

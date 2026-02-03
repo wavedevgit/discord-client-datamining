@@ -6,7 +6,7 @@ import com.discord.timers.reactevents.IntervalEvent;
 import com.discord.timers.reactevents.TimerEvent;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.devsupport.StackTraceHelper;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -35,7 +35,7 @@ public final class TimersModule extends NativeTimersModuleSpec {
         ReactApplicationContext reactApplicationContext = timersModule.getReactApplicationContext();
         Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "getReactApplicationContext(...)");
         reactEvents.emitModuleEvent(reactApplicationContext, new IntervalEvent((int) d10));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -44,7 +44,7 @@ public final class TimersModule extends NativeTimersModuleSpec {
         ReactApplicationContext reactApplicationContext = timersModule.getReactApplicationContext();
         Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "getReactApplicationContext(...)");
         reactEvents.emitModuleEvent(reactApplicationContext, new TimerEvent((int) d10));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // com.discord.codegen.NativeTimersModuleSpec

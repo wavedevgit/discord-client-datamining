@@ -6,20 +6,20 @@ import gf.c;
 final class f0 implements c.a {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ ff.d f26811a;
+    final /* synthetic */ ff.d f26906a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f0(ff.d dVar) {
-        this.f26811a = dVar;
+        this.f26906a = dVar;
     }
 
     @Override // gf.c.a
     public final void e(Bundle bundle) {
-        this.f26811a.e(bundle);
+        this.f26906a.e(bundle);
     }
 
     @Override // gf.c.a
     public final void f(int i10) {
-        this.f26811a.f(i10);
+        this.f26906a.f(i10);
     }
 }

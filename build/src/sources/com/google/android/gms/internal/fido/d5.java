@@ -5,11 +5,11 @@ import java.util.Arrays;
 public final class d5 extends l5 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f14991d;
+    private final boolean f14620d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d5(boolean z10) {
-        this.f14991d = z10;
+        this.f14620d = z10;
     }
 
     @Override // java.lang.Comparable
@@ -21,12 +21,12 @@ public final class d5 extends l5 {
         }
         d5 d5Var = (d5) l5Var;
         int i11 = 21;
-        if (true != this.f14991d) {
+        if (true != this.f14620d) {
             i10 = 20;
         } else {
             i10 = 21;
         }
-        if (true != d5Var.f14991d) {
+        if (true != d5Var.f14620d) {
             i11 = 20;
         }
         return i10 - i11;
@@ -36,18 +36,18 @@ public final class d5 extends l5 {
         if (this == obj) {
             return true;
         }
-        if (obj != null && d5.class == obj.getClass() && this.f14991d == ((d5) obj).f14991d) {
+        if (obj != null && d5.class == obj.getClass() && this.f14620d == ((d5) obj).f14620d) {
             return true;
         }
         return false;
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(l5.e((byte) -32)), Boolean.valueOf(this.f14991d)});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(l5.e((byte) -32)), Boolean.valueOf(this.f14620d)});
     }
 
     public final String toString() {
-        return Boolean.toString(this.f14991d);
+        return Boolean.toString(this.f14620d);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

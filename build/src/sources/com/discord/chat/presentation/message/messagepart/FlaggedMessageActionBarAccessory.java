@@ -22,7 +22,7 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ FlaggedMessageActionBarAccessory m572copyu7_MRrM$default(FlaggedMessageActionBarAccessory flaggedMessageActionBarAccessory, String str, Message message, AutoModerationContext autoModerationContext, int i10, Object obj) {
+    public static /* synthetic */ FlaggedMessageActionBarAccessory m574copyu7_MRrM$default(FlaggedMessageActionBarAccessory flaggedMessageActionBarAccessory, String str, Message message, AutoModerationContext autoModerationContext, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = flaggedMessageActionBarAccessory.messageId;
         }
@@ -32,12 +32,12 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
         if ((i10 & 4) != 0) {
             autoModerationContext = flaggedMessageActionBarAccessory.autoModerationContext;
         }
-        return flaggedMessageActionBarAccessory.m574copyu7_MRrM(str, message, autoModerationContext);
+        return flaggedMessageActionBarAccessory.m576copyu7_MRrM(str, message, autoModerationContext);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m573component13Eiw7ao() {
+    public final String m575component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -53,7 +53,7 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final FlaggedMessageActionBarAccessory m574copyu7_MRrM(@NotNull String messageId, @NotNull Message message, @NotNull AutoModerationContext autoModerationContext) {
+    public final FlaggedMessageActionBarAccessory m576copyu7_MRrM(@NotNull String messageId, @NotNull Message message, @NotNull AutoModerationContext autoModerationContext) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(message, "message");
         Intrinsics.checkNotNullParameter(autoModerationContext, "autoModerationContext");
@@ -66,7 +66,7 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
         }
         if (obj instanceof FlaggedMessageActionBarAccessory) {
             FlaggedMessageActionBarAccessory flaggedMessageActionBarAccessory = (FlaggedMessageActionBarAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, flaggedMessageActionBarAccessory.messageId) && Intrinsics.areEqual(this.message, flaggedMessageActionBarAccessory.message) && Intrinsics.areEqual(this.autoModerationContext, flaggedMessageActionBarAccessory.autoModerationContext);
+            return MessageId.m1090equalsimpl0(this.messageId, flaggedMessageActionBarAccessory.messageId) && Intrinsics.areEqual(this.message, flaggedMessageActionBarAccessory.message) && Intrinsics.areEqual(this.autoModerationContext, flaggedMessageActionBarAccessory.autoModerationContext);
         }
         return false;
     }
@@ -84,20 +84,20 @@ public final class FlaggedMessageActionBarAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.message.hashCode()) * 31) + this.autoModerationContext.hashCode();
+        return (((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.message.hashCode()) * 31) + this.autoModerationContext.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         Message message = this.message;
         AutoModerationContext autoModerationContext = this.autoModerationContext;
-        return "FlaggedMessageActionBarAccessory(messageId=" + m1091toStringimpl + ", message=" + message + ", autoModerationContext=" + autoModerationContext + ")";
+        return "FlaggedMessageActionBarAccessory(messageId=" + m1093toStringimpl + ", message=" + message + ", autoModerationContext=" + autoModerationContext + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

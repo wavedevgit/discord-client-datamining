@@ -22,7 +22,7 @@ public final class VirtualViewRenderState {
     static {
         VirtualViewRenderState[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = pr.a.a($values);
+        $ENTRIES = qr.a.a($values);
     }
 
     private VirtualViewRenderState(String str, int i10, int i11) {

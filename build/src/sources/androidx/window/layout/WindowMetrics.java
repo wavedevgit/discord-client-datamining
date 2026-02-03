@@ -8,24 +8,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class WindowMetrics {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f5437a;
+    private final a f5481a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final WindowInsetsCompat f5438b;
+    private final WindowInsetsCompat f5482b;
 
     public WindowMetrics(a _bounds, WindowInsetsCompat _windowInsetsCompat) {
         Intrinsics.checkNotNullParameter(_bounds, "_bounds");
         Intrinsics.checkNotNullParameter(_windowInsetsCompat, "_windowInsetsCompat");
-        this.f5437a = _bounds;
-        this.f5438b = _windowInsetsCompat;
+        this.f5481a = _bounds;
+        this.f5482b = _windowInsetsCompat;
     }
 
     public final Rect a() {
-        return this.f5437a.a();
+        return this.f5481a.a();
     }
 
     public final WindowInsetsCompat b() {
-        return this.f5438b;
+        return this.f5482b;
     }
 
     public boolean equals(Object obj) {
@@ -43,17 +43,17 @@ public final class WindowMetrics {
         }
         Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type androidx.window.layout.WindowMetrics");
         WindowMetrics windowMetrics = (WindowMetrics) obj;
-        if (Intrinsics.areEqual(this.f5437a, windowMetrics.f5437a) && Intrinsics.areEqual(this.f5438b, windowMetrics.f5438b)) {
+        if (Intrinsics.areEqual(this.f5481a, windowMetrics.f5481a) && Intrinsics.areEqual(this.f5482b, windowMetrics.f5482b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f5437a.hashCode() * 31) + this.f5438b.hashCode();
+        return (this.f5481a.hashCode() * 31) + this.f5482b.hashCode();
     }
 
     public String toString() {
-        return "WindowMetrics( bounds=" + this.f5437a + ", windowInsetsCompat=" + this.f5438b + ')';
+        return "WindowMetrics( bounds=" + this.f5481a + ", windowInsetsCompat=" + this.f5482b + ')';
     }
 }

@@ -5,12 +5,12 @@ import java.util.Iterator;
 abstract class o1 implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    final Iterator f45625d;
+    final Iterator f45699d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o1(Iterator it) {
         it.getClass();
-        this.f45625d = it;
+        this.f45699d = it;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -18,16 +18,16 @@ abstract class o1 implements Iterator {
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f45625d.hasNext();
+        return this.f45699d.hasNext();
     }
 
     @Override // java.util.Iterator
     public final Object next() {
-        return a(this.f45625d.next());
+        return a(this.f45699d.next());
     }
 
     @Override // java.util.Iterator
     public final void remove() {
-        this.f45625d.remove();
+        this.f45699d.remove();
     }
 }

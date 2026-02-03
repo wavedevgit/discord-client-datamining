@@ -10,19 +10,19 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public class v0 extends d {
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f33355e;
+    private final List f33131e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements ListIterator, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        private final ListIterator f33356d;
+        private final ListIterator f33132d;
 
         a(int i10) {
             int W;
-            List list = v0.this.f33355e;
+            List list = v0.this.f33131e;
             W = z.W(v0.this, i10);
-            this.f33356d = list.listIterator(W);
+            this.f33132d = list.listIterator(W);
         }
 
         @Override // java.util.ListIterator
@@ -32,35 +32,35 @@ public class v0 extends d {
 
         @Override // java.util.ListIterator, java.util.Iterator
         public boolean hasNext() {
-            return this.f33356d.hasPrevious();
+            return this.f33132d.hasPrevious();
         }
 
         @Override // java.util.ListIterator
         public boolean hasPrevious() {
-            return this.f33356d.hasNext();
+            return this.f33132d.hasNext();
         }
 
         @Override // java.util.ListIterator, java.util.Iterator
         public Object next() {
-            return this.f33356d.previous();
+            return this.f33132d.previous();
         }
 
         @Override // java.util.ListIterator
         public int nextIndex() {
             int V;
-            V = z.V(v0.this, this.f33356d.previousIndex());
+            V = z.V(v0.this, this.f33132d.previousIndex());
             return V;
         }
 
         @Override // java.util.ListIterator
         public Object previous() {
-            return this.f33356d.next();
+            return this.f33132d.next();
         }
 
         @Override // java.util.ListIterator
         public int previousIndex() {
             int V;
-            V = z.V(v0.this, this.f33356d.nextIndex());
+            V = z.V(v0.this, this.f33132d.nextIndex());
             return V;
         }
 
@@ -77,18 +77,18 @@ public class v0 extends d {
 
     public v0(List delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f33355e = delegate;
+        this.f33131e = delegate;
     }
 
     @Override // kotlin.collections.b
     public int c() {
-        return this.f33355e.size();
+        return this.f33131e.size();
     }
 
     @Override // kotlin.collections.d, java.util.List
     public Object get(int i10) {
         int U;
-        List list = this.f33355e;
+        List list = this.f33131e;
         U = z.U(this, i10);
         return list.get(U);
     }

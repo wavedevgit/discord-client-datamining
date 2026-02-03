@@ -1,21 +1,11 @@
 package ct;
 
-import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.json.Json;
+import kotlinx.serialization.json.JsonElement;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class f extends g {
+public interface f extends Decoder, kotlinx.serialization.encoding.c {
+    Json d();
 
-    /* renamed from: c  reason: collision with root package name */
-    public static final f f21347c = new f();
-
-    private f() {
-    }
-
-    public final void c(byte[] array) {
-        Intrinsics.checkNotNullParameter(array, "array");
-        a(array);
-    }
-
-    public final byte[] d() {
-        return super.b(8196);
-    }
+    JsonElement g();
 }

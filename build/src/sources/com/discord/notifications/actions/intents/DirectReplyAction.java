@@ -79,7 +79,7 @@ public final class DirectReplyAction implements NotificationAction {
         @Override // android.os.Parcelable.Creator
         public final DirectReplyAction createFromParcel(Parcel parcel) {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new DirectReplyAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DirectReplyAction.class.getClassLoader())).m1067unboximpl(), parcel.readString(), parcel.readInt() == 0 ? null : Integer.valueOf(parcel.readInt()), parcel.readString(), ((MessageId) parcel.readParcelable(DirectReplyAction.class.getClassLoader())).m1093unboximpl(), null);
+            return new DirectReplyAction(parcel.readString(), ((ChannelId) parcel.readParcelable(DirectReplyAction.class.getClassLoader())).m1069unboximpl(), parcel.readString(), parcel.readInt() == 0 ? null : Integer.valueOf(parcel.readInt()), parcel.readString(), ((MessageId) parcel.readParcelable(DirectReplyAction.class.getClassLoader())).m1095unboximpl(), null);
         }
 
         /* JADX WARN: Can't rename method to resolve collision */
@@ -94,7 +94,7 @@ public final class DirectReplyAction implements NotificationAction {
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    private final long m972component2o4g7jtM() {
+    private final long m974component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -111,12 +111,12 @@ public final class DirectReplyAction implements NotificationAction {
     }
 
     /* renamed from: component6-3Eiw7ao  reason: not valid java name */
-    private final String m973component63Eiw7ao() {
+    private final String m975component63Eiw7ao() {
         return this.referenceMessageId;
     }
 
     /* renamed from: copy-4SGaORo$default  reason: not valid java name */
-    public static /* synthetic */ DirectReplyAction m974copy4SGaORo$default(DirectReplyAction directReplyAction, String str, long j10, String str2, Integer num, String str3, String str4, int i10, Object obj) {
+    public static /* synthetic */ DirectReplyAction m976copy4SGaORo$default(DirectReplyAction directReplyAction, String str, long j10, String str2, Integer num, String str3, String str4, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = directReplyAction.tag;
         }
@@ -135,7 +135,7 @@ public final class DirectReplyAction implements NotificationAction {
         if ((i10 & 32) != 0) {
             str4 = directReplyAction.referenceMessageId;
         }
-        return directReplyAction.m975copy4SGaORo(str, j10, str2, num, str3, str4);
+        return directReplyAction.m977copy4SGaORo(str, j10, str2, num, str3, str4);
     }
 
     @NotNull
@@ -145,7 +145,7 @@ public final class DirectReplyAction implements NotificationAction {
 
     @NotNull
     /* renamed from: copy-4SGaORo  reason: not valid java name */
-    public final DirectReplyAction m975copy4SGaORo(@NotNull String tag, long j10, String str, Integer num, String str2, @NotNull String referenceMessageId) {
+    public final DirectReplyAction m977copy4SGaORo(@NotNull String tag, long j10, String str, Integer num, String str2, @NotNull String referenceMessageId) {
         Intrinsics.checkNotNullParameter(tag, "tag");
         Intrinsics.checkNotNullParameter(referenceMessageId, "referenceMessageId");
         return new DirectReplyAction(tag, j10, str, num, str2, referenceMessageId, null);
@@ -162,7 +162,7 @@ public final class DirectReplyAction implements NotificationAction {
         }
         if (obj instanceof DirectReplyAction) {
             DirectReplyAction directReplyAction = (DirectReplyAction) obj;
-            return Intrinsics.areEqual(this.tag, directReplyAction.tag) && ChannelId.m1062equalsimpl0(this.channelId, directReplyAction.channelId) && Intrinsics.areEqual(this.channelName, directReplyAction.channelName) && Intrinsics.areEqual(this.channelType, directReplyAction.channelType) && Intrinsics.areEqual(this.guildName, directReplyAction.guildName) && MessageId.m1088equalsimpl0(this.referenceMessageId, directReplyAction.referenceMessageId);
+            return Intrinsics.areEqual(this.tag, directReplyAction.tag) && ChannelId.m1064equalsimpl0(this.channelId, directReplyAction.channelId) && Intrinsics.areEqual(this.channelName, directReplyAction.channelName) && Intrinsics.areEqual(this.channelType, directReplyAction.channelType) && Intrinsics.areEqual(this.guildName, directReplyAction.guildName) && MessageId.m1090equalsimpl0(this.referenceMessageId, directReplyAction.referenceMessageId);
         }
         return false;
     }
@@ -179,13 +179,13 @@ public final class DirectReplyAction implements NotificationAction {
     }
 
     public int hashCode() {
-        int hashCode = ((this.tag.hashCode() * 31) + ChannelId.m1063hashCodeimpl(this.channelId)) * 31;
+        int hashCode = ((this.tag.hashCode() * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31;
         String str = this.channelName;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         Integer num = this.channelType;
         int hashCode3 = (hashCode2 + (num == null ? 0 : num.hashCode())) * 31;
         String str2 = this.guildName;
-        return ((hashCode3 + (str2 != null ? str2.hashCode() : 0)) * 31) + MessageId.m1089hashCodeimpl(this.referenceMessageId);
+        return ((hashCode3 + (str2 != null ? str2.hashCode() : 0)) * 31) + MessageId.m1091hashCodeimpl(this.referenceMessageId);
     }
 
     @Override // com.discord.notifications.actions.intents.NotificationAction
@@ -203,7 +203,7 @@ public final class DirectReplyAction implements NotificationAction {
             bundle.putInt("channelType", num.intValue());
         }
         bundle.putString("guildName", this.guildName);
-        bundle.putString("referenceMessageId", MessageId.m1091toStringimpl(this.referenceMessageId));
+        bundle.putString("referenceMessageId", MessageId.m1093toStringimpl(this.referenceMessageId));
         HeadlessTasks.Companion.startHeadlessTask$default(companion, context, "DirectReply", 0L, false, bundle, true, 12, null);
     }
 
@@ -221,12 +221,12 @@ public final class DirectReplyAction implements NotificationAction {
     @NotNull
     public String toString() {
         String str = this.tag;
-        String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
+        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
         String str2 = this.channelName;
         Integer num = this.channelType;
         String str3 = this.guildName;
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.referenceMessageId);
-        return "DirectReplyAction(tag=" + str + ", channelId=" + m1065toStringimpl + ", channelName=" + str2 + ", channelType=" + num + ", guildName=" + str3 + ", referenceMessageId=" + m1091toStringimpl + ")";
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.referenceMessageId);
+        return "DirectReplyAction(tag=" + str + ", channelId=" + m1067toStringimpl + ", channelName=" + str2 + ", channelType=" + num + ", guildName=" + str3 + ", referenceMessageId=" + m1093toStringimpl + ")";
     }
 
     @Override // android.os.Parcelable
@@ -234,7 +234,7 @@ public final class DirectReplyAction implements NotificationAction {
         int intValue;
         Intrinsics.checkNotNullParameter(dest, "dest");
         dest.writeString(this.tag);
-        dest.writeParcelable(ChannelId.m1058boximpl(this.channelId), i10);
+        dest.writeParcelable(ChannelId.m1060boximpl(this.channelId), i10);
         dest.writeString(this.channelName);
         Integer num = this.channelType;
         if (num == null) {
@@ -245,7 +245,7 @@ public final class DirectReplyAction implements NotificationAction {
         }
         dest.writeInt(intValue);
         dest.writeString(this.guildName);
-        dest.writeParcelable(MessageId.m1084boximpl(this.referenceMessageId), i10);
+        dest.writeParcelable(MessageId.m1086boximpl(this.referenceMessageId), i10);
     }
 
     private DirectReplyAction(String tag, long j10, String str, Integer num, String str2, String referenceMessageId) {

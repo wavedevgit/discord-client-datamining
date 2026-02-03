@@ -11,49 +11,49 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final PlatformBitmapFactory f48087a;
+    private final PlatformBitmapFactory f48289a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final p9.c f48088b;
+    private final p9.c f48290b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Bitmap.Config f48089c;
+    private final Bitmap.Config f48291c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ExecutorService f48090d;
+    private final ExecutorService f48292d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Class f48091e;
+    private final Class f48293e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final SparseArray f48092f;
+    private final SparseArray f48294f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private final class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final o9.a f48093d;
+        private final o9.a f48295d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final p9.b f48094e;
+        private final p9.b f48296e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f48095i;
+        private final int f48297i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final int f48096o;
+        private final int f48298o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ c f48097p;
+        final /* synthetic */ c f48299p;
 
         public a(c cVar, o9.a animationBackend, p9.b bitmapFrameCache, int i10, int i11) {
             Intrinsics.checkNotNullParameter(animationBackend, "animationBackend");
             Intrinsics.checkNotNullParameter(bitmapFrameCache, "bitmapFrameCache");
-            this.f48097p = cVar;
-            this.f48093d = animationBackend;
-            this.f48094e = bitmapFrameCache;
-            this.f48095i = i10;
-            this.f48096o = i11;
+            this.f48299p = cVar;
+            this.f48295d = animationBackend;
+            this.f48296e = bitmapFrameCache;
+            this.f48297i = i10;
+            this.f48298o = i11;
         }
 
         private final boolean a(int i10, int i11) {
@@ -64,10 +64,10 @@ public final class c implements b {
                     if (i11 != 2) {
                         return false;
                     }
-                    d10 = this.f48097p.f48087a.b(this.f48093d.e(), this.f48093d.c(), this.f48097p.f48089c);
+                    d10 = this.f48299p.f48289a.b(this.f48295d.e(), this.f48295d.c(), this.f48299p.f48291c);
                     i12 = -1;
                 } else {
-                    d10 = this.f48094e.d(i10, this.f48093d.e(), this.f48093d.c());
+                    d10 = this.f48296e.d(i10, this.f48295d.e(), this.f48295d.c());
                 }
                 CloseableReference closeableReference = d10;
                 boolean b10 = b(i10, closeableReference, i11);
@@ -77,7 +77,7 @@ public final class c implements b {
                 }
                 return b10;
             } catch (RuntimeException e10) {
-                p8.a.G(this.f48097p.f48091e, "Failed to create frame bitmap", e10);
+                p8.a.G(this.f48299p.f48293e, "Failed to create frame bitmap", e10);
                 return false;
             } finally {
                 CloseableReference.N(null);
@@ -85,15 +85,15 @@ public final class c implements b {
         }
 
         private final boolean b(int i10, CloseableReference closeableReference, int i11) {
-            if (CloseableReference.I0(closeableReference) && closeableReference != null) {
-                p9.c cVar = this.f48097p.f48088b;
-                Object D0 = closeableReference.D0();
-                Intrinsics.checkNotNullExpressionValue(D0, "get(...)");
-                if (cVar.a(i10, (Bitmap) D0)) {
-                    p8.a.z(this.f48097p.f48091e, "Frame %d ready.", Integer.valueOf(i10));
-                    synchronized (this.f48097p.f48092f) {
-                        this.f48094e.a(i10, closeableReference, i11);
-                        Unit unit = Unit.f33298a;
+            if (CloseableReference.K0(closeableReference) && closeableReference != null) {
+                p9.c cVar = this.f48299p.f48290b;
+                Object F0 = closeableReference.F0();
+                Intrinsics.checkNotNullExpressionValue(F0, "get(...)");
+                if (cVar.a(i10, (Bitmap) F0)) {
+                    p8.a.z(this.f48299p.f48293e, "Frame %d ready.", Integer.valueOf(i10));
+                    synchronized (this.f48299p.f48294f) {
+                        this.f48296e.a(i10, closeableReference, i11);
+                        Unit unit = Unit.f33074a;
                     }
                     return true;
                 }
@@ -104,33 +104,33 @@ public final class c implements b {
         @Override // java.lang.Runnable
         public void run() {
             try {
-                if (this.f48094e.contains(this.f48095i)) {
-                    p8.a.z(this.f48097p.f48091e, "Frame %d is cached already.", Integer.valueOf(this.f48095i));
-                    SparseArray sparseArray = this.f48097p.f48092f;
-                    c cVar = this.f48097p;
+                if (this.f48296e.contains(this.f48297i)) {
+                    p8.a.z(this.f48299p.f48293e, "Frame %d is cached already.", Integer.valueOf(this.f48297i));
+                    SparseArray sparseArray = this.f48299p.f48294f;
+                    c cVar = this.f48299p;
                     synchronized (sparseArray) {
-                        cVar.f48092f.remove(this.f48096o);
-                        Unit unit = Unit.f33298a;
+                        cVar.f48294f.remove(this.f48298o);
+                        Unit unit = Unit.f33074a;
                     }
                     return;
                 }
-                if (a(this.f48095i, 1)) {
-                    p8.a.z(this.f48097p.f48091e, "Prepared frame %d.", Integer.valueOf(this.f48095i));
+                if (a(this.f48297i, 1)) {
+                    p8.a.z(this.f48299p.f48293e, "Prepared frame %d.", Integer.valueOf(this.f48297i));
                 } else {
-                    p8.a.k(this.f48097p.f48091e, "Could not prepare frame %d.", Integer.valueOf(this.f48095i));
+                    p8.a.k(this.f48299p.f48293e, "Could not prepare frame %d.", Integer.valueOf(this.f48297i));
                 }
-                SparseArray sparseArray2 = this.f48097p.f48092f;
-                c cVar2 = this.f48097p;
+                SparseArray sparseArray2 = this.f48299p.f48294f;
+                c cVar2 = this.f48299p;
                 synchronized (sparseArray2) {
-                    cVar2.f48092f.remove(this.f48096o);
-                    Unit unit2 = Unit.f33298a;
+                    cVar2.f48294f.remove(this.f48298o);
+                    Unit unit2 = Unit.f33074a;
                 }
             } catch (Throwable th2) {
-                SparseArray sparseArray3 = this.f48097p.f48092f;
-                c cVar3 = this.f48097p;
+                SparseArray sparseArray3 = this.f48299p.f48294f;
+                c cVar3 = this.f48299p;
                 synchronized (sparseArray3) {
-                    cVar3.f48092f.remove(this.f48096o);
-                    Unit unit3 = Unit.f33298a;
+                    cVar3.f48294f.remove(this.f48298o);
+                    Unit unit3 = Unit.f33074a;
                     throw th2;
                 }
             }
@@ -142,12 +142,12 @@ public final class c implements b {
         Intrinsics.checkNotNullParameter(bitmapFrameRenderer, "bitmapFrameRenderer");
         Intrinsics.checkNotNullParameter(bitmapConfig, "bitmapConfig");
         Intrinsics.checkNotNullParameter(executorService, "executorService");
-        this.f48087a = platformBitmapFactory;
-        this.f48088b = bitmapFrameRenderer;
-        this.f48089c = bitmapConfig;
-        this.f48090d = executorService;
-        this.f48091e = c.class;
-        this.f48092f = new SparseArray();
+        this.f48289a = platformBitmapFactory;
+        this.f48290b = bitmapFrameRenderer;
+        this.f48291c = bitmapConfig;
+        this.f48292d = executorService;
+        this.f48293e = c.class;
+        this.f48294f = new SparseArray();
     }
 
     private final int g(o9.a aVar, int i10) {
@@ -160,21 +160,21 @@ public final class c implements b {
         Intrinsics.checkNotNullParameter(bitmapFrameCache, "bitmapFrameCache");
         Intrinsics.checkNotNullParameter(animationBackend, "animationBackend");
         int g10 = g(animationBackend, i10);
-        synchronized (this.f48092f) {
+        synchronized (this.f48294f) {
             try {
                 try {
-                    if (this.f48092f.get(g10) != null) {
-                        p8.a.z(this.f48091e, "Already scheduled decode job for frame %d", Integer.valueOf(i10));
+                    if (this.f48294f.get(g10) != null) {
+                        p8.a.z(this.f48293e, "Already scheduled decode job for frame %d", Integer.valueOf(i10));
                         return true;
                     } else if (bitmapFrameCache.contains(i10)) {
-                        p8.a.z(this.f48091e, "Frame %d is cached already.", Integer.valueOf(i10));
+                        p8.a.z(this.f48293e, "Frame %d is cached already.", Integer.valueOf(i10));
                         return true;
                     } else {
                         try {
                             a aVar = new a(this, animationBackend, bitmapFrameCache, i10, g10);
-                            this.f48092f.put(g10, aVar);
-                            this.f48090d.execute(aVar);
-                            Unit unit = Unit.f33298a;
+                            this.f48294f.put(g10, aVar);
+                            this.f48292d.execute(aVar);
+                            Unit unit = Unit.f33074a;
                             return true;
                         } catch (Throwable th3) {
                             th = th3;

@@ -22,7 +22,7 @@ public final class TimestampMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-AFFcxXc$default  reason: not valid java name */
-    public static /* synthetic */ TimestampMessageAccessory m666copyAFFcxXc$default(TimestampMessageAccessory timestampMessageAccessory, String str, String str2, int i10, DiscordFont discordFont, int i11, Object obj) {
+    public static /* synthetic */ TimestampMessageAccessory m668copyAFFcxXc$default(TimestampMessageAccessory timestampMessageAccessory, String str, String str2, int i10, DiscordFont discordFont, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             str = timestampMessageAccessory.messageId;
         }
@@ -35,12 +35,12 @@ public final class TimestampMessageAccessory extends MessageAccessory {
         if ((i11 & 8) != 0) {
             discordFont = timestampMessageAccessory.discordFont;
         }
-        return timestampMessageAccessory.m668copyAFFcxXc(str, str2, i10, discordFont);
+        return timestampMessageAccessory.m670copyAFFcxXc(str, str2, i10, discordFont);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m667component13Eiw7ao() {
+    public final String m669component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -60,7 +60,7 @@ public final class TimestampMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-AFFcxXc  reason: not valid java name */
-    public final TimestampMessageAccessory m668copyAFFcxXc(@NotNull String messageId, @NotNull String timestamp, int i10, @NotNull DiscordFont discordFont) {
+    public final TimestampMessageAccessory m670copyAFFcxXc(@NotNull String messageId, @NotNull String timestamp, int i10, @NotNull DiscordFont discordFont) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(timestamp, "timestamp");
         Intrinsics.checkNotNullParameter(discordFont, "discordFont");
@@ -73,7 +73,7 @@ public final class TimestampMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof TimestampMessageAccessory) {
             TimestampMessageAccessory timestampMessageAccessory = (TimestampMessageAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, timestampMessageAccessory.messageId) && Intrinsics.areEqual(this.timestamp, timestampMessageAccessory.timestamp) && this.textColor == timestampMessageAccessory.textColor && this.discordFont == timestampMessageAccessory.discordFont;
+            return MessageId.m1090equalsimpl0(this.messageId, timestampMessageAccessory.messageId) && Intrinsics.areEqual(this.timestamp, timestampMessageAccessory.timestamp) && this.textColor == timestampMessageAccessory.textColor && this.discordFont == timestampMessageAccessory.discordFont;
         }
         return false;
     }
@@ -86,7 +86,7 @@ public final class TimestampMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -100,16 +100,16 @@ public final class TimestampMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (((((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.timestamp.hashCode()) * 31) + Integer.hashCode(this.textColor)) * 31) + this.discordFont.hashCode();
+        return (((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.timestamp.hashCode()) * 31) + Integer.hashCode(this.textColor)) * 31) + this.discordFont.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         String str = this.timestamp;
         int i10 = this.textColor;
         DiscordFont discordFont = this.discordFont;
-        return "TimestampMessageAccessory(messageId=" + m1091toStringimpl + ", timestamp=" + str + ", textColor=" + i10 + ", discordFont=" + discordFont + ")";
+        return "TimestampMessageAccessory(messageId=" + m1093toStringimpl + ", timestamp=" + str + ", textColor=" + i10 + ", discordFont=" + discordFont + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

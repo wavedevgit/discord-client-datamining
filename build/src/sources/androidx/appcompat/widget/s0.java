@@ -10,29 +10,29 @@ import java.util.ArrayList;
 public class s0 extends ContextWrapper {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f1787c = new Object();
+    private static final Object f1831c = new Object();
 
     /* renamed from: d  reason: collision with root package name */
-    private static ArrayList f1788d;
+    private static ArrayList f1832d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Resources f1789a;
+    private final Resources f1833a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Resources.Theme f1790b;
+    private final Resources.Theme f1834b;
 
     private s0(Context context) {
         super(context);
         if (f1.d()) {
             f1 f1Var = new f1(this, context.getResources());
-            this.f1789a = f1Var;
+            this.f1833a = f1Var;
             Resources.Theme newTheme = f1Var.newTheme();
-            this.f1790b = newTheme;
+            this.f1834b = newTheme;
             newTheme.setTo(context.getTheme());
             return;
         }
-        this.f1789a = new u0(this, context.getResources());
-        this.f1790b = null;
+        this.f1833a = new u0(this, context.getResources());
+        this.f1834b = null;
     }
 
     private static boolean a(Context context) {
@@ -45,20 +45,20 @@ public class s0 extends ContextWrapper {
     public static Context b(Context context) {
         s0 s0Var;
         if (a(context)) {
-            synchronized (f1787c) {
+            synchronized (f1831c) {
                 try {
-                    ArrayList arrayList = f1788d;
+                    ArrayList arrayList = f1832d;
                     if (arrayList == null) {
-                        f1788d = new ArrayList();
+                        f1832d = new ArrayList();
                     } else {
                         for (int size = arrayList.size() - 1; size >= 0; size--) {
-                            WeakReference weakReference = (WeakReference) f1788d.get(size);
+                            WeakReference weakReference = (WeakReference) f1832d.get(size);
                             if (weakReference == null || weakReference.get() == null) {
-                                f1788d.remove(size);
+                                f1832d.remove(size);
                             }
                         }
-                        for (int size2 = f1788d.size() - 1; size2 >= 0; size2--) {
-                            WeakReference weakReference2 = (WeakReference) f1788d.get(size2);
+                        for (int size2 = f1832d.size() - 1; size2 >= 0; size2--) {
+                            WeakReference weakReference2 = (WeakReference) f1832d.get(size2);
                             if (weakReference2 != null) {
                                 s0Var = (s0) weakReference2.get();
                             } else {
@@ -70,7 +70,7 @@ public class s0 extends ContextWrapper {
                         }
                     }
                     s0 s0Var2 = new s0(context);
-                    f1788d.add(new WeakReference(s0Var2));
+                    f1832d.add(new WeakReference(s0Var2));
                     return s0Var2;
                 } catch (Throwable th2) {
                     throw th2;
@@ -82,17 +82,17 @@ public class s0 extends ContextWrapper {
 
     @Override // android.content.ContextWrapper, android.content.Context
     public AssetManager getAssets() {
-        return this.f1789a.getAssets();
+        return this.f1833a.getAssets();
     }
 
     @Override // android.content.ContextWrapper, android.content.Context
     public Resources getResources() {
-        return this.f1789a;
+        return this.f1833a;
     }
 
     @Override // android.content.ContextWrapper, android.content.Context
     public Resources.Theme getTheme() {
-        Resources.Theme theme = this.f1790b;
+        Resources.Theme theme = this.f1834b;
         if (theme == null) {
             return super.getTheme();
         }
@@ -101,7 +101,7 @@ public class s0 extends ContextWrapper {
 
     @Override // android.content.ContextWrapper, android.content.Context
     public void setTheme(int i10) {
-        Resources.Theme theme = this.f1790b;
+        Resources.Theme theme = this.f1834b;
         if (theme == null) {
             super.setTheme(i10);
         } else {

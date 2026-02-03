@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/app_launcher/utils/AppLauncherBadgeUtils.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function(arg0) { // Environment: var1
-        _fun96646: for (var _fun96646_ip = 0;;) switch (_fun96646_ip) {
+        _fun96621: for (var _fun96621_ip = 0;;) switch (_fun96621_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.storeState;
@@ -34,8 +34,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0 == var2;
                 var1 = undefined;
                 if (var6) {
-                    _fun96646_ip = 53;
-                    continue _fun96646
+                    _fun96621_ip = 53;
+                    continue _fun96621
                 }
             case 49:
                 var1 = var2[var3];
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var1;
                 var0 = 0;
                 if (!var2) {
-                    _fun96646_ip = 236;
-                    continue _fun96646
+                    _fun96621_ip = 236;
+                    continue _fun96621
                 }
             case 65:
                 var7 = var4.Date;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 < var5;
                 var0 = 0;
                 if (!var2) {
-                    _fun96646_ip = 236;
-                    continue _fun96646
+                    _fun96621_ip = 236;
+                    continue _fun96621
                 }
             case 116:
                 var7 = var4.Date;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 > var5;
                 var0 = 0;
                 if (!var2) {
-                    _fun96646_ip = 236;
-                    continue _fun96646
+                    _fun96621_ip = 236;
+                    continue _fun96621
                 }
             case 167:
                 var3 = var4.Math;

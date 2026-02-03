@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/AppsButtonSpotIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52198: for (var _fun52198_ip = 0;;) switch (_fun52198_ip) {
+        _fun52304: for (var _fun52304_ip = 0;;) switch (_fun52304_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52198_ip = 35;
-                    continue _fun52198
+                    _fun52304_ip = 35;
+                    continue _fun52304
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52198_ip = 47;
-                    continue _fun52198
+                    _fun52304_ip = 47;
+                    continue _fun52304
                 }
             case 44:
                 var7 = 162;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AppsButtonSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4669, 5934, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4699, 5965, 2]);

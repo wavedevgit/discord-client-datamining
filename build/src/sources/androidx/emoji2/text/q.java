@@ -10,10 +10,10 @@ import java.util.stream.IntStream;
 public class q implements Spannable {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f4023d = false;
+    private boolean f4067d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private Spannable f4024e;
+    private Spannable f4068e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a {
@@ -54,15 +54,15 @@ public class q implements Spannable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q(Spannable spannable) {
-        this.f4024e = spannable;
+        this.f4068e = spannable;
     }
 
     private void a() {
-        Spannable spannable = this.f4024e;
-        if (!this.f4023d && c().a(spannable)) {
-            this.f4024e = new SpannableString(spannable);
+        Spannable spannable = this.f4068e;
+        if (!this.f4067d && c().a(spannable)) {
+            this.f4068e = new SpannableString(spannable);
         }
-        this.f4023d = true;
+        this.f4067d = true;
     }
 
     static b c() {
@@ -74,78 +74,78 @@ public class q implements Spannable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Spannable b() {
-        return this.f4024e;
+        return this.f4068e;
     }
 
     @Override // java.lang.CharSequence
     public char charAt(int i10) {
-        return this.f4024e.charAt(i10);
+        return this.f4068e.charAt(i10);
     }
 
     @Override // java.lang.CharSequence
     public IntStream chars() {
-        return a.a(this.f4024e);
+        return a.a(this.f4068e);
     }
 
     @Override // java.lang.CharSequence
     public IntStream codePoints() {
-        return a.b(this.f4024e);
+        return a.b(this.f4068e);
     }
 
     @Override // android.text.Spanned
     public int getSpanEnd(Object obj) {
-        return this.f4024e.getSpanEnd(obj);
+        return this.f4068e.getSpanEnd(obj);
     }
 
     @Override // android.text.Spanned
     public int getSpanFlags(Object obj) {
-        return this.f4024e.getSpanFlags(obj);
+        return this.f4068e.getSpanFlags(obj);
     }
 
     @Override // android.text.Spanned
     public int getSpanStart(Object obj) {
-        return this.f4024e.getSpanStart(obj);
+        return this.f4068e.getSpanStart(obj);
     }
 
     @Override // android.text.Spanned
     public Object[] getSpans(int i10, int i11, Class cls) {
-        return this.f4024e.getSpans(i10, i11, cls);
+        return this.f4068e.getSpans(i10, i11, cls);
     }
 
     @Override // java.lang.CharSequence
     public int length() {
-        return this.f4024e.length();
+        return this.f4068e.length();
     }
 
     @Override // android.text.Spanned
     public int nextSpanTransition(int i10, int i11, Class cls) {
-        return this.f4024e.nextSpanTransition(i10, i11, cls);
+        return this.f4068e.nextSpanTransition(i10, i11, cls);
     }
 
     @Override // android.text.Spannable
     public void removeSpan(Object obj) {
         a();
-        this.f4024e.removeSpan(obj);
+        this.f4068e.removeSpan(obj);
     }
 
     @Override // android.text.Spannable
     public void setSpan(Object obj, int i10, int i11, int i12) {
         a();
-        this.f4024e.setSpan(obj, i10, i11, i12);
+        this.f4068e.setSpan(obj, i10, i11, i12);
     }
 
     @Override // java.lang.CharSequence
     public CharSequence subSequence(int i10, int i11) {
-        return this.f4024e.subSequence(i10, i11);
+        return this.f4068e.subSequence(i10, i11);
     }
 
     @Override // java.lang.CharSequence
     public String toString() {
-        return this.f4024e.toString();
+        return this.f4068e.toString();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q(CharSequence charSequence) {
-        this.f4024e = new SpannableString(charSequence);
+        this.f4068e = new SpannableString(charSequence);
     }
 }

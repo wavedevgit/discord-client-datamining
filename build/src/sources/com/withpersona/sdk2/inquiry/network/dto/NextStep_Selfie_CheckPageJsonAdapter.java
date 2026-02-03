@@ -49,9 +49,9 @@ public final class NextStep_Selfie_CheckPageJsonAdapter extends h {
         String str6 = null;
         String str7 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -86,19 +86,19 @@ public final class NextStep_Selfie_CheckPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (checkPage != null) {
             writer.l();
-            writer.A0("title");
+            writer.t0("title");
             this.nullableStringAdapter.toJson(writer, checkPage.getTitle());
-            writer.A0("description");
+            writer.t0("description");
             this.nullableStringAdapter.toJson(writer, checkPage.getDescription());
-            writer.A0("selfieLabelFront");
+            writer.t0("selfieLabelFront");
             this.nullableStringAdapter.toJson(writer, checkPage.getSelfieLabelFront());
-            writer.A0("selfieLabelLeft");
+            writer.t0("selfieLabelLeft");
             this.nullableStringAdapter.toJson(writer, checkPage.getSelfieLabelLeft());
-            writer.A0("selfieLabelRight");
+            writer.t0("selfieLabelRight");
             this.nullableStringAdapter.toJson(writer, checkPage.getSelfieLabelRight());
-            writer.A0("btnSubmit");
+            writer.t0("btnSubmit");
             this.nullableStringAdapter.toJson(writer, checkPage.getBtnSubmit());
-            writer.A0("btnRetake");
+            writer.t0("btnRetake");
             this.nullableStringAdapter.toJson(writer, checkPage.getBtnRetake());
             writer.E();
             return;

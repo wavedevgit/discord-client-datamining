@@ -27,49 +27,49 @@ import java.util.concurrent.TimeUnit;
 public final class c0 implements Application.ActivityLifecycleCallbacks {
 
     /* renamed from: y  reason: collision with root package name */
-    private static final long f29027y = TimeUnit.SECONDS.toNanos(1);
+    private static final long f28593y = TimeUnit.SECONDS.toNanos(1);
 
     /* renamed from: z  reason: collision with root package name */
-    private static final long f29028z = TimeUnit.MILLISECONDS.toNanos(700);
+    private static final long f28594z = TimeUnit.MILLISECONDS.toNanos(700);
 
     /* renamed from: d  reason: collision with root package name */
-    private final x0 f29029d;
+    private final x0 f28595d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Set f29030e;
+    private final Set f28596e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ILogger f29031i;
+    private final ILogger f28597i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Handler f29032o;
+    private Handler f28598o;
 
     /* renamed from: p  reason: collision with root package name */
-    private WeakReference f29033p;
+    private WeakReference f28599p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Map f29034q;
+    private final Map f28600q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f29035r;
+    private boolean f28601r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final c f29036s;
+    private final c f28602s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Window.OnFrameMetricsAvailableListener f29037t;
+    private Window.OnFrameMetricsAvailableListener f28603t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Choreographer f29038u;
+    private Choreographer f28604u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Field f29039v;
+    private Field f28605v;
 
     /* renamed from: w  reason: collision with root package name */
-    private long f29040w;
+    private long f28606w;
 
     /* renamed from: x  reason: collision with root package name */
-    private long f29041x;
+    private long f28607x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements c {
@@ -106,18 +106,18 @@ public final class c0 implements Application.ActivityLifecycleCallbacks {
     public static /* synthetic */ void a(c0 c0Var, ILogger iLogger) {
         c0Var.getClass();
         try {
-            c0Var.f29038u = Choreographer.getInstance();
+            c0Var.f28604u = Choreographer.getInstance();
         } catch (Throwable th2) {
             iLogger.b(SentryLevel.ERROR, "Error retrieving Choreographer instance. Slow and frozen frames will not be reported.", th2);
         }
     }
 
     public static /* synthetic */ void b(c0 c0Var, Window window) {
-        if (c0Var.f29030e.add(window)) {
+        if (c0Var.f28596e.add(window)) {
             try {
-                c0Var.f29036s.a(window, c0Var.f29037t, c0Var.f29032o);
+                c0Var.f28602s.a(window, c0Var.f28603t, c0Var.f28598o);
             } catch (Throwable th2) {
-                c0Var.f29031i.b(SentryLevel.ERROR, "Failed to add frameMetricsAvailableListener", th2);
+                c0Var.f28597i.b(SentryLevel.ERROR, "Failed to add frameMetricsAvailableListener", th2);
             }
         }
     }
@@ -125,11 +125,11 @@ public final class c0 implements Application.ActivityLifecycleCallbacks {
     public static /* synthetic */ void c(c0 c0Var, Window window) {
         c0Var.getClass();
         try {
-            if (c0Var.f29030e.remove(window)) {
-                c0Var.f29036s.b(window, c0Var.f29037t);
+            if (c0Var.f28596e.remove(window)) {
+                c0Var.f28602s.b(window, c0Var.f28603t);
             }
         } catch (Throwable th2) {
-            c0Var.f29031i.b(SentryLevel.ERROR, "Failed to remove frameMetricsAvailableListener", th2);
+            c0Var.f28597i.b(SentryLevel.ERROR, "Failed to remove frameMetricsAvailableListener", th2);
         }
     }
 
@@ -144,17 +144,17 @@ public final class c0 implements Application.ActivityLifecycleCallbacks {
             refreshRate = window.getWindowManager().getDefaultDisplay().getRefreshRate();
         }
         float f10 = refreshRate;
-        float f11 = (float) f29027y;
+        float f11 = (float) f28593y;
         long f12 = c0Var.f(frameMetrics);
         long max = Math.max(0L, f12 - (f11 / f10));
         long g10 = c0Var.g(frameMetrics);
         if (g10 < 0) {
             g10 = nanoTime - f12;
         }
-        long max2 = Math.max(g10, c0Var.f29041x);
-        if (max2 != c0Var.f29040w) {
-            c0Var.f29040w = max2;
-            c0Var.f29041x = max2 + f12;
+        long max2 = Math.max(g10, c0Var.f28607x);
+        if (max2 != c0Var.f28606w) {
+            c0Var.f28606w = max2;
+            c0Var.f28607x = max2 + f12;
             boolean j10 = j(f12, f11 / (f10 - 1.0f));
             if (j10 && i(f12)) {
                 z10 = true;
@@ -162,8 +162,8 @@ public final class c0 implements Application.ActivityLifecycleCallbacks {
                 z10 = false;
             }
             boolean z11 = z10;
-            for (b bVar : c0Var.f29034q.values()) {
-                bVar.e(max2, c0Var.f29041x, f12, max, j10, z11, f10);
+            for (b bVar : c0Var.f28600q.values()) {
+                bVar.e(max2, c0Var.f28607x, f12, max, j10, z11, f10);
             }
         }
     }
@@ -173,14 +173,14 @@ public final class c0 implements Application.ActivityLifecycleCallbacks {
     }
 
     private long g(FrameMetrics frameMetrics) {
-        if (this.f29029d.d() >= 26) {
+        if (this.f28595d.d() >= 26) {
             return frameMetrics.getMetric(10);
         }
         return h();
     }
 
     public static boolean i(long j10) {
-        if (j10 > f29028z) {
+        if (j10 > f28594z) {
             return true;
         }
         return false;
@@ -191,11 +191,11 @@ public final class c0 implements Application.ActivityLifecycleCallbacks {
     }
 
     private void k(Window window) {
-        WeakReference weakReference = this.f29033p;
+        WeakReference weakReference = this.f28599p;
         if (weakReference != null && weakReference.get() == window) {
             return;
         }
-        this.f29033p = new WeakReference(window);
+        this.f28599p = new WeakReference(window);
         o();
     }
 
@@ -210,13 +210,13 @@ public final class c0 implements Application.ActivityLifecycleCallbacks {
 
     private void o() {
         final Window window;
-        WeakReference weakReference = this.f29033p;
+        WeakReference weakReference = this.f28599p;
         if (weakReference != null) {
             window = (Window) weakReference.get();
         } else {
             window = null;
         }
-        if (window != null && this.f29035r && !this.f29034q.isEmpty() && this.f29032o != null) {
+        if (window != null && this.f28601r && !this.f28600q.isEmpty() && this.f28598o != null) {
             new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: io.sentry.android.core.internal.util.x
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -228,8 +228,8 @@ public final class c0 implements Application.ActivityLifecycleCallbacks {
 
     public long h() {
         Field field;
-        Choreographer choreographer = this.f29038u;
-        if (choreographer != null && (field = this.f29039v) != null) {
+        Choreographer choreographer = this.f28604u;
+        if (choreographer != null && (field = this.f28605v) != null) {
             try {
                 Long l10 = (Long) field.get(choreographer);
                 if (l10 != null) {
@@ -244,28 +244,28 @@ public final class c0 implements Application.ActivityLifecycleCallbacks {
     }
 
     public String l(b bVar) {
-        if (!this.f29035r) {
+        if (!this.f28601r) {
             return null;
         }
         String a10 = x7.a();
-        this.f29034q.put(a10, bVar);
+        this.f28600q.put(a10, bVar);
         o();
         return a10;
     }
 
     public void m(String str) {
         Window window;
-        if (this.f29035r) {
+        if (this.f28601r) {
             if (str != null) {
-                this.f29034q.remove(str);
+                this.f28600q.remove(str);
             }
-            WeakReference weakReference = this.f29033p;
+            WeakReference weakReference = this.f28599p;
             if (weakReference != null) {
                 window = (Window) weakReference.get();
             } else {
                 window = null;
             }
-            if (window != null && this.f29034q.isEmpty()) {
+            if (window != null && this.f28600q.isEmpty()) {
                 n(window);
             }
         }
@@ -299,24 +299,24 @@ public final class c0 implements Application.ActivityLifecycleCallbacks {
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityStopped(Activity activity) {
         n(activity.getWindow());
-        WeakReference weakReference = this.f29033p;
+        WeakReference weakReference = this.f28599p;
         if (weakReference != null && weakReference.get() == activity.getWindow()) {
-            this.f29033p = null;
+            this.f28599p = null;
         }
     }
 
     public c0(Context context, final ILogger iLogger, final x0 x0Var, c cVar) {
-        this.f29030e = new CopyOnWriteArraySet();
-        this.f29034q = new ConcurrentHashMap();
-        this.f29035r = false;
-        this.f29040w = 0L;
-        this.f29041x = 0L;
+        this.f28596e = new CopyOnWriteArraySet();
+        this.f28600q = new ConcurrentHashMap();
+        this.f28601r = false;
+        this.f28606w = 0L;
+        this.f28607x = 0L;
         Context context2 = (Context) io.sentry.util.y.c(e1.g(context), "The context is required");
-        this.f29031i = (ILogger) io.sentry.util.y.c(iLogger, "Logger is required");
-        this.f29029d = (x0) io.sentry.util.y.c(x0Var, "BuildInfoProvider is required");
-        this.f29036s = (c) io.sentry.util.y.c(cVar, "WindowFrameMetricsManager is required");
+        this.f28597i = (ILogger) io.sentry.util.y.c(iLogger, "Logger is required");
+        this.f28595d = (x0) io.sentry.util.y.c(x0Var, "BuildInfoProvider is required");
+        this.f28602s = (c) io.sentry.util.y.c(cVar, "WindowFrameMetricsManager is required");
         if ((context2 instanceof Application) && x0Var.d() >= 24) {
-            this.f29035r = true;
+            this.f28601r = true;
             HandlerThread handlerThread = new HandlerThread("io.sentry.android.core.internal.util.SentryFrameMetricsCollector");
             handlerThread.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() { // from class: io.sentry.android.core.internal.util.z
                 @Override // java.lang.Thread.UncaughtExceptionHandler
@@ -325,7 +325,7 @@ public final class c0 implements Application.ActivityLifecycleCallbacks {
                 }
             });
             handlerThread.start();
-            this.f29032o = new Handler(handlerThread.getLooper());
+            this.f28598o = new Handler(handlerThread.getLooper());
             ((Application) context2).registerActivityLifecycleCallbacks(this);
             new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: io.sentry.android.core.internal.util.a0
                 @Override // java.lang.Runnable
@@ -335,12 +335,12 @@ public final class c0 implements Application.ActivityLifecycleCallbacks {
             });
             try {
                 Field declaredField = Choreographer.class.getDeclaredField("mLastFrameTimeNanos");
-                this.f29039v = declaredField;
+                this.f28605v = declaredField;
                 declaredField.setAccessible(true);
             } catch (NoSuchFieldException e10) {
                 iLogger.b(SentryLevel.ERROR, "Unable to get the frame timestamp from the choreographer: ", e10);
             }
-            this.f29037t = new Window.OnFrameMetricsAvailableListener() { // from class: io.sentry.android.core.internal.util.b0
+            this.f28603t = new Window.OnFrameMetricsAvailableListener() { // from class: io.sentry.android.core.internal.util.b0
                 @Override // android.view.Window.OnFrameMetricsAvailableListener
                 public final void onFrameMetricsAvailable(Window window, FrameMetrics frameMetrics, int i10) {
                     c0.e(c0.this, x0Var, window, frameMetrics, i10);

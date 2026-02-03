@@ -5,21 +5,21 @@ import android.content.Context;
 public final class n0 implements b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private bj.b f37337a;
+    private bj.b f37451a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final bj.b f37338b;
+    private final bj.b f37452b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e0 f37339c;
+    private final e0 f37453c;
 
     public n0(Context context, e0 e0Var) {
-        this.f37339c = e0Var;
-        com.google.android.datatransport.cct.a aVar = com.google.android.datatransport.cct.a.f12637g;
+        this.f37453c = e0Var;
+        com.google.android.datatransport.cct.a aVar = com.google.android.datatransport.cct.a.f12266g;
         zb.t.f(context);
         final xb.i g10 = zb.t.c().g(aVar);
         if (aVar.a().contains(xb.c.b("json"))) {
-            this.f37337a = new qi.w(new bj.b() { // from class: lg.k0
+            this.f37451a = new qi.w(new bj.b() { // from class: lg.k0
                 @Override // bj.b
                 public final Object get() {
                     return xb.i.this.a("FIREBASE_ML_SDK", byte[].class, xb.c.b("json"), new xb.g() { // from class: lg.m0
@@ -31,7 +31,7 @@ public final class n0 implements b0 {
                 }
             });
         }
-        this.f37338b = new qi.w(new bj.b() { // from class: lg.l0
+        this.f37452b = new qi.w(new bj.b() { // from class: lg.l0
             @Override // bj.b
             public final Object get() {
                 return xb.i.this.a("FIREBASE_ML_SDK", byte[].class, xb.c.b("proto"), new xb.g() { // from class: lg.j0

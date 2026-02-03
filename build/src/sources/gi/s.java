@@ -9,10 +9,10 @@ import java.util.RandomAccess;
 public abstract class s extends p implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final x f26950e = new q(u.f26954p, 0);
+    private static final x f27045e = new q(u.f27049p, 0);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final /* synthetic */ int f26951i = 0;
+    public static final /* synthetic */ int f27046i = 0;
 
     @Override // java.util.List
     public final void add(int i10, Object obj) {
@@ -114,7 +114,7 @@ public abstract class s extends p implements List, RandomAccess {
             return this;
         }
         if (i12 == 0) {
-            return u.f26954p;
+            return u.f27049p;
         }
         return new r(this, i10, i12);
     }
@@ -124,7 +124,7 @@ public abstract class s extends p implements List, RandomAccess {
     public final x listIterator(int i10) {
         m.b(i10, size(), "index");
         if (isEmpty()) {
-            return f26950e;
+            return f27045e;
         }
         return new q(this, i10);
     }

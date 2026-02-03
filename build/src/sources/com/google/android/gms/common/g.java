@@ -12,13 +12,13 @@ import gf.p1;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final int f14817a = j.f14821a;
+    public static final int f14446a = j.f14450a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final g f14818b = new g();
+    private static final g f14447b = new g();
 
     public static g f() {
-        return f14818b;
+        return f14447b;
     }
 
     public int a(Context context) {
@@ -30,20 +30,20 @@ public class g {
             if (i10 != 3) {
                 return null;
             }
-            int i11 = p1.f26879c;
+            int i11 = p1.f26974c;
             Uri fromParts = Uri.fromParts("package", "com.google.android.gms", null);
             Intent intent = new Intent("android.settings.APPLICATION_DETAILS_SETTINGS");
             intent.setData(fromParts);
             return intent;
         } else if (context != null && com.google.android.gms.common.util.g.d(context)) {
-            int i12 = p1.f26879c;
+            int i12 = p1.f26974c;
             Intent intent2 = new Intent("com.google.android.clockwork.home.UPDATE_ANDROID_WEAR_ACTION");
             intent2.setPackage("com.google.android.wearable.app");
             return intent2;
         } else {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("gcore_");
-            sb2.append(f14817a);
+            sb2.append(f14446a);
             sb2.append("-");
             if (!TextUtils.isEmpty(str)) {
                 sb2.append(str);
@@ -60,7 +60,7 @@ public class g {
                 }
             }
             String sb3 = sb2.toString();
-            int i13 = p1.f26879c;
+            int i13 = p1.f26974c;
             Intent intent3 = new Intent("android.intent.action.VIEW");
             Uri.Builder appendQueryParameter = Uri.parse("market://details").buildUpon().appendQueryParameter(StackTraceHelper.ID_KEY, "com.google.android.gms");
             if (!TextUtils.isEmpty(sb3)) {
@@ -90,7 +90,7 @@ public class g {
     }
 
     public int g(Context context) {
-        return h(context, f14817a);
+        return h(context, f14446a);
     }
 
     public int h(Context context, int i10) {

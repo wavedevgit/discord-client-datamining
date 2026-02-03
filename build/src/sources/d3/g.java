@@ -12,52 +12,52 @@ import java.lang.ref.WeakReference;
 final class g implements TextWatcher {
 
     /* renamed from: d  reason: collision with root package name */
-    private final EditText f21661d;
+    private final EditText f21237d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f21662e;
+    private final boolean f21238e;
 
     /* renamed from: i  reason: collision with root package name */
-    private e.f f21663i;
+    private e.f f21239i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f21664o = Integer.MAX_VALUE;
+    private int f21240o = Integer.MAX_VALUE;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f21665p = 0;
+    private int f21241p = 0;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f21666q = true;
+    private boolean f21242q = true;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a extends e.f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Reference f21667a;
+        private final Reference f21243a;
 
         a(EditText editText) {
-            this.f21667a = new WeakReference(editText);
+            this.f21243a = new WeakReference(editText);
         }
 
         @Override // androidx.emoji2.text.e.f
         public void b() {
             super.b();
-            g.c((EditText) this.f21667a.get(), 1);
+            g.c((EditText) this.f21243a.get(), 1);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(EditText editText, boolean z10) {
-        this.f21661d = editText;
-        this.f21662e = z10;
+        this.f21237d = editText;
+        this.f21238e = z10;
     }
 
     private e.f a() {
-        if (this.f21663i == null) {
-            this.f21663i = new a(this.f21661d);
+        if (this.f21239i == null) {
+            this.f21239i = new a(this.f21237d);
         }
-        return this.f21663i;
+        return this.f21239i;
     }
 
     static void c(EditText editText, int i10) {
@@ -71,8 +71,8 @@ final class g implements TextWatcher {
     }
 
     private boolean e() {
-        if (this.f21666q) {
-            if (this.f21662e || androidx.emoji2.text.e.i()) {
+        if (this.f21242q) {
+            if (this.f21238e || androidx.emoji2.text.e.i()) {
                 return false;
             }
             return true;
@@ -81,24 +81,24 @@ final class g implements TextWatcher {
     }
 
     public boolean b() {
-        return this.f21666q;
+        return this.f21242q;
     }
 
     public void d(boolean z10) {
-        if (this.f21666q != z10) {
-            if (this.f21663i != null) {
-                androidx.emoji2.text.e.c().u(this.f21663i);
+        if (this.f21242q != z10) {
+            if (this.f21239i != null) {
+                androidx.emoji2.text.e.c().u(this.f21239i);
             }
-            this.f21666q = z10;
+            this.f21242q = z10;
             if (z10) {
-                c(this.f21661d, androidx.emoji2.text.e.c().e());
+                c(this.f21237d, androidx.emoji2.text.e.c().e());
             }
         }
     }
 
     @Override // android.text.TextWatcher
     public void onTextChanged(CharSequence charSequence, int i10, int i11, int i12) {
-        if (!this.f21661d.isInEditMode() && !e() && i11 <= i12 && (charSequence instanceof Spannable)) {
+        if (!this.f21237d.isInEditMode() && !e() && i11 <= i12 && (charSequence instanceof Spannable)) {
             int e10 = androidx.emoji2.text.e.c().e();
             if (e10 != 0) {
                 if (e10 != 1) {
@@ -106,7 +106,7 @@ final class g implements TextWatcher {
                         return;
                     }
                 } else {
-                    androidx.emoji2.text.e.c().s((Spannable) charSequence, i10, i10 + i12, this.f21664o, this.f21665p);
+                    androidx.emoji2.text.e.c().s((Spannable) charSequence, i10, i10 + i12, this.f21240o, this.f21241p);
                     return;
                 }
             }

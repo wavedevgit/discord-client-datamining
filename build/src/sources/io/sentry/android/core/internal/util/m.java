@@ -9,19 +9,19 @@ import java.util.List;
 public final class m {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final m f29064c = new m();
+    private static final m f28630c = new m();
 
     /* renamed from: a  reason: collision with root package name */
-    private final io.sentry.util.a f29065a = new io.sentry.util.a();
+    private final io.sentry.util.a f28631a = new io.sentry.util.a();
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f29066b = new ArrayList();
+    private final List f28632b = new ArrayList();
 
     private m() {
     }
 
     public static m a() {
-        return f29064c;
+        return f28630c;
     }
 
     String b() {
@@ -29,10 +29,10 @@ public final class m {
     }
 
     public List c() {
-        a1 a10 = this.f29065a.a();
+        a1 a10 = this.f28631a.a();
         try {
-            if (!this.f29066b.isEmpty()) {
-                List list = this.f29066b;
+            if (!this.f28632b.isEmpty()) {
+                List list = this.f28632b;
                 if (a10 != null) {
                     a10.close();
                 }
@@ -51,13 +51,13 @@ public final class m {
                     try {
                         String c10 = io.sentry.util.i.c(new File(file, "cpufreq/cpuinfo_max_freq"));
                         if (c10 != null) {
-                            this.f29066b.add(Integer.valueOf((int) (Long.parseLong(c10.trim()) / 1000)));
+                            this.f28632b.add(Integer.valueOf((int) (Long.parseLong(c10.trim()) / 1000)));
                         }
                     } catch (IOException | NumberFormatException unused) {
                     }
                 }
             }
-            List list2 = this.f29066b;
+            List list2 = this.f28632b;
             if (a10 != null) {
                 a10.close();
             }

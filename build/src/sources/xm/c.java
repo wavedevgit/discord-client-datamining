@@ -1,77 +1,80 @@
 package xm;
 
-import java.util.ArrayList;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function1;
+import android.content.Context;
+import android.view.View;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.r0;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Reflection;
+import u3.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f53473a;
+    public static final c f53686a = new c();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Object f53474b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final List f53475c;
-
-    public c(Object bottom, List rest) {
-        Intrinsics.checkNotNullParameter(bottom, "bottom");
-        Intrinsics.checkNotNullParameter(rest, "rest");
-        List L0 = CollectionsKt.L0(CollectionsKt.e(bottom), rest);
-        this.f53473a = L0;
-        this.f53474b = CollectionsKt.z0(L0);
-        this.f53475c = L0.subList(0, L0.size() - 1);
+    private c() {
     }
 
-    public final List a() {
-        return this.f53475c;
+    /* JADX WARN: Removed duplicated region for block: B:6:0x000b  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    private final java.lang.Object b(android.content.Context r3, kotlin.reflect.KClass r4) {
+        /*
+            r2 = this;
+        L0:
+            boolean r0 = r4.isInstance(r3)
+            if (r0 == 0) goto Lb
+            java.lang.Object r3 = kotlin.reflect.c.a(r4, r3)
+            return r3
+        Lb:
+            boolean r0 = r3 instanceof android.content.ContextWrapper
+            r1 = 0
+            if (r0 == 0) goto L13
+            android.content.ContextWrapper r3 = (android.content.ContextWrapper) r3
+            goto L14
+        L13:
+            r3 = r1
+        L14:
+            if (r3 != 0) goto L17
+            return r1
+        L17:
+            android.content.Context r3 = r3.getBaseContext()
+            if (r3 != 0) goto L0
+            return r1
+        */
+        throw new UnsupportedOperationException("Method not decompiled: xm.c.b(android.content.Context, kotlin.reflect.KClass):java.lang.Object");
     }
 
-    public final List b() {
-        return this.f53473a;
-    }
-
-    public final Object c() {
-        return this.f53474b;
-    }
-
-    public final c d(Function1 transform) {
-        Intrinsics.checkNotNullParameter(transform, "transform");
-        List<Object> list = this.f53473a;
-        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
-        for (Object obj : list) {
-            arrayList.add(transform.invoke(obj));
+    private final u3.f d(View view) {
+        u3.f a10 = j.a(view);
+        if (a10 == null) {
+            Context context = view.getContext();
+            Intrinsics.checkNotNullExpressionValue(context, "view.context");
+            return (u3.f) b(context, Reflection.getOrCreateKotlinClass(u3.f.class));
         }
-        return d.a(arrayList);
+        return a10;
     }
 
-    public boolean equals(Object obj) {
-        c cVar;
-        List list = null;
-        if (obj instanceof c) {
-            cVar = (c) obj;
-        } else {
-            cVar = null;
+    public final LifecycleOwner a(View view) {
+        Intrinsics.checkNotNullParameter(view, "view");
+        LifecycleOwner a10 = r0.a(view);
+        if (a10 == null) {
+            Context context = view.getContext();
+            Intrinsics.checkNotNullExpressionValue(context, "view.context");
+            return (LifecycleOwner) b(context, Reflection.getOrCreateKotlinClass(LifecycleOwner.class));
         }
-        if (cVar != null) {
-            list = cVar.f53473a;
+        return a10;
+    }
+
+    public final u3.f c(View view) {
+        Intrinsics.checkNotNullParameter(view, "view");
+        u3.f d10 = d(view);
+        if (d10 != null) {
+            return d10;
         }
-        return Intrinsics.areEqual(list, this.f53473a);
-    }
-
-    public int hashCode() {
-        return this.f53473a.hashCode();
-    }
-
-    public String toString() {
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append((Object) c.class.getSimpleName());
-        sb2.append('(');
-        sb2.append(this.f53473a);
-        sb2.append(')');
-        return sb2.toString();
+        throw new IllegalStateException(Intrinsics.stringPlus("Expected to find a SavedStateRegistryOwner either in a parent view or the Context of ", view).toString());
     }
 }

@@ -27,16 +27,16 @@ import okio.BufferedSource;
 public abstract class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f36980a = new HashMap();
+    private static final Map f37094a = new HashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Set f36981b = new HashSet();
+    private static final Set f37095b = new HashSet();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final byte[] f36982c = {80, 75, 3, 4};
+    private static final byte[] f37096c = {80, 75, 3, 4};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final byte[] f36983d = {31, -117, 8};
+    private static final byte[] f37097d = {31, -117, 8};
 
     public static com.airbnb.lottie.o A(final Context context, final ZipInputStream zipInputStream, final String str) {
         return j(str, new Callable() { // from class: l5.n
@@ -97,7 +97,7 @@ public abstract class s {
             } else if (nextEntry.getName().equalsIgnoreCase("manifest.json")) {
                 zipInputStream.closeEntry();
             } else if (nextEntry.getName().contains(".json")) {
-                iVar = (i) t(w5.c.l(iu.x.d(iu.x.k(zipInputStream))), null, false).b();
+                iVar = (i) t(w5.c.l(ju.x.d(ju.x.k(zipInputStream))), null, false).b();
             } else {
                 if (!name.contains(".png") && !name.contains(".webp") && !name.contains(".jpg") && !name.contains(".jpeg")) {
                     if (!name.contains(".ttf") && !name.contains(".otf")) {
@@ -179,7 +179,7 @@ public abstract class s {
     }
 
     private static Boolean F(BufferedSource bufferedSource) {
-        return I(bufferedSource, f36983d);
+        return I(bufferedSource, f37097d);
     }
 
     private static boolean G(Context context) {
@@ -190,7 +190,7 @@ public abstract class s {
     }
 
     private static Boolean H(BufferedSource bufferedSource) {
-        return I(bufferedSource, f36982c);
+        return I(bufferedSource, f37096c);
     }
 
     private static Boolean I(BufferedSource bufferedSource, byte[] bArr) {
@@ -212,7 +212,7 @@ public abstract class s {
     }
 
     private static void J(boolean z10) {
-        ArrayList arrayList = new ArrayList(f36981b);
+        ArrayList arrayList = new ArrayList(f37095b);
         if (arrayList.size() <= 0) {
             return;
         }
@@ -251,7 +251,7 @@ public abstract class s {
     }
 
     public static /* synthetic */ void e(String str, AtomicBoolean atomicBoolean, i iVar) {
-        Map map = f36980a;
+        Map map = f37094a;
         map.remove(str);
         atomicBoolean.set(true);
         if (map.size() == 0) {
@@ -260,7 +260,7 @@ public abstract class s {
     }
 
     public static /* synthetic */ void f(String str, AtomicBoolean atomicBoolean, Throwable th2) {
-        Map map = f36980a;
+        Map map = f37094a;
         map.remove(str);
         atomicBoolean.set(true);
         if (map.size() == 0) {
@@ -280,7 +280,7 @@ public abstract class s {
             oVar = new com.airbnb.lottie.o(a10);
         }
         if (str != null) {
-            Map map = f36980a;
+            Map map = f37094a;
             if (map.containsKey(str)) {
                 oVar = (com.airbnb.lottie.o) map.get(str);
             }
@@ -307,7 +307,7 @@ public abstract class s {
                 }
             });
             if (!atomicBoolean.get()) {
-                Map map2 = f36980a;
+                Map map2 = f37094a;
                 map2.put(str, oVar2);
                 if (map2.size() == 1) {
                     J(false);
@@ -357,7 +357,7 @@ public abstract class s {
             return new b0(a10);
         }
         try {
-            BufferedSource d10 = iu.x.d(iu.x.k(context.getAssets().open(str)));
+            BufferedSource d10 = ju.x.d(ju.x.k(context.getAssets().open(str)));
             if (H(d10).booleanValue()) {
                 return C(context, new ZipInputStream(d10.n2()), str2);
             }
@@ -391,7 +391,7 @@ public abstract class s {
     }
 
     public static b0 r(InputStream inputStream, String str, boolean z10) {
-        return s(w5.c.l(iu.x.d(iu.x.k(inputStream))), str, z10);
+        return s(w5.c.l(ju.x.d(ju.x.k(inputStream))), str, z10);
     }
 
     public static b0 s(w5.c cVar, String str, boolean z10) {
@@ -468,7 +468,7 @@ public abstract class s {
             return new b0(a10);
         }
         try {
-            BufferedSource d10 = iu.x.d(iu.x.k(context.getResources().openRawResource(i10)));
+            BufferedSource d10 = ju.x.d(ju.x.k(context.getResources().openRawResource(i10)));
             if (H(d10).booleanValue()) {
                 return C(context, new ZipInputStream(d10.n2()), str);
             }

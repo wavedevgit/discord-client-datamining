@@ -24,7 +24,7 @@ import java.util.Objects;
 public final class x0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private e f3399a;
+    private e f3443a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static abstract class b {
@@ -59,58 +59,58 @@ public final class x0 {
     public static class c extends e {
 
         /* renamed from: f  reason: collision with root package name */
-        private static final Interpolator f3402f = new PathInterpolator(0.0f, 1.1f, 0.0f, 1.0f);
+        private static final Interpolator f3446f = new PathInterpolator(0.0f, 1.1f, 0.0f, 1.0f);
 
         /* renamed from: g  reason: collision with root package name */
-        private static final Interpolator f3403g = new h3.a();
+        private static final Interpolator f3447g = new h3.a();
 
         /* renamed from: h  reason: collision with root package name */
-        private static final Interpolator f3404h = new DecelerateInterpolator(1.5f);
+        private static final Interpolator f3448h = new DecelerateInterpolator(1.5f);
 
         /* renamed from: i  reason: collision with root package name */
-        private static final Interpolator f3405i = new AccelerateInterpolator(1.5f);
+        private static final Interpolator f3449i = new AccelerateInterpolator(1.5f);
 
         /* JADX INFO: Access modifiers changed from: private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static class a implements View.OnApplyWindowInsetsListener {
 
             /* renamed from: a  reason: collision with root package name */
-            final b f3406a;
+            final b f3450a;
 
             /* renamed from: b  reason: collision with root package name */
-            private WindowInsetsCompat f3407b;
+            private WindowInsetsCompat f3451b;
 
             /* renamed from: androidx.core.view.x0$c$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-            class C0038a implements ValueAnimator.AnimatorUpdateListener {
+            class C0042a implements ValueAnimator.AnimatorUpdateListener {
 
                 /* renamed from: a  reason: collision with root package name */
-                final /* synthetic */ x0 f3408a;
+                final /* synthetic */ x0 f3452a;
 
                 /* renamed from: b  reason: collision with root package name */
-                final /* synthetic */ WindowInsetsCompat f3409b;
+                final /* synthetic */ WindowInsetsCompat f3453b;
 
                 /* renamed from: c  reason: collision with root package name */
-                final /* synthetic */ WindowInsetsCompat f3410c;
+                final /* synthetic */ WindowInsetsCompat f3454c;
 
                 /* renamed from: d  reason: collision with root package name */
-                final /* synthetic */ int f3411d;
+                final /* synthetic */ int f3455d;
 
                 /* renamed from: e  reason: collision with root package name */
-                final /* synthetic */ View f3412e;
+                final /* synthetic */ View f3456e;
 
-                C0038a(x0 x0Var, WindowInsetsCompat windowInsetsCompat, WindowInsetsCompat windowInsetsCompat2, int i10, View view) {
-                    this.f3408a = x0Var;
-                    this.f3409b = windowInsetsCompat;
-                    this.f3410c = windowInsetsCompat2;
-                    this.f3411d = i10;
-                    this.f3412e = view;
+                C0042a(x0 x0Var, WindowInsetsCompat windowInsetsCompat, WindowInsetsCompat windowInsetsCompat2, int i10, View view) {
+                    this.f3452a = x0Var;
+                    this.f3453b = windowInsetsCompat;
+                    this.f3454c = windowInsetsCompat2;
+                    this.f3455d = i10;
+                    this.f3456e = view;
                 }
 
                 @Override // android.animation.ValueAnimator.AnimatorUpdateListener
                 public void onAnimationUpdate(ValueAnimator valueAnimator) {
-                    this.f3408a.e(valueAnimator.getAnimatedFraction());
-                    c.k(this.f3412e, c.o(this.f3409b, this.f3410c, this.f3408a.b(), this.f3411d), Collections.singletonList(this.f3408a));
+                    this.f3452a.e(valueAnimator.getAnimatedFraction());
+                    c.k(this.f3456e, c.o(this.f3453b, this.f3454c, this.f3452a.b(), this.f3455d), Collections.singletonList(this.f3452a));
                 }
             }
 
@@ -118,78 +118,78 @@ public final class x0 {
             class b extends AnimatorListenerAdapter {
 
                 /* renamed from: a  reason: collision with root package name */
-                final /* synthetic */ x0 f3414a;
+                final /* synthetic */ x0 f3458a;
 
                 /* renamed from: b  reason: collision with root package name */
-                final /* synthetic */ View f3415b;
+                final /* synthetic */ View f3459b;
 
                 b(x0 x0Var, View view) {
-                    this.f3414a = x0Var;
-                    this.f3415b = view;
+                    this.f3458a = x0Var;
+                    this.f3459b = view;
                 }
 
                 @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
                 public void onAnimationEnd(Animator animator) {
-                    this.f3414a.e(1.0f);
-                    c.i(this.f3415b, this.f3414a);
+                    this.f3458a.e(1.0f);
+                    c.i(this.f3459b, this.f3458a);
                 }
             }
 
             /* renamed from: androidx.core.view.x0$c$a$c  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-            class RunnableC0039c implements Runnable {
+            class RunnableC0043c implements Runnable {
 
                 /* renamed from: d  reason: collision with root package name */
-                final /* synthetic */ View f3417d;
+                final /* synthetic */ View f3461d;
 
                 /* renamed from: e  reason: collision with root package name */
-                final /* synthetic */ x0 f3418e;
+                final /* synthetic */ x0 f3462e;
 
                 /* renamed from: i  reason: collision with root package name */
-                final /* synthetic */ a f3419i;
+                final /* synthetic */ a f3463i;
 
                 /* renamed from: o  reason: collision with root package name */
-                final /* synthetic */ ValueAnimator f3420o;
+                final /* synthetic */ ValueAnimator f3464o;
 
-                RunnableC0039c(View view, x0 x0Var, a aVar, ValueAnimator valueAnimator) {
-                    this.f3417d = view;
-                    this.f3418e = x0Var;
-                    this.f3419i = aVar;
-                    this.f3420o = valueAnimator;
+                RunnableC0043c(View view, x0 x0Var, a aVar, ValueAnimator valueAnimator) {
+                    this.f3461d = view;
+                    this.f3462e = x0Var;
+                    this.f3463i = aVar;
+                    this.f3464o = valueAnimator;
                 }
 
                 @Override // java.lang.Runnable
                 public void run() {
-                    c.l(this.f3417d, this.f3418e, this.f3419i);
-                    this.f3420o.start();
+                    c.l(this.f3461d, this.f3462e, this.f3463i);
+                    this.f3464o.start();
                 }
             }
 
             a(View view, b bVar) {
                 WindowInsetsCompat windowInsetsCompat;
-                this.f3406a = bVar;
+                this.f3450a = bVar;
                 WindowInsetsCompat G = h0.G(view);
                 if (G != null) {
                     windowInsetsCompat = new WindowInsetsCompat.a(G).a();
                 } else {
                     windowInsetsCompat = null;
                 }
-                this.f3407b = windowInsetsCompat;
+                this.f3451b = windowInsetsCompat;
             }
 
             @Override // android.view.View.OnApplyWindowInsetsListener
             public WindowInsets onApplyWindowInsets(View view, WindowInsets windowInsets) {
                 long j10;
                 if (!view.isLaidOut()) {
-                    this.f3407b = WindowInsetsCompat.D(windowInsets, view);
+                    this.f3451b = WindowInsetsCompat.D(windowInsets, view);
                     return c.m(view, windowInsets);
                 }
                 WindowInsetsCompat D = WindowInsetsCompat.D(windowInsets, view);
-                if (this.f3407b == null) {
-                    this.f3407b = h0.G(view);
+                if (this.f3451b == null) {
+                    this.f3451b = h0.G(view);
                 }
-                if (this.f3407b == null) {
-                    this.f3407b = D;
+                if (this.f3451b == null) {
+                    this.f3451b = D;
                     return c.m(view, windowInsets);
                 }
                 b n10 = c.n(view);
@@ -198,15 +198,15 @@ public final class x0 {
                 }
                 int[] iArr = new int[1];
                 int[] iArr2 = new int[1];
-                c.e(D, this.f3407b, iArr, iArr2);
+                c.e(D, this.f3451b, iArr, iArr2);
                 int i10 = iArr[0];
                 int i11 = iArr2[0];
                 int i12 = i10 | i11;
                 if (i12 == 0) {
-                    this.f3407b = D;
+                    this.f3451b = D;
                     return c.m(view, windowInsets);
                 }
-                WindowInsetsCompat windowInsetsCompat = this.f3407b;
+                WindowInsetsCompat windowInsetsCompat = this.f3451b;
                 Interpolator g10 = c.g(i10, i11);
                 if ((WindowInsetsCompat.p.c() & i12) != 0) {
                     j10 = 160;
@@ -218,10 +218,10 @@ public final class x0 {
                 ValueAnimator duration = ValueAnimator.ofFloat(0.0f, 1.0f).setDuration(x0Var.a());
                 a f10 = c.f(D, windowInsetsCompat, i12);
                 c.j(view, x0Var, D, false);
-                duration.addUpdateListener(new C0038a(x0Var, D, windowInsetsCompat, i12, view));
+                duration.addUpdateListener(new C0042a(x0Var, D, windowInsetsCompat, i12, view));
                 duration.addListener(new b(x0Var, view));
-                y.a(view, new RunnableC0039c(view, x0Var, f10, duration));
-                this.f3407b = D;
+                y.a(view, new RunnableC0043c(view, x0Var, f10, duration));
+                this.f3451b = D;
                 return c.m(view, windowInsets);
             }
         }
@@ -236,14 +236,14 @@ public final class x0 {
             for (int i10 = 1; i10 <= 512; i10 <<= 1) {
                 Insets f10 = windowInsetsCompat.f(i10);
                 Insets f11 = windowInsetsCompat2.f(i10);
-                int i11 = f10.f3150a;
-                int i12 = f11.f3150a;
-                if (i11 <= i12 && f10.f3151b <= f11.f3151b && f10.f3152c <= f11.f3152c && f10.f3153d <= f11.f3153d) {
+                int i11 = f10.f3194a;
+                int i12 = f11.f3194a;
+                if (i11 <= i12 && f10.f3195b <= f11.f3195b && f10.f3196c <= f11.f3196c && f10.f3197d <= f11.f3197d) {
                     z10 = false;
                 } else {
                     z10 = true;
                 }
-                if (i11 >= i12 && f10.f3151b >= f11.f3151b && f10.f3152c >= f11.f3152c && f10.f3153d >= f11.f3153d) {
+                if (i11 >= i12 && f10.f3195b >= f11.f3195b && f10.f3196c >= f11.f3196c && f10.f3197d >= f11.f3197d) {
                     z11 = false;
                 } else {
                     z11 = true;
@@ -261,21 +261,21 @@ public final class x0 {
         static a f(WindowInsetsCompat windowInsetsCompat, WindowInsetsCompat windowInsetsCompat2, int i10) {
             Insets f10 = windowInsetsCompat.f(i10);
             Insets f11 = windowInsetsCompat2.f(i10);
-            return new a(Insets.c(Math.min(f10.f3150a, f11.f3150a), Math.min(f10.f3151b, f11.f3151b), Math.min(f10.f3152c, f11.f3152c), Math.min(f10.f3153d, f11.f3153d)), Insets.c(Math.max(f10.f3150a, f11.f3150a), Math.max(f10.f3151b, f11.f3151b), Math.max(f10.f3152c, f11.f3152c), Math.max(f10.f3153d, f11.f3153d)));
+            return new a(Insets.c(Math.min(f10.f3194a, f11.f3194a), Math.min(f10.f3195b, f11.f3195b), Math.min(f10.f3196c, f11.f3196c), Math.min(f10.f3197d, f11.f3197d)), Insets.c(Math.max(f10.f3194a, f11.f3194a), Math.max(f10.f3195b, f11.f3195b), Math.max(f10.f3196c, f11.f3196c), Math.max(f10.f3197d, f11.f3197d)));
         }
 
         static Interpolator g(int i10, int i11) {
             if ((WindowInsetsCompat.p.c() & i10) != 0) {
-                return f3402f;
+                return f3446f;
             }
             if ((WindowInsetsCompat.p.c() & i11) != 0) {
-                return f3403g;
+                return f3447g;
             }
             if ((i10 & WindowInsetsCompat.p.h()) != 0) {
-                return f3404h;
+                return f3448h;
             }
             if ((WindowInsetsCompat.p.h() & i11) != 0) {
-                return f3405i;
+                return f3449i;
             }
             return null;
         }
@@ -363,7 +363,7 @@ public final class x0 {
         static b n(View view) {
             Object tag = view.getTag(o1.e.T);
             if (tag instanceof a) {
-                return ((a) tag).f3406a;
+                return ((a) tag).f3450a;
             }
             return null;
         }
@@ -377,7 +377,7 @@ public final class x0 {
                     Insets f11 = windowInsetsCompat.f(i11);
                     Insets f12 = windowInsetsCompat2.f(i11);
                     float f13 = 1.0f - f10;
-                    aVar.b(i11, WindowInsetsCompat.s(f11, (int) (((f11.f3150a - f12.f3150a) * f13) + 0.5d), (int) (((f11.f3151b - f12.f3151b) * f13) + 0.5d), (int) (((f11.f3152c - f12.f3152c) * f13) + 0.5d), (int) (((f11.f3153d - f12.f3153d) * f13) + 0.5d)));
+                    aVar.b(i11, WindowInsetsCompat.s(f11, (int) (((f11.f3194a - f12.f3194a) * f13) + 0.5d), (int) (((f11.f3195b - f12.f3195b) * f13) + 0.5d), (int) (((f11.f3196c - f12.f3196c) * f13) + 0.5d), (int) (((f11.f3197d - f12.f3197d) * f13) + 0.5d)));
                 }
             }
             return aVar.a();
@@ -402,52 +402,52 @@ public final class x0 {
     public static class e {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f3427a;
+        private final int f3471a;
 
         /* renamed from: b  reason: collision with root package name */
-        private float f3428b;
+        private float f3472b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Interpolator f3429c;
+        private final Interpolator f3473c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final long f3430d;
+        private final long f3474d;
 
         /* renamed from: e  reason: collision with root package name */
-        private float f3431e = 1.0f;
+        private float f3475e = 1.0f;
 
         e(int i10, Interpolator interpolator, long j10) {
-            this.f3427a = i10;
-            this.f3429c = interpolator;
-            this.f3430d = j10;
+            this.f3471a = i10;
+            this.f3473c = interpolator;
+            this.f3474d = j10;
         }
 
         public long a() {
-            return this.f3430d;
+            return this.f3474d;
         }
 
         public float b() {
-            Interpolator interpolator = this.f3429c;
+            Interpolator interpolator = this.f3473c;
             if (interpolator != null) {
-                return interpolator.getInterpolation(this.f3428b);
+                return interpolator.getInterpolation(this.f3472b);
             }
-            return this.f3428b;
+            return this.f3472b;
         }
 
         public int c() {
-            return this.f3427a;
+            return this.f3471a;
         }
 
         public void d(float f10) {
-            this.f3428b = f10;
+            this.f3472b = f10;
         }
     }
 
     public x0(int i10, Interpolator interpolator, long j10) {
         if (Build.VERSION.SDK_INT >= 30) {
-            this.f3399a = new d(i10, interpolator, j10);
+            this.f3443a = new d(i10, interpolator, j10);
         } else {
-            this.f3399a = new c(i10, interpolator, j10);
+            this.f3443a = new c(i10, interpolator, j10);
         }
     }
 
@@ -465,19 +465,19 @@ public final class x0 {
     }
 
     public long a() {
-        return this.f3399a.a();
+        return this.f3443a.a();
     }
 
     public float b() {
-        return this.f3399a.b();
+        return this.f3443a.b();
     }
 
     public int c() {
-        return this.f3399a.c();
+        return this.f3443a.c();
     }
 
     public void e(float f10) {
-        this.f3399a.d(f10);
+        this.f3443a.d(f10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -485,55 +485,55 @@ public final class x0 {
     public static class d extends e {
 
         /* renamed from: f  reason: collision with root package name */
-        private final WindowInsetsAnimation f3422f;
+        private final WindowInsetsAnimation f3466f;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static class a extends WindowInsetsAnimation$Callback {
 
             /* renamed from: a  reason: collision with root package name */
-            private final b f3423a;
+            private final b f3467a;
 
             /* renamed from: b  reason: collision with root package name */
-            private List f3424b;
+            private List f3468b;
 
             /* renamed from: c  reason: collision with root package name */
-            private ArrayList f3425c;
+            private ArrayList f3469c;
 
             /* renamed from: d  reason: collision with root package name */
-            private final HashMap f3426d;
+            private final HashMap f3470d;
 
             a(b bVar) {
                 super(bVar.getDispatchMode());
-                this.f3426d = new HashMap();
-                this.f3423a = bVar;
+                this.f3470d = new HashMap();
+                this.f3467a = bVar;
             }
 
             private x0 a(WindowInsetsAnimation windowInsetsAnimation) {
-                x0 x0Var = (x0) this.f3426d.get(windowInsetsAnimation);
+                x0 x0Var = (x0) this.f3470d.get(windowInsetsAnimation);
                 if (x0Var == null) {
                     x0 f10 = x0.f(windowInsetsAnimation);
-                    this.f3426d.put(windowInsetsAnimation, f10);
+                    this.f3470d.put(windowInsetsAnimation, f10);
                     return f10;
                 }
                 return x0Var;
             }
 
             public void onEnd(WindowInsetsAnimation windowInsetsAnimation) {
-                this.f3423a.onEnd(a(windowInsetsAnimation));
-                this.f3426d.remove(windowInsetsAnimation);
+                this.f3467a.onEnd(a(windowInsetsAnimation));
+                this.f3470d.remove(windowInsetsAnimation);
             }
 
             public void onPrepare(WindowInsetsAnimation windowInsetsAnimation) {
-                this.f3423a.onPrepare(a(windowInsetsAnimation));
+                this.f3467a.onPrepare(a(windowInsetsAnimation));
             }
 
             public WindowInsets onProgress(WindowInsets windowInsets, List list) {
-                ArrayList arrayList = this.f3425c;
+                ArrayList arrayList = this.f3469c;
                 if (arrayList == null) {
                     ArrayList arrayList2 = new ArrayList(list.size());
-                    this.f3425c = arrayList2;
-                    this.f3424b = Collections.unmodifiableList(arrayList2);
+                    this.f3469c = arrayList2;
+                    this.f3468b = Collections.unmodifiableList(arrayList2);
                 } else {
                     arrayList.clear();
                 }
@@ -541,19 +541,19 @@ public final class x0 {
                     WindowInsetsAnimation a10 = b1.a(list.get(size));
                     x0 a11 = a(a10);
                     a11.e(a10.getFraction());
-                    this.f3425c.add(a11);
+                    this.f3469c.add(a11);
                 }
-                return this.f3423a.onProgress(WindowInsetsCompat.C(windowInsets), this.f3424b).B();
+                return this.f3467a.onProgress(WindowInsetsCompat.C(windowInsets), this.f3468b).B();
             }
 
             public WindowInsetsAnimation.Bounds onStart(WindowInsetsAnimation windowInsetsAnimation, WindowInsetsAnimation.Bounds bounds) {
-                return this.f3423a.onStart(a(windowInsetsAnimation), a.d(bounds)).c();
+                return this.f3467a.onStart(a(windowInsetsAnimation), a.d(bounds)).c();
             }
         }
 
         d(WindowInsetsAnimation windowInsetsAnimation) {
             super(0, null, 0L);
-            this.f3422f = windowInsetsAnimation;
+            this.f3466f = windowInsetsAnimation;
         }
 
         public static WindowInsetsAnimation.Bounds e(a aVar) {
@@ -581,22 +581,22 @@ public final class x0 {
 
         @Override // androidx.core.view.x0.e
         public long a() {
-            return this.f3422f.getDurationMillis();
+            return this.f3466f.getDurationMillis();
         }
 
         @Override // androidx.core.view.x0.e
         public float b() {
-            return this.f3422f.getInterpolatedFraction();
+            return this.f3466f.getInterpolatedFraction();
         }
 
         @Override // androidx.core.view.x0.e
         public int c() {
-            return this.f3422f.getTypeMask();
+            return this.f3466f.getTypeMask();
         }
 
         @Override // androidx.core.view.x0.e
         public void d(float f10) {
-            this.f3422f.setFraction(f10);
+            this.f3466f.setFraction(f10);
         }
 
         d(int i10, Interpolator interpolator, long j10) {
@@ -608,14 +608,14 @@ public final class x0 {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Insets f3400a;
+        private final Insets f3444a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Insets f3401b;
+        private final Insets f3445b;
 
         public a(Insets insets, Insets insets2) {
-            this.f3400a = insets;
-            this.f3401b = insets2;
+            this.f3444a = insets;
+            this.f3445b = insets2;
         }
 
         public static a d(WindowInsetsAnimation.Bounds bounds) {
@@ -623,11 +623,11 @@ public final class x0 {
         }
 
         public Insets a() {
-            return this.f3400a;
+            return this.f3444a;
         }
 
         public Insets b() {
-            return this.f3401b;
+            return this.f3445b;
         }
 
         public WindowInsetsAnimation.Bounds c() {
@@ -635,19 +635,19 @@ public final class x0 {
         }
 
         public String toString() {
-            return "Bounds{lower=" + this.f3400a + " upper=" + this.f3401b + "}";
+            return "Bounds{lower=" + this.f3444a + " upper=" + this.f3445b + "}";
         }
 
         private a(WindowInsetsAnimation.Bounds bounds) {
-            this.f3400a = d.g(bounds);
-            this.f3401b = d.f(bounds);
+            this.f3444a = d.g(bounds);
+            this.f3445b = d.f(bounds);
         }
     }
 
     private x0(WindowInsetsAnimation windowInsetsAnimation) {
         this(0, null, 0L);
         if (Build.VERSION.SDK_INT >= 30) {
-            this.f3399a = new d(windowInsetsAnimation);
+            this.f3443a = new d(windowInsetsAnimation);
         }
     }
 }

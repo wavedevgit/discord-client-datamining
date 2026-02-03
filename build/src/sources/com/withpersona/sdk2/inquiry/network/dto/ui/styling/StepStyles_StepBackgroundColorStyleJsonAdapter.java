@@ -50,13 +50,13 @@ public final class StepStyles_StepBackgroundColorStyleJsonAdapter extends h {
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.ComplexElementColor complexElementColor = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 complexElementColor = (StyleElements.ComplexElementColor) this.nullableComplexElementColorAdapter.fromJson(reader);
             }
         }
@@ -69,9 +69,9 @@ public final class StepStyles_StepBackgroundColorStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (stepBackgroundColorStyle != null) {
             writer.l();
-            writer.A0("base");
+            writer.t0("base");
             this.nullableSimpleElementColorAdapter.toJson(writer, stepBackgroundColorStyle.getBase());
-            writer.A0("option");
+            writer.t0("option");
             this.nullableComplexElementColorAdapter.toJson(writer, stepBackgroundColorStyle.getOption());
             writer.E();
             return;

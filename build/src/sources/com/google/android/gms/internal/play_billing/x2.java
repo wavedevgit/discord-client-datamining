@@ -14,11 +14,11 @@ import java.util.TreeMap;
 public abstract class x2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final char[] f15403a;
+    private static final char[] f15032a;
 
     static {
         char[] cArr = new char[80];
-        f15403a = cArr;
+        f15032a = cArr;
         Arrays.fill(cArr, ' ');
     }
 
@@ -59,7 +59,7 @@ public abstract class x2 {
             sb2.append(str);
             if (obj instanceof String) {
                 sb2.append(": \"");
-                sb2.append(u3.a(new o0(((String) obj).getBytes(y1.f15411b))));
+                sb2.append(u3.a(new o0(((String) obj).getBytes(y1.f15040b))));
                 sb2.append('\"');
             } else if (obj instanceof r0) {
                 sb2.append(": \"");
@@ -93,7 +93,7 @@ public abstract class x2 {
             if (i10 <= 80) {
                 i11 = i10;
             }
-            sb2.append(f15403a, 0, i11);
+            sb2.append(f15032a, 0, i11);
             i10 -= i11;
         }
     }
@@ -160,7 +160,7 @@ public abstract class x2 {
                             if (q10 instanceof String) {
                                 equals = q10.equals("");
                             } else if (q10 instanceof r0) {
-                                equals = q10.equals(r0.f15368e);
+                                equals = q10.equals(r0.f14997e);
                             } else if (q10 instanceof v2) {
                                 if (q10 == ((v2) q10).l()) {
                                 }

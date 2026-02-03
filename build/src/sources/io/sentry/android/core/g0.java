@@ -198,8 +198,8 @@ public abstract class g0 {
         sentryAndroidOptions.setFlushTimeoutMillis(4000L);
         sentryAndroidOptions.setFrameMetricsCollector(new io.sentry.android.core.internal.util.c0(g10, iLogger, x0Var));
         b2.a(g10, sentryAndroidOptions, x0Var);
-        sentryAndroidOptions.setCacheDirPath((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0405a() { // from class: io.sentry.android.core.b0
-            @Override // io.sentry.util.runtime.a.InterfaceC0405a
+        sentryAndroidOptions.setCacheDirPath((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0408a() { // from class: io.sentry.android.core.b0
+            @Override // io.sentry.util.runtime.a.InterfaceC0408a
             public final Object run() {
                 String absolutePath;
                 absolutePath = g0.f(g10).getAbsolutePath();
@@ -223,8 +223,8 @@ public abstract class g0 {
         }
         if (sentryAndroidOptions.getDistinctId() == null) {
             try {
-                sentryAndroidOptions.setDistinctId((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0405a() { // from class: io.sentry.android.core.f0
-                    @Override // io.sentry.util.runtime.a.InterfaceC0405a
+                sentryAndroidOptions.setDistinctId((String) sentryAndroidOptions.getRuntimeManager().a(new a.InterfaceC0408a() { // from class: io.sentry.android.core.f0
+                    @Override // io.sentry.util.runtime.a.InterfaceC0408a
                     public final Object run() {
                         String a10;
                         a10 = r1.a(context);
@@ -246,7 +246,7 @@ public abstract class g0 {
             if (l0Var != null) {
                 sentryAndroidOptions.setContinuousProfiler(l0Var);
                 io.sentry.protocol.x f10 = l0Var.f();
-                if (l0Var.isRunning() && !f10.equals(io.sentry.protocol.x.f30486e)) {
+                if (l0Var.isRunning() && !f10.equals(io.sentry.protocol.x.f30052e)) {
                     hVar.f(f10.toString());
                     return;
                 }

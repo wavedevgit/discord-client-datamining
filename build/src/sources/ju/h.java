@@ -1,295 +1,109 @@
 package ju;
 
-import ir.v;
-import iu.c0;
-import iu.x;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.JarURLConnection;
-import java.net.URI;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.LinkedHashSet;
 import java.util.List;
-import kotlin.Lazy;
-import kotlin.Pair;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.functions.Function1;
+import ju.c0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
-import kotlin.text.StringsKt;
 import okio.Sink;
 import okio.Source;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class h extends iu.h {
+public abstract class h {
 
-    /* renamed from: h  reason: collision with root package name */
-    private static final a f32817h = new a(null);
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f32369a = new a(null);
 
-    /* renamed from: i  reason: collision with root package name */
-    private static final c0 f32818i = c0.a.e(c0.f31229e, "/", false, 1, null);
+    /* renamed from: b  reason: collision with root package name */
+    public static final h f32370b;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final ClassLoader f32819e;
+    /* renamed from: c  reason: collision with root package name */
+    public static final c0 f32371c;
 
-    /* renamed from: f  reason: collision with root package name */
-    private final iu.h f32820f;
+    /* renamed from: d  reason: collision with root package name */
+    public static final h f32372d;
 
-    /* renamed from: g  reason: collision with root package name */
-    private final Lazy f32821g;
-
-    /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
         public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
-        public final boolean c(c0 c0Var) {
-            return !StringsKt.y(c0Var.g(), ".class", true);
-        }
-
-        public final c0 b() {
-            return h.f32818i;
-        }
-
-        public final c0 d(c0 c0Var, c0 base) {
-            Intrinsics.checkNotNullParameter(c0Var, "<this>");
-            Intrinsics.checkNotNullParameter(base, "base");
-            return b().l(StringsKt.I(StringsKt.B0(c0Var.toString(), base.toString()), '\\', '/', false, 4, null));
-        }
-
         private a() {
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class b extends Lambda implements Function0 {
-        b() {
-            super(0);
+    static {
+        h rVar;
+        try {
+            Class.forName("java.nio.file.Files");
+            rVar = new w();
+        } catch (ClassNotFoundException unused) {
+            rVar = new r();
         }
-
-        @Override // kotlin.jvm.functions.Function0
-        public final List invoke() {
-            h hVar = h.this;
-            return hVar.x(hVar.f32819e);
-        }
+        f32370b = rVar;
+        c0.a aVar = c0.f32326e;
+        String property = System.getProperty("java.io.tmpdir");
+        Intrinsics.checkNotNullExpressionValue(property, "getProperty(...)");
+        f32371c = c0.a.e(aVar, property, false, 1, null);
+        ClassLoader classLoader = ku.h.class.getClassLoader();
+        Intrinsics.checkNotNullExpressionValue(classLoader, "getClassLoader(...)");
+        f32372d = new ku.h(classLoader, false, null, 4, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class c extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final c f32823d = new c();
-
-        c() {
-            super(1);
-        }
-
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final Boolean invoke(i entry) {
-            Intrinsics.checkNotNullParameter(entry, "entry");
-            return Boolean.valueOf(h.f32817h.c(entry.b()));
-        }
-    }
-
-    public /* synthetic */ h(ClassLoader classLoader, boolean z10, iu.h hVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(classLoader, z10, (i10 & 4) != 0 ? iu.h.f31273b : hVar);
-    }
-
-    private final String A(c0 c0Var) {
-        return v(c0Var).j(f32818i).toString();
-    }
-
-    private final c0 v(c0 c0Var) {
-        return f32818i.k(c0Var, true);
-    }
-
-    private final List w() {
-        return (List) this.f32821g.getValue();
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public final List x(ClassLoader classLoader) {
-        Enumeration<URL> resources = classLoader.getResources("");
-        Intrinsics.checkNotNullExpressionValue(resources, "getResources(...)");
-        ArrayList<URL> list = Collections.list(resources);
-        Intrinsics.checkNotNullExpressionValue(list, "list(...)");
-        ArrayList arrayList = new ArrayList();
-        for (URL url : list) {
-            Intrinsics.checkNotNull(url);
-            Pair y10 = y(url);
-            if (y10 != null) {
-                arrayList.add(y10);
-            }
-        }
-        Enumeration<URL> resources2 = classLoader.getResources("META-INF/MANIFEST.MF");
-        Intrinsics.checkNotNullExpressionValue(resources2, "getResources(...)");
-        ArrayList<URL> list2 = Collections.list(resources2);
-        Intrinsics.checkNotNullExpressionValue(list2, "list(...)");
-        ArrayList arrayList2 = new ArrayList();
-        for (URL url2 : list2) {
-            Intrinsics.checkNotNull(url2);
-            Pair z10 = z(url2);
-            if (z10 != null) {
-                arrayList2.add(z10);
-            }
-        }
-        return CollectionsKt.L0(arrayList, arrayList2);
-    }
-
-    private final Pair y(URL url) {
-        if (!Intrinsics.areEqual(url.getProtocol(), "file")) {
-            return null;
-        }
-        return v.a(this.f32820f, c0.a.d(c0.f31229e, new File(url.toURI()), false, 1, null));
-    }
-
-    private final Pair z(URL url) {
-        int o02;
-        String url2 = url.toString();
-        Intrinsics.checkNotNullExpressionValue(url2, "toString(...)");
-        if (!StringsKt.P(url2, "jar:file:", false, 2, null) || (o02 = StringsKt.o0(url2, "!", 0, false, 6, null)) == -1) {
-            return null;
-        }
-        c0.a aVar = c0.f31229e;
-        String substring = url2.substring(4, o02);
-        Intrinsics.checkNotNullExpressionValue(substring, "substring(...)");
-        return v.a(j.f(c0.a.d(aVar, new File(URI.create(substring)), false, 1, null), this.f32820f, c.f32823d), f32818i);
-    }
-
-    @Override // iu.h
-    public Sink b(c0 file, boolean z10) {
+    public final Sink a(c0 file) {
         Intrinsics.checkNotNullParameter(file, "file");
-        throw new IOException(this + " is read-only");
+        return b(file, false);
     }
 
-    @Override // iu.h
-    public void c(c0 source, c0 target) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        Intrinsics.checkNotNullParameter(target, "target");
-        throw new IOException(this + " is read-only");
-    }
+    public abstract Sink b(c0 c0Var, boolean z10);
 
-    @Override // iu.h
-    public void g(c0 dir, boolean z10) {
+    public abstract void c(c0 c0Var, c0 c0Var2);
+
+    public final void d(c0 dir) {
         Intrinsics.checkNotNullParameter(dir, "dir");
-        throw new IOException(this + " is read-only");
+        e(dir, false);
     }
 
-    @Override // iu.h
-    public void i(c0 path, boolean z10) {
-        Intrinsics.checkNotNullParameter(path, "path");
-        throw new IOException(this + " is read-only");
-    }
-
-    @Override // iu.h
-    public List k(c0 dir) {
+    public final void e(c0 dir, boolean z10) {
         Intrinsics.checkNotNullParameter(dir, "dir");
-        String A = A(dir);
-        LinkedHashSet linkedHashSet = new LinkedHashSet();
-        boolean z10 = false;
-        for (Pair pair : w()) {
-            iu.h hVar = (iu.h) pair.a();
-            c0 c0Var = (c0) pair.b();
-            try {
-                ArrayList<c0> arrayList = new ArrayList();
-                for (Object obj : hVar.k(c0Var.l(A))) {
-                    if (f32817h.c((c0) obj)) {
-                        arrayList.add(obj);
-                    }
-                }
-                ArrayList arrayList2 = new ArrayList(CollectionsKt.w(arrayList, 10));
-                for (c0 c0Var2 : arrayList) {
-                    arrayList2.add(f32817h.d(c0Var2, c0Var));
-                }
-                CollectionsKt.B(linkedHashSet, arrayList2);
-                z10 = true;
-            } catch (IOException unused) {
-            }
-        }
-        if (z10) {
-            return CollectionsKt.h1(linkedHashSet);
-        }
-        throw new FileNotFoundException("file not found: " + dir);
+        ku.c.a(this, dir, z10);
     }
 
-    @Override // iu.h
-    public iu.g m(c0 path) {
+    public final void f(c0 dir) {
+        Intrinsics.checkNotNullParameter(dir, "dir");
+        g(dir, false);
+    }
+
+    public abstract void g(c0 c0Var, boolean z10);
+
+    public final void h(c0 path) {
         Intrinsics.checkNotNullParameter(path, "path");
-        if (!f32817h.c(path)) {
-            return null;
-        }
-        String A = A(path);
-        for (Pair pair : w()) {
-            iu.g m10 = ((iu.h) pair.a()).m(((c0) pair.b()).l(A));
-            if (m10 != null) {
-                return m10;
-            }
-        }
-        return null;
+        i(path, false);
     }
 
-    @Override // iu.h
-    public iu.f n(c0 file) {
+    public abstract void i(c0 c0Var, boolean z10);
+
+    public final boolean j(c0 path) {
+        Intrinsics.checkNotNullParameter(path, "path");
+        return ku.c.b(this, path);
+    }
+
+    public abstract List k(c0 c0Var);
+
+    public final g l(c0 path) {
+        Intrinsics.checkNotNullParameter(path, "path");
+        return ku.c.c(this, path);
+    }
+
+    public abstract g m(c0 c0Var);
+
+    public abstract f n(c0 c0Var);
+
+    public final Sink o(c0 file) {
         Intrinsics.checkNotNullParameter(file, "file");
-        if (f32817h.c(file)) {
-            String A = A(file);
-            for (Pair pair : w()) {
-                try {
-                    return ((iu.h) pair.a()).n(((c0) pair.b()).l(A));
-                } catch (FileNotFoundException unused) {
-                }
-            }
-            throw new FileNotFoundException("file not found: " + file);
-        }
-        throw new FileNotFoundException("file not found: " + file);
+        return p(file, false);
     }
 
-    @Override // iu.h
-    public Sink p(c0 file, boolean z10) {
-        Intrinsics.checkNotNullParameter(file, "file");
-        throw new IOException(this + " is read-only");
-    }
+    public abstract Sink p(c0 c0Var, boolean z10);
 
-    @Override // iu.h
-    public Source q(c0 file) {
-        Intrinsics.checkNotNullParameter(file, "file");
-        if (f32817h.c(file)) {
-            c0 c0Var = f32818i;
-            URL resource = this.f32819e.getResource(c0.o(c0Var, file, false, 2, null).j(c0Var).toString());
-            if (resource != null) {
-                URLConnection openConnection = resource.openConnection();
-                if (openConnection instanceof JarURLConnection) {
-                    ((JarURLConnection) openConnection).setUseCaches(false);
-                }
-                InputStream inputStream = openConnection.getInputStream();
-                Intrinsics.checkNotNullExpressionValue(inputStream, "getInputStream(...)");
-                return x.k(inputStream);
-            }
-            throw new FileNotFoundException("file not found: " + file);
-        }
-        throw new FileNotFoundException("file not found: " + file);
-    }
-
-    public h(ClassLoader classLoader, boolean z10, iu.h systemFileSystem) {
-        Intrinsics.checkNotNullParameter(classLoader, "classLoader");
-        Intrinsics.checkNotNullParameter(systemFileSystem, "systemFileSystem");
-        this.f32819e = classLoader;
-        this.f32820f = systemFileSystem;
-        this.f32821g = ir.l.b(new b());
-        if (z10) {
-            w().size();
-        }
-    }
+    public abstract Source q(c0 c0Var);
 }

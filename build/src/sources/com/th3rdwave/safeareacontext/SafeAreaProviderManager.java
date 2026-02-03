@@ -5,8 +5,8 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.viewmanagers.RNCSafeAreaProviderManagerDelegate;
 import com.facebook.react.viewmanagers.RNCSafeAreaProviderManagerInterface;
-import ir.v;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.o0;
@@ -41,7 +41,7 @@ public final class SafeAreaProviderManager extends ViewGroupManager<f> implement
     public /* synthetic */ class b extends FunctionReferenceImpl implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f19412d = new b();
+        public static final b f19045d = new b();
 
         b() {
             super(3, g.class, "handleOnInsetsChange", "handleOnInsetsChange(Lcom/th3rdwave/safeareacontext/SafeAreaProvider;Lcom/th3rdwave/safeareacontext/EdgeInsets;Lcom/th3rdwave/safeareacontext/Rect;)V", 1);
@@ -57,7 +57,7 @@ public final class SafeAreaProviderManager extends ViewGroupManager<f> implement
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
             a((f) obj, (com.th3rdwave.safeareacontext.a) obj2, (c) obj3);
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
     }
 
@@ -84,7 +84,7 @@ public final class SafeAreaProviderManager extends ViewGroupManager<f> implement
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         Intrinsics.checkNotNullParameter(view, "view");
         super.addEventEmitters(reactContext, (ThemedReactContext) view);
-        view.setOnInsetsChangeHandler(b.f19412d);
+        view.setOnInsetsChangeHandler(b.f19045d);
     }
 
     @Override // com.facebook.react.uimanager.ViewManager

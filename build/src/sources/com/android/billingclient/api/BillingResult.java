@@ -3,37 +3,37 @@ package com.android.billingclient.api;
 public final class BillingResult {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f8945a;
+    private int f8574a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f8946b;
+    private String f8575b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f8947a;
+        private int f8576a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f8948b = "";
+        private String f8577b = "";
 
         /* synthetic */ a(a6.z zVar) {
         }
 
         public BillingResult a() {
             BillingResult billingResult = new BillingResult();
-            billingResult.f8945a = this.f8947a;
-            billingResult.f8946b = this.f8948b;
+            billingResult.f8574a = this.f8576a;
+            billingResult.f8575b = this.f8577b;
             return billingResult;
         }
 
         public a b(String str) {
-            this.f8948b = str;
+            this.f8577b = str;
             return this;
         }
 
         public a c(int i10) {
-            this.f8947a = i10;
+            this.f8576a = i10;
             return this;
         }
     }
@@ -43,16 +43,16 @@ public final class BillingResult {
     }
 
     public String a() {
-        return this.f8946b;
+        return this.f8575b;
     }
 
     public int b() {
-        return this.f8945a;
+        return this.f8574a;
     }
 
     public String toString() {
-        String f10 = com.google.android.gms.internal.play_billing.a0.f(this.f8945a);
-        String str = this.f8946b;
+        String f10 = com.google.android.gms.internal.play_billing.a0.f(this.f8574a);
+        String str = this.f8575b;
         return "Response Code: " + f10 + ", Debug Message: " + str;
     }
 }

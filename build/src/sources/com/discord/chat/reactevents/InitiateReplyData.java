@@ -1,8 +1,8 @@
 package com.discord.chat.reactevents;
 
-import at.h;
-import at.n2;
-import at.v1;
+import bt.h;
+import bt.n2;
+import bt.v1;
 import com.discord.primitives.ChannelId;
 import com.discord.primitives.ChannelId$$serializer;
 import com.discord.primitives.MessageId;
@@ -17,9 +17,9 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
-import xs.m;
-@Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0016\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0081\b\u0018\u0000 22\u00020\u0001:\u000212B-\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\u0004\b\n\u0010\u000bBC\b\u0010\u0012\u0006\u0010\f\u001a\u00020\r\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0004\b\n\u0010\u0010J\u0010\u0010\u001b\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u001c\u0010\u0012J\u0010\u0010\u001d\u001a\u00020\u0005HÆ\u0003¢\u0006\u0004\b\u001e\u0010\u0015J\u0010\u0010\u001f\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010\u0018J\u000b\u0010 \u001a\u0004\u0018\u00010\tHÆ\u0003J<\u0010!\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\tHÆ\u0001¢\u0006\u0004\b\"\u0010#J\u0013\u0010$\u001a\u00020\u00072\b\u0010%\u001a\u0004\u0018\u00010&HÖ\u0003J\t\u0010'\u001a\u00020\rHÖ\u0001J\t\u0010(\u001a\u00020\tHÖ\u0001J%\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020\u00002\u0006\u0010,\u001a\u00020-2\u0006\u0010.\u001a\u00020/H\u0001¢\u0006\u0002\b0R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0011\u0010\u0012R\u0013\u0010\u0004\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\u0016\u001a\u0004\b\u0014\u0010\u0015R\u0015\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\n\n\u0002\u0010\u0019\u001a\u0004\b\u0017\u0010\u0018R\u0013\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0012¨\u00063"}, d2 = {"Lcom/discord/chat/reactevents/InitiateReplyData;", "Lcom/discord/reactevents/ReactEvent;", "messageId", "Lcom/discord/primitives/MessageId;", "channelId", "Lcom/discord/primitives/ChannelId;", "triggerHaptic", "", "location", "", "<init>", "(Ljava/lang/String;JLjava/lang/Boolean;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/Boolean;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getMessageId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getChannelId-o4g7jtM", "()J", "J", "getTriggerHaptic", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getLocation", "component1", "component1-3Eiw7ao", "component2", "component2-o4g7jtM", "component3", "component4", "copy", "copy-8a0ehIg", "(Ljava/lang/String;JLjava/lang/Boolean;Ljava/lang/String;)Lcom/discord/chat/reactevents/InitiateReplyData;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+import ys.m;
 @m
+@Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0016\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0081\b\u0018\u0000 22\u00020\u0001:\u000212B-\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\u0004\b\n\u0010\u000bBC\b\u0010\u0012\u0006\u0010\f\u001a\u00020\r\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0004\b\n\u0010\u0010J\u0010\u0010\u001b\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u001c\u0010\u0012J\u0010\u0010\u001d\u001a\u00020\u0005HÆ\u0003¢\u0006\u0004\b\u001e\u0010\u0015J\u0010\u0010\u001f\u001a\u0004\u0018\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010\u0018J\u000b\u0010 \u001a\u0004\u0018\u00010\tHÆ\u0003J<\u0010!\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\tHÆ\u0001¢\u0006\u0004\b\"\u0010#J\u0013\u0010$\u001a\u00020\u00072\b\u0010%\u001a\u0004\u0018\u00010&HÖ\u0003J\t\u0010'\u001a\u00020\rHÖ\u0001J\t\u0010(\u001a\u00020\tHÖ\u0001J%\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020\u00002\u0006\u0010,\u001a\u00020-2\u0006\u0010.\u001a\u00020/H\u0001¢\u0006\u0002\b0R\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0011\u0010\u0012R\u0013\u0010\u0004\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\u0016\u001a\u0004\b\u0014\u0010\u0015R\u0015\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\n\n\u0002\u0010\u0019\u001a\u0004\b\u0017\u0010\u0018R\u0013\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0012¨\u00063"}, d2 = {"Lcom/discord/chat/reactevents/InitiateReplyData;", "Lcom/discord/reactevents/ReactEvent;", "messageId", "Lcom/discord/primitives/MessageId;", "channelId", "Lcom/discord/primitives/ChannelId;", "triggerHaptic", "", "location", "", "<init>", "(Ljava/lang/String;JLjava/lang/Boolean;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Lcom/discord/primitives/ChannelId;Ljava/lang/Boolean;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getMessageId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getChannelId-o4g7jtM", "()J", "J", "getTriggerHaptic", "()Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "getLocation", "component1", "component1-3Eiw7ao", "component2", "component2-o4g7jtM", "component3", "component4", "copy", "copy-8a0ehIg", "(Ljava/lang/String;JLjava/lang/Boolean;Ljava/lang/String;)Lcom/discord/chat/reactevents/InitiateReplyData;", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class InitiateReplyData implements ReactEvent {
     @NotNull
@@ -51,7 +51,7 @@ public final class InitiateReplyData implements ReactEvent {
     }
 
     /* renamed from: copy-8a0ehIg$default  reason: not valid java name */
-    public static /* synthetic */ InitiateReplyData m738copy8a0ehIg$default(InitiateReplyData initiateReplyData, String str, long j10, Boolean bool, String str2, int i10, Object obj) {
+    public static /* synthetic */ InitiateReplyData m740copy8a0ehIg$default(InitiateReplyData initiateReplyData, String str, long j10, Boolean bool, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = initiateReplyData.messageId;
         }
@@ -64,26 +64,26 @@ public final class InitiateReplyData implements ReactEvent {
         if ((i10 & 8) != 0) {
             str2 = initiateReplyData.location;
         }
-        return initiateReplyData.m741copy8a0ehIg(str, j10, bool, str2);
+        return initiateReplyData.m743copy8a0ehIg(str, j10, bool, str2);
     }
 
     public static final /* synthetic */ void write$Self$chat_release(InitiateReplyData initiateReplyData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.j(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(initiateReplyData.messageId));
-        compositeEncoder.j(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1058boximpl(initiateReplyData.channelId));
-        if (compositeEncoder.A(serialDescriptor, 2) || !Intrinsics.areEqual(initiateReplyData.triggerHaptic, Boolean.FALSE)) {
-            compositeEncoder.z(serialDescriptor, 2, h.f6812a, initiateReplyData.triggerHaptic);
+        compositeEncoder.m(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1086boximpl(initiateReplyData.messageId));
+        compositeEncoder.m(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1060boximpl(initiateReplyData.channelId));
+        if (compositeEncoder.y(serialDescriptor, 2) || !Intrinsics.areEqual(initiateReplyData.triggerHaptic, Boolean.FALSE)) {
+            compositeEncoder.B(serialDescriptor, 2, h.f7626a, initiateReplyData.triggerHaptic);
         }
-        compositeEncoder.z(serialDescriptor, 3, n2.f6848a, initiateReplyData.location);
+        compositeEncoder.B(serialDescriptor, 3, n2.f7662a, initiateReplyData.location);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m739component13Eiw7ao() {
+    public final String m741component13Eiw7ao() {
         return this.messageId;
     }
 
     /* renamed from: component2-o4g7jtM  reason: not valid java name */
-    public final long m740component2o4g7jtM() {
+    public final long m742component2o4g7jtM() {
         return this.channelId;
     }
 
@@ -97,7 +97,7 @@ public final class InitiateReplyData implements ReactEvent {
 
     @NotNull
     /* renamed from: copy-8a0ehIg  reason: not valid java name */
-    public final InitiateReplyData m741copy8a0ehIg(@NotNull String messageId, long j10, Boolean bool, String str) {
+    public final InitiateReplyData m743copy8a0ehIg(@NotNull String messageId, long j10, Boolean bool, String str) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         return new InitiateReplyData(messageId, j10, bool, str, null);
     }
@@ -108,13 +108,13 @@ public final class InitiateReplyData implements ReactEvent {
         }
         if (obj instanceof InitiateReplyData) {
             InitiateReplyData initiateReplyData = (InitiateReplyData) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, initiateReplyData.messageId) && ChannelId.m1062equalsimpl0(this.channelId, initiateReplyData.channelId) && Intrinsics.areEqual(this.triggerHaptic, initiateReplyData.triggerHaptic) && Intrinsics.areEqual(this.location, initiateReplyData.location);
+            return MessageId.m1090equalsimpl0(this.messageId, initiateReplyData.messageId) && ChannelId.m1064equalsimpl0(this.channelId, initiateReplyData.channelId) && Intrinsics.areEqual(this.triggerHaptic, initiateReplyData.triggerHaptic) && Intrinsics.areEqual(this.location, initiateReplyData.location);
         }
         return false;
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m742getChannelIdo4g7jtM() {
+    public final long m744getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -124,7 +124,7 @@ public final class InitiateReplyData implements ReactEvent {
 
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m743getMessageId3Eiw7ao() {
+    public final String m745getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -133,9 +133,9 @@ public final class InitiateReplyData implements ReactEvent {
     }
 
     public int hashCode() {
-        int m1089hashCodeimpl = ((MessageId.m1089hashCodeimpl(this.messageId) * 31) + ChannelId.m1063hashCodeimpl(this.channelId)) * 31;
+        int m1091hashCodeimpl = ((MessageId.m1091hashCodeimpl(this.messageId) * 31) + ChannelId.m1065hashCodeimpl(this.channelId)) * 31;
         Boolean bool = this.triggerHaptic;
-        int hashCode = (m1089hashCodeimpl + (bool == null ? 0 : bool.hashCode())) * 31;
+        int hashCode = (m1091hashCodeimpl + (bool == null ? 0 : bool.hashCode())) * 31;
         String str = this.location;
         return hashCode + (str != null ? str.hashCode() : 0);
     }
@@ -148,11 +148,11 @@ public final class InitiateReplyData implements ReactEvent {
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
-        String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
+        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
         Boolean bool = this.triggerHaptic;
         String str = this.location;
-        return "InitiateReplyData(messageId=" + m1091toStringimpl + ", channelId=" + m1065toStringimpl + ", triggerHaptic=" + bool + ", location=" + str + ")";
+        return "InitiateReplyData(messageId=" + m1093toStringimpl + ", channelId=" + m1067toStringimpl + ", triggerHaptic=" + bool + ", location=" + str + ")";
     }
 
     public /* synthetic */ InitiateReplyData(String str, long j10, Boolean bool, String str2, DefaultConstructorMarker defaultConstructorMarker) {
@@ -164,7 +164,7 @@ public final class InitiateReplyData implements ReactEvent {
             v1.b(i10, 11, InitiateReplyData$$serializer.INSTANCE.getDescriptor());
         }
         this.messageId = str;
-        this.channelId = channelId.m1067unboximpl();
+        this.channelId = channelId.m1069unboximpl();
         if ((i10 & 4) == 0) {
             this.triggerHaptic = Boolean.FALSE;
         } else {

@@ -3,15 +3,15 @@ package kg;
 final class n extends b {
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ wg.k f33209c;
+    final /* synthetic */ wg.k f32955c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(wg.k kVar) {
-        this.f33209c = kVar;
+        this.f32955c = kVar;
     }
 
     @Override // kg.c
     public final void w(sg.f fVar) {
-        ff.r.a(fVar.a(), new sg.e(fVar), this.f33209c);
+        ff.r.a(fVar.a(), new sg.e(fVar), this.f32955c);
     }
 }

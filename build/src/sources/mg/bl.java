@@ -3,53 +3,48 @@ package mg;
 final class bl extends dl {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f38130a;
+    private final float f38110a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f38131b;
+    private final float f38111b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f38132c;
+    private final float f38112c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f38133d;
+    private final float f38113d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public bl(float f10, float f11, float f12, float f13, float f14) {
-        this.f38130a = f10;
-        this.f38131b = f11;
-        this.f38132c = f12;
-        this.f38133d = f13;
+        this.f38110a = f10;
+        this.f38111b = f11;
+        this.f38112c = f12;
+        this.f38113d = f13;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // mg.dl
-    public final float a() {
+    final float a() {
         return 0.0f;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // mg.dl
-    public final float b() {
-        return this.f38132c;
+    final float b() {
+        return this.f38112c;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // mg.dl
-    public final float c() {
-        return this.f38130a;
+    final float c() {
+        return this.f38110a;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // mg.dl
-    public final float d() {
-        return this.f38133d;
+    final float d() {
+        return this.f38113d;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // mg.dl
-    public final float e() {
-        return this.f38131b;
+    final float e() {
+        return this.f38111b;
     }
 
     public final boolean equals(Object obj) {
@@ -58,7 +53,7 @@ final class bl extends dl {
         }
         if (obj instanceof dl) {
             dl dlVar = (dl) obj;
-            if (Float.floatToIntBits(this.f38130a) == Float.floatToIntBits(dlVar.c()) && Float.floatToIntBits(this.f38131b) == Float.floatToIntBits(dlVar.e()) && Float.floatToIntBits(this.f38132c) == Float.floatToIntBits(dlVar.b()) && Float.floatToIntBits(this.f38133d) == Float.floatToIntBits(dlVar.d())) {
+            if (Float.floatToIntBits(this.f38110a) == Float.floatToIntBits(dlVar.c()) && Float.floatToIntBits(this.f38111b) == Float.floatToIntBits(dlVar.e()) && Float.floatToIntBits(this.f38112c) == Float.floatToIntBits(dlVar.b()) && Float.floatToIntBits(this.f38113d) == Float.floatToIntBits(dlVar.d())) {
                 int floatToIntBits = Float.floatToIntBits(0.0f);
                 dlVar.a();
                 if (floatToIntBits == Float.floatToIntBits(0.0f)) {
@@ -70,10 +65,10 @@ final class bl extends dl {
     }
 
     public final int hashCode() {
-        return ((((((((Float.floatToIntBits(this.f38130a) ^ 1000003) * 1000003) ^ Float.floatToIntBits(this.f38131b)) * 1000003) ^ Float.floatToIntBits(this.f38132c)) * 1000003) ^ Float.floatToIntBits(this.f38133d)) * 1000003) ^ Float.floatToIntBits(0.0f);
+        return ((((((((Float.floatToIntBits(this.f38110a) ^ 1000003) * 1000003) ^ Float.floatToIntBits(this.f38111b)) * 1000003) ^ Float.floatToIntBits(this.f38112c)) * 1000003) ^ Float.floatToIntBits(this.f38113d)) * 1000003) ^ Float.floatToIntBits(0.0f);
     }
 
     public final String toString() {
-        return "PredictedArea{xMin=" + this.f38130a + ", yMin=" + this.f38131b + ", xMax=" + this.f38132c + ", yMax=" + this.f38133d + ", confidenceScore=0.0}";
+        return "PredictedArea{xMin=" + this.f38110a + ", yMin=" + this.f38111b + ", xMax=" + this.f38112c + ", yMax=" + this.f38113d + ", confidenceScore=0.0}";
     }
 }

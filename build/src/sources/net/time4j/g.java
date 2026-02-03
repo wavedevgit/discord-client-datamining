@@ -7,28 +7,28 @@ import com.discord.misc.utilities.logThrottle.LogThrottleSingleton;
 public abstract class g implements v {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final g f40604d;
+    public static final g f40467d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final g f40605e;
+    public static final g f40468e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final g f40606i;
+    public static final g f40469i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final g f40607o;
+    public static final g f40470o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final g f40608p;
+    public static final g f40471p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final g f40609q;
+    public static final g f40472q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final long[] f40610r;
+    private static final long[] f40473r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final /* synthetic */ g[] f40611s;
+    private static final /* synthetic */ g[] f40474s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     enum a extends g {
@@ -41,7 +41,7 @@ public abstract class g implements v {
             return 'H';
         }
 
-        @Override // jt.w
+        @Override // kt.w
         public double getLength() {
             return 3600.0d;
         }
@@ -49,69 +49,69 @@ public abstract class g implements v {
 
     static {
         a aVar = new a("HOURS", 0);
-        f40604d = aVar;
+        f40467d = aVar;
         g gVar = new g("MINUTES", 1) { // from class: net.time4j.g.b
             @Override // net.time4j.w
             public char d() {
                 return 'M';
             }
 
-            @Override // jt.w
+            @Override // kt.w
             public double getLength() {
                 return 60.0d;
             }
         };
-        f40605e = gVar;
+        f40468e = gVar;
         g gVar2 = new g("SECONDS", 2) { // from class: net.time4j.g.c
             @Override // net.time4j.w
             public char d() {
                 return 'S';
             }
 
-            @Override // jt.w
+            @Override // kt.w
             public double getLength() {
                 return 1.0d;
             }
         };
-        f40606i = gVar2;
+        f40469i = gVar2;
         g gVar3 = new g("MILLIS", 3) { // from class: net.time4j.g.d
             @Override // net.time4j.w
             public char d() {
                 return '3';
             }
 
-            @Override // jt.w
+            @Override // kt.w
             public double getLength() {
                 return 0.001d;
             }
         };
-        f40607o = gVar3;
+        f40470o = gVar3;
         g gVar4 = new g("MICROS", 4) { // from class: net.time4j.g.e
             @Override // net.time4j.w
             public char d() {
                 return '6';
             }
 
-            @Override // jt.w
+            @Override // kt.w
             public double getLength() {
                 return 1.0E-6d;
             }
         };
-        f40608p = gVar4;
+        f40471p = gVar4;
         g gVar5 = new g("NANOS", 5) { // from class: net.time4j.g.f
             @Override // net.time4j.w
             public char d() {
                 return '9';
             }
 
-            @Override // jt.w
+            @Override // kt.w
             public double getLength() {
                 return 1.0E-9d;
             }
         };
-        f40609q = gVar5;
-        f40611s = new g[]{aVar, gVar, gVar2, gVar3, gVar4, gVar5};
-        f40610r = new long[]{1, 60, 3600, LogThrottleSingleton.RATE_LIMIT_ONE_HOUR, 3600000000L, 3600000000000L};
+        f40472q = gVar5;
+        f40474s = new g[]{aVar, gVar, gVar2, gVar3, gVar4, gVar5};
+        f40473r = new long[]{1, 60, 3600, LogThrottleSingleton.RATE_LIMIT_ONE_HOUR, 3600000000L, 3600000000000L};
     }
 
     private g(String str, int i10) {
@@ -122,15 +122,15 @@ public abstract class g implements v {
     }
 
     public static g[] values() {
-        return (g[]) f40611s.clone();
+        return (g[]) f40474s.clone();
     }
 
-    @Override // jt.w
+    @Override // kt.w
     public boolean a() {
         return false;
     }
 
-    public long e(jt.k0 k0Var, jt.k0 k0Var2) {
+    public long e(kt.k0 k0Var, kt.k0 k0Var2) {
         return k0Var.L(k0Var2, this);
     }
 

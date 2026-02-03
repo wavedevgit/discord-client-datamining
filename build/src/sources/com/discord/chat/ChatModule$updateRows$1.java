@@ -1,6 +1,6 @@
 package com.discord.chat;
 
-import at.f;
+import bt.f;
 import com.discord.chat.ChatModule;
 import com.discord.chat.bridge.ErrorMessage;
 import com.discord.chat.bridge.Message;
@@ -16,11 +16,11 @@ import com.discord.logging.PIIKt;
 import com.discord.serialization.SerializerUtils;
 import com.discord.tti_manager.TTIMetrics;
 import com.facebook.react.bridge.ReactApplicationContext;
-import ir.v;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -35,9 +35,9 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.serialization.json.Json;
-import or.b;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import pr.b;
 @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n"}, d2 = {"<anonymous>", "", "manager", "Lcom/discord/chat/listmanager/ChatListManager;"}, k = 3, mv = {2, 1, 0}, xi = 48)
 @e(c = "com.discord.chat.ChatModule$updateRows$1", f = "ChatModule.kt", l = {}, m = "invokeSuspend")
 @SourceDebugExtension({"SMAP\nChatModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ChatModule.kt\ncom/discord/chat/ChatModule$updateRows$1\n+ 2 Json.kt\nkotlinx/serialization/json/Json\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,193:1\n147#2:194\n147#2:195\n1878#3,2:196\n1869#3,2:198\n1880#3:200\n*S KotlinDebug\n*F\n+ 1 ChatModule.kt\ncom/discord/chat/ChatModule$updateRows$1\n*L\n59#1:194\n61#1:195\n70#1:196,2\n82#1:198,2\n70#1:200\n*E\n"})
@@ -73,7 +73,7 @@ final class ChatModule$updateRows$1 extends k implements Function2<ChatListManag
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(ChatListManager chatListManager, Continuation<? super Unit> continuation) {
-        return ((ChatModule$updateRows$1) create(chatListManager, continuation)).invokeSuspend(Unit.f33298a);
+        return ((ChatModule$updateRows$1) create(chatListManager, continuation)).invokeSuspend(Unit.f33074a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -172,7 +172,7 @@ final class ChatModule$updateRows$1 extends k implements Function2<ChatListManag
             TTIMetrics.record$default(TTIMetrics.INSTANCE, "ChatModule.updateRows() Finish", 0L, null, false, 14, null);
             ChatModule.Companion companion3 = ChatModule.Companion;
             ChatModule.previousRowUpdateTag = this.$tag;
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

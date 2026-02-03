@@ -36,19 +36,19 @@ public abstract class n implements Comparable {
     class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f9198d;
+        final /* synthetic */ String f8827d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ long f9199e;
+        final /* synthetic */ long f8828e;
 
         a(String str, long j10) {
-            this.f9198d = str;
-            this.f9199e = j10;
+            this.f8827d = str;
+            this.f8828e = j10;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            n.this.mEventLog.a(this.f9198d, this.f9199e);
+            n.this.mEventLog.a(this.f8827d, this.f8828e);
             n.this.mEventLog.b(n.this.toString());
         }
     }
@@ -70,7 +70,7 @@ public abstract class n implements Comparable {
 
     public n(int i10, String str, p.a aVar) {
         v.a aVar2;
-        if (v.a.f9226c) {
+        if (v.a.f8855c) {
             aVar2 = new v.a();
         } else {
             aVar2 = null;
@@ -119,7 +119,7 @@ public abstract class n implements Comparable {
     }
 
     public void addMarker(String str) {
-        if (v.a.f9226c) {
+        if (v.a.f8855c) {
             this.mEventLog.a(str, Thread.currentThread().getId());
         }
     }
@@ -150,7 +150,7 @@ public abstract class n implements Comparable {
         if (oVar != null) {
             oVar.d(this);
         }
-        if (v.a.f9226c) {
+        if (v.a.f8855c) {
             long id2 = Thread.currentThread().getId();
             if (Looper.myLooper() != Looper.getMainLooper()) {
                 new Handler(Looper.getMainLooper()).post(new a(str, id2));

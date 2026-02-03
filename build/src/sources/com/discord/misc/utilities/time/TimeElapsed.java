@@ -1,9 +1,9 @@
 package com.discord.misc.utilities.time;
 
-import ir.l;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;

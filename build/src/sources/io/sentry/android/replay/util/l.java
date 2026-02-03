@@ -1,7 +1,7 @@
 package io.sentry.android.replay.util;
 
 import android.os.Build;
-import ir.p;
+import jr.p;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -9,7 +9,7 @@ import org.jetbrains.annotations.NotNull;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l f29683a = new l();
+    public static final l f29249a = new l();
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -27,7 +27,7 @@ public final class l {
         static {
             a[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
         }
 
         private a(String str, int i10) {
@@ -51,7 +51,7 @@ public final class l {
     public static final /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f29684a;
+        public static final /* synthetic */ int[] f29250a;
 
         static {
             int[] iArr = new int[a.values().length];
@@ -63,7 +63,7 @@ public final class l {
                 iArr[a.SOC_MANUFACTURER.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f29684a = iArr;
+            f29250a = iArr;
         }
     }
 
@@ -82,7 +82,7 @@ public final class l {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(defaultValue, "defaultValue");
         if (Build.VERSION.SDK_INT >= 31) {
-            int i10 = b.f29684a[key.ordinal()];
+            int i10 = b.f29250a[key.ordinal()];
             if (i10 == 1) {
                 str = Build.SOC_MODEL;
             } else if (i10 == 2) {

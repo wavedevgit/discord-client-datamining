@@ -12,13 +12,13 @@ import va.y;
 public final class c implements x8.a {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f33075c = new a(null);
+    public static final a f32821c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f33076a;
+    private final b f32822a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.facebook.imagepipeline.memory.d f33077b;
+    private final com.facebook.imagepipeline.memory.d f32823b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -44,17 +44,17 @@ public final class c implements x8.a {
 
     public c(y poolFactory) {
         Intrinsics.checkNotNullParameter(poolFactory, "poolFactory");
-        this.f33076a = new b(poolFactory.h());
+        this.f32822a = new b(poolFactory.h());
         com.facebook.imagepipeline.memory.d d10 = poolFactory.d();
         Intrinsics.checkNotNullExpressionValue(d10, "getFlexByteArrayPool(...)");
-        this.f33077b = d10;
+        this.f32823b = d10;
     }
 
     @Override // x8.a
     public Bitmap a(int i10, int i11, Bitmap.Config bitmapConfig) {
         k kVar;
         Intrinsics.checkNotNullParameter(bitmapConfig, "bitmapConfig");
-        CloseableReference a10 = this.f33076a.a((short) i10, (short) i11);
+        CloseableReference a10 = this.f32822a.a((short) i10, (short) i11);
         Intrinsics.checkNotNullExpressionValue(a10, "generate(...)");
         try {
             kVar = new k(a10);
@@ -63,16 +63,16 @@ public final class c implements x8.a {
             kVar = null;
         }
         try {
-            kVar.B1(fa.b.f24868b);
-            BitmapFactory.Options b10 = f33075c.b(kVar.A0(), bitmapConfig);
-            int size = ((h) a10.D0()).size();
-            Object D0 = a10.D0();
-            Intrinsics.checkNotNullExpressionValue(D0, "get(...)");
-            CloseableReference a11 = this.f33077b.a(size + 2);
-            Object D02 = a11.D0();
-            Intrinsics.checkNotNullExpressionValue(D02, "get(...)");
-            byte[] bArr = (byte[]) D02;
-            ((h) D0).o(0, bArr, 0, size);
+            kVar.B1(fa.b.f24079b);
+            BitmapFactory.Options b10 = f32821c.b(kVar.t0(), bitmapConfig);
+            int size = ((h) a10.F0()).size();
+            Object F0 = a10.F0();
+            Intrinsics.checkNotNullExpressionValue(F0, "get(...)");
+            CloseableReference a11 = this.f32823b.a(size + 2);
+            Object F02 = a11.F0();
+            Intrinsics.checkNotNullExpressionValue(F02, "get(...)");
+            byte[] bArr = (byte[]) F02;
+            ((h) F0).o(0, bArr, 0, size);
             Bitmap decodeByteArray = BitmapFactory.decodeByteArray(bArr, 0, size, b10);
             if (decodeByteArray != null) {
                 decodeByteArray.setHasAlpha(true);

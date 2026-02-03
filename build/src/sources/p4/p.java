@@ -8,10 +8,10 @@ import java.util.List;
 public final class p implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f44913a;
+    private final r3.u f44987a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f44914b;
+    private final r3.i f44988b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -30,19 +30,19 @@ public final class p implements o {
             if (nVar.a() == null) {
                 kVar.P1(1);
             } else {
-                kVar.g1(1, nVar.a());
+                kVar.h1(1, nVar.a());
             }
             if (nVar.b() == null) {
                 kVar.P1(2);
             } else {
-                kVar.g1(2, nVar.b());
+                kVar.h1(2, nVar.b());
             }
         }
     }
 
     public p(r3.u uVar) {
-        this.f44913a = uVar;
-        this.f44914b = new a(uVar);
+        this.f44987a = uVar;
+        this.f44988b = new a(uVar);
     }
 
     public static List c() {
@@ -56,10 +56,10 @@ public final class p implements o {
         if (str == null) {
             l10.P1(1);
         } else {
-            l10.g1(1, str);
+            l10.h1(1, str);
         }
-        this.f44913a.d();
-        Cursor b10 = t3.b.b(this.f44913a, l10, false, null);
+        this.f44987a.d();
+        Cursor b10 = t3.b.b(this.f44987a, l10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -79,13 +79,13 @@ public final class p implements o {
 
     @Override // p4.o
     public void b(n nVar) {
-        this.f44913a.d();
-        this.f44913a.e();
+        this.f44987a.d();
+        this.f44987a.e();
         try {
-            this.f44914b.j(nVar);
-            this.f44913a.A();
+            this.f44988b.j(nVar);
+            this.f44987a.A();
         } finally {
-            this.f44913a.i();
+            this.f44987a.i();
         }
     }
 }

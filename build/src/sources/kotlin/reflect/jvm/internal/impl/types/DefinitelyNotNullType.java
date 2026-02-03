@@ -16,10 +16,10 @@ public final class DefinitelyNotNullType extends DelegatingSimpleType implements
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private final SimpleType f35848e;
+    private final SimpleType f35624e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f35849i;
+    private final boolean f35625i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -28,7 +28,7 @@ public final class DefinitelyNotNullType extends DelegatingSimpleType implements
         }
 
         private final boolean a(UnwrappedType unwrappedType) {
-            if (!(unwrappedType.getConstructor() instanceof NewTypeVariableConstructor) && !(unwrappedType.getConstructor().mo1198getDeclarationDescriptor() instanceof TypeParameterDescriptor) && !(unwrappedType instanceof NewCapturedType) && !(unwrappedType instanceof StubTypeForBuilderInference)) {
+            if (!(unwrappedType.getConstructor() instanceof NewTypeVariableConstructor) && !(unwrappedType.getConstructor().mo1200getDeclarationDescriptor() instanceof TypeParameterDescriptor) && !(unwrappedType instanceof NewCapturedType) && !(unwrappedType instanceof StubTypeForBuilderInference)) {
                 return false;
             }
             return true;
@@ -42,16 +42,16 @@ public final class DefinitelyNotNullType extends DelegatingSimpleType implements
             if (unwrappedType instanceof StubTypeForBuilderInference) {
                 return TypeUtils.isNullableType(unwrappedType);
             }
-            ClassifierDescriptor mo1198getDeclarationDescriptor = unwrappedType.getConstructor().mo1198getDeclarationDescriptor();
-            if (mo1198getDeclarationDescriptor instanceof TypeParameterDescriptorImpl) {
-                typeParameterDescriptorImpl = (TypeParameterDescriptorImpl) mo1198getDeclarationDescriptor;
+            ClassifierDescriptor mo1200getDeclarationDescriptor = unwrappedType.getConstructor().mo1200getDeclarationDescriptor();
+            if (mo1200getDeclarationDescriptor instanceof TypeParameterDescriptorImpl) {
+                typeParameterDescriptorImpl = (TypeParameterDescriptorImpl) mo1200getDeclarationDescriptor;
             } else {
                 typeParameterDescriptorImpl = null;
             }
             if (typeParameterDescriptorImpl != null && !typeParameterDescriptorImpl.isInitialized()) {
                 return true;
             }
-            if (z10 && (unwrappedType.getConstructor().mo1198getDeclarationDescriptor() instanceof TypeParameterDescriptor)) {
+            if (z10 && (unwrappedType.getConstructor().mo1200getDeclarationDescriptor() instanceof TypeParameterDescriptor)) {
                 return TypeUtils.isNullableType(unwrappedType);
             }
             return !NullabilityChecker.INSTANCE.isSubtypeOfAny(unwrappedType);
@@ -92,12 +92,12 @@ public final class DefinitelyNotNullType extends DelegatingSimpleType implements
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
     protected SimpleType getDelegate() {
-        return this.f35848e;
+        return this.f35624e;
     }
 
     @NotNull
     public final SimpleType getOriginal() {
-        return this.f35848e;
+        return this.f35624e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType, kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -107,7 +107,7 @@ public final class DefinitelyNotNullType extends DelegatingSimpleType implements
 
     @Override // kotlin.reflect.jvm.internal.impl.types.CustomTypeParameter
     public boolean isTypeParameter() {
-        if (!(getDelegate().getConstructor() instanceof NewTypeVariableConstructor) && !(getDelegate().getConstructor().mo1198getDeclarationDescriptor() instanceof TypeParameterDescriptor)) {
+        if (!(getDelegate().getConstructor() instanceof NewTypeVariableConstructor) && !(getDelegate().getConstructor().mo1200getDeclarationDescriptor() instanceof TypeParameterDescriptor)) {
             return false;
         }
         return true;
@@ -117,7 +117,7 @@ public final class DefinitelyNotNullType extends DelegatingSimpleType implements
     @NotNull
     public KotlinType substitutionResult(@NotNull KotlinType replacement) {
         Intrinsics.checkNotNullParameter(replacement, "replacement");
-        return SpecialTypesKt.makeDefinitelyNotNullOrNotNull(replacement.unwrap(), this.f35849i);
+        return SpecialTypesKt.makeDefinitelyNotNullOrNotNull(replacement.unwrap(), this.f35625i);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.SimpleType
@@ -127,8 +127,8 @@ public final class DefinitelyNotNullType extends DelegatingSimpleType implements
     }
 
     private DefinitelyNotNullType(SimpleType simpleType, boolean z10) {
-        this.f35848e = simpleType;
-        this.f35849i = z10;
+        this.f35624e = simpleType;
+        this.f35625i = z10;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
@@ -141,13 +141,13 @@ public final class DefinitelyNotNullType extends DelegatingSimpleType implements
     @NotNull
     public SimpleType replaceAttributes(@NotNull TypeAttributes newAttributes) {
         Intrinsics.checkNotNullParameter(newAttributes, "newAttributes");
-        return new DefinitelyNotNullType(getDelegate().replaceAttributes(newAttributes), this.f35849i);
+        return new DefinitelyNotNullType(getDelegate().replaceAttributes(newAttributes), this.f35625i);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
     @NotNull
     public DefinitelyNotNullType replaceDelegate(@NotNull SimpleType delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        return new DefinitelyNotNullType(delegate, this.f35849i);
+        return new DefinitelyNotNullType(delegate, this.f35625i);
     }
 }

@@ -1,105 +1,29 @@
 package np;
+
+import kotlinx.coroutines.CoroutineDispatcher;
+import uq.d;
+import uq.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface b {
+public final class b implements d {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements b {
+    /* renamed from: a  reason: collision with root package name */
+    private final a f42330a;
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final a f42040a = new a();
-
-        private a() {
-        }
-
-        public boolean equals(Object obj) {
-            if (this == obj || (obj instanceof a)) {
-                return true;
-            }
-            return false;
-        }
-
-        public int hashCode() {
-            return -1611120582;
-        }
-
-        public String toString() {
-            return "Pending";
-        }
+    public b(a aVar) {
+        this.f42330a = aVar;
     }
 
-    /* renamed from: np.b$b  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0523b implements b {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final C0523b f42041a = new C0523b();
-
-        private C0523b() {
-        }
-
-        public boolean equals(Object obj) {
-            if (this == obj || (obj instanceof C0523b)) {
-                return true;
-            }
-            return false;
-        }
-
-        public int hashCode() {
-            return -39927199;
-        }
-
-        public String toString() {
-            return "Prompt";
-        }
+    public static b a(a aVar) {
+        return new b(aVar);
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class c implements b {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final c f42042a = new c();
-
-        private c() {
-        }
-
-        public boolean equals(Object obj) {
-            if (this == obj || (obj instanceof c)) {
-                return true;
-            }
-            return false;
-        }
-
-        public int hashCode() {
-            return 5529685;
-        }
-
-        public String toString() {
-            return "Review";
-        }
+    public static CoroutineDispatcher c(a aVar) {
+        return (CoroutineDispatcher) g.d(aVar.a());
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class d implements b {
-
-        /* renamed from: a  reason: collision with root package name */
-        public static final d f42043a = new d();
-
-        private d() {
-        }
-
-        public boolean equals(Object obj) {
-            if (this == obj || (obj instanceof d)) {
-                return true;
-            }
-            return false;
-        }
-
-        public int hashCode() {
-            return -1776980018;
-        }
-
-        public String toString() {
-            return "TakePhoto";
-        }
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public CoroutineDispatcher get() {
+        return c(this.f42330a);
     }
 }

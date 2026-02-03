@@ -20,35 +20,35 @@ enum b1 {
     
 
     /* renamed from: z  reason: collision with root package name */
-    private static final Map f17850z = new HashMap();
+    private static final Map f17479z = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f17851d;
+    private final String f17480d;
 
     static {
         b1[] values;
         int i10;
         for (b1 b1Var : values()) {
-            f17850z.put(b1Var.f17851d, b1Var);
+            f17479z.put(b1Var.f17480d, b1Var);
         }
     }
 
     b1(String str) {
-        this.f17851d = str;
+        this.f17480d = str;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static b1 d(String str) {
-        return (b1) f17850z.get(str);
+        return (b1) f17479z.get(str);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean e(String str) {
-        return f17850z.containsKey(str);
+        return f17479z.containsKey(str);
     }
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f17851d;
+        return this.f17480d;
     }
 }

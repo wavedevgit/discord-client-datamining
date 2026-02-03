@@ -13,7 +13,7 @@ import tk.j;
 public final class b implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Result[] f49074a = new Result[0];
+    private static final Result[] f49128a = new Result[0];
 
     private static Result[] b(ck.c cVar, Map map, boolean z10) {
         ArrayList arrayList = new ArrayList();
@@ -33,7 +33,7 @@ public final class b implements m {
             result.h(oVar, "]L" + i10.j());
             arrayList.add(result);
         }
-        return (Result[]) arrayList.toArray(f49074a);
+        return (Result[]) arrayList.toArray(f49128a);
     }
 
     private static int c(p[] pVarArr) {

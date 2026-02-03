@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class e {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final e f27361d = new e("EXACT", 0);
+    public static final e f27534d = new e("EXACT", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final e f27362e = new e("INEXACT", 1);
+    public static final e f27535e = new e("INEXACT", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final e f27363i = new e("AUTOMATIC", 2);
+    public static final e f27536i = new e("AUTOMATIC", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ e[] f27364o;
+    private static final /* synthetic */ e[] f27537o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f27365p;
+    private static final /* synthetic */ EnumEntries f27538p;
 
     static {
         e[] a10 = a();
-        f27364o = a10;
-        f27365p = pr.a.a(a10);
+        f27537o = a10;
+        f27538p = qr.a.a(a10);
     }
 
     private e(String str, int i10) {
     }
 
     private static final /* synthetic */ e[] a() {
-        return new e[]{f27361d, f27362e, f27363i};
+        return new e[]{f27534d, f27535e, f27536i};
     }
 
     public static e valueOf(String str) {
@@ -39,6 +39,6 @@ public final class e {
     }
 
     public static e[] values() {
-        return (e[]) f27364o.clone();
+        return (e[]) f27537o.clone();
     }
 }

@@ -53,82 +53,82 @@ public class AlertController {
     Handler R;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f894a;
+    private final Context f938a;
 
     /* renamed from: b  reason: collision with root package name */
-    final l f895b;
+    final l f939b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Window f896c;
+    private final Window f940c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f897d;
+    private final int f941d;
 
     /* renamed from: e  reason: collision with root package name */
-    private CharSequence f898e;
+    private CharSequence f942e;
 
     /* renamed from: f  reason: collision with root package name */
-    private CharSequence f899f;
+    private CharSequence f943f;
 
     /* renamed from: g  reason: collision with root package name */
-    ListView f900g;
+    ListView f944g;
 
     /* renamed from: h  reason: collision with root package name */
-    private View f901h;
+    private View f945h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f902i;
+    private int f946i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f903j;
+    private int f947j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f904k;
+    private int f948k;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f905l;
+    private int f949l;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f906m;
+    private int f950m;
 
     /* renamed from: o  reason: collision with root package name */
-    Button f908o;
+    Button f952o;
 
     /* renamed from: p  reason: collision with root package name */
-    private CharSequence f909p;
+    private CharSequence f953p;
 
     /* renamed from: q  reason: collision with root package name */
-    Message f910q;
+    Message f954q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Drawable f911r;
+    private Drawable f955r;
 
     /* renamed from: s  reason: collision with root package name */
-    Button f912s;
+    Button f956s;
 
     /* renamed from: t  reason: collision with root package name */
-    private CharSequence f913t;
+    private CharSequence f957t;
 
     /* renamed from: u  reason: collision with root package name */
-    Message f914u;
+    Message f958u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Drawable f915v;
+    private Drawable f959v;
 
     /* renamed from: w  reason: collision with root package name */
-    Button f916w;
+    Button f960w;
 
     /* renamed from: x  reason: collision with root package name */
-    private CharSequence f917x;
+    private CharSequence f961x;
 
     /* renamed from: y  reason: collision with root package name */
-    Message f918y;
+    Message f962y;
 
     /* renamed from: z  reason: collision with root package name */
-    private Drawable f919z;
+    private Drawable f963z;
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f907n = false;
+    private boolean f951n = false;
     private int B = 0;
     int I = -1;
     private int Q = 0;
@@ -138,16 +138,16 @@ public class AlertController {
     public static class RecycleListView extends ListView {
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f920d;
+        private final int f964d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f921e;
+        private final int f965e;
 
         public RecycleListView(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f24220c2);
-            this.f921e = obtainStyledAttributes.getDimensionPixelOffset(f.j.f24225d2, -1);
-            this.f920d = obtainStyledAttributes.getDimensionPixelOffset(f.j.f24230e2, -1);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23431c2);
+            this.f965e = obtainStyledAttributes.getDimensionPixelOffset(f.j.f23436d2, -1);
+            this.f964d = obtainStyledAttributes.getDimensionPixelOffset(f.j.f23441e2, -1);
         }
 
         public void a(boolean z10, boolean z11) {
@@ -160,13 +160,13 @@ public class AlertController {
             if (z10) {
                 i10 = getPaddingTop();
             } else {
-                i10 = this.f920d;
+                i10 = this.f964d;
             }
             int paddingRight = getPaddingRight();
             if (z11) {
                 i11 = getPaddingBottom();
             } else {
-                i11 = this.f921e;
+                i11 = this.f965e;
             }
             setPadding(paddingLeft, i10, paddingRight, i11);
         }
@@ -184,11 +184,11 @@ public class AlertController {
             Message message3;
             Message message4;
             AlertController alertController = AlertController.this;
-            if (view == alertController.f908o && (message4 = alertController.f910q) != null) {
+            if (view == alertController.f952o && (message4 = alertController.f954q) != null) {
                 message = Message.obtain(message4);
-            } else if (view == alertController.f912s && (message3 = alertController.f914u) != null) {
+            } else if (view == alertController.f956s && (message3 = alertController.f958u) != null) {
                 message = Message.obtain(message3);
-            } else if (view == alertController.f916w && (message2 = alertController.f918y) != null) {
+            } else if (view == alertController.f960w && (message2 = alertController.f962y) != null) {
                 message = Message.obtain(message2);
             } else {
                 message = null;
@@ -197,7 +197,7 @@ public class AlertController {
                 message.sendToTarget();
             }
             AlertController alertController2 = AlertController.this;
-            alertController2.R.obtainMessage(1, alertController2.f895b).sendToTarget();
+            alertController2.R.obtainMessage(1, alertController2.f939b).sendToTarget();
         }
     }
 
@@ -217,97 +217,97 @@ public class AlertController {
         public AdapterView.OnItemSelectedListener N;
 
         /* renamed from: a  reason: collision with root package name */
-        public final Context f923a;
+        public final Context f967a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final LayoutInflater f924b;
+        public final LayoutInflater f968b;
 
         /* renamed from: d  reason: collision with root package name */
-        public Drawable f926d;
+        public Drawable f970d;
 
         /* renamed from: f  reason: collision with root package name */
-        public CharSequence f928f;
+        public CharSequence f972f;
 
         /* renamed from: g  reason: collision with root package name */
-        public View f929g;
+        public View f973g;
 
         /* renamed from: h  reason: collision with root package name */
-        public CharSequence f930h;
+        public CharSequence f974h;
 
         /* renamed from: i  reason: collision with root package name */
-        public CharSequence f931i;
+        public CharSequence f975i;
 
         /* renamed from: j  reason: collision with root package name */
-        public Drawable f932j;
+        public Drawable f976j;
 
         /* renamed from: k  reason: collision with root package name */
-        public DialogInterface.OnClickListener f933k;
+        public DialogInterface.OnClickListener f977k;
 
         /* renamed from: l  reason: collision with root package name */
-        public CharSequence f934l;
+        public CharSequence f978l;
 
         /* renamed from: m  reason: collision with root package name */
-        public Drawable f935m;
+        public Drawable f979m;
 
         /* renamed from: n  reason: collision with root package name */
-        public DialogInterface.OnClickListener f936n;
+        public DialogInterface.OnClickListener f980n;
 
         /* renamed from: o  reason: collision with root package name */
-        public CharSequence f937o;
+        public CharSequence f981o;
 
         /* renamed from: p  reason: collision with root package name */
-        public Drawable f938p;
+        public Drawable f982p;
 
         /* renamed from: q  reason: collision with root package name */
-        public DialogInterface.OnClickListener f939q;
+        public DialogInterface.OnClickListener f983q;
 
         /* renamed from: s  reason: collision with root package name */
-        public DialogInterface.OnCancelListener f941s;
+        public DialogInterface.OnCancelListener f985s;
 
         /* renamed from: t  reason: collision with root package name */
-        public DialogInterface.OnDismissListener f942t;
+        public DialogInterface.OnDismissListener f986t;
 
         /* renamed from: u  reason: collision with root package name */
-        public DialogInterface.OnKeyListener f943u;
+        public DialogInterface.OnKeyListener f987u;
 
         /* renamed from: v  reason: collision with root package name */
-        public CharSequence[] f944v;
+        public CharSequence[] f988v;
 
         /* renamed from: w  reason: collision with root package name */
-        public ListAdapter f945w;
+        public ListAdapter f989w;
 
         /* renamed from: x  reason: collision with root package name */
-        public DialogInterface.OnClickListener f946x;
+        public DialogInterface.OnClickListener f990x;
 
         /* renamed from: y  reason: collision with root package name */
-        public int f947y;
+        public int f991y;
 
         /* renamed from: z  reason: collision with root package name */
-        public View f948z;
+        public View f992z;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f925c = 0;
+        public int f969c = 0;
 
         /* renamed from: e  reason: collision with root package name */
-        public int f927e = 0;
+        public int f971e = 0;
         public boolean E = false;
         public int I = -1;
         public boolean O = true;
 
         /* renamed from: r  reason: collision with root package name */
-        public boolean f940r = true;
+        public boolean f984r = true;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public class a extends ArrayAdapter {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ RecycleListView f949d;
+            final /* synthetic */ RecycleListView f993d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(Context context, int i10, int i11, CharSequence[] charSequenceArr, RecycleListView recycleListView) {
                 super(context, i10, i11, charSequenceArr);
-                this.f949d = recycleListView;
+                this.f993d = recycleListView;
             }
 
             @Override // android.widget.ArrayAdapter, android.widget.Adapter
@@ -315,7 +315,7 @@ public class AlertController {
                 View view2 = super.getView(i10, view, viewGroup);
                 boolean[] zArr = b.this.F;
                 if (zArr != null && zArr[i10]) {
-                    this.f949d.setItemChecked(i10, true);
+                    this.f993d.setItemChecked(i10, true);
                 }
                 return view2;
             }
@@ -324,37 +324,37 @@ public class AlertController {
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: androidx.appcompat.app.AlertController$b$b  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        public class C0014b extends CursorAdapter {
+        public class C0018b extends CursorAdapter {
 
             /* renamed from: d  reason: collision with root package name */
-            private final int f951d;
+            private final int f995d;
 
             /* renamed from: e  reason: collision with root package name */
-            private final int f952e;
+            private final int f996e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ RecycleListView f953i;
+            final /* synthetic */ RecycleListView f997i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ AlertController f954o;
+            final /* synthetic */ AlertController f998o;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0014b(Context context, Cursor cursor, boolean z10, RecycleListView recycleListView, AlertController alertController) {
+            C0018b(Context context, Cursor cursor, boolean z10, RecycleListView recycleListView, AlertController alertController) {
                 super(context, cursor, z10);
-                this.f953i = recycleListView;
-                this.f954o = alertController;
+                this.f997i = recycleListView;
+                this.f998o = alertController;
                 Cursor cursor2 = getCursor();
-                this.f951d = cursor2.getColumnIndexOrThrow(b.this.L);
-                this.f952e = cursor2.getColumnIndexOrThrow(b.this.M);
+                this.f995d = cursor2.getColumnIndexOrThrow(b.this.L);
+                this.f996e = cursor2.getColumnIndexOrThrow(b.this.M);
             }
 
             @Override // android.widget.CursorAdapter
             public void bindView(View view, Context context, Cursor cursor) {
-                ((CheckedTextView) view.findViewById(16908308)).setText(cursor.getString(this.f951d));
-                RecycleListView recycleListView = this.f953i;
+                ((CheckedTextView) view.findViewById(16908308)).setText(cursor.getString(this.f995d));
+                RecycleListView recycleListView = this.f997i;
                 int position = cursor.getPosition();
                 boolean z10 = true;
-                if (cursor.getInt(this.f952e) != 1) {
+                if (cursor.getInt(this.f996e) != 1) {
                     z10 = false;
                 }
                 recycleListView.setItemChecked(position, z10);
@@ -362,7 +362,7 @@ public class AlertController {
 
             @Override // android.widget.CursorAdapter
             public View newView(Context context, Cursor cursor, ViewGroup viewGroup) {
-                return b.this.f924b.inflate(this.f954o.M, viewGroup, false);
+                return b.this.f968b.inflate(this.f998o.M, viewGroup, false);
             }
         }
 
@@ -371,17 +371,17 @@ public class AlertController {
         public class c implements AdapterView.OnItemClickListener {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ AlertController f956d;
+            final /* synthetic */ AlertController f1000d;
 
             c(AlertController alertController) {
-                this.f956d = alertController;
+                this.f1000d = alertController;
             }
 
             @Override // android.widget.AdapterView.OnItemClickListener
             public void onItemClick(AdapterView adapterView, View view, int i10, long j10) {
-                b.this.f946x.onClick(this.f956d.f895b, i10);
+                b.this.f990x.onClick(this.f1000d.f939b, i10);
                 if (!b.this.H) {
-                    this.f956d.f895b.dismiss();
+                    this.f1000d.f939b.dismiss();
                 }
             }
         }
@@ -391,29 +391,29 @@ public class AlertController {
         public class d implements AdapterView.OnItemClickListener {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ RecycleListView f958d;
+            final /* synthetic */ RecycleListView f1002d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ AlertController f959e;
+            final /* synthetic */ AlertController f1003e;
 
             d(RecycleListView recycleListView, AlertController alertController) {
-                this.f958d = recycleListView;
-                this.f959e = alertController;
+                this.f1002d = recycleListView;
+                this.f1003e = alertController;
             }
 
             @Override // android.widget.AdapterView.OnItemClickListener
             public void onItemClick(AdapterView adapterView, View view, int i10, long j10) {
                 boolean[] zArr = b.this.F;
                 if (zArr != null) {
-                    zArr[i10] = this.f958d.isItemChecked(i10);
+                    zArr[i10] = this.f1002d.isItemChecked(i10);
                 }
-                b.this.J.onClick(this.f959e.f895b, i10, this.f958d.isItemChecked(i10));
+                b.this.J.onClick(this.f1003e.f939b, i10, this.f1002d.isItemChecked(i10));
             }
         }
 
         public b(Context context) {
-            this.f923a = context;
-            this.f924b = (LayoutInflater) context.getSystemService("layout_inflater");
+            this.f967a = context;
+            this.f968b = (LayoutInflater) context.getSystemService("layout_inflater");
         }
 
         private void b(AlertController alertController) {
@@ -421,17 +421,17 @@ public class AlertController {
             AlertController alertController2;
             int i10;
             ListAdapter listAdapter;
-            RecycleListView recycleListView = (RecycleListView) this.f924b.inflate(alertController.L, (ViewGroup) null);
+            RecycleListView recycleListView = (RecycleListView) this.f968b.inflate(alertController.L, (ViewGroup) null);
             if (this.G) {
                 if (this.K == null) {
                     bVar = this;
-                    listAdapter = new a(this.f923a, alertController.M, 16908308, this.f944v, recycleListView);
+                    listAdapter = new a(this.f967a, alertController.M, 16908308, this.f988v, recycleListView);
                     recycleListView = recycleListView;
                     alertController2 = alertController;
                 } else {
                     bVar = this;
                     alertController2 = alertController;
-                    listAdapter = new C0014b(bVar.f923a, bVar.K, false, recycleListView, alertController2);
+                    listAdapter = new C0018b(bVar.f967a, bVar.K, false, recycleListView, alertController2);
                 }
             } else {
                 bVar = this;
@@ -443,17 +443,17 @@ public class AlertController {
                 }
                 int i11 = i10;
                 if (bVar.K != null) {
-                    listAdapter = new SimpleCursorAdapter(bVar.f923a, i11, bVar.K, new String[]{bVar.L}, new int[]{16908308});
+                    listAdapter = new SimpleCursorAdapter(bVar.f967a, i11, bVar.K, new String[]{bVar.L}, new int[]{16908308});
                 } else {
-                    listAdapter = bVar.f945w;
+                    listAdapter = bVar.f989w;
                     if (listAdapter == null) {
-                        listAdapter = new d(bVar.f923a, i11, 16908308, bVar.f944v);
+                        listAdapter = new d(bVar.f967a, i11, 16908308, bVar.f988v);
                     }
                 }
             }
             alertController2.H = listAdapter;
             alertController2.I = bVar.I;
-            if (bVar.f946x != null) {
+            if (bVar.f990x != null) {
                 recycleListView.setOnItemClickListener(new c(alertController2));
             } else if (bVar.J != null) {
                 recycleListView.setOnItemClickListener(new d(recycleListView, alertController2));
@@ -467,55 +467,55 @@ public class AlertController {
             } else if (bVar.G) {
                 recycleListView.setChoiceMode(2);
             }
-            alertController2.f900g = recycleListView;
+            alertController2.f944g = recycleListView;
         }
 
         public void a(AlertController alertController) {
             AlertController alertController2;
-            View view = this.f929g;
+            View view = this.f973g;
             if (view != null) {
                 alertController.l(view);
             } else {
-                CharSequence charSequence = this.f928f;
+                CharSequence charSequence = this.f972f;
                 if (charSequence != null) {
                     alertController.q(charSequence);
                 }
-                Drawable drawable = this.f926d;
+                Drawable drawable = this.f970d;
                 if (drawable != null) {
                     alertController.n(drawable);
                 }
-                int i10 = this.f925c;
+                int i10 = this.f969c;
                 if (i10 != 0) {
                     alertController.m(i10);
                 }
-                int i11 = this.f927e;
+                int i11 = this.f971e;
                 if (i11 != 0) {
                     alertController.m(alertController.d(i11));
                 }
             }
-            CharSequence charSequence2 = this.f930h;
+            CharSequence charSequence2 = this.f974h;
             if (charSequence2 != null) {
                 alertController.o(charSequence2);
             }
-            CharSequence charSequence3 = this.f931i;
-            if (charSequence3 == null && this.f932j == null) {
+            CharSequence charSequence3 = this.f975i;
+            if (charSequence3 == null && this.f976j == null) {
                 alertController2 = alertController;
             } else {
-                alertController.k(-1, charSequence3, this.f933k, null, this.f932j);
+                alertController.k(-1, charSequence3, this.f977k, null, this.f976j);
                 alertController2 = alertController;
             }
-            CharSequence charSequence4 = this.f934l;
-            if (charSequence4 != null || this.f935m != null) {
-                alertController2.k(-2, charSequence4, this.f936n, null, this.f935m);
+            CharSequence charSequence4 = this.f978l;
+            if (charSequence4 != null || this.f979m != null) {
+                alertController2.k(-2, charSequence4, this.f980n, null, this.f979m);
             }
-            CharSequence charSequence5 = this.f937o;
-            if (charSequence5 != null || this.f938p != null) {
-                alertController2.k(-3, charSequence5, this.f939q, null, this.f938p);
+            CharSequence charSequence5 = this.f981o;
+            if (charSequence5 != null || this.f982p != null) {
+                alertController2.k(-3, charSequence5, this.f983q, null, this.f982p);
             }
-            if (this.f944v != null || this.K != null || this.f945w != null) {
+            if (this.f988v != null || this.K != null || this.f989w != null) {
                 b(alertController2);
             }
-            View view2 = this.f948z;
+            View view2 = this.f992z;
             if (view2 != null) {
                 if (this.E) {
                     alertController2.t(view2, this.A, this.B, this.C, this.D);
@@ -525,7 +525,7 @@ public class AlertController {
                     return;
                 }
             }
-            int i12 = this.f947y;
+            int i12 = this.f991y;
             if (i12 != 0) {
                 alertController2.r(i12);
             }
@@ -536,10 +536,10 @@ public class AlertController {
     private static final class c extends Handler {
 
         /* renamed from: a  reason: collision with root package name */
-        private WeakReference f961a;
+        private WeakReference f1005a;
 
         public c(DialogInterface dialogInterface) {
-            this.f961a = new WeakReference(dialogInterface);
+            this.f1005a = new WeakReference(dialogInterface);
         }
 
         @Override // android.os.Handler
@@ -552,7 +552,7 @@ public class AlertController {
                 ((DialogInterface) message.obj).dismiss();
                 return;
             }
-            ((DialogInterface.OnClickListener) message.obj).onClick((DialogInterface) this.f961a.get(), message.what);
+            ((DialogInterface.OnClickListener) message.obj).onClick((DialogInterface) this.f1005a.get(), message.what);
         }
     }
 
@@ -575,11 +575,11 @@ public class AlertController {
     }
 
     public AlertController(Context context, l lVar, Window window) {
-        this.f894a = context;
-        this.f895b = lVar;
-        this.f896c = window;
+        this.f938a = context;
+        this.f939b = lVar;
+        this.f940c = window;
         this.R = new c(lVar);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(null, f.j.F, f.a.f24079k, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(null, f.j.F, f.a.f23290k, 0);
         this.J = obtainStyledAttributes.getResourceId(f.j.G, 0);
         this.K = obtainStyledAttributes.getResourceId(f.j.I, 0);
         this.L = obtainStyledAttributes.getResourceId(f.j.K, 0);
@@ -587,7 +587,7 @@ public class AlertController {
         this.N = obtainStyledAttributes.getResourceId(f.j.N, 0);
         this.O = obtainStyledAttributes.getResourceId(f.j.J, 0);
         this.P = obtainStyledAttributes.getBoolean(f.j.M, true);
-        this.f897d = obtainStyledAttributes.getDimensionPixelSize(f.j.H, 0);
+        this.f941d = obtainStyledAttributes.getDimensionPixelSize(f.j.H, 0);
         obtainStyledAttributes.recycle();
         lVar.j(1);
     }
@@ -648,8 +648,8 @@ public class AlertController {
     }
 
     private void p(ViewGroup viewGroup, View view, int i10, int i11) {
-        View findViewById = this.f896c.findViewById(f.f.f24165w);
-        View findViewById2 = this.f896c.findViewById(f.f.f24164v);
+        View findViewById = this.f940c.findViewById(f.f.f23376w);
+        View findViewById2 = this.f940c.findViewById(f.f.f23375v);
         h0.H0(view, i10, i11);
         if (findViewById != null) {
             viewGroup.removeView(findViewById);
@@ -662,61 +662,61 @@ public class AlertController {
     private void u(ViewGroup viewGroup) {
         boolean z10;
         Button button = (Button) viewGroup.findViewById(16908313);
-        this.f908o = button;
+        this.f952o = button;
         button.setOnClickListener(this.S);
-        if (TextUtils.isEmpty(this.f909p) && this.f911r == null) {
-            this.f908o.setVisibility(8);
+        if (TextUtils.isEmpty(this.f953p) && this.f955r == null) {
+            this.f952o.setVisibility(8);
             z10 = false;
         } else {
-            this.f908o.setText(this.f909p);
-            Drawable drawable = this.f911r;
+            this.f952o.setText(this.f953p);
+            Drawable drawable = this.f955r;
             if (drawable != null) {
-                int i10 = this.f897d;
+                int i10 = this.f941d;
                 drawable.setBounds(0, 0, i10, i10);
-                this.f908o.setCompoundDrawables(this.f911r, null, null, null);
+                this.f952o.setCompoundDrawables(this.f955r, null, null, null);
             }
-            this.f908o.setVisibility(0);
+            this.f952o.setVisibility(0);
             z10 = true;
         }
         Button button2 = (Button) viewGroup.findViewById(16908314);
-        this.f912s = button2;
+        this.f956s = button2;
         button2.setOnClickListener(this.S);
-        if (TextUtils.isEmpty(this.f913t) && this.f915v == null) {
-            this.f912s.setVisibility(8);
+        if (TextUtils.isEmpty(this.f957t) && this.f959v == null) {
+            this.f956s.setVisibility(8);
         } else {
-            this.f912s.setText(this.f913t);
-            Drawable drawable2 = this.f915v;
+            this.f956s.setText(this.f957t);
+            Drawable drawable2 = this.f959v;
             if (drawable2 != null) {
-                int i11 = this.f897d;
+                int i11 = this.f941d;
                 drawable2.setBounds(0, 0, i11, i11);
-                this.f912s.setCompoundDrawables(this.f915v, null, null, null);
+                this.f956s.setCompoundDrawables(this.f959v, null, null, null);
             }
-            this.f912s.setVisibility(0);
+            this.f956s.setVisibility(0);
             z10 |= true;
         }
         Button button3 = (Button) viewGroup.findViewById(16908315);
-        this.f916w = button3;
+        this.f960w = button3;
         button3.setOnClickListener(this.S);
-        if (TextUtils.isEmpty(this.f917x) && this.f919z == null) {
-            this.f916w.setVisibility(8);
+        if (TextUtils.isEmpty(this.f961x) && this.f963z == null) {
+            this.f960w.setVisibility(8);
         } else {
-            this.f916w.setText(this.f917x);
-            Drawable drawable3 = this.f919z;
+            this.f960w.setText(this.f961x);
+            Drawable drawable3 = this.f963z;
             if (drawable3 != null) {
-                int i12 = this.f897d;
+                int i12 = this.f941d;
                 drawable3.setBounds(0, 0, i12, i12);
-                this.f916w.setCompoundDrawables(this.f919z, null, null, null);
+                this.f960w.setCompoundDrawables(this.f963z, null, null, null);
             }
-            this.f916w.setVisibility(0);
+            this.f960w.setVisibility(0);
             z10 |= true;
         }
-        if (z(this.f894a)) {
+        if (z(this.f938a)) {
             if (z10) {
-                b(this.f908o);
+                b(this.f952o);
             } else if (z10) {
-                b(this.f912s);
+                b(this.f956s);
             } else if (z10) {
-                b(this.f916w);
+                b(this.f960w);
             }
         }
         if (z10) {
@@ -726,7 +726,7 @@ public class AlertController {
     }
 
     private void v(ViewGroup viewGroup) {
-        NestedScrollView nestedScrollView = (NestedScrollView) this.f896c.findViewById(f.f.f24166x);
+        NestedScrollView nestedScrollView = (NestedScrollView) this.f940c.findViewById(f.f.f23377x);
         this.A = nestedScrollView;
         nestedScrollView.setFocusable(false);
         this.A.setNestedScrollingEnabled(false);
@@ -735,29 +735,29 @@ public class AlertController {
         if (textView == null) {
             return;
         }
-        CharSequence charSequence = this.f899f;
+        CharSequence charSequence = this.f943f;
         if (charSequence != null) {
             textView.setText(charSequence);
             return;
         }
         textView.setVisibility(8);
         this.A.removeView(this.F);
-        if (this.f900g != null) {
+        if (this.f944g != null) {
             ViewGroup viewGroup2 = (ViewGroup) this.A.getParent();
             int indexOfChild = viewGroup2.indexOfChild(this.A);
             viewGroup2.removeViewAt(indexOfChild);
-            viewGroup2.addView(this.f900g, indexOfChild, new ViewGroup.LayoutParams(-1, -1));
+            viewGroup2.addView(this.f944g, indexOfChild, new ViewGroup.LayoutParams(-1, -1));
             return;
         }
         viewGroup.setVisibility(8);
     }
 
     private void w(ViewGroup viewGroup) {
-        View view = this.f901h;
+        View view = this.f945h;
         boolean z10 = false;
         if (view == null) {
-            if (this.f902i != 0) {
-                view = LayoutInflater.from(this.f894a).inflate(this.f902i, viewGroup, false);
+            if (this.f946i != 0) {
+                view = LayoutInflater.from(this.f938a).inflate(this.f946i, viewGroup, false);
             } else {
                 view = null;
             }
@@ -766,15 +766,15 @@ public class AlertController {
             z10 = true;
         }
         if (!z10 || !a(view)) {
-            this.f896c.setFlags(131072, 131072);
+            this.f940c.setFlags(131072, 131072);
         }
         if (z10) {
-            FrameLayout frameLayout = (FrameLayout) this.f896c.findViewById(f.f.f24157o);
+            FrameLayout frameLayout = (FrameLayout) this.f940c.findViewById(f.f.f23368o);
             frameLayout.addView(view, new ViewGroup.LayoutParams(-1, -1));
-            if (this.f907n) {
-                frameLayout.setPadding(this.f903j, this.f904k, this.f905l, this.f906m);
+            if (this.f951n) {
+                frameLayout.setPadding(this.f947j, this.f948k, this.f949l, this.f950m);
             }
-            if (this.f900g != null) {
+            if (this.f944g != null) {
                 ((LinearLayout.LayoutParams) ((i0.a) viewGroup.getLayoutParams())).weight = 0.0f;
                 return;
             }
@@ -786,14 +786,14 @@ public class AlertController {
     private void x(ViewGroup viewGroup) {
         if (this.G != null) {
             viewGroup.addView(this.G, 0, new ViewGroup.LayoutParams(-1, -2));
-            this.f896c.findViewById(f.f.P).setVisibility(8);
+            this.f940c.findViewById(f.f.P).setVisibility(8);
             return;
         }
-        this.D = (ImageView) this.f896c.findViewById(16908294);
-        if (!TextUtils.isEmpty(this.f898e) && this.P) {
-            TextView textView = (TextView) this.f896c.findViewById(f.f.f24153k);
+        this.D = (ImageView) this.f940c.findViewById(16908294);
+        if (!TextUtils.isEmpty(this.f942e) && this.P) {
+            TextView textView = (TextView) this.f940c.findViewById(f.f.f23364k);
             this.E = textView;
-            textView.setText(this.f898e);
+            textView.setText(this.f942e);
             int i10 = this.B;
             if (i10 != 0) {
                 this.D.setImageResource(i10);
@@ -808,7 +808,7 @@ public class AlertController {
             this.D.setVisibility(8);
             return;
         }
-        this.f896c.findViewById(f.f.P).setVisibility(8);
+        this.f940c.findViewById(f.f.P).setVisibility(8);
         this.D.setVisibility(8);
         viewGroup.setVisibility(8);
     }
@@ -822,15 +822,15 @@ public class AlertController {
         ListAdapter listAdapter;
         View findViewById2;
         View findViewById3;
-        View findViewById4 = this.f896c.findViewById(f.f.f24163u);
+        View findViewById4 = this.f940c.findViewById(f.f.f23374u);
         View findViewById5 = findViewById4.findViewById(f.f.Q);
-        View findViewById6 = findViewById4.findViewById(f.f.f24156n);
-        View findViewById7 = findViewById4.findViewById(f.f.f24154l);
-        ViewGroup viewGroup = (ViewGroup) findViewById4.findViewById(f.f.f24158p);
+        View findViewById6 = findViewById4.findViewById(f.f.f23367n);
+        View findViewById7 = findViewById4.findViewById(f.f.f23365l);
+        ViewGroup viewGroup = (ViewGroup) findViewById4.findViewById(f.f.f23369p);
         w(viewGroup);
         View findViewById8 = viewGroup.findViewById(f.f.Q);
-        View findViewById9 = viewGroup.findViewById(f.f.f24156n);
-        View findViewById10 = viewGroup.findViewById(f.f.f24154l);
+        View findViewById9 = viewGroup.findViewById(f.f.f23367n);
+        View findViewById10 = viewGroup.findViewById(f.f.f23365l);
         ViewGroup i10 = i(findViewById8, findViewById5);
         ViewGroup i11 = i(findViewById9, findViewById6);
         ViewGroup i12 = i(findViewById10, findViewById7);
@@ -861,7 +861,7 @@ public class AlertController {
             if (nestedScrollView != null) {
                 nestedScrollView.setClipToPadding(true);
             }
-            if (this.f899f == null && this.f900g == null) {
+            if (this.f943f == null && this.f944g == null) {
                 findViewById2 = null;
             } else {
                 findViewById2 = i10.findViewById(f.f.O);
@@ -872,12 +872,12 @@ public class AlertController {
         } else if (i11 != null && (findViewById = i11.findViewById(f.f.M)) != null) {
             findViewById.setVisibility(0);
         }
-        ListView listView = this.f900g;
+        ListView listView = this.f944g;
         if (listView instanceof RecycleListView) {
             ((RecycleListView) listView).a(z11, z12);
         }
         if (!z10) {
-            View view = this.f900g;
+            View view = this.f944g;
             if (view == null) {
                 view = this.A;
             }
@@ -888,7 +888,7 @@ public class AlertController {
                 p(i11, view, z11 | i13, 3);
             }
         }
-        ListView listView2 = this.f900g;
+        ListView listView2 = this.f944g;
         if (listView2 != null && (listAdapter = this.H) != null) {
             listView2.setAdapter(listAdapter);
             int i14 = this.I;
@@ -901,7 +901,7 @@ public class AlertController {
 
     private static boolean z(Context context) {
         TypedValue typedValue = new TypedValue();
-        context.getTheme().resolveAttribute(f.a.f24078j, typedValue, true);
+        context.getTheme().resolveAttribute(f.a.f23289j, typedValue, true);
         if (typedValue.data != 0) {
             return true;
         }
@@ -914,25 +914,25 @@ public class AlertController {
                 if (i10 != -1) {
                     return null;
                 }
-                return this.f908o;
+                return this.f952o;
             }
-            return this.f912s;
+            return this.f956s;
         }
-        return this.f916w;
+        return this.f960w;
     }
 
     public int d(int i10) {
         TypedValue typedValue = new TypedValue();
-        this.f894a.getTheme().resolveAttribute(i10, typedValue, true);
+        this.f938a.getTheme().resolveAttribute(i10, typedValue, true);
         return typedValue.resourceId;
     }
 
     public ListView e() {
-        return this.f900g;
+        return this.f944g;
     }
 
     public void f() {
-        this.f895b.setContentView(j());
+        this.f939b.setContentView(j());
         y();
     }
 
@@ -959,21 +959,21 @@ public class AlertController {
         if (i10 != -3) {
             if (i10 != -2) {
                 if (i10 == -1) {
-                    this.f909p = charSequence;
-                    this.f910q = message;
-                    this.f911r = drawable;
+                    this.f953p = charSequence;
+                    this.f954q = message;
+                    this.f955r = drawable;
                     return;
                 }
                 throw new IllegalArgumentException("Button does not exist");
             }
-            this.f913t = charSequence;
-            this.f914u = message;
-            this.f915v = drawable;
+            this.f957t = charSequence;
+            this.f958u = message;
+            this.f959v = drawable;
             return;
         }
-        this.f917x = charSequence;
-        this.f918y = message;
-        this.f919z = drawable;
+        this.f961x = charSequence;
+        this.f962y = message;
+        this.f963z = drawable;
     }
 
     public void l(View view) {
@@ -1009,7 +1009,7 @@ public class AlertController {
     }
 
     public void o(CharSequence charSequence) {
-        this.f899f = charSequence;
+        this.f943f = charSequence;
         TextView textView = this.F;
         if (textView != null) {
             textView.setText(charSequence);
@@ -1017,7 +1017,7 @@ public class AlertController {
     }
 
     public void q(CharSequence charSequence) {
-        this.f898e = charSequence;
+        this.f942e = charSequence;
         TextView textView = this.E;
         if (textView != null) {
             textView.setText(charSequence);
@@ -1025,24 +1025,24 @@ public class AlertController {
     }
 
     public void r(int i10) {
-        this.f901h = null;
-        this.f902i = i10;
-        this.f907n = false;
+        this.f945h = null;
+        this.f946i = i10;
+        this.f951n = false;
     }
 
     public void s(View view) {
-        this.f901h = view;
-        this.f902i = 0;
-        this.f907n = false;
+        this.f945h = view;
+        this.f946i = 0;
+        this.f951n = false;
     }
 
     public void t(View view, int i10, int i11, int i12, int i13) {
-        this.f901h = view;
-        this.f902i = 0;
-        this.f907n = true;
-        this.f903j = i10;
-        this.f904k = i11;
-        this.f905l = i12;
-        this.f906m = i13;
+        this.f945h = view;
+        this.f946i = 0;
+        this.f951n = true;
+        this.f947j = i10;
+        this.f948k = i11;
+        this.f949l = i12;
+        this.f950m = i13;
     }
 }

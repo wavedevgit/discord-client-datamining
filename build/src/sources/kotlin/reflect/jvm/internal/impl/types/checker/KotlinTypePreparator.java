@@ -1,8 +1,8 @@
 package kotlin.reflect.jvm.internal.impl.types.checker;
 
-import ir.p;
 import java.util.ArrayList;
 import java.util.Collection;
+import jr.p;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.FunctionReferenceImpl;

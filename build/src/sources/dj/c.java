@@ -12,10 +12,10 @@ import org.json.JSONObject;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private File f22211a;
+    private File f21787a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e f22212b;
+    private final e f21788b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public enum a {
@@ -27,22 +27,22 @@ public class c {
     }
 
     public c(e eVar) {
-        this.f22212b = eVar;
+        this.f21788b = eVar;
     }
 
     private File a() {
-        if (this.f22211a == null) {
+        if (this.f21787a == null) {
             synchronized (this) {
                 try {
-                    if (this.f22211a == null) {
-                        File filesDir = this.f22212b.j().getFilesDir();
-                        this.f22211a = new File(filesDir, "PersistedInstallation." + this.f22212b.n() + ".json");
+                    if (this.f21787a == null) {
+                        File filesDir = this.f21788b.j().getFilesDir();
+                        this.f21787a = new File(filesDir, "PersistedInstallation." + this.f21788b.n() + ".json");
                     }
                 } finally {
                 }
             }
         }
-        return this.f22211a;
+        return this.f21787a;
     }
 
     private JSONObject c() {
@@ -75,7 +75,7 @@ public class c {
             jSONObject.put("TokenCreationEpochInSecs", dVar.h());
             jSONObject.put("ExpiresInSecs", dVar.c());
             jSONObject.put("FisError", dVar.e());
-            createTempFile = File.createTempFile("PersistedInstallation", "tmp", this.f22212b.j().getFilesDir());
+            createTempFile = File.createTempFile("PersistedInstallation", "tmp", this.f21788b.j().getFilesDir());
             FileOutputStream fileOutputStream = new FileOutputStream(createTempFile);
             fileOutputStream.write(jSONObject.toString().getBytes("UTF-8"));
             fileOutputStream.close();

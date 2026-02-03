@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'flush';
         var0.key = var5;
         var4 = function() {
-            _fun41137: for (var _fun41137_ip = 0;;) switch (_fun41137_ip) {
+            _fun41227: for (var _fun41227_ip = 0;;) switch (_fun41227_ip) {
                 case 0:
                     var4 = this;
                     var0 = var4.queue;
@@ -62,16 +62,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var2 = null;
                     if (!(var1 > var3)) {
-                        _fun41137_ip = 63;
-                        continue _fun41137
+                        _fun41227_ip = 63;
+                        continue _fun41227
                     }
                 case 24:
                     var5 = var4.queue;
                     var1 = var5.shift;
                     var1 = var1.bind(var5)();
                     if (!(var2 != var1)) {
-                        _fun41137_ip = 48;
-                        continue _fun41137
+                        _fun41227_ip = 48;
+                        continue _fun41227
                     }
                 case 44:
                     var1 = var1.bind(var0)();
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var4.queue;
                     var1 = var1.length;
                     if (var1 > var3) {
-                        _fun41137_ip = 24;
-                        continue _fun41137
+                        _fun41227_ip = 24;
+                        continue _fun41227
                     }
                 case 63:
                     return var0;

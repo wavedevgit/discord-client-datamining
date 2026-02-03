@@ -1,258 +1,219 @@
 package fn;
 
-import android.animation.Animator;
-import com.swmansion.rnscreens.ScreenStackFragmentWrapper;
-import kotlin.enums.EnumEntries;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import android.animation.ValueAnimator;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.fragment.app.Fragment;
+import com.facebook.react.uimanager.ThemedReactContext;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.swmansion.rnscreens.Screen;
+import com.swmansion.rnscreens.n0;
+import fn.e;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e implements Animator.AnimatorListener {
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final b f25256e = new b(null);
+public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ScreenStackFragmentWrapper f25257a;
+    private final ThemedReactContext f24493a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i f25258b;
+    private final b f24494b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a f25259c;
+    private final float f24495c;
 
     /* renamed from: d  reason: collision with root package name */
-    private c f25260d;
+    private BottomSheetBehavior.g f24496d;
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a {
+    public static final class a extends BottomSheetBehavior.g {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final Screen f24497a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final View f24498b;
+
+        /* renamed from: c  reason: collision with root package name */
+        private final float f24499c;
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f25261d = new a("ENTER", 0);
+        private float f24500d;
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f25262e = new a("EXIT", 1);
+        private float f24501e;
 
-        /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ a[] f25263i;
+        /* renamed from: f  reason: collision with root package name */
+        private float f24502f;
 
-        /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f25264o;
+        /* renamed from: g  reason: collision with root package name */
+        private final ValueAnimator f24503g;
 
-        static {
-            a[] a10 = a();
-            f25263i = a10;
-            f25264o = pr.a.a(a10);
+        public a(Screen screen, View viewToAnimate, float f10) {
+            Intrinsics.checkNotNullParameter(screen, "screen");
+            Intrinsics.checkNotNullParameter(viewToAnimate, "viewToAnimate");
+            this.f24497a = screen;
+            this.f24498b = viewToAnimate;
+            this.f24499c = f10;
+            this.f24500d = f(screen.getSheetLargestUndimmedDetentIndex());
+            float f11 = f(kotlin.ranges.d.m(screen.getSheetLargestUndimmedDetentIndex() + 1, 0, screen.getSheetDetents().size() - 1));
+            this.f24501e = f11;
+            this.f24502f = f11 - this.f24500d;
+            ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, f10);
+            ofFloat.setDuration(1L);
+            ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: fn.d
+                @Override // android.animation.ValueAnimator.AnimatorUpdateListener
+                public final void onAnimationUpdate(ValueAnimator valueAnimator) {
+                    e.a.e(e.a.this, valueAnimator);
+                }
+            });
+            this.f24503g = ofFloat;
         }
 
-        private a(String str, int i10) {
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final void e(a aVar, ValueAnimator it) {
+            Intrinsics.checkNotNullParameter(it, "it");
+            View view = aVar.f24498b;
+            Object animatedValue = it.getAnimatedValue();
+            Intrinsics.checkNotNull(animatedValue, "null cannot be cast to non-null type kotlin.Float");
+            view.setAlpha(((Float) animatedValue).floatValue());
         }
 
-        private static final /* synthetic */ a[] a() {
-            return new a[]{f25261d, f25262e};
+        private final float f(int i10) {
+            int size = this.f24497a.getSheetDetents().size();
+            if (size != 1) {
+                if (size != 2) {
+                    if (size != 3 || i10 == -1) {
+                        return -1.0f;
+                    }
+                    if (i10 == 0) {
+                        return 0.0f;
+                    }
+                    if (i10 != 1) {
+                        if (i10 == 2) {
+                            return 1.0f;
+                        }
+                        return -1.0f;
+                    }
+                    BottomSheetBehavior<Screen> sheetBehavior = this.f24497a.getSheetBehavior();
+                    Intrinsics.checkNotNull(sheetBehavior);
+                    return sheetBehavior.t0();
+                } else if (i10 == -1) {
+                    return -1.0f;
+                } else {
+                    if (i10 == 0) {
+                        return 0.0f;
+                    }
+                    if (i10 == 1) {
+                        return 1.0f;
+                    }
+                    return -1.0f;
+                }
+            } else if (i10 != -1 && i10 == 0) {
+                return 1.0f;
+            } else {
+                return -1.0f;
+            }
         }
 
-        public static a valueOf(String str) {
-            return (a) Enum.valueOf(a.class, str);
+        @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
+        public void b(View bottomSheet, float f10) {
+            Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
+            float f11 = this.f24500d;
+            if (f11 < f10 && f10 < this.f24501e) {
+                this.f24503g.setCurrentFraction((f10 - f11) / this.f24502f);
+            }
         }
 
-        public static a[] values() {
-            return (a[]) f25263i.clone();
+        @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
+        public void c(View bottomSheet, int i10) {
+            Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
+            if (i10 != 1 && i10 != 2) {
+                return;
+            }
+            this.f24500d = f(this.f24497a.getSheetLargestUndimmedDetentIndex());
+            float f10 = f(kotlin.ranges.d.m(this.f24497a.getSheetLargestUndimmedDetentIndex() + 1, 0, this.f24497a.getSheetDetents().size() - 1));
+            this.f24501e = f10;
+            this.f24502f = f10 - this.f24500d;
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class b {
-        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    public e(ThemedReactContext reactContext, Screen screen) {
+        Intrinsics.checkNotNullParameter(reactContext, "reactContext");
+        Intrinsics.checkNotNullParameter(screen, "screen");
+        this.f24493a = reactContext;
+        this.f24494b = b(screen);
+        this.f24495c = 0.3f;
+    }
 
-        private b() {
-        }
+    private final b b(final Screen screen) {
+        b bVar = new b(this.f24493a, this.f24495c);
+        bVar.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
+        bVar.setOnClickListener(new View.OnClickListener() { // from class: fn.c
+            @Override // android.view.View.OnClickListener
+            public final void onClick(View view) {
+                e.c(Screen.this, view);
+            }
+        });
+        return bVar;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class c {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final c f25265d = new c("INITIALIZED", 0);
-
-        /* renamed from: e  reason: collision with root package name */
-        public static final c f25266e = new c("START_DISPATCHED", 1);
-
-        /* renamed from: i  reason: collision with root package name */
-        public static final c f25267i = new c("END_DISPATCHED", 2);
-
-        /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ c[] f25268o;
-
-        /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f25269p;
-
-        static {
-            c[] a10 = a();
-            f25268o = a10;
-            f25269p = pr.a.a(a10);
-        }
-
-        private c(String str, int i10) {
-        }
-
-        private static final /* synthetic */ c[] a() {
-            return new c[]{f25265d, f25266e, f25267i};
-        }
-
-        public static c valueOf(String str) {
-            return (c) Enum.valueOf(c.class, str);
-        }
-
-        public static c[] values() {
-            return (c[]) f25268o.clone();
+    public static final void c(Screen screen, View view) {
+        if (screen.getSheetClosesOnTouchOutside()) {
+            Fragment fragment = screen.getFragment();
+            Intrinsics.checkNotNull(fragment, "null cannot be cast to non-null type com.swmansion.rnscreens.ScreenStackFragment");
+            ((n0) fragment).W();
         }
     }
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public /* synthetic */ class d {
+    private final BottomSheetBehavior.g i(Screen screen, boolean z10) {
+        if (this.f24496d == null || z10) {
+            this.f24496d = new a(screen, this.f24494b, this.f24495c);
+        }
+        BottomSheetBehavior.g gVar = this.f24496d;
+        Intrinsics.checkNotNull(gVar);
+        return gVar;
+    }
 
-        /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f25270a;
+    public final b d() {
+        return this.f24494b;
+    }
 
-        /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f25271b;
+    public final float e() {
+        return this.f24495c;
+    }
 
-        static {
-            int[] iArr = new int[c.values().length];
-            try {
-                iArr[c.f25265d.ordinal()] = 1;
-            } catch (NoSuchFieldError unused) {
-            }
-            try {
-                iArr[c.f25266e.ordinal()] = 2;
-            } catch (NoSuchFieldError unused2) {
-            }
-            try {
-                iArr[c.f25267i.ordinal()] = 3;
-            } catch (NoSuchFieldError unused3) {
-            }
-            f25270a = iArr;
-            int[] iArr2 = new int[a.values().length];
-            try {
-                iArr2[a.f25261d.ordinal()] = 1;
-            } catch (NoSuchFieldError unused4) {
-            }
-            try {
-                iArr2[a.f25262e.ordinal()] = 2;
-            } catch (NoSuchFieldError unused5) {
-            }
-            f25271b = iArr2;
+    public final void f(BottomSheetBehavior bottomSheetBehavior) {
+        BottomSheetBehavior.g gVar = this.f24496d;
+        if (gVar != null && bottomSheetBehavior != null) {
+            bottomSheetBehavior.G0(gVar);
         }
     }
 
-    public e(ScreenStackFragmentWrapper wrapper, i iVar, a animationType) {
-        Intrinsics.checkNotNullParameter(wrapper, "wrapper");
-        Intrinsics.checkNotNullParameter(animationType, "animationType");
-        this.f25257a = wrapper;
-        this.f25258b = iVar;
-        this.f25259c = animationType;
-        this.f25260d = c.f25265d;
+    public final void g(Screen screen, BottomSheetBehavior behavior) {
+        Intrinsics.checkNotNullParameter(screen, "screen");
+        Intrinsics.checkNotNullParameter(behavior, "behavior");
+        behavior.c0(i(screen, true));
     }
 
-    private final void a() {
-        c cVar;
-        int i10 = d.f25270a[this.f25260d.ordinal()];
-        if (i10 != 1) {
-            if (i10 != 2) {
-                if (i10 == 3) {
-                    cVar = c.f25267i;
-                } else {
-                    throw new ir.p();
-                }
-            } else {
-                cVar = c.f25267i;
-            }
+    public final void h(Screen screen, ViewGroup root) {
+        Intrinsics.checkNotNullParameter(screen, "screen");
+        Intrinsics.checkNotNullParameter(root, "root");
+        root.addView(this.f24494b, 0);
+        if (!j(screen, screen.getSheetInitialDetentIndex())) {
+            this.f24494b.setAlpha(0.0f);
         } else {
-            cVar = c.f25266e;
-        }
-        this.f25260d = cVar;
-    }
-
-    @Override // android.animation.Animator.AnimatorListener
-    public void onAnimationCancel(Animator animation) {
-        Intrinsics.checkNotNullParameter(animation, "animation");
-    }
-
-    @Override // android.animation.Animator.AnimatorListener
-    public void onAnimationEnd(Animator animation) {
-        Intrinsics.checkNotNullParameter(animation, "animation");
-        if (this.f25260d == c.f25266e) {
-            a();
-            animation.removeListener(this);
-            int i10 = d.f25271b[this.f25259c.ordinal()];
-            boolean z10 = true;
-            if (i10 != 1) {
-                if (i10 == 2) {
-                    i iVar = this.f25258b;
-                    if (iVar != null) {
-                        iVar.b();
-                    }
-                } else {
-                    throw new ir.p();
-                }
-            } else {
-                i iVar2 = this.f25258b;
-                if (iVar2 != null) {
-                    iVar2.a();
-                }
-            }
-            if (this.f25259c != a.f25262e) {
-                z10 = false;
-            }
-            i iVar3 = this.f25258b;
-            if (iVar3 != null) {
-                iVar3.e(1.0f, z10, z10);
-            }
-            this.f25257a.h().endRemovalTransition();
+            this.f24494b.setAlpha(this.f24495c);
         }
     }
 
-    @Override // android.animation.Animator.AnimatorListener
-    public void onAnimationRepeat(Animator animation) {
-        Intrinsics.checkNotNullParameter(animation, "animation");
-    }
-
-    @Override // android.animation.Animator.AnimatorListener
-    public void onAnimationStart(Animator animation) {
-        Intrinsics.checkNotNullParameter(animation, "animation");
-        if (this.f25260d == c.f25265d) {
-            a();
-            int i10 = d.f25271b[this.f25259c.ordinal()];
-            boolean z10 = true;
-            if (i10 != 1) {
-                if (i10 == 2) {
-                    i iVar = this.f25258b;
-                    if (iVar != null) {
-                        iVar.d();
-                    }
-                } else {
-                    throw new ir.p();
-                }
-            } else {
-                i iVar2 = this.f25258b;
-                if (iVar2 != null) {
-                    iVar2.c();
-                }
-            }
-            if (this.f25259c != a.f25262e) {
-                z10 = false;
-            }
-            i iVar3 = this.f25258b;
-            if (iVar3 != null) {
-                iVar3.e(0.0f, z10, z10);
-            }
+    public final boolean j(Screen screen, int i10) {
+        Intrinsics.checkNotNullParameter(screen, "screen");
+        if (i10 > screen.getSheetLargestUndimmedDetentIndex()) {
+            return true;
         }
+        return false;
     }
 }

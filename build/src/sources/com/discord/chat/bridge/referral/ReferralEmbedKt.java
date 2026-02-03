@@ -1,6 +1,6 @@
 package com.discord.chat.bridge.referral;
 
-import bt.h;
+import ct.h;
 import kotlin.Metadata;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;

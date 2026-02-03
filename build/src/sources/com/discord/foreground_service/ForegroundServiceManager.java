@@ -18,12 +18,12 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.PromiseImpl;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewProps;
-import ir.p;
 import java.lang.ref.WeakReference;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.NoSuchElementException;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.o0;
@@ -299,7 +299,7 @@ public final class ForegroundServiceManager {
                 return handleCreateOrUpdateService$lambda$6$lambda$5;
             }
         });
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -309,7 +309,7 @@ public final class ForegroundServiceManager {
         ForegroundServiceManager foregroundServiceManager = INSTANCE;
         log.w$foreground_service_release("Unable to start service", foregroundServiceManager.telemetryData(ViewProps.START, "start_failed", "create_or_update", type, Boolean.valueOf(result.getAllowed()), result.getReason()), e10);
         foregroundServiceManager.onCreateOrUpdateServiceFailed();
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -318,7 +318,7 @@ public final class ForegroundServiceManager {
         ForegroundServiceManager foregroundServiceManager = INSTANCE;
         Log.w$foreground_service_release$default(log, "Couldn't start ForegroundService", foregroundServiceManager.telemetryData(ViewProps.START, "permission_rejected", "create_or_update", type, Boolean.valueOf(result.getAllowed()), result.getReason()), null, 4, null);
         foregroundServiceManager.onCreateOrUpdateServiceFailed();
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void handleDestroyService(ForegroundServiceOperation.Destroy destroy) {
@@ -417,7 +417,7 @@ public final class ForegroundServiceManager {
             return null;
         }
         genericAction.onNotificationAction(context, false);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     public final synchronized boolean isRunning$foreground_service_release() {

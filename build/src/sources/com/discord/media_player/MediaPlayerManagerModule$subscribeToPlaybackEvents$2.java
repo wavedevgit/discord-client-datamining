@@ -49,7 +49,7 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$2 extends k imple
             ReactEvents reactEvents;
             ReactApplicationContext reactApplicationContext;
             MediaPlayerPlaybackSource mediaPlayerPlaybackSource;
-            or.b.f();
+            pr.b.f();
             if (this.label == 0) {
                 kotlin.c.b(obj);
                 Pair pair = (Pair) this.L$0;
@@ -63,14 +63,14 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$2 extends k imple
                     mediaPlayerPlaybackSource = null;
                 }
                 reactEvents.emitModuleEvent(reactApplicationContext, new MediaPlayerPlaybackRateChanged(mediaPlayerPlaybackSource, doubleValue));
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(Pair<MediaSource, Double> pair, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(pair, continuation)).invokeSuspend(Unit.f33298a);
+            return ((AnonymousClass1) create(pair, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
@@ -88,7 +88,7 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$2 extends k imple
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        Object f10 = or.b.f();
+        Object f10 = pr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -101,15 +101,15 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$2 extends k imple
             MutableStateFlow playbackRateFlow$media_player_release = MediaPlayerManager.INSTANCE.getPlaybackRateFlow$media_player_release();
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.this$0, null);
             this.label = 1;
-            if (js.g.i(playbackRateFlow$media_player_release, anonymousClass1, this) == f10) {
+            if (ks.g.i(playbackRateFlow$media_player_release, anonymousClass1, this) == f10) {
                 return f10;
             }
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManagerModule$subscribeToPlaybackEvents$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((MediaPlayerManagerModule$subscribeToPlaybackEvents$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

@@ -19,19 +19,19 @@ public final class SafetySystemNotificationMessageAccessory extends MessageAcces
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ SafetySystemNotificationMessageAccessory m649copyntcYbpo$default(SafetySystemNotificationMessageAccessory safetySystemNotificationMessageAccessory, String str, SafetySystemNotificationEmbed safetySystemNotificationEmbed, int i10, Object obj) {
+    public static /* synthetic */ SafetySystemNotificationMessageAccessory m651copyntcYbpo$default(SafetySystemNotificationMessageAccessory safetySystemNotificationMessageAccessory, String str, SafetySystemNotificationEmbed safetySystemNotificationEmbed, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = safetySystemNotificationMessageAccessory.messageId;
         }
         if ((i10 & 2) != 0) {
             safetySystemNotificationEmbed = safetySystemNotificationMessageAccessory.safetySystemNotificationEmbed;
         }
-        return safetySystemNotificationMessageAccessory.m651copyntcYbpo(str, safetySystemNotificationEmbed);
+        return safetySystemNotificationMessageAccessory.m653copyntcYbpo(str, safetySystemNotificationEmbed);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m650component13Eiw7ao() {
+    public final String m652component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -42,7 +42,7 @@ public final class SafetySystemNotificationMessageAccessory extends MessageAcces
 
     @NotNull
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final SafetySystemNotificationMessageAccessory m651copyntcYbpo(@NotNull String messageId, @NotNull SafetySystemNotificationEmbed safetySystemNotificationEmbed) {
+    public final SafetySystemNotificationMessageAccessory m653copyntcYbpo(@NotNull String messageId, @NotNull SafetySystemNotificationEmbed safetySystemNotificationEmbed) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(safetySystemNotificationEmbed, "safetySystemNotificationEmbed");
         return new SafetySystemNotificationMessageAccessory(messageId, safetySystemNotificationEmbed, null);
@@ -54,7 +54,7 @@ public final class SafetySystemNotificationMessageAccessory extends MessageAcces
         }
         if (obj instanceof SafetySystemNotificationMessageAccessory) {
             SafetySystemNotificationMessageAccessory safetySystemNotificationMessageAccessory = (SafetySystemNotificationMessageAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, safetySystemNotificationMessageAccessory.messageId) && Intrinsics.areEqual(this.safetySystemNotificationEmbed, safetySystemNotificationMessageAccessory.safetySystemNotificationEmbed);
+            return MessageId.m1090equalsimpl0(this.messageId, safetySystemNotificationMessageAccessory.messageId) && Intrinsics.areEqual(this.safetySystemNotificationEmbed, safetySystemNotificationMessageAccessory.safetySystemNotificationEmbed);
         }
         return false;
     }
@@ -62,7 +62,7 @@ public final class SafetySystemNotificationMessageAccessory extends MessageAcces
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -72,14 +72,14 @@ public final class SafetySystemNotificationMessageAccessory extends MessageAcces
     }
 
     public int hashCode() {
-        return (MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.safetySystemNotificationEmbed.hashCode();
+        return (MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.safetySystemNotificationEmbed.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         SafetySystemNotificationEmbed safetySystemNotificationEmbed = this.safetySystemNotificationEmbed;
-        return "SafetySystemNotificationMessageAccessory(messageId=" + m1091toStringimpl + ", safetySystemNotificationEmbed=" + safetySystemNotificationEmbed + ")";
+        return "SafetySystemNotificationMessageAccessory(messageId=" + m1093toStringimpl + ", safetySystemNotificationEmbed=" + safetySystemNotificationEmbed + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

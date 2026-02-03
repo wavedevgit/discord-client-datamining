@@ -8,46 +8,46 @@ public abstract class h {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f42492a;
+        private final String f42620a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final C0531a f42493b;
+        private final C0539a f42621b;
 
         /* renamed from: c  reason: collision with root package name */
-        private C0531a f42494c;
+        private C0539a f42622c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f42495d;
+        private boolean f42623d;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* renamed from: o8.h$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static final class C0531a {
+        public static final class C0539a {
 
             /* renamed from: a  reason: collision with root package name */
-            String f42496a;
+            String f42624a;
 
             /* renamed from: b  reason: collision with root package name */
-            Object f42497b;
+            Object f42625b;
 
             /* renamed from: c  reason: collision with root package name */
-            C0531a f42498c;
+            C0539a f42626c;
 
-            private C0531a() {
+            private C0539a() {
             }
         }
 
-        private C0531a d() {
-            C0531a c0531a = new C0531a();
-            this.f42494c.f42498c = c0531a;
-            this.f42494c = c0531a;
-            return c0531a;
+        private C0539a d() {
+            C0539a c0539a = new C0539a();
+            this.f42622c.f42626c = c0539a;
+            this.f42622c = c0539a;
+            return c0539a;
         }
 
         private a e(String str, Object obj) {
-            C0531a d10 = d();
-            d10.f42497b = obj;
-            d10.f42496a = (String) j.g(str);
+            C0539a d10 = d();
+            d10.f42625b = obj;
+            d10.f42624a = (String) j.g(str);
             return this;
         }
 
@@ -64,16 +64,16 @@ public abstract class h {
         }
 
         public String toString() {
-            boolean z10 = this.f42495d;
+            boolean z10 = this.f42623d;
             StringBuilder sb2 = new StringBuilder(32);
-            sb2.append(this.f42492a);
+            sb2.append(this.f42620a);
             sb2.append('{');
             String str = "";
-            for (C0531a c0531a = this.f42493b.f42498c; c0531a != null; c0531a = c0531a.f42498c) {
-                Object obj = c0531a.f42497b;
+            for (C0539a c0539a = this.f42621b.f42626c; c0539a != null; c0539a = c0539a.f42626c) {
+                Object obj = c0539a.f42625b;
                 if (!z10 || obj != null) {
                     sb2.append(str);
-                    String str2 = c0531a.f42496a;
+                    String str2 = c0539a.f42624a;
                     if (str2 != null) {
                         sb2.append(str2);
                         sb2.append('=');
@@ -92,11 +92,11 @@ public abstract class h {
         }
 
         private a(String str) {
-            C0531a c0531a = new C0531a();
-            this.f42493b = c0531a;
-            this.f42494c = c0531a;
-            this.f42495d = false;
-            this.f42492a = (String) j.g(str);
+            C0539a c0539a = new C0539a();
+            this.f42621b = c0539a;
+            this.f42622c = c0539a;
+            this.f42623d = false;
+            this.f42620a = (String) j.g(str);
         }
     }
 

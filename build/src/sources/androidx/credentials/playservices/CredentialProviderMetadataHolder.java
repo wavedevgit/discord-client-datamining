@@ -11,7 +11,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class CredentialProviderMetadataHolder extends Service {
 
     /* renamed from: d  reason: collision with root package name */
-    private final a f3493d = new a();
+    private final a f3537d = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public final class a extends Binder {
@@ -22,6 +22,6 @@ public final class CredentialProviderMetadataHolder extends Service {
     @Override // android.app.Service
     public IBinder onBind(Intent intent) {
         Intrinsics.checkNotNullParameter(intent, "intent");
-        return this.f3493d;
+        return this.f3537d;
     }
 }

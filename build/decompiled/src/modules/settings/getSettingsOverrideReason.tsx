@@ -7,21 +7,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var3 = function arg0() {
-        _fun84788: for (var _fun84788_ip = 0;;) switch (_fun84788_ip) {
+        _fun85159: for (var _fun85159_ip = 0;;) switch (_fun85159_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot3;
                 var1 = var1.REDUCED_MOTION;
                 if (!(var1 !== var2)) {
-                    _fun84788_ip = 99;
-                    continue _fun84788
+                    _fun85159_ip = 99;
+                    continue _fun85159
                 }
             case 20:
                 var1 = _closure1_slot3;
                 var1 = var1.REDUCED_MOTION_STICKERS;
                 if (!(var1 !== var2)) {
-                    _fun84788_ip = 38;
-                    continue _fun84788
+                    _fun85159_ip = 38;
+                    continue _fun85159
                 }
             case 34:
                 var1 = undefined;

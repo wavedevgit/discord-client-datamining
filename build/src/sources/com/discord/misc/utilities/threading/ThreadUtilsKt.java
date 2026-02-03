@@ -2,9 +2,9 @@ package com.discord.misc.utilities.threading;
 
 import android.os.Handler;
 import android.os.Looper;
-import ir.l;
-import ir.o;
 import java.util.concurrent.Executor;
+import jr.l;
+import jr.o;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -15,7 +15,7 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class ThreadUtilsKt {
     @NotNull
-    private static final Lazy uiHandler$delegate = l.a(o.f31119e, new Function0() { // from class: com.discord.misc.utilities.threading.a
+    private static final Lazy uiHandler$delegate = l.a(o.f32182e, new Function0() { // from class: com.discord.misc.utilities.threading.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Handler uiHandler_delegate$lambda$0;

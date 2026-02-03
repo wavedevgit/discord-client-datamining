@@ -58,15 +58,15 @@ public final class InputInternationalDb_InputInternationalDbComponentStyleJsonAd
         InputTextBasedComponentStyle inputTextBasedComponentStyle = null;
         TextBasedComponentStyle textBasedComponentStyle = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 inputSelectComponentStyle = (InputSelectComponentStyle) this.nullableInputSelectComponentStyleAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 inputTextBasedComponentStyle = (InputTextBasedComponentStyle) this.nullableInputTextBasedComponentStyleAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 textBasedComponentStyle = (TextBasedComponentStyle) this.nullableTextBasedComponentStyleAdapter.fromJson(reader);
             }
         }
@@ -79,11 +79,11 @@ public final class InputInternationalDb_InputInternationalDbComponentStyleJsonAd
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputInternationalDbComponentStyle != null) {
             writer.l();
-            writer.A0("inputSelectStyle");
+            writer.t0("inputSelectStyle");
             this.nullableInputSelectComponentStyleAdapter.toJson(writer, inputInternationalDbComponentStyle.getInputSelectStyle());
-            writer.A0("inputTextStyle");
+            writer.t0("inputTextStyle");
             this.nullableInputTextBasedComponentStyleAdapter.toJson(writer, inputInternationalDbComponentStyle.getInputTextStyle());
-            writer.A0("textStyle");
+            writer.t0("textStyle");
             this.nullableTextBasedComponentStyleAdapter.toJson(writer, inputInternationalDbComponentStyle.getTextStyle());
             writer.E();
             return;

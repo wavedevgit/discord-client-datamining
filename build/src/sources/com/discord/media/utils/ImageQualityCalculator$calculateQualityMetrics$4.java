@@ -36,7 +36,7 @@ public final class ImageQualityCalculator$calculateQualityMetrics$4 extends k im
         int[] iArr2;
         double calculatePSNR;
         double calculateSSIM;
-        or.b.f();
+        pr.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             try {
@@ -75,6 +75,6 @@ public final class ImageQualityCalculator$calculateQualityMetrics$4 extends k im
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super ImageQualityCalculator.ImageQualityMetrics> continuation) {
-        return ((ImageQualityCalculator$calculateQualityMetrics$4) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((ImageQualityCalculator$calculateQualityMetrics$4) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

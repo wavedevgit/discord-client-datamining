@@ -8,42 +8,42 @@ import java.util.Iterator;
 abstract class j extends AbstractCollection {
 
     /* renamed from: d  reason: collision with root package name */
-    final Object f45346d;
+    final Object f45420d;
 
     /* renamed from: e  reason: collision with root package name */
-    Collection f45347e;
+    Collection f45421e;
 
     /* renamed from: i  reason: collision with root package name */
-    final j f45348i;
+    final j f45422i;
 
     /* renamed from: o  reason: collision with root package name */
-    final Collection f45349o;
+    final Collection f45423o;
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ m f45350p;
+    final /* synthetic */ m f45424p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(m mVar, Object obj, Collection collection, j jVar) {
         Collection collection2;
-        this.f45350p = mVar;
-        this.f45346d = obj;
-        this.f45347e = collection;
-        this.f45348i = jVar;
+        this.f45424p = mVar;
+        this.f45420d = obj;
+        this.f45421e = collection;
+        this.f45422i = jVar;
         if (jVar == null) {
             collection2 = null;
         } else {
-            collection2 = jVar.f45347e;
+            collection2 = jVar.f45421e;
         }
-        this.f45349o = collection2;
+        this.f45423o = collection2;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean add(Object obj) {
         zzb();
-        boolean isEmpty = this.f45347e.isEmpty();
-        boolean add = this.f45347e.add(obj);
+        boolean isEmpty = this.f45421e.isEmpty();
+        boolean add = this.f45421e.add(obj);
         if (add) {
-            m mVar = this.f45350p;
+            m mVar = this.f45424p;
             m.m(mVar, m.i(mVar) + 1);
             if (isEmpty) {
                 b();
@@ -59,10 +59,10 @@ abstract class j extends AbstractCollection {
             return false;
         }
         int size = size();
-        boolean addAll = this.f45347e.addAll(collection);
+        boolean addAll = this.f45421e.addAll(collection);
         if (addAll) {
-            int size2 = this.f45347e.size();
-            m mVar = this.f45350p;
+            int size2 = this.f45421e.size();
+            m mVar = this.f45424p;
             m.m(mVar, m.i(mVar) + (size2 - size));
             if (size == 0) {
                 b();
@@ -75,23 +75,23 @@ abstract class j extends AbstractCollection {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void b() {
-        j jVar = this.f45348i;
+        j jVar = this.f45422i;
         if (jVar != null) {
             jVar.b();
             return;
         }
-        m mVar = this.f45350p;
-        m.l(mVar).put(this.f45346d, this.f45347e);
+        m mVar = this.f45424p;
+        m.l(mVar).put(this.f45420d, this.f45421e);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void c() {
-        j jVar = this.f45348i;
+        j jVar = this.f45422i;
         if (jVar != null) {
             jVar.c();
-        } else if (this.f45347e.isEmpty()) {
-            m mVar = this.f45350p;
-            m.l(mVar).remove(this.f45346d);
+        } else if (this.f45421e.isEmpty()) {
+            m mVar = this.f45424p;
+            m.l(mVar).remove(this.f45420d);
         }
     }
 
@@ -101,8 +101,8 @@ abstract class j extends AbstractCollection {
         if (size == 0) {
             return;
         }
-        this.f45347e.clear();
-        m mVar = this.f45350p;
+        this.f45421e.clear();
+        m mVar = this.f45424p;
         m.m(mVar, m.i(mVar) - size);
         c();
     }
@@ -110,13 +110,13 @@ abstract class j extends AbstractCollection {
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean contains(Object obj) {
         zzb();
-        return this.f45347e.contains(obj);
+        return this.f45421e.contains(obj);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean containsAll(Collection collection) {
         zzb();
-        return this.f45347e.containsAll(collection);
+        return this.f45421e.containsAll(collection);
     }
 
     @Override // java.util.Collection
@@ -125,13 +125,13 @@ abstract class j extends AbstractCollection {
             return true;
         }
         zzb();
-        return this.f45347e.equals(obj);
+        return this.f45421e.equals(obj);
     }
 
     @Override // java.util.Collection
     public final int hashCode() {
         zzb();
-        return this.f45347e.hashCode();
+        return this.f45421e.hashCode();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
@@ -143,9 +143,9 @@ abstract class j extends AbstractCollection {
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean remove(Object obj) {
         zzb();
-        boolean remove = this.f45347e.remove(obj);
+        boolean remove = this.f45421e.remove(obj);
         if (remove) {
-            m mVar = this.f45350p;
+            m mVar = this.f45424p;
             m.m(mVar, m.i(mVar) - 1);
             c();
         }
@@ -158,10 +158,10 @@ abstract class j extends AbstractCollection {
             return false;
         }
         int size = size();
-        boolean removeAll = this.f45347e.removeAll(collection);
+        boolean removeAll = this.f45421e.removeAll(collection);
         if (removeAll) {
-            int size2 = this.f45347e.size();
-            m mVar = this.f45350p;
+            int size2 = this.f45421e.size();
+            m mVar = this.f45424p;
             m.m(mVar, m.i(mVar) + (size2 - size));
             c();
         }
@@ -172,10 +172,10 @@ abstract class j extends AbstractCollection {
     public final boolean retainAll(Collection collection) {
         collection.getClass();
         int size = size();
-        boolean retainAll = this.f45347e.retainAll(collection);
+        boolean retainAll = this.f45421e.retainAll(collection);
         if (retainAll) {
-            int size2 = this.f45347e.size();
-            m mVar = this.f45350p;
+            int size2 = this.f45421e.size();
+            m mVar = this.f45424p;
             m.m(mVar, m.i(mVar) + (size2 - size));
             c();
         }
@@ -185,29 +185,29 @@ abstract class j extends AbstractCollection {
     @Override // java.util.AbstractCollection, java.util.Collection
     public final int size() {
         zzb();
-        return this.f45347e.size();
+        return this.f45421e.size();
     }
 
     @Override // java.util.AbstractCollection
     public final String toString() {
         zzb();
-        return this.f45347e.toString();
+        return this.f45421e.toString();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void zzb() {
-        j jVar = this.f45348i;
+        j jVar = this.f45422i;
         if (jVar != null) {
             jVar.zzb();
-            j jVar2 = this.f45348i;
-            if (jVar2.f45347e != this.f45349o) {
+            j jVar2 = this.f45422i;
+            if (jVar2.f45421e != this.f45423o) {
                 throw new ConcurrentModificationException();
             }
-        } else if (this.f45347e.isEmpty()) {
-            m mVar = this.f45350p;
-            Collection collection = (Collection) m.l(mVar).get(this.f45346d);
+        } else if (this.f45421e.isEmpty()) {
+            m mVar = this.f45424p;
+            Collection collection = (Collection) m.l(mVar).get(this.f45420d);
             if (collection != null) {
-                this.f45347e = collection;
+                this.f45421e = collection;
             }
         }
     }

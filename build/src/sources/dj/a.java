@@ -6,102 +6,102 @@ import dj.d;
 final class a extends d {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f22194b;
+    private final String f21770b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c.a f22195c;
+    private final c.a f21771c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f22196d;
+    private final String f21772d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f22197e;
+    private final String f21773e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final long f22198f;
+    private final long f21774f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final long f22199g;
+    private final long f21775g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f22200h;
+    private final String f21776h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class b extends d.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f22201a;
+        private String f21777a;
 
         /* renamed from: b  reason: collision with root package name */
-        private c.a f22202b;
+        private c.a f21778b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f22203c;
+        private String f21779c;
 
         /* renamed from: d  reason: collision with root package name */
-        private String f22204d;
+        private String f21780d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Long f22205e;
+        private Long f21781e;
 
         /* renamed from: f  reason: collision with root package name */
-        private Long f22206f;
+        private Long f21782f;
 
         /* renamed from: g  reason: collision with root package name */
-        private String f22207g;
+        private String f21783g;
 
         @Override // dj.d.a
         public d a() {
             String str = "";
-            if (this.f22202b == null) {
+            if (this.f21778b == null) {
                 str = " registrationStatus";
             }
-            if (this.f22205e == null) {
+            if (this.f21781e == null) {
                 str = str + " expiresInSecs";
             }
-            if (this.f22206f == null) {
+            if (this.f21782f == null) {
                 str = str + " tokenCreationEpochInSecs";
             }
             if (str.isEmpty()) {
-                return new a(this.f22201a, this.f22202b, this.f22203c, this.f22204d, this.f22205e.longValue(), this.f22206f.longValue(), this.f22207g);
+                return new a(this.f21777a, this.f21778b, this.f21779c, this.f21780d, this.f21781e.longValue(), this.f21782f.longValue(), this.f21783g);
             }
             throw new IllegalStateException("Missing required properties:" + str);
         }
 
         @Override // dj.d.a
         public d.a b(String str) {
-            this.f22203c = str;
+            this.f21779c = str;
             return this;
         }
 
         @Override // dj.d.a
         public d.a c(long j10) {
-            this.f22205e = Long.valueOf(j10);
+            this.f21781e = Long.valueOf(j10);
             return this;
         }
 
         @Override // dj.d.a
         public d.a d(String str) {
-            this.f22201a = str;
+            this.f21777a = str;
             return this;
         }
 
         @Override // dj.d.a
         public d.a e(String str) {
-            this.f22207g = str;
+            this.f21783g = str;
             return this;
         }
 
         @Override // dj.d.a
         public d.a f(String str) {
-            this.f22204d = str;
+            this.f21780d = str;
             return this;
         }
 
         @Override // dj.d.a
         public d.a g(c.a aVar) {
             if (aVar != null) {
-                this.f22202b = aVar;
+                this.f21778b = aVar;
                 return this;
             }
             throw new NullPointerException("Null registrationStatus");
@@ -109,7 +109,7 @@ final class a extends d {
 
         @Override // dj.d.a
         public d.a h(long j10) {
-            this.f22206f = Long.valueOf(j10);
+            this.f21782f = Long.valueOf(j10);
             return this;
         }
 
@@ -118,34 +118,34 @@ final class a extends d {
         }
 
         private b(d dVar) {
-            this.f22201a = dVar.d();
-            this.f22202b = dVar.g();
-            this.f22203c = dVar.b();
-            this.f22204d = dVar.f();
-            this.f22205e = Long.valueOf(dVar.c());
-            this.f22206f = Long.valueOf(dVar.h());
-            this.f22207g = dVar.e();
+            this.f21777a = dVar.d();
+            this.f21778b = dVar.g();
+            this.f21779c = dVar.b();
+            this.f21780d = dVar.f();
+            this.f21781e = Long.valueOf(dVar.c());
+            this.f21782f = Long.valueOf(dVar.h());
+            this.f21783g = dVar.e();
         }
     }
 
     @Override // dj.d
     public String b() {
-        return this.f22196d;
+        return this.f21772d;
     }
 
     @Override // dj.d
     public long c() {
-        return this.f22198f;
+        return this.f21774f;
     }
 
     @Override // dj.d
     public String d() {
-        return this.f22194b;
+        return this.f21770b;
     }
 
     @Override // dj.d
     public String e() {
-        return this.f22200h;
+        return this.f21776h;
     }
 
     public boolean equals(Object obj) {
@@ -157,9 +157,9 @@ final class a extends d {
         }
         if (obj instanceof d) {
             d dVar = (d) obj;
-            String str4 = this.f22194b;
+            String str4 = this.f21770b;
             if (str4 != null ? str4.equals(dVar.d()) : dVar.d() == null) {
-                if (this.f22195c.equals(dVar.g()) && ((str = this.f22196d) != null ? str.equals(dVar.b()) : dVar.b() == null) && ((str2 = this.f22197e) != null ? str2.equals(dVar.f()) : dVar.f() == null) && this.f22198f == dVar.c() && this.f22199g == dVar.h() && ((str3 = this.f22200h) != null ? str3.equals(dVar.e()) : dVar.e() == null)) {
+                if (this.f21771c.equals(dVar.g()) && ((str = this.f21772d) != null ? str.equals(dVar.b()) : dVar.b() == null) && ((str2 = this.f21773e) != null ? str2.equals(dVar.f()) : dVar.f() == null) && this.f21774f == dVar.c() && this.f21775g == dVar.h() && ((str3 = this.f21776h) != null ? str3.equals(dVar.e()) : dVar.e() == null)) {
                     return true;
                 }
             }
@@ -169,48 +169,48 @@ final class a extends d {
 
     @Override // dj.d
     public String f() {
-        return this.f22197e;
+        return this.f21773e;
     }
 
     @Override // dj.d
     public c.a g() {
-        return this.f22195c;
+        return this.f21771c;
     }
 
     @Override // dj.d
     public long h() {
-        return this.f22199g;
+        return this.f21775g;
     }
 
     public int hashCode() {
         int hashCode;
         int hashCode2;
         int hashCode3;
-        String str = this.f22194b;
+        String str = this.f21770b;
         int i10 = 0;
         if (str == null) {
             hashCode = 0;
         } else {
             hashCode = str.hashCode();
         }
-        int hashCode4 = (((hashCode ^ 1000003) * 1000003) ^ this.f22195c.hashCode()) * 1000003;
-        String str2 = this.f22196d;
+        int hashCode4 = (((hashCode ^ 1000003) * 1000003) ^ this.f21771c.hashCode()) * 1000003;
+        String str2 = this.f21772d;
         if (str2 == null) {
             hashCode2 = 0;
         } else {
             hashCode2 = str2.hashCode();
         }
         int i11 = (hashCode4 ^ hashCode2) * 1000003;
-        String str3 = this.f22197e;
+        String str3 = this.f21773e;
         if (str3 == null) {
             hashCode3 = 0;
         } else {
             hashCode3 = str3.hashCode();
         }
-        long j10 = this.f22198f;
-        long j11 = this.f22199g;
+        long j10 = this.f21774f;
+        long j11 = this.f21775g;
         int i12 = (((((i11 ^ hashCode3) * 1000003) ^ ((int) (j10 ^ (j10 >>> 32)))) * 1000003) ^ ((int) (j11 ^ (j11 >>> 32)))) * 1000003;
-        String str4 = this.f22200h;
+        String str4 = this.f21776h;
         if (str4 != null) {
             i10 = str4.hashCode();
         }
@@ -223,16 +223,16 @@ final class a extends d {
     }
 
     public String toString() {
-        return "PersistedInstallationEntry{firebaseInstallationId=" + this.f22194b + ", registrationStatus=" + this.f22195c + ", authToken=" + this.f22196d + ", refreshToken=" + this.f22197e + ", expiresInSecs=" + this.f22198f + ", tokenCreationEpochInSecs=" + this.f22199g + ", fisError=" + this.f22200h + "}";
+        return "PersistedInstallationEntry{firebaseInstallationId=" + this.f21770b + ", registrationStatus=" + this.f21771c + ", authToken=" + this.f21772d + ", refreshToken=" + this.f21773e + ", expiresInSecs=" + this.f21774f + ", tokenCreationEpochInSecs=" + this.f21775g + ", fisError=" + this.f21776h + "}";
     }
 
     private a(String str, c.a aVar, String str2, String str3, long j10, long j11, String str4) {
-        this.f22194b = str;
-        this.f22195c = aVar;
-        this.f22196d = str2;
-        this.f22197e = str3;
-        this.f22198f = j10;
-        this.f22199g = j11;
-        this.f22200h = str4;
+        this.f21770b = str;
+        this.f21771c = aVar;
+        this.f21772d = str2;
+        this.f21773e = str3;
+        this.f21774f = j10;
+        this.f21775g = j11;
+        this.f21776h = str4;
     }
 }

@@ -3,21 +3,21 @@ package sa;
 public class n implements o {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final o f48905d = d(Integer.MAX_VALUE, true, true);
+    public static final o f48959d = d(Integer.MAX_VALUE, true, true);
 
     /* renamed from: a  reason: collision with root package name */
-    int f48906a;
+    int f48960a;
 
     /* renamed from: b  reason: collision with root package name */
-    boolean f48907b;
+    boolean f48961b;
 
     /* renamed from: c  reason: collision with root package name */
-    boolean f48908c;
+    boolean f48962c;
 
     private n(int i10, boolean z10, boolean z11) {
-        this.f48906a = i10;
-        this.f48907b = z10;
-        this.f48908c = z11;
+        this.f48960a = i10;
+        this.f48961b = z10;
+        this.f48962c = z11;
     }
 
     public static o d(int i10, boolean z10, boolean z11) {
@@ -26,17 +26,17 @@ public class n implements o {
 
     @Override // sa.o
     public boolean a() {
-        return this.f48908c;
+        return this.f48962c;
     }
 
     @Override // sa.o
     public boolean b() {
-        return this.f48907b;
+        return this.f48961b;
     }
 
     @Override // sa.o
     public int c() {
-        return this.f48906a;
+        return this.f48960a;
     }
 
     public boolean equals(Object obj) {
@@ -47,7 +47,7 @@ public class n implements o {
             return false;
         }
         n nVar = (n) obj;
-        if (this.f48906a == nVar.f48906a && this.f48907b == nVar.f48907b && this.f48908c == nVar.f48908c) {
+        if (this.f48960a == nVar.f48960a && this.f48961b == nVar.f48961b && this.f48962c == nVar.f48962c) {
             return true;
         }
         return false;
@@ -55,15 +55,15 @@ public class n implements o {
 
     public int hashCode() {
         int i10;
-        int i11 = this.f48906a;
+        int i11 = this.f48960a;
         int i12 = 0;
-        if (this.f48907b) {
+        if (this.f48961b) {
             i10 = 4194304;
         } else {
             i10 = 0;
         }
         int i13 = i11 ^ i10;
-        if (this.f48908c) {
+        if (this.f48962c) {
             i12 = 8388608;
         }
         return i13 ^ i12;

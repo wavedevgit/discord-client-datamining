@@ -5,7 +5,7 @@ import j$.time.Instant;
 public final class s6 extends j5 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Instant f30724d;
+    private final Instant f30290d;
 
     public s6() {
         this(Instant.now());
@@ -13,10 +13,10 @@ public final class s6 extends j5 {
 
     @Override // io.sentry.j5
     public long h() {
-        return k.n(this.f30724d.getEpochSecond()) + this.f30724d.getNano();
+        return k.n(this.f30290d.getEpochSecond()) + this.f30290d.getNano();
     }
 
     public s6(Instant instant) {
-        this.f30724d = instant;
+        this.f30290d = instant;
     }
 }

@@ -3,14 +3,14 @@ package com.google.android.play.core.assetpacks;
 public final class h3 implements th.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final th.w f16799a;
+    private final th.w f16428a;
 
     public h3(th.w wVar) {
-        this.f16799a = wVar;
+        this.f16428a = wVar;
     }
 
     @Override // th.w
     public final /* bridge */ /* synthetic */ Object a() {
-        return new g3((n0) this.f16799a.a());
+        return new g3((n0) this.f16428a.a());
     }
 }

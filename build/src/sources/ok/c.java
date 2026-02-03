@@ -8,19 +8,19 @@ import java.util.Map;
 public final class c extends k {
 
     /* renamed from: e  reason: collision with root package name */
-    static final int[] f43960e = {52, 289, 97, 352, 49, 304, 112, 37, 292, 100, 265, 73, 328, 25, 280, 88, 13, 268, 76, 28, 259, 67, 322, 19, 274, 82, 7, 262, 70, 22, 385, 193, 448, 145, ReactFontManager.TypefaceStyle.NORMAL, 208, 133, 388, 196, 168, 162, 138, 42};
+    static final int[] f44088e = {52, 289, 97, 352, 49, 304, 112, 37, 292, 100, 265, 73, 328, 25, 280, 88, 13, 268, 76, 28, 259, 67, 322, 19, 274, 82, 7, 262, 70, 22, 385, 193, 448, 145, ReactFontManager.TypefaceStyle.NORMAL, 208, 133, 388, 196, 168, 162, 138, 42};
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f43961a;
+    private final boolean f44089a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f43962b;
+    private final boolean f44090b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final StringBuilder f43963c;
+    private final StringBuilder f44091c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int[] f43964d;
+    private final int[] f44092d;
 
     public c() {
         this(false);
@@ -131,7 +131,7 @@ public final class c extends k {
     private static char i(int i10) {
         int i11 = 0;
         while (true) {
-            int[] iArr = f43960e;
+            int[] iArr = f44088e;
             if (i11 < iArr.length) {
                 if (iArr[i11] == i10) {
                     return "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-. $/+%".charAt(i11);
@@ -189,9 +189,9 @@ public final class c extends k {
     public Result b(int i10, gk.a aVar, Map map) {
         int[] h10;
         String sb2;
-        int[] iArr = this.f43964d;
+        int[] iArr = this.f44092d;
         Arrays.fill(iArr, 0);
-        StringBuilder sb3 = this.f43963c;
+        StringBuilder sb3 = this.f44091c;
         sb3.setLength(0);
         int j10 = aVar.j(h(aVar, iArr)[1]);
         int l10 = aVar.l();
@@ -216,11 +216,11 @@ public final class c extends k {
                     if (j12 != l10 && i16 * 2 < i14) {
                         throw ck.k.a();
                     }
-                    if (this.f43961a) {
+                    if (this.f44089a) {
                         int length = sb3.length() - 1;
                         int i17 = 0;
                         for (int i18 = 0; i18 < length; i18++) {
-                            i17 += "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-. $/+%".indexOf(this.f43963c.charAt(i18));
+                            i17 += "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-. $/+%".indexOf(this.f44091c.charAt(i18));
                         }
                         if (sb3.charAt(length) == "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-. $/+%".charAt(i17 % 43)) {
                             sb3.setLength(length);
@@ -229,7 +229,7 @@ public final class c extends k {
                         }
                     }
                     if (sb3.length() != 0) {
-                        if (this.f43962b) {
+                        if (this.f44090b) {
                             sb2 = g(sb3);
                         } else {
                             sb2 = sb3.toString();
@@ -253,9 +253,9 @@ public final class c extends k {
     }
 
     public c(boolean z10, boolean z11) {
-        this.f43961a = z10;
-        this.f43962b = z11;
-        this.f43963c = new StringBuilder(20);
-        this.f43964d = new int[9];
+        this.f44089a = z10;
+        this.f44090b = z11;
+        this.f44091c = new StringBuilder(20);
+        this.f44092d = new int[9];
     }
 }

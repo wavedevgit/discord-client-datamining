@@ -15,34 +15,34 @@ import zd.b;
 public final class SubtitleView extends FrameLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private List f14244d;
+    private List f13873d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ke.b f14245e;
+    private ke.b f13874e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f14246i;
+    private int f13875i;
 
     /* renamed from: o  reason: collision with root package name */
-    private float f14247o;
+    private float f13876o;
 
     /* renamed from: p  reason: collision with root package name */
-    private float f14248p;
+    private float f13877p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f14249q;
+    private boolean f13878q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f14250r;
+    private boolean f13879r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f14251s;
+    private int f13880s;
 
     /* renamed from: t  reason: collision with root package name */
-    private a f14252t;
+    private a f13881t;
 
     /* renamed from: u  reason: collision with root package name */
-    private View f14253u;
+    private View f13882u;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -55,63 +55,63 @@ public final class SubtitleView extends FrameLayout {
     }
 
     private zd.b a(zd.b bVar) {
-        b.C0779b b10 = bVar.b();
-        if (!this.f14249q) {
+        b.C0790b b10 = bVar.b();
+        if (!this.f13878q) {
             i.c(b10);
-        } else if (!this.f14250r) {
+        } else if (!this.f13879r) {
             i.d(b10);
         }
         return b10.a();
     }
 
     private void c(int i10, float f10) {
-        this.f14246i = i10;
-        this.f14247o = f10;
+        this.f13875i = i10;
+        this.f13876o = f10;
         f();
     }
 
     private void f() {
-        this.f14252t.a(getCuesWithStylingPreferencesApplied(), this.f14245e, this.f14247o, this.f14246i, this.f14248p);
+        this.f13881t.a(getCuesWithStylingPreferencesApplied(), this.f13874e, this.f13876o, this.f13875i, this.f13877p);
     }
 
     private List<zd.b> getCuesWithStylingPreferencesApplied() {
-        if (this.f14249q && this.f14250r) {
-            return this.f14244d;
+        if (this.f13878q && this.f13879r) {
+            return this.f13873d;
         }
-        ArrayList arrayList = new ArrayList(this.f14244d.size());
-        for (int i10 = 0; i10 < this.f14244d.size(); i10++) {
-            arrayList.add(a((zd.b) this.f14244d.get(i10)));
+        ArrayList arrayList = new ArrayList(this.f13873d.size());
+        for (int i10 = 0; i10 < this.f13873d.size(); i10++) {
+            arrayList.add(a((zd.b) this.f13873d.get(i10)));
         }
         return arrayList;
     }
 
     private float getUserCaptionFontScale() {
         CaptioningManager captioningManager;
-        if (w0.f40295a < 19 || isInEditMode() || (captioningManager = (CaptioningManager) getContext().getSystemService("captioning")) == null || !captioningManager.isEnabled()) {
+        if (w0.f40158a < 19 || isInEditMode() || (captioningManager = (CaptioningManager) getContext().getSystemService("captioning")) == null || !captioningManager.isEnabled()) {
             return 1.0f;
         }
         return captioningManager.getFontScale();
     }
 
     private ke.b getUserCaptionStyle() {
-        if (w0.f40295a >= 19 && !isInEditMode()) {
+        if (w0.f40158a >= 19 && !isInEditMode()) {
             CaptioningManager captioningManager = (CaptioningManager) getContext().getSystemService("captioning");
             if (captioningManager != null && captioningManager.isEnabled()) {
                 return ke.b.a(captioningManager.getUserStyle());
             }
-            return ke.b.f33100g;
+            return ke.b.f32846g;
         }
-        return ke.b.f33100g;
+        return ke.b.f32846g;
     }
 
     private <T extends View & a> void setView(T t10) {
-        removeView(this.f14253u);
-        View view = this.f14253u;
+        removeView(this.f13882u);
+        View view = this.f13882u;
         if (view instanceof k) {
             ((k) view).g();
         }
-        this.f14253u = t10;
-        this.f14252t = t10;
+        this.f13882u = t10;
+        this.f13881t = t10;
         addView(t10);
     }
 
@@ -128,17 +128,17 @@ public final class SubtitleView extends FrameLayout {
     }
 
     public void setApplyEmbeddedFontSizes(boolean z10) {
-        this.f14250r = z10;
+        this.f13879r = z10;
         f();
     }
 
     public void setApplyEmbeddedStyles(boolean z10) {
-        this.f14249q = z10;
+        this.f13878q = z10;
         f();
     }
 
     public void setBottomPaddingFraction(float f10) {
-        this.f14248p = f10;
+        this.f13877p = f10;
         f();
     }
 
@@ -146,7 +146,7 @@ public final class SubtitleView extends FrameLayout {
         if (list == null) {
             list = Collections.EMPTY_LIST;
         }
-        this.f14244d = list;
+        this.f13873d = list;
         f();
     }
 
@@ -155,12 +155,12 @@ public final class SubtitleView extends FrameLayout {
     }
 
     public void setStyle(ke.b bVar) {
-        this.f14245e = bVar;
+        this.f13874e = bVar;
         f();
     }
 
     public void setViewType(int i10) {
-        if (this.f14251s == i10) {
+        if (this.f13880s == i10) {
             return;
         }
         if (i10 != 1) {
@@ -172,22 +172,22 @@ public final class SubtitleView extends FrameLayout {
         } else {
             setView(new com.google.android.exoplayer2.ui.a(getContext()));
         }
-        this.f14251s = i10;
+        this.f13880s = i10;
     }
 
     public SubtitleView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f14244d = Collections.EMPTY_LIST;
-        this.f14245e = ke.b.f33100g;
-        this.f14246i = 0;
-        this.f14247o = 0.0533f;
-        this.f14248p = 0.08f;
-        this.f14249q = true;
-        this.f14250r = true;
+        this.f13873d = Collections.EMPTY_LIST;
+        this.f13874e = ke.b.f32846g;
+        this.f13875i = 0;
+        this.f13876o = 0.0533f;
+        this.f13877p = 0.08f;
+        this.f13878q = true;
+        this.f13879r = true;
         com.google.android.exoplayer2.ui.a aVar = new com.google.android.exoplayer2.ui.a(context);
-        this.f14252t = aVar;
-        this.f14253u = aVar;
+        this.f13881t = aVar;
+        this.f13882u = aVar;
         addView(aVar);
-        this.f14251s = 1;
+        this.f13880s = 1;
     }
 }

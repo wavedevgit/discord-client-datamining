@@ -1,220 +1,198 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = metroImportDefault;
+    var3 = require;
+    var5 = metroImportDefault;
     var2 = exports;
-    var12 = dependencyMap;
-    var1 = function arg0() {
-        _fun44766: for (var _fun44766_ip = 0;;) switch (_fun44766_ip) {
-            case 0:
-                var1 = arg0;
-                var2 = global;
-                var4 = var2.Object;
-                var3 = var4.assign;
-                var0 = {};
-                var0 = var3.bind(var4)(var0, var1);
-                var3 = var1.activeOffsetX;
-                var4 = undefined;
-                if (!(var4 !== var3)) {
-                    _fun44766_ip = 135;
-                    continue _fun44766
-                }
-            case 36:
-                var3 = delete var0.activeOffsetX;
-                var6 = var2.Array;
-                var5 = var6.isArray;
-                var3 = var1.activeOffsetX;
-                var6 = var5.bind(var6)(var3);
-                var5 = var1.activeOffsetX;
-                var3 = 0;
-                if (var6) {
-                    _fun44766_ip = 106;
-                    continue _fun44766
-                }
-            case 74:
-                if (!(!(var5 < var3))) {
-                    _fun44766_ip = 92;
-                    continue _fun44766
-                }
-            case 78:
-                var6 = var1.activeOffsetX;
-                var0.activeOffsetXEnd = var6;
-                _fun44766_ip = 135;
-                continue _fun44766;
-            case 92:
-                var6 = var1.activeOffsetX;
-                var0.activeOffsetXStart = var6;
-                _fun44766_ip = 135;
-                continue _fun44766;
-            case 106:
-                var3 = var5[var3];
-                var0.activeOffsetXStart = var3;
-                var5 = var1.activeOffsetX;
-                var3 = 1;
-                var3 = var5[var3];
-                var0.activeOffsetXEnd = var3;
-            case 135:
-                var3 = var1.activeOffsetY;
-                if (!(var4 !== var3)) {
-                    _fun44766_ip = 244;
-                    continue _fun44766
-                }
-            case 145:
-                var3 = delete var0.activeOffsetY;
-                var6 = var2.Array;
-                var5 = var6.isArray;
-                var3 = var1.activeOffsetY;
-                var6 = var5.bind(var6)(var3);
-                var5 = var1.activeOffsetY;
-                var3 = 0;
-                if (var6) {
-                    _fun44766_ip = 215;
-                    continue _fun44766
-                }
-            case 183:
-                if (!(!(var5 < var3))) {
-                    _fun44766_ip = 201;
-                    continue _fun44766
-                }
-            case 187:
-                var6 = var1.activeOffsetY;
-                var0.activeOffsetYEnd = var6;
-                _fun44766_ip = 244;
-                continue _fun44766;
-            case 201:
-                var6 = var1.activeOffsetY;
-                var0.activeOffsetYStart = var6;
-                _fun44766_ip = 244;
-                continue _fun44766;
-            case 215:
-                var3 = var5[var3];
-                var0.activeOffsetYStart = var3;
-                var5 = var1.activeOffsetY;
-                var3 = 1;
-                var3 = var5[var3];
-                var0.activeOffsetYEnd = var3;
-            case 244:
-                var3 = var1.failOffsetX;
-                if (!(var4 !== var3)) {
-                    _fun44766_ip = 353;
-                    continue _fun44766
-                }
-            case 254:
-                var3 = delete var0.failOffsetX;
-                var6 = var2.Array;
-                var5 = var6.isArray;
-                var3 = var1.failOffsetX;
-                var6 = var5.bind(var6)(var3);
-                var5 = var1.failOffsetX;
-                var3 = 0;
-                if (var6) {
-                    _fun44766_ip = 324;
-                    continue _fun44766
-                }
-            case 292:
-                if (!(!(var5 < var3))) {
-                    _fun44766_ip = 310;
-                    continue _fun44766
-                }
-            case 296:
-                var6 = var1.failOffsetX;
-                var0.failOffsetXEnd = var6;
-                _fun44766_ip = 353;
-                continue _fun44766;
-            case 310:
-                var6 = var1.failOffsetX;
-                var0.failOffsetXStart = var6;
-                _fun44766_ip = 353;
-                continue _fun44766;
-            case 324:
-                var3 = var5[var3];
-                var0.failOffsetXStart = var3;
-                var5 = var1.failOffsetX;
-                var3 = 1;
-                var3 = var5[var3];
-                var0.failOffsetXEnd = var3;
-            case 353:
-                var3 = var1.failOffsetY;
-                if (!(var4 !== var3)) {
-                    _fun44766_ip = 462;
-                    continue _fun44766
-                }
-            case 363:
-                var3 = delete var0.failOffsetY;
-                var4 = var2.Array;
-                var3 = var4.isArray;
-                var2 = var1.failOffsetY;
-                var4 = var3.bind(var4)(var2);
-                var3 = var1.failOffsetY;
-                var2 = 0;
-                if (var4) {
-                    _fun44766_ip = 433;
-                    continue _fun44766
-                }
-            case 401:
-                if (!(!(var3 < var2))) {
-                    _fun44766_ip = 419;
-                    continue _fun44766
-                }
-            case 405:
-                var4 = var1.failOffsetY;
-                var0.failOffsetYEnd = var4;
-                _fun44766_ip = 462;
-                continue _fun44766;
-            case 419:
-                var4 = var1.failOffsetY;
-                var0.failOffsetYStart = var4;
-                _fun44766_ip = 462;
-                continue _fun44766;
-            case 433:
-                var2 = var3[var2];
-                var0.failOffsetYStart = var2;
-                var2 = var1.failOffsetY;
-                var1 = 1;
-                var1 = var2[var1];
-                var0.failOffsetYEnd = var1;
-            case 462:
-                return var0;
-        }
-    };
+    var4 = dependencyMap;
     var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var3 = {};
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var1 = {};
     var0 = true;
-    var3.value = var0;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var3);
+    var0 = var6.bind(var7)(var2, var0, var1);
     var0 = 0;
-    var3 = var12[var0];
+    var1 = var4[var0];
     var0 = undefined;
-    var11 = var4.bind(var0)(var3);
-    var6 = ['activeOffsetY', 'activeOffsetX', 'failOffsetY', 'failOffsetX', 'minDist', 'minVelocity', 'minVelocityX', 'minVelocityY', 'minPointers', 'maxPointers', 'avgTouches', 'enableTrackpadTwoFingerGesture', 'activateAfterLongPress'];
-    var5 = ['activeOffsetYStart', 'activeOffsetYEnd', 'activeOffsetXStart', 'activeOffsetXEnd', 'failOffsetYStart', 'failOffsetYEnd', 'failOffsetXStart', 'failOffsetXEnd'];
-    var3 = 1;
-    var3 = var12[var3];
-    var7 = var4.bind(var0)(var3);
-    var3 = {};
-    var4 = 'PanGestureHandler';
-    var3.name = var4;
-    var10 = new Array(0);
-    var9 = var10.concat;
-    var8 = 2;
-    var12 = var12[var8];
-    var8 = arg1;
-    var8 = var8.bind(var0)(var12);
-    var8 = var8.baseGestureHandlerProps;
-    var8 = var11.bind(var0)(var8);
-    var8 = var9.bind(var10)(var8, var6);
-    var3.allowedProps = var8;
-    var8 = {};
-    var3.config = var8;
-    var3.transformProps = var1;
-    var3.customNativeProps = var5;
-    var3 = var7.bind(var0)(var3);
-    var2.panGestureHandlerProps = var6;
-    var2.panGestureHandlerCustomNativeProps = var5;
-    var2.panHandlerName = var4;
-    var2.PanGestureHandler = var3;
-    var2.managePanProps = var1;
+    var6 = var3.bind(var0)(var1);
+    var1 = var6.initialize;
+    var1 = var1.bind(var6)();
+    var1 = 1;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.Directions;
+    var2.Directions = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.State;
+    var2.State = var1;
+    var1 = 3;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.PointerType;
+    var2.PointerType = var1;
+    var1 = 4;
+    var1 = var4[var1];
+    var1 = var5.bind(var0)(var1);
+    var2.gestureHandlerRootHOC = var1;
+    var1 = 5;
+    var1 = var4[var1];
+    var1 = var5.bind(var0)(var1);
+    var2.GestureHandlerRootView = var1;
+    var1 = 6;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.MouseButton;
+    var2.MouseButton = var1;
+    var1 = 7;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.TapGestureHandler;
+    var2.TapGestureHandler = var1;
+    var1 = 8;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.ForceTouchGestureHandler;
+    var2.ForceTouchGestureHandler = var1;
+    var1 = 9;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.LongPressGestureHandler;
+    var2.LongPressGestureHandler = var1;
+    var1 = 10;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.PanGestureHandler;
+    var2.PanGestureHandler = var1;
+    var1 = 11;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.PinchGestureHandler;
+    var2.PinchGestureHandler = var1;
+    var1 = 12;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.RotationGestureHandler;
+    var2.RotationGestureHandler = var1;
+    var1 = 13;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.FlingGestureHandler;
+    var2.FlingGestureHandler = var1;
+    var1 = 14;
+    var1 = var4[var1];
+    var1 = var5.bind(var0)(var1);
+    var2.createNativeWrapper = var1;
+    var1 = 15;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.GestureDetector;
+    var2.GestureDetector = var1;
+    var1 = 16;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.GestureObjects;
+    var2.Gesture = var1;
+    var1 = 17;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.NativeViewGestureHandler;
+    var2.NativeViewGestureHandler = var1;
+    var1 = 18;
+    var6 = var4[var1];
+    var6 = var3.bind(var0)(var6);
+    var6 = var6.RawButton;
+    var2.RawButton = var6;
+    var6 = var4[var1];
+    var6 = var3.bind(var0)(var6);
+    var6 = var6.BaseButton;
+    var2.BaseButton = var6;
+    var6 = var4[var1];
+    var6 = var3.bind(var0)(var6);
+    var6 = var6.RectButton;
+    var2.RectButton = var6;
+    var6 = var4[var1];
+    var6 = var3.bind(var0)(var6);
+    var6 = var6.BorderlessButton;
+    var2.BorderlessButton = var6;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.PureNativeButton;
+    var2.PureNativeButton = var1;
+    var1 = 19;
+    var6 = var4[var1];
+    var6 = var3.bind(var0)(var6);
+    var6 = var6.TouchableHighlight;
+    var2.TouchableHighlight = var6;
+    var6 = var4[var1];
+    var6 = var3.bind(var0)(var6);
+    var6 = var6.TouchableNativeFeedback;
+    var2.TouchableNativeFeedback = var6;
+    var6 = var4[var1];
+    var6 = var3.bind(var0)(var6);
+    var6 = var6.TouchableOpacity;
+    var2.TouchableOpacity = var6;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.TouchableWithoutFeedback;
+    var2.TouchableWithoutFeedback = var1;
+    var1 = 20;
+    var6 = var4[var1];
+    var6 = var3.bind(var0)(var6);
+    var6 = var6.ScrollView;
+    var2.ScrollView = var6;
+    var6 = var4[var1];
+    var6 = var3.bind(var0)(var6);
+    var6 = var6.Switch;
+    var2.Switch = var6;
+    var6 = var4[var1];
+    var6 = var3.bind(var0)(var6);
+    var6 = var6.TextInput;
+    var2.TextInput = var6;
+    var6 = var4[var1];
+    var6 = var3.bind(var0)(var6);
+    var6 = var6.DrawerLayoutAndroid;
+    var2.DrawerLayoutAndroid = var6;
+    var6 = var4[var1];
+    var6 = var3.bind(var0)(var6);
+    var6 = var6.FlatList;
+    var2.FlatList = var6;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.RefreshControl;
+    var2.RefreshControl = var1;
+    var1 = 21;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.Text;
+    var2.Text = var1;
+    var1 = 22;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.HoverEffect;
+    var2.HoverEffect = var1;
+    var1 = 23;
+    var1 = var4[var1];
+    var1 = var5.bind(var0)(var1);
+    var2.Swipeable = var1;
+    var1 = 24;
+    var1 = var4[var1];
+    var1 = var5.bind(var0)(var1);
+    var2.Pressable = var1;
+    var1 = 25;
+    var1 = var4[var1];
+    var1 = var5.bind(var0)(var1);
+    var2.DrawerLayout = var1;
+    var1 = 26;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.enableExperimentalWebImplementation;
+    var2.enableExperimentalWebImplementation = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.enableLegacyWebImplementation;
+    var2.enableLegacyWebImplementation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 4945, 4943]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4957, 4967, 4961, 4968, 4969, 4970, 4973, 4974, 4983, 4985, 4986, 4987, 4988, 4989, 4990, 4992, 5007, 4991, 5018, 5021, 5027, 5028, 4994, 5029, 5030, 5036, 4996]);

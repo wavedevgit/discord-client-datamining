@@ -27,12 +27,12 @@ public final class FontAsset extends Asset<FontHandle> {
 
         @Override // app.rive.AssetOps
         public /* bridge */ /* synthetic */ FontAsset construct(FontHandle fontHandle, CommandQueue commandQueue) {
-            return m23construct5E6tRKQ(fontHandle.m178unboximpl(), commandQueue);
+            return m25construct5E6tRKQ(fontHandle.m180unboximpl(), commandQueue);
         }
 
         @NotNull
         /* renamed from: construct-5E6tRKQ  reason: not valid java name */
-        public FontAsset m23construct5E6tRKQ(long j10, @NotNull CommandQueue queue) {
+        public FontAsset m25construct5E6tRKQ(long j10, @NotNull CommandQueue queue) {
             Intrinsics.checkNotNullParameter(queue, "queue");
             return new FontAsset(j10, queue, null);
         }
@@ -40,18 +40,18 @@ public final class FontAsset extends Asset<FontHandle> {
         @Override // app.rive.AssetOps
         /* renamed from: decode-epMswW4  reason: not valid java name */
         public Object decode(@NotNull CommandQueue commandQueue, @NotNull byte[] bArr, @NotNull Continuation<? super FontHandle> continuation) {
-            return commandQueue.m116decodeFontsOckvAc(bArr, continuation);
+            return commandQueue.m118decodeFontsOckvAc(bArr, continuation);
         }
 
         @Override // app.rive.AssetOps
         public /* bridge */ /* synthetic */ void delete(CommandQueue commandQueue, FontHandle fontHandle) {
-            m25delete8RWjZU(commandQueue, fontHandle.m178unboximpl());
+            m27delete8RWjZU(commandQueue, fontHandle.m180unboximpl());
         }
 
         /* renamed from: delete-8-RWjZU  reason: not valid java name */
-        public void m25delete8RWjZU(@NotNull CommandQueue queue, long j10) {
+        public void m27delete8RWjZU(@NotNull CommandQueue queue, long j10) {
             Intrinsics.checkNotNullParameter(queue, "queue");
-            queue.m121deleteFontwK5q9OY(j10);
+            queue.m123deleteFontwK5q9OY(j10);
         }
 
         public final Object fromBytes(@NotNull CommandQueue commandQueue, @NotNull byte[] bArr, @NotNull Continuation<? super Result<FontAsset>> continuation) {
@@ -72,14 +72,14 @@ public final class FontAsset extends Asset<FontHandle> {
 
         @Override // app.rive.AssetOps
         public /* bridge */ /* synthetic */ void register(CommandQueue commandQueue, String str, FontHandle fontHandle) {
-            m26registerAltPSKk(commandQueue, str, fontHandle.m178unboximpl());
+            m28registerAltPSKk(commandQueue, str, fontHandle.m180unboximpl());
         }
 
         /* renamed from: register-AltPSKk  reason: not valid java name */
-        public void m26registerAltPSKk(@NotNull CommandQueue queue, @NotNull String key, long j10) {
+        public void m28registerAltPSKk(@NotNull CommandQueue queue, @NotNull String key, long j10) {
             Intrinsics.checkNotNullParameter(queue, "queue");
             Intrinsics.checkNotNullParameter(key, "key");
-            queue.m144registerFont8RWjZU(key, j10);
+            queue.m146registerFont8RWjZU(key, j10);
         }
 
         @Override // app.rive.AssetOps
@@ -99,7 +99,7 @@ public final class FontAsset extends Asset<FontHandle> {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     private FontAsset(long j10, CommandQueue queue) {
-        super(FontHandle.m172boximpl(j10), queue, Companion, null);
+        super(FontHandle.m174boximpl(j10), queue, Companion, null);
         Intrinsics.checkNotNullParameter(queue, "queue");
     }
 }

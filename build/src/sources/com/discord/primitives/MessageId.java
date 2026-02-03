@@ -8,9 +8,9 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
 import org.jetbrains.annotations.NotNull;
-import xs.m;
-@Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0087@\u0018\u0000 \"2\u00020\u0001:\u0002!\"B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u000f\u0010\b\u001a\u00020\u0003H\u0016¢\u0006\u0004\b\t\u0010\u0005J\u000f\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0004\b\f\u0010\rJ\r\u0010\u000e\u001a\u00020\u000f¢\u0006\u0004\b\u0010\u0010\u0011J\u001a\u0010\u0012\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015HÖ\u0003¢\u0006\u0004\b\u0016\u0010\u0017J\u0010\u0010\u0018\u001a\u00020\u000fHÖ\u0001¢\u0006\u0004\b\u0019\u0010\u0011J\u001d\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u000f¢\u0006\u0004\b\u001f\u0010 R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007\u0088\u0001\u0002¨\u0006#"}, d2 = {"Lcom/discord/primitives/MessageId;", "Landroid/os/Parcelable;", "value", "", "constructor-impl", "(Ljava/lang/String;)Ljava/lang/String;", "getValue", "()Ljava/lang/String;", "toString", "toString-impl", "toSnowflake", "Lcom/discord/primitives/MessageIdSnowflake;", "toSnowflake-wDbSO-A", "(Ljava/lang/String;)Lcom/discord/primitives/MessageIdSnowflake;", "describeContents", "", "describeContents-impl", "(Ljava/lang/String;)I", "equals", "", "other", "", "equals-impl", "(Ljava/lang/String;Ljava/lang/Object;)Z", "hashCode", "hashCode-impl", "writeToParcel", "", "dest", "Landroid/os/Parcel;", "flags", "writeToParcel-impl", "(Ljava/lang/String;Landroid/os/Parcel;I)V", "$serializer", "Companion", "primitives_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+import ys.m;
 @m
+@Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0087@\u0018\u0000 \"2\u00020\u0001:\u0002!\"B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u000f\u0010\b\u001a\u00020\u0003H\u0016¢\u0006\u0004\b\t\u0010\u0005J\u000f\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0004\b\f\u0010\rJ\r\u0010\u000e\u001a\u00020\u000f¢\u0006\u0004\b\u0010\u0010\u0011J\u001a\u0010\u0012\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015HÖ\u0003¢\u0006\u0004\b\u0016\u0010\u0017J\u0010\u0010\u0018\u001a\u00020\u000fHÖ\u0001¢\u0006\u0004\b\u0019\u0010\u0011J\u001d\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u000f¢\u0006\u0004\b\u001f\u0010 R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007\u0088\u0001\u0002¨\u0006#"}, d2 = {"Lcom/discord/primitives/MessageId;", "Landroid/os/Parcelable;", "value", "", "constructor-impl", "(Ljava/lang/String;)Ljava/lang/String;", "getValue", "()Ljava/lang/String;", "toString", "toString-impl", "toSnowflake", "Lcom/discord/primitives/MessageIdSnowflake;", "toSnowflake-wDbSO-A", "(Ljava/lang/String;)Lcom/discord/primitives/MessageIdSnowflake;", "describeContents", "", "describeContents-impl", "(Ljava/lang/String;)I", "equals", "", "other", "", "equals-impl", "(Ljava/lang/String;Ljava/lang/Object;)Z", "hashCode", "hashCode-impl", "writeToParcel", "", "dest", "Landroid/os/Parcel;", "flags", "writeToParcel-impl", "(Ljava/lang/String;Landroid/os/Parcel;I)V", "$serializer", "Companion", "primitives_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class MessageId implements Parcelable {
     @NotNull
@@ -41,13 +41,13 @@ public final class MessageId implements Parcelable {
     public static final class Creator implements Parcelable.Creator<MessageId> {
         @Override // android.os.Parcelable.Creator
         public /* bridge */ /* synthetic */ MessageId createFromParcel(Parcel parcel) {
-            return MessageId.m1084boximpl(m1096createFromParcelMpY7Jxs(parcel));
+            return MessageId.m1086boximpl(m1098createFromParcelMpY7Jxs(parcel));
         }
 
         /* renamed from: createFromParcel-MpY7Jxs  reason: not valid java name */
-        public final String m1096createFromParcelMpY7Jxs(Parcel parcel) {
+        public final String m1098createFromParcelMpY7Jxs(Parcel parcel) {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return MessageId.m1085constructorimpl(parcel.readString());
+            return MessageId.m1087constructorimpl(parcel.readString());
         }
 
         /* JADX WARN: Can't rename method to resolve collision */
@@ -62,65 +62,65 @@ public final class MessageId implements Parcelable {
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ MessageId m1084boximpl(String str) {
+    public static final /* synthetic */ MessageId m1086boximpl(String str) {
         return new MessageId(str);
     }
 
     @NotNull
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static String m1085constructorimpl(@NotNull String value) {
+    public static String m1087constructorimpl(@NotNull String value) {
         Intrinsics.checkNotNullParameter(value, "value");
         return value;
     }
 
     /* renamed from: describeContents-impl  reason: not valid java name */
-    public static final int m1086describeContentsimpl(String str) {
+    public static final int m1088describeContentsimpl(String str) {
         return 0;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m1087equalsimpl(String str, Object obj) {
-        return (obj instanceof MessageId) && Intrinsics.areEqual(str, ((MessageId) obj).m1093unboximpl());
+    public static boolean m1089equalsimpl(String str, Object obj) {
+        return (obj instanceof MessageId) && Intrinsics.areEqual(str, ((MessageId) obj).m1095unboximpl());
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m1088equalsimpl0(String str, String str2) {
+    public static final boolean m1090equalsimpl0(String str, String str2) {
         return Intrinsics.areEqual(str, str2);
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m1089hashCodeimpl(String str) {
+    public static int m1091hashCodeimpl(String str) {
         return str.hashCode();
     }
 
     /* renamed from: toSnowflake-wDbSO-A  reason: not valid java name */
-    public static final MessageIdSnowflake m1090toSnowflakewDbSOA(String str) {
+    public static final MessageIdSnowflake m1092toSnowflakewDbSOA(String str) {
         Long snowflake = SnowflakeUtils.INSTANCE.toSnowflake(str);
         if (snowflake != null) {
-            return MessageIdSnowflake.m1097boximpl(MessageIdSnowflake.m1098constructorimpl(snowflake.longValue()));
+            return MessageIdSnowflake.m1099boximpl(MessageIdSnowflake.m1100constructorimpl(snowflake.longValue()));
         }
         return null;
     }
 
     @NotNull
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m1091toStringimpl(String str) {
+    public static String m1093toStringimpl(String str) {
         return str;
     }
 
     /* renamed from: writeToParcel-impl  reason: not valid java name */
-    public static final void m1092writeToParcelimpl(String str, @NotNull Parcel dest, int i10) {
+    public static final void m1094writeToParcelimpl(String str, @NotNull Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
         dest.writeString(str);
     }
 
     @Override // android.os.Parcelable
     public final int describeContents() {
-        return m1086describeContentsimpl(this.value);
+        return m1088describeContentsimpl(this.value);
     }
 
     public boolean equals(Object obj) {
-        return m1087equalsimpl(this.value, obj);
+        return m1089equalsimpl(this.value, obj);
     }
 
     @NotNull
@@ -129,22 +129,22 @@ public final class MessageId implements Parcelable {
     }
 
     public int hashCode() {
-        return m1089hashCodeimpl(this.value);
+        return m1091hashCodeimpl(this.value);
     }
 
     @NotNull
     public String toString() {
-        return m1091toStringimpl(this.value);
+        return m1093toStringimpl(this.value);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ String m1093unboximpl() {
+    public final /* synthetic */ String m1095unboximpl() {
         return this.value;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(@NotNull Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        m1092writeToParcelimpl(this.value, dest, i10);
+        m1094writeToParcelimpl(this.value, dest, i10);
     }
 }

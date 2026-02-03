@@ -10,25 +10,25 @@ public class g extends hf.a {
     public static final Parcelable.Creator<g> CREATOR = new t();
 
     /* renamed from: d  reason: collision with root package name */
-    private final PendingIntent f51126d;
+    private final PendingIntent f51250d;
 
     public g(PendingIntent pendingIntent) {
-        this.f51126d = (PendingIntent) gf.q.l(pendingIntent);
+        this.f51250d = (PendingIntent) gf.q.l(pendingIntent);
     }
 
     public PendingIntent b() {
-        return this.f51126d;
+        return this.f51250d;
     }
 
     public boolean equals(Object obj) {
         if (!(obj instanceof g)) {
             return false;
         }
-        return gf.o.a(this.f51126d, ((g) obj).f51126d);
+        return gf.o.a(this.f51250d, ((g) obj).f51250d);
     }
 
     public int hashCode() {
-        return gf.o.b(this.f51126d);
+        return gf.o.b(this.f51250d);
     }
 
     @Override // android.os.Parcelable

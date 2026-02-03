@@ -11,8 +11,8 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.viewmanagers.StickerPickerRowViewManagerDelegate;
 import com.facebook.react.viewmanagers.StickerPickerRowViewManagerInterface;
-import ir.v;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -48,14 +48,14 @@ public final class StickerPickerRowViewManager extends SimpleViewManager<Sticker
     public static final Unit createViewInstance$lambda$2$lambda$0(StickerPickerRowViewManager stickerPickerRowViewManager, ThemedReactContext themedReactContext, StickerPickerRowView stickerPickerRowView, String stickerId) {
         Intrinsics.checkNotNullParameter(stickerId, "stickerId");
         stickerPickerRowViewManager.reactEvents.emitEvent(themedReactContext, stickerPickerRowView, new OnPressStickerEvent(stickerId));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createViewInstance$lambda$2$lambda$1(StickerPickerRowViewManager stickerPickerRowViewManager, ThemedReactContext themedReactContext, StickerPickerRowView stickerPickerRowView, String stickerId) {
         Intrinsics.checkNotNullParameter(stickerId, "stickerId");
         stickerPickerRowViewManager.reactEvents.emitEvent(themedReactContext, stickerPickerRowView, new OnLongPressStickerEvent(stickerId));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

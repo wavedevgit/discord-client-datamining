@@ -6,10 +6,10 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a extends n0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Application f4457b;
+    private final Application f4501b;
 
     public a(Application application) {
         Intrinsics.checkNotNullParameter(application, "application");
-        this.f4457b = application;
+        this.f4501b = application;
     }
 }

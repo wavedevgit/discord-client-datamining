@@ -14,35 +14,35 @@ import zd.b;
 public final class a extends View implements SubtitleView.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f14270d;
+    private final List f13899d;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f14271e;
+    private List f13900e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f14272i;
+    private int f13901i;
 
     /* renamed from: o  reason: collision with root package name */
-    private float f14273o;
+    private float f13902o;
 
     /* renamed from: p  reason: collision with root package name */
-    private ke.b f14274p;
+    private ke.b f13903p;
 
     /* renamed from: q  reason: collision with root package name */
-    private float f14275q;
+    private float f13904q;
 
     public a(Context context) {
         this(context, null);
     }
 
     private static zd.b b(zd.b bVar) {
-        b.C0779b p10 = bVar.b().k(-3.4028235E38f).l(Integer.MIN_VALUE).p(null);
-        if (bVar.f55608q == 0) {
-            p10.h(1.0f - bVar.f55607p, 0);
+        b.C0790b p10 = bVar.b().k(-3.4028235E38f).l(Integer.MIN_VALUE).p(null);
+        if (bVar.f55740q == 0) {
+            p10.h(1.0f - bVar.f55739p, 0);
         } else {
-            p10.h((-bVar.f55607p) - 1.0f, 1);
+            p10.h((-bVar.f55739p) - 1.0f, 1);
         }
-        int i10 = bVar.f55609r;
+        int i10 = bVar.f55741r;
         if (i10 != 0) {
             if (i10 == 2) {
                 p10.i(0);
@@ -55,20 +55,20 @@ public final class a extends View implements SubtitleView.a {
 
     @Override // com.google.android.exoplayer2.ui.SubtitleView.a
     public void a(List list, ke.b bVar, float f10, int i10, float f11) {
-        this.f14271e = list;
-        this.f14274p = bVar;
-        this.f14273o = f10;
-        this.f14272i = i10;
-        this.f14275q = f11;
-        while (this.f14270d.size() < list.size()) {
-            this.f14270d.add(new f(getContext()));
+        this.f13900e = list;
+        this.f13903p = bVar;
+        this.f13902o = f10;
+        this.f13901i = i10;
+        this.f13904q = f11;
+        while (this.f13899d.size() < list.size()) {
+            this.f13899d.add(new f(getContext()));
         }
         invalidate();
     }
 
     @Override // android.view.View
     public void dispatchDraw(Canvas canvas) {
-        List list = this.f14271e;
+        List list = this.f13900e;
         if (!list.isEmpty()) {
             int height = getHeight();
             int paddingLeft = getPaddingLeft();
@@ -77,7 +77,7 @@ public final class a extends View implements SubtitleView.a {
             int paddingBottom = height - getPaddingBottom();
             if (paddingBottom > paddingTop && width > paddingLeft) {
                 int i10 = paddingBottom - paddingTop;
-                float f10 = i.f(this.f14272i, this.f14273o, height, i10);
+                float f10 = i.f(this.f13901i, this.f13902o, height, i10);
                 if (f10 > 0.0f) {
                     int size = list.size();
                     for (int i11 = 0; i11 < size; i11++) {
@@ -85,7 +85,7 @@ public final class a extends View implements SubtitleView.a {
                         if (bVar.A != Integer.MIN_VALUE) {
                             bVar = b(bVar);
                         }
-                        ((f) this.f14270d.get(i11)).b(bVar, this.f14274p, f10, i.f(bVar.f55616y, bVar.f55617z, height, i10), this.f14275q, canvas, paddingLeft, paddingTop, width, paddingBottom);
+                        ((f) this.f13899d.get(i11)).b(bVar, this.f13903p, f10, i.f(bVar.f55748y, bVar.f55749z, height, i10), this.f13904q, canvas, paddingLeft, paddingTop, width, paddingBottom);
                     }
                 }
             }
@@ -94,11 +94,11 @@ public final class a extends View implements SubtitleView.a {
 
     public a(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f14270d = new ArrayList();
-        this.f14271e = Collections.EMPTY_LIST;
-        this.f14272i = 0;
-        this.f14273o = 0.0533f;
-        this.f14274p = ke.b.f33100g;
-        this.f14275q = 0.08f;
+        this.f13899d = new ArrayList();
+        this.f13900e = Collections.EMPTY_LIST;
+        this.f13901i = 0;
+        this.f13902o = 0.0533f;
+        this.f13903p = ke.b.f32846g;
+        this.f13904q = 0.08f;
     }
 }

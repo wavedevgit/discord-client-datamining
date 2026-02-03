@@ -13,70 +13,70 @@ import java.util.TimeZone;
 public class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private Calendar f17712a = null;
+    private Calendar f17341a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private final bl.a f17713b = new bl.a();
+    private final bl.a f17342b = new bl.a();
 
     /* renamed from: c  reason: collision with root package name */
-    private final bl.j f17714c = new bl.j();
+    private final bl.j f17343c = new bl.j();
 
     /* renamed from: d  reason: collision with root package name */
-    private final bl.f f17715d = new bl.f();
+    private final bl.f f17344d = new bl.f();
 
     /* renamed from: e  reason: collision with root package name */
-    private final bl.l f17716e = new bl.l();
+    private final bl.l f17345e = new bl.l();
 
     /* renamed from: f  reason: collision with root package name */
-    private final bl.i f17717f = new bl.i();
+    private final bl.i f17346f = new bl.i();
 
     /* renamed from: g  reason: collision with root package name */
-    private final bl.h f17718g = new bl.h();
+    private final bl.h f17347g = new bl.h();
 
     /* renamed from: h  reason: collision with root package name */
-    private final bl.g f17719h = new bl.g();
+    private final bl.g f17348h = new bl.g();
 
     /* renamed from: i  reason: collision with root package name */
-    private final bl.m f17720i = new bl.m();
+    private final bl.m f17349i = new bl.m();
 
     /* renamed from: j  reason: collision with root package name */
-    private final bl.c f17721j = new bl.c();
+    private final bl.c f17350j = new bl.c();
 
     /* renamed from: k  reason: collision with root package name */
-    private final bl.e f17722k = new bl.e();
+    private final bl.e f17351k = new bl.e();
 
     /* renamed from: l  reason: collision with root package name */
-    private final bl.d f17723l = new bl.d();
+    private final bl.d f17352l = new bl.d();
 
     /* renamed from: m  reason: collision with root package name */
-    private final bl.b f17724m = new bl.b();
+    private final bl.b f17353m = new bl.b();
 
     /* renamed from: n  reason: collision with root package name */
-    private final HashMap f17725n = new a();
+    private final HashMap f17354n = new a();
 
     /* renamed from: o  reason: collision with root package name */
-    public d f17726o = new d(this);
+    public d f17355o = new d(this);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends HashMap {
         a() {
-            put(InquiryField.DateField.TYPE, n.this.f17713b);
-            put("mode", n.this.f17714c);
-            put("locale", n.this.f17715d);
-            put("textColor", n.this.f17716e);
-            put("minuteInterval", n.this.f17717f);
-            put("minimumDate", n.this.f17718g);
-            put("maximumDate", n.this.f17719h);
-            put("timezoneOffsetInMinutes", n.this.f17720i);
-            put("height", n.this.f17721j);
-            put("is24hourSource", n.this.f17722k);
-            put(StackTraceHelper.ID_KEY, n.this.f17723l);
-            put("dividerColor", n.this.f17724m);
+            put(InquiryField.DateField.TYPE, n.this.f17342b);
+            put("mode", n.this.f17343c);
+            put("locale", n.this.f17344d);
+            put("textColor", n.this.f17345e);
+            put("minuteInterval", n.this.f17346f);
+            put("minimumDate", n.this.f17347g);
+            put("maximumDate", n.this.f17348h);
+            put("timezoneOffsetInMinutes", n.this.f17349i);
+            put("height", n.this.f17350j);
+            put("is24hourSource", n.this.f17351k);
+            put(StackTraceHelper.ID_KEY, n.this.f17352l);
+            put("dividerColor", n.this.f17353m);
         }
     }
 
     private bl.k B(String str) {
-        return (bl.k) this.f17725n.get(str);
+        return (bl.k) this.f17354n.get(str);
     }
 
     private Calendar m(bl.k kVar) {
@@ -108,13 +108,13 @@ public class n {
     }
 
     public String C() {
-        return (String) this.f17716e.a();
+        return (String) this.f17345e.a();
     }
 
     public TimeZone D() {
         char c10;
         try {
-            String str = (String) this.f17720i.a();
+            String str = (String) this.f17349i.a();
             if (str != null && !str.equals("")) {
                 int parseInt = Integer.parseInt(str);
                 int abs = Math.abs(parseInt);
@@ -134,7 +134,7 @@ public class n {
     }
 
     public void E(Calendar calendar) {
-        this.f17712a = calendar;
+        this.f17341a = calendar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -143,46 +143,46 @@ public class n {
     }
 
     public String p() {
-        return (String) this.f17724m.a();
+        return (String) this.f17353m.a();
     }
 
     public String q() {
-        return (String) this.f17723l.a();
+        return (String) this.f17352l.a();
     }
 
     public al.a r() {
-        return (al.a) this.f17722k.a();
+        return (al.a) this.f17351k.a();
     }
 
     public String s() {
-        return (String) this.f17713b.a();
+        return (String) this.f17342b.a();
     }
 
     public Calendar t() {
-        return this.f17712a;
+        return this.f17341a;
     }
 
     public Locale u() {
-        return (Locale) this.f17715d.a();
+        return (Locale) this.f17344d.a();
     }
 
     public String v() {
-        return this.f17715d.f();
+        return this.f17344d.f();
     }
 
     public Calendar w() {
-        return m(this.f17719h);
+        return m(this.f17348h);
     }
 
     public Calendar x() {
-        return m(this.f17718g);
+        return m(this.f17347g);
     }
 
     public int y() {
-        return ((Integer) this.f17717f.a()).intValue();
+        return ((Integer) this.f17346f.a()).intValue();
     }
 
     public al.b z() {
-        return (al.b) this.f17714c.a();
+        return (al.b) this.f17343c.a();
     }
 }

@@ -26,76 +26,76 @@ import java.util.TimeZone;
 public final class m1 {
 
     /* renamed from: i  reason: collision with root package name */
-    private static volatile m1 f29141i;
+    private static volatile m1 f28707i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final io.sentry.util.a f29142j = new io.sentry.util.a();
+    private static final io.sentry.util.a f28708j = new io.sentry.util.a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f29143a;
+    private final Context f28709a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final SentryAndroidOptions f29144b;
+    private final SentryAndroidOptions f28710b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final x0 f29145c;
+    private final x0 f28711c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Boolean f29146d;
+    private final Boolean f28712d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final e1.a f29147e;
+    private final e1.a f28713e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final e1.b f29148f;
+    private final e1.b f28714f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final io.sentry.protocol.n f29149g;
+    private final io.sentry.protocol.n f28715g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Long f29150h;
+    private final Long f28716h;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f29151a;
+        static final /* synthetic */ int[] f28717a;
 
         static {
             int[] iArr = new int[k0.a.values().length];
-            f29151a = iArr;
+            f28717a = iArr;
             try {
                 iArr[k0.a.DISCONNECTED.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f29151a[k0.a.CONNECTED.ordinal()] = 2;
+                f28717a[k0.a.CONNECTED.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
     }
 
     public m1(Context context, SentryAndroidOptions sentryAndroidOptions) {
-        this.f29143a = context;
-        this.f29144b = sentryAndroidOptions;
+        this.f28709a = context;
+        this.f28710b = sentryAndroidOptions;
         x0 x0Var = new x0(sentryAndroidOptions.getLogger());
-        this.f29145c = x0Var;
+        this.f28711c = x0Var;
         io.sentry.android.core.internal.util.m.a().c();
-        this.f29149g = w();
-        this.f29146d = x0Var.f();
-        this.f29147e = e1.v(context, sentryAndroidOptions.getLogger(), x0Var);
-        this.f29148f = e1.w(context, x0Var);
+        this.f28715g = w();
+        this.f28712d = x0Var.f();
+        this.f28713e = e1.v(context, sentryAndroidOptions.getLogger(), x0Var);
+        this.f28714f = e1.w(context, x0Var);
         ActivityManager.MemoryInfo n10 = e1.n(context, sentryAndroidOptions.getLogger());
         if (n10 != null) {
-            this.f29150h = Long.valueOf(n10.totalMem);
+            this.f28716h = Long.valueOf(n10.totalMem);
         } else {
-            this.f29150h = null;
+            this.f28716h = null;
         }
     }
 
     public static /* synthetic */ void b(m1 m1Var, io.sentry.protocol.e eVar) {
-        File externalFilesDir = m1Var.f29143a.getExternalFilesDir(null);
+        File externalFilesDir = m1Var.f28709a.getExternalFilesDir(null);
         if (externalFilesDir != null) {
             StatFs statFs = new StatFs(externalFilesDir.getPath());
             eVar.o0(m1Var.r(statFs));
@@ -109,7 +109,7 @@ public final class m1 {
     }
 
     private Intent d() {
-        return e1.u(this.f29143a, this.f29145c, null, new IntentFilter("android.intent.action.BATTERY_CHANGED"), null);
+        return e1.u(this.f28709a, this.f28711c, null, new IntentFilter("android.intent.action.BATTERY_CHANGED"), null);
     }
 
     public static Float e(Intent intent, k7 k7Var) {
@@ -134,7 +134,7 @@ public final class m1 {
             }
             return null;
         } catch (Throwable th2) {
-            this.f29144b.getLogger().b(SentryLevel.ERROR, "Error getting battery temperature.", th2);
+            this.f28710b.getLogger().b(SentryLevel.ERROR, "Error getting battery temperature.", th2);
             return null;
         }
     }
@@ -143,30 +143,30 @@ public final class m1 {
         try {
             return io.sentry.k.e(System.currentTimeMillis() - SystemClock.elapsedRealtime());
         } catch (IllegalArgumentException e10) {
-            this.f29144b.getLogger().a(SentryLevel.ERROR, e10, "Error getting the device's boot time.", new Object[0]);
+            this.f28710b.getLogger().a(SentryLevel.ERROR, e10, "Error getting the device's boot time.", new Object[0]);
             return null;
         }
     }
 
     private String h() {
         try {
-            return (String) this.f29144b.getRuntimeManager().a(new a.InterfaceC0405a() { // from class: io.sentry.android.core.l1
-                @Override // io.sentry.util.runtime.a.InterfaceC0405a
+            return (String) this.f28710b.getRuntimeManager().a(new a.InterfaceC0408a() { // from class: io.sentry.android.core.l1
+                @Override // io.sentry.util.runtime.a.InterfaceC0408a
                 public final Object run() {
                     String a10;
-                    a10 = r1.a(m1.this.f29143a);
+                    a10 = r1.a(m1.this.f28709a);
                     return a10;
                 }
             });
         } catch (Throwable th2) {
-            this.f29144b.getLogger().b(SentryLevel.ERROR, "Error getting installationId.", th2);
+            this.f28710b.getLogger().b(SentryLevel.ERROR, "Error getting installationId.", th2);
             return null;
         }
     }
 
     private File i(File file) {
         String str;
-        File[] externalFilesDirs = this.f29143a.getExternalFilesDirs(null);
+        File[] externalFilesDirs = this.f28709a.getExternalFilesDirs(null);
         if (externalFilesDirs != null) {
             if (file != null) {
                 str = file.getAbsolutePath();
@@ -179,7 +179,7 @@ public final class m1 {
                 }
             }
         } else {
-            this.f29144b.getLogger().c(SentryLevel.INFO, "Not possible to read getExternalFilesDirs", new Object[0]);
+            this.f28710b.getLogger().c(SentryLevel.INFO, "Not possible to read getExternalFilesDirs", new Object[0]);
         }
         return null;
     }
@@ -192,17 +192,17 @@ public final class m1 {
             }
             return null;
         } catch (Throwable unused) {
-            this.f29144b.getLogger().c(SentryLevel.INFO, "Not possible to read external files directory", new Object[0]);
+            this.f28710b.getLogger().c(SentryLevel.INFO, "Not possible to read external files directory", new Object[0]);
             return null;
         }
     }
 
     public static m1 k(Context context, SentryAndroidOptions sentryAndroidOptions) {
-        if (f29141i == null) {
-            io.sentry.a1 a10 = f29142j.a();
+        if (f28707i == null) {
+            io.sentry.a1 a10 = f28708j.a();
             try {
-                if (f29141i == null) {
-                    f29141i = new m1(e1.g(context), sentryAndroidOptions);
+                if (f28707i == null) {
+                    f28707i = new m1(e1.g(context), sentryAndroidOptions);
                 }
                 if (a10 != null) {
                     a10.close();
@@ -218,21 +218,21 @@ public final class m1 {
                 throw th2;
             }
         }
-        return f29141i;
+        return f28707i;
     }
 
     private e.b m() {
         e.b bVar;
         Throwable th2;
         try {
-            bVar = io.sentry.android.core.internal.util.o.a(this.f29143a.getResources().getConfiguration().orientation);
+            bVar = io.sentry.android.core.internal.util.o.a(this.f28709a.getResources().getConfiguration().orientation);
             if (bVar == null) {
                 try {
-                    this.f29144b.getLogger().c(SentryLevel.INFO, "No device orientation available (ORIENTATION_SQUARE|ORIENTATION_UNDEFINED)", new Object[0]);
+                    this.f28710b.getLogger().c(SentryLevel.INFO, "No device orientation available (ORIENTATION_SQUARE|ORIENTATION_UNDEFINED)", new Object[0]);
                     return null;
                 } catch (Throwable th3) {
                     th2 = th3;
-                    this.f29144b.getLogger().b(SentryLevel.ERROR, "Error getting device orientation.", th2);
+                    this.f28710b.getLogger().b(SentryLevel.ERROR, "Error getting device orientation.", th2);
                     return bVar;
                 }
             }
@@ -244,8 +244,8 @@ public final class m1 {
     }
 
     private TimeZone p() {
-        if (this.f29145c.d() >= 24) {
-            LocaleList locales = this.f29143a.getResources().getConfiguration().getLocales();
+        if (this.f28711c.d() >= 24) {
+            LocaleList locales = this.f28709a.getResources().getConfiguration().getLocales();
             if (!locales.isEmpty()) {
                 return Calendar.getInstance(locales.get(0)).getTimeZone();
             }
@@ -257,7 +257,7 @@ public final class m1 {
         try {
             return Long.valueOf(statFs.getBlockCountLong() * statFs.getBlockSizeLong());
         } catch (Throwable th2) {
-            this.f29144b.getLogger().b(SentryLevel.ERROR, "Error getting total external storage amount.", th2);
+            this.f28710b.getLogger().b(SentryLevel.ERROR, "Error getting total external storage amount.", th2);
             return null;
         }
     }
@@ -266,7 +266,7 @@ public final class m1 {
         try {
             return Long.valueOf(statFs.getBlockCountLong() * statFs.getBlockSizeLong());
         } catch (Throwable th2) {
-            this.f29144b.getLogger().b(SentryLevel.ERROR, "Error getting total internal storage amount.", th2);
+            this.f28710b.getLogger().b(SentryLevel.ERROR, "Error getting total internal storage amount.", th2);
             return null;
         }
     }
@@ -275,7 +275,7 @@ public final class m1 {
         try {
             return Long.valueOf(statFs.getAvailableBlocksLong() * statFs.getBlockSizeLong());
         } catch (Throwable th2) {
-            this.f29144b.getLogger().b(SentryLevel.ERROR, "Error getting unused external storage amount.", th2);
+            this.f28710b.getLogger().b(SentryLevel.ERROR, "Error getting unused external storage amount.", th2);
             return null;
         }
     }
@@ -284,7 +284,7 @@ public final class m1 {
         try {
             return Long.valueOf(statFs.getAvailableBlocksLong() * statFs.getBlockSizeLong());
         } catch (Throwable th2) {
-            this.f29144b.getLogger().b(SentryLevel.ERROR, "Error getting unused internal storage amount.", th2);
+            this.f28710b.getLogger().b(SentryLevel.ERROR, "Error getting unused internal storage amount.", th2);
             return null;
         }
     }
@@ -308,12 +308,12 @@ public final class m1 {
         nVar.j("Android");
         nVar.m(Build.VERSION.RELEASE);
         nVar.h(Build.DISPLAY);
-        String m10 = e1.m(this.f29144b.getLogger());
+        String m10 = e1.m(this.f28710b.getLogger());
         if (m10 != null) {
             nVar.i(m10);
         }
-        if (this.f29144b.isEnableRootCheck()) {
-            nVar.k(Boolean.valueOf(new io.sentry.android.core.internal.util.t(this.f29143a, this.f29145c, this.f29144b.getLogger()).e()));
+        if (this.f28710b.isEnableRootCheck()) {
+            nVar.k(Boolean.valueOf(new io.sentry.android.core.internal.util.t(this.f28709a, this.f28711c, this.f28710b.getLogger()).e()));
         }
         return nVar;
     }
@@ -322,11 +322,11 @@ public final class m1 {
         Boolean bool;
         Intent d10 = d();
         if (d10 != null) {
-            eVar.M(e(d10, this.f29144b));
-            eVar.Q(v(d10, this.f29144b));
+            eVar.M(e(d10, this.f28710b));
+            eVar.Q(v(d10, this.f28710b));
             eVar.N(f(d10));
         }
-        int i10 = a.f29151a[this.f29144b.getConnectionStatusProvider().x0().ordinal()];
+        int i10 = a.f28717a[this.f28710b.getConnectionStatusProvider().z0().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 bool = null;
@@ -337,19 +337,19 @@ public final class m1 {
             bool = Boolean.FALSE;
         }
         eVar.f0(bool);
-        ActivityManager.MemoryInfo n10 = e1.n(this.f29143a, this.f29144b.getLogger());
+        ActivityManager.MemoryInfo n10 = e1.n(this.f28709a, this.f28710b.getLogger());
         if (n10 != null && z10) {
             eVar.W(Long.valueOf(n10.availMem));
             eVar.a0(Boolean.valueOf(n10.lowMemory));
         }
-        this.f29144b.getRuntimeManager().b(new Runnable() { // from class: io.sentry.android.core.k1
+        this.f28710b.getRuntimeManager().b(new Runnable() { // from class: io.sentry.android.core.k1
             @Override // java.lang.Runnable
             public final void run() {
                 m1.b(m1.this, eVar);
             }
         });
         if (eVar.I() == null) {
-            eVar.S(this.f29144b.getConnectionStatusProvider().S());
+            eVar.S(this.f28710b.getConnectionStatusProvider().S());
         }
     }
 
@@ -359,11 +359,11 @@ public final class m1 {
         io.sentry.protocol.e eVar = new io.sentry.protocol.e();
         eVar.b0(Build.MANUFACTURER);
         eVar.P(Build.BRAND);
-        eVar.V(e1.l(this.f29144b.getLogger()));
+        eVar.V(e1.l(this.f28710b.getLogger()));
         eVar.d0(Build.MODEL);
         eVar.e0(Build.ID);
         eVar.L(e1.j());
-        if (this.f29145c.d() >= 31) {
+        if (this.f28711c.d() >= 31) {
             StringBuilder sb2 = new StringBuilder();
             str = Build.SOC_MANUFACTURER;
             sb2.append(str);
@@ -373,11 +373,11 @@ public final class m1 {
             eVar.R(sb2.toString());
         }
         eVar.g0(m());
-        Boolean bool = this.f29146d;
+        Boolean bool = this.f28712d;
         if (bool != null) {
             eVar.n0(bool);
         }
-        DisplayMetrics k10 = e1.k(this.f29143a, this.f29144b.getLogger());
+        DisplayMetrics k10 = e1.k(this.f28709a, this.f28710b.getLogger());
         if (k10 != null) {
             eVar.m0(Integer.valueOf(k10.widthPixels));
             eVar.l0(Integer.valueOf(k10.heightPixels));
@@ -398,26 +398,26 @@ public final class m1 {
             eVar.i0(Double.valueOf(((Integer) Collections.max(c10)).doubleValue()));
             eVar.h0(Integer.valueOf(c10.size()));
         }
-        eVar.c0(this.f29150h);
-        if (z10 && this.f29144b.isCollectAdditionalContext()) {
+        eVar.c0(this.f28716h);
+        if (z10 && this.f28710b.isCollectAdditionalContext()) {
             x(eVar, z11);
         }
         return eVar;
     }
 
     public io.sentry.protocol.n l() {
-        return this.f29149g;
+        return this.f28715g;
     }
 
     public e1.a n() {
-        return this.f29147e;
+        return this.f28713e;
     }
 
     public e1.b o() {
-        return this.f29148f;
+        return this.f28714f;
     }
 
     public Long s() {
-        return this.f29150h;
+        return this.f28716h;
     }
 }

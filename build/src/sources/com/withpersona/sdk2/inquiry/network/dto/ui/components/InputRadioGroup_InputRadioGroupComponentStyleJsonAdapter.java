@@ -87,9 +87,9 @@ public final class InputRadioGroup_InputRadioGroupComponentStyleJsonAdapter exte
         AttributeStyles.InputRadioGroupTextColorStyle inputRadioGroupTextColorStyle = null;
         AttributeStyles.TextBasedTextColorStyle textBasedTextColorStyle = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -127,21 +127,21 @@ public final class InputRadioGroup_InputRadioGroupComponentStyleJsonAdapter exte
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (inputRadioGroupComponentStyle != null) {
             writer.l();
-            writer.A0(ViewProps.MARGIN);
+            writer.t0(ViewProps.MARGIN);
             this.nullableTextBasedMarginStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getMargin());
-            writer.A0(ViewProps.FONT_FAMILY);
+            writer.t0(ViewProps.FONT_FAMILY);
             this.nullableInputRadioGroupFontFamilyStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getFontFamily());
-            writer.A0(ViewProps.FONT_SIZE);
+            writer.t0(ViewProps.FONT_SIZE);
             this.nullableInputRadioGroupFontSizeStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getFontSize());
-            writer.A0(ViewProps.FONT_WEIGHT);
+            writer.t0(ViewProps.FONT_WEIGHT);
             this.nullableInputRadioGroupFontWeightStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getFontWeight());
-            writer.A0(ViewProps.LETTER_SPACING);
+            writer.t0(ViewProps.LETTER_SPACING);
             this.nullableInputRadioGroupLetterSpacingStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getLetterSpacing());
-            writer.A0(ViewProps.LINE_HEIGHT);
+            writer.t0(ViewProps.LINE_HEIGHT);
             this.nullableInputRadioGroupLineHeightStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getLineHeight());
-            writer.A0("textColor");
+            writer.t0("textColor");
             this.nullableInputRadioGroupTextColorStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getTextColor());
-            writer.A0("textColorHighlight");
+            writer.t0("textColorHighlight");
             this.nullableTextBasedTextColorStyleAdapter.toJson(writer, inputRadioGroupComponentStyle.getTextColorHighlight());
             writer.E();
             return;

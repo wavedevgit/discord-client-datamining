@@ -13,13 +13,13 @@ import kotlin.jvm.internal.Intrinsics;
 public class IdentityCredentialApiHiddenActivity extends Activity {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f3516i = new a(null);
+    public static final a f3560i = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private ResultReceiver f3517d;
+    private ResultReceiver f3561d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f3518e;
+    private boolean f3562e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -33,18 +33,18 @@ public class IdentityCredentialApiHiddenActivity extends Activity {
 
     private final void a(Bundle bundle) {
         if (bundle != null) {
-            this.f3518e = bundle.getBoolean("androidx.credentials.playservices.AWAITING_RESULT", false);
+            this.f3562e = bundle.getBoolean("androidx.credentials.playservices.AWAITING_RESULT", false);
         }
     }
 
     @Override // android.app.Activity
     protected void onActivityResult(int i10, int i11, Intent intent) {
         super.onActivityResult(i10, i11, intent);
-        ResultReceiver resultReceiver = this.f3517d;
+        ResultReceiver resultReceiver = this.f3561d;
         if (resultReceiver != null) {
-            m2.a.f37803b.f(resultReceiver, i10, i11, intent);
+            m2.a.f37783b.f(resultReceiver, i10, i11, intent);
         }
-        this.f3518e = false;
+        this.f3562e = false;
         finish();
     }
 
@@ -53,22 +53,22 @@ public class IdentityCredentialApiHiddenActivity extends Activity {
         super.onCreate(bundle);
         overridePendingTransition(0, 0);
         ResultReceiver resultReceiver = (ResultReceiver) getIntent().getParcelableExtra("RESULT_RECEIVER");
-        this.f3517d = resultReceiver;
+        this.f3561d = resultReceiver;
         if (resultReceiver == null) {
             finish();
         }
         a(bundle);
-        if (this.f3518e) {
+        if (this.f3562e) {
             return;
         }
         PendingIntent pendingIntent = (PendingIntent) getIntent().getParcelableExtra("EXTRA_GET_CREDENTIAL_INTENT");
         if (pendingIntent != null) {
-            startIntentSenderForResult(pendingIntent.getIntentSender(), m2.a.f37803b.b(), null, 0, 0, 0, null);
+            startIntentSenderForResult(pendingIntent.getIntentSender(), m2.a.f37783b.b(), null, 0, 0, 0, null);
             return;
         }
-        ResultReceiver resultReceiver2 = this.f3517d;
+        ResultReceiver resultReceiver2 = this.f3561d;
         if (resultReceiver2 != null) {
-            m2.a.f37803b.e(resultReceiver2, "GET_UNKNOWN", "Internal error");
+            m2.a.f37783b.e(resultReceiver2, "GET_UNKNOWN", "Internal error");
         }
         finish();
     }
@@ -76,7 +76,7 @@ public class IdentityCredentialApiHiddenActivity extends Activity {
     @Override // android.app.Activity
     protected void onSaveInstanceState(Bundle outState) {
         Intrinsics.checkNotNullParameter(outState, "outState");
-        outState.putBoolean("androidx.credentials.playservices.AWAITING_RESULT", this.f3518e);
+        outState.putBoolean("androidx.credentials.playservices.AWAITING_RESULT", this.f3562e);
         super.onSaveInstanceState(outState);
     }
 }

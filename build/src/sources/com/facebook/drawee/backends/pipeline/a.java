@@ -46,11 +46,11 @@ public class a extends com.facebook.drawee.controller.a {
     private ImageRequest L;
 
     /* renamed from: z  reason: collision with root package name */
-    private final Resources f10969z;
+    private final Resources f10598z;
 
     public a(Resources resources, h9.a aVar, ra.a aVar2, ra.a aVar3, Executor executor, w wVar, e eVar) {
         super(aVar, executor, null, null);
-        this.f10969z = resources;
+        this.f10598z = resources;
         this.A = new e9.a(resources, aVar2, aVar3);
         this.B = eVar;
         this.C = wVar;
@@ -138,8 +138,8 @@ public class a extends com.facebook.drawee.controller.a {
             if (b.d()) {
                 b.a("PipelineDraweeController#createDrawable");
             }
-            j.i(CloseableReference.I0(closeableReference));
-            sa.e eVar = (sa.e) closeableReference.D0();
+            j.i(CloseableReference.K0(closeableReference));
+            sa.e eVar = (sa.e) closeableReference.F0();
             p0(eVar);
             Drawable o02 = o0(this.G, eVar);
             if (o02 != null) {
@@ -187,7 +187,7 @@ public class a extends com.facebook.drawee.controller.a {
             w wVar = this.C;
             if (wVar != null && (cacheKey = this.D) != null) {
                 CloseableReference closeableReference = wVar.get(cacheKey);
-                if (closeableReference != null && !((sa.e) closeableReference.D0()).J1().a()) {
+                if (closeableReference != null && !((sa.e) closeableReference.F0()).J1().a()) {
                     closeableReference.close();
                     return null;
                 }
@@ -220,7 +220,7 @@ public class a extends com.facebook.drawee.controller.a {
     /* renamed from: i0 */
     public int r(CloseableReference closeableReference) {
         if (closeableReference != null) {
-            return closeableReference.E0();
+            return closeableReference.G0();
         }
         return 0;
     }
@@ -238,8 +238,8 @@ public class a extends com.facebook.drawee.controller.a {
     @Override // com.facebook.drawee.controller.a
     /* renamed from: j0 */
     public ImageInfo s(CloseableReference closeableReference) {
-        j.i(CloseableReference.I0(closeableReference));
-        return ((sa.e) closeableReference.D0()).z();
+        j.i(CloseableReference.K0(closeableReference));
+        return ((sa.e) closeableReference.F0()).z();
     }
 
     public synchronized RequestListener k0() {

@@ -6,14 +6,14 @@ import android.util.Log;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f46117a = "f";
+    private static final String f46191a = "f";
 
     public static void a(String str) {
         int glGetError = GLES20.glGetError();
         if (glGetError == 0) {
             return;
         }
-        String str2 = f46117a;
+        String str2 = f46191a;
         Log.e(str2, str + ": glError " + glGetError);
         throw new RuntimeException(str + ": glError " + glGetError);
     }
@@ -22,7 +22,7 @@ public abstract class f {
         int glCreateProgram = GLES20.glCreateProgram();
         a("glCreateProgram");
         if (glCreateProgram == 0) {
-            Log.e(f46117a, "Could not create glProgram");
+            Log.e(f46191a, "Could not create glProgram");
         }
         GLES20.glAttachShader(glCreateProgram, i10);
         a("glAttachShader");
@@ -32,7 +32,7 @@ public abstract class f {
         int[] iArr = new int[1];
         GLES20.glGetProgramiv(glCreateProgram, 35714, iArr, 0);
         if (iArr[0] != 1) {
-            String str = f46117a;
+            String str = f46191a;
             Log.e(str, "Could not link glProgram: ");
             Log.e(str, GLES20.glGetProgramInfoLog(glCreateProgram));
             GLES20.glDeleteProgram(glCreateProgram);
@@ -49,7 +49,7 @@ public abstract class f {
         int[] iArr = new int[1];
         GLES20.glGetShaderiv(glCreateShader, 35713, iArr, 0);
         if (iArr[0] == 0) {
-            String str2 = f46117a;
+            String str2 = f46191a;
             Log.e(str2, "Could not compile shader " + i10 + ":");
             StringBuilder sb2 = new StringBuilder();
             sb2.append(" ");

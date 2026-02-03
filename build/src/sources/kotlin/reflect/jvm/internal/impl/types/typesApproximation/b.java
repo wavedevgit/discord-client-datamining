@@ -8,36 +8,36 @@ import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeChecker;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TypeParameterDescriptor f36059a;
+    private final TypeParameterDescriptor f35835a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final KotlinType f36060b;
+    private final KotlinType f35836b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final KotlinType f36061c;
+    private final KotlinType f35837c;
 
     public b(TypeParameterDescriptor typeParameter, KotlinType inProjection, KotlinType outProjection) {
         Intrinsics.checkNotNullParameter(typeParameter, "typeParameter");
         Intrinsics.checkNotNullParameter(inProjection, "inProjection");
         Intrinsics.checkNotNullParameter(outProjection, "outProjection");
-        this.f36059a = typeParameter;
-        this.f36060b = inProjection;
-        this.f36061c = outProjection;
+        this.f35835a = typeParameter;
+        this.f35836b = inProjection;
+        this.f35837c = outProjection;
     }
 
     public final KotlinType a() {
-        return this.f36060b;
+        return this.f35836b;
     }
 
     public final KotlinType b() {
-        return this.f36061c;
+        return this.f35837c;
     }
 
     public final TypeParameterDescriptor c() {
-        return this.f36059a;
+        return this.f35835a;
     }
 
     public final boolean d() {
-        return KotlinTypeChecker.DEFAULT.isSubtypeOf(this.f36060b, this.f36061c);
+        return KotlinTypeChecker.DEFAULT.isSubtypeOf(this.f35836b, this.f35837c);
     }
 }

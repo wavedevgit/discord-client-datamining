@@ -6,10 +6,10 @@ import java.util.Map;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static Object f21718a = new b();
+    private static Object f21294a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static Object f21719b = new a();
+    private static Object f21295b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static class a {
@@ -36,7 +36,7 @@ public abstract class d {
     }
 
     public static Object b() {
-        return f21719b;
+        return f21295b;
     }
 
     public static void c(Object obj, String str, Object obj2) {
@@ -44,7 +44,7 @@ public abstract class d {
     }
 
     public static Object d() {
-        return f21718a;
+        return f21294a;
     }
 
     public static boolean e(Object obj) {

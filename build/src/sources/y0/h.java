@@ -15,22 +15,22 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public final class h implements Iterable, KMappedMarker {
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f53875p = new a(null);
+    public static final a f53850p = new a(null);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final h f53876q = new h(0, 0, 0, null);
+    private static final h f53851q = new h(0, 0, 0, null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f53877d;
+    private final long f53852d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f53878e;
+    private final long f53853e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final long f53879i;
+    private final long f53854i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final long[] f53880o;
+    private final long[] f53855o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -39,7 +39,7 @@ public final class h implements Iterable, KMappedMarker {
         }
 
         public final h a() {
-            return h.f53876q;
+            return h.f53851q;
         }
 
         private a() {
@@ -50,19 +50,19 @@ public final class h implements Iterable, KMappedMarker {
     static final class b extends kotlin.coroutines.jvm.internal.j implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f53881d;
+        Object f53856d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f53882e;
+        int f53857e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f53883i;
+        int f53858i;
 
         /* renamed from: o  reason: collision with root package name */
-        int f53884o;
+        int f53859o;
 
         /* renamed from: p  reason: collision with root package name */
-        private /* synthetic */ Object f53885p;
+        private /* synthetic */ Object f53860p;
 
         b(Continuation continuation) {
             super(2, continuation);
@@ -71,7 +71,7 @@ public final class h implements Iterable, KMappedMarker {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             b bVar = new b(continuation);
-            bVar.f53885p = obj;
+            bVar.f53860p = obj;
             return bVar;
         }
 
@@ -109,32 +109,32 @@ public final class h implements Iterable, KMappedMarker {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(kotlin.sequences.j jVar, Continuation continuation) {
-            return ((b) create(jVar, continuation)).invokeSuspend(Unit.f33298a);
+            return ((b) create(jVar, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
     private h(long j10, long j11, long j12, long[] jArr) {
-        this.f53877d = j10;
-        this.f53878e = j11;
-        this.f53879i = j12;
-        this.f53880o = jArr;
+        this.f53852d = j10;
+        this.f53853e = j11;
+        this.f53854i = j12;
+        this.f53855o = jArr;
     }
 
     public final boolean g(long j10) {
         long[] jArr;
-        long j11 = j10 - this.f53879i;
+        long j11 = j10 - this.f53854i;
         long j12 = 0;
         if (Intrinsics.compare(j11, j12) >= 0 && Intrinsics.compare(j11, 64) < 0) {
-            if (((1 << ((int) j11)) & this.f53878e) == 0) {
+            if (((1 << ((int) j11)) & this.f53853e) == 0) {
                 return false;
             }
             return true;
         } else if (Intrinsics.compare(j11, 64) >= 0 && Intrinsics.compare(j11, (long) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) < 0) {
-            if (((1 << (((int) j11) - 64)) & this.f53877d) == 0) {
+            if (((1 << (((int) j11) - 64)) & this.f53852d) == 0) {
                 return false;
             }
             return true;
-        } else if (Intrinsics.compare(j11, j12) > 0 || (jArr = this.f53880o) == null || i.a(jArr, j10) < 0) {
+        } else if (Intrinsics.compare(j11, j12) > 0 || (jArr = this.f53855o) == null || i.a(jArr, j10) < 0) {
             return false;
         } else {
             return true;
@@ -142,17 +142,17 @@ public final class h implements Iterable, KMappedMarker {
     }
 
     public final long h(long j10) {
-        long[] jArr = this.f53880o;
+        long[] jArr = this.f53855o;
         if (jArr != null) {
             return jArr[0];
         }
-        long j11 = this.f53878e;
+        long j11 = this.f53853e;
         if (j11 != 0) {
-            return this.f53879i + Long.numberOfTrailingZeros(j11);
+            return this.f53854i + Long.numberOfTrailingZeros(j11);
         }
-        long j12 = this.f53877d;
+        long j12 = this.f53852d;
         if (j12 != 0) {
-            return this.f53879i + 64 + Long.numberOfTrailingZeros(j12);
+            return this.f53854i + 64 + Long.numberOfTrailingZeros(j12);
         }
         return j10;
     }
@@ -161,29 +161,29 @@ public final class h implements Iterable, KMappedMarker {
         long j11;
         long j12;
         long[] jArr;
-        long j13 = j10 - this.f53879i;
+        long j13 = j10 - this.f53854i;
         long j14 = 0;
         if (Intrinsics.compare(j13, j14) >= 0 && Intrinsics.compare(j13, 64) < 0) {
             long j15 = 1 << ((int) j13);
-            long j16 = this.f53878e;
+            long j16 = this.f53853e;
             if ((j16 & j15) == 0) {
-                return new h(this.f53877d, j16 | j15, this.f53879i, this.f53880o);
+                return new h(this.f53852d, j16 | j15, this.f53854i, this.f53855o);
             }
         } else {
             long j17 = 64;
             if (Intrinsics.compare(j13, j17) >= 0 && Intrinsics.compare(j13, (long) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) < 0) {
                 long j18 = 1 << (((int) j13) - 64);
-                long j19 = this.f53877d;
+                long j19 = this.f53852d;
                 if ((j19 & j18) == 0) {
-                    return new h(j19 | j18, this.f53878e, this.f53879i, this.f53880o);
+                    return new h(j19 | j18, this.f53853e, this.f53854i, this.f53855o);
                 }
             } else {
                 long j20 = (long) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                 if (Intrinsics.compare(j13, j20) >= 0) {
                     if (!g(j10)) {
-                        long j21 = this.f53877d;
-                        long j22 = this.f53878e;
-                        long j23 = this.f53879i;
+                        long j21 = this.f53852d;
+                        long j22 = this.f53853e;
+                        long j23 = this.f53854i;
                         long j24 = 1;
                         long j25 = ((j10 + j24) / j17) * j17;
                         if (Intrinsics.compare(j25, j14) < 0) {
@@ -195,7 +195,7 @@ public final class h implements Iterable, KMappedMarker {
                             if (Intrinsics.compare(j23, j25) < 0) {
                                 if (j22 != 0) {
                                     if (gVar == null) {
-                                        gVar = new g(this.f53880o);
+                                        gVar = new g(this.f53855o);
                                     }
                                     int i10 = 0;
                                     while (i10 < 64) {
@@ -222,18 +222,18 @@ public final class h implements Iterable, KMappedMarker {
                             }
                         }
                         if (gVar == null || (jArr = gVar.b()) == null) {
-                            jArr = this.f53880o;
+                            jArr = this.f53855o;
                         }
                         return new h(j26, j11, j12, jArr).i(j10);
                     }
                 } else {
-                    long[] jArr2 = this.f53880o;
+                    long[] jArr2 = this.f53855o;
                     if (jArr2 == null) {
-                        return new h(this.f53877d, this.f53878e, this.f53879i, new long[]{j10});
+                        return new h(this.f53852d, this.f53853e, this.f53854i, new long[]{j10});
                     }
                     int a10 = i.a(jArr2, j10);
                     if (a10 < 0) {
-                        return new h(this.f53877d, this.f53878e, this.f53879i, i.d(jArr2, -(a10 + 1), j10));
+                        return new h(this.f53852d, this.f53853e, this.f53854i, i.d(jArr2, -(a10 + 1), j10));
                     }
                 }
             }

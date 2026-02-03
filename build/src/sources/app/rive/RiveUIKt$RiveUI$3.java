@@ -3,8 +3,7 @@ package app.rive;
 import app.rive.core.CommandQueue;
 import app.rive.core.StateMachineHandle;
 import app.rive.core.ViewModelInstanceHandle;
-import ir.h;
-import js.a0;
+import jr.h;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.c;
@@ -16,8 +15,9 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.FlowCollector;
-import or.b;
+import ks.a0;
 import org.jetbrains.annotations.NotNull;
+import pr.b;
 import w0.q;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @e(c = "app.rive.RiveUIKt$RiveUI$3", f = "RiveUI.kt", l = {189}, m = "invokeSuspend")
@@ -68,11 +68,11 @@ final class RiveUIKt$RiveUI$3 extends k implements Function2<CoroutineScope, Con
                     @Override // kotlin.jvm.functions.Function0
                     @NotNull
                     public final String invoke() {
-                        String m195toStringimpl = StateMachineHandle.m195toStringimpl(j10);
-                        return "No view model instance to bind for " + m195toStringimpl;
+                        String m197toStringimpl = StateMachineHandle.m197toStringimpl(j10);
+                        return "No view model instance to bind for " + m197toStringimpl;
                     }
                 });
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
             RiveLog.INSTANCE.getLogger().d(ViewModelInstanceKt.VM_INSTANCE_TAG, new Function0<String>() { // from class: app.rive.RiveUIKt$RiveUI$3.2
                 {
@@ -82,11 +82,11 @@ final class RiveUIKt$RiveUI$3 extends k implements Function2<CoroutineScope, Con
                 @Override // kotlin.jvm.functions.Function0
                 @NotNull
                 public final String invoke() {
-                    String m202toStringimpl = ViewModelInstanceHandle.m202toStringimpl(ViewModelInstance.this.m46getInstanceHandleVPLto4w$kotlin_release());
-                    return "Binding view model instance " + m202toStringimpl;
+                    String m204toStringimpl = ViewModelInstanceHandle.m204toStringimpl(ViewModelInstance.this.m48getInstanceHandleVPLto4w$kotlin_release());
+                    return "Binding view model instance " + m204toStringimpl;
                 }
             });
-            this.$commandQueue.m109bindViewModelInstanceeiyHz8(this.$stateMachineHandle, this.$viewModelInstance.m46getInstanceHandleVPLto4w$kotlin_release());
+            this.$commandQueue.m111bindViewModelInstanceeiyHz8(this.$stateMachineHandle, this.$viewModelInstance.m48getInstanceHandleVPLto4w$kotlin_release());
             RiveUIKt.RiveUI$lambda$4(this.$isSettled$delegate, false);
             a0 dirtyFlow$kotlin_release = this.$viewModelInstance.getDirtyFlow$kotlin_release();
             final long j11 = this.$stateMachineHandle;
@@ -108,12 +108,12 @@ final class RiveUIKt$RiveUI$3 extends k implements Function2<CoroutineScope, Con
                         @Override // kotlin.jvm.functions.Function0
                         @NotNull
                         public final String invoke() {
-                            String m195toStringimpl = StateMachineHandle.m195toStringimpl(j12);
-                            return "View model instance dirty, unsettling " + m195toStringimpl;
+                            String m197toStringimpl = StateMachineHandle.m197toStringimpl(j12);
+                            return "View model instance dirty, unsettling " + m197toStringimpl;
                         }
                     });
                     RiveUIKt.RiveUI$lambda$4(qVar, false);
-                    return Unit.f33298a;
+                    return Unit.f33074a;
                 }
             };
             this.label = 1;
@@ -126,6 +126,6 @@ final class RiveUIKt$RiveUI$3 extends k implements Function2<CoroutineScope, Con
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RiveUIKt$RiveUI$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((RiveUIKt$RiveUI$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

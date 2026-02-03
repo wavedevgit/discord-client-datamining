@@ -1,73 +1,27 @@
 package rs;
 
+import j$.time.DayOfWeek;
+import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.Intrinsics;
-import rs.c;
-import rs.f;
-import rs.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface d extends c, f, o.a, o.c {
+public abstract class d {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public static void a(d dVar, ts.o structure) {
-            Intrinsics.checkNotNullParameter(structure, "structure");
-            dVar.v(structure);
-        }
+    public /* synthetic */ class a {
 
-        public static void b(d dVar, ts.o structure) {
-            Intrinsics.checkNotNullParameter(structure, "structure");
-            dVar.v(structure);
-        }
-
-        public static void c(d dVar, n format) {
-            Intrinsics.checkNotNullParameter(format, "format");
-            c.a.a(dVar, format);
-        }
-
-        public static void d(d dVar, h0 padding) {
-            Intrinsics.checkNotNullParameter(padding, "padding");
-            c.a.b(dVar, padding);
-        }
-
-        public static void e(d dVar, s names) {
-            Intrinsics.checkNotNullParameter(names, "names");
-            c.a.c(dVar, names);
-        }
-
-        public static void f(d dVar, h0 padding) {
-            Intrinsics.checkNotNullParameter(padding, "padding");
-            f.a.a(dVar, padding);
-        }
-
-        public static void g(d dVar, h0 padding) {
-            Intrinsics.checkNotNullParameter(padding, "padding");
-            f.a.b(dVar, padding);
-        }
-
-        public static void h(d dVar, f0 names) {
-            Intrinsics.checkNotNullParameter(names, "names");
-            c.a.d(dVar, names);
-        }
-
-        public static void i(d dVar, h0 padding) {
-            Intrinsics.checkNotNullParameter(padding, "padding");
-            c.a.e(dVar, padding);
-        }
-
-        public static void j(d dVar, h0 padding) {
-            Intrinsics.checkNotNullParameter(padding, "padding");
-            f.a.c(dVar, padding);
-        }
-
-        public static void k(d dVar, int i10, int i11) {
-            f.a.d(dVar, i10, i11);
-        }
-
-        public static void l(d dVar, h0 padding) {
-            Intrinsics.checkNotNullParameter(padding, "padding");
-            c.a.f(dVar, padding);
-        }
+        /* renamed from: a  reason: collision with root package name */
+        public static final /* synthetic */ EnumEntries f48673a = qr.a.a(DayOfWeek.values());
     }
 
-    void v(ts.o oVar);
+    public static final DayOfWeek a(int i10) {
+        if (1 <= i10 && i10 < 8) {
+            return (DayOfWeek) a.f48673a.get(i10 - 1);
+        }
+        throw new IllegalArgumentException(("Expected ISO day-of-week number in 1..7, got " + i10).toString());
+    }
+
+    public static final int b(DayOfWeek dayOfWeek) {
+        Intrinsics.checkNotNullParameter(dayOfWeek, "<this>");
+        return dayOfWeek.ordinal() + 1;
+    }
 }

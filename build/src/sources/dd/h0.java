@@ -17,7 +17,7 @@ import tc.z;
 public final class h0 implements tc.k {
 
     /* renamed from: t  reason: collision with root package name */
-    public static final tc.p f21828t = new tc.p() { // from class: dd.g0
+    public static final tc.p f21404t = new tc.p() { // from class: dd.g0
         @Override // tc.p
         public final tc.k[] b() {
             return h0.b();
@@ -25,61 +25,61 @@ public final class h0 implements tc.k {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f21829a;
+    private final int f21405a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f21830b;
+    private final int f21406b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f21831c;
+    private final List f21407c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ne.h0 f21832d;
+    private final ne.h0 f21408d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final SparseIntArray f21833e;
+    private final SparseIntArray f21409e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final i0.c f21834f;
+    private final i0.c f21410f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final SparseArray f21835g;
+    private final SparseArray f21411g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final SparseBooleanArray f21836h;
+    private final SparseBooleanArray f21412h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final SparseBooleanArray f21837i;
+    private final SparseBooleanArray f21413i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final f0 f21838j;
+    private final f0 f21414j;
 
     /* renamed from: k  reason: collision with root package name */
-    private e0 f21839k;
+    private e0 f21415k;
 
     /* renamed from: l  reason: collision with root package name */
-    private tc.m f21840l;
+    private tc.m f21416l;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f21841m;
+    private int f21417m;
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f21842n;
+    private boolean f21418n;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f21843o;
+    private boolean f21419o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f21844p;
+    private boolean f21420p;
 
     /* renamed from: q  reason: collision with root package name */
-    private i0 f21845q;
+    private i0 f21421q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f21846r;
+    private int f21422r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f21847s;
+    private int f21423s;
 
     public h0() {
         this(0);
@@ -90,76 +90,76 @@ public final class h0 implements tc.k {
     }
 
     static /* synthetic */ int k(h0 h0Var) {
-        int i10 = h0Var.f21841m;
-        h0Var.f21841m = i10 + 1;
+        int i10 = h0Var.f21417m;
+        h0Var.f21417m = i10 + 1;
         return i10;
     }
 
     private boolean u(tc.l lVar) {
-        byte[] e10 = this.f21832d.e();
-        if (9400 - this.f21832d.f() < 188) {
-            int a10 = this.f21832d.a();
+        byte[] e10 = this.f21408d.e();
+        if (9400 - this.f21408d.f() < 188) {
+            int a10 = this.f21408d.a();
             if (a10 > 0) {
-                System.arraycopy(e10, this.f21832d.f(), e10, 0, a10);
+                System.arraycopy(e10, this.f21408d.f(), e10, 0, a10);
             }
-            this.f21832d.S(e10, a10);
+            this.f21408d.S(e10, a10);
         }
-        while (this.f21832d.a() < 188) {
-            int g10 = this.f21832d.g();
+        while (this.f21408d.a() < 188) {
+            int g10 = this.f21408d.g();
             int read = lVar.read(e10, g10, 9400 - g10);
             if (read == -1) {
                 return false;
             }
-            this.f21832d.T(g10 + read);
+            this.f21408d.T(g10 + read);
         }
         return true;
     }
 
     private int v() {
-        int f10 = this.f21832d.f();
-        int g10 = this.f21832d.g();
-        int a10 = j0.a(this.f21832d.e(), f10, g10);
-        this.f21832d.U(a10);
+        int f10 = this.f21408d.f();
+        int g10 = this.f21408d.g();
+        int a10 = j0.a(this.f21408d.e(), f10, g10);
+        this.f21408d.U(a10);
         int i10 = a10 + 188;
         if (i10 > g10) {
-            int i11 = this.f21846r + (a10 - f10);
-            this.f21846r = i11;
-            if (this.f21829a == 2 && i11 > 376) {
+            int i11 = this.f21422r + (a10 - f10);
+            this.f21422r = i11;
+            if (this.f21405a == 2 && i11 > 376) {
                 throw l0.a("Cannot find sync byte. Most likely not a Transport Stream.", null);
             }
             return i10;
         }
-        this.f21846r = 0;
+        this.f21422r = 0;
         return i10;
     }
 
     private void w(long j10) {
-        if (!this.f21843o) {
-            this.f21843o = true;
-            if (this.f21838j.b() != -9223372036854775807L) {
-                e0 e0Var = new e0(this.f21838j.c(), this.f21838j.b(), j10, this.f21847s, this.f21830b);
-                this.f21839k = e0Var;
-                this.f21840l.q(e0Var.b());
+        if (!this.f21419o) {
+            this.f21419o = true;
+            if (this.f21414j.b() != -9223372036854775807L) {
+                e0 e0Var = new e0(this.f21414j.c(), this.f21414j.b(), j10, this.f21423s, this.f21406b);
+                this.f21415k = e0Var;
+                this.f21416l.q(e0Var.b());
                 return;
             }
-            this.f21840l.q(new z.b(this.f21838j.b()));
+            this.f21416l.q(new z.b(this.f21414j.b()));
         }
     }
 
     private void x() {
-        this.f21836h.clear();
-        this.f21835g.clear();
-        SparseArray a10 = this.f21834f.a();
+        this.f21412h.clear();
+        this.f21411g.clear();
+        SparseArray a10 = this.f21410f.a();
         int size = a10.size();
         for (int i10 = 0; i10 < size; i10++) {
-            this.f21835g.put(a10.keyAt(i10), (i0) a10.valueAt(i10));
+            this.f21411g.put(a10.keyAt(i10), (i0) a10.valueAt(i10));
         }
-        this.f21835g.put(0, new c0(new a()));
-        this.f21845q = null;
+        this.f21411g.put(0, new c0(new a()));
+        this.f21421q = null;
     }
 
     private boolean y(int i10) {
-        if (this.f21829a != 2 && !this.f21842n && this.f21837i.get(i10, false)) {
+        if (this.f21405a != 2 && !this.f21418n && this.f21413i.get(i10, false)) {
             return false;
         }
         return true;
@@ -170,15 +170,15 @@ public final class h0 implements tc.k {
         boolean z10;
         e0 e0Var;
         boolean z11;
-        if (this.f21829a != 2) {
+        if (this.f21405a != 2) {
             z10 = true;
         } else {
             z10 = false;
         }
         ne.a.g(z10);
-        int size = this.f21831c.size();
+        int size = this.f21407c.size();
         for (int i10 = 0; i10 < size; i10++) {
-            s0 s0Var = (s0) this.f21831c.get(i10);
+            s0 s0Var = (s0) this.f21407c.get(i10);
             if (s0Var.e() == -9223372036854775807L) {
                 z11 = true;
             } else {
@@ -196,20 +196,20 @@ public final class h0 implements tc.k {
                 s0Var.h(j11);
             }
         }
-        if (j11 != 0 && (e0Var = this.f21839k) != null) {
+        if (j11 != 0 && (e0Var = this.f21415k) != null) {
             e0Var.h(j11);
         }
-        this.f21832d.Q(0);
-        this.f21833e.clear();
-        for (int i11 = 0; i11 < this.f21835g.size(); i11++) {
-            ((i0) this.f21835g.valueAt(i11)).c();
+        this.f21408d.Q(0);
+        this.f21409e.clear();
+        for (int i11 = 0; i11 < this.f21411g.size(); i11++) {
+            ((i0) this.f21411g.valueAt(i11)).c();
         }
-        this.f21846r = 0;
+        this.f21422r = 0;
     }
 
     @Override // tc.k
     public void c(tc.m mVar) {
-        this.f21840l = mVar;
+        this.f21416l = mVar;
     }
 
     @Override // tc.k
@@ -220,35 +220,35 @@ public final class h0 implements tc.k {
         long j10;
         int i11;
         long length = lVar.getLength();
-        if (this.f21842n) {
-            if (length != -1 && this.f21829a != 2 && !this.f21838j.d()) {
-                return this.f21838j.e(lVar, yVar, this.f21847s);
+        if (this.f21418n) {
+            if (length != -1 && this.f21405a != 2 && !this.f21414j.d()) {
+                return this.f21414j.e(lVar, yVar, this.f21423s);
             }
             w(length);
-            if (this.f21844p) {
-                this.f21844p = false;
+            if (this.f21420p) {
+                this.f21420p = false;
                 a(0L, 0L);
                 if (lVar.getPosition() != 0) {
-                    yVar.f49518a = 0L;
+                    yVar.f49790a = 0L;
                     return 1;
                 }
             }
-            e0 e0Var = this.f21839k;
+            e0 e0Var = this.f21415k;
             if (e0Var != null && e0Var.d()) {
-                return this.f21839k.c(lVar, yVar);
+                return this.f21415k.c(lVar, yVar);
             }
         }
         if (!u(lVar)) {
             return -1;
         }
         int v10 = v();
-        int g10 = this.f21832d.g();
+        int g10 = this.f21408d.g();
         if (v10 > g10) {
             return 0;
         }
-        int q10 = this.f21832d.q();
+        int q10 = this.f21408d.q();
         if ((8388608 & q10) != 0) {
-            this.f21832d.U(v10);
+            this.f21408d.U(v10);
             return 0;
         }
         if ((4194304 & q10) != 0) {
@@ -263,21 +263,21 @@ public final class h0 implements tc.k {
             z10 = false;
         }
         if ((q10 & 16) != 0) {
-            i0Var = (i0) this.f21835g.get(i12);
+            i0Var = (i0) this.f21411g.get(i12);
         } else {
             i0Var = null;
         }
         if (i0Var == null) {
-            this.f21832d.U(v10);
+            this.f21408d.U(v10);
             return 0;
         }
-        if (this.f21829a != 2) {
+        if (this.f21405a != 2) {
             int i13 = q10 & 15;
             j10 = -1;
-            int i14 = this.f21833e.get(i12, i13 - 1);
-            this.f21833e.put(i12, i13);
+            int i14 = this.f21409e.get(i12, i13 - 1);
+            this.f21409e.put(i12, i13);
             if (i14 == i13) {
-                this.f21832d.U(v10);
+                this.f21408d.U(v10);
                 return 0;
             } else if (i13 != ((i14 + 1) & 15)) {
                 i0Var.c();
@@ -286,25 +286,25 @@ public final class h0 implements tc.k {
             j10 = -1;
         }
         if (z10) {
-            int H = this.f21832d.H();
-            if ((this.f21832d.H() & 64) != 0) {
+            int H = this.f21408d.H();
+            if ((this.f21408d.H() & 64) != 0) {
                 i11 = 2;
             } else {
                 i11 = 0;
             }
             i10 |= i11;
-            this.f21832d.V(H - 1);
+            this.f21408d.V(H - 1);
         }
-        boolean z11 = this.f21842n;
+        boolean z11 = this.f21418n;
         if (y(i12)) {
-            this.f21832d.T(v10);
-            i0Var.b(this.f21832d, i10);
-            this.f21832d.T(g10);
+            this.f21408d.T(v10);
+            i0Var.b(this.f21408d, i10);
+            this.f21408d.T(g10);
         }
-        if (this.f21829a != 2 && !z11 && this.f21842n && length != j10) {
-            this.f21844p = true;
+        if (this.f21405a != 2 && !z11 && this.f21418n && length != j10) {
+            this.f21420p = true;
         }
-        this.f21832d.U(v10);
+        this.f21408d.U(v10);
         return 0;
     }
 
@@ -319,7 +319,7 @@ public final class h0 implements tc.k {
     public boolean f(tc.l r7) {
         /*
             r6 = this;
-            ne.h0 r0 = r6.f21832d
+            ne.h0 r0 = r6.f21408d
             byte[] r0 = r0.e()
             r1 = 940(0x3ac, float:1.317E-42)
             r2 = 0
@@ -365,24 +365,24 @@ public final class h0 implements tc.k {
     }
 
     public h0(int i10, s0 s0Var, i0.c cVar, int i11) {
-        this.f21834f = (i0.c) ne.a.e(cVar);
-        this.f21830b = i11;
-        this.f21829a = i10;
+        this.f21410f = (i0.c) ne.a.e(cVar);
+        this.f21406b = i11;
+        this.f21405a = i10;
         if (i10 != 1 && i10 != 2) {
             ArrayList arrayList = new ArrayList();
-            this.f21831c = arrayList;
+            this.f21407c = arrayList;
             arrayList.add(s0Var);
         } else {
-            this.f21831c = Collections.singletonList(s0Var);
+            this.f21407c = Collections.singletonList(s0Var);
         }
-        this.f21832d = new ne.h0(new byte[9400], 0);
-        this.f21836h = new SparseBooleanArray();
-        this.f21837i = new SparseBooleanArray();
-        this.f21835g = new SparseArray();
-        this.f21833e = new SparseIntArray();
-        this.f21838j = new f0(i11);
-        this.f21840l = tc.m.f49489l;
-        this.f21847s = -1;
+        this.f21408d = new ne.h0(new byte[9400], 0);
+        this.f21412h = new SparseBooleanArray();
+        this.f21413i = new SparseBooleanArray();
+        this.f21411g = new SparseArray();
+        this.f21409e = new SparseIntArray();
+        this.f21414j = new f0(i11);
+        this.f21416l = tc.m.f49761l;
+        this.f21423s = -1;
         x();
     }
 
@@ -395,7 +395,7 @@ public final class h0 implements tc.k {
     public class a implements b0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ne.g0 f21848a = new ne.g0(new byte[4]);
+        private final ne.g0 f21424a = new ne.g0(new byte[4]);
 
         public a() {
         }
@@ -406,21 +406,21 @@ public final class h0 implements tc.k {
                 h0Var.V(6);
                 int a10 = h0Var.a() / 4;
                 for (int i10 = 0; i10 < a10; i10++) {
-                    h0Var.k(this.f21848a, 4);
-                    int h10 = this.f21848a.h(16);
-                    this.f21848a.r(3);
+                    h0Var.k(this.f21424a, 4);
+                    int h10 = this.f21424a.h(16);
+                    this.f21424a.r(3);
                     if (h10 == 0) {
-                        this.f21848a.r(13);
+                        this.f21424a.r(13);
                     } else {
-                        int h11 = this.f21848a.h(13);
-                        if (h0.this.f21835g.get(h11) == null) {
-                            h0.this.f21835g.put(h11, new c0(new b(h11)));
+                        int h11 = this.f21424a.h(13);
+                        if (h0.this.f21411g.get(h11) == null) {
+                            h0.this.f21411g.put(h11, new c0(new b(h11)));
                             h0.k(h0.this);
                         }
                     }
                 }
-                if (h0.this.f21829a != 2) {
-                    h0.this.f21835g.remove(0);
+                if (h0.this.f21405a != 2) {
+                    h0.this.f21411g.remove(0);
                 }
             }
         }
@@ -434,19 +434,19 @@ public final class h0 implements tc.k {
     private class b implements b0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ne.g0 f21850a = new ne.g0(new byte[5]);
+        private final ne.g0 f21426a = new ne.g0(new byte[5]);
 
         /* renamed from: b  reason: collision with root package name */
-        private final SparseArray f21851b = new SparseArray();
+        private final SparseArray f21427b = new SparseArray();
 
         /* renamed from: c  reason: collision with root package name */
-        private final SparseIntArray f21852c = new SparseIntArray();
+        private final SparseIntArray f21428c = new SparseIntArray();
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f21853d;
+        private final int f21429d;
 
         public b(int i10) {
-            this.f21853d = i10;
+            this.f21429d = i10;
         }
 
         private i0.b c(ne.h0 h0Var, int i10) {
@@ -517,97 +517,97 @@ public final class h0 implements tc.k {
             int i10;
             i0 b10;
             if (h0Var.H() == 2) {
-                if (h0.this.f21829a != 1 && h0.this.f21829a != 2 && h0.this.f21841m != 1) {
-                    s0Var = new s0(((s0) h0.this.f21831c.get(0)).c());
-                    h0.this.f21831c.add(s0Var);
+                if (h0.this.f21405a != 1 && h0.this.f21405a != 2 && h0.this.f21417m != 1) {
+                    s0Var = new s0(((s0) h0.this.f21407c.get(0)).c());
+                    h0.this.f21407c.add(s0Var);
                 } else {
-                    s0Var = (s0) h0.this.f21831c.get(0);
+                    s0Var = (s0) h0.this.f21407c.get(0);
                 }
                 if ((h0Var.H() & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
                     h0Var.V(1);
                     int N = h0Var.N();
                     int i11 = 3;
                     h0Var.V(3);
-                    h0Var.k(this.f21850a, 2);
-                    this.f21850a.r(3);
+                    h0Var.k(this.f21426a, 2);
+                    this.f21426a.r(3);
                     int i12 = 13;
-                    h0.this.f21847s = this.f21850a.h(13);
-                    h0Var.k(this.f21850a, 2);
+                    h0.this.f21423s = this.f21426a.h(13);
+                    h0Var.k(this.f21426a, 2);
                     int i13 = 4;
-                    this.f21850a.r(4);
-                    h0Var.V(this.f21850a.h(12));
-                    if (h0.this.f21829a == 2 && h0.this.f21845q == null) {
-                        i0.b bVar = new i0.b(21, null, null, w0.f40300f);
+                    this.f21426a.r(4);
+                    h0Var.V(this.f21426a.h(12));
+                    if (h0.this.f21405a == 2 && h0.this.f21421q == null) {
+                        i0.b bVar = new i0.b(21, null, null, w0.f40163f);
                         h0 h0Var2 = h0.this;
-                        h0Var2.f21845q = h0Var2.f21834f.b(21, bVar);
-                        if (h0.this.f21845q != null) {
-                            h0.this.f21845q.a(s0Var, h0.this.f21840l, new i0.d(N, 21, 8192));
+                        h0Var2.f21421q = h0Var2.f21410f.b(21, bVar);
+                        if (h0.this.f21421q != null) {
+                            h0.this.f21421q.a(s0Var, h0.this.f21416l, new i0.d(N, 21, 8192));
                         }
                     }
-                    this.f21851b.clear();
-                    this.f21852c.clear();
+                    this.f21427b.clear();
+                    this.f21428c.clear();
                     int a10 = h0Var.a();
                     while (a10 > 0) {
-                        h0Var.k(this.f21850a, 5);
-                        int h10 = this.f21850a.h(8);
-                        this.f21850a.r(i11);
-                        int h11 = this.f21850a.h(i12);
-                        this.f21850a.r(i13);
-                        int h12 = this.f21850a.h(12);
+                        h0Var.k(this.f21426a, 5);
+                        int h10 = this.f21426a.h(8);
+                        this.f21426a.r(i11);
+                        int h11 = this.f21426a.h(i12);
+                        this.f21426a.r(i13);
+                        int h12 = this.f21426a.h(12);
                         i0.b c10 = c(h0Var, h12);
                         if (h10 == 6 || h10 == 5) {
-                            h10 = c10.f21880a;
+                            h10 = c10.f21456a;
                         }
                         a10 -= h12 + 5;
-                        if (h0.this.f21829a == 2) {
+                        if (h0.this.f21405a == 2) {
                             i10 = h10;
                         } else {
                             i10 = h11;
                         }
-                        if (!h0.this.f21836h.get(i10)) {
-                            if (h0.this.f21829a == 2 && h10 == 21) {
-                                b10 = h0.this.f21845q;
+                        if (!h0.this.f21412h.get(i10)) {
+                            if (h0.this.f21405a == 2 && h10 == 21) {
+                                b10 = h0.this.f21421q;
                             } else {
-                                b10 = h0.this.f21834f.b(h10, c10);
+                                b10 = h0.this.f21410f.b(h10, c10);
                             }
-                            if (h0.this.f21829a != 2 || h11 < this.f21852c.get(i10, 8192)) {
-                                this.f21852c.put(i10, h11);
-                                this.f21851b.put(i10, b10);
+                            if (h0.this.f21405a != 2 || h11 < this.f21428c.get(i10, 8192)) {
+                                this.f21428c.put(i10, h11);
+                                this.f21427b.put(i10, b10);
                             }
                         }
                         i11 = 3;
                         i13 = 4;
                         i12 = 13;
                     }
-                    int size = this.f21852c.size();
+                    int size = this.f21428c.size();
                     for (int i14 = 0; i14 < size; i14++) {
-                        int keyAt = this.f21852c.keyAt(i14);
-                        int valueAt = this.f21852c.valueAt(i14);
-                        h0.this.f21836h.put(keyAt, true);
-                        h0.this.f21837i.put(valueAt, true);
-                        i0 i0Var = (i0) this.f21851b.valueAt(i14);
+                        int keyAt = this.f21428c.keyAt(i14);
+                        int valueAt = this.f21428c.valueAt(i14);
+                        h0.this.f21412h.put(keyAt, true);
+                        h0.this.f21413i.put(valueAt, true);
+                        i0 i0Var = (i0) this.f21427b.valueAt(i14);
                         if (i0Var != null) {
-                            if (i0Var != h0.this.f21845q) {
-                                i0Var.a(s0Var, h0.this.f21840l, new i0.d(N, keyAt, 8192));
+                            if (i0Var != h0.this.f21421q) {
+                                i0Var.a(s0Var, h0.this.f21416l, new i0.d(N, keyAt, 8192));
                             }
-                            h0.this.f21835g.put(valueAt, i0Var);
+                            h0.this.f21411g.put(valueAt, i0Var);
                         }
                     }
-                    if (h0.this.f21829a == 2) {
-                        if (!h0.this.f21842n) {
-                            h0.this.f21840l.s();
-                            h0.this.f21841m = 0;
-                            h0.this.f21842n = true;
+                    if (h0.this.f21405a == 2) {
+                        if (!h0.this.f21418n) {
+                            h0.this.f21416l.s();
+                            h0.this.f21417m = 0;
+                            h0.this.f21418n = true;
                             return;
                         }
                         return;
                     }
-                    h0.this.f21835g.remove(this.f21853d);
+                    h0.this.f21411g.remove(this.f21429d);
                     h0 h0Var3 = h0.this;
-                    h0Var3.f21841m = h0Var3.f21829a == 1 ? 0 : h0.this.f21841m - 1;
-                    if (h0.this.f21841m == 0) {
-                        h0.this.f21840l.s();
-                        h0.this.f21842n = true;
+                    h0Var3.f21417m = h0Var3.f21405a == 1 ? 0 : h0.this.f21417m - 1;
+                    if (h0.this.f21417m == 0) {
+                        h0.this.f21416l.s();
+                        h0.this.f21418n = true;
                     }
                 }
             }

@@ -59,28 +59,28 @@ public final class PollActionButton extends FrameLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind_urJ__Hs$lambda$1$lambda$0(PollAction pollAction, Function3 function3, long j10, String str, View view) {
         if (pollAction.getType() != null) {
-            function3.invoke(ChannelId.m1058boximpl(j10), MessageId.m1084boximpl(str), pollAction.getType());
+            function3.invoke(ChannelId.m1060boximpl(j10), MessageId.m1086boximpl(str), pollAction.getType());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind_urJ__Hs$lambda$3$lambda$2(PollAction pollAction, Function3 function3, long j10, String str, View view) {
         if (pollAction.getType() != null) {
-            function3.invoke(ChannelId.m1058boximpl(j10), MessageId.m1084boximpl(str), pollAction.getType());
+            function3.invoke(ChannelId.m1060boximpl(j10), MessageId.m1086boximpl(str), pollAction.getType());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind_urJ__Hs$lambda$5$lambda$4(PollAction pollAction, Function3 function3, long j10, String str, View view) {
         if (pollAction.getType() != null) {
-            function3.invoke(ChannelId.m1058boximpl(j10), MessageId.m1084boximpl(str), pollAction.getType());
+            function3.invoke(ChannelId.m1060boximpl(j10), MessageId.m1086boximpl(str), pollAction.getType());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind_urJ__Hs$lambda$7$lambda$6(PollAction pollAction, Function3 function3, long j10, String str, View view) {
         if (pollAction.getType() != null) {
-            function3.invoke(ChannelId.m1058boximpl(j10), MessageId.m1084boximpl(str), pollAction.getType());
+            function3.invoke(ChannelId.m1060boximpl(j10), MessageId.m1086boximpl(str), pollAction.getType());
         }
     }
 
@@ -91,12 +91,12 @@ public final class PollActionButton extends FrameLayout {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final void m709bindurJ__Hs(final com.discord.chat.bridge.polls.PollAction r17, final long r18, @org.jetbrains.annotations.NotNull final java.lang.String r20, @org.jetbrains.annotations.NotNull final kotlin.jvm.functions.Function3 r21) {
+    public final void m711bindurJ__Hs(final com.discord.chat.bridge.polls.PollAction r17, final long r18, @org.jetbrains.annotations.NotNull final java.lang.String r20, @org.jetbrains.annotations.NotNull final kotlin.jvm.functions.Function3 r21) {
         /*
             Method dump skipped, instructions count: 449
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.polls.PollActionButton.m709bindurJ__Hs(com.discord.chat.bridge.polls.PollAction, long, java.lang.String, kotlin.jvm.functions.Function3):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.polls.PollActionButton.m711bindurJ__Hs(com.discord.chat.bridge.polls.PollAction, long, java.lang.String, kotlin.jvm.functions.Function3):void");
     }
 
     public final boolean hasAccessibilityFocus() {

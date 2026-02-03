@@ -1,17 +1,41 @@
 package gn;
+
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.events.Event;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
-    public static final boolean a(float f10, float f11, float f12) {
-        if (Math.abs(f10 - f11) <= f12) {
-            return true;
+public final class b extends Event {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f27145a = new a(null);
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        return false;
+
+        private a() {
+        }
     }
 
-    public static /* synthetic */ boolean b(float f10, float f11, float f12, int i10, Object obj) {
-        if ((i10 & 2) != 0) {
-            f12 = 1.0E-4f;
-        }
-        return a(f10, f11, f12);
+    public b(int i10, int i11) {
+        super(i10, i11);
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public short getCoalescingKey() {
+        return (short) 0;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    protected WritableMap getEventData() {
+        return Arguments.createMap();
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public String getEventName() {
+        return "topHeaderBackButtonClicked";
     }
 }

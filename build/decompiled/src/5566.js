@@ -1,75 +1,52 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0, arg1() {
-        _fun49490: for (var _fun49490_ip = 0;;) switch (_fun49490_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = arg1;
-                var5 = var0.length;
-                var4 = var1.length;
-                if (!(!(var4 > var5))) {
-                    _fun49490_ip = 105;
-                    continue _fun49490
-                }
-            case 20:
-                if (!(var4 !== var5)) {
-                    _fun49490_ip = 99;
-                    continue _fun49490
-                }
-            case 24:
-                var2 = 0;
-                var6 = var2 < var4;
-                var3 = 0;
-                if (!var6) {
-                    _fun49490_ip = 95;
-                    continue _fun49490
-                }
-            case 35:
-                var6 = var1.charCodeAt;
-                var8 = var6.bind(var1)(var3);
-                var7 = var3;
-                if (!(var2 < var5)) {
-                    _fun49490_ip = 81;
-                    continue _fun49490
-                }
-            case 53:
-                var10 = var0.charCodeAt;
-                var9 = parseFloat(var2);
-                var6 = var9 + 1;
-                var9 = var10.bind(var0)(var9);
-                if (!(var9 !== var8)) {
-                    _fun49490_ip = 85;
-                    continue _fun49490
-                }
-            case 74:
-                var2 = var6;
-                if (var2 < var5) {
-                    _fun49490_ip = 53;
-                    continue _fun49490
-                }
-            case 81:
-                var8 = false;
-                return var8;
-            case 85:
-                var3 = var7 + 1;
-                var2 = var6;
-                if (var3 < var4) {
-                    _fun49490_ip = 35;
-                    continue _fun49490
-                }
-            case 95:
-                var2 = true;
-                return var2;
-            case 99:
-                var0 = var1 === var0;
-                return var0;
-            case 105:
-                var0 = false;
-                return var0;
-        }
+    var5 = require;
+    var2 = exports;
+    var7 = dependencyMap;
+    var0 = global;
+    var6 = var0.Object;
+    var4 = var6.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var6)(var2, var0, var1);
+    var1 = {};
+    var6 = 'RNSVGSvgView';
+    var1.uiViewClassName = var6;
+    var4 = {
+        'bbWidth': true,
+        'bbHeight': true,
+        'minX': true,
+        'minY': true,
+        'vbWidth': true,
+        'vbHeight': true,
+        'align': true,
+        'meetOrSlice': true,
+        'color': null,
+        'pointerEvents': true,
+        'hitSlop': true
     };
-    var0 = arg4;
-    var0.exports = var1;
+    var8 = {};
+    var0 = 0;
+    var9 = var7[var0];
     var0 = undefined;
+    var9 = var5.bind(var0)(var9);
+    var9 = var9.default;
+    var8.process = var9;
+    var4.color = var8;
+    var1.validAttributes = var4;
+    var _closure1_slot0 = var1;
+    var4 = 1;
+    var4 = var7[var4];
+    var5 = var5.bind(var0)(var4);
+    var4 = var5.get;
+    var3 = function() { // Environment: var3
+        var0 = _closure1_slot0;
+        return var0;
+    };
+    var3 = var4.bind(var5)(var6, var3);
+    var2.default = var3;
+    var2.__INTERNAL_VIEW_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [38, 42]);

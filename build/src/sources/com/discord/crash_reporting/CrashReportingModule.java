@@ -17,7 +17,7 @@ import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableMap;
 import io.sentry.react.NativeRNSentrySpec;
 import io.sentry.react.RNSentryModule;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.o0;
@@ -71,7 +71,7 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
                 if (message == null) {
                     message = "No message";
                 }
-                CrashReporting.addBreadcrumb$default(crashReporting, str, o0.m(v.a("message", message), v.a("stacktrace", ir.e.b(cause))), "react.softexception", CrashReporting.BreadcrumbLevel.ERROR, false, 16, null);
+                CrashReporting.addBreadcrumb$default(crashReporting, str, o0.m(v.a("message", message), v.a("stacktrace", jr.e.b(cause))), "react.softexception", CrashReporting.BreadcrumbLevel.ERROR, false, 16, null);
                 Log.INSTANCE.e(category, "Unhandled SoftException", cause);
             }
         };
@@ -93,7 +93,7 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
             createMap.putString("exit_description", exitReason.getDescription());
         }
         if (nativeCrashDiagnostics != null && (tombstone = nativeCrashDiagnostics.getTombstone()) != null) {
-            if (kotlin.ranges.d.q(new IntRange(0, 1000), kotlin.random.c.f33388d) == 0 && !StringsKt.k0(tombstone.getText())) {
+            if (kotlin.ranges.d.q(new IntRange(0, 1000), kotlin.random.c.f33164d) == 0 && !StringsKt.k0(tombstone.getText())) {
                 createMap.putString("tombstone", StringsKt.x1(tombstone.getText(), 6291456));
             }
             createMap.putString("tombstone_cause", tombstone.getCause());
@@ -109,7 +109,7 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
     public static final Unit getLastCrashReport$lambda$2(CrashReportingModule crashReportingModule, CrashPersistence.LastCrashInfo lastCrashInfo, Callback callback, SystemLogReport.NativeCrashDiagnostics diagnostics) {
         Intrinsics.checkNotNullParameter(diagnostics, "diagnostics");
         callback.invoke(crashReportingModule.buildCrashReportMap(lastCrashInfo, diagnostics));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final RNSentryModule getSentryModule() {
@@ -235,7 +235,7 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
                     if (Intrinsics.areEqual(this.pendingCrashEventId, str)) {
                         this.pendingCrashEventId = null;
                     }
-                    Unit unit = Unit.f33298a;
+                    Unit unit = Unit.f33074a;
                 }
             } catch (Throwable th2) {
                 Log.INSTANCE.e(TAG, "Failed to mark crash handled", th2);

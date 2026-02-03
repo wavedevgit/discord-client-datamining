@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun81727: for (var _fun81727_ip = 0;;) switch (_fun81727_ip) {
+        _fun82117: for (var _fun82117_ip = 0;;) switch (_fun82117_ip) {
             case 0:
                 var0 = _closure1_slot7;
                 var4 = undefined;
@@ -32,19 +32,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.bind(var2)();
                 var0 = null;
                 if (var3) {
-                    _fun81727_ip = 173;
-                    continue _fun81727
+                    _fun82117_ip = 173;
+                    continue _fun82117
                 }
             case 87:
                 if (!var6) {
-                    _fun81727_ip = 95;
-                    continue _fun81727
+                    _fun82117_ip = 95;
+                    continue _fun82117
                 }
             case 90:
                 var0 = null;
                 if (var1) {
-                    _fun81727_ip = 173;
-                    continue _fun81727
+                    _fun82117_ip = 173;
+                    continue _fun82117
                 }
             case 95:
                 var3 = _closure1_slot5;
@@ -59,13 +59,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var9[var5];
                 var5 = var8.bind(var4)(var5);
                 if (var6) {
-                    _fun81727_ip = 149;
-                    continue _fun81727
+                    _fun82117_ip = 149;
+                    continue _fun82117
                 }
             case 141:
                 var6 = var5.FamilyCenterTeenQRCodeButton;
-                _fun81727_ip = 155;
-                continue _fun81727;
+                _fun82117_ip = 155;
+                continue _fun82117;
             case 149:
                 var6 = var5.FamilyCenterParentQRCodeButton;
             case 155:
@@ -176,7 +176,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/parent_tools/native/FamilyCenterActivityBanner.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun81728: for (var _fun81728_ip = 0;;) switch (_fun81728_ip) {
+        _fun82118: for (var _fun82118_ip = 0;;) switch (_fun82118_ip) {
             case 0:
                 var12 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -252,14 +252,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var15 = _closure1_slot2;
                 if (var9) {
-                    _fun81728_ip = 351;
-                    continue _fun81728
+                    _fun82118_ip = 351;
+                    continue _fun82118
                 }
             case 342:
                 var9 = 12;
                 var9 = var15[var9];
-                _fun81728_ip = 358;
-                continue _fun81728;
+                _fun82118_ip = 358;
+                continue _fun82118;
             case 351:
                 var13 = 11;
                 var9 = var15[var13];
@@ -303,8 +303,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[2] = var5;
                 var5 = null;
                 if (var7) {
-                    _fun81728_ip = 537;
-                    continue _fun81728
+                    _fun82118_ip = 537;
+                    continue _fun82118
                 }
             case 521:
                 var8 = _closure1_slot5;
@@ -320,4 +320,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 6473, 6474, 10394, 671, 10403, 1234, 1849, 10419, 10420, 3902, 5296, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 6504, 6505, 10470, 671, 10479, 1234, 1849, 10495, 10496, 3932, 5327, 2]);

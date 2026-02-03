@@ -6,27 +6,27 @@ import android.content.pm.PackageManager;
 final class q3 {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final th.k0 f16980c = new th.k0("PackageStateCache");
+    private static final th.k0 f16609c = new th.k0("PackageStateCache");
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f16981a;
+    private final Context f16610a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f16982b = -1;
+    private int f16611b = -1;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q3(Context context) {
-        this.f16981a = context;
+        this.f16610a = context;
     }
 
     public final synchronized int a() {
-        if (this.f16982b == -1) {
+        if (this.f16611b == -1) {
             try {
-                this.f16982b = this.f16981a.getPackageManager().getPackageInfo(this.f16981a.getPackageName(), 0).versionCode;
+                this.f16611b = this.f16610a.getPackageManager().getPackageInfo(this.f16610a.getPackageName(), 0).versionCode;
             } catch (PackageManager.NameNotFoundException unused) {
-                f16980c.b("The current version of the app could not be retrieved", new Object[0]);
+                f16609c.b("The current version of the app could not be retrieved", new Object[0]);
             }
         }
-        return this.f16982b;
+        return this.f16611b;
     }
 }

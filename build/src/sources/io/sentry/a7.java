@@ -18,7 +18,7 @@ public enum a7 implements w1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public a7 a(e3 e3Var, ILogger iLogger) {
-            return a7.valueOf(e3Var.e1().toUpperCase(Locale.ROOT));
+            return a7.valueOf(e3Var.f1().toUpperCase(Locale.ROOT));
         }
     }
 

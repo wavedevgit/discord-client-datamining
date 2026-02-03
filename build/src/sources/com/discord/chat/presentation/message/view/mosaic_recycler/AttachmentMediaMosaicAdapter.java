@@ -78,13 +78,13 @@ public final class AttachmentMediaMosaicAdapter extends RecyclerView.Adapter {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$2(AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter, ImageAttachmentMessageAccessory imageAttachmentMessageAccessory) {
         attachmentMediaMosaicAdapter.onItemSpoilerClicked.invoke(imageAttachmentMessageAccessory);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$3(AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter, boolean z10) {
         attachmentMediaMosaicAdapter.onItemObscureToggle.invoke(Boolean.valueOf(z10));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -105,13 +105,13 @@ public final class AttachmentMediaMosaicAdapter extends RecyclerView.Adapter {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$6(AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter, VideoAttachmentMessageAccessory videoAttachmentMessageAccessory) {
         attachmentMediaMosaicAdapter.onItemSpoilerClicked.invoke(videoAttachmentMessageAccessory);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$7(AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter, boolean z10) {
         attachmentMediaMosaicAdapter.onItemObscureToggle.invoke(Boolean.valueOf(z10));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
@@ -148,7 +148,7 @@ public final class AttachmentMediaMosaicAdapter extends RecyclerView.Adapter {
     @SuppressLint({"NotifyDataSetChanged"})
     public final void setMediaItems(@NotNull List<? extends MessageAttachmentAccessory> items, boolean z10) {
         Intrinsics.checkNotNullParameter(items, "items");
-        e.C0065e c10 = e.c(new ItemDiffer(this.items, items), false);
+        e.C0069e c10 = e.c(new ItemDiffer(this.items, items), false);
         Intrinsics.checkNotNullExpressionValue(c10, "calculateDiff(...)");
         this.items.clear();
         this.items.addAll(items);

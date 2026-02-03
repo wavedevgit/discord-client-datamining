@@ -1,173 +1,163 @@
 package is;
 
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.functions.Function3;
-import kotlin.jvm.internal.FunctionReferenceImpl;
-import kotlin.jvm.internal.LongCompanionObject;
-import kotlin.reflect.KFunction;
+import android.os.Handler;
+import android.os.Looper;
+import hs.e1;
+import hs.m0;
+import hs.n0;
+import java.util.concurrent.CancellationException;
+import kotlin.Unit;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CancellableContinuation;
-import ls.e0;
-import ls.h0;
+import kotlinx.coroutines.k;
+import kotlinx.coroutines.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class f {
-
-    /* renamed from: a  reason: collision with root package name */
-    private static final m f31181a = new m(-1, null, null, 0);
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final int f31182b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private static final int f31183c;
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final e0 f31184d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final e0 f31185e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private static final e0 f31186f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private static final e0 f31187g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private static final e0 f31188h;
+public final class f extends g implements k {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final e0 f31189i;
-
-    /* renamed from: j  reason: collision with root package name */
-    private static final e0 f31190j;
-
-    /* renamed from: k  reason: collision with root package name */
-    private static final e0 f31191k;
-
-    /* renamed from: l  reason: collision with root package name */
-    private static final e0 f31192l;
-
-    /* renamed from: m  reason: collision with root package name */
-    private static final e0 f31193m;
-
-    /* renamed from: n  reason: collision with root package name */
-    private static final e0 f31194n;
+    private final Handler f31164i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final e0 f31195o;
+    private final String f31165o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final e0 f31196p;
+    private final boolean f31166p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final e0 f31197q;
+    private final f f31167q;
 
-    /* renamed from: r  reason: collision with root package name */
-    private static final e0 f31198r;
-
-    /* renamed from: s  reason: collision with root package name */
-    private static final e0 f31199s;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f31200d = new a();
-
-        a() {
-            super(2, f.class, "createSegment", "createSegment(JLkotlinx/coroutines/channels/ChannelSegment;)Lkotlinx/coroutines/channels/ChannelSegment;", 1);
-        }
-
-        public final m a(long j10, m mVar) {
-            return f.x(j10, mVar);
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a(((Number) obj).longValue(), (m) obj2);
-        }
+    private f(Handler handler, String str, boolean z10) {
+        super(null);
+        this.f31164i = handler;
+        this.f31165o = str;
+        this.f31166p = z10;
+        this.f31167q = z10 ? this : new f(handler, str, true);
     }
 
-    static {
-        int e10;
-        int e11;
-        e10 = h0.e("kotlinx.coroutines.bufferedChannel.segmentSize", 32, 0, 0, 12, null);
-        f31182b = e10;
-        e11 = h0.e("kotlinx.coroutines.bufferedChannel.expandBufferCompletionWaitIterations", 10000, 0, 0, 12, null);
-        f31183c = e11;
-        f31184d = new e0("BUFFERED");
-        f31185e = new e0("SHOULD_BUFFER");
-        f31186f = new e0("S_RESUMING_BY_RCV");
-        f31187g = new e0("RESUMING_BY_EB");
-        f31188h = new e0("POISONED");
-        f31189i = new e0("DONE_RCV");
-        f31190j = new e0("INTERRUPTED_SEND");
-        f31191k = new e0("INTERRUPTED_RCV");
-        f31192l = new e0("CHANNEL_CLOSED");
-        f31193m = new e0("SUSPEND");
-        f31194n = new e0("SUSPEND_NO_WAITER");
-        f31195o = new e0("FAILED");
-        f31196p = new e0("NO_RECEIVE_RESULT");
-        f31197q = new e0("CLOSE_HANDLER_CLOSED");
-        f31198r = new e0("CLOSE_HANDLER_INVOKED");
-        f31199s = new e0("NO_CLOSE_CAUSE");
+    private final void p2(CoroutineContext coroutineContext, Runnable runnable) {
+        z.c(coroutineContext, new CancellationException("The task was rejected, the handler underlying the dispatcher '" + this + "' was closed"));
+        m0.b().E1(coroutineContext, runnable);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final long A(int i10) {
-        if (i10 != 0) {
-            if (i10 != Integer.MAX_VALUE) {
-                return i10;
+    public static final void r2(f fVar, Runnable runnable) {
+        fVar.f31164i.removeCallbacks(runnable);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void s2(CancellableContinuation cancellableContinuation, f fVar) {
+        cancellableContinuation.q(fVar, Unit.f33074a);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit t2(f fVar, Runnable runnable, Throwable th2) {
+        fVar.f31164i.removeCallbacks(runnable);
+        return Unit.f33074a;
+    }
+
+    @Override // kotlinx.coroutines.k
+    public n0 E0(long j10, final Runnable runnable, CoroutineContext coroutineContext) {
+        if (this.f31164i.postDelayed(runnable, kotlin.ranges.d.j(j10, 4611686018427387903L))) {
+            return new n0() { // from class: is.c
+                @Override // hs.n0
+                public final void dispose() {
+                    f.r2(f.this, runnable);
+                }
+            };
+        }
+        p2(coroutineContext, runnable);
+        return e1.f27916d;
+    }
+
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public void E1(CoroutineContext coroutineContext, Runnable runnable) {
+        if (!this.f31164i.post(runnable)) {
+            p2(coroutineContext, runnable);
+        }
+    }
+
+    @Override // kotlinx.coroutines.k
+    public void F(long j10, final CancellableContinuation cancellableContinuation) {
+        final Runnable runnable = new Runnable() { // from class: is.d
+            @Override // java.lang.Runnable
+            public final void run() {
+                f.s2(CancellableContinuation.this, this);
             }
-            return LongCompanionObject.MAX_VALUE;
+        };
+        if (this.f31164i.postDelayed(runnable, kotlin.ranges.d.j(j10, 4611686018427387903L))) {
+            cancellableContinuation.c(new Function1() { // from class: is.e
+                @Override // kotlin.jvm.functions.Function1
+                public final Object invoke(Object obj) {
+                    Unit t22;
+                    t22 = f.t2(f.this, runnable, (Throwable) obj);
+                    return t22;
+                }
+            });
+        } else {
+            p2(cancellableContinuation.getContext(), runnable);
         }
-        return 0L;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final boolean B(CancellableContinuation cancellableContinuation, Object obj, Function3 function3) {
-        Object t10 = cancellableContinuation.t(obj, null, function3);
-        if (t10 != null) {
-            cancellableContinuation.w(t10);
-            return true;
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public boolean W1(CoroutineContext coroutineContext) {
+        if (this.f31166p && Intrinsics.areEqual(Looper.myLooper(), this.f31164i.getLooper())) {
+            return false;
+        }
+        return true;
+    }
+
+    public boolean equals(Object obj) {
+        if (obj instanceof f) {
+            f fVar = (f) obj;
+            if (fVar.f31164i == this.f31164i && fVar.f31166p == this.f31166p) {
+                return true;
+            }
+            return false;
         }
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* synthetic */ boolean C(CancellableContinuation cancellableContinuation, Object obj, Function3 function3, int i10, Object obj2) {
-        if ((i10 & 2) != 0) {
-            function3 = null;
-        }
-        return B(cancellableContinuation, obj, function3);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final long v(long j10, boolean z10) {
-        long j11;
-        if (z10) {
-            j11 = 4611686018427387904L;
+    public int hashCode() {
+        int i10;
+        int identityHashCode = System.identityHashCode(this.f31164i);
+        if (this.f31166p) {
+            i10 = 1231;
         } else {
-            j11 = 0;
+            i10 = 1237;
         }
-        return j11 + j10;
+        return identityHashCode ^ i10;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final long w(long j10, int i10) {
-        return (i10 << 60) + j10;
+    @Override // hs.c1
+    /* renamed from: q2 */
+    public f f2() {
+        return this.f31167q;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final m x(long j10, m mVar) {
-        return new m(j10, mVar, mVar.y(), 0);
+    @Override // kotlinx.coroutines.CoroutineDispatcher
+    public String toString() {
+        String h22 = h2();
+        if (h22 == null) {
+            String str = this.f31165o;
+            if (str == null) {
+                str = this.f31164i.toString();
+            }
+            if (this.f31166p) {
+                return str + ".immediate";
+            }
+            return str;
+        }
+        return h22;
     }
 
-    public static final KFunction y() {
-        return a.f31200d;
+    public /* synthetic */ f(Handler handler, String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(handler, (i10 & 2) != 0 ? null : str);
     }
 
-    public static final e0 z() {
-        return f31192l;
+    public f(Handler handler, String str) {
+        this(handler, str, false);
     }
 }

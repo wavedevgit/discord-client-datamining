@@ -231,7 +231,7 @@ public final class AFf1wSDK extends AFe1eSDK<AFa1mSDK> {
         Intrinsics.checkNotNullExpressionValue(str, "");
         Boolean bool = aFb1mSDK.getRevenue;
         if (bool == null || !bool.booleanValue()) {
-            return o0.m(ir.v.a("type", "unhashed"), ir.v.a("value", str));
+            return o0.m(jr.v.a("type", "unhashed"), jr.v.a("value", str));
         }
         return null;
     }

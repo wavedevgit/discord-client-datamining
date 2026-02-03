@@ -8,14 +8,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
     var0 = function arg0, arg1, arg2, arg3() {
-        _fun50976: for (var _fun50976_ip = 0;;) switch (_fun50976_ip) {
+        _fun51082: for (var _fun51082_ip = 0;;) switch (_fun51082_ip) {
             case 0:
                 var6 = arg0;
                 var1 = arg1;
                 var9 = null;
                 if (!(var9 != var6)) {
-                    _fun50976_ip = 137;
-                    continue _fun50976
+                    _fun51082_ip = 137;
+                    continue _fun51082
                 }
             case 15:
                 var0 = var6.index;
@@ -34,8 +34,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var1.current;
                 var8 = var9 != var8;
                 if (!var8) {
-                    _fun50976_ip = 97;
-                    continue _fun50976
+                    _fun51082_ip = 97;
+                    continue _fun51082
                 }
             case 82:
                 var9 = var6.routeNames;

@@ -1,150 +1,299 @@
 package qs;
 
-import j$.time.DateTimeException;
-import j$.time.Instant;
-import kotlin.Metadata;
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.SourceDebugExtension;
-import kotlinx.serialization.KSerializer;
-import org.jetbrains.annotations.NotNull;
-import rs.j;
-@Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u000f\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\t\n\u0002\b\u0006\b\u0007\u0018\u0000 \u001b2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u001cB\u0011\b\u0000\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u0018\u0010\b\u001a\u00020\u00072\u0006\u0010\u0006\u001a\u00020\u0000H\u0096\u0002¢\u0006\u0004\b\b\u0010\tJ\u001a\u0010\f\u001a\u00020\u000b2\b\u0010\u0006\u001a\u0004\u0018\u00010\nH\u0096\u0002¢\u0006\u0004\b\f\u0010\rJ\u000f\u0010\u000e\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\u000e\u0010\u000fJ\u000f\u0010\u0011\u001a\u00020\u0010H\u0016¢\u0006\u0004\b\u0011\u0010\u0012R\u001a\u0010\u0003\u001a\u00020\u00028\u0000X\u0080\u0004¢\u0006\f\n\u0004\b\u0013\u0010\u0014\u001a\u0004\b\u0015\u0010\u0016R\u0011\u0010\u001a\u001a\u00020\u00178F¢\u0006\u0006\u001a\u0004\b\u0018\u0010\u0019¨\u0006\u001d"}, d2 = {"Lqs/e;", "", "j$/time/Instant", "value", "<init>", "(Lj$/time/Instant;)V", "other", "", "e", "(Lqs/e;)I", "", "", "equals", "(Ljava/lang/Object;)Z", "hashCode", "()I", "", "toString", "()Ljava/lang/String;", "d", "Lj$/time/Instant;", "getValue$kotlinx_datetime", "()Lj$/time/Instant;", "", "f", "()J", "epochSeconds", "Companion", "a", "kotlinx-datetime"}, k = 1, mv = {1, 9, 0}, xi = 48)
-@xs.m(with = ws.e.class)
-@SourceDebugExtension({"SMAP\nInstant.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Instant.kt\nkotlinx/datetime/Instant\n+ 2 Duration.kt\nkotlin/time/Duration\n*L\n1#1,186:1\n731#2,2:187\n*S KotlinDebug\n*F\n+ 1 Instant.kt\nkotlinx/datetime/Instant\n*L\n36#1:187,2\n*E\n"})
+import hs.w1;
+import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function3;
+import kotlinx.coroutines.CancellableContinuation;
+import kotlinx.coroutines.CoroutineDispatcher;
+import kotlinx.coroutines.sync.Mutex;
+import ms.b0;
+import ms.e0;
+import qs.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class e implements Comparable<e> {
-    @NotNull
-    public static final a Companion = new a(null);
-
-    /* renamed from: e  reason: collision with root package name */
-    private static final e f47648e;
+public class e extends i implements Mutex {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final e f47649i;
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f47837i = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "owner$volatile");
 
-    /* renamed from: o  reason: collision with root package name */
-    private static final e f47650o;
+    /* renamed from: h  reason: collision with root package name */
+    private final Function3 f47838h;
+    private volatile /* synthetic */ Object owner$volatile;
 
-    /* renamed from: p  reason: collision with root package name */
-    private static final e f47651p;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final Instant f47652d;
-
+    /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
+    public final class a implements CancellableContinuation, w1 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public final kotlinx.coroutines.e f47839d;
+
+        /* renamed from: e  reason: collision with root package name */
+        public final Object f47840e;
+
+        public a(kotlinx.coroutines.e eVar, Object obj) {
+            this.f47839d = eVar;
+            this.f47840e = obj;
         }
 
-        public static /* synthetic */ e g(a aVar, CharSequence charSequence, rs.n nVar, int i10, Object obj) {
-            if ((i10 & 2) != 0) {
-                nVar = j.b.f48545a.a();
-            }
-            return aVar.e(charSequence, nVar);
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final Unit j(e eVar, a aVar, Throwable th2) {
+            eVar.c(aVar.f47840e);
+            return Unit.f33074a;
         }
 
-        public final e a(long j10, int i10) {
-            return b(j10, i10);
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final Unit m(e eVar, a aVar, Throwable th2, Unit unit, CoroutineContext coroutineContext) {
+            e.w().set(eVar, aVar.f47840e);
+            eVar.c(aVar.f47840e);
+            return Unit.f33074a;
         }
 
-        public final e b(long j10, long j11) {
-            try {
-                Instant ofEpochSecond = Instant.ofEpochSecond(j10, j11);
-                Intrinsics.checkNotNullExpressionValue(ofEpochSecond, "ofEpochSecond(...)");
-                return new e(ofEpochSecond);
-            } catch (Exception e10) {
-                if (!(e10 instanceof ArithmeticException) && !(e10 instanceof DateTimeException)) {
-                    throw e10;
+        @Override // kotlinx.coroutines.CancellableContinuation
+        public boolean a() {
+            return this.f47839d.a();
+        }
+
+        @Override // hs.w1
+        public void b(b0 b0Var, int i10) {
+            this.f47839d.b(b0Var, i10);
+        }
+
+        @Override // kotlinx.coroutines.CancellableContinuation
+        public void c(Function1 function1) {
+            this.f47839d.c(function1);
+        }
+
+        @Override // kotlinx.coroutines.CancellableContinuation
+        public Object e(Throwable th2) {
+            return this.f47839d.e(th2);
+        }
+
+        @Override // kotlinx.coroutines.CancellableContinuation
+        public void f(CoroutineDispatcher coroutineDispatcher, Throwable th2) {
+            this.f47839d.f(coroutineDispatcher, th2);
+        }
+
+        @Override // kotlinx.coroutines.CancellableContinuation
+        public boolean g(Throwable th2) {
+            return this.f47839d.g(th2);
+        }
+
+        @Override // kotlin.coroutines.Continuation
+        public CoroutineContext getContext() {
+            return this.f47839d.getContext();
+        }
+
+        @Override // kotlinx.coroutines.CancellableContinuation
+        /* renamed from: i */
+        public void p(Unit unit, Function3 function3) {
+            e.w().set(e.this, this.f47840e);
+            kotlinx.coroutines.e eVar = this.f47839d;
+            final e eVar2 = e.this;
+            eVar.R(unit, new Function1() { // from class: qs.d
+                @Override // kotlin.jvm.functions.Function1
+                public final Object invoke(Object obj) {
+                    Unit j10;
+                    j10 = e.a.j(e.this, this, (Throwable) obj);
+                    return j10;
                 }
-                if (j10 > 0) {
-                    return c();
+            });
+        }
+
+        @Override // kotlinx.coroutines.CancellableContinuation
+        public boolean isCompleted() {
+            return this.f47839d.isCompleted();
+        }
+
+        @Override // kotlinx.coroutines.CancellableContinuation
+        /* renamed from: k */
+        public void q(CoroutineDispatcher coroutineDispatcher, Unit unit) {
+            this.f47839d.q(coroutineDispatcher, unit);
+        }
+
+        @Override // kotlinx.coroutines.CancellableContinuation
+        /* renamed from: l */
+        public Object t(Unit unit, Object obj, Function3 function3) {
+            final e eVar = e.this;
+            Object t10 = this.f47839d.t(unit, obj, new Function3() { // from class: qs.c
+                @Override // kotlin.jvm.functions.Function3
+                public final Object invoke(Object obj2, Object obj3, Object obj4) {
+                    Unit m10;
+                    m10 = e.a.m(e.this, this, (Throwable) obj2, (Unit) obj3, (CoroutineContext) obj4);
+                    return m10;
                 }
-                return d();
+            });
+            if (t10 != null) {
+                e.w().set(e.this, this.f47840e);
+            }
+            return t10;
+        }
+
+        @Override // kotlin.coroutines.Continuation
+        public void resumeWith(Object obj) {
+            this.f47839d.resumeWith(obj);
+        }
+
+        @Override // kotlinx.coroutines.CancellableContinuation
+        public void w(Object obj) {
+            this.f47839d.w(obj);
+        }
+    }
+
+    public e(boolean z10) {
+        super(1, z10 ? 1 : 0);
+        e0 e0Var;
+        if (!z10) {
+            e0Var = f.f47842a;
+        } else {
+            e0Var = null;
+        }
+        this.owner$volatile = e0Var;
+        this.f47838h = new Function3() { // from class: qs.a
+            @Override // kotlin.jvm.functions.Function3
+            public final Object invoke(Object obj, Object obj2, Object obj3) {
+                Function3 C;
+                C = e.C(e.this, (ps.l) obj, obj2, obj3);
+                return C;
+            }
+        };
+    }
+
+    static /* synthetic */ Object A(e eVar, Object obj, Continuation continuation) {
+        if (eVar.E(obj)) {
+            return Unit.f33074a;
+        }
+        Object B = eVar.B(obj, continuation);
+        if (B == pr.b.f()) {
+            return B;
+        }
+        return Unit.f33074a;
+    }
+
+    private final Object B(Object obj, Continuation continuation) {
+        kotlinx.coroutines.e b10 = hs.l.b(pr.b.c(continuation));
+        try {
+            f(new a(b10, obj));
+            Object B = b10.B();
+            if (B == pr.b.f()) {
+                kotlin.coroutines.jvm.internal.g.c(continuation);
+            }
+            if (B == pr.b.f()) {
+                return B;
+            }
+            return Unit.f33074a;
+        } catch (Throwable th2) {
+            b10.P();
+            throw th2;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Function3 C(final e eVar, ps.l lVar, final Object obj, Object obj2) {
+        return new Function3() { // from class: qs.b
+            @Override // kotlin.jvm.functions.Function3
+            public final Object invoke(Object obj3, Object obj4, Object obj5) {
+                Unit D;
+                D = e.D(e.this, obj, (Throwable) obj3, obj4, (CoroutineContext) obj5);
+                return D;
+            }
+        };
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit D(e eVar, Object obj, Throwable th2, Object obj2, CoroutineContext coroutineContext) {
+        eVar.c(obj);
+        return Unit.f33074a;
+    }
+
+    private final int F(Object obj) {
+        while (!r()) {
+            if (obj == null) {
+                return 1;
+            }
+            int y10 = y(obj);
+            if (y10 == 1) {
+                return 2;
+            }
+            if (y10 == 2) {
+                return 1;
             }
         }
+        f47837i.set(this, obj);
+        return 0;
+    }
 
-        public final e c() {
-            return e.f47651p;
-        }
+    public static final /* synthetic */ AtomicReferenceFieldUpdater w() {
+        return f47837i;
+    }
 
-        public final e d() {
-            return e.f47650o;
-        }
-
-        public final e e(CharSequence input, rs.n format) {
-            Intrinsics.checkNotNullParameter(input, "input");
-            Intrinsics.checkNotNullParameter(format, "format");
-            try {
-                return ((rs.j) format.a(input)).c();
-            } catch (IllegalArgumentException e10) {
-                throw new b("Failed to parse an instant from '" + ((Object) input) + '\'', e10);
+    private final int y(Object obj) {
+        e0 e0Var;
+        while (z()) {
+            Object obj2 = f47837i.get(this);
+            e0Var = f.f47842a;
+            if (obj2 != e0Var) {
+                if (obj2 == obj) {
+                    return 1;
+                }
+                return 2;
             }
         }
-
-        public final /* synthetic */ e f(String isoString) {
-            Intrinsics.checkNotNullParameter(isoString, "isoString");
-            return g(this, isoString, null, 2, null);
-        }
-
-        @NotNull
-        public final KSerializer serializer() {
-            return ws.e.f52769a;
-        }
-
-        private a() {
-        }
+        return 0;
     }
 
-    static {
-        Instant ofEpochSecond = Instant.ofEpochSecond(-3217862419201L, 999999999L);
-        Intrinsics.checkNotNullExpressionValue(ofEpochSecond, "ofEpochSecond(...)");
-        f47648e = new e(ofEpochSecond);
-        Instant ofEpochSecond2 = Instant.ofEpochSecond(3093527980800L, 0L);
-        Intrinsics.checkNotNullExpressionValue(ofEpochSecond2, "ofEpochSecond(...)");
-        f47649i = new e(ofEpochSecond2);
-        Instant MIN = Instant.MIN;
-        Intrinsics.checkNotNullExpressionValue(MIN, "MIN");
-        f47650o = new e(MIN);
-        Instant MAX = Instant.MAX;
-        Intrinsics.checkNotNullExpressionValue(MAX, "MAX");
-        f47651p = new e(MAX);
-    }
-
-    public e(Instant value) {
-        Intrinsics.checkNotNullParameter(value, "value");
-        this.f47652d = value;
-    }
-
-    @Override // java.lang.Comparable
-    /* renamed from: e */
-    public int compareTo(e other) {
-        Intrinsics.checkNotNullParameter(other, "other");
-        return this.f47652d.compareTo(other.f47652d);
-    }
-
-    public boolean equals(Object obj) {
-        if (this != obj) {
-            if (!(obj instanceof e) || !Intrinsics.areEqual(this.f47652d, ((e) obj).f47652d)) {
-                return false;
-            }
+    public boolean E(Object obj) {
+        int F = F(obj);
+        if (F == 0) {
             return true;
         }
-        return true;
+        if (F != 1) {
+            if (F != 2) {
+                throw new IllegalStateException("unexpected");
+            }
+            throw new IllegalStateException(("This mutex is already locked by the specified owner: " + obj).toString());
+        }
+        return false;
     }
 
-    public final long f() {
-        return this.f47652d.getEpochSecond();
+    @Override // kotlinx.coroutines.sync.Mutex
+    public Object b(Object obj, Continuation continuation) {
+        return A(this, obj, continuation);
     }
 
-    public int hashCode() {
-        return this.f47652d.hashCode();
+    @Override // kotlinx.coroutines.sync.Mutex
+    public void c(Object obj) {
+        e0 e0Var;
+        e0 e0Var2;
+        while (z()) {
+            Object obj2 = f47837i.get(this);
+            e0Var = f.f47842a;
+            if (obj2 != e0Var) {
+                if (obj2 == obj || obj == null) {
+                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f47837i;
+                    e0Var2 = f.f47842a;
+                    if (androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, this, obj2, e0Var2)) {
+                        release();
+                        return;
+                    }
+                } else {
+                    throw new IllegalStateException(("This mutex is locked by " + obj2 + ", but " + obj + " is expected").toString());
+                }
+            }
+        }
+        throw new IllegalStateException("This mutex is not locked");
     }
 
     public String toString() {
-        String instant = this.f47652d.toString();
-        Intrinsics.checkNotNullExpressionValue(instant, "toString(...)");
-        return instant;
+        return "Mutex@" + hs.e0.b(this) + "[isLocked=" + z() + ",owner=" + f47837i.get(this) + ']';
+    }
+
+    public boolean z() {
+        if (k() == 0) {
+            return true;
+        }
+        return false;
     }
 }

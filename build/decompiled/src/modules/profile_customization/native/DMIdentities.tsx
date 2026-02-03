@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/profile_customization/native/DMIdentities.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun87119: for (var _fun87119_ip = 0;;) switch (_fun87119_ip) {
+        _fun87477: for (var _fun87477_ip = 0;;) switch (_fun87477_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.user;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var2.bind(var3)(var0);
                 var0 = null;
                 if (!var1) {
-                    _fun87119_ip = 477;
-                    continue _fun87119
+                    _fun87477_ip = 477;
+                    continue _fun87477
                 }
             case 126:
                 var3 = _closure1_slot5;
@@ -188,7 +188,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = -5;
                 var11.offsetAmount = var14;
                 var13 = function arg0, arg1() {
-                    _fun87120: for (var _fun87120_ip = 0;;) switch (_fun87120_ip) {
+                    _fun87478: for (var _fun87478_ip = 0;;) switch (_fun87478_ip) {
                         case 0:
                             var3 = _closure1_slot4;
                             var1 = _closure1_slot1;
@@ -211,8 +211,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = arg1;
                             var4 = undefined;
                             if (var5) {
-                                _fun87120_ip = 100;
-                                continue _fun87120
+                                _fun87478_ip = 100;
+                                continue _fun87478
                             }
                         case 86:
                             var4 = {
@@ -252,4 +252,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 11230, 5549, 3902, 1234, 8033, 5416, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 11305, 5580, 3932, 1234, 8064, 5447, 2]);

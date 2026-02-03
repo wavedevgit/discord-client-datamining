@@ -12,36 +12,36 @@ import java.util.ArrayList;
 final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gi.t0 f17207a;
+    private final gi.t0 f16836a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f17208b;
+    private final String f16837b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f17209c;
+    private final Context f16838c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final r f17210d;
+    private final r f16839d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final x0 f17211e;
+    private final x0 f16840e;
 
     /* renamed from: f  reason: collision with root package name */
-    final gi.f f17212f;
+    final gi.f f16841f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k(Context context, gi.t0 t0Var, r rVar, x0 x0Var) {
-        this.f17208b = context.getPackageName();
-        this.f17207a = t0Var;
-        this.f17210d = rVar;
-        this.f17211e = x0Var;
-        this.f17209c = context;
+        this.f16837b = context.getPackageName();
+        this.f16836a = t0Var;
+        this.f16839d = rVar;
+        this.f16840e = x0Var;
+        this.f16838c = context;
         if (!gi.j.b(context)) {
             t0Var.a("Phonesky is not installed.", new Object[0]);
-            this.f17212f = null;
+            this.f16841f = null;
             return;
         }
-        this.f17212f = new gi.f(context, t0Var, "IntegrityService", l.f17214a, new gi.a1() { // from class: wh.b
+        this.f16841f = new gi.f(context, t0Var, "IntegrityService", l.f16843a, new gi.a1() { // from class: wh.b
             @Override // gi.a1
             public final Object a(IBinder iBinder) {
                 return p0.f(iBinder);
@@ -52,7 +52,7 @@ final class k {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static /* bridge */ /* synthetic */ Bundle a(k kVar, byte[] bArr, Long l10, Parcelable parcelable) {
         Bundle bundle = new Bundle();
-        bundle.putString("package.name", kVar.f17208b);
+        bundle.putString("package.name", kVar.f16837b);
         bundle.putByteArray("nonce", bArr);
         bundle.putInt("playcore.integrity.version.major", 1);
         bundle.putInt("playcore.integrity.version.minor", 4);
@@ -70,17 +70,17 @@ final class k {
     }
 
     public final Task b(IntegrityTokenRequest integrityTokenRequest) {
-        if (this.f17212f != null) {
-            if (gi.j.a(this.f17209c) >= 82380000) {
+        if (this.f16841f != null) {
+            if (gi.j.a(this.f16838c) >= 82380000) {
                 try {
                     byte[] decode = Base64.decode(integrityTokenRequest.b(), 10);
                     Long a10 = integrityTokenRequest.a();
                     if (integrityTokenRequest instanceof o) {
                         o oVar = (o) integrityTokenRequest;
                     }
-                    this.f17207a.c("requestIntegrityToken(%s)", integrityTokenRequest);
+                    this.f16836a.c("requestIntegrityToken(%s)", integrityTokenRequest);
                     wg.k kVar = new wg.k();
-                    this.f17212f.t(new h(this, kVar, decode, a10, null, kVar, integrityTokenRequest), kVar);
+                    this.f16841f.t(new h(this, kVar, decode, a10, null, kVar, integrityTokenRequest), kVar);
                     return kVar.a();
                 } catch (IllegalArgumentException e10) {
                     return wg.m.e(new a(-13, e10));

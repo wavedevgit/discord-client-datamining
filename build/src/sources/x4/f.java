@@ -17,19 +17,19 @@ import x4.r;
 public final class f implements k {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f53168e = new a(null);
+    public static final a f53376e = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final r f53169a;
+    private final r f53377a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final g5.m f53170b;
+    private final g5.m f53378b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ps.g f53171c;
+    private final qs.g f53379c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final n f53172d;
+    private final n f53380d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -43,25 +43,25 @@ public final class f implements k {
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class b extends iu.k {
+    public static final class b extends ju.k {
 
         /* renamed from: d  reason: collision with root package name */
-        private Exception f53173d;
+        private Exception f53381d;
 
         public b(Source source) {
             super(source);
         }
 
         public final Exception a() {
-            return this.f53173d;
+            return this.f53381d;
         }
 
-        @Override // iu.k, okio.Source
+        @Override // ju.k, okio.Source
         public long read(Buffer buffer, long j10) {
             try {
                 return super.read(buffer, j10);
             } catch (Exception e10) {
-                this.f53173d = e10;
+                this.f53381d = e10;
                 throw e10;
             }
         }
@@ -71,19 +71,19 @@ public final class f implements k {
     public static final class c implements k.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final n f53174a;
+        private final n f53382a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ps.g f53175b;
+        private final qs.g f53383b;
 
         public c(int i10, n nVar) {
-            this.f53174a = nVar;
-            this.f53175b = ps.k.b(i10, 0, 2, null);
+            this.f53382a = nVar;
+            this.f53383b = qs.k.b(i10, 0, 2, null);
         }
 
         @Override // x4.k.a
         public k a(a5.l lVar, g5.m mVar, v4.h hVar) {
-            return new f(lVar.c(), mVar, this.f53175b, this.f53174a);
+            return new f(lVar.c(), mVar, this.f53383b, this.f53382a);
         }
 
         public boolean equals(Object obj) {
@@ -100,16 +100,16 @@ public final class f implements k {
     public static final class d extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f53176d;
+        Object f53384d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f53177e;
+        Object f53385e;
 
         /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f53178i;
+        /* synthetic */ Object f53386i;
 
         /* renamed from: p  reason: collision with root package name */
-        int f53180p;
+        int f53388p;
 
         d(Continuation continuation) {
             super(continuation);
@@ -117,28 +117,28 @@ public final class f implements k {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f53178i = obj;
-            this.f53180p |= Integer.MIN_VALUE;
+            this.f53386i = obj;
+            this.f53388p |= Integer.MIN_VALUE;
             return f.this.a(this);
         }
     }
 
-    public f(r rVar, g5.m mVar, ps.g gVar, n nVar) {
-        this.f53169a = rVar;
-        this.f53170b = mVar;
-        this.f53171c = gVar;
-        this.f53172d = nVar;
+    public f(r rVar, g5.m mVar, qs.g gVar, n nVar) {
+        this.f53377a = rVar;
+        this.f53378b = mVar;
+        this.f53379c = gVar;
+        this.f53380d = nVar;
     }
 
     private final void c(BitmapFactory.Options options, l lVar) {
         Bitmap.Config config;
         Bitmap.Config config2;
         Bitmap.Config config3;
-        Bitmap.Config f10 = this.f53170b.f();
+        Bitmap.Config f10 = this.f53378b.f();
         if (lVar.b() || p.a(lVar)) {
             f10 = k5.a.e(f10);
         }
-        if (this.f53170b.d() && f10 == Bitmap.Config.ARGB_8888 && Intrinsics.areEqual(options.outMimeType, ClipboardModule.MIMETYPE_JPEG)) {
+        if (this.f53378b.d() && f10 == Bitmap.Config.ARGB_8888 && Intrinsics.areEqual(options.outMimeType, ClipboardModule.MIMETYPE_JPEG)) {
             f10 = Bitmap.Config.RGB_565;
         }
         if (Build.VERSION.SDK_INT >= 26) {
@@ -159,13 +159,13 @@ public final class f implements k {
         int i11;
         int A;
         int A2;
-        r.a a10 = this.f53169a.a();
+        r.a a10 = this.f53377a.a();
         boolean z10 = true;
-        if ((a10 instanceof v) && h5.b.b(this.f53170b.o())) {
+        if ((a10 instanceof v) && h5.b.b(this.f53378b.o())) {
             options.inSampleSize = 1;
             options.inScaled = true;
             options.inDensity = ((v) a10).a();
-            options.inTargetDensity = this.f53170b.g().getResources().getDisplayMetrics().densityDpi;
+            options.inTargetDensity = this.f53378b.g().getResources().getDisplayMetrics().densityDpi;
         } else if (options.outWidth > 0 && options.outHeight > 0) {
             if (p.b(lVar)) {
                 i10 = options.outHeight;
@@ -177,24 +177,24 @@ public final class f implements k {
             } else {
                 i11 = options.outHeight;
             }
-            h5.i o10 = this.f53170b.o();
-            h5.h n10 = this.f53170b.n();
+            h5.i o10 = this.f53378b.o();
+            h5.h n10 = this.f53378b.n();
             if (h5.b.b(o10)) {
                 A = i10;
             } else {
                 A = k5.k.A(o10.d(), n10);
             }
-            h5.i o11 = this.f53170b.o();
-            h5.h n11 = this.f53170b.n();
+            h5.i o11 = this.f53378b.o();
+            h5.h n11 = this.f53378b.n();
             if (h5.b.b(o11)) {
                 A2 = i11;
             } else {
                 A2 = k5.k.A(o11.c(), n11);
             }
-            int a11 = j.a(i10, i11, A, A2, this.f53170b.n());
+            int a11 = j.a(i10, i11, A, A2, this.f53378b.n());
             options.inSampleSize = a11;
-            double b10 = j.b(i10 / a11, i11 / a11, A, A2, this.f53170b.n());
-            if (this.f53170b.c()) {
+            double b10 = j.b(i10 / a11, i11 / a11, A, A2, this.f53378b.n());
+            if (this.f53378b.c()) {
                 b10 = kotlin.ranges.d.g(b10, 1.0d);
             }
             if (b10 != 1.0d) {
@@ -203,12 +203,12 @@ public final class f implements k {
             options.inScaled = !z10;
             if (!z10) {
                 if (b10 > 1.0d) {
-                    options.inDensity = xr.a.b(Integer.MAX_VALUE / b10);
+                    options.inDensity = yr.a.b(Integer.MAX_VALUE / b10);
                     options.inTargetDensity = Integer.MAX_VALUE;
                     return;
                 }
                 options.inDensity = Integer.MAX_VALUE;
-                options.inTargetDensity = xr.a.b(Integer.MAX_VALUE * b10);
+                options.inTargetDensity = yr.a.b(Integer.MAX_VALUE * b10);
             }
         } else {
             options.inSampleSize = 1;
@@ -217,33 +217,33 @@ public final class f implements k {
     }
 
     private final i e(BitmapFactory.Options options) {
-        b bVar = new b(this.f53169a.h());
-        BufferedSource d10 = iu.x.d(bVar);
+        b bVar = new b(this.f53377a.h());
+        BufferedSource d10 = ju.x.d(bVar);
         boolean z10 = true;
         options.inJustDecodeBounds = true;
         BitmapFactory.decodeStream(d10.peek().n2(), null, options);
         Exception a10 = bVar.a();
         if (a10 == null) {
             options.inJustDecodeBounds = false;
-            o oVar = o.f53203a;
-            l a11 = oVar.a(options.outMimeType, d10, this.f53172d);
+            o oVar = o.f53411a;
+            l a11 = oVar.a(options.outMimeType, d10, this.f53380d);
             Exception a12 = bVar.a();
             if (a12 == null) {
                 options.inMutable = false;
-                if (Build.VERSION.SDK_INT >= 26 && this.f53170b.e() != null) {
-                    options.inPreferredColorSpace = this.f53170b.e();
+                if (Build.VERSION.SDK_INT >= 26 && this.f53378b.e() != null) {
+                    options.inPreferredColorSpace = this.f53378b.e();
                 }
-                options.inPremultiplied = this.f53170b.m();
+                options.inPremultiplied = this.f53378b.m();
                 c(options, a11);
                 d(options, a11);
                 try {
                     Bitmap decodeStream = BitmapFactory.decodeStream(d10.n2(), null, options);
-                    tr.c.a(d10, null);
+                    ur.c.a(d10, null);
                     Exception a13 = bVar.a();
                     if (a13 == null) {
                         if (decodeStream != null) {
-                            decodeStream.setDensity(this.f53170b.g().getResources().getDisplayMetrics().densityDpi);
-                            BitmapDrawable bitmapDrawable = new BitmapDrawable(this.f53170b.g().getResources(), oVar.b(decodeStream, a11));
+                            decodeStream.setDensity(this.f53378b.g().getResources().getDisplayMetrics().densityDpi);
+                            BitmapDrawable bitmapDrawable = new BitmapDrawable(this.f53378b.g().getResources(), oVar.b(decodeStream, a11));
                             if (options.inSampleSize <= 1 && !options.inScaled) {
                                 z10 = false;
                             }
@@ -282,27 +282,27 @@ public final class f implements k {
             if (r0 == 0) goto L13
             r0 = r8
             x4.f$d r0 = (x4.f.d) r0
-            int r1 = r0.f53180p
+            int r1 = r0.f53388p
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f53180p = r1
+            r0.f53388p = r1
             goto L18
         L13:
             x4.f$d r0 = new x4.f$d
             r0.<init>(r8)
         L18:
-            java.lang.Object r8 = r0.f53178i
-            java.lang.Object r1 = or.b.f()
-            int r2 = r0.f53180p
+            java.lang.Object r8 = r0.f53386i
+            java.lang.Object r1 = pr.b.f()
+            int r2 = r0.f53388p
             r3 = 2
             r4 = 1
             if (r2 == 0) goto L47
             if (r2 == r4) goto L3a
             if (r2 != r3) goto L32
-            java.lang.Object r0 = r0.f53176d
-            ps.g r0 = (ps.g) r0
+            java.lang.Object r0 = r0.f53384d
+            qs.g r0 = (qs.g) r0
             kotlin.c.b(r8)     // Catch: java.lang.Throwable -> L30
             goto L70
         L30:
@@ -314,19 +314,19 @@ public final class f implements k {
             r8.<init>(r0)
             throw r8
         L3a:
-            java.lang.Object r2 = r0.f53177e
-            ps.g r2 = (ps.g) r2
-            java.lang.Object r5 = r0.f53176d
+            java.lang.Object r2 = r0.f53385e
+            qs.g r2 = (qs.g) r2
+            java.lang.Object r5 = r0.f53384d
             x4.f r5 = (x4.f) r5
             kotlin.c.b(r8)
             r8 = r2
             goto L5a
         L47:
             kotlin.c.b(r8)
-            ps.g r8 = r7.f53171c
-            r0.f53176d = r7
-            r0.f53177e = r8
-            r0.f53180p = r4
+            qs.g r8 = r7.f53379c
+            r0.f53384d = r7
+            r0.f53385e = r8
+            r0.f53388p = r4
             java.lang.Object r2 = r8.a(r0)
             if (r2 != r1) goto L59
             goto L6c
@@ -335,11 +335,11 @@ public final class f implements k {
         L5a:
             x4.e r2 = new x4.e     // Catch: java.lang.Throwable -> L76
             r2.<init>()     // Catch: java.lang.Throwable -> L76
-            r0.f53176d = r8     // Catch: java.lang.Throwable -> L76
+            r0.f53384d = r8     // Catch: java.lang.Throwable -> L76
             r5 = 0
-            r0.f53177e = r5     // Catch: java.lang.Throwable -> L76
-            r0.f53180p = r3     // Catch: java.lang.Throwable -> L76
-            java.lang.Object r0 = gs.x0.c(r5, r2, r0, r4, r5)     // Catch: java.lang.Throwable -> L76
+            r0.f53385e = r5     // Catch: java.lang.Throwable -> L76
+            r0.f53388p = r3     // Catch: java.lang.Throwable -> L76
+            java.lang.Object r0 = hs.x0.c(r5, r2, r0, r4, r5)     // Catch: java.lang.Throwable -> L76
             if (r0 != r1) goto L6d
         L6c:
             return r1

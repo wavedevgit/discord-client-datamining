@@ -6,7 +6,7 @@ import ui.c;
 final class rb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final rb f38634a = new rb();
+    static final rb f38614a = new rb();
 
     static {
         c.b a10 = ui.c.a("pipelineNamespace");

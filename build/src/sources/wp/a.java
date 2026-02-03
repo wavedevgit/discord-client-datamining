@@ -1,79 +1,61 @@
 package wp;
 
-import android.content.Context;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Filter;
-import android.widget.TextView;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.TextBasedComponentStyle;
-import cq.f0;
-import java.util.List;
 import kotlin.jvm.internal.Intrinsics;
+import yp.k5;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a extends ArrayAdapter {
+public final class a {
 
-    /* renamed from: d  reason: collision with root package name */
-    private final List f52754d;
+    /* renamed from: a  reason: collision with root package name */
+    private final k5 f52869a;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final TextBasedComponentStyle f52755e;
+    /* renamed from: b  reason: collision with root package name */
+    private final View f52870b;
 
-    /* renamed from: wp.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private final class C0722a extends Filter {
-        public C0722a() {
-        }
-
-        @Override // android.widget.Filter
-        protected Filter.FilterResults performFiltering(CharSequence charSequence) {
-            Filter.FilterResults filterResults = new Filter.FilterResults();
-            filterResults.values = a.this.a();
-            filterResults.count = a.this.a().size();
-            return filterResults;
-        }
-
-        @Override // android.widget.Filter
-        protected void publishResults(CharSequence charSequence, Filter.FilterResults filterResults) {
-            a.this.notifyDataSetChanged();
-        }
+    public a(k5 component, View view) {
+        Intrinsics.checkNotNullParameter(component, "component");
+        Intrinsics.checkNotNullParameter(view, "view");
+        this.f52869a = component;
+        this.f52870b = view;
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public a(Context context, int i10, List objects, TextBasedComponentStyle textBasedComponentStyle) {
-        super(context, i10, objects);
-        Intrinsics.checkNotNullParameter(context, "context");
-        Intrinsics.checkNotNullParameter(objects, "objects");
-        this.f52754d = objects;
-        this.f52755e = textBasedComponentStyle;
+    public final k5 a() {
+        return this.f52869a;
     }
 
-    public final List a() {
-        return this.f52754d;
+    public final View b() {
+        return this.f52870b;
     }
 
-    @Override // android.widget.ArrayAdapter, android.widget.Filterable
-    public Filter getFilter() {
-        return new C0722a();
+    public final k5 c() {
+        return this.f52869a;
     }
 
-    @Override // android.widget.ArrayAdapter, android.widget.Adapter
-    public View getView(int i10, View view, ViewGroup parent) {
-        TextView textView;
-        Intrinsics.checkNotNullParameter(parent, "parent");
-        View view2 = super.getView(i10, view, parent);
-        Intrinsics.checkNotNullExpressionValue(view2, "getView(...)");
-        TextBasedComponentStyle textBasedComponentStyle = this.f52755e;
-        if (textBasedComponentStyle != null) {
-            if (view2 instanceof TextView) {
-                textView = (TextView) view2;
-            } else {
-                textView = null;
-            }
-            if (textView != null) {
-                f0.n(textView, textBasedComponentStyle, null, 2, null);
-            }
+    public final View d() {
+        return this.f52870b;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-        return view2;
+        if (!(obj instanceof a)) {
+            return false;
+        }
+        a aVar = (a) obj;
+        if (Intrinsics.areEqual(this.f52869a, aVar.f52869a) && Intrinsics.areEqual(this.f52870b, aVar.f52870b)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return (this.f52869a.hashCode() * 31) + this.f52870b.hashCode();
+    }
+
+    public String toString() {
+        k5 k5Var = this.f52869a;
+        View view = this.f52870b;
+        return "ComponentView(component=" + k5Var + ", view=" + view + ")";
     }
 }

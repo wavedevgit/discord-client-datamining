@@ -40,23 +40,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/CirclePlayIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun70215: for (var _fun70215_ip = 0;;) switch (_fun70215_ip) {
+        _fun70324: for (var _fun70324_ip = 0;;) switch (_fun70324_ip) {
             case 0:
                 var2 = arg0;
                 var9 = var2.style;
                 var12 = var2.secondaryColor;
                 var3 = undefined;
                 if (!(var12 === var3)) {
-                    _fun70215_ip = 24;
-                    continue _fun70215
+                    _fun70324_ip = 24;
+                    continue _fun70324
                 }
             case 20:
                 var12 = 'transparent';
             case 24:
                 var10 = var2.color;
                 if (!(var10 === var3)) {
-                    _fun70215_ip = 67;
-                    continue _fun70215
+                    _fun70324_ip = 67;
+                    continue _fun70324
                 }
             case 33:
                 var1 = _closure1_slot1;
@@ -139,4 +139,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CirclePlayIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 3111, 8800, 8801, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 3141, 8832, 8833, 2]);

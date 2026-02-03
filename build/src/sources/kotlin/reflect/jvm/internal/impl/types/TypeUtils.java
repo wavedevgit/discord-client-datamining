@@ -28,10 +28,10 @@ public class TypeUtils {
     public static class SpecialType extends DelegatingSimpleType {
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f35930e;
+        private final String f35706e;
 
         public SpecialType(String str) {
-            this.f35930e = str;
+            this.f35706e = str;
         }
 
         /* JADX WARN: Removed duplicated region for block: B:23:0x0036  */
@@ -125,7 +125,7 @@ public class TypeUtils {
 
         @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
         protected SimpleType getDelegate() {
-            throw new IllegalStateException(this.f35930e);
+            throw new IllegalStateException(this.f35706e);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType, kotlin.reflect.jvm.internal.impl.types.UnwrappedType, kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -143,13 +143,13 @@ public class TypeUtils {
             if (simpleType == null) {
                 b(2);
             }
-            throw new IllegalStateException(this.f35930e);
+            throw new IllegalStateException(this.f35706e);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.SimpleType
         @NotNull
         public String toString() {
-            String str = this.f35930e;
+            String str = this.f35706e;
             if (str == null) {
                 b(1);
             }
@@ -159,7 +159,7 @@ public class TypeUtils {
         @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
         @NotNull
         public SimpleType makeNullableAsSpecified(boolean z10) {
-            throw new IllegalStateException(this.f35930e);
+            throw new IllegalStateException(this.f35706e);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
@@ -168,7 +168,7 @@ public class TypeUtils {
             if (typeAttributes == null) {
                 b(0);
             }
-            throw new IllegalStateException(this.f35930e);
+            throw new IllegalStateException(this.f35706e);
         }
     }
 
@@ -334,9 +334,9 @@ public class TypeUtils {
         if (kotlinType == null) {
             a(30);
         }
-        ClassifierDescriptor mo1198getDeclarationDescriptor = kotlinType.getConstructor().mo1198getDeclarationDescriptor();
-        if (mo1198getDeclarationDescriptor instanceof ClassDescriptor) {
-            return (ClassDescriptor) mo1198getDeclarationDescriptor;
+        ClassifierDescriptor mo1200getDeclarationDescriptor = kotlinType.getConstructor().mo1200getDeclarationDescriptor();
+        if (mo1200getDeclarationDescriptor instanceof ClassDescriptor) {
+            return (ClassDescriptor) mo1200getDeclarationDescriptor;
         }
         return null;
     }
@@ -378,8 +378,8 @@ public class TypeUtils {
         if (kotlinType == null) {
             a(63);
         }
-        if (kotlinType.getConstructor().mo1198getDeclarationDescriptor() instanceof TypeParameterDescriptor) {
-            return (TypeParameterDescriptor) kotlinType.getConstructor().mo1198getDeclarationDescriptor();
+        if (kotlinType.getConstructor().mo1200getDeclarationDescriptor() instanceof TypeParameterDescriptor) {
+            return (TypeParameterDescriptor) kotlinType.getConstructor().mo1200getDeclarationDescriptor();
         }
         return null;
     }
@@ -388,7 +388,7 @@ public class TypeUtils {
         if (kotlinType == null) {
             a(29);
         }
-        if (kotlinType.getConstructor().mo1198getDeclarationDescriptor() instanceof ClassDescriptor) {
+        if (kotlinType.getConstructor().mo1200getDeclarationDescriptor() instanceof ClassDescriptor) {
             return false;
         }
         for (KotlinType kotlinType2 : getImmediateSupertypes(kotlinType)) {

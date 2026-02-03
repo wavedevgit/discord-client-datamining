@@ -1,7 +1,7 @@
 package kotlin.reflect.jvm.internal.impl.load.java.lazy.types;
 
-import ir.p;
 import java.util.List;
+import jr.p;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor;
 import kotlin.reflect.jvm.internal.impl.resolve.descriptorUtil.DescriptorUtilsKt;

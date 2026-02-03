@@ -178,23 +178,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.cleanupGuildChannelTab = var6;
     var6 = function arg0, arg1() {
-        _fun105314: for (var _fun105314_ip = 0;;) switch (_fun105314_ip) {
+        _fun105254: for (var _fun105254_ip = 0;;) switch (_fun105254_ip) {
             case 0:
                 var5 = arg0;
                 var2 = var5.type;
                 var1 = _closure1_slot3;
                 var1 = var1.DMS;
                 if (!(var2 !== var1)) {
-                    _fun105314_ip = 44;
-                    continue _fun105314
+                    _fun105254_ip = 44;
+                    continue _fun105254
                 }
             case 25:
                 var2 = var5.type;
                 var1 = _closure1_slot3;
                 var1 = var1.GUILD;
                 if (!(var2 === var1)) {
-                    _fun105314_ip = 126;
-                    continue _fun105314
+                    _fun105254_ip = 126;
+                    continue _fun105254
                 }
             case 44:
                 var3 = _closure1_slot0;
@@ -279,4 +279,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 8929, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 8961, 806, 2]);

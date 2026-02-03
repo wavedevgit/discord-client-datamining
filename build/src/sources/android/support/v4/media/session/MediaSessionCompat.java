@@ -17,10 +17,10 @@ public abstract class MediaSessionCompat {
         public static final Parcelable.Creator<QueueItem> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final MediaDescriptionCompat f746d;
+        private final MediaDescriptionCompat f790d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final long f747e;
+        private final long f791e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Parcelable.Creator {
@@ -41,8 +41,8 @@ public abstract class MediaSessionCompat {
         }
 
         QueueItem(Parcel parcel) {
-            this.f746d = MediaDescriptionCompat.CREATOR.createFromParcel(parcel);
-            this.f747e = parcel.readLong();
+            this.f790d = MediaDescriptionCompat.CREATOR.createFromParcel(parcel);
+            this.f791e = parcel.readLong();
         }
 
         @Override // android.os.Parcelable
@@ -51,13 +51,13 @@ public abstract class MediaSessionCompat {
         }
 
         public String toString() {
-            return "MediaSession.QueueItem {Description=" + this.f746d + ", Id=" + this.f747e + " }";
+            return "MediaSession.QueueItem {Description=" + this.f790d + ", Id=" + this.f791e + " }";
         }
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            this.f746d.writeToParcel(parcel, i10);
-            parcel.writeLong(this.f747e);
+            this.f790d.writeToParcel(parcel, i10);
+            parcel.writeLong(this.f791e);
         }
     }
 
@@ -68,7 +68,7 @@ public abstract class MediaSessionCompat {
         public static final Parcelable.Creator<ResultReceiverWrapper> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        ResultReceiver f748d;
+        ResultReceiver f792d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Parcelable.Creator {
@@ -89,7 +89,7 @@ public abstract class MediaSessionCompat {
         }
 
         ResultReceiverWrapper(Parcel parcel) {
-            this.f748d = (ResultReceiver) ResultReceiver.CREATOR.createFromParcel(parcel);
+            this.f792d = (ResultReceiver) ResultReceiver.CREATOR.createFromParcel(parcel);
         }
 
         @Override // android.os.Parcelable
@@ -99,7 +99,7 @@ public abstract class MediaSessionCompat {
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            this.f748d.writeToParcel(parcel, i10);
+            this.f792d.writeToParcel(parcel, i10);
         }
     }
 
@@ -109,16 +109,16 @@ public abstract class MediaSessionCompat {
         public static final Parcelable.Creator<Token> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final Object f749d;
+        private final Object f793d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Object f750e;
+        private final Object f794e;
 
         /* renamed from: i  reason: collision with root package name */
-        private android.support.v4.media.session.a f751i;
+        private android.support.v4.media.session.a f795i;
 
         /* renamed from: o  reason: collision with root package name */
-        private d4.a f752o;
+        private d4.a f796o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Parcelable.Creator {
@@ -155,14 +155,14 @@ public abstract class MediaSessionCompat {
                 return false;
             }
             Token token = (Token) obj;
-            Object obj2 = this.f750e;
+            Object obj2 = this.f794e;
             if (obj2 == null) {
-                if (token.f750e == null) {
+                if (token.f794e == null) {
                     return true;
                 }
                 return false;
             }
-            Object obj3 = token.f750e;
+            Object obj3 = token.f794e;
             if (obj3 == null) {
                 return false;
             }
@@ -170,7 +170,7 @@ public abstract class MediaSessionCompat {
         }
 
         public int hashCode() {
-            Object obj = this.f750e;
+            Object obj = this.f794e;
             if (obj == null) {
                 return 0;
             }
@@ -179,14 +179,14 @@ public abstract class MediaSessionCompat {
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeParcelable((Parcelable) this.f750e, i10);
+            parcel.writeParcelable((Parcelable) this.f794e, i10);
         }
 
         Token(Object obj, android.support.v4.media.session.a aVar, d4.a aVar2) {
-            this.f749d = new Object();
-            this.f750e = obj;
-            this.f751i = aVar;
-            this.f752o = aVar2;
+            this.f793d = new Object();
+            this.f794e = obj;
+            this.f795i = aVar;
+            this.f796o = aVar2;
         }
     }
 

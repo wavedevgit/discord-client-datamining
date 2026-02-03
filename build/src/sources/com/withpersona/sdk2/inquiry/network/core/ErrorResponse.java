@@ -995,7 +995,7 @@ public final class ErrorResponse {
         public static final ErrorJsonAdapterFactory INSTANCE = new ErrorJsonAdapterFactory();
         @NotNull
         private static final String LABEL_KEY = "code";
-        private static final rm.b adapterFactory = rm.b.b(Error.class, LABEL_KEY).e(Error.InactiveTemplateError.class, "inactive_template_error").e(Error.InvalidConfigError.class, "invalid_config").e(Error.UnauthenticatedError.class, "unauthenticated").e(Error.InconsistentTransitionError.class, "inconsistent_transition_error").e(Error.TransitionFromTerminalStateError.class, "transition_from_terminal_state_error").e(Error.FieldNotFoundError.class, "field_not_found_error").e(Error.RateLimitExceededError.class, "rate_limit_exceeded").e(Error.InvalidFieldValueError.class, "invalid_field_value_error").e(Error.UnknownError.class, "unknown_error").d(UnknownErrorAdapter.INSTANCE);
+        private static final sm.b adapterFactory = sm.b.b(Error.class, LABEL_KEY).e(Error.InactiveTemplateError.class, "inactive_template_error").e(Error.InvalidConfigError.class, "invalid_config").e(Error.UnauthenticatedError.class, "unauthenticated").e(Error.InconsistentTransitionError.class, "inconsistent_transition_error").e(Error.TransitionFromTerminalStateError.class, "transition_from_terminal_state_error").e(Error.FieldNotFoundError.class, "field_not_found_error").e(Error.RateLimitExceededError.class, "rate_limit_exceeded").e(Error.InvalidFieldValueError.class, "invalid_field_value_error").e(Error.UnknownError.class, "unknown_error").d(UnknownErrorAdapter.INSTANCE);
 
         private ErrorJsonAdapterFactory() {
         }
@@ -1038,7 +1038,7 @@ public final class ErrorResponse {
         public final boolean hasLabel(@NotNull m mVar) {
             mVar.r();
             while (mVar.hasNext()) {
-                if (!Intrinsics.areEqual(mVar.l0(), LABEL_KEY)) {
+                if (!Intrinsics.areEqual(mVar.m0(), LABEL_KEY)) {
                     mVar.P();
                 } else {
                     return true;
@@ -1063,10 +1063,10 @@ public final class ErrorResponse {
             String str = null;
             String str2 = null;
             while (mVar.hasNext()) {
-                String l02 = mVar.l0();
-                if (Intrinsics.areEqual(l02, "code")) {
+                String m02 = mVar.m0();
+                if (Intrinsics.areEqual(m02, "code")) {
                     str2 = JsonReaderUtilsKt.nextStringOrNull(mVar);
-                } else if (Intrinsics.areEqual(l02, "title")) {
+                } else if (Intrinsics.areEqual(m02, "title")) {
                     str = JsonReaderUtilsKt.nextStringOrNull(mVar);
                 } else {
                     mVar.P();
@@ -1079,9 +1079,9 @@ public final class ErrorResponse {
         @Override // com.squareup.moshi.h
         public void toJson(@NotNull t tVar, Error.UnknownError unknownError) {
             tVar.l();
-            tVar.A0("originalCode");
+            tVar.t0("originalCode");
             tVar.x1(unknownError != null ? unknownError.getOriginalCode() : null);
-            tVar.A0("title");
+            tVar.t0("title");
             tVar.x1(unknownError != null ? unknownError.getTitle() : null);
             tVar.E();
         }

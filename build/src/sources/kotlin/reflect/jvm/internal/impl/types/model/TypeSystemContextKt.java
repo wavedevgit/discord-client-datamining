@@ -1,6 +1,6 @@
 package kotlin.reflect.jvm.internal.impl.types.model;
 
-import ir.p;
+import jr.p;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.types.Variance;
 import org.jetbrains.annotations.NotNull;

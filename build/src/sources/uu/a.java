@@ -2,49 +2,56 @@ package uu;
 
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
-import uu.c;
-import wu.b;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements ku.b, c, wu.b {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f50581a = new a();
+public interface a {
 
     /* renamed from: uu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class C0667a extends Lambda implements Function1 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final C0667a f50582d = new C0667a();
-
-        C0667a() {
-            super(1);
+    public static final class C0679a {
+        private static Object a(a aVar, List list) {
+            if (qv.a.g(list)) {
+                return Double.valueOf(0.0d);
+            }
+            if (list.isEmpty()) {
+                return "";
+            }
+            return b(aVar, list);
         }
 
-        @Override // kotlin.jvm.functions.Function1
-        /* renamed from: a */
-        public final Double invoke(List it) {
-            Intrinsics.checkNotNullParameter(it, "it");
-            return Double.valueOf(CollectionsKt.Y0(it));
+        private static Object b(a aVar, List list) {
+            List list2;
+            if (list.size() == 1 && !(CollectionsKt.firstOrNull(list) instanceof Boolean)) {
+                list2 = list;
+            } else {
+                list2 = null;
+            }
+            if (list2 == null) {
+                return null;
+            }
+            return aVar.a(CollectionsKt.firstOrNull(list));
+        }
+
+        public static Object c(a aVar, Object obj) {
+            if (obj instanceof Number) {
+                return Double.valueOf(((Number) obj).doubleValue());
+            }
+            if (obj instanceof String) {
+                Double p10 = StringsKt.p((String) obj);
+                if (p10 != null) {
+                    return p10;
+                }
+            } else if (obj instanceof List) {
+                Object a10 = a(aVar, (List) obj);
+                if (a10 != null) {
+                    return a10;
+                }
+            } else if (obj instanceof Boolean) {
+                return Double.valueOf(qv.b.a(((Boolean) obj).booleanValue()));
+            }
+            return obj;
         }
     }
 
-    private a() {
-    }
-
-    public Double a(Object obj, Function1 function1) {
-        return c.a.a(this, obj, function1);
-    }
-
-    public List b(Object obj) {
-        return b.a.b(this, obj);
-    }
-
-    @Override // ku.b
-    public Object f(Object obj, Object obj2) {
-        return a(b(obj), C0667a.f50582d);
-    }
+    Object a(Object obj);
 }

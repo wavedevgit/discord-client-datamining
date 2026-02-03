@@ -5,16 +5,16 @@ import android.app.Activity;
 public final class w extends f1 {
 
     /* renamed from: q  reason: collision with root package name */
-    private final u0.b f25168q;
+    private final u0.b f24379q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final e f25169r;
+    private final e f24380r;
 
     w(h hVar, e eVar, com.google.android.gms.common.f fVar) {
         super(hVar, fVar);
-        this.f25168q = new u0.b();
-        this.f25169r = eVar;
-        this.f25104d.e("ConnectionlessLifecycleHelper", this);
+        this.f24379q = new u0.b();
+        this.f24380r = eVar;
+        this.f24315d.e("ConnectionlessLifecycleHelper", this);
     }
 
     public static void u(Activity activity, e eVar, b bVar) {
@@ -24,13 +24,13 @@ public final class w extends f1 {
             wVar = new w(c10, eVar, com.google.android.gms.common.f.m());
         }
         gf.q.m(bVar, "ApiKey cannot be null");
-        wVar.f25168q.add(bVar);
+        wVar.f24379q.add(bVar);
         eVar.b(wVar);
     }
 
     private final void v() {
-        if (!this.f25168q.isEmpty()) {
-            this.f25169r.b(this);
+        if (!this.f24379q.isEmpty()) {
+            this.f24380r.b(this);
         }
     }
 
@@ -49,21 +49,21 @@ public final class w extends f1 {
     @Override // ff.f1, ff.g
     public final void k() {
         super.k();
-        this.f25169r.c(this);
+        this.f24380r.c(this);
     }
 
     @Override // ff.f1
     protected final void m(com.google.android.gms.common.b bVar, int i10) {
-        this.f25169r.D(bVar, i10);
+        this.f24380r.D(bVar, i10);
     }
 
     @Override // ff.f1
     protected final void n() {
-        this.f25169r.E();
+        this.f24380r.E();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final u0.b t() {
-        return this.f25168q;
+        return this.f24379q;
     }
 }

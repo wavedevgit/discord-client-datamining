@@ -9,17 +9,17 @@ public final class NameUtils {
     public static final NameUtils INSTANCE = new NameUtils();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Regex f35127a = new Regex("[^\\p{L}\\p{Digit}]");
+    private static final Regex f34903a = new Regex("[^\\p{L}\\p{Digit}]");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String f35128b = "$context_receiver";
+    private static final String f34904b = "$context_receiver";
 
     private NameUtils() {
     }
 
     @NotNull
     public static final Name contextReceiverName(int i10) {
-        Name identifier = Name.identifier(f35128b + '_' + i10);
+        Name identifier = Name.identifier(f34904b + '_' + i10);
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
         return identifier;
     }
@@ -27,6 +27,6 @@ public final class NameUtils {
     @NotNull
     public static final String sanitizeAsJavaIdentifier(@NotNull String name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return f35127a.replace(name, "_");
+        return f34903a.replace(name, "_");
     }
 }

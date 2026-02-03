@@ -27,12 +27,12 @@ public final class ImageAsset extends Asset<ImageHandle> {
 
         @Override // app.rive.AssetOps
         public /* bridge */ /* synthetic */ ImageAsset construct(ImageHandle imageHandle, CommandQueue commandQueue) {
-            return m27constructadYM1ho(imageHandle.m185unboximpl(), commandQueue);
+            return m29constructadYM1ho(imageHandle.m187unboximpl(), commandQueue);
         }
 
         @NotNull
         /* renamed from: construct-adYM1ho  reason: not valid java name */
-        public ImageAsset m27constructadYM1ho(long j10, @NotNull CommandQueue queue) {
+        public ImageAsset m29constructadYM1ho(long j10, @NotNull CommandQueue queue) {
             Intrinsics.checkNotNullParameter(queue, "queue");
             return new ImageAsset(j10, queue, null);
         }
@@ -40,18 +40,18 @@ public final class ImageAsset extends Asset<ImageHandle> {
         @Override // app.rive.AssetOps
         /* renamed from: decode-Gs2_IdU  reason: not valid java name */
         public Object decode(@NotNull CommandQueue commandQueue, @NotNull byte[] bArr, @NotNull Continuation<? super ImageHandle> continuation) {
-            return commandQueue.m117decodeImagef0BlWSU(bArr, continuation);
+            return commandQueue.m119decodeImagef0BlWSU(bArr, continuation);
         }
 
         @Override // app.rive.AssetOps
         public /* bridge */ /* synthetic */ void delete(CommandQueue commandQueue, ImageHandle imageHandle) {
-            m29deleteQieQ09U(commandQueue, imageHandle.m185unboximpl());
+            m31deleteQieQ09U(commandQueue, imageHandle.m187unboximpl());
         }
 
         /* renamed from: delete-QieQ09U  reason: not valid java name */
-        public void m29deleteQieQ09U(@NotNull CommandQueue queue, long j10) {
+        public void m31deleteQieQ09U(@NotNull CommandQueue queue, long j10) {
             Intrinsics.checkNotNullParameter(queue, "queue");
-            queue.m122deleteImageJwfOFvA(j10);
+            queue.m124deleteImageJwfOFvA(j10);
         }
 
         public final Object fromBytes(@NotNull CommandQueue commandQueue, @NotNull byte[] bArr, @NotNull Continuation<? super Result<ImageAsset>> continuation) {
@@ -72,14 +72,14 @@ public final class ImageAsset extends Asset<ImageHandle> {
 
         @Override // app.rive.AssetOps
         public /* bridge */ /* synthetic */ void register(CommandQueue commandQueue, String str, ImageHandle imageHandle) {
-            m30registerjp8Sumo(commandQueue, str, imageHandle.m185unboximpl());
+            m32registerjp8Sumo(commandQueue, str, imageHandle.m187unboximpl());
         }
 
         /* renamed from: register-jp8Sumo  reason: not valid java name */
-        public void m30registerjp8Sumo(@NotNull CommandQueue queue, @NotNull String key, long j10) {
+        public void m32registerjp8Sumo(@NotNull CommandQueue queue, @NotNull String key, long j10) {
             Intrinsics.checkNotNullParameter(queue, "queue");
             Intrinsics.checkNotNullParameter(key, "key");
-            queue.m145registerImageQieQ09U(key, j10);
+            queue.m147registerImageQieQ09U(key, j10);
         }
 
         @Override // app.rive.AssetOps
@@ -99,7 +99,7 @@ public final class ImageAsset extends Asset<ImageHandle> {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     private ImageAsset(long j10, CommandQueue queue) {
-        super(ImageHandle.m179boximpl(j10), queue, Companion, null);
+        super(ImageHandle.m181boximpl(j10), queue, Companion, null);
         Intrinsics.checkNotNullParameter(queue, "queue");
     }
 }

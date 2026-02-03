@@ -1,43 +1,23 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = metroImportDefault;
-    var2 = exports;
-    var6 = dependencyMap;
+    var1 = exports;
     var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var1 = {};
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
     var0 = true;
-    var1.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var1);
-    var0 = 0;
-    var1 = var6[var0];
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = {
+        'UNDETERMINED': 0,
+        'FAILED': 1,
+        'BEGAN': 2,
+        'CANCELLED': 3,
+        'ACTIVE': 4,
+        'END': 5
+    };
+    var1.State = var0;
     var0 = undefined;
-    var8 = var3.bind(var0)(var1);
-    var5 = ['shouldActivateOnStart', 'disallowInterruption'];
-    var7 = new Array(0);
-    var4 = var7.concat;
-    var1 = 1;
-    var9 = var6[var1];
-    var1 = require;
-    var1 = var1.bind(var0)(var9);
-    var1 = var1.baseGestureHandlerProps;
-    var1 = var8.bind(var0)(var1);
-    var4 = var4.bind(var7)(var1, var5);
-    var1 = 2;
-    var1 = var6[var1];
-    var6 = var3.bind(var0)(var1);
-    var1 = {};
-    var3 = 'NativeViewGestureHandler';
-    var1.name = var3;
-    var1.allowedProps = var4;
-    var7 = {};
-    var1.config = var7;
-    var1 = var6.bind(var0)(var1);
-    var2.nativeViewGestureHandlerProps = var5;
-    var2.nativeViewProps = var4;
-    var2.nativeViewHandlerName = var3;
-    var2.NativeViewGestureHandler = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 4943, 4945]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

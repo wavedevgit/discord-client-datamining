@@ -10,39 +10,39 @@ import s5.t;
 public class r implements m, a.b, k {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f39894b;
+    private final String f39757b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f39895c;
+    private final boolean f39758c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final com.airbnb.lottie.n f39896d;
+    private final com.airbnb.lottie.n f39759d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final o5.m f39897e;
+    private final o5.m f39760e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f39898f;
+    private boolean f39761f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Path f39893a = new Path();
+    private final Path f39756a = new Path();
 
     /* renamed from: g  reason: collision with root package name */
-    private final b f39899g = new b();
+    private final b f39762g = new b();
 
     public r(com.airbnb.lottie.n nVar, t5.b bVar, s5.r rVar) {
-        this.f39894b = rVar.b();
-        this.f39895c = rVar.d();
-        this.f39896d = nVar;
+        this.f39757b = rVar.b();
+        this.f39758c = rVar.d();
+        this.f39759d = nVar;
         o5.m a10 = rVar.c().a();
-        this.f39897e = a10;
+        this.f39760e = a10;
         bVar.i(a10);
         a10.a(this);
     }
 
     private void f() {
-        this.f39898f = false;
-        this.f39896d.invalidateSelf();
+        this.f39761f = false;
+        this.f39759d.invalidateSelf();
     }
 
     @Override // o5.a.b
@@ -58,7 +58,7 @@ public class r implements m, a.b, k {
             if (cVar instanceof u) {
                 u uVar = (u) cVar;
                 if (uVar.j() == t.a.SIMULTANEOUSLY) {
-                    this.f39899g.a(uVar);
+                    this.f39762g.a(uVar);
                     uVar.c(this);
                 }
             }
@@ -69,7 +69,7 @@ public class r implements m, a.b, k {
                 arrayList.add((s) cVar);
             }
         }
-        this.f39897e.r(arrayList);
+        this.f39760e.r(arrayList);
     }
 
     @Override // q5.f
@@ -80,33 +80,33 @@ public class r implements m, a.b, k {
     @Override // q5.f
     public void d(Object obj, y5.c cVar) {
         if (obj == a0.P) {
-            this.f39897e.o(cVar);
+            this.f39760e.o(cVar);
         }
     }
 
     @Override // n5.c
     public String getName() {
-        return this.f39894b;
+        return this.f39757b;
     }
 
     @Override // n5.m
     public Path q() {
-        if (this.f39898f && !this.f39897e.k()) {
-            return this.f39893a;
+        if (this.f39761f && !this.f39760e.k()) {
+            return this.f39756a;
         }
-        this.f39893a.reset();
-        if (this.f39895c) {
-            this.f39898f = true;
-            return this.f39893a;
+        this.f39756a.reset();
+        if (this.f39758c) {
+            this.f39761f = true;
+            return this.f39756a;
         }
-        Path path = (Path) this.f39897e.h();
+        Path path = (Path) this.f39760e.h();
         if (path == null) {
-            return this.f39893a;
+            return this.f39756a;
         }
-        this.f39893a.set(path);
-        this.f39893a.setFillType(Path.FillType.EVEN_ODD);
-        this.f39899g.b(this.f39893a);
-        this.f39898f = true;
-        return this.f39893a;
+        this.f39756a.set(path);
+        this.f39756a.setFillType(Path.FillType.EVEN_ODD);
+        this.f39762g.b(this.f39756a);
+        this.f39761f = true;
+        return this.f39756a;
     }
 }

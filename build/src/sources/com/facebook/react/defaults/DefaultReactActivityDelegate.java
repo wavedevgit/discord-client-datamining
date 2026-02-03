@@ -29,7 +29,7 @@ public class DefaultReactActivityDelegate extends ReactActivityDelegate {
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    @ir.c
+    @jr.c
     public DefaultReactActivityDelegate(@NotNull ReactActivity activity, @NotNull String mainComponentName, boolean z10, boolean z11) {
         this(activity, mainComponentName, z10);
         Intrinsics.checkNotNullParameter(activity, "activity");

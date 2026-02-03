@@ -114,23 +114,23 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
     class e extends FragmentContainer {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ FragmentContainer f4029d;
+        final /* synthetic */ FragmentContainer f4073d;
 
         e(FragmentContainer fragmentContainer) {
-            this.f4029d = fragmentContainer;
+            this.f4073d = fragmentContainer;
         }
 
         @Override // androidx.fragment.app.FragmentContainer
         public View c(int i10) {
-            if (this.f4029d.e()) {
-                return this.f4029d.c(i10);
+            if (this.f4073d.e()) {
+                return this.f4073d.c(i10);
             }
             return DialogFragment.this.onFindViewById(i10);
         }
 
         @Override // androidx.fragment.app.FragmentContainer
         public boolean e() {
-            if (!this.f4029d.e() && !DialogFragment.this.onHasView()) {
+            if (!this.f4073d.e() && !DialogFragment.this.onHasView()) {
                 return false;
             }
             return true;

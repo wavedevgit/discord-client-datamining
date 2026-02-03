@@ -3,7 +3,7 @@ package io.sentry.util;
 public abstract class d0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final b f30818a = new b();
+    private static final b f30384a = new b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static class b extends ThreadLocal {
@@ -19,6 +19,6 @@ public abstract class d0 {
     }
 
     public static b0 a() {
-        return (b0) f30818a.get();
+        return (b0) f30384a.get();
     }
 }

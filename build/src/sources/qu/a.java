@@ -1,64 +1,53 @@
 package qu;
 
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
 import kotlin.collections.CollectionsKt;
-import tu.d;
+import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements ku.b, tu.d {
+public interface a {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f47690a = new a();
-
-    private a() {
-    }
-
-    public boolean a(Object obj) {
-        return d.a.a(this, obj);
-    }
-
-    @Override // ku.b
-    public Object f(Object obj, Object obj2) {
-        Object obj3;
-        List c10 = pv.a.c(obj);
-        List<Object> list = c10;
-        boolean z10 = list instanceof Collection;
-        if (!z10 || !list.isEmpty()) {
-            for (Object obj4 : list) {
-                if (!(obj4 instanceof Boolean)) {
-                    Iterator it = list.iterator();
-                    while (true) {
-                        if (it.hasNext()) {
-                            obj3 = it.next();
-                            if (!f47690a.a(obj3)) {
-                                break;
-                            }
-                        } else {
-                            obj3 = null;
-                            break;
-                        }
-                    }
-                    if (obj3 == null) {
-                        return CollectionsKt.z0(c10);
-                    }
-                    return obj3;
-                }
-            }
+    /* renamed from: qu.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class C0585a {
+        private static boolean a(a aVar, Object obj) {
+            return CollectionsKt.o(null, "", CollectionsKt.l()).contains(obj);
         }
-        boolean z11 = true;
-        if (!z10 || !list.isEmpty()) {
-            Iterator it2 = list.iterator();
-            while (true) {
-                if (!it2.hasNext()) {
-                    break;
-                }
-                if (!f47690a.a(it2.next())) {
-                    z11 = false;
-                    break;
-                }
+
+        public static List b(a aVar, Object obj) {
+            String obj2;
+            if (obj instanceof List) {
+                obj = d(aVar, (List) obj);
             }
+            List list = null;
+            if (obj instanceof List) {
+                return null;
+            }
+            if (obj != null && (obj2 = obj.toString()) != null) {
+                list = StringsKt.split$default(obj2, new String[]{"."}, false, 0, 6, null);
+            }
+            if (list == null) {
+                return CollectionsKt.l();
+            }
+            return list;
         }
-        return Boolean.valueOf(z11);
+
+        private static Object c(a aVar, List list) {
+            Object d10;
+            if (list.size() > 1 || (d10 = d(aVar, list)) == null) {
+                return list;
+            }
+            return d10;
+        }
+
+        private static Object d(a aVar, List list) {
+            Object firstOrNull = CollectionsKt.firstOrNull(list);
+            if (firstOrNull instanceof List) {
+                return c(aVar, (List) firstOrNull);
+            }
+            if (a(aVar, firstOrNull)) {
+                return null;
+            }
+            return firstOrNull;
+        }
     }
 }

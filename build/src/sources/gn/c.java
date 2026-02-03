@@ -1,29 +1,41 @@
 package gn;
 
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.ViewParent;
-import kotlin.jvm.internal.Intrinsics;
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.events.Event;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
-    public static final ViewGroup a(View view) {
-        Intrinsics.checkNotNullParameter(view, "<this>");
-        ViewParent parent = view.getParent();
-        if (parent instanceof ViewGroup) {
-            return (ViewGroup) parent;
+public final class c extends Event {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f27146a = new a(null);
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        return null;
+
+        private a() {
+        }
     }
 
-    public static final View b(View view) {
-        Intrinsics.checkNotNullParameter(view, "<this>");
-        ViewGroup a10 = a(view);
-        if (a10 != null) {
-            a10.endViewTransition(view);
-            a10.removeView(view);
-        }
-        view.setVisibility(0);
-        view.setTranslationY(0.0f);
-        return view;
+    public c(int i10, int i11) {
+        super(i10, i11);
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public short getCoalescingKey() {
+        return (short) 0;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    protected WritableMap getEventData() {
+        return Arguments.createMap();
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public String getEventName() {
+        return "topDetached";
     }
 }

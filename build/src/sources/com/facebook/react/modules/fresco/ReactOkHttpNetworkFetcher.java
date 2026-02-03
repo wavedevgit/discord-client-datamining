@@ -7,10 +7,10 @@ import com.facebook.imagepipeline.producers.NetworkFetcher;
 import com.facebook.imagepipeline.request.ImageRequest;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.ReadableMapKeySetIterator;
-import ir.p;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.Intrinsics;
@@ -26,7 +26,7 @@ import org.jetbrains.annotations.NotNull;
 public final class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int f12188a = 0;
+    public static final /* synthetic */ int f11817a = 0;
 
     @Metadata(k = 3, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -82,7 +82,7 @@ public final class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
         Map<String, String> map;
         Intrinsics.checkNotNullParameter(fetchState, "fetchState");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        fetchState.f11422f = SystemClock.elapsedRealtime();
+        fetchState.f11051f = SystemClock.elapsedRealtime();
         Uri g10 = fetchState.g();
         Intrinsics.checkNotNullExpressionValue(g10, "getUri(...)");
         CacheControl.a aVar = new CacheControl.a();
@@ -107,7 +107,7 @@ public final class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
             aVar.e();
             map = null;
         }
-        Headers.b bVar = Headers.f44061e;
+        Headers.b bVar = Headers.f44189e;
         if (map == null) {
             map = o0.i();
         }

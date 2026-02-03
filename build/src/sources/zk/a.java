@@ -3,22 +3,22 @@ package zk;
 final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f55751a;
+    private final byte[] f55883a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final byte[] f55752b;
+    private final byte[] f55884b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(byte[] bArr, byte[] bArr2) {
-        this.f55751a = bArr;
-        this.f55752b = bArr2;
+        this.f55883a = bArr;
+        this.f55884b = bArr2;
     }
 
     public byte[] a() {
-        return this.f55751a;
+        return this.f55883a;
     }
 
     public byte[] b() {
-        return this.f55752b;
+        return this.f55884b;
     }
 }

@@ -1,6 +1,6 @@
 package com.discord.chat.bridge.contentnode;
 
-import at.v1;
+import bt.v1;
 import com.facebook.react.devsupport.StackTraceHelper;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -10,8 +10,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
+@ys.m
 @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0011\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 -2\u00020\u0001:\u0002,-B1\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\b\b\u0002\u0010\b\u001a\u00020\t¢\u0006\u0004\b\n\u0010\u000bBI\b\u0010\u0012\u0006\u0010\f\u001a\u00020\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\u0004\b\n\u0010\u0010J\t\u0010\u0019\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001a\u001a\u00020\u0005HÆ\u0003J\t\u0010\u001b\u001a\u00020\u0005HÆ\u0003J\t\u0010\u001c\u001a\u00020\u0005HÆ\u0003J\t\u0010\u001d\u001a\u00020\tHÆ\u0003J;\u0010\u001e\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\tHÆ\u0001J\u0013\u0010\u001f\u001a\u00020\t2\b\u0010 \u001a\u0004\u0018\u00010!HÖ\u0003J\t\u0010\"\u001a\u00020\rHÖ\u0001J\t\u0010#\u001a\u00020\u0005HÖ\u0001J%\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\u00002\u0006\u0010'\u001a\u00020(2\u0006\u0010)\u001a\u00020*H\u0001¢\u0006\u0002\b+R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0014R\u0011\u0010\u0007\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0014R\u0014\u0010\b\u001a\u00020\tX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018¨\u0006."}, d2 = {"Lcom/discord/chat/bridge/contentnode/CustomEmojiContentNode;", "Lcom/discord/chat/bridge/contentnode/EmojiContentNode;", StackTraceHelper.ID_KEY, "", "alt", "", "src", "frozenSrc", "jumboable", "", "<init>", "(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V", "seen0", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getId", "()J", "getAlt", "()Ljava/lang/String;", "getSrc", "getFrozenSrc", "getJumboable", "()Z", "component1", "component2", "component3", "component4", "component5", "copy", "equals", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@xs.m
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class CustomEmojiContentNode extends EmojiContentNode {
     @NotNull
@@ -22,7 +22,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     private final String frozenSrc;
 
     /* renamed from: id */
-    private final long f9664id;
+    private final long f9293id;
     private final boolean jumboable;
     @NotNull
     private final String src;
@@ -49,7 +49,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         if (15 != (i10 & 15)) {
             v1.b(i10, 15, CustomEmojiContentNode$$serializer.INSTANCE.getDescriptor());
         }
-        this.f9664id = j10;
+        this.f9293id = j10;
         this.alt = str;
         this.src = str2;
         this.frozenSrc = str3;
@@ -62,7 +62,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
 
     public static /* synthetic */ CustomEmojiContentNode copy$default(CustomEmojiContentNode customEmojiContentNode, long j10, String str, String str2, String str3, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            j10 = customEmojiContentNode.f9664id;
+            j10 = customEmojiContentNode.f9293id;
         }
         long j11 = j10;
         if ((i10 & 2) != 0) {
@@ -85,17 +85,17 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
 
     public static final /* synthetic */ void write$Self$chat_release(CustomEmojiContentNode customEmojiContentNode, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         EmojiContentNode.write$Self(customEmojiContentNode, compositeEncoder, serialDescriptor);
-        compositeEncoder.E(serialDescriptor, 0, customEmojiContentNode.f9664id);
-        compositeEncoder.y(serialDescriptor, 1, customEmojiContentNode.alt);
-        compositeEncoder.y(serialDescriptor, 2, customEmojiContentNode.src);
-        compositeEncoder.y(serialDescriptor, 3, customEmojiContentNode.frozenSrc);
-        if (compositeEncoder.A(serialDescriptor, 4) || customEmojiContentNode.getJumboable()) {
-            compositeEncoder.x(serialDescriptor, 4, customEmojiContentNode.getJumboable());
+        compositeEncoder.E(serialDescriptor, 0, customEmojiContentNode.f9293id);
+        compositeEncoder.x(serialDescriptor, 1, customEmojiContentNode.alt);
+        compositeEncoder.x(serialDescriptor, 2, customEmojiContentNode.src);
+        compositeEncoder.x(serialDescriptor, 3, customEmojiContentNode.frozenSrc);
+        if (compositeEncoder.y(serialDescriptor, 4) || customEmojiContentNode.getJumboable()) {
+            compositeEncoder.w(serialDescriptor, 4, customEmojiContentNode.getJumboable());
         }
     }
 
     public final long component1() {
-        return this.f9664id;
+        return this.f9293id;
     }
 
     @NotNull
@@ -131,7 +131,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         }
         if (obj instanceof CustomEmojiContentNode) {
             CustomEmojiContentNode customEmojiContentNode = (CustomEmojiContentNode) obj;
-            return this.f9664id == customEmojiContentNode.f9664id && Intrinsics.areEqual(this.alt, customEmojiContentNode.alt) && Intrinsics.areEqual(this.src, customEmojiContentNode.src) && Intrinsics.areEqual(this.frozenSrc, customEmojiContentNode.frozenSrc) && this.jumboable == customEmojiContentNode.jumboable;
+            return this.f9293id == customEmojiContentNode.f9293id && Intrinsics.areEqual(this.alt, customEmojiContentNode.alt) && Intrinsics.areEqual(this.src, customEmojiContentNode.src) && Intrinsics.areEqual(this.frozenSrc, customEmojiContentNode.frozenSrc) && this.jumboable == customEmojiContentNode.jumboable;
         }
         return false;
     }
@@ -147,7 +147,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public final long getId() {
-        return this.f9664id;
+        return this.f9293id;
     }
 
     @Override // com.discord.chat.presentation.textutils.Jumboable
@@ -161,12 +161,12 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
     }
 
     public int hashCode() {
-        return (((((((Long.hashCode(this.f9664id) * 31) + this.alt.hashCode()) * 31) + this.src.hashCode()) * 31) + this.frozenSrc.hashCode()) * 31) + Boolean.hashCode(this.jumboable);
+        return (((((((Long.hashCode(this.f9293id) * 31) + this.alt.hashCode()) * 31) + this.src.hashCode()) * 31) + this.frozenSrc.hashCode()) * 31) + Boolean.hashCode(this.jumboable);
     }
 
     @NotNull
     public String toString() {
-        long j10 = this.f9664id;
+        long j10 = this.f9293id;
         String str = this.alt;
         String str2 = this.src;
         String str3 = this.frozenSrc;
@@ -184,7 +184,7 @@ public final class CustomEmojiContentNode extends EmojiContentNode {
         Intrinsics.checkNotNullParameter(alt, "alt");
         Intrinsics.checkNotNullParameter(src, "src");
         Intrinsics.checkNotNullParameter(frozenSrc, "frozenSrc");
-        this.f9664id = j10;
+        this.f9293id = j10;
         this.alt = alt;
         this.src = src;
         this.frozenSrc = frozenSrc;

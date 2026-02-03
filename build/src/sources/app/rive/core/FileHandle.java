@@ -12,38 +12,38 @@ public final class FileHandle {
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ FileHandle m165boximpl(long j10) {
+    public static final /* synthetic */ FileHandle m167boximpl(long j10) {
         return new FileHandle(j10);
     }
 
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static long m166constructorimpl(long j10) {
+    public static long m168constructorimpl(long j10) {
         return j10;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m167equalsimpl(long j10, Object obj) {
-        return (obj instanceof FileHandle) && j10 == ((FileHandle) obj).m171unboximpl();
+    public static boolean m169equalsimpl(long j10, Object obj) {
+        return (obj instanceof FileHandle) && j10 == ((FileHandle) obj).m173unboximpl();
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m168equalsimpl0(long j10, long j11) {
+    public static final boolean m170equalsimpl0(long j10, long j11) {
         return j10 == j11;
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m169hashCodeimpl(long j10) {
+    public static int m171hashCodeimpl(long j10) {
         return Long.hashCode(j10);
     }
 
     @NotNull
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m170toStringimpl(long j10) {
+    public static String m172toStringimpl(long j10) {
         return "FileHandle(" + j10 + ")";
     }
 
     public boolean equals(Object obj) {
-        return m167equalsimpl(this.handle, obj);
+        return m169equalsimpl(this.handle, obj);
     }
 
     public final long getHandle() {
@@ -51,16 +51,16 @@ public final class FileHandle {
     }
 
     public int hashCode() {
-        return m169hashCodeimpl(this.handle);
+        return m171hashCodeimpl(this.handle);
     }
 
     @NotNull
     public String toString() {
-        return m170toStringimpl(this.handle);
+        return m172toStringimpl(this.handle);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ long m171unboximpl() {
+    public final /* synthetic */ long m173unboximpl() {
         return this.handle;
     }
 }

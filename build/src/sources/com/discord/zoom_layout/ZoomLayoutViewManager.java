@@ -9,8 +9,8 @@ import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.ViewManagerDelegate;
 import com.facebook.react.viewmanagers.DCDZoomLayoutAndroidManagerDelegate;
 import com.facebook.react.viewmanagers.DCDZoomLayoutAndroidManagerInterface;
-import ir.v;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -56,7 +56,7 @@ public final class ZoomLayoutViewManager extends ViewGroupManager<ZoomLayoutFixe
     public static final Unit createViewInstance$lambda$0(ZoomLayoutViewManager zoomLayoutViewManager, ZoomLayoutFixed zoomLayout) {
         Intrinsics.checkNotNullParameter(zoomLayout, "zoomLayout");
         zoomLayoutViewManager.reactEvents.emitEvent(zoomLayout, new OnZoomChangedEvent(zoomLayout.getZoom()));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // com.facebook.react.uimanager.ViewManager

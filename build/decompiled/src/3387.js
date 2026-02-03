@@ -1,89 +1,63 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0() {
-        _fun29002: for (var _fun29002_ip = 0;;) switch (_fun29002_ip) {
+    var3 = require;
+    var2 = dependencyMap;
+    var _closure1_slot0 = var3;
+    var _closure1_slot1 = var2;
+    var0 = 0;
+    var2 = var2[var0];
+    var0 = undefined;
+    var2 = var3.bind(var0)(var2);
+    var2 = var2.bind(var0)();
+    var _closure1_slot2 = var2;
+    var2 = function() {
+        _fun29035: for (var _fun29035_ip = 0;;) switch (_fun29035_ip) {
             case 0:
-                var0 = arg0;
-                var1 = undefined;
+                var1 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 1;
+                var0 = var2[var0];
+                var5 = undefined;
+                var0 = var1.bind(var5)(var0);
+                var0 = var0.bind(var5)();
+                var2 = global;
+                var1 = var2.String;
+                var1 = var1.prototype;
+                var1 = var1.trim;
                 if (!(var1 !== var0)) {
-                    _fun29002_ip = 172;
-                    continue _fun29002
+                    _fun29035_ip = 120;
+                    continue _fun29035
                 }
-            case 12:
-                var1 = {};
-                var2 = '[[Value]]';
-                var2 = var2 in var0;
-                if (!var2) {
-                    _fun29002_ip = 37;
-                    continue _fun29002
+            case 52:
+                var1 = _closure1_slot2;
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var3 = 2;
+                var3 = var6[var3];
+                var4 = var4.bind(var5)(var3);
+                var2 = var2.String;
+                var3 = var2.prototype;
+                var2 = 'trim';
+                if (var1) {
+                    _fun29035_ip = 103;
+                    continue _fun29035
                 }
-            case 25:
-                var2 = var0["[[Value]]"];
-                var1.value = var2;
-            case 37:
-                var2 = '[[Writable]]';
-                var2 = var2 in var0;
-                if (!var2) {
-                    _fun29002_ip = 66;
-                    continue _fun29002
-                }
-            case 48:
-                var2 = var0["[[Writable]]"];
-                var2 = !var2;
-                var2 = !var2;
-                var1.writable = var2;
-            case 66:
-                var2 = '[[Get]]';
-                var2 = var2 in var0;
-                if (!var2) {
-                    _fun29002_ip = 89;
-                    continue _fun29002
-                }
-            case 77:
-                var2 = var0["[[Get]]"];
-                var1.get = var2;
-            case 89:
-                var2 = '[[Set]]';
-                var2 = var2 in var0;
-                if (!var2) {
-                    _fun29002_ip = 112;
-                    continue _fun29002
-                }
-            case 100:
-                var2 = var0["[[Set]]"];
-                var1.set = var2;
-            case 112:
-                var2 = '[[Enumerable]]';
-                var2 = var2 in var0;
-                if (!var2) {
-                    _fun29002_ip = 141;
-                    continue _fun29002
-                }
-            case 123:
-                var2 = var0["[[Enumerable]]"];
-                var2 = !var2;
-                var2 = !var2;
-                var1.enumerable = var2;
-            case 141:
-                var2 = '[[Configurable]]';
-                var2 = var2 in var0;
-                if (!var2) {
-                    _fun29002_ip = 170;
-                    continue _fun29002
-                }
-            case 152:
-                var2 = var0["[[Configurable]]"];
-                var2 = !var2;
-                var2 = !var2;
-                var1.configurable = var2;
-            case 170:
-                return var1;
-            case 172:
+            case 94:
+                var1 = var4.bind(var5)(var3, var2, var0);
+                _fun29035_ip = 120;
+                continue _fun29035;
+            case 103:
+                var7 = true;
+                var11 = undefined;
+                var10 = var3;
+                var9 = var2;
+                var8 = var0;
+                var1 = var11[var4](var10, var9, var8, var7, var6);
+            case 120:
                 return var0;
         }
     };
-    var0 = arg4;
-    var0.exports = var1;
-    var0 = undefined;
+    var1 = arg4;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1405, 3380, 1406]);

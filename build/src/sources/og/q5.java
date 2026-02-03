@@ -5,23 +5,23 @@ import ui.c;
 final class q5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q5 f43454a = new q5();
+    static final q5 f43582a = new q5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43455b;
+    private static final ui.c f43583b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43456c;
+    private static final ui.c f43584c;
 
     static {
         c.b a10 = ui.c.a("source");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43455b = a10.b(s1Var.b()).a();
+        f43583b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("errorCode");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43456c = a11.b(s1Var2.b()).a();
+        f43584c = a11.b(s1Var2.b()).a();
     }
 
     private q5() {

@@ -5,12 +5,12 @@ import android.os.Parcelable;
 import jd.b;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class a extends b {
-    public static final Parcelable.Creator<a> CREATOR = new C0535a();
+    public static final Parcelable.Creator<a> CREATOR = new C0543a();
 
     /* renamed from: od.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    class C0535a implements Parcelable.Creator {
-        C0535a() {
+    class C0543a implements Parcelable.Creator {
+        C0543a() {
         }
 
         @Override // android.os.Parcelable.Creator

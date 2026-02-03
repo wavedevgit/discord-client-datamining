@@ -16,7 +16,7 @@ class WebRtcAudioEffects {
     private AcousticEchoCanceler aec;
 
     /* renamed from: ns  reason: collision with root package name */
-    private NoiseSuppressor f44655ns;
+    private NoiseSuppressor f44729ns;
     private boolean shouldEnableAec;
     private boolean shouldEnableNs;
 
@@ -88,7 +88,7 @@ class WebRtcAudioEffects {
             z10 = false;
         }
         assertTrue(z10);
-        if (this.f44655ns == null) {
+        if (this.f44729ns == null) {
             z11 = true;
         } else {
             z11 = false;
@@ -125,13 +125,13 @@ class WebRtcAudioEffects {
         }
         if (isNoiseSuppressorSupported()) {
             NoiseSuppressor create2 = NoiseSuppressor.create(i10);
-            this.f44655ns = create2;
+            this.f44729ns = create2;
             if (create2 != null) {
                 boolean enabled2 = create2.getEnabled();
                 if (this.shouldEnableNs && isNoiseSuppressorSupported()) {
                     z13 = true;
                 }
-                if (this.f44655ns.setEnabled(z13) != 0) {
+                if (this.f44729ns.setEnabled(z13) != 0) {
                     Logging.e(TAG, "Failed to set the NoiseSuppressor state");
                 }
                 if (!enabled2) {
@@ -139,7 +139,7 @@ class WebRtcAudioEffects {
                 } else {
                     str = ViewProps.ENABLED;
                 }
-                if (this.f44655ns.getEnabled()) {
+                if (this.f44729ns.getEnabled()) {
                     str4 = ViewProps.ENABLED;
                 }
                 Logging.d(TAG, "NoiseSuppressor: was " + str + ", enable: " + z13 + ", is now: " + str4);
@@ -156,10 +156,10 @@ class WebRtcAudioEffects {
             acousticEchoCanceler.release();
             this.aec = null;
         }
-        NoiseSuppressor noiseSuppressor = this.f44655ns;
+        NoiseSuppressor noiseSuppressor = this.f44729ns;
         if (noiseSuppressor != null) {
             noiseSuppressor.release();
-            this.f44655ns = null;
+            this.f44729ns = null;
         }
     }
 
@@ -184,7 +184,7 @@ class WebRtcAudioEffects {
             Logging.w(TAG, "Platform NS is not supported");
             this.shouldEnableNs = false;
             return false;
-        } else if (this.f44655ns != null && z10 != this.shouldEnableNs) {
+        } else if (this.f44729ns != null && z10 != this.shouldEnableNs) {
             Logging.e(TAG, "Platform NS state can't be modified while recording");
             return false;
         } else {
@@ -194,12 +194,12 @@ class WebRtcAudioEffects {
     }
 
     public boolean toggleNS(boolean z10) {
-        if (this.f44655ns == null) {
+        if (this.f44729ns == null) {
             Logging.e(TAG, "Attempting to enable or disable nonexistent NoiseSuppressor.");
             return false;
         }
         Logging.d(TAG, "toggleNS(" + z10 + ")");
-        if (this.f44655ns.setEnabled(z10) != 0) {
+        if (this.f44729ns.setEnabled(z10) != 0) {
             return false;
         }
         return true;

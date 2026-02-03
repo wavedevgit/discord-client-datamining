@@ -13,52 +13,52 @@ import z.e1;
 public class y0 implements e.a, e1.a {
 
     /* renamed from: b  reason: collision with root package name */
-    final x f55219b;
+    final x f55351b;
 
     /* renamed from: c  reason: collision with root package name */
-    y f55220c;
+    y f55352c;
 
     /* renamed from: d  reason: collision with root package name */
-    private s0 f55221d;
+    private s0 f55353d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f55222e;
+    private final List f55354e;
 
     /* renamed from: a  reason: collision with root package name */
-    final Deque f55218a = new ArrayDeque();
+    final Deque f55350a = new ArrayDeque();
 
     /* renamed from: f  reason: collision with root package name */
-    boolean f55223f = false;
+    boolean f55355f = false;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ l f55224a;
+        final /* synthetic */ l f55356a;
 
         a(l lVar) {
-            this.f55224a = lVar;
+            this.f55356a = lVar;
         }
 
         @Override // d0.c
         /* renamed from: a */
         public void onSuccess(Void r12) {
-            y0.this.f55219b.c();
+            y0.this.f55351b.c();
         }
 
         @Override // d0.c
         public void onFailure(Throwable th2) {
-            if (this.f55224a.b()) {
+            if (this.f55356a.b()) {
                 return;
             }
-            int f10 = ((a0.p0) this.f55224a.a().get(0)).f();
+            int f10 = ((a0.p0) this.f55356a.a().get(0)).f();
             if (th2 instanceof x.o0) {
-                y0.this.f55220c.j(b.c(f10, (x.o0) th2));
+                y0.this.f55352c.j(b.c(f10, (x.o0) th2));
             } else {
-                y0.this.f55220c.j(b.c(f10, new x.o0(2, "Failed to submit capture request", th2)));
+                y0.this.f55352c.j(b.c(f10, new x.o0(2, "Failed to submit capture request", th2)));
             }
-            y0.this.f55219b.c();
+            y0.this.f55351b.c();
         }
     }
 
@@ -79,37 +79,37 @@ public class y0 implements e.a, e1.a {
 
     public y0(x xVar) {
         b0.p.a();
-        this.f55219b = xVar;
-        this.f55222e = new ArrayList();
+        this.f55351b = xVar;
+        this.f55354e = new ArrayList();
     }
 
     public static /* synthetic */ void c(y0 y0Var) {
-        y0Var.f55221d = null;
+        y0Var.f55353d = null;
         y0Var.g();
     }
 
     private ListenableFuture l(l lVar) {
         b0.p.a();
-        this.f55219b.b();
-        ListenableFuture a10 = this.f55219b.a(lVar.a());
+        this.f55351b.b();
+        ListenableFuture a10 = this.f55351b.a(lVar.a());
         d0.n.j(a10, new a(lVar), c0.a.d());
         return a10;
     }
 
     private void m(final s0 s0Var) {
         b2.e.i(!f());
-        this.f55221d = s0Var;
+        this.f55353d = s0Var;
         s0Var.p().a(new Runnable() { // from class: z.w0
             @Override // java.lang.Runnable
             public final void run() {
                 y0.c(y0.this);
             }
         }, c0.a.a());
-        this.f55222e.add(s0Var);
+        this.f55354e.add(s0Var);
         s0Var.q().a(new Runnable() { // from class: z.x0
             @Override // java.lang.Runnable
             public final void run() {
-                y0.this.f55222e.remove(s0Var);
+                y0.this.f55354e.remove(s0Var);
             }
         }, c0.a.a());
     }
@@ -128,24 +128,24 @@ public class y0 implements e.a, e1.a {
     public void b(e1 e1Var) {
         b0.p.a();
         x.y0.a("TakePictureManager", "Add a new request for retrying.");
-        this.f55218a.addFirst(e1Var);
+        this.f55350a.addFirst(e1Var);
         g();
     }
 
     public void e() {
         b0.p.a();
         x.o0 o0Var = new x.o0(3, "Camera is closed.", null);
-        for (e1 e1Var : this.f55218a) {
+        for (e1 e1Var : this.f55350a) {
             e1Var.s(o0Var);
         }
-        this.f55218a.clear();
-        for (s0 s0Var : new ArrayList(this.f55222e)) {
+        this.f55350a.clear();
+        for (s0 s0Var : new ArrayList(this.f55354e)) {
             s0Var.m(o0Var);
         }
     }
 
     boolean f() {
-        if (this.f55221d != null) {
+        if (this.f55353d != null) {
             return true;
         }
         return false;
@@ -157,38 +157,38 @@ public class y0 implements e.a, e1.a {
         Log.d("TakePictureManager", "Issue the next TakePictureRequest.");
         if (f()) {
             Log.d("TakePictureManager", "There is already a request in-flight.");
-        } else if (this.f55223f) {
+        } else if (this.f55355f) {
             Log.d("TakePictureManager", "The class is paused.");
-        } else if (this.f55220c.h() == 0) {
+        } else if (this.f55352c.h() == 0) {
             Log.d("TakePictureManager", "Too many acquire images. Close image to be able to process next.");
         } else {
-            e1 e1Var = (e1) this.f55218a.poll();
+            e1 e1Var = (e1) this.f55350a.poll();
             if (e1Var == null) {
                 Log.d("TakePictureManager", "No new request.");
                 return;
             }
             s0 s0Var = new s0(e1Var, this);
             m(s0Var);
-            b2.c e10 = this.f55220c.e(e1Var, s0Var, s0Var.p());
-            l lVar = (l) e10.f7147a;
+            b2.c e10 = this.f55352c.e(e1Var, s0Var, s0Var.p());
+            l lVar = (l) e10.f6198a;
             Objects.requireNonNull(lVar);
-            p0 p0Var = (p0) e10.f7148b;
+            p0 p0Var = (p0) e10.f6199b;
             Objects.requireNonNull(p0Var);
-            this.f55220c.m(p0Var);
+            this.f55352c.m(p0Var);
             s0Var.t(l(lVar));
         }
     }
 
     public void h(e1 e1Var) {
         b0.p.a();
-        this.f55218a.offer(e1Var);
+        this.f55350a.offer(e1Var);
         g();
     }
 
     public void i() {
         b0.p.a();
-        this.f55223f = true;
-        s0 s0Var = this.f55221d;
+        this.f55355f = true;
+        s0 s0Var = this.f55353d;
         if (s0Var != null) {
             s0Var.n();
         }
@@ -196,13 +196,13 @@ public class y0 implements e.a, e1.a {
 
     public void j() {
         b0.p.a();
-        this.f55223f = false;
+        this.f55355f = false;
         g();
     }
 
     public void k(y yVar) {
         b0.p.a();
-        this.f55220c = yVar;
+        this.f55352c = yVar;
         yVar.k(this);
     }
 }

@@ -7,7 +7,7 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.uimanager.DisplayMetricsHolder;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;

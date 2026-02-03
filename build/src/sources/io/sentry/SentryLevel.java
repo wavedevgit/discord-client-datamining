@@ -15,7 +15,7 @@ public enum SentryLevel implements w1 {
         @Override // io.sentry.m1
         /* renamed from: b */
         public SentryLevel a(e3 e3Var, ILogger iLogger) {
-            return SentryLevel.valueOf(e3Var.e1().toUpperCase(Locale.ROOT));
+            return SentryLevel.valueOf(e3Var.f1().toUpperCase(Locale.ROOT));
         }
     }
 

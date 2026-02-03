@@ -5,7 +5,7 @@ import com.discord.lifecycle.react.events.OnHostDestroyEvent;
 import com.discord.reactevents.ReactEvents;
 import com.facebook.react.bridge.LifecycleEventListener;
 import com.facebook.react.bridge.ReactApplicationContext;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;

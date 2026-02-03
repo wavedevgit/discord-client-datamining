@@ -53,23 +53,23 @@ public final class NextStep_GovernmentId_AssetConfig_SelectPageJsonAdapter exten
         RemoteImage remoteImage5 = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 remoteImage2 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -3;
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 remoteImage3 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -5;
-            } else if (A0 == 3) {
+            } else if (t02 == 3) {
                 remoteImage4 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -9;
-            } else if (A0 == 4) {
+            } else if (t02 == 4) {
                 remoteImage5 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -17;
             }
@@ -87,7 +87,7 @@ public final class NextStep_GovernmentId_AssetConfig_SelectPageJsonAdapter exten
         RemoteImage remoteImage12 = remoteImage;
         Constructor<NextStep.GovernmentId.AssetConfig.SelectPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.SelectPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, sm.c.f49097c);
+            constructor = NextStep.GovernmentId.AssetConfig.SelectPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, tm.c.f49935c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -101,15 +101,15 @@ public final class NextStep_GovernmentId_AssetConfig_SelectPageJsonAdapter exten
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selectPage != null) {
             writer.l();
-            writer.A0("headerPictograph");
+            writer.t0("headerPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, selectPage.getHeaderPictograph());
-            writer.A0("iconDriversLicense");
+            writer.t0("iconDriversLicense");
             this.nullableRemoteImageAdapter.toJson(writer, selectPage.getIconDriversLicense());
-            writer.A0("iconPassport");
+            writer.t0("iconPassport");
             this.nullableRemoteImageAdapter.toJson(writer, selectPage.getIconPassport());
-            writer.A0("iconNationalId");
+            writer.t0("iconNationalId");
             this.nullableRemoteImageAdapter.toJson(writer, selectPage.getIconNationalId());
-            writer.A0("iconGovernmentId");
+            writer.t0("iconGovernmentId");
             this.nullableRemoteImageAdapter.toJson(writer, selectPage.getIconGovernmentId());
             writer.E();
             return;

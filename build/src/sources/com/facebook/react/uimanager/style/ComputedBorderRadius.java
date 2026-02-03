@@ -1,6 +1,6 @@
 package com.facebook.react.uimanager.style;
 
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;

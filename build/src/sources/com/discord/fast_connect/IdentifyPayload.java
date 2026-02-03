@@ -1,14 +1,14 @@
 package com.discord.fast_connect;
 
-import bt.h;
 import com.discord.app_database.DatabaseVersions;
 import com.discord.app_database.GuildVersion;
 import com.discord.app_database.NonGuildVersion;
 import com.discord.logging.Log;
-import ir.v;
+import ct.h;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Result;
@@ -71,10 +71,10 @@ public final class IdentifyPayload {
         Intrinsics.checkNotNullParameter(json, "json");
         Intrinsics.checkNotNullParameter(versions, "versions");
         try {
-            Result.a aVar = Result.f33295e;
-            b10 = Result.b(Json.f36410d.g(json));
+            Result.a aVar = Result.f33071e;
+            b10 = Result.b(Json.f36186d.g(json));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33295e;
+            Result.a aVar2 = Result.f33071e;
             b10 = Result.b(c.a(th2));
         }
         if (Result.g(b10)) {

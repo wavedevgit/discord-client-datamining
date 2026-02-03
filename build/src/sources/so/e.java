@@ -1,31 +1,25 @@
 package so;
-
-import iv.a0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e implements tq.d {
+public final class e implements uq.d {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.internal.network.f f49129a;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    private static final class a {
 
-    /* renamed from: b  reason: collision with root package name */
-    private final tq.h f49130b;
-
-    public e(com.withpersona.sdk2.inquiry.internal.network.f fVar, tq.h hVar) {
-        this.f49129a = fVar;
-        this.f49130b = hVar;
+        /* renamed from: a  reason: collision with root package name */
+        static final e f49221a = new e();
     }
 
-    public static e a(com.withpersona.sdk2.inquiry.internal.network.f fVar, tq.h hVar) {
-        return new e(fVar, hVar);
+    public static e a() {
+        return a.f49221a;
     }
 
-    public static xn.b b(com.withpersona.sdk2.inquiry.internal.network.f fVar, a0 a0Var) {
-        return (xn.b) tq.g.d(fVar.a(a0Var));
+    public static d c() {
+        return new d();
     }
 
     @Override // javax.inject.Provider
-    /* renamed from: c */
-    public xn.b get() {
-        return b(this.f49129a, (a0) this.f49130b.get());
+    /* renamed from: b */
+    public d get() {
+        return c();
     }
 }

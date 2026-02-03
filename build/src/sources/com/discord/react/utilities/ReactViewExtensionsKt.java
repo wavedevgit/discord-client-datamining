@@ -7,11 +7,11 @@ import com.facebook.react.uimanager.UIImplementation;
 import com.facebook.react.uimanager.UIManagerModule;
 import com.facebook.react.uimanager.UIViewOperationQueue;
 import com.facebook.yoga.YogaDirection;
-import ir.l;
 import java.lang.reflect.Method;
 import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
+import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -90,7 +90,7 @@ public final class ReactViewExtensionsKt {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Method viewOperationQueueMethod_delegate$lambda$1() {
-        int i10 = UIImplementation.f12351a;
+        int i10 = UIImplementation.f11980a;
         Method declaredMethod = UIImplementation.class.getDeclaredMethod("com.discord.react.utilities.getUIViewOperationQueue", null);
         declaredMethod.setAccessible(true);
         return declaredMethod;

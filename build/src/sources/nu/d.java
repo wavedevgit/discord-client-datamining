@@ -1,107 +1,82 @@
 package nu;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
-import mu.f;
-import tu.d;
+import nu.f;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface d extends f, tu.d {
+public final class d implements lu.a, f {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final d f42338a = new d();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-
-        /* renamed from: nu.d$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        static final class C0526a extends Lambda implements Function2 {
-
-            /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ d f42222d;
-
-            /* JADX INFO: Access modifiers changed from: package-private */
-            /* renamed from: nu.d$a$a$a  reason: collision with other inner class name */
-            /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-            public /* synthetic */ class C0527a extends FunctionReferenceImpl implements Function2 {
-                C0527a(Object obj) {
-                    super(2, obj, d.class, "check", "check(Loperations/array/occurence/OccurrenceCheckInputData;LLogicEvaluator;)Ljava/lang/Object;", 0);
-                }
-
-                @Override // kotlin.jvm.functions.Function2
-                /* renamed from: a */
-                public final Object invoke(c p02, h p12) {
-                    Intrinsics.checkNotNullParameter(p02, "p0");
-                    Intrinsics.checkNotNullParameter(p12, "p1");
-                    return ((d) this.receiver).g(p02, p12);
-                }
-            }
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0526a(d dVar) {
-                super(2);
-                this.f42222d = dVar;
-            }
-
-            @Override // kotlin.jvm.functions.Function2
-            /* renamed from: a */
-            public final Object invoke(mu.b input, h logicEvaluator) {
-                Intrinsics.checkNotNullParameter(input, "input");
-                Intrinsics.checkNotNullParameter(logicEvaluator, "logicEvaluator");
-                return a.d(this.f42222d, input, logicEvaluator, new C0527a(this.f42222d));
-            }
+    /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
+        a(Object obj) {
+            super(2, obj, d.class, "mapOrEmptyList", "mapOrEmptyList(Loperations/array/ArrayOperationInputData;LLogicEvaluator;)Ljava/util/List;", 0);
         }
 
-        public static Object b(d dVar, Object obj, Object obj2, h evaluator) {
-            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-            return dVar.b(obj, obj2, evaluator, new C0526a(dVar));
-        }
-
-        public static mu.b c(d dVar, List expressionValues, Object obj, h evaluator) {
-            Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
-            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-            return f.a.a(dVar, expressionValues, obj, evaluator);
-        }
-
-        /* JADX INFO: Access modifiers changed from: private */
-        public static Object d(d dVar, mu.b bVar, h hVar, Function2 function2) {
-            Object invoke;
-            c g10 = g(dVar, bVar);
-            if (g10 != null && (invoke = function2.invoke(g10, hVar)) != null) {
-                return invoke;
-            }
-            return bVar.c();
-        }
-
-        public static Boolean e(d dVar, Map map, List expressionValues) {
-            Intrinsics.checkNotNullParameter(expressionValues, "expressionValues");
-            return Boolean.FALSE;
-        }
-
-        public static Object f(d dVar, Object obj, Object obj2, h evaluator, Function2 arrayOperation) {
-            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-            Intrinsics.checkNotNullParameter(arrayOperation, "arrayOperation");
-            return f.a.c(dVar, obj, obj2, evaluator, arrayOperation);
-        }
-
-        private static c g(d dVar, mu.b bVar) {
-            if (bVar.a() != null && bVar.b() != null && !bVar.b().isEmpty()) {
-                return new c(bVar.b(), bVar.a(), bVar.c());
-            }
-            return null;
-        }
-
-        public static List h(d dVar, List expression, Object obj, h evaluator) {
-            Intrinsics.checkNotNullParameter(expression, "expression");
-            Intrinsics.checkNotNullParameter(evaluator, "evaluator");
-            return f.a.d(dVar, expression, obj, evaluator);
-        }
-
-        public static boolean i(d dVar, Object obj) {
-            return d.a.a(dVar, obj);
+        @Override // kotlin.jvm.functions.Function2
+        /* renamed from: a */
+        public final List invoke(b p02, h p12) {
+            Intrinsics.checkNotNullParameter(p02, "p0");
+            Intrinsics.checkNotNullParameter(p12, "p1");
+            return ((d) this.receiver).h(p02, p12);
         }
     }
 
-    Object g(c cVar, h hVar);
+    private d() {
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final List h(b bVar, h hVar) {
+        List b10 = bVar.b();
+        if (b10 == null) {
+            b10 = CollectionsKt.l();
+        }
+        List<Object> list = b10;
+        ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+        for (Object obj : list) {
+            arrayList.add(f42338a.i(hVar, obj, bVar.a(), bVar.c()));
+        }
+        return arrayList;
+    }
+
+    private final Object i(h hVar, Object obj, Map map, Object obj2) {
+        Object a10;
+        if (map != null && (a10 = hVar.a(map, obj)) != null) {
+            return a10;
+        }
+        return obj2;
+    }
+
+    @Override // nu.a
+    public Object a(Map map, List list) {
+        return f.a.b(this, map, list);
+    }
+
+    @Override // nu.f
+    public Object b(Object obj, Object obj2, h hVar, Function2 function2) {
+        return f.a.c(this, obj, obj2, hVar, function2);
+    }
+
+    @Override // nu.a
+    public b c(List list, Object obj, h hVar) {
+        return f.a.a(this, list, obj, hVar);
+    }
+
+    @Override // lu.a
+    public Object e(Object obj, Object obj2, h evaluator) {
+        Intrinsics.checkNotNullParameter(evaluator, "evaluator");
+        return b(obj, obj2, evaluator, new a(this));
+    }
+
+    @Override // pv.a
+    public List f(List list, Object obj, h hVar) {
+        return f.a.d(this, list, obj, hVar);
+    }
 }

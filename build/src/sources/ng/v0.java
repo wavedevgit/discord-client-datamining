@@ -5,58 +5,58 @@ import ui.c;
 final class v0 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final v0 f41742a = new v0();
+    static final v0 f41605a = new v0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41743b;
+    private static final ui.c f41606b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41744c;
+    private static final ui.c f41607c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41745d;
+    private static final ui.c f41608d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41746e;
+    private static final ui.c f41609e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41747f;
+    private static final ui.c f41610f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f41748g;
+    private static final ui.c f41611g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ui.c f41749h;
+    private static final ui.c f41612h;
 
     static {
         c.b a10 = ui.c.a("durationMs");
         f fVar = new f();
         fVar.a(1);
-        f41743b = a10.b(fVar.b()).a();
+        f41606b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("handledErrors");
         f fVar2 = new f();
         fVar2.a(2);
-        f41744c = a11.b(fVar2.b()).a();
+        f41607c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("partiallyHandledErrors");
         f fVar3 = new f();
         fVar3.a(3);
-        f41745d = a12.b(fVar3.b()).a();
+        f41608d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("unhandledErrors");
         f fVar4 = new f();
         fVar4.a(4);
-        f41746e = a13.b(fVar4.b()).a();
+        f41609e = a13.b(fVar4.b()).a();
         c.b a14 = ui.c.a("modelNamespace");
         f fVar5 = new f();
         fVar5.a(5);
-        f41747f = a14.b(fVar5.b()).a();
+        f41610f = a14.b(fVar5.b()).a();
         c.b a15 = ui.c.a("delegateFilter");
         f fVar6 = new f();
         fVar6.a(6);
-        f41748g = a15.b(fVar6.b()).a();
+        f41611g = a15.b(fVar6.b()).a();
         c.b a16 = ui.c.a("httpResponseCode");
         f fVar7 = new f();
         fVar7.a(7);
-        f41749h = a16.b(fVar7.b()).a();
+        f41612h = a16.b(fVar7.b()).a();
     }
 
     private v0() {

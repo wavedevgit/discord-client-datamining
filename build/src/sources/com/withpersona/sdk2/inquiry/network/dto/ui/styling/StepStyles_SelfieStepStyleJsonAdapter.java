@@ -135,9 +135,9 @@ public final class StepStyles_SelfieStepStyleJsonAdapter extends h {
         StepStyles.StepBorderRadiusStyle stepBorderRadiusStyle = null;
         StepStyles.CombinedStepAlignment combinedStepAlignment = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -199,37 +199,37 @@ public final class StepStyles_SelfieStepStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfieStepStyle != null) {
             writer.l();
-            writer.A0("textColor");
+            writer.t0("textColor");
             this.nullableHeaderButtonColorStyleAdapter.toJson(writer, selfieStepStyle.getHeaderButtonColor());
-            writer.A0(ViewProps.BACKGROUND_COLOR);
+            writer.t0(ViewProps.BACKGROUND_COLOR);
             this.nullableStepBackgroundColorStyleAdapter.toJson(writer, selfieStepStyle.getBackgroundColor());
-            writer.A0("backgroundImage");
+            writer.t0("backgroundImage");
             this.nullableStepBackgroundImageStyleAdapter.toJson(writer, selfieStepStyle.getBackgroundImage());
-            writer.A0("titleStyle");
+            writer.t0("titleStyle");
             this.nullableSelfieStepTitleComponentStyleAdapter.toJson(writer, selfieStepStyle.getTitleStyle());
-            writer.A0("textStyle");
+            writer.t0("textStyle");
             this.nullableSelfieStepTextBasedComponentStyleAdapter.toJson(writer, selfieStepStyle.getTextStyle());
-            writer.A0("buttonPrimaryStyle");
+            writer.t0("buttonPrimaryStyle");
             this.nullableStepPrimaryButtonComponentStyleAdapter.toJson(writer, selfieStepStyle.getButtonPrimaryStyle());
-            writer.A0("buttonSecondaryStyle");
+            writer.t0("buttonSecondaryStyle");
             this.nullableStepSecondaryButtonComponentStyleAdapter.toJson(writer, selfieStepStyle.getButtonSecondaryStyle());
-            writer.A0("disclaimerStyle");
+            writer.t0("disclaimerStyle");
             this.nullableStepTextBasedComponentStyleAdapter.toJson(writer, selfieStepStyle.getDisclaimerStyle());
-            writer.A0("strokeColor");
+            writer.t0("strokeColor");
             this.nullableSelfieStepStrokeColorAdapter.toJson(writer, selfieStepStyle.getStrokeColor());
-            writer.A0(ViewProps.BORDER_COLOR);
+            writer.t0(ViewProps.BORDER_COLOR);
             this.nullableSelfieStepBorderColorAdapter.toJson(writer, selfieStepStyle.getBorderColor());
-            writer.A0(ViewProps.BORDER_WIDTH);
+            writer.t0(ViewProps.BORDER_WIDTH);
             this.nullableSelfieStepBorderWidthAdapter.toJson(writer, selfieStepStyle.getBorderWidth());
-            writer.A0("fillColor");
+            writer.t0("fillColor");
             this.nullableSelfieStepFillColorAdapter.toJson(writer, selfieStepStyle.getFillColor());
-            writer.A0("imageLocalStyle");
+            writer.t0("imageLocalStyle");
             this.nullableSelfieStepImageLocalStyleAdapter.toJson(writer, selfieStepStyle.getImageLocalStyle());
-            writer.A0(ViewProps.PADDING);
+            writer.t0(ViewProps.PADDING);
             this.nullableStepPaddingStyleAdapter.toJson(writer, selfieStepStyle.getPadding());
-            writer.A0("borderRadius");
+            writer.t0("borderRadius");
             this.nullableStepBorderRadiusStyleAdapter.toJson(writer, selfieStepStyle.getBorderRadius());
-            writer.A0("alignment");
+            writer.t0("alignment");
             this.nullableCombinedStepAlignmentAdapter.toJson(writer, selfieStepStyle.getAlignment());
             writer.E();
             return;

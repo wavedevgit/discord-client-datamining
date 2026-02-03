@@ -1,52 +1,55 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
+    var4 = require;
+    var2 = exports;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
     var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
     var0 = true;
-    var2.value = var0;
+    var5.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var5 = ['id', 'enabled', 'shouldCancelWhenOutside', 'hitSlop', 'cancelsTouchesInView', 'userSelect', 'activeCursor', 'mouseButton', 'enableContextMenu', 'touchAction'];
-    var4 = new Array(0);
-    var3 = var4.concat;
-    var2 = ['waitFor', 'simultaneousHandlers', 'blocksHandlers'];
-    var0 = ['onBegan', 'onFailed', 'onCancelled', 'onActivated', 'onEnded', 'onGestureEvent', 'onHandlerStateChange'];
-    var3 = var3.bind(var4)(var5, var2, var0);
-    var4 = new Array(0);
-    var2 = var4.concat;
-    var0 = ['needsPointerData', 'manualActivation'];
-    var2 = var2.bind(var4)(var5, var0);
-    var0 = {};
-    var5 = 1;
-    var0.LEFT = var5;
-    var4 = 'LEFT';
-    var0[var5] = var4;
-    var5 = 2;
-    var0.RIGHT = var5;
-    var4 = 'RIGHT';
-    var0[var5] = var4;
-    var5 = 4;
-    var0.MIDDLE = var5;
-    var4 = 'MIDDLE';
-    var0[var5] = var4;
-    var5 = 8;
-    var0.BUTTON_4 = var5;
-    var4 = 'BUTTON_4';
-    var0[var5] = var4;
-    var5 = 16;
-    var0.BUTTON_5 = var5;
-    var4 = 'BUTTON_5';
-    var0[var5] = var4;
-    var5 = 31;
-    var0.ALL = var5;
-    var4 = 'ALL';
-    var0[var5] = var4;
-    var1.baseGestureHandlerProps = var3;
-    var1.baseGestureHandlerWithDetectorProps = var2;
-    var1.MouseButton = var0;
+    var0 = var6.bind(var7)(var2, var0, var5);
+    var0 = 0;
+    var3 = var3[var0];
     var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.useContext;
+    var _closure1_slot2 = var3;
+    var1 = function arg0() {
+        _fun44696: for (var _fun44696_ip = 0;;) switch (_fun44696_ip) {
+            case 0:
+                var2 = _closure1_slot2;
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var0 = var1[var0];
+                var1 = undefined;
+                var0 = var3.bind(var1)(var0);
+                var0 = var0.BottomSheetModalInternalContext;
+                var0 = var2.bind(var1)(var0);
+                var2 = true;
+                var1 = arg0;
+                if (!(var2 !== var1)) {
+                    _fun44696_ip = 55;
+                    continue _fun44696
+                }
+            case 49:
+                var1 = null;
+                if (!(var1 !== var0)) {
+                    _fun44696_ip = 57;
+                    continue _fun44696
+                }
+            case 55:
+                return var0;
+            case 57:
+                var0 = "'BottomSheetModalInternalContext' cannot be null!";
+                throw var0;
+        }
+    };
+    var2.useBottomSheetModalInternal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4939]);

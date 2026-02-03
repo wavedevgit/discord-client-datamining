@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 final class p implements q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CountDownLatch f52633a = new CountDownLatch(1);
+    private final CountDownLatch f52200a = new CountDownLatch(1);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ p(o oVar) {
@@ -14,24 +14,24 @@ final class p implements q {
 
     @Override // wg.e
     public final void a() {
-        this.f52633a.countDown();
+        this.f52200a.countDown();
     }
 
     public final void b() {
-        this.f52633a.await();
+        this.f52200a.await();
     }
 
     public final boolean c(long j10, TimeUnit timeUnit) {
-        return this.f52633a.await(j10, timeUnit);
+        return this.f52200a.await(j10, timeUnit);
     }
 
     @Override // wg.f
     public final void onFailure(Exception exc) {
-        this.f52633a.countDown();
+        this.f52200a.countDown();
     }
 
     @Override // wg.g
     public final void onSuccess(Object obj) {
-        this.f52633a.countDown();
+        this.f52200a.countDown();
     }
 }

@@ -5,12 +5,12 @@ import androidx.versionedparcelable.a;
 public class AudioAttributesCompatParcelizer {
     public static AudioAttributesCompat read(a aVar) {
         AudioAttributesCompat audioAttributesCompat = new AudioAttributesCompat();
-        audioAttributesCompat.f4587a = (AudioAttributesImpl) aVar.v(audioAttributesCompat.f4587a, 1);
+        audioAttributesCompat.f4631a = (AudioAttributesImpl) aVar.v(audioAttributesCompat.f4631a, 1);
         return audioAttributesCompat;
     }
 
     public static void write(AudioAttributesCompat audioAttributesCompat, a aVar) {
         aVar.x(false, false);
-        aVar.M(audioAttributesCompat.f4587a, 1);
+        aVar.M(audioAttributesCompat.f4631a, 1);
     }
 }

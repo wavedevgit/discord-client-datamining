@@ -7,7 +7,7 @@ import kotlin.jvm.functions.Function2;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final h f52021a = new h();
+    private static final h f51588a = new h();
 
     public static final void a(Object obj, Function1 function1, a aVar, int i10) {
         if (c.c()) {
@@ -15,7 +15,7 @@ public abstract class i {
         }
         boolean h10 = aVar.h(obj);
         Object d10 = aVar.d();
-        if (h10 || d10 == a.f52001a.a()) {
+        if (h10 || d10 == a.f51568a.a()) {
             d10 = new f(function1);
             aVar.c(d10);
         }
@@ -32,7 +32,7 @@ public abstract class i {
         CoroutineContext b10 = aVar.b();
         boolean h10 = aVar.h(obj) | aVar.h(obj2) | aVar.h(obj3);
         Object d10 = aVar.d();
-        if (h10 || d10 == a.f52001a.a()) {
+        if (h10 || d10 == a.f51568a.a()) {
             d10 = new l(b10, function2);
             aVar.c(d10);
         }
@@ -49,7 +49,7 @@ public abstract class i {
         CoroutineContext b10 = aVar.b();
         boolean h10 = aVar.h(obj) | aVar.h(obj2);
         Object d10 = aVar.d();
-        if (h10 || d10 == a.f52001a.a()) {
+        if (h10 || d10 == a.f51568a.a()) {
             d10 = new l(b10, function2);
             aVar.c(d10);
         }
@@ -66,7 +66,7 @@ public abstract class i {
         CoroutineContext b10 = aVar.b();
         boolean h10 = aVar.h(obj);
         Object d10 = aVar.d();
-        if (h10 || d10 == a.f52001a.a()) {
+        if (h10 || d10 == a.f51568a.a()) {
             d10 = new l(b10, function2);
             aVar.c(d10);
         }

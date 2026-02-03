@@ -1,276 +1,246 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var6 = require;
     var2 = exports;
-    var7 = dependencyMap;
-    var _closure1_slot0 = var6;
-    var _closure1_slot1 = var7;
-    var1 = global;
-    var5 = var1.Object;
+    var0 = global;
+    var _closure1_slot0 = var0;
+    var0 = global;
+    var5 = var0.Object;
     var4 = var5.defineProperty;
     var3 = {};
-    var1 = true;
-    var3.value = var1;
-    var1 = '__esModule';
-    var1 = var4.bind(var5)(var2, var1, var3);
-    var3 = {};
-    var1 = "function pnpm_timingTs1(toValue,userConfig,callback){const{__DEV__,assertEasingIsWorklet,defineAnimation,Easing,getReduceMotionForAnimation}=this.__closure;if(__DEV__&&userConfig!==null&&userConfig!==void 0&&userConfig.easing){assertEasingIsWorklet(userConfig.easing);}return defineAnimation(toValue,function(){'worklet';const config={duration:300,easing:Easing.inOut(Easing.quad)};if(userConfig){Object.keys(userConfig).forEach(function(key){return config[key]=userConfig[key];});}function timing(animation,now){const{toValue:toValue,startTime:startTime,startValue:startValue}=animation;const runtime=now-startTime;if(runtime>=config.duration){animation.startTime=0;animation.current=toValue;return true;}const progress=animation.easing(runtime/config.duration);animation.current=startValue+(toValue-startValue)*progress;return false;}function onStart(animation,value,now,previousAnimation){if(previousAnimation&&previousAnimation.type==='timing'&&previousAnimation.toValue===toValue&&previousAnimation.startTime){animation.startTime=previousAnimation.startTime;animation.startValue=previousAnimation.startValue;}else{animation.startTime=now;animation.startValue=value;}animation.current=value;if(typeof config.easing==='object'){animation.easing=config.easing.factory();}else{animation.easing=config.easing;}}return{type:'timing',onFrame:timing,onStart:onStart,progress:0,toValue:toValue,startValue:0,startTime:0,easing:function(){return 0;},current:toValue,callback:callback,reduceMotion:getReduceMotionForAnimation(userConfig===null||userConfig===void 0?void 0:userConfig.reduceMotion)};});}";
-    var3.code = var1;
-    var1 = {};
-    var4 = "function pnpm_timingTs2(){const{Easing,userConfig,toValue,callback,getReduceMotionForAnimation}=this.__closure;var _userConfig;const config={duration:300,easing:Easing.inOut(Easing.quad)};if(userConfig){Object.keys(userConfig).forEach(function(key){return config[key]=userConfig[key];});}function timing(animation,now){const{toValue:toValue,startTime:startTime,startValue:startValue}=animation;const runtime=now-startTime;if(runtime>=config.duration){animation.startTime=0;animation.current=toValue;return true;}const progress=animation.easing(runtime/config.duration);animation.current=startValue+(toValue-startValue)*progress;return false;}function onStart(animation,value,now,previousAnimation){if(previousAnimation&&previousAnimation.type==='timing'&&previousAnimation.toValue===toValue&&previousAnimation.startTime){animation.startTime=previousAnimation.startTime;animation.startValue=previousAnimation.startValue;}else{animation.startTime=now;animation.startValue=value;}animation.current=value;if(typeof config.easing==='object'){animation.easing=config.easing.factory();}else{animation.easing=config.easing;}}return{type:'timing',onFrame:timing,onStart:onStart,progress:0,toValue:toValue,startValue:0,startTime:0,easing:function(){return 0;},current:toValue,callback:callback,reduceMotion:getReduceMotionForAnimation((_userConfig=userConfig)===null||_userConfig===void 0?void 0:_userConfig.reduceMotion)};}";
-    var1.code = var4;
-    var _closure1_slot2 = var1;
-    var1 = function arg0, arg1, arg2() {
-        var3 = arg0;
-        var11 = arg1;
-        var10 = arg2;
-        var _closure2_slot0 = var3;
-        var _closure2_slot1 = var11;
-        var _closure2_slot2 = var10;
-        var8 = _closure1_slot0;
-        var9 = _closure1_slot1;
-        var6 = 0;
-        var1 = var9[var6];
-        var7 = undefined;
-        var2 = var8.bind(var7)(var1);
-        var1 = var2.defineAnimation;
-        var0 = function() {
-            _fun33568: for (var _fun33568_ip = 0;;) switch (_fun33568_ip) {
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var0 = {};
+    var3 = 'function valueUnpacker_Pnpm_valueUnpackerTs1(objectToUnpack,category,remoteFunctionName){let workletsCache=global.__workletsCache;let handleCache=global.__handleCache;if(workletsCache===undefined){workletsCache=global.__workletsCache=new Map();handleCache=global.__handleCache=new WeakMap();}const workletHash=objectToUnpack.__workletHash;if(workletHash!==undefined){let workletFun=workletsCache.get(workletHash);if(workletFun===undefined){const initData=objectToUnpack.__initData;if(global.evalWithSourceMap){workletFun=global.evalWithSourceMap(\'(\'+initData.code+\'\\n)\',initData.location,initData.sourceMap);}else if(global.evalWithSourceUrl){workletFun=global.evalWithSourceUrl(\'(\'+initData.code+\'\\n)\',"worklet_"+workletHash);}else{workletFun=eval(\'(\'+initData.code+\'\\n)\');}workletsCache.set(workletHash,workletFun);}const functionInstance=workletFun.bind(objectToUnpack);objectToUnpack._recur=functionInstance;return functionInstance;}else if(objectToUnpack.__init!==undefined){let value=handleCache.get(objectToUnpack);if(value===undefined){value=objectToUnpack.__init();handleCache.set(objectToUnpack,value);}return value;}else if(category===\'RemoteFunction\'){const fun=function(){const label=remoteFunctionName?"function `"+remoteFunctionName+"`":\'anonymous function\';throw new Error("[Reanimated] Tried to synchronously call a non-worklet "+label+" on the UI thread.\\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#tried-to-synchronously-call-a-non-worklet-function-on-the-ui-thread for more details.");};fun.__remoteFunction=objectToUnpack;return fun;}else{throw new Error("[Reanimated] Data type in category \\""+category+"\\" not recognized by value unpacker: \\""+_toString(objectToUnpack)+"\\".");}}';
+    var0.code = var3;
+    var _closure1_slot1 = var0;
+    var3 = function() { // Environment: var1
+        var0 = function arg0, arg1, arg2() {
+            _fun33232: for (var _fun33232_ip = 0;;) switch (_fun33232_ip) {
                 case 0:
-                    var0 = {};
-                    var1 = 300;
-                    var0.duration = var1;
-                    var7 = _closure1_slot0;
-                    var8 = _closure1_slot1;
-                    var3 = 1;
-                    var4 = var8[var3];
-                    var1 = undefined;
-                    var4 = var7.bind(var1)(var4);
-                    var5 = var4.Easing;
-                    var4 = var5.inOut;
-                    var3 = var8[var3];
-                    var3 = var7.bind(var1)(var3);
-                    var3 = var3.Easing;
-                    var3 = var3.quad;
-                    var3 = var4.bind(var5)(var3);
-                    var0.easing = var3;
+                    var1 = arg0;
+                    var13 = arg1;
+                    var0 = arg2;
                     var _closure3_slot0 = var0;
-                    var0 = _closure2_slot1;
-                    if (!var0) {
-                        _fun33568_ip = 133;
-                        continue _fun33568
+                    var0 = _closure1_slot0;
+                    var5 = var0.__workletsCache;
+                    var8 = var0.__handleCache;
+                    var0 = undefined;
+                    if (!(var0 === var5)) {
+                        _fun33232_ip = 116;
+                        continue _fun33232
                     }
-                case 96:
-                    var0 = global;
-                    var5 = var0.Object;
-                    var3 = var5.keys;
-                    var0 = _closure2_slot1;
-                    var5 = var3.bind(var5)(var0);
-                    var3 = var5.forEach;
-                    var0 = function(arg0) { // Environment: var6
-                        var2 = arg0;
-                        var1 = _closure3_slot0;
-                        var0 = _closure2_slot1;
-                        var0 = var0[var2];
-                        var1[var2] = var0;
-                        return var0;
-                    };
-                    var0 = var3.bind(var5)(var0);
-                case 133:
-                    var0 = {
-                        'type': 'timing',
-                        'onFrame': null,
-                        'onStart': null,
-                        'progress': 0,
-                        'toValue': null,
-                        'startValue': 0,
-                        'startTime': 0
-                    };
-                    var3 = function arg0, arg1() {
-                        _fun33570: for (var _fun33570_ip = 0;;) switch (_fun33570_ip) {
+                case 40:
+                    var7 = _closure1_slot0;
+                    var3 = global;
+                    var4 = var3.Map;
+                    var9 = var4.prototype;
+                    var9 = Object.create(var9, {
+                        constructor: {
+                            value: var4
+                        }
+                    });
+                    var18 = var9;
+                    var4 = new var18[var4](var17);
+                    var4 = var4 instanceof Object ? var4 : var9;
+                    var7.__workletsCache = var4;
+                    var3 = var3.WeakMap;
+                    var9 = var3.prototype;
+                    var9 = Object.create(var9, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var18 = var9;
+                    var3 = new var18[var3](var17);
+                    var3 = var3 instanceof Object ? var3 : var9;
+                    var7.__handleCache = var3;
+                    var5 = var4;
+                    var8 = var3;
+                case 116:
+                    var4 = var1.__workletHash;
+                    if (!(var0 === var4)) {
+                        _fun33232_ip = 280;
+                        continue _fun33232
+                    }
+                case 128:
+                    var3 = var1.__init;
+                    if (!(var0 === var3)) {
+                        _fun33232_ip = 240;
+                        continue _fun33232
+                    }
+                case 138:
+                    var3 = 'RemoteFunction';
+                    if (!(var3 !== var13)) {
+                        _fun33232_ip = 227;
+                        continue _fun33232
+                    }
+                case 148:
+                    var3 = global;
+                    var9 = var3.Error;
+                    var7 = var3._toString;
+                    var15 = var7.bind(var0)(var1);
+                    var3 = var3.HermesInternal;
+                    var11 = var3.concat;
+                    var18 = '[Reanimated] Data type in category "';
+                    var16 = '" not recognized by value unpacker: "';
+                    var14 = '".';
+                    var17 = var13;
+                    var17 = var18[var11](var17, var16, var15, var14, var13);
+                    var7 = var9.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var9
+                        }
+                    });
+                    var18 = var7;
+                    var3 = new var18[var9](var17, var16);
+                    var3 = var3 instanceof Object ? var3 : var7;
+                    throw var3;
+                case 227:
+                    var2 = function() {
+                        _fun33233: for (var _fun33233_ip = 0;;) switch (_fun33233_ip) {
                             case 0:
-                                var1 = arg0;
-                                var0 = var1.toValue;
-                                var4 = var1.startTime;
-                                var3 = var1.startValue;
-                                var2 = arg1;
-                                var5 = var2 - var4;
-                                var4 = _closure3_slot0;
-                                var4 = var4.duration;
-                                if (!(!(var5 >= var4))) {
-                                    _fun33570_ip = 90;
-                                    continue _fun33570
+                                var0 = global;
+                                var2 = var0.Error;
+                                var3 = _closure3_slot0;
+                                var4 = 'anonymous function';
+                                if (!var3) {
+                                    _fun33233_ip = 55;
+                                    continue _fun33233
                                 }
-                            case 44:
-                                var4 = var1.easing;
-                                var2 = _closure3_slot0;
-                                var2 = var2.duration;
-                                var2 = var5 / var2;
-                                var4 = var4.bind(var1)(var2);
-                                var2 = var0 - var3;
-                                var2 = var2 * var4;
-                                var2 = var3 + var2;
-                                var1.current = var2;
-                                var2 = false;
-                                return var2;
-                            case 90:
-                                var2 = 0;
-                                var1.startTime = var2;
-                                var1.current = var0;
-                                var0 = true;
-                                return var0;
+                            case 24:
+                                var6 = _closure3_slot0;
+                                var1 = var0.HermesInternal;
+                                var5 = var1.concat;
+                                var3 = 'function `';
+                                var1 = '`';
+                                var4 = var5.bind(var3)(var6, var1);
+                            case 55:
+                                var0 = var0.HermesInternal;
+                                var3 = var0.concat;
+                                var1 = '[Reanimated] Tried to synchronously call a non-worklet ';
+                                var0 = ' on the UI thread.\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#tried-to-synchronously-call-a-non-worklet-function-on-the-ui-thread for more details.';
+                                var8 = var3.bind(var1)(var4, var0);
+                                var1 = var2.prototype;
+                                var1 = Object.create(var1, {
+                                    constructor: {
+                                        value: var2
+                                    }
+                                });
+                                var9 = var1;
+                                var0 = new var9[var2](var8, var7);
+                                var0 = var0 instanceof Object ? var0 : var1;
+                                throw var0;
                         }
                     };
-                    var0.onFrame = var3;
-                    var3 = function arg0, arg1, arg2, arg3() {
-                        _fun33571: for (var _fun33571_ip = 0;;) switch (_fun33571_ip) {
-                            case 0:
-                                var1 = arg0;
-                                var0 = arg1;
-                                var2 = arg3;
-                                if (!var2) {
-                                    _fun33571_ip = 51;
-                                    continue _fun33571
-                                }
-                            case 12:
-                                var4 = var2.type;
-                                var3 = 'timing';
-                                if (!(var3 === var4)) {
-                                    _fun33571_ip = 51;
-                                    continue _fun33571
-                                }
-                            case 25:
-                                var4 = var2.toValue;
-                                var3 = _closure2_slot0;
-                                if (!(var4 === var3)) {
-                                    _fun33571_ip = 51;
-                                    continue _fun33571
-                                }
-                            case 42:
-                                var3 = var2.startTime;
-                                if (var3) {
-                                    _fun33571_ip = 68;
-                                    continue _fun33571
-                                }
-                            case 51:
-                                var3 = arg2;
-                                var1.startTime = var3;
-                                var1.startValue = var0;
-                                _fun33571_ip = 92;
-                                continue _fun33571;
-                            case 68:
-                                var3 = var2.startTime;
-                                var1.startTime = var3;
-                                var2 = var2.startValue;
-                                var1.startValue = var2;
-                            case 92:
-                                var1.current = var0;
-                                var2 = _closure3_slot0;
-                                var2 = var2.easing;
-                                var3 = 'object';
-                                var2 = typeof var2;
-                                if (!(var3 !== var2)) {
-                                    _fun33571_ip = 140;
-                                    continue _fun33571
-                                }
-                            case 122:
-                                var2 = _closure3_slot0;
-                                var2 = var2.easing;
-                                var1.easing = var2;
-                                _fun33571_ip = 166;
-                                continue _fun33571;
-                            case 140:
-                                var0 = _closure3_slot0;
-                                var2 = var0.easing;
-                                var0 = var2.factory;
-                                var0 = var0.bind(var2)();
-                                var1.easing = var0;
-                            case 166:
-                                var0 = undefined;
-                                return var0;
-                        }
-                    };
-                    var0.onStart = var3;
-                    var5 = 0;
-                    var3 = _closure2_slot0;
-                    var0.toValue = var3;
-                    var6 = function() {
-                        var0 = 0;
-                        return var0;
-                    };
-                    var0.easing = var6;
-                    var0.current = var3;
-                    var3 = _closure2_slot2;
-                    var0.callback = var3;
-                    var3 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var2 = var2[var5];
-                    var3 = var3.bind(var1)(var2);
-                    var2 = var3.getReduceMotionForAnimation;
-                    var6 = _closure2_slot1;
-                    var5 = null;
-                    var5 = var5 == var6;
-                    var1 = undefined;
-                    if (var5) {
-                        _fun33568_ip = 252;
-                        continue _fun33568
+                    var2.__remoteFunction = var1;
+                    return var2;
+                case 240:
+                    var2 = var8.get;
+                    var2 = var2.bind(var8)(var1);
+                    if (!(var0 === var2)) {
+                        _fun33232_ip = 278;
+                        continue _fun33232
                     }
-                case 242:
-                    var4 = _closure2_slot1;
-                    var1 = var4.reduceMotion;
-                case 252:
-                    var1 = var2.bind(var3)(var1);
-                    var0.reduceMotion = var1;
+                case 254:
+                    var3 = var1.__init;
+                    var3 = var3.bind(var1)();
+                    var7 = var8.set;
+                    var7 = var7.bind(var8)(var1, var3);
+                    var2 = var3;
+                case 278:
+                    return var2;
+                case 280:
+                    var2 = var5.get;
+                    var2 = var2.bind(var5)(var4);
+                    if (!(var0 === var2)) {
+                        _fun33232_ip = 485;
+                        continue _fun33232
+                    }
+                case 297:
+                    var3 = var1.__initData;
+                    var0 = _closure1_slot0;
+                    var0 = var0.evalWithSourceMap;
+                    var9 = _closure1_slot0;
+                    if (var0) {
+                        _fun33232_ip = 422;
+                        continue _fun33232
+                    }
+                case 319:
+                    var0 = var9.evalWithSourceUrl;
+                    if (var0) {
+                        _fun33232_ip = 357;
+                        continue _fun33232
+                    }
+                case 328:
+                    var7 = var3.code;
+                    var0 = '(';
+                    var7 = var0 + var7;
+                    var0 = '\n)';
+                    var0 = var7 + var0;
+                    var0 = eval(var0);
+                    _fun33232_ip = 420;
+                    continue _fun33232;
+                case 357:
+                    var10 = _closure1_slot0;
+                    var8 = var10.evalWithSourceUrl;
+                    var7 = var3.code;
+                    var6 = '(';
+                    var11 = var6 + var7;
+                    var6 = global;
+                    var6 = var6.HermesInternal;
+                    var7 = var6.concat;
+                    var6 = 'worklet_';
+                    var7 = var7.bind(var6)(var4);
+                    var6 = '\n)';
+                    var6 = var11 + var6;
+                    var0 = var8.bind(var10)(var6, var7);
+                case 420:
+                    _fun33232_ip = 471;
+                    continue _fun33232;
+                case 422:
+                    var8 = var9.evalWithSourceMap;
+                    var7 = var3.code;
+                    var6 = '(';
+                    var10 = var6 + var7;
+                    var7 = var3.location;
+                    var6 = var3.sourceMap;
+                    var3 = '\n)';
+                    var3 = var10 + var3;
+                    var0 = var8.bind(var9)(var3, var7, var6);
+                case 471:
+                    var3 = var5.set;
+                    var3 = var3.bind(var5)(var4, var0);
+                    var2 = var0;
+                case 485:
+                    var0 = var2.bind;
+                    var0 = var0.bind(var2)(var1);
+                    var1._recur = var0;
                     return var0;
             }
         };
-        var5 = {};
-        var12 = 1;
-        var12 = var9[var12];
-        var12 = var8.bind(var7)(var12);
-        var12 = var12.Easing;
-        var5.Easing = var12;
-        var5.userConfig = var11;
-        var5.toValue = var3;
-        var5.callback = var10;
-        var6 = var9[var6];
-        var6 = var8.bind(var7)(var6);
-        var6 = var6.getReduceMotionForAnimation;
-        var5.getReduceMotionForAnimation = var6;
-        var0.__closure = var5;
-        var5 = 16704866504175.0;
-        var0.__workletHash = var5;
-        var4 = _closure1_slot2;
-        var0.__initData = var4;
-        var0 = var1.bind(var2)(var3, var0);
+        var1 = {};
+        var0.__closure = var1;
+        var1 = 7175751357828.0;
+        var0.__workletHash = var1;
+        var1 = _closure1_slot1;
+        var0.__initData = var1;
         return var0;
     };
-    var4 = {};
-    var0 = false;
-    var4.__DEV__ = var0;
-    var5 = 0;
-    var8 = var7[var5];
     var0 = undefined;
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.assertEasingIsWorklet;
-    var4.assertEasingIsWorklet = var8;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.defineAnimation;
-    var4.defineAnimation = var8;
-    var8 = 1;
-    var8 = var7[var8];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.Easing;
-    var4.Easing = var8;
-    var5 = var7[var5];
-    var5 = var6.bind(var0)(var5);
-    var5 = var5.getReduceMotionForAnimation;
-    var4.getReduceMotionForAnimation = var5;
-    var1.__closure = var4;
-    var4 = 7258055328141.0;
-    var1.__workletHash = var4;
-    var1.__initData = var3;
-    var2.withTiming = var1;
+    var3 = var3.bind(var0)();
+    var _closure1_slot2 = var3;
+    var4 = 'function pnpm_valueUnpackerTs2(){}';
+    var3 = {};
+    var3.code = var4;
+    var1 = function() {
+        var0 = _closure1_slot2;
+        var0 = var0.__initData;
+        var0 = var0.code;
+        return var0;
+    };
+    var2.getValueUnpackerCode = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3722, 3734]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

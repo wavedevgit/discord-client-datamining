@@ -9,13 +9,13 @@ enum e {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f4664d;
+    private final long f4708d;
 
     e(long j10) {
-        this.f4664d = j10;
+        this.f4708d = j10;
     }
 
     public long d() {
-        return this.f4664d;
+        return this.f4708d;
     }
 }

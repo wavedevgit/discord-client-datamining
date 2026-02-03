@@ -1,48 +1,88 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun29693: for (var _fun29693_ip = 0;;) switch (_fun29693_ip) {
-        case 0:
-            var0 = undefined;
-            var1 = undefined;
-            var3 = dependencyMap;
-            var2 = 0;
-            var3 = var3[var2];
-            var2 = require;
-            var2 = var2.bind(var0)(var3);
-            var3 = var2.bind(var0)();
-            var1 = var3;
-            var2 = module;
-            var2.exports = var3;
-        case 37: // try_start_0
-            var3 = var1;
-            var2 = global;
-            var2.regeneratorRuntime = var3;
-        case 48: // try_end0
-            _fun29693_ip = 115;
-            continue _fun29693;
-        case 50: // catch_target0
-            CatchBlockStart(arg_register = 2);
-            var2 = global;
-            var3 = var2.globalThis;
-            var4 = 'object';
-            var3 = typeof var3;
-            if (!(var4 !== var3)) {
-                _fun29693_ip = 103;
-                continue _fun29693
-            }
-        case 71:
-            var5 = var2.Function;
-            var4 = 'r';
-            var3 = 'regeneratorRuntime = r';
-            var4 = var5.bind(var0)(var4, var3);
-            var3 = var1;
-            var3 = var4.bind(var0)(var3);
-            _fun29693_ip = 115;
-            continue _fun29693;
-        case 103:
-            var2 = var2.globalThis;
-            var2.regeneratorRuntime = var1;
-        case 115:
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3422]);
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function arg0, arg1, arg2() {
+        _fun29100: for (var _fun29100_ip = 0;;) switch (_fun29100_ip) {
+            case 0:
+                var4 = arg0;
+                var3 = arg1;
+                var5 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var1 = 0;
+                var1 = var2[var1];
+                var2 = undefined;
+                var1 = var5.bind(var2)(var1);
+                var1 = var1.bind(var2)(var4);
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                if (var1) {
+                    _fun29100_ip = 86;
+                    continue _fun29100
+                }
+            case 46:
+                var1 = 1;
+                var1 = var6[var1];
+                var8 = var5.bind(var2)(var1);
+                var1 = var8.prototype;
+                var7 = Object.create(var1, {
+                    constructor: {
+                        value: var8
+                    }
+                });
+                var11 = 'Assertion failed: Type(O) is not Object';
+                var12 = var7;
+                var1 = new var12[var8](var11, var10);
+                var1 = var1 instanceof Object ? var1 : var7;
+                throw var1;
+            case 86:
+                var1 = 2;
+                var1 = var6[var1];
+                var1 = var5.bind(var2)(var1);
+                var1 = var1.bind(var2)(var3);
+                if (var1) {
+                    _fun29100_ip = 154;
+                    continue _fun29100
+                }
+            case 106:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var1 = 1;
+                var1 = var6[var1];
+                var6 = var5.bind(var2)(var1);
+                var1 = var6.prototype;
+                var5 = Object.create(var1, {
+                    constructor: {
+                        value: var6
+                    }
+                });
+                var11 = 'Assertion failed: P is not a Property Key';
+                var12 = var5;
+                var1 = new var12[var6](var11, var10);
+                var1 = var1 instanceof Object ? var1 : var5;
+                throw var1;
+            case 154:
+                var1 = {
+                    '[[Configurable]]': true,
+                    '[[Enumerable]]': true,
+                    '[[Value]]': null,
+                    '[[Writable]]': true
+                };
+                var5 = arg2;
+                var1['[[Value]]'] = var5;
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var0 = 3;
+                var0 = var6[var0];
+                var0 = var5.bind(var2)(var0);
+                var0 = var0.bind(var2)(var4, var3, var1);
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3359, 518, 3406, 3422]);

@@ -6,69 +6,71 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
     var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
+    var6 = var2.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var3 = true;
+    var4.value = var3;
+    var3 = '__esModule';
+    var3 = var5.bind(var6)(var1, var3, var4);
+    var2 = var2.globalThis;
+    var _closure1_slot2 = var2;
+    var1.GLOBAL_OBJ = var2;
     var0 = function arg0, arg1, arg2() {
-        _fun99003: for (var _fun99003_ip = 0;;) switch (_fun99003_ip) {
+        _fun98690: for (var _fun98690_ip = 0;;) switch (_fun98690_ip) {
             case 0:
-                var5 = arg1;
-                var1 = arg2;
-                var0 = {};
-                var2 = 'client_report';
-                var0.type = var2;
-                var4 = new Array(2);
-                var4[0] = var0;
-                var0 = {};
+                var3 = arg0;
+                var0 = arg2;
+                if (var0) {
+                    _fun98690_ip = 16;
+                    continue _fun98690
+                }
+            case 9:
+                var0 = _closure1_slot2;
+            case 16:
+                var1 = var0.__SENTRY__;
                 if (var1) {
-                    _fun99003_ip = 63;
-                    continue _fun99003
+                    _fun98690_ip = 27;
+                    continue _fun98690
                 }
-            case 29:
-                var6 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var2 = 0;
-                var3 = var3[var2];
-                var2 = undefined;
-                var3 = var6.bind(var2)(var3);
-                var2 = var3.dateTimestampInSeconds;
-                var1 = var2.bind(var3)();
-            case 63:
-                var0.timestamp = var1;
-                var1 = arg0;
-                var0.discarded_events = var1;
-                var4[1] = var0;
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 1;
-                var1 = var1[var0];
-                var0 = undefined;
-                var3 = var2.bind(var0)(var1);
-                var2 = var3.createEnvelope;
-                if (var5) {
-                    _fun99003_ip = 118;
-                    continue _fun99003
-                }
-            case 114:
+            case 25:
                 var1 = {};
-                _fun99003_ip = 128;
-                continue _fun99003;
-            case 118:
-                var0 = {};
-                var0.dsn = var5;
-                var1 = var0;
-            case 128:
-                var0 = new Array(1);
-                var0[0] = var4;
-                var0 = var2.bind(var3)(var1, var0);
+            case 27:
+                var0.__SENTRY__ = var1;
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var2 = 0;
+                var0 = var6[var2];
+                var4 = undefined;
+                var0 = var5.bind(var4)(var0);
+                var0 = var0.SDK_VERSION;
+                var2 = var6[var2];
+                var2 = var5.bind(var4)(var2);
+                var2 = var2.SDK_VERSION;
+                var2 = var1[var2];
+                if (var2) {
+                    _fun98690_ip = 87;
+                    continue _fun98690
+                }
+            case 85:
+                var2 = {};
+            case 87:
+                var1[var0] = var2;
+                var0 = var2[var3];
+                if (var0) {
+                    _fun98690_ip = 112;
+                    continue _fun98690
+                }
+            case 98:
+                var1 = arg1;
+                var1 = var1.bind(var4)();
+                var2[var3] = var1;
+                var0 = var1;
+            case 112:
                 return var0;
         }
     };
-    var1.createClientReportEnvelope = var0;
+    var1.getGlobalSingleton = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12843, 12863]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12865]);

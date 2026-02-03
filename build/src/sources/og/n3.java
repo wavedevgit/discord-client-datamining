@@ -5,44 +5,44 @@ import ui.c;
 final class n3 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n3 f43326a = new n3();
+    static final n3 f43454a = new n3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43327b;
+    private static final ui.c f43455b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43328c;
+    private static final ui.c f43456c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43329d;
+    private static final ui.c f43457d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43330e;
+    private static final ui.c f43458e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f43331f;
+    private static final ui.c f43459f;
 
     static {
         c.b a10 = ui.c.a("errorCode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43327b = a10.b(s1Var.b()).a();
+        f43455b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("isColdCall");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43328c = a11.b(s1Var2.b()).a();
+        f43456c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("inputsFormats");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43329d = a12.b(s1Var3.b()).a();
+        f43457d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("outputFormats");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43330e = a13.b(s1Var4.b()).a();
+        f43458e = a13.b(s1Var4.b()).a();
         c.b a14 = ui.c.a("options");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f43331f = a14.b(s1Var5.b()).a();
+        f43459f = a14.b(s1Var5.b()).a();
     }
 
     private n3() {

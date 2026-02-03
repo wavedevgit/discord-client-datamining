@@ -3,22 +3,22 @@ package pg;
 public final class jd {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Long f45360a;
+    private final Long f45434a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Long f45361b;
+    private final Long f45435b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Long f45362c;
+    private final Long f45436c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Long f45363d;
+    private final Long f45437d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Long f45364e;
+    private final Long f45438e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Long f45365f;
+    private final Long f45439f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ jd(hd hdVar, id idVar) {
@@ -28,41 +28,41 @@ public final class jd {
         Long l13;
         Long l14;
         Long l15;
-        l10 = hdVar.f45284a;
-        this.f45360a = l10;
-        l11 = hdVar.f45285b;
-        this.f45361b = l11;
-        l12 = hdVar.f45286c;
-        this.f45362c = l12;
-        l13 = hdVar.f45287d;
-        this.f45363d = l13;
-        l14 = hdVar.f45288e;
-        this.f45364e = l14;
-        l15 = hdVar.f45289f;
-        this.f45365f = l15;
+        l10 = hdVar.f45358a;
+        this.f45434a = l10;
+        l11 = hdVar.f45359b;
+        this.f45435b = l11;
+        l12 = hdVar.f45360c;
+        this.f45436c = l12;
+        l13 = hdVar.f45361d;
+        this.f45437d = l13;
+        l14 = hdVar.f45362e;
+        this.f45438e = l14;
+        l15 = hdVar.f45363f;
+        this.f45439f = l15;
     }
 
     public final Long a() {
-        return this.f45362c;
+        return this.f45436c;
     }
 
     public final Long b() {
-        return this.f45363d;
+        return this.f45437d;
     }
 
     public final Long c() {
-        return this.f45360a;
+        return this.f45434a;
     }
 
     public final Long d() {
-        return this.f45364e;
+        return this.f45438e;
     }
 
     public final Long e() {
-        return this.f45361b;
+        return this.f45435b;
     }
 
     public final Long f() {
-        return this.f45365f;
+        return this.f45439f;
     }
 }

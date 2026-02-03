@@ -5,7 +5,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final t f31624a = new Object();
+    public static final t f31362a = new Object();
 
     public final int hashCode() {
         return 182;

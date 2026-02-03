@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20200a;
+    private final m.b f19833a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20201b;
+    private final com.squareup.moshi.h f19834b;
 
     public ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("accessToken");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20200a = a10;
+        this.f19833a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "accessToken");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20201b = f10;
+        this.f19834b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,13 +35,13 @@ public final class ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter extends c
         reader.r();
         String str = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f20200a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    str = (String) this.f20201b.fromJson(reader);
+            int t02 = reader.t0(this.f19833a);
+            if (t02 != -1) {
+                if (t02 == 0) {
+                    str = (String) this.f19834b.fromJson(reader);
                 }
             } else {
-                reader.E0();
+                reader.F0();
                 reader.P();
             }
         }
@@ -55,8 +55,8 @@ public final class ExchangeOneTimeLinkCodeResponse_MetadataJsonAdapter extends c
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (metadata != null) {
             writer.l();
-            writer.A0("accessToken");
-            this.f20201b.toJson(writer, metadata.a());
+            writer.t0("accessToken");
+            this.f19834b.toJson(writer, metadata.a());
             writer.E();
             return;
         }

@@ -99,7 +99,7 @@ public abstract class TypeConstructorSubstitution extends TypeSubstitution {
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeSubstitution
     /* renamed from: get */
-    public TypeProjection mo1201get(@NotNull KotlinType key) {
+    public TypeProjection mo1203get(@NotNull KotlinType key) {
         Intrinsics.checkNotNullParameter(key, "key");
         return get(key.getConstructor());
     }

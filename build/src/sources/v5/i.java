@@ -7,10 +7,10 @@ import w5.c;
 public class i implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f50692a = new i();
+    public static final i f50816a = new i();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f50693b = c.a.a("t", "f", "s", "j", "tr", "lh", "ls", "fc", "sc", "sw", "of", "ps", "sz");
+    private static final c.a f50817b = c.a.a("t", "f", "s", "j", "tr", "lh", "ls", "fc", "sc", "sw", "of", "ps", "sz");
 
     private i() {
     }
@@ -34,12 +34,12 @@ public class i implements n0 {
         int i12 = 0;
         boolean z10 = true;
         while (cVar.hasNext()) {
-            switch (cVar.B(f50693b)) {
+            switch (cVar.B(f50817b)) {
                 case 0:
-                    str = cVar.e1();
+                    str = cVar.f1();
                     break;
                 case 1:
-                    str2 = cVar.e1();
+                    str2 = cVar.f1();
                     break;
                 case 2:
                     f11 = (float) cVar.nextDouble();

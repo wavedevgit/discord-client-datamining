@@ -7,8 +7,8 @@ import com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsOverrides
 import com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsOverrides_RNOSS_Experimental_Android;
 import com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsOverrides_RNOSS_Stable_Android;
 import com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsProvider;
-import ir.p;
-import ir.v;
+import jr.p;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.jvm.internal.Intrinsics;
@@ -122,7 +122,7 @@ public final class DefaultNewArchitectureEntryPoint {
         releaseLevel = releaseLevel2;
     }
 
-    @ir.c
+    @jr.c
     public static final void load(boolean z10) {
         load(z10, true, true);
     }
@@ -137,7 +137,7 @@ public final class DefaultNewArchitectureEntryPoint {
         load(z10, z11);
     }
 
-    @ir.c
+    @jr.c
     public static final void load(boolean z10, boolean z11) {
         load(z10, z11, true);
     }
@@ -155,7 +155,7 @@ public final class DefaultNewArchitectureEntryPoint {
         load(z10, z11, z12);
     }
 
-    @ir.c
+    @jr.c
     public static final void load(boolean z10, boolean z11, boolean z12) {
         Pair<Boolean, String> isConfigurationValid = INSTANCE.isConfigurationValid(z10, z11, z12);
         boolean booleanValue = ((Boolean) isConfigurationValid.a()).booleanValue();

@@ -50,7 +50,7 @@ public final class ChatInputRootViewMeasurer {
     public static final Unit measureHeight$lambda$0(ChatInputRootViewMeasurer chatInputRootViewMeasurer, ChatInputRootView it) {
         Intrinsics.checkNotNullParameter(it, "it");
         it.setText(chatInputRootViewMeasurer.chatInputRootView.getText());
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     public final void measure(boolean z10) {

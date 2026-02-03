@@ -7,8 +7,8 @@ import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.viewmanagers.PassthroughTouchViewManagerDelegate;
 import com.facebook.react.viewmanagers.PassthroughTouchViewManagerInterface;
-import ir.v;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -49,7 +49,7 @@ public final class PassthroughTouchViewManager extends ViewGroupManager<Passthro
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createViewInstance$lambda$1$lambda$0(PassthroughTouchViewManager passthroughTouchViewManager, ThemedReactContext themedReactContext, PassthroughTouchViewGroup passthroughTouchViewGroup) {
         passthroughTouchViewManager.reactEvents.emitEvent(themedReactContext, passthroughTouchViewGroup, new OnTouchDownData());
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

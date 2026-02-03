@@ -7,7 +7,7 @@ import java.util.List;
 final class g2 extends k2 {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Class f15240c = Collections.unmodifiableList(Collections.EMPTY_LIST).getClass();
+    private static final Class f14869c = Collections.unmodifiableList(Collections.EMPTY_LIST).getClass();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ g2(f2 f2Var) {
@@ -21,7 +21,7 @@ final class g2 extends k2 {
         List list = (List) g4.k(obj, j10);
         if (list instanceof e2) {
             unmodifiableList = ((e2) list).B();
-        } else if (!f15240c.isAssignableFrom(list.getClass())) {
+        } else if (!f14869c.isAssignableFrom(list.getClass())) {
             if ((list instanceof c3) && (list instanceof x1)) {
                 x1 x1Var = (x1) list;
                 if (x1Var.a()) {
@@ -55,7 +55,7 @@ final class g2 extends k2 {
             }
             g4.x(obj, j10, list2);
         } else {
-            if (f15240c.isAssignableFrom(list2.getClass())) {
+            if (f14869c.isAssignableFrom(list2.getClass())) {
                 ArrayList arrayList = new ArrayList(list2.size() + size);
                 arrayList.addAll(list2);
                 g4.x(obj, j10, arrayList);

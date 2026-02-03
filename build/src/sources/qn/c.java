@@ -1,73 +1,52 @@
 package qn;
 
-import mn.y0;
+import android.graphics.Rect;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final y0 f47548a;
+    private final Rect f47802a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f47549b;
+    private final Rect f47803b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final int f47550c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final boolean f47551d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final boolean f47552e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final boolean f47553f;
-
-    /* renamed from: g  reason: collision with root package name */
-    private final float f47554g;
-
-    /* renamed from: h  reason: collision with root package name */
-    private final a f47555h;
-
-    public c(y0 y0Var, b bVar, int i10, boolean z10, boolean z11, boolean z12, float f10, a aVar) {
-        this.f47548a = y0Var;
-        this.f47549b = bVar;
-        this.f47550c = i10;
-        this.f47551d = z10;
-        this.f47552e = z11;
-        this.f47553f = z12;
-        this.f47554g = f10;
-        this.f47555h = aVar;
+    public c(Rect region, Rect viewport) {
+        Intrinsics.checkNotNullParameter(region, "region");
+        Intrinsics.checkNotNullParameter(viewport, "viewport");
+        this.f47802a = region;
+        this.f47803b = viewport;
     }
 
-    public final a a() {
-        return this.f47555h;
+    public final Rect a() {
+        return this.f47802a;
     }
 
-    public final b b() {
-        return this.f47549b;
+    public final Rect b() {
+        return this.f47803b;
     }
 
-    public final float c() {
-        return this.f47554g;
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof c)) {
+            return false;
+        }
+        c cVar = (c) obj;
+        if (Intrinsics.areEqual(this.f47802a, cVar.f47802a) && Intrinsics.areEqual(this.f47803b, cVar.f47803b)) {
+            return true;
+        }
+        return false;
     }
 
-    public final int d() {
-        return this.f47550c;
+    public int hashCode() {
+        return (this.f47802a.hashCode() * 31) + this.f47803b.hashCode();
     }
 
-    public final y0 e() {
-        return this.f47548a;
-    }
-
-    public final boolean f() {
-        return this.f47553f;
-    }
-
-    public final boolean g() {
-        return this.f47551d;
-    }
-
-    public final boolean h() {
-        return this.f47552e;
+    public String toString() {
+        Rect rect = this.f47802a;
+        Rect rect2 = this.f47803b;
+        return "ViewfinderInfo(region=" + rect + ", viewport=" + rect2 + ")";
     }
 }

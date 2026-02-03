@@ -9,21 +9,21 @@ import java.util.Map;
 public final class t implements g.a {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ BasePendingResult f25153a;
+    final /* synthetic */ BasePendingResult f24364a;
 
     /* renamed from: b  reason: collision with root package name */
-    final /* synthetic */ v f25154b;
+    final /* synthetic */ v f24365b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public t(v vVar, BasePendingResult basePendingResult) {
-        this.f25154b = vVar;
-        this.f25153a = basePendingResult;
+        this.f24365b = vVar;
+        this.f24364a = basePendingResult;
     }
 
     @Override // ef.g.a
     public final void a(Status status) {
         Map map;
-        map = this.f25154b.f25165a;
-        map.remove(this.f25153a);
+        map = this.f24365b.f24376a;
+        map.remove(this.f24364a);
     }
 }

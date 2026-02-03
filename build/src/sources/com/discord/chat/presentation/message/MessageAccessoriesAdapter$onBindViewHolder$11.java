@@ -19,14 +19,14 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$11 exten
 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-        m506invokentcYbpo(((MessageId) obj).m1093unboximpl(), (LinkContentNode) obj2);
-        return Unit.f33298a;
+        m508invokentcYbpo(((MessageId) obj).m1095unboximpl(), (LinkContentNode) obj2);
+        return Unit.f33074a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */
-    public final void m506invokentcYbpo(String p02, LinkContentNode p12) {
+    public final void m508invokentcYbpo(String p02, LinkContentNode p12) {
         Intrinsics.checkNotNullParameter(p02, "p0");
         Intrinsics.checkNotNullParameter(p12, "p1");
-        ((ChatEventHandler) this.receiver).mo437onLinkClickedntcYbpo(p02, p12);
+        ((ChatEventHandler) this.receiver).mo439onLinkClickedntcYbpo(p02, p12);
     }
 }

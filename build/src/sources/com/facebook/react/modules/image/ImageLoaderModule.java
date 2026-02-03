@@ -99,7 +99,7 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
     private final void registerRequest(int i10, DataSource dataSource) {
         synchronized (this.enqueuedRequestMonitor) {
             this.enqueuedRequests.put(i10, dataSource);
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
         }
     }
 
@@ -150,9 +150,9 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
                     CloseableReference closeableReference = (CloseableReference) dataSource.getResult();
                     if (closeableReference != null) {
                         try {
-                            Object D0 = closeableReference.D0();
-                            Intrinsics.checkNotNullExpressionValue(D0, "get(...)");
-                            e eVar = (e) D0;
+                            Object F0 = closeableReference.F0();
+                            Intrinsics.checkNotNullExpressionValue(F0, "get(...)");
+                            e eVar = (e) F0;
                             WritableMap createMap = Arguments.createMap();
                             Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
                             ReadableMapBuilder readableMapBuilder = new ReadableMapBuilder(createMap);
@@ -200,9 +200,9 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
                     CloseableReference closeableReference = (CloseableReference) dataSource.getResult();
                     if (closeableReference != null) {
                         try {
-                            Object D0 = closeableReference.D0();
-                            Intrinsics.checkNotNullExpressionValue(D0, "get(...)");
-                            e eVar = (e) D0;
+                            Object F0 = closeableReference.F0();
+                            Intrinsics.checkNotNullExpressionValue(F0, "get(...)");
+                            e eVar = (e) F0;
                             WritableMap createMap = Arguments.createMap();
                             Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
                             ReadableMapBuilder readableMapBuilder = new ReadableMapBuilder(createMap);
@@ -236,7 +236,7 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
                     valueAt.close();
                 }
                 this.enqueuedRequests.clear();
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             } catch (Throwable th2) {
                 throw th2;
             }

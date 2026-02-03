@@ -5,16 +5,16 @@ package net.time4j.history;
 abstract class c implements net.time4j.history.b {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final c f40650d;
+    public static final c f40513d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final c f40651e;
+    public static final c f40514e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final c f40652i;
+    public static final c f40515i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ c[] f40653o;
+    private static final /* synthetic */ c[] f40516o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     enum a extends c {
@@ -24,21 +24,21 @@ abstract class c implements net.time4j.history.b {
 
         @Override // net.time4j.history.b
         public long a(h hVar) {
-            return gt.b.j(c.h(hVar), hVar.f(), hVar.d());
+            return ht.b.j(c.h(hVar), hVar.f(), hVar.d());
         }
 
         @Override // net.time4j.history.b
         public int d(h hVar) {
-            return gt.b.d(c.h(hVar), hVar.f());
+            return ht.b.d(c.h(hVar), hVar.f());
         }
 
         @Override // net.time4j.history.b
         public h e(long j10) {
             j jVar;
-            long l10 = gt.b.l(j10);
-            int i10 = gt.b.i(l10);
-            int h10 = gt.b.h(l10);
-            int g10 = gt.b.g(l10);
+            long l10 = ht.b.l(j10);
+            int i10 = ht.b.i(l10);
+            int h10 = ht.b.h(l10);
+            int g10 = ht.b.g(l10);
             if (i10 <= 0) {
                 jVar = j.BC;
             } else {
@@ -52,13 +52,13 @@ abstract class c implements net.time4j.history.b {
 
         @Override // net.time4j.history.b
         public boolean f(h hVar) {
-            return gt.b.f(c.h(hVar), hVar.f(), hVar.d());
+            return ht.b.f(c.h(hVar), hVar.f(), hVar.d());
         }
     }
 
     static {
         a aVar = new a("GREGORIAN", 0);
-        f40650d = aVar;
+        f40513d = aVar;
         c cVar = new c("JULIAN", 1) { // from class: net.time4j.history.c.b
             @Override // net.time4j.history.b
             public long a(h hVar) {
@@ -93,7 +93,7 @@ abstract class c implements net.time4j.history.b {
                 return m.d(c.h(hVar), hVar.f(), hVar.d());
             }
         };
-        f40651e = cVar;
+        f40514e = cVar;
         c cVar2 = new c("SWEDISH", 2) { // from class: net.time4j.history.c.c
             @Override // net.time4j.history.b
             public long a(h hVar) {
@@ -118,7 +118,7 @@ abstract class c implements net.time4j.history.b {
                 if (j10 == -53576) {
                     return new h(j.AD, 1712, 2, 30);
                 }
-                return c.f40651e.e(j10 + 1);
+                return c.f40514e.e(j10 + 1);
             }
 
             @Override // net.time4j.history.b
@@ -130,8 +130,8 @@ abstract class c implements net.time4j.history.b {
                 return m.d(h10, hVar.f(), hVar.d());
             }
         };
-        f40652i = cVar2;
-        f40653o = new c[]{aVar, cVar, cVar2};
+        f40515i = cVar2;
+        f40516o = new c[]{aVar, cVar, cVar2};
     }
 
     private c(String str, int i10) {
@@ -147,7 +147,7 @@ abstract class c implements net.time4j.history.b {
     }
 
     public static c[] values() {
-        return (c[]) f40653o.clone();
+        return (c[]) f40516o.clone();
     }
 
     /* synthetic */ c(String str, int i10, a aVar) {

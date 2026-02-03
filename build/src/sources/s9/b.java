@@ -8,13 +8,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f48869a = new b();
+    public static final b f48923a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ThreadFactory f48870b;
+    private static final ThreadFactory f48924b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ExecutorService f48871c;
+    private static final ExecutorService f48925c;
 
     static {
         ThreadFactory threadFactory = new ThreadFactory() { // from class: s9.a
@@ -25,8 +25,8 @@ public final class b {
                 return c10;
             }
         };
-        f48870b = threadFactory;
-        f48871c = Executors.newCachedThreadPool(threadFactory);
+        f48924b = threadFactory;
+        f48925c = Executors.newCachedThreadPool(threadFactory);
     }
 
     private b() {
@@ -41,6 +41,6 @@ public final class b {
 
     public final void b(Runnable task) {
         Intrinsics.checkNotNullParameter(task, "task");
-        f48871c.execute(task);
+        f48925c.execute(task);
     }
 }

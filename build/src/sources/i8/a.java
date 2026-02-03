@@ -4,7 +4,7 @@ public interface a {
 
     /* renamed from: i8.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public enum EnumC0372a {
+    public enum EnumC0373a {
         READ_DECODE,
         READ_FILE,
         READ_FILE_NOT_FOUND,
@@ -24,5 +24,5 @@ public interface a {
         OTHER
     }
 
-    void a(EnumC0372a enumC0372a, Class cls, String str, Throwable th2);
+    void a(EnumC0373a enumC0373a, Class cls, String str, Throwable th2);
 }

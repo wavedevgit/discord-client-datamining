@@ -13,8 +13,8 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import or.b;
 import org.jetbrains.annotations.NotNull;
+import pr.b;
 @Metadata(d1 = {"\u0000\n\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u0002H\u0001\"\u0006\b\u0000\u0010\u0001\u0018\u0001*\u00020\u0002H\u008a@¨\u0006\u0003"}, d2 = {"<anonymous>", "T", "Lkotlinx/coroutines/CoroutineScope;", "app/rive/core/CommandQueue$suspendNativeRequest$2"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @e(c = "app.rive.core.CommandQueue$getBooleanProperty-iFQtAB8$$inlined$suspendNativeRequest$1", f = "CommandQueue.kt", l = {2460}, m = "invokeSuspend")
 @SourceDebugExtension({"SMAP\nCommandQueue.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CommandQueue.kt\napp/rive/core/CommandQueue$suspendNativeRequest$2\n+ 2 CancellableContinuation.kt\nkotlinx/coroutines/CancellableContinuationKt\n+ 3 CommandQueue.kt\napp/rive/core/CommandQueue\n*L\n1#1,2459:1\n318#2,9:2460\n327#2,2:2476\n1475#3,7:2469\n*S KotlinDebug\n*F\n+ 1 CommandQueue.kt\napp/rive/core/CommandQueue$suspendNativeRequest$2\n*L\n2268#1:2460,9\n2268#1:2476,2\n*E\n"})
@@ -79,7 +79,7 @@ public final class CommandQueue$getBooleanPropertyiFQtAB8$$inlined$suspendNative
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj2) {
                 invoke((Throwable) obj2);
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
 
             public final void invoke(Throwable th2) {
@@ -103,6 +103,6 @@ public final class CommandQueue$getBooleanPropertyiFQtAB8$$inlined$suspendNative
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Boolean> continuation) {
-        return ((CommandQueue$getBooleanPropertyiFQtAB8$$inlined$suspendNativeRequest$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((CommandQueue$getBooleanPropertyiFQtAB8$$inlined$suspendNativeRequest$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

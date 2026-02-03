@@ -1,215 +1,240 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
+    var10 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /sekuntia?/;
+        var0 = 'sekunnin';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var9 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /minuuttia?/;
+        var0 = 'minuutin';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var8 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /tuntia?/;
+        var0 = 'tunnin';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var7 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /(viikko|viikkoa)/;
+        var0 = 'viikon';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var6 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /(kuukausi|kuukautta)/;
+        var0 = 'kuukauden';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var5 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /(vuosi|vuotta)/;
+        var0 = 'vuoden';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
     var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
+    var11 = var0.Object;
+    var4 = var11.defineProperty;
     var3 = {};
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = var4.bind(var11)(var1, var0, var3);
     var0 = undefined;
     var1.default = var0;
     var3 = {};
     var4 = {
-        'one': '1秒未満',
-        'other': '{{count}}秒未満',
-        'oneWithSuffix': '約1秒',
-        'otherWithSuffix': '約{{count}}秒'
+        'one': 'alle sekunti',
+        'other': 'alle {{count}} sekuntia'
     };
+    var4.futureTense = var10;
     var3.lessThanXSeconds = var4;
     var4 = {
-        'one': '1秒',
-        'other': '{{count}}秒'
+        'one': 'sekunti',
+        'other': '{{count}} sekuntia'
     };
+    var4.futureTense = var10;
     var3.xSeconds = var4;
-    var4 = '30秒';
+    var4 = {
+        'one': 'puoli minuuttia',
+        'other': 'puoli minuuttia'
+    };
+    var10 = function arg0() {
+        var0 = 'puolen minuutin';
+        return var0;
+    };
+    var4.futureTense = var10;
     var3.halfAMinute = var4;
     var4 = {
-        'one': '1分未満',
-        'other': '{{count}}分未満',
-        'oneWithSuffix': '約1分',
-        'otherWithSuffix': '約{{count}}分'
+        'one': 'alle minuutti',
+        'other': 'alle {{count}} minuuttia'
     };
+    var4.futureTense = var9;
     var3.lessThanXMinutes = var4;
     var4 = {
-        'one': '1分',
-        'other': '{{count}}分'
+        'one': 'minuutti',
+        'other': '{{count}} minuuttia'
     };
+    var4.futureTense = var9;
     var3.xMinutes = var4;
     var4 = {
-        'one': '約1時間',
-        'other': '約{{count}}時間'
+        'one': 'noin tunti',
+        'other': 'noin {{count}} tuntia'
     };
+    var4.futureTense = var8;
     var3.aboutXHours = var4;
     var4 = {
-        'one': '1時間',
-        'other': '{{count}}時間'
+        'one': 'tunti',
+        'other': '{{count}} tuntia'
     };
+    var4.futureTense = var8;
     var3.xHours = var4;
     var4 = {
-        'one': '1日',
-        'other': '{{count}}日'
+        'one': 'päivä',
+        'other': '{{count}} päivää'
     };
+    var8 = function arg0() {
+        var3 = arg0;
+        var2 = var3.replace;
+        var1 = /päivää?/;
+        var0 = 'päivän';
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var4.futureTense = var8;
     var3.xDays = var4;
     var4 = {
-        'one': '約1週間',
-        'other': '約{{count}}週間'
+        'one': 'noin viikko',
+        'other': 'noin {{count}} viikkoa'
     };
+    var4.futureTense = var7;
     var3.aboutXWeeks = var4;
     var4 = {
-        'one': '1週間',
-        'other': '{{count}}週間'
+        'one': 'viikko',
+        'other': '{{count}} viikkoa'
     };
+    var4.futureTense = var7;
     var3.xWeeks = var4;
     var4 = {
-        'one': '約1か月',
-        'other': '約{{count}}か月'
+        'one': 'noin kuukausi',
+        'other': 'noin {{count}} kuukautta'
     };
+    var4.futureTense = var6;
     var3.aboutXMonths = var4;
     var4 = {
-        'one': '1か月',
-        'other': '{{count}}か月'
+        'one': 'kuukausi',
+        'other': '{{count}} kuukautta'
     };
+    var4.futureTense = var6;
     var3.xMonths = var4;
     var4 = {
-        'one': '約1年',
-        'other': '約{{count}}年'
+        'one': 'noin vuosi',
+        'other': 'noin {{count}} vuotta'
     };
+    var4.futureTense = var5;
     var3.aboutXYears = var4;
     var4 = {
-        'one': '1年',
-        'other': '{{count}}年'
+        'one': 'vuosi',
+        'other': '{{count}} vuotta'
     };
+    var4.futureTense = var5;
     var3.xYears = var4;
     var4 = {
-        'one': '1年以上',
-        'other': '{{count}}年以上'
+        'one': 'yli vuosi',
+        'other': 'yli {{count}} vuotta'
     };
+    var4.futureTense = var5;
     var3.overXYears = var4;
     var4 = {
-        'one': '1年近く',
-        'other': '{{count}}年近く'
+        'one': 'lähes vuosi',
+        'other': 'lähes {{count}} vuotta'
     };
+    var4.futureTense = var5;
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
     var2 = function arg0, arg1, arg2() {
-        _fun21970: for (var _fun21970_ip = 0;;) switch (_fun21970_ip) {
+        _fun21983: for (var _fun21983_ip = 0;;) switch (_fun21983_ip) {
             case 0:
-                var8 = arg1;
+                var6 = arg1;
                 var1 = arg2;
-                if (var1) {
-                    _fun21970_ip = 11;
-                    continue _fun21970
-                }
-            case 9:
-                var1 = {};
-            case 11:
                 var2 = _closure1_slot0;
                 var0 = arg0;
                 var4 = var2[var0];
-                var2 = 'string';
-                var0 = typeof var4;
-                var3 = var4;
-                if (!(var2 !== var0)) {
-                    _fun21970_ip = 185;
-                    continue _fun21970
-                }
-            case 42:
                 var0 = 1;
-                if (!(var0 !== var8)) {
-                    _fun21970_ip = 147;
-                    continue _fun21970
+                if (!(var0 !== var6)) {
+                    _fun21983_ip = 67;
+                    continue _fun21983
                 }
-            case 49:
-                var0 = var1.addSuffix;
-                if (!var0) {
-                    _fun21970_ip = 67;
-                    continue _fun21970
-                }
-            case 58:
-                var0 = var4.otherWithSuffix;
-                if (var0) {
-                    _fun21970_ip = 107;
-                    continue _fun21970
-                }
-            case 67:
-                var6 = var4.other;
-                var5 = var6.replace;
+            case 27:
+                var5 = var4.other;
+                var3 = var5.replace;
                 var0 = global;
                 var2 = var0.String;
                 var0 = undefined;
-                var2 = var2.bind(var0)(var8);
+                var2 = var2.bind(var0)(var6);
                 var0 = '{{count}}';
-                var0 = var5.bind(var6)(var0, var2);
-                _fun21970_ip = 145;
-                continue _fun21970;
-            case 107:
-                var7 = var4.otherWithSuffix;
-                var6 = var7.replace;
-                var2 = global;
-                var5 = var2.String;
-                var2 = undefined;
-                var5 = var5.bind(var2)(var8);
-                var2 = '{{count}}';
-                var0 = var6.bind(var7)(var2, var5);
-            case 145:
-                _fun21970_ip = 182;
-                continue _fun21970;
-            case 147:
-                var2 = var1.addSuffix;
-                if (!var2) {
-                    _fun21970_ip = 165;
-                    continue _fun21970
+                var3 = var3.bind(var5)(var0, var2);
+                _fun21983_ip = 73;
+                continue _fun21983;
+            case 67:
+                var3 = var4.one;
+            case 73:
+                var2 = null;
+                var0 = var3;
+                if (!(var2 != var1)) {
+                    _fun21983_ip = 151;
+                    continue _fun21983
                 }
-            case 156:
-                var2 = var4.oneWithSuffix;
-                if (var2) {
-                    _fun21970_ip = 173;
-                    continue _fun21970
-                }
-            case 165:
-                var2 = var4.one;
-                _fun21970_ip = 179;
-                continue _fun21970;
-            case 173:
-                var2 = var4.oneWithSuffix;
-            case 179:
-                var0 = var2;
-            case 182:
-                var3 = var0;
-            case 185:
+            case 82:
                 var2 = var1.addSuffix;
                 var0 = var3;
                 if (!var2) {
-                    _fun21970_ip = 243;
-                    continue _fun21970
+                    _fun21983_ip = 151;
+                    continue _fun21983
                 }
-            case 197:
+            case 94:
                 var2 = var1.comparison;
                 if (!var2) {
-                    _fun21970_ip = 218;
-                    continue _fun21970
+                    _fun21983_ip = 115;
+                    continue _fun21983
                 }
-            case 206:
+            case 103:
                 var2 = var1.comparison;
                 var1 = 0;
                 if (!(!(var2 > var1))) {
-                    _fun21970_ip = 230;
-                    continue _fun21970
+                    _fun21983_ip = 127;
+                    continue _fun21983
                 }
-            case 218:
-                var1 = '前';
+            case 115:
+                var1 = ' sitten';
                 var1 = var3 + var1;
-                _fun21970_ip = 240;
-                continue _fun21970;
-            case 230:
-                var2 = '後';
+                _fun21983_ip = 148;
+                continue _fun21983;
+            case 127:
+                var2 = var4.futureTense;
+                var3 = var2.bind(var4)(var3);
+                var2 = ' kuluttua';
                 var1 = var3 + var2;
-            case 240:
+            case 148:
                 var0 = var1;
-            case 243:
+            case 151:
                 return var0;
         }
     };

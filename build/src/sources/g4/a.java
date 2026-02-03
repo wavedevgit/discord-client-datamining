@@ -12,10 +12,10 @@ import java.util.zip.GZIPInputStream;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private Context f25662a;
+    private Context f25757a;
 
     public a(Context context) {
-        this.f25662a = context;
+        this.f25757a = context;
     }
 
     public static String a(File file) {
@@ -40,12 +40,12 @@ public class a {
     }
 
     private int d(String str, String str2) {
-        return this.f25662a.getResources().getIdentifier(str2, str, this.f25662a.getPackageName());
+        return this.f25757a.getResources().getIdentifier(str2, str, this.f25757a.getPackageName());
     }
 
     private int e(int i10) {
         TypedValue typedValue = new TypedValue();
-        this.f25662a.getResources().getValue(i10, typedValue, true);
+        this.f25757a.getResources().getValue(i10, typedValue, true);
         return typedValue.type;
     }
 
@@ -77,7 +77,7 @@ public class a {
 
     public InputStream h(String str) {
         String k10 = k(str);
-        return g(k10, this.f25662a.getAssets().open(k10, 2));
+        return g(k10, this.f25757a.getAssets().open(k10, 2));
     }
 
     public InputStream j(String str) {
@@ -93,7 +93,7 @@ public class a {
             int d10 = d(str2, str3);
             int e10 = e(d10);
             if (e10 == 3) {
-                return g(k10, this.f25662a.getResources().openRawResource(d10));
+                return g(k10, this.f25757a.getResources().openRawResource(d10));
             }
             throw new IOException(String.format("Expected %s resource to be of TYPE_STRING but was %d", k10, Integer.valueOf(e10)));
         }

@@ -14,34 +14,34 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquirySessionResponse_AttributesJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20161a;
+    private final m.b f19794a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20162b;
+    private final com.squareup.moshi.h f19795b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f20163c;
+    private final com.squareup.moshi.h f19796c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final com.squareup.moshi.h f20164d;
+    private final com.squareup.moshi.h f19797d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile Constructor f20165e;
+    private volatile Constructor f19798e;
 
     public CreateInquirySessionResponse_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("gpsCollectionRequirement", "gpsPrecisionRequirement", "playIntegrityProjectId");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20161a = a10;
+        this.f19794a = a10;
         com.squareup.moshi.h f10 = moshi.f(CreateInquirySessionResponse.GpsCollectionRequirement.class, x0.d(), "gpsCollectionRequirement");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20162b = f10;
+        this.f19795b = f10;
         com.squareup.moshi.h f11 = moshi.f(CreateInquirySessionResponse.GpsPrecisionRequirement.class, x0.d(), "gpsPrecisionRequirement");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f20163c = f11;
+        this.f19796c = f11;
         com.squareup.moshi.h f12 = moshi.f(String.class, x0.d(), "playIntegrityProjectId");
         Intrinsics.checkNotNullExpressionValue(f12, "adapter(...)");
-        this.f20164d = f12;
+        this.f19797d = f12;
     }
 
     @Override // com.squareup.moshi.h
@@ -54,24 +54,24 @@ public final class CreateInquirySessionResponse_AttributesJsonAdapter extends co
         String str = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f20161a);
-            if (A0 != -1) {
-                if (A0 != 0) {
-                    if (A0 != 1) {
-                        if (A0 == 2) {
-                            str = (String) this.f20164d.fromJson(reader);
+            int t02 = reader.t0(this.f19794a);
+            if (t02 != -1) {
+                if (t02 != 0) {
+                    if (t02 != 1) {
+                        if (t02 == 2) {
+                            str = (String) this.f19797d.fromJson(reader);
                             i10 &= -5;
                         }
                     } else {
-                        gpsPrecisionRequirement = (CreateInquirySessionResponse.GpsPrecisionRequirement) this.f20163c.fromJson(reader);
+                        gpsPrecisionRequirement = (CreateInquirySessionResponse.GpsPrecisionRequirement) this.f19796c.fromJson(reader);
                         i10 &= -3;
                     }
                 } else {
-                    gpsCollectionRequirement = (CreateInquirySessionResponse.GpsCollectionRequirement) this.f20162b.fromJson(reader);
+                    gpsCollectionRequirement = (CreateInquirySessionResponse.GpsCollectionRequirement) this.f19795b.fromJson(reader);
                     i10 &= -2;
                 }
             } else {
-                reader.E0();
+                reader.F0();
                 reader.P();
             }
         }
@@ -79,10 +79,10 @@ public final class CreateInquirySessionResponse_AttributesJsonAdapter extends co
         if (i10 == -8) {
             return new CreateInquirySessionResponse.Attributes(gpsCollectionRequirement, gpsPrecisionRequirement, str);
         }
-        Constructor constructor = this.f20165e;
+        Constructor constructor = this.f19798e;
         if (constructor == null) {
-            constructor = CreateInquirySessionResponse.Attributes.class.getDeclaredConstructor(CreateInquirySessionResponse.GpsCollectionRequirement.class, CreateInquirySessionResponse.GpsPrecisionRequirement.class, String.class, Integer.TYPE, sm.c.f49097c);
-            this.f20165e = constructor;
+            constructor = CreateInquirySessionResponse.Attributes.class.getDeclaredConstructor(CreateInquirySessionResponse.GpsCollectionRequirement.class, CreateInquirySessionResponse.GpsPrecisionRequirement.class, String.class, Integer.TYPE, tm.c.f49935c);
+            this.f19798e = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         Object newInstance = constructor.newInstance(gpsCollectionRequirement, gpsPrecisionRequirement, str, Integer.valueOf(i10), null);
@@ -96,12 +96,12 @@ public final class CreateInquirySessionResponse_AttributesJsonAdapter extends co
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (attributes != null) {
             writer.l();
-            writer.A0("gpsCollectionRequirement");
-            this.f20162b.toJson(writer, attributes.a());
-            writer.A0("gpsPrecisionRequirement");
-            this.f20163c.toJson(writer, attributes.b());
-            writer.A0("playIntegrityProjectId");
-            this.f20164d.toJson(writer, attributes.c());
+            writer.t0("gpsCollectionRequirement");
+            this.f19795b.toJson(writer, attributes.a());
+            writer.t0("gpsPrecisionRequirement");
+            this.f19796c.toJson(writer, attributes.b());
+            writer.t0("playIntegrityProjectId");
+            this.f19797d.toJson(writer, attributes.c());
             writer.E();
             return;
         }

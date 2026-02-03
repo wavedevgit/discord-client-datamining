@@ -8,93 +8,59 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var0.Object;
     var6 = var7.defineProperty;
     var3 = {};
-    var11 = true;
-    var3.value = var11;
+    var10 = true;
+    var3.value = var10;
     var0 = '__esModule';
     var0 = var6.bind(var7)(var2, var0, var3);
     var0 = 0;
     var3 = var5[var0];
     var0 = undefined;
-    var8 = var4.bind(var0)(var3);
-    var7 = var8.createExperiment;
-    var6 = {
-        'kind': 'user',
-        'id': '2025-05_search_results_feedback',
-        'label': 'Search Results Feedback'
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createApexExperiment;
+    var3 = {
+        'name': '2025-05-search-results-feedback',
+        'kind': 'user'
     };
-    var3 = {};
+    var8 = {};
     var9 = false;
-    var3.enabled = var9;
-    var6.defaultConfig = var3;
-    var10 = {
-        'id': 1,
-        'label': 'Eligible to see search results feedback'
-    };
-    var3 = 1;
+    var8.enabled = var9;
+    var3.defaultConfig = var8;
+    var8 = {};
     var9 = {};
-    var9.enabled = var11;
-    var10.config = var9;
-    var9 = new Array(1);
-    var9[0] = var10;
-    var6.treatments = var9;
-    var6 = var7.bind(var8)(var6);
-    var _closure1_slot0 = var6;
+    var9.enabled = var10;
+    var8[1] = var9;
+    var3.variations = var8;
+    var3 = var6.bind(var7)(var3);
+    var _closure1_slot0 = var3;
+    var3 = 1;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/search/experiments/SearchResultsFeedbackExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun113136: for (var _fun113136_ip = 0;;) switch (_fun113136_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = var1.location;
-                var4 = var1.autoTrackExposure;
-                var1 = undefined;
-                if (!(var4 === var1)) {
-                    _fun113136_ip = 22;
-                    continue _fun113136
-                }
-            case 20:
-                var4 = true;
-            case 22:
-                var3 = _closure1_slot0;
-                var2 = var3.useExperiment;
-                var1 = {};
-                var1.location = var0;
-                var0 = {};
-                var0.autoTrackExposure = var4;
-                var0 = var2.bind(var3)(var1, var0);
-                var0 = var0.enabled;
-                return var0;
-        }
+        var0 = arg0;
+        var3 = var0.location;
+        var2 = _closure1_slot0;
+        var1 = var2.useConfig;
+        var0 = {};
+        var0.location = var3;
+        var0 = var1.bind(var2)(var0);
+        var0 = var0.enabled;
+        return var0;
     };
     var2.useIsSearchResultsFeedbackExperimentEnabled = var3;
     var1 = function arg0() {
-        _fun113137: for (var _fun113137_ip = 0;;) switch (_fun113137_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = var1.location;
-                var4 = var1.autoTrackExposure;
-                var1 = undefined;
-                if (!(var4 === var1)) {
-                    _fun113137_ip = 22;
-                    continue _fun113137
-                }
-            case 20:
-                var4 = true;
-            case 22:
-                var3 = _closure1_slot0;
-                var2 = var3.getCurrentConfig;
-                var1 = {};
-                var1.location = var0;
-                var0 = {};
-                var0.autoTrackExposure = var4;
-                var0 = var2.bind(var3)(var1, var0);
-                var0 = var0.enabled;
-                return var0;
-        }
+        var0 = arg0;
+        var3 = var0.location;
+        var2 = _closure1_slot0;
+        var1 = var2.getConfig;
+        var0 = {};
+        var0.location = var3;
+        var0 = var1.bind(var2)(var0);
+        var0 = var0.enabled;
+        return var0;
     };
     var2.getIsSearchResultsFeedbackExperimentEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3076, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1301, 2]);

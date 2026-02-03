@@ -1,7 +1,7 @@
 package kotlinx.serialization.internal;
 
-import at.f2;
-import at.l2;
+import bt.f2;
+import bt.l2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.ShortCompanionObject;
 import kotlinx.serialization.KSerializer;
@@ -10,14 +10,14 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 public final class h extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final h f36405c = new h();
+    public static final h f36181c = new h();
 
     private h() {
-        super(ys.a.I(ShortCompanionObject.INSTANCE));
+        super(zs.a.I(ShortCompanionObject.INSTANCE));
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // at.a
+    @Override // bt.a
     /* renamed from: v */
     public int e(short[] sArr) {
         Intrinsics.checkNotNullParameter(sArr, "<this>");
@@ -25,14 +25,14 @@ public final class h extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // at.f2
+    @Override // bt.f2
     /* renamed from: w */
     public short[] r() {
         return new short[0];
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // at.s, at.a
+    @Override // bt.s, bt.a
     /* renamed from: x */
     public void h(kotlinx.serialization.encoding.c decoder, int i10, l2 builder, boolean z10) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
@@ -41,7 +41,7 @@ public final class h extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // at.a
+    @Override // bt.a
     /* renamed from: y */
     public l2 k(short[] sArr) {
         Intrinsics.checkNotNullParameter(sArr, "<this>");
@@ -49,7 +49,7 @@ public final class h extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // at.f2
+    @Override // bt.f2
     /* renamed from: z */
     public void u(CompositeEncoder encoder, short[] content, int i10) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");

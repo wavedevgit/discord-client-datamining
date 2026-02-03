@@ -201,7 +201,7 @@ public interface ReactShadowNode<T extends ReactShadowNode> {
     void setPadding(int i10, float f10);
 
     /* renamed from: setPaddingPercent */
-    void mo910setPaddingPercent(int i10, float f10);
+    void mo912setPaddingPercent(int i10, float f10);
 
     void setPosition(int i10, float f10);
 

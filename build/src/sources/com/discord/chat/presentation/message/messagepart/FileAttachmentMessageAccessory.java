@@ -25,7 +25,7 @@ public final class FileAttachmentMessageAccessory extends MessageAttachmentAcces
     }
 
     /* renamed from: copy-dB0-bEw$default  reason: not valid java name */
-    public static /* synthetic */ FileAttachmentMessageAccessory m569copydB0bEw$default(FileAttachmentMessageAccessory fileAttachmentMessageAccessory, String str, Attachment attachment, int i10, Float f10, SpoilerAttributes spoilerAttributes, String str2, String str3, int i11, Object obj) {
+    public static /* synthetic */ FileAttachmentMessageAccessory m571copydB0bEw$default(FileAttachmentMessageAccessory fileAttachmentMessageAccessory, String str, Attachment attachment, int i10, Float f10, SpoilerAttributes spoilerAttributes, String str2, String str3, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             str = fileAttachmentMessageAccessory.messageId;
         }
@@ -51,12 +51,12 @@ public final class FileAttachmentMessageAccessory extends MessageAttachmentAcces
         String str5 = str3;
         SpoilerAttributes spoilerAttributes2 = spoilerAttributes;
         int i12 = i10;
-        return fileAttachmentMessageAccessory.m571copydB0bEw(str, attachment, i12, f10, spoilerAttributes2, str4, str5);
+        return fileAttachmentMessageAccessory.m573copydB0bEw(str, attachment, i12, f10, spoilerAttributes2, str4, str5);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m570component13Eiw7ao() {
+    public final String m572component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -87,7 +87,7 @@ public final class FileAttachmentMessageAccessory extends MessageAttachmentAcces
 
     @NotNull
     /* renamed from: copy-dB0-bEw  reason: not valid java name */
-    public final FileAttachmentMessageAccessory m571copydB0bEw(@NotNull String messageId, @NotNull Attachment attachment, int i10, Float f10, SpoilerAttributes spoilerAttributes, String str, String str2) {
+    public final FileAttachmentMessageAccessory m573copydB0bEw(@NotNull String messageId, @NotNull Attachment attachment, int i10, Float f10, SpoilerAttributes spoilerAttributes, String str, String str2) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(attachment, "attachment");
         return new FileAttachmentMessageAccessory(messageId, attachment, i10, f10, spoilerAttributes, str, str2, null);
@@ -99,7 +99,7 @@ public final class FileAttachmentMessageAccessory extends MessageAttachmentAcces
         }
         if (obj instanceof FileAttachmentMessageAccessory) {
             FileAttachmentMessageAccessory fileAttachmentMessageAccessory = (FileAttachmentMessageAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, fileAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.attachment, fileAttachmentMessageAccessory.attachment) && this.attachmentIndex == fileAttachmentMessageAccessory.attachmentIndex && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) fileAttachmentMessageAccessory.attachmentsOpacity) && Intrinsics.areEqual(this.spoilerAttributes, fileAttachmentMessageAccessory.spoilerAttributes) && Intrinsics.areEqual(this.uploaderId, fileAttachmentMessageAccessory.uploaderId) && Intrinsics.areEqual(this.uploaderItemId, fileAttachmentMessageAccessory.uploaderItemId);
+            return MessageId.m1090equalsimpl0(this.messageId, fileAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.attachment, fileAttachmentMessageAccessory.attachment) && this.attachmentIndex == fileAttachmentMessageAccessory.attachmentIndex && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) fileAttachmentMessageAccessory.attachmentsOpacity) && Intrinsics.areEqual(this.spoilerAttributes, fileAttachmentMessageAccessory.spoilerAttributes) && Intrinsics.areEqual(this.uploaderId, fileAttachmentMessageAccessory.uploaderId) && Intrinsics.areEqual(this.uploaderItemId, fileAttachmentMessageAccessory.uploaderItemId);
         }
         return false;
     }
@@ -123,7 +123,7 @@ public final class FileAttachmentMessageAccessory extends MessageAttachmentAcces
     @Override // com.discord.chat.presentation.message.messagepart.MessageAttachmentAccessory, com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -140,9 +140,9 @@ public final class FileAttachmentMessageAccessory extends MessageAttachmentAcces
     }
 
     public int hashCode() {
-        int m1089hashCodeimpl = ((((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.attachment.hashCode()) * 31) + Integer.hashCode(this.attachmentIndex)) * 31;
+        int m1091hashCodeimpl = ((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.attachment.hashCode()) * 31) + Integer.hashCode(this.attachmentIndex)) * 31;
         Float f10 = this.attachmentsOpacity;
-        int hashCode = (m1089hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31;
+        int hashCode = (m1091hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         int hashCode2 = (hashCode + (spoilerAttributes == null ? 0 : spoilerAttributes.hashCode())) * 31;
         String str = this.uploaderId;
@@ -153,14 +153,14 @@ public final class FileAttachmentMessageAccessory extends MessageAttachmentAcces
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         Attachment attachment = this.attachment;
         int i10 = this.attachmentIndex;
         Float f10 = this.attachmentsOpacity;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         String str = this.uploaderId;
         String str2 = this.uploaderItemId;
-        return "FileAttachmentMessageAccessory(messageId=" + m1091toStringimpl + ", attachment=" + attachment + ", attachmentIndex=" + i10 + ", attachmentsOpacity=" + f10 + ", spoilerAttributes=" + spoilerAttributes + ", uploaderId=" + str + ", uploaderItemId=" + str2 + ")";
+        return "FileAttachmentMessageAccessory(messageId=" + m1093toStringimpl + ", attachment=" + attachment + ", attachmentIndex=" + i10 + ", attachmentsOpacity=" + f10 + ", spoilerAttributes=" + spoilerAttributes + ", uploaderId=" + str + ", uploaderItemId=" + str2 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

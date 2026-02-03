@@ -7,7 +7,7 @@ import org.jetbrains.annotations.NotNull;
 public class ExtensionReceiver extends AbstractReceiverValue implements ImplicitReceiver {
 
     /* renamed from: c  reason: collision with root package name */
-    private final CallableDescriptor f35542c;
+    private final CallableDescriptor f35318c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ExtensionReceiver(@NotNull CallableDescriptor callableDescriptor, @NotNull KotlinType kotlinType, ReceiverValue receiverValue) {
@@ -18,7 +18,7 @@ public class ExtensionReceiver extends AbstractReceiverValue implements Implicit
         if (kotlinType == null) {
             a(1);
         }
-        this.f35542c = callableDescriptor;
+        this.f35318c = callableDescriptor;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -52,6 +52,6 @@ public class ExtensionReceiver extends AbstractReceiverValue implements Implicit
     }
 
     public String toString() {
-        return getType() + ": Ext {" + this.f35542c + "}";
+        return getType() + ": Ext {" + this.f35318c + "}";
     }
 }

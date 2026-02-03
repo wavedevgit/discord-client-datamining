@@ -98,7 +98,7 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
         } else {
             nativePermissionManagerModule.requestMultiplePermissionsWithDeduplication(arrayList, promise);
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -119,7 +119,7 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
                 return requestForegroundServicePermissionVoiceCall$lambda$3$lambda$2;
             }
         }));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -132,14 +132,14 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
                 return requestForegroundServicePermissionVoiceCall$lambda$3$lambda$1$lambda$0;
             }
         });
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit requestForegroundServicePermissionVoiceCall$lambda$3$lambda$1$lambda$0(NativePermissionManagerModule nativePermissionManagerModule, Promise promise, Promise it) {
         Intrinsics.checkNotNullParameter(it, "it");
         nativePermissionManagerModule.requestPermissionWithDeduplication("android.permission.FOREGROUND_SERVICE_MICROPHONE", promise);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -148,7 +148,7 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
         String lowerCase = "DENIED".toLowerCase(Locale.ROOT);
         Intrinsics.checkNotNullExpressionValue(lowerCase, "toLowerCase(...)");
         promise.resolve(lowerCase);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void requestMultiplePermissionsWithDeduplication(final List<String> list, Promise promise) {
@@ -167,7 +167,7 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
         Intrinsics.checkNotNullParameter(str, "<unused var>");
         Intrinsics.checkNotNullParameter(wrappedPromise, "wrappedPromise");
         nativePermissionManagerModule.getPermissionsModule().requestMultiplePermissions(NativeArrayExtensionsKt.toNativeArray$default(list, null, 1, null), wrappedPromise);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void requestPermissionWithDeduplication(String str, Promise promise) {
@@ -186,7 +186,7 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(wrappedPromise, "wrappedPromise");
         nativePermissionManagerModule.getPermissionsModule().requestPermission(key, wrappedPromise);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void requestWithDeduplication(String str, Promise promise, Function2<? super String, ? super Promise, Unit> function2) {
@@ -199,7 +199,7 @@ public final class NativePermissionManagerModule extends ReactContextBaseJavaMod
             this.pendingPermissionRequests.put(str, CollectionsKt.r(promise));
             try {
                 function2.invoke(str, new PromiseWrapper(createMultiPromiseResolver(str), new NativePermissionManagerModule$requestWithDeduplication$1$wrapperPromise$1(NativePermissionStatus.Companion), null, 4, null));
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             } catch (Exception e10) {
                 List<Promise> remove = this.pendingPermissionRequests.remove(str);
                 if (remove != null) {

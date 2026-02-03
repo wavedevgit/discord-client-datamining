@@ -1,9 +1,9 @@
 package kotlin.reflect.jvm.internal.impl.types.typesApproximation;
 
-import ir.p;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import jr.p;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
@@ -133,7 +133,7 @@ public final class CapturedTypeApproximationKt {
         if (!typeProjection.isStarProjection()) {
             KotlinType type = typeProjection.getType();
             Intrinsics.checkNotNullExpressionValue(type, "getType(...)");
-            if (TypeUtils.contains(type, a.f36058d)) {
+            if (TypeUtils.contains(type, a.f35834d)) {
                 Variance projectionKind = typeProjection.getProjectionKind();
                 Intrinsics.checkNotNullExpressionValue(projectionKind, "getProjectionKind(...)");
                 if (projectionKind == Variance.OUT_VARIANCE) {

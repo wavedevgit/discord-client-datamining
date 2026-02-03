@@ -10,7 +10,7 @@ import java.util.Calendar;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class e {
     private static DeviceEventManagerModule.RCTDeviceEventEmitter a() {
-        return (DeviceEventManagerModule.RCTDeviceEventEmitter) c.f17608a.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class);
+        return (DeviceEventManagerModule.RCTDeviceEventEmitter) c.f17237a.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class);
     }
 
     public static void b(String str) {

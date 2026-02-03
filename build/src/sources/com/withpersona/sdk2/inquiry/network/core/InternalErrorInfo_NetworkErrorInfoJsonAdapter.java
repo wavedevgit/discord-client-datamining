@@ -49,23 +49,23 @@ public final class InternalErrorInfo_NetworkErrorInfoJsonAdapter extends h {
         ErrorResponse.Error error = null;
         int i10 = -1;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
-                mVar.E0();
+            int t02 = mVar.t0(this.options);
+            if (t02 == -1) {
+                mVar.F0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 num = (Integer) this.intAdapter.fromJson(mVar);
                 if (num == null) {
-                    throw sm.c.x("code", "code", mVar);
+                    throw tm.c.x("code", "code", mVar);
                 }
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 str = (String) this.nullableStringAdapter.fromJson(mVar);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 bool = (Boolean) this.booleanAdapter.fromJson(mVar);
                 if (bool == null) {
-                    throw sm.c.x("isRecoverable", "isRecoverable", mVar);
+                    throw tm.c.x("isRecoverable", "isRecoverable", mVar);
                 }
-            } else if (A0 == 3) {
+            } else if (t02 == 3) {
                 error = (ErrorResponse.Error) this.nullableErrorAdapter.fromJson(mVar);
                 i10 = -9;
             }
@@ -77,13 +77,13 @@ public final class InternalErrorInfo_NetworkErrorInfoJsonAdapter extends h {
                 if (bool != null) {
                     return new InternalErrorInfo.NetworkErrorInfo(intValue, str, bool.booleanValue(), error);
                 }
-                throw sm.c.o("isRecoverable", "isRecoverable", mVar);
+                throw tm.c.o("isRecoverable", "isRecoverable", mVar);
             }
-            throw sm.c.o("code", "code", mVar);
+            throw tm.c.o("code", "code", mVar);
         }
         Constructor<InternalErrorInfo.NetworkErrorInfo> constructor = this.constructorRef;
         if (constructor == null) {
-            Class cls = sm.c.f49097c;
+            Class cls = tm.c.f49935c;
             Class cls2 = Integer.TYPE;
             constructor = InternalErrorInfo.NetworkErrorInfo.class.getDeclaredConstructor(cls2, String.class, Boolean.TYPE, ErrorResponse.Error.class, cls2, cls);
             this.constructorRef = constructor;
@@ -92,22 +92,22 @@ public final class InternalErrorInfo_NetworkErrorInfoJsonAdapter extends h {
             if (bool != null) {
                 return constructor.newInstance(num, str, bool, error, Integer.valueOf(i10), null);
             }
-            throw sm.c.o("isRecoverable", "isRecoverable", mVar);
+            throw tm.c.o("isRecoverable", "isRecoverable", mVar);
         }
-        throw sm.c.o("code", "code", mVar);
+        throw tm.c.o("code", "code", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, InternalErrorInfo.NetworkErrorInfo networkErrorInfo) {
         if (networkErrorInfo != null) {
             tVar.l();
-            tVar.A0("code");
+            tVar.t0("code");
             this.intAdapter.toJson(tVar, Integer.valueOf(networkErrorInfo.getCode()));
-            tVar.A0("message");
+            tVar.t0("message");
             this.nullableStringAdapter.toJson(tVar, networkErrorInfo.getMessage());
-            tVar.A0("isRecoverable");
+            tVar.t0("isRecoverable");
             this.booleanAdapter.toJson(tVar, Boolean.valueOf(networkErrorInfo.isRecoverable()));
-            tVar.A0("responseError");
+            tVar.t0("responseError");
             this.nullableErrorAdapter.toJson(tVar, networkErrorInfo.getResponseError());
             tVar.E();
             return;

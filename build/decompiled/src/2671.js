@@ -13,155 +13,157 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.default = var0;
     var3 = {};
     var4 = {
-        'one': 'bir saniyeden az',
-        'other': '{{count}} saniyeden az'
+        'one': 'menos de um segundo',
+        'other': 'menos de {{count}} segundos'
     };
     var3.lessThanXSeconds = var4;
     var4 = {
-        'one': '1 saniye',
-        'other': '{{count}} saniye'
+        'one': '1 segundo',
+        'other': '{{count}} segundos'
     };
     var3.xSeconds = var4;
-    var4 = 'yarım dakika';
+    var4 = 'meio minuto';
     var3.halfAMinute = var4;
     var4 = {
-        'one': 'bir dakikadan az',
-        'other': '{{count}} dakikadan az'
+        'one': 'menos de um minuto',
+        'other': 'menos de {{count}} minutos'
     };
     var3.lessThanXMinutes = var4;
     var4 = {
-        'one': '1 dakika',
-        'other': '{{count}} dakika'
+        'one': '1 minuto',
+        'other': '{{count}} minutos'
     };
     var3.xMinutes = var4;
     var4 = {
-        'one': 'yaklaşık 1 saat',
-        'other': 'yaklaşık {{count}} saat'
+        'one': 'cerca de 1 hora',
+        'other': 'cerca de {{count}} horas'
     };
     var3.aboutXHours = var4;
     var4 = {
-        'one': '1 saat',
-        'other': '{{count}} saat'
+        'one': '1 hora',
+        'other': '{{count}} horas'
     };
     var3.xHours = var4;
     var4 = {
-        'one': '1 gün',
-        'other': '{{count}} gün'
+        'one': '1 dia',
+        'other': '{{count}} dias'
     };
     var3.xDays = var4;
     var4 = {
-        'one': 'yaklaşık 1 hafta',
-        'other': 'yaklaşık {{count}} hafta'
+        'one': 'cerca de 1 semana',
+        'other': 'cerca de {{count}} semanas'
     };
     var3.aboutXWeeks = var4;
     var4 = {
-        'one': '1 hafta',
-        'other': '{{count}} hafta'
+        'one': '1 semana',
+        'other': '{{count}} semanas'
     };
     var3.xWeeks = var4;
     var4 = {
-        'one': 'yaklaşık 1 ay',
-        'other': 'yaklaşık {{count}} ay'
+        'one': 'cerca de 1 mês',
+        'other': 'cerca de {{count}} meses'
     };
     var3.aboutXMonths = var4;
     var4 = {
-        'one': '1 ay',
-        'other': '{{count}} ay'
+        'one': '1 mês',
+        'other': '{{count}} meses'
     };
     var3.xMonths = var4;
     var4 = {
-        'one': 'yaklaşık 1 yıl',
-        'other': 'yaklaşık {{count}} yıl'
+        'one': 'cerca de 1 ano',
+        'other': 'cerca de {{count}} anos'
     };
     var3.aboutXYears = var4;
     var4 = {
-        'one': '1 yıl',
-        'other': '{{count}} yıl'
+        'one': '1 ano',
+        'other': '{{count}} anos'
     };
     var3.xYears = var4;
     var4 = {
-        'one': '1 yıldan fazla',
-        'other': '{{count}} yıldan fazla'
+        'one': 'mais de 1 ano',
+        'other': 'mais de {{count}} anos'
     };
     var3.overXYears = var4;
     var4 = {
-        'one': 'neredeyse 1 yıl',
-        'other': 'neredeyse {{count}} yıl'
+        'one': 'quase 1 ano',
+        'other': 'quase {{count}} anos'
     };
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
     var2 = function arg0, arg1, arg2() {
-        _fun22139: for (var _fun22139_ip = 0;;) switch (_fun22139_ip) {
+        _fun22151: for (var _fun22151_ip = 0;;) switch (_fun22151_ip) {
             case 0:
-                var4 = arg1;
+                var7 = arg1;
                 var1 = arg2;
                 var2 = _closure1_slot0;
                 var0 = arg0;
                 var2 = var2[var0];
-                var5 = 'string';
+                var4 = 'string';
                 var0 = typeof var2;
                 var3 = var2;
-                if (!(var5 !== var0)) {
-                    _fun22139_ip = 84;
-                    continue _fun22139
+                if (!(var4 !== var0)) {
+                    _fun22151_ip = 90;
+                    continue _fun22151
                 }
             case 34:
                 var0 = 1;
-                if (!(var0 !== var4)) {
-                    _fun22139_ip = 75;
-                    continue _fun22139
+                if (!(var0 !== var7)) {
+                    _fun22151_ip = 81;
+                    continue _fun22151
                 }
             case 41:
                 var6 = var2.other;
                 var5 = var6.replace;
-                var0 = var4.toString;
-                var4 = var0.bind(var4)();
+                var0 = global;
+                var4 = var0.String;
+                var0 = undefined;
+                var4 = var4.bind(var0)(var7);
                 var0 = '{{count}}';
                 var0 = var5.bind(var6)(var0, var4);
-                _fun22139_ip = 81;
-                continue _fun22139;
-            case 75:
-                var0 = var2.one;
+                _fun22151_ip = 87;
+                continue _fun22151;
             case 81:
+                var0 = var2.one;
+            case 87:
                 var3 = var0;
-            case 84:
+            case 90:
                 var2 = null;
                 var0 = var3;
                 if (!(var2 != var1)) {
-                    _fun22139_ip = 151;
-                    continue _fun22139
+                    _fun22151_ip = 157;
+                    continue _fun22151
                 }
-            case 93:
+            case 99:
                 var2 = var1.addSuffix;
                 var0 = var3;
                 if (!var2) {
-                    _fun22139_ip = 151;
-                    continue _fun22139
+                    _fun22151_ip = 157;
+                    continue _fun22151
                 }
-            case 105:
+            case 111:
                 var2 = var1.comparison;
                 if (!var2) {
-                    _fun22139_ip = 126;
-                    continue _fun22139
+                    _fun22151_ip = 132;
+                    continue _fun22151
                 }
-            case 114:
+            case 120:
                 var2 = var1.comparison;
                 var1 = 0;
                 if (!(!(var2 > var1))) {
-                    _fun22139_ip = 138;
-                    continue _fun22139
+                    _fun22151_ip = 144;
+                    continue _fun22151
                 }
-            case 126:
-                var1 = ' önce';
-                var1 = var3 + var1;
-                _fun22139_ip = 148;
-                continue _fun22139;
-            case 138:
-                var2 = ' sonra';
-                var1 = var3 + var2;
-            case 148:
+            case 132:
+                var1 = 'há ';
+                var1 = var1 + var3;
+                _fun22151_ip = 154;
+                continue _fun22151;
+            case 144:
+                var2 = 'em ';
+                var1 = var2 + var3;
+            case 154:
                 var0 = var1;
-            case 151:
+            case 157:
                 return var0;
         }
     };

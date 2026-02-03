@@ -5,10 +5,10 @@ import wg.k;
 class f implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    final k f17384a;
+    final k f17013a;
 
     public f(k kVar) {
-        this.f17384a = kVar;
+        this.f17013a = kVar;
     }
 
     @Override // com.google.firebase.installations.h
@@ -21,7 +21,7 @@ class f implements h {
         if (!dVar.l() && !dVar.k() && !dVar.i()) {
             return false;
         }
-        this.f17384a.e(dVar.d());
+        this.f17013a.e(dVar.d());
         return true;
     }
 }

@@ -44,13 +44,13 @@ public final class NextStep_Document_PendingPageJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
             }
         }
@@ -63,9 +63,9 @@ public final class NextStep_Document_PendingPageJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (pendingPage != null) {
             writer.l();
-            writer.A0("title");
+            writer.t0("title");
             this.nullableStringAdapter.toJson(writer, pendingPage.getTitle());
-            writer.A0("description");
+            writer.t0("description");
             this.nullableStringAdapter.toJson(writer, pendingPage.getDescription());
             writer.E();
             return;

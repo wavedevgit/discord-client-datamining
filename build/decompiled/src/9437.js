@@ -1,160 +1,69 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0, arg1() {
-        _fun75093: for (var _fun75093_ip = 0;;) switch (_fun75093_ip) {
-            case 0:
-                var3 = arg0;
-                var4 = arg1;
-                if (!(var3 !== var4)) {
-                    _fun75093_ip = 23;
-                    continue _fun75093
-                }
-            case 10:
-                var0 = var3 != var3;
-                if (!var0) {
-                    _fun75093_ip = 21;
-                    continue _fun75093
-                }
-            case 17:
-                var0 = var4 != var4;
-            case 21:
-                _fun75093_ip = 57;
-                continue _fun75093;
-            case 23:
-                var2 = 0;
-                var1 = var2 !== var3;
-                if (var1) {
-                    _fun75093_ip = 36;
-                    continue _fun75093
-                }
-            case 32:
-                var1 = var2 !== var4;
-            case 36:
-                if (var1) {
-                    _fun75093_ip = 54;
-                    continue _fun75093
-                }
-            case 39:
-                var2 = 1;
-                var3 = var2 / var3;
-                var2 = var2 / var4;
-                var1 = var3 === var2;
-            case 54:
-                var0 = var1;
-            case 57:
-                return var0;
-        }
-    };
-    var _closure1_slot1 = var1;
+    var2 = exports;
     var1 = global;
-    var1 = var1.Object;
-    var1 = var1.prototype;
-    var1 = var1.hasOwnProperty;
+    var5 = var1.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var1 = true;
+    var3.value = var1;
+    var1 = '__esModule';
+    var1 = var4.bind(var5)(var2, var1, var3);
+    var1 = {};
+    var3 = 'function handlerOffsetDirection_Pnpm_handleroffsetDirectionTs1(handlerOffset,fixedDirection){if(fixedDirection==="negative")return-1;if(fixedDirection==="positive")return 1;if(handlerOffset.value===0)return-1;return Math.sign(handlerOffset.value);}';
+    var1.code = var3;
     var _closure1_slot0 = var1;
-    var1 = function arg0, arg1() {
-        _fun75094: for (var _fun75094_ip = 0;;) switch (_fun75094_ip) {
-            case 0:
-                var6 = arg0;
-                var5 = arg1;
-                var0 = _closure1_slot1;
-                var3 = undefined;
-                var0 = var0.bind(var3)(var6, var5);
-                if (var0) {
-                    _fun75094_ip = 208;
-                    continue _fun75094
-                }
-            case 27:
-                var2 = 'object';
-                var0 = typeof var6;
-                if (!(var2 === var0)) {
-                    _fun75094_ip = 204;
-                    continue _fun75094
-                }
-            case 41:
-                var0 = null;
-                if (!(var0 !== var6)) {
-                    _fun75094_ip = 204;
-                    continue _fun75094
-                }
-            case 50:
-                var1 = typeof var5;
-                if (!(var2 === var1)) {
-                    _fun75094_ip = 204;
-                    continue _fun75094
-                }
-            case 60:
-                if (!(var0 !== var5)) {
-                    _fun75094_ip = 204;
-                    continue _fun75094
-                }
-            case 67:
-                var0 = global;
-                var2 = var0.Object;
-                var1 = var2.keys;
-                var2 = var1.bind(var2)(var6);
-                var1 = var0.Object;
-                var0 = var1.keys;
-                var0 = var0.bind(var1)(var5);
-                var1 = var2.length;
-                var0 = var0.length;
-                if (!(var1 === var0)) {
-                    _fun75094_ip = 200;
-                    continue _fun75094
-                }
-            case 115:
-                var0 = var2.length;
-                var1 = 0;
-                var0 = var1 < var0;
-                if (!var0) {
-                    _fun75094_ip = 196;
-                    continue _fun75094
-                }
-            case 129:
-                var8 = _closure1_slot0;
-                var7 = var8.call;
-                var0 = var2[var1];
-                var0 = var7.bind(var8)(var5, var0);
-                if (!var0) {
-                    _fun75094_ip = 180;
-                    continue _fun75094
-                }
-            case 151:
-                var8 = _closure1_slot1;
-                var0 = var2[var1];
-                var7 = var6[var0];
-                var0 = var2[var1];
-                var0 = var5[var0];
-                var0 = var8.bind(var3)(var7, var0);
-                if (var0) {
-                    _fun75094_ip = 184;
-                    continue _fun75094
-                }
-            case 180:
-                var0 = false;
-                return var0;
-            case 184:
-                var1 = var1 + 1;
-                var0 = var2.length;
-                if (var1 < var0) {
-                    _fun75094_ip = 129;
-                    continue _fun75094
-                }
-            case 196:
-                var0 = true;
-                return var0;
-            case 200:
-                var0 = false;
-                return var0;
-            case 204:
-                var0 = false;
-                return var0;
-            case 208:
-                var0 = true;
-                return var0;
-        }
+    var1 = function() { // Environment: var0
+        var0 = function arg0, arg1() {
+            _fun74950: for (var _fun74950_ip = 0;;) switch (_fun74950_ip) {
+                case 0:
+                    var3 = arg0;
+                    var5 = arg1;
+                    var2 = -1;
+                    var1 = 'negative';
+                    var0 = var2;
+                    if (!(var1 !== var5)) {
+                        _fun74950_ip = 75;
+                        continue _fun74950
+                    }
+                case 23:
+                    var1 = 1;
+                    var4 = 'positive';
+                    if (!(var4 !== var5)) {
+                        _fun74950_ip = 72;
+                        continue _fun74950
+                    }
+                case 34:
+                    var5 = var3.value;
+                    var4 = 0;
+                    if (!(var4 !== var5)) {
+                        _fun74950_ip = 69;
+                        continue _fun74950
+                    }
+                case 45:
+                    var4 = global;
+                    var5 = var4.Math;
+                    var4 = var5.sign;
+                    var3 = var3.value;
+                    var2 = var4.bind(var5)(var3);
+                case 69:
+                    var1 = var2;
+                case 72:
+                    var0 = var1;
+                case 75:
+                    return var0;
+            }
+        };
+        var1 = {};
+        var0.__closure = var1;
+        var1 = 4382236906699.0;
+        var0.__workletHash = var1;
+        var1 = _closure1_slot0;
+        var0.__initData = var1;
+        return var0;
     };
-    var0 = arg4;
-    var0.exports = var1;
     var0 = undefined;
+    var1 = var1.bind(var0)();
+    var2.handlerOffsetDirection = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

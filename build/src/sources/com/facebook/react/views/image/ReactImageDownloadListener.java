@@ -7,7 +7,7 @@ import android.graphics.drawable.Drawable;
 import com.facebook.drawee.controller.ControllerListener;
 import com.facebook.drawee.drawable.f;
 import com.facebook.react.devsupport.StackTraceHelper;
-import ir.c;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;

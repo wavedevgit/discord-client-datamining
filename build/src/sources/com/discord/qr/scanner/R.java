@@ -4,7 +4,7 @@ public final class R {
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class id {
-        public static int qr_scanner = 0x7f0a0418;
+        public static int qr_scanner = 0x7f0a0419;
 
         private id() {
         }

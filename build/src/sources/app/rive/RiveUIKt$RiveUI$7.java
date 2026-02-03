@@ -17,8 +17,8 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlinx.coroutines.CoroutineScope;
-import or.b;
 import org.jetbrains.annotations.NotNull;
+import pr.b;
 import w0.q;
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @e(c = "app.rive.RiveUIKt$RiveUI$7", f = "RiveUI.kt", l = {234}, m = "invokeSuspend")
@@ -89,7 +89,7 @@ final class RiveUIKt$RiveUI$7 extends k implements Function2<CoroutineScope, Con
             /*
                 r20 = this;
                 r0 = r20
-                java.lang.Object r1 = or.b.f()
+                java.lang.Object r1 = pr.b.f()
                 int r2 = r0.label
                 r3 = 1
                 if (r2 == 0) goto L23
@@ -144,7 +144,7 @@ final class RiveUIKt$RiveUI$7 extends k implements Function2<CoroutineScope, Con
             L6f:
                 app.rive.core.CommandQueue r7 = r0.$commandQueue
                 long r8 = r0.$stateMachineHandle
-                r7.m108advanceStateMachineOFH3VyA(r8, r5)
+                r7.m110advanceStateMachineOFH3VyA(r8, r5)
                 app.rive.core.CommandQueue r10 = r0.$commandQueue
                 long r11 = r0.$artboardHandle
                 long r13 = r0.$stateMachineHandle
@@ -156,10 +156,10 @@ final class RiveUIKt$RiveUI$7 extends k implements Function2<CoroutineScope, Con
                 int r6 = r0.$clearColor
                 r16 = r5
                 r18 = r6
-                r10.m125drawPOUf8go(r11, r13, r15, r16, r17, r18)
+                r10.m127drawPOUf8go(r11, r13, r15, r16, r17, r18)
                 goto L48
             L93:
-                kotlin.Unit r1 = kotlin.Unit.f33298a
+                kotlin.Unit r1 = kotlin.Unit.f33074a
                 return r1
             */
             throw new UnsupportedOperationException("Method not decompiled: app.rive.RiveUIKt$RiveUI$7.AnonymousClass2.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -167,7 +167,7 @@ final class RiveUIKt$RiveUI$7 extends k implements Function2<CoroutineScope, Con
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
@@ -213,21 +213,21 @@ final class RiveUIKt$RiveUI$7 extends k implements Function2<CoroutineScope, Con
                         return "Surface is null, skipping drawing";
                     }
                 });
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
             Lifecycle lifecycle = this.$lifecycleOwner.getLifecycle();
-            Lifecycle.State state = Lifecycle.State.f4396p;
+            Lifecycle.State state = Lifecycle.State.f4440p;
             AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.$commandQueue, this.$stateMachineHandle, this.$artboardHandle, this.$fit, this.$alignment, this.$clearColor, this.$isSettled$delegate, this.$surface$delegate, null);
             this.label = 1;
             if (z.a(lifecycle, state, anonymousClass2, this) == f10) {
                 return f10;
             }
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RiveUIKt$RiveUI$7) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((RiveUIKt$RiveUI$7) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

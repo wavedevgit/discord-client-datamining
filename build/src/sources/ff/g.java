@@ -9,11 +9,11 @@ import java.io.PrintWriter;
 public abstract class g {
 
     /* renamed from: d  reason: collision with root package name */
-    protected final h f25104d;
+    protected final h f24315d;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public g(h hVar) {
-        this.f25104d = hVar;
+        this.f24315d = hVar;
     }
 
     public static h c(Activity activity) {
@@ -31,7 +31,7 @@ public abstract class g {
     }
 
     public Activity b() {
-        Activity g10 = this.f25104d.g();
+        Activity g10 = this.f24315d.g();
         gf.q.l(g10);
         return g10;
     }

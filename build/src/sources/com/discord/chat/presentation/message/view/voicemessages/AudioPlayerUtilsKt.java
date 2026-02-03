@@ -17,15 +17,15 @@ public final class AudioPlayerUtilsKt {
     @NotNull
     public static final AudioPlayerManager.AudioSource toAudioSource(@NotNull AudioAttachmentMessageAccessory audioAttachmentMessageAccessory) {
         Intrinsics.checkNotNullParameter(audioAttachmentMessageAccessory, "<this>");
-        return new AudioPlayerManager.AudioSource(ChannelId.m1058boximpl(audioAttachmentMessageAccessory.m549getChannelIdo4g7jtM()), audioAttachmentMessageAccessory.mo536getMessageId3Eiw7ao(), audioAttachmentMessageAccessory.getAttachment().getUrl(), Integer.valueOf(audioAttachmentMessageAccessory.getAttachmentIndex()), null);
+        return new AudioPlayerManager.AudioSource(ChannelId.m1060boximpl(audioAttachmentMessageAccessory.m551getChannelIdo4g7jtM()), audioAttachmentMessageAccessory.mo538getMessageId3Eiw7ao(), audioAttachmentMessageAccessory.getAttachment().getUrl(), Integer.valueOf(audioAttachmentMessageAccessory.getAttachmentIndex()), null);
     }
 
     @NotNull
     public static final MediaSource toMediaSource(@NotNull AudioPlayerManager.AudioSource audioSource, String str) {
         String str2;
         Intrinsics.checkNotNullParameter(audioSource, "<this>");
-        ChannelId m714getChannelIdqMVnFVQ = audioSource.m714getChannelIdqMVnFVQ();
-        String m715getMessageId3Eiw7ao = audioSource.m715getMessageId3Eiw7ao();
+        ChannelId m716getChannelIdqMVnFVQ = audioSource.m716getChannelIdqMVnFVQ();
+        String m717getMessageId3Eiw7ao = audioSource.m717getMessageId3Eiw7ao();
         Integer index = audioSource.getIndex();
         String url = audioSource.getUrl();
         if (str == null) {
@@ -33,7 +33,7 @@ public final class AudioPlayerUtilsKt {
         } else {
             str2 = str;
         }
-        return new MediaSource(url, null, null, null, str2, MediaType.AUDIO, false, m714getChannelIdqMVnFVQ, m715getMessageId3Eiw7ao, index, null, null, 3150, null);
+        return new MediaSource(url, null, null, null, str2, MediaType.AUDIO, false, m716getChannelIdqMVnFVQ, m717getMessageId3Eiw7ao, index, null, null, 3150, null);
     }
 
     public static /* synthetic */ MediaSource toMediaSource$default(AudioPlayerManager.AudioSource audioSource, String str, int i10, Object obj) {

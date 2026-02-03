@@ -1,10 +1,10 @@
 package com.discord.bundle_updater;
 
-import ir.v;
-import iu.x;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import jr.v;
+import ju.x;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
@@ -53,7 +53,7 @@ public final class BundleUpdaterUtils {
     public final AppManifest getManifestFromFile(@NotNull File file) {
         Intrinsics.checkNotNullParameter(file, "file");
         Json json = BundleUpdaterUtilsKt.getJson();
-        String j10 = tr.j.j(file, null, 1, null);
+        String j10 = ur.j.j(file, null, 1, null);
         json.a();
         return (AppManifest) json.b(AppManifest.Companion.serializer(), j10);
     }
@@ -63,10 +63,10 @@ public final class BundleUpdaterUtils {
         Intrinsics.checkNotNullParameter(file, "file");
         BufferedSource d10 = x.d(x.j(file));
         try {
-            iu.n a10 = iu.n.f31298o.a(x.b());
+            ju.n a10 = ju.n.f32395o.a(x.b());
             d10.e2(a10);
             String q10 = a10.a().q();
-            tr.c.a(d10, null);
+            ur.c.a(d10, null);
             return q10;
         } finally {
         }

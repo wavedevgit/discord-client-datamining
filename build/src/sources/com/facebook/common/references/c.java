@@ -12,7 +12,7 @@ public class c extends CloseableReference {
     }
 
     @Override // com.facebook.common.references.CloseableReference
-    public boolean F0() {
+    public boolean J0() {
         return true;
     }
 

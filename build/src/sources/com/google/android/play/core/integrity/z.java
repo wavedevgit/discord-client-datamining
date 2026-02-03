@@ -3,19 +3,19 @@ package com.google.android.play.core.integrity;
 public final class z implements gi.z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gi.e0 f17254a;
+    private final gi.e0 f16883a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final gi.e0 f17255b;
+    private final gi.e0 f16884b;
 
     public z(gi.e0 e0Var, gi.e0 e0Var2) {
-        this.f17254a = e0Var;
-        this.f17255b = e0Var2;
+        this.f16883a = e0Var;
+        this.f16884b = e0Var2;
     }
 
     @Override // gi.e0
     public final /* bridge */ /* synthetic */ Object a() {
-        gi.e0 e0Var = this.f17255b;
-        return new x((j0) this.f17254a.a(), (p0) e0Var.a());
+        gi.e0 e0Var = this.f16884b;
+        return new x((j0) this.f16883a.a(), (p0) e0Var.a());
     }
 }

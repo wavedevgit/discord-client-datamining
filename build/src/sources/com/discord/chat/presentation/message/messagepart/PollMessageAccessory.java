@@ -58,7 +58,7 @@ public final class PollMessageAccessory extends MessageAccessory implements IPol
             List<PollAnswer> answers = pollData.getAnswers();
             ArrayList arrayList = new ArrayList(CollectionsKt.w(answers, 10));
             for (PollAnswer pollAnswer : answers) {
-                String m237getId3Eiw7ao = message.m237getId3Eiw7ao();
+                String m239getId3Eiw7ao = message.m239getId3Eiw7ao();
                 PollResources resources = pollData.getResources();
                 boolean canTapAnswers = pollData.getCanTapAnswers();
                 boolean canSelectMultipleAnswers = pollData.getCanSelectMultipleAnswers();
@@ -87,9 +87,9 @@ public final class PollMessageAccessory extends MessageAccessory implements IPol
                 } else {
                     l10 = CollectionsKt.l();
                 }
-                arrayList.add(new PollAnswerAccessory(m237getId3Eiw7ao, resources, pollAnswer, l10, canTapAnswers, canSelectMultipleAnswers, canShowVoteCounts, hasVoted, isExpired, inflateUrl, answersInteraction, answerTapAccessibilityLabel, z11, shouldAnimateEmoji, shouldAutoPlayGifs, null, PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS, null));
+                arrayList.add(new PollAnswerAccessory(m239getId3Eiw7ao, resources, pollAnswer, l10, canTapAnswers, canSelectMultipleAnswers, canShowVoteCounts, hasVoted, isExpired, inflateUrl, answersInteraction, answerTapAccessibilityLabel, z11, shouldAnimateEmoji, shouldAutoPlayGifs, null, PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS, null));
             }
-            return new PollMessageAccessory(message.m234getChannelIdo4g7jtM(), message.m237getId3Eiw7ao(), inflateUrl, pollData, arrayList, null, 32, null);
+            return new PollMessageAccessory(message.m236getChannelIdo4g7jtM(), message.m239getId3Eiw7ao(), inflateUrl, pollData, arrayList, null, 32, null);
         }
 
         private Companion() {
@@ -101,7 +101,7 @@ public final class PollMessageAccessory extends MessageAccessory implements IPol
     }
 
     /* renamed from: copy-j8a4Y88$default  reason: not valid java name */
-    public static /* synthetic */ PollMessageAccessory m626copyj8a4Y88$default(PollMessageAccessory pollMessageAccessory, long j10, String str, String str2, PollData pollData, List list, IPollStyleSet iPollStyleSet, int i10, Object obj) {
+    public static /* synthetic */ PollMessageAccessory m628copyj8a4Y88$default(PollMessageAccessory pollMessageAccessory, long j10, String str, String str2, PollData pollData, List list, IPollStyleSet iPollStyleSet, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             j10 = pollMessageAccessory.channelId;
         }
@@ -126,17 +126,17 @@ public final class PollMessageAccessory extends MessageAccessory implements IPol
         if ((i10 & 32) != 0) {
             iPollStyleSet = pollMessageAccessory.containerStyleSet;
         }
-        return pollMessageAccessory.m629copyj8a4Y88(j11, str3, str4, pollData2, list3, iPollStyleSet);
+        return pollMessageAccessory.m631copyj8a4Y88(j11, str3, str4, pollData2, list3, iPollStyleSet);
     }
 
     /* renamed from: component1-o4g7jtM  reason: not valid java name */
-    public final long m627component1o4g7jtM() {
+    public final long m629component1o4g7jtM() {
         return this.channelId;
     }
 
     @NotNull
     /* renamed from: component2-3Eiw7ao  reason: not valid java name */
-    public final String m628component23Eiw7ao() {
+    public final String m630component23Eiw7ao() {
         return this.messageId;
     }
 
@@ -161,7 +161,7 @@ public final class PollMessageAccessory extends MessageAccessory implements IPol
 
     @NotNull
     /* renamed from: copy-j8a4Y88  reason: not valid java name */
-    public final PollMessageAccessory m629copyj8a4Y88(long j10, @NotNull String messageId, String str, @NotNull PollData data, @NotNull List<PollAnswerAccessory> answers, @NotNull IPollStyleSet containerStyleSet) {
+    public final PollMessageAccessory m631copyj8a4Y88(long j10, @NotNull String messageId, String str, @NotNull PollData data, @NotNull List<PollAnswerAccessory> answers, @NotNull IPollStyleSet containerStyleSet) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(answers, "answers");
@@ -175,7 +175,7 @@ public final class PollMessageAccessory extends MessageAccessory implements IPol
         }
         if (obj instanceof PollMessageAccessory) {
             PollMessageAccessory pollMessageAccessory = (PollMessageAccessory) obj;
-            return ChannelId.m1062equalsimpl0(this.channelId, pollMessageAccessory.channelId) && MessageId.m1088equalsimpl0(this.messageId, pollMessageAccessory.messageId) && Intrinsics.areEqual(this.myAvatarUrl, pollMessageAccessory.myAvatarUrl) && Intrinsics.areEqual(this.data, pollMessageAccessory.data) && Intrinsics.areEqual(this.answers, pollMessageAccessory.answers) && Intrinsics.areEqual(this.containerStyleSet, pollMessageAccessory.containerStyleSet);
+            return ChannelId.m1064equalsimpl0(this.channelId, pollMessageAccessory.channelId) && MessageId.m1090equalsimpl0(this.messageId, pollMessageAccessory.messageId) && Intrinsics.areEqual(this.myAvatarUrl, pollMessageAccessory.myAvatarUrl) && Intrinsics.areEqual(this.data, pollMessageAccessory.data) && Intrinsics.areEqual(this.answers, pollMessageAccessory.answers) && Intrinsics.areEqual(this.containerStyleSet, pollMessageAccessory.containerStyleSet);
         }
         return false;
     }
@@ -206,7 +206,7 @@ public final class PollMessageAccessory extends MessageAccessory implements IPol
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m630getChannelIdo4g7jtM() {
+    public final long m632getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -233,7 +233,7 @@ public final class PollMessageAccessory extends MessageAccessory implements IPol
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -252,20 +252,20 @@ public final class PollMessageAccessory extends MessageAccessory implements IPol
     }
 
     public int hashCode() {
-        int m1063hashCodeimpl = ((ChannelId.m1063hashCodeimpl(this.channelId) * 31) + MessageId.m1089hashCodeimpl(this.messageId)) * 31;
+        int m1065hashCodeimpl = ((ChannelId.m1065hashCodeimpl(this.channelId) * 31) + MessageId.m1091hashCodeimpl(this.messageId)) * 31;
         String str = this.myAvatarUrl;
-        return ((((((m1063hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31) + this.data.hashCode()) * 31) + this.answers.hashCode()) * 31) + this.containerStyleSet.hashCode();
+        return ((((((m1065hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31) + this.data.hashCode()) * 31) + this.answers.hashCode()) * 31) + this.containerStyleSet.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         String str = this.myAvatarUrl;
         PollData pollData = this.data;
         List<PollAnswerAccessory> list = this.answers;
         IPollStyleSet iPollStyleSet = this.containerStyleSet;
-        return "PollMessageAccessory(channelId=" + m1065toStringimpl + ", messageId=" + m1091toStringimpl + ", myAvatarUrl=" + str + ", data=" + pollData + ", answers=" + list + ", containerStyleSet=" + iPollStyleSet + ")";
+        return "PollMessageAccessory(channelId=" + m1067toStringimpl + ", messageId=" + m1093toStringimpl + ", myAvatarUrl=" + str + ", data=" + pollData + ", answers=" + list + ", containerStyleSet=" + iPollStyleSet + ")";
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

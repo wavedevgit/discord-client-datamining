@@ -3,7 +3,7 @@ package kk;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ik.c f33267a = new ik.c(ik.a.f28577m);
+    private final ik.c f33013a = new ik.c(ik.a.f28224m);
 
     private int a(byte[] bArr, int i10) {
         int length = bArr.length;
@@ -12,7 +12,7 @@ public final class d {
             iArr[i11] = bArr[i11] & 255;
         }
         try {
-            int a10 = this.f33267a.a(iArr, bArr.length - i10);
+            int a10 = this.f33013a.a(iArr, bArr.length - i10);
             for (int i12 = 0; i12 < i10; i12++) {
                 bArr[i12] = (byte) iArr[i12];
             }

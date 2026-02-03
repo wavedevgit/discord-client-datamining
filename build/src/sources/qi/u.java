@@ -11,17 +11,17 @@ import java.util.concurrent.Executor;
 class u implements yi.d, yi.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f47478a = new HashMap();
+    private final Map f47733a = new HashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private Queue f47479b = new ArrayDeque();
+    private Queue f47734b = new ArrayDeque();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Executor f47480c;
+    private final Executor f47735c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u(Executor executor) {
-        this.f47480c = executor;
+        this.f47735c = executor;
     }
 
     private synchronized Set d(yi.a aVar) {
@@ -30,7 +30,7 @@ class u implements yi.d, yi.c {
 
     @Override // yi.d
     public void a(Class cls, yi.b bVar) {
-        f(cls, this.f47480c, bVar);
+        f(cls, this.f47735c, bVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -38,9 +38,9 @@ class u implements yi.d, yi.c {
         Queue<Object> queue;
         synchronized (this) {
             try {
-                queue = this.f47479b;
+                queue = this.f47734b;
                 if (queue != null) {
-                    this.f47479b = null;
+                    this.f47734b = null;
                 } else {
                     queue = null;
                 }
@@ -60,7 +60,7 @@ class u implements yi.d, yi.c {
         c0.b(aVar);
         synchronized (this) {
             try {
-                Queue queue = this.f47479b;
+                Queue queue = this.f47734b;
                 if (queue != null) {
                     queue.add(aVar);
                     return;
@@ -69,11 +69,11 @@ class u implements yi.d, yi.c {
                     ((Executor) entry.getValue()).execute(new Runnable(entry, aVar) { // from class: qi.t
 
                         /* renamed from: d  reason: collision with root package name */
-                        public final /* synthetic */ Map.Entry f47477d;
+                        public final /* synthetic */ Map.Entry f47732d;
 
                         @Override // java.lang.Runnable
                         public final void run() {
-                            ((yi.b) this.f47477d.getKey()).a(null);
+                            ((yi.b) this.f47732d.getKey()).a(null);
                         }
                     });
                 }
@@ -88,10 +88,10 @@ class u implements yi.d, yi.c {
             c0.b(cls);
             c0.b(bVar);
             c0.b(executor);
-            if (!this.f47478a.containsKey(cls)) {
-                this.f47478a.put(cls, new ConcurrentHashMap());
+            if (!this.f47733a.containsKey(cls)) {
+                this.f47733a.put(cls, new ConcurrentHashMap());
             }
-            ((ConcurrentHashMap) this.f47478a.get(cls)).put(bVar, executor);
+            ((ConcurrentHashMap) this.f47733a.get(cls)).put(bVar, executor);
         } catch (Throwable th2) {
             throw th2;
         }

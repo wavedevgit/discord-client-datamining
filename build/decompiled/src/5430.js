@@ -1,74 +1,63 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0() {
-        _fun48224: for (var _fun48224_ip = 0;;) switch (_fun48224_ip) {
-            case 0:
-                var4 = arg0;
-                var1 = 'string';
-                var0 = typeof var4;
-                if (!(var1 === var0)) {
-                    _fun48224_ip = 42;
-                    continue _fun48224
-                }
-            case 14:
-                var0 = var4.trim;
-                var2 = var0.bind(var4)();
-                var1 = var2.endsWith;
-                var0 = '%';
-                var0 = var1.bind(var2)(var0);
-                if (var0) {
-                    _fun48224_ip = 47;
-                    continue _fun48224
-                }
-            case 42:
-                var0 = var4 - 0;
-                _fun48224_ip = 76;
-                continue _fun48224;
-            case 47:
-                var3 = var4.slice;
-                var2 = 0;
-                var1 = -1;
-                var1 = var3.bind(var4)(var2, var1);
-                var2 = var1 - 0;
-                var1 = 100;
-                var0 = var2 / var1;
-            case 76:
-                var1 = global;
-                var3 = var1.isNaN;
-                var2 = undefined;
-                var3 = var3.bind(var2)(var0);
-                var2 = 1;
-                var4 = var0;
-                var0 = var2;
-                if (var3) {
-                    _fun48224_ip = 129;
-                    continue _fun48224
-                }
-            case 103:
-                var0 = var2;
-                if (!(!(var4 > var0))) {
-                    _fun48224_ip = 129;
-                    continue _fun48224
-                }
-            case 110:
-                var3 = var1.Math;
-                var2 = var3.max;
-                var1 = 0;
-                var0 = var2.bind(var3)(var4, var1);
-            case 129:
-                return var0;
-        }
-    };
-    var1.default = var0;
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = 0;
+    var3 = var5[var0];
     var0 = undefined;
+    var6 = var4.bind(var0)(var3);
+    var3 = global;
+    var9 = var3.Object;
+    var8 = var9.defineProperty;
+    var7 = {};
+    var3 = true;
+    var7.value = var3;
+    var3 = '__esModule';
+    var3 = var8.bind(var9)(var2, var3, var7);
+    var2.StepNumber = var0;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var6.bind(var0)(var3);
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var1 = function arg0() {
+        var0 = arg0;
+        var7 = var0.i;
+        var8 = var0.style;
+        var5 = _closure1_slot3;
+        var3 = var5.jsx;
+        var4 = _closure1_slot2;
+        var2 = var4.View;
+        var1 = {};
+        var9 = _closure1_slot0;
+        var6 = _closure1_slot1;
+        var0 = 4;
+        var6 = var6[var0];
+        var0 = undefined;
+        var6 = var9.bind(var0)(var6);
+        var6 = var6.styles;
+        var6 = var6.stepNumber;
+        var1.style = var6;
+        var6 = var5.jsx;
+        var5 = var4.Text;
+        var4 = {};
+        var4.style = var8;
+        var4.children = var7;
+        var4 = var6.bind(var0)(var5, var4);
+        var1.children = var4;
+        var0 = var3.bind(var0)(var2, var1);
+        return var0;
+    };
+    var2.StepNumber = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5423, 31, 27, 33, 5427]);

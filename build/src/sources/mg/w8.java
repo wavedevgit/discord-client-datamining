@@ -5,16 +5,16 @@ import ui.c;
 final class w8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w8 f38762a = new w8();
+    static final w8 f38742a = new w8();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f38763b;
+    private static final ui.c f38743b;
 
     static {
         c.b a10 = ui.c.a("errorCode");
         l2 l2Var = new l2();
         l2Var.a(1);
-        f38763b = a10.b(l2Var.b()).a();
+        f38743b = a10.b(l2Var.b()).a();
     }
 
     private w8() {
@@ -22,6 +22,6 @@ final class w8 implements ui.d {
 
     @Override // ui.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        ((ui.e) obj2).b(f38763b, ((rf) obj).a());
+        ((ui.e) obj2).b(f38743b, ((rf) obj).a());
     }
 }

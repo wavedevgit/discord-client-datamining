@@ -14,44 +14,44 @@ import android.graphics.drawable.Drawable;
 class b extends Drawable {
 
     /* renamed from: a  reason: collision with root package name */
-    private float f2155a;
+    private float f2199a;
 
     /* renamed from: c  reason: collision with root package name */
-    private final RectF f2157c;
+    private final RectF f2201c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Rect f2158d;
+    private final Rect f2202d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f2159e;
+    private float f2203e;
 
     /* renamed from: h  reason: collision with root package name */
-    private ColorStateList f2162h;
+    private ColorStateList f2206h;
 
     /* renamed from: i  reason: collision with root package name */
-    private PorterDuffColorFilter f2163i;
+    private PorterDuffColorFilter f2207i;
 
     /* renamed from: j  reason: collision with root package name */
-    private ColorStateList f2164j;
+    private ColorStateList f2208j;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f2160f = false;
+    private boolean f2204f = false;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f2161g = true;
+    private boolean f2205g = true;
 
     /* renamed from: k  reason: collision with root package name */
-    private PorterDuff.Mode f2165k = PorterDuff.Mode.SRC_IN;
+    private PorterDuff.Mode f2209k = PorterDuff.Mode.SRC_IN;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Paint f2156b = new Paint(5);
+    private final Paint f2200b = new Paint(5);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(ColorStateList colorStateList, float f10) {
-        this.f2155a = f10;
+        this.f2199a = f10;
         e(colorStateList);
-        this.f2157c = new RectF();
-        this.f2158d = new Rect();
+        this.f2201c = new RectF();
+        this.f2202d = new Rect();
     }
 
     private PorterDuffColorFilter a(ColorStateList colorStateList, PorterDuff.Mode mode) {
@@ -65,48 +65,48 @@ class b extends Drawable {
         if (colorStateList == null) {
             colorStateList = ColorStateList.valueOf(0);
         }
-        this.f2162h = colorStateList;
-        this.f2156b.setColor(colorStateList.getColorForState(getState(), this.f2162h.getDefaultColor()));
+        this.f2206h = colorStateList;
+        this.f2200b.setColor(colorStateList.getColorForState(getState(), this.f2206h.getDefaultColor()));
     }
 
     private void i(Rect rect) {
         if (rect == null) {
             rect = getBounds();
         }
-        this.f2157c.set(rect.left, rect.top, rect.right, rect.bottom);
-        this.f2158d.set(rect);
-        if (this.f2160f) {
-            float b10 = c.b(this.f2159e, this.f2155a, this.f2161g);
-            this.f2158d.inset((int) Math.ceil(c.a(this.f2159e, this.f2155a, this.f2161g)), (int) Math.ceil(b10));
-            this.f2157c.set(this.f2158d);
+        this.f2201c.set(rect.left, rect.top, rect.right, rect.bottom);
+        this.f2202d.set(rect);
+        if (this.f2204f) {
+            float b10 = c.b(this.f2203e, this.f2199a, this.f2205g);
+            this.f2202d.inset((int) Math.ceil(c.a(this.f2203e, this.f2199a, this.f2205g)), (int) Math.ceil(b10));
+            this.f2201c.set(this.f2202d);
         }
     }
 
     public ColorStateList b() {
-        return this.f2162h;
+        return this.f2206h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float c() {
-        return this.f2159e;
+        return this.f2203e;
     }
 
     public float d() {
-        return this.f2155a;
+        return this.f2199a;
     }
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
         boolean z10;
-        Paint paint = this.f2156b;
-        if (this.f2163i != null && paint.getColorFilter() == null) {
-            paint.setColorFilter(this.f2163i);
+        Paint paint = this.f2200b;
+        if (this.f2207i != null && paint.getColorFilter() == null) {
+            paint.setColorFilter(this.f2207i);
             z10 = true;
         } else {
             z10 = false;
         }
-        RectF rectF = this.f2157c;
-        float f10 = this.f2155a;
+        RectF rectF = this.f2201c;
+        float f10 = this.f2199a;
         canvas.drawRoundRect(rectF, f10, f10, paint);
         if (z10) {
             paint.setColorFilter(null);
@@ -120,12 +120,12 @@ class b extends Drawable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(float f10, boolean z10, boolean z11) {
-        if (f10 == this.f2159e && this.f2160f == z10 && this.f2161g == z11) {
+        if (f10 == this.f2203e && this.f2204f == z10 && this.f2205g == z11) {
             return;
         }
-        this.f2159e = f10;
-        this.f2160f = z10;
-        this.f2161g = z11;
+        this.f2203e = f10;
+        this.f2204f = z10;
+        this.f2205g = z11;
         i(null);
         invalidateSelf();
     }
@@ -137,24 +137,24 @@ class b extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public void getOutline(Outline outline) {
-        outline.setRoundRect(this.f2158d, this.f2155a);
+        outline.setRoundRect(this.f2202d, this.f2199a);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void h(float f10) {
-        if (f10 == this.f2155a) {
+        if (f10 == this.f2199a) {
             return;
         }
-        this.f2155a = f10;
+        this.f2199a = f10;
         i(null);
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Drawable
     public boolean isStateful() {
-        ColorStateList colorStateList = this.f2164j;
+        ColorStateList colorStateList = this.f2208j;
         if (colorStateList == null || !colorStateList.isStateful()) {
-            ColorStateList colorStateList2 = this.f2162h;
+            ColorStateList colorStateList2 = this.f2206h;
             if ((colorStateList2 != null && colorStateList2.isStateful()) || super.isStateful()) {
                 return true;
             }
@@ -173,19 +173,19 @@ class b extends Drawable {
     protected boolean onStateChange(int[] iArr) {
         boolean z10;
         PorterDuff.Mode mode;
-        ColorStateList colorStateList = this.f2162h;
+        ColorStateList colorStateList = this.f2206h;
         int colorForState = colorStateList.getColorForState(iArr, colorStateList.getDefaultColor());
-        if (colorForState != this.f2156b.getColor()) {
+        if (colorForState != this.f2200b.getColor()) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (z10) {
-            this.f2156b.setColor(colorForState);
+            this.f2200b.setColor(colorForState);
         }
-        ColorStateList colorStateList2 = this.f2164j;
-        if (colorStateList2 != null && (mode = this.f2165k) != null) {
-            this.f2163i = a(colorStateList2, mode);
+        ColorStateList colorStateList2 = this.f2208j;
+        if (colorStateList2 != null && (mode = this.f2209k) != null) {
+            this.f2207i = a(colorStateList2, mode);
             return true;
         }
         return z10;
@@ -193,25 +193,25 @@ class b extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        this.f2156b.setAlpha(i10);
+        this.f2200b.setAlpha(i10);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f2156b.setColorFilter(colorFilter);
+        this.f2200b.setColorFilter(colorFilter);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setTintList(ColorStateList colorStateList) {
-        this.f2164j = colorStateList;
-        this.f2163i = a(colorStateList, this.f2165k);
+        this.f2208j = colorStateList;
+        this.f2207i = a(colorStateList, this.f2209k);
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setTintMode(PorterDuff.Mode mode) {
-        this.f2165k = mode;
-        this.f2163i = a(this.f2164j, mode);
+        this.f2209k = mode;
+        this.f2207i = a(this.f2208j, mode);
         invalidateSelf();
     }
 }

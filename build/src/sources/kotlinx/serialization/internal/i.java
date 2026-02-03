@@ -1,9 +1,9 @@
 package kotlinx.serialization.internal;
 
-import at.f2;
-import at.v2;
-import ir.x;
-import ir.y;
+import bt.f2;
+import bt.v2;
+import jr.x;
+import jr.y;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.encoding.CompositeEncoder;
@@ -11,28 +11,28 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 public final class i extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final i f36406c = new i();
+    public static final i f36182c = new i();
 
     private i() {
-        super(ys.a.w(x.f31134e));
+        super(zs.a.w(x.f32197e));
     }
 
-    @Override // at.a
+    @Override // bt.a
     public /* bridge */ /* synthetic */ int e(Object obj) {
         return v(((y) obj).r());
     }
 
-    @Override // at.a
+    @Override // bt.a
     public /* bridge */ /* synthetic */ Object k(Object obj) {
         return y(((y) obj).r());
     }
 
-    @Override // at.f2
+    @Override // bt.f2
     public /* bridge */ /* synthetic */ Object r() {
         return y.b(w());
     }
 
-    @Override // at.f2
+    @Override // bt.f2
     public /* bridge */ /* synthetic */ void u(CompositeEncoder compositeEncoder, Object obj, int i10) {
         z(compositeEncoder, ((y) obj).r(), i10);
     }
@@ -47,7 +47,7 @@ public final class i extends f2 implements KSerializer {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // at.s, at.a
+    @Override // bt.s, bt.a
     /* renamed from: x */
     public void h(kotlinx.serialization.encoding.c decoder, int i10, v2 builder, boolean z10) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");

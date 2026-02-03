@@ -8,46 +8,46 @@ import android.graphics.RectF;
 public class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m[] f43904a = new m[4];
+    private final m[] f44032a = new m[4];
 
     /* renamed from: b  reason: collision with root package name */
-    private final Matrix[] f43905b = new Matrix[4];
+    private final Matrix[] f44033b = new Matrix[4];
 
     /* renamed from: c  reason: collision with root package name */
-    private final Matrix[] f43906c = new Matrix[4];
+    private final Matrix[] f44034c = new Matrix[4];
 
     /* renamed from: d  reason: collision with root package name */
-    private final PointF f43907d = new PointF();
+    private final PointF f44035d = new PointF();
 
     /* renamed from: e  reason: collision with root package name */
-    private final Path f43908e = new Path();
+    private final Path f44036e = new Path();
 
     /* renamed from: f  reason: collision with root package name */
-    private final Path f43909f = new Path();
+    private final Path f44037f = new Path();
 
     /* renamed from: g  reason: collision with root package name */
-    private final m f43910g = new m();
+    private final m f44038g = new m();
 
     /* renamed from: h  reason: collision with root package name */
-    private final float[] f43911h = new float[2];
+    private final float[] f44039h = new float[2];
 
     /* renamed from: i  reason: collision with root package name */
-    private final float[] f43912i = new float[2];
+    private final float[] f44040i = new float[2];
 
     /* renamed from: j  reason: collision with root package name */
-    private final Path f43913j = new Path();
+    private final Path f44041j = new Path();
 
     /* renamed from: k  reason: collision with root package name */
-    private final Path f43914k = new Path();
+    private final Path f44042k = new Path();
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f43915l = true;
+    private boolean f44043l = true;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final l f43916a = new l();
+        static final l f44044a = new l();
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -62,34 +62,34 @@ public class l {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final k f43917a;
+        public final k f44045a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Path f43918b;
+        public final Path f44046b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final RectF f43919c;
+        public final RectF f44047c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final b f43920d;
+        public final b f44048d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final float f43921e;
+        public final float f44049e;
 
         c(k kVar, float f10, RectF rectF, b bVar, Path path) {
-            this.f43920d = bVar;
-            this.f43917a = kVar;
-            this.f43921e = f10;
-            this.f43919c = rectF;
-            this.f43918b = path;
+            this.f44048d = bVar;
+            this.f44045a = kVar;
+            this.f44049e = f10;
+            this.f44047c = rectF;
+            this.f44046b = path;
         }
     }
 
     public l() {
         for (int i10 = 0; i10 < 4; i10++) {
-            this.f43904a[i10] = new m();
-            this.f43905b[i10] = new Matrix();
-            this.f43906c[i10] = new Matrix();
+            this.f44032a[i10] = new m();
+            this.f44033b[i10] = new Matrix();
+            this.f44034c[i10] = new Matrix();
         }
     }
 
@@ -98,59 +98,59 @@ public class l {
     }
 
     private void b(c cVar, int i10) {
-        this.f43911h[0] = this.f43904a[i10].k();
-        this.f43911h[1] = this.f43904a[i10].l();
-        this.f43905b[i10].mapPoints(this.f43911h);
+        this.f44039h[0] = this.f44032a[i10].k();
+        this.f44039h[1] = this.f44032a[i10].l();
+        this.f44033b[i10].mapPoints(this.f44039h);
         if (i10 == 0) {
-            Path path = cVar.f43918b;
-            float[] fArr = this.f43911h;
+            Path path = cVar.f44046b;
+            float[] fArr = this.f44039h;
             path.moveTo(fArr[0], fArr[1]);
         } else {
-            Path path2 = cVar.f43918b;
-            float[] fArr2 = this.f43911h;
+            Path path2 = cVar.f44046b;
+            float[] fArr2 = this.f44039h;
             path2.lineTo(fArr2[0], fArr2[1]);
         }
-        this.f43904a[i10].d(this.f43905b[i10], cVar.f43918b);
-        b bVar = cVar.f43920d;
+        this.f44032a[i10].d(this.f44033b[i10], cVar.f44046b);
+        b bVar = cVar.f44048d;
         if (bVar != null) {
-            bVar.a(this.f43904a[i10], this.f43905b[i10], i10);
+            bVar.a(this.f44032a[i10], this.f44033b[i10], i10);
         }
     }
 
     private void c(c cVar, int i10) {
         int i11 = (i10 + 1) % 4;
-        this.f43911h[0] = this.f43904a[i10].i();
-        this.f43911h[1] = this.f43904a[i10].j();
-        this.f43905b[i10].mapPoints(this.f43911h);
-        this.f43912i[0] = this.f43904a[i11].k();
-        this.f43912i[1] = this.f43904a[i11].l();
-        this.f43905b[i11].mapPoints(this.f43912i);
-        float[] fArr = this.f43911h;
+        this.f44039h[0] = this.f44032a[i10].i();
+        this.f44039h[1] = this.f44032a[i10].j();
+        this.f44033b[i10].mapPoints(this.f44039h);
+        this.f44040i[0] = this.f44032a[i11].k();
+        this.f44040i[1] = this.f44032a[i11].l();
+        this.f44033b[i11].mapPoints(this.f44040i);
+        float[] fArr = this.f44039h;
         float f10 = fArr[0];
-        float[] fArr2 = this.f43912i;
+        float[] fArr2 = this.f44040i;
         float max = Math.max(((float) Math.hypot(f10 - fArr2[0], fArr[1] - fArr2[1])) - 0.001f, 0.0f);
-        float i12 = i(cVar.f43919c, i10);
-        this.f43910g.n(0.0f, 0.0f);
-        f j10 = j(i10, cVar.f43917a);
-        j10.b(max, i12, cVar.f43921e, this.f43910g);
-        this.f43913j.reset();
-        this.f43910g.d(this.f43906c[i10], this.f43913j);
-        if (this.f43915l && (j10.a() || l(this.f43913j, i10) || l(this.f43913j, i11))) {
-            Path path = this.f43913j;
-            path.op(path, this.f43909f, Path.Op.DIFFERENCE);
-            this.f43911h[0] = this.f43910g.k();
-            this.f43911h[1] = this.f43910g.l();
-            this.f43906c[i10].mapPoints(this.f43911h);
-            Path path2 = this.f43908e;
-            float[] fArr3 = this.f43911h;
+        float i12 = i(cVar.f44047c, i10);
+        this.f44038g.n(0.0f, 0.0f);
+        f j10 = j(i10, cVar.f44045a);
+        j10.b(max, i12, cVar.f44049e, this.f44038g);
+        this.f44041j.reset();
+        this.f44038g.d(this.f44034c[i10], this.f44041j);
+        if (this.f44043l && (j10.a() || l(this.f44041j, i10) || l(this.f44041j, i11))) {
+            Path path = this.f44041j;
+            path.op(path, this.f44037f, Path.Op.DIFFERENCE);
+            this.f44039h[0] = this.f44038g.k();
+            this.f44039h[1] = this.f44038g.l();
+            this.f44034c[i10].mapPoints(this.f44039h);
+            Path path2 = this.f44036e;
+            float[] fArr3 = this.f44039h;
             path2.moveTo(fArr3[0], fArr3[1]);
-            this.f43910g.d(this.f43906c[i10], this.f43908e);
+            this.f44038g.d(this.f44034c[i10], this.f44036e);
         } else {
-            this.f43910g.d(this.f43906c[i10], cVar.f43918b);
+            this.f44038g.d(this.f44034c[i10], cVar.f44046b);
         }
-        b bVar = cVar.f43920d;
+        b bVar = cVar.f44048d;
         if (bVar != null) {
-            bVar.b(this.f43910g, this.f43906c[i10], i10);
+            bVar.b(this.f44038g, this.f44034c[i10], i10);
         }
     }
 
@@ -198,15 +198,15 @@ public class l {
     }
 
     private float i(RectF rectF, int i10) {
-        float[] fArr = this.f43911h;
-        m mVar = this.f43904a[i10];
-        fArr[0] = mVar.f43924c;
-        fArr[1] = mVar.f43925d;
-        this.f43905b[i10].mapPoints(fArr);
+        float[] fArr = this.f44039h;
+        m mVar = this.f44032a[i10];
+        fArr[0] = mVar.f44052c;
+        fArr[1] = mVar.f44053d;
+        this.f44033b[i10].mapPoints(fArr);
         if (i10 != 1 && i10 != 3) {
-            return Math.abs(rectF.centerY() - this.f43911h[1]);
+            return Math.abs(rectF.centerY() - this.f44039h[1]);
         }
-        return Math.abs(rectF.centerX() - this.f43911h[0]);
+        return Math.abs(rectF.centerX() - this.f44039h[0]);
     }
 
     private f j(int i10, k kVar) {
@@ -223,16 +223,16 @@ public class l {
     }
 
     public static l k() {
-        return a.f43916a;
+        return a.f44044a;
     }
 
     private boolean l(Path path, int i10) {
-        this.f43914k.reset();
-        this.f43904a[i10].d(this.f43905b[i10], this.f43914k);
+        this.f44042k.reset();
+        this.f44032a[i10].d(this.f44033b[i10], this.f44042k);
         RectF rectF = new RectF();
         path.computeBounds(rectF, true);
-        this.f43914k.computeBounds(rectF, true);
-        path.op(this.f43914k, Path.Op.INTERSECT);
+        this.f44042k.computeBounds(rectF, true);
+        path.op(this.f44042k, Path.Op.INTERSECT);
         path.computeBounds(rectF, true);
         if (!rectF.isEmpty() || (rectF.width() > 1.0f && rectF.height() > 1.0f)) {
             return true;
@@ -241,26 +241,26 @@ public class l {
     }
 
     private void m(c cVar, int i10) {
-        h(i10, cVar.f43917a).b(this.f43904a[i10], 90.0f, cVar.f43921e, cVar.f43919c, g(i10, cVar.f43917a));
+        h(i10, cVar.f44045a).b(this.f44032a[i10], 90.0f, cVar.f44049e, cVar.f44047c, g(i10, cVar.f44045a));
         float a10 = a(i10);
-        this.f43905b[i10].reset();
-        f(i10, cVar.f43919c, this.f43907d);
-        Matrix matrix = this.f43905b[i10];
-        PointF pointF = this.f43907d;
+        this.f44033b[i10].reset();
+        f(i10, cVar.f44047c, this.f44035d);
+        Matrix matrix = this.f44033b[i10];
+        PointF pointF = this.f44035d;
         matrix.setTranslate(pointF.x, pointF.y);
-        this.f43905b[i10].preRotate(a10);
+        this.f44033b[i10].preRotate(a10);
     }
 
     private void n(int i10) {
-        this.f43911h[0] = this.f43904a[i10].i();
-        this.f43911h[1] = this.f43904a[i10].j();
-        this.f43905b[i10].mapPoints(this.f43911h);
+        this.f44039h[0] = this.f44032a[i10].i();
+        this.f44039h[1] = this.f44032a[i10].j();
+        this.f44033b[i10].mapPoints(this.f44039h);
         float a10 = a(i10);
-        this.f43906c[i10].reset();
-        Matrix matrix = this.f43906c[i10];
-        float[] fArr = this.f43911h;
+        this.f44034c[i10].reset();
+        Matrix matrix = this.f44034c[i10];
+        float[] fArr = this.f44039h;
         matrix.setTranslate(fArr[0], fArr[1]);
-        this.f43906c[i10].preRotate(a10);
+        this.f44034c[i10].preRotate(a10);
     }
 
     public void d(k kVar, float f10, RectF rectF, Path path) {
@@ -269,9 +269,9 @@ public class l {
 
     public void e(k kVar, float f10, RectF rectF, b bVar, Path path) {
         path.rewind();
-        this.f43908e.rewind();
-        this.f43909f.rewind();
-        this.f43909f.addRect(rectF, Path.Direction.CW);
+        this.f44036e.rewind();
+        this.f44037f.rewind();
+        this.f44037f.addRect(rectF, Path.Direction.CW);
         c cVar = new c(kVar, f10, rectF, bVar, path);
         for (int i10 = 0; i10 < 4; i10++) {
             m(cVar, i10);
@@ -282,9 +282,9 @@ public class l {
             c(cVar, i11);
         }
         path.close();
-        this.f43908e.close();
-        if (!this.f43908e.isEmpty()) {
-            path.op(this.f43908e, Path.Op.UNION);
+        this.f44036e.close();
+        if (!this.f44036e.isEmpty()) {
+            path.op(this.f44036e, Path.Op.UNION);
         }
     }
 }

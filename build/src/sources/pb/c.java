@@ -11,10 +11,10 @@ import java.util.ArrayList;
 public class c implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f45025a;
+    private final Context f45099a;
 
     public c(Context context) {
-        this.f45025a = context;
+        this.f45099a = context;
     }
 
     @Override // pb.h
@@ -24,7 +24,7 @@ public class c implements h {
             return false;
         }
         p.b("SoLoader", "Checking /data/app missing libraries.");
-        File file = new File(this.f45025a.getApplicationInfo().nativeLibraryDir);
+        File file = new File(this.f45099a.getApplicationInfo().nativeLibraryDir);
         if (!file.exists()) {
             p.b("SoLoader", "Native library directory " + file + " does not exist, exiting /data/app recovery.");
             return false;
@@ -43,8 +43,8 @@ public class c implements h {
                 com.facebook.soloader.c cVar = (com.facebook.soloader.c) e0Var;
                 try {
                     for (g0.c cVar2 : cVar.o()) {
-                        if (!new File(file, cVar2.f12454d).exists()) {
-                            arrayList.add(cVar2.f12454d);
+                        if (!new File(file, cVar2.f12083d).exists()) {
+                            arrayList.add(cVar2.f12083d);
                         }
                     }
                     if (arrayList.isEmpty()) {

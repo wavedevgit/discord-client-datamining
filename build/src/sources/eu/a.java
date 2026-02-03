@@ -1,27 +1,38 @@
 package eu;
 
-import android.net.ssl.SSLSockets;
 import android.os.Build;
-import java.io.IOException;
+import android.security.NetworkSecurityPolicy;
+import fu.i;
+import fu.j;
+import fu.k;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-import javax.net.ssl.SSLParameters;
 import javax.net.ssl.SSLSocket;
+import javax.net.ssl.X509TrustManager;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements k {
+public final class a extends h {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final C0317a f24029a = new C0317a(null);
+    /* renamed from: e  reason: collision with root package name */
+    public static final C0310a f23217e = new C0310a(null);
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final boolean f23218f;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final List f23219d;
 
     /* renamed from: eu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0317a {
-        public /* synthetic */ C0317a(DefaultConstructorMarker defaultConstructorMarker) {
+    public static final class C0310a {
+        public /* synthetic */ C0310a(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        public final k a() {
+        public final h a() {
             if (b()) {
                 return new a();
             }
@@ -29,54 +40,93 @@ public final class a implements k {
         }
 
         public final boolean b() {
-            if (du.h.f22444a.h() && Build.VERSION.SDK_INT >= 29) {
-                return true;
-            }
-            return false;
+            return a.f23218f;
         }
 
-        private C0317a() {
+        private C0310a() {
         }
     }
 
-    @Override // eu.k
-    public boolean a() {
-        return f24029a.b();
-    }
-
-    @Override // eu.k
-    public boolean b(SSLSocket sslSocket) {
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        return SSLSockets.isSupportedSocket(sslSocket);
-    }
-
-    @Override // eu.k
-    public String c(SSLSocket sslSocket) {
-        boolean areEqual;
-        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        String applicationProtocol = sslSocket.getApplicationProtocol();
-        if (applicationProtocol == null) {
-            areEqual = true;
+    static {
+        boolean z10;
+        if (h.f23247a.h() && Build.VERSION.SDK_INT >= 29) {
+            z10 = true;
         } else {
-            areEqual = Intrinsics.areEqual(applicationProtocol, "");
+            z10 = false;
         }
-        if (areEqual) {
-            return null;
-        }
-        return applicationProtocol;
+        f23218f = z10;
     }
 
-    @Override // eu.k
-    public void d(SSLSocket sslSocket, String str, List protocols) {
+    public a() {
+        k[] kVarArr = {fu.a.f25590a.a(), new j(fu.f.f25598f.d()), new j(i.f25612a.a()), new j(fu.g.f25606a.a())};
+        ArrayList arrayList = new ArrayList();
+        for (Object obj : CollectionsKt.q(kVarArr)) {
+            if (((k) obj).a()) {
+                arrayList.add(obj);
+            }
+        }
+        this.f23219d = arrayList;
+    }
+
+    @Override // eu.h
+    public hu.c c(X509TrustManager trustManager) {
+        Intrinsics.checkNotNullParameter(trustManager, "trustManager");
+        fu.b a10 = fu.b.f25591d.a(trustManager);
+        if (a10 != null) {
+            return a10;
+        }
+        return super.c(trustManager);
+    }
+
+    @Override // eu.h
+    public void e(SSLSocket sslSocket, String str, List protocols) {
+        Object obj;
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
         Intrinsics.checkNotNullParameter(protocols, "protocols");
-        try {
-            SSLSockets.setUseSessionTickets(sslSocket, true);
-            SSLParameters sSLParameters = sslSocket.getSSLParameters();
-            sSLParameters.setApplicationProtocols((String[]) du.h.f22444a.b(protocols).toArray(new String[0]));
-            sslSocket.setSSLParameters(sSLParameters);
-        } catch (IllegalArgumentException e10) {
-            throw new IOException("Android internal error", e10);
+        Iterator it = this.f23219d.iterator();
+        while (true) {
+            if (it.hasNext()) {
+                obj = it.next();
+                if (((k) obj).b(sslSocket)) {
+                    break;
+                }
+            } else {
+                obj = null;
+                break;
+            }
         }
+        k kVar = (k) obj;
+        if (kVar != null) {
+            kVar.d(sslSocket, str, protocols);
+        }
+    }
+
+    @Override // eu.h
+    public String h(SSLSocket sslSocket) {
+        Object obj;
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Iterator it = this.f23219d.iterator();
+        while (true) {
+            if (it.hasNext()) {
+                obj = it.next();
+                if (((k) obj).b(sslSocket)) {
+                    break;
+                }
+            } else {
+                obj = null;
+                break;
+            }
+        }
+        k kVar = (k) obj;
+        if (kVar == null) {
+            return null;
+        }
+        return kVar.c(sslSocket);
+    }
+
+    @Override // eu.h
+    public boolean j(String hostname) {
+        Intrinsics.checkNotNullParameter(hostname, "hostname");
+        return NetworkSecurityPolicy.getInstance().isCleartextTrafficPermitted(hostname);
     }
 }

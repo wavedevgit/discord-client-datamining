@@ -10,55 +10,55 @@ public interface b {
     public static final class a {
 
         /* renamed from: n  reason: collision with root package name */
-        public static final C0775a f55328n = new C0775a(null);
+        public static final C0786a f55460n = new C0786a(null);
 
         /* renamed from: a  reason: collision with root package name */
-        public Map f55329a;
+        public Map f55461a;
 
         /* renamed from: b  reason: collision with root package name */
-        public Map f55330b;
+        public Map f55462b;
 
         /* renamed from: c  reason: collision with root package name */
-        public Map f55331c;
+        public Map f55463c;
 
         /* renamed from: d  reason: collision with root package name */
-        public Map f55332d;
+        public Map f55464d;
 
         /* renamed from: e  reason: collision with root package name */
-        public Map f55333e;
+        public Map f55465e;
 
         /* renamed from: f  reason: collision with root package name */
-        public Object f55334f;
+        public Object f55466f;
 
         /* renamed from: g  reason: collision with root package name */
-        public Uri f55335g;
+        public Uri f55467g;
 
         /* renamed from: h  reason: collision with root package name */
-        public int f55336h = -1;
+        public int f55468h = -1;
 
         /* renamed from: i  reason: collision with root package name */
-        public int f55337i = -1;
+        public int f55469i = -1;
 
         /* renamed from: j  reason: collision with root package name */
-        public Object f55338j;
+        public Object f55470j;
 
         /* renamed from: k  reason: collision with root package name */
-        public Float f55339k;
+        public Float f55471k;
 
         /* renamed from: l  reason: collision with root package name */
-        public Float f55340l;
+        public Float f55472l;
 
         /* renamed from: m  reason: collision with root package name */
-        public boolean f55341m;
+        public boolean f55473m;
 
         /* renamed from: z9.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public static final class C0775a {
-            public /* synthetic */ C0775a(DefaultConstructorMarker defaultConstructorMarker) {
+        public static final class C0786a {
+            public /* synthetic */ C0786a(DefaultConstructorMarker defaultConstructorMarker) {
                 this();
             }
 
-            private C0775a() {
+            private C0786a() {
             }
         }
     }

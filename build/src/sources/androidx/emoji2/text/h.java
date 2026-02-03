@@ -18,19 +18,19 @@ import java.util.Set;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e.j f3971a;
+    private final e.j f4015a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final m f3972b;
+    private final m f4016b;
 
     /* renamed from: c  reason: collision with root package name */
-    private e.InterfaceC0049e f3973c;
+    private e.InterfaceC0053e f4017c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f3974d;
+    private final boolean f4018d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int[] f3975e;
+    private final int[] f4019e;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -109,14 +109,14 @@ public final class h {
     public static class b implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        public q f3976a;
+        public q f4020a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final e.j f3977b;
+        private final e.j f4021b;
 
         b(q qVar, e.j jVar) {
-            this.f3976a = qVar;
-            this.f3977b = jVar;
+            this.f4020a = qVar;
+            this.f4021b = jVar;
         }
 
         @Override // androidx.emoji2.text.h.c
@@ -125,22 +125,22 @@ public final class h {
             if (oVar.k()) {
                 return true;
             }
-            if (this.f3976a == null) {
+            if (this.f4020a == null) {
                 if (charSequence instanceof Spannable) {
                     spannableString = (Spannable) charSequence;
                 } else {
                     spannableString = new SpannableString(charSequence);
                 }
-                this.f3976a = new q(spannableString);
+                this.f4020a = new q(spannableString);
             }
-            this.f3976a.setSpan(this.f3977b.a(oVar), i10, i11, 33);
+            this.f4020a.setSpan(this.f4021b.a(oVar), i10, i11, 33);
             return true;
         }
 
         @Override // androidx.emoji2.text.h.c
         /* renamed from: b */
         public q getResult() {
-            return this.f3976a;
+            return this.f4020a;
         }
     }
 
@@ -157,15 +157,15 @@ public final class h {
     public static class d implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f3978a;
+        private final String f4022a;
 
         d(String str) {
-            this.f3978a = str;
+            this.f4022a = str;
         }
 
         @Override // androidx.emoji2.text.h.c
         public boolean a(CharSequence charSequence, int i10, int i11, o oVar) {
-            if (!TextUtils.equals(charSequence.subSequence(i10, i11), this.f3978a)) {
+            if (!TextUtils.equals(charSequence.subSequence(i10, i11), this.f4022a)) {
                 return true;
             }
             oVar.l(true);
@@ -184,34 +184,34 @@ public final class h {
     public static final class e {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f3979a = 1;
+        private int f4023a = 1;
 
         /* renamed from: b  reason: collision with root package name */
-        private final m.a f3980b;
+        private final m.a f4024b;
 
         /* renamed from: c  reason: collision with root package name */
-        private m.a f3981c;
+        private m.a f4025c;
 
         /* renamed from: d  reason: collision with root package name */
-        private m.a f3982d;
+        private m.a f4026d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f3983e;
+        private int f4027e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f3984f;
+        private int f4028f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final boolean f3985g;
+        private final boolean f4029g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final int[] f3986h;
+        private final int[] f4030h;
 
         e(m.a aVar, boolean z10, int[] iArr) {
-            this.f3980b = aVar;
-            this.f3981c = aVar;
-            this.f3985g = z10;
-            this.f3986h = iArr;
+            this.f4024b = aVar;
+            this.f4025c = aVar;
+            this.f4029g = z10;
+            this.f4030h = iArr;
         }
 
         private static boolean d(int i10) {
@@ -223,21 +223,21 @@ public final class h {
         }
 
         private int g() {
-            this.f3979a = 1;
-            this.f3981c = this.f3980b;
-            this.f3984f = 0;
+            this.f4023a = 1;
+            this.f4025c = this.f4024b;
+            this.f4028f = 0;
             return 1;
         }
 
         private boolean h() {
-            if (this.f3981c.b().j() || d(this.f3983e)) {
+            if (this.f4025c.b().j() || d(this.f4027e)) {
                 return true;
             }
-            if (this.f3985g) {
-                if (this.f3986h == null) {
+            if (this.f4029g) {
+                if (this.f4030h == null) {
                     return true;
                 }
-                if (Arrays.binarySearch(this.f3986h, this.f3981c.b().b(0)) < 0) {
+                if (Arrays.binarySearch(this.f4030h, this.f4025c.b().b(0)) < 0) {
                     return true;
                 }
             }
@@ -245,54 +245,54 @@ public final class h {
         }
 
         int a(int i10) {
-            m.a a10 = this.f3981c.a(i10);
+            m.a a10 = this.f4025c.a(i10);
             int i11 = 2;
-            if (this.f3979a != 2) {
+            if (this.f4023a != 2) {
                 if (a10 == null) {
                     i11 = g();
                 } else {
-                    this.f3979a = 2;
-                    this.f3981c = a10;
-                    this.f3984f = 1;
+                    this.f4023a = 2;
+                    this.f4025c = a10;
+                    this.f4028f = 1;
                 }
             } else if (a10 != null) {
-                this.f3981c = a10;
-                this.f3984f++;
+                this.f4025c = a10;
+                this.f4028f++;
             } else if (f(i10)) {
                 i11 = g();
             } else if (!d(i10)) {
-                if (this.f3981c.b() != null) {
+                if (this.f4025c.b() != null) {
                     i11 = 3;
-                    if (this.f3984f == 1) {
+                    if (this.f4028f == 1) {
                         if (h()) {
-                            this.f3982d = this.f3981c;
+                            this.f4026d = this.f4025c;
                             g();
                         } else {
                             i11 = g();
                         }
                     } else {
-                        this.f3982d = this.f3981c;
+                        this.f4026d = this.f4025c;
                         g();
                     }
                 } else {
                     i11 = g();
                 }
             }
-            this.f3983e = i10;
+            this.f4027e = i10;
             return i11;
         }
 
         o b() {
-            return this.f3981c.b();
+            return this.f4025c.b();
         }
 
         o c() {
-            return this.f3982d.b();
+            return this.f4026d.b();
         }
 
         boolean e() {
-            if (this.f3979a == 2 && this.f3981c.b() != null) {
-                if (this.f3984f > 1 || h()) {
+            if (this.f4023a == 2 && this.f4025c.b() != null) {
+                if (this.f4028f > 1 || h()) {
                     return true;
                 }
                 return false;
@@ -302,12 +302,12 @@ public final class h {
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public h(m mVar, e.j jVar, e.InterfaceC0049e interfaceC0049e, boolean z10, int[] iArr, Set set) {
-        this.f3971a = jVar;
-        this.f3972b = mVar;
-        this.f3973c = interfaceC0049e;
-        this.f3974d = z10;
-        this.f3975e = iArr;
+    public h(m mVar, e.j jVar, e.InterfaceC0053e interfaceC0053e, boolean z10, int[] iArr, Set set) {
+        this.f4015a = jVar;
+        this.f4016b = mVar;
+        this.f4017c = interfaceC0053e;
+        this.f4018d = z10;
+        this.f4019e = iArr;
         g(set);
     }
 
@@ -391,7 +391,7 @@ public final class h {
 
     private boolean d(CharSequence charSequence, int i10, int i11, o oVar) {
         if (oVar.d() == 0) {
-            oVar.m(this.f3973c.a(charSequence, i10, i11, oVar.h()));
+            oVar.m(this.f4017c.a(charSequence, i10, i11, oVar.h()));
         }
         if (oVar.d() == 2) {
             return true;
@@ -420,7 +420,7 @@ public final class h {
 
     private Object i(CharSequence charSequence, int i10, int i11, int i12, boolean z10, c cVar) {
         int i13;
-        e eVar = new e(this.f3972b.f(), this.f3974d, this.f3975e);
+        e eVar = new e(this.f4016b.f(), this.f4018d, this.f4019e);
         int i14 = 0;
         boolean z11 = true;
         int codePointAt = Character.codePointAt(charSequence, i10);

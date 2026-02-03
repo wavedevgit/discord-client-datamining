@@ -10,32 +10,32 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.reflect.KClass;
-import mo.g2;
-import vm.c0;
-import vm.k;
+import no.g2;
+import wm.c0;
+import wm.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class i implements vm.k {
+public final class i implements wm.k {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f19899c = new a(null);
+    public static final a f19532c = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final View f19900b;
+    private final View f19533b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ c0 f19901a;
+        private final /* synthetic */ c0 f19534a;
 
         /* renamed from: com.withpersona.sdk2.inquiry.internal.i$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        /* synthetic */ class C0241a extends FunctionReferenceImpl implements Function1 {
+        /* synthetic */ class C0246a extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0241a f19902d = new C0241a();
+            public static final C0246a f19535d = new C0246a();
 
-            C0241a() {
+            C0246a() {
                 super(1, i.class, "<init>", "<init>(Landroid/view/View;)V", 0);
             }
 
@@ -51,34 +51,34 @@ public final class i implements vm.k {
             this();
         }
 
-        @Override // vm.c0
+        @Override // wm.c0
         /* renamed from: b */
-        public View a(n.d.a initialRendering, vm.a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
+        public View a(n.d.a initialRendering, wm.a0 initialViewEnvironment, Context contextForNewView, ViewGroup viewGroup) {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f19901a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f19534a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
-        @Override // vm.c0
+        @Override // wm.c0
         public KClass getType() {
-            return this.f19901a.getType();
+            return this.f19534a.getType();
         }
 
         private a() {
-            k.a aVar = vm.k.f51283a;
-            this.f19901a = new vm.m(Reflection.getOrCreateKotlinClass(n.d.a.class), g2.f39453d, C0241a.f19902d);
+            k.a aVar = wm.k.f52359a;
+            this.f19534a = new wm.m(Reflection.getOrCreateKotlinClass(n.d.a.class), g2.f42196d, C0246a.f19535d);
         }
     }
 
     public i(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
-        this.f19900b = view;
+        this.f19533b = view;
     }
 
-    @Override // vm.k
+    @Override // wm.k
     /* renamed from: b */
-    public void a(n.d.a rendering, vm.a0 viewEnvironment) {
+    public void a(n.d.a rendering, wm.a0 viewEnvironment) {
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
     }

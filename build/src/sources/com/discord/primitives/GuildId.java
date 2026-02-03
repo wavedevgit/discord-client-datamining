@@ -8,9 +8,9 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
 import org.jetbrains.annotations.NotNull;
-import xs.m;
-@Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u0000\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0087@\u0018\u0000 $2\u00020\u0001:\u0002#$B\u0013\u0012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004¢\u0006\u0004\b\u0005\u0010\u0006J\u000f\u0010\t\u001a\u00020\nH\u0016¢\u0006\u0004\b\u000b\u0010\fJ\u000f\u0010\r\u001a\u00020\u000eH\u0016¢\u0006\u0004\b\u000f\u0010\u0010J\r\u0010\u0011\u001a\u00020\u0012¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0015\u001a\u00020\u000e2\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017HÖ\u0003¢\u0006\u0004\b\u0018\u0010\u0019J\u0010\u0010\u001a\u001a\u00020\u0012HÖ\u0001¢\u0006\u0004\b\u001b\u0010\u0014J\u001d\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u0012¢\u0006\u0004\b!\u0010\"R\u0018\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\b\u0088\u0001\u0002¨\u0006%"}, d2 = {"Lcom/discord/primitives/GuildId;", "Lcom/discord/snowflake/SnowflakePrimitive;", "snowflake", "", "Lcom/discord/snowflake/Snowflake;", "constructor-impl", "(J)J", "getSnowflake", "()J", "toString", "", "toString-impl", "(J)Ljava/lang/String;", "isValid", "", "isValid-impl", "(J)Z", "describeContents", "", "describeContents-impl", "(J)I", "equals", "other", "", "equals-impl", "(JLjava/lang/Object;)Z", "hashCode", "hashCode-impl", "writeToParcel", "", "dest", "Landroid/os/Parcel;", "flags", "writeToParcel-impl", "(JLandroid/os/Parcel;I)V", "$serializer", "Companion", "primitives_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+import ys.m;
 @m
+@Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u0000\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0087@\u0018\u0000 $2\u00020\u0001:\u0002#$B\u0013\u0012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004¢\u0006\u0004\b\u0005\u0010\u0006J\u000f\u0010\t\u001a\u00020\nH\u0016¢\u0006\u0004\b\u000b\u0010\fJ\u000f\u0010\r\u001a\u00020\u000eH\u0016¢\u0006\u0004\b\u000f\u0010\u0010J\r\u0010\u0011\u001a\u00020\u0012¢\u0006\u0004\b\u0013\u0010\u0014J\u001a\u0010\u0015\u001a\u00020\u000e2\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017HÖ\u0003¢\u0006\u0004\b\u0018\u0010\u0019J\u0010\u0010\u001a\u001a\u00020\u0012HÖ\u0001¢\u0006\u0004\b\u001b\u0010\u0014J\u001d\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u0012¢\u0006\u0004\b!\u0010\"R\u0018\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\b\u0088\u0001\u0002¨\u0006%"}, d2 = {"Lcom/discord/primitives/GuildId;", "Lcom/discord/snowflake/SnowflakePrimitive;", "snowflake", "", "Lcom/discord/snowflake/Snowflake;", "constructor-impl", "(J)J", "getSnowflake", "()J", "toString", "", "toString-impl", "(J)Ljava/lang/String;", "isValid", "", "isValid-impl", "(J)Z", "describeContents", "", "describeContents-impl", "(J)I", "equals", "other", "", "equals-impl", "(JLjava/lang/Object;)Z", "hashCode", "hashCode-impl", "writeToParcel", "", "dest", "Landroid/os/Parcel;", "flags", "writeToParcel-impl", "(JLandroid/os/Parcel;I)V", "$serializer", "Companion", "primitives_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class GuildId implements SnowflakePrimitive {
     private final long snowflake;
@@ -40,13 +40,13 @@ public final class GuildId implements SnowflakePrimitive {
     public static final class Creator implements Parcelable.Creator<GuildId> {
         @Override // android.os.Parcelable.Creator
         public /* bridge */ /* synthetic */ GuildId createFromParcel(Parcel parcel) {
-            return GuildId.m1071boximpl(m1083createFromParcelhCFrBxw(parcel));
+            return GuildId.m1073boximpl(m1085createFromParcelhCFrBxw(parcel));
         }
 
         /* renamed from: createFromParcel-hCFrBxw  reason: not valid java name */
-        public final long m1083createFromParcelhCFrBxw(Parcel parcel) {
+        public final long m1085createFromParcelhCFrBxw(Parcel parcel) {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return GuildId.m1072constructorimpl(parcel.readLong());
+            return GuildId.m1074constructorimpl(parcel.readLong());
         }
 
         /* JADX WARN: Can't rename method to resolve collision */
@@ -61,59 +61,59 @@ public final class GuildId implements SnowflakePrimitive {
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ GuildId m1071boximpl(long j10) {
+    public static final /* synthetic */ GuildId m1073boximpl(long j10) {
         return new GuildId(j10);
     }
 
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static long m1072constructorimpl(long j10) {
+    public static long m1074constructorimpl(long j10) {
         return j10;
     }
 
     /* renamed from: describeContents-impl  reason: not valid java name */
-    public static final int m1073describeContentsimpl(long j10) {
+    public static final int m1075describeContentsimpl(long j10) {
         return 0;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m1074equalsimpl(long j10, Object obj) {
-        return (obj instanceof GuildId) && j10 == ((GuildId) obj).m1080unboximpl();
+    public static boolean m1076equalsimpl(long j10, Object obj) {
+        return (obj instanceof GuildId) && j10 == ((GuildId) obj).m1082unboximpl();
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m1075equalsimpl0(long j10, long j11) {
+    public static final boolean m1077equalsimpl0(long j10, long j11) {
         return j10 == j11;
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m1076hashCodeimpl(long j10) {
+    public static int m1078hashCodeimpl(long j10) {
         return Long.hashCode(j10);
     }
 
     /* renamed from: isValid-impl  reason: not valid java name */
-    public static boolean m1077isValidimpl(long j10) {
+    public static boolean m1079isValidimpl(long j10) {
         return j10 > 0;
     }
 
     @NotNull
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m1078toStringimpl(long j10) {
+    public static String m1080toStringimpl(long j10) {
         return String.valueOf(j10);
     }
 
     /* renamed from: writeToParcel-impl  reason: not valid java name */
-    public static final void m1079writeToParcelimpl(long j10, @NotNull Parcel dest, int i10) {
+    public static final void m1081writeToParcelimpl(long j10, @NotNull Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
         dest.writeLong(j10);
     }
 
     @Override // android.os.Parcelable
     public final int describeContents() {
-        return m1073describeContentsimpl(this.snowflake);
+        return m1075describeContentsimpl(this.snowflake);
     }
 
     public boolean equals(Object obj) {
-        return m1074equalsimpl(this.snowflake, obj);
+        return m1076equalsimpl(this.snowflake, obj);
     }
 
     @Override // com.discord.snowflake.SnowflakePrimitive
@@ -122,27 +122,27 @@ public final class GuildId implements SnowflakePrimitive {
     }
 
     public int hashCode() {
-        return m1076hashCodeimpl(this.snowflake);
+        return m1078hashCodeimpl(this.snowflake);
     }
 
     @Override // com.discord.snowflake.SnowflakePrimitive
     public boolean isValid() {
-        return m1077isValidimpl(this.snowflake);
+        return m1079isValidimpl(this.snowflake);
     }
 
     @NotNull
     public String toString() {
-        return m1078toStringimpl(this.snowflake);
+        return m1080toStringimpl(this.snowflake);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ long m1080unboximpl() {
+    public final /* synthetic */ long m1082unboximpl() {
         return this.snowflake;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(@NotNull Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        m1079writeToParcelimpl(this.snowflake, dest, i10);
+        m1081writeToParcelimpl(this.snowflake, dest, i10);
     }
 }

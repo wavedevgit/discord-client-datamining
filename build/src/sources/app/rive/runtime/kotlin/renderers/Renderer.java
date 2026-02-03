@@ -14,7 +14,7 @@ import app.rive.runtime.kotlin.core.RendererType;
 import app.rive.runtime.kotlin.core.Rive;
 import com.discord.js_watchdog.SharedPreferencesKey;
 import com.facebook.react.uimanager.ViewProps;
-import ir.c;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -81,7 +81,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
             this.isAttached = false;
             stop();
             cppDestroySurface(getCppPointer());
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
         }
     }
 
@@ -116,7 +116,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
             destroySurface();
             cppDelete(getCppPointer());
             setCppPointer(0L);
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
         }
     }
 
@@ -133,7 +133,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
                     refCount.release();
                 }
                 getDependencies().clear();
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -148,7 +148,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
                     if (getHasCppObject()) {
                         cppDoFrame(getCppPointer());
                     }
-                    Unit unit = Unit.f33298a;
+                    Unit unit = Unit.f33074a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -251,7 +251,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
                 this.sharedSurface = surface;
                 cppSetSurface(surface.getSurface(), getCppPointer());
                 this.isAttached = true;
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             } catch (Throwable th2) {
                 throw th2;
             }

@@ -5,51 +5,51 @@ import ui.c;
 final class c2 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c2 f41018a = new c2();
+    static final c2 f40881a = new c2();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41019b;
+    private static final ui.c f40882b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41020c;
+    private static final ui.c f40883c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41021d;
+    private static final ui.c f40884d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41022e;
+    private static final ui.c f40885e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41023f;
+    private static final ui.c f40886f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f41024g;
+    private static final ui.c f40887g;
 
     static {
         c.b a10 = ui.c.a("cameraSource");
         f fVar = new f();
         fVar.a(1);
-        f41019b = a10.b(fVar.b()).a();
+        f40882b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("eventType");
         f fVar2 = new f();
         fVar2.a(2);
-        f41020c = a11.b(fVar2.b()).a();
+        f40883c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("requestedPreviewHeight");
         f fVar3 = new f();
         fVar3.a(3);
-        f41021d = a12.b(fVar3.b()).a();
+        f40884d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("requestedPreviewWidth");
         f fVar4 = new f();
         fVar4.a(4);
-        f41022e = a13.b(fVar4.b()).a();
+        f40885e = a13.b(fVar4.b()).a();
         c.b a14 = ui.c.a("actualPreviewHeight");
         f fVar5 = new f();
         fVar5.a(5);
-        f41023f = a14.b(fVar5.b()).a();
+        f40886f = a14.b(fVar5.b()).a();
         c.b a15 = ui.c.a("actualPreviewWidth");
         f fVar6 = new f();
         fVar6.a(6);
-        f41024g = a15.b(fVar6.b()).a();
+        f40887g = a15.b(fVar6.b()).a();
     }
 
     private c2() {

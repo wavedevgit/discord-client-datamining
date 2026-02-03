@@ -8,7 +8,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f53149a = new c();
+    public static final c f53357a = new c();
 
     private c() {
     }

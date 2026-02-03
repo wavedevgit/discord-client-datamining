@@ -75,9 +75,9 @@ public final class RemoteImage_RemoteImageComponentStyleJsonAdapter extends h {
         AttributeStyles.RemoteImageStrokeColorStyle remoteImageStrokeColorStyle = null;
         AttributeStyles.RemoteImageFillColorStyle remoteImageFillColorStyle = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -109,17 +109,17 @@ public final class RemoteImage_RemoteImageComponentStyleJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (remoteImageComponentStyle != null) {
             writer.l();
-            writer.A0("height");
+            writer.t0("height");
             this.nullableRemoteImageHeightStyleAdapter.toJson(writer, remoteImageComponentStyle.getHeight());
-            writer.A0("width");
+            writer.t0("width");
             this.nullableRemoteImageWidthStyleAdapter.toJson(writer, remoteImageComponentStyle.getWidth());
-            writer.A0("justify");
+            writer.t0("justify");
             this.nullableRemoteImageJustifyStyleAdapter.toJson(writer, remoteImageComponentStyle.getJustify());
-            writer.A0(ViewProps.MARGIN);
+            writer.t0(ViewProps.MARGIN);
             this.nullableRemoteImageMarginStyleAdapter.toJson(writer, remoteImageComponentStyle.getMargin());
-            writer.A0("strokeColor");
+            writer.t0("strokeColor");
             this.nullableRemoteImageStrokeColorStyleAdapter.toJson(writer, remoteImageComponentStyle.getStrokeColor());
-            writer.A0("fillColor");
+            writer.t0("fillColor");
             this.nullableRemoteImageFillColorStyleAdapter.toJson(writer, remoteImageComponentStyle.getFillColor());
             writer.E();
             return;

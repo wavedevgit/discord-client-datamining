@@ -1,7 +1,7 @@
 package com.facebook.react.uimanager.common;
 
 import android.view.View;
-import ir.c;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;

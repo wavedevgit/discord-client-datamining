@@ -17,7 +17,7 @@ public /* synthetic */ class SecurityKeyManagerModule$webauthn$1 extends Functio
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((String) obj);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     public final void invoke(String p02) {

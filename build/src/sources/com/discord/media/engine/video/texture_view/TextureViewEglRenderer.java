@@ -96,7 +96,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                     this.rotatedFrameHeight = videoFrame.getRotatedHeight();
                     this.frameRotation = videoFrame.getRotation();
                 }
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -112,7 +112,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                 this.rotatedFrameWidth = 0;
                 this.rotatedFrameHeight = 0;
                 this.frameRotation = 0;
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
             init();
             setErrorCallback(this);
@@ -158,12 +158,12 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
             releaseEglSurface(new Function0<Unit>() { // from class: com.discord.media.engine.video.texture_view.TextureViewEglRenderer$onSurfaceTextureDestroyed$1$1
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
-                    m940invoke();
-                    return Unit.f33298a;
+                    m942invoke();
+                    return Unit.f33074a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
-                public final void m940invoke() {
+                public final void m942invoke() {
                     countDownLatch.countDown();
                 }
             });

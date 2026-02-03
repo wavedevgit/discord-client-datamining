@@ -9,17 +9,17 @@ import kotlin.jvm.internal.Intrinsics;
 public final class Toolkit {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Toolkit f17260a;
+    public static final Toolkit f16889a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static long f17261b;
+    private static long f16890b;
 
     static {
         Toolkit toolkit = new Toolkit();
-        f17260a = toolkit;
+        f16889a = toolkit;
         try {
             System.loadLibrary("renderscript-toolkit");
-            f17261b = toolkit.createNative();
+            f16890b = toolkit.createNative();
         } catch (UnsatisfiedLinkError unused) {
         }
     }
@@ -52,7 +52,7 @@ public final class Toolkit {
         }
         a.e("convolve", inputBitmap, range2d);
         Bitmap a10 = a.a(inputBitmap);
-        nativeConvolveBitmap(f17261b, inputBitmap, a10, coefficients, range2d);
+        nativeConvolveBitmap(f16890b, inputBitmap, a10, coefficients, range2d);
         return a10;
     }
 }

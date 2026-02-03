@@ -31,13 +31,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.clearVADWarning = var4;
     var4 = function() {
-        _fun109666: for (var _fun109666_ip = 0;;) switch (_fun109666_ip) {
+        _fun109612: for (var _fun109612_ip = 0;;) switch (_fun109612_ip) {
             case 0:
                 var4 = arguments[0];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun109666_ip = 11;
-                    continue _fun109666
+                    _fun109612_ip = 11;
+                    continue _fun109612
                 }
             case 9:
                 var4 = false;

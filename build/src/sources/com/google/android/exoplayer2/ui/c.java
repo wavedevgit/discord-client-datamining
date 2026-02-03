@@ -28,85 +28,85 @@ import ne.w0;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Pattern f14276a = Pattern.compile("(&#13;)?&#10;");
+    private static final Pattern f13905a = Pattern.compile("(&#13;)?&#10;");
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f14277a;
+        public final String f13906a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Map f14278b;
+        public final Map f13907b;
 
         private b(String str, Map map) {
-            this.f14277a = str;
-            this.f14278b = map;
+            this.f13906a = str;
+            this.f13907b = map;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: com.google.android.exoplayer2.ui.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0171c {
+    public static final class C0176c {
 
         /* renamed from: e  reason: collision with root package name */
-        private static final Comparator f14279e = new Comparator() { // from class: com.google.android.exoplayer2.ui.d
+        private static final Comparator f13908e = new Comparator() { // from class: com.google.android.exoplayer2.ui.d
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
-                return c.C0171c.a((c.C0171c) obj, (c.C0171c) obj2);
+                return c.C0176c.a((c.C0176c) obj, (c.C0176c) obj2);
             }
         };
 
         /* renamed from: f  reason: collision with root package name */
-        private static final Comparator f14280f = new Comparator() { // from class: com.google.android.exoplayer2.ui.e
+        private static final Comparator f13909f = new Comparator() { // from class: com.google.android.exoplayer2.ui.e
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
-                return c.C0171c.b((c.C0171c) obj, (c.C0171c) obj2);
+                return c.C0176c.b((c.C0176c) obj, (c.C0176c) obj2);
             }
         };
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f14281a;
+        public final int f13910a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f14282b;
+        public final int f13911b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final String f14283c;
+        public final String f13912c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final String f14284d;
+        public final String f13913d;
 
-        public static /* synthetic */ int a(C0171c c0171c, C0171c c0171c2) {
-            int compare = Integer.compare(c0171c2.f14282b, c0171c.f14282b);
+        public static /* synthetic */ int a(C0176c c0176c, C0176c c0176c2) {
+            int compare = Integer.compare(c0176c2.f13911b, c0176c.f13911b);
             if (compare != 0) {
                 return compare;
             }
-            int compareTo = c0171c.f14283c.compareTo(c0171c2.f14283c);
+            int compareTo = c0176c.f13912c.compareTo(c0176c2.f13912c);
             if (compareTo != 0) {
                 return compareTo;
             }
-            return c0171c.f14284d.compareTo(c0171c2.f14284d);
+            return c0176c.f13913d.compareTo(c0176c2.f13913d);
         }
 
-        public static /* synthetic */ int b(C0171c c0171c, C0171c c0171c2) {
-            int compare = Integer.compare(c0171c2.f14281a, c0171c.f14281a);
+        public static /* synthetic */ int b(C0176c c0176c, C0176c c0176c2) {
+            int compare = Integer.compare(c0176c2.f13910a, c0176c.f13910a);
             if (compare != 0) {
                 return compare;
             }
-            int compareTo = c0171c2.f14283c.compareTo(c0171c.f14283c);
+            int compareTo = c0176c2.f13912c.compareTo(c0176c.f13912c);
             if (compareTo != 0) {
                 return compareTo;
             }
-            return c0171c2.f14284d.compareTo(c0171c.f14284d);
+            return c0176c2.f13913d.compareTo(c0176c.f13913d);
         }
 
-        private C0171c(int i10, int i11, String str, String str2) {
-            this.f14281a = i10;
-            this.f14282b = i11;
-            this.f14283c = str;
-            this.f14284d = str2;
+        private C0176c(int i10, int i11, String str, String str2) {
+            this.f13910a = i10;
+            this.f13911b = i11;
+            this.f13912c = str;
+            this.f13913d = str2;
         }
     }
 
@@ -115,10 +115,10 @@ public abstract class c {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f14285a = new ArrayList();
+        private final List f13914a = new ArrayList();
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f14286b = new ArrayList();
+        private final List f13915b = new ArrayList();
     }
 
     public static b a(CharSequence charSequence, float f10) {
@@ -146,13 +146,13 @@ public abstract class c {
             int keyAt = c10.keyAt(i10);
             sb2.append(b(spanned.subSequence(i11, keyAt)));
             d dVar = (d) c10.get(keyAt);
-            Collections.sort(dVar.f14286b, C0171c.f14280f);
-            for (C0171c c0171c : dVar.f14286b) {
-                sb2.append(c0171c.f14284d);
+            Collections.sort(dVar.f13915b, C0176c.f13909f);
+            for (C0176c c0176c : dVar.f13915b) {
+                sb2.append(c0176c.f13913d);
             }
-            Collections.sort(dVar.f14285a, C0171c.f14279e);
-            for (C0171c c0171c2 : dVar.f14285a) {
-                sb2.append(c0171c2.f14283c);
+            Collections.sort(dVar.f13914a, C0176c.f13908e);
+            for (C0176c c0176c2 : dVar.f13914a) {
+                sb2.append(c0176c2.f13912c);
             }
             i10++;
             i11 = keyAt;
@@ -162,7 +162,7 @@ public abstract class c {
     }
 
     private static String b(CharSequence charSequence) {
-        return f14276a.matcher(Html.escapeHtml(charSequence)).replaceAll("<br>");
+        return f13905a.matcher(Html.escapeHtml(charSequence)).replaceAll("<br>");
     }
 
     private static SparseArray c(Spanned spanned, float f10) {
@@ -175,9 +175,9 @@ public abstract class c {
             int spanEnd = spanned.getSpanEnd(obj);
             if (e10 != null) {
                 ne.a.e(d10);
-                C0171c c0171c = new C0171c(spanStart, spanEnd, e10, d10);
-                f(sparseArray, spanStart).f14285a.add(c0171c);
-                f(sparseArray, spanEnd).f14286b.add(c0171c);
+                C0176c c0176c = new C0176c(spanStart, spanEnd, e10, d10);
+                f(sparseArray, spanStart).f13914a.add(c0176c);
+                f(sparseArray, spanEnd).f13915b.add(c0176c);
             }
         }
         return sparseArray;
@@ -207,7 +207,7 @@ public abstract class c {
                 return "</b>";
             }
         } else if (obj instanceof de.c) {
-            return "<rt>" + b(((de.c) obj).f22103a) + "</rt></ruby>";
+            return "<rt>" + b(((de.c) obj).f21679a) + "</rt></ruby>";
         } else if (obj instanceof UnderlineSpan) {
             return "</u>";
         }
@@ -258,7 +258,7 @@ public abstract class c {
                 }
                 return "<b>";
             } else if (obj instanceof de.c) {
-                int i10 = ((de.c) obj).f22104b;
+                int i10 = ((de.c) obj).f21680b;
                 if (i10 != -1) {
                     if (i10 != 1) {
                         if (i10 != 2) {
@@ -276,7 +276,7 @@ public abstract class c {
                     return null;
                 }
                 de.e eVar = (de.e) obj;
-                return w0.D("<span style='-webkit-text-emphasis-style:%1$s;text-emphasis-style:%1$s;-webkit-text-emphasis-position:%2$s;text-emphasis-position:%2$s;display:inline-block;'>", h(eVar.f22105a, eVar.f22106b), g(eVar.f22107c));
+                return w0.D("<span style='-webkit-text-emphasis-style:%1$s;text-emphasis-style:%1$s;-webkit-text-emphasis-position:%2$s;text-emphasis-position:%2$s;display:inline-block;'>", h(eVar.f21681a, eVar.f21682b), g(eVar.f21683c));
             }
         }
     }

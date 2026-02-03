@@ -1,10 +1,10 @@
 package com.withpersona.sdk2.inquiry;
 
-import ir.c;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import org.jetbrains.annotations.NotNull;
-import pr.a;
+import qr.a;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @c

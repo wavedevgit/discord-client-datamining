@@ -6,19 +6,19 @@ import java.lang.ref.WeakReference;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    final WeakReference f30073a;
+    final WeakReference f29639a;
 
     /* renamed from: b  reason: collision with root package name */
-    final String f30074b;
+    final String f29640b;
 
     /* renamed from: c  reason: collision with root package name */
-    final String f30075c;
+    final String f29641c;
 
     /* renamed from: d  reason: collision with root package name */
-    final String f30076d;
+    final String f29642d;
 
     /* renamed from: e  reason: collision with root package name */
-    final String f30077e;
+    final String f29643e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public enum a {
@@ -27,35 +27,35 @@ public final class b {
     }
 
     public b(Object obj, String str, String str2, String str3, String str4) {
-        this.f30073a = new WeakReference(obj);
-        this.f30074b = str;
-        this.f30075c = str2;
-        this.f30076d = str3;
-        this.f30077e = str4;
+        this.f29639a = new WeakReference(obj);
+        this.f29640b = str;
+        this.f29641c = str2;
+        this.f29642d = str3;
+        this.f29643e = str4;
     }
 
     public String a() {
-        return this.f30074b;
+        return this.f29640b;
     }
 
     public String b() {
-        String str = this.f30075c;
+        String str = this.f29641c;
         if (str != null) {
             return str;
         }
-        return (String) y.c(this.f30076d, "UiElement.tag can't be null");
+        return (String) y.c(this.f29642d, "UiElement.tag can't be null");
     }
 
     public String c() {
-        return this.f30077e;
+        return this.f29643e;
     }
 
     public String d() {
-        return this.f30075c;
+        return this.f29641c;
     }
 
     public String e() {
-        return this.f30076d;
+        return this.f29642d;
     }
 
     public boolean equals(Object obj) {
@@ -64,7 +64,7 @@ public final class b {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (y.a(this.f30074b, bVar.f30074b) && y.a(this.f30075c, bVar.f30075c) && y.a(this.f30076d, bVar.f30076d)) {
+            if (y.a(this.f29640b, bVar.f29640b) && y.a(this.f29641c, bVar.f29641c) && y.a(this.f29642d, bVar.f29642d)) {
                 return true;
             }
         }
@@ -72,10 +72,10 @@ public final class b {
     }
 
     public Object f() {
-        return this.f30073a.get();
+        return this.f29639a.get();
     }
 
     public int hashCode() {
-        return y.b(this.f30073a, this.f30075c, this.f30076d);
+        return y.b(this.f29639a, this.f29641c, this.f29642d);
     }
 }

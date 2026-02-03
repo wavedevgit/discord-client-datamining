@@ -45,13 +45,13 @@ public final class AttributeStyles_RemoteImageStrokeColorStyleJsonAdapter extend
         StyleElements.SimpleElementColor simpleElementColor = null;
         StyleElements.SimpleElementColor simpleElementColor2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 simpleElementColor = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 simpleElementColor2 = (StyleElements.SimpleElementColor) this.nullableSimpleElementColorAdapter.fromJson(reader);
             }
         }
@@ -64,9 +64,9 @@ public final class AttributeStyles_RemoteImageStrokeColorStyleJsonAdapter extend
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (remoteImageStrokeColorStyle != null) {
             writer.l();
-            writer.A0("stroke");
+            writer.t0("stroke");
             this.nullableSimpleElementColorAdapter.toJson(writer, remoteImageStrokeColorStyle.getStroke());
-            writer.A0("originalStroke");
+            writer.t0("originalStroke");
             this.nullableSimpleElementColorAdapter.toJson(writer, remoteImageStrokeColorStyle.getOriginalStroke());
             writer.E();
             return;

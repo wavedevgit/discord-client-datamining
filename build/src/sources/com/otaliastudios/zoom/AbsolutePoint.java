@@ -6,22 +6,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class AbsolutePoint {
 
     /* renamed from: a  reason: collision with root package name */
-    private float f18266a;
+    private float f17899a;
 
     /* renamed from: b  reason: collision with root package name */
-    private float f18267b;
+    private float f17900b;
 
     public AbsolutePoint(float f10, float f11) {
-        this.f18266a = f10;
-        this.f18267b = f11;
+        this.f17899a = f10;
+        this.f17900b = f11;
     }
 
     public static /* synthetic */ AbsolutePoint b(AbsolutePoint absolutePoint, float f10, float f11, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            f10 = absolutePoint.f18266a;
+            f10 = absolutePoint.f17899a;
         }
         if ((i10 & 2) != 0) {
-            f11 = absolutePoint.f18267b;
+            f11 = absolutePoint.f17900b;
         }
         return absolutePoint.a(f10, f11);
     }
@@ -38,16 +38,16 @@ public final class AbsolutePoint {
     }
 
     public final float c() {
-        return this.f18266a;
+        return this.f17899a;
     }
 
     public final float d() {
-        return this.f18267b;
+        return this.f17900b;
     }
 
     public final AbsolutePoint e(AbsolutePoint absolutePoint) {
         Intrinsics.checkNotNullParameter(absolutePoint, "absolutePoint");
-        return new AbsolutePoint(this.f18266a - absolutePoint.f18266a, this.f18267b - absolutePoint.f18267b);
+        return new AbsolutePoint(this.f17899a - absolutePoint.f17899a, this.f17900b - absolutePoint.f17900b);
     }
 
     public boolean equals(Object obj) {
@@ -56,40 +56,40 @@ public final class AbsolutePoint {
         }
         if (obj instanceof AbsolutePoint) {
             AbsolutePoint absolutePoint = (AbsolutePoint) obj;
-            return Intrinsics.areEqual((Object) Float.valueOf(this.f18266a), (Object) Float.valueOf(absolutePoint.f18266a)) && Intrinsics.areEqual((Object) Float.valueOf(this.f18267b), (Object) Float.valueOf(absolutePoint.f18267b));
+            return Intrinsics.areEqual((Object) Float.valueOf(this.f17899a), (Object) Float.valueOf(absolutePoint.f17899a)) && Intrinsics.areEqual((Object) Float.valueOf(this.f17900b), (Object) Float.valueOf(absolutePoint.f17900b));
         }
         return false;
     }
 
     public final AbsolutePoint f(AbsolutePoint absolutePoint) {
         Intrinsics.checkNotNullParameter(absolutePoint, "absolutePoint");
-        return new AbsolutePoint(this.f18266a + absolutePoint.f18266a, this.f18267b + absolutePoint.f18267b);
+        return new AbsolutePoint(this.f17899a + absolutePoint.f17899a, this.f17900b + absolutePoint.f17900b);
     }
 
     public final void g(AbsolutePoint p10) {
         Intrinsics.checkNotNullParameter(p10, "p");
-        h(Float.valueOf(p10.f18266a), Float.valueOf(p10.f18267b));
+        h(Float.valueOf(p10.f17899a), Float.valueOf(p10.f17900b));
     }
 
     public final void h(Number x10, Number y10) {
         Intrinsics.checkNotNullParameter(x10, "x");
         Intrinsics.checkNotNullParameter(y10, "y");
-        this.f18266a = x10.floatValue();
-        this.f18267b = y10.floatValue();
+        this.f17899a = x10.floatValue();
+        this.f17900b = y10.floatValue();
     }
 
     public int hashCode() {
-        return (Float.hashCode(this.f18266a) * 31) + Float.hashCode(this.f18267b);
+        return (Float.hashCode(this.f17899a) * 31) + Float.hashCode(this.f17900b);
     }
 
     public final ScaledPoint i(float f10, ScaledPoint outPoint) {
         Intrinsics.checkNotNullParameter(outPoint, "outPoint");
-        outPoint.g(Float.valueOf(this.f18266a * f10), Float.valueOf(this.f18267b * f10));
+        outPoint.g(Float.valueOf(this.f17899a * f10), Float.valueOf(this.f17900b * f10));
         return outPoint;
     }
 
     public String toString() {
-        return "AbsolutePoint(x=" + this.f18266a + ", y=" + this.f18267b + ')';
+        return "AbsolutePoint(x=" + this.f17899a + ", y=" + this.f17900b + ')';
     }
 
     public /* synthetic */ AbsolutePoint(float f10, float f11, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -98,7 +98,7 @@ public final class AbsolutePoint {
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public AbsolutePoint(AbsolutePoint point) {
-        this(point.f18266a, point.f18267b);
+        this(point.f17899a, point.f17900b);
         Intrinsics.checkNotNullParameter(point, "point");
     }
 }

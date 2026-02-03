@@ -10,34 +10,34 @@ import android.view.animation.DecelerateInterpolator;
 public class p extends n0 {
 
     /* renamed from: f0  reason: collision with root package name */
-    private static final TimeInterpolator f5309f0 = new DecelerateInterpolator();
+    private static final TimeInterpolator f5353f0 = new DecelerateInterpolator();
 
     /* renamed from: g0  reason: collision with root package name */
-    private static final TimeInterpolator f5310g0 = new AccelerateInterpolator();
+    private static final TimeInterpolator f5354g0 = new AccelerateInterpolator();
 
     /* renamed from: h0  reason: collision with root package name */
-    private static final g f5311h0 = new a();
+    private static final g f5355h0 = new a();
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final g f5312i0 = new b();
+    private static final g f5356i0 = new b();
 
     /* renamed from: j0  reason: collision with root package name */
-    private static final g f5313j0 = new c();
+    private static final g f5357j0 = new c();
 
     /* renamed from: k0  reason: collision with root package name */
-    private static final g f5314k0 = new d();
+    private static final g f5358k0 = new d();
 
     /* renamed from: l0  reason: collision with root package name */
-    private static final g f5315l0 = new e();
+    private static final g f5359l0 = new e();
 
     /* renamed from: m0  reason: collision with root package name */
-    private static final g f5316m0 = new f();
+    private static final g f5360m0 = new f();
 
     /* renamed from: d0  reason: collision with root package name */
-    private g f5317d0 = f5316m0;
+    private g f5361d0 = f5360m0;
 
     /* renamed from: e0  reason: collision with root package name */
-    private int f5318e0 = 80;
+    private int f5362e0 = 80;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends h {
@@ -159,10 +159,10 @@ public class p extends n0 {
         B0(i10);
     }
 
-    private void t0(c0 c0Var) {
+    private void u0(c0 c0Var) {
         int[] iArr = new int[2];
-        c0Var.f5215b.getLocationOnScreen(iArr);
-        c0Var.f5214a.put("android:slide:screenPosition", iArr);
+        c0Var.f5259b.getLocationOnScreen(iArr);
+        c0Var.f5258a.put("android:slide:screenPosition", iArr);
     }
 
     public void B0(int i10) {
@@ -172,26 +172,26 @@ public class p extends n0 {
                     if (i10 != 80) {
                         if (i10 != 8388611) {
                             if (i10 == 8388613) {
-                                this.f5317d0 = f5315l0;
+                                this.f5361d0 = f5359l0;
                             } else {
                                 throw new IllegalArgumentException("Invalid slide direction");
                             }
                         } else {
-                            this.f5317d0 = f5312i0;
+                            this.f5361d0 = f5356i0;
                         }
                     } else {
-                        this.f5317d0 = f5316m0;
+                        this.f5361d0 = f5360m0;
                     }
                 } else {
-                    this.f5317d0 = f5313j0;
+                    this.f5361d0 = f5357j0;
                 }
             } else {
-                this.f5317d0 = f5314k0;
+                this.f5361d0 = f5358k0;
             }
         } else {
-            this.f5317d0 = f5311h0;
+            this.f5361d0 = f5355h0;
         }
-        this.f5318e0 = i10;
+        this.f5362e0 = i10;
         o oVar = new o();
         oVar.j(i10);
         p0(oVar);
@@ -205,32 +205,32 @@ public class p extends n0 {
     @Override // androidx.transition.n0, androidx.transition.Transition
     public void i(c0 c0Var) {
         super.i(c0Var);
-        t0(c0Var);
+        u0(c0Var);
     }
 
     @Override // androidx.transition.n0, androidx.transition.Transition
     public void l(c0 c0Var) {
         super.l(c0Var);
-        t0(c0Var);
+        u0(c0Var);
     }
 
     @Override // androidx.transition.n0
-    public Animator v0(ViewGroup viewGroup, View view, c0 c0Var, c0 c0Var2) {
+    public Animator w0(ViewGroup viewGroup, View view, c0 c0Var, c0 c0Var2) {
         if (c0Var2 == null) {
             return null;
         }
-        int[] iArr = (int[]) c0Var2.f5214a.get("android:slide:screenPosition");
+        int[] iArr = (int[]) c0Var2.f5258a.get("android:slide:screenPosition");
         float translationX = view.getTranslationX();
         float translationY = view.getTranslationY();
-        return e0.a(view, c0Var2, iArr[0], iArr[1], this.f5317d0.b(viewGroup, view), this.f5317d0.a(viewGroup, view), translationX, translationY, f5309f0, this);
+        return e0.a(view, c0Var2, iArr[0], iArr[1], this.f5361d0.b(viewGroup, view), this.f5361d0.a(viewGroup, view), translationX, translationY, f5353f0, this);
     }
 
     @Override // androidx.transition.n0
-    public Animator x0(ViewGroup viewGroup, View view, c0 c0Var, c0 c0Var2) {
+    public Animator y0(ViewGroup viewGroup, View view, c0 c0Var, c0 c0Var2) {
         if (c0Var == null) {
             return null;
         }
-        int[] iArr = (int[]) c0Var.f5214a.get("android:slide:screenPosition");
-        return e0.a(view, c0Var, iArr[0], iArr[1], view.getTranslationX(), view.getTranslationY(), this.f5317d0.b(viewGroup, view), this.f5317d0.a(viewGroup, view), f5310g0, this);
+        int[] iArr = (int[]) c0Var.f5258a.get("android:slide:screenPosition");
+        return e0.a(view, c0Var, iArr[0], iArr[1], view.getTranslationX(), view.getTranslationY(), this.f5361d0.b(viewGroup, view), this.f5361d0.a(viewGroup, view), f5354g0, this);
     }
 }

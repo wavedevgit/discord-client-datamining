@@ -28,50 +28,50 @@ public class h extends io.sentry.android.core.performance.a {
     private static volatile h A;
 
     /* renamed from: z  reason: collision with root package name */
-    private static long f29212z = SystemClock.uptimeMillis();
+    private static long f28778z = SystemClock.uptimeMillis();
     public static final io.sentry.util.a B = new io.sentry.util.a();
 
     /* renamed from: d  reason: collision with root package name */
-    private a f29213d = a.UNKNOWN;
+    private a f28779d = a.UNKNOWN;
 
     /* renamed from: s  reason: collision with root package name */
-    private f1 f29220s = null;
+    private f1 f28786s = null;
 
     /* renamed from: t  reason: collision with root package name */
-    private l0 f29221t = null;
+    private l0 f28787t = null;
 
     /* renamed from: u  reason: collision with root package name */
-    private s8 f29222u = null;
+    private s8 f28788u = null;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f29223v = false;
+    private boolean f28789v = false;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f29224w = true;
+    private boolean f28790w = true;
 
     /* renamed from: x  reason: collision with root package name */
-    private final AtomicInteger f29225x = new AtomicInteger();
+    private final AtomicInteger f28791x = new AtomicInteger();
 
     /* renamed from: y  reason: collision with root package name */
-    private final AtomicBoolean f29226y = new AtomicBoolean(false);
+    private final AtomicBoolean f28792y = new AtomicBoolean(false);
 
     /* renamed from: i  reason: collision with root package name */
-    private final i f29215i = new i();
+    private final i f28781i = new i();
 
     /* renamed from: o  reason: collision with root package name */
-    private final i f29216o = new i();
+    private final i f28782o = new i();
 
     /* renamed from: p  reason: collision with root package name */
-    private final i f29217p = new i();
+    private final i f28783p = new i();
 
     /* renamed from: q  reason: collision with root package name */
-    private final Map f29218q = new HashMap();
+    private final Map f28784q = new HashMap();
 
     /* renamed from: r  reason: collision with root package name */
-    private final List f29219r = new ArrayList();
+    private final List f28785r = new ArrayList();
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f29214e = e1.s();
+    private boolean f28780e = e1.s();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public enum a {
@@ -81,17 +81,17 @@ public class h extends io.sentry.android.core.performance.a {
     }
 
     public static /* synthetic */ void a(h hVar) {
-        if (hVar.f29225x.get() == 0) {
-            hVar.f29214e = false;
-            f1 f1Var = hVar.f29220s;
+        if (hVar.f28791x.get() == 0) {
+            hVar.f28780e = false;
+            f1 f1Var = hVar.f28786s;
             if (f1Var != null && f1Var.isRunning()) {
-                hVar.f29220s.close();
-                hVar.f29220s = null;
+                hVar.f28786s.close();
+                hVar.f28786s = null;
             }
-            l0 l0Var = hVar.f29221t;
+            l0 l0Var = hVar.f28787t;
             if (l0Var != null && l0Var.isRunning()) {
-                hVar.f29221t.c(true);
-                hVar.f29221t = null;
+                hVar.f28787t.c(true);
+                hVar.f28787t = null;
             }
         }
     }
@@ -131,39 +131,39 @@ public class h extends io.sentry.android.core.performance.a {
     }
 
     public void e(c cVar) {
-        this.f29219r.add(cVar);
+        this.f28785r.add(cVar);
     }
 
     public i g() {
         i iVar = new i();
-        iVar.u("Process Initialization", this.f29215i.j(), this.f29215i.l(), f29212z);
+        iVar.u("Process Initialization", this.f28781i.k(), this.f28781i.m(), f28778z);
         return iVar;
     }
 
     public List h() {
-        ArrayList arrayList = new ArrayList(this.f29219r);
+        ArrayList arrayList = new ArrayList(this.f28785r);
         Collections.sort(arrayList);
         return arrayList;
     }
 
     public l0 i() {
-        return this.f29221t;
+        return this.f28787t;
     }
 
     public f1 j() {
-        return this.f29220s;
+        return this.f28786s;
     }
 
     public s8 k() {
-        return this.f29222u;
+        return this.f28788u;
     }
 
     public i l() {
-        return this.f29215i;
+        return this.f28781i;
     }
 
     public i m(SentryAndroidOptions sentryAndroidOptions) {
-        if (this.f29213d != a.UNKNOWN && this.f29214e) {
+        if (this.f28779d != a.UNKNOWN && this.f28780e) {
             if (sentryAndroidOptions.isEnablePerformanceV2()) {
                 i l10 = l();
                 if (l10.q() && l10.e() <= TimeUnit.MINUTES.toMillis(1L)) {
@@ -179,48 +179,48 @@ public class h extends io.sentry.android.core.performance.a {
     }
 
     public a n() {
-        return this.f29213d;
+        return this.f28779d;
     }
 
     public i o() {
-        return this.f29217p;
+        return this.f28783p;
     }
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityCreated(Activity activity, Bundle bundle) {
         a aVar;
         io.sentry.android.core.f1.c().d(activity);
-        if (this.f29225x.incrementAndGet() == 1 && !this.f29226y.get()) {
+        if (this.f28791x.incrementAndGet() == 1 && !this.f28792y.get()) {
             long uptimeMillis = SystemClock.uptimeMillis();
-            long l10 = uptimeMillis - this.f29215i.l();
-            if (this.f29214e && l10 <= TimeUnit.MINUTES.toMillis(1L)) {
+            long m10 = uptimeMillis - this.f28781i.m();
+            if (this.f28780e && m10 <= TimeUnit.MINUTES.toMillis(1L)) {
                 if (bundle == null) {
                     aVar = a.COLD;
                 } else {
                     aVar = a.WARM;
                 }
-                this.f29213d = aVar;
+                this.f28779d = aVar;
             } else {
-                this.f29213d = a.WARM;
-                this.f29224w = true;
-                this.f29215i.s();
-                this.f29215i.v();
-                this.f29215i.t(uptimeMillis);
-                f29212z = uptimeMillis;
-                this.f29218q.clear();
-                this.f29217p.s();
+                this.f28779d = a.WARM;
+                this.f28790w = true;
+                this.f28781i.s();
+                this.f28781i.v();
+                this.f28781i.t(uptimeMillis);
+                f28778z = uptimeMillis;
+                this.f28784q.clear();
+                this.f28783p.s();
             }
         }
-        this.f29214e = true;
+        this.f28780e = true;
     }
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityDestroyed(Activity activity) {
         io.sentry.android.core.f1.c().a(activity);
-        if (this.f29225x.decrementAndGet() == 0 && !activity.isChangingConfigurations()) {
-            this.f29214e = false;
-            this.f29224w = true;
-            this.f29226y.set(false);
+        if (this.f28791x.decrementAndGet() == 0 && !activity.isChangingConfigurations()) {
+            this.f28780e = false;
+            this.f28790w = true;
+            this.f28792y.set(false);
         }
     }
 
@@ -237,7 +237,7 @@ public class h extends io.sentry.android.core.performance.a {
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityStarted(Activity activity) {
         io.sentry.android.core.f1.c().d(activity);
-        if (this.f29226y.get()) {
+        if (this.f28792y.get()) {
             return;
         }
         if (activity.getWindow() != null) {
@@ -263,28 +263,28 @@ public class h extends io.sentry.android.core.performance.a {
     }
 
     public List p() {
-        ArrayList arrayList = new ArrayList(this.f29218q.values());
+        ArrayList arrayList = new ArrayList(this.f28784q.values());
         Collections.sort(arrayList);
         return arrayList;
     }
 
     public i r() {
-        return this.f29216o;
+        return this.f28782o;
     }
 
     public boolean s() {
-        return this.f29214e;
+        return this.f28780e;
     }
 
     public void t() {
-        this.f29224w = false;
-        this.f29218q.clear();
-        this.f29219r.clear();
+        this.f28790w = false;
+        this.f28784q.clear();
+        this.f28785r.clear();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized void u() {
-        if (!this.f29226y.getAndSet(true)) {
+        if (!this.f28792y.getAndSet(true)) {
             h q10 = q();
             q10.r().w();
             q10.l().w();
@@ -292,15 +292,15 @@ public class h extends io.sentry.android.core.performance.a {
     }
 
     public void v(Application application) {
-        if (this.f29223v) {
+        if (this.f28789v) {
             return;
         }
         boolean z10 = true;
-        this.f29223v = true;
-        if (!this.f29214e && !e1.s()) {
+        this.f28789v = true;
+        if (!this.f28780e && !e1.s()) {
             z10 = false;
         }
-        this.f29214e = z10;
+        this.f28780e = z10;
         application.registerActivityLifecycleCallbacks(A);
         new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: io.sentry.android.core.performance.d
             @Override // java.lang.Runnable
@@ -311,19 +311,19 @@ public class h extends io.sentry.android.core.performance.a {
     }
 
     public void w(l0 l0Var) {
-        this.f29221t = l0Var;
+        this.f28787t = l0Var;
     }
 
     public void x(f1 f1Var) {
-        this.f29220s = f1Var;
+        this.f28786s = f1Var;
     }
 
     public void y(s8 s8Var) {
-        this.f29222u = s8Var;
+        this.f28788u = s8Var;
     }
 
     public boolean z() {
-        if (this.f29224w && this.f29214e) {
+        if (this.f28790w && this.f28780e) {
             return true;
         }
         return false;

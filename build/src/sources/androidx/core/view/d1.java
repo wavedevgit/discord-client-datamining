@@ -6,47 +6,47 @@ import androidx.core.graphics.Insets;
 public final class d1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f3341a;
+    private final b f3385a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a extends b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final WindowInsetsAnimationController f3342a;
+        private final WindowInsetsAnimationController f3386a;
 
         a(WindowInsetsAnimationController windowInsetsAnimationController) {
-            this.f3342a = windowInsetsAnimationController;
+            this.f3386a = windowInsetsAnimationController;
         }
 
         @Override // androidx.core.view.d1.b
         void a(boolean z10) {
-            this.f3342a.finish(z10);
+            this.f3386a.finish(z10);
         }
 
         @Override // androidx.core.view.d1.b
         public float b() {
-            return this.f3342a.getCurrentFraction();
+            return this.f3386a.getCurrentFraction();
         }
 
         @Override // androidx.core.view.d1.b
         public Insets c() {
-            return Insets.f(this.f3342a.getCurrentInsets());
+            return Insets.f(this.f3386a.getCurrentInsets());
         }
 
         @Override // androidx.core.view.d1.b
         public Insets d() {
-            return Insets.f(this.f3342a.getHiddenStateInsets());
+            return Insets.f(this.f3386a.getHiddenStateInsets());
         }
 
         @Override // androidx.core.view.d1.b
         public Insets e() {
-            return Insets.f(this.f3342a.getShownStateInsets());
+            return Insets.f(this.f3386a.getShownStateInsets());
         }
 
         @Override // androidx.core.view.d1.b
         public void f(Insets insets, float f10, float f11) {
             android.graphics.Insets g10;
-            WindowInsetsAnimationController windowInsetsAnimationController = this.f3342a;
+            WindowInsetsAnimationController windowInsetsAnimationController = this.f3386a;
             if (insets == null) {
                 g10 = null;
             } else {
@@ -76,30 +76,30 @@ public final class d1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d1(WindowInsetsAnimationController windowInsetsAnimationController) {
-        this.f3341a = new a(windowInsetsAnimationController);
+        this.f3385a = new a(windowInsetsAnimationController);
     }
 
     public void a(boolean z10) {
-        this.f3341a.a(z10);
+        this.f3385a.a(z10);
     }
 
     public float b() {
-        return this.f3341a.b();
+        return this.f3385a.b();
     }
 
     public Insets c() {
-        return this.f3341a.c();
+        return this.f3385a.c();
     }
 
     public Insets d() {
-        return this.f3341a.d();
+        return this.f3385a.d();
     }
 
     public Insets e() {
-        return this.f3341a.e();
+        return this.f3385a.e();
     }
 
     public void f(Insets insets, float f10, float f11) {
-        this.f3341a.f(insets, f10, f11);
+        this.f3385a.f(insets, f10, f11);
     }
 }

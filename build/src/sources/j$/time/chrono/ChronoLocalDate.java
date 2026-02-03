@@ -33,7 +33,7 @@ public interface ChronoLocalDate extends j$.time.temporal.k, l, Comparable<Chron
     /* renamed from: k */
     default ChronoLocalDate c(l lVar) {
         f();
-        return b.r(k.f31558a, lVar.d(this));
+        return b.r(k.f31296a, lVar.d(this));
     }
 
     @Override // j$.time.temporal.k
@@ -42,12 +42,12 @@ public interface ChronoLocalDate extends j$.time.temporal.k, l, Comparable<Chron
             throw new DateTimeException("Unsupported field: " + nVar);
         }
         f();
-        return b.r(k.f31558a, nVar.C(this, j10));
+        return b.r(k.f31296a, nVar.C(this, j10));
     }
 
     default ChronoLocalDate u(j$.time.i iVar) {
         f();
-        return b.r(k.f31558a, iVar.a(this));
+        return b.r(k.f31296a, iVar.a(this));
     }
 
     @Override // j$.time.temporal.k
@@ -57,18 +57,18 @@ public interface ChronoLocalDate extends j$.time.temporal.k, l, Comparable<Chron
             throw new DateTimeException("Unsupported unit: " + pVar);
         }
         f();
-        return b.r(k.f31558a, pVar.r(this, j10));
+        return b.r(k.f31296a, pVar.r(this, j10));
     }
 
     @Override // j$.time.temporal.TemporalAccessor
     default Object a(TemporalQuery temporalQuery) {
-        if (temporalQuery == o.f31661a || temporalQuery == o.f31665e || temporalQuery == o.f31664d || temporalQuery == o.f31667g) {
+        if (temporalQuery == o.f31399a || temporalQuery == o.f31403e || temporalQuery == o.f31402d || temporalQuery == o.f31405g) {
             return null;
         }
-        if (temporalQuery == o.f31662b) {
+        if (temporalQuery == o.f31400b) {
             f();
-            return k.f31558a;
-        } else if (temporalQuery == o.f31663c) {
+            return k.f31296a;
+        } else if (temporalQuery == o.f31401c) {
             return j$.time.temporal.b.DAYS;
         } else {
             return temporalQuery.queryFrom(this);
@@ -89,7 +89,7 @@ public interface ChronoLocalDate extends j$.time.temporal.k, l, Comparable<Chron
         int compare = Long.compare(toEpochDay(), chronoLocalDate.toEpochDay());
         if (compare == 0) {
             f();
-            k kVar = k.f31558a;
+            k kVar = k.f31296a;
             chronoLocalDate.f();
             return 0;
         }

@@ -12,19 +12,63 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var1.default = var0;
     var3 = {
-        'lastWeek': "'geçen hafta' eeee 'saat' p",
-        'yesterday': "'dün saat' p",
-        'today': "'bugün saat' p",
-        'tomorrow': "'yarın saat' p",
-        'nextWeek': "eeee 'saat' p",
+        'lastWeek': null,
+        'yesterday': "'ontem às' p",
+        'today': "'hoje às' p",
+        'tomorrow': "'amanhã às' p",
+        'nextWeek': "eeee 'às' p",
         'other': 'P'
     };
+    var4 = function arg0() {
+        _fun22154: for (var _fun22154_ip = 0;;) switch (_fun22154_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = var1.getUTCDay;
+                var2 = var0.bind(var1)();
+                var0 = 0;
+                if (!(var0 !== var2)) {
+                    _fun22154_ip = 32;
+                    continue _fun22154
+                }
+            case 19:
+                var1 = 'última';
+                var0 = 6;
+                if (!(var0 === var2)) {
+                    _fun22154_ip = 38;
+                    continue _fun22154
+                }
+            case 32:
+                var1 = 'último';
+            case 38:
+                var0 = "'";
+                var1 = var0 + var1;
+                var0 = "' eeee 'às' p";
+                var0 = var1 + var0;
+                return var0;
+        }
+    };
+    var3.lastWeek = var4;
     var _closure1_slot0 = var3;
     var2 = function arg0, arg1, arg2, arg3() {
-        var1 = _closure1_slot0;
-        var0 = arg0;
-        var0 = var1[var0];
-        return var0;
+        _fun22155: for (var _fun22155_ip = 0;;) switch (_fun22155_ip) {
+            case 0:
+                var1 = _closure1_slot0;
+                var0 = arg0;
+                var3 = var1[var0];
+                var2 = 'function';
+                var1 = typeof var3;
+                var0 = var3;
+                if (!(var2 === var1)) {
+                    _fun22155_ip = 38;
+                    continue _fun22155
+                }
+            case 28:
+                var2 = undefined;
+                var1 = arg1;
+                var0 = var3.bind(var2)(var1);
+            case 38:
+                return var0;
+        }
     };
     var1.default = var2;
     var2 = var1.default;

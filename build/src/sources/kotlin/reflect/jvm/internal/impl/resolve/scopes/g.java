@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class g implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final SubstitutingScope f35532d;
+    private final SubstitutingScope f35308d;
 
     public g(SubstitutingScope substitutingScope) {
-        this.f35532d = substitutingScope;
+        this.f35308d = substitutingScope;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Collection a10;
-        a10 = SubstitutingScope.a(this.f35532d);
+        a10 = SubstitutingScope.a(this.f35308d);
         return a10;
     }
 }

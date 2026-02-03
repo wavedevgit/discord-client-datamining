@@ -91,7 +91,7 @@ public final class RiveFile implements AutoCloseable {
     }
 
     /* renamed from: getFileHandle-ENT3xMk$kotlin_release  reason: not valid java name */
-    public final long m31getFileHandleENT3xMk$kotlin_release() {
+    public final long m33getFileHandleENT3xMk$kotlin_release() {
         return this.fileHandle;
     }
 
@@ -147,12 +147,12 @@ public final class RiveFile implements AutoCloseable {
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m32invoke();
-                return Unit.f33298a;
+                m34invoke();
+                return Unit.f33074a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m32invoke() {
+            public final void m34invoke() {
                 final long j11 = j10;
                 RiveLog.INSTANCE.getLogger().d("Rive/File", new Function0<String>() { // from class: app.rive.RiveFile.1.1
                     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -163,11 +163,11 @@ public final class RiveFile implements AutoCloseable {
                     @Override // kotlin.jvm.functions.Function0
                     @NotNull
                     public final String invoke() {
-                        String m170toStringimpl = FileHandle.m170toStringimpl(j11);
-                        return "Deleting " + m170toStringimpl;
+                        String m172toStringimpl = FileHandle.m172toStringimpl(j11);
+                        return "Deleting " + m172toStringimpl;
                     }
                 });
-                CommandQueue.this.m120deleteFiledJ1Evnk(j10);
+                CommandQueue.this.m122deleteFiledJ1Evnk(j10);
                 CommandQueue.this.release("Rive/File", "RiveFile closed");
             }
         });

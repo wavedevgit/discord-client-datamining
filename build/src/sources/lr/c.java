@@ -1,63 +1,46 @@
 package lr;
 
-import java.util.Comparator;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
+import java.util.Arrays;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public class c {
-    public static Comparator b(final Function1... selectors) {
-        Intrinsics.checkNotNullParameter(selectors, "selectors");
-        if (selectors.length > 0) {
-            return new Comparator() { // from class: lr.b
-                @Override // java.util.Comparator
-                public final int compare(Object obj, Object obj2) {
-                    int c10;
-                    c10 = c.c(selectors, obj, obj2);
-                    return c10;
-                }
-            };
+public class c extends b {
+    public static boolean a(short[] sArr, short[] sArr2) {
+        if (sArr == null) {
+            sArr = null;
         }
-        throw new IllegalArgumentException("Failed requirement.");
+        if (sArr2 == null) {
+            sArr2 = null;
+        }
+        return Arrays.equals(sArr, sArr2);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int c(Function1[] function1Arr, Object obj, Object obj2) {
-        return e(obj, obj2, function1Arr);
+    public static boolean b(int[] iArr, int[] iArr2) {
+        if (iArr == null) {
+            iArr = null;
+        }
+        if (iArr2 == null) {
+            iArr2 = null;
+        }
+        return Arrays.equals(iArr, iArr2);
     }
 
-    public static int d(Comparable comparable, Comparable comparable2) {
-        if (comparable == comparable2) {
-            return 0;
+    public static boolean c(byte[] bArr, byte[] bArr2) {
+        if (bArr == null) {
+            bArr = null;
         }
-        if (comparable == null) {
-            return -1;
+        if (bArr2 == null) {
+            bArr2 = null;
         }
-        if (comparable2 == null) {
-            return 1;
-        }
-        return comparable.compareTo(comparable2);
+        return Arrays.equals(bArr, bArr2);
     }
 
-    private static final int e(Object obj, Object obj2, Function1[] function1Arr) {
-        for (Function1 function1 : function1Arr) {
-            int d10 = d((Comparable) function1.invoke(obj), (Comparable) function1.invoke(obj2));
-            if (d10 != 0) {
-                return d10;
-            }
+    public static boolean d(long[] jArr, long[] jArr2) {
+        if (jArr == null) {
+            jArr = null;
         }
-        return 0;
-    }
-
-    public static Comparator f() {
-        f fVar = f.f37442d;
-        Intrinsics.checkNotNull(fVar, "null cannot be cast to non-null type java.util.Comparator<T of kotlin.comparisons.ComparisonsKt__ComparisonsKt.naturalOrder>");
-        return fVar;
-    }
-
-    public static Comparator g() {
-        g gVar = g.f37443d;
-        Intrinsics.checkNotNull(gVar, "null cannot be cast to non-null type java.util.Comparator<T of kotlin.comparisons.ComparisonsKt__ComparisonsKt.reverseOrder>");
-        return gVar;
+        if (jArr2 == null) {
+            jArr2 = null;
+        }
+        return Arrays.equals(jArr, jArr2);
     }
 }

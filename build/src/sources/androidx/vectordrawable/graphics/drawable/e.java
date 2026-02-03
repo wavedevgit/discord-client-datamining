@@ -9,11 +9,11 @@ import android.graphics.drawable.Drawable;
 abstract class e extends Drawable {
 
     /* renamed from: d  reason: collision with root package name */
-    Drawable f5356d;
+    Drawable f5400d;
 
     @Override // android.graphics.drawable.Drawable
     public void applyTheme(Resources.Theme theme) {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             s1.a.a(drawable, theme);
         }
@@ -21,7 +21,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public void clearColorFilter() {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             drawable.clearColorFilter();
         } else {
@@ -31,7 +31,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public Drawable getCurrent() {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             return drawable.getCurrent();
         }
@@ -40,7 +40,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public int getMinimumHeight() {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             return drawable.getMinimumHeight();
         }
@@ -49,7 +49,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public int getMinimumWidth() {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             return drawable.getMinimumWidth();
         }
@@ -58,7 +58,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public boolean getPadding(Rect rect) {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             return drawable.getPadding(rect);
         }
@@ -67,7 +67,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public int[] getState() {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             return drawable.getState();
         }
@@ -76,7 +76,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public Region getTransparentRegion() {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             return drawable.getTransparentRegion();
         }
@@ -85,7 +85,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public void jumpToCurrentState() {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             s1.a.i(drawable);
         }
@@ -93,7 +93,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     protected boolean onLevelChange(int i10) {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             return drawable.setLevel(i10);
         }
@@ -102,7 +102,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public void setChangingConfigurations(int i10) {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             drawable.setChangingConfigurations(i10);
         } else {
@@ -112,7 +112,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(int i10, PorterDuff.Mode mode) {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             drawable.setColorFilter(i10, mode);
         } else {
@@ -122,7 +122,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public void setFilterBitmap(boolean z10) {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             drawable.setFilterBitmap(z10);
         }
@@ -130,7 +130,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public void setHotspot(float f10, float f11) {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             s1.a.k(drawable, f10, f11);
         }
@@ -138,7 +138,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public void setHotspotBounds(int i10, int i11, int i12, int i13) {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             s1.a.l(drawable, i10, i11, i12, i13);
         }
@@ -146,7 +146,7 @@ abstract class e extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public boolean setState(int[] iArr) {
-        Drawable drawable = this.f5356d;
+        Drawable drawable = this.f5400d;
         if (drawable != null) {
             return drawable.setState(iArr);
         }

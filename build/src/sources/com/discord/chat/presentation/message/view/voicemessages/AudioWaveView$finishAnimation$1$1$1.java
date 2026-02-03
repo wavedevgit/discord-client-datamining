@@ -1,6 +1,6 @@
 package com.discord.chat.presentation.message.view.voicemessages;
 
-import gs.i0;
+import hs.i0;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
@@ -24,7 +24,7 @@ final class AudioWaveView$finishAnimation$1$1$1 extends kotlin.coroutines.jvm.in
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        Object f10 = or.b.f();
+        Object f10 = pr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -39,11 +39,11 @@ final class AudioWaveView$finishAnimation$1$1$1 extends kotlin.coroutines.jvm.in
                 return f10;
             }
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioWaveView$finishAnimation$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((AudioWaveView$finishAnimation$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

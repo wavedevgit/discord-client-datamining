@@ -9,27 +9,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var2, var0, var1);
+    var1 = dependencyMap;
+    var0 = 0;
+    var3 = var1[var0];
+    var1 = require;
     var0 = undefined;
-    var2.default = var0;
-    var1 = function() {
-        var0 = function(arg0) { // Environment: var0
-            var0 = arg0;
-            var _closure3_slot0 = var0;
-            var0 = {};
-            var1 = {};
-            var2 = function() {
-                var2 = _closure3_slot0;
-                var1 = var2.send;
-                var0 = 'clear';
-                var0 = var1.bind(var2)(var0);
-                return var0;
-            };
-            var1.clear = var2;
-            var0.features = var1;
-            return var0;
-        };
-        return var0;
-    };
-    var2.default = var1;
+    var1 = var1.bind(var0)(var3);
+    var1 = var1.URLSearchParams;
+    var2.URLSearchParams = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12701]);

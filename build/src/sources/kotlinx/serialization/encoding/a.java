@@ -6,7 +6,7 @@ import kotlinx.serialization.DeserializationStrategy;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.c;
-import xs.n;
+import ys.n;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class a implements Decoder, c {
     @Override // kotlinx.serialization.encoding.c

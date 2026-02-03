@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun21954: for (var _fun21954_ip = 0;;) switch (_fun21954_ip) {
+    _fun21962: for (var _fun21962_ip = 0;;) switch (_fun21962_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun21954_ip = 75;
-                continue _fun21954
+                _fun21962_ip = 75;
+                continue _fun21962
             }
         case 63:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun21954_ip = 84;
-                continue _fun21954
+                _fun21962_ip = 84;
+                continue _fun21962
             }
         case 75:
             var2 = {};
@@ -38,8 +38,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var5 = {
-                'full': 'EEEE d MMMM y',
-                'long': 'd MMMM y',
+                'full': "EEEE, d 'de' MMMM 'de' y",
+                'long': "d 'de' MMMM 'de' y",
                 'medium': 'd MMM y',
                 'short': 'dd/MM/y'
             };
@@ -63,10 +63,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var3.default;
             var3 = {};
             var6 = {
-                'full': '{{date}} {{time}}',
-                'long': '{{date}} {{time}}',
-                'medium': '{{date}} {{time}}',
-                'short': '{{date}} {{time}}'
+                'full': "{{date}} 'a las' {{time}}",
+                'long': "{{date}} 'a las' {{time}}",
+                'medium': '{{date}}, {{time}}',
+                'short': '{{date}}, {{time}}'
             };
             var3.formats = var6;
             var3.defaultWidth = var5;

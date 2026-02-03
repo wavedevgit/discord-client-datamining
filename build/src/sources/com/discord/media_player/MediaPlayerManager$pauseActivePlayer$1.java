@@ -28,20 +28,20 @@ public final class MediaPlayerManager$pauseActivePlayer$1 extends k implements F
     public final Object invokeSuspend(Object obj) {
         WeakReference weakReference;
         MediaPlayer mediaPlayer;
-        or.b.f();
+        pr.b.f();
         if (this.label == 0) {
             kotlin.c.b(obj);
             weakReference = MediaPlayerManager.activePlayerRef;
             if (weakReference != null && (mediaPlayer = (MediaPlayer) weakReference.get()) != null) {
                 mediaPlayer.pause();
             }
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManager$pauseActivePlayer$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((MediaPlayerManager$pauseActivePlayer$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

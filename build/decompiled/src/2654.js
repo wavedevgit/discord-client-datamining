@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22095: for (var _fun22095_ip = 0;;) switch (_fun22095_ip) {
+    _fun22108: for (var _fun22108_ip = 0;;) switch (_fun22108_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun22095_ip = 75;
-                continue _fun22095
+                _fun22108_ip = 75;
+                continue _fun22108
             }
         case 63:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun22095_ip = 84;
-                continue _fun22095
+                _fun22108_ip = 84;
+                continue _fun22108
             }
         case 75:
             var2 = {};
@@ -35,38 +35,40 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var2;
         case 84:
             var2 = {};
-            var5 = var3.default;
+            var6 = var3.default;
             var4 = {};
-            var6 = {
-                'full': "EEEE, d MMMM y 'г.'",
-                'long': "d MMMM y 'г.'",
-                'medium': "d MMM y 'г.'",
-                'short': 'dd.MM.y'
+            var5 = {
+                'full': 'EEEE d MMMM y',
+                'long': 'd MMMM y',
+                'medium': 'd MMM y',
+                'short': 'dd-MM-y'
             };
-            var4.formats = var6;
-            var6 = 'full';
-            var4.defaultWidth = var6;
-            var4 = var5.bind(var0)(var4);
+            var4.formats = var5;
+            var5 = 'full';
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
             var2.date = var4;
-            var5 = var3.default;
+            var6 = var3.default;
             var4 = {};
             var7 = {
-                'full': 'H:mm:ss zzzz',
-                'long': 'H:mm:ss z',
-                'medium': 'H:mm:ss',
-                'short': 'H:mm'
+                'full': 'HH:mm:ss zzzz',
+                'long': 'HH:mm:ss z',
+                'medium': 'HH:mm:ss',
+                'short': 'HH:mm'
             };
             var4.formats = var7;
-            var4.defaultWidth = var6;
-            var4 = var5.bind(var0)(var4);
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
             var2.time = var4;
             var4 = var3.default;
             var3 = {};
-            var5 = {};
-            var6 = '{{date}}, {{time}}';
-            var5.any = var6;
-            var3.formats = var5;
-            var5 = 'any';
+            var6 = {
+                'full': "{{date}} 'om' {{time}}",
+                'long': "{{date}} 'om' {{time}}",
+                'medium': '{{date}}, {{time}}',
+                'short': '{{date}}, {{time}}'
+            };
+            var3.formats = var6;
             var3.defaultWidth = var5;
             var3 = var4.bind(var0)(var3);
             var2.dateTime = var3;

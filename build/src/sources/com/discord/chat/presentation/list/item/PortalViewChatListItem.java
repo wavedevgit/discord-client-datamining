@@ -13,7 +13,7 @@ public final class PortalViewChatListItem extends ChatListItem {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9727id;
+    private final String f9356id;
     private final Pair<Integer, Integer> measuredDimensions;
     @NotNull
     private final View view;
@@ -25,7 +25,7 @@ public final class PortalViewChatListItem extends ChatListItem {
     /* JADX WARN: Multi-variable type inference failed */
     public static /* synthetic */ PortalViewChatListItem copy$default(PortalViewChatListItem portalViewChatListItem, String str, View view, Pair pair, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = portalViewChatListItem.f9727id;
+            str = portalViewChatListItem.f9356id;
         }
         if ((i10 & 2) != 0) {
             view = portalViewChatListItem.view;
@@ -38,7 +38,7 @@ public final class PortalViewChatListItem extends ChatListItem {
 
     @NotNull
     public final String component1() {
-        return this.f9727id;
+        return this.f9356id;
     }
 
     @NotNull
@@ -63,7 +63,7 @@ public final class PortalViewChatListItem extends ChatListItem {
         }
         if (obj instanceof PortalViewChatListItem) {
             PortalViewChatListItem portalViewChatListItem = (PortalViewChatListItem) obj;
-            return Intrinsics.areEqual(this.f9727id, portalViewChatListItem.f9727id) && Intrinsics.areEqual(this.view, portalViewChatListItem.view) && Intrinsics.areEqual(this.measuredDimensions, portalViewChatListItem.measuredDimensions);
+            return Intrinsics.areEqual(this.f9356id, portalViewChatListItem.f9356id) && Intrinsics.areEqual(this.view, portalViewChatListItem.view) && Intrinsics.areEqual(this.measuredDimensions, portalViewChatListItem.measuredDimensions);
         }
         return false;
     }
@@ -71,7 +71,7 @@ public final class PortalViewChatListItem extends ChatListItem {
     @Override // com.discord.chat.presentation.list.item.ChatListItem
     @NotNull
     public String getId() {
-        return this.f9727id;
+        return this.f9356id;
     }
 
     public final Pair<Integer, Integer> getMeasuredDimensions() {
@@ -84,14 +84,14 @@ public final class PortalViewChatListItem extends ChatListItem {
     }
 
     public int hashCode() {
-        int hashCode = ((this.f9727id.hashCode() * 31) + this.view.hashCode()) * 31;
+        int hashCode = ((this.f9356id.hashCode() * 31) + this.view.hashCode()) * 31;
         Pair<Integer, Integer> pair = this.measuredDimensions;
         return hashCode + (pair == null ? 0 : pair.hashCode());
     }
 
     @NotNull
     public String toString() {
-        String str = this.f9727id;
+        String str = this.f9356id;
         View view = this.view;
         Pair<Integer, Integer> pair = this.measuredDimensions;
         return "PortalViewChatListItem(id=" + str + ", view=" + view + ", measuredDimensions=" + pair + ")";
@@ -102,7 +102,7 @@ public final class PortalViewChatListItem extends ChatListItem {
         super(id2, null);
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(view, "view");
-        this.f9727id = id2;
+        this.f9356id = id2;
         this.view = view;
         this.measuredDimensions = pair;
     }

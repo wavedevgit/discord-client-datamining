@@ -1,80 +1,81 @@
 package wm;
 
-import android.content.Context;
 import android.view.View;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.r0;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Reflection;
-import u3.j;
+import kotlin.jvm.internal.Lambda;
+import kotlinx.coroutines.CompletableJob;
+import kotlinx.coroutines.CoroutineScope;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c {
+public final class c implements View.OnAttachStateChangeListener {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final c f52706a = new c();
+    /* renamed from: d  reason: collision with root package name */
+    private final List f52300d;
 
-    private c() {
-    }
+    /* renamed from: e  reason: collision with root package name */
+    private final CompletableJob f52301e;
 
-    /* JADX WARN: Removed duplicated region for block: B:6:0x000b  */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    private final java.lang.Object b(android.content.Context r3, kotlin.reflect.KClass r4) {
-        /*
-            r2 = this;
-        L0:
-            boolean r0 = r4.isInstance(r3)
-            if (r0 == 0) goto Lb
-            java.lang.Object r3 = kotlin.reflect.c.a(r4, r3)
-            return r3
-        Lb:
-            boolean r0 = r3 instanceof android.content.ContextWrapper
-            r1 = 0
-            if (r0 == 0) goto L13
-            android.content.ContextWrapper r3 = (android.content.ContextWrapper) r3
-            goto L14
-        L13:
-            r3 = r1
-        L14:
-            if (r3 != 0) goto L17
-            return r1
-        L17:
-            android.content.Context r3 = r3.getBaseContext()
-            if (r3 != 0) goto L0
-            return r1
-        */
-        throw new UnsupportedOperationException("Method not decompiled: wm.c.b(android.content.Context, kotlin.reflect.KClass):java.lang.Object");
-    }
+    /* renamed from: i  reason: collision with root package name */
+    private final CoroutineScope f52302i;
 
-    private final u3.f d(View view) {
-        u3.f a10 = j.a(view);
-        if (a10 == null) {
-            Context context = view.getContext();
-            Intrinsics.checkNotNullExpressionValue(context, "view.context");
-            return (u3.f) b(context, Reflection.getOrCreateKotlinClass(u3.f.class));
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    static final class a extends Lambda implements Function1 {
+        a() {
+            super(1);
         }
-        return a10;
+
+        @Override // kotlin.jvm.functions.Function1
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            invoke((Throwable) obj);
+            return Unit.f33074a;
+        }
+
+        public final void invoke(Throwable th2) {
+            c.this.f52300d.clear();
+        }
     }
 
-    public final LifecycleOwner a(View view) {
-        Intrinsics.checkNotNullParameter(view, "view");
-        LifecycleOwner a10 = r0.a(view);
-        if (a10 == null) {
-            Context context = view.getContext();
-            Intrinsics.checkNotNullExpressionValue(context, "view.context");
-            return (LifecycleOwner) b(context, Reflection.getOrCreateKotlinClass(LifecycleOwner.class));
-        }
-        return a10;
+    public c(CoroutineScope parentCoroutineScope) {
+        Intrinsics.checkNotNullParameter(parentCoroutineScope, "parentCoroutineScope");
+        this.f52300d = new ArrayList();
+        CompletableJob a10 = kotlinx.coroutines.z.a(kotlinx.coroutines.z.m(parentCoroutineScope.getCoroutineContext()));
+        a10.D0(new a());
+        this.f52301e = a10;
+        this.f52302i = kotlinx.coroutines.i.j(parentCoroutineScope, a10);
     }
 
-    public final u3.f c(View view) {
-        Intrinsics.checkNotNullParameter(view, "view");
-        u3.f d10 = d(view);
-        if (d10 != null) {
-            return d10;
+    public final CoroutineScope b() {
+        return this.f52302i;
+    }
+
+    public final void c(Function0 block) {
+        Intrinsics.checkNotNullParameter(block, "block");
+        if (kotlinx.coroutines.i.i(this.f52302i)) {
+            this.f52300d.add(block);
+            return;
         }
-        throw new IllegalStateException(Intrinsics.stringPlus("Expected to find a SavedStateRegistryOwner either in a parent view or the Context of ", view).toString());
+        throw new IllegalStateException("Expected AttachedScope to be active when adding attach handler.");
+    }
+
+    @Override // android.view.View.OnAttachStateChangeListener
+    public void onViewAttachedToWindow(View v10) {
+        Intrinsics.checkNotNullParameter(v10, "v");
+        List<Function0> list = this.f52300d;
+        for (Function0 function0 : list) {
+            function0.invoke();
+        }
+        list.clear();
+    }
+
+    @Override // android.view.View.OnAttachStateChangeListener
+    public void onViewDetachedFromWindow(View v10) {
+        Intrinsics.checkNotNullParameter(v10, "v");
+        kotlinx.coroutines.i.e(this.f52302i, "View detached", null, 2, null);
+        v10.removeOnAttachStateChangeListener(this);
     }
 }

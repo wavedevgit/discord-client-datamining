@@ -7,47 +7,47 @@ import ne.w0;
 public final class n extends i {
 
     /* renamed from: i  reason: collision with root package name */
-    private final long f13389i;
+    private final long f13018i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final long f13390j;
+    private final long f13019j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final short f13391k;
+    private final short f13020k;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f13392l;
+    private int f13021l;
 
     /* renamed from: m  reason: collision with root package name */
-    private boolean f13393m;
+    private boolean f13022m;
 
     /* renamed from: n  reason: collision with root package name */
-    private byte[] f13394n;
+    private byte[] f13023n;
 
     /* renamed from: o  reason: collision with root package name */
-    private byte[] f13395o;
+    private byte[] f13024o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f13396p;
+    private int f13025p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f13397q;
+    private int f13026q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f13398r;
+    private int f13027r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f13399s;
+    private boolean f13028s;
 
     /* renamed from: t  reason: collision with root package name */
-    private long f13400t;
+    private long f13029t;
 
     public n() {
         this(150000L, 20000L, (short) 1024);
     }
 
     private int m(long j10) {
-        return (int) ((j10 * this.f13291b.f13239a) / 1000000);
+        return (int) ((j10 * this.f12920b.f12868a) / 1000000);
     }
 
     private int n(ByteBuffer byteBuffer) {
@@ -55,8 +55,8 @@ public final class n extends i {
         while (true) {
             limit -= 2;
             if (limit >= byteBuffer.position()) {
-                if (Math.abs((int) byteBuffer.getShort(limit)) > this.f13391k) {
-                    int i10 = this.f13392l;
+                if (Math.abs((int) byteBuffer.getShort(limit)) > this.f13020k) {
+                    int i10 = this.f13021l;
                     return ((limit / i10) * i10) + i10;
                 }
             } else {
@@ -67,8 +67,8 @@ public final class n extends i {
 
     private int o(ByteBuffer byteBuffer) {
         for (int position = byteBuffer.position(); position < byteBuffer.limit(); position += 2) {
-            if (Math.abs((int) byteBuffer.getShort(position)) > this.f13391k) {
-                int i10 = this.f13392l;
+            if (Math.abs((int) byteBuffer.getShort(position)) > this.f13020k) {
+                int i10 = this.f13021l;
                 return i10 * (position / i10);
             }
         }
@@ -79,14 +79,14 @@ public final class n extends i {
         int remaining = byteBuffer.remaining();
         l(remaining).put(byteBuffer).flip();
         if (remaining > 0) {
-            this.f13399s = true;
+            this.f13028s = true;
         }
     }
 
     private void r(byte[] bArr, int i10) {
         l(i10).put(bArr, 0, i10).flip();
         if (i10 > 0) {
-            this.f13399s = true;
+            this.f13028s = true;
         }
     }
 
@@ -94,42 +94,42 @@ public final class n extends i {
         int limit = byteBuffer.limit();
         int o10 = o(byteBuffer);
         int position = o10 - byteBuffer.position();
-        byte[] bArr = this.f13394n;
+        byte[] bArr = this.f13023n;
         int length = bArr.length;
-        int i10 = this.f13397q;
+        int i10 = this.f13026q;
         int i11 = length - i10;
         if (o10 < limit && position < i11) {
             r(bArr, i10);
-            this.f13397q = 0;
-            this.f13396p = 0;
+            this.f13026q = 0;
+            this.f13025p = 0;
             return;
         }
         int min = Math.min(position, i11);
         byteBuffer.limit(byteBuffer.position() + min);
-        byteBuffer.get(this.f13394n, this.f13397q, min);
-        int i12 = this.f13397q + min;
-        this.f13397q = i12;
-        byte[] bArr2 = this.f13394n;
+        byteBuffer.get(this.f13023n, this.f13026q, min);
+        int i12 = this.f13026q + min;
+        this.f13026q = i12;
+        byte[] bArr2 = this.f13023n;
         if (i12 == bArr2.length) {
-            if (this.f13399s) {
-                r(bArr2, this.f13398r);
-                this.f13400t += (this.f13397q - (this.f13398r * 2)) / this.f13392l;
+            if (this.f13028s) {
+                r(bArr2, this.f13027r);
+                this.f13029t += (this.f13026q - (this.f13027r * 2)) / this.f13021l;
             } else {
-                this.f13400t += (i12 - this.f13398r) / this.f13392l;
+                this.f13029t += (i12 - this.f13027r) / this.f13021l;
             }
-            w(byteBuffer, this.f13394n, this.f13397q);
-            this.f13397q = 0;
-            this.f13396p = 2;
+            w(byteBuffer, this.f13023n, this.f13026q);
+            this.f13026q = 0;
+            this.f13025p = 2;
         }
         byteBuffer.limit(limit);
     }
 
     private void t(ByteBuffer byteBuffer) {
         int limit = byteBuffer.limit();
-        byteBuffer.limit(Math.min(limit, byteBuffer.position() + this.f13394n.length));
+        byteBuffer.limit(Math.min(limit, byteBuffer.position() + this.f13023n.length));
         int n10 = n(byteBuffer);
         if (n10 == byteBuffer.position()) {
-            this.f13396p = 1;
+            this.f13025p = 1;
         } else {
             byteBuffer.limit(n10);
             q(byteBuffer);
@@ -141,32 +141,32 @@ public final class n extends i {
         int limit = byteBuffer.limit();
         int o10 = o(byteBuffer);
         byteBuffer.limit(o10);
-        this.f13400t += byteBuffer.remaining() / this.f13392l;
-        w(byteBuffer, this.f13395o, this.f13398r);
+        this.f13029t += byteBuffer.remaining() / this.f13021l;
+        w(byteBuffer, this.f13024o, this.f13027r);
         if (o10 < limit) {
-            r(this.f13395o, this.f13398r);
-            this.f13396p = 0;
+            r(this.f13024o, this.f13027r);
+            this.f13025p = 0;
             byteBuffer.limit(limit);
         }
     }
 
     private void w(ByteBuffer byteBuffer, byte[] bArr, int i10) {
-        int min = Math.min(byteBuffer.remaining(), this.f13398r);
-        int i11 = this.f13398r - min;
-        System.arraycopy(bArr, i10 - i11, this.f13395o, 0, i11);
+        int min = Math.min(byteBuffer.remaining(), this.f13027r);
+        int i11 = this.f13027r - min;
+        System.arraycopy(bArr, i10 - i11, this.f13024o, 0, i11);
         byteBuffer.position(byteBuffer.limit() - min);
-        byteBuffer.get(this.f13395o, i11, min);
+        byteBuffer.get(this.f13024o, i11, min);
     }
 
     @Override // com.google.android.exoplayer2.audio.i, com.google.android.exoplayer2.audio.d
     public boolean a() {
-        return this.f13393m;
+        return this.f13022m;
     }
 
     @Override // com.google.android.exoplayer2.audio.d
     public void c(ByteBuffer byteBuffer) {
         while (byteBuffer.hasRemaining() && !g()) {
-            int i10 = this.f13396p;
+            int i10 = this.f13025p;
             if (i10 != 0) {
                 if (i10 != 1) {
                     if (i10 == 2) {
@@ -185,70 +185,70 @@ public final class n extends i {
 
     @Override // com.google.android.exoplayer2.audio.i
     public d.a h(d.a aVar) {
-        if (aVar.f13241c == 2) {
-            if (this.f13393m) {
+        if (aVar.f12870c == 2) {
+            if (this.f13022m) {
                 return aVar;
             }
-            return d.a.f13238e;
+            return d.a.f12867e;
         }
         throw new d.b(aVar);
     }
 
     @Override // com.google.android.exoplayer2.audio.i
     protected void i() {
-        if (this.f13393m) {
-            this.f13392l = this.f13291b.f13242d;
-            int m10 = m(this.f13389i) * this.f13392l;
-            if (this.f13394n.length != m10) {
-                this.f13394n = new byte[m10];
+        if (this.f13022m) {
+            this.f13021l = this.f12920b.f12871d;
+            int m10 = m(this.f13018i) * this.f13021l;
+            if (this.f13023n.length != m10) {
+                this.f13023n = new byte[m10];
             }
-            int m11 = m(this.f13390j) * this.f13392l;
-            this.f13398r = m11;
-            if (this.f13395o.length != m11) {
-                this.f13395o = new byte[m11];
+            int m11 = m(this.f13019j) * this.f13021l;
+            this.f13027r = m11;
+            if (this.f13024o.length != m11) {
+                this.f13024o = new byte[m11];
             }
         }
-        this.f13396p = 0;
-        this.f13400t = 0L;
-        this.f13397q = 0;
-        this.f13399s = false;
+        this.f13025p = 0;
+        this.f13029t = 0L;
+        this.f13026q = 0;
+        this.f13028s = false;
     }
 
     @Override // com.google.android.exoplayer2.audio.i
     protected void j() {
-        int i10 = this.f13397q;
+        int i10 = this.f13026q;
         if (i10 > 0) {
-            r(this.f13394n, i10);
+            r(this.f13023n, i10);
         }
-        if (!this.f13399s) {
-            this.f13400t += this.f13398r / this.f13392l;
+        if (!this.f13028s) {
+            this.f13029t += this.f13027r / this.f13021l;
         }
     }
 
     @Override // com.google.android.exoplayer2.audio.i
     protected void k() {
-        this.f13393m = false;
-        this.f13398r = 0;
-        byte[] bArr = w0.f40300f;
-        this.f13394n = bArr;
-        this.f13395o = bArr;
+        this.f13022m = false;
+        this.f13027r = 0;
+        byte[] bArr = w0.f40163f;
+        this.f13023n = bArr;
+        this.f13024o = bArr;
     }
 
     public long p() {
-        return this.f13400t;
+        return this.f13029t;
     }
 
     public void v(boolean z10) {
-        this.f13393m = z10;
+        this.f13022m = z10;
     }
 
     public n(long j10, long j11, short s10) {
         ne.a.a(j11 <= j10);
-        this.f13389i = j10;
-        this.f13390j = j11;
-        this.f13391k = s10;
-        byte[] bArr = w0.f40300f;
-        this.f13394n = bArr;
-        this.f13395o = bArr;
+        this.f13018i = j10;
+        this.f13019j = j11;
+        this.f13020k = s10;
+        byte[] bArr = w0.f40163f;
+        this.f13023n = bArr;
+        this.f13024o = bArr;
     }
 }

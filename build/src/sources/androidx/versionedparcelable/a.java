@@ -7,18 +7,18 @@ import java.lang.reflect.Method;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final u0.a f5426a;
+    protected final u0.a f5470a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected final u0.a f5427b;
+    protected final u0.a f5471b;
 
     /* renamed from: c  reason: collision with root package name */
-    protected final u0.a f5428c;
+    protected final u0.a f5472c;
 
     public a(u0.a aVar, u0.a aVar2, u0.a aVar3) {
-        this.f5426a = aVar;
-        this.f5427b = aVar2;
-        this.f5428c = aVar3;
+        this.f5470a = aVar;
+        this.f5471b = aVar2;
+        this.f5472c = aVar3;
     }
 
     private void N(d4.a aVar) {
@@ -30,33 +30,33 @@ public abstract class a {
     }
 
     private Class c(Class cls) {
-        Class cls2 = (Class) this.f5428c.get(cls.getName());
+        Class cls2 = (Class) this.f5472c.get(cls.getName());
         if (cls2 == null) {
             Class<?> cls3 = Class.forName(String.format("%s.%sParcelizer", cls.getPackage().getName(), cls.getSimpleName()), false, cls.getClassLoader());
-            this.f5428c.put(cls.getName(), cls3);
+            this.f5472c.put(cls.getName(), cls3);
             return cls3;
         }
         return cls2;
     }
 
     private Method d(String str) {
-        Method method = (Method) this.f5426a.get(str);
+        Method method = (Method) this.f5470a.get(str);
         if (method == null) {
             System.currentTimeMillis();
             Method declaredMethod = Class.forName(str, true, a.class.getClassLoader()).getDeclaredMethod("read", a.class);
-            this.f5426a.put(str, declaredMethod);
+            this.f5470a.put(str, declaredMethod);
             return declaredMethod;
         }
         return method;
     }
 
     private Method e(Class cls) {
-        Method method = (Method) this.f5427b.get(cls.getName());
+        Method method = (Method) this.f5471b.get(cls.getName());
         if (method == null) {
             Class c10 = c(cls);
             System.currentTimeMillis();
             Method declaredMethod = c10.getDeclaredMethod("write", cls, a.class);
-            this.f5427b.put(cls.getName(), declaredMethod);
+            this.f5471b.put(cls.getName(), declaredMethod);
             return declaredMethod;
         }
         return method;

@@ -84,4 +84,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getDetectedFileSizeExperimentConfig = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3076, 1588, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3106, 1588, 2]);

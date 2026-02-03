@@ -56,20 +56,20 @@ public enum e implements b {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f25685d;
+    private final String f25780d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f25686e;
+    private final String f25781e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f25687i;
+    private final int f25782i;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final Set f25688a = new HashSet(Arrays.asList(f.d().a()));
+        static final Set f25783a = new HashSet(Arrays.asList(f.d().a()));
     }
 
     e(String str, String str2) {
@@ -118,11 +118,11 @@ public enum e implements b {
 
     @Override // g4.b
     public String d() {
-        return this.f25685d;
+        return this.f25780d;
     }
 
     public boolean h() {
-        int i10 = this.f25687i;
+        int i10 = this.f25782i;
         if (i10 == -1 || Build.VERSION.SDK_INT < i10) {
             return false;
         }
@@ -130,12 +130,12 @@ public enum e implements b {
     }
 
     public boolean i() {
-        return zu.a.b(a.f25688a, this.f25686e);
+        return av.a.b(a.f25783a, this.f25781e);
     }
 
     e(String str, String str2, int i10) {
-        this.f25685d = str;
-        this.f25686e = str2;
-        this.f25687i = i10;
+        this.f25780d = str;
+        this.f25781e = str2;
+        this.f25782i = i10;
     }
 }

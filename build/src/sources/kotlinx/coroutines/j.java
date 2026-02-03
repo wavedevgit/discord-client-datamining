@@ -1,8 +1,8 @@
 package kotlinx.coroutines;
 
-import gs.l1;
-import gs.n0;
-import gs.p0;
+import hs.l1;
+import hs.n0;
+import hs.p0;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
@@ -16,15 +16,15 @@ public final class j extends q implements Runnable {
     private static volatile int debugStatus;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final j f36356t;
+    public static final j f36132t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final long f36357u;
+    private static final long f36133u;
 
     static {
         Long l10;
         j jVar = new j();
-        f36356t = jVar;
+        f36132t = jVar;
         p0.q2(jVar, false, 1, null);
         TimeUnit timeUnit = TimeUnit.MILLISECONDS;
         try {
@@ -32,7 +32,7 @@ public final class j extends q implements Runnable {
         } catch (SecurityException unused) {
             l10 = 1000L;
         }
-        f36357u = timeUnit.toNanos(l10.longValue());
+        f36133u = timeUnit.toNanos(l10.longValue());
     }
 
     private j() {
@@ -54,7 +54,7 @@ public final class j extends q implements Runnable {
         if (thread == null) {
             thread = new Thread(this, "kotlinx.coroutines.DefaultExecutor");
             _thread = thread;
-            thread.setContextClassLoader(f36356t.getClass().getClassLoader());
+            thread.setContextClassLoader(f36132t.getClass().getClassLoader());
             thread.setDaemon(true);
             thread.start();
         }
@@ -99,15 +99,15 @@ public final class j extends q implements Runnable {
     }
 
     @Override // kotlinx.coroutines.q, kotlinx.coroutines.k
-    public n0 D0(long j10, Runnable runnable, CoroutineContext coroutineContext) {
+    public n0 E0(long j10, Runnable runnable, CoroutineContext coroutineContext) {
         return N2(j10, runnable);
     }
 
     @Override // java.lang.Runnable
     public void run() {
         boolean I2;
-        l1.f27177a.d(this);
-        gs.b.a();
+        l1.f27924a.d(this);
+        hs.b.a();
         try {
             if (!U2()) {
                 if (!I2) {
@@ -120,16 +120,16 @@ public final class j extends q implements Runnable {
                 Thread.interrupted();
                 long t22 = t2();
                 if (t22 == LongCompanionObject.MAX_VALUE) {
-                    gs.b.a();
+                    hs.b.a();
                     long nanoTime = System.nanoTime();
                     if (j10 == LongCompanionObject.MAX_VALUE) {
-                        j10 = f36357u + nanoTime;
+                        j10 = f36133u + nanoTime;
                     }
                     long j11 = j10 - nanoTime;
                     if (j11 <= 0) {
                         _thread = null;
                         Q2();
-                        gs.b.a();
+                        hs.b.a();
                         if (!I2()) {
                             w2();
                             return;
@@ -144,28 +144,28 @@ public final class j extends q implements Runnable {
                     if (T2()) {
                         _thread = null;
                         Q2();
-                        gs.b.a();
+                        hs.b.a();
                         if (!I2()) {
                             w2();
                             return;
                         }
                         return;
                     }
-                    gs.b.a();
+                    hs.b.a();
                     LockSupport.parkNanos(this, t22);
                 }
             }
         } finally {
             _thread = null;
             Q2();
-            gs.b.a();
+            hs.b.a();
             if (!I2()) {
                 w2();
             }
         }
     }
 
-    @Override // kotlinx.coroutines.q, gs.p0
+    @Override // kotlinx.coroutines.q, hs.p0
     public void shutdown() {
         debugStatus = 4;
         super.shutdown();

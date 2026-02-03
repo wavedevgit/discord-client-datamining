@@ -50,14 +50,14 @@ public final class NextStep_Document_AssetConfig_PendingPageJsonAdapter extends 
         RemoteImage remoteImage2 = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 remoteImage2 = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
                 i10 &= -3;
             }
@@ -68,7 +68,7 @@ public final class NextStep_Document_AssetConfig_PendingPageJsonAdapter extends 
         }
         Constructor<NextStep.Document.AssetConfig.PendingPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Document.AssetConfig.PendingPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, Integer.TYPE, sm.c.f49097c);
+            constructor = NextStep.Document.AssetConfig.PendingPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, Integer.TYPE, tm.c.f49935c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -82,9 +82,9 @@ public final class NextStep_Document_AssetConfig_PendingPageJsonAdapter extends 
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (pendingPage != null) {
             writer.l();
-            writer.A0("headerPictograph");
+            writer.t0("headerPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, pendingPage.getHeaderPictograph());
-            writer.A0("loadingPictograph");
+            writer.t0("loadingPictograph");
             this.nullableRemoteImageAdapter.toJson(writer, pendingPage.getLoadingPictograph());
             writer.E();
             return;

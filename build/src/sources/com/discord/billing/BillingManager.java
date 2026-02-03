@@ -16,8 +16,8 @@ import com.discord.misc.utilities.backoff.ExponentialBackoff;
 import com.discord.misc.utilities.logThrottle.LogThrottleSingleton;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
-import gs.m0;
-import gs.v0;
+import hs.m0;
+import hs.v0;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -158,7 +158,7 @@ public final class BillingManager {
         static {
             ClientReadyState[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
         }
 
         private ClientReadyState(String str, int i10, String str2) {
@@ -205,7 +205,7 @@ public final class BillingManager {
         static {
             ConnectionState[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
         }
 
         private ConnectionState(String str, int i10, int i11) {
@@ -351,7 +351,7 @@ public final class BillingManager {
                 BillingManager.loadPurchases$default(BillingManager.this, null, null, 3, null);
             }
         };
-        this.backoff = new ExponentialBackoff(v0.f27207d, 1000L, LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES, 10);
+        this.backoff = new ExponentialBackoff(v0.f27954d, 1000L, LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES, 10);
     }
 
     private static /* synthetic */ void getBackoff$annotations() {
@@ -372,7 +372,7 @@ public final class BillingManager {
         if (jVar != null) {
             return jVar;
         }
-        return v0.f27207d;
+        return v0.f27954d;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -437,7 +437,7 @@ public final class BillingManager {
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit unit;
-                    unit = Unit.f33298a;
+                    unit = Unit.f33074a;
                     return unit;
                 }
             };
@@ -458,7 +458,7 @@ public final class BillingManager {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit loadPurchases$lambda$8(Exception it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     public static /* synthetic */ void purchase$default(BillingManager billingManager, Activity activity, String str, ProductType productType, String str2, String str3, String str4, String str5, Function0 function0, Function1 function1, int i10, Object obj) {
@@ -486,7 +486,7 @@ public final class BillingManager {
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
     /* JADX WARN: Removed duplicated region for block: B:16:0x0035  */
-    /* JADX WARN: Removed duplicated region for block: B:63:0x008c A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:61:0x008c A[EXC_TOP_SPLITTER, SYNTHETIC] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -510,14 +510,14 @@ public final class BillingManager {
             r0.<init>(r7, r10)
         L18:
             java.lang.Object r10 = r0.result
-            java.lang.Object r1 = or.b.f()
+            java.lang.Object r1 = pr.b.f()
             int r2 = r0.label
             r3 = 1
             if (r2 == 0) goto L35
             if (r2 != r3) goto L2d
             java.lang.Object r8 = r0.L$0
             kotlinx.coroutines.CompletableDeferred r8 = (kotlinx.coroutines.CompletableDeferred) r8
-            kotlin.c.b(r10)     // Catch: gs.r1 -> L89
+            kotlin.c.b(r10)     // Catch: hs.r1 -> L89
             goto L85
         L2d:
             java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
@@ -541,7 +541,7 @@ public final class BillingManager {
             r7.reconnect()
         L50:
             r10 = 0
-            kotlinx.coroutines.CompletableDeferred r2 = gs.q.b(r10, r3, r10)
+            kotlinx.coroutines.CompletableDeferred r2 = hs.q.b(r10, r3, r10)
             java.util.List<kotlinx.coroutines.CompletableDeferred> r4 = r7.connectionReadyListeners
             monitor-enter(r4)
             com.discord.billing.BillingManager$ConnectionState r5 = r7.currentConnectionState     // Catch: java.lang.Throwable -> L62
@@ -564,17 +564,17 @@ public final class BillingManager {
             java.util.List<kotlinx.coroutines.CompletableDeferred> r5 = r7.connectionReadyListeners     // Catch: java.lang.Throwable -> L62
             r5.add(r2)     // Catch: java.lang.Throwable -> L62
             monitor-exit(r4)
-            com.discord.billing.BillingManager$suspendUntilReady$3 r4 = new com.discord.billing.BillingManager$suspendUntilReady$3     // Catch: gs.r1 -> L88
-            r4.<init>(r2, r10)     // Catch: gs.r1 -> L88
-            r0.L$0 = r2     // Catch: gs.r1 -> L88
-            r0.label = r3     // Catch: gs.r1 -> L88
-            java.lang.Object r10 = gs.t1.c(r8, r4, r0)     // Catch: gs.r1 -> L88
+            com.discord.billing.BillingManager$suspendUntilReady$3 r4 = new com.discord.billing.BillingManager$suspendUntilReady$3     // Catch: hs.r1 -> L88
+            r4.<init>(r2, r10)     // Catch: hs.r1 -> L88
+            r0.L$0 = r2     // Catch: hs.r1 -> L88
+            r0.label = r3     // Catch: hs.r1 -> L88
+            java.lang.Object r10 = hs.t1.c(r8, r4, r0)     // Catch: hs.r1 -> L88
             if (r10 != r1) goto L84
             return r1
         L84:
             r8 = r2
         L85:
-            com.discord.billing.BillingManager$ClientReadyState r10 = (com.discord.billing.BillingManager.ClientReadyState) r10     // Catch: gs.r1 -> L89
+            com.discord.billing.BillingManager$ClientReadyState r10 = (com.discord.billing.BillingManager.ClientReadyState) r10     // Catch: hs.r1 -> L89
             return r10
         L88:
             r8 = r2
@@ -630,10 +630,10 @@ public final class BillingManager {
             synchronized (this.connectionReadyListeners) {
                 try {
                     for (CompletableDeferred completableDeferred : this.connectionReadyListeners) {
-                        completableDeferred.J0(Boolean.TRUE);
+                        completableDeferred.L0(Boolean.TRUE);
                     }
                     this.connectionReadyListeners.clear();
-                    Unit unit = Unit.f33298a;
+                    Unit unit = Unit.f33074a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -642,10 +642,10 @@ public final class BillingManager {
             synchronized (this.connectionReadyListeners) {
                 try {
                     for (CompletableDeferred completableDeferred2 : this.connectionReadyListeners) {
-                        completableDeferred2.J0(Boolean.FALSE);
+                        completableDeferred2.L0(Boolean.FALSE);
                     }
                     this.connectionReadyListeners.clear();
-                    Unit unit2 = Unit.f33298a;
+                    Unit unit2 = Unit.f33074a;
                 } catch (Throwable th3) {
                     throw th3;
                 }
@@ -688,7 +688,7 @@ public final class BillingManager {
         Intrinsics.checkNotNullParameter(purchaseToken, "purchaseToken");
         Intrinsics.checkNotNullParameter(onSuccess, "onSuccess");
         Intrinsics.checkNotNullParameter(onError, "onError");
-        gs.i.d(getCoroutineScope(this.reactContext), m0.a(), null, new BillingManager$consumePurchase$1(this, onError, purchaseToken, onSuccess, null), 2, null);
+        hs.i.d(getCoroutineScope(this.reactContext), m0.a(), null, new BillingManager$consumePurchase$1(this, onError, purchaseToken, onSuccess, null), 2, null);
     }
 
     @NotNull
@@ -712,20 +712,20 @@ public final class BillingManager {
         Intrinsics.checkNotNullParameter(reactPromise, "reactPromise");
         Intrinsics.checkNotNullParameter(onError, "onError");
         CoroutineScope coroutineScope = getCoroutineScope(this.reactContext);
-        gs.i.d(coroutineScope, m0.a(), null, new BillingManager$getProducts$1(this, onError, new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), reactPromise, productType, productIds, null), 2, null);
+        hs.i.d(coroutineScope, m0.a(), null, new BillingManager$getProducts$1(this, onError, new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), reactPromise, productType, productIds, null), 2, null);
     }
 
     public final void getUserCountry(@NotNull Function1<? super String, Unit> onSuccess, @NotNull Function1<? super BillingManagerException, Unit> onError) {
         Intrinsics.checkNotNullParameter(onSuccess, "onSuccess");
         Intrinsics.checkNotNullParameter(onError, "onError");
         CoroutineScope coroutineScope = getCoroutineScope(this.reactContext);
-        gs.i.d(coroutineScope, m0.a(), null, new BillingManager$getUserCountry$1(this, onError, new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), onSuccess, null), 2, null);
+        hs.i.d(coroutineScope, m0.a(), null, new BillingManager$getUserCountry$1(this, onError, new ExponentialBackoff(coroutineScope, 0L, 0L, 0, 14, null), onSuccess, null), 2, null);
     }
 
     public final void loadPurchases(@NotNull Function0<Unit> onSuccess, @NotNull Function1<? super Exception, Unit> onError) {
         Intrinsics.checkNotNullParameter(onSuccess, "onSuccess");
         Intrinsics.checkNotNullParameter(onError, "onError");
-        gs.i.d(getCoroutineScope(this.reactContext), m0.a(), null, new BillingManager$loadPurchases$3(this, onError, onSuccess, null), 2, null);
+        hs.i.d(getCoroutineScope(this.reactContext), m0.a(), null, new BillingManager$loadPurchases$3(this, onError, onSuccess, null), 2, null);
     }
 
     public final void open() {
@@ -767,7 +767,7 @@ public final class BillingManager {
         Intrinsics.checkNotNullParameter(onSuccess, "onSuccess");
         Intrinsics.checkNotNullParameter(onError, "onError");
         if (activity != null) {
-            gs.i.d(getCoroutineScope(this.reactContext), m0.a(), null, new BillingManager$purchase$1(this, onError, productType, productId, str, str2, userId, str3, activity, onSuccess, null), 2, null);
+            hs.i.d(getCoroutineScope(this.reactContext), m0.a(), null, new BillingManager$purchase$1(this, onError, productType, productId, str, str2, userId, str3, activity, onSuccess, null), 2, null);
         } else {
             onError.invoke(new BillingManagerException.BillingException("Current React Activity not found"));
         }

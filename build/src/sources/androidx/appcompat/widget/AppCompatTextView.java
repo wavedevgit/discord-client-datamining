@@ -198,7 +198,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView
     public int getAutoSizeMaxTextSize() {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             return getSuperCaller().f();
         }
         AppCompatTextHelper appCompatTextHelper = this.mTextHelper;
@@ -210,7 +210,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView, androidx.core.widget.b
     public int getAutoSizeMinTextSize() {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             return getSuperCaller().getAutoSizeMinTextSize();
         }
         AppCompatTextHelper appCompatTextHelper = this.mTextHelper;
@@ -222,7 +222,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView, androidx.core.widget.b
     public int getAutoSizeStepGranularity() {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             return getSuperCaller().getAutoSizeStepGranularity();
         }
         AppCompatTextHelper appCompatTextHelper = this.mTextHelper;
@@ -234,7 +234,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView
     public int[] getAutoSizeTextAvailableSizes() {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             return getSuperCaller().d();
         }
         AppCompatTextHelper appCompatTextHelper = this.mTextHelper;
@@ -247,7 +247,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
     @Override // android.widget.TextView, androidx.core.widget.b
     @SuppressLint({"WrongConstant"})
     public int getAutoSizeTextType() {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             if (getSuperCaller().getAutoSizeTextType() != 1) {
                 return 0;
             }
@@ -375,7 +375,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
     protected void onTextChanged(CharSequence charSequence, int i10, int i11, int i12) {
         super.onTextChanged(charSequence, i10, i11, i12);
         AppCompatTextHelper appCompatTextHelper = this.mTextHelper;
-        if (appCompatTextHelper != null && !g1.f1660c && appCompatTextHelper.l()) {
+        if (appCompatTextHelper != null && !g1.f1704c && appCompatTextHelper.l()) {
             this.mTextHelper.c();
         }
     }
@@ -388,7 +388,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView, androidx.core.widget.b
     public void setAutoSizeTextTypeUniformWithConfiguration(int i10, int i11, int i12, int i13) {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             getSuperCaller().setAutoSizeTextTypeUniformWithConfiguration(i10, i11, i12, i13);
             return;
         }
@@ -400,7 +400,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView
     public void setAutoSizeTextTypeUniformWithPresetSizes(@NonNull int[] iArr, int i10) {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             getSuperCaller().a(iArr, i10);
             return;
         }
@@ -412,7 +412,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView
     public void setAutoSizeTextTypeWithDefaults(int i10) {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             getSuperCaller().i(i10);
             return;
         }
@@ -573,7 +573,7 @@ public class AppCompatTextView extends TextView implements androidx.core.widget.
 
     @Override // android.widget.TextView
     public void setTextSize(int i10, float f10) {
-        if (g1.f1660c) {
+        if (g1.f1704c) {
             super.setTextSize(i10, f10);
             return;
         }

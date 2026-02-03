@@ -31,7 +31,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAttachmentAcce
     }
 
     /* renamed from: copy-z64KZZs$default  reason: not valid java name */
-    public static /* synthetic */ VideoAttachmentMessageAccessory m669copyz64KZZs$default(VideoAttachmentMessageAccessory videoAttachmentMessageAccessory, long j10, String str, int i10, Attachment attachment, Float f10, int i11, int i12, SpoilerAttributes spoilerAttributes, boolean z10, boolean z11, int i13, Object obj) {
+    public static /* synthetic */ VideoAttachmentMessageAccessory m671copyz64KZZs$default(VideoAttachmentMessageAccessory videoAttachmentMessageAccessory, long j10, String str, int i10, Attachment attachment, Float f10, int i11, int i12, SpoilerAttributes spoilerAttributes, boolean z10, boolean z11, int i13, Object obj) {
         if ((i13 & 1) != 0) {
             j10 = videoAttachmentMessageAccessory.channelId;
         }
@@ -39,11 +39,11 @@ public final class VideoAttachmentMessageAccessory extends MessageAttachmentAcce
         if ((i13 & 2) != 0) {
             str = videoAttachmentMessageAccessory.messageId;
         }
-        return videoAttachmentMessageAccessory.m672copyz64KZZs(j11, str, (i13 & 4) != 0 ? videoAttachmentMessageAccessory.index : i10, (i13 & 8) != 0 ? videoAttachmentMessageAccessory.attachment : attachment, (i13 & 16) != 0 ? videoAttachmentMessageAccessory.attachmentsOpacity : f10, (i13 & 32) != 0 ? videoAttachmentMessageAccessory.constrainedWidth : i11, (i13 & 64) != 0 ? videoAttachmentMessageAccessory.radiusPx : i12, (i13 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? videoAttachmentMessageAccessory.spoilerAttributes : spoilerAttributes, (i13 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? videoAttachmentMessageAccessory.useNewAltTextButton : z10, (i13 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? videoAttachmentMessageAccessory.hideMediaPlayButton : z11);
+        return videoAttachmentMessageAccessory.m674copyz64KZZs(j11, str, (i13 & 4) != 0 ? videoAttachmentMessageAccessory.index : i10, (i13 & 8) != 0 ? videoAttachmentMessageAccessory.attachment : attachment, (i13 & 16) != 0 ? videoAttachmentMessageAccessory.attachmentsOpacity : f10, (i13 & 32) != 0 ? videoAttachmentMessageAccessory.constrainedWidth : i11, (i13 & 64) != 0 ? videoAttachmentMessageAccessory.radiusPx : i12, (i13 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? videoAttachmentMessageAccessory.spoilerAttributes : spoilerAttributes, (i13 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? videoAttachmentMessageAccessory.useNewAltTextButton : z10, (i13 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? videoAttachmentMessageAccessory.hideMediaPlayButton : z11);
     }
 
     /* renamed from: component1-o4g7jtM  reason: not valid java name */
-    public final long m670component1o4g7jtM() {
+    public final long m672component1o4g7jtM() {
         return this.channelId;
     }
 
@@ -53,7 +53,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAttachmentAcce
 
     @NotNull
     /* renamed from: component2-3Eiw7ao  reason: not valid java name */
-    public final String m671component23Eiw7ao() {
+    public final String m673component23Eiw7ao() {
         return this.messageId;
     }
 
@@ -88,7 +88,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAttachmentAcce
 
     @NotNull
     /* renamed from: copy-z64KZZs  reason: not valid java name */
-    public final VideoAttachmentMessageAccessory m672copyz64KZZs(long j10, @NotNull String messageId, int i10, @NotNull Attachment attachment, Float f10, int i11, int i12, SpoilerAttributes spoilerAttributes, boolean z10, boolean z11) {
+    public final VideoAttachmentMessageAccessory m674copyz64KZZs(long j10, @NotNull String messageId, int i10, @NotNull Attachment attachment, Float f10, int i11, int i12, SpoilerAttributes spoilerAttributes, boolean z10, boolean z11) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(attachment, "attachment");
         return new VideoAttachmentMessageAccessory(j10, messageId, i10, attachment, f10, i11, i12, spoilerAttributes, z10, z11, null);
@@ -100,7 +100,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAttachmentAcce
         }
         if (obj instanceof VideoAttachmentMessageAccessory) {
             VideoAttachmentMessageAccessory videoAttachmentMessageAccessory = (VideoAttachmentMessageAccessory) obj;
-            return ChannelId.m1062equalsimpl0(this.channelId, videoAttachmentMessageAccessory.channelId) && MessageId.m1088equalsimpl0(this.messageId, videoAttachmentMessageAccessory.messageId) && this.index == videoAttachmentMessageAccessory.index && Intrinsics.areEqual(this.attachment, videoAttachmentMessageAccessory.attachment) && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) videoAttachmentMessageAccessory.attachmentsOpacity) && this.constrainedWidth == videoAttachmentMessageAccessory.constrainedWidth && this.radiusPx == videoAttachmentMessageAccessory.radiusPx && Intrinsics.areEqual(this.spoilerAttributes, videoAttachmentMessageAccessory.spoilerAttributes) && this.useNewAltTextButton == videoAttachmentMessageAccessory.useNewAltTextButton && this.hideMediaPlayButton == videoAttachmentMessageAccessory.hideMediaPlayButton;
+            return ChannelId.m1064equalsimpl0(this.channelId, videoAttachmentMessageAccessory.channelId) && MessageId.m1090equalsimpl0(this.messageId, videoAttachmentMessageAccessory.messageId) && this.index == videoAttachmentMessageAccessory.index && Intrinsics.areEqual(this.attachment, videoAttachmentMessageAccessory.attachment) && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) videoAttachmentMessageAccessory.attachmentsOpacity) && this.constrainedWidth == videoAttachmentMessageAccessory.constrainedWidth && this.radiusPx == videoAttachmentMessageAccessory.radiusPx && Intrinsics.areEqual(this.spoilerAttributes, videoAttachmentMessageAccessory.spoilerAttributes) && this.useNewAltTextButton == videoAttachmentMessageAccessory.useNewAltTextButton && this.hideMediaPlayButton == videoAttachmentMessageAccessory.hideMediaPlayButton;
         }
         return false;
     }
@@ -117,7 +117,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAttachmentAcce
     }
 
     /* renamed from: getChannelId-o4g7jtM  reason: not valid java name */
-    public final long m673getChannelIdo4g7jtM() {
+    public final long m675getChannelIdo4g7jtM() {
         return this.channelId;
     }
 
@@ -137,7 +137,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAttachmentAcce
     @Override // com.discord.chat.presentation.message.messagepart.MessageAttachmentAccessory, com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -159,17 +159,17 @@ public final class VideoAttachmentMessageAccessory extends MessageAttachmentAcce
     }
 
     public int hashCode() {
-        int m1063hashCodeimpl = ((((((ChannelId.m1063hashCodeimpl(this.channelId) * 31) + MessageId.m1089hashCodeimpl(this.messageId)) * 31) + Integer.hashCode(this.index)) * 31) + this.attachment.hashCode()) * 31;
+        int m1065hashCodeimpl = ((((((ChannelId.m1065hashCodeimpl(this.channelId) * 31) + MessageId.m1091hashCodeimpl(this.messageId)) * 31) + Integer.hashCode(this.index)) * 31) + this.attachment.hashCode()) * 31;
         Float f10 = this.attachmentsOpacity;
-        int hashCode = (((((m1063hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Integer.hashCode(this.radiusPx)) * 31;
+        int hashCode = (((((m1065hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Integer.hashCode(this.radiusPx)) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         return ((((hashCode + (spoilerAttributes != null ? spoilerAttributes.hashCode() : 0)) * 31) + Boolean.hashCode(this.useNewAltTextButton)) * 31) + Boolean.hashCode(this.hideMediaPlayButton);
     }
 
     @NotNull
     public String toString() {
-        String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1067toStringimpl = ChannelId.m1067toStringimpl(this.channelId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         int i10 = this.index;
         Attachment attachment = this.attachment;
         Float f10 = this.attachmentsOpacity;
@@ -178,7 +178,7 @@ public final class VideoAttachmentMessageAccessory extends MessageAttachmentAcce
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         boolean z10 = this.useNewAltTextButton;
         boolean z11 = this.hideMediaPlayButton;
-        return "VideoAttachmentMessageAccessory(channelId=" + m1065toStringimpl + ", messageId=" + m1091toStringimpl + ", index=" + i10 + ", attachment=" + attachment + ", attachmentsOpacity=" + f10 + ", constrainedWidth=" + i11 + ", radiusPx=" + i12 + ", spoilerAttributes=" + spoilerAttributes + ", useNewAltTextButton=" + z10 + ", hideMediaPlayButton=" + z11 + ")";
+        return "VideoAttachmentMessageAccessory(channelId=" + m1067toStringimpl + ", messageId=" + m1093toStringimpl + ", index=" + i10 + ", attachment=" + attachment + ", attachmentsOpacity=" + f10 + ", constrainedWidth=" + i11 + ", radiusPx=" + i12 + ", spoilerAttributes=" + spoilerAttributes + ", useNewAltTextButton=" + z10 + ", hideMediaPlayButton=" + z11 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

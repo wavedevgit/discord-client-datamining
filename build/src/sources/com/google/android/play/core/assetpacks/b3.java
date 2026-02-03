@@ -28,47 +28,47 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class b3 implements t4 {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final th.k0 f16701i = new th.k0("FakeAssetPackService");
+    private static final th.k0 f16330i = new th.k0("FakeAssetPackService");
 
     /* renamed from: j  reason: collision with root package name */
-    private static final AtomicInteger f16702j = new AtomicInteger(1);
+    private static final AtomicInteger f16331j = new AtomicInteger(1);
 
     /* renamed from: k  reason: collision with root package name */
-    public static final /* synthetic */ int f16703k = 0;
+    public static final /* synthetic */ int f16332k = 0;
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f16704a;
+    private final String f16333a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d0 f16705b;
+    private final d0 f16334b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b2 f16706c;
+    private final b2 f16335c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f16707d;
+    private final Context f16336d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final q3 f16708e;
+    private final q3 f16337e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final o3 f16709f;
+    private final o3 f16338f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Handler f16710g = new Handler(Looper.getMainLooper());
+    private final Handler f16339g = new Handler(Looper.getMainLooper());
 
     /* renamed from: h  reason: collision with root package name */
-    private final th.r f16711h;
+    private final th.r f16340h;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b3(File file, d0 d0Var, b2 b2Var, Context context, q3 q3Var, th.r rVar, o3 o3Var) {
-        this.f16704a = file.getAbsolutePath();
-        this.f16705b = d0Var;
-        this.f16706c = b2Var;
-        this.f16707d = context;
-        this.f16708e = q3Var;
-        this.f16711h = rVar;
-        this.f16709f = o3Var;
+        this.f16333a = file.getAbsolutePath();
+        this.f16334b = d0Var;
+        this.f16335c = b2Var;
+        this.f16336d = context;
+        this.f16337e = q3Var;
+        this.f16340h = rVar;
+        this.f16338f = o3Var;
     }
 
     static long h(int i10, long j10) {
@@ -84,7 +84,7 @@ public final class b3 implements t4 {
     private final Bundle l(int i10, String str, int i11) {
         Intent intent;
         Bundle bundle = new Bundle();
-        bundle.putInt("app_version_code", this.f16708e.a());
+        bundle.putInt("app_version_code", this.f16337e.a());
         bundle.putInt(SharedPreferencesKey.SESSION_ID, i10);
         File[] q10 = q(str);
         ArrayList<String> arrayList = new ArrayList<>();
@@ -105,7 +105,7 @@ public final class b3 implements t4 {
             arrayList.add(a10);
         }
         bundle.putStringArrayList(uh.b.a("slice_ids", str), arrayList);
-        bundle.putLong(uh.b.a("pack_version", str), this.f16708e.a());
+        bundle.putLong(uh.b.a("pack_version", str), this.f16337e.a());
         bundle.putInt(uh.b.a("status", str), i11);
         bundle.putInt(uh.b.a("error_code", str), 0);
         bundle.putLong(uh.b.a("bytes_downloaded", str), h(i11, j10));
@@ -114,10 +114,10 @@ public final class b3 implements t4 {
         bundle.putLong("bytes_downloaded", h(i11, j10));
         bundle.putLong("total_bytes_to_download", j10);
         final Intent putExtra = new Intent("com.google.android.play.core.assetpacks.receiver.ACTION_SESSION_UPDATE").putExtra("com.google.android.play.core.assetpacks.receiver.EXTRA_SESSION_STATE", bundle);
-        this.f16710g.post(new Runnable() { // from class: com.google.android.play.core.assetpacks.a3
+        this.f16339g.post(new Runnable() { // from class: com.google.android.play.core.assetpacks.a3
             @Override // java.lang.Runnable
             public final void run() {
-                r0.f16705b.b(b3.this.f16707d, putExtra);
+                r0.f16334b.b(b3.this.f16336d, putExtra);
             }
         });
         return bundle;
@@ -128,7 +128,7 @@ public final class b3 implements t4 {
         for (File file : q(str)) {
             j10 += file.length();
         }
-        return AssetPackState.a(str, i10, 0, h(i10, j10), j10, this.f16706c.a(str), 1, String.valueOf(this.f16708e.a()), this.f16709f.a(str));
+        return AssetPackState.a(str, i10, 0, h(i10, j10), j10, this.f16335c.a(str), 1, String.valueOf(this.f16337e.a()), this.f16338f.a(str));
     }
 
     private static String n(File file) {
@@ -146,7 +146,7 @@ public final class b3 implements t4 {
         try {
             l(i10, str, 4);
         } catch (vh.a e10) {
-            f16701i.e("notifyModuleCompleted failed", e10);
+            f16330i.e("notifyModuleCompleted failed", e10);
         }
     }
 
@@ -170,7 +170,7 @@ public final class b3 implements t4 {
         while (it2.hasNext()) {
             String str2 = (String) it2.next();
             try {
-                int andIncrement = f16702j.getAndIncrement();
+                int andIncrement = f16331j.getAndIncrement();
                 l(andIncrement, str2, 1);
                 l(andIncrement, str2, 2);
                 l(andIncrement, str2, 3);
@@ -183,12 +183,12 @@ public final class b3 implements t4 {
     }
 
     private final File[] q(final String str) {
-        File file = new File(this.f16704a);
+        File file = new File(this.f16333a);
         if (file.isDirectory()) {
             File[] listFiles = file.listFiles(new FilenameFilter() { // from class: com.google.android.play.core.assetpacks.w2
                 @Override // java.io.FilenameFilter
                 public final boolean accept(File file2, String str2) {
-                    int i10 = b3.f16703k;
+                    int i10 = b3.f16332k;
                     if (str2.startsWith(String.valueOf(str).concat("-")) && str2.endsWith(".apk")) {
                         return true;
                     }
@@ -213,13 +213,13 @@ public final class b3 implements t4 {
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final void a(int i10) {
-        f16701i.d("notifySessionFailed", new Object[0]);
+        f16330i.d("notifySessionFailed", new Object[0]);
     }
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final void b(final int i10, final String str) {
-        f16701i.d("notifyModuleCompleted", new Object[0]);
-        ((Executor) this.f16711h.a()).execute(new Runnable() { // from class: com.google.android.play.core.assetpacks.x2
+        f16330i.d("notifyModuleCompleted", new Object[0]);
+        ((Executor) this.f16340h.a()).execute(new Runnable() { // from class: com.google.android.play.core.assetpacks.x2
             @Override // java.lang.Runnable
             public final void run() {
                 b3.this.o(i10, str);
@@ -229,7 +229,7 @@ public final class b3 implements t4 {
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final Task c(Map map) {
-        f16701i.d("syncPacks()", new Object[0]);
+        f16330i.d("syncPacks()", new Object[0]);
         return wg.m.f(new ArrayList());
     }
 
@@ -237,14 +237,14 @@ public final class b3 implements t4 {
     public final Task d(int i10, String str, String str2, int i11) {
         File[] q10;
         int i12;
-        f16701i.d("getChunkFileDescriptor(session=%d, %s, %s, %d)", Integer.valueOf(i10), str, str2, Integer.valueOf(i11));
+        f16330i.d("getChunkFileDescriptor(session=%d, %s, %s, %d)", Integer.valueOf(i10), str, str2, Integer.valueOf(i11));
         wg.k kVar = new wg.k();
         try {
         } catch (FileNotFoundException e10) {
-            f16701i.e("getChunkFileDescriptor failed", e10);
+            f16330i.e("getChunkFileDescriptor failed", e10);
             kVar.b(new vh.a("Asset Slice file not found.", e10));
         } catch (vh.a e11) {
-            f16701i.e("getChunkFileDescriptor failed", e11);
+            f16330i.e("getChunkFileDescriptor failed", e11);
             kVar.b(e11);
         }
         for (File file : q(str)) {
@@ -258,9 +258,9 @@ public final class b3 implements t4 {
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final Task e(final List list, Map map) {
-        f16701i.d("startDownload(%s)", list);
+        f16330i.d("startDownload(%s)", list);
         final wg.k kVar = new wg.k();
-        ((Executor) this.f16711h.a()).execute(new Runnable() { // from class: com.google.android.play.core.assetpacks.z2
+        ((Executor) this.f16340h.a()).execute(new Runnable() { // from class: com.google.android.play.core.assetpacks.z2
             @Override // java.lang.Runnable
             public final void run() {
                 b3.this.p(list, kVar);
@@ -271,16 +271,16 @@ public final class b3 implements t4 {
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final void f(List list) {
-        f16701i.d("cancelDownload(%s)", list);
+        f16330i.d("cancelDownload(%s)", list);
     }
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final void g(int i10, String str, String str2, int i11) {
-        f16701i.d("notifyChunkTransferred", new Object[0]);
+        f16330i.d("notifyChunkTransferred", new Object[0]);
     }
 
     @Override // com.google.android.play.core.assetpacks.t4
     public final void f() {
-        f16701i.d("keepAlive", new Object[0]);
+        f16330i.d("keepAlive", new Object[0]);
     }
 }

@@ -10,7 +10,7 @@ import android.os.Parcelable;
 public interface a extends IInterface {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final String f8030b = "android$support$v4$os$IResultReceiver".replace('$', '.');
+    public static final String f7886b = "android$support$v4$os$IResultReceiver".replace('$', '.');
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class b {
@@ -27,43 +27,43 @@ public interface a extends IInterface {
 
     /* renamed from: c.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static abstract class AbstractBinderC0127a extends Binder implements a {
+    public static abstract class AbstractBinderC0132a extends Binder implements a {
 
         /* renamed from: c.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        private static class C0128a implements a {
+        private static class C0133a implements a {
 
             /* renamed from: c  reason: collision with root package name */
-            private IBinder f8031c;
+            private IBinder f7887c;
 
-            C0128a(IBinder iBinder) {
-                this.f8031c = iBinder;
+            C0133a(IBinder iBinder) {
+                this.f7887c = iBinder;
             }
 
             @Override // android.os.IInterface
             public IBinder asBinder() {
-                return this.f8031c;
+                return this.f7887c;
             }
         }
 
-        public AbstractBinderC0127a() {
-            attachInterface(this, a.f8030b);
+        public AbstractBinderC0132a() {
+            attachInterface(this, a.f7886b);
         }
 
         public static a e(IBinder iBinder) {
             if (iBinder == null) {
                 return null;
             }
-            IInterface queryLocalInterface = iBinder.queryLocalInterface(a.f8030b);
+            IInterface queryLocalInterface = iBinder.queryLocalInterface(a.f7886b);
             if (queryLocalInterface != null && (queryLocalInterface instanceof a)) {
                 return (a) queryLocalInterface;
             }
-            return new C0128a(iBinder);
+            return new C0133a(iBinder);
         }
 
         @Override // android.os.Binder
         public boolean onTransact(int i10, Parcel parcel, Parcel parcel2, int i11) {
-            String str = a.f8030b;
+            String str = a.f7886b;
             if (i10 >= 1 && i10 <= 16777215) {
                 parcel.enforceInterface(str);
             }

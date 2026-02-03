@@ -8,21 +8,21 @@ import java.util.List;
 final class h extends th.l0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ List f16791e;
+    final /* synthetic */ List f16420e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ wg.k f16792i;
+    final /* synthetic */ wg.k f16421i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ x f16793o;
+    final /* synthetic */ x f16422o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public h(x xVar, wg.k kVar, List list, wg.k kVar2) {
         super(kVar);
-        this.f16791e = list;
-        this.f16792i = kVar2;
-        this.f16793o = xVar;
+        this.f16420e = list;
+        this.f16421i = kVar2;
+        this.f16422o = xVar;
     }
 
     @Override // th.l0
@@ -31,15 +31,15 @@ final class h extends th.l0 {
         th.v0 v0Var;
         String str;
         Bundle h10;
-        ArrayList w10 = x.w(this.f16791e);
+        ArrayList w10 = x.w(this.f16420e);
         try {
-            v0Var = this.f16793o.f17095d;
-            str = this.f16793o.f17092a;
+            v0Var = this.f16422o.f16724d;
+            str = this.f16422o.f16721a;
             h10 = x.h();
-            ((th.b0) v0Var.e()).z(str, w10, h10, new p(this.f16793o, this.f16792i));
+            ((th.b0) v0Var.e()).z(str, w10, h10, new p(this.f16422o, this.f16421i));
         } catch (RemoteException e10) {
-            List list = this.f16791e;
-            k0Var = x.f17090g;
+            List list = this.f16420e;
+            k0Var = x.f16719g;
             k0Var.c(e10, "cancelDownloads(%s)", list);
         }
     }

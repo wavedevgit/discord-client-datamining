@@ -15,7 +15,7 @@ import com.facebook.react.bridge.UiThreadUtil;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.uimanager.ViewProps;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.Intrinsics;
@@ -95,7 +95,7 @@ public final class SafeAreaInsetsModule extends NativeSafeAreaInsetsModuleSpec {
         }
         int i11 = 0;
         if (windowInsetsCompat != null && (imeInsets$default = WindowInsetsCompatExtensionsKt.getImeInsets$default(windowInsetsCompat, false, 1, null)) != null) {
-            i10 = imeInsets$default.f3153d;
+            i10 = imeInsets$default.f3197d;
         } else {
             i10 = 0;
         }
@@ -108,7 +108,7 @@ public final class SafeAreaInsetsModule extends NativeSafeAreaInsetsModuleSpec {
                 insets = WindowInsetsCompatExtensionsKt.getSystemBarInsets$default(windowInsetsCompat, currentActivity2, false, 2, null);
             }
             if (insets != null) {
-                i11 = insets.f3153d;
+                i11 = insets.f3197d;
             }
         }
         if (i11 == i10 && Build.VERSION.SDK_INT <= 29) {
@@ -144,7 +144,7 @@ public final class SafeAreaInsetsModule extends NativeSafeAreaInsetsModuleSpec {
         }
         Insets displayCutoutInsets = WindowInsetsCompatExtensionsKt.getDisplayCutoutInsets(windowInsetsCompat, true);
         Insets systemBarInsets = WindowInsetsCompatExtensionsKt.getSystemBarInsets(windowInsetsCompat, currentActivity, true);
-        return (WritableMap) function4.invoke(Integer.valueOf(Math.max(displayCutoutInsets.f3150a, systemBarInsets.f3150a)), Integer.valueOf(Math.max(displayCutoutInsets.f3151b, systemBarInsets.f3151b)), Integer.valueOf(Math.max(displayCutoutInsets.f3152c, systemBarInsets.f3152c)), Integer.valueOf(Math.max(displayCutoutInsets.f3153d, systemBarInsets.f3153d)));
+        return (WritableMap) function4.invoke(Integer.valueOf(Math.max(displayCutoutInsets.f3194a, systemBarInsets.f3194a)), Integer.valueOf(Math.max(displayCutoutInsets.f3195b, systemBarInsets.f3195b)), Integer.valueOf(Math.max(displayCutoutInsets.f3196c, systemBarInsets.f3196c)), Integer.valueOf(Math.max(displayCutoutInsets.f3197d, systemBarInsets.f3197d)));
     }
 
     @Override // com.discord.codegen.NativeSafeAreaInsetsModuleSpec

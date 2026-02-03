@@ -1,82 +1,78 @@
 package su;
 
+import java.util.ArrayList;
 import java.util.List;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Lambda;
-import su.c;
+import kotlin.jvm.internal.Intrinsics;
+import mu.c;
+import uu.a;
+import uu.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements ku.b, c {
+public interface b extends mu.c, uu.a, uu.c {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final b f49174a = new b();
-
-    /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a extends Lambda implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f49175d = new a();
-
-        a() {
-            super(2);
-        }
-
-        public final Boolean a(int i10, int i11) {
+    public static final class a {
+        public static boolean a(b bVar, Object obj, Function2 operator) {
             boolean z10;
-            if (i10 == i11) {
-                z10 = true;
+            boolean z11;
+            Intrinsics.checkNotNullParameter(operator, "operator");
+            List c10 = qv.a.c(obj);
+            Object e10 = bVar.e(CollectionsKt.firstOrNull(c10));
+            Object e11 = bVar.e(qv.c.b(c10));
+            c cVar = c.f49444a;
+            List a10 = cVar.a(e10);
+            List a11 = cVar.a(e11);
+            if (a10 == null && a11 == null) {
+                List<Object> list = c10;
+                ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
+                for (Object obj2 : list) {
+                    arrayList.add(bVar.a(obj2));
+                }
+                return bVar.b(arrayList, operator);
+            }
+            if (a10 != null) {
+                z10 = a10.contains(e11);
             } else {
                 z10 = false;
             }
-            return Boolean.valueOf(z10);
+            if (!z10) {
+                if (a11 != null) {
+                    z11 = a11.contains(e10);
+                } else {
+                    z11 = false;
+                }
+                if (!z11) {
+                    return false;
+                }
+                return true;
+            }
+            return true;
         }
 
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+        public static boolean b(b bVar, List list, Function2 operator) {
+            Intrinsics.checkNotNullParameter(operator, "operator");
+            return c.a.b(bVar, list, operator);
         }
-    }
 
-    private b() {
-    }
+        public static List c(b bVar, Comparable comparable, Comparable comparable2) {
+            return c.a.d(bVar, comparable, comparable2);
+        }
 
-    @Override // su.c, tu.a
-    public Object a(Object obj) {
-        return c.a.f(this, obj);
-    }
+        public static List d(b bVar, Comparable comparable, Comparable comparable2) {
+            return c.a.e(bVar, comparable, comparable2);
+        }
 
-    @Override // lu.c
-    public boolean b(List list, Function2 function2) {
-        return c.a.b(this, list, function2);
-    }
+        public static Object e(b bVar, Object obj) {
+            return c.a.c(bVar, obj);
+        }
 
-    @Override // lu.a
-    public Boolean c(Object obj) {
-        return c.a.g(this, obj);
-    }
+        public static Object f(b bVar, Object obj) {
+            return a.C0679a.c(bVar, obj);
+        }
 
-    @Override // lu.b
-    public List d(Comparable comparable, Comparable comparable2) {
-        return c.a.d(this, comparable, comparable2);
-    }
-
-    @Override // tu.c
-    public Object e(Object obj) {
-        return c.a.e(this, obj);
-    }
-
-    @Override // lu.b
-    public List g(Comparable comparable, Comparable comparable2) {
-        return c.a.c(this, comparable, comparable2);
-    }
-
-    public boolean h(Object obj, Function2 function2) {
-        return c.a.a(this, obj, function2);
-    }
-
-    @Override // ku.b
-    /* renamed from: i */
-    public Boolean f(Object obj, Object obj2) {
-        return Boolean.valueOf(h(obj, a.f49175d));
+        public static Boolean g(b bVar, Object obj) {
+            return c.a.f(bVar, obj);
+        }
     }
 }

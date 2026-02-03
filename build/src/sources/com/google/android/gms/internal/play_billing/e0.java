@@ -7,14 +7,14 @@ public abstract class e0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int a(byte[] bArr, int i10, d0 d0Var) {
         int h10 = h(bArr, i10, d0Var);
-        int i11 = d0Var.f15208a;
+        int i11 = d0Var.f14837a;
         if (i11 >= 0) {
             if (i11 <= bArr.length - h10) {
                 if (i11 == 0) {
-                    d0Var.f15210c = r0.f15368e;
+                    d0Var.f14839c = r0.f14997e;
                     return h10;
                 }
-                d0Var.f15210c = r0.m(bArr, h10, i11);
+                d0Var.f14839c = r0.m(bArr, h10, i11);
                 return h10 + i11;
             }
             throw a2.g();
@@ -33,7 +33,7 @@ public abstract class e0 {
         Object B = g3Var.B();
         int l10 = l(B, g3Var, bArr, i10, i11, i12, d0Var);
         g3Var.b(B);
-        d0Var.f15210c = B;
+        d0Var.f14839c = B;
         return l10;
     }
 
@@ -41,21 +41,21 @@ public abstract class e0 {
         Object B = g3Var.B();
         int m10 = m(B, g3Var, bArr, i10, i11, d0Var);
         g3Var.b(B);
-        d0Var.f15210c = B;
+        d0Var.f14839c = B;
         return m10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int e(g3 g3Var, int i10, byte[] bArr, int i11, int i12, x1 x1Var, d0 d0Var) {
         int d10 = d(g3Var, bArr, i11, i12, d0Var);
-        x1Var.add(d0Var.f15210c);
+        x1Var.add(d0Var.f14839c);
         while (d10 < i12) {
             int h10 = h(bArr, d10, d0Var);
-            if (i10 != d0Var.f15208a) {
+            if (i10 != d0Var.f14837a) {
                 break;
             }
             d10 = d(g3Var, bArr, h10, i12, d0Var);
-            x1Var.add(d0Var.f15210c);
+            x1Var.add(d0Var.f14839c);
         }
         return d10;
     }
@@ -64,10 +64,10 @@ public abstract class e0 {
     public static int f(byte[] bArr, int i10, x1 x1Var, d0 d0Var) {
         r1 r1Var = (r1) x1Var;
         int h10 = h(bArr, i10, d0Var);
-        int i11 = d0Var.f15208a + h10;
+        int i11 = d0Var.f14837a + h10;
         while (h10 < i11) {
             h10 = h(bArr, h10, d0Var);
-            r1Var.e(d0Var.f15208a);
+            r1Var.e(d0Var.f14837a);
         }
         if (h10 == i11) {
             return h10;
@@ -97,7 +97,7 @@ public abstract class e0 {
                                 break;
                             }
                             int h10 = h(bArr, i11, d0Var);
-                            i15 = d0Var.f15208a;
+                            i15 = d0Var.f14837a;
                             if (i15 != i14) {
                                 i11 = g(i15, bArr, h10, i12, f10, d0Var);
                             } else {
@@ -112,11 +112,11 @@ public abstract class e0 {
                         throw a2.e();
                     }
                     int h11 = h(bArr, i11, d0Var);
-                    int i16 = d0Var.f15208a;
+                    int i16 = d0Var.f14837a;
                     if (i16 >= 0) {
                         if (i16 <= bArr.length - h11) {
                             if (i16 == 0) {
-                                x3Var.j(i10, r0.f15368e);
+                                x3Var.j(i10, r0.f14997e);
                             } else {
                                 x3Var.j(i10, r0.m(bArr, h11, i16));
                             }
@@ -130,7 +130,7 @@ public abstract class e0 {
                 return i11 + 8;
             }
             int k10 = k(bArr, i11, d0Var);
-            x3Var.j(i10, Long.valueOf(d0Var.f15209b));
+            x3Var.j(i10, Long.valueOf(d0Var.f14838b));
             return k10;
         }
         throw a2.b();
@@ -141,7 +141,7 @@ public abstract class e0 {
         int i11 = i10 + 1;
         byte b10 = bArr[i10];
         if (b10 >= 0) {
-            d0Var.f15208a = b10;
+            d0Var.f14837a = b10;
             return i11;
         }
         return i(b10, bArr, i11, d0Var);
@@ -153,28 +153,28 @@ public abstract class e0 {
         int i12 = i11 + 1;
         int i13 = i10 & 127;
         if (b10 >= 0) {
-            d0Var.f15208a = i13 | (b10 << 7);
+            d0Var.f14837a = i13 | (b10 << 7);
             return i12;
         }
         int i14 = i13 | ((b10 & ByteCompanionObject.MAX_VALUE) << 7);
         int i15 = i11 + 2;
         byte b11 = bArr[i12];
         if (b11 >= 0) {
-            d0Var.f15208a = i14 | (b11 << 14);
+            d0Var.f14837a = i14 | (b11 << 14);
             return i15;
         }
         int i16 = i14 | ((b11 & ByteCompanionObject.MAX_VALUE) << 14);
         int i17 = i11 + 3;
         byte b12 = bArr[i15];
         if (b12 >= 0) {
-            d0Var.f15208a = i16 | (b12 << 21);
+            d0Var.f14837a = i16 | (b12 << 21);
             return i17;
         }
         int i18 = i16 | ((b12 & ByteCompanionObject.MAX_VALUE) << 21);
         int i19 = i11 + 4;
         byte b13 = bArr[i17];
         if (b13 >= 0) {
-            d0Var.f15208a = i18 | (b13 << 28);
+            d0Var.f14837a = i18 | (b13 << 28);
             return i19;
         }
         int i20 = i18 | ((b13 & ByteCompanionObject.MAX_VALUE) << 28);
@@ -183,7 +183,7 @@ public abstract class e0 {
             if (bArr[i19] < 0) {
                 i19 = i21;
             } else {
-                d0Var.f15208a = i20;
+                d0Var.f14837a = i20;
                 return i21;
             }
         }
@@ -193,14 +193,14 @@ public abstract class e0 {
     public static int j(int i10, byte[] bArr, int i11, int i12, x1 x1Var, d0 d0Var) {
         r1 r1Var = (r1) x1Var;
         int h10 = h(bArr, i11, d0Var);
-        r1Var.e(d0Var.f15208a);
+        r1Var.e(d0Var.f14837a);
         while (h10 < i12) {
             int h11 = h(bArr, h10, d0Var);
-            if (i10 != d0Var.f15208a) {
+            if (i10 != d0Var.f14837a) {
                 break;
             }
             h10 = h(bArr, h11, d0Var);
-            r1Var.e(d0Var.f15208a);
+            r1Var.e(d0Var.f14837a);
         }
         return h10;
     }
@@ -211,7 +211,7 @@ public abstract class e0 {
         long j10 = bArr[i10];
         int i11 = i10 + 1;
         if (j10 >= 0) {
-            d0Var.f15209b = j10;
+            d0Var.f14838b = j10;
             return i11;
         }
         int i12 = i10 + 2;
@@ -225,14 +225,14 @@ public abstract class e0 {
             b11 = bArr[i12];
             i12 = i14;
         }
-        d0Var.f15209b = j11;
+        d0Var.f14838b = j11;
         return i12;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int l(Object obj, g3 g3Var, byte[] bArr, int i10, int i11, int i12, d0 d0Var) {
         int x10 = ((y2) g3Var).x(obj, bArr, i10, i11, i12, d0Var);
-        d0Var.f15210c = obj;
+        d0Var.f14839c = obj;
         return x10;
     }
 
@@ -242,13 +242,13 @@ public abstract class e0 {
         int i13 = bArr[i10];
         if (i13 < 0) {
             i12 = i(i13, bArr, i12, d0Var);
-            i13 = d0Var.f15208a;
+            i13 = d0Var.f14837a;
         }
         int i14 = i12;
         if (i13 >= 0 && i13 <= i11 - i14) {
             int i15 = i14 + i13;
             g3Var.c(obj, bArr, i14, i15, d0Var);
-            d0Var.f15210c = obj;
+            d0Var.f14839c = obj;
             return i15;
         }
         throw a2.g();

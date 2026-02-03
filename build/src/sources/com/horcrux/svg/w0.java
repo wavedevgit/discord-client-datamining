@@ -33,103 +33,103 @@ public class w0 extends j1 {
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f18090a;
+        static final /* synthetic */ int[] f17719a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f18091b;
+        static final /* synthetic */ int[] f17720b;
 
         /* renamed from: c  reason: collision with root package name */
-        static final /* synthetic */ int[] f18092c;
+        static final /* synthetic */ int[] f17721c;
 
         static {
             int[] iArr = new int[y0.values().length];
-            f18092c = iArr;
+            f17721c = iArr;
             try {
                 iArr[y0.baseline.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f18092c[y0.textBottom.ordinal()] = 2;
+                f17721c[y0.textBottom.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f18092c[y0.afterEdge.ordinal()] = 3;
+                f17721c[y0.afterEdge.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f18092c[y0.textAfterEdge.ordinal()] = 4;
+                f17721c[y0.textAfterEdge.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f18092c[y0.alphabetic.ordinal()] = 5;
+                f17721c[y0.alphabetic.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f18092c[y0.ideographic.ordinal()] = 6;
+                f17721c[y0.ideographic.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f18092c[y0.middle.ordinal()] = 7;
+                f17721c[y0.middle.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f18092c[y0.central.ordinal()] = 8;
+                f17721c[y0.central.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f18092c[y0.mathematical.ordinal()] = 9;
+                f17721c[y0.mathematical.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f18092c[y0.hanging.ordinal()] = 10;
+                f17721c[y0.hanging.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f18092c[y0.textTop.ordinal()] = 11;
+                f17721c[y0.textTop.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f18092c[y0.beforeEdge.ordinal()] = 12;
+                f17721c[y0.beforeEdge.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                f18092c[y0.textBeforeEdge.ordinal()] = 13;
+                f17721c[y0.textBeforeEdge.ordinal()] = 13;
             } catch (NoSuchFieldError unused13) {
             }
             try {
-                f18092c[y0.bottom.ordinal()] = 14;
+                f17721c[y0.bottom.ordinal()] = 14;
             } catch (NoSuchFieldError unused14) {
             }
             try {
-                f18092c[y0.center.ordinal()] = 15;
+                f17721c[y0.center.ordinal()] = 15;
             } catch (NoSuchFieldError unused15) {
             }
             try {
-                f18092c[y0.top.ordinal()] = 16;
+                f17721c[y0.top.ordinal()] = 16;
             } catch (NoSuchFieldError unused16) {
             }
             int[] iArr2 = new int[e1.values().length];
-            f18091b = iArr2;
+            f17720b = iArr2;
             try {
                 iArr2[e1.spacing.ordinal()] = 1;
             } catch (NoSuchFieldError unused17) {
             }
             try {
-                f18091b[e1.spacingAndGlyphs.ordinal()] = 2;
+                f17720b[e1.spacingAndGlyphs.ordinal()] = 2;
             } catch (NoSuchFieldError unused18) {
             }
             int[] iArr3 = new int[c1.values().length];
-            f18090a = iArr3;
+            f17719a = iArr3;
             try {
                 iArr3[c1.start.ordinal()] = 1;
             } catch (NoSuchFieldError unused19) {
             }
             try {
-                f18090a[c1.middle.ordinal()] = 2;
+                f17719a[c1.middle.ordinal()] = 2;
             } catch (NoSuchFieldError unused20) {
             }
             try {
-                f18090a[c1.end.ordinal()] = 3;
+                f17719a[c1.end.ordinal()] = 3;
             } catch (NoSuchFieldError unused21) {
             }
         }
@@ -144,15 +144,15 @@ public class w0 extends j1 {
 
     private void E(Paint paint, y yVar) {
         int i10 = Build.VERSION.SDK_INT;
-        double d10 = yVar.f18111n;
-        paint.setLetterSpacing((float) (d10 / (yVar.f18098a * this.mScale)));
-        if (d10 == 0.0d && yVar.f18106i == a1.normal) {
-            paint.setFontFeatureSettings("'rlig', 'liga', 'clig', 'calt', 'locl', 'ccmp', 'mark', 'mkmk','kern', 'hlig', 'cala', " + yVar.f18104g);
+        double d10 = yVar.f17740n;
+        paint.setLetterSpacing((float) (d10 / (yVar.f17727a * this.mScale)));
+        if (d10 == 0.0d && yVar.f17735i == a1.normal) {
+            paint.setFontFeatureSettings("'rlig', 'liga', 'clig', 'calt', 'locl', 'ccmp', 'mark', 'mkmk','kern', 'hlig', 'cala', " + yVar.f17733g);
         } else {
-            paint.setFontFeatureSettings("'rlig', 'liga', 'clig', 'calt', 'locl', 'ccmp', 'mark', 'mkmk','kern', 'liga' 0, 'clig' 0, 'dlig' 0, 'hlig' 0, 'cala' 0, " + yVar.f18104g);
+            paint.setFontFeatureSettings("'rlig', 'liga', 'clig', 'calt', 'locl', 'ccmp', 'mark', 'mkmk','kern', 'liga' 0, 'clig' 0, 'dlig' 0, 'hlig' 0, 'cala' 0, " + yVar.f17733g);
         }
         if (i10 >= 26) {
-            paint.setFontVariationSettings("'wght' " + yVar.f18103f + yVar.f18105h);
+            paint.setFontVariationSettings("'wght' " + yVar.f17732f + yVar.f17734h);
         }
     }
 
@@ -160,12 +160,12 @@ public class w0 extends j1 {
         boolean z10;
         boolean z11;
         int i10 = 0;
-        if (yVar.f18102e != b1.Bold && yVar.f18103f < 550) {
+        if (yVar.f17731e != b1.Bold && yVar.f17732f < 550) {
             z10 = false;
         } else {
             z10 = true;
         }
-        if (yVar.f18100c == z0.italic) {
+        if (yVar.f17729c == z0.italic) {
             z11 = true;
         } else {
             z11 = false;
@@ -177,8 +177,8 @@ public class w0 extends j1 {
         } else if (z11) {
             i10 = 2;
         }
-        int i11 = yVar.f18103f;
-        String str = yVar.f18099b;
+        int i11 = yVar.f17732f;
+        String str = yVar.f17728b;
         Typeface typeface = null;
         if (str != null && str.length() > 0) {
             String str2 = "fonts/" + str + ".otf";
@@ -186,14 +186,14 @@ public class w0 extends j1 {
             if (Build.VERSION.SDK_INT >= 26) {
                 v0.a();
                 Typeface.Builder a10 = u0.a(this.G, str2);
-                a10.setFontVariationSettings("'wght' " + i11 + yVar.f18105h);
+                a10.setFontVariationSettings("'wght' " + i11 + yVar.f17734h);
                 a10.setWeight(i11);
                 a10.setItalic(z11);
                 typeface = a10.build();
                 if (typeface == null) {
                     v0.a();
                     Typeface.Builder a11 = u0.a(this.G, str3);
-                    a11.setFontVariationSettings("'wght' " + i11 + yVar.f18105h);
+                    a11.setFontVariationSettings("'wght' " + i11 + yVar.f17734h);
                     a11.setWeight(i11);
                     a11.setItalic(z11);
                     typeface = a11.build();
@@ -221,7 +221,7 @@ public class w0 extends j1 {
         paint.setLinearText(true);
         paint.setSubpixelText(true);
         paint.setTypeface(typeface);
-        paint.setTextSize((float) (yVar.f18098a * this.mScale));
+        paint.setTextSize((float) (yVar.f17727a * this.mScale));
         paint.setLetterSpacing(0.0f);
     }
 
@@ -234,7 +234,7 @@ public class w0 extends j1 {
         F(textPaint, b10);
         E(textPaint, b10);
         double c10 = g10.c();
-        int i10 = a.f18090a[b10.f18107j.ordinal()];
+        int i10 = a.f17719a[b10.f17736j.ordinal()];
         if (i10 != 2) {
             if (i10 != 3) {
                 alignment = Layout.Alignment.ALIGN_NORMAL;
@@ -244,7 +244,7 @@ public class w0 extends j1 {
         } else {
             alignment = Layout.Alignment.ALIGN_CENTER;
         }
-        StaticLayout J = J(textPaint, alignment, true, new SpannableString(this.C), (int) n0.a(this.f17958q, canvas.getWidth(), 0.0d, this.mScale, c10));
+        StaticLayout J = J(textPaint, alignment, true, new SpannableString(this.C), (int) n0.a(this.f17587q, canvas.getWidth(), 0.0d, this.mScale, c10));
         int lineAscent = J.getLineAscent(0);
         h();
         canvas.save();
@@ -290,7 +290,7 @@ public class w0 extends j1 {
     }
 
     private double K(c1 c1Var, double d10) {
-        int i10 = a.f18090a[c1Var.ordinal()];
+        int i10 = a.f17719a[c1Var.ordinal()];
         if (i10 != 2) {
             if (i10 != 3) {
                 return 0.0d;
@@ -360,8 +360,8 @@ public class w0 extends j1 {
     @Override // com.horcrux.svg.j1, com.horcrux.svg.c0, com.horcrux.svg.RenderableView, com.horcrux.svg.VirtualView
     void draw(Canvas canvas, Paint paint, float f10) {
         if (this.C != null) {
-            SVGLength sVGLength = this.f17958q;
-            if (sVGLength != null && sVGLength.f17743a != 0.0d) {
+            SVGLength sVGLength = this.f17587q;
+            if (sVGLength != null && sVGLength.f17372a != 0.0d) {
                 if (setupFillPaint(paint, this.fillOpacity * f10)) {
                     G(canvas, paint);
                 }

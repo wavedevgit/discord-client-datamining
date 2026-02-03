@@ -33,67 +33,67 @@ import org.jetbrains.annotations.NotNull;
 public final class DeserializationComponents {
 
     /* renamed from: a  reason: collision with root package name */
-    private final StorageManager f35584a;
+    private final StorageManager f35360a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ModuleDescriptor f35585b;
+    private final ModuleDescriptor f35361b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final DeserializationConfiguration f35586c;
+    private final DeserializationConfiguration f35362c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ClassDataFinder f35587d;
+    private final ClassDataFinder f35363d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AnnotationAndConstantLoader f35588e;
+    private final AnnotationAndConstantLoader f35364e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final PackageFragmentProvider f35589f;
+    private final PackageFragmentProvider f35365f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final LocalClassifierTypeSettings f35590g;
+    private final LocalClassifierTypeSettings f35366g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final ErrorReporter f35591h;
+    private final ErrorReporter f35367h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final LookupTracker f35592i;
+    private final LookupTracker f35368i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final FlexibleTypeDeserializer f35593j;
+    private final FlexibleTypeDeserializer f35369j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Iterable f35594k;
+    private final Iterable f35370k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final NotFoundClasses f35595l;
+    private final NotFoundClasses f35371l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final ContractDeserializer f35596m;
+    private final ContractDeserializer f35372m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final AdditionalClassPartsProvider f35597n;
+    private final AdditionalClassPartsProvider f35373n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final PlatformDependentDeclarationFilter f35598o;
+    private final PlatformDependentDeclarationFilter f35374o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final ExtensionRegistryLite f35599p;
+    private final ExtensionRegistryLite f35375p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final NewKotlinTypeChecker f35600q;
+    private final NewKotlinTypeChecker f35376q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final SamConversionResolver f35601r;
+    private final SamConversionResolver f35377r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final List f35602s;
+    private final List f35378s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final EnumEntriesDeserializationSupport f35603t;
+    private final EnumEntriesDeserializationSupport f35379t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final ClassDeserializer f35604u;
+    private final ClassDeserializer f35380u;
 
     public DeserializationComponents(@NotNull StorageManager storageManager, @NotNull ModuleDescriptor moduleDescriptor, @NotNull DeserializationConfiguration configuration, @NotNull ClassDataFinder classDataFinder, @NotNull AnnotationAndConstantLoader<? extends AnnotationDescriptor, ? extends ConstantValue<?>> annotationAndConstantLoader, @NotNull PackageFragmentProvider packageFragmentProvider, @NotNull LocalClassifierTypeSettings localClassifierTypeSettings, @NotNull ErrorReporter errorReporter, @NotNull LookupTracker lookupTracker, @NotNull FlexibleTypeDeserializer flexibleTypeDeserializer, @NotNull Iterable<? extends ClassDescriptorFactory> fictitiousClassDescriptorFactories, @NotNull NotFoundClasses notFoundClasses, @NotNull ContractDeserializer contractDeserializer, @NotNull AdditionalClassPartsProvider additionalClassPartsProvider, @NotNull PlatformDependentDeclarationFilter platformDependentDeclarationFilter, @NotNull ExtensionRegistryLite extensionRegistryLite, @NotNull NewKotlinTypeChecker kotlinTypeChecker, @NotNull SamConversionResolver samConversionResolver, @NotNull List<? extends TypeAttributeTranslator> typeAttributeTranslators, @NotNull EnumEntriesDeserializationSupport enumEntriesDeserializationSupport) {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
@@ -116,27 +116,27 @@ public final class DeserializationComponents {
         Intrinsics.checkNotNullParameter(samConversionResolver, "samConversionResolver");
         Intrinsics.checkNotNullParameter(typeAttributeTranslators, "typeAttributeTranslators");
         Intrinsics.checkNotNullParameter(enumEntriesDeserializationSupport, "enumEntriesDeserializationSupport");
-        this.f35584a = storageManager;
-        this.f35585b = moduleDescriptor;
-        this.f35586c = configuration;
-        this.f35587d = classDataFinder;
-        this.f35588e = annotationAndConstantLoader;
-        this.f35589f = packageFragmentProvider;
-        this.f35590g = localClassifierTypeSettings;
-        this.f35591h = errorReporter;
-        this.f35592i = lookupTracker;
-        this.f35593j = flexibleTypeDeserializer;
-        this.f35594k = fictitiousClassDescriptorFactories;
-        this.f35595l = notFoundClasses;
-        this.f35596m = contractDeserializer;
-        this.f35597n = additionalClassPartsProvider;
-        this.f35598o = platformDependentDeclarationFilter;
-        this.f35599p = extensionRegistryLite;
-        this.f35600q = kotlinTypeChecker;
-        this.f35601r = samConversionResolver;
-        this.f35602s = typeAttributeTranslators;
-        this.f35603t = enumEntriesDeserializationSupport;
-        this.f35604u = new ClassDeserializer(this);
+        this.f35360a = storageManager;
+        this.f35361b = moduleDescriptor;
+        this.f35362c = configuration;
+        this.f35363d = classDataFinder;
+        this.f35364e = annotationAndConstantLoader;
+        this.f35365f = packageFragmentProvider;
+        this.f35366g = localClassifierTypeSettings;
+        this.f35367h = errorReporter;
+        this.f35368i = lookupTracker;
+        this.f35369j = flexibleTypeDeserializer;
+        this.f35370k = fictitiousClassDescriptorFactories;
+        this.f35371l = notFoundClasses;
+        this.f35372m = contractDeserializer;
+        this.f35373n = additionalClassPartsProvider;
+        this.f35374o = platformDependentDeclarationFilter;
+        this.f35375p = extensionRegistryLite;
+        this.f35376q = kotlinTypeChecker;
+        this.f35377r = samConversionResolver;
+        this.f35378s = typeAttributeTranslators;
+        this.f35379t = enumEntriesDeserializationSupport;
+        this.f35380u = new ClassDeserializer(this);
     }
 
     @NotNull
@@ -151,107 +151,107 @@ public final class DeserializationComponents {
 
     public final ClassDescriptor deserializeClass(@NotNull ClassId classId) {
         Intrinsics.checkNotNullParameter(classId, "classId");
-        return ClassDeserializer.deserializeClass$default(this.f35604u, classId, null, 2, null);
+        return ClassDeserializer.deserializeClass$default(this.f35380u, classId, null, 2, null);
     }
 
     @NotNull
     public final AdditionalClassPartsProvider getAdditionalClassPartsProvider() {
-        return this.f35597n;
+        return this.f35373n;
     }
 
     @NotNull
     public final AnnotationAndConstantLoader<AnnotationDescriptor, ConstantValue<?>> getAnnotationAndConstantLoader() {
-        return this.f35588e;
+        return this.f35364e;
     }
 
     @NotNull
     public final ClassDataFinder getClassDataFinder() {
-        return this.f35587d;
+        return this.f35363d;
     }
 
     @NotNull
     public final ClassDeserializer getClassDeserializer() {
-        return this.f35604u;
+        return this.f35380u;
     }
 
     @NotNull
     public final DeserializationConfiguration getConfiguration() {
-        return this.f35586c;
+        return this.f35362c;
     }
 
     @NotNull
     public final ContractDeserializer getContractDeserializer() {
-        return this.f35596m;
+        return this.f35372m;
     }
 
     @NotNull
     public final EnumEntriesDeserializationSupport getEnumEntriesDeserializationSupport() {
-        return this.f35603t;
+        return this.f35379t;
     }
 
     @NotNull
     public final ErrorReporter getErrorReporter() {
-        return this.f35591h;
+        return this.f35367h;
     }
 
     @NotNull
     public final ExtensionRegistryLite getExtensionRegistryLite() {
-        return this.f35599p;
+        return this.f35375p;
     }
 
     @NotNull
     public final Iterable<ClassDescriptorFactory> getFictitiousClassDescriptorFactories() {
-        return this.f35594k;
+        return this.f35370k;
     }
 
     @NotNull
     public final FlexibleTypeDeserializer getFlexibleTypeDeserializer() {
-        return this.f35593j;
+        return this.f35369j;
     }
 
     @NotNull
     public final NewKotlinTypeChecker getKotlinTypeChecker() {
-        return this.f35600q;
+        return this.f35376q;
     }
 
     @NotNull
     public final LocalClassifierTypeSettings getLocalClassifierTypeSettings() {
-        return this.f35590g;
+        return this.f35366g;
     }
 
     @NotNull
     public final LookupTracker getLookupTracker() {
-        return this.f35592i;
+        return this.f35368i;
     }
 
     @NotNull
     public final ModuleDescriptor getModuleDescriptor() {
-        return this.f35585b;
+        return this.f35361b;
     }
 
     @NotNull
     public final NotFoundClasses getNotFoundClasses() {
-        return this.f35595l;
+        return this.f35371l;
     }
 
     @NotNull
     public final PackageFragmentProvider getPackageFragmentProvider() {
-        return this.f35589f;
+        return this.f35365f;
     }
 
     @NotNull
     public final PlatformDependentDeclarationFilter getPlatformDependentDeclarationFilter() {
-        return this.f35598o;
+        return this.f35374o;
     }
 
     @NotNull
     public final StorageManager getStorageManager() {
-        return this.f35584a;
+        return this.f35360a;
     }
 
     @NotNull
     public final List<TypeAttributeTranslator> getTypeAttributeTranslators() {
-        return this.f35602s;
+        return this.f35378s;
     }
 
     public /* synthetic */ DeserializationComponents(StorageManager storageManager, ModuleDescriptor moduleDescriptor, DeserializationConfiguration deserializationConfiguration, ClassDataFinder classDataFinder, AnnotationAndConstantLoader annotationAndConstantLoader, PackageFragmentProvider packageFragmentProvider, LocalClassifierTypeSettings localClassifierTypeSettings, ErrorReporter errorReporter, LookupTracker lookupTracker, FlexibleTypeDeserializer flexibleTypeDeserializer, Iterable iterable, NotFoundClasses notFoundClasses, ContractDeserializer contractDeserializer, AdditionalClassPartsProvider additionalClassPartsProvider, PlatformDependentDeclarationFilter platformDependentDeclarationFilter, ExtensionRegistryLite extensionRegistryLite, NewKotlinTypeChecker newKotlinTypeChecker, SamConversionResolver samConversionResolver, List list, EnumEntriesDeserializationSupport enumEntriesDeserializationSupport, int i10, DefaultConstructorMarker defaultConstructorMarker) {

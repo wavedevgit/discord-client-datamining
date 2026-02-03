@@ -12,103 +12,103 @@ import s5.t;
 public class n implements m, a.b, k {
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f39853e;
+    private final String f39716e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final com.airbnb.lottie.n f39854f;
+    private final com.airbnb.lottie.n f39717f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final k.a f39855g;
+    private final k.a f39718g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f39856h;
+    private final boolean f39719h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f39857i;
+    private final boolean f39720i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final o5.a f39858j;
+    private final o5.a f39721j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final o5.a f39859k;
+    private final o5.a f39722k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final o5.a f39860l;
+    private final o5.a f39723l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final o5.a f39861m;
+    private final o5.a f39724m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final o5.a f39862n;
+    private final o5.a f39725n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final o5.a f39863o;
+    private final o5.a f39726o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final o5.a f39864p;
+    private final o5.a f39727p;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f39866r;
+    private boolean f39729r;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Path f39849a = new Path();
+    private final Path f39712a = new Path();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Path f39850b = new Path();
+    private final Path f39713b = new Path();
 
     /* renamed from: c  reason: collision with root package name */
-    private final PathMeasure f39851c = new PathMeasure();
+    private final PathMeasure f39714c = new PathMeasure();
 
     /* renamed from: d  reason: collision with root package name */
-    private final float[] f39852d = new float[2];
+    private final float[] f39715d = new float[2];
 
     /* renamed from: q  reason: collision with root package name */
-    private final b f39865q = new b();
+    private final b f39728q = new b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f39867a;
+        static final /* synthetic */ int[] f39730a;
 
         static {
             int[] iArr = new int[k.a.values().length];
-            f39867a = iArr;
+            f39730a = iArr;
             try {
                 iArr[k.a.STAR.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f39867a[k.a.POLYGON.ordinal()] = 2;
+                f39730a[k.a.POLYGON.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
     }
 
     public n(com.airbnb.lottie.n nVar, t5.b bVar, s5.k kVar) {
-        this.f39854f = nVar;
-        this.f39853e = kVar.d();
+        this.f39717f = nVar;
+        this.f39716e = kVar.d();
         k.a j10 = kVar.j();
-        this.f39855g = j10;
-        this.f39856h = kVar.k();
-        this.f39857i = kVar.l();
+        this.f39718g = j10;
+        this.f39719h = kVar.k();
+        this.f39720i = kVar.l();
         o5.a a10 = kVar.g().a();
-        this.f39858j = a10;
+        this.f39721j = a10;
         o5.a a11 = kVar.h().a();
-        this.f39859k = a11;
+        this.f39722k = a11;
         o5.a a12 = kVar.i().a();
-        this.f39860l = a12;
+        this.f39723l = a12;
         o5.a a13 = kVar.e().a();
-        this.f39862n = a13;
+        this.f39725n = a13;
         o5.a a14 = kVar.f().a();
-        this.f39864p = a14;
+        this.f39727p = a14;
         k.a aVar = k.a.STAR;
         if (j10 == aVar) {
-            this.f39861m = kVar.b().a();
-            this.f39863o = kVar.c().a();
+            this.f39724m = kVar.b().a();
+            this.f39726o = kVar.c().a();
         } else {
-            this.f39861m = null;
-            this.f39863o = null;
+            this.f39724m = null;
+            this.f39726o = null;
         }
         bVar.i(a10);
         bVar.i(a11);
@@ -116,8 +116,8 @@ public class n implements m, a.b, k {
         bVar.i(a13);
         bVar.i(a14);
         if (j10 == aVar) {
-            bVar.i(this.f39861m);
-            bVar.i(this.f39863o);
+            bVar.i(this.f39724m);
+            bVar.i(this.f39726o);
         }
         a10.a(this);
         a11.a(this);
@@ -125,8 +125,8 @@ public class n implements m, a.b, k {
         a13.a(this);
         a14.a(this);
         if (j10 == aVar) {
-            this.f39861m.a(this);
-            this.f39863o.a(this);
+            this.f39724m.a(this);
+            this.f39726o.a(this);
         }
     }
 
@@ -136,8 +136,8 @@ public class n implements m, a.b, k {
         float f10;
         float f11;
         float f12;
-        int floor = (int) Math.floor(((Float) this.f39858j.h()).floatValue());
-        o5.a aVar = this.f39860l;
+        int floor = (int) Math.floor(((Float) this.f39721j.h()).floatValue());
+        o5.a aVar = this.f39723l;
         if (aVar == null) {
             floatValue = 0.0d;
         } else {
@@ -145,12 +145,12 @@ public class n implements m, a.b, k {
         }
         double radians = Math.toRadians(floatValue - 90.0d);
         double d11 = floor;
-        float floatValue2 = ((Float) this.f39864p.h()).floatValue() / 100.0f;
-        float floatValue3 = ((Float) this.f39862n.h()).floatValue();
+        float floatValue2 = ((Float) this.f39727p.h()).floatValue() / 100.0f;
+        float floatValue3 = ((Float) this.f39725n.h()).floatValue();
         double d12 = floatValue3;
         float cos = (float) (Math.cos(radians) * d12);
         float sin = (float) (Math.sin(radians) * d12);
-        this.f39849a.moveTo(cos, sin);
+        this.f39712a.moveTo(cos, sin);
         double d13 = (float) (6.283185307179586d / d11);
         double ceil = Math.ceil(d11);
         double d14 = radians + d13;
@@ -173,25 +173,25 @@ public class n implements m, a.b, k {
                     float cos4 = ((float) Math.cos(atan22)) * f13;
                     float sin4 = f13 * ((float) Math.sin(atan22));
                     if (d15 == d10 - 1.0d) {
-                        this.f39850b.reset();
-                        this.f39850b.moveTo(cos, sin);
+                        this.f39713b.reset();
+                        this.f39713b.moveTo(cos, sin);
                         float f16 = cos - f14;
                         float f17 = sin - f15;
                         float f18 = cos2 + cos4;
                         float f19 = sin2 + sin4;
                         f11 = cos2;
                         f12 = sin2;
-                        this.f39850b.cubicTo(f16, f17, f18, f19, f11, f12);
-                        this.f39851c.setPath(this.f39850b, false);
-                        PathMeasure pathMeasure = this.f39851c;
-                        pathMeasure.getPosTan(pathMeasure.getLength() * 0.9999f, this.f39852d, null);
-                        Path path = this.f39849a;
-                        float[] fArr = this.f39852d;
+                        this.f39713b.cubicTo(f16, f17, f18, f19, f11, f12);
+                        this.f39714c.setPath(this.f39713b, false);
+                        PathMeasure pathMeasure = this.f39714c;
+                        pathMeasure.getPosTan(pathMeasure.getLength() * 0.9999f, this.f39715d, null);
+                        Path path = this.f39712a;
+                        float[] fArr = this.f39715d;
                         path.cubicTo(f16, f17, f18, f19, fArr[0], fArr[1]);
                     } else {
                         f11 = cos2;
                         f12 = sin2;
-                        this.f39849a.cubicTo(cos - f14, sin - f15, f11 + cos4, f12 + sin4, f11, f12);
+                        this.f39712a.cubicTo(cos - f14, sin - f15, f11 + cos4, f12 + sin4, f11, f12);
                     }
                     cos = f11;
                     sin = f12;
@@ -201,7 +201,7 @@ public class n implements m, a.b, k {
                     d10 = ceil;
                     f10 = floatValue2;
                     if (d15 != d10 - 1.0d) {
-                        this.f39849a.lineTo(cos, sin);
+                        this.f39712a.lineTo(cos, sin);
                     } else {
                         i10++;
                         ceil = d10;
@@ -213,9 +213,9 @@ public class n implements m, a.b, k {
                 ceil = d10;
                 floatValue2 = f10;
             } else {
-                PointF pointF = (PointF) this.f39859k.h();
-                this.f39849a.offset(pointF.x, pointF.y);
-                this.f39849a.close();
+                PointF pointF = (PointF) this.f39722k.h();
+                this.f39712a.offset(pointF.x, pointF.y);
+                this.f39712a.close();
                 return;
             }
         }
@@ -247,8 +247,8 @@ public class n implements m, a.b, k {
         float f24;
         float f25;
         float f26;
-        float floatValue2 = ((Float) this.f39858j.h()).floatValue();
-        o5.a aVar = this.f39860l;
+        float floatValue2 = ((Float) this.f39721j.h()).floatValue();
+        o5.a aVar = this.f39723l;
         if (aVar == null) {
             floatValue = 0.0d;
         } else {
@@ -257,7 +257,7 @@ public class n implements m, a.b, k {
         double radians = Math.toRadians(floatValue - 90.0d);
         double d13 = floatValue2;
         float f27 = (float) (6.283185307179586d / d13);
-        if (this.f39857i) {
+        if (this.f39720i) {
             f27 *= -1.0f;
         }
         float f28 = f27 / 2.0f;
@@ -266,15 +266,15 @@ public class n implements m, a.b, k {
         if (i12 != 0) {
             radians += (1.0f - f29) * f28;
         }
-        float floatValue3 = ((Float) this.f39862n.h()).floatValue();
-        float floatValue4 = ((Float) this.f39861m.h()).floatValue();
-        o5.a aVar2 = this.f39863o;
+        float floatValue3 = ((Float) this.f39725n.h()).floatValue();
+        float floatValue4 = ((Float) this.f39724m.h()).floatValue();
+        o5.a aVar2 = this.f39726o;
         if (aVar2 != null) {
             f10 = ((Float) aVar2.h()).floatValue() / 100.0f;
         } else {
             f10 = 0.0f;
         }
-        o5.a aVar3 = this.f39864p;
+        o5.a aVar3 = this.f39727p;
         if (aVar3 != null) {
             f11 = ((Float) aVar3.h()).floatValue() / 100.0f;
         } else {
@@ -288,7 +288,7 @@ public class n implements m, a.b, k {
             f12 = 2.0f;
             float cos2 = (float) (d14 * Math.cos(radians));
             sin = (float) (d14 * Math.sin(radians));
-            this.f39849a.moveTo(cos2, sin);
+            this.f39712a.moveTo(cos2, sin);
             d10 = radians + ((f27 * f29) / 2.0f);
             f14 = f29;
             cos = cos2;
@@ -300,7 +300,7 @@ public class n implements m, a.b, k {
             double d15 = floatValue3;
             cos = (float) (Math.cos(radians) * d15);
             sin = (float) (d15 * Math.sin(radians));
-            this.f39849a.moveTo(cos, sin);
+            this.f39712a.moveTo(cos, sin);
             f14 = f29;
             f15 = f28;
             d10 = radians + f15;
@@ -341,7 +341,7 @@ public class n implements m, a.b, k {
                 float f32 = f27;
                 float sin2 = (float) (d19 * Math.sin(d17));
                 if (f10 == f13 && f11 == f13) {
-                    this.f39849a.lineTo(cos3, sin2);
+                    this.f39712a.lineTo(cos3, sin2);
                     f26 = cos3;
                     f21 = sin2;
                     f20 = f15;
@@ -394,7 +394,7 @@ public class n implements m, a.b, k {
                         }
                     }
                     f26 = cos3;
-                    this.f39849a.cubicTo(f33 - f36, f34 - f37, cos3 + f39, f21 + f40, f26, f21);
+                    this.f39712a.cubicTo(f33 - f36, f34 - f37, cos3 + f39, f21 + f40, f26, f21);
                 }
                 d17 = d12 + f18;
                 z10 = !z10;
@@ -404,17 +404,17 @@ public class n implements m, a.b, k {
                 f30 = f21;
                 f27 = f32;
             } else {
-                PointF pointF = (PointF) this.f39859k.h();
-                this.f39849a.offset(pointF.x, pointF.y);
-                this.f39849a.close();
+                PointF pointF = (PointF) this.f39722k.h();
+                this.f39712a.offset(pointF.x, pointF.y);
+                this.f39712a.close();
                 return;
             }
         }
     }
 
     private void j() {
-        this.f39866r = false;
-        this.f39854f.invalidateSelf();
+        this.f39729r = false;
+        this.f39717f.invalidateSelf();
     }
 
     @Override // o5.a.b
@@ -429,7 +429,7 @@ public class n implements m, a.b, k {
             if (cVar instanceof u) {
                 u uVar = (u) cVar;
                 if (uVar.j() == t.a.SIMULTANEOUSLY) {
-                    this.f39865q.a(uVar);
+                    this.f39728q.a(uVar);
                     uVar.c(this);
                 }
             }
@@ -445,39 +445,39 @@ public class n implements m, a.b, k {
     public void d(Object obj, y5.c cVar) {
         o5.a aVar;
         o5.a aVar2;
-        if (obj == a0.f36884w) {
-            this.f39858j.o(cVar);
-        } else if (obj == a0.f36885x) {
-            this.f39860l.o(cVar);
-        } else if (obj == a0.f36875n) {
-            this.f39859k.o(cVar);
-        } else if (obj == a0.f36886y && (aVar2 = this.f39861m) != null) {
+        if (obj == a0.f36998w) {
+            this.f39721j.o(cVar);
+        } else if (obj == a0.f36999x) {
+            this.f39723l.o(cVar);
+        } else if (obj == a0.f36989n) {
+            this.f39722k.o(cVar);
+        } else if (obj == a0.f37000y && (aVar2 = this.f39724m) != null) {
             aVar2.o(cVar);
-        } else if (obj == a0.f36887z) {
-            this.f39862n.o(cVar);
-        } else if (obj == a0.A && (aVar = this.f39863o) != null) {
+        } else if (obj == a0.f37001z) {
+            this.f39725n.o(cVar);
+        } else if (obj == a0.A && (aVar = this.f39726o) != null) {
             aVar.o(cVar);
         } else if (obj == a0.B) {
-            this.f39864p.o(cVar);
+            this.f39727p.o(cVar);
         }
     }
 
     @Override // n5.c
     public String getName() {
-        return this.f39853e;
+        return this.f39716e;
     }
 
     @Override // n5.m
     public Path q() {
-        if (this.f39866r) {
-            return this.f39849a;
+        if (this.f39729r) {
+            return this.f39712a;
         }
-        this.f39849a.reset();
-        if (this.f39856h) {
-            this.f39866r = true;
-            return this.f39849a;
+        this.f39712a.reset();
+        if (this.f39719h) {
+            this.f39729r = true;
+            return this.f39712a;
         }
-        int i10 = a.f39867a[this.f39855g.ordinal()];
+        int i10 = a.f39730a[this.f39718g.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 f();
@@ -485,9 +485,9 @@ public class n implements m, a.b, k {
         } else {
             i();
         }
-        this.f39849a.close();
-        this.f39865q.b(this.f39849a);
-        this.f39866r = true;
-        return this.f39849a;
+        this.f39712a.close();
+        this.f39728q.b(this.f39712a);
+        this.f39729r = true;
+        return this.f39712a;
     }
 }

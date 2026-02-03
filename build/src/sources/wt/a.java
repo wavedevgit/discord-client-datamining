@@ -1,265 +1,124 @@
 package wt;
 
-import iu.x;
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
+import java.net.Authenticator;
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+import java.net.PasswordAuthentication;
+import java.net.Proxy;
+import java.net.SocketAddress;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
-import okhttp3.Call;
-import okhttp3.Headers;
-import okhttp3.Interceptor;
+import okhttp3.HttpUrl;
 import okhttp3.Request;
 import okhttp3.Response;
-import okhttp3.ResponseBody;
-import okio.Buffer;
-import okio.BufferedSink;
-import okio.BufferedSource;
-import okio.Sink;
-import okio.Source;
-import okio.Timeout;
-import tt.j;
-import wt.c;
-import zt.f;
-import zt.h;
+import ut.d;
+import ut.g;
+import ut.h;
+import ut.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a implements Interceptor {
+public final class a implements ut.a {
 
-    /* renamed from: b  reason: collision with root package name */
-    public static final C0728a f52785b = new C0728a(null);
-
-    /* renamed from: a  reason: collision with root package name */
-    private final okhttp3.b f52786a;
+    /* renamed from: d  reason: collision with root package name */
+    private final h f53047d;
 
     /* renamed from: wt.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0728a {
-        public /* synthetic */ C0728a(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
+    public /* synthetic */ class C0734a {
 
-        /* JADX INFO: Access modifiers changed from: private */
-        public final Headers c(Headers headers, Headers headers2) {
-            Headers.a aVar = new Headers.a();
-            int size = headers.size();
-            for (int i10 = 0; i10 < size; i10++) {
-                String e10 = headers.e(i10);
-                String j10 = headers.j(i10);
-                if ((!StringsKt.A("Warning", e10, true) || !StringsKt.P(j10, "1", false, 2, null)) && (d(e10) || !e(e10) || headers2.c(e10) == null)) {
-                    aVar.d(e10, j10);
-                }
-            }
-            int size2 = headers2.size();
-            for (int i11 = 0; i11 < size2; i11++) {
-                String e11 = headers2.e(i11);
-                if (!d(e11) && e(e11)) {
-                    aVar.d(e11, headers2.j(i11));
-                }
-            }
-            return aVar.f();
-        }
+        /* renamed from: a  reason: collision with root package name */
+        public static final /* synthetic */ int[] f53048a;
 
-        private final boolean d(String str) {
-            if (StringsKt.A("Content-Length", str, true) || StringsKt.A("Content-Encoding", str, true) || StringsKt.A("Content-Type", str, true)) {
-                return true;
-            }
-            return false;
-        }
-
-        private final boolean e(String str) {
-            if (!StringsKt.A("Connection", str, true) && !StringsKt.A("Keep-Alive", str, true) && !StringsKt.A("Proxy-Authenticate", str, true) && !StringsKt.A("Proxy-Authorization", str, true) && !StringsKt.A("TE", str, true) && !StringsKt.A("Trailers", str, true) && !StringsKt.A("Transfer-Encoding", str, true) && !StringsKt.A("Upgrade", str, true)) {
-                return true;
-            }
-            return false;
-        }
-
-        /* JADX INFO: Access modifiers changed from: private */
-        public final Response f(Response response) {
-            ResponseBody responseBody;
-            if (response != null) {
-                responseBody = response.x();
-            } else {
-                responseBody = null;
-            }
-            if (responseBody != null) {
-                return response.M0().b(null).c();
-            }
-            return response;
-        }
-
-        private C0728a() {
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class b implements Source {
-
-        /* renamed from: d  reason: collision with root package name */
-        private boolean f52787d;
-
-        /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ BufferedSource f52788e;
-
-        /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ wt.b f52789i;
-
-        /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ BufferedSink f52790o;
-
-        b(BufferedSource bufferedSource, wt.b bVar, BufferedSink bufferedSink) {
-            this.f52788e = bufferedSource;
-            this.f52789i = bVar;
-            this.f52790o = bufferedSink;
-        }
-
-        @Override // okio.Source, java.io.Closeable, java.lang.AutoCloseable
-        public void close() {
-            if (!this.f52787d && !ut.e.s(this, 100, TimeUnit.MILLISECONDS)) {
-                this.f52787d = true;
-                this.f52789i.a();
-            }
-            this.f52788e.close();
-        }
-
-        @Override // okio.Source
-        public long read(Buffer sink, long j10) {
-            Intrinsics.checkNotNullParameter(sink, "sink");
+        static {
+            int[] iArr = new int[Proxy.Type.values().length];
             try {
-                long read = this.f52788e.read(sink, j10);
-                if (read == -1) {
-                    if (!this.f52787d) {
-                        this.f52787d = true;
-                        this.f52790o.close();
-                    }
-                    return -1L;
-                }
-                sink.N(this.f52790o.e(), sink.size() - read, read);
-                this.f52790o.d0();
-                return read;
-            } catch (IOException e10) {
-                if (!this.f52787d) {
-                    this.f52787d = true;
-                    this.f52789i.a();
-                }
-                throw e10;
+                iArr[Proxy.Type.DIRECT.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
             }
-        }
-
-        @Override // okio.Source
-        public Timeout timeout() {
-            return this.f52788e.timeout();
+            f53048a = iArr;
         }
     }
 
-    public a(okhttp3.b bVar) {
-        this.f52786a = bVar;
+    public a(h defaultDns) {
+        Intrinsics.checkNotNullParameter(defaultDns, "defaultDns");
+        this.f53047d = defaultDns;
     }
 
-    private final Response a(wt.b bVar, Response response) {
-        if (bVar == null) {
-            return response;
-        }
-        Sink b10 = bVar.b();
-        ResponseBody x10 = response.x();
-        Intrinsics.checkNotNull(x10);
-        b bVar2 = new b(x10.source(), bVar, x.c(b10));
-        return response.M0().b(new h(Response.D0(response, "Content-Type", null, 2, null), response.x().contentLength(), x.d(bVar2))).c();
-    }
-
-    @Override // okhttp3.Interceptor
-    public Response intercept(Interceptor.Chain chain) {
-        Response response;
-        okhttp3.e eVar;
-        ResponseBody x10;
-        ResponseBody x11;
-        Intrinsics.checkNotNullParameter(chain, "chain");
-        Call call = chain.call();
-        okhttp3.b bVar = this.f52786a;
-        yt.e eVar2 = null;
-        if (bVar != null) {
-            response = bVar.h(chain.h());
+    private final InetAddress b(Proxy proxy, HttpUrl httpUrl, h hVar) {
+        int i10;
+        Proxy.Type type = proxy.type();
+        if (type == null) {
+            i10 = -1;
         } else {
-            response = null;
+            i10 = C0734a.f53048a[type.ordinal()];
         }
-        c b10 = new c.b(System.currentTimeMillis(), chain.h(), response).b();
-        Request b11 = b10.b();
-        Response a10 = b10.a();
-        okhttp3.b bVar2 = this.f52786a;
-        if (bVar2 != null) {
-            bVar2.N(b10);
+        if (i10 == 1) {
+            return (InetAddress) CollectionsKt.o0(hVar.lookup(httpUrl.i()));
         }
-        if (call instanceof yt.e) {
-            eVar2 = (yt.e) call;
-        }
-        if (eVar2 == null || (eVar = eVar2.m()) == null) {
-            eVar = okhttp3.e.f44336b;
-        }
-        if (response != null && a10 == null && (x11 = response.x()) != null) {
-            ut.e.m(x11);
-        }
-        if (b11 == null && a10 == null) {
-            Response c10 = new Response.a().r(chain.h()).p(j.HTTP_1_1).g(504).m("Unsatisfiable Request (only-if-cached)").b(ut.e.f50574c).s(-1L).q(System.currentTimeMillis()).c();
-            eVar.A(call, c10);
-            return c10;
-        } else if (b11 == null) {
-            Intrinsics.checkNotNull(a10);
-            Response c11 = a10.M0().d(f52785b.f(a10)).c();
-            eVar.b(call, c11);
-            return c11;
+        SocketAddress address = proxy.address();
+        Intrinsics.checkNotNull(address, "null cannot be cast to non-null type java.net.InetSocketAddress");
+        InetAddress address2 = ((InetSocketAddress) address).getAddress();
+        Intrinsics.checkNotNullExpressionValue(address2, "address() as InetSocketAddress).address");
+        return address2;
+    }
+
+    @Override // ut.a
+    public Request a(k kVar, Response response) {
+        boolean z10;
+        Proxy proxy;
+        h hVar;
+        PasswordAuthentication requestPasswordAuthentication;
+        String str;
+        okhttp3.a a10;
+        Intrinsics.checkNotNullParameter(response, "response");
+        List<d> F = response.F();
+        Request Z0 = response.Z0();
+        HttpUrl n10 = Z0.n();
+        if (response.L() == 407) {
+            z10 = true;
         } else {
-            if (a10 != null) {
-                eVar.a(call, a10);
-            } else if (this.f52786a != null) {
-                eVar.c(call);
-            }
-            try {
-                Response a11 = chain.a(b11);
-                if (a11 == null && response != null && x10 != null) {
+            z10 = false;
+        }
+        if (kVar == null || (proxy = kVar.b()) == null) {
+            proxy = Proxy.NO_PROXY;
+        }
+        for (d dVar : F) {
+            if (StringsKt.A("Basic", dVar.c(), true)) {
+                if (kVar == null || (a10 = kVar.a()) == null || (hVar = a10.c()) == null) {
+                    hVar = this.f53047d;
                 }
-                if (a10 != null) {
-                    if (a11 != null && a11.L() == 304) {
-                        Response.a M0 = a10.M0();
-                        C0728a c0728a = f52785b;
-                        Response c12 = M0.k(c0728a.c(a10.E0(), a11.E0())).s(a11.d1()).q(a11.X0()).d(c0728a.f(a10)).n(c0728a.f(a11)).c();
-                        ResponseBody x12 = a11.x();
-                        Intrinsics.checkNotNull(x12);
-                        x12.close();
-                        okhttp3.b bVar3 = this.f52786a;
-                        Intrinsics.checkNotNull(bVar3);
-                        bVar3.L();
-                        this.f52786a.V(a10, c12);
-                        eVar.b(call, c12);
-                        return c12;
-                    }
-                    ResponseBody x13 = a10.x();
-                    if (x13 != null) {
-                        ut.e.m(x13);
-                    }
+                if (z10) {
+                    SocketAddress address = proxy.address();
+                    Intrinsics.checkNotNull(address, "null cannot be cast to non-null type java.net.InetSocketAddress");
+                    InetSocketAddress inetSocketAddress = (InetSocketAddress) address;
+                    String hostName = inetSocketAddress.getHostName();
+                    Intrinsics.checkNotNullExpressionValue(proxy, "proxy");
+                    requestPasswordAuthentication = Authenticator.requestPasswordAuthentication(hostName, b(proxy, n10, hVar), inetSocketAddress.getPort(), n10.s(), dVar.b(), dVar.c(), n10.u(), Authenticator.RequestorType.PROXY);
+                } else {
+                    String i10 = n10.i();
+                    Intrinsics.checkNotNullExpressionValue(proxy, "proxy");
+                    requestPasswordAuthentication = Authenticator.requestPasswordAuthentication(i10, b(proxy, n10, hVar), n10.o(), n10.s(), dVar.b(), dVar.c(), n10.u(), Authenticator.RequestorType.SERVER);
                 }
-                Intrinsics.checkNotNull(a11);
-                Response.a M02 = a11.M0();
-                C0728a c0728a2 = f52785b;
-                Response c13 = M02.d(c0728a2.f(a10)).n(c0728a2.f(a11)).c();
-                if (this.f52786a != null) {
-                    if (zt.e.b(c13) && c.f52791c.a(c13, b11)) {
-                        Response a12 = a(this.f52786a.x(c13), c13);
-                        if (a10 != null) {
-                            eVar.c(call);
-                        }
-                        return a12;
-                    } else if (f.f56129a.a(b11.j())) {
-                        try {
-                            this.f52786a.B(b11);
-                        } catch (IOException unused) {
-                        }
+                if (requestPasswordAuthentication != null) {
+                    if (z10) {
+                        str = "Proxy-Authorization";
+                    } else {
+                        str = "Authorization";
                     }
-                }
-                return c13;
-            } finally {
-                if (response != null && (x10 = response.x()) != null) {
-                    ut.e.m(x10);
+                    String userName = requestPasswordAuthentication.getUserName();
+                    Intrinsics.checkNotNullExpressionValue(userName, "auth.userName");
+                    char[] password = requestPasswordAuthentication.getPassword();
+                    Intrinsics.checkNotNullExpressionValue(password, "auth.password");
+                    return Z0.k().e(str, g.a(userName, new String(password), dVar.a())).b();
                 }
             }
         }
+        return null;
+    }
+
+    public /* synthetic */ a(h hVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i10 & 1) != 0 ? h.f50700b : hVar);
     }
 }

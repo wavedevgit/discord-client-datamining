@@ -31,7 +31,7 @@ public final class r2 implements x.i1 {
     public i1.c e(i1.b bVar) {
         i1.c e10 = this.f263e.e(bVar);
         if (b() > 0 && bVar.c() >= b() - e10.b()) {
-            return i1.c.f52916d;
+            return i1.c.f53124d;
         }
         return e10;
     }

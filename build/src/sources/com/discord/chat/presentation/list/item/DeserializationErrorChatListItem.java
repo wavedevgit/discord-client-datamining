@@ -12,7 +12,7 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9726id;
+    private final String f9355id;
     @NotNull
     private final String json;
 
@@ -22,14 +22,14 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(json, "json");
         Intrinsics.checkNotNullParameter(causeMessage, "causeMessage");
-        this.f9726id = id2;
+        this.f9355id = id2;
         this.json = json;
         this.causeMessage = causeMessage;
     }
 
     public static /* synthetic */ DeserializationErrorChatListItem copy$default(DeserializationErrorChatListItem deserializationErrorChatListItem, String str, String str2, String str3, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = deserializationErrorChatListItem.f9726id;
+            str = deserializationErrorChatListItem.f9355id;
         }
         if ((i10 & 2) != 0) {
             str2 = deserializationErrorChatListItem.json;
@@ -42,7 +42,7 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
 
     @NotNull
     public final String component1() {
-        return this.f9726id;
+        return this.f9355id;
     }
 
     @NotNull
@@ -69,7 +69,7 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
         }
         if (obj instanceof DeserializationErrorChatListItem) {
             DeserializationErrorChatListItem deserializationErrorChatListItem = (DeserializationErrorChatListItem) obj;
-            return Intrinsics.areEqual(this.f9726id, deserializationErrorChatListItem.f9726id) && Intrinsics.areEqual(this.json, deserializationErrorChatListItem.json) && Intrinsics.areEqual(this.causeMessage, deserializationErrorChatListItem.causeMessage);
+            return Intrinsics.areEqual(this.f9355id, deserializationErrorChatListItem.f9355id) && Intrinsics.areEqual(this.json, deserializationErrorChatListItem.json) && Intrinsics.areEqual(this.causeMessage, deserializationErrorChatListItem.causeMessage);
         }
         return false;
     }
@@ -82,7 +82,7 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
     @Override // com.discord.chat.presentation.list.item.ChatListItem
     @NotNull
     public String getId() {
-        return this.f9726id;
+        return this.f9355id;
     }
 
     @NotNull
@@ -91,12 +91,12 @@ public final class DeserializationErrorChatListItem extends ChatListItem {
     }
 
     public int hashCode() {
-        return (((this.f9726id.hashCode() * 31) + this.json.hashCode()) * 31) + this.causeMessage.hashCode();
+        return (((this.f9355id.hashCode() * 31) + this.json.hashCode()) * 31) + this.causeMessage.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String str = this.f9726id;
+        String str = this.f9355id;
         String str2 = this.json;
         String str3 = this.causeMessage;
         return "DeserializationErrorChatListItem(id=" + str + ", json=" + str2 + ", causeMessage=" + str3 + ")";

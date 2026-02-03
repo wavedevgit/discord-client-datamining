@@ -5,21 +5,21 @@ import java.io.OutputStream;
 final class m2 extends OutputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    private long f38478d = 0;
+    private long f38458d = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final long a() {
-        return this.f38478d;
+        return this.f38458d;
     }
 
     @Override // java.io.OutputStream
     public final void write(int i10) {
-        this.f38478d++;
+        this.f38458d++;
     }
 
     @Override // java.io.OutputStream
     public final void write(byte[] bArr) {
-        this.f38478d += bArr.length;
+        this.f38458d += bArr.length;
     }
 
     @Override // java.io.OutputStream
@@ -27,7 +27,7 @@ final class m2 extends OutputStream {
         int length;
         int i12;
         if (i10 >= 0 && i10 <= (length = bArr.length) && i11 >= 0 && (i12 = i10 + i11) <= length && i12 >= 0) {
-            this.f38478d += i11;
+            this.f38458d += i11;
             return;
         }
         throw new IndexOutOfBoundsException();

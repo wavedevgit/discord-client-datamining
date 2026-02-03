@@ -91,4 +91,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.updateAccessibilityAnnouncerLiveRegionMessage = var3;
     var2.AccessibilityAnnouncerLiveRegion = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3123, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3153, 2]);

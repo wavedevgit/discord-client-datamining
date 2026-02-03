@@ -6,17 +6,17 @@ import org.jetbrains.annotations.NotNull;
 public abstract class DelegatedDescriptorVisibility extends DescriptorVisibility {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Visibility f33592a;
+    private final Visibility f33368a;
 
     public DelegatedDescriptorVisibility(@NotNull Visibility delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f33592a = delegate;
+        this.f33368a = delegate;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DescriptorVisibility
     @NotNull
     public Visibility getDelegate() {
-        return this.f33592a;
+        return this.f33368a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DescriptorVisibility

@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = arg0;
                     var2 = this;
                     var4 = var2.type;
-                    var0 = 'kvPartition';
+                    var0 = '0';
                     var1 = 'kv';
                     if (!(var1 !== var4)) {
                         _fun16493_ip = 70;
@@ -747,7 +747,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure1_slot13;
                     var1 = null;
                     var1 = var1 != var0;
-                    var2 = 'kvPartition';
+                    var2 = '0';
                     if (!var1) {
                         _fun16510_ip = 28;
                         continue _fun16510

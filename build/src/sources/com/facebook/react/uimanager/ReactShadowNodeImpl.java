@@ -766,7 +766,7 @@ public class ReactShadowNodeImpl implements ReactShadowNode<ReactShadowNodeImpl>
 
     @Override // com.facebook.react.uimanager.ReactShadowNode
     /* renamed from: setPaddingPercent */
-    public void mo910setPaddingPercent(int i10, float f10) {
+    public void mo912setPaddingPercent(int i10, float f10) {
         this.mPadding[i10] = f10;
         this.mPaddingIsPercent[i10] = !com.facebook.yoga.d.a(f10);
         updatePadding();

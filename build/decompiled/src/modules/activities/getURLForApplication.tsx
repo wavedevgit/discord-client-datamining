@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var6 = dependencyMap;
     var3 = function arg0() {
-        _fun63004: for (var _fun63004_ip = 0;;) switch (_fun63004_ip) {
+        _fun63109: for (var _fun63109_ip = 0;;) switch (_fun63109_ip) {
             case 0:
                 var1 = global;
                 var0 = var1.window;
@@ -14,8 +14,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var5;
                 if (var2) {
-                    _fun63004_ip = 60;
-                    continue _fun63004
+                    _fun63109_ip = 60;
+                    continue _fun63109
                 }
             case 29:
                 var1 = var1.HermesInternal;
@@ -30,15 +30,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot2 = var3;
     var1 = function() {
-        _fun63005: for (var _fun63005_ip = 0;;) switch (_fun63005_ip) {
+        _fun63110: for (var _fun63110_ip = 0;;) switch (_fun63110_ip) {
             case 0:
                 var1 = _closure1_slot1;
                 var0 = var1.getState;
                 var1 = var0.bind(var1)();
                 var0 = var1.useActivityUrlOverride;
                 if (!var0) {
-                    _fun63005_ip = 38;
-                    continue _fun63005
+                    _fun63110_ip = 38;
+                    continue _fun63110
                 }
             case 26:
                 var3 = var1.activityUrlOverride;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2 != var3;
             case 38:
                 if (!var0) {
-                    _fun63005_ip = 55;
-                    continue _fun63005
+                    _fun63110_ip = 55;
+                    continue _fun63110
                 }
             case 41:
                 var2 = var1.activityUrlOverride;
@@ -83,35 +83,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/activities/getURLForApplication.tsx';
     var5 = var6.bind(var7)(var5);
     var4 = function arg0() {
-        _fun63006: for (var _fun63006_ip = 0;;) switch (_fun63006_ip) {
+        _fun63111: for (var _fun63111_ip = 0;;) switch (_fun63111_ip) {
             case 0:
                 var3 = arg0;
                 var0 = _closure1_slot3;
                 var2 = undefined;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun63006_ip = 64;
-                    continue _fun63006
+                    _fun63111_ip = 64;
+                    continue _fun63111
                 }
             case 19:
                 var4 = _closure1_slot0;
                 var0 = var4.inTestModeForEmbeddedApplication;
                 var0 = var0.bind(var4)(var3);
                 if (var0) {
-                    _fun63006_ip = 50;
-                    continue _fun63006
+                    _fun63111_ip = 50;
+                    continue _fun63111
                 }
             case 39:
                 var0 = _closure1_slot2;
                 var0 = var0.bind(var2)(var3);
-                _fun63006_ip = 62;
-                continue _fun63006;
+                _fun63111_ip = 62;
+                continue _fun63111;
             case 50:
                 var2 = _closure1_slot0;
                 var0 = var2.testModeOriginURL;
             case 62:
-                _fun63006_ip = 84;
-                continue _fun63006;
+                _fun63111_ip = 84;
+                continue _fun63111;
             case 64:
                 var2 = _closure1_slot1;
                 var1 = var2.getState;
@@ -125,4 +125,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getNonTestModeUrlForApplication = var3;
     var2.isUsingDevShelfActivityUrlOverride = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7186, 7185, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7217, 7216, 2]);

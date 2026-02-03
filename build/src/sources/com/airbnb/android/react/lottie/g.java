@@ -20,7 +20,7 @@ import l5.g0;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f8795a = new g();
+    public static final g f8424a = new g();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements View.OnAttachStateChangeListener {

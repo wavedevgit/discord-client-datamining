@@ -7,43 +7,43 @@ import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 public final class j {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int[] f53457e = {31892, 34236, 39577, 42195, 48118, 51042, 55367, 58893, 63784, 68472, 70749, 76311, 79154, 84390, 87683, 92361, 96236, 102084, 102881, 110507, 110734, 117786, 119615, 126325, 127568, 133589, 136944, 141498, 145311, 150283, 152622, 158308, 161089, 167017};
+    private static final int[] f53665e = {31892, 34236, 39577, 42195, 48118, 51042, 55367, 58893, 63784, 68472, 70749, 76311, 79154, 84390, 87683, 92361, 96236, 102084, 102881, 110507, 110734, 117786, 119615, 126325, 127568, 133589, 136944, 141498, 145311, 150283, 152622, 158308, 161089, 167017};
 
     /* renamed from: f  reason: collision with root package name */
-    private static final j[] f53458f = b();
+    private static final j[] f53666f = b();
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f53459a;
+    private final int f53667a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int[] f53460b;
+    private final int[] f53668b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b[] f53461c;
+    private final b[] f53669c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f53462d;
+    private final int f53670d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f53463a;
+        private final int f53671a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f53464b;
+        private final int f53672b;
 
         a(int i10, int i11) {
-            this.f53463a = i10;
-            this.f53464b = i11;
+            this.f53671a = i10;
+            this.f53672b = i11;
         }
 
         public int a() {
-            return this.f53463a;
+            return this.f53671a;
         }
 
         public int b() {
-            return this.f53464b;
+            return this.f53672b;
         }
     }
 
@@ -51,48 +51,48 @@ public final class j {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f53465a;
+        private final int f53673a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final a[] f53466b;
+        private final a[] f53674b;
 
         b(int i10, a... aVarArr) {
-            this.f53465a = i10;
-            this.f53466b = aVarArr;
+            this.f53673a = i10;
+            this.f53674b = aVarArr;
         }
 
         public a[] a() {
-            return this.f53466b;
+            return this.f53674b;
         }
 
         public int b() {
-            return this.f53465a;
+            return this.f53673a;
         }
 
         public int c() {
             int i10 = 0;
-            for (a aVar : this.f53466b) {
+            for (a aVar : this.f53674b) {
                 i10 += aVar.a();
             }
             return i10;
         }
 
         public int d() {
-            return this.f53465a * c();
+            return this.f53673a * c();
         }
     }
 
     private j(int i10, int[] iArr, b... bVarArr) {
         a[] a10;
-        this.f53459a = i10;
-        this.f53460b = iArr;
-        this.f53461c = bVarArr;
+        this.f53667a = i10;
+        this.f53668b = iArr;
+        this.f53669c = bVarArr;
         int b10 = bVarArr[0].b();
         int i11 = 0;
         for (a aVar : bVarArr[0].a()) {
             i11 += aVar.a() * (aVar.b() + b10);
         }
-        this.f53462d = i11;
+        this.f53670d = i11;
     }
 
     private static j[] b() {
@@ -105,7 +105,7 @@ public final class j {
         int i12 = 0;
         int i13 = 0;
         while (true) {
-            int[] iArr = f53457e;
+            int[] iArr = f53665e;
             if (i12 < iArr.length) {
                 int i14 = iArr[i12];
                 if (i14 == i10) {
@@ -138,7 +138,7 @@ public final class j {
 
     public static j i(int i10) {
         if (i10 >= 1 && i10 <= 40) {
-            return f53458f[i10 - 1];
+            return f53666f[i10 - 1];
         }
         throw new IllegalArgumentException();
     }
@@ -151,19 +151,19 @@ public final class j {
         int i10 = e10 - 8;
         bVar.r(i10, 0, 8, 9);
         bVar.r(0, i10, 9, 8);
-        int length = this.f53460b.length;
+        int length = this.f53668b.length;
         for (int i11 = 0; i11 < length; i11++) {
-            int i12 = this.f53460b[i11] - 2;
+            int i12 = this.f53668b[i11] - 2;
             for (int i13 = 0; i13 < length; i13++) {
                 if ((i11 != 0 || (i13 != 0 && i13 != length - 1)) && (i11 != length - 1 || i13 != 0)) {
-                    bVar.r(this.f53460b[i13] - 2, i12, 5, 5);
+                    bVar.r(this.f53668b[i13] - 2, i12, 5, 5);
                 }
             }
         }
         int i14 = e10 - 17;
         bVar.r(6, 9, 1, i14);
         bVar.r(9, 6, i14, 1);
-        if (this.f53459a > 6) {
+        if (this.f53667a > 6) {
             int i15 = e10 - 11;
             bVar.r(i15, 0, 3, 6);
             bVar.r(0, i15, 6, 3);
@@ -172,26 +172,26 @@ public final class j {
     }
 
     public int[] d() {
-        return this.f53460b;
+        return this.f53668b;
     }
 
     public int e() {
-        return (this.f53459a * 4) + 17;
+        return (this.f53667a * 4) + 17;
     }
 
     public b f(f fVar) {
-        return this.f53461c[fVar.ordinal()];
+        return this.f53669c[fVar.ordinal()];
     }
 
     public int h() {
-        return this.f53462d;
+        return this.f53670d;
     }
 
     public int j() {
-        return this.f53459a;
+        return this.f53667a;
     }
 
     public String toString() {
-        return String.valueOf(this.f53459a);
+        return String.valueOf(this.f53667a);
     }
 }

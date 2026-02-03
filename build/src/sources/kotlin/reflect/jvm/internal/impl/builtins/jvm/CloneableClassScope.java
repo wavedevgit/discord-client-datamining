@@ -24,7 +24,7 @@ public final class CloneableClassScope extends GivenFunctionsMemberScope {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Name f33505d;
+    private static final Name f33281d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -34,7 +34,7 @@ public final class CloneableClassScope extends GivenFunctionsMemberScope {
 
         @NotNull
         public final Name getCLONE_NAME() {
-            return CloneableClassScope.f33505d;
+            return CloneableClassScope.f33281d;
         }
 
         private Companion() {
@@ -44,7 +44,7 @@ public final class CloneableClassScope extends GivenFunctionsMemberScope {
     static {
         Name identifier = Name.identifier("clone");
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-        f33505d = identifier;
+        f33281d = identifier;
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -56,7 +56,7 @@ public final class CloneableClassScope extends GivenFunctionsMemberScope {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.GivenFunctionsMemberScope
     protected List c() {
-        SimpleFunctionDescriptorImpl create = SimpleFunctionDescriptorImpl.create(f(), Annotations.Companion.getEMPTY(), f33505d, CallableMemberDescriptor.Kind.DECLARATION, SourceElement.NO_SOURCE);
+        SimpleFunctionDescriptorImpl create = SimpleFunctionDescriptorImpl.create(f(), Annotations.Companion.getEMPTY(), f33281d, CallableMemberDescriptor.Kind.DECLARATION, SourceElement.NO_SOURCE);
         create.initialize((ReceiverParameterDescriptor) null, f().getThisAsReceiverParameter(), CollectionsKt.l(), CollectionsKt.l(), CollectionsKt.l(), (KotlinType) DescriptorUtilsKt.getBuiltIns(f()).getAnyType(), Modality.OPEN, DescriptorVisibilities.PROTECTED);
         return CollectionsKt.e(create);
     }

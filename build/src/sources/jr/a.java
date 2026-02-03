@@ -1,33 +1,19 @@
 package jr;
 
-import java.util.Map;
+import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a extends kotlin.collections.g {
-    public final boolean b(Map.Entry element) {
-        Intrinsics.checkNotNullParameter(element, "element");
-        return c(element);
+public final class a {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Function3 f32150a;
+
+    public a(Function3 block) {
+        Intrinsics.checkNotNullParameter(block, "block");
+        this.f32150a = block;
     }
 
-    public abstract boolean c(Map.Entry entry);
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final /* bridge */ boolean contains(Object obj) {
-        if (!(obj instanceof Map.Entry)) {
-            return false;
-        }
-        return b((Map.Entry) obj);
-    }
-
-    public /* bridge */ boolean d(Map.Entry entry) {
-        return super.remove(entry);
-    }
-
-    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
-    public final /* bridge */ boolean remove(Object obj) {
-        if (!(obj instanceof Map.Entry)) {
-            return false;
-        }
-        return d((Map.Entry) obj);
+    public final Function3 a() {
+        return this.f32150a;
     }
 }

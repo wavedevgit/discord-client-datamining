@@ -28,7 +28,7 @@ final class MediaEngineModule$getInputDevices$1 extends kotlin.coroutines.jvm.in
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit invokeSuspend$lambda$0(Callback callback, List list) {
         callback.invoke(NativeArrayExtensionsKt.toNativeArrayOfMaps(list));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -39,7 +39,7 @@ final class MediaEngineModule$getInputDevices$1 extends kotlin.coroutines.jvm.in
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object awaitMediaEngine;
-        Object f10 = or.b.f();
+        Object f10 = pr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -66,11 +66,11 @@ final class MediaEngineModule$getInputDevices$1 extends kotlin.coroutines.jvm.in
                 return invokeSuspend$lambda$0;
             }
         });
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$getInputDevices$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((MediaEngineModule$getInputDevices$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

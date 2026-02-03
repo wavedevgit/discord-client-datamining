@@ -1,6 +1,6 @@
 package com.discord.serialization;
 
-import as.c;
+import bs.c;
 import com.discord.serialization.SerializerUtils;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -120,7 +120,7 @@ public final class SerializerUtils {
     public static final Unit findErroringFields$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @NotNull

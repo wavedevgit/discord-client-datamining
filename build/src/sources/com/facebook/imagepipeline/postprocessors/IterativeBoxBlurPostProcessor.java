@@ -10,13 +10,13 @@ import o8.j;
 public class IterativeBoxBlurPostProcessor extends BasePostprocessor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f11673a;
+    private final int f11302a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f11674b;
+    private final int f11303b;
 
     /* renamed from: c  reason: collision with root package name */
-    private CacheKey f11675c;
+    private CacheKey f11304c;
 
     public IterativeBoxBlurPostProcessor(int i10, int i11) {
         boolean z10;
@@ -27,20 +27,20 @@ public class IterativeBoxBlurPostProcessor extends BasePostprocessor {
         }
         j.b(Boolean.valueOf(z10));
         j.b(Boolean.valueOf(i11 > 0));
-        this.f11673a = i10;
-        this.f11674b = i11;
+        this.f11302a = i10;
+        this.f11303b = i11;
     }
 
     @Override // com.facebook.imagepipeline.request.BasePostprocessor, com.facebook.imagepipeline.request.Postprocessor
     public CacheKey getPostprocessorCacheKey() {
-        if (this.f11675c == null) {
-            this.f11675c = new h(String.format(null, "i%dr%d", Integer.valueOf(this.f11673a), Integer.valueOf(this.f11674b)));
+        if (this.f11304c == null) {
+            this.f11304c = new h(String.format(null, "i%dr%d", Integer.valueOf(this.f11302a), Integer.valueOf(this.f11303b)));
         }
-        return this.f11675c;
+        return this.f11304c;
     }
 
     @Override // com.facebook.imagepipeline.request.BasePostprocessor
     public void process(Bitmap bitmap) {
-        NativeBlurFilter.a(bitmap, this.f11673a, this.f11674b);
+        NativeBlurFilter.a(bitmap, this.f11302a, this.f11303b);
     }
 }

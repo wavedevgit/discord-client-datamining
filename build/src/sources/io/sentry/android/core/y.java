@@ -7,7 +7,7 @@ import io.sentry.SentryLevel;
 public final class y implements ILogger {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f29317a;
+    private final String f28883a;
 
     public y() {
         this("Sentry");
@@ -28,15 +28,15 @@ public final class y implements ILogger {
 
     @Override // io.sentry.ILogger
     public void b(SentryLevel sentryLevel, String str, Throwable th2) {
-        Log.wtf(this.f29317a, str, th2);
+        Log.wtf(this.f28883a, str, th2);
     }
 
     @Override // io.sentry.ILogger
     public void c(SentryLevel sentryLevel, String str, Object... objArr) {
         if (objArr != null && objArr.length != 0) {
-            Log.println(e(sentryLevel), this.f29317a, String.format(str, objArr));
+            Log.println(e(sentryLevel), this.f28883a, String.format(str, objArr));
         } else {
-            Log.println(e(sentryLevel), this.f29317a, str);
+            Log.println(e(sentryLevel), this.f28883a, str);
         }
     }
 
@@ -46,6 +46,6 @@ public final class y implements ILogger {
     }
 
     public y(String str) {
-        this.f29317a = str;
+        this.f28883a = str;
     }
 }

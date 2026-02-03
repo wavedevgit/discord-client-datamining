@@ -5,5 +5,5 @@ import kotlin.reflect.jvm.internal.impl.name.FqName;
 public final class JavaTypeResolverKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final FqName f34324a = new FqName("java.lang.Class");
+    private static final FqName f34100a = new FqName("java.lang.Class");
 }

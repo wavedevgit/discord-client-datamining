@@ -56,7 +56,6 @@ import com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineIma
 import com.facebook.react.views.textinput.ReactTextInputManager;
 import com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager;
 import com.facebook.react.views.view.ReactViewManager;
-import ir.v;
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -64,6 +63,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import javax.inject.Provider;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;

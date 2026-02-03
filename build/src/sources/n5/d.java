@@ -12,37 +12,37 @@ import o5.a;
 public class d implements e, m, a.b, q5.f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Paint f39780a;
+    private final Paint f39643a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final RectF f39781b;
+    private final RectF f39644b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Matrix f39782c;
+    private final Matrix f39645c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Path f39783d;
+    private final Path f39646d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final RectF f39784e;
+    private final RectF f39647e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f39785f;
+    private final String f39648f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f39786g;
+    private final boolean f39649g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final List f39787h;
+    private final List f39650h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final com.airbnb.lottie.n f39788i;
+    private final com.airbnb.lottie.n f39651i;
 
     /* renamed from: j  reason: collision with root package name */
-    private List f39789j;
+    private List f39652j;
 
     /* renamed from: k  reason: collision with root package name */
-    private o5.p f39790k;
+    private o5.p f39653k;
 
     public d(com.airbnb.lottie.n nVar, t5.b bVar, s5.q qVar, l5.i iVar) {
         this(nVar, bVar, qVar.c(), qVar.d(), f(nVar, iVar, bVar, qVar.b()), i(qVar.b()));
@@ -71,8 +71,8 @@ public class d implements e, m, a.b, q5.f {
 
     private boolean m() {
         int i10 = 0;
-        for (int i11 = 0; i11 < this.f39787h.size(); i11++) {
-            if ((this.f39787h.get(i11) instanceof e) && (i10 = i10 + 1) >= 2) {
+        for (int i11 = 0; i11 < this.f39650h.size(); i11++) {
+            if ((this.f39650h.get(i11) instanceof e) && (i10 = i10 + 1) >= 2) {
                 return true;
             }
         }
@@ -81,16 +81,16 @@ public class d implements e, m, a.b, q5.f {
 
     @Override // o5.a.b
     public void a() {
-        this.f39788i.invalidateSelf();
+        this.f39651i.invalidateSelf();
     }
 
     @Override // n5.c
     public void b(List list, List list2) {
-        ArrayList arrayList = new ArrayList(list.size() + this.f39787h.size());
+        ArrayList arrayList = new ArrayList(list.size() + this.f39650h.size());
         arrayList.addAll(list);
-        for (int size = this.f39787h.size() - 1; size >= 0; size--) {
-            c cVar = (c) this.f39787h.get(size);
-            cVar.b(arrayList, this.f39787h.subList(0, size));
+        for (int size = this.f39650h.size() - 1; size >= 0; size--) {
+            c cVar = (c) this.f39650h.get(size);
+            cVar.b(arrayList, this.f39650h.subList(0, size));
             arrayList.add(cVar);
         }
     }
@@ -106,8 +106,8 @@ public class d implements e, m, a.b, q5.f {
             }
             if (eVar.h(getName(), i10)) {
                 int e10 = i10 + eVar.e(getName(), i10);
-                for (int i11 = 0; i11 < this.f39787h.size(); i11++) {
-                    c cVar = (c) this.f39787h.get(i11);
+                for (int i11 = 0; i11 < this.f39650h.size(); i11++) {
+                    c cVar = (c) this.f39650h.get(i11);
                     if (cVar instanceof q5.f) {
                         ((q5.f) cVar).c(eVar, e10, list, eVar2);
                     }
@@ -118,7 +118,7 @@ public class d implements e, m, a.b, q5.f {
 
     @Override // q5.f
     public void d(Object obj, y5.c cVar) {
-        o5.p pVar = this.f39790k;
+        o5.p pVar = this.f39653k;
         if (pVar != null) {
             pVar.c(obj, cVar);
         }
@@ -126,17 +126,17 @@ public class d implements e, m, a.b, q5.f {
 
     @Override // n5.e
     public void e(RectF rectF, Matrix matrix, boolean z10) {
-        this.f39782c.set(matrix);
-        o5.p pVar = this.f39790k;
+        this.f39645c.set(matrix);
+        o5.p pVar = this.f39653k;
         if (pVar != null) {
-            this.f39782c.preConcat(pVar.f());
+            this.f39645c.preConcat(pVar.f());
         }
-        this.f39784e.set(0.0f, 0.0f, 0.0f, 0.0f);
-        for (int size = this.f39787h.size() - 1; size >= 0; size--) {
-            c cVar = (c) this.f39787h.get(size);
+        this.f39647e.set(0.0f, 0.0f, 0.0f, 0.0f);
+        for (int size = this.f39650h.size() - 1; size >= 0; size--) {
+            c cVar = (c) this.f39650h.get(size);
             if (cVar instanceof e) {
-                ((e) cVar).e(this.f39784e, this.f39782c, z10);
-                rectF.union(this.f39784e);
+                ((e) cVar).e(this.f39647e, this.f39645c, z10);
+                rectF.union(this.f39647e);
             }
         }
     }
@@ -145,36 +145,36 @@ public class d implements e, m, a.b, q5.f {
     public void g(Canvas canvas, Matrix matrix, int i10) {
         boolean z10;
         int intValue;
-        if (!this.f39786g) {
-            this.f39782c.set(matrix);
-            o5.p pVar = this.f39790k;
+        if (!this.f39649g) {
+            this.f39645c.set(matrix);
+            o5.p pVar = this.f39653k;
             if (pVar != null) {
-                this.f39782c.preConcat(pVar.f());
-                if (this.f39790k.h() == null) {
+                this.f39645c.preConcat(pVar.f());
+                if (this.f39653k.h() == null) {
                     intValue = 100;
                 } else {
-                    intValue = ((Integer) this.f39790k.h().h()).intValue();
+                    intValue = ((Integer) this.f39653k.h().h()).intValue();
                 }
                 i10 = (int) ((((intValue / 100.0f) * i10) / 255.0f) * 255.0f);
             }
-            if (this.f39788i.g0() && m() && i10 != 255) {
+            if (this.f39651i.g0() && m() && i10 != 255) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             if (z10) {
-                this.f39781b.set(0.0f, 0.0f, 0.0f, 0.0f);
-                e(this.f39781b, this.f39782c, true);
-                this.f39780a.setAlpha(i10);
-                x5.j.m(canvas, this.f39781b, this.f39780a);
+                this.f39644b.set(0.0f, 0.0f, 0.0f, 0.0f);
+                e(this.f39644b, this.f39645c, true);
+                this.f39643a.setAlpha(i10);
+                x5.j.m(canvas, this.f39644b, this.f39643a);
             }
             if (z10) {
                 i10 = 255;
             }
-            for (int size = this.f39787h.size() - 1; size >= 0; size--) {
-                Object obj = this.f39787h.get(size);
+            for (int size = this.f39650h.size() - 1; size >= 0; size--) {
+                Object obj = this.f39650h.get(size);
                 if (obj instanceof e) {
-                    ((e) obj).g(canvas, this.f39782c, i10);
+                    ((e) obj).g(canvas, this.f39645c, i10);
                 }
             }
             if (z10) {
@@ -185,73 +185,73 @@ public class d implements e, m, a.b, q5.f {
 
     @Override // n5.c
     public String getName() {
-        return this.f39785f;
+        return this.f39648f;
     }
 
     public List j() {
-        return this.f39787h;
+        return this.f39650h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List k() {
-        if (this.f39789j == null) {
-            this.f39789j = new ArrayList();
-            for (int i10 = 0; i10 < this.f39787h.size(); i10++) {
-                c cVar = (c) this.f39787h.get(i10);
+        if (this.f39652j == null) {
+            this.f39652j = new ArrayList();
+            for (int i10 = 0; i10 < this.f39650h.size(); i10++) {
+                c cVar = (c) this.f39650h.get(i10);
                 if (cVar instanceof m) {
-                    this.f39789j.add((m) cVar);
+                    this.f39652j.add((m) cVar);
                 }
             }
         }
-        return this.f39789j;
+        return this.f39652j;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Matrix l() {
-        o5.p pVar = this.f39790k;
+        o5.p pVar = this.f39653k;
         if (pVar != null) {
             return pVar.f();
         }
-        this.f39782c.reset();
-        return this.f39782c;
+        this.f39645c.reset();
+        return this.f39645c;
     }
 
     @Override // n5.m
     public Path q() {
-        this.f39782c.reset();
-        o5.p pVar = this.f39790k;
+        this.f39645c.reset();
+        o5.p pVar = this.f39653k;
         if (pVar != null) {
-            this.f39782c.set(pVar.f());
+            this.f39645c.set(pVar.f());
         }
-        this.f39783d.reset();
-        if (this.f39786g) {
-            return this.f39783d;
+        this.f39646d.reset();
+        if (this.f39649g) {
+            return this.f39646d;
         }
-        for (int size = this.f39787h.size() - 1; size >= 0; size--) {
-            c cVar = (c) this.f39787h.get(size);
+        for (int size = this.f39650h.size() - 1; size >= 0; size--) {
+            c cVar = (c) this.f39650h.get(size);
             if (cVar instanceof m) {
-                this.f39783d.addPath(((m) cVar).q(), this.f39782c);
+                this.f39646d.addPath(((m) cVar).q(), this.f39645c);
             }
         }
-        return this.f39783d;
+        return this.f39646d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(com.airbnb.lottie.n nVar, t5.b bVar, String str, boolean z10, List list, r5.l lVar) {
-        this.f39780a = new m5.a();
-        this.f39781b = new RectF();
-        this.f39782c = new Matrix();
-        this.f39783d = new Path();
-        this.f39784e = new RectF();
-        this.f39785f = str;
-        this.f39788i = nVar;
-        this.f39786g = z10;
-        this.f39787h = list;
+        this.f39643a = new m5.a();
+        this.f39644b = new RectF();
+        this.f39645c = new Matrix();
+        this.f39646d = new Path();
+        this.f39647e = new RectF();
+        this.f39648f = str;
+        this.f39651i = nVar;
+        this.f39649g = z10;
+        this.f39650h = list;
         if (lVar != null) {
             o5.p b10 = lVar.b();
-            this.f39790k = b10;
+            this.f39653k = b10;
             b10.a(bVar);
-            this.f39790k.b(this);
+            this.f39653k.b(this);
         }
         ArrayList arrayList = new ArrayList();
         for (int size = list.size() - 1; size >= 0; size--) {

@@ -54,14 +54,14 @@ public final class NextStep_Selfie_AssetConfigJsonAdapter extends h {
         NextStep.Selfie.AssetConfig.RecordPage recordPage = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 promptPage = (NextStep.Selfie.AssetConfig.PromptPage) this.nullablePromptPageAdapter.fromJson(reader);
                 i10 &= -2;
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 recordPage = (NextStep.Selfie.AssetConfig.RecordPage) this.nullableRecordPageAdapter.fromJson(reader);
                 i10 &= -3;
             }
@@ -72,7 +72,7 @@ public final class NextStep_Selfie_AssetConfigJsonAdapter extends h {
         }
         Constructor<NextStep.Selfie.AssetConfig> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Selfie.AssetConfig.class.getDeclaredConstructor(NextStep.Selfie.AssetConfig.PromptPage.class, NextStep.Selfie.AssetConfig.RecordPage.class, Integer.TYPE, sm.c.f49097c);
+            constructor = NextStep.Selfie.AssetConfig.class.getDeclaredConstructor(NextStep.Selfie.AssetConfig.PromptPage.class, NextStep.Selfie.AssetConfig.RecordPage.class, Integer.TYPE, tm.c.f49935c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -86,9 +86,9 @@ public final class NextStep_Selfie_AssetConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (assetConfig != null) {
             writer.l();
-            writer.A0("promptPage");
+            writer.t0("promptPage");
             this.nullablePromptPageAdapter.toJson(writer, assetConfig.getPromptPage());
-            writer.A0("recordPage");
+            writer.t0("recordPage");
             this.nullableRecordPageAdapter.toJson(writer, assetConfig.getRecordPage());
             writer.E();
             return;

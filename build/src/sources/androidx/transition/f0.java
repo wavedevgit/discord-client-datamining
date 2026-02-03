@@ -5,18 +5,18 @@ import java.util.Arrays;
 class f0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private long[] f5242a;
+    private long[] f5286a;
 
     /* renamed from: b  reason: collision with root package name */
-    private float[] f5243b = new float[20];
+    private float[] f5287b = new float[20];
 
     /* renamed from: c  reason: collision with root package name */
-    private int f5244c = 0;
+    private int f5288c = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f0() {
         long[] jArr = new long[20];
-        this.f5242a = jArr;
+        this.f5286a = jArr;
         Arrays.fill(jArr, Long.MIN_VALUE);
     }
 
@@ -25,24 +25,24 @@ class f0 {
     }
 
     public void a(long j10, float f10) {
-        int i10 = (this.f5244c + 1) % 20;
-        this.f5244c = i10;
-        this.f5242a[i10] = j10;
-        this.f5243b[i10] = f10;
+        int i10 = (this.f5288c + 1) % 20;
+        this.f5288c = i10;
+        this.f5286a[i10] = j10;
+        this.f5287b[i10] = f10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float b() {
         float c10;
-        int i10 = this.f5244c;
-        if (i10 == 0 && this.f5242a[i10] == Long.MIN_VALUE) {
+        int i10 = this.f5288c;
+        if (i10 == 0 && this.f5286a[i10] == Long.MIN_VALUE) {
             return 0.0f;
         }
-        long j10 = this.f5242a[i10];
+        long j10 = this.f5286a[i10];
         int i11 = 0;
         long j11 = j10;
         while (true) {
-            long j12 = this.f5242a[i10];
+            long j12 = this.f5286a[i10];
             if (j12 == Long.MIN_VALUE) {
                 break;
             }
@@ -64,28 +64,28 @@ class f0 {
             return 0.0f;
         }
         if (i11 == 2) {
-            int i12 = this.f5244c;
+            int i12 = this.f5288c;
             int i13 = i12 == 0 ? 19 : i12 - 1;
-            long[] jArr = this.f5242a;
+            long[] jArr = this.f5286a;
             float f10 = (float) (jArr[i12] - jArr[i13]);
             if (f10 == 0.0f) {
                 return 0.0f;
             }
-            float[] fArr = this.f5243b;
+            float[] fArr = this.f5287b;
             c10 = (fArr[i12] - fArr[i13]) / f10;
         } else {
-            int i14 = this.f5244c;
+            int i14 = this.f5288c;
             int i15 = ((i14 - i11) + 21) % 20;
             int i16 = (i14 + 21) % 20;
-            long j13 = this.f5242a[i15];
-            float f11 = this.f5243b[i15];
+            long j13 = this.f5286a[i15];
+            float f11 = this.f5287b[i15];
             int i17 = i15 + 1;
             float f12 = 0.0f;
             for (int i18 = i17 % 20; i18 != i16; i18 = (i18 + 1) % 20) {
-                long j14 = this.f5242a[i18];
+                long j14 = this.f5286a[i18];
                 float f13 = (float) (j14 - j13);
                 if (f13 != 0.0f) {
-                    float f14 = this.f5243b[i18];
+                    float f14 = this.f5287b[i18];
                     float f15 = (f14 - f11) / f13;
                     f12 += (f15 - c(f12)) * Math.abs(f15);
                     if (i18 == i17) {

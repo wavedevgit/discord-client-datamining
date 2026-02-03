@@ -14,7 +14,7 @@ import com.discord.chat.presentation.message.view.botuikit.ComponentProvider;
 import com.discord.chat.presentation.message.view.botuikit.ComponentView;
 import com.discord.misc.utilities.size.SizeUtilsKt;
 import com.discord.theme.ThemeManagerKt;
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;

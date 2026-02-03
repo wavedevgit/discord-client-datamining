@@ -8,7 +8,7 @@ import com.discord.chat.presentation.list.delegate.SeparatorDelegate;
 import com.discord.chat.presentation.list.item.ChatListItem;
 import com.discord.chat.presentation.message.MessageAccessoriesAdapter;
 import com.discord.misc.utilities.coroutines.CoroutineViewUtilsKt;
-import gs.m0;
+import hs.m0;
 import java.util.Map;
 import kotlin.Metadata;
 import kotlin.collections.o0;
@@ -18,15 +18,15 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class ChatListViewFactoryKt {
     @NotNull
-    private static final Map<Integer, Integer> accessoriesToCreate = o0.m(ir.v.a(0, 25), ir.v.a(4, 15), ir.v.a(1, 6), ir.v.a(12, 10), ir.v.a(26, 5), ir.v.a(50, 5), ir.v.a(49, 20));
+    private static final Map<Integer, Integer> accessoriesToCreate = o0.m(jr.v.a(0, 25), jr.v.a(4, 15), jr.v.a(1, 6), jr.v.a(12, 10), jr.v.a(26, 5), jr.v.a(50, 5), jr.v.a(49, 20));
     @NotNull
-    private static final Map<? extends Class<? extends BaseChatListItemDelegate<? extends ChatListItem, ?>>, Integer> recycledViewPoolSizes = o0.m(ir.v.a(RegularMessageDelegate.class, 40), ir.v.a(SeparatorDelegate.class, 10));
+    private static final Map<? extends Class<? extends BaseChatListItemDelegate<? extends ChatListItem, ?>>, Integer> recycledViewPoolSizes = o0.m(jr.v.a(RegularMessageDelegate.class, 40), jr.v.a(SeparatorDelegate.class, 10));
 
     public static final void fillAccessories(@NotNull RecyclerView recycler, @NotNull MessageAccessoriesAdapter accessoriesAdapter, @NotNull RecyclerView.RecycledViewPool accessoriesViewPool) {
         Intrinsics.checkNotNullParameter(recycler, "recycler");
         Intrinsics.checkNotNullParameter(accessoriesAdapter, "accessoriesAdapter");
         Intrinsics.checkNotNullParameter(accessoriesViewPool, "accessoriesViewPool");
-        gs.i.d(CoroutineViewUtilsKt.attachedScope(recycler, false), m0.a(), null, new ChatListViewFactoryKt$fillAccessories$1(accessoriesAdapter, recycler, accessoriesViewPool, null), 2, null);
+        hs.i.d(CoroutineViewUtilsKt.attachedScope(recycler, false), m0.a(), null, new ChatListViewFactoryKt$fillAccessories$1(accessoriesAdapter, recycler, accessoriesViewPool, null), 2, null);
     }
 
     public static final void fillChatList(@NotNull RecyclerView recycler, @NotNull BaseChatListAdapter chatListAdapter, @NotNull Map<Class<? extends BaseChatListItemDelegate<? extends ChatListItem, ? extends View>>, Integer> delegateViewTypes, @NotNull RecyclerView.RecycledViewPool chatListViewPool) {
@@ -34,6 +34,6 @@ public final class ChatListViewFactoryKt {
         Intrinsics.checkNotNullParameter(chatListAdapter, "chatListAdapter");
         Intrinsics.checkNotNullParameter(delegateViewTypes, "delegateViewTypes");
         Intrinsics.checkNotNullParameter(chatListViewPool, "chatListViewPool");
-        gs.i.d(CoroutineViewUtilsKt.attachedScope(recycler, false), m0.a(), null, new ChatListViewFactoryKt$fillChatList$1(delegateViewTypes, chatListAdapter, recycler, chatListViewPool, null), 2, null);
+        hs.i.d(CoroutineViewUtilsKt.attachedScope(recycler, false), m0.a(), null, new ChatListViewFactoryKt$fillChatList$1(delegateViewTypes, chatListAdapter, recycler, chatListViewPool, null), 2, null);
     }
 }

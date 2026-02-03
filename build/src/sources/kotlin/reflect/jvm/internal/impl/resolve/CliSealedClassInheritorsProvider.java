@@ -36,11 +36,11 @@ public final class CliSealedClassInheritorsProvider extends SealedClassInheritor
                 if (classDescriptor2.isExpect()) {
                     Name name = classDescriptor2.getName();
                     Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
-                    ClassifierDescriptor mo1199getContributedClassifier = memberScope.mo1199getContributedClassifier(name, NoLookupLocation.WHEN_GET_ALL_DESCRIPTORS);
-                    if (mo1199getContributedClassifier instanceof ClassDescriptor) {
-                        classDescriptor2 = (ClassDescriptor) mo1199getContributedClassifier;
-                    } else if (mo1199getContributedClassifier instanceof TypeAliasDescriptor) {
-                        classDescriptor2 = ((TypeAliasDescriptor) mo1199getContributedClassifier).getClassDescriptor();
+                    ClassifierDescriptor mo1201getContributedClassifier = memberScope.mo1201getContributedClassifier(name, NoLookupLocation.WHEN_GET_ALL_DESCRIPTORS);
+                    if (mo1201getContributedClassifier instanceof ClassDescriptor) {
+                        classDescriptor2 = (ClassDescriptor) mo1201getContributedClassifier;
+                    } else if (mo1201getContributedClassifier instanceof TypeAliasDescriptor) {
+                        classDescriptor2 = ((TypeAliasDescriptor) mo1201getContributedClassifier).getClassDescriptor();
                     } else {
                         classDescriptor2 = null;
                     }
@@ -98,7 +98,7 @@ public final class CliSealedClassInheritorsProvider extends SealedClassInheritor
         return CollectionsKt.W0(linkedHashSet, new Comparator() { // from class: kotlin.reflect.jvm.internal.impl.resolve.CliSealedClassInheritorsProvider$computeSealedSubclasses$$inlined$sortedBy$1
             @Override // java.util.Comparator
             public final int compare(T t10, T t11) {
-                return lr.a.d(DescriptorUtilsKt.getFqNameSafe((ClassDescriptor) t10).asString(), DescriptorUtilsKt.getFqNameSafe((ClassDescriptor) t11).asString());
+                return mr.a.d(DescriptorUtilsKt.getFqNameSafe((ClassDescriptor) t10).asString(), DescriptorUtilsKt.getFqNameSafe((ClassDescriptor) t11).asString());
             }
         });
     }

@@ -7,7 +7,7 @@ import com.facebook.react.bridge.LifecycleEventListener;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -60,7 +60,7 @@ public final class ScreenshotHelperModule extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit addListener$lambda$0(ScreenshotHelperModule screenshotHelperModule) {
         screenshotHelperModule.reactEvents.emitModuleEvent(screenshotHelperModule.reactContext, new ScreenshotTakenEvent());
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @ReactMethod

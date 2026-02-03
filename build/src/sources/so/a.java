@@ -1,793 +1,864 @@
 package so;
 
-import ao.c4;
-import ao.g3;
-import ao.j4;
-import ao.z;
-import com.facebook.react.uimanager.ViewProps;
-import com.withpersona.sdk2.inquiry.internal.l;
-import com.withpersona.sdk2.inquiry.network.dto.CheckInquiryResponse;
-import com.withpersona.sdk2.inquiry.network.dto.NextStep;
-import com.withpersona.sdk2.inquiry.network.dto.PendingPageTextPosition;
-import com.withpersona.sdk2.inquiry.network.dto.PendingPageTextPositionKt;
-import com.withpersona.sdk2.inquiry.network.dto.government_id.CaptureOptionNativeMobile;
-import com.withpersona.sdk2.inquiry.network.dto.government_id.Id;
-import com.withpersona.sdk2.inquiry.network.dto.selfie.PoseConfig;
-import com.withpersona.sdk2.inquiry.network.dto.ui.components.UiComponentConfig;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StepStyles;
-import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StyleElements;
-import ep.a1;
-import ep.b0;
-import ep.r0;
-import ep.s0;
-import ep.x5;
-import ir.v;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
-import kotlin.Pair;
-import kotlin.collections.CollectionsKt;
-import kotlin.collections.o0;
-import kotlin.enums.EnumEntries;
+import android.content.Context;
+import com.google.android.play.core.integrity.c;
+import hs.g;
+import hs.j1;
+import kotlin.Result;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.k;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import vn.b3;
-import vn.u;
+import kotlin.time.Duration;
+import kotlinx.coroutines.CancellableContinuation;
+import kotlinx.coroutines.CoroutineDispatcher;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.FlowCollector;
+import kotlinx.coroutines.flow.MutableStateFlow;
+import kotlinx.coroutines.i;
+import kotlinx.coroutines.sync.Mutex;
+import ks.l0;
+import wo.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-    private static final Map a(NextStep.GovernmentId.RequestPage requestPage) {
-        return o0.m(v.a(new Pair(c4.e.f5836o, "descriptionFront"), requestPage.getDescriptionFront()), v.a(new Pair(c4.e.f5837p, "descriptionBack"), requestPage.getDescriptionBack()), v.a(new Pair(c4.e.f5839r, "descriptionPdf417"), requestPage.getDescriptionPdf417()), v.a(new Pair(c4.e.f5840s, "descriptionPassportSignature"), requestPage.getDescriptionPassportSignature()));
+public final class a {
+
+    /* renamed from: i  reason: collision with root package name */
+    public static final C0611a f49170i = new C0611a(null);
+
+    /* renamed from: j  reason: collision with root package name */
+    private static final long f49171j;
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Context f49172a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final e.a f49173b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final f f49174c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final CoroutineDispatcher f49175d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final wo.e f49176e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final Mutex f49177f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final CoroutineScope f49178g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final MutableStateFlow f49179h;
+
+    /* renamed from: so.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0611a {
+        public /* synthetic */ C0611a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private C0611a() {
+        }
     }
 
-    private static final Map b(NextStep.GovernmentId.ReviewUploadPage reviewUploadPage) {
-        return o0.m(v.a(c4.e.f5836o, reviewUploadPage.getDescriptionFront()), v.a(c4.e.f5837p, reviewUploadPage.getDescriptionBack()), v.a(c4.e.f5839r, reviewUploadPage.getDescriptionPdf417()), v.a(c4.e.f5840s, reviewUploadPage.getDescriptionPassportSignature()));
-    }
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public interface b {
 
-    private static final Map c(NextStep.GovernmentId.CapturePage capturePage) {
-        return o0.m(v.a(new Pair(c4.e.f5836o, "scanFront"), capturePage.getScanFront()), v.a(new Pair(c4.e.f5837p, "scanBack"), capturePage.getScanBack()), v.a(new Pair(c4.e.f5839r, "scanPdf417"), capturePage.getScanPdf417()), v.a(new Pair(c4.e.f5840s, "scanSignature"), capturePage.getScanSignature()), v.a(new Pair(c4.e.f5838q, "scanFrontOrBack"), capturePage.getScanFrontOrBack()));
-    }
+        /* renamed from: so.a$b$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0612a implements b {
 
-    private static final Map d(NextStep.GovernmentId.RequestPage requestPage) {
-        return o0.m(v.a(new Pair(c4.e.f5836o, "titleFront"), requestPage.getTitleFront()), v.a(new Pair(c4.e.f5837p, "titleBack"), requestPage.getTitleBack()), v.a(new Pair(c4.e.f5839r, "titlePdf417"), requestPage.getTitlePdf417()), v.a(new Pair(c4.e.f5840s, "titlePassportSignature"), requestPage.getTitlePassportSignature()));
-    }
+            /* renamed from: a  reason: collision with root package name */
+            public static final C0612a f49180a = new C0612a();
 
-    private static final Map e(NextStep.GovernmentId.ReviewUploadPage reviewUploadPage) {
-        return o0.m(v.a(c4.e.f5836o, reviewUploadPage.getTitleFront()), v.a(c4.e.f5837p, reviewUploadPage.getTitleBack()), v.a(c4.e.f5839r, reviewUploadPage.getTitlePdf417()), v.a(c4.e.f5840s, reviewUploadPage.getTitlePassportSignature()));
-    }
-
-    public static final g3.a.C0089a f(NextStep.GovernmentId.Localizations localizations, String countryCode, List list) {
-        String str;
-        String str2;
-        String str3;
-        String str4;
-        String str5;
-        String str6;
-        String str7;
-        String str8;
-        Intrinsics.checkNotNullParameter(localizations, "<this>");
-        Intrinsics.checkNotNullParameter(countryCode, "countryCode");
-        String title = localizations.getSelectPage().getTitle();
-        String prompt = localizations.getSelectPage().getPrompt();
-        String choose = localizations.getSelectPage().getChoose();
-        String disclaimer = localizations.getSelectPage().getDisclaimer();
-        String str9 = "";
-        if (disclaimer == null) {
-            disclaimer = "";
-        }
-        j4 k10 = k(list, localizations.getCapturePage().getTitle(), "title", "capturePage");
-        j4 m10 = m(list, "capturePage", c(localizations.getCapturePage()));
-        String capturing = localizations.getCapturePage().getCapturing();
-        j4 k11 = k(list, localizations.getCapturePage().getConfirmCapture(), "confirmCapture", "capturePage");
-        String disclaimer2 = localizations.getCapturePage().getDisclaimer();
-        if (disclaimer2 != null) {
-            str9 = disclaimer2;
-        }
-        String buttonSubmit = localizations.getCheckPage().getButtonSubmit();
-        String buttonRetake = localizations.getCheckPage().getButtonRetake();
-        j4 k12 = k(list, localizations.getCheckPage().getTitleConfirmCapture(), "titleConfirmCapture", "checkPage");
-        String title2 = localizations.getPendingPage().getTitle();
-        String description = localizations.getPendingPage().getDescription();
-        Map l10 = l(list, countryCode, localizations.getSelectPage().getIdClassToName());
-        j4 m11 = m(list, "requestPage", d(localizations.getRequestPage()));
-        j4 m12 = m(list, "requestPage", a(localizations.getRequestPage()));
-        String liveUploadButtonText = localizations.getRequestPage().getLiveUploadButtonText();
-        String choosePhotoButtonText = localizations.getRequestPage().getChoosePhotoButtonText();
-        Map e10 = e(localizations.getReviewUploadPage());
-        Map b10 = b(localizations.getReviewUploadPage());
-        String confirmButtonText = localizations.getReviewUploadPage().getConfirmButtonText();
-        String chooseAnotherButtonText = localizations.getReviewUploadPage().getChooseAnotherButtonText();
-        String cameraPermissionsTitle = localizations.getPromptPage().getCameraPermissionsTitle();
-        String cameraPermissionsPrompt = localizations.getPromptPage().getCameraPermissionsPrompt();
-        String cameraPermissionsAllowButtonText = localizations.getPromptPage().getCameraPermissionsAllowButtonText();
-        String cameraPermissionsCancelButtonText = localizations.getPromptPage().getCameraPermissionsCancelButtonText();
-        String microphonePermissionsTitle = localizations.getPromptPage().getMicrophonePermissionsTitle();
-        String microphonePermissionsPrompt = localizations.getPromptPage().getMicrophonePermissionsPrompt();
-        String microphonePermissionsBtnContinueMobile = localizations.getPromptPage().getMicrophonePermissionsBtnContinueMobile();
-        String microphonePermissionsBtnCancel = localizations.getPromptPage().getMicrophonePermissionsBtnCancel();
-        String hintHoldStill = localizations.getCapturePage().getHintHoldStill();
-        String hintLowLight = localizations.getCapturePage().getHintLowLight();
-        String btnHelp = localizations.getCapturePage().getBtnHelp();
-        String barcodeHelpModalTitle = localizations.getCapturePage().getBarcodeHelpModalTitle();
-        String barcodeHelpModalPrompt = localizations.getCapturePage().getBarcodeHelpModalPrompt();
-        String barcodeHelpModalHints = localizations.getCapturePage().getBarcodeHelpModalHints();
-        String barcodeHelpModalContinueBtn = localizations.getCapturePage().getBarcodeHelpModalContinueBtn();
-        String idFrontHelpModalTitle = localizations.getCapturePage().getIdFrontHelpModalTitle();
-        String idFrontHelpModalPrompt = localizations.getCapturePage().getIdFrontHelpModalPrompt();
-        String idFrontHelpModalHintsMobile = localizations.getCapturePage().getIdFrontHelpModalHintsMobile();
-        String idFrontHelpModalContinueBtn = localizations.getCapturePage().getIdFrontHelpModalContinueBtn();
-        String idBackHelpModalTitle = localizations.getCapturePage().getIdBackHelpModalTitle();
-        String idBackHelpModalPrompt = localizations.getCapturePage().getIdBackHelpModalPrompt();
-        String idBackHelpModalHintsMobile = localizations.getCapturePage().getIdBackHelpModalHintsMobile();
-        String idBackHelpModalContinueBtn = localizations.getCapturePage().getIdBackHelpModalContinueBtn();
-        NextStep.GovernmentId.AutoClassificationPage autoClassificationPage = localizations.getAutoClassificationPage();
-        String str10 = null;
-        if (autoClassificationPage != null) {
-            str = autoClassificationPage.getUnableToClassifyDocumentTitle();
-        } else {
-            str = null;
-        }
-        NextStep.GovernmentId.AutoClassificationPage autoClassificationPage2 = localizations.getAutoClassificationPage();
-        if (autoClassificationPage2 != null) {
-            str2 = autoClassificationPage2.getUnableToClassifyDocumentContinueButtonText();
-        } else {
-            str2 = null;
-        }
-        NextStep.GovernmentId.AutoClassificationPage autoClassificationPage3 = localizations.getAutoClassificationPage();
-        if (autoClassificationPage3 != null) {
-            str3 = autoClassificationPage3.getIdClassRejectedTitle();
-        } else {
-            str3 = null;
-        }
-        NextStep.GovernmentId.AutoClassificationPage autoClassificationPage4 = localizations.getAutoClassificationPage();
-        if (autoClassificationPage4 != null) {
-            str4 = autoClassificationPage4.getIdClassRejectedContinueButtonText();
-        } else {
-            str4 = null;
-        }
-        NextStep.GovernmentId.AutoClassificationPage autoClassificationPage5 = localizations.getAutoClassificationPage();
-        if (autoClassificationPage5 != null) {
-            str5 = autoClassificationPage5.getCountryInputTitle();
-        } else {
-            str5 = null;
-        }
-        NextStep.GovernmentId.AutoClassificationPage autoClassificationPage6 = localizations.getAutoClassificationPage();
-        if (autoClassificationPage6 != null) {
-            str6 = autoClassificationPage6.getIdClassInputTitle();
-        } else {
-            str6 = null;
-        }
-        NextStep.GovernmentId.AutoClassificationPage autoClassificationPage7 = localizations.getAutoClassificationPage();
-        if (autoClassificationPage7 != null) {
-            str7 = autoClassificationPage7.getManualClassificationTitle();
-        } else {
-            str7 = null;
-        }
-        NextStep.GovernmentId.AutoClassificationPage autoClassificationPage8 = localizations.getAutoClassificationPage();
-        if (autoClassificationPage8 != null) {
-            str8 = autoClassificationPage8.getManualClassificationContinueButtonText();
-        } else {
-            str8 = null;
-        }
-        NextStep.GovernmentId.AutoClassificationPage autoClassificationPage9 = localizations.getAutoClassificationPage();
-        if (autoClassificationPage9 != null) {
-            str10 = autoClassificationPage9.getAutoClassificationCaptureTipText();
-        }
-        return new g3.a.C0089a(title, prompt, choose, disclaimer, k10, m10, capturing, k11, str9, buttonSubmit, buttonRetake, k12, title2, description, l10, m11, m12, liveUploadButtonText, choosePhotoButtonText, e10, b10, confirmButtonText, chooseAnotherButtonText, cameraPermissionsTitle, cameraPermissionsPrompt, cameraPermissionsAllowButtonText, cameraPermissionsCancelButtonText, microphonePermissionsTitle, microphonePermissionsPrompt, microphonePermissionsBtnContinueMobile, microphonePermissionsBtnCancel, hintHoldStill, hintLowLight, btnHelp, barcodeHelpModalTitle, barcodeHelpModalPrompt, barcodeHelpModalHints, barcodeHelpModalContinueBtn, idFrontHelpModalTitle, idFrontHelpModalPrompt, idFrontHelpModalHintsMobile, idFrontHelpModalContinueBtn, idBackHelpModalTitle, idBackHelpModalPrompt, idBackHelpModalHintsMobile, idBackHelpModalContinueBtn, str, str2, str3, str4, str5, str6, str7, str8, str10, list);
-    }
-
-    public static final x5.b.a g(NextStep.Selfie.Localizations localizations, boolean z10) {
-        String prompt;
-        String str;
-        String str2;
-        String str3;
-        String str4;
-        String str5;
-        String str6;
-        Intrinsics.checkNotNullParameter(localizations, "<this>");
-        String title = localizations.getPromptPage().getTitle();
-        if (z10) {
-            prompt = localizations.getPromptPage().getPromptCenter();
-        } else {
-            prompt = localizations.getPromptPage().getPrompt();
-        }
-        String str7 = prompt;
-        String disclosure = localizations.getPromptPage().getDisclosure();
-        String buttonSubmit = localizations.getPromptPage().getButtonSubmit();
-        String title2 = localizations.getCapturePage().getTitle();
-        if (title2 == null) {
-            title2 = "";
-        }
-        String str8 = title2;
-        String selfieHintTakePhoto = localizations.getCapturePage().getSelfieHintTakePhoto();
-        String selfieHintCenterFace = localizations.getCapturePage().getSelfieHintCenterFace();
-        String selfieHintFaceTooClose = localizations.getCapturePage().getSelfieHintFaceTooClose();
-        String selfieHintFaceTooFar = localizations.getCapturePage().getSelfieHintFaceTooFar();
-        String selfieHintFaceIncomplete = localizations.getCapturePage().getSelfieHintFaceIncomplete();
-        String selfieHintMultipleFaces = localizations.getCapturePage().getSelfieHintMultipleFaces();
-        String selfieHintPoseNotCenter = localizations.getCapturePage().getSelfieHintPoseNotCenter();
-        String selfieHintLookLeft = localizations.getCapturePage().getSelfieHintLookLeft();
-        String selfieHintLookRight = localizations.getCapturePage().getSelfieHintLookRight();
-        String selfieHintHoldStill = localizations.getCapturePage().getSelfieHintHoldStill();
-        String title3 = localizations.getPendingPage().getTitle();
-        String description = localizations.getPendingPage().getDescription();
-        NextStep.Selfie.CheckPage checkPage = localizations.getCheckPage();
-        String str9 = null;
-        if (checkPage != null) {
-            str = checkPage.getTitle();
-        } else {
-            str = null;
-        }
-        NextStep.Selfie.CheckPage checkPage2 = localizations.getCheckPage();
-        if (checkPage2 != null) {
-            str2 = checkPage2.getDescription();
-        } else {
-            str2 = null;
-        }
-        NextStep.Selfie.CheckPage checkPage3 = localizations.getCheckPage();
-        if (checkPage3 != null) {
-            str3 = checkPage3.getSelfieLabelFront();
-        } else {
-            str3 = null;
-        }
-        NextStep.Selfie.CheckPage checkPage4 = localizations.getCheckPage();
-        if (checkPage4 != null) {
-            str4 = checkPage4.getSelfieLabelLeft();
-        } else {
-            str4 = null;
-        }
-        NextStep.Selfie.CheckPage checkPage5 = localizations.getCheckPage();
-        if (checkPage5 != null) {
-            str5 = checkPage5.getSelfieLabelRight();
-        } else {
-            str5 = null;
-        }
-        NextStep.Selfie.CheckPage checkPage6 = localizations.getCheckPage();
-        if (checkPage6 != null) {
-            str6 = checkPage6.getBtnSubmit();
-        } else {
-            str6 = null;
-        }
-        NextStep.Selfie.CheckPage checkPage7 = localizations.getCheckPage();
-        if (checkPage7 != null) {
-            str9 = checkPage7.getBtnRetake();
-        }
-        return new x5.b.a(title, str7, disclosure, buttonSubmit, str8, selfieHintTakePhoto, selfieHintCenterFace, selfieHintFaceTooClose, selfieHintFaceTooFar, selfieHintMultipleFaces, selfieHintFaceIncomplete, selfieHintPoseNotCenter, selfieHintLookLeft, selfieHintLookRight, selfieHintHoldStill, title3, description, str, str2, str3, str4, str5, str6, str9, localizations.getCapturePage().getAutoCaptureOn(), localizations.getCapturePage().getCaptureSuccess(), localizations.getCapturePage().getSelfieHintCenterFaceDescription(), localizations.getCapturePage().getSelfieHintLookLeftDescription(), localizations.getCapturePage().getSelfieHintLookRightDescription(), localizations.getCapturePage().getCameraLoadingTitle());
-    }
-
-    public static final vn.l h(NextStep.Document.Pages pages, NextStep.Document.Localizations localizations, StepStyles.DocumentStepStyle documentStepStyle) {
-        StepStyles.DocumentStepStyle documentStepStyle2;
-        u a10;
-        b3 a11;
-        NextStep.Document.Pages.DocumentPages document;
-        NextStep.Document.Pages.UploadOptionsDialog uploadOptionsDialog;
-        NextStep.Document.Pages.DocumentPages document2;
-        NextStep.Document.Pages.DocumentStartPage prompt;
-        Intrinsics.checkNotNullParameter(localizations, "localizations");
-        if (pages != null && (document2 = pages.getDocument()) != null && (prompt = document2.getPrompt()) != null && (a10 = i(prompt)) != null) {
-            documentStepStyle2 = documentStepStyle;
-        } else {
-            documentStepStyle2 = documentStepStyle;
-            a10 = u.f51665s.a(localizations.getPromptPage().getTitle(), localizations.getPromptPage().getPrompt(), localizations.getPromptPage().getBtnUpload(), localizations.getPromptPage().getBtnCapture(), documentStepStyle2);
-        }
-        if (pages == null || (document = pages.getDocument()) == null || (uploadOptionsDialog = document.getUploadOptionsDialog()) == null || (a11 = j(uploadOptionsDialog)) == null) {
-            a11 = b3.f51368s.a(localizations.getPromptPage().getCaptureOptionsDialogTitle(), localizations.getPromptPage().getBtnCapture(), localizations.getPromptPage().getBtnUpload(), documentStepStyle2);
-        }
-        return new vn.l(a10, a11);
-    }
-
-    private static final u i(NextStep.Document.Pages.DocumentStartPage documentStartPage) {
-        List list;
-        String str;
-        String str2;
-        String str3;
-        List<UiComponentConfig> components = documentStartPage.getUiStep().getConfig().getComponents();
-        String str4 = null;
-        if (components != null) {
-            list = com.withpersona.sdk2.inquiry.steps.ui.components.f.i(components);
-        } else {
-            list = null;
-        }
-        List<UiComponentConfig> components2 = documentStartPage.getUiStep().getConfig().getComponents();
-        if (components2 == null) {
-            components2 = CollectionsKt.l();
-        }
-        List<UiComponentConfig> list2 = components2;
-        StepStyles.UiStepStyle styles = documentStartPage.getUiStep().getStyles();
-        NextStep.Document.Pages.DocumentStartPage.ComponentNameMapping componentNameMapping = documentStartPage.getComponentNameMapping();
-        if (componentNameMapping != null) {
-            str = componentNameMapping.getButtonPhotoLibrary();
-        } else {
-            str = null;
-        }
-        NextStep.Document.Pages.DocumentStartPage.ComponentNameMapping componentNameMapping2 = documentStartPage.getComponentNameMapping();
-        if (componentNameMapping2 != null) {
-            str2 = componentNameMapping2.getButtonFilePicker();
-        } else {
-            str2 = null;
-        }
-        NextStep.Document.Pages.DocumentStartPage.ComponentNameMapping componentNameMapping3 = documentStartPage.getComponentNameMapping();
-        if (componentNameMapping3 != null) {
-            str3 = componentNameMapping3.getButtonCamera();
-        } else {
-            str3 = null;
-        }
-        NextStep.Document.Pages.DocumentStartPage.ComponentNameMapping componentNameMapping4 = documentStartPage.getComponentNameMapping();
-        if (componentNameMapping4 != null) {
-            str4 = componentNameMapping4.getButtonUploadOptions();
-        }
-        return new u(list, list2, styles, str2, str, str3, str4);
-    }
-
-    private static final b3 j(NextStep.Document.Pages.UploadOptionsDialog uploadOptionsDialog) {
-        List list;
-        String str;
-        String str2;
-        String str3;
-        List<UiComponentConfig> components = uploadOptionsDialog.getUiStep().getConfig().getComponents();
-        String str4 = null;
-        if (components != null) {
-            list = com.withpersona.sdk2.inquiry.steps.ui.components.f.i(components);
-        } else {
-            list = null;
-        }
-        List<UiComponentConfig> components2 = uploadOptionsDialog.getUiStep().getConfig().getComponents();
-        if (components2 == null) {
-            components2 = CollectionsKt.l();
-        }
-        List<UiComponentConfig> list2 = components2;
-        StepStyles.UiStepStyle styles = uploadOptionsDialog.getUiStep().getStyles();
-        NextStep.Document.Pages.UploadOptionsDialog.ComponentNameMapping componentNameMapping = uploadOptionsDialog.getComponentNameMapping();
-        if (componentNameMapping != null) {
-            str = componentNameMapping.getButtonPhotoLibrary();
-        } else {
-            str = null;
-        }
-        NextStep.Document.Pages.UploadOptionsDialog.ComponentNameMapping componentNameMapping2 = uploadOptionsDialog.getComponentNameMapping();
-        if (componentNameMapping2 != null) {
-            str2 = componentNameMapping2.getButtonFilePicker();
-        } else {
-            str2 = null;
-        }
-        NextStep.Document.Pages.UploadOptionsDialog.ComponentNameMapping componentNameMapping3 = uploadOptionsDialog.getComponentNameMapping();
-        if (componentNameMapping3 != null) {
-            str3 = componentNameMapping3.getButtonCamera();
-        } else {
-            str3 = null;
-        }
-        NextStep.Document.Pages.UploadOptionsDialog.ComponentNameMapping componentNameMapping4 = uploadOptionsDialog.getComponentNameMapping();
-        if (componentNameMapping4 != null) {
-            str4 = componentNameMapping4.getButtonCancel();
-        }
-        return new b3(list, list2, styles, str2, str, str3, str4);
-    }
-
-    private static final j4 k(List list, String str, String str2, String str3) {
-        if (str == null) {
-            str = "";
-        }
-        EnumEntries<c4.e> f10 = c4.e.f();
-        LinkedHashMap linkedHashMap = new LinkedHashMap(kotlin.ranges.d.d(o0.e(CollectionsKt.w(f10, 10)), 16));
-        for (c4.e eVar : f10) {
-            Pair a10 = v.a(new Pair(eVar, str2), str);
-            linkedHashMap.put(a10.c(), a10.d());
-        }
-        return m(list, str3, linkedHashMap);
-    }
-
-    private static final Map l(List list, String str, Map map) {
-        ArrayList arrayList;
-        Object obj;
-        String text;
-        if (list != null) {
-            arrayList = new ArrayList();
-            for (Object obj2 : list) {
-                if (Intrinsics.areEqual(((NextStep.GovernmentId.LocalizationOverride) obj2).getPage(), "selectPage")) {
-                    arrayList.add(obj2);
-                }
+            private C0612a() {
             }
-        } else {
-            arrayList = null;
+
+            public boolean equals(Object obj) {
+                if (this == obj || (obj instanceof C0612a)) {
+                    return true;
+                }
+                return false;
+            }
+
+            public int hashCode() {
+                return 1174409699;
+            }
+
+            public String toString() {
+                return "Error";
+            }
         }
-        LinkedHashMap linkedHashMap = new LinkedHashMap(o0.e(map.size()));
-        for (Map.Entry entry : map.entrySet()) {
-            Object key = entry.getKey();
-            String str2 = (String) entry.getKey();
-            String str3 = (String) entry.getValue();
-            if (arrayList != null) {
-                Iterator it = arrayList.iterator();
-                while (true) {
-                    if (it.hasNext()) {
-                        obj = it.next();
-                        NextStep.GovernmentId.LocalizationOverride localizationOverride = (NextStep.GovernmentId.LocalizationOverride) obj;
-                        if (Intrinsics.areEqual(localizationOverride.getCountryCode(), str) && (Intrinsics.areEqual(localizationOverride.getIdClass(), str2) || localizationOverride.getIdClass() == null)) {
-                            if (Intrinsics.areEqual(localizationOverride.getKey(), str2)) {
-                                break;
-                            }
-                        }
-                    } else {
-                        obj = null;
-                        break;
+
+        /* renamed from: so.a$b$b  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0613b implements b {
+
+            /* renamed from: a  reason: collision with root package name */
+            public static final C0613b f49181a = new C0613b();
+
+            private C0613b() {
+            }
+
+            public boolean equals(Object obj) {
+                if (this == obj || (obj instanceof C0613b)) {
+                    return true;
+                }
+                return false;
+            }
+
+            public int hashCode() {
+                return -384804045;
+            }
+
+            public String toString() {
+                return "NotStarted";
+            }
+        }
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class c implements b {
+
+            /* renamed from: a  reason: collision with root package name */
+            public static final c f49182a = new c();
+
+            private c() {
+            }
+
+            public boolean equals(Object obj) {
+                if (this == obj || (obj instanceof c)) {
+                    return true;
+                }
+                return false;
+            }
+
+            public int hashCode() {
+                return -230105505;
+            }
+
+            public String toString() {
+                return "Preparing";
+            }
+        }
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class d implements b {
+
+            /* renamed from: a  reason: collision with root package name */
+            private final c.InterfaceC0194c f49183a;
+
+            public d(c.InterfaceC0194c integrityTokenProvider) {
+                Intrinsics.checkNotNullParameter(integrityTokenProvider, "integrityTokenProvider");
+                this.f49183a = integrityTokenProvider;
+            }
+
+            public final c.InterfaceC0194c a() {
+                return this.f49183a;
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c extends k implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        Object f49184d;
+
+        /* renamed from: e  reason: collision with root package name */
+        Object f49185e;
+
+        /* renamed from: i  reason: collision with root package name */
+        int f49186i;
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: so.a$c$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0614a implements Function1 {
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ CancellableContinuation f49188d;
+
+            C0614a(CancellableContinuation cancellableContinuation) {
+                this.f49188d = cancellableContinuation;
+            }
+
+            public final void a(c.b bVar) {
+                CancellableContinuation cancellableContinuation = this.f49188d;
+                Result.a aVar = Result.f33071e;
+                cancellableContinuation.resumeWith(Result.b(bVar.a()));
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                a((c.b) obj);
+                return Unit.f33074a;
+            }
+        }
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class b implements wg.f {
+
+            /* renamed from: a  reason: collision with root package name */
+            final /* synthetic */ a f49189a;
+
+            /* renamed from: b  reason: collision with root package name */
+            final /* synthetic */ CancellableContinuation f49190b;
+
+            b(a aVar, CancellableContinuation cancellableContinuation) {
+                this.f49189a = aVar;
+                this.f49190b = cancellableContinuation;
+            }
+
+            @Override // wg.f
+            public final void onFailure(Exception it) {
+                Intrinsics.checkNotNullParameter(it, "it");
+                wo.e eVar = this.f49189a.f49176e;
+                String message = it.getMessage();
+                eVar.a("integrity:request:" + message);
+                this.f49190b.resumeWith(Result.b(null));
+            }
+        }
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: so.a$c$c  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0615c extends k implements Function3 {
+
+            /* renamed from: d  reason: collision with root package name */
+            int f49191d;
+
+            C0615c(Continuation continuation) {
+                super(3, continuation);
+            }
+
+            @Override // kotlin.coroutines.jvm.internal.a
+            public final Object invokeSuspend(Object obj) {
+                pr.b.f();
+                if (this.f49191d == 0) {
+                    kotlin.c.b(obj);
+                    b.C0612a c0612a = b.C0612a.f49180a;
+                    return Unit.f33074a;
+                }
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+
+            @Override // kotlin.jvm.functions.Function3
+            /* renamed from: j */
+            public final Object invoke(FlowCollector flowCollector, Throwable th2, Continuation continuation) {
+                return new C0615c(continuation).invokeSuspend(Unit.f33074a);
+            }
+        }
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class d implements Flow {
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ Flow f49192d;
+
+            /* renamed from: so.a$c$d$a  reason: collision with other inner class name */
+            /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+            public static final class C0616a implements FlowCollector {
+
+                /* renamed from: d  reason: collision with root package name */
+                final /* synthetic */ FlowCollector f49193d;
+
+                /* renamed from: so.a$c$d$a$a  reason: collision with other inner class name */
+                /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+                public static final class C0617a extends kotlin.coroutines.jvm.internal.d {
+
+                    /* renamed from: d  reason: collision with root package name */
+                    /* synthetic */ Object f49194d;
+
+                    /* renamed from: e  reason: collision with root package name */
+                    int f49195e;
+
+                    public C0617a(Continuation continuation) {
+                        super(continuation);
+                    }
+
+                    @Override // kotlin.coroutines.jvm.internal.a
+                    public final Object invokeSuspend(Object obj) {
+                        this.f49194d = obj;
+                        this.f49195e |= Integer.MIN_VALUE;
+                        return C0616a.this.emit(null, this);
                     }
                 }
-                NextStep.GovernmentId.LocalizationOverride localizationOverride2 = (NextStep.GovernmentId.LocalizationOverride) obj;
-                if (localizationOverride2 != null && (text = localizationOverride2.getText()) != null) {
-                    str3 = text;
-                }
-            }
-            linkedHashMap.put(key, str3);
-        }
-        return linkedHashMap;
-    }
 
-    private static final j4 m(List list, String str, Map map) {
-        ArrayList arrayList;
-        ArrayList<NextStep.GovernmentId.LocalizationOverride> arrayList2;
-        if (list != null) {
-            arrayList = new ArrayList();
-            for (Object obj : list) {
-                if (Intrinsics.areEqual(((NextStep.GovernmentId.LocalizationOverride) obj).getPage(), str)) {
-                    arrayList.add(obj);
+                public C0616a(FlowCollector flowCollector) {
+                    this.f49193d = flowCollector;
+                }
+
+                /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
+                /* JADX WARN: Removed duplicated region for block: B:14:0x0031  */
+                @Override // kotlinx.coroutines.flow.FlowCollector
+                /*
+                    Code decompiled incorrectly, please refer to instructions dump.
+                    To view partially-correct add '--show-bad-code' argument
+                */
+                public final java.lang.Object emit(java.lang.Object r6, kotlin.coroutines.Continuation r7) {
+                    /*
+                        r5 = this;
+                        boolean r0 = r7 instanceof so.a.c.d.C0616a.C0617a
+                        if (r0 == 0) goto L13
+                        r0 = r7
+                        so.a$c$d$a$a r0 = (so.a.c.d.C0616a.C0617a) r0
+                        int r1 = r0.f49195e
+                        r2 = -2147483648(0xffffffff80000000, float:-0.0)
+                        r3 = r1 & r2
+                        if (r3 == 0) goto L13
+                        int r1 = r1 - r2
+                        r0.f49195e = r1
+                        goto L18
+                    L13:
+                        so.a$c$d$a$a r0 = new so.a$c$d$a$a
+                        r0.<init>(r7)
+                    L18:
+                        java.lang.Object r7 = r0.f49194d
+                        java.lang.Object r1 = pr.b.f()
+                        int r2 = r0.f49195e
+                        r3 = 1
+                        if (r2 == 0) goto L31
+                        if (r2 != r3) goto L29
+                        kotlin.c.b(r7)
+                        goto L4a
+                    L29:
+                        java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
+                        java.lang.String r7 = "call to 'resume' before 'invoke' with coroutine"
+                        r6.<init>(r7)
+                        throw r6
+                    L31:
+                        kotlin.c.b(r7)
+                        kotlinx.coroutines.flow.FlowCollector r7 = r5.f49193d
+                        r2 = r6
+                        so.a$b r2 = (so.a.b) r2
+                        boolean r4 = r2 instanceof so.a.b.C0612a
+                        if (r4 != 0) goto L41
+                        boolean r2 = r2 instanceof so.a.b.d
+                        if (r2 == 0) goto L4a
+                    L41:
+                        r0.f49195e = r3
+                        java.lang.Object r6 = r7.emit(r6, r0)
+                        if (r6 != r1) goto L4a
+                        return r1
+                    L4a:
+                        kotlin.Unit r6 = kotlin.Unit.f33074a
+                        return r6
+                    */
+                    throw new UnsupportedOperationException("Method not decompiled: so.a.c.d.C0616a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
                 }
             }
-        } else {
-            arrayList = null;
+
+            public d(Flow flow) {
+                this.f49192d = flow;
+            }
+
+            @Override // kotlinx.coroutines.flow.Flow
+            public Object collect(FlowCollector flowCollector, Continuation continuation) {
+                Object collect = this.f49192d.collect(new C0616a(flowCollector), continuation);
+                if (collect == pr.b.f()) {
+                    return collect;
+                }
+                return Unit.f33074a;
+            }
         }
-        j4.a aVar = new j4.a();
-        for (Map.Entry entry : map.entrySet()) {
-            Pair pair = (Pair) entry.getKey();
-            String str2 = (String) entry.getValue();
-            c4.e eVar = (c4.e) pair.c();
-            String str3 = (String) pair.d();
-            if (arrayList != null) {
-                arrayList2 = new ArrayList();
-                for (Object obj2 : arrayList) {
-                    NextStep.GovernmentId.LocalizationOverride localizationOverride = (NextStep.GovernmentId.LocalizationOverride) obj2;
-                    if (Intrinsics.areEqual(localizationOverride.getSide(), eVar.g()) || localizationOverride.getSide() == null) {
-                        if (Intrinsics.areEqual(localizationOverride.getKey(), str3)) {
-                            arrayList2.add(obj2);
-                        }
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class e implements Flow {
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ Flow f49197d;
+
+            /* renamed from: so.a$c$e$a  reason: collision with other inner class name */
+            /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+            public static final class C0618a implements FlowCollector {
+
+                /* renamed from: d  reason: collision with root package name */
+                final /* synthetic */ FlowCollector f49198d;
+
+                /* renamed from: so.a$c$e$a$a  reason: collision with other inner class name */
+                /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+                public static final class C0619a extends kotlin.coroutines.jvm.internal.d {
+
+                    /* renamed from: d  reason: collision with root package name */
+                    /* synthetic */ Object f49199d;
+
+                    /* renamed from: e  reason: collision with root package name */
+                    int f49200e;
+
+                    public C0619a(Continuation continuation) {
+                        super(continuation);
+                    }
+
+                    @Override // kotlin.coroutines.jvm.internal.a
+                    public final Object invokeSuspend(Object obj) {
+                        this.f49199d = obj;
+                        this.f49200e |= Integer.MIN_VALUE;
+                        return C0618a.this.emit(null, this);
                     }
                 }
-            } else {
-                arrayList2 = null;
-            }
-            aVar.b(null, null, eVar, str2);
-            if (arrayList2 != null) {
-                for (NextStep.GovernmentId.LocalizationOverride localizationOverride2 : arrayList2) {
-                    aVar.b(localizationOverride2.getCountryCode(), localizationOverride2.getIdClass(), eVar, localizationOverride2.getText());
+
+                public C0618a(FlowCollector flowCollector) {
+                    this.f49198d = flowCollector;
+                }
+
+                /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
+                /* JADX WARN: Removed duplicated region for block: B:14:0x0031  */
+                @Override // kotlinx.coroutines.flow.FlowCollector
+                /*
+                    Code decompiled incorrectly, please refer to instructions dump.
+                    To view partially-correct add '--show-bad-code' argument
+                */
+                public final java.lang.Object emit(java.lang.Object r6, kotlin.coroutines.Continuation r7) {
+                    /*
+                        r5 = this;
+                        boolean r0 = r7 instanceof so.a.c.e.C0618a.C0619a
+                        if (r0 == 0) goto L13
+                        r0 = r7
+                        so.a$c$e$a$a r0 = (so.a.c.e.C0618a.C0619a) r0
+                        int r1 = r0.f49200e
+                        r2 = -2147483648(0xffffffff80000000, float:-0.0)
+                        r3 = r1 & r2
+                        if (r3 == 0) goto L13
+                        int r1 = r1 - r2
+                        r0.f49200e = r1
+                        goto L18
+                    L13:
+                        so.a$c$e$a$a r0 = new so.a$c$e$a$a
+                        r0.<init>(r7)
+                    L18:
+                        java.lang.Object r7 = r0.f49199d
+                        java.lang.Object r1 = pr.b.f()
+                        int r2 = r0.f49200e
+                        r3 = 1
+                        if (r2 == 0) goto L31
+                        if (r2 != r3) goto L29
+                        kotlin.c.b(r7)
+                        goto L50
+                    L29:
+                        java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
+                        java.lang.String r7 = "call to 'resume' before 'invoke' with coroutine"
+                        r6.<init>(r7)
+                        throw r6
+                    L31:
+                        kotlin.c.b(r7)
+                        kotlinx.coroutines.flow.FlowCollector r7 = r5.f49198d
+                        so.a$b r6 = (so.a.b) r6
+                        boolean r2 = r6 instanceof so.a.b.d
+                        r4 = 0
+                        if (r2 == 0) goto L40
+                        so.a$b$d r6 = (so.a.b.d) r6
+                        goto L41
+                    L40:
+                        r6 = r4
+                    L41:
+                        if (r6 == 0) goto L47
+                        com.google.android.play.core.integrity.c$c r4 = r6.a()
+                    L47:
+                        r0.f49200e = r3
+                        java.lang.Object r6 = r7.emit(r4, r0)
+                        if (r6 != r1) goto L50
+                        return r1
+                    L50:
+                        kotlin.Unit r6 = kotlin.Unit.f33074a
+                        return r6
+                    */
+                    throw new UnsupportedOperationException("Method not decompiled: so.a.c.e.C0618a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
                 }
             }
-        }
-        return aVar.a();
-    }
 
-    public static final com.withpersona.sdk2.inquiry.internal.l n(CheckInquiryResponse checkInquiryResponse, String sessionToken, qp.g inquirySessionConfig) {
-        Intrinsics.checkNotNullParameter(checkInquiryResponse, "<this>");
-        Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
-        Intrinsics.checkNotNullParameter(inquirySessionConfig, "inquirySessionConfig");
-        String id2 = checkInquiryResponse.getData().getId();
-        NextStep nextStep = checkInquiryResponse.getData().getAttributes().getNextStep();
-        if (nextStep instanceof NextStep.Ui) {
-            return s((NextStep.Ui) nextStep, sessionToken, id2, checkInquiryResponse.getData().getAttributes().getStatus(), checkInquiryResponse.getData().getAttributes().getFields(), inquirySessionConfig);
-        }
-        if (nextStep instanceof NextStep.GovernmentId) {
-            return q((NextStep.GovernmentId) nextStep, sessionToken, id2, checkInquiryResponse.getData().getAttributes().getSelectedCountryCode());
-        }
-        if (nextStep instanceof NextStep.Selfie) {
-            return r((NextStep.Selfie) nextStep, sessionToken, id2);
-        }
-        if (nextStep instanceof NextStep.Document) {
-            return p((NextStep.Document) nextStep, sessionToken, id2);
-        }
-        if (nextStep instanceof NextStep.Complete) {
-            return o((NextStep.Complete) nextStep, sessionToken, id2, checkInquiryResponse.getData().getAttributes().getStatus(), checkInquiryResponse.getData().getAttributes().getFields());
-        }
-        if (Intrinsics.areEqual(nextStep, NextStep.Unknown.INSTANCE)) {
-            String name = nextStep.getName();
-            throw new IllegalArgumentException("Unknown type for step " + name);
-        }
-        throw new ir.p();
-    }
-
-    public static final com.withpersona.sdk2.inquiry.internal.l o(NextStep.Complete complete, String sessionToken, String inquiryId, String str, Map map) {
-        Intrinsics.checkNotNullParameter(complete, "<this>");
-        Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
-        Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
-        if (str == null) {
-            str = "";
-        }
-        String str2 = str;
-        if (map == null) {
-            map = o0.i();
-        }
-        return new l.a(inquiryId, sessionToken, null, str2, map, 4, null);
-    }
-
-    public static final com.withpersona.sdk2.inquiry.internal.l p(NextStep.Document document, String sessionToken, String inquiryId) {
-        Intrinsics.checkNotNullParameter(document, "<this>");
-        Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
-        Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
-        return new l.d(inquiryId, sessionToken, null, document.getStyles(), document.getConfig().getLocalizations().getCancelDialog(), document, document.getName(), h(document.getConfig().getPages(), document.getConfig().getLocalizations(), document.getStyles()), document.getConfig().getAssets(), document.getName(), 4, null);
-    }
-
-    public static final com.withpersona.sdk2.inquiry.internal.l q(NextStep.GovernmentId governmentId, String sessionToken, String inquiryId, String str) {
-        long j10;
-        boolean z10;
-        boolean z11;
-        int i10;
-        Intrinsics.checkNotNullParameter(governmentId, "<this>");
-        Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
-        Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
-        Long nativeMobileCameraManualCaptureDelayMs = governmentId.getConfig().getNativeMobileCameraManualCaptureDelayMs();
-        if (nativeMobileCameraManualCaptureDelayMs != null) {
-            j10 = nativeMobileCameraManualCaptureDelayMs.longValue();
-        } else {
-            j10 = 8000;
-        }
-        List<Id> idclasses = governmentId.getConfig().getIdclasses();
-        if (idclasses == null) {
-            idclasses = CollectionsKt.l();
-        }
-        List<Id> list = idclasses;
-        String name = governmentId.getName();
-        String name2 = governmentId.getName();
-        Boolean backStepEnabled = governmentId.getConfig().getBackStepEnabled();
-        boolean z12 = false;
-        if (backStepEnabled != null) {
-            z10 = backStepEnabled.booleanValue();
-        } else {
-            z10 = false;
-        }
-        Boolean cancelButtonEnabled = governmentId.getConfig().getCancelButtonEnabled();
-        boolean z13 = true;
-        if (cancelButtonEnabled != null) {
-            z11 = cancelButtonEnabled.booleanValue();
-        } else {
-            z11 = true;
-        }
-        NextStep.GovernmentId.Localizations localizations = governmentId.getConfig().getLocalizations();
-        List<NextStep.GovernmentId.LocalizationOverride> localizationOverrides = governmentId.getConfig().getLocalizationOverrides();
-        List<CaptureOptionNativeMobile> enabledCaptureOptionsNativeMobile = governmentId.getConfig().getEnabledCaptureOptionsNativeMobile();
-        if (enabledCaptureOptionsNativeMobile == null) {
-            enabledCaptureOptionsNativeMobile = CollectionsKt.e(CaptureOptionNativeMobile.MOBILE_CAMERA);
-        }
-        List<CaptureOptionNativeMobile> list2 = enabledCaptureOptionsNativeMobile;
-        StepStyles.GovernmentIdStepStyle styles = governmentId.getStyles();
-        Integer imageCaptureCount = governmentId.getConfig().getImageCaptureCount();
-        if (imageCaptureCount != null) {
-            i10 = imageCaptureCount.intValue();
-        } else {
-            i10 = 3;
-        }
-        String fieldKeyDocument = governmentId.getConfig().getFieldKeyDocument();
-        String fieldKeyIdclass = governmentId.getConfig().getFieldKeyIdclass();
-        NextStep.CancelDialog cancelDialog = governmentId.getConfig().getLocalizations().getCancelDialog();
-        Boolean shouldSkipReviewScreen = governmentId.getConfig().getShouldSkipReviewScreen();
-        if (shouldSkipReviewScreen != null) {
-            z12 = shouldSkipReviewScreen.booleanValue();
-        }
-        boolean z14 = z12;
-        List<NextStep.GovernmentId.CaptureFileType> enabledCaptureFileTypes = governmentId.getConfig().getEnabledCaptureFileTypes();
-        if (enabledCaptureFileTypes == null) {
-            enabledCaptureFileTypes = CollectionsKt.l();
-        }
-        List<NextStep.GovernmentId.CaptureFileType> list3 = enabledCaptureFileTypes;
-        List<NextStep.GovernmentId.VideoCaptureMethod> videoCaptureMethods = governmentId.getConfig().getVideoCaptureMethods();
-        if (videoCaptureMethods == null) {
-            videoCaptureMethods = CollectionsKt.l();
-        }
-        List<NextStep.GovernmentId.VideoCaptureMethod> list4 = videoCaptureMethods;
-        String videoSessionJwt = governmentId.getConfig().getVideoSessionJwt();
-        NextStep.GovernmentId.AssetConfig assets = governmentId.getConfig().getAssets();
-        bo.a i11 = z.i(governmentId.getConfig().getAutoClassificationConfig(), j10);
-        StyleElements.Axis reviewCaptureButtonsAxis = governmentId.getConfig().getReviewCaptureButtonsAxis();
-        if (reviewCaptureButtonsAxis == null) {
-            reviewCaptureButtonsAxis = StyleElements.Axis.HORIZONTAL;
-        }
-        StyleElements.Axis axis = reviewCaptureButtonsAxis;
-        PendingPageTextPosition pendingPageTextVerticalPosition = governmentId.getConfig().getPendingPageTextVerticalPosition();
-        if (pendingPageTextVerticalPosition == null) {
-            pendingPageTextVerticalPosition = PendingPageTextPositionKt.getDEFAULT_PROCESSING_TEXT_POSITION();
-        }
-        PendingPageTextPosition pendingPageTextPosition = pendingPageTextVerticalPosition;
-        Boolean audioEnabled = governmentId.getConfig().getAudioEnabled();
-        if (audioEnabled != null) {
-            z13 = audioEnabled.booleanValue();
-        }
-        return new l.f(inquiryId, sessionToken, null, styles, cancelDialog, str, list, name, name2, z10, z11, localizations, localizationOverrides, list2, i10, j10, fieldKeyDocument, fieldKeyIdclass, z14, list3, list4, videoSessionJwt, assets, i11, axis, pendingPageTextPosition, z13, null, 4, null);
-    }
-
-    public static final com.withpersona.sdk2.inquiry.internal.l r(NextStep.Selfie selfie, String sessionToken, String inquiryId) {
-        boolean z10;
-        boolean z11;
-        b0 b0Var;
-        Integer designVersion;
-        Intrinsics.checkNotNullParameter(selfie, "<this>");
-        Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
-        Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
-        NextStep.Selfie.CaptureMethod selfieType = selfie.getConfig().getSelfieType();
-        String name = selfie.getName();
-        String name2 = selfie.getName();
-        Boolean backStepEnabled = selfie.getConfig().getBackStepEnabled();
-        boolean z12 = false;
-        if (backStepEnabled != null) {
-            z10 = backStepEnabled.booleanValue();
-        } else {
-            z10 = false;
-        }
-        Boolean cancelButtonEnabled = selfie.getConfig().getCancelButtonEnabled();
-        if (cancelButtonEnabled != null) {
-            z11 = cancelButtonEnabled.booleanValue();
-        } else {
-            z11 = true;
-        }
-        String fieldKeySelfie = selfie.getConfig().getFieldKeySelfie();
-        boolean requireStrictSelfieCapture = selfie.getConfig().getRequireStrictSelfieCapture();
-        Boolean skipPromptPage = selfie.getConfig().getSkipPromptPage();
-        if (skipPromptPage != null) {
-            z12 = skipPromptPage.booleanValue();
-        }
-        boolean z13 = z12;
-        NextStep.Selfie.Localizations localizations = selfie.getConfig().getLocalizations();
-        boolean z14 = true;
-        StepStyles.SelfieStepStyle styles = selfie.getStyles();
-        NextStep.CancelDialog cancelDialog = selfie.getConfig().getLocalizations().getCancelDialog();
-        List<NextStep.Selfie.CaptureFileType> enabledCaptureFileTypes = selfie.getConfig().getEnabledCaptureFileTypes();
-        if (enabledCaptureFileTypes == null) {
-            enabledCaptureFileTypes = CollectionsKt.l();
-        }
-        List<NextStep.Selfie.CaptureFileType> list = enabledCaptureFileTypes;
-        List<NextStep.Selfie.VideoCaptureMethod> videoCaptureMethods = selfie.getConfig().getVideoCaptureMethods();
-        if (videoCaptureMethods == null) {
-            videoCaptureMethods = CollectionsKt.l();
-        }
-        List<NextStep.Selfie.VideoCaptureMethod> list2 = videoCaptureMethods;
-        NextStep.Selfie.AssetConfig assets = selfie.getConfig().getAssets();
-        String videoSessionJwt = selfie.getConfig().getVideoSessionJwt();
-        List<NextStep.Selfie.SelfiePose> orderedPoses = selfie.getConfig().getOrderedPoses();
-        PendingPageTextPosition pendingPageTextVerticalPosition = selfie.getConfig().getPendingPageTextVerticalPosition();
-        if (pendingPageTextVerticalPosition == null) {
-            pendingPageTextVerticalPosition = PendingPageTextPositionKt.getDEFAULT_PROCESSING_TEXT_POSITION();
-        }
-        PendingPageTextPosition pendingPageTextPosition = pendingPageTextVerticalPosition;
-        Boolean audioEnabled = selfie.getConfig().getAudioEnabled();
-        if (audioEnabled != null) {
-            z14 = audioEnabled.booleanValue();
-        }
-        boolean z15 = z14;
-        s0 u10 = u(selfie.getConfig().getPoseConfigs());
-        if (selfie.getConfig().getDesignVersion() != null && ((designVersion = selfie.getConfig().getDesignVersion()) == null || designVersion.intValue() != 0)) {
-            b0Var = b0.f23031e;
-        } else {
-            b0Var = b0.f23030d;
-        }
-        return new l.h(inquiryId, sessionToken, null, styles, cancelDialog, selfieType, name, name2, z10, z11, fieldKeySelfie, requireStrictSelfieCapture, z13, localizations, list, list2, assets, videoSessionJwt, orderedPoses, pendingPageTextPosition, z15, u10, b0Var, 4, null);
-    }
-
-    public static final com.withpersona.sdk2.inquiry.internal.l s(NextStep.Ui ui2, String sessionToken, String inquiryId, String str, Map map, qp.g inquirySessionConfig) {
-        String str2;
-        boolean z10;
-        boolean z11;
-        Map map2;
-        NextStep.CancelDialog cancelDialog;
-        Intrinsics.checkNotNullParameter(ui2, "<this>");
-        Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
-        Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
-        Intrinsics.checkNotNullParameter(inquirySessionConfig, "inquirySessionConfig");
-        if (str == null) {
-            str2 = "";
-        } else {
-            str2 = str;
-        }
-        String name = ui2.getName();
-        List<UiComponentConfig> components = ui2.getConfig().getComponents();
-        if (components == null) {
-            components = CollectionsKt.l();
-        }
-        List<UiComponentConfig> list = components;
-        Boolean backStepEnabled = ui2.getConfig().getBackStepEnabled();
-        boolean z12 = false;
-        if (backStepEnabled != null) {
-            z10 = backStepEnabled.booleanValue();
-        } else {
-            z10 = false;
-        }
-        Boolean cancelButtonEnabled = ui2.getConfig().getCancelButtonEnabled();
-        if (cancelButtonEnabled != null) {
-            z11 = cancelButtonEnabled.booleanValue();
-        } else {
-            z11 = true;
-        }
-        boolean z13 = z11;
-        Boolean terminal = ui2.getConfig().getTerminal();
-        if (terminal != null) {
-            z12 = terminal.booleanValue();
-        }
-        boolean z14 = z12;
-        if (map == null) {
-            map2 = o0.i();
-        } else {
-            map2 = map;
-        }
-        StepStyles.UiStepStyle styles = ui2.getStyles();
-        String uuid = UUID.randomUUID().toString();
-        Intrinsics.checkNotNullExpressionValue(uuid, "toString(...)");
-        NextStep.Ui.Localizations localizations = ui2.getConfig().getLocalizations();
-        if (localizations != null) {
-            cancelDialog = localizations.getCancelDialog();
-        } else {
-            cancelDialog = null;
-        }
-        return new l.j(inquiryId, sessionToken, null, styles, cancelDialog, ui2.getConfig().getLocalizations(), str2, name, list, z10, z13, z14, map2, uuid, ui2.getConfig().getServerComponentErrors(), null, inquirySessionConfig, false, 32772, null);
-    }
-
-    private static final r0 t(PoseConfig poseConfig) {
-        boolean b10;
-        boolean e10;
-        long d10;
-        boolean c10;
-        r0 a10 = r0.f23359p.a();
-        Boolean allowReview = poseConfig.getAllowReview();
-        if (allowReview != null) {
-            b10 = allowReview.booleanValue();
-        } else {
-            b10 = a10.b();
-        }
-        Boolean manualCaptureEnabled = poseConfig.getManualCaptureEnabled();
-        if (manualCaptureEnabled != null) {
-            e10 = manualCaptureEnabled.booleanValue();
-        } else {
-            e10 = a10.e();
-        }
-        Long manualCaptureDelayMs = poseConfig.getManualCaptureDelayMs();
-        if (manualCaptureDelayMs != null) {
-            d10 = manualCaptureDelayMs.longValue();
-        } else {
-            d10 = a10.d();
-        }
-        Boolean autoCaptureEnabled = poseConfig.getAutoCaptureEnabled();
-        if (autoCaptureEnabled != null) {
-            c10 = autoCaptureEnabled.booleanValue();
-        } else {
-            c10 = a10.c();
-        }
-        return new r0(b10, e10, d10, c10);
-    }
-
-    private static final s0 u(List list) {
-        a1.b v10;
-        LinkedHashMap linkedHashMap = new LinkedHashMap();
-        if (list == null) {
-            list = CollectionsKt.l();
-        }
-        for (PoseConfig poseConfig : list) {
-            String pose = poseConfig.getPose();
-            if (pose != null && (v10 = v(pose)) != null) {
-                linkedHashMap.put(v10, t(poseConfig));
+            public e(Flow flow) {
+                this.f49197d = flow;
             }
-        }
-        return new s0(linkedHashMap);
-    }
 
-    private static final a1.b v(String str) {
-        int hashCode = str.hashCode();
-        if (hashCode != -1364013995) {
-            if (hashCode != 3317767) {
-                if (hashCode == 108511772 && str.equals(ViewProps.RIGHT)) {
-                    return a1.b.f23014i;
+            @Override // kotlinx.coroutines.flow.Flow
+            public Object collect(FlowCollector flowCollector, Continuation continuation) {
+                Object collect = this.f49197d.collect(new C0618a(flowCollector), continuation);
+                if (collect == pr.b.f()) {
+                    return collect;
                 }
-                return null;
-            } else if (str.equals(ViewProps.LEFT)) {
-                return a1.b.f23013e;
-            } else {
-                return null;
+                return Unit.f33074a;
             }
-        } else if (!str.equals("center")) {
-            return null;
-        } else {
-            return a1.b.f23012d;
         }
+
+        c(Continuation continuation) {
+            super(2, continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            return new c(continuation);
+        }
+
+        /* JADX WARN: Code restructure failed: missing block: B:15:0x0060, code lost:
+            if (r8 == r0) goto L18;
+         */
+        @Override // kotlin.coroutines.jvm.internal.a
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public final java.lang.Object invokeSuspend(java.lang.Object r8) {
+            /*
+                r7 = this;
+                java.lang.Object r0 = pr.b.f()
+                int r1 = r7.f49186i
+                r2 = 2
+                r3 = 0
+                r4 = 1
+                if (r1 == 0) goto L27
+                if (r1 == r4) goto L23
+                if (r1 != r2) goto L1b
+                java.lang.Object r0 = r7.f49185e
+                so.a r0 = (so.a) r0
+                java.lang.Object r0 = r7.f49184d
+                com.google.android.play.core.integrity.c$c r0 = (com.google.android.play.core.integrity.c.InterfaceC0194c) r0
+                kotlin.c.b(r8)
+                return r8
+            L1b:
+                java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
+                java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
+                r8.<init>(r0)
+                throw r8
+            L23:
+                kotlin.c.b(r8)
+                goto L63
+            L27:
+                kotlin.c.b(r8)
+                so.a r8 = so.a.this
+                kotlinx.coroutines.flow.MutableStateFlow r8 = so.a.e(r8)
+                java.lang.Object r8 = r8.getValue()
+                boolean r8 = r8 instanceof so.a.b.C0613b
+                if (r8 == 0) goto L39
+                return r3
+            L39:
+                so.a r8 = so.a.this
+                kotlinx.coroutines.flow.MutableStateFlow r8 = so.a.e(r8)
+                so.a$c$d r1 = new so.a$c$d
+                r1.<init>(r8)
+                long r5 = so.a.b()
+                kotlinx.coroutines.flow.Flow r8 = ks.g.I(r1, r5)
+                so.a$c$c r1 = new so.a$c$c
+                r1.<init>(r3)
+                kotlinx.coroutines.flow.Flow r8 = ks.g.f(r8, r1)
+                so.a$c$e r1 = new so.a$c$e
+                r1.<init>(r8)
+                r7.f49186i = r4
+                java.lang.Object r8 = ks.g.u(r1, r7)
+                if (r8 != r0) goto L63
+                goto Lb9
+            L63:
+                com.google.android.play.core.integrity.c$c r8 = (com.google.android.play.core.integrity.c.InterfaceC0194c) r8
+                if (r8 != 0) goto L68
+                return r3
+            L68:
+                so.a r1 = so.a.this
+                r7.f49184d = r8
+                r7.f49185e = r1
+                r7.f49186i = r2
+                kotlinx.coroutines.e r2 = new kotlinx.coroutines.e
+                kotlin.coroutines.Continuation r3 = pr.b.c(r7)
+                r2.<init>(r3, r4)
+                r2.H()
+                com.google.android.play.core.integrity.c$d$a r3 = com.google.android.play.core.integrity.c.d.a()
+                java.util.UUID r4 = java.util.UUID.randomUUID()
+                java.lang.String r4 = r4.toString()
+                com.google.android.play.core.integrity.c$d$a r3 = r3.b(r4)
+                com.google.android.play.core.integrity.c$d r3 = r3.a()
+                com.google.android.gms.tasks.Task r8 = r8.a(r3)
+                so.a$c$a r3 = new so.a$c$a
+                r3.<init>(r2)
+                so.b r4 = new so.b
+                r4.<init>(r3)
+                com.google.android.gms.tasks.Task r8 = r8.g(r4)
+                so.a$c$b r3 = new so.a$c$b
+                r3.<init>(r1, r2)
+                r8.e(r3)
+                java.lang.Object r8 = r2.B()
+                java.lang.Object r1 = pr.b.f()
+                if (r8 != r1) goto Lb7
+                kotlin.coroutines.jvm.internal.g.c(r7)
+            Lb7:
+                if (r8 != r0) goto Lba
+            Lb9:
+                return r0
+            Lba:
+                return r8
+            */
+            throw new UnsupportedOperationException("Method not decompiled: so.a.c.invokeSuspend(java.lang.Object):java.lang.Object");
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class d extends k implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        Object f49202d;
+
+        /* renamed from: e  reason: collision with root package name */
+        Object f49203e;
+
+        /* renamed from: i  reason: collision with root package name */
+        Object f49204i;
+
+        /* renamed from: o  reason: collision with root package name */
+        Object f49205o;
+
+        /* renamed from: p  reason: collision with root package name */
+        Object f49206p;
+
+        /* renamed from: q  reason: collision with root package name */
+        int f49207q;
+
+        /* renamed from: s  reason: collision with root package name */
+        final /* synthetic */ String f49209s;
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* renamed from: so.a$d$a  reason: collision with other inner class name */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class C0620a implements Function1 {
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ CancellableContinuation f49210d;
+
+            C0620a(CancellableContinuation cancellableContinuation) {
+                this.f49210d = cancellableContinuation;
+            }
+
+            public final void a(c.InterfaceC0194c interfaceC0194c) {
+                this.f49210d.resumeWith(Result.b(Result.a(Result.b(interfaceC0194c))));
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                a((c.InterfaceC0194c) obj);
+                return Unit.f33074a;
+            }
+        }
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class b implements wg.f {
+
+            /* renamed from: a  reason: collision with root package name */
+            final /* synthetic */ CancellableContinuation f49211a;
+
+            b(CancellableContinuation cancellableContinuation) {
+                this.f49211a = cancellableContinuation;
+            }
+
+            @Override // wg.f
+            public final void onFailure(Exception it) {
+                Intrinsics.checkNotNullParameter(it, "it");
+                CancellableContinuation cancellableContinuation = this.f49211a;
+                Result.a aVar = Result.f33071e;
+                cancellableContinuation.resumeWith(Result.b(Result.a(Result.b(kotlin.c.a(it)))));
+            }
+        }
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        d(String str, Continuation continuation) {
+            super(2, continuation);
+            this.f49209s = str;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            return new d(this.f49209s, continuation);
+        }
+
+        /* JADX WARN: Can't wrap try/catch for region: R(5:1|(1:(3:(1:(1:(6:11|12|13|14|15|16)(2:8|9))(8:21|22|23|24|(3:26|(2:28|29)|30)(1:31)|14|15|16))(8:35|36|37|38|39|(1:41)|(6:43|24|(0)(0)|14|15|16)|29)|19|20)(1:47))(1:60)|48|49|(3:51|52|53)(2:54|(2:56|29)(5:57|39|(0)|(0)|29))) */
+        /* JADX WARN: Code restructure failed: missing block: B:28:0x008c, code lost:
+            if (r14.b(null, r13) == r0) goto L29;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:35:0x00a6, code lost:
+            r0 = move-exception;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:36:0x00a7, code lost:
+            r0 = r14;
+            r14 = r0;
+         */
+        /* JADX WARN: Code restructure failed: missing block: B:54:0x0183, code lost:
+            if (r14.emit(r1, r13) == r0) goto L29;
+         */
+        /* JADX WARN: Removed duplicated region for block: B:43:0x011c A[Catch: all -> 0x00a6, TRY_LEAVE, TryCatch #2 {all -> 0x00a6, blocks: (B:41:0x00c4, B:43:0x011c, B:30:0x0090, B:32:0x00a0, B:37:0x00ac), top: B:64:0x0090 }] */
+        /* JADX WARN: Removed duplicated region for block: B:46:0x0122  */
+        /* JADX WARN: Removed duplicated region for block: B:49:0x0131 A[Catch: all -> 0x0045, TryCatch #1 {all -> 0x0045, blocks: (B:17:0x0040, B:47:0x0125, B:49:0x0131, B:53:0x0151), top: B:63:0x0040 }] */
+        /* JADX WARN: Removed duplicated region for block: B:53:0x0151 A[Catch: all -> 0x0045, TRY_LEAVE, TryCatch #1 {all -> 0x0045, blocks: (B:17:0x0040, B:47:0x0125, B:49:0x0131, B:53:0x0151), top: B:63:0x0040 }] */
+        @Override // kotlin.coroutines.jvm.internal.a
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public final java.lang.Object invokeSuspend(java.lang.Object r14) {
+            /*
+                Method dump skipped, instructions count: 402
+                To view this dump add '--comments-level debug' option
+            */
+            throw new UnsupportedOperationException("Method not decompiled: so.a.d.invokeSuspend(java.lang.Object):java.lang.Object");
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class e extends k implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        Object f49212d;
+
+        /* renamed from: e  reason: collision with root package name */
+        Object f49213e;
+
+        /* renamed from: i  reason: collision with root package name */
+        int f49214i;
+
+        e(Continuation continuation) {
+            super(2, continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            return new e(continuation);
+        }
+
+        /* JADX WARN: Code restructure failed: missing block: B:15:0x0043, code lost:
+            if (r7.b(null, r6) == r0) goto L22;
+         */
+        @Override // kotlin.coroutines.jvm.internal.a
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct add '--show-bad-code' argument
+        */
+        public final java.lang.Object invokeSuspend(java.lang.Object r7) {
+            /*
+                r6 = this;
+                java.lang.Object r0 = pr.b.f()
+                int r1 = r6.f49214i
+                r2 = 2
+                r3 = 1
+                r4 = 0
+                if (r1 == 0) goto L2e
+                if (r1 == r3) goto L21
+                if (r1 != r2) goto L19
+                java.lang.Object r0 = r6.f49212d
+                kotlinx.coroutines.sync.Mutex r0 = (kotlinx.coroutines.sync.Mutex) r0
+                kotlin.c.b(r7)     // Catch: java.lang.Throwable -> L17
+                goto L5a
+            L17:
+                r7 = move-exception
+                goto L66
+            L19:
+                java.lang.IllegalStateException r7 = new java.lang.IllegalStateException
+                java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
+                r7.<init>(r0)
+                throw r7
+            L21:
+                java.lang.Object r1 = r6.f49213e
+                so.a r1 = (so.a) r1
+                java.lang.Object r3 = r6.f49212d
+                kotlinx.coroutines.sync.Mutex r3 = (kotlinx.coroutines.sync.Mutex) r3
+                kotlin.c.b(r7)
+                r7 = r3
+                goto L46
+            L2e:
+                kotlin.c.b(r7)
+                so.a r7 = so.a.this
+                kotlinx.coroutines.sync.Mutex r7 = so.a.d(r7)
+                so.a r1 = so.a.this
+                r6.f49212d = r7
+                r6.f49213e = r1
+                r6.f49214i = r3
+                java.lang.Object r3 = r7.b(r4, r6)
+                if (r3 != r0) goto L46
+                goto L58
+            L46:
+                kotlinx.coroutines.flow.MutableStateFlow r1 = so.a.e(r1)     // Catch: java.lang.Throwable -> L62
+                so.a$b$b r3 = so.a.b.C0613b.f49181a     // Catch: java.lang.Throwable -> L62
+                r6.f49212d = r7     // Catch: java.lang.Throwable -> L62
+                r6.f49213e = r4     // Catch: java.lang.Throwable -> L62
+                r6.f49214i = r2     // Catch: java.lang.Throwable -> L62
+                java.lang.Object r1 = r1.emit(r3, r6)     // Catch: java.lang.Throwable -> L62
+                if (r1 != r0) goto L59
+            L58:
+                return r0
+            L59:
+                r0 = r7
+            L5a:
+                kotlin.Unit r7 = kotlin.Unit.f33074a     // Catch: java.lang.Throwable -> L17
+                r0.c(r4)
+                kotlin.Unit r7 = kotlin.Unit.f33074a
+                return r7
+            L62:
+                r0 = move-exception
+                r5 = r0
+                r0 = r7
+                r7 = r5
+            L66:
+                r0.c(r4)
+                throw r7
+            */
+            throw new UnsupportedOperationException("Method not decompiled: so.a.e.invokeSuspend(java.lang.Object):java.lang.Object");
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        }
+    }
+
+    static {
+        Duration.a aVar = Duration.f36073e;
+        f49171j = kotlin.time.b.s(10, fs.b.f25570p);
+    }
+
+    public a(Context applicationContext, e.a loggerFactory, f standardIntegrityManagerFactory, CoroutineDispatcher dispatcher) {
+        Intrinsics.checkNotNullParameter(applicationContext, "applicationContext");
+        Intrinsics.checkNotNullParameter(loggerFactory, "loggerFactory");
+        Intrinsics.checkNotNullParameter(standardIntegrityManagerFactory, "standardIntegrityManagerFactory");
+        Intrinsics.checkNotNullParameter(dispatcher, "dispatcher");
+        this.f49172a = applicationContext;
+        this.f49173b = loggerFactory;
+        this.f49174c = standardIntegrityManagerFactory;
+        this.f49175d = dispatcher;
+        this.f49176e = loggerFactory.a("com.withpersona.sdk2.inquiry.integrity");
+        this.f49177f = qs.f.b(false, 1, null);
+        this.f49178g = i.a(dispatcher.Z0(j1.b(null, 1, null)));
+        this.f49179h = l0.a(b.C0613b.f49181a);
+    }
+
+    public final Object g(Continuation continuation) {
+        return g.g(this.f49175d, new c(null), continuation);
+    }
+
+    public final void h(String cloudProjectNumber) {
+        Intrinsics.checkNotNullParameter(cloudProjectNumber, "cloudProjectNumber");
+        hs.i.d(this.f49178g, null, null, new d(cloudProjectNumber, null), 3, null);
+    }
+
+    public final Object i(Continuation continuation) {
+        Object g10 = g.g(this.f49175d, new e(null), continuation);
+        if (g10 == pr.b.f()) {
+            return g10;
+        }
+        return Unit.f33074a;
     }
 }

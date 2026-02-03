@@ -19,7 +19,7 @@ public final class RLottieUtils {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit init$lambda$0() {
         INSTANCE.initAsync();
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void initAsync() {
@@ -40,7 +40,7 @@ public final class RLottieUtils {
     }
 
     public final void init() {
-        mr.a.b(false, false, null, "RLottieLoader", 0, new Function0() { // from class: com.discord.sticker.sticker_types.f
+        nr.a.b(false, false, null, "RLottieLoader", 0, new Function0() { // from class: com.discord.sticker.sticker_types.f
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit init$lambda$0;

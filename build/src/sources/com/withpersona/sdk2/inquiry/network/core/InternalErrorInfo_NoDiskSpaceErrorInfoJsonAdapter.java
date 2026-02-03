@@ -36,14 +36,14 @@ public final class InternalErrorInfo_NoDiskSpaceErrorInfoJsonAdapter extends h {
         String str = null;
         int i10 = -1;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
-                mVar.E0();
+            int t02 = mVar.t0(this.options);
+            if (t02 == -1) {
+                mVar.F0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 str = (String) this.stringAdapter.fromJson(mVar);
                 if (str == null) {
-                    throw sm.c.x("message", "message", mVar);
+                    throw tm.c.x("message", "message", mVar);
                 }
                 i10 = -2;
             } else {
@@ -56,7 +56,7 @@ public final class InternalErrorInfo_NoDiskSpaceErrorInfoJsonAdapter extends h {
         }
         Constructor<InternalErrorInfo.NoDiskSpaceErrorInfo> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InternalErrorInfo.NoDiskSpaceErrorInfo.class.getDeclaredConstructor(String.class, Integer.TYPE, sm.c.f49097c);
+            constructor = InternalErrorInfo.NoDiskSpaceErrorInfo.class.getDeclaredConstructor(String.class, Integer.TYPE, tm.c.f49935c);
             this.constructorRef = constructor;
         }
         return constructor.newInstance(str, Integer.valueOf(i10), null);
@@ -66,7 +66,7 @@ public final class InternalErrorInfo_NoDiskSpaceErrorInfoJsonAdapter extends h {
     public void toJson(@NotNull t tVar, InternalErrorInfo.NoDiskSpaceErrorInfo noDiskSpaceErrorInfo) {
         if (noDiskSpaceErrorInfo != null) {
             tVar.l();
-            tVar.A0("message");
+            tVar.t0("message");
             this.stringAdapter.toJson(tVar, noDiskSpaceErrorInfo.getMessage());
             tVar.E();
             return;

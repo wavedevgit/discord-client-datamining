@@ -27,7 +27,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAttachmentAcce
     }
 
     /* renamed from: copy-NsYpSCE$default  reason: not valid java name */
-    public static /* synthetic */ ImageAttachmentMessageAccessory m604copyNsYpSCE$default(ImageAttachmentMessageAccessory imageAttachmentMessageAccessory, String str, Attachment attachment, int i10, Float f10, int i11, int i12, SpoilerAttributes spoilerAttributes, boolean z10, int i13, Object obj) {
+    public static /* synthetic */ ImageAttachmentMessageAccessory m606copyNsYpSCE$default(ImageAttachmentMessageAccessory imageAttachmentMessageAccessory, String str, Attachment attachment, int i10, Float f10, int i11, int i12, SpoilerAttributes spoilerAttributes, boolean z10, int i13, Object obj) {
         if ((i13 & 1) != 0) {
             str = imageAttachmentMessageAccessory.messageId;
         }
@@ -56,12 +56,12 @@ public final class ImageAttachmentMessageAccessory extends MessageAttachmentAcce
         boolean z11 = z10;
         int i14 = i11;
         int i15 = i12;
-        return imageAttachmentMessageAccessory.m606copyNsYpSCE(str, attachment, i10, f10, i14, i15, spoilerAttributes2, z11);
+        return imageAttachmentMessageAccessory.m608copyNsYpSCE(str, attachment, i10, f10, i14, i15, spoilerAttributes2, z11);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m605component13Eiw7ao() {
+    public final String m607component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -96,7 +96,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAttachmentAcce
 
     @NotNull
     /* renamed from: copy-NsYpSCE  reason: not valid java name */
-    public final ImageAttachmentMessageAccessory m606copyNsYpSCE(@NotNull String messageId, @NotNull Attachment attachment, int i10, Float f10, int i11, int i12, SpoilerAttributes spoilerAttributes, boolean z10) {
+    public final ImageAttachmentMessageAccessory m608copyNsYpSCE(@NotNull String messageId, @NotNull Attachment attachment, int i10, Float f10, int i11, int i12, SpoilerAttributes spoilerAttributes, boolean z10) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(attachment, "attachment");
         return new ImageAttachmentMessageAccessory(messageId, attachment, i10, f10, i11, i12, spoilerAttributes, z10, null);
@@ -108,7 +108,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAttachmentAcce
         }
         if (obj instanceof ImageAttachmentMessageAccessory) {
             ImageAttachmentMessageAccessory imageAttachmentMessageAccessory = (ImageAttachmentMessageAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, imageAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.attachment, imageAttachmentMessageAccessory.attachment) && this.attachmentIndex == imageAttachmentMessageAccessory.attachmentIndex && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) imageAttachmentMessageAccessory.attachmentsOpacity) && this.constrainedWidth == imageAttachmentMessageAccessory.constrainedWidth && this.radiusPx == imageAttachmentMessageAccessory.radiusPx && Intrinsics.areEqual(this.spoilerAttributes, imageAttachmentMessageAccessory.spoilerAttributes) && this.useNewAltTextButton == imageAttachmentMessageAccessory.useNewAltTextButton;
+            return MessageId.m1090equalsimpl0(this.messageId, imageAttachmentMessageAccessory.messageId) && Intrinsics.areEqual(this.attachment, imageAttachmentMessageAccessory.attachment) && this.attachmentIndex == imageAttachmentMessageAccessory.attachmentIndex && Intrinsics.areEqual((Object) this.attachmentsOpacity, (Object) imageAttachmentMessageAccessory.attachmentsOpacity) && this.constrainedWidth == imageAttachmentMessageAccessory.constrainedWidth && this.radiusPx == imageAttachmentMessageAccessory.radiusPx && Intrinsics.areEqual(this.spoilerAttributes, imageAttachmentMessageAccessory.spoilerAttributes) && this.useNewAltTextButton == imageAttachmentMessageAccessory.useNewAltTextButton;
         }
         return false;
     }
@@ -136,7 +136,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAttachmentAcce
     @Override // com.discord.chat.presentation.message.messagepart.MessageAttachmentAccessory, com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -153,16 +153,16 @@ public final class ImageAttachmentMessageAccessory extends MessageAttachmentAcce
     }
 
     public int hashCode() {
-        int m1089hashCodeimpl = ((((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.attachment.hashCode()) * 31) + Integer.hashCode(this.attachmentIndex)) * 31;
+        int m1091hashCodeimpl = ((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.attachment.hashCode()) * 31) + Integer.hashCode(this.attachmentIndex)) * 31;
         Float f10 = this.attachmentsOpacity;
-        int hashCode = (((((m1089hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Integer.hashCode(this.radiusPx)) * 31;
+        int hashCode = (((((m1091hashCodeimpl + (f10 == null ? 0 : f10.hashCode())) * 31) + Integer.hashCode(this.constrainedWidth)) * 31) + Integer.hashCode(this.radiusPx)) * 31;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         return ((hashCode + (spoilerAttributes != null ? spoilerAttributes.hashCode() : 0)) * 31) + Boolean.hashCode(this.useNewAltTextButton);
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         Attachment attachment = this.attachment;
         int i10 = this.attachmentIndex;
         Float f10 = this.attachmentsOpacity;
@@ -170,7 +170,7 @@ public final class ImageAttachmentMessageAccessory extends MessageAttachmentAcce
         int i12 = this.radiusPx;
         SpoilerAttributes spoilerAttributes = this.spoilerAttributes;
         boolean z10 = this.useNewAltTextButton;
-        return "ImageAttachmentMessageAccessory(messageId=" + m1091toStringimpl + ", attachment=" + attachment + ", attachmentIndex=" + i10 + ", attachmentsOpacity=" + f10 + ", constrainedWidth=" + i11 + ", radiusPx=" + i12 + ", spoilerAttributes=" + spoilerAttributes + ", useNewAltTextButton=" + z10 + ")";
+        return "ImageAttachmentMessageAccessory(messageId=" + m1093toStringimpl + ", attachment=" + attachment + ", attachmentIndex=" + i10 + ", attachmentsOpacity=" + f10 + ", constrainedWidth=" + i11 + ", radiusPx=" + i12 + ", spoilerAttributes=" + spoilerAttributes + ", useNewAltTextButton=" + z10 + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

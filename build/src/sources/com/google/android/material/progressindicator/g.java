@@ -18,49 +18,49 @@ import java.util.List;
 public abstract class g extends Drawable implements Animatable {
 
     /* renamed from: z  reason: collision with root package name */
-    private static final Property f16281z = new c(Float.class, "growFraction");
+    private static final Property f15910z = new c(Float.class, "growFraction");
 
     /* renamed from: d  reason: collision with root package name */
-    final Context f16282d;
+    final Context f15911d;
 
     /* renamed from: e  reason: collision with root package name */
-    final com.google.android.material.progressindicator.b f16283e;
+    final com.google.android.material.progressindicator.b f15912e;
 
     /* renamed from: o  reason: collision with root package name */
-    private ValueAnimator f16285o;
+    private ValueAnimator f15914o;
 
     /* renamed from: p  reason: collision with root package name */
-    private ValueAnimator f16286p;
+    private ValueAnimator f15915p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f16287q;
+    private boolean f15916q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f16288r;
+    private boolean f15917r;
 
     /* renamed from: s  reason: collision with root package name */
-    private float f16289s;
+    private float f15918s;
 
     /* renamed from: t  reason: collision with root package name */
-    private List f16290t;
+    private List f15919t;
 
     /* renamed from: u  reason: collision with root package name */
-    private androidx.vectordrawable.graphics.drawable.b f16291u;
+    private androidx.vectordrawable.graphics.drawable.b f15920u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f16292v;
+    private boolean f15921v;
 
     /* renamed from: w  reason: collision with root package name */
-    private float f16293w;
+    private float f15922w;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f16295y;
+    private int f15924y;
 
     /* renamed from: x  reason: collision with root package name */
-    final Paint f16294x = new Paint();
+    final Paint f15923x = new Paint();
 
     /* renamed from: i  reason: collision with root package name */
-    kh.a f16284i = new kh.a();
+    kh.a f15913i = new kh.a();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -110,28 +110,28 @@ public abstract class g extends Drawable implements Animatable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(Context context, com.google.android.material.progressindicator.b bVar) {
-        this.f16282d = context;
-        this.f16283e = bVar;
+        this.f15911d = context;
+        this.f15912e = bVar;
         setAlpha(SetSpanOperation.SPAN_MAX_PRIORITY);
     }
 
     private void d(ValueAnimator... valueAnimatorArr) {
-        boolean z10 = this.f16292v;
-        this.f16292v = true;
+        boolean z10 = this.f15921v;
+        this.f15921v = true;
         for (ValueAnimator valueAnimator : valueAnimatorArr) {
             valueAnimator.cancel();
         }
-        this.f16292v = z10;
+        this.f15921v = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e() {
-        androidx.vectordrawable.graphics.drawable.b bVar = this.f16291u;
+        androidx.vectordrawable.graphics.drawable.b bVar = this.f15920u;
         if (bVar != null) {
             bVar.b(this);
         }
-        List<androidx.vectordrawable.graphics.drawable.b> list = this.f16290t;
-        if (list != null && !this.f16292v) {
+        List<androidx.vectordrawable.graphics.drawable.b> list = this.f15919t;
+        if (list != null && !this.f15921v) {
             for (androidx.vectordrawable.graphics.drawable.b bVar2 : list) {
                 bVar2.b(this);
             }
@@ -140,12 +140,12 @@ public abstract class g extends Drawable implements Animatable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void f() {
-        androidx.vectordrawable.graphics.drawable.b bVar = this.f16291u;
+        androidx.vectordrawable.graphics.drawable.b bVar = this.f15920u;
         if (bVar != null) {
             bVar.c(this);
         }
-        List<androidx.vectordrawable.graphics.drawable.b> list = this.f16290t;
-        if (list != null && !this.f16292v) {
+        List<androidx.vectordrawable.graphics.drawable.b> list = this.f15919t;
+        if (list != null && !this.f15921v) {
             for (androidx.vectordrawable.graphics.drawable.b bVar2 : list) {
                 bVar2.c(this);
             }
@@ -153,52 +153,52 @@ public abstract class g extends Drawable implements Animatable {
     }
 
     private void g(ValueAnimator... valueAnimatorArr) {
-        boolean z10 = this.f16292v;
-        this.f16292v = true;
+        boolean z10 = this.f15921v;
+        this.f15921v = true;
         for (ValueAnimator valueAnimator : valueAnimatorArr) {
             valueAnimator.end();
         }
-        this.f16292v = z10;
+        this.f15921v = z10;
     }
 
     private void l() {
-        if (this.f16285o == null) {
-            ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this, f16281z, 0.0f, 1.0f);
-            this.f16285o = ofFloat;
+        if (this.f15914o == null) {
+            ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this, f15910z, 0.0f, 1.0f);
+            this.f15914o = ofFloat;
             ofFloat.setDuration(500L);
-            this.f16285o.setInterpolator(zg.a.f55675b);
-            p(this.f16285o);
+            this.f15914o.setInterpolator(zg.a.f55807b);
+            p(this.f15914o);
         }
-        if (this.f16286p == null) {
-            ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat(this, f16281z, 1.0f, 0.0f);
-            this.f16286p = ofFloat2;
+        if (this.f15915p == null) {
+            ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat(this, f15910z, 1.0f, 0.0f);
+            this.f15915p = ofFloat2;
             ofFloat2.setDuration(500L);
-            this.f16286p.setInterpolator(zg.a.f55675b);
-            o(this.f16286p);
+            this.f15915p.setInterpolator(zg.a.f55807b);
+            o(this.f15915p);
         }
     }
 
     private void o(ValueAnimator valueAnimator) {
-        ValueAnimator valueAnimator2 = this.f16286p;
+        ValueAnimator valueAnimator2 = this.f15915p;
         if (valueAnimator2 != null && valueAnimator2.isRunning()) {
             throw new IllegalArgumentException("Cannot set hideAnimator while the current hideAnimator is running.");
         }
-        this.f16286p = valueAnimator;
+        this.f15915p = valueAnimator;
         valueAnimator.addListener(new b());
     }
 
     private void p(ValueAnimator valueAnimator) {
-        ValueAnimator valueAnimator2 = this.f16285o;
+        ValueAnimator valueAnimator2 = this.f15914o;
         if (valueAnimator2 != null && valueAnimator2.isRunning()) {
             throw new IllegalArgumentException("Cannot set showAnimator while the current showAnimator is running.");
         }
-        this.f16285o = valueAnimator;
+        this.f15914o = valueAnimator;
         valueAnimator.addListener(new a());
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getAlpha() {
-        return this.f16295y;
+        return this.f15924y;
     }
 
     @Override // android.graphics.drawable.Drawable
@@ -208,13 +208,13 @@ public abstract class g extends Drawable implements Animatable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float h() {
-        if (!this.f16283e.b() && !this.f16283e.a()) {
+        if (!this.f15912e.b() && !this.f15912e.a()) {
             return 1.0f;
         }
-        if (!this.f16288r && !this.f16287q) {
-            return this.f16293w;
+        if (!this.f15917r && !this.f15916q) {
+            return this.f15922w;
         }
-        return this.f16289s;
+        return this.f15918s;
     }
 
     public boolean i() {
@@ -229,41 +229,41 @@ public abstract class g extends Drawable implements Animatable {
     }
 
     public boolean j() {
-        ValueAnimator valueAnimator = this.f16286p;
-        if ((valueAnimator != null && valueAnimator.isRunning()) || this.f16288r) {
+        ValueAnimator valueAnimator = this.f15915p;
+        if ((valueAnimator != null && valueAnimator.isRunning()) || this.f15917r) {
             return true;
         }
         return false;
     }
 
     public boolean k() {
-        ValueAnimator valueAnimator = this.f16285o;
-        if ((valueAnimator != null && valueAnimator.isRunning()) || this.f16287q) {
+        ValueAnimator valueAnimator = this.f15914o;
+        if ((valueAnimator != null && valueAnimator.isRunning()) || this.f15916q) {
             return true;
         }
         return false;
     }
 
     public void m(androidx.vectordrawable.graphics.drawable.b bVar) {
-        if (this.f16290t == null) {
-            this.f16290t = new ArrayList();
+        if (this.f15919t == null) {
+            this.f15919t = new ArrayList();
         }
-        if (!this.f16290t.contains(bVar)) {
-            this.f16290t.add(bVar);
+        if (!this.f15919t.contains(bVar)) {
+            this.f15919t.add(bVar);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void n(float f10) {
-        if (this.f16293w != f10) {
-            this.f16293w = f10;
+        if (this.f15922w != f10) {
+            this.f15922w = f10;
             invalidateSelf();
         }
     }
 
     public boolean q(boolean z10, boolean z11, boolean z12) {
         boolean z13;
-        float a10 = this.f16284i.a(this.f16282d.getContentResolver());
+        float a10 = this.f15913i.a(this.f15911d.getContentResolver());
         if (z12 && a10 > 0.0f) {
             z13 = true;
         } else {
@@ -283,14 +283,14 @@ public abstract class g extends Drawable implements Animatable {
             return false;
         }
         if (z10) {
-            valueAnimator = this.f16285o;
+            valueAnimator = this.f15914o;
         } else {
-            valueAnimator = this.f16286p;
+            valueAnimator = this.f15915p;
         }
         if (z10) {
-            valueAnimator2 = this.f16286p;
+            valueAnimator2 = this.f15915p;
         } else {
-            valueAnimator2 = this.f16285o;
+            valueAnimator2 = this.f15914o;
         }
         if (!z12) {
             if (valueAnimator2.isRunning()) {
@@ -307,9 +307,9 @@ public abstract class g extends Drawable implements Animatable {
         } else {
             z13 = (!z10 || super.setVisible(z10, false)) ? true : true;
             if (z10) {
-                a10 = this.f16283e.b();
+                a10 = this.f15912e.b();
             } else {
-                a10 = this.f16283e.a();
+                a10 = this.f15912e.a();
             }
             if (!a10) {
                 g(valueAnimator);
@@ -325,11 +325,11 @@ public abstract class g extends Drawable implements Animatable {
     }
 
     public boolean s(androidx.vectordrawable.graphics.drawable.b bVar) {
-        List list = this.f16290t;
+        List list = this.f15919t;
         if (list != null && list.contains(bVar)) {
-            this.f16290t.remove(bVar);
-            if (this.f16290t.isEmpty()) {
-                this.f16290t = null;
+            this.f15919t.remove(bVar);
+            if (this.f15919t.isEmpty()) {
+                this.f15919t = null;
                 return true;
             }
             return true;
@@ -339,13 +339,13 @@ public abstract class g extends Drawable implements Animatable {
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        this.f16295y = i10;
+        this.f15924y = i10;
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f16294x.setColorFilter(colorFilter);
+        this.f15923x.setColorFilter(colorFilter);
         invalidateSelf();
     }
 

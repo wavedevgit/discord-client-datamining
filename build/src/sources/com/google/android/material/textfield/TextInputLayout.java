@@ -45,7 +45,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class TextInputLayout extends LinearLayout implements ViewTreeObserver.OnGlobalLayoutListener {
-    private static final int N0 = yg.j.f54523j;
+    private static final int N0 = yg.j.f54498j;
     private static final int[][] O0 = {new int[]{16842919}, new int[0]};
     private int A;
     private int A0;
@@ -85,141 +85,141 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     private oh.k W;
 
     /* renamed from: a0  reason: collision with root package name */
-    private boolean f16424a0;
+    private boolean f16053a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    private final int f16425b0;
+    private final int f16054b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    private int f16426c0;
+    private int f16055c0;
 
     /* renamed from: d  reason: collision with root package name */
-    private final FrameLayout f16427d;
+    private final FrameLayout f16056d;
 
     /* renamed from: d0  reason: collision with root package name */
-    private int f16428d0;
+    private int f16057d0;
 
     /* renamed from: e  reason: collision with root package name */
-    private final y f16429e;
+    private final y f16058e;
 
     /* renamed from: e0  reason: collision with root package name */
-    private int f16430e0;
+    private int f16059e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    private int f16431f0;
+    private int f16060f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private int f16432g0;
+    private int f16061g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    private int f16433h0;
+    private int f16062h0;
 
     /* renamed from: i  reason: collision with root package name */
-    private final r f16434i;
+    private final r f16063i;
 
     /* renamed from: i0  reason: collision with root package name */
-    private int f16435i0;
+    private int f16064i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private final Rect f16436j0;
+    private final Rect f16065j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private final Rect f16437k0;
+    private final Rect f16066k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private final RectF f16438l0;
+    private final RectF f16067l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private Typeface f16439m0;
+    private Typeface f16068m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private Drawable f16440n0;
+    private Drawable f16069n0;
 
     /* renamed from: o  reason: collision with root package name */
-    EditText f16441o;
+    EditText f16070o;
 
     /* renamed from: o0  reason: collision with root package name */
-    private int f16442o0;
+    private int f16071o0;
 
     /* renamed from: p  reason: collision with root package name */
-    private CharSequence f16443p;
+    private CharSequence f16072p;
 
     /* renamed from: p0  reason: collision with root package name */
-    private final LinkedHashSet f16444p0;
+    private final LinkedHashSet f16073p0;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f16445q;
+    private int f16074q;
 
     /* renamed from: q0  reason: collision with root package name */
-    private Drawable f16446q0;
+    private Drawable f16075q0;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f16447r;
+    private int f16076r;
 
     /* renamed from: r0  reason: collision with root package name */
-    private int f16448r0;
+    private int f16077r0;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f16449s;
+    private int f16078s;
 
     /* renamed from: s0  reason: collision with root package name */
-    private Drawable f16450s0;
+    private Drawable f16079s0;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f16451t;
+    private int f16080t;
 
     /* renamed from: t0  reason: collision with root package name */
-    private ColorStateList f16452t0;
+    private ColorStateList f16081t0;
 
     /* renamed from: u  reason: collision with root package name */
-    private final u f16453u;
+    private final u f16082u;
 
     /* renamed from: u0  reason: collision with root package name */
-    private ColorStateList f16454u0;
+    private ColorStateList f16083u0;
 
     /* renamed from: v  reason: collision with root package name */
-    boolean f16455v;
+    boolean f16084v;
 
     /* renamed from: v0  reason: collision with root package name */
-    private int f16456v0;
+    private int f16085v0;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f16457w;
+    private int f16086w;
 
     /* renamed from: w0  reason: collision with root package name */
-    private int f16458w0;
+    private int f16087w0;
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f16459x;
+    private boolean f16088x;
 
     /* renamed from: x0  reason: collision with root package name */
-    private int f16460x0;
+    private int f16089x0;
 
     /* renamed from: y  reason: collision with root package name */
-    private e f16461y;
+    private e f16090y;
 
     /* renamed from: y0  reason: collision with root package name */
-    private ColorStateList f16462y0;
+    private ColorStateList f16091y0;
 
     /* renamed from: z  reason: collision with root package name */
-    private TextView f16463z;
+    private TextView f16092z;
 
     /* renamed from: z0  reason: collision with root package name */
-    private int f16464z0;
+    private int f16093z0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a implements TextWatcher {
 
         /* renamed from: d  reason: collision with root package name */
-        int f16465d;
+        int f16094d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ EditText f16466e;
+        final /* synthetic */ EditText f16095e;
 
         a(EditText editText) {
-            this.f16466e = editText;
-            this.f16465d = editText.getLineCount();
+            this.f16095e = editText;
+            this.f16094d = editText.getLineCount();
         }
 
         @Override // android.text.TextWatcher
@@ -227,23 +227,23 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             TextInputLayout textInputLayout = TextInputLayout.this;
             textInputLayout.t0(!textInputLayout.L0);
             TextInputLayout textInputLayout2 = TextInputLayout.this;
-            if (textInputLayout2.f16455v) {
+            if (textInputLayout2.f16084v) {
                 textInputLayout2.j0(editable);
             }
             if (TextInputLayout.this.D) {
                 TextInputLayout.this.x0(editable);
             }
-            int lineCount = this.f16466e.getLineCount();
-            int i10 = this.f16465d;
+            int lineCount = this.f16095e.getLineCount();
+            int i10 = this.f16094d;
             if (lineCount != i10) {
                 if (lineCount < i10) {
-                    int A = h0.A(this.f16466e);
+                    int A = h0.A(this.f16095e);
                     int i11 = TextInputLayout.this.E0;
                     if (A != i11) {
-                        this.f16466e.setMinimumHeight(i11);
+                        this.f16095e.setMinimumHeight(i11);
                     }
                 }
-                this.f16465d = lineCount;
+                this.f16094d = lineCount;
             }
         }
 
@@ -263,7 +263,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
         @Override // java.lang.Runnable
         public void run() {
-            TextInputLayout.this.f16434i.h();
+            TextInputLayout.this.f16063i.h();
         }
     }
 
@@ -283,10 +283,10 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     public static class d extends androidx.core.view.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final TextInputLayout f16470a;
+        private final TextInputLayout f16099a;
 
         public d(TextInputLayout textInputLayout) {
-            this.f16470a = textInputLayout;
+            this.f16099a = textInputLayout;
         }
 
         @Override // androidx.core.view.a
@@ -295,20 +295,20 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             boolean z10;
             String str;
             super.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfoCompat);
-            EditText editText = this.f16470a.getEditText();
+            EditText editText = this.f16099a.getEditText();
             if (editText != null) {
                 charSequence = editText.getText();
             } else {
                 charSequence = null;
             }
-            CharSequence hint = this.f16470a.getHint();
-            CharSequence error = this.f16470a.getError();
-            CharSequence placeholderText = this.f16470a.getPlaceholderText();
-            int counterMaxLength = this.f16470a.getCounterMaxLength();
-            CharSequence counterOverflowDescription = this.f16470a.getCounterOverflowDescription();
+            CharSequence hint = this.f16099a.getHint();
+            CharSequence error = this.f16099a.getError();
+            CharSequence placeholderText = this.f16099a.getPlaceholderText();
+            int counterMaxLength = this.f16099a.getCounterMaxLength();
+            CharSequence counterOverflowDescription = this.f16099a.getCounterOverflowDescription();
             boolean isEmpty = TextUtils.isEmpty(charSequence);
             boolean isEmpty2 = TextUtils.isEmpty(hint);
-            boolean P = this.f16470a.P();
+            boolean P = this.f16099a.P();
             boolean isEmpty3 = TextUtils.isEmpty(error);
             if (isEmpty3 && TextUtils.isEmpty(counterOverflowDescription)) {
                 z10 = false;
@@ -320,7 +320,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             } else {
                 str = "";
             }
-            this.f16470a.f16429e.A(accessibilityNodeInfoCompat);
+            this.f16099a.f16058e.A(accessibilityNodeInfoCompat);
             if (!isEmpty) {
                 accessibilityNodeInfoCompat.b1(charSequence);
             } else if (!TextUtils.isEmpty(str)) {
@@ -349,17 +349,17 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
                 }
                 accessibilityNodeInfoCompat.D0(error);
             }
-            View t10 = this.f16470a.f16453u.t();
+            View t10 = this.f16099a.f16082u.t();
             if (t10 != null) {
                 accessibilityNodeInfoCompat.K0(t10);
             }
-            this.f16470a.f16434i.m().o(view, accessibilityNodeInfoCompat);
+            this.f16099a.f16063i.m().o(view, accessibilityNodeInfoCompat);
         }
 
         @Override // androidx.core.view.a
         public void onPopulateAccessibilityEvent(View view, AccessibilityEvent accessibilityEvent) {
             super.onPopulateAccessibilityEvent(view, accessibilityEvent);
-            this.f16470a.f16434i.m().p(view, accessibilityEvent);
+            this.f16099a.f16063i.m().p(view, accessibilityEvent);
         }
     }
 
@@ -379,10 +379,10 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         public static final Parcelable.Creator<g> CREATOR = new a();
 
         /* renamed from: i  reason: collision with root package name */
-        CharSequence f16471i;
+        CharSequence f16100i;
 
         /* renamed from: o  reason: collision with root package name */
-        boolean f16472o;
+        boolean f16101o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         class a implements Parcelable.ClassLoaderCreator {
@@ -413,31 +413,31 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         }
 
         public String toString() {
-            return "TextInputLayout.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " error=" + ((Object) this.f16471i) + "}";
+            return "TextInputLayout.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " error=" + ((Object) this.f16100i) + "}";
         }
 
         @Override // u2.a, android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
             super.writeToParcel(parcel, i10);
-            TextUtils.writeToParcel(this.f16471i, parcel, i10);
-            parcel.writeInt(this.f16472o ? 1 : 0);
+            TextUtils.writeToParcel(this.f16100i, parcel, i10);
+            parcel.writeInt(this.f16101o ? 1 : 0);
         }
 
         g(Parcel parcel, ClassLoader classLoader) {
             super(parcel, classLoader);
-            this.f16471i = (CharSequence) TextUtils.CHAR_SEQUENCE_CREATOR.createFromParcel(parcel);
-            this.f16472o = parcel.readInt() == 1;
+            this.f16100i = (CharSequence) TextUtils.CHAR_SEQUENCE_CREATOR.createFromParcel(parcel);
+            this.f16101o = parcel.readInt() == 1;
         }
     }
 
     public TextInputLayout(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54361h0);
+        this(context, attributeSet, yg.b.f54336h0);
     }
 
     private androidx.transition.e A() {
         androidx.transition.e eVar = new androidx.transition.e();
         eVar.l0(jh.g.f(getContext(), yg.b.K, 87));
-        eVar.n0(jh.g.g(getContext(), yg.b.Q, zg.a.f55674a));
+        eVar.n0(jh.g.g(getContext(), yg.b.Q, zg.a.f55806a));
         return eVar;
     }
 
@@ -449,7 +449,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     private void C() {
-        Iterator it = this.f16444p0.iterator();
+        Iterator it = this.f16073p0.iterator();
         while (it.hasNext()) {
             ((f) it.next()).a(this);
         }
@@ -459,7 +459,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         oh.g gVar;
         if (this.V != null && (gVar = this.U) != null) {
             gVar.draw(canvas);
-            if (this.f16441o.isFocused()) {
+            if (this.f16070o.isFocused()) {
                 Rect bounds = this.V.getBounds();
                 Rect bounds2 = this.U.getBounds();
                 float x10 = this.G0.x();
@@ -492,29 +492,29 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         }
         this.F0 = true;
         L();
-        this.f16429e.l(true);
-        this.f16434i.H(true);
+        this.f16058e.l(true);
+        this.f16063i.H(true);
     }
 
     private oh.g G(boolean z10) {
         float f10;
         float dimensionPixelOffset;
         ColorStateList colorStateList;
-        float dimensionPixelOffset2 = getResources().getDimensionPixelOffset(yg.d.f54397c0);
+        float dimensionPixelOffset2 = getResources().getDimensionPixelOffset(yg.d.f54372c0);
         if (z10) {
             f10 = dimensionPixelOffset2;
         } else {
             f10 = 0.0f;
         }
-        EditText editText = this.f16441o;
+        EditText editText = this.f16070o;
         if (editText instanceof MaterialAutoCompleteTextView) {
             dimensionPixelOffset = ((MaterialAutoCompleteTextView) editText).getPopupElevation();
         } else {
-            dimensionPixelOffset = getResources().getDimensionPixelOffset(yg.d.f54417r);
+            dimensionPixelOffset = getResources().getDimensionPixelOffset(yg.d.f54392r);
         }
         int dimensionPixelOffset3 = getResources().getDimensionPixelOffset(yg.d.W);
         oh.k m10 = oh.k.a().B(f10).G(f10).s(dimensionPixelOffset2).w(dimensionPixelOffset2).m();
-        EditText editText2 = this.f16441o;
+        EditText editText2 = this.f16070o;
         if (editText2 instanceof MaterialAutoCompleteTextView) {
             colorStateList = ((MaterialAutoCompleteTextView) editText2).getDropDownBackgroundTintList();
         } else {
@@ -533,11 +533,11 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     private int I(int i10, boolean z10) {
         int compoundPaddingLeft;
         if (!z10 && getPrefixText() != null) {
-            compoundPaddingLeft = this.f16429e.c();
+            compoundPaddingLeft = this.f16058e.c();
         } else if (z10 && getSuffixText() != null) {
-            compoundPaddingLeft = this.f16434i.y();
+            compoundPaddingLeft = this.f16063i.y();
         } else {
-            compoundPaddingLeft = this.f16441o.getCompoundPaddingLeft();
+            compoundPaddingLeft = this.f16070o.getCompoundPaddingLeft();
         }
         return i10 + compoundPaddingLeft;
     }
@@ -545,17 +545,17 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     private int J(int i10, boolean z10) {
         int compoundPaddingRight;
         if (!z10 && getSuffixText() != null) {
-            compoundPaddingRight = this.f16434i.y();
+            compoundPaddingRight = this.f16063i.y();
         } else if (z10 && getPrefixText() != null) {
-            compoundPaddingRight = this.f16429e.c();
+            compoundPaddingRight = this.f16058e.c();
         } else {
-            compoundPaddingRight = this.f16441o.getCompoundPaddingRight();
+            compoundPaddingRight = this.f16070o.getCompoundPaddingRight();
         }
         return i10 - compoundPaddingRight;
     }
 
     private static Drawable K(Context context, oh.g gVar, int i10, int[][] iArr) {
-        int c10 = eh.a.c(context, yg.b.f54370o, "TextInputLayout");
+        int c10 = eh.a.c(context, yg.b.f54345o, "TextInputLayout");
         oh.g gVar2 = new oh.g(gVar.D());
         int j10 = eh.a.j(i10, c10, 0.1f);
         gVar2.X(new ColorStateList(iArr, new int[]{j10, 0}));
@@ -570,14 +570,14 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         TextView textView = this.E;
         if (textView != null && this.D) {
             textView.setText((CharSequence) null);
-            androidx.transition.x.a(this.f16427d, this.I);
+            androidx.transition.x.a(this.f16056d, this.I);
             this.E.setVisibility(4);
         }
     }
 
     private boolean Q() {
         if (!c0()) {
-            if (this.f16463z == null || !this.f16459x) {
+            if (this.f16092z == null || !this.f16088x) {
                 return false;
             }
             return true;
@@ -586,7 +586,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     private boolean S() {
-        if (this.f16426c0 == 1 && this.f16441o.getMinLines() <= 1) {
+        if (this.f16055c0 == 1 && this.f16070o.getMinLines() <= 1) {
             return true;
         }
         return false;
@@ -598,7 +598,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         z0();
         g0();
         k();
-        if (this.f16426c0 != 0) {
+        if (this.f16055c0 != 0) {
             s0();
         }
         a0();
@@ -606,11 +606,11 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     private void U() {
         if (B()) {
-            RectF rectF = this.f16438l0;
-            this.G0.o(rectF, this.f16441o.getWidth(), this.f16441o.getGravity());
+            RectF rectF = this.f16067l0;
+            this.G0.o(rectF, this.f16070o.getWidth(), this.f16070o.getGravity());
             if (rectF.width() > 0.0f && rectF.height() > 0.0f) {
                 o(rectF);
-                rectF.offset(-getPaddingLeft(), ((-getPaddingTop()) - (rectF.height() / 2.0f)) + this.f16430e0);
+                rectF.offset(-getPaddingLeft(), ((-getPaddingTop()) - (rectF.height() / 2.0f)) + this.f16059e0);
                 ((h) this.Q).q0(rectF);
             }
         }
@@ -642,11 +642,11 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     private void a0() {
-        EditText editText = this.f16441o;
+        EditText editText = this.f16070o;
         if (editText instanceof AutoCompleteTextView) {
             AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) editText;
             if (autoCompleteTextView.getDropDownBackground() == null) {
-                int i10 = this.f16426c0;
+                int i10 = this.f16055c0;
                 if (i10 == 2) {
                     autoCompleteTextView.setDropDownBackgroundDrawable(getOrCreateOutlinedDropDownMenuBackground());
                 } else if (i10 == 1) {
@@ -664,14 +664,14 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     private boolean d0() {
-        if ((this.f16434i.G() || ((this.f16434i.A() && M()) || this.f16434i.w() != null)) && this.f16434i.getMeasuredWidth() > 0) {
+        if ((this.f16063i.G() || ((this.f16063i.A() && M()) || this.f16063i.w() != null)) && this.f16063i.getMeasuredWidth() > 0) {
             return true;
         }
         return false;
     }
 
     private boolean e0() {
-        if ((getStartIconDrawable() != null || (getPrefixText() != null && getPrefixTextView().getVisibility() == 0)) && this.f16429e.getMeasuredWidth() > 0) {
+        if ((getStartIconDrawable() != null || (getPrefixText() != null && getPrefixTextView().getVisibility() == 0)) && this.f16058e.getMeasuredWidth() > 0) {
             return true;
         }
         return false;
@@ -680,7 +680,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     private void f0() {
         if (this.E != null && this.D && !TextUtils.isEmpty(this.C)) {
             this.E.setText(this.C);
-            androidx.transition.x.a(this.f16427d, this.H);
+            androidx.transition.x.a(this.f16056d, this.H);
             this.E.setVisibility(0);
             this.E.bringToFront();
             announceForAccessibility(this.C);
@@ -688,25 +688,25 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     private void g0() {
-        if (this.f16426c0 == 1) {
+        if (this.f16055c0 == 1) {
             if (lh.c.h(getContext())) {
-                this.f16428d0 = getResources().getDimensionPixelSize(yg.d.D);
+                this.f16057d0 = getResources().getDimensionPixelSize(yg.d.D);
             } else if (lh.c.g(getContext())) {
-                this.f16428d0 = getResources().getDimensionPixelSize(yg.d.C);
+                this.f16057d0 = getResources().getDimensionPixelSize(yg.d.C);
             }
         }
     }
 
     private Drawable getEditTextBoxBackground() {
-        EditText editText = this.f16441o;
+        EditText editText = this.f16070o;
         if ((editText instanceof AutoCompleteTextView) && !q.a(editText)) {
-            int d10 = eh.a.d(this.f16441o, yg.b.f54362i);
-            int i10 = this.f16426c0;
+            int d10 = eh.a.d(this.f16070o, yg.b.f54337i);
+            int i10 = this.f16055c0;
             if (i10 == 2) {
                 return K(getContext(), this.Q, d10, O0);
             }
             if (i10 == 1) {
-                return H(this.Q, this.f16435i0, d10, O0);
+                return H(this.Q, this.f16064i0, d10, O0);
             }
             return null;
         }
@@ -734,19 +734,19 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         oh.g gVar = this.U;
         if (gVar != null) {
             int i10 = rect.bottom;
-            gVar.setBounds(rect.left, i10 - this.f16431f0, rect.right, i10);
+            gVar.setBounds(rect.left, i10 - this.f16060f0, rect.right, i10);
         }
         oh.g gVar2 = this.V;
         if (gVar2 != null) {
             int i11 = rect.bottom;
-            gVar2.setBounds(rect.left, i11 - this.f16432g0, rect.right, i11);
+            gVar2.setBounds(rect.left, i11 - this.f16061g0, rect.right, i11);
         }
     }
 
     private void i0() {
         Editable text;
-        if (this.f16463z != null) {
-            EditText editText = this.f16441o;
+        if (this.f16092z != null) {
+            EditText editText = this.f16070o;
             if (editText == null) {
                 text = null;
             } else {
@@ -759,19 +759,19 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     private void j() {
         TextView textView = this.E;
         if (textView != null) {
-            this.f16427d.addView(textView);
+            this.f16056d.addView(textView);
             this.E.setVisibility(0);
         }
     }
 
     private void k() {
-        if (this.f16441o != null && this.f16426c0 == 1) {
+        if (this.f16070o != null && this.f16055c0 == 1) {
             if (lh.c.h(getContext())) {
-                EditText editText = this.f16441o;
-                h0.F0(editText, h0.E(editText), getResources().getDimensionPixelSize(yg.d.B), h0.D(this.f16441o), getResources().getDimensionPixelSize(yg.d.A));
+                EditText editText = this.f16070o;
+                h0.F0(editText, h0.E(editText), getResources().getDimensionPixelSize(yg.d.B), h0.D(this.f16070o), getResources().getDimensionPixelSize(yg.d.A));
             } else if (lh.c.g(getContext())) {
-                EditText editText2 = this.f16441o;
-                h0.F0(editText2, h0.E(editText2), getResources().getDimensionPixelSize(yg.d.f54425z), h0.D(this.f16441o), getResources().getDimensionPixelSize(yg.d.f54424y));
+                EditText editText2 = this.f16070o;
+                h0.F0(editText2, h0.E(editText2), getResources().getDimensionPixelSize(yg.d.f54400z), h0.D(this.f16070o), getResources().getDimensionPixelSize(yg.d.f54399y));
             }
         }
     }
@@ -779,9 +779,9 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     private static void k0(Context context, TextView textView, int i10, int i11, boolean z10) {
         int i12;
         if (z10) {
-            i12 = yg.i.f54493c;
+            i12 = yg.i.f54468c;
         } else {
-            i12 = yg.i.f54492b;
+            i12 = yg.i.f54467b;
         }
         textView.setContentDescription(context.getString(i12, Integer.valueOf(i10), Integer.valueOf(i11)));
     }
@@ -790,19 +790,19 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         int i10;
         ColorStateList colorStateList;
         ColorStateList colorStateList2;
-        TextView textView = this.f16463z;
+        TextView textView = this.f16092z;
         if (textView != null) {
-            if (this.f16459x) {
+            if (this.f16088x) {
                 i10 = this.A;
             } else {
                 i10 = this.B;
             }
             b0(textView, i10);
-            if (!this.f16459x && (colorStateList2 = this.J) != null) {
-                this.f16463z.setTextColor(colorStateList2);
+            if (!this.f16088x && (colorStateList2 = this.J) != null) {
+                this.f16092z.setTextColor(colorStateList2);
             }
-            if (this.f16459x && (colorStateList = this.K) != null) {
-                this.f16463z.setTextColor(colorStateList);
+            if (this.f16088x && (colorStateList = this.K) != null) {
+                this.f16092z.setTextColor(colorStateList);
             }
         }
     }
@@ -818,10 +818,10 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             this.Q.setShapeAppearanceModel(kVar);
         }
         if (w()) {
-            this.Q.d0(this.f16430e0, this.f16433h0);
+            this.Q.d0(this.f16059e0, this.f16062h0);
         }
         int q10 = q();
-        this.f16435i0 = q10;
+        this.f16064i0 = q10;
         this.Q.X(ColorStateList.valueOf(q10));
         n();
         q0();
@@ -831,11 +831,11 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         ColorStateList colorStateList;
         ColorStateList colorStateList2 = this.L;
         if (colorStateList2 == null) {
-            colorStateList2 = eh.a.g(getContext(), yg.b.f54360h);
+            colorStateList2 = eh.a.g(getContext(), yg.b.f54335h);
         }
-        EditText editText = this.f16441o;
+        EditText editText = this.f16070o;
         if (editText != null && editText.getTextCursorDrawable() != null) {
-            Drawable mutate = s1.a.r(this.f16441o.getTextCursorDrawable()).mutate();
+            Drawable mutate = s1.a.r(this.f16070o.getTextCursorDrawable()).mutate();
             if (Q() && (colorStateList = this.M) != null) {
                 colorStateList2 = colorStateList;
             }
@@ -848,13 +848,13 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (this.U != null && this.V != null) {
             if (x()) {
                 oh.g gVar = this.U;
-                if (this.f16441o.isFocused()) {
-                    valueOf = ColorStateList.valueOf(this.f16456v0);
+                if (this.f16070o.isFocused()) {
+                    valueOf = ColorStateList.valueOf(this.f16085v0);
                 } else {
-                    valueOf = ColorStateList.valueOf(this.f16433h0);
+                    valueOf = ColorStateList.valueOf(this.f16062h0);
                 }
                 gVar.X(valueOf);
-                this.V.X(ColorStateList.valueOf(this.f16433h0));
+                this.V.X(ColorStateList.valueOf(this.f16062h0));
             }
             invalidate();
         }
@@ -862,13 +862,13 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     private void o(RectF rectF) {
         float f10 = rectF.left;
-        int i10 = this.f16425b0;
+        int i10 = this.f16054b0;
         rectF.left = f10 - i10;
         rectF.right += i10;
     }
 
     private void p() {
-        int i10 = this.f16426c0;
+        int i10 = this.f16055c0;
         if (i10 != 0) {
             if (i10 != 1) {
                 if (i10 == 2) {
@@ -881,7 +881,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
                     this.V = null;
                     return;
                 }
-                throw new IllegalArgumentException(this.f16426c0 + " is illegal; only @BoxBackgroundMode constants are supported.");
+                throw new IllegalArgumentException(this.f16055c0 + " is illegal; only @BoxBackgroundMode constants are supported.");
             }
             this.Q = new oh.g(this.W);
             this.U = new oh.g();
@@ -894,23 +894,23 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     private void p0() {
-        h0.r0(this.f16441o, getEditTextBoxBackground());
+        h0.r0(this.f16070o, getEditTextBoxBackground());
     }
 
     private int q() {
-        int i10 = this.f16435i0;
-        if (this.f16426c0 == 1) {
-            return eh.a.i(eh.a.e(this, yg.b.f54370o, 0), this.f16435i0);
+        int i10 = this.f16064i0;
+        if (this.f16055c0 == 1) {
+            return eh.a.i(eh.a.e(this, yg.b.f54345o, 0), this.f16064i0);
         }
         return i10;
     }
 
     private Rect r(Rect rect) {
-        if (this.f16441o != null) {
-            Rect rect2 = this.f16437k0;
+        if (this.f16070o != null) {
+            Rect rect2 = this.f16066k0;
             boolean h10 = com.google.android.material.internal.o.h(this);
             rect2.bottom = rect.bottom;
-            int i10 = this.f16426c0;
+            int i10 = this.f16055c0;
             if (i10 != 1) {
                 if (i10 != 2) {
                     rect2.left = I(rect.left, h10);
@@ -918,13 +918,13 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
                     rect2.right = J(rect.right, h10);
                     return rect2;
                 }
-                rect2.left = rect.left + this.f16441o.getPaddingLeft();
+                rect2.left = rect.left + this.f16070o.getPaddingLeft();
                 rect2.top = rect.top - v();
-                rect2.right = rect.right - this.f16441o.getPaddingRight();
+                rect2.right = rect.right - this.f16070o.getPaddingRight();
                 return rect2;
             }
             rect2.left = I(rect.left, h10);
-            rect2.top = rect.top + this.f16428d0;
+            rect2.top = rect.top + this.f16057d0;
             rect2.right = J(rect.right, h10);
             return rect2;
         }
@@ -933,10 +933,10 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     private boolean r0() {
         int max;
-        if (this.f16441o == null || this.f16441o.getMeasuredHeight() >= (max = Math.max(this.f16434i.getMeasuredHeight(), this.f16429e.getMeasuredHeight()))) {
+        if (this.f16070o == null || this.f16070o.getMeasuredHeight() >= (max = Math.max(this.f16063i.getMeasuredHeight(), this.f16058e.getMeasuredHeight()))) {
             return false;
         }
-        this.f16441o.setMinimumHeight(max);
+        this.f16070o.setMinimumHeight(max);
         return true;
     }
 
@@ -944,74 +944,74 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (S()) {
             return (int) (rect2.top + f10);
         }
-        return rect.bottom - this.f16441o.getCompoundPaddingBottom();
+        return rect.bottom - this.f16070o.getCompoundPaddingBottom();
     }
 
     private void s0() {
-        if (this.f16426c0 != 1) {
-            LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) this.f16427d.getLayoutParams();
+        if (this.f16055c0 != 1) {
+            LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) this.f16056d.getLayoutParams();
             int v10 = v();
             if (v10 != layoutParams.topMargin) {
                 layoutParams.topMargin = v10;
-                this.f16427d.requestLayout();
+                this.f16056d.requestLayout();
             }
         }
     }
 
     private void setEditText(EditText editText) {
-        if (this.f16441o == null) {
+        if (this.f16070o == null) {
             if (getEndIconMode() != 3 && !(editText instanceof TextInputEditText)) {
                 Log.i("TextInputLayout", "EditText added is not a TextInputEditText. Please switch to using that class instead.");
             }
-            this.f16441o = editText;
-            int i10 = this.f16445q;
+            this.f16070o = editText;
+            int i10 = this.f16074q;
             if (i10 != -1) {
                 setMinEms(i10);
             } else {
-                setMinWidth(this.f16449s);
+                setMinWidth(this.f16078s);
             }
-            int i11 = this.f16447r;
+            int i11 = this.f16076r;
             if (i11 != -1) {
                 setMaxEms(i11);
             } else {
-                setMaxWidth(this.f16451t);
+                setMaxWidth(this.f16080t);
             }
             this.T = false;
             T();
             setTextInputAccessibilityDelegate(new d(this));
-            this.G0.i0(this.f16441o.getTypeface());
-            this.G0.a0(this.f16441o.getTextSize());
+            this.G0.i0(this.f16070o.getTypeface());
+            this.G0.a0(this.f16070o.getTextSize());
             int i12 = Build.VERSION.SDK_INT;
-            this.G0.X(this.f16441o.getLetterSpacing());
-            int gravity = this.f16441o.getGravity();
+            this.G0.X(this.f16070o.getLetterSpacing());
+            int gravity = this.f16070o.getGravity();
             this.G0.S((gravity & (-113)) | 48);
             this.G0.Z(gravity);
             this.E0 = h0.A(editText);
-            this.f16441o.addTextChangedListener(new a(editText));
-            if (this.f16452t0 == null) {
-                this.f16452t0 = this.f16441o.getHintTextColors();
+            this.f16070o.addTextChangedListener(new a(editText));
+            if (this.f16081t0 == null) {
+                this.f16081t0 = this.f16070o.getHintTextColors();
             }
             if (this.N) {
                 if (TextUtils.isEmpty(this.O)) {
-                    CharSequence hint = this.f16441o.getHint();
-                    this.f16443p = hint;
+                    CharSequence hint = this.f16070o.getHint();
+                    this.f16072p = hint;
                     setHint(hint);
-                    this.f16441o.setHint((CharSequence) null);
+                    this.f16070o.setHint((CharSequence) null);
                 }
                 this.P = true;
             }
             if (i12 >= 29) {
                 m0();
             }
-            if (this.f16463z != null) {
-                j0(this.f16441o.getText());
+            if (this.f16092z != null) {
+                j0(this.f16070o.getText());
             }
             o0();
-            this.f16453u.f();
-            this.f16429e.bringToFront();
-            this.f16434i.bringToFront();
+            this.f16082u.f();
+            this.f16058e.bringToFront();
+            this.f16063i.bringToFront();
             C();
-            this.f16434i.x0();
+            this.f16063i.x0();
             if (!isEnabled()) {
                 editText.setEnabled(false);
             }
@@ -1048,16 +1048,16 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (S()) {
             return (int) (rect.centerY() - (f10 / 2.0f));
         }
-        return rect.top + this.f16441o.getCompoundPaddingTop();
+        return rect.top + this.f16070o.getCompoundPaddingTop();
     }
 
     private Rect u(Rect rect) {
-        if (this.f16441o != null) {
-            Rect rect2 = this.f16437k0;
+        if (this.f16070o != null) {
+            Rect rect2 = this.f16066k0;
             float w10 = this.G0.w();
-            rect2.left = rect.left + this.f16441o.getCompoundPaddingLeft();
+            rect2.left = rect.left + this.f16070o.getCompoundPaddingLeft();
             rect2.top = t(rect, w10);
-            rect2.right = rect.right - this.f16441o.getCompoundPaddingRight();
+            rect2.right = rect.right - this.f16070o.getCompoundPaddingRight();
             rect2.bottom = s(rect, rect2, w10);
             return rect2;
         }
@@ -1070,23 +1070,23 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         TextView textView;
         int i10;
         boolean isEnabled = isEnabled();
-        EditText editText = this.f16441o;
+        EditText editText = this.f16070o;
         boolean z13 = false;
         if (editText != null && !TextUtils.isEmpty(editText.getText())) {
             z12 = true;
         } else {
             z12 = false;
         }
-        EditText editText2 = this.f16441o;
+        EditText editText2 = this.f16070o;
         if (editText2 != null && editText2.hasFocus()) {
             z13 = true;
         }
-        ColorStateList colorStateList2 = this.f16452t0;
+        ColorStateList colorStateList2 = this.f16081t0;
         if (colorStateList2 != null) {
             this.G0.M(colorStateList2);
         }
         if (!isEnabled) {
-            ColorStateList colorStateList3 = this.f16452t0;
+            ColorStateList colorStateList3 = this.f16081t0;
             if (colorStateList3 != null) {
                 i10 = colorStateList3.getColorForState(new int[]{-16842910}, this.D0);
             } else {
@@ -1094,10 +1094,10 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             }
             this.G0.M(ColorStateList.valueOf(i10));
         } else if (c0()) {
-            this.G0.M(this.f16453u.r());
-        } else if (this.f16459x && (textView = this.f16463z) != null) {
+            this.G0.M(this.f16082u.r());
+        } else if (this.f16088x && (textView = this.f16092z) != null) {
             this.G0.M(textView.getTextColors());
-        } else if (z13 && (colorStateList = this.f16454u0) != null) {
+        } else if (z13 && (colorStateList = this.f16083u0) != null) {
             this.G0.R(colorStateList);
         }
         if (!z12 && this.H0 && (!isEnabled() || !z13)) {
@@ -1115,7 +1115,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (!this.N) {
             return 0;
         }
-        int i10 = this.f16426c0;
+        int i10 = this.f16055c0;
         if (i10 != 0) {
             if (i10 != 2) {
                 return 0;
@@ -1129,14 +1129,14 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     private void v0() {
         EditText editText;
-        if (this.E != null && (editText = this.f16441o) != null) {
+        if (this.E != null && (editText = this.f16070o) != null) {
             this.E.setGravity(editText.getGravity());
-            this.E.setPadding(this.f16441o.getCompoundPaddingLeft(), this.f16441o.getCompoundPaddingTop(), this.f16441o.getCompoundPaddingRight(), this.f16441o.getCompoundPaddingBottom());
+            this.E.setPadding(this.f16070o.getCompoundPaddingLeft(), this.f16070o.getCompoundPaddingTop(), this.f16070o.getCompoundPaddingRight(), this.f16070o.getCompoundPaddingBottom());
         }
     }
 
     private boolean w() {
-        if (this.f16426c0 == 2 && x()) {
+        if (this.f16055c0 == 2 && x()) {
             return true;
         }
         return false;
@@ -1144,7 +1144,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     private void w0() {
         Editable text;
-        EditText editText = this.f16441o;
+        EditText editText = this.f16070o;
         if (editText == null) {
             text = null;
         } else {
@@ -1154,7 +1154,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     private boolean x() {
-        if (this.f16430e0 > -1 && this.f16433h0 != 0) {
+        if (this.f16059e0 > -1 && this.f16062h0 != 0) {
             return true;
         }
         return false;
@@ -1162,7 +1162,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     /* JADX INFO: Access modifiers changed from: private */
     public void x0(Editable editable) {
-        if (this.f16461y.a(editable) == 0 && !this.F0) {
+        if (this.f16090y.a(editable) == 0 && !this.F0) {
             f0();
         } else {
             L();
@@ -1176,15 +1176,15 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     private void y0(boolean z10, boolean z11) {
-        int defaultColor = this.f16462y0.getDefaultColor();
-        int colorForState = this.f16462y0.getColorForState(new int[]{16843623, 16842910}, defaultColor);
-        int colorForState2 = this.f16462y0.getColorForState(new int[]{16843518, 16842910}, defaultColor);
+        int defaultColor = this.f16091y0.getDefaultColor();
+        int colorForState = this.f16091y0.getColorForState(new int[]{16843623, 16842910}, defaultColor);
+        int colorForState2 = this.f16091y0.getColorForState(new int[]{16843518, 16842910}, defaultColor);
         if (z10) {
-            this.f16433h0 = colorForState2;
+            this.f16062h0 = colorForState2;
         } else if (z11) {
-            this.f16433h0 = colorForState;
+            this.f16062h0 = colorForState;
         } else {
-            this.f16433h0 = defaultColor;
+            this.f16062h0 = defaultColor;
         }
     }
 
@@ -1203,20 +1203,20 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             U();
         }
         w0();
-        this.f16429e.l(false);
-        this.f16434i.H(false);
+        this.f16058e.l(false);
+        this.f16063i.H(false);
     }
 
     public boolean M() {
-        return this.f16434i.F();
+        return this.f16063i.F();
     }
 
     public boolean N() {
-        return this.f16453u.A();
+        return this.f16082u.A();
     }
 
     public boolean O() {
-        return this.f16453u.B();
+        return this.f16082u.B();
     }
 
     final boolean P() {
@@ -1228,14 +1228,14 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void X() {
-        this.f16429e.m();
+        this.f16058e.m();
     }
 
     public void Z(float f10, float f11, float f12, float f13) {
         float f14;
         float f15;
         boolean h10 = com.google.android.material.internal.o.h(this);
-        this.f16424a0 = h10;
+        this.f16053a0 = h10;
         if (h10) {
             f14 = f11;
         } else {
@@ -1265,8 +1265,8 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (view instanceof EditText) {
             FrameLayout.LayoutParams layoutParams2 = new FrameLayout.LayoutParams(layoutParams);
             layoutParams2.gravity = (layoutParams2.gravity & (-113)) | 16;
-            this.f16427d.addView(view, layoutParams2);
-            this.f16427d.setLayoutParams(layoutParams);
+            this.f16056d.addView(view, layoutParams2);
+            this.f16056d.setLayoutParams(layoutParams);
             s0();
             setEditText((EditText) view);
             return;
@@ -1283,44 +1283,44 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             }
         } catch (Exception unused) {
         }
-        androidx.core.widget.j.s(textView, yg.j.f54515b);
-        textView.setTextColor(androidx.core.content.a.c(getContext(), yg.c.f54382a));
+        androidx.core.widget.j.s(textView, yg.j.f54490b);
+        textView.setTextColor(androidx.core.content.a.c(getContext(), yg.c.f54357a));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean c0() {
-        return this.f16453u.l();
+        return this.f16082u.l();
     }
 
     @Override // android.view.ViewGroup, android.view.View
     public void dispatchProvideAutofillStructure(ViewStructure viewStructure, int i10) {
-        EditText editText = this.f16441o;
+        EditText editText = this.f16070o;
         if (editText == null) {
             super.dispatchProvideAutofillStructure(viewStructure, i10);
             return;
         }
-        if (this.f16443p != null) {
+        if (this.f16072p != null) {
             boolean z10 = this.P;
             this.P = false;
             CharSequence hint = editText.getHint();
-            this.f16441o.setHint(this.f16443p);
+            this.f16070o.setHint(this.f16072p);
             try {
                 super.dispatchProvideAutofillStructure(viewStructure, i10);
                 return;
             } finally {
-                this.f16441o.setHint(hint);
+                this.f16070o.setHint(hint);
                 this.P = z10;
             }
         }
         viewStructure.setAutofillId(getAutofillId());
         onProvideAutofillStructure(viewStructure, i10);
         onProvideAutofillVirtualStructure(viewStructure, i10);
-        viewStructure.setChildCount(this.f16427d.getChildCount());
-        for (int i11 = 0; i11 < this.f16427d.getChildCount(); i11++) {
-            View childAt = this.f16427d.getChildAt(i11);
+        viewStructure.setChildCount(this.f16056d.getChildCount());
+        for (int i11 = 0; i11 < this.f16056d.getChildCount(); i11++) {
+            View childAt = this.f16056d.getChildAt(i11);
             ViewStructure newChild = viewStructure.newChild(i11);
             childAt.dispatchProvideAutofillStructure(newChild, i10);
-            if (childAt == this.f16441o) {
+            if (childAt == this.f16070o) {
                 newChild.setHint(getHint());
             }
         }
@@ -1356,7 +1356,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         } else {
             z10 = false;
         }
-        if (this.f16441o != null) {
+        if (this.f16070o != null) {
             if (!h0.S(this) || !isEnabled()) {
                 z11 = false;
             }
@@ -1372,7 +1372,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     @Override // android.widget.LinearLayout, android.view.View
     public int getBaseline() {
-        EditText editText = this.f16441o;
+        EditText editText = this.f16070o;
         if (editText != null) {
             return editText.getBaseline() + getPaddingTop() + v();
         }
@@ -1381,7 +1381,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     @NonNull
     oh.g getBoxBackground() {
-        int i10 = this.f16426c0;
+        int i10 = this.f16055c0;
         if (i10 != 1 && i10 != 2) {
             throw new IllegalStateException();
         }
@@ -1389,68 +1389,68 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public int getBoxBackgroundColor() {
-        return this.f16435i0;
+        return this.f16064i0;
     }
 
     public int getBoxBackgroundMode() {
-        return this.f16426c0;
+        return this.f16055c0;
     }
 
     public int getBoxCollapsedPaddingTop() {
-        return this.f16428d0;
+        return this.f16057d0;
     }
 
     public float getBoxCornerRadiusBottomEnd() {
         if (com.google.android.material.internal.o.h(this)) {
-            return this.W.j().a(this.f16438l0);
+            return this.W.j().a(this.f16067l0);
         }
-        return this.W.l().a(this.f16438l0);
+        return this.W.l().a(this.f16067l0);
     }
 
     public float getBoxCornerRadiusBottomStart() {
         if (com.google.android.material.internal.o.h(this)) {
-            return this.W.l().a(this.f16438l0);
+            return this.W.l().a(this.f16067l0);
         }
-        return this.W.j().a(this.f16438l0);
+        return this.W.j().a(this.f16067l0);
     }
 
     public float getBoxCornerRadiusTopEnd() {
         if (com.google.android.material.internal.o.h(this)) {
-            return this.W.r().a(this.f16438l0);
+            return this.W.r().a(this.f16067l0);
         }
-        return this.W.t().a(this.f16438l0);
+        return this.W.t().a(this.f16067l0);
     }
 
     public float getBoxCornerRadiusTopStart() {
         if (com.google.android.material.internal.o.h(this)) {
-            return this.W.t().a(this.f16438l0);
+            return this.W.t().a(this.f16067l0);
         }
-        return this.W.r().a(this.f16438l0);
+        return this.W.r().a(this.f16067l0);
     }
 
     public int getBoxStrokeColor() {
-        return this.f16460x0;
+        return this.f16089x0;
     }
 
     public ColorStateList getBoxStrokeErrorColor() {
-        return this.f16462y0;
+        return this.f16091y0;
     }
 
     public int getBoxStrokeWidth() {
-        return this.f16431f0;
+        return this.f16060f0;
     }
 
     public int getBoxStrokeWidthFocused() {
-        return this.f16432g0;
+        return this.f16061g0;
     }
 
     public int getCounterMaxLength() {
-        return this.f16457w;
+        return this.f16086w;
     }
 
     CharSequence getCounterOverflowDescription() {
         TextView textView;
-        if (this.f16455v && this.f16459x && (textView = this.f16463z) != null) {
+        if (this.f16084v && this.f16088x && (textView = this.f16092z) != null) {
             return textView.getContentDescription();
         }
         return null;
@@ -1473,72 +1473,72 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public ColorStateList getDefaultHintTextColor() {
-        return this.f16452t0;
+        return this.f16081t0;
     }
 
     public EditText getEditText() {
-        return this.f16441o;
+        return this.f16070o;
     }
 
     public CharSequence getEndIconContentDescription() {
-        return this.f16434i.l();
+        return this.f16063i.l();
     }
 
     public Drawable getEndIconDrawable() {
-        return this.f16434i.n();
+        return this.f16063i.n();
     }
 
     public int getEndIconMinSize() {
-        return this.f16434i.o();
+        return this.f16063i.o();
     }
 
     public int getEndIconMode() {
-        return this.f16434i.p();
+        return this.f16063i.p();
     }
 
     @NonNull
     public ImageView.ScaleType getEndIconScaleType() {
-        return this.f16434i.q();
+        return this.f16063i.q();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @NonNull
     public CheckableImageButton getEndIconView() {
-        return this.f16434i.r();
+        return this.f16063i.r();
     }
 
     public CharSequence getError() {
-        if (this.f16453u.A()) {
-            return this.f16453u.p();
+        if (this.f16082u.A()) {
+            return this.f16082u.p();
         }
         return null;
     }
 
     public int getErrorAccessibilityLiveRegion() {
-        return this.f16453u.n();
+        return this.f16082u.n();
     }
 
     public CharSequence getErrorContentDescription() {
-        return this.f16453u.o();
+        return this.f16082u.o();
     }
 
     public int getErrorCurrentTextColors() {
-        return this.f16453u.q();
+        return this.f16082u.q();
     }
 
     public Drawable getErrorIconDrawable() {
-        return this.f16434i.s();
+        return this.f16063i.s();
     }
 
     public CharSequence getHelperText() {
-        if (this.f16453u.B()) {
-            return this.f16453u.s();
+        if (this.f16082u.B()) {
+            return this.f16082u.s();
         }
         return null;
     }
 
     public int getHelperTextCurrentTextColor() {
-        return this.f16453u.u();
+        return this.f16082u.u();
     }
 
     public CharSequence getHint() {
@@ -1557,38 +1557,38 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public ColorStateList getHintTextColor() {
-        return this.f16454u0;
+        return this.f16083u0;
     }
 
     @NonNull
     public e getLengthCounter() {
-        return this.f16461y;
+        return this.f16090y;
     }
 
     public int getMaxEms() {
-        return this.f16447r;
+        return this.f16076r;
     }
 
     public int getMaxWidth() {
-        return this.f16451t;
+        return this.f16080t;
     }
 
     public int getMinEms() {
-        return this.f16445q;
+        return this.f16074q;
     }
 
     public int getMinWidth() {
-        return this.f16449s;
+        return this.f16078s;
     }
 
     @Deprecated
     public CharSequence getPasswordVisibilityToggleContentDescription() {
-        return this.f16434i.u();
+        return this.f16063i.u();
     }
 
     @Deprecated
     public Drawable getPasswordVisibilityToggleDrawable() {
-        return this.f16434i.v();
+        return this.f16063i.v();
     }
 
     public CharSequence getPlaceholderText() {
@@ -1607,16 +1607,16 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public CharSequence getPrefixText() {
-        return this.f16429e.a();
+        return this.f16058e.a();
     }
 
     public ColorStateList getPrefixTextColor() {
-        return this.f16429e.b();
+        return this.f16058e.b();
     }
 
     @NonNull
     public TextView getPrefixTextView() {
-        return this.f16429e.d();
+        return this.f16058e.d();
     }
 
     @NonNull
@@ -1625,69 +1625,69 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public CharSequence getStartIconContentDescription() {
-        return this.f16429e.e();
+        return this.f16058e.e();
     }
 
     public Drawable getStartIconDrawable() {
-        return this.f16429e.f();
+        return this.f16058e.f();
     }
 
     public int getStartIconMinSize() {
-        return this.f16429e.g();
+        return this.f16058e.g();
     }
 
     @NonNull
     public ImageView.ScaleType getStartIconScaleType() {
-        return this.f16429e.h();
+        return this.f16058e.h();
     }
 
     public CharSequence getSuffixText() {
-        return this.f16434i.w();
+        return this.f16063i.w();
     }
 
     public ColorStateList getSuffixTextColor() {
-        return this.f16434i.x();
+        return this.f16063i.x();
     }
 
     @NonNull
     public TextView getSuffixTextView() {
-        return this.f16434i.z();
+        return this.f16063i.z();
     }
 
     public Typeface getTypeface() {
-        return this.f16439m0;
+        return this.f16068m0;
     }
 
     public void i(f fVar) {
-        this.f16444p0.add(fVar);
-        if (this.f16441o != null) {
+        this.f16073p0.add(fVar);
+        if (this.f16070o != null) {
             fVar.a(this);
         }
     }
 
     void j0(Editable editable) {
         boolean z10;
-        int a10 = this.f16461y.a(editable);
-        boolean z11 = this.f16459x;
-        int i10 = this.f16457w;
+        int a10 = this.f16090y.a(editable);
+        boolean z11 = this.f16088x;
+        int i10 = this.f16086w;
         if (i10 == -1) {
-            this.f16463z.setText(String.valueOf(a10));
-            this.f16463z.setContentDescription(null);
-            this.f16459x = false;
+            this.f16092z.setText(String.valueOf(a10));
+            this.f16092z.setContentDescription(null);
+            this.f16088x = false;
         } else {
             if (a10 > i10) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f16459x = z10;
-            k0(getContext(), this.f16463z, a10, this.f16457w, this.f16459x);
-            if (z11 != this.f16459x) {
+            this.f16088x = z10;
+            k0(getContext(), this.f16092z, a10, this.f16086w, this.f16088x);
+            if (z11 != this.f16088x) {
                 l0();
             }
-            this.f16463z.setText(a2.a.c().j(getContext().getString(yg.i.f54494d, Integer.valueOf(a10), Integer.valueOf(this.f16457w))));
+            this.f16092z.setText(a2.a.c().j(getContext().getString(yg.i.f54469d, Integer.valueOf(a10), Integer.valueOf(this.f16086w))));
         }
-        if (this.f16441o != null && z11 != this.f16459x) {
+        if (this.f16070o != null && z11 != this.f16088x) {
             t0(false);
             z0();
             o0();
@@ -1701,7 +1701,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (this.J0 == null) {
             ValueAnimator valueAnimator = new ValueAnimator();
             this.J0 = valueAnimator;
-            valueAnimator.setInterpolator(jh.g.g(getContext(), yg.b.P, zg.a.f55675b));
+            valueAnimator.setInterpolator(jh.g.g(getContext(), yg.b.P, zg.a.f55807b));
             this.J0.setDuration(jh.g.f(getContext(), yg.b.I, 167));
             this.J0.addUpdateListener(new c());
         }
@@ -1712,70 +1712,70 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean n0() {
         boolean z10;
-        if (this.f16441o == null) {
+        if (this.f16070o == null) {
             return false;
         }
         boolean z11 = true;
         if (e0()) {
-            int measuredWidth = this.f16429e.getMeasuredWidth() - this.f16441o.getPaddingLeft();
-            if (this.f16440n0 == null || this.f16442o0 != measuredWidth) {
+            int measuredWidth = this.f16058e.getMeasuredWidth() - this.f16070o.getPaddingLeft();
+            if (this.f16069n0 == null || this.f16071o0 != measuredWidth) {
                 ColorDrawable colorDrawable = new ColorDrawable();
-                this.f16440n0 = colorDrawable;
-                this.f16442o0 = measuredWidth;
+                this.f16069n0 = colorDrawable;
+                this.f16071o0 = measuredWidth;
                 colorDrawable.setBounds(0, 0, measuredWidth, 1);
             }
-            Drawable[] d10 = androidx.core.widget.j.d(this.f16441o);
+            Drawable[] d10 = androidx.core.widget.j.d(this.f16070o);
             Drawable drawable = d10[0];
-            Drawable drawable2 = this.f16440n0;
+            Drawable drawable2 = this.f16069n0;
             if (drawable != drawable2) {
-                androidx.core.widget.j.m(this.f16441o, drawable2, d10[1], d10[2], d10[3]);
+                androidx.core.widget.j.m(this.f16070o, drawable2, d10[1], d10[2], d10[3]);
                 z10 = true;
             }
             z10 = false;
         } else {
-            if (this.f16440n0 != null) {
-                Drawable[] d11 = androidx.core.widget.j.d(this.f16441o);
-                androidx.core.widget.j.m(this.f16441o, null, d11[1], d11[2], d11[3]);
-                this.f16440n0 = null;
+            if (this.f16069n0 != null) {
+                Drawable[] d11 = androidx.core.widget.j.d(this.f16070o);
+                androidx.core.widget.j.m(this.f16070o, null, d11[1], d11[2], d11[3]);
+                this.f16069n0 = null;
                 z10 = true;
             }
             z10 = false;
         }
         if (d0()) {
-            int measuredWidth2 = this.f16434i.z().getMeasuredWidth() - this.f16441o.getPaddingRight();
-            CheckableImageButton k10 = this.f16434i.k();
+            int measuredWidth2 = this.f16063i.z().getMeasuredWidth() - this.f16070o.getPaddingRight();
+            CheckableImageButton k10 = this.f16063i.k();
             if (k10 != null) {
                 measuredWidth2 = measuredWidth2 + k10.getMeasuredWidth() + androidx.core.view.m.b((ViewGroup.MarginLayoutParams) k10.getLayoutParams());
             }
-            Drawable[] d12 = androidx.core.widget.j.d(this.f16441o);
-            Drawable drawable3 = this.f16446q0;
-            if (drawable3 != null && this.f16448r0 != measuredWidth2) {
-                this.f16448r0 = measuredWidth2;
+            Drawable[] d12 = androidx.core.widget.j.d(this.f16070o);
+            Drawable drawable3 = this.f16075q0;
+            if (drawable3 != null && this.f16077r0 != measuredWidth2) {
+                this.f16077r0 = measuredWidth2;
                 drawable3.setBounds(0, 0, measuredWidth2, 1);
-                androidx.core.widget.j.m(this.f16441o, d12[0], d12[1], this.f16446q0, d12[3]);
+                androidx.core.widget.j.m(this.f16070o, d12[0], d12[1], this.f16075q0, d12[3]);
                 return true;
             }
             if (drawable3 == null) {
                 ColorDrawable colorDrawable2 = new ColorDrawable();
-                this.f16446q0 = colorDrawable2;
-                this.f16448r0 = measuredWidth2;
+                this.f16075q0 = colorDrawable2;
+                this.f16077r0 = measuredWidth2;
                 colorDrawable2.setBounds(0, 0, measuredWidth2, 1);
             }
             Drawable drawable4 = d12[2];
-            Drawable drawable5 = this.f16446q0;
+            Drawable drawable5 = this.f16075q0;
             if (drawable4 != drawable5) {
-                this.f16450s0 = drawable4;
-                androidx.core.widget.j.m(this.f16441o, d12[0], d12[1], drawable5, d12[3]);
+                this.f16079s0 = drawable4;
+                androidx.core.widget.j.m(this.f16070o, d12[0], d12[1], drawable5, d12[3]);
                 return true;
             }
-        } else if (this.f16446q0 != null) {
-            Drawable[] d13 = androidx.core.widget.j.d(this.f16441o);
-            if (d13[2] == this.f16446q0) {
-                androidx.core.widget.j.m(this.f16441o, d13[0], d13[1], this.f16450s0, d13[3]);
+        } else if (this.f16075q0 != null) {
+            Drawable[] d13 = androidx.core.widget.j.d(this.f16070o);
+            if (d13[2] == this.f16075q0) {
+                androidx.core.widget.j.m(this.f16070o, d13[0], d13[1], this.f16079s0, d13[3]);
             } else {
                 z11 = z10;
             }
-            this.f16446q0 = null;
+            this.f16075q0 = null;
             return z11;
         }
         return z10;
@@ -1785,18 +1785,18 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     public void o0() {
         Drawable background;
         TextView textView;
-        EditText editText = this.f16441o;
-        if (editText != null && this.f16426c0 == 0 && (background = editText.getBackground()) != null) {
+        EditText editText = this.f16070o;
+        if (editText != null && this.f16055c0 == 0 && (background = editText.getBackground()) != null) {
             if (e0.a(background)) {
                 background = background.mutate();
             }
             if (c0()) {
                 background.setColorFilter(androidx.appcompat.widget.j.e(getErrorCurrentTextColors(), PorterDuff.Mode.SRC_IN));
-            } else if (this.f16459x && (textView = this.f16463z) != null) {
+            } else if (this.f16088x && (textView = this.f16092z) != null) {
                 background.setColorFilter(androidx.appcompat.widget.j.e(textView.getCurrentTextColor(), PorterDuff.Mode.SRC_IN));
             } else {
                 s1.a.c(background);
-                this.f16441o.refreshDrawableState();
+                this.f16070o.refreshDrawableState();
             }
         }
     }
@@ -1809,17 +1809,17 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
     public void onGlobalLayout() {
-        this.f16434i.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+        this.f16063i.getViewTreeObserver().removeOnGlobalLayoutListener(this);
         this.M0 = false;
         boolean r02 = r0();
         boolean n02 = n0();
         if (!r02 && !n02) {
             return;
         }
-        this.f16441o.post(new Runnable() { // from class: com.google.android.material.textfield.z
+        this.f16070o.post(new Runnable() { // from class: com.google.android.material.textfield.z
             @Override // java.lang.Runnable
             public final void run() {
-                TextInputLayout.this.f16441o.requestLayout();
+                TextInputLayout.this.f16070o.requestLayout();
             }
         });
     }
@@ -1827,14 +1827,14 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     @Override // android.widget.LinearLayout, android.view.ViewGroup, android.view.View
     protected void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         super.onLayout(z10, i10, i11, i12, i13);
-        EditText editText = this.f16441o;
+        EditText editText = this.f16070o;
         if (editText != null) {
-            Rect rect = this.f16436j0;
+            Rect rect = this.f16065j0;
             com.google.android.material.internal.b.a(this, editText, rect);
             h0(rect);
             if (this.N) {
-                this.G0.a0(this.f16441o.getTextSize());
-                int gravity = this.f16441o.getGravity();
+                this.G0.a0(this.f16070o.getTextSize());
+                int gravity = this.f16070o.getGravity();
                 this.G0.S((gravity & (-113)) | 48);
                 this.G0.Z(gravity);
                 this.G0.O(r(rect));
@@ -1851,11 +1851,11 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     protected void onMeasure(int i10, int i11) {
         super.onMeasure(i10, i11);
         if (!this.M0) {
-            this.f16434i.getViewTreeObserver().addOnGlobalLayoutListener(this);
+            this.f16063i.getViewTreeObserver().addOnGlobalLayoutListener(this);
             this.M0 = true;
         }
         v0();
-        this.f16434i.x0();
+        this.f16063i.x0();
     }
 
     @Override // android.view.View
@@ -1866,8 +1866,8 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         }
         g gVar = (g) parcelable;
         super.onRestoreInstanceState(gVar.a());
-        setError(gVar.f16471i);
-        if (gVar.f16472o) {
+        setError(gVar.f16100i);
+        if (gVar.f16101o) {
             post(new b());
         }
         requestLayout();
@@ -1880,15 +1880,15 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (i10 != 1) {
             z10 = false;
         }
-        if (z10 != this.f16424a0) {
-            float a10 = this.W.r().a(this.f16438l0);
-            float a11 = this.W.t().a(this.f16438l0);
-            float a12 = this.W.j().a(this.f16438l0);
-            float a13 = this.W.l().a(this.f16438l0);
+        if (z10 != this.f16053a0) {
+            float a10 = this.W.r().a(this.f16067l0);
+            float a11 = this.W.t().a(this.f16067l0);
+            float a12 = this.W.j().a(this.f16067l0);
+            float a13 = this.W.l().a(this.f16067l0);
             oh.d q10 = this.W.q();
             oh.d s10 = this.W.s();
             oh.k m10 = oh.k.a().A(s10).F(q10).r(this.W.k()).v(this.W.i()).B(a11).G(a10).s(a13).w(a12).m();
-            this.f16424a0 = z10;
+            this.f16053a0 = z10;
             setShapeAppearanceModel(m10);
         }
     }
@@ -1897,17 +1897,17 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     public Parcelable onSaveInstanceState() {
         g gVar = new g(super.onSaveInstanceState());
         if (c0()) {
-            gVar.f16471i = getError();
+            gVar.f16100i = getError();
         }
-        gVar.f16472o = this.f16434i.E();
+        gVar.f16101o = this.f16063i.E();
         return gVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void q0() {
-        EditText editText = this.f16441o;
+        EditText editText = this.f16070o;
         if (editText != null && this.Q != null) {
-            if ((this.T || editText.getBackground() == null) && this.f16426c0 != 0) {
+            if ((this.T || editText.getBackground() == null) && this.f16055c0 != 0) {
                 p0();
                 this.T = true;
             }
@@ -1915,9 +1915,9 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setBoxBackgroundColor(int i10) {
-        if (this.f16435i0 != i10) {
-            this.f16435i0 = i10;
-            this.f16464z0 = i10;
+        if (this.f16064i0 != i10) {
+            this.f16064i0 = i10;
+            this.f16093z0 = i10;
             this.B0 = i10;
             this.C0 = i10;
             m();
@@ -1930,8 +1930,8 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     public void setBoxBackgroundColorStateList(@NonNull ColorStateList colorStateList) {
         int defaultColor = colorStateList.getDefaultColor();
-        this.f16464z0 = defaultColor;
-        this.f16435i0 = defaultColor;
+        this.f16093z0 = defaultColor;
+        this.f16064i0 = defaultColor;
         this.A0 = colorStateList.getColorForState(new int[]{-16842910}, -1);
         this.B0 = colorStateList.getColorForState(new int[]{16842908, 16842910}, -1);
         this.C0 = colorStateList.getColorForState(new int[]{16843623, 16842910}, -1);
@@ -1939,16 +1939,16 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setBoxBackgroundMode(int i10) {
-        if (i10 != this.f16426c0) {
-            this.f16426c0 = i10;
-            if (this.f16441o != null) {
+        if (i10 != this.f16055c0) {
+            this.f16055c0 = i10;
+            if (this.f16070o != null) {
                 T();
             }
         }
     }
 
     public void setBoxCollapsedPaddingTop(int i10) {
-        this.f16428d0 = i10;
+        this.f16057d0 = i10;
     }
 
     public void setBoxCornerFamily(int i10) {
@@ -1957,38 +1957,38 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setBoxStrokeColor(int i10) {
-        if (this.f16460x0 != i10) {
-            this.f16460x0 = i10;
+        if (this.f16089x0 != i10) {
+            this.f16089x0 = i10;
             z0();
         }
     }
 
     public void setBoxStrokeColorStateList(@NonNull ColorStateList colorStateList) {
         if (colorStateList.isStateful()) {
-            this.f16456v0 = colorStateList.getDefaultColor();
+            this.f16085v0 = colorStateList.getDefaultColor();
             this.D0 = colorStateList.getColorForState(new int[]{-16842910}, -1);
-            this.f16458w0 = colorStateList.getColorForState(new int[]{16843623, 16842910}, -1);
-            this.f16460x0 = colorStateList.getColorForState(new int[]{16842908, 16842910}, -1);
-        } else if (this.f16460x0 != colorStateList.getDefaultColor()) {
-            this.f16460x0 = colorStateList.getDefaultColor();
+            this.f16087w0 = colorStateList.getColorForState(new int[]{16843623, 16842910}, -1);
+            this.f16089x0 = colorStateList.getColorForState(new int[]{16842908, 16842910}, -1);
+        } else if (this.f16089x0 != colorStateList.getDefaultColor()) {
+            this.f16089x0 = colorStateList.getDefaultColor();
         }
         z0();
     }
 
     public void setBoxStrokeErrorColor(ColorStateList colorStateList) {
-        if (this.f16462y0 != colorStateList) {
-            this.f16462y0 = colorStateList;
+        if (this.f16091y0 != colorStateList) {
+            this.f16091y0 = colorStateList;
             z0();
         }
     }
 
     public void setBoxStrokeWidth(int i10) {
-        this.f16431f0 = i10;
+        this.f16060f0 = i10;
         z0();
     }
 
     public void setBoxStrokeWidthFocused(int i10) {
-        this.f16432g0 = i10;
+        this.f16061g0 = i10;
         z0();
     }
 
@@ -2001,36 +2001,36 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setCounterEnabled(boolean z10) {
-        if (this.f16455v != z10) {
+        if (this.f16084v != z10) {
             if (z10) {
                 AppCompatTextView appCompatTextView = new AppCompatTextView(getContext());
-                this.f16463z = appCompatTextView;
+                this.f16092z = appCompatTextView;
                 appCompatTextView.setId(yg.f.O);
-                Typeface typeface = this.f16439m0;
+                Typeface typeface = this.f16068m0;
                 if (typeface != null) {
-                    this.f16463z.setTypeface(typeface);
+                    this.f16092z.setTypeface(typeface);
                 }
-                this.f16463z.setMaxLines(1);
-                this.f16453u.e(this.f16463z, 2);
-                androidx.core.view.m.d((ViewGroup.MarginLayoutParams) this.f16463z.getLayoutParams(), getResources().getDimensionPixelOffset(yg.d.f54407h0));
+                this.f16092z.setMaxLines(1);
+                this.f16082u.e(this.f16092z, 2);
+                androidx.core.view.m.d((ViewGroup.MarginLayoutParams) this.f16092z.getLayoutParams(), getResources().getDimensionPixelOffset(yg.d.f54382h0));
                 l0();
                 i0();
             } else {
-                this.f16453u.C(this.f16463z, 2);
-                this.f16463z = null;
+                this.f16082u.C(this.f16092z, 2);
+                this.f16092z = null;
             }
-            this.f16455v = z10;
+            this.f16084v = z10;
         }
     }
 
     public void setCounterMaxLength(int i10) {
-        if (this.f16457w != i10) {
+        if (this.f16086w != i10) {
             if (i10 > 0) {
-                this.f16457w = i10;
+                this.f16086w = i10;
             } else {
-                this.f16457w = -1;
+                this.f16086w = -1;
             }
-            if (this.f16455v) {
+            if (this.f16084v) {
                 i0();
             }
         }
@@ -2081,9 +2081,9 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setDefaultHintTextColor(ColorStateList colorStateList) {
-        this.f16452t0 = colorStateList;
-        this.f16454u0 = colorStateList;
-        if (this.f16441o != null) {
+        this.f16081t0 = colorStateList;
+        this.f16083u0 = colorStateList;
+        if (this.f16070o != null) {
             t0(false);
         }
     }
@@ -2095,105 +2095,105 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setEndIconActivated(boolean z10) {
-        this.f16434i.N(z10);
+        this.f16063i.N(z10);
     }
 
     public void setEndIconCheckable(boolean z10) {
-        this.f16434i.O(z10);
+        this.f16063i.O(z10);
     }
 
     public void setEndIconContentDescription(int i10) {
-        this.f16434i.P(i10);
+        this.f16063i.P(i10);
     }
 
     public void setEndIconDrawable(int i10) {
-        this.f16434i.R(i10);
+        this.f16063i.R(i10);
     }
 
     public void setEndIconMinSize(int i10) {
-        this.f16434i.T(i10);
+        this.f16063i.T(i10);
     }
 
     public void setEndIconMode(int i10) {
-        this.f16434i.U(i10);
+        this.f16063i.U(i10);
     }
 
     public void setEndIconOnClickListener(View.OnClickListener onClickListener) {
-        this.f16434i.V(onClickListener);
+        this.f16063i.V(onClickListener);
     }
 
     public void setEndIconOnLongClickListener(View.OnLongClickListener onLongClickListener) {
-        this.f16434i.W(onLongClickListener);
+        this.f16063i.W(onLongClickListener);
     }
 
     public void setEndIconScaleType(@NonNull ImageView.ScaleType scaleType) {
-        this.f16434i.X(scaleType);
+        this.f16063i.X(scaleType);
     }
 
     public void setEndIconTintList(ColorStateList colorStateList) {
-        this.f16434i.Y(colorStateList);
+        this.f16063i.Y(colorStateList);
     }
 
     public void setEndIconTintMode(PorterDuff.Mode mode) {
-        this.f16434i.Z(mode);
+        this.f16063i.Z(mode);
     }
 
     public void setEndIconVisible(boolean z10) {
-        this.f16434i.a0(z10);
+        this.f16063i.a0(z10);
     }
 
     public void setError(CharSequence charSequence) {
-        if (!this.f16453u.A()) {
+        if (!this.f16082u.A()) {
             if (TextUtils.isEmpty(charSequence)) {
                 return;
             }
             setErrorEnabled(true);
         }
         if (!TextUtils.isEmpty(charSequence)) {
-            this.f16453u.Q(charSequence);
+            this.f16082u.Q(charSequence);
         } else {
-            this.f16453u.w();
+            this.f16082u.w();
         }
     }
 
     public void setErrorAccessibilityLiveRegion(int i10) {
-        this.f16453u.E(i10);
+        this.f16082u.E(i10);
     }
 
     public void setErrorContentDescription(CharSequence charSequence) {
-        this.f16453u.F(charSequence);
+        this.f16082u.F(charSequence);
     }
 
     public void setErrorEnabled(boolean z10) {
-        this.f16453u.G(z10);
+        this.f16082u.G(z10);
     }
 
     public void setErrorIconDrawable(int i10) {
-        this.f16434i.b0(i10);
+        this.f16063i.b0(i10);
     }
 
     public void setErrorIconOnClickListener(View.OnClickListener onClickListener) {
-        this.f16434i.d0(onClickListener);
+        this.f16063i.d0(onClickListener);
     }
 
     public void setErrorIconOnLongClickListener(View.OnLongClickListener onLongClickListener) {
-        this.f16434i.e0(onLongClickListener);
+        this.f16063i.e0(onLongClickListener);
     }
 
     public void setErrorIconTintList(ColorStateList colorStateList) {
-        this.f16434i.f0(colorStateList);
+        this.f16063i.f0(colorStateList);
     }
 
     public void setErrorIconTintMode(PorterDuff.Mode mode) {
-        this.f16434i.g0(mode);
+        this.f16063i.g0(mode);
     }
 
     public void setErrorTextAppearance(int i10) {
-        this.f16453u.H(i10);
+        this.f16082u.H(i10);
     }
 
     public void setErrorTextColor(ColorStateList colorStateList) {
-        this.f16453u.I(colorStateList);
+        this.f16082u.I(colorStateList);
     }
 
     public void setExpandedHintEnabled(boolean z10) {
@@ -2214,19 +2214,19 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (!O()) {
             setHelperTextEnabled(true);
         }
-        this.f16453u.R(charSequence);
+        this.f16082u.R(charSequence);
     }
 
     public void setHelperTextColor(ColorStateList colorStateList) {
-        this.f16453u.L(colorStateList);
+        this.f16082u.L(colorStateList);
     }
 
     public void setHelperTextEnabled(boolean z10) {
-        this.f16453u.K(z10);
+        this.f16082u.K(z10);
     }
 
     public void setHelperTextTextAppearance(int i10) {
-        this.f16453u.J(i10);
+        this.f16082u.J(i10);
     }
 
     public void setHint(CharSequence charSequence) {
@@ -2245,21 +2245,21 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             this.N = z10;
             if (!z10) {
                 this.P = false;
-                if (!TextUtils.isEmpty(this.O) && TextUtils.isEmpty(this.f16441o.getHint())) {
-                    this.f16441o.setHint(this.O);
+                if (!TextUtils.isEmpty(this.O) && TextUtils.isEmpty(this.f16070o.getHint())) {
+                    this.f16070o.setHint(this.O);
                 }
                 setHintInternal(null);
             } else {
-                CharSequence hint = this.f16441o.getHint();
+                CharSequence hint = this.f16070o.getHint();
                 if (!TextUtils.isEmpty(hint)) {
                     if (TextUtils.isEmpty(this.O)) {
                         setHint(hint);
                     }
-                    this.f16441o.setHint((CharSequence) null);
+                    this.f16070o.setHint((CharSequence) null);
                 }
                 this.P = true;
             }
-            if (this.f16441o != null) {
+            if (this.f16070o != null) {
                 s0();
             }
         }
@@ -2267,40 +2267,40 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     public void setHintTextAppearance(int i10) {
         this.G0.P(i10);
-        this.f16454u0 = this.G0.p();
-        if (this.f16441o != null) {
+        this.f16083u0 = this.G0.p();
+        if (this.f16070o != null) {
             t0(false);
             s0();
         }
     }
 
     public void setHintTextColor(ColorStateList colorStateList) {
-        if (this.f16454u0 != colorStateList) {
-            if (this.f16452t0 == null) {
+        if (this.f16083u0 != colorStateList) {
+            if (this.f16081t0 == null) {
                 this.G0.R(colorStateList);
             }
-            this.f16454u0 = colorStateList;
-            if (this.f16441o != null) {
+            this.f16083u0 = colorStateList;
+            if (this.f16070o != null) {
                 t0(false);
             }
         }
     }
 
     public void setLengthCounter(@NonNull e eVar) {
-        this.f16461y = eVar;
+        this.f16090y = eVar;
     }
 
     public void setMaxEms(int i10) {
-        this.f16447r = i10;
-        EditText editText = this.f16441o;
+        this.f16076r = i10;
+        EditText editText = this.f16070o;
         if (editText != null && i10 != -1) {
             editText.setMaxEms(i10);
         }
     }
 
     public void setMaxWidth(int i10) {
-        this.f16451t = i10;
-        EditText editText = this.f16441o;
+        this.f16080t = i10;
+        EditText editText = this.f16070o;
         if (editText != null && i10 != -1) {
             editText.setMaxWidth(i10);
         }
@@ -2311,16 +2311,16 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setMinEms(int i10) {
-        this.f16445q = i10;
-        EditText editText = this.f16441o;
+        this.f16074q = i10;
+        EditText editText = this.f16070o;
         if (editText != null && i10 != -1) {
             editText.setMinEms(i10);
         }
     }
 
     public void setMinWidth(int i10) {
-        this.f16449s = i10;
-        EditText editText = this.f16441o;
+        this.f16078s = i10;
+        EditText editText = this.f16070o;
         if (editText != null && i10 != -1) {
             editText.setMinWidth(i10);
         }
@@ -2332,27 +2332,27 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
 
     @Deprecated
     public void setPasswordVisibilityToggleContentDescription(int i10) {
-        this.f16434i.i0(i10);
+        this.f16063i.i0(i10);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleDrawable(int i10) {
-        this.f16434i.k0(i10);
+        this.f16063i.k0(i10);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleEnabled(boolean z10) {
-        this.f16434i.m0(z10);
+        this.f16063i.m0(z10);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleTintList(ColorStateList colorStateList) {
-        this.f16434i.n0(colorStateList);
+        this.f16063i.n0(colorStateList);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleTintMode(PorterDuff.Mode mode) {
-        this.f16434i.o0(mode);
+        this.f16063i.o0(mode);
     }
 
     public void setPlaceholderText(CharSequence charSequence) {
@@ -2398,15 +2398,15 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setPrefixText(CharSequence charSequence) {
-        this.f16429e.n(charSequence);
+        this.f16058e.n(charSequence);
     }
 
     public void setPrefixTextAppearance(int i10) {
-        this.f16429e.o(i10);
+        this.f16058e.o(i10);
     }
 
     public void setPrefixTextColor(@NonNull ColorStateList colorStateList) {
-        this.f16429e.p(colorStateList);
+        this.f16058e.p(colorStateList);
     }
 
     public void setShapeAppearanceModel(@NonNull oh.k kVar) {
@@ -2418,7 +2418,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setStartIconCheckable(boolean z10) {
-        this.f16429e.q(z10);
+        this.f16058e.q(z10);
     }
 
     public void setStartIconContentDescription(int i10) {
@@ -2430,58 +2430,58 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setStartIconMinSize(int i10) {
-        this.f16429e.t(i10);
+        this.f16058e.t(i10);
     }
 
     public void setStartIconOnClickListener(View.OnClickListener onClickListener) {
-        this.f16429e.u(onClickListener);
+        this.f16058e.u(onClickListener);
     }
 
     public void setStartIconOnLongClickListener(View.OnLongClickListener onLongClickListener) {
-        this.f16429e.v(onLongClickListener);
+        this.f16058e.v(onLongClickListener);
     }
 
     public void setStartIconScaleType(@NonNull ImageView.ScaleType scaleType) {
-        this.f16429e.w(scaleType);
+        this.f16058e.w(scaleType);
     }
 
     public void setStartIconTintList(ColorStateList colorStateList) {
-        this.f16429e.x(colorStateList);
+        this.f16058e.x(colorStateList);
     }
 
     public void setStartIconTintMode(PorterDuff.Mode mode) {
-        this.f16429e.y(mode);
+        this.f16058e.y(mode);
     }
 
     public void setStartIconVisible(boolean z10) {
-        this.f16429e.z(z10);
+        this.f16058e.z(z10);
     }
 
     public void setSuffixText(CharSequence charSequence) {
-        this.f16434i.p0(charSequence);
+        this.f16063i.p0(charSequence);
     }
 
     public void setSuffixTextAppearance(int i10) {
-        this.f16434i.q0(i10);
+        this.f16063i.q0(i10);
     }
 
     public void setSuffixTextColor(@NonNull ColorStateList colorStateList) {
-        this.f16434i.r0(colorStateList);
+        this.f16063i.r0(colorStateList);
     }
 
     public void setTextInputAccessibilityDelegate(d dVar) {
-        EditText editText = this.f16441o;
+        EditText editText = this.f16070o;
         if (editText != null) {
             h0.n0(editText, dVar);
         }
     }
 
     public void setTypeface(Typeface typeface) {
-        if (typeface != this.f16439m0) {
-            this.f16439m0 = typeface;
+        if (typeface != this.f16068m0) {
+            this.f16068m0 = typeface;
             this.G0.i0(typeface);
-            this.f16453u.N(typeface);
-            TextView textView = this.f16463z;
+            this.f16082u.N(typeface);
+            TextView textView = this.f16092z;
             if (textView != null) {
                 textView.setTypeface(typeface);
             }
@@ -2499,62 +2499,62 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         TextView textView;
         EditText editText;
         EditText editText2;
-        if (this.Q != null && this.f16426c0 != 0) {
+        if (this.Q != null && this.f16055c0 != 0) {
             boolean z11 = false;
-            if (!isFocused() && ((editText2 = this.f16441o) == null || !editText2.hasFocus())) {
+            if (!isFocused() && ((editText2 = this.f16070o) == null || !editText2.hasFocus())) {
                 z10 = false;
             } else {
                 z10 = true;
             }
-            if (isHovered() || ((editText = this.f16441o) != null && editText.isHovered())) {
+            if (isHovered() || ((editText = this.f16070o) != null && editText.isHovered())) {
                 z11 = true;
             }
             if (!isEnabled()) {
-                this.f16433h0 = this.D0;
+                this.f16062h0 = this.D0;
             } else if (c0()) {
-                if (this.f16462y0 != null) {
+                if (this.f16091y0 != null) {
                     y0(z10, z11);
                 } else {
-                    this.f16433h0 = getErrorCurrentTextColors();
+                    this.f16062h0 = getErrorCurrentTextColors();
                 }
-            } else if (this.f16459x && (textView = this.f16463z) != null) {
-                if (this.f16462y0 != null) {
+            } else if (this.f16088x && (textView = this.f16092z) != null) {
+                if (this.f16091y0 != null) {
                     y0(z10, z11);
                 } else {
-                    this.f16433h0 = textView.getCurrentTextColor();
+                    this.f16062h0 = textView.getCurrentTextColor();
                 }
             } else if (z10) {
-                this.f16433h0 = this.f16460x0;
+                this.f16062h0 = this.f16089x0;
             } else if (z11) {
-                this.f16433h0 = this.f16458w0;
+                this.f16062h0 = this.f16087w0;
             } else {
-                this.f16433h0 = this.f16456v0;
+                this.f16062h0 = this.f16085v0;
             }
             if (Build.VERSION.SDK_INT >= 29) {
                 m0();
             }
-            this.f16434i.I();
+            this.f16063i.I();
             X();
-            if (this.f16426c0 == 2) {
-                int i10 = this.f16430e0;
+            if (this.f16055c0 == 2) {
+                int i10 = this.f16059e0;
                 if (z10 && isEnabled()) {
-                    this.f16430e0 = this.f16432g0;
+                    this.f16059e0 = this.f16061g0;
                 } else {
-                    this.f16430e0 = this.f16431f0;
+                    this.f16059e0 = this.f16060f0;
                 }
-                if (this.f16430e0 != i10) {
+                if (this.f16059e0 != i10) {
                     V();
                 }
             }
-            if (this.f16426c0 == 1) {
+            if (this.f16055c0 == 1) {
                 if (!isEnabled()) {
-                    this.f16435i0 = this.A0;
+                    this.f16064i0 = this.A0;
                 } else if (z11 && !z10) {
-                    this.f16435i0 = this.C0;
+                    this.f16064i0 = this.C0;
                 } else if (z10) {
-                    this.f16435i0 = this.B0;
+                    this.f16064i0 = this.B0;
                 } else {
-                    this.f16435i0 = this.f16464z0;
+                    this.f16064i0 = this.f16093z0;
                 }
             }
             m();
@@ -2575,33 +2575,33 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public void setEndIconContentDescription(CharSequence charSequence) {
-        this.f16434i.Q(charSequence);
+        this.f16063i.Q(charSequence);
     }
 
     public void setEndIconDrawable(Drawable drawable) {
-        this.f16434i.S(drawable);
+        this.f16063i.S(drawable);
     }
 
     public void setErrorIconDrawable(Drawable drawable) {
-        this.f16434i.c0(drawable);
+        this.f16063i.c0(drawable);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleContentDescription(CharSequence charSequence) {
-        this.f16434i.j0(charSequence);
+        this.f16063i.j0(charSequence);
     }
 
     @Deprecated
     public void setPasswordVisibilityToggleDrawable(Drawable drawable) {
-        this.f16434i.l0(drawable);
+        this.f16063i.l0(drawable);
     }
 
     public void setStartIconContentDescription(CharSequence charSequence) {
-        this.f16429e.r(charSequence);
+        this.f16058e.r(charSequence);
     }
 
     public void setStartIconDrawable(Drawable drawable) {
-        this.f16429e.s(drawable);
+        this.f16058e.s(drawable);
     }
 
     public void setHint(int i10) {

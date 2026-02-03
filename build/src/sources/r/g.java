@@ -15,7 +15,7 @@ import r.g;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f47715a;
+    private final a f47917a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     interface a {
@@ -31,83 +31,83 @@ public final class g {
     public static final class b extends CameraCaptureSession.CaptureCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        final CameraCaptureSession.CaptureCallback f47716a;
+        final CameraCaptureSession.CaptureCallback f47918a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Executor f47717b;
+        private final Executor f47919b;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public b(Executor executor, CameraCaptureSession.CaptureCallback captureCallback) {
-            this.f47717b = executor;
-            this.f47716a = captureCallback;
+            this.f47919b = executor;
+            this.f47918a = captureCallback;
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureBufferLost(final CameraCaptureSession cameraCaptureSession, final CaptureRequest captureRequest, final Surface surface, final long j10) {
-            this.f47717b.execute(new Runnable() { // from class: r.m
+            this.f47919b.execute(new Runnable() { // from class: r.m
                 @Override // java.lang.Runnable
                 public final void run() {
-                    c.a(g.b.this.f47716a, cameraCaptureSession, captureRequest, surface, j10);
+                    c.a(g.b.this.f47918a, cameraCaptureSession, captureRequest, surface, j10);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureCompleted(final CameraCaptureSession cameraCaptureSession, final CaptureRequest captureRequest, final TotalCaptureResult totalCaptureResult) {
-            this.f47717b.execute(new Runnable() { // from class: r.i
+            this.f47919b.execute(new Runnable() { // from class: r.i
                 @Override // java.lang.Runnable
                 public final void run() {
-                    g.b.this.f47716a.onCaptureCompleted(cameraCaptureSession, captureRequest, totalCaptureResult);
+                    g.b.this.f47918a.onCaptureCompleted(cameraCaptureSession, captureRequest, totalCaptureResult);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureFailed(final CameraCaptureSession cameraCaptureSession, final CaptureRequest captureRequest, final CaptureFailure captureFailure) {
-            this.f47717b.execute(new Runnable() { // from class: r.l
+            this.f47919b.execute(new Runnable() { // from class: r.l
                 @Override // java.lang.Runnable
                 public final void run() {
-                    g.b.this.f47716a.onCaptureFailed(cameraCaptureSession, captureRequest, captureFailure);
+                    g.b.this.f47918a.onCaptureFailed(cameraCaptureSession, captureRequest, captureFailure);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureProgressed(final CameraCaptureSession cameraCaptureSession, final CaptureRequest captureRequest, final CaptureResult captureResult) {
-            this.f47717b.execute(new Runnable() { // from class: r.j
+            this.f47919b.execute(new Runnable() { // from class: r.j
                 @Override // java.lang.Runnable
                 public final void run() {
-                    g.b.this.f47716a.onCaptureProgressed(cameraCaptureSession, captureRequest, captureResult);
+                    g.b.this.f47918a.onCaptureProgressed(cameraCaptureSession, captureRequest, captureResult);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureSequenceAborted(final CameraCaptureSession cameraCaptureSession, final int i10) {
-            this.f47717b.execute(new Runnable() { // from class: r.n
+            this.f47919b.execute(new Runnable() { // from class: r.n
                 @Override // java.lang.Runnable
                 public final void run() {
-                    g.b.this.f47716a.onCaptureSequenceAborted(cameraCaptureSession, i10);
+                    g.b.this.f47918a.onCaptureSequenceAborted(cameraCaptureSession, i10);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureSequenceCompleted(final CameraCaptureSession cameraCaptureSession, final int i10, final long j10) {
-            this.f47717b.execute(new Runnable() { // from class: r.k
+            this.f47919b.execute(new Runnable() { // from class: r.k
                 @Override // java.lang.Runnable
                 public final void run() {
-                    g.b.this.f47716a.onCaptureSequenceCompleted(cameraCaptureSession, i10, j10);
+                    g.b.this.f47918a.onCaptureSequenceCompleted(cameraCaptureSession, i10, j10);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureStarted(final CameraCaptureSession cameraCaptureSession, final CaptureRequest captureRequest, final long j10, final long j11) {
-            this.f47717b.execute(new Runnable() { // from class: r.h
+            this.f47919b.execute(new Runnable() { // from class: r.h
                 @Override // java.lang.Runnable
                 public final void run() {
-                    g.b.this.f47716a.onCaptureStarted(cameraCaptureSession, captureRequest, j10, j11);
+                    g.b.this.f47918a.onCaptureStarted(cameraCaptureSession, captureRequest, j10, j11);
                 }
             });
         }
@@ -118,83 +118,83 @@ public final class g {
     public static final class c extends CameraCaptureSession.StateCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        final CameraCaptureSession.StateCallback f47718a;
+        final CameraCaptureSession.StateCallback f47920a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Executor f47719b;
+        private final Executor f47921b;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public c(Executor executor, CameraCaptureSession.StateCallback stateCallback) {
-            this.f47719b = executor;
-            this.f47718a = stateCallback;
+            this.f47921b = executor;
+            this.f47920a = stateCallback;
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onActive(final CameraCaptureSession cameraCaptureSession) {
-            this.f47719b.execute(new Runnable() { // from class: r.o
+            this.f47921b.execute(new Runnable() { // from class: r.o
                 @Override // java.lang.Runnable
                 public final void run() {
-                    g.c.this.f47718a.onActive(cameraCaptureSession);
+                    g.c.this.f47920a.onActive(cameraCaptureSession);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onCaptureQueueEmpty(final CameraCaptureSession cameraCaptureSession) {
-            this.f47719b.execute(new Runnable() { // from class: r.r
+            this.f47921b.execute(new Runnable() { // from class: r.r
                 @Override // java.lang.Runnable
                 public final void run() {
-                    d.a(g.c.this.f47718a, cameraCaptureSession);
+                    d.a(g.c.this.f47920a, cameraCaptureSession);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onClosed(final CameraCaptureSession cameraCaptureSession) {
-            this.f47719b.execute(new Runnable() { // from class: r.p
+            this.f47921b.execute(new Runnable() { // from class: r.p
                 @Override // java.lang.Runnable
                 public final void run() {
-                    g.c.this.f47718a.onClosed(cameraCaptureSession);
+                    g.c.this.f47920a.onClosed(cameraCaptureSession);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onConfigureFailed(final CameraCaptureSession cameraCaptureSession) {
-            this.f47719b.execute(new Runnable() { // from class: r.u
+            this.f47921b.execute(new Runnable() { // from class: r.u
                 @Override // java.lang.Runnable
                 public final void run() {
-                    g.c.this.f47718a.onConfigureFailed(cameraCaptureSession);
+                    g.c.this.f47920a.onConfigureFailed(cameraCaptureSession);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onConfigured(final CameraCaptureSession cameraCaptureSession) {
-            this.f47719b.execute(new Runnable() { // from class: r.s
+            this.f47921b.execute(new Runnable() { // from class: r.s
                 @Override // java.lang.Runnable
                 public final void run() {
-                    g.c.this.f47718a.onConfigured(cameraCaptureSession);
+                    g.c.this.f47920a.onConfigured(cameraCaptureSession);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onReady(final CameraCaptureSession cameraCaptureSession) {
-            this.f47719b.execute(new Runnable() { // from class: r.t
+            this.f47921b.execute(new Runnable() { // from class: r.t
                 @Override // java.lang.Runnable
                 public final void run() {
-                    g.c.this.f47718a.onReady(cameraCaptureSession);
+                    g.c.this.f47920a.onReady(cameraCaptureSession);
                 }
             });
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onSurfacePrepared(final CameraCaptureSession cameraCaptureSession, final Surface surface) {
-            this.f47719b.execute(new Runnable() { // from class: r.q
+            this.f47921b.execute(new Runnable() { // from class: r.q
                 @Override // java.lang.Runnable
                 public final void run() {
-                    b.a(g.c.this.f47718a, cameraCaptureSession, surface);
+                    b.a(g.c.this.f47920a, cameraCaptureSession, surface);
                 }
             });
         }
@@ -202,9 +202,9 @@ public final class g {
 
     private g(CameraCaptureSession cameraCaptureSession, Handler handler) {
         if (Build.VERSION.SDK_INT >= 28) {
-            this.f47715a = new v(cameraCaptureSession);
+            this.f47917a = new v(cameraCaptureSession);
         } else {
-            this.f47715a = w.d(cameraCaptureSession, handler);
+            this.f47917a = w.d(cameraCaptureSession, handler);
         }
     }
 
@@ -213,14 +213,14 @@ public final class g {
     }
 
     public int a(List list, Executor executor, CameraCaptureSession.CaptureCallback captureCallback) {
-        return this.f47715a.b(list, executor, captureCallback);
+        return this.f47917a.b(list, executor, captureCallback);
     }
 
     public int b(CaptureRequest captureRequest, Executor executor, CameraCaptureSession.CaptureCallback captureCallback) {
-        return this.f47715a.c(captureRequest, executor, captureCallback);
+        return this.f47917a.c(captureRequest, executor, captureCallback);
     }
 
     public CameraCaptureSession c() {
-        return this.f47715a.a();
+        return this.f47917a.a();
     }
 }

@@ -57,15 +57,15 @@ public final class CreatePersonaSheet_CreatePersonaSheetStyleJsonAdapter extends
         AttributeStyles.FooterPaddingStyle footerPaddingStyle = null;
         AttributeStyles.FooterBorderWidthStyle footerBorderWidthStyle = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 footerColorStyle = (AttributeStyles.FooterColorStyle) this.nullableFooterColorStyleAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 footerPaddingStyle = (AttributeStyles.FooterPaddingStyle) this.nullableFooterPaddingStyleAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 footerBorderWidthStyle = (AttributeStyles.FooterBorderWidthStyle) this.nullableFooterBorderWidthStyleAdapter.fromJson(reader);
             }
         }
@@ -78,11 +78,11 @@ public final class CreatePersonaSheet_CreatePersonaSheetStyleJsonAdapter extends
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (createPersonaSheetStyle != null) {
             writer.l();
-            writer.A0(ViewProps.BACKGROUND_COLOR);
+            writer.t0(ViewProps.BACKGROUND_COLOR);
             this.nullableFooterColorStyleAdapter.toJson(writer, createPersonaSheetStyle.getBackgroundColor());
-            writer.A0(ViewProps.PADDING);
+            writer.t0(ViewProps.PADDING);
             this.nullableFooterPaddingStyleAdapter.toJson(writer, createPersonaSheetStyle.getPadding());
-            writer.A0(ViewProps.BORDER_WIDTH);
+            writer.t0(ViewProps.BORDER_WIDTH);
             this.nullableFooterBorderWidthStyleAdapter.toJson(writer, createPersonaSheetStyle.getBorderWidth());
             writer.E();
             return;

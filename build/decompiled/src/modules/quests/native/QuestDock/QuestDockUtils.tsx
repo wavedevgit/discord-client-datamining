@@ -203,14 +203,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getQuestDockExpandedWidth = var4;
     var2.getQuestDockClosedWidth = var3;
     var1 = function arg0() {
-        _fun46717: for (var _fun46717_ip = 0;;) switch (_fun46717_ip) {
+        _fun46807: for (var _fun46807_ip = 0;;) switch (_fun46807_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun46717_ip = 44;
-                    continue _fun46717
+                    _fun46807_ip = 44;
+                    continue _fun46807
                 }
             case 12:
                 var1 = global;
@@ -226,4 +226,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isSoftDismissed = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5218, 667, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5248, 667, 2]);

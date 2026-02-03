@@ -12,22 +12,22 @@ public class a extends CloseableReference {
         String name;
         try {
             synchronized (this) {
-                if (this.f10960d) {
+                if (this.f10589d) {
                     super.finalize();
                     return;
                 }
-                Object f10 = this.f10961e.f();
+                Object f10 = this.f10590e.f();
                 Integer valueOf = Integer.valueOf(System.identityHashCode(this));
-                Integer valueOf2 = Integer.valueOf(System.identityHashCode(this.f10961e));
+                Integer valueOf2 = Integer.valueOf(System.identityHashCode(this.f10590e));
                 if (f10 == null) {
                     name = null;
                 } else {
                     name = f10.getClass().getName();
                 }
                 p8.a.L("DefaultCloseableReference", "Finalized without closing: %x %x (type = %s)", valueOf, valueOf2, name);
-                CloseableReference.c cVar = this.f10962i;
+                CloseableReference.c cVar = this.f10591i;
                 if (cVar != null) {
-                    cVar.b(this.f10961e, this.f10963o);
+                    cVar.b(this.f10590e, this.f10592o);
                 }
                 close();
                 super.finalize();
@@ -42,10 +42,10 @@ public class a extends CloseableReference {
     /* renamed from: l */
     public CloseableReference clone() {
         Throwable th2;
-        j.i(F0());
-        s8.d dVar = this.f10961e;
-        CloseableReference.c cVar = this.f10962i;
-        if (this.f10963o != null) {
+        j.i(J0());
+        s8.d dVar = this.f10590e;
+        CloseableReference.c cVar = this.f10591i;
+        if (this.f10592o != null) {
             th2 = new Throwable();
         } else {
             th2 = null;

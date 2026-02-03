@@ -12,7 +12,7 @@ import x.g1;
 public class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f27229a;
+    private final boolean f27402a;
 
     public f() {
         boolean z10;
@@ -21,7 +21,7 @@ public class f {
         } else {
             z10 = false;
         }
-        this.f27229a = z10;
+        this.f27402a = z10;
     }
 
     public static /* synthetic */ int a(f fVar, i2.f fVar2, i2.f fVar3) {
@@ -40,7 +40,7 @@ public class f {
     }
 
     public void c(List list) {
-        if (!this.f27229a) {
+        if (!this.f27402a) {
             return;
         }
         Collections.sort(list, new Comparator() { // from class: h0.e

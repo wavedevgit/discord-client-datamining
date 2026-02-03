@@ -7,7 +7,7 @@ import com.facebook.react.bridge.SoftAssertions;
 import com.facebook.react.uimanager.common.ViewUtil;
 import com.facebook.react.uimanager.events.TouchEventType;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -35,7 +35,7 @@ public final class TouchEvent extends Event<TouchEvent> {
             this();
         }
 
-        @ir.c
+        @jr.c
         @NotNull
         public final TouchEvent obtain(int i10, TouchEventType touchEventType, MotionEvent motionEvent, long j10, float f10, float f11, @NotNull TouchEventCoalescingKeyHelper touchEventCoalescingKeyHelper) {
             Intrinsics.checkNotNullParameter(touchEventCoalescingKeyHelper, "touchEventCoalescingKeyHelper");
@@ -164,7 +164,7 @@ public final class TouchEvent extends Event<TouchEvent> {
     }
 
     @Override // com.facebook.react.uimanager.events.Event
-    @ir.c
+    @jr.c
     public void dispatch(@NotNull RCTEventEmitter rctEventEmitter) {
         Intrinsics.checkNotNullParameter(rctEventEmitter, "rctEventEmitter");
         if (verifyMotionEvent()) {
@@ -262,7 +262,7 @@ public final class TouchEvent extends Event<TouchEvent> {
     private TouchEvent() {
     }
 
-    @ir.c
+    @jr.c
     @NotNull
     public static final TouchEvent obtain(int i10, TouchEventType touchEventType, MotionEvent motionEvent, long j10, float f10, float f11, @NotNull TouchEventCoalescingKeyHelper touchEventCoalescingKeyHelper) {
         return Companion.obtain(i10, touchEventType, motionEvent, j10, f10, f11, touchEventCoalescingKeyHelper);

@@ -5,184 +5,184 @@ import java.util.Arrays;
 final class e {
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f42555c;
+    private boolean f42683c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f42556d;
+    private boolean f42684d;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f42558f;
+    private int f42686f;
 
     /* renamed from: a  reason: collision with root package name */
-    private a f42553a = new a();
+    private a f42681a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private a f42554b = new a();
+    private a f42682b = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    private long f42557e = -9223372036854775807L;
+    private long f42685e = -9223372036854775807L;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private long f42559a;
+        private long f42687a;
 
         /* renamed from: b  reason: collision with root package name */
-        private long f42560b;
+        private long f42688b;
 
         /* renamed from: c  reason: collision with root package name */
-        private long f42561c;
+        private long f42689c;
 
         /* renamed from: d  reason: collision with root package name */
-        private long f42562d;
+        private long f42690d;
 
         /* renamed from: e  reason: collision with root package name */
-        private long f42563e;
+        private long f42691e;
 
         /* renamed from: f  reason: collision with root package name */
-        private long f42564f;
+        private long f42692f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final boolean[] f42565g = new boolean[15];
+        private final boolean[] f42693g = new boolean[15];
 
         /* renamed from: h  reason: collision with root package name */
-        private int f42566h;
+        private int f42694h;
 
         private static int c(long j10) {
             return (int) (j10 % 15);
         }
 
         public long a() {
-            long j10 = this.f42563e;
+            long j10 = this.f42691e;
             if (j10 == 0) {
                 return 0L;
             }
-            return this.f42564f / j10;
+            return this.f42692f / j10;
         }
 
         public long b() {
-            return this.f42564f;
+            return this.f42692f;
         }
 
         public boolean d() {
-            long j10 = this.f42562d;
+            long j10 = this.f42690d;
             if (j10 == 0) {
                 return false;
             }
-            return this.f42565g[c(j10 - 1)];
+            return this.f42693g[c(j10 - 1)];
         }
 
         public boolean e() {
-            if (this.f42562d > 15 && this.f42566h == 0) {
+            if (this.f42690d > 15 && this.f42694h == 0) {
                 return true;
             }
             return false;
         }
 
         public void f(long j10) {
-            long j11 = this.f42562d;
+            long j11 = this.f42690d;
             if (j11 == 0) {
-                this.f42559a = j10;
+                this.f42687a = j10;
             } else if (j11 == 1) {
-                long j12 = j10 - this.f42559a;
-                this.f42560b = j12;
-                this.f42564f = j12;
-                this.f42563e = 1L;
+                long j12 = j10 - this.f42687a;
+                this.f42688b = j12;
+                this.f42692f = j12;
+                this.f42691e = 1L;
             } else {
-                long j13 = j10 - this.f42561c;
+                long j13 = j10 - this.f42689c;
                 int c10 = c(j11);
-                if (Math.abs(j13 - this.f42560b) <= 1000000) {
-                    this.f42563e++;
-                    this.f42564f += j13;
-                    boolean[] zArr = this.f42565g;
+                if (Math.abs(j13 - this.f42688b) <= 1000000) {
+                    this.f42691e++;
+                    this.f42692f += j13;
+                    boolean[] zArr = this.f42693g;
                     if (zArr[c10]) {
                         zArr[c10] = false;
-                        this.f42566h--;
+                        this.f42694h--;
                     }
                 } else {
-                    boolean[] zArr2 = this.f42565g;
+                    boolean[] zArr2 = this.f42693g;
                     if (!zArr2[c10]) {
                         zArr2[c10] = true;
-                        this.f42566h++;
+                        this.f42694h++;
                     }
                 }
             }
-            this.f42562d++;
-            this.f42561c = j10;
+            this.f42690d++;
+            this.f42689c = j10;
         }
 
         public void g() {
-            this.f42562d = 0L;
-            this.f42563e = 0L;
-            this.f42564f = 0L;
-            this.f42566h = 0;
-            Arrays.fill(this.f42565g, false);
+            this.f42690d = 0L;
+            this.f42691e = 0L;
+            this.f42692f = 0L;
+            this.f42694h = 0;
+            Arrays.fill(this.f42693g, false);
         }
     }
 
     public long a() {
         if (e()) {
-            return this.f42553a.a();
+            return this.f42681a.a();
         }
         return -9223372036854775807L;
     }
 
     public float b() {
         if (e()) {
-            return (float) (1.0E9d / this.f42553a.a());
+            return (float) (1.0E9d / this.f42681a.a());
         }
         return -1.0f;
     }
 
     public int c() {
-        return this.f42558f;
+        return this.f42686f;
     }
 
     public long d() {
         if (e()) {
-            return this.f42553a.b();
+            return this.f42681a.b();
         }
         return -9223372036854775807L;
     }
 
     public boolean e() {
-        return this.f42553a.e();
+        return this.f42681a.e();
     }
 
     public void f(long j10) {
-        this.f42553a.f(j10);
+        this.f42681a.f(j10);
         int i10 = 0;
-        if (this.f42553a.e() && !this.f42556d) {
-            this.f42555c = false;
-        } else if (this.f42557e != -9223372036854775807L) {
-            if (!this.f42555c || this.f42554b.d()) {
-                this.f42554b.g();
-                this.f42554b.f(this.f42557e);
+        if (this.f42681a.e() && !this.f42684d) {
+            this.f42683c = false;
+        } else if (this.f42685e != -9223372036854775807L) {
+            if (!this.f42683c || this.f42682b.d()) {
+                this.f42682b.g();
+                this.f42682b.f(this.f42685e);
             }
-            this.f42555c = true;
-            this.f42554b.f(j10);
+            this.f42683c = true;
+            this.f42682b.f(j10);
         }
-        if (this.f42555c && this.f42554b.e()) {
-            a aVar = this.f42553a;
-            this.f42553a = this.f42554b;
-            this.f42554b = aVar;
-            this.f42555c = false;
-            this.f42556d = false;
+        if (this.f42683c && this.f42682b.e()) {
+            a aVar = this.f42681a;
+            this.f42681a = this.f42682b;
+            this.f42682b = aVar;
+            this.f42683c = false;
+            this.f42684d = false;
         }
-        this.f42557e = j10;
-        if (!this.f42553a.e()) {
-            i10 = this.f42558f + 1;
+        this.f42685e = j10;
+        if (!this.f42681a.e()) {
+            i10 = this.f42686f + 1;
         }
-        this.f42558f = i10;
+        this.f42686f = i10;
     }
 
     public void g() {
-        this.f42553a.g();
-        this.f42554b.g();
-        this.f42555c = false;
-        this.f42557e = -9223372036854775807L;
-        this.f42558f = 0;
+        this.f42681a.g();
+        this.f42682b.g();
+        this.f42683c = false;
+        this.f42685e = -9223372036854775807L;
+        this.f42686f = 0;
     }
 }

@@ -10,7 +10,7 @@ import com.discord.chat.presentation.list.item.ChatListItem;
 import com.discord.chat.presentation.list.item.LoadingChatListItem;
 import com.discord.chat.presentation.loading.ChatLoadingView;
 import com.facebook.react.uimanager.ViewProps;
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;

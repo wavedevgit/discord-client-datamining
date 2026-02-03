@@ -17,7 +17,7 @@ public class e extends g {
 
     @Override // el.g
     public Paint.Align k() {
-        if (this.f22913a.f17726o.f()) {
+        if (this.f22945a.f17355o.f()) {
             return Paint.Align.LEFT;
         }
         return Paint.Align.RIGHT;
@@ -30,16 +30,16 @@ public class e extends g {
         int i10 = 0;
         calendar.set(12, 0);
         while (i10 < 60) {
-            arrayList.add(this.f22917e.format(calendar.getTime()));
-            calendar.add(12, this.f22913a.y());
-            i10 += this.f22913a.y();
+            arrayList.add(this.f22949e.format(calendar.getTime()));
+            calendar.add(12, this.f22945a.y());
+            i10 += this.f22945a.y();
         }
         return arrayList;
     }
 
     @Override // el.g
     public boolean u() {
-        if (this.f22913a.z() != al.b.date) {
+        if (this.f22945a.z() != al.b.date) {
             return true;
         }
         return false;

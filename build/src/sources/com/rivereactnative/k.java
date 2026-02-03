@@ -9,13 +9,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class k extends RiveAnimationView {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ThemedReactContext f18675d;
+    private final ThemedReactContext f18308d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public k(ThemedReactContext context) {
         super(context, null, 2, null);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f18675d = context;
+        this.f18308d = context;
     }
 
     public final void c() {
@@ -36,9 +36,9 @@ public final class k extends RiveAnimationView {
         try {
             super.onAttachedToWindow();
         } catch (RiveException e10) {
-            n.f18685a.b(e10, "ReactNativeRiveAnimationView.onAttachedToWindow - RiveException");
+            n.f18318a.b(e10, "ReactNativeRiveAnimationView.onAttachedToWindow - RiveException");
         } catch (Exception e11) {
-            n.f18685a.b(e11, "ReactNativeRiveAnimationView.onAttachedToWindow - Exception");
+            n.f18318a.b(e11, "ReactNativeRiveAnimationView.onAttachedToWindow - Exception");
         }
     }
 }

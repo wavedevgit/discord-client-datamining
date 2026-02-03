@@ -32,7 +32,7 @@ public final class UIManagerModuleConstantsHelper {
 
     @NotNull
     public static final Map<String, Object> getDefaultExportableEventTypes() {
-        return o0.m(ir.v.a(BUBBLING_EVENTS_KEY, UIManagerModuleConstants.bubblingEventTypeConstants), ir.v.a(DIRECT_EVENTS_KEY, UIManagerModuleConstants.directEventTypeConstants));
+        return o0.m(jr.v.a(BUBBLING_EVENTS_KEY, UIManagerModuleConstants.bubblingEventTypeConstants), jr.v.a(DIRECT_EVENTS_KEY, UIManagerModuleConstants.directEventTypeConstants));
     }
 
     public static /* synthetic */ void getDefaultExportableEventTypes$annotations() {
@@ -41,7 +41,7 @@ public final class UIManagerModuleConstantsHelper {
     @NotNull
     public static final Map<String, Object> internal_createConstants(@NotNull ViewManagerResolver resolver) {
         Intrinsics.checkNotNullParameter(resolver, "resolver");
-        return o0.q(UIManagerModuleConstants.constants, o0.m(ir.v.a("ViewManagerNames", new ArrayList(resolver.getViewManagerNames())), ir.v.a("LazyViewManagersEnabled", Boolean.TRUE)));
+        return o0.q(UIManagerModuleConstants.constants, o0.m(jr.v.a("ViewManagerNames", new ArrayList(resolver.getViewManagerNames())), jr.v.a("LazyViewManagersEnabled", Boolean.TRUE)));
     }
 
     @NotNull

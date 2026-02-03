@@ -13,7 +13,7 @@ import com.discord.foreground_service.utils.Log;
 import com.discord.misc.utilities.threading.ThreadUtilsKt;
 import com.discord.tti_manager.TTIModule;
 import com.facebook.react.uimanager.ViewProps;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.o0;

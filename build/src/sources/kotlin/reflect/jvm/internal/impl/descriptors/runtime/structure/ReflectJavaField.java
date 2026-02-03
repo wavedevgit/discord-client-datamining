@@ -10,11 +10,11 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaField extends ReflectJavaMember implements JavaField {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Field f33942a;
+    private final Field f33718a;
 
     public ReflectJavaField(@NotNull Field member) {
         Intrinsics.checkNotNullParameter(member, "member");
-        this.f33942a = member;
+        this.f33718a = member;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaField
@@ -25,7 +25,7 @@ public final class ReflectJavaField extends ReflectJavaMember implements JavaFie
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaMember
     @NotNull
     public Field getMember() {
-        return this.f33942a;
+        return this.f33718a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaField

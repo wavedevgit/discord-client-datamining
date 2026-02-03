@@ -22,7 +22,7 @@ import com.discord.ripple.RippleUtilsKt;
 import com.discord.theme.R;
 import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function2;
@@ -90,7 +90,7 @@ public final class WelcomeStickerView extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setSticker$lambda$1(Function2 function2, Sticker sticker, Message message, View view) {
-        function2.invoke(sticker, MessageId.m1084boximpl(message.m237getId3Eiw7ao()));
+        function2.invoke(sticker, MessageId.m1086boximpl(message.m239getId3Eiw7ao()));
     }
 
     public final void setSticker(@NotNull final Sticker sticker, @NotNull final Message message, @NotNull final Function2<? super Sticker, ? super MessageId, Unit> onWelcomeReplyClicked) {

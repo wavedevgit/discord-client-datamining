@@ -5,7 +5,7 @@ import ui.c;
 final class ec implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ec f38191a = new ec();
+    static final ec f38171a = new ec();
 
     static {
         c.b a10 = ui.c.a("subjectSegmenterOptions");

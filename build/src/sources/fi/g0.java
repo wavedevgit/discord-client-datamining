@@ -7,23 +7,23 @@ import java.security.MessageDigest;
 final class g0 implements s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FileChannel f25210a;
+    private final FileChannel f24421a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f25211b;
+    private final long f24422b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f25212c;
+    private final long f24423c;
 
     public g0(FileChannel fileChannel, long j10, long j11) {
-        this.f25210a = fileChannel;
-        this.f25211b = j10;
-        this.f25212c = j11;
+        this.f24421a = fileChannel;
+        this.f24422b = j10;
+        this.f24423c = j11;
     }
 
     @Override // fi.s
     public final void a(MessageDigest[] messageDigestArr, long j10, int i10) {
-        MappedByteBuffer map = this.f25210a.map(FileChannel.MapMode.READ_ONLY, this.f25211b + j10, i10);
+        MappedByteBuffer map = this.f24421a.map(FileChannel.MapMode.READ_ONLY, this.f24422b + j10, i10);
         map.load();
         for (MessageDigest messageDigest : messageDigestArr) {
             map.position(0);
@@ -33,6 +33,6 @@ final class g0 implements s {
 
     @Override // fi.s
     public final long zza() {
-        return this.f25212c;
+        return this.f24423c;
     }
 }

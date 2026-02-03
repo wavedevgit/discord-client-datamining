@@ -5,7 +5,7 @@ import ui.c;
 final class x7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x7 f38794a = new x7();
+    static final x7 f38774a = new x7();
 
     static {
         c.b a10 = ui.c.a("options");

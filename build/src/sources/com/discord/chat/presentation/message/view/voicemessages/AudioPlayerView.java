@@ -112,8 +112,8 @@ public final class AudioPlayerView extends FrameLayout {
             }
 
             public final float secondsSinceStart(long j10) {
-                Duration.a aVar = Duration.f36297e;
-                return (float) Duration.J(((Duration) kotlin.ranges.d.f(Duration.h(kotlin.time.b.t(System.currentTimeMillis() - j10, es.b.f24008o)), Duration.h(Duration.f36297e.c()))).O(), es.b.f24009p);
+                Duration.a aVar = Duration.f36073e;
+                return (float) Duration.J(((Duration) kotlin.ranges.d.f(Duration.h(kotlin.time.b.t(System.currentTimeMillis() - j10, fs.b.f25569o)), Duration.h(Duration.f36073e.c()))).O(), fs.b.f25570p);
             }
         }
 
@@ -151,11 +151,11 @@ public final class AudioPlayerView extends FrameLayout {
             Job.a.a(job, null, 1, null);
         }
         if (z10) {
-            d10 = gs.i.d(CoroutineViewUtilsKt.getAttachedScope(audioPlayerView), null, null, new AudioPlayerView$attachStateChangeListener$1$1(audioPlayerView, null), 3, null);
+            d10 = hs.i.d(CoroutineViewUtilsKt.getAttachedScope(audioPlayerView), null, null, new AudioPlayerView$attachStateChangeListener$1$1(audioPlayerView, null), 3, null);
             audioPlayerView.playerJob = d10;
         }
         setState$default(audioPlayerView, AudioPlayerViewState.copy$default(audioPlayerView.state, null, z10, 1, null), false, 2, null);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -497,14 +497,14 @@ public final class AudioPlayerView extends FrameLayout {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("duration", audioPlayerView.timeRemainingAccessibilityText(i10));
         i18nFormat.getArgs().put("currentTime", audioPlayerView.timeRemainingAccessibilityText(i10 - i11));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getA11yAudioProgressDescription$lambda$23(AudioPlayerView audioPlayerView, int i10, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("duration", audioPlayerView.timeRemainingAccessibilityText(i10));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -512,14 +512,14 @@ public final class AudioPlayerView extends FrameLayout {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("duration", audioPlayerView.timeRemainingAccessibilityText(i10));
         i18nFormat.getArgs().put("currentTime", audioPlayerView.timeRemainingAccessibilityText(i10 - i11));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getA11yAudioProgressDescription$lambda$25(AudioPlayerView audioPlayerView, int i10, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("duration", audioPlayerView.timeRemainingAccessibilityText(i10));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final AudioPlayerWipeAnimatorManager getAnimatorManager() {
@@ -566,8 +566,8 @@ public final class AudioPlayerView extends FrameLayout {
                 this.startTimeMS = null;
                 Listener listener = this.listener;
                 if (listener != null) {
-                    Duration.a aVar = Duration.f36297e;
-                    listener.mediaAttachmentPlaybackEnded((float) Duration.J(kotlin.time.b.t(longValue, es.b.f24008o), es.b.f24009p), secondsSinceStart);
+                    Duration.a aVar = Duration.f36073e;
+                    listener.mediaAttachmentPlaybackEnded((float) Duration.J(kotlin.time.b.t(longValue, fs.b.f25569o), fs.b.f25570p), secondsSinceStart);
                 }
             }
         }
@@ -587,8 +587,8 @@ public final class AudioPlayerView extends FrameLayout {
             this.startTimeMS = Long.valueOf(System.currentTimeMillis());
             Listener listener = this.listener;
             if (listener != null) {
-                Duration.a aVar = Duration.f36297e;
-                listener.mediaAttachmentPlaybackStarted((float) Duration.J(kotlin.time.b.t(longValue, es.b.f24008o), es.b.f24009p));
+                Duration.a aVar = Duration.f36073e;
+                listener.mediaAttachmentPlaybackStarted((float) Duration.J(kotlin.time.b.t(longValue, fs.b.f25569o), fs.b.f25570p));
             }
         }
     }
@@ -685,7 +685,7 @@ public final class AudioPlayerView extends FrameLayout {
             audioPlayerView.maybeLogPlaybackEnded();
         }
         setState$default(audioPlayerView, null, true, 1, null);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void reset(boolean z10) {
@@ -701,16 +701,16 @@ public final class AudioPlayerView extends FrameLayout {
             this.state.storeDuration$chat_release();
         }
         this.state.releasePlayer$chat_release();
-        d10 = gs.i.d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioPlayerView$reset$1(this, null), 3, null);
+        d10 = hs.i.d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioPlayerView$reset$1(this, null), 3, null);
         this.resetJob = d10;
-        gs.i.d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioPlayerView$reset$2(this, null), 3, null);
+        hs.i.d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioPlayerView$reset$2(this, null), 3, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setAudioFileDetails$lambda$9(Attachment attachment, RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("filename", attachment.getFilename());
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final synchronized void setState(AudioPlayerViewState audioPlayerViewState, boolean z10) {
@@ -749,7 +749,7 @@ public final class AudioPlayerView extends FrameLayout {
         Intrinsics.checkNotNullExpressionValue(uploadOverlayBackground, "uploadOverlayBackground");
         uploadOverlayBackground.setVisibility(8);
         audioPlayerView.uploadFinished = true;
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final String timeRemainingAccessibilityText(int i10) {
@@ -766,8 +766,8 @@ public final class AudioPlayerView extends FrameLayout {
     }
 
     private final int toSeconds(long j10) {
-        Duration.a aVar = Duration.f36297e;
-        return (int) Math.ceil(Duration.J(kotlin.time.b.t(j10, es.b.f24008o), es.b.f24009p));
+        Duration.a aVar = Duration.f36073e;
+        return (int) Math.ceil(Duration.J(kotlin.time.b.t(j10, fs.b.f25569o), fs.b.f25570p));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -776,11 +776,11 @@ public final class AudioPlayerView extends FrameLayout {
         Job job = this.durationJob;
         if (job != null) {
             Job.a.a(job, null, 1, null);
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
         }
         this.durationJob = null;
         if (z10) {
-            d10 = gs.i.d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioPlayerView$toggleDurationEmitter$2(this, null), 3, null);
+            d10 = hs.i.d(CoroutineViewUtilsKt.getAttachedScope(this), null, null, new AudioPlayerView$toggleDurationEmitter$2(this, null), 3, null);
             this.durationJob = d10;
         }
     }
@@ -900,7 +900,7 @@ public final class AudioPlayerView extends FrameLayout {
         Context context = getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         paint.setColor(ColorUtilsKt.getColorCompat(context, 17170445));
-        Unit unit = Unit.f33298a;
+        Unit unit = Unit.f33074a;
         attachmentUploadOverlayView.configureProgressView(valueOf, shapeDrawable, Integer.valueOf(SizeUtilsKt.getDpToPx(16)), Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveTextDefault()), Integer.valueOf(SizeUtilsKt.getDpToPx(29)), Integer.valueOf(ThemeManagerKt.getTheme().getBorderSubtle()));
         this.binding.uploadOverlay.configureCompleteView(Integer.valueOf(SizeUtilsKt.getDpToPx(32)), Integer.valueOf(SizeUtilsKt.getDpToPx(19)));
         if (z10 && !this.uploadFinished) {
@@ -956,7 +956,7 @@ public final class AudioPlayerView extends FrameLayout {
             }
         }, null, 4, null);
         this.attachStateChangeListener = viewAttachedListener;
-        this.bounceAnimator$delegate = ir.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.p
+        this.bounceAnimator$delegate = jr.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.p
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Animation bounceAnimator_delegate$lambda$2;
@@ -964,7 +964,7 @@ public final class AudioPlayerView extends FrameLayout {
                 return bounceAnimator_delegate$lambda$2;
             }
         });
-        this.animatorManager$delegate = ir.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.q
+        this.animatorManager$delegate = jr.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.voicemessages.q
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 AudioPlayerWipeAnimatorManager animatorManager_delegate$lambda$3;

@@ -10,32 +10,32 @@ import java.util.Set;
 public abstract class i0 extends k0 implements Serializable {
 
     /* renamed from: i */
-    private final transient Map f38273i;
+    private final transient Map f38253i;
 
     /* renamed from: o */
-    private transient int f38274o;
+    private transient int f38254o;
 
     public i0(Map map) {
         t.c(map.isEmpty());
-        this.f38273i = map;
+        this.f38253i = map;
     }
 
     public static /* bridge */ /* synthetic */ int i(i0 i0Var) {
-        return i0Var.f38274o;
+        return i0Var.f38254o;
     }
 
     public static /* bridge */ /* synthetic */ Map l(i0 i0Var) {
-        return i0Var.f38273i;
+        return i0Var.f38253i;
     }
 
     public static /* bridge */ /* synthetic */ void m(i0 i0Var, int i10) {
-        i0Var.f38274o = i10;
+        i0Var.f38254o = i10;
     }
 
     public static /* bridge */ /* synthetic */ void n(i0 i0Var, Object obj) {
         Object obj2;
         try {
-            obj2 = i0Var.f38273i.remove(obj);
+            obj2 = i0Var.f38253i.remove(obj);
         } catch (ClassCastException | NullPointerException unused) {
             obj2 = null;
         }
@@ -43,23 +43,23 @@ public abstract class i0 extends k0 implements Serializable {
         if (collection != null) {
             int size = collection.size();
             collection.clear();
-            i0Var.f38274o -= size;
+            i0Var.f38254o -= size;
         }
     }
 
     @Override // mg.u1
     public final boolean c(Object obj, Object obj2) {
-        Collection collection = (Collection) this.f38273i.get(obj);
+        Collection collection = (Collection) this.f38253i.get(obj);
         if (collection == null) {
             Collection g10 = g();
             if (g10.add(obj2)) {
-                this.f38274o++;
-                this.f38273i.put(obj, g10);
+                this.f38254o++;
+                this.f38253i.put(obj, g10);
                 return true;
             }
             throw new AssertionError("New Collection violated the Collection spec");
         } else if (collection.add(obj2)) {
-            this.f38274o++;
+            this.f38254o++;
             return true;
         } else {
             return false;
@@ -68,12 +68,12 @@ public abstract class i0 extends k0 implements Serializable {
 
     @Override // mg.k0
     final Map e() {
-        return new a0(this, this.f38273i);
+        return new a0(this, this.f38253i);
     }
 
     @Override // mg.k0
     final Set f() {
-        return new c0(this, this.f38273i);
+        return new c0(this, this.f38253i);
     }
 
     public abstract Collection g();
@@ -81,7 +81,7 @@ public abstract class i0 extends k0 implements Serializable {
     public abstract Collection h(Object obj, Collection collection);
 
     public final Collection j(Object obj) {
-        Collection collection = (Collection) this.f38273i.get(obj);
+        Collection collection = (Collection) this.f38253i.get(obj);
         if (collection == null) {
             collection = g();
         }
@@ -96,10 +96,10 @@ public abstract class i0 extends k0 implements Serializable {
     }
 
     public final void o() {
-        for (Collection collection : this.f38273i.values()) {
+        for (Collection collection : this.f38253i.values()) {
             collection.clear();
         }
-        this.f38273i.clear();
-        this.f38274o = 0;
+        this.f38253i.clear();
+        this.f38254o = 0;
     }
 }

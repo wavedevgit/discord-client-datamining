@@ -1,6 +1,6 @@
 package androidx.lifecycle;
 
-import gs.j1;
+import hs.j1;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class n {
@@ -12,7 +12,7 @@ public abstract class n {
             if (kVar2 != null) {
                 return kVar2;
             }
-            kVar = new k(lifecycle, j1.b(null, 1, null).U0(gs.m0.c().f2()));
+            kVar = new k(lifecycle, j1.b(null, 1, null).Z0(hs.m0.c().f2()));
         } while (!lifecycle.c().a(null, kVar));
         kVar.b();
         return kVar;

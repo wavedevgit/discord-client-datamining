@@ -11,36 +11,36 @@ public class u extends hf.a {
     public static final Parcelable.Creator<u> CREATOR = new y();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f26896d;
+    private final int f26991d;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f26897e;
+    private List f26992e;
 
     public u(int i10, List list) {
-        this.f26896d = i10;
-        this.f26897e = list;
+        this.f26991d = i10;
+        this.f26992e = list;
     }
 
     public final int b() {
-        return this.f26896d;
+        return this.f26991d;
     }
 
     public final List c() {
-        return this.f26897e;
+        return this.f26992e;
     }
 
     public final void d(n nVar) {
-        if (this.f26897e == null) {
-            this.f26897e = new ArrayList();
+        if (this.f26992e == null) {
+            this.f26992e = new ArrayList();
         }
-        this.f26897e.add(nVar);
+        this.f26992e.add(nVar);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 1, this.f26896d);
-        hf.c.w(parcel, 2, this.f26897e, false);
+        hf.c.l(parcel, 1, this.f26991d);
+        hf.c.w(parcel, 2, this.f26992e, false);
         hf.c.b(parcel, a10);
     }
 }

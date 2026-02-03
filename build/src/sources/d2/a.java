@@ -8,7 +8,7 @@ public abstract class a {
 
     /* renamed from: d2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    static class C0276a {
+    static class C0282a {
         static Interpolator a(float f10, float f11, float f12, float f13) {
             return new PathInterpolator(f10, f11, f12, f13);
         }
@@ -19,10 +19,10 @@ public abstract class a {
     }
 
     public static Interpolator a(float f10, float f11, float f12, float f13) {
-        return C0276a.a(f10, f11, f12, f13);
+        return C0282a.a(f10, f11, f12, f13);
     }
 
     public static Interpolator b(Path path) {
-        return C0276a.b(path);
+        return C0282a.b(path);
     }
 }

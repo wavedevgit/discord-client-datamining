@@ -1,125 +1,106 @@
 package ws;
 
-import at.p0;
-import ir.l;
-import ir.o;
-import kotlin.Lazy;
-import kotlin.Unit;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.functions.Function0;
-import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Lambda;
-import kotlinx.serialization.KSerializer;
-import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.CompositeEncoder;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import qs.c;
+import ws.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class d implements KSerializer {
+public final class d extends e {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final d f52765a = new d();
+    /* renamed from: c  reason: collision with root package name */
+    private final int f52988c;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f52766b = l.a(o.f31119e, a.f52767d);
+    /* renamed from: d  reason: collision with root package name */
+    private final int f52989d;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function0 {
+    /* renamed from: e  reason: collision with root package name */
+    private final a f52990e;
 
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f52767d = new a();
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* renamed from: ws.d$a$a  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        public static final class C0725a extends Lambda implements Function1 {
-
-            /* renamed from: d  reason: collision with root package name */
-            public static final C0725a f52768d = new C0725a();
-
-            C0725a() {
-                super(1);
-            }
-
-            public final void a(zs.a buildClassSerialDescriptor) {
-                Intrinsics.checkNotNullParameter(buildClassSerialDescriptor, "$this$buildClassSerialDescriptor");
-                buildClassSerialDescriptor.a("days", p0.f6864a.getDescriptor(), CollectionsKt.l(), false);
-            }
-
-            @Override // kotlin.jvm.functions.Function1
-            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-                a((zs.a) obj);
-                return Unit.f33298a;
-            }
-        }
-
-        a() {
-            super(0);
-        }
-
-        @Override // kotlin.jvm.functions.Function0
-        /* renamed from: a */
-        public final SerialDescriptor invoke() {
-            return zs.j.c("kotlinx.datetime.DayBased", new SerialDescriptor[0], C0725a.f52768d);
-        }
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public d(int r3, int r4, ws.a r5, java.lang.String r6) {
+        /*
+            r2 = this;
+            java.lang.String r0 = "setter"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
+            java.lang.String r0 = "name"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r6, r0)
+            r0 = 0
+            if (r3 != r4) goto L12
+            java.lang.Integer r1 = java.lang.Integer.valueOf(r3)
+            goto L13
+        L12:
+            r1 = r0
+        L13:
+            r2.<init>(r1, r6, r0)
+            r2.f52988c = r3
+            r2.f52989d = r4
+            r2.f52990e = r5
+            r5 = 1
+            java.lang.String r6 = " for field "
+            if (r5 > r3) goto L5c
+            r5 = 10
+            if (r3 >= r5) goto L5c
+            if (r3 > r4) goto L2a
+            if (r4 >= r5) goto L2a
+            return
+        L2a:
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            r5.<init>()
+            java.lang.String r0 = "Invalid maximum length "
+            r5.append(r0)
+            r5.append(r4)
+            r5.append(r6)
+            java.lang.String r4 = r2.c()
+            r5.append(r4)
+            java.lang.String r4 = ": expected "
+            r5.append(r4)
+            r5.append(r3)
+            java.lang.String r3 = "..9"
+            r5.append(r3)
+            java.lang.String r3 = r5.toString()
+            java.lang.IllegalArgumentException r4 = new java.lang.IllegalArgumentException
+            java.lang.String r3 = r3.toString()
+            r4.<init>(r3)
+            throw r4
+        L5c:
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            r4.<init>()
+            java.lang.String r5 = "Invalid minimum length "
+            r4.append(r5)
+            r4.append(r3)
+            r4.append(r6)
+            java.lang.String r3 = r2.c()
+            r4.append(r3)
+            java.lang.String r3 = ": expected 1..9"
+            r4.append(r3)
+            java.lang.String r3 = r4.toString()
+            java.lang.IllegalArgumentException r4 = new java.lang.IllegalArgumentException
+            java.lang.String r3 = r3.toString()
+            r4.<init>(r3)
+            throw r4
+        */
+        throw new UnsupportedOperationException("Method not decompiled: ws.d.<init>(int, int, ws.a, java.lang.String):void");
     }
 
-    private d() {
-    }
-
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public c.C0574c deserialize(Decoder decoder) {
-        int i10;
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        SerialDescriptor descriptor = getDescriptor();
-        kotlinx.serialization.encoding.c b10 = decoder.b(descriptor);
-        boolean z10 = true;
-        if (b10.p()) {
-            i10 = b10.i(f52765a.getDescriptor(), 0);
-        } else {
-            i10 = 0;
-            boolean z11 = false;
-            while (true) {
-                d dVar = f52765a;
-                int o10 = b10.o(dVar.getDescriptor());
-                if (o10 != -1) {
-                    if (o10 == 0) {
-                        i10 = b10.i(dVar.getDescriptor(), 0);
-                        z11 = true;
-                    } else {
-                        c.a(o10);
-                        throw new ir.h();
-                    }
-                } else {
-                    z10 = z11;
-                    break;
-                }
-            }
+    @Override // ws.e
+    public g a(Object obj, CharSequence input, int i10, int i11) {
+        int d10;
+        g f10;
+        Intrinsics.checkNotNullParameter(input, "input");
+        int i12 = i11 - i10;
+        int i13 = this.f52988c;
+        if (i12 < i13) {
+            return new g.c(i13);
         }
-        Unit unit = Unit.f33298a;
-        b10.c(descriptor);
-        if (z10) {
-            return new c.C0574c(i10);
+        int i14 = this.f52989d;
+        if (i12 > i14) {
+            return new g.d(i14);
         }
-        throw new xs.c("days", getDescriptor().h());
-    }
-
-    @Override // xs.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, c.C0574c value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        SerialDescriptor descriptor = getDescriptor();
-        CompositeEncoder b10 = encoder.b(descriptor);
-        b10.w(f52765a.getDescriptor(), 0, value.d());
-        b10.c(descriptor);
-    }
-
-    @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return (SerialDescriptor) f52766b.getValue();
+        a aVar = this.f52990e;
+        d10 = f.d(input, i10, i11);
+        f10 = f.f(aVar, obj, new ts.a(d10, i12));
+        return f10;
     }
 }

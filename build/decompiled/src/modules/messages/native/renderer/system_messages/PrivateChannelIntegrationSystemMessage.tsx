@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/PrivateChannelIntegrationSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun55770: for (var _fun55770_ip = 0;;) switch (_fun55770_ip) {
+        _fun55876: for (var _fun55876_ip = 0;;) switch (_fun55876_ip) {
             case 0:
                 var3 = arg0;
                 var5 = var3.message;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7 == var11;
                 var0 = undefined;
                 if (var8) {
-                    _fun55770_ip = 116;
-                    continue _fun55770
+                    _fun55876_ip = 116;
+                    continue _fun55876
                 }
             case 110:
                 var0 = var11.bot;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var7 != var0;
                 var8 = undefined;
                 if (!var0) {
-                    _fun55770_ip = 164;
-                    continue _fun55770
+                    _fun55876_ip = 164;
+                    continue _fun55876
                 }
             case 125:
                 var0 = {};
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4.PRIVATE_CHANNEL_INTEGRATION_ADDED;
                 var4 = arg1;
                 if (!(var4 !== var5)) {
-                    _fun55770_ip = 236;
-                    continue _fun55770
+                    _fun55876_ip = 236;
+                    continue _fun55876
                 }
             case 183:
                 var5 = _closure1_slot0;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.usernameOnClick = var9;
                 var4.applicationNameOnClick = var8;
                 var4 = var5.bind(var6)(var4);
-                _fun55770_ip = 287;
-                continue _fun55770;
+                _fun55876_ip = 287;
+                continue _fun55876;
             case 236:
                 var6 = _closure1_slot0;
                 var7 = _closure1_slot2;
@@ -131,4 +131,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createPrivateChannelIntegrationSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3944, 6659, 6642, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3974, 6690, 6673, 2]);

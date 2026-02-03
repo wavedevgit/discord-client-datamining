@@ -98,7 +98,7 @@ public final class SystemMessageItem extends ChatListItem {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SystemMessageItem(@NotNull Message message, @NotNull MessageContext messageContext, BackgroundHighlight backgroundHighlight) {
-        super(message.m237getId3Eiw7ao(), null);
+        super(message.m239getId3Eiw7ao(), null);
         Intrinsics.checkNotNullParameter(message, "message");
         Intrinsics.checkNotNullParameter(messageContext, "messageContext");
         this.message = message;

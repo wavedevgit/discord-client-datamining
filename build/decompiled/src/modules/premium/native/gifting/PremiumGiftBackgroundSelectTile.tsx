@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var5.bind(var0)(var4);
     var7 = var8.createStyles;
     var4 = function(arg0) { // Environment: var3
-        _fun75234: for (var _fun75234_ip = 0;;) switch (_fun75234_ip) {
+        _fun75345: for (var _fun75345_ip = 0;;) switch (_fun75345_ip) {
             case 0:
                 var0 = {};
                 var1 = {
@@ -133,8 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = arg0;
                 var3 = 0;
                 if (!(var3 === var6)) {
-                    _fun75234_ip = 69;
-                    continue _fun75234
+                    _fun75345_ip = 69;
+                    continue _fun75345
                 }
             case 66:
                 var3 = 20;
@@ -181,7 +181,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/native/gifting/PremiumGiftBackgroundSelectTile.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun75235: for (var _fun75235_ip = 0;;) switch (_fun75235_ip) {
+        _fun75346: for (var _fun75346_ip = 0;;) switch (_fun75346_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.index;
@@ -196,8 +196,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var9;
                 if (var1) {
-                    _fun75235_ip = 296;
-                    continue _fun75235
+                    _fun75346_ip = 296;
+                    continue _fun75346
                 }
             case 59:
                 var3 = _closure1_slot7;
@@ -231,8 +231,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.style = var8;
                 var1.onPress = var5;
                 if (!var7) {
-                    _fun75235_ip = 220;
-                    continue _fun75235
+                    _fun75346_ip = 220;
+                    continue _fun75346
                 }
             case 194:
                 var11 = _closure1_slot6;
@@ -267,4 +267,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.GIFT_STYLE_IMG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1615, 9471, 33, 9472, 9473, 9474, 9475, 9476, 9477, 9478, 9479, 9480, 1297, 671, 1234, 1913, 4669, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1615, 9503, 33, 9504, 9505, 9506, 9507, 9508, 9509, 9510, 9511, 9512, 1297, 671, 1234, 1913, 4699, 2]);

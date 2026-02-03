@@ -1,7 +1,7 @@
 package app.rive.runtime.kotlin.core;
 
 import com.facebook.react.devsupport.StackTraceHelper;
-import ir.l;
+import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;

@@ -1,8 +1,8 @@
 package kotlin.reflect.jvm.internal.impl.load.java.lazy;
 
-import ir.l;
 import java.util.Collection;
 import java.util.List;
+import jr.l;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentDescriptor;
@@ -20,29 +20,29 @@ import org.jetbrains.annotations.NotNull;
 public final class LazyJavaPackageFragmentProvider implements PackageFragmentProviderOptimized {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LazyJavaResolverContext f34161a;
+    private final LazyJavaResolverContext f33937a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CacheWithNotNullValues f34162b;
+    private final CacheWithNotNullValues f33938b;
 
     public LazyJavaPackageFragmentProvider(@NotNull JavaResolverComponents components) {
         Intrinsics.checkNotNullParameter(components, "components");
         LazyJavaResolverContext lazyJavaResolverContext = new LazyJavaResolverContext(components, TypeParameterResolver.EMPTY.INSTANCE, l.c(null));
-        this.f34161a = lazyJavaResolverContext;
-        this.f34162b = lazyJavaResolverContext.getStorageManager().createCacheWithNotNullValues();
+        this.f33937a = lazyJavaResolverContext;
+        this.f33938b = lazyJavaResolverContext.getStorageManager().createCacheWithNotNullValues();
     }
 
     private final LazyJavaPackageFragment b(FqName fqName) {
-        JavaPackage findPackage$default = JavaClassFinder$$Util.findPackage$default(this.f34161a.getComponents().getFinder(), fqName, false, 2, null);
+        JavaPackage findPackage$default = JavaClassFinder$$Util.findPackage$default(this.f33937a.getComponents().getFinder(), fqName, false, 2, null);
         if (findPackage$default == null) {
             return null;
         }
-        return (LazyJavaPackageFragment) this.f34162b.computeIfAbsent(fqName, new d(this, findPackage$default));
+        return (LazyJavaPackageFragment) this.f33938b.computeIfAbsent(fqName, new d(this, findPackage$default));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final LazyJavaPackageFragment c(LazyJavaPackageFragmentProvider lazyJavaPackageFragmentProvider, JavaPackage javaPackage) {
-        return new LazyJavaPackageFragment(lazyJavaPackageFragmentProvider.f34161a, javaPackage);
+        return new LazyJavaPackageFragment(lazyJavaPackageFragmentProvider.f33937a, javaPackage);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProviderOptimized
@@ -53,7 +53,7 @@ public final class LazyJavaPackageFragmentProvider implements PackageFragmentPro
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProvider
-    @ir.c
+    @jr.c
     @NotNull
     public List<LazyJavaPackageFragment> getPackageFragments(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
@@ -68,7 +68,7 @@ public final class LazyJavaPackageFragmentProvider implements PackageFragmentPro
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProviderOptimized
     public boolean isEmpty(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        if (JavaClassFinder$$Util.findPackage$default(this.f34161a.getComponents().getFinder(), fqName, false, 2, null) != null) {
+        if (JavaClassFinder$$Util.findPackage$default(this.f33937a.getComponents().getFinder(), fqName, false, 2, null) != null) {
             return false;
         }
         return true;
@@ -76,7 +76,7 @@ public final class LazyJavaPackageFragmentProvider implements PackageFragmentPro
 
     @NotNull
     public String toString() {
-        return "LazyJavaPackageFragmentProvider of module " + this.f34161a.getComponents().getModule();
+        return "LazyJavaPackageFragmentProvider of module " + this.f33937a.getComponents().getModule();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProvider

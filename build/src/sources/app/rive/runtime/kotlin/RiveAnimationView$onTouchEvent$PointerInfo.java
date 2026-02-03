@@ -8,43 +8,43 @@ import org.jetbrains.annotations.NotNull;
 public final class RiveAnimationView$onTouchEvent$PointerInfo {
 
     /* renamed from: id  reason: collision with root package name */
-    private final int f6586id;
+    private final int f6033id;
 
     /* renamed from: x  reason: collision with root package name */
-    private final float f6587x;
+    private final float f6034x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final float f6588y;
+    private final float f6035y;
 
     public RiveAnimationView$onTouchEvent$PointerInfo(int i10, float f10, float f11) {
-        this.f6586id = i10;
-        this.f6587x = f10;
-        this.f6588y = f11;
+        this.f6033id = i10;
+        this.f6034x = f10;
+        this.f6035y = f11;
     }
 
     public static /* synthetic */ RiveAnimationView$onTouchEvent$PointerInfo copy$default(RiveAnimationView$onTouchEvent$PointerInfo riveAnimationView$onTouchEvent$PointerInfo, int i10, float f10, float f11, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            i10 = riveAnimationView$onTouchEvent$PointerInfo.f6586id;
+            i10 = riveAnimationView$onTouchEvent$PointerInfo.f6033id;
         }
         if ((i11 & 2) != 0) {
-            f10 = riveAnimationView$onTouchEvent$PointerInfo.f6587x;
+            f10 = riveAnimationView$onTouchEvent$PointerInfo.f6034x;
         }
         if ((i11 & 4) != 0) {
-            f11 = riveAnimationView$onTouchEvent$PointerInfo.f6588y;
+            f11 = riveAnimationView$onTouchEvent$PointerInfo.f6035y;
         }
         return riveAnimationView$onTouchEvent$PointerInfo.copy(i10, f10, f11);
     }
 
     public final int component1() {
-        return this.f6586id;
+        return this.f6033id;
     }
 
     public final float component2() {
-        return this.f6587x;
+        return this.f6034x;
     }
 
     public final float component3() {
-        return this.f6588y;
+        return this.f6035y;
     }
 
     @NotNull
@@ -58,32 +58,32 @@ public final class RiveAnimationView$onTouchEvent$PointerInfo {
         }
         if (obj instanceof RiveAnimationView$onTouchEvent$PointerInfo) {
             RiveAnimationView$onTouchEvent$PointerInfo riveAnimationView$onTouchEvent$PointerInfo = (RiveAnimationView$onTouchEvent$PointerInfo) obj;
-            return this.f6586id == riveAnimationView$onTouchEvent$PointerInfo.f6586id && Float.compare(this.f6587x, riveAnimationView$onTouchEvent$PointerInfo.f6587x) == 0 && Float.compare(this.f6588y, riveAnimationView$onTouchEvent$PointerInfo.f6588y) == 0;
+            return this.f6033id == riveAnimationView$onTouchEvent$PointerInfo.f6033id && Float.compare(this.f6034x, riveAnimationView$onTouchEvent$PointerInfo.f6034x) == 0 && Float.compare(this.f6035y, riveAnimationView$onTouchEvent$PointerInfo.f6035y) == 0;
         }
         return false;
     }
 
     public final int getId() {
-        return this.f6586id;
+        return this.f6033id;
     }
 
     public final float getX() {
-        return this.f6587x;
+        return this.f6034x;
     }
 
     public final float getY() {
-        return this.f6588y;
+        return this.f6035y;
     }
 
     public int hashCode() {
-        return (((Integer.hashCode(this.f6586id) * 31) + Float.hashCode(this.f6587x)) * 31) + Float.hashCode(this.f6588y);
+        return (((Integer.hashCode(this.f6033id) * 31) + Float.hashCode(this.f6034x)) * 31) + Float.hashCode(this.f6035y);
     }
 
     @NotNull
     public String toString() {
-        int i10 = this.f6586id;
-        float f10 = this.f6587x;
-        float f11 = this.f6588y;
+        int i10 = this.f6033id;
+        float f10 = this.f6034x;
+        float f11 = this.f6035y;
         return "PointerInfo(id=" + i10 + ", x=" + f10 + ", y=" + f11 + ")";
     }
 }

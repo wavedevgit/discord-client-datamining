@@ -3,16 +3,16 @@ package ck;
 public final class h extends i {
 
     /* renamed from: c  reason: collision with root package name */
-    private final i f8417c;
+    private final i f8273c;
 
     public h(i iVar) {
         super(iVar.d(), iVar.a());
-        this.f8417c = iVar;
+        this.f8273c = iVar;
     }
 
     @Override // ck.i
     public byte[] b() {
-        byte[] b10 = this.f8417c.b();
+        byte[] b10 = this.f8273c.b();
         int d10 = d() * a();
         byte[] bArr = new byte[d10];
         for (int i10 = 0; i10 < d10; i10++) {
@@ -23,7 +23,7 @@ public final class h extends i {
 
     @Override // ck.i
     public byte[] c(int i10, byte[] bArr) {
-        byte[] c10 = this.f8417c.c(i10, bArr);
+        byte[] c10 = this.f8273c.c(i10, bArr);
         int d10 = d();
         for (int i11 = 0; i11 < d10; i11++) {
             c10[i11] = (byte) (255 - (c10[i11] & 255));
@@ -33,16 +33,16 @@ public final class h extends i {
 
     @Override // ck.i
     public i e() {
-        return this.f8417c;
+        return this.f8273c;
     }
 
     @Override // ck.i
     public boolean f() {
-        return this.f8417c.f();
+        return this.f8273c.f();
     }
 
     @Override // ck.i
     public i g() {
-        return new h(this.f8417c.g());
+        return new h(this.f8273c.g());
     }
 }

@@ -9,16 +9,16 @@ import p4.j;
 public final class k implements j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f44902a;
+    private final r3.u f44976a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f44903b;
+    private final r3.i f44977b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r3.a0 f44904c;
+    private final r3.a0 f44978c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final r3.a0 f44905d;
+    private final r3.a0 f44979d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -34,14 +34,14 @@ public final class k implements j {
         @Override // r3.i
         /* renamed from: k */
         public void i(x3.k kVar, i iVar) {
-            String str = iVar.f44899a;
+            String str = iVar.f44973a;
             if (str == null) {
                 kVar.P1(1);
             } else {
-                kVar.g1(1, str);
+                kVar.h1(1, str);
             }
             kVar.w1(2, iVar.a());
-            kVar.w1(3, iVar.f44901c);
+            kVar.w1(3, iVar.f44975c);
         }
     }
 
@@ -70,10 +70,10 @@ public final class k implements j {
     }
 
     public k(r3.u uVar) {
-        this.f44902a = uVar;
-        this.f44903b = new a(uVar);
-        this.f44904c = new b(uVar);
-        this.f44905d = new c(uVar);
+        this.f44976a = uVar;
+        this.f44977b = new a(uVar);
+        this.f44978c = new b(uVar);
+        this.f44979d = new c(uVar);
     }
 
     public static List j() {
@@ -91,13 +91,13 @@ public final class k implements j {
         if (str == null) {
             l10.P1(1);
         } else {
-            l10.g1(1, str);
+            l10.h1(1, str);
         }
         l10.w1(2, i10);
-        this.f44902a.d();
+        this.f44976a.d();
         i iVar = null;
         String string = null;
-        Cursor b10 = t3.b.b(this.f44902a, l10, false, null);
+        Cursor b10 = t3.b.b(this.f44976a, l10, false, null);
         try {
             int e10 = t3.a.e(b10, "work_spec_id");
             int e11 = t3.a.e(b10, "generation");
@@ -119,8 +119,8 @@ public final class k implements j {
     public List c() {
         String string;
         r3.x l10 = r3.x.l("SELECT DISTINCT work_spec_id FROM SystemIdInfo", 0);
-        this.f44902a.d();
-        Cursor b10 = t3.b.b(this.f44902a, l10, false, null);
+        this.f44976a.d();
+        Cursor b10 = t3.b.b(this.f44976a, l10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -145,52 +145,52 @@ public final class k implements j {
 
     @Override // p4.j
     public void e(i iVar) {
-        this.f44902a.d();
-        this.f44902a.e();
+        this.f44976a.d();
+        this.f44976a.e();
         try {
-            this.f44903b.j(iVar);
-            this.f44902a.A();
+            this.f44977b.j(iVar);
+            this.f44976a.A();
         } finally {
-            this.f44902a.i();
+            this.f44976a.i();
         }
     }
 
     @Override // p4.j
     public void f(String str, int i10) {
-        this.f44902a.d();
-        x3.k b10 = this.f44904c.b();
+        this.f44976a.d();
+        x3.k b10 = this.f44978c.b();
         if (str == null) {
             b10.P1(1);
         } else {
-            b10.g1(1, str);
+            b10.h1(1, str);
         }
         b10.w1(2, i10);
-        this.f44902a.e();
+        this.f44976a.e();
         try {
             b10.R();
-            this.f44902a.A();
+            this.f44976a.A();
         } finally {
-            this.f44902a.i();
-            this.f44904c.h(b10);
+            this.f44976a.i();
+            this.f44978c.h(b10);
         }
     }
 
     @Override // p4.j
     public void h(String str) {
-        this.f44902a.d();
-        x3.k b10 = this.f44905d.b();
+        this.f44976a.d();
+        x3.k b10 = this.f44979d.b();
         if (str == null) {
             b10.P1(1);
         } else {
-            b10.g1(1, str);
+            b10.h1(1, str);
         }
-        this.f44902a.e();
+        this.f44976a.e();
         try {
             b10.R();
-            this.f44902a.A();
+            this.f44976a.A();
         } finally {
-            this.f44902a.i();
-            this.f44905d.h(b10);
+            this.f44976a.i();
+            this.f44979d.h(b10);
         }
     }
 }

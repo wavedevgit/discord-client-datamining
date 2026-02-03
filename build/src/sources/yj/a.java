@@ -6,10 +6,10 @@ import xj.e;
 public class a extends wj.e implements xj.d {
 
     /* renamed from: t  reason: collision with root package name */
-    static final xj.e f54786t = new e.a().a();
+    static final xj.e f54761t = new e.a().a();
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f54787s;
+    private final boolean f54762s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: Illegal instructions before constructor call */
@@ -26,7 +26,7 @@ public class a extends wj.e implements xj.d {
             og.qd r4 = og.be.b(r4)
             r0.<init>(r1, r2)
             boolean r1 = yj.k.d()
-            r0.f54787s = r1
+            r0.f54762s = r1
             og.ea r2 = new og.ea
             r2.<init>()
             if (r1 == 0) goto L23
@@ -53,7 +53,7 @@ public class a extends wj.e implements xj.d {
 
     @Override // ef.f
     public final com.google.android.gms.common.d[] a() {
-        return this.f54787s ? pj.l.f46020a : new com.google.android.gms.common.d[]{pj.l.f46023d};
+        return this.f54762s ? pj.l.f46094a : new com.google.android.gms.common.d[]{pj.l.f46097d};
     }
 
     @Override // xj.d

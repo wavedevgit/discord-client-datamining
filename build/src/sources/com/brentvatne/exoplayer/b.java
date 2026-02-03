@@ -14,10 +14,10 @@ import okhttp3.OkHttpClient;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static DataSource.Factory f9328a;
+    private static DataSource.Factory f8957a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static String f9329b;
+    private static String f8958b;
 
     private static DataSource.Factory a(ReactContext reactContext, r rVar, Map map) {
         return new com.google.android.exoplayer2.upstream.c(reactContext, rVar, b(reactContext, rVar, map));
@@ -25,7 +25,7 @@ public abstract class b {
 
     private static g.c b(ReactContext reactContext, r rVar, Map map) {
         OkHttpClient okHttpClient = OkHttpClientProvider.getOkHttpClient();
-        ((CookieJarContainer) okHttpClient.r()).setCookieJar(new tt.i(new ForwardingCookieHandler(reactContext)));
+        ((CookieJarContainer) okHttpClient.r()).setCookieJar(new ut.i(new ForwardingCookieHandler(reactContext)));
         sc.b bVar = new sc.b(okHttpClient, d(reactContext), rVar);
         if (map != null) {
             bVar.c(map);
@@ -34,20 +34,20 @@ public abstract class b {
     }
 
     public static DataSource.Factory c(ReactContext reactContext, r rVar, Map map) {
-        if (f9328a == null || (map != null && !map.isEmpty())) {
-            f9328a = a(reactContext, rVar, map);
+        if (f8957a == null || (map != null && !map.isEmpty())) {
+            f8957a = a(reactContext, rVar, map);
         }
-        return f9328a;
+        return f8957a;
     }
 
     public static String d(ReactContext reactContext) {
-        if (f9329b == null) {
-            f9329b = w0.r0(reactContext, "ReactNativeVideo");
+        if (f8958b == null) {
+            f8958b = w0.r0(reactContext, "ReactNativeVideo");
         }
-        return f9329b;
+        return f8958b;
     }
 
     public static void e(DataSource.Factory factory) {
-        f9328a = factory;
+        f8957a = factory;
     }
 }

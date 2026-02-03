@@ -14,11 +14,11 @@ public class v extends w {
 
     @Override // r.w, r.g.a
     public int b(List list, Executor executor, CameraCaptureSession.CaptureCallback captureCallback) {
-        return this.f47788a.captureBurstRequests(list, executor, captureCallback);
+        return this.f47990a.captureBurstRequests(list, executor, captureCallback);
     }
 
     @Override // r.w, r.g.a
     public int c(CaptureRequest captureRequest, Executor executor, CameraCaptureSession.CaptureCallback captureCallback) {
-        return this.f47788a.setSingleRepeatingRequest(captureRequest, executor, captureCallback);
+        return this.f47990a.setSingleRepeatingRequest(captureRequest, executor, captureCallback);
     }
 }

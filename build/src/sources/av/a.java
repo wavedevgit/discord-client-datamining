@@ -1,22 +1,36 @@
 package av;
+
+import android.os.Build;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Proxy;
+import java.util.Collection;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-class a {
-
-    /* renamed from: b  reason: collision with root package name */
-    private int f6956b = 0;
-
-    /* renamed from: a  reason: collision with root package name */
-    private final StringBuilder f6955a = new StringBuilder();
-
-    public void a(CharSequence charSequence) {
-        if (this.f6956b != 0) {
-            this.f6955a.append('\n');
+public abstract class a {
+    public static Object a(Class cls, InvocationHandler invocationHandler) {
+        if (invocationHandler == null) {
+            return null;
         }
-        this.f6955a.append(charSequence);
-        this.f6956b++;
+        return cls.cast(Proxy.newProxyInstance(a.class.getClassLoader(), new Class[]{cls}, invocationHandler));
     }
 
-    public String b() {
-        return this.f6955a.toString();
+    public static boolean b(Collection collection, String str) {
+        if (!collection.contains(str)) {
+            if (c()) {
+                if (!collection.contains(str + ":dev")) {
+                    return false;
+                }
+                return true;
+            }
+            return false;
+        }
+        return true;
+    }
+
+    private static boolean c() {
+        String str = Build.TYPE;
+        if (!"eng".equals(str) && !"userdebug".equals(str)) {
+            return false;
+        }
+        return true;
     }
 }

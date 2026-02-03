@@ -6,9 +6,9 @@ import java.util.Map;
 public final class i0 extends n0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f4492b = new LinkedHashMap();
+    private final Map f4536b = new LinkedHashMap();
 
     public final Map e() {
-        return this.f4492b;
+        return this.f4536b;
     }
 }

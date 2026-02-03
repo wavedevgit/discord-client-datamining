@@ -13,37 +13,37 @@ import ve.d;
 public final class k extends ef.d implements ve.h {
 
     /* renamed from: l  reason: collision with root package name */
-    private static final a.g f8343l;
+    private static final a.g f8199l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final a.AbstractC0290a f8344m;
+    private static final a.AbstractC0301a f8200m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final ef.a f8345n;
+    private static final ef.a f8201n;
 
     /* renamed from: k  reason: collision with root package name */
-    private final String f8346k;
+    private final String f8202k;
 
     static {
         a.g gVar = new a.g();
-        f8343l = gVar;
+        f8199l = gVar;
         h hVar = new h();
-        f8344m = hVar;
-        f8345n = new ef.a("Auth.Api.Identity.SignIn.API", hVar, gVar);
+        f8200m = hVar;
+        f8201n = new ef.a("Auth.Api.Identity.SignIn.API", hVar, gVar);
     }
 
     public k(Activity activity, ve.v vVar) {
-        super(activity, f8345n, (a.d) vVar, d.a.f22774c);
-        this.f8346k = n.a();
+        super(activity, f8201n, (a.d) vVar, d.a.f22806c);
+        this.f8202k = n.a();
     }
 
     @Override // ve.h
     public final Task b(ve.d dVar) {
         gf.q.l(dVar);
         d.a g10 = ve.d.g(dVar);
-        g10.f(this.f8346k);
+        g10.f(this.f8202k);
         final ve.d a10 = g10.a();
-        return p(ff.q.a().d(m.f8352f).b(new ff.m() { // from class: cg.g
+        return p(ff.q.a().d(m.f8208f).b(new ff.m() { // from class: cg.g
             @Override // ff.m
             public final void accept(Object obj, Object obj2) {
                 ((b0) ((l) obj).C()).S0(new j(k.this, (wg.k) obj2), (ve.d) gf.q.l(a10));
@@ -54,8 +54,8 @@ public final class k extends ef.d implements ve.h {
     @Override // ve.h
     public final Task c(ve.a aVar) {
         gf.q.l(aVar);
-        a.C0674a j10 = ve.a.j(aVar);
-        j10.h(this.f8346k);
+        a.C0686a j10 = ve.a.j(aVar);
+        j10.h(this.f8202k);
         final ve.a a10 = j10.a();
         return p(ff.q.a().d(new com.google.android.gms.common.d("auth_api_credentials_begin_sign_in", 8L)).b(new ff.m() { // from class: cg.f
             @Override // ff.m
@@ -75,17 +75,17 @@ public final class k extends ef.d implements ve.h {
                     if (iVar != null) {
                         return iVar;
                     }
-                    throw new ef.b(Status.f14791s);
+                    throw new ef.b(Status.f14420s);
                 }
                 throw new ef.b(status);
             }
-            throw new ef.b(Status.f14793u);
+            throw new ef.b(Status.f14422u);
         }
-        throw new ef.b(Status.f14791s);
+        throw new ef.b(Status.f14420s);
     }
 
     public k(Context context, ve.v vVar) {
-        super(context, f8345n, vVar, d.a.f22774c);
-        this.f8346k = n.a();
+        super(context, f8201n, vVar, d.a.f22806c);
+        this.f8202k = n.a();
     }
 }

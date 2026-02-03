@@ -7,10 +7,10 @@ import kotlin.ranges.IntRange;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public long[] f50015a;
+    public long[] f50071a;
 
     /* renamed from: b  reason: collision with root package name */
-    public int f50016b;
+    public int f50072b;
 
     public /* synthetic */ g(int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(i10);
@@ -47,8 +47,8 @@ public abstract class g {
         Intrinsics.checkNotNullParameter(truncated, "truncated");
         StringBuilder sb2 = new StringBuilder();
         sb2.append(prefix);
-        long[] jArr = this.f50015a;
-        int i11 = this.f50016b;
+        long[] jArr = this.f50071a;
+        int i11 = this.f50072b;
         int i12 = 0;
         while (true) {
             if (i12 < i11) {
@@ -75,11 +75,11 @@ public abstract class g {
     public boolean equals(Object obj) {
         if (obj instanceof g) {
             g gVar = (g) obj;
-            int i10 = gVar.f50016b;
-            int i11 = this.f50016b;
+            int i10 = gVar.f50072b;
+            int i11 = this.f50072b;
             if (i10 == i11) {
-                long[] jArr = this.f50015a;
-                long[] jArr2 = gVar.f50015a;
+                long[] jArr = this.f50071a;
+                long[] jArr2 = gVar.f50071a;
                 IntRange u10 = kotlin.ranges.d.u(0, i11);
                 int d10 = u10.d();
                 int e10 = u10.e();
@@ -100,8 +100,8 @@ public abstract class g {
     }
 
     public int hashCode() {
-        long[] jArr = this.f50015a;
-        int i10 = this.f50016b;
+        long[] jArr = this.f50071a;
+        int i10 = this.f50072b;
         int i11 = 0;
         for (int i12 = 0; i12 < i10; i12++) {
             i11 += Long.hashCode(jArr[i12]) * 31;
@@ -120,6 +120,6 @@ public abstract class g {
         } else {
             jArr = new long[i10];
         }
-        this.f50015a = jArr;
+        this.f50071a = jArr;
     }
 }

@@ -43,7 +43,7 @@ public final class FileAttachmentView$setContent$2$1 extends kotlin.coroutines.j
 
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
-        Object f10 = or.b.f();
+        Object f10 = pr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -66,13 +66,13 @@ public final class FileAttachmentView$setContent$2$1 extends kotlin.coroutines.j
                 @SourceDebugExtension({"SMAP\nFileAttachmentView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FileAttachmentView.kt\ncom/discord/chat/presentation/message/view/FileAttachmentView$setContent$2$1$1$1\n+ 2 View.kt\nandroidx/core/view/ViewKt\n*L\n1#1,142:1\n257#2,2:143\n257#2,2:145\n*S KotlinDebug\n*F\n+ 1 FileAttachmentView.kt\ncom/discord/chat/presentation/message/view/FileAttachmentView$setContent$2$1$1$1\n*L\n99#1:143,2\n100#1:145,2\n*E\n"})
                 /* renamed from: com.discord.chat.presentation.message.view.FileAttachmentView$setContent$2$1$1$1  reason: invalid class name and collision with other inner class name */
                 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-                public static final class C01431 extends kotlin.coroutines.jvm.internal.k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+                public static final class C01481 extends kotlin.coroutines.jvm.internal.k implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
                     final /* synthetic */ DownloadState $downloadState;
                     int label;
                     final /* synthetic */ FileAttachmentView this$0;
 
                     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-                    C01431(DownloadState downloadState, FileAttachmentView fileAttachmentView, Continuation<? super C01431> continuation) {
+                    C01481(DownloadState downloadState, FileAttachmentView fileAttachmentView, Continuation<? super C01481> continuation) {
                         super(2, continuation);
                         this.$downloadState = downloadState;
                         this.this$0 = fileAttachmentView;
@@ -80,7 +80,7 @@ public final class FileAttachmentView$setContent$2$1 extends kotlin.coroutines.j
 
                     @Override // kotlin.coroutines.jvm.internal.a
                     public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
-                        return new C01431(this.$downloadState, this.this$0, continuation);
+                        return new C01481(this.$downloadState, this.this$0, continuation);
                     }
 
                     @Override // kotlin.coroutines.jvm.internal.a
@@ -88,7 +88,7 @@ public final class FileAttachmentView$setContent$2$1 extends kotlin.coroutines.j
                         FileAttachmentViewBinding fileAttachmentViewBinding;
                         int i10;
                         FileAttachmentViewBinding fileAttachmentViewBinding2;
-                        or.b.f();
+                        pr.b.f();
                         if (this.label == 0) {
                             kotlin.c.b(obj);
                             boolean z10 = this.$downloadState instanceof DownloadState.InProgress;
@@ -109,14 +109,14 @@ public final class FileAttachmentView$setContent$2$1 extends kotlin.coroutines.j
                                 i11 = 0;
                             }
                             fileAttachmentDownload.setVisibility(i11);
-                            return Unit.f33298a;
+                            return Unit.f33074a;
                         }
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
 
                     @Override // kotlin.jvm.functions.Function2
                     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                        return ((C01431) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+                        return ((C01481) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
                     }
                 }
 
@@ -126,8 +126,8 @@ public final class FileAttachmentView$setContent$2$1 extends kotlin.coroutines.j
                 }
 
                 public final Object emit(DownloadState downloadState, Continuation<? super Unit> continuation) {
-                    Object g10 = gs.g.g(gs.m0.c(), new C01431(downloadState, FileAttachmentView.this, null), continuation);
-                    return g10 == or.b.f() ? g10 : Unit.f33298a;
+                    Object g10 = hs.g.g(hs.m0.c(), new C01481(downloadState, FileAttachmentView.this, null), continuation);
+                    return g10 == pr.b.f() ? g10 : Unit.f33074a;
                 }
             };
             this.label = 1;
@@ -135,11 +135,11 @@ public final class FileAttachmentView$setContent$2$1 extends kotlin.coroutines.j
                 return f10;
             }
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

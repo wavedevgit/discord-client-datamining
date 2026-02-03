@@ -1,7 +1,6 @@
 package com.withpersona.sdk2.inquiry.network.core;
 
 import android.util.Base64;
-import ir.v;
 import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -12,6 +11,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import jr.v;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.o0;
@@ -34,53 +34,53 @@ public final class a {
     @NotNull
 
     /* renamed from: a */
-    public static final a f20397a = new a();
+    public static final a f20030a = new a();
 
     /* renamed from: com.withpersona.sdk2.inquiry.network.core.a$a */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0256a {
+    public static final class C0261a {
         @NotNull
 
         /* renamed from: a */
-        public final String f20398a;
+        public final String f20031a;
         @NotNull
 
         /* renamed from: b */
-        public final String f20399b;
+        public final String f20032b;
         @NotNull
 
         /* renamed from: c */
-        public final String f20400c;
+        public final String f20033c;
         @NotNull
 
         /* renamed from: d */
-        public final String f20401d;
+        public final String f20034d;
 
-        public C0256a(@NotNull String str, @NotNull String str2, @NotNull String str3, @NotNull String str4) {
-            this.f20398a = str;
-            this.f20399b = str2;
-            this.f20400c = str3;
-            this.f20401d = str4;
+        public C0261a(@NotNull String str, @NotNull String str2, @NotNull String str3, @NotNull String str4) {
+            this.f20031a = str;
+            this.f20032b = str2;
+            this.f20033c = str3;
+            this.f20034d = str4;
         }
 
         @NotNull
         public final String a() {
-            return this.f20400c;
+            return this.f20033c;
         }
 
         @NotNull
         public final String b() {
-            return this.f20398a;
+            return this.f20031a;
         }
 
         @NotNull
         public final String c() {
-            return this.f20401d;
+            return this.f20034d;
         }
 
         @NotNull
         public final String d() {
-            return this.f20399b;
+            return this.f20032b;
         }
     }
 
@@ -91,11 +91,11 @@ public final class a {
         public final int compare(T t10, T t11) {
             Pair pair = (Pair) t10;
             Pair pair2 = (Pair) t11;
-            return lr.a.d(CollectionsKt.x0(CollectionsKt.o(pair.c(), pair.d()), null, null, null, 0, null, null, 63, null), CollectionsKt.x0(CollectionsKt.o(pair2.c(), pair2.d()), null, null, null, 0, null, null, 63, null));
+            return mr.a.d(CollectionsKt.x0(CollectionsKt.o(pair.c(), pair.d()), null, null, null, 0, null, null, 63, null), CollectionsKt.x0(CollectionsKt.o(pair2.c(), pair2.d()), null, null, null, 0, null, null, 63, null));
         }
     }
 
-    public static /* synthetic */ Request a(a aVar, Request request, vo.b bVar, long j10, int i10, Object obj) {
+    public static /* synthetic */ Request a(a aVar, Request request, wo.b bVar, long j10, int i10, Object obj) {
         if ((i10 & 2) != 0) {
             j10 = System.currentTimeMillis();
         }
@@ -111,7 +111,7 @@ public final class a {
     @NotNull
     public final JSONArray c(@NotNull RequestBody requestBody) {
         Pair a10;
-        List<Pair<String, Object>> c10 = f20397a.c(a(requestBody));
+        List<Pair<String, Object>> c10 = f20030a.c(a(requestBody));
         ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
         Iterator<T> it = c10.iterator();
         while (it.hasNext()) {
@@ -147,8 +147,8 @@ public final class a {
     }
 
     @NotNull
-    public final Request a(@NotNull Request request, @NotNull vo.b bVar, long j10) {
-        C0256a a10 = a(j10, request, bVar);
+    public final Request a(@NotNull Request request, @NotNull wo.b bVar, long j10) {
+        C0261a a10 = a(j10, request, bVar);
         return a10 != null ? request.k().a("NHMJLNRS", a10.d()).a("STPBWSBB", a10.b()).a("DNLGNZLZ", a10.a()).a("TLJLGGDG", a10.c()).b() : request;
     }
 
@@ -163,7 +163,7 @@ public final class a {
         return false;
     }
 
-    public final C0256a a(long j10, Request request, vo.b bVar) {
+    public final C0261a a(long j10, Request request, wo.b bVar) {
         String c10 = request.h().c("Authorization");
         RequestBody c11 = request.c();
         if (c10 == null || c11 == null) {
@@ -178,21 +178,21 @@ public final class a {
                 Collection values = n10.values();
                 String str = (String) CollectionsKt.B0(StringsKt.split$default(c10, new String[]{" "}, false, 0, 6, null));
                 if (str == null) {
-                    bVar.f(NetworkUtilsKt.SUBSYSTEM, vo.a.f51761i, "Auth token is null.");
+                    bVar.f(NetworkUtilsKt.SUBSYSTEM, wo.a.f52837i, "Auth token is null.");
                     return null;
                 }
                 String optString = new JSONObject(new String(Base64.decode((String) StringsKt.split$default(str, new String[]{"."}, false, 0, 6, null).get(1), 0), Charsets.UTF_8)).optString("sub");
                 if (optString != null && !StringsKt.k0(optString)) {
                     String valueOf = String.valueOf(j10 / 1000);
-                    return new C0256a(a(CollectionsKt.x0(CollectionsKt.o(optString, valueOf, StringsKt.J(c(c11).toString(), "\\/", "/", false, 4, null)), ":", null, null, 0, null, null, 62, null)), valueOf, a(CollectionsKt.x0(CollectionsKt.o(CollectionsKt.x0(values, "", null, null, 0, null, null, 62, null), valueOf, StringsKt.J(c(c11).toString(), "\\/", "/", false, 4, null)), ":", null, null, 0, null, null, 62, null)), CollectionsKt.x0(keySet, ", ", null, null, 0, null, null, 62, null));
+                    return new C0261a(a(CollectionsKt.x0(CollectionsKt.o(optString, valueOf, StringsKt.J(c(c11).toString(), "\\/", "/", false, 4, null)), ":", null, null, 0, null, null, 62, null)), valueOf, a(CollectionsKt.x0(CollectionsKt.o(CollectionsKt.x0(values, "", null, null, 0, null, null, 62, null), valueOf, StringsKt.J(c(c11).toString(), "\\/", "/", false, 4, null)), ":", null, null, 0, null, null, 62, null)), CollectionsKt.x0(keySet, ", ", null, null, 0, null, null, 62, null));
                 }
-                bVar.f(NetworkUtilsKt.SUBSYSTEM, vo.a.f51761i, "Session token is null.");
+                bVar.f(NetworkUtilsKt.SUBSYSTEM, wo.a.f52837i, "Session token is null.");
                 return null;
             }
-            bVar.f(NetworkUtilsKt.SUBSYSTEM, vo.a.f51761i, "User agent is null.");
+            bVar.f(NetworkUtilsKt.SUBSYSTEM, wo.a.f52837i, "User agent is null.");
             return null;
         } catch (Exception e10) {
-            vo.a aVar = vo.a.f51761i;
+            wo.a aVar = wo.a.f52837i;
             String message = e10.getMessage();
             bVar.f(NetworkUtilsKt.SUBSYSTEM, aVar, "An unexpected error occurred: " + message + ".");
             return null;
@@ -283,7 +283,7 @@ public final class a {
                 } else {
                     l10 = CollectionsKt.l();
                 }
-                a aVar = f20397a;
+                a aVar = f20030a;
                 String a10 = aVar.a(l10);
                 if (a10 != null) {
                     if (aVar.b(l10)) {
@@ -330,7 +330,7 @@ public final class a {
             Iterator<String> keys = jSONObject.keys();
             while (keys.hasNext()) {
                 String next = keys.next();
-                a aVar = f20397a;
+                a aVar = f20030a;
                 Object opt = jSONObject.opt(next);
                 if (str != null) {
                     next = str + "[" + next + "]";

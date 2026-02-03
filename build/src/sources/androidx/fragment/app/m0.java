@@ -13,19 +13,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class m0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final m0 f4301a;
+    public static final m0 f4345a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final o0 f4302b;
+    public static final o0 f4346b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final o0 f4303c;
+    public static final o0 f4347c;
 
     static {
         m0 m0Var = new m0();
-        f4301a = m0Var;
-        f4302b = new n0();
-        f4303c = m0Var.c();
+        f4345a = m0Var;
+        f4346b = new n0();
+        f4347c = m0Var.c();
     }
 
     private m0() {

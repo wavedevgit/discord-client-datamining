@@ -3,13 +3,13 @@ package hg;
 abstract class m extends k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f27533a = "CharMatcher.none()";
+    private final String f27706a = "CharMatcher.none()";
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m(String str) {
     }
 
     public final String toString() {
-        return this.f27533a;
+        return this.f27706a;
     }
 }

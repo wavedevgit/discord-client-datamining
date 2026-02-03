@@ -3,81 +3,81 @@ package com.google.firebase.messaging;
 public final class a implements vi.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final vi.a f17416a = new a();
+    public static final vi.a f17045a = new a();
 
     /* renamed from: com.google.firebase.messaging.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    private static final class C0194a implements ui.d {
+    private static final class C0199a implements ui.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final C0194a f17417a = new C0194a();
+        static final C0199a f17046a = new C0199a();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f17418b = ui.c.a("projectNumber").b(xi.a.b().c(1).a()).a();
+        private static final ui.c f17047b = ui.c.a("projectNumber").b(xi.a.b().c(1).a()).a();
 
         /* renamed from: c  reason: collision with root package name */
-        private static final ui.c f17419c = ui.c.a("messageId").b(xi.a.b().c(2).a()).a();
+        private static final ui.c f17048c = ui.c.a("messageId").b(xi.a.b().c(2).a()).a();
 
         /* renamed from: d  reason: collision with root package name */
-        private static final ui.c f17420d = ui.c.a("instanceId").b(xi.a.b().c(3).a()).a();
+        private static final ui.c f17049d = ui.c.a("instanceId").b(xi.a.b().c(3).a()).a();
 
         /* renamed from: e  reason: collision with root package name */
-        private static final ui.c f17421e = ui.c.a("messageType").b(xi.a.b().c(4).a()).a();
+        private static final ui.c f17050e = ui.c.a("messageType").b(xi.a.b().c(4).a()).a();
 
         /* renamed from: f  reason: collision with root package name */
-        private static final ui.c f17422f = ui.c.a("sdkPlatform").b(xi.a.b().c(5).a()).a();
+        private static final ui.c f17051f = ui.c.a("sdkPlatform").b(xi.a.b().c(5).a()).a();
 
         /* renamed from: g  reason: collision with root package name */
-        private static final ui.c f17423g = ui.c.a("packageName").b(xi.a.b().c(6).a()).a();
+        private static final ui.c f17052g = ui.c.a("packageName").b(xi.a.b().c(6).a()).a();
 
         /* renamed from: h  reason: collision with root package name */
-        private static final ui.c f17424h = ui.c.a("collapseKey").b(xi.a.b().c(7).a()).a();
+        private static final ui.c f17053h = ui.c.a("collapseKey").b(xi.a.b().c(7).a()).a();
 
         /* renamed from: i  reason: collision with root package name */
-        private static final ui.c f17425i = ui.c.a("priority").b(xi.a.b().c(8).a()).a();
+        private static final ui.c f17054i = ui.c.a("priority").b(xi.a.b().c(8).a()).a();
 
         /* renamed from: j  reason: collision with root package name */
-        private static final ui.c f17426j = ui.c.a("ttl").b(xi.a.b().c(9).a()).a();
+        private static final ui.c f17055j = ui.c.a("ttl").b(xi.a.b().c(9).a()).a();
 
         /* renamed from: k  reason: collision with root package name */
-        private static final ui.c f17427k = ui.c.a("topic").b(xi.a.b().c(10).a()).a();
+        private static final ui.c f17056k = ui.c.a("topic").b(xi.a.b().c(10).a()).a();
 
         /* renamed from: l  reason: collision with root package name */
-        private static final ui.c f17428l = ui.c.a("bulkId").b(xi.a.b().c(11).a()).a();
+        private static final ui.c f17057l = ui.c.a("bulkId").b(xi.a.b().c(11).a()).a();
 
         /* renamed from: m  reason: collision with root package name */
-        private static final ui.c f17429m = ui.c.a("event").b(xi.a.b().c(12).a()).a();
+        private static final ui.c f17058m = ui.c.a("event").b(xi.a.b().c(12).a()).a();
 
         /* renamed from: n  reason: collision with root package name */
-        private static final ui.c f17430n = ui.c.a("analyticsLabel").b(xi.a.b().c(13).a()).a();
+        private static final ui.c f17059n = ui.c.a("analyticsLabel").b(xi.a.b().c(13).a()).a();
 
         /* renamed from: o  reason: collision with root package name */
-        private static final ui.c f17431o = ui.c.a("campaignId").b(xi.a.b().c(14).a()).a();
+        private static final ui.c f17060o = ui.c.a("campaignId").b(xi.a.b().c(14).a()).a();
 
         /* renamed from: p  reason: collision with root package name */
-        private static final ui.c f17432p = ui.c.a("composerLabel").b(xi.a.b().c(15).a()).a();
+        private static final ui.c f17061p = ui.c.a("composerLabel").b(xi.a.b().c(15).a()).a();
 
-        private C0194a() {
+        private C0199a() {
         }
 
         @Override // ui.d
         /* renamed from: b */
         public void a(hj.a aVar, ui.e eVar) {
-            eVar.d(f17418b, aVar.l());
-            eVar.b(f17419c, aVar.h());
-            eVar.b(f17420d, aVar.g());
-            eVar.b(f17421e, aVar.i());
-            eVar.b(f17422f, aVar.m());
-            eVar.b(f17423g, aVar.j());
-            eVar.b(f17424h, aVar.d());
-            eVar.e(f17425i, aVar.k());
-            eVar.e(f17426j, aVar.o());
-            eVar.b(f17427k, aVar.n());
-            eVar.d(f17428l, aVar.b());
-            eVar.b(f17429m, aVar.f());
-            eVar.b(f17430n, aVar.a());
-            eVar.d(f17431o, aVar.c());
-            eVar.b(f17432p, aVar.e());
+            eVar.d(f17047b, aVar.l());
+            eVar.b(f17048c, aVar.h());
+            eVar.b(f17049d, aVar.g());
+            eVar.b(f17050e, aVar.i());
+            eVar.b(f17051f, aVar.m());
+            eVar.b(f17052g, aVar.j());
+            eVar.b(f17053h, aVar.d());
+            eVar.e(f17054i, aVar.k());
+            eVar.e(f17055j, aVar.o());
+            eVar.b(f17056k, aVar.n());
+            eVar.d(f17057l, aVar.b());
+            eVar.b(f17058m, aVar.f());
+            eVar.b(f17059n, aVar.a());
+            eVar.d(f17060o, aVar.c());
+            eVar.b(f17061p, aVar.e());
         }
     }
 
@@ -85,10 +85,10 @@ public final class a implements vi.a {
     private static final class b implements ui.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final b f17433a = new b();
+        static final b f17062a = new b();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f17434b = ui.c.a("messagingClientEvent").b(xi.a.b().c(1).a()).a();
+        private static final ui.c f17063b = ui.c.a("messagingClientEvent").b(xi.a.b().c(1).a()).a();
 
         private b() {
         }
@@ -96,7 +96,7 @@ public final class a implements vi.a {
         @Override // ui.d
         /* renamed from: b */
         public void a(hj.b bVar, ui.e eVar) {
-            eVar.b(f17434b, bVar.a());
+            eVar.b(f17063b, bVar.a());
         }
     }
 
@@ -104,10 +104,10 @@ public final class a implements vi.a {
     private static final class c implements ui.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final c f17435a = new c();
+        static final c f17064a = new c();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f17436b = ui.c.d("messagingClientEventExtension");
+        private static final ui.c f17065b = ui.c.d("messagingClientEventExtension");
 
         private c() {
         }
@@ -128,8 +128,8 @@ public final class a implements vi.a {
 
     @Override // vi.a
     public void a(vi.b bVar) {
-        bVar.a(j0.class, c.f17435a);
-        bVar.a(hj.b.class, b.f17433a);
-        bVar.a(hj.a.class, C0194a.f17417a);
+        bVar.a(j0.class, c.f17064a);
+        bVar.a(hj.b.class, b.f17062a);
+        bVar.a(hj.a.class, C0199a.f17046a);
     }
 }

@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final t f11940a = new t();
+    public static final t f11569a = new t();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends Exception {

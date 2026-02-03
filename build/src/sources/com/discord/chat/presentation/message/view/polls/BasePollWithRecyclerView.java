@@ -46,16 +46,16 @@ public abstract class BasePollWithRecyclerView extends ConstraintLayout implemen
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$3(Function3 function3, PollMessageAccessory pollMessageAccessory, String answerId) {
         Intrinsics.checkNotNullParameter(answerId, "answerId");
-        function3.invoke(ChannelId.m1058boximpl(pollMessageAccessory.m630getChannelIdo4g7jtM()), MessageId.m1084boximpl(pollMessageAccessory.mo536getMessageId3Eiw7ao()), answerId);
-        return Unit.f33298a;
+        function3.invoke(ChannelId.m1060boximpl(pollMessageAccessory.m632getChannelIdo4g7jtM()), MessageId.m1086boximpl(pollMessageAccessory.mo538getMessageId3Eiw7ao()), answerId);
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$4(Function8 function8, PollMessageAccessory pollMessageAccessory, String attachmentId, int i10, int i11, int i12, int i13, ViewResizeMode viewResizeMode) {
         Intrinsics.checkNotNullParameter(attachmentId, "attachmentId");
         Intrinsics.checkNotNullParameter(viewResizeMode, "viewResizeMode");
-        function8.invoke(ChannelId.m1058boximpl(pollMessageAccessory.m630getChannelIdo4g7jtM()), MessageId.m1084boximpl(pollMessageAccessory.mo536getMessageId3Eiw7ao()), attachmentId, Integer.valueOf((int) SizeUtilsKt.getPxToDp(i10)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i11)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i12)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i13)), viewResizeMode);
-        return Unit.f33298a;
+        function8.invoke(ChannelId.m1060boximpl(pollMessageAccessory.m632getChannelIdo4g7jtM()), MessageId.m1086boximpl(pollMessageAccessory.mo538getMessageId3Eiw7ao()), attachmentId, Integer.valueOf((int) SizeUtilsKt.getPxToDp(i10)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i11)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i12)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i13)), viewResizeMode);
+        return Unit.f33074a;
     }
 
     protected static /* synthetic */ void getBinding$annotations() {
@@ -113,9 +113,9 @@ public abstract class BasePollWithRecyclerView extends ConstraintLayout implemen
         }
         textView.setVisibility(i10);
         textView.setText(accessory.getData().getPromptLabel());
-        this.binding.primaryAction.m709bindurJ__Hs(accessory.getData().getPrimaryAction(), accessory.m630getChannelIdo4g7jtM(), accessory.mo536getMessageId3Eiw7ao(), onTapPollAction);
-        this.binding.secondaryActionButton.m709bindurJ__Hs(accessory.getData().getSecondaryAction(), accessory.m630getChannelIdo4g7jtM(), accessory.mo536getMessageId3Eiw7ao(), onTapPollAction);
-        this.binding.tertiaryActionButton.m709bindurJ__Hs(accessory.getData().getTertiaryAction(), accessory.m630getChannelIdo4g7jtM(), accessory.mo536getMessageId3Eiw7ao(), onTapPollAction);
+        this.binding.primaryAction.m711bindurJ__Hs(accessory.getData().getPrimaryAction(), accessory.m632getChannelIdo4g7jtM(), accessory.mo538getMessageId3Eiw7ao(), onTapPollAction);
+        this.binding.secondaryActionButton.m711bindurJ__Hs(accessory.getData().getSecondaryAction(), accessory.m632getChannelIdo4g7jtM(), accessory.mo538getMessageId3Eiw7ao(), onTapPollAction);
+        this.binding.tertiaryActionButton.m711bindurJ__Hs(accessory.getData().getTertiaryAction(), accessory.m632getChannelIdo4g7jtM(), accessory.mo538getMessageId3Eiw7ao(), onTapPollAction);
         if (hasAccessibilityFocus && !this.binding.primaryAction.hasAccessibilityFocus()) {
             z11 = true;
         } else {

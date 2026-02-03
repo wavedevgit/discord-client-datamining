@@ -106,74 +106,74 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$10(String str, String str2, String str3, String str4) {
         Intrinsics.checkNotNullParameter(str2, "<unused var>");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$11(CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$12(CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$14(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$15(InlineCodeContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$16(EmojiContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$17(SoundmojiContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$5(LinkContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$6(String str, String str2, String str3) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$7(String str, String str2, String str3, String str4) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$8(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setActivityRichPresenceInviteEmbed_dJIpDCQ$lambda$9(String str, String str2) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
         Intrinsics.checkNotNullParameter(str2, "<unused var>");
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void setCoverImage(String str) {
@@ -222,7 +222,7 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
     }
 
     /* renamed from: showHiddenContent-2dg2Uz0  reason: not valid java name */
-    private final void m680showHiddenContent2dg2Uz0(MessageMargins messageMargins, StructurableText structurableText, final String str, final Function2<? super MessageId, ? super LinkContentNode, Unit> function2, Function1<? super LinkContentNode, Unit> function1, Function3 function3, Function4 function4, Function1<? super String, Unit> function12, Function2<? super String, ? super String, Unit> function22, Function4 function42, Function1<? super CommandMentionContentNode, Unit> function13, Function1<? super CommandMentionContentNode, Unit> function14, Function0<Unit> function0, Function1<? super String, Unit> function15, Function1<? super InlineCodeContentNode, Unit> function16, Function1<? super EmojiContentNode, Unit> function17, Function1<? super MessageId, Unit> function18, Function1<? super SoundmojiContentNode, Unit> function19) {
+    private final void m682showHiddenContent2dg2Uz0(MessageMargins messageMargins, StructurableText structurableText, final String str, final Function2<? super MessageId, ? super LinkContentNode, Unit> function2, Function1<? super LinkContentNode, Unit> function1, Function3 function3, Function4 function4, Function1<? super String, Unit> function12, Function2<? super String, ? super String, Unit> function22, Function4 function42, Function1<? super CommandMentionContentNode, Unit> function13, Function1<? super CommandMentionContentNode, Unit> function14, Function0<Unit> function0, Function1<? super String, Unit> function15, Function1<? super InlineCodeContentNode, Unit> function16, Function1<? super EmojiContentNode, Unit> function17, Function1<? super MessageId, Unit> function18, Function1<? super SoundmojiContentNode, Unit> function19) {
         MessageContentView hiddenContent = this.binding.hiddenContent;
         Intrinsics.checkNotNullExpressionValue(hiddenContent, "hiddenContent");
         hiddenContent.setVisibility(0);
@@ -233,7 +233,7 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
         MessageContentView hiddenContent3 = this.binding.hiddenContent;
         Intrinsics.checkNotNullExpressionValue(hiddenContent3, "hiddenContent");
         SetTextSizeSpKt.setTextSizeSp(hiddenContent3, 14.0f);
-        MessageContentView.m698setMessageContent4q5Jro$default(this.binding.hiddenContent, messageMargins, structurableText, str, true, true, false, false, new Function1() { // from class: com.discord.chat.presentation.message.view.e
+        MessageContentView.m700setMessageContent4q5Jro$default(this.binding.hiddenContent, messageMargins, structurableText, str, true, true, false, false, new Function1() { // from class: com.discord.chat.presentation.message.view.e
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit showHiddenContent_2dg2Uz0$lambda$23;
@@ -263,8 +263,8 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit showHiddenContent_2dg2Uz0$lambda$23(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        function2.invoke(MessageId.m1084boximpl(str), node);
-        return Unit.f33298a;
+        function2.invoke(MessageId.m1086boximpl(str), node);
+        return Unit.f33074a;
     }
 
     private final void showNormalContent() {
@@ -286,19 +286,19 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
     }
 
     /* renamed from: setActivityRichPresenceInviteEmbed-dJIpDCQ  reason: not valid java name */
-    public final void m681setActivityRichPresenceInviteEmbeddJIpDCQ(@NotNull MessageMargins margins, boolean z10, String str, boolean z11, String str2, List<RGBAColorModel> list, String str3, String str4, boolean z12, boolean z13, int i10, @NotNull View.OnClickListener onTapJoinRichPresence, List<String> list2, String str5, List<String> list3, String str6, String str7, String str8, StructurableText structurableText, String str9, Function2<? super MessageId, ? super LinkContentNode, Unit> function2, Function1<? super LinkContentNode, Unit> function1, Function3 function3, Function4 function4, Function1<? super String, Unit> function12, Function2<? super String, ? super String, Unit> function22, Function4 function42, Function1<? super CommandMentionContentNode, Unit> function13, Function1<? super CommandMentionContentNode, Unit> function14, Function0<Unit> function0, Function1<? super String, Unit> function15, Function1<? super InlineCodeContentNode, Unit> function16, Function1<? super EmojiContentNode, Unit> function17, Function1<? super MessageId, Unit> function18, Function1<? super SoundmojiContentNode, Unit> function19) {
+    public final void m683setActivityRichPresenceInviteEmbeddJIpDCQ(@NotNull MessageMargins margins, boolean z10, String str, boolean z11, String str2, List<RGBAColorModel> list, String str3, String str4, boolean z12, boolean z13, int i10, @NotNull View.OnClickListener onTapJoinRichPresence, List<String> list2, String str5, List<String> list3, String str6, String str7, String str8, StructurableText structurableText, String str9, Function2<? super MessageId, ? super LinkContentNode, Unit> function2, Function1<? super LinkContentNode, Unit> function1, Function3 function3, Function4 function4, Function1<? super String, Unit> function12, Function2<? super String, ? super String, Unit> function22, Function4 function42, Function1<? super CommandMentionContentNode, Unit> function13, Function1<? super CommandMentionContentNode, Unit> function14, Function0<Unit> function0, Function1<? super String, Unit> function15, Function1<? super InlineCodeContentNode, Unit> function16, Function1<? super EmojiContentNode, Unit> function17, Function1<? super MessageId, Unit> function18, Function1<? super SoundmojiContentNode, Unit> function19) {
         Intrinsics.checkNotNullParameter(margins, "margins");
         Intrinsics.checkNotNullParameter(onTapJoinRichPresence, "onTapJoinRichPresence");
         if (structurableText != null && str9 != null) {
-            m680showHiddenContent2dg2Uz0(margins, structurableText, str9, function2 == null ? new Function2<MessageId, LinkContentNode, Unit>() { // from class: com.discord.chat.presentation.message.view.ActivityRichPresenceInviteEmbedView$setActivityRichPresenceInviteEmbed$1
+            m682showHiddenContent2dg2Uz0(margins, structurableText, str9, function2 == null ? new Function2<MessageId, LinkContentNode, Unit>() { // from class: com.discord.chat.presentation.message.view.ActivityRichPresenceInviteEmbedView$setActivityRichPresenceInviteEmbed$1
                 @Override // kotlin.jvm.functions.Function2
                 public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-                    m682invokentcYbpo(((MessageId) obj).m1093unboximpl(), (LinkContentNode) obj2);
-                    return Unit.f33298a;
+                    m684invokentcYbpo(((MessageId) obj).m1095unboximpl(), (LinkContentNode) obj2);
+                    return Unit.f33074a;
                 }
 
                 /* renamed from: invoke-ntcYbpo  reason: not valid java name */
-                public final void m682invokentcYbpo(String str10, LinkContentNode linkContentNode) {
+                public final void m684invokentcYbpo(String str10, LinkContentNode linkContentNode) {
                     Intrinsics.checkNotNullParameter(str10, "<unused var>");
                     Intrinsics.checkNotNullParameter(linkContentNode, "<unused var>");
                 }
@@ -362,7 +362,7 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit unit;
-                    unit = Unit.f33298a;
+                    unit = Unit.f33074a;
                     return unit;
                 }
             } : function0, function15 == null ? new Function1() { // from class: com.discord.chat.presentation.message.view.d
@@ -389,12 +389,12 @@ public final class ActivityRichPresenceInviteEmbedView extends ConstraintLayout 
             } : function17, function18 == null ? new Function1<MessageId, Unit>() { // from class: com.discord.chat.presentation.message.view.ActivityRichPresenceInviteEmbedView$setActivityRichPresenceInviteEmbed$14
                 @Override // kotlin.jvm.functions.Function1
                 public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-                    m683invoke1xi1bu0(((MessageId) obj).m1093unboximpl());
-                    return Unit.f33298a;
+                    m685invoke1xi1bu0(((MessageId) obj).m1095unboximpl());
+                    return Unit.f33074a;
                 }
 
                 /* renamed from: invoke-1xi1bu0  reason: not valid java name */
-                public final void m683invoke1xi1bu0(String it) {
+                public final void m685invoke1xi1bu0(String it) {
                     Intrinsics.checkNotNullParameter(it, "it");
                 }
             } : function18, function19 == null ? new Function1() { // from class: com.discord.chat.presentation.message.view.h

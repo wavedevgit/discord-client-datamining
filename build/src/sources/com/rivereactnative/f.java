@@ -11,41 +11,41 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f18630e;
+    public static final a f18263e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final f f18631i = new f("OneShot", 0, "oneShot");
+    public static final f f18264i = new f("OneShot", 0, "oneShot");
 
     /* renamed from: o  reason: collision with root package name */
-    public static final f f18632o = new f("Loop", 1, "loop");
+    public static final f f18265o = new f("Loop", 1, "loop");
 
     /* renamed from: p  reason: collision with root package name */
-    public static final f f18633p = new f("PingPong", 2, "pingPong");
+    public static final f f18266p = new f("PingPong", 2, "pingPong");
 
     /* renamed from: q  reason: collision with root package name */
-    public static final f f18634q = new f("Auto", 3, "auto");
+    public static final f f18267q = new f("Auto", 3, "auto");
 
     /* renamed from: r  reason: collision with root package name */
-    private static final /* synthetic */ f[] f18635r;
+    private static final /* synthetic */ f[] f18268r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f18636s;
+    private static final /* synthetic */ EnumEntries f18269s;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f18637d;
+    private final String f18270d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: com.rivereactnative.f$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public /* synthetic */ class C0216a {
+        public /* synthetic */ class C0221a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f18638a;
+            public static final /* synthetic */ int[] f18271a;
 
             /* renamed from: b  reason: collision with root package name */
-            public static final /* synthetic */ int[] f18639b;
+            public static final /* synthetic */ int[] f18272b;
 
             static {
                 int[] iArr = new int[Loop.values().length];
@@ -65,25 +65,25 @@ public final class f {
                     iArr[Loop.AUTO.ordinal()] = 4;
                 } catch (NoSuchFieldError unused4) {
                 }
-                f18638a = iArr;
+                f18271a = iArr;
                 int[] iArr2 = new int[f.values().length];
                 try {
-                    iArr2[f.f18631i.ordinal()] = 1;
+                    iArr2[f.f18264i.ordinal()] = 1;
                 } catch (NoSuchFieldError unused5) {
                 }
                 try {
-                    iArr2[f.f18632o.ordinal()] = 2;
+                    iArr2[f.f18265o.ordinal()] = 2;
                 } catch (NoSuchFieldError unused6) {
                 }
                 try {
-                    iArr2[f.f18633p.ordinal()] = 3;
+                    iArr2[f.f18266p.ordinal()] = 3;
                 } catch (NoSuchFieldError unused7) {
                 }
                 try {
-                    iArr2[f.f18634q.ordinal()] = 4;
+                    iArr2[f.f18267q.ordinal()] = 4;
                 } catch (NoSuchFieldError unused8) {
                 }
-                f18639b = iArr2;
+                f18272b = iArr2;
             }
         }
 
@@ -93,20 +93,20 @@ public final class f {
 
         public final f a(Loop riveLoopMode) {
             Intrinsics.checkNotNullParameter(riveLoopMode, "riveLoopMode");
-            int i10 = C0216a.f18638a[riveLoopMode.ordinal()];
+            int i10 = C0221a.f18271a[riveLoopMode.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
                         if (i10 == 4) {
-                            return f.f18634q;
+                            return f.f18267q;
                         }
-                        throw new ir.p();
+                        throw new jr.p();
                     }
-                    return f.f18633p;
+                    return f.f18266p;
                 }
-                return f.f18632o;
+                return f.f18265o;
             }
-            return f.f18631i;
+            return f.f18264i;
         }
 
         public final f b(String loopMode) {
@@ -122,14 +122,14 @@ public final class f {
 
         public final Loop c(f rnLoopMode) {
             Intrinsics.checkNotNullParameter(rnLoopMode, "rnLoopMode");
-            int i10 = C0216a.f18639b[rnLoopMode.ordinal()];
+            int i10 = C0221a.f18272b[rnLoopMode.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
                         if (i10 == 4) {
                             return Loop.AUTO;
                         }
-                        throw new ir.p();
+                        throw new jr.p();
                     }
                     return Loop.PINGPONG;
                 }
@@ -144,17 +144,17 @@ public final class f {
 
     static {
         f[] a10 = a();
-        f18635r = a10;
-        f18636s = pr.a.a(a10);
-        f18630e = new a(null);
+        f18268r = a10;
+        f18269s = qr.a.a(a10);
+        f18263e = new a(null);
     }
 
     private f(String str, int i10, String str2) {
-        this.f18637d = str2;
+        this.f18270d = str2;
     }
 
     private static final /* synthetic */ f[] a() {
-        return new f[]{f18631i, f18632o, f18633p, f18634q};
+        return new f[]{f18264i, f18265o, f18266p, f18267q};
     }
 
     public static f valueOf(String str) {
@@ -162,11 +162,11 @@ public final class f {
     }
 
     public static f[] values() {
-        return (f[]) f18635r.clone();
+        return (f[]) f18268r.clone();
     }
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f18637d;
+        return this.f18270d;
     }
 }

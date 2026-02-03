@@ -45,15 +45,15 @@ public final class StepStyles_GovernmentIdStepPrimaryButtonComponentStyleJsonAda
         StepStyles.StepSubmitButtonComponentStyleContainer stepSubmitButtonComponentStyleContainer2 = null;
         StepStyles.StepSubmitButtonComponentStyleContainer stepSubmitButtonComponentStyleContainer3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 stepSubmitButtonComponentStyleContainer = (StepStyles.StepSubmitButtonComponentStyleContainer) this.nullableStepSubmitButtonComponentStyleContainerAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 stepSubmitButtonComponentStyleContainer2 = (StepStyles.StepSubmitButtonComponentStyleContainer) this.nullableStepSubmitButtonComponentStyleContainerAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 stepSubmitButtonComponentStyleContainer3 = (StepStyles.StepSubmitButtonComponentStyleContainer) this.nullableStepSubmitButtonComponentStyleContainerAdapter.fromJson(reader);
             }
         }
@@ -66,11 +66,11 @@ public final class StepStyles_GovernmentIdStepPrimaryButtonComponentStyleJsonAda
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepPrimaryButtonComponentStyle != null) {
             writer.l();
-            writer.A0("base");
+            writer.t0("base");
             this.nullableStepSubmitButtonComponentStyleContainerAdapter.toJson(writer, governmentIdStepPrimaryButtonComponentStyle.getBase());
-            writer.A0("cancelDialogClose");
+            writer.t0("cancelDialogClose");
             this.nullableStepSubmitButtonComponentStyleContainerAdapter.toJson(writer, governmentIdStepPrimaryButtonComponentStyle.getCancelDialogClose());
-            writer.A0("submitPhotoButton");
+            writer.t0("submitPhotoButton");
             this.nullableStepSubmitButtonComponentStyleContainerAdapter.toJson(writer, governmentIdStepPrimaryButtonComponentStyle.getSubmitPhotoButton());
             writer.E();
             return;

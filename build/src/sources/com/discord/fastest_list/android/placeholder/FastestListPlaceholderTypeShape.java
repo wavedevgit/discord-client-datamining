@@ -8,7 +8,7 @@ import com.discord.fastest_list.android.placeholder.FastestListPlaceholderAlignm
 import com.discord.fastest_list.android.placeholder.FastestListPlaceholderType;
 import com.discord.misc.utilities.drawable.CustomDrawDrawable;
 import com.facebook.react.views.textinput.ReactTextInputShadowNode;
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;

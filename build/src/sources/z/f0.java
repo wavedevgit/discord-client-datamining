@@ -60,14 +60,14 @@ public final class f0 implements j0.y {
         if (i0.b.i(a10.getFormat())) {
             try {
                 j10 = b0.f.j(a10);
-                a10.c1()[0].e().rewind();
+                a10.d1()[0].e().rewind();
             } catch (IOException e10) {
                 throw new x.o0(1, "Failed to extract EXIF data.", e10);
             }
         } else {
             j10 = null;
         }
-        if (y.f55212g.b(a10)) {
+        if (y.f55344g.b(a10)) {
             b2.e.h(j10, "JPEG image must have exif.");
             return c(b10, j10, a10);
         }

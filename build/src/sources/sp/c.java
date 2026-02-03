@@ -1,20 +1,27 @@
 package sp;
 
-import kotlin.jvm.internal.Intrinsics;
-import vm.a0;
+import uq.h;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class c {
-    public static final void a(a0 a0Var, int i10) {
-        a aVar;
-        Intrinsics.checkNotNullParameter(a0Var, "<this>");
-        Object obj = a0Var.b().get(b.f49152b);
-        if (obj instanceof a) {
-            aVar = (a) obj;
-        } else {
-            aVar = null;
-        }
-        if (aVar != null) {
-            aVar.a(i10);
-        }
+public final class c implements uq.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final h f49237a;
+
+    public c(h hVar) {
+        this.f49237a = hVar;
+    }
+
+    public static c a(h hVar) {
+        return new c(hVar);
+    }
+
+    public static b c(op.e eVar) {
+        return new b(eVar);
+    }
+
+    @Override // javax.inject.Provider
+    /* renamed from: b */
+    public b get() {
+        return c((op.e) this.f49237a.get());
     }
 }

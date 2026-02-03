@@ -13,7 +13,7 @@ import o8.j;
 public class WebPImage implements c, ha.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private Bitmap.Config f10930a = null;
+    private Bitmap.Config f10559a = null;
     @d
     private long mNativeContext;
 
@@ -26,7 +26,7 @@ public class WebPImage implements c, ha.c {
         byteBuffer.rewind();
         WebPImage nativeCreateFromDirectByteBuffer = nativeCreateFromDirectByteBuffer(byteBuffer);
         if (imageDecodeOptions != null) {
-            nativeCreateFromDirectByteBuffer.f10930a = imageDecodeOptions.f11454i;
+            nativeCreateFromDirectByteBuffer.f10559a = imageDecodeOptions.f11083i;
         }
         return nativeCreateFromDirectByteBuffer;
     }
@@ -42,7 +42,7 @@ public class WebPImage implements c, ha.c {
         j.b(Boolean.valueOf(z10));
         WebPImage nativeCreateFromNativeMemory = nativeCreateFromNativeMemory(j10, i10);
         if (imageDecodeOptions != null) {
-            nativeCreateFromNativeMemory.f10930a = imageDecodeOptions.f11454i;
+            nativeCreateFromNativeMemory.f10559a = imageDecodeOptions.f11083i;
         }
         return nativeCreateFromNativeMemory;
     }
@@ -84,7 +84,7 @@ public class WebPImage implements c, ha.c {
     @Override // ga.c
     public b c(int i10) {
         b.a aVar;
-        b.EnumC0338b enumC0338b;
+        b.EnumC0350b enumC0350b;
         WebPFrame w10 = w(i10);
         try {
             int b10 = w10.b();
@@ -98,11 +98,11 @@ public class WebPImage implements c, ha.c {
             }
             b.a aVar2 = aVar;
             if (w10.e()) {
-                enumC0338b = b.EnumC0338b.DISPOSE_TO_BACKGROUND;
+                enumC0350b = b.EnumC0350b.DISPOSE_TO_BACKGROUND;
             } else {
-                enumC0338b = b.EnumC0338b.DISPOSE_DO_NOT;
+                enumC0350b = b.EnumC0350b.DISPOSE_DO_NOT;
             }
-            b bVar = new b(i10, b10, c10, width, height, aVar2, enumC0338b);
+            b bVar = new b(i10, b10, c10, width, height, aVar2, enumC0350b);
             w10.dispose();
             return bVar;
         } catch (Throwable th2) {
@@ -153,7 +153,7 @@ public class WebPImage implements c, ha.c {
 
     @Override // ga.c
     public Bitmap.Config v() {
-        return this.f10930a;
+        return this.f10559a;
     }
 
     @Override // ga.c

@@ -1,8 +1,8 @@
 package kotlin.jvm.internal;
 
-import ir.p;
 import java.lang.annotation.Annotation;
 import java.util.List;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function1;
@@ -46,15 +46,15 @@ public final class TypeReference implements KType {
         static {
             int[] iArr = new int[m.values().length];
             try {
-                iArr[m.f36137d.ordinal()] = 1;
+                iArr[m.f35913d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[m.f36138e.ordinal()] = 2;
+                iArr[m.f35914e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[m.f36139i.ordinal()] = 3;
+                iArr[m.f35915i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             $EnumSwitchMapping$0 = iArr;
@@ -74,7 +74,7 @@ public final class TypeReference implements KType {
         String name;
         d classifier = getClassifier();
         KClass kClass = classifier instanceof KClass ? (KClass) classifier : null;
-        Class<?> b10 = kClass != null ? vr.a.b(kClass) : null;
+        Class<?> b10 = kClass != null ? wr.a.b(kClass) : null;
         if (b10 == null) {
             name = getClassifier().toString();
         } else if ((this.flags & 4) != 0) {
@@ -84,7 +84,7 @@ public final class TypeReference implements KType {
         } else if (z10 && b10.isPrimitive()) {
             d classifier2 = getClassifier();
             Intrinsics.checkNotNull(classifier2, "null cannot be cast to non-null type kotlin.reflect.KClass<*>");
-            name = vr.a.c((KClass) classifier2).getName();
+            name = wr.a.c((KClass) classifier2).getName();
         } else {
             name = b10.getName();
         }

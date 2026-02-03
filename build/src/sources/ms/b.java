@@ -1,98 +1,49 @@
 package ms;
 
-import gs.j0;
-import gs.r;
-import gs.r1;
-import ir.h;
-import kotlin.Result;
-import kotlin.c;
-import kotlin.coroutines.Continuation;
-import kotlin.coroutines.CoroutineContext;
-import kotlin.coroutines.jvm.internal.g;
 import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.TypeIntrinsics;
-import kotlinx.coroutines.c0;
-import ls.a0;
-import ls.l0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class b {
-    private static final Void a(a0 a0Var, j0 j0Var) {
-        a0Var.n0(new r(j0Var.getCause(), false, 2, null));
-        throw j0Var.getCause();
-    }
 
-    private static final boolean b(a0 a0Var, Throwable th2) {
-        if ((th2 instanceof r1) && ((r1) th2).f27197d == a0Var) {
-            return false;
-        }
-        return true;
-    }
+    /* renamed from: a */
+    private static final e0 f39146a = new e0("CLOSED");
 
-    public static final void c(Function2 function2, Object obj, Continuation continuation) {
-        Object invoke;
-        Continuation a10 = g.a(continuation);
-        try {
-            CoroutineContext context = a10.getContext();
-            Object i10 = l0.i(context, null);
-            g.b(a10);
-            if (!(function2 instanceof kotlin.coroutines.jvm.internal.a)) {
-                invoke = or.b.d(function2, obj, a10);
-            } else {
-                invoke = ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(function2, 2)).invoke(obj, a10);
+    public static final c b(c cVar) {
+        while (true) {
+            Object g10 = cVar.g();
+            if (g10 == f39146a) {
+                return cVar;
             }
-            l0.f(context, i10);
-            if (invoke != or.b.f()) {
-                a10.resumeWith(Result.b(invoke));
-            }
-        } catch (Throwable th2) {
-            th = th2;
-            if (th instanceof j0) {
-                th = ((j0) th).getCause();
-            }
-            Result.a aVar = Result.f33295e;
-            a10.resumeWith(Result.b(c.a(th)));
-        }
-    }
-
-    public static final Object d(a0 a0Var, Object obj, Function2 function2) {
-        return f(a0Var, true, obj, function2);
-    }
-
-    public static final Object e(a0 a0Var, Object obj, Function2 function2) {
-        return f(a0Var, false, obj, function2);
-    }
-
-    private static final Object f(a0 a0Var, boolean z10, Object obj, Function2 function2) {
-        r rVar;
-        try {
-            if (!(function2 instanceof kotlin.coroutines.jvm.internal.a)) {
-                rVar = or.b.d(function2, obj, a0Var);
-            } else {
-                rVar = ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(function2, 2)).invoke(obj, a0Var);
-            }
-        } catch (j0 e10) {
-            a(a0Var, e10);
-            throw new h();
-        } catch (Throwable th2) {
-            rVar = new r(th2, false, 2, null);
-        }
-        if (rVar == or.b.f()) {
-            return or.b.f();
-        }
-        Object o02 = a0Var.o0(rVar);
-        if (o02 == c0.f36329b) {
-            return or.b.f();
-        }
-        a0Var.W0();
-        if (o02 instanceof r) {
-            if (!z10 && !b(a0Var, ((r) o02).f27194a)) {
-                if (rVar instanceof r) {
-                    throw ((r) rVar).f27194a;
+            c cVar2 = (c) g10;
+            if (cVar2 == null) {
+                if (cVar.m()) {
+                    return cVar;
                 }
-                return rVar;
+            } else {
+                cVar = cVar2;
             }
-            throw ((r) o02).f27194a;
         }
-        return c0.h(o02);
+    }
+
+    public static final Object c(b0 b0Var, long j10, Function2 function2) {
+        while (true) {
+            if (b0Var.f39148i < j10 || b0Var.k()) {
+                Object g10 = b0Var.g();
+                if (g10 == f39146a) {
+                    return c0.a(f39146a);
+                }
+                b0 b0Var2 = (b0) ((c) g10);
+                if (b0Var2 == null) {
+                    b0Var2 = (b0) function2.invoke(Long.valueOf(b0Var.f39148i + 1), b0Var);
+                    if (b0Var.o(b0Var2)) {
+                        if (b0Var.k()) {
+                            b0Var.n();
+                        }
+                    }
+                }
+                b0Var = b0Var2;
+            } else {
+                return c0.a(b0Var);
+            }
+        }
     }
 }

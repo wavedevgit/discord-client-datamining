@@ -16,86 +16,86 @@ import androidx.recyclerview.widget.RecyclerView;
 public class a implements t1.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f32866a;
+    private final int f32612a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f32867b;
+    private final int f32613b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f32868c;
+    private final int f32614c;
 
     /* renamed from: d  reason: collision with root package name */
-    private CharSequence f32869d;
+    private CharSequence f32615d;
 
     /* renamed from: e  reason: collision with root package name */
-    private CharSequence f32870e;
+    private CharSequence f32616e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Intent f32871f;
+    private Intent f32617f;
 
     /* renamed from: g  reason: collision with root package name */
-    private char f32872g;
+    private char f32618g;
 
     /* renamed from: i  reason: collision with root package name */
-    private char f32874i;
+    private char f32620i;
 
     /* renamed from: k  reason: collision with root package name */
-    private Drawable f32876k;
+    private Drawable f32622k;
 
     /* renamed from: l  reason: collision with root package name */
-    private Context f32877l;
+    private Context f32623l;
 
     /* renamed from: m  reason: collision with root package name */
-    private MenuItem.OnMenuItemClickListener f32878m;
+    private MenuItem.OnMenuItemClickListener f32624m;
 
     /* renamed from: n  reason: collision with root package name */
-    private CharSequence f32879n;
+    private CharSequence f32625n;
 
     /* renamed from: o  reason: collision with root package name */
-    private CharSequence f32880o;
+    private CharSequence f32626o;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f32873h = RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
+    private int f32619h = RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f32875j = RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
+    private int f32621j = RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
 
     /* renamed from: p  reason: collision with root package name */
-    private ColorStateList f32881p = null;
+    private ColorStateList f32627p = null;
 
     /* renamed from: q  reason: collision with root package name */
-    private PorterDuff.Mode f32882q = null;
+    private PorterDuff.Mode f32628q = null;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f32883r = false;
+    private boolean f32629r = false;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f32884s = false;
+    private boolean f32630s = false;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f32885t = 16;
+    private int f32631t = 16;
 
     public a(Context context, int i10, int i11, int i12, int i13, CharSequence charSequence) {
-        this.f32877l = context;
-        this.f32866a = i11;
-        this.f32867b = i10;
-        this.f32868c = i13;
-        this.f32869d = charSequence;
+        this.f32623l = context;
+        this.f32612a = i11;
+        this.f32613b = i10;
+        this.f32614c = i13;
+        this.f32615d = charSequence;
     }
 
     private void c() {
-        Drawable drawable = this.f32876k;
+        Drawable drawable = this.f32622k;
         if (drawable != null) {
-            if (this.f32883r || this.f32884s) {
+            if (this.f32629r || this.f32630s) {
                 Drawable r10 = s1.a.r(drawable);
-                this.f32876k = r10;
+                this.f32622k = r10;
                 Drawable mutate = r10.mutate();
-                this.f32876k = mutate;
-                if (this.f32883r) {
-                    s1.a.o(mutate, this.f32881p);
+                this.f32622k = mutate;
+                if (this.f32629r) {
+                    s1.a.o(mutate, this.f32627p);
                 }
-                if (this.f32884s) {
-                    s1.a.p(this.f32876k, this.f32882q);
+                if (this.f32630s) {
+                    s1.a.p(this.f32622k, this.f32628q);
                 }
             }
         }
@@ -152,47 +152,47 @@ public class a implements t1.b {
 
     @Override // t1.b, android.view.MenuItem
     public int getAlphabeticModifiers() {
-        return this.f32875j;
+        return this.f32621j;
     }
 
     @Override // android.view.MenuItem
     public char getAlphabeticShortcut() {
-        return this.f32874i;
+        return this.f32620i;
     }
 
     @Override // t1.b, android.view.MenuItem
     public CharSequence getContentDescription() {
-        return this.f32879n;
+        return this.f32625n;
     }
 
     @Override // android.view.MenuItem
     public int getGroupId() {
-        return this.f32867b;
+        return this.f32613b;
     }
 
     @Override // android.view.MenuItem
     public Drawable getIcon() {
-        return this.f32876k;
+        return this.f32622k;
     }
 
     @Override // t1.b, android.view.MenuItem
     public ColorStateList getIconTintList() {
-        return this.f32881p;
+        return this.f32627p;
     }
 
     @Override // t1.b, android.view.MenuItem
     public PorterDuff.Mode getIconTintMode() {
-        return this.f32882q;
+        return this.f32628q;
     }
 
     @Override // android.view.MenuItem
     public Intent getIntent() {
-        return this.f32871f;
+        return this.f32617f;
     }
 
     @Override // android.view.MenuItem
     public int getItemId() {
-        return this.f32866a;
+        return this.f32612a;
     }
 
     @Override // android.view.MenuItem
@@ -202,17 +202,17 @@ public class a implements t1.b {
 
     @Override // t1.b, android.view.MenuItem
     public int getNumericModifiers() {
-        return this.f32873h;
+        return this.f32619h;
     }
 
     @Override // android.view.MenuItem
     public char getNumericShortcut() {
-        return this.f32872g;
+        return this.f32618g;
     }
 
     @Override // android.view.MenuItem
     public int getOrder() {
-        return this.f32868c;
+        return this.f32614c;
     }
 
     @Override // android.view.MenuItem
@@ -222,21 +222,21 @@ public class a implements t1.b {
 
     @Override // android.view.MenuItem
     public CharSequence getTitle() {
-        return this.f32869d;
+        return this.f32615d;
     }
 
     @Override // android.view.MenuItem
     public CharSequence getTitleCondensed() {
-        CharSequence charSequence = this.f32870e;
+        CharSequence charSequence = this.f32616e;
         if (charSequence != null) {
             return charSequence;
         }
-        return this.f32869d;
+        return this.f32615d;
     }
 
     @Override // t1.b, android.view.MenuItem
     public CharSequence getTooltipText() {
-        return this.f32880o;
+        return this.f32626o;
     }
 
     @Override // android.view.MenuItem
@@ -251,7 +251,7 @@ public class a implements t1.b {
 
     @Override // android.view.MenuItem
     public boolean isCheckable() {
-        if ((this.f32885t & 1) != 0) {
+        if ((this.f32631t & 1) != 0) {
             return true;
         }
         return false;
@@ -259,7 +259,7 @@ public class a implements t1.b {
 
     @Override // android.view.MenuItem
     public boolean isChecked() {
-        if ((this.f32885t & 2) != 0) {
+        if ((this.f32631t & 2) != 0) {
             return true;
         }
         return false;
@@ -267,7 +267,7 @@ public class a implements t1.b {
 
     @Override // android.view.MenuItem
     public boolean isEnabled() {
-        if ((this.f32885t & 16) != 0) {
+        if ((this.f32631t & 16) != 0) {
             return true;
         }
         return false;
@@ -275,7 +275,7 @@ public class a implements t1.b {
 
     @Override // android.view.MenuItem
     public boolean isVisible() {
-        if ((this.f32885t & 8) == 0) {
+        if ((this.f32631t & 8) == 0) {
             return true;
         }
         return false;
@@ -288,74 +288,74 @@ public class a implements t1.b {
 
     @Override // android.view.MenuItem
     public MenuItem setAlphabeticShortcut(char c10) {
-        this.f32874i = Character.toLowerCase(c10);
+        this.f32620i = Character.toLowerCase(c10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setCheckable(boolean z10) {
-        this.f32885t = (z10 ? 1 : 0) | (this.f32885t & (-2));
+        this.f32631t = (z10 ? 1 : 0) | (this.f32631t & (-2));
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setChecked(boolean z10) {
         int i10;
-        int i11 = this.f32885t & (-3);
+        int i11 = this.f32631t & (-3);
         if (z10) {
             i10 = 2;
         } else {
             i10 = 0;
         }
-        this.f32885t = i10 | i11;
+        this.f32631t = i10 | i11;
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setEnabled(boolean z10) {
         int i10;
-        int i11 = this.f32885t & (-17);
+        int i11 = this.f32631t & (-17);
         if (z10) {
             i10 = 16;
         } else {
             i10 = 0;
         }
-        this.f32885t = i10 | i11;
+        this.f32631t = i10 | i11;
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setIcon(Drawable drawable) {
-        this.f32876k = drawable;
+        this.f32622k = drawable;
         c();
         return this;
     }
 
     @Override // t1.b, android.view.MenuItem
     public MenuItem setIconTintList(ColorStateList colorStateList) {
-        this.f32881p = colorStateList;
-        this.f32883r = true;
+        this.f32627p = colorStateList;
+        this.f32629r = true;
         c();
         return this;
     }
 
     @Override // t1.b, android.view.MenuItem
     public MenuItem setIconTintMode(PorterDuff.Mode mode) {
-        this.f32882q = mode;
-        this.f32884s = true;
+        this.f32628q = mode;
+        this.f32630s = true;
         c();
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setIntent(Intent intent) {
-        this.f32871f = intent;
+        this.f32617f = intent;
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setNumericShortcut(char c10) {
-        this.f32872g = c10;
+        this.f32618g = c10;
         return this;
     }
 
@@ -366,85 +366,85 @@ public class a implements t1.b {
 
     @Override // android.view.MenuItem
     public MenuItem setOnMenuItemClickListener(MenuItem.OnMenuItemClickListener onMenuItemClickListener) {
-        this.f32878m = onMenuItemClickListener;
+        this.f32624m = onMenuItemClickListener;
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setShortcut(char c10, char c11) {
-        this.f32872g = c10;
-        this.f32874i = Character.toLowerCase(c11);
+        this.f32618g = c10;
+        this.f32620i = Character.toLowerCase(c11);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setTitle(CharSequence charSequence) {
-        this.f32869d = charSequence;
+        this.f32615d = charSequence;
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setTitleCondensed(CharSequence charSequence) {
-        this.f32870e = charSequence;
+        this.f32616e = charSequence;
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setVisible(boolean z10) {
         int i10 = 8;
-        int i11 = this.f32885t & 8;
+        int i11 = this.f32631t & 8;
         if (z10) {
             i10 = 0;
         }
-        this.f32885t = i11 | i10;
+        this.f32631t = i11 | i10;
         return this;
     }
 
     @Override // t1.b, android.view.MenuItem
     public MenuItem setAlphabeticShortcut(char c10, int i10) {
-        this.f32874i = Character.toLowerCase(c10);
-        this.f32875j = KeyEvent.normalizeMetaState(i10);
+        this.f32620i = Character.toLowerCase(c10);
+        this.f32621j = KeyEvent.normalizeMetaState(i10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public t1.b setContentDescription(CharSequence charSequence) {
-        this.f32879n = charSequence;
+        this.f32625n = charSequence;
         return this;
     }
 
     @Override // t1.b, android.view.MenuItem
     public MenuItem setNumericShortcut(char c10, int i10) {
-        this.f32872g = c10;
-        this.f32873h = KeyEvent.normalizeMetaState(i10);
+        this.f32618g = c10;
+        this.f32619h = KeyEvent.normalizeMetaState(i10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setTitle(int i10) {
-        this.f32869d = this.f32877l.getResources().getString(i10);
+        this.f32615d = this.f32623l.getResources().getString(i10);
         return this;
     }
 
     @Override // android.view.MenuItem
     public t1.b setTooltipText(CharSequence charSequence) {
-        this.f32880o = charSequence;
+        this.f32626o = charSequence;
         return this;
     }
 
     @Override // android.view.MenuItem
     public MenuItem setIcon(int i10) {
-        this.f32876k = androidx.core.content.a.e(this.f32877l, i10);
+        this.f32622k = androidx.core.content.a.e(this.f32623l, i10);
         c();
         return this;
     }
 
     @Override // t1.b, android.view.MenuItem
     public MenuItem setShortcut(char c10, char c11, int i10, int i11) {
-        this.f32872g = c10;
-        this.f32873h = KeyEvent.normalizeMetaState(i10);
-        this.f32874i = Character.toLowerCase(c11);
-        this.f32875j = KeyEvent.normalizeMetaState(i11);
+        this.f32618g = c10;
+        this.f32619h = KeyEvent.normalizeMetaState(i10);
+        this.f32620i = Character.toLowerCase(c11);
+        this.f32621j = KeyEvent.normalizeMetaState(i11);
         return this;
     }
 

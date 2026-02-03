@@ -9,24 +9,24 @@ import org.jetbrains.annotations.NotNull;
 public final class StarProjectionImpl extends TypeProjectionBase {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TypeParameterDescriptor f35881a;
+    private final TypeParameterDescriptor f35657a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f35882b;
+    private final Lazy f35658b;
 
     public StarProjectionImpl(@NotNull TypeParameterDescriptor typeParameter) {
         Intrinsics.checkNotNullParameter(typeParameter, "typeParameter");
-        this.f35881a = typeParameter;
-        this.f35882b = ir.l.a(ir.o.f31119e, new u(this));
+        this.f35657a = typeParameter;
+        this.f35658b = jr.l.a(jr.o.f32182e, new u(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final KotlinType a(StarProjectionImpl starProjectionImpl) {
-        return StarProjectionImplKt.starProjectionType(starProjectionImpl.f35881a);
+        return StarProjectionImplKt.starProjectionType(starProjectionImpl.f35657a);
     }
 
     private final KotlinType c() {
-        return (KotlinType) this.f35882b.getValue();
+        return (KotlinType) this.f35658b.getValue();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeProjection

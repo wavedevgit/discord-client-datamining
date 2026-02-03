@@ -8,33 +8,33 @@ import r9.a;
 public final class d implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f48098a;
+    private final int f48300a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Class f48099b = d.class;
+    private final Class f48301b = d.class;
 
     public d(int i10) {
-        this.f48098a = i10;
+        this.f48300a = i10;
     }
 
     @Override // r9.a
     public void a(int i10, int i11, Function0 function0) {
-        a.C0584a.d(this, i10, i11, function0);
+        a.C0595a.d(this, i10, i11, function0);
     }
 
     @Override // r9.a
     public void b() {
-        a.C0584a.c(this);
+        a.C0595a.c(this);
     }
 
     @Override // r9.a
     public CloseableReference c(int i10, int i11, int i12) {
-        return a.C0584a.b(this, i10, i11, i12);
+        return a.C0595a.b(this, i10, i11, i12);
     }
 
     @Override // r9.a
     public void d() {
-        a.C0584a.a(this);
+        a.C0595a.a(this);
     }
 
     @Override // r9.a
@@ -42,13 +42,13 @@ public final class d implements a {
         Intrinsics.checkNotNullParameter(bitmapFramePreparer, "bitmapFramePreparer");
         Intrinsics.checkNotNullParameter(bitmapFrameCache, "bitmapFrameCache");
         Intrinsics.checkNotNullParameter(animationBackend, "animationBackend");
-        int i11 = this.f48098a;
+        int i11 = this.f48300a;
         int i12 = 1;
         if (1 <= i11) {
             while (true) {
                 int a10 = (i10 + i12) % animationBackend.a();
                 if (p8.a.w(2)) {
-                    p8.a.A(this.f48099b, "Preparing frame %d, last drawn: %d", Integer.valueOf(a10), Integer.valueOf(i10));
+                    p8.a.A(this.f48301b, "Preparing frame %d, last drawn: %d", Integer.valueOf(a10), Integer.valueOf(i10));
                 }
                 if (bitmapFramePreparer.a(bitmapFrameCache, animationBackend, a10)) {
                     if (i12 == i11) {

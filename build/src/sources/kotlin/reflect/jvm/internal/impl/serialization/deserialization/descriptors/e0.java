@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class e0 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedTypeParameterDescriptor f35740d;
+    private final DeserializedTypeParameterDescriptor f35516d;
 
     public e0(DeserializedTypeParameterDescriptor deserializedTypeParameterDescriptor) {
-        this.f35740d = deserializedTypeParameterDescriptor;
+        this.f35516d = deserializedTypeParameterDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List e10;
-        e10 = DeserializedTypeParameterDescriptor.e(this.f35740d);
+        e10 = DeserializedTypeParameterDescriptor.e(this.f35516d);
         return e10;
     }
 }

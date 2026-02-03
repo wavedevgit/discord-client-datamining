@@ -46,16 +46,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/parent_tools/native/FamilyCenterSettingsControls.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun81975: for (var _fun81975_ip = 0;;) switch (_fun81975_ip) {
+        _fun82365: for (var _fun82365_ip = 0;;) switch (_fun82365_ip) {
             case 0:
-                var1 = _closure1_slot0;
+                var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
                 var14 = 4;
                 var0 = var2[var14];
                 var3 = undefined;
-                var4 = var1.bind(var3)(var0);
-                var0 = var4.useUserIsTeen;
-                var4 = var0.bind(var4)();
+                var0 = var1.bind(var3)(var0);
+                var4 = var0.bind(var3)();
+                var1 = _closure1_slot0;
                 var0 = 5;
                 var0 = var2[var0];
                 var5 = var1.bind(var3)(var0);
@@ -71,10 +71,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var17.length;
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun81975_ip = 1023;
-                    continue _fun81975
+                    _fun82365_ip = 1021;
+                    continue _fun82365
                 }
-            case 103:
+            case 101:
                 var0 = function arg0() {
                     var3 = _closure2_slot1;
                     var2 = var3.navigate;
@@ -111,10 +111,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var9 = {};
                 if (var4) {
-                    _fun81975_ip = 615;
-                    continue _fun81975
+                    _fun82365_ip = 613;
+                    continue _fun82365
                 }
-            case 175:
+            case 173:
                 var9.gap = var14;
                 var7.style = var9;
                 var20 = _closure1_slot6;
@@ -226,9 +226,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[2] = var10;
                 var7.children = var4;
                 var4 = var7;
-                _fun81975_ip = 1005;
-                continue _fun81975;
-            case 615:
+                _fun82365_ip = 1003;
+                continue _fun82365;
+            case 613:
                 var10 = 16;
                 var9.gap = var10;
                 var7.style = var9;
@@ -359,16 +359,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[1] = var9;
                 var7.children = var8;
                 var4 = var7;
-            case 1005:
+            case 1003:
                 var4 = var6.bind(var3)(var5, var4);
                 var0.children = var4;
                 var0 = var2.bind(var3)(var1, var0);
                 return var0;
-            case 1023:
+            case 1021:
                 var0 = null;
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 4560, 660, 33, 6472, 6473, 1469, 4041, 3902, 1234, 1849, 4045, 4613, 3906, 5327, 4863, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 4590, 660, 33, 10519, 6504, 1469, 4071, 3932, 1234, 1849, 4075, 4643, 3936, 5358, 4893, 2]);

@@ -7,12 +7,12 @@ import com.facebook.react.uimanager.ViewProps;
 import io.sentry.ISpan;
 import io.sentry.b5;
 import io.sentry.e1;
-import ir.v;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.o0;
@@ -85,7 +85,7 @@ public final class PerformanceTracing implements ReactMarker.MarkerListener {
         static {
             MarkerEnd[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
         }
 
         private MarkerEnd(String str, int i10) {

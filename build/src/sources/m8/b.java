@@ -11,28 +11,28 @@ import java.util.concurrent.atomic.AtomicInteger;
 public abstract class b extends AbstractExecutorService implements AutoCloseable {
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Class f37849s = b.class;
+    private static final Class f37829s = b.class;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f37850d;
+    private final String f37830d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Executor f37851e;
+    private final Executor f37831e;
 
     /* renamed from: i  reason: collision with root package name */
-    private volatile int f37852i;
+    private volatile int f37832i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final BlockingQueue f37853o;
+    private final BlockingQueue f37833o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final a f37854p;
+    private final a f37834p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final AtomicInteger f37855q;
+    private final AtomicInteger f37835q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final AtomicInteger f37856r;
+    private final AtomicInteger f37836r;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -40,24 +40,24 @@ public abstract class b extends AbstractExecutorService implements AutoCloseable
         @Override // java.lang.Runnable
         public void run() {
             try {
-                Runnable runnable = (Runnable) b.this.f37853o.poll();
+                Runnable runnable = (Runnable) b.this.f37833o.poll();
                 if (runnable != null) {
                     runnable.run();
                 } else {
-                    p8.a.z(b.f37849s, "%s: Worker has nothing to run", b.this.f37850d);
+                    p8.a.z(b.f37829s, "%s: Worker has nothing to run", b.this.f37830d);
                 }
-                int decrementAndGet = b.this.f37855q.decrementAndGet();
-                if (!b.this.f37853o.isEmpty()) {
+                int decrementAndGet = b.this.f37835q.decrementAndGet();
+                if (!b.this.f37833o.isEmpty()) {
                     b.this.E();
                 } else {
-                    p8.a.A(b.f37849s, "%s: worker finished; %d workers left", b.this.f37850d, Integer.valueOf(decrementAndGet));
+                    p8.a.A(b.f37829s, "%s: worker finished; %d workers left", b.this.f37830d, Integer.valueOf(decrementAndGet));
                 }
             } catch (Throwable th2) {
-                int decrementAndGet2 = b.this.f37855q.decrementAndGet();
-                if (!b.this.f37853o.isEmpty()) {
+                int decrementAndGet2 = b.this.f37835q.decrementAndGet();
+                if (!b.this.f37833o.isEmpty()) {
                     b.this.E();
                 } else {
-                    p8.a.A(b.f37849s, "%s: worker finished; %d workers left", b.this.f37850d, Integer.valueOf(decrementAndGet2));
+                    p8.a.A(b.f37829s, "%s: worker finished; %d workers left", b.this.f37830d, Integer.valueOf(decrementAndGet2));
                 }
                 throw th2;
             }
@@ -69,13 +69,13 @@ public abstract class b extends AbstractExecutorService implements AutoCloseable
 
     public b(String str, int i10, Executor executor, BlockingQueue blockingQueue) {
         if (i10 > 0) {
-            this.f37850d = str;
-            this.f37851e = executor;
-            this.f37852i = i10;
-            this.f37853o = blockingQueue;
-            this.f37854p = new a();
-            this.f37855q = new AtomicInteger(0);
-            this.f37856r = new AtomicInteger(0);
+            this.f37830d = str;
+            this.f37831e = executor;
+            this.f37832i = i10;
+            this.f37833o = blockingQueue;
+            this.f37834p = new a();
+            this.f37835q = new AtomicInteger(0);
+            this.f37836r = new AtomicInteger(0);
             return;
         }
         throw new IllegalArgumentException("max concurrency must be > 0");
@@ -83,16 +83,16 @@ public abstract class b extends AbstractExecutorService implements AutoCloseable
 
     /* JADX INFO: Access modifiers changed from: private */
     public void E() {
-        int i10 = this.f37855q.get();
-        while (i10 < this.f37852i) {
+        int i10 = this.f37835q.get();
+        while (i10 < this.f37832i) {
             int i11 = i10 + 1;
-            if (this.f37855q.compareAndSet(i10, i11)) {
-                p8.a.B(f37849s, "%s: starting worker %d of %d", this.f37850d, Integer.valueOf(i11), Integer.valueOf(this.f37852i));
-                this.f37851e.execute(this.f37854p);
+            if (this.f37835q.compareAndSet(i10, i11)) {
+                p8.a.B(f37829s, "%s: starting worker %d of %d", this.f37830d, Integer.valueOf(i11), Integer.valueOf(this.f37832i));
+                this.f37831e.execute(this.f37834p);
                 return;
             }
-            p8.a.z(f37849s, "%s: race in startWorkerIfNeeded; retrying", this.f37850d);
-            i10 = this.f37855q.get();
+            p8.a.z(f37829s, "%s: race in startWorkerIfNeeded; retrying", this.f37830d);
+            i10 = this.f37835q.get();
         }
     }
 
@@ -109,16 +109,16 @@ public abstract class b extends AbstractExecutorService implements AutoCloseable
     @Override // java.util.concurrent.Executor
     public void execute(Runnable runnable) {
         if (runnable != null) {
-            if (this.f37853o.offer(runnable)) {
-                int size = this.f37853o.size();
-                int i10 = this.f37856r.get();
-                if (size > i10 && this.f37856r.compareAndSet(i10, size)) {
-                    p8.a.A(f37849s, "%s: max pending work in queue = %d", this.f37850d, Integer.valueOf(size));
+            if (this.f37833o.offer(runnable)) {
+                int size = this.f37833o.size();
+                int i10 = this.f37836r.get();
+                if (size > i10 && this.f37836r.compareAndSet(i10, size)) {
+                    p8.a.A(f37829s, "%s: max pending work in queue = %d", this.f37830d, Integer.valueOf(size));
                 }
                 E();
                 return;
             }
-            throw new RejectedExecutionException(this.f37850d + " queue is full, size=" + this.f37853o.size());
+            throw new RejectedExecutionException(this.f37830d + " queue is full, size=" + this.f37833o.size());
         }
         throw new NullPointerException("runnable parameter is null");
     }

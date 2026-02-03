@@ -10,14 +10,14 @@ import w5.c;
 public class o implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f50716a;
+    private int f50840a;
 
     public o(int i10) {
-        this.f50716a = i10;
+        this.f50840a = i10;
     }
 
     private s5.d b(s5.d dVar, List list) {
-        int i10 = this.f50716a * 4;
+        int i10 = this.f50840a * 4;
         if (list.size() <= i10) {
             return dVar;
         }
@@ -163,20 +163,20 @@ public class o implements n0 {
             arrayList.add((Float) arrayList.get(1));
             arrayList.add((Float) arrayList.get(2));
             arrayList.add((Float) arrayList.get(3));
-            this.f50716a = 2;
+            this.f50840a = 2;
         }
         if (z10) {
             cVar.s();
         }
-        if (this.f50716a == -1) {
-            this.f50716a = arrayList.size() / 4;
+        if (this.f50840a == -1) {
+            this.f50840a = arrayList.size() / 4;
         }
-        int i10 = this.f50716a;
+        int i10 = this.f50840a;
         float[] fArr = new float[i10];
         int[] iArr = new int[i10];
         int i11 = 0;
         int i12 = 0;
-        for (int i13 = 0; i13 < this.f50716a * 4; i13++) {
+        for (int i13 = 0; i13 < this.f50840a * 4; i13++) {
             int i14 = i13 / 4;
             double floatValue = ((Float) arrayList.get(i13)).floatValue();
             int i15 = i13 % 4;

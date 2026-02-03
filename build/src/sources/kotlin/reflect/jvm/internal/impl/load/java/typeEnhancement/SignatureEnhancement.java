@@ -36,27 +36,27 @@ import org.jetbrains.annotations.NotNull;
 public final class SignatureEnhancement {
 
     /* renamed from: a  reason: collision with root package name */
-    private final JavaTypeEnhancement f34370a;
+    private final JavaTypeEnhancement f34146a;
 
     public SignatureEnhancement(@NotNull JavaTypeEnhancement typeEnhancement) {
         Intrinsics.checkNotNullParameter(typeEnhancement, "typeEnhancement");
-        this.f34370a = typeEnhancement;
+        this.f34146a = typeEnhancement;
     }
 
     private final boolean f(KotlinType kotlinType) {
-        return TypeUtils.contains(kotlinType, b1.f34391d);
+        return TypeUtils.contains(kotlinType, b1.f34167d);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Boolean g(UnwrappedType unwrappedType) {
         boolean z10;
-        ClassifierDescriptor mo1198getDeclarationDescriptor = unwrappedType.getConstructor().mo1198getDeclarationDescriptor();
-        if (mo1198getDeclarationDescriptor == null) {
+        ClassifierDescriptor mo1200getDeclarationDescriptor = unwrappedType.getConstructor().mo1200getDeclarationDescriptor();
+        if (mo1200getDeclarationDescriptor == null) {
             return Boolean.FALSE;
         }
-        Name name = mo1198getDeclarationDescriptor.getName();
+        Name name = mo1200getDeclarationDescriptor.getName();
         JavaToKotlinClassMap javaToKotlinClassMap = JavaToKotlinClassMap.INSTANCE;
-        if (Intrinsics.areEqual(name, javaToKotlinClassMap.getFUNCTION_N_FQ_NAME().shortName()) && Intrinsics.areEqual(DescriptorUtilsKt.fqNameOrNull(mo1198getDeclarationDescriptor), javaToKotlinClassMap.getFUNCTION_N_FQ_NAME())) {
+        if (Intrinsics.areEqual(name, javaToKotlinClassMap.getFUNCTION_N_FQ_NAME().shortName()) && Intrinsics.areEqual(DescriptorUtilsKt.fqNameOrNull(mo1200getDeclarationDescriptor), javaToKotlinClassMap.getFUNCTION_N_FQ_NAME())) {
             z10 = true;
         } else {
             z10 = false;
@@ -79,7 +79,7 @@ public final class SignatureEnhancement {
     }
 
     private final KotlinType i(c1 c1Var, KotlinType kotlinType, List list, TypeEnhancementInfo typeEnhancementInfo, boolean z10) {
-        return this.f34370a.enhance(kotlinType, c1Var.computeIndexedQualifiers(kotlinType, list, typeEnhancementInfo, z10), c1Var.getSkipRawTypeArguments());
+        return this.f34146a.enhance(kotlinType, c1Var.computeIndexedQualifiers(kotlinType, list, typeEnhancementInfo, z10), c1Var.getSkipRawTypeArguments());
     }
 
     static /* synthetic */ KotlinType j(SignatureEnhancement signatureEnhancement, CallableMemberDescriptor callableMemberDescriptor, Annotated annotated, boolean z10, LazyJavaResolverContext lazyJavaResolverContext, AnnotationQualifierApplicabilityType annotationQualifierApplicabilityType, TypeEnhancementInfo typeEnhancementInfo, boolean z11, Function1 function1, int i10, Object obj) {
@@ -238,7 +238,7 @@ public final class SignatureEnhancement {
         List<? extends KotlinType> list = bounds;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (KotlinType kotlinType2 : list) {
-            if (TypeUtilsKt.contains(kotlinType2, a1.f34387d)) {
+            if (TypeUtilsKt.contains(kotlinType2, a1.f34163d)) {
                 kotlinType = kotlinType2;
             } else {
                 kotlinType = kotlinType2;

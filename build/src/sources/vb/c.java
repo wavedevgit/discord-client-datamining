@@ -9,7 +9,7 @@ import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.common.ReactConstants;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.github.yamill.orientation.f;
-import gs.v0;
+import hs.v0;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
@@ -20,22 +20,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c implements LifecycleEventListener {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final b f50876o;
+    public static final b f51000o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static Integer f50877p;
+    private static Integer f51001p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Function2 f50878q;
+    private static final Function2 f51002q;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ReactContext f50879d;
+    private final ReactContext f51003d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function0 f50880e;
+    private final Function0 f51004e;
 
     /* renamed from: i  reason: collision with root package name */
-    private OrientationEventListener f50881i;
+    private OrientationEventListener f51005i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
@@ -51,7 +51,7 @@ public final class c implements LifecycleEventListener {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a(((Number) obj).intValue(), (ReactContext) obj2);
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
     }
 
@@ -76,15 +76,15 @@ public final class c implements LifecycleEventListener {
         }
 
         public final Integer b() {
-            return c.f50877p;
+            return c.f51001p;
         }
 
         public final Function2 c() {
-            return c.f50878q;
+            return c.f51002q;
         }
 
         public final void d(Integer num) {
-            c.f50877p = num;
+            c.f51001p = num;
         }
 
         private b() {
@@ -93,44 +93,44 @@ public final class c implements LifecycleEventListener {
 
     /* renamed from: vb.c$c  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public static final class C0672c extends OrientationEventListener {
+    public static final class C0684c extends OrientationEventListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c f50882a;
+        final /* synthetic */ c f51006a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        C0672c(Activity activity, c cVar) {
+        C0684c(Activity activity, c cVar) {
             super(activity);
-            this.f50882a = cVar;
+            this.f51006a = cVar;
         }
 
         @Override // android.view.OrientationEventListener
         public void onOrientationChanged(int i10) {
-            c.f50876o.c().invoke(Integer.valueOf(i10), this.f50882a.f50879d);
+            c.f51000o.c().invoke(Integer.valueOf(i10), this.f51006a.f51003d);
         }
     }
 
     static {
         b bVar = new b(null);
-        f50876o = bVar;
-        f50878q = f.b(1000L, v0.f27207d, new a(bVar));
+        f51000o = bVar;
+        f51002q = f.b(1000L, v0.f27954d, new a(bVar));
     }
 
     public c(ReactContext reactContext, Function0 onGetCurrentActivity) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         Intrinsics.checkNotNullParameter(onGetCurrentActivity, "onGetCurrentActivity");
-        this.f50879d = reactContext;
-        this.f50880e = onGetCurrentActivity;
+        this.f51003d = reactContext;
+        this.f51004e = onGetCurrentActivity;
     }
 
     @Override // com.facebook.react.bridge.LifecycleEventListener
     public void onHostResume() {
-        Activity activity = (Activity) this.f50880e.invoke();
-        if (activity != null && this.f50881i == null) {
-            C0672c c0672c = new C0672c(activity, this);
-            this.f50881i = c0672c;
-            if (c0672c.canDetectOrientation()) {
-                OrientationEventListener orientationEventListener = this.f50881i;
+        Activity activity = (Activity) this.f51004e.invoke();
+        if (activity != null && this.f51005i == null) {
+            C0684c c0684c = new C0684c(activity, this);
+            this.f51005i = c0684c;
+            if (c0684c.canDetectOrientation()) {
+                OrientationEventListener orientationEventListener = this.f51005i;
                 if (orientationEventListener == null) {
                     Intrinsics.throwUninitializedPropertyAccessException("orientationEventListener");
                     orientationEventListener = null;

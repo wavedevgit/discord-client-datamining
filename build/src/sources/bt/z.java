@@ -1,54 +1,113 @@
 package bt;
 
-import ct.g0;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.jvm.internal.Reflection;
-import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
-import kotlinx.serialization.encoding.Decoder;
-import kotlinx.serialization.encoding.Encoder;
-import kotlinx.serialization.json.JsonElement;
-import kotlinx.serialization.json.JsonNull;
-import kotlinx.serialization.json.JsonPrimitive;
-import zs.e;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class z implements KSerializer {
+public final class z {
+
+    /* renamed from: e  reason: collision with root package name */
+    private static final a f7730e = new a(null);
+
+    /* renamed from: f  reason: collision with root package name */
+    private static final long[] f7731f = new long[0];
 
     /* renamed from: a  reason: collision with root package name */
-    public static final z f7840a = new z();
+    private final SerialDescriptor f7732a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f7841b = zs.j.e("kotlinx.serialization.json.JsonPrimitive", e.i.f56107a, new SerialDescriptor[0], null, 8, null);
+    private final Function2 f7733b;
 
-    private z() {
-    }
+    /* renamed from: c  reason: collision with root package name */
+    private long f7734c;
 
-    @Override // kotlinx.serialization.DeserializationStrategy
-    /* renamed from: a */
-    public JsonPrimitive deserialize(Decoder decoder) {
-        Intrinsics.checkNotNullParameter(decoder, "decoder");
-        JsonElement g10 = p.d(decoder).g();
-        if (g10 instanceof JsonPrimitive) {
-            return (JsonPrimitive) g10;
+    /* renamed from: d  reason: collision with root package name */
+    private final long[] f7735d;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    private static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        throw g0.e(-1, "Unexpected JSON element, expected JsonPrimitive, had " + Reflection.getOrCreateKotlinClass(g10.getClass()), g10.toString());
+
+        private a() {
+        }
     }
 
-    @Override // xs.o
-    /* renamed from: b */
-    public void serialize(Encoder encoder, JsonPrimitive value) {
-        Intrinsics.checkNotNullParameter(encoder, "encoder");
-        Intrinsics.checkNotNullParameter(value, "value");
-        p.c(encoder);
-        if (value instanceof JsonNull) {
-            encoder.h(v.f7832a, JsonNull.INSTANCE);
+    public z(SerialDescriptor descriptor, Function2 readIfAbsent) {
+        Intrinsics.checkNotNullParameter(descriptor, "descriptor");
+        Intrinsics.checkNotNullParameter(readIfAbsent, "readIfAbsent");
+        this.f7732a = descriptor;
+        this.f7733b = readIfAbsent;
+        int d10 = descriptor.d();
+        if (d10 <= 64) {
+            this.f7734c = d10 != 64 ? (-1) << d10 : 0L;
+            this.f7735d = f7731f;
+            return;
+        }
+        this.f7734c = 0L;
+        this.f7735d = e(d10);
+    }
+
+    private final void b(int i10) {
+        int i11 = (i10 >>> 6) - 1;
+        long[] jArr = this.f7735d;
+        jArr[i11] = jArr[i11] | (1 << (i10 & 63));
+    }
+
+    private final int c() {
+        int length = this.f7735d.length;
+        int i10 = 0;
+        while (i10 < length) {
+            int i11 = i10 + 1;
+            int i12 = i11 * 64;
+            long j10 = this.f7735d[i10];
+            while (j10 != -1) {
+                int numberOfTrailingZeros = Long.numberOfTrailingZeros(~j10);
+                j10 |= 1 << numberOfTrailingZeros;
+                int i13 = numberOfTrailingZeros + i12;
+                if (((Boolean) this.f7733b.invoke(this.f7732a, Integer.valueOf(i13))).booleanValue()) {
+                    this.f7735d[i10] = j10;
+                    return i13;
+                }
+            }
+            this.f7735d[i10] = j10;
+            i10 = i11;
+        }
+        return -1;
+    }
+
+    private final long[] e(int i10) {
+        long[] jArr = new long[(i10 - 1) >>> 6];
+        if ((i10 & 63) != 0) {
+            jArr[kotlin.collections.i.Z(jArr)] = (-1) << i10;
+        }
+        return jArr;
+    }
+
+    public final void a(int i10) {
+        if (i10 < 64) {
+            this.f7734c |= 1 << i10;
         } else {
-            encoder.h(s.f7830a, (r) value);
+            b(i10);
         }
     }
 
-    @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
-    public SerialDescriptor getDescriptor() {
-        return f7841b;
+    public final int d() {
+        int numberOfTrailingZeros;
+        int d10 = this.f7732a.d();
+        do {
+            long j10 = this.f7734c;
+            if (j10 != -1) {
+                numberOfTrailingZeros = Long.numberOfTrailingZeros(~j10);
+                this.f7734c |= 1 << numberOfTrailingZeros;
+            } else if (d10 > 64) {
+                return c();
+            } else {
+                return -1;
+            }
+        } while (!((Boolean) this.f7733b.invoke(this.f7732a, Integer.valueOf(numberOfTrailingZeros))).booleanValue());
+        return numberOfTrailingZeros;
     }
 }

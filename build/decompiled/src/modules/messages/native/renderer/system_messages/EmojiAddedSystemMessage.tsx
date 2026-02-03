@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/EmojiAddedSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55810: for (var _fun55810_ip = 0;;) switch (_fun55810_ip) {
+        _fun55916: for (var _fun55916_ip = 0;;) switch (_fun55916_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.message;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = 'username';
                 var0 = null;
                 if (!(var11 === var12)) {
-                    _fun55810_ip = 183;
-                    continue _fun55810
+                    _fun55916_ip = 183;
+                    continue _fun55916
                 }
             case 180:
                 var0 = var4;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.roleColor = var4;
                 var0 = null;
                 if (!var8) {
-                    _fun55810_ip = 201;
-                    continue _fun55810
+                    _fun55916_ip = 201;
+                    continue _fun55916
                 }
             case 198:
                 var0 = var7;
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 'dot';
                 var0 = var0 === var7;
                 if (!var0) {
-                    _fun55810_ip = 227;
-                    continue _fun55810
+                    _fun55916_ip = 227;
+                    continue _fun55916
                 }
             case 223:
                 var0 = var5 != var4;
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.content;
                 var8 = var4.bind(var7)(var0);
                 if (!(var5 != var8)) {
-                    _fun55810_ip = 872;
-                    continue _fun55810
+                    _fun55916_ip = 872;
+                    continue _fun55916
                 }
             case 280:
                 var4 = _closure1_slot3;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5 == var7;
                 var0 = undefined;
                 if (var4) {
-                    _fun55810_ip = 320;
-                    continue _fun55810
+                    _fun55916_ip = 320;
+                    continue _fun55916
                 }
             case 304:
                 var6 = var7.getById;
@@ -189,15 +189,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5 == var0;
                 var6 = undefined;
                 if (var4) {
-                    _fun55810_ip = 534;
-                    continue _fun55810
+                    _fun55916_ip = 534;
+                    continue _fun55916
                 }
             case 529:
                 var6 = var0.name;
             case 534:
                 if (!(var5 == var6)) {
-                    _fun55810_ip = 543;
-                    continue _fun55810
+                    _fun55916_ip = 543;
+                    continue _fun55916
                 }
             case 538:
                 var6 = var8.name;
@@ -239,8 +239,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var7)(var0, var12);
                 var4 = undefined;
                 if (!var0) {
-                    _fun55810_ip = 786;
-                    continue _fun55810
+                    _fun55916_ip = 786;
+                    continue _fun55916
                 }
             case 719:
                 var0 = {
@@ -276,19 +276,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6.length;
                 var6 = 0;
                 if (!(!(var7 > var6))) {
-                    _fun55810_ip = 855;
-                    continue _fun55810
+                    _fun55916_ip = 855;
+                    continue _fun55916
                 }
             case 841:
                 if (!(var5 != var4)) {
-                    _fun55810_ip = 855;
-                    continue _fun55810
+                    _fun55916_ip = 855;
+                    continue _fun55916
                 }
             case 845:
                 var5 = new Array(1);
                 var5[0] = var4;
-                _fun55810_ip = 861;
-                continue _fun55810;
+                _fun55916_ip = 861;
+                continue _fun55916;
             case 855:
                 var5 = var3.reactions;
             case 861:
@@ -325,4 +325,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createEmojiAddedSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4702, 1372, 3052, 660, 6640, 6641, 6731, 1234, 6642, 1417, 4751, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4732, 1372, 3082, 660, 6671, 6672, 6762, 1234, 6673, 1417, 4781, 2]);

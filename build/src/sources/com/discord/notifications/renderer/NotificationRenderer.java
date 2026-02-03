@@ -17,10 +17,10 @@ import com.discord.notifications.renderer.utils.NotificationManagerUtilsKt;
 import com.discord.primitives.ChannelId;
 import com.facebook.react.devsupport.StackTraceHelper;
 import com.facebook.react.uimanager.ViewProps;
-import gs.h;
-import ir.v;
+import hs.h;
 import java.util.List;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -85,7 +85,7 @@ public final class NotificationRenderer {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(notification, "notification");
         for (ChannelId channelId : notification.getAckChannelIds()) {
-            String str = NotificationData.TYPE_MESSAGE_CREATE + ChannelId.m1065toStringimpl(channelId.m1067unboximpl());
+            String str = NotificationData.TYPE_MESSAGE_CREATE + ChannelId.m1067toStringimpl(channelId.m1069unboximpl());
             NotificationChannels notificationChannels = NotificationChannels.INSTANCE;
             if (!NotificationManagerUtilsKt.getNotificationBuilderOrCreate(context, notificationChannels.getNotificationChannelId(notification, context), NotificationManagerUtilsKt.getActiveNotification(context, str)).i().getBoolean(IGNORE_ACK_KEY, false)) {
                 clear(context, str);
@@ -101,9 +101,9 @@ public final class NotificationRenderer {
         if (Build.VERSION.SDK_INT >= 26 && !channelIds.isEmpty()) {
             for (ChannelId channelId : channelIds) {
                 if (channelId != null) {
-                    List<StatusBarNotification> m1044getCallNotificationsmJqaSGE = NotificationManagerUtilsKt.m1044getCallNotificationsmJqaSGE(context, channelId.m1067unboximpl());
-                    if (m1044getCallNotificationsmJqaSGE != null) {
-                        for (StatusBarNotification statusBarNotification : m1044getCallNotificationsmJqaSGE) {
+                    List<StatusBarNotification> m1046getCallNotificationsmJqaSGE = NotificationManagerUtilsKt.m1046getCallNotificationsmJqaSGE(context, channelId.m1069unboximpl());
+                    if (m1046getCallNotificationsmJqaSGE != null) {
+                        for (StatusBarNotification statusBarNotification : m1046getCallNotificationsmJqaSGE) {
                             String tag = statusBarNotification.getTag();
                             Intrinsics.checkNotNullExpressionValue(tag, "getTag(...)");
                             clear(context, tag);
@@ -126,9 +126,9 @@ public final class NotificationRenderer {
         if (Build.VERSION.SDK_INT >= 26 && !channelIds.isEmpty()) {
             for (ChannelId channelId : channelIds) {
                 if (channelId != null) {
-                    List<StatusBarNotification> m1044getCallNotificationsmJqaSGE = NotificationManagerUtilsKt.m1044getCallNotificationsmJqaSGE(context, channelId.m1067unboximpl());
-                    if (m1044getCallNotificationsmJqaSGE != null) {
-                        for (StatusBarNotification statusBarNotification : m1044getCallNotificationsmJqaSGE) {
+                    List<StatusBarNotification> m1046getCallNotificationsmJqaSGE = NotificationManagerUtilsKt.m1046getCallNotificationsmJqaSGE(context, channelId.m1069unboximpl());
+                    if (m1046getCallNotificationsmJqaSGE != null) {
+                        for (StatusBarNotification statusBarNotification : m1046getCallNotificationsmJqaSGE) {
                             String string = statusBarNotification.getNotification().extras.getString(USERNAME);
                             if (string != null) {
                                 String string2 = statusBarNotification.getNotification().extras.getString(CHANNEL_NAME);
@@ -238,7 +238,7 @@ public final class NotificationRenderer {
             kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r1, r2)
             java.lang.String r2 = "username"
             java.lang.String r3 = r24.getUserUsername()
-            kotlin.Pair r4 = ir.v.a(r2, r3)
+            kotlin.Pair r4 = jr.v.a(r2, r3)
             boolean r2 = com.discord.notifications.renderer.utils.NotificationDataUtilsKt.isCall(r24)
             if (r2 == 0) goto L2a
             java.lang.String r2 = r24.getChannelName()
@@ -255,7 +255,7 @@ public final class NotificationRenderer {
             java.lang.String r2 = r5.toString()
         L46:
             java.lang.String r3 = "channelName"
-            kotlin.Pair r5 = ir.v.a(r3, r2)
+            kotlin.Pair r5 = jr.v.a(r3, r2)
             java.lang.Integer r2 = r24.getChannelType()
             r3 = 0
             if (r2 != 0) goto L54
@@ -270,24 +270,24 @@ public final class NotificationRenderer {
         L5d:
             java.lang.Boolean r2 = java.lang.Boolean.valueOf(r6)
             java.lang.String r6 = "isDM"
-            kotlin.Pair r6 = ir.v.a(r6, r2)
+            kotlin.Pair r6 = jr.v.a(r6, r2)
             java.lang.String r2 = "userAvatar"
             java.lang.String r7 = r24.getUserAvatar()
-            kotlin.Pair r7 = ir.v.a(r2, r7)
+            kotlin.Pair r7 = jr.v.a(r2, r7)
             java.lang.String r2 = "userDiscriminator"
             java.lang.Integer r8 = r24.getUserDiscriminator()
-            kotlin.Pair r8 = ir.v.a(r2, r8)
-            com.discord.primitives.UserId r2 = r24.m1026getUserIdwUX8bhU()
+            kotlin.Pair r8 = jr.v.a(r2, r8)
+            com.discord.primitives.UserId r2 = r24.m1028getUserIdwUX8bhU()
             java.lang.String r2 = java.lang.String.valueOf(r2)
             java.lang.String r9 = "userId"
-            kotlin.Pair r9 = ir.v.a(r9, r2)
-            com.discord.primitives.GuildId r2 = r24.m1022getGuildIdqOKuAAo()
+            kotlin.Pair r9 = jr.v.a(r9, r2)
+            com.discord.primitives.GuildId r2 = r24.m1024getGuildIdqOKuAAo()
             java.lang.String r2 = java.lang.String.valueOf(r2)
             java.lang.String r10 = "guildId"
-            kotlin.Pair r10 = ir.v.a(r10, r2)
+            kotlin.Pair r10 = jr.v.a(r10, r2)
             java.lang.String r2 = "userGuildAvatar"
             java.lang.String r11 = r24.getUserGuildAvatar()
-            kotlin.Pair r11 = ir.v.a(r2, r11)
+            kotlin.Pair r11 = jr.v.a(r2, r11)
             java.lang.String r2 = com.discord.notifications.renderer.utils.NotificationDataUtilsKt.getTag(r24)
             java.util.Map r12 = kotlin.collections.o0.y(r25)
             java.lang.String r13 = "type"
@@ -296,25 +296,25 @@ public final class NotificationRenderer {
             java.lang.String r13 = "is_fullscreen_call_ui"
             java.lang.String r14 = "true"
             r12.put(r13, r14)
-            kotlin.Unit r13 = kotlin.Unit.f33298a
+            kotlin.Unit r13 = kotlin.Unit.f33074a
             com.discord.notifications.actions.intents.ContentAction r13 = new com.discord.notifications.actions.intents.ContentAction
             r13.<init>(r2, r12)
             java.lang.String r2 = "acceptAction"
-            kotlin.Pair r12 = ir.v.a(r2, r13)
+            kotlin.Pair r12 = jr.v.a(r2, r13)
             com.discord.notifications.actions.intents.DismissCallAction r13 = new com.discord.notifications.actions.intents.DismissCallAction
             java.lang.String r14 = com.discord.notifications.renderer.utils.NotificationDataUtilsKt.getTag(r24)
-            com.discord.primitives.ChannelId r2 = r24.m1021getChannelIdqMVnFVQ()
+            com.discord.primitives.ChannelId r2 = r24.m1023getChannelIdqMVnFVQ()
             kotlin.jvm.internal.Intrinsics.checkNotNull(r2)
-            long r15 = r2.m1067unboximpl()
-            com.discord.primitives.GuildId r18 = r24.m1022getGuildIdqOKuAAo()
-            com.discord.primitives.UserId r2 = r24.m1026getUserIdwUX8bhU()
+            long r15 = r2.m1069unboximpl()
+            com.discord.primitives.GuildId r18 = r24.m1024getGuildIdqOKuAAo()
+            com.discord.primitives.UserId r2 = r24.m1028getUserIdwUX8bhU()
             kotlin.jvm.internal.Intrinsics.checkNotNull(r2)
-            long r19 = r2.m1145unboximpl()
+            long r19 = r2.m1147unboximpl()
             r21 = 0
             r17 = 1
             r13.<init>(r14, r15, r17, r18, r19, r21)
             java.lang.String r2 = "dismissAction"
-            kotlin.Pair r13 = ir.v.a(r2, r13)
+            kotlin.Pair r13 = jr.v.a(r2, r13)
             kotlin.Pair[] r2 = new kotlin.Pair[]{r4, r5, r6, r7, r8, r9, r10, r11, r12, r13}
             android.os.Bundle r2 = w1.c.a(r2)
             r1.putExtras(r2)

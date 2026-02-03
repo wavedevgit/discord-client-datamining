@@ -3,14 +3,14 @@ package yg;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f54342a = 2130837536;
+    public static int f54317a = 2130837536;
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f54343b = 2130837537;
+    public static int f54318b = 2130837537;
 
     /* renamed from: c  reason: collision with root package name */
-    public static int f54344c = 2130837538;
+    public static int f54319c = 2130837538;
 
     /* renamed from: d  reason: collision with root package name */
-    public static int f54345d = 2130837539;
+    public static int f54320d = 2130837539;
 }

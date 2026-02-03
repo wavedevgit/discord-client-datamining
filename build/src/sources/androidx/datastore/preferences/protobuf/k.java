@@ -11,64 +11,64 @@ import java.util.Map;
 public final class k implements r1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final j f3672a;
+    private final j f3716a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f3673a;
+        static final /* synthetic */ int[] f3717a;
 
         static {
             int[] iArr = new int[q1.b.values().length];
-            f3673a = iArr;
+            f3717a = iArr;
             try {
-                iArr[q1.b.f3733u.ordinal()] = 1;
+                iArr[q1.b.f3777u.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f3673a[q1.b.f3732t.ordinal()] = 2;
+                f3717a[q1.b.f3776t.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f3673a[q1.b.f3730r.ordinal()] = 3;
+                f3717a[q1.b.f3774r.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f3673a[q1.b.B.ordinal()] = 4;
+                f3717a[q1.b.B.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f3673a[q1.b.D.ordinal()] = 5;
+                f3717a[q1.b.D.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f3673a[q1.b.f3738z.ordinal()] = 6;
+                f3717a[q1.b.f3782z.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f3673a[q1.b.f3731s.ordinal()] = 7;
+                f3717a[q1.b.f3775s.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f3673a[q1.b.f3728p.ordinal()] = 8;
+                f3717a[q1.b.f3772p.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f3673a[q1.b.C.ordinal()] = 9;
+                f3717a[q1.b.C.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f3673a[q1.b.E.ordinal()] = 10;
+                f3717a[q1.b.E.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f3673a[q1.b.f3729q.ordinal()] = 11;
+                f3717a[q1.b.f3773q.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f3673a[q1.b.f3734v.ordinal()] = 12;
+                f3717a[q1.b.f3778v.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
         }
@@ -76,12 +76,12 @@ public final class k implements r1 {
 
     private k(j jVar) {
         j jVar2 = (j) y.b(jVar, "output");
-        this.f3672a = jVar2;
-        jVar2.f3664a = this;
+        this.f3716a = jVar2;
+        jVar2.f3708a = this;
     }
 
     public static k P(j jVar) {
-        k kVar = jVar.f3664a;
+        k kVar = jVar.f3708a;
         if (kVar != null) {
             return kVar;
         }
@@ -89,9 +89,9 @@ public final class k implements r1 {
     }
 
     private void Q(int i10, boolean z10, Object obj, h0.a aVar) {
-        this.f3672a.N0(i10, 2);
-        this.f3672a.P0(h0.b(aVar, Boolean.valueOf(z10), obj));
-        h0.e(this.f3672a, aVar, Boolean.valueOf(z10), obj);
+        this.f3716a.N0(i10, 2);
+        this.f3716a.P0(h0.b(aVar, Boolean.valueOf(z10), obj));
+        h0.e(this.f3716a, aVar, Boolean.valueOf(z10), obj);
     }
 
     private void R(int i10, h0.a aVar, Map map) {
@@ -106,9 +106,9 @@ public final class k implements r1 {
         for (int i12 = 0; i12 < size; i12++) {
             int i13 = iArr[i12];
             Object obj = map.get(Integer.valueOf(i13));
-            this.f3672a.N0(i10, 2);
-            this.f3672a.P0(h0.b(aVar, Integer.valueOf(i13), obj));
-            h0.e(this.f3672a, aVar, Integer.valueOf(i13), obj);
+            this.f3716a.N0(i10, 2);
+            this.f3716a.P0(h0.b(aVar, Integer.valueOf(i13), obj));
+            h0.e(this.f3716a, aVar, Integer.valueOf(i13), obj);
         }
     }
 
@@ -124,14 +124,14 @@ public final class k implements r1 {
         for (int i12 = 0; i12 < size; i12++) {
             long j10 = jArr[i12];
             Object obj = map.get(Long.valueOf(j10));
-            this.f3672a.N0(i10, 2);
-            this.f3672a.P0(h0.b(aVar, Long.valueOf(j10), obj));
-            h0.e(this.f3672a, aVar, Long.valueOf(j10), obj);
+            this.f3716a.N0(i10, 2);
+            this.f3716a.P0(h0.b(aVar, Long.valueOf(j10), obj));
+            h0.e(this.f3716a, aVar, Long.valueOf(j10), obj);
         }
     }
 
     private void T(int i10, h0.a aVar, Map map) {
-        switch (a.f3673a[aVar.f3650a.ordinal()]) {
+        switch (a.f3717a[aVar.f3694a.ordinal()]) {
             case 1:
                 Object obj = map.get(Boolean.FALSE);
                 if (obj != null) {
@@ -161,7 +161,7 @@ public final class k implements r1 {
                 U(i10, aVar, map);
                 return;
             default:
-                throw new IllegalArgumentException("does not support key type: " + aVar.f3650a);
+                throw new IllegalArgumentException("does not support key type: " + aVar.f3694a);
         }
     }
 
@@ -177,58 +177,58 @@ public final class k implements r1 {
         for (int i12 = 0; i12 < size; i12++) {
             String str2 = strArr[i12];
             Object obj = map.get(str2);
-            this.f3672a.N0(i10, 2);
-            this.f3672a.P0(h0.b(aVar, str2, obj));
-            h0.e(this.f3672a, aVar, str2, obj);
+            this.f3716a.N0(i10, 2);
+            this.f3716a.P0(h0.b(aVar, str2, obj));
+            h0.e(this.f3716a, aVar, str2, obj);
         }
     }
 
     private void V(int i10, Object obj) {
         if (obj instanceof String) {
-            this.f3672a.L0(i10, (String) obj);
+            this.f3716a.L0(i10, (String) obj);
         } else {
-            this.f3672a.f0(i10, (g) obj);
+            this.f3716a.f0(i10, (g) obj);
         }
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void A(int i10, long j10) {
-        this.f3672a.x0(i10, j10);
+        this.f3716a.x0(i10, j10);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void B(int i10, boolean z10) {
-        this.f3672a.b0(i10, z10);
+        this.f3716a.b0(i10, z10);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void C(int i10, int i11) {
-        this.f3672a.D0(i10, i11);
+        this.f3716a.D0(i10, i11);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void D(int i10) {
-        this.f3672a.N0(i10, 3);
+        this.f3716a.N0(i10, 3);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void E(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.o(((Long) list.get(i13)).longValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.o0(((Long) list.get(i11)).longValue());
+                this.f3716a.o0(((Long) list.get(i11)).longValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.n0(i10, ((Long) list.get(i11)).longValue());
+            this.f3716a.n0(i10, ((Long) list.get(i11)).longValue());
             i11++;
         }
     }
@@ -237,20 +237,20 @@ public final class k implements r1 {
     public void F(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.G(((Integer) list.get(i13)).intValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.E0(((Integer) list.get(i11)).intValue());
+                this.f3716a.E0(((Integer) list.get(i11)).intValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.D0(i10, ((Integer) list.get(i11)).intValue());
+            this.f3716a.D0(i10, ((Integer) list.get(i11)).intValue());
             i11++;
         }
     }
@@ -259,79 +259,79 @@ public final class k implements r1 {
     public void G(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.d(((Boolean) list.get(i13)).booleanValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.c0(((Boolean) list.get(i11)).booleanValue());
+                this.f3716a.c0(((Boolean) list.get(i11)).booleanValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.b0(i10, ((Boolean) list.get(i11)).booleanValue());
+            this.f3716a.b0(i10, ((Boolean) list.get(i11)).booleanValue());
             i11++;
         }
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void H(int i10, float f10) {
-        this.f3672a.p0(i10, f10);
+        this.f3716a.p0(i10, f10);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void I(int i10) {
-        this.f3672a.N0(i10, 4);
+        this.f3716a.N0(i10, 4);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void J(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.K(((Integer) list.get(i13)).intValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.I0(((Integer) list.get(i11)).intValue());
+                this.f3716a.I0(((Integer) list.get(i11)).intValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.H0(i10, ((Integer) list.get(i11)).intValue());
+            this.f3716a.H0(i10, ((Integer) list.get(i11)).intValue());
             i11++;
         }
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void K(int i10, int i11) {
-        this.f3672a.j0(i10, i11);
+        this.f3716a.j0(i10, i11);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void L(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.x(((Long) list.get(i13)).longValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.y0(((Long) list.get(i11)).longValue());
+                this.f3716a.y0(((Long) list.get(i11)).longValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.x0(i10, ((Long) list.get(i11)).longValue());
+            this.f3716a.x0(i10, ((Long) list.get(i11)).longValue());
             i11++;
         }
     }
@@ -340,33 +340,33 @@ public final class k implements r1 {
     public void M(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.i(((Double) list.get(i13)).doubleValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.i0(((Double) list.get(i11)).doubleValue());
+                this.f3716a.i0(((Double) list.get(i11)).doubleValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.h0(i10, ((Double) list.get(i11)).doubleValue());
+            this.f3716a.h0(i10, ((Double) list.get(i11)).doubleValue());
             i11++;
         }
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void N(int i10, int i11) {
-        this.f3672a.H0(i10, i11);
+        this.f3716a.H0(i10, i11);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void O(int i10, List list) {
         for (int i11 = 0; i11 < list.size(); i11++) {
-            this.f3672a.f0(i10, (g) list.get(i11));
+            this.f3716a.f0(i10, (g) list.get(i11));
         }
     }
 
@@ -374,20 +374,20 @@ public final class k implements r1 {
     public void a(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.q(((Float) list.get(i13)).floatValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.q0(((Float) list.get(i11)).floatValue());
+                this.f3716a.q0(((Float) list.get(i11)).floatValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.p0(i10, ((Float) list.get(i11)).floatValue());
+            this.f3716a.p0(i10, ((Float) list.get(i11)).floatValue());
             i11++;
         }
     }
@@ -395,15 +395,15 @@ public final class k implements r1 {
     @Override // androidx.datastore.preferences.protobuf.r1
     public final void b(int i10, Object obj) {
         if (obj instanceof g) {
-            this.f3672a.C0(i10, (g) obj);
+            this.f3716a.C0(i10, (g) obj);
         } else {
-            this.f3672a.B0(i10, (o0) obj);
+            this.f3716a.B0(i10, (o0) obj);
         }
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void c(int i10, int i11) {
-        this.f3672a.l0(i10, i11);
+        this.f3716a.l0(i10, i11);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
@@ -412,13 +412,13 @@ public final class k implements r1 {
         if (list instanceof d0) {
             d0 d0Var = (d0) list;
             while (i11 < list.size()) {
-                V(i10, d0Var.R0(i11));
+                V(i10, d0Var.O0(i11));
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.L0(i10, (String) list.get(i11));
+            this.f3716a.L0(i10, (String) list.get(i11));
             i11++;
         }
     }
@@ -432,96 +432,96 @@ public final class k implements r1 {
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void f(int i10, String str) {
-        this.f3672a.L0(i10, str);
+        this.f3716a.L0(i10, str);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void g(int i10, long j10) {
-        this.f3672a.Q0(i10, j10);
+        this.f3716a.Q0(i10, j10);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void h(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.v(((Integer) list.get(i13)).intValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.w0(((Integer) list.get(i11)).intValue());
+                this.f3716a.w0(((Integer) list.get(i11)).intValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.v0(i10, ((Integer) list.get(i11)).intValue());
+            this.f3716a.v0(i10, ((Integer) list.get(i11)).intValue());
             i11++;
         }
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void i(int i10, int i11) {
-        this.f3672a.v0(i10, i11);
+        this.f3716a.v0(i10, i11);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void j(int i10, g gVar) {
-        this.f3672a.f0(i10, gVar);
+        this.f3716a.f0(i10, gVar);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void k(int i10, long j10) {
-        this.f3672a.F0(i10, j10);
+        this.f3716a.F0(i10, j10);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void l(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.m(((Integer) list.get(i13)).intValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.m0(((Integer) list.get(i11)).intValue());
+                this.f3716a.m0(((Integer) list.get(i11)).intValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.l0(i10, ((Integer) list.get(i11)).intValue());
+            this.f3716a.l0(i10, ((Integer) list.get(i11)).intValue());
             i11++;
         }
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void m(int i10, Object obj, d1 d1Var) {
-        this.f3672a.z0(i10, (o0) obj, d1Var);
+        this.f3716a.z0(i10, (o0) obj, d1Var);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void n(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.R(((Integer) list.get(i13)).intValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.P0(((Integer) list.get(i11)).intValue());
+                this.f3716a.P0(((Integer) list.get(i11)).intValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.O0(i10, ((Integer) list.get(i11)).intValue());
+            this.f3716a.O0(i10, ((Integer) list.get(i11)).intValue());
             i11++;
         }
     }
@@ -530,97 +530,97 @@ public final class k implements r1 {
     public void o(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.M(((Long) list.get(i13)).longValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.K0(((Long) list.get(i11)).longValue());
+                this.f3716a.K0(((Long) list.get(i11)).longValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.J0(i10, ((Long) list.get(i11)).longValue());
+            this.f3716a.J0(i10, ((Long) list.get(i11)).longValue());
             i11++;
         }
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void p(int i10, long j10) {
-        this.f3672a.J0(i10, j10);
+        this.f3716a.J0(i10, j10);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void q(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.k(((Integer) list.get(i13)).intValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.k0(((Integer) list.get(i11)).intValue());
+                this.f3716a.k0(((Integer) list.get(i11)).intValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.j0(i10, ((Integer) list.get(i11)).intValue());
+            this.f3716a.j0(i10, ((Integer) list.get(i11)).intValue());
             i11++;
         }
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void r(int i10, h0.a aVar, Map map) {
-        if (this.f3672a.Y()) {
+        if (this.f3716a.Y()) {
             T(i10, aVar, map);
             return;
         }
         for (Map.Entry entry : map.entrySet()) {
-            this.f3672a.N0(i10, 2);
-            this.f3672a.P0(h0.b(aVar, entry.getKey(), entry.getValue()));
-            h0.e(this.f3672a, aVar, entry.getKey(), entry.getValue());
+            this.f3716a.N0(i10, 2);
+            this.f3716a.P0(h0.b(aVar, entry.getKey(), entry.getValue()));
+            h0.e(this.f3716a, aVar, entry.getKey(), entry.getValue());
         }
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void s(int i10, Object obj, d1 d1Var) {
-        this.f3672a.s0(i10, (o0) obj, d1Var);
+        this.f3716a.s0(i10, (o0) obj, d1Var);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void t(int i10, int i11) {
-        this.f3672a.O0(i10, i11);
+        this.f3716a.O0(i10, i11);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void u(int i10, double d10) {
-        this.f3672a.h0(i10, d10);
+        this.f3716a.h0(i10, d10);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void v(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.I(((Long) list.get(i13)).longValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.G0(((Long) list.get(i11)).longValue());
+                this.f3716a.G0(((Long) list.get(i11)).longValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.F0(i10, ((Long) list.get(i11)).longValue());
+            this.f3716a.F0(i10, ((Long) list.get(i11)).longValue());
             i11++;
         }
     }
@@ -629,27 +629,27 @@ public final class k implements r1 {
     public void w(int i10, List list, boolean z10) {
         int i11 = 0;
         if (z10) {
-            this.f3672a.N0(i10, 2);
+            this.f3716a.N0(i10, 2);
             int i12 = 0;
             for (int i13 = 0; i13 < list.size(); i13++) {
                 i12 += j.T(((Long) list.get(i13)).longValue());
             }
-            this.f3672a.P0(i12);
+            this.f3716a.P0(i12);
             while (i11 < list.size()) {
-                this.f3672a.R0(((Long) list.get(i11)).longValue());
+                this.f3716a.R0(((Long) list.get(i11)).longValue());
                 i11++;
             }
             return;
         }
         while (i11 < list.size()) {
-            this.f3672a.Q0(i10, ((Long) list.get(i11)).longValue());
+            this.f3716a.Q0(i10, ((Long) list.get(i11)).longValue());
             i11++;
         }
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1
     public void x(int i10, long j10) {
-        this.f3672a.n0(i10, j10);
+        this.f3716a.n0(i10, j10);
     }
 
     @Override // androidx.datastore.preferences.protobuf.r1

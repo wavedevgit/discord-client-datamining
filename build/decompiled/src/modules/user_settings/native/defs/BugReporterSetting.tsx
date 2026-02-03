@@ -14,15 +14,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 4;
         var1 = var1[var0];
         var0 = undefined;
-        var3 = var2.bind(var0)(var1);
-        var2 = var3.useExperiment;
-        var1 = {};
-        var0 = 'native-settings';
-        var1.location = var0;
+        var2 = var2.bind(var0)(var1);
+        var1 = var2.useConfig;
         var0 = {};
-        var4 = false;
-        var0.autoTrackExposure = var4;
-        var0 = var2.bind(var3)(var1, var0);
+        var3 = 'native-settings';
+        var0.location = var3;
+        var0 = var1.bind(var2)(var0);
         var0 = var0.hasBugReporterAccess;
         return var0;
     };
@@ -63,15 +60,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.BugIcon;
     var3.IconComponent = var10;
     var9 = function() {
-        _fun87558: for (var _fun87558_ip = 0;;) switch (_fun87558_ip) {
+        _fun87915: for (var _fun87915_ip = 0;;) switch (_fun87915_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var1 = var2.getField;
                 var0 = 'isReportOpen';
                 var0 = var1.bind(var2)(var0);
                 if (var0) {
-                    _fun87558_ip = 116;
-                    continue _fun87558
+                    _fun87915_ip = 116;
+                    continue _fun87915
                 }
             case 25:
                 var2 = _closure1_slot3;
@@ -114,4 +111,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.useBugReporterExperimentSettingPredicate = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8700, 4527, 8772, 1307, 9711, 8945, 1234, 11290, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8732, 4557, 8804, 1307, 9743, 8977, 1234, 11365, 2]);

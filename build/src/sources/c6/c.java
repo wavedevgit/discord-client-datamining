@@ -8,19 +8,19 @@ import java.util.List;
 public class c {
 
     /* renamed from: e  reason: collision with root package name */
-    protected static final Comparator f8126e = new a();
+    protected static final Comparator f7982e = new a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f8127a = new ArrayList();
+    private final List f7983a = new ArrayList();
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f8128b = new ArrayList(64);
+    private final List f7984b = new ArrayList(64);
 
     /* renamed from: c  reason: collision with root package name */
-    private int f8129c = 0;
+    private int f7985c = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f8130d;
+    private final int f7986d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Comparator {
@@ -35,24 +35,24 @@ public class c {
     }
 
     public c(int i10) {
-        this.f8130d = i10;
+        this.f7986d = i10;
     }
 
     private synchronized void c() {
-        while (this.f8129c > this.f8130d) {
-            byte[] bArr = (byte[]) this.f8127a.remove(0);
-            this.f8128b.remove(bArr);
-            this.f8129c -= bArr.length;
+        while (this.f7985c > this.f7986d) {
+            byte[] bArr = (byte[]) this.f7983a.remove(0);
+            this.f7984b.remove(bArr);
+            this.f7985c -= bArr.length;
         }
     }
 
     public synchronized byte[] a(int i10) {
-        for (int i11 = 0; i11 < this.f8128b.size(); i11++) {
-            byte[] bArr = (byte[]) this.f8128b.get(i11);
+        for (int i11 = 0; i11 < this.f7984b.size(); i11++) {
+            byte[] bArr = (byte[]) this.f7984b.get(i11);
             if (bArr.length >= i10) {
-                this.f8129c -= bArr.length;
-                this.f8128b.remove(i11);
-                this.f8127a.remove(bArr);
+                this.f7985c -= bArr.length;
+                this.f7984b.remove(i11);
+                this.f7983a.remove(bArr);
                 return bArr;
             }
         }
@@ -61,14 +61,14 @@ public class c {
 
     public synchronized void b(byte[] bArr) {
         if (bArr != null) {
-            if (bArr.length <= this.f8130d) {
-                this.f8127a.add(bArr);
-                int binarySearch = Collections.binarySearch(this.f8128b, bArr, f8126e);
+            if (bArr.length <= this.f7986d) {
+                this.f7983a.add(bArr);
+                int binarySearch = Collections.binarySearch(this.f7984b, bArr, f7982e);
                 if (binarySearch < 0) {
                     binarySearch = (-binarySearch) - 1;
                 }
-                this.f8128b.add(binarySearch, bArr);
-                this.f8129c += bArr.length;
+                this.f7984b.add(binarySearch, bArr);
+                this.f7985c += bArr.length;
                 c();
             }
         }

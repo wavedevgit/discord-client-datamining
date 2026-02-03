@@ -7,7 +7,7 @@ import kotlin.sequences.Sequence;
 public class k implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final k f33889d = new k();
+    public static final k f33665d = new k();
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {

@@ -7,7 +7,7 @@ import android.view.Surface;
 public final class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f48676a;
+    private final a f48730a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     interface a {
@@ -33,13 +33,13 @@ public final class j {
     public j(int i10, Surface surface) {
         int i11 = Build.VERSION.SDK_INT;
         if (i11 >= 33) {
-            this.f48676a = new n(i10, surface);
+            this.f48730a = new n(i10, surface);
         } else if (i11 >= 28) {
-            this.f48676a = new m(i10, surface);
+            this.f48730a = new m(i10, surface);
         } else if (i11 >= 26) {
-            this.f48676a = new l(i10, surface);
+            this.f48730a = new l(i10, surface);
         } else {
-            this.f48676a = new k(i10, surface);
+            this.f48730a = new k(i10, surface);
         }
     }
 
@@ -65,57 +65,57 @@ public final class j {
     }
 
     public void a(Surface surface) {
-        this.f48676a.b(surface);
+        this.f48730a.b(surface);
     }
 
     public void b() {
-        this.f48676a.f();
+        this.f48730a.f();
     }
 
     public String c() {
-        return this.f48676a.e();
+        return this.f48730a.e();
     }
 
     public Surface d() {
-        return this.f48676a.getSurface();
+        return this.f48730a.getSurface();
     }
 
     public void e(long j10) {
-        this.f48676a.c(j10);
+        this.f48730a.c(j10);
     }
 
     public boolean equals(Object obj) {
         if (!(obj instanceof j)) {
             return false;
         }
-        return this.f48676a.equals(((j) obj).f48676a);
+        return this.f48730a.equals(((j) obj).f48730a);
     }
 
     public void f(int i10) {
-        this.f48676a.g(i10);
+        this.f48730a.g(i10);
     }
 
     public void g(String str) {
-        this.f48676a.d(str);
+        this.f48730a.d(str);
     }
 
     public void h(long j10) {
-        this.f48676a.a(j10);
+        this.f48730a.a(j10);
     }
 
     public int hashCode() {
-        return this.f48676a.hashCode();
+        return this.f48730a.hashCode();
     }
 
     public Object i() {
-        return this.f48676a.h();
+        return this.f48730a.h();
     }
 
     public j(OutputConfiguration outputConfiguration) {
-        this.f48676a = n.m(outputConfiguration);
+        this.f48730a = n.m(outputConfiguration);
     }
 
     private j(a aVar) {
-        this.f48676a = aVar;
+        this.f48730a = aVar;
     }
 }

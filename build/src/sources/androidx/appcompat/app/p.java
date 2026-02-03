@@ -10,7 +10,7 @@ import org.xmlpull.v1.XmlPullParserException;
 class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Deque f1073a = new ArrayDeque();
+    private final Deque f1117a = new ArrayDeque();
 
     private static boolean b(XmlPullParser xmlPullParser) {
         if (xmlPullParser != null) {
@@ -57,8 +57,8 @@ class p {
         if (attributeSet instanceof XmlPullParser) {
             XmlPullParser xmlPullParser = (XmlPullParser) attributeSet;
             if (xmlPullParser.getDepth() == 1) {
-                XmlPullParser c10 = c(this.f1073a);
-                this.f1073a.push(new WeakReference(xmlPullParser));
+                XmlPullParser c10 = c(this.f1117a);
+                this.f1117a.push(new WeakReference(xmlPullParser));
                 if (d(xmlPullParser, c10)) {
                     return true;
                 }

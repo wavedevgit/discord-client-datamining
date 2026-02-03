@@ -13,13 +13,13 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.play.core.assetpacks.AssetPackManager;
 import com.google.android.play.core.assetpacks.AssetPackState;
 import com.google.android.play.core.assetpacks.AssetPackStateUpdateListener;
-import ir.v;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -323,7 +323,7 @@ public final class PlayAssetDelivery {
                         function1.invoke(Boolean.valueOf(z10));
                     }
                     list.clear();
-                    Unit unit = Unit.f33298a;
+                    Unit unit = Unit.f33074a;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -373,7 +373,7 @@ public final class PlayAssetDelivery {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit registerBackgroundStartListener$lambda$1() {
         INSTANCE.handleBackgroundOnlyStart();
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

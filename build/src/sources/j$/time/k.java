@@ -53,7 +53,7 @@ public abstract class k implements Serializable {
             throw new IllegalArgumentException("prefix should be GMT, UTC or UT, is: ".concat(str));
         }
         if (zoneOffset.getTotalSeconds() != 0) {
-            str = str.concat(zoneOffset.f31543b);
+            str = str.concat(zoneOffset.f31281b);
         }
         return new l(str, new j$.time.zone.c(zoneOffset));
     }

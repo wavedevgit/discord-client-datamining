@@ -70,7 +70,7 @@ public final class AFd1uSDK implements AFd1zSDK {
                             for (File file2 : listFiles2) {
                                 AFc1cSDK.AFa1vSDK aFa1vSDK = AFc1cSDK.AFa1vSDK;
                                 Intrinsics.checkNotNullExpressionValue(file2, "");
-                                AFc1cSDK currencyIso4217Code = AFc1cSDK.AFa1vSDK.getCurrencyIso4217Code(tr.j.j(file2, null, 1, null));
+                                AFc1cSDK currencyIso4217Code = AFc1cSDK.AFa1vSDK.getCurrencyIso4217Code(ur.j.j(file2, null, 1, null));
                                 if (currencyIso4217Code != null) {
                                     arrayList.add(currencyIso4217Code);
                                 }
@@ -118,13 +118,13 @@ public final class AFd1uSDK implements AFd1zSDK {
                     File file2 = new File(file, str3);
                     if (file2.exists()) {
                         AFc1cSDK.AFa1vSDK aFa1vSDK = AFc1cSDK.AFa1vSDK;
-                        AFc1cSDK currencyIso4217Code = AFc1cSDK.AFa1vSDK.getCurrencyIso4217Code(tr.j.j(file2, null, 1, null));
+                        AFc1cSDK currencyIso4217Code = AFc1cSDK.AFa1vSDK.getCurrencyIso4217Code(ur.j.j(file2, null, 1, null));
                         if (currencyIso4217Code != null) {
                             currencyIso4217Code.getCurrencyIso4217Code++;
                             AFAdRevenueData = currencyIso4217Code;
                         }
                     }
-                    tr.j.l(file2, AFAdRevenueData.getMediationNetwork(), null, 2, null);
+                    ur.j.l(file2, AFAdRevenueData.getMediationNetwork(), null, 2, null);
                     str2 = str3;
                 } catch (Exception e10) {
                     AFh1ySDK.v$default(AFLogger.INSTANCE, AFg1cSDK.EXCEPTION_MANAGER, "Could not cache exception\n " + e10.getMessage(), false, 4, null);
@@ -145,7 +145,7 @@ public final class AFd1uSDK implements AFd1zSDK {
                 if (monetizationNetwork != null) {
                     if (strArr.length == 0) {
                         AFh1ySDK.v$default(AFLogger.INSTANCE, AFg1cSDK.EXCEPTION_MANAGER, "delete all exceptions", false, 4, null);
-                        z10 = tr.j.r(monetizationNetwork);
+                        z10 = ur.j.r(monetizationNetwork);
                     } else {
                         AFh1ySDK.v$default(AFLogger.INSTANCE, AFg1cSDK.EXCEPTION_MANAGER, "delete all exceptions except for: " + kotlin.collections.i.v0(strArr, ", ", null, null, 0, null, null, 62, null), false, 4, null);
                         File[] listFiles = monetizationNetwork.listFiles();
@@ -160,7 +160,7 @@ public final class AFd1uSDK implements AFd1zSDK {
                             ArrayList arrayList2 = new ArrayList(CollectionsKt.w(arrayList, 10));
                             for (File file2 : arrayList) {
                                 Intrinsics.checkNotNullExpressionValue(file2, "");
-                                arrayList2.add(Boolean.valueOf(tr.j.r(file2)));
+                                arrayList2.add(Boolean.valueOf(ur.j.r(file2)));
                             }
                             Set l12 = CollectionsKt.l1(arrayList2);
                             if (l12.isEmpty()) {
@@ -200,10 +200,10 @@ public final class AFd1uSDK implements AFd1zSDK {
                     ArrayList arrayList2 = new ArrayList(CollectionsKt.w(arrayList, 10));
                     for (File file2 : arrayList) {
                         Intrinsics.checkNotNullExpressionValue(file2, "");
-                        arrayList2.add(Boolean.valueOf(tr.j.r(file2)));
+                        arrayList2.add(Boolean.valueOf(ur.j.r(file2)));
                     }
                 }
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             } catch (Throwable th2) {
                 throw th2;
             }

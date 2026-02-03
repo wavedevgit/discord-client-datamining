@@ -26,7 +26,7 @@ import java.util.List;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnDismissListener {
-    private static final int M = f.g.f24173e;
+    private static final int M = f.g.f23384e;
     View A;
     private boolean C;
     private boolean D;
@@ -39,46 +39,46 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
     boolean L;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Context f1248e;
+    private final Context f1292e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f1249i;
+    private final int f1293i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f1250o;
+    private final int f1294o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f1251p;
+    private final int f1295p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f1252q;
+    private final boolean f1296q;
 
     /* renamed from: r  reason: collision with root package name */
-    final Handler f1253r;
+    final Handler f1297r;
 
     /* renamed from: z  reason: collision with root package name */
-    private View f1261z;
+    private View f1305z;
 
     /* renamed from: s  reason: collision with root package name */
-    private final List f1254s = new ArrayList();
+    private final List f1298s = new ArrayList();
 
     /* renamed from: t  reason: collision with root package name */
-    final List f1255t = new ArrayList();
+    final List f1299t = new ArrayList();
 
     /* renamed from: u  reason: collision with root package name */
-    final ViewTreeObserver.OnGlobalLayoutListener f1256u = new a();
+    final ViewTreeObserver.OnGlobalLayoutListener f1300u = new a();
 
     /* renamed from: v  reason: collision with root package name */
-    private final View.OnAttachStateChangeListener f1257v = new View$OnAttachStateChangeListenerC0017b();
+    private final View.OnAttachStateChangeListener f1301v = new View$OnAttachStateChangeListenerC0021b();
 
     /* renamed from: w  reason: collision with root package name */
-    private final k0 f1258w = new c();
+    private final k0 f1302w = new c();
 
     /* renamed from: x  reason: collision with root package name */
-    private int f1259x = 0;
+    private int f1303x = 0;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f1260y = 0;
+    private int f1304y = 0;
     private boolean G = false;
     private int B = B();
 
@@ -89,11 +89,11 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
 
         @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
         public void onGlobalLayout() {
-            if (b.this.isShowing() && b.this.f1255t.size() > 0 && !((d) b.this.f1255t.get(0)).f1269a.z()) {
+            if (b.this.isShowing() && b.this.f1299t.size() > 0 && !((d) b.this.f1299t.get(0)).f1313a.z()) {
                 View view = b.this.A;
                 if (view != null && view.isShown()) {
-                    for (d dVar : b.this.f1255t) {
-                        dVar.f1269a.show();
+                    for (d dVar : b.this.f1299t) {
+                        dVar.f1313a.show();
                     }
                     return;
                 }
@@ -104,8 +104,8 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
 
     /* renamed from: androidx.appcompat.view.menu.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    class View$OnAttachStateChangeListenerC0017b implements View.OnAttachStateChangeListener {
-        View$OnAttachStateChangeListenerC0017b() {
+    class View$OnAttachStateChangeListenerC0021b implements View.OnAttachStateChangeListener {
+        View$OnAttachStateChangeListenerC0021b() {
         }
 
         @Override // android.view.View.OnAttachStateChangeListener
@@ -120,7 +120,7 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
                     b.this.J = view.getViewTreeObserver();
                 }
                 b bVar = b.this;
-                bVar.J.removeGlobalOnLayoutListener(bVar.f1256u);
+                bVar.J.removeGlobalOnLayoutListener(bVar.f1300u);
             }
             view.removeOnAttachStateChangeListener(this);
         }
@@ -133,30 +133,30 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
         class a implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ d f1265d;
+            final /* synthetic */ d f1309d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ MenuItem f1266e;
+            final /* synthetic */ MenuItem f1310e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ e f1267i;
+            final /* synthetic */ e f1311i;
 
             a(d dVar, MenuItem menuItem, e eVar) {
-                this.f1265d = dVar;
-                this.f1266e = menuItem;
-                this.f1267i = eVar;
+                this.f1309d = dVar;
+                this.f1310e = menuItem;
+                this.f1311i = eVar;
             }
 
             @Override // java.lang.Runnable
             public void run() {
-                d dVar = this.f1265d;
+                d dVar = this.f1309d;
                 if (dVar != null) {
                     b.this.L = true;
-                    dVar.f1270b.e(false);
+                    dVar.f1314b.e(false);
                     b.this.L = false;
                 }
-                if (this.f1266e.isEnabled() && this.f1266e.hasSubMenu()) {
-                    this.f1267i.M(this.f1266e, 4);
+                if (this.f1310e.isEnabled() && this.f1310e.hasSubMenu()) {
+                    this.f1311i.M(this.f1310e, 4);
                 }
             }
         }
@@ -167,12 +167,12 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
         @Override // androidx.appcompat.widget.k0
         public void a(e eVar, MenuItem menuItem) {
             d dVar = null;
-            b.this.f1253r.removeCallbacksAndMessages(null);
-            int size = b.this.f1255t.size();
+            b.this.f1297r.removeCallbacksAndMessages(null);
+            int size = b.this.f1299t.size();
             int i10 = 0;
             while (true) {
                 if (i10 < size) {
-                    if (eVar == ((d) b.this.f1255t.get(i10)).f1270b) {
+                    if (eVar == ((d) b.this.f1299t.get(i10)).f1314b) {
                         break;
                     }
                     i10++;
@@ -185,15 +185,15 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
                 return;
             }
             int i11 = i10 + 1;
-            if (i11 < b.this.f1255t.size()) {
-                dVar = (d) b.this.f1255t.get(i11);
+            if (i11 < b.this.f1299t.size()) {
+                dVar = (d) b.this.f1299t.get(i11);
             }
-            b.this.f1253r.postAtTime(new a(dVar, menuItem, eVar), eVar, SystemClock.uptimeMillis() + 200);
+            b.this.f1297r.postAtTime(new a(dVar, menuItem, eVar), eVar, SystemClock.uptimeMillis() + 200);
         }
 
         @Override // androidx.appcompat.widget.k0
         public void m(e eVar, MenuItem menuItem) {
-            b.this.f1253r.removeCallbacksAndMessages(eVar);
+            b.this.f1297r.removeCallbacksAndMessages(eVar);
         }
     }
 
@@ -202,41 +202,41 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public final l0 f1269a;
+        public final l0 f1313a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final e f1270b;
+        public final e f1314b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f1271c;
+        public final int f1315c;
 
         public d(l0 l0Var, e eVar, int i10) {
-            this.f1269a = l0Var;
-            this.f1270b = eVar;
-            this.f1271c = i10;
+            this.f1313a = l0Var;
+            this.f1314b = eVar;
+            this.f1315c = i10;
         }
 
         public ListView a() {
-            return this.f1269a.n();
+            return this.f1313a.n();
         }
     }
 
     public b(Context context, View view, int i10, int i11, boolean z10) {
-        this.f1248e = context;
-        this.f1261z = view;
-        this.f1250o = i10;
-        this.f1251p = i11;
-        this.f1252q = z10;
+        this.f1292e = context;
+        this.f1305z = view;
+        this.f1294o = i10;
+        this.f1295p = i11;
+        this.f1296q = z10;
         Resources resources = context.getResources();
-        this.f1249i = Math.max(resources.getDisplayMetrics().widthPixels / 2, resources.getDimensionPixelSize(f.d.f24105b));
-        this.f1253r = new Handler();
+        this.f1293i = Math.max(resources.getDisplayMetrics().widthPixels / 2, resources.getDimensionPixelSize(f.d.f23316b));
+        this.f1297r = new Handler();
     }
 
     private View A(d dVar, e eVar) {
         androidx.appcompat.view.menu.d dVar2;
         int i10;
         int firstVisiblePosition;
-        MenuItem z10 = z(dVar.f1270b, eVar);
+        MenuItem z10 = z(dVar.f1314b, eVar);
         if (z10 == null) {
             return null;
         }
@@ -270,14 +270,14 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
     }
 
     private int B() {
-        if (this.f1261z.getLayoutDirection() != 1) {
+        if (this.f1305z.getLayoutDirection() != 1) {
             return 1;
         }
         return 0;
     }
 
     private int C(int i10) {
-        List list = this.f1255t;
+        List list = this.f1299t;
         ListView a10 = ((d) list.get(list.size() - 1)).a();
         int[] iArr = new int[2];
         a10.getLocationOnScreen(iArr);
@@ -302,20 +302,20 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
         int i10;
         int i11;
         int i12;
-        LayoutInflater from = LayoutInflater.from(this.f1248e);
-        androidx.appcompat.view.menu.d dVar2 = new androidx.appcompat.view.menu.d(eVar, from, this.f1252q, M);
+        LayoutInflater from = LayoutInflater.from(this.f1292e);
+        androidx.appcompat.view.menu.d dVar2 = new androidx.appcompat.view.menu.d(eVar, from, this.f1296q, M);
         if (!isShowing() && this.G) {
             dVar2.d(true);
         } else if (isShowing()) {
             dVar2.d(h.v(eVar));
         }
-        int l10 = h.l(dVar2, null, this.f1248e, this.f1249i);
+        int l10 = h.l(dVar2, null, this.f1292e, this.f1293i);
         l0 x10 = x();
         x10.l(dVar2);
         x10.D(l10);
-        x10.E(this.f1260y);
-        if (this.f1255t.size() > 0) {
-            List list = this.f1255t;
+        x10.E(this.f1304y);
+        if (this.f1299t.size() > 0) {
+            List list = this.f1299t;
             dVar = (d) list.get(list.size() - 1);
             view = A(dVar, eVar);
         } else {
@@ -338,17 +338,17 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
                 i10 = 0;
             } else {
                 int[] iArr = new int[2];
-                this.f1261z.getLocationOnScreen(iArr);
+                this.f1305z.getLocationOnScreen(iArr);
                 int[] iArr2 = new int[2];
                 view.getLocationOnScreen(iArr2);
-                if ((this.f1260y & 7) == 5) {
-                    iArr[0] = iArr[0] + this.f1261z.getWidth();
+                if ((this.f1304y & 7) == 5) {
+                    iArr[0] = iArr[0] + this.f1305z.getWidth();
                     iArr2[0] = iArr2[0] + view.getWidth();
                 }
                 i10 = iArr2[0] - iArr[0];
                 i11 = iArr2[1] - iArr[1];
             }
-            if ((this.f1260y & 5) == 5) {
+            if ((this.f1304y & 5) == 5) {
                 if (!z10) {
                     l10 = view.getWidth();
                     i12 = i10 - l10;
@@ -373,12 +373,12 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
             }
             x10.F(k());
         }
-        this.f1255t.add(new d(x10, eVar, this.B));
+        this.f1299t.add(new d(x10, eVar, this.B));
         x10.show();
         ListView n10 = x10.n();
         n10.setOnKeyListener(this);
         if (dVar == null && this.H && eVar.x() != null) {
-            FrameLayout frameLayout = (FrameLayout) from.inflate(f.g.f24180l, (ViewGroup) n10, false);
+            FrameLayout frameLayout = (FrameLayout) from.inflate(f.g.f23391l, (ViewGroup) n10, false);
             frameLayout.setEnabled(false);
             ((TextView) frameLayout.findViewById(16908310)).setText(eVar.x());
             n10.addHeaderView(frameLayout, null, false);
@@ -387,21 +387,21 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
     }
 
     private l0 x() {
-        l0 l0Var = new l0(this.f1248e, null, this.f1250o, this.f1251p);
-        l0Var.S(this.f1258w);
+        l0 l0Var = new l0(this.f1292e, null, this.f1294o, this.f1295p);
+        l0Var.S(this.f1302w);
         l0Var.J(this);
         l0Var.I(this);
-        l0Var.B(this.f1261z);
-        l0Var.E(this.f1260y);
+        l0Var.B(this.f1305z);
+        l0Var.E(this.f1304y);
         l0Var.H(true);
         l0Var.G(2);
         return l0Var;
     }
 
     private int y(e eVar) {
-        int size = this.f1255t.size();
+        int size = this.f1299t.size();
         for (int i10 = 0; i10 < size; i10++) {
-            if (eVar == ((d) this.f1255t.get(i10)).f1270b) {
+            if (eVar == ((d) this.f1299t.get(i10)).f1314b) {
                 return i10;
             }
         }
@@ -424,19 +424,19 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
         int y10 = y(eVar);
         if (y10 >= 0) {
             int i10 = y10 + 1;
-            if (i10 < this.f1255t.size()) {
-                ((d) this.f1255t.get(i10)).f1270b.e(false);
+            if (i10 < this.f1299t.size()) {
+                ((d) this.f1299t.get(i10)).f1314b.e(false);
             }
-            d dVar = (d) this.f1255t.remove(y10);
-            dVar.f1270b.P(this);
+            d dVar = (d) this.f1299t.remove(y10);
+            dVar.f1314b.P(this);
             if (this.L) {
-                dVar.f1269a.R(null);
-                dVar.f1269a.C(0);
+                dVar.f1313a.R(null);
+                dVar.f1313a.C(0);
             }
-            dVar.f1269a.dismiss();
-            int size = this.f1255t.size();
+            dVar.f1313a.dismiss();
+            int size = this.f1299t.size();
             if (size > 0) {
-                this.B = ((d) this.f1255t.get(size - 1)).f1271c;
+                this.B = ((d) this.f1299t.get(size - 1)).f1315c;
             } else {
                 this.B = B();
             }
@@ -449,14 +449,14 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
                 ViewTreeObserver viewTreeObserver = this.J;
                 if (viewTreeObserver != null) {
                     if (viewTreeObserver.isAlive()) {
-                        this.J.removeGlobalOnLayoutListener(this.f1256u);
+                        this.J.removeGlobalOnLayoutListener(this.f1300u);
                     }
                     this.J = null;
                 }
-                this.A.removeOnAttachStateChangeListener(this.f1257v);
+                this.A.removeOnAttachStateChangeListener(this.f1301v);
                 this.K.onDismiss();
             } else if (z10) {
-                ((d) this.f1255t.get(0)).f1270b.e(false);
+                ((d) this.f1299t.get(0)).f1314b.e(false);
             }
         }
     }
@@ -468,8 +468,8 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
 
     @Override // androidx.appcompat.view.menu.j
     public boolean d(m mVar) {
-        for (d dVar : this.f1255t) {
-            if (mVar == dVar.f1270b) {
+        for (d dVar : this.f1299t) {
+            if (mVar == dVar.f1314b) {
                 dVar.a().requestFocus();
                 return true;
             }
@@ -487,13 +487,13 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
 
     @Override // k.e
     public void dismiss() {
-        int size = this.f1255t.size();
+        int size = this.f1299t.size();
         if (size > 0) {
-            d[] dVarArr = (d[]) this.f1255t.toArray(new d[size]);
+            d[] dVarArr = (d[]) this.f1299t.toArray(new d[size]);
             for (int i10 = size - 1; i10 >= 0; i10--) {
                 d dVar = dVarArr[i10];
-                if (dVar.f1269a.isShowing()) {
-                    dVar.f1269a.dismiss();
+                if (dVar.f1313a.isShowing()) {
+                    dVar.f1313a.dismiss();
                 }
             }
         }
@@ -501,7 +501,7 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
 
     @Override // androidx.appcompat.view.menu.j
     public void e(boolean z10) {
-        for (d dVar : this.f1255t) {
+        for (d dVar : this.f1299t) {
             h.w(dVar.a().getAdapter()).notifyDataSetChanged();
         }
     }
@@ -513,17 +513,17 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
 
     @Override // androidx.appcompat.view.menu.h
     public void i(e eVar) {
-        eVar.c(this, this.f1248e);
+        eVar.c(this, this.f1292e);
         if (isShowing()) {
             D(eVar);
         } else {
-            this.f1254s.add(eVar);
+            this.f1298s.add(eVar);
         }
     }
 
     @Override // k.e
     public boolean isShowing() {
-        if (this.f1255t.size() <= 0 || !((d) this.f1255t.get(0)).f1269a.isShowing()) {
+        if (this.f1299t.size() <= 0 || !((d) this.f1299t.get(0)).f1313a.isShowing()) {
             return false;
         }
         return true;
@@ -536,30 +536,30 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
 
     @Override // androidx.appcompat.view.menu.h
     public void m(View view) {
-        if (this.f1261z != view) {
-            this.f1261z = view;
-            this.f1260y = androidx.core.view.j.b(this.f1259x, view.getLayoutDirection());
+        if (this.f1305z != view) {
+            this.f1305z = view;
+            this.f1304y = androidx.core.view.j.b(this.f1303x, view.getLayoutDirection());
         }
     }
 
     @Override // k.e
     public ListView n() {
-        if (this.f1255t.isEmpty()) {
+        if (this.f1299t.isEmpty()) {
             return null;
         }
-        List list = this.f1255t;
+        List list = this.f1299t;
         return ((d) list.get(list.size() - 1)).a();
     }
 
     @Override // android.widget.PopupWindow.OnDismissListener
     public void onDismiss() {
         d dVar;
-        int size = this.f1255t.size();
+        int size = this.f1299t.size();
         int i10 = 0;
         while (true) {
             if (i10 < size) {
-                dVar = (d) this.f1255t.get(i10);
-                if (!dVar.f1269a.isShowing()) {
+                dVar = (d) this.f1299t.get(i10);
+                if (!dVar.f1313a.isShowing()) {
                     break;
                 }
                 i10++;
@@ -569,7 +569,7 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
             }
         }
         if (dVar != null) {
-            dVar.f1270b.e(false);
+            dVar.f1314b.e(false);
         }
     }
 
@@ -589,9 +589,9 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
 
     @Override // androidx.appcompat.view.menu.h
     public void q(int i10) {
-        if (this.f1259x != i10) {
-            this.f1259x = i10;
-            this.f1260y = androidx.core.view.j.b(i10, this.f1261z.getLayoutDirection());
+        if (this.f1303x != i10) {
+            this.f1303x = i10;
+            this.f1304y = androidx.core.view.j.b(i10, this.f1305z.getLayoutDirection());
         }
     }
 
@@ -610,11 +610,11 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
     public void show() {
         boolean z10;
         if (!isShowing()) {
-            for (e eVar : this.f1254s) {
+            for (e eVar : this.f1298s) {
                 D(eVar);
             }
-            this.f1254s.clear();
-            View view = this.f1261z;
+            this.f1298s.clear();
+            View view = this.f1305z;
             this.A = view;
             if (view != null) {
                 if (this.J == null) {
@@ -625,9 +625,9 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
                 ViewTreeObserver viewTreeObserver = view.getViewTreeObserver();
                 this.J = viewTreeObserver;
                 if (z10) {
-                    viewTreeObserver.addOnGlobalLayoutListener(this.f1256u);
+                    viewTreeObserver.addOnGlobalLayoutListener(this.f1300u);
                 }
-                this.A.addOnAttachStateChangeListener(this.f1257v);
+                this.A.addOnAttachStateChangeListener(this.f1301v);
             }
         }
     }

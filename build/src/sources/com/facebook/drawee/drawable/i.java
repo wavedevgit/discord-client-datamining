@@ -50,12 +50,12 @@ public class i extends l {
                 Bitmap bitmap = this.Q;
                 Shader.TileMode tileMode = Shader.TileMode.CLAMP;
                 paint.setShader(new BitmapShader(bitmap, tileMode, tileMode));
-                this.f11110q = true;
+                this.f10739q = true;
             }
         }
-        if (this.f11110q && (shader = this.O.getShader()) != null) {
+        if (this.f10739q && (shader = this.O.getShader()) != null) {
             shader.setLocalMatrix(this.I);
-            this.f11110q = false;
+            this.f10739q = false;
         }
         this.O.setFilterBitmap(i());
     }
@@ -86,16 +86,16 @@ public class i extends l {
         if (!this.S && this.T != null) {
             int save2 = canvas.save();
             canvas.clipRect(this.T);
-            canvas.drawPath(this.f11109p, this.O);
+            canvas.drawPath(this.f10738p, this.O);
             canvas.restoreToCount(save2);
         } else {
-            canvas.drawPath(this.f11109p, this.O);
+            canvas.drawPath(this.f10738p, this.O);
         }
-        float f10 = this.f11108o;
+        float f10 = this.f10737o;
         if (f10 > 0.0f) {
             this.P.setStrokeWidth(f10);
-            this.P.setColor(d.c(this.f11111r, this.O.getAlpha()));
-            canvas.drawPath(this.f11112s, this.P);
+            this.P.setColor(d.c(this.f10740r, this.O.getAlpha()));
+            canvas.drawPath(this.f10741s, this.P);
         }
         canvas.restoreToCount(save);
         if (ya.b.d()) {
@@ -120,7 +120,7 @@ public class i extends l {
             if (this.T == null) {
                 this.T = new RectF();
             }
-            this.I.mapRect(this.T, this.f11118y);
+            this.I.mapRect(this.T, this.f10747y);
         }
     }
 

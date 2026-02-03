@@ -9,48 +9,48 @@ import kotlin.jvm.internal.Intrinsics;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Fragment f19269a;
+    private final Fragment f18902a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final OnBackPressedCallback f19270b;
+    private final OnBackPressedCallback f18903b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f19271c;
+    private boolean f18904c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f19272d;
+    private boolean f18905d;
 
     public h(Fragment fragment, OnBackPressedCallback onBackPressedCallback) {
         Intrinsics.checkNotNullParameter(fragment, "fragment");
         Intrinsics.checkNotNullParameter(onBackPressedCallback, "onBackPressedCallback");
-        this.f19269a = fragment;
-        this.f19270b = onBackPressedCallback;
-        this.f19272d = true;
+        this.f18902a = fragment;
+        this.f18903b = onBackPressedCallback;
+        this.f18905d = true;
     }
 
     public final boolean a() {
-        return this.f19272d;
+        return this.f18905d;
     }
 
     public final void b() {
         OnBackPressedDispatcher onBackPressedDispatcher;
-        if (!this.f19271c && this.f19272d) {
-            FragmentActivity activity = this.f19269a.getActivity();
+        if (!this.f18904c && this.f18905d) {
+            FragmentActivity activity = this.f18902a.getActivity();
             if (activity != null && (onBackPressedDispatcher = activity.getOnBackPressedDispatcher()) != null) {
-                onBackPressedDispatcher.h(this.f19269a, this.f19270b);
+                onBackPressedDispatcher.h(this.f18902a, this.f18903b);
             }
-            this.f19271c = true;
+            this.f18904c = true;
         }
     }
 
     public final void c() {
-        if (this.f19271c) {
-            this.f19270b.remove();
-            this.f19271c = false;
+        if (this.f18904c) {
+            this.f18903b.remove();
+            this.f18904c = false;
         }
     }
 
     public final void d(boolean z10) {
-        this.f19272d = z10;
+        this.f18905d = z10;
     }
 }

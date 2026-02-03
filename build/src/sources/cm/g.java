@@ -1,70 +1,54 @@
 package cm;
 
-import android.content.Intent;
-import com.facebook.react.bridge.ReadableArray;
-import com.facebook.react.bridge.ReadableMap;
-import java.util.ArrayList;
-import kotlin.collections.CollectionsKt;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.events.Event;
+import com.facebook.react.uimanager.events.RCTEventEmitter;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class g {
-    public static final f a(ReadableMap readableMap) {
-        String[] strArr;
-        String str;
-        boolean z10;
-        boolean z11;
-        boolean z12;
-        boolean z13;
-        Intrinsics.checkNotNullParameter(readableMap, "readableMap");
-        String string = readableMap.getString("mode");
-        boolean z14 = true;
-        if (!readableMap.hasKey("type") || readableMap.isNull("type")) {
-            strArr = new String[]{"*/*"};
-        } else {
-            ReadableArray array = readableMap.getArray("type");
-            if (array == null || (strArr = b(array)) == null) {
-                strArr = new String[]{"*/*"};
-            }
+public final class g extends Event {
+
+    /* renamed from: b  reason: collision with root package name */
+    public static final a f8346b = new a(null);
+
+    /* renamed from: a  reason: collision with root package name */
+    private final WritableMap f8347a;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        String[] strArr2 = strArr;
-        if (readableMap.hasKey("initialDirectoryUrl")) {
-            str = readableMap.getString("initialDirectoryUrl");
-        } else {
-            str = null;
+
+        private a() {
         }
-        if (readableMap.hasKey("localOnly") && readableMap.getBoolean("localOnly")) {
-            z10 = true;
-        } else {
-            z10 = true;
-            z14 = false;
-        }
-        if (readableMap.hasKey("allowMultiSelection") && readableMap.getBoolean("allowMultiSelection")) {
-            z11 = z10;
-        } else {
-            z11 = false;
-        }
-        if (readableMap.hasKey("requestLongTermAccess") && readableMap.getBoolean("requestLongTermAccess")) {
-            z12 = z10;
-        } else {
-            z12 = false;
-        }
-        if (readableMap.hasKey("allowVirtualFiles") && readableMap.getBoolean("allowVirtualFiles")) {
-            z13 = z10;
-        } else {
-            z13 = false;
-        }
-        return new f(string, strArr2, str, z14, z11, z12, z13);
     }
 
-    public static final String[] b(ReadableArray readableArray) {
-        Intrinsics.checkNotNullParameter(readableArray, "readableArray");
-        ArrayList<Object> arrayList = readableArray.toArrayList();
-        ArrayList arrayList2 = new ArrayList(CollectionsKt.w(arrayList, 10));
-        for (Object obj : arrayList) {
-            String normalizeMimeType = Intent.normalizeMimeType(String.valueOf(obj));
-            Intrinsics.checkNotNull(normalizeMimeType);
-            arrayList2.add(normalizeMimeType);
-        }
-        return (String[]) arrayList2.toArray(new String[0]);
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public g(int i10, WritableMap mEventData) {
+        super(i10);
+        Intrinsics.checkNotNullParameter(mEventData, "mEventData");
+        this.f8347a = mEventData;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public boolean canCoalesce() {
+        return false;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public void dispatch(RCTEventEmitter rctEventEmitter) {
+        Intrinsics.checkNotNullParameter(rctEventEmitter, "rctEventEmitter");
+        rctEventEmitter.receiveEvent(getViewTag(), internal_getEventNameCompat(), this.f8347a);
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public short getCoalescingKey() {
+        return (short) 0;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public String getEventName() {
+        return "topRenderProcessGone";
     }
 }

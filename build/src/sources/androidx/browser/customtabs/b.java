@@ -18,10 +18,10 @@ import java.util.ArrayList;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Intent f1881a;
+    public final Intent f1925a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Bundle f1882b;
+    public final Bundle f1926b;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -34,7 +34,7 @@ public final class b {
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: androidx.browser.customtabs.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static class C0021b {
+    public static class C0025b {
         static String a() {
             LocaleList adjustedDefault = LocaleList.getAdjustedDefault();
             if (adjustedDefault.size() > 0) {
@@ -56,47 +56,47 @@ public final class b {
     public static final class d {
 
         /* renamed from: c  reason: collision with root package name */
-        private ArrayList f1885c;
+        private ArrayList f1929c;
 
         /* renamed from: d  reason: collision with root package name */
-        private ActivityOptions f1886d;
+        private ActivityOptions f1930d;
 
         /* renamed from: e  reason: collision with root package name */
-        private ArrayList f1887e;
+        private ArrayList f1931e;
 
         /* renamed from: f  reason: collision with root package name */
-        private SparseArray f1888f;
+        private SparseArray f1932f;
 
         /* renamed from: g  reason: collision with root package name */
-        private Bundle f1889g;
+        private Bundle f1933g;
 
         /* renamed from: j  reason: collision with root package name */
-        private boolean f1892j;
+        private boolean f1936j;
 
         /* renamed from: a  reason: collision with root package name */
-        private final Intent f1883a = new Intent("android.intent.action.VIEW");
+        private final Intent f1927a = new Intent("android.intent.action.VIEW");
 
         /* renamed from: b  reason: collision with root package name */
-        private final a.C0020a f1884b = new a.C0020a();
+        private final a.C0024a f1928b = new a.C0024a();
 
         /* renamed from: h  reason: collision with root package name */
-        private int f1890h = 0;
+        private int f1934h = 0;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f1891i = true;
+        private boolean f1935i = true;
 
         private void b() {
             Bundle bundle;
-            String a10 = C0021b.a();
+            String a10 = C0025b.a();
             if (!TextUtils.isEmpty(a10)) {
-                if (this.f1883a.hasExtra("com.android.browser.headers")) {
-                    bundle = this.f1883a.getBundleExtra("com.android.browser.headers");
+                if (this.f1927a.hasExtra("com.android.browser.headers")) {
+                    bundle = this.f1927a.getBundleExtra("com.android.browser.headers");
                 } else {
                     bundle = new Bundle();
                 }
                 if (!bundle.containsKey("Accept-Language")) {
                     bundle.putString("Accept-Language", a10);
-                    this.f1883a.putExtra("com.android.browser.headers", bundle);
+                    this.f1927a.putExtra("com.android.browser.headers", bundle);
                 }
             }
         }
@@ -107,81 +107,81 @@ public final class b {
             if (pendingIntent != null) {
                 bundle.putParcelable("android.support.customtabs.extra.SESSION_ID", pendingIntent);
             }
-            this.f1883a.putExtras(bundle);
+            this.f1927a.putExtras(bundle);
         }
 
         private void f() {
-            if (this.f1886d == null) {
-                this.f1886d = a.a();
+            if (this.f1930d == null) {
+                this.f1930d = a.a();
             }
-            c.a(this.f1886d, this.f1892j);
+            c.a(this.f1930d, this.f1936j);
         }
 
         public b a() {
             Bundle bundle = null;
-            if (!this.f1883a.hasExtra("android.support.customtabs.extra.SESSION")) {
+            if (!this.f1927a.hasExtra("android.support.customtabs.extra.SESSION")) {
                 e(null, null);
             }
-            ArrayList<? extends Parcelable> arrayList = this.f1885c;
+            ArrayList<? extends Parcelable> arrayList = this.f1929c;
             if (arrayList != null) {
-                this.f1883a.putParcelableArrayListExtra("android.support.customtabs.extra.MENU_ITEMS", arrayList);
+                this.f1927a.putParcelableArrayListExtra("android.support.customtabs.extra.MENU_ITEMS", arrayList);
             }
-            ArrayList<? extends Parcelable> arrayList2 = this.f1887e;
+            ArrayList<? extends Parcelable> arrayList2 = this.f1931e;
             if (arrayList2 != null) {
-                this.f1883a.putParcelableArrayListExtra("android.support.customtabs.extra.TOOLBAR_ITEMS", arrayList2);
+                this.f1927a.putParcelableArrayListExtra("android.support.customtabs.extra.TOOLBAR_ITEMS", arrayList2);
             }
-            this.f1883a.putExtra("android.support.customtabs.extra.EXTRA_ENABLE_INSTANT_APPS", this.f1891i);
-            this.f1883a.putExtras(this.f1884b.a().a());
-            Bundle bundle2 = this.f1889g;
+            this.f1927a.putExtra("android.support.customtabs.extra.EXTRA_ENABLE_INSTANT_APPS", this.f1935i);
+            this.f1927a.putExtras(this.f1928b.a().a());
+            Bundle bundle2 = this.f1933g;
             if (bundle2 != null) {
-                this.f1883a.putExtras(bundle2);
+                this.f1927a.putExtras(bundle2);
             }
-            if (this.f1888f != null) {
+            if (this.f1932f != null) {
                 Bundle bundle3 = new Bundle();
-                bundle3.putSparseParcelableArray("androidx.browser.customtabs.extra.COLOR_SCHEME_PARAMS", this.f1888f);
-                this.f1883a.putExtras(bundle3);
+                bundle3.putSparseParcelableArray("androidx.browser.customtabs.extra.COLOR_SCHEME_PARAMS", this.f1932f);
+                this.f1927a.putExtras(bundle3);
             }
-            this.f1883a.putExtra("androidx.browser.customtabs.extra.SHARE_STATE", this.f1890h);
+            this.f1927a.putExtra("androidx.browser.customtabs.extra.SHARE_STATE", this.f1934h);
             int i10 = Build.VERSION.SDK_INT;
             b();
             if (i10 >= 34) {
                 f();
             }
-            ActivityOptions activityOptions = this.f1886d;
+            ActivityOptions activityOptions = this.f1930d;
             if (activityOptions != null) {
                 bundle = activityOptions.toBundle();
             }
-            return new b(this.f1883a, bundle);
+            return new b(this.f1927a, bundle);
         }
 
         public d c(androidx.browser.customtabs.a aVar) {
-            this.f1889g = aVar.a();
+            this.f1933g = aVar.a();
             return this;
         }
 
         public d d(Context context, int i10, int i11) {
-            this.f1883a.putExtra("android.support.customtabs.extra.EXIT_ANIMATION_BUNDLE", androidx.core.app.d.a(context, i10, i11).b());
+            this.f1927a.putExtra("android.support.customtabs.extra.EXIT_ANIMATION_BUNDLE", androidx.core.app.d.a(context, i10, i11).b());
             return this;
         }
 
         public d g(boolean z10) {
-            this.f1883a.putExtra("android.support.customtabs.extra.TITLE_VISIBILITY", z10 ? 1 : 0);
+            this.f1927a.putExtra("android.support.customtabs.extra.TITLE_VISIBILITY", z10 ? 1 : 0);
             return this;
         }
 
         public d h(Context context, int i10, int i11) {
-            this.f1886d = ActivityOptions.makeCustomAnimation(context, i10, i11);
+            this.f1930d = ActivityOptions.makeCustomAnimation(context, i10, i11);
             return this;
         }
     }
 
     b(Intent intent, Bundle bundle) {
-        this.f1881a = intent;
-        this.f1882b = bundle;
+        this.f1925a = intent;
+        this.f1926b = bundle;
     }
 
     public void a(Context context, Uri uri) {
-        this.f1881a.setData(uri);
-        androidx.core.content.a.o(context, this.f1881a, this.f1882b);
+        this.f1925a.setData(uri);
+        androidx.core.content.a.o(context, this.f1925a, this.f1926b);
     }
 }

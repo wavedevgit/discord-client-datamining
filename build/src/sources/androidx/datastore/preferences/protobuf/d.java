@@ -3,10 +3,10 @@ package androidx.datastore.preferences.protobuf;
 abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Class f3582a = a("libcore.io.Memory");
+    private static final Class f3626a = a("libcore.io.Memory");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final boolean f3583b;
+    private static final boolean f3627b;
 
     static {
         boolean z10;
@@ -15,7 +15,7 @@ abstract class d {
         } else {
             z10 = false;
         }
-        f3583b = z10;
+        f3627b = z10;
     }
 
     private static Class a(String str) {
@@ -28,12 +28,12 @@ abstract class d {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Class b() {
-        return f3582a;
+        return f3626a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean c() {
-        if (f3582a != null && !f3583b) {
+        if (f3626a != null && !f3627b) {
             return true;
         }
         return false;

@@ -42,7 +42,7 @@ public final class ContentInventoryComponentViewKt {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void applyClickable$lambda$0(ComponentContext componentContext, ContentInventoryEntry contentInventoryEntry, String str, View view) {
-        componentContext.getComponentActionEventHandlers().getOnTapContentInventoryEntry().invoke(UserId.m1136boximpl(contentInventoryEntry.m269getAuthorIdre6GcUE()), contentInventoryEntry.getContentId(), str);
+        componentContext.getComponentActionEventHandlers().getOnTapContentInventoryEntry().invoke(UserId.m1138boximpl(contentInventoryEntry.m271getAuthorIdre6GcUE()), contentInventoryEntry.getContentId(), str);
     }
 
     @NotNull

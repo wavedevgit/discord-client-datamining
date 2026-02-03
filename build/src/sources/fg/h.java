@@ -6,15 +6,15 @@ import android.os.Looper;
 public class h extends Handler {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Looper f25184a;
+    private final Looper f24395a;
 
     public h(Looper looper) {
         super(looper);
-        this.f25184a = Looper.getMainLooper();
+        this.f24395a = Looper.getMainLooper();
     }
 
     public h(Looper looper, Handler.Callback callback) {
         super(looper, callback);
-        this.f25184a = Looper.getMainLooper();
+        this.f24395a = Looper.getMainLooper();
     }
 }

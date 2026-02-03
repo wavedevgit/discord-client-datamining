@@ -7,27 +7,27 @@ public final class s extends a implements l0 {
     private static final long serialVersionUID = -1337148214680014674L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f40810o;
+    private final transient int f40673o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient Integer f40811p;
+    private final transient Integer f40674p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient Integer f40812q;
+    private final transient Integer f40675q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient char f40813r;
+    private final transient char f40676r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient jt.t f40814s;
+    private final transient kt.t f40677s;
 
     private s(String str, int i10, Integer num, Integer num2, char c10) {
         super(str);
-        this.f40810o = i10;
-        this.f40811p = num;
-        this.f40812q = num2;
-        this.f40813r = c10;
-        this.f40814s = new m0(this, false);
+        this.f40673o = i10;
+        this.f40674p = num;
+        this.f40675q = num2;
+        this.f40676r = c10;
+        this.f40677s = new m0(this, false);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -43,39 +43,39 @@ public final class s extends a implements l0 {
         throw new InvalidObjectException(name());
     }
 
-    @Override // jt.p
+    @Override // kt.p
     public boolean C() {
         return false;
     }
 
-    @Override // jt.e
+    @Override // kt.e
     protected boolean E() {
         return true;
     }
 
-    @Override // jt.p
+    @Override // kt.p
     /* renamed from: H */
     public Integer e() {
-        return this.f40812q;
+        return this.f40675q;
     }
 
-    @Override // jt.p
+    @Override // kt.p
     /* renamed from: I */
     public Integer A() {
-        return this.f40811p;
+        return this.f40674p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int J() {
-        return this.f40810o;
+        return this.f40673o;
     }
 
-    @Override // jt.e, jt.p
+    @Override // kt.e, kt.p
     public char d() {
-        return this.f40813r;
+        return this.f40676r;
     }
 
-    @Override // jt.p
+    @Override // kt.p
     public Class getType() {
         return Integer.class;
     }
@@ -85,7 +85,7 @@ public final class s extends a implements l0 {
         return super.F((Integer) number);
     }
 
-    @Override // jt.p
+    @Override // kt.p
     public boolean y() {
         return true;
     }

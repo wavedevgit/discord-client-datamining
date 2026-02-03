@@ -36,17 +36,17 @@ public final class GuildEventInviteViewHolder extends MessagePartViewHolder {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$4$lambda$3$lambda$0(GuildEventInviteViewHolder guildEventInviteViewHolder) {
         guildEventInviteViewHolder.onTapSpoiler.invoke(guildEventInviteViewHolder);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$4$lambda$3$lambda$1(GuildEventInviteViewHolder guildEventInviteViewHolder, GuildEventInviteMessageAccessory guildEventInviteMessageAccessory, View view) {
-        guildEventInviteViewHolder.eventHandler.mo462onTapInviteEmbedAFFcxXc(guildEventInviteMessageAccessory.mo536getMessageId3Eiw7ao(), guildEventInviteMessageAccessory.getCodedLinkIndex(), Boolean.TRUE, Boolean.FALSE);
+        guildEventInviteViewHolder.eventHandler.mo464onTapInviteEmbedAFFcxXc(guildEventInviteMessageAccessory.mo538getMessageId3Eiw7ao(), guildEventInviteMessageAccessory.getCodedLinkIndex(), Boolean.TRUE, Boolean.FALSE);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$4$lambda$3$lambda$2(GuildEventInviteViewHolder guildEventInviteViewHolder, GuildEventInviteMessageAccessory guildEventInviteMessageAccessory, View view) {
-        guildEventInviteViewHolder.eventHandler.mo462onTapInviteEmbedAFFcxXc(guildEventInviteMessageAccessory.mo536getMessageId3Eiw7ao(), guildEventInviteMessageAccessory.getCodedLinkIndex(), Boolean.FALSE, Boolean.TRUE);
+        guildEventInviteViewHolder.eventHandler.mo464onTapInviteEmbedAFFcxXc(guildEventInviteMessageAccessory.mo538getMessageId3Eiw7ao(), guildEventInviteMessageAccessory.getCodedLinkIndex(), Boolean.FALSE, Boolean.TRUE);
     }
 
     public final void bind(@NotNull final GuildEventInviteMessageAccessory inviteAccessory) {
@@ -57,7 +57,7 @@ public final class GuildEventInviteViewHolder extends MessagePartViewHolder {
         guildEventInviteView.setCreatorAvatar(invite.getCreatorAvatar());
         guildEventInviteView.setBadge(invite.getBadgeIcon(), invite.getBadgeCount());
         guildEventInviteView.setTitle(invite.getTitleText(), invite.getTitleColor());
-        guildEventInviteView.m695setDescription63A0Z80(inviteAccessory.getMargins(), invite.getContent(), inviteAccessory.mo536getMessageId3Eiw7ao(), inviteAccessory.getShouldAnimateEmoji(), inviteAccessory.getShouldShowLinkDecorations(), inviteAccessory.getShouldShowRoleDot(), inviteAccessory.getShouldShowRoleOnName(), new GuildEventInviteViewHolder$bind$1$1$1(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$2(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$3(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$4(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$5(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$6(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$7(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$8(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$9(this.eventHandler), new Function0() { // from class: com.discord.chat.presentation.message.viewholder.o
+        guildEventInviteView.m697setDescription63A0Z80(inviteAccessory.getMargins(), invite.getContent(), inviteAccessory.mo538getMessageId3Eiw7ao(), inviteAccessory.getShouldAnimateEmoji(), inviteAccessory.getShouldShowLinkDecorations(), inviteAccessory.getShouldShowRoleDot(), inviteAccessory.getShouldShowRoleOnName(), new GuildEventInviteViewHolder$bind$1$1$1(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$2(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$3(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$4(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$5(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$6(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$7(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$8(this.eventHandler), new GuildEventInviteViewHolder$bind$1$1$9(this.eventHandler), new Function0() { // from class: com.discord.chat.presentation.message.viewholder.o
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit bind$lambda$4$lambda$3$lambda$0;

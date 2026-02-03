@@ -12,16 +12,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class m implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f30423d;
+    private String f29989d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f30424e;
+    private String f29990e;
 
     /* renamed from: i  reason: collision with root package name */
-    private List f30425i;
+    private List f29991i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f30426o;
+    private Map f29992o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -32,24 +32,24 @@ public final class m implements w1 {
             m mVar = new m();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
+                String m02 = e3Var.m0();
+                m02.getClass();
                 char c10 = 65535;
-                switch (l02.hashCode()) {
+                switch (m02.hashCode()) {
                     case -995427962:
-                        if (l02.equals("params")) {
+                        if (m02.equals("params")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case 954925063:
-                        if (l02.equals("message")) {
+                        if (m02.equals("message")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 1811591356:
-                        if (l02.equals("formatted")) {
+                        if (m02.equals("formatted")) {
                             c10 = 2;
                             break;
                         }
@@ -61,20 +61,20 @@ public final class m implements w1 {
                         if (list == null) {
                             break;
                         } else {
-                            mVar.f30425i = list;
+                            mVar.f29991i = list;
                             break;
                         }
                     case 1:
-                        mVar.f30424e = e3Var.r1();
+                        mVar.f29990e = e3Var.r1();
                         break;
                     case 2:
-                        mVar.f30423d = e3Var.r1();
+                        mVar.f29989d = e3Var.r1();
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, l02);
+                        e3Var.v1(iLogger, concurrentHashMap, m02);
                         break;
                 }
             }
@@ -85,38 +85,38 @@ public final class m implements w1 {
     }
 
     public String d() {
-        return this.f30423d;
+        return this.f29989d;
     }
 
     public String e() {
-        return this.f30424e;
+        return this.f29990e;
     }
 
     public void f(String str) {
-        this.f30423d = str;
+        this.f29989d = str;
     }
 
     public void g(Map map) {
-        this.f30426o = map;
+        this.f29992o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30423d != null) {
-            f3Var.e("formatted").f(this.f30423d);
+        if (this.f29989d != null) {
+            f3Var.e("formatted").f(this.f29989d);
         }
-        if (this.f30424e != null) {
-            f3Var.e("message").f(this.f30424e);
+        if (this.f29990e != null) {
+            f3Var.e("message").f(this.f29990e);
         }
-        List list = this.f30425i;
+        List list = this.f29991i;
         if (list != null && !list.isEmpty()) {
-            f3Var.e("params").j(iLogger, this.f30425i);
+            f3Var.e("params").j(iLogger, this.f29991i);
         }
-        Map map = this.f30426o;
+        Map map = this.f29992o;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30426o.get(str);
+                Object obj = this.f29992o.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }

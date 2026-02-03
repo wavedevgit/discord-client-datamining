@@ -114,6 +114,7 @@
     <item type="id" name="application_name" />
     <item type="id" name="application_stroke" />
     <item type="id" name="arrow" />
+    <item type="id" name="associated_hybrid_view_tag" />
     <item type="id" name="audio_details_view" />
     <item type="id" name="audio_file_name" />
     <item type="id" name="audio_file_size" />

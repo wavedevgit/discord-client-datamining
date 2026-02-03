@@ -21,43 +21,43 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class a0 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Double f30304d;
+    private final Double f29870d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Double f30305e;
+    private final Double f29871e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final x f30306i;
+    private final x f29872i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final j8 f30307o;
+    private final j8 f29873o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final j8 f30308p;
+    private final j8 f29874p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f30309q;
+    private final String f29875q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final String f30310r;
+    private final String f29876r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final l8 f30311s;
+    private final l8 f29877s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final String f30312t;
+    private final String f29878t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Map f30313u;
+    private final Map f29879u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Map f30314v;
+    private Map f29880v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Map f30315w;
+    private final Map f29881w;
 
     /* renamed from: x  reason: collision with root package name */
-    private Map f30316x;
+    private Map f29882x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -93,78 +93,78 @@ public final class a0 implements w1 {
                 x xVar2 = xVar;
                 j8 j8Var3 = j8Var;
                 if (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                    String l02 = e3Var.l0();
-                    l02.getClass();
+                    String m02 = e3Var.m0();
+                    m02.getClass();
                     char c10 = 65535;
-                    switch (l02.hashCode()) {
+                    switch (m02.hashCode()) {
                         case -2011840976:
-                            if (l02.equals("span_id")) {
+                            if (m02.equals("span_id")) {
                                 c10 = 0;
                                 break;
                             }
                             break;
                         case -1757797477:
-                            if (l02.equals("parent_span_id")) {
+                            if (m02.equals("parent_span_id")) {
                                 c10 = 1;
                                 break;
                             }
                             break;
                         case -1724546052:
-                            if (l02.equals("description")) {
+                            if (m02.equals("description")) {
                                 c10 = 2;
                                 break;
                             }
                             break;
                         case -1526966919:
-                            if (l02.equals("start_timestamp")) {
+                            if (m02.equals("start_timestamp")) {
                                 c10 = 3;
                                 break;
                             }
                             break;
                         case -1008619738:
-                            if (l02.equals("origin")) {
+                            if (m02.equals("origin")) {
                                 c10 = 4;
                                 break;
                             }
                             break;
                         case -892481550:
-                            if (l02.equals("status")) {
+                            if (m02.equals("status")) {
                                 c10 = 5;
                                 break;
                             }
                             break;
                         case -362243017:
-                            if (l02.equals("measurements")) {
+                            if (m02.equals("measurements")) {
                                 c10 = 6;
                                 break;
                             }
                             break;
                         case 3553:
-                            if (l02.equals("op")) {
+                            if (m02.equals("op")) {
                                 c10 = 7;
                                 break;
                             }
                             break;
                         case 3076010:
-                            if (l02.equals("data")) {
+                            if (m02.equals("data")) {
                                 c10 = '\b';
                                 break;
                             }
                             break;
                         case 3552281:
-                            if (l02.equals("tags")) {
+                            if (m02.equals("tags")) {
                                 c10 = '\t';
                                 break;
                             }
                             break;
                         case 55126294:
-                            if (l02.equals("timestamp")) {
+                            if (m02.equals("timestamp")) {
                                 c10 = '\n';
                                 break;
                             }
                             break;
                         case 1270300245:
-                            if (l02.equals("trace_id")) {
+                            if (m02.equals("trace_id")) {
                                 c10 = 11;
                                 break;
                             }
@@ -179,7 +179,7 @@ public final class a0 implements w1 {
                             xVar = xVar2;
                             continue;
                         case 1:
-                            j8Var2 = (j8) e3Var.G0(iLogger, new j8.a());
+                            j8Var2 = (j8) e3Var.H0(iLogger, new j8.a());
                             concurrentHashMap = concurrentHashMap2;
                             d10 = d12;
                             obj2 = obj3;
@@ -194,11 +194,11 @@ public final class a0 implements w1 {
                             break;
                         case 3:
                             try {
-                                d10 = e3Var.k0();
+                                d10 = e3Var.l0();
                             } catch (NumberFormatException unused) {
-                                Date r02 = e3Var.r0(iLogger);
-                                if (r02 != null) {
-                                    d10 = Double.valueOf(io.sentry.k.b(r02));
+                                Date s02 = e3Var.s0(iLogger);
+                                if (s02 != null) {
+                                    d10 = Double.valueOf(io.sentry.k.b(s02));
                                 } else {
                                     d10 = null;
                                 }
@@ -215,7 +215,7 @@ public final class a0 implements w1 {
                             xVar = xVar2;
                             break;
                         case 5:
-                            l8Var = (l8) e3Var.G0(iLogger, new l8.a());
+                            l8Var = (l8) e3Var.H0(iLogger, new l8.a());
                             concurrentHashMap = concurrentHashMap2;
                             d10 = d12;
                             obj2 = obj3;
@@ -250,11 +250,11 @@ public final class a0 implements w1 {
                             break;
                         case '\n':
                             try {
-                                d11 = e3Var.k0();
+                                d11 = e3Var.l0();
                             } catch (NumberFormatException unused2) {
-                                Date r03 = e3Var.r0(iLogger);
-                                if (r03 != null) {
-                                    d11 = Double.valueOf(io.sentry.k.b(r03));
+                                Date s03 = e3Var.s0(iLogger);
+                                if (s03 != null) {
+                                    d11 = Double.valueOf(io.sentry.k.b(s03));
                                 } else {
                                     d11 = null;
                                 }
@@ -276,7 +276,7 @@ public final class a0 implements w1 {
                             } else {
                                 concurrentHashMap = concurrentHashMap2;
                             }
-                            e3Var.v1(iLogger, concurrentHashMap, l02);
+                            e3Var.v1(iLogger, concurrentHashMap, m02);
                             d10 = d12;
                             obj2 = obj3;
                             xVar = xVar2;
@@ -323,72 +323,72 @@ public final class a0 implements w1 {
     }
 
     public Map b() {
-        return this.f30314v;
+        return this.f29880v;
     }
 
     public Map c() {
-        return this.f30315w;
+        return this.f29881w;
     }
 
     public String d() {
-        return this.f30309q;
+        return this.f29875q;
     }
 
     public j8 e() {
-        return this.f30307o;
+        return this.f29873o;
     }
 
     public Double f() {
-        return this.f30304d;
+        return this.f29870d;
     }
 
     public Double g() {
-        return this.f30305e;
+        return this.f29871e;
     }
 
     public void h(Map map) {
-        this.f30314v = map;
+        this.f29880v = map;
     }
 
     public void i(Map map) {
-        this.f30316x = map;
+        this.f29882x = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("start_timestamp").j(iLogger, a(this.f30304d));
-        if (this.f30305e != null) {
-            f3Var.e("timestamp").j(iLogger, a(this.f30305e));
+        f3Var.e("start_timestamp").j(iLogger, a(this.f29870d));
+        if (this.f29871e != null) {
+            f3Var.e("timestamp").j(iLogger, a(this.f29871e));
         }
-        f3Var.e("trace_id").j(iLogger, this.f30306i);
-        f3Var.e("span_id").j(iLogger, this.f30307o);
-        if (this.f30308p != null) {
-            f3Var.e("parent_span_id").j(iLogger, this.f30308p);
+        f3Var.e("trace_id").j(iLogger, this.f29872i);
+        f3Var.e("span_id").j(iLogger, this.f29873o);
+        if (this.f29874p != null) {
+            f3Var.e("parent_span_id").j(iLogger, this.f29874p);
         }
-        f3Var.e("op").f(this.f30309q);
-        if (this.f30310r != null) {
-            f3Var.e("description").f(this.f30310r);
+        f3Var.e("op").f(this.f29875q);
+        if (this.f29876r != null) {
+            f3Var.e("description").f(this.f29876r);
         }
-        if (this.f30311s != null) {
-            f3Var.e("status").j(iLogger, this.f30311s);
+        if (this.f29877s != null) {
+            f3Var.e("status").j(iLogger, this.f29877s);
         }
-        if (this.f30312t != null) {
-            f3Var.e("origin").j(iLogger, this.f30312t);
+        if (this.f29878t != null) {
+            f3Var.e("origin").j(iLogger, this.f29878t);
         }
-        if (!this.f30313u.isEmpty()) {
-            f3Var.e("tags").j(iLogger, this.f30313u);
+        if (!this.f29879u.isEmpty()) {
+            f3Var.e("tags").j(iLogger, this.f29879u);
         }
-        if (this.f30314v != null) {
-            f3Var.e("data").j(iLogger, this.f30314v);
+        if (this.f29880v != null) {
+            f3Var.e("data").j(iLogger, this.f29880v);
         }
-        if (!this.f30315w.isEmpty()) {
-            f3Var.e("measurements").j(iLogger, this.f30315w);
+        if (!this.f29881w.isEmpty()) {
+            f3Var.e("measurements").j(iLogger, this.f29881w);
         }
-        Map map = this.f30316x;
+        Map map = this.f29882x;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30316x.get(str);
+                Object obj = this.f29882x.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -398,44 +398,44 @@ public final class a0 implements w1 {
 
     public a0(d8 d8Var, Map map) {
         io.sentry.util.y.c(d8Var, "span is required");
-        this.f30310r = d8Var.getDescription();
-        this.f30309q = d8Var.x();
-        this.f30307o = d8Var.C();
-        this.f30308p = d8Var.z();
-        this.f30306i = d8Var.E();
-        this.f30311s = d8Var.a();
-        this.f30312t = d8Var.q().g();
+        this.f29876r = d8Var.getDescription();
+        this.f29875q = d8Var.x();
+        this.f29873o = d8Var.C();
+        this.f29874p = d8Var.z();
+        this.f29872i = d8Var.E();
+        this.f29877s = d8Var.a();
+        this.f29878t = d8Var.q().g();
         Map b10 = io.sentry.util.c.b(d8Var.D());
-        this.f30313u = b10 == null ? new ConcurrentHashMap() : b10;
+        this.f29879u = b10 == null ? new ConcurrentHashMap() : b10;
         Map b11 = io.sentry.util.c.b(d8Var.w());
-        this.f30315w = b11 == null ? new ConcurrentHashMap() : b11;
-        this.f30305e = d8Var.r() == null ? null : Double.valueOf(io.sentry.k.m(d8Var.t().g(d8Var.r())));
-        this.f30304d = Double.valueOf(io.sentry.k.m(d8Var.t().h()));
-        this.f30314v = map;
+        this.f29881w = b11 == null ? new ConcurrentHashMap() : b11;
+        this.f29871e = d8Var.r() == null ? null : Double.valueOf(io.sentry.k.m(d8Var.t().g(d8Var.r())));
+        this.f29870d = Double.valueOf(io.sentry.k.m(d8Var.t().h()));
+        this.f29880v = map;
         g n10 = d8Var.q().d().n();
         if (n10 != null) {
-            if (this.f30314v == null) {
-                this.f30314v = new HashMap();
+            if (this.f29880v == null) {
+                this.f29880v = new HashMap();
             }
             for (f fVar : n10.a()) {
-                Map map2 = this.f30314v;
+                Map map2 = this.f29880v;
                 map2.put("flag.evaluation." + fVar.a(), fVar.b());
             }
         }
     }
 
     public a0(Double d10, Double d11, x xVar, j8 j8Var, j8 j8Var2, String str, String str2, l8 l8Var, String str3, Map map, Map map2, Map map3) {
-        this.f30304d = d10;
-        this.f30305e = d11;
-        this.f30306i = xVar;
-        this.f30307o = j8Var;
-        this.f30308p = j8Var2;
-        this.f30309q = str;
-        this.f30310r = str2;
-        this.f30311s = l8Var;
-        this.f30312t = str3;
-        this.f30313u = map;
-        this.f30315w = map2;
-        this.f30314v = map3;
+        this.f29870d = d10;
+        this.f29871e = d11;
+        this.f29872i = xVar;
+        this.f29873o = j8Var;
+        this.f29874p = j8Var2;
+        this.f29875q = str;
+        this.f29876r = str2;
+        this.f29877s = l8Var;
+        this.f29878t = str3;
+        this.f29879u = map;
+        this.f29881w = map2;
+        this.f29880v = map3;
     }
 }

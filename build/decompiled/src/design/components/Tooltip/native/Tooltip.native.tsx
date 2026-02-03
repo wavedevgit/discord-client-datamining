@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Tooltip/native/Tooltip.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57348: for (var _fun57348_ip = 0;;) switch (_fun57348_ip) {
+        _fun57454: for (var _fun57454_ip = 0;;) switch (_fun57454_ip) {
             case 0:
                 var0 = arg0;
                 var31 = var0.targetMeasurements;
@@ -368,8 +368,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var18 = var19 != var18;
                 if (!var18) {
-                    _fun57348_ip = 554;
-                    continue _fun57348
+                    _fun57454_ip = 554;
+                    continue _fun57454
                 }
             case 551:
                 var14 = var17;
@@ -382,8 +382,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 'bottom';
                 var5 = var4 === var7;
                 if (!var5) {
-                    _fun57348_ip = 664;
-                    continue _fun57348
+                    _fun57454_ip = 664;
+                    continue _fun57454
                 }
             case 585:
                 var13 = _closure1_slot6;
@@ -440,8 +440,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'top';
                 var5 = var5 === var7;
                 if (!var5) {
-                    _fun57348_ip = 882;
-                    continue _fun57348
+                    _fun57454_ip = 882;
+                    continue _fun57454
                 }
             case 803:
                 var8 = _closure1_slot6;
@@ -472,4 +472,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.Tooltip = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 671, 1297, 3681, 6984, 4042, 3902, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 671, 1297, 3711, 7015, 4072, 3932, 2]);

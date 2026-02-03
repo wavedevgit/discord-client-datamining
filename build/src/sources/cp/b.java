@@ -3,8 +3,11 @@ package cp;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f20978a = 2131558637;
+    public static int f20627a = 2131100874;
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f20979b = 2131558638;
+    public static int f20628b = 2131100875;
+
+    /* renamed from: c  reason: collision with root package name */
+    public static int f20629c = 2131100878;
 }

@@ -1,7 +1,7 @@
 package com.discord.misc.utilities.backoff;
 
 import com.discord.misc.utilities.logThrottle.LogThrottleSingleton;
-import gs.i;
+import hs.i;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;

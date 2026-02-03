@@ -34,22 +34,22 @@ public final class LottieAnimationViewManager extends SimpleViewManager<LottieAn
     public static final class a implements Animator.AnimatorListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ LottieAnimationView f8786a;
+        final /* synthetic */ LottieAnimationView f8415a;
 
         a(LottieAnimationView lottieAnimationView) {
-            this.f8786a = lottieAnimationView;
+            this.f8415a = lottieAnimationView;
         }
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationCancel(Animator animation) {
             Intrinsics.checkNotNullParameter(animation, "animation");
-            g.r(this.f8786a, true);
+            g.r(this.f8415a, true);
         }
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animation) {
             Intrinsics.checkNotNullParameter(animation, "animation");
-            g.r(this.f8786a, false);
+            g.r(this.f8415a, false);
         }
 
         @Override // android.animation.Animator.AnimatorListener

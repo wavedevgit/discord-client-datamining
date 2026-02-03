@@ -1,12 +1,12 @@
 package com.discord.notifications.api;
 
 import androidx.recyclerview.widget.RecyclerView;
-import at.a2;
-import at.h;
-import at.h0;
-import at.n2;
-import at.p0;
-import at.z0;
+import bt.a2;
+import bt.h;
+import bt.h0;
+import bt.n2;
+import bt.p0;
+import bt.z0;
 import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 import com.discord.primitives.ApplicationId;
 import com.discord.primitives.ApplicationId$$serializer;
@@ -20,9 +20,9 @@ import com.discord.primitives.UserId;
 import com.discord.primitives.UserId$$serializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 import com.facebook.react.uimanager.events.PointerEventHelper;
-import ir.c;
 import java.util.List;
 import java.util.Map;
+import jr.c;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -35,10 +35,10 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import org.jetbrains.annotations.NotNull;
 import org.webrtc.PeerConnection;
-import xs.b0;
-import ys.a;
-@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/notifications/api/NotificationData.$serializer", "Lat/h0;", "Lcom/discord/notifications/api/NotificationData;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/notifications/api/NotificationData;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/notifications/api/NotificationData;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "notification_api_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+import ys.b0;
+import zs.a;
 @c
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/discord/notifications/api/NotificationData.$serializer", "Lbt/h0;", "Lcom/discord/notifications/api/NotificationData;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/discord/notifications/api/NotificationData;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/discord/notifications/api/NotificationData;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "notification_api_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public /* synthetic */ class NotificationData$$serializer implements h0 {
     @NotNull
@@ -120,17 +120,17 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // at.h0
+    @Override // bt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = NotificationData.$childSerializers;
-        n2 n2Var = n2.f6848a;
-        p0 p0Var = p0.f6864a;
+        n2 n2Var = n2.f7662a;
+        p0 p0Var = p0.f7678a;
         ChannelId$$serializer channelId$$serializer = ChannelId$$serializer.INSTANCE;
         UserId$$serializer userId$$serializer = UserId$$serializer.INSTANCE;
-        h hVar = h.f6812a;
-        return new KSerializer[]{n2Var, a.u(MessageId$$serializer.INSTANCE), a.u(p0Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(z0.f6922a), a.u(p0Var), a.u(n2Var), a.u(channelId$$serializer), a.u(n2Var), a.u(n2Var), a.u(channelId$$serializer), a.u(p0Var), a.u(n2Var), ChannelListSerializer.INSTANCE, a.u(userId$$serializer), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(GuildId$$serializer.INSTANCE), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(ApplicationId$$serializer.INSTANCE), a.u(n2Var), a.u(n2Var), a.u(NotificationMessageSerializer.INSTANCE), a.u(n2Var), a.u(p0Var), CanReplySerializer.INSTANCE, hVar, a.u(userId$$serializer), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(hVar), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(p0Var), a.u(p0Var), a.u(n2Var), hVar, lazyArr[53].getValue(), hVar, a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(n2Var)};
+        h hVar = h.f7626a;
+        return new KSerializer[]{n2Var, a.u(MessageId$$serializer.INSTANCE), a.u(p0Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(z0.f7736a), a.u(p0Var), a.u(n2Var), a.u(channelId$$serializer), a.u(n2Var), a.u(n2Var), a.u(channelId$$serializer), a.u(p0Var), a.u(n2Var), ChannelListSerializer.INSTANCE, a.u(userId$$serializer), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(GuildId$$serializer.INSTANCE), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(ApplicationId$$serializer.INSTANCE), a.u(n2Var), a.u(n2Var), a.u(NotificationMessageSerializer.INSTANCE), a.u(n2Var), a.u(p0Var), CanReplySerializer.INSTANCE, hVar, a.u(userId$$serializer), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(hVar), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(p0Var), a.u(p0Var), a.u(n2Var), hVar, lazyArr[53].getValue(), hVar, a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -277,10 +277,10 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
             MessageId messageId = (MessageId) b10.n(serialDescriptor, 1, MessageId$$serializer.INSTANCE, null);
-            String m1093unboximpl = messageId != null ? messageId.m1093unboximpl() : null;
-            p0 p0Var = p0.f6864a;
+            String m1095unboximpl = messageId != null ? messageId.m1095unboximpl() : null;
+            p0 p0Var = p0.f7678a;
             Integer num27 = (Integer) b10.n(serialDescriptor, 2, p0Var, null);
-            n2 n2Var = n2.f6848a;
+            n2 n2Var = n2.f7662a;
             Integer num28 = (Integer) b10.n(serialDescriptor, 4, p0Var, null);
             ChannelId$$serializer channelId$$serializer = ChannelId$$serializer.INSTANCE;
             ChannelId channelId5 = (ChannelId) b10.n(serialDescriptor, 9, channelId$$serializer, null);
@@ -312,14 +312,14 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
             str2 = (String) b10.n(serialDescriptor, 34, n2Var, null);
             boolean booleanValue = ((Boolean) b10.y(serialDescriptor, 36, CanReplySerializer.INSTANCE, Boolean.FALSE)).booleanValue();
             boolean C = b10.C(serialDescriptor, 37);
-            String str84 = m1093unboximpl;
+            String str84 = m1095unboximpl;
             UserId userId6 = (UserId) b10.n(serialDescriptor, 38, userId$$serializer, null);
             String str85 = (String) b10.n(serialDescriptor, 40, n2Var, null);
             String str86 = (String) b10.n(serialDescriptor, 41, n2Var, null);
             String str87 = (String) b10.n(serialDescriptor, 42, n2Var, null);
             String str88 = (String) b10.n(serialDescriptor, 43, n2Var, null);
             String str89 = (String) b10.n(serialDescriptor, 44, n2Var, null);
-            Boolean bool2 = (Boolean) b10.n(serialDescriptor, 45, h.f6812a, null);
+            Boolean bool2 = (Boolean) b10.n(serialDescriptor, 45, h.f7626a, null);
             String str90 = (String) b10.n(serialDescriptor, 46, n2Var, null);
             String str91 = (String) b10.n(serialDescriptor, 47, n2Var, null);
             Integer num33 = (Integer) b10.n(serialDescriptor, 48, p0Var, null);
@@ -344,7 +344,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
             i10 = Integer.MAX_VALUE;
             str12 = (String) b10.n(serialDescriptor, 39, n2Var, null);
             i11 = -1;
-            l10 = (Long) b10.n(serialDescriptor, 6, z0.f6922a, null);
+            l10 = (Long) b10.n(serialDescriptor, 6, z0.f7736a, null);
             num = (Integer) b10.n(serialDescriptor, 7, p0Var, null);
             str27 = (String) b10.n(serialDescriptor, 8, n2Var, null);
             str26 = (String) b10.n(serialDescriptor, 5, n2Var, null);
@@ -515,7 +515,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         map2 = map10;
                         userId4 = userId8;
                         str60 = str125;
-                        Unit unit = Unit.f33298a;
+                        Unit unit = Unit.f33074a;
                         z14 = false;
                         map10 = map2;
                         num22 = num21;
@@ -610,7 +610,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str60 = str125;
                         str123 = b10.m(serialDescriptor, 0);
-                        Unit unit2 = Unit.f33298a;
+                        Unit unit2 = Unit.f33074a;
                         i12 = i17 | 1;
                         map10 = map2;
                         num22 = num21;
@@ -706,9 +706,9 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str60 = str125;
                         num20 = num45;
-                        MessageId messageId2 = (MessageId) b10.n(serialDescriptor, 1, MessageId$$serializer.INSTANCE, str128 != null ? MessageId.m1084boximpl(str128) : null);
-                        str128 = messageId2 != null ? messageId2.m1093unboximpl() : null;
-                        Unit unit3 = Unit.f33298a;
+                        MessageId messageId2 = (MessageId) b10.n(serialDescriptor, 1, MessageId$$serializer.INSTANCE, str128 != null ? MessageId.m1086boximpl(str128) : null);
+                        str128 = messageId2 != null ? messageId2.m1095unboximpl() : null;
+                        Unit unit3 = Unit.f33074a;
                         i12 = i19 | 2;
                         num47 = num48;
                         map10 = map11;
@@ -802,8 +802,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str60 = str125;
                         str59 = str133;
-                        Integer num49 = (Integer) b10.n(serialDescriptor, 2, p0.f6864a, num45);
-                        Unit unit4 = Unit.f33298a;
+                        Integer num49 = (Integer) b10.n(serialDescriptor, 2, p0.f7678a, num45);
+                        Unit unit4 = Unit.f33074a;
                         i12 = i17 | 4;
                         num20 = num49;
                         map10 = map3;
@@ -896,8 +896,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str60 = str125;
                         num19 = num44;
-                        str133 = (String) b10.n(serialDescriptor, 3, n2.f6848a, str133);
-                        Unit unit5 = Unit.f33298a;
+                        str133 = (String) b10.n(serialDescriptor, 3, n2.f7662a, str133);
+                        Unit unit5 = Unit.f33074a;
                         i12 = i17 | 8;
                         num20 = num45;
                         str59 = str133;
@@ -990,8 +990,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str60 = str125;
                         str58 = str132;
-                        Integer num50 = (Integer) b10.n(serialDescriptor, 4, p0.f6864a, num44);
-                        Unit unit6 = Unit.f33298a;
+                        Integer num50 = (Integer) b10.n(serialDescriptor, 4, p0.f7678a, num44);
+                        Unit unit6 = Unit.f33074a;
                         i12 = i17 | 16;
                         num19 = num50;
                         num20 = num45;
@@ -1084,8 +1084,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str60 = str125;
                         l11 = l12;
-                        str132 = (String) b10.n(serialDescriptor, 5, n2.f6848a, str132);
-                        Unit unit7 = Unit.f33298a;
+                        str132 = (String) b10.n(serialDescriptor, 5, n2.f7662a, str132);
+                        Unit unit7 = Unit.f33074a;
                         i12 = i17 | 32;
                         num19 = num44;
                         num20 = num45;
@@ -1178,8 +1178,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         map3 = map10;
                         userId4 = userId8;
                         str60 = str125;
-                        Long l13 = (Long) b10.n(serialDescriptor, 6, z0.f6922a, l12);
-                        Unit unit8 = Unit.f33298a;
+                        Long l13 = (Long) b10.n(serialDescriptor, 6, z0.f7736a, l12);
+                        Unit unit8 = Unit.f33074a;
                         i12 = i17 | 64;
                         num19 = num44;
                         num20 = num45;
@@ -1271,9 +1271,9 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str60 = str125;
                         str57 = str131;
-                        Integer num51 = (Integer) b10.n(serialDescriptor, 7, p0.f6864a, num46);
+                        Integer num51 = (Integer) b10.n(serialDescriptor, 7, p0.f7678a, num46);
                         int i20 = i17 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                        Unit unit9 = Unit.f33298a;
+                        Unit unit9 = Unit.f33074a;
                         i12 = i20;
                         num36 = num36;
                         num19 = num44;
@@ -1365,9 +1365,9 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str60 = str125;
                         channelId3 = channelId7;
-                        str131 = (String) b10.n(serialDescriptor, 8, n2.f6848a, str131);
+                        str131 = (String) b10.n(serialDescriptor, 8, n2.f7662a, str131);
                         int i21 = i17 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
-                        Unit unit10 = Unit.f33298a;
+                        Unit unit10 = Unit.f33074a;
                         i12 = i21;
                         num36 = num23;
                         num19 = num44;
@@ -1460,7 +1460,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         str39 = str106;
                         int i22 = i17 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                        Unit unit11 = Unit.f33298a;
+                        Unit unit11 = Unit.f33074a;
                         i12 = i22;
                         channelId3 = (ChannelId) b10.n(serialDescriptor, 9, ChannelId$$serializer.INSTANCE, channelId7);
                         num36 = num23;
@@ -1552,9 +1552,9 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         str40 = str107;
                         int i23 = i17 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-                        Unit unit12 = Unit.f33298a;
+                        Unit unit12 = Unit.f33074a;
                         i12 = i23;
-                        str39 = (String) b10.n(serialDescriptor, 10, n2.f6848a, str106);
+                        str39 = (String) b10.n(serialDescriptor, 10, n2.f7662a, str106);
                         num36 = num36;
                         channelId3 = channelId7;
                         num19 = num44;
@@ -1645,9 +1645,9 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         channelId4 = channelId8;
                         int i24 = i17 | RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit13 = Unit.f33298a;
+                        Unit unit13 = Unit.f33074a;
                         i12 = i24;
-                        str40 = (String) b10.n(serialDescriptor, 11, n2.f6848a, str107);
+                        str40 = (String) b10.n(serialDescriptor, 11, n2.f7662a, str107);
                         num36 = num52;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -1737,7 +1737,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str60 = str125;
                         int i25 = i17 | RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit14 = Unit.f33298a;
+                        Unit unit14 = Unit.f33074a;
                         i12 = i25;
                         channelId4 = (ChannelId) b10.n(serialDescriptor, 12, ChannelId$$serializer.INSTANCE, channelId8);
                         num36 = num36;
@@ -1831,8 +1831,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str60 = str125;
                         str41 = str108;
-                        num47 = (Integer) b10.n(serialDescriptor, 13, p0.f6864a, num47);
-                        Unit unit15 = Unit.f33298a;
+                        num47 = (Integer) b10.n(serialDescriptor, 13, p0.f7678a, num47);
+                        Unit unit15 = Unit.f33074a;
                         i12 = i17 | 8192;
                         num36 = num24;
                         channelId3 = channelId7;
@@ -1924,9 +1924,9 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str60 = str125;
                         list2 = list4;
-                        Unit unit16 = Unit.f33298a;
+                        Unit unit16 = Unit.f33074a;
                         i12 = i17 | 16384;
-                        str41 = (String) b10.n(serialDescriptor, 14, n2.f6848a, str108);
+                        str41 = (String) b10.n(serialDescriptor, 14, n2.f7662a, str108);
                         num36 = num24;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -2016,7 +2016,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         userId3 = userId7;
                         i13 = i17 | PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
-                        Unit unit17 = Unit.f33298a;
+                        Unit unit17 = Unit.f33074a;
                         list2 = (List) b10.y(serialDescriptor, 15, ChannelListSerializer.INSTANCE, list4);
                         num36 = num36;
                         channelId3 = channelId7;
@@ -2108,7 +2108,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         str42 = str109;
                         i13 = i17 | 65536;
-                        Unit unit18 = Unit.f33298a;
+                        Unit unit18 = Unit.f33074a;
                         userId3 = (UserId) b10.n(serialDescriptor, 16, UserId$$serializer.INSTANCE, userId7);
                         num36 = num36;
                         channelId3 = channelId7;
@@ -2200,8 +2200,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         str43 = str110;
                         i13 = i17 | 131072;
-                        Unit unit19 = Unit.f33298a;
-                        str42 = (String) b10.n(serialDescriptor, 17, n2.f6848a, str109);
+                        Unit unit19 = Unit.f33074a;
+                        str42 = (String) b10.n(serialDescriptor, 17, n2.f7662a, str109);
                         num36 = num36;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -2292,8 +2292,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         num15 = num40;
                         i13 = i17 | 262144;
-                        Unit unit20 = Unit.f33298a;
-                        str43 = (String) b10.n(serialDescriptor, 18, n2.f6848a, str110);
+                        Unit unit20 = Unit.f33074a;
+                        str43 = (String) b10.n(serialDescriptor, 18, n2.f7662a, str110);
                         num36 = num36;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -2384,8 +2384,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         str44 = str111;
                         i13 = i17 | 524288;
-                        Unit unit21 = Unit.f33298a;
-                        num15 = (Integer) b10.n(serialDescriptor, 19, p0.f6864a, num40);
+                        Unit unit21 = Unit.f33074a;
+                        num15 = (Integer) b10.n(serialDescriptor, 19, p0.f7678a, num40);
                         num36 = num36;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -2476,8 +2476,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         str45 = str112;
                         i13 = i17 | 1048576;
-                        Unit unit22 = Unit.f33298a;
-                        str44 = (String) b10.n(serialDescriptor, 20, n2.f6848a, str111);
+                        Unit unit22 = Unit.f33074a;
+                        str44 = (String) b10.n(serialDescriptor, 20, n2.f7662a, str111);
                         num36 = num36;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -2568,8 +2568,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         str46 = str113;
                         i13 = i17 | 2097152;
-                        Unit unit23 = Unit.f33298a;
-                        str45 = (String) b10.n(serialDescriptor, 21, n2.f6848a, str112);
+                        Unit unit23 = Unit.f33074a;
+                        str45 = (String) b10.n(serialDescriptor, 21, n2.f7662a, str112);
                         num36 = num36;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -2660,8 +2660,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         num16 = num41;
                         i13 = i17 | 4194304;
-                        Unit unit24 = Unit.f33298a;
-                        str46 = (String) b10.n(serialDescriptor, 22, n2.f6848a, str113);
+                        Unit unit24 = Unit.f33074a;
+                        str46 = (String) b10.n(serialDescriptor, 22, n2.f7662a, str113);
                         num36 = num36;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -2752,8 +2752,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         guildId2 = guildId4;
                         i13 = i17 | 8388608;
-                        Unit unit25 = Unit.f33298a;
-                        num16 = (Integer) b10.n(serialDescriptor, 23, p0.f6864a, num41);
+                        Unit unit25 = Unit.f33074a;
+                        num16 = (Integer) b10.n(serialDescriptor, 23, p0.f7678a, num41);
                         num36 = num36;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -2844,7 +2844,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         str54 = str124;
                         i13 = i17 | PointerEventHelper.X_FLAG_SUPPORTS_HOVER;
-                        Unit unit26 = Unit.f33298a;
+                        Unit unit26 = Unit.f33074a;
                         guildId2 = (GuildId) b10.n(serialDescriptor, 24, GuildId$$serializer.INSTANCE, guildId4);
                         num36 = num36;
                         channelId3 = channelId7;
@@ -2936,9 +2936,9 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str60 = str125;
                         str47 = str114;
-                        str124 = (String) b10.n(serialDescriptor, 25, n2.f6848a, str124);
+                        str124 = (String) b10.n(serialDescriptor, 25, n2.f7662a, str124);
                         i13 = i17 | 33554432;
-                        Unit unit27 = Unit.f33298a;
+                        Unit unit27 = Unit.f33074a;
                         num36 = num25;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -3031,8 +3031,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         str48 = str115;
                         i13 = i17 | 67108864;
-                        Unit unit28 = Unit.f33298a;
-                        str47 = (String) b10.n(serialDescriptor, 26, n2.f6848a, str114);
+                        Unit unit28 = Unit.f33074a;
+                        str47 = (String) b10.n(serialDescriptor, 26, n2.f7662a, str114);
                         num36 = num25;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -3123,8 +3123,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         num17 = num42;
                         i13 = i17 | 134217728;
-                        Unit unit29 = Unit.f33298a;
-                        str48 = (String) b10.n(serialDescriptor, 27, n2.f6848a, str115);
+                        Unit unit29 = Unit.f33074a;
+                        str48 = (String) b10.n(serialDescriptor, 27, n2.f7662a, str115);
                         num36 = num36;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -3215,8 +3215,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         str49 = str116;
                         i13 = i17 | 268435456;
-                        Unit unit30 = Unit.f33298a;
-                        num17 = (Integer) b10.n(serialDescriptor, 28, p0.f6864a, num42);
+                        Unit unit30 = Unit.f33074a;
+                        num17 = (Integer) b10.n(serialDescriptor, 28, p0.f7678a, num42);
                         num36 = num36;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -3307,8 +3307,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str60 = str125;
                         applicationId2 = applicationId4;
                         i13 = i17 | 536870912;
-                        Unit unit31 = Unit.f33298a;
-                        str49 = (String) b10.n(serialDescriptor, 29, n2.f6848a, str116);
+                        Unit unit31 = Unit.f33074a;
+                        str49 = (String) b10.n(serialDescriptor, 29, n2.f7662a, str116);
                         num36 = num36;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -3399,7 +3399,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str60 = str125;
                         i13 = i17 | 1073741824;
-                        Unit unit32 = Unit.f33298a;
+                        Unit unit32 = Unit.f33074a;
                         applicationId2 = (ApplicationId) b10.n(serialDescriptor, 30, ApplicationId$$serializer.INSTANCE, applicationId4);
                         num36 = num36;
                         channelId3 = channelId7;
@@ -3490,9 +3490,9 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         map5 = map10;
                         userId4 = userId8;
                         str50 = str117;
-                        str125 = (String) b10.n(serialDescriptor, 31, n2.f6848a, str125);
+                        str125 = (String) b10.n(serialDescriptor, 31, n2.f7662a, str125);
                         i17 |= Integer.MIN_VALUE;
-                        Unit unit33 = Unit.f33298a;
+                        Unit unit33 = Unit.f33074a;
                         str61 = str64;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -3581,9 +3581,9 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         map5 = map10;
                         userId4 = userId8;
                         notificationMessage2 = notificationMessage4;
-                        String str135 = (String) b10.n(serialDescriptor, 32, n2.f6848a, str117);
+                        String str135 = (String) b10.n(serialDescriptor, 32, n2.f7662a, str117);
                         i16 = i18 | 1;
-                        Unit unit34 = Unit.f33298a;
+                        Unit unit34 = Unit.f33074a;
                         str50 = str135;
                         str61 = str64;
                         channelId3 = channelId7;
@@ -3673,7 +3673,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         str55 = str126;
                         i16 = i18 | 2;
-                        Unit unit35 = Unit.f33298a;
+                        Unit unit35 = Unit.f33074a;
                         notificationMessage2 = (NotificationMessage) b10.n(serialDescriptor, 33, NotificationMessageSerializer.INSTANCE, notificationMessage4);
                         str61 = str136;
                         channelId3 = channelId7;
@@ -3762,9 +3762,9 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         map6 = map10;
                         userId4 = userId8;
                         num18 = num43;
-                        str126 = (String) b10.n(serialDescriptor, 34, n2.f6848a, str126);
+                        str126 = (String) b10.n(serialDescriptor, 34, n2.f7662a, str126);
                         i16 = i18 | 4;
-                        Unit unit36 = Unit.f33298a;
+                        Unit unit36 = Unit.f33074a;
                         str61 = str67;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -3854,8 +3854,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         map6 = map10;
                         userId4 = userId8;
                         i16 = i18 | 8;
-                        Unit unit37 = Unit.f33298a;
-                        num18 = (Integer) b10.n(serialDescriptor, 35, p0.f6864a, num43);
+                        Unit unit37 = Unit.f33074a;
+                        num18 = (Integer) b10.n(serialDescriptor, 35, p0.f7678a, num43);
                         str61 = str67;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -3946,7 +3946,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         userId4 = userId8;
                         z15 = ((Boolean) b10.y(serialDescriptor, 36, CanReplySerializer.INSTANCE, Boolean.valueOf(z15))).booleanValue();
                         i16 = i18 | 16;
-                        Unit unit38 = Unit.f33298a;
+                        Unit unit38 = Unit.f33074a;
                         str61 = str68;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -4037,7 +4037,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         map6 = map10;
                         z17 = b10.C(serialDescriptor, 37);
                         i16 = i18 | 32;
-                        Unit unit39 = Unit.f33298a;
+                        Unit unit39 = Unit.f33074a;
                         userId4 = userId8;
                         str61 = str68;
                         channelId3 = channelId7;
@@ -4127,7 +4127,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         map6 = map10;
                         UserId userId9 = (UserId) b10.n(serialDescriptor, 38, UserId$$serializer.INSTANCE, userId8);
                         i16 = i18 | 64;
-                        Unit unit40 = Unit.f33298a;
+                        Unit unit40 = Unit.f33074a;
                         str61 = str130;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -4216,9 +4216,9 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str70 = str120;
                         map7 = map10;
                         str51 = str118;
-                        str130 = (String) b10.n(serialDescriptor, 39, n2.f6848a, str130);
+                        str130 = (String) b10.n(serialDescriptor, 39, n2.f7662a, str130);
                         i16 = i18 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                        Unit unit41 = Unit.f33298a;
+                        Unit unit41 = Unit.f33074a;
                         channelId3 = channelId7;
                         str39 = str106;
                         str40 = str107;
@@ -4307,8 +4307,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         map7 = map10;
                         str38 = str100;
                         i16 = i18 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
-                        Unit unit42 = Unit.f33298a;
-                        str51 = (String) b10.n(serialDescriptor, 40, n2.f6848a, str118);
+                        Unit unit42 = Unit.f33074a;
+                        str51 = (String) b10.n(serialDescriptor, 40, n2.f7662a, str118);
                         channelId3 = channelId7;
                         str39 = str106;
                         str40 = str107;
@@ -4393,7 +4393,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str37 = str99;
                         Integer num53 = num37;
                         i16 = i18 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                        Unit unit43 = Unit.f33298a;
+                        Unit unit43 = Unit.f33074a;
                         str38 = str100;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -4433,7 +4433,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str59 = str133;
                         map10 = map10;
                         num37 = num53;
-                        str119 = (String) b10.n(serialDescriptor, 41, n2.f6848a, str119);
+                        str119 = (String) b10.n(serialDescriptor, 41, n2.f7662a, str119);
                         userId4 = userId8;
                         str60 = str125;
                         str100 = str38;
@@ -4481,8 +4481,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         num26 = num37;
                         map8 = map10;
                         i16 = i18 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-                        Unit unit44 = Unit.f33298a;
-                        str62 = (String) b10.n(serialDescriptor, 42, n2.f6848a, str120);
+                        Unit unit44 = Unit.f33074a;
+                        str62 = (String) b10.n(serialDescriptor, 42, n2.f7662a, str120);
                         str38 = str100;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -4568,8 +4568,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         num26 = num37;
                         map8 = map10;
                         i16 = i18 | RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit45 = Unit.f33298a;
-                        str121 = (String) b10.n(serialDescriptor, 43, n2.f6848a, str121);
+                        Unit unit45 = Unit.f33074a;
+                        str121 = (String) b10.n(serialDescriptor, 43, n2.f7662a, str121);
                         str38 = str100;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -4656,8 +4656,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         num26 = num37;
                         map8 = map10;
                         i16 = i18 | RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit46 = Unit.f33298a;
-                        str122 = (String) b10.n(serialDescriptor, 44, n2.f6848a, str122);
+                        Unit unit46 = Unit.f33074a;
+                        str122 = (String) b10.n(serialDescriptor, 44, n2.f7662a, str122);
                         str38 = str100;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -4744,8 +4744,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         num26 = num37;
                         map8 = map10;
                         i16 = i18 | 8192;
-                        Unit unit47 = Unit.f33298a;
-                        bool3 = (Boolean) b10.n(serialDescriptor, 45, h.f6812a, bool3);
+                        Unit unit47 = Unit.f33074a;
+                        bool3 = (Boolean) b10.n(serialDescriptor, 45, h.f7626a, bool3);
                         str38 = str100;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -4831,8 +4831,8 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str37 = str99;
                         num26 = num37;
                         i16 = i18 | 16384;
-                        Unit unit48 = Unit.f33298a;
-                        str127 = (String) b10.n(serialDescriptor, 46, n2.f6848a, str127);
+                        Unit unit48 = Unit.f33074a;
+                        str127 = (String) b10.n(serialDescriptor, 46, n2.f7662a, str127);
                         str38 = str100;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -4916,9 +4916,9 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                     case ChatViewRecyclerTypes.REACTION_ADD_REACTION /* 47 */:
                         str37 = str99;
                         Integer num54 = num37;
-                        String str137 = (String) b10.n(serialDescriptor, 47, n2.f6848a, str129);
+                        String str137 = (String) b10.n(serialDescriptor, 47, n2.f7662a, str129);
                         int i26 = i18 | PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
-                        Unit unit49 = Unit.f33298a;
+                        Unit unit49 = Unit.f33074a;
                         str38 = str100;
                         str129 = str137;
                         channelId3 = channelId7;
@@ -5003,9 +5003,9 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str130 = str61;
                     case 48:
                         str37 = str99;
-                        num37 = (Integer) b10.n(serialDescriptor, 48, p0.f6864a, num37);
+                        num37 = (Integer) b10.n(serialDescriptor, 48, p0.f7678a, num37);
                         i16 = i18 | 65536;
-                        Unit unit50 = Unit.f33298a;
+                        Unit unit50 = Unit.f33074a;
                         str38 = str100;
                         channelId3 = channelId7;
                         str39 = str106;
@@ -5087,10 +5087,10 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str130 = str61;
                     case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_IMAGE /* 49 */:
                         num26 = num37;
-                        num38 = (Integer) b10.n(serialDescriptor, 49, p0.f6864a, num38);
+                        num38 = (Integer) b10.n(serialDescriptor, 49, p0.f7678a, num38);
                         i14 = 131072;
                         i16 = i18 | i14;
-                        Unit unit51 = Unit.f33298a;
+                        Unit unit51 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         channelId3 = channelId7;
@@ -5174,10 +5174,10 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str130 = str61;
                     case 50:
                         num26 = num37;
-                        num36 = (Integer) b10.n(serialDescriptor, 50, p0.f6864a, num36);
+                        num36 = (Integer) b10.n(serialDescriptor, 50, p0.f7678a, num36);
                         i14 = 262144;
                         i16 = i18 | i14;
-                        Unit unit512 = Unit.f33298a;
+                        Unit unit512 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         channelId3 = channelId7;
@@ -5261,10 +5261,10 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str130 = str61;
                     case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_VISUAL_PLACEHOLDER /* 51 */:
                         num26 = num37;
-                        str134 = (String) b10.n(serialDescriptor, 51, n2.f6848a, str134);
+                        str134 = (String) b10.n(serialDescriptor, 51, n2.f7662a, str134);
                         i14 = 524288;
                         i16 = i18 | i14;
-                        Unit unit5122 = Unit.f33298a;
+                        Unit unit5122 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         channelId3 = channelId7;
@@ -5350,7 +5350,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         num26 = num37;
                         z18 = b10.C(serialDescriptor, 52);
                         i15 = 1048576;
-                        Unit unit52 = Unit.f33298a;
+                        Unit unit52 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         i16 = i18 | i15;
@@ -5437,7 +5437,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         num26 = num37;
                         map10 = (Map) b10.y(serialDescriptor, 53, (DeserializationStrategy) lazyArr[53].getValue(), map10);
                         i15 = 2097152;
-                        Unit unit522 = Unit.f33298a;
+                        Unit unit522 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         i16 = i18 | i15;
@@ -5525,7 +5525,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         z16 = b10.C(serialDescriptor, 54);
                         i14 = 4194304;
                         i16 = i18 | i14;
-                        Unit unit51222 = Unit.f33298a;
+                        Unit unit51222 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         channelId3 = channelId7;
@@ -5609,10 +5609,10 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str130 = str61;
                     case ChatViewRecyclerTypes.ACTIVITY_RICH_PRESENCE_INVITE_EMBED /* 55 */:
                         num26 = num37;
-                        str99 = (String) b10.n(serialDescriptor, 55, n2.f6848a, str99);
+                        str99 = (String) b10.n(serialDescriptor, 55, n2.f7662a, str99);
                         i14 = 8388608;
                         i16 = i18 | i14;
-                        Unit unit512222 = Unit.f33298a;
+                        Unit unit512222 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         channelId3 = channelId7;
@@ -5696,10 +5696,10 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str130 = str61;
                     case ChatViewRecyclerTypes.SHARED_CUSTOM_THEME_EMBED /* 56 */:
                         num26 = num37;
-                        str105 = (String) b10.n(serialDescriptor, 56, n2.f6848a, str105);
+                        str105 = (String) b10.n(serialDescriptor, 56, n2.f7662a, str105);
                         i14 = PointerEventHelper.X_FLAG_SUPPORTS_HOVER;
                         i16 = i18 | i14;
-                        Unit unit5122222 = Unit.f33298a;
+                        Unit unit5122222 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         channelId3 = channelId7;
@@ -5783,10 +5783,10 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str130 = str61;
                     case ChatViewRecyclerTypes.PREMIUM_GROUP_INVITE /* 57 */:
                         num26 = num37;
-                        str100 = (String) b10.n(serialDescriptor, 57, n2.f6848a, str100);
+                        str100 = (String) b10.n(serialDescriptor, 57, n2.f7662a, str100);
                         i14 = 33554432;
                         i16 = i18 | i14;
-                        Unit unit51222222 = Unit.f33298a;
+                        Unit unit51222222 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         channelId3 = channelId7;
@@ -5870,10 +5870,10 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str130 = str61;
                     case 58:
                         num26 = num37;
-                        str104 = (String) b10.n(serialDescriptor, 58, n2.f6848a, str104);
+                        str104 = (String) b10.n(serialDescriptor, 58, n2.f7662a, str104);
                         i14 = 67108864;
                         i16 = i18 | i14;
-                        Unit unit512222222 = Unit.f33298a;
+                        Unit unit512222222 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         channelId3 = channelId7;
@@ -5957,10 +5957,10 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str130 = str61;
                     case 59:
                         num26 = num37;
-                        str103 = (String) b10.n(serialDescriptor, 59, n2.f6848a, str103);
+                        str103 = (String) b10.n(serialDescriptor, 59, n2.f7662a, str103);
                         i14 = 134217728;
                         i16 = i18 | i14;
-                        Unit unit5122222222 = Unit.f33298a;
+                        Unit unit5122222222 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         channelId3 = channelId7;
@@ -6044,10 +6044,10 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str130 = str61;
                     case 60:
                         num26 = num37;
-                        str102 = (String) b10.n(serialDescriptor, 60, n2.f6848a, str102);
+                        str102 = (String) b10.n(serialDescriptor, 60, n2.f7662a, str102);
                         i14 = 268435456;
                         i16 = i18 | i14;
-                        Unit unit51222222222 = Unit.f33298a;
+                        Unit unit51222222222 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         channelId3 = channelId7;
@@ -6131,10 +6131,10 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str130 = str61;
                     case 61:
                         num26 = num37;
-                        num39 = (Integer) b10.n(serialDescriptor, 61, p0.f6864a, num39);
+                        num39 = (Integer) b10.n(serialDescriptor, 61, p0.f7678a, num39);
                         i14 = 536870912;
                         i16 = i18 | i14;
-                        Unit unit512222222222 = Unit.f33298a;
+                        Unit unit512222222222 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         channelId3 = channelId7;
@@ -6218,10 +6218,10 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
                         str130 = str61;
                     case 62:
                         num26 = num37;
-                        str101 = (String) b10.n(serialDescriptor, 62, n2.f6848a, str101);
+                        str101 = (String) b10.n(serialDescriptor, 62, n2.f7662a, str101);
                         i14 = 1073741824;
                         i16 = i18 | i14;
-                        Unit unit5122222222222 = Unit.f33298a;
+                        Unit unit5122222222222 = Unit.f33074a;
                         str37 = str99;
                         str38 = str100;
                         channelId3 = channelId7;
@@ -6379,13 +6379,13 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
         return new NotificationData(i11, i10, str31, str34, num10, str25, num11, str26, l10, num, str27, channelId2, str24, str23, channelId, num9, str22, list, userId, str21, str20, num8, str19, str18, str17, num7, guildId, str139, str16, str15, num6, str14, applicationId, str32, str13, notificationMessage, str138, num4, z10, z12, userId2, str12, str11, str5, str28, str29, str30, bool, str33, str35, num12, num2, num5, str4, z13, map, z11, str36, str9, str10, str8, str7, str6, num3, str3, null, null);
     }
 
-    @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
+    @Override // kotlinx.serialization.KSerializer, ys.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public final SerialDescriptor getDescriptor() {
         return descriptor;
     }
 
-    @Override // xs.o
+    @Override // ys.o
     public final void serialize(@NotNull Encoder encoder, @NotNull NotificationData value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
@@ -6395,7 +6395,7 @@ public /* synthetic */ class NotificationData$$serializer implements h0 {
         b10.c(serialDescriptor);
     }
 
-    @Override // at.h0
+    @Override // bt.h0
     @NotNull
     public KSerializer[] typeParametersSerializers() {
         return h0.a.a(this);

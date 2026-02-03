@@ -5,7 +5,7 @@ import ui.c;
 final class ka implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ka f38412a = new ka();
+    static final ka f38392a = new ka();
 
     static {
         c.b a10 = ui.c.a("maxLabels");

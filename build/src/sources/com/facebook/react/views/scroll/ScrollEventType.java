@@ -1,6 +1,6 @@
 package com.facebook.react.views.scroll;
 
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -93,7 +93,7 @@ public final class ScrollEventType {
     static {
         ScrollEventType[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = pr.a.a($values);
+        $ENTRIES = qr.a.a($values);
         Companion = new Companion(null);
     }
 

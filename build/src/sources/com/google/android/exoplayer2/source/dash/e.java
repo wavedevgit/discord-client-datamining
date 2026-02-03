@@ -18,48 +18,48 @@ import tc.b0;
 public final class e implements Handler.Callback {
 
     /* renamed from: d  reason: collision with root package name */
-    private final le.b f13857d;
+    private final le.b f13486d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b f13858e;
+    private final b f13487e;
 
     /* renamed from: q  reason: collision with root package name */
-    private ud.c f13862q;
+    private ud.c f13491q;
 
     /* renamed from: r  reason: collision with root package name */
-    private long f13863r;
+    private long f13492r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f13864s;
+    private boolean f13493s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f13865t;
+    private boolean f13494t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f13866u;
+    private boolean f13495u;
 
     /* renamed from: p  reason: collision with root package name */
-    private final TreeMap f13861p = new TreeMap();
+    private final TreeMap f13490p = new TreeMap();
 
     /* renamed from: o  reason: collision with root package name */
-    private final Handler f13860o = w0.x(this);
+    private final Handler f13489o = w0.x(this);
 
     /* renamed from: i  reason: collision with root package name */
-    private final id.b f13859i = new id.b();
+    private final id.b f13488i = new id.b();
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long f13867a;
+        public final long f13496a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f13868b;
+        public final long f13497b;
 
         public a(long j10, long j11) {
-            this.f13867a = j10;
-            this.f13868b = j11;
+            this.f13496a = j10;
+            this.f13497b = j11;
         }
     }
 
@@ -74,49 +74,49 @@ public final class e implements Handler.Callback {
     public final class c implements b0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final l0 f13869a;
+        private final l0 f13498a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final x f13870b = new x();
+        private final x f13499b = new x();
 
         /* renamed from: c  reason: collision with root package name */
-        private final gd.c f13871c = new gd.c();
+        private final gd.c f13500c = new gd.c();
 
         /* renamed from: d  reason: collision with root package name */
-        private long f13872d = -9223372036854775807L;
+        private long f13501d = -9223372036854775807L;
 
         c(le.b bVar) {
-            this.f13869a = l0.l(bVar);
+            this.f13498a = l0.l(bVar);
         }
 
         private gd.c g() {
-            this.f13871c.h();
-            if (this.f13869a.R(this.f13870b, this.f13871c, 0, false) == -4) {
-                this.f13871c.v();
-                return this.f13871c;
+            this.f13500c.h();
+            if (this.f13498a.R(this.f13499b, this.f13500c, 0, false) == -4) {
+                this.f13500c.v();
+                return this.f13500c;
             }
             return null;
         }
 
         private void k(long j10, long j11) {
-            e.this.f13860o.sendMessage(e.this.f13860o.obtainMessage(1, new a(j10, j11)));
+            e.this.f13489o.sendMessage(e.this.f13489o.obtainMessage(1, new a(j10, j11)));
         }
 
         private void l() {
-            while (this.f13869a.K(false)) {
+            while (this.f13498a.K(false)) {
                 gd.c g10 = g();
                 if (g10 != null) {
-                    long j10 = g10.f47094p;
-                    Metadata a10 = e.this.f13859i.a(g10);
+                    long j10 = g10.f47349p;
+                    Metadata a10 = e.this.f13488i.a(g10);
                     if (a10 != null) {
                         id.a aVar = (id.a) a10.d(0);
-                        if (e.h(aVar.f28453d, aVar.f28454e)) {
+                        if (e.h(aVar.f28100d, aVar.f28101e)) {
                             m(j10, aVar);
                         }
                     }
                 }
             }
-            this.f13869a.s();
+            this.f13498a.s();
         }
 
         private void m(long j10, id.a aVar) {
@@ -129,23 +129,23 @@ public final class e implements Handler.Callback {
 
         @Override // tc.b0
         public void b(Format format) {
-            this.f13869a.b(format);
+            this.f13498a.b(format);
         }
 
         @Override // tc.b0
         public int c(j jVar, int i10, boolean z10, int i11) {
-            return this.f13869a.a(jVar, i10, z10);
+            return this.f13498a.a(jVar, i10, z10);
         }
 
         @Override // tc.b0
         public void d(long j10, int i10, int i11, int i12, b0.a aVar) {
-            this.f13869a.d(j10, i10, i11, i12, aVar);
+            this.f13498a.d(j10, i10, i11, i12, aVar);
             l();
         }
 
         @Override // tc.b0
         public void e(h0 h0Var, int i10, int i11) {
-            this.f13869a.f(h0Var, i10);
+            this.f13498a.f(h0Var, i10);
         }
 
         public boolean h(long j10) {
@@ -153,17 +153,17 @@ public final class e implements Handler.Callback {
         }
 
         public void i(f fVar) {
-            long j10 = this.f13872d;
-            if (j10 == -9223372036854775807L || fVar.f48961h > j10) {
-                this.f13872d = fVar.f48961h;
+            long j10 = this.f13501d;
+            if (j10 == -9223372036854775807L || fVar.f49015h > j10) {
+                this.f13501d = fVar.f49015h;
             }
             e.this.m(fVar);
         }
 
         public boolean j(f fVar) {
             boolean z10;
-            long j10 = this.f13872d;
-            if (j10 != -9223372036854775807L && j10 < fVar.f48960g) {
+            long j10 = this.f13501d;
+            if (j10 != -9223372036854775807L && j10 < fVar.f49014g) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -172,35 +172,35 @@ public final class e implements Handler.Callback {
         }
 
         public void n() {
-            this.f13869a.S();
+            this.f13498a.S();
         }
     }
 
     public e(ud.c cVar, b bVar, le.b bVar2) {
-        this.f13862q = cVar;
-        this.f13858e = bVar;
-        this.f13857d = bVar2;
+        this.f13491q = cVar;
+        this.f13487e = bVar;
+        this.f13486d = bVar2;
     }
 
     private Map.Entry e(long j10) {
-        return this.f13861p.ceilingEntry(Long.valueOf(j10));
+        return this.f13490p.ceilingEntry(Long.valueOf(j10));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static long f(id.a aVar) {
         try {
-            return w0.R0(w0.E(aVar.f28457p));
+            return w0.R0(w0.E(aVar.f28104p));
         } catch (lc.l0 unused) {
             return -9223372036854775807L;
         }
     }
 
     private void g(long j10, long j11) {
-        Long l10 = (Long) this.f13861p.get(Long.valueOf(j11));
+        Long l10 = (Long) this.f13490p.get(Long.valueOf(j11));
         if (l10 == null) {
-            this.f13861p.put(Long.valueOf(j11), Long.valueOf(j10));
+            this.f13490p.put(Long.valueOf(j11), Long.valueOf(j10));
         } else if (l10.longValue() > j10) {
-            this.f13861p.put(Long.valueOf(j11), Long.valueOf(j10));
+            this.f13490p.put(Long.valueOf(j11), Long.valueOf(j10));
         }
     }
 
@@ -216,22 +216,22 @@ public final class e implements Handler.Callback {
     }
 
     private void i() {
-        if (!this.f13864s) {
+        if (!this.f13493s) {
             return;
         }
-        this.f13865t = true;
-        this.f13864s = false;
-        this.f13858e.b();
+        this.f13494t = true;
+        this.f13493s = false;
+        this.f13487e.b();
     }
 
     private void l() {
-        this.f13858e.a(this.f13863r);
+        this.f13487e.a(this.f13492r);
     }
 
     private void p() {
-        Iterator it = this.f13861p.entrySet().iterator();
+        Iterator it = this.f13490p.entrySet().iterator();
         while (it.hasNext()) {
-            if (((Long) ((Map.Entry) it.next()).getKey()).longValue() < this.f13862q.f50171h) {
+            if (((Long) ((Map.Entry) it.next()).getKey()).longValue() < this.f13491q.f50227h) {
                 it.remove();
             }
         }
@@ -239,29 +239,29 @@ public final class e implements Handler.Callback {
 
     @Override // android.os.Handler.Callback
     public boolean handleMessage(Message message) {
-        if (this.f13866u) {
+        if (this.f13495u) {
             return true;
         }
         if (message.what != 1) {
             return false;
         }
         a aVar = (a) message.obj;
-        g(aVar.f13867a, aVar.f13868b);
+        g(aVar.f13496a, aVar.f13497b);
         return true;
     }
 
     boolean j(long j10) {
-        ud.c cVar = this.f13862q;
+        ud.c cVar = this.f13491q;
         boolean z10 = false;
-        if (!cVar.f50167d) {
+        if (!cVar.f50223d) {
             return false;
         }
-        if (this.f13865t) {
+        if (this.f13494t) {
             return true;
         }
-        Map.Entry e10 = e(cVar.f50171h);
+        Map.Entry e10 = e(cVar.f50227h);
         if (e10 != null && ((Long) e10.getValue()).longValue() < j10) {
-            this.f13863r = ((Long) e10.getKey()).longValue();
+            this.f13492r = ((Long) e10.getKey()).longValue();
             l();
             z10 = true;
         }
@@ -272,18 +272,18 @@ public final class e implements Handler.Callback {
     }
 
     public c k() {
-        return new c(this.f13857d);
+        return new c(this.f13486d);
     }
 
     void m(f fVar) {
-        this.f13864s = true;
+        this.f13493s = true;
     }
 
     boolean n(boolean z10) {
-        if (!this.f13862q.f50167d) {
+        if (!this.f13491q.f50223d) {
             return false;
         }
-        if (this.f13865t) {
+        if (this.f13494t) {
             return true;
         }
         if (!z10) {
@@ -294,14 +294,14 @@ public final class e implements Handler.Callback {
     }
 
     public void o() {
-        this.f13866u = true;
-        this.f13860o.removeCallbacksAndMessages(null);
+        this.f13495u = true;
+        this.f13489o.removeCallbacksAndMessages(null);
     }
 
     public void q(ud.c cVar) {
-        this.f13865t = false;
-        this.f13863r = -9223372036854775807L;
-        this.f13862q = cVar;
+        this.f13494t = false;
+        this.f13492r = -9223372036854775807L;
+        this.f13491q = cVar;
         p();
     }
 }

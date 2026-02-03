@@ -6,16 +6,16 @@ import kotlin.jvm.functions.Function1;
 public class k implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function1 f36027d;
+    private final Function1 f35803d;
 
     public k(Function1 function1) {
-        this.f36027d = function1;
+        this.f35803d = function1;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         CharSequence f10;
-        f10 = IntersectionTypeConstructor.f(this.f36027d, (KotlinType) obj);
+        f10 = IntersectionTypeConstructor.f(this.f35803d, (KotlinType) obj);
         return f10;
     }
 }

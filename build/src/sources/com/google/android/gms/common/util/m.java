@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Pattern f14849a = Pattern.compile("\\$\\{(.*?)\\}");
+    private static final Pattern f14478a = Pattern.compile("\\$\\{(.*?)\\}");
 
     public static boolean a(String str) {
         if (str != null && !str.trim().isEmpty()) {

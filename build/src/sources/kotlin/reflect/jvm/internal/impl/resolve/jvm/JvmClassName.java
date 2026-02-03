@@ -7,16 +7,16 @@ import org.jetbrains.annotations.NotNull;
 public class JvmClassName {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f35469a;
+    private final String f35245a;
 
     /* renamed from: b  reason: collision with root package name */
-    private FqName f35470b;
+    private FqName f35246b;
 
     private JvmClassName(String str) {
         if (str == null) {
             a(7);
         }
-        this.f35469a = str;
+        this.f35245a = str;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x0016  */
@@ -200,7 +200,7 @@ public class JvmClassName {
             a(4);
         }
         JvmClassName jvmClassName = new JvmClassName(fqName.asString().replace('.', '/'));
-        jvmClassName.f35470b = fqName;
+        jvmClassName.f35246b = fqName;
         return jvmClassName;
     }
 
@@ -233,19 +233,19 @@ public class JvmClassName {
             return true;
         }
         if (obj != null && getClass() == obj.getClass()) {
-            return this.f35469a.equals(((JvmClassName) obj).f35469a);
+            return this.f35245a.equals(((JvmClassName) obj).f35245a);
         }
         return false;
     }
 
     @NotNull
     public FqName getFqNameForTopLevelClassMaybeWithDollars() {
-        return new FqName(this.f35469a.replace('/', '.'));
+        return new FqName(this.f35245a.replace('/', '.'));
     }
 
     @NotNull
     public String getInternalName() {
-        String str = this.f35469a;
+        String str = this.f35245a;
         if (str == null) {
             a(10);
         }
@@ -254,7 +254,7 @@ public class JvmClassName {
 
     @NotNull
     public FqName getPackageFqName() {
-        int lastIndexOf = this.f35469a.lastIndexOf("/");
+        int lastIndexOf = this.f35245a.lastIndexOf("/");
         if (lastIndexOf == -1) {
             FqName fqName = FqName.ROOT;
             if (fqName == null) {
@@ -262,14 +262,14 @@ public class JvmClassName {
             }
             return fqName;
         }
-        return new FqName(this.f35469a.substring(0, lastIndexOf).replace('/', '.'));
+        return new FqName(this.f35245a.substring(0, lastIndexOf).replace('/', '.'));
     }
 
     public int hashCode() {
-        return this.f35469a.hashCode();
+        return this.f35245a.hashCode();
     }
 
     public String toString() {
-        return this.f35469a;
+        return this.f35245a;
     }
 }

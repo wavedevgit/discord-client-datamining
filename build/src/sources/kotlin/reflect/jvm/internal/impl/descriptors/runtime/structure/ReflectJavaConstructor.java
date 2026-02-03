@@ -19,17 +19,17 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaConstructor extends ReflectJavaMember implements JavaConstructor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Constructor f33940a;
+    private final Constructor f33716a;
 
     public ReflectJavaConstructor(@NotNull Constructor<?> member) {
         Intrinsics.checkNotNullParameter(member, "member");
-        this.f33940a = member;
+        this.f33716a = member;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaMember
     @NotNull
     public Constructor<?> getMember() {
-        return this.f33940a;
+        return this.f33716a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaTypeParameterListOwner

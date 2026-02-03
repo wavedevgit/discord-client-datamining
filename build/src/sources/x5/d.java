@@ -5,21 +5,21 @@ import l5.y;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static y f53236a = new c();
+    private static y f53444a = new c();
 
     public static void a(String str) {
-        f53236a.c(str);
+        f53444a.c(str);
     }
 
     public static void b(String str, Throwable th2) {
-        f53236a.b(str, th2);
+        f53444a.b(str, th2);
     }
 
     public static void c(String str) {
-        f53236a.a(str);
+        f53444a.a(str);
     }
 
     public static void d(String str, Throwable th2) {
-        f53236a.d(str, th2);
+        f53444a.d(str, th2);
     }
 }

@@ -17,7 +17,7 @@ import zg.i;
 public class FabTransformationSheetBehavior extends FabTransformationBehavior {
 
     /* renamed from: t  reason: collision with root package name */
-    private Map f16670t;
+    private Map f16299t;
 
     public FabTransformationSheetBehavior() {
     }
@@ -29,7 +29,7 @@ public class FabTransformationSheetBehavior extends FabTransformationBehavior {
             CoordinatorLayout coordinatorLayout = (CoordinatorLayout) parent;
             int childCount = coordinatorLayout.getChildCount();
             if (z10) {
-                this.f16670t = new HashMap(childCount);
+                this.f16299t = new HashMap(childCount);
             }
             for (int i10 = 0; i10 < childCount; i10++) {
                 View childAt = coordinatorLayout.getChildAt(i10);
@@ -40,18 +40,18 @@ public class FabTransformationSheetBehavior extends FabTransformationBehavior {
                 }
                 if (childAt != view && !z11) {
                     if (!z10) {
-                        Map map = this.f16670t;
+                        Map map = this.f16299t;
                         if (map != null && map.containsKey(childAt)) {
-                            h0.x0(childAt, ((Integer) this.f16670t.get(childAt)).intValue());
+                            h0.x0(childAt, ((Integer) this.f16299t.get(childAt)).intValue());
                         }
                     } else {
-                        this.f16670t.put(childAt, Integer.valueOf(childAt.getImportantForAccessibility()));
+                        this.f16299t.put(childAt, Integer.valueOf(childAt.getImportantForAccessibility()));
                         h0.x0(childAt, 4);
                     }
                 }
             }
             if (!z10) {
-                this.f16670t = null;
+                this.f16299t = null;
             }
         }
     }
@@ -67,13 +67,13 @@ public class FabTransformationSheetBehavior extends FabTransformationBehavior {
     protected FabTransformationBehavior.b d0(Context context, boolean z10) {
         int i10;
         if (z10) {
-            i10 = a.f54345d;
+            i10 = a.f54320d;
         } else {
-            i10 = a.f54344c;
+            i10 = a.f54319c;
         }
         FabTransformationBehavior.b bVar = new FabTransformationBehavior.b();
-        bVar.f16663a = g.c(context, i10);
-        bVar.f16664b = new i(17, 0.0f, 0.0f);
+        bVar.f16292a = g.c(context, i10);
+        bVar.f16293b = new i(17, 0.0f, 0.0f);
         return bVar;
     }
 

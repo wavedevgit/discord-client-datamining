@@ -5,7 +5,7 @@ import ui.c;
 final class c9 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c9 f38145a = new c9();
+    static final c9 f38125a = new c9();
 
     static {
         c.b a10 = ui.c.a("languageCode");

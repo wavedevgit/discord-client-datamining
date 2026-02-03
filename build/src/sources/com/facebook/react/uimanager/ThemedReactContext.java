@@ -48,7 +48,7 @@ public final class ThemedReactContext extends ReactContext {
     }
 
     @Override // com.facebook.react.bridge.ReactContext
-    @ir.c
+    @jr.c
     public CatalystInstance getCatalystInstance() {
         return this.reactApplicationContext.getCatalystInstance();
     }
@@ -59,7 +59,7 @@ public final class ThemedReactContext extends ReactContext {
     }
 
     @Override // com.facebook.react.bridge.ReactContext
-    @ir.c
+    @jr.c
     public UIManager getFabricUIManager() {
         return this.reactApplicationContext.getFabricUIManager();
     }
@@ -108,7 +108,7 @@ public final class ThemedReactContext extends ReactContext {
         return this.reactApplicationContext.getSourceURL();
     }
 
-    @ir.c
+    @jr.c
     public final String getSurfaceID() {
         return this.moduleName;
     }
@@ -123,7 +123,7 @@ public final class ThemedReactContext extends ReactContext {
     }
 
     @Override // com.facebook.react.bridge.ReactContext
-    @ir.c
+    @jr.c
     public boolean hasActiveCatalystInstance() {
         return this.reactApplicationContext.hasActiveCatalystInstance();
     }
@@ -134,7 +134,7 @@ public final class ThemedReactContext extends ReactContext {
     }
 
     @Override // com.facebook.react.bridge.ReactContext
-    @ir.c
+    @jr.c
     public boolean hasCatalystInstance() {
         return this.reactApplicationContext.hasCatalystInstance();
     }
@@ -156,7 +156,7 @@ public final class ThemedReactContext extends ReactContext {
     }
 
     @Override // com.facebook.react.bridge.ReactContext
-    @ir.c
+    @jr.c
     public boolean isBridgeless() {
         return this.reactApplicationContext.isBridgeless();
     }
@@ -183,7 +183,7 @@ public final class ThemedReactContext extends ReactContext {
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    @ir.c
+    @jr.c
     public ThemedReactContext(@NotNull ReactApplicationContext reactApplicationContext, @NotNull Context base, String str) {
         this(reactApplicationContext, base, str, -1);
         Intrinsics.checkNotNullParameter(reactApplicationContext, "reactApplicationContext");
@@ -191,7 +191,7 @@ public final class ThemedReactContext extends ReactContext {
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    @ir.c
+    @jr.c
     public ThemedReactContext(@NotNull ReactApplicationContext reactApplicationContext, @NotNull Context base) {
         this(reactApplicationContext, base, null, -1);
         Intrinsics.checkNotNullParameter(reactApplicationContext, "reactApplicationContext");

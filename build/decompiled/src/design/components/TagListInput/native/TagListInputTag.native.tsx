@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/TagListInput/native/TagListInputTag.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun65666: for (var _fun65666_ip = 0;;) switch (_fun65666_ip) {
+        _fun65771: for (var _fun65771_ip = 0;;) switch (_fun65771_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.tag;
@@ -112,16 +112,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var0.start;
                 var3 = undefined;
                 if (!(var15 === var3)) {
-                    _fun65666_ip = 38;
-                    continue _fun65666
+                    _fun65771_ip = 38;
+                    continue _fun65771
                 }
             case 36:
                 var15 = false;
             case 38:
                 var14 = var0.end;
                 if (!(var14 === var3)) {
-                    _fun65666_ip = 49;
-                    continue _fun65666
+                    _fun65771_ip = 49;
+                    continue _fun65771
                 }
             case 47:
                 var14 = false;
@@ -168,8 +168,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12[0] = var13;
                 var13 = undefined;
                 if (!var10) {
-                    _fun65666_ip = 219;
-                    continue _fun65666
+                    _fun65771_ip = 219;
+                    continue _fun65771
                 }
             case 213:
                 var13 = var11.highlightedTagWrapper;
@@ -177,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12[1] = var13;
                 var13 = undefined;
                 if (!var15) {
-                    _fun65666_ip = 233;
-                    continue _fun65666
+                    _fun65771_ip = 233;
+                    continue _fun65771
                 }
             case 228:
                 var13 = var11.start;
@@ -186,8 +186,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12[2] = var13;
                 var13 = undefined;
                 if (!var14) {
-                    _fun65666_ip = 247;
-                    continue _fun65666
+                    _fun65771_ip = 247;
+                    continue _fun65771
                 }
             case 242:
                 var13 = var11.end;
@@ -211,8 +211,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = null;
                 var4 = var6 != var4;
                 if (!var4) {
-                    _fun65666_ip = 337;
-                    continue _fun65666
+                    _fun65771_ip = 337;
+                    continue _fun65771
                 }
             case 302:
                 var9 = _closure1_slot4;
@@ -239,8 +239,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var9 = 'text-default';
                 if (!var10) {
-                    _fun65666_ip = 403;
-                    continue _fun65666
+                    _fun65771_ip = 403;
+                    continue _fun65771
                 }
             case 397:
                 var9 = 'always-white';
@@ -257,4 +257,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TagListInputTagComponent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1234, 8108, 4867, 3902, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1234, 8139, 4897, 3932, 2]);

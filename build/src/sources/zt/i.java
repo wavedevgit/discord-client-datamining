@@ -1,50 +1,35 @@
 package zt;
 
-import java.net.Proxy;
+import java.io.IOException;
 import kotlin.jvm.internal.Intrinsics;
-import okhttp3.HttpUrl;
-import okhttp3.Request;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class i {
+public final class i extends RuntimeException {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final i f56142a = new i();
+    /* renamed from: d  reason: collision with root package name */
+    private final IOException f56141d;
 
-    private i() {
+    /* renamed from: e  reason: collision with root package name */
+    private IOException f56142e;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public i(IOException firstConnectException) {
+        super(firstConnectException);
+        Intrinsics.checkNotNullParameter(firstConnectException, "firstConnectException");
+        this.f56141d = firstConnectException;
+        this.f56142e = firstConnectException;
     }
 
-    private final boolean b(Request request, Proxy.Type type) {
-        if (!request.i() && type == Proxy.Type.HTTP) {
-            return true;
-        }
-        return false;
+    public final void a(IOException e10) {
+        Intrinsics.checkNotNullParameter(e10, "e");
+        jr.e.a(this.f56141d, e10);
+        this.f56142e = e10;
     }
 
-    public final String a(Request request, Proxy.Type proxyType) {
-        Intrinsics.checkNotNullParameter(request, "request");
-        Intrinsics.checkNotNullParameter(proxyType, "proxyType");
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append(request.j());
-        sb2.append(' ');
-        i iVar = f56142a;
-        if (iVar.b(request, proxyType)) {
-            sb2.append(request.n());
-        } else {
-            sb2.append(iVar.c(request.n()));
-        }
-        sb2.append(" HTTP/1.1");
-        String sb3 = sb2.toString();
-        Intrinsics.checkNotNullExpressionValue(sb3, "StringBuilder().apply(builderAction).toString()");
-        return sb3;
+    public final IOException b() {
+        return this.f56141d;
     }
 
-    public final String c(HttpUrl url) {
-        Intrinsics.checkNotNullParameter(url, "url");
-        String d10 = url.d();
-        String f10 = url.f();
-        if (f10 != null) {
-            return d10 + '?' + f10;
-        }
-        return d10;
+    public final IOException c() {
+        return this.f56142e;
     }
 }

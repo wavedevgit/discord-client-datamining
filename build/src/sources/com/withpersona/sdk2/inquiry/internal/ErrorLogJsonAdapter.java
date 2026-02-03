@@ -10,19 +10,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ErrorLogJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19669a;
+    private final m.b f19302a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19670b;
+    private final com.squareup.moshi.h f19303b;
 
     public ErrorLogJsonAdapter(@NotNull com.squareup.moshi.w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("info");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19669a = a10;
+        this.f19302a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "info");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19670b = f10;
+        this.f19303b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -32,13 +32,13 @@ public final class ErrorLogJsonAdapter extends com.squareup.moshi.h {
         reader.r();
         String str = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f19669a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    str = (String) this.f19670b.fromJson(reader);
+            int t02 = reader.t0(this.f19302a);
+            if (t02 != -1) {
+                if (t02 == 0) {
+                    str = (String) this.f19303b.fromJson(reader);
                 }
             } else {
-                reader.E0();
+                reader.F0();
                 reader.P();
             }
         }
@@ -52,8 +52,8 @@ public final class ErrorLogJsonAdapter extends com.squareup.moshi.h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (errorLog != null) {
             writer.l();
-            writer.A0("info");
-            this.f19670b.toJson(writer, errorLog.a());
+            writer.t0("info");
+            this.f19303b.toJson(writer, errorLog.a());
             writer.E();
             return;
         }

@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsDisplayNameStylesMobileEnabled = var3;
     var1 = function arg0() {
-        _fun36534: for (var _fun36534_ip = 0;;) switch (_fun36534_ip) {
+        _fun36624: for (var _fun36624_ip = 0;;) switch (_fun36624_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.location;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var3)(var0);
                 var0 = var2.enabled;
                 if (!var0) {
-                    _fun36534_ip = 60;
-                    continue _fun36534
+                    _fun36624_ip = 60;
+                    continue _fun36624
                 }
             case 40:
                 var2 = var2.surfaces;

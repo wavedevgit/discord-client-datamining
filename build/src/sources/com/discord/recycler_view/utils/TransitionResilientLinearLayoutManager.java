@@ -51,27 +51,27 @@ public class TransitionResilientLinearLayoutManager extends LinearLayoutManager 
         Intrinsics.checkNotNullParameter(rec, "rec");
         Intrinsics.checkNotNullParameter(st2, "st");
         super.onLayoutChildren(rec, st2);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit removeAndRecycleAllViews$lambda$3(TransitionResilientLinearLayoutManager transitionResilientLinearLayoutManager) {
         super.removeAllViews();
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit removeAndRecycleAllViews$lambda$4(TransitionResilientLinearLayoutManager transitionResilientLinearLayoutManager, RecyclerView.Recycler rec) {
         Intrinsics.checkNotNullParameter(rec, "rec");
         super.removeAndRecycleAllViews(rec);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit removeAndRecycleView$lambda$1(TransitionResilientLinearLayoutManager transitionResilientLinearLayoutManager, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         super.removeView(it);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -79,20 +79,20 @@ public class TransitionResilientLinearLayoutManager extends LinearLayoutManager 
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(rec, "rec");
         super.removeAndRecycleView(view, rec);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit removeAndRecycleViewAt$lambda$5(TransitionResilientLinearLayoutManager transitionResilientLinearLayoutManager, int i10) {
         super.removeViewAt(i10);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit removeAndRecycleViewAt$lambda$6(TransitionResilientLinearLayoutManager transitionResilientLinearLayoutManager, int i10, RecyclerView.Recycler rec) {
         Intrinsics.checkNotNullParameter(rec, "rec");
         super.removeAndRecycleViewAt(i10, rec);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager

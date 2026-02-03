@@ -6,39 +6,39 @@ import lc.u;
 public class f extends qc.a {
 
     /* renamed from: e  reason: collision with root package name */
-    public final c f47091e;
+    public final c f47346e;
 
     /* renamed from: i  reason: collision with root package name */
-    public ByteBuffer f47092i;
+    public ByteBuffer f47347i;
 
     /* renamed from: o  reason: collision with root package name */
-    public boolean f47093o;
+    public boolean f47348o;
 
     /* renamed from: p  reason: collision with root package name */
-    public long f47094p;
+    public long f47349p;
 
     /* renamed from: q  reason: collision with root package name */
-    public ByteBuffer f47095q;
+    public ByteBuffer f47350q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final int f47096r;
+    private final int f47351r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final int f47097s;
+    private final int f47352s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends IllegalStateException {
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f47098d;
+        public final int f47353d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f47099e;
+        public final int f47354e;
 
         public a(int i10, int i11) {
             super("Buffer too small (" + i10 + " < " + i11 + ")");
-            this.f47098d = i10;
-            this.f47099e = i11;
+            this.f47353d = i10;
+            this.f47354e = i11;
         }
     }
 
@@ -52,14 +52,14 @@ public class f extends qc.a {
 
     private ByteBuffer t(int i10) {
         int capacity;
-        int i11 = this.f47096r;
+        int i11 = this.f47351r;
         if (i11 == 1) {
             return ByteBuffer.allocate(i10);
         }
         if (i11 == 2) {
             return ByteBuffer.allocateDirect(i10);
         }
-        ByteBuffer byteBuffer = this.f47092i;
+        ByteBuffer byteBuffer = this.f47347i;
         if (byteBuffer == null) {
             capacity = 0;
         } else {
@@ -75,29 +75,29 @@ public class f extends qc.a {
     @Override // qc.a
     public void h() {
         super.h();
-        ByteBuffer byteBuffer = this.f47092i;
+        ByteBuffer byteBuffer = this.f47347i;
         if (byteBuffer != null) {
             byteBuffer.clear();
         }
-        ByteBuffer byteBuffer2 = this.f47095q;
+        ByteBuffer byteBuffer2 = this.f47350q;
         if (byteBuffer2 != null) {
             byteBuffer2.clear();
         }
-        this.f47093o = false;
+        this.f47348o = false;
     }
 
     public void u(int i10) {
-        int i11 = i10 + this.f47097s;
-        ByteBuffer byteBuffer = this.f47092i;
+        int i11 = i10 + this.f47352s;
+        ByteBuffer byteBuffer = this.f47347i;
         if (byteBuffer == null) {
-            this.f47092i = t(i11);
+            this.f47347i = t(i11);
             return;
         }
         int capacity = byteBuffer.capacity();
         int position = byteBuffer.position();
         int i12 = i11 + position;
         if (capacity >= i12) {
-            this.f47092i = byteBuffer;
+            this.f47347i = byteBuffer;
             return;
         }
         ByteBuffer t10 = t(i12);
@@ -106,36 +106,36 @@ public class f extends qc.a {
             byteBuffer.flip();
             t10.put(byteBuffer);
         }
-        this.f47092i = t10;
+        this.f47347i = t10;
     }
 
     public final void v() {
-        ByteBuffer byteBuffer = this.f47092i;
+        ByteBuffer byteBuffer = this.f47347i;
         if (byteBuffer != null) {
             byteBuffer.flip();
         }
-        ByteBuffer byteBuffer2 = this.f47095q;
+        ByteBuffer byteBuffer2 = this.f47350q;
         if (byteBuffer2 != null) {
             byteBuffer2.flip();
         }
     }
 
     public final boolean w() {
-        return j(1073741824);
+        return k(1073741824);
     }
 
     public void y(int i10) {
-        ByteBuffer byteBuffer = this.f47095q;
+        ByteBuffer byteBuffer = this.f47350q;
         if (byteBuffer != null && byteBuffer.capacity() >= i10) {
-            this.f47095q.clear();
+            this.f47350q.clear();
         } else {
-            this.f47095q = ByteBuffer.allocate(i10);
+            this.f47350q = ByteBuffer.allocate(i10);
         }
     }
 
     public f(int i10, int i11) {
-        this.f47091e = new c();
-        this.f47096r = i10;
-        this.f47097s = i11;
+        this.f47346e = new c();
+        this.f47351r = i10;
+        this.f47352s = i11;
     }
 }

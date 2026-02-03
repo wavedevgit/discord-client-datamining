@@ -17,16 +17,16 @@ import java.util.concurrent.Future;
 public class e0 implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final URL f17477d;
+    private final URL f17106d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile Future f17478e;
+    private volatile Future f17107e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Task f17479i;
+    private Task f17108i;
 
     private e0(URL url) {
-        this.f17477d = url;
+        this.f17106d = url;
     }
 
     public static /* synthetic */ void a(e0 e0Var, wg.k kVar) {
@@ -39,7 +39,7 @@ public class e0 implements Closeable {
     }
 
     private byte[] l() {
-        URLConnection openConnection = this.f17477d.openConnection();
+        URLConnection openConnection = this.f17106d.openConnection();
         if (openConnection.getContentLength() <= 1048576) {
             InputStream inputStream = openConnection.getInputStream();
             try {
@@ -48,7 +48,7 @@ public class e0 implements Closeable {
                     inputStream.close();
                 }
                 if (Log.isLoggable("FirebaseMessaging", 2)) {
-                    Log.v("FirebaseMessaging", "Downloaded " + d10.length + " bytes from " + this.f17477d);
+                    Log.v("FirebaseMessaging", "Downloaded " + d10.length + " bytes from " + this.f17106d);
                 }
                 if (d10.length <= 1048576) {
                     return d10;
@@ -82,36 +82,36 @@ public class e0 implements Closeable {
 
     public void B(ExecutorService executorService) {
         final wg.k kVar = new wg.k();
-        this.f17478e = executorService.submit(new Runnable() { // from class: com.google.firebase.messaging.d0
+        this.f17107e = executorService.submit(new Runnable() { // from class: com.google.firebase.messaging.d0
             @Override // java.lang.Runnable
             public final void run() {
                 e0.a(e0.this, kVar);
             }
         });
-        this.f17479i = kVar.a();
+        this.f17108i = kVar.a();
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f17478e.cancel(true);
+        this.f17107e.cancel(true);
     }
 
     public Bitmap h() {
         if (Log.isLoggable("FirebaseMessaging", 4)) {
-            Log.i("FirebaseMessaging", "Starting download of: " + this.f17477d);
+            Log.i("FirebaseMessaging", "Starting download of: " + this.f17106d);
         }
         byte[] l10 = l();
         Bitmap decodeByteArray = BitmapFactory.decodeByteArray(l10, 0, l10.length);
         if (decodeByteArray != null) {
             if (Log.isLoggable("FirebaseMessaging", 3)) {
-                Log.d("FirebaseMessaging", "Successfully downloaded image: " + this.f17477d);
+                Log.d("FirebaseMessaging", "Successfully downloaded image: " + this.f17106d);
             }
             return decodeByteArray;
         }
-        throw new IOException("Failed to decode image: " + this.f17477d);
+        throw new IOException("Failed to decode image: " + this.f17106d);
     }
 
     public Task x() {
-        return (Task) gf.q.l(this.f17479i);
+        return (Task) gf.q.l(this.f17108i);
     }
 }

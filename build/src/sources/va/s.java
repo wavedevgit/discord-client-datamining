@@ -7,29 +7,29 @@ import r8.h;
 public class s implements r8.h {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f50818d;
+    private final int f50942d;
 
     /* renamed from: e  reason: collision with root package name */
-    CloseableReference f50819e;
+    CloseableReference f50943e;
 
     public s(CloseableReference closeableReference, int i10) {
         boolean z10;
         o8.j.g(closeableReference);
-        if (i10 >= 0 && i10 <= ((q) closeableReference.D0()).getSize()) {
+        if (i10 >= 0 && i10 <= ((q) closeableReference.F0()).getSize()) {
             z10 = true;
         } else {
             z10 = false;
         }
         o8.j.b(Boolean.valueOf(z10));
-        this.f50819e = closeableReference.clone();
-        this.f50818d = i10;
+        this.f50943e = closeableReference.clone();
+        this.f50942d = i10;
     }
 
     @Override // r8.h
     public synchronized long C() {
         a();
-        o8.j.g(this.f50819e);
-        return ((q) this.f50819e.D0()).C();
+        o8.j.g(this.f50943e);
+        return ((q) this.f50943e.F0()).C();
     }
 
     synchronized void a() {
@@ -40,39 +40,39 @@ public class s implements r8.h {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public synchronized void close() {
-        CloseableReference.N(this.f50819e);
-        this.f50819e = null;
+        CloseableReference.N(this.f50943e);
+        this.f50943e = null;
     }
 
     @Override // r8.h
     public synchronized boolean isClosed() {
-        return !CloseableReference.I0(this.f50819e);
+        return !CloseableReference.K0(this.f50943e);
     }
 
     @Override // r8.h
     public synchronized int o(int i10, byte[] bArr, int i11, int i12) {
         boolean z10;
         a();
-        if (i10 + i12 <= this.f50818d) {
+        if (i10 + i12 <= this.f50942d) {
             z10 = true;
         } else {
             z10 = false;
         }
         o8.j.b(Boolean.valueOf(z10));
-        o8.j.g(this.f50819e);
-        return ((q) this.f50819e.D0()).o(i10, bArr, i11, i12);
+        o8.j.g(this.f50943e);
+        return ((q) this.f50943e.F0()).o(i10, bArr, i11, i12);
     }
 
     @Override // r8.h
     public synchronized ByteBuffer p() {
-        o8.j.g(this.f50819e);
-        return ((q) this.f50819e.D0()).p();
+        o8.j.g(this.f50943e);
+        return ((q) this.f50943e.F0()).p();
     }
 
     @Override // r8.h
     public synchronized int size() {
         a();
-        return this.f50818d;
+        return this.f50942d;
     }
 
     @Override // r8.h
@@ -86,11 +86,11 @@ public class s implements r8.h {
             z10 = false;
         }
         o8.j.b(Boolean.valueOf(z10));
-        if (i10 < this.f50818d) {
+        if (i10 < this.f50942d) {
             z11 = true;
         }
         o8.j.b(Boolean.valueOf(z11));
-        o8.j.g(this.f50819e);
-        return ((q) this.f50819e.D0()).w(i10);
+        o8.j.g(this.f50943e);
+        return ((q) this.f50943e.F0()).w(i10);
     }
 }

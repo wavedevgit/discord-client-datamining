@@ -7,42 +7,42 @@ import javax.inject.Provider;
 public final class s implements bc.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Provider f26649a;
+    private final Provider f26744a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Provider f26650b;
+    private final Provider f26745b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Provider f26651c;
+    private final Provider f26746c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Provider f26652d;
+    private final Provider f26747d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Provider f26653e;
+    private final Provider f26748e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Provider f26654f;
+    private final Provider f26749f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Provider f26655g;
+    private final Provider f26750g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Provider f26656h;
+    private final Provider f26751h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Provider f26657i;
+    private final Provider f26752i;
 
     public s(Provider provider, Provider provider2, Provider provider3, Provider provider4, Provider provider5, Provider provider6, Provider provider7, Provider provider8, Provider provider9) {
-        this.f26649a = provider;
-        this.f26650b = provider2;
-        this.f26651c = provider3;
-        this.f26652d = provider4;
-        this.f26653e = provider5;
-        this.f26654f = provider6;
-        this.f26655g = provider7;
-        this.f26656h = provider8;
-        this.f26657i = provider9;
+        this.f26744a = provider;
+        this.f26745b = provider2;
+        this.f26746c = provider3;
+        this.f26747d = provider4;
+        this.f26748e = provider5;
+        this.f26749f = provider6;
+        this.f26750g = provider7;
+        this.f26751h = provider8;
+        this.f26752i = provider9;
     }
 
     public static s a(Provider provider, Provider provider2, Provider provider3, Provider provider4, Provider provider5, Provider provider6, Provider provider7, Provider provider8, Provider provider9) {
@@ -56,6 +56,6 @@ public final class s implements bc.b {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public r get() {
-        return c((Context) this.f26649a.get(), (ac.e) this.f26650b.get(), (hc.d) this.f26651c.get(), (x) this.f26652d.get(), (Executor) this.f26653e.get(), (ic.b) this.f26654f.get(), (jc.a) this.f26655g.get(), (jc.a) this.f26656h.get(), (hc.c) this.f26657i.get());
+        return c((Context) this.f26744a.get(), (ac.e) this.f26745b.get(), (hc.d) this.f26746c.get(), (x) this.f26747d.get(), (Executor) this.f26748e.get(), (ic.b) this.f26749f.get(), (jc.a) this.f26750g.get(), (jc.a) this.f26751h.get(), (hc.c) this.f26752i.get());
     }
 }

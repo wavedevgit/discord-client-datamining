@@ -10,53 +10,53 @@ import android.view.View;
 public class AppCompatBackgroundHelper {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f1421a;
+    private final View f1465a;
 
     /* renamed from: d  reason: collision with root package name */
-    private t0 f1424d;
+    private t0 f1468d;
 
     /* renamed from: e  reason: collision with root package name */
-    private t0 f1425e;
+    private t0 f1469e;
 
     /* renamed from: f  reason: collision with root package name */
-    private t0 f1426f;
+    private t0 f1470f;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f1423c = -1;
+    private int f1467c = -1;
 
     /* renamed from: b  reason: collision with root package name */
-    private final j f1422b = j.b();
+    private final j f1466b = j.b();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public AppCompatBackgroundHelper(View view) {
-        this.f1421a = view;
+        this.f1465a = view;
     }
 
     private boolean a(Drawable drawable) {
-        if (this.f1426f == null) {
-            this.f1426f = new t0();
+        if (this.f1470f == null) {
+            this.f1470f = new t0();
         }
-        t0 t0Var = this.f1426f;
+        t0 t0Var = this.f1470f;
         t0Var.a();
-        ColorStateList r10 = androidx.core.view.h0.r(this.f1421a);
+        ColorStateList r10 = androidx.core.view.h0.r(this.f1465a);
         if (r10 != null) {
-            t0Var.f1795d = true;
-            t0Var.f1792a = r10;
+            t0Var.f1839d = true;
+            t0Var.f1836a = r10;
         }
-        PorterDuff.Mode s10 = androidx.core.view.h0.s(this.f1421a);
+        PorterDuff.Mode s10 = androidx.core.view.h0.s(this.f1465a);
         if (s10 != null) {
-            t0Var.f1794c = true;
-            t0Var.f1793b = s10;
+            t0Var.f1838c = true;
+            t0Var.f1837b = s10;
         }
-        if (!t0Var.f1795d && !t0Var.f1794c) {
+        if (!t0Var.f1839d && !t0Var.f1838c) {
             return false;
         }
-        j.i(drawable, t0Var, this.f1421a.getDrawableState());
+        j.i(drawable, t0Var, this.f1465a.getDrawableState());
         return true;
     }
 
     private boolean k() {
-        if (this.f1424d != null) {
+        if (this.f1468d != null) {
             return true;
         }
         return false;
@@ -64,17 +64,17 @@ public class AppCompatBackgroundHelper {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b() {
-        Drawable background = this.f1421a.getBackground();
+        Drawable background = this.f1465a.getBackground();
         if (background != null) {
             if (!k() || !a(background)) {
-                t0 t0Var = this.f1425e;
+                t0 t0Var = this.f1469e;
                 if (t0Var != null) {
-                    j.i(background, t0Var, this.f1421a.getDrawableState());
+                    j.i(background, t0Var, this.f1465a.getDrawableState());
                     return;
                 }
-                t0 t0Var2 = this.f1424d;
+                t0 t0Var2 = this.f1468d;
                 if (t0Var2 != null) {
-                    j.i(background, t0Var2, this.f1421a.getDrawableState());
+                    j.i(background, t0Var2, this.f1465a.getDrawableState());
                 }
             }
         }
@@ -82,40 +82,40 @@ public class AppCompatBackgroundHelper {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ColorStateList c() {
-        t0 t0Var = this.f1425e;
+        t0 t0Var = this.f1469e;
         if (t0Var != null) {
-            return t0Var.f1792a;
+            return t0Var.f1836a;
         }
         return null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public PorterDuff.Mode d() {
-        t0 t0Var = this.f1425e;
+        t0 t0Var = this.f1469e;
         if (t0Var != null) {
-            return t0Var.f1793b;
+            return t0Var.f1837b;
         }
         return null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e(AttributeSet attributeSet, int i10) {
-        v0 v10 = v0.v(this.f1421a.getContext(), attributeSet, f.j.K3, i10, 0);
-        View view = this.f1421a;
+        v0 v10 = v0.v(this.f1465a.getContext(), attributeSet, f.j.K3, i10, 0);
+        View view = this.f1465a;
         androidx.core.view.h0.l0(view, view.getContext(), f.j.K3, attributeSet, v10.r(), i10, 0);
         try {
             if (v10.s(f.j.L3)) {
-                this.f1423c = v10.n(f.j.L3, -1);
-                ColorStateList f10 = this.f1422b.f(this.f1421a.getContext(), this.f1423c);
+                this.f1467c = v10.n(f.j.L3, -1);
+                ColorStateList f10 = this.f1466b.f(this.f1465a.getContext(), this.f1467c);
                 if (f10 != null) {
                     h(f10);
                 }
             }
             if (v10.s(f.j.M3)) {
-                androidx.core.view.h0.s0(this.f1421a, v10.c(f.j.M3));
+                androidx.core.view.h0.s0(this.f1465a, v10.c(f.j.M3));
             }
             if (v10.s(f.j.N3)) {
-                androidx.core.view.h0.t0(this.f1421a, e0.e(v10.k(f.j.N3, -1), null));
+                androidx.core.view.h0.t0(this.f1465a, e0.e(v10.k(f.j.N3, -1), null));
             }
             v10.x();
         } catch (Throwable th2) {
@@ -126,7 +126,7 @@ public class AppCompatBackgroundHelper {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(Drawable drawable) {
-        this.f1423c = -1;
+        this.f1467c = -1;
         h(null);
         b();
     }
@@ -134,10 +134,10 @@ public class AppCompatBackgroundHelper {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(int i10) {
         ColorStateList colorStateList;
-        this.f1423c = i10;
-        j jVar = this.f1422b;
+        this.f1467c = i10;
+        j jVar = this.f1466b;
         if (jVar != null) {
-            colorStateList = jVar.f(this.f1421a.getContext(), i10);
+            colorStateList = jVar.f(this.f1465a.getContext(), i10);
         } else {
             colorStateList = null;
         }
@@ -147,37 +147,37 @@ public class AppCompatBackgroundHelper {
 
     void h(ColorStateList colorStateList) {
         if (colorStateList != null) {
-            if (this.f1424d == null) {
-                this.f1424d = new t0();
+            if (this.f1468d == null) {
+                this.f1468d = new t0();
             }
-            t0 t0Var = this.f1424d;
-            t0Var.f1792a = colorStateList;
-            t0Var.f1795d = true;
+            t0 t0Var = this.f1468d;
+            t0Var.f1836a = colorStateList;
+            t0Var.f1839d = true;
         } else {
-            this.f1424d = null;
+            this.f1468d = null;
         }
         b();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void i(ColorStateList colorStateList) {
-        if (this.f1425e == null) {
-            this.f1425e = new t0();
+        if (this.f1469e == null) {
+            this.f1469e = new t0();
         }
-        t0 t0Var = this.f1425e;
-        t0Var.f1792a = colorStateList;
-        t0Var.f1795d = true;
+        t0 t0Var = this.f1469e;
+        t0Var.f1836a = colorStateList;
+        t0Var.f1839d = true;
         b();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void j(PorterDuff.Mode mode) {
-        if (this.f1425e == null) {
-            this.f1425e = new t0();
+        if (this.f1469e == null) {
+            this.f1469e = new t0();
         }
-        t0 t0Var = this.f1425e;
-        t0Var.f1793b = mode;
-        t0Var.f1794c = true;
+        t0 t0Var = this.f1469e;
+        t0Var.f1837b = mode;
+        t0Var.f1838c = true;
         b();
     }
 }

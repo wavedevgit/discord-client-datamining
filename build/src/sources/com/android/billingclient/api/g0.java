@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public abstract class g0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static f0 a(Bundle bundle, String str, String str2) {
-        BillingResult billingResult = u.f9130j;
+        BillingResult billingResult = u.f8759j;
         if (bundle == null) {
             com.google.android.gms.internal.play_billing.a0.i("BillingClient", String.format("%s got null owned items list", str2));
             return new f0(billingResult, 54);
@@ -36,7 +36,7 @@ public abstract class g0 {
                 com.google.android.gms.internal.play_billing.a0.i("BillingClient", String.format("Bundle returned from %s contains null signatures list.", str2));
                 return new f0(billingResult, 58);
             } else {
-                return new f0(u.f9132l, 1);
+                return new f0(u.f8761l, 1);
             }
         } else {
             com.google.android.gms.internal.play_billing.a0.i("BillingClient", String.format("Bundle returned from %s doesn't contain required fields.", str2));

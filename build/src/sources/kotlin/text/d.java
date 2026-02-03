@@ -8,16 +8,16 @@ import kotlin.text.e;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f36235a;
+    private static final int[] f36011a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f36236b;
+    private static final int[] f36012b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f36237c;
+    private static final int[] f36013c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final long[] f36238d;
+    private static final long[] f36014d;
 
     static {
         int[] iArr = new int[IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER];
@@ -25,12 +25,12 @@ public abstract class d {
         for (int i11 = 0; i11 < 256; i11++) {
             iArr[i11] = "0123456789abcdef".charAt(i11 & 15) | ("0123456789abcdef".charAt(i11 >> 4) << '\b');
         }
-        f36235a = iArr;
+        f36011a = iArr;
         int[] iArr2 = new int[IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER];
         for (int i12 = 0; i12 < 256; i12++) {
             iArr2[i12] = "0123456789ABCDEF".charAt(i12 & 15) | ("0123456789ABCDEF".charAt(i12 >> 4) << '\b');
         }
-        f36236b = iArr2;
+        f36012b = iArr2;
         int[] iArr3 = new int[IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER];
         for (int i13 = 0; i13 < 256; i13++) {
             iArr3[i13] = -1;
@@ -49,7 +49,7 @@ public abstract class d {
             i16++;
             i17++;
         }
-        f36237c = iArr3;
+        f36013c = iArr3;
         long[] jArr = new long[IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER];
         for (int i18 = 0; i18 < 256; i18++) {
             jArr[i18] = -1;
@@ -67,14 +67,14 @@ public abstract class d {
             i10++;
             i21++;
         }
-        f36238d = jArr;
+        f36014d = jArr;
     }
 
     private static final int a(long j10) {
         if (0 <= j10 && j10 <= 2147483647L) {
             return (int) j10;
         }
-        throw new IllegalArgumentException("The resulting string length is too big: " + ((Object) ir.b0.g(ir.b0.d(j10))));
+        throw new IllegalArgumentException("The resulting string length is too big: " + ((Object) jr.b0.g(jr.b0.d(j10))));
     }
 
     private static final void b(String str, int i10, int i11, int i12) {
@@ -156,7 +156,7 @@ public abstract class d {
     }
 
     public static final int[] i() {
-        return f36235a;
+        return f36011a;
     }
 
     public static final long j(String str, int i10, int i11, e format) {
@@ -173,13 +173,13 @@ public abstract class d {
             i11 = str.length();
         }
         if ((i12 & 4) != 0) {
-            eVar = e.f36239d.a();
+            eVar = e.f36015d.a();
         }
         return j(str, i10, i11, eVar);
     }
 
     private static final long l(String str, int i10, int i11, e eVar, int i12) {
-        kotlin.collections.d.f33332d.a(i10, i11, str.length());
+        kotlin.collections.d.f33108d.a(i10, i11, str.length());
         e.c c10 = eVar.c();
         if (c10.f()) {
             b(str, i10, i11, i12);
@@ -197,14 +197,14 @@ public abstract class d {
             long j11 = j10 << 4;
             char charAt = str.charAt(i10);
             if ((charAt >>> '\b') == 0) {
-                long j12 = f36238d[charAt];
+                long j12 = f36014d[charAt];
                 if (j12 >= 0) {
                     j10 = j11 | j12;
                     i10++;
                 }
             }
             n(str, i10);
-            throw new ir.h();
+            throw new jr.h();
         }
         return j10;
     }
@@ -253,14 +253,14 @@ public abstract class d {
         int[] iArr;
         Intrinsics.checkNotNullParameter(bArr, "<this>");
         Intrinsics.checkNotNullParameter(format, "format");
-        kotlin.collections.d.f33332d.a(i10, i11, bArr.length);
+        kotlin.collections.d.f33108d.a(i10, i11, bArr.length);
         if (i10 == i11) {
             return "";
         }
         if (format.d()) {
-            iArr = f36236b;
+            iArr = f36012b;
         } else {
-            iArr = f36235a;
+            iArr = f36011a;
         }
         e.a b10 = format.b();
         if (b10.i()) {
@@ -277,7 +277,7 @@ public abstract class d {
 
     public static /* synthetic */ String u(byte[] bArr, e eVar, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            eVar = e.f36239d.a();
+            eVar = e.f36015d.a();
         }
         return t(bArr, eVar);
     }

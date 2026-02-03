@@ -1,140 +1,265 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun24336: for (var _fun24336_ip = 0;;) switch (_fun24336_ip) {
+    _fun24007: for (var _fun24007_ip = 0;;) switch (_fun24007_ip) {
         case 0:
-            var3 = require;
-            var2 = function arg0() {
-                var3 = arg0;
-                var2 = var3.defineLocale;
-                var1 = {};
-                var4 = 'januar_februar_marts_april_maj_juni_juli_august_september_oktober_november_december';
-                var0 = var4.split;
-                var5 = '_';
-                var0 = var0.bind(var4)(var5);
-                var1.months = var0;
-                var4 = 'jan_feb_mar_apr_maj_jun_jul_aug_sep_okt_nov_dec';
-                var0 = var4.split;
-                var0 = var0.bind(var4)(var5);
-                var1.monthsShort = var0;
-                var4 = 'søndag_mandag_tirsdag_onsdag_torsdag_fredag_lørdag';
-                var0 = var4.split;
-                var0 = var0.bind(var4)(var5);
-                var1.weekdays = var0;
-                var4 = 'søn_man_tir_ons_tor_fre_lør';
-                var0 = var4.split;
-                var0 = var0.bind(var4)(var5);
-                var1.weekdaysShort = var0;
-                var4 = 'sø_ma_ti_on_to_fr_lø';
-                var0 = var4.split;
-                var0 = var0.bind(var4)(var5);
-                var1.weekdaysMin = var0;
-                var0 = {
-                    'LT': 'HH:mm',
-                    'LTS': 'HH:mm:ss',
-                    'L': 'DD.MM.YYYY',
-                    'LL': 'D. MMMM YYYY',
-                    'LLL': 'D. MMMM YYYY HH:mm',
-                    'LLLL': 'dddd [d.] D. MMMM YYYY [kl.] HH:mm'
-                };
-                var1.longDateFormat = var0;
-                var0 = {
-                    'sameDay': '[i dag kl.] LT',
-                    'nextDay': '[i morgen kl.] LT',
-                    'nextWeek': 'på dddd [kl.] LT',
-                    'lastDay': '[i går kl.] LT',
-                    'lastWeek': '[i] dddd[s kl.] LT',
-                    'sameElse': 'L'
-                };
-                var1.calendar = var0;
-                var0 = {
-                    'future': 'om %s',
-                    'past': '%s siden',
-                    's': 'få sekunder',
-                    'ss': '%d sekunder',
-                    'm': 'et minut',
-                    'mm': '%d minutter',
-                    'h': 'en time',
-                    'hh': '%d timer',
-                    'd': 'en dag',
-                    'dd': '%d dage',
-                    'M': 'en måned',
-                    'MM': '%d måneder',
-                    'y': 'et år',
-                    'yy': '%d år'
-                };
-                var1.relativeTime = var0;
-                var0 = /\d{1,2}\./;
-                var1.dayOfMonthOrdinalParse = var0;
-                var0 = '%d.';
-                var1.ordinal = var0;
-                var0 = {
-                    'dow': 1,
-                    'doy': 4
-                };
-                var1.week = var0;
-                var0 = 'da';
-                var0 = var2.bind(var3)(var0, var1);
+            var1 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var2 = {};
+            var0 = true;
+            var2.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var1, var0, var2);
+            var0 = undefined;
+            var1.default = var0;
+            var3 = dependencyMap;
+            var2 = 0;
+            var3 = var3[var2];
+            var2 = require;
+            var4 = var2.bind(var0)(var3);
+            if (!var4) {
+                _fun24007_ip = 77;
+                continue _fun24007
+            }
+        case 65:
+            var2 = var4.__esModule;
+            var3 = var4;
+            if (var2) {
+                _fun24007_ip = 86;
+                continue _fun24007
+            }
+        case 77:
+            var2 = {};
+            var2.default = var4;
+            var3 = var2;
+        case 86:
+            var2 = {};
+            var4 = function arg0, arg1() {
+                _fun24008: for (var _fun24008_ip = 0;;) switch (_fun24008_ip) {
+                    case 0:
+                        var4 = arg1;
+                        var0 = global;
+                        var3 = var0.String;
+                        var1 = null;
+                        var5 = var1 == var4;
+                        var2 = undefined;
+                        var1 = undefined;
+                        if (var5) {
+                            _fun24008_ip = 30;
+                            continue _fun24008
+                        }
+                    case 24:
+                        var1 = var4.unit;
+                    case 30:
+                        var3 = var3.bind(var2)(var1);
+                        var1 = var0.Number;
+                        var0 = arg0;
+                        var1 = var1.bind(var2)(var0);
+                        var0 = 'date';
+                        if (!(var0 !== var3)) {
+                            _fun24008_ip = 95;
+                            continue _fun24008
+                        }
+                    case 57:
+                        var0 = 'minute';
+                        if (!(var0 !== var3)) {
+                            _fun24008_ip = 87;
+                            continue _fun24008
+                        }
+                    case 65:
+                        var0 = 'second';
+                        if (!(var0 !== var3)) {
+                            _fun24008_ip = 87;
+                            continue _fun24008
+                        }
+                    case 73:
+                        var0 = '-й';
+                        var2 = 'hour';
+                        if (!(var2 === var3)) {
+                            _fun24008_ip = 93;
+                            continue _fun24008
+                        }
+                    case 87:
+                        var0 = '-а';
+                    case 93:
+                        _fun24008_ip = 124;
+                        continue _fun24008;
+                    case 95:
+                        var2 = 3;
+                        if (!(var2 !== var1)) {
+                            _fun24008_ip = 115;
+                            continue _fun24008
+                        }
+                    case 102:
+                        var2 = '-е';
+                        var3 = 23;
+                        if (!(var3 === var1)) {
+                            _fun24008_ip = 121;
+                            continue _fun24008
+                        }
+                    case 115:
+                        var2 = '-є';
+                    case 121:
+                        var0 = var2;
+                    case 124:
+                        var0 = var1 + var0;
+                        return var0;
+                }
+            };
+            var2.ordinalNumber = var4;
+            var6 = var3.default;
+            var4 = {};
+            var5 = {};
+            var8 = ['до н.е.', 'н.е.'];
+            var5.narrow = var8;
+            var8 = ['до н. е.', 'н. е.'];
+            var5.abbreviated = var8;
+            var8 = ['до нашої ери', 'нашої ери'];
+            var5.wide = var8;
+            var4.values = var5;
+            var5 = 'wide';
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.era = var4;
+            var6 = var3.default;
+            var4 = {};
+            var8 = {};
+            var9 = ['1', '2', '3', '4'];
+            var8.narrow = var9;
+            var9 = ['1-й кв.', '2-й кв.', '3-й кв.', '4-й кв.'];
+            var8.abbreviated = var9;
+            var9 = ['1-й квартал', '2-й квартал', '3-й квартал', '4-й квартал'];
+            var8.wide = var9;
+            var4.values = var8;
+            var4.defaultWidth = var5;
+            var7 = function arg0() {
+                var1 = arg0;
+                var0 = 1;
+                var0 = var1 - var0;
                 return var0;
             };
-            var1 = 'object';
-            var0 = arg5;
-            var0 = typeof var0;
-            if (!(var1 === var0)) {
-                _fun24336_ip = 44;
-                continue _fun24336
-            }
-        case 24:
-            var1 = undefined;
-            var0 = arg4;
-            if (!(var1 !== var0)) {
-                _fun24336_ip = 44;
-                continue _fun24336
-            }
-        case 33:
-            var4 = 'function';
-            var0 = typeof var3;
-            if (!(var4 !== var0)) {
-                _fun24336_ip = 121;
-                continue _fun24336
-            }
-        case 44:
-            var0 = global;
-            var4 = var0.define;
-            var5 = 'function';
-            var4 = typeof var4;
-            if (!(var5 === var4)) {
-                _fun24336_ip = 78;
-                continue _fun24336
-            }
-        case 63:
-            var4 = var0.define;
-            var4 = var4.amd;
-            if (var4) {
-                _fun24336_ip = 95;
-                continue _fun24336
-            }
-        case 78:
-            var4 = this;
-            var5 = var4.moment;
-            var4 = undefined;
-            var4 = var2.bind(var4)(var5);
-            _fun24336_ip = 140;
-            continue _fun24336;
-        case 95:
-            var5 = var0.define;
-            var4 = undefined;
-            var0 = ['../moment'];
-            var0 = var5.bind(var4)(var0, var2);
-            _fun24336_ip = 140;
-            continue _fun24336;
-        case 121:
-            var4 = arg6;
-            var0 = 0;
-            var0 = var4[var0];
-            var0 = var3.bind(var1)(var0);
-            var0 = var2.bind(var1)(var0);
-        case 140:
-            var0 = undefined;
+            var4.argumentCallback = var7;
+            var4 = var6.bind(var0)(var4);
+            var2.quarter = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['С', 'Л', 'Б', 'К', 'Т', 'Ч', 'Л', 'С', 'В', 'Ж', 'Л', 'Г'];
+            var7.narrow = var8;
+            var8 = ['січ.', 'лют.', 'берез.', 'квіт.', 'трав.', 'черв.', 'лип.', 'серп.', 'верес.', 'жовт.', 'листоп.', 'груд.'];
+            var7.abbreviated = var8;
+            var8 = ['січень', 'лютий', 'березень', 'квітень', 'травень', 'червень', 'липень', 'серпень', 'вересень', 'жовтень', 'листопад', 'грудень'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var7 = {};
+            var8 = ['С', 'Л', 'Б', 'К', 'Т', 'Ч', 'Л', 'С', 'В', 'Ж', 'Л', 'Г'];
+            var7.narrow = var8;
+            var8 = ['січ.', 'лют.', 'берез.', 'квіт.', 'трав.', 'черв.', 'лип.', 'серп.', 'верес.', 'жовт.', 'листоп.', 'груд.'];
+            var7.abbreviated = var8;
+            var8 = ['січня', 'лютого', 'березня', 'квітня', 'травня', 'червня', 'липня', 'серпня', 'вересня', 'жовтня', 'листопада', 'грудня'];
+            var7.wide = var8;
+            var4.formattingValues = var7;
+            var4.defaultFormattingWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.month = var4;
+            var6 = var3.default;
+            var4 = {};
+            var7 = {};
+            var8 = ['Н', 'П', 'В', 'С', 'Ч', 'П', 'С'];
+            var7.narrow = var8;
+            var8 = ['нд', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+            var7.short = var8;
+            var8 = ['нед', 'пон', 'вів', 'сер', 'чтв', 'птн', 'суб'];
+            var7.abbreviated = var8;
+            var8 = ['неділя', 'понеділок', 'вівторок', 'середа', 'четвер', 'п’ятниця', 'субота'];
+            var7.wide = var8;
+            var4.values = var7;
+            var4.defaultWidth = var5;
+            var4 = var6.bind(var0)(var4);
+            var2.day = var4;
+            var4 = var3.default;
+            var3 = {};
+            var6 = {};
+            var7 = {
+                'am': 'ДП',
+                'pm': 'ПП',
+                'midnight': 'півн.',
+                'noon': 'пол.',
+                'morning': 'ранок',
+                'afternoon': 'день',
+                'evening': 'веч.',
+                'night': 'ніч'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'ДП',
+                'pm': 'ПП',
+                'midnight': 'півн.',
+                'noon': 'пол.',
+                'morning': 'ранок',
+                'afternoon': 'день',
+                'evening': 'веч.',
+                'night': 'ніч'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'ДП',
+                'pm': 'ПП',
+                'midnight': 'північ',
+                'noon': 'полудень',
+                'morning': 'ранок',
+                'afternoon': 'день',
+                'evening': 'вечір',
+                'night': 'ніч'
+            };
+            var6.wide = var7;
+            var3.values = var6;
+            var6 = 'any';
+            var3.defaultWidth = var6;
+            var6 = {};
+            var7 = {
+                'am': 'ДП',
+                'pm': 'ПП',
+                'midnight': 'півн.',
+                'noon': 'пол.',
+                'morning': 'ранку',
+                'afternoon': 'дня',
+                'evening': 'веч.',
+                'night': 'ночі'
+            };
+            var6.narrow = var7;
+            var7 = {
+                'am': 'ДП',
+                'pm': 'ПП',
+                'midnight': 'півн.',
+                'noon': 'пол.',
+                'morning': 'ранку',
+                'afternoon': 'дня',
+                'evening': 'веч.',
+                'night': 'ночі'
+            };
+            var6.abbreviated = var7;
+            var7 = {
+                'am': 'ДП',
+                'pm': 'ПП',
+                'midnight': 'північ',
+                'noon': 'полудень',
+                'morning': 'ранку',
+                'afternoon': 'дня',
+                'evening': 'веч.',
+                'night': 'ночі'
+            };
+            var6.wide = var7;
+            var3.formattingValues = var6;
+            var3.defaultFormattingWidth = var5;
+            var3 = var4.bind(var0)(var3);
+            var2.dayPeriod = var3;
+            var1.default = var2;
+            var2 = var1.default;
+            var1 = arg4;
+            var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3006]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1684]);

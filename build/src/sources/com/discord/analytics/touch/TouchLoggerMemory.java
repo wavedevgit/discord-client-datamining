@@ -18,7 +18,7 @@ import kotlin.jvm.internal.StringCompanionObject;
 import kotlin.text.Charsets;
 import kotlin.text.StringsKt;
 import org.jetbrains.annotations.NotNull;
-import tr.r;
+import ur.r;
 @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\bÀ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007J\u000e\u0010\b\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\u0005J\u0010\u0010\n\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0002J\u0018\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u000eH\u0002¨\u0006\u000f"}, d2 = {"Lcom/discord/analytics/touch/TouchLoggerMemory;", "", "<init>", "()V", "getMemoryStats", "Lcom/discord/analytics/touch/MemoryStats;", "tag", "", "formatMemoryStats", "stats", "collectMemoryStatsFast", "getVmRssFromProc", "", "pid", "", "analytics_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nTouchLoggerMemory.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TouchLoggerMemory.kt\ncom/discord/analytics/touch/TouchLoggerMemory\n+ 2 FileReadWrite.kt\nkotlin/io/FilesKt__FileReadWriteKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,125:1\n284#2,5:126\n1#3:131\n*S KotlinDebug\n*F\n+ 1 TouchLoggerMemory.kt\ncom/discord/analytics/touch/TouchLoggerMemory\n*L\n103#1:126,5\n103#1:131\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -65,12 +65,12 @@ public final class TouchLoggerMemory {
                     } else {
                         j10 = 0;
                     }
-                    tr.c.a(bufferedReader, null);
+                    ur.c.a(bufferedReader, null);
                     return j10;
                 }
             }
-            Unit unit = Unit.f33298a;
-            tr.c.a(bufferedReader, null);
+            Unit unit = Unit.f33074a;
+            ur.c.a(bufferedReader, null);
             return 0L;
         } catch (Exception e10) {
             Log.INSTANCE.e(str, "Error reading VmRSS", e10);

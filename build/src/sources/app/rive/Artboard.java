@@ -47,14 +47,14 @@ public final class Artboard implements AutoCloseable {
 
         @NotNull
         public final Artboard fromFile(@NotNull final RiveFile file, final String str) {
-            long m111createDefaultArtboard6NrLy0M;
+            long m113createDefaultArtboard6NrLy0M;
             Intrinsics.checkNotNullParameter(file, "file");
             if (str != null) {
-                m111createDefaultArtboard6NrLy0M = file.getCommandQueue$kotlin_release().m110createArtboardByName2ZIOzHc(file.m31getFileHandleENT3xMk$kotlin_release(), str);
+                m113createDefaultArtboard6NrLy0M = file.getCommandQueue$kotlin_release().m112createArtboardByName2ZIOzHc(file.m33getFileHandleENT3xMk$kotlin_release(), str);
             } else {
-                m111createDefaultArtboard6NrLy0M = file.getCommandQueue$kotlin_release().m111createDefaultArtboard6NrLy0M(file.m31getFileHandleENT3xMk$kotlin_release());
+                m113createDefaultArtboard6NrLy0M = file.getCommandQueue$kotlin_release().m113createDefaultArtboard6NrLy0M(file.m33getFileHandleENT3xMk$kotlin_release());
             }
-            final long j10 = m111createDefaultArtboard6NrLy0M;
+            final long j10 = m113createDefaultArtboard6NrLy0M;
             RiveLog.INSTANCE.getLogger().d("Rive/Artboard", new Function0<String>() { // from class: app.rive.Artboard$Companion$fromFile$1
                 /* JADX INFO: Access modifiers changed from: package-private */
                 /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -65,13 +65,13 @@ public final class Artboard implements AutoCloseable {
                 @Override // kotlin.jvm.functions.Function0
                 @NotNull
                 public final String invoke() {
-                    String m97toStringimpl = ArtboardHandle.m97toStringimpl(j10);
+                    String m99toStringimpl = ArtboardHandle.m99toStringimpl(j10);
                     String str2 = str;
-                    String m170toStringimpl = FileHandle.m170toStringimpl(file.m31getFileHandleENT3xMk$kotlin_release());
-                    return "Created " + m97toStringimpl + " with name: " + str2 + " (" + m170toStringimpl + ")";
+                    String m172toStringimpl = FileHandle.m172toStringimpl(file.m33getFileHandleENT3xMk$kotlin_release());
+                    return "Created " + m99toStringimpl + " with name: " + str2 + " (" + m172toStringimpl + ")";
                 }
             });
-            return new Artboard(j10, file.getCommandQueue$kotlin_release(), file.m31getFileHandleENT3xMk$kotlin_release(), str, null);
+            return new Artboard(j10, file.getCommandQueue$kotlin_release(), file.m33getFileHandleENT3xMk$kotlin_release(), str, null);
         }
 
         private Companion() {
@@ -88,7 +88,7 @@ public final class Artboard implements AutoCloseable {
     }
 
     /* renamed from: getArtboardHandle-nSTdbJo$kotlin_release  reason: not valid java name */
-    public final long m15getArtboardHandlenSTdbJo$kotlin_release() {
+    public final long m17getArtboardHandlenSTdbJo$kotlin_release() {
         return this.artboardHandle;
     }
 
@@ -114,12 +114,12 @@ public final class Artboard implements AutoCloseable {
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m16invoke();
-                return Unit.f33298a;
+                m18invoke();
+                return Unit.f33074a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m16invoke() {
+            public final void m18invoke() {
                 final long j12 = j10;
                 final String str2 = str;
                 final long j13 = j11;
@@ -132,13 +132,13 @@ public final class Artboard implements AutoCloseable {
                     @Override // kotlin.jvm.functions.Function0
                     @NotNull
                     public final String invoke() {
-                        String m97toStringimpl = ArtboardHandle.m97toStringimpl(j12);
+                        String m99toStringimpl = ArtboardHandle.m99toStringimpl(j12);
                         String str3 = str2;
-                        String m170toStringimpl = FileHandle.m170toStringimpl(j13);
-                        return "Deleting " + m97toStringimpl + " with name: " + str3 + " (" + m170toStringimpl + ")";
+                        String m172toStringimpl = FileHandle.m172toStringimpl(j13);
+                        return "Deleting " + m99toStringimpl + " with name: " + str3 + " (" + m172toStringimpl + ")";
                     }
                 });
-                CommandQueue.this.m118deleteArtboarduiJWFY8(j10);
+                CommandQueue.this.m120deleteArtboarduiJWFY8(j10);
             }
         });
         this.stateMachineNamesCache = new SuspendLazy<>(new Artboard$stateMachineNamesCache$1(this, null));

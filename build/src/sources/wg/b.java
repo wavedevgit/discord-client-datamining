@@ -3,13 +3,13 @@ package wg;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final s f52600a = new s();
+    private final s f52167a = new s();
 
     public void a() {
-        this.f52600a.c();
+        this.f52167a.c();
     }
 
     public a b() {
-        return this.f52600a;
+        return this.f52167a;
     }
 }

@@ -18,13 +18,13 @@ public interface k extends IInterface {
 
         /* renamed from: r3.k$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-        private static class C0583a implements k {
+        private static class C0594a implements k {
 
             /* renamed from: c  reason: collision with root package name */
-            private IBinder f47912c;
+            private IBinder f48114c;
 
-            C0583a(IBinder iBinder) {
-                this.f47912c = iBinder;
+            C0594a(IBinder iBinder) {
+                this.f48114c = iBinder;
             }
 
             @Override // r3.k
@@ -34,7 +34,7 @@ public interface k extends IInterface {
                     obtain.writeInterfaceToken("androidx.room.IMultiInstanceInvalidationService");
                     obtain.writeInt(i10);
                     obtain.writeStringArray(strArr);
-                    this.f47912c.transact(3, obtain, null, 1);
+                    this.f48114c.transact(3, obtain, null, 1);
                 } finally {
                     obtain.recycle();
                 }
@@ -42,7 +42,7 @@ public interface k extends IInterface {
 
             @Override // android.os.IInterface
             public IBinder asBinder() {
-                return this.f47912c;
+                return this.f48114c;
             }
 
             @Override // r3.k
@@ -53,7 +53,7 @@ public interface k extends IInterface {
                     obtain.writeInterfaceToken("androidx.room.IMultiInstanceInvalidationService");
                     obtain.writeStrongInterface(jVar);
                     obtain.writeString(str);
-                    this.f47912c.transact(1, obtain, obtain2, 0);
+                    this.f48114c.transact(1, obtain, obtain2, 0);
                     obtain2.readException();
                     return obtain2.readInt();
                 } finally {
@@ -75,7 +75,7 @@ public interface k extends IInterface {
             if (queryLocalInterface != null && (queryLocalInterface instanceof k)) {
                 return (k) queryLocalInterface;
             }
-            return new C0583a(iBinder);
+            return new C0594a(iBinder);
         }
 
         @Override // android.os.Binder

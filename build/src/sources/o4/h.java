@@ -11,30 +11,30 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r4.b f42406a;
+    private final r4.b f42534a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f42407b;
+    private final Context f42535b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f42408c;
+    private final Object f42536c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final LinkedHashSet f42409d;
+    private final LinkedHashSet f42537d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f42410e;
+    private Object f42538e;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public h(Context context, r4.b taskExecutor) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(taskExecutor, "taskExecutor");
-        this.f42406a = taskExecutor;
+        this.f42534a = taskExecutor;
         Context applicationContext = context.getApplicationContext();
         Intrinsics.checkNotNullExpressionValue(applicationContext, "context.applicationContext");
-        this.f42407b = applicationContext;
-        this.f42408c = new Object();
-        this.f42409d = new LinkedHashSet();
+        this.f42535b = applicationContext;
+        this.f42536c = new Object();
+        this.f42537d = new LinkedHashSet();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -43,26 +43,26 @@ public abstract class h {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Iterator it = listenersList.iterator();
         while (it.hasNext()) {
-            ((m4.a) it.next()).a(this$0.f42410e);
+            ((m4.a) it.next()).a(this$0.f42538e);
         }
     }
 
     public final void c(m4.a listener) {
         String str;
         Intrinsics.checkNotNullParameter(listener, "listener");
-        synchronized (this.f42408c) {
+        synchronized (this.f42536c) {
             try {
-                if (this.f42409d.add(listener)) {
-                    if (this.f42409d.size() == 1) {
-                        this.f42410e = e();
+                if (this.f42537d.add(listener)) {
+                    if (this.f42537d.size() == 1) {
+                        this.f42538e = e();
                         k4.m e10 = k4.m.e();
-                        str = i.f42411a;
-                        e10.a(str, getClass().getSimpleName() + ": initial state = " + this.f42410e);
+                        str = i.f42539a;
+                        e10.a(str, getClass().getSimpleName() + ": initial state = " + this.f42538e);
                         h();
                     }
-                    listener.a(this.f42410e);
+                    listener.a(this.f42538e);
                 }
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -71,19 +71,19 @@ public abstract class h {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Context d() {
-        return this.f42407b;
+        return this.f42535b;
     }
 
     public abstract Object e();
 
     public final void f(m4.a listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
-        synchronized (this.f42408c) {
+        synchronized (this.f42536c) {
             try {
-                if (this.f42409d.remove(listener) && this.f42409d.isEmpty()) {
+                if (this.f42537d.remove(listener) && this.f42537d.isEmpty()) {
                     i();
                 }
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -91,20 +91,20 @@ public abstract class h {
     }
 
     public final void g(Object obj) {
-        synchronized (this.f42408c) {
-            Object obj2 = this.f42410e;
+        synchronized (this.f42536c) {
+            Object obj2 = this.f42538e;
             if (obj2 != null && Intrinsics.areEqual(obj2, obj)) {
                 return;
             }
-            this.f42410e = obj;
-            final List h12 = CollectionsKt.h1(this.f42409d);
-            this.f42406a.a().execute(new Runnable() { // from class: o4.g
+            this.f42538e = obj;
+            final List h12 = CollectionsKt.h1(this.f42537d);
+            this.f42534a.a().execute(new Runnable() { // from class: o4.g
                 @Override // java.lang.Runnable
                 public final void run() {
                     h.b(h12, this);
                 }
             });
-            Unit unit = Unit.f33298a;
+            Unit unit = Unit.f33074a;
         }
     }
 

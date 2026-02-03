@@ -6,7 +6,7 @@ import android.widget.Filter;
 class b extends Filter {
 
     /* renamed from: a  reason: collision with root package name */
-    a f48708a;
+    a f48762a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     interface a {
@@ -21,17 +21,17 @@ class b extends Filter {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(a aVar) {
-        this.f48708a = aVar;
+        this.f48762a = aVar;
     }
 
     @Override // android.widget.Filter
     public CharSequence convertResultToString(Object obj) {
-        return this.f48708a.convertToString((Cursor) obj);
+        return this.f48762a.convertToString((Cursor) obj);
     }
 
     @Override // android.widget.Filter
     protected Filter.FilterResults performFiltering(CharSequence charSequence) {
-        Cursor b10 = this.f48708a.b(charSequence);
+        Cursor b10 = this.f48762a.b(charSequence);
         Filter.FilterResults filterResults = new Filter.FilterResults();
         if (b10 != null) {
             filterResults.count = b10.getCount();
@@ -45,10 +45,10 @@ class b extends Filter {
 
     @Override // android.widget.Filter
     protected void publishResults(CharSequence charSequence, Filter.FilterResults filterResults) {
-        Cursor c10 = this.f48708a.c();
+        Cursor c10 = this.f48762a.c();
         Object obj = filterResults.values;
         if (obj != null && obj != c10) {
-            this.f48708a.a((Cursor) obj);
+            this.f48762a.a((Cursor) obj);
         }
     }
 }

@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.descriptors.ValueClassRepresentation;
 public class e implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedClassDescriptor f35739d;
+    private final DeserializedClassDescriptor f35515d;
 
     public e(DeserializedClassDescriptor deserializedClassDescriptor) {
-        this.f35739d = deserializedClassDescriptor;
+        this.f35515d = deserializedClassDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         ValueClassRepresentation u10;
-        u10 = DeserializedClassDescriptor.u(this.f35739d);
+        u10 = DeserializedClassDescriptor.u(this.f35515d);
         return u10;
     }
 }

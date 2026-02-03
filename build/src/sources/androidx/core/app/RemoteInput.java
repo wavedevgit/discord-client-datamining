@@ -10,25 +10,25 @@ import java.util.Set;
 public final class RemoteInput {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f3050a;
+    private final String f3094a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CharSequence f3051b;
+    private final CharSequence f3095b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final CharSequence[] f3052c;
+    private final CharSequence[] f3096c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f3053d;
+    private final boolean f3097d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f3054e;
+    private final int f3098e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Bundle f3055f;
+    private final Bundle f3099f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Set f3056g;
+    private final Set f3100g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -95,29 +95,29 @@ public final class RemoteInput {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f3057a;
+        private final String f3101a;
 
         /* renamed from: d  reason: collision with root package name */
-        private CharSequence f3060d;
+        private CharSequence f3104d;
 
         /* renamed from: e  reason: collision with root package name */
-        private CharSequence[] f3061e;
+        private CharSequence[] f3105e;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Set f3058b = new HashSet();
+        private final Set f3102b = new HashSet();
 
         /* renamed from: c  reason: collision with root package name */
-        private final Bundle f3059c = new Bundle();
+        private final Bundle f3103c = new Bundle();
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f3062f = true;
+        private boolean f3106f = true;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f3063g = 0;
+        private int f3107g = 0;
 
         public d(String str) {
             if (str != null) {
-                this.f3057a = str;
+                this.f3101a = str;
                 return;
             }
             throw new IllegalArgumentException("Result key can't be null");
@@ -125,54 +125,54 @@ public final class RemoteInput {
 
         public d a(Bundle bundle) {
             if (bundle != null) {
-                this.f3059c.putAll(bundle);
+                this.f3103c.putAll(bundle);
             }
             return this;
         }
 
         public RemoteInput b() {
-            return new RemoteInput(this.f3057a, this.f3060d, this.f3061e, this.f3062f, this.f3063g, this.f3059c, this.f3058b);
+            return new RemoteInput(this.f3101a, this.f3104d, this.f3105e, this.f3106f, this.f3107g, this.f3103c, this.f3102b);
         }
 
         public d c(String str, boolean z10) {
             if (z10) {
-                this.f3058b.add(str);
+                this.f3102b.add(str);
                 return this;
             }
-            this.f3058b.remove(str);
+            this.f3102b.remove(str);
             return this;
         }
 
         public d d(boolean z10) {
-            this.f3062f = z10;
+            this.f3106f = z10;
             return this;
         }
 
         public d e(CharSequence[] charSequenceArr) {
-            this.f3061e = charSequenceArr;
+            this.f3105e = charSequenceArr;
             return this;
         }
 
         public d f(int i10) {
-            this.f3063g = i10;
+            this.f3107g = i10;
             return this;
         }
 
         public d g(CharSequence charSequence) {
-            this.f3060d = charSequence;
+            this.f3104d = charSequence;
             return this;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public RemoteInput(String str, CharSequence charSequence, CharSequence[] charSequenceArr, boolean z10, int i10, Bundle bundle, Set set) {
-        this.f3050a = str;
-        this.f3051b = charSequence;
-        this.f3052c = charSequenceArr;
-        this.f3053d = z10;
-        this.f3054e = i10;
-        this.f3055f = bundle;
-        this.f3056g = set;
+        this.f3094a = str;
+        this.f3095b = charSequence;
+        this.f3096c = charSequenceArr;
+        this.f3097d = z10;
+        this.f3098e = i10;
+        this.f3099f = bundle;
+        this.f3100g = set;
         if (g() == 2 && !d()) {
             throw new IllegalArgumentException("setEditChoicesBeforeSending requires setAllowFreeFormInput");
         }
@@ -204,31 +204,31 @@ public final class RemoteInput {
     }
 
     public boolean d() {
-        return this.f3053d;
+        return this.f3097d;
     }
 
     public Set e() {
-        return this.f3056g;
+        return this.f3100g;
     }
 
     public CharSequence[] f() {
-        return this.f3052c;
+        return this.f3096c;
     }
 
     public int g() {
-        return this.f3054e;
+        return this.f3098e;
     }
 
     public Bundle h() {
-        return this.f3055f;
+        return this.f3099f;
     }
 
     public CharSequence i() {
-        return this.f3051b;
+        return this.f3095b;
     }
 
     public String j() {
-        return this.f3050a;
+        return this.f3094a;
     }
 
     public boolean l() {

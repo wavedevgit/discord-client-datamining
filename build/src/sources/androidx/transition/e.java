@@ -14,18 +14,18 @@ public class e extends n0 {
     public static class a extends AnimatorListenerAdapter implements Transition.h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final View f5229a;
+        private final View f5273a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f5230b = false;
+        private boolean f5274b = false;
 
         a(View view) {
-            this.f5229a = view;
+            this.f5273a = view;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationCancel(Animator animator) {
-            h0.e(this.f5229a, 1.0f);
+            h0.e(this.f5273a, 1.0f);
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
@@ -35,9 +35,9 @@ public class e extends n0 {
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            if (this.f5229a.hasOverlappingRendering() && this.f5229a.getLayerType() == 0) {
-                this.f5230b = true;
-                this.f5229a.setLayerType(2, null);
+            if (this.f5273a.hasOverlappingRendering() && this.f5273a.getLayerType() == 0) {
+                this.f5274b = true;
+                this.f5273a.setLayerType(2, null);
             }
         }
 
@@ -52,17 +52,17 @@ public class e extends n0 {
         @Override // androidx.transition.Transition.h
         public void onTransitionPause(Transition transition) {
             float f10;
-            if (this.f5229a.getVisibility() == 0) {
-                f10 = h0.b(this.f5229a);
+            if (this.f5273a.getVisibility() == 0) {
+                f10 = h0.b(this.f5273a);
             } else {
                 f10 = 0.0f;
             }
-            this.f5229a.setTag(l.f5277e, Float.valueOf(f10));
+            this.f5273a.setTag(l.f5321e, Float.valueOf(f10));
         }
 
         @Override // androidx.transition.Transition.h
         public void onTransitionResume(Transition transition) {
-            this.f5229a.setTag(l.f5277e, null);
+            this.f5273a.setTag(l.f5321e, null);
         }
 
         @Override // androidx.transition.Transition.h
@@ -71,14 +71,14 @@ public class e extends n0 {
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator, boolean z10) {
-            if (this.f5230b) {
-                this.f5229a.setLayerType(0, null);
+            if (this.f5274b) {
+                this.f5273a.setLayerType(0, null);
             }
             if (z10) {
                 return;
             }
-            h0.e(this.f5229a, 1.0f);
-            h0.a(this.f5229a);
+            h0.e(this.f5273a, 1.0f);
+            h0.a(this.f5273a);
         }
 
         @Override // androidx.transition.Transition.h
@@ -87,7 +87,7 @@ public class e extends n0 {
     }
 
     public e(int i10) {
-        z0(i10);
+        A0(i10);
     }
 
     private Animator B0(View view, float f10, float f11) {
@@ -95,16 +95,16 @@ public class e extends n0 {
             return null;
         }
         h0.e(view, f10);
-        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(view, h0.f5264b, f11);
+        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(view, h0.f5308b, f11);
         a aVar = new a(view);
         ofFloat.addListener(aVar);
         E().c(aVar);
         return ofFloat;
     }
 
-    private static float D0(c0 c0Var, float f10) {
+    private static float C0(c0 c0Var, float f10) {
         Float f11;
-        if (c0Var != null && (f11 = (Float) c0Var.f5214a.get("android:fade:transitionAlpha")) != null) {
+        if (c0Var != null && (f11 = (Float) c0Var.f5258a.get("android:fade:transitionAlpha")) != null) {
             return f11.floatValue();
         }
         return f10;
@@ -118,29 +118,29 @@ public class e extends n0 {
     @Override // androidx.transition.n0, androidx.transition.Transition
     public void l(c0 c0Var) {
         super.l(c0Var);
-        Float f10 = (Float) c0Var.f5215b.getTag(l.f5277e);
+        Float f10 = (Float) c0Var.f5259b.getTag(l.f5321e);
         if (f10 == null) {
-            if (c0Var.f5215b.getVisibility() == 0) {
-                f10 = Float.valueOf(h0.b(c0Var.f5215b));
+            if (c0Var.f5259b.getVisibility() == 0) {
+                f10 = Float.valueOf(h0.b(c0Var.f5259b));
             } else {
                 f10 = Float.valueOf(0.0f);
             }
         }
-        c0Var.f5214a.put("android:fade:transitionAlpha", f10);
+        c0Var.f5258a.put("android:fade:transitionAlpha", f10);
     }
 
     @Override // androidx.transition.n0
-    public Animator v0(ViewGroup viewGroup, View view, c0 c0Var, c0 c0Var2) {
+    public Animator w0(ViewGroup viewGroup, View view, c0 c0Var, c0 c0Var2) {
         h0.c(view);
-        return B0(view, D0(c0Var, 0.0f), 1.0f);
+        return B0(view, C0(c0Var, 0.0f), 1.0f);
     }
 
     @Override // androidx.transition.n0
-    public Animator x0(ViewGroup viewGroup, View view, c0 c0Var, c0 c0Var2) {
+    public Animator y0(ViewGroup viewGroup, View view, c0 c0Var, c0 c0Var2) {
         h0.c(view);
-        Animator B0 = B0(view, D0(c0Var, 1.0f), 0.0f);
+        Animator B0 = B0(view, C0(c0Var, 1.0f), 0.0f);
         if (B0 == null) {
-            h0.e(view, D0(c0Var2, 1.0f));
+            h0.e(view, C0(c0Var2, 1.0f));
         }
         return B0;
     }

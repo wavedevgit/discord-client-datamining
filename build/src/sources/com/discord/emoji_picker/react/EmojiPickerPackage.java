@@ -24,7 +24,7 @@ public final class EmojiPickerPackage extends BaseReactPackage {
     }
 
     /* renamed from: getModule  reason: collision with other method in class */
-    public Void m874getModule(@NotNull String name, @NotNull ReactApplicationContext reactContext) {
+    public Void m876getModule(@NotNull String name, @NotNull ReactApplicationContext reactContext) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         return null;
@@ -38,6 +38,6 @@ public final class EmojiPickerPackage extends BaseReactPackage {
 
     @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
     public /* bridge */ /* synthetic */ NativeModule getModule(String str, ReactApplicationContext reactApplicationContext) {
-        return (NativeModule) m874getModule(str, reactApplicationContext);
+        return (NativeModule) m876getModule(str, reactApplicationContext);
     }
 }

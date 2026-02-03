@@ -1,18 +1,39 @@
 package op;
-
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public interface a {
 
-    /* renamed from: a  reason: collision with root package name */
-    private final c f44625a;
+    /* renamed from: op.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0552a implements a {
 
-    public a(c sdkFilesManager) {
-        Intrinsics.checkNotNullParameter(sdkFilesManager, "sdkFilesManager");
-        this.f44625a = sdkFilesManager;
-    }
+        /* renamed from: a  reason: collision with root package name */
+        private final boolean f44593a;
 
-    public final c a() {
-        return this.f44625a;
+        public C0552a(boolean z10) {
+            this.f44593a = z10;
+        }
+
+        public final boolean a() {
+            return this.f44593a;
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if ((obj instanceof C0552a) && this.f44593a == ((C0552a) obj).f44593a) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return Boolean.hashCode(this.f44593a);
+        }
+
+        public String toString() {
+            boolean z10 = this.f44593a;
+            return "CancelRequest(force=" + z10 + ")";
+        }
     }
 }

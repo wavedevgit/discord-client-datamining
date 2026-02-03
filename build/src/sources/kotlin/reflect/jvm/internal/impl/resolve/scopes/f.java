@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.types.TypeSubstitutor;
 public class f implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeSubstitutor f35531d;
+    private final TypeSubstitutor f35307d;
 
     public f(TypeSubstitutor typeSubstitutor) {
-        this.f35531d = typeSubstitutor;
+        this.f35307d = typeSubstitutor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         TypeSubstitutor g10;
-        g10 = SubstitutingScope.g(this.f35531d);
+        g10 = SubstitutingScope.g(this.f35307d);
         return g10;
     }
 }

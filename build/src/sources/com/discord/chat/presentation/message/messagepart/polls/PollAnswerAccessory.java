@@ -48,7 +48,7 @@ public final class PollAnswerAccessory implements ItemDiffableType, IPollStyleSe
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m675component13Eiw7ao() {
+    public final String m677component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -119,7 +119,7 @@ public final class PollAnswerAccessory implements ItemDiffableType, IPollStyleSe
 
     @NotNull
     /* renamed from: copy-VVrV5cY  reason: not valid java name */
-    public final PollAnswerAccessory m676copyVVrV5cY(@NotNull String messageId, @NotNull PollResources resources, @NotNull PollAnswer answer, @NotNull List<Attachment> attachments, boolean z10, boolean z11, boolean z12, boolean z13, boolean z14, String str, @NotNull PollChatAnswerInteractionType interactionType, String str2, boolean z15, boolean z16, boolean z17, @NotNull PollStyleSet styleSet) {
+    public final PollAnswerAccessory m678copyVVrV5cY(@NotNull String messageId, @NotNull PollResources resources, @NotNull PollAnswer answer, @NotNull List<Attachment> attachments, boolean z10, boolean z11, boolean z12, boolean z13, boolean z14, String str, @NotNull PollChatAnswerInteractionType interactionType, String str2, boolean z15, boolean z16, boolean z17, @NotNull PollStyleSet styleSet) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(resources, "resources");
         Intrinsics.checkNotNullParameter(answer, "answer");
@@ -135,7 +135,7 @@ public final class PollAnswerAccessory implements ItemDiffableType, IPollStyleSe
         }
         if (obj instanceof PollAnswerAccessory) {
             PollAnswerAccessory pollAnswerAccessory = (PollAnswerAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, pollAnswerAccessory.messageId) && Intrinsics.areEqual(this.resources, pollAnswerAccessory.resources) && Intrinsics.areEqual(this.answer, pollAnswerAccessory.answer) && Intrinsics.areEqual(this.attachments, pollAnswerAccessory.attachments) && this.canTapAnswers == pollAnswerAccessory.canTapAnswers && this.canSelectMultipleAnswers == pollAnswerAccessory.canSelectMultipleAnswers && this.canShowVoteCounts == pollAnswerAccessory.canShowVoteCounts && this.hasVoted == pollAnswerAccessory.hasVoted && this.isExpired == pollAnswerAccessory.isExpired && Intrinsics.areEqual(this.myAvatarUrl, pollAnswerAccessory.myAvatarUrl) && this.interactionType == pollAnswerAccessory.interactionType && Intrinsics.areEqual(this.tapAccessibilityLabel, pollAnswerAccessory.tapAccessibilityLabel) && this.shouldAnimateTransition == pollAnswerAccessory.shouldAnimateTransition && this.shouldAnimateEmoji == pollAnswerAccessory.shouldAnimateEmoji && this.shouldAutoPlayGifs == pollAnswerAccessory.shouldAutoPlayGifs && Intrinsics.areEqual(this.styleSet, pollAnswerAccessory.styleSet);
+            return MessageId.m1090equalsimpl0(this.messageId, pollAnswerAccessory.messageId) && Intrinsics.areEqual(this.resources, pollAnswerAccessory.resources) && Intrinsics.areEqual(this.answer, pollAnswerAccessory.answer) && Intrinsics.areEqual(this.attachments, pollAnswerAccessory.attachments) && this.canTapAnswers == pollAnswerAccessory.canTapAnswers && this.canSelectMultipleAnswers == pollAnswerAccessory.canSelectMultipleAnswers && this.canShowVoteCounts == pollAnswerAccessory.canShowVoteCounts && this.hasVoted == pollAnswerAccessory.hasVoted && this.isExpired == pollAnswerAccessory.isExpired && Intrinsics.areEqual(this.myAvatarUrl, pollAnswerAccessory.myAvatarUrl) && this.interactionType == pollAnswerAccessory.interactionType && Intrinsics.areEqual(this.tapAccessibilityLabel, pollAnswerAccessory.tapAccessibilityLabel) && this.shouldAnimateTransition == pollAnswerAccessory.shouldAnimateTransition && this.shouldAnimateEmoji == pollAnswerAccessory.shouldAnimateEmoji && this.shouldAutoPlayGifs == pollAnswerAccessory.shouldAutoPlayGifs && Intrinsics.areEqual(this.styleSet, pollAnswerAccessory.styleSet);
         }
         return false;
     }
@@ -203,7 +203,7 @@ public final class PollAnswerAccessory implements ItemDiffableType, IPollStyleSe
 
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao  reason: not valid java name */
-    public final String m677getMessageId3Eiw7ao() {
+    public final String m679getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -248,9 +248,9 @@ public final class PollAnswerAccessory implements ItemDiffableType, IPollStyleSe
     }
 
     public int hashCode() {
-        int m1089hashCodeimpl = ((((((((((((((((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.resources.hashCode()) * 31) + this.answer.hashCode()) * 31) + this.attachments.hashCode()) * 31) + Boolean.hashCode(this.canTapAnswers)) * 31) + Boolean.hashCode(this.canSelectMultipleAnswers)) * 31) + Boolean.hashCode(this.canShowVoteCounts)) * 31) + Boolean.hashCode(this.hasVoted)) * 31) + Boolean.hashCode(this.isExpired)) * 31;
+        int m1091hashCodeimpl = ((((((((((((((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.resources.hashCode()) * 31) + this.answer.hashCode()) * 31) + this.attachments.hashCode()) * 31) + Boolean.hashCode(this.canTapAnswers)) * 31) + Boolean.hashCode(this.canSelectMultipleAnswers)) * 31) + Boolean.hashCode(this.canShowVoteCounts)) * 31) + Boolean.hashCode(this.hasVoted)) * 31) + Boolean.hashCode(this.isExpired)) * 31;
         String str = this.myAvatarUrl;
-        int hashCode = (((m1089hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31) + this.interactionType.hashCode()) * 31;
+        int hashCode = (((m1091hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31) + this.interactionType.hashCode()) * 31;
         String str2 = this.tapAccessibilityLabel;
         return ((((((((hashCode + (str2 != null ? str2.hashCode() : 0)) * 31) + Boolean.hashCode(this.shouldAnimateTransition)) * 31) + Boolean.hashCode(this.shouldAnimateEmoji)) * 31) + Boolean.hashCode(this.shouldAutoPlayGifs)) * 31) + this.styleSet.hashCode();
     }
@@ -261,7 +261,7 @@ public final class PollAnswerAccessory implements ItemDiffableType, IPollStyleSe
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         PollResources pollResources = this.resources;
         PollAnswer pollAnswer = this.answer;
         List<Attachment> list = this.attachments;
@@ -277,7 +277,7 @@ public final class PollAnswerAccessory implements ItemDiffableType, IPollStyleSe
         boolean z16 = this.shouldAnimateEmoji;
         boolean z17 = this.shouldAutoPlayGifs;
         PollStyleSet pollStyleSet = this.styleSet;
-        return "PollAnswerAccessory(messageId=" + m1091toStringimpl + ", resources=" + pollResources + ", answer=" + pollAnswer + ", attachments=" + list + ", canTapAnswers=" + z10 + ", canSelectMultipleAnswers=" + z11 + ", canShowVoteCounts=" + z12 + ", hasVoted=" + z13 + ", isExpired=" + z14 + ", myAvatarUrl=" + str + ", interactionType=" + pollChatAnswerInteractionType + ", tapAccessibilityLabel=" + str2 + ", shouldAnimateTransition=" + z15 + ", shouldAnimateEmoji=" + z16 + ", shouldAutoPlayGifs=" + z17 + ", styleSet=" + pollStyleSet + ")";
+        return "PollAnswerAccessory(messageId=" + m1093toStringimpl + ", resources=" + pollResources + ", answer=" + pollAnswer + ", attachments=" + list + ", canTapAnswers=" + z10 + ", canSelectMultipleAnswers=" + z11 + ", canShowVoteCounts=" + z12 + ", hasVoted=" + z13 + ", isExpired=" + z14 + ", myAvatarUrl=" + str + ", interactionType=" + pollChatAnswerInteractionType + ", tapAccessibilityLabel=" + str2 + ", shouldAnimateTransition=" + z15 + ", shouldAnimateEmoji=" + z16 + ", shouldAutoPlayGifs=" + z17 + ", styleSet=" + pollStyleSet + ")";
     }
 
     private PollAnswerAccessory(String messageId, PollResources resources, PollAnswer answer, List<Attachment> attachments, boolean z10, boolean z11, boolean z12, boolean z13, boolean z14, String str, PollChatAnswerInteractionType interactionType, String str2, boolean z15, boolean z16, boolean z17, PollStyleSet styleSet) {
@@ -303,9 +303,9 @@ public final class PollAnswerAccessory implements ItemDiffableType, IPollStyleSe
         this.shouldAnimateEmoji = z16;
         this.shouldAutoPlayGifs = z17;
         this.styleSet = styleSet;
-        String m1091toStringimpl = MessageId.m1091toStringimpl(messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(messageId);
         String answerId = answer.getAnswerId();
-        this.itemId = IdUtilsKt.convertToId(m1091toStringimpl + ":" + answerId);
+        this.itemId = IdUtilsKt.convertToId(m1093toStringimpl + ":" + answerId);
     }
 
     @Override // com.discord.recycler_view.utils.ItemDiffableType

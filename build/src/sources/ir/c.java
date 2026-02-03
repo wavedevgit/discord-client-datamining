@@ -1,10 +1,19 @@
 package ir;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-/* JADX WARN: Method from annotation default annotation not found: level */
-/* JADX WARN: Method from annotation default annotation not found: replaceWith */
-@Retention(RetentionPolicy.RUNTIME)
+import android.text.Spanned;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public @interface c {
+public abstract class c {
+    public static boolean a(int i10, CharSequence charSequence, Object obj) {
+        if ((charSequence instanceof Spanned) && ((Spanned) charSequence).getSpanEnd(obj) == i10) {
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean b(int i10, CharSequence charSequence, Object obj) {
+        if ((charSequence instanceof Spanned) && ((Spanned) charSequence).getSpanStart(obj) == i10) {
+            return true;
+        }
+        return false;
+    }
 }

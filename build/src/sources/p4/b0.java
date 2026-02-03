@@ -17,22 +17,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b0 f44886a = new b0();
+    public static final b0 f44960a = new b0();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f44887a;
+        public static final /* synthetic */ int[] f44961a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f44888b;
+        public static final /* synthetic */ int[] f44962b;
 
         /* renamed from: c  reason: collision with root package name */
-        public static final /* synthetic */ int[] f44889c;
+        public static final /* synthetic */ int[] f44963c;
 
         /* renamed from: d  reason: collision with root package name */
-        public static final /* synthetic */ int[] f44890d;
+        public static final /* synthetic */ int[] f44964d;
 
         static {
             int[] iArr = new int[k4.x.values().length];
@@ -60,7 +60,7 @@ public final class b0 {
                 iArr[k4.x.CANCELLED.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
-            f44887a = iArr;
+            f44961a = iArr;
             int[] iArr2 = new int[k4.a.values().length];
             try {
                 iArr2[k4.a.EXPONENTIAL.ordinal()] = 1;
@@ -70,7 +70,7 @@ public final class b0 {
                 iArr2[k4.a.LINEAR.ordinal()] = 2;
             } catch (NoSuchFieldError unused8) {
             }
-            f44888b = iArr2;
+            f44962b = iArr2;
             int[] iArr3 = new int[k4.n.values().length];
             try {
                 iArr3[k4.n.NOT_REQUIRED.ordinal()] = 1;
@@ -92,7 +92,7 @@ public final class b0 {
                 iArr3[k4.n.METERED.ordinal()] = 5;
             } catch (NoSuchFieldError unused13) {
             }
-            f44889c = iArr3;
+            f44963c = iArr3;
             int[] iArr4 = new int[k4.r.values().length];
             try {
                 iArr4[k4.r.RUN_AS_NON_EXPEDITED_WORK_REQUEST.ordinal()] = 1;
@@ -102,7 +102,7 @@ public final class b0 {
                 iArr4[k4.r.DROP_WORK_REQUEST.ordinal()] = 2;
             } catch (NoSuchFieldError unused15) {
             }
-            f44890d = iArr4;
+            f44964d = iArr4;
         }
     }
 
@@ -111,12 +111,12 @@ public final class b0 {
 
     public static final int a(k4.a backoffPolicy) {
         Intrinsics.checkNotNullParameter(backoffPolicy, "backoffPolicy");
-        int i10 = a.f44888b[backoffPolicy.ordinal()];
+        int i10 = a.f44962b[backoffPolicy.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return 1;
             }
-            throw new ir.p();
+            throw new jr.p();
         }
         return 0;
     }
@@ -143,10 +143,10 @@ public final class b0 {
                     Intrinsics.checkNotNullExpressionValue(uri, "uri");
                     linkedHashSet.add(new d.b(uri, readBoolean));
                 }
-                Unit unit = Unit.f33298a;
-                tr.c.a(objectInputStream, null);
-                Unit unit2 = Unit.f33298a;
-                tr.c.a(byteArrayInputStream, null);
+                Unit unit = Unit.f33074a;
+                ur.c.a(objectInputStream, null);
+                Unit unit2 = Unit.f33074a;
+                ur.c.a(byteArrayInputStream, null);
                 return linkedHashSet;
             } finally {
             }
@@ -154,7 +154,7 @@ public final class b0 {
             try {
                 throw th2;
             } catch (Throwable th3) {
-                tr.c.a(byteArrayInputStream, th2);
+                ur.c.a(byteArrayInputStream, th2);
                 throw th3;
             }
         }
@@ -226,7 +226,7 @@ public final class b0 {
 
     public static final int g(k4.n networkType) {
         Intrinsics.checkNotNullParameter(networkType, "networkType");
-        int i10 = a.f44889c[networkType.ordinal()];
+        int i10 = a.f44963c[networkType.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return 1;
@@ -250,12 +250,12 @@ public final class b0 {
 
     public static final int h(k4.r policy) {
         Intrinsics.checkNotNullParameter(policy, "policy");
-        int i10 = a.f44890d[policy.ordinal()];
+        int i10 = a.f44964d[policy.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return 1;
             }
-            throw new ir.p();
+            throw new jr.p();
         }
         return 0;
     }
@@ -275,9 +275,9 @@ public final class b0 {
                 objectOutputStream.writeUTF(bVar.a().toString());
                 objectOutputStream.writeBoolean(bVar.b());
             }
-            Unit unit = Unit.f33298a;
-            tr.c.a(objectOutputStream, null);
-            tr.c.a(byteArrayOutputStream, null);
+            Unit unit = Unit.f33074a;
+            ur.c.a(objectOutputStream, null);
+            ur.c.a(byteArrayOutputStream, null);
             byte[] byteArray = byteArrayOutputStream.toByteArray();
             Intrinsics.checkNotNullExpressionValue(byteArray, "outputStream.toByteArray()");
             return byteArray;
@@ -287,7 +287,7 @@ public final class b0 {
 
     public static final int j(k4.x state) {
         Intrinsics.checkNotNullParameter(state, "state");
-        switch (a.f44887a[state.ordinal()]) {
+        switch (a.f44961a[state.ordinal()]) {
             case 1:
                 return 0;
             case 2:
@@ -301,7 +301,7 @@ public final class b0 {
             case 6:
                 return 5;
             default:
-                throw new ir.p();
+                throw new jr.p();
         }
     }
 }

@@ -8,8 +8,8 @@ import com.discord.crash_reporting.CrashReporting;
 import com.discord.misc.utilities.logThrottle.LogThrottleSingleton;
 import com.discord.portals.utils.StacktraceUtilsKt;
 import com.facebook.react.views.view.ReactViewGroup;
-import ir.v;
 import java.util.ArrayList;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.Unit;
@@ -66,7 +66,7 @@ public final class PortalFromJsViewHost extends ReactViewGroup {
         Intrinsics.checkNotNull(str);
         childViewRemoved(str);
         this.childView = null;
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void replaceChildViewWithNextAvailableChild() {

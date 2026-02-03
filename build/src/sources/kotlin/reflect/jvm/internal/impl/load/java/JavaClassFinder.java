@@ -21,19 +21,19 @@ public interface JavaClassFinder {
     public static final class Request {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ClassId f33985a;
+        private final ClassId f33761a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final byte[] f33986b;
+        private final byte[] f33762b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final JavaClass f33987c;
+        private final JavaClass f33763c;
 
         public Request(@NotNull ClassId classId, byte[] bArr, JavaClass javaClass) {
             Intrinsics.checkNotNullParameter(classId, "classId");
-            this.f33985a = classId;
-            this.f33986b = bArr;
-            this.f33987c = javaClass;
+            this.f33761a = classId;
+            this.f33762b = bArr;
+            this.f33763c = javaClass;
         }
 
         public boolean equals(Object obj) {
@@ -42,27 +42,27 @@ public interface JavaClassFinder {
             }
             if (obj instanceof Request) {
                 Request request = (Request) obj;
-                return Intrinsics.areEqual(this.f33985a, request.f33985a) && Intrinsics.areEqual(this.f33986b, request.f33986b) && Intrinsics.areEqual(this.f33987c, request.f33987c);
+                return Intrinsics.areEqual(this.f33761a, request.f33761a) && Intrinsics.areEqual(this.f33762b, request.f33762b) && Intrinsics.areEqual(this.f33763c, request.f33763c);
             }
             return false;
         }
 
         @NotNull
         public final ClassId getClassId() {
-            return this.f33985a;
+            return this.f33761a;
         }
 
         public int hashCode() {
-            int hashCode = this.f33985a.hashCode() * 31;
-            byte[] bArr = this.f33986b;
+            int hashCode = this.f33761a.hashCode() * 31;
+            byte[] bArr = this.f33762b;
             int hashCode2 = (hashCode + (bArr == null ? 0 : Arrays.hashCode(bArr))) * 31;
-            JavaClass javaClass = this.f33987c;
+            JavaClass javaClass = this.f33763c;
             return hashCode2 + (javaClass != null ? javaClass.hashCode() : 0);
         }
 
         @NotNull
         public String toString() {
-            return "Request(classId=" + this.f33985a + ", previouslyFoundClassFileContent=" + Arrays.toString(this.f33986b) + ", outerClass=" + this.f33987c + ')';
+            return "Request(classId=" + this.f33761a + ", previouslyFoundClassFileContent=" + Arrays.toString(this.f33762b) + ", outerClass=" + this.f33763c + ')';
         }
 
         public /* synthetic */ Request(ClassId classId, byte[] bArr, JavaClass javaClass, int i10, DefaultConstructorMarker defaultConstructorMarker) {

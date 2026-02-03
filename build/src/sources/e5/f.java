@@ -8,40 +8,40 @@ import java.util.Map;
 public final class f implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f22628a;
+    private final i f22660a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f22629b;
+    private final b f22661b;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Bitmap f22630a;
+        private final Bitmap f22662a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Map f22631b;
+        private final Map f22663b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f22632c;
+        private final int f22664c;
 
         public a(Bitmap bitmap, Map map, int i10) {
-            this.f22630a = bitmap;
-            this.f22631b = map;
-            this.f22632c = i10;
+            this.f22662a = bitmap;
+            this.f22663b = map;
+            this.f22664c = i10;
         }
 
         public final Bitmap a() {
-            return this.f22630a;
+            return this.f22662a;
         }
 
         public final Map b() {
-            return this.f22631b;
+            return this.f22663b;
         }
 
         public final int c() {
-            return this.f22632c;
+            return this.f22664c;
         }
     }
 
@@ -49,19 +49,19 @@ public final class f implements h {
     public static final class b extends LruCache {
 
         /* renamed from: j  reason: collision with root package name */
-        final /* synthetic */ f f22633j;
+        final /* synthetic */ f f22665j;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(int i10, f fVar) {
             super(i10);
-            this.f22633j = fVar;
+            this.f22665j = fVar;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // androidx.collection.LruCache
         /* renamed from: l */
         public void b(boolean z10, c.b bVar, a aVar, a aVar2) {
-            this.f22633j.f22628a.d(bVar, aVar.a(), aVar.b(), aVar.c());
+            this.f22665j.f22660a.d(bVar, aVar.a(), aVar.b(), aVar.c());
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -73,8 +73,8 @@ public final class f implements h {
     }
 
     public f(int i10, i iVar) {
-        this.f22628a = iVar;
-        this.f22629b = new b(i10, this);
+        this.f22660a = iVar;
+        this.f22661b = new b(i10, this);
     }
 
     @Override // e5.h
@@ -82,40 +82,40 @@ public final class f implements h {
         if (i10 >= 40) {
             c();
         } else if (10 <= i10 && i10 < 20) {
-            this.f22629b.k(g() / 2);
+            this.f22661b.k(g() / 2);
         }
     }
 
     @Override // e5.h
-    public c.C0288c b(c.b bVar) {
-        a aVar = (a) this.f22629b.d(bVar);
+    public c.C0299c b(c.b bVar) {
+        a aVar = (a) this.f22661b.d(bVar);
         if (aVar != null) {
-            return new c.C0288c(aVar.a(), aVar.b());
+            return new c.C0299c(aVar.a(), aVar.b());
         }
         return null;
     }
 
     @Override // e5.h
     public void c() {
-        this.f22629b.c();
+        this.f22661b.c();
     }
 
     @Override // e5.h
     public void d(c.b bVar, Bitmap bitmap, Map map) {
         int a10 = k5.a.a(bitmap);
         if (a10 <= f()) {
-            this.f22629b.f(bVar, new a(bitmap, map, a10));
+            this.f22661b.f(bVar, new a(bitmap, map, a10));
             return;
         }
-        this.f22629b.g(bVar);
-        this.f22628a.d(bVar, bitmap, map, a10);
+        this.f22661b.g(bVar);
+        this.f22660a.d(bVar, bitmap, map, a10);
     }
 
     public int f() {
-        return this.f22629b.e();
+        return this.f22661b.e();
     }
 
     public int g() {
-        return this.f22629b.i();
+        return this.f22661b.i();
     }
 }

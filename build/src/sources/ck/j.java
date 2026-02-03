@@ -8,35 +8,35 @@ import java.util.Map;
 public final class j implements m {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final m[] f8420c = new m[0];
+    private static final m[] f8276c = new m[0];
 
     /* renamed from: a  reason: collision with root package name */
-    private Map f8421a;
+    private Map f8277a;
 
     /* renamed from: b  reason: collision with root package name */
-    private m[] f8422b;
+    private m[] f8278b;
 
     private Result b(c cVar) {
         m[] mVarArr;
-        m[] mVarArr2 = this.f8422b;
+        m[] mVarArr2 = this.f8278b;
         if (mVarArr2 != null) {
             for (m mVar : mVarArr2) {
                 if (!Thread.currentThread().isInterrupted()) {
                     try {
-                        return mVar.a(cVar, this.f8421a);
+                        return mVar.a(cVar, this.f8277a);
                     } catch (n unused) {
                     }
                 } else {
                     throw k.a();
                 }
             }
-            Map map = this.f8421a;
+            Map map = this.f8277a;
             if (map != null && map.containsKey(e.ALSO_INVERTED)) {
                 cVar.a().c();
-                for (m mVar2 : this.f8422b) {
+                for (m mVar2 : this.f8278b) {
                     if (!Thread.currentThread().isInterrupted()) {
                         try {
-                            return mVar2.a(cVar, this.f8421a);
+                            return mVar2.a(cVar, this.f8277a);
                         } catch (n unused2) {
                         }
                     } else {
@@ -55,7 +55,7 @@ public final class j implements m {
     }
 
     public Result c(c cVar) {
-        if (this.f8422b == null) {
+        if (this.f8278b == null) {
             d(null);
         }
         return b(cVar);
@@ -64,7 +64,7 @@ public final class j implements m {
     public void d(Map map) {
         boolean z10;
         Collection collection;
-        this.f8421a = map;
+        this.f8277a = map;
         boolean z11 = false;
         if (map != null && map.containsKey(e.TRY_HARDER)) {
             z10 = true;
@@ -116,12 +116,12 @@ public final class j implements m {
                 arrayList.add(new ok.i(map));
             }
         }
-        this.f8422b = (m[]) arrayList.toArray(f8420c);
+        this.f8278b = (m[]) arrayList.toArray(f8276c);
     }
 
     @Override // ck.m
     public void reset() {
-        m[] mVarArr = this.f8422b;
+        m[] mVarArr = this.f8278b;
         if (mVarArr != null) {
             for (m mVar : mVarArr) {
                 mVar.reset();

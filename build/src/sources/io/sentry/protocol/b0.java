@@ -13,16 +13,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class b0 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private List f30320d;
+    private List f29886d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f30321e;
+    private Map f29887e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Boolean f30322i;
+    private Boolean f29888i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f30323o;
+    private Map f29889o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -33,24 +33,24 @@ public final class b0 implements w1 {
             e3Var.r();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
+                String m02 = e3Var.m0();
+                m02.getClass();
                 char c10 = 65535;
-                switch (l02.hashCode()) {
+                switch (m02.hashCode()) {
                     case -1266514778:
-                        if (l02.equals("frames")) {
+                        if (m02.equals("frames")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case 78226992:
-                        if (l02.equals("registers")) {
+                        if (m02.equals("registers")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 284874180:
-                        if (l02.equals("snapshot")) {
+                        if (m02.equals("snapshot")) {
                             c10 = 2;
                             break;
                         }
@@ -58,19 +58,19 @@ public final class b0 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        b0Var.f30320d = e3Var.g2(iLogger, new SentryStackFrame.a());
+                        b0Var.f29886d = e3Var.g2(iLogger, new SentryStackFrame.a());
                         break;
                     case 1:
-                        b0Var.f30321e = io.sentry.util.c.b((Map) e3Var.V1());
+                        b0Var.f29887e = io.sentry.util.c.b((Map) e3Var.V1());
                         break;
                     case 2:
-                        b0Var.f30322i = e3Var.v0();
+                        b0Var.f29888i = e3Var.x0();
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, l02);
+                        e3Var.v1(iLogger, concurrentHashMap, m02);
                         break;
                 }
             }
@@ -84,37 +84,37 @@ public final class b0 implements w1 {
     }
 
     public List d() {
-        return this.f30320d;
+        return this.f29886d;
     }
 
     public void e(List list) {
-        this.f30320d = list;
+        this.f29886d = list;
     }
 
     public void f(Boolean bool) {
-        this.f30322i = bool;
+        this.f29888i = bool;
     }
 
     public void g(Map map) {
-        this.f30323o = map;
+        this.f29889o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30320d != null) {
-            f3Var.e("frames").j(iLogger, this.f30320d);
+        if (this.f29886d != null) {
+            f3Var.e("frames").j(iLogger, this.f29886d);
         }
-        if (this.f30321e != null) {
-            f3Var.e("registers").j(iLogger, this.f30321e);
+        if (this.f29887e != null) {
+            f3Var.e("registers").j(iLogger, this.f29887e);
         }
-        if (this.f30322i != null) {
-            f3Var.e("snapshot").k(this.f30322i);
+        if (this.f29888i != null) {
+            f3Var.e("snapshot").k(this.f29888i);
         }
-        Map map = this.f30323o;
+        Map map = this.f29889o;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30323o.get(str);
+                Object obj = this.f29889o.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -123,6 +123,6 @@ public final class b0 implements w1 {
     }
 
     public b0(List list) {
-        this.f30320d = list;
+        this.f29886d = list;
     }
 }

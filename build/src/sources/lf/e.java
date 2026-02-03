@@ -10,14 +10,14 @@ public class e extends hf.a {
     public static final Parcelable.Creator<e> CREATOR = new i();
 
     /* renamed from: d  reason: collision with root package name */
-    private final PendingIntent f37289d;
+    private final PendingIntent f37403d;
 
     public e(PendingIntent pendingIntent) {
-        this.f37289d = pendingIntent;
+        this.f37403d = pendingIntent;
     }
 
     public PendingIntent b() {
-        return this.f37289d;
+        return this.f37403d;
     }
 
     @Override // android.os.Parcelable

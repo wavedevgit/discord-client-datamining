@@ -8,7 +8,7 @@ import okhttp3.OkHttpClient;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f11430a = new a();
+    public static final a f11059a = new a();
 
     private a() {
     }

@@ -19,23 +19,23 @@ import java.util.ArrayList;
 public class c0 extends RenderableView {
 
     /* renamed from: d  reason: collision with root package name */
-    ReadableMap f17852d;
+    ReadableMap f17481d;
 
     /* renamed from: e  reason: collision with root package name */
-    private a0 f17853e;
+    private a0 f17482e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Bitmap f17854i;
+    private Bitmap f17483i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Canvas f17855o;
+    private Canvas f17484o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Paint f17856p;
+    private final Paint f17485p;
 
     public c0(ReactContext reactContext) {
         super(reactContext);
-        this.f17856p = new Paint(1);
+        this.f17485p = new Paint(1);
     }
 
     private static Object j(Object obj) {
@@ -49,20 +49,20 @@ public class c0 extends RenderableView {
         SvgView svgView = getSvgView();
         RectF rectF = new RectF();
         if (this.mOpacity != 1.0f) {
-            Bitmap bitmap = this.f17854i;
+            Bitmap bitmap = this.f17483i;
             if (bitmap == null) {
-                this.f17854i = Bitmap.createBitmap(canvas.getWidth(), canvas.getHeight(), Bitmap.Config.ARGB_8888);
-                this.f17855o = new Canvas(this.f17854i);
+                this.f17483i = Bitmap.createBitmap(canvas.getWidth(), canvas.getHeight(), Bitmap.Config.ARGB_8888);
+                this.f17484o = new Canvas(this.f17483i);
             } else {
                 bitmap.recycle();
                 Bitmap createBitmap = Bitmap.createBitmap(canvas.getWidth(), canvas.getHeight(), Bitmap.Config.ARGB_8888);
-                this.f17854i = createBitmap;
-                this.f17855o.setBitmap(createBitmap);
+                this.f17483i = createBitmap;
+                this.f17484o.setBitmap(createBitmap);
             }
-            this.f17855o.save();
-            this.f17855o.setMatrix(canvas.getMatrix());
+            this.f17484o.save();
+            this.f17484o.setMatrix(canvas.getMatrix());
         } else {
-            this.f17855o = canvas;
+            this.f17484o = canvas;
         }
         this.elements = new ArrayList<>();
         for (int i10 = 0; i10 < getChildCount(); i10++) {
@@ -75,13 +75,13 @@ public class c0 extends RenderableView {
                         if (z10) {
                             ((RenderableView) virtualView).mergeProperties(this);
                         }
-                        int saveAndSetupCanvas = virtualView.saveAndSetupCanvas(this.f17855o, this.mCTM);
-                        virtualView.render(this.f17855o, paint, f10);
+                        int saveAndSetupCanvas = virtualView.saveAndSetupCanvas(this.f17484o, this.mCTM);
+                        virtualView.render(this.f17484o, paint, f10);
                         RectF clientRect = virtualView.getClientRect();
                         if (clientRect != null) {
                             rectF.union(clientRect);
                         }
-                        virtualView.restoreCanvas(this.f17855o, saveAndSetupCanvas);
+                        virtualView.restoreCanvas(this.f17484o, saveAndSetupCanvas);
                         if (z10) {
                             ((RenderableView) virtualView).resetProperties();
                         }
@@ -109,13 +109,13 @@ public class c0 extends RenderableView {
             }
         }
         if (this.mOpacity != 1.0f) {
-            this.f17855o.restore();
+            this.f17484o.restore();
             int save = canvas.save();
             canvas.setMatrix(null);
-            this.f17856p.setAlpha((int) (this.mOpacity * 255.0f));
-            Bitmap bitmap2 = this.f17854i;
+            this.f17485p.setAlpha((int) (this.mOpacity * 255.0f));
+            Bitmap bitmap2 = this.f17483i;
             if (bitmap2 != null) {
-                canvas.drawBitmap(bitmap2, 0.0f, 0.0f, this.f17856p);
+                canvas.drawBitmap(bitmap2, 0.0f, 0.0f, this.f17485p);
             }
             canvas.restoreToCount(save);
         }
@@ -139,7 +139,7 @@ public class c0 extends RenderableView {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a0 e() {
-        return this.f17853e;
+        return this.f17482e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -237,20 +237,20 @@ public class c0 extends RenderableView {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void i() {
-        g().o(this, this.f17852d);
+        g().o(this, this.f17481d);
     }
 
     public void k(Dynamic dynamic) {
         if (dynamic.getType() == ReadableType.Map) {
-            this.f17852d = dynamic.asMap();
+            this.f17481d = dynamic.asMap();
         } else {
-            this.f17852d = null;
+            this.f17481d = null;
         }
         invalidate();
     }
 
     public void l(ReadableMap readableMap) {
-        this.f17852d = readableMap;
+        this.f17481d = readableMap;
         invalidate();
     }
 
@@ -261,7 +261,7 @@ public class c0 extends RenderableView {
         if (matrix != null) {
             matrix.mapRect(rectF);
         }
-        this.f17853e = new a0(this.mScale, rectF.width(), rectF.height());
+        this.f17482e = new a0(this.mScale, rectF.width(), rectF.height());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

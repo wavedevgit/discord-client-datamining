@@ -5,16 +5,16 @@ import ui.c;
 final class z4 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z4 f41929a = new z4();
+    static final z4 f41792a = new z4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41930b;
+    private static final ui.c f41793b;
 
     static {
         c.b a10 = ui.c.a("optionsType");
         f fVar = new f();
         fVar.a(1);
-        f41930b = a10.b(fVar.b()).a();
+        f41793b = a10.b(fVar.b()).a();
     }
 
     private z4() {

@@ -5,21 +5,21 @@ import ck.p;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f27011a;
+    private final b f27106a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final p[] f27012b;
+    private final p[] f27107b;
 
     public g(b bVar, p[] pVarArr) {
-        this.f27011a = bVar;
-        this.f27012b = pVarArr;
+        this.f27106a = bVar;
+        this.f27107b = pVarArr;
     }
 
     public final b a() {
-        return this.f27011a;
+        return this.f27106a;
     }
 
     public final p[] b() {
-        return this.f27012b;
+        return this.f27107b;
     }
 }

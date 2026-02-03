@@ -36,14 +36,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = undefined;
         var1 = function*(arg0) { // Environment: var0
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun71434: for (var _fun71434_ip = 0;;) switch (_fun71434_ip) {
+                _fun71543: for (var _fun71543_ip = 0;;) switch (_fun71543_ip) {
                     case 0:
                         StartGenerator();
                         var1 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun71434_ip = 187;
-                            continue _fun71434
+                            _fun71543_ip = 187;
+                            continue _fun71543
                         }
                     case 15:
                         var11 = var1.directoryChannelId;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 63:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                         if (var4) {
-                            _fun71434_ip = 184;
-                            continue _fun71434
+                            _fun71543_ip = 184;
+                            continue _fun71543
                         }
                     case 69:
                         var8 = _closure1_slot2;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 123:
                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 6);
                         if (var6) {
-                            _fun71434_ip = 181;
-                            continue _fun71434
+                            _fun71543_ip = 181;
+                            continue _fun71543
                         }
                     case 129:
                         var5 = var5.bind(var3)();
@@ -171,4 +171,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.onAddDirectoryGuildEntry = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 33, 8890, 3897, 8900, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 33, 8922, 3927, 8932, 1307, 2]);

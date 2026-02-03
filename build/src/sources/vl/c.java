@@ -1,212 +1,232 @@
 package vl;
 
-import com.otaliastudios.zoom.OverZoomRangeProvider;
-import com.otaliastudios.zoom.ZoomEngine;
+import com.otaliastudios.zoom.AbsolutePoint;
+import com.otaliastudios.zoom.ScaledPoint;
 import com.otaliastudios.zoom.ZoomLogger;
-import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.ranges.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class c extends vl.a {
-
-    /* renamed from: k  reason: collision with root package name */
-    public static final a f51202k = new a(null);
+public final class c {
 
     /* renamed from: l  reason: collision with root package name */
-    private static final String f51203l;
+    public static final b f51335l = new b(null);
 
     /* renamed from: m  reason: collision with root package name */
-    private static final ZoomLogger f51204m;
+    private static final String f51336m;
+
+    /* renamed from: n  reason: collision with root package name */
+    private static final ZoomLogger f51337n;
+
+    /* renamed from: a  reason: collision with root package name */
+    private final float f51338a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ZoomEngine f51205b;
+    private final boolean f51339b;
 
     /* renamed from: c  reason: collision with root package name */
-    private float f51206c;
+    private final boolean f51340c;
 
     /* renamed from: d  reason: collision with root package name */
-    private float f51207d;
+    private final AbsolutePoint f51341d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f51208e;
+    private final ScaledPoint f51342e;
 
     /* renamed from: f  reason: collision with root package name */
-    private float f51209f;
+    private final boolean f51343f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f51210g;
+    private final boolean f51344g;
 
     /* renamed from: h  reason: collision with root package name */
-    private OverZoomRangeProvider f51211h;
+    private final Float f51345h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f51212i;
+    private final Float f51346i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f51213j;
+    private final boolean f51347j;
+
+    /* renamed from: k  reason: collision with root package name */
+    private final boolean f51348k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
-        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+
+        /* renamed from: b  reason: collision with root package name */
+        private boolean f51350b;
+
+        /* renamed from: c  reason: collision with root package name */
+        private boolean f51351c;
+
+        /* renamed from: d  reason: collision with root package name */
+        private AbsolutePoint f51352d;
+
+        /* renamed from: e  reason: collision with root package name */
+        private ScaledPoint f51353e;
+
+        /* renamed from: f  reason: collision with root package name */
+        private boolean f51354f;
+
+        /* renamed from: g  reason: collision with root package name */
+        private boolean f51355g;
+
+        /* renamed from: h  reason: collision with root package name */
+        private Float f51356h;
+
+        /* renamed from: i  reason: collision with root package name */
+        private Float f51357i;
+
+        /* renamed from: a  reason: collision with root package name */
+        private float f51349a = Float.NaN;
+
+        /* renamed from: j  reason: collision with root package name */
+        private boolean f51358j = true;
+
+        public final c a() {
+            return new c(this.f51349a, this.f51350b, this.f51351c, this.f51352d, this.f51353e, this.f51354f, this.f51355g, this.f51356h, this.f51357i, this.f51358j, null);
+        }
+
+        public final void b(AbsolutePoint absolutePoint, boolean z10) {
+            this.f51353e = null;
+            this.f51352d = absolutePoint;
+            this.f51354f = true;
+            this.f51355g = z10;
+        }
+
+        public final void c(ScaledPoint scaledPoint, boolean z10) {
+            this.f51353e = scaledPoint;
+            this.f51352d = null;
+            this.f51354f = true;
+            this.f51355g = z10;
+        }
+
+        public final void d(AbsolutePoint absolutePoint, boolean z10) {
+            this.f51353e = null;
+            this.f51352d = absolutePoint;
+            this.f51354f = false;
+            this.f51355g = z10;
+        }
+
+        public final void e(ScaledPoint scaledPoint, boolean z10) {
+            this.f51353e = scaledPoint;
+            this.f51352d = null;
+            this.f51354f = false;
+            this.f51355g = z10;
+        }
+
+        public final void f(Float f10, Float f11) {
+            this.f51356h = f10;
+            this.f51357i = f11;
+        }
+
+        public final void g(boolean z10) {
+            this.f51358j = z10;
+        }
+
+        public final void h(boolean z10) {
+            this.f51355g = z10;
+        }
+
+        public final void i(float f10, boolean z10) {
+            this.f51349a = f10;
+            this.f51350b = false;
+            this.f51351c = z10;
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b {
+        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
             this();
         }
 
-        private a() {
+        public final c a(Function1 builder) {
+            Intrinsics.checkNotNullParameter(builder, "builder");
+            a aVar = new a();
+            builder.invoke(aVar);
+            return aVar.a();
+        }
+
+        private b() {
         }
     }
 
     static {
         String TAG = c.class.getSimpleName();
-        f51203l = TAG;
-        ZoomLogger.a aVar = ZoomLogger.f18306b;
+        f51336m = TAG;
+        ZoomLogger.a aVar = ZoomLogger.f17939b;
         Intrinsics.checkNotNullExpressionValue(TAG, "TAG");
-        f51204m = aVar.a(TAG);
+        f51337n = aVar.a(TAG);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public c(ZoomEngine engine, Function0 provider) {
-        super(provider);
-        Intrinsics.checkNotNullParameter(engine, "engine");
-        Intrinsics.checkNotNullParameter(provider, "provider");
-        this.f51205b = engine;
-        this.f51207d = 0.8f;
-        this.f51209f = 2.5f;
-        this.f51211h = OverZoomRangeProvider.f18273b;
-        this.f51212i = true;
-        this.f51213j = true;
+    public /* synthetic */ c(float f10, boolean z10, boolean z11, AbsolutePoint absolutePoint, ScaledPoint scaledPoint, boolean z12, boolean z13, Float f11, Float f12, boolean z14, DefaultConstructorMarker defaultConstructorMarker) {
+        this(f10, z10, z11, absolutePoint, scaledPoint, z12, z13, f11, f12, z14);
     }
 
-    public final float b(float f10, boolean z10) {
-        float i10 = i();
-        float f11 = f();
-        if (z10 && m()) {
-            i10 -= d();
-            f11 += c();
+    public final boolean a() {
+        return this.f51344g;
+    }
+
+    public final boolean b() {
+        return this.f51340c;
+    }
+
+    public final boolean c() {
+        return this.f51348k;
+    }
+
+    public final boolean d() {
+        return !Float.isNaN(this.f51338a);
+    }
+
+    public final boolean e() {
+        return this.f51347j;
+    }
+
+    public final AbsolutePoint f() {
+        return this.f51341d;
+    }
+
+    public final Float g() {
+        return this.f51345h;
+    }
+
+    public final Float h() {
+        return this.f51346i;
+    }
+
+    public final ScaledPoint i() {
+        return this.f51342e;
+    }
+
+    public final float j() {
+        return this.f51338a;
+    }
+
+    public final boolean k() {
+        return this.f51343f;
+    }
+
+    public final boolean l() {
+        return this.f51339b;
+    }
+
+    private c(float f10, boolean z10, boolean z11, AbsolutePoint absolutePoint, ScaledPoint scaledPoint, boolean z12, boolean z13, Float f11, Float f12, boolean z14) {
+        this.f51338a = f10;
+        this.f51339b = z10;
+        this.f51340c = z11;
+        this.f51341d = absolutePoint;
+        this.f51342e = scaledPoint;
+        this.f51343f = z12;
+        this.f51344g = z13;
+        this.f51345h = f11;
+        this.f51346i = f12;
+        this.f51347j = z14;
+        if (absolutePoint != null && scaledPoint != null) {
+            throw new IllegalStateException("Can only use either pan or scaledPan");
         }
-        if (f11 < i10) {
-            int i11 = this.f51210g;
-            if (i11 != this.f51208e) {
-                if (i11 == 0) {
-                    i10 = f11;
-                } else {
-                    f11 = i10;
-                }
-            } else {
-                throw new IllegalStateException("maxZoom is less than minZoom: " + f11 + " < " + i10);
-            }
-        }
-        return d.l(f10, i10, f11);
-    }
-
-    public final float c() {
-        float a10 = this.f51211h.a(this.f51205b, true);
-        if (a10 < 0.0f) {
-            f51204m.g("Received negative maxOverZoomIn value, coercing to 0");
-            return d.c(a10, 0.0f);
-        }
-        return a10;
-    }
-
-    public final float d() {
-        float a10 = this.f51211h.a(this.f51205b, false);
-        if (a10 < 0.0f) {
-            f51204m.g("Received negative maxOverZoomOut value, coercing to 0");
-            return d.c(a10, 0.0f);
-        }
-        return a10;
-    }
-
-    public final float e() {
-        return this.f51209f;
-    }
-
-    public final float f() {
-        int i10 = this.f51210g;
-        if (i10 != 0) {
-            if (i10 == 1) {
-                return this.f51209f;
-            }
-            throw new IllegalArgumentException(Intrinsics.stringPlus("Unknown ZoomType ", Integer.valueOf(this.f51210g)));
-        }
-        return u(this.f51209f);
-    }
-
-    public final int g() {
-        return this.f51210g;
-    }
-
-    public final float h() {
-        return this.f51207d;
-    }
-
-    public final float i() {
-        int i10 = this.f51208e;
-        if (i10 != 0) {
-            if (i10 == 1) {
-                return this.f51207d;
-            }
-            throw new IllegalArgumentException(Intrinsics.stringPlus("Unknown ZoomType ", Integer.valueOf(this.f51208e)));
-        }
-        return u(this.f51207d);
-    }
-
-    public final int j() {
-        return this.f51208e;
-    }
-
-    public final float k() {
-        return this.f51206c;
-    }
-
-    public boolean l() {
-        return this.f51212i;
-    }
-
-    public boolean m() {
-        return this.f51213j;
-    }
-
-    public final float n(float f10) {
-        return f10 / this.f51206c;
-    }
-
-    public void o(boolean z10) {
-        this.f51212i = z10;
-    }
-
-    public final void p(float f10, int i10) {
-        if (f10 >= 0.0f) {
-            this.f51209f = f10;
-            this.f51210g = i10;
-            return;
-        }
-        throw new IllegalArgumentException("Max zoom should be >= 0.");
-    }
-
-    public final void q(float f10, int i10) {
-        if (f10 >= 0.0f) {
-            this.f51207d = f10;
-            this.f51208e = i10;
-            return;
-        }
-        throw new IllegalArgumentException("Min zoom should be >= 0");
-    }
-
-    public void r(boolean z10) {
-        this.f51213j = z10;
-    }
-
-    public final void s(OverZoomRangeProvider overZoomRangeProvider) {
-        Intrinsics.checkNotNullParameter(overZoomRangeProvider, "<set-?>");
-        this.f51211h = overZoomRangeProvider;
-    }
-
-    public final void t(float f10) {
-        this.f51206c = f10;
-    }
-
-    public final float u(float f10) {
-        return f10 * this.f51206c;
+        this.f51348k = (absolutePoint == null && scaledPoint == null) ? false : true;
     }
 }

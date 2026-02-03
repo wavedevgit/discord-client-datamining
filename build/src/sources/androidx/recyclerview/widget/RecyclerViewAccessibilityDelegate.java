@@ -13,40 +13,40 @@ import java.util.WeakHashMap;
 public class RecyclerViewAccessibilityDelegate extends androidx.core.view.a {
 
     /* renamed from: a  reason: collision with root package name */
-    final RecyclerView f4865a;
+    final RecyclerView f4909a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f4866b;
+    private final a f4910b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a extends androidx.core.view.a {
 
         /* renamed from: a  reason: collision with root package name */
-        final RecyclerViewAccessibilityDelegate f4867a;
+        final RecyclerViewAccessibilityDelegate f4911a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Map f4868b = new WeakHashMap();
+        private Map f4912b = new WeakHashMap();
 
         public a(RecyclerViewAccessibilityDelegate recyclerViewAccessibilityDelegate) {
-            this.f4867a = recyclerViewAccessibilityDelegate;
+            this.f4911a = recyclerViewAccessibilityDelegate;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public androidx.core.view.a c(View view) {
-            return (androidx.core.view.a) this.f4868b.remove(view);
+            return (androidx.core.view.a) this.f4912b.remove(view);
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public void d(View view) {
             androidx.core.view.a l10 = h0.l(view);
             if (l10 != null && l10 != this) {
-                this.f4868b.put(view, l10);
+                this.f4912b.put(view, l10);
             }
         }
 
         @Override // androidx.core.view.a
         public boolean dispatchPopulateAccessibilityEvent(View view, AccessibilityEvent accessibilityEvent) {
-            androidx.core.view.a aVar = (androidx.core.view.a) this.f4868b.get(view);
+            androidx.core.view.a aVar = (androidx.core.view.a) this.f4912b.get(view);
             if (aVar != null) {
                 return aVar.dispatchPopulateAccessibilityEvent(view, accessibilityEvent);
             }
@@ -55,7 +55,7 @@ public class RecyclerViewAccessibilityDelegate extends androidx.core.view.a {
 
         @Override // androidx.core.view.a
         public AccessibilityNodeProviderCompat getAccessibilityNodeProvider(View view) {
-            androidx.core.view.a aVar = (androidx.core.view.a) this.f4868b.get(view);
+            androidx.core.view.a aVar = (androidx.core.view.a) this.f4912b.get(view);
             if (aVar != null) {
                 return aVar.getAccessibilityNodeProvider(view);
             }
@@ -64,7 +64,7 @@ public class RecyclerViewAccessibilityDelegate extends androidx.core.view.a {
 
         @Override // androidx.core.view.a
         public void onInitializeAccessibilityEvent(View view, AccessibilityEvent accessibilityEvent) {
-            androidx.core.view.a aVar = (androidx.core.view.a) this.f4868b.get(view);
+            androidx.core.view.a aVar = (androidx.core.view.a) this.f4912b.get(view);
             if (aVar != null) {
                 aVar.onInitializeAccessibilityEvent(view, accessibilityEvent);
             } else {
@@ -74,9 +74,9 @@ public class RecyclerViewAccessibilityDelegate extends androidx.core.view.a {
 
         @Override // androidx.core.view.a
         public void onInitializeAccessibilityNodeInfo(View view, AccessibilityNodeInfoCompat accessibilityNodeInfoCompat) {
-            if (!this.f4867a.d() && this.f4867a.f4865a.getLayoutManager() != null) {
-                this.f4867a.f4865a.getLayoutManager().onInitializeAccessibilityNodeInfoForItem(view, accessibilityNodeInfoCompat);
-                androidx.core.view.a aVar = (androidx.core.view.a) this.f4868b.get(view);
+            if (!this.f4911a.d() && this.f4911a.f4909a.getLayoutManager() != null) {
+                this.f4911a.f4909a.getLayoutManager().onInitializeAccessibilityNodeInfoForItem(view, accessibilityNodeInfoCompat);
+                androidx.core.view.a aVar = (androidx.core.view.a) this.f4912b.get(view);
                 if (aVar != null) {
                     aVar.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfoCompat);
                     return;
@@ -90,7 +90,7 @@ public class RecyclerViewAccessibilityDelegate extends androidx.core.view.a {
 
         @Override // androidx.core.view.a
         public void onPopulateAccessibilityEvent(View view, AccessibilityEvent accessibilityEvent) {
-            androidx.core.view.a aVar = (androidx.core.view.a) this.f4868b.get(view);
+            androidx.core.view.a aVar = (androidx.core.view.a) this.f4912b.get(view);
             if (aVar != null) {
                 aVar.onPopulateAccessibilityEvent(view, accessibilityEvent);
             } else {
@@ -100,7 +100,7 @@ public class RecyclerViewAccessibilityDelegate extends androidx.core.view.a {
 
         @Override // androidx.core.view.a
         public boolean onRequestSendAccessibilityEvent(ViewGroup viewGroup, View view, AccessibilityEvent accessibilityEvent) {
-            androidx.core.view.a aVar = (androidx.core.view.a) this.f4868b.get(viewGroup);
+            androidx.core.view.a aVar = (androidx.core.view.a) this.f4912b.get(viewGroup);
             if (aVar != null) {
                 return aVar.onRequestSendAccessibilityEvent(viewGroup, view, accessibilityEvent);
             }
@@ -109,8 +109,8 @@ public class RecyclerViewAccessibilityDelegate extends androidx.core.view.a {
 
         @Override // androidx.core.view.a
         public boolean performAccessibilityAction(View view, int i10, Bundle bundle) {
-            if (!this.f4867a.d() && this.f4867a.f4865a.getLayoutManager() != null) {
-                androidx.core.view.a aVar = (androidx.core.view.a) this.f4868b.get(view);
+            if (!this.f4911a.d() && this.f4911a.f4909a.getLayoutManager() != null) {
+                androidx.core.view.a aVar = (androidx.core.view.a) this.f4912b.get(view);
                 if (aVar != null) {
                     if (aVar.performAccessibilityAction(view, i10, bundle)) {
                         return true;
@@ -118,14 +118,14 @@ public class RecyclerViewAccessibilityDelegate extends androidx.core.view.a {
                 } else if (super.performAccessibilityAction(view, i10, bundle)) {
                     return true;
                 }
-                return this.f4867a.f4865a.getLayoutManager().performAccessibilityActionForItem(view, i10, bundle);
+                return this.f4911a.f4909a.getLayoutManager().performAccessibilityActionForItem(view, i10, bundle);
             }
             return super.performAccessibilityAction(view, i10, bundle);
         }
 
         @Override // androidx.core.view.a
         public void sendAccessibilityEvent(View view, int i10) {
-            androidx.core.view.a aVar = (androidx.core.view.a) this.f4868b.get(view);
+            androidx.core.view.a aVar = (androidx.core.view.a) this.f4912b.get(view);
             if (aVar != null) {
                 aVar.sendAccessibilityEvent(view, i10);
             } else {
@@ -135,7 +135,7 @@ public class RecyclerViewAccessibilityDelegate extends androidx.core.view.a {
 
         @Override // androidx.core.view.a
         public void sendAccessibilityEventUnchecked(View view, AccessibilityEvent accessibilityEvent) {
-            androidx.core.view.a aVar = (androidx.core.view.a) this.f4868b.get(view);
+            androidx.core.view.a aVar = (androidx.core.view.a) this.f4912b.get(view);
             if (aVar != null) {
                 aVar.sendAccessibilityEventUnchecked(view, accessibilityEvent);
             } else {
@@ -145,21 +145,21 @@ public class RecyclerViewAccessibilityDelegate extends androidx.core.view.a {
     }
 
     public RecyclerViewAccessibilityDelegate(RecyclerView recyclerView) {
-        this.f4865a = recyclerView;
+        this.f4909a = recyclerView;
         androidx.core.view.a c10 = c();
         if (c10 != null && (c10 instanceof a)) {
-            this.f4866b = (a) c10;
+            this.f4910b = (a) c10;
         } else {
-            this.f4866b = new a(this);
+            this.f4910b = new a(this);
         }
     }
 
     public androidx.core.view.a c() {
-        return this.f4866b;
+        return this.f4910b;
     }
 
     boolean d() {
-        return this.f4865a.hasPendingAdapterUpdates();
+        return this.f4909a.hasPendingAdapterUpdates();
     }
 
     @Override // androidx.core.view.a
@@ -176,8 +176,8 @@ public class RecyclerViewAccessibilityDelegate extends androidx.core.view.a {
     @Override // androidx.core.view.a
     public void onInitializeAccessibilityNodeInfo(View view, AccessibilityNodeInfoCompat accessibilityNodeInfoCompat) {
         super.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfoCompat);
-        if (!d() && this.f4865a.getLayoutManager() != null) {
-            this.f4865a.getLayoutManager().onInitializeAccessibilityNodeInfo(accessibilityNodeInfoCompat);
+        if (!d() && this.f4909a.getLayoutManager() != null) {
+            this.f4909a.getLayoutManager().onInitializeAccessibilityNodeInfo(accessibilityNodeInfoCompat);
         }
     }
 
@@ -186,8 +186,8 @@ public class RecyclerViewAccessibilityDelegate extends androidx.core.view.a {
         if (super.performAccessibilityAction(view, i10, bundle)) {
             return true;
         }
-        if (!d() && this.f4865a.getLayoutManager() != null) {
-            return this.f4865a.getLayoutManager().performAccessibilityAction(i10, bundle);
+        if (!d() && this.f4909a.getLayoutManager() != null) {
+            return this.f4909a.getLayoutManager().performAccessibilityAction(i10, bundle);
         }
         return false;
     }

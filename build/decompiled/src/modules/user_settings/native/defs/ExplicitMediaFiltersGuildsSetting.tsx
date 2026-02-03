@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.additionalSearchTerms = var8;
     var7 = function() {
-        _fun81332: for (var _fun81332_ip = 0;;) switch (_fun81332_ip) {
+        _fun81734: for (var _fun81734_ip = 0;;) switch (_fun81734_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -181,8 +181,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.useIsParentallyControlled;
                 var1 = var1.bind(var2)();
                 if (var0) {
-                    _fun81332_ip = 63;
-                    continue _fun81332
+                    _fun81734_ip = 63;
+                    continue _fun81734
                 }
             case 60:
                 var0 = var1;
@@ -200,4 +200,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6969, 6472, 10335, 10331, 4222, 4240, 1234, 10332, 1311, 8945, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7000, 6503, 10412, 10408, 4252, 4270, 1234, 10409, 1311, 8977, 2]);

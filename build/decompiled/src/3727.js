@@ -1,31 +1,35 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var2 = exports;
-    var5 = dependencyMap;
-    var0 = 0;
-    var3 = var5[var0];
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0() {
+        var1 = arg0;
+        var _closure2_slot0 = var1;
+        var1 = global;
+        var3 = var1.setTimeout;
+        var2 = undefined;
+        var1 = function() { // Environment: var0
+            var2 = _closure2_slot0;
+            var0 = global;
+            var1 = var0.performance;
+            var0 = var1.now;
+            var1 = var0.bind(var1)();
+            var0 = undefined;
+            var0 = var2.bind(var0)(var1);
+            return var0;
+        };
+        var0 = 0;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var1.mockedRequestAnimationFrame = var0;
     var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot0 = var3;
-    var3 = function arg0() {
-        var0 = undefined;
-        return var0;
-    };
-    var2.controlEdgeToEdgeValues = var3;
-    var1 = function() {
-        var0 = _closure1_slot0;
-        var2 = var0.TurboModuleRegistry;
-        var1 = var2.get;
-        var0 = 'RNEdgeToEdge';
-        var1 = var1.bind(var2)(var0);
-        var0 = null;
-        var0 = var0 != var1;
-        return var0;
-    };
-    var2.isEdgeToEdge = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 27]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

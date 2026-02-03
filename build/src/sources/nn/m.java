@@ -1,4 +1,217 @@
 package nn;
+
+import android.content.Context;
+import com.google.common.util.concurrent.ListenableFuture;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.CoroutineScope;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface m {
+public final class m {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final m f41990a = new m();
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class a extends kotlin.coroutines.jvm.internal.d {
+
+        /* renamed from: d  reason: collision with root package name */
+        /* synthetic */ Object f41991d;
+
+        /* renamed from: i  reason: collision with root package name */
+        int f41993i;
+
+        a(Continuation continuation) {
+            super(continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            this.f41991d = obj;
+            this.f41993i |= Integer.MIN_VALUE;
+            return m.this.b(null, this);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        int f41994d;
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ o0.g f41995e;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        b(o0.g gVar, Continuation continuation) {
+            super(2, continuation);
+            this.f41995e = gVar;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            return new b(this.f41995e, continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            pr.b.f();
+            if (this.f41994d == 0) {
+                kotlin.c.b(obj);
+                try {
+                    this.f41995e.y();
+                } catch (x.o0 unused) {
+                }
+                return Unit.f33074a;
+            }
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        int f41996d;
+
+        /* renamed from: e  reason: collision with root package name */
+        final /* synthetic */ Context f41997e;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        c(Context context, Continuation continuation) {
+            super(2, continuation);
+            this.f41997e = context;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Continuation create(Object obj, Continuation continuation) {
+            return new c(this.f41997e, continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            pr.b.f();
+            if (this.f41996d == 0) {
+                kotlin.c.b(obj);
+                return o0.g.f42372i.b(this.f41997e);
+            }
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
+        }
+    }
+
+    private m() {
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final o0.g c(ListenableFuture listenableFuture) {
+        return (o0.g) listenableFuture.get();
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:19:0x0052, code lost:
+        if (r9 == r1) goto L20;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:22:0x0066, code lost:
+        if (r9 != r1) goto L18;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:25:0x007a, code lost:
+        if (hs.g.g(r8, r2, r0) == r1) goto L20;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:26:0x007c, code lost:
+        return r1;
+     */
+    /* JADX WARN: Removed duplicated region for block: B:10:0x0026  */
+    /* JADX WARN: Removed duplicated region for block: B:18:0x0040  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public final java.lang.Object b(android.content.Context r8, kotlin.coroutines.Continuation r9) {
+        /*
+            r7 = this;
+            boolean r0 = r9 instanceof nn.m.a
+            if (r0 == 0) goto L13
+            r0 = r9
+            nn.m$a r0 = (nn.m.a) r0
+            int r1 = r0.f41993i
+            r2 = -2147483648(0xffffffff80000000, float:-0.0)
+            r3 = r1 & r2
+            if (r3 == 0) goto L13
+            int r1 = r1 - r2
+            r0.f41993i = r1
+            goto L18
+        L13:
+            nn.m$a r0 = new nn.m$a
+            r0.<init>(r9)
+        L18:
+            java.lang.Object r9 = r0.f41991d
+            java.lang.Object r1 = pr.b.f()
+            int r2 = r0.f41993i
+            r3 = 0
+            r4 = 3
+            r5 = 2
+            r6 = 1
+            if (r2 == 0) goto L40
+            if (r2 == r6) goto L3c
+            if (r2 == r5) goto L38
+            if (r2 != r4) goto L30
+            kotlin.c.b(r9)
+            goto L7d
+        L30:
+            java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
+            java.lang.String r9 = "call to 'resume' before 'invoke' with coroutine"
+            r8.<init>(r9)
+            throw r8
+        L38:
+            kotlin.c.b(r9)
+            goto L69
+        L3c:
+            kotlin.c.b(r9)
+            goto L55
+        L40:
+            kotlin.c.b(r9)
+            hs.c1 r9 = hs.m0.c()
+            nn.m$c r2 = new nn.m$c
+            r2.<init>(r8, r3)
+            r0.f41993i = r6
+            java.lang.Object r9 = hs.g.g(r9, r2, r0)
+            if (r9 != r1) goto L55
+            goto L7c
+        L55:
+            com.google.common.util.concurrent.ListenableFuture r9 = (com.google.common.util.concurrent.ListenableFuture) r9
+            kotlinx.coroutines.CoroutineDispatcher r8 = hs.m0.b()
+            nn.l r2 = new nn.l
+            r2.<init>()
+            r0.f41993i = r5
+            java.lang.Object r9 = hs.x0.b(r8, r2, r0)
+            if (r9 != r1) goto L69
+            goto L7c
+        L69:
+            o0.g r9 = (o0.g) r9
+            hs.c1 r8 = hs.m0.c()
+            nn.m$b r2 = new nn.m$b
+            r2.<init>(r9, r3)
+            r0.f41993i = r4
+            java.lang.Object r8 = hs.g.g(r8, r2, r0)
+            if (r8 != r1) goto L7d
+        L7c:
+            return r1
+        L7d:
+            kotlin.Unit r8 = kotlin.Unit.f33074a
+            return r8
+        */
+        throw new UnsupportedOperationException("Method not decompiled: nn.m.b(android.content.Context, kotlin.coroutines.Continuation):java.lang.Object");
+    }
 }

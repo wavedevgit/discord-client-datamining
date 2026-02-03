@@ -1,11 +1,11 @@
 package kotlin.reflect.jvm.internal.impl.resolve.constants;
 
-import ir.l;
-import ir.p;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+import jr.l;
+import jr.p;
 import kotlin.Lazy;
 import kotlin.collections.CollectionsKt;
 import kotlin.enums.EnumEntries;
@@ -33,19 +33,19 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f35430a;
+    private final long f35206a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ModuleDescriptor f35431b;
+    private final ModuleDescriptor f35207b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f35432c;
+    private final Set f35208c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final SimpleType f35433d;
+    private final SimpleType f35209d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Lazy f35434e;
+    private final Lazy f35210e;
 
     @SourceDebugExtension({"SMAP\nIntegerLiteralTypeConstructor.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IntegerLiteralTypeConstructor.kt\norg/jetbrains/kotlin/resolve/constants/IntegerLiteralTypeConstructor$Companion\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,181:1\n2783#2,7:182\n*S KotlinDebug\n*F\n+ 1 IntegerLiteralTypeConstructor.kt\norg/jetbrains/kotlin/resolve/constants/IntegerLiteralTypeConstructor$Companion\n*L\n40#1:182,7\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -58,11 +58,11 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
             static {
                 int[] iArr = new int[a.values().length];
                 try {
-                    iArr[a.f35435d.ordinal()] = 1;
+                    iArr[a.f35211d.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[a.f35436e.ordinal()] = 2;
+                    iArr[a.f35212e.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
                 $EnumSwitchMapping$0 = iArr;
@@ -76,28 +76,28 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
         public static final class a {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final a f35435d = new a("COMMON_SUPER_TYPE", 0);
+            public static final a f35211d = new a("COMMON_SUPER_TYPE", 0);
 
             /* renamed from: e  reason: collision with root package name */
-            public static final a f35436e = new a("INTERSECTION_TYPE", 1);
+            public static final a f35212e = new a("INTERSECTION_TYPE", 1);
 
             /* renamed from: i  reason: collision with root package name */
-            private static final /* synthetic */ a[] f35437i;
+            private static final /* synthetic */ a[] f35213i;
 
             /* renamed from: o  reason: collision with root package name */
-            private static final /* synthetic */ EnumEntries f35438o;
+            private static final /* synthetic */ EnumEntries f35214o;
 
             static {
                 a[] a10 = a();
-                f35437i = a10;
-                f35438o = pr.a.a(a10);
+                f35213i = a10;
+                f35214o = qr.a.a(a10);
             }
 
             private a(String str, int i10) {
             }
 
             private static final /* synthetic */ a[] a() {
-                return new a[]{f35435d, f35436e};
+                return new a[]{f35211d, f35212e};
             }
 
             public static a valueOf(String str) {
@@ -105,7 +105,7 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
             }
 
             public static a[] values() {
-                return (a[]) f35437i.clone();
+                return (a[]) f35213i.clone();
             }
         }
 
@@ -141,7 +141,7 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
             } else {
                 t02 = CollectionsKt.t0(integerLiteralTypeConstructor.getPossibleTypes(), integerLiteralTypeConstructor2.getPossibleTypes());
             }
-            return KotlinTypeFactory.integerLiteralType(TypeAttributes.Companion.getEmpty(), new IntegerLiteralTypeConstructor(integerLiteralTypeConstructor.f35430a, integerLiteralTypeConstructor.f35431b, t02, null), false);
+            return KotlinTypeFactory.integerLiteralType(TypeAttributes.Companion.getEmpty(), new IntegerLiteralTypeConstructor(integerLiteralTypeConstructor.f35206a, integerLiteralTypeConstructor.f35207b, t02, null), false);
         }
 
         private final SimpleType c(IntegerLiteralTypeConstructor integerLiteralTypeConstructor, SimpleType simpleType) {
@@ -171,7 +171,7 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
 
         public final SimpleType findIntersectionType(@NotNull Collection<? extends SimpleType> types) {
             Intrinsics.checkNotNullParameter(types, "types");
-            return a(types, a.f35436e);
+            return a(types, a.f35212e);
         }
 
         private Companion() {
@@ -183,16 +183,16 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
     }
 
     private final List c() {
-        return (List) this.f35434e.getValue();
+        return (List) this.f35210e.getValue();
     }
 
     private final boolean d() {
-        Collection<KotlinType> allSignedLiteralTypes = PrimitiveTypeUtilKt.getAllSignedLiteralTypes(this.f35431b);
+        Collection<KotlinType> allSignedLiteralTypes = PrimitiveTypeUtilKt.getAllSignedLiteralTypes(this.f35207b);
         if ((allSignedLiteralTypes instanceof Collection) && allSignedLiteralTypes.isEmpty()) {
             return true;
         }
         for (KotlinType kotlinType : allSignedLiteralTypes) {
-            if (this.f35432c.contains(kotlinType)) {
+            if (this.f35208c.contains(kotlinType)) {
                 return false;
             }
         }
@@ -203,7 +203,7 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
     public static final List e(IntegerLiteralTypeConstructor integerLiteralTypeConstructor) {
         SimpleType defaultType = integerLiteralTypeConstructor.getBuiltIns().getComparable().getDefaultType();
         Intrinsics.checkNotNullExpressionValue(defaultType, "getDefaultType(...)");
-        List r10 = CollectionsKt.r(TypeSubstitutionKt.replace$default(defaultType, CollectionsKt.e(new TypeProjectionImpl(Variance.IN_VARIANCE, integerLiteralTypeConstructor.f35433d)), null, 2, null));
+        List r10 = CollectionsKt.r(TypeSubstitutionKt.replace$default(defaultType, CollectionsKt.e(new TypeProjectionImpl(Variance.IN_VARIANCE, integerLiteralTypeConstructor.f35209d)), null, 2, null));
         if (!integerLiteralTypeConstructor.d()) {
             r10.add(integerLiteralTypeConstructor.getBuiltIns().getNumberType());
         }
@@ -211,7 +211,7 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
     }
 
     private final String f() {
-        return '[' + CollectionsKt.x0(this.f35432c, ",", null, null, 0, null, c.f35447d, 30, null) + ']';
+        return '[' + CollectionsKt.x0(this.f35208c, ",", null, null, 0, null, c.f35223d, 30, null) + ']';
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -223,12 +223,12 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     public KotlinBuiltIns getBuiltIns() {
-        return this.f35431b.getBuiltIns();
+        return this.f35207b.getBuiltIns();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     /* renamed from: getDeclarationDescriptor */
-    public ClassifierDescriptor mo1198getDeclarationDescriptor() {
+    public ClassifierDescriptor mo1200getDeclarationDescriptor() {
         return null;
     }
 
@@ -240,7 +240,7 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
 
     @NotNull
     public final Set<KotlinType> getPossibleTypes() {
-        return this.f35432c;
+        return this.f35208c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -267,10 +267,10 @@ public final class IntegerLiteralTypeConstructor implements TypeConstructor {
     }
 
     private IntegerLiteralTypeConstructor(long j10, ModuleDescriptor moduleDescriptor, Set set) {
-        this.f35433d = KotlinTypeFactory.integerLiteralType(TypeAttributes.Companion.getEmpty(), this, false);
-        this.f35434e = l.b(new b(this));
-        this.f35430a = j10;
-        this.f35431b = moduleDescriptor;
-        this.f35432c = set;
+        this.f35209d = KotlinTypeFactory.integerLiteralType(TypeAttributes.Companion.getEmpty(), this, false);
+        this.f35210e = l.b(new b(this));
+        this.f35206a = j10;
+        this.f35207b = moduleDescriptor;
+        this.f35208c = set;
     }
 }

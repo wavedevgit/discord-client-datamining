@@ -57,21 +57,21 @@ public final class NextStep_SelfieJsonAdapter extends h {
         NextStep.Selfie.Config config = null;
         StepStyles.SelfieStepStyle selfieStepStyle = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw sm.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+                    throw tm.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
                 }
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 config = (NextStep.Selfie.Config) this.configAdapter.fromJson(reader);
                 if (config == null) {
-                    throw sm.c.x("config", "config", reader);
+                    throw tm.c.x("config", "config", reader);
                 }
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 selfieStepStyle = (StepStyles.SelfieStepStyle) this.nullableSelfieStepStyleAdapter.fromJson(reader);
             }
         }
@@ -80,9 +80,9 @@ public final class NextStep_SelfieJsonAdapter extends h {
             if (config != null) {
                 return new NextStep.Selfie(str, config, selfieStepStyle);
             }
-            throw sm.c.o("config", "config", reader);
+            throw tm.c.o("config", "config", reader);
         }
-        throw sm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
+        throw tm.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -90,11 +90,11 @@ public final class NextStep_SelfieJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (selfie != null) {
             writer.l();
-            writer.A0(StackTraceHelper.NAME_KEY);
+            writer.t0(StackTraceHelper.NAME_KEY);
             this.stringAdapter.toJson(writer, selfie.getName());
-            writer.A0("config");
+            writer.t0("config");
             this.configAdapter.toJson(writer, selfie.getConfig());
-            writer.A0("styles");
+            writer.t0("styles");
             this.nullableSelfieStepStyleAdapter.toJson(writer, selfie.getStyles());
             writer.E();
             return;

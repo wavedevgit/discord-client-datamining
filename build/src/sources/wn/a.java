@@ -1,89 +1,80 @@
 package wn;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.viewbinding.ViewBinding;
-import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
-import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
-import vn.y2;
-import vn.z2;
+import android.os.Parcel;
+import android.os.Parcelable;
+import kotlin.enums.EnumEntries;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a implements ViewBinding {
-
-    /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f52717a;
-
-    /* renamed from: b  reason: collision with root package name */
-    public final ConstraintLayout f52718b;
-
-    /* renamed from: c  reason: collision with root package name */
-    public final TextView f52719c;
-
-    /* renamed from: d  reason: collision with root package name */
-    public final ConstraintLayout f52720d;
+public final class a implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<a> CREATOR;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Pi2NavigationBar f52721e;
+    public static final a f52428e = new a("UPLOAD", 0, "upload");
 
-    /* renamed from: f  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f52722f;
+    /* renamed from: i  reason: collision with root package name */
+    public static final a f52429i = new a("MANUAL", 1, "manual");
 
-    /* renamed from: g  reason: collision with root package name */
-    public final TextView f52723g;
+    /* renamed from: o  reason: collision with root package name */
+    private static final /* synthetic */ a[] f52430o;
 
-    private a(ConstraintLayout constraintLayout, ConstraintLayout constraintLayout2, TextView textView, ConstraintLayout constraintLayout3, Pi2NavigationBar pi2NavigationBar, ThemeableLottieAnimationView themeableLottieAnimationView, TextView textView2) {
-        this.f52717a = constraintLayout;
-        this.f52718b = constraintLayout2;
-        this.f52719c = textView;
-        this.f52720d = constraintLayout3;
-        this.f52721e = pi2NavigationBar;
-        this.f52722f = themeableLottieAnimationView;
-        this.f52723g = textView2;
-    }
+    /* renamed from: p  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f52431p;
 
-    public static a a(View view) {
-        int i10 = y2.f51731b;
-        ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
-        if (constraintLayout != null) {
-            i10 = y2.f51732c;
-            TextView textView = (TextView) e4.a.a(view, i10);
-            if (textView != null) {
-                i10 = y2.f51735f;
-                ConstraintLayout constraintLayout2 = (ConstraintLayout) e4.a.a(view, i10);
-                if (constraintLayout2 != null) {
-                    i10 = y2.f51742m;
-                    Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
-                    if (pi2NavigationBar != null) {
-                        i10 = y2.f51743n;
-                        ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
-                        if (themeableLottieAnimationView != null) {
-                            i10 = y2.f51748s;
-                            TextView textView2 = (TextView) e4.a.a(view, i10);
-                            if (textView2 != null) {
-                                return new a((ConstraintLayout) view, constraintLayout, textView, constraintLayout2, pi2NavigationBar, themeableLottieAnimationView, textView2);
-                            }
-                        }
-                    }
-                }
+    /* renamed from: d  reason: collision with root package name */
+    private final String f52432d;
+
+    static {
+        a[] a10 = a();
+        f52430o = a10;
+        f52431p = qr.a.a(a10);
+        CREATOR = new Parcelable.Creator() { // from class: wn.a.a
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: a */
+            public final a createFromParcel(Parcel parcel) {
+                Intrinsics.checkNotNullParameter(parcel, "parcel");
+                return a.valueOf(parcel.readString());
             }
-        }
-        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+
+            @Override // android.os.Parcelable.Creator
+            /* renamed from: b */
+            public final a[] newArray(int i10) {
+                return new a[i10];
+            }
+        };
     }
 
-    public static a c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(z2.f51755a, viewGroup, false);
-        if (z10) {
-            viewGroup.addView(inflate);
-        }
-        return a(inflate);
+    private a(String str, int i10, String str2) {
+        this.f52432d = str2;
     }
 
-    @Override // androidx.viewbinding.ViewBinding
-    /* renamed from: b */
-    public ConstraintLayout getRoot() {
-        return this.f52717a;
+    private static final /* synthetic */ a[] a() {
+        return new a[]{f52428e, f52429i};
+    }
+
+    public static a valueOf(String str) {
+        return (a) Enum.valueOf(a.class, str);
+    }
+
+    public static a[] values() {
+        return (a[]) f52430o.clone();
+    }
+
+    public final String d() {
+        return this.f52432d;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeString(name());
     }
 }

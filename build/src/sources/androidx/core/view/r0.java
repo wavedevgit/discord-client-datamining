@@ -10,42 +10,42 @@ import java.lang.ref.WeakReference;
 public final class r0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final WeakReference f3395a;
+    private final WeakReference f3439a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a extends AnimatorListenerAdapter {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ s0 f3396a;
+        final /* synthetic */ s0 f3440a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ View f3397b;
+        final /* synthetic */ View f3441b;
 
         a(s0 s0Var, View view) {
-            this.f3396a = s0Var;
-            this.f3397b = view;
+            this.f3440a = s0Var;
+            this.f3441b = view;
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationCancel(Animator animator) {
-            this.f3396a.a(this.f3397b);
+            this.f3440a.a(this.f3441b);
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            this.f3396a.b(this.f3397b);
+            this.f3440a.b(this.f3441b);
         }
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
-            this.f3396a.c(this.f3397b);
+            this.f3440a.c(this.f3441b);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r0(View view) {
-        this.f3395a = new WeakReference(view);
+        this.f3439a = new WeakReference(view);
     }
 
     private void h(View view, s0 s0Var) {
@@ -57,7 +57,7 @@ public final class r0 {
     }
 
     public r0 b(float f10) {
-        View view = (View) this.f3395a.get();
+        View view = (View) this.f3439a.get();
         if (view != null) {
             view.animate().alpha(f10);
         }
@@ -65,14 +65,14 @@ public final class r0 {
     }
 
     public void c() {
-        View view = (View) this.f3395a.get();
+        View view = (View) this.f3439a.get();
         if (view != null) {
             view.animate().cancel();
         }
     }
 
     public long d() {
-        View view = (View) this.f3395a.get();
+        View view = (View) this.f3439a.get();
         if (view != null) {
             return view.animate().getDuration();
         }
@@ -80,7 +80,7 @@ public final class r0 {
     }
 
     public r0 e(long j10) {
-        View view = (View) this.f3395a.get();
+        View view = (View) this.f3439a.get();
         if (view != null) {
             view.animate().setDuration(j10);
         }
@@ -88,7 +88,7 @@ public final class r0 {
     }
 
     public r0 f(Interpolator interpolator) {
-        View view = (View) this.f3395a.get();
+        View view = (View) this.f3439a.get();
         if (view != null) {
             view.animate().setInterpolator(interpolator);
         }
@@ -96,7 +96,7 @@ public final class r0 {
     }
 
     public r0 g(s0 s0Var) {
-        View view = (View) this.f3395a.get();
+        View view = (View) this.f3439a.get();
         if (view != null) {
             h(view, s0Var);
         }
@@ -104,7 +104,7 @@ public final class r0 {
     }
 
     public r0 i(long j10) {
-        View view = (View) this.f3395a.get();
+        View view = (View) this.f3439a.get();
         if (view != null) {
             view.animate().setStartDelay(j10);
         }
@@ -113,7 +113,7 @@ public final class r0 {
 
     public r0 j(final u0 u0Var) {
         ValueAnimator.AnimatorUpdateListener animatorUpdateListener;
-        final View view = (View) this.f3395a.get();
+        final View view = (View) this.f3439a.get();
         if (view != null) {
             if (u0Var != null) {
                 animatorUpdateListener = new ValueAnimator.AnimatorUpdateListener() { // from class: androidx.core.view.q0
@@ -131,14 +131,14 @@ public final class r0 {
     }
 
     public void k() {
-        View view = (View) this.f3395a.get();
+        View view = (View) this.f3439a.get();
         if (view != null) {
             view.animate().start();
         }
     }
 
     public r0 l(float f10) {
-        View view = (View) this.f3395a.get();
+        View view = (View) this.f3439a.get();
         if (view != null) {
             view.animate().translationY(f10);
         }

@@ -7,10 +7,10 @@ public enum YogaDirection {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f12513d;
+    private final int f12142d;
 
     YogaDirection(int i10) {
-        this.f12513d = i10;
+        this.f12142d = i10;
     }
 
     public static YogaDirection d(int i10) {
@@ -27,6 +27,6 @@ public enum YogaDirection {
     }
 
     public int e() {
-        return this.f12513d;
+        return this.f12142d;
     }
 }

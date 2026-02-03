@@ -34,17 +34,17 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Governme
         Integer num = null;
         Integer num2 = null;
         while (mVar.hasNext()) {
-            int A0 = mVar.A0(this.options);
-            if (A0 == -1) {
-                mVar.E0();
+            int t02 = mVar.t0(this.options);
+            if (t02 == -1) {
+                mVar.F0();
                 mVar.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 num = (Integer) this.intAdapter.fromJson(mVar);
                 if (num == null) {
-                    throw sm.c.x("minDimensionSize", "min_dimension_size", mVar);
+                    throw tm.c.x("minDimensionSize", "min_dimension_size", mVar);
                 }
-            } else if (A0 == 1 && (num2 = (Integer) this.intAdapter.fromJson(mVar)) == null) {
-                throw sm.c.x("maxDimensionSize", "max_dimension_size", mVar);
+            } else if (t02 == 1 && (num2 = (Integer) this.intAdapter.fromJson(mVar)) == null) {
+                throw tm.c.x("maxDimensionSize", "max_dimension_size", mVar);
             }
         }
         mVar.y();
@@ -53,18 +53,18 @@ public final class GenericFileUploadErrorResponse_DocumentErrorResponse_Governme
             if (num2 != null) {
                 return new GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError.Details(intValue, num2.intValue());
             }
-            throw sm.c.o("maxDimensionSize", "max_dimension_size", mVar);
+            throw tm.c.o("maxDimensionSize", "max_dimension_size", mVar);
         }
-        throw sm.c.o("minDimensionSize", "min_dimension_size", mVar);
+        throw tm.c.o("minDimensionSize", "min_dimension_size", mVar);
     }
 
     @Override // com.squareup.moshi.h
     public void toJson(@NotNull t tVar, GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError.Details details) {
         if (details != null) {
             tVar.l();
-            tVar.A0("min_dimension_size");
+            tVar.t0("min_dimension_size");
             this.intAdapter.toJson(tVar, Integer.valueOf(details.getMinDimensionSize()));
-            tVar.A0("max_dimension_size");
+            tVar.t0("max_dimension_size");
             this.intAdapter.toJson(tVar, Integer.valueOf(details.getMaxDimensionSize()));
             tVar.E();
             return;

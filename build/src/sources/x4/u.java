@@ -1,9 +1,9 @@
 package x4;
 
 import android.content.Context;
-import iu.c0;
 import java.io.Closeable;
 import java.io.File;
+import ju.c0;
 import kotlin.jvm.functions.Function0;
 import okio.BufferedSource;
 import x4.r;
@@ -19,7 +19,7 @@ public abstract class u {
         return k5.k.m(context);
     }
 
-    public static final r e(c0 c0Var, iu.h hVar, String str, Closeable closeable) {
+    public static final r e(c0 c0Var, ju.h hVar, String str, Closeable closeable) {
         return new q(c0Var, hVar, str, closeable, null);
     }
 
@@ -45,9 +45,9 @@ public abstract class u {
         }, aVar);
     }
 
-    public static /* synthetic */ r h(c0 c0Var, iu.h hVar, String str, Closeable closeable, int i10, Object obj) {
+    public static /* synthetic */ r h(c0 c0Var, ju.h hVar, String str, Closeable closeable, int i10, Object obj) {
         if ((i10 & 2) != 0) {
-            hVar = iu.h.f31273b;
+            hVar = ju.h.f32370b;
         }
         if ((i10 & 4) != 0) {
             str = null;

@@ -10,13 +10,13 @@ import android.view.View;
 public abstract class h0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final i0 f5263a;
+    private static final i0 f5307a;
 
     /* renamed from: b  reason: collision with root package name */
-    static final Property f5264b;
+    static final Property f5308b;
 
     /* renamed from: c  reason: collision with root package name */
-    static final Property f5265c;
+    static final Property f5309c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends Property {
@@ -58,51 +58,51 @@ public abstract class h0 {
 
     static {
         if (Build.VERSION.SDK_INT >= 29) {
-            f5263a = new m0();
+            f5307a = new m0();
         } else {
-            f5263a = new l0();
+            f5307a = new l0();
         }
-        f5264b = new a(Float.class, "translationAlpha");
-        f5265c = new b(Rect.class, "clipBounds");
+        f5308b = new a(Float.class, "translationAlpha");
+        f5309c = new b(Rect.class, "clipBounds");
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void a(View view) {
-        f5263a.a(view);
+        f5307a.a(view);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static float b(View view) {
-        return f5263a.b(view);
+        return f5307a.b(view);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void c(View view) {
-        f5263a.c(view);
+        f5307a.c(view);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void d(View view, int i10, int i11, int i12, int i13) {
-        f5263a.d(view, i10, i11, i12, i13);
+        f5307a.d(view, i10, i11, i12, i13);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void e(View view, float f10) {
-        f5263a.e(view, f10);
+        f5307a.e(view, f10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void f(View view, int i10) {
-        f5263a.f(view, i10);
+        f5307a.f(view, i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void g(View view, Matrix matrix) {
-        f5263a.g(view, matrix);
+        f5307a.g(view, matrix);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void h(View view, Matrix matrix) {
-        f5263a.h(view, matrix);
+        f5307a.h(view, matrix);
     }
 }

@@ -20,10 +20,10 @@ import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.common.LifecycleState;
 import com.facebook.react.uimanager.ViewProps;
-import ir.v;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.o0;
@@ -95,21 +95,21 @@ public final class PushNotificationModule extends ReactContextBaseJavaModule {
     public static final Unit registerEventListener$lambda$2(PushNotificationModule pushNotificationModule, String token) {
         Intrinsics.checkNotNullParameter(token, "token");
         pushNotificationModule.reactEvents.emitModuleEvent(pushNotificationModule.reactContext, new RegisterEvent(token));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit registerEventListener$lambda$3(PushNotificationModule pushNotificationModule, Map notification) {
         Intrinsics.checkNotNullParameter(notification, "notification");
         pushNotificationModule.reactEvents.emitModuleEvent(pushNotificationModule.reactContext, new NotificationEvent(notification));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit registerEventListener$lambda$4(PushNotificationModule pushNotificationModule, Map notification) {
         Intrinsics.checkNotNullParameter(notification, "notification");
         pushNotificationModule.reactEvents.emitModuleEvent(pushNotificationModule.reactContext, new LocalNotificationEvent(notification));
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void updateAuthState() {

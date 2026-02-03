@@ -1,13 +1,9 @@
 package ls;
 
-import java.util.concurrent.atomic.AtomicReference;
+import kotlin.coroutines.Continuation;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class d {
-    public static final Object a(AtomicReference atomicReference) {
-        return atomicReference.get();
-    }
+    public abstract boolean a(Object obj);
 
-    public static final void b(AtomicReference atomicReference, Object obj) {
-        atomicReference.set(obj);
-    }
+    public abstract Continuation[] b(Object obj);
 }

@@ -1,46 +1,70 @@
 package iu;
 
-import java.io.File;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.Closeable;
+import java.util.zip.Deflater;
 import kotlin.jvm.internal.Intrinsics;
-import okio.BufferedSink;
-import okio.BufferedSource;
+import okio.Buffer;
+import okio.ByteString;
 import okio.Sink;
-import okio.Source;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class a {
+public final class a implements Closeable {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f31220a = new a();
+    /* renamed from: d  reason: collision with root package name */
+    private final boolean f31169d;
 
-    private a() {
+    /* renamed from: e  reason: collision with root package name */
+    private final Buffer f31170e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final Deflater f31171i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final ju.e f31172o;
+
+    public a(boolean z10) {
+        this.f31169d = z10;
+        Buffer buffer = new Buffer();
+        this.f31170e = buffer;
+        Deflater deflater = new Deflater(-1, true);
+        this.f31171i = deflater;
+        this.f31172o = new ju.e((Sink) buffer, deflater);
     }
 
-    public final BufferedSink a(Sink sink) {
-        Intrinsics.checkNotNullParameter(sink, "sink");
-        return x.c(sink);
+    private final boolean h(Buffer buffer, ByteString byteString) {
+        return buffer.q0(buffer.size() - byteString.G(), byteString);
     }
 
-    public final BufferedSource b(Source source) {
-        Intrinsics.checkNotNullParameter(source, "source");
-        return x.d(source);
+    public final void a(Buffer buffer) {
+        ByteString byteString;
+        Intrinsics.checkNotNullParameter(buffer, "buffer");
+        if (this.f31170e.size() == 0) {
+            if (this.f31169d) {
+                this.f31171i.reset();
+            }
+            this.f31172o.v0(buffer, buffer.size());
+            this.f31172o.flush();
+            Buffer buffer2 = this.f31170e;
+            byteString = b.f31173a;
+            if (h(buffer2, byteString)) {
+                long size = this.f31170e.size() - 4;
+                Buffer.a V0 = Buffer.V0(this.f31170e, null, 1, null);
+                try {
+                    V0.l(size);
+                    ur.c.a(V0, null);
+                } finally {
+                }
+            } else {
+                this.f31170e.writeByte(0);
+            }
+            Buffer buffer3 = this.f31170e;
+            buffer.v0(buffer3, buffer3.size());
+            return;
+        }
+        throw new IllegalArgumentException("Failed requirement.");
     }
 
-    public final Sink c(File file) {
-        Sink g10;
-        Intrinsics.checkNotNullParameter(file, "file");
-        g10 = y.g(file, false, 1, null);
-        return g10;
-    }
-
-    public final Sink d(OutputStream outputStream) {
-        Intrinsics.checkNotNullParameter(outputStream, "outputStream");
-        return x.g(outputStream);
-    }
-
-    public final Source e(InputStream inputStream) {
-        Intrinsics.checkNotNullParameter(inputStream, "inputStream");
-        return x.k(inputStream);
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        this.f31172o.close();
     }
 }

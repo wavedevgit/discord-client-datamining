@@ -7,20 +7,20 @@ import kotlin.jvm.internal.Intrinsics;
 public interface CookieJar {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f44051a = a.f44053a;
+    public static final a f44179a = a.f44181a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final CookieJar f44052b = new a.C0536a();
+    public static final CookieJar f44180b = new a.C0544a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ a f44053a = new a();
+        static final /* synthetic */ a f44181a = new a();
 
         /* renamed from: okhttp3.CookieJar$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        private static final class C0536a implements CookieJar {
+        private static final class C0544a implements CookieJar {
             @Override // okhttp3.CookieJar
             public List loadForRequest(HttpUrl url) {
                 Intrinsics.checkNotNullParameter(url, "url");

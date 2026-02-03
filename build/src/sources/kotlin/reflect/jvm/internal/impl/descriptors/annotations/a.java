@@ -9,16 +9,16 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 public class a implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final KotlinBuiltIns f33672d;
+    private final KotlinBuiltIns f33448d;
 
     public a(KotlinBuiltIns kotlinBuiltIns) {
-        this.f33672d = kotlinBuiltIns;
+        this.f33448d = kotlinBuiltIns;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         KotlinType b10;
-        b10 = AnnotationUtilKt.b(this.f33672d, (ModuleDescriptor) obj);
+        b10 = AnnotationUtilKt.b(this.f33448d, (ModuleDescriptor) obj);
         return b10;
     }
 }

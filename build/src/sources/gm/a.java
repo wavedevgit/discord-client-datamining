@@ -1,21 +1,32 @@
 package gm;
+
+import android.content.Context;
+import android.graphics.Point;
+import android.graphics.Rect;
+import android.os.Build;
+import android.view.Display;
+import android.view.WindowManager;
+import android.view.WindowMetrics;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
-
-    /* renamed from: a  reason: collision with root package name */
-    public static final a f27038a = new a();
-
-    /* renamed from: b  reason: collision with root package name */
-    private static boolean f27039b;
-
-    private a() {
-    }
-
-    public final boolean a() {
-        return f27039b;
-    }
-
-    public final void b(boolean z10) {
-        f27039b = z10;
+public abstract class a {
+    public static final Point a(Context context) {
+        Intrinsics.checkNotNullParameter(context, "<this>");
+        Point point = new Point();
+        if (Build.VERSION.SDK_INT >= 30) {
+            WindowMetrics currentWindowMetrics = ((WindowManager) context.getSystemService(WindowManager.class)).getCurrentWindowMetrics();
+            Intrinsics.checkNotNullExpressionValue(currentWindowMetrics, "getCurrentWindowMetrics(...)");
+            Rect bounds = currentWindowMetrics.getBounds();
+            Intrinsics.checkNotNullExpressionValue(bounds, "getBounds(...)");
+            point.x = bounds.width();
+            point.y = bounds.height();
+            return point;
+        }
+        Object systemService = context.getSystemService("window");
+        Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.view.WindowManager");
+        Display defaultDisplay = ((WindowManager) systemService).getDefaultDisplay();
+        Intrinsics.checkNotNullExpressionValue(defaultDisplay, "getDefaultDisplay(...)");
+        defaultDisplay.getRealSize(point);
+        return point;
     }
 }

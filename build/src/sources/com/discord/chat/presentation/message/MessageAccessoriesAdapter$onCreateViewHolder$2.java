@@ -19,14 +19,14 @@ public /* synthetic */ class MessageAccessoriesAdapter$onCreateViewHolder$2 exte
 
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-        m526invokeAyv7vGE((Sticker) obj, ((MessageId) obj2).m1093unboximpl());
-        return Unit.f33298a;
+        m528invokeAyv7vGE((Sticker) obj, ((MessageId) obj2).m1095unboximpl());
+        return Unit.f33074a;
     }
 
     /* renamed from: invoke-Ayv7vGE  reason: not valid java name */
-    public final void m526invokeAyv7vGE(Sticker p02, String p12) {
+    public final void m528invokeAyv7vGE(Sticker p02, String p12) {
         Intrinsics.checkNotNullParameter(p02, "p0");
         Intrinsics.checkNotNullParameter(p12, "p1");
-        ((ChatEventHandler) this.receiver).mo486onWelcomeReplyClickedAyv7vGE(p02, p12);
+        ((ChatEventHandler) this.receiver).mo488onWelcomeReplyClickedAyv7vGE(p02, p12);
     }
 }

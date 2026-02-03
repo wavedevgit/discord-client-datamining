@@ -1,19 +1,17 @@
 package ur;
 
-import q1.e;
+import java.io.File;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-    public static final void a(AutoCloseable autoCloseable, Throwable th2) {
-        if (autoCloseable != null) {
-            if (th2 == null) {
-                e.a(autoCloseable);
-                return;
-            }
-            try {
-                e.a(autoCloseable);
-            } catch (Throwable th3) {
-                ir.e.a(th2, th3);
-            }
-        }
+public final class a extends h {
+    public /* synthetic */ a(File file, File file2, String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(file, (i10 & 2) != 0 ? null : file2, (i10 & 4) != 0 ? null : str);
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a(File file, File file2, String str) {
+        super(file, file2, str);
+        Intrinsics.checkNotNullParameter(file, "file");
     }
 }

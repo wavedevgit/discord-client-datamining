@@ -3,14 +3,14 @@ package com.google.android.play.core.integrity;
 public final class q0 implements gi.z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gi.e0 f17234a;
+    private final gi.e0 f16863a;
 
     public q0(gi.e0 e0Var) {
-        this.f17234a = e0Var;
+        this.f16863a = e0Var;
     }
 
     @Override // gi.e0
     public final /* bridge */ /* synthetic */ Object a() {
-        return new p0((j0) this.f17234a.a());
+        return new p0((j0) this.f16863a.a());
     }
 }

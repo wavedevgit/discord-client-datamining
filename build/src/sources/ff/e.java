@@ -27,59 +27,59 @@ public class e implements Handler.Callback {
     private static e D;
 
     /* renamed from: i  reason: collision with root package name */
-    private gf.u f25071i;
+    private gf.u f24282i;
 
     /* renamed from: o  reason: collision with root package name */
-    private gf.w f25072o;
+    private gf.w f24283o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Context f25073p;
+    private final Context f24284p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final com.google.android.gms.common.f f25074q;
+    private final com.google.android.gms.common.f f24285q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final gf.h0 f25075r;
+    private final gf.h0 f24286r;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Handler f25082y;
+    private final Handler f24293y;
 
     /* renamed from: z  reason: collision with root package name */
-    private volatile boolean f25083z;
+    private volatile boolean f24294z;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f25069d = 10000;
+    private long f24280d = 10000;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f25070e = false;
+    private boolean f24281e = false;
 
     /* renamed from: s  reason: collision with root package name */
-    private final AtomicInteger f25076s = new AtomicInteger(1);
+    private final AtomicInteger f24287s = new AtomicInteger(1);
 
     /* renamed from: t  reason: collision with root package name */
-    private final AtomicInteger f25077t = new AtomicInteger(0);
+    private final AtomicInteger f24288t = new AtomicInteger(0);
 
     /* renamed from: u  reason: collision with root package name */
-    private final Map f25078u = new ConcurrentHashMap(5, 0.75f, 1);
+    private final Map f24289u = new ConcurrentHashMap(5, 0.75f, 1);
 
     /* renamed from: v  reason: collision with root package name */
-    private w f25079v = null;
+    private w f24290v = null;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Set f25080w = new u0.b();
+    private final Set f24291w = new u0.b();
 
     /* renamed from: x  reason: collision with root package name */
-    private final Set f25081x = new u0.b();
+    private final Set f24292x = new u0.b();
 
     private e(Context context, Looper looper, com.google.android.gms.common.f fVar) {
-        this.f25083z = true;
-        this.f25073p = context;
+        this.f24294z = true;
+        this.f24284p = context;
         fg.h hVar = new fg.h(looper, this);
-        this.f25082y = hVar;
-        this.f25074q = fVar;
-        this.f25075r = new gf.h0(fVar);
+        this.f24293y = hVar;
+        this.f24285q = fVar;
+        this.f24286r = new gf.h0(fVar);
         if (com.google.android.gms.common.util.g.a(context)) {
-            this.f25083z = false;
+            this.f24294z = false;
         }
         hVar.sendMessage(hVar.obtainMessage(6));
     }
@@ -89,8 +89,8 @@ public class e implements Handler.Callback {
             try {
                 e eVar = D;
                 if (eVar != null) {
-                    eVar.f25077t.incrementAndGet();
-                    Handler handler = eVar.f25082y;
+                    eVar.f24288t.incrementAndGet();
+                    Handler handler = eVar.f24293y;
                     handler.sendMessageAtFrontOfQueue(handler.obtainMessage(10));
                 }
             } catch (Throwable th2) {
@@ -107,34 +107,34 @@ public class e implements Handler.Callback {
     }
 
     private final e0 h(ef.d dVar) {
-        Map map = this.f25078u;
+        Map map = this.f24289u;
         b t10 = dVar.t();
         e0 e0Var = (e0) map.get(t10);
         if (e0Var == null) {
             e0Var = new e0(this, dVar);
-            this.f25078u.put(t10, e0Var);
+            this.f24289u.put(t10, e0Var);
         }
         if (e0Var.a()) {
-            this.f25081x.add(t10);
+            this.f24292x.add(t10);
         }
         e0Var.E();
         return e0Var;
     }
 
     private final gf.w i() {
-        if (this.f25072o == null) {
-            this.f25072o = gf.v.a(this.f25073p);
+        if (this.f24283o == null) {
+            this.f24283o = gf.v.a(this.f24284p);
         }
-        return this.f25072o;
+        return this.f24283o;
     }
 
     private final void j() {
-        gf.u uVar = this.f25071i;
+        gf.u uVar = this.f24282i;
         if (uVar != null) {
             if (uVar.b() > 0 || e()) {
                 i().d(uVar);
             }
-            this.f25071i = null;
+            this.f24282i = null;
         }
     }
 
@@ -142,7 +142,7 @@ public class e implements Handler.Callback {
         n0 a10;
         if (i10 != 0 && (a10 = n0.a(this, i10, dVar.t())) != null) {
             Task a11 = kVar.a();
-            final Handler handler = this.f25082y;
+            final Handler handler = this.f24293y;
             handler.getClass();
             a11.c(new Executor() { // from class: ff.y
                 @Override // java.util.concurrent.Executor
@@ -169,44 +169,44 @@ public class e implements Handler.Callback {
     }
 
     public final void A(ef.d dVar, int i10, com.google.android.gms.common.api.internal.a aVar) {
-        this.f25082y.sendMessage(this.f25082y.obtainMessage(4, new p0(new y0(i10, aVar), this.f25077t.get(), dVar)));
+        this.f24293y.sendMessage(this.f24293y.obtainMessage(4, new p0(new y0(i10, aVar), this.f24288t.get(), dVar)));
     }
 
     public final void B(ef.d dVar, int i10, q qVar, wg.k kVar, o oVar) {
         k(kVar, qVar.d(), dVar);
-        this.f25082y.sendMessage(this.f25082y.obtainMessage(4, new p0(new z0(i10, qVar, kVar, oVar), this.f25077t.get(), dVar)));
+        this.f24293y.sendMessage(this.f24293y.obtainMessage(4, new p0(new z0(i10, qVar, kVar, oVar), this.f24288t.get(), dVar)));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void C(gf.n nVar, int i10, long j10, int i11) {
-        this.f25082y.sendMessage(this.f25082y.obtainMessage(18, new o0(nVar, i10, j10, i11)));
+        this.f24293y.sendMessage(this.f24293y.obtainMessage(18, new o0(nVar, i10, j10, i11)));
     }
 
     public final void D(com.google.android.gms.common.b bVar, int i10) {
         if (!f(bVar, i10)) {
-            Handler handler = this.f25082y;
+            Handler handler = this.f24293y;
             handler.sendMessage(handler.obtainMessage(5, i10, 0, bVar));
         }
     }
 
     public final void E() {
-        Handler handler = this.f25082y;
+        Handler handler = this.f24293y;
         handler.sendMessage(handler.obtainMessage(3));
     }
 
     public final void F(ef.d dVar) {
-        Handler handler = this.f25082y;
+        Handler handler = this.f24293y;
         handler.sendMessage(handler.obtainMessage(7, dVar));
     }
 
     public final void b(w wVar) {
         synchronized (C) {
             try {
-                if (this.f25079v != wVar) {
-                    this.f25079v = wVar;
-                    this.f25080w.clear();
+                if (this.f24290v != wVar) {
+                    this.f24290v = wVar;
+                    this.f24291w.clear();
                 }
-                this.f25080w.addAll(wVar.t());
+                this.f24291w.addAll(wVar.t());
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -217,9 +217,9 @@ public class e implements Handler.Callback {
     public final void c(w wVar) {
         synchronized (C) {
             try {
-                if (this.f25079v == wVar) {
-                    this.f25079v = null;
-                    this.f25080w.clear();
+                if (this.f24290v == wVar) {
+                    this.f24290v = null;
+                    this.f24291w.clear();
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -229,14 +229,14 @@ public class e implements Handler.Callback {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final boolean e() {
-        if (this.f25070e) {
+        if (this.f24281e) {
             return false;
         }
         gf.s a10 = gf.r.b().a();
         if (a10 != null && !a10.d()) {
             return false;
         }
-        int a11 = this.f25075r.a(this.f25073p, 203400000);
+        int a11 = this.f24286r.a(this.f24284p, 203400000);
         if (a11 != -1 && a11 != 0) {
             return false;
         }
@@ -245,7 +245,7 @@ public class e implements Handler.Callback {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final boolean f(com.google.android.gms.common.b bVar, int i10) {
-        return this.f25074q.w(this.f25073p, bVar, i10);
+        return this.f24285q.w(this.f24284p, bVar, i10);
     }
 
     @Override // android.os.Handler.Callback
@@ -262,18 +262,18 @@ public class e implements Handler.Callback {
                 if (true == ((Boolean) message.obj).booleanValue()) {
                     j10 = 10000;
                 }
-                this.f25069d = j10;
-                this.f25082y.removeMessages(12);
-                for (b bVar5 : this.f25078u.keySet()) {
-                    Handler handler = this.f25082y;
-                    handler.sendMessageDelayed(handler.obtainMessage(12, bVar5), this.f25069d);
+                this.f24280d = j10;
+                this.f24293y.removeMessages(12);
+                for (b bVar5 : this.f24289u.keySet()) {
+                    Handler handler = this.f24293y;
+                    handler.sendMessageDelayed(handler.obtainMessage(12, bVar5), this.f24280d);
                 }
                 break;
             case 2:
                 android.support.v4.media.session.b.a(message.obj);
                 throw null;
             case 3:
-                for (e0 e0Var2 : this.f25078u.values()) {
+                for (e0 e0Var2 : this.f24289u.values()) {
                     e0Var2.D();
                     e0Var2.E();
                 }
@@ -282,22 +282,22 @@ public class e implements Handler.Callback {
             case 8:
             case 13:
                 p0 p0Var = (p0) message.obj;
-                e0 e0Var3 = (e0) this.f25078u.get(p0Var.f25139c.t());
+                e0 e0Var3 = (e0) this.f24289u.get(p0Var.f24350c.t());
                 if (e0Var3 == null) {
-                    e0Var3 = h(p0Var.f25139c);
+                    e0Var3 = h(p0Var.f24350c);
                 }
-                if (e0Var3.a() && this.f25077t.get() != p0Var.f25138b) {
-                    p0Var.f25137a.a(A);
+                if (e0Var3.a() && this.f24288t.get() != p0Var.f24349b) {
+                    p0Var.f24348a.a(A);
                     e0Var3.K();
                     break;
                 } else {
-                    e0Var3.F(p0Var.f25137a);
+                    e0Var3.F(p0Var.f24348a);
                     break;
                 }
             case 5:
                 int i11 = message.arg1;
                 com.google.android.gms.common.b bVar6 = (com.google.android.gms.common.b) message.obj;
-                Iterator it = this.f25078u.values().iterator();
+                Iterator it = this.f24289u.values().iterator();
                 while (true) {
                     if (it.hasNext()) {
                         e0 e0Var4 = (e0) it.next();
@@ -308,7 +308,7 @@ public class e implements Handler.Callback {
                 }
                 if (e0Var != null) {
                     if (bVar6.b() == 13) {
-                        String e10 = this.f25074q.e(bVar6.b());
+                        String e10 = this.f24285q.e(bVar6.b());
                         String c10 = bVar6.c();
                         e0.y(e0Var, new Status(17, "Error resolution was canceled by the user, original error message: " + e10 + ": " + c10));
                         break;
@@ -321,11 +321,11 @@ public class e implements Handler.Callback {
                     break;
                 }
             case 6:
-                if (this.f25073p.getApplicationContext() instanceof Application) {
-                    c.c((Application) this.f25073p.getApplicationContext());
+                if (this.f24284p.getApplicationContext() instanceof Application) {
+                    c.c((Application) this.f24284p.getApplicationContext());
                     c.b().a(new z(this));
                     if (!c.b().e(true)) {
-                        this.f25069d = LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES;
+                        this.f24280d = LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES;
                         break;
                     }
                 }
@@ -334,29 +334,29 @@ public class e implements Handler.Callback {
                 h((ef.d) message.obj);
                 break;
             case 9:
-                if (this.f25078u.containsKey(message.obj)) {
-                    ((e0) this.f25078u.get(message.obj)).J();
+                if (this.f24289u.containsKey(message.obj)) {
+                    ((e0) this.f24289u.get(message.obj)).J();
                     break;
                 }
                 break;
             case 10:
-                for (b bVar7 : this.f25081x) {
-                    e0 e0Var5 = (e0) this.f25078u.remove(bVar7);
+                for (b bVar7 : this.f24292x) {
+                    e0 e0Var5 = (e0) this.f24289u.remove(bVar7);
                     if (e0Var5 != null) {
                         e0Var5.K();
                     }
                 }
-                this.f25081x.clear();
+                this.f24292x.clear();
                 break;
             case 11:
-                if (this.f25078u.containsKey(message.obj)) {
-                    ((e0) this.f25078u.get(message.obj)).L();
+                if (this.f24289u.containsKey(message.obj)) {
+                    ((e0) this.f24289u.get(message.obj)).L();
                     break;
                 }
                 break;
             case 12:
-                if (this.f25078u.containsKey(message.obj)) {
-                    ((e0) this.f25078u.get(message.obj)).b();
+                if (this.f24289u.containsKey(message.obj)) {
+                    ((e0) this.f24289u.get(message.obj)).b();
                     break;
                 }
                 break;
@@ -365,22 +365,22 @@ public class e implements Handler.Callback {
                 throw null;
             case 15:
                 g0 g0Var = (g0) message.obj;
-                Map map = this.f25078u;
-                bVar = g0Var.f25105a;
+                Map map = this.f24289u;
+                bVar = g0Var.f24316a;
                 if (map.containsKey(bVar)) {
-                    Map map2 = this.f25078u;
-                    bVar2 = g0Var.f25105a;
+                    Map map2 = this.f24289u;
+                    bVar2 = g0Var.f24316a;
                     e0.B((e0) map2.get(bVar2), g0Var);
                     break;
                 }
                 break;
             case 16:
                 g0 g0Var2 = (g0) message.obj;
-                Map map3 = this.f25078u;
-                bVar3 = g0Var2.f25105a;
+                Map map3 = this.f24289u;
+                bVar3 = g0Var2.f24316a;
                 if (map3.containsKey(bVar3)) {
-                    Map map4 = this.f25078u;
-                    bVar4 = g0Var2.f25105a;
+                    Map map4 = this.f24289u;
+                    bVar4 = g0Var2.f24316a;
                     e0.C((e0) map4.get(bVar4), g0Var2);
                     break;
                 }
@@ -390,32 +390,32 @@ public class e implements Handler.Callback {
                 break;
             case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                 o0 o0Var = (o0) message.obj;
-                if (o0Var.f25135c == 0) {
-                    i().d(new gf.u(o0Var.f25134b, Arrays.asList(o0Var.f25133a)));
+                if (o0Var.f24346c == 0) {
+                    i().d(new gf.u(o0Var.f24345b, Arrays.asList(o0Var.f24344a)));
                     break;
                 } else {
-                    gf.u uVar = this.f25071i;
+                    gf.u uVar = this.f24282i;
                     if (uVar != null) {
                         List c11 = uVar.c();
-                        if (uVar.b() == o0Var.f25134b && (c11 == null || c11.size() < o0Var.f25136d)) {
-                            this.f25071i.d(o0Var.f25133a);
+                        if (uVar.b() == o0Var.f24345b && (c11 == null || c11.size() < o0Var.f24347d)) {
+                            this.f24282i.d(o0Var.f24344a);
                         } else {
-                            this.f25082y.removeMessages(17);
+                            this.f24293y.removeMessages(17);
                             j();
                         }
                     }
-                    if (this.f25071i == null) {
+                    if (this.f24282i == null) {
                         ArrayList arrayList = new ArrayList();
-                        arrayList.add(o0Var.f25133a);
-                        this.f25071i = new gf.u(o0Var.f25134b, arrayList);
-                        Handler handler2 = this.f25082y;
-                        handler2.sendMessageDelayed(handler2.obtainMessage(17), o0Var.f25135c);
+                        arrayList.add(o0Var.f24344a);
+                        this.f24282i = new gf.u(o0Var.f24345b, arrayList);
+                        Handler handler2 = this.f24293y;
+                        handler2.sendMessageDelayed(handler2.obtainMessage(17), o0Var.f24346c);
                         break;
                     }
                 }
                 break;
             case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                this.f25070e = false;
+                this.f24281e = false;
                 break;
             default:
                 Log.w("GoogleApiManager", "Unknown message id: " + i10);
@@ -425,11 +425,11 @@ public class e implements Handler.Callback {
     }
 
     public final int l() {
-        return this.f25076s.getAndIncrement();
+        return this.f24287s.getAndIncrement();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final e0 t(b bVar) {
-        return (e0) this.f25078u.get(bVar);
+        return (e0) this.f24289u.get(bVar);
     }
 }

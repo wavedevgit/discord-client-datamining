@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stage_channels/native/components/StageSectionHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun69223: for (var _fun69223_ip = 0;;) switch (_fun69223_ip) {
+        _fun69332: for (var _fun69332_ip = 0;;) switch (_fun69332_ip) {
             case 0:
                 var1 = arg0;
                 var14 = var1.label;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var8.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
                 var0 = function() {
-                    _fun69224: for (var _fun69224_ip = 0;;) switch (_fun69224_ip) {
+                    _fun69333: for (var _fun69333_ip = 0;;) switch (_fun69333_ip) {
                         case 0:
                             var0 = {};
                             var2 = {};
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = _closure2_slot0;
                             var3 = '0deg';
                             if (!var1) {
-                                _fun69224_ip = 56;
-                                continue _fun69224
+                                _fun69333_ip = 56;
+                                continue _fun69333
                             }
                         case 50:
                             var3 = '180deg';
@@ -189,8 +189,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = null;
                 var8 = var8 != var16;
                 if (!var8) {
-                    _fun69223_ip = 300;
-                    continue _fun69223
+                    _fun69332_ip = 300;
+                    continue _fun69332
                 }
             case 271:
                 var14 = _closure1_slot6;
@@ -239,4 +239,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3681, 4058, 3902, 4047, 8622, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3711, 4088, 3932, 4077, 8654, 2]);

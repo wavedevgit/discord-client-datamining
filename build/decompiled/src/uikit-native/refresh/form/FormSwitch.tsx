@@ -57,15 +57,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/refresh/form/FormSwitch.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun48042: for (var _fun48042_ip = 0;;) switch (_fun48042_ip) {
+        _fun48148: for (var _fun48148_ip = 0;;) switch (_fun48148_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.value;
                 var3 = undefined;
                 var7 = var3 !== var0;
                 if (!var7) {
-                    _fun48042_ip = 20;
-                    continue _fun48042
+                    _fun48148_ip = 20;
+                    continue _fun48148
                 }
             case 17:
                 var7 = var0;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.disabled;
                 var8 = var3 !== var0;
                 if (!var8) {
-                    _fun48042_ip = 35;
-                    continue _fun48042
+                    _fun48148_ip = 35;
+                    continue _fun48148
                 }
             case 32:
                 var8 = var0;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.renderIosBackground;
                 var13 = var3 !== var0;
                 if (!var13) {
-                    _fun48042_ip = 84;
-                    continue _fun48042
+                    _fun48148_ip = 84;
+                    continue _fun48148
                 }
             case 81:
                 var13 = var0;
@@ -105,16 +105,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var1.tintColor;
                 var1 = null;
                 if (!(var1 == var14)) {
-                    _fun48042_ip = 141;
-                    continue _fun48042
+                    _fun48148_ip = 141;
+                    continue _fun48148
                 }
             case 131:
                 var2 = var9.track;
                 var14 = var2.color;
             case 141:
                 if (!(var1 == var12)) {
-                    _fun48042_ip = 212;
-                    continue _fun48042
+                    _fun48148_ip = 212;
+                    continue _fun48148
                 }
             case 145:
                 var2 = _closure1_slot0;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var2)(var15);
                 var12 = undefined;
                 if (!var1) {
-                    _fun48042_ip = 212;
-                    continue _fun48042
+                    _fun48148_ip = 212;
+                    continue _fun48148
                 }
             case 181:
                 var2 = _closure1_slot1;
@@ -149,14 +149,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = false;
                 var11 = undefined;
                 if (!(var14 === var7)) {
-                    _fun48042_ip = 259;
-                    continue _fun48042
+                    _fun48148_ip = 259;
+                    continue _fun48148
                 }
             case 251:
                 var11 = undefined;
                 if (!var13) {
-                    _fun48042_ip = 259;
-                    continue _fun48042
+                    _fun48148_ip = 259;
+                    continue _fun48148
                 }
             case 256:
                 var11 = var12;
@@ -182,4 +182,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3207, 3167, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3237, 3197, 2]);

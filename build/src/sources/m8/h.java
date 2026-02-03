@@ -5,10 +5,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 public abstract class h implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    protected final AtomicInteger f37861d = new AtomicInteger(0);
+    protected final AtomicInteger f37841d = new AtomicInteger(0);
 
     public void a() {
-        if (this.f37861d.compareAndSet(0, 2)) {
+        if (this.f37841d.compareAndSet(0, 2)) {
             d();
         }
     }
@@ -25,19 +25,19 @@ public abstract class h implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
-        if (!this.f37861d.compareAndSet(0, 1)) {
+        if (!this.f37841d.compareAndSet(0, 1)) {
             return;
         }
         try {
             Object c10 = c();
-            this.f37861d.set(3);
+            this.f37841d.set(3);
             try {
                 f(c10);
             } finally {
                 b(c10);
             }
         } catch (Exception e10) {
-            this.f37861d.set(4);
+            this.f37841d.set(4);
             e(e10);
         }
     }

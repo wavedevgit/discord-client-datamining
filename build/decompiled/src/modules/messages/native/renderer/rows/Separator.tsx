@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/rows/Separator.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun92527: for (var _fun92527_ip = 0;;) switch (_fun92527_ip) {
+        _fun92522: for (var _fun92522_ip = 0;;) switch (_fun92522_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.rowType;
@@ -65,22 +65,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot3;
                 var6 = var6.DAY;
                 if (!(var6 !== var4)) {
-                    _fun92527_ip = 225;
-                    continue _fun92527
+                    _fun92522_ip = 225;
+                    continue _fun92522
                 }
             case 49:
                 var6 = _closure1_slot3;
                 var6 = var6.UNREAD;
                 if (!(var6 !== var4)) {
-                    _fun92527_ip = 179;
-                    continue _fun92527
+                    _fun92522_ip = 179;
+                    continue _fun92522
                 }
             case 63:
                 var6 = _closure1_slot3;
                 var6 = var6.SUMMARY;
                 if (!(var6 !== var4)) {
-                    _fun92527_ip = 110;
-                    continue _fun92527
+                    _fun92522_ip = 110;
+                    continue _fun92522
                 }
             case 77:
                 var7 = _closure1_slot0;
@@ -135,4 +135,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateSeparatorRowData = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6481, 1297, 671, 1304, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6512, 1297, 671, 1304, 2]);

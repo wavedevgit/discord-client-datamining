@@ -2,7 +2,7 @@ package r4;
 
 import android.os.Handler;
 import android.os.Looper;
-import gs.u0;
+import hs.u0;
 import java.util.concurrent.Executor;
 import kotlinx.coroutines.CoroutineDispatcher;
 import q4.p;
@@ -10,16 +10,16 @@ import q4.p;
 public class c implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final p f48043a;
+    private final p f48245a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CoroutineDispatcher f48044b;
+    private final CoroutineDispatcher f48246b;
 
     /* renamed from: c  reason: collision with root package name */
-    final Handler f48045c = new Handler(Looper.getMainLooper());
+    final Handler f48247c = new Handler(Looper.getMainLooper());
 
     /* renamed from: d  reason: collision with root package name */
-    private final Executor f48046d = new a();
+    private final Executor f48248d = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Executor {
@@ -28,29 +28,29 @@ public class c implements b {
 
         @Override // java.util.concurrent.Executor
         public void execute(Runnable runnable) {
-            c.this.f48045c.post(runnable);
+            c.this.f48247c.post(runnable);
         }
     }
 
     public c(Executor executor) {
         p pVar = new p(executor);
-        this.f48043a = pVar;
-        this.f48044b = u0.b(pVar);
+        this.f48245a = pVar;
+        this.f48246b = u0.b(pVar);
     }
 
     @Override // r4.b
     public Executor a() {
-        return this.f48046d;
+        return this.f48248d;
     }
 
     @Override // r4.b
     public CoroutineDispatcher b() {
-        return this.f48044b;
+        return this.f48246b;
     }
 
     @Override // r4.b
     /* renamed from: e */
     public p c() {
-        return this.f48043a;
+        return this.f48245a;
     }
 }

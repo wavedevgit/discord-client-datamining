@@ -7,22 +7,22 @@ import android.widget.ImageButton;
 public abstract class p extends ImageButton {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f16216d;
+    private int f15845d;
 
     public p(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f16216d = getVisibility();
+        this.f15845d = getVisibility();
     }
 
     public final void b(int i10, boolean z10) {
         super.setVisibility(i10);
         if (z10) {
-            this.f16216d = i10;
+            this.f15845d = i10;
         }
     }
 
     public final int getUserSetVisibility() {
-        return this.f16216d;
+        return this.f15845d;
     }
 
     @Override // android.widget.ImageView, android.view.View

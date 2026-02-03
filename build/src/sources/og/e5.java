@@ -5,44 +5,44 @@ import ui.c;
 final class e5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final e5 f42990a = new e5();
+    static final e5 f43118a = new e5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f42991b;
+    private static final ui.c f43119b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f42992c;
+    private static final ui.c f43120c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f42993d;
+    private static final ui.c f43121d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f42994e;
+    private static final ui.c f43122e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f42995f;
+    private static final ui.c f43123f;
 
     static {
         c.b a10 = ui.c.a("remoteModelOptions");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f42991b = a10.b(s1Var.b()).a();
+        f43119b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("localModelOptions");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f42992c = a11.b(s1Var2.b()).a();
+        f43120c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("errorCodes");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f42993d = a12.b(s1Var3.b()).a();
+        f43121d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("modelInitializationMs");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f42994e = a13.b(s1Var4.b()).a();
+        f43122e = a13.b(s1Var4.b()).a();
         c.b a14 = ui.c.a("isNnApiEnabled");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f42995f = a14.b(s1Var5.b()).a();
+        f43123f = a14.b(s1Var5.b()).a();
     }
 
     private e5() {

@@ -62,7 +62,7 @@ public final class AFe1qSDK {
             @Override // kotlin.jvm.functions.Function1
             public final /* synthetic */ Object invoke(Object obj) {
                 getMonetizationNetwork((AFe1uSDK) obj);
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
         });
     }

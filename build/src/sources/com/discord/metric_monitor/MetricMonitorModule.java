@@ -5,7 +5,7 @@ import com.discord.metric_monitor.MetricEvent;
 import com.discord.metric_monitor.MetricMonitorModule;
 import com.discord.reactevents.ReactEvents;
 import com.facebook.react.bridge.ReactApplicationContext;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -53,7 +53,7 @@ public final class MetricMonitorModule extends NativeMetricMonitorModuleSpec {
     public static final Unit _init_$lambda$0(MetricMonitorModule metricMonitorModule, ReactApplicationContext reactApplicationContext, MetricEvent metric) {
         Intrinsics.checkNotNullParameter(metric, "metric");
         metricMonitorModule.reactEvents.emitModuleEvent(reactApplicationContext, metric);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // com.discord.codegen.NativeMetricMonitorModuleSpec

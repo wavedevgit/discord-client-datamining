@@ -1,536 +1,338 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun24365: for (var _fun24365_ip = 0;;) switch (_fun24365_ip) {
-        case 0:
-            var3 = require;
-            var2 = function arg0() {
-                var3 = arg0;
-                var4 = function arg0, arg1, arg2() {
-                    _fun24367: for (var _fun24367_ip = 0;;) switch (_fun24367_ip) {
-                        case 0:
-                            var4 = arg0;
-                            var2 = arg1;
-                            var3 = arg2;
-                            var0 = ' ';
-                            var1 = var4 + var0;
-                            var0 = 'ss';
-                            if (!(var0 !== var3)) {
-                                _fun24367_ip = 374;
-                                continue _fun24367
-                            }
-                        case 30:
-                            var0 = 'm';
-                            if (!(var0 !== var3)) {
-                                _fun24367_ip = 357;
-                                continue _fun24367
-                            }
-                        case 41:
-                            var0 = 'mm';
-                            if (!(var0 !== var3)) {
-                                _fun24367_ip = 307;
-                                continue _fun24367
-                            }
-                        case 52:
-                            var0 = 'h';
-                            if (!(var0 !== var3)) {
-                                _fun24367_ip = 290;
-                                continue _fun24367
-                            }
-                        case 63:
-                            var0 = 'hh';
-                            if (!(var0 !== var3)) {
-                                _fun24367_ip = 237;
-                                continue _fun24367
-                            }
-                        case 74:
-                            var0 = 'dd';
-                            if (!(var0 !== var3)) {
-                                _fun24367_ip = 212;
-                                continue _fun24367
-                            }
-                        case 85:
-                            var0 = 'MM';
-                            if (!(var0 !== var3)) {
-                                _fun24367_ip = 157;
-                                continue _fun24367
-                            }
-                        case 93:
-                            var0 = 'yy';
-                            if (!(var0 !== var3)) {
-                                _fun24367_ip = 105;
-                                continue _fun24367
-                            }
-                        case 101:
-                            var0 = undefined;
-                            return var0;
-                        case 105:
-                            var3 = 'godina';
-                            var5 = 1;
-                            var0 = var3;
-                            if (!(var5 !== var4)) {
-                                _fun24367_ip = 151;
-                                continue _fun24367
-                            }
-                        case 121:
-                            var5 = 2;
-                            if (!(var5 !== var4)) {
-                                _fun24367_ip = 142;
-                                continue _fun24367
-                            }
-                        case 128:
-                            var5 = 3;
-                            if (!(var5 !== var4)) {
-                                _fun24367_ip = 142;
-                                continue _fun24367
-                            }
-                        case 135:
-                            var5 = 4;
-                            if (!(var5 === var4)) {
-                                _fun24367_ip = 148;
-                                continue _fun24367
-                            }
-                        case 142:
-                            var3 = 'godine';
-                        case 148:
-                            var0 = var3;
-                        case 151:
-                            var0 = var1 + var0;
-                            return var0;
-                        case 157:
-                            var0 = 'mjesec';
-                            var3 = 1;
-                            if (!(var3 !== var4)) {
-                                _fun24367_ip = 206;
-                                continue _fun24367
-                            }
-                        case 170:
-                            var3 = 2;
-                            if (!(var3 !== var4)) {
-                                _fun24367_ip = 197;
-                                continue _fun24367
-                            }
-                        case 177:
-                            var3 = 3;
-                            if (!(var3 !== var4)) {
-                                _fun24367_ip = 197;
-                                continue _fun24367
-                            }
-                        case 184:
-                            var3 = 'mjeseci';
-                            var5 = 4;
-                            if (!(var5 === var4)) {
-                                _fun24367_ip = 203;
-                                continue _fun24367
-                            }
-                        case 197:
-                            var3 = 'mjeseca';
-                        case 203:
-                            var0 = var3;
-                        case 206:
-                            var0 = var1 + var0;
-                            return var0;
-                        case 212:
-                            var0 = 'dana';
-                            var3 = 1;
-                            if (!(var3 === var4)) {
-                                _fun24367_ip = 231;
-                                continue _fun24367
-                            }
-                        case 225:
-                            var0 = 'dan';
-                        case 231:
-                            var0 = var1 + var0;
-                            return var0;
-                        case 237:
-                            var0 = 'sat';
-                            var3 = 1;
-                            if (!(var3 !== var4)) {
-                                _fun24367_ip = 284;
-                                continue _fun24367
-                            }
-                        case 248:
-                            var3 = 2;
-                            if (!(var3 !== var4)) {
-                                _fun24367_ip = 275;
-                                continue _fun24367
-                            }
-                        case 255:
-                            var3 = 3;
-                            if (!(var3 !== var4)) {
-                                _fun24367_ip = 275;
-                                continue _fun24367
-                            }
-                        case 262:
-                            var3 = 'sati';
-                            var5 = 4;
-                            if (!(var5 === var4)) {
-                                _fun24367_ip = 281;
-                                continue _fun24367
-                            }
-                        case 275:
-                            var3 = 'sata';
-                        case 281:
-                            var0 = var3;
-                        case 284:
-                            var0 = var1 + var0;
-                            return var0;
-                        case 290:
-                            var0 = 'jednog sata';
-                            if (!var2) {
-                                _fun24367_ip = 305;
-                                continue _fun24367
-                            }
-                        case 299:
-                            var0 = 'jedan sat';
-                        case 305:
-                            return var0;
-                        case 307:
-                            var3 = 'minuta';
-                            var5 = 1;
-                            var0 = var3;
-                            if (!(var5 !== var4)) {
-                                _fun24367_ip = 351;
-                                continue _fun24367
-                            }
-                        case 323:
-                            var5 = 2;
-                            if (!(var5 !== var4)) {
-                                _fun24367_ip = 344;
-                                continue _fun24367
-                            }
-                        case 330:
-                            var5 = 3;
-                            if (!(var5 !== var4)) {
-                                _fun24367_ip = 344;
-                                continue _fun24367
-                            }
-                        case 337:
-                            var5 = 4;
-                            if (!(var5 === var4)) {
-                                _fun24367_ip = 348;
-                                continue _fun24367
-                            }
-                        case 344:
-                            var3 = 'minute';
-                        case 348:
-                            var0 = var3;
-                        case 351:
-                            var0 = var1 + var0;
-                            return var0;
-                        case 357:
-                            var0 = 'jedne minute';
-                            if (!var2) {
-                                _fun24367_ip = 372;
-                                continue _fun24367
-                            }
-                        case 366:
-                            var0 = 'jedna minuta';
-                        case 372:
-                            return var0;
-                        case 374:
-                            var0 = 'sekunda';
-                            var2 = 1;
-                            if (!(var2 !== var4)) {
-                                _fun24367_ip = 423;
-                                continue _fun24367
-                            }
-                        case 387:
-                            var2 = 2;
-                            if (!(var2 !== var4)) {
-                                _fun24367_ip = 414;
-                                continue _fun24367
-                            }
-                        case 394:
-                            var2 = 3;
-                            if (!(var2 !== var4)) {
-                                _fun24367_ip = 414;
-                                continue _fun24367
-                            }
-                        case 401:
-                            var2 = 'sekundi';
-                            var3 = 4;
-                            if (!(var3 === var4)) {
-                                _fun24367_ip = 420;
-                                continue _fun24367
-                            }
-                        case 414:
-                            var2 = 'sekunde';
-                        case 420:
-                            var0 = var2;
-                        case 423:
-                            var0 = var1 + var0;
-                            return var0;
-                    }
-                };
-                var2 = var3.defineLocale;
+    var6 = require;
+    var1 = exports;
+    var7 = dependencyMap;
+    var5 = function arg0() {
+        _fun24025: for (var _fun24025_ip = 0;;) switch (_fun24025_ip) {
+            case 0:
+                var2 = arg0;
+                if (!var2) {
+                    _fun24025_ip = 18;
+                    continue _fun24025
+                }
+            case 6:
+                var1 = var2.__esModule;
+                var0 = var2;
+                if (var1) {
+                    _fun24025_ip = 27;
+                    continue _fun24025
+                }
+            case 18:
                 var1 = {};
-                var0 = {};
-                var7 = 'siječnja_veljače_ožujka_travnja_svibnja_lipnja_srpnja_kolovoza_rujna_listopada_studenoga_prosinca';
-                var6 = var7.split;
-                var8 = '_';
-                var6 = var6.bind(var7)(var8);
-                var0.format = var6;
-                var7 = 'siječanj_veljača_ožujak_travanj_svibanj_lipanj_srpanj_kolovoz_rujan_listopad_studeni_prosinac';
-                var6 = var7.split;
-                var6 = var6.bind(var7)(var8);
-                var0.standalone = var6;
-                var1.months = var0;
-                var6 = 'sij._velj._ožu._tra._svi._lip._srp._kol._ruj._lis._stu._pro.';
-                var0 = var6.split;
-                var0 = var0.bind(var6)(var8);
-                var1.monthsShort = var0;
-                var0 = true;
-                var1.monthsParseExact = var0;
-                var7 = 'nedjelja_ponedjeljak_utorak_srijeda_četvrtak_petak_subota';
-                var6 = var7.split;
-                var6 = var6.bind(var7)(var8);
-                var1.weekdays = var6;
-                var7 = 'ned._pon._uto._sri._čet._pet._sub.';
-                var6 = var7.split;
-                var6 = var6.bind(var7)(var8);
-                var1.weekdaysShort = var6;
-                var7 = 'ne_po_ut_sr_če_pe_su';
-                var6 = var7.split;
-                var6 = var6.bind(var7)(var8);
-                var1.weekdaysMin = var6;
-                var1.weekdaysParseExact = var0;
-                var0 = {
-                    'LT': 'H:mm',
-                    'LTS': 'H:mm:ss',
-                    'L': 'DD.MM.YYYY',
-                    'LL': 'D. MMMM YYYY',
-                    'LLL': 'D. MMMM YYYY H:mm',
-                    'LLLL': 'dddd, D. MMMM YYYY H:mm'
-                };
-                var1.longDateFormat = var0;
-                var0 = {
-                    'sameDay': '[danas u] LT',
-                    'nextDay': '[sutra u] LT',
-                    'nextWeek': null,
-                    'lastDay': '[jučer u] LT',
-                    'lastWeek': null,
-                    'sameElse': 'L'
-                };
-                var6 = function() {
-                    _fun24368: for (var _fun24368_ip = 0;;) switch (_fun24368_ip) {
-                        case 0:
-                            var1 = this;
-                            var0 = var1.day;
-                            var1 = var0.bind(var1)();
-                            var0 = 0;
-                            if (!(var0 !== var1)) {
-                                _fun24368_ip = 89;
-                                continue _fun24368
-                            }
-                        case 19:
-                            var0 = 3;
-                            if (!(var0 !== var1)) {
-                                _fun24368_ip = 81;
-                                continue _fun24368
-                            }
-                        case 26:
-                            var0 = 6;
-                            if (!(var0 !== var1)) {
-                                _fun24368_ip = 73;
-                                continue _fun24368
-                            }
-                        case 33:
-                            var0 = 1;
-                            if (!(var0 !== var1)) {
-                                _fun24368_ip = 65;
-                                continue _fun24368
-                            }
-                        case 40:
-                            var0 = 2;
-                            if (!(var0 !== var1)) {
-                                _fun24368_ip = 65;
-                                continue _fun24368
-                            }
-                        case 47:
-                            var0 = 4;
-                            if (!(var0 !== var1)) {
-                                _fun24368_ip = 65;
-                                continue _fun24368
-                            }
-                        case 54:
-                            var0 = 5;
-                            if (!(var0 !== var1)) {
-                                _fun24368_ip = 65;
-                                continue _fun24368
-                            }
-                        case 61:
-                            var0 = undefined;
-                            return var0;
-                        case 65:
-                            var0 = '[u] dddd [u] LT';
-                            return var0;
-                        case 73:
-                            var0 = '[u] [subotu] [u] LT';
-                            return var0;
-                        case 81:
-                            var0 = '[u] [srijedu] [u] LT';
-                            return var0;
-                        case 89:
-                            var0 = '[u] [nedjelju] [u] LT';
-                            return var0;
-                    }
-                };
-                var0.nextWeek = var6;
-                var5 = function() {
-                    _fun24369: for (var _fun24369_ip = 0;;) switch (_fun24369_ip) {
-                        case 0:
-                            var1 = this;
-                            var0 = var1.day;
-                            var1 = var0.bind(var1)();
-                            var0 = 0;
-                            if (!(var0 !== var1)) {
-                                _fun24369_ip = 81;
-                                continue _fun24369
-                            }
-                        case 19:
-                            var0 = 3;
-                            if (!(var0 !== var1)) {
-                                _fun24369_ip = 81;
-                                continue _fun24369
-                            }
-                        case 26:
-                            var0 = 6;
-                            if (!(var0 !== var1)) {
-                                _fun24369_ip = 73;
-                                continue _fun24369
-                            }
-                        case 33:
-                            var0 = 1;
-                            if (!(var0 !== var1)) {
-                                _fun24369_ip = 65;
-                                continue _fun24369
-                            }
-                        case 40:
-                            var0 = 2;
-                            if (!(var0 !== var1)) {
-                                _fun24369_ip = 65;
-                                continue _fun24369
-                            }
-                        case 47:
-                            var0 = 4;
-                            if (!(var0 !== var1)) {
-                                _fun24369_ip = 65;
-                                continue _fun24369
-                            }
-                        case 54:
-                            var0 = 5;
-                            if (!(var0 !== var1)) {
-                                _fun24369_ip = 65;
-                                continue _fun24369
-                            }
-                        case 61:
-                            var0 = undefined;
-                            return var0;
-                        case 65:
-                            var0 = '[prošli] dddd [u] LT';
-                            return var0;
-                        case 73:
-                            var0 = '[prošle] [subote] [u] LT';
-                            return var0;
-                        case 81:
-                            var0 = '[prošlu] dddd [u] LT';
-                            return var0;
-                    }
-                };
-                var0.lastWeek = var5;
-                var1.calendar = var0;
-                var0 = {
-                    'future': 'za %s',
-                    'past': 'prije %s',
-                    's': 'par sekundi'
-                };
-                var0.ss = var4;
-                var0.m = var4;
-                var0.mm = var4;
-                var0.h = var4;
-                var0.hh = var4;
-                var5 = 'dan';
-                var0.d = var5;
-                var0.dd = var4;
-                var5 = 'mjesec';
-                var0.M = var5;
-                var0.MM = var4;
-                var5 = 'godinu';
-                var0.y = var5;
-                var0.yy = var4;
-                var1.relativeTime = var0;
-                var0 = /\d{1,2}\./;
-                var1.dayOfMonthOrdinalParse = var0;
-                var0 = '%d.';
-                var1.ordinal = var0;
-                var0 = {
-                    'dow': 1,
-                    'doy': 7
-                };
-                var1.week = var0;
-                var0 = 'hr';
-                var0 = var2.bind(var3)(var0, var1);
+                var1.default = var2;
+                var0 = var1;
+            case 27:
                 return var0;
-            };
-            var1 = 'object';
-            var0 = arg5;
-            var0 = typeof var0;
-            if (!(var1 === var0)) {
-                _fun24365_ip = 44;
-                continue _fun24365
-            }
-        case 24:
-            var1 = undefined;
-            var0 = arg4;
-            if (!(var1 !== var0)) {
-                _fun24365_ip = 44;
-                continue _fun24365
-            }
-        case 33:
-            var4 = 'function';
-            var0 = typeof var3;
-            if (!(var4 !== var0)) {
-                _fun24365_ip = 121;
-                continue _fun24365
-            }
-        case 44:
-            var0 = global;
-            var4 = var0.define;
-            var5 = 'function';
-            var4 = typeof var4;
-            if (!(var5 === var4)) {
-                _fun24365_ip = 78;
-                continue _fun24365
-            }
-        case 63:
-            var4 = var0.define;
-            var4 = var4.amd;
-            if (var4) {
-                _fun24365_ip = 95;
-                continue _fun24365
-            }
-        case 78:
-            var4 = this;
-            var5 = var4.moment;
-            var4 = undefined;
-            var4 = var2.bind(var4)(var5);
-            _fun24365_ip = 140;
-            continue _fun24365;
-        case 95:
-            var5 = var0.define;
-            var4 = undefined;
-            var0 = ['../moment'];
-            var0 = var5.bind(var4)(var0, var2);
-            _fun24365_ip = 140;
-            continue _fun24365;
-        case 121:
-            var4 = arg6;
-            var0 = 0;
-            var0 = var4[var0];
-            var0 = var3.bind(var1)(var0);
-            var0 = var2.bind(var1)(var0);
-        case 140:
-            var0 = undefined;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3006]);
+        }
+    };
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = undefined;
+    var1.default = var0;
+    var2 = 0;
+    var2 = var7[var2];
+    var2 = var6.bind(var0)(var2);
+    var3 = var5.bind(var0)(var2);
+    var2 = {};
+    var4 = 1;
+    var4 = var7[var4];
+    var4 = var6.bind(var0)(var4);
+    var4 = var5.bind(var0)(var4);
+    var5 = var4.default;
+    var4 = {};
+    var6 = /^(\d+)/i;
+    var4.matchPattern = var6;
+    var6 = /\d+/i;
+    var4.parsePattern = var6;
+    var6 = function arg0() {
+        var0 = global;
+        var3 = var0.parseInt;
+        var2 = undefined;
+        var1 = arg0;
+        var0 = 10;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var4.valueCallback = var6;
+    var4 = var5.bind(var0)(var4);
+    var2.ordinalNumber = var4;
+    var7 = var3.default;
+    var4 = {};
+    var5 = {};
+    var6 = /^(tcn|scn)/i;
+    var5.narrow = var6;
+    var6 = /^(trước CN|sau CN)/i;
+    var5.abbreviated = var6;
+    var6 = /^(trước Công Nguyên|sau Công Nguyên)/i;
+    var5.wide = var6;
+    var4.matchPatterns = var5;
+    var6 = 'wide';
+    var4.defaultMatchWidth = var6;
+    var5 = {};
+    var9 = new Array(2);
+    var10 = /^t/i;
+    var9[0] = var10;
+    var10 = /^s/i;
+    var9[1] = var10;
+    var5.any = var9;
+    var4.parsePatterns = var5;
+    var5 = 'any';
+    var4.defaultParseWidth = var5;
+    var4 = var7.bind(var0)(var4);
+    var2.era = var4;
+    var7 = var3.default;
+    var4 = {};
+    var9 = {};
+    var10 = /^([1234]|i{1,3}v?)/i;
+    var9.narrow = var10;
+    var10 = /^q([1234]|i{1,3}v?)/i;
+    var9.abbreviated = var10;
+    var10 = /^quý ([1234]|i{1,3}v?)/i;
+    var9.wide = var10;
+    var4.matchPatterns = var9;
+    var4.defaultMatchWidth = var6;
+    var9 = {};
+    var10 = new Array(4);
+    var11 = /(1|i)$/i;
+    var10[0] = var11;
+    var11 = /(2|ii)$/i;
+    var10[1] = var11;
+    var11 = /(3|iii)$/i;
+    var10[2] = var11;
+    var11 = /(4|iv)$/i;
+    var10[3] = var11;
+    var9.any = var10;
+    var4.parsePatterns = var9;
+    var4.defaultParseWidth = var5;
+    var8 = function arg0() {
+        var1 = arg0;
+        var0 = 1;
+        var0 = var1 + var0;
+        return var0;
+    };
+    var4.valueCallback = var8;
+    var4 = var7.bind(var0)(var4);
+    var2.quarter = var4;
+    var7 = var3.default;
+    var4 = {};
+    var8 = {};
+    var9 = /^(0?[2-9]|10|11|12|0?1)/i;
+    var8.narrow = var9;
+    var9 = /^thg[ _]?(0?[1-9](?!\d)|10|11|12)/i;
+    var8.abbreviated = var9;
+    var9 = /^tháng ?(Một|Hai|Ba|Tư|Năm|Sáu|Bảy|Tám|Chín|Mười|Mười ?Một|Mười ?Hai|0?[1-9](?!\d)|10|11|12)/i;
+    var8.wide = var9;
+    var4.matchPatterns = var8;
+    var4.defaultMatchWidth = var6;
+    var8 = {};
+    var9 = new Array(12);
+    var10 = /0?1$/i;
+    var9[0] = var10;
+    var10 = /0?2/i;
+    var9[1] = var10;
+    var10 = /3/;
+    var9[2] = var10;
+    var10 = /4/;
+    var9[3] = var10;
+    var10 = /5/;
+    var9[4] = var10;
+    var10 = /6/;
+    var9[5] = var10;
+    var10 = /7/;
+    var9[6] = var10;
+    var10 = /8/;
+    var9[7] = var10;
+    var10 = /9/;
+    var9[8] = var10;
+    var10 = /10/;
+    var9[9] = var10;
+    var10 = /11/;
+    var9[10] = var10;
+    var10 = /12/;
+    var9[11] = var10;
+    var8.narrow = var9;
+    var9 = new Array(12);
+    var10 = /^thg[ _]?0?1(?!\d)/i;
+    var9[0] = var10;
+    var10 = /^thg[ _]?0?2/i;
+    var9[1] = var10;
+    var10 = /^thg[ _]?0?3/i;
+    var9[2] = var10;
+    var10 = /^thg[ _]?0?4/i;
+    var9[3] = var10;
+    var10 = /^thg[ _]?0?5/i;
+    var9[4] = var10;
+    var10 = /^thg[ _]?0?6/i;
+    var9[5] = var10;
+    var10 = /^thg[ _]?0?7/i;
+    var9[6] = var10;
+    var10 = /^thg[ _]?0?8/i;
+    var9[7] = var10;
+    var10 = /^thg[ _]?0?9/i;
+    var9[8] = var10;
+    var10 = /^thg[ _]?10/i;
+    var9[9] = var10;
+    var10 = /^thg[ _]?11/i;
+    var9[10] = var10;
+    var10 = /^thg[ _]?12/i;
+    var9[11] = var10;
+    var8.abbreviated = var9;
+    var9 = new Array(12);
+    var10 = /^tháng ?(Một|0?1(?!\d))/i;
+    var9[0] = var10;
+    var10 = /^tháng ?(Hai|0?2)/i;
+    var9[1] = var10;
+    var10 = /^tháng ?(Ba|0?3)/i;
+    var9[2] = var10;
+    var10 = /^tháng ?(Tư|0?4)/i;
+    var9[3] = var10;
+    var10 = /^tháng ?(Năm|0?5)/i;
+    var9[4] = var10;
+    var10 = /^tháng ?(Sáu|0?6)/i;
+    var9[5] = var10;
+    var10 = /^tháng ?(Bảy|0?7)/i;
+    var9[6] = var10;
+    var10 = /^tháng ?(Tám|0?8)/i;
+    var9[7] = var10;
+    var10 = /^tháng ?(Chín|0?9)/i;
+    var9[8] = var10;
+    var10 = /^tháng ?(Mười|10)/i;
+    var9[9] = var10;
+    var10 = /^tháng ?(Mười ?Một|11)/i;
+    var9[10] = var10;
+    var10 = /^tháng ?(Mười ?Hai|12)/i;
+    var9[11] = var10;
+    var8.wide = var9;
+    var4.parsePatterns = var8;
+    var4.defaultParseWidth = var6;
+    var4 = var7.bind(var0)(var4);
+    var2.month = var4;
+    var7 = var3.default;
+    var4 = {};
+    var8 = {};
+    var9 = /^(CN|T2|T3|T4|T5|T6|T7)/i;
+    var8.narrow = var9;
+    var9 = /^(CN|Th ?2|Th ?3|Th ?4|Th ?5|Th ?6|Th ?7)/i;
+    var8.short = var9;
+    var9 = /^(CN|Th ?2|Th ?3|Th ?4|Th ?5|Th ?6|Th ?7)/i;
+    var8.abbreviated = var9;
+    var9 = /^(Chủ ?Nhật|Chúa ?Nhật|thứ ?Hai|thứ ?Ba|thứ ?Tư|thứ ?Năm|thứ ?Sáu|thứ ?Bảy)/i;
+    var8.wide = var9;
+    var4.matchPatterns = var8;
+    var4.defaultMatchWidth = var6;
+    var8 = {};
+    var9 = new Array(7);
+    var10 = /CN/i;
+    var9[0] = var10;
+    var10 = /2/i;
+    var9[1] = var10;
+    var10 = /3/i;
+    var9[2] = var10;
+    var10 = /4/i;
+    var9[3] = var10;
+    var10 = /5/i;
+    var9[4] = var10;
+    var10 = /6/i;
+    var9[5] = var10;
+    var10 = /7/i;
+    var9[6] = var10;
+    var8.narrow = var9;
+    var9 = new Array(7);
+    var10 = /CN/i;
+    var9[0] = var10;
+    var10 = /2/i;
+    var9[1] = var10;
+    var10 = /3/i;
+    var9[2] = var10;
+    var10 = /4/i;
+    var9[3] = var10;
+    var10 = /5/i;
+    var9[4] = var10;
+    var10 = /6/i;
+    var9[5] = var10;
+    var10 = /7/i;
+    var9[6] = var10;
+    var8.short = var9;
+    var9 = new Array(7);
+    var10 = /CN/i;
+    var9[0] = var10;
+    var10 = /2/i;
+    var9[1] = var10;
+    var10 = /3/i;
+    var9[2] = var10;
+    var10 = /4/i;
+    var9[3] = var10;
+    var10 = /5/i;
+    var9[4] = var10;
+    var10 = /6/i;
+    var9[5] = var10;
+    var10 = /7/i;
+    var9[6] = var10;
+    var8.abbreviated = var9;
+    var9 = new Array(7);
+    var10 = /(Chủ|Chúa) ?Nhật/i;
+    var9[0] = var10;
+    var10 = /Hai/i;
+    var9[1] = var10;
+    var10 = /Ba/i;
+    var9[2] = var10;
+    var10 = /Tư/i;
+    var9[3] = var10;
+    var10 = /Năm/i;
+    var9[4] = var10;
+    var10 = /Sáu/i;
+    var9[5] = var10;
+    var10 = /Bảy/i;
+    var9[6] = var10;
+    var8.wide = var9;
+    var4.parsePatterns = var8;
+    var4.defaultParseWidth = var6;
+    var4 = var7.bind(var0)(var4);
+    var2.day = var4;
+    var4 = var3.default;
+    var3 = {};
+    var7 = {};
+    var8 = /^(a|p|nửa đêm|trưa|(giờ) (sáng|chiều|tối|đêm))/i;
+    var7.narrow = var8;
+    var8 = /^(am|pm|nửa đêm|trưa|(giờ) (sáng|chiều|tối|đêm))/i;
+    var7.abbreviated = var8;
+    var8 = /^(ch[^i]*|sa|nửa đêm|trưa|(giờ) (sáng|chiều|tối|đêm))/i;
+    var7.wide = var8;
+    var3.matchPatterns = var7;
+    var3.defaultMatchWidth = var6;
+    var6 = {};
+    var7 = {};
+    var8 = /^(a|sa)/i;
+    var7.am = var8;
+    var8 = /^(p|ch[^i]*)/i;
+    var7.pm = var8;
+    var8 = /nửa đêm/i;
+    var7.midnight = var8;
+    var8 = /trưa/i;
+    var7.noon = var8;
+    var8 = /sáng/i;
+    var7.morning = var8;
+    var8 = /chiều/i;
+    var7.afternoon = var8;
+    var8 = /tối/i;
+    var7.evening = var8;
+    var8 = /^đêm/i;
+    var7.night = var8;
+    var6.any = var7;
+    var3.parsePatterns = var6;
+    var3.defaultParseWidth = var5;
+    var3 = var4.bind(var0)(var3);
+    var2.dayPeriod = var3;
+    var1.default = var2;
+    var2 = var1.default;
+    var1 = arg4;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1686, 1687]);

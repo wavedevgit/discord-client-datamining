@@ -24,7 +24,21 @@ public abstract class c implements Iterable, Closeable {
         return new b(dVar, aVar);
     }
 
-    public List A0(int i10) {
+    public abstract void D0(int i10);
+
+    public void clear() {
+        D0(size());
+    }
+
+    public abstract void h(Object obj);
+
+    public List n() {
+        return t0(size());
+    }
+
+    public abstract int size();
+
+    public List t0(int i10) {
         int min = Math.min(i10, size());
         ArrayList arrayList = new ArrayList(min);
         Iterator it = iterator();
@@ -33,18 +47,4 @@ public abstract class c implements Iterable, Closeable {
         }
         return Collections.unmodifiableList(arrayList);
     }
-
-    public abstract void C0(int i10);
-
-    public void clear() {
-        C0(size());
-    }
-
-    public abstract void h(Object obj);
-
-    public List n() {
-        return A0(size());
-    }
-
-    public abstract int size();
 }

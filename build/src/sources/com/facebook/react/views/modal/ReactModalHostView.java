@@ -369,7 +369,7 @@ public final class ReactModalHostView extends ViewGroup implements LifecycleEven
         OnRequestCloseListener onRequestCloseListener = reactModalHostView.onRequestCloseListener;
         if (onRequestCloseListener != null) {
             onRequestCloseListener.onRequestClose(componentDialog);
-            return Unit.f33298a;
+            return Unit.f33074a;
         }
         throw new IllegalStateException("onRequestClose callback must be set if back key is expected to close the modal");
     }

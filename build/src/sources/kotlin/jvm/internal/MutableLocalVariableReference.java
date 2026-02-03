@@ -1,6 +1,6 @@
 package kotlin.jvm.internal;
 
-import ir.h;
+import jr.h;
 import kotlin.Metadata;
 import kotlin.reflect.KDeclarationContainer;
 import org.jetbrains.annotations.NotNull;

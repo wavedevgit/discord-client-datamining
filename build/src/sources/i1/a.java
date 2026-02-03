@@ -5,15 +5,15 @@ import com.facebook.react.animated.InterpolationAnimatedNode;
 public class a {
 
     /* renamed from: b  reason: collision with root package name */
-    static a f28344b = new a();
+    static a f27991b = new a();
 
     /* renamed from: c  reason: collision with root package name */
-    public static String[] f28345c = {"standard", "accelerate", "decelerate", "linear"};
+    public static String[] f27992c = {"standard", "accelerate", "decelerate", "linear"};
 
     /* renamed from: a  reason: collision with root package name */
-    String f28346a = InterpolationAnimatedNode.EXTRAPOLATE_TYPE_IDENTITY;
+    String f27993a = InterpolationAnimatedNode.EXTRAPOLATE_TYPE_IDENTITY;
 
     public String toString() {
-        return this.f28346a;
+        return this.f27993a;
     }
 }

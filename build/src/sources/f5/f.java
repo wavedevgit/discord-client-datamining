@@ -5,10 +5,10 @@ import okhttp3.Response;
 public final class f extends RuntimeException {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Response f24388d;
+    private final Response f23599d;
 
     public f(Response response) {
-        super("HTTP " + response.L() + ": " + response.I0());
-        this.f24388d = response;
+        super("HTTP " + response.L() + ": " + response.J0());
+        this.f23599d = response;
     }
 }

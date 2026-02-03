@@ -13,7 +13,7 @@ import com.discord.misc.utilities.threading.ThreadUtilsKt;
 import com.discord.recycler_view.scroller.Scroller;
 import com.discord.recycler_view.utils.RecyclerViewExtensionsKt;
 import com.facebook.react.views.view.ReactViewGroup;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.o0;

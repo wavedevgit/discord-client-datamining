@@ -22,31 +22,31 @@ import java.util.List;
 public class o implements j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f3098a;
+    private final Context f3142a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Notification.Builder f3099b;
+    private final Notification.Builder f3143b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NotificationCompat.Builder f3100c;
+    private final NotificationCompat.Builder f3144c;
 
     /* renamed from: d  reason: collision with root package name */
-    private RemoteViews f3101d;
+    private RemoteViews f3145d;
 
     /* renamed from: e  reason: collision with root package name */
-    private RemoteViews f3102e;
+    private RemoteViews f3146e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final List f3103f = new ArrayList();
+    private final List f3147f = new ArrayList();
 
     /* renamed from: g  reason: collision with root package name */
-    private final Bundle f3104g = new Bundle();
+    private final Bundle f3148g = new Bundle();
 
     /* renamed from: h  reason: collision with root package name */
-    private int f3105h;
+    private int f3149h;
 
     /* renamed from: i  reason: collision with root package name */
-    private RemoteViews f3106i;
+    private RemoteViews f3150i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -246,16 +246,16 @@ public class o implements j {
         Icon w10;
         List<String> list;
         int i10;
-        this.f3100c = builder;
-        Context context = builder.f2923a;
-        this.f3098a = context;
+        this.f3144c = builder;
+        Context context = builder.f2967a;
+        this.f3142a = context;
         if (Build.VERSION.SDK_INT >= 26) {
-            this.f3099b = e.a(context, builder.M);
+            this.f3143b = e.a(context, builder.M);
         } else {
-            this.f3099b = new Notification.Builder(builder.f2923a);
+            this.f3143b = new Notification.Builder(builder.f2967a);
         }
         Notification notification = builder.V;
-        Notification.Builder lights = this.f3099b.setWhen(notification.when).setSmallIcon(notification.icon, notification.iconLevel).setContent(notification.contentView).setTicker(notification.tickerText, builder.f2932j).setVibrate(notification.vibrate).setLights(notification.ledARGB, notification.ledOnMS, notification.ledOffMS);
+        Notification.Builder lights = this.f3143b.setWhen(notification.when).setSmallIcon(notification.icon, notification.iconLevel).setContent(notification.contentView).setTicker(notification.tickerText, builder.f2976j).setVibrate(notification.vibrate).setLights(notification.ledARGB, notification.ledOnMS, notification.ledOffMS);
         if ((notification.flags & 2) != 0) {
             z10 = true;
         } else {
@@ -273,145 +273,145 @@ public class o implements j {
         } else {
             z12 = false;
         }
-        Notification.Builder deleteIntent = onlyAlertOnce.setAutoCancel(z12).setDefaults(notification.defaults).setContentTitle(builder.f2927e).setContentText(builder.f2928f).setContentInfo(builder.f2934l).setContentIntent(builder.f2930h).setDeleteIntent(notification.deleteIntent);
-        PendingIntent pendingIntent = builder.f2931i;
+        Notification.Builder deleteIntent = onlyAlertOnce.setAutoCancel(z12).setDefaults(notification.defaults).setContentTitle(builder.f2971e).setContentText(builder.f2972f).setContentInfo(builder.f2978l).setContentIntent(builder.f2974h).setDeleteIntent(notification.deleteIntent);
+        PendingIntent pendingIntent = builder.f2975i;
         if ((notification.flags & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
             z13 = true;
         } else {
             z13 = false;
         }
-        deleteIntent.setFullScreenIntent(pendingIntent, z13).setNumber(builder.f2935m).setProgress(builder.f2944v, builder.f2945w, builder.f2946x);
-        Notification.Builder builder2 = this.f3099b;
-        IconCompat iconCompat = builder.f2933k;
+        deleteIntent.setFullScreenIntent(pendingIntent, z13).setNumber(builder.f2979m).setProgress(builder.f2988v, builder.f2989w, builder.f2990x);
+        Notification.Builder builder2 = this.f3143b;
+        IconCompat iconCompat = builder.f2977k;
         if (iconCompat == null) {
             w10 = null;
         } else {
             w10 = iconCompat.w(context);
         }
         c.b(builder2, w10);
-        this.f3099b.setSubText(builder.f2941s).setUsesChronometer(builder.f2938p).setPriority(builder.f2936n);
-        NotificationCompat.l lVar = builder.f2940r;
+        this.f3143b.setSubText(builder.f2985s).setUsesChronometer(builder.f2982p).setPriority(builder.f2980n);
+        NotificationCompat.l lVar = builder.f2984r;
         if (lVar instanceof NotificationCompat.h) {
             for (NotificationCompat.Action action : ((NotificationCompat.h) lVar).o()) {
                 b(action);
             }
         } else {
-            Iterator it = builder.f2924b.iterator();
+            Iterator it = builder.f2968b.iterator();
             while (it.hasNext()) {
                 b((NotificationCompat.Action) it.next());
             }
         }
         Bundle bundle = builder.F;
         if (bundle != null) {
-            this.f3104g.putAll(bundle);
+            this.f3148g.putAll(bundle);
         }
         int i11 = Build.VERSION.SDK_INT;
-        this.f3101d = builder.J;
-        this.f3102e = builder.K;
-        this.f3099b.setShowWhen(builder.f2937o);
-        a.h(this.f3099b, builder.B);
-        a.f(this.f3099b, builder.f2947y);
-        a.i(this.f3099b, builder.A);
-        a.g(this.f3099b, builder.f2948z);
-        this.f3105h = builder.R;
-        b.b(this.f3099b, builder.E);
-        b.c(this.f3099b, builder.G);
-        b.f(this.f3099b, builder.H);
-        b.d(this.f3099b, builder.I);
-        b.e(this.f3099b, notification.sound, notification.audioAttributes);
+        this.f3145d = builder.J;
+        this.f3146e = builder.K;
+        this.f3143b.setShowWhen(builder.f2981o);
+        a.h(this.f3143b, builder.B);
+        a.f(this.f3143b, builder.f2991y);
+        a.i(this.f3143b, builder.A);
+        a.g(this.f3143b, builder.f2992z);
+        this.f3149h = builder.R;
+        b.b(this.f3143b, builder.E);
+        b.c(this.f3143b, builder.G);
+        b.f(this.f3143b, builder.H);
+        b.d(this.f3143b, builder.I);
+        b.e(this.f3143b, notification.sound, notification.audioAttributes);
         if (i11 < 28) {
-            list = e(g(builder.f2925c), builder.Y);
+            list = e(g(builder.f2969c), builder.Y);
         } else {
             list = builder.Y;
         }
         if (list != null && !list.isEmpty()) {
             for (String str : list) {
-                b.a(this.f3099b, str);
+                b.a(this.f3143b, str);
             }
         }
-        this.f3106i = builder.L;
-        if (builder.f2926d.size() > 0) {
+        this.f3150i = builder.L;
+        if (builder.f2970d.size() > 0) {
             Bundle bundle2 = builder.i().getBundle("android.car.EXTENSIONS");
             bundle2 = bundle2 == null ? new Bundle() : bundle2;
             Bundle bundle3 = new Bundle(bundle2);
             Bundle bundle4 = new Bundle();
-            for (int i12 = 0; i12 < builder.f2926d.size(); i12++) {
-                bundle4.putBundle(Integer.toString(i12), p.e((NotificationCompat.Action) builder.f2926d.get(i12)));
+            for (int i12 = 0; i12 < builder.f2970d.size(); i12++) {
+                bundle4.putBundle(Integer.toString(i12), p.e((NotificationCompat.Action) builder.f2970d.get(i12)));
             }
             bundle2.putBundle("invisible_actions", bundle4);
             bundle3.putBundle("invisible_actions", bundle4);
             builder.i().putBundle("android.car.EXTENSIONS", bundle2);
-            this.f3104g.putBundle("android.car.EXTENSIONS", bundle3);
+            this.f3148g.putBundle("android.car.EXTENSIONS", bundle3);
         }
         int i13 = Build.VERSION.SDK_INT;
         Object obj = builder.X;
         if (obj != null) {
-            c.c(this.f3099b, obj);
+            c.c(this.f3143b, obj);
         }
-        this.f3099b.setExtras(builder.F);
-        d.e(this.f3099b, builder.f2943u);
+        this.f3143b.setExtras(builder.F);
+        d.e(this.f3143b, builder.f2987u);
         RemoteViews remoteViews = builder.J;
         if (remoteViews != null) {
-            d.c(this.f3099b, remoteViews);
+            d.c(this.f3143b, remoteViews);
         }
         RemoteViews remoteViews2 = builder.K;
         if (remoteViews2 != null) {
-            d.b(this.f3099b, remoteViews2);
+            d.b(this.f3143b, remoteViews2);
         }
         RemoteViews remoteViews3 = builder.L;
         if (remoteViews3 != null) {
-            d.d(this.f3099b, remoteViews3);
+            d.d(this.f3143b, remoteViews3);
         }
         if (i13 >= 26) {
-            e.b(this.f3099b, builder.N);
-            e.e(this.f3099b, builder.f2942t);
-            e.f(this.f3099b, builder.O);
-            e.g(this.f3099b, builder.Q);
-            e.d(this.f3099b, builder.R);
+            e.b(this.f3143b, builder.N);
+            e.e(this.f3143b, builder.f2986t);
+            e.f(this.f3143b, builder.O);
+            e.g(this.f3143b, builder.Q);
+            e.d(this.f3143b, builder.R);
             if (builder.D) {
-                e.c(this.f3099b, builder.C);
+                e.c(this.f3143b, builder.C);
             }
             if (!TextUtils.isEmpty(builder.M)) {
-                this.f3099b.setSound(null).setDefaults(0).setLights(0, 0, 0).setVibrate(null);
+                this.f3143b.setSound(null).setDefaults(0).setLights(0, 0, 0).setVibrate(null);
             }
         }
         if (i13 >= 28) {
-            Iterator it2 = builder.f2925c.iterator();
+            Iterator it2 = builder.f2969c.iterator();
             while (it2.hasNext()) {
-                f.a(this.f3099b, ((Person) it2.next()).k());
+                f.a(this.f3143b, ((Person) it2.next()).k());
             }
         }
         int i14 = Build.VERSION.SDK_INT;
         if (i14 >= 29) {
-            g.a(this.f3099b, builder.T);
-            g.b(this.f3099b, NotificationCompat.g.k(builder.U));
+            g.a(this.f3143b, builder.T);
+            g.b(this.f3143b, NotificationCompat.g.k(builder.U));
             androidx.core.content.c cVar = builder.P;
             if (cVar != null) {
-                g.d(this.f3099b, cVar.c());
+                g.d(this.f3143b, cVar.c());
             }
         }
         if (i14 >= 31 && (i10 = builder.S) != 0) {
-            h.b(this.f3099b, i10);
+            h.b(this.f3143b, i10);
         }
         if (i14 >= 36) {
-            i.a(this.f3099b, builder.f2929g);
+            i.a(this.f3143b, builder.f2973g);
         }
         if (builder.W) {
-            if (this.f3100c.f2948z) {
-                this.f3105h = 2;
+            if (this.f3144c.f2992z) {
+                this.f3149h = 2;
             } else {
-                this.f3105h = 1;
+                this.f3149h = 1;
             }
-            this.f3099b.setVibrate(null);
-            this.f3099b.setSound(null);
+            this.f3143b.setVibrate(null);
+            this.f3143b.setSound(null);
             int i15 = notification.defaults & (-4);
             notification.defaults = i15;
-            this.f3099b.setDefaults(i15);
+            this.f3143b.setDefaults(i15);
             if (i14 >= 26) {
-                if (TextUtils.isEmpty(this.f3100c.f2947y)) {
-                    a.f(this.f3099b, "silent");
+                if (TextUtils.isEmpty(this.f3144c.f2991y)) {
+                    a.f(this.f3143b, "silent");
                 }
-                e.d(this.f3099b, this.f3105h);
+                e.d(this.f3143b, this.f3149h);
             }
         }
     }
@@ -451,7 +451,7 @@ public class o implements j {
         }
         bundle.putBoolean("android.support.action.showsUserInterface", action.g());
         a.b(a10, bundle);
-        a.a(this.f3099b, a.d(a10));
+        a.a(this.f3143b, a.d(a10));
     }
 
     private static List e(List list, List list2) {
@@ -487,7 +487,7 @@ public class o implements j {
 
     @Override // androidx.core.app.j
     public Notification.Builder a() {
-        return this.f3099b;
+        return this.f3143b;
     }
 
     public Notification c() {
@@ -495,7 +495,7 @@ public class o implements j {
         Bundle k10;
         RemoteViews l10;
         RemoteViews j10;
-        NotificationCompat.l lVar = this.f3100c.f2940r;
+        NotificationCompat.l lVar = this.f3144c.f2984r;
         if (lVar != null) {
             lVar.b(this);
         }
@@ -508,7 +508,7 @@ public class o implements j {
         if (remoteViews != null) {
             d10.contentView = remoteViews;
         } else {
-            RemoteViews remoteViews2 = this.f3100c.J;
+            RemoteViews remoteViews2 = this.f3144c.J;
             if (remoteViews2 != null) {
                 d10.contentView = remoteViews2;
             }
@@ -516,7 +516,7 @@ public class o implements j {
         if (lVar != null && (j10 = lVar.j(this)) != null) {
             d10.bigContentView = j10;
         }
-        if (lVar != null && (l10 = this.f3100c.f2940r.l(this)) != null) {
+        if (lVar != null && (l10 = this.f3144c.f2984r.l(this)) != null) {
             d10.headsUpContentView = l10;
         }
         if (lVar != null && (k10 = NotificationCompat.k(d10)) != null) {
@@ -527,14 +527,14 @@ public class o implements j {
 
     protected Notification d() {
         if (Build.VERSION.SDK_INT >= 26) {
-            return this.f3099b.build();
+            return this.f3143b.build();
         }
-        Notification build = this.f3099b.build();
-        if (this.f3105h != 0) {
-            if (a.e(build) != null && (build.flags & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 && this.f3105h == 2) {
+        Notification build = this.f3143b.build();
+        if (this.f3149h != 0) {
+            if (a.e(build) != null && (build.flags & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 && this.f3149h == 2) {
                 h(build);
             }
-            if (a.e(build) != null && (build.flags & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 0 && this.f3105h == 1) {
+            if (a.e(build) != null && (build.flags & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) == 0 && this.f3149h == 1) {
                 h(build);
             }
         }
@@ -543,6 +543,6 @@ public class o implements j {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Context f() {
-        return this.f3098a;
+        return this.f3142a;
     }
 }

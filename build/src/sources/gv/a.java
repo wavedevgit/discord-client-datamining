@@ -1,15 +1,30 @@
 package gv;
-
-import dv.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a {
-    char a();
+public abstract class a implements d {
+    @Override // gv.d
+    public boolean a() {
+        return false;
+    }
 
-    int b();
+    @Override // gv.d
+    public boolean c() {
+        return false;
+    }
 
-    void c(w wVar, w wVar2, int i10);
+    @Override // gv.d
+    public boolean h(ev.a aVar) {
+        return false;
+    }
 
-    char d();
+    @Override // gv.d
+    public void g() {
+    }
 
-    int e(b bVar, b bVar2);
+    @Override // gv.d
+    public void e(CharSequence charSequence) {
+    }
+
+    @Override // gv.d
+    public void f(fv.a aVar) {
+    }
 }

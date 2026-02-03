@@ -5,30 +5,30 @@ import ui.c;
 final class n7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n7 f43343a = new n7();
+    static final n7 f43471a = new n7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43344b;
+    private static final ui.c f43472b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43345c;
+    private static final ui.c f43473c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43346d;
+    private static final ui.c f43474d;
 
     static {
         c.b a10 = ui.c.a("languageOption");
         s1 s1Var = new s1();
         s1Var.a(3);
-        f43344b = a10.b(s1Var.b()).a();
+        f43472b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("isUsingLegacyApi");
         s1 s1Var2 = new s1();
         s1Var2.a(4);
-        f43345c = a11.b(s1Var2.b()).a();
+        f43473c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("sdkVersion");
         s1 s1Var3 = new s1();
         s1Var3.a(5);
-        f43346d = a12.b(s1Var3.b()).a();
+        f43474d = a12.b(s1Var3.b()).a();
     }
 
     private n7() {

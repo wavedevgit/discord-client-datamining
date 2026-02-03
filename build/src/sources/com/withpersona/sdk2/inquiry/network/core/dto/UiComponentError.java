@@ -11,9 +11,9 @@ import com.squareup.moshi.w;
 import com.squareup.moshi.z;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.InputAddress;
 import com.withpersona.sdk2.inquiry.network.dto.ui.components.InputInternationalDb;
-import ir.p;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import jr.p;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -32,8 +32,8 @@ public abstract class UiComponentError implements Parcelable {
             m F = mVar.F();
             F.r();
             while (F.hasNext()) {
-                if (Intrinsics.areEqual(F.l0(), "type")) {
-                    return F.e1();
+                if (Intrinsics.areEqual(F.m0(), "type")) {
+                    return F.f1();
                 }
                 F.P();
             }
@@ -79,7 +79,7 @@ public abstract class UiComponentError implements Parcelable {
             } else if (uiComponentError instanceof UiInputInternationalDbComponentError) {
                 d10.c(UiInputInternationalDbComponentError.class).toJson(tVar, uiComponentError);
             } else if (uiComponentError == null) {
-                tVar.C0();
+                tVar.D0();
             } else {
                 throw new p();
             }

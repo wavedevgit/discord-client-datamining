@@ -40,7 +40,7 @@ public abstract class RenderableEmoji {
         @NotNull
         public final Unicode unicode(@NotNull String surrogates) {
             Intrinsics.checkNotNullParameter(surrogates, "surrogates");
-            return new Unicode(Surrogates.m865constructorimpl(surrogates), null);
+            return new Unicode(Surrogates.m867constructorimpl(surrogates), null);
         }
 
         private Companion() {
@@ -255,22 +255,22 @@ public abstract class RenderableEmoji {
         }
 
         /* renamed from: copy-hLBmEAo$default  reason: not valid java name */
-        public static /* synthetic */ Unicode m860copyhLBmEAo$default(Unicode unicode, String str, int i10, Object obj) {
+        public static /* synthetic */ Unicode m862copyhLBmEAo$default(Unicode unicode, String str, int i10, Object obj) {
             if ((i10 & 1) != 0) {
                 str = unicode.surrogates;
             }
-            return unicode.m862copyhLBmEAo(str);
+            return unicode.m864copyhLBmEAo(str);
         }
 
         @NotNull
         /* renamed from: component1-Mny0UXI  reason: not valid java name */
-        public final String m861component1Mny0UXI() {
+        public final String m863component1Mny0UXI() {
             return this.surrogates;
         }
 
         @NotNull
         /* renamed from: copy-hLBmEAo  reason: not valid java name */
-        public final Unicode m862copyhLBmEAo(@NotNull String surrogates) {
+        public final Unicode m864copyhLBmEAo(@NotNull String surrogates) {
             Intrinsics.checkNotNullParameter(surrogates, "surrogates");
             return new Unicode(surrogates, null);
         }
@@ -279,7 +279,7 @@ public abstract class RenderableEmoji {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof Unicode) && Surrogates.m867equalsimpl0(this.surrogates, ((Unicode) obj).surrogates);
+            return (obj instanceof Unicode) && Surrogates.m869equalsimpl0(this.surrogates, ((Unicode) obj).surrogates);
         }
 
         @Override // com.discord.emoji.RenderableEmoji
@@ -294,24 +294,24 @@ public abstract class RenderableEmoji {
 
         @NotNull
         /* renamed from: getSurrogates-Mny0UXI  reason: not valid java name */
-        public final String m863getSurrogatesMny0UXI() {
+        public final String m865getSurrogatesMny0UXI() {
             return this.surrogates;
         }
 
         @Override // com.discord.emoji.RenderableEmoji
         @NotNull
         public String getUrl(boolean z10, int i10) {
-            return Surrogates.m869toAssetUrlimpl(this.surrogates);
+            return Surrogates.m871toAssetUrlimpl(this.surrogates);
         }
 
         public int hashCode() {
-            return Surrogates.m868hashCodeimpl(this.surrogates);
+            return Surrogates.m870hashCodeimpl(this.surrogates);
         }
 
         @NotNull
         public String toString() {
-            String m871toStringimpl = Surrogates.m871toStringimpl(this.surrogates);
-            return "Unicode(surrogates=" + m871toStringimpl + ")";
+            String m873toStringimpl = Surrogates.m873toStringimpl(this.surrogates);
+            return "Unicode(surrogates=" + m873toStringimpl + ")";
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -319,8 +319,8 @@ public abstract class RenderableEmoji {
             super(null);
             Intrinsics.checkNotNullParameter(surrogates, "surrogates");
             this.surrogates = surrogates;
-            String m872withoutDiversityimpl = Surrogates.m872withoutDiversityimpl(surrogates);
-            this.exception = RenderableEmoji.exceptions.contains(m872withoutDiversityimpl) ? m872withoutDiversityimpl : null;
+            String m874withoutDiversityimpl = Surrogates.m874withoutDiversityimpl(surrogates);
+            this.exception = RenderableEmoji.exceptions.contains(m874withoutDiversityimpl) ? m874withoutDiversityimpl : null;
         }
     }
 

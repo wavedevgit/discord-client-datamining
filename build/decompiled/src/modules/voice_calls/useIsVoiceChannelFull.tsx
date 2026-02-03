@@ -88,14 +88,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun67789: for (var _fun67789_ip = 0;;) switch (_fun67789_ip) {
+            _fun67898: for (var _fun67898_ip = 0;;) switch (_fun67898_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = null;
                     var0 = var0 == var2;
                     if (var0) {
-                        _fun67789_ip = 52;
-                        continue _fun67789
+                        _fun67898_ip = 52;
+                        continue _fun67898
                     }
                 case 16:
                     var4 = _closure1_slot3;
@@ -114,4 +114,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsVoiceChannelLocked = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3052, 3482, 483, 566, 4202, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3082, 3512, 483, 566, 4232, 2]);

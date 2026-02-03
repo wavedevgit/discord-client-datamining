@@ -1,58 +1,29 @@
 package ls;
 
-import gs.f1;
-import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
-import kotlin.coroutines.CoroutineContext;
+import ks.j0;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b0 extends c implements f1 {
-
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f37447o = AtomicIntegerFieldUpdater.newUpdater(b0.class, "cleanedAndPointers$volatile");
-    private volatile /* synthetic */ int cleanedAndPointers$volatile;
-
-    /* renamed from: i  reason: collision with root package name */
-    public final long f37448i;
-
-    public b0(long j10, b0 b0Var, int i10) {
-        super(b0Var);
-        this.f37448i = j10;
-        this.cleanedAndPointers$volatile = i10 << 16;
+public final class b0 extends ks.b0 implements j0 {
+    public b0(int i10) {
+        super(1, Integer.MAX_VALUE, js.a.f32205e);
+        b(Integer.valueOf(i10));
     }
 
-    @Override // ls.c
-    public boolean k() {
-        if (f37447o.get(this) == r() && !l()) {
-            return true;
+    @Override // ks.j0
+    /* renamed from: Y */
+    public Integer getValue() {
+        Integer valueOf;
+        synchronized (this) {
+            valueOf = Integer.valueOf(((Number) L()).intValue());
         }
-        return false;
+        return valueOf;
     }
 
-    public final boolean p() {
-        if (f37447o.addAndGet(this, -65536) == r() && !l()) {
-            return true;
+    public final boolean Z(int i10) {
+        boolean b10;
+        synchronized (this) {
+            b10 = b(Integer.valueOf(((Number) L()).intValue() + i10));
         }
-        return false;
-    }
-
-    public abstract int r();
-
-    public abstract void s(int i10, Throwable th2, CoroutineContext coroutineContext);
-
-    public final void t() {
-        if (f37447o.incrementAndGet(this) == r()) {
-            n();
-        }
-    }
-
-    public final boolean u() {
-        int i10;
-        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f37447o;
-        do {
-            i10 = atomicIntegerFieldUpdater.get(this);
-            if (i10 == r() && !l()) {
-                return false;
-            }
-        } while (!atomicIntegerFieldUpdater.compareAndSet(this, i10, 65536 + i10));
-        return true;
+        return b10;
     }
 }

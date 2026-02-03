@@ -10,7 +10,7 @@ public final class e implements CoroutineContext, Serializable {
     @NotNull
 
     /* renamed from: d  reason: collision with root package name */
-    public static final e f33372d = new e();
+    public static final e f33148d = new e();
 
     private e() {
     }
@@ -22,7 +22,7 @@ public final class e implements CoroutineContext, Serializable {
     }
 
     @Override // kotlin.coroutines.CoroutineContext
-    public CoroutineContext U0(CoroutineContext context) {
+    public CoroutineContext Z0(CoroutineContext context) {
         Intrinsics.checkNotNullParameter(context, "context");
         return context;
     }
@@ -42,7 +42,7 @@ public final class e implements CoroutineContext, Serializable {
     }
 
     @Override // kotlin.coroutines.CoroutineContext
-    public CoroutineContext x1(CoroutineContext.b key) {
+    public CoroutineContext y1(CoroutineContext.b key) {
         Intrinsics.checkNotNullParameter(key, "key");
         return this;
     }

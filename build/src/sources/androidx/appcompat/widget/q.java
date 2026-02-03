@@ -12,16 +12,16 @@ import androidx.annotation.NonNull;
 public class q extends RadioButton implements androidx.core.widget.k {
 
     /* renamed from: d  reason: collision with root package name */
-    private final i f1763d;
+    private final i f1807d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AppCompatBackgroundHelper f1764e;
+    private final AppCompatBackgroundHelper f1808e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final AppCompatTextHelper f1765i;
+    private final AppCompatTextHelper f1809i;
 
     /* renamed from: o  reason: collision with root package name */
-    private AppCompatEmojiTextHelper f1766o;
+    private AppCompatEmojiTextHelper f1810o;
 
     public q(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, f.a.E);
@@ -29,27 +29,27 @@ public class q extends RadioButton implements androidx.core.widget.k {
 
     @NonNull
     private AppCompatEmojiTextHelper getEmojiTextViewHelper() {
-        if (this.f1766o == null) {
-            this.f1766o = new AppCompatEmojiTextHelper(this);
+        if (this.f1810o == null) {
+            this.f1810o = new AppCompatEmojiTextHelper(this);
         }
-        return this.f1766o;
+        return this.f1810o;
     }
 
     @Override // android.widget.CompoundButton, android.widget.TextView, android.view.View
     protected void drawableStateChanged() {
         super.drawableStateChanged();
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1764e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1808e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.b();
         }
-        AppCompatTextHelper appCompatTextHelper = this.f1765i;
+        AppCompatTextHelper appCompatTextHelper = this.f1809i;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.b();
         }
     }
 
     public ColorStateList getSupportBackgroundTintList() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1764e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1808e;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.c();
         }
@@ -57,7 +57,7 @@ public class q extends RadioButton implements androidx.core.widget.k {
     }
 
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1764e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1808e;
         if (appCompatBackgroundHelper != null) {
             return appCompatBackgroundHelper.d();
         }
@@ -66,7 +66,7 @@ public class q extends RadioButton implements androidx.core.widget.k {
 
     @Override // androidx.core.widget.k
     public ColorStateList getSupportButtonTintList() {
-        i iVar = this.f1763d;
+        i iVar = this.f1807d;
         if (iVar != null) {
             return iVar.b();
         }
@@ -74,7 +74,7 @@ public class q extends RadioButton implements androidx.core.widget.k {
     }
 
     public PorterDuff.Mode getSupportButtonTintMode() {
-        i iVar = this.f1763d;
+        i iVar = this.f1807d;
         if (iVar != null) {
             return iVar.c();
         }
@@ -82,11 +82,11 @@ public class q extends RadioButton implements androidx.core.widget.k {
     }
 
     public ColorStateList getSupportCompoundDrawablesTintList() {
-        return this.f1765i.j();
+        return this.f1809i.j();
     }
 
     public PorterDuff.Mode getSupportCompoundDrawablesTintMode() {
-        return this.f1765i.k();
+        return this.f1809i.k();
     }
 
     @Override // android.widget.TextView
@@ -98,7 +98,7 @@ public class q extends RadioButton implements androidx.core.widget.k {
     @Override // android.view.View
     public void setBackgroundDrawable(Drawable drawable) {
         super.setBackgroundDrawable(drawable);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1764e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1808e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.f(drawable);
         }
@@ -107,7 +107,7 @@ public class q extends RadioButton implements androidx.core.widget.k {
     @Override // android.view.View
     public void setBackgroundResource(int i10) {
         super.setBackgroundResource(i10);
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1764e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1808e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.g(i10);
         }
@@ -116,7 +116,7 @@ public class q extends RadioButton implements androidx.core.widget.k {
     @Override // android.widget.CompoundButton
     public void setButtonDrawable(Drawable drawable) {
         super.setButtonDrawable(drawable);
-        i iVar = this.f1763d;
+        i iVar = this.f1807d;
         if (iVar != null) {
             iVar.e();
         }
@@ -125,7 +125,7 @@ public class q extends RadioButton implements androidx.core.widget.k {
     @Override // android.widget.TextView
     public void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
-        AppCompatTextHelper appCompatTextHelper = this.f1765i;
+        AppCompatTextHelper appCompatTextHelper = this.f1809i;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.p();
         }
@@ -134,7 +134,7 @@ public class q extends RadioButton implements androidx.core.widget.k {
     @Override // android.widget.TextView
     public void setCompoundDrawablesRelative(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         super.setCompoundDrawablesRelative(drawable, drawable2, drawable3, drawable4);
-        AppCompatTextHelper appCompatTextHelper = this.f1765i;
+        AppCompatTextHelper appCompatTextHelper = this.f1809i;
         if (appCompatTextHelper != null) {
             appCompatTextHelper.p();
         }
@@ -150,14 +150,14 @@ public class q extends RadioButton implements androidx.core.widget.k {
     }
 
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1764e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1808e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.i(colorStateList);
         }
     }
 
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
-        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1764e;
+        AppCompatBackgroundHelper appCompatBackgroundHelper = this.f1808e;
         if (appCompatBackgroundHelper != null) {
             appCompatBackgroundHelper.j(mode);
         }
@@ -165,7 +165,7 @@ public class q extends RadioButton implements androidx.core.widget.k {
 
     @Override // androidx.core.widget.k
     public void setSupportButtonTintList(ColorStateList colorStateList) {
-        i iVar = this.f1763d;
+        i iVar = this.f1807d;
         if (iVar != null) {
             iVar.f(colorStateList);
         }
@@ -173,33 +173,33 @@ public class q extends RadioButton implements androidx.core.widget.k {
 
     @Override // androidx.core.widget.k
     public void setSupportButtonTintMode(PorterDuff.Mode mode) {
-        i iVar = this.f1763d;
+        i iVar = this.f1807d;
         if (iVar != null) {
             iVar.g(mode);
         }
     }
 
     public void setSupportCompoundDrawablesTintList(ColorStateList colorStateList) {
-        this.f1765i.w(colorStateList);
-        this.f1765i.b();
+        this.f1809i.w(colorStateList);
+        this.f1809i.b();
     }
 
     public void setSupportCompoundDrawablesTintMode(PorterDuff.Mode mode) {
-        this.f1765i.x(mode);
-        this.f1765i.b();
+        this.f1809i.x(mode);
+        this.f1809i.b();
     }
 
     public q(Context context, AttributeSet attributeSet, int i10) {
         super(s0.b(context), attributeSet, i10);
         r0.a(this, getContext());
         i iVar = new i(this);
-        this.f1763d = iVar;
+        this.f1807d = iVar;
         iVar.d(attributeSet, i10);
         AppCompatBackgroundHelper appCompatBackgroundHelper = new AppCompatBackgroundHelper(this);
-        this.f1764e = appCompatBackgroundHelper;
+        this.f1808e = appCompatBackgroundHelper;
         appCompatBackgroundHelper.e(attributeSet, i10);
         AppCompatTextHelper appCompatTextHelper = new AppCompatTextHelper(this);
-        this.f1765i = appCompatTextHelper;
+        this.f1809i = appCompatTextHelper;
         appCompatTextHelper.m(attributeSet, i10);
         getEmojiTextViewHelper().c(attributeSet, i10);
     }

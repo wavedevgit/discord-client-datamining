@@ -1,7 +1,7 @@
 package com.discord.chat.bridge.botuikit;
 
 import androidx.recyclerview.widget.RecyclerView;
-import at.v1;
+import bt.v1;
 import com.discord.primitives.UserId;
 import com.discord.primitives.UserId$$serializer;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
@@ -14,8 +14,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import org.jetbrains.annotations.NotNull;
+@ys.m
 @Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b&\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 M2\u00020\u0001:\u0002LMBw\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0005\u0012\u0006\u0010\f\u001a\u00020\u0005\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0014¢\u0006\u0004\b\u0015\u0010\u0016B\u0091\u0001\b\u0010\u0012\u0006\u0010\u0017\u001a\u00020\t\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014\u0012\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019¢\u0006\u0004\b\u0015\u0010\u001aJ\u0010\u0010/\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b0\u0010\u001cJ\t\u00101\u001a\u00020\u0005HÆ\u0003J\t\u00102\u001a\u00020\u0005HÆ\u0003J\t\u00103\u001a\u00020\u0005HÆ\u0003J\t\u00104\u001a\u00020\tHÆ\u0003J\t\u00105\u001a\u00020\u0005HÆ\u0003J\t\u00106\u001a\u00020\u0005HÆ\u0003J\t\u00107\u001a\u00020\u0005HÆ\u0003J\u000b\u00108\u001a\u0004\u0018\u00010\u000eHÆ\u0003J\u000b\u00109\u001a\u0004\u0018\u00010\u0010HÆ\u0003J\u000b\u0010:\u001a\u0004\u0018\u00010\u0012HÆ\u0003J\u000b\u0010;\u001a\u0004\u0018\u00010\u0014HÆ\u0003J\u0090\u0001\u0010<\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u00052\b\b\u0002\u0010\u000b\u001a\u00020\u00052\b\b\u0002\u0010\f\u001a\u00020\u00052\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00102\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00122\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0014HÆ\u0001¢\u0006\u0004\b=\u0010>J\u0013\u0010?\u001a\u00020@2\b\u0010A\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010B\u001a\u00020\tHÖ\u0001J\t\u0010C\u001a\u00020\u0005HÖ\u0001J%\u0010D\u001a\u00020E2\u0006\u0010F\u001a\u00020\u00002\u0006\u0010G\u001a\u00020H2\u0006\u0010I\u001a\u00020JH\u0001¢\u0006\u0002\bKR\u0013\u0010\u0002\u001a\u00020\u0003¢\u0006\n\n\u0002\u0010\u001d\u001a\u0004\b\u001b\u0010\u001cR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001fR\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u001fR\u0011\u0010\u0007\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u001fR\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010#R\u0011\u0010\n\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b$\u0010\u001fR\u0011\u0010\u000b\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b%\u0010\u001fR\u0011\u0010\f\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b&\u0010\u001fR\u0013\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\b\n\u0000\u001a\u0004\b'\u0010(R\u0013\u0010\u000f\u001a\u0004\u0018\u00010\u0010¢\u0006\b\n\u0000\u001a\u0004\b)\u0010*R\u0013\u0010\u0011\u001a\u0004\u0018\u00010\u0012¢\u0006\b\n\u0000\u001a\u0004\b+\u0010,R\u0013\u0010\u0013\u001a\u0004\u0018\u00010\u0014¢\u0006\b\n\u0000\u001a\u0004\b-\u0010.¨\u0006N"}, d2 = {"Lcom/discord/chat/bridge/botuikit/CheckpointDataV2025;", "", "authorId", "Lcom/discord/primitives/UserId;", "cardId", "", "cardAssetUrl", "powerLevel", "powerLevelUnits", "", "messagesString", "voiceString", "reactionString", "clickable", "Lcom/discord/chat/bridge/botuikit/CheckpointCardClickable;", "topEmoji", "Lcom/discord/chat/bridge/botuikit/CheckpointEmoji;", "topGuild", "Lcom/discord/chat/bridge/botuikit/CheckpointGuild;", "topGame", "Lcom/discord/chat/bridge/botuikit/CheckpointApplication;", "<init>", "(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/CheckpointCardClickable;Lcom/discord/chat/bridge/botuikit/CheckpointEmoji;Lcom/discord/chat/bridge/botuikit/CheckpointGuild;Lcom/discord/chat/bridge/botuikit/CheckpointApplication;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILcom/discord/primitives/UserId;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/CheckpointCardClickable;Lcom/discord/chat/bridge/botuikit/CheckpointEmoji;Lcom/discord/chat/bridge/botuikit/CheckpointGuild;Lcom/discord/chat/bridge/botuikit/CheckpointApplication;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getAuthorId-re6GcUE", "()J", "J", "getCardId", "()Ljava/lang/String;", "getCardAssetUrl", "getPowerLevel", "getPowerLevelUnits", "()I", "getMessagesString", "getVoiceString", "getReactionString", "getClickable", "()Lcom/discord/chat/bridge/botuikit/CheckpointCardClickable;", "getTopEmoji", "()Lcom/discord/chat/bridge/botuikit/CheckpointEmoji;", "getTopGuild", "()Lcom/discord/chat/bridge/botuikit/CheckpointGuild;", "getTopGame", "()Lcom/discord/chat/bridge/botuikit/CheckpointApplication;", "component1", "component1-re6GcUE", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "copy", "copy-cXl1GvU", "(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/CheckpointCardClickable;Lcom/discord/chat/bridge/botuikit/CheckpointEmoji;Lcom/discord/chat/bridge/botuikit/CheckpointGuild;Lcom/discord/chat/bridge/botuikit/CheckpointApplication;)Lcom/discord/chat/bridge/botuikit/CheckpointDataV2025;", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$chat_release", "$serializer", "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
-@xs.m
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class CheckpointDataV2025 {
     @NotNull
@@ -60,30 +60,30 @@ public final class CheckpointDataV2025 {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(CheckpointDataV2025 checkpointDataV2025, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.j(serialDescriptor, 0, UserId$$serializer.INSTANCE, UserId.m1136boximpl(checkpointDataV2025.authorId));
-        compositeEncoder.y(serialDescriptor, 1, checkpointDataV2025.cardId);
-        compositeEncoder.y(serialDescriptor, 2, checkpointDataV2025.cardAssetUrl);
-        compositeEncoder.y(serialDescriptor, 3, checkpointDataV2025.powerLevel);
-        compositeEncoder.w(serialDescriptor, 4, checkpointDataV2025.powerLevelUnits);
-        compositeEncoder.y(serialDescriptor, 5, checkpointDataV2025.messagesString);
-        compositeEncoder.y(serialDescriptor, 6, checkpointDataV2025.voiceString);
-        compositeEncoder.y(serialDescriptor, 7, checkpointDataV2025.reactionString);
-        if (compositeEncoder.A(serialDescriptor, 8) || checkpointDataV2025.clickable != null) {
-            compositeEncoder.z(serialDescriptor, 8, CheckpointCardClickable$$serializer.INSTANCE, checkpointDataV2025.clickable);
+        compositeEncoder.m(serialDescriptor, 0, UserId$$serializer.INSTANCE, UserId.m1138boximpl(checkpointDataV2025.authorId));
+        compositeEncoder.x(serialDescriptor, 1, checkpointDataV2025.cardId);
+        compositeEncoder.x(serialDescriptor, 2, checkpointDataV2025.cardAssetUrl);
+        compositeEncoder.x(serialDescriptor, 3, checkpointDataV2025.powerLevel);
+        compositeEncoder.v(serialDescriptor, 4, checkpointDataV2025.powerLevelUnits);
+        compositeEncoder.x(serialDescriptor, 5, checkpointDataV2025.messagesString);
+        compositeEncoder.x(serialDescriptor, 6, checkpointDataV2025.voiceString);
+        compositeEncoder.x(serialDescriptor, 7, checkpointDataV2025.reactionString);
+        if (compositeEncoder.y(serialDescriptor, 8) || checkpointDataV2025.clickable != null) {
+            compositeEncoder.B(serialDescriptor, 8, CheckpointCardClickable$$serializer.INSTANCE, checkpointDataV2025.clickable);
         }
-        if (compositeEncoder.A(serialDescriptor, 9) || checkpointDataV2025.topEmoji != null) {
-            compositeEncoder.z(serialDescriptor, 9, CheckpointEmoji$$serializer.INSTANCE, checkpointDataV2025.topEmoji);
+        if (compositeEncoder.y(serialDescriptor, 9) || checkpointDataV2025.topEmoji != null) {
+            compositeEncoder.B(serialDescriptor, 9, CheckpointEmoji$$serializer.INSTANCE, checkpointDataV2025.topEmoji);
         }
-        if (compositeEncoder.A(serialDescriptor, 10) || checkpointDataV2025.topGuild != null) {
-            compositeEncoder.z(serialDescriptor, 10, CheckpointGuild$$serializer.INSTANCE, checkpointDataV2025.topGuild);
+        if (compositeEncoder.y(serialDescriptor, 10) || checkpointDataV2025.topGuild != null) {
+            compositeEncoder.B(serialDescriptor, 10, CheckpointGuild$$serializer.INSTANCE, checkpointDataV2025.topGuild);
         }
-        if (compositeEncoder.A(serialDescriptor, 11) || checkpointDataV2025.topGame != null) {
-            compositeEncoder.z(serialDescriptor, 11, CheckpointApplication$$serializer.INSTANCE, checkpointDataV2025.topGame);
+        if (compositeEncoder.y(serialDescriptor, 11) || checkpointDataV2025.topGame != null) {
+            compositeEncoder.B(serialDescriptor, 11, CheckpointApplication$$serializer.INSTANCE, checkpointDataV2025.topGame);
         }
     }
 
     /* renamed from: component1-re6GcUE  reason: not valid java name */
-    public final long m258component1re6GcUE() {
+    public final long m260component1re6GcUE() {
         return this.authorId;
     }
 
@@ -139,7 +139,7 @@ public final class CheckpointDataV2025 {
 
     @NotNull
     /* renamed from: copy-cXl1GvU  reason: not valid java name */
-    public final CheckpointDataV2025 m259copycXl1GvU(long j10, @NotNull String cardId, @NotNull String cardAssetUrl, @NotNull String powerLevel, int i10, @NotNull String messagesString, @NotNull String voiceString, @NotNull String reactionString, CheckpointCardClickable checkpointCardClickable, CheckpointEmoji checkpointEmoji, CheckpointGuild checkpointGuild, CheckpointApplication checkpointApplication) {
+    public final CheckpointDataV2025 m261copycXl1GvU(long j10, @NotNull String cardId, @NotNull String cardAssetUrl, @NotNull String powerLevel, int i10, @NotNull String messagesString, @NotNull String voiceString, @NotNull String reactionString, CheckpointCardClickable checkpointCardClickable, CheckpointEmoji checkpointEmoji, CheckpointGuild checkpointGuild, CheckpointApplication checkpointApplication) {
         Intrinsics.checkNotNullParameter(cardId, "cardId");
         Intrinsics.checkNotNullParameter(cardAssetUrl, "cardAssetUrl");
         Intrinsics.checkNotNullParameter(powerLevel, "powerLevel");
@@ -155,13 +155,13 @@ public final class CheckpointDataV2025 {
         }
         if (obj instanceof CheckpointDataV2025) {
             CheckpointDataV2025 checkpointDataV2025 = (CheckpointDataV2025) obj;
-            return UserId.m1140equalsimpl0(this.authorId, checkpointDataV2025.authorId) && Intrinsics.areEqual(this.cardId, checkpointDataV2025.cardId) && Intrinsics.areEqual(this.cardAssetUrl, checkpointDataV2025.cardAssetUrl) && Intrinsics.areEqual(this.powerLevel, checkpointDataV2025.powerLevel) && this.powerLevelUnits == checkpointDataV2025.powerLevelUnits && Intrinsics.areEqual(this.messagesString, checkpointDataV2025.messagesString) && Intrinsics.areEqual(this.voiceString, checkpointDataV2025.voiceString) && Intrinsics.areEqual(this.reactionString, checkpointDataV2025.reactionString) && Intrinsics.areEqual(this.clickable, checkpointDataV2025.clickable) && Intrinsics.areEqual(this.topEmoji, checkpointDataV2025.topEmoji) && Intrinsics.areEqual(this.topGuild, checkpointDataV2025.topGuild) && Intrinsics.areEqual(this.topGame, checkpointDataV2025.topGame);
+            return UserId.m1142equalsimpl0(this.authorId, checkpointDataV2025.authorId) && Intrinsics.areEqual(this.cardId, checkpointDataV2025.cardId) && Intrinsics.areEqual(this.cardAssetUrl, checkpointDataV2025.cardAssetUrl) && Intrinsics.areEqual(this.powerLevel, checkpointDataV2025.powerLevel) && this.powerLevelUnits == checkpointDataV2025.powerLevelUnits && Intrinsics.areEqual(this.messagesString, checkpointDataV2025.messagesString) && Intrinsics.areEqual(this.voiceString, checkpointDataV2025.voiceString) && Intrinsics.areEqual(this.reactionString, checkpointDataV2025.reactionString) && Intrinsics.areEqual(this.clickable, checkpointDataV2025.clickable) && Intrinsics.areEqual(this.topEmoji, checkpointDataV2025.topEmoji) && Intrinsics.areEqual(this.topGuild, checkpointDataV2025.topGuild) && Intrinsics.areEqual(this.topGame, checkpointDataV2025.topGame);
         }
         return false;
     }
 
     /* renamed from: getAuthorId-re6GcUE  reason: not valid java name */
-    public final long m260getAuthorIdre6GcUE() {
+    public final long m262getAuthorIdre6GcUE() {
         return this.authorId;
     }
 
@@ -216,9 +216,9 @@ public final class CheckpointDataV2025 {
     }
 
     public int hashCode() {
-        int m1141hashCodeimpl = ((((((((((((((UserId.m1141hashCodeimpl(this.authorId) * 31) + this.cardId.hashCode()) * 31) + this.cardAssetUrl.hashCode()) * 31) + this.powerLevel.hashCode()) * 31) + Integer.hashCode(this.powerLevelUnits)) * 31) + this.messagesString.hashCode()) * 31) + this.voiceString.hashCode()) * 31) + this.reactionString.hashCode()) * 31;
+        int m1143hashCodeimpl = ((((((((((((((UserId.m1143hashCodeimpl(this.authorId) * 31) + this.cardId.hashCode()) * 31) + this.cardAssetUrl.hashCode()) * 31) + this.powerLevel.hashCode()) * 31) + Integer.hashCode(this.powerLevelUnits)) * 31) + this.messagesString.hashCode()) * 31) + this.voiceString.hashCode()) * 31) + this.reactionString.hashCode()) * 31;
         CheckpointCardClickable checkpointCardClickable = this.clickable;
-        int hashCode = (m1141hashCodeimpl + (checkpointCardClickable == null ? 0 : checkpointCardClickable.hashCode())) * 31;
+        int hashCode = (m1143hashCodeimpl + (checkpointCardClickable == null ? 0 : checkpointCardClickable.hashCode())) * 31;
         CheckpointEmoji checkpointEmoji = this.topEmoji;
         int hashCode2 = (hashCode + (checkpointEmoji == null ? 0 : checkpointEmoji.hashCode())) * 31;
         CheckpointGuild checkpointGuild = this.topGuild;
@@ -229,7 +229,7 @@ public final class CheckpointDataV2025 {
 
     @NotNull
     public String toString() {
-        String m1143toStringimpl = UserId.m1143toStringimpl(this.authorId);
+        String m1145toStringimpl = UserId.m1145toStringimpl(this.authorId);
         String str = this.cardId;
         String str2 = this.cardAssetUrl;
         String str3 = this.powerLevel;
@@ -241,7 +241,7 @@ public final class CheckpointDataV2025 {
         CheckpointEmoji checkpointEmoji = this.topEmoji;
         CheckpointGuild checkpointGuild = this.topGuild;
         CheckpointApplication checkpointApplication = this.topGame;
-        return "CheckpointDataV2025(authorId=" + m1143toStringimpl + ", cardId=" + str + ", cardAssetUrl=" + str2 + ", powerLevel=" + str3 + ", powerLevelUnits=" + i10 + ", messagesString=" + str4 + ", voiceString=" + str5 + ", reactionString=" + str6 + ", clickable=" + checkpointCardClickable + ", topEmoji=" + checkpointEmoji + ", topGuild=" + checkpointGuild + ", topGame=" + checkpointApplication + ")";
+        return "CheckpointDataV2025(authorId=" + m1145toStringimpl + ", cardId=" + str + ", cardAssetUrl=" + str2 + ", powerLevel=" + str3 + ", powerLevelUnits=" + i10 + ", messagesString=" + str4 + ", voiceString=" + str5 + ", reactionString=" + str6 + ", clickable=" + checkpointCardClickable + ", topEmoji=" + checkpointEmoji + ", topGuild=" + checkpointGuild + ", topGame=" + checkpointApplication + ")";
     }
 
     public /* synthetic */ CheckpointDataV2025(long j10, String str, String str2, String str3, int i10, String str4, String str5, String str6, CheckpointCardClickable checkpointCardClickable, CheckpointEmoji checkpointEmoji, CheckpointGuild checkpointGuild, CheckpointApplication checkpointApplication, DefaultConstructorMarker defaultConstructorMarker) {
@@ -252,7 +252,7 @@ public final class CheckpointDataV2025 {
         if (255 != (i10 & SetSpanOperation.SPAN_MAX_PRIORITY)) {
             v1.b(i10, SetSpanOperation.SPAN_MAX_PRIORITY, CheckpointDataV2025$$serializer.INSTANCE.getDescriptor());
         }
-        this.authorId = userId.m1145unboximpl();
+        this.authorId = userId.m1147unboximpl();
         this.cardId = str;
         this.cardAssetUrl = str2;
         this.powerLevel = str3;

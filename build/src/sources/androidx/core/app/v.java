@@ -6,23 +6,23 @@ import kotlin.jvm.internal.Intrinsics;
 public final class v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f3109a;
+    private final boolean f3153a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Configuration f3110b;
+    private Configuration f3154b;
 
     public v(boolean z10) {
-        this.f3109a = z10;
+        this.f3153a = z10;
     }
 
     public final boolean a() {
-        return this.f3109a;
+        return this.f3153a;
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public v(boolean z10, Configuration newConfig) {
         this(z10);
         Intrinsics.checkNotNullParameter(newConfig, "newConfig");
-        this.f3110b = newConfig;
+        this.f3154b = newConfig;
     }
 }

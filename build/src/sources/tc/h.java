@@ -13,11 +13,11 @@ import ne.s0;
 public final class h implements p {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final int[] f49469o = {5, 4, 12, 8, 3, 10, 9, 11, 6, 2, 0, 1, 7, 16, 15, 14};
+    private static final int[] f49741o = {5, 4, 12, 8, 3, 10, 9, 11, 6, 2, 0, 1, 7, 16, 15, 14};
 
     /* renamed from: p  reason: collision with root package name */
-    private static final a f49470p = new a(new a.InterfaceC0638a() { // from class: tc.f
-        @Override // tc.h.a.InterfaceC0638a
+    private static final a f49742p = new a(new a.InterfaceC0649a() { // from class: tc.f
+        @Override // tc.h.a.InterfaceC0649a
         public final Constructor a() {
             Constructor g10;
             g10 = h.g();
@@ -26,8 +26,8 @@ public final class h implements p {
     });
 
     /* renamed from: q  reason: collision with root package name */
-    private static final a f49471q = new a(new a.InterfaceC0638a() { // from class: tc.g
-        @Override // tc.h.a.InterfaceC0638a
+    private static final a f49743q = new a(new a.InterfaceC0649a() { // from class: tc.g
+        @Override // tc.h.a.InterfaceC0649a
         public final Constructor a() {
             Constructor h10;
             h10 = h.h();
@@ -36,77 +36,77 @@ public final class h implements p {
     });
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f49472b;
+    private boolean f49744b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f49473c;
+    private boolean f49745c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f49474d;
+    private int f49746d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f49475e;
+    private int f49747e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f49476f;
+    private int f49748f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f49477g;
+    private int f49749g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f49478h;
+    private int f49750h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f49479i;
+    private int f49751i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f49480j;
+    private int f49752j;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f49482l;
+    private int f49754l;
 
     /* renamed from: m  reason: collision with root package name */
-    private ji.s f49483m;
+    private ji.s f49755m;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f49481k = 1;
+    private int f49753k = 1;
 
     /* renamed from: n  reason: collision with root package name */
-    private int f49484n = 112800;
+    private int f49756n = 112800;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final InterfaceC0638a f49485a;
+        private final InterfaceC0649a f49757a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final AtomicBoolean f49486b = new AtomicBoolean(false);
+        private final AtomicBoolean f49758b = new AtomicBoolean(false);
 
         /* renamed from: c  reason: collision with root package name */
-        private Constructor f49487c;
+        private Constructor f49759c;
 
         /* renamed from: tc.h$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-        public interface InterfaceC0638a {
+        public interface InterfaceC0649a {
             Constructor a();
         }
 
-        public a(InterfaceC0638a interfaceC0638a) {
-            this.f49485a = interfaceC0638a;
+        public a(InterfaceC0649a interfaceC0649a) {
+            this.f49757a = interfaceC0649a;
         }
 
         private Constructor b() {
-            synchronized (this.f49486b) {
-                if (this.f49486b.get()) {
-                    return this.f49487c;
+            synchronized (this.f49758b) {
+                if (this.f49758b.get()) {
+                    return this.f49759c;
                 }
                 try {
-                    return this.f49485a.a();
+                    return this.f49757a.a();
                 } catch (ClassNotFoundException unused) {
-                    this.f49486b.set(true);
-                    return this.f49487c;
+                    this.f49758b.set(true);
+                    return this.f49759c;
                 } catch (Exception e10) {
                     throw new RuntimeException("Error instantiating extension", e10);
                 }
@@ -136,44 +136,44 @@ public final class h implements p {
                 list.add(new dd.e());
                 return;
             case 2:
-                int i12 = this.f49474d | (this.f49472b ? 1 : 0);
-                if (!this.f49473c) {
+                int i12 = this.f49746d | (this.f49744b ? 1 : 0);
+                if (!this.f49745c) {
                     i11 = 0;
                 }
                 list.add(new dd.h(i11 | i12));
                 return;
             case 3:
-                int i13 = this.f49475e | (this.f49472b ? 1 : 0);
-                if (!this.f49473c) {
+                int i13 = this.f49747e | (this.f49744b ? 1 : 0);
+                if (!this.f49745c) {
                     i11 = 0;
                 }
                 list.add(new uc.b(i11 | i13));
                 return;
             case 4:
-                k a10 = f49470p.a(Integer.valueOf(this.f49476f));
+                k a10 = f49742p.a(Integer.valueOf(this.f49748f));
                 if (a10 != null) {
                     list.add(a10);
                     return;
                 } else {
-                    list.add(new wc.d(this.f49476f));
+                    list.add(new wc.d(this.f49748f));
                     return;
                 }
             case 5:
                 list.add(new xc.c());
                 return;
             case 6:
-                list.add(new zc.e(this.f49477g));
+                list.add(new zc.e(this.f49749g));
                 return;
             case 7:
-                int i14 = this.f49480j | (this.f49472b ? 1 : 0);
-                if (!this.f49473c) {
+                int i14 = this.f49752j | (this.f49744b ? 1 : 0);
+                if (!this.f49745c) {
                     i11 = 0;
                 }
                 list.add(new ad.f(i11 | i14));
                 return;
             case 8:
-                list.add(new bd.g(this.f49479i));
-                list.add(new bd.k(this.f49478h));
+                list.add(new bd.g(this.f49751i));
+                list.add(new bd.k(this.f49750h));
                 return;
             case 9:
                 list.add(new cd.d());
@@ -182,10 +182,10 @@ public final class h implements p {
                 list.add(new dd.a0());
                 return;
             case 11:
-                if (this.f49483m == null) {
-                    this.f49483m = ji.s.r();
+                if (this.f49755m == null) {
+                    this.f49755m = ji.s.r();
                 }
-                list.add(new h0(this.f49481k, new s0(0L), new dd.j(this.f49482l, this.f49483m), this.f49484n));
+                list.add(new h0(this.f49753k, new s0(0L), new dd.j(this.f49754l, this.f49755m), this.f49756n));
                 return;
             case 12:
                 list.add(new ed.b());
@@ -197,7 +197,7 @@ public final class h implements p {
                 list.add(new yc.a());
                 return;
             case 15:
-                k a11 = f49471q.a(new Object[0]);
+                k a11 = f49743q.a(new Object[0]);
                 if (a11 != null) {
                     list.add(a11);
                     return;
@@ -226,7 +226,7 @@ public final class h implements p {
     public synchronized k[] a(Uri uri, Map map) {
         ArrayList arrayList;
         try {
-            int[] iArr = f49469o;
+            int[] iArr = f49741o;
             arrayList = new ArrayList(iArr.length);
             int b10 = ne.p.b(map);
             if (b10 != -1) {

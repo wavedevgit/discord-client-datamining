@@ -6,7 +6,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class k extends c {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f21593e = new a(null);
+    public static final a f21169e = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -20,7 +20,7 @@ public final class k extends c {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public k(String name, int i10) {
-        super(name, b.f21536a.a(), i10, null);
+        super(name, b.f21112a.a(), i10, null);
         Intrinsics.checkNotNullParameter(name, "name");
     }
 
@@ -56,7 +56,7 @@ public final class k extends c {
         } else {
             f14 = (l10 - 0.13793103f) * 0.12841855f;
         }
-        j jVar = j.f21582a;
+        j jVar = j.f21158a;
         return (Float.floatToIntBits(f13 * jVar.c()[0]) << 32) | (Float.floatToIntBits(f14 * jVar.c()[1]) & 4294967295L);
     }
 
@@ -69,7 +69,7 @@ public final class k extends c {
         } else {
             f13 = 0.12841855f * (l10 - 0.13793103f);
         }
-        return f13 * j.f21582a.c()[2];
+        return f13 * j.f21158a.c()[2];
     }
 
     @Override // d1.c
@@ -78,7 +78,7 @@ public final class k extends c {
         float f15;
         float f16;
         Intrinsics.checkNotNullParameter(colorSpace, "colorSpace");
-        j jVar = j.f21582a;
+        j jVar = j.f21158a;
         float f17 = f10 / jVar.c()[0];
         float f18 = f11 / jVar.c()[1];
         float f19 = f12 / jVar.c()[2];

@@ -11,29 +11,29 @@ import org.jetbrains.annotations.NotNull;
 public final class KotlinJvmBinarySourceElement implements DeserializedContainerSource {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KotlinJvmBinaryClass f34533a;
+    private final KotlinJvmBinaryClass f34309a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final IncompatibleVersionErrorData f34534b;
+    private final IncompatibleVersionErrorData f34310b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f34535c;
+    private final boolean f34311c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedContainerAbiStability f34536d;
+    private final DeserializedContainerAbiStability f34312d;
 
     public KotlinJvmBinarySourceElement(@NotNull KotlinJvmBinaryClass binaryClass, IncompatibleVersionErrorData<MetadataVersion> incompatibleVersionErrorData, boolean z10, @NotNull DeserializedContainerAbiStability abiStability) {
         Intrinsics.checkNotNullParameter(binaryClass, "binaryClass");
         Intrinsics.checkNotNullParameter(abiStability, "abiStability");
-        this.f34533a = binaryClass;
-        this.f34534b = incompatibleVersionErrorData;
-        this.f34535c = z10;
-        this.f34536d = abiStability;
+        this.f34309a = binaryClass;
+        this.f34310b = incompatibleVersionErrorData;
+        this.f34311c = z10;
+        this.f34312d = abiStability;
     }
 
     @NotNull
     public final KotlinJvmBinaryClass getBinaryClass() {
-        return this.f34533a;
+        return this.f34309a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.SourceElement
@@ -47,11 +47,11 @@ public final class KotlinJvmBinarySourceElement implements DeserializedContainer
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedContainerSource
     @NotNull
     public String getPresentableString() {
-        return "Class '" + this.f34533a.getClassId().asSingleFqName().asString() + '\'';
+        return "Class '" + this.f34309a.getClassId().asSingleFqName().asString() + '\'';
     }
 
     @NotNull
     public String toString() {
-        return KotlinJvmBinarySourceElement.class.getSimpleName() + ": " + this.f34533a;
+        return KotlinJvmBinarySourceElement.class.getSimpleName() + ": " + this.f34309a;
     }
 }

@@ -10,16 +10,16 @@ import rc.v;
 public interface v {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final v f48262a;
+    public static final v f48464a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final v f48263b;
+    public static final v f48465b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f48264a = new b() { // from class: rc.w
+        public static final b f48466a = new b() { // from class: rc.w
             @Override // rc.v.b
             public final void release() {
                 v.b.a();
@@ -34,8 +34,8 @@ public interface v {
 
     static {
         a aVar = new a();
-        f48262a = aVar;
-        f48263b = aVar;
+        f48464a = aVar;
+        f48465b = aVar;
     }
 
     void a(Looper looper, t1 t1Var);
@@ -45,7 +45,7 @@ public interface v {
     n c(u.a aVar, Format format);
 
     default b e(u.a aVar, Format format) {
-        return b.f48264a;
+        return b.f48466a;
     }
 
     default void d() {
@@ -61,7 +61,7 @@ public interface v {
 
         @Override // rc.v
         public int b(Format format) {
-            if (format.f12709z != null) {
+            if (format.f12338z != null) {
                 return 1;
             }
             return 0;
@@ -69,7 +69,7 @@ public interface v {
 
         @Override // rc.v
         public n c(u.a aVar, Format format) {
-            if (format.f12709z == null) {
+            if (format.f12338z == null) {
                 return null;
             }
             return new a0(new n.a(new l0(1), 6001));

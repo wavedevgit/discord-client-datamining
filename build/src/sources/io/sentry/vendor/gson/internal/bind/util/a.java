@@ -9,7 +9,7 @@ import java.util.TimeZone;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final TimeZone f30883a = DesugarTimeZone.getTimeZone("UTC");
+    public static final TimeZone f30449a = DesugarTimeZone.getTimeZone("UTC");
 
     private static boolean a(String str, int i10, char c10) {
         if (i10 < str.length() && str.charAt(i10) == c10) {
@@ -19,7 +19,7 @@ public abstract class a {
     }
 
     public static String b(Date date, boolean z10) {
-        return c(date, z10, f30883a);
+        return c(date, z10, f30449a);
     }
 
     public static String c(Date date, boolean z10, TimeZone timeZone) {

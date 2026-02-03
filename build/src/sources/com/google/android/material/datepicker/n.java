@@ -9,28 +9,28 @@ import java.util.Collection;
 public class n extends BaseAdapter {
 
     /* renamed from: p  reason: collision with root package name */
-    static final int f15980p = t.i().getMaximum(4);
+    static final int f15609p = t.i().getMaximum(4);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final int f15981q = (t.i().getMaximum(5) + t.i().getMaximum(7)) - 1;
+    private static final int f15610q = (t.i().getMaximum(5) + t.i().getMaximum(7)) - 1;
 
     /* renamed from: d  reason: collision with root package name */
-    final m f15982d;
+    final m f15611d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Collection f15983e;
+    private Collection f15612e;
 
     /* renamed from: i  reason: collision with root package name */
-    c f15984i;
+    c f15613i;
 
     /* renamed from: o  reason: collision with root package name */
-    final a f15985o;
+    final a f15614o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(m mVar, d dVar, a aVar, g gVar) {
-        this.f15982d = mVar;
-        this.f15985o = aVar;
-        this.f15983e = dVar.U1();
+        this.f15611d = mVar;
+        this.f15614o = aVar;
+        this.f15612e = dVar.U1();
     }
 
     private String c(Context context, long j10) {
@@ -38,8 +38,8 @@ public class n extends BaseAdapter {
     }
 
     private void f(Context context) {
-        if (this.f15984i == null) {
-            this.f15984i = new c(context);
+        if (this.f15613i == null) {
+            this.f15613i = new c(context);
         }
     }
 
@@ -60,28 +60,28 @@ public class n extends BaseAdapter {
             return;
         }
         textView.setContentDescription(c(textView.getContext(), j10));
-        if (this.f15985o.f().D0(j10)) {
+        if (this.f15614o.f().E0(j10)) {
             textView.setEnabled(true);
             boolean h10 = h(j10);
             textView.setSelected(h10);
             if (h10) {
-                bVar = this.f15984i.f15901b;
+                bVar = this.f15613i.f15530b;
             } else if (j(j10)) {
-                bVar = this.f15984i.f15902c;
+                bVar = this.f15613i.f15531c;
             } else {
-                bVar = this.f15984i.f15900a;
+                bVar = this.f15613i.f15529a;
             }
         } else {
             textView.setEnabled(false);
-            bVar = this.f15984i.f15906g;
+            bVar = this.f15613i.f15535g;
         }
         bVar.b(textView);
     }
 
     private void n(MaterialCalendarGridView materialCalendarGridView, long j10) {
-        if (m.e(j10).equals(this.f15982d)) {
-            int j11 = this.f15982d.j(j10);
-            m((TextView) materialCalendarGridView.getChildAt(materialCalendarGridView.getAdapter2().a(j11) - materialCalendarGridView.getFirstVisiblePosition()), j10, j11);
+        if (m.e(j10).equals(this.f15611d)) {
+            int k10 = this.f15611d.k(j10);
+            m((TextView) materialCalendarGridView.getChildAt(materialCalendarGridView.getAdapter2().a(k10) - materialCalendarGridView.getFirstVisiblePosition()), j10, k10);
         }
     }
 
@@ -91,14 +91,14 @@ public class n extends BaseAdapter {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int b() {
-        return this.f15982d.g(this.f15985o.i());
+        return this.f15611d.g(this.f15614o.i());
     }
 
     @Override // android.widget.Adapter
     /* renamed from: d */
     public Long getItem(int i10) {
         if (i10 >= b() && i10 <= k()) {
-            return Long.valueOf(this.f15982d.i(l(i10)));
+            return Long.valueOf(this.f15611d.i(l(i10)));
         }
         return null;
     }
@@ -122,7 +122,7 @@ public class n extends BaseAdapter {
             if (r7 != 0) goto L1e
             android.content.Context r7 = r8.getContext()
             android.view.LayoutInflater r7 = android.view.LayoutInflater.from(r7)
-            int r0 = yg.h.f54481n
+            int r0 = yg.h.f54456n
             android.view.View r7 = r7.inflate(r0, r8, r1)
             r0 = r7
             android.widget.TextView r0 = (android.widget.TextView) r0
@@ -130,8 +130,8 @@ public class n extends BaseAdapter {
             int r7 = r5.b()
             int r7 = r6 - r7
             if (r7 < 0) goto L54
-            com.google.android.material.datepicker.m r8 = r5.f15982d
-            int r2 = r8.f15977p
+            com.google.android.material.datepicker.m r8 = r5.f15611d
+            int r2 = r8.f15606p
             if (r7 < r2) goto L2d
             goto L54
         L2d:
@@ -172,12 +172,12 @@ public class n extends BaseAdapter {
 
     @Override // android.widget.Adapter
     public int getCount() {
-        return f15981q;
+        return f15610q;
     }
 
     @Override // android.widget.Adapter
     public long getItemId(int i10) {
-        return i10 / this.f15982d.f15976o;
+        return i10 / this.f15611d.f15605o;
     }
 
     @Override // android.widget.BaseAdapter, android.widget.Adapter
@@ -191,7 +191,7 @@ public class n extends BaseAdapter {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int k() {
-        return (b() + this.f15982d.f15977p) - 1;
+        return (b() + this.f15611d.f15606p) - 1;
     }
 
     int l(int i10) {
@@ -199,7 +199,7 @@ public class n extends BaseAdapter {
     }
 
     public void o(MaterialCalendarGridView materialCalendarGridView) {
-        for (Long l10 : this.f15983e) {
+        for (Long l10 : this.f15612e) {
             n(materialCalendarGridView, l10.longValue());
         }
     }

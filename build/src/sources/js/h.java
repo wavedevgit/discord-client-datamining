@@ -1,43 +1,113 @@
 package js;
 
-import kotlin.Unit;
+import hs.y0;
+import java.util.concurrent.CancellationException;
 import kotlin.coroutines.Continuation;
-import kotlin.jvm.functions.Function2;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
-/* JADX INFO: Access modifiers changed from: package-private */
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function1;
+import kotlinx.coroutines.b0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract /* synthetic */ class h {
+public abstract class h extends kotlinx.coroutines.a implements g {
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a implements Flow {
+    /* renamed from: o  reason: collision with root package name */
+    private final g f32267o;
 
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Object f32531d;
+    public h(CoroutineContext coroutineContext, g gVar, boolean z10, boolean z11) {
+        super(coroutineContext, z10, z11);
+        this.f32267o = gVar;
+    }
 
-        public a(Object obj) {
-            this.f32531d = obj;
+    @Override // kotlinx.coroutines.b0
+    public void I(Throwable th2) {
+        CancellationException F0 = b0.F0(this, th2, null, 1, null);
+        this.f32267o.h(F0);
+        G(F0);
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public final g X0() {
+        return this.f32267o;
+    }
+
+    @Override // js.w
+    public void b(Function1 function1) {
+        this.f32267o.b(function1);
+    }
+
+    @Override // js.w
+    public Object d(Object obj) {
+        return this.f32267o.d(obj);
+    }
+
+    @Override // kotlinx.coroutines.b0, kotlinx.coroutines.Job, js.v
+    public final void h(CancellationException cancellationException) {
+        if (isCancelled()) {
+            return;
         }
-
-        @Override // kotlinx.coroutines.flow.Flow
-        public Object collect(FlowCollector flowCollector, Continuation continuation) {
-            Object emit = flowCollector.emit(this.f32531d, continuation);
-            if (emit == or.b.f()) {
-                return emit;
-            }
-            return Unit.f33298a;
+        if (cancellationException == null) {
+            cancellationException = new y0(M(), null, this);
         }
+        I(cancellationException);
     }
 
-    public static final Flow a(Function2 function2) {
-        return new b(function2, null, 0, null, 14, null);
+    @Override // js.v
+    public boolean i() {
+        return this.f32267o.i();
     }
 
-    public static final Flow b(Function2 function2) {
-        return new z(function2);
+    @Override // js.v
+    public i iterator() {
+        return this.f32267o.iterator();
     }
 
-    public static final Flow c(Object obj) {
-        return new a(obj);
+    @Override // js.v
+    public ps.h j() {
+        return this.f32267o.j();
+    }
+
+    @Override // js.v
+    public ps.h k() {
+        return this.f32267o.k();
+    }
+
+    @Override // js.v
+    public Object m() {
+        return this.f32267o.m();
+    }
+
+    @Override // js.v
+    public Object o(Continuation continuation) {
+        Object o10 = this.f32267o.o(continuation);
+        pr.b.f();
+        return o10;
+    }
+
+    @Override // js.w
+    public boolean offer(Object obj) {
+        return this.f32267o.offer(obj);
+    }
+
+    @Override // js.v
+    public Object r(Continuation continuation) {
+        return this.f32267o.r(continuation);
+    }
+
+    @Override // js.w
+    public boolean s(Throwable th2) {
+        return this.f32267o.s(th2);
+    }
+
+    @Override // js.w
+    public Object u(Object obj, Continuation continuation) {
+        return this.f32267o.u(obj, continuation);
+    }
+
+    @Override // js.w
+    public boolean v() {
+        return this.f32267o.v();
+    }
+
+    public final g W0() {
+        return this;
     }
 }

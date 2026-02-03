@@ -14,28 +14,28 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeRequest_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20184a;
+    private final m.b f19817a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20185b;
+    private final com.squareup.moshi.h f19818b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f20186c;
+    private final com.squareup.moshi.h f19819c;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile Constructor f20187d;
+    private volatile Constructor f19820d;
 
     public ExchangeOneTimeLinkCodeRequest_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("attributes", "type");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20184a = a10;
+        this.f19817a = a10;
         com.squareup.moshi.h f10 = moshi.f(ExchangeOneTimeLinkCodeRequest.Attributes.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20185b = f10;
+        this.f19818b = f10;
         com.squareup.moshi.h f11 = moshi.f(String.class, x0.d(), "type");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f20186c = f11;
+        this.f19819c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -47,27 +47,27 @@ public final class ExchangeOneTimeLinkCodeRequest_DataJsonAdapter extends com.sq
         String str = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f20184a);
-            if (A0 != -1) {
-                if (A0 != 0) {
-                    if (A0 == 1) {
-                        str = (String) this.f20186c.fromJson(reader);
+            int t02 = reader.t0(this.f19817a);
+            if (t02 != -1) {
+                if (t02 != 0) {
+                    if (t02 == 1) {
+                        str = (String) this.f19819c.fromJson(reader);
                         if (str != null) {
                             i10 = -3;
                         } else {
-                            throw sm.c.x("type", "type", reader);
+                            throw tm.c.x("type", "type", reader);
                         }
                     } else {
                         continue;
                     }
                 } else {
-                    attributes = (ExchangeOneTimeLinkCodeRequest.Attributes) this.f20185b.fromJson(reader);
+                    attributes = (ExchangeOneTimeLinkCodeRequest.Attributes) this.f19818b.fromJson(reader);
                     if (attributes == null) {
-                        throw sm.c.x("attributes", "attributes", reader);
+                        throw tm.c.x("attributes", "attributes", reader);
                     }
                 }
             } else {
-                reader.E0();
+                reader.F0();
                 reader.P();
             }
         }
@@ -77,12 +77,12 @@ public final class ExchangeOneTimeLinkCodeRequest_DataJsonAdapter extends com.sq
                 Intrinsics.checkNotNull(str, "null cannot be cast to non-null type kotlin.String");
                 return new ExchangeOneTimeLinkCodeRequest.Data(attributes, str);
             }
-            throw sm.c.o("attributes", "attributes", reader);
+            throw tm.c.o("attributes", "attributes", reader);
         }
-        Constructor constructor = this.f20187d;
+        Constructor constructor = this.f19820d;
         if (constructor == null) {
-            constructor = ExchangeOneTimeLinkCodeRequest.Data.class.getDeclaredConstructor(ExchangeOneTimeLinkCodeRequest.Attributes.class, String.class, Integer.TYPE, sm.c.f49097c);
-            this.f20187d = constructor;
+            constructor = ExchangeOneTimeLinkCodeRequest.Data.class.getDeclaredConstructor(ExchangeOneTimeLinkCodeRequest.Attributes.class, String.class, Integer.TYPE, tm.c.f49935c);
+            this.f19820d = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         if (attributes != null) {
@@ -90,7 +90,7 @@ public final class ExchangeOneTimeLinkCodeRequest_DataJsonAdapter extends com.sq
             Intrinsics.checkNotNullExpressionValue(newInstance, "newInstance(...)");
             return (ExchangeOneTimeLinkCodeRequest.Data) newInstance;
         }
-        throw sm.c.o("attributes", "attributes", reader);
+        throw tm.c.o("attributes", "attributes", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -99,10 +99,10 @@ public final class ExchangeOneTimeLinkCodeRequest_DataJsonAdapter extends com.sq
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (data != null) {
             writer.l();
-            writer.A0("attributes");
-            this.f20185b.toJson(writer, data.a());
-            writer.A0("type");
-            this.f20186c.toJson(writer, data.b());
+            writer.t0("attributes");
+            this.f19818b.toJson(writer, data.a());
+            writer.t0("type");
+            this.f19819c.toJson(writer, data.b());
             writer.E();
             return;
         }

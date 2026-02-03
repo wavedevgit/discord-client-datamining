@@ -46,60 +46,60 @@ import org.jetbrains.annotations.NotNull;
 public abstract class DeserializedMemberScope extends MemberScopeImpl {
 
     /* renamed from: e  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f35685e = {Reflection.property1(new PropertyReference1Impl(DeserializedMemberScope.class, "classNames", "getClassNames$deserialization()Ljava/util/Set;", 0)), Reflection.property1(new PropertyReference1Impl(DeserializedMemberScope.class, "classifierNamesLazy", "getClassifierNamesLazy()Ljava/util/Set;", 0))};
+    static final /* synthetic */ KProperty[] f35461e = {Reflection.property1(new PropertyReference1Impl(DeserializedMemberScope.class, "classNames", "getClassNames$deserialization()Ljava/util/Set;", 0)), Reflection.property1(new PropertyReference1Impl(DeserializedMemberScope.class, "classifierNamesLazy", "getClassifierNamesLazy()Ljava/util/Set;", 0))};
 
     /* renamed from: a  reason: collision with root package name */
-    private final DeserializationContext f35686a;
+    private final DeserializationContext f35462a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f35687b;
+    private final a f35463b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NotNullLazyValue f35688c;
+    private final NotNullLazyValue f35464c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final NullableLazyValue f35689d;
+    private final NullableLazyValue f35465d;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public final class OptimizedImplementation implements a {
 
         /* renamed from: j  reason: collision with root package name */
-        static final /* synthetic */ KProperty[] f35690j = {Reflection.property1(new PropertyReference1Impl(OptimizedImplementation.class, "functionNames", "getFunctionNames()Ljava/util/Set;", 0)), Reflection.property1(new PropertyReference1Impl(OptimizedImplementation.class, "variableNames", "getVariableNames()Ljava/util/Set;", 0))};
+        static final /* synthetic */ KProperty[] f35466j = {Reflection.property1(new PropertyReference1Impl(OptimizedImplementation.class, "functionNames", "getFunctionNames()Ljava/util/Set;", 0)), Reflection.property1(new PropertyReference1Impl(OptimizedImplementation.class, "variableNames", "getVariableNames()Ljava/util/Set;", 0))};
 
         /* renamed from: a  reason: collision with root package name */
-        private final Map f35691a;
+        private final Map f35467a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Map f35692b;
+        private final Map f35468b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Map f35693c;
+        private final Map f35469c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final MemoizedFunctionToNotNull f35694d;
+        private final MemoizedFunctionToNotNull f35470d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final MemoizedFunctionToNotNull f35695e;
+        private final MemoizedFunctionToNotNull f35471e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final MemoizedFunctionToNullable f35696f;
+        private final MemoizedFunctionToNullable f35472f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final NotNullLazyValue f35697g;
+        private final NotNullLazyValue f35473g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final NotNullLazyValue f35698h;
+        private final NotNullLazyValue f35474h;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ DeserializedMemberScope f35699i;
+        final /* synthetic */ DeserializedMemberScope f35475i;
 
         public OptimizedImplementation(DeserializedMemberScope deserializedMemberScope, List functionList, List propertyList, List typeAliasList) {
             Map i10;
             Intrinsics.checkNotNullParameter(functionList, "functionList");
             Intrinsics.checkNotNullParameter(propertyList, "propertyList");
             Intrinsics.checkNotNullParameter(typeAliasList, "typeAliasList");
-            this.f35699i = deserializedMemberScope;
+            this.f35475i = deserializedMemberScope;
             LinkedHashMap linkedHashMap = new LinkedHashMap();
             for (Object obj : functionList) {
                 Name name = NameResolverUtilKt.getName(deserializedMemberScope.l().getNameResolver(), ((ProtoBuf.Function) ((MessageLite) obj)).getName());
@@ -110,8 +110,8 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
                 }
                 ((List) obj2).add(obj);
             }
-            this.f35691a = n(linkedHashMap);
-            DeserializedMemberScope deserializedMemberScope2 = this.f35699i;
+            this.f35467a = n(linkedHashMap);
+            DeserializedMemberScope deserializedMemberScope2 = this.f35475i;
             LinkedHashMap linkedHashMap2 = new LinkedHashMap();
             for (Object obj3 : propertyList) {
                 Name name2 = NameResolverUtilKt.getName(deserializedMemberScope2.l().getNameResolver(), ((ProtoBuf.Property) ((MessageLite) obj3)).getName());
@@ -122,9 +122,9 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
                 }
                 ((List) obj4).add(obj3);
             }
-            this.f35692b = n(linkedHashMap2);
-            if (this.f35699i.l().getComponents().getConfiguration().getTypeAliasesAllowed()) {
-                DeserializedMemberScope deserializedMemberScope3 = this.f35699i;
+            this.f35468b = n(linkedHashMap2);
+            if (this.f35475i.l().getComponents().getConfiguration().getTypeAliasesAllowed()) {
+                DeserializedMemberScope deserializedMemberScope3 = this.f35475i;
                 LinkedHashMap linkedHashMap3 = new LinkedHashMap();
                 for (Object obj5 : typeAliasList) {
                     Name name3 = NameResolverUtilKt.getName(deserializedMemberScope3.l().getNameResolver(), ((ProtoBuf.TypeAlias) ((MessageLite) obj5)).getName());
@@ -139,12 +139,12 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
             } else {
                 i10 = o0.i();
             }
-            this.f35693c = i10;
-            this.f35694d = this.f35699i.l().getStorageManager().createMemoizedFunction(new z(this));
-            this.f35695e = this.f35699i.l().getStorageManager().createMemoizedFunction(new a0(this));
-            this.f35696f = this.f35699i.l().getStorageManager().createMemoizedFunctionWithNullableValues(new b0(this));
-            this.f35697g = this.f35699i.l().getStorageManager().createLazyValue(new c0(this, this.f35699i));
-            this.f35698h = this.f35699i.l().getStorageManager().createLazyValue(new d0(this, this.f35699i));
+            this.f35469c = i10;
+            this.f35470d = this.f35475i.l().getStorageManager().createMemoizedFunction(new z(this));
+            this.f35471e = this.f35475i.l().getStorageManager().createMemoizedFunction(new a0(this));
+            this.f35472f = this.f35475i.l().getStorageManager().createMemoizedFunctionWithNullableValues(new b0(this));
+            this.f35473g = this.f35475i.l().getStorageManager().createLazyValue(new c0(this, this.f35475i));
+            this.f35474h = this.f35475i.l().getStorageManager().createLazyValue(new d0(this, this.f35475i));
         }
 
         /* JADX WARN: Removed duplicated region for block: B:11:0x0048  */
@@ -155,15 +155,15 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
         private final java.util.Collection i(kotlin.reflect.jvm.internal.impl.name.Name r6) {
             /*
                 r5 = this;
-                java.util.Map r0 = r5.f35691a
+                java.util.Map r0 = r5.f35467a
                 kotlin.reflect.jvm.internal.impl.protobuf.Parser<kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$Function> r1 = kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf.Function.PARSER
                 java.lang.String r2 = "PARSER"
                 kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r1, r2)
-                kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope r2 = r5.f35699i
+                kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope r2 = r5.f35475i
                 java.lang.Object r0 = r0.get(r6)
                 byte[] r0 = (byte[]) r0
                 if (r0 == 0) goto L2c
-                kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope r3 = r5.f35699i
+                kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope r3 = r5.f35475i
                 java.io.ByteArrayInputStream r4 = new java.io.ByteArrayInputStream
                 r4.<init>(r0)
                 kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope$OptimizedImplementation$computeDescriptors$1$1 r0 = new kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope$OptimizedImplementation$computeDescriptors$1$1
@@ -218,15 +218,15 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
         private final java.util.Collection j(kotlin.reflect.jvm.internal.impl.name.Name r6) {
             /*
                 r5 = this;
-                java.util.Map r0 = r5.f35692b
+                java.util.Map r0 = r5.f35468b
                 kotlin.reflect.jvm.internal.impl.protobuf.Parser<kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$Property> r1 = kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf.Property.PARSER
                 java.lang.String r2 = "PARSER"
                 kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r1, r2)
-                kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope r2 = r5.f35699i
+                kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope r2 = r5.f35475i
                 java.lang.Object r0 = r0.get(r6)
                 byte[] r0 = (byte[]) r0
                 if (r0 == 0) goto L2c
-                kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope r3 = r5.f35699i
+                kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope r3 = r5.f35475i
                 java.io.ByteArrayInputStream r4 = new java.io.ByteArrayInputStream
                 r4.<init>(r0)
                 kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope$OptimizedImplementation$computeDescriptors$1$1 r0 = new kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope$OptimizedImplementation$computeDescriptors$1$1
@@ -269,16 +269,16 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
 
         private final TypeAliasDescriptor k(Name name) {
             ProtoBuf.TypeAlias parseDelimitedFrom;
-            byte[] bArr = (byte[]) this.f35693c.get(name);
-            if (bArr == null || (parseDelimitedFrom = ProtoBuf.TypeAlias.parseDelimitedFrom(new ByteArrayInputStream(bArr), this.f35699i.l().getComponents().getExtensionRegistryLite())) == null) {
+            byte[] bArr = (byte[]) this.f35469c.get(name);
+            if (bArr == null || (parseDelimitedFrom = ProtoBuf.TypeAlias.parseDelimitedFrom(new ByteArrayInputStream(bArr), this.f35475i.l().getComponents().getExtensionRegistryLite())) == null) {
                 return null;
             }
-            return this.f35699i.l().getMemberDeserializer().loadTypeAlias(parseDelimitedFrom);
+            return this.f35475i.l().getMemberDeserializer().loadTypeAlias(parseDelimitedFrom);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Set l(OptimizedImplementation optimizedImplementation, DeserializedMemberScope deserializedMemberScope) {
-            return x0.l(optimizedImplementation.f35691a.keySet(), deserializedMemberScope.o());
+            return x0.l(optimizedImplementation.f35467a.keySet(), deserializedMemberScope.o());
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -296,7 +296,7 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
                 ArrayList arrayList = new ArrayList(CollectionsKt.w(iterable, 10));
                 for (AbstractMessageLite abstractMessageLite : iterable) {
                     abstractMessageLite.writeDelimitedTo(byteArrayOutputStream);
-                    arrayList.add(Unit.f33298a);
+                    arrayList.add(Unit.f33074a);
                 }
                 linkedHashMap.put(key, byteArrayOutputStream.toByteArray());
             }
@@ -317,12 +317,12 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Set q(OptimizedImplementation optimizedImplementation, DeserializedMemberScope deserializedMemberScope) {
-            return x0.l(optimizedImplementation.f35692b.keySet(), deserializedMemberScope.p());
+            return x0.l(optimizedImplementation.f35468b.keySet(), deserializedMemberScope.p());
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope.a
         public Set a() {
-            return this.f35693c.keySet();
+            return this.f35469c.keySet();
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope.a
@@ -360,7 +360,7 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope.a
         public TypeAliasDescriptor c(Name name) {
             Intrinsics.checkNotNullParameter(name, "name");
-            return (TypeAliasDescriptor) this.f35696f.invoke(name);
+            return (TypeAliasDescriptor) this.f35472f.invoke(name);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope.a
@@ -370,7 +370,7 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
             if (!getFunctionNames().contains(name)) {
                 return CollectionsKt.l();
             }
-            return (Collection) this.f35694d.invoke(name);
+            return (Collection) this.f35470d.invoke(name);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope.a
@@ -380,17 +380,17 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
             if (!getVariableNames().contains(name)) {
                 return CollectionsKt.l();
             }
-            return (Collection) this.f35695e.invoke(name);
+            return (Collection) this.f35471e.invoke(name);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope.a
         public Set getFunctionNames() {
-            return (Set) StorageKt.getValue(this.f35697g, this, f35690j[0]);
+            return (Set) StorageKt.getValue(this.f35473g, this, f35466j[0]);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope.a
         public Set getVariableNames() {
-            return (Set) StorageKt.getValue(this.f35698h, this, f35690j[1]);
+            return (Set) StorageKt.getValue(this.f35474h, this, f35466j[1]);
         }
     }
 
@@ -417,68 +417,68 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
     public final class b implements a {
 
         /* renamed from: o  reason: collision with root package name */
-        static final /* synthetic */ KProperty[] f35703o = {Reflection.property1(new PropertyReference1Impl(b.class, "declaredFunctions", "getDeclaredFunctions()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "declaredProperties", "getDeclaredProperties()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "allTypeAliases", "getAllTypeAliases()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "allFunctions", "getAllFunctions()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "allProperties", "getAllProperties()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "typeAliasesByName", "getTypeAliasesByName()Ljava/util/Map;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "functionsByName", "getFunctionsByName()Ljava/util/Map;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "propertiesByName", "getPropertiesByName()Ljava/util/Map;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "functionNames", "getFunctionNames()Ljava/util/Set;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "variableNames", "getVariableNames()Ljava/util/Set;", 0))};
+        static final /* synthetic */ KProperty[] f35479o = {Reflection.property1(new PropertyReference1Impl(b.class, "declaredFunctions", "getDeclaredFunctions()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "declaredProperties", "getDeclaredProperties()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "allTypeAliases", "getAllTypeAliases()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "allFunctions", "getAllFunctions()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "allProperties", "getAllProperties()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "typeAliasesByName", "getTypeAliasesByName()Ljava/util/Map;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "functionsByName", "getFunctionsByName()Ljava/util/Map;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "propertiesByName", "getPropertiesByName()Ljava/util/Map;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "functionNames", "getFunctionNames()Ljava/util/Set;", 0)), Reflection.property1(new PropertyReference1Impl(b.class, "variableNames", "getVariableNames()Ljava/util/Set;", 0))};
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f35704a;
+        private final List f35480a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f35705b;
+        private final List f35481b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f35706c;
+        private final List f35482c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final NotNullLazyValue f35707d;
+        private final NotNullLazyValue f35483d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final NotNullLazyValue f35708e;
+        private final NotNullLazyValue f35484e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final NotNullLazyValue f35709f;
+        private final NotNullLazyValue f35485f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final NotNullLazyValue f35710g;
+        private final NotNullLazyValue f35486g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final NotNullLazyValue f35711h;
+        private final NotNullLazyValue f35487h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final NotNullLazyValue f35712i;
+        private final NotNullLazyValue f35488i;
 
         /* renamed from: j  reason: collision with root package name */
-        private final NotNullLazyValue f35713j;
+        private final NotNullLazyValue f35489j;
 
         /* renamed from: k  reason: collision with root package name */
-        private final NotNullLazyValue f35714k;
+        private final NotNullLazyValue f35490k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final NotNullLazyValue f35715l;
+        private final NotNullLazyValue f35491l;
 
         /* renamed from: m  reason: collision with root package name */
-        private final NotNullLazyValue f35716m;
+        private final NotNullLazyValue f35492m;
 
         /* renamed from: n  reason: collision with root package name */
-        final /* synthetic */ DeserializedMemberScope f35717n;
+        final /* synthetic */ DeserializedMemberScope f35493n;
 
         public b(DeserializedMemberScope deserializedMemberScope, List functionList, List propertyList, List typeAliasList) {
             Intrinsics.checkNotNullParameter(functionList, "functionList");
             Intrinsics.checkNotNullParameter(propertyList, "propertyList");
             Intrinsics.checkNotNullParameter(typeAliasList, "typeAliasList");
-            this.f35717n = deserializedMemberScope;
-            this.f35704a = functionList;
-            this.f35705b = propertyList;
-            this.f35706c = deserializedMemberScope.l().getComponents().getConfiguration().getTypeAliasesAllowed() ? typeAliasList : CollectionsKt.l();
-            this.f35707d = deserializedMemberScope.l().getStorageManager().createLazyValue(new p(this));
-            this.f35708e = deserializedMemberScope.l().getStorageManager().createLazyValue(new q(this));
-            this.f35709f = deserializedMemberScope.l().getStorageManager().createLazyValue(new r(this));
-            this.f35710g = deserializedMemberScope.l().getStorageManager().createLazyValue(new s(this));
-            this.f35711h = deserializedMemberScope.l().getStorageManager().createLazyValue(new t(this));
-            this.f35712i = deserializedMemberScope.l().getStorageManager().createLazyValue(new u(this));
-            this.f35713j = deserializedMemberScope.l().getStorageManager().createLazyValue(new v(this));
-            this.f35714k = deserializedMemberScope.l().getStorageManager().createLazyValue(new w(this));
-            this.f35715l = deserializedMemberScope.l().getStorageManager().createLazyValue(new x(this, deserializedMemberScope));
-            this.f35716m = deserializedMemberScope.l().getStorageManager().createLazyValue(new y(this, deserializedMemberScope));
+            this.f35493n = deserializedMemberScope;
+            this.f35480a = functionList;
+            this.f35481b = propertyList;
+            this.f35482c = deserializedMemberScope.l().getComponents().getConfiguration().getTypeAliasesAllowed() ? typeAliasList : CollectionsKt.l();
+            this.f35483d = deserializedMemberScope.l().getStorageManager().createLazyValue(new p(this));
+            this.f35484e = deserializedMemberScope.l().getStorageManager().createLazyValue(new q(this));
+            this.f35485f = deserializedMemberScope.l().getStorageManager().createLazyValue(new r(this));
+            this.f35486g = deserializedMemberScope.l().getStorageManager().createLazyValue(new s(this));
+            this.f35487h = deserializedMemberScope.l().getStorageManager().createLazyValue(new t(this));
+            this.f35488i = deserializedMemberScope.l().getStorageManager().createLazyValue(new u(this));
+            this.f35489j = deserializedMemberScope.l().getStorageManager().createLazyValue(new v(this));
+            this.f35490k = deserializedMemberScope.l().getStorageManager().createLazyValue(new w(this));
+            this.f35491l = deserializedMemberScope.l().getStorageManager().createLazyValue(new x(this, deserializedMemberScope));
+            this.f35492m = deserializedMemberScope.l().getStorageManager().createLazyValue(new y(this, deserializedMemberScope));
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -498,35 +498,35 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
         }
 
         private final List B() {
-            return (List) StorageKt.getValue(this.f35710g, this, f35703o[3]);
+            return (List) StorageKt.getValue(this.f35486g, this, f35479o[3]);
         }
 
         private final List C() {
-            return (List) StorageKt.getValue(this.f35711h, this, f35703o[4]);
+            return (List) StorageKt.getValue(this.f35487h, this, f35479o[4]);
         }
 
         private final List D() {
-            return (List) StorageKt.getValue(this.f35709f, this, f35703o[2]);
+            return (List) StorageKt.getValue(this.f35485f, this, f35479o[2]);
         }
 
         private final List E() {
-            return (List) StorageKt.getValue(this.f35707d, this, f35703o[0]);
+            return (List) StorageKt.getValue(this.f35483d, this, f35479o[0]);
         }
 
         private final List F() {
-            return (List) StorageKt.getValue(this.f35708e, this, f35703o[1]);
+            return (List) StorageKt.getValue(this.f35484e, this, f35479o[1]);
         }
 
         private final Map G() {
-            return (Map) StorageKt.getValue(this.f35713j, this, f35703o[6]);
+            return (Map) StorageKt.getValue(this.f35489j, this, f35479o[6]);
         }
 
         private final Map H() {
-            return (Map) StorageKt.getValue(this.f35714k, this, f35703o[7]);
+            return (Map) StorageKt.getValue(this.f35490k, this, f35479o[7]);
         }
 
         private final Map I() {
-            return (Map) StorageKt.getValue(this.f35712i, this, f35703o[5]);
+            return (Map) StorageKt.getValue(this.f35488i, this, f35479o[5]);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -560,8 +560,8 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
         /* JADX INFO: Access modifiers changed from: private */
         public static final Set L(b bVar, DeserializedMemberScope deserializedMemberScope) {
             LinkedHashSet linkedHashSet = new LinkedHashSet();
-            DeserializedMemberScope deserializedMemberScope2 = bVar.f35717n;
-            for (MessageLite messageLite : bVar.f35705b) {
+            DeserializedMemberScope deserializedMemberScope2 = bVar.f35493n;
+            for (MessageLite messageLite : bVar.f35481b) {
                 linkedHashSet.add(NameResolverUtilKt.getName(deserializedMemberScope2.l().getNameResolver(), ((ProtoBuf.Property) messageLite).getName()));
             }
             return x0.l(linkedHashSet, deserializedMemberScope.p());
@@ -584,7 +584,7 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
 
         private final List q() {
             ArrayList arrayList = new ArrayList();
-            for (Name name : this.f35717n.o()) {
+            for (Name name : this.f35493n.o()) {
                 CollectionsKt.B(arrayList, t(name));
             }
             return arrayList;
@@ -592,15 +592,15 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
 
         private final List r() {
             ArrayList arrayList = new ArrayList();
-            for (Name name : this.f35717n.p()) {
+            for (Name name : this.f35493n.p()) {
                 CollectionsKt.B(arrayList, u(name));
             }
             return arrayList;
         }
 
         private final List s() {
-            List<MessageLite> list = this.f35704a;
-            DeserializedMemberScope deserializedMemberScope = this.f35717n;
+            List<MessageLite> list = this.f35480a;
+            DeserializedMemberScope deserializedMemberScope = this.f35493n;
             ArrayList arrayList = new ArrayList();
             for (MessageLite messageLite : list) {
                 SimpleFunctionDescriptor loadFunction = deserializedMemberScope.l().getMemberDeserializer().loadFunction((ProtoBuf.Function) messageLite);
@@ -616,7 +616,7 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
 
         private final List t(Name name) {
             List E = E();
-            DeserializedMemberScope deserializedMemberScope = this.f35717n;
+            DeserializedMemberScope deserializedMemberScope = this.f35493n;
             ArrayList arrayList = new ArrayList();
             for (Object obj : E) {
                 if (Intrinsics.areEqual(((DeclarationDescriptor) obj).getName(), name)) {
@@ -630,7 +630,7 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
 
         private final List u(Name name) {
             List F = F();
-            DeserializedMemberScope deserializedMemberScope = this.f35717n;
+            DeserializedMemberScope deserializedMemberScope = this.f35493n;
             ArrayList arrayList = new ArrayList();
             for (Object obj : F) {
                 if (Intrinsics.areEqual(((DeclarationDescriptor) obj).getName(), name)) {
@@ -643,9 +643,9 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
         }
 
         private final List v() {
-            DeserializedMemberScope deserializedMemberScope = this.f35717n;
+            DeserializedMemberScope deserializedMemberScope = this.f35493n;
             ArrayList arrayList = new ArrayList();
-            for (MessageLite messageLite : this.f35705b) {
+            for (MessageLite messageLite : this.f35481b) {
                 PropertyDescriptor loadProperty = deserializedMemberScope.l().getMemberDeserializer().loadProperty((ProtoBuf.Property) messageLite);
                 if (loadProperty != null) {
                     arrayList.add(loadProperty);
@@ -655,9 +655,9 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
         }
 
         private final List w() {
-            DeserializedMemberScope deserializedMemberScope = this.f35717n;
+            DeserializedMemberScope deserializedMemberScope = this.f35493n;
             ArrayList arrayList = new ArrayList();
-            for (MessageLite messageLite : this.f35706c) {
+            for (MessageLite messageLite : this.f35482c) {
                 TypeAliasDescriptor loadTypeAlias = deserializedMemberScope.l().getMemberDeserializer().loadTypeAlias((ProtoBuf.TypeAlias) messageLite);
                 if (loadTypeAlias != null) {
                     arrayList.add(loadTypeAlias);
@@ -679,8 +679,8 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
         /* JADX INFO: Access modifiers changed from: private */
         public static final Set z(b bVar, DeserializedMemberScope deserializedMemberScope) {
             LinkedHashSet linkedHashSet = new LinkedHashSet();
-            DeserializedMemberScope deserializedMemberScope2 = bVar.f35717n;
-            for (MessageLite messageLite : bVar.f35704a) {
+            DeserializedMemberScope deserializedMemberScope2 = bVar.f35493n;
+            for (MessageLite messageLite : bVar.f35480a) {
                 linkedHashSet.add(NameResolverUtilKt.getName(deserializedMemberScope2.l().getNameResolver(), ((ProtoBuf.Function) messageLite).getName()));
             }
             return x0.l(linkedHashSet, deserializedMemberScope.o());
@@ -689,8 +689,8 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope.a
         public Set a() {
             LinkedHashSet linkedHashSet = new LinkedHashSet();
-            DeserializedMemberScope deserializedMemberScope = this.f35717n;
-            for (MessageLite messageLite : this.f35706c) {
+            DeserializedMemberScope deserializedMemberScope = this.f35493n;
+            for (MessageLite messageLite : this.f35482c) {
                 linkedHashSet.add(NameResolverUtilKt.getName(deserializedMemberScope.l().getNameResolver(), ((ProtoBuf.TypeAlias) messageLite).getName()));
             }
             return linkedHashSet;
@@ -758,12 +758,12 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope.a
         public Set getFunctionNames() {
-            return (Set) StorageKt.getValue(this.f35715l, this, f35703o[8]);
+            return (Set) StorageKt.getValue(this.f35491l, this, f35479o[8]);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope.a
         public Set getVariableNames() {
-            return (Set) StorageKt.getValue(this.f35716m, this, f35703o[9]);
+            return (Set) StorageKt.getValue(this.f35492m, this, f35479o[9]);
         }
     }
 
@@ -774,10 +774,10 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
         Intrinsics.checkNotNullParameter(propertyList, "propertyList");
         Intrinsics.checkNotNullParameter(typeAliasList, "typeAliasList");
         Intrinsics.checkNotNullParameter(classNames, "classNames");
-        this.f35686a = c10;
-        this.f35687b = j(functionList, propertyList, typeAliasList);
-        this.f35688c = c10.getStorageManager().createLazyValue(new n(classNames));
-        this.f35689d = c10.getStorageManager().createNullableLazyValue(new o(this));
+        this.f35462a = c10;
+        this.f35463b = j(functionList, propertyList, typeAliasList);
+        this.f35464c = c10.getStorageManager().createLazyValue(new n(classNames));
+        this.f35465d = c10.getStorageManager().createNullableLazyValue(new o(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -791,26 +791,26 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
         if (n10 == null) {
             return null;
         }
-        return x0.l(x0.l(deserializedMemberScope.getClassNames$deserialization(), deserializedMemberScope.f35687b.a()), n10);
+        return x0.l(x0.l(deserializedMemberScope.getClassNames$deserialization(), deserializedMemberScope.f35463b.a()), n10);
     }
 
     private final a j(List list, List list2, List list3) {
-        if (this.f35686a.getComponents().getConfiguration().getPreserveDeclarationsOrdering()) {
+        if (this.f35462a.getComponents().getConfiguration().getPreserveDeclarationsOrdering()) {
             return new b(this, list, list2, list3);
         }
         return new OptimizedImplementation(this, list, list2, list3);
     }
 
     private final ClassDescriptor k(Name name) {
-        return this.f35686a.getComponents().deserializeClass(i(name));
+        return this.f35462a.getComponents().deserializeClass(i(name));
     }
 
     private final Set m() {
-        return (Set) StorageKt.getValue(this.f35689d, this, f35685e[1]);
+        return (Set) StorageKt.getValue(this.f35465d, this, f35461e[1]);
     }
 
     private final TypeAliasDescriptor q(Name name) {
-        return this.f35687b.c(name);
+        return this.f35463b.c(name);
     }
 
     protected abstract void c(Collection collection, Function1 function1);
@@ -825,7 +825,7 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
         if (kindFilter.acceptsKinds(companion.getSINGLETON_CLASSIFIERS_MASK())) {
             c(arrayList, nameFilter);
         }
-        this.f35687b.b(arrayList, kindFilter, nameFilter, location);
+        this.f35463b.b(arrayList, kindFilter, nameFilter, location);
         if (kindFilter.acceptsKinds(companion.getCLASSIFIERS_MASK())) {
             for (Name name : getClassNames$deserialization()) {
                 if (((Boolean) nameFilter.invoke(name)).booleanValue()) {
@@ -834,9 +834,9 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
             }
         }
         if (kindFilter.acceptsKinds(DescriptorKindFilter.Companion.getTYPE_ALIASES_MASK())) {
-            for (Name name2 : this.f35687b.a()) {
+            for (Name name2 : this.f35463b.a()) {
                 if (((Boolean) nameFilter.invoke(name2)).booleanValue()) {
-                    kotlin.reflect.jvm.internal.impl.utils.CollectionsKt.addIfNotNull(arrayList, this.f35687b.c(name2));
+                    kotlin.reflect.jvm.internal.impl.utils.CollectionsKt.addIfNotNull(arrayList, this.f35463b.c(name2));
                 }
             }
         }
@@ -850,7 +850,7 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
 
     @NotNull
     public final Set<Name> getClassNames$deserialization() {
-        return (Set) StorageKt.getValue(this.f35688c, this, f35685e[0]);
+        return (Set) StorageKt.getValue(this.f35464c, this, f35461e[0]);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
@@ -860,13 +860,13 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     /* renamed from: getContributedClassifier */
-    public ClassifierDescriptor mo1199getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
+    public ClassifierDescriptor mo1201getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
         if (r(name)) {
             return k(name);
         }
-        if (this.f35687b.a().contains(name)) {
+        if (this.f35463b.a().contains(name)) {
             return q(name);
         }
         return null;
@@ -877,7 +877,7 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
     public Collection<SimpleFunctionDescriptor> getContributedFunctions(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        return this.f35687b.getContributedFunctions(name, location);
+        return this.f35463b.getContributedFunctions(name, location);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
@@ -885,19 +885,19 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
     public Collection<PropertyDescriptor> getContributedVariables(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        return this.f35687b.getContributedVariables(name, location);
+        return this.f35463b.getContributedVariables(name, location);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     @NotNull
     public Set<Name> getFunctionNames() {
-        return this.f35687b.getFunctionNames();
+        return this.f35463b.getFunctionNames();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     @NotNull
     public Set<Name> getVariableNames() {
-        return this.f35687b.getVariableNames();
+        return this.f35463b.getVariableNames();
     }
 
     protected void h(Name name, List descriptors) {
@@ -909,7 +909,7 @@ public abstract class DeserializedMemberScope extends MemberScopeImpl {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final DeserializationContext l() {
-        return this.f35686a;
+        return this.f35462a;
     }
 
     protected abstract Set n();

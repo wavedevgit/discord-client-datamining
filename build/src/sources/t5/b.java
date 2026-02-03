@@ -26,140 +26,140 @@ public abstract class b implements n5.e, a.b, q5.f {
     BlurMaskFilter C;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Path f49243a = new Path();
+    private final Path f49515a = new Path();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Matrix f49244b = new Matrix();
+    private final Matrix f49516b = new Matrix();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Matrix f49245c = new Matrix();
+    private final Matrix f49517c = new Matrix();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Paint f49246d = new m5.a(1);
+    private final Paint f49518d = new m5.a(1);
 
     /* renamed from: e  reason: collision with root package name */
-    private final Paint f49247e;
+    private final Paint f49519e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Paint f49248f;
+    private final Paint f49520f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Paint f49249g;
+    private final Paint f49521g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Paint f49250h;
+    private final Paint f49522h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final RectF f49251i;
+    private final RectF f49523i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final RectF f49252j;
+    private final RectF f49524j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final RectF f49253k;
+    private final RectF f49525k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final RectF f49254l;
+    private final RectF f49526l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final RectF f49255m;
+    private final RectF f49527m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final String f49256n;
+    private final String f49528n;
 
     /* renamed from: o  reason: collision with root package name */
-    final Matrix f49257o;
+    final Matrix f49529o;
 
     /* renamed from: p  reason: collision with root package name */
-    final n f49258p;
+    final n f49530p;
 
     /* renamed from: q  reason: collision with root package name */
-    final e f49259q;
+    final e f49531q;
 
     /* renamed from: r  reason: collision with root package name */
-    private o5.h f49260r;
+    private o5.h f49532r;
 
     /* renamed from: s  reason: collision with root package name */
-    private o5.d f49261s;
+    private o5.d f49533s;
 
     /* renamed from: t  reason: collision with root package name */
-    private b f49262t;
+    private b f49534t;
 
     /* renamed from: u  reason: collision with root package name */
-    private b f49263u;
+    private b f49535u;
 
     /* renamed from: v  reason: collision with root package name */
-    private List f49264v;
+    private List f49536v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final List f49265w;
+    private final List f49537w;
 
     /* renamed from: x  reason: collision with root package name */
-    final p f49266x;
+    final p f49538x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f49267y;
+    private boolean f49539y;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f49268z;
+    private boolean f49540z;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f49269a;
+        static final /* synthetic */ int[] f49541a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f49270b;
+        static final /* synthetic */ int[] f49542b;
 
         static {
             int[] iArr = new int[i.a.values().length];
-            f49270b = iArr;
+            f49542b = iArr;
             try {
                 iArr[i.a.MASK_MODE_NONE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f49270b[i.a.MASK_MODE_SUBTRACT.ordinal()] = 2;
+                f49542b[i.a.MASK_MODE_SUBTRACT.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f49270b[i.a.MASK_MODE_INTERSECT.ordinal()] = 3;
+                f49542b[i.a.MASK_MODE_INTERSECT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f49270b[i.a.MASK_MODE_ADD.ordinal()] = 4;
+                f49542b[i.a.MASK_MODE_ADD.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             int[] iArr2 = new int[e.a.values().length];
-            f49269a = iArr2;
+            f49541a = iArr2;
             try {
                 iArr2[e.a.SHAPE.ordinal()] = 1;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f49269a[e.a.PRE_COMP.ordinal()] = 2;
+                f49541a[e.a.PRE_COMP.ordinal()] = 2;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f49269a[e.a.SOLID.ordinal()] = 3;
+                f49541a[e.a.SOLID.ordinal()] = 3;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f49269a[e.a.IMAGE.ordinal()] = 4;
+                f49541a[e.a.IMAGE.ordinal()] = 4;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f49269a[e.a.NULL.ordinal()] = 5;
+                f49541a[e.a.NULL.ordinal()] = 5;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f49269a[e.a.TEXT.ordinal()] = 6;
+                f49541a[e.a.TEXT.ordinal()] = 6;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f49269a[e.a.UNKNOWN.ordinal()] = 7;
+                f49541a[e.a.UNKNOWN.ordinal()] = 7;
             } catch (NoSuchFieldError unused11) {
             }
         }
@@ -168,39 +168,39 @@ public abstract class b implements n5.e, a.b, q5.f {
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(n nVar, e eVar) {
         PorterDuff.Mode mode = PorterDuff.Mode.DST_IN;
-        this.f49247e = new m5.a(1, mode);
+        this.f49519e = new m5.a(1, mode);
         PorterDuff.Mode mode2 = PorterDuff.Mode.DST_OUT;
-        this.f49248f = new m5.a(1, mode2);
+        this.f49520f = new m5.a(1, mode2);
         m5.a aVar = new m5.a(1);
-        this.f49249g = aVar;
-        this.f49250h = new m5.a(PorterDuff.Mode.CLEAR);
-        this.f49251i = new RectF();
-        this.f49252j = new RectF();
-        this.f49253k = new RectF();
-        this.f49254l = new RectF();
-        this.f49255m = new RectF();
-        this.f49257o = new Matrix();
-        this.f49265w = new ArrayList();
-        this.f49267y = true;
+        this.f49521g = aVar;
+        this.f49522h = new m5.a(PorterDuff.Mode.CLEAR);
+        this.f49523i = new RectF();
+        this.f49524j = new RectF();
+        this.f49525k = new RectF();
+        this.f49526l = new RectF();
+        this.f49527m = new RectF();
+        this.f49529o = new Matrix();
+        this.f49537w = new ArrayList();
+        this.f49539y = true;
         this.B = 0.0f;
-        this.f49258p = nVar;
-        this.f49259q = eVar;
-        this.f49256n = eVar.j() + "#draw";
+        this.f49530p = nVar;
+        this.f49531q = eVar;
+        this.f49528n = eVar.j() + "#draw";
         if (eVar.i() == e.b.INVERT) {
             aVar.setXfermode(new PorterDuffXfermode(mode2));
         } else {
             aVar.setXfermode(new PorterDuffXfermode(mode));
         }
         p b10 = eVar.x().b();
-        this.f49266x = b10;
+        this.f49538x = b10;
         b10.b(this);
         if (eVar.h() != null && !eVar.h().isEmpty()) {
             o5.h hVar = new o5.h(eVar.h());
-            this.f49260r = hVar;
+            this.f49532r = hVar;
             for (o5.a aVar2 : hVar.a()) {
                 aVar2.a(this);
             }
-            for (o5.a aVar3 : this.f49260r.c()) {
+            for (o5.a aVar3 : this.f49532r.c()) {
                 i(aVar3);
                 aVar3.a(this);
             }
@@ -209,24 +209,24 @@ public abstract class b implements n5.e, a.b, q5.f {
     }
 
     private void D(RectF rectF, Matrix matrix) {
-        this.f49253k.set(0.0f, 0.0f, 0.0f, 0.0f);
+        this.f49525k.set(0.0f, 0.0f, 0.0f, 0.0f);
         if (B()) {
-            int size = this.f49260r.b().size();
+            int size = this.f49532r.b().size();
             for (int i10 = 0; i10 < size; i10++) {
-                s5.i iVar = (s5.i) this.f49260r.b().get(i10);
-                Path path = (Path) ((o5.a) this.f49260r.a().get(i10)).h();
+                s5.i iVar = (s5.i) this.f49532r.b().get(i10);
+                Path path = (Path) ((o5.a) this.f49532r.a().get(i10)).h();
                 if (path != null) {
-                    this.f49243a.set(path);
-                    this.f49243a.transform(matrix);
-                    int i11 = a.f49270b[iVar.a().ordinal()];
+                    this.f49515a.set(path);
+                    this.f49515a.transform(matrix);
+                    int i11 = a.f49542b[iVar.a().ordinal()];
                     if (i11 != 1 && i11 != 2) {
                         if ((i11 != 3 && i11 != 4) || !iVar.d()) {
-                            this.f49243a.computeBounds(this.f49255m, false);
+                            this.f49515a.computeBounds(this.f49527m, false);
                             if (i10 == 0) {
-                                this.f49253k.set(this.f49255m);
+                                this.f49525k.set(this.f49527m);
                             } else {
-                                RectF rectF2 = this.f49253k;
-                                rectF2.set(Math.min(rectF2.left, this.f49255m.left), Math.min(this.f49253k.top, this.f49255m.top), Math.max(this.f49253k.right, this.f49255m.right), Math.max(this.f49253k.bottom, this.f49255m.bottom));
+                                RectF rectF2 = this.f49525k;
+                                rectF2.set(Math.min(rectF2.left, this.f49527m.left), Math.min(this.f49525k.top, this.f49527m.top), Math.max(this.f49525k.right, this.f49527m.right), Math.max(this.f49525k.bottom, this.f49527m.bottom));
                             }
                         } else {
                             return;
@@ -236,54 +236,54 @@ public abstract class b implements n5.e, a.b, q5.f {
                     }
                 }
             }
-            if (!rectF.intersect(this.f49253k)) {
+            if (!rectF.intersect(this.f49525k)) {
                 rectF.set(0.0f, 0.0f, 0.0f, 0.0f);
             }
         }
     }
 
     private void E(RectF rectF, Matrix matrix) {
-        if (C() && this.f49259q.i() != e.b.INVERT) {
-            this.f49254l.set(0.0f, 0.0f, 0.0f, 0.0f);
-            this.f49262t.e(this.f49254l, matrix, true);
-            if (!rectF.intersect(this.f49254l)) {
+        if (C() && this.f49531q.i() != e.b.INVERT) {
+            this.f49526l.set(0.0f, 0.0f, 0.0f, 0.0f);
+            this.f49534t.e(this.f49526l, matrix, true);
+            if (!rectF.intersect(this.f49526l)) {
                 rectF.set(0.0f, 0.0f, 0.0f, 0.0f);
             }
         }
     }
 
     private void F() {
-        this.f49258p.invalidateSelf();
+        this.f49530p.invalidateSelf();
     }
 
     private void G(float f10) {
-        this.f49258p.K().n().a(this.f49259q.j(), f10);
+        this.f49530p.K().n().a(this.f49531q.j(), f10);
     }
 
     private void N(boolean z10) {
-        if (z10 != this.f49267y) {
-            this.f49267y = z10;
+        if (z10 != this.f49539y) {
+            this.f49539y = z10;
             F();
         }
     }
 
     private void O() {
         boolean z10 = true;
-        if (!this.f49259q.f().isEmpty()) {
-            o5.d dVar = new o5.d(this.f49259q.f());
-            this.f49261s = dVar;
+        if (!this.f49531q.f().isEmpty()) {
+            o5.d dVar = new o5.d(this.f49531q.f());
+            this.f49533s = dVar;
             dVar.m();
-            this.f49261s.a(new a.b() { // from class: t5.a
+            this.f49533s.a(new a.b() { // from class: t5.a
                 @Override // o5.a.b
                 public final void a() {
                     b.f(b.this);
                 }
             });
-            if (((Float) this.f49261s.h()).floatValue() != 1.0f) {
+            if (((Float) this.f49533s.h()).floatValue() != 1.0f) {
                 z10 = false;
             }
             N(z10);
-            i(this.f49261s);
+            i(this.f49533s);
             return;
         }
         N(true);
@@ -291,7 +291,7 @@ public abstract class b implements n5.e, a.b, q5.f {
 
     public static /* synthetic */ void f(b bVar) {
         boolean z10;
-        if (bVar.f49261s.q() == 1.0f) {
+        if (bVar.f49533s.q() == 1.0f) {
             z10 = true;
         } else {
             z10 = false;
@@ -300,63 +300,63 @@ public abstract class b implements n5.e, a.b, q5.f {
     }
 
     private void j(Canvas canvas, Matrix matrix, o5.a aVar, o5.a aVar2) {
-        this.f49243a.set((Path) aVar.h());
-        this.f49243a.transform(matrix);
-        this.f49246d.setAlpha((int) (((Integer) aVar2.h()).intValue() * 2.55f));
-        canvas.drawPath(this.f49243a, this.f49246d);
+        this.f49515a.set((Path) aVar.h());
+        this.f49515a.transform(matrix);
+        this.f49518d.setAlpha((int) (((Integer) aVar2.h()).intValue() * 2.55f));
+        canvas.drawPath(this.f49515a, this.f49518d);
     }
 
     private void k(Canvas canvas, Matrix matrix, o5.a aVar, o5.a aVar2) {
-        j.m(canvas, this.f49251i, this.f49247e);
-        this.f49243a.set((Path) aVar.h());
-        this.f49243a.transform(matrix);
-        this.f49246d.setAlpha((int) (((Integer) aVar2.h()).intValue() * 2.55f));
-        canvas.drawPath(this.f49243a, this.f49246d);
+        j.m(canvas, this.f49523i, this.f49519e);
+        this.f49515a.set((Path) aVar.h());
+        this.f49515a.transform(matrix);
+        this.f49518d.setAlpha((int) (((Integer) aVar2.h()).intValue() * 2.55f));
+        canvas.drawPath(this.f49515a, this.f49518d);
         canvas.restore();
     }
 
     private void l(Canvas canvas, Matrix matrix, o5.a aVar, o5.a aVar2) {
-        j.m(canvas, this.f49251i, this.f49246d);
-        canvas.drawRect(this.f49251i, this.f49246d);
-        this.f49243a.set((Path) aVar.h());
-        this.f49243a.transform(matrix);
-        this.f49246d.setAlpha((int) (((Integer) aVar2.h()).intValue() * 2.55f));
-        canvas.drawPath(this.f49243a, this.f49248f);
+        j.m(canvas, this.f49523i, this.f49518d);
+        canvas.drawRect(this.f49523i, this.f49518d);
+        this.f49515a.set((Path) aVar.h());
+        this.f49515a.transform(matrix);
+        this.f49518d.setAlpha((int) (((Integer) aVar2.h()).intValue() * 2.55f));
+        canvas.drawPath(this.f49515a, this.f49520f);
         canvas.restore();
     }
 
     private void m(Canvas canvas, Matrix matrix, o5.a aVar, o5.a aVar2) {
-        j.m(canvas, this.f49251i, this.f49247e);
-        canvas.drawRect(this.f49251i, this.f49246d);
-        this.f49248f.setAlpha((int) (((Integer) aVar2.h()).intValue() * 2.55f));
-        this.f49243a.set((Path) aVar.h());
-        this.f49243a.transform(matrix);
-        canvas.drawPath(this.f49243a, this.f49248f);
+        j.m(canvas, this.f49523i, this.f49519e);
+        canvas.drawRect(this.f49523i, this.f49518d);
+        this.f49520f.setAlpha((int) (((Integer) aVar2.h()).intValue() * 2.55f));
+        this.f49515a.set((Path) aVar.h());
+        this.f49515a.transform(matrix);
+        canvas.drawPath(this.f49515a, this.f49520f);
         canvas.restore();
     }
 
     private void n(Canvas canvas, Matrix matrix, o5.a aVar, o5.a aVar2) {
-        j.m(canvas, this.f49251i, this.f49248f);
-        canvas.drawRect(this.f49251i, this.f49246d);
-        this.f49248f.setAlpha((int) (((Integer) aVar2.h()).intValue() * 2.55f));
-        this.f49243a.set((Path) aVar.h());
-        this.f49243a.transform(matrix);
-        canvas.drawPath(this.f49243a, this.f49248f);
+        j.m(canvas, this.f49523i, this.f49520f);
+        canvas.drawRect(this.f49523i, this.f49518d);
+        this.f49520f.setAlpha((int) (((Integer) aVar2.h()).intValue() * 2.55f));
+        this.f49515a.set((Path) aVar.h());
+        this.f49515a.transform(matrix);
+        canvas.drawPath(this.f49515a, this.f49520f);
         canvas.restore();
     }
 
     private void o(Canvas canvas, Matrix matrix) {
         l5.e.b("Layer#saveLayer");
-        j.n(canvas, this.f49251i, this.f49247e, 19);
+        j.n(canvas, this.f49523i, this.f49519e, 19);
         if (Build.VERSION.SDK_INT < 28) {
             t(canvas);
         }
         l5.e.c("Layer#saveLayer");
-        for (int i10 = 0; i10 < this.f49260r.b().size(); i10++) {
-            s5.i iVar = (s5.i) this.f49260r.b().get(i10);
-            o5.a aVar = (o5.a) this.f49260r.a().get(i10);
-            o5.a aVar2 = (o5.a) this.f49260r.c().get(i10);
-            int i11 = a.f49270b[iVar.a().ordinal()];
+        for (int i10 = 0; i10 < this.f49532r.b().size(); i10++) {
+            s5.i iVar = (s5.i) this.f49532r.b().get(i10);
+            o5.a aVar = (o5.a) this.f49532r.a().get(i10);
+            o5.a aVar2 = (o5.a) this.f49532r.c().get(i10);
+            int i11 = a.f49542b[iVar.a().ordinal()];
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 != 3) {
@@ -374,9 +374,9 @@ public abstract class b implements n5.e, a.b, q5.f {
                     }
                 } else {
                     if (i10 == 0) {
-                        this.f49246d.setColor(-16777216);
-                        this.f49246d.setAlpha(SetSpanOperation.SPAN_MAX_PRIORITY);
-                        canvas.drawRect(this.f49251i, this.f49246d);
+                        this.f49518d.setColor(-16777216);
+                        this.f49518d.setAlpha(SetSpanOperation.SPAN_MAX_PRIORITY);
+                        canvas.drawRect(this.f49523i, this.f49518d);
                     }
                     if (iVar.d()) {
                         n(canvas, matrix, aVar, aVar2);
@@ -385,8 +385,8 @@ public abstract class b implements n5.e, a.b, q5.f {
                     }
                 }
             } else if (r()) {
-                this.f49246d.setAlpha(SetSpanOperation.SPAN_MAX_PRIORITY);
-                canvas.drawRect(this.f49251i, this.f49246d);
+                this.f49518d.setAlpha(SetSpanOperation.SPAN_MAX_PRIORITY);
+                canvas.drawRect(this.f49523i, this.f49518d);
             }
         }
         l5.e.b("Layer#restoreLayer");
@@ -395,17 +395,17 @@ public abstract class b implements n5.e, a.b, q5.f {
     }
 
     private void p(Canvas canvas, Matrix matrix, o5.a aVar) {
-        this.f49243a.set((Path) aVar.h());
-        this.f49243a.transform(matrix);
-        canvas.drawPath(this.f49243a, this.f49248f);
+        this.f49515a.set((Path) aVar.h());
+        this.f49515a.transform(matrix);
+        canvas.drawPath(this.f49515a, this.f49520f);
     }
 
     private boolean r() {
-        if (this.f49260r.a().isEmpty()) {
+        if (this.f49532r.a().isEmpty()) {
             return false;
         }
-        for (int i10 = 0; i10 < this.f49260r.b().size(); i10++) {
-            if (((s5.i) this.f49260r.b().get(i10)).a() != i.a.MASK_MODE_NONE) {
+        for (int i10 = 0; i10 < this.f49532r.b().size(); i10++) {
+            if (((s5.i) this.f49532r.b().get(i10)).a() != i.a.MASK_MODE_NONE) {
                 return false;
             }
         }
@@ -413,28 +413,28 @@ public abstract class b implements n5.e, a.b, q5.f {
     }
 
     private void s() {
-        if (this.f49264v == null) {
-            if (this.f49263u == null) {
-                this.f49264v = Collections.EMPTY_LIST;
+        if (this.f49536v == null) {
+            if (this.f49535u == null) {
+                this.f49536v = Collections.EMPTY_LIST;
                 return;
             }
-            this.f49264v = new ArrayList();
-            for (b bVar = this.f49263u; bVar != null; bVar = bVar.f49263u) {
-                this.f49264v.add(bVar);
+            this.f49536v = new ArrayList();
+            for (b bVar = this.f49535u; bVar != null; bVar = bVar.f49535u) {
+                this.f49536v.add(bVar);
             }
         }
     }
 
     private void t(Canvas canvas) {
         l5.e.b("Layer#clearLayer");
-        RectF rectF = this.f49251i;
-        canvas.drawRect(rectF.left - 1.0f, rectF.top - 1.0f, rectF.right + 1.0f, rectF.bottom + 1.0f, this.f49250h);
+        RectF rectF = this.f49523i;
+        canvas.drawRect(rectF.left - 1.0f, rectF.top - 1.0f, rectF.right + 1.0f, rectF.bottom + 1.0f, this.f49522h);
         l5.e.c("Layer#clearLayer");
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static b v(c cVar, e eVar, n nVar, l5.i iVar) {
-        switch (a.f49269a[eVar.g().ordinal()]) {
+        switch (a.f49541a[eVar.g().ordinal()]) {
             case 1:
                 return new g(nVar, eVar, cVar, iVar);
             case 2:
@@ -455,11 +455,11 @@ public abstract class b implements n5.e, a.b, q5.f {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e A() {
-        return this.f49259q;
+        return this.f49531q;
     }
 
     boolean B() {
-        o5.h hVar = this.f49260r;
+        o5.h hVar = this.f49532r;
         if (hVar != null && !hVar.a().isEmpty()) {
             return true;
         }
@@ -467,19 +467,19 @@ public abstract class b implements n5.e, a.b, q5.f {
     }
 
     boolean C() {
-        if (this.f49262t != null) {
+        if (this.f49534t != null) {
             return true;
         }
         return false;
     }
 
     public void H(o5.a aVar) {
-        this.f49265w.remove(aVar);
+        this.f49537w.remove(aVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void J(b bVar) {
-        this.f49262t = bVar;
+        this.f49534t = bVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -487,42 +487,42 @@ public abstract class b implements n5.e, a.b, q5.f {
         if (z10 && this.A == null) {
             this.A = new m5.a();
         }
-        this.f49268z = z10;
+        this.f49540z = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void L(b bVar) {
-        this.f49263u = bVar;
+        this.f49535u = bVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void M(float f10) {
         l5.e.b("BaseLayer#setProgress");
         l5.e.b("BaseLayer#setProgress.transform");
-        this.f49266x.j(f10);
+        this.f49538x.j(f10);
         l5.e.c("BaseLayer#setProgress.transform");
-        if (this.f49260r != null) {
+        if (this.f49532r != null) {
             l5.e.b("BaseLayer#setProgress.mask");
-            for (int i10 = 0; i10 < this.f49260r.a().size(); i10++) {
-                ((o5.a) this.f49260r.a().get(i10)).n(f10);
+            for (int i10 = 0; i10 < this.f49532r.a().size(); i10++) {
+                ((o5.a) this.f49532r.a().get(i10)).n(f10);
             }
             l5.e.c("BaseLayer#setProgress.mask");
         }
-        if (this.f49261s != null) {
+        if (this.f49533s != null) {
             l5.e.b("BaseLayer#setProgress.inout");
-            this.f49261s.n(f10);
+            this.f49533s.n(f10);
             l5.e.c("BaseLayer#setProgress.inout");
         }
-        if (this.f49262t != null) {
+        if (this.f49534t != null) {
             l5.e.b("BaseLayer#setProgress.matte");
-            this.f49262t.M(f10);
+            this.f49534t.M(f10);
             l5.e.c("BaseLayer#setProgress.matte");
         }
-        l5.e.b("BaseLayer#setProgress.animations." + this.f49265w.size());
-        for (int i11 = 0; i11 < this.f49265w.size(); i11++) {
-            ((o5.a) this.f49265w.get(i11)).n(f10);
+        l5.e.b("BaseLayer#setProgress.animations." + this.f49537w.size());
+        for (int i11 = 0; i11 < this.f49537w.size(); i11++) {
+            ((o5.a) this.f49537w.get(i11)).n(f10);
         }
-        l5.e.c("BaseLayer#setProgress.animations." + this.f49265w.size());
+        l5.e.c("BaseLayer#setProgress.animations." + this.f49537w.size());
         l5.e.c("BaseLayer#setProgress");
     }
 
@@ -533,14 +533,14 @@ public abstract class b implements n5.e, a.b, q5.f {
 
     @Override // q5.f
     public void c(q5.e eVar, int i10, List list, q5.e eVar2) {
-        b bVar = this.f49262t;
+        b bVar = this.f49534t;
         if (bVar != null) {
             q5.e a10 = eVar2.a(bVar.getName());
-            if (eVar.c(this.f49262t.getName(), i10)) {
-                list.add(a10.i(this.f49262t));
+            if (eVar.c(this.f49534t.getName(), i10)) {
+                list.add(a10.i(this.f49534t));
             }
             if (eVar.h(getName(), i10)) {
-                this.f49262t.I(eVar, eVar.e(this.f49262t.getName(), i10) + i10, list, a10);
+                this.f49534t.I(eVar, eVar.e(this.f49534t.getName(), i10) + i10, list, a10);
             }
         }
         if (eVar.g(getName(), i10)) {
@@ -558,28 +558,28 @@ public abstract class b implements n5.e, a.b, q5.f {
 
     @Override // q5.f
     public void d(Object obj, y5.c cVar) {
-        this.f49266x.c(obj, cVar);
+        this.f49538x.c(obj, cVar);
     }
 
     @Override // n5.e
     public void e(RectF rectF, Matrix matrix, boolean z10) {
-        this.f49251i.set(0.0f, 0.0f, 0.0f, 0.0f);
+        this.f49523i.set(0.0f, 0.0f, 0.0f, 0.0f);
         s();
-        this.f49257o.set(matrix);
+        this.f49529o.set(matrix);
         if (z10) {
-            List list = this.f49264v;
+            List list = this.f49536v;
             if (list != null) {
                 for (int size = list.size() - 1; size >= 0; size--) {
-                    this.f49257o.preConcat(((b) this.f49264v.get(size)).f49266x.f());
+                    this.f49529o.preConcat(((b) this.f49536v.get(size)).f49538x.f());
                 }
             } else {
-                b bVar = this.f49263u;
+                b bVar = this.f49535u;
                 if (bVar != null) {
-                    this.f49257o.preConcat(bVar.f49266x.f());
+                    this.f49529o.preConcat(bVar.f49538x.f());
                 }
             }
         }
-        this.f49257o.preConcat(this.f49266x.f());
+        this.f49529o.preConcat(this.f49538x.f());
     }
 
     @Override // n5.e
@@ -587,17 +587,17 @@ public abstract class b implements n5.e, a.b, q5.f {
         int i11;
         Paint paint;
         Integer num;
-        l5.e.b(this.f49256n);
-        if (this.f49267y && !this.f49259q.y()) {
+        l5.e.b(this.f49528n);
+        if (this.f49539y && !this.f49531q.y()) {
             s();
             l5.e.b("Layer#parentMatrix");
-            this.f49244b.reset();
-            this.f49244b.set(matrix);
-            for (int size = this.f49264v.size() - 1; size >= 0; size--) {
-                this.f49244b.preConcat(((b) this.f49264v.get(size)).f49266x.f());
+            this.f49516b.reset();
+            this.f49516b.set(matrix);
+            for (int size = this.f49536v.size() - 1; size >= 0; size--) {
+                this.f49516b.preConcat(((b) this.f49536v.get(size)).f49538x.f());
             }
             l5.e.c("Layer#parentMatrix");
-            o5.a h10 = this.f49266x.h();
+            o5.a h10 = this.f49538x.h();
             if (h10 != null && (num = (Integer) h10.h()) != null) {
                 i11 = num.intValue();
             } else {
@@ -605,48 +605,48 @@ public abstract class b implements n5.e, a.b, q5.f {
             }
             int i12 = (int) ((((i10 / 255.0f) * i11) / 100.0f) * 255.0f);
             if (!C() && !B()) {
-                this.f49244b.preConcat(this.f49266x.f());
+                this.f49516b.preConcat(this.f49538x.f());
                 l5.e.b("Layer#drawLayer");
-                u(canvas, this.f49244b, i12);
+                u(canvas, this.f49516b, i12);
                 l5.e.c("Layer#drawLayer");
-                G(l5.e.c(this.f49256n));
+                G(l5.e.c(this.f49528n));
                 return;
             }
             l5.e.b("Layer#computeBounds");
-            e(this.f49251i, this.f49244b, false);
-            E(this.f49251i, matrix);
-            this.f49244b.preConcat(this.f49266x.f());
-            D(this.f49251i, this.f49244b);
-            this.f49252j.set(0.0f, 0.0f, canvas.getWidth(), canvas.getHeight());
-            canvas.getMatrix(this.f49245c);
-            if (!this.f49245c.isIdentity()) {
-                Matrix matrix2 = this.f49245c;
+            e(this.f49523i, this.f49516b, false);
+            E(this.f49523i, matrix);
+            this.f49516b.preConcat(this.f49538x.f());
+            D(this.f49523i, this.f49516b);
+            this.f49524j.set(0.0f, 0.0f, canvas.getWidth(), canvas.getHeight());
+            canvas.getMatrix(this.f49517c);
+            if (!this.f49517c.isIdentity()) {
+                Matrix matrix2 = this.f49517c;
                 matrix2.invert(matrix2);
-                this.f49245c.mapRect(this.f49252j);
+                this.f49517c.mapRect(this.f49524j);
             }
-            if (!this.f49251i.intersect(this.f49252j)) {
-                this.f49251i.set(0.0f, 0.0f, 0.0f, 0.0f);
+            if (!this.f49523i.intersect(this.f49524j)) {
+                this.f49523i.set(0.0f, 0.0f, 0.0f, 0.0f);
             }
             l5.e.c("Layer#computeBounds");
-            if (this.f49251i.width() >= 1.0f && this.f49251i.height() >= 1.0f) {
+            if (this.f49523i.width() >= 1.0f && this.f49523i.height() >= 1.0f) {
                 l5.e.b("Layer#saveLayer");
-                this.f49246d.setAlpha(SetSpanOperation.SPAN_MAX_PRIORITY);
-                j.m(canvas, this.f49251i, this.f49246d);
+                this.f49518d.setAlpha(SetSpanOperation.SPAN_MAX_PRIORITY);
+                j.m(canvas, this.f49523i, this.f49518d);
                 l5.e.c("Layer#saveLayer");
                 t(canvas);
                 l5.e.b("Layer#drawLayer");
-                u(canvas, this.f49244b, i12);
+                u(canvas, this.f49516b, i12);
                 l5.e.c("Layer#drawLayer");
                 if (B()) {
-                    o(canvas, this.f49244b);
+                    o(canvas, this.f49516b);
                 }
                 if (C()) {
                     l5.e.b("Layer#drawMatte");
                     l5.e.b("Layer#saveLayer");
-                    j.n(canvas, this.f49251i, this.f49249g, 19);
+                    j.n(canvas, this.f49523i, this.f49521g, 19);
                     l5.e.c("Layer#saveLayer");
                     t(canvas);
-                    this.f49262t.g(canvas, matrix, i12);
+                    this.f49534t.g(canvas, matrix, i12);
                     l5.e.b("Layer#restoreLayer");
                     canvas.restore();
                     l5.e.c("Layer#restoreLayer");
@@ -656,41 +656,41 @@ public abstract class b implements n5.e, a.b, q5.f {
                 canvas.restore();
                 l5.e.c("Layer#restoreLayer");
             }
-            if (this.f49268z && (paint = this.A) != null) {
+            if (this.f49540z && (paint = this.A) != null) {
                 paint.setStyle(Paint.Style.STROKE);
                 this.A.setColor(-251901);
                 this.A.setStrokeWidth(4.0f);
-                canvas.drawRect(this.f49251i, this.A);
+                canvas.drawRect(this.f49523i, this.A);
                 this.A.setStyle(Paint.Style.FILL);
                 this.A.setColor(1357638635);
-                canvas.drawRect(this.f49251i, this.A);
+                canvas.drawRect(this.f49523i, this.A);
             }
-            G(l5.e.c(this.f49256n));
+            G(l5.e.c(this.f49528n));
             return;
         }
-        l5.e.c(this.f49256n);
+        l5.e.c(this.f49528n);
     }
 
     @Override // n5.c
     public String getName() {
-        return this.f49259q.j();
+        return this.f49531q.j();
     }
 
     public void i(o5.a aVar) {
         if (aVar == null) {
             return;
         }
-        this.f49265w.add(aVar);
+        this.f49537w.add(aVar);
     }
 
     abstract void u(Canvas canvas, Matrix matrix, int i10);
 
     public s5.h w() {
-        return this.f49259q.a();
+        return this.f49531q.a();
     }
 
     public s5.a x() {
-        return this.f49259q.b();
+        return this.f49531q.b();
     }
 
     public BlurMaskFilter y(float f10) {
@@ -704,7 +704,7 @@ public abstract class b implements n5.e, a.b, q5.f {
     }
 
     public v5.j z() {
-        return this.f49259q.d();
+        return this.f49531q.d();
     }
 
     @Override // n5.c

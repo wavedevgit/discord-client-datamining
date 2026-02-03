@@ -13,33 +13,33 @@ import ui.g;
 public final class e implements ui.e, g {
 
     /* renamed from: a  reason: collision with root package name */
-    private e f52669a = null;
+    private e f52236a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f52670b = true;
+    private boolean f52237b = true;
 
     /* renamed from: c  reason: collision with root package name */
-    private final JsonWriter f52671c;
+    private final JsonWriter f52238c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f52672d;
+    private final Map f52239d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f52673e;
+    private final Map f52240e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final ui.d f52674f;
+    private final ui.d f52241f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f52675g;
+    private final boolean f52242g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(Writer writer, Map map, Map map2, ui.d dVar, boolean z10) {
-        this.f52671c = new JsonWriter(writer);
-        this.f52672d = map;
-        this.f52673e = map2;
-        this.f52674f = dVar;
-        this.f52675g = z10;
+        this.f52238c = new JsonWriter(writer);
+        this.f52239d = map;
+        this.f52240e = map2;
+        this.f52241f = dVar;
+        this.f52242g = z10;
     }
 
     private boolean o(Object obj) {
@@ -51,9 +51,9 @@ public final class e implements ui.e, g {
 
     private e r(String str, Object obj) {
         t();
-        this.f52671c.name(str);
+        this.f52238c.name(str);
         if (obj == null) {
-            this.f52671c.nullValue();
+            this.f52238c.nullValue();
             return this;
         }
         return h(obj, false);
@@ -64,18 +64,18 @@ public final class e implements ui.e, g {
             return this;
         }
         t();
-        this.f52671c.name(str);
+        this.f52238c.name(str);
         return h(obj, false);
     }
 
     private void t() {
-        if (this.f52670b) {
-            e eVar = this.f52669a;
+        if (this.f52237b) {
+            e eVar = this.f52236a;
             if (eVar != null) {
                 eVar.t();
-                this.f52669a.f52670b = false;
-                this.f52669a = null;
-                this.f52671c.endObject();
+                this.f52236a.f52237b = false;
+                this.f52236a = null;
+                this.f52238c.endObject();
                 return;
             }
             return;
@@ -100,13 +100,13 @@ public final class e implements ui.e, g {
 
     public e f(int i10) {
         t();
-        this.f52671c.value(i10);
+        this.f52238c.value(i10);
         return this;
     }
 
     public e g(long j10) {
         t();
-        this.f52671c.value(j10);
+        this.f52238c.value(j10);
         return this;
     }
 
@@ -122,10 +122,10 @@ public final class e implements ui.e, g {
             }
             throw new ui.b(String.format("%s cannot be encoded inline", cls));
         } else if (obj == null) {
-            this.f52671c.nullValue();
+            this.f52238c.nullValue();
             return this;
         } else if (obj instanceof Number) {
-            this.f52671c.value((Number) obj);
+            this.f52238c.value((Number) obj);
             return this;
         } else {
             int i10 = 0;
@@ -133,11 +133,11 @@ public final class e implements ui.e, g {
                 if (obj instanceof byte[]) {
                     return n((byte[]) obj);
                 }
-                this.f52671c.beginArray();
+                this.f52238c.beginArray();
                 if (obj instanceof int[]) {
                     int length = ((int[]) obj).length;
                     while (i10 < length) {
-                        this.f52671c.value(iArr[i10]);
+                        this.f52238c.value(iArr[i10]);
                         i10++;
                     }
                 } else if (obj instanceof long[]) {
@@ -151,14 +151,14 @@ public final class e implements ui.e, g {
                     double[] dArr = (double[]) obj;
                     int length3 = dArr.length;
                     while (i10 < length3) {
-                        this.f52671c.value(dArr[i10]);
+                        this.f52238c.value(dArr[i10]);
                         i10++;
                     }
                 } else if (obj instanceof boolean[]) {
                     boolean[] zArr = (boolean[]) obj;
                     int length4 = zArr.length;
                     while (i10 < length4) {
-                        this.f52671c.value(zArr[i10]);
+                        this.f52238c.value(zArr[i10]);
                         i10++;
                     }
                 } else if (obj instanceof Number[]) {
@@ -170,17 +170,17 @@ public final class e implements ui.e, g {
                         h(obj2, false);
                     }
                 }
-                this.f52671c.endArray();
+                this.f52238c.endArray();
                 return this;
             } else if (obj instanceof Collection) {
-                this.f52671c.beginArray();
+                this.f52238c.beginArray();
                 for (Object obj3 : (Collection) obj) {
                     h(obj3, false);
                 }
-                this.f52671c.endArray();
+                this.f52238c.endArray();
                 return this;
             } else if (obj instanceof Map) {
-                this.f52671c.beginObject();
+                this.f52238c.beginObject();
                 for (Map.Entry entry : ((Map) obj).entrySet()) {
                     Object key = entry.getKey();
                     try {
@@ -189,14 +189,14 @@ public final class e implements ui.e, g {
                         throw new ui.b(String.format("Only String keys are currently supported in maps, got %s of type %s instead.", key, key.getClass()), e10);
                     }
                 }
-                this.f52671c.endObject();
+                this.f52238c.endObject();
                 return this;
             } else {
-                ui.d dVar = (ui.d) this.f52672d.get(obj.getClass());
+                ui.d dVar = (ui.d) this.f52239d.get(obj.getClass());
                 if (dVar != null) {
                     return q(dVar, obj, z10);
                 }
-                f fVar = (f) this.f52673e.get(obj.getClass());
+                f fVar = (f) this.f52240e.get(obj.getClass());
                 if (fVar != null) {
                     fVar.a(obj, this);
                     return this;
@@ -204,7 +204,7 @@ public final class e implements ui.e, g {
                     a(((Enum) obj).name());
                     return this;
                 } else {
-                    return q(this.f52674f, obj, z10);
+                    return q(this.f52241f, obj, z10);
                 }
             }
         }
@@ -214,24 +214,24 @@ public final class e implements ui.e, g {
     /* renamed from: i */
     public e a(String str) {
         t();
-        this.f52671c.value(str);
+        this.f52238c.value(str);
         return this;
     }
 
     public e j(String str, int i10) {
         t();
-        this.f52671c.name(str);
+        this.f52238c.name(str);
         return f(i10);
     }
 
     public e k(String str, long j10) {
         t();
-        this.f52671c.name(str);
+        this.f52238c.name(str);
         return g(j10);
     }
 
     public e l(String str, Object obj) {
-        if (this.f52675g) {
+        if (this.f52242g) {
             return s(str, obj);
         }
         return r(str, obj);
@@ -241,33 +241,33 @@ public final class e implements ui.e, g {
     /* renamed from: m */
     public e c(boolean z10) {
         t();
-        this.f52671c.value(z10);
+        this.f52238c.value(z10);
         return this;
     }
 
     public e n(byte[] bArr) {
         t();
         if (bArr == null) {
-            this.f52671c.nullValue();
+            this.f52238c.nullValue();
             return this;
         }
-        this.f52671c.value(Base64.encodeToString(bArr, 2));
+        this.f52238c.value(Base64.encodeToString(bArr, 2));
         return this;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void p() {
         t();
-        this.f52671c.flush();
+        this.f52238c.flush();
     }
 
     e q(ui.d dVar, Object obj, boolean z10) {
         if (!z10) {
-            this.f52671c.beginObject();
+            this.f52238c.beginObject();
         }
         dVar.a(obj, this);
         if (!z10) {
-            this.f52671c.endObject();
+            this.f52238c.endObject();
         }
         return this;
     }

@@ -7,7 +7,7 @@ import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.core.view.w0;
 import com.discord.misc.utilities.activity.ActivityExtensionsKt;
 import com.discord.misc.utilities.coroutines.MainImmediateScopeKt;
-import gs.g;
+import hs.g;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;

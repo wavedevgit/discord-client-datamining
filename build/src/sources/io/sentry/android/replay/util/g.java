@@ -7,24 +7,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Handler f29676a;
+    private final Handler f29242a;
 
     public g(Looper looper) {
         Intrinsics.checkNotNullParameter(looper, "looper");
-        this.f29676a = new Handler(looper);
+        this.f29242a = new Handler(looper);
     }
 
     public final Handler a() {
-        return this.f29676a;
+        return this.f29242a;
     }
 
     public final boolean b(Runnable runnable) {
         Intrinsics.checkNotNullParameter(runnable, "runnable");
-        return this.f29676a.post(runnable);
+        return this.f29242a.post(runnable);
     }
 
     public final boolean c(Runnable runnable, long j10) {
-        Handler handler = this.f29676a;
+        Handler handler = this.f29242a;
         if (runnable == null) {
             return false;
         }
@@ -32,7 +32,7 @@ public final class g {
     }
 
     public final void d(Runnable runnable) {
-        Handler handler = this.f29676a;
+        Handler handler = this.f29242a;
         if (runnable == null) {
             return;
         }

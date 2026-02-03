@@ -1,11 +1,6 @@
 package kt;
-
-import java.util.Locale;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface f {
-    String c(e eVar, Locale locale);
-
-    String d(e eVar, Locale locale);
-
-    String f(e eVar, e eVar2, Locale locale);
+public abstract class f implements w {
+    /* JADX INFO: Access modifiers changed from: protected */
+    public abstract m0 b(x xVar);
 }

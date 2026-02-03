@@ -12,11 +12,11 @@ import kotlin.jvm.internal.Intrinsics;
 public final class y0 extends LayoutShadowNode {
 
     /* renamed from: a  reason: collision with root package name */
-    private ReactContext f19394a;
+    private ReactContext f19027a;
 
     public y0(ReactContext context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f19394a = context;
+        this.f19027a = context;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -33,7 +33,7 @@ public final class y0 extends LayoutShadowNode {
     public void onBeforeLayout(NativeViewHierarchyOptimizer nativeViewHierarchyOptimizer) {
         Intrinsics.checkNotNullParameter(nativeViewHierarchyOptimizer, "nativeViewHierarchyOptimizer");
         super.onBeforeLayout(nativeViewHierarchyOptimizer);
-        UIManagerModule uIManagerModule = (UIManagerModule) this.f19394a.getNativeModule(UIManagerModule.class);
+        UIManagerModule uIManagerModule = (UIManagerModule) this.f19027a.getNativeModule(UIManagerModule.class);
         if (uIManagerModule != null) {
             uIManagerModule.addUIBlock(new UIBlock() { // from class: com.swmansion.rnscreens.x0
                 @Override // com.facebook.react.uimanager.UIBlock

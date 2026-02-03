@@ -6,29 +6,29 @@ import com.facebook.react.bridge.UiThreadUtil;
 import java.util.ArrayList;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class i implements cn.j {
+public final class i implements dn.j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SparseArray f19093a = new SparseArray();
+    private final SparseArray f18726a = new SparseArray();
 
     /* renamed from: b  reason: collision with root package name */
-    private final SparseArray f19094b = new SparseArray();
+    private final SparseArray f18727b = new SparseArray();
 
     /* renamed from: c  reason: collision with root package name */
-    private final SparseArray f19095c = new SparseArray();
+    private final SparseArray f18728c = new SparseArray();
 
-    private final synchronized void d(final cn.d dVar) {
+    private final synchronized void d(final dn.d dVar) {
         try {
-            Integer num = (Integer) this.f19094b.get(dVar.T());
+            Integer num = (Integer) this.f18727b.get(dVar.T());
             if (num != null) {
-                this.f19094b.remove(dVar.T());
-                ArrayList arrayList = (ArrayList) this.f19095c.get(num.intValue());
+                this.f18727b.remove(dVar.T());
+                ArrayList arrayList = (ArrayList) this.f18728c.get(num.intValue());
                 if (arrayList != null) {
                     synchronized (arrayList) {
                         arrayList.remove(dVar);
                     }
                     if (arrayList.size() == 0) {
-                        this.f19095c.remove(num.intValue());
+                        this.f18728c.remove(num.intValue());
                     }
                 }
             }
@@ -36,7 +36,7 @@ public final class i implements cn.j {
                 UiThreadUtil.runOnUiThread(new Runnable() { // from class: com.swmansion.gesturehandler.react.h
                     @Override // java.lang.Runnable
                     public final void run() {
-                        i.e(cn.d.this);
+                        i.e(dn.d.this);
                     }
                 });
             }
@@ -46,19 +46,19 @@ public final class i implements cn.j {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final void e(cn.d dVar) {
+    public static final void e(dn.d dVar) {
         dVar.q();
     }
 
-    private final synchronized void k(int i10, cn.d dVar) {
+    private final synchronized void k(int i10, dn.d dVar) {
         try {
-            if (this.f19094b.get(dVar.T()) == null) {
-                this.f19094b.put(dVar.T(), Integer.valueOf(i10));
-                Object obj = this.f19095c.get(i10);
+            if (this.f18727b.get(dVar.T()) == null) {
+                this.f18727b.put(dVar.T(), Integer.valueOf(i10));
+                Object obj = this.f18728c.get(i10);
                 if (obj == null) {
                     ArrayList arrayList = new ArrayList(1);
                     arrayList.add(dVar);
-                    this.f19095c.put(i10, arrayList);
+                    this.f18728c.put(i10, arrayList);
                 } else {
                     synchronized (obj) {
                         ((ArrayList) obj).add(dVar);
@@ -72,7 +72,7 @@ public final class i implements cn.j {
         }
     }
 
-    @Override // cn.j
+    @Override // dn.j
     public synchronized ArrayList a(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
         return i(view.getId());
@@ -80,7 +80,7 @@ public final class i implements cn.j {
 
     public final synchronized boolean c(int i10, int i11, int i12) {
         boolean z10;
-        cn.d dVar = (cn.d) this.f19093a.get(i10);
+        dn.d dVar = (dn.d) this.f18726a.get(i10);
         if (dVar != null) {
             d(dVar);
             dVar.u0(i12);
@@ -93,29 +93,29 @@ public final class i implements cn.j {
     }
 
     public final synchronized void f() {
-        this.f19093a.clear();
-        this.f19094b.clear();
-        this.f19095c.clear();
+        this.f18726a.clear();
+        this.f18727b.clear();
+        this.f18728c.clear();
     }
 
     public final synchronized void g(int i10) {
-        cn.d dVar = (cn.d) this.f19093a.get(i10);
+        dn.d dVar = (dn.d) this.f18726a.get(i10);
         if (dVar != null) {
             d(dVar);
-            this.f19093a.remove(i10);
+            this.f18726a.remove(i10);
         }
     }
 
-    public final synchronized cn.d h(int i10) {
-        return (cn.d) this.f19093a.get(i10);
+    public final synchronized dn.d h(int i10) {
+        return (dn.d) this.f18726a.get(i10);
     }
 
     public final synchronized ArrayList i(int i10) {
-        return (ArrayList) this.f19095c.get(i10);
+        return (ArrayList) this.f18728c.get(i10);
     }
 
-    public final synchronized void j(cn.d handler) {
+    public final synchronized void j(dn.d handler) {
         Intrinsics.checkNotNullParameter(handler, "handler");
-        this.f19093a.put(handler.T(), handler);
+        this.f18726a.put(handler.T(), handler);
     }
 }

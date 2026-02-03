@@ -1,12 +1,11 @@
 package dn;
-
-import cn.p;
-import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class e extends b {
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public e(p handler) {
-        super(handler);
-        Intrinsics.checkNotNullParameter(handler, "handler");
-    }
+public interface e {
+    boolean a(d dVar, d dVar2);
+
+    boolean b(d dVar, d dVar2);
+
+    boolean c(d dVar, d dVar2);
+
+    boolean d(d dVar, d dVar2);
 }

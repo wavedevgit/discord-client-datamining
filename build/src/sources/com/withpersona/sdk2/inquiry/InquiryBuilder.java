@@ -1,6 +1,6 @@
 package com.withpersona.sdk2.inquiry;
 
-import ir.c;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;

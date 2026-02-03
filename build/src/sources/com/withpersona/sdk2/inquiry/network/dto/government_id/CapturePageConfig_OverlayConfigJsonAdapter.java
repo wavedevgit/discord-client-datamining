@@ -50,13 +50,13 @@ public final class CapturePageConfig_OverlayConfigJsonAdapter extends h {
         RemoteImage remoteImage = null;
         CapturePageConfig.OverlayLocalIcon overlayLocalIcon = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 remoteImage = (RemoteImage) this.nullableRemoteImageAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 overlayLocalIcon = (CapturePageConfig.OverlayLocalIcon) this.nullableOverlayLocalIconAdapter.fromJson(reader);
             }
         }
@@ -69,9 +69,9 @@ public final class CapturePageConfig_OverlayConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (overlayConfig != null) {
             writer.l();
-            writer.A0("overlay");
+            writer.t0("overlay");
             this.nullableRemoteImageAdapter.toJson(writer, overlayConfig.getOverlay());
-            writer.A0("overlayFallback");
+            writer.t0("overlayFallback");
             this.nullableOverlayLocalIconAdapter.toJson(writer, overlayConfig.getOverlayFallback());
             writer.E();
             return;

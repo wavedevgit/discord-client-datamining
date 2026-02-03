@@ -10,10 +10,10 @@ import qd.w0;
 public abstract class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private a f32007a;
+    private a f31745a;
 
     /* renamed from: b  reason: collision with root package name */
-    private le.e f32008b;
+    private le.e f31746b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -24,19 +24,19 @@ public abstract class q {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final le.e b() {
-        return (le.e) ne.a.i(this.f32008b);
+        return (le.e) ne.a.i(this.f31746b);
     }
 
     public abstract w1.a c();
 
     public void d(a aVar, le.e eVar) {
-        this.f32007a = aVar;
-        this.f32008b = eVar;
+        this.f31745a = aVar;
+        this.f31746b = eVar;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void e() {
-        a aVar = this.f32007a;
+        a aVar = this.f31745a;
         if (aVar != null) {
             aVar.b();
         }
@@ -44,7 +44,7 @@ public abstract class q {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void f(v1 v1Var) {
-        a aVar = this.f32007a;
+        a aVar = this.f31745a;
         if (aVar != null) {
             aVar.a(v1Var);
         }
@@ -55,8 +55,8 @@ public abstract class q {
     public abstract void h(Object obj);
 
     public void i() {
-        this.f32007a = null;
-        this.f32008b = null;
+        this.f31745a = null;
+        this.f31746b = null;
     }
 
     public abstract r j(w1[] w1VarArr, w0 w0Var, r.b bVar, Timeline timeline);

@@ -282,4 +282,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackGameProfileFeedback = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7797, 660, 8837, 491, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7828, 660, 8869, 491, 795, 2]);

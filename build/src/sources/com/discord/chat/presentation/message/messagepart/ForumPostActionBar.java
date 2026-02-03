@@ -27,7 +27,7 @@ public final class ForumPostActionBar extends MessageAccessory {
     }
 
     /* renamed from: copy-LdU2QRA$default  reason: not valid java name */
-    public static /* synthetic */ ForumPostActionBar m578copyLdU2QRA$default(ForumPostActionBar forumPostActionBar, String str, ForumPostActions forumPostActions, List list, boolean z10, String str2, ReactionsTheme reactionsTheme, int i10, Object obj) {
+    public static /* synthetic */ ForumPostActionBar m580copyLdU2QRA$default(ForumPostActionBar forumPostActionBar, String str, ForumPostActions forumPostActions, List list, boolean z10, String str2, ReactionsTheme reactionsTheme, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = forumPostActionBar.messageId;
         }
@@ -49,12 +49,12 @@ public final class ForumPostActionBar extends MessageAccessory {
         }
         String str3 = str2;
         ReactionsTheme reactionsTheme2 = reactionsTheme;
-        return forumPostActionBar.m580copyLdU2QRA(str, forumPostActions, list2, z10, str3, reactionsTheme2);
+        return forumPostActionBar.m582copyLdU2QRA(str, forumPostActions, list2, z10, str3, reactionsTheme2);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m579component13Eiw7ao() {
+    public final String m581component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -82,7 +82,7 @@ public final class ForumPostActionBar extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-LdU2QRA  reason: not valid java name */
-    public final ForumPostActionBar m580copyLdU2QRA(@NotNull String messageId, @NotNull ForumPostActions postActions, List<MessageReaction> list, boolean z10, @NotNull String addNewReactionAccessibilityLabel, ReactionsTheme reactionsTheme) {
+    public final ForumPostActionBar m582copyLdU2QRA(@NotNull String messageId, @NotNull ForumPostActions postActions, List<MessageReaction> list, boolean z10, @NotNull String addNewReactionAccessibilityLabel, ReactionsTheme reactionsTheme) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(postActions, "postActions");
         Intrinsics.checkNotNullParameter(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
@@ -95,7 +95,7 @@ public final class ForumPostActionBar extends MessageAccessory {
         }
         if (obj instanceof ForumPostActionBar) {
             ForumPostActionBar forumPostActionBar = (ForumPostActionBar) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, forumPostActionBar.messageId) && Intrinsics.areEqual(this.postActions, forumPostActionBar.postActions) && Intrinsics.areEqual(this.reactions, forumPostActionBar.reactions) && this.canAddNewReactions == forumPostActionBar.canAddNewReactions && Intrinsics.areEqual(this.addNewReactionAccessibilityLabel, forumPostActionBar.addNewReactionAccessibilityLabel) && Intrinsics.areEqual(this.reactionsTheme, forumPostActionBar.reactionsTheme);
+            return MessageId.m1090equalsimpl0(this.messageId, forumPostActionBar.messageId) && Intrinsics.areEqual(this.postActions, forumPostActionBar.postActions) && Intrinsics.areEqual(this.reactions, forumPostActionBar.reactions) && this.canAddNewReactions == forumPostActionBar.canAddNewReactions && Intrinsics.areEqual(this.addNewReactionAccessibilityLabel, forumPostActionBar.addNewReactionAccessibilityLabel) && Intrinsics.areEqual(this.reactionsTheme, forumPostActionBar.reactionsTheme);
         }
         return false;
     }
@@ -112,7 +112,7 @@ public final class ForumPostActionBar extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -130,22 +130,22 @@ public final class ForumPostActionBar extends MessageAccessory {
     }
 
     public int hashCode() {
-        int m1089hashCodeimpl = ((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.postActions.hashCode()) * 31;
+        int m1091hashCodeimpl = ((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.postActions.hashCode()) * 31;
         List<MessageReaction> list = this.reactions;
-        int hashCode = (((((m1089hashCodeimpl + (list == null ? 0 : list.hashCode())) * 31) + Boolean.hashCode(this.canAddNewReactions)) * 31) + this.addNewReactionAccessibilityLabel.hashCode()) * 31;
+        int hashCode = (((((m1091hashCodeimpl + (list == null ? 0 : list.hashCode())) * 31) + Boolean.hashCode(this.canAddNewReactions)) * 31) + this.addNewReactionAccessibilityLabel.hashCode()) * 31;
         ReactionsTheme reactionsTheme = this.reactionsTheme;
         return hashCode + (reactionsTheme != null ? reactionsTheme.hashCode() : 0);
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         ForumPostActions forumPostActions = this.postActions;
         List<MessageReaction> list = this.reactions;
         boolean z10 = this.canAddNewReactions;
         String str = this.addNewReactionAccessibilityLabel;
         ReactionsTheme reactionsTheme = this.reactionsTheme;
-        return "ForumPostActionBar(messageId=" + m1091toStringimpl + ", postActions=" + forumPostActions + ", reactions=" + list + ", canAddNewReactions=" + z10 + ", addNewReactionAccessibilityLabel=" + str + ", reactionsTheme=" + reactionsTheme + ")";
+        return "ForumPostActionBar(messageId=" + m1093toStringimpl + ", postActions=" + forumPostActions + ", reactions=" + list + ", canAddNewReactions=" + z10 + ", addNewReactionAccessibilityLabel=" + str + ", reactionsTheme=" + reactionsTheme + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

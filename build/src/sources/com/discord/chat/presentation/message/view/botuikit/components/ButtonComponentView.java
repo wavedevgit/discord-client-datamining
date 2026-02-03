@@ -30,7 +30,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.google.android.flexbox.FlexboxLayout;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
-import ir.p;
+import jr.p;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -336,7 +336,7 @@ public final class ButtonComponentView extends ConstraintLayout implements Compo
         MessageComponentButtonViewBinding inflate = MessageComponentButtonViewBinding.inflate(LayoutInflater.from(context), this);
         Intrinsics.checkNotNullExpressionValue(inflate, "inflate(...)");
         this.binding = inflate;
-        this.progressDots$delegate = ir.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.a
+        this.progressDots$delegate = jr.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 ProgressDots progressDots_delegate$lambda$0;

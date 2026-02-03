@@ -6,7 +6,7 @@ import c6.k;
 import com.android.volley.o;
 import com.android.volley.p;
 import com.android.volley.u;
-import ir.l;
+import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -68,7 +68,7 @@ public class CDNAssetLoader extends FileAssetLoader {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((byte[]) obj);
-                return Unit.f33298a;
+                return Unit.f33074a;
             }
 
             public final void invoke(@NotNull byte[] bytes) {

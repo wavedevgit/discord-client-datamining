@@ -1,175 +1,119 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
-    var0 = undefined;
-    var1.default = var0;
-    var3 = {};
-    var4 = {
-        'one': 'dưới 1 giây',
-        'other': 'dưới {{count}} giây'
-    };
-    var3.lessThanXSeconds = var4;
-    var4 = {
-        'one': '1 giây',
-        'other': '{{count}} giây'
-    };
-    var3.xSeconds = var4;
-    var4 = 'nửa phút';
-    var3.halfAMinute = var4;
-    var4 = {
-        'one': 'dưới 1 phút',
-        'other': 'dưới {{count}} phút'
-    };
-    var3.lessThanXMinutes = var4;
-    var4 = {
-        'one': '1 phút',
-        'other': '{{count}} phút'
-    };
-    var3.xMinutes = var4;
-    var4 = {
-        'one': 'khoảng 1 giờ',
-        'other': 'khoảng {{count}} giờ'
-    };
-    var3.aboutXHours = var4;
-    var4 = {
-        'one': '1 giờ',
-        'other': '{{count}} giờ'
-    };
-    var3.xHours = var4;
-    var4 = {
-        'one': '1 ngày',
-        'other': '{{count}} ngày'
-    };
-    var3.xDays = var4;
-    var4 = {
-        'one': 'khoảng 1 tuần',
-        'other': 'khoảng {{count}} tuần'
-    };
-    var3.aboutXWeeks = var4;
-    var4 = {
-        'one': '1 tuần',
-        'other': '{{count}} tuần'
-    };
-    var3.xWeeks = var4;
-    var4 = {
-        'one': 'khoảng 1 tháng',
-        'other': 'khoảng {{count}} tháng'
-    };
-    var3.aboutXMonths = var4;
-    var4 = {
-        'one': '1 tháng',
-        'other': '{{count}} tháng'
-    };
-    var3.xMonths = var4;
-    var4 = {
-        'one': 'khoảng 1 năm',
-        'other': 'khoảng {{count}} năm'
-    };
-    var3.aboutXYears = var4;
-    var4 = {
-        'one': '1 năm',
-        'other': '{{count}} năm'
-    };
-    var3.xYears = var4;
-    var4 = {
-        'one': 'hơn 1 năm',
-        'other': 'hơn {{count}} năm'
-    };
-    var3.overXYears = var4;
-    var4 = {
-        'one': 'gần 1 năm',
-        'other': 'gần {{count}} năm'
-    };
-    var3.almostXYears = var4;
-    var _closure1_slot0 = var3;
-    var2 = function arg0, arg1, arg2() {
-        _fun23927: for (var _fun23927_ip = 0;;) switch (_fun23927_ip) {
-            case 0:
-                var7 = arg1;
-                var1 = arg2;
-                var2 = _closure1_slot0;
-                var0 = arg0;
-                var2 = var2[var0];
-                var4 = 'string';
-                var0 = typeof var2;
-                var3 = var2;
-                if (!(var4 !== var0)) {
-                    _fun23927_ip = 90;
-                    continue _fun23927
+    _fun23930: for (var _fun23930_ip = 0;;) switch (_fun23930_ip) {
+        case 0:
+            var4 = require;
+            var1 = exports;
+            var2 = dependencyMap;
+            var _closure1_slot0 = var4;
+            var _closure1_slot1 = var2;
+            var0 = global;
+            var7 = var0.Object;
+            var6 = var7.defineProperty;
+            var5 = {};
+            var0 = true;
+            var5.value = var0;
+            var0 = '__esModule';
+            var0 = var6.bind(var7)(var1, var0, var5);
+            var0 = function arg0() {
+                _fun23931: for (var _fun23931_ip = 0;;) switch (_fun23931_ip) {
+                    case 0:
+                        var10 = arg0;
+                        var0 = undefined;
+                        var2 = undefined;
+                        var3 = _closure1_slot2;
+                        var3 = var3.default;
+                        var2 = arguments;
+                        var4 = 1;
+                        var2 = var3.bind(var0)(var4, var2);
+                        var2 = {};
+                        var5 = _closure1_slot0;
+                        var3 = _closure1_slot1;
+                        var3 = var3[var4];
+                        var3 = var5.bind(var0)(var3);
+                        var3 = var3.getDefaultOptions;
+                        var11 = var3.bind(var0)();
+                        var7 = var11;
+                        var9 = global;
+                        for (var3 in var7)
+                            case 72: {
+                                case 81: var13 = var3;
+                                var12 = var9.Object;
+                                var12 = var12.prototype;
+                                var14 = var12.hasOwnProperty;
+                                var12 = var14.call;
+                                var12 = var12.bind(var14)(var11, var13);
+                                if (!var12) {
+                                    _fun23931_ip = 72;
+                                    continue _fun23931
+                                }
+                                case 115: var12 = var11[var13];
+                                var2[var13] = var12;
+                                _fun23931_ip = 72;
+                                continue _fun23931;
+                            }
+                    case 125:
+                        var7 = var10;
+                        for (var3 in var7)
+                            case 136: {
+                                case 145: var11 = var3;
+                                var12 = var9.Object;
+                                var12 = var12.prototype;
+                                var13 = var12.hasOwnProperty;
+                                var12 = var13.call;
+                                var12 = var12.bind(var13)(var10, var11);
+                                if (!var12) {
+                                    _fun23931_ip = 136;
+                                    continue _fun23931
+                                }
+                                case 179: var12 = var10[var11];
+                                if (!(var0 !== var12)) {
+                                    _fun23931_ip = 197;
+                                    continue _fun23931
+                                }
+                                case 187: var12 = var10[var11];
+                                var2[var11] = var12;
+                                _fun23931_ip = 136;
+                                continue _fun23931;
+                                case 197: var11 = delete var2[var11];
+                                _fun23931_ip = 136;
+                                continue _fun23931;
+                            }
+                    case 203:
+                        var3 = _closure1_slot0;
+                        var1 = _closure1_slot1;
+                        var1 = var1[var4];
+                        var1 = var3.bind(var0)(var1);
+                        var1 = var1.setDefaultOptions;
+                        var1 = var1.bind(var0)(var2);
+                        return var0;
                 }
-            case 34:
-                var0 = 1;
-                if (!(var0 !== var7)) {
-                    _fun23927_ip = 81;
-                    continue _fun23927
-                }
-            case 41:
-                var6 = var2.other;
-                var5 = var6.replace;
-                var0 = global;
-                var4 = var0.String;
-                var0 = undefined;
-                var4 = var4.bind(var0)(var7);
-                var0 = '{{count}}';
-                var0 = var5.bind(var6)(var0, var4);
-                _fun23927_ip = 87;
-                continue _fun23927;
-            case 81:
-                var0 = var2.one;
-            case 87:
-                var3 = var0;
-            case 90:
-                var2 = null;
-                var0 = var3;
-                if (!(var2 != var1)) {
-                    _fun23927_ip = 157;
-                    continue _fun23927
-                }
-            case 99:
-                var2 = var1.addSuffix;
-                var0 = var3;
-                if (!var2) {
-                    _fun23927_ip = 157;
-                    continue _fun23927
-                }
-            case 111:
-                var2 = var1.comparison;
-                if (!var2) {
-                    _fun23927_ip = 132;
-                    continue _fun23927
-                }
-            case 120:
-                var2 = var1.comparison;
-                var1 = 0;
-                if (!(!(var2 > var1))) {
-                    _fun23927_ip = 144;
-                    continue _fun23927
-                }
-            case 132:
-                var1 = ' trước';
-                var1 = var3 + var1;
-                _fun23927_ip = 154;
-                continue _fun23927;
-            case 144:
-                var2 = ' nữa';
-                var1 = var3 + var2;
-            case 154:
-                var0 = var1;
-            case 157:
-                return var0;
-        }
-    };
-    var1.default = var2;
-    var2 = var1.default;
-    var1 = arg4;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+            };
+            var1.default = var0;
+            var0 = 0;
+            var2 = var2[var0];
+            var0 = undefined;
+            var5 = var4.bind(var0)(var2);
+            if (!var5) {
+                _fun23930_ip = 90;
+                continue _fun23930
+            }
+        case 78:
+            var4 = var5.__esModule;
+            var2 = var5;
+            if (var4) {
+                _fun23930_ip = 99;
+                continue _fun23930
+            }
+        case 90:
+            var4 = {};
+            var4.default = var5;
+            var2 = var4;
+        case 99:
+            var _closure1_slot2 = var2;
+            var2 = var1.default;
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2565, 2569]);

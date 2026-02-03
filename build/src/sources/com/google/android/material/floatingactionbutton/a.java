@@ -18,52 +18,52 @@ import oh.l;
 public class a extends Drawable {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Paint f16028b;
+    private final Paint f15657b;
 
     /* renamed from: h  reason: collision with root package name */
-    float f16034h;
+    float f15663h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f16035i;
+    private int f15664i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f16036j;
+    private int f15665j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f16037k;
+    private int f15666k;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f16038l;
+    private int f15667l;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f16039m;
+    private int f15668m;
 
     /* renamed from: o  reason: collision with root package name */
-    private k f16041o;
+    private k f15670o;
 
     /* renamed from: p  reason: collision with root package name */
-    private ColorStateList f16042p;
+    private ColorStateList f15671p;
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f16027a = l.k();
+    private final l f15656a = l.k();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Path f16029c = new Path();
+    private final Path f15658c = new Path();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Rect f16030d = new Rect();
+    private final Rect f15659d = new Rect();
 
     /* renamed from: e  reason: collision with root package name */
-    private final RectF f16031e = new RectF();
+    private final RectF f15660e = new RectF();
 
     /* renamed from: f  reason: collision with root package name */
-    private final RectF f16032f = new RectF();
+    private final RectF f15661f = new RectF();
 
     /* renamed from: g  reason: collision with root package name */
-    private final b f16033g = new b();
+    private final b f15662g = new b();
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f16040n = true;
+    private boolean f15669n = true;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private class b extends Drawable.ConstantState {
@@ -83,80 +83,80 @@ public class a extends Drawable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(k kVar) {
-        this.f16041o = kVar;
+        this.f15670o = kVar;
         Paint paint = new Paint(1);
-        this.f16028b = paint;
+        this.f15657b = paint;
         paint.setStyle(Paint.Style.STROKE);
     }
 
     private Shader a() {
-        Rect rect = this.f16030d;
+        Rect rect = this.f15659d;
         copyBounds(rect);
-        float height = this.f16034h / rect.height();
-        return new LinearGradient(0.0f, rect.top, 0.0f, rect.bottom, new int[]{r1.c.h(this.f16035i, this.f16039m), r1.c.h(this.f16036j, this.f16039m), r1.c.h(r1.c.l(this.f16036j, 0), this.f16039m), r1.c.h(r1.c.l(this.f16038l, 0), this.f16039m), r1.c.h(this.f16038l, this.f16039m), r1.c.h(this.f16037k, this.f16039m)}, new float[]{0.0f, height, 0.5f, 0.5f, 1.0f - height, 1.0f}, Shader.TileMode.CLAMP);
+        float height = this.f15663h / rect.height();
+        return new LinearGradient(0.0f, rect.top, 0.0f, rect.bottom, new int[]{r1.c.h(this.f15664i, this.f15668m), r1.c.h(this.f15665j, this.f15668m), r1.c.h(r1.c.l(this.f15665j, 0), this.f15668m), r1.c.h(r1.c.l(this.f15667l, 0), this.f15668m), r1.c.h(this.f15667l, this.f15668m), r1.c.h(this.f15666k, this.f15668m)}, new float[]{0.0f, height, 0.5f, 0.5f, 1.0f - height, 1.0f}, Shader.TileMode.CLAMP);
     }
 
     protected RectF b() {
-        this.f16032f.set(getBounds());
-        return this.f16032f;
+        this.f15661f.set(getBounds());
+        return this.f15661f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c(ColorStateList colorStateList) {
         if (colorStateList != null) {
-            this.f16039m = colorStateList.getColorForState(getState(), this.f16039m);
+            this.f15668m = colorStateList.getColorForState(getState(), this.f15668m);
         }
-        this.f16042p = colorStateList;
-        this.f16040n = true;
+        this.f15671p = colorStateList;
+        this.f15669n = true;
         invalidateSelf();
     }
 
     public void d(float f10) {
-        if (this.f16034h != f10) {
-            this.f16034h = f10;
-            this.f16028b.setStrokeWidth(f10 * 1.3333f);
-            this.f16040n = true;
+        if (this.f15663h != f10) {
+            this.f15663h = f10;
+            this.f15657b.setStrokeWidth(f10 * 1.3333f);
+            this.f15669n = true;
             invalidateSelf();
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
-        if (this.f16040n) {
-            this.f16028b.setShader(a());
-            this.f16040n = false;
+        if (this.f15669n) {
+            this.f15657b.setShader(a());
+            this.f15669n = false;
         }
-        float strokeWidth = this.f16028b.getStrokeWidth() / 2.0f;
-        copyBounds(this.f16030d);
-        this.f16031e.set(this.f16030d);
-        float min = Math.min(this.f16041o.r().a(b()), this.f16031e.width() / 2.0f);
-        if (this.f16041o.u(b())) {
-            this.f16031e.inset(strokeWidth, strokeWidth);
-            canvas.drawRoundRect(this.f16031e, min, min, this.f16028b);
+        float strokeWidth = this.f15657b.getStrokeWidth() / 2.0f;
+        copyBounds(this.f15659d);
+        this.f15660e.set(this.f15659d);
+        float min = Math.min(this.f15670o.r().a(b()), this.f15660e.width() / 2.0f);
+        if (this.f15670o.u(b())) {
+            this.f15660e.inset(strokeWidth, strokeWidth);
+            canvas.drawRoundRect(this.f15660e, min, min, this.f15657b);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e(int i10, int i11, int i12, int i13) {
-        this.f16035i = i10;
-        this.f16036j = i11;
-        this.f16037k = i12;
-        this.f16038l = i13;
+        this.f15664i = i10;
+        this.f15665j = i11;
+        this.f15666k = i12;
+        this.f15667l = i13;
     }
 
     public void f(k kVar) {
-        this.f16041o = kVar;
+        this.f15670o = kVar;
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Drawable
     public Drawable.ConstantState getConstantState() {
-        return this.f16033g;
+        return this.f15662g;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getOpacity() {
-        if (this.f16034h > 0.0f) {
+        if (this.f15663h > 0.0f) {
             return -3;
         }
         return -2;
@@ -164,20 +164,20 @@ public class a extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public void getOutline(Outline outline) {
-        if (this.f16041o.u(b())) {
-            outline.setRoundRect(getBounds(), this.f16041o.r().a(b()));
+        if (this.f15670o.u(b())) {
+            outline.setRoundRect(getBounds(), this.f15670o.r().a(b()));
             return;
         }
-        copyBounds(this.f16030d);
-        this.f16031e.set(this.f16030d);
-        this.f16027a.d(this.f16041o, 1.0f, this.f16031e, this.f16029c);
-        com.google.android.material.drawable.c.k(outline, this.f16029c);
+        copyBounds(this.f15659d);
+        this.f15660e.set(this.f15659d);
+        this.f15656a.d(this.f15670o, 1.0f, this.f15660e, this.f15658c);
+        com.google.android.material.drawable.c.k(outline, this.f15658c);
     }
 
     @Override // android.graphics.drawable.Drawable
     public boolean getPadding(Rect rect) {
-        if (this.f16041o.u(b())) {
-            int round = Math.round(this.f16034h);
+        if (this.f15670o.u(b())) {
+            int round = Math.round(this.f15663h);
             rect.set(round, round, round, round);
             return true;
         }
@@ -186,7 +186,7 @@ public class a extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public boolean isStateful() {
-        ColorStateList colorStateList = this.f16042p;
+        ColorStateList colorStateList = this.f15671p;
         if ((colorStateList != null && colorStateList.isStateful()) || super.isStateful()) {
             return true;
         }
@@ -195,32 +195,32 @@ public class a extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     protected void onBoundsChange(Rect rect) {
-        this.f16040n = true;
+        this.f15669n = true;
     }
 
     @Override // android.graphics.drawable.Drawable
     protected boolean onStateChange(int[] iArr) {
         int colorForState;
-        ColorStateList colorStateList = this.f16042p;
-        if (colorStateList != null && (colorForState = colorStateList.getColorForState(iArr, this.f16039m)) != this.f16039m) {
-            this.f16040n = true;
-            this.f16039m = colorForState;
+        ColorStateList colorStateList = this.f15671p;
+        if (colorStateList != null && (colorForState = colorStateList.getColorForState(iArr, this.f15668m)) != this.f15668m) {
+            this.f15669n = true;
+            this.f15668m = colorForState;
         }
-        if (this.f16040n) {
+        if (this.f15669n) {
             invalidateSelf();
         }
-        return this.f16040n;
+        return this.f15669n;
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        this.f16028b.setAlpha(i10);
+        this.f15657b.setAlpha(i10);
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f16028b.setColorFilter(colorFilter);
+        this.f15657b.setColorFilter(colorFilter);
         invalidateSelf();
     }
 }

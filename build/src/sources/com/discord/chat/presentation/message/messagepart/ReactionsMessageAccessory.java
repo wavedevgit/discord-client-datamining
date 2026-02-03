@@ -32,7 +32,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-a6FnO-k$default  reason: not valid java name */
-    public static /* synthetic */ ReactionsMessageAccessory m637copya6FnOk$default(ReactionsMessageAccessory reactionsMessageAccessory, String str, List list, boolean z10, String str2, ReactionsTheme reactionsTheme, DiscordTheme discordTheme, String str3, Integer num, boolean z11, boolean z12, int i10, Object obj) {
+    public static /* synthetic */ ReactionsMessageAccessory m639copya6FnOk$default(ReactionsMessageAccessory reactionsMessageAccessory, String str, List list, boolean z10, String str2, ReactionsTheme reactionsTheme, DiscordTheme discordTheme, String str3, Integer num, boolean z11, boolean z12, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = reactionsMessageAccessory.messageId;
         }
@@ -70,12 +70,12 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
         Integer num2 = num;
         ReactionsTheme reactionsTheme2 = reactionsTheme;
         DiscordTheme discordTheme2 = discordTheme;
-        return reactionsMessageAccessory.m639copya6FnOk(str, list2, z10, str2, reactionsTheme2, discordTheme2, str4, num2, z13, z14);
+        return reactionsMessageAccessory.m641copya6FnOk(str, list2, z10, str2, reactionsTheme2, discordTheme2, str4, num2, z13, z14);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m638component13Eiw7ao() {
+    public final String m640component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -119,7 +119,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-a6FnO-k  reason: not valid java name */
-    public final ReactionsMessageAccessory m639copya6FnOk(@NotNull String messageId, @NotNull List<MessageReaction> reactions, boolean z10, @NotNull String addNewReactionAccessibilityLabel, ReactionsTheme reactionsTheme, DiscordTheme discordTheme, String str, Integer num, boolean z11, boolean z12) {
+    public final ReactionsMessageAccessory m641copya6FnOk(@NotNull String messageId, @NotNull List<MessageReaction> reactions, boolean z10, @NotNull String addNewReactionAccessibilityLabel, ReactionsTheme reactionsTheme, DiscordTheme discordTheme, String str, Integer num, boolean z11, boolean z12) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(reactions, "reactions");
         Intrinsics.checkNotNullParameter(addNewReactionAccessibilityLabel, "addNewReactionAccessibilityLabel");
@@ -132,7 +132,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof ReactionsMessageAccessory) {
             ReactionsMessageAccessory reactionsMessageAccessory = (ReactionsMessageAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, reactionsMessageAccessory.messageId) && Intrinsics.areEqual(this.reactions, reactionsMessageAccessory.reactions) && this.canAddNewReactions == reactionsMessageAccessory.canAddNewReactions && Intrinsics.areEqual(this.addNewReactionAccessibilityLabel, reactionsMessageAccessory.addNewReactionAccessibilityLabel) && Intrinsics.areEqual(this.reactionsTheme, reactionsMessageAccessory.reactionsTheme) && this.theme == reactionsMessageAccessory.theme && Intrinsics.areEqual(this.targetKind, reactionsMessageAccessory.targetKind) && Intrinsics.areEqual(this.embedIndex, reactionsMessageAccessory.embedIndex) && this.showReactLabel == reactionsMessageAccessory.showReactLabel && this.showReplyButton == reactionsMessageAccessory.showReplyButton;
+            return MessageId.m1090equalsimpl0(this.messageId, reactionsMessageAccessory.messageId) && Intrinsics.areEqual(this.reactions, reactionsMessageAccessory.reactions) && this.canAddNewReactions == reactionsMessageAccessory.canAddNewReactions && Intrinsics.areEqual(this.addNewReactionAccessibilityLabel, reactionsMessageAccessory.addNewReactionAccessibilityLabel) && Intrinsics.areEqual(this.reactionsTheme, reactionsMessageAccessory.reactionsTheme) && this.theme == reactionsMessageAccessory.theme && Intrinsics.areEqual(this.targetKind, reactionsMessageAccessory.targetKind) && Intrinsics.areEqual(this.embedIndex, reactionsMessageAccessory.embedIndex) && this.showReactLabel == reactionsMessageAccessory.showReactLabel && this.showReplyButton == reactionsMessageAccessory.showReplyButton;
         }
         return false;
     }
@@ -153,7 +153,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -183,9 +183,9 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        int m1089hashCodeimpl = ((((((MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.reactions.hashCode()) * 31) + Boolean.hashCode(this.canAddNewReactions)) * 31) + this.addNewReactionAccessibilityLabel.hashCode()) * 31;
+        int m1091hashCodeimpl = ((((((MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.reactions.hashCode()) * 31) + Boolean.hashCode(this.canAddNewReactions)) * 31) + this.addNewReactionAccessibilityLabel.hashCode()) * 31;
         ReactionsTheme reactionsTheme = this.reactionsTheme;
-        int hashCode = (m1089hashCodeimpl + (reactionsTheme == null ? 0 : reactionsTheme.hashCode())) * 31;
+        int hashCode = (m1091hashCodeimpl + (reactionsTheme == null ? 0 : reactionsTheme.hashCode())) * 31;
         DiscordTheme discordTheme = this.theme;
         int hashCode2 = (hashCode + (discordTheme == null ? 0 : discordTheme.hashCode())) * 31;
         String str = this.targetKind;
@@ -196,7 +196,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         List<MessageReaction> list = this.reactions;
         boolean z10 = this.canAddNewReactions;
         String str = this.addNewReactionAccessibilityLabel;
@@ -206,7 +206,7 @@ public final class ReactionsMessageAccessory extends MessageAccessory {
         Integer num = this.embedIndex;
         boolean z11 = this.showReactLabel;
         boolean z12 = this.showReplyButton;
-        return "ReactionsMessageAccessory(messageId=" + m1091toStringimpl + ", reactions=" + list + ", canAddNewReactions=" + z10 + ", addNewReactionAccessibilityLabel=" + str + ", reactionsTheme=" + reactionsTheme + ", theme=" + discordTheme + ", targetKind=" + str2 + ", embedIndex=" + num + ", showReactLabel=" + z11 + ", showReplyButton=" + z12 + ")";
+        return "ReactionsMessageAccessory(messageId=" + m1093toStringimpl + ", reactions=" + list + ", canAddNewReactions=" + z10 + ", addNewReactionAccessibilityLabel=" + str + ", reactionsTheme=" + reactionsTheme + ", theme=" + discordTheme + ", targetKind=" + str2 + ", embedIndex=" + num + ", showReactLabel=" + z11 + ", showReplyButton=" + z12 + ")";
     }
 
     public /* synthetic */ ReactionsMessageAccessory(String str, List list, boolean z10, String str2, ReactionsTheme reactionsTheme, DiscordTheme discordTheme, String str3, Integer num, boolean z11, boolean z12, int i10, DefaultConstructorMarker defaultConstructorMarker) {

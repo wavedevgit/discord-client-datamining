@@ -11,43 +11,43 @@ import eightbitlab.com.blurview.g;
 public final class c implements BlurController {
 
     /* renamed from: b  reason: collision with root package name */
-    private final BlurAlgorithm f22827b;
+    private final BlurAlgorithm f22859b;
 
     /* renamed from: c  reason: collision with root package name */
-    private eightbitlab.com.blurview.a f22828c;
+    private eightbitlab.com.blurview.a f22860c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Bitmap f22829d;
+    private Bitmap f22861d;
 
     /* renamed from: e  reason: collision with root package name */
-    final View f22830e;
+    final View f22862e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f22831f;
+    private int f22863f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final ViewGroup f22832g;
+    private final ViewGroup f22864g;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f22837l;
+    private boolean f22869l;
 
     /* renamed from: m  reason: collision with root package name */
-    private Drawable f22838m;
+    private Drawable f22870m;
 
     /* renamed from: a  reason: collision with root package name */
-    private float f22826a = 16.0f;
+    private float f22858a = 16.0f;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int[] f22833h = new int[2];
+    private final int[] f22865h = new int[2];
 
     /* renamed from: i  reason: collision with root package name */
-    private final int[] f22834i = new int[2];
+    private final int[] f22866i = new int[2];
 
     /* renamed from: j  reason: collision with root package name */
-    private final ViewTreeObserver.OnPreDrawListener f22835j = new a();
+    private final ViewTreeObserver.OnPreDrawListener f22867j = new a();
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f22836k = true;
+    private boolean f22868k = true;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements ViewTreeObserver.OnPreDrawListener {
@@ -62,10 +62,10 @@ public final class c implements BlurController {
     }
 
     public c(View view, ViewGroup viewGroup, int i10, BlurAlgorithm blurAlgorithm) {
-        this.f22832g = viewGroup;
-        this.f22830e = view;
-        this.f22831f = i10;
-        this.f22827b = blurAlgorithm;
+        this.f22864g = viewGroup;
+        this.f22862e = view;
+        this.f22863f = i10;
+        this.f22859b = blurAlgorithm;
         if (blurAlgorithm instanceof e) {
             ((e) blurAlgorithm).f(view.getContext());
         }
@@ -73,82 +73,82 @@ public final class c implements BlurController {
     }
 
     private void h() {
-        this.f22829d = this.f22827b.e(this.f22829d, this.f22826a);
-        if (!this.f22827b.b()) {
-            this.f22828c.setBitmap(this.f22829d);
+        this.f22861d = this.f22859b.e(this.f22861d, this.f22858a);
+        if (!this.f22859b.b()) {
+            this.f22860c.setBitmap(this.f22861d);
         }
     }
 
     private void j() {
-        this.f22832g.getLocationOnScreen(this.f22833h);
-        this.f22830e.getLocationOnScreen(this.f22834i);
-        int[] iArr = this.f22834i;
+        this.f22864g.getLocationOnScreen(this.f22865h);
+        this.f22862e.getLocationOnScreen(this.f22866i);
+        int[] iArr = this.f22866i;
         int i10 = iArr[0];
-        int[] iArr2 = this.f22833h;
+        int[] iArr2 = this.f22865h;
         int i11 = i10 - iArr2[0];
         int i12 = iArr[1] - iArr2[1];
-        float height = this.f22830e.getHeight() / this.f22829d.getHeight();
-        float width = this.f22830e.getWidth() / this.f22829d.getWidth();
-        this.f22828c.translate((-i11) / width, (-i12) / height);
-        this.f22828c.scale(1.0f / width, 1.0f / height);
+        float height = this.f22862e.getHeight() / this.f22861d.getHeight();
+        float width = this.f22862e.getWidth() / this.f22861d.getWidth();
+        this.f22860c.translate((-i11) / width, (-i12) / height);
+        this.f22860c.scale(1.0f / width, 1.0f / height);
     }
 
     @Override // eightbitlab.com.blurview.BlurViewFacade
     public BlurViewFacade a(int i10) {
-        if (this.f22831f != i10) {
-            this.f22831f = i10;
-            this.f22830e.invalidate();
+        if (this.f22863f != i10) {
+            this.f22863f = i10;
+            this.f22862e.invalidate();
         }
         return this;
     }
 
     @Override // eightbitlab.com.blurview.BlurViewFacade
     public BlurViewFacade b(boolean z10) {
-        this.f22836k = z10;
+        this.f22868k = z10;
         c(z10);
-        this.f22830e.invalidate();
+        this.f22862e.invalidate();
         return this;
     }
 
     @Override // eightbitlab.com.blurview.BlurViewFacade
     public BlurViewFacade c(boolean z10) {
-        this.f22832g.getViewTreeObserver().removeOnPreDrawListener(this.f22835j);
+        this.f22864g.getViewTreeObserver().removeOnPreDrawListener(this.f22867j);
         if (z10) {
-            this.f22832g.getViewTreeObserver().addOnPreDrawListener(this.f22835j);
+            this.f22864g.getViewTreeObserver().addOnPreDrawListener(this.f22867j);
         }
         return this;
     }
 
     @Override // eightbitlab.com.blurview.BlurViewFacade
     public BlurViewFacade d(Drawable drawable) {
-        this.f22838m = drawable;
+        this.f22870m = drawable;
         return this;
     }
 
     @Override // eightbitlab.com.blurview.BlurController
     public void destroy() {
         c(false);
-        this.f22827b.destroy();
-        this.f22837l = false;
+        this.f22859b.destroy();
+        this.f22869l = false;
     }
 
     @Override // eightbitlab.com.blurview.BlurController
     public void e() {
-        i(this.f22830e.getMeasuredWidth(), this.f22830e.getMeasuredHeight());
+        i(this.f22862e.getMeasuredWidth(), this.f22862e.getMeasuredHeight());
     }
 
     @Override // eightbitlab.com.blurview.BlurController
     public boolean f(Canvas canvas) {
-        if (this.f22836k && this.f22837l) {
+        if (this.f22868k && this.f22869l) {
             if (canvas instanceof eightbitlab.com.blurview.a) {
                 return false;
             }
-            float height = this.f22830e.getHeight() / this.f22829d.getHeight();
+            float height = this.f22862e.getHeight() / this.f22861d.getHeight();
             canvas.save();
-            canvas.scale(this.f22830e.getWidth() / this.f22829d.getWidth(), height);
-            this.f22827b.c(canvas, this.f22829d);
+            canvas.scale(this.f22862e.getWidth() / this.f22861d.getWidth(), height);
+            this.f22859b.c(canvas, this.f22861d);
             canvas.restore();
-            int i10 = this.f22831f;
+            int i10 = this.f22863f;
             if (i10 != 0) {
                 canvas.drawColor(i10);
             }
@@ -158,37 +158,37 @@ public final class c implements BlurController {
 
     @Override // eightbitlab.com.blurview.BlurViewFacade
     public BlurViewFacade g(float f10) {
-        this.f22826a = f10;
+        this.f22858a = f10;
         return this;
     }
 
     void i(int i10, int i11) {
         c(true);
-        g gVar = new g(this.f22827b.d());
+        g gVar = new g(this.f22859b.d());
         if (gVar.b(i10, i11)) {
-            this.f22830e.setWillNotDraw(true);
+            this.f22862e.setWillNotDraw(true);
             return;
         }
-        this.f22830e.setWillNotDraw(false);
+        this.f22862e.setWillNotDraw(false);
         g.a d10 = gVar.d(i10, i11);
-        this.f22829d = Bitmap.createBitmap(d10.f22855a, d10.f22856b, this.f22827b.a());
-        this.f22828c = new eightbitlab.com.blurview.a(this.f22829d);
-        this.f22837l = true;
+        this.f22861d = Bitmap.createBitmap(d10.f22887a, d10.f22888b, this.f22859b.a());
+        this.f22860c = new eightbitlab.com.blurview.a(this.f22861d);
+        this.f22869l = true;
         k();
     }
 
     void k() {
-        if (this.f22836k && this.f22837l) {
-            Drawable drawable = this.f22838m;
+        if (this.f22868k && this.f22869l) {
+            Drawable drawable = this.f22870m;
             if (drawable == null) {
-                this.f22829d.eraseColor(0);
+                this.f22861d.eraseColor(0);
             } else {
-                drawable.draw(this.f22828c);
+                drawable.draw(this.f22860c);
             }
-            this.f22828c.save();
+            this.f22860c.save();
             j();
-            this.f22832g.draw(this.f22828c);
-            this.f22828c.restore();
+            this.f22864g.draw(this.f22860c);
+            this.f22860c.restore();
             h();
         }
     }

@@ -1,47 +1,63 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun96916: for (var _fun96916_ip = 0;;) switch (_fun96916_ip) {
+    _fun96818: for (var _fun96818_ip = 0;;) switch (_fun96818_ip) {
         case 0:
-            var2 = require;
-            var3 = dependencyMap;
-            var0 = 0;
-            var1 = var3[var0];
-            var0 = undefined;
-            var5 = var2.bind(var0)(var1);
-            var1 = global;
-            var1 = var1.Function;
-            var1 = var1.toString;
-            var1 = var5.bind(var0)(var1);
-            var _closure1_slot0 = var1;
-            var1 = 1;
-            var1 = var3[var1];
-            var6 = var2.bind(var0)(var1);
-            var1 = 2;
-            var5 = var3[var1];
-            var5 = var2.bind(var0)(var5);
-            var5 = var5.inspectSource;
-            var5 = var6.bind(var0)(var5);
-            if (var5) {
-                _fun96916_ip = 103;
-                continue _fun96916
+            var0 = global;
+            var2 = var0.document;
+            var3 = 'object';
+            var2 = typeof var2;
+            var2 = var3 === var2;
+            if (!var2) {
+                _fun96818_ip = 36;
+                continue _fun96818
             }
-        case 81:
-            var5 = var3[var1];
-            var5 = var2.bind(var0)(var5);
-            var4 = function(arg0) { // Environment: var4
-                var2 = _closure1_slot0;
-                var1 = undefined;
+        case 24:
+            var0 = var0.document;
+            var2 = var0.all;
+        case 36:
+            var _closure1_slot0 = var2;
+            var0 = undefined;
+            if (!(var0 === var2)) {
+                _fun96818_ip = 50;
+                continue _fun96818
+            }
+        case 46:
+            if (!(var0 === var2)) {
+                _fun96818_ip = 59;
+                continue _fun96818
+            }
+        case 50:
+            var2 = function(arg0) { // Environment: var1
+                var1 = 'function';
                 var0 = arg0;
-                var0 = var2.bind(var1)(var0);
+                var0 = typeof var0;
+                var0 = var1 === var0;
                 return var0;
             };
-            var5.inspectSource = var4;
-        case 103:
-            var1 = var3[var1];
-            var1 = var2.bind(var0)(var1);
-            var2 = var1.inspectSource;
+            _fun96818_ip = 66;
+            continue _fun96818;
+        case 59:
+            var2 = function(arg0) { // Environment: var1
+                _fun96819: for (var _fun96819_ip = 0;;) switch (_fun96819_ip) {
+                    case 0:
+                        var2 = arg0;
+                        var1 = 'function';
+                        var0 = typeof var2;
+                        var0 = var1 === var0;
+                        if (var0) {
+                            _fun96819_ip = 28;
+                            continue _fun96819
+                        }
+                    case 17:
+                        var1 = _closure1_slot0;
+                        var0 = var2 === var1;
+                    case 28:
+                        return var0;
+                }
+            };
+        case 66:
             var1 = arg4;
             var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12603, 12622, 12612]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

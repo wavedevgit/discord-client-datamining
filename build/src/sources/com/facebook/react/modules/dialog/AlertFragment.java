@@ -21,7 +21,7 @@ import com.facebook.react.R;
 import com.facebook.react.modules.dialog.DialogModule;
 import com.facebook.react.uimanager.ViewProps;
 import f.j;
-import ir.c;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -54,28 +54,28 @@ public final class AlertFragment extends DialogFragment implements DialogInterfa
         }
 
         private final Dialog createAppCompatDialog(Context context, Bundle bundle, DialogInterface.OnClickListener onClickListener) {
-            a.C0015a c0015a = new a.C0015a(context);
+            a.C0019a c0019a = new a.C0019a(context);
             if (bundle.containsKey("title")) {
                 String str = (String) db.a.c(bundle.getString("title"));
                 Intrinsics.checkNotNull(str);
-                c0015a.b(getAccessibleTitle(context, str));
+                c0019a.b(getAccessibleTitle(context, str));
             }
             if (bundle.containsKey(AlertFragment.ARG_BUTTON_POSITIVE)) {
-                c0015a.i(bundle.getString(AlertFragment.ARG_BUTTON_POSITIVE), onClickListener);
+                c0019a.i(bundle.getString(AlertFragment.ARG_BUTTON_POSITIVE), onClickListener);
             }
             if (bundle.containsKey(AlertFragment.ARG_BUTTON_NEGATIVE)) {
-                c0015a.f(bundle.getString(AlertFragment.ARG_BUTTON_NEGATIVE), onClickListener);
+                c0019a.f(bundle.getString(AlertFragment.ARG_BUTTON_NEGATIVE), onClickListener);
             }
             if (bundle.containsKey(AlertFragment.ARG_BUTTON_NEUTRAL)) {
-                c0015a.g(bundle.getString(AlertFragment.ARG_BUTTON_NEUTRAL), onClickListener);
+                c0019a.g(bundle.getString(AlertFragment.ARG_BUTTON_NEUTRAL), onClickListener);
             }
             if (bundle.containsKey("message")) {
-                c0015a.e(bundle.getString("message"));
+                c0019a.e(bundle.getString("message"));
             }
             if (bundle.containsKey(AlertFragment.ARG_ITEMS)) {
-                c0015a.d(bundle.getCharSequenceArray(AlertFragment.ARG_ITEMS), onClickListener);
+                c0019a.d(bundle.getCharSequenceArray(AlertFragment.ARG_ITEMS), onClickListener);
             }
-            androidx.appcompat.app.a create = c0015a.create();
+            androidx.appcompat.app.a create = c0019a.create();
             Intrinsics.checkNotNullExpressionValue(create, "create(...)");
             return create;
         }
@@ -133,7 +133,7 @@ public final class AlertFragment extends DialogFragment implements DialogInterfa
         }
 
         private final boolean isAppCompatTheme(Context context) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(j.f24328y0);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(j.f23539y0);
             Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "obtainStyledAttributes(...)");
             boolean hasValue = obtainStyledAttributes.hasValue(j.D0);
             obtainStyledAttributes.recycle();

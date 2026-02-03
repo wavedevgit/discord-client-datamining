@@ -49,42 +49,42 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ReportRaidTypes = var4;
     var2.REPORT_RAID_OPTIONS = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun96519: for (var _fun96519_ip = 0;;) switch (_fun96519_ip) {
+        _fun96495: for (var _fun96495_ip = 0;;) switch (_fun96495_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot2;
                 var1 = var1.DM_SPAM;
                 if (!(var1 !== var2)) {
-                    _fun96519_ip = 329;
-                    continue _fun96519
+                    _fun96495_ip = 329;
+                    continue _fun96495
                 }
             case 23:
                 var1 = _closure1_slot2;
                 var1 = var1.MENTION_SPAM;
                 if (!(var1 !== var2)) {
-                    _fun96519_ip = 269;
-                    continue _fun96519
+                    _fun96495_ip = 269;
+                    continue _fun96495
                 }
             case 40:
                 var1 = _closure1_slot2;
                 var1 = var1.MESSAGE_SPAM;
                 if (!(var1 !== var2)) {
-                    _fun96519_ip = 209;
-                    continue _fun96519
+                    _fun96495_ip = 209;
+                    continue _fun96495
                 }
             case 57:
                 var1 = _closure1_slot2;
                 var1 = var1.SETTINGS_SPAM;
                 if (!(var1 !== var2)) {
-                    _fun96519_ip = 149;
-                    continue _fun96519
+                    _fun96495_ip = 149;
+                    continue _fun96495
                 }
             case 71:
                 var1 = _closure1_slot2;
                 var1 = var1.SUSPICIOUS_USERS;
                 if (!(var1 !== var2)) {
-                    _fun96519_ip = 89;
-                    continue _fun96519
+                    _fun96495_ip = 89;
+                    continue _fun96495
                 }
             case 85:
                 var1 = null;

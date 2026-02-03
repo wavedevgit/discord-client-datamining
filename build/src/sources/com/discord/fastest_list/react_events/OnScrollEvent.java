@@ -6,7 +6,7 @@ import com.discord.react.utilities.NativeMapExtensionsKt;
 import com.discord.reactevents.ReactEvent;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.ViewProps;
-import ir.v;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -19,14 +19,14 @@ public class OnScrollEvent implements ReactEvent {
     private final float width;
 
     /* renamed from: x  reason: collision with root package name */
-    private final float f10430x;
+    private final float f10059x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final float f10431y;
+    private final float f10060y;
 
     private OnScrollEvent(float f10, float f11, float f12, float f13, float f14, float f15) {
-        this.f10430x = f10;
-        this.f10431y = f11;
+        this.f10059x = f10;
+        this.f10060y = f11;
         this.width = f12;
         this.height = f13;
         this.contentWidth = f14;
@@ -36,7 +36,7 @@ public class OnScrollEvent implements ReactEvent {
     @Override // com.discord.reactevents.ReactEvent
     @NotNull
     public WritableMap serialize() {
-        return NativeMapExtensionsKt.nativeMapOf(v.a("contentInset", NativeMapExtensionsKt.nativeMapOf(v.a(ViewProps.LEFT, 0), v.a(ViewProps.TOP, 0), v.a(ViewProps.BOTTOM, 0), v.a(ViewProps.RIGHT, 0))), v.a("contentOffset", NativeMapExtensionsKt.nativeMapOf(v.a("x", Float.valueOf(this.f10430x)), v.a("y", Float.valueOf(this.f10431y)))), v.a("contentSize", NativeMapExtensionsKt.nativeMapOf(v.a("width", Float.valueOf(this.contentWidth)), v.a("height", Float.valueOf(this.contentHeight)))), v.a("layoutMeasurement", NativeMapExtensionsKt.nativeMapOf(v.a("width", Float.valueOf(this.width)), v.a("height", Float.valueOf(this.height)))));
+        return NativeMapExtensionsKt.nativeMapOf(v.a("contentInset", NativeMapExtensionsKt.nativeMapOf(v.a(ViewProps.LEFT, 0), v.a(ViewProps.TOP, 0), v.a(ViewProps.BOTTOM, 0), v.a(ViewProps.RIGHT, 0))), v.a("contentOffset", NativeMapExtensionsKt.nativeMapOf(v.a("x", Float.valueOf(this.f10059x)), v.a("y", Float.valueOf(this.f10060y)))), v.a("contentSize", NativeMapExtensionsKt.nativeMapOf(v.a("width", Float.valueOf(this.contentWidth)), v.a("height", Float.valueOf(this.contentHeight)))), v.a("layoutMeasurement", NativeMapExtensionsKt.nativeMapOf(v.a("width", Float.valueOf(this.width)), v.a("height", Float.valueOf(this.height)))));
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

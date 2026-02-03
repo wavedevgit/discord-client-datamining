@@ -2,28 +2,28 @@ package net.time4j;
 
 import java.io.Serializable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class x0 extends jt.f implements u, Serializable {
+public final class x0 extends kt.f implements u, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final x0 f40934d = new x0();
+    public static final x0 f40797d = new x0();
     private static final long serialVersionUID = -4981215347844372171L;
 
     private x0() {
     }
 
     private Object readResolve() {
-        return f40934d;
+        return f40797d;
     }
 
-    @Override // jt.w
+    @Override // kt.w
     public boolean a() {
         return true;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // jt.f
-    public jt.m0 b(jt.x xVar) {
-        if (xVar.E(f0.f40588y)) {
+    @Override // kt.f
+    public kt.m0 b(kt.x xVar) {
+        if (xVar.E(f0.f40451y)) {
             return b1.R();
         }
         return null;
@@ -34,9 +34,9 @@ public final class x0 extends jt.f implements u, Serializable {
         return 'Y';
     }
 
-    @Override // jt.w
+    @Override // kt.w
     public double getLength() {
-        return f.f40567o.getLength();
+        return f.f40430o.getLength();
     }
 
     public String toString() {

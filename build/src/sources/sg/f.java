@@ -10,23 +10,23 @@ public final class f extends hf.a implements ef.k {
     public static final Parcelable.Creator<f> CREATOR = new k();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Status f49041d;
+    private final Status f49095d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final g f49042e;
+    private final g f49096e;
 
     public f(Status status, g gVar) {
-        this.f49041d = status;
-        this.f49042e = gVar;
+        this.f49095d = status;
+        this.f49096e = gVar;
     }
 
     @Override // ef.k
     public Status a() {
-        return this.f49041d;
+        return this.f49095d;
     }
 
     public g b() {
-        return this.f49042e;
+        return this.f49096e;
     }
 
     @Override // android.os.Parcelable

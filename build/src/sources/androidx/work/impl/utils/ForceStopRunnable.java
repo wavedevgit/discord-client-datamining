@@ -39,42 +39,42 @@ import w1.j;
 public class ForceStopRunnable implements Runnable {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f5721p = m.i("ForceStopRunnable");
+    private static final String f5765p = m.i("ForceStopRunnable");
 
     /* renamed from: q  reason: collision with root package name */
-    private static final long f5722q = TimeUnit.DAYS.toMillis(3650);
+    private static final long f5766q = TimeUnit.DAYS.toMillis(3650);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f5723d;
+    private final Context f5767d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final p0 f5724e;
+    private final p0 f5768e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final n f5725i;
+    private final n f5769i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f5726o = 0;
+    private int f5770o = 0;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class BroadcastReceiver extends android.content.BroadcastReceiver {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final String f5727a = m.i("ForceStopRunnable$Rcvr");
+        private static final String f5771a = m.i("ForceStopRunnable$Rcvr");
 
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
             if (intent != null && "ACTION_FORCE_STOP_RESCHEDULE".equals(intent.getAction())) {
-                m.e().j(f5727a, "Rescheduling alarm that keeps track of force-stops.");
+                m.e().j(f5771a, "Rescheduling alarm that keeps track of force-stops.");
                 ForceStopRunnable.g(context);
             }
         }
     }
 
     public ForceStopRunnable(Context context, p0 p0Var) {
-        this.f5723d = context.getApplicationContext();
-        this.f5724e = p0Var;
-        this.f5725i = p0Var.l();
+        this.f5767d = context.getApplicationContext();
+        this.f5768e = p0Var;
+        this.f5769i = p0Var.l();
     }
 
     static Intent c(Context context) {
@@ -97,7 +97,7 @@ public class ForceStopRunnable implements Runnable {
             i10 = 134217728;
         }
         PendingIntent d10 = d(context, i10);
-        long currentTimeMillis = System.currentTimeMillis() + f5722q;
+        long currentTimeMillis = System.currentTimeMillis() + f5766q;
         if (alarmManager != null) {
             alarmManager.setExact(0, currentTimeMillis, d10);
         }
@@ -105,8 +105,8 @@ public class ForceStopRunnable implements Runnable {
 
     public boolean a() {
         boolean z10;
-        boolean i10 = b.i(this.f5723d, this.f5724e.p());
-        WorkDatabase p10 = this.f5724e.p();
+        boolean i10 = b.i(this.f5767d, this.f5768e.p());
+        WorkDatabase p10 = this.f5768e.p();
         v H = p10.H();
         r G = p10.G();
         p10.e();
@@ -119,9 +119,9 @@ public class ForceStopRunnable implements Runnable {
             }
             if (z10) {
                 for (u uVar : t10) {
-                    H.d(x.ENQUEUED, uVar.f44926a);
-                    H.e(uVar.f44926a, -512);
-                    H.o(uVar.f44926a, -1L);
+                    H.d(x.ENQUEUED, uVar.f45000a);
+                    H.e(uVar.f45000a, -512);
+                    H.o(uVar.f45000a, -1L);
                 }
             }
             G.b();
@@ -140,16 +140,16 @@ public class ForceStopRunnable implements Runnable {
     public void b() {
         boolean a10 = a();
         if (h()) {
-            m.e().a(f5721p, "Rescheduling Workers.");
-            this.f5724e.s();
-            this.f5724e.l().e(false);
+            m.e().a(f5765p, "Rescheduling Workers.");
+            this.f5768e.s();
+            this.f5768e.l().e(false);
         } else if (e()) {
-            m.e().a(f5721p, "Application was force-stopped, rescheduling.");
-            this.f5724e.s();
-            this.f5725i.d(this.f5724e.i().a().a());
+            m.e().a(f5765p, "Application was force-stopped, rescheduling.");
+            this.f5768e.s();
+            this.f5769i.d(this.f5768e.i().a().a());
         } else if (a10) {
-            m.e().a(f5721p, "Found unfinished work, scheduling it.");
-            z.f(this.f5724e.i(), this.f5724e.p(), this.f5724e.n());
+            m.e().a(f5765p, "Found unfinished work, scheduling it.");
+            z.f(this.f5768e.i(), this.f5768e.p(), this.f5768e.n());
         }
     }
 
@@ -162,14 +162,14 @@ public class ForceStopRunnable implements Runnable {
             } else {
                 i10 = 536870912;
             }
-            PendingIntent d10 = d(this.f5723d, i10);
+            PendingIntent d10 = d(this.f5767d, i10);
             if (i11 >= 30) {
                 if (d10 != null) {
                     d10.cancel();
                 }
-                List<ApplicationExitInfo> historicalProcessExitReasons = ((ActivityManager) this.f5723d.getSystemService("activity")).getHistoricalProcessExitReasons(null, 0, 0);
+                List<ApplicationExitInfo> historicalProcessExitReasons = ((ActivityManager) this.f5767d.getSystemService("activity")).getHistoricalProcessExitReasons(null, 0, 0);
                 if (historicalProcessExitReasons != null && !historicalProcessExitReasons.isEmpty()) {
-                    long a10 = this.f5725i.a();
+                    long a10 = this.f5769i.a();
                     for (int i12 = 0; i12 < historicalProcessExitReasons.size(); i12++) {
                         ApplicationExitInfo a11 = e.a(historicalProcessExitReasons.get(i12));
                         if (a11.getReason() == 10 && a11.getTimestamp() >= a10) {
@@ -178,36 +178,36 @@ public class ForceStopRunnable implements Runnable {
                     }
                 }
             } else if (d10 == null) {
-                g(this.f5723d);
+                g(this.f5767d);
                 return true;
             }
             return false;
         } catch (IllegalArgumentException e10) {
             e = e10;
-            m.e().l(f5721p, "Ignoring exception", e);
+            m.e().l(f5765p, "Ignoring exception", e);
             return true;
         } catch (SecurityException e11) {
             e = e11;
-            m.e().l(f5721p, "Ignoring exception", e);
+            m.e().l(f5765p, "Ignoring exception", e);
             return true;
         }
     }
 
     public boolean f() {
-        a i10 = this.f5724e.i();
+        a i10 = this.f5768e.i();
         if (TextUtils.isEmpty(i10.c())) {
-            m.e().a(f5721p, "The default process name was not specified.");
+            m.e().a(f5765p, "The default process name was not specified.");
             return true;
         }
-        boolean b10 = o.b(this.f5723d, i10);
+        boolean b10 = o.b(this.f5767d, i10);
         m e10 = m.e();
-        String str = f5721p;
+        String str = f5765p;
         e10.a(str, "Is default app process = " + b10);
         return b10;
     }
 
     public boolean h() {
-        return this.f5724e.l().b();
+        return this.f5768e.l().b();
     }
 
     public void i(long j10) {
@@ -225,25 +225,25 @@ public class ForceStopRunnable implements Runnable {
             if (f()) {
                 while (true) {
                     try {
-                        f0.d(this.f5723d);
-                        m.e().a(f5721p, "Performing cleanup operations.");
+                        f0.d(this.f5767d);
+                        m.e().a(f5765p, "Performing cleanup operations.");
                         try {
                             b();
                             break;
                         } catch (SQLiteAccessPermException | SQLiteCantOpenDatabaseException | SQLiteConstraintException | SQLiteDatabaseCorruptException | SQLiteDatabaseLockedException | SQLiteDiskIOException | SQLiteTableLockedException e10) {
-                            i10 = this.f5726o + 1;
-                            this.f5726o = i10;
+                            i10 = this.f5770o + 1;
+                            this.f5770o = i10;
                             if (i10 >= 3) {
-                                if (j.a(this.f5723d)) {
+                                if (j.a(this.f5767d)) {
                                     str = "The file system on the device is in a bad state. WorkManager cannot access the app's internal data store.";
                                 } else {
                                     str = "WorkManager can't be accessed from direct boot, because credential encrypted storage isn't accessible.\nDon't access or initialise WorkManager from directAware components. See https://developer.android.com/training/articles/direct-boot";
                                 }
                                 m e11 = m.e();
-                                String str2 = f5721p;
+                                String str2 = f5765p;
                                 e11.d(str2, str, e10);
                                 IllegalStateException illegalStateException = new IllegalStateException(str, e10);
-                                Consumer e12 = this.f5724e.i().e();
+                                Consumer e12 = this.f5768e.i().e();
                                 if (e12 != null) {
                                     m.e().b(str2, "Routing exception to the specified exception handler", illegalStateException);
                                     e12.accept(illegalStateException);
@@ -252,19 +252,19 @@ public class ForceStopRunnable implements Runnable {
                                 }
                             } else {
                                 m e13 = m.e();
-                                String str3 = f5721p;
+                                String str3 = f5765p;
                                 e13.b(str3, "Retrying after " + (i10 * 300), e10);
-                                i(((long) this.f5726o) * 300);
+                                i(((long) this.f5770o) * 300);
                             }
                         }
                         m e132 = m.e();
-                        String str32 = f5721p;
+                        String str32 = f5765p;
                         e132.b(str32, "Retrying after " + (i10 * 300), e10);
-                        i(((long) this.f5726o) * 300);
+                        i(((long) this.f5770o) * 300);
                     } catch (SQLiteException e14) {
-                        m.e().c(f5721p, "Unexpected SQLite exception during migrations");
+                        m.e().c(f5765p, "Unexpected SQLite exception during migrations");
                         IllegalStateException illegalStateException2 = new IllegalStateException("Unexpected SQLite exception during migrations", e14);
-                        Consumer e15 = this.f5724e.i().e();
+                        Consumer e15 = this.f5768e.i().e();
                         if (e15 != null) {
                             e15.accept(illegalStateException2);
                         } else {
@@ -274,7 +274,7 @@ public class ForceStopRunnable implements Runnable {
                 }
             }
         } finally {
-            this.f5724e.r();
+            this.f5768e.r();
         }
     }
 }

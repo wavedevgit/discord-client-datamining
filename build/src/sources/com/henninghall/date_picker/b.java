@@ -16,40 +16,40 @@ import com.facebook.react.bridge.ReadableMapKeySetIterator;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private AlertDialog f17592a;
+    private AlertDialog f17221a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a implements Callback {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ i f17593d;
+        final /* synthetic */ i f17222d;
 
         a(i iVar) {
-            this.f17593d = iVar;
+            this.f17222d = iVar;
         }
 
         @Override // com.facebook.react.bridge.Callback
         public void invoke(Object... objArr) {
-            com.henninghall.date_picker.e.c(this.f17593d.getDate(), this.f17593d.getPickerId());
+            com.henninghall.date_picker.e.c(this.f17222d.getDate(), this.f17222d.getPickerId());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: com.henninghall.date_picker.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public class C0196b implements Callback {
+    public class C0201b implements Callback {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ i f17595d;
+        final /* synthetic */ i f17224d;
 
-        C0196b(i iVar) {
-            this.f17595d = iVar;
+        C0201b(i iVar) {
+            this.f17224d = iVar;
         }
 
         @Override // com.facebook.react.bridge.Callback
         public void invoke(Object... objArr) {
-            com.henninghall.date_picker.e.b(this.f17595d.getPickerId());
+            com.henninghall.date_picker.e.b(this.f17224d.getPickerId());
         }
     }
 
@@ -58,15 +58,15 @@ public class b {
     public class c implements DialogInterface.OnCancelListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Callback f17597d;
+        final /* synthetic */ Callback f17226d;
 
         c(Callback callback) {
-            this.f17597d = callback;
+            this.f17226d = callback;
         }
 
         @Override // android.content.DialogInterface.OnCancelListener
         public void onCancel(DialogInterface dialogInterface) {
-            this.f17597d.invoke(new Object[0]);
+            this.f17226d.invoke(new Object[0]);
         }
     }
 
@@ -75,15 +75,15 @@ public class b {
     public class d implements DialogInterface.OnClickListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Callback f17599d;
+        final /* synthetic */ Callback f17228d;
 
         d(Callback callback) {
-            this.f17599d = callback;
+            this.f17228d = callback;
         }
 
         @Override // android.content.DialogInterface.OnClickListener
         public void onClick(DialogInterface dialogInterface, int i10) {
-            this.f17599d.invoke(new Object[0]);
+            this.f17228d.invoke(new Object[0]);
             dialogInterface.dismiss();
         }
     }
@@ -93,19 +93,19 @@ public class b {
     public class e implements DialogInterface.OnClickListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Callback f17601d;
+        final /* synthetic */ Callback f17230d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ i f17602e;
+        final /* synthetic */ i f17231e;
 
         e(Callback callback, i iVar) {
-            this.f17601d = callback;
-            this.f17602e = iVar;
+            this.f17230d = callback;
+            this.f17231e = iVar;
         }
 
         @Override // android.content.DialogInterface.OnClickListener
         public void onClick(DialogInterface dialogInterface, int i10) {
-            this.f17601d.invoke(this.f17602e.getDate());
+            this.f17230d.invoke(this.f17231e.getDate());
             dialogInterface.dismiss();
         }
     }
@@ -115,23 +115,23 @@ public class b {
     public class f implements DialogInterface.OnShowListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ String f17604a;
+        final /* synthetic */ String f17233a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ AlertDialog f17605b;
+        final /* synthetic */ AlertDialog f17234b;
 
         f(String str, AlertDialog alertDialog) {
-            this.f17604a = str;
-            this.f17605b = alertDialog;
+            this.f17233a = str;
+            this.f17234b = alertDialog;
         }
 
         @Override // android.content.DialogInterface.OnShowListener
         public void onShow(DialogInterface dialogInterface) {
-            String str = this.f17604a;
+            String str = this.f17233a;
             if (str != null) {
                 int parseColor = Color.parseColor(str);
-                this.f17605b.getButton(-1).setTextColor(parseColor);
-                this.f17605b.getButton(-2).setTextColor(parseColor);
+                this.f17234b.getButton(-1).setTextColor(parseColor);
+                this.f17234b.getButton(-2).setTextColor(parseColor);
             }
         }
     }
@@ -169,11 +169,11 @@ public class b {
                 setTitle(string2);
                 return this;
             }
-            TextView textView = new TextView(com.henninghall.date_picker.c.f17608a.getCurrentActivity());
+            TextView textView = new TextView(com.henninghall.date_picker.c.f17237a.getCurrentActivity());
             textView.setText(string2);
             TypedValue typedValue = new TypedValue();
-            com.henninghall.date_picker.c.f17608a.getCurrentActivity().getTheme().resolveAttribute(16843987, typedValue, true);
-            int complexToDimensionPixelSize = TypedValue.complexToDimensionPixelSize(typedValue.data, com.henninghall.date_picker.c.f17608a.getResources().getDisplayMetrics());
+            com.henninghall.date_picker.c.f17237a.getCurrentActivity().getTheme().resolveAttribute(16843987, typedValue, true);
+            int complexToDimensionPixelSize = TypedValue.complexToDimensionPixelSize(typedValue.data, com.henninghall.date_picker.c.f17237a.getResources().getDisplayMetrics());
             textView.setPadding(complexToDimensionPixelSize, complexToDimensionPixelSize, complexToDimensionPixelSize, 0);
             textView.setTextSize(20.0f);
             textView.setTextColor(Color.parseColor(string));
@@ -184,14 +184,14 @@ public class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Context context) {
-        ft.a.b(context, false);
+        gt.a.b(context, false);
     }
 
     private AlertDialog c(ReadableMap readableMap, i iVar, Callback callback, Callback callback2) {
         String string = readableMap.getString("confirmText");
         String string2 = readableMap.getString("cancelText");
         String string3 = readableMap.getString("buttonColor");
-        AlertDialog create = new h(com.henninghall.date_picker.c.f17608a.getCurrentActivity(), e(readableMap)).a(readableMap).setCancelable(true).setView(h(iVar)).setPositiveButton(string, new e(callback, iVar)).setNegativeButton(string2, new d(callback2)).setOnCancelListener(new c(callback2)).create();
+        AlertDialog create = new h(com.henninghall.date_picker.c.f17237a.getCurrentActivity(), e(readableMap)).a(readableMap).setCancelable(true).setView(h(iVar)).setPositiveButton(string, new e(callback, iVar)).setNegativeButton(string2, new d(callback2)).setOnCancelListener(new c(callback2)).create();
         create.setOnShowListener(new f(string3, create));
         return create;
     }
@@ -230,11 +230,11 @@ public class b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void g(boolean z10) {
-        this.f17592a.getButton(-1).setEnabled(z10);
+        this.f17221a.getButton(-1).setEnabled(z10);
     }
 
     private View h(i iVar) {
-        LinearLayout linearLayout = new LinearLayout(com.henninghall.date_picker.c.f17608a);
+        LinearLayout linearLayout = new LinearLayout(com.henninghall.date_picker.c.f17237a);
         linearLayout.setLayoutParams(new LinearLayout.LayoutParams(-1, -2));
         linearLayout.addView(iVar);
         linearLayout.setPadding(0, o.j(20), 0, 0);
@@ -242,13 +242,13 @@ public class b {
     }
 
     public void b() {
-        this.f17592a.dismiss();
+        this.f17221a.dismiss();
     }
 
     public void f(ReadableMap readableMap) {
         i d10 = d(readableMap);
-        AlertDialog c10 = c(readableMap, d10, new a(d10), new C0196b(d10));
-        this.f17592a = c10;
+        AlertDialog c10 = c(readableMap, d10, new a(d10), new C0201b(d10));
+        this.f17221a = c10;
         c10.show();
     }
 }

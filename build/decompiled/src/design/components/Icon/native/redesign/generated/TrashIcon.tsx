@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/TrashIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun28073: for (var _fun28073_ip = 0;;) switch (_fun28073_ip) {
+        _fun28163: for (var _fun28163_ip = 0;;) switch (_fun28163_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun28073_ip = 53;
-                    continue _fun28073
+                    _fun28163_ip = 53;
+                    continue _fun28163
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TrashIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3111, 3231, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3141, 3261, 2]);

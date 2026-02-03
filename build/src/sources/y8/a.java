@@ -10,54 +10,54 @@ import java.util.concurrent.Executor;
 public abstract class a implements DataSource {
 
     /* renamed from: a  reason: collision with root package name */
-    private Map f54067a;
+    private Map f54042a;
 
     /* renamed from: d  reason: collision with root package name */
-    private Object f54070d = null;
+    private Object f54045d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private Throwable f54071e = null;
+    private Throwable f54046e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private float f54072f = 0.0f;
+    private float f54047f = 0.0f;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f54069c = false;
+    private boolean f54044c = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private d f54068b = d.IN_PROGRESS;
+    private d f54043b = d.IN_PROGRESS;
 
     /* renamed from: g  reason: collision with root package name */
-    private final ConcurrentLinkedQueue f54073g = new ConcurrentLinkedQueue();
+    private final ConcurrentLinkedQueue f54048g = new ConcurrentLinkedQueue();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: y8.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-    public class RunnableC0752a implements Runnable {
+    public class RunnableC0761a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ boolean f54074d;
+        final /* synthetic */ boolean f54049d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ e f54075e;
+        final /* synthetic */ e f54050e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ boolean f54076i;
+        final /* synthetic */ boolean f54051i;
 
-        RunnableC0752a(boolean z10, e eVar, boolean z11) {
-            this.f54074d = z10;
-            this.f54075e = eVar;
-            this.f54076i = z11;
+        RunnableC0761a(boolean z10, e eVar, boolean z11) {
+            this.f54049d = z10;
+            this.f54050e = eVar;
+            this.f54051i = z11;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            if (this.f54074d) {
-                this.f54075e.onFailure(a.this);
-            } else if (this.f54076i) {
-                this.f54075e.onCancellation(a.this);
+            if (this.f54049d) {
+                this.f54050e.onFailure(a.this);
+            } else if (this.f54051i) {
+                this.f54050e.onCancellation(a.this);
             } else {
-                this.f54075e.onNewResult(a.this);
+                this.f54050e.onNewResult(a.this);
             }
         }
     }
@@ -67,15 +67,15 @@ public abstract class a implements DataSource {
     public class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ e f54078d;
+        final /* synthetic */ e f54053d;
 
         b(e eVar) {
-            this.f54078d = eVar;
+            this.f54053d = eVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f54078d.onProgressUpdate(a.this);
+            this.f54053d.onProgressUpdate(a.this);
         }
     }
 
@@ -98,7 +98,7 @@ public abstract class a implements DataSource {
     private void k() {
         boolean h10 = h();
         boolean u10 = u();
-        Iterator it = this.f54073g.iterator();
+        Iterator it = this.f54048g.iterator();
         while (it.hasNext()) {
             Pair pair = (Pair) it.next();
             j((e) pair.first, (Executor) pair.second, h10, u10);
@@ -106,21 +106,21 @@ public abstract class a implements DataSource {
     }
 
     private synchronized boolean p(Throwable th2, Map map) {
-        if (!this.f54069c && this.f54068b == d.IN_PROGRESS) {
-            this.f54068b = d.FAILURE;
-            this.f54071e = th2;
-            this.f54067a = map;
+        if (!this.f54044c && this.f54043b == d.IN_PROGRESS) {
+            this.f54043b = d.FAILURE;
+            this.f54046e = th2;
+            this.f54042a = map;
             return true;
         }
         return false;
     }
 
     private synchronized boolean r(float f10) {
-        if (!this.f54069c && this.f54068b == d.IN_PROGRESS) {
-            if (f10 < this.f54072f) {
+        if (!this.f54044c && this.f54043b == d.IN_PROGRESS) {
+            if (f10 < this.f54047f) {
                 return false;
             }
-            this.f54072f = f10;
+            this.f54047f = f10;
             return true;
         }
         return false;
@@ -134,15 +134,15 @@ public abstract class a implements DataSource {
             synchronized (this) {
                 try {
                     try {
-                        if (!this.f54069c && this.f54068b == d.IN_PROGRESS) {
+                        if (!this.f54044c && this.f54043b == d.IN_PROGRESS) {
                             if (z10) {
-                                this.f54068b = d.SUCCESS;
-                                this.f54072f = 1.0f;
+                                this.f54043b = d.SUCCESS;
+                                this.f54047f = 1.0f;
                             }
-                            Object obj4 = this.f54070d;
+                            Object obj4 = this.f54045d;
                             if (obj4 != obj) {
                                 try {
-                                    this.f54070d = obj;
+                                    this.f54045d = obj;
                                     obj2 = obj4;
                                 } catch (Throwable th2) {
                                     th = th2;
@@ -187,7 +187,7 @@ public abstract class a implements DataSource {
     @Override // com.facebook.datasource.DataSource
     public synchronized boolean a() {
         boolean z10;
-        if (this.f54070d != null) {
+        if (this.f54045d != null) {
             z10 = true;
         } else {
             z10 = false;
@@ -197,7 +197,7 @@ public abstract class a implements DataSource {
 
     @Override // com.facebook.datasource.DataSource
     public synchronized Throwable b() {
-        return this.f54071e;
+        return this.f54046e;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:24:0x0037  */
@@ -213,7 +213,7 @@ public abstract class a implements DataSource {
             o8.j.g(r3)
             o8.j.g(r4)
             monitor-enter(r2)
-            boolean r0 = r2.f54069c     // Catch: java.lang.Throwable -> Ld
+            boolean r0 = r2.f54044c     // Catch: java.lang.Throwable -> Ld
             if (r0 == 0) goto Lf
             monitor-exit(r2)     // Catch: java.lang.Throwable -> Ld
             return
@@ -221,10 +221,10 @@ public abstract class a implements DataSource {
             r3 = move-exception
             goto L43
         Lf:
-            y8.a$d r0 = r2.f54068b     // Catch: java.lang.Throwable -> Ld
+            y8.a$d r0 = r2.f54043b     // Catch: java.lang.Throwable -> Ld
             y8.a$d r1 = y8.a.d.IN_PROGRESS     // Catch: java.lang.Throwable -> Ld
             if (r0 != r1) goto L1e
-            java.util.concurrent.ConcurrentLinkedQueue r0 = r2.f54073g     // Catch: java.lang.Throwable -> Ld
+            java.util.concurrent.ConcurrentLinkedQueue r0 = r2.f54048g     // Catch: java.lang.Throwable -> Ld
             android.util.Pair r1 = android.util.Pair.create(r3, r4)     // Catch: java.lang.Throwable -> Ld
             r0.add(r1)     // Catch: java.lang.Throwable -> Ld
         L1e:
@@ -259,12 +259,12 @@ public abstract class a implements DataSource {
     public boolean close() {
         synchronized (this) {
             try {
-                if (this.f54069c) {
+                if (this.f54044c) {
                     return false;
                 }
-                this.f54069c = true;
-                Object obj = this.f54070d;
-                this.f54070d = null;
+                this.f54044c = true;
+                Object obj = this.f54045d;
+                this.f54045d = null;
                 if (obj != null) {
                     f(obj);
                 }
@@ -272,7 +272,7 @@ public abstract class a implements DataSource {
                     k();
                 }
                 synchronized (this) {
-                    this.f54073g.clear();
+                    this.f54048g.clear();
                 }
                 return true;
             } catch (Throwable th2) {
@@ -283,7 +283,7 @@ public abstract class a implements DataSource {
 
     @Override // com.facebook.datasource.DataSource
     public synchronized float d() {
-        return this.f54072f;
+        return this.f54047f;
     }
 
     @Override // com.facebook.datasource.DataSource
@@ -293,17 +293,17 @@ public abstract class a implements DataSource {
 
     @Override // com.facebook.datasource.DataSource
     public Map getExtras() {
-        return this.f54067a;
+        return this.f54042a;
     }
 
     @Override // com.facebook.datasource.DataSource
     public synchronized Object getResult() {
-        return this.f54070d;
+        return this.f54045d;
     }
 
     public synchronized boolean h() {
         boolean z10;
-        if (this.f54068b == d.FAILURE) {
+        if (this.f54043b == d.FAILURE) {
             z10 = true;
         } else {
             z10 = false;
@@ -312,13 +312,13 @@ public abstract class a implements DataSource {
     }
 
     public synchronized boolean i() {
-        return this.f54069c;
+        return this.f54044c;
     }
 
     @Override // com.facebook.datasource.DataSource
     public synchronized boolean isFinished() {
         boolean z10;
-        if (this.f54068b != d.IN_PROGRESS) {
+        if (this.f54043b != d.IN_PROGRESS) {
             z10 = true;
         } else {
             z10 = false;
@@ -327,13 +327,13 @@ public abstract class a implements DataSource {
     }
 
     protected void j(e eVar, Executor executor, boolean z10, boolean z11) {
-        RunnableC0752a runnableC0752a = new RunnableC0752a(z10, eVar, z11);
+        RunnableC0761a runnableC0761a = new RunnableC0761a(z10, eVar, z11);
         g();
-        executor.execute(runnableC0752a);
+        executor.execute(runnableC0761a);
     }
 
     protected void l() {
-        Iterator it = this.f54073g.iterator();
+        Iterator it = this.f54048g.iterator();
         while (it.hasNext()) {
             Pair pair = (Pair) it.next();
             ((Executor) pair.second).execute(new b((e) pair.first));
@@ -342,7 +342,7 @@ public abstract class a implements DataSource {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void m(Map map) {
-        this.f54067a = map;
+        this.f54042a = map;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

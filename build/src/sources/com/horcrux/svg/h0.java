@@ -8,25 +8,25 @@ import com.horcrux.svg.a;
 public class h0 extends c0 {
 
     /* renamed from: q  reason: collision with root package name */
-    SVGLength f17923q;
+    SVGLength f17552q;
 
     /* renamed from: r  reason: collision with root package name */
-    SVGLength f17924r;
+    SVGLength f17553r;
 
     /* renamed from: s  reason: collision with root package name */
-    SVGLength f17925s;
+    SVGLength f17554s;
 
     /* renamed from: t  reason: collision with root package name */
-    SVGLength f17926t;
+    SVGLength f17555t;
 
     /* renamed from: u  reason: collision with root package name */
-    private a.b f17927u;
+    private a.b f17556u;
 
     /* renamed from: v  reason: collision with root package name */
-    private a.b f17928v;
+    private a.b f17557v;
 
     /* renamed from: w  reason: collision with root package name */
-    a f17929w;
+    a f17558w;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -40,25 +40,25 @@ public class h0 extends c0 {
     }
 
     public a n() {
-        return this.f17929w;
+        return this.f17558w;
     }
 
     public a.b o() {
-        return this.f17927u;
+        return this.f17556u;
     }
 
     public void p(Dynamic dynamic) {
-        this.f17926t = SVGLength.b(dynamic);
+        this.f17555t = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void q(int i10) {
         if (i10 != 0) {
             if (i10 == 1) {
-                this.f17928v = a.b.USER_SPACE_ON_USE;
+                this.f17557v = a.b.USER_SPACE_ON_USE;
             }
         } else {
-            this.f17928v = a.b.OBJECT_BOUNDING_BOX;
+            this.f17557v = a.b.OBJECT_BOUNDING_BOX;
         }
         invalidate();
     }
@@ -66,10 +66,10 @@ public class h0 extends c0 {
     public void r(int i10) {
         if (i10 != 0) {
             if (i10 == 1) {
-                this.f17929w = a.ALPHA;
+                this.f17558w = a.ALPHA;
             }
         } else {
-            this.f17929w = a.LUMINANCE;
+            this.f17558w = a.LUMINANCE;
         }
         invalidate();
     }
@@ -77,10 +77,10 @@ public class h0 extends c0 {
     public void s(int i10) {
         if (i10 != 0) {
             if (i10 == 1) {
-                this.f17927u = a.b.USER_SPACE_ON_USE;
+                this.f17556u = a.b.USER_SPACE_ON_USE;
             }
         } else {
-            this.f17927u = a.b.OBJECT_BOUNDING_BOX;
+            this.f17556u = a.b.OBJECT_BOUNDING_BOX;
         }
         invalidate();
     }
@@ -93,17 +93,17 @@ public class h0 extends c0 {
     }
 
     public void t(Dynamic dynamic) {
-        this.f17925s = SVGLength.b(dynamic);
+        this.f17554s = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void u(Dynamic dynamic) {
-        this.f17923q = SVGLength.b(dynamic);
+        this.f17552q = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void v(Dynamic dynamic) {
-        this.f17924r = SVGLength.b(dynamic);
+        this.f17553r = SVGLength.b(dynamic);
         invalidate();
     }
 }

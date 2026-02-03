@@ -5,14 +5,14 @@ import java.io.Serializable;
 final class q1 extends s1 implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final q1 f15098d = new q1();
+    static final q1 f14727d = new q1();
 
     private q1() {
     }
 
     @Override // com.google.android.gms.internal.fido.s1
     public final s1 a() {
-        return w1.f15151d;
+        return w1.f14780d;
     }
 
     @Override // com.google.android.gms.internal.fido.s1, java.util.Comparator

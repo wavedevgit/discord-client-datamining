@@ -53,17 +53,17 @@ public final class NextStep_GovernmentId_DigitalIdConfigJsonAdapter extends h {
         String str3 = null;
         List list = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 str3 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (t02 == 3) {
                 list = (List) this.nullableListOfDigitalIdRequestAdapter.fromJson(reader);
             }
         }
@@ -76,13 +76,13 @@ public final class NextStep_GovernmentId_DigitalIdConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (digitalIdConfig != null) {
             writer.l();
-            writer.A0("merchantId");
+            writer.t0("merchantId");
             this.nullableStringAdapter.toJson(writer, digitalIdConfig.getMerchantId());
-            writer.A0("nonce");
+            writer.t0("nonce");
             this.nullableStringAdapter.toJson(writer, digitalIdConfig.getNonce());
-            writer.A0("fieldKeyMobileDriversLicense");
+            writer.t0("fieldKeyMobileDriversLicense");
             this.nullableStringAdapter.toJson(writer, digitalIdConfig.getFieldKeyMobileDriversLicense());
-            writer.A0("mobileRequests");
+            writer.t0("mobileRequests");
             this.nullableListOfDigitalIdRequestAdapter.toJson(writer, digitalIdConfig.getMobileRequests());
             writer.E();
             return;

@@ -54,4 +54,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openShopGiftModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4527, 11247, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4557, 11322, 1307, 2]);

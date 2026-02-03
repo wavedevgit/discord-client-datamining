@@ -6,13 +6,13 @@ import android.media.MediaFormat;
 import android.media.MediaMetadataRetriever;
 import android.net.Uri;
 import android.os.Build;
-import ir.v;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Result;
 import kotlin.Unit;
@@ -234,17 +234,17 @@ public final class DiscordVideoMediaSource extends ol.a {
         MediaFormat mediaFormat3 = this.srcVideoFormat;
         if (mediaFormat3 != null) {
             try {
-                Result.a aVar = Result.f33295e;
+                Result.a aVar = Result.f33071e;
                 b10 = Result.b(Integer.valueOf(mediaFormat3.getInteger("width")));
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f33295e;
+                Result.a aVar2 = Result.f33071e;
                 b10 = Result.b(kotlin.c.a(th2));
             }
             this.width = ((Number) (Result.g(b10) ? Integer.valueOf((int) DEFAULT_WIDTH) : b10)).intValue();
             try {
                 b11 = Result.b(Integer.valueOf(mediaFormat3.getInteger("height")));
             } catch (Throwable th3) {
-                Result.a aVar3 = Result.f33295e;
+                Result.a aVar3 = Result.f33071e;
                 b11 = Result.b(kotlin.c.a(th3));
             }
             this.height = ((Number) (Result.g(b11) ? Integer.valueOf((int) DEFAULT_HEIGHT) : b11)).intValue();
@@ -267,14 +267,14 @@ public final class DiscordVideoMediaSource extends ol.a {
             try {
                 b12 = Result.b(Integer.valueOf(mediaFormat3.getInteger("frame-rate")));
             } catch (Throwable th4) {
-                Result.a aVar4 = Result.f33295e;
+                Result.a aVar4 = Result.f33071e;
                 b12 = Result.b(kotlin.c.a(th4));
             }
             if (Result.e(b12) != null) {
                 try {
                     b13 = Result.b(Integer.valueOf((int) mediaFormat3.getFloat("frame-rate")));
                 } catch (Throwable th5) {
-                    Result.a aVar5 = Result.f33295e;
+                    Result.a aVar5 = Result.f33071e;
                     b13 = Result.b(kotlin.c.a(th5));
                 }
                 b12 = b13;
@@ -284,14 +284,14 @@ public final class DiscordVideoMediaSource extends ol.a {
             try {
                 b14 = Result.b(Float.valueOf(mediaFormat3.getFloat("i-frame-interval")));
             } catch (Throwable th6) {
-                Result.a aVar6 = Result.f33295e;
+                Result.a aVar6 = Result.f33071e;
                 b14 = Result.b(kotlin.c.a(th6));
             }
             if (Result.e(b14) != null) {
                 try {
                     b15 = Result.b(Float.valueOf(mediaFormat3.getInteger("i-frame-interval")));
                 } catch (Throwable th7) {
-                    Result.a aVar7 = Result.f33295e;
+                    Result.a aVar7 = Result.f33071e;
                     b15 = Result.b(kotlin.c.a(th7));
                 }
                 b14 = b15;
@@ -305,7 +305,7 @@ public final class DiscordVideoMediaSource extends ol.a {
                 }
                 b16 = Result.b(Integer.valueOf(extractVideoRotationFromMetadata));
             } catch (Throwable th8) {
-                Result.a aVar8 = Result.f33295e;
+                Result.a aVar8 = Result.f33071e;
                 b16 = Result.b(kotlin.c.a(th8));
             }
             this.rotationDegrees = ((Number) (Result.g(b16) ? 0 : b16)).intValue();
@@ -338,22 +338,22 @@ public final class DiscordVideoMediaSource extends ol.a {
                 i10 = 0;
             }
             try {
-                Result.a aVar = Result.f33295e;
+                Result.a aVar = Result.f33071e;
                 mediaMetadataRetriever.release();
-                Result.b(Unit.f33298a);
+                Result.b(Unit.f33074a);
                 return i10;
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f33295e;
+                Result.a aVar2 = Result.f33071e;
                 Result.b(kotlin.c.a(th2));
                 return i10;
             }
         } catch (Throwable th3) {
             try {
-                Result.a aVar3 = Result.f33295e;
+                Result.a aVar3 = Result.f33071e;
                 mediaMetadataRetriever.release();
-                Result.b(Unit.f33298a);
+                Result.b(Unit.f33074a);
             } catch (Throwable th4) {
-                Result.a aVar4 = Result.f33295e;
+                Result.a aVar4 = Result.f33071e;
                 Result.b(kotlin.c.a(th4));
             }
             throw th3;

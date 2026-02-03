@@ -12,16 +12,16 @@ import com.google.android.apps.common.proguard.UsedByReflection;
 public class ProxyBillingActivity extends Activity {
 
     /* renamed from: d  reason: collision with root package name */
-    private ResultReceiver f8991d;
+    private ResultReceiver f8620d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ResultReceiver f8992e;
+    private ResultReceiver f8621e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f8993i;
+    private boolean f8622i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f8994o;
+    private boolean f8623o;
 
     private Intent a(String str) {
         Intent intent = new Intent("com.android.vending.billing.ALTERNATIVE_BILLING");
@@ -63,38 +63,38 @@ public class ProxyBillingActivity extends Activity {
                 if (getIntent().hasExtra("BUY_INTENT")) {
                     pendingIntent = (PendingIntent) getIntent().getParcelableExtra("BUY_INTENT");
                     if (getIntent().hasExtra("IS_FLOW_FROM_FIRST_PARTY_CLIENT") && getIntent().getBooleanExtra("IS_FLOW_FROM_FIRST_PARTY_CLIENT", false)) {
-                        this.f8994o = true;
+                        this.f8623o = true;
                         i11 = 110;
                     }
                 } else if (getIntent().hasExtra("SUBS_MANAGEMENT_INTENT")) {
                     pendingIntent = (PendingIntent) getIntent().getParcelableExtra("SUBS_MANAGEMENT_INTENT");
-                    this.f8991d = (ResultReceiver) getIntent().getParcelableExtra("result_receiver");
+                    this.f8620d = (ResultReceiver) getIntent().getParcelableExtra("result_receiver");
                 } else if (getIntent().hasExtra("IN_APP_MESSAGE_INTENT")) {
                     pendingIntent = (PendingIntent) getIntent().getParcelableExtra("IN_APP_MESSAGE_INTENT");
-                    this.f8992e = (ResultReceiver) getIntent().getParcelableExtra("in_app_message_result_receiver");
+                    this.f8621e = (ResultReceiver) getIntent().getParcelableExtra("in_app_message_result_receiver");
                     i11 = 101;
                 } else {
                     i10 = 100;
                     pendingIntent = null;
-                    this.f8993i = true;
+                    this.f8622i = true;
                     startIntentSenderForResult(pendingIntent.getIntentSender(), i10, new Intent(), 0, 0, 0);
                     return;
                 }
-                this.f8993i = true;
+                this.f8622i = true;
                 startIntentSenderForResult(pendingIntent.getIntentSender(), i10, new Intent(), 0, 0, 0);
                 return;
             } catch (IntentSender.SendIntentException e10) {
                 com.google.android.gms.internal.play_billing.a0.j("ProxyBillingActivity", "Got exception while trying to start a purchase flow.", e10);
-                ResultReceiver resultReceiver = this.f8991d;
+                ResultReceiver resultReceiver = this.f8620d;
                 if (resultReceiver != null) {
                     resultReceiver.send(6, null);
                 } else {
-                    ResultReceiver resultReceiver2 = this.f8992e;
+                    ResultReceiver resultReceiver2 = this.f8621e;
                     if (resultReceiver2 != null) {
                         resultReceiver2.send(0, null);
                     } else {
                         Intent b10 = b();
-                        if (this.f8994o) {
+                        if (this.f8623o) {
                             b10.putExtra("IS_FIRST_PARTY_PURCHASE", true);
                         }
                         b10.putExtra("RESPONSE_CODE", 6);
@@ -102,27 +102,27 @@ public class ProxyBillingActivity extends Activity {
                         sendBroadcast(b10);
                     }
                 }
-                this.f8993i = false;
+                this.f8622i = false;
                 finish();
                 return;
             }
             i10 = i11;
         } else {
             com.google.android.gms.internal.play_billing.a0.h("ProxyBillingActivity", "Launching Play Store billing flow from savedInstanceState");
-            this.f8993i = bundle.getBoolean("send_cancelled_broadcast_if_finished", false);
+            this.f8622i = bundle.getBoolean("send_cancelled_broadcast_if_finished", false);
             if (bundle.containsKey("result_receiver")) {
-                this.f8991d = (ResultReceiver) bundle.getParcelable("result_receiver");
+                this.f8620d = (ResultReceiver) bundle.getParcelable("result_receiver");
             } else if (bundle.containsKey("in_app_message_result_receiver")) {
-                this.f8992e = (ResultReceiver) bundle.getParcelable("in_app_message_result_receiver");
+                this.f8621e = (ResultReceiver) bundle.getParcelable("in_app_message_result_receiver");
             }
-            this.f8994o = bundle.getBoolean("IS_FLOW_FROM_FIRST_PARTY_CLIENT", false);
+            this.f8623o = bundle.getBoolean("IS_FLOW_FROM_FIRST_PARTY_CLIENT", false);
         }
     }
 
     @Override // android.app.Activity
     protected void onDestroy() {
         super.onDestroy();
-        if (isFinishing() && this.f8993i) {
+        if (isFinishing() && this.f8622i) {
             Intent b10 = b();
             b10.putExtra("RESPONSE_CODE", 1);
             b10.putExtra("DEBUG_MESSAGE", "Billing dialog closed.");
@@ -133,15 +133,15 @@ public class ProxyBillingActivity extends Activity {
     @Override // android.app.Activity
     protected void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        ResultReceiver resultReceiver = this.f8991d;
+        ResultReceiver resultReceiver = this.f8620d;
         if (resultReceiver != null) {
             bundle.putParcelable("result_receiver", resultReceiver);
         }
-        ResultReceiver resultReceiver2 = this.f8992e;
+        ResultReceiver resultReceiver2 = this.f8621e;
         if (resultReceiver2 != null) {
             bundle.putParcelable("in_app_message_result_receiver", resultReceiver2);
         }
-        bundle.putBoolean("send_cancelled_broadcast_if_finished", this.f8993i);
-        bundle.putBoolean("IS_FLOW_FROM_FIRST_PARTY_CLIENT", this.f8994o);
+        bundle.putBoolean("send_cancelled_broadcast_if_finished", this.f8622i);
+        bundle.putBoolean("IS_FLOW_FROM_FIRST_PARTY_CLIENT", this.f8623o);
     }
 }

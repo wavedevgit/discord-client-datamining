@@ -36,10 +36,10 @@ import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
-import ir.o;
-import ir.v;
 import java.util.Locale;
 import java.util.Map;
+import jr.o;
+import jr.v;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.o0;
@@ -169,12 +169,12 @@ public final class CheckpointCardComponentView extends ConstraintLayout implemen
         }
         textView.setText(i18nFormat$default);
         if (checkpointApplication != null) {
-            applicationId = ApplicationId.m1045boximpl(checkpointApplication.m256getApplicationIdVavddsQ());
+            applicationId = ApplicationId.m1047boximpl(checkpointApplication.m258getApplicationIdVavddsQ());
         } else {
             applicationId = null;
         }
         if (applicationId != null && checkpointApplication.getApplicationImageId() != null) {
-            str = IconUrlUtils.m911getApplicationIconweIltyw$default(IconUrlUtils.INSTANCE, ApplicationId.m1045boximpl(checkpointApplication.m256getApplicationIdVavddsQ()), checkpointApplication.getApplicationImageId(), 0, 4, null);
+            str = IconUrlUtils.m913getApplicationIconweIltyw$default(IconUrlUtils.INSTANCE, ApplicationId.m1047boximpl(checkpointApplication.m258getApplicationIdVavddsQ()), checkpointApplication.getApplicationImageId(), 0, 4, null);
         }
         if (str != null) {
             z10 = true;
@@ -346,12 +346,12 @@ public final class CheckpointCardComponentView extends ConstraintLayout implemen
         }
         textView.setText(i18nFormat$default);
         if (checkpointGuild != null) {
-            guildId = GuildId.m1071boximpl(checkpointGuild.m264getGuildIdfYKD8eg());
+            guildId = GuildId.m1073boximpl(checkpointGuild.m266getGuildIdfYKD8eg());
         } else {
             guildId = null;
         }
         if (guildId != null && checkpointGuild.getGuildIcon() != null) {
-            str = IconUrlUtils.m913getForGuild14CJxO4$default(IconUrlUtils.INSTANCE, GuildId.m1071boximpl(checkpointGuild.m264getGuildIdfYKD8eg()), checkpointGuild.getGuildIcon(), null, false, null, 28, null);
+            str = IconUrlUtils.m915getForGuild14CJxO4$default(IconUrlUtils.INSTANCE, GuildId.m1073boximpl(checkpointGuild.m266getGuildIdfYKD8eg()), checkpointGuild.getGuildIcon(), null, false, null, 28, null);
         } else {
             str = null;
         }
@@ -366,7 +366,7 @@ public final class CheckpointCardComponentView extends ConstraintLayout implemen
             simpleDraweeView.clearColorFilter();
         } else {
             if (checkpointGuild != null) {
-                guildId2 = GuildId.m1071boximpl(checkpointGuild.m264getGuildIdfYKD8eg());
+                guildId2 = GuildId.m1073boximpl(checkpointGuild.m266getGuildIdfYKD8eg());
             }
             if (guildId2 != null) {
                 simpleDraweeView.setImageResource(R.drawable.ic_guild_icon_16dp);
@@ -490,7 +490,7 @@ public final class CheckpointCardComponentView extends ConstraintLayout implemen
         this.transparent = Color.parseColor("#00000000");
         this.barUnfilledColor = Color.parseColor("#60000000");
         this.barIds = new Integer[10];
-        this.binding$delegate = ir.l.a(o.f31120i, new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.d
+        this.binding$delegate = jr.l.a(o.f32183i, new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.d
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 MessageComponentCheckpointCardViewBinding binding_delegate$lambda$6;

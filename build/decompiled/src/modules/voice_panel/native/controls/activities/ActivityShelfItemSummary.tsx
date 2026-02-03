@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/native/controls/activities/ActivityShelfItemSummary.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun111338: for (var _fun111338_ip = 0;;) switch (_fun111338_ip) {
+        _fun111284: for (var _fun111284_ip = 0;;) switch (_fun111284_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.channelId;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var0.submitting;
                 var3 = undefined;
                 if (!(var12 === var3)) {
-                    _fun111338_ip = 33;
-                    continue _fun111338
+                    _fun111284_ip = 33;
+                    continue _fun111284
                 }
             case 31:
                 var12 = false;
@@ -195,16 +195,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'lineClamp': 2
                 };
                 if (var12) {
-                    _fun111338_ip = 184;
-                    continue _fun111338
+                    _fun111284_ip = 180;
+                    continue _fun111284
                 }
-            case 176:
+            case 172:
                 var15 = var13.overlayActivityNameText;
-                _fun111338_ip = 190;
-                continue _fun111338;
-            case 184:
+                _fun111284_ip = 186;
+                continue _fun111284;
+            case 180:
                 var15 = var13.loadingTextColor;
-            case 190:
+            case 186:
                 var6.style = var15;
                 var6.children = var11;
                 var7 = var10.bind(var3)(var7, var6);
@@ -224,10 +224,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13[1] = var14;
                 var7.style = var13;
                 if (!var12) {
-                    _fun111338_ip = 320;
-                    continue _fun111338
+                    _fun111284_ip = 316;
+                    continue _fun111284
                 }
-            case 270:
+            case 266:
                 var15 = _closure1_slot5;
                 var14 = _closure1_slot0;
                 var16 = _closure1_slot2;
@@ -240,7 +240,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'size': 'md'
                 };
                 var12 = var15.bind(var3)(var14, var13);
-            case 320:
+            case 316:
                 var7.children = var12;
                 var7 = var11.bind(var3)(var10, var7);
                 var6[1] = var7;
@@ -262,4 +262,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 3201, 14279, 8623, 5418, 4056, 4841, 3681, 4063, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 3231, 14309, 8655, 5449, 4086, 4871, 3711, 4093, 2]);

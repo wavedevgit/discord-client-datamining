@@ -3,7 +3,7 @@ package me;
 public interface b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f38044a = new b() { // from class: me.a
+    public static final b f38024a = new b() { // from class: me.a
         @Override // me.b
         public final String a(com.google.android.exoplayer2.upstream.a aVar) {
             return b.b(aVar);
@@ -11,11 +11,11 @@ public interface b {
     };
 
     static /* synthetic */ String b(com.google.android.exoplayer2.upstream.a aVar) {
-        String str = aVar.f14354i;
+        String str = aVar.f13983i;
         if (str != null) {
             return str;
         }
-        return aVar.f14346a.toString();
+        return aVar.f13975a.toString();
     }
 
     String a(com.google.android.exoplayer2.upstream.a aVar);

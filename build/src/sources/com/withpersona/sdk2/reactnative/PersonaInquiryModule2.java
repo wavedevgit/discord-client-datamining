@@ -24,16 +24,16 @@ import com.withpersona.sdk2.inquiry.InquiryTemplateBuilder;
 import com.withpersona.sdk2.inquiry.ServerThemeSource;
 import com.withpersona.sdk2.inquiry.ThemeSource;
 import com.withpersona.sdk2.inquiry.network.dto.InquiryField;
-import gq.a;
-import gq.c;
-import gq.e;
-import gq.f;
-import gq.g;
+import hq.a;
+import hq.c;
+import hq.e;
+import hq.f;
+import hq.g;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-import mq.b;
+import nq.b;
 import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements ActivityEventListener {
@@ -299,9 +299,9 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 str11 = null;
             }
             if (str11 != null && str11.equals("server")) {
-                clientThemeSource2 = new ServerThemeSource(Integer.valueOf(b.f39588a));
+                clientThemeSource2 = new ServerThemeSource(Integer.valueOf(b.f42331a));
             } else {
-                clientThemeSource2 = new ClientThemeSource(Integer.valueOf(b.f39588a));
+                clientThemeSource2 = new ClientThemeSource(Integer.valueOf(b.f42331a));
             }
             InquiryBuilder theme = fromInquiry.theme(clientThemeSource2);
             if (readableMap.hasKey(ACCESS_TOKEN)) {
@@ -336,9 +336,9 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 str4 = null;
             }
             if (str4 != null && str4.equals("server")) {
-                clientThemeSource = new ServerThemeSource(Integer.valueOf(b.f39588a));
+                clientThemeSource = new ServerThemeSource(Integer.valueOf(b.f42331a));
             } else {
-                clientThemeSource = new ClientThemeSource(Integer.valueOf(b.f39588a));
+                clientThemeSource = new ClientThemeSource(Integer.valueOf(b.f42331a));
             }
             InquiryTemplateBuilder theme2 = fromTemplateVersion.theme(clientThemeSource);
             if (readableMap.hasKey(REFERENCE_ID)) {

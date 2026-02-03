@@ -14,13 +14,13 @@ import ne.w0;
 public final class a0 implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MediaCodec f24919a;
+    private final MediaCodec f24130a;
 
     /* renamed from: b  reason: collision with root package name */
-    private ByteBuffer[] f24920b;
+    private ByteBuffer[] f24131b;
 
     /* renamed from: c  reason: collision with root package name */
-    private ByteBuffer[] f24921c;
+    private ByteBuffer[] f24132c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class b implements l.b {
@@ -37,7 +37,7 @@ public final class a0 implements l {
             }
             try {
                 t0.a("configureCodec");
-                b10.configure(aVar.f24976b, aVar.f24978d, aVar.f24979e, aVar.f24980f);
+                b10.configure(aVar.f24187b, aVar.f24189d, aVar.f24190e, aVar.f24191f);
                 t0.c();
                 t0.a("startCodec");
                 b10.start();
@@ -54,8 +54,8 @@ public final class a0 implements l {
         }
 
         protected MediaCodec b(l.a aVar) {
-            ne.a.e(aVar.f24975a);
-            String str = aVar.f24975a.f24983a;
+            ne.a.e(aVar.f24186a);
+            String str = aVar.f24186a.f24194a;
             t0.a("createCodec:" + str);
             MediaCodec createByCodecName = MediaCodec.createByCodecName(str);
             t0.c();
@@ -70,12 +70,12 @@ public final class a0 implements l {
 
     @Override // fd.l
     public void a(int i10, int i11, qc.c cVar, long j10, int i12) {
-        this.f24919a.queueSecureInputBuffer(i10, i11, cVar.a(), j10, i12);
+        this.f24130a.queueSecureInputBuffer(i10, i11, cVar.a(), j10, i12);
     }
 
     @Override // fd.l
     public void b(final l.c cVar, Handler handler) {
-        this.f24919a.setOnFrameRenderedListener(new MediaCodec.OnFrameRenderedListener() { // from class: fd.z
+        this.f24130a.setOnFrameRenderedListener(new MediaCodec.OnFrameRenderedListener() { // from class: fd.z
             @Override // android.media.MediaCodec.OnFrameRenderedListener
             public final void onFrameRendered(MediaCodec mediaCodec, long j10, long j11) {
                 a0.i(a0.this, cVar, mediaCodec, j10, j11);
@@ -85,12 +85,12 @@ public final class a0 implements l {
 
     @Override // fd.l
     public void c(int i10) {
-        this.f24919a.setVideoScalingMode(i10);
+        this.f24130a.setVideoScalingMode(i10);
     }
 
     @Override // fd.l
     public void d(Surface surface) {
-        this.f24919a.setOutputSurface(surface);
+        this.f24130a.setOutputSurface(surface);
     }
 
     @Override // fd.l
@@ -100,47 +100,47 @@ public final class a0 implements l {
 
     @Override // fd.l
     public void f(int i10, long j10) {
-        this.f24919a.releaseOutputBuffer(i10, j10);
+        this.f24130a.releaseOutputBuffer(i10, j10);
     }
 
     @Override // fd.l
     public void flush() {
-        this.f24919a.flush();
+        this.f24130a.flush();
     }
 
     @Override // fd.l
     public int g() {
-        return this.f24919a.dequeueInputBuffer(0L);
+        return this.f24130a.dequeueInputBuffer(0L);
     }
 
     @Override // fd.l
     public ByteBuffer getInputBuffer(int i10) {
-        if (w0.f40295a >= 21) {
-            return this.f24919a.getInputBuffer(i10);
+        if (w0.f40158a >= 21) {
+            return this.f24130a.getInputBuffer(i10);
         }
-        return ((ByteBuffer[]) w0.j(this.f24920b))[i10];
+        return ((ByteBuffer[]) w0.j(this.f24131b))[i10];
     }
 
     @Override // fd.l
     public ByteBuffer getOutputBuffer(int i10) {
-        if (w0.f40295a >= 21) {
-            return this.f24919a.getOutputBuffer(i10);
+        if (w0.f40158a >= 21) {
+            return this.f24130a.getOutputBuffer(i10);
         }
-        return ((ByteBuffer[]) w0.j(this.f24921c))[i10];
+        return ((ByteBuffer[]) w0.j(this.f24132c))[i10];
     }
 
     @Override // fd.l
     public MediaFormat getOutputFormat() {
-        return this.f24919a.getOutputFormat();
+        return this.f24130a.getOutputFormat();
     }
 
     @Override // fd.l
     public int h(MediaCodec.BufferInfo bufferInfo) {
         int dequeueOutputBuffer;
         do {
-            dequeueOutputBuffer = this.f24919a.dequeueOutputBuffer(bufferInfo, 0L);
-            if (dequeueOutputBuffer == -3 && w0.f40295a < 21) {
-                this.f24921c = this.f24919a.getOutputBuffers();
+            dequeueOutputBuffer = this.f24130a.dequeueOutputBuffer(bufferInfo, 0L);
+            if (dequeueOutputBuffer == -3 && w0.f40158a < 21) {
+                this.f24132c = this.f24130a.getOutputBuffers();
                 continue;
             }
         } while (dequeueOutputBuffer == -3);
@@ -149,31 +149,31 @@ public final class a0 implements l {
 
     @Override // fd.l
     public void queueInputBuffer(int i10, int i11, int i12, long j10, int i13) {
-        this.f24919a.queueInputBuffer(i10, i11, i12, j10, i13);
+        this.f24130a.queueInputBuffer(i10, i11, i12, j10, i13);
     }
 
     @Override // fd.l
     public void release() {
-        this.f24920b = null;
-        this.f24921c = null;
-        this.f24919a.release();
+        this.f24131b = null;
+        this.f24132c = null;
+        this.f24130a.release();
     }
 
     @Override // fd.l
     public void releaseOutputBuffer(int i10, boolean z10) {
-        this.f24919a.releaseOutputBuffer(i10, z10);
+        this.f24130a.releaseOutputBuffer(i10, z10);
     }
 
     @Override // fd.l
     public void setParameters(Bundle bundle) {
-        this.f24919a.setParameters(bundle);
+        this.f24130a.setParameters(bundle);
     }
 
     private a0(MediaCodec mediaCodec) {
-        this.f24919a = mediaCodec;
-        if (w0.f40295a < 21) {
-            this.f24920b = mediaCodec.getInputBuffers();
-            this.f24921c = mediaCodec.getOutputBuffers();
+        this.f24130a = mediaCodec;
+        if (w0.f40158a < 21) {
+            this.f24131b = mediaCodec.getInputBuffers();
+            this.f24132c = mediaCodec.getOutputBuffers();
         }
     }
 }

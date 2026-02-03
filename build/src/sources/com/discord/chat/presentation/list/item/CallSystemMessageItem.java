@@ -15,7 +15,7 @@ public final class CallSystemMessageItem extends ChatListItem {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public CallSystemMessageItem(@NotNull Message message) {
-        super(message.m237getId3Eiw7ao(), null);
+        super(message.m239getId3Eiw7ao(), null);
         Intrinsics.checkNotNullParameter(message, "message");
         this.message = message;
         if (MessageKt.isCallMessage(message)) {

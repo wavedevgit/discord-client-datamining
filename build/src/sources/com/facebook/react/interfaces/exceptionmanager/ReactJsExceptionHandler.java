@@ -60,7 +60,7 @@ public interface ReactJsExceptionHandler {
         private final ReadableNativeMap extraData;
 
         /* renamed from: id  reason: collision with root package name */
-        private final int f12157id;
+        private final int f11786id;
         private final boolean isFatal;
         @NotNull
         private final String message;
@@ -78,7 +78,7 @@ public interface ReactJsExceptionHandler {
             this.name = str2;
             this.componentStack = str3;
             this.stack = stack;
-            this.f12157id = i10;
+            this.f11786id = i10;
             this.isFatal = z10;
             this.extraData = extraData;
         }
@@ -101,7 +101,7 @@ public interface ReactJsExceptionHandler {
                 arrayList2 = processedErrorImpl.stack;
             }
             if ((i11 & 32) != 0) {
-                i10 = processedErrorImpl.f12157id;
+                i10 = processedErrorImpl.f11786id;
             }
             if ((i11 & 64) != 0) {
                 z10 = processedErrorImpl.isFatal;
@@ -139,7 +139,7 @@ public interface ReactJsExceptionHandler {
         }
 
         public final int component6() {
-            return this.f12157id;
+            return this.f11786id;
         }
 
         public final boolean component7() {
@@ -165,7 +165,7 @@ public interface ReactJsExceptionHandler {
             }
             if (obj instanceof ProcessedErrorImpl) {
                 ProcessedErrorImpl processedErrorImpl = (ProcessedErrorImpl) obj;
-                return Intrinsics.areEqual(this.message, processedErrorImpl.message) && Intrinsics.areEqual(this.originalMessage, processedErrorImpl.originalMessage) && Intrinsics.areEqual(this.name, processedErrorImpl.name) && Intrinsics.areEqual(this.componentStack, processedErrorImpl.componentStack) && Intrinsics.areEqual(this.stack, processedErrorImpl.stack) && this.f12157id == processedErrorImpl.f12157id && this.isFatal == processedErrorImpl.isFatal && Intrinsics.areEqual(this.extraData, processedErrorImpl.extraData);
+                return Intrinsics.areEqual(this.message, processedErrorImpl.message) && Intrinsics.areEqual(this.originalMessage, processedErrorImpl.originalMessage) && Intrinsics.areEqual(this.name, processedErrorImpl.name) && Intrinsics.areEqual(this.componentStack, processedErrorImpl.componentStack) && Intrinsics.areEqual(this.stack, processedErrorImpl.stack) && this.f11786id == processedErrorImpl.f11786id && this.isFatal == processedErrorImpl.isFatal && Intrinsics.areEqual(this.extraData, processedErrorImpl.extraData);
             }
             return false;
         }
@@ -177,7 +177,7 @@ public interface ReactJsExceptionHandler {
 
         @Override // com.facebook.react.interfaces.exceptionmanager.ReactJsExceptionHandler.ProcessedError
         public int getId() {
-            return this.f12157id;
+            return this.f11786id;
         }
 
         @Override // com.facebook.react.interfaces.exceptionmanager.ReactJsExceptionHandler.ProcessedError
@@ -203,7 +203,7 @@ public interface ReactJsExceptionHandler {
             String str2 = this.name;
             int hashCode3 = (hashCode2 + (str2 == null ? 0 : str2.hashCode())) * 31;
             String str3 = this.componentStack;
-            return ((((((((hashCode3 + (str3 != null ? str3.hashCode() : 0)) * 31) + this.stack.hashCode()) * 31) + Integer.hashCode(this.f12157id)) * 31) + Boolean.hashCode(this.isFatal)) * 31) + this.extraData.hashCode();
+            return ((((((((hashCode3 + (str3 != null ? str3.hashCode() : 0)) * 31) + this.stack.hashCode()) * 31) + Integer.hashCode(this.f11786id)) * 31) + Boolean.hashCode(this.isFatal)) * 31) + this.extraData.hashCode();
         }
 
         @Override // com.facebook.react.interfaces.exceptionmanager.ReactJsExceptionHandler.ProcessedError
@@ -218,7 +218,7 @@ public interface ReactJsExceptionHandler {
             String str3 = this.name;
             String str4 = this.componentStack;
             ArrayList<ProcessedErrorStackFrameImpl> arrayList = this.stack;
-            int i10 = this.f12157id;
+            int i10 = this.f11786id;
             boolean z10 = this.isFatal;
             ReadableNativeMap readableNativeMap = this.extraData;
             return "ProcessedErrorImpl(message=" + str + ", originalMessage=" + str2 + ", name=" + str3 + ", componentStack=" + str4 + ", stack=" + arrayList + ", id=" + i10 + ", isFatal=" + z10 + ", extraData=" + readableNativeMap + ")";

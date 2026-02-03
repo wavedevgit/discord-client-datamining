@@ -1,49 +1,39 @@
 package gp;
 
-import android.content.Context;
-import ep.d2;
-import java.util.List;
-import mn.v;
-import tq.h;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewbinding.ViewBinding;
+import fp.x0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d {
+public final class d implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f27090a;
+    private final ConstraintLayout f27356a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final h f27091b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final h f27092c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final h f27093d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final h f27094e;
-
-    /* renamed from: f  reason: collision with root package name */
-    private final h f27095f;
-
-    public d(h hVar, h hVar2, h hVar3, h hVar4, h hVar5, h hVar6) {
-        this.f27090a = hVar;
-        this.f27091b = hVar2;
-        this.f27092c = hVar3;
-        this.f27093d = hVar4;
-        this.f27094e = hVar5;
-        this.f27095f = hVar6;
+    private d(ConstraintLayout constraintLayout) {
+        this.f27356a = constraintLayout;
     }
 
-    public static d a(h hVar, h hVar2, h hVar3, h hVar4, h hVar5, h hVar6) {
-        return new d(hVar, hVar2, hVar3, hVar4, hVar5, hVar6);
+    public static d a(View view) {
+        if (view != null) {
+            return new d((ConstraintLayout) view);
+        }
+        throw new NullPointerException("rootView");
     }
 
-    public static c c(Context context, String str, String str2, d2 d2Var, List list, a aVar, String str3, String str4, String str5, kp.a aVar2, zn.a aVar3, pp.a aVar4, String str6, v vVar, rn.a aVar5, long j10) {
-        return new c(context, str, str2, d2Var, list, aVar, str3, str4, str5, aVar2, aVar3, aVar4, str6, vVar, aVar5, j10);
+    public static d c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(x0.f25088d, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return a(inflate);
     }
 
-    public c b(String str, String str2, d2 d2Var, List list, String str3, String str4, String str5, String str6, v vVar, long j10) {
-        return c((Context) this.f27090a.get(), str, str2, d2Var, list, (a) this.f27091b.get(), str3, str4, str5, (kp.a) this.f27092c.get(), (zn.a) this.f27093d.get(), (pp.a) this.f27094e.get(), str6, vVar, (rn.a) this.f27095f.get(), j10);
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public ConstraintLayout getRoot() {
+        return this.f27356a;
     }
 }

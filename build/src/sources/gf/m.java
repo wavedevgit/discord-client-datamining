@@ -5,19 +5,19 @@ import java.util.concurrent.ConcurrentHashMap;
 public class m {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final i f26845b = new i("LibraryVersion", "");
+    private static final i f26940b = new i("LibraryVersion", "");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final m f26846c = new m();
+    private static final m f26941c = new m();
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConcurrentHashMap f26847a = new ConcurrentHashMap();
+    private final ConcurrentHashMap f26942a = new ConcurrentHashMap();
 
     protected m() {
     }
 
     public static m a() {
-        return f26846c;
+        return f26941c;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -42,10 +42,10 @@ public class m {
             java.lang.String r1 = "LibraryVersion"
             java.lang.String r2 = "Please provide a valid libraryName"
             gf.q.g(r9, r2)
-            java.util.concurrent.ConcurrentHashMap r2 = r8.f26847a
+            java.util.concurrent.ConcurrentHashMap r2 = r8.f26942a
             boolean r2 = r2.containsKey(r9)
             if (r2 == 0) goto L1a
-            java.util.concurrent.ConcurrentHashMap r0 = r8.f26847a
+            java.util.concurrent.ConcurrentHashMap r0 = r8.f26942a
             java.lang.Object r9 = r0.get(r9)
             java.lang.String r9 = (java.lang.String) r9
             return r9
@@ -62,7 +62,7 @@ public class m {
             r2.load(r4)     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
             java.lang.String r5 = "version"
             java.lang.String r3 = r2.getProperty(r5, r3)     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
-            gf.i r2 = gf.m.f26845b     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
+            gf.i r2 = gf.m.f26940b     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
             java.lang.StringBuilder r5 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
             r5.<init>()     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
             r5.append(r9)     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
@@ -82,7 +82,7 @@ public class m {
             r3 = r7
             goto L77
         L5c:
-            gf.i r2 = gf.m.f26845b     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
+            gf.i r2 = gf.m.f26940b     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
             java.lang.StringBuilder r5 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
             r5.<init>()     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
             r5.append(r0)     // Catch: java.lang.Throwable -> L55 java.io.IOException -> L57
@@ -100,7 +100,7 @@ public class m {
             r2 = move-exception
             r4 = r3
         L77:
-            gf.i r5 = gf.m.f26845b     // Catch: java.lang.Throwable -> L73
+            gf.i r5 = gf.m.f26940b     // Catch: java.lang.Throwable -> L73
             java.lang.StringBuilder r6 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L73
             r6.<init>()     // Catch: java.lang.Throwable -> L73
             r6.append(r0)     // Catch: java.lang.Throwable -> L73
@@ -115,12 +115,12 @@ public class m {
             com.google.android.gms.common.util.j.a(r4)
         L93:
             if (r3 != 0) goto L9e
-            gf.i r0 = gf.m.f26845b
+            gf.i r0 = gf.m.f26940b
             java.lang.String r2 = ".properties file is dropped during release process. Failure to read app version is expected during Google internal testing where locally-built libraries are used"
             r0.b(r1, r2)
             java.lang.String r3 = "UNKNOWN"
         L9e:
-            java.util.concurrent.ConcurrentHashMap r0 = r8.f26847a
+            java.util.concurrent.ConcurrentHashMap r0 = r8.f26942a
             r0.put(r9, r3)
             return r3
         La4:

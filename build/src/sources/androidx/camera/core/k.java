@@ -10,26 +10,26 @@ import java.util.concurrent.Executor;
 public final class k extends i {
 
     /* renamed from: t  reason: collision with root package name */
-    final Executor f2004t;
+    final Executor f2048t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Object f2005u = new Object();
+    private final Object f2049u = new Object();
 
     /* renamed from: v  reason: collision with root package name */
-    n f2006v;
+    n f2050v;
 
     /* renamed from: w  reason: collision with root package name */
-    private b f2007w;
+    private b f2051w;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ b f2008a;
+        final /* synthetic */ b f2052a;
 
         a(b bVar) {
-            this.f2008a = bVar;
+            this.f2052a = bVar;
         }
 
         @Override // d0.c
@@ -39,7 +39,7 @@ public final class k extends i {
 
         @Override // d0.c
         public void onFailure(Throwable th2) {
-            this.f2008a.close();
+            this.f2052a.close();
         }
     }
 
@@ -48,11 +48,11 @@ public final class k extends i {
     public static class b extends e {
 
         /* renamed from: o  reason: collision with root package name */
-        final WeakReference f2010o;
+        final WeakReference f2054o;
 
         b(n nVar, k kVar) {
             super(nVar);
-            this.f2010o = new WeakReference(kVar);
+            this.f2054o = new WeakReference(kVar);
             a(new e.a() { // from class: androidx.camera.core.l
                 @Override // androidx.camera.core.e.a
                 public final void a(n nVar2) {
@@ -62,9 +62,9 @@ public final class k extends i {
         }
 
         public static /* synthetic */ void l(b bVar, n nVar) {
-            final k kVar = (k) bVar.f2010o.get();
+            final k kVar = (k) bVar.f2054o.get();
             if (kVar != null) {
-                kVar.f2004t.execute(new Runnable() { // from class: androidx.camera.core.m
+                kVar.f2048t.execute(new Runnable() { // from class: androidx.camera.core.m
                     @Override // java.lang.Runnable
                     public final void run() {
                         k.this.x();
@@ -76,7 +76,7 @@ public final class k extends i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k(Executor executor) {
-        this.f2004t = executor;
+        this.f2048t = executor;
     }
 
     @Override // androidx.camera.core.i
@@ -87,12 +87,12 @@ public final class k extends i {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // androidx.camera.core.i
     public void g() {
-        synchronized (this.f2005u) {
+        synchronized (this.f2049u) {
             try {
-                n nVar = this.f2006v;
+                n nVar = this.f2050v;
                 if (nVar != null) {
                     nVar.close();
-                    this.f2006v = null;
+                    this.f2050v = null;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -102,23 +102,23 @@ public final class k extends i {
 
     @Override // androidx.camera.core.i
     void m(n nVar) {
-        synchronized (this.f2005u) {
+        synchronized (this.f2049u) {
             try {
-                if (!this.f1992s) {
+                if (!this.f2036s) {
                     nVar.close();
-                } else if (this.f2007w != null) {
-                    if (nVar.z().a() <= this.f2007w.z().a()) {
+                } else if (this.f2051w != null) {
+                    if (nVar.z().a() <= this.f2051w.z().a()) {
                         nVar.close();
                     } else {
-                        n nVar2 = this.f2006v;
+                        n nVar2 = this.f2050v;
                         if (nVar2 != null) {
                             nVar2.close();
                         }
-                        this.f2006v = nVar;
+                        this.f2050v = nVar;
                     }
                 } else {
                     b bVar = new b(nVar, this);
-                    this.f2007w = bVar;
+                    this.f2051w = bVar;
                     d0.n.j(e(bVar), new a(bVar), c0.a.a());
                 }
             } catch (Throwable th2) {
@@ -129,12 +129,12 @@ public final class k extends i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void x() {
-        synchronized (this.f2005u) {
+        synchronized (this.f2049u) {
             try {
-                this.f2007w = null;
-                n nVar = this.f2006v;
+                this.f2051w = null;
+                n nVar = this.f2050v;
                 if (nVar != null) {
-                    this.f2006v = null;
+                    this.f2050v = null;
                     m(nVar);
                 }
             } catch (Throwable th2) {

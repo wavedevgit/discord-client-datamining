@@ -3,49 +3,49 @@ package cg;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f8347a;
+    public static final com.google.android.gms.common.d f8203a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f8348b;
+    public static final com.google.android.gms.common.d f8204b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f8349c;
+    public static final com.google.android.gms.common.d f8205c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f8350d;
+    public static final com.google.android.gms.common.d f8206d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f8351e;
+    public static final com.google.android.gms.common.d f8207e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f8352f;
+    public static final com.google.android.gms.common.d f8208f;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f8353g;
+    public static final com.google.android.gms.common.d f8209g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f8354h;
+    public static final com.google.android.gms.common.d f8210h;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final com.google.android.gms.common.d[] f8355i;
+    public static final com.google.android.gms.common.d[] f8211i;
 
     static {
         com.google.android.gms.common.d dVar = new com.google.android.gms.common.d("auth_api_credentials_begin_sign_in", 9L);
-        f8347a = dVar;
+        f8203a = dVar;
         com.google.android.gms.common.d dVar2 = new com.google.android.gms.common.d("auth_api_credentials_sign_out", 2L);
-        f8348b = dVar2;
+        f8204b = dVar2;
         com.google.android.gms.common.d dVar3 = new com.google.android.gms.common.d("auth_api_credentials_authorize", 1L);
-        f8349c = dVar3;
+        f8205c = dVar3;
         com.google.android.gms.common.d dVar4 = new com.google.android.gms.common.d("auth_api_credentials_revoke_access", 1L);
-        f8350d = dVar4;
+        f8206d = dVar4;
         com.google.android.gms.common.d dVar5 = new com.google.android.gms.common.d("auth_api_credentials_save_password", 4L);
-        f8351e = dVar5;
+        f8207e = dVar5;
         com.google.android.gms.common.d dVar6 = new com.google.android.gms.common.d("auth_api_credentials_get_sign_in_intent", 6L);
-        f8352f = dVar6;
+        f8208f = dVar6;
         com.google.android.gms.common.d dVar7 = new com.google.android.gms.common.d("auth_api_credentials_save_account_linking_token", 3L);
-        f8353g = dVar7;
+        f8209g = dVar7;
         com.google.android.gms.common.d dVar8 = new com.google.android.gms.common.d("auth_api_credentials_get_phone_number_hint_intent", 3L);
-        f8354h = dVar8;
-        f8355i = new com.google.android.gms.common.d[]{dVar, dVar2, dVar3, dVar4, dVar5, dVar6, dVar7, dVar8};
+        f8210h = dVar8;
+        f8211i = new com.google.android.gms.common.d[]{dVar, dVar2, dVar3, dVar4, dVar5, dVar6, dVar7, dVar8};
     }
 }

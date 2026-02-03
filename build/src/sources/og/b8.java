@@ -5,23 +5,23 @@ import ui.c;
 final class b8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final b8 f42773a = new b8();
+    static final b8 f42901a = new b8();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f42774b;
+    private static final ui.c f42902b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f42775c;
+    private static final ui.c f42903c;
 
     static {
         c.b a10 = ui.c.a("sourceLanguage");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f42774b = a10.b(s1Var.b()).a();
+        f42902b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("targetLanguage");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f42775c = a11.b(s1Var2.b()).a();
+        f42903c = a11.b(s1Var2.b()).a();
     }
 
     private b8() {

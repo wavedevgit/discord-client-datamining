@@ -1,21 +1,52 @@
 package kn;
 
-import android.content.Context;
-import android.content.pm.PackageManager;
+import android.animation.FloatEvaluator;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public final class a extends FloatEvaluator {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f33286a = new a();
+    private final Function1 f33034a;
 
-    private a() {
+    /* renamed from: b  reason: collision with root package name */
+    private final Function1 f33035b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private Number f33036c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private Number f33037d;
+
+    public a(Function1 startValueProvider, Function1 endValueProvider) {
+        Intrinsics.checkNotNullParameter(startValueProvider, "startValueProvider");
+        Intrinsics.checkNotNullParameter(endValueProvider, "endValueProvider");
+        this.f33034a = startValueProvider;
+        this.f33035b = endValueProvider;
     }
 
-    public final boolean a(Context context) {
-        PackageManager packageManager;
-        if (context == null || (packageManager = context.getPackageManager()) == null || !packageManager.hasSystemFeature("android.software.leanback")) {
-            return false;
+    private final Number a(Number number) {
+        if (this.f33037d == null) {
+            this.f33037d = (Number) this.f33035b.invoke(number);
         }
-        return true;
+        return this.f33037d;
+    }
+
+    private final Number b(Number number) {
+        if (this.f33036c == null) {
+            this.f33036c = (Number) this.f33034a.invoke(number);
+        }
+        return this.f33036c;
+    }
+
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // android.animation.TypeEvaluator
+    public Float evaluate(float f10, Number number, Number number2) {
+        Number b10 = b(number);
+        Number a10 = a(number2);
+        if (b10 == null || a10 == null) {
+            return null;
+        }
+        return super.evaluate(f10, b10, a10);
     }
 }

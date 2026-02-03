@@ -1,10 +1,10 @@
 package kotlin.reflect.jvm.internal.impl.descriptors;
 
-import ir.p;
-import ir.v;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import jr.p;
+import jr.v;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function1;

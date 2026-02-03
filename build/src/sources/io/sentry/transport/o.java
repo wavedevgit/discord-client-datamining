@@ -25,19 +25,19 @@ import javax.net.ssl.SSLSocketFactory;
 public final class o {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Charset f30776e = Charset.forName("UTF-8");
+    private static final Charset f30342e = Charset.forName("UTF-8");
 
     /* renamed from: a  reason: collision with root package name */
-    private final Proxy f30777a;
+    private final Proxy f30343a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final w3 f30778b;
+    private final w3 f30344b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final k7 f30779c;
+    private final k7 f30345c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0 f30780d;
+    private final a0 f30346d;
 
     public o(k7 k7Var, w3 w3Var, a0 a0Var) {
         this(k7Var, w3Var, m.a(), a0Var);
@@ -54,7 +54,7 @@ public final class o {
 
     private HttpURLConnection b() {
         HttpURLConnection e10 = e();
-        for (Map.Entry entry : this.f30778b.a().entrySet()) {
+        for (Map.Entry entry : this.f30344b.a().entrySet()) {
             e10.setRequestProperty((String) entry.getKey(), (String) entry.getValue());
         }
         e10.setRequestMethod("POST");
@@ -63,9 +63,9 @@ public final class o {
         e10.setRequestProperty("Content-Type", "application/x-sentry-envelope");
         e10.setRequestProperty("Accept", "application/json");
         e10.setRequestProperty("Connection", "close");
-        e10.setConnectTimeout(this.f30779c.getConnectionTimeoutMillis());
-        e10.setReadTimeout(this.f30779c.getReadTimeoutMillis());
-        SSLSocketFactory sslSocketFactory = this.f30779c.getSslSocketFactory();
+        e10.setConnectTimeout(this.f30345c.getConnectionTimeoutMillis());
+        e10.setReadTimeout(this.f30345c.getReadTimeoutMillis());
+        SSLSocketFactory sslSocketFactory = this.f30345c.getSslSocketFactory();
         if ((e10 instanceof HttpsURLConnection) && sslSocketFactory != null) {
             ((HttpsURLConnection) e10).setSSLSocketFactory(sslSocketFactory);
         }
@@ -76,7 +76,7 @@ public final class o {
     private String c(HttpURLConnection httpURLConnection) {
         try {
             InputStream errorStream = httpURLConnection.getErrorStream();
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(errorStream, f30776e));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(errorStream, f30342e));
             StringBuilder sb2 = new StringBuilder();
             boolean z10 = true;
             while (true) {
@@ -111,22 +111,22 @@ public final class o {
                 int responseCode = httpURLConnection.getResponseCode();
                 i(httpURLConnection, responseCode);
                 if (!d(responseCode)) {
-                    ILogger logger = this.f30779c.getLogger();
+                    ILogger logger = this.f30345c.getLogger();
                     SentryLevel sentryLevel = SentryLevel.ERROR;
                     logger.c(sentryLevel, "Request failed, API returned %s", Integer.valueOf(responseCode));
-                    if (this.f30779c.isDebug()) {
-                        this.f30779c.getLogger().c(sentryLevel, "%s", c(httpURLConnection));
+                    if (this.f30345c.isDebug()) {
+                        this.f30345c.getLogger().c(sentryLevel, "%s", c(httpURLConnection));
                     }
                     c0 b10 = c0.b(responseCode);
                     a(httpURLConnection);
                     return b10;
                 }
-                this.f30779c.getLogger().c(SentryLevel.DEBUG, "Envelope sent successfully.", new Object[0]);
+                this.f30345c.getLogger().c(SentryLevel.DEBUG, "Envelope sent successfully.", new Object[0]);
                 c0 e10 = c0.e();
                 a(httpURLConnection);
                 return e10;
             } catch (IOException e11) {
-                this.f30779c.getLogger().a(SentryLevel.ERROR, e11, "Error reading and logging the response stream", new Object[0]);
+                this.f30345c.getLogger().a(SentryLevel.ERROR, e11, "Error reading and logging the response stream", new Object[0]);
                 a(httpURLConnection);
                 return c0.a();
             }
@@ -150,7 +150,7 @@ public final class o {
                     }
                     return new Proxy(type, new InetSocketAddress(a10, Integer.parseInt(c10)));
                 } catch (NumberFormatException e10) {
-                    ILogger logger = this.f30779c.getLogger();
+                    ILogger logger = this.f30345c.getLogger();
                     SentryLevel sentryLevel = SentryLevel.ERROR;
                     logger.a(sentryLevel, e10, "Failed to parse Sentry Proxy port: " + lVar.c() + ". Proxy is ignored", new Object[0]);
                     return null;
@@ -163,32 +163,32 @@ public final class o {
 
     HttpURLConnection e() {
         URLConnection openConnection;
-        if (this.f30777a == null) {
-            openConnection = this.f30778b.b().openConnection();
+        if (this.f30343a == null) {
+            openConnection = this.f30344b.b().openConnection();
         } else {
-            openConnection = this.f30778b.b().openConnection(this.f30777a);
+            openConnection = this.f30344b.b().openConnection(this.f30343a);
         }
         return (HttpURLConnection) openConnection;
     }
 
     public c0 h(l5 l5Var) {
         c0 f10;
-        this.f30779c.getSocketTagger().b();
+        this.f30345c.getSocketTagger().b();
         HttpURLConnection b10 = b();
         try {
             OutputStream outputStream = b10.getOutputStream();
             GZIPOutputStream gZIPOutputStream = new GZIPOutputStream(outputStream);
-            this.f30779c.getSerializer().b(l5Var, gZIPOutputStream);
+            this.f30345c.getSerializer().b(l5Var, gZIPOutputStream);
             gZIPOutputStream.close();
             if (outputStream != null) {
                 outputStream.close();
             }
         } catch (Throwable th2) {
             try {
-                this.f30779c.getLogger().a(SentryLevel.ERROR, th2, "An exception occurred while submitting the envelope to the Sentry server.", new Object[0]);
+                this.f30345c.getLogger().a(SentryLevel.ERROR, th2, "An exception occurred while submitting the envelope to the Sentry server.", new Object[0]);
             } finally {
                 f(b10);
-                this.f30779c.getSocketTagger().a();
+                this.f30345c.getSocketTagger().a();
             }
         }
         return f10;
@@ -196,15 +196,15 @@ public final class o {
 
     public void i(HttpURLConnection httpURLConnection, int i10) {
         String headerField = httpURLConnection.getHeaderField("Retry-After");
-        this.f30780d.F0(httpURLConnection.getHeaderField("X-Sentry-Rate-Limits"), headerField, i10);
+        this.f30346d.G0(httpURLConnection.getHeaderField("X-Sentry-Rate-Limits"), headerField, i10);
     }
 
     o(k7 k7Var, w3 w3Var, m mVar, a0 a0Var) {
-        this.f30778b = w3Var;
-        this.f30779c = k7Var;
-        this.f30780d = a0Var;
+        this.f30344b = w3Var;
+        this.f30345c = k7Var;
+        this.f30346d = a0Var;
         Proxy g10 = g(k7Var.getProxy());
-        this.f30777a = g10;
+        this.f30343a = g10;
         if (g10 == null || k7Var.getProxy() == null) {
             return;
         }

@@ -1,35 +1,66 @@
 package wu;
 
-import java.util.ArrayList;
 import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.text.StringsKt;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Lambda;
+import mu.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface b {
+public final class b implements lu.b, mu.c {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final b f53051a = new b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class a {
-        private static Object a(b bVar, Object obj) {
-            while (!(obj instanceof Number)) {
-                if (obj instanceof String) {
-                    return StringsKt.p((String) obj);
-                }
-                if (obj instanceof List) {
-                    obj = CollectionsKt.firstOrNull((List) obj);
-                } else {
-                    return null;
-                }
-            }
-            return Double.valueOf(((Number) obj).doubleValue());
+    static final class a extends Lambda implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final a f53052d = new a();
+
+        a() {
+            super(2);
         }
 
-        public static List b(b bVar, Object obj) {
-            List<Object> c10 = pv.a.c(obj);
-            ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
-            for (Object obj2 : c10) {
-                arrayList.add(a(bVar, obj2));
+        public final Boolean a(int i10, int i11) {
+            boolean z10;
+            if (i10 >= i11) {
+                z10 = true;
+            } else {
+                z10 = false;
             }
-            return arrayList;
+            return Boolean.valueOf(z10);
         }
+
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
+        }
+    }
+
+    private b() {
+    }
+
+    @Override // mu.c
+    public boolean b(List list, Function2 function2) {
+        return c.a.b(this, list, function2);
+    }
+
+    @Override // mu.a
+    public Boolean c(Object obj) {
+        return c.a.f(this, obj);
+    }
+
+    @Override // mu.b
+    public List d(Comparable comparable, Comparable comparable2) {
+        return c.a.e(this, comparable, comparable2);
+    }
+
+    @Override // lu.b
+    public Object f(Object obj, Object obj2) {
+        return Boolean.valueOf(b(qv.a.c(obj), a.f53052d));
+    }
+
+    @Override // mu.b
+    public List g(Comparable comparable, Comparable comparable2) {
+        return c.a.d(this, comparable, comparable2);
     }
 }

@@ -13,76 +13,76 @@ jadx.core.utils.exceptions.JadxRuntimeException: Init of enum p uses external va
 public final class a0 {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a0 f3555o;
+    public static final a0 f3599o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a0 f3556p;
+    public static final a0 f3600p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final a0 f3557q;
+    public static final a0 f3601q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final a0 f3558r;
+    public static final a0 f3602r;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final a0 f3559s;
+    public static final a0 f3603s;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final a0 f3560t;
+    public static final a0 f3604t;
 
     /* renamed from: u  reason: collision with root package name */
-    public static final a0 f3561u;
+    public static final a0 f3605u;
 
     /* renamed from: v  reason: collision with root package name */
-    public static final a0 f3562v;
+    public static final a0 f3606v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final a0 f3563w;
+    public static final a0 f3607w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final a0 f3564x;
+    public static final a0 f3608x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final /* synthetic */ a0[] f3565y;
+    private static final /* synthetic */ a0[] f3609y;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f3566d;
+    private final Class f3610d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Class f3567e;
+    private final Class f3611e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Object f3568i;
+    private final Object f3612i;
 
     static {
         a0 a0Var = new a0("VOID", 0, Void.class, Void.class, null);
-        f3555o = a0Var;
+        f3599o = a0Var;
         Class cls = Integer.TYPE;
         a0 a0Var2 = new a0("INT", 1, cls, Integer.class, 0);
-        f3556p = a0Var2;
+        f3600p = a0Var2;
         a0 a0Var3 = new a0("LONG", 2, Long.TYPE, Long.class, 0L);
-        f3557q = a0Var3;
+        f3601q = a0Var3;
         a0 a0Var4 = new a0("FLOAT", 3, Float.TYPE, Float.class, Float.valueOf(0.0f));
-        f3558r = a0Var4;
+        f3602r = a0Var4;
         a0 a0Var5 = new a0("DOUBLE", 4, Double.TYPE, Double.class, Double.valueOf(0.0d));
-        f3559s = a0Var5;
+        f3603s = a0Var5;
         a0 a0Var6 = new a0("BOOLEAN", 5, Boolean.TYPE, Boolean.class, Boolean.FALSE);
-        f3560t = a0Var6;
+        f3604t = a0Var6;
         a0 a0Var7 = new a0("STRING", 6, String.class, String.class, "");
-        f3561u = a0Var7;
-        a0 a0Var8 = new a0("BYTE_STRING", 7, g.class, g.class, g.f3591e);
-        f3562v = a0Var8;
+        f3605u = a0Var7;
+        a0 a0Var8 = new a0("BYTE_STRING", 7, g.class, g.class, g.f3635e);
+        f3606v = a0Var8;
         a0 a0Var9 = new a0("ENUM", 8, cls, Integer.class, null);
-        f3563w = a0Var9;
+        f3607w = a0Var9;
         a0 a0Var10 = new a0("MESSAGE", 9, Object.class, Object.class, null);
-        f3564x = a0Var10;
-        f3565y = new a0[]{a0Var, a0Var2, a0Var3, a0Var4, a0Var5, a0Var6, a0Var7, a0Var8, a0Var9, a0Var10};
+        f3608x = a0Var10;
+        f3609y = new a0[]{a0Var, a0Var2, a0Var3, a0Var4, a0Var5, a0Var6, a0Var7, a0Var8, a0Var9, a0Var10};
     }
 
     private a0(String str, int i10, Class cls, Class cls2, Object obj) {
-        this.f3566d = cls;
-        this.f3567e = cls2;
-        this.f3568i = obj;
+        this.f3610d = cls;
+        this.f3611e = cls2;
+        this.f3612i = obj;
     }
 
     public static a0 valueOf(String str) {
@@ -90,10 +90,10 @@ public final class a0 {
     }
 
     public static a0[] values() {
-        return (a0[]) f3565y.clone();
+        return (a0[]) f3609y.clone();
     }
 
     public Class a() {
-        return this.f3567e;
+        return this.f3611e;
     }
 }

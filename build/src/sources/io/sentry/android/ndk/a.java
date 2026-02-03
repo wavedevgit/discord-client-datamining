@@ -9,16 +9,16 @@ import io.sentry.util.y;
 public final class a implements q1 {
 
     /* renamed from: c  reason: collision with root package name */
-    protected static final io.sentry.util.a f29331c = new io.sentry.util.a();
+    protected static final io.sentry.util.a f28897c = new io.sentry.util.a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final k7 f29332a;
+    private final k7 f28898a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final NativeModuleListLoader f29333b;
+    private final NativeModuleListLoader f28899b;
 
     public a(SentryAndroidOptions sentryAndroidOptions, NativeModuleListLoader nativeModuleListLoader) {
-        this.f29332a = (k7) y.c(sentryAndroidOptions, "The SentryAndroidOptions is required.");
-        this.f29333b = (NativeModuleListLoader) y.c(nativeModuleListLoader, "The NativeModuleListLoader is required.");
+        this.f28898a = (k7) y.c(sentryAndroidOptions, "The SentryAndroidOptions is required.");
+        this.f28899b = (NativeModuleListLoader) y.c(nativeModuleListLoader, "The NativeModuleListLoader is required.");
     }
 }

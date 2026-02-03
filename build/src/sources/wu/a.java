@@ -1,52 +1,67 @@
 package wu;
 
-import java.util.ArrayList;
 import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.text.StringsKt;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Lambda;
+import mu.c;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a {
+public final class a implements lu.b, mu.c {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f53049a = new a();
 
     /* renamed from: wu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0730a {
-        private static Double a(a aVar, Object obj) {
-            if (obj instanceof Number) {
-                return Double.valueOf(((Number) obj).doubleValue());
-            }
-            if (obj instanceof String) {
-                return StringsKt.p((String) obj);
-            }
-            if (obj instanceof List) {
-                return b(aVar, (List) obj);
-            }
-            if (obj instanceof Boolean) {
-                return Double.valueOf(pv.b.a(((Boolean) obj).booleanValue()));
-            }
-            if (obj == null) {
-                return Double.valueOf(0.0d);
-            }
-            return null;
+    static final class C0735a extends Lambda implements Function2 {
+
+        /* renamed from: d  reason: collision with root package name */
+        public static final C0735a f53050d = new C0735a();
+
+        C0735a() {
+            super(2);
         }
 
-        private static Double b(a aVar, List list) {
-            int size = list.size();
-            if (size != 0) {
-                if (size != 1) {
-                    return null;
-                }
-                return a(aVar, CollectionsKt.o0(list));
+        public final Boolean a(int i10, int i11) {
+            boolean z10;
+            if (i10 > i11) {
+                z10 = true;
+            } else {
+                z10 = false;
             }
-            return Double.valueOf(0.0d);
+            return Boolean.valueOf(z10);
         }
 
-        public static List c(a aVar, Object obj) {
-            List<Object> c10 = pv.a.c(obj);
-            ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
-            for (Object obj2 : c10) {
-                arrayList.add(a(aVar, obj2));
-            }
-            return arrayList;
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
         }
+    }
+
+    private a() {
+    }
+
+    @Override // mu.c
+    public boolean b(List list, Function2 function2) {
+        return c.a.b(this, list, function2);
+    }
+
+    @Override // mu.a
+    public Boolean c(Object obj) {
+        return c.a.f(this, obj);
+    }
+
+    @Override // mu.b
+    public List d(Comparable comparable, Comparable comparable2) {
+        return c.a.e(this, comparable, comparable2);
+    }
+
+    @Override // lu.b
+    public Object f(Object obj, Object obj2) {
+        return Boolean.valueOf(b(qv.a.c(obj), C0735a.f53050d));
+    }
+
+    @Override // mu.b
+    public List g(Comparable comparable, Comparable comparable2) {
+        return c.a.d(this, comparable, comparable2);
     }
 }

@@ -125,10 +125,10 @@ public final class ScreensModule extends NativeScreensModuleSpec {
         UiThreadUtil.assertOnUiThread();
         if (this.topScreenId != -1) {
             float f10 = (float) d10;
-            short a10 = w.f19376s.a(f10);
+            short a10 = w.f19009s.a(f10);
             EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag(this.reactContext, this.topScreenId);
             if (eventDispatcherForReactTag != null) {
-                eventDispatcherForReactTag.dispatchEvent(new fn.j(UIManagerHelper.getSurfaceId(this.reactContext), this.topScreenId, f10, true, true, a10));
+                eventDispatcherForReactTag.dispatchEvent(new gn.j(UIManagerHelper.getSurfaceId(this.reactContext), this.topScreenId, f10, true, true, a10));
             }
         }
     }

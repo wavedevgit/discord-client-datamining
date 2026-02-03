@@ -25,7 +25,7 @@ public final class b extends c {
     public a j(a aVar, int i10) {
         int b10 = b(6);
         if (b10 != 0) {
-            return aVar.f(a(d(b10) + (i10 * 4)), this.f8112b);
+            return aVar.f(a(d(b10) + (i10 * 4)), this.f7968b);
         }
         return null;
     }
@@ -41,7 +41,7 @@ public final class b extends c {
     public int l() {
         int b10 = b(4);
         if (b10 != 0) {
-            return this.f8112b.getInt(b10 + this.f8111a);
+            return this.f7968b.getInt(b10 + this.f7967a);
         }
         return 0;
     }

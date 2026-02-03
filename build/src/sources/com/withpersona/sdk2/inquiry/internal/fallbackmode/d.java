@@ -16,35 +16,35 @@ import kotlinx.coroutines.CoroutineScope;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class d implements qo.a {
+public final class d implements ro.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FallbackModeService f19836a;
+    private final FallbackModeService f19469a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final w f19837b;
+    private final w f19470b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final i.a f19838c;
+    private final i.a f19471c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f19839d;
+    private int f19472d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f19840d;
+        Object f19473d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f19841e;
+        Object f19474e;
 
         /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f19842i;
+        /* synthetic */ Object f19475i;
 
         /* renamed from: p  reason: collision with root package name */
-        int f19844p;
+        int f19477p;
 
         a(Continuation continuation) {
             super(continuation);
@@ -52,10 +52,10 @@ public final class d implements qo.a {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f19842i = obj;
-            this.f19844p |= Integer.MIN_VALUE;
+            this.f19475i = obj;
+            this.f19477p |= Integer.MIN_VALUE;
             Object a10 = d.this.a(null, this);
-            return a10 == or.b.f() ? a10 : Result.a(a10);
+            return a10 == pr.b.f() ? a10 : Result.a(a10);
         }
     }
 
@@ -64,44 +64,44 @@ public final class d implements qo.a {
     public static final class b extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19845d;
+        int f19478d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ so.d f19846e;
+        final /* synthetic */ to.d f19479e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ d f19847i;
+        final /* synthetic */ d f19480i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19848d;
+            int f19481d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ so.d f19849e;
+            final /* synthetic */ to.d f19482e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ d f19850i;
+            final /* synthetic */ d f19483i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            a(so.d dVar, d dVar2, Continuation continuation) {
+            a(to.d dVar, d dVar2, Continuation continuation) {
                 super(1, continuation);
-                this.f19849e = dVar;
-                this.f19850i = dVar2;
+                this.f19482e = dVar;
+                this.f19483i = dVar2;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new a(this.f19849e, this.f19850i, continuation);
+                return new a(this.f19482e, this.f19483i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 String str;
-                Object f10 = or.b.f();
-                int i10 = this.f19848d;
+                Object f10 = pr.b.f();
+                int i10 = this.f19481d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -110,15 +110,15 @@ public final class d implements qo.a {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 kotlin.c.b(obj);
-                String g10 = this.f19849e.g();
+                String g10 = this.f19482e.g();
                 if (g10 != null && g10.length() != 0) {
-                    str = "Bearer " + com.withpersona.sdk2.inquiry.internal.h.f19897b.a(this.f19849e.g());
+                    str = "Bearer " + com.withpersona.sdk2.inquiry.internal.h.f19530b.a(this.f19482e.g());
                 } else {
                     str = null;
                 }
-                FallbackModeService g11 = this.f19850i.g();
-                FallbackModeService.StatusRequest statusRequest = new FallbackModeService.StatusRequest(this.f19849e.h());
-                this.f19848d = 1;
+                FallbackModeService g11 = this.f19483i.g();
+                FallbackModeService.StatusRequest statusRequest = new FallbackModeService.StatusRequest(this.f19482e.h());
+                this.f19481d = 1;
                 Object a10 = g11.a(str, statusRequest, this);
                 if (a10 == f10) {
                     return f10;
@@ -128,26 +128,26 @@ public final class d implements qo.a {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f33298a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f33074a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        b(so.d dVar, d dVar2, Continuation continuation) {
+        b(to.d dVar, d dVar2, Continuation continuation) {
             super(2, continuation);
-            this.f19846e = dVar;
-            this.f19847i = dVar2;
+            this.f19479e = dVar;
+            this.f19480i = dVar2;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new b(this.f19846e, this.f19847i, continuation);
+            return new b(this.f19479e, this.f19480i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = or.b.f();
-            int i10 = this.f19845d;
+            Object f10 = pr.b.f();
+            int i10 = this.f19478d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -156,8 +156,8 @@ public final class d implements qo.a {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             kotlin.c.b(obj);
-            a aVar = new a(this.f19846e, this.f19847i, null);
-            this.f19845d = 1;
+            a aVar = new a(this.f19479e, this.f19480i, null);
+            this.f19478d = 1;
             Object enqueueRetriableRequestWithRetry = NetworkUtilsKt.enqueueRetriableRequestWithRetry(aVar, this);
             if (enqueueRetriableRequestWithRetry == f10) {
                 return f10;
@@ -167,7 +167,7 @@ public final class d implements qo.a {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
@@ -176,41 +176,41 @@ public final class d implements qo.a {
     public static final class c extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19851d;
+        int f19484d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ so.d f19853i;
+        final /* synthetic */ to.d f19486i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19854d;
+            int f19487d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ d f19855e;
+            final /* synthetic */ d f19488e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ so.d f19856i;
+            final /* synthetic */ to.d f19489i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            a(d dVar, so.d dVar2, Continuation continuation) {
+            a(d dVar, to.d dVar2, Continuation continuation) {
                 super(1, continuation);
-                this.f19855e = dVar;
-                this.f19856i = dVar2;
+                this.f19488e = dVar;
+                this.f19489i = dVar2;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new a(this.f19855e, this.f19856i, continuation);
+                return new a(this.f19488e, this.f19489i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 InquiryFieldMap inquiryFieldMap;
-                Object f10 = or.b.f();
-                int i10 = this.f19854d;
+                Object f10 = pr.b.f();
+                int i10 = this.f19487d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -219,21 +219,21 @@ public final class d implements qo.a {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 kotlin.c.b(obj);
-                FallbackModeService g10 = this.f19855e.g();
-                String h10 = this.f19856i.h();
-                String i11 = this.f19856i.i();
-                String e10 = this.f19856i.e();
-                String f11 = this.f19856i.f();
-                String a10 = this.f19856i.a();
-                String a11 = so.b.a(this.f19856i.b());
-                String c10 = this.f19856i.c();
-                if (this.f19856i.d() != null) {
-                    inquiryFieldMap = new InquiryFieldMap(this.f19856i.d());
+                FallbackModeService g10 = this.f19488e.g();
+                String h10 = this.f19489i.h();
+                String i11 = this.f19489i.i();
+                String e10 = this.f19489i.e();
+                String f11 = this.f19489i.f();
+                String a10 = this.f19489i.a();
+                String a11 = to.b.a(this.f19489i.b());
+                String c10 = this.f19489i.c();
+                if (this.f19489i.d() != null) {
+                    inquiryFieldMap = new InquiryFieldMap(this.f19489i.d());
                 } else {
                     inquiryFieldMap = null;
                 }
-                FallbackModeService.SessionIdRequest sessionIdRequest = new FallbackModeService.SessionIdRequest(h10, i11, e10, f11, a10, a11, c10, inquiryFieldMap, this.f19856i.j());
-                this.f19854d = 1;
+                FallbackModeService.SessionIdRequest sessionIdRequest = new FallbackModeService.SessionIdRequest(h10, i11, e10, f11, a10, a11, c10, inquiryFieldMap, this.f19489i.j());
+                this.f19487d = 1;
                 Object d10 = g10.d(sessionIdRequest, this);
                 if (d10 == f10) {
                     return f10;
@@ -243,25 +243,25 @@ public final class d implements qo.a {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f33298a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f33074a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        c(so.d dVar, Continuation continuation) {
+        c(to.d dVar, Continuation continuation) {
             super(2, continuation);
-            this.f19853i = dVar;
+            this.f19486i = dVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new c(this.f19853i, continuation);
+            return new c(this.f19486i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = or.b.f();
-            int i10 = this.f19851d;
+            Object f10 = pr.b.f();
+            int i10 = this.f19484d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -270,8 +270,8 @@ public final class d implements qo.a {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             kotlin.c.b(obj);
-            a aVar = new a(d.this, this.f19853i, null);
-            this.f19851d = 1;
+            a aVar = new a(d.this, this.f19486i, null);
+            this.f19484d = 1;
             Object enqueueRetriableRequestWithRetry = NetworkUtilsKt.enqueueRetriableRequestWithRetry(aVar, this);
             if (enqueueRetriableRequestWithRetry == f10) {
                 return f10;
@@ -281,35 +281,35 @@ public final class d implements qo.a {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: com.withpersona.sdk2.inquiry.internal.fallbackmode.d$d  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0240d extends kotlin.coroutines.jvm.internal.d {
+    public static final class C0245d extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f19857d;
+        Object f19490d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f19858e;
+        Object f19491e;
 
         /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f19859i;
+        /* synthetic */ Object f19492i;
 
         /* renamed from: p  reason: collision with root package name */
-        int f19861p;
+        int f19494p;
 
-        C0240d(Continuation continuation) {
+        C0245d(Continuation continuation) {
             super(continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f19859i = obj;
-            this.f19861p |= Integer.MIN_VALUE;
+            this.f19492i = obj;
+            this.f19494p |= Integer.MIN_VALUE;
             return d.this.h(null, null, null, this);
         }
     }
@@ -319,54 +319,54 @@ public final class d implements qo.a {
     public static final class e extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19862d;
+        int f19495d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f19864i;
+        final /* synthetic */ String f19497i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ qo.h f19865o;
+        final /* synthetic */ ro.h f19498o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ RequestBody f19866p;
+        final /* synthetic */ RequestBody f19499p;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19867d;
+            int f19500d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ d f19868e;
+            final /* synthetic */ d f19501e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ String f19869i;
+            final /* synthetic */ String f19502i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ qo.h f19870o;
+            final /* synthetic */ ro.h f19503o;
 
             /* renamed from: p  reason: collision with root package name */
-            final /* synthetic */ RequestBody f19871p;
+            final /* synthetic */ RequestBody f19504p;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            a(d dVar, String str, qo.h hVar, RequestBody requestBody, Continuation continuation) {
+            a(d dVar, String str, ro.h hVar, RequestBody requestBody, Continuation continuation) {
                 super(1, continuation);
-                this.f19868e = dVar;
-                this.f19869i = str;
-                this.f19870o = hVar;
-                this.f19871p = requestBody;
+                this.f19501e = dVar;
+                this.f19502i = str;
+                this.f19503o = hVar;
+                this.f19504p = requestBody;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new a(this.f19868e, this.f19869i, this.f19870o, this.f19871p, continuation);
+                return new a(this.f19501e, this.f19502i, this.f19503o, this.f19504p, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                Object f10 = or.b.f();
-                int i10 = this.f19867d;
+                Object f10 = pr.b.f();
+                int i10 = this.f19500d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -375,14 +375,14 @@ public final class d implements qo.a {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 kotlin.c.b(obj);
-                FallbackModeService g10 = this.f19868e.g();
-                String str = this.f19869i;
-                qo.h hVar = this.f19870o;
-                int f11 = this.f19868e.f();
-                long contentLength = this.f19871p.contentLength();
-                MediaType contentType = this.f19871p.contentType();
+                FallbackModeService g10 = this.f19501e.g();
+                String str = this.f19502i;
+                ro.h hVar = this.f19503o;
+                int f11 = this.f19501e.f();
+                long contentLength = this.f19504p.contentLength();
+                MediaType contentType = this.f19504p.contentType();
                 FallbackModeService.UploadUrlRequest uploadUrlRequest = new FallbackModeService.UploadUrlRequest(contentLength, (contentType == null || (r11 = contentType.toString()) == null) ? "application/json" : "application/json");
-                this.f19867d = 1;
+                this.f19500d = 1;
                 Object b10 = g10.b(str, hVar, f11, uploadUrlRequest, this);
                 if (b10 == f10) {
                     return f10;
@@ -392,27 +392,27 @@ public final class d implements qo.a {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f33298a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f33074a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        e(String str, qo.h hVar, RequestBody requestBody, Continuation continuation) {
+        e(String str, ro.h hVar, RequestBody requestBody, Continuation continuation) {
             super(2, continuation);
-            this.f19864i = str;
-            this.f19865o = hVar;
-            this.f19866p = requestBody;
+            this.f19497i = str;
+            this.f19498o = hVar;
+            this.f19499p = requestBody;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new e(this.f19864i, this.f19865o, this.f19866p, continuation);
+            return new e(this.f19497i, this.f19498o, this.f19499p, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = or.b.f();
-            int i10 = this.f19862d;
+            Object f10 = pr.b.f();
+            int i10 = this.f19495d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -421,8 +421,8 @@ public final class d implements qo.a {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             kotlin.c.b(obj);
-            a aVar = new a(d.this, this.f19864i, this.f19865o, this.f19866p, null);
-            this.f19862d = 1;
+            a aVar = new a(d.this, this.f19497i, this.f19498o, this.f19499p, null);
+            this.f19495d = 1;
             Object enqueueRetriableRequestWithRetry = NetworkUtilsKt.enqueueRetriableRequestWithRetry(aVar, this);
             if (enqueueRetriableRequestWithRetry == f10) {
                 return f10;
@@ -432,7 +432,7 @@ public final class d implements qo.a {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
@@ -441,47 +441,47 @@ public final class d implements qo.a {
     public static final class f extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19872d;
+        int f19505d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f19874i;
+        final /* synthetic */ String f19507i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ RequestBody f19875o;
+        final /* synthetic */ RequestBody f19508o;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19876d;
+            int f19509d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ d f19877e;
+            final /* synthetic */ d f19510e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ String f19878i;
+            final /* synthetic */ String f19511i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ RequestBody f19879o;
+            final /* synthetic */ RequestBody f19512o;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(d dVar, String str, RequestBody requestBody, Continuation continuation) {
                 super(1, continuation);
-                this.f19877e = dVar;
-                this.f19878i = str;
-                this.f19879o = requestBody;
+                this.f19510e = dVar;
+                this.f19511i = str;
+                this.f19512o = requestBody;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new a(this.f19877e, this.f19878i, this.f19879o, continuation);
+                return new a(this.f19510e, this.f19511i, this.f19512o, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                Object f10 = or.b.f();
-                int i10 = this.f19876d;
+                Object f10 = pr.b.f();
+                int i10 = this.f19509d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -490,10 +490,10 @@ public final class d implements qo.a {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 kotlin.c.b(obj);
-                FallbackModeService g10 = this.f19877e.g();
-                String str = this.f19878i;
-                RequestBody requestBody = this.f19879o;
-                this.f19876d = 1;
+                FallbackModeService g10 = this.f19510e.g();
+                String str = this.f19511i;
+                RequestBody requestBody = this.f19512o;
+                this.f19509d = 1;
                 Object c10 = g10.c(str, requestBody, this);
                 if (c10 == f10) {
                     return f10;
@@ -503,26 +503,26 @@ public final class d implements qo.a {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f33298a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f33074a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         f(String str, RequestBody requestBody, Continuation continuation) {
             super(2, continuation);
-            this.f19874i = str;
-            this.f19875o = requestBody;
+            this.f19507i = str;
+            this.f19508o = requestBody;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new f(this.f19874i, this.f19875o, continuation);
+            return new f(this.f19507i, this.f19508o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            Object f10 = or.b.f();
-            int i10 = this.f19872d;
+            Object f10 = pr.b.f();
+            int i10 = this.f19505d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -531,8 +531,8 @@ public final class d implements qo.a {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             kotlin.c.b(obj);
-            a aVar = new a(d.this, this.f19874i, this.f19875o, null);
-            this.f19872d = 1;
+            a aVar = new a(d.this, this.f19507i, this.f19508o, null);
+            this.f19505d = 1;
             Object enqueueRetriableRequestWithRetry = NetworkUtilsKt.enqueueRetriableRequestWithRetry(aVar, this);
             if (enqueueRetriableRequestWithRetry == f10) {
                 return f10;
@@ -542,7 +542,7 @@ public final class d implements qo.a {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
         }
     }
 
@@ -550,15 +550,15 @@ public final class d implements qo.a {
         Intrinsics.checkNotNullParameter(service, "service");
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         Intrinsics.checkNotNullParameter(staticTemplateSessionFactory, "staticTemplateSessionFactory");
-        this.f19836a = service;
-        this.f19837b = moshi;
-        this.f19838c = staticTemplateSessionFactory;
+        this.f19469a = service;
+        this.f19470b = moshi;
+        this.f19471c = staticTemplateSessionFactory;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final int f() {
-        int i10 = this.f19839d + 1;
-        this.f19839d = i10;
+        int i10 = this.f19472d + 1;
+        this.f19472d = i10;
         return i10;
     }
 
@@ -573,12 +573,12 @@ public final class d implements qo.a {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object h(java.lang.String r17, okhttp3.RequestBody r18, qo.h r19, kotlin.coroutines.Continuation r20) {
+    public final java.lang.Object h(java.lang.String r17, okhttp3.RequestBody r18, ro.h r19, kotlin.coroutines.Continuation r20) {
         /*
             Method dump skipped, instructions count: 323
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.internal.fallbackmode.d.h(java.lang.String, okhttp3.RequestBody, qo.h, kotlin.coroutines.Continuation):java.lang.Object");
+        throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.internal.fallbackmode.d.h(java.lang.String, okhttp3.RequestBody, ro.h, kotlin.coroutines.Continuation):java.lang.Object");
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0025  */
@@ -588,30 +588,30 @@ public final class d implements qo.a {
     /* JADX WARN: Removed duplicated region for block: B:64:0x010c  */
     /* JADX WARN: Removed duplicated region for block: B:70:0x0120  */
     /* JADX WARN: Removed duplicated region for block: B:72:0x0132  */
-    @Override // qo.a
+    @Override // ro.a
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public java.lang.Object a(so.d r8, kotlin.coroutines.Continuation r9) {
+    public java.lang.Object a(to.d r8, kotlin.coroutines.Continuation r9) {
         /*
             Method dump skipped, instructions count: 385
             To view this dump add '--comments-level debug' option
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.internal.fallbackmode.d.a(so.d, kotlin.coroutines.Continuation):java.lang.Object");
+        throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.internal.fallbackmode.d.a(to.d, kotlin.coroutines.Continuation):java.lang.Object");
     }
 
-    @Override // qo.a
+    @Override // ro.a
     public Object b(String str, RequestBody requestBody, Continuation continuation) {
-        return h(str, requestBody, qo.h.f47564d, continuation);
+        return h(str, requestBody, ro.h.f48590d, continuation);
     }
 
-    @Override // qo.a
+    @Override // ro.a
     public Object c(String str, RequestBody requestBody, Continuation continuation) {
-        return h(str, requestBody, qo.h.f47565e, continuation);
+        return h(str, requestBody, ro.h.f48591e, continuation);
     }
 
     public final FallbackModeService g() {
-        return this.f19836a;
+        return this.f19469a;
     }
 }

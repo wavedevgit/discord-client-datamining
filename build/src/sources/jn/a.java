@@ -1,52 +1,32 @@
 package jn;
 
-import android.animation.FloatEvaluator;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.internal.Intrinsics;
+import com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a extends FloatEvaluator {
+public abstract class a implements ChildrenDrawingOrderStrategy {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function1 f32256a;
+    private boolean f32042a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private final Function1 f32257b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private Number f32258c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private Number f32259d;
-
-    public a(Function1 startValueProvider, Function1 endValueProvider) {
-        Intrinsics.checkNotNullParameter(startValueProvider, "startValueProvider");
-        Intrinsics.checkNotNullParameter(endValueProvider, "endValueProvider");
-        this.f32256a = startValueProvider;
-        this.f32257b = endValueProvider;
+    public a(boolean z10) {
+        this.f32042a = z10;
     }
 
-    private final Number a(Number number) {
-        if (this.f32259d == null) {
-            this.f32259d = (Number) this.f32257b.invoke(number);
-        }
-        return this.f32259d;
+    public boolean b() {
+        return this.f32042a;
     }
 
-    private final Number b(Number number) {
-        if (this.f32258c == null) {
-            this.f32258c = (Number) this.f32256a.invoke(number);
-        }
-        return this.f32258c;
+    @Override // com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy
+    public void disable() {
+        this.f32042a = false;
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
-    @Override // android.animation.TypeEvaluator
-    public Float evaluate(float f10, Number number, Number number2) {
-        Number b10 = b(number);
-        Number a10 = a(number2);
-        if (b10 == null || a10 == null) {
-            return null;
-        }
-        return super.evaluate(f10, b10, a10);
+    @Override // com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy
+    public void enable() {
+        this.f32042a = true;
+    }
+
+    public /* synthetic */ a(boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i10 & 1) != 0 ? false : z10);
     }
 }

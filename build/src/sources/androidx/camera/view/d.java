@@ -17,52 +17,52 @@ import x.y0;
 public final class d implements u1.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d0 f2077a;
+    private final d0 f2121a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final MutableLiveData f2078b;
+    private final MutableLiveData f2122b;
 
     /* renamed from: c  reason: collision with root package name */
-    private PreviewView.e f2079c;
+    private PreviewView.e f2123c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final i f2080d;
+    private final i f2124d;
 
     /* renamed from: e  reason: collision with root package name */
-    ListenableFuture f2081e;
+    ListenableFuture f2125e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f2082f = false;
+    private boolean f2126f = false;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ List f2083a;
+        final /* synthetic */ List f2127a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ x.o f2084b;
+        final /* synthetic */ x.o f2128b;
 
         a(List list, x.o oVar) {
-            this.f2083a = list;
-            this.f2084b = oVar;
+            this.f2127a = list;
+            this.f2128b = oVar;
         }
 
         @Override // d0.c
         /* renamed from: a */
         public void onSuccess(Void r22) {
-            d.this.f2081e = null;
+            d.this.f2125e = null;
         }
 
         @Override // d0.c
         public void onFailure(Throwable th2) {
-            d.this.f2081e = null;
-            if (!this.f2083a.isEmpty()) {
-                for (a0.k kVar : this.f2083a) {
-                    ((d0) this.f2084b).k(kVar);
+            d.this.f2125e = null;
+            if (!this.f2127a.isEmpty()) {
+                for (a0.k kVar : this.f2127a) {
+                    ((d0) this.f2128b).k(kVar);
                 }
-                this.f2083a.clear();
+                this.f2127a.clear();
             }
         }
     }
@@ -72,30 +72,30 @@ public final class d implements u1.a {
     public class b extends a0.k {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c.a f2086a;
+        final /* synthetic */ c.a f2130a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ x.o f2087b;
+        final /* synthetic */ x.o f2131b;
 
         b(c.a aVar, x.o oVar) {
-            this.f2086a = aVar;
-            this.f2087b = oVar;
+            this.f2130a = aVar;
+            this.f2131b = oVar;
         }
 
         @Override // a0.k
         public void b(int i10, u uVar) {
-            this.f2086a.c(null);
-            ((d0) this.f2087b).k(this);
+            this.f2130a.c(null);
+            ((d0) this.f2131b).k(this);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(d0 d0Var, MutableLiveData mutableLiveData, i iVar) {
-        this.f2077a = d0Var;
-        this.f2078b = mutableLiveData;
-        this.f2080d = iVar;
+        this.f2121a = d0Var;
+        this.f2122b = mutableLiveData;
+        this.f2124d = iVar;
         synchronized (this) {
-            this.f2079c = (PreviewView.e) mutableLiveData.f();
+            this.f2123c = (PreviewView.e) mutableLiveData.f();
         }
     }
 
@@ -114,10 +114,10 @@ public final class d implements u1.a {
     }
 
     private void e() {
-        ListenableFuture listenableFuture = this.f2081e;
+        ListenableFuture listenableFuture = this.f2125e;
         if (listenableFuture != null) {
             listenableFuture.cancel(false);
-            this.f2081e = null;
+            this.f2125e = null;
         }
     }
 
@@ -129,7 +129,7 @@ public final class d implements u1.a {
             public final ListenableFuture apply(Object obj) {
                 ListenableFuture i10;
                 Void r22 = (Void) obj;
-                i10 = d.this.f2080d.i();
+                i10 = d.this.f2124d.i();
                 return i10;
             }
         }, c0.a.a()).e(new Function() { // from class: androidx.camera.view.b
@@ -138,13 +138,13 @@ public final class d implements u1.a {
                 return d.d(d.this, (Void) obj);
             }
         }, c0.a.a());
-        this.f2081e = e10;
+        this.f2125e = e10;
         d0.n.j(e10, new a(arrayList, oVar), c0.a.a());
     }
 
     private ListenableFuture j(final x.o oVar, final List list) {
-        return androidx.concurrent.futures.c.a(new c.InterfaceC0026c() { // from class: androidx.camera.view.c
-            @Override // androidx.concurrent.futures.c.InterfaceC0026c
+        return androidx.concurrent.futures.c.a(new c.InterfaceC0030c() { // from class: androidx.camera.view.c
+            @Override // androidx.concurrent.futures.c.InterfaceC0030c
             public final Object a(c.a aVar) {
                 return d.b(d.this, oVar, list, aVar);
             }
@@ -160,16 +160,16 @@ public final class d implements u1.a {
     /* renamed from: g */
     public void a(e0.a aVar) {
         if (aVar != e0.a.CLOSING && aVar != e0.a.CLOSED && aVar != e0.a.RELEASING && aVar != e0.a.RELEASED) {
-            if ((aVar == e0.a.OPENING || aVar == e0.a.OPEN || aVar == e0.a.PENDING_OPEN) && !this.f2082f) {
-                h(this.f2077a);
-                this.f2082f = true;
+            if ((aVar == e0.a.OPENING || aVar == e0.a.OPEN || aVar == e0.a.PENDING_OPEN) && !this.f2126f) {
+                h(this.f2121a);
+                this.f2126f = true;
                 return;
             }
             return;
         }
         i(PreviewView.e.IDLE);
-        if (this.f2082f) {
-            this.f2082f = false;
+        if (this.f2126f) {
+            this.f2126f = false;
             e();
         }
     }
@@ -178,12 +178,12 @@ public final class d implements u1.a {
     public void i(PreviewView.e eVar) {
         synchronized (this) {
             try {
-                if (this.f2079c.equals(eVar)) {
+                if (this.f2123c.equals(eVar)) {
                     return;
                 }
-                this.f2079c = eVar;
+                this.f2123c = eVar;
                 y0.a("StreamStateObserver", "Update Preview stream state to " + eVar);
-                this.f2078b.m(eVar);
+                this.f2122b.m(eVar);
             } catch (Throwable th2) {
                 throw th2;
             }

@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/ImagesIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun72921: for (var _fun72921_ip = 0;;) switch (_fun72921_ip) {
+        _fun73030: for (var _fun73030_ip = 0;;) switch (_fun73030_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun72921_ip = 53;
-                    continue _fun72921
+                    _fun73030_ip = 53;
+                    continue _fun73030
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ImagesIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3111, 9131, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3141, 9163, 2]);

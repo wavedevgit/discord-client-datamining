@@ -15,41 +15,41 @@ import yg.j;
 public class MaterialDivider extends View {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final int f16001q = j.f54536w;
+    private static final int f15630q = j.f54511w;
 
     /* renamed from: d  reason: collision with root package name */
-    private final g f16002d;
+    private final g f15631d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f16003e;
+    private int f15632e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f16004i;
+    private int f15633i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f16005o;
+    private int f15634o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f16006p;
+    private int f15635p;
 
     public MaterialDivider(@NonNull Context context, AttributeSet attributeSet) {
         this(context, attributeSet, b.C);
     }
 
     public int getDividerColor() {
-        return this.f16004i;
+        return this.f15633i;
     }
 
     public int getDividerInsetEnd() {
-        return this.f16006p;
+        return this.f15635p;
     }
 
     public int getDividerInsetStart() {
-        return this.f16005o;
+        return this.f15634o;
     }
 
     public int getDividerThickness() {
-        return this.f16003e;
+        return this.f15632e;
     }
 
     @Override // android.view.View
@@ -63,19 +63,19 @@ public class MaterialDivider extends View {
             z10 = false;
         }
         if (z10) {
-            i10 = this.f16006p;
+            i10 = this.f15635p;
         } else {
-            i10 = this.f16005o;
+            i10 = this.f15634o;
         }
         if (z10) {
             width = getWidth();
-            i11 = this.f16005o;
+            i11 = this.f15634o;
         } else {
             width = getWidth();
-            i11 = this.f16006p;
+            i11 = this.f15635p;
         }
-        this.f16002d.setBounds(i10, 0, width - i11, getBottom() - getTop());
-        this.f16002d.draw(canvas);
+        this.f15631d.setBounds(i10, 0, width - i11, getBottom() - getTop());
+        this.f15631d.draw(canvas);
     }
 
     @Override // android.view.View
@@ -86,7 +86,7 @@ public class MaterialDivider extends View {
         if (mode != Integer.MIN_VALUE && mode != 0) {
             return;
         }
-        int i12 = this.f16003e;
+        int i12 = this.f15632e;
         if (i12 > 0 && measuredHeight != i12) {
             measuredHeight = i12;
         }
@@ -94,9 +94,9 @@ public class MaterialDivider extends View {
     }
 
     public void setDividerColor(int i10) {
-        if (this.f16004i != i10) {
-            this.f16004i = i10;
-            this.f16002d.X(ColorStateList.valueOf(i10));
+        if (this.f15633i != i10) {
+            this.f15633i = i10;
+            this.f15631d.X(ColorStateList.valueOf(i10));
             invalidate();
         }
     }
@@ -106,7 +106,7 @@ public class MaterialDivider extends View {
     }
 
     public void setDividerInsetEnd(int i10) {
-        this.f16006p = i10;
+        this.f15635p = i10;
     }
 
     public void setDividerInsetEndResource(int i10) {
@@ -114,7 +114,7 @@ public class MaterialDivider extends View {
     }
 
     public void setDividerInsetStart(int i10) {
-        this.f16005o = i10;
+        this.f15634o = i10;
     }
 
     public void setDividerInsetStartResource(int i10) {
@@ -122,8 +122,8 @@ public class MaterialDivider extends View {
     }
 
     public void setDividerThickness(int i10) {
-        if (this.f16003e != i10) {
-            this.f16003e = i10;
+        if (this.f15632e != i10) {
+            this.f15632e = i10;
             requestLayout();
         }
     }
@@ -140,32 +140,32 @@ public class MaterialDivider extends View {
     public MaterialDivider(android.content.Context r7, android.util.AttributeSet r8, int r9) {
         /*
             r6 = this;
-            int r4 = com.google.android.material.divider.MaterialDivider.f16001q
+            int r4 = com.google.android.material.divider.MaterialDivider.f15630q
             android.content.Context r7 = rh.a.c(r7, r8, r9, r4)
             r6.<init>(r7, r8, r9)
             android.content.Context r0 = r6.getContext()
             oh.g r7 = new oh.g
             r7.<init>()
-            r6.f16002d = r7
-            int[] r2 = yg.k.f54605g4
+            r6.f15631d = r7
+            int[] r2 = yg.k.f54580g4
             r7 = 0
             int[] r5 = new int[r7]
             r1 = r8
             r3 = r9
             android.content.res.TypedArray r8 = com.google.android.material.internal.l.i(r0, r1, r2, r3, r4, r5)
-            int r9 = yg.k.f54645k4
+            int r9 = yg.k.f54620k4
             android.content.res.Resources r1 = r6.getResources()
-            int r2 = yg.d.f54422w
+            int r2 = yg.d.f54397w
             int r1 = r1.getDimensionPixelSize(r2)
             int r9 = r8.getDimensionPixelSize(r9, r1)
-            r6.f16003e = r9
-            int r9 = yg.k.f54635j4
+            r6.f15632e = r9
+            int r9 = yg.k.f54610j4
             int r9 = r8.getDimensionPixelOffset(r9, r7)
-            r6.f16005o = r9
-            int r9 = yg.k.f54625i4
+            r6.f15634o = r9
+            int r9 = yg.k.f54600i4
             int r7 = r8.getDimensionPixelOffset(r9, r7)
-            r6.f16006p = r7
-            int r7 = yg.k.f54615h4
+            r6.f15635p = r7
+            int r7 = yg.k.f54590h4
             android.content.res.ColorStateList r7 = lh.c.a(r0, r8, r7)
             int r7 = r7.getDefaultColor()
             r6.setDividerColor(r7)

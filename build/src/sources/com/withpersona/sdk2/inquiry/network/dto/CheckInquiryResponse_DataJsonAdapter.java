@@ -54,24 +54,24 @@ public final class CheckInquiryResponse_DataJsonAdapter extends h {
         CheckInquiryResponse.Attributes attributes = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 str = (String) this.stringAdapter.fromJson(reader);
                 if (str == null) {
-                    throw sm.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+                    throw tm.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                 }
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 str2 = (String) this.stringAdapter.fromJson(reader);
                 if (str2 == null) {
-                    throw sm.c.x("type", "type", reader);
+                    throw tm.c.x("type", "type", reader);
                 }
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 attributes = (CheckInquiryResponse.Attributes) this.attributesAdapter.fromJson(reader);
                 if (attributes == null) {
-                    throw sm.c.x("attributes", "attributes", reader);
+                    throw tm.c.x("attributes", "attributes", reader);
                 }
                 i10 = -5;
             } else {
@@ -85,13 +85,13 @@ public final class CheckInquiryResponse_DataJsonAdapter extends h {
                     Intrinsics.checkNotNull(attributes, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.network.dto.CheckInquiryResponse.Attributes");
                     return new CheckInquiryResponse.Data(str, str2, attributes);
                 }
-                throw sm.c.o("type", "type", reader);
+                throw tm.c.o("type", "type", reader);
             }
-            throw sm.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+            throw tm.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
         }
         Constructor<CheckInquiryResponse.Data> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = CheckInquiryResponse.Data.class.getDeclaredConstructor(String.class, String.class, CheckInquiryResponse.Attributes.class, Integer.TYPE, sm.c.f49097c);
+            constructor = CheckInquiryResponse.Data.class.getDeclaredConstructor(String.class, String.class, CheckInquiryResponse.Attributes.class, Integer.TYPE, tm.c.f49935c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
@@ -101,9 +101,9 @@ public final class CheckInquiryResponse_DataJsonAdapter extends h {
                 Intrinsics.checkNotNullExpressionValue(newInstance, "newInstance(...)");
                 return newInstance;
             }
-            throw sm.c.o("type", "type", reader);
+            throw tm.c.o("type", "type", reader);
         }
-        throw sm.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
+        throw tm.c.o(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -111,11 +111,11 @@ public final class CheckInquiryResponse_DataJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (data != null) {
             writer.l();
-            writer.A0(StackTraceHelper.ID_KEY);
+            writer.t0(StackTraceHelper.ID_KEY);
             this.stringAdapter.toJson(writer, data.getId());
-            writer.A0("type");
+            writer.t0("type");
             this.stringAdapter.toJson(writer, data.getType());
-            writer.A0("attributes");
+            writer.t0("attributes");
             this.attributesAdapter.toJson(writer, data.getAttributes());
             writer.E();
             return;

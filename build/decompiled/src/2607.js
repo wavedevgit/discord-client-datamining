@@ -12,11 +12,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var1.default = var0;
     var3 = {
-        'lastWeek': '先週のeeeeのp',
-        'yesterday': '昨日のp',
-        'today': '今日のp',
-        'tomorrow': '明日のp',
-        'nextWeek': '翌週のeeeeのp',
+        'lastWeek': "'viime' eeee 'klo' p",
+        'yesterday': "'eilen klo' p",
+        'today': "'tänään klo' p",
+        'tomorrow': "'huomenna klo' p",
+        'nextWeek': "'ensi' eeee 'klo' p",
         'other': 'P'
     };
     var _closure1_slot0 = var3;

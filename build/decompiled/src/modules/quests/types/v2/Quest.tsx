@@ -7,13 +7,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var1 = function arg0() {
-        _fun46654: for (var _fun46654_ip = 0;;) switch (_fun46654_ip) {
+        _fun46744: for (var _fun46744_ip = 0;;) switch (_fun46744_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 if (!(var0 == var1)) {
-                    _fun46654_ip = 13;
-                    continue _fun46654
+                    _fun46744_ip = 13;
+                    continue _fun46744
                 }
             case 9:
                 var0 = undefined;
@@ -80,6 +80,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var1.assets;
         var3 = var3.quest_bar_hero;
         var2.questBarHero = var3;
+        var3 = var1.assets;
+        var3 = var3.quest_bar_hero_blurhash;
+        var2.questBarHeroBlurhash = var3;
         var3 = var1.assets;
         var3 = var3.quest_bar_hero_video;
         var2.questBarHeroVideo = var3;
@@ -155,4 +158,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.questFromServerV2 = var3;
     var2.questCosponsorMetadataFromServer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5208, 5212, 5213, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5238, 5242, 5243, 2]);

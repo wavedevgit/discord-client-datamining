@@ -25,6 +25,6 @@ public final class SharedCustomThemeViewHolder extends MessagePartViewHolder {
         Intrinsics.checkNotNullParameter(accessory, "accessory");
         Intrinsics.checkNotNullParameter(onTapPreview, "onTapPreview");
         Intrinsics.checkNotNullParameter(onViewed, "onViewed");
-        this.sharedCustomThemeView.m708bindpPZZVto(accessory.mo536getMessageId3Eiw7ao(), accessory.getData(), accessory.getAuthor(), onTapPreview, onViewed);
+        this.sharedCustomThemeView.m710bindpPZZVto(accessory.mo538getMessageId3Eiw7ao(), accessory.getData(), accessory.getAuthor(), onTapPreview, onViewed);
     }
 }

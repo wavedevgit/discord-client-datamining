@@ -2,32 +2,32 @@ package net.time4j.calendar;
 
 import java.util.Collections;
 import java.util.Map;
-import jt.a0;
-import jt.z;
+import kt.a0;
+import kt.z;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 final class n implements z {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f40481d;
+    private final Map f40344d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final jt.p f40482e;
+    private final kt.p f40345e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public n(jt.k kVar, jt.p pVar) {
-        this.f40481d = Collections.singletonMap("calendrical", kVar);
-        this.f40482e = pVar;
+    public n(kt.k kVar, kt.p pVar) {
+        this.f40344d = Collections.singletonMap("calendrical", kVar);
+        this.f40345e = pVar;
     }
 
-    private jt.k b(jt.q qVar) {
-        return (jt.k) this.f40481d.get("calendrical");
+    private kt.k b(kt.q qVar) {
+        return (kt.k) this.f40344d.get("calendrical");
     }
 
     private static Integer m(long j10) {
         long j11;
-        long f10 = gt.c.f(a0.MODIFIED_JULIAN_DATE.l(j10, a0.UTC), 678881L);
-        long b10 = gt.c.b(f10, 146097);
-        int d10 = gt.c.d(f10, 146097);
+        long f10 = ht.c.f(a0.MODIFIED_JULIAN_DATE.l(j10, a0.UTC), 678881L);
+        long b10 = ht.c.b(f10, 146097);
+        int d10 = ht.c.d(f10, 146097);
         if (d10 == 146096) {
             j11 = (b10 + 1) * 400;
         } else {
@@ -44,50 +44,50 @@ final class n implements z {
                 }
             }
         }
-        return Integer.valueOf(gt.c.g(j11));
+        return Integer.valueOf(ht.c.g(j11));
     }
 
-    @Override // jt.z
+    @Override // kt.z
     /* renamed from: c */
-    public jt.p a(jt.q qVar) {
+    public kt.p a(kt.q qVar) {
         return null;
     }
 
-    @Override // jt.z
+    @Override // kt.z
     /* renamed from: d */
-    public jt.p h(jt.q qVar) {
+    public kt.p g(kt.q qVar) {
         return null;
     }
 
-    @Override // jt.z
+    @Override // kt.z
     /* renamed from: e */
-    public Integer j(jt.q qVar) {
-        jt.k b10 = b(qVar);
-        return m(b10.c(((jt.q) b10.b(b10.a())).C(this.f40482e, 1)));
+    public Integer h(kt.q qVar) {
+        kt.k b10 = b(qVar);
+        return m(b10.c(((kt.q) b10.b(b10.a())).C(this.f40345e, 1)));
     }
 
-    @Override // jt.z
+    @Override // kt.z
     /* renamed from: f */
-    public Integer p(jt.q qVar) {
-        jt.k b10 = b(qVar);
-        return m(b10.c(((jt.q) b10.b(b10.d())).C(this.f40482e, 1)));
+    public Integer o(kt.q qVar) {
+        kt.k b10 = b(qVar);
+        return m(b10.c(((kt.q) b10.b(b10.d())).C(this.f40345e, 1)));
     }
 
-    @Override // jt.z
-    /* renamed from: g */
-    public Integer x(jt.q qVar) {
-        return m(b(qVar).c(qVar.C(this.f40482e, 1)));
+    @Override // kt.z
+    /* renamed from: j */
+    public Integer x(kt.q qVar) {
+        return m(b(qVar).c(qVar.C(this.f40345e, 1)));
     }
 
-    @Override // jt.z
-    /* renamed from: i */
-    public boolean l(jt.q qVar, Integer num) {
+    @Override // kt.z
+    /* renamed from: k */
+    public boolean l(kt.q qVar, Integer num) {
         return x(qVar).equals(num);
     }
 
-    @Override // jt.z
+    @Override // kt.z
     /* renamed from: n */
-    public jt.q w(jt.q qVar, Integer num, boolean z10) {
+    public kt.q v(kt.q qVar, Integer num, boolean z10) {
         if (l(qVar, num)) {
             return qVar;
         }

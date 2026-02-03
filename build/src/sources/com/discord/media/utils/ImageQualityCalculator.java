@@ -3,8 +3,8 @@ package com.discord.media.utils;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import com.facebook.react.views.text.internal.span.SetSpanOperation;
-import gs.g;
-import gs.m0;
+import hs.g;
+import hs.m0;
 import kotlin.Metadata;
 import kotlin.coroutines.Continuation;
 import org.jetbrains.annotations.NotNull;
@@ -164,13 +164,13 @@ public final class ImageQualityCalculator {
         double d10;
         int i12;
         int i13 = 0;
-        int c10 = qr.c.c(0, i11 - 8, 4);
+        int c10 = rr.c.c(0, i11 - 8, 4);
         if (c10 >= 0) {
             int i14 = 0;
             int i15 = 0;
             d10 = 0.0d;
             while (true) {
-                int c11 = qr.c.c(i13, i10 - 8, 4);
+                int c11 = rr.c.c(i13, i10 - 8, 4);
                 if (c11 >= 0) {
                     int i16 = i13;
                     while (true) {

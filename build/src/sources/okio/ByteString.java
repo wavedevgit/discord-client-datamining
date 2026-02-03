@@ -1,13 +1,13 @@
 package okio;
 
 import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
-import iu.m0;
 import java.io.OutputStream;
 import java.io.Serializable;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.security.MessageDigest;
 import java.util.Arrays;
+import ju.m0;
 import kotlin.collections.i;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -16,19 +16,19 @@ import kotlin.text.StringsKt;
 public class ByteString implements Serializable, Comparable {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f44379o = new a(null);
+    public static final a f44507o = new a(null);
 
     /* renamed from: p  reason: collision with root package name */
-    public static final ByteString f44380p = new ByteString(new byte[0]);
+    public static final ByteString f44508p = new ByteString(new byte[0]);
 
     /* renamed from: d  reason: collision with root package name */
-    private final byte[] f44381d;
+    private final byte[] f44509d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient int f44382e;
+    private transient int f44510e;
 
     /* renamed from: i  reason: collision with root package name */
-    private transient String f44383i;
+    private transient String f44511i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -77,7 +77,7 @@ public class ByteString implements Serializable, Comparable {
                 byte[] bArr = new byte[length];
                 for (int i10 = 0; i10 < length; i10++) {
                     int i11 = i10 * 2;
-                    bArr[i10] = (byte) ((ju.b.b(str.charAt(i11)) << 4) + ju.b.b(str.charAt(i11 + 1)));
+                    bArr[i10] = (byte) ((ku.b.b(str.charAt(i11)) << 4) + ku.b.b(str.charAt(i11 + 1)));
                 }
                 return new ByteString(bArr);
             }
@@ -119,7 +119,7 @@ public class ByteString implements Serializable, Comparable {
 
     public ByteString(byte[] data) {
         Intrinsics.checkNotNullParameter(data, "data");
-        this.f44381d = data;
+        this.f44509d = data;
     }
 
     public static /* synthetic */ ByteString J(ByteString byteString, int i10, int i11, int i12, Object obj) {
@@ -136,11 +136,11 @@ public class ByteString implements Serializable, Comparable {
     }
 
     public static final ByteString f(String str) {
-        return f44379o.e(str);
+        return f44507o.e(str);
     }
 
     public static final ByteString h(String str) {
-        return f44379o.g(str);
+        return f44507o.g(str);
     }
 
     public static /* synthetic */ int t(ByteString byteString, ByteString byteString2, int i10, int i11, Object obj) {
@@ -165,23 +165,23 @@ public class ByteString implements Serializable, Comparable {
 
     public boolean A(int i10, ByteString other, int i11, int i12) {
         Intrinsics.checkNotNullParameter(other, "other");
-        return other.B(i11, k(), i10, i12);
+        return other.B(i11, l(), i10, i12);
     }
 
     public boolean B(int i10, byte[] other, int i11, int i12) {
         Intrinsics.checkNotNullParameter(other, "other");
-        if (i10 >= 0 && i10 <= k().length - i12 && i11 >= 0 && i11 <= other.length - i12 && b.a(k(), i10, other, i11, i12)) {
+        if (i10 >= 0 && i10 <= l().length - i12 && i11 >= 0 && i11 <= other.length - i12 && b.a(l(), i10, other, i11, i12)) {
             return true;
         }
         return false;
     }
 
     public final void C(int i10) {
-        this.f44382e = i10;
+        this.f44510e = i10;
     }
 
     public final void D(String str) {
-        this.f44383i = str;
+        this.f44511i = str;
     }
 
     public final ByteString E() {
@@ -204,26 +204,26 @@ public class ByteString implements Serializable, Comparable {
     public ByteString I(int i10, int i11) {
         int e10 = b.e(this, i11);
         if (i10 >= 0) {
-            if (e10 <= k().length) {
+            if (e10 <= l().length) {
                 if (e10 - i10 >= 0) {
-                    if (i10 == 0 && e10 == k().length) {
+                    if (i10 == 0 && e10 == l().length) {
                         return this;
                     }
-                    return new ByteString(i.q(k(), i10, e10));
+                    return new ByteString(i.q(l(), i10, e10));
                 }
                 throw new IllegalArgumentException("endIndex < beginIndex");
             }
-            throw new IllegalArgumentException(("endIndex > length(" + k().length + ')').toString());
+            throw new IllegalArgumentException(("endIndex > length(" + l().length + ')').toString());
         }
         throw new IllegalArgumentException("beginIndex < 0");
     }
 
     public ByteString K() {
-        for (int i10 = 0; i10 < k().length; i10++) {
-            byte b10 = k()[i10];
+        for (int i10 = 0; i10 < l().length; i10++) {
+            byte b10 = l()[i10];
             if (b10 >= 65 && b10 <= 90) {
-                byte[] k10 = k();
-                byte[] copyOf = Arrays.copyOf(k10, k10.length);
+                byte[] l10 = l();
+                byte[] copyOf = Arrays.copyOf(l10, l10.length);
                 Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
                 copyOf[i10] = (byte) (b10 + 32);
                 for (int i11 = i10 + 1; i11 < copyOf.length; i11++) {
@@ -239,8 +239,8 @@ public class ByteString implements Serializable, Comparable {
     }
 
     public byte[] L() {
-        byte[] k10 = k();
-        byte[] copyOf = Arrays.copyOf(k10, k10.length);
+        byte[] l10 = l();
+        byte[] copyOf = Arrays.copyOf(l10, l10.length);
         Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
         return copyOf;
     }
@@ -257,12 +257,12 @@ public class ByteString implements Serializable, Comparable {
 
     public void N(OutputStream out) {
         Intrinsics.checkNotNullParameter(out, "out");
-        out.write(this.f44381d);
+        out.write(this.f44509d);
     }
 
     public void O(Buffer buffer, int i10, int i11) {
         Intrinsics.checkNotNullParameter(buffer, "buffer");
-        ju.b.d(this, buffer, i10, i11);
+        ku.b.d(this, buffer, i10, i11);
     }
 
     public final int a() {
@@ -270,7 +270,7 @@ public class ByteString implements Serializable, Comparable {
     }
 
     public String d() {
-        return okio.a.c(k(), null, 1, null);
+        return okio.a.c(l(), null, 1, null);
     }
 
     @Override // java.lang.Comparable
@@ -281,10 +281,10 @@ public class ByteString implements Serializable, Comparable {
         int G2 = other.G();
         int min = Math.min(G, G2);
         for (int i10 = 0; i10 < min; i10++) {
-            int j10 = j(i10) & 255;
-            int j11 = other.j(i10) & 255;
-            if (j10 != j11) {
-                if (j10 < j11) {
+            int k10 = k(i10) & 255;
+            int k11 = other.k(i10) & 255;
+            if (k10 != k11) {
+                if (k10 < k11) {
                     return -1;
                 } else {
                     return 1;
@@ -306,7 +306,7 @@ public class ByteString implements Serializable, Comparable {
         }
         if (obj instanceof ByteString) {
             ByteString byteString = (ByteString) obj;
-            if (byteString.G() == k().length && byteString.B(0, k(), 0, k().length)) {
+            if (byteString.G() == l().length && byteString.B(0, l(), 0, l().length)) {
                 return true;
             }
         }
@@ -316,18 +316,18 @@ public class ByteString implements Serializable, Comparable {
     public ByteString g(String algorithm) {
         Intrinsics.checkNotNullParameter(algorithm, "algorithm");
         MessageDigest messageDigest = MessageDigest.getInstance(algorithm);
-        messageDigest.update(this.f44381d, 0, G());
+        messageDigest.update(this.f44509d, 0, G());
         byte[] digest = messageDigest.digest();
         Intrinsics.checkNotNull(digest);
         return new ByteString(digest);
     }
 
     public int hashCode() {
-        int l10 = l();
-        if (l10 != 0) {
-            return l10;
+        int m10 = m();
+        if (m10 != 0) {
+            return m10;
         }
-        int hashCode = Arrays.hashCode(k());
+        int hashCode = Arrays.hashCode(l());
         C(hashCode);
         return hashCode;
     }
@@ -337,35 +337,35 @@ public class ByteString implements Serializable, Comparable {
         return A(G() - suffix.G(), suffix, 0, suffix.G());
     }
 
-    public final byte j(int i10) {
+    public final byte k(int i10) {
         return v(i10);
     }
 
-    public final byte[] k() {
-        return this.f44381d;
+    public final byte[] l() {
+        return this.f44509d;
     }
 
-    public final int l() {
-        return this.f44382e;
+    public final int m() {
+        return this.f44510e;
     }
 
     public int o() {
-        return k().length;
+        return l().length;
     }
 
     public final String p() {
-        return this.f44383i;
+        return this.f44511i;
     }
 
     public String q() {
-        byte[] k10;
-        char[] cArr = new char[k().length * 2];
+        byte[] l10;
+        char[] cArr = new char[l().length * 2];
         int i10 = 0;
-        for (byte b10 : k()) {
+        for (byte b10 : l()) {
             int i11 = i10 + 1;
-            cArr[i10] = ju.b.f()[(b10 >> 4) & 15];
+            cArr[i10] = ku.b.f()[(b10 >> 4) & 15];
             i10 += 2;
-            cArr[i11] = ju.b.f()[b10 & 15];
+            cArr[i11] = ku.b.f()[b10 & 15];
         }
         return StringsKt.v(cArr);
     }
@@ -377,10 +377,10 @@ public class ByteString implements Serializable, Comparable {
 
     public int s(byte[] other, int i10) {
         Intrinsics.checkNotNullParameter(other, "other");
-        int length = k().length - other.length;
+        int length = l().length - other.length;
         int max = Math.max(i10, 0);
         if (max <= length) {
-            while (!b.a(k(), max, other, 0, other.length)) {
+            while (!b.a(l(), max, other, 0, other.length)) {
                 if (max != length) {
                     max++;
                 } else {
@@ -394,25 +394,25 @@ public class ByteString implements Serializable, Comparable {
 
     public String toString() {
         ByteString byteString;
-        if (k().length == 0) {
+        if (l().length == 0) {
             return "[size=0]";
         }
-        int a10 = ju.b.a(k(), 64);
+        int a10 = ku.b.a(l(), 64);
         if (a10 == -1) {
-            if (k().length <= 64) {
+            if (l().length <= 64) {
                 return "[hex=" + q() + ']';
             }
             StringBuilder sb2 = new StringBuilder();
             sb2.append("[size=");
-            sb2.append(k().length);
+            sb2.append(l().length);
             sb2.append(" hex=");
             int e10 = b.e(this, 64);
-            if (e10 <= k().length) {
+            if (e10 <= l().length) {
                 if (e10 >= 0) {
-                    if (e10 == k().length) {
+                    if (e10 == l().length) {
                         byteString = this;
                     } else {
-                        byteString = new ByteString(i.q(k(), 0, e10));
+                        byteString = new ByteString(i.q(l(), 0, e10));
                     }
                     sb2.append(byteString.q());
                     sb2.append("…]");
@@ -420,24 +420,24 @@ public class ByteString implements Serializable, Comparable {
                 }
                 throw new IllegalArgumentException("endIndex < beginIndex");
             }
-            throw new IllegalArgumentException(("endIndex > length(" + k().length + ')').toString());
+            throw new IllegalArgumentException(("endIndex > length(" + l().length + ')').toString());
         }
         String M = M();
         String substring = M.substring(0, a10);
         Intrinsics.checkNotNullExpressionValue(substring, "substring(...)");
         String J = StringsKt.J(StringsKt.J(StringsKt.J(substring, "\\", "\\\\", false, 4, null), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, "\\n", false, 4, null), "\r", "\\r", false, 4, null);
         if (a10 < M.length()) {
-            return "[size=" + k().length + " text=" + J + "…]";
+            return "[size=" + l().length + " text=" + J + "…]";
         }
         return "[text=" + J + ']';
     }
 
     public byte[] u() {
-        return k();
+        return l();
     }
 
     public byte v(int i10) {
-        return k()[i10];
+        return l()[i10];
     }
 
     public final int w(ByteString other, int i10) {
@@ -447,8 +447,8 @@ public class ByteString implements Serializable, Comparable {
 
     public int x(byte[] other, int i10) {
         Intrinsics.checkNotNullParameter(other, "other");
-        for (int min = Math.min(b.e(this, i10), k().length - other.length); -1 < min; min--) {
-            if (b.a(k(), min, other, 0, other.length)) {
+        for (int min = Math.min(b.e(this, i10), l().length - other.length); -1 < min; min--) {
+            if (b.a(l(), min, other, 0, other.length)) {
                 return min;
             }
         }

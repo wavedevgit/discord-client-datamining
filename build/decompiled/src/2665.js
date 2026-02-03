@@ -1,6 +1,82 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
+    var0 = function arg0, arg1, arg2() {
+        _fun22135: for (var _fun22135_ip = 0;;) switch (_fun22135_ip) {
+            case 0:
+                var0 = arg0;
+                var4 = arg1;
+                var1 = 1;
+                if (!(var1 !== var4)) {
+                    _fun22135_ip = 79;
+                    continue _fun22135
+                }
+            case 13:
+                var1 = 100;
+                var2 = var4 % var1;
+                var1 = 20;
+                if (!(var2 <= var1)) {
+                    _fun22135_ip = 34;
+                    continue _fun22135
+                }
+            case 27:
+                var1 = 10;
+                if (!(!(var2 > var1))) {
+                    _fun22135_ip = 71;
+                    continue _fun22135
+                }
+            case 34:
+                var1 = 10;
+                var2 = var2 % var1;
+                var1 = 2;
+                if (!(var2 >= var1)) {
+                    _fun22135_ip = 55;
+                    continue _fun22135
+                }
+            case 48:
+                var1 = 4;
+                if (!(!(var2 <= var1))) {
+                    _fun22135_ip = 63;
+                    continue _fun22135
+                }
+            case 55:
+                var1 = var0.other;
+                _fun22135_ip = 69;
+                continue _fun22135;
+            case 63:
+                var1 = var0.twoFour;
+            case 69:
+                _fun22135_ip = 85;
+                continue _fun22135;
+            case 71:
+                var1 = var0.other;
+                _fun22135_ip = 85;
+                continue _fun22135;
+            case 79:
+                var1 = var0.one;
+            case 85:
+                var2 = 'string';
+                var0 = typeof var1;
+                var3 = var1;
+                if (!(var2 !== var0)) {
+                    _fun22135_ip = 106;
+                    continue _fun22135
+                }
+            case 99:
+                var0 = arg2;
+                var3 = var1[var0];
+            case 106:
+                var2 = var3.replace;
+                var0 = global;
+                var1 = var0.String;
+                var0 = undefined;
+                var1 = var1.bind(var0)(var4);
+                var0 = '{{count}}';
+                var0 = var2.bind(var3)(var0, var1);
+                return var0;
+        }
+    };
+    var _closure1_slot1 = var0;
     var0 = global;
     var5 = var0.Object;
     var4 = var5.defineProperty;
@@ -13,170 +89,202 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.default = var0;
     var3 = {};
     var4 = {
-        'one': 'น้อยกว่า 1 วินาที',
-        'other': 'น้อยกว่า {{count}} วินาที'
+        'one': null,
+        'twoFour': 'mniej niż {{count}} sekundy',
+        'other': 'mniej niż {{count}} sekund'
     };
+    var5 = {
+        'regular': 'mniej niż sekunda',
+        'past': 'mniej niż sekundę',
+        'future': 'mniej niż sekundę'
+    };
+    var4.one = var5;
     var3.lessThanXSeconds = var4;
     var4 = {
-        'one': '1 วินาที',
-        'other': '{{count}} วินาที'
+        'one': null,
+        'twoFour': '{{count}} sekundy',
+        'other': '{{count}} sekund'
     };
+    var5 = {
+        'regular': 'sekunda',
+        'past': 'sekundę',
+        'future': 'sekundę'
+    };
+    var4.one = var5;
     var3.xSeconds = var4;
-    var4 = 'ครึ่งนาที';
+    var4 = {
+        'one': 'pół minuty',
+        'twoFour': 'pół minuty',
+        'other': 'pół minuty'
+    };
     var3.halfAMinute = var4;
     var4 = {
-        'one': 'น้อยกว่า 1 นาที',
-        'other': 'น้อยกว่า {{count}} นาที'
+        'one': null,
+        'twoFour': 'mniej niż {{count}} minuty',
+        'other': 'mniej niż {{count}} minut'
     };
+    var5 = {
+        'regular': 'mniej niż minuta',
+        'past': 'mniej niż minutę',
+        'future': 'mniej niż minutę'
+    };
+    var4.one = var5;
     var3.lessThanXMinutes = var4;
     var4 = {
-        'one': '1 นาที',
-        'other': '{{count}} นาที'
+        'one': null,
+        'twoFour': '{{count}} minuty',
+        'other': '{{count}} minut'
     };
+    var5 = {
+        'regular': 'minuta',
+        'past': 'minutę',
+        'future': 'minutę'
+    };
+    var4.one = var5;
     var3.xMinutes = var4;
     var4 = {
-        'one': 'ประมาณ 1 ชั่วโมง',
-        'other': 'ประมาณ {{count}} ชั่วโมง'
+        'one': null,
+        'twoFour': 'około {{count}} godziny',
+        'other': 'około {{count}} godzin'
     };
+    var5 = {
+        'regular': 'około godziny',
+        'past': 'około godziny',
+        'future': 'około godzinę'
+    };
+    var4.one = var5;
     var3.aboutXHours = var4;
     var4 = {
-        'one': '1 ชั่วโมง',
-        'other': '{{count}} ชั่วโมง'
+        'one': null,
+        'twoFour': '{{count}} godziny',
+        'other': '{{count}} godzin'
     };
+    var5 = {
+        'regular': 'godzina',
+        'past': 'godzinę',
+        'future': 'godzinę'
+    };
+    var4.one = var5;
     var3.xHours = var4;
     var4 = {
-        'one': '1 วัน',
-        'other': '{{count}} วัน'
+        'one': null,
+        'twoFour': '{{count}} dni',
+        'other': '{{count}} dni'
     };
+    var5 = {
+        'regular': 'dzień',
+        'past': 'dzień',
+        'future': '1 dzień'
+    };
+    var4.one = var5;
     var3.xDays = var4;
     var4 = {
-        'one': 'ประมาณ 1 สัปดาห์',
-        'other': 'ประมาณ {{count}} สัปดาห์'
+        'one': 'około tygodnia',
+        'twoFour': 'około {{count}} tygodni',
+        'other': 'około {{count}} tygodni'
     };
     var3.aboutXWeeks = var4;
     var4 = {
-        'one': '1 สัปดาห์',
-        'other': '{{count}} สัปดาห์'
+        'one': 'tydzień',
+        'twoFour': '{{count}} tygodnie',
+        'other': '{{count}} tygodni'
     };
     var3.xWeeks = var4;
     var4 = {
-        'one': 'ประมาณ 1 เดือน',
-        'other': 'ประมาณ {{count}} เดือน'
+        'one': 'około miesiąc',
+        'twoFour': 'około {{count}} miesiące',
+        'other': 'około {{count}} miesięcy'
     };
     var3.aboutXMonths = var4;
     var4 = {
-        'one': '1 เดือน',
-        'other': '{{count}} เดือน'
+        'one': 'miesiąc',
+        'twoFour': '{{count}} miesiące',
+        'other': '{{count}} miesięcy'
     };
     var3.xMonths = var4;
     var4 = {
-        'one': 'ประมาณ 1 ปี',
-        'other': 'ประมาณ {{count}} ปี'
+        'one': 'około rok',
+        'twoFour': 'około {{count}} lata',
+        'other': 'około {{count}} lat'
     };
     var3.aboutXYears = var4;
     var4 = {
-        'one': '1 ปี',
-        'other': '{{count}} ปี'
+        'one': 'rok',
+        'twoFour': '{{count}} lata',
+        'other': '{{count}} lat'
     };
     var3.xYears = var4;
     var4 = {
-        'one': 'มากกว่า 1 ปี',
-        'other': 'มากกว่า {{count}} ปี'
+        'one': 'ponad rok',
+        'twoFour': 'ponad {{count}} lata',
+        'other': 'ponad {{count}} lat'
     };
     var3.overXYears = var4;
     var4 = {
-        'one': 'เกือบ 1 ปี',
-        'other': 'เกือบ {{count}} ปี'
+        'one': 'prawie rok',
+        'twoFour': 'prawie {{count}} lata',
+        'other': 'prawie {{count}} lat'
     };
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
     var2 = function arg0, arg1, arg2() {
-        _fun22125: for (var _fun22125_ip = 0;;) switch (_fun22125_ip) {
+        _fun22136: for (var _fun22136_ip = 0;;) switch (_fun22136_ip) {
             case 0:
-                var3 = arg0;
-                var8 = arg1;
+                var6 = arg1;
                 var1 = arg2;
-                var0 = _closure1_slot0;
-                var2 = var0[var3];
-                var5 = 'string';
-                var0 = typeof var2;
-                var4 = var2;
-                if (!(var5 !== var0)) {
-                    _fun22125_ip = 90;
-                    continue _fun22125
+                var3 = _closure1_slot0;
+                var0 = arg0;
+                var5 = var3[var0];
+                var0 = null;
+                if (!(var0 != var1)) {
+                    _fun22136_ip = 35;
+                    continue _fun22136
                 }
-            case 34:
-                var0 = 1;
-                if (!(var0 !== var8)) {
-                    _fun22125_ip = 81;
-                    continue _fun22125
+            case 26:
+                var0 = var1.addSuffix;
+                if (var0) {
+                    _fun22136_ip = 54;
+                    continue _fun22136
                 }
-            case 41:
-                var7 = var2.other;
-                var6 = var7.replace;
-                var0 = global;
-                var5 = var0.String;
-                var0 = undefined;
-                var5 = var5.bind(var0)(var8);
-                var0 = '{{count}}';
-                var0 = var6.bind(var7)(var0, var5);
-                _fun22125_ip = 87;
-                continue _fun22125;
-            case 81:
-                var0 = var2.one;
-            case 87:
-                var4 = var0;
-            case 90:
-                var2 = null;
-                var0 = var4;
-                if (!(var2 != var1)) {
-                    _fun22125_ip = 180;
-                    continue _fun22125
+            case 35:
+                var4 = _closure1_slot1;
+                var3 = undefined;
+                var0 = 'regular';
+                var0 = var4.bind(var3)(var5, var6, var0);
+                _fun22136_ip = 134;
+                continue _fun22136;
+            case 54:
+                var3 = var1.comparison;
+                if (!var3) {
+                    _fun22136_ip = 75;
+                    continue _fun22136
                 }
-            case 99:
-                var2 = var1.addSuffix;
-                var0 = var4;
-                if (!var2) {
-                    _fun22125_ip = 180;
-                    continue _fun22125
-                }
-            case 111:
-                var2 = var1.comparison;
-                if (!var2) {
-                    _fun22125_ip = 132;
-                    continue _fun22125
-                }
-            case 120:
-                var2 = var1.comparison;
+            case 63:
+                var3 = var1.comparison;
                 var1 = 0;
-                if (!(!(var2 > var1))) {
-                    _fun22125_ip = 144;
-                    continue _fun22125
+                if (!(!(var3 > var1))) {
+                    _fun22136_ip = 104;
+                    continue _fun22136
                 }
-            case 132:
-                var1 = 'ที่ผ่านมา';
-                var1 = var4 + var1;
-                _fun22125_ip = 177;
-                continue _fun22125;
-            case 144:
-                var2 = 'halfAMinute';
-                if (!(var2 !== var3)) {
-                    _fun22125_ip = 164;
-                    continue _fun22125
-                }
-            case 152:
-                var2 = 'ใน ';
-                var2 = var2 + var4;
-                _fun22125_ip = 174;
-                continue _fun22125;
-            case 164:
-                var3 = 'ใน';
-                var2 = var3 + var4;
-            case 174:
-                var1 = var2;
-            case 177:
+            case 75:
+                var4 = _closure1_slot1;
+                var3 = undefined;
+                var1 = 'past';
+                var3 = var4.bind(var3)(var5, var6, var1);
+                var1 = ' temu';
+                var1 = var3 + var1;
+                _fun22136_ip = 131;
+                continue _fun22136;
+            case 104:
+                var4 = _closure1_slot1;
+                var3 = undefined;
+                var2 = 'future';
+                var3 = var4.bind(var3)(var5, var6, var2);
+                var2 = 'za ';
+                var1 = var2 + var3;
+            case 131:
                 var0 = var1;
-            case 180:
+            case 134:
                 return var0;
         }
     };

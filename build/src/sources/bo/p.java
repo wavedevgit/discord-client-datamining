@@ -1,28 +1,39 @@
 package bo;
 
-import com.withpersona.sdk2.inquiry.network.dto.NextStep;
-import java.util.ArrayList;
-import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
+import bo.c4;
+import nn.t0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class p {
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final String b(List list, String str, String str2, String str3) {
-        ArrayList arrayList = new ArrayList();
-        for (Object obj : list) {
-            NextStep.GovernmentId.LocalizationOverride localizationOverride = (NextStep.GovernmentId.LocalizationOverride) obj;
-            if (StringsKt.A(localizationOverride.getCountryCode(), str, true) && Intrinsics.areEqual(localizationOverride.getPage(), str3) && (Intrinsics.areEqual(localizationOverride.getIdClass(), str2) || localizationOverride.getIdClass() == null)) {
-                if (Intrinsics.areEqual(localizationOverride.getKey(), str2)) {
-                    arrayList.add(obj);
-                }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public /* synthetic */ class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final /* synthetic */ int[] f7254a;
+
+        static {
+            int[] iArr = new int[c4.e.values().length];
+            try {
+                iArr[c4.e.f6659o.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
             }
+            try {
+                iArr[c4.e.f6661q.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            f7254a = iArr;
         }
-        NextStep.GovernmentId.LocalizationOverride localizationOverride2 = (NextStep.GovernmentId.LocalizationOverride) CollectionsKt.firstOrNull(arrayList);
-        if (localizationOverride2 != null) {
-            return localizationOverride2.getText();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final t0.c b(c4.e eVar) {
+        int i10 = a.f7254a[eVar.ordinal()];
+        if (i10 != 1) {
+            if (i10 != 2) {
+                return t0.c.f42070e;
+            }
+            return t0.c.f42069d;
         }
-        return null;
+        return t0.c.f42069d;
     }
 }

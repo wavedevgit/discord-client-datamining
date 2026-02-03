@@ -7,7 +7,7 @@ import android.os.Parcelable;
 public abstract class b1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ClassLoader f42752a = b1.class.getClassLoader();
+    private static final ClassLoader f42880a = b1.class.getClassLoader();
 
     public static void a(Parcel parcel, Parcelable parcelable) {
         parcel.writeInt(1);

@@ -1,353 +1,190 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
     var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var2 = {};
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
     var0 = true;
-    var2.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var2);
-    var4 = {};
-    var0 = 'function pnpm_presetsTs1(event){return{transform:[{translateX:event.translationX}]};}';
-    var4.code = var0;
-    var2 = {};
-    var0 = 'function pnpm_presetsTs2(event,screenSize){return{transform:[{translateX:(event.translationX-screenSize.width)*0.3}]};}';
-    var2.code = var0;
-    var11 = {};
-    var0 = function arg0() {
-        var0 = {};
-        var2 = {};
-        var1 = arg0;
-        var1 = var1.translationX;
-        var2.translateX = var1;
-        var1 = new Array(1);
-        var1[0] = var2;
-        var0.transform = var1;
-        return var0;
-    };
-    var5 = {};
-    var0.__closure = var5;
-    var5 = 14848134276742.0;
-    var0.__workletHash = var5;
-    var0.__initData = var4;
-    var11.topScreenStyle = var0;
-    var0 = function arg0, arg1() {
-        var0 = {};
-        var2 = {};
-        var1 = arg0;
-        var3 = var1.translationX;
-        var1 = arg1;
-        var1 = var1.width;
-        var3 = var3 - var1;
-        var1 = 0.3;
-        var1 = var1 * var3;
-        var2.translateX = var1;
-        var1 = new Array(1);
-        var1[0] = var2;
-        var0.transform = var1;
-        return var0;
-    };
-    var4 = {};
-    var0.__closure = var4;
-    var4 = 12797035112106.0;
-    var0.__workletHash = var4;
-    var0.__initData = var2;
-    var11.belowTopScreenStyle = var0;
-    var4 = {};
-    var0 = 'function pnpm_presetsTs3(event){return{transform:[{translateX:event.translationX}]};}';
-    var4.code = var0;
-    var2 = {};
-    var0 = 'function pnpm_presetsTs4(event,screenSize){return{transform:[{translateX:(event.translationX+screenSize.width)*0.3}]};}';
-    var2.code = var0;
-    var10 = {};
-    var0 = function arg0() {
-        var0 = {};
-        var2 = {};
-        var1 = arg0;
-        var1 = var1.translationX;
-        var2.translateX = var1;
-        var1 = new Array(1);
-        var1[0] = var2;
-        var0.transform = var1;
-        return var0;
-    };
-    var5 = {};
-    var0.__closure = var5;
-    var5 = 5793766989636.0;
-    var0.__workletHash = var5;
-    var0.__initData = var4;
-    var10.topScreenStyle = var0;
-    var0 = function arg0, arg1() {
-        var0 = {};
-        var2 = {};
-        var1 = arg0;
-        var3 = var1.translationX;
-        var1 = arg1;
-        var1 = var1.width;
-        var3 = var3 + var1;
-        var1 = 0.3;
-        var1 = var1 * var3;
-        var2.translateX = var1;
-        var1 = new Array(1);
-        var1[0] = var2;
-        var0.transform = var1;
-        return var0;
-    };
-    var4 = {};
-    var0.__closure = var4;
-    var4 = 13576157887338.0;
-    var0.__workletHash = var4;
-    var0.__initData = var2;
-    var10.belowTopScreenStyle = var0;
-    var4 = {};
-    var0 = 'function pnpm_presetsTs5(event){return{transform:[{translateY:event.translationY}]};}';
-    var4.code = var0;
-    var2 = {};
-    var0 = 'function pnpm_presetsTs6(event,screenSize){return{transform:[{translateY:(event.translationY-screenSize.height)*0.3}]};}';
-    var2.code = var0;
-    var9 = {};
-    var0 = function arg0() {
-        var0 = {};
-        var2 = {};
-        var1 = arg0;
-        var1 = var1.translationY;
-        var2.translateY = var1;
-        var1 = new Array(1);
-        var1[0] = var2;
-        var0.transform = var1;
-        return var0;
-    };
-    var5 = {};
-    var0.__closure = var5;
-    var5 = 15806696129186.0;
-    var0.__workletHash = var5;
-    var0.__initData = var4;
-    var9.topScreenStyle = var0;
-    var0 = function arg0, arg1() {
-        var0 = {};
-        var2 = {};
-        var1 = arg0;
-        var3 = var1.translationY;
-        var1 = arg1;
-        var1 = var1.height;
-        var3 = var3 - var1;
-        var1 = 0.3;
-        var1 = var1 * var3;
-        var2.translateY = var1;
-        var1 = new Array(1);
-        var1[0] = var2;
-        var0.transform = var1;
-        return var0;
-    };
-    var4 = {};
-    var0.__closure = var4;
-    var4 = 15757511340599.0;
-    var0.__workletHash = var4;
-    var0.__initData = var2;
-    var9.belowTopScreenStyle = var0;
-    var4 = {};
-    var0 = 'function pnpm_presetsTs7(event){return{transform:[{translateY:event.translationY}]};}';
-    var4.code = var0;
-    var2 = {};
-    var0 = 'function pnpm_presetsTs8(event,screenSize){return{transform:[{translateY:(event.translationY+screenSize.height)*0.3}]};}';
-    var2.code = var0;
-    var8 = {};
-    var0 = function arg0() {
-        var0 = {};
-        var2 = {};
-        var1 = arg0;
-        var1 = var1.translationY;
-        var2.translateY = var1;
-        var1 = new Array(1);
-        var1[0] = var2;
-        var0.transform = var1;
-        return var0;
-    };
-    var5 = {};
-    var0.__closure = var5;
-    var5 = 469647866976.0;
-    var0.__workletHash = var5;
-    var0.__initData = var4;
-    var8.topScreenStyle = var0;
-    var0 = function arg0, arg1() {
-        var0 = {};
-        var2 = {};
-        var1 = arg0;
-        var3 = var1.translationY;
-        var1 = arg1;
-        var1 = var1.height;
-        var3 = var3 + var1;
-        var1 = 0.3;
-        var1 = var1 * var3;
-        var2.translateY = var1;
-        var1 = new Array(1);
-        var1[0] = var2;
-        var0.transform = var1;
-        return var0;
-    };
-    var4 = {};
-    var0.__closure = var4;
-    var4 = 155953863935.0;
-    var0.__workletHash = var4;
-    var0.__initData = var2;
-    var8.belowTopScreenStyle = var0;
-    var5 = {};
-    var0 = 'function pnpm_presetsTs9(event,_screenSize){return{transform:[{translateX:event.translationX},{translateY:event.translationY}]};}';
-    var5.code = var0;
-    var4 = {};
-    var0 = 'function pnpm_presetsTs10(_event,_screenSize){return{};}';
-    var4.code = var0;
-    var2 = {};
-    var0 = function arg0, arg1() {
-        var3 = arg0;
-        var0 = {};
-        var2 = {};
-        var1 = var3.translationX;
-        var2.translateX = var1;
-        var1 = new Array(2);
-        var1[0] = var2;
-        var2 = {};
-        var3 = var3.translationY;
-        var2.translateY = var3;
-        var1[1] = var2;
-        var0.transform = var1;
-        return var0;
-    };
-    var6 = {};
-    var0.__closure = var6;
-    var6 = 2086163822059.0;
-    var0.__workletHash = var6;
-    var0.__initData = var5;
-    var2.topScreenStyle = var0;
-    var0 = function arg0, arg1() {
-        var0 = {};
-        return var0;
-    };
-    var5 = {};
-    var0.__closure = var5;
-    var5 = 16448013209296.0;
-    var0.__workletHash = var5;
-    var0.__initData = var4;
-    var2.belowTopScreenStyle = var0;
-    var5 = {};
-    var0 = 'function pnpm_presetsTs11(event,_screenSize){return{transform:[{translateX:event.translationX}]};}';
-    var5.code = var0;
-    var4 = {};
-    var0 = 'function pnpm_presetsTs12(_event,_screenSize){return{};}';
-    var4.code = var0;
-    var7 = {};
-    var0 = function arg0, arg1() {
-        var0 = {};
-        var2 = {};
-        var1 = arg0;
-        var1 = var1.translationX;
-        var2.translateX = var1;
-        var1 = new Array(1);
-        var1[0] = var2;
-        var0.transform = var1;
-        return var0;
-    };
-    var6 = {};
-    var0.__closure = var6;
-    var6 = 6713361531789.0;
-    var0.__workletHash = var6;
-    var0.__initData = var5;
-    var7.topScreenStyle = var0;
-    var0 = function arg0, arg1() {
-        var0 = {};
-        return var0;
-    };
-    var5 = {};
-    var0.__closure = var5;
-    var5 = 13760449121746.0;
-    var0.__workletHash = var5;
-    var0.__initData = var4;
-    var7.belowTopScreenStyle = var0;
-    var6 = {};
-    var0 = 'function pnpm_presetsTs13(event,_screenSize){return{transform:[{translateY:event.translationY}]};}';
-    var6.code = var0;
-    var4 = {};
-    var0 = 'function pnpm_presetsTs14(_event,_screenSize){return{};}';
-    var4.code = var0;
-    var5 = {};
-    var0 = function arg0, arg1() {
-        var0 = {};
-        var2 = {};
-        var1 = arg0;
-        var1 = var1.translationY;
-        var2.translateY = var1;
-        var1 = new Array(1);
-        var1[0] = var2;
-        var0.transform = var1;
-        return var0;
-    };
-    var12 = {};
-    var0.__closure = var12;
-    var12 = 9445517580655.0;
-    var0.__workletHash = var12;
-    var0.__initData = var6;
-    var5.topScreenStyle = var0;
-    var0 = function arg0, arg1() {
-        var0 = {};
-        return var0;
-    };
-    var6 = {};
-    var0.__closure = var6;
-    var6 = 16649253670356.0;
-    var0.__workletHash = var6;
-    var0.__initData = var4;
-    var5.belowTopScreenStyle = var0;
-    var6 = {};
-    var0 = 'function pnpm_presetsTs15(event,screenSize){return{opacity:1-Math.abs(event.translationX/screenSize.width)};}';
-    var6.code = var0;
-    var4 = {};
-    var0 = 'function pnpm_presetsTs16(_event,_screenSize){return{};}';
-    var4.code = var0;
-    var0 = {};
-    var0.SwipeRight = var11;
-    var0.SwipeLeft = var10;
-    var0.SwipeDown = var9;
-    var0.SwipeUp = var8;
-    var0.Horizontal = var7;
-    var0.Vertical = var5;
-    var0.TwoDimensional = var2;
-    var2 = {};
-    var5 = function arg0, arg1() {
-        var0 = {};
-        var1 = global;
-        var3 = var1.Math;
-        var2 = var3.abs;
-        var1 = arg0;
-        var4 = var1.translationX;
-        var1 = arg1;
-        var1 = var1.width;
-        var1 = var4 / var1;
-        var2 = var2.bind(var3)(var1);
-        var1 = 1;
-        var1 = var1 - var2;
-        var0.opacity = var1;
-        return var0;
-    };
-    var7 = {};
-    var5.__closure = var7;
-    var7 = 8179926638650.0;
-    var5.__workletHash = var7;
-    var5.__initData = var6;
-    var2.topScreenStyle = var5;
-    var3 = function arg0, arg1() {
-        var0 = {};
-        return var0;
-    };
-    var5 = {};
-    var3.__closure = var5;
-    var5 = 13961689582806.0;
-    var3.__workletHash = var5;
-    var3.__initData = var4;
-    var2.belowTopScreenStyle = var3;
-    var0.SwipeRightFade = var2;
-    var1.ScreenTransition = var0;
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportDefault;
     var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var4 = var3.useEffect;
+    var _closure1_slot3 = var4;
+    var3 = var3.useRef;
+    var _closure1_slot4 = var3;
+    var3 = {};
+    var4 = 'function pnpm_useDerivedValueTs1(){const{sharedValue,updater}=this.__closure;sharedValue.value=updater();}';
+    var3.code = var4;
+    var _closure1_slot5 = var3;
+    var1 = function arg0, arg1() {
+        _fun34904: for (var _fun34904_ip = 0;;) switch (_fun34904_ip) {
+            case 0:
+                var9 = arg0;
+                var3 = arg1;
+                var _closure2_slot0 = var9;
+                var0 = _closure1_slot4;
+                var4 = undefined;
+                var6 = null;
+                var0 = var0.bind(var4)(var6);
+                var5 = global;
+                var8 = var5.Object;
+                var7 = var8.values;
+                var5 = var9.__closure;
+                if (!(var6 == var5)) {
+                    _fun34904_ip = 52;
+                    continue _fun34904
+                }
+            case 50:
+                var5 = {};
+            case 52:
+                var7 = var7.bind(var8)(var5);
+                var _closure2_slot1 = var7;
+                var8 = _closure1_slot0;
+                var10 = _closure1_slot1;
+                var5 = 2;
+                var5 = var10[var5];
+                var8 = var8.bind(var4)(var5);
+                var5 = var8.shouldBeUseWeb;
+                var5 = var5.bind(var8)();
+                if (!var5) {
+                    _fun34904_ip = 102;
+                    continue _fun34904
+                }
+            case 94:
+                var8 = var7.length;
+                var5 = !var8;
+            case 102:
+                var8 = undefined;
+                if (!var5) {
+                    _fun34904_ip = 114;
+                    continue _fun34904
+                }
+            case 107:
+                var5 = var6 != var3;
+                var8 = var3;
+            case 114:
+                if (!var5) {
+                    _fun34904_ip = 122;
+                    continue _fun34904
+                }
+            case 117:
+                var5 = var8.length;
+            case 122:
+                if (!var5) {
+                    _fun34904_ip = 132;
+                    continue _fun34904
+                }
+            case 125:
+                _closure2_slot1 = var3;
+                var7 = var3;
+            case 132:
+                if (!(var4 !== var3)) {
+                    _fun34904_ip = 153;
+                    continue _fun34904
+                }
+            case 136:
+                var8 = var3.push;
+                var5 = var9.__workletHash;
+                var5 = var8.bind(var3)(var5);
+                _fun34904_ip = 190;
+                continue _fun34904;
+            case 153:
+                var10 = new Array(0);
+                var8 = var10.concat;
+                var5 = _closure1_slot2;
+                var7 = var5.bind(var4)(var7);
+                var11 = var9.__workletHash;
+                var5 = new Array(1);
+                var5[0] = var11;
+                var3 = var8.bind(var10)(var7, var5);
+            case 190:
+                var5 = var0.current;
+                if (!(var6 === var5)) {
+                    _fun34904_ip = 259;
+                    continue _fun34904
+                }
+            case 199:
+                var8 = _closure1_slot0;
+                var10 = _closure1_slot1;
+                var5 = 3;
+                var5 = var10[var5];
+                var7 = var8.bind(var4)(var5);
+                var6 = var7.makeMutable;
+                var5 = 4;
+                var5 = var10[var5];
+                var8 = var8.bind(var4)(var5);
+                var5 = var8.initialUpdaterRun;
+                var5 = var5.bind(var8)(var9);
+                var5 = var6.bind(var7)(var5);
+                var0.current = var5;
+            case 259:
+                var0 = var0.current;
+                var _closure2_slot2 = var0;
+                var2 = _closure1_slot3;
+                var1 = function() { // Environment: var1
+                    var5 = function() {
+                        var2 = _closure2_slot2;
+                        var1 = _closure2_slot0;
+                        var0 = undefined;
+                        var1 = var1.bind(var0)();
+                        var2.value = var1;
+                        return var0;
+                    };
+                    var2 = {};
+                    var3 = _closure2_slot2;
+                    var2.sharedValue = var3;
+                    var3 = _closure2_slot0;
+                    var2.updater = var3;
+                    var5.__closure = var2;
+                    var2 = 1316501239615.0;
+                    var5.__workletHash = var2;
+                    var3 = _closure1_slot5;
+                    var5.__initData = var3;
+                    var4 = _closure1_slot0;
+                    var3 = _closure1_slot1;
+                    var2 = 3;
+                    var3 = var3[var2];
+                    var2 = undefined;
+                    var4 = var4.bind(var2)(var3);
+                    var3 = var4.startMapper;
+                    var2 = _closure2_slot1;
+                    var6 = _closure2_slot2;
+                    var1 = new Array(1);
+                    var1[0] = var6;
+                    var1 = var3.bind(var4)(var5, var2, var1);
+                    var _closure3_slot0 = var1;
+                    var0 = function() { // Environment: var0
+                        var2 = _closure1_slot0;
+                        var1 = _closure1_slot1;
+                        var0 = 3;
+                        var1 = var1[var0];
+                        var0 = undefined;
+                        var3 = var2.bind(var0)(var1);
+                        var2 = var3.stopMapper;
+                        var1 = _closure3_slot0;
+                        var1 = var2.bind(var3)(var1);
+                        return var0;
+                    };
+                    return var0;
+                };
+                var1 = var2.bind(var4)(var1, var3);
+                return var0;
+        }
+    };
+    var2.useDerivedValue = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 31, 3715, 3756, 3784]);

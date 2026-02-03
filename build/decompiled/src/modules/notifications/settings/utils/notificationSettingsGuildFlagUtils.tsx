@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notifications/settings/utils/notificationSettingsGuildFlagUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1() {
-        _fun69877: for (var _fun69877_ip = 0;;) switch (_fun69877_ip) {
+        _fun69986: for (var _fun69986_ip = 0;;) switch (_fun69986_ip) {
             case 0:
                 var5 = arg0;
                 var3 = arg1;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.Presets;
                 var2 = var2.ALL_MESSAGES;
                 if (!(var3 !== var2)) {
-                    _fun69877_ip = 376;
-                    continue _fun69877
+                    _fun69986_ip = 376;
+                    continue _fun69986
                 }
             case 65:
                 var4 = _closure1_slot0;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.Presets;
                 var2 = var2.MENTIONS;
                 if (!(var3 !== var2)) {
-                    _fun69877_ip = 258;
-                    continue _fun69877
+                    _fun69986_ip = 258;
+                    continue _fun69986
                 }
             case 101:
                 var4 = _closure1_slot0;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.Presets;
                 var2 = var2.NOTHING;
                 if (!(var3 === var2)) {
-                    _fun69877_ip = 492;
-                    continue _fun69877
+                    _fun69986_ip = 492;
+                    continue _fun69986
                 }
             case 137:
                 var3 = _closure1_slot1;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.NotificationLabels;
                 var2 = var2.PresetNothing;
                 var2 = var4.bind(var6)(var5, var3, var2);
-                _fun69877_ip = 492;
-                continue _fun69877;
+                _fun69986_ip = 492;
+                continue _fun69986;
             case 258:
                 var3 = _closure1_slot1;
                 var8 = _closure1_slot2;
@@ -133,8 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.NotificationLabels;
                 var2 = var2.PresetMentions;
                 var2 = var4.bind(var6)(var5, var3, var2);
-                _fun69877_ip = 492;
-                continue _fun69877;
+                _fun69986_ip = 492;
+                continue _fun69986;
             case 376:
                 var3 = _closure1_slot1;
                 var7 = _closure1_slot2;
@@ -213,4 +213,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildPresetSettings = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4269, 660, 665, 4272, 4663, 8712, 4660, 632, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4299, 660, 665, 4302, 4693, 8744, 4690, 632, 2]);

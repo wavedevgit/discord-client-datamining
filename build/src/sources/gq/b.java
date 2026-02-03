@@ -1,88 +1,67 @@
 package gq;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.util.Date;
+import android.content.Context;
+import android.view.View;
+import com.withpersona.sdk2.inquiry.network.dto.JsonLogicBoolean;
+import java.lang.ref.WeakReference;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
+import yp.e0;
+import yp.k5;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class b implements Parcelable {
-    @NotNull
-    public static final Parcelable.Creator<b> CREATOR = new a();
+public final class b extends View implements a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Date f27098d;
+    private final List f27388d;
 
-    /* renamed from: e  reason: collision with root package name */
-    private final Date f27099e;
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class a implements Parcelable.Creator {
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: a */
-        public final b createFromParcel(Parcel parcel) {
-            Intrinsics.checkNotNullParameter(parcel, "parcel");
-            return new b((Date) parcel.readSerializable(), (Date) parcel.readSerializable());
-        }
-
-        @Override // android.os.Parcelable.Creator
-        /* renamed from: b */
-        public final b[] newArray(int i10) {
-            return new b[i10];
-        }
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public b(Context context) {
+        super(context);
+        Intrinsics.checkNotNullParameter(context, "context");
+        this.f27388d = new ArrayList();
     }
 
-    public b(Date date, Date date2) {
-        this.f27098d = date;
-        this.f27099e = date2;
+    @Override // gq.a
+    public void a(Map componentParams, boolean z10) {
+        boolean z11;
+        e0 e0Var;
+        Boolean value;
+        Intrinsics.checkNotNullParameter(componentParams, "componentParams");
+        int i10 = 8;
+        if (z10) {
+            setVisibility(8);
+            return;
+        }
+        loop0: while (true) {
+            z11 = false;
+            for (WeakReference weakReference : this.f27388d) {
+                k5 k5Var = (k5) weakReference.get();
+                JsonLogicBoolean jsonLogicBoolean = null;
+                if (k5Var instanceof e0) {
+                    e0Var = (e0) k5Var;
+                } else {
+                    e0Var = null;
+                }
+                if (e0Var != null) {
+                    jsonLogicBoolean = e0Var.getHidden();
+                }
+                if (jsonLogicBoolean != null && (value = jsonLogicBoolean.getValue(componentParams, k5Var)) != null) {
+                    z11 = value.booleanValue();
+                }
+            }
+            break loop0;
+        }
+        if (!z11) {
+            i10 = 0;
+        }
+        setVisibility(i10);
     }
 
-    @Override // android.os.Parcelable
-    public final int describeContents() {
-        return 0;
-    }
-
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (!(obj instanceof b)) {
-            return false;
-        }
-        b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f27098d, bVar.f27098d) && Intrinsics.areEqual(this.f27099e, bVar.f27099e)) {
-            return true;
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        int hashCode;
-        Date date = this.f27098d;
-        int i10 = 0;
-        if (date == null) {
-            hashCode = 0;
-        } else {
-            hashCode = date.hashCode();
-        }
-        int i11 = hashCode * 31;
-        Date date2 = this.f27099e;
-        if (date2 != null) {
-            i10 = date2.hashCode();
-        }
-        return i11 + i10;
-    }
-
-    public String toString() {
-        Date date = this.f27098d;
-        Date date2 = this.f27099e;
-        return "CollectedGovernmentIdDetails(dateOfBirth=" + date + ", expirationDate=" + date2 + ")";
-    }
-
-    @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel dest, int i10) {
-        Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeSerializable(this.f27098d);
-        dest.writeSerializable(this.f27099e);
+    @NotNull
+    public final List<WeakReference<k5>> getAssociatedComponents() {
+        return this.f27388d;
     }
 }

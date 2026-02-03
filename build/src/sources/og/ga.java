@@ -3,54 +3,54 @@ package og;
 public final class ga {
 
     /* renamed from: a  reason: collision with root package name */
-    private final hc f43086a;
+    private final hc f43214a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final da f43087b;
+    private final da f43215b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ba f43088c;
+    private final ba f43216c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final wa f43089d;
+    private final wa f43217d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final za f43090e;
+    private final za f43218e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final s2 f43091f;
+    private final s2 f43219f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ ga(ea eaVar, fa faVar) {
-        this.f43086a = eaVar.f43012a;
-        this.f43087b = eaVar.f43013b;
-        this.f43088c = eaVar.f43014c;
-        this.f43089d = eaVar.f43015d;
-        this.f43090e = eaVar.f43016e;
-        this.f43091f = eaVar.f43017f;
+        this.f43214a = eaVar.f43140a;
+        this.f43215b = eaVar.f43141b;
+        this.f43216c = eaVar.f43142c;
+        this.f43217d = eaVar.f43143d;
+        this.f43218e = eaVar.f43144e;
+        this.f43219f = eaVar.f43145f;
     }
 
     public final s2 a() {
-        return this.f43091f;
+        return this.f43219f;
     }
 
     public final ba b() {
-        return this.f43088c;
+        return this.f43216c;
     }
 
     public final da c() {
-        return this.f43087b;
+        return this.f43215b;
     }
 
     public final wa d() {
-        return this.f43089d;
+        return this.f43217d;
     }
 
     public final za e() {
-        return this.f43090e;
+        return this.f43218e;
     }
 
     public final hc f() {
-        return this.f43086a;
+        return this.f43214a;
     }
 }

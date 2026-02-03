@@ -46,15 +46,15 @@ public final class StepStyles_GovernmentIdStepBorderWidthJsonAdapter extends h {
         StyleElements.MeasurementSet measurementSet2 = null;
         StyleElements.MeasurementSet measurementSet3 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 measurementSet = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 measurementSet2 = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 measurementSet3 = (StyleElements.MeasurementSet) this.nullableMeasurementSetAdapter.fromJson(reader);
             }
         }
@@ -67,11 +67,11 @@ public final class StepStyles_GovernmentIdStepBorderWidthJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (governmentIdStepBorderWidth != null) {
             writer.l();
-            writer.A0("governmentIdSelectOption");
+            writer.t0("governmentIdSelectOption");
             this.nullableMeasurementSetAdapter.toJson(writer, governmentIdStepBorderWidth.getGovernmentIdSelectOption());
-            writer.A0("governmentIdCaptureFeedBox");
+            writer.t0("governmentIdCaptureFeedBox");
             this.nullableMeasurementSetAdapter.toJson(writer, governmentIdStepBorderWidth.getGovernmentIdCaptureFeedBox());
-            writer.A0("governmentIdReviewImageBox");
+            writer.t0("governmentIdReviewImageBox");
             this.nullableMeasurementSetAdapter.toJson(writer, governmentIdStepBorderWidth.getGovernmentIdReviewImageBox());
             writer.E();
             return;

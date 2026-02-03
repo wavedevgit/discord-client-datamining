@@ -21,48 +21,48 @@ import java.lang.reflect.Method;
 public class n {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Class[] f1061b = {Context.class, AttributeSet.class};
+    private static final Class[] f1105b = {Context.class, AttributeSet.class};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f1062c = {16843375};
+    private static final int[] f1106c = {16843375};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f1063d = {16844160};
+    private static final int[] f1107d = {16844160};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int[] f1064e = {16844156};
+    private static final int[] f1108e = {16844156};
 
     /* renamed from: f  reason: collision with root package name */
-    private static final int[] f1065f = {16844148};
+    private static final int[] f1109f = {16844148};
 
     /* renamed from: g  reason: collision with root package name */
-    private static final String[] f1066g = {"android.widget.", "android.view.", "android.webkit."};
+    private static final String[] f1110g = {"android.widget.", "android.view.", "android.webkit."};
 
     /* renamed from: h  reason: collision with root package name */
-    private static final SimpleArrayMap f1067h = new SimpleArrayMap();
+    private static final SimpleArrayMap f1111h = new SimpleArrayMap();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object[] f1068a = new Object[2];
+    private final Object[] f1112a = new Object[2];
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a implements View.OnClickListener {
 
         /* renamed from: d  reason: collision with root package name */
-        private final View f1069d;
+        private final View f1113d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f1070e;
+        private final String f1114e;
 
         /* renamed from: i  reason: collision with root package name */
-        private Method f1071i;
+        private Method f1115i;
 
         /* renamed from: o  reason: collision with root package name */
-        private Context f1072o;
+        private Context f1116o;
 
         public a(View view, String str) {
-            this.f1069d = view;
-            this.f1070e = str;
+            this.f1113d = view;
+            this.f1114e = str;
         }
 
         private void a(Context context) {
@@ -71,9 +71,9 @@ public class n {
             Method method;
             while (context != null) {
                 try {
-                    if (!context.isRestricted() && (method = context.getClass().getMethod(this.f1070e, View.class)) != null) {
-                        this.f1071i = method;
-                        this.f1072o = context;
+                    if (!context.isRestricted() && (method = context.getClass().getMethod(this.f1114e, View.class)) != null) {
+                        this.f1115i = method;
+                        this.f1116o = context;
                         return;
                     }
                 } catch (NoSuchMethodException unused) {
@@ -84,21 +84,21 @@ public class n {
                     context = null;
                 }
             }
-            if (this.f1069d.getId() == -1) {
+            if (this.f1113d.getId() == -1) {
                 str = "";
             } else {
-                str = " with id '" + this.f1069d.getContext().getResources().getResourceEntryName(id2) + "'";
+                str = " with id '" + this.f1113d.getContext().getResources().getResourceEntryName(id2) + "'";
             }
-            throw new IllegalStateException("Could not find method " + this.f1070e + "(View) in a parent or ancestor Context for android:onClick attribute defined on view " + this.f1069d.getClass() + str);
+            throw new IllegalStateException("Could not find method " + this.f1114e + "(View) in a parent or ancestor Context for android:onClick attribute defined on view " + this.f1113d.getClass() + str);
         }
 
         @Override // android.view.View.OnClickListener
         public void onClick(View view) {
-            if (this.f1071i == null) {
-                a(this.f1069d.getContext());
+            if (this.f1115i == null) {
+                a(this.f1113d.getContext());
             }
             try {
-                this.f1071i.invoke(this.f1072o, view);
+                this.f1115i.invoke(this.f1116o, view);
             } catch (IllegalAccessException e10) {
                 throw new IllegalStateException("Could not execute non-public method for android:onClick", e10);
             } catch (InvocationTargetException e11) {
@@ -111,17 +111,17 @@ public class n {
         if (Build.VERSION.SDK_INT > 28) {
             return;
         }
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f1063d);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f1107d);
         if (obtainStyledAttributes.hasValue(0)) {
             h0.o0(view, obtainStyledAttributes.getBoolean(0, false));
         }
         obtainStyledAttributes.recycle();
-        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, f1064e);
+        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, f1108e);
         if (obtainStyledAttributes2.hasValue(0)) {
             h0.q0(view, obtainStyledAttributes2.getString(0));
         }
         obtainStyledAttributes2.recycle();
-        TypedArray obtainStyledAttributes3 = context.obtainStyledAttributes(attributeSet, f1065f);
+        TypedArray obtainStyledAttributes3 = context.obtainStyledAttributes(attributeSet, f1109f);
         if (obtainStyledAttributes3.hasValue(0)) {
             h0.G0(view, obtainStyledAttributes3.getBoolean(0, false));
         }
@@ -131,7 +131,7 @@ public class n {
     private void b(View view, AttributeSet attributeSet) {
         Context context = view.getContext();
         if ((context instanceof ContextWrapper) && view.hasOnClickListeners()) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f1062c);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f1106c);
             String string = obtainStyledAttributes.getString(0);
             if (string != null) {
                 view.setOnClickListener(new a(view, string));
@@ -142,7 +142,7 @@ public class n {
 
     private View s(Context context, String str, String str2) {
         String str3;
-        SimpleArrayMap simpleArrayMap = f1067h;
+        SimpleArrayMap simpleArrayMap = f1111h;
         Constructor constructor = (Constructor) simpleArrayMap.get(str);
         if (constructor == null) {
             if (str2 != null) {
@@ -154,11 +154,11 @@ public class n {
             } else {
                 str3 = str;
             }
-            constructor = Class.forName(str3, false, context.getClassLoader()).asSubclass(View.class).getConstructor(f1061b);
+            constructor = Class.forName(str3, false, context.getClassLoader()).asSubclass(View.class).getConstructor(f1105b);
             simpleArrayMap.put(str, constructor);
         }
         constructor.setAccessible(true);
-        return (View) constructor.newInstance(this.f1068a);
+        return (View) constructor.newInstance(this.f1112a);
     }
 
     private View t(Context context, String str, AttributeSet attributeSet) {
@@ -166,13 +166,13 @@ public class n {
             str = attributeSet.getAttributeValue(null, "class");
         }
         try {
-            Object[] objArr = this.f1068a;
+            Object[] objArr = this.f1112a;
             objArr[0] = context;
             objArr[1] = attributeSet;
             if (-1 == str.indexOf(46)) {
                 int i10 = 0;
                 while (true) {
-                    String[] strArr = f1066g;
+                    String[] strArr = f1110g;
                     if (i10 >= strArr.length) {
                         return null;
                     }
@@ -188,7 +188,7 @@ public class n {
         } catch (Exception unused) {
             return null;
         } finally {
-            Object[] objArr2 = this.f1068a;
+            Object[] objArr2 = this.f1112a;
             objArr2[0] = null;
             objArr2[1] = null;
         }

@@ -11,13 +11,13 @@ import ke.n;
 public final class AspectRatioFrameLayout extends FrameLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private final c f14169d;
+    private final c f13798d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f14170e;
+    private float f13799e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f14171i;
+    private int f13800i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface b {
@@ -27,49 +27,49 @@ public final class AspectRatioFrameLayout extends FrameLayout {
     private final class c implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private float f14172d;
+        private float f13801d;
 
         /* renamed from: e  reason: collision with root package name */
-        private float f14173e;
+        private float f13802e;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f14174i;
+        private boolean f13803i;
 
         /* renamed from: o  reason: collision with root package name */
-        private boolean f14175o;
+        private boolean f13804o;
 
         private c() {
         }
 
         public void a(float f10, float f11, boolean z10) {
-            this.f14172d = f10;
-            this.f14173e = f11;
-            this.f14174i = z10;
-            if (!this.f14175o) {
-                this.f14175o = true;
+            this.f13801d = f10;
+            this.f13802e = f11;
+            this.f13803i = z10;
+            if (!this.f13804o) {
+                this.f13804o = true;
                 AspectRatioFrameLayout.this.post(this);
             }
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f14175o = false;
+            this.f13804o = false;
             AspectRatioFrameLayout.a(AspectRatioFrameLayout.this);
         }
     }
 
     public AspectRatioFrameLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f14171i = 0;
+        this.f13800i = 0;
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, n.f33169a, 0, 0);
+            TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, n.f32915a, 0, 0);
             try {
-                this.f14171i = obtainStyledAttributes.getInt(n.f33170b, 0);
+                this.f13800i = obtainStyledAttributes.getInt(n.f32916b, 0);
             } finally {
                 obtainStyledAttributes.recycle();
             }
         }
-        this.f14169d = new c();
+        this.f13798d = new c();
     }
 
     static /* synthetic */ b a(AspectRatioFrameLayout aspectRatioFrameLayout) {
@@ -78,7 +78,7 @@ public final class AspectRatioFrameLayout extends FrameLayout {
     }
 
     public int getResizeMode() {
-        return this.f14171i;
+        return this.f13800i;
     }
 
     @Override // android.widget.FrameLayout, android.view.View
@@ -86,7 +86,7 @@ public final class AspectRatioFrameLayout extends FrameLayout {
         float f10;
         float f11;
         super.onMeasure(i10, i11);
-        if (this.f14170e <= 0.0f) {
+        if (this.f13799e <= 0.0f) {
             return;
         }
         int measuredWidth = getMeasuredWidth();
@@ -94,44 +94,44 @@ public final class AspectRatioFrameLayout extends FrameLayout {
         float f12 = measuredWidth;
         float f13 = measuredHeight;
         float f14 = f12 / f13;
-        float f15 = (this.f14170e / f14) - 1.0f;
+        float f15 = (this.f13799e / f14) - 1.0f;
         if (Math.abs(f15) <= 0.01f) {
-            this.f14169d.a(this.f14170e, f14, false);
+            this.f13798d.a(this.f13799e, f14, false);
             return;
         }
-        int i12 = this.f14171i;
+        int i12 = this.f13800i;
         if (i12 != 0) {
             if (i12 != 1) {
                 if (i12 != 2) {
                     if (i12 == 4) {
                         if (f15 > 0.0f) {
-                            f10 = this.f14170e;
+                            f10 = this.f13799e;
                         } else {
-                            f11 = this.f14170e;
+                            f11 = this.f13799e;
                         }
                     }
                 } else {
-                    f10 = this.f14170e;
+                    f10 = this.f13799e;
                 }
                 measuredWidth = (int) (f13 * f10);
             } else {
-                f11 = this.f14170e;
+                f11 = this.f13799e;
             }
             measuredHeight = (int) (f12 / f11);
         } else if (f15 > 0.0f) {
-            f11 = this.f14170e;
+            f11 = this.f13799e;
             measuredHeight = (int) (f12 / f11);
         } else {
-            f10 = this.f14170e;
+            f10 = this.f13799e;
             measuredWidth = (int) (f13 * f10);
         }
-        this.f14169d.a(this.f14170e, f14, true);
+        this.f13798d.a(this.f13799e, f14, true);
         super.onMeasure(View.MeasureSpec.makeMeasureSpec(measuredWidth, 1073741824), View.MeasureSpec.makeMeasureSpec(measuredHeight, 1073741824));
     }
 
     public void setAspectRatio(float f10) {
-        if (this.f14170e != f10) {
-            this.f14170e = f10;
+        if (this.f13799e != f10) {
+            this.f13799e = f10;
             requestLayout();
         }
     }
@@ -140,8 +140,8 @@ public final class AspectRatioFrameLayout extends FrameLayout {
     }
 
     public void setResizeMode(int i10) {
-        if (this.f14171i != i10) {
-            this.f14171i = i10;
+        if (this.f13800i != i10) {
+            this.f13800i = i10;
             requestLayout();
         }
     }

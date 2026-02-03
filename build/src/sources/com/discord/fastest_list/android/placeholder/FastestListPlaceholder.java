@@ -4,7 +4,7 @@ import android.view.ViewGroup;
 import androidx.collection.LruCache;
 import com.discord.fastest_list.android.FastestListSections;
 import com.discord.fastest_list.android.placeholder.FastestListPlaceholderType;
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;

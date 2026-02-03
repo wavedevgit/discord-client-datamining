@@ -19,19 +19,19 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ InteractionStatusMessageAccessory m612copyntcYbpo$default(InteractionStatusMessageAccessory interactionStatusMessageAccessory, String str, InteractionStatus interactionStatus, int i10, Object obj) {
+    public static /* synthetic */ InteractionStatusMessageAccessory m614copyntcYbpo$default(InteractionStatusMessageAccessory interactionStatusMessageAccessory, String str, InteractionStatus interactionStatus, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = interactionStatusMessageAccessory.messageId;
         }
         if ((i10 & 2) != 0) {
             interactionStatus = interactionStatusMessageAccessory.interactionStatus;
         }
-        return interactionStatusMessageAccessory.m614copyntcYbpo(str, interactionStatus);
+        return interactionStatusMessageAccessory.m616copyntcYbpo(str, interactionStatus);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m613component13Eiw7ao() {
+    public final String m615component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -42,7 +42,7 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final InteractionStatusMessageAccessory m614copyntcYbpo(@NotNull String messageId, @NotNull InteractionStatus interactionStatus) {
+    public final InteractionStatusMessageAccessory m616copyntcYbpo(@NotNull String messageId, @NotNull InteractionStatus interactionStatus) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(interactionStatus, "interactionStatus");
         return new InteractionStatusMessageAccessory(messageId, interactionStatus, null);
@@ -54,7 +54,7 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof InteractionStatusMessageAccessory) {
             InteractionStatusMessageAccessory interactionStatusMessageAccessory = (InteractionStatusMessageAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, interactionStatusMessageAccessory.messageId) && Intrinsics.areEqual(this.interactionStatus, interactionStatusMessageAccessory.interactionStatus);
+            return MessageId.m1090equalsimpl0(this.messageId, interactionStatusMessageAccessory.messageId) && Intrinsics.areEqual(this.interactionStatus, interactionStatusMessageAccessory.interactionStatus);
         }
         return false;
     }
@@ -67,19 +67,19 @@ public final class InteractionStatusMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.interactionStatus.hashCode();
+        return (MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.interactionStatus.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         InteractionStatus interactionStatus = this.interactionStatus;
-        return "InteractionStatusMessageAccessory(messageId=" + m1091toStringimpl + ", interactionStatus=" + interactionStatus + ")";
+        return "InteractionStatusMessageAccessory(messageId=" + m1093toStringimpl + ", interactionStatus=" + interactionStatus + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

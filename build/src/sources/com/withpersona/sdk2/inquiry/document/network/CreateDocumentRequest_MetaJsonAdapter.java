@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateDocumentRequest_MetaJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19477a;
+    private final m.b f19110a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19478b;
+    private final h f19111b;
 
     public CreateDocumentRequest_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("fieldKeyDocument");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19477a = a10;
+        this.f19110a = a10;
         h f10 = moshi.f(String.class, x0.d(), "fieldKeyDocument");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19478b = f10;
+        this.f19111b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -36,13 +36,13 @@ public final class CreateDocumentRequest_MetaJsonAdapter extends h {
         reader.r();
         String str = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f19477a);
-            if (A0 != -1) {
-                if (A0 == 0 && (str = (String) this.f19478b.fromJson(reader)) == null) {
-                    throw sm.c.x("fieldKeyDocument", "fieldKeyDocument", reader);
+            int t02 = reader.t0(this.f19110a);
+            if (t02 != -1) {
+                if (t02 == 0 && (str = (String) this.f19111b.fromJson(reader)) == null) {
+                    throw tm.c.x("fieldKeyDocument", "fieldKeyDocument", reader);
                 }
             } else {
-                reader.E0();
+                reader.F0();
                 reader.P();
             }
         }
@@ -50,7 +50,7 @@ public final class CreateDocumentRequest_MetaJsonAdapter extends h {
         if (str != null) {
             return new CreateDocumentRequest.Meta(str);
         }
-        throw sm.c.o("fieldKeyDocument", "fieldKeyDocument", reader);
+        throw tm.c.o("fieldKeyDocument", "fieldKeyDocument", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -59,8 +59,8 @@ public final class CreateDocumentRequest_MetaJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (meta != null) {
             writer.l();
-            writer.A0("fieldKeyDocument");
-            this.f19478b.toJson(writer, meta.a());
+            writer.t0("fieldKeyDocument");
+            this.f19111b.toJson(writer, meta.a());
             writer.E();
             return;
         }

@@ -42,4 +42,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.CRUNCHYROLL_CLIENT_ID = var3;
     var2.CRUNCHYROLL_CLIENT_SCOPES = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3300, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3330, 2]);

@@ -14,25 +14,25 @@ import ne.y;
 public final class i implements u {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final c f14483d = h(false, -9223372036854775807L);
+    public static final c f14112d = h(false, -9223372036854775807L);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final c f14484e = h(true, -9223372036854775807L);
+    public static final c f14113e = h(true, -9223372036854775807L);
 
     /* renamed from: f  reason: collision with root package name */
-    public static final c f14485f = new c(2, -9223372036854775807L);
+    public static final c f14114f = new c(2, -9223372036854775807L);
 
     /* renamed from: g  reason: collision with root package name */
-    public static final c f14486g = new c(3, -9223372036854775807L);
+    public static final c f14115g = new c(3, -9223372036854775807L);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ExecutorService f14487a;
+    private final ExecutorService f14116a;
 
     /* renamed from: b  reason: collision with root package name */
-    private d f14488b;
+    private d f14117b;
 
     /* renamed from: c  reason: collision with root package name */
-    private IOException f14489c;
+    private IOException f14118c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface b {
@@ -47,13 +47,13 @@ public final class i implements u {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f14490a;
+        private final int f14119a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final long f14491b;
+        private final long f14120b;
 
         public boolean c() {
-            int i10 = this.f14490a;
+            int i10 = this.f14119a;
             if (i10 == 0 || i10 == 1) {
                 return true;
             }
@@ -61,8 +61,8 @@ public final class i implements u {
         }
 
         private c(int i10, long j10) {
-            this.f14490a = i10;
-            this.f14491b = j10;
+            this.f14119a = i10;
+            this.f14120b = j10;
         }
     }
 
@@ -71,58 +71,58 @@ public final class i implements u {
     public final class d extends Handler implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f14492d;
+        public final int f14121d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final e f14493e;
+        private final e f14122e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final long f14494i;
+        private final long f14123i;
 
         /* renamed from: o  reason: collision with root package name */
-        private b f14495o;
+        private b f14124o;
 
         /* renamed from: p  reason: collision with root package name */
-        private IOException f14496p;
+        private IOException f14125p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f14497q;
+        private int f14126q;
 
         /* renamed from: r  reason: collision with root package name */
-        private Thread f14498r;
+        private Thread f14127r;
 
         /* renamed from: s  reason: collision with root package name */
-        private boolean f14499s;
+        private boolean f14128s;
 
         /* renamed from: t  reason: collision with root package name */
-        private volatile boolean f14500t;
+        private volatile boolean f14129t;
 
         public d(Looper looper, e eVar, b bVar, int i10, long j10) {
             super(looper);
-            this.f14493e = eVar;
-            this.f14495o = bVar;
-            this.f14492d = i10;
-            this.f14494i = j10;
+            this.f14122e = eVar;
+            this.f14124o = bVar;
+            this.f14121d = i10;
+            this.f14123i = j10;
         }
 
         private void b() {
-            this.f14496p = null;
-            i.this.f14487a.execute((Runnable) ne.a.e(i.this.f14488b));
+            this.f14125p = null;
+            i.this.f14116a.execute((Runnable) ne.a.e(i.this.f14117b));
         }
 
         private void c() {
-            i.this.f14488b = null;
+            i.this.f14117b = null;
         }
 
         private long d() {
-            return Math.min((this.f14497q - 1) * 1000, 5000);
+            return Math.min((this.f14126q - 1) * 1000, 5000);
         }
 
         public void a(boolean z10) {
-            this.f14500t = z10;
-            this.f14496p = null;
+            this.f14129t = z10;
+            this.f14125p = null;
             if (hasMessages(0)) {
-                this.f14499s = true;
+                this.f14128s = true;
                 removeMessages(0);
                 if (!z10) {
                     sendEmptyMessage(1);
@@ -130,9 +130,9 @@ public final class i implements u {
             } else {
                 synchronized (this) {
                     try {
-                        this.f14499s = true;
-                        this.f14493e.c();
-                        Thread thread = this.f14498r;
+                        this.f14128s = true;
+                        this.f14122e.c();
+                        Thread thread = this.f14127r;
                         if (thread != null) {
                             thread.interrupt();
                         }
@@ -144,27 +144,27 @@ public final class i implements u {
             if (z10) {
                 c();
                 long elapsedRealtime = SystemClock.elapsedRealtime();
-                ((b) ne.a.e(this.f14495o)).i(this.f14493e, elapsedRealtime, elapsedRealtime - this.f14494i, true);
-                this.f14495o = null;
+                ((b) ne.a.e(this.f14124o)).i(this.f14122e, elapsedRealtime, elapsedRealtime - this.f14123i, true);
+                this.f14124o = null;
             }
         }
 
         public void e(int i10) {
-            IOException iOException = this.f14496p;
-            if (iOException != null && this.f14497q > i10) {
+            IOException iOException = this.f14125p;
+            if (iOException != null && this.f14126q > i10) {
                 throw iOException;
             }
         }
 
         public void f(long j10) {
             boolean z10;
-            if (i.this.f14488b == null) {
+            if (i.this.f14117b == null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             ne.a.g(z10);
-            i.this.f14488b = this;
+            i.this.f14117b = this;
             if (j10 > 0) {
                 sendEmptyMessageDelayed(0, j10);
             } else {
@@ -175,36 +175,36 @@ public final class i implements u {
         @Override // android.os.Handler
         public void handleMessage(Message message) {
             long d10;
-            if (!this.f14500t) {
+            if (!this.f14129t) {
                 int i10 = message.what;
                 if (i10 == 0) {
                     b();
                 } else if (i10 != 3) {
                     c();
                     long elapsedRealtime = SystemClock.elapsedRealtime();
-                    long j10 = elapsedRealtime - this.f14494i;
-                    b bVar = (b) ne.a.e(this.f14495o);
-                    if (this.f14499s) {
-                        bVar.i(this.f14493e, elapsedRealtime, j10, false);
+                    long j10 = elapsedRealtime - this.f14123i;
+                    b bVar = (b) ne.a.e(this.f14124o);
+                    if (this.f14128s) {
+                        bVar.i(this.f14122e, elapsedRealtime, j10, false);
                         return;
                     }
                     int i11 = message.what;
                     if (i11 != 1) {
                         if (i11 == 2) {
                             IOException iOException = (IOException) message.obj;
-                            this.f14496p = iOException;
-                            int i12 = this.f14497q + 1;
-                            this.f14497q = i12;
-                            c n10 = bVar.n(this.f14493e, elapsedRealtime, j10, iOException, i12);
-                            if (n10.f14490a == 3) {
-                                i.this.f14489c = this.f14496p;
+                            this.f14125p = iOException;
+                            int i12 = this.f14126q + 1;
+                            this.f14126q = i12;
+                            c n10 = bVar.n(this.f14122e, elapsedRealtime, j10, iOException, i12);
+                            if (n10.f14119a == 3) {
+                                i.this.f14118c = this.f14125p;
                                 return;
-                            } else if (n10.f14490a != 2) {
-                                if (n10.f14490a == 1) {
-                                    this.f14497q = 1;
+                            } else if (n10.f14119a != 2) {
+                                if (n10.f14119a == 1) {
+                                    this.f14126q = 1;
                                 }
-                                if (n10.f14491b != -9223372036854775807L) {
-                                    d10 = n10.f14491b;
+                                if (n10.f14120b != -9223372036854775807L) {
+                                    d10 = n10.f14120b;
                                 } else {
                                     d10 = d();
                                 }
@@ -217,10 +217,10 @@ public final class i implements u {
                         return;
                     }
                     try {
-                        bVar.j(this.f14493e, elapsedRealtime, j10);
+                        bVar.j(this.f14122e, elapsedRealtime, j10);
                     } catch (RuntimeException e10) {
                         y.d("LoadTask", "Unexpected exception handling load completed", e10);
-                        i.this.f14489c = new h(e10);
+                        i.this.f14118c = new h(e10);
                     }
                 } else {
                     throw ((Error) message.obj);
@@ -233,13 +233,13 @@ public final class i implements u {
             boolean z10;
             try {
                 synchronized (this) {
-                    z10 = this.f14499s;
-                    this.f14498r = Thread.currentThread();
+                    z10 = this.f14128s;
+                    this.f14127r = Thread.currentThread();
                 }
                 if (!z10) {
-                    t0.a("load:" + this.f14493e.getClass().getSimpleName());
+                    t0.a("load:" + this.f14122e.getClass().getSimpleName());
                     try {
-                        this.f14493e.b();
+                        this.f14122e.b();
                         t0.c();
                     } catch (Throwable th2) {
                         t0.c();
@@ -247,29 +247,29 @@ public final class i implements u {
                     }
                 }
                 synchronized (this) {
-                    this.f14498r = null;
+                    this.f14127r = null;
                     Thread.interrupted();
                 }
-                if (!this.f14500t) {
+                if (!this.f14129t) {
                     sendEmptyMessage(1);
                 }
             } catch (IOException e10) {
-                if (!this.f14500t) {
+                if (!this.f14129t) {
                     obtainMessage(2, e10).sendToTarget();
                 }
             } catch (Error e11) {
-                if (!this.f14500t) {
+                if (!this.f14129t) {
                     y.d("LoadTask", "Unexpected error loading stream", e11);
                     obtainMessage(3, e11).sendToTarget();
                 }
                 throw e11;
             } catch (Exception e12) {
-                if (!this.f14500t) {
+                if (!this.f14129t) {
                     y.d("LoadTask", "Unexpected exception loading stream", e12);
                     obtainMessage(2, new h(e12)).sendToTarget();
                 }
             } catch (OutOfMemoryError e13) {
-                if (!this.f14500t) {
+                if (!this.f14129t) {
                     y.d("LoadTask", "OutOfMemory error loading stream", e13);
                     obtainMessage(2, new h(e13)).sendToTarget();
                 }
@@ -294,15 +294,15 @@ public final class i implements u {
     public static final class g implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final f f14502d;
+        private final f f14131d;
 
         public g(f fVar) {
-            this.f14502d = fVar;
+            this.f14131d = fVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f14502d.p();
+            this.f14131d.p();
         }
     }
 
@@ -314,7 +314,7 @@ public final class i implements u {
     }
 
     public i(String str) {
-        this.f14487a = w0.L0("ExoPlayer:Loader:" + str);
+        this.f14116a = w0.L0("ExoPlayer:Loader:" + str);
     }
 
     public static c h(boolean z10, long j10) {
@@ -327,34 +327,34 @@ public final class i implements u {
     }
 
     public void f() {
-        ((d) ne.a.i(this.f14488b)).a(false);
+        ((d) ne.a.i(this.f14117b)).a(false);
     }
 
     public void g() {
-        this.f14489c = null;
+        this.f14118c = null;
     }
 
     public boolean i() {
-        if (this.f14489c != null) {
+        if (this.f14118c != null) {
             return true;
         }
         return false;
     }
 
     public boolean j() {
-        if (this.f14488b != null) {
+        if (this.f14117b != null) {
             return true;
         }
         return false;
     }
 
     public void k(int i10) {
-        IOException iOException = this.f14489c;
+        IOException iOException = this.f14118c;
         if (iOException == null) {
-            d dVar = this.f14488b;
+            d dVar = this.f14117b;
             if (dVar != null) {
                 if (i10 == Integer.MIN_VALUE) {
-                    i10 = dVar.f14492d;
+                    i10 = dVar.f14121d;
                 }
                 dVar.e(i10);
                 return;
@@ -369,18 +369,18 @@ public final class i implements u {
     }
 
     public void m(f fVar) {
-        d dVar = this.f14488b;
+        d dVar = this.f14117b;
         if (dVar != null) {
             dVar.a(true);
         }
         if (fVar != null) {
-            this.f14487a.execute(new g(fVar));
+            this.f14116a.execute(new g(fVar));
         }
-        this.f14487a.shutdown();
+        this.f14116a.shutdown();
     }
 
     public long n(e eVar, b bVar, int i10) {
-        this.f14489c = null;
+        this.f14118c = null;
         long elapsedRealtime = SystemClock.elapsedRealtime();
         new d((Looper) ne.a.i(Looper.myLooper()), eVar, bVar, i10, elapsedRealtime).f(0L);
         return elapsedRealtime;

@@ -3,25 +3,25 @@ package xb;
 final class a extends d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Integer f53280a;
+    private final Integer f53488a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f53281b;
+    private final Object f53489b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e f53282c;
+    private final e f53490c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final f f53283d;
+    private final f f53491d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(Integer num, Object obj, e eVar, f fVar) {
-        this.f53280a = num;
+        this.f53488a = num;
         if (obj != null) {
-            this.f53281b = obj;
+            this.f53489b = obj;
             if (eVar != null) {
-                this.f53282c = eVar;
-                this.f53283d = fVar;
+                this.f53490c = eVar;
+                this.f53491d = fVar;
                 return;
             }
             throw new NullPointerException("Null priority");
@@ -31,22 +31,22 @@ final class a extends d {
 
     @Override // xb.d
     public Integer a() {
-        return this.f53280a;
+        return this.f53488a;
     }
 
     @Override // xb.d
     public Object b() {
-        return this.f53281b;
+        return this.f53489b;
     }
 
     @Override // xb.d
     public e c() {
-        return this.f53282c;
+        return this.f53490c;
     }
 
     @Override // xb.d
     public f d() {
-        return this.f53283d;
+        return this.f53491d;
     }
 
     public boolean equals(Object obj) {
@@ -56,9 +56,9 @@ final class a extends d {
         }
         if (obj instanceof d) {
             d dVar = (d) obj;
-            Integer num = this.f53280a;
+            Integer num = this.f53488a;
             if (num != null ? num.equals(dVar.a()) : dVar.a() == null) {
-                if (this.f53281b.equals(dVar.b()) && this.f53282c.equals(dVar.c()) && ((fVar = this.f53283d) != null ? fVar.equals(dVar.d()) : dVar.d() == null)) {
+                if (this.f53489b.equals(dVar.b()) && this.f53490c.equals(dVar.c()) && ((fVar = this.f53491d) != null ? fVar.equals(dVar.d()) : dVar.d() == null)) {
                     return true;
                 }
             }
@@ -68,15 +68,15 @@ final class a extends d {
 
     public int hashCode() {
         int hashCode;
-        Integer num = this.f53280a;
+        Integer num = this.f53488a;
         int i10 = 0;
         if (num == null) {
             hashCode = 0;
         } else {
             hashCode = num.hashCode();
         }
-        int hashCode2 = (((((hashCode ^ 1000003) * 1000003) ^ this.f53281b.hashCode()) * 1000003) ^ this.f53282c.hashCode()) * 1000003;
-        f fVar = this.f53283d;
+        int hashCode2 = (((((hashCode ^ 1000003) * 1000003) ^ this.f53489b.hashCode()) * 1000003) ^ this.f53490c.hashCode()) * 1000003;
+        f fVar = this.f53491d;
         if (fVar != null) {
             i10 = fVar.hashCode();
         }
@@ -84,6 +84,6 @@ final class a extends d {
     }
 
     public String toString() {
-        return "Event{code=" + this.f53280a + ", payload=" + this.f53281b + ", priority=" + this.f53282c + ", productData=" + this.f53283d + "}";
+        return "Event{code=" + this.f53488a + ", payload=" + this.f53489b + ", priority=" + this.f53490c + ", productData=" + this.f53491d + "}";
     }
 }

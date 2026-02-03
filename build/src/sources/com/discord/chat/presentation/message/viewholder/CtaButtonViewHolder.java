@@ -20,10 +20,10 @@ public final class CtaButtonViewHolder extends MessagePartViewHolder {
     }
 
     /* renamed from: bind-JjTCmh4  reason: not valid java name */
-    public final void m718bindJjTCmh4(long j10, @NotNull String messageId, @NotNull CtaButton accessory, @NotNull Function3 onTapCtaButton) {
+    public final void m720bindJjTCmh4(long j10, @NotNull String messageId, @NotNull CtaButton accessory, @NotNull Function3 onTapCtaButton) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(accessory, "accessory");
         Intrinsics.checkNotNullParameter(onTapCtaButton, "onTapCtaButton");
-        this.ctaButtonView.m686setContentP6jPPyA(j10, messageId, accessory.getText(), accessory.getTextColor(), accessory.getBackgroundColor(), accessory.getCallback(), onTapCtaButton);
+        this.ctaButtonView.m688setContentP6jPPyA(j10, messageId, accessory.getText(), accessory.getTextColor(), accessory.getBackgroundColor(), accessory.getCallback(), onTapCtaButton);
     }
 }

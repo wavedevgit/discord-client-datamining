@@ -1,9 +1,9 @@
 package com.discord.fastest_list.android;
 
 import com.facebook.react.uimanager.ViewProps;
-import ir.p;
 import java.util.Iterator;
 import java.util.List;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.m0;
@@ -83,7 +83,7 @@ public final class FastestListSections {
             }
 
             /* renamed from: copy-X8oRnOs$default  reason: not valid java name */
-            public static /* synthetic */ ListFooter m878copyX8oRnOs$default(ListFooter listFooter, String str, int i10, int i11, int i12, Object obj) {
+            public static /* synthetic */ ListFooter m880copyX8oRnOs$default(ListFooter listFooter, String str, int i10, int i11, int i12, Object obj) {
                 if ((i12 & 1) != 0) {
                     str = listFooter.key;
                 }
@@ -93,7 +93,7 @@ public final class FastestListSections {
                 if ((i12 & 4) != 0) {
                     i11 = listFooter.size;
                 }
-                return listFooter.m880copyX8oRnOs(str, i10, i11);
+                return listFooter.m882copyX8oRnOs(str, i10, i11);
             }
 
             @NotNull
@@ -102,7 +102,7 @@ public final class FastestListSections {
             }
 
             /* renamed from: component2-sZRFyWU  reason: not valid java name */
-            public final int m879component2sZRFyWU() {
+            public final int m881component2sZRFyWU() {
                 return this.section;
             }
 
@@ -112,7 +112,7 @@ public final class FastestListSections {
 
             @NotNull
             /* renamed from: copy-X8oRnOs  reason: not valid java name */
-            public final ListFooter m880copyX8oRnOs(@NotNull String key, int i10, int i11) {
+            public final ListFooter m882copyX8oRnOs(@NotNull String key, int i10, int i11) {
                 Intrinsics.checkNotNullParameter(key, "key");
                 return new ListFooter(key, i10, i11, null);
             }
@@ -123,7 +123,7 @@ public final class FastestListSections {
                 }
                 if (obj instanceof ListFooter) {
                     ListFooter listFooter = (ListFooter) obj;
-                    return Intrinsics.areEqual(this.key, listFooter.key) && Section.m905equalsimpl0(this.section, listFooter.section) && this.size == listFooter.size;
+                    return Intrinsics.areEqual(this.key, listFooter.key) && Section.m907equalsimpl0(this.section, listFooter.section) && this.size == listFooter.size;
                 }
                 return false;
             }
@@ -136,7 +136,7 @@ public final class FastestListSections {
 
             @Override // com.discord.fastest_list.android.FastestListSections.Entry
             /* renamed from: getSection-sZRFyWU */
-            public int mo877getSectionsZRFyWU() {
+            public int mo879getSectionsZRFyWU() {
                 return this.section;
             }
 
@@ -146,15 +146,15 @@ public final class FastestListSections {
             }
 
             public int hashCode() {
-                return (((this.key.hashCode() * 31) + Section.m906hashCodeimpl(this.section)) * 31) + Integer.hashCode(this.size);
+                return (((this.key.hashCode() * 31) + Section.m908hashCodeimpl(this.section)) * 31) + Integer.hashCode(this.size);
             }
 
             @NotNull
             public String toString() {
                 String str = this.key;
-                String m907toStringimpl = Section.m907toStringimpl(this.section);
+                String m909toStringimpl = Section.m909toStringimpl(this.section);
                 int i10 = this.size;
-                return "ListFooter(key=" + str + ", section=" + m907toStringimpl + ", size=" + i10 + ")";
+                return "ListFooter(key=" + str + ", section=" + m909toStringimpl + ", size=" + i10 + ")";
             }
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -204,7 +204,7 @@ public final class FastestListSections {
             }
 
             /* renamed from: copy-X8oRnOs$default  reason: not valid java name */
-            public static /* synthetic */ ListHeader m881copyX8oRnOs$default(ListHeader listHeader, String str, int i10, int i11, int i12, Object obj) {
+            public static /* synthetic */ ListHeader m883copyX8oRnOs$default(ListHeader listHeader, String str, int i10, int i11, int i12, Object obj) {
                 if ((i12 & 1) != 0) {
                     str = listHeader.key;
                 }
@@ -214,7 +214,7 @@ public final class FastestListSections {
                 if ((i12 & 4) != 0) {
                     i11 = listHeader.size;
                 }
-                return listHeader.m883copyX8oRnOs(str, i10, i11);
+                return listHeader.m885copyX8oRnOs(str, i10, i11);
             }
 
             @NotNull
@@ -223,7 +223,7 @@ public final class FastestListSections {
             }
 
             /* renamed from: component2-sZRFyWU  reason: not valid java name */
-            public final int m882component2sZRFyWU() {
+            public final int m884component2sZRFyWU() {
                 return this.section;
             }
 
@@ -233,7 +233,7 @@ public final class FastestListSections {
 
             @NotNull
             /* renamed from: copy-X8oRnOs  reason: not valid java name */
-            public final ListHeader m883copyX8oRnOs(@NotNull String key, int i10, int i11) {
+            public final ListHeader m885copyX8oRnOs(@NotNull String key, int i10, int i11) {
                 Intrinsics.checkNotNullParameter(key, "key");
                 return new ListHeader(key, i10, i11, null);
             }
@@ -244,7 +244,7 @@ public final class FastestListSections {
                 }
                 if (obj instanceof ListHeader) {
                     ListHeader listHeader = (ListHeader) obj;
-                    return Intrinsics.areEqual(this.key, listHeader.key) && Section.m905equalsimpl0(this.section, listHeader.section) && this.size == listHeader.size;
+                    return Intrinsics.areEqual(this.key, listHeader.key) && Section.m907equalsimpl0(this.section, listHeader.section) && this.size == listHeader.size;
                 }
                 return false;
             }
@@ -257,7 +257,7 @@ public final class FastestListSections {
 
             @Override // com.discord.fastest_list.android.FastestListSections.Entry
             /* renamed from: getSection-sZRFyWU */
-            public int mo877getSectionsZRFyWU() {
+            public int mo879getSectionsZRFyWU() {
                 return this.section;
             }
 
@@ -267,15 +267,15 @@ public final class FastestListSections {
             }
 
             public int hashCode() {
-                return (((this.key.hashCode() * 31) + Section.m906hashCodeimpl(this.section)) * 31) + Integer.hashCode(this.size);
+                return (((this.key.hashCode() * 31) + Section.m908hashCodeimpl(this.section)) * 31) + Integer.hashCode(this.size);
             }
 
             @NotNull
             public String toString() {
                 String str = this.key;
-                String m907toStringimpl = Section.m907toStringimpl(this.section);
+                String m909toStringimpl = Section.m909toStringimpl(this.section);
                 int i10 = this.size;
-                return "ListHeader(key=" + str + ", section=" + m907toStringimpl + ", size=" + i10 + ")";
+                return "ListHeader(key=" + str + ", section=" + m909toStringimpl + ", size=" + i10 + ")";
             }
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -323,7 +323,7 @@ public final class FastestListSections {
             }
 
             /* renamed from: copy-X8oRnOs$default  reason: not valid java name */
-            public static /* synthetic */ SectionFooter m884copyX8oRnOs$default(SectionFooter sectionFooter, String str, int i10, int i11, int i12, Object obj) {
+            public static /* synthetic */ SectionFooter m886copyX8oRnOs$default(SectionFooter sectionFooter, String str, int i10, int i11, int i12, Object obj) {
                 if ((i12 & 1) != 0) {
                     str = sectionFooter.key;
                 }
@@ -333,7 +333,7 @@ public final class FastestListSections {
                 if ((i12 & 4) != 0) {
                     i11 = sectionFooter.size;
                 }
-                return sectionFooter.m886copyX8oRnOs(str, i10, i11);
+                return sectionFooter.m888copyX8oRnOs(str, i10, i11);
             }
 
             @NotNull
@@ -342,7 +342,7 @@ public final class FastestListSections {
             }
 
             /* renamed from: component2-sZRFyWU  reason: not valid java name */
-            public final int m885component2sZRFyWU() {
+            public final int m887component2sZRFyWU() {
                 return this.section;
             }
 
@@ -352,7 +352,7 @@ public final class FastestListSections {
 
             @NotNull
             /* renamed from: copy-X8oRnOs  reason: not valid java name */
-            public final SectionFooter m886copyX8oRnOs(@NotNull String key, int i10, int i11) {
+            public final SectionFooter m888copyX8oRnOs(@NotNull String key, int i10, int i11) {
                 Intrinsics.checkNotNullParameter(key, "key");
                 return new SectionFooter(key, i10, i11, null);
             }
@@ -363,7 +363,7 @@ public final class FastestListSections {
                 }
                 if (obj instanceof SectionFooter) {
                     SectionFooter sectionFooter = (SectionFooter) obj;
-                    return Intrinsics.areEqual(this.key, sectionFooter.key) && Section.m905equalsimpl0(this.section, sectionFooter.section) && this.size == sectionFooter.size;
+                    return Intrinsics.areEqual(this.key, sectionFooter.key) && Section.m907equalsimpl0(this.section, sectionFooter.section) && this.size == sectionFooter.size;
                 }
                 return false;
             }
@@ -376,7 +376,7 @@ public final class FastestListSections {
 
             @Override // com.discord.fastest_list.android.FastestListSections.Entry
             /* renamed from: getSection-sZRFyWU */
-            public int mo877getSectionsZRFyWU() {
+            public int mo879getSectionsZRFyWU() {
                 return this.section;
             }
 
@@ -386,15 +386,15 @@ public final class FastestListSections {
             }
 
             public int hashCode() {
-                return (((this.key.hashCode() * 31) + Section.m906hashCodeimpl(this.section)) * 31) + Integer.hashCode(this.size);
+                return (((this.key.hashCode() * 31) + Section.m908hashCodeimpl(this.section)) * 31) + Integer.hashCode(this.size);
             }
 
             @NotNull
             public String toString() {
                 String str = this.key;
-                String m907toStringimpl = Section.m907toStringimpl(this.section);
+                String m909toStringimpl = Section.m909toStringimpl(this.section);
                 int i10 = this.size;
-                return "SectionFooter(key=" + str + ", section=" + m907toStringimpl + ", size=" + i10 + ")";
+                return "SectionFooter(key=" + str + ", section=" + m909toStringimpl + ", size=" + i10 + ")";
             }
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -442,7 +442,7 @@ public final class FastestListSections {
             }
 
             /* renamed from: copy-X8oRnOs$default  reason: not valid java name */
-            public static /* synthetic */ SectionHeader m887copyX8oRnOs$default(SectionHeader sectionHeader, String str, int i10, int i11, int i12, Object obj) {
+            public static /* synthetic */ SectionHeader m889copyX8oRnOs$default(SectionHeader sectionHeader, String str, int i10, int i11, int i12, Object obj) {
                 if ((i12 & 1) != 0) {
                     str = sectionHeader.key;
                 }
@@ -452,7 +452,7 @@ public final class FastestListSections {
                 if ((i12 & 4) != 0) {
                     i11 = sectionHeader.size;
                 }
-                return sectionHeader.m889copyX8oRnOs(str, i10, i11);
+                return sectionHeader.m891copyX8oRnOs(str, i10, i11);
             }
 
             @NotNull
@@ -461,7 +461,7 @@ public final class FastestListSections {
             }
 
             /* renamed from: component2-sZRFyWU  reason: not valid java name */
-            public final int m888component2sZRFyWU() {
+            public final int m890component2sZRFyWU() {
                 return this.section;
             }
 
@@ -471,7 +471,7 @@ public final class FastestListSections {
 
             @NotNull
             /* renamed from: copy-X8oRnOs  reason: not valid java name */
-            public final SectionHeader m889copyX8oRnOs(@NotNull String key, int i10, int i11) {
+            public final SectionHeader m891copyX8oRnOs(@NotNull String key, int i10, int i11) {
                 Intrinsics.checkNotNullParameter(key, "key");
                 return new SectionHeader(key, i10, i11, null);
             }
@@ -482,7 +482,7 @@ public final class FastestListSections {
                 }
                 if (obj instanceof SectionHeader) {
                     SectionHeader sectionHeader = (SectionHeader) obj;
-                    return Intrinsics.areEqual(this.key, sectionHeader.key) && Section.m905equalsimpl0(this.section, sectionHeader.section) && this.size == sectionHeader.size;
+                    return Intrinsics.areEqual(this.key, sectionHeader.key) && Section.m907equalsimpl0(this.section, sectionHeader.section) && this.size == sectionHeader.size;
                 }
                 return false;
             }
@@ -495,7 +495,7 @@ public final class FastestListSections {
 
             @Override // com.discord.fastest_list.android.FastestListSections.Entry
             /* renamed from: getSection-sZRFyWU */
-            public int mo877getSectionsZRFyWU() {
+            public int mo879getSectionsZRFyWU() {
                 return this.section;
             }
 
@@ -505,15 +505,15 @@ public final class FastestListSections {
             }
 
             public int hashCode() {
-                return (((this.key.hashCode() * 31) + Section.m906hashCodeimpl(this.section)) * 31) + Integer.hashCode(this.size);
+                return (((this.key.hashCode() * 31) + Section.m908hashCodeimpl(this.section)) * 31) + Integer.hashCode(this.size);
             }
 
             @NotNull
             public String toString() {
                 String str = this.key;
-                String m907toStringimpl = Section.m907toStringimpl(this.section);
+                String m909toStringimpl = Section.m909toStringimpl(this.section);
                 int i10 = this.size;
-                return "SectionHeader(key=" + str + ", section=" + m907toStringimpl + ", size=" + i10 + ")";
+                return "SectionHeader(key=" + str + ", section=" + m909toStringimpl + ", size=" + i10 + ")";
             }
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -539,9 +539,9 @@ public final class FastestListSections {
             @NotNull
             public static final Companion Companion = new Companion(null);
             @NotNull
-            private static final SectionItem DEFAULT_AT_START = new SectionItem("", 0, Item.m896constructorimpl(0), 0, false, false, 58, null);
+            private static final SectionItem DEFAULT_AT_START = new SectionItem("", 0, Item.m898constructorimpl(0), 0, false, false, 58, null);
             @NotNull
-            private static final SectionItem DEFAULT_AT_END = new SectionItem("", 0, Item.m896constructorimpl(-1), 0, false, false, 58, null);
+            private static final SectionItem DEFAULT_AT_END = new SectionItem("", 0, Item.m898constructorimpl(-1), 0, false, false, 58, null);
 
             @Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u0010\u0007\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\tJ(\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u000e2\b\u0010\u0010\u001a\u0004\u0018\u00010\u000bR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0011"}, d2 = {"Lcom/discord/fastest_list/android/FastestListSections$Entry$SectionItem$Companion;", "", "<init>", "()V", "DEFAULT_AT_START", "Lcom/discord/fastest_list/android/FastestListSections$Entry$SectionItem;", "DEFAULT_AT_END", "getDefaultItem", "atEnd", "", "createKey", "", "listId", "sectionIndex", "", "sectionItemIndex", "sectionItemKey", "fastest_list_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -573,7 +573,7 @@ public final class FastestListSections {
             }
 
             /* renamed from: copy-84MWo2c$default  reason: not valid java name */
-            public static /* synthetic */ SectionItem m890copy84MWo2c$default(SectionItem sectionItem, String str, int i10, int i11, int i12, boolean z10, boolean z11, int i13, Object obj) {
+            public static /* synthetic */ SectionItem m892copy84MWo2c$default(SectionItem sectionItem, String str, int i10, int i11, int i12, boolean z10, boolean z11, int i13, Object obj) {
                 if ((i13 & 1) != 0) {
                     str = sectionItem.key;
                 }
@@ -594,7 +594,7 @@ public final class FastestListSections {
                 }
                 boolean z12 = z10;
                 boolean z13 = z11;
-                return sectionItem.m893copy84MWo2c(str, i10, i11, i12, z12, z13);
+                return sectionItem.m895copy84MWo2c(str, i10, i11, i12, z12, z13);
             }
 
             @NotNull
@@ -603,12 +603,12 @@ public final class FastestListSections {
             }
 
             /* renamed from: component2-sZRFyWU  reason: not valid java name */
-            public final int m891component2sZRFyWU() {
+            public final int m893component2sZRFyWU() {
                 return this.section;
             }
 
             /* renamed from: component3-JXkbwXs  reason: not valid java name */
-            public final int m892component3JXkbwXs() {
+            public final int m894component3JXkbwXs() {
                 return this.item;
             }
 
@@ -626,7 +626,7 @@ public final class FastestListSections {
 
             @NotNull
             /* renamed from: copy-84MWo2c  reason: not valid java name */
-            public final SectionItem m893copy84MWo2c(@NotNull String key, int i10, int i11, int i12, boolean z10, boolean z11) {
+            public final SectionItem m895copy84MWo2c(@NotNull String key, int i10, int i11, int i12, boolean z10, boolean z11) {
                 Intrinsics.checkNotNullParameter(key, "key");
                 return new SectionItem(key, i10, i11, i12, z10, z11, null);
             }
@@ -637,7 +637,7 @@ public final class FastestListSections {
                 }
                 if (obj instanceof SectionItem) {
                     SectionItem sectionItem = (SectionItem) obj;
-                    return Intrinsics.areEqual(this.key, sectionItem.key) && Section.m905equalsimpl0(this.section, sectionItem.section) && Item.m898equalsimpl0(this.item, sectionItem.item) && this.size == sectionItem.size && this.atFront == sectionItem.atFront && this.atRear == sectionItem.atRear;
+                    return Intrinsics.areEqual(this.key, sectionItem.key) && Section.m907equalsimpl0(this.section, sectionItem.section) && Item.m900equalsimpl0(this.item, sectionItem.item) && this.size == sectionItem.size && this.atFront == sectionItem.atFront && this.atRear == sectionItem.atRear;
                 }
                 return false;
             }
@@ -651,7 +651,7 @@ public final class FastestListSections {
             }
 
             /* renamed from: getItem-JXkbwXs  reason: not valid java name */
-            public final int m894getItemJXkbwXs() {
+            public final int m896getItemJXkbwXs() {
                 return this.item;
             }
 
@@ -663,7 +663,7 @@ public final class FastestListSections {
 
             @Override // com.discord.fastest_list.android.FastestListSections.Entry
             /* renamed from: getSection-sZRFyWU */
-            public int mo877getSectionsZRFyWU() {
+            public int mo879getSectionsZRFyWU() {
                 return this.section;
             }
 
@@ -673,22 +673,22 @@ public final class FastestListSections {
             }
 
             public int hashCode() {
-                return (((((((((this.key.hashCode() * 31) + Section.m906hashCodeimpl(this.section)) * 31) + Item.m899hashCodeimpl(this.item)) * 31) + Integer.hashCode(this.size)) * 31) + Boolean.hashCode(this.atFront)) * 31) + Boolean.hashCode(this.atRear);
+                return (((((((((this.key.hashCode() * 31) + Section.m908hashCodeimpl(this.section)) * 31) + Item.m901hashCodeimpl(this.item)) * 31) + Integer.hashCode(this.size)) * 31) + Boolean.hashCode(this.atFront)) * 31) + Boolean.hashCode(this.atRear);
             }
 
             @NotNull
             public String toString() {
                 String str = this.key;
-                String m907toStringimpl = Section.m907toStringimpl(this.section);
-                String m900toStringimpl = Item.m900toStringimpl(this.item);
+                String m909toStringimpl = Section.m909toStringimpl(this.section);
+                String m902toStringimpl = Item.m902toStringimpl(this.item);
                 int i10 = this.size;
                 boolean z10 = this.atFront;
                 boolean z11 = this.atRear;
-                return "SectionItem(key=" + str + ", section=" + m907toStringimpl + ", item=" + m900toStringimpl + ", size=" + i10 + ", atFront=" + z10 + ", atRear=" + z11 + ")";
+                return "SectionItem(key=" + str + ", section=" + m909toStringimpl + ", item=" + m902toStringimpl + ", size=" + i10 + ", atFront=" + z10 + ", atRear=" + z11 + ")";
             }
 
             public /* synthetic */ SectionItem(String str, int i10, int i11, int i12, boolean z10, boolean z11, int i13, DefaultConstructorMarker defaultConstructorMarker) {
-                this(str, (i13 & 2) != 0 ? Section.m903constructorimpl(0) : i10, (i13 & 4) != 0 ? Item.m896constructorimpl(0) : i11, (i13 & 8) != 0 ? 0 : i12, (i13 & 16) != 0 ? false : z10, (i13 & 32) != 0 ? false : z11, null);
+                this(str, (i13 & 2) != 0 ? Section.m905constructorimpl(0) : i10, (i13 & 4) != 0 ? Item.m898constructorimpl(0) : i11, (i13 & 8) != 0 ? 0 : i12, (i13 & 16) != 0 ? false : z10, (i13 & 32) != 0 ? false : z11, null);
             }
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -712,7 +712,7 @@ public final class FastestListSections {
         public abstract String getKey();
 
         /* renamed from: getSection-sZRFyWU  reason: not valid java name */
-        public abstract int mo877getSectionsZRFyWU();
+        public abstract int mo879getSectionsZRFyWU();
 
         public abstract int getSize();
 
@@ -730,37 +730,37 @@ public final class FastestListSections {
         }
 
         /* renamed from: box-impl  reason: not valid java name */
-        public static final /* synthetic */ Item m895boximpl(int i10) {
+        public static final /* synthetic */ Item m897boximpl(int i10) {
             return new Item(i10);
         }
 
         /* renamed from: constructor-impl  reason: not valid java name */
-        public static int m896constructorimpl(int i10) {
+        public static int m898constructorimpl(int i10) {
             return i10;
         }
 
         /* renamed from: equals-impl  reason: not valid java name */
-        public static boolean m897equalsimpl(int i10, Object obj) {
-            return (obj instanceof Item) && i10 == ((Item) obj).m901unboximpl();
+        public static boolean m899equalsimpl(int i10, Object obj) {
+            return (obj instanceof Item) && i10 == ((Item) obj).m903unboximpl();
         }
 
         /* renamed from: equals-impl0  reason: not valid java name */
-        public static final boolean m898equalsimpl0(int i10, int i11) {
+        public static final boolean m900equalsimpl0(int i10, int i11) {
             return i10 == i11;
         }
 
         /* renamed from: hashCode-impl  reason: not valid java name */
-        public static int m899hashCodeimpl(int i10) {
+        public static int m901hashCodeimpl(int i10) {
             return Integer.hashCode(i10);
         }
 
         /* renamed from: toString-impl  reason: not valid java name */
-        public static String m900toStringimpl(int i10) {
+        public static String m902toStringimpl(int i10) {
             return "Item(value=" + i10 + ")";
         }
 
         public boolean equals(Object obj) {
-            return m897equalsimpl(this.value, obj);
+            return m899equalsimpl(this.value, obj);
         }
 
         public final int getValue() {
@@ -768,15 +768,15 @@ public final class FastestListSections {
         }
 
         public int hashCode() {
-            return m899hashCodeimpl(this.value);
+            return m901hashCodeimpl(this.value);
         }
 
         public String toString() {
-            return m900toStringimpl(this.value);
+            return m902toStringimpl(this.value);
         }
 
         /* renamed from: unbox-impl  reason: not valid java name */
-        public final /* synthetic */ int m901unboximpl() {
+        public final /* synthetic */ int m903unboximpl() {
             return this.value;
         }
     }
@@ -791,37 +791,37 @@ public final class FastestListSections {
         }
 
         /* renamed from: box-impl  reason: not valid java name */
-        public static final /* synthetic */ Section m902boximpl(int i10) {
+        public static final /* synthetic */ Section m904boximpl(int i10) {
             return new Section(i10);
         }
 
         /* renamed from: constructor-impl  reason: not valid java name */
-        public static int m903constructorimpl(int i10) {
+        public static int m905constructorimpl(int i10) {
             return i10;
         }
 
         /* renamed from: equals-impl  reason: not valid java name */
-        public static boolean m904equalsimpl(int i10, Object obj) {
-            return (obj instanceof Section) && i10 == ((Section) obj).m908unboximpl();
+        public static boolean m906equalsimpl(int i10, Object obj) {
+            return (obj instanceof Section) && i10 == ((Section) obj).m910unboximpl();
         }
 
         /* renamed from: equals-impl0  reason: not valid java name */
-        public static final boolean m905equalsimpl0(int i10, int i11) {
+        public static final boolean m907equalsimpl0(int i10, int i11) {
             return i10 == i11;
         }
 
         /* renamed from: hashCode-impl  reason: not valid java name */
-        public static int m906hashCodeimpl(int i10) {
+        public static int m908hashCodeimpl(int i10) {
             return Integer.hashCode(i10);
         }
 
         /* renamed from: toString-impl  reason: not valid java name */
-        public static String m907toStringimpl(int i10) {
+        public static String m909toStringimpl(int i10) {
             return "Section(value=" + i10 + ")";
         }
 
         public boolean equals(Object obj) {
-            return m904equalsimpl(this.value, obj);
+            return m906equalsimpl(this.value, obj);
         }
 
         public final int getValue() {
@@ -829,15 +829,15 @@ public final class FastestListSections {
         }
 
         public int hashCode() {
-            return m906hashCodeimpl(this.value);
+            return m908hashCodeimpl(this.value);
         }
 
         public String toString() {
-            return m907toStringimpl(this.value);
+            return m909toStringimpl(this.value);
         }
 
         /* renamed from: unbox-impl  reason: not valid java name */
-        public final /* synthetic */ int m908unboximpl() {
+        public final /* synthetic */ int m910unboximpl() {
             return this.value;
         }
     }
@@ -1082,7 +1082,7 @@ public final class FastestListSections {
     }
 
     /* renamed from: getItemPosition-jEcWkE0  reason: not valid java name */
-    public final Integer m876getItemPositionjEcWkE0(int i10, int i11) {
+    public final Integer m878getItemPositionjEcWkE0(int i10, int i11) {
         Iterator<? extends Entry> it = this.sectionEntries.iterator();
         int i12 = 0;
         while (true) {
@@ -1090,7 +1090,7 @@ public final class FastestListSections {
                 Entry next = it.next();
                 if (next instanceof Entry.SectionItem) {
                     Entry.SectionItem sectionItem = (Entry.SectionItem) next;
-                    if (Item.m898equalsimpl0(sectionItem.m894getItemJXkbwXs(), i11) && Section.m905equalsimpl0(sectionItem.mo877getSectionsZRFyWU(), i10)) {
+                    if (Item.m900equalsimpl0(sectionItem.m896getItemJXkbwXs(), i11) && Section.m907equalsimpl0(sectionItem.mo879getSectionsZRFyWU(), i10)) {
                         break;
                     }
                 }

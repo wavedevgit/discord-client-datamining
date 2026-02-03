@@ -26,25 +26,25 @@ import sun.misc.Unsafe;
 public abstract class a extends mi.a implements ListenableFuture {
 
     /* renamed from: o  reason: collision with root package name */
-    static final boolean f17262o;
+    static final boolean f16891o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Logger f17263p;
+    private static final Logger f16892p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final b f17264q;
+    private static final b f16893q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Object f17265r;
+    private static final Object f16894r;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile Object f17266d;
+    private volatile Object f16895d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile e f17267e;
+    private volatile e f16896e;
 
     /* renamed from: i  reason: collision with root package name */
-    private volatile k f17268i;
+    private volatile k f16897i;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -72,30 +72,30 @@ public abstract class a extends mi.a implements ListenableFuture {
     public static final class c {
 
         /* renamed from: c  reason: collision with root package name */
-        static final c f17269c;
+        static final c f16898c;
 
         /* renamed from: d  reason: collision with root package name */
-        static final c f17270d;
+        static final c f16899d;
 
         /* renamed from: a  reason: collision with root package name */
-        final boolean f17271a;
+        final boolean f16900a;
 
         /* renamed from: b  reason: collision with root package name */
-        final Throwable f17272b;
+        final Throwable f16901b;
 
         static {
-            if (a.f17262o) {
-                f17270d = null;
-                f17269c = null;
+            if (a.f16891o) {
+                f16899d = null;
+                f16898c = null;
                 return;
             }
-            f17270d = new c(false, null);
-            f17269c = new c(true, null);
+            f16899d = new c(false, null);
+            f16898c = new c(true, null);
         }
 
         c(boolean z10, Throwable th2) {
-            this.f17271a = z10;
-            this.f17272b = th2;
+            this.f16900a = z10;
+            this.f16901b = th2;
         }
     }
 
@@ -104,15 +104,15 @@ public abstract class a extends mi.a implements ListenableFuture {
     public static final class d {
 
         /* renamed from: b  reason: collision with root package name */
-        static final d f17273b = new d(new C0191a("Failure occurred while trying to finish a future."));
+        static final d f16902b = new d(new C0196a("Failure occurred while trying to finish a future."));
 
         /* renamed from: a  reason: collision with root package name */
-        final Throwable f17274a;
+        final Throwable f16903a;
 
         /* renamed from: com.google.common.util.concurrent.a$d$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        class C0191a extends Throwable {
-            C0191a(String str) {
+        class C0196a extends Throwable {
+            C0196a(String str) {
                 super(str);
             }
 
@@ -123,7 +123,7 @@ public abstract class a extends mi.a implements ListenableFuture {
         }
 
         d(Throwable th2) {
-            this.f17274a = (Throwable) m.j(th2);
+            this.f16903a = (Throwable) m.j(th2);
         }
     }
 
@@ -131,62 +131,62 @@ public abstract class a extends mi.a implements ListenableFuture {
     private static final class f extends b {
 
         /* renamed from: a  reason: collision with root package name */
-        final AtomicReferenceFieldUpdater f17279a;
+        final AtomicReferenceFieldUpdater f16908a;
 
         /* renamed from: b  reason: collision with root package name */
-        final AtomicReferenceFieldUpdater f17280b;
+        final AtomicReferenceFieldUpdater f16909b;
 
         /* renamed from: c  reason: collision with root package name */
-        final AtomicReferenceFieldUpdater f17281c;
+        final AtomicReferenceFieldUpdater f16910c;
 
         /* renamed from: d  reason: collision with root package name */
-        final AtomicReferenceFieldUpdater f17282d;
+        final AtomicReferenceFieldUpdater f16911d;
 
         /* renamed from: e  reason: collision with root package name */
-        final AtomicReferenceFieldUpdater f17283e;
+        final AtomicReferenceFieldUpdater f16912e;
 
         f(AtomicReferenceFieldUpdater atomicReferenceFieldUpdater, AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2, AtomicReferenceFieldUpdater atomicReferenceFieldUpdater3, AtomicReferenceFieldUpdater atomicReferenceFieldUpdater4, AtomicReferenceFieldUpdater atomicReferenceFieldUpdater5) {
             super();
-            this.f17279a = atomicReferenceFieldUpdater;
-            this.f17280b = atomicReferenceFieldUpdater2;
-            this.f17281c = atomicReferenceFieldUpdater3;
-            this.f17282d = atomicReferenceFieldUpdater4;
-            this.f17283e = atomicReferenceFieldUpdater5;
+            this.f16908a = atomicReferenceFieldUpdater;
+            this.f16909b = atomicReferenceFieldUpdater2;
+            this.f16910c = atomicReferenceFieldUpdater3;
+            this.f16911d = atomicReferenceFieldUpdater4;
+            this.f16912e = atomicReferenceFieldUpdater5;
         }
 
         @Override // com.google.common.util.concurrent.a.b
         boolean a(a aVar, e eVar, e eVar2) {
-            return androidx.concurrent.futures.b.a(this.f17282d, aVar, eVar, eVar2);
+            return androidx.concurrent.futures.b.a(this.f16911d, aVar, eVar, eVar2);
         }
 
         @Override // com.google.common.util.concurrent.a.b
         boolean b(a aVar, Object obj, Object obj2) {
-            return androidx.concurrent.futures.b.a(this.f17283e, aVar, obj, obj2);
+            return androidx.concurrent.futures.b.a(this.f16912e, aVar, obj, obj2);
         }
 
         @Override // com.google.common.util.concurrent.a.b
         boolean c(a aVar, k kVar, k kVar2) {
-            return androidx.concurrent.futures.b.a(this.f17281c, aVar, kVar, kVar2);
+            return androidx.concurrent.futures.b.a(this.f16910c, aVar, kVar, kVar2);
         }
 
         @Override // com.google.common.util.concurrent.a.b
         e d(a aVar, e eVar) {
-            return (e) this.f17282d.getAndSet(aVar, eVar);
+            return (e) this.f16911d.getAndSet(aVar, eVar);
         }
 
         @Override // com.google.common.util.concurrent.a.b
         k e(a aVar, k kVar) {
-            return (k) this.f17281c.getAndSet(aVar, kVar);
+            return (k) this.f16910c.getAndSet(aVar, kVar);
         }
 
         @Override // com.google.common.util.concurrent.a.b
         void f(k kVar, k kVar2) {
-            this.f17280b.lazySet(kVar, kVar2);
+            this.f16909b.lazySet(kVar, kVar2);
         }
 
         @Override // com.google.common.util.concurrent.a.b
         void g(k kVar, Thread thread) {
-            this.f17279a.lazySet(kVar, thread);
+            this.f16908a.lazySet(kVar, thread);
         }
     }
 
@@ -200,8 +200,8 @@ public abstract class a extends mi.a implements ListenableFuture {
         boolean a(a aVar, e eVar, e eVar2) {
             synchronized (aVar) {
                 try {
-                    if (aVar.f17267e == eVar) {
-                        aVar.f17267e = eVar2;
+                    if (aVar.f16896e == eVar) {
+                        aVar.f16896e = eVar2;
                         return true;
                     }
                     return false;
@@ -215,8 +215,8 @@ public abstract class a extends mi.a implements ListenableFuture {
         boolean b(a aVar, Object obj, Object obj2) {
             synchronized (aVar) {
                 try {
-                    if (aVar.f17266d == obj) {
-                        aVar.f17266d = obj2;
+                    if (aVar.f16895d == obj) {
+                        aVar.f16895d = obj2;
                         return true;
                     }
                     return false;
@@ -230,8 +230,8 @@ public abstract class a extends mi.a implements ListenableFuture {
         boolean c(a aVar, k kVar, k kVar2) {
             synchronized (aVar) {
                 try {
-                    if (aVar.f17268i == kVar) {
-                        aVar.f17268i = kVar2;
+                    if (aVar.f16897i == kVar) {
+                        aVar.f16897i = kVar2;
                         return true;
                     }
                     return false;
@@ -246,9 +246,9 @@ public abstract class a extends mi.a implements ListenableFuture {
             e eVar2;
             synchronized (aVar) {
                 try {
-                    eVar2 = aVar.f17267e;
+                    eVar2 = aVar.f16896e;
                     if (eVar2 != eVar) {
-                        aVar.f17267e = eVar;
+                        aVar.f16896e = eVar;
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -262,9 +262,9 @@ public abstract class a extends mi.a implements ListenableFuture {
             k kVar2;
             synchronized (aVar) {
                 try {
-                    kVar2 = aVar.f17268i;
+                    kVar2 = aVar.f16897i;
                     if (kVar2 != kVar) {
-                        aVar.f17268i = kVar;
+                        aVar.f16897i = kVar;
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -275,12 +275,12 @@ public abstract class a extends mi.a implements ListenableFuture {
 
         @Override // com.google.common.util.concurrent.a.b
         void f(k kVar, k kVar2) {
-            kVar.f17292b = kVar2;
+            kVar.f16921b = kVar2;
         }
 
         @Override // com.google.common.util.concurrent.a.b
         void g(k kVar, Thread thread) {
-            kVar.f17291a = thread;
+            kVar.f16920a = thread;
         }
     }
 
@@ -326,27 +326,27 @@ public abstract class a extends mi.a implements ListenableFuture {
     private static final class j extends b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final Unsafe f17284a;
+        static final Unsafe f16913a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final long f17285b;
+        static final long f16914b;
 
         /* renamed from: c  reason: collision with root package name */
-        static final long f17286c;
+        static final long f16915c;
 
         /* renamed from: d  reason: collision with root package name */
-        static final long f17287d;
+        static final long f16916d;
 
         /* renamed from: e  reason: collision with root package name */
-        static final long f17288e;
+        static final long f16917e;
 
         /* renamed from: f  reason: collision with root package name */
-        static final long f17289f;
+        static final long f16918f;
 
         /* renamed from: com.google.common.util.concurrent.a$j$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        class C0192a implements PrivilegedExceptionAction {
-            C0192a() {
+        class C0197a implements PrivilegedExceptionAction {
+            C0197a() {
             }
 
             @Override // java.security.PrivilegedExceptionAction
@@ -373,15 +373,15 @@ public abstract class a extends mi.a implements ListenableFuture {
                     throw new RuntimeException("Could not initialize intrinsics", e10.getCause());
                 }
             } catch (SecurityException unused) {
-                unsafe = (Unsafe) AccessController.doPrivileged(new C0192a());
+                unsafe = (Unsafe) AccessController.doPrivileged(new C0197a());
             }
             try {
-                f17286c = unsafe.objectFieldOffset(a.class.getDeclaredField("i"));
-                f17285b = unsafe.objectFieldOffset(a.class.getDeclaredField("e"));
-                f17287d = unsafe.objectFieldOffset(a.class.getDeclaredField("d"));
-                f17288e = unsafe.objectFieldOffset(k.class.getDeclaredField("a"));
-                f17289f = unsafe.objectFieldOffset(k.class.getDeclaredField("b"));
-                f17284a = unsafe;
+                f16915c = unsafe.objectFieldOffset(a.class.getDeclaredField("i"));
+                f16914b = unsafe.objectFieldOffset(a.class.getDeclaredField("e"));
+                f16916d = unsafe.objectFieldOffset(a.class.getDeclaredField("d"));
+                f16917e = unsafe.objectFieldOffset(k.class.getDeclaredField("a"));
+                f16918f = unsafe.objectFieldOffset(k.class.getDeclaredField("b"));
+                f16913a = unsafe;
             } catch (Exception e11) {
                 s.e(e11);
                 throw new RuntimeException(e11);
@@ -394,24 +394,24 @@ public abstract class a extends mi.a implements ListenableFuture {
 
         @Override // com.google.common.util.concurrent.a.b
         boolean a(a aVar, e eVar, e eVar2) {
-            return n3.a(f17284a, aVar, f17285b, eVar, eVar2);
+            return n3.a(f16913a, aVar, f16914b, eVar, eVar2);
         }
 
         @Override // com.google.common.util.concurrent.a.b
         boolean b(a aVar, Object obj, Object obj2) {
-            return n3.a(f17284a, aVar, f17287d, obj, obj2);
+            return n3.a(f16913a, aVar, f16916d, obj, obj2);
         }
 
         @Override // com.google.common.util.concurrent.a.b
         boolean c(a aVar, k kVar, k kVar2) {
-            return n3.a(f17284a, aVar, f17286c, kVar, kVar2);
+            return n3.a(f16913a, aVar, f16915c, kVar, kVar2);
         }
 
         @Override // com.google.common.util.concurrent.a.b
         e d(a aVar, e eVar) {
             e eVar2;
             do {
-                eVar2 = aVar.f17267e;
+                eVar2 = aVar.f16896e;
                 if (eVar == eVar2) {
                     break;
                 }
@@ -423,7 +423,7 @@ public abstract class a extends mi.a implements ListenableFuture {
         k e(a aVar, k kVar) {
             k kVar2;
             do {
-                kVar2 = aVar.f17268i;
+                kVar2 = aVar.f16897i;
                 if (kVar == kVar2) {
                     break;
                 }
@@ -433,12 +433,12 @@ public abstract class a extends mi.a implements ListenableFuture {
 
         @Override // com.google.common.util.concurrent.a.b
         void f(k kVar, k kVar2) {
-            f17284a.putObject(kVar, f17289f, kVar2);
+            f16913a.putObject(kVar, f16918f, kVar2);
         }
 
         @Override // com.google.common.util.concurrent.a.b
         void g(k kVar, Thread thread) {
-            f17284a.putObject(kVar, f17288e, thread);
+            f16913a.putObject(kVar, f16917e, thread);
         }
     }
 
@@ -447,31 +447,31 @@ public abstract class a extends mi.a implements ListenableFuture {
     public static final class k {
 
         /* renamed from: c  reason: collision with root package name */
-        static final k f17290c = new k(false);
+        static final k f16919c = new k(false);
 
         /* renamed from: a  reason: collision with root package name */
-        volatile Thread f17291a;
+        volatile Thread f16920a;
 
         /* renamed from: b  reason: collision with root package name */
-        volatile k f17292b;
+        volatile k f16921b;
 
         k(boolean z10) {
         }
 
         void a(k kVar) {
-            a.f17264q.f(this, kVar);
+            a.f16893q.f(this, kVar);
         }
 
         void b() {
-            Thread thread = this.f17291a;
+            Thread thread = this.f16920a;
             if (thread != null) {
-                this.f17291a = null;
+                this.f16920a = null;
                 LockSupport.unpark(thread);
             }
         }
 
         k() {
-            a.f17264q.g(this, Thread.currentThread());
+            a.f16893q.g(this, Thread.currentThread());
         }
     }
 
@@ -484,8 +484,8 @@ public abstract class a extends mi.a implements ListenableFuture {
         } catch (SecurityException unused) {
             z10 = false;
         }
-        f17262o = z10;
-        f17263p = Logger.getLogger(a.class.getName());
+        f16891o = z10;
+        f16892p = Logger.getLogger(a.class.getName());
         Throwable th3 = null;
         try {
             gVar = new j();
@@ -499,14 +499,14 @@ public abstract class a extends mi.a implements ListenableFuture {
                 gVar = new g();
             }
         }
-        f17264q = gVar;
+        f16893q = gVar;
         if (th3 != null) {
-            Logger logger = f17263p;
+            Logger logger = f16892p;
             Level level = Level.SEVERE;
             logger.log(level, "UnsafeAtomicHelper is broken!", th2);
             logger.log(level, "SafeAtomicHelper is broken!", th3);
         }
-        f17265r = new Object();
+        f16894r = new Object();
     }
 
     protected a() {
@@ -575,10 +575,10 @@ public abstract class a extends mi.a implements ListenableFuture {
 
     private e o(e eVar) {
         e eVar2 = eVar;
-        e d10 = f17264q.d(this, e.f17275d);
+        e d10 = f16893q.d(this, e.f16904d);
         while (d10 != null) {
-            e eVar3 = d10.f17278c;
-            d10.f17278c = eVar2;
+            e eVar3 = d10.f16907c;
+            d10.f16907c = eVar2;
             eVar2 = d10;
             d10 = eVar3;
         }
@@ -590,10 +590,10 @@ public abstract class a extends mi.a implements ListenableFuture {
         aVar.l();
         e o10 = aVar.o(null);
         while (o10 != null) {
-            e eVar = o10.f17278c;
-            Runnable runnable = o10.f17276a;
+            e eVar = o10.f16907c;
+            Runnable runnable = o10.f16905a;
             Objects.requireNonNull(runnable);
-            Executor executor = o10.f17277b;
+            Executor executor = o10.f16906b;
             Objects.requireNonNull(executor);
             q(runnable, executor);
             o10 = eVar;
@@ -604,7 +604,7 @@ public abstract class a extends mi.a implements ListenableFuture {
         try {
             executor.execute(runnable);
         } catch (RuntimeException e10) {
-            Logger logger = f17263p;
+            Logger logger = f16892p;
             Level level = Level.SEVERE;
             String valueOf = String.valueOf(runnable);
             String valueOf2 = String.valueOf(executor);
@@ -620,14 +620,14 @@ public abstract class a extends mi.a implements ListenableFuture {
     private Object r(Object obj) {
         if (!(obj instanceof c)) {
             if (!(obj instanceof d)) {
-                if (obj == f17265r) {
+                if (obj == f16894r) {
                     return com.google.common.util.concurrent.e.a();
                 }
                 return obj;
             }
-            throw new ExecutionException(((d) obj).f17274a);
+            throw new ExecutionException(((d) obj).f16903a);
         }
-        throw n("Task was cancelled.", ((c) obj).f17272b);
+        throw n("Task was cancelled.", ((c) obj).f16901b);
     }
 
     private static Object s(Future future) {
@@ -653,27 +653,27 @@ public abstract class a extends mi.a implements ListenableFuture {
     }
 
     private void v() {
-        for (k e10 = f17264q.e(this, k.f17290c); e10 != null; e10 = e10.f17292b) {
+        for (k e10 = f16893q.e(this, k.f16919c); e10 != null; e10 = e10.f16921b) {
             e10.b();
         }
     }
 
     private void w(k kVar) {
-        kVar.f17291a = null;
+        kVar.f16920a = null;
         while (true) {
-            k kVar2 = this.f17268i;
-            if (kVar2 != k.f17290c) {
+            k kVar2 = this.f16897i;
+            if (kVar2 != k.f16919c) {
                 k kVar3 = null;
                 while (kVar2 != null) {
-                    k kVar4 = kVar2.f17292b;
-                    if (kVar2.f17291a != null) {
+                    k kVar4 = kVar2.f16921b;
+                    if (kVar2.f16920a != null) {
                         kVar3 = kVar2;
                     } else if (kVar3 != null) {
-                        kVar3.f17292b = kVar4;
-                        if (kVar3.f17291a == null) {
+                        kVar3.f16921b = kVar4;
+                        if (kVar3.f16920a == null) {
                             break;
                         }
-                    } else if (!f17264q.c(this, kVar2, kVar4)) {
+                    } else if (!f16893q.c(this, kVar2, kVar4)) {
                         break;
                     }
                     kVar2 = kVar4;
@@ -689,15 +689,15 @@ public abstract class a extends mi.a implements ListenableFuture {
         e eVar;
         m.k(runnable, "Runnable was null.");
         m.k(executor, "Executor was null.");
-        if (!isDone() && (eVar = this.f17267e) != e.f17275d) {
+        if (!isDone() && (eVar = this.f16896e) != e.f16904d) {
             e eVar2 = new e(runnable, executor);
             do {
-                eVar2.f17278c = eVar;
-                if (f17264q.a(this, eVar, eVar2)) {
+                eVar2.f16907c = eVar;
+                if (f16893q.a(this, eVar, eVar2)) {
                     return;
                 }
-                eVar = this.f17267e;
-            } while (eVar != e.f17275d);
+                eVar = this.f16896e;
+            } while (eVar != e.f16904d);
             q(runnable, executor);
         }
         q(runnable, executor);
@@ -707,9 +707,9 @@ public abstract class a extends mi.a implements ListenableFuture {
     @Override // mi.a
     public final Throwable b() {
         if (this instanceof h) {
-            Object obj = this.f17266d;
+            Object obj = this.f16895d;
             if (obj instanceof d) {
-                return ((d) obj).f17274a;
+                return ((d) obj).f16903a;
             }
             return null;
         }
@@ -720,24 +720,24 @@ public abstract class a extends mi.a implements ListenableFuture {
     public boolean cancel(boolean z10) {
         boolean z11;
         c cVar;
-        Object obj = this.f17266d;
+        Object obj = this.f16895d;
         if (obj == null) {
             z11 = true;
         } else {
             z11 = false;
         }
         if (z11) {
-            if (f17262o) {
+            if (f16891o) {
                 cVar = new c(z10, new CancellationException("Future.cancel() was called."));
             } else {
                 if (z10) {
-                    cVar = c.f17269c;
+                    cVar = c.f16898c;
                 } else {
-                    cVar = c.f17270d;
+                    cVar = c.f16899d;
                 }
                 Objects.requireNonNull(cVar);
             }
-            if (f17264q.b(this, obj, cVar)) {
+            if (f16893q.b(this, obj, cVar)) {
                 if (z10) {
                     t();
                 }
@@ -752,22 +752,22 @@ public abstract class a extends mi.a implements ListenableFuture {
     public Object get(long j10, TimeUnit timeUnit) {
         long nanos = timeUnit.toNanos(j10);
         if (!Thread.interrupted()) {
-            Object obj = this.f17266d;
+            Object obj = this.f16895d;
             if (obj != null) {
                 return r(obj);
             }
             long nanoTime = nanos > 0 ? System.nanoTime() + nanos : 0L;
             if (nanos >= 1000) {
-                k kVar = this.f17268i;
-                if (kVar != k.f17290c) {
+                k kVar = this.f16897i;
+                if (kVar != k.f16919c) {
                     k kVar2 = new k();
                     do {
                         kVar2.a(kVar);
-                        if (f17264q.c(this, kVar, kVar2)) {
+                        if (f16893q.c(this, kVar, kVar2)) {
                             do {
                                 com.google.common.util.concurrent.f.a(this, nanos);
                                 if (!Thread.interrupted()) {
-                                    Object obj2 = this.f17266d;
+                                    Object obj2 = this.f16895d;
                                     if (obj2 != null) {
                                         return r(obj2);
                                     }
@@ -779,19 +779,19 @@ public abstract class a extends mi.a implements ListenableFuture {
                             } while (nanos >= 1000);
                             w(kVar2);
                         } else {
-                            kVar = this.f17268i;
+                            kVar = this.f16897i;
                         }
-                    } while (kVar != k.f17290c);
-                    Object obj3 = this.f17266d;
+                    } while (kVar != k.f16919c);
+                    Object obj3 = this.f16895d;
                     Objects.requireNonNull(obj3);
                     return r(obj3);
                 }
-                Object obj32 = this.f17266d;
+                Object obj32 = this.f16895d;
                 Objects.requireNonNull(obj32);
                 return r(obj32);
             }
             while (nanos > 0) {
-                Object obj4 = this.f17266d;
+                Object obj4 = this.f16895d;
                 if (obj4 != null) {
                     return r(obj4);
                 }
@@ -856,12 +856,12 @@ public abstract class a extends mi.a implements ListenableFuture {
 
     @Override // java.util.concurrent.Future
     public boolean isCancelled() {
-        return this.f17266d instanceof c;
+        return this.f16895d instanceof c;
     }
 
     @Override // java.util.concurrent.Future
     public boolean isDone() {
-        if (this.f17266d != null) {
+        if (this.f16895d != null) {
             return true;
         }
         return false;
@@ -909,9 +909,9 @@ public abstract class a extends mi.a implements ListenableFuture {
     /* JADX INFO: Access modifiers changed from: protected */
     public boolean x(Object obj) {
         if (obj == null) {
-            obj = f17265r;
+            obj = f16894r;
         }
-        if (f17264q.b(this, null, obj)) {
+        if (f16893q.b(this, null, obj)) {
             p(this);
             return true;
         }
@@ -920,7 +920,7 @@ public abstract class a extends mi.a implements ListenableFuture {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public boolean y(Throwable th2) {
-        if (f17264q.b(this, null, new d((Throwable) m.j(th2)))) {
+        if (f16893q.b(this, null, new d((Throwable) m.j(th2)))) {
             p(this);
             return true;
         }
@@ -932,25 +932,25 @@ public abstract class a extends mi.a implements ListenableFuture {
     public static final class e {
 
         /* renamed from: d  reason: collision with root package name */
-        static final e f17275d = new e();
+        static final e f16904d = new e();
 
         /* renamed from: a  reason: collision with root package name */
-        final Runnable f17276a;
+        final Runnable f16905a;
 
         /* renamed from: b  reason: collision with root package name */
-        final Executor f17277b;
+        final Executor f16906b;
 
         /* renamed from: c  reason: collision with root package name */
-        e f17278c;
+        e f16907c;
 
         e(Runnable runnable, Executor executor) {
-            this.f17276a = runnable;
-            this.f17277b = executor;
+            this.f16905a = runnable;
+            this.f16906b = executor;
         }
 
         e() {
-            this.f17276a = null;
-            this.f17277b = null;
+            this.f16905a = null;
+            this.f16906b = null;
         }
     }
 
@@ -959,20 +959,20 @@ public abstract class a extends mi.a implements ListenableFuture {
         Object obj;
         boolean z10;
         if (!Thread.interrupted()) {
-            Object obj2 = this.f17266d;
+            Object obj2 = this.f16895d;
             if (obj2 != null) {
                 return r(obj2);
             }
-            k kVar = this.f17268i;
-            if (kVar != k.f17290c) {
+            k kVar = this.f16897i;
+            if (kVar != k.f16919c) {
                 k kVar2 = new k();
                 do {
                     kVar2.a(kVar);
-                    if (f17264q.c(this, kVar, kVar2)) {
+                    if (f16893q.c(this, kVar, kVar2)) {
                         do {
                             LockSupport.park(this);
                             if (!Thread.interrupted()) {
-                                obj = this.f17266d;
+                                obj = this.f16895d;
                                 if (obj != null) {
                                     z10 = true;
                                     continue;
@@ -987,13 +987,13 @@ public abstract class a extends mi.a implements ListenableFuture {
                         } while (!z10);
                         return r(obj);
                     }
-                    kVar = this.f17268i;
-                } while (kVar != k.f17290c);
-                Object obj3 = this.f17266d;
+                    kVar = this.f16897i;
+                } while (kVar != k.f16919c);
+                Object obj3 = this.f16895d;
                 Objects.requireNonNull(obj3);
                 return r(obj3);
             }
-            Object obj32 = this.f17266d;
+            Object obj32 = this.f16895d;
             Objects.requireNonNull(obj32);
             return r(obj32);
         }

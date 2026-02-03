@@ -126,7 +126,7 @@ public class File extends NativeObject {
     private native int cppViewModelCount(long j10);
 
     /* renamed from: import  reason: not valid java name */
-    private native long m205import(byte[] bArr, int i10, int i11, long j10);
+    private native long m207import(byte[] bArr, int i10, int i11, long j10);
 
     @NotNull
     public Artboard artboard(@NotNull String name) {
@@ -271,7 +271,7 @@ public class File extends NativeObject {
             fileAssetLoader.acquire();
             getDependencies().add(fileAssetLoader);
         }
-        setCppPointer(m205import(bytes, bytes.length, getRendererType().getValue(), fileAssetLoader != null ? fileAssetLoader.getCppPointer() : 0L));
+        setCppPointer(m207import(bytes, bytes.length, getRendererType().getValue(), fileAssetLoader != null ? fileAssetLoader.getCppPointer() : 0L));
         getRefs().incrementAndGet();
         this.lock = new ReentrantLock();
     }

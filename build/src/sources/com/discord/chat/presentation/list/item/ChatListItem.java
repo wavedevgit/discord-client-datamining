@@ -3,8 +3,8 @@ package com.discord.chat.presentation.list.item;
 import com.discord.chat.presentation.list.item.ChatListItem;
 import com.discord.misc.utilities.ids.IdUtilsKt;
 import com.facebook.react.devsupport.StackTraceHelper;
-import ir.l;
-import ir.o;
+import jr.l;
+import jr.o;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -16,7 +16,7 @@ public abstract class ChatListItem {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9725id;
+    private final String f9354id;
     @NotNull
     private final Lazy recyclerItemId$delegate;
 
@@ -31,7 +31,7 @@ public abstract class ChatListItem {
 
     @NotNull
     public String getId() {
-        return this.f9725id;
+        return this.f9354id;
     }
 
     public final long getRecyclerItemId() {
@@ -39,8 +39,8 @@ public abstract class ChatListItem {
     }
 
     private ChatListItem(String str) {
-        this.f9725id = str;
-        this.recyclerItemId$delegate = l.a(o.f31120i, new Function0() { // from class: u6.a
+        this.f9354id = str;
+        this.recyclerItemId$delegate = l.a(o.f32183i, new Function0() { // from class: u6.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 long recyclerItemId_delegate$lambda$0;

@@ -24,18 +24,18 @@ public final class DescriptorResolverUtils {
     public static class a extends NonReportingOverrideStrategy {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ ErrorReporter f34083a;
+        final /* synthetic */ ErrorReporter f33859a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Set f34084b;
+        final /* synthetic */ Set f33860b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ boolean f34085c;
+        final /* synthetic */ boolean f33861c;
 
         /* renamed from: kotlin.reflect.jvm.internal.impl.load.java.components.DescriptorResolverUtils$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        class C0453a implements Function1 {
-            C0453a() {
+        class C0445a implements Function1 {
+            C0445a() {
             }
 
             private static /* synthetic */ void a(int i10) {
@@ -48,15 +48,15 @@ public final class DescriptorResolverUtils {
                 if (callableMemberDescriptor == null) {
                     a(0);
                 }
-                a.this.f34083a.reportCannotInferVisibility(callableMemberDescriptor);
-                return Unit.f33298a;
+                a.this.f33859a.reportCannotInferVisibility(callableMemberDescriptor);
+                return Unit.f33074a;
             }
         }
 
         a(ErrorReporter errorReporter, Set set, boolean z10) {
-            this.f34083a = errorReporter;
-            this.f34084b = set;
-            this.f34085c = z10;
+            this.f33859a = errorReporter;
+            this.f33860b = set;
+            this.f33861c = z10;
         }
 
         private static /* synthetic */ void b(int i10) {
@@ -98,8 +98,8 @@ public final class DescriptorResolverUtils {
             if (callableMemberDescriptor == null) {
                 b(0);
             }
-            OverridingUtil.resolveUnknownVisibilityForMember(callableMemberDescriptor, new C0453a());
-            this.f34084b.add(callableMemberDescriptor);
+            OverridingUtil.resolveUnknownVisibilityForMember(callableMemberDescriptor, new C0445a());
+            this.f33860b.add(callableMemberDescriptor);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.resolve.OverridingStrategy
@@ -110,7 +110,7 @@ public final class DescriptorResolverUtils {
             if (collection == null) {
                 b(4);
             }
-            if (this.f34085c && callableMemberDescriptor.getKind() != CallableMemberDescriptor.Kind.FAKE_OVERRIDE) {
+            if (this.f33861c && callableMemberDescriptor.getKind() != CallableMemberDescriptor.Kind.FAKE_OVERRIDE) {
                 return;
             }
             super.setOverriddenDescriptors(callableMemberDescriptor, collection);

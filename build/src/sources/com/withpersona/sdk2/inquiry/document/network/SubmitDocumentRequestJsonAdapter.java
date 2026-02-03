@@ -17,28 +17,28 @@ import org.jetbrains.annotations.NotNull;
 public final class SubmitDocumentRequestJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19508a;
+    private final m.b f19141a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19509b;
+    private final h f19142b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f19510c;
+    private final h f19143c;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile Constructor f19511d;
+    private volatile Constructor f19144d;
 
     public SubmitDocumentRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data", "meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19508a = a10;
+        this.f19141a = a10;
         h f10 = moshi.f(SubmitDocumentRequest.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19509b = f10;
+        this.f19142b = f10;
         h f11 = moshi.f(SubmitDocumentRequest.Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19510c = f11;
+        this.f19143c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -50,22 +50,22 @@ public final class SubmitDocumentRequestJsonAdapter extends h {
         SubmitDocumentRequest.Meta meta = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f19508a);
-            if (A0 != -1) {
-                if (A0 != 0) {
-                    if (A0 == 1 && (meta = (SubmitDocumentRequest.Meta) this.f19510c.fromJson(reader)) == null) {
-                        throw sm.c.x("meta", "meta", reader);
+            int t02 = reader.t0(this.f19141a);
+            if (t02 != -1) {
+                if (t02 != 0) {
+                    if (t02 == 1 && (meta = (SubmitDocumentRequest.Meta) this.f19143c.fromJson(reader)) == null) {
+                        throw tm.c.x("meta", "meta", reader);
                     }
                 } else {
-                    data = (SubmitDocumentRequest.Data) this.f19509b.fromJson(reader);
+                    data = (SubmitDocumentRequest.Data) this.f19142b.fromJson(reader);
                     if (data != null) {
                         i10 = -2;
                     } else {
-                        throw sm.c.x("data_", "data", reader);
+                        throw tm.c.x("data_", "data", reader);
                     }
                 }
             } else {
-                reader.E0();
+                reader.F0();
                 reader.P();
             }
         }
@@ -75,12 +75,12 @@ public final class SubmitDocumentRequestJsonAdapter extends h {
             if (meta != null) {
                 return new SubmitDocumentRequest(data, meta);
             }
-            throw sm.c.o("meta", "meta", reader);
+            throw tm.c.o("meta", "meta", reader);
         }
-        Constructor constructor = this.f19511d;
+        Constructor constructor = this.f19144d;
         if (constructor == null) {
-            constructor = SubmitDocumentRequest.class.getDeclaredConstructor(SubmitDocumentRequest.Data.class, SubmitDocumentRequest.Meta.class, Integer.TYPE, sm.c.f49097c);
-            this.f19511d = constructor;
+            constructor = SubmitDocumentRequest.class.getDeclaredConstructor(SubmitDocumentRequest.Data.class, SubmitDocumentRequest.Meta.class, Integer.TYPE, tm.c.f49935c);
+            this.f19144d = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         if (meta != null) {
@@ -88,7 +88,7 @@ public final class SubmitDocumentRequestJsonAdapter extends h {
             Intrinsics.checkNotNullExpressionValue(newInstance, "newInstance(...)");
             return (SubmitDocumentRequest) newInstance;
         }
-        throw sm.c.o("meta", "meta", reader);
+        throw tm.c.o("meta", "meta", reader);
     }
 
     @Override // com.squareup.moshi.h
@@ -97,10 +97,10 @@ public final class SubmitDocumentRequestJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (submitDocumentRequest != null) {
             writer.l();
-            writer.A0("data");
-            this.f19509b.toJson(writer, submitDocumentRequest.a());
-            writer.A0("meta");
-            this.f19510c.toJson(writer, submitDocumentRequest.b());
+            writer.t0("data");
+            this.f19142b.toJson(writer, submitDocumentRequest.a());
+            writer.t0("meta");
+            this.f19143c.toJson(writer, submitDocumentRequest.b());
             writer.E();
             return;
         }

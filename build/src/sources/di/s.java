@@ -7,21 +7,21 @@ import java.util.Set;
 public final class s implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ Set f22192d;
+    final /* synthetic */ Set f21768d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ a f22193e;
+    final /* synthetic */ a f21769e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s(a aVar, Set set) {
-        this.f22193e = aVar;
-        this.f22192d = set;
+        this.f21769e = aVar;
+        this.f21768d = set;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
         try {
-            this.f22193e.h(this.f22192d);
+            this.f21769e.h(this.f21768d);
         } catch (Exception e10) {
             Log.e("SplitCompat", "Failed to remove from splitcompat storage split that is already installed", e10);
         }

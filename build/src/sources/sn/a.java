@@ -1,44 +1,45 @@
 package sn;
-
-import kotlin.enums.EnumEntries;
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class a {
+public interface a {
 
-    /* renamed from: d  reason: collision with root package name */
-    public static final a f49106d = new a("Stream", 0);
+    /* renamed from: sn.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0610a {
 
-    /* renamed from: e  reason: collision with root package name */
-    public static final a f49107e = new a("Upload", 1);
+        /* renamed from: a  reason: collision with root package name */
+        private final double f49161a;
 
-    /* renamed from: i  reason: collision with root package name */
-    public static final a f49108i = new a("None", 2);
+        public C0610a(double d10) {
+            this.f49161a = d10;
+        }
 
-    /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ a[] f49109o;
+        public final double a() {
+            return this.f49161a;
+        }
 
-    /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f49110p;
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if ((obj instanceof C0610a) && Double.compare(this.f49161a, ((C0610a) obj).f49161a) == 0) {
+                return true;
+            }
+            return false;
+        }
 
-    static {
-        a[] a10 = a();
-        f49109o = a10;
-        f49110p = pr.a.a(a10);
+        public int hashCode() {
+            return Double.hashCode(this.f49161a);
+        }
+
+        public String toString() {
+            double d10 = this.f49161a;
+            return "CameraStats(averageRotation=" + d10 + ")";
+        }
     }
 
-    private a(String str, int i10) {
-    }
+    C0610a a();
 
-    private static final /* synthetic */ a[] a() {
-        return new a[]{f49106d, f49107e, f49108i};
-    }
+    void b();
 
-    public static a valueOf(String str) {
-        return (a) Enum.valueOf(a.class, str);
-    }
-
-    public static a[] values() {
-        return (a[]) f49109o.clone();
-    }
+    void c();
 }

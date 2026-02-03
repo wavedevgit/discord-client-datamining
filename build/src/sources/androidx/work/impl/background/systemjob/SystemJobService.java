@@ -23,19 +23,19 @@ import k4.m;
 public class SystemJobService extends JobService implements f {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f5577p = m.i("SystemJobService");
+    private static final String f5621p = m.i("SystemJobService");
 
     /* renamed from: d  reason: collision with root package name */
-    private p0 f5578d;
+    private p0 f5622d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f5579e = new HashMap();
+    private final Map f5623e = new HashMap();
 
     /* renamed from: i  reason: collision with root package name */
-    private final b0 f5580i = new b0();
+    private final b0 f5624i = new b0();
 
     /* renamed from: o  reason: collision with root package name */
-    private n0 f5581o;
+    private n0 f5625o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -102,12 +102,12 @@ public class SystemJobService extends JobService implements f {
     public void b(p4.m mVar, boolean z10) {
         JobParameters jobParameters;
         m e10 = m.e();
-        String str = f5577p;
+        String str = f5621p;
         e10.a(str, mVar.b() + " executed on JobScheduler");
-        synchronized (this.f5579e) {
-            jobParameters = (JobParameters) this.f5579e.remove(mVar);
+        synchronized (this.f5623e) {
+            jobParameters = (JobParameters) this.f5623e.remove(mVar);
         }
-        this.f5580i.b(mVar);
+        this.f5624i.b(mVar);
         if (jobParameters != null) {
             jobFinished(jobParameters, z10);
         }
@@ -118,13 +118,13 @@ public class SystemJobService extends JobService implements f {
         super.onCreate();
         try {
             p0 k10 = p0.k(getApplicationContext());
-            this.f5578d = k10;
+            this.f5622d = k10;
             u m10 = k10.m();
-            this.f5581o = new o0(m10, this.f5578d.q());
+            this.f5625o = new o0(m10, this.f5622d.q());
             m10.e(this);
         } catch (IllegalStateException e10) {
             if (Application.class.equals(getApplication().getClass())) {
-                m.e().k(f5577p, "Could not find WorkManager instance; this may be because an auto-backup is in progress. Ignoring JobScheduler commands for now. Please make sure that you are initializing WorkManager if you have manually disabled WorkManagerInitializer.");
+                m.e().k(f5621p, "Could not find WorkManager instance; this may be because an auto-backup is in progress. Ignoring JobScheduler commands for now. Please make sure that you are initializing WorkManager if you have manually disabled WorkManagerInitializer.");
                 return;
             }
             throw new IllegalStateException("WorkManager needs to be initialized via a ContentProvider#onCreate() or an Application#onCreate().", e10);
@@ -134,7 +134,7 @@ public class SystemJobService extends JobService implements f {
     @Override // android.app.Service
     public void onDestroy() {
         super.onDestroy();
-        p0 p0Var = this.f5578d;
+        p0 p0Var = this.f5622d;
         if (p0Var != null) {
             p0Var.m().m(this);
         }
@@ -142,40 +142,40 @@ public class SystemJobService extends JobService implements f {
 
     @Override // android.app.job.JobService
     public boolean onStartJob(JobParameters jobParameters) {
-        if (this.f5578d == null) {
-            m.e().a(f5577p, "WorkManager is not initialized; requesting retry.");
+        if (this.f5622d == null) {
+            m.e().a(f5621p, "WorkManager is not initialized; requesting retry.");
             jobFinished(jobParameters, true);
             return false;
         }
         p4.m c10 = c(jobParameters);
         if (c10 == null) {
-            m.e().c(f5577p, "WorkSpec id not found!");
+            m.e().c(f5621p, "WorkSpec id not found!");
             return false;
         }
-        synchronized (this.f5579e) {
+        synchronized (this.f5623e) {
             try {
-                if (this.f5579e.containsKey(c10)) {
+                if (this.f5623e.containsKey(c10)) {
                     m e10 = m.e();
-                    String str = f5577p;
+                    String str = f5621p;
                     e10.a(str, "Job is already being executed by SystemJobService: " + c10);
                     return false;
                 }
                 m e11 = m.e();
-                String str2 = f5577p;
+                String str2 = f5621p;
                 e11.a(str2, "onStartJob for " + c10);
-                this.f5579e.put(c10, jobParameters);
+                this.f5623e.put(c10, jobParameters);
                 int i10 = Build.VERSION.SDK_INT;
                 WorkerParameters.a aVar = new WorkerParameters.a();
                 if (a.b(jobParameters) != null) {
-                    aVar.f5465b = Arrays.asList(a.b(jobParameters));
+                    aVar.f5509b = Arrays.asList(a.b(jobParameters));
                 }
                 if (a.a(jobParameters) != null) {
-                    aVar.f5464a = Arrays.asList(a.a(jobParameters));
+                    aVar.f5508a = Arrays.asList(a.a(jobParameters));
                 }
                 if (i10 >= 28) {
-                    aVar.f5466c = b.a(jobParameters);
+                    aVar.f5510c = b.a(jobParameters);
                 }
-                this.f5581o.a(this.f5580i.d(c10), aVar);
+                this.f5625o.a(this.f5624i.d(c10), aVar);
                 return true;
             } catch (Throwable th2) {
                 throw th2;
@@ -186,30 +186,30 @@ public class SystemJobService extends JobService implements f {
     @Override // android.app.job.JobService
     public boolean onStopJob(JobParameters jobParameters) {
         int i10;
-        if (this.f5578d == null) {
-            m.e().a(f5577p, "WorkManager is not initialized; requesting retry.");
+        if (this.f5622d == null) {
+            m.e().a(f5621p, "WorkManager is not initialized; requesting retry.");
             return true;
         }
         p4.m c10 = c(jobParameters);
         if (c10 == null) {
-            m.e().c(f5577p, "WorkSpec id not found!");
+            m.e().c(f5621p, "WorkSpec id not found!");
             return false;
         }
         m e10 = m.e();
-        String str = f5577p;
+        String str = f5621p;
         e10.a(str, "onStopJob for " + c10);
-        synchronized (this.f5579e) {
-            this.f5579e.remove(c10);
+        synchronized (this.f5623e) {
+            this.f5623e.remove(c10);
         }
-        a0 b10 = this.f5580i.b(c10);
+        a0 b10 = this.f5624i.b(c10);
         if (b10 != null) {
             if (Build.VERSION.SDK_INT >= 31) {
                 i10 = c.a(jobParameters);
             } else {
                 i10 = -512;
             }
-            this.f5581o.b(b10, i10);
+            this.f5625o.b(b10, i10);
         }
-        return !this.f5578d.m().j(c10.b());
+        return !this.f5622d.m().j(c10.b());
     }
 }

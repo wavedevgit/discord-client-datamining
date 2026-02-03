@@ -1,20 +1,26 @@
 package vs;
+
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class j extends Exception {
-    /* JADX WARN: Illegal instructions before constructor call */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public j(java.util.List r2) {
-        /*
-            r1 = this;
-            java.lang.String r0 = "errors"
-            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r2, r0)
-            java.lang.String r2 = vs.n.a(r2)
-            r1.<init>(r2)
-            return
-        */
-        throw new UnsupportedOperationException("Method not decompiled: vs.j.<init>(java.util.List):void");
+public final class j implements e {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Function1 f51523a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final int f51524b;
+
+    public j(Function1 number, int i10) {
+        Intrinsics.checkNotNullParameter(number, "number");
+        this.f51523a = number;
+        this.f51524b = i10;
+        if (i10 >= 0) {
+            if (i10 <= 9) {
+                return;
+            }
+            throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") exceeds the length of an Int").toString());
+        }
+        throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") is negative").toString());
     }
 }

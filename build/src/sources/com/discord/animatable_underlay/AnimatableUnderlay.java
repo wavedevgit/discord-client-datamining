@@ -12,7 +12,7 @@ import com.discord.react_rootview.RootViewUtils;
 import com.facebook.react.uimanager.PointerEvents;
 import com.facebook.react.uimanager.ViewProps;
 import com.facebook.react.views.view.ReactViewGroup;
-import ir.p;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.enums.EnumEntries;
@@ -98,7 +98,7 @@ public final class AnimatableUnderlay extends ReactViewGroup {
         static {
             ClipDirectionX[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
             Companion = new Companion(null);
         }
 
@@ -169,7 +169,7 @@ public final class AnimatableUnderlay extends ReactViewGroup {
         static {
             ClipDirectionY[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
             Companion = new Companion(null);
         }
 
@@ -340,7 +340,7 @@ public final class AnimatableUnderlay extends ReactViewGroup {
                 }
             }
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

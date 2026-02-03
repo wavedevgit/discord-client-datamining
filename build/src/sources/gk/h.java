@@ -9,13 +9,13 @@ import java.util.List;
 public final class h {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final List f27013c = new ArrayList();
+    private static final List f27108c = new ArrayList();
 
     /* renamed from: a  reason: collision with root package name */
-    private final CharsetEncoder[] f27014a;
+    private final CharsetEncoder[] f27109a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f27015b;
+    private final int f27110b;
 
     static {
         String[] strArr = {"IBM437", "ISO-8859-2", "ISO-8859-3", "ISO-8859-4", "ISO-8859-5", "ISO-8859-6", "ISO-8859-7", "ISO-8859-8", "ISO-8859-9", "ISO-8859-10", "ISO-8859-11", "ISO-8859-13", "ISO-8859-14", "ISO-8859-15", "ISO-8859-16", "windows-1250", "windows-1251", "windows-1252", "windows-1256", "Shift_JIS"};
@@ -23,7 +23,7 @@ public final class h {
             String str = strArr[i10];
             if (d.d(str) != null) {
                 try {
-                    f27013c.add(Charset.forName(str).newEncoder());
+                    f27108c.add(Charset.forName(str).newEncoder());
                 } catch (UnsupportedCharsetException unused) {
                 }
             }
@@ -77,7 +77,7 @@ public final class h {
             r5 = r1
         L4a:
             if (r5 != 0) goto L6c
-            java.util.List r6 = gk.h.f27013c
+            java.util.List r6 = gk.h.f27108c
             java.util.Iterator r6 = r6.iterator()
         L52:
             boolean r7 = r6.hasNext()
@@ -102,13 +102,13 @@ public final class h {
             java.lang.Object r10 = r0.get(r1)
             java.nio.charset.CharsetEncoder r10 = (java.nio.charset.CharsetEncoder) r10
             java.nio.charset.CharsetEncoder[] r10 = new java.nio.charset.CharsetEncoder[]{r10}
-            r9.f27014a = r10
+            r9.f27109a = r10
             goto Lbf
         L87:
             int r10 = r0.size()
             int r10 = r10 + 2
             java.nio.charset.CharsetEncoder[] r10 = new java.nio.charset.CharsetEncoder[r10]
-            r9.f27014a = r10
+            r9.f27109a = r10
             java.util.Iterator r10 = r0.iterator()
             r12 = r1
         L96:
@@ -116,17 +116,17 @@ public final class h {
             if (r0 == 0) goto Laa
             java.lang.Object r0 = r10.next()
             java.nio.charset.CharsetEncoder r0 = (java.nio.charset.CharsetEncoder) r0
-            java.nio.charset.CharsetEncoder[] r3 = r9.f27014a
+            java.nio.charset.CharsetEncoder[] r3 = r9.f27109a
             int r4 = r12 + 1
             r3[r12] = r0
             r12 = r4
             goto L96
         Laa:
-            java.nio.charset.CharsetEncoder[] r10 = r9.f27014a
+            java.nio.charset.CharsetEncoder[] r10 = r9.f27109a
             java.nio.charset.Charset r0 = java.nio.charset.StandardCharsets.UTF_8
             java.nio.charset.CharsetEncoder r0 = r0.newEncoder()
             r10[r12] = r0
-            java.nio.charset.CharsetEncoder[] r10 = r9.f27014a
+            java.nio.charset.CharsetEncoder[] r10 = r9.f27109a
             int r12 = r12 + r2
             java.nio.charset.Charset r0 = java.nio.charset.StandardCharsets.UTF_16BE
             java.nio.charset.CharsetEncoder r0 = r0.newEncoder()
@@ -134,13 +134,13 @@ public final class h {
         Lbf:
             if (r11 == 0) goto Le4
         Lc1:
-            java.nio.charset.CharsetEncoder[] r10 = r9.f27014a
+            java.nio.charset.CharsetEncoder[] r10 = r9.f27109a
             int r12 = r10.length
             if (r1 >= r12) goto Le4
             r10 = r10[r1]
             if (r10 == 0) goto Le1
             java.lang.String r10 = r11.name()
-            java.nio.charset.CharsetEncoder[] r12 = r9.f27014a
+            java.nio.charset.CharsetEncoder[] r12 = r9.f27109a
             r12 = r12[r1]
             java.nio.charset.Charset r12 = r12.charset()
             java.lang.String r12 = r12.name()
@@ -153,34 +153,34 @@ public final class h {
         Le4:
             r1 = -1
         Le5:
-            r9.f27015b = r1
+            r9.f27110b = r1
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: gk.h.<init>(java.lang.String, java.nio.charset.Charset, int):void");
     }
 
     public boolean a(char c10, int i10) {
-        CharsetEncoder charsetEncoder = this.f27014a[i10];
+        CharsetEncoder charsetEncoder = this.f27109a[i10];
         return charsetEncoder.canEncode("" + c10);
     }
 
     public byte[] b(String str, int i10) {
-        return str.getBytes(this.f27014a[i10].charset());
+        return str.getBytes(this.f27109a[i10].charset());
     }
 
     public Charset c(int i10) {
-        return this.f27014a[i10].charset();
+        return this.f27109a[i10].charset();
     }
 
     public int d(int i10) {
-        return d.a(this.f27014a[i10].charset()).g();
+        return d.a(this.f27109a[i10].charset()).g();
     }
 
     public int e() {
-        return this.f27015b;
+        return this.f27110b;
     }
 
     public int f() {
-        return this.f27014a.length;
+        return this.f27109a.length;
     }
 }

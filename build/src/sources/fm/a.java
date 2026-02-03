@@ -1,32 +1,62 @@
 package fm;
 
-import android.content.Context;
-import android.graphics.Point;
-import android.graphics.Rect;
-import android.os.Build;
-import android.view.Display;
-import android.view.WindowManager;
-import android.view.WindowMetrics;
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.events.Event;
+import kotlin.Unit;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class a {
-    public static final Point a(Context context) {
-        Intrinsics.checkNotNullParameter(context, "<this>");
-        Point point = new Point();
-        if (Build.VERSION.SDK_INT >= 30) {
-            WindowMetrics currentWindowMetrics = ((WindowManager) context.getSystemService(WindowManager.class)).getCurrentWindowMetrics();
-            Intrinsics.checkNotNullExpressionValue(currentWindowMetrics, "getCurrentWindowMetrics(...)");
-            Rect bounds = currentWindowMetrics.getBounds();
-            Intrinsics.checkNotNullExpressionValue(bounds, "getBounds(...)");
-            point.x = bounds.width();
-            point.y = bounds.height();
-            return point;
+public final class a extends Event {
+
+    /* renamed from: b  reason: collision with root package name */
+    public static final C0320a f24451b = new C0320a(null);
+
+    /* renamed from: a  reason: collision with root package name */
+    private final b f24452a;
+
+    /* renamed from: fm.a$a  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class C0320a {
+        public /* synthetic */ C0320a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
         }
-        Object systemService = context.getSystemService("window");
-        Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.view.WindowManager");
-        Display defaultDisplay = ((WindowManager) systemService).getDefaultDisplay();
-        Intrinsics.checkNotNullExpressionValue(defaultDisplay, "getDefaultDisplay(...)");
-        defaultDisplay.getRealSize(point);
-        return point;
+
+        private C0320a() {
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a(int i10, int i11, b event) {
+        super(i10, i11);
+        Intrinsics.checkNotNullParameter(event, "event");
+        this.f24452a = event;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public short getCoalescingKey() {
+        return (short) 0;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    protected WritableMap getEventData() {
+        WritableMap createMap = Arguments.createMap();
+        createMap.putInt("target", this.f24452a.e());
+        createMap.putInt("parentScrollViewTarget", this.f24452a.d());
+        WritableMap createMap2 = Arguments.createMap();
+        createMap2.putDouble("x", this.f24452a.g());
+        createMap2.putDouble("y", this.f24452a.h());
+        createMap2.putDouble("width", this.f24452a.f());
+        createMap2.putDouble("height", this.f24452a.c());
+        createMap2.putDouble("absoluteX", this.f24452a.a());
+        createMap2.putDouble("absoluteY", this.f24452a.b());
+        Unit unit = Unit.f33074a;
+        createMap.putMap("layout", createMap2);
+        return createMap;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public String getEventName() {
+        return "topFocusedInputLayoutChanged";
     }
 }

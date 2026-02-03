@@ -9,9 +9,9 @@ import com.discord.fastest_list.android.FastestListSections;
 import com.discord.fastest_list.android.placeholder.FastestListPlaceholderType;
 import com.discord.misc.utilities.drawable.CustomDrawDrawable;
 import com.discord.misc.utilities.size.SizeUtilsKt;
-import ir.p;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -40,7 +40,7 @@ public final class FastestListPlaceholderTypeFeedItem extends FastestListPlaceho
         }
 
         private final float getRandomWidthRatio(float f10, float f11) {
-            return f10 + (c.f33388d.c() * (f11 - f10));
+            return f10 + (c.f33164d.c() * (f11 - f10));
         }
 
         static /* synthetic */ float getRandomWidthRatio$default(Companion companion, float f10, float f11, int i10, Object obj) {

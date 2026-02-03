@@ -46,7 +46,7 @@ public interface l1 extends Closeable {
 
     Size getSize();
 
-    void h1(float[] fArr, float[] fArr2);
+    void i1(float[] fArr, float[] fArr2);
 
-    Surface i1(Executor executor, Consumer consumer);
+    Surface j1(Executor executor, Consumer consumer);
 }

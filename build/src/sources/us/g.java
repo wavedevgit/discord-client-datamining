@@ -3,28 +3,22 @@ package us;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g implements e {
+public final class g implements v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function1 f50561a;
+    private final Object f50648a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f50562b;
+    private final Function1 f50649b;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final Integer f50563c;
+    public g(Object obj, Function1 getter) {
+        Intrinsics.checkNotNullParameter(getter, "getter");
+        this.f50648a = obj;
+        this.f50649b = getter;
+    }
 
-    public g(Function1 number, int i10, Integer num) {
-        Intrinsics.checkNotNullParameter(number, "number");
-        this.f50561a = number;
-        this.f50562b = i10;
-        this.f50563c = num;
-        if (i10 >= 0) {
-            if (i10 <= 9) {
-                return;
-            }
-            throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") exceeds the length of an Int").toString());
-        }
-        throw new IllegalArgumentException(("The minimum number of digits (" + i10 + ") is negative").toString());
+    @Override // us.v
+    public boolean test(Object obj) {
+        return Intrinsics.areEqual(this.f50649b.invoke(obj), this.f50648a);
     }
 }

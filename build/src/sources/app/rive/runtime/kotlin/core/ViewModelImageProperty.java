@@ -39,6 +39,6 @@ public final class ViewModelImageProperty extends ViewModelProperty<Unit> {
     @Override // app.rive.runtime.kotlin.core.ViewModelProperty
     public /* bridge */ /* synthetic */ Unit nativeGetValue() {
         nativeGetValue2();
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 }

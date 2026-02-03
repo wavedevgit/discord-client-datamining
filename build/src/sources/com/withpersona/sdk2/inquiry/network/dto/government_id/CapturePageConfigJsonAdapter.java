@@ -61,17 +61,17 @@ public final class CapturePageConfigJsonAdapter extends h {
         CapturePageConfig.AutoCaptureConfig autoCaptureConfig = null;
         CapturePageConfig.OverlayConfig overlayConfig = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 manualCaptureConfig = (CapturePageConfig.ManualCaptureConfig) this.nullableManualCaptureConfigAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 autoCaptureConfig = (CapturePageConfig.AutoCaptureConfig) this.nullableAutoCaptureConfigAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (t02 == 3) {
                 overlayConfig = (CapturePageConfig.OverlayConfig) this.nullableOverlayConfigAdapter.fromJson(reader);
             }
         }
@@ -84,13 +84,13 @@ public final class CapturePageConfigJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (capturePageConfig != null) {
             writer.l();
-            writer.A0("side");
+            writer.t0("side");
             this.nullableStringAdapter.toJson(writer, capturePageConfig.getSide());
-            writer.A0("manualCaptureConfig");
+            writer.t0("manualCaptureConfig");
             this.nullableManualCaptureConfigAdapter.toJson(writer, capturePageConfig.getManualCaptureConfig());
-            writer.A0("autoCaptureConfig");
+            writer.t0("autoCaptureConfig");
             this.nullableAutoCaptureConfigAdapter.toJson(writer, capturePageConfig.getAutoCaptureConfig());
-            writer.A0("overlay");
+            writer.t0("overlay");
             this.nullableOverlayConfigAdapter.toJson(writer, capturePageConfig.getOverlay());
             writer.E();
             return;

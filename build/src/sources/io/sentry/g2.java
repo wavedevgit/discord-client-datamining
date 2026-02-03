@@ -5,13 +5,13 @@ import java.io.InputStream;
 public final class g2 implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final g2 f30016a = new g2();
+    private static final g2 f29582a = new g2();
 
     private g2() {
     }
 
     public static g2 b() {
-        return f30016a;
+        return f29582a;
     }
 
     @Override // io.sentry.n0

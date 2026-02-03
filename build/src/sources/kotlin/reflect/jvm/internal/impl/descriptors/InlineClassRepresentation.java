@@ -10,38 +10,38 @@ import org.jetbrains.annotations.NotNull;
 public final class InlineClassRepresentation<Type extends RigidTypeMarker> extends ValueClassRepresentation<Type> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Name f33598a;
+    private final Name f33374a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final RigidTypeMarker f33599b;
+    private final RigidTypeMarker f33375b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public InlineClassRepresentation(@NotNull Name underlyingPropertyName, @NotNull Type underlyingType) {
         super(null);
         Intrinsics.checkNotNullParameter(underlyingPropertyName, "underlyingPropertyName");
         Intrinsics.checkNotNullParameter(underlyingType, "underlyingType");
-        this.f33598a = underlyingPropertyName;
-        this.f33599b = underlyingType;
+        this.f33374a = underlyingPropertyName;
+        this.f33375b = underlyingType;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ValueClassRepresentation
     public boolean containsPropertyWithName(@NotNull Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return Intrinsics.areEqual(this.f33598a, name);
+        return Intrinsics.areEqual(this.f33374a, name);
     }
 
     @NotNull
     public final Name getUnderlyingPropertyName() {
-        return this.f33598a;
+        return this.f33374a;
     }
 
     @NotNull
     public final Type getUnderlyingType() {
-        return (Type) this.f33599b;
+        return (Type) this.f33375b;
     }
 
     @NotNull
     public String toString() {
-        return "InlineClassRepresentation(underlyingPropertyName=" + this.f33598a + ", underlyingType=" + this.f33599b + ')';
+        return "InlineClassRepresentation(underlyingPropertyName=" + this.f33374a + ", underlyingType=" + this.f33375b + ')';
     }
 }

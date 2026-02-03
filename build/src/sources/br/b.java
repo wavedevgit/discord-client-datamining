@@ -1,33 +1,18 @@
 package br;
 
-import ar.o;
+import br.l;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class b {
+public class b implements l.a {
+    @Override // br.l.a
+    public void a(l lVar, ev.r rVar) {
+        lVar.w();
+    }
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final o f7739a = o.b("list-item-type");
-
-    /* renamed from: b  reason: collision with root package name */
-    public static final o f7740b = o.b("bullet-list-item-level");
-
-    /* renamed from: c  reason: collision with root package name */
-    public static final o f7741c = o.b("ordered-list-item-number");
-
-    /* renamed from: d  reason: collision with root package name */
-    public static final o f7742d = o.b("heading-level");
-
-    /* renamed from: e  reason: collision with root package name */
-    public static final o f7743e = o.b("link-destination");
-
-    /* renamed from: f  reason: collision with root package name */
-    public static final o f7744f = o.b("paragraph-is-in-tight-list");
-
-    /* renamed from: g  reason: collision with root package name */
-    public static final o f7745g = o.b("code-block-info");
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public enum a {
-        BULLET,
-        ORDERED
+    @Override // br.l.a
+    public void b(l lVar, ev.r rVar) {
+        if (lVar.j(rVar)) {
+            lVar.w();
+            lVar.u();
+        }
     }
 }

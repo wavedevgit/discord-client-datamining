@@ -1,288 +1,160 @@
 package zo;
 
-import android.content.Context;
-import androidx.activity.result.ActivityResultLauncher;
-import kotlin.Metadata;
-import kotlin.Result;
-import kotlin.Unit;
-import kotlin.coroutines.Continuation;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.DefaultConstructorMarker;
+import android.os.Parcel;
+import android.os.Parcelable;
 import kotlin.jvm.internal.Intrinsics;
-import kotlinx.coroutines.CancellableContinuation;
-import kotlinx.coroutines.flow.Flow;
-import kotlinx.coroutines.flow.FlowCollector;
-import tm.o;
-@Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0002\r\u0011B!\b\u0007\u0012\u000e\b\u0001\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\b\u0010\tJ\u0015\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00020\nH\u0016¢\u0006\u0004\b\u000b\u0010\fR\u001a\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00040\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\r\u0010\u000eR\u0014\u0010\u0007\u001a\u00020\u00068\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u000f\u0010\u0010¨\u0006\u0012"}, d2 = {"Lzo/m;", "Ltm/o;", "Lzo/m$b;", "Landroidx/activity/result/ActivityResultLauncher;", "Ld/e;", "resolvableApiLauncher", "Landroid/content/Context;", "context", "<init>", "(Landroidx/activity/result/ActivityResultLauncher;Landroid/content/Context;)V", "Lkotlinx/coroutines/flow/Flow;", "run", "()Lkotlinx/coroutines/flow/Flow;", "b", "Landroidx/activity/result/ActivityResultLauncher;", "c", "Landroid/content/Context;", "a", "permissions_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class m implements tm.o<b> {
+public final class m implements Parcelable {
+    @NotNull
+    public static final Parcelable.Creator<m> CREATOR = new a();
 
-    /* renamed from: b  reason: collision with root package name */
-    private final ActivityResultLauncher f55979b;
+    /* renamed from: d  reason: collision with root package name */
+    private final String f55971d;
 
-    /* renamed from: c  reason: collision with root package name */
-    private final Context f55980c;
+    /* renamed from: e  reason: collision with root package name */
+    private final String f55972e;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public interface a {
-        m create();
-    }
+    /* renamed from: i  reason: collision with root package name */
+    private final String f55973i;
 
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static abstract class b {
+    /* renamed from: o  reason: collision with root package name */
+    private final String f55974o;
 
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class a extends b {
+    /* renamed from: p  reason: collision with root package name */
+    private final String f55975p;
 
-            /* renamed from: a  reason: collision with root package name */
-            public static final a f55981a = new a();
+    /* renamed from: q  reason: collision with root package name */
+    private final String f55976q;
 
-            private a() {
-                super(null);
-            }
+    /* renamed from: r  reason: collision with root package name */
+    private final String f55977r;
 
-            public boolean equals(Object obj) {
-                if (this == obj || (obj instanceof a)) {
-                    return true;
-                }
-                return false;
-            }
+    /* renamed from: s  reason: collision with root package name */
+    private final String f55978s;
 
-            public int hashCode() {
-                return -588562023;
-            }
+    /* renamed from: t  reason: collision with root package name */
+    private final String f55979t;
 
-            public String toString() {
-                return "Denied";
-            }
-        }
+    /* renamed from: u  reason: collision with root package name */
+    private final String f55980u;
 
-        /* renamed from: zo.m$b$b  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0789b extends b {
+    /* renamed from: v  reason: collision with root package name */
+    private final String f55981v;
 
-            /* renamed from: a  reason: collision with root package name */
-            public static final C0789b f55982a = new C0789b();
+    /* renamed from: w  reason: collision with root package name */
+    private final String f55982w;
 
-            private C0789b() {
-                super(null);
-            }
+    /* renamed from: x  reason: collision with root package name */
+    private final String f55983x;
 
-            public boolean equals(Object obj) {
-                if (this == obj || (obj instanceof C0789b)) {
-                    return true;
-                }
-                return false;
-            }
-
-            public int hashCode() {
-                return 726963865;
-            }
-
-            public String toString() {
-                return "NotSupported";
-            }
-        }
-
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class c extends b {
-
-            /* renamed from: a  reason: collision with root package name */
-            public static final c f55983a = new c();
-
-            private c() {
-                super(null);
-            }
-
-            public boolean equals(Object obj) {
-                if (this == obj || (obj instanceof c)) {
-                    return true;
-                }
-                return false;
-            }
-
-            public int hashCode() {
-                return -190170683;
-            }
-
-            public String toString() {
-                return "Success";
-            }
-        }
-
-        public /* synthetic */ b(DefaultConstructorMarker defaultConstructorMarker) {
-            this();
-        }
-
-        private b() {
-        }
-    }
+    /* renamed from: y  reason: collision with root package name */
+    private final String f55984y;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        Object f55984d;
-
-        /* renamed from: e  reason: collision with root package name */
-        Object f55985e;
-
-        /* renamed from: i  reason: collision with root package name */
-        int f55986i;
-
-        /* renamed from: o  reason: collision with root package name */
-        private /* synthetic */ Object f55987o;
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class a implements FlowCollector {
-
-            /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f55989d;
-
-            a(FlowCollector flowCollector) {
-                this.f55989d = flowCollector;
-            }
-
-            @Override // kotlinx.coroutines.flow.FlowCollector
-            /* renamed from: a */
-            public final Object emit(d.a aVar, Continuation continuation) {
-                if (aVar != null && aVar.b() == -1) {
-                    Object emit = this.f55989d.emit(b.c.f55983a, continuation);
-                    if (emit == or.b.f()) {
-                        return emit;
-                    }
-                    return Unit.f33298a;
-                }
-                Object emit2 = this.f55989d.emit(b.a.f55981a, continuation);
-                if (emit2 == or.b.f()) {
-                    return emit2;
-                }
-                return Unit.f33298a;
-            }
+    public static final class a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: a */
+        public final m createFromParcel(Parcel parcel) {
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            return new m(parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString(), parcel.readString());
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class b implements Function1 {
-
-            /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ CancellableContinuation f55990d;
-
-            b(CancellableContinuation cancellableContinuation) {
-                this.f55990d = cancellableContinuation;
-            }
-
-            public final void a(sg.e eVar) {
-                this.f55990d.resumeWith(Result.b(Result.a(Result.b(eVar))));
-            }
-
-            @Override // kotlin.jvm.functions.Function1
-            public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-                a((sg.e) obj);
-                return Unit.f33298a;
-            }
-        }
-
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* renamed from: zo.m$c$c  reason: collision with other inner class name */
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class C0790c implements wg.f {
-
-            /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ CancellableContinuation f55991a;
-
-            C0790c(CancellableContinuation cancellableContinuation) {
-                this.f55991a = cancellableContinuation;
-            }
-
-            @Override // wg.f
-            public final void onFailure(Exception exception) {
-                Intrinsics.checkNotNullParameter(exception, "exception");
-                CancellableContinuation cancellableContinuation = this.f55991a;
-                Result.a aVar = Result.f33295e;
-                cancellableContinuation.resumeWith(Result.b(Result.a(Result.b(kotlin.c.a(exception)))));
-            }
-        }
-
-        c(Continuation continuation) {
-            super(2, continuation);
-        }
-
-        @Override // kotlin.coroutines.jvm.internal.a
-        public final Continuation create(Object obj, Continuation continuation) {
-            c cVar = new c(continuation);
-            cVar.f55987o = obj;
-            return cVar;
-        }
-
-        /* JADX WARN: Code restructure failed: missing block: B:27:0x00ef, code lost:
-            if (r1.emit(r13, r12) == r0) goto L31;
-         */
-        /* JADX WARN: Code restructure failed: missing block: B:34:0x010b, code lost:
-            if (r1.emit(r13, r12) == r0) goto L31;
-         */
-        /* JADX WARN: Code restructure failed: missing block: B:44:0x015b, code lost:
-            if (r1.emit(r13, r12) != r0) goto L10;
-         */
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX WARN: Type inference failed for: r1v0, types: [int] */
-        /* JADX WARN: Type inference failed for: r1v1, types: [kotlinx.coroutines.flow.FlowCollector] */
-        /* JADX WARN: Type inference failed for: r1v13 */
-        /* JADX WARN: Type inference failed for: r1v22 */
-        /* JADX WARN: Type inference failed for: r1v23 */
-        @Override // kotlin.coroutines.jvm.internal.a
-        /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
-        public final java.lang.Object invokeSuspend(java.lang.Object r13) {
-            /*
-                Method dump skipped, instructions count: 353
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: zo.m.c.invokeSuspend(java.lang.Object):java.lang.Object");
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f33298a);
+        @Override // android.os.Parcelable.Creator
+        /* renamed from: b */
+        public final m[] newArray(int i10) {
+            return new m[i10];
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class d implements wg.g {
+    public m(String nfcScanPrompt, String authenticating, String reading, String cancelNfcScan, String nfcScanSuccess, String enablePassportNfcText, String enablePassportNfcConfirmButtonText, String enablePassportNfcCancelButtonText, String connectionLostText, String connectionLostConfirmButtonText, String authenticationErrorText, String authenticationErrorConfirmButtonText, String genericErrorText, String genericErrorConfirmButtonText) {
+        Intrinsics.checkNotNullParameter(nfcScanPrompt, "nfcScanPrompt");
+        Intrinsics.checkNotNullParameter(authenticating, "authenticating");
+        Intrinsics.checkNotNullParameter(reading, "reading");
+        Intrinsics.checkNotNullParameter(cancelNfcScan, "cancelNfcScan");
+        Intrinsics.checkNotNullParameter(nfcScanSuccess, "nfcScanSuccess");
+        Intrinsics.checkNotNullParameter(enablePassportNfcText, "enablePassportNfcText");
+        Intrinsics.checkNotNullParameter(enablePassportNfcConfirmButtonText, "enablePassportNfcConfirmButtonText");
+        Intrinsics.checkNotNullParameter(enablePassportNfcCancelButtonText, "enablePassportNfcCancelButtonText");
+        Intrinsics.checkNotNullParameter(connectionLostText, "connectionLostText");
+        Intrinsics.checkNotNullParameter(connectionLostConfirmButtonText, "connectionLostConfirmButtonText");
+        Intrinsics.checkNotNullParameter(authenticationErrorText, "authenticationErrorText");
+        Intrinsics.checkNotNullParameter(authenticationErrorConfirmButtonText, "authenticationErrorConfirmButtonText");
+        Intrinsics.checkNotNullParameter(genericErrorText, "genericErrorText");
+        Intrinsics.checkNotNullParameter(genericErrorConfirmButtonText, "genericErrorConfirmButtonText");
+        this.f55971d = nfcScanPrompt;
+        this.f55972e = authenticating;
+        this.f55973i = reading;
+        this.f55974o = cancelNfcScan;
+        this.f55975p = nfcScanSuccess;
+        this.f55976q = enablePassportNfcText;
+        this.f55977r = enablePassportNfcConfirmButtonText;
+        this.f55978s = enablePassportNfcCancelButtonText;
+        this.f55979t = connectionLostText;
+        this.f55980u = connectionLostConfirmButtonText;
+        this.f55981v = authenticationErrorText;
+        this.f55982w = authenticationErrorConfirmButtonText;
+        this.f55983x = genericErrorText;
+        this.f55984y = genericErrorConfirmButtonText;
+    }
 
-        /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ Function1 f55992a;
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
 
-        d(Function1 function) {
-            Intrinsics.checkNotNullParameter(function, "function");
-            this.f55992a = function;
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
         }
-
-        @Override // wg.g
-        public final /* synthetic */ void onSuccess(Object obj) {
-            this.f55992a.invoke(obj);
+        if (!(obj instanceof m)) {
+            return false;
         }
+        m mVar = (m) obj;
+        if (Intrinsics.areEqual(this.f55971d, mVar.f55971d) && Intrinsics.areEqual(this.f55972e, mVar.f55972e) && Intrinsics.areEqual(this.f55973i, mVar.f55973i) && Intrinsics.areEqual(this.f55974o, mVar.f55974o) && Intrinsics.areEqual(this.f55975p, mVar.f55975p) && Intrinsics.areEqual(this.f55976q, mVar.f55976q) && Intrinsics.areEqual(this.f55977r, mVar.f55977r) && Intrinsics.areEqual(this.f55978s, mVar.f55978s) && Intrinsics.areEqual(this.f55979t, mVar.f55979t) && Intrinsics.areEqual(this.f55980u, mVar.f55980u) && Intrinsics.areEqual(this.f55981v, mVar.f55981v) && Intrinsics.areEqual(this.f55982w, mVar.f55982w) && Intrinsics.areEqual(this.f55983x, mVar.f55983x) && Intrinsics.areEqual(this.f55984y, mVar.f55984y)) {
+            return true;
+        }
+        return false;
     }
 
-    public m(ActivityResultLauncher resolvableApiLauncher, Context context) {
-        Intrinsics.checkNotNullParameter(resolvableApiLauncher, "resolvableApiLauncher");
-        Intrinsics.checkNotNullParameter(context, "context");
-        this.f55979b = resolvableApiLauncher;
-        this.f55980c = context;
+    public int hashCode() {
+        return (((((((((((((((((((((((((this.f55971d.hashCode() * 31) + this.f55972e.hashCode()) * 31) + this.f55973i.hashCode()) * 31) + this.f55974o.hashCode()) * 31) + this.f55975p.hashCode()) * 31) + this.f55976q.hashCode()) * 31) + this.f55977r.hashCode()) * 31) + this.f55978s.hashCode()) * 31) + this.f55979t.hashCode()) * 31) + this.f55980u.hashCode()) * 31) + this.f55981v.hashCode()) * 31) + this.f55982w.hashCode()) * 31) + this.f55983x.hashCode()) * 31) + this.f55984y.hashCode();
     }
 
-    @Override // tm.o
-    public boolean a(tm.o oVar) {
-        return o.b.a(this, oVar);
+    public String toString() {
+        String str = this.f55971d;
+        String str2 = this.f55972e;
+        String str3 = this.f55973i;
+        String str4 = this.f55974o;
+        String str5 = this.f55975p;
+        String str6 = this.f55976q;
+        String str7 = this.f55977r;
+        String str8 = this.f55978s;
+        String str9 = this.f55979t;
+        String str10 = this.f55980u;
+        String str11 = this.f55981v;
+        String str12 = this.f55982w;
+        String str13 = this.f55983x;
+        String str14 = this.f55984y;
+        return "PassportNfcStrings(nfcScanPrompt=" + str + ", authenticating=" + str2 + ", reading=" + str3 + ", cancelNfcScan=" + str4 + ", nfcScanSuccess=" + str5 + ", enablePassportNfcText=" + str6 + ", enablePassportNfcConfirmButtonText=" + str7 + ", enablePassportNfcCancelButtonText=" + str8 + ", connectionLostText=" + str9 + ", connectionLostConfirmButtonText=" + str10 + ", authenticationErrorText=" + str11 + ", authenticationErrorConfirmButtonText=" + str12 + ", genericErrorText=" + str13 + ", genericErrorConfirmButtonText=" + str14 + ")";
     }
 
-    @Override // tm.o
-    public Flow run() {
-        return js.g.v(new c(null));
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int i10) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeString(this.f55971d);
+        dest.writeString(this.f55972e);
+        dest.writeString(this.f55973i);
+        dest.writeString(this.f55974o);
+        dest.writeString(this.f55975p);
+        dest.writeString(this.f55976q);
+        dest.writeString(this.f55977r);
+        dest.writeString(this.f55978s);
+        dest.writeString(this.f55979t);
+        dest.writeString(this.f55980u);
+        dest.writeString(this.f55981v);
+        dest.writeString(this.f55982w);
+        dest.writeString(this.f55983x);
+        dest.writeString(this.f55984y);
     }
 }

@@ -1,53 +1,38 @@
 package pu;
 
+import java.util.ArrayList;
 import java.util.List;
-import kotlin.collections.CollectionsKt;
-import kotlin.text.StringsKt;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface a {
+public final class a implements lu.b {
 
-    /* renamed from: pu.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static final class C0558a {
-        private static boolean a(a aVar, Object obj) {
-            return CollectionsKt.o(null, "", CollectionsKt.l()).contains(obj);
-        }
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f46492a = new a();
 
-        public static List b(a aVar, Object obj) {
-            String obj2;
-            if (obj instanceof List) {
-                obj = d(aVar, (List) obj);
-            }
-            List list = null;
-            if (obj instanceof List) {
-                return null;
-            }
-            if (obj != null && (obj2 = obj.toString()) != null) {
-                list = StringsKt.split$default(obj2, new String[]{"."}, false, 0, 6, null);
-            }
-            if (list == null) {
-                return CollectionsKt.l();
-            }
-            return list;
-        }
+    private a() {
+    }
 
-        private static Object c(a aVar, List list) {
-            Object d10;
-            if (list.size() > 1 || (d10 = d(aVar, list)) == null) {
-                return list;
+    private final boolean b(Object obj) {
+        if (obj != null) {
+            if (!(obj instanceof String) || ((CharSequence) obj).length() != 0) {
+                return false;
             }
-            return d10;
+            return true;
         }
+        return true;
+    }
 
-        private static Object d(a aVar, List list) {
-            Object firstOrNull = CollectionsKt.firstOrNull(list);
-            if (firstOrNull instanceof List) {
-                return c(aVar, (List) firstOrNull);
+    @Override // lu.b
+    /* renamed from: a */
+    public List f(Object obj, Object obj2) {
+        ArrayList arrayList = new ArrayList();
+        for (Object obj3 : qv.a.c(obj)) {
+            if (!f46492a.b(c.f46494a.f(obj3, obj2))) {
+                obj3 = null;
             }
-            if (a(aVar, firstOrNull)) {
-                return null;
+            if (obj3 != null) {
+                arrayList.add(obj3);
             }
-            return firstOrNull;
         }
+        return arrayList;
     }
 }

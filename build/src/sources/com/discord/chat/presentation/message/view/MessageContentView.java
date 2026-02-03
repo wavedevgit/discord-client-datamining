@@ -166,11 +166,11 @@ public class MessageContentView extends SimpleDraweeSpanTextView implements Vert
     }
 
     /* renamed from: setMessageContent-4q-5Jro$default  reason: not valid java name */
-    public static /* synthetic */ void m698setMessageContent4q5Jro$default(MessageContentView messageContentView, MessageMargins messageMargins, StructurableText structurableText, String str, boolean z10, boolean z11, boolean z12, boolean z13, Function1 function1, Function1 function12, Function3 function3, Function4 function4, Function1 function13, Function2 function2, Function4 function42, Function1 function14, Function1 function15, Function0 function0, Function1 function16, Function1 function17, Function1 function18, Function1 function19, Function1 function110, Function1 function111, int i10, int i11, boolean z14, String str2, Integer num, Truncation truncation, DiscordThemeObject discordThemeObject, Float f10, boolean z15, int i12, Object obj) {
+    public static /* synthetic */ void m700setMessageContent4q5Jro$default(MessageContentView messageContentView, MessageMargins messageMargins, StructurableText structurableText, String str, boolean z10, boolean z11, boolean z12, boolean z13, Function1 function1, Function1 function12, Function3 function3, Function4 function4, Function1 function13, Function2 function2, Function4 function42, Function1 function14, Function1 function15, Function0 function0, Function1 function16, Function1 function17, Function1 function18, Function1 function19, Function1 function110, Function1 function111, int i10, int i11, boolean z14, String str2, Integer num, Truncation truncation, DiscordThemeObject discordThemeObject, Float f10, boolean z15, int i12, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: setMessageContent-4q-5Jro");
         }
-        messageContentView.m700setMessageContent4q5Jro(messageMargins, structurableText, str, z10, z11, z12, z13, function1, function12, function3, function4, function13, function2, function42, function14, function15, function0, function16, function17, function18, function19, function110, (i12 & 4194304) != 0 ? new Function1() { // from class: com.discord.chat.presentation.message.view.s2
+        messageContentView.m702setMessageContent4q5Jro(messageMargins, structurableText, str, z10, z11, z12, z13, function1, function12, function3, function4, function13, function2, function42, function14, function15, function0, function16, function17, function18, function19, function110, (i12 & 4194304) != 0 ? new Function1() { // from class: com.discord.chat.presentation.message.view.s2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj2) {
                 LinkStyle messageContent_4q_5Jro$lambda$2;
@@ -195,7 +195,7 @@ public class MessageContentView extends SimpleDraweeSpanTextView implements Vert
     }
 
     /* renamed from: truncate-l3ndG-o  reason: not valid java name */
-    private final void m699truncatel3ndGo(MessageMargins messageMargins, final String str, Truncation truncation, int i10, DraweeSpanStringBuilder draweeSpanStringBuilder, final Function1<? super MessageId, Unit> function1, boolean z10) {
+    private final void m701truncatel3ndGo(MessageMargins messageMargins, final String str, Truncation truncation, int i10, DraweeSpanStringBuilder draweeSpanStringBuilder, final Function1<? super MessageId, Unit> function1, boolean z10) {
         int textLink;
         int numberOfLines = truncation.getNumberOfLines();
         boolean expandable = truncation.getExpandable();
@@ -237,8 +237,8 @@ public class MessageContentView extends SimpleDraweeSpanTextView implements Vert
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit truncate_l3ndG_o$lambda$3(Function1 function1, String str, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        function1.invoke(MessageId.m1084boximpl(str));
-        return Unit.f33298a;
+        function1.invoke(MessageId.m1086boximpl(str));
+        return Unit.f33074a;
     }
 
     public final void setMessageContent(@NotNull MessageMargins margins, @NotNull StructurableText messageContent, @NotNull MarkdownTextRenderOptions options, @NotNull MarkdownTextRenderEventHandlers eventHandlers, Float f10, boolean z10) {
@@ -246,15 +246,15 @@ public class MessageContentView extends SimpleDraweeSpanTextView implements Vert
         Intrinsics.checkNotNullParameter(messageContent, "messageContent");
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(eventHandlers, "eventHandlers");
-        m698setMessageContent4q5Jro$default(this, margins, messageContent, MessageId.m1085constructorimpl(options.getContainerId()), options.getShouldAnimateEmoji(), options.getShouldShowLinkDecorations(), options.getShouldShowRoleDot(), options.getShouldShowRoleOnName(), eventHandlers.getOnLinkClicked(), eventHandlers.getOnLinkLongClicked(), eventHandlers.getOnTapChannel(), eventHandlers.getOnLongPressChannel(), eventHandlers.getOnTapAttachmentLink(), eventHandlers.getOnLongPressAttachmentLink(), eventHandlers.getOnTapMention(), eventHandlers.getOnTapCommand(), eventHandlers.getOnLongPressCommand(), eventHandlers.getOnTapSpoiler(), eventHandlers.getOnTapTimestamp(), eventHandlers.getOnTapInlineCode(), eventHandlers.getOnTapEmoji(), new Function1<MessageId, Unit>() { // from class: com.discord.chat.presentation.message.view.MessageContentView$setMessageContent$1
+        m700setMessageContent4q5Jro$default(this, margins, messageContent, MessageId.m1087constructorimpl(options.getContainerId()), options.getShouldAnimateEmoji(), options.getShouldShowLinkDecorations(), options.getShouldShowRoleDot(), options.getShouldShowRoleOnName(), eventHandlers.getOnLinkClicked(), eventHandlers.getOnLinkLongClicked(), eventHandlers.getOnTapChannel(), eventHandlers.getOnLongPressChannel(), eventHandlers.getOnTapAttachmentLink(), eventHandlers.getOnLongPressAttachmentLink(), eventHandlers.getOnTapMention(), eventHandlers.getOnTapCommand(), eventHandlers.getOnLongPressCommand(), eventHandlers.getOnTapSpoiler(), eventHandlers.getOnTapTimestamp(), eventHandlers.getOnTapInlineCode(), eventHandlers.getOnTapEmoji(), new Function1<MessageId, Unit>() { // from class: com.discord.chat.presentation.message.view.MessageContentView$setMessageContent$1
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
-                m701invoke1xi1bu0(((MessageId) obj).m1093unboximpl());
-                return Unit.f33298a;
+                m703invoke1xi1bu0(((MessageId) obj).m1095unboximpl());
+                return Unit.f33074a;
             }
 
             /* renamed from: invoke-1xi1bu0  reason: not valid java name */
-            public final void m701invoke1xi1bu0(String str) {
+            public final void m703invoke1xi1bu0(String str) {
                 Intrinsics.checkNotNullParameter(str, "<unused var>");
             }
         }, eventHandlers.getOnTapSoundmoji(), new Function1() { // from class: com.discord.chat.presentation.message.view.u2
@@ -268,7 +268,7 @@ public class MessageContentView extends SimpleDraweeSpanTextView implements Vert
     }
 
     /* renamed from: setMessageContent-4q-5Jro  reason: not valid java name */
-    public final void m700setMessageContent4q5Jro(@NotNull MessageMargins margins, @NotNull StructurableText messageContent, @NotNull String messageId, boolean z10, boolean z11, boolean z12, boolean z13, @NotNull Function1<? super LinkContentNode, Unit> onTapLink, @NotNull Function1<? super LinkContentNode, Unit> onLongTapLink, @NotNull Function3 onTapChannel, @NotNull Function4 onLongPressChannel, @NotNull Function1<? super String, Unit> onTapAttachmentLink, @NotNull Function2<? super String, ? super String, Unit> onLongPressAttachmentLink, @NotNull Function4 onTapMention, @NotNull Function1<? super CommandMentionContentNode, Unit> onTapCommand, @NotNull Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super String, Unit> onTapTimestamp, @NotNull Function1<? super InlineCodeContentNode, Unit> onTapInlineCode, @NotNull Function1<? super EmojiContentNode, Unit> onTapEmoji, @NotNull Function1<? super MessageId, Unit> onTapSeeMore, @NotNull Function1<? super SoundmojiContentNode, Unit> onTapSoundmoji, @NotNull Function1<? super LinkContentNode, LinkStyle> linkStyleProvider, int i10, int i11, boolean z14, String str, Integer num, Truncation truncation, @NotNull DiscordThemeObject theme, Float f10, boolean z15) {
+    public final void m702setMessageContent4q5Jro(@NotNull MessageMargins margins, @NotNull StructurableText messageContent, @NotNull String messageId, boolean z10, boolean z11, boolean z12, boolean z13, @NotNull Function1<? super LinkContentNode, Unit> onTapLink, @NotNull Function1<? super LinkContentNode, Unit> onLongTapLink, @NotNull Function3 onTapChannel, @NotNull Function4 onLongPressChannel, @NotNull Function1<? super String, Unit> onTapAttachmentLink, @NotNull Function2<? super String, ? super String, Unit> onLongPressAttachmentLink, @NotNull Function4 onTapMention, @NotNull Function1<? super CommandMentionContentNode, Unit> onTapCommand, @NotNull Function1<? super CommandMentionContentNode, Unit> onLongPressCommand, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super String, Unit> onTapTimestamp, @NotNull Function1<? super InlineCodeContentNode, Unit> onTapInlineCode, @NotNull Function1<? super EmojiContentNode, Unit> onTapEmoji, @NotNull Function1<? super MessageId, Unit> onTapSeeMore, @NotNull Function1<? super SoundmojiContentNode, Unit> onTapSoundmoji, @NotNull Function1<? super LinkContentNode, LinkStyle> linkStyleProvider, int i10, int i11, boolean z14, String str, Integer num, Truncation truncation, @NotNull DiscordThemeObject theme, Float f10, boolean z15) {
         DraweeSpanStringBuilder draweeSpanStringBuilder;
         Intrinsics.checkNotNullParameter(margins, "margins");
         Intrinsics.checkNotNullParameter(messageContent, "messageContent");
@@ -302,7 +302,7 @@ public class MessageContentView extends SimpleDraweeSpanTextView implements Vert
             appendEditedLabel(spannable$default, str, num);
         }
         if (truncation != null) {
-            m699truncatel3ndGo(margins, messageId, truncation, i11, spannable$default, onTapSeeMore, z14);
+            m701truncatel3ndGo(margins, messageId, truncation, i11, spannable$default, onTapSeeMore, z14);
             draweeSpanStringBuilder = spannable$default;
         } else {
             draweeSpanStringBuilder = spannable$default;
@@ -338,7 +338,7 @@ public class MessageContentView extends SimpleDraweeSpanTextView implements Vert
     public MessageContentView(@NotNull Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.shadowView$delegate = ir.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.r2
+        this.shadowView$delegate = jr.l.b(new Function0() { // from class: com.discord.chat.presentation.message.view.r2
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SimpleDraweeSpanTextView shadowView_delegate$lambda$0;

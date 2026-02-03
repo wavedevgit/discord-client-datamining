@@ -1,8 +1,8 @@
 package kotlin.jvm.internal;
 
 import com.facebook.react.devsupport.StackTraceHelper;
-import ir.p;
 import java.util.List;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
@@ -36,15 +36,15 @@ public final class TypeParameterReference implements l {
             static {
                 int[] iArr = new int[m.values().length];
                 try {
-                    iArr[m.f36137d.ordinal()] = 1;
+                    iArr[m.f35913d.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[m.f36138e.ordinal()] = 2;
+                    iArr[m.f35914e.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
                 try {
-                    iArr[m.f36139i.ordinal()] = 3;
+                    iArr[m.f35915i.ordinal()] = 3;
                 } catch (NoSuchFieldError unused3) {
                 }
                 $EnumSwitchMapping$0 = iArr;
@@ -71,7 +71,7 @@ public final class TypeParameterReference implements l {
                     sb2.append("in ");
                 }
             } else {
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             }
             sb2.append(typeParameter.getName());
             return sb2.toString();

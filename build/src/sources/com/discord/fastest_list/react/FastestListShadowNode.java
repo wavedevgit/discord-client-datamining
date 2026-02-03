@@ -5,9 +5,9 @@ import com.discord.fastest_list.android.FastestListView;
 import com.discord.misc.utilities.measure.ViewMeasureExtensionsKt;
 import com.facebook.react.uimanager.LayoutShadowNode;
 import com.facebook.react.uimanager.ViewProps;
-import ir.p;
 import java.util.HashMap;
 import java.util.Map;
+import jr.p;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -181,7 +181,7 @@ public final class FastestListShadowNode extends LayoutShadowNode {
     @Override // com.facebook.react.uimanager.ReactShadowNodeImpl, com.facebook.react.uimanager.ReactShadowNode
     @NotNull
     /* renamed from: setPaddingPercent */
-    public Void mo910setPaddingPercent(int i10, float f10) {
+    public Void mo912setPaddingPercent(int i10, float f10) {
         String simpleName = FastestListShadowNode.class.getSimpleName();
         throw new IllegalStateException((simpleName + " does not support percentage based padding").toString());
     }

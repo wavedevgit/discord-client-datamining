@@ -22,23 +22,23 @@ public class a {
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: androidx.core.view.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-    public static final class C0036a extends View.AccessibilityDelegate {
+    public static final class C0040a extends View.AccessibilityDelegate {
 
         /* renamed from: a  reason: collision with root package name */
-        final a f3293a;
+        final a f3337a;
 
-        C0036a(a aVar) {
-            this.f3293a = aVar;
+        C0040a(a aVar) {
+            this.f3337a = aVar;
         }
 
         @Override // android.view.View.AccessibilityDelegate
         public boolean dispatchPopulateAccessibilityEvent(View view, AccessibilityEvent accessibilityEvent) {
-            return this.f3293a.dispatchPopulateAccessibilityEvent(view, accessibilityEvent);
+            return this.f3337a.dispatchPopulateAccessibilityEvent(view, accessibilityEvent);
         }
 
         @Override // android.view.View.AccessibilityDelegate
         public AccessibilityNodeProvider getAccessibilityNodeProvider(View view) {
-            AccessibilityNodeProviderCompat accessibilityNodeProvider = this.f3293a.getAccessibilityNodeProvider(view);
+            AccessibilityNodeProviderCompat accessibilityNodeProvider = this.f3337a.getAccessibilityNodeProvider(view);
             if (accessibilityNodeProvider != null) {
                 return (AccessibilityNodeProvider) accessibilityNodeProvider.e();
             }
@@ -47,7 +47,7 @@ public class a {
 
         @Override // android.view.View.AccessibilityDelegate
         public void onInitializeAccessibilityEvent(View view, AccessibilityEvent accessibilityEvent) {
-            this.f3293a.onInitializeAccessibilityEvent(view, accessibilityEvent);
+            this.f3337a.onInitializeAccessibilityEvent(view, accessibilityEvent);
         }
 
         @Override // android.view.View.AccessibilityDelegate
@@ -57,7 +57,7 @@ public class a {
             h12.H0(h0.Q(view));
             h12.P0(h0.o(view));
             h12.a1(h0.H(view));
-            this.f3293a.onInitializeAccessibilityNodeInfo(view, h12);
+            this.f3337a.onInitializeAccessibilityNodeInfo(view, h12);
             h12.f(accessibilityNodeInfo.getText(), view);
             List<AccessibilityNodeInfoCompat.a> actionList = a.getActionList(view);
             for (int i10 = 0; i10 < actionList.size(); i10++) {
@@ -67,27 +67,27 @@ public class a {
 
         @Override // android.view.View.AccessibilityDelegate
         public void onPopulateAccessibilityEvent(View view, AccessibilityEvent accessibilityEvent) {
-            this.f3293a.onPopulateAccessibilityEvent(view, accessibilityEvent);
+            this.f3337a.onPopulateAccessibilityEvent(view, accessibilityEvent);
         }
 
         @Override // android.view.View.AccessibilityDelegate
         public boolean onRequestSendAccessibilityEvent(ViewGroup viewGroup, View view, AccessibilityEvent accessibilityEvent) {
-            return this.f3293a.onRequestSendAccessibilityEvent(viewGroup, view, accessibilityEvent);
+            return this.f3337a.onRequestSendAccessibilityEvent(viewGroup, view, accessibilityEvent);
         }
 
         @Override // android.view.View.AccessibilityDelegate
         public boolean performAccessibilityAction(View view, int i10, Bundle bundle) {
-            return this.f3293a.performAccessibilityAction(view, i10, bundle);
+            return this.f3337a.performAccessibilityAction(view, i10, bundle);
         }
 
         @Override // android.view.View.AccessibilityDelegate
         public void sendAccessibilityEvent(View view, int i10) {
-            this.f3293a.sendAccessibilityEvent(view, i10);
+            this.f3337a.sendAccessibilityEvent(view, i10);
         }
 
         @Override // android.view.View.AccessibilityDelegate
         public void sendAccessibilityEventUnchecked(View view, AccessibilityEvent accessibilityEvent) {
-            this.f3293a.sendAccessibilityEventUnchecked(view, accessibilityEvent);
+            this.f3337a.sendAccessibilityEventUnchecked(view, accessibilityEvent);
         }
     }
 
@@ -180,7 +180,7 @@ public class a {
         if (!z10) {
             z10 = this.mOriginalDelegate.performAccessibilityAction(view, i10, bundle);
         }
-        if (!z10 && i10 == o1.e.f42268a && bundle != null) {
+        if (!z10 && i10 == o1.e.f42396a && bundle != null) {
             return b(bundle.getInt("ACCESSIBILITY_CLICKABLE_SPAN_ID", -1), view);
         }
         return z10;
@@ -196,6 +196,6 @@ public class a {
 
     public a(View.AccessibilityDelegate accessibilityDelegate) {
         this.mOriginalDelegate = accessibilityDelegate;
-        this.mBridge = new C0036a(this);
+        this.mBridge = new C0040a(this);
     }
 }

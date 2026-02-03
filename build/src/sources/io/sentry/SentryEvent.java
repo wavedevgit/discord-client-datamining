@@ -33,60 +33,60 @@ public final class SentryEvent extends e5 implements w1 {
             e5.a aVar = new e5.a();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
+                String m02 = e3Var.m0();
+                m02.getClass();
                 char c10 = 65535;
-                switch (l02.hashCode()) {
+                switch (m02.hashCode()) {
                     case -1375934236:
-                        if (l02.equals("fingerprint")) {
+                        if (m02.equals("fingerprint")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -1337936983:
-                        if (l02.equals("threads")) {
+                        if (m02.equals("threads")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case -1097337456:
-                        if (l02.equals("logger")) {
+                        if (m02.equals("logger")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case 55126294:
-                        if (l02.equals("timestamp")) {
+                        if (m02.equals("timestamp")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 102865796:
-                        if (l02.equals("level")) {
+                        if (m02.equals("level")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 954925063:
-                        if (l02.equals("message")) {
+                        if (m02.equals("message")) {
                             c10 = 5;
                             break;
                         }
                         break;
                     case 1227433863:
-                        if (l02.equals("modules")) {
+                        if (m02.equals("modules")) {
                             c10 = 6;
                             break;
                         }
                         break;
                     case 1481625679:
-                        if (l02.equals("exception")) {
+                        if (m02.equals("exception")) {
                             c10 = 7;
                             break;
                         }
                         break;
                     case 2141246174:
-                        if (l02.equals("transaction")) {
+                        if (m02.equals("transaction")) {
                             c10 = '\b';
                             break;
                         }
@@ -103,7 +103,7 @@ public final class SentryEvent extends e5 implements w1 {
                         }
                     case 1:
                         e3Var.r();
-                        e3Var.l0();
+                        e3Var.m0();
                         sentryEvent.D = new y7(e3Var.g2(iLogger, new c0.a()));
                         e3Var.y();
                         break;
@@ -111,25 +111,25 @@ public final class SentryEvent extends e5 implements w1 {
                         sentryEvent.C = e3Var.r1();
                         break;
                     case 3:
-                        Date r02 = e3Var.r0(iLogger);
-                        if (r02 == null) {
+                        Date s02 = e3Var.s0(iLogger);
+                        if (s02 == null) {
                             break;
                         } else {
-                            sentryEvent.A = r02;
+                            sentryEvent.A = s02;
                             break;
                         }
                     case 4:
-                        sentryEvent.F = (SentryLevel) e3Var.G0(iLogger, new SentryLevel.a());
+                        sentryEvent.F = (SentryLevel) e3Var.H0(iLogger, new SentryLevel.a());
                         break;
                     case 5:
-                        sentryEvent.B = (io.sentry.protocol.m) e3Var.G0(iLogger, new m.a());
+                        sentryEvent.B = (io.sentry.protocol.m) e3Var.H0(iLogger, new m.a());
                         break;
                     case 6:
                         sentryEvent.J = io.sentry.util.c.b((Map) e3Var.V1());
                         break;
                     case 7:
                         e3Var.r();
-                        e3Var.l0();
+                        e3Var.m0();
                         sentryEvent.E = new y7(e3Var.g2(iLogger, new s.a()));
                         e3Var.y();
                         break;
@@ -137,11 +137,11 @@ public final class SentryEvent extends e5 implements w1 {
                         sentryEvent.G = e3Var.r1();
                         break;
                     default:
-                        if (!aVar.a(sentryEvent, l02, e3Var, iLogger)) {
+                        if (!aVar.a(sentryEvent, m02, e3Var, iLogger)) {
                             if (concurrentHashMap == null) {
                                 concurrentHashMap = new ConcurrentHashMap();
                             }
-                            e3Var.v1(iLogger, concurrentHashMap, l02);
+                            e3Var.v1(iLogger, concurrentHashMap, m02);
                             break;
                         } else {
                             break;
@@ -320,7 +320,7 @@ public final class SentryEvent extends e5 implements w1 {
 
     public SentryEvent(Throwable th2) {
         this();
-        this.f29967u = th2;
+        this.f29533u = th2;
     }
 
     public SentryEvent() {

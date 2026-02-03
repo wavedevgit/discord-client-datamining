@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22126: for (var _fun22126_ip = 0;;) switch (_fun22126_ip) {
+    _fun22137: for (var _fun22137_ip = 0;;) switch (_fun22137_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun22126_ip = 75;
-                continue _fun22126
+                _fun22137_ip = 75;
+                continue _fun22137
             }
         case 63:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun22126_ip = 84;
-                continue _fun22126
+                _fun22137_ip = 84;
+                continue _fun22137
             }
         case 75:
             var2 = {};
@@ -38,10 +38,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var5 = {
-                'full': 'วันEEEEที่ do MMMM y',
+                'full': 'EEEE, do MMMM y',
                 'long': 'do MMMM y',
-                'medium': 'd MMM y',
-                'short': 'dd/MM/yyyy'
+                'medium': 'do MMM y',
+                'short': 'dd.MM.y'
             };
             var4.formats = var5;
             var5 = 'full';
@@ -51,21 +51,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var7 = {
-                'full': 'H:mm:ss น. zzzz',
-                'long': 'H:mm:ss น. z',
-                'medium': 'H:mm:ss น.',
-                'short': 'H:mm น.'
+                'full': 'HH:mm:ss zzzz',
+                'long': 'HH:mm:ss z',
+                'medium': 'HH:mm:ss',
+                'short': 'HH:mm'
             };
             var4.formats = var7;
-            var7 = 'medium';
-            var4.defaultWidth = var7;
+            var4.defaultWidth = var5;
             var4 = var6.bind(var0)(var4);
             var2.time = var4;
             var4 = var3.default;
             var3 = {};
             var6 = {
-                'full': "{{date}} 'เวลา' {{time}}",
-                'long': "{{date}} 'เวลา' {{time}}",
+                'full': '{{date}} {{time}}',
+                'long': '{{date}} {{time}}',
                 'medium': '{{date}}, {{time}}',
                 'short': '{{date}}, {{time}}'
             };

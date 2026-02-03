@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/MessageWithContent.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2() {
-        _fun53849: for (var _fun53849_ip = 0;;) switch (_fun53849_ip) {
+        _fun53955: for (var _fun53955_ip = 0;;) switch (_fun53955_ip) {
             case 0:
                 var8 = arg0;
                 var2 = arg1;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = undefined;
                 var20 = var5 !== var0;
                 if (!var20) {
-                    _fun53849_ip = 71;
-                    continue _fun53849
+                    _fun53955_ip = 71;
+                    continue _fun53955
                 }
             case 68:
                 var20 = var0;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var8.canShowImages;
                 var21 = var5 === var0;
                 if (var21) {
-                    _fun53849_ip = 87;
-                    continue _fun53849
+                    _fun53955_ip = 87;
+                    continue _fun53955
                 }
             case 84:
                 var21 = var0;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var8.alwaysShowAddReaction;
                 var4 = var5 !== var0;
                 if (!var4) {
-                    _fun53849_ip = 121;
-                    continue _fun53849
+                    _fun53955_ip = 121;
+                    continue _fun53955
                 }
             case 118:
                 var4 = var0;
@@ -133,8 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.alwaysShowAddReaction = var4;
                 var11 = null;
                 if (!(var11 == var3)) {
-                    _fun53849_ip = 471;
-                    continue _fun53849
+                    _fun53955_ip = 471;
+                    continue _fun53955
                 }
             case 392:
                 var7 = _closure1_slot1;
@@ -165,16 +165,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7.createSwipeActions;
                 var3 = var2.enableSwipeActions;
                 if (!var3) {
-                    _fun53849_ip = 519;
-                    continue _fun53849
+                    _fun53955_ip = 519;
+                    continue _fun53955
                 }
             case 513:
                 var3 = var8.canReply;
             case 519:
                 var2 = var2.enableSwipeActions;
                 if (!var2) {
-                    _fun53849_ip = 534;
-                    continue _fun53849
+                    _fun53955_ip = 534;
+                    continue _fun53955
                 }
             case 528:
                 var2 = var8.canEdit;
@@ -218,4 +218,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateMessageRowData = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6486, 6481, 6488, 1234, 6749, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6517, 6512, 6519, 1234, 6780, 2]);

@@ -1,27 +1,37 @@
 package tm;
 
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function2;
+import com.squareup.moshi.h;
+import com.squareup.moshi.j;
+import com.squareup.moshi.m;
+import com.squareup.moshi.t;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public interface a {
+public final class a extends h {
 
-    /* renamed from: tm.a$a  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0642a {
-        public static /* synthetic */ Object a(a aVar, q qVar, Object obj, String str, Function1 function1, int i10, Object obj2) {
-            if (obj2 == null) {
-                if ((i10 & 4) != 0) {
-                    str = "";
-                }
-                return aVar.b(qVar, obj, str, function1);
-            }
-            throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: renderChild");
-        }
+    /* renamed from: a  reason: collision with root package name */
+    private final h f49931a;
+
+    public a(h hVar) {
+        this.f49931a = hVar;
     }
 
-    void a(String str, Function2 function2);
+    @Override // com.squareup.moshi.h
+    public Object fromJson(m mVar) {
+        if (mVar.E() != m.c.NULL) {
+            return this.f49931a.fromJson(mVar);
+        }
+        throw new j("Unexpected null at " + mVar.q());
+    }
 
-    Object b(q qVar, Object obj, String str, Function1 function1);
+    @Override // com.squareup.moshi.h
+    public void toJson(t tVar, Object obj) {
+        if (obj != null) {
+            this.f49931a.toJson(tVar, obj);
+            return;
+        }
+        throw new j("Unexpected null at " + tVar.q());
+    }
 
-    h c();
+    public String toString() {
+        return this.f49931a + ".nonNull()";
+    }
 }

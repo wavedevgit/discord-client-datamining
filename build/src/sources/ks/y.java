@@ -1,54 +1,37 @@
 package ks;
 
+import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.Job;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.FlowCollector;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class y {
-    public static final void b(final v vVar, CoroutineContext coroutineContext) {
-        if (((Number) coroutineContext.A1(0, new Function2() { // from class: ks.x
-            @Override // kotlin.jvm.functions.Function2
-            public final Object invoke(Object obj, Object obj2) {
-                int c10;
-                c10 = y.c(v.this, ((Integer) obj).intValue(), (CoroutineContext.Element) obj2);
-                return Integer.valueOf(c10);
-            }
-        })).intValue() == vVar.f36538i) {
-            return;
-        }
-        throw new IllegalStateException(("Flow invariant is violated:\n\t\tFlow was collected in " + vVar.f36537e + ",\n\t\tbut emission happened in " + coroutineContext + ".\n\t\tPlease refer to 'flow' documentation or use 'flowOn' instead").toString());
+public final class y implements j0, c, ls.q {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final /* synthetic */ j0 f36658d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final Job f36659e;
+
+    public y(j0 j0Var, Job job) {
+        this.f36658d = j0Var;
+        this.f36659e = job;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int c(v vVar, int i10, CoroutineContext.Element element) {
-        CoroutineContext.b key = element.getKey();
-        CoroutineContext.Element l10 = vVar.f36537e.l(key);
-        if (key != Job.f36307j) {
-            if (element != l10) {
-                return Integer.MIN_VALUE;
-            }
-            return i10 + 1;
-        }
-        Job job = (Job) l10;
-        Intrinsics.checkNotNull(element, "null cannot be cast to non-null type kotlinx.coroutines.Job");
-        Job d10 = d((Job) element, job);
-        if (d10 == job) {
-            if (job == null) {
-                return i10;
-            }
-            return i10 + 1;
-        }
-        throw new IllegalStateException(("Flow invariant is violated:\n\t\tEmission from another coroutine is detected.\n\t\tChild of " + d10 + ", expected child of " + job + ".\n\t\tFlowCollector is not thread-safe and concurrent emissions are prohibited.\n\t\tTo mitigate this restriction please use 'channelFlow' builder instead of 'flow'").toString());
+    @Override // ks.a0, kotlinx.coroutines.flow.Flow
+    public Object collect(FlowCollector flowCollector, Continuation continuation) {
+        return this.f36658d.collect(flowCollector, continuation);
     }
 
-    public static final Job d(Job job, Job job2) {
-        while (job != null) {
-            if (job == job2 || !(job instanceof ls.a0)) {
-                return job;
-            }
-            job = ((ls.a0) job).a0();
-        }
-        return null;
+    @Override // ls.q
+    public Flow g(CoroutineContext coroutineContext, int i10, js.a aVar) {
+        return l0.d(this, coroutineContext, i10, aVar);
+    }
+
+    @Override // ks.j0
+    public Object getValue() {
+        return this.f36658d.getValue();
     }
 }

@@ -92,8 +92,8 @@ public abstract class z0 {
             arrayList.add(d0.n.s(((w0) it.next()).j()));
         }
         final ListenableFuture q10 = d0.n.q(j10, scheduledExecutorService, d0.n.w(arrayList));
-        return androidx.concurrent.futures.c.a(new c.InterfaceC0026c() { // from class: a0.x0
-            @Override // androidx.concurrent.futures.c.InterfaceC0026c
+        return androidx.concurrent.futures.c.a(new c.InterfaceC0030c() { // from class: a0.x0
+            @Override // androidx.concurrent.futures.c.InterfaceC0030c
             public final Object a(c.a aVar) {
                 return z0.a(ListenableFuture.this, executor, z10, collection, aVar);
             }

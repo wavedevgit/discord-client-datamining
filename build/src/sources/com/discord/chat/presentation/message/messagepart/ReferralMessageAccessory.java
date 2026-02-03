@@ -19,19 +19,19 @@ public final class ReferralMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
-    public static /* synthetic */ ReferralMessageAccessory m640copyntcYbpo$default(ReferralMessageAccessory referralMessageAccessory, String str, ReferralEmbed referralEmbed, int i10, Object obj) {
+    public static /* synthetic */ ReferralMessageAccessory m642copyntcYbpo$default(ReferralMessageAccessory referralMessageAccessory, String str, ReferralEmbed referralEmbed, int i10, Object obj) {
         if ((i10 & 1) != 0) {
             str = referralMessageAccessory.messageId;
         }
         if ((i10 & 2) != 0) {
             referralEmbed = referralMessageAccessory.referral;
         }
-        return referralMessageAccessory.m642copyntcYbpo(str, referralEmbed);
+        return referralMessageAccessory.m644copyntcYbpo(str, referralEmbed);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m641component13Eiw7ao() {
+    public final String m643component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -42,7 +42,7 @@ public final class ReferralMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-ntcYbpo  reason: not valid java name */
-    public final ReferralMessageAccessory m642copyntcYbpo(@NotNull String messageId, @NotNull ReferralEmbed referral) {
+    public final ReferralMessageAccessory m644copyntcYbpo(@NotNull String messageId, @NotNull ReferralEmbed referral) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(referral, "referral");
         return new ReferralMessageAccessory(messageId, referral, null);
@@ -54,7 +54,7 @@ public final class ReferralMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof ReferralMessageAccessory) {
             ReferralMessageAccessory referralMessageAccessory = (ReferralMessageAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, referralMessageAccessory.messageId) && Intrinsics.areEqual(this.referral, referralMessageAccessory.referral);
+            return MessageId.m1090equalsimpl0(this.messageId, referralMessageAccessory.messageId) && Intrinsics.areEqual(this.referral, referralMessageAccessory.referral);
         }
         return false;
     }
@@ -62,7 +62,7 @@ public final class ReferralMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
@@ -72,14 +72,14 @@ public final class ReferralMessageAccessory extends MessageAccessory {
     }
 
     public int hashCode() {
-        return (MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.referral.hashCode();
+        return (MessageId.m1091hashCodeimpl(this.messageId) * 31) + this.referral.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         ReferralEmbed referralEmbed = this.referral;
-        return "ReferralMessageAccessory(messageId=" + m1091toStringimpl + ", referral=" + referralEmbed + ")";
+        return "ReferralMessageAccessory(messageId=" + m1093toStringimpl + ", referral=" + referralEmbed + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

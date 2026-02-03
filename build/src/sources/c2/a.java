@@ -8,24 +8,24 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 public final class a extends ClickableSpan {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f8107d;
+    private final int f7963d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AccessibilityNodeInfoCompat f8108e;
+    private final AccessibilityNodeInfoCompat f7964e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f8109i;
+    private final int f7965i;
 
     public a(int i10, AccessibilityNodeInfoCompat accessibilityNodeInfoCompat, int i11) {
-        this.f8107d = i10;
-        this.f8108e = accessibilityNodeInfoCompat;
-        this.f8109i = i11;
+        this.f7963d = i10;
+        this.f7964e = accessibilityNodeInfoCompat;
+        this.f7965i = i11;
     }
 
     @Override // android.text.style.ClickableSpan
     public void onClick(View view) {
         Bundle bundle = new Bundle();
-        bundle.putInt("ACCESSIBILITY_CLICKABLE_SPAN_ID", this.f8107d);
-        this.f8108e.m0(this.f8109i, bundle);
+        bundle.putInt("ACCESSIBILITY_CLICKABLE_SPAN_ID", this.f7963d);
+        this.f7964e.m0(this.f7965i, bundle);
     }
 }

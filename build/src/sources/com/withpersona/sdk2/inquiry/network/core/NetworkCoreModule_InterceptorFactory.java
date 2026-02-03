@@ -3,11 +3,11 @@ package com.withpersona.sdk2.inquiry.network.core;
 import com.squareup.moshi.w;
 import javax.inject.Provider;
 import okhttp3.Interceptor;
-import tq.g;
-import tq.h;
-import tq.i;
+import uq.g;
+import uq.h;
+import uq.i;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class NetworkCoreModule_InterceptorFactory implements tq.d {
+public final class NetworkCoreModule_InterceptorFactory implements uq.d {
     private final NetworkCoreModule module;
     private final h moshiProvider;
 

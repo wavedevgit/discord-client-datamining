@@ -30,10 +30,10 @@ import z1.g;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final LruCache f55238a = new LruCache(2);
+    private static final LruCache f55370a = new LruCache(2);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Comparator f55239b = new Comparator() { // from class: z1.c
+    private static final Comparator f55371b = new Comparator() { // from class: z1.c
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
             return d.a((byte[]) obj, (byte[]) obj2);
@@ -57,15 +57,15 @@ public abstract class d {
     public static class b implements a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ContentProviderClient f55240a;
+        private final ContentProviderClient f55372a;
 
         b(Context context, Uri uri) {
-            this.f55240a = context.getContentResolver().acquireUnstableContentProviderClient(uri);
+            this.f55372a = context.getContentResolver().acquireUnstableContentProviderClient(uri);
         }
 
         @Override // z1.d.a
         public Cursor b(Uri uri, String[] strArr, String str, String[] strArr2, String str2, CancellationSignal cancellationSignal) {
-            ContentProviderClient contentProviderClient = this.f55240a;
+            ContentProviderClient contentProviderClient = this.f55372a;
             if (contentProviderClient == null) {
                 return null;
             }
@@ -79,7 +79,7 @@ public abstract class d {
 
         @Override // z1.d.a
         public void close() {
-            ContentProviderClient contentProviderClient = this.f55240a;
+            ContentProviderClient contentProviderClient = this.f55372a;
             if (contentProviderClient != null) {
                 contentProviderClient.close();
             }
@@ -91,18 +91,18 @@ public abstract class d {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        String f55241a;
+        String f55373a;
 
         /* renamed from: b  reason: collision with root package name */
-        String f55242b;
+        String f55374b;
 
         /* renamed from: c  reason: collision with root package name */
-        List f55243c;
+        List f55375c;
 
         c(String str, String str2, List list) {
-            this.f55241a = str;
-            this.f55242b = str2;
-            this.f55243c = list;
+            this.f55373a = str;
+            this.f55374b = str2;
+            this.f55375c = list;
         }
 
         public boolean equals(Object obj) {
@@ -113,14 +113,14 @@ public abstract class d {
                 return false;
             }
             c cVar = (c) obj;
-            if (Objects.equals(this.f55241a, cVar.f55241a) && Objects.equals(this.f55242b, cVar.f55242b) && Objects.equals(this.f55243c, cVar.f55243c)) {
+            if (Objects.equals(this.f55373a, cVar.f55373a) && Objects.equals(this.f55374b, cVar.f55374b) && Objects.equals(this.f55375c, cVar.f55375c)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Objects.hash(this.f55241a, this.f55242b, this.f55243c);
+            return Objects.hash(this.f55373a, this.f55374b, this.f55375c);
         }
     }
 
@@ -195,7 +195,7 @@ public abstract class d {
         try {
             List d10 = d(eVar, resources);
             c cVar = new c(eVar.e(), eVar.f(), d10);
-            ProviderInfo providerInfo = (ProviderInfo) f55238a.d(cVar);
+            ProviderInfo providerInfo = (ProviderInfo) f55370a.d(cVar);
             if (providerInfo != null) {
                 return providerInfo;
             }
@@ -204,12 +204,12 @@ public abstract class d {
             if (resolveContentProvider != null) {
                 if (resolveContentProvider.packageName.equals(eVar.f())) {
                     List b10 = b(packageManager.getPackageInfo(resolveContentProvider.packageName, 64).signatures);
-                    Collections.sort(b10, f55239b);
+                    Collections.sort(b10, f55371b);
                     for (int i10 = 0; i10 < d10.size(); i10++) {
                         ArrayList arrayList = new ArrayList((Collection) d10.get(i10));
-                        Collections.sort(arrayList, f55239b);
+                        Collections.sort(arrayList, f55371b);
                         if (c(b10, arrayList)) {
-                            f55238a.f(cVar, resolveContentProvider);
+                            f55370a.f(cVar, resolveContentProvider);
                             return resolveContentProvider;
                         }
                     }

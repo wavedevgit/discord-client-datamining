@@ -1,53 +1,32 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun44738: for (var _fun44738_ip = 0;;) switch (_fun44738_ip) {
-        case 0:
-            var1 = exports;
-            var2 = global;
-            var5 = var2.Object;
-            var4 = var5.defineProperty;
-            var3 = {};
-            var0 = true;
-            var3.value = var0;
-            var0 = '__esModule';
-            var0 = var4.bind(var5)(var1, var0, var3);
-            var0 = var2.setImmediate;
-            var3 = 'function';
-            var0 = typeof var0;
-            if (!(var3 !== var0)) {
-                _fun44738_ip = 105;
-                continue _fun44738
-            }
-        case 52:
-            var0 = var2.requestAnimationFrame;
-            var0 = typeof var0;
-            if (!(var3 !== var0)) {
-                _fun44738_ip = 85;
-                continue _fun44738
-            }
-        case 65:
-            var4 = var2.queueMicrotask;
-            var3 = var4.bind;
-            var0 = null;
-            var0 = var3.bind(var4)(var0);
-            _fun44738_ip = 103;
-            continue _fun44738;
-        case 85:
-            var5 = var2.requestAnimationFrame;
-            var4 = var5.bind;
-            var3 = null;
-            var0 = var4.bind(var5)(var3);
-        case 103:
-            _fun44738_ip = 123;
-            continue _fun44738;
-        case 105:
-            var4 = var2.setImmediate;
-            var3 = var4.bind;
-            var2 = null;
-            var0 = var3.bind(var4)(var2);
-        case 123:
-            var1.ghQueueMicrotask = var0;
-            var0 = undefined;
-            return var0;
-    }
+    var1 = exports;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var3 = {};
+    var0 = 'function pnpm_noopTs1(){}';
+    var3.code = var0;
+    var0 = function() {
+        var0 = undefined;
+        return var0;
+    };
+    var4 = {};
+    var0.__closure = var4;
+    var4 = 16791771801238.0;
+    var0.__workletHash = var4;
+    var0.__initData = var3;
+    var2 = function() {
+        var0 = undefined;
+        return var0;
+    };
+    var1.noop = var2;
+    var1.workletNoop = var0;
+    var0 = undefined;
+    return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

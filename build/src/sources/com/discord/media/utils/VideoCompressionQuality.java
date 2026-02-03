@@ -70,7 +70,7 @@ public final class VideoCompressionQuality {
     static {
         VideoCompressionQuality[] $values = $values();
         $VALUES = $values;
-        $ENTRIES = pr.a.a($values);
+        $ENTRIES = qr.a.a($values);
         Companion = new Companion(null);
     }
 

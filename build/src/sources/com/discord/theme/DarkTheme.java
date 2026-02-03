@@ -3,7 +3,7 @@ package com.discord.theme;
 import android.content.res.Resources;
 import com.discord.theme.DarkTheme;
 import com.discord.theme.utils.ColorUtilsKt;
-import ir.l;
+import jr.l;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;

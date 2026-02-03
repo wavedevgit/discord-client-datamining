@@ -1,68 +1,61 @@
 package cv;
 
-import com.facebook.react.views.textinput.ReactEditTextInputConnectionWrapper;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.nio.charset.Charset;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import ev.f;
+import ev.r;
+import ev.v;
+import ev.w;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class b {
+public abstract class b implements hv.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f21446a = b();
+    private final char f21024a;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f21447b = Pattern.compile("^&#[Xx]?");
-
-    public static String a(String str) {
-        int i10;
-        Matcher matcher = f21447b.matcher(str);
-        if (matcher.find()) {
-            if (matcher.end() == 2) {
-                i10 = 10;
-            } else {
-                i10 = 16;
-            }
-            try {
-                int parseInt = Integer.parseInt(str.substring(matcher.end(), str.length() - 1), i10);
-                if (parseInt == 0) {
-                    return "�";
-                }
-                return new String(Character.toChars(parseInt));
-            } catch (IllegalArgumentException unused) {
-                return "�";
-            }
-        }
-        String str2 = (String) f21446a.get(str.substring(1, str.length() - 1));
-        if (str2 != null) {
-            return str2;
-        }
-        return str;
+    /* JADX INFO: Access modifiers changed from: protected */
+    public b(char c10) {
+        this.f21024a = c10;
     }
 
-    private static Map b() {
-        HashMap hashMap = new HashMap();
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(b.class.getResourceAsStream("/org/commonmark/internal/util/entities.properties"), Charset.forName("UTF-8")));
-            while (true) {
-                String readLine = bufferedReader.readLine();
-                if (readLine != null) {
-                    if (readLine.length() != 0) {
-                        int indexOf = readLine.indexOf("=");
-                        hashMap.put(readLine.substring(0, indexOf), readLine.substring(indexOf + 1));
-                    }
-                } else {
-                    bufferedReader.close();
-                    hashMap.put("NewLine", ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
-                    return hashMap;
-                }
-            }
-        } catch (IOException e10) {
-            throw new IllegalStateException("Failed reading data for HTML named character references", e10);
+    @Override // hv.a
+    public char a() {
+        return this.f21024a;
+    }
+
+    @Override // hv.a
+    public int b() {
+        return 1;
+    }
+
+    @Override // hv.a
+    public int c(hv.b bVar, hv.b bVar2) {
+        if ((bVar.a() || bVar2.c()) && bVar2.b() % 3 != 0 && (bVar.b() + bVar2.b()) % 3 == 0) {
+            return 0;
         }
+        if (bVar.length() >= 2 && bVar2.length() >= 2) {
+            return 2;
+        }
+        return 1;
+    }
+
+    @Override // hv.a
+    public char d() {
+        return this.f21024a;
+    }
+
+    @Override // hv.a
+    public void e(w wVar, w wVar2, int i10) {
+        r vVar;
+        String valueOf = String.valueOf(d());
+        if (i10 == 1) {
+            vVar = new f(valueOf);
+        } else {
+            vVar = new v(valueOf + valueOf);
+        }
+        r e10 = wVar.e();
+        while (e10 != null && e10 != wVar2) {
+            r e11 = e10.e();
+            vVar.b(e10);
+            e10 = e11;
+        }
+        wVar.h(vVar);
     }
 }

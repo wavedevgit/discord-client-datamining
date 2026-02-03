@@ -46,17 +46,17 @@ public final class NextStep_Document_Pages_DocumentStartPage_ComponentNameMappin
         String str3 = null;
         String str4 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 str = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 str2 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 2) {
+            } else if (t02 == 2) {
                 str3 = (String) this.nullableStringAdapter.fromJson(reader);
-            } else if (A0 == 3) {
+            } else if (t02 == 3) {
                 str4 = (String) this.nullableStringAdapter.fromJson(reader);
             }
         }
@@ -69,13 +69,13 @@ public final class NextStep_Document_Pages_DocumentStartPage_ComponentNameMappin
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (componentNameMapping != null) {
             writer.l();
-            writer.A0("buttonFilePicker");
+            writer.t0("buttonFilePicker");
             this.nullableStringAdapter.toJson(writer, componentNameMapping.getButtonFilePicker());
-            writer.A0("buttonPhotoLibrary");
+            writer.t0("buttonPhotoLibrary");
             this.nullableStringAdapter.toJson(writer, componentNameMapping.getButtonPhotoLibrary());
-            writer.A0("buttonCamera");
+            writer.t0("buttonCamera");
             this.nullableStringAdapter.toJson(writer, componentNameMapping.getButtonCamera());
-            writer.A0("buttonUploadOptions");
+            writer.t0("buttonUploadOptions");
             this.nullableStringAdapter.toJson(writer, componentNameMapping.getButtonUploadOptions());
             writer.E();
             return;

@@ -1,8 +1,8 @@
 package kotlin.reflect.jvm.internal.impl.builtins;
 
-import ir.l;
-import ir.o;
 import java.util.ServiceLoader;
+import jr.l;
+import jr.o;
 import kotlin.Lazy;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
@@ -16,16 +16,16 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface BuiltInsLoader {
     @NotNull
-    public static final Companion Companion = Companion.f33422a;
+    public static final Companion Companion = Companion.f33198a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f33422a = new Companion();
+        static final /* synthetic */ Companion f33198a = new Companion();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Lazy f33423b = l.a(o.f31119e, a.f33475d);
+        private static final Lazy f33199b = l.a(o.f32182e, a.f33251d);
 
         private Companion() {
         }
@@ -43,7 +43,7 @@ public interface BuiltInsLoader {
 
         @NotNull
         public final BuiltInsLoader getInstance() {
-            return (BuiltInsLoader) f33423b.getValue();
+            return (BuiltInsLoader) f33199b.getValue();
         }
     }
 

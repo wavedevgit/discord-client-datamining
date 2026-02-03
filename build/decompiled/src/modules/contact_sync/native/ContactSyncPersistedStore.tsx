@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var11.asyncGet;
     var9 = 'ContactSyncDMListCTADismissed';
     var8 = function(arg0) { // Environment: var1
-        _fun80626: for (var _fun80626_ip = 0;;) switch (_fun80626_ip) {
+        _fun81030: for (var _fun81030_ip = 0;;) switch (_fun81030_ip) {
             case 0:
                 var3 = global;
                 var4 = var3.Boolean;
@@ -134,8 +134,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var6)(var4);
                 var5 = null;
                 if (!(var5 == var4)) {
-                    _fun80626_ip = 89;
-                    continue _fun80626
+                    _fun81030_ip = 89;
+                    continue _fun81030
                 }
             case 74:
                 var6 = var3.Date;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3 - var4;
                 var3 = 5184000000.0;
                 if (!(var4 > var3)) {
-                    _fun80626_ip = 128;
-                    continue _fun80626
+                    _fun81030_ip = 128;
+                    continue _fun81030
                 }
             case 122:
                 var3 = true;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.setStoredContacts = var4;
     var4 = function() { // Environment: var1
-        _fun80630: for (var _fun80630_ip = 0;;) switch (_fun80630_ip) {
+        _fun81034: for (var _fun81034_ip = 0;;) switch (_fun81034_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var0 = _closure1_slot2;
@@ -229,8 +229,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0 != var2;
                 var0 = '';
                 if (!var5) {
-                    _fun80630_ip = 62;
-                    continue _fun80630
+                    _fun81034_ip = 62;
+                    continue _fun81034
                 }
             case 59:
                 var0 = var2;
@@ -343,7 +343,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.dismissDMListCTA = var3;
     var3 = function() {
-        _fun80639: for (var _fun80639_ip = 0;;) switch (_fun80639_ip) {
+        _fun81043: for (var _fun81043_ip = 0;;) switch (_fun81043_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var0 = _closure1_slot2;
@@ -356,8 +356,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 'contact_sync_dm_list_cta_first_seen_date';
                 var2 = var2.bind(var5)(var4);
                 if (var2) {
-                    _fun80639_ip = 100;
-                    continue _fun80639
+                    _fun81043_ip = 100;
+                    continue _fun81043
                 }
             case 49:
                 var2 = _closure1_slot0;

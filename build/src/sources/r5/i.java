@@ -5,19 +5,19 @@ import java.util.List;
 public class i implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f48049a;
+    private final b f48251a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f48050b;
+    private final b f48252b;
 
     public i(b bVar, b bVar2) {
-        this.f48049a = bVar;
-        this.f48050b = bVar2;
+        this.f48251a = bVar;
+        this.f48252b = bVar2;
     }
 
     @Override // r5.m
     public o5.a a() {
-        return new o5.n(this.f48049a.a(), this.f48050b.a());
+        return new o5.n(this.f48251a.a(), this.f48252b.a());
     }
 
     @Override // r5.m
@@ -27,7 +27,7 @@ public class i implements m {
 
     @Override // r5.m
     public boolean isStatic() {
-        if (this.f48049a.isStatic() && this.f48050b.isStatic()) {
+        if (this.f48251a.isStatic() && this.f48252b.isStatic()) {
             return true;
         }
         return false;

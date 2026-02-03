@@ -2,7 +2,6 @@ package app.rive.runtime.kotlin.fonts;
 
 import android.util.Log;
 import app.rive.runtime.kotlin.fonts.Fonts;
-import ir.c;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -13,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicReference;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
@@ -25,9 +25,9 @@ import kotlin.ranges.d;
 import kotlin.sequences.Sequence;
 import kotlin.sequences.k;
 import kotlin.text.StringsKt;
-import lr.a;
+import mr.a;
 import org.jetbrains.annotations.NotNull;
-import tr.j;
+import ur.j;
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\b\u0007\u0018\u0000 \u00032\u00020\u0001:\u0001\u0003B\u0005¢\u0006\u0002\u0010\u0002¨\u0006\u0004"}, d2 = {"Lapp/rive/runtime/kotlin/fonts/FontHelper;", "", "()V", "Companion", "kotlin_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class FontHelper {
@@ -400,14 +400,14 @@ public final class FontHelper {
                 android.util.Log.e(r0, r4, r1)     // Catch: java.lang.Throwable -> L40
                 java.util.List r1 = kotlin.collections.CollectionsKt.l()     // Catch: java.lang.Throwable -> L40
             L5f:
-                tr.c.a(r3, r2)
+                ur.c.a(r3, r2)
                 if (r1 == 0) goto L6b
                 goto L74
             L65:
                 throw r0     // Catch: java.lang.Throwable -> L66
             L66:
                 r1 = move-exception
-                tr.c.a(r3, r0)
+                ur.c.a(r3, r0)
                 throw r1
             L6b:
                 java.lang.String r1 = "No valid system font XML file found at expected paths."
@@ -523,14 +523,14 @@ public final class FontHelper {
                 android.util.Log.e(r0, r4, r1)     // Catch: java.lang.Throwable -> L40
                 java.util.Map r1 = kotlin.collections.o0.i()     // Catch: java.lang.Throwable -> L40
             L5f:
-                tr.c.a(r3, r2)
+                ur.c.a(r3, r2)
                 if (r1 == 0) goto L6b
                 goto L74
             L65:
                 throw r0     // Catch: java.lang.Throwable -> L66
             L66:
                 r1 = move-exception
-                tr.c.a(r3, r0)
+                ur.c.a(r3, r0)
                 throw r1
             L6b:
                 java.lang.String r1 = "No valid system font XML file found at expected paths."

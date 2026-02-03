@@ -11,12 +11,12 @@ import android.view.SubMenu;
 public class d extends b implements Menu {
 
     /* renamed from: d  reason: collision with root package name */
-    private final t1.a f32899d;
+    private final t1.a f32645d;
 
     public d(Context context, t1.a aVar) {
         super(context);
         if (aVar != null) {
-            this.f32899d = aVar;
+            this.f32645d = aVar;
             return;
         }
         throw new IllegalArgumentException("Wrapped Object can not be null.");
@@ -24,7 +24,7 @@ public class d extends b implements Menu {
 
     @Override // android.view.Menu
     public MenuItem add(CharSequence charSequence) {
-        return c(this.f32899d.add(charSequence));
+        return c(this.f32645d.add(charSequence));
     }
 
     @Override // android.view.Menu
@@ -36,7 +36,7 @@ public class d extends b implements Menu {
             menuItemArr2 = null;
         }
         MenuItem[] menuItemArr3 = menuItemArr2;
-        int addIntentOptions = this.f32899d.addIntentOptions(i10, i11, i12, componentName, intentArr, intent, i13, menuItemArr3);
+        int addIntentOptions = this.f32645d.addIntentOptions(i10, i11, i12, componentName, intentArr, intent, i13, menuItemArr3);
         if (menuItemArr3 != null) {
             int length = menuItemArr3.length;
             for (int i14 = 0; i14 < length; i14++) {
@@ -48,114 +48,114 @@ public class d extends b implements Menu {
 
     @Override // android.view.Menu
     public SubMenu addSubMenu(CharSequence charSequence) {
-        return d(this.f32899d.addSubMenu(charSequence));
+        return d(this.f32645d.addSubMenu(charSequence));
     }
 
     @Override // android.view.Menu
     public void clear() {
         e();
-        this.f32899d.clear();
+        this.f32645d.clear();
     }
 
     @Override // android.view.Menu
     public void close() {
-        this.f32899d.close();
+        this.f32645d.close();
     }
 
     @Override // android.view.Menu
     public MenuItem findItem(int i10) {
-        return c(this.f32899d.findItem(i10));
+        return c(this.f32645d.findItem(i10));
     }
 
     @Override // android.view.Menu
     public MenuItem getItem(int i10) {
-        return c(this.f32899d.getItem(i10));
+        return c(this.f32645d.getItem(i10));
     }
 
     @Override // android.view.Menu
     public boolean hasVisibleItems() {
-        return this.f32899d.hasVisibleItems();
+        return this.f32645d.hasVisibleItems();
     }
 
     @Override // android.view.Menu
     public boolean isShortcutKey(int i10, KeyEvent keyEvent) {
-        return this.f32899d.isShortcutKey(i10, keyEvent);
+        return this.f32645d.isShortcutKey(i10, keyEvent);
     }
 
     @Override // android.view.Menu
     public boolean performIdentifierAction(int i10, int i11) {
-        return this.f32899d.performIdentifierAction(i10, i11);
+        return this.f32645d.performIdentifierAction(i10, i11);
     }
 
     @Override // android.view.Menu
     public boolean performShortcut(int i10, KeyEvent keyEvent, int i11) {
-        return this.f32899d.performShortcut(i10, keyEvent, i11);
+        return this.f32645d.performShortcut(i10, keyEvent, i11);
     }
 
     @Override // android.view.Menu
     public void removeGroup(int i10) {
         f(i10);
-        this.f32899d.removeGroup(i10);
+        this.f32645d.removeGroup(i10);
     }
 
     @Override // android.view.Menu
     public void removeItem(int i10) {
         g(i10);
-        this.f32899d.removeItem(i10);
+        this.f32645d.removeItem(i10);
     }
 
     @Override // android.view.Menu
     public void setGroupCheckable(int i10, boolean z10, boolean z11) {
-        this.f32899d.setGroupCheckable(i10, z10, z11);
+        this.f32645d.setGroupCheckable(i10, z10, z11);
     }
 
     @Override // android.view.Menu
     public void setGroupEnabled(int i10, boolean z10) {
-        this.f32899d.setGroupEnabled(i10, z10);
+        this.f32645d.setGroupEnabled(i10, z10);
     }
 
     @Override // android.view.Menu
     public void setGroupVisible(int i10, boolean z10) {
-        this.f32899d.setGroupVisible(i10, z10);
+        this.f32645d.setGroupVisible(i10, z10);
     }
 
     @Override // android.view.Menu
     public void setQwertyMode(boolean z10) {
-        this.f32899d.setQwertyMode(z10);
+        this.f32645d.setQwertyMode(z10);
     }
 
     @Override // android.view.Menu
     public int size() {
-        return this.f32899d.size();
+        return this.f32645d.size();
     }
 
     @Override // android.view.Menu
     public MenuItem add(int i10) {
-        return c(this.f32899d.add(i10));
+        return c(this.f32645d.add(i10));
     }
 
     @Override // android.view.Menu
     public SubMenu addSubMenu(int i10) {
-        return d(this.f32899d.addSubMenu(i10));
+        return d(this.f32645d.addSubMenu(i10));
     }
 
     @Override // android.view.Menu
     public MenuItem add(int i10, int i11, int i12, CharSequence charSequence) {
-        return c(this.f32899d.add(i10, i11, i12, charSequence));
+        return c(this.f32645d.add(i10, i11, i12, charSequence));
     }
 
     @Override // android.view.Menu
     public SubMenu addSubMenu(int i10, int i11, int i12, CharSequence charSequence) {
-        return d(this.f32899d.addSubMenu(i10, i11, i12, charSequence));
+        return d(this.f32645d.addSubMenu(i10, i11, i12, charSequence));
     }
 
     @Override // android.view.Menu
     public MenuItem add(int i10, int i11, int i12, int i13) {
-        return c(this.f32899d.add(i10, i11, i12, i13));
+        return c(this.f32645d.add(i10, i11, i12, i13));
     }
 
     @Override // android.view.Menu
     public SubMenu addSubMenu(int i10, int i11, int i12, int i13) {
-        return d(this.f32899d.addSubMenu(i10, i11, i12, i13));
+        return d(this.f32645d.addSubMenu(i10, i11, i12, i13));
     }
 }

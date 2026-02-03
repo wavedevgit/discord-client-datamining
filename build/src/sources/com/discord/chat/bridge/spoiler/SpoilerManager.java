@@ -18,27 +18,27 @@ public final class SpoilerManager {
     }
 
     /* renamed from: isNotRevealed-V2PEE7g  reason: not valid java name */
-    public final boolean m420isNotRevealedV2PEE7g(@NotNull String id2) {
+    public final boolean m422isNotRevealedV2PEE7g(@NotNull String id2) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        return !m421isRevealedV2PEE7g(id2);
+        return !m423isRevealedV2PEE7g(id2);
     }
 
     /* renamed from: isRevealed-V2PEE7g  reason: not valid java name */
-    public final boolean m421isRevealedV2PEE7g(@NotNull String id2) {
+    public final boolean m423isRevealedV2PEE7g(@NotNull String id2) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        return revealedSpoilers.contains(SpoilerIdentifier.m412boximpl(id2));
+        return revealedSpoilers.contains(SpoilerIdentifier.m414boximpl(id2));
     }
 
     /* renamed from: markHidden-V2PEE7g  reason: not valid java name */
-    public final void m422markHiddenV2PEE7g(@NotNull String id2) {
+    public final void m424markHiddenV2PEE7g(@NotNull String id2) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        revealedSpoilers.remove(SpoilerIdentifier.m412boximpl(id2));
+        revealedSpoilers.remove(SpoilerIdentifier.m414boximpl(id2));
     }
 
     /* renamed from: markRevealed-V2PEE7g  reason: not valid java name */
-    public final void m423markRevealedV2PEE7g(@NotNull String id2) {
+    public final void m425markRevealedV2PEE7g(@NotNull String id2) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        revealedSpoilers.add(SpoilerIdentifier.m412boximpl(id2));
+        revealedSpoilers.add(SpoilerIdentifier.m414boximpl(id2));
     }
 
     public final void reset() {

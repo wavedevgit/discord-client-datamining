@@ -8,28 +8,28 @@ import android.util.Log;
 public class k {
 
     /* renamed from: b  reason: collision with root package name */
-    private static k f14826b;
+    private static k f14455b;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f14827a;
+    private final Context f14456a;
 
     public k(Context context) {
-        this.f14827a = context.getApplicationContext();
+        this.f14456a = context.getApplicationContext();
     }
 
     public static k a(Context context) {
         gf.q.l(context);
         synchronized (k.class) {
             try {
-                if (f14826b == null) {
+                if (f14455b == null) {
                     y.a(context);
-                    f14826b = new k(context);
+                    f14455b = new k(context);
                 }
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        return f14826b;
+        return f14455b;
     }
 
     static final u c(PackageInfo packageInfo, u... uVarArr) {
@@ -91,11 +91,11 @@ public class k {
             android.content.pm.Signature[] r4 = r2.signatures
             if (r4 == 0) goto L48
             if (r5 == 0) goto L39
-            com.google.android.gms.common.u[] r4 = com.google.android.gms.common.x.f14863a
+            com.google.android.gms.common.u[] r4 = com.google.android.gms.common.x.f14492a
             com.google.android.gms.common.u r4 = c(r2, r4)
             goto L45
         L39:
-            com.google.android.gms.common.u[] r4 = com.google.android.gms.common.x.f14863a
+            com.google.android.gms.common.u[] r4 = com.google.android.gms.common.x.f14492a
             r4 = r4[r1]
             com.google.android.gms.common.u[] r4 = new com.google.android.gms.common.u[]{r4}
             com.google.android.gms.common.u r4 = c(r2, r4)
@@ -116,7 +116,7 @@ public class k {
             return true;
         }
         if (d(packageInfo, true)) {
-            if (j.d(this.f14827a)) {
+            if (j.d(this.f14456a)) {
                 return true;
             }
             Log.w("GoogleSignatureVerifier", "Test-keys aren't accepted on this build.");

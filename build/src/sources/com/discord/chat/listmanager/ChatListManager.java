@@ -21,13 +21,12 @@ import com.discord.chat.presentation.list.item.ChatListItem;
 import com.discord.chat.presentation.list.item.DeserializationErrorChatListItem;
 import com.discord.chat.presentation.list.item.LoadingChatListItem;
 import com.discord.chat.presentation.root.MessageContext;
-import gs.m0;
-import is.a;
+import hs.m0;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
-import js.c0;
+import js.a;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
@@ -36,6 +35,7 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.MutableSharedFlow;
 import kotlinx.coroutines.i;
+import ks.c0;
 import org.jetbrains.annotations.NotNull;
 @Metadata(d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001:\u0001)B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u0006\u0010\u000e\u001a\u00020\u000fJ.\u0010\u0010\u001a\u00020\u00112\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u000b0\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u00152\u0006\u0010\u0016\u001a\u00020\u000f2\u0006\u0010\u0017\u001a\u00020\rJ\u0016\u0010\u0018\u001a\u00020\u00192\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0013H\u0002J\u0016\u0010\u001a\u001a\u00020\u00192\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0013H\u0002J\u000e\u0010\u001b\u001a\u00020\u00112\u0006\u0010\u0016\u001a\u00020\u000fJ\u001e\u0010\u001c\u001a\u00020\u00112\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u001e2\u0006\u0010\u0016\u001a\u00020\u000fJ\f\u0010 \u001a\u00020!*\u00020\u000bH\u0002J\u001a\u0010\"\u001a\u00020\u0011*\b\u0012\u0004\u0012\u00020\u000b0\n2\u0006\u0010#\u001a\u00020\u000bH\u0002J\u0010\u0010%\u001a\u00020\u00112\u0006\u0010&\u001a\u00020\bH\u0002J\f\u0010'\u001a\b\u0012\u0004\u0012\u00020\b0(R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006*"}, d2 = {"Lcom/discord/chat/listmanager/ChatListManager;", "", "coroutineScope", "Lkotlinx/coroutines/CoroutineScope;", "<init>", "(Lkotlinx/coroutines/CoroutineScope;)V", "updatesFlow", "Lkotlinx/coroutines/flow/MutableSharedFlow;", "Lcom/discord/chat/listmanager/ChatListUpdate;", "rows", "", "Lcom/discord/chat/bridge/row/Row;", "isDisabled", "", "getRowCount", "", "updateRows", "", "updates", "", "scrollData", "Lcom/discord/chat/bridge/scroll/ChatScrollData;", "changesetUpdateId", "forceReload", "createNewRows", "Lcom/discord/chat/listmanager/ChatListManager$RowsModificationResult;", "modifyExistingRows", "clearRows", "handleError", "errorJson", "", "causeMessage", "toChatListItem", "Lcom/discord/chat/presentation/list/item/ChatListItem;", "insert", "row", "publishScope", "publishUpdate", "update", "observeUpdates", "Lkotlinx/coroutines/flow/Flow;", "RowsModificationResult", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nChatListManager.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ChatListManager.kt\ncom/discord/chat/listmanager/ChatListManager\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,246:1\n1563#2:247\n1634#2,3:248\n1761#2,3:251\n774#2:254\n865#2,2:255\n1869#2,2:257\n774#2:259\n865#2,2:260\n1869#2,2:262\n1563#2:264\n1634#2,3:265\n*S KotlinDebug\n*F\n+ 1 ChatListManager.kt\ncom/discord/chat/listmanager/ChatListManager\n*L\n65#1:247\n65#1:248,3\n82#1:251,3\n103#1:254\n103#1:255,2\n104#1:257,2\n112#1:259\n112#1:260,2\n114#1:262,2\n211#1:264\n211#1:265,3\n*E\n"})
@@ -139,7 +139,7 @@ public final class ChatListManager {
 
     public ChatListManager(@NotNull CoroutineScope coroutineScope) {
         Intrinsics.checkNotNullParameter(coroutineScope, "coroutineScope");
-        this.updatesFlow = c0.a(1, 3, a.f31141d);
+        this.updatesFlow = c0.a(1, 3, a.f32204d);
         this.publishScope = i.j(coroutineScope, m0.a());
     }
 
@@ -246,7 +246,7 @@ public final class ChatListManager {
     }
 
     private final void publishUpdate(ChatListUpdate chatListUpdate) {
-        gs.i.d(this.publishScope, null, null, new ChatListManager$publishUpdate$1(this, chatListUpdate, null), 3, null);
+        hs.i.d(this.publishScope, null, null, new ChatListManager$publishUpdate$1(this, chatListUpdate, null), 3, null);
     }
 
     private final ChatListItem toChatListItem(Row row) {

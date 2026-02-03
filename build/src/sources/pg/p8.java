@@ -5,7 +5,7 @@ import ui.c;
 final class p8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final p8 f45646a = new p8();
+    static final p8 f45720a = new p8();
 
     static {
         c.b a10 = ui.c.a("useRecognition");

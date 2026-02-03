@@ -1,59 +1,28 @@
 package ls;
 
-import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+import kotlin.coroutines.CoroutineContext;
+import kotlinx.coroutines.flow.Flow;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class q {
+public interface q extends Flow {
 
-    /* renamed from: a  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f37489a = AtomicReferenceFieldUpdater.newUpdater(q.class, Object.class, "_cur$volatile");
-    private volatile /* synthetic */ Object _cur$volatile;
-
-    public q(boolean z10) {
-        this._cur$volatile = new r(8, z10);
-    }
-
-    public final boolean a(Object obj) {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f37489a;
-        while (true) {
-            r rVar = (r) atomicReferenceFieldUpdater.get(this);
-            int a10 = rVar.a(obj);
-            if (a10 == 0) {
-                return true;
-            }
-            if (a10 != 1) {
-                if (a10 == 2) {
-                    return false;
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public static /* synthetic */ Flow a(q qVar, CoroutineContext coroutineContext, int i10, js.a aVar, int i11, Object obj) {
+            if (obj == null) {
+                if ((i11 & 1) != 0) {
+                    coroutineContext = kotlin.coroutines.e.f33148d;
                 }
-            } else {
-                androidx.concurrent.futures.b.a(f37489a, this, rVar, rVar.l());
+                if ((i11 & 2) != 0) {
+                    i10 = -3;
+                }
+                if ((i11 & 4) != 0) {
+                    aVar = js.a.f32204d;
+                }
+                return qVar.g(coroutineContext, i10, aVar);
             }
+            throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: fuse");
         }
     }
 
-    public final void b() {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f37489a;
-        while (true) {
-            r rVar = (r) atomicReferenceFieldUpdater.get(this);
-            if (rVar.d()) {
-                return;
-            }
-            androidx.concurrent.futures.b.a(f37489a, this, rVar, rVar.l());
-        }
-    }
-
-    public final int c() {
-        return ((r) f37489a.get(this)).g();
-    }
-
-    public final Object e() {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f37489a;
-        while (true) {
-            r rVar = (r) atomicReferenceFieldUpdater.get(this);
-            Object m10 = rVar.m();
-            if (m10 != r.f37493h) {
-                return m10;
-            }
-            androidx.concurrent.futures.b.a(f37489a, this, rVar, rVar.l());
-        }
-    }
+    Flow g(CoroutineContext coroutineContext, int i10, js.a aVar);
 }

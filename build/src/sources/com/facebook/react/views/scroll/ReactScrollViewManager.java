@@ -27,10 +27,10 @@ import com.facebook.react.uimanager.style.LogicalEdge;
 import com.facebook.react.views.scroll.MaintainVisibleScrollPositionHelper;
 import com.facebook.react.views.scroll.ReactScrollViewCommandHelper;
 import com.facebook.react.views.scroll.ScrollEventType;
-import ir.v;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.collections.o0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -409,7 +409,7 @@ public class ReactScrollViewManager extends ViewGroupManager<ReactScrollView> im
     }
 
     @Override // com.facebook.react.uimanager.ViewManager
-    @ir.c
+    @jr.c
     public void receiveCommand(@NotNull ReactScrollView scrollView, int i10, ReadableArray readableArray) {
         Intrinsics.checkNotNullParameter(scrollView, "scrollView");
         ReactScrollViewCommandHelper.Companion.receiveCommand((ReactScrollViewCommandHelper.ScrollCommandHandler<ReactScrollViewManager>) this, (ReactScrollViewManager) scrollView, i10, readableArray);

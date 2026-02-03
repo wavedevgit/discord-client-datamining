@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3RlbnVyZV9yZXdhcmQ=',
+        'httpServerLocation': '/assets/modules/game_update',
         'scales': null,
-        'hash': '361c4eb1d364a0c9f493c4fe7f24102a',
-        'name': 'zh-CN.messages.361c4eb1d364a0c9f493c4fe7f24102a.compiled.messages',
+        'hash': 'fd405bb06e5237a963381663bc35d28b',
+        'name': 'GameUpdate.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

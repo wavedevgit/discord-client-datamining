@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/rebrand/native/TextStyles.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2, arg3() {
-        _fun43141: for (var _fun43141_ip = 0;;) switch (_fun43141_ip) {
+        _fun43231: for (var _fun43231_ip = 0;;) switch (_fun43231_ip) {
             case 0:
                 var7 = arg0;
                 var2 = arg1;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.lineHeight = var3;
                 var3 = null;
                 if (!(var3 != var2)) {
-                    _fun43141_ip = 60;
-                    continue _fun43141
+                    _fun43231_ip = 60;
+                    continue _fun43231
                 }
             case 54:
                 var0.color = var2;
@@ -76,16 +76,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3 == var1;
                 var8 = undefined;
                 if (var4) {
-                    _fun43141_ip = 75;
-                    continue _fun43141
+                    _fun43231_ip = 75;
+                    continue _fun43231
                 }
             case 69:
                 var8 = var1.uppercase;
             case 75:
                 var4 = true;
                 if (!(var4 === var8)) {
-                    _fun43141_ip = 154;
-                    continue _fun43141
+                    _fun43231_ip = 154;
+                    continue _fun43231
                 }
             case 81:
                 var4 = 'uppercase';
@@ -93,16 +93,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 14;
                 var4 = var5 <= var4;
                 if (!var4) {
-                    _fun43141_ip = 135;
-                    continue _fun43141
+                    _fun43231_ip = 135;
+                    continue _fun43231
                 }
             case 101:
                 var5 = _closure1_slot0;
                 var5 = var5.DISPLAY_EXTRABOLD;
                 var5 = var7 === var5;
                 if (var5) {
-                    _fun43141_ip = 132;
-                    continue _fun43141
+                    _fun43231_ip = 132;
+                    continue _fun43231
                 }
             case 118:
                 var6 = _closure1_slot0;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5;
             case 135:
                 if (!var4) {
-                    _fun43141_ip = 154;
-                    continue _fun43141
+                    _fun43231_ip = 154;
+                    continue _fun43231
                 }
             case 138:
                 var4 = 0.2;
@@ -122,15 +122,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3 == var1;
                 var2 = undefined;
                 if (var4) {
-                    _fun43141_ip = 168;
-                    continue _fun43141
+                    _fun43231_ip = 168;
+                    continue _fun43231
                 }
             case 163:
                 var2 = var1.marginBottom;
             case 168:
                 if (!(var3 != var2)) {
-                    _fun43141_ip = 183;
-                    continue _fun43141
+                    _fun43231_ip = 183;
+                    continue _fun43231
                 }
             case 172:
                 var1 = var1.marginBottom;

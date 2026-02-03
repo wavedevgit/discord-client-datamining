@@ -38,7 +38,7 @@ public enum Transport implements ReflectedParcelable {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f14901d;
+    private final String f14530d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a extends Exception {
@@ -48,13 +48,13 @@ public enum Transport implements ReflectedParcelable {
     }
 
     Transport(String str) {
-        this.f14901d = str;
+        this.f14530d = str;
     }
 
     public static Transport a(String str) {
         Transport[] values;
         for (Transport transport : values()) {
-            if (str.equals(transport.f14901d)) {
+            if (str.equals(transport.f14530d)) {
                 return transport;
             }
         }
@@ -86,11 +86,11 @@ public enum Transport implements ReflectedParcelable {
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f14901d;
+        return this.f14530d;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f14901d);
+        parcel.writeString(this.f14530d);
     }
 }

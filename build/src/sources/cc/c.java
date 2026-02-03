@@ -3,37 +3,37 @@ package cc;
 public final class c {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c f8202c = new a().a();
+    private static final c f8058c = new a().a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f8203a;
+    private final long f8059a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f8204b;
+    private final b f8060b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private long f8205a = 0;
+        private long f8061a = 0;
 
         /* renamed from: b  reason: collision with root package name */
-        private b f8206b = b.REASON_UNKNOWN;
+        private b f8062b = b.REASON_UNKNOWN;
 
         a() {
         }
 
         public c a() {
-            return new c(this.f8205a, this.f8206b);
+            return new c(this.f8061a, this.f8062b);
         }
 
         public a b(long j10) {
-            this.f8205a = j10;
+            this.f8061a = j10;
             return this;
         }
 
         public a c(b bVar) {
-            this.f8206b = bVar;
+            this.f8062b = bVar;
             return this;
         }
     }
@@ -50,21 +50,21 @@ public final class c {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f8215d;
+        private final int f8071d;
 
         b(int i10) {
-            this.f8215d = i10;
+            this.f8071d = i10;
         }
 
         @Override // xi.c
         public int getNumber() {
-            return this.f8215d;
+            return this.f8071d;
         }
     }
 
     c(long j10, b bVar) {
-        this.f8203a = j10;
-        this.f8204b = bVar;
+        this.f8059a = j10;
+        this.f8060b = bVar;
     }
 
     public static a c() {
@@ -72,10 +72,10 @@ public final class c {
     }
 
     public long a() {
-        return this.f8203a;
+        return this.f8059a;
     }
 
     public b b() {
-        return this.f8204b;
+        return this.f8060b;
     }
 }

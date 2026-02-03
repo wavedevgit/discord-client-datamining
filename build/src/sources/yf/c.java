@@ -7,7 +7,7 @@ import xf.k;
 import xf.m;
 import yf.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public abstract class c extends a.AbstractBinderC0761a {
+public abstract class c extends a.AbstractBinderC0770a {
     @Override // yf.a
     public void N(Status status, k kVar) {
         Intrinsics.checkNotNullParameter(status, "status");

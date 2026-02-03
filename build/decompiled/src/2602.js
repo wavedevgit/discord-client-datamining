@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun21960: for (var _fun21960_ip = 0;;) switch (_fun21960_ip) {
+    _fun21965: for (var _fun21965_ip = 0;;) switch (_fun21965_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun21960_ip = 77;
-                continue _fun21960
+                _fun21965_ip = 77;
+                continue _fun21965
             }
         case 65:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun21960_ip = 86;
-                continue _fun21960
+                _fun21965_ip = 86;
+                continue _fun21965
             }
         case 77:
             var2 = {};
@@ -37,23 +37,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = {};
             var4 = function arg0, arg1() {
                 var0 = global;
-                var3 = var0.Number;
-                var2 = undefined;
-                var1 = arg0;
-                var1 = var3.bind(var2)(var1);
-                var0 = var0.String;
-                var0 = var0.bind(var2)(var1);
+                var2 = var0.Number;
+                var1 = undefined;
+                var0 = arg0;
+                var1 = var2.bind(var1)(var0);
+                var0 = 'º';
+                var0 = var1 + var0;
                 return var0;
             };
             var2.ordinalNumber = var4;
             var6 = var3.default;
             var4 = {};
             var5 = {};
-            var8 = ['aC', 'dC'];
+            var8 = ['AC', 'DC'];
             var5.narrow = var8;
-            var8 = ['a.C.', 'd.C.'];
+            var8 = ['AC', 'DC'];
             var5.abbreviated = var8;
-            var8 = ['avanti Cristo', 'dopo Cristo'];
+            var8 = ['antes de cristo', 'después de cristo'];
             var5.wide = var8;
             var4.values = var5;
             var5 = 'wide';
@@ -72,7 +72,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4.values = var8;
             var4.defaultWidth = var5;
             var7 = function arg0() {
-                var1 = arg0;
+                var0 = global;
+                var2 = var0.Number;
+                var1 = undefined;
+                var0 = arg0;
+                var1 = var2.bind(var1)(var0);
                 var0 = 1;
                 var0 = var1 - var0;
                 return var0;
@@ -83,11 +87,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var7 = {};
-            var8 = ['G', 'F', 'M', 'A', 'M', 'G', 'L', 'A', 'S', 'O', 'N', 'D'];
+            var8 = ['e', 'f', 'm', 'a', 'm', 'j', 'j', 'a', 's', 'o', 'n', 'd'];
             var7.narrow = var8;
-            var8 = ['gen', 'feb', 'mar', 'apr', 'mag', 'giu', 'lug', 'ago', 'set', 'ott', 'nov', 'dic'];
+            var8 = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
             var7.abbreviated = var8;
-            var8 = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'];
+            var8 = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
             var7.wide = var8;
             var4.values = var7;
             var4.defaultWidth = var5;
@@ -96,13 +100,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = var3.default;
             var4 = {};
             var7 = {};
-            var8 = ['D', 'L', 'M', 'M', 'G', 'V', 'S'];
+            var8 = ['d', 'l', 'm', 'm', 'j', 'v', 's'];
             var7.narrow = var8;
-            var8 = ['dom', 'lun', 'mar', 'mer', 'gio', 'ven', 'sab'];
+            var8 = ['do', 'lu', 'ma', 'mi', 'ju', 'vi', 'sá'];
             var7.short = var8;
-            var8 = ['dom', 'lun', 'mar', 'mer', 'gio', 'ven', 'sab'];
+            var8 = ['dom', 'lun', 'mar', 'mié', 'jue', 'vie', 'sáb'];
             var7.abbreviated = var8;
-            var8 = ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'];
+            var8 = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
             var7.wide = var8;
             var4.values = var7;
             var4.defaultWidth = var5;
@@ -112,72 +116,72 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = {};
             var6 = {};
             var7 = {
-                'am': 'm.',
-                'pm': 'p.',
-                'midnight': 'mezzanotte',
-                'noon': 'mezzogiorno',
-                'morning': 'mattina',
-                'afternoon': 'pomeriggio',
-                'evening': 'sera',
-                'night': 'notte'
+                'am': 'a',
+                'pm': 'p',
+                'midnight': 'mn',
+                'noon': 'md',
+                'morning': 'mañana',
+                'afternoon': 'tarde',
+                'evening': 'tarde',
+                'night': 'noche'
             };
             var6.narrow = var7;
             var7 = {
                 'am': 'AM',
                 'pm': 'PM',
-                'midnight': 'mezzanotte',
-                'noon': 'mezzogiorno',
-                'morning': 'mattina',
-                'afternoon': 'pomeriggio',
-                'evening': 'sera',
-                'night': 'notte'
+                'midnight': 'medianoche',
+                'noon': 'mediodia',
+                'morning': 'mañana',
+                'afternoon': 'tarde',
+                'evening': 'tarde',
+                'night': 'noche'
             };
             var6.abbreviated = var7;
             var7 = {
-                'am': 'AM',
-                'pm': 'PM',
-                'midnight': 'mezzanotte',
-                'noon': 'mezzogiorno',
-                'morning': 'mattina',
-                'afternoon': 'pomeriggio',
-                'evening': 'sera',
-                'night': 'notte'
+                'am': 'a.m.',
+                'pm': 'p.m.',
+                'midnight': 'medianoche',
+                'noon': 'mediodia',
+                'morning': 'mañana',
+                'afternoon': 'tarde',
+                'evening': 'tarde',
+                'night': 'noche'
             };
             var6.wide = var7;
             var3.values = var6;
             var3.defaultWidth = var5;
             var6 = {};
             var7 = {
-                'am': 'm.',
-                'pm': 'p.',
-                'midnight': 'mezzanotte',
-                'noon': 'mezzogiorno',
-                'morning': 'di mattina',
-                'afternoon': 'del pomeriggio',
-                'evening': 'di sera',
-                'night': 'di notte'
+                'am': 'a',
+                'pm': 'p',
+                'midnight': 'mn',
+                'noon': 'md',
+                'morning': 'de la mañana',
+                'afternoon': 'de la tarde',
+                'evening': 'de la tarde',
+                'night': 'de la noche'
             };
             var6.narrow = var7;
             var7 = {
                 'am': 'AM',
                 'pm': 'PM',
-                'midnight': 'mezzanotte',
-                'noon': 'mezzogiorno',
-                'morning': 'di mattina',
-                'afternoon': 'del pomeriggio',
-                'evening': 'di sera',
-                'night': 'di notte'
+                'midnight': 'medianoche',
+                'noon': 'mediodia',
+                'morning': 'de la mañana',
+                'afternoon': 'de la tarde',
+                'evening': 'de la tarde',
+                'night': 'de la noche'
             };
             var6.abbreviated = var7;
             var7 = {
-                'am': 'AM',
-                'pm': 'PM',
-                'midnight': 'mezzanotte',
-                'noon': 'mezzogiorno',
-                'morning': 'di mattina',
-                'afternoon': 'del pomeriggio',
-                'evening': 'di sera',
-                'night': 'di notte'
+                'am': 'a.m.',
+                'pm': 'p.m.',
+                'midnight': 'medianoche',
+                'noon': 'mediodia',
+                'morning': 'de la mañana',
+                'afternoon': 'de la tarde',
+                'evening': 'de la tarde',
+                'night': 'de la noche'
             };
             var6.wide = var7;
             var3.formattingValues = var6;

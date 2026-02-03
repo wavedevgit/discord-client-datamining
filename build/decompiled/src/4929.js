@@ -1,192 +1,215 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = function arg0() {
-        var2 = _closure1_slot2;
-        var1 = var2.get;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        return var0;
-    };
-    var _closure1_slot5 = var2;
-    var3 = global;
-    var7 = var3.Object;
-    var6 = var7.defineProperty;
-    var5 = {};
-    var4 = true;
-    var5.value = var4;
-    var4 = '__esModule';
-    var4 = var6.bind(var7)(var1, var4, var5);
-    var4 = var3.Map;
-    var5 = var4.prototype;
-    var5 = Object.create(var5, {
-        constructor: {
-            value: var4
-        }
-    });
-    var11 = var5;
-    var4 = new var11[var4](var10);
-    var4 = var4 instanceof Object ? var4 : var5;
-    var _closure1_slot2 = var4;
-    var4 = var3.Map;
-    var5 = var4.prototype;
-    var5 = Object.create(var5, {
-        constructor: {
-            value: var4
-        }
-    });
-    var11 = var5;
-    var4 = new var11[var4](var10);
-    var4 = var4 instanceof Object ? var4 : var5;
-    var _closure1_slot3 = var4;
-    var3 = var3.Map;
-    var4 = var3.prototype;
-    var4 = Object.create(var4, {
-        constructor: {
-            value: var3
-        }
-    });
-    var11 = var4;
-    var3 = new var11[var3](var10);
-    var3 = var3 instanceof Object ? var3 : var4;
-    var _closure1_slot4 = var3;
-    var3 = {};
-    var1.handlerIDToTag = var3;
-    var3 = function arg0, arg1, arg2() {
-        _fun44655: for (var _fun44655_ip = 0;;) switch (_fun44655_ip) {
-            case 0:
-                var4 = arg0;
-                var3 = arg2;
-                var5 = _closure1_slot2;
-                var2 = var5.set;
-                var0 = arg1;
-                var0 = var2.bind(var5)(var4, var0);
-                var5 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 0;
-                var2 = var2[var0];
-                var0 = undefined;
-                var5 = var5.bind(var0)(var2);
-                var2 = var5.isTestEnv;
-                var2 = var2.bind(var5)();
-                if (!var2) {
-                    _fun44655_ip = 64;
-                    continue _fun44655
-                }
-            case 61:
-                var2 = var3;
-            case 64:
-                if (!var2) {
-                    _fun44655_ip = 82;
-                    continue _fun44655
-                }
-            case 67:
-                var2 = _closure1_slot4;
-                var1 = var2.set;
-                var1 = var1.bind(var2)(var3, var4);
-            case 82:
-                return var0;
-        }
-    };
-    var1.registerHandler = var3;
-    var3 = function arg0, arg1() {
-        var3 = _closure1_slot3;
-        var2 = var3.set;
-        var1 = arg0;
-        var0 = arg1;
-        var0 = var2.bind(var3)(var1, var0);
-        var0 = undefined;
-        return var0;
-    };
-    var1.registerOldGestureHandler = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot3;
-        var1 = var2.delete;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        var0 = undefined;
-        return var0;
-    };
-    var1.unregisterOldGestureHandler = var3;
-    var3 = function arg0, arg1() {
-        _fun44658: for (var _fun44658_ip = 0;;) switch (_fun44658_ip) {
-            case 0:
-                var3 = arg1;
-                var4 = _closure1_slot2;
-                var2 = var4.delete;
-                var0 = arg0;
-                var0 = var2.bind(var4)(var0);
-                var4 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 0;
-                var2 = var2[var0];
-                var0 = undefined;
-                var4 = var4.bind(var0)(var2);
-                var2 = var4.isTestEnv;
-                var2 = var2.bind(var4)();
-                if (!var2) {
-                    _fun44658_ip = 60;
-                    continue _fun44658
-                }
-            case 57:
-                var2 = var3;
-            case 60:
-                if (!var2) {
-                    _fun44658_ip = 77;
-                    continue _fun44658
-                }
-            case 63:
-                var2 = _closure1_slot4;
-                var1 = var2.delete;
-                var1 = var1.bind(var2)(var3);
-            case 77:
-                return var0;
-        }
-    };
-    var1.unregisterHandler = var3;
-    var1.findHandler = var2;
-    var2 = function arg0() {
-        var2 = _closure1_slot3;
-        var1 = var2.get;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        return var0;
-    };
-    var1.findOldGestureHandler = var2;
-    var0 = function arg0() {
-        _fun44660: for (var _fun44660_ip = 0;;) switch (_fun44660_ip) {
-            case 0:
-                var3 = _closure1_slot4;
-                var2 = var3.get;
-                var0 = arg0;
-                var4 = var2.bind(var3)(var0);
-                var3 = null;
-                var2 = undefined;
-                var0 = null;
-                if (!(var2 !== var4)) {
-                    _fun44660_ip = 51;
-                    continue _fun44660
-                }
-            case 30:
-                var1 = _closure1_slot5;
-                var1 = var1.bind(var2)(var4);
-                var2 = var3 != var1;
-                var0 = null;
-                if (!var2) {
-                    _fun44660_ip = 51;
-                    continue _fun44660
-                }
-            case 48:
-                var0 = var1;
-            case 51:
-                return var0;
-        }
-    };
-    var1.findHandlerByTestID = var0;
+    var5 = require;
+    var2 = exports;
+    var19 = dependencyMap;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var20 = 0;
+    var3 = var19[var20];
+    var1 = metroImportDefault;
     var0 = undefined;
+    var21 = var1.bind(var0)(var3);
+    var4 = 1;
+    var1 = var19[var4];
+    var1 = var5.bind(var0)(var1);
+    var6 = var1.Dimensions;
+    var1 = var1.Platform;
+    var3 = var6.get;
+    var1 = 'window';
+    var1 = var3.bind(var6)(var1);
+    var9 = var1.height;
+    var8 = var1.width;
+    var3 = var6.get;
+    var1 = 'screen';
+    var1 = var3.bind(var6)(var1);
+    var7 = var1.height;
+    var6 = var1.width;
+    var18 = {};
+    var18.UNDETERMINED = var20;
+    var3 = 'UNDETERMINED';
+    var18[var20] = var3;
+    var18.SCROLLABLE = var4;
+    var1 = 'SCROLLABLE';
+    var18[var4] = var1;
+    var1 = 2;
+    var18.HANDLE = var1;
+    var10 = 'HANDLE';
+    var18[var1] = var10;
+    var22 = 3;
+    var18.CONTENT = var22;
+    var10 = 'CONTENT';
+    var18[var22] = var10;
+    var17 = {};
+    var17.CLOSED = var20;
+    var10 = 'CLOSED';
+    var17[var20] = var10;
+    var17.OPENED = var4;
+    var10 = 'OPENED';
+    var17[var4] = var10;
+    var17.EXTENDED = var1;
+    var10 = 'EXTENDED';
+    var17[var1] = var10;
+    var17.OVER_EXTENDED = var22;
+    var10 = 'OVER_EXTENDED';
+    var17[var22] = var10;
+    var15 = 4;
+    var17.FILL_PARENT = var15;
+    var10 = 'FILL_PARENT';
+    var17[var15] = var10;
+    var12 = {};
+    var12.LOCKED = var20;
+    var10 = 'LOCKED';
+    var12[var20] = var10;
+    var12.UNLOCKED = var4;
+    var10 = 'UNLOCKED';
+    var12[var4] = var10;
+    var12.UNDETERMINED = var1;
+    var12[var1] = var3;
+    var13 = {};
+    var13.UNDETERMINED = var20;
+    var13[var20] = var3;
+    var13.VIEW = var4;
+    var10 = 'VIEW';
+    var13[var4] = var10;
+    var13.FLATLIST = var1;
+    var10 = 'FLATLIST';
+    var13[var1] = var10;
+    var13.SCROLLVIEW = var22;
+    var10 = 'SCROLLVIEW';
+    var13[var22] = var10;
+    var13.SECTIONLIST = var15;
+    var10 = 'SECTIONLIST';
+    var13[var15] = var10;
+    var11 = 5;
+    var13.VIRTUALIZEDLIST = var11;
+    var10 = 'VIRTUALIZEDLIST';
+    var13[var11] = var10;
+    var16 = {};
+    var16.UNDETERMINED = var20;
+    var16[var20] = var3;
+    var16.RUNNING = var4;
+    var10 = 'RUNNING';
+    var16[var4] = var10;
+    var16.STOPPED = var1;
+    var10 = 'STOPPED';
+    var16[var1] = var10;
+    var16.INTERRUPTED = var22;
+    var10 = 'INTERRUPTED';
+    var16[var22] = var10;
+    var14 = {};
+    var14.NONE = var20;
+    var10 = 'NONE';
+    var14[var20] = var10;
+    var14.MOUNT = var4;
+    var10 = 'MOUNT';
+    var14[var4] = var10;
+    var14.GESTURE = var1;
+    var10 = 'GESTURE';
+    var14[var1] = var10;
+    var14.USER = var22;
+    var10 = 'USER';
+    var14[var22] = var10;
+    var14.CONTAINER_RESIZE = var15;
+    var10 = 'CONTAINER_RESIZE';
+    var14[var15] = var10;
+    var14.SNAP_POINT_CHANGE = var11;
+    var10 = 'SNAP_POINT_CHANGE';
+    var14[var11] = var10;
+    var11 = 6;
+    var14.KEYBOARD = var11;
+    var10 = 'KEYBOARD';
+    var14[var11] = var10;
+    var15 = {};
+    var15.TIMING = var20;
+    var10 = 'TIMING';
+    var15[var20] = var10;
+    var15.SPRING = var4;
+    var10 = 'SPRING';
+    var15[var4] = var10;
+    var11 = {};
+    var11.UNDETERMINED = var20;
+    var11[var20] = var3;
+    var11.SHOWN = var4;
+    var3 = 'SHOWN';
+    var11[var4] = var3;
+    var11.HIDDEN = var1;
+    var3 = 'HIDDEN';
+    var11[var1] = var3;
+    var10 = {};
+    var10.PROVIDED = var20;
+    var3 = 'PROVIDED';
+    var10[var20] = var3;
+    var10.DYNAMIC = var4;
+    var3 = 'DYNAMIC';
+    var10[var4] = var3;
+    var3 = var19[var1];
+    var3 = var5.bind(var0)(var3);
+    var4 = var3.Easing;
+    var3 = var4.out;
+    var1 = var19[var1];
+    var1 = var5.bind(var0)(var1);
+    var1 = var1.Easing;
+    var1 = var1.exp;
+    var3 = var3.bind(var4)(var1);
+    var4 = {};
+    var1 = 250;
+    var4.duration = var1;
+    var4.easing = var3;
+    var19 = var12.UNDETERMINED;
+    var5 = {};
+    var19 = var21.bind(var0)(var5, var19, var20);
+    var5 = var12.LOCKED;
+    var20 = var21.bind(var0)(var19, var5, var20);
+    var19 = var12.UNLOCKED;
+    var5 = 0.985;
+    var5 = var21.bind(var0)(var20, var19, var5);
+    var2.GESTURE_SOURCE = var18;
+    var2.SHEET_STATE = var17;
+    var2.ANIMATION_STATE = var16;
+    var2.ANIMATION_METHOD = var15;
+    var2.ANIMATION_SOURCE = var14;
+    var2.SCROLLABLE_TYPE = var13;
+    var2.SCROLLABLE_STATE = var12;
+    var2.KEYBOARD_STATE = var11;
+    var2.SNAP_POINT_TYPE = var10;
+    var2.WINDOW_HEIGHT = var9;
+    var2.WINDOW_WIDTH = var8;
+    var2.SCREEN_HEIGHT = var7;
+    var2.SCREEN_WIDTH = var6;
+    var2.SCROLLABLE_DECELERATION_RATE_MAPPER = var5;
+    var5 = {
+        'replace': 'replace',
+        'push': 'push',
+        'switch': 'switch'
+    };
+    var2.MODAL_STACK_BEHAVIOR = var5;
+    var5 = {
+        'interactive': 'interactive',
+        'extend': 'extend',
+        'fillParent': 'fillParent'
+    };
+    var2.KEYBOARD_BEHAVIOR = var5;
+    var5 = {
+        'none': 'none',
+        'restore': 'restore'
+    };
+    var2.KEYBOARD_BLUR_BEHAVIOR = var5;
+    var5 = {
+        'adjustPan': 'adjustPan',
+        'adjustResize': 'adjustResize'
+    };
+    var2.KEYBOARD_INPUT_MODE = var5;
+    var5 = 12.5;
+    var2.KEYBOARD_DISMISS_THRESHOLD = var5;
+    var2.ANIMATION_CONFIGS = var4;
+    var2.ANIMATION_EASING = var3;
+    var2.ANIMATION_DURATION = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4930]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [77, 27, 3712]);

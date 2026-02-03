@@ -10,10 +10,10 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
-import jt.h0;
+import kt.h0;
 import net.time4j.k;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class g0 extends jt.k0 implements gt.g, kt.h {
+public final class g0 extends kt.k0 implements ht.g, lt.h {
     public static final v0 A;
     public static final d1 B;
     public static final net.time4j.c C;
@@ -34,108 +34,108 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
     public static final d1 R;
     public static final d1 S;
     public static final d1 T;
-    public static final jt.p U;
+    public static final kt.p U;
     private static final Map V;
-    private static final jt.z W;
-    private static final jt.z X;
-    private static final jt.z Y;
-    private static final jt.h0 Z;
+    private static final kt.z W;
+    private static final kt.z X;
+    private static final kt.z Y;
+    private static final kt.h0 Z;
 
     /* renamed from: p  reason: collision with root package name */
-    static final char f40612p;
+    static final char f40475p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final BigDecimal f40613q;
+    private static final BigDecimal f40476q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final BigDecimal f40614r;
+    private static final BigDecimal f40477r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final BigDecimal f40615s;
+    private static final BigDecimal f40478s;
     private static final long serialVersionUID = 2780881537313863339L;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final BigDecimal f40616t;
+    private static final BigDecimal f40479t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final BigDecimal f40617u;
+    private static final BigDecimal f40480u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final BigDecimal f40618v;
+    private static final BigDecimal f40481v;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final g0[] f40619w;
+    private static final g0[] f40482w;
 
     /* renamed from: x  reason: collision with root package name */
-    static final g0 f40620x;
+    static final g0 f40483x;
 
     /* renamed from: y  reason: collision with root package name */
-    static final g0 f40621y;
+    static final g0 f40484y;
 
     /* renamed from: z  reason: collision with root package name */
-    static final jt.p f40622z;
+    static final kt.p f40485z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient byte f40623d;
+    private final transient byte f40486d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient byte f40624e;
+    private final transient byte f40487e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient byte f40625i;
+    private final transient byte f40488i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f40626o;
+    private final transient int f40489o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f40627a;
+        static final /* synthetic */ int[] f40490a;
 
         static {
             int[] iArr = new int[net.time4j.g.values().length];
-            f40627a = iArr;
+            f40490a = iArr;
             try {
-                iArr[net.time4j.g.f40604d.ordinal()] = 1;
+                iArr[net.time4j.g.f40467d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f40627a[net.time4j.g.f40605e.ordinal()] = 2;
+                f40490a[net.time4j.g.f40468e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f40627a[net.time4j.g.f40606i.ordinal()] = 3;
+                f40490a[net.time4j.g.f40469i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f40627a[net.time4j.g.f40607o.ordinal()] = 4;
+                f40490a[net.time4j.g.f40470o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f40627a[net.time4j.g.f40608p.ordinal()] = 5;
+                f40490a[net.time4j.g.f40471p.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f40627a[net.time4j.g.f40609q.ordinal()] = 6;
+                f40490a[net.time4j.g.f40472q.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class b implements jt.z {
+    private static class b implements kt.z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final jt.p f40628d;
+        private final kt.p f40491d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final BigDecimal f40629e;
+        private final BigDecimal f40492e;
 
-        b(jt.p pVar, BigDecimal bigDecimal) {
-            this.f40628d = pVar;
-            this.f40629e = bigDecimal;
+        b(kt.p pVar, BigDecimal bigDecimal) {
+            this.f40491d = pVar;
+            this.f40492e = bigDecimal;
         }
 
         private static BigDecimal b(BigDecimal bigDecimal, BigDecimal bigDecimal2) {
@@ -146,85 +146,85 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
             return Math.min(999999999, bigDecimal.movePointRight(9).setScale(0, RoundingMode.HALF_UP).intValue());
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: c */
-        public jt.p a(g0 g0Var) {
+        public kt.p a(g0 g0Var) {
             return null;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: d */
-        public jt.p h(g0 g0Var) {
+        public kt.p g(g0 g0Var) {
             return null;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: e */
-        public BigDecimal j(g0 g0Var) {
-            jt.p pVar;
-            if (g0Var.f40623d == 24 && ((pVar = this.f40628d) == g0.S || pVar == g0.T)) {
+        public BigDecimal h(g0 g0Var) {
+            kt.p pVar;
+            if (g0Var.f40486d == 24 && ((pVar = this.f40491d) == g0.S || pVar == g0.T)) {
                 return BigDecimal.ZERO;
             }
-            return this.f40629e;
+            return this.f40492e;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: f */
-        public BigDecimal p(g0 g0Var) {
+        public BigDecimal o(g0 g0Var) {
             return BigDecimal.ZERO;
         }
 
-        @Override // jt.z
-        /* renamed from: g */
+        @Override // kt.z
+        /* renamed from: j */
         public BigDecimal x(g0 g0Var) {
             BigDecimal add;
-            jt.p pVar = this.f40628d;
+            kt.p pVar = this.f40491d;
             if (pVar == g0.R) {
-                if (g0Var.equals(g0.f40620x)) {
+                if (g0Var.equals(g0.f40483x)) {
                     return BigDecimal.ZERO;
                 }
-                if (g0Var.f40623d == 24) {
-                    return g0.f40616t;
+                if (g0Var.f40486d == 24) {
+                    return g0.f40479t;
                 }
-                add = BigDecimal.valueOf(g0Var.f40623d).add(b(BigDecimal.valueOf(g0Var.f40624e), g0.f40613q)).add(b(BigDecimal.valueOf(g0Var.f40625i), g0.f40614r)).add(b(BigDecimal.valueOf(g0Var.f40626o), g0.f40614r.multiply(g0.f40615s)));
+                add = BigDecimal.valueOf(g0Var.f40486d).add(b(BigDecimal.valueOf(g0Var.f40487e), g0.f40476q)).add(b(BigDecimal.valueOf(g0Var.f40488i), g0.f40477r)).add(b(BigDecimal.valueOf(g0Var.f40489o), g0.f40477r.multiply(g0.f40478s)));
             } else if (pVar == g0.S) {
                 if (g0Var.z0()) {
                     return BigDecimal.ZERO;
                 }
-                add = BigDecimal.valueOf(g0Var.f40624e).add(b(BigDecimal.valueOf(g0Var.f40625i), g0.f40613q)).add(b(BigDecimal.valueOf(g0Var.f40626o), g0.f40613q.multiply(g0.f40615s)));
+                add = BigDecimal.valueOf(g0Var.f40487e).add(b(BigDecimal.valueOf(g0Var.f40488i), g0.f40476q)).add(b(BigDecimal.valueOf(g0Var.f40489o), g0.f40476q.multiply(g0.f40478s)));
             } else if (pVar == g0.T) {
                 if (g0Var.A0()) {
                     return BigDecimal.ZERO;
                 }
-                add = BigDecimal.valueOf(g0Var.f40625i).add(b(BigDecimal.valueOf(g0Var.f40626o), g0.f40615s));
+                add = BigDecimal.valueOf(g0Var.f40488i).add(b(BigDecimal.valueOf(g0Var.f40489o), g0.f40478s));
             } else {
-                throw new UnsupportedOperationException(this.f40628d.name());
+                throw new UnsupportedOperationException(this.f40491d.name());
             }
             return h0.a(add.setScale(15, RoundingMode.FLOOR));
         }
 
-        @Override // jt.z
-        /* renamed from: i */
+        @Override // kt.z
+        /* renamed from: k */
         public boolean l(g0 g0Var, BigDecimal bigDecimal) {
-            jt.p pVar;
+            kt.p pVar;
             if (bigDecimal == null) {
                 return false;
             }
-            if (g0Var.f40623d == 24 && ((pVar = this.f40628d) == g0.S || pVar == g0.T)) {
+            if (g0Var.f40486d == 24 && ((pVar = this.f40491d) == g0.S || pVar == g0.T)) {
                 if (BigDecimal.ZERO.compareTo(bigDecimal) != 0) {
                     return false;
                 }
                 return true;
-            } else if (BigDecimal.ZERO.compareTo(bigDecimal) > 0 || this.f40629e.compareTo(bigDecimal) < 0) {
+            } else if (BigDecimal.ZERO.compareTo(bigDecimal) > 0 || this.f40492e.compareTo(bigDecimal) < 0) {
                 return false;
             } else {
                 return true;
             }
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: n */
-        public g0 w(g0 g0Var, BigDecimal bigDecimal, boolean z10) {
+        public g0 v(g0 g0Var, BigDecimal bigDecimal, boolean z10) {
             int i10;
             int i11;
             long j10;
@@ -233,13 +233,13 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
             int i14;
             int i15;
             if (bigDecimal != null) {
-                jt.p pVar = this.f40628d;
+                kt.p pVar = this.f40491d;
                 if (pVar == g0.R) {
                     RoundingMode roundingMode = RoundingMode.FLOOR;
                     BigDecimal scale = bigDecimal.setScale(0, roundingMode);
-                    BigDecimal multiply = bigDecimal.subtract(scale).multiply(g0.f40613q);
+                    BigDecimal multiply = bigDecimal.subtract(scale).multiply(g0.f40476q);
                     BigDecimal scale2 = multiply.setScale(0, roundingMode);
-                    BigDecimal multiply2 = multiply.subtract(scale2).multiply(g0.f40613q);
+                    BigDecimal multiply2 = multiply.subtract(scale2).multiply(g0.f40476q);
                     BigDecimal scale3 = multiply2.setScale(0, roundingMode);
                     j10 = scale.longValueExact();
                     i12 = scale2.intValue();
@@ -248,18 +248,18 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                 } else if (pVar == g0.S) {
                     RoundingMode roundingMode2 = RoundingMode.FLOOR;
                     BigDecimal scale4 = bigDecimal.setScale(0, roundingMode2);
-                    BigDecimal multiply3 = bigDecimal.subtract(scale4).multiply(g0.f40613q);
+                    BigDecimal multiply3 = bigDecimal.subtract(scale4).multiply(g0.f40476q);
                     BigDecimal scale5 = multiply3.setScale(0, roundingMode2);
                     i11 = scale5.intValue();
                     int m10 = m(multiply3.subtract(scale5));
                     long longValueExact = scale4.longValueExact();
-                    long j11 = g0Var.f40623d;
+                    long j11 = g0Var.f40486d;
                     if (!z10) {
                         g0.k0(longValueExact);
                         i14 = (int) longValueExact;
                     } else {
-                        j11 += gt.c.b(longValueExact, 60);
-                        i14 = gt.c.d(longValueExact, 60);
+                        j11 += ht.c.b(longValueExact, 60);
+                        i14 = ht.c.d(longValueExact, 60);
                     }
                     j10 = j11;
                     i12 = i14;
@@ -268,28 +268,28 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                     BigDecimal scale6 = bigDecimal.setScale(0, RoundingMode.FLOOR);
                     int m11 = m(bigDecimal.subtract(scale6));
                     long longValueExact2 = scale6.longValueExact();
-                    long j12 = g0Var.f40623d;
-                    int i16 = g0Var.f40624e;
+                    long j12 = g0Var.f40486d;
+                    int i16 = g0Var.f40487e;
                     if (!z10) {
                         g0.m0(longValueExact2);
                         i10 = (int) longValueExact2;
                     } else {
-                        i10 = gt.c.d(longValueExact2, 60);
-                        long b10 = i16 + gt.c.b(longValueExact2, 60);
-                        j12 += gt.c.b(b10, 60);
-                        i16 = gt.c.d(b10, 60);
+                        i10 = ht.c.d(longValueExact2, 60);
+                        long b10 = i16 + ht.c.b(longValueExact2, 60);
+                        j12 += ht.c.b(b10, 60);
+                        i16 = ht.c.d(b10, 60);
                     }
                     i11 = i10;
                     j10 = j12;
                     i12 = i16;
                     i13 = m11;
                 } else {
-                    throw new UnsupportedOperationException(this.f40628d.name());
+                    throw new UnsupportedOperationException(this.f40491d.name());
                 }
                 if (z10) {
-                    i15 = gt.c.d(j10, 24);
+                    i15 = ht.c.d(j10, 24);
                     if (j10 > 0 && (i15 | i12 | i11 | i13) == 0) {
-                        return g0.f40621y;
+                        return g0.f40484y;
                     }
                 } else if (j10 >= 0 && j10 <= 24) {
                     i15 = (int) j10;
@@ -304,10 +304,10 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    public static class c implements jt.m0 {
+    public static class c implements kt.m0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final net.time4j.g f40630a;
+        private final net.time4j.g f40493a;
 
         /* synthetic */ c(net.time4j.g gVar, a aVar) {
             this(gVar);
@@ -315,7 +315,7 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static j e(g0 g0Var, long j10, net.time4j.g gVar) {
-            if (j10 == 0 && g0Var.f40623d < 24) {
+            if (j10 == 0 && g0Var.f40486d < 24) {
                 return new j(0L, g0Var);
             }
             return (j) g(j.class, gVar, g0Var, j10);
@@ -324,38 +324,38 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
         private static Object g(Class cls, net.time4j.g gVar, g0 g0Var, long j10) {
             long f10;
             g0 J0;
-            int i10 = g0Var.f40624e;
-            int i11 = g0Var.f40625i;
-            int i12 = g0Var.f40626o;
-            switch (a.f40627a[gVar.ordinal()]) {
+            int i10 = g0Var.f40487e;
+            int i11 = g0Var.f40488i;
+            int i12 = g0Var.f40489o;
+            switch (a.f40490a[gVar.ordinal()]) {
                 case 1:
-                    f10 = gt.c.f(g0Var.f40623d, j10);
+                    f10 = ht.c.f(g0Var.f40486d, j10);
                     break;
                 case 2:
-                    long f11 = gt.c.f(g0Var.f40624e, j10);
-                    f10 = gt.c.f(g0Var.f40623d, gt.c.b(f11, 60));
-                    i10 = gt.c.d(f11, 60);
+                    long f11 = ht.c.f(g0Var.f40487e, j10);
+                    f10 = ht.c.f(g0Var.f40486d, ht.c.b(f11, 60));
+                    i10 = ht.c.d(f11, 60);
                     break;
                 case 3:
-                    long f12 = gt.c.f(g0Var.f40625i, j10);
-                    long f13 = gt.c.f(g0Var.f40624e, gt.c.b(f12, 60));
-                    f10 = gt.c.f(g0Var.f40623d, gt.c.b(f13, 60));
-                    int d10 = gt.c.d(f13, 60);
-                    i11 = gt.c.d(f12, 60);
+                    long f12 = ht.c.f(g0Var.f40488i, j10);
+                    long f13 = ht.c.f(g0Var.f40487e, ht.c.b(f12, 60));
+                    f10 = ht.c.f(g0Var.f40486d, ht.c.b(f13, 60));
+                    int d10 = ht.c.d(f13, 60);
+                    i11 = ht.c.d(f12, 60);
                     i10 = d10;
                     break;
                 case 4:
-                    return g(cls, net.time4j.g.f40609q, g0Var, gt.c.i(j10, 1000000L));
+                    return g(cls, net.time4j.g.f40472q, g0Var, ht.c.i(j10, 1000000L));
                 case 5:
-                    return g(cls, net.time4j.g.f40609q, g0Var, gt.c.i(j10, 1000L));
+                    return g(cls, net.time4j.g.f40472q, g0Var, ht.c.i(j10, 1000L));
                 case 6:
-                    long f14 = gt.c.f(g0Var.f40626o, j10);
-                    long f15 = gt.c.f(g0Var.f40625i, gt.c.b(f14, 1000000000));
-                    long f16 = gt.c.f(g0Var.f40624e, gt.c.b(f15, 60));
-                    f10 = gt.c.f(g0Var.f40623d, gt.c.b(f16, 60));
-                    int d11 = gt.c.d(f16, 60);
-                    int d12 = gt.c.d(f15, 60);
-                    int d13 = gt.c.d(f14, 1000000000);
+                    long f14 = ht.c.f(g0Var.f40489o, j10);
+                    long f15 = ht.c.f(g0Var.f40488i, ht.c.b(f14, 1000000000));
+                    long f16 = ht.c.f(g0Var.f40487e, ht.c.b(f15, 60));
+                    f10 = ht.c.f(g0Var.f40486d, ht.c.b(f16, 60));
+                    int d11 = ht.c.d(f16, 60);
+                    int d12 = ht.c.d(f15, 60);
+                    int d13 = ht.c.d(f14, 1000000000);
                     i10 = d11;
                     i11 = d12;
                     i12 = d13;
@@ -363,12 +363,12 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                 default:
                     throw new UnsupportedOperationException(gVar.name());
             }
-            int d14 = gt.c.d(f10, 24);
+            int d14 = ht.c.d(f10, 24);
             if ((d14 | i10 | i11 | i12) == 0) {
                 if (j10 > 0 && cls == g0.class) {
-                    J0 = g0.f40621y;
+                    J0 = g0.f40484y;
                 } else {
-                    J0 = g0.f40620x;
+                    J0 = g0.f40483x;
                 }
             } else {
                 J0 = g0.J0(d14, i10, i11, i12);
@@ -376,24 +376,24 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
             if (cls == g0.class) {
                 return cls.cast(J0);
             }
-            return cls.cast(new j(gt.c.b(f10, 24), J0));
+            return cls.cast(new j(ht.c.b(f10, 24), J0));
         }
 
-        @Override // jt.m0
+        @Override // kt.m0
         /* renamed from: d */
         public g0 b(g0 g0Var, long j10) {
             if (j10 == 0) {
                 return g0Var;
             }
-            return (g0) g(g0.class, this.f40630a, g0Var, j10);
+            return (g0) g(g0.class, this.f40493a, g0Var, j10);
         }
 
-        @Override // jt.m0
+        @Override // kt.m0
         /* renamed from: f */
         public long a(g0 g0Var, g0 g0Var2) {
             long j10;
             long v02 = g0Var2.v0() - g0Var.v0();
-            switch (a.f40627a[this.f40630a.ordinal()]) {
+            switch (a.f40490a[this.f40493a.ordinal()]) {
                 case 1:
                     j10 = 3600000000000L;
                     break;
@@ -413,44 +413,44 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                     j10 = 1;
                     break;
                 default:
-                    throw new UnsupportedOperationException(this.f40630a.name());
+                    throw new UnsupportedOperationException(this.f40493a.name());
             }
             return v02 / j10;
         }
 
         private c(net.time4j.g gVar) {
-            this.f40630a = gVar;
+            this.f40493a = gVar;
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class d implements jt.z {
+    private static class d implements kt.z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final jt.p f40631d;
+        private final kt.p f40494d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f40632e;
+        private final int f40495e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f40633i;
+        private final int f40496i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final int f40634o;
+        private final int f40497o;
 
-        d(jt.p pVar, int i10, int i11) {
-            this.f40631d = pVar;
+        d(kt.p pVar, int i10, int i11) {
+            this.f40494d = pVar;
             if (pVar instanceof t) {
-                this.f40632e = ((t) pVar).K();
+                this.f40495e = ((t) pVar).K();
             } else {
-                this.f40632e = -1;
+                this.f40495e = -1;
             }
-            this.f40633i = i10;
-            this.f40634o = i11;
+            this.f40496i = i10;
+            this.f40497o = i11;
         }
 
-        private jt.p b(g0 g0Var) {
-            switch (this.f40632e) {
+        private kt.p b(g0 g0Var) {
+            switch (this.f40495e) {
                 case 1:
                 case 2:
                 case 3:
@@ -468,85 +468,85 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
             }
         }
 
-        private static boolean i(g0 g0Var) {
-            if (g0Var.f40623d >= 12 && g0Var.f40623d != 24) {
+        private static boolean k(g0 g0Var) {
+            if (g0Var.f40486d >= 12 && g0Var.f40486d != 24) {
                 return false;
             }
             return true;
         }
 
-        private g0 o(g0 g0Var, int i10) {
-            jt.p pVar = this.f40631d;
+        private g0 p(g0 g0Var, int i10) {
+            kt.p pVar = this.f40494d;
             if (pVar != g0.G && pVar != g0.F && pVar != g0.E) {
                 if (pVar == g0.H) {
-                    return (g0) g0Var.K(gt.c.l(i10, g0Var.f40624e), net.time4j.g.f40605e);
+                    return (g0) g0Var.K(ht.c.l(i10, g0Var.f40487e), net.time4j.g.f40468e);
                 }
                 if (pVar == g0.J) {
-                    return (g0) g0Var.K(gt.c.l(i10, g0Var.f40625i), net.time4j.g.f40606i);
+                    return (g0) g0Var.K(ht.c.l(i10, g0Var.f40488i), net.time4j.g.f40469i);
                 }
                 l0 l0Var = g0.L;
                 if (pVar == l0Var) {
-                    return (g0) g0Var.K(gt.c.l(i10, ((Integer) g0Var.p(l0Var)).intValue()), net.time4j.g.f40607o);
+                    return (g0) g0Var.K(ht.c.l(i10, ((Integer) g0Var.v(l0Var)).intValue()), net.time4j.g.f40470o);
                 }
                 l0 l0Var2 = g0.M;
                 if (pVar == l0Var2) {
-                    return (g0) g0Var.K(gt.c.l(i10, ((Integer) g0Var.p(l0Var2)).intValue()), net.time4j.g.f40608p);
+                    return (g0) g0Var.K(ht.c.l(i10, ((Integer) g0Var.v(l0Var2)).intValue()), net.time4j.g.f40471p);
                 }
                 if (pVar == g0.N) {
-                    return (g0) g0Var.K(gt.c.l(i10, g0Var.f40626o), net.time4j.g.f40609q);
+                    return (g0) g0Var.K(ht.c.l(i10, g0Var.f40489o), net.time4j.g.f40472q);
                 }
                 if (pVar == g0.O) {
-                    int c10 = gt.c.c(i10, 86400000);
-                    int i11 = g0Var.f40626o % 1000000;
+                    int c10 = ht.c.c(i10, 86400000);
+                    int i11 = g0Var.f40489o % 1000000;
                     if (c10 != 0 || i11 != 0) {
                         return g0.p0(c10, i11);
                     }
                     if (i10 > 0) {
-                        return g0.f40621y;
+                        return g0.f40484y;
                     }
-                    return g0.f40620x;
+                    return g0.f40483x;
                 } else if (pVar == g0.I) {
-                    int c11 = gt.c.c(i10, 1440);
+                    int c11 = ht.c.c(i10, 1440);
                     if (c11 == 0 && g0Var.A0()) {
                         if (i10 > 0) {
-                            return g0.f40621y;
+                            return g0.f40484y;
                         }
-                        return g0.f40620x;
+                        return g0.f40483x;
                     }
-                    return w(g0Var, Integer.valueOf(c11), false);
+                    return v(g0Var, Integer.valueOf(c11), false);
                 } else if (pVar == g0.K) {
-                    int c12 = gt.c.c(i10, 86400);
-                    if (c12 == 0 && g0Var.f40626o == 0) {
+                    int c12 = ht.c.c(i10, 86400);
+                    if (c12 == 0 && g0Var.f40489o == 0) {
                         if (i10 > 0) {
-                            return g0.f40621y;
+                            return g0.f40484y;
                         }
-                        return g0.f40620x;
+                        return g0.f40483x;
                     }
-                    return w(g0Var, Integer.valueOf(c12), false);
+                    return v(g0Var, Integer.valueOf(c12), false);
                 } else {
-                    throw new UnsupportedOperationException(this.f40631d.name());
+                    throw new UnsupportedOperationException(this.f40494d.name());
                 }
             }
-            return (g0) g0Var.K(gt.c.l(i10, ((Integer) g0Var.p(pVar)).intValue()), net.time4j.g.f40604d);
+            return (g0) g0Var.K(ht.c.l(i10, ((Integer) g0Var.v(pVar)).intValue()), net.time4j.g.f40467d);
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: c */
-        public jt.p a(g0 g0Var) {
+        public kt.p a(g0 g0Var) {
             return b(g0Var);
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: d */
-        public jt.p h(g0 g0Var) {
+        public kt.p g(g0 g0Var) {
             return b(g0Var);
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: e */
-        public Integer j(g0 g0Var) {
-            if (g0Var.f40623d == 24) {
-                switch (this.f40632e) {
+        public Integer h(g0 g0Var) {
+            if (g0Var.f40486d == 24) {
+                switch (this.f40495e) {
                     case 6:
                     case 8:
                     case 10:
@@ -555,92 +555,92 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                         return 0;
                 }
             }
-            if (g0Var.w0(this.f40631d)) {
-                return Integer.valueOf(this.f40634o - 1);
+            if (g0Var.w0(this.f40494d)) {
+                return Integer.valueOf(this.f40497o - 1);
             }
-            return Integer.valueOf(this.f40634o);
+            return Integer.valueOf(this.f40497o);
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: f */
-        public Integer p(g0 g0Var) {
-            return Integer.valueOf(this.f40633i);
+        public Integer o(g0 g0Var) {
+            return Integer.valueOf(this.f40496i);
         }
 
-        @Override // jt.z
-        /* renamed from: g */
+        @Override // kt.z
+        /* renamed from: j */
         public Integer x(g0 g0Var) {
             int i10;
             byte b10;
             int i11 = 12;
-            switch (this.f40632e) {
+            switch (this.f40495e) {
                 case 1:
-                    int i12 = g0Var.f40623d % 12;
+                    int i12 = g0Var.f40486d % 12;
                     if (i12 != 0) {
                         i11 = i12;
                         break;
                     }
                     break;
                 case 2:
-                    i11 = g0Var.f40623d % 24;
+                    i11 = g0Var.f40486d % 24;
                     if (i11 == 0) {
                         i11 = 24;
                         break;
                     }
                     break;
                 case 3:
-                    i11 = g0Var.f40623d % 12;
+                    i11 = g0Var.f40486d % 12;
                     break;
                 case 4:
-                    i11 = g0Var.f40623d % 24;
+                    i11 = g0Var.f40486d % 24;
                     break;
                 case 5:
-                    i11 = g0Var.f40623d;
+                    i11 = g0Var.f40486d;
                     break;
                 case 6:
-                    i11 = g0Var.f40624e;
+                    i11 = g0Var.f40487e;
                     break;
                 case 7:
-                    i10 = g0Var.f40623d * 60;
-                    b10 = g0Var.f40624e;
+                    i10 = g0Var.f40486d * 60;
+                    b10 = g0Var.f40487e;
                     i11 = i10 + b10;
                     break;
                 case 8:
-                    i11 = g0Var.f40625i;
+                    i11 = g0Var.f40488i;
                     break;
                 case 9:
-                    i10 = (g0Var.f40623d * 3600) + (g0Var.f40624e * 60);
-                    b10 = g0Var.f40625i;
+                    i10 = (g0Var.f40486d * 3600) + (g0Var.f40487e * 60);
+                    b10 = g0Var.f40488i;
                     i11 = i10 + b10;
                     break;
                 case 10:
-                    i11 = g0Var.f40626o / 1000000;
+                    i11 = g0Var.f40489o / 1000000;
                     break;
                 case 11:
-                    i11 = g0Var.f40626o / 1000;
+                    i11 = g0Var.f40489o / 1000;
                     break;
                 case 12:
-                    i11 = g0Var.f40626o;
+                    i11 = g0Var.f40489o;
                     break;
                 case 13:
                     i11 = (int) (g0Var.v0() / 1000000);
                     break;
                 default:
-                    throw new UnsupportedOperationException(this.f40631d.name());
+                    throw new UnsupportedOperationException(this.f40494d.name());
             }
             return Integer.valueOf(i11);
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: m */
         public boolean l(g0 g0Var, Integer num) {
             int intValue;
             int i10;
-            if (num == null || (intValue = num.intValue()) < this.f40633i || intValue > (i10 = this.f40634o)) {
+            if (num == null || (intValue = num.intValue()) < this.f40496i || intValue > (i10 = this.f40497o)) {
                 return false;
             }
             if (intValue == i10) {
-                int i11 = this.f40632e;
+                int i11 = this.f40495e;
                 if (i11 == 5) {
                     return g0Var.z0();
                 }
@@ -649,19 +649,19 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                 }
                 if (i11 != 9) {
                     if (i11 == 13) {
-                        if (g0Var.f40626o % 1000000 != 0) {
+                        if (g0Var.f40489o % 1000000 != 0) {
                             return false;
                         }
                         return true;
                     }
-                } else if (g0Var.f40626o != 0) {
+                } else if (g0Var.f40489o != 0) {
                     return false;
                 } else {
                     return true;
                 }
             }
-            if (g0Var.f40623d == 24) {
-                switch (this.f40632e) {
+            if (g0Var.f40486d == 24) {
+                switch (this.f40495e) {
                     case 6:
                     case 8:
                     case 10:
@@ -678,27 +678,27 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
 
         /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
         /* JADX WARN: Code restructure failed: missing block: B:24:0x0072, code lost:
-            if (i(r7) != false) goto L24;
+            if (k(r7) != false) goto L24;
          */
         /* JADX WARN: Code restructure failed: missing block: B:26:0x0075, code lost:
             r8 = r8 + 12;
          */
         /* JADX WARN: Code restructure failed: missing block: B:34:0x0087, code lost:
-            if (i(r7) != false) goto L24;
+            if (k(r7) != false) goto L24;
          */
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: n */
         /*
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public net.time4j.g0 w(net.time4j.g0 r7, java.lang.Integer r8, boolean r9) {
+        public net.time4j.g0 v(net.time4j.g0 r7, java.lang.Integer r8, boolean r9) {
             /*
                 r6 = this;
                 if (r8 == 0) goto La6
                 if (r9 == 0) goto Ld
                 int r8 = r8.intValue()
-                net.time4j.g0 r7 = r6.o(r7, r8)
+                net.time4j.g0 r7 = r6.p(r7, r8)
                 return r7
             Ld:
                 boolean r9 = r6.l(r7, r8)
@@ -708,7 +708,7 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                 byte r1 = net.time4j.g0.g0(r7)
                 int r2 = net.time4j.g0.M(r7)
                 int r8 = r8.intValue()
-                int r3 = r6.f40632e
+                int r3 = r6.f40495e
                 r4 = 0
                 r5 = 1000000(0xf4240, float:1.401298E-39)
                 switch(r3) {
@@ -729,7 +729,7 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                 }
             L30:
                 java.lang.UnsupportedOperationException r7 = new java.lang.UnsupportedOperationException
-                jt.p r8 = r6.f40631d
+                kt.p r8 = r6.f40494d
                 java.lang.String r8 = r8.name()
                 r7.<init>(r8)
                 throw r7
@@ -773,7 +773,7 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                 r9 = r8
                 goto L8a
             L6e:
-                boolean r7 = i(r7)
+                boolean r7 = k(r7)
                 if (r7 == 0) goto L75
                 goto L6c
             L75:
@@ -789,7 +789,7 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                 if (r8 != r9) goto L83
                 r8 = r4
             L83:
-                boolean r7 = i(r7)
+                boolean r7 = k(r7)
                 if (r7 == 0) goto L75
                 goto L6c
             L8a:
@@ -811,76 +811,76 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                 r7.<init>(r8)
                 throw r7
             */
-            throw new UnsupportedOperationException("Method not decompiled: net.time4j.g0.d.w(net.time4j.g0, java.lang.Integer, boolean):net.time4j.g0");
+            throw new UnsupportedOperationException("Method not decompiled: net.time4j.g0.d.v(net.time4j.g0, java.lang.Integer, boolean):net.time4j.g0");
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class e implements jt.z {
+    private static class e implements kt.z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final jt.p f40635d;
+        private final kt.p f40498d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final long f40636e;
+        private final long f40499e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final long f40637i;
+        private final long f40500i;
 
-        e(jt.p pVar, long j10, long j11) {
-            this.f40635d = pVar;
-            this.f40636e = j10;
-            this.f40637i = j11;
+        e(kt.p pVar, long j10, long j11) {
+            this.f40498d = pVar;
+            this.f40499e = j10;
+            this.f40500i = j11;
         }
 
         private g0 m(g0 g0Var, long j10) {
-            if (this.f40635d == g0.P) {
+            if (this.f40498d == g0.P) {
                 long t02 = g0.t0(j10, 86400000000L);
-                int i10 = g0Var.f40626o % 1000;
+                int i10 = g0Var.f40489o % 1000;
                 if (t02 != 0 || i10 != 0 || j10 <= 0) {
                     return g0.o0(t02, i10);
                 }
-                return g0.f40621y;
+                return g0.f40484y;
             }
             long t03 = g0.t0(j10, 86400000000000L);
             if (t03 != 0 || j10 <= 0) {
                 return g0.q0(t03);
             }
-            return g0.f40621y;
+            return g0.f40484y;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: b */
-        public jt.p a(g0 g0Var) {
+        public kt.p a(g0 g0Var) {
             return null;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: c */
-        public jt.p h(g0 g0Var) {
+        public kt.p g(g0 g0Var) {
             return null;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: d */
-        public Long j(g0 g0Var) {
-            if (this.f40635d == g0.P && g0Var.f40626o % 1000 != 0) {
-                return Long.valueOf(this.f40637i - 1);
+        public Long h(g0 g0Var) {
+            if (this.f40498d == g0.P && g0Var.f40489o % 1000 != 0) {
+                return Long.valueOf(this.f40500i - 1);
             }
-            return Long.valueOf(this.f40637i);
+            return Long.valueOf(this.f40500i);
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: e */
-        public Long p(g0 g0Var) {
-            return Long.valueOf(this.f40636e);
+        public Long o(g0 g0Var) {
+            return Long.valueOf(this.f40499e);
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: f */
         public Long x(g0 g0Var) {
             long v02;
-            if (this.f40635d != g0.P) {
+            if (this.f40498d != g0.P) {
                 v02 = g0Var.v0();
             } else {
                 v02 = g0Var.v0() / 1000;
@@ -888,34 +888,34 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
             return Long.valueOf(v02);
         }
 
-        @Override // jt.z
-        /* renamed from: g */
+        @Override // kt.z
+        /* renamed from: j */
         public boolean l(g0 g0Var, Long l10) {
             if (l10 == null) {
                 return false;
             }
-            if (this.f40635d == g0.P && l10.longValue() == this.f40637i) {
-                if (g0Var.f40626o % 1000 != 0) {
+            if (this.f40498d == g0.P && l10.longValue() == this.f40500i) {
+                if (g0Var.f40489o % 1000 != 0) {
                     return false;
                 }
                 return true;
-            } else if (this.f40636e > l10.longValue() || l10.longValue() > this.f40637i) {
+            } else if (this.f40499e > l10.longValue() || l10.longValue() > this.f40500i) {
                 return false;
             } else {
                 return true;
             }
         }
 
-        @Override // jt.z
-        /* renamed from: i */
-        public g0 w(g0 g0Var, Long l10, boolean z10) {
+        @Override // kt.z
+        /* renamed from: k */
+        public g0 v(g0 g0Var, Long l10, boolean z10) {
             if (l10 != null) {
                 if (z10) {
                     return m(g0Var, l10.longValue());
                 }
                 if (l(g0Var, l10)) {
                     long longValue = l10.longValue();
-                    return this.f40635d == g0.P ? g0.o0(longValue, g0Var.f40626o % 1000) : g0.q0(longValue);
+                    return this.f40498d == g0.P ? g0.o0(longValue, g0Var.f40489o % 1000) : g0.q0(longValue);
                 }
                 throw new IllegalArgumentException("Value out of range: " + l10);
             }
@@ -924,70 +924,70 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class f implements jt.u {
+    private static class f implements kt.u {
         private f() {
         }
 
-        private static void e(jt.q qVar, String str) {
-            jt.n0 n0Var = jt.n0.ERROR_MESSAGE;
+        private static void e(kt.q qVar, String str) {
+            kt.n0 n0Var = kt.n0.ERROR_MESSAGE;
             if (qVar.B(n0Var, str)) {
                 qVar.E(n0Var, str);
             }
         }
 
-        private static int g(jt.q qVar) {
-            int q10 = qVar.q(g0.F);
-            if (q10 != Integer.MIN_VALUE) {
-                return q10;
+        private static int j(kt.q qVar) {
+            int t10 = qVar.t(g0.F);
+            if (t10 != Integer.MIN_VALUE) {
+                return t10;
             }
-            int q11 = qVar.q(g0.D);
-            if (q11 == 0) {
+            int t11 = qVar.t(g0.D);
+            if (t11 == 0) {
                 return -1;
             }
             int i10 = 0;
-            if (q11 == 24) {
+            if (t11 == 24) {
                 return 0;
             }
-            if (q11 != Integer.MIN_VALUE) {
-                return q11;
+            if (t11 != Integer.MIN_VALUE) {
+                return t11;
             }
             d1 d1Var = g0.B;
-            if (qVar.o(d1Var)) {
-                z zVar = (z) qVar.p(d1Var);
-                int q12 = qVar.q(g0.C);
-                if (q12 != Integer.MIN_VALUE) {
-                    if (q12 == 0) {
+            if (qVar.s(d1Var)) {
+                z zVar = (z) qVar.v(d1Var);
+                int t12 = qVar.t(g0.C);
+                if (t12 != Integer.MIN_VALUE) {
+                    if (t12 == 0) {
                         if (zVar == z.AM) {
                             return -1;
                         }
                         return -2;
                     }
-                    if (q12 != 12) {
-                        i10 = q12;
+                    if (t12 != 12) {
+                        i10 = t12;
                     }
                     if (zVar == z.AM) {
                         return i10;
                     }
                     return i10 + 12;
                 }
-                int q13 = qVar.q(g0.E);
-                if (q13 != Integer.MIN_VALUE) {
+                int t13 = qVar.t(g0.E);
+                if (t13 != Integer.MIN_VALUE) {
                     if (zVar == z.AM) {
-                        return q13;
+                        return t13;
                     }
-                    return q13 + 12;
+                    return t13 + 12;
                 }
             }
             return Integer.MIN_VALUE;
         }
 
-        private static g0 i(jt.q qVar) {
+        private static g0 k(kt.q qVar) {
             int i10;
             int i11;
             int i12;
             l0 l0Var = g0.Q;
-            if (qVar.o(l0Var)) {
-                long longValue = ((Long) qVar.p(l0Var)).longValue();
+            if (qVar.s(l0Var)) {
+                long longValue = ((Long) qVar.v(l0Var)).longValue();
                 if (longValue >= 0 && longValue <= 86400000000000L) {
                     return g0.q0(longValue);
                 }
@@ -996,18 +996,18 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
             }
             l0 l0Var2 = g0.P;
             int i13 = 0;
-            if (qVar.o(l0Var2)) {
+            if (qVar.s(l0Var2)) {
                 l0 l0Var3 = g0.N;
-                if (qVar.o(l0Var3)) {
-                    i13 = ((Integer) qVar.p(l0Var3)).intValue() % 1000;
+                if (qVar.s(l0Var3)) {
+                    i13 = ((Integer) qVar.v(l0Var3)).intValue() % 1000;
                 }
-                return g0.o0(((Long) qVar.p(l0Var2)).longValue(), i13);
+                return g0.o0(((Long) qVar.v(l0Var2)).longValue(), i13);
             }
             l0 l0Var4 = g0.O;
-            if (qVar.o(l0Var4)) {
+            if (qVar.s(l0Var4)) {
                 l0 l0Var5 = g0.N;
-                if (qVar.o(l0Var5)) {
-                    int intValue = ((Integer) qVar.p(l0Var5)).intValue();
+                if (qVar.s(l0Var5)) {
+                    int intValue = ((Integer) qVar.v(l0Var5)).intValue();
                     if (intValue >= 0 && intValue < 1000000000) {
                         i13 = intValue % 1000000;
                     } else {
@@ -1016,8 +1016,8 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                     }
                 } else {
                     l0 l0Var6 = g0.M;
-                    if (qVar.o(l0Var6)) {
-                        int intValue2 = ((Integer) qVar.p(l0Var6)).intValue();
+                    if (qVar.s(l0Var6)) {
+                        int intValue2 = ((Integer) qVar.v(l0Var6)).intValue();
                         if (intValue2 >= 0 && intValue2 < 1000000) {
                             i13 = intValue2 % 1000;
                         } else {
@@ -1026,7 +1026,7 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                         }
                     }
                 }
-                int intValue3 = ((Integer) qVar.p(l0Var4)).intValue();
+                int intValue3 = ((Integer) qVar.v(l0Var4)).intValue();
                 if (intValue3 >= 0 && intValue3 <= 86400000) {
                     return g0.p0(intValue3, i13);
                 }
@@ -1034,133 +1034,138 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                 return null;
             }
             l0 l0Var7 = g0.K;
-            if (qVar.o(l0Var7)) {
+            if (qVar.s(l0Var7)) {
                 l0 l0Var8 = g0.N;
-                if (qVar.o(l0Var8)) {
-                    i12 = ((Integer) qVar.p(l0Var8)).intValue();
+                if (qVar.s(l0Var8)) {
+                    i12 = ((Integer) qVar.v(l0Var8)).intValue();
                 } else {
                     l0 l0Var9 = g0.M;
-                    if (qVar.o(l0Var9)) {
-                        i12 = ((Integer) qVar.p(l0Var9)).intValue() * 1000;
+                    if (qVar.s(l0Var9)) {
+                        i12 = ((Integer) qVar.v(l0Var9)).intValue() * 1000;
                     } else {
                         l0 l0Var10 = g0.L;
-                        if (qVar.o(l0Var10)) {
-                            i12 = ((Integer) qVar.p(l0Var10)).intValue() * 1000000;
+                        if (qVar.s(l0Var10)) {
+                            i12 = ((Integer) qVar.v(l0Var10)).intValue() * 1000000;
                         } else {
                             i12 = 0;
                         }
                     }
                 }
-                return (g0) g0.J0(0, 0, 0, i12).E(l0Var7, qVar.p(l0Var7));
+                return (g0) g0.J0(0, 0, 0, i12).E(l0Var7, qVar.v(l0Var7));
             }
             l0 l0Var11 = g0.I;
-            if (!qVar.o(l0Var11)) {
+            if (!qVar.s(l0Var11)) {
                 return null;
             }
             l0 l0Var12 = g0.N;
-            if (qVar.o(l0Var12)) {
-                i10 = ((Integer) qVar.p(l0Var12)).intValue();
+            if (qVar.s(l0Var12)) {
+                i10 = ((Integer) qVar.v(l0Var12)).intValue();
             } else {
                 l0 l0Var13 = g0.M;
-                if (qVar.o(l0Var13)) {
-                    i10 = ((Integer) qVar.p(l0Var13)).intValue() * 1000;
+                if (qVar.s(l0Var13)) {
+                    i10 = ((Integer) qVar.v(l0Var13)).intValue() * 1000;
                 } else {
                     l0 l0Var14 = g0.L;
-                    if (qVar.o(l0Var14)) {
-                        i10 = ((Integer) qVar.p(l0Var14)).intValue() * 1000000;
+                    if (qVar.s(l0Var14)) {
+                        i10 = ((Integer) qVar.v(l0Var14)).intValue() * 1000000;
                     } else {
                         i10 = 0;
                     }
                 }
             }
             l0 l0Var15 = g0.J;
-            if (qVar.o(l0Var15)) {
-                i11 = ((Integer) qVar.p(l0Var15)).intValue();
+            if (qVar.s(l0Var15)) {
+                i11 = ((Integer) qVar.v(l0Var15)).intValue();
             } else {
                 i11 = 0;
             }
-            return (g0) g0.J0(0, 0, i11, i10).E(l0Var11, qVar.p(l0Var11));
+            return (g0) g0.J0(0, 0, i11, i10).E(l0Var11, qVar.v(l0Var11));
         }
 
-        @Override // jt.u
-        public jt.f0 a() {
-            return jt.f0.f32758a;
+        @Override // kt.u
+        public kt.f0 a() {
+            return kt.f0.f36677a;
         }
 
-        @Override // jt.u
-        public jt.x b() {
+        @Override // kt.u
+        public kt.x b() {
             return null;
         }
 
-        @Override // jt.u
+        @Override // kt.u
+        public int c() {
+            return f0.r0().c();
+        }
+
+        @Override // kt.u
         /* renamed from: d */
-        public g0 j(jt.q qVar, jt.d dVar, boolean z10, boolean z11) {
-            if (qVar instanceof gt.f) {
-                return ((i0) i0.S().j(qVar, dVar, z10, z11)).X();
+        public g0 h(kt.q qVar, kt.d dVar, boolean z10, boolean z11) {
+            if (qVar instanceof ht.f) {
+                return ((i0) i0.S().h(qVar, dVar, z10, z11)).X();
             }
-            jt.p pVar = g0.f40622z;
-            if (qVar.o(pVar)) {
-                return (g0) qVar.p(pVar);
+            kt.p pVar = g0.f40485z;
+            if (qVar.s(pVar)) {
+                return (g0) qVar.v(pVar);
             }
             d1 d1Var = g0.R;
-            if (qVar.o(d1Var)) {
-                return g0.L0((BigDecimal) qVar.p(d1Var));
+            if (qVar.s(d1Var)) {
+                return g0.L0((BigDecimal) qVar.v(d1Var));
             }
-            int q10 = qVar.q(g0.G);
-            if (q10 == Integer.MIN_VALUE) {
-                q10 = g(qVar);
-                if (q10 == Integer.MIN_VALUE) {
-                    return i(qVar);
+            int t10 = qVar.t(g0.G);
+            if (t10 == Integer.MIN_VALUE) {
+                t10 = j(qVar);
+                if (t10 == Integer.MIN_VALUE) {
+                    return k(qVar);
                 }
-                if (q10 != -1 && q10 != -2) {
-                    if (q10 == 24 && !z10) {
+                if (t10 != -1 && t10 != -2) {
+                    if (t10 == 24 && !z10) {
                         e(qVar, "Time 24:00 not allowed, use lax mode or element HOUR_FROM_0_TO_24 instead.");
                         return null;
                     }
                 } else if (z10) {
-                    q10 = q10 == -1 ? 0 : 12;
+                    t10 = t10 == -1 ? 0 : 12;
                 } else {
                     e(qVar, "Clock hour cannot be zero.");
                     return null;
                 }
             }
             d1 d1Var2 = g0.S;
-            if (qVar.o(d1Var2)) {
-                return (g0) g0.X.w(g0.G0(q10), qVar.p(d1Var2), false);
+            if (qVar.s(d1Var2)) {
+                return (g0) g0.X.v(g0.G0(t10), qVar.v(d1Var2), false);
             }
-            int q11 = qVar.q(g0.H);
-            if (q11 == Integer.MIN_VALUE) {
-                q11 = 0;
+            int t11 = qVar.t(g0.H);
+            if (t11 == Integer.MIN_VALUE) {
+                t11 = 0;
             }
             d1 d1Var3 = g0.T;
-            if (qVar.o(d1Var3)) {
-                return (g0) g0.Y.w(g0.H0(q10, q11), qVar.p(d1Var3), false);
+            if (qVar.s(d1Var3)) {
+                return (g0) g0.Y.v(g0.H0(t10, t11), qVar.v(d1Var3), false);
             }
-            int q12 = qVar.q(g0.J);
-            if (q12 == Integer.MIN_VALUE) {
-                q12 = 0;
+            int t12 = qVar.t(g0.J);
+            if (t12 == Integer.MIN_VALUE) {
+                t12 = 0;
             }
-            int q13 = qVar.q(g0.N);
-            if (q13 == Integer.MIN_VALUE) {
-                int q14 = qVar.q(g0.M);
-                if (q14 == Integer.MIN_VALUE) {
-                    int q15 = qVar.q(g0.L);
-                    if (q15 == Integer.MIN_VALUE) {
-                        q13 = 0;
+            int t13 = qVar.t(g0.N);
+            if (t13 == Integer.MIN_VALUE) {
+                int t14 = qVar.t(g0.M);
+                if (t14 == Integer.MIN_VALUE) {
+                    int t15 = qVar.t(g0.L);
+                    if (t15 == Integer.MIN_VALUE) {
+                        t13 = 0;
                     } else {
-                        q13 = gt.c.h(q15, 1000000);
+                        t13 = ht.c.h(t15, 1000000);
                     }
                 } else {
-                    q13 = gt.c.h(q14, 1000);
+                    t13 = ht.c.h(t14, 1000);
                 }
             }
             if (z10) {
-                long f10 = gt.c.f(gt.c.i(gt.c.f(gt.c.f(gt.c.i(q10, 3600L), gt.c.i(q11, 60L)), q12), 1000000000L), q13);
+                long f10 = ht.c.f(ht.c.i(ht.c.f(ht.c.f(ht.c.i(t10, 3600L), ht.c.i(t11, 60L)), t12), 1000000000L), t13);
                 long t02 = g0.t0(f10, 86400000000000L);
                 long s02 = g0.s0(f10, 86400000000000L);
                 int i10 = (s02 > 0L ? 1 : (s02 == 0L ? 0 : -1));
                 if (i10 != 0) {
-                    jt.p pVar2 = x.f40930r;
+                    kt.p pVar2 = x.f40793r;
                     if (qVar.A(pVar2, s02)) {
                         qVar.D(pVar2, s02);
                     }
@@ -1168,83 +1173,78 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                 if (t02 != 0 || i10 <= 0) {
                     return g0.q0(t02);
                 }
-                return g0.f40621y;
-            } else if ((q10 >= 0 && q11 >= 0 && q12 >= 0 && q13 >= 0 && q10 == 24 && (q11 | q12 | q13) == 0) || (q10 < 24 && q11 <= 59 && q12 <= 59 && q13 <= 1000000000)) {
-                return g0.K0(q10, q11, q12, q13, false);
+                return g0.f40484y;
+            } else if ((t10 >= 0 && t11 >= 0 && t12 >= 0 && t13 >= 0 && t10 == 24 && (t11 | t12 | t13) == 0) || (t10 < 24 && t11 <= 59 && t12 <= 59 && t13 <= 1000000000)) {
+                return g0.K0(t10, t11, t12, t13, false);
             } else {
                 e(qVar, "Time component out of range.");
                 return null;
             }
         }
 
-        @Override // jt.u
-        public int h() {
-            return f0.r0().h();
-        }
-
-        @Override // jt.u
-        public String k(jt.y yVar, Locale locale) {
-            return kt.b.t(kt.e.d(yVar.a()), locale);
+        @Override // kt.u
+        public String g(kt.y yVar, Locale locale) {
+            return lt.b.t(lt.e.d(yVar.a()), locale);
         }
 
         /* synthetic */ f(a aVar) {
             this();
         }
 
-        @Override // jt.u
+        @Override // kt.u
         /* renamed from: f */
-        public jt.o c(g0 g0Var, jt.d dVar) {
+        public kt.o i(g0 g0Var, kt.d dVar) {
             return g0Var;
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class g implements jt.z {
+    private static class g implements kt.z {
         private g() {
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: b */
-        public jt.p a(g0 g0Var) {
+        public kt.p a(g0 g0Var) {
             return g0.E;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: c */
-        public jt.p h(g0 g0Var) {
+        public kt.p g(g0 g0Var) {
             return g0.E;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: d */
-        public z j(g0 g0Var) {
+        public z h(g0 g0Var) {
             return z.PM;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: e */
-        public z p(g0 g0Var) {
+        public z o(g0 g0Var) {
             return z.AM;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: f */
         public z x(g0 g0Var) {
-            return z.e(g0Var.f40623d);
+            return z.e(g0Var.f40486d);
         }
 
-        @Override // jt.z
-        /* renamed from: g */
+        @Override // kt.z
+        /* renamed from: j */
         public boolean l(g0 g0Var, z zVar) {
             return zVar != null;
         }
 
-        @Override // jt.z
-        /* renamed from: i */
-        public g0 w(g0 g0Var, z zVar, boolean z10) {
+        @Override // kt.z
+        /* renamed from: k */
+        public g0 v(g0 g0Var, z zVar, boolean z10) {
             int i10;
-            if (g0Var.f40623d != 24) {
-                i10 = g0Var.f40623d;
+            if (g0Var.f40486d != 24) {
+                i10 = g0Var.f40486d;
             } else {
                 i10 = 0;
             }
@@ -1256,7 +1256,7 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                 } else if (zVar == z.PM && i10 < 12) {
                     i10 += 12;
                 }
-                return g0.J0(i10, g0Var.f40624e, g0Var.f40625i, g0Var.f40626o);
+                return g0.J0(i10, g0Var.f40487e, g0Var.f40488i, g0Var.f40489o);
             }
             throw new IllegalArgumentException("Missing am/pm-value.");
         }
@@ -1267,77 +1267,77 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class h implements jt.z {
+    private static class h implements kt.z {
         private h() {
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: b */
-        public jt.p a(g0 g0Var) {
+        public kt.p a(g0 g0Var) {
             return null;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: c */
-        public jt.p h(g0 g0Var) {
+        public kt.p g(g0 g0Var) {
             return null;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: d */
-        public net.time4j.g j(g0 g0Var) {
-            return net.time4j.g.f40609q;
+        public net.time4j.g h(g0 g0Var) {
+            return net.time4j.g.f40472q;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: e */
-        public net.time4j.g p(g0 g0Var) {
-            return net.time4j.g.f40604d;
+        public net.time4j.g o(g0 g0Var) {
+            return net.time4j.g.f40467d;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: f */
         public net.time4j.g x(g0 g0Var) {
-            if (g0Var.f40626o != 0) {
-                if (g0Var.f40626o % 1000000 == 0) {
-                    return net.time4j.g.f40607o;
+            if (g0Var.f40489o != 0) {
+                if (g0Var.f40489o % 1000000 == 0) {
+                    return net.time4j.g.f40470o;
                 }
-                if (g0Var.f40626o % 1000 == 0) {
-                    return net.time4j.g.f40608p;
+                if (g0Var.f40489o % 1000 == 0) {
+                    return net.time4j.g.f40471p;
                 }
-                return net.time4j.g.f40609q;
-            } else if (g0Var.f40625i != 0) {
-                return net.time4j.g.f40606i;
+                return net.time4j.g.f40472q;
+            } else if (g0Var.f40488i != 0) {
+                return net.time4j.g.f40469i;
             } else {
-                if (g0Var.f40624e != 0) {
-                    return net.time4j.g.f40605e;
+                if (g0Var.f40487e != 0) {
+                    return net.time4j.g.f40468e;
                 }
-                return net.time4j.g.f40604d;
+                return net.time4j.g.f40467d;
             }
         }
 
-        @Override // jt.z
-        /* renamed from: g */
+        @Override // kt.z
+        /* renamed from: j */
         public boolean l(g0 g0Var, net.time4j.g gVar) {
             return gVar != null;
         }
 
-        @Override // jt.z
-        /* renamed from: i */
-        public g0 w(g0 g0Var, net.time4j.g gVar, boolean z10) {
+        @Override // kt.z
+        /* renamed from: k */
+        public g0 v(g0 g0Var, net.time4j.g gVar, boolean z10) {
             if (gVar != null) {
                 if (gVar.ordinal() < x(g0Var).ordinal()) {
-                    switch (a.f40627a[gVar.ordinal()]) {
+                    switch (a.f40490a[gVar.ordinal()]) {
                         case 1:
-                            return g0.G0(g0Var.f40623d);
+                            return g0.G0(g0Var.f40486d);
                         case 2:
-                            return g0.H0(g0Var.f40623d, g0Var.f40624e);
+                            return g0.H0(g0Var.f40486d, g0Var.f40487e);
                         case 3:
-                            return g0.I0(g0Var.f40623d, g0Var.f40624e, g0Var.f40625i);
+                            return g0.I0(g0Var.f40486d, g0Var.f40487e, g0Var.f40488i);
                         case 4:
-                            return g0.J0(g0Var.f40623d, g0Var.f40624e, g0Var.f40625i, (g0Var.f40626o / 1000000) * 1000000);
+                            return g0.J0(g0Var.f40486d, g0Var.f40487e, g0Var.f40488i, (g0Var.f40489o / 1000000) * 1000000);
                         case 5:
-                            return g0.J0(g0Var.f40623d, g0Var.f40624e, g0Var.f40625i, (g0Var.f40626o / 1000) * 1000);
+                            return g0.J0(g0Var.f40486d, g0Var.f40487e, g0Var.f40488i, (g0Var.f40489o / 1000) * 1000);
                         case 6:
                             break;
                         default:
@@ -1355,49 +1355,49 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    private static class i implements jt.z {
+    private static class i implements kt.z {
         private i() {
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: b */
-        public jt.p a(g0 g0Var) {
+        public kt.p a(g0 g0Var) {
             return null;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: c */
-        public jt.p h(g0 g0Var) {
+        public kt.p g(g0 g0Var) {
             return null;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: d */
-        public g0 j(g0 g0Var) {
-            return g0.f40621y;
+        public g0 h(g0 g0Var) {
+            return g0.f40484y;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: e */
-        public g0 p(g0 g0Var) {
-            return g0.f40620x;
+        public g0 o(g0 g0Var) {
+            return g0.f40483x;
         }
 
-        @Override // jt.z
+        @Override // kt.z
         /* renamed from: f */
         public g0 x(g0 g0Var) {
             return g0Var;
         }
 
-        @Override // jt.z
-        /* renamed from: g */
+        @Override // kt.z
+        /* renamed from: j */
         public boolean l(g0 g0Var, g0 g0Var2) {
             return g0Var2 != null;
         }
 
-        @Override // jt.z
-        /* renamed from: i */
-        public g0 w(g0 g0Var, g0 g0Var2, boolean z10) {
+        @Override // kt.z
+        /* renamed from: k */
+        public g0 v(g0 g0Var, g0 g0Var2, boolean z10) {
             if (g0Var2 != null) {
                 return g0Var2;
             }
@@ -1416,24 +1416,24 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
         } else {
             c10 = ',';
         }
-        f40612p = c10;
-        f40613q = new BigDecimal(60);
-        f40614r = new BigDecimal(3600);
-        f40615s = new BigDecimal(1000000000);
-        f40616t = new BigDecimal("24");
-        f40617u = new BigDecimal("23.999999999999999");
-        f40618v = new BigDecimal("59.999999999999999");
-        f40619w = new g0[25];
+        f40475p = c10;
+        f40476q = new BigDecimal(60);
+        f40477r = new BigDecimal(3600);
+        f40478s = new BigDecimal(1000000000);
+        f40479t = new BigDecimal("24");
+        f40480u = new BigDecimal("23.999999999999999");
+        f40481v = new BigDecimal("59.999999999999999");
+        f40482w = new g0[25];
         for (int i10 = 0; i10 <= 24; i10++) {
-            f40619w[i10] = new g0(i10, 0, 0, 0, false);
+            f40482w[i10] = new g0(i10, 0, 0, 0, false);
         }
-        g0[] g0VarArr = f40619w;
+        g0[] g0VarArr = f40482w;
         g0 g0Var = g0VarArr[0];
-        f40620x = g0Var;
+        f40483x = g0Var;
         g0 g0Var2 = g0VarArr[24];
-        f40621y = g0Var2;
-        r0 r0Var = r0.f40809d;
-        f40622z = r0Var;
+        f40484y = g0Var2;
+        r0 r0Var = r0.f40672d;
+        f40485z = r0Var;
         A = r0Var;
         net.time4j.d dVar = net.time4j.d.AM_PM_OF_DAY;
         B = dVar;
@@ -1467,14 +1467,14 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
         P = G4;
         x G5 = x.G("NANO_OF_DAY", 0L, 86399999999999L);
         Q = G5;
-        l lVar = new l("DECIMAL_HOUR", f40617u);
+        l lVar = new l("DECIMAL_HOUR", f40480u);
         R = lVar;
-        BigDecimal bigDecimal = f40618v;
+        BigDecimal bigDecimal = f40481v;
         l lVar2 = new l("DECIMAL_MINUTE", bigDecimal);
         S = lVar2;
         l lVar3 = new l("DECIMAL_SECOND", bigDecimal);
         T = lVar3;
-        jt.p pVar = j0.f40730o;
+        kt.p pVar = j0.f40593o;
         U = pVar;
         HashMap hashMap = new HashMap();
         r0(hashMap, r0Var);
@@ -1498,7 +1498,7 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
         r0(hashMap, lVar2);
         r0(hashMap, lVar3);
         V = Collections.unmodifiableMap(hashMap);
-        b bVar = new b(lVar, f40616t);
+        b bVar = new b(lVar, f40479t);
         W = bVar;
         b bVar2 = new b(lVar2, bigDecimal);
         X = bVar2;
@@ -1506,22 +1506,22 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
         Y = bVar3;
         h0.b d10 = h0.b.k(v.class, g0.class, new f(null), g0Var, g0Var2).d(r0Var, new i(null)).d(dVar, new g(null));
         d dVar2 = new d(G2, 1, 12);
-        net.time4j.g gVar = net.time4j.g.f40604d;
+        net.time4j.g gVar = net.time4j.g.f40467d;
         h0.b e10 = d10.e(G2, dVar2, gVar).e(G3, new d(G3, 1, 24), gVar).e(H2, new d(H2, 0, 11), gVar).e(H3, new d(H3, 0, 23), gVar).e(H4, new d(H4, 0, 24), gVar);
         d dVar3 = new d(H5, 0, 59);
-        net.time4j.g gVar2 = net.time4j.g.f40605e;
+        net.time4j.g gVar2 = net.time4j.g.f40468e;
         h0.b e11 = e10.e(H5, dVar3, gVar2).e(H6, new d(H6, 0, 1440), gVar2);
         d dVar4 = new d(H7, 0, 59);
-        net.time4j.g gVar3 = net.time4j.g.f40606i;
+        net.time4j.g gVar3 = net.time4j.g.f40469i;
         h0.b e12 = e11.e(H7, dVar4, gVar3).e(H8, new d(H8, 0, 86400), gVar3);
         d dVar5 = new d(H9, 0, 999);
-        net.time4j.g gVar4 = net.time4j.g.f40607o;
+        net.time4j.g gVar4 = net.time4j.g.f40470o;
         h0.b e13 = e12.e(H9, dVar5, gVar4);
         d dVar6 = new d(H10, 0, 999999);
-        net.time4j.g gVar5 = net.time4j.g.f40608p;
+        net.time4j.g gVar5 = net.time4j.g.f40471p;
         h0.b e14 = e13.e(H10, dVar6, gVar5);
         d dVar7 = new d(H11, 0, 999999999);
-        net.time4j.g gVar6 = net.time4j.g.f40609q;
+        net.time4j.g gVar6 = net.time4j.g.f40472q;
         h0.b d11 = e14.e(H11, dVar7, gVar6).e(H12, new d(H12, 0, 86400000), gVar4).e(G4, new e(G4, 0L, 86400000000L), gVar5).e(G5, new e(G5, 0L, 86400000000000L), gVar6).d(lVar, bVar).d(lVar2, bVar2).d(lVar3, bVar3).d(pVar, new h(null));
         N0(d11);
         O0(d11);
@@ -1538,15 +1538,15 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
                 throw new IllegalArgumentException("T24:00:00 exceeded.");
             }
         }
-        this.f40623d = (byte) i10;
-        this.f40624e = (byte) i11;
-        this.f40625i = (byte) i12;
-        this.f40626o = i13;
+        this.f40486d = (byte) i10;
+        this.f40487e = (byte) i11;
+        this.f40488i = (byte) i12;
+        this.f40489o = i13;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean A0() {
-        if ((this.f40625i | this.f40626o) == 0) {
+        if ((this.f40488i | this.f40489o) == 0) {
             return true;
         }
         return false;
@@ -1558,16 +1558,16 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
     }
 
     public static g0 E0() {
-        return f40621y;
+        return f40484y;
     }
 
     public static g0 F0() {
-        return f40620x;
+        return f40483x;
     }
 
     public static g0 G0(int i10) {
         j0(i10);
-        return f40619w[i10];
+        return f40482w[i10];
     }
 
     public static g0 H0(int i10, int i11) {
@@ -1594,19 +1594,19 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
             if (z10) {
                 return G0(i10);
             }
-            return f40619w[i10];
+            return f40482w[i10];
         }
         return new g0(i10, i11, i12, i13, z10);
     }
 
     public static g0 L0(BigDecimal bigDecimal) {
-        return (g0) W.w(null, bigDecimal, false);
+        return (g0) W.v(null, bigDecimal, false);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void M0(StringBuilder sb2, int i10) {
         int i11;
-        sb2.append(f40612p);
+        sb2.append(f40475p);
         String num = Integer.toString(i10);
         if (i10 % 1000000 == 0) {
             i11 = 3;
@@ -1625,8 +1625,8 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
     }
 
     private static void N0(h0.b bVar) {
-        for (jt.s sVar : gt.d.c().g(jt.s.class)) {
-            if (sVar.b(g0.class)) {
+        for (kt.s sVar : ht.d.c().g(kt.s.class)) {
+            if (sVar.d(g0.class)) {
                 bVar.f(sVar);
             }
         }
@@ -1648,7 +1648,7 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
         sb2.append(i10);
     }
 
-    public static jt.h0 i0() {
+    public static kt.h0 i0() {
         return Z;
     }
 
@@ -1709,7 +1709,7 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
         return J0(i12 / 60, i13, i11, (int) (j10 % 1000000000));
     }
 
-    private static void r0(Map map, jt.p pVar) {
+    private static void r0(Map map, kt.p pVar) {
         map.put(pVar.name(), pVar);
     }
 
@@ -1738,7 +1738,7 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
 
     /* JADX INFO: Access modifiers changed from: private */
     public long v0() {
-        return this.f40626o + (this.f40625i * 1000000000) + (this.f40624e * 60000000000L) + (this.f40623d * 3600000000000L);
+        return this.f40489o + (this.f40488i * 1000000000) + (this.f40487e * 60000000000L) + (this.f40486d * 3600000000000L);
     }
 
     private Object writeReplace() {
@@ -1747,14 +1747,14 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean z0() {
-        if ((this.f40624e | this.f40625i | this.f40626o) == 0) {
+        if ((this.f40487e | this.f40488i | this.f40489o) == 0) {
             return true;
         }
         return false;
     }
 
     public boolean B0() {
-        if (z0() && this.f40623d % 24 == 0) {
+        if (z0() && this.f40486d % 24 == 0) {
             return true;
         }
         return false;
@@ -1768,9 +1768,9 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // jt.q
+    @Override // kt.q
     /* renamed from: H */
-    public jt.h0 w() {
+    public kt.h0 w() {
         return Z;
     }
 
@@ -1778,19 +1778,19 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
         return c.e(this, j10, gVar);
     }
 
-    @Override // gt.g
+    @Override // ht.g
     public int a() {
-        return this.f40626o;
+        return this.f40489o;
     }
 
-    @Override // gt.g
+    @Override // ht.g
     public int d() {
-        return this.f40625i;
+        return this.f40488i;
     }
 
-    @Override // gt.g
+    @Override // ht.g
     public int e() {
-        return this.f40624e;
+        return this.f40487e;
     }
 
     public boolean equals(Object obj) {
@@ -1799,28 +1799,28 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
         }
         if (obj instanceof g0) {
             g0 g0Var = (g0) obj;
-            if (this.f40623d == g0Var.f40623d && this.f40624e == g0Var.f40624e && this.f40625i == g0Var.f40625i && this.f40626o == g0Var.f40626o) {
+            if (this.f40486d == g0Var.f40486d && this.f40487e == g0Var.f40487e && this.f40488i == g0Var.f40488i && this.f40489o == g0Var.f40489o) {
                 return true;
             }
         }
         return false;
     }
 
-    @Override // gt.g
+    @Override // ht.g
     public int h() {
-        return this.f40623d;
+        return this.f40486d;
     }
 
     public int hashCode() {
-        return this.f40623d + (this.f40624e * 60) + (this.f40625i * 3600) + (this.f40626o * 37);
+        return this.f40486d + (this.f40487e * 60) + (this.f40488i * 3600) + (this.f40489o * 37);
     }
 
     @Override // java.lang.Comparable
     /* renamed from: n0 */
     public int compareTo(g0 g0Var) {
-        int i10 = this.f40623d - g0Var.f40623d;
-        if (i10 == 0 && (i10 = this.f40624e - g0Var.f40624e) == 0 && (i10 = this.f40625i - g0Var.f40625i) == 0) {
-            i10 = this.f40626o - g0Var.f40626o;
+        int i10 = this.f40486d - g0Var.f40486d;
+        if (i10 == 0 && (i10 = this.f40487e - g0Var.f40487e) == 0 && (i10 = this.f40488i - g0Var.f40488i) == 0) {
+            i10 = this.f40489o - g0Var.f40489o;
         }
         if (i10 < 0) {
             return -1;
@@ -1834,14 +1834,14 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
     public String toString() {
         StringBuilder sb2 = new StringBuilder(19);
         sb2.append('T');
-        h0(this.f40623d, sb2);
-        if ((this.f40624e | this.f40625i | this.f40626o) != 0) {
+        h0(this.f40486d, sb2);
+        if ((this.f40487e | this.f40488i | this.f40489o) != 0) {
             sb2.append(':');
-            h0(this.f40624e, sb2);
-            if ((this.f40625i | this.f40626o) != 0) {
+            h0(this.f40487e, sb2);
+            if ((this.f40488i | this.f40489o) != 0) {
                 sb2.append(':');
-                h0(this.f40625i, sb2);
-                int i10 = this.f40626o;
+                h0(this.f40488i, sb2);
+                int i10 = this.f40489o;
                 if (i10 != 0) {
                     M0(sb2, i10);
                 }
@@ -1851,19 +1851,19 @@ public final class g0 extends jt.k0 implements gt.g, kt.h {
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
-    @Override // jt.q
+    @Override // kt.q
     /* renamed from: u0 */
     public g0 x() {
         return this;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
-    public boolean w0(jt.p pVar) {
-        if (pVar != O || this.f40626o % 1000000 == 0) {
+    public boolean w0(kt.p pVar) {
+        if (pVar != O || this.f40489o % 1000000 == 0) {
             if (pVar != G || z0()) {
                 if (pVar != I || A0()) {
-                    if (pVar != K || this.f40626o == 0) {
-                        if (pVar == P && this.f40626o % 1000 != 0) {
+                    if (pVar != K || this.f40489o == 0) {
+                        if (pVar == P && this.f40489o % 1000 != 0) {
                             return true;
                         }
                         return false;

@@ -4,10 +4,10 @@ package di;
 public final class q implements ei.i {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ a f22190a;
+    final /* synthetic */ a f21766a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q(a aVar) {
-        this.f22190a = aVar;
+        this.f21766a = aVar;
     }
 }

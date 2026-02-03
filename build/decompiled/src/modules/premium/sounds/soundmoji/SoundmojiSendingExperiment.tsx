@@ -110,4 +110,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSoundmojiEmojiPickerSectionExperiment = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 3076, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 3106, 2]);

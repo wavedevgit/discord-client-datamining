@@ -14,10 +14,10 @@ public final class FqName {
     public static final FqName ROOT = new FqName("");
 
     /* renamed from: a  reason: collision with root package name */
-    private final FqNameUnsafe f35117a;
+    private final FqNameUnsafe f34893a;
 
     /* renamed from: b  reason: collision with root package name */
-    private transient FqName f35118b;
+    private transient FqName f34894b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -37,47 +37,47 @@ public final class FqName {
 
     public FqName(@NotNull String fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        this.f35117a = new FqNameUnsafe(fqName, this);
+        this.f34893a = new FqNameUnsafe(fqName, this);
     }
 
     @NotNull
     public final String asString() {
-        return this.f35117a.asString();
+        return this.f34893a.asString();
     }
 
     @NotNull
     public final FqName child(@NotNull Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return new FqName(this.f35117a.child(name), this);
+        return new FqName(this.f34893a.child(name), this);
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof FqName) && Intrinsics.areEqual(this.f35117a, ((FqName) obj).f35117a)) {
+        if ((obj instanceof FqName) && Intrinsics.areEqual(this.f34893a, ((FqName) obj).f34893a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f35117a.hashCode();
+        return this.f34893a.hashCode();
     }
 
     public final boolean isRoot() {
-        return this.f35117a.isRoot();
+        return this.f34893a.isRoot();
     }
 
     @NotNull
     public final FqName parent() {
-        FqName fqName = this.f35118b;
+        FqName fqName = this.f34894b;
         if (fqName != null) {
             return fqName;
         }
         if (!isRoot()) {
-            FqName fqName2 = new FqName(this.f35117a.parent());
-            this.f35118b = fqName2;
+            FqName fqName2 = new FqName(this.f34893a.parent());
+            this.f34894b = fqName2;
             return fqName2;
         }
         throw new IllegalStateException("root");
@@ -85,41 +85,41 @@ public final class FqName {
 
     @NotNull
     public final List<Name> pathSegments() {
-        return this.f35117a.pathSegments();
+        return this.f34893a.pathSegments();
     }
 
     @NotNull
     public final Name shortName() {
-        return this.f35117a.shortName();
+        return this.f34893a.shortName();
     }
 
     @NotNull
     public final Name shortNameOrSpecial() {
-        return this.f35117a.shortNameOrSpecial();
+        return this.f34893a.shortNameOrSpecial();
     }
 
     public final boolean startsWith(@NotNull Name segment) {
         Intrinsics.checkNotNullParameter(segment, "segment");
-        return this.f35117a.startsWith(segment);
+        return this.f34893a.startsWith(segment);
     }
 
     @NotNull
     public String toString() {
-        return this.f35117a.toString();
+        return this.f34893a.toString();
     }
 
     @NotNull
     public final FqNameUnsafe toUnsafe() {
-        return this.f35117a;
+        return this.f34893a;
     }
 
     public FqName(@NotNull FqNameUnsafe fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        this.f35117a = fqName;
+        this.f34893a = fqName;
     }
 
     private FqName(FqNameUnsafe fqNameUnsafe, FqName fqName) {
-        this.f35117a = fqNameUnsafe;
-        this.f35118b = fqName;
+        this.f34893a = fqNameUnsafe;
+        this.f34894b = fqName;
     }
 }

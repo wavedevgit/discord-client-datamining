@@ -1,41 +1,41 @@
 package kotlinx.coroutines;
 
-import gs.j0;
-import gs.k0;
-import gs.u1;
+import hs.j0;
+import hs.k0;
+import hs.u1;
 import java.util.concurrent.CancellationException;
 import kotlin.Result;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.CoroutineContext;
 import kotlin.jvm.internal.Intrinsics;
-import ls.l0;
+import ms.l0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public abstract class m extends ns.h {
+public abstract class m extends os.h {
 
     /* renamed from: i  reason: collision with root package name */
-    public int f36359i;
+    public int f36135i;
 
     public m(int i10) {
-        this.f36359i = i10;
+        this.f36135i = i10;
     }
 
-    public void b(Object obj, Throwable th2) {
+    public void d(Object obj, Throwable th2) {
     }
 
     public abstract Continuation h();
 
     public Throwable i(Object obj) {
-        gs.r rVar;
-        if (obj instanceof gs.r) {
-            rVar = (gs.r) obj;
+        hs.r rVar;
+        if (obj instanceof hs.r) {
+            rVar = (hs.r) obj;
         } else {
             rVar = null;
         }
         if (rVar == null) {
             return null;
         }
-        return rVar.f27194a;
+        return rVar.f27941a;
     }
 
     public Object j(Object obj) {
@@ -43,7 +43,7 @@ public abstract class m extends ns.h {
     }
 
     public final void k(Throwable th2) {
-        gs.a0.a(h().getContext(), new gs.d0("Fatal exception in coroutines machinery for " + this + ". Please read KDoc to 'handleFatalException' method and report this incident to maintainers", th2));
+        hs.a0.a(h().getContext(), new hs.d0("Fatal exception in coroutines machinery for " + this + ". Please read KDoc to 'handleFatalException' method and report this incident to maintainers", th2));
     }
 
     public abstract Object l();
@@ -54,50 +54,43 @@ public abstract class m extends ns.h {
         try {
             Continuation h10 = h();
             Intrinsics.checkNotNull(h10, "null cannot be cast to non-null type kotlinx.coroutines.internal.DispatchedContinuation<T of kotlinx.coroutines.DispatchedTask>");
-            ls.i iVar = (ls.i) h10;
-            Continuation continuation = iVar.f37461p;
-            Object obj = iVar.f37463r;
+            ms.i iVar = (ms.i) h10;
+            Continuation continuation = iVar.f39161p;
+            Object obj = iVar.f39163r;
             CoroutineContext context = continuation.getContext();
             Object i10 = l0.i(context, obj);
             Job job = null;
-            if (i10 != l0.f37475a) {
-                u1Var = gs.x.m(continuation, context, i10);
+            if (i10 != l0.f39175a) {
+                u1Var = hs.x.m(continuation, context, i10);
             } else {
                 u1Var = null;
             }
-            try {
-                CoroutineContext context2 = continuation.getContext();
-                Object l10 = l();
-                Throwable i11 = i(l10);
-                if (i11 == null && k0.b(this.f36359i)) {
-                    job = (Job) context2.l(Job.f36307j);
-                }
-                if (job != null && !job.a()) {
-                    CancellationException N = job.N();
-                    b(l10, N);
-                    Result.a aVar = Result.f33295e;
-                    continuation.resumeWith(Result.b(kotlin.c.a(N)));
-                } else if (i11 != null) {
-                    Result.a aVar2 = Result.f33295e;
-                    continuation.resumeWith(Result.b(kotlin.c.a(i11)));
-                } else {
-                    Result.a aVar3 = Result.f33295e;
-                    continuation.resumeWith(Result.b(j(l10)));
-                }
-                Unit unit = Unit.f33298a;
-                if (u1Var == null || u1Var.Z0()) {
-                    l0.f(context, i10);
-                }
-            } catch (Throwable th2) {
-                if (u1Var == null || u1Var.Z0()) {
-                    l0.f(context, i10);
-                }
-                throw th2;
+            CoroutineContext context2 = continuation.getContext();
+            Object l10 = l();
+            Throwable i11 = i(l10);
+            if (i11 == null && k0.b(this.f36135i)) {
+                job = (Job) context2.l(Job.f36083j);
+            }
+            if (job != null && !job.a()) {
+                CancellationException N = job.N();
+                d(l10, N);
+                Result.a aVar = Result.f33071e;
+                continuation.resumeWith(Result.b(kotlin.c.a(N)));
+            } else if (i11 != null) {
+                Result.a aVar2 = Result.f33071e;
+                continuation.resumeWith(Result.b(kotlin.c.a(i11)));
+            } else {
+                Result.a aVar3 = Result.f33071e;
+                continuation.resumeWith(Result.b(j(l10)));
+            }
+            Unit unit = Unit.f33074a;
+            if (u1Var == null || u1Var.X0()) {
+                l0.f(context, i10);
             }
         } catch (j0 e10) {
-            gs.a0.a(h().getContext(), e10.getCause());
-        } catch (Throwable th3) {
-            k(th3);
+            hs.a0.a(h().getContext(), e10.getCause());
+        } catch (Throwable th2) {
+            k(th2);
         }
     }
 }

@@ -1,115 +1,108 @@
 package eu;
 
-import android.util.Log;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.concurrent.CopyOnWriteArraySet;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import kotlin.collections.o0;
+import java.security.KeyStore;
+import java.security.Provider;
+import java.util.Arrays;
+import java.util.List;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.TrustManagerFactory;
+import javax.net.ssl.X509TrustManager;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
-import kotlin.text.StringsKt;
-import okhttp3.OkHttpClient;
+import org.bouncycastle.jsse.provider.BouncyCastleJsseProvider;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class c {
+public final class c extends h {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final c f24033a = new c();
+    /* renamed from: e  reason: collision with root package name */
+    public static final a f23226e;
 
-    /* renamed from: b  reason: collision with root package name */
-    private static final CopyOnWriteArraySet f24034b = new CopyOnWriteArraySet();
+    /* renamed from: f  reason: collision with root package name */
+    private static final boolean f23227f;
 
-    /* renamed from: c  reason: collision with root package name */
-    private static final Map f24035c;
+    /* renamed from: d  reason: collision with root package name */
+    private final Provider f23228d;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final c a() {
+            if (!b()) {
+                return null;
+            }
+            return new c(null);
+        }
+
+        public final boolean b() {
+            return c.f23227f;
+        }
+
+        private a() {
+        }
+    }
 
     static {
-        String str;
-        LinkedHashMap linkedHashMap = new LinkedHashMap();
-        Package r22 = OkHttpClient.class.getPackage();
-        if (r22 != null) {
-            str = r22.getName();
-        } else {
-            str = null;
+        a aVar = new a(null);
+        f23226e = aVar;
+        boolean z10 = false;
+        try {
+            Class.forName("org.bouncycastle.jsse.provider.BouncyCastleJsseProvider", false, aVar.getClass().getClassLoader());
+            z10 = true;
+        } catch (ClassNotFoundException unused) {
         }
-        if (str != null) {
-            linkedHashMap.put(str, "OkHttp");
+        f23227f = z10;
+    }
+
+    public /* synthetic */ c(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    @Override // eu.h
+    public void e(SSLSocket sslSocket, String str, List protocols) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Intrinsics.checkNotNullParameter(protocols, "protocols");
+        super.e(sslSocket, str, protocols);
+    }
+
+    @Override // eu.h
+    public String h(SSLSocket sslSocket) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        return super.h(sslSocket);
+    }
+
+    @Override // eu.h
+    public SSLContext n() {
+        SSLContext sSLContext = SSLContext.getInstance("TLS", this.f23228d);
+        Intrinsics.checkNotNullExpressionValue(sSLContext, "getInstance(\"TLS\", provider)");
+        return sSLContext;
+    }
+
+    @Override // eu.h
+    public X509TrustManager p() {
+        TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance("PKIX", "BCJSSE");
+        trustManagerFactory.init((KeyStore) null);
+        TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();
+        Intrinsics.checkNotNull(trustManagers);
+        if (trustManagers.length == 1) {
+            TrustManager trustManager = trustManagers[0];
+            if (trustManager instanceof X509TrustManager) {
+                Intrinsics.checkNotNull(trustManager, "null cannot be cast to non-null type javax.net.ssl.X509TrustManager");
+                return (X509TrustManager) trustManager;
+            }
         }
-        String name = OkHttpClient.class.getName();
-        Intrinsics.checkNotNullExpressionValue(name, "OkHttpClient::class.java.name");
-        linkedHashMap.put(name, "okhttp.OkHttpClient");
-        String name2 = bu.e.class.getName();
-        Intrinsics.checkNotNullExpressionValue(name2, "Http2::class.java.name");
-        linkedHashMap.put(name2, "okhttp.Http2");
-        String name3 = xt.e.class.getName();
-        Intrinsics.checkNotNullExpressionValue(name3, "TaskRunner::class.java.name");
-        linkedHashMap.put(name3, "okhttp.TaskRunner");
-        linkedHashMap.put("okhttp3.mockwebserver.MockWebServer", "okhttp.MockWebServer");
-        f24035c = o0.w(linkedHashMap);
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("Unexpected default trust managers: ");
+        String arrays = Arrays.toString(trustManagers);
+        Intrinsics.checkNotNullExpressionValue(arrays, "toString(this)");
+        sb2.append(arrays);
+        throw new IllegalStateException(sb2.toString().toString());
     }
 
     private c() {
-    }
-
-    private final void c(String str, String str2) {
-        Level level;
-        Logger logger = Logger.getLogger(str);
-        if (f24034b.add(logger)) {
-            logger.setUseParentHandlers(false);
-            if (Log.isLoggable(str2, 3)) {
-                level = Level.FINE;
-            } else if (Log.isLoggable(str2, 4)) {
-                level = Level.INFO;
-            } else {
-                level = Level.WARNING;
-            }
-            logger.setLevel(level);
-            logger.addHandler(d.f24036a);
-        }
-    }
-
-    private final String d(String str) {
-        String str2 = (String) f24035c.get(str);
-        if (str2 == null) {
-            return StringsKt.x1(str, 23);
-        }
-        return str2;
-    }
-
-    public final void a(String loggerName, int i10, String message, Throwable th2) {
-        int min;
-        Intrinsics.checkNotNullParameter(loggerName, "loggerName");
-        Intrinsics.checkNotNullParameter(message, "message");
-        String d10 = d(loggerName);
-        if (Log.isLoggable(d10, i10)) {
-            if (th2 != null) {
-                message = message + '\n' + Log.getStackTraceString(th2);
-            }
-            String str = message;
-            int length = str.length();
-            int i11 = 0;
-            while (i11 < length) {
-                int h02 = StringsKt.h0(str, '\n', i11, false, 4, null);
-                if (h02 == -1) {
-                    h02 = length;
-                }
-                while (true) {
-                    min = Math.min(h02, i11 + 4000);
-                    String substring = str.substring(i11, min);
-                    Intrinsics.checkNotNullExpressionValue(substring, "this as java.lang.String…ing(startIndex, endIndex)");
-                    Log.println(i10, d10, substring);
-                    if (min >= h02) {
-                        break;
-                    }
-                    i11 = min;
-                }
-                i11 = min + 1;
-            }
-        }
-    }
-
-    public final void b() {
-        for (Map.Entry entry : f24035c.entrySet()) {
-            c((String) entry.getKey(), (String) entry.getValue());
-        }
+        this.f23228d = new BouncyCastleJsseProvider();
     }
 }

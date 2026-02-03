@@ -1,26 +1,16 @@
 package ds;
 
-import java.util.Map;
-import kotlin.jvm.functions.Function0;
-/* JADX INFO: Access modifiers changed from: package-private */
+import kotlin.jvm.functions.Function1;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class c implements Function0 {
+class c implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f22364d;
+    public static final c f22160d = new c();
 
-    /* renamed from: e  reason: collision with root package name */
-    private final Map f22365e;
-
-    public c(Class cls, Map map) {
-        this.f22364d = cls;
-        this.f22365e = map;
-    }
-
-    @Override // kotlin.jvm.functions.Function0
-    public Object invoke() {
-        String l10;
-        l10 = f.l(this.f22364d, this.f22365e);
-        return l10;
+    @Override // kotlin.jvm.functions.Function1
+    public Object invoke(Object obj) {
+        w0 d10;
+        d10 = h.d((Class) obj);
+        return d10;
     }
 }

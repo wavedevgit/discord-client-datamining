@@ -15,44 +15,44 @@ import androidx.core.view.h0;
 class CircleImageView extends ImageView {
 
     /* renamed from: d  reason: collision with root package name */
-    private Animation.AnimationListener f5072d;
+    private Animation.AnimationListener f5116d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f5073e;
+    private int f5117e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f5074i;
+    private int f5118i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a extends OvalShape {
 
         /* renamed from: d  reason: collision with root package name */
-        private Paint f5075d = new Paint();
+        private Paint f5119d = new Paint();
 
         /* renamed from: e  reason: collision with root package name */
-        private int f5076e;
+        private int f5120e;
 
         /* renamed from: i  reason: collision with root package name */
-        private CircleImageView f5077i;
+        private CircleImageView f5121i;
 
         a(CircleImageView circleImageView, int i10) {
-            this.f5077i = circleImageView;
-            this.f5076e = i10;
+            this.f5121i = circleImageView;
+            this.f5120e = i10;
             a((int) rect().width());
         }
 
         private void a(int i10) {
             float f10 = i10 / 2;
-            this.f5075d.setShader(new RadialGradient(f10, f10, this.f5076e, new int[]{1023410176, 0}, (float[]) null, Shader.TileMode.CLAMP));
+            this.f5119d.setShader(new RadialGradient(f10, f10, this.f5120e, new int[]{1023410176, 0}, (float[]) null, Shader.TileMode.CLAMP));
         }
 
         @Override // android.graphics.drawable.shapes.OvalShape, android.graphics.drawable.shapes.RectShape, android.graphics.drawable.shapes.Shape
         public void draw(Canvas canvas, Paint paint) {
             int width;
-            float width2 = this.f5077i.getWidth() / 2;
-            float height = this.f5077i.getHeight() / 2;
-            canvas.drawCircle(width2, height, width2, this.f5075d);
-            canvas.drawCircle(width2, height, width - this.f5076e, paint);
+            float width2 = this.f5121i.getWidth() / 2;
+            float height = this.f5121i.getHeight() / 2;
+            canvas.drawCircle(width2, height, width2, this.f5119d);
+            canvas.drawCircle(width2, height, width - this.f5120e, paint);
         }
 
         @Override // android.graphics.drawable.shapes.RectShape, android.graphics.drawable.shapes.Shape
@@ -69,22 +69,22 @@ class CircleImageView extends ImageView {
         float f10 = getContext().getResources().getDisplayMetrics().density;
         int i10 = (int) (1.75f * f10);
         int i11 = (int) (0.0f * f10);
-        this.f5073e = (int) (3.5f * f10);
-        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(b4.a.f7160f);
-        this.f5074i = obtainStyledAttributes.getColor(b4.a.f7161g, -328966);
+        this.f5117e = (int) (3.5f * f10);
+        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(b4.a.f6211f);
+        this.f5118i = obtainStyledAttributes.getColor(b4.a.f6212g, -328966);
         obtainStyledAttributes.recycle();
         if (a()) {
             shapeDrawable = new ShapeDrawable(new OvalShape());
             h0.v0(this, f10 * 4.0f);
         } else {
-            ShapeDrawable shapeDrawable2 = new ShapeDrawable(new a(this, this.f5073e));
+            ShapeDrawable shapeDrawable2 = new ShapeDrawable(new a(this, this.f5117e));
             setLayerType(1, shapeDrawable2.getPaint());
-            shapeDrawable2.getPaint().setShadowLayer(this.f5073e, i11, i10, 503316480);
-            int i12 = this.f5073e;
+            shapeDrawable2.getPaint().setShadowLayer(this.f5117e, i11, i10, 503316480);
+            int i12 = this.f5117e;
             setPadding(i12, i12, i12, i12);
             shapeDrawable = shapeDrawable2;
         }
-        shapeDrawable.getPaint().setColor(this.f5074i);
+        shapeDrawable.getPaint().setColor(this.f5118i);
         h0.r0(this, shapeDrawable);
     }
 
@@ -93,13 +93,13 @@ class CircleImageView extends ImageView {
     }
 
     public void b(Animation.AnimationListener animationListener) {
-        this.f5072d = animationListener;
+        this.f5116d = animationListener;
     }
 
     @Override // android.view.View
     public void onAnimationEnd() {
         super.onAnimationEnd();
-        Animation.AnimationListener animationListener = this.f5072d;
+        Animation.AnimationListener animationListener = this.f5116d;
         if (animationListener != null) {
             animationListener.onAnimationEnd(getAnimation());
         }
@@ -108,7 +108,7 @@ class CircleImageView extends ImageView {
     @Override // android.view.View
     public void onAnimationStart() {
         super.onAnimationStart();
-        Animation.AnimationListener animationListener = this.f5072d;
+        Animation.AnimationListener animationListener = this.f5116d;
         if (animationListener != null) {
             animationListener.onAnimationStart(getAnimation());
         }
@@ -118,7 +118,7 @@ class CircleImageView extends ImageView {
     protected void onMeasure(int i10, int i11) {
         super.onMeasure(i10, i11);
         if (!a()) {
-            setMeasuredDimension(getMeasuredWidth() + (this.f5073e * 2), getMeasuredHeight() + (this.f5073e * 2));
+            setMeasuredDimension(getMeasuredWidth() + (this.f5117e * 2), getMeasuredHeight() + (this.f5117e * 2));
         }
     }
 
@@ -126,7 +126,7 @@ class CircleImageView extends ImageView {
     public void setBackgroundColor(int i10) {
         if (getBackground() instanceof ShapeDrawable) {
             ((ShapeDrawable) getBackground()).getPaint().setColor(i10);
-            this.f5074i = i10;
+            this.f5118i = i10;
         }
     }
 }

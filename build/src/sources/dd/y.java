@@ -6,28 +6,28 @@ import ne.w0;
 final class y {
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f22097c;
+    private boolean f21673c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f22098d;
+    private boolean f21674d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f22099e;
+    private boolean f21675e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final s0 f22095a = new s0(0);
+    private final s0 f21671a = new s0(0);
 
     /* renamed from: f  reason: collision with root package name */
-    private long f22100f = -9223372036854775807L;
+    private long f21676f = -9223372036854775807L;
 
     /* renamed from: g  reason: collision with root package name */
-    private long f22101g = -9223372036854775807L;
+    private long f21677g = -9223372036854775807L;
 
     /* renamed from: h  reason: collision with root package name */
-    private long f22102h = -9223372036854775807L;
+    private long f21678h = -9223372036854775807L;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ne.h0 f22096b = new ne.h0();
+    private final ne.h0 f21672b = new ne.h0();
 
     private static boolean a(byte[] bArr) {
         if ((bArr[0] & 196) != 68 || (bArr[2] & 4) != 4 || (bArr[4] & 4) != 4 || (bArr[5] & 1) != 1 || (bArr[8] & 3) != 3) {
@@ -37,8 +37,8 @@ final class y {
     }
 
     private int b(tc.l lVar) {
-        this.f22096b.R(w0.f40300f);
-        this.f22097c = true;
+        this.f21672b.R(w0.f40163f);
+        this.f21673c = true;
         lVar.e();
         return 0;
     }
@@ -51,14 +51,14 @@ final class y {
         int min = (int) Math.min(20000L, lVar.getLength());
         long j10 = 0;
         if (lVar.getPosition() != j10) {
-            yVar.f49518a = j10;
+            yVar.f49790a = j10;
             return 1;
         }
-        this.f22096b.Q(min);
+        this.f21672b.Q(min);
         lVar.e();
-        lVar.n(this.f22096b.e(), 0, min);
-        this.f22100f = i(this.f22096b);
-        this.f22098d = true;
+        lVar.n(this.f21672b.e(), 0, min);
+        this.f21676f = i(this.f21672b);
+        this.f21674d = true;
         return 0;
     }
 
@@ -81,14 +81,14 @@ final class y {
         int min = (int) Math.min(20000L, length);
         long j10 = length - min;
         if (lVar.getPosition() != j10) {
-            yVar.f49518a = j10;
+            yVar.f49790a = j10;
             return 1;
         }
-        this.f22096b.Q(min);
+        this.f21672b.Q(min);
         lVar.e();
-        lVar.n(this.f22096b.e(), 0, min);
-        this.f22101g = k(this.f22096b);
-        this.f22099e = true;
+        lVar.n(this.f21672b.e(), 0, min);
+        this.f21677g = k(this.f21672b);
+        this.f21675e = true;
         return 0;
     }
 
@@ -127,36 +127,36 @@ final class y {
     }
 
     public long c() {
-        return this.f22102h;
+        return this.f21678h;
     }
 
     public s0 d() {
-        return this.f22095a;
+        return this.f21671a;
     }
 
     public boolean e() {
-        return this.f22097c;
+        return this.f21673c;
     }
 
     public int g(tc.l lVar, tc.y yVar) {
-        if (!this.f22099e) {
+        if (!this.f21675e) {
             return j(lVar, yVar);
         }
-        if (this.f22101g == -9223372036854775807L) {
+        if (this.f21677g == -9223372036854775807L) {
             return b(lVar);
         }
-        if (!this.f22098d) {
+        if (!this.f21674d) {
             return h(lVar, yVar);
         }
-        long j10 = this.f22100f;
+        long j10 = this.f21676f;
         if (j10 == -9223372036854775807L) {
             return b(lVar);
         }
-        long b10 = this.f22095a.b(this.f22101g) - this.f22095a.b(j10);
-        this.f22102h = b10;
+        long b10 = this.f21671a.b(this.f21677g) - this.f21671a.b(j10);
+        this.f21678h = b10;
         if (b10 < 0) {
-            ne.y.i("PsDurationReader", "Invalid duration: " + this.f22102h + ". Using TIME_UNSET instead.");
-            this.f22102h = -9223372036854775807L;
+            ne.y.i("PsDurationReader", "Invalid duration: " + this.f21678h + ". Using TIME_UNSET instead.");
+            this.f21678h = -9223372036854775807L;
         }
         return b(lVar);
     }

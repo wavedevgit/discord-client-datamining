@@ -3,16 +3,16 @@ package kg;
 final class x extends v {
 
     /* renamed from: i  reason: collision with root package name */
-    private final z f33223i;
+    private final z f32969i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public x(z zVar, int i10) {
         super(zVar.size(), i10);
-        this.f33223i = zVar;
+        this.f32969i = zVar;
     }
 
     @Override // kg.v
     protected final Object a(int i10) {
-        return this.f33223i.get(i10);
+        return this.f32969i.get(i10);
     }
 }

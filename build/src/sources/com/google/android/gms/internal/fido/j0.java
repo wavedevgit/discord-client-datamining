@@ -4,7 +4,7 @@ import java.io.Serializable;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public abstract class j0 implements Serializable {
     public static j0 c() {
-        return x.f15155d;
+        return x.f14784d;
     }
 
     public static j0 d(Object obj) {

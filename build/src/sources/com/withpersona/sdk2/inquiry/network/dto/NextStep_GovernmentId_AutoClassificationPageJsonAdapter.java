@@ -51,9 +51,9 @@ public final class NextStep_GovernmentId_AutoClassificationPageJsonAdapter exten
         String str8 = null;
         String str9 = null;
         while (reader.hasNext()) {
-            switch (reader.A0(this.options)) {
+            switch (reader.t0(this.options)) {
                 case -1:
-                    reader.E0();
+                    reader.F0();
                     reader.P();
                     break;
                 case 0:
@@ -94,23 +94,23 @@ public final class NextStep_GovernmentId_AutoClassificationPageJsonAdapter exten
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (autoClassificationPage != null) {
             writer.l();
-            writer.A0("unableToClassifyDocumentTitle");
+            writer.t0("unableToClassifyDocumentTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getUnableToClassifyDocumentTitle());
-            writer.A0("unableToClassifyDocumentContinueButtonText");
+            writer.t0("unableToClassifyDocumentContinueButtonText");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getUnableToClassifyDocumentContinueButtonText());
-            writer.A0("idClassRejectedTitle");
+            writer.t0("idClassRejectedTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getIdClassRejectedTitle());
-            writer.A0("idClassRejectedContinueButtonText");
+            writer.t0("idClassRejectedContinueButtonText");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getIdClassRejectedContinueButtonText());
-            writer.A0("countryInputTitle");
+            writer.t0("countryInputTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getCountryInputTitle());
-            writer.A0("idClassInputTitle");
+            writer.t0("idClassInputTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getIdClassInputTitle());
-            writer.A0("manualClassificationTitle");
+            writer.t0("manualClassificationTitle");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getManualClassificationTitle());
-            writer.A0("manualClassificationContinueButtonText");
+            writer.t0("manualClassificationContinueButtonText");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getManualClassificationContinueButtonText());
-            writer.A0("autoClassificationCaptureTipText");
+            writer.t0("autoClassificationCaptureTipText");
             this.nullableStringAdapter.toJson(writer, autoClassificationPage.getAutoClassificationCaptureTipText());
             writer.E();
             return;

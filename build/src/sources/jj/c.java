@@ -7,14 +7,14 @@ import qi.q;
 public class c implements i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f32208a;
+    private final String f31946a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d f32209b;
+    private final d f31947b;
 
     c(Set set, d dVar) {
-        this.f32208a = d(set);
-        this.f32209b = dVar;
+        this.f31946a = d(set);
+        this.f31947b = dVar;
     }
 
     public static /* synthetic */ i b(qi.d dVar) {
@@ -47,9 +47,9 @@ public class c implements i {
 
     @Override // jj.i
     public String a() {
-        if (this.f32209b.b().isEmpty()) {
-            return this.f32208a;
+        if (this.f31947b.b().isEmpty()) {
+            return this.f31946a;
         }
-        return this.f32208a + ' ' + d(this.f32209b.b());
+        return this.f31946a + ' ' + d(this.f31947b.b());
     }
 }

@@ -227,4 +227,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.CHANNEL_LIST_STYLES_COZY_DRAWER = var3;
     var2.CHANNEL_LIST_STYLES_COZY_DRAWER_SMOL = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8753, 8754, 671, 4047, 5418, 7357, 6856, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8785, 8786, 671, 4077, 5449, 7388, 6887, 2]);

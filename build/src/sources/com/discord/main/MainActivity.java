@@ -12,7 +12,7 @@ import com.discord.notifications.client.NotificationClient;
 import com.discord.react_activities.ReactActivity;
 import com.discord.react_startup_flags.StartupFlagsModule;
 import com.facebook.react.bridge.ReactContext;
-import ir.c;
+import jr.c;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -21,7 +21,7 @@ import org.jetbrains.annotations.NotNull;
 public final class MainActivity extends ReactActivity {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final /* synthetic */ int f10467d = 0;
+    public static final /* synthetic */ int f10096d = 0;
 
     @SuppressLint({"VisibleForTests"})
     private final ReactContext currentReactContext() {

@@ -2,13 +2,13 @@ package com.discord.simpleast.core.parser;
 
 import android.util.Log;
 import com.discord.simpleast.core.node.Node;
-import ir.v;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
 import java.util.regex.Matcher;
+import jr.v;
 import kotlin.Metadata;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;

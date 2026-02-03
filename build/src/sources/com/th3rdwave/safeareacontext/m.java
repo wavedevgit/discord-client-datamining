@@ -5,42 +5,42 @@ import kotlin.jvm.internal.Intrinsics;
 public final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f19442a;
+    private final l f19075a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final l f19443b;
+    private final l f19076b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final l f19444c;
+    private final l f19077c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final l f19445d;
+    private final l f19078d;
 
     public m(l top, l right, l bottom, l left) {
         Intrinsics.checkNotNullParameter(top, "top");
         Intrinsics.checkNotNullParameter(right, "right");
         Intrinsics.checkNotNullParameter(bottom, "bottom");
         Intrinsics.checkNotNullParameter(left, "left");
-        this.f19442a = top;
-        this.f19443b = right;
-        this.f19444c = bottom;
-        this.f19445d = left;
+        this.f19075a = top;
+        this.f19076b = right;
+        this.f19077c = bottom;
+        this.f19078d = left;
     }
 
     public final l a() {
-        return this.f19444c;
+        return this.f19077c;
     }
 
     public final l b() {
-        return this.f19445d;
+        return this.f19078d;
     }
 
     public final l c() {
-        return this.f19443b;
+        return this.f19076b;
     }
 
     public final l d() {
-        return this.f19442a;
+        return this.f19075a;
     }
 
     public boolean equals(Object obj) {
@@ -49,20 +49,20 @@ public final class m {
         }
         if (obj instanceof m) {
             m mVar = (m) obj;
-            return this.f19442a == mVar.f19442a && this.f19443b == mVar.f19443b && this.f19444c == mVar.f19444c && this.f19445d == mVar.f19445d;
+            return this.f19075a == mVar.f19075a && this.f19076b == mVar.f19076b && this.f19077c == mVar.f19077c && this.f19078d == mVar.f19078d;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((this.f19442a.hashCode() * 31) + this.f19443b.hashCode()) * 31) + this.f19444c.hashCode()) * 31) + this.f19445d.hashCode();
+        return (((((this.f19075a.hashCode() * 31) + this.f19076b.hashCode()) * 31) + this.f19077c.hashCode()) * 31) + this.f19078d.hashCode();
     }
 
     public String toString() {
-        l lVar = this.f19442a;
-        l lVar2 = this.f19443b;
-        l lVar3 = this.f19444c;
-        l lVar4 = this.f19445d;
+        l lVar = this.f19075a;
+        l lVar2 = this.f19076b;
+        l lVar3 = this.f19077c;
+        l lVar4 = this.f19078d;
         return "SafeAreaViewEdges(top=" + lVar + ", right=" + lVar2 + ", bottom=" + lVar3 + ", left=" + lVar4 + ")";
     }
 }

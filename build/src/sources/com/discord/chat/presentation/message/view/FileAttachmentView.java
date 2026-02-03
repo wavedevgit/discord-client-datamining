@@ -56,7 +56,7 @@ public class FileAttachmentView extends ConstraintLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void setContent$lambda$1(FileAttachmentView fileAttachmentView, String str, String str2, String str3, View view) {
-        gs.i.d(CoroutineViewUtilsKt.getAttachedScope(fileAttachmentView), gs.m0.b(), null, new FileAttachmentView$setContent$2$1(fileAttachmentView, str, str2, str3, null), 2, null);
+        hs.i.d(CoroutineViewUtilsKt.getAttachedScope(fileAttachmentView), hs.m0.b(), null, new FileAttachmentView$setContent$2$1(fileAttachmentView, str, str2, str3, null), 2, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -65,7 +65,7 @@ public class FileAttachmentView extends ConstraintLayout {
         Intrinsics.checkNotNullExpressionValue(uploadOverlayBackground, "uploadOverlayBackground");
         uploadOverlayBackground.setVisibility(8);
         fileAttachmentView.uploadFinished = true;
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     public final void setContent(@NotNull final String attachmentName, @NotNull final String attachmentDescription, @NotNull final String url, @NotNull final Function2<? super String, ? super String, Unit> onClick, boolean z10, SpoilerConfig spoilerConfig, UploadItemProps uploadItemProps, Integer num) {

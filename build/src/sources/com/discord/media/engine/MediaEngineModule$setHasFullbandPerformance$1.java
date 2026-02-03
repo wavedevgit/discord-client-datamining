@@ -29,7 +29,7 @@ final class MediaEngineModule$setHasFullbandPerformance$1 extends kotlin.corouti
     @Override // kotlin.coroutines.jvm.internal.a
     public final Object invokeSuspend(Object obj) {
         Object awaitMediaEngine;
-        Object f10 = or.b.f();
+        Object f10 = pr.b.f();
         int i10 = this.label;
         if (i10 != 0) {
             if (i10 == 1) {
@@ -47,11 +47,11 @@ final class MediaEngineModule$setHasFullbandPerformance$1 extends kotlin.corouti
             }
         }
         this.this$0.getMediaEngine().setHasFullbandPerformance$media_engine_release(this.$hasFullbandPerformance);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$setHasFullbandPerformance$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
+        return ((MediaEngineModule$setHasFullbandPerformance$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33074a);
     }
 }

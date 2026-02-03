@@ -5,10 +5,10 @@ import android.view.View;
 class ViewBoundsCheck {
 
     /* renamed from: a  reason: collision with root package name */
-    final Callback f4916a;
+    final Callback f4960a;
 
     /* renamed from: b  reason: collision with root package name */
-    a f4917b = new a();
+    a f4961b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     interface Callback {
@@ -27,42 +27,42 @@ class ViewBoundsCheck {
     static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        int f4918a = 0;
+        int f4962a = 0;
 
         /* renamed from: b  reason: collision with root package name */
-        int f4919b;
+        int f4963b;
 
         /* renamed from: c  reason: collision with root package name */
-        int f4920c;
+        int f4964c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f4921d;
+        int f4965d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f4922e;
+        int f4966e;
 
         a() {
         }
 
         void a(int i10) {
-            this.f4918a = i10 | this.f4918a;
+            this.f4962a = i10 | this.f4962a;
         }
 
         boolean b() {
-            int i10 = this.f4918a;
-            if ((i10 & 7) != 0 && (i10 & c(this.f4921d, this.f4919b)) == 0) {
+            int i10 = this.f4962a;
+            if ((i10 & 7) != 0 && (i10 & c(this.f4965d, this.f4963b)) == 0) {
                 return false;
             }
-            int i11 = this.f4918a;
-            if ((i11 & 112) != 0 && (i11 & (c(this.f4921d, this.f4920c) << 4)) == 0) {
+            int i11 = this.f4962a;
+            if ((i11 & 112) != 0 && (i11 & (c(this.f4965d, this.f4964c) << 4)) == 0) {
                 return false;
             }
-            int i12 = this.f4918a;
-            if ((i12 & 1792) != 0 && (i12 & (c(this.f4922e, this.f4919b) << 8)) == 0) {
+            int i12 = this.f4962a;
+            if ((i12 & 1792) != 0 && (i12 & (c(this.f4966e, this.f4963b) << 8)) == 0) {
                 return false;
             }
-            int i13 = this.f4918a;
-            if ((i13 & 28672) != 0 && (i13 & (c(this.f4922e, this.f4920c) << 12)) == 0) {
+            int i13 = this.f4962a;
+            if ((i13 & 28672) != 0 && (i13 & (c(this.f4966e, this.f4964c) << 12)) == 0) {
                 return false;
             }
             return true;
@@ -76,27 +76,27 @@ class ViewBoundsCheck {
         }
 
         void d() {
-            this.f4918a = 0;
+            this.f4962a = 0;
         }
 
         void e(int i10, int i11, int i12, int i13) {
-            this.f4919b = i10;
-            this.f4920c = i11;
-            this.f4921d = i12;
-            this.f4922e = i13;
+            this.f4963b = i10;
+            this.f4964c = i11;
+            this.f4965d = i12;
+            this.f4966e = i13;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ViewBoundsCheck(Callback callback) {
-        this.f4916a = callback;
+        this.f4960a = callback;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public View a(int i10, int i11, int i12, int i13) {
         int i14;
-        int b10 = this.f4916a.b();
-        int c10 = this.f4916a.c();
+        int b10 = this.f4960a.b();
+        int c10 = this.f4960a.c();
         if (i11 > i10) {
             i14 = 1;
         } else {
@@ -104,19 +104,19 @@ class ViewBoundsCheck {
         }
         View view = null;
         while (i10 != i11) {
-            View childAt = this.f4916a.getChildAt(i10);
-            this.f4917b.e(b10, c10, this.f4916a.a(childAt), this.f4916a.d(childAt));
+            View childAt = this.f4960a.getChildAt(i10);
+            this.f4961b.e(b10, c10, this.f4960a.a(childAt), this.f4960a.d(childAt));
             if (i12 != 0) {
-                this.f4917b.d();
-                this.f4917b.a(i12);
-                if (this.f4917b.b()) {
+                this.f4961b.d();
+                this.f4961b.a(i12);
+                if (this.f4961b.b()) {
                     return childAt;
                 }
             }
             if (i13 != 0) {
-                this.f4917b.d();
-                this.f4917b.a(i13);
-                if (this.f4917b.b()) {
+                this.f4961b.d();
+                this.f4961b.a(i13);
+                if (this.f4961b.b()) {
                     view = childAt;
                 }
             }
@@ -127,11 +127,11 @@ class ViewBoundsCheck {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean b(View view, int i10) {
-        this.f4917b.e(this.f4916a.b(), this.f4916a.c(), this.f4916a.a(view), this.f4916a.d(view));
+        this.f4961b.e(this.f4960a.b(), this.f4960a.c(), this.f4960a.a(view), this.f4960a.d(view));
         if (i10 != 0) {
-            this.f4917b.d();
-            this.f4917b.a(i10);
-            return this.f4917b.b();
+            this.f4961b.d();
+            this.f4961b.a(i10);
+            return this.f4961b.b();
         }
         return false;
     }

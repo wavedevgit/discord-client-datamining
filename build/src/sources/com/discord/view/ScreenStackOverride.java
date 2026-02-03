@@ -16,8 +16,8 @@ public final class ScreenStackOverride extends ScreenStack {
     @Override // com.swmansion.rnscreens.ScreenStack, android.view.ViewGroup
     public void endViewTransition(@NotNull View view) {
         Intrinsics.checkNotNullParameter(view, "view");
-        if (view instanceof in.d) {
-            ((in.d) view).getScreen().endRemovalTransition();
+        if (view instanceof jn.d) {
+            ((jn.d) view).getScreen().endRemovalTransition();
         }
         super.endViewTransition(view);
     }

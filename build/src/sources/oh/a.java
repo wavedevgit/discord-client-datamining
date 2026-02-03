@@ -6,28 +6,28 @@ import java.util.Arrays;
 public final class a implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f43833a;
+    private final float f43961a;
 
     public a(float f10) {
-        this.f43833a = f10;
+        this.f43961a = f10;
     }
 
     @Override // oh.c
     public float a(RectF rectF) {
-        return this.f43833a;
+        return this.f43961a;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof a) && this.f43833a == ((a) obj).f43833a) {
+        if ((obj instanceof a) && this.f43961a == ((a) obj).f43961a) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(new Object[]{Float.valueOf(this.f43833a)});
+        return Arrays.hashCode(new Object[]{Float.valueOf(this.f43961a)});
     }
 }

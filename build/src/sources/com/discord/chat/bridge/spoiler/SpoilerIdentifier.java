@@ -14,7 +14,7 @@ public final class SpoilerIdentifier {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9678id;
+    private final String f9307id;
 
     @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J%\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b¢\u0006\u0004\b\f\u0010\r¨\u0006\u000e"}, d2 = {"Lcom/discord/chat/bridge/spoiler/SpoilerIdentifier$Companion;", "", "<init>", "()V", "forNode", "Lcom/discord/chat/bridge/spoiler/SpoilerIdentifier;", "node", "Lcom/discord/chat/bridge/contentnode/SpoilerContentNode;", "containerId", "", "index", "", "forNode-2sfwrmE", "(Lcom/discord/chat/bridge/contentnode/SpoilerContentNode;Ljava/lang/String;I)Ljava/lang/String;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -25,11 +25,11 @@ public final class SpoilerIdentifier {
 
         @NotNull
         /* renamed from: forNode-2sfwrmE  reason: not valid java name */
-        public final String m419forNode2sfwrmE(@NotNull SpoilerContentNode node, @NotNull String containerId, int i10) {
+        public final String m421forNode2sfwrmE(@NotNull SpoilerContentNode node, @NotNull String containerId, int i10) {
             Intrinsics.checkNotNullParameter(node, "node");
             Intrinsics.checkNotNullParameter(containerId, "containerId");
             int hashCode = node.hashCode();
-            return SpoilerIdentifier.m413constructorimpl("spoiler:" + hashCode + ":" + containerId + ":" + i10);
+            return SpoilerIdentifier.m415constructorimpl("spoiler:" + hashCode + ":" + containerId + ":" + i10);
         }
 
         private Companion() {
@@ -37,60 +37,60 @@ public final class SpoilerIdentifier {
     }
 
     private /* synthetic */ SpoilerIdentifier(String str) {
-        this.f9678id = str;
+        this.f9307id = str;
     }
 
     /* renamed from: box-impl  reason: not valid java name */
-    public static final /* synthetic */ SpoilerIdentifier m412boximpl(String str) {
+    public static final /* synthetic */ SpoilerIdentifier m414boximpl(String str) {
         return new SpoilerIdentifier(str);
     }
 
     @NotNull
     /* renamed from: constructor-impl  reason: not valid java name */
-    public static String m413constructorimpl(@NotNull String id2) {
+    public static String m415constructorimpl(@NotNull String id2) {
         Intrinsics.checkNotNullParameter(id2, "id");
         return id2;
     }
 
     /* renamed from: equals-impl  reason: not valid java name */
-    public static boolean m414equalsimpl(String str, Object obj) {
-        return (obj instanceof SpoilerIdentifier) && Intrinsics.areEqual(str, ((SpoilerIdentifier) obj).m418unboximpl());
+    public static boolean m416equalsimpl(String str, Object obj) {
+        return (obj instanceof SpoilerIdentifier) && Intrinsics.areEqual(str, ((SpoilerIdentifier) obj).m420unboximpl());
     }
 
     /* renamed from: equals-impl0  reason: not valid java name */
-    public static final boolean m415equalsimpl0(String str, String str2) {
+    public static final boolean m417equalsimpl0(String str, String str2) {
         return Intrinsics.areEqual(str, str2);
     }
 
     /* renamed from: hashCode-impl  reason: not valid java name */
-    public static int m416hashCodeimpl(String str) {
+    public static int m418hashCodeimpl(String str) {
         return str.hashCode();
     }
 
     /* renamed from: toString-impl  reason: not valid java name */
-    public static String m417toStringimpl(String str) {
+    public static String m419toStringimpl(String str) {
         return "SpoilerIdentifier(id=" + str + ")";
     }
 
     public boolean equals(Object obj) {
-        return m414equalsimpl(this.f9678id, obj);
+        return m416equalsimpl(this.f9307id, obj);
     }
 
     @NotNull
     public final String getId() {
-        return this.f9678id;
+        return this.f9307id;
     }
 
     public int hashCode() {
-        return m416hashCodeimpl(this.f9678id);
+        return m418hashCodeimpl(this.f9307id);
     }
 
     public String toString() {
-        return m417toStringimpl(this.f9678id);
+        return m419toStringimpl(this.f9307id);
     }
 
     /* renamed from: unbox-impl  reason: not valid java name */
-    public final /* synthetic */ String m418unboximpl() {
-        return this.f9678id;
+    public final /* synthetic */ String m420unboximpl() {
+        return this.f9307id;
     }
 }

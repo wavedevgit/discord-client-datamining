@@ -16,10 +16,10 @@ import org.jetbrains.annotations.NotNull;
 public class a0 extends Fragment {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final b f4458e = new b(null);
+    public static final b f4502e = new b(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private a f4459d;
+    private a f4503d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -112,37 +112,37 @@ public class a0 extends Fragment {
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPostCreated(@NotNull Activity activity, Bundle bundle) {
             Intrinsics.checkNotNullParameter(activity, "activity");
-            a0.f4458e.a(activity, Lifecycle.a.ON_CREATE);
+            a0.f4502e.a(activity, Lifecycle.a.ON_CREATE);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPostResumed(@NotNull Activity activity) {
             Intrinsics.checkNotNullParameter(activity, "activity");
-            a0.f4458e.a(activity, Lifecycle.a.ON_RESUME);
+            a0.f4502e.a(activity, Lifecycle.a.ON_RESUME);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPostStarted(@NotNull Activity activity) {
             Intrinsics.checkNotNullParameter(activity, "activity");
-            a0.f4458e.a(activity, Lifecycle.a.ON_START);
+            a0.f4502e.a(activity, Lifecycle.a.ON_START);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPreDestroyed(@NotNull Activity activity) {
             Intrinsics.checkNotNullParameter(activity, "activity");
-            a0.f4458e.a(activity, Lifecycle.a.ON_DESTROY);
+            a0.f4502e.a(activity, Lifecycle.a.ON_DESTROY);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPrePaused(@NotNull Activity activity) {
             Intrinsics.checkNotNullParameter(activity, "activity");
-            a0.f4458e.a(activity, Lifecycle.a.ON_PAUSE);
+            a0.f4502e.a(activity, Lifecycle.a.ON_PAUSE);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPreStopped(@NotNull Activity activity) {
             Intrinsics.checkNotNullParameter(activity, "activity");
-            a0.f4458e.a(activity, Lifecycle.a.ON_STOP);
+            a0.f4502e.a(activity, Lifecycle.a.ON_STOP);
         }
 
         @Override // android.app.Application.ActivityLifecycleCallbacks
@@ -169,7 +169,7 @@ public class a0 extends Fragment {
 
     private final void a(Lifecycle.a aVar) {
         if (Build.VERSION.SDK_INT < 29) {
-            b bVar = f4458e;
+            b bVar = f4502e;
             Activity activity = getActivity();
             Intrinsics.checkNotNullExpressionValue(activity, "getActivity(...)");
             bVar.a(activity, aVar);
@@ -195,13 +195,13 @@ public class a0 extends Fragment {
     }
 
     public final void e(a aVar) {
-        this.f4459d = aVar;
+        this.f4503d = aVar;
     }
 
     @Override // android.app.Fragment
     public void onActivityCreated(Bundle bundle) {
         super.onActivityCreated(bundle);
-        b(this.f4459d);
+        b(this.f4503d);
         a(Lifecycle.a.ON_CREATE);
     }
 
@@ -209,7 +209,7 @@ public class a0 extends Fragment {
     public void onDestroy() {
         super.onDestroy();
         a(Lifecycle.a.ON_DESTROY);
-        this.f4459d = null;
+        this.f4503d = null;
     }
 
     @Override // android.app.Fragment
@@ -221,14 +221,14 @@ public class a0 extends Fragment {
     @Override // android.app.Fragment
     public void onResume() {
         super.onResume();
-        c(this.f4459d);
+        c(this.f4503d);
         a(Lifecycle.a.ON_RESUME);
     }
 
     @Override // android.app.Fragment
     public void onStart() {
         super.onStart();
-        d(this.f4459d);
+        d(this.f4503d);
         a(Lifecycle.a.ON_START);
     }
 

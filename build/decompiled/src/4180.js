@@ -1,150 +1,217 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = metroImportDefault;
+    var0 = require;
     var _closure1_slot0 = var0;
-    var0 = dependencyMap;
+    var0 = metroImportDefault;
     var _closure1_slot1 = var0;
-    var0 = function arg0() {
-        _fun38360: for (var _fun38360_ip = 0;;) switch (_fun38360_ip) {
+    var0 = dependencyMap;
+    var _closure1_slot2 = var0;
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
+        _fun38111: for (var _fun38111_ip = 0;;) switch (_fun38111_ip) {
             case 0:
-                var1 = 16;
-                var0 = arg0;
-                var2 = var1 & var0;
-                var0 = {};
-                var1 = 0;
-                if (!var2) {
-                    _fun38360_ip = 20;
-                    continue _fun38360
+                var4 = arg0;
+                var11 = arg2;
+                var0 = _closure1_slot3;
+                var2 = var4[var0];
+                var7 = undefined;
+                var0 = var4;
+                if (!(var7 !== var2)) {
+                    _fun38111_ip = 130;
+                    continue _fun38111
                 }
-            case 17:
-                var1 = 1;
-            case 20:
-                var0.value = var1;
-                var1 = 'No';
-                if (!var2) {
-                    _fun38360_ip = 39;
-                    continue _fun38360
-                }
-            case 33:
-                var1 = 'Yes';
-            case 39:
-                var0.description = var1;
+            case 26:
+                var6 = _closure1_slot0;
+                var8 = _closure1_slot2;
+                var2 = 3;
+                var2 = var8[var2];
+                var3 = var6.bind(var7)(var2);
+                var2 = var3.objectAssign;
+                var5 = 1;
+                var5 = var8[var5];
+                var10 = var6.bind(var7)(var5);
+                var9 = var10.readIfd;
+                var5 = 2;
+                var5 = var8[var5];
+                var5 = var6.bind(var7)(var5);
+                var16 = var5.IFD_TYPE_EXIF;
+                var1 = _closure1_slot3;
+                var1 = var4[var1];
+                var1 = var1.value;
+                var14 = var11 + var1;
+                var17 = arg1;
+                var13 = arg3;
+                var12 = arg4;
+                var18 = var10;
+                var15 = var11;
+                var1 = var18[var9](var17, var16, var15, var14, var13, var12, var11);
+                var0 = var2.bind(var3)(var4, var1);
+            case 130:
                 return var0;
         }
-    };
-    var _closure1_slot4 = var0;
-    var0 = function arg0() {
-        _fun38361: for (var _fun38361_ip = 0;;) switch (_fun38361_ip) {
-            case 0:
-                var1 = 2;
-                var0 = arg0;
-                var2 = var1 & var0;
-                var0 = {};
-                var1 = 0;
-                if (!var2) {
-                    _fun38361_ip = 20;
-                    continue _fun38361
-                }
-            case 17:
-                var1 = 1;
-            case 20:
-                var0.value = var1;
-                var1 = 'No';
-                if (!var2) {
-                    _fun38361_ip = 39;
-                    continue _fun38361
-                }
-            case 33:
-                var1 = 'Yes';
-            case 39:
-                var0.description = var1;
-                return var0;
-        }
-    };
-    var _closure1_slot5 = var0;
-    var0 = function arg0, arg1() {
-        var5 = arg0;
-        var6 = arg1;
-        var4 = _closure1_slot0;
-        var7 = _closure1_slot1;
-        var0 = 0;
-        var1 = var7[var0];
-        var3 = undefined;
-        var2 = var4.bind(var3)(var1);
-        var1 = var2.getByteAt;
-        var8 = var1.bind(var2)(var5, var6);
-        var1 = var7[var0];
-        var10 = var4.bind(var3)(var1);
-        var9 = var10.getByteAt;
-        var1 = 1;
-        var2 = var6 + var1;
-        var9 = var9.bind(var10)(var5, var2);
-        var2 = 256;
-        var2 = var2 * var9;
-        var2 = var8 + var2;
-        var0 = var7[var0];
-        var4 = var4.bind(var3)(var0);
-        var3 = var4.getByteAt;
-        var0 = 2;
-        var0 = var6 + var0;
-        var3 = var3.bind(var4)(var5, var0);
-        var0 = 65536;
-        var0 = var0 * var3;
-        var0 = var2 + var0;
-        var2 = var0 + var1;
-        var0 = {};
-        var0.value = var2;
-        var1 = 'px';
-        var1 = var2 + var1;
-        var0.description = var1;
-        return var0;
     };
     var _closure1_slot6 = var0;
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
+        _fun38112: for (var _fun38112_ip = 0;;) switch (_fun38112_ip) {
+            case 0:
+                var4 = arg0;
+                var11 = arg2;
+                var0 = _closure1_slot4;
+                var2 = var4[var0];
+                var7 = undefined;
+                var0 = var4;
+                if (!(var7 !== var2)) {
+                    _fun38112_ip = 130;
+                    continue _fun38112
+                }
+            case 26:
+                var6 = _closure1_slot0;
+                var8 = _closure1_slot2;
+                var2 = 3;
+                var2 = var8[var2];
+                var3 = var6.bind(var7)(var2);
+                var2 = var3.objectAssign;
+                var5 = 1;
+                var5 = var8[var5];
+                var10 = var6.bind(var7)(var5);
+                var9 = var10.readIfd;
+                var5 = 2;
+                var5 = var8[var5];
+                var5 = var6.bind(var7)(var5);
+                var16 = var5.IFD_TYPE_GPS;
+                var1 = _closure1_slot4;
+                var1 = var4[var1];
+                var1 = var1.value;
+                var14 = var11 + var1;
+                var17 = arg1;
+                var13 = arg3;
+                var12 = arg4;
+                var18 = var10;
+                var15 = var11;
+                var1 = var18[var9](var17, var16, var15, var14, var13, var12, var11);
+                var0 = var2.bind(var3)(var4, var1);
+            case 130:
+                return var0;
+        }
+    };
+    var _closure1_slot7 = var0;
+    var0 = function arg0, arg1, arg2, arg3, arg4() {
+        _fun38113: for (var _fun38113_ip = 0;;) switch (_fun38113_ip) {
+            case 0:
+                var4 = arg0;
+                var11 = arg2;
+                var0 = _closure1_slot5;
+                var2 = var4[var0];
+                var7 = undefined;
+                var0 = var4;
+                if (!(var7 !== var2)) {
+                    _fun38113_ip = 130;
+                    continue _fun38113
+                }
+            case 26:
+                var6 = _closure1_slot0;
+                var8 = _closure1_slot2;
+                var2 = 3;
+                var2 = var8[var2];
+                var3 = var6.bind(var7)(var2);
+                var2 = var3.objectAssign;
+                var5 = 1;
+                var5 = var8[var5];
+                var10 = var6.bind(var7)(var5);
+                var9 = var10.readIfd;
+                var5 = 2;
+                var5 = var8[var5];
+                var5 = var6.bind(var7)(var5);
+                var16 = var5.IFD_TYPE_INTEROPERABILITY;
+                var1 = _closure1_slot5;
+                var1 = var4[var1];
+                var1 = var1.value;
+                var14 = var11 + var1;
+                var17 = arg1;
+                var13 = arg3;
+                var12 = arg4;
+                var18 = var10;
+                var15 = var11;
+                var1 = var18[var9](var17, var16, var15, var14, var13, var12, var11);
+                var0 = var2.bind(var3)(var4, var1);
+            case 130:
+                return var0;
+        }
+    };
+    var _closure1_slot8 = var0;
     var0 = global;
     var5 = var0.Object;
     var4 = var5.defineProperty;
-    var2 = {};
+    var3 = {};
     var0 = true;
-    var2.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var2);
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = 'Exif IFD Pointer';
+    var _closure1_slot3 = var0;
+    var0 = 'GPS Info IFD Pointer';
+    var _closure1_slot4 = var0;
+    var0 = 'Interoperability IFD Pointer';
+    var _closure1_slot5 = var0;
     var0 = {};
-    var2 = function arg0, arg1() {
-        var4 = arg0;
-        var5 = arg1;
+    var2 = function arg0, arg1, arg2() {
+        var7 = arg0;
+        var6 = arg1;
+        var5 = arg2;
+        var1 = _closure1_slot1;
+        var11 = _closure1_slot2;
+        var0 = 0;
+        var0 = var11[var0];
+        var4 = undefined;
+        var1 = var1.bind(var4)(var0);
+        var0 = var1.getByteOrder;
+        var1 = var0.bind(var1)(var7, var6);
+        var10 = _closure1_slot0;
+        var0 = 1;
+        var3 = var11[var0];
+        var9 = var10.bind(var4)(var3);
+        var8 = var9.readIfd;
+        var3 = 2;
+        var3 = var11[var3];
+        var3 = var10.bind(var4)(var3);
+        var3 = var3.IFD_TYPE_0TH;
+        var0 = var11[var0];
+        var10 = var10.bind(var4)(var0);
+        var0 = var10.get0thIfdOffset;
+        var14 = var0.bind(var10)(var7, var6, var1);
+        var18 = var9;
+        var17 = var7;
+        var16 = var3;
+        var15 = var6;
+        var13 = var1;
+        var12 = var5;
+        var17 = var18[var8](var17, var16, var15, var14, var13, var12, var11);
         var0 = {};
-        var6 = _closure1_slot0;
-        var3 = _closure1_slot1;
-        var2 = 0;
-        var2 = var3[var2];
-        var3 = undefined;
-        var6 = var6.bind(var3)(var2);
-        var2 = var6.getByteAt;
-        var6 = var2.bind(var6)(var4, var5);
-        var2 = _closure1_slot4;
-        var2 = var2.bind(var3)(var6);
-        var0.Alpha = var2;
-        var2 = _closure1_slot5;
-        var2 = var2.bind(var3)(var6);
-        var0.Animation = var2;
+        var3 = _closure1_slot8;
+        var8 = _closure1_slot7;
         var2 = _closure1_slot6;
-        var6 = _closure1_slot2;
-        var6 = var5 + var6;
-        var6 = var2.bind(var3)(var4, var6);
-        var0.ImageWidth = var6;
-        var1 = _closure1_slot3;
-        var1 = var5 + var1;
-        var1 = var2.bind(var3)(var4, var1);
-        var0.ImageHeight = var1;
+        var18 = undefined;
+        var16 = var7;
+        var15 = var6;
+        var14 = var1;
+        var13 = var5;
+        var17 = var18[var2](var17, var16, var15, var14, var13, var12);
+        var16 = var7;
+        var15 = var6;
+        var14 = var1;
+        var13 = var5;
+        var17 = var18[var8](var17, var16, var15, var14, var13, var12);
+        var16 = var7;
+        var15 = var6;
+        var14 = var1;
+        var13 = var5;
+        var2 = var18[var3](var17, var16, var15, var14, var13, var12);
+        var0.tags = var2;
+        var0.byteOrder = var1;
         return var0;
     };
     var0.read = var2;
-    var2 = 4;
-    var _closure1_slot2 = var2;
-    var2 = 7;
-    var _closure1_slot3 = var2;
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4148]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4166, 4181, 4182, 4161]);

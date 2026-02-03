@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = var6.memo;
     var1 = function() { // Environment: var1
-        _fun89597: for (var _fun89597_ip = 0;;) switch (_fun89597_ip) {
+        _fun89555: for (var _fun89555_ip = 0;;) switch (_fun89555_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var1)();
                 var0 = null;
                 if (!var1) {
-                    _fun89597_ip = 207;
-                    continue _fun89597
+                    _fun89555_ip = 207;
+                    continue _fun89555
                 }
             case 43:
                 var3 = _closure1_slot0;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var3)();
                 var0 = null;
                 if (var1) {
-                    _fun89597_ip = 207;
-                    continue _fun89597
+                    _fun89555_ip = 207;
+                    continue _fun89555
                 }
             case 81:
                 var3 = _closure1_slot4;
@@ -106,4 +106,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.ChatInputAccessibilityDivider = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4031, 478, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4061, 478, 1234, 2]);

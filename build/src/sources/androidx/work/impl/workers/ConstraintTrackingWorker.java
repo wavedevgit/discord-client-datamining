@@ -29,28 +29,28 @@ import q4.s;
 public final class ConstraintTrackingWorker extends c implements d {
 
     /* renamed from: p  reason: collision with root package name */
-    private final WorkerParameters f5758p;
+    private final WorkerParameters f5802p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Object f5759q;
+    private final Object f5803q;
 
     /* renamed from: r  reason: collision with root package name */
-    private volatile boolean f5760r;
+    private volatile boolean f5804r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final androidx.work.impl.utils.futures.c f5761s;
+    private final androidx.work.impl.utils.futures.c f5805s;
 
     /* renamed from: t  reason: collision with root package name */
-    private c f5762t;
+    private c f5806t;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ConstraintTrackingWorker(@NotNull Context appContext, @NotNull WorkerParameters workerParameters) {
         super(appContext, workerParameters);
         Intrinsics.checkNotNullParameter(appContext, "appContext");
         Intrinsics.checkNotNullParameter(workerParameters, "workerParameters");
-        this.f5758p = workerParameters;
-        this.f5759q = new Object();
-        this.f5761s = androidx.work.impl.utils.futures.c.t();
+        this.f5802p = workerParameters;
+        this.f5803q = new Object();
+        this.f5805s = androidx.work.impl.utils.futures.c.t();
     }
 
     private final void s() {
@@ -60,26 +60,26 @@ public final class ConstraintTrackingWorker extends c implements d {
         String str4;
         String str5;
         String str6;
-        if (this.f5761s.isCancelled()) {
+        if (this.f5805s.isCancelled()) {
             return;
         }
         String l10 = f().l("androidx.work.impl.workers.ConstraintTrackingWorker.ARGUMENT_CLASS_NAME");
         m e10 = m.e();
         Intrinsics.checkNotNullExpressionValue(e10, "get()");
         if (l10 == null || l10.length() == 0) {
-            str = s4.d.f48718a;
+            str = s4.d.f48772a;
             e10.c(str, "No worker to delegate to.");
-            androidx.work.impl.utils.futures.c future = this.f5761s;
+            androidx.work.impl.utils.futures.c future = this.f5805s;
             Intrinsics.checkNotNullExpressionValue(future, "future");
             s4.d.d(future);
             return;
         }
-        c b10 = i().b(b(), l10, this.f5758p);
-        this.f5762t = b10;
+        c b10 = i().b(b(), l10, this.f5802p);
+        this.f5806t = b10;
         if (b10 == null) {
-            str6 = s4.d.f48718a;
+            str6 = s4.d.f48772a;
             e10.a(str6, "No worker to delegate to.");
-            androidx.work.impl.utils.futures.c future2 = this.f5761s;
+            androidx.work.impl.utils.futures.c future2 = this.f5805s;
             Intrinsics.checkNotNullExpressionValue(future2, "future");
             s4.d.d(future2);
             return;
@@ -91,7 +91,7 @@ public final class ConstraintTrackingWorker extends c implements d {
         Intrinsics.checkNotNullExpressionValue(uuid, "id.toString()");
         u i10 = H.i(uuid);
         if (i10 == null) {
-            androidx.work.impl.utils.futures.c future3 = this.f5761s;
+            androidx.work.impl.utils.futures.c future3 = this.f5805s;
             Intrinsics.checkNotNullExpressionValue(future3, "future");
             s4.d.d(future3);
             return;
@@ -102,17 +102,17 @@ public final class ConstraintTrackingWorker extends c implements d {
         CoroutineDispatcher b11 = k10.q().b();
         Intrinsics.checkNotNullExpressionValue(b11, "workManagerImpl.workTask…r.taskCoroutineDispatcher");
         final Job b12 = f.b(eVar, i10, b11, this);
-        this.f5761s.a(new Runnable() { // from class: s4.b
+        this.f5805s.a(new Runnable() { // from class: s4.b
             @Override // java.lang.Runnable
             public final void run() {
                 ConstraintTrackingWorker.t(Job.this);
             }
         }, new s());
         if (eVar.a(i10)) {
-            str3 = s4.d.f48718a;
+            str3 = s4.d.f48772a;
             e10.a(str3, "Constraints met for delegate " + l10);
             try {
-                c cVar = this.f5762t;
+                c cVar = this.f5806t;
                 Intrinsics.checkNotNull(cVar);
                 final ListenableFuture n10 = cVar.n();
                 Intrinsics.checkNotNullExpressionValue(n10, "delegate!!.startWork()");
@@ -124,19 +124,19 @@ public final class ConstraintTrackingWorker extends c implements d {
                 }, c());
                 return;
             } catch (Throwable th2) {
-                str4 = s4.d.f48718a;
+                str4 = s4.d.f48772a;
                 e10.b(str4, "Delegated worker " + l10 + " threw exception in startWork.", th2);
-                synchronized (this.f5759q) {
+                synchronized (this.f5803q) {
                     try {
-                        if (this.f5760r) {
-                            str5 = s4.d.f48718a;
+                        if (this.f5804r) {
+                            str5 = s4.d.f48772a;
                             e10.a(str5, "Constraints were unmet, Retrying.");
-                            androidx.work.impl.utils.futures.c future4 = this.f5761s;
+                            androidx.work.impl.utils.futures.c future4 = this.f5805s;
                             Intrinsics.checkNotNullExpressionValue(future4, "future");
                             s4.d.e(future4);
                             return;
                         }
-                        androidx.work.impl.utils.futures.c future5 = this.f5761s;
+                        androidx.work.impl.utils.futures.c future5 = this.f5805s;
                         Intrinsics.checkNotNullExpressionValue(future5, "future");
                         s4.d.d(future5);
                         return;
@@ -146,9 +146,9 @@ public final class ConstraintTrackingWorker extends c implements d {
                 }
             }
         }
-        str2 = s4.d.f48718a;
+        str2 = s4.d.f48772a;
         e10.a(str2, "Constraints not met for delegate " + l10 + ". Requesting retry.");
-        androidx.work.impl.utils.futures.c future6 = this.f5761s;
+        androidx.work.impl.utils.futures.c future6 = this.f5805s;
         Intrinsics.checkNotNullExpressionValue(future6, "future");
         s4.d.e(future6);
     }
@@ -163,16 +163,16 @@ public final class ConstraintTrackingWorker extends c implements d {
     public static final void u(ConstraintTrackingWorker this$0, ListenableFuture innerFuture) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(innerFuture, "$innerFuture");
-        synchronized (this$0.f5759q) {
+        synchronized (this$0.f5803q) {
             try {
-                if (this$0.f5760r) {
-                    androidx.work.impl.utils.futures.c future = this$0.f5761s;
+                if (this$0.f5804r) {
+                    androidx.work.impl.utils.futures.c future = this$0.f5805s;
                     Intrinsics.checkNotNullExpressionValue(future, "future");
                     s4.d.e(future);
                 } else {
-                    this$0.f5761s.r(innerFuture);
+                    this$0.f5805s.r(innerFuture);
                 }
-                Unit unit = Unit.f33298a;
+                Unit unit = Unit.f33074a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -191,12 +191,12 @@ public final class ConstraintTrackingWorker extends c implements d {
         Intrinsics.checkNotNullParameter(workSpec, "workSpec");
         Intrinsics.checkNotNullParameter(state, "state");
         m e10 = m.e();
-        str = s4.d.f48718a;
+        str = s4.d.f48772a;
         e10.a(str, "Constraints changed for " + workSpec);
-        if (state instanceof b.C0491b) {
-            synchronized (this.f5759q) {
-                this.f5760r = true;
-                Unit unit = Unit.f33298a;
+        if (state instanceof b.C0502b) {
+            synchronized (this.f5803q) {
+                this.f5804r = true;
+                Unit unit = Unit.f33074a;
             }
         }
     }
@@ -205,7 +205,7 @@ public final class ConstraintTrackingWorker extends c implements d {
     public void l() {
         int i10;
         super.l();
-        c cVar = this.f5762t;
+        c cVar = this.f5806t;
         if (cVar != null && !cVar.j()) {
             if (Build.VERSION.SDK_INT >= 31) {
                 i10 = g();
@@ -224,7 +224,7 @@ public final class ConstraintTrackingWorker extends c implements d {
                 ConstraintTrackingWorker.v(ConstraintTrackingWorker.this);
             }
         });
-        androidx.work.impl.utils.futures.c future = this.f5761s;
+        androidx.work.impl.utils.futures.c future = this.f5805s;
         Intrinsics.checkNotNullExpressionValue(future, "future");
         return future;
     }

@@ -11,29 +11,29 @@ import androidx.fragment.app.FragmentManager;
 public class m extends DialogFragment {
 
     /* renamed from: d  reason: collision with root package name */
-    private Dialog f14829d;
+    private Dialog f14458d;
 
     /* renamed from: e  reason: collision with root package name */
-    private DialogInterface.OnCancelListener f14830e;
+    private DialogInterface.OnCancelListener f14459e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Dialog f14831i;
+    private Dialog f14460i;
 
     public static m z(Dialog dialog, DialogInterface.OnCancelListener onCancelListener) {
         m mVar = new m();
         Dialog dialog2 = (Dialog) gf.q.m(dialog, "Cannot display null dialog");
         dialog2.setOnCancelListener(null);
         dialog2.setOnDismissListener(null);
-        mVar.f14829d = dialog2;
+        mVar.f14458d = dialog2;
         if (onCancelListener != null) {
-            mVar.f14830e = onCancelListener;
+            mVar.f14459e = onCancelListener;
         }
         return mVar;
     }
 
     @Override // androidx.fragment.app.DialogFragment, android.content.DialogInterface.OnCancelListener
     public void onCancel(DialogInterface dialogInterface) {
-        DialogInterface.OnCancelListener onCancelListener = this.f14830e;
+        DialogInterface.OnCancelListener onCancelListener = this.f14459e;
         if (onCancelListener != null) {
             onCancelListener.onCancel(dialogInterface);
         }
@@ -41,13 +41,13 @@ public class m extends DialogFragment {
 
     @Override // androidx.fragment.app.DialogFragment
     public Dialog onCreateDialog(Bundle bundle) {
-        Dialog dialog = this.f14829d;
+        Dialog dialog = this.f14458d;
         if (dialog == null) {
             setShowsDialog(false);
-            if (this.f14831i == null) {
-                this.f14831i = new AlertDialog.Builder((Context) gf.q.l(getContext())).create();
+            if (this.f14460i == null) {
+                this.f14460i = new AlertDialog.Builder((Context) gf.q.l(getContext())).create();
             }
-            return this.f14831i;
+            return this.f14460i;
         }
         return dialog;
     }

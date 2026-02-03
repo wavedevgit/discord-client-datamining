@@ -11,7 +11,7 @@ public final class g extends ActivityResultContract {
     public Intent createIntent(Context context, String input) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(input, "input");
-        return f.f890a.a(new String[]{input});
+        return f.f934a.a(new String[]{input});
     }
 
     @Override // androidx.activity.result.contract.ActivityResultContract

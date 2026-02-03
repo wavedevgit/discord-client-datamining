@@ -9,62 +9,62 @@ import qa.c;
 public class ImageDecodeOptions {
 
     /* renamed from: m  reason: collision with root package name */
-    private static final ImageDecodeOptions f11445m = b().a();
+    private static final ImageDecodeOptions f11074m = b().a();
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f11446a;
+    public final int f11075a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f11447b;
+    public final int f11076b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final boolean f11448c;
+    public final boolean f11077c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final boolean f11449d;
+    public final boolean f11078d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final boolean f11450e;
+    public final boolean f11079e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final boolean f11451f;
+    public final boolean f11080f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final boolean f11452g;
+    public final boolean f11081g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final Bitmap.Config f11453h;
+    public final Bitmap.Config f11082h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final Bitmap.Config f11454i;
+    public final Bitmap.Config f11083i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final c f11455j;
+    public final c f11084j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final ColorSpace f11456k;
+    public final ColorSpace f11085k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final boolean f11457l;
+    private final boolean f11086l;
 
     public ImageDecodeOptions(b bVar) {
-        this.f11446a = bVar.l();
-        this.f11447b = bVar.k();
-        this.f11448c = bVar.h();
-        this.f11449d = bVar.n();
-        this.f11450e = bVar.m();
-        this.f11451f = bVar.g();
-        this.f11452g = bVar.j();
-        this.f11453h = bVar.c();
-        this.f11454i = bVar.b();
-        this.f11455j = bVar.f();
+        this.f11075a = bVar.l();
+        this.f11076b = bVar.k();
+        this.f11077c = bVar.h();
+        this.f11078d = bVar.n();
+        this.f11079e = bVar.m();
+        this.f11080f = bVar.g();
+        this.f11081g = bVar.j();
+        this.f11082h = bVar.c();
+        this.f11083i = bVar.b();
+        this.f11084j = bVar.f();
         bVar.d();
-        this.f11456k = bVar.e();
-        this.f11457l = bVar.i();
+        this.f11085k = bVar.e();
+        this.f11086l = bVar.i();
     }
 
     public static ImageDecodeOptions a() {
-        return f11445m;
+        return f11074m;
     }
 
     public static b b() {
@@ -72,7 +72,7 @@ public class ImageDecodeOptions {
     }
 
     protected h.a c() {
-        return h.b(this).a("minDecodeIntervalMs", this.f11446a).a("maxDimensionPx", this.f11447b).c("decodePreviewFrame", this.f11448c).c("useLastFrameForPreview", this.f11449d).c("useEncodedImageForPreview", this.f11450e).c("decodeAllFrames", this.f11451f).c("forceStaticImage", this.f11452g).b("bitmapConfigName", this.f11453h.name()).b("animatedBitmapConfigName", this.f11454i.name()).b("customImageDecoder", this.f11455j).b("bitmapTransformation", null).b("colorSpace", this.f11456k);
+        return h.b(this).a("minDecodeIntervalMs", this.f11075a).a("maxDimensionPx", this.f11076b).c("decodePreviewFrame", this.f11077c).c("useLastFrameForPreview", this.f11078d).c("useEncodedImageForPreview", this.f11079e).c("decodeAllFrames", this.f11080f).c("forceStaticImage", this.f11081g).b("bitmapConfigName", this.f11082h.name()).b("animatedBitmapConfigName", this.f11083i.name()).b("customImageDecoder", this.f11084j).b("bitmapTransformation", null).b("colorSpace", this.f11085k);
     }
 
     public boolean equals(Object obj) {
@@ -83,14 +83,14 @@ public class ImageDecodeOptions {
             return false;
         }
         ImageDecodeOptions imageDecodeOptions = (ImageDecodeOptions) obj;
-        if (this.f11446a != imageDecodeOptions.f11446a || this.f11447b != imageDecodeOptions.f11447b || this.f11448c != imageDecodeOptions.f11448c || this.f11449d != imageDecodeOptions.f11449d || this.f11450e != imageDecodeOptions.f11450e || this.f11451f != imageDecodeOptions.f11451f || this.f11452g != imageDecodeOptions.f11452g) {
+        if (this.f11075a != imageDecodeOptions.f11075a || this.f11076b != imageDecodeOptions.f11076b || this.f11077c != imageDecodeOptions.f11077c || this.f11078d != imageDecodeOptions.f11078d || this.f11079e != imageDecodeOptions.f11079e || this.f11080f != imageDecodeOptions.f11080f || this.f11081g != imageDecodeOptions.f11081g) {
             return false;
         }
-        boolean z10 = this.f11457l;
-        if (!z10 && this.f11453h != imageDecodeOptions.f11453h) {
+        boolean z10 = this.f11086l;
+        if (!z10 && this.f11082h != imageDecodeOptions.f11082h) {
             return false;
         }
-        if ((z10 || this.f11454i == imageDecodeOptions.f11454i) && this.f11455j == imageDecodeOptions.f11455j && this.f11456k == imageDecodeOptions.f11456k) {
+        if ((z10 || this.f11083i == imageDecodeOptions.f11083i) && this.f11084j == imageDecodeOptions.f11084j && this.f11085k == imageDecodeOptions.f11085k) {
             return true;
         }
         return false;
@@ -99,14 +99,14 @@ public class ImageDecodeOptions {
     public int hashCode() {
         int i10;
         int i11;
-        int i12 = (((((((((((this.f11446a * 31) + this.f11447b) * 31) + (this.f11448c ? 1 : 0)) * 31) + (this.f11449d ? 1 : 0)) * 31) + (this.f11450e ? 1 : 0)) * 31) + (this.f11451f ? 1 : 0)) * 31) + (this.f11452g ? 1 : 0);
-        if (!this.f11457l) {
-            i12 = (i12 * 31) + this.f11453h.ordinal();
+        int i12 = (((((((((((this.f11075a * 31) + this.f11076b) * 31) + (this.f11077c ? 1 : 0)) * 31) + (this.f11078d ? 1 : 0)) * 31) + (this.f11079e ? 1 : 0)) * 31) + (this.f11080f ? 1 : 0)) * 31) + (this.f11081g ? 1 : 0);
+        if (!this.f11086l) {
+            i12 = (i12 * 31) + this.f11082h.ordinal();
         }
         int i13 = 0;
-        if (!this.f11457l) {
+        if (!this.f11086l) {
             int i14 = i12 * 31;
-            Bitmap.Config config = this.f11454i;
+            Bitmap.Config config = this.f11083i;
             if (config != null) {
                 i11 = config.ordinal();
             } else {
@@ -115,14 +115,14 @@ public class ImageDecodeOptions {
             i12 = i14 + i11;
         }
         int i15 = i12 * 31;
-        c cVar = this.f11455j;
+        c cVar = this.f11084j;
         if (cVar != null) {
             i10 = cVar.hashCode();
         } else {
             i10 = 0;
         }
         int i16 = (i15 + i10) * 961;
-        ColorSpace colorSpace = this.f11456k;
+        ColorSpace colorSpace = this.f11085k;
         if (colorSpace != null) {
             i13 = colorSpace.hashCode();
         }

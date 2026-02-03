@@ -45,13 +45,13 @@ public final class StepStyles_DocumentStepBorderRadiusJsonAdapter extends h {
         StyleElements.Measurement measurement = null;
         StyleElements.Measurement measurement2 = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.options);
-            if (A0 == -1) {
-                reader.E0();
+            int t02 = reader.t0(this.options);
+            if (t02 == -1) {
+                reader.F0();
                 reader.P();
-            } else if (A0 == 0) {
+            } else if (t02 == 0) {
                 measurement = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
-            } else if (A0 == 1) {
+            } else if (t02 == 1) {
                 measurement2 = (StyleElements.Measurement) this.nullableMeasurementAdapter.fromJson(reader);
             }
         }
@@ -64,9 +64,9 @@ public final class StepStyles_DocumentStepBorderRadiusJsonAdapter extends h {
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (documentStepBorderRadius != null) {
             writer.l();
-            writer.A0("modal");
+            writer.t0("modal");
             this.nullableMeasurementAdapter.toJson(writer, documentStepBorderRadius.getModal());
-            writer.A0("imagePreview");
+            writer.t0("imagePreview");
             this.nullableMeasurementAdapter.toJson(writer, documentStepBorderRadius.getImagePreview());
             writer.E();
             return;

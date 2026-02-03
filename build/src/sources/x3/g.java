@@ -17,25 +17,25 @@ public interface g extends Closeable {
 
     void K(String str);
 
-    Cursor Q0(j jVar);
+    Cursor S0(j jVar);
 
     boolean S1();
 
     boolean d2();
 
-    void g0();
+    void h0();
 
-    void h0(String str, Object[] objArr);
-
-    void i0();
+    void i0(String str, Object[] objArr);
 
     boolean isOpen();
 
-    k k1(String str);
+    void j0();
+
+    k l1(String str);
 
     String q();
 
-    void s0();
+    void u0();
 
     int z1(String str, int i10, ContentValues contentValues, String str2, Object[] objArr);
 }

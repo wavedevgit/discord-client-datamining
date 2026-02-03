@@ -26,12 +26,12 @@ public final class FlaggedMessageActionBarViewHolder extends MessagePartViewHold
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$0(Function2 function2, String str, long j10, View view) {
-        function2.invoke(MessageId.m1084boximpl(str), ChannelId.m1058boximpl(j10));
+        function2.invoke(MessageId.m1086boximpl(str), ChannelId.m1060boximpl(j10));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void bind$lambda$1(Function2 function2, String str, long j10, View view) {
-        function2.invoke(MessageId.m1084boximpl(str), ChannelId.m1058boximpl(j10));
+        function2.invoke(MessageId.m1086boximpl(str), ChannelId.m1060boximpl(j10));
     }
 
     public final void bind(@NotNull FlaggedMessageActionBarAccessory messageActionBarAccessory, @NotNull final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationActions, @NotNull final Function2<? super MessageId, ? super ChannelId, Unit> onTapAutoModerationFeedback) {
@@ -39,17 +39,17 @@ public final class FlaggedMessageActionBarViewHolder extends MessagePartViewHold
         Intrinsics.checkNotNullParameter(onTapAutoModerationActions, "onTapAutoModerationActions");
         Intrinsics.checkNotNullParameter(onTapAutoModerationFeedback, "onTapAutoModerationFeedback");
         AutoModerationContext autoModerationContext = messageActionBarAccessory.getAutoModerationContext();
-        final long m234getChannelIdo4g7jtM = messageActionBarAccessory.getMessage().m234getChannelIdo4g7jtM();
-        final String m237getId3Eiw7ao = messageActionBarAccessory.getMessage().m237getId3Eiw7ao();
+        final long m236getChannelIdo4g7jtM = messageActionBarAccessory.getMessage().m236getChannelIdo4g7jtM();
+        final String m239getId3Eiw7ao = messageActionBarAccessory.getMessage().m239getId3Eiw7ao();
         this.actionBarView.setActions(autoModerationContext, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.m
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                FlaggedMessageActionBarViewHolder.bind$lambda$0(Function2.this, m237getId3Eiw7ao, m234getChannelIdo4g7jtM, view);
+                FlaggedMessageActionBarViewHolder.bind$lambda$0(Function2.this, m239getId3Eiw7ao, m236getChannelIdo4g7jtM, view);
             }
         }, new View.OnClickListener() { // from class: com.discord.chat.presentation.message.viewholder.n
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                FlaggedMessageActionBarViewHolder.bind$lambda$1(Function2.this, m237getId3Eiw7ao, m234getChannelIdo4g7jtM, view);
+                FlaggedMessageActionBarViewHolder.bind$lambda$1(Function2.this, m239getId3Eiw7ao, m236getChannelIdo4g7jtM, view);
             }
         });
     }

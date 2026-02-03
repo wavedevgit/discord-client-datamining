@@ -16,7 +16,7 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.SourceDebugExtension;
 import kotlin.text.StringsKt;
 import org.jetbrains.annotations.NotNull;
-import tr.r;
+import ur.r;
 @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\b\u0000\u0018\u0000 \u001b2\u00020\u0001:\u0001\u001bB\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eJ\u0012\u0010\u000f\u001a\u00020\f2\n\u0010\u0010\u001a\u00060\u0011j\u0002`\u0012J\b\u0010\u0013\u001a\u00020\fH\u0002J\b\u0010\u0014\u001a\u00020\fH\u0002J\u0014\u0010\u0015\u001a\u00020\f2\n\u0010\u0016\u001a\u00060\u0017j\u0002`\u0018H\u0002J\b\u0010\u0019\u001a\u00020\u001aH\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082.¢\u0006\u0002\n\u0000¨\u0006\u001c"}, d2 = {"Lcom/discord/crash_reporting/system_logs/SystemLogCapture;", "", "<init>", "()V", "buffer", "Lcom/discord/misc/utilities/collections/CircularByteBuffer;", "tombstoneBuffer", "memoryInfo", "Landroid/app/ActivityManager$MemoryInfo;", "activityManager", "Landroid/app/ActivityManager;", "startThread", "", "context", "Landroid/content/Context;", "appendOutput", "sb", "Ljava/lang/StringBuilder;", "Lkotlin/text/StringBuilder;", ViewProps.START, "readFromLogcat", "addExceptionToBuffer", "e", "Ljava/lang/Exception;", "Lkotlin/Exception;", "isLowMemory", "", "Companion", "crash_reporting_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 @SourceDebugExtension({"SMAP\nSystemLogCapture.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SystemLogCapture.kt\ncom/discord/crash_reporting/system_logs/SystemLogCapture\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,138:1\n13472#2,2:139\n*S KotlinDebug\n*F\n+ 1 SystemLogCapture.kt\ncom/discord/crash_reporting/system_logs/SystemLogCapture\n*L\n106#1:139,2\n*E\n"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -86,8 +86,8 @@ public final class SystemLogCapture {
                         return readFromLogcat$lambda$2$lambda$1;
                     }
                 });
-                Unit unit = Unit.f33298a;
-                tr.c.a(bufferedReader, null);
+                Unit unit = Unit.f33074a;
+                ur.c.a(bufferedReader, null);
             } finally {
                 start.destroy();
             }
@@ -107,7 +107,7 @@ public final class SystemLogCapture {
         if (SystemLogUtils.INSTANCE.getRegexExtractTombstone$crash_reporting_release().i(line)) {
             systemLogCapture.tombstoneBuffer.addLine(line);
         }
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     private final void start() {
@@ -139,7 +139,7 @@ public final class SystemLogCapture {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit startThread$lambda$0(SystemLogCapture systemLogCapture) {
         systemLogCapture.start();
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     public final void appendOutput(@NotNull StringBuilder sb2) {
@@ -151,7 +151,7 @@ public final class SystemLogCapture {
     public final void startThread(@NotNull Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
         this.activityManager = (ActivityManager) context.getSystemService(ActivityManager.class);
-        mr.a.b(true, true, null, SystemLogCapture.class.getSimpleName(), 0, new Function0() { // from class: com.discord.crash_reporting.system_logs.b
+        nr.a.b(true, true, null, SystemLogCapture.class.getSimpleName(), 0, new Function0() { // from class: com.discord.crash_reporting.system_logs.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit startThread$lambda$0;

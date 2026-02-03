@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var0;
         var0 = function() { // Environment: var0
-            _fun78062: for (var _fun78062_ip = 0;;) switch (_fun78062_ip) {
+            _fun78455: for (var _fun78455_ip = 0;;) switch (_fun78455_ip) {
                 case 0:
                     var4 = _closure1_slot2;
                     var3 = _closure1_slot4;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var1 == var4;
                     var5 = undefined;
                     if (var6) {
-                        _fun78062_ip = 79;
-                        continue _fun78062
+                        _fun78455_ip = 79;
+                        continue _fun78455
                     }
                 case 74:
                     var5 = var4.name;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var1 != var5;
                     var4 = 'Minecraft';
                     if (!var6) {
-                        _fun78062_ip = 95;
-                        continue _fun78062
+                        _fun78455_ip = 95;
+                        continue _fun78455
                     }
                 case 92:
                     var4 = var5;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var1 == var3;
                     var2 = undefined;
                     if (var4) {
-                        _fun78062_ip = 114;
-                        continue _fun78062
+                        _fun78455_ip = 114;
+                        continue _fun78455
                     }
                 case 109:
                     var2 = var3.name;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var1 != var2;
                     var1 = 'Hytale';
                     if (!var3) {
-                        _fun78062_ip = 130;
-                        continue _fun78062
+                        _fun78455_ip = 130;
+                        continue _fun78455
                     }
                 case 127:
                     var1 = var2;
@@ -111,4 +111,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 3445, 9875, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 3475, 9952, 566, 2]);

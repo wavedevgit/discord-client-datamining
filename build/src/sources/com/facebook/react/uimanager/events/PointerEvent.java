@@ -7,13 +7,13 @@ import com.facebook.react.bridge.ReactSoftExceptionLogger;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.TouchTargetHelper;
 import com.facebook.react.uimanager.events.Event;
-import ir.l;
-import ir.o;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import jr.l;
+import jr.o;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
@@ -437,7 +437,7 @@ public final class PointerEvent extends Event<PointerEvent> {
     }
 
     @Override // com.facebook.react.uimanager.events.Event
-    @ir.c
+    @jr.c
     public void dispatch(@NotNull RCTEventEmitter rctEventEmitter) {
         Intrinsics.checkNotNullParameter(rctEventEmitter, "rctEventEmitter");
         if (this.motionEvent == null) {
@@ -560,7 +560,7 @@ public final class PointerEvent extends Event<PointerEvent> {
 
     private PointerEvent() {
         this.coalescingKey = UNSET_COALESCING_KEY;
-        this.eventAnimationDriverMatchSpec$delegate = l.a(o.f31120i, new Function0() { // from class: com.facebook.react.uimanager.events.h
+        this.eventAnimationDriverMatchSpec$delegate = l.a(o.f32183i, new Function0() { // from class: com.facebook.react.uimanager.events.h
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Event.EventAnimationDriverMatchSpec eventAnimationDriverMatchSpec_delegate$lambda$1;

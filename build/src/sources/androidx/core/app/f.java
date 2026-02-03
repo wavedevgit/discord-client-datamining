@@ -3,7 +3,7 @@ package androidx.core.app;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f3090a = new Object();
+    private static final Object f3134a = new Object();
 
     /* JADX WARN: Code restructure failed: missing block: B:15:0x003c, code lost:
         if (r5 != null) goto L19;
@@ -23,7 +23,7 @@ public abstract class f {
     */
     public static void a(android.content.Context r5, java.lang.String r6) {
         /*
-            java.lang.Object r0 = androidx.core.app.f.f3090a
+            java.lang.Object r0 = androidx.core.app.f.f3134a
             monitor-enter(r0)
             java.lang.String r1 = ""
             boolean r1 = r6.equals(r1)     // Catch: java.lang.Throwable -> L12
@@ -121,7 +121,7 @@ public abstract class f {
     */
     public static java.lang.String b(android.content.Context r8) {
         /*
-            java.lang.Object r0 = androidx.core.app.f.f3090a
+            java.lang.Object r0 = androidx.core.app.f.f3134a
             monitor-enter(r0)
             java.lang.String r1 = ""
             java.lang.String r2 = "androidx.appcompat.app.AppCompatDelegate.application_locales_record_file"

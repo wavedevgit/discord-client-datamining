@@ -1,26 +1,50 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = dependencyMap;
-    var0 = 0;
-    var2 = var1[var0];
-    var1 = require;
-    var0 = undefined;
-    var3 = var1.bind(var0)(var2);
-    var2 = var3.registerAsset;
-    var1 = {
-        '__packager_asset': true,
-        'httpServerLocation': '/assets/images/user_settings',
-        'width': 234,
-        'height': 147.5,
-        'scales': null,
-        'hash': '251353afd104effe8e007def09df8df2',
-        'name': 'crunchyroll_link_intro',
-        'type': 'png'
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0, arg1() {
+        _fun51455: for (var _fun51455_ip = 0;;) switch (_fun51455_ip) {
+            case 0:
+                var5 = arg0;
+                var4 = arg1;
+                var1 = var5.length;
+                var0 = 1;
+                var3 = var1 - var0;
+                var2 = 0;
+                var1 = undefined;
+                if (!(var3 >= var2)) {
+                    _fun51455_ip = 48;
+                    continue _fun51455
+                }
+            case 26:
+                var0 = var5[var3];
+                var6 = var4.bind(var1)(var0);
+                var0 = var3;
+                if (var6) {
+                    _fun51455_ip = 56;
+                    continue _fun51455
+                }
+            case 41:
+                var3 = var0 - 1;
+                if (var3 >= var2) {
+                    _fun51455_ip = 26;
+                    continue _fun51455
+                }
+            case 48:
+                var1 = -1;
+                return var1;
+            case 56:
+                return var0;
+        }
     };
-    var4 = [2, 3];
-    var1.scales = var4;
-    var2 = var2.bind(var3)(var1);
-    var1 = module;
-    var1.exports = var2;
+    var1.default = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

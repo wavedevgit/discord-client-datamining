@@ -28,8 +28,6 @@ import io.sentry.protocol.b0;
 import io.sentry.protocol.s;
 import io.sentry.protocol.x;
 import io.sentry.util.q;
-import ir.p;
-import ir.v;
 import java.io.File;
 import java.lang.reflect.Field;
 import java.net.ConnectException;
@@ -49,6 +47,8 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import javax.net.ssl.SSLException;
 import javax.net.ssl.SSLHandshakeException;
+import jr.p;
+import jr.v;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
@@ -82,7 +82,7 @@ public final class CrashReporting {
     @NotNull
     private static final List<KClass> ignoreNetworkExceptionList = CollectionsKt.o(Reflection.getOrCreateKotlinClass(UnknownHostException.class), Reflection.getOrCreateKotlinClass(SocketTimeoutException.class), Reflection.getOrCreateKotlinClass(SocketException.class), Reflection.getOrCreateKotlinClass(ConnectException.class), Reflection.getOrCreateKotlinClass(SSLException.class), Reflection.getOrCreateKotlinClass(CertPathValidatorException.class), Reflection.getOrCreateKotlinClass(SSLHandshakeException.class));
     @NotNull
-    private static final Lazy maxEventSizeBytes$delegate = ir.l.b(new Function0() { // from class: com.discord.crash_reporting.a
+    private static final Lazy maxEventSizeBytes$delegate = jr.l.b(new Function0() { // from class: com.discord.crash_reporting.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             long maxEventSizeBytes_delegate$lambda$19;
@@ -106,7 +106,7 @@ public final class CrashReporting {
         static {
             BreadcrumbLevel[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
         }
 
         private BreadcrumbLevel(String str, int i10) {
@@ -142,7 +142,7 @@ public final class CrashReporting {
         static {
             ErrorLevel[] $values = $values();
             $VALUES = $values;
-            $ENTRIES = pr.a.a($values);
+            $ENTRIES = qr.a.a($values);
         }
 
         private ErrorLevel(String str, int i10) {
@@ -419,7 +419,7 @@ public final class CrashReporting {
     private final io.sentry.Breadcrumb handleBeforeBreadcrumb(io.sentry.Breadcrumb r11, io.sentry.Hint r12) {
         /*
             r10 = this;
-            java.lang.String r12 = r11.l()
+            java.lang.String r12 = r11.m()
             if (r12 == 0) goto Lea
             java.lang.String r0 = "analytics"
             boolean r0 = kotlin.jvm.internal.Intrinsics.areEqual(r12, r0)
@@ -736,7 +736,7 @@ public final class CrashReporting {
         options.setEnableAutoActivityLifecycleTracing(false);
         options.setTracesSampleRate(Double.valueOf(0.0d));
         options.setSampleRate(Double.valueOf(d10));
-        options.setProguardUuid("07050f54-3d53-4aab-a89f-60a55289c541");
+        options.setProguardUuid("8586c2d8-ba3d-40b4-acf5-8ffb03504336");
         options.setTag(TAG_BUILD_NUMBER, clientInfo.getVersionCode());
         options.setTag(TAG_APP_VERSION, clientInfo.getVersionName());
         options.setBeforeSend(new k7.c() { // from class: com.discord.crash_reporting.e
@@ -948,7 +948,7 @@ public final class CrashReporting {
 
     public final void captureException(@NotNull Throwable throwable, boolean z10) {
         Intrinsics.checkNotNullParameter(throwable, "throwable");
-        Log.e$default(Log.INSTANCE, "SentryBreadcrumb", ir.e.b(throwable), (Throwable) null, 4, (Object) null);
+        Log.e$default(Log.INSTANCE, "SentryBreadcrumb", jr.e.b(throwable), (Throwable) null, 4, (Object) null);
         if (!z10) {
             b5.l(throwable);
         } else if (!ignoreNetworkExceptionList.contains(Reflection.getOrCreateKotlinClass(throwable.getClass()))) {

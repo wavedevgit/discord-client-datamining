@@ -20,7 +20,7 @@ public final class GiftMessageAccessory extends MessageAccessory {
     }
 
     /* renamed from: copy-u7_MRrM$default  reason: not valid java name */
-    public static /* synthetic */ GiftMessageAccessory m589copyu7_MRrM$default(GiftMessageAccessory giftMessageAccessory, String str, int i10, GiftEmbed giftEmbed, int i11, Object obj) {
+    public static /* synthetic */ GiftMessageAccessory m591copyu7_MRrM$default(GiftMessageAccessory giftMessageAccessory, String str, int i10, GiftEmbed giftEmbed, int i11, Object obj) {
         if ((i11 & 1) != 0) {
             str = giftMessageAccessory.messageId;
         }
@@ -30,12 +30,12 @@ public final class GiftMessageAccessory extends MessageAccessory {
         if ((i11 & 4) != 0) {
             giftEmbed = giftMessageAccessory.gift;
         }
-        return giftMessageAccessory.m591copyu7_MRrM(str, i10, giftEmbed);
+        return giftMessageAccessory.m593copyu7_MRrM(str, i10, giftEmbed);
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
-    public final String m590component13Eiw7ao() {
+    public final String m592component13Eiw7ao() {
         return this.messageId;
     }
 
@@ -50,7 +50,7 @@ public final class GiftMessageAccessory extends MessageAccessory {
 
     @NotNull
     /* renamed from: copy-u7_MRrM  reason: not valid java name */
-    public final GiftMessageAccessory m591copyu7_MRrM(@NotNull String messageId, int i10, @NotNull GiftEmbed gift) {
+    public final GiftMessageAccessory m593copyu7_MRrM(@NotNull String messageId, int i10, @NotNull GiftEmbed gift) {
         Intrinsics.checkNotNullParameter(messageId, "messageId");
         Intrinsics.checkNotNullParameter(gift, "gift");
         return new GiftMessageAccessory(messageId, i10, gift, null);
@@ -62,7 +62,7 @@ public final class GiftMessageAccessory extends MessageAccessory {
         }
         if (obj instanceof GiftMessageAccessory) {
             GiftMessageAccessory giftMessageAccessory = (GiftMessageAccessory) obj;
-            return MessageId.m1088equalsimpl0(this.messageId, giftMessageAccessory.messageId) && this.index == giftMessageAccessory.index && Intrinsics.areEqual(this.gift, giftMessageAccessory.gift);
+            return MessageId.m1090equalsimpl0(this.messageId, giftMessageAccessory.messageId) && this.index == giftMessageAccessory.index && Intrinsics.areEqual(this.gift, giftMessageAccessory.gift);
         }
         return false;
     }
@@ -79,20 +79,20 @@ public final class GiftMessageAccessory extends MessageAccessory {
     @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
     @NotNull
     /* renamed from: getMessageId-3Eiw7ao */
-    public String mo536getMessageId3Eiw7ao() {
+    public String mo538getMessageId3Eiw7ao() {
         return this.messageId;
     }
 
     public int hashCode() {
-        return (((MessageId.m1089hashCodeimpl(this.messageId) * 31) + Integer.hashCode(this.index)) * 31) + this.gift.hashCode();
+        return (((MessageId.m1091hashCodeimpl(this.messageId) * 31) + Integer.hashCode(this.index)) * 31) + this.gift.hashCode();
     }
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        String m1093toStringimpl = MessageId.m1093toStringimpl(this.messageId);
         int i10 = this.index;
         GiftEmbed giftEmbed = this.gift;
-        return "GiftMessageAccessory(messageId=" + m1091toStringimpl + ", index=" + i10 + ", gift=" + giftEmbed + ")";
+        return "GiftMessageAccessory(messageId=" + m1093toStringimpl + ", index=" + i10 + ", gift=" + giftEmbed + ")";
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

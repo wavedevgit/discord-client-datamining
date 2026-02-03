@@ -17,13 +17,13 @@ import java.util.Map;
 public final class c implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Date f29873d;
+    private final Date f29439d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f29874e;
+    private final List f29440e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f29875i;
+    private Map f29441i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -42,16 +42,16 @@ public final class c implements w1 {
             Date date = null;
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
-                if (!l02.equals("discarded_events")) {
-                    if (!l02.equals("timestamp")) {
+                String m02 = e3Var.m0();
+                m02.getClass();
+                if (!m02.equals("discarded_events")) {
+                    if (!m02.equals("timestamp")) {
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, l02);
+                        e3Var.v1(iLogger, hashMap, m02);
                     } else {
-                        date = e3Var.r0(iLogger);
+                        date = e3Var.s0(iLogger);
                     }
                 } else {
                     arrayList.addAll(e3Var.g2(iLogger, new g.a()));
@@ -71,27 +71,27 @@ public final class c implements w1 {
     }
 
     public c(Date date, List list) {
-        this.f29873d = date;
-        this.f29874e = list;
+        this.f29439d = date;
+        this.f29440e = list;
     }
 
     public List a() {
-        return this.f29874e;
+        return this.f29440e;
     }
 
     public void b(Map map) {
-        this.f29875i = map;
+        this.f29441i = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("timestamp").f(k.h(this.f29873d));
-        f3Var.e("discarded_events").j(iLogger, this.f29874e);
-        Map map = this.f29875i;
+        f3Var.e("timestamp").f(k.h(this.f29439d));
+        f3Var.e("discarded_events").j(iLogger, this.f29440e);
+        Map map = this.f29441i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29875i.get(str));
+                f3Var.e(str).j(iLogger, this.f29441i.get(str));
             }
         }
         f3Var.y();

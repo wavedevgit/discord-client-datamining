@@ -10,7 +10,7 @@ import kotlin.Unit;
 import kotlin.enums.EnumEntries;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
-import pr.a;
+import qr.a;
 @Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001:\u0002\u0012\u0013B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000fJ\u0006\u0010\u0010\u001a\u00020\u0011R\u000e\u0010\u0004\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0014"}, d2 = {"Lcom/discord/lifecycle/ActivityResumedTracker;", "", "<init>", "()V", "lock", "resumedActivity", "Ljava/lang/ref/WeakReference;", "Landroid/app/Activity;", "lastPausedAtElapsedRealtime", "", "initialized", "", "init", "", "application", "Landroid/app/Application;", "snapshot", "Lcom/discord/lifecycle/ActivityResumedTracker$Snapshot;", "State", "Snapshot", "lifecycle_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class ActivityResumedTracker {
@@ -167,7 +167,7 @@ public final class ActivityResumedTracker {
                             ActivityResumedTracker.lastPausedAtElapsedRealtime = SystemClock.elapsedRealtime();
                             ActivityResumedTracker.resumedActivity = null;
                         }
-                        Unit unit = Unit.f33298a;
+                        Unit unit = Unit.f33074a;
                     } catch (Throwable th2) {
                         throw th2;
                     }
@@ -181,7 +181,7 @@ public final class ActivityResumedTracker {
                 obj = ActivityResumedTracker.lock;
                 synchronized (obj) {
                     ActivityResumedTracker.resumedActivity = new WeakReference(activity);
-                    Unit unit = Unit.f33298a;
+                    Unit unit = Unit.f33074a;
                 }
             }
 

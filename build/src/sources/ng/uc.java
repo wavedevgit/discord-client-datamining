@@ -5,26 +5,26 @@ import java.util.Iterator;
 final class uc extends pc {
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient oc f41740i;
+    private final transient oc f41603i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient mc f41741o;
+    private final transient mc f41604o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public uc(oc ocVar, mc mcVar) {
-        this.f41740i = ocVar;
-        this.f41741o = mcVar;
+        this.f41603i = ocVar;
+        this.f41604o = mcVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // ng.la
     public final int b(Object[] objArr, int i10) {
-        return this.f41741o.b(objArr, 0);
+        return this.f41604o.b(objArr, 0);
     }
 
     @Override // ng.la, java.util.AbstractCollection, java.util.Collection
     public final boolean contains(Object obj) {
-        if (this.f41740i.get(obj) != null) {
+        if (this.f41603i.get(obj) != null) {
             return true;
         }
         return false;
@@ -32,11 +32,11 @@ final class uc extends pc {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final /* synthetic */ Iterator iterator() {
-        return this.f41741o.listIterator(0);
+        return this.f41604o.listIterator(0);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f41740i.size();
+        return this.f41603i.size();
     }
 }

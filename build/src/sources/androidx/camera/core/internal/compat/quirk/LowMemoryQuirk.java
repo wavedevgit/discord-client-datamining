@@ -10,10 +10,10 @@ import java.util.Set;
 public class LowMemoryQuirk implements y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f2000a = new HashSet(Arrays.asList("SM-A520W", "MOTOG3"));
+    private static final Set f2044a = new HashSet(Arrays.asList("SM-A520W", "MOTOG3"));
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean c() {
-        return f2000a.contains(Build.MODEL.toUpperCase(Locale.US));
+        return f2044a.contains(Build.MODEL.toUpperCase(Locale.US));
     }
 }

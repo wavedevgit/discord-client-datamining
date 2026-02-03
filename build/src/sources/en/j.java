@@ -1,37 +1,41 @@
 package en;
 
-import android.view.View;
-import com.swmansion.rnscreens.Screen;
-import kotlin.collections.CollectionsKt;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.PixelUtil;
+import dn.b0;
 import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public abstract class j {
-    public static final boolean a(View view) {
-        Intrinsics.checkNotNullParameter(view, "<this>");
-        if (!view.isLaidOut() && view.getHeight() <= 0 && view.getWidth() <= 0) {
-            return false;
-        }
-        return true;
+public final class j extends b {
+
+    /* renamed from: e  reason: collision with root package name */
+    private final float f22990e;
+
+    /* renamed from: f  reason: collision with root package name */
+    private final float f22991f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final float f22992g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final float f22993h;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public j(b0 handler) {
+        super(handler);
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        this.f22990e = handler.L();
+        this.f22991f = handler.M();
+        this.f22992g = handler.J();
+        this.f22993h = handler.K();
     }
 
-    public static final boolean b(Screen screen) {
-        Intrinsics.checkNotNullParameter(screen, "<this>");
-        if (screen.getStackPresentation() == Screen.StackPresentation.f19165o && screen.getSheetDetents().size() == 1 && ((Number) CollectionsKt.o0(screen.getSheetDetents())).doubleValue() == -1.0d) {
-            return true;
-        }
-        return false;
-    }
-
-    public static final boolean c(Screen screen) {
-        Intrinsics.checkNotNullParameter(screen, "<this>");
-        return false;
-    }
-
-    public static final boolean d(Screen screen) {
-        Intrinsics.checkNotNullParameter(screen, "<this>");
-        if (screen.getStackPresentation() == Screen.StackPresentation.f19165o) {
-            return true;
-        }
-        return false;
+    @Override // en.b
+    public void a(WritableMap eventData) {
+        Intrinsics.checkNotNullParameter(eventData, "eventData");
+        super.a(eventData);
+        eventData.putDouble("x", PixelUtil.toDIPFromPixel(this.f22990e));
+        eventData.putDouble("y", PixelUtil.toDIPFromPixel(this.f22991f));
+        eventData.putDouble("absoluteX", PixelUtil.toDIPFromPixel(this.f22992g));
+        eventData.putDouble("absoluteY", PixelUtil.toDIPFromPixel(this.f22993h));
     }
 }

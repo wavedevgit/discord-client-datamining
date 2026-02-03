@@ -250,4 +250,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.clearCommunicationDisabledNotice = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1674, 587, 630, 802, 797, 3037, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1674, 587, 630, 802, 797, 3067, 2]);

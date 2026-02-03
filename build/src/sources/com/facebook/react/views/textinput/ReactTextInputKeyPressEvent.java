@@ -58,7 +58,7 @@ public final class ReactTextInputKeyPressEvent extends Event<ReactTextInputKeyPr
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    @ir.c
+    @jr.c
     public ReactTextInputKeyPressEvent(int i10, @NotNull String key) {
         this(-1, i10, key);
         Intrinsics.checkNotNullParameter(key, "key");

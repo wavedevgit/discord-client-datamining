@@ -5,17 +5,17 @@ import android.graphics.PointF;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public final PointF f33280a;
+    public final PointF f33026a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final PointF f33281b;
+    public final PointF f33027b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final float f33282c;
+    public final float f33028c;
 
     public c(PointF pointF, PointF pointF2, float f10) {
-        this.f33280a = pointF;
-        this.f33281b = pointF2;
-        this.f33282c = f10;
+        this.f33026a = pointF;
+        this.f33027b = pointF2;
+        this.f33028c = f10;
     }
 }

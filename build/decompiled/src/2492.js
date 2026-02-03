@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/application_account_linking',
+        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcw==',
         'scales': null,
-        'hash': '051892652cfb1cec053854c8507655b5',
-        'name': 'AccountLinking.compiled.messages',
+        'hash': '3eba2980e5b743b2465a548d21997ee7',
+        'name': 'bg.messages.3eba2980e5b743b2465a548d21997ee7.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

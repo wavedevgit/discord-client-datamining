@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_RelationshipJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20204a;
+    private final m.b f19837a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20205b;
+    private final com.squareup.moshi.h f19838b;
 
     public ExchangeOneTimeLinkCodeResponse_RelationshipJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20204a = a10;
+        this.f19837a = a10;
         com.squareup.moshi.h f10 = moshi.f(ExchangeOneTimeLinkCodeResponse.RelationshipData.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20205b = f10;
+        this.f19838b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,13 +35,13 @@ public final class ExchangeOneTimeLinkCodeResponse_RelationshipJsonAdapter exten
         reader.r();
         ExchangeOneTimeLinkCodeResponse.RelationshipData relationshipData = null;
         while (reader.hasNext()) {
-            int A0 = reader.A0(this.f20204a);
-            if (A0 != -1) {
-                if (A0 == 0) {
-                    relationshipData = (ExchangeOneTimeLinkCodeResponse.RelationshipData) this.f20205b.fromJson(reader);
+            int t02 = reader.t0(this.f19837a);
+            if (t02 != -1) {
+                if (t02 == 0) {
+                    relationshipData = (ExchangeOneTimeLinkCodeResponse.RelationshipData) this.f19838b.fromJson(reader);
                 }
             } else {
-                reader.E0();
+                reader.F0();
                 reader.P();
             }
         }
@@ -55,8 +55,8 @@ public final class ExchangeOneTimeLinkCodeResponse_RelationshipJsonAdapter exten
         Intrinsics.checkNotNullParameter(writer, "writer");
         if (relationship != null) {
             writer.l();
-            writer.A0("data");
-            this.f20205b.toJson(writer, relationship.a());
+            writer.t0("data");
+            this.f19838b.toJson(writer, relationship.a());
             writer.E();
             return;
         }

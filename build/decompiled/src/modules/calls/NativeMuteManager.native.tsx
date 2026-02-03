@@ -79,15 +79,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = 300;
             var1.AUDIO_ROUTE_CHANGE_IGNORE_DURATION_MS = var5;
             var3 = function() { // Environment: var3
-                _fun93632: for (var _fun93632_ip = 0;;) switch (_fun93632_ip) {
+                _fun93606: for (var _fun93606_ip = 0;;) switch (_fun93606_ip) {
                     case 0:
                         var1 = _closure3_slot0;
                         var2 = var1.audioRouteChangeIgnoreTimer;
                         var1 = var2.isStarted;
                         var1 = var1.bind(var2)();
                         if (!var1) {
-                            _fun93632_ip = 46;
-                            continue _fun93632
+                            _fun93606_ip = 46;
+                            continue _fun93606
                         }
                     case 26:
                         var1 = _closure3_slot0;
@@ -133,27 +133,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = 'nativeMuteChanged';
         var0.key = var1;
         var1 = function() {
-            _fun93634: for (var _fun93634_ip = 0;;) switch (_fun93634_ip) {
+            _fun93608: for (var _fun93608_ip = 0;;) switch (_fun93608_ip) {
                 case 0:
                     var1 = this;
                     var3 = _closure1_slot6;
                     var2 = var3.hasActiveCallKitCall;
                     var2 = var2.bind(var3)();
                     if (var2) {
-                        _fun93634_ip = 121;
-                        continue _fun93634
+                        _fun93608_ip = 121;
+                        continue _fun93608
                     }
                 case 23:
                     var2 = var1.ignoreForNativeUnmute;
                     if (var2) {
-                        _fun93634_ip = 113;
-                        continue _fun93634
+                        _fun93608_ip = 113;
+                        continue _fun93608
                     }
                 case 32:
                     var2 = var1.ignoreForAudioRouteChange;
                     if (var2) {
-                        _fun93634_ip = 121;
-                        continue _fun93634
+                        _fun93608_ip = 121;
+                        continue _fun93608
                     }
                 case 41:
                     var2 = true;
@@ -173,8 +173,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = false;
                     var0.playSoundEffect = var4;
                     var0 = var2.bind(var3)(var0);
-                    _fun93634_ip = 121;
-                    continue _fun93634;
+                    _fun93608_ip = 121;
+                    continue _fun93608;
                 case 113:
                     var0 = false;
                     var1.ignoreForNativeUnmute = var0;
@@ -190,21 +190,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'updateNativeMute';
         var0.key = var5;
         var5 = function() {
-            _fun93635: for (var _fun93635_ip = 0;;) switch (_fun93635_ip) {
+            _fun93609: for (var _fun93609_ip = 0;;) switch (_fun93609_ip) {
                 case 0:
                     var2 = this;
                     var3 = _closure1_slot6;
                     var1 = var3.hasActiveCallKitCall;
                     var1 = var1.bind(var3)();
                     if (var1) {
-                        _fun93635_ip = 123;
-                        continue _fun93635
+                        _fun93609_ip = 123;
+                        continue _fun93609
                     }
                 case 23:
                     var1 = var2.needToUnmuteNative;
                     if (!var1) {
-                        _fun93635_ip = 123;
-                        continue _fun93635
+                        _fun93609_ip = 123;
+                        continue _fun93609
                     }
                 case 32:
                     var3 = false;
@@ -226,8 +226,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2.setNativeMuteState;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun93635_ip = 123;
-                        continue _fun93635
+                        _fun93609_ip = 123;
+                        continue _fun93609
                     }
                 case 112:
                     var0 = var1.call;
@@ -243,14 +243,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'handleVoiceChannelSelect';
         var0.key = var5;
         var4 = function arg0() {
-            _fun93636: for (var _fun93636_ip = 0;;) switch (_fun93636_ip) {
+            _fun93610: for (var _fun93610_ip = 0;;) switch (_fun93610_ip) {
                 case 0:
                     var0 = arg0;
                     var1 = var0.channelId;
                     var0 = null;
                     if (!(var0 == var1)) {
-                        _fun93636_ip = 92;
-                        continue _fun93636
+                        _fun93610_ip = 92;
+                        continue _fun93610
                     }
                 case 14:
                     var4 = _closure1_slot7;
@@ -267,8 +267,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var1.bind(var2)();
                     var2 = var3.setNativeMuteState;
                     if (!(var0 != var2)) {
-                        _fun93636_ip = 92;
-                        continue _fun93636
+                        _fun93610_ip = 92;
+                        continue _fun93610
                     }
                 case 79:
                     var1 = var2.call;
@@ -355,4 +355,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 8168, 3437, 3, 3591, 806, 8171, 3439, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 8200, 3467, 3, 3621, 806, 8203, 3469, 2]);

@@ -28,9 +28,9 @@ import com.discord.theme.R;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.backends.pipeline.PipelineDraweeControllerBuilder;
 import com.facebook.drawee.view.SimpleDraweeView;
-import ir.o;
 import java.util.ArrayList;
 import java.util.List;
+import jr.o;
 import kotlin.Lazy;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
@@ -189,7 +189,7 @@ public final class ContentInventoryComponentView extends ConstraintLayout implem
         super(context, attributeSet, i10);
         Intrinsics.checkNotNullParameter(context, "context");
         this.draweeControllerBuilder = e9.d.g();
-        this.binding$delegate = ir.l.a(o.f31120i, new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.g
+        this.binding$delegate = jr.l.a(o.f32183i, new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.g
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 MessageComponentContentInventoryViewBinding binding_delegate$lambda$4;

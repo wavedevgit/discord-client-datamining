@@ -1,12 +1,19 @@
 package ls;
 
-import gs.c1;
-import java.util.List;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlinx.coroutines.flow.FlowCollector;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public interface s {
-    String a();
+public final class s implements FlowCollector {
 
-    c1 b(List list);
+    /* renamed from: d  reason: collision with root package name */
+    public static final s f37614d = new s();
 
-    int c();
+    private s() {
+    }
+
+    @Override // kotlinx.coroutines.flow.FlowCollector
+    public Object emit(Object obj, Continuation continuation) {
+        return Unit.f33074a;
+    }
 }

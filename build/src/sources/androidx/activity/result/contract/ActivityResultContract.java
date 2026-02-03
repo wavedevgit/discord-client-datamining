@@ -11,14 +11,14 @@ public abstract class ActivityResultContract {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f880a;
+        private final Object f924a;
 
         public a(Object obj) {
-            this.f880a = obj;
+            this.f924a = obj;
         }
 
         public final Object a() {
-            return this.f880a;
+            return this.f924a;
         }
     }
 

@@ -5,34 +5,34 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class x {
 
     /* renamed from: a  reason: collision with root package name */
-    private final double f21631a;
+    private final double f21207a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final double f21632b;
+    private final double f21208b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final double f21633c;
+    private final double f21209c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final double f21634d;
+    private final double f21210d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final double f21635e;
+    private final double f21211e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final double f21636f;
+    private final double f21212f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final double f21637g;
+    private final double f21213g;
 
     public x(double d10, double d11, double d12, double d13, double d14, double d15, double d16) {
-        this.f21631a = d10;
-        this.f21632b = d11;
-        this.f21633c = d12;
-        this.f21634d = d13;
-        this.f21635e = d14;
-        this.f21636f = d15;
-        this.f21637g = d16;
+        this.f21207a = d10;
+        this.f21208b = d11;
+        this.f21209c = d12;
+        this.f21210d = d13;
+        this.f21211e = d14;
+        this.f21212f = d15;
+        this.f21213g = d16;
         if (Double.isNaN(d11) || Double.isNaN(d12) || Double.isNaN(d13) || Double.isNaN(d14) || Double.isNaN(d15) || Double.isNaN(d16) || Double.isNaN(d10)) {
             throw new IllegalArgumentException("Parameters cannot be NaN");
         }
@@ -57,23 +57,23 @@ public final class x {
     }
 
     public final double a() {
-        return this.f21632b;
+        return this.f21208b;
     }
 
     public final double b() {
-        return this.f21633c;
+        return this.f21209c;
     }
 
     public final double c() {
-        return this.f21634d;
+        return this.f21210d;
     }
 
     public final double d() {
-        return this.f21635e;
+        return this.f21211e;
     }
 
     public final double e() {
-        return this.f21636f;
+        return this.f21212f;
     }
 
     public boolean equals(Object obj) {
@@ -84,26 +84,26 @@ public final class x {
             return false;
         }
         x xVar = (x) obj;
-        if (Double.compare(this.f21631a, xVar.f21631a) == 0 && Double.compare(this.f21632b, xVar.f21632b) == 0 && Double.compare(this.f21633c, xVar.f21633c) == 0 && Double.compare(this.f21634d, xVar.f21634d) == 0 && Double.compare(this.f21635e, xVar.f21635e) == 0 && Double.compare(this.f21636f, xVar.f21636f) == 0 && Double.compare(this.f21637g, xVar.f21637g) == 0) {
+        if (Double.compare(this.f21207a, xVar.f21207a) == 0 && Double.compare(this.f21208b, xVar.f21208b) == 0 && Double.compare(this.f21209c, xVar.f21209c) == 0 && Double.compare(this.f21210d, xVar.f21210d) == 0 && Double.compare(this.f21211e, xVar.f21211e) == 0 && Double.compare(this.f21212f, xVar.f21212f) == 0 && Double.compare(this.f21213g, xVar.f21213g) == 0) {
             return true;
         }
         return false;
     }
 
     public final double f() {
-        return this.f21637g;
+        return this.f21213g;
     }
 
     public final double g() {
-        return this.f21631a;
+        return this.f21207a;
     }
 
     public int hashCode() {
-        return (((((((((((Double.hashCode(this.f21631a) * 31) + Double.hashCode(this.f21632b)) * 31) + Double.hashCode(this.f21633c)) * 31) + Double.hashCode(this.f21634d)) * 31) + Double.hashCode(this.f21635e)) * 31) + Double.hashCode(this.f21636f)) * 31) + Double.hashCode(this.f21637g);
+        return (((((((((((Double.hashCode(this.f21207a) * 31) + Double.hashCode(this.f21208b)) * 31) + Double.hashCode(this.f21209c)) * 31) + Double.hashCode(this.f21210d)) * 31) + Double.hashCode(this.f21211e)) * 31) + Double.hashCode(this.f21212f)) * 31) + Double.hashCode(this.f21213g);
     }
 
     public String toString() {
-        return "TransferParameters(gamma=" + this.f21631a + ", a=" + this.f21632b + ", b=" + this.f21633c + ", c=" + this.f21634d + ", d=" + this.f21635e + ", e=" + this.f21636f + ", f=" + this.f21637g + ')';
+        return "TransferParameters(gamma=" + this.f21207a + ", a=" + this.f21208b + ", b=" + this.f21209c + ", c=" + this.f21210d + ", d=" + this.f21211e + ", e=" + this.f21212f + ", f=" + this.f21213g + ')';
     }
 
     public /* synthetic */ x(double d10, double d11, double d12, double d13, double d14, double d15, double d16, int i10, DefaultConstructorMarker defaultConstructorMarker) {

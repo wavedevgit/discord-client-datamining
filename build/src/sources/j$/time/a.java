@@ -7,19 +7,19 @@ import java.util.regex.Pattern;
 public final class a implements Comparable, Serializable {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f31544c = new a(0, 0);
+    public static final a f31282c = new a(0, 0);
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f31545a;
+    public final long f31283a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f31546b;
+    public final int f31284b;
 
     @Override // java.lang.Comparable
     public final int compareTo(Object obj) {
         a aVar = (a) obj;
-        int compare = Long.compare(this.f31545a, aVar.f31545a);
-        return compare != 0 ? compare : this.f31546b - aVar.f31546b;
+        int compare = Long.compare(this.f31283a, aVar.f31283a);
+        return compare != 0 ? compare : this.f31284b - aVar.f31284b;
     }
 
     static {
@@ -39,14 +39,14 @@ public final class a implements Comparable, Serializable {
 
     public static a r(long j10, int i10) {
         if ((i10 | j10) == 0) {
-            return f31544c;
+            return f31282c;
         }
         return new a(j10, i10);
     }
 
     public a(long j10, int i10) {
-        this.f31545a = j10;
-        this.f31546b = i10;
+        this.f31283a = j10;
+        this.f31284b = i10;
     }
 
     public final boolean equals(Object obj) {
@@ -55,7 +55,7 @@ public final class a implements Comparable, Serializable {
         }
         if (obj instanceof a) {
             a aVar = (a) obj;
-            if (this.f31545a == aVar.f31545a && this.f31546b == aVar.f31546b) {
+            if (this.f31283a == aVar.f31283a && this.f31284b == aVar.f31284b) {
                 return true;
             }
         }
@@ -63,15 +63,15 @@ public final class a implements Comparable, Serializable {
     }
 
     public final int hashCode() {
-        long j10 = this.f31545a;
-        return (this.f31546b * 51) + ((int) (j10 ^ (j10 >>> 32)));
+        long j10 = this.f31283a;
+        return (this.f31284b * 51) + ((int) (j10 ^ (j10 >>> 32)));
     }
 
     public final String toString() {
-        if (this == f31544c) {
+        if (this == f31282c) {
             return "PT0S";
         }
-        long j10 = this.f31545a;
+        long j10 = this.f31283a;
         long j11 = j10 / 3600;
         int i10 = (int) ((j10 % 3600) / 60);
         int i11 = (int) (j10 % 60);
@@ -85,22 +85,22 @@ public final class a implements Comparable, Serializable {
             sb2.append(i10);
             sb2.append('M');
         }
-        if (i11 == 0 && this.f31546b == 0 && sb2.length() > 2) {
+        if (i11 == 0 && this.f31284b == 0 && sb2.length() > 2) {
             return sb2.toString();
         }
-        if (i11 >= 0 || this.f31546b <= 0) {
+        if (i11 >= 0 || this.f31284b <= 0) {
             sb2.append(i11);
         } else if (i11 == -1) {
             sb2.append("-0");
         } else {
             sb2.append(i11 + 1);
         }
-        if (this.f31546b > 0) {
+        if (this.f31284b > 0) {
             int length = sb2.length();
             if (i11 < 0) {
-                sb2.append(2000000000 - this.f31546b);
+                sb2.append(2000000000 - this.f31284b);
             } else {
-                sb2.append(this.f31546b + 1000000000);
+                sb2.append(this.f31284b + 1000000000);
             }
             while (sb2.charAt(sb2.length() - 1) == '0') {
                 sb2.setLength(sb2.length() - 1);

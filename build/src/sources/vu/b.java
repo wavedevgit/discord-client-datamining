@@ -1,66 +1,36 @@
 package vu;
 
 import java.util.List;
-import kotlin.jvm.functions.Function2;
-import kotlin.jvm.internal.Lambda;
-import lu.c;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
+import xu.a;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public final class b implements ku.b, lu.c {
+public final class b implements lu.b, xu.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f51975a = new b();
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-    static final class a extends Lambda implements Function2 {
-
-        /* renamed from: d  reason: collision with root package name */
-        public static final a f51976d = new a();
-
-        a() {
-            super(2);
-        }
-
-        public final Boolean a(int i10, int i11) {
-            boolean z10;
-            if (i10 >= i11) {
-                z10 = true;
-            } else {
-                z10 = false;
-            }
-            return Boolean.valueOf(z10);
-        }
-
-        @Override // kotlin.jvm.functions.Function2
-        public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
-            return a(((Number) obj).intValue(), ((Number) obj2).intValue());
-        }
-    }
+    public static final b f51539a = new b();
 
     private b() {
     }
 
-    @Override // lu.c
-    public boolean b(List list, Function2 function2) {
-        return c.a.b(this, list, function2);
-    }
-
-    @Override // lu.a
-    public Boolean c(Object obj) {
-        return c.a.f(this, obj);
-    }
-
     @Override // lu.b
-    public List d(Comparable comparable, Comparable comparable2) {
-        return c.a.e(this, comparable, comparable2);
+    /* renamed from: a */
+    public Double f(Object obj, Object obj2) {
+        List b10 = b(obj);
+        if (b10.size() < 2) {
+            b10 = null;
+        }
+        if (b10 != null) {
+            Double d10 = (Double) b10.get(1);
+            Double d11 = (Double) CollectionsKt.o0(b10);
+            if (d11 != null && d10 != null && !Intrinsics.areEqual(d10, 0.0d)) {
+                return Double.valueOf(d11.doubleValue() / d10.doubleValue());
+            }
+        }
+        return null;
     }
 
-    @Override // ku.b
-    public Object f(Object obj, Object obj2) {
-        return Boolean.valueOf(b(pv.a.c(obj), a.f51976d));
-    }
-
-    @Override // lu.b
-    public List g(Comparable comparable, Comparable comparable2) {
-        return c.a.d(this, comparable, comparable2);
+    public List b(Object obj) {
+        return a.C0754a.c(this, obj);
     }
 }

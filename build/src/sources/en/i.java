@@ -1,97 +1,42 @@
 package en;
+
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.uimanager.PixelUtil;
+import com.facebook.react.uimanager.ViewProps;
+import dn.x;
+import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class i {
+public final class i extends b {
 
-    /* renamed from: a  reason: collision with root package name */
-    public static final i f22986a = new i();
+    /* renamed from: e  reason: collision with root package name */
+    private final double f22986e;
 
-    private i() {
+    /* renamed from: f  reason: collision with root package name */
+    private final float f22987f;
+
+    /* renamed from: g  reason: collision with root package name */
+    private final float f22988g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private final double f22989h;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public i(x handler) {
+        super(handler);
+        Intrinsics.checkNotNullParameter(handler, "handler");
+        this.f22986e = handler.Y0();
+        this.f22987f = handler.W0();
+        this.f22988g = handler.X0();
+        this.f22989h = handler.Z0();
     }
 
-    public final int a(int i10, int i11) {
-        if (i11 != 1) {
-            if (i11 != 2) {
-                if (i11 == 3) {
-                    if (i10 == 3) {
-                        return 2;
-                    }
-                    if (i10 == 4) {
-                        return 0;
-                    }
-                    if (i10 == 5) {
-                        return -1;
-                    }
-                    if (i10 == 6) {
-                        return 1;
-                    }
-                    throw new IllegalArgumentException("[RNScreens] Invalid state " + i10 + " for detentCount " + i11);
-                }
-                throw new IllegalArgumentException("[RNScreens] Invalid state " + i10 + " for detentCount " + i11);
-            } else if (i10 == 3) {
-                return 1;
-            } else {
-                if (i10 == 4) {
-                    return 0;
-                }
-                if (i10 == 5) {
-                    return -1;
-                }
-                throw new IllegalArgumentException("[RNScreens] Invalid state " + i10 + " for detentCount " + i11);
-            }
-        } else if (i10 == 3) {
-            return 0;
-        } else {
-            if (i10 == 5) {
-                return -1;
-            }
-            throw new IllegalArgumentException("[RNScreens] Invalid state " + i10 + " for detentCount " + i11);
-        }
-    }
-
-    public final boolean b(int i10) {
-        if (i10 != 3 && i10 != 4 && i10 != 5 && i10 != 6) {
-            return false;
-        }
-        return true;
-    }
-
-    public final int c(int i10, int i11) {
-        if (i11 != 1) {
-            if (i11 != 2) {
-                if (i11 == 3) {
-                    if (i10 == -1) {
-                        return 5;
-                    }
-                    if (i10 == 0) {
-                        return 4;
-                    }
-                    if (i10 != 1) {
-                        if (i10 == 2) {
-                            return 3;
-                        }
-                        throw new IllegalArgumentException("[RNScreens] Invalid detentCount/index combination " + i11 + " / " + i10);
-                    }
-                    return 6;
-                }
-                throw new IllegalArgumentException("[RNScreens] Invalid detentCount/index combination " + i11 + " / " + i10);
-            } else if (i10 == -1) {
-                return 5;
-            } else {
-                if (i10 == 0) {
-                    return 4;
-                }
-                if (i10 == 1) {
-                    return 3;
-                }
-                throw new IllegalArgumentException("[RNScreens] Invalid detentCount/index combination " + i11 + " / " + i10);
-            }
-        } else if (i10 == -1) {
-            return 5;
-        } else {
-            if (i10 == 0) {
-                return 3;
-            }
-            throw new IllegalArgumentException("[RNScreens] Invalid detentCount/index combination " + i11 + " / " + i10);
-        }
+    @Override // en.b
+    public void a(WritableMap eventData) {
+        Intrinsics.checkNotNullParameter(eventData, "eventData");
+        super.a(eventData);
+        eventData.putDouble(ViewProps.ROTATION, this.f22986e);
+        eventData.putDouble("anchorX", PixelUtil.toDIPFromPixel(this.f22987f));
+        eventData.putDouble("anchorY", PixelUtil.toDIPFromPixel(this.f22988g));
+        eventData.putDouble("velocity", this.f22989h);
     }
 }

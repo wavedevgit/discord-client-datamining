@@ -21,7 +21,7 @@ import java.io.FileOutputStream;
 public final class d extends f {
 
     /* renamed from: u  reason: collision with root package name */
-    private final p f28890u;
+    private final p f28456u;
 
     public d(SentryAndroidOptions sentryAndroidOptions) {
         this(sentryAndroidOptions, io.sentry.android.core.internal.util.f.b());
@@ -42,16 +42,16 @@ public final class d extends f {
         }
         final File file = new File(outboxPath, "startup_crash");
         try {
-            boolean booleanValue = ((Boolean) k7Var.getRuntimeManager().a(new a.InterfaceC0405a() { // from class: io.sentry.android.core.cache.a
-                @Override // io.sentry.util.runtime.a.InterfaceC0405a
+            boolean booleanValue = ((Boolean) k7Var.getRuntimeManager().a(new a.InterfaceC0408a() { // from class: io.sentry.android.core.cache.a
+                @Override // io.sentry.util.runtime.a.InterfaceC0408a
                 public final Object run() {
                     Boolean valueOf;
                     valueOf = Boolean.valueOf(file.exists());
                     return valueOf;
                 }
             })).booleanValue();
-            if (booleanValue && !((Boolean) k7Var.getRuntimeManager().a(new a.InterfaceC0405a() { // from class: io.sentry.android.core.cache.b
-                @Override // io.sentry.util.runtime.a.InterfaceC0405a
+            if (booleanValue && !((Boolean) k7Var.getRuntimeManager().a(new a.InterfaceC0408a() { // from class: io.sentry.android.core.cache.b
+                @Override // io.sentry.util.runtime.a.InterfaceC0408a
                 public final Object run() {
                     Boolean valueOf;
                     valueOf = Boolean.valueOf(file.delete());
@@ -87,11 +87,11 @@ public final class d extends f {
     }
 
     private boolean O(l5 l5Var, Hint hint) {
-        boolean J0 = super.J0(l5Var, hint);
-        final SentryAndroidOptions sentryAndroidOptions = (SentryAndroidOptions) this.f29807d;
+        boolean L0 = super.L0(l5Var, hint);
+        final SentryAndroidOptions sentryAndroidOptions = (SentryAndroidOptions) this.f29373d;
         io.sentry.android.core.performance.i r10 = h.q().r();
         if (n.h(hint, UncaughtExceptionHandlerIntegration.a.class) && r10.q()) {
-            long a10 = this.f28890u.a() - r10.l();
+            long a10 = this.f28456u.a() - r10.m();
             if (a10 <= sentryAndroidOptions.getStartupCrashDurationThresholdMillis()) {
                 sentryAndroidOptions.getLogger().c(SentryLevel.DEBUG, "Startup Crash detected %d milliseconds after SDK init. Writing a startup crash marker file to disk.", Long.valueOf(a10));
                 Q();
@@ -103,45 +103,45 @@ public final class d extends f {
                 d.J(d.this, sentryAndroidOptions, (AnrV2Integration.b) obj);
             }
         });
-        return J0;
+        return L0;
     }
 
     private void P(Long l10) {
-        String cacheDirPath = this.f29807d.getCacheDirPath();
+        String cacheDirPath = this.f29373d.getCacheDirPath();
         if (cacheDirPath == null) {
-            this.f29807d.getLogger().c(SentryLevel.DEBUG, "Cache dir path is null, the ANR marker will not be written", new Object[0]);
+            this.f29373d.getLogger().c(SentryLevel.DEBUG, "Cache dir path is null, the ANR marker will not be written", new Object[0]);
             return;
         }
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(new File(cacheDirPath, "last_anr_report"));
-            fileOutputStream.write(String.valueOf(l10).getBytes(f29806p));
+            fileOutputStream.write(String.valueOf(l10).getBytes(f29372p));
             fileOutputStream.flush();
             fileOutputStream.close();
         } catch (Throwable th2) {
-            this.f29807d.getLogger().b(SentryLevel.ERROR, "Error writing the ANR marker to the disk", th2);
+            this.f29373d.getLogger().b(SentryLevel.ERROR, "Error writing the ANR marker to the disk", th2);
         }
     }
 
     private void Q() {
-        String outboxPath = this.f29807d.getOutboxPath();
+        String outboxPath = this.f29373d.getOutboxPath();
         if (outboxPath == null) {
-            this.f29807d.getLogger().c(SentryLevel.DEBUG, "Outbox path is null, the startup crash marker file will not be written", new Object[0]);
+            this.f29373d.getLogger().c(SentryLevel.DEBUG, "Outbox path is null, the startup crash marker file will not be written", new Object[0]);
             return;
         }
         try {
             new File(outboxPath, "startup_crash").createNewFile();
         } catch (Throwable th2) {
-            this.f29807d.getLogger().b(SentryLevel.ERROR, "Error writing the startup crash marker file to the disk", th2);
+            this.f29373d.getLogger().b(SentryLevel.ERROR, "Error writing the startup crash marker file to the disk", th2);
         }
     }
 
     @Override // io.sentry.cache.f, io.sentry.cache.g
-    public boolean J0(l5 l5Var, Hint hint) {
+    public boolean L0(l5 l5Var, Hint hint) {
         return O(l5Var, hint);
     }
 
     d(SentryAndroidOptions sentryAndroidOptions, p pVar) {
         super(sentryAndroidOptions, (String) y.c(sentryAndroidOptions.getCacheDirPath(), "cacheDirPath must not be null"), sentryAndroidOptions.getMaxCacheItems());
-        this.f28890u = pVar;
+        this.f28456u = pVar;
     }
 }

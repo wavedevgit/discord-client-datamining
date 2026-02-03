@@ -24,7 +24,7 @@ public final class APNGPackage extends BaseReactPackage {
     }
 
     /* renamed from: getModule  reason: collision with other method in class */
-    public Void m207getModule(@NotNull String name, @NotNull ReactApplicationContext reactContext) {
+    public Void m209getModule(@NotNull String name, @NotNull ReactApplicationContext reactContext) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         return null;
@@ -38,6 +38,6 @@ public final class APNGPackage extends BaseReactPackage {
 
     @Override // com.facebook.react.BaseReactPackage, com.facebook.react.ReactPackage
     public /* bridge */ /* synthetic */ NativeModule getModule(String str, ReactApplicationContext reactApplicationContext) {
-        return (NativeModule) m207getModule(str, reactApplicationContext);
+        return (NativeModule) m209getModule(str, reactApplicationContext);
     }
 }

@@ -20,14 +20,14 @@ import org.jetbrains.annotations.NotNull;
 
     @Override // kotlin.jvm.functions.Function8
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6, Object obj7, Object obj8) {
-        m44invokeOV3vCas(((StateMachineHandle) obj).m196unboximpl(), (Fit) obj2, (Alignment) obj3, ((Number) obj4).floatValue(), ((Number) obj5).floatValue(), ((Number) obj6).intValue(), ((Number) obj7).floatValue(), ((Number) obj8).floatValue());
-        return Unit.f33298a;
+        m46invokeOV3vCas(((StateMachineHandle) obj).m198unboximpl(), (Fit) obj2, (Alignment) obj3, ((Number) obj4).floatValue(), ((Number) obj5).floatValue(), ((Number) obj6).intValue(), ((Number) obj7).floatValue(), ((Number) obj8).floatValue());
+        return Unit.f33074a;
     }
 
     /* renamed from: invoke-OV3vCas  reason: not valid java name */
-    public final void m44invokeOV3vCas(long j10, @NotNull Fit p12, @NotNull Alignment p22, float f10, float f11, int i10, float f12, float f13) {
+    public final void m46invokeOV3vCas(long j10, @NotNull Fit p12, @NotNull Alignment p22, float f10, float f11, int i10, float f12, float f13) {
         Intrinsics.checkNotNullParameter(p12, "p1");
         Intrinsics.checkNotNullParameter(p22, "p2");
-        ((CommandQueue) this.receiver).m139pointerDownOV3vCas(j10, p12, p22, f10, f11, i10, f12, f13);
+        ((CommandQueue) this.receiver).m141pointerDownOV3vCas(j10, p12, p22, f10, f11, i10, f12, f13);
     }
 }

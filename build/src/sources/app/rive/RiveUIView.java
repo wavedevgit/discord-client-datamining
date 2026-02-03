@@ -13,8 +13,8 @@ import app.rive.core.ArtboardHandle;
 import app.rive.core.CommandQueue;
 import app.rive.core.RiveSurface;
 import app.rive.core.StateMachineHandle;
-import gs.i;
-import ir.q;
+import hs.i;
+import jr.q;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -91,28 +91,28 @@ public final class RiveUIView extends FrameLayout {
     }
 
     public final void setRiveFile(@NotNull RiveFile file, Artboard artboard, String str) {
-        long m111createDefaultArtboard6NrLy0M;
-        StateMachineHandle m190boximpl;
+        long m113createDefaultArtboard6NrLy0M;
+        StateMachineHandle m192boximpl;
         Intrinsics.checkNotNullParameter(file, "file");
         this.riveFile = file;
         if (artboard != null) {
-            m111createDefaultArtboard6NrLy0M = artboard.m15getArtboardHandlenSTdbJo$kotlin_release();
+            m113createDefaultArtboard6NrLy0M = artboard.m17getArtboardHandlenSTdbJo$kotlin_release();
         } else {
-            m111createDefaultArtboard6NrLy0M = file.getCommandQueue$kotlin_release().m111createDefaultArtboard6NrLy0M(file.m31getFileHandleENT3xMk$kotlin_release());
+            m113createDefaultArtboard6NrLy0M = file.getCommandQueue$kotlin_release().m113createDefaultArtboard6NrLy0M(file.m33getFileHandleENT3xMk$kotlin_release());
         }
-        this.artboardHandle = ArtboardHandle.m92boximpl(m111createDefaultArtboard6NrLy0M);
+        this.artboardHandle = ArtboardHandle.m94boximpl(m113createDefaultArtboard6NrLy0M);
         if (str != null) {
             CommandQueue commandQueue$kotlin_release = file.getCommandQueue$kotlin_release();
             ArtboardHandle artboardHandle = this.artboardHandle;
             Intrinsics.checkNotNull(artboardHandle);
-            m190boximpl = StateMachineHandle.m190boximpl(commandQueue$kotlin_release.m113createStateMachineByNameItmKBmM(artboardHandle.m98unboximpl(), str));
+            m192boximpl = StateMachineHandle.m192boximpl(commandQueue$kotlin_release.m115createStateMachineByNameItmKBmM(artboardHandle.m100unboximpl(), str));
         } else {
             CommandQueue commandQueue$kotlin_release2 = file.getCommandQueue$kotlin_release();
             ArtboardHandle artboardHandle2 = this.artboardHandle;
             Intrinsics.checkNotNull(artboardHandle2);
-            m190boximpl = StateMachineHandle.m190boximpl(commandQueue$kotlin_release2.m112createDefaultStateMachinexY8vNfM(artboardHandle2.m98unboximpl()));
+            m192boximpl = StateMachineHandle.m192boximpl(commandQueue$kotlin_release2.m114createDefaultStateMachinexY8vNfM(artboardHandle2.m100unboximpl()));
         }
-        this.stateMachineHandle = m190boximpl;
+        this.stateMachineHandle = m192boximpl;
         if (this.surface != null && this.riveSurface == null) {
             CommandQueue commandQueue$kotlin_release3 = file.getCommandQueue$kotlin_release();
             Surface surface = this.surface;

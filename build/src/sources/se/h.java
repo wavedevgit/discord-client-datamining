@@ -7,21 +7,21 @@ import java.util.List;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f49017a;
+    private final n f49071a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected final f f49018b;
+    protected final f f49072b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f49019c;
+    private final List f49073c;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public h(n nVar, com.google.android.gms.common.util.d dVar) {
         q.l(nVar);
-        this.f49017a = nVar;
-        this.f49019c = new ArrayList();
+        this.f49071a = nVar;
+        this.f49073c = new ArrayList();
         f fVar = new f(this, dVar);
         fVar.a();
-        this.f49018b = fVar;
+        this.f49072b = fVar;
     }
 }

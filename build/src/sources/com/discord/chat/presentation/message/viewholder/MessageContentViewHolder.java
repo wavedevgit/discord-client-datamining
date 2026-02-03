@@ -46,15 +46,15 @@ public final class MessageContentViewHolder extends MessagePartViewHolder {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$0(Function2 function2, MessageContentAccessory messageContentAccessory, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
-        function2.invoke(MessageId.m1084boximpl(messageContentAccessory.mo536getMessageId3Eiw7ao()), node);
-        return Unit.f33298a;
+        function2.invoke(MessageId.m1086boximpl(messageContentAccessory.mo538getMessageId3Eiw7ao()), node);
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$1(MessageContentViewHolder messageContentViewHolder, Function1 function1) {
         messageContentViewHolder.lastMessageContent = null;
         function1.invoke(messageContentViewHolder);
-        return Unit.f33298a;
+        return Unit.f33074a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -103,7 +103,7 @@ public final class MessageContentViewHolder extends MessagePartViewHolder {
         MessageContentView messageContentView = this.messageContentView;
         MessageMargins margins = messageContentItem.getMargins();
         StructurableText messageContent = messageContentItem.getMessageContent();
-        String mo536getMessageId3Eiw7ao = messageContentItem.mo536getMessageId3Eiw7ao();
+        String mo538getMessageId3Eiw7ao = messageContentItem.mo538getMessageId3Eiw7ao();
         boolean shouldAnimateEmoji = messageContentItem.getShouldAnimateEmoji();
         boolean shouldShowLinkDecorations = messageContentItem.getShouldShowLinkDecorations();
         boolean shouldShowRoleDot = messageContentItem.getShouldShowRoleDot();
@@ -114,7 +114,7 @@ public final class MessageContentViewHolder extends MessagePartViewHolder {
         Truncation truncation = messageContentItem.getTruncation();
         int constrainedWidth = messageContentItem.getConstrainedWidth();
         DiscordThemeObject theme = messageContentItem.getTheme();
-        MessageContentView.m698setMessageContent4q5Jro$default(messageContentView, margins, messageContent, mo536getMessageId3Eiw7ao, shouldAnimateEmoji, shouldShowLinkDecorations, shouldShowRoleDot, shouldShowRoleOnName, new Function1() { // from class: com.discord.chat.presentation.message.viewholder.d0
+        MessageContentView.m700setMessageContent4q5Jro$default(messageContentView, margins, messageContent, mo538getMessageId3Eiw7ao, shouldAnimateEmoji, shouldShowLinkDecorations, shouldShowRoleDot, shouldShowRoleOnName, new Function1() { // from class: com.discord.chat.presentation.message.viewholder.d0
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit bind$lambda$0;

@@ -12,10 +12,10 @@ public final class VersionRequirementTable {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final VersionRequirementTable f35018b = new VersionRequirementTable(CollectionsKt.l());
+    private static final VersionRequirementTable f34794b = new VersionRequirementTable(CollectionsKt.l());
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f35019a;
+    private final List f34795a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -36,7 +36,7 @@ public final class VersionRequirementTable {
 
         @NotNull
         public final VersionRequirementTable getEMPTY() {
-            return VersionRequirementTable.f35018b;
+            return VersionRequirementTable.f34794b;
         }
 
         private Companion() {
@@ -48,6 +48,6 @@ public final class VersionRequirementTable {
     }
 
     private VersionRequirementTable(List list) {
-        this.f35019a = list;
+        this.f34795a = list;
     }
 }

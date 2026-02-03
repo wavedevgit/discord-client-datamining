@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Pile/native/PileOverflow.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun62071: for (var _fun62071_ip = 0;;) switch (_fun62071_ip) {
+        _fun62176: for (var _fun62176_ip = 0;;) switch (_fun62176_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.size;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var12 >= var6;
                 var6 = 4;
                 if (!var8) {
-                    _fun62071_ip = 135;
-                    continue _fun62071
+                    _fun62176_ip = 135;
+                    continue _fun62176
                 }
             case 132:
                 var6 = 8;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var8 != var11;
                 var8 = 'text-md/semibold';
                 if (!var12) {
-                    _fun62071_ip = 220;
-                    continue _fun62071
+                    _fun62176_ip = 220;
+                    continue _fun62176
                 }
             case 217:
                 var8 = var11;
@@ -178,4 +178,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PileOverflow = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1676, 33, 1297, 671, 632, 3902, 1604, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1676, 33, 1297, 671, 632, 3932, 1604, 2]);

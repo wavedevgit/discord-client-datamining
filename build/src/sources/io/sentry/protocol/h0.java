@@ -14,28 +14,28 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class h0 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f30371d;
+    private String f29937d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f30372e;
+    private String f29938e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30373i;
+    private String f29939i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f30374o;
+    private String f29940o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f30375p;
+    private String f29941p;
 
     /* renamed from: q  reason: collision with root package name */
-    private i f30376q;
+    private i f29942q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f30377r;
+    private Map f29943r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Map f30378s;
+    private Map f29944s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -46,48 +46,48 @@ public final class h0 implements w1 {
             h0 h0Var = new h0();
             ConcurrentHashMap concurrentHashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
+                String m02 = e3Var.m0();
+                m02.getClass();
                 char c10 = 65535;
-                switch (l02.hashCode()) {
+                switch (m02.hashCode()) {
                     case -265713450:
-                        if (l02.equals(NotificationRenderer.USERNAME)) {
+                        if (m02.equals(NotificationRenderer.USERNAME)) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case 3355:
-                        if (l02.equals(StackTraceHelper.ID_KEY)) {
+                        if (m02.equals(StackTraceHelper.ID_KEY)) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 102225:
-                        if (l02.equals("geo")) {
+                        if (m02.equals("geo")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case 3076010:
-                        if (l02.equals("data")) {
+                        if (m02.equals("data")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 3373707:
-                        if (l02.equals(StackTraceHelper.NAME_KEY)) {
+                        if (m02.equals(StackTraceHelper.NAME_KEY)) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 96619420:
-                        if (l02.equals("email")) {
+                        if (m02.equals("email")) {
                             c10 = 5;
                             break;
                         }
                         break;
                     case 1480014044:
-                        if (l02.equals("ip_address")) {
+                        if (m02.equals("ip_address")) {
                             c10 = 6;
                             break;
                         }
@@ -95,31 +95,31 @@ public final class h0 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        h0Var.f30373i = e3Var.r1();
+                        h0Var.f29939i = e3Var.r1();
                         break;
                     case 1:
-                        h0Var.f30372e = e3Var.r1();
+                        h0Var.f29938e = e3Var.r1();
                         break;
                     case 2:
-                        h0Var.f30376q = new i.a().a(e3Var, iLogger);
+                        h0Var.f29942q = new i.a().a(e3Var, iLogger);
                         break;
                     case 3:
-                        h0Var.f30377r = io.sentry.util.c.b((Map) e3Var.V1());
+                        h0Var.f29943r = io.sentry.util.c.b((Map) e3Var.V1());
                         break;
                     case 4:
-                        h0Var.f30375p = e3Var.r1();
+                        h0Var.f29941p = e3Var.r1();
                         break;
                     case 5:
-                        h0Var.f30371d = e3Var.r1();
+                        h0Var.f29937d = e3Var.r1();
                         break;
                     case 6:
-                        h0Var.f30374o = e3Var.r1();
+                        h0Var.f29940o = e3Var.r1();
                         break;
                     default:
                         if (concurrentHashMap == null) {
                             concurrentHashMap = new ConcurrentHashMap();
                         }
-                        e3Var.v1(iLogger, concurrentHashMap, l02);
+                        e3Var.v1(iLogger, concurrentHashMap, m02);
                         break;
                 }
             }
@@ -138,7 +138,7 @@ public final class h0 implements w1 {
         }
         if (obj != null && h0.class == obj.getClass()) {
             h0 h0Var = (h0) obj;
-            if (io.sentry.util.y.a(this.f30371d, h0Var.f30371d) && io.sentry.util.y.a(this.f30372e, h0Var.f30372e) && io.sentry.util.y.a(this.f30373i, h0Var.f30373i) && io.sentry.util.y.a(this.f30374o, h0Var.f30374o)) {
+            if (io.sentry.util.y.a(this.f29937d, h0Var.f29937d) && io.sentry.util.y.a(this.f29938e, h0Var.f29938e) && io.sentry.util.y.a(this.f29939i, h0Var.f29939i) && io.sentry.util.y.a(this.f29940o, h0Var.f29940o)) {
                 return true;
             }
         }
@@ -146,82 +146,82 @@ public final class h0 implements w1 {
     }
 
     public String h() {
-        return this.f30371d;
+        return this.f29937d;
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f30371d, this.f30372e, this.f30373i, this.f30374o);
+        return io.sentry.util.y.b(this.f29937d, this.f29938e, this.f29939i, this.f29940o);
     }
 
     public String i() {
-        return this.f30372e;
+        return this.f29938e;
     }
 
     public String j() {
-        return this.f30374o;
+        return this.f29940o;
     }
 
     public String k() {
-        return this.f30373i;
+        return this.f29939i;
     }
 
     public void l(Map map) {
-        this.f30377r = io.sentry.util.c.b(map);
+        this.f29943r = io.sentry.util.c.b(map);
     }
 
     public void m(String str) {
-        this.f30371d = str;
+        this.f29937d = str;
     }
 
     public void n(i iVar) {
-        this.f30376q = iVar;
+        this.f29942q = iVar;
     }
 
     public void o(String str) {
-        this.f30372e = str;
+        this.f29938e = str;
     }
 
     public void p(String str) {
-        this.f30374o = str;
+        this.f29940o = str;
     }
 
     public void q(Map map) {
-        this.f30378s = map;
+        this.f29944s = map;
     }
 
     public void r(String str) {
-        this.f30373i = str;
+        this.f29939i = str;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30371d != null) {
-            f3Var.e("email").f(this.f30371d);
+        if (this.f29937d != null) {
+            f3Var.e("email").f(this.f29937d);
         }
-        if (this.f30372e != null) {
-            f3Var.e(StackTraceHelper.ID_KEY).f(this.f30372e);
+        if (this.f29938e != null) {
+            f3Var.e(StackTraceHelper.ID_KEY).f(this.f29938e);
         }
-        if (this.f30373i != null) {
-            f3Var.e(NotificationRenderer.USERNAME).f(this.f30373i);
+        if (this.f29939i != null) {
+            f3Var.e(NotificationRenderer.USERNAME).f(this.f29939i);
         }
-        if (this.f30374o != null) {
-            f3Var.e("ip_address").f(this.f30374o);
+        if (this.f29940o != null) {
+            f3Var.e("ip_address").f(this.f29940o);
         }
-        if (this.f30375p != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f30375p);
+        if (this.f29941p != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29941p);
         }
-        if (this.f30376q != null) {
+        if (this.f29942q != null) {
             f3Var.e("geo");
-            this.f30376q.serialize(f3Var, iLogger);
+            this.f29942q.serialize(f3Var, iLogger);
         }
-        if (this.f30377r != null) {
-            f3Var.e("data").j(iLogger, this.f30377r);
+        if (this.f29943r != null) {
+            f3Var.e("data").j(iLogger, this.f29943r);
         }
-        Map map = this.f30378s;
+        Map map = this.f29944s;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30378s.get(str);
+                Object obj = this.f29944s.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -230,13 +230,13 @@ public final class h0 implements w1 {
     }
 
     public h0(h0 h0Var) {
-        this.f30371d = h0Var.f30371d;
-        this.f30373i = h0Var.f30373i;
-        this.f30372e = h0Var.f30372e;
-        this.f30374o = h0Var.f30374o;
-        this.f30375p = h0Var.f30375p;
-        this.f30376q = h0Var.f30376q;
-        this.f30377r = io.sentry.util.c.b(h0Var.f30377r);
-        this.f30378s = io.sentry.util.c.b(h0Var.f30378s);
+        this.f29937d = h0Var.f29937d;
+        this.f29939i = h0Var.f29939i;
+        this.f29938e = h0Var.f29938e;
+        this.f29940o = h0Var.f29940o;
+        this.f29941p = h0Var.f29941p;
+        this.f29942q = h0Var.f29942q;
+        this.f29943r = io.sentry.util.c.b(h0Var.f29943r);
+        this.f29944s = io.sentry.util.c.b(h0Var.f29944s);
     }
 }

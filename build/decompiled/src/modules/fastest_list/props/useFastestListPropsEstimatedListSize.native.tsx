@@ -43,18 +43,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot1;
         var2 = var3.useState;
         var1 = function() { // Environment: var1
-            _fun60975: for (var _fun60975_ip = 0;;) switch (_fun60975_ip) {
+            _fun61080: for (var _fun61080_ip = 0;;) switch (_fun61080_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = 'windowSize';
                     if (!(var0 !== var2)) {
-                        _fun60975_ip = 21;
-                        continue _fun60975
+                        _fun61080_ip = 21;
+                        continue _fun61080
                     }
                 case 15:
                     var0 = _closure2_slot0;
-                    _fun60975_ip = 64;
-                    continue _fun60975;
+                    _fun61080_ip = 64;
+                    continue _fun61080;
                 case 21:
                     var1 = _closure2_slot1;
                     var4 = _closure1_slot2;
@@ -62,13 +62,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = 'window';
                     var2 = var3.bind(var4)(var2);
                     if (var1) {
-                        _fun60975_ip = 56;
-                        continue _fun60975
+                        _fun61080_ip = 56;
+                        continue _fun61080
                     }
                 case 49:
                     var1 = var2.height;
-                    _fun60975_ip = 61;
-                    continue _fun60975;
+                    _fun61080_ip = 61;
+                    continue _fun61080;
                 case 56:
                     var1 = var2.width;
                 case 61:

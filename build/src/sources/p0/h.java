@@ -15,20 +15,20 @@ import x.y0;
 public final class h extends View {
 
     /* renamed from: d  reason: collision with root package name */
-    private Window f44804d;
+    private Window f44878d;
 
     /* renamed from: e  reason: collision with root package name */
-    private n0.i f44805e;
+    private n0.i f44879e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements n0.i {
 
         /* renamed from: a  reason: collision with root package name */
-        private float f44806a;
+        private float f44880a;
 
         /* renamed from: b  reason: collision with root package name */
-        private ValueAnimator f44807b;
+        private ValueAnimator f44881b;
 
         a() {
         }
@@ -36,15 +36,15 @@ public final class h extends View {
         @Override // x.n0.i
         public void a(long j10, final n0.j jVar) {
             y0.a("ScreenFlashView", "ScreenFlash#apply");
-            this.f44806a = h.this.getBrightness();
+            this.f44880a = h.this.getBrightness();
             h.this.setBrightness(1.0f);
-            ValueAnimator valueAnimator = this.f44807b;
+            ValueAnimator valueAnimator = this.f44881b;
             if (valueAnimator != null) {
                 valueAnimator.cancel();
             }
             h hVar = h.this;
             Objects.requireNonNull(jVar);
-            this.f44807b = hVar.e(new Runnable() { // from class: p0.g
+            this.f44881b = hVar.e(new Runnable() { // from class: p0.g
                 @Override // java.lang.Runnable
                 public final void run() {
                     n0.j.this.a();
@@ -55,13 +55,13 @@ public final class h extends View {
         @Override // x.n0.i
         public void clear() {
             y0.a("ScreenFlashView", "ScreenFlash#clearScreenFlashUi");
-            ValueAnimator valueAnimator = this.f44807b;
+            ValueAnimator valueAnimator = this.f44881b;
             if (valueAnimator != null) {
                 valueAnimator.cancel();
-                this.f44807b = null;
+                this.f44881b = null;
             }
             h.this.setAlpha(0.0f);
-            h.this.setBrightness(this.f44806a);
+            h.this.setBrightness(this.f44880a);
         }
     }
 
@@ -93,19 +93,19 @@ public final class h extends View {
 
     private void f(Window window) {
         a aVar;
-        if (this.f44804d != window) {
+        if (this.f44878d != window) {
             if (window == null) {
                 aVar = null;
             } else {
                 aVar = new a();
             }
-            this.f44805e = aVar;
+            this.f44879e = aVar;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public float getBrightness() {
-        Window window = this.f44804d;
+        Window window = this.f44878d;
         if (window == null) {
             y0.c("ScreenFlashView", "setBrightness: mScreenFlashWindow is null!");
             return Float.NaN;
@@ -115,14 +115,14 @@ public final class h extends View {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void setBrightness(float f10) {
-        if (this.f44804d == null) {
+        if (this.f44878d == null) {
             y0.c("ScreenFlashView", "setBrightness: mScreenFlashWindow is null!");
         } else if (Float.isNaN(f10)) {
             y0.c("ScreenFlashView", "setBrightness: value is NaN!");
         } else {
-            WindowManager.LayoutParams attributes = this.f44804d.getAttributes();
+            WindowManager.LayoutParams attributes = this.f44878d.getAttributes();
             attributes.screenBrightness = f10;
-            this.f44804d.setAttributes(attributes);
+            this.f44878d.setAttributes(attributes);
             y0.a("ScreenFlashView", "Brightness set to " + attributes.screenBrightness);
         }
     }
@@ -132,7 +132,7 @@ public final class h extends View {
     }
 
     public n0.i getScreenFlash() {
-        return this.f44805e;
+        return this.f44879e;
     }
 
     public long getVisibilityRampUpAnimationDurationMillis() {
@@ -146,7 +146,7 @@ public final class h extends View {
     public void setScreenFlashWindow(Window window) {
         p.a();
         f(window);
-        this.f44804d = window;
+        this.f44878d = window;
         setScreenFlashUiInfo(getScreenFlash());
     }
 
@@ -170,16 +170,16 @@ public final class h extends View {
     public class b implements Animator.AnimatorListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Runnable f44809a;
+        final /* synthetic */ Runnable f44883a;
 
         b(Runnable runnable) {
-            this.f44809a = runnable;
+            this.f44883a = runnable;
         }
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
             y0.a("ScreenFlashView", "ScreenFlash#apply: onAnimationEnd");
-            Runnable runnable = this.f44809a;
+            Runnable runnable = this.f44883a;
             if (runnable != null) {
                 runnable.run();
             }

@@ -6,31 +6,31 @@ import java.util.Iterator;
 public final class v extends t {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Object[] f26957p;
+    private static final Object[] f27052p;
 
     /* renamed from: q  reason: collision with root package name */
-    static final v f26958q;
+    static final v f27053q;
 
     /* renamed from: i  reason: collision with root package name */
-    final transient Object[] f26959i;
+    final transient Object[] f27054i;
 
     /* renamed from: o  reason: collision with root package name */
-    final transient Object[] f26960o;
+    final transient Object[] f27055o;
 
     static {
         Object[] objArr = new Object[0];
-        f26957p = objArr;
-        f26958q = new v(objArr, 0, objArr, 0, 0);
+        f27052p = objArr;
+        f27053q = new v(objArr, 0, objArr, 0, 0);
     }
 
     v(Object[] objArr, int i10, Object[] objArr2, int i11, int i12) {
-        this.f26959i = objArr;
-        this.f26960o = objArr2;
+        this.f27054i = objArr;
+        this.f27055o = objArr2;
     }
 
     @Override // gi.p
     final int b(Object[] objArr, int i10) {
-        System.arraycopy(this.f26959i, 0, objArr, 0, 0);
+        System.arraycopy(this.f27054i, 0, objArr, 0, 0);
         return 0;
     }
 
@@ -42,7 +42,7 @@ public final class v extends t {
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean contains(Object obj) {
         if (obj != null) {
-            int length = this.f26960o.length;
+            int length = this.f27055o.length;
             return false;
         }
         return false;
@@ -57,13 +57,13 @@ public final class v extends t {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // gi.p
     public final Object[] e() {
-        return this.f26959i;
+        return this.f27054i;
     }
 
     @Override // gi.t
     final s g() {
-        int i10 = s.f26951i;
-        return u.f26954p;
+        int i10 = s.f27046i;
+        return u.f27049p;
     }
 
     @Override // java.util.Collection, java.util.Set

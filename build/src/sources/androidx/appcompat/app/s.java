@@ -22,31 +22,31 @@ import java.util.ArrayList;
 public class s extends ActionBar {
 
     /* renamed from: a  reason: collision with root package name */
-    final z f1082a;
+    final z f1126a;
 
     /* renamed from: b  reason: collision with root package name */
-    final Window.Callback f1083b;
+    final Window.Callback f1127b;
 
     /* renamed from: c  reason: collision with root package name */
-    final e.g f1084c;
+    final e.g f1128c;
 
     /* renamed from: d  reason: collision with root package name */
-    boolean f1085d;
+    boolean f1129d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f1086e;
+    private boolean f1130e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f1087f;
+    private boolean f1131f;
 
     /* renamed from: g  reason: collision with root package name */
-    private ArrayList f1088g = new ArrayList();
+    private ArrayList f1132g = new ArrayList();
 
     /* renamed from: h  reason: collision with root package name */
-    private final Runnable f1089h = new a();
+    private final Runnable f1133h = new a();
 
     /* renamed from: i  reason: collision with root package name */
-    private final Toolbar.h f1090i;
+    private final Toolbar.h f1134i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Runnable {
@@ -66,7 +66,7 @@ public class s extends ActionBar {
 
         @Override // androidx.appcompat.widget.Toolbar.h
         public boolean onMenuItemClick(MenuItem menuItem) {
-            return s.this.f1083b.onMenuItemSelected(0, menuItem);
+            return s.this.f1127b.onMenuItemSelected(0, menuItem);
         }
     }
 
@@ -75,25 +75,25 @@ public class s extends ActionBar {
     public final class c implements j.a {
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f1093d;
+        private boolean f1137d;
 
         c() {
         }
 
         @Override // androidx.appcompat.view.menu.j.a
         public void a(androidx.appcompat.view.menu.e eVar, boolean z10) {
-            if (this.f1093d) {
+            if (this.f1137d) {
                 return;
             }
-            this.f1093d = true;
-            s.this.f1082a.q();
-            s.this.f1083b.onPanelClosed(108, eVar);
-            this.f1093d = false;
+            this.f1137d = true;
+            s.this.f1126a.q();
+            s.this.f1127b.onPanelClosed(108, eVar);
+            this.f1137d = false;
         }
 
         @Override // androidx.appcompat.view.menu.j.a
         public boolean b(androidx.appcompat.view.menu.e eVar) {
-            s.this.f1083b.onMenuOpened(108, eVar);
+            s.this.f1127b.onMenuOpened(108, eVar);
             return true;
         }
     }
@@ -111,10 +111,10 @@ public class s extends ActionBar {
 
         @Override // androidx.appcompat.view.menu.e.a
         public void b(androidx.appcompat.view.menu.e eVar) {
-            if (s.this.f1082a.e()) {
-                s.this.f1083b.onPanelClosed(108, eVar);
-            } else if (s.this.f1083b.onPreparePanel(0, null, eVar)) {
-                s.this.f1083b.onMenuOpened(108, eVar);
+            if (s.this.f1126a.e()) {
+                s.this.f1127b.onPanelClosed(108, eVar);
+            } else if (s.this.f1127b.onPreparePanel(0, null, eVar)) {
+                s.this.f1127b.onMenuOpened(108, eVar);
             }
         }
     }
@@ -128,9 +128,9 @@ public class s extends ActionBar {
         public boolean a(int i10) {
             if (i10 == 0) {
                 s sVar = s.this;
-                if (!sVar.f1085d) {
-                    sVar.f1082a.f();
-                    s.this.f1085d = true;
+                if (!sVar.f1129d) {
+                    sVar.f1126a.f();
+                    s.this.f1129d = true;
                     return false;
                 }
                 return false;
@@ -141,7 +141,7 @@ public class s extends ActionBar {
         @Override // androidx.appcompat.app.e.g
         public View onCreatePanelView(int i10) {
             if (i10 == 0) {
-                return new View(s.this.f1082a.getContext());
+                return new View(s.this.f1126a.getContext());
             }
             return null;
         }
@@ -150,23 +150,23 @@ public class s extends ActionBar {
     /* JADX INFO: Access modifiers changed from: package-private */
     public s(Toolbar toolbar, CharSequence charSequence, Window.Callback callback) {
         b bVar = new b();
-        this.f1090i = bVar;
+        this.f1134i = bVar;
         b2.e.g(toolbar);
         z0 z0Var = new z0(toolbar, false);
-        this.f1082a = z0Var;
-        this.f1083b = (Window.Callback) b2.e.g(callback);
+        this.f1126a = z0Var;
+        this.f1127b = (Window.Callback) b2.e.g(callback);
         z0Var.setWindowCallback(callback);
         toolbar.setOnMenuItemClickListener(bVar);
         z0Var.setWindowTitle(charSequence);
-        this.f1084c = new e();
+        this.f1128c = new e();
     }
 
     private Menu z() {
-        if (!this.f1086e) {
-            this.f1082a.t(new c(), new d());
-            this.f1086e = true;
+        if (!this.f1130e) {
+            this.f1126a.t(new c(), new d());
+            this.f1130e = true;
         }
-        return this.f1082a.j();
+        return this.f1126a.j();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:17:0x002f  */
@@ -192,11 +192,11 @@ public class s extends ActionBar {
             r1.e0()
         L13:
             r0.clear()     // Catch: java.lang.Throwable -> L28
-            android.view.Window$Callback r3 = r5.f1083b     // Catch: java.lang.Throwable -> L28
+            android.view.Window$Callback r3 = r5.f1127b     // Catch: java.lang.Throwable -> L28
             r4 = 0
             boolean r3 = r3.onCreatePanelMenu(r4, r0)     // Catch: java.lang.Throwable -> L28
             if (r3 == 0) goto L2a
-            android.view.Window$Callback r3 = r5.f1083b     // Catch: java.lang.Throwable -> L28
+            android.view.Window$Callback r3 = r5.f1127b     // Catch: java.lang.Throwable -> L28
             boolean r2 = r3.onPreparePanel(r4, r2, r0)     // Catch: java.lang.Throwable -> L28
             if (r2 != 0) goto L2d
             goto L2a
@@ -220,18 +220,18 @@ public class s extends ActionBar {
     }
 
     public void B(int i10, int i11) {
-        this.f1082a.i((i10 & i11) | ((~i11) & this.f1082a.u()));
+        this.f1126a.i((i10 & i11) | ((~i11) & this.f1126a.u()));
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public boolean f() {
-        return this.f1082a.b();
+        return this.f1126a.b();
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public boolean g() {
-        if (this.f1082a.h()) {
-            this.f1082a.collapseActionView();
+        if (this.f1126a.h()) {
+            this.f1126a.collapseActionView();
             return true;
         }
         return false;
@@ -239,35 +239,35 @@ public class s extends ActionBar {
 
     @Override // androidx.appcompat.app.ActionBar
     public void h(boolean z10) {
-        if (z10 != this.f1087f) {
-            this.f1087f = z10;
-            if (this.f1088g.size() <= 0) {
+        if (z10 != this.f1131f) {
+            this.f1131f = z10;
+            if (this.f1132g.size() <= 0) {
                 return;
             }
-            android.support.v4.media.session.b.a(this.f1088g.get(0));
+            android.support.v4.media.session.b.a(this.f1132g.get(0));
             throw null;
         }
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public int i() {
-        return this.f1082a.u();
+        return this.f1126a.u();
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public Context j() {
-        return this.f1082a.getContext();
+        return this.f1126a.getContext();
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public void k() {
-        this.f1082a.setVisibility(8);
+        this.f1126a.setVisibility(8);
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public boolean l() {
-        this.f1082a.m().removeCallbacks(this.f1089h);
-        h0.f0(this.f1082a.m(), this.f1089h);
+        this.f1126a.m().removeCallbacks(this.f1133h);
+        h0.f0(this.f1126a.m(), this.f1133h);
         return true;
     }
 
@@ -279,7 +279,7 @@ public class s extends ActionBar {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // androidx.appcompat.app.ActionBar
     public void n() {
-        this.f1082a.m().removeCallbacks(this.f1089h);
+        this.f1126a.m().removeCallbacks(this.f1133h);
     }
 
     @Override // androidx.appcompat.app.ActionBar
@@ -312,7 +312,7 @@ public class s extends ActionBar {
 
     @Override // androidx.appcompat.app.ActionBar
     public boolean q() {
-        return this.f1082a.c();
+        return this.f1126a.c();
     }
 
     @Override // androidx.appcompat.app.ActionBar
@@ -343,7 +343,7 @@ public class s extends ActionBar {
 
     @Override // androidx.appcompat.app.ActionBar
     public void u(Drawable drawable) {
-        this.f1082a.w(drawable);
+        this.f1126a.w(drawable);
     }
 
     @Override // androidx.appcompat.app.ActionBar
@@ -352,11 +352,11 @@ public class s extends ActionBar {
 
     @Override // androidx.appcompat.app.ActionBar
     public void w(CharSequence charSequence) {
-        this.f1082a.setTitle(charSequence);
+        this.f1126a.setTitle(charSequence);
     }
 
     @Override // androidx.appcompat.app.ActionBar
     public void x(CharSequence charSequence) {
-        this.f1082a.setWindowTitle(charSequence);
+        this.f1126a.setWindowTitle(charSequence);
     }
 }

@@ -72,7 +72,7 @@ public final class BridgeDevSupportManager extends DevSupportManagerBase {
         UiThreadUtil.assertOnUiThread();
         ReactMarker.logMarker(ReactMarkerConstants.RELOAD, getDevSettings().getPackagerConnectionSettings().getDebugServerHost());
         hideRedboxDialog();
-        a9.c.a().c(b9.a.f7263d, "RNCore: load from Server");
+        a9.c.a().c(b9.a.f6314d, "RNCore: load from Server");
         DevServerHelper devServerHelper = getDevServerHelper();
         Object c10 = db.a.c(getJSAppBundleName());
         Intrinsics.checkNotNullExpressionValue(c10, "assertNotNull(...)");

@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useValue = var8;
     var8 = function arg0() {
-        _fun81382: for (var _fun81382_ip = 0;;) switch (_fun81382_ip) {
+        _fun81784: for (var _fun81784_ip = 0;;) switch (_fun81784_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -87,13 +87,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.shouldAgeVerifyForSettingsToggles;
                 var1 = var1.bind(var2)();
                 if (!var1) {
-                    _fun81382_ip = 44;
-                    continue _fun81382
+                    _fun81784_ip = 44;
+                    continue _fun81784
                 }
             case 41:
                 if (var3) {
-                    _fun81382_ip = 83;
-                    continue _fun81382
+                    _fun81784_ip = 83;
+                    continue _fun81784
                 }
             case 44:
                 var2 = _closure1_slot0;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.ViewNsfwCommands;
                 var1 = var2.updateSetting;
                 var1 = var1.bind(var2)(var3);
-                _fun81382_ip = 149;
-                continue _fun81382;
+                _fun81784_ip = 149;
+                continue _fun81784;
             case 83:
                 var2 = _closure1_slot1;
                 var6 = _closure1_slot2;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.onValueChange = var8;
     var7 = function() {
-        _fun81383: for (var _fun81383_ip = 0;;) switch (_fun81383_ip) {
+        _fun81785: for (var _fun81785_ip = 0;;) switch (_fun81785_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var2 = var2 == var4;
                 if (var2) {
-                    _fun81383_ip = 69;
-                    continue _fun81383
+                    _fun81785_ip = 69;
+                    continue _fun81785
                 }
             case 66:
                 var2 = var4;
@@ -160,22 +160,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.useIsVerifiedTeen;
                 var4 = var4.bind(var5)();
                 if (!var0) {
-                    _fun81383_ip = 105;
-                    continue _fun81383
+                    _fun81785_ip = 105;
+                    continue _fun81785
                 }
             case 102:
                 var0 = !var4;
             case 105:
                 if (var0) {
-                    _fun81383_ip = 111;
-                    continue _fun81383
+                    _fun81785_ip = 111;
+                    continue _fun81785
                 }
             case 108:
                 var0 = var2;
             case 111:
                 if (!var0) {
-                    _fun81383_ip = 144;
-                    continue _fun81383
+                    _fun81785_ip = 144;
+                    continue _fun81785
                 }
             case 114:
                 var2 = _closure1_slot0;
@@ -200,4 +200,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var1;
     var2.AndroidViewNsfwDmCommandsSettingV2 = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6969, 7918, 4517, 7919, 4214, 478, 5896, 4521, 1348, 8945, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7000, 7949, 4547, 7950, 4244, 478, 5927, 4551, 1348, 8977, 1234, 2]);

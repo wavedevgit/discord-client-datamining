@@ -8,14 +8,14 @@ import gk.k;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f37390a;
+    private final b f37504a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final hk.b f37391b;
+    private final hk.b f37505b;
 
     public a(b bVar) {
-        this.f37390a = bVar;
-        this.f37391b = new hk.b(bVar);
+        this.f37504a = bVar;
+        this.f37505b = new hk.b(bVar);
     }
 
     private p a(p[] pVarArr) {
@@ -97,7 +97,7 @@ public final class a {
     }
 
     private boolean e(p pVar) {
-        if (pVar.c() >= 0.0f && pVar.c() <= this.f37390a.l() - 1 && pVar.d() > 0.0f && pVar.d() <= this.f37390a.i() - 1) {
+        if (pVar.c() >= 0.0f && pVar.c() <= this.f37504a.l() - 1 && pVar.d() > 0.0f && pVar.d() <= this.f37504a.i() - 1) {
             return true;
         }
         return false;
@@ -171,7 +171,7 @@ public final class a {
         int d10 = (int) pVar.d();
         int c11 = (int) pVar2.c();
         int i15 = 1;
-        int min = Math.min(this.f37390a.i() - 1, (int) pVar2.d());
+        int min = Math.min(this.f37504a.i() - 1, (int) pVar2.d());
         int i16 = 0;
         if (Math.abs(min - d10) > Math.abs(c11 - c10)) {
             z10 = true;
@@ -195,7 +195,7 @@ public final class a {
         if (c10 >= c11) {
             i15 = -1;
         }
-        b bVar = this.f37390a;
+        b bVar = this.f37504a;
         if (z10) {
             i11 = d10;
         } else {
@@ -208,7 +208,7 @@ public final class a {
         }
         boolean e10 = bVar.e(i11, i12);
         while (c10 != c11) {
-            b bVar2 = this.f37390a;
+            b bVar2 = this.f37504a;
             if (z10) {
                 i13 = d10;
             } else {
@@ -239,7 +239,7 @@ public final class a {
 
     public g b() {
         int i10;
-        p[] d10 = d(c(this.f37391b.c()));
+        p[] d10 = d(c(this.f37505b.c()));
         p a10 = a(d10);
         d10[3] = a10;
         if (a10 != null) {
@@ -264,7 +264,7 @@ public final class a {
             } else {
                 i10 = i12;
             }
-            return new g(g(this.f37390a, pVar, pVar2, pVar3, pVar4, i10, i13), new p[]{pVar, pVar2, pVar3, pVar4});
+            return new g(g(this.f37504a, pVar, pVar2, pVar3, pVar4, i10, i13), new p[]{pVar, pVar2, pVar3, pVar4});
         }
         throw ck.k.a();
     }

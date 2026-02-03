@@ -265,8 +265,8 @@ public final class ScreenStackHeaderConfigViewManager extends ViewGroupManager<S
     }
 
     @Override // com.facebook.react.viewmanagers.RNSScreenStackHeaderConfigManagerInterface
+    @jr.c
     @ReactProp(name = "topInsetEnabled")
-    @ir.c
     public void setTopInsetEnabled(@NotNull ScreenStackHeaderConfig config, boolean z10) {
         Intrinsics.checkNotNullParameter(config, "config");
         config.setTopInsetEnabled(z10);

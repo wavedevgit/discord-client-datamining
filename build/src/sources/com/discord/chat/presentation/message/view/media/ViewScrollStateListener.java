@@ -26,7 +26,7 @@ public final class ViewScrollStateListener implements ViewTreeObserver.OnScrollC
         Intrinsics.checkNotNullParameter(viewScrolling, "viewScrolling");
         this.view = view;
         this.viewScrolling = viewScrolling;
-        this.isScrollingDuration = view.getResources().getInteger(g.f54465c);
+        this.isScrollingDuration = view.getResources().getInteger(g.f54440c);
         this.isScrollingStoppedRunnable = new Runnable() { // from class: a7.d
             @Override // java.lang.Runnable
             public final void run() {

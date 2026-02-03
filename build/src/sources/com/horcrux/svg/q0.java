@@ -11,79 +11,79 @@ import com.horcrux.svg.a;
 public class q0 extends e {
 
     /* renamed from: u  reason: collision with root package name */
-    private static final float[] f18028u = {1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f};
+    private static final float[] f17657u = {1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f};
 
     /* renamed from: d  reason: collision with root package name */
-    private SVGLength f18029d;
+    private SVGLength f17658d;
 
     /* renamed from: e  reason: collision with root package name */
-    private SVGLength f18030e;
+    private SVGLength f17659e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SVGLength f18031i;
+    private SVGLength f17660i;
 
     /* renamed from: o  reason: collision with root package name */
-    private SVGLength f18032o;
+    private SVGLength f17661o;
 
     /* renamed from: p  reason: collision with root package name */
-    private SVGLength f18033p;
+    private SVGLength f17662p;
 
     /* renamed from: q  reason: collision with root package name */
-    private SVGLength f18034q;
+    private SVGLength f17663q;
 
     /* renamed from: r  reason: collision with root package name */
-    private ReadableArray f18035r;
+    private ReadableArray f17664r;
 
     /* renamed from: s  reason: collision with root package name */
-    private a.b f18036s;
+    private a.b f17665s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Matrix f18037t;
+    private Matrix f17666t;
 
     public q0(ReactContext reactContext) {
         super(reactContext);
-        this.f18037t = null;
+        this.f17666t = null;
     }
 
     public void c(Dynamic dynamic) {
-        this.f18033p = SVGLength.b(dynamic);
+        this.f17662p = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void d(Dynamic dynamic) {
-        this.f18034q = SVGLength.b(dynamic);
+        this.f17663q = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void e(Dynamic dynamic) {
-        this.f18029d = SVGLength.b(dynamic);
+        this.f17658d = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void f(Dynamic dynamic) {
-        this.f18030e = SVGLength.b(dynamic);
+        this.f17659e = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void g(ReadableArray readableArray) {
-        this.f18035r = readableArray;
+        this.f17664r = readableArray;
         invalidate();
     }
 
     public void h(ReadableArray readableArray) {
         if (readableArray != null) {
-            float[] fArr = f18028u;
+            float[] fArr = f17657u;
             int c10 = n0.c(readableArray, fArr, this.mScale);
             if (c10 == 6) {
-                if (this.f18037t == null) {
-                    this.f18037t = new Matrix();
+                if (this.f17666t == null) {
+                    this.f17666t = new Matrix();
                 }
-                this.f18037t.setValues(fArr);
+                this.f17666t.setValues(fArr);
             } else if (c10 != -1) {
                 p8.a.J(ReactConstants.TAG, "RNSVG: Transform matrices must be of size 6");
             }
         } else {
-            this.f18037t = null;
+            this.f17666t = null;
         }
         invalidate();
     }
@@ -91,21 +91,21 @@ public class q0 extends e {
     public void i(int i10) {
         if (i10 != 0) {
             if (i10 == 1) {
-                this.f18036s = a.b.USER_SPACE_ON_USE;
+                this.f17665s = a.b.USER_SPACE_ON_USE;
             }
         } else {
-            this.f18036s = a.b.OBJECT_BOUNDING_BOX;
+            this.f17665s = a.b.OBJECT_BOUNDING_BOX;
         }
         invalidate();
     }
 
     public void j(Dynamic dynamic) {
-        this.f18031i = SVGLength.b(dynamic);
+        this.f17660i = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void k(Dynamic dynamic) {
-        this.f18032o = SVGLength.b(dynamic);
+        this.f17661o = SVGLength.b(dynamic);
         invalidate();
     }
 
@@ -113,14 +113,14 @@ public class q0 extends e {
     @Override // com.horcrux.svg.VirtualView
     public void saveDefinition() {
         if (this.mName != null) {
-            a aVar = new a(a.EnumC0201a.RADIAL_GRADIENT, new SVGLength[]{this.f18029d, this.f18030e, this.f18031i, this.f18032o, this.f18033p, this.f18034q}, this.f18036s);
-            aVar.e(this.f18035r);
-            Matrix matrix = this.f18037t;
+            a aVar = new a(a.EnumC0206a.RADIAL_GRADIENT, new SVGLength[]{this.f17658d, this.f17659e, this.f17660i, this.f17661o, this.f17662p, this.f17663q}, this.f17665s);
+            aVar.e(this.f17664r);
+            Matrix matrix = this.f17666t;
             if (matrix != null) {
                 aVar.f(matrix);
             }
             SvgView svgView = getSvgView();
-            if (this.f18036s == a.b.USER_SPACE_ON_USE) {
+            if (this.f17665s == a.b.USER_SPACE_ON_USE) {
                 aVar.h(svgView.getCanvasBounds());
             }
             svgView.defineBrush(aVar, this.mName);

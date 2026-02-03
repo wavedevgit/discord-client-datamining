@@ -11,40 +11,40 @@ import java.util.Map;
 public final class l implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient Thread f30411d;
+    private final transient Thread f29977d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f30412e;
+    private String f29978e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30413i;
+    private String f29979i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f30414o;
+    private String f29980o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Boolean f30415p;
+    private Boolean f29981p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f30416q;
+    private Map f29982q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f30417r;
+    private Map f29983r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Boolean f30418s;
+    private Boolean f29984s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Integer f30419t;
+    private Integer f29985t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Integer f30420u;
+    private Integer f29986u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Boolean f30421v;
+    private Boolean f29987v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Map f30422w;
+    private Map f29988w;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -55,66 +55,66 @@ public final class l implements w1 {
             e3Var.r();
             HashMap hashMap = null;
             while (e3Var.peek() == io.sentry.vendor.gson.stream.b.NAME) {
-                String l02 = e3Var.l0();
-                l02.getClass();
+                String m02 = e3Var.m0();
+                m02.getClass();
                 char c10 = 65535;
-                switch (l02.hashCode()) {
+                switch (m02.hashCode()) {
                     case -1724546052:
-                        if (l02.equals("description")) {
+                        if (m02.equals("description")) {
                             c10 = 0;
                             break;
                         }
                         break;
                     case -268203253:
-                        if (l02.equals("exception_id")) {
+                        if (m02.equals("exception_id")) {
                             c10 = 1;
                             break;
                         }
                         break;
                     case 3076010:
-                        if (l02.equals("data")) {
+                        if (m02.equals("data")) {
                             c10 = 2;
                             break;
                         }
                         break;
                     case 3347973:
-                        if (l02.equals("meta")) {
+                        if (m02.equals("meta")) {
                             c10 = 3;
                             break;
                         }
                         break;
                     case 3575610:
-                        if (l02.equals("type")) {
+                        if (m02.equals("type")) {
                             c10 = 4;
                             break;
                         }
                         break;
                     case 692803388:
-                        if (l02.equals("handled")) {
+                        if (m02.equals("handled")) {
                             c10 = 5;
                             break;
                         }
                         break;
                     case 989128517:
-                        if (l02.equals("synthetic")) {
+                        if (m02.equals("synthetic")) {
                             c10 = 6;
                             break;
                         }
                         break;
                     case 1032012154:
-                        if (l02.equals("is_exception_group")) {
+                        if (m02.equals("is_exception_group")) {
                             c10 = 7;
                             break;
                         }
                         break;
                     case 1297152568:
-                        if (l02.equals("help_link")) {
+                        if (m02.equals("help_link")) {
                             c10 = '\b';
                             break;
                         }
                         break;
                     case 2070327504:
-                        if (l02.equals("parent_id")) {
+                        if (m02.equals("parent_id")) {
                             c10 = '\t';
                             break;
                         }
@@ -122,40 +122,40 @@ public final class l implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        lVar.f30413i = e3Var.r1();
+                        lVar.f29979i = e3Var.r1();
                         break;
                     case 1:
-                        lVar.f30419t = e3Var.j1();
+                        lVar.f29985t = e3Var.k1();
                         break;
                     case 2:
-                        lVar.f30417r = io.sentry.util.c.b((Map) e3Var.V1());
+                        lVar.f29983r = io.sentry.util.c.b((Map) e3Var.V1());
                         break;
                     case 3:
-                        lVar.f30416q = io.sentry.util.c.b((Map) e3Var.V1());
+                        lVar.f29982q = io.sentry.util.c.b((Map) e3Var.V1());
                         break;
                     case 4:
-                        lVar.f30412e = e3Var.r1();
+                        lVar.f29978e = e3Var.r1();
                         break;
                     case 5:
-                        lVar.f30415p = e3Var.v0();
+                        lVar.f29981p = e3Var.x0();
                         break;
                     case 6:
-                        lVar.f30418s = e3Var.v0();
+                        lVar.f29984s = e3Var.x0();
                         break;
                     case 7:
-                        lVar.f30421v = e3Var.v0();
+                        lVar.f29987v = e3Var.x0();
                         break;
                     case '\b':
-                        lVar.f30414o = e3Var.r1();
+                        lVar.f29980o = e3Var.r1();
                         break;
                     case '\t':
-                        lVar.f30420u = e3Var.j1();
+                        lVar.f29986u = e3Var.k1();
                         break;
                     default:
                         if (hashMap == null) {
                             hashMap = new HashMap();
                         }
-                        e3Var.v1(iLogger, hashMap, l02);
+                        e3Var.v1(iLogger, hashMap, m02);
                         break;
                 }
             }
@@ -170,76 +170,76 @@ public final class l implements w1 {
     }
 
     public String k() {
-        return this.f30412e;
+        return this.f29978e;
     }
 
     public Boolean l() {
-        return this.f30415p;
+        return this.f29981p;
     }
 
     public void m(Integer num) {
-        this.f30419t = num;
+        this.f29985t = num;
     }
 
     public void n(Boolean bool) {
-        this.f30415p = bool;
+        this.f29981p = bool;
     }
 
     public void o(Integer num) {
-        this.f30420u = num;
+        this.f29986u = num;
     }
 
     public void p(String str) {
-        this.f30412e = str;
+        this.f29978e = str;
     }
 
     public void q(Map map) {
-        this.f30422w = map;
+        this.f29988w = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30412e != null) {
-            f3Var.e("type").f(this.f30412e);
+        if (this.f29978e != null) {
+            f3Var.e("type").f(this.f29978e);
         }
-        if (this.f30413i != null) {
-            f3Var.e("description").f(this.f30413i);
+        if (this.f29979i != null) {
+            f3Var.e("description").f(this.f29979i);
         }
-        if (this.f30414o != null) {
-            f3Var.e("help_link").f(this.f30414o);
+        if (this.f29980o != null) {
+            f3Var.e("help_link").f(this.f29980o);
         }
-        if (this.f30415p != null) {
-            f3Var.e("handled").k(this.f30415p);
+        if (this.f29981p != null) {
+            f3Var.e("handled").k(this.f29981p);
         }
-        if (this.f30416q != null) {
-            f3Var.e("meta").j(iLogger, this.f30416q);
+        if (this.f29982q != null) {
+            f3Var.e("meta").j(iLogger, this.f29982q);
         }
-        if (this.f30417r != null) {
-            f3Var.e("data").j(iLogger, this.f30417r);
+        if (this.f29983r != null) {
+            f3Var.e("data").j(iLogger, this.f29983r);
         }
-        if (this.f30418s != null) {
-            f3Var.e("synthetic").k(this.f30418s);
+        if (this.f29984s != null) {
+            f3Var.e("synthetic").k(this.f29984s);
         }
-        if (this.f30419t != null) {
-            f3Var.e("exception_id").j(iLogger, this.f30419t);
+        if (this.f29985t != null) {
+            f3Var.e("exception_id").j(iLogger, this.f29985t);
         }
-        if (this.f30420u != null) {
-            f3Var.e("parent_id").j(iLogger, this.f30420u);
+        if (this.f29986u != null) {
+            f3Var.e("parent_id").j(iLogger, this.f29986u);
         }
-        if (this.f30421v != null) {
-            f3Var.e("is_exception_group").k(this.f30421v);
+        if (this.f29987v != null) {
+            f3Var.e("is_exception_group").k(this.f29987v);
         }
-        Map map = this.f30422w;
+        Map map = this.f29988w;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30422w.get(str));
+                f3Var.e(str).j(iLogger, this.f29988w.get(str));
             }
         }
         f3Var.y();
     }
 
     public l(Thread thread) {
-        this.f30411d = thread;
+        this.f29977d = thread;
     }
 }

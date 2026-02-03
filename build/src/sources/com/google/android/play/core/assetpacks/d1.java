@@ -7,17 +7,17 @@ import java.util.concurrent.ExecutionException;
 final class d1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final th.r f16739a;
+    private final th.r f16368a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d1(th.r rVar) {
-        this.f16739a = rVar;
+        this.f16368a = rVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final InputStream a(int i10, String str, String str2, int i11) {
         try {
-            ParcelFileDescriptor parcelFileDescriptor = (ParcelFileDescriptor) wg.m.a(((t4) this.f16739a.a()).d(i10, str, str2, i11));
+            ParcelFileDescriptor parcelFileDescriptor = (ParcelFileDescriptor) wg.m.a(((t4) this.f16368a.a()).d(i10, str, str2, i11));
             if (parcelFileDescriptor != null && parcelFileDescriptor.getFileDescriptor() != null) {
                 return new ParcelFileDescriptor.AutoCloseInputStream(parcelFileDescriptor);
             }

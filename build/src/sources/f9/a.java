@@ -17,52 +17,52 @@ import z9.n;
 public class a implements i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.facebook.drawee.backends.pipeline.a f24839a;
+    private final com.facebook.drawee.backends.pipeline.a f24050a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f24840b;
+    private final b f24051b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final j f24841c = new j(k.f55411i);
+    private final j f24052c = new j(k.f55543i);
 
     /* renamed from: d  reason: collision with root package name */
-    private g9.a f24842d;
+    private g9.a f24053d;
 
     /* renamed from: e  reason: collision with root package name */
-    private g9.b f24843e;
+    private g9.b f24054e;
 
     /* renamed from: f  reason: collision with root package name */
-    private c f24844f;
+    private c f24055f;
 
     /* renamed from: g  reason: collision with root package name */
-    private List f24845g;
+    private List f24056g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f24846h;
+    private boolean f24057h;
 
     public a(b bVar, com.facebook.drawee.backends.pipeline.a aVar) {
-        this.f24840b = bVar;
-        this.f24839a = aVar;
+        this.f24051b = bVar;
+        this.f24050a = aVar;
     }
 
     private void h() {
-        if (this.f24843e == null) {
-            this.f24843e = new g9.b(this.f24840b, this.f24841c, this);
+        if (this.f24054e == null) {
+            this.f24054e = new g9.b(this.f24051b, this.f24052c, this);
         }
-        if (this.f24842d == null) {
-            this.f24842d = new g9.a(this.f24840b, this.f24841c);
+        if (this.f24053d == null) {
+            this.f24053d = new g9.a(this.f24051b, this.f24052c);
         }
-        if (this.f24844f == null) {
-            this.f24844f = new c(this.f24842d);
+        if (this.f24055f == null) {
+            this.f24055f = new c(this.f24053d);
         }
     }
 
     @Override // z9.i
     public void a(j jVar, n nVar) {
         List list;
-        if (this.f24846h && (list = this.f24845g) != null && !list.isEmpty()) {
+        if (this.f24057h && (list = this.f24056g) != null && !list.isEmpty()) {
             jVar.S();
-            Iterator it = this.f24845g.iterator();
+            Iterator it = this.f24056g.iterator();
             if (it.hasNext()) {
                 android.support.v4.media.session.b.a(it.next());
                 throw null;
@@ -74,12 +74,12 @@ public class a implements i {
     public void b(j jVar, e eVar) {
         List list;
         jVar.H(eVar);
-        if (this.f24846h && (list = this.f24845g) != null && !list.isEmpty()) {
-            if (eVar == e.f55349r) {
+        if (this.f24057h && (list = this.f24056g) != null && !list.isEmpty()) {
+            if (eVar == e.f55481r) {
                 d();
             }
             jVar.S();
-            Iterator it = this.f24845g.iterator();
+            Iterator it = this.f24056g.iterator();
             if (it.hasNext()) {
                 android.support.v4.media.session.b.a(it.next());
                 throw null;
@@ -91,23 +91,23 @@ public class a implements i {
         if (gVar == null) {
             return;
         }
-        if (this.f24845g == null) {
-            this.f24845g = new CopyOnWriteArrayList();
+        if (this.f24056g == null) {
+            this.f24056g = new CopyOnWriteArrayList();
         }
-        this.f24845g.add(gVar);
+        this.f24056g.add(gVar);
     }
 
     public void d() {
-        DraweeHierarchy hierarchy = this.f24839a.getHierarchy();
+        DraweeHierarchy hierarchy = this.f24050a.getHierarchy();
         if (hierarchy != null && hierarchy.d() != null) {
             Rect bounds = hierarchy.d().getBounds();
-            this.f24841c.N(bounds.width());
-            this.f24841c.M(bounds.height());
+            this.f24052c.N(bounds.width());
+            this.f24052c.M(bounds.height());
         }
     }
 
     public void e() {
-        List list = this.f24845g;
+        List list = this.f24056g;
         if (list != null) {
             list.clear();
         }
@@ -116,31 +116,31 @@ public class a implements i {
     public void f() {
         e();
         g(false);
-        this.f24841c.w();
+        this.f24052c.w();
     }
 
     public void g(boolean z10) {
-        this.f24846h = z10;
+        this.f24057h = z10;
         if (z10) {
             h();
-            g9.b bVar = this.f24843e;
+            g9.b bVar = this.f24054e;
             if (bVar != null) {
-                this.f24839a.f(bVar);
+                this.f24050a.f(bVar);
             }
-            c cVar = this.f24844f;
+            c cVar = this.f24055f;
             if (cVar != null) {
-                this.f24839a.c0(cVar);
+                this.f24050a.c0(cVar);
                 return;
             }
             return;
         }
-        g9.b bVar2 = this.f24843e;
+        g9.b bVar2 = this.f24054e;
         if (bVar2 != null) {
-            this.f24839a.M(bVar2);
+            this.f24050a.M(bVar2);
         }
-        c cVar2 = this.f24844f;
+        c cVar2 = this.f24055f;
         if (cVar2 != null) {
-            this.f24839a.t0(cVar2);
+            this.f24050a.t0(cVar2);
         }
     }
 }
