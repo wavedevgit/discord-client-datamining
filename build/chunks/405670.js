@@ -158,6 +158,13 @@ let y = (0, i.h)()((0, r.Zr)((e, t) => ({
                 })
             })
         },
+        clearAllVideoProgress: () => {
+            (0, a.r)(() => {
+                e({
+                    videoProgress: {}
+                })
+            })
+        },
         setTranscriptAsset: t => {
             (0, a.r)(() => {
                 e({
