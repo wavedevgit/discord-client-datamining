@@ -1,47 +1,48 @@
 /** chunk id: 12351, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => A
+    A: () => f
 });
-var r, i, l = n(627968),
-    a = n(64700),
-    o = n(503698),
-    s = n.n(o),
-    c = n(397927),
+var s, r, a = n(627968),
+    i = n(64700),
+    l = n(503698),
+    c = n.n(l),
+    o = n(397927),
     u = n(985018),
-    E = n(228763);
+    p = n(228763);
 let d = {
-    BLOCK: E.om,
-    INLINE: E.mG
+    BLOCK: p.om,
+    INLINE: p.mG
 };
-class _ extends(i = a.PureComponent) {
+class g extends(r = i.PureComponent) {
     render() {
         let {
             children: e,
             className: t,
             textClassName: n,
-            type: r = d.BLOCK,
-            style: i
+            type: s = d.BLOCK,
+            style: r
         } = this.props;
-        return (0, l.jsxs)("div", {
-            className: s()(t, r),
-            style: i,
-            children: [(0, l.jsxs)(c.Text, {
+        return (0, a.jsxs)("div", {
+            className: c()(t, s),
+            style: r,
+            children: [(0, a.jsxs)(o.Text, {
                 variant: "text-sm/bold",
                 tag: "div",
                 color: "text-feedback-positive",
-                className: E.AD,
+                className: p.AD,
                 children: [u.intl.string(u.t["8tvIiN"]), ":"]
-            }), (0, l.jsx)(c.Text, {
-                className: s()(E.uN, n),
+            }), (0, a.jsx)(o.Text, {
+                className: c()(p.uN, n),
                 variant: "text-sm/normal",
                 children: e
             })]
         })
     }
-}(r = "Types") in _ ? Object.defineProperty(_, r, {
+}(s = "Types") in g ? Object.defineProperty(g, s, {
     value: d,
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : _[r] = d;
-let A = _
+}) : g[s] = d;
+let f = g

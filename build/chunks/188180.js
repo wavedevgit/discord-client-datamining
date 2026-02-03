@@ -29,8 +29,8 @@ function p(e) {
         icon: y,
         StronglyDiscouragedCustomComponent: g,
         trailing: m,
-        useTitle: O
-    } = s, h = null == O ? void 0 : O();
+        useTitle: h
+    } = s, O = null == h ? void 0 : h();
     return (0, r.jsxs)(o, {
         "data-settings-sidebar-item": _,
         className: b.DB,
@@ -65,7 +65,7 @@ function p(e) {
                 }), (0, r.jsx)(c.Text, {
                     variant: "text-md/medium",
                     color: "currentColor",
-                    children: h
+                    children: O
                 })]
             }), null != m && (0, r.jsx)("div", {
                 className: b.Ly,

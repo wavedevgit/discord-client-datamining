@@ -135,10 +135,17 @@ class C {
             if (this.isLoading()) return;
             let n = E(e.messages);
             if (null == n || this.isJumping() || e.messages.jumpSequenceId === t.jumpSequenceId) {
-                if (this.isJumping()) return void(null != n ? this.scrollToMessage(n, !0) : this.jumping = !1)
+                if (this.isJumping()) return void(null != n ? this.scrollToMessage({
+                    jumpTargetId: n,
+                    animate: !0
+                }) : this.jumping = !1)
             } else {
                 let l, r = t.first();
-                null != r && e.messages.last() !== t.last() && e.messages.first() !== t.first() && (l = m.default.extractTimestamp(r.id)), this.scrollToMessage(n, !0, l);
+                null != r && e.messages.last() !== t.last() && e.messages.first() !== t.first() && (l = m.default.extractTimestamp(r.id)), this.scrollToMessage({
+                    jumpTargetId: n,
+                    animate: !0,
+                    fromTimestamp: l
+                });
                 return
             }
         }
@@ -383,7 +390,17 @@ class C {
         } = this;
         this.initialScrollTop = void 0;
         let t = E(this.props.messages);
-        null != t ? this.scrollToMessage(t, !1) : this.props.hasUnreads && this.props.channel.type !== y.rbe.GUILD_VOICE && this.props.channel.type !== y.rbe.GUILD_STAGE_VOICE ? ((0, g.x)(this.props.channel, this.props.messages), this.scrollToNewMessages()) : null != e ? this.scrollTo(e + this.props.placeholderHeight, !1, this.handleScroll) : this.setScrollToBottom()
+        if (null != t) this.scrollToMessage({
+            jumpTargetId: t,
+            animate: !1
+        });
+        else if (this.props.hasUnreads && this.props.channel.type !== y.rbe.GUILD_VOICE && this.props.channel.type !== y.rbe.GUILD_STAGE_VOICE) {
+            let e = (0, g.i)(this.props.channel, this.props.messages);
+            null != e ? this.scrollToMessage({
+                jumpTargetId: e,
+                animate: !1
+            }) : this.scrollToNewMessages()
+        } else null != e ? this.scrollTo(e + this.props.placeholderHeight, !1, this.handleScroll) : this.setScrollToBottom()
     }
     scrollTo(e) {
         var t;
@@ -448,18 +465,21 @@ class C {
         })
     }
     scrollToMessage(e) {
-        let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-            n = arguments.length > 2 ? arguments[2] : void 0;
+        let {
+            jumpTargetId: t,
+            animate: n = !1,
+            fromTimestamp: l
+        } = e;
         if (null == this.ref.current) return;
-        if (e === this.props.channel.id) return void this.scrollTo(0);
-        let l = this.getElementFromMessageId(e);
-        this.isJumping() || !t || null == n || u.A.useReducedMotion || (m.default.extractTimestamp(e) > n ? this.scrollTo(0) : this.scrollTo(Number.MAX_SAFE_INTEGER)), this.pinned = !1, this.jumping = !0;
-        let r = () => {
-            this.jumping = !1, (0, a.vq)(l) && (l.tabIndex = -1, l.focus({
+        if (t === this.props.channel.id) return void this.scrollTo(0);
+        let r = this.getElementFromMessageId(t);
+        this.isJumping() || !n || null == l || u.A.useReducedMotion || (m.default.extractTimestamp(t) > l ? this.scrollTo(0) : this.scrollTo(Number.MAX_SAFE_INTEGER)), this.pinned = !1, this.jumping = !0;
+        let i = () => {
+            this.jumping = !1, (0, a.vq)(r) && (r.tabIndex = -1, r.focus({
                 preventScroll: !0
             })), this.scrollCounter = 0, this.handleScroll(), this._scrollCompleteCallbacks.forEach(e => e())
         };
-        (0, a.vq)(l) ? this.scrollTo(this.getOffsetOrientationFromNode(l, "middle", this.props.hasUnreads ? this.newMessageBarBuffer() : _.mZ), t, r): this.scrollToNewMessages(t, "middle", r)
+        (0, a.vq)(r) ? this.scrollTo(this.getOffsetOrientationFromNode(r, "middle", this.props.hasUnreads ? this.newMessageBarBuffer() : _.mZ), n, i): this.scrollToNewMessages(n, "middle", i)
     }
     getOffsetToTriggerLoading(e, t) {
         let {

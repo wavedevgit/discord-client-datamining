@@ -1,11 +1,12 @@
 /** chunk id: 8880, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => p
+    A: () => d
 });
-var r, l = n(311907),
-    i = n(73153);
+var s, r = n(311907),
+    a = n(73153);
 
-function s(e, t, n) {
+function i(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -14,39 +15,39 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function a(e) {
+function l(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            s = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            s(e, t, n[t])
+        }))), s.forEach(function(t) {
+            i(e, t, n[t])
         })
     }
     return e
 }
 
-function o(e, t) {
+function c(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var s = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, s)
         }
         return n
     })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let c = {
+let o = {
         speechRate: 1,
         currentMessage: null
     },
-    u = c;
-class d extends(r = l.Ay.DeviceSettingsStore) {
+    u = o;
+class p extends(s = r.Ay.DeviceSettingsStore) {
     initialize(e) {
-        u = a({}, c, null != e ? e : null)
+        u = l({}, o, null != e ? e : null)
     }
     isSpeakingMessage(e, t) {
         let {
@@ -64,14 +65,14 @@ class d extends(r = l.Ay.DeviceSettingsStore) {
         return u
     }
 }
-s(d, "displayName", "TTSStore"), s(d, "persistKey", "TTSStore"), s(d, "migrations", []);
-let p = new d(i.h, __OVERLAY__ ? {} : {
+i(p, "displayName", "TTSStore"), i(p, "persistKey", "TTSStore"), i(p, "migrations", []);
+let d = new p(a.h, __OVERLAY__ ? {} : {
     SPEAKING_MESSAGE: function(e) {
         let {
             messageId: t,
             channelId: n
         } = e;
-        u = o(a({}, u), {
+        u = c(l({}, u), {
             currentMessage: {
                 messageId: t,
                 channelId: n
@@ -79,12 +80,12 @@ let p = new d(i.h, __OVERLAY__ ? {} : {
         })
     },
     STOP_SPEAKING: function() {
-        u = o(a({}, u), {
+        u = c(l({}, u), {
             currentMessage: null
         })
     },
     SET_TTS_SPEECH_RATE: function(e) {
-        u = o(a({}, u), {
+        u = c(l({}, u), {
             speechRate: e.speechRate
         })
     }

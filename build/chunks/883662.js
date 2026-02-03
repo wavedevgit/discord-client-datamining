@@ -22,8 +22,8 @@ function b(e) {
         onPanelChange: y,
         sidebarFooter: g,
         emptyState: m,
-        searchQuery: O,
-        onSearchChange: h
+        searchQuery: h,
+        onSearchChange: O
     } = e, j = function(e, t) {
         if (null == e) return {};
         var n, r, o, a = {};
@@ -81,8 +81,8 @@ function b(e) {
                 onPanelChange: y,
                 emptyState: m,
                 sidebarFooter: g,
-                searchQuery: O,
-                onSearchChange: h
+                searchQuery: h,
+                onSearchChange: O
             })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);

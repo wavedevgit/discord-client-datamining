@@ -186,7 +186,7 @@ let P = E.A.getArticleURL(C.MVz.ORBS_REWARDS_FAQ),
                         children: H
                     }), U && (0, r.jsx)(x.A, {
                         className: j.L$
-                    }), G && (0, r.jsxs)("div", {
+                    }), G && R.total_rewarded_from_program > 0 && (0, r.jsxs)("div", {
                         className: j.fB,
                         children: [(0, r.jsx)(c.EYj, {
                             variant: "text-md/medium",
