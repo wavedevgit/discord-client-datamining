@@ -125,7 +125,8 @@ async function I(e, t, n, r) {
             type: "SKU_PURCHASE_PREVIEW_FETCH_SUCCESS",
             skuId: t,
             paymentSourceId: n,
-            price: i.body
+            price: i.body,
+            checkoutSessionId: null == r ? void 0 : r.loadId
         })
     } catch (n) {
         a.h.dispatch({
