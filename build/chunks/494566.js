@@ -50,8 +50,8 @@ var i = n(627968),
     F = n(616356),
     H = n(961350),
     Y = n(71393),
-    K = n(430452),
-    W = n(383501),
+    W = n(430452),
+    K = n(383501),
     B = n(309010),
     Z = n(287809),
     X = n(977997),
@@ -321,7 +321,7 @@ function eu(e) {
     let {
         voiceChannel: n,
         locked: a
-    } = e, s = r.useRef(null), o = (0, l.bG)([K.A], () => K.A.isVideoEnabled()), u = (0, l.bG)([K.A], () => Object.values(K.A.getVideoDevices())[0]), p = null == (t = null == u ? void 0 : u.disabled) || t, f = !1 === p, g = (0, P.A)(n), m = e => {
+    } = e, s = r.useRef(null), o = (0, l.bG)([W.A], () => W.A.isVideoEnabled()), u = (0, l.bG)([W.A], () => Object.values(W.A.getVideoDevices())[0]), p = null == (t = null == u ? void 0 : u.disabled) || t, f = !1 === p, g = (0, P.A)(n), m = e => {
         h.A.setVideoEnabled(e)
     }, y = e => t => {
         e(t), (0, J.YX)(et.uss.QUICK_ACTIONS, {
@@ -398,7 +398,7 @@ function ec(e) {
         s = r.useRef(null),
         u = (0, l.bG)([Z.default], () => Z.default.getCurrentUser()),
         c = (0, P.A)(n),
-        h = (0, l.cf)([K.A], () => (0, S.A)(K.A)),
+        h = (0, l.cf)([W.A], () => (0, S.A)(W.A)),
         p = (0, l.bG)([F.A], () => F.A.getCurrentUserActiveStream()),
         f = (0, l.bG)([$.A], () => $.A.getTargetPID()),
         g = (0, Q.y)({
@@ -500,7 +500,7 @@ function ed(e) {
     } = e, o = r.useRef(null), c = null != (t = null == a ? void 0 : a.getGuildId()) ? t : null, {
         mute: h,
         suppress: f
-    } = (0, D.A)(a), g = (0, l.bG)([K.A], () => K.A.isDeaf()), y = null == a || h || f || g, {
+    } = (0, D.A)(a), g = (0, l.bG)([W.A], () => W.A.isDeaf()), y = null == a || h || f || g, {
         analyticsLocations: A
     } = (0, m.Ay)();
 
@@ -706,10 +706,10 @@ function eg(e) {
     var t, n;
     let {
         voiceChannel: r
-    } = e, a = null == r ? void 0 : r.id, s = (0, l.cf)([W.A], () => ({
-        quality: W.A.getQuality(),
-        state: W.A.getState(),
-        lastPing: W.A.getLastPing()
+    } = e, a = null == r ? void 0 : r.id, s = (0, l.cf)([K.A], () => ({
+        quality: K.A.getQuality(),
+        state: K.A.getState(),
+        lastPing: K.A.getLastPing()
     })), o = (0, l.bG)([X.A], () => null != a && X.A.hasVideo(a), [a]);
     return null != a && null != r && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(T.A, (t = er({}, s), n = n = {

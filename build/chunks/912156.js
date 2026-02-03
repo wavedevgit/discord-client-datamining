@@ -181,7 +181,7 @@ let _ = l.memo(function(e) {
                 avatarCutoutHeight: F,
                 avatarCutoutRadius: H,
                 indicatorX: Y,
-                indicatorY: K
+                indicatorY: W
             } = x({
                 size: R
             });
@@ -234,7 +234,7 @@ let _ = l.memo(function(e) {
                 className: f.RL,
                 style: {
                     left: Y,
-                    top: K
+                    top: W
                 },
                 children: (0, r.jsx)(_, {
                     avatarSize: R

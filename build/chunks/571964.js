@@ -1,43 +1,46 @@
 /** chunk id: 571964, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => c
 }), n(896048), n(321073);
 var r = n(627968);
 n(64700);
-var l = n(311907),
-    i = n(397927),
-    o = n(545059),
-    a = n(870391),
+var i = n(311907),
+    l = n(397927),
+    a = n(545059),
+    o = n(870391),
     u = n(994500),
+    s = n(589051),
     d = n(985018);
 
-function s(e) {
+function c(e) {
     let {
         user: t,
-        onAction: s,
-        groupId: c
-    } = e, A = t.id, [f, b] = (0, l.yK)([u.A, a.A], () => [u.A.isFriend(A), a.A.getGroups()], [A]);
-    if (!f || 0 === b.length) return null;
-    let g = [];
-    return b.length > 0 && g.push((0, r.jsxs)(i.Drp, {
+        onAction: c,
+        groupId: A
+    } = e, {
+        hasFriendList: f
+    } = (0, s.M8)("useManageFriendGroupsItems"), b = t.id, [g, p] = (0, i.yK)([u.A, o.A], () => [u.A.isFriend(b), o.A.getGroups()], [b]);
+    if (!f || !g || 0 === p.length) return null;
+    let v = [];
+    return p.length > 0 && v.push((0, r.jsxs)(l.Drp, {
         id: "add-to-group",
         label: "Add to Group",
-        children: [b.map(e => (0, r.jsx)(i.Drp, {
+        children: [p.map(e => (0, r.jsx)(l.Drp, {
             id: "add-".concat(e.id),
             label: e.name,
             action: () => {
-                null == s || s(), o.A.addUsersToGroup(e.id, A)
+                null == c || c(), a.A.addUsersToGroup(e.id, b)
             }
-        }, e.id)), (0, r.jsx)(i.bXX, {}, "add-to-group-separator"), (0, r.jsx)(i.Drp, {
+        }, e.id)), (0, r.jsx)(l.bXX, {}, "add-to-group-separator"), (0, r.jsx)(l.Drp, {
             id: "create-new-group",
             label: d.intl.string(d.t["3hF1W4"]),
             action: () => {
-                null == s || s(), (0, i.mMO)(async () => {
+                null == c || c(), (0, l.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("51080").then(n.bind(n, 519528));
                     return t => {
-                        var n, l;
+                        var n, i;
                         return (0, r.jsx)(e, (n = function(e) {
                             for (var t = 1; t < arguments.length; t++) {
                                 var n = null != arguments[t] ? arguments[t] : {},
@@ -55,27 +58,27 @@ function s(e) {
                                 })
                             }
                             return e
-                        }({}, t), l = l = {
-                            initialUserIds: [A]
-                        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+                        }({}, t), i = i = {
+                            initialUserIds: [b]
+                        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                             var n = Object.keys(e);
                             if (Object.getOwnPropertySymbols) {
                                 var r = Object.getOwnPropertySymbols(e);
                                 n.push.apply(n, r)
                             }
                             return n
-                        })(Object(l)).forEach(function(e) {
-                            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+                        })(Object(i)).forEach(function(e) {
+                            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
                         }), n))
                     }
                 })
             }
         }, "create-new-group")]
-    }, "add-to-group")), null != c && g.push((0, r.jsx)(i.Drp, {
+    }, "add-to-group")), null != A && v.push((0, r.jsx)(l.Drp, {
         id: "remove-from-group",
         label: "Remove from Group",
         action: () => {
-            null == s || s(), o.A.removeUsersFromGroup(c, A)
+            null == c || c(), a.A.removeUsersFromGroup(A, b)
         }
-    }, "remove-from-group")), g
+    }, "remove-from-group")), v
 }

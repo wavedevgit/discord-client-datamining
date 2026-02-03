@@ -44,8 +44,8 @@ var i = n(627968),
     F = n(243612),
     H = n(575530),
     Y = n(545807),
-    K = n(672396),
-    W = n(644434),
+    W = n(672396),
+    K = n(644434),
     B = n(652215),
     Z = n(661272);
 let X = !I.isPlatformEmbedded && !1,
@@ -86,7 +86,7 @@ function q(e) {
                 }
                 return e
             }({}, t), r = r = {
-                layoutId: W.G,
+                layoutId: K.G,
                 version: 4
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
                 var n = Object.keys(e);
@@ -181,7 +181,7 @@ function er(e) {
             focused: k,
             incompatibleApp: V,
             hasZeroSizeDimension: z,
-            keybind: W
+            keybind: K
         } = (0, s.cf)([U.A, x.default, _.A, O.Ay, G.A], () => {
             let e = _.A.windowSize((0, T.Q2)(I)),
                 t = O.Ay.getOverlayKeybind();
@@ -223,22 +223,22 @@ function er(e) {
             s = l && null != i && null != t,
             o = U.A.getTargetPID();
         if (M.default.hasChangedRenderMode(o)) return;
-        let u = L.A.isNotificationDisabled(K.KS.WelcomeNudge),
-            h = L.A.isNotificationDisabled(K.KS.GoLiveNudge),
-            p = L.A.isNotificationDisabled(K.KS.ActivityInvite),
+        let u = L.A.isNotificationDisabled(W.KS.WelcomeNudge),
+            h = L.A.isNotificationDisabled(W.KS.GoLiveNudge),
+            p = L.A.isNotificationDisabled(W.KS.ActivityInvite),
             f = [];
         !u && (f.push({
-            type: K.Jr.WELCOME
+            type: W.Jr.WELCOME
         }), !h && (a && s ? f.push({
-            type: K.Jr.GO_LIVE_VOICE,
+            type: W.Jr.GO_LIVE_VOICE,
             game: e,
             voiceChannelId: t,
             voiceGuild: i
         }) : a && f.push({
-            type: K.Jr.GO_LIVE_NON_VOICE,
+            type: W.Jr.GO_LIVE_NON_VOICE,
             game: e
         })), p || f.push({
-            type: K.Jr.CONTENT_INVENTORY,
+            type: W.Jr.CONTENT_INVENTORY,
             entries: []
         })), null != c.current && clearTimeout(c.current), c.current = setTimeout(() => {
             d.A.overlayMounted(...f)
@@ -259,7 +259,7 @@ function er(e) {
             className: Z.Lw,
             children: [!g && J, (0, i.jsx)($, {
                 locked: P,
-                keybind: W,
+                keybind: K,
                 onClick: et
             }), (0, i.jsx)(R.A, {
                 className: a()({

@@ -43,8 +43,8 @@ var i, r = n(284009),
     F = n(714642),
     H = n(970495),
     Y = n(122749),
-    K = n(925159),
-    W = n(128307),
+    W = n(925159),
+    K = n(128307),
     B = n(533923),
     Z = n(965082),
     X = n(749471),
@@ -212,7 +212,7 @@ function eb() {
             h = null == (n = N.A.getDiscoverableVoiceStateForUser(e)) ? void 0 : n.channelId;
         if (null != d && null != h && d === h) return !1;
         let p = (0, G.qv)();
-        return null != p && p.id === u && (null == (s = null === (r = null == (l = ec[u]) ? void 0 : l[e]) || void 0 === r ? void 0 : r.lastSentTimestamp) || Date.now() - s > eh ? (null != (o = (0, K.A)(e, u, c)) && (ed(u, e, {
+        return null != p && p.id === u && (null == (s = null === (r = null == (l = ec[u]) ? void 0 : l[e]) || void 0 === r ? void 0 : r.lastSentTimestamp) || Date.now() - s > eh ? (null != (o = (0, W.A)(e, u, c)) && (ed(u, e, {
             userId: e,
             gameId: u,
             lastSentTimestamp: Date.now()
@@ -344,7 +344,7 @@ let eS = new e_(o.h, {
                         break;
                     case Q.xL.JOIN_REQUEST:
                         if (null == (r = j.A.getApplicationActivity(u)) || null == r.party || r.party.id !== t.activity.party_id) return !1;
-                        a = (0, W.A)(e, n, o, r);
+                        a = (0, K.A)(e, n, o, r);
                         break;
                     case Q.xL.STREAM_REQUEST:
                         let {

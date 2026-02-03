@@ -45,8 +45,8 @@ var i = n(627968),
     F = n(810412),
     H = n(243612),
     Y = n(652215),
-    K = n(381941),
-    W = n(985018),
+    W = n(381941),
+    K = n(985018),
     B = n(72007);
 
 function Z(e) {
@@ -114,19 +114,19 @@ function J(e) {
                             i = null != (t = D.A.getChannel(e)) ? t : null;
                         a()(null != i, "Send channel must be defined"), (0, T.pX)(Y.BVt.CHANNEL(i.guild_id, i.id)), (0, I.A)(Y.BRT.OVERLAY, !0), !0 === n.extra.fake_inventory_item ? await (0, _.J)({
                             channel: i,
-                            content: W.intl.formatToPlainString(W.t.UVBA9g, {
+                            content: K.intl.formatToPlainString(K.t.UVBA9g, {
                                 gameName: n.extra.game_name
                             }),
                             whenReady: !0,
                             doNotNotifyOnError: !1,
-                            location: K.Hx.OVERLAY
+                            location: W.Hx.OVERLAY
                         }) : await (0, _.d)({
                             channel: i,
-                            content: W.intl.string(W.t.DwAcMz),
+                            content: K.intl.string(K.t.DwAcMz),
                             entry: n,
                             whenReady: !0,
                             doNotNotifyOnError: !1,
-                            location: K.Hx.OVERLAY
+                            location: W.Hx.OVERLAY
                         })
                     }
                     y.A.track(Y.HAw.OVERLAY_GAME_INVITE_SENT, {
@@ -152,7 +152,7 @@ function J(e) {
                 value: F.IP.CHAT,
                 userId: u.id
             })
-        }, S = E ? W.intl.string(W.t["3fRySx"]) : W.intl.string(W.t.XHxDIV);
+        }, S = E ? K.intl.string(K.t["3fRySx"]) : K.intl.string(K.t.XHxDIV);
     return t = "sent" === c ? A ? p.oyn : p.BNr : E ? p.DpX : p.lX7, (0, i.jsx)(h.m, {
         text: S,
         "aria-label": S,
@@ -193,7 +193,7 @@ function Q(e) {
                 g("unsent")
             }
         }
-    }, y = W.intl.string(W.t.OKsSCR);
+    }, y = K.intl.string(K.t.OKsSCR);
     return (0, i.jsx)(h.m, {
         text: y,
         "aria-label": y,
@@ -311,7 +311,7 @@ function ee(e) {
                 variant: "text-xs/medium",
                 color: "subtle" === s ? "text-subtle" : "text-default",
                 tag: "div",
-                children: W.intl.string(W.t.y9eo7a)
+                children: K.intl.string(K.t.y9eo7a)
             })
         }), t.map((e, t) => (0, i.jsx)(q, {
             idx: t,
@@ -424,7 +424,7 @@ function ei(e) {
         }), l && !s && r ? (0, i.jsx)("div", {
             className: B.DJ,
             children: (0, i.jsx)(p.Button, {
-                text: W.intl.string(W.t["6Qgrev"]),
+                text: K.intl.string(K.t["6Qgrev"]),
                 size: "sm",
                 variant: "secondary",
                 onClick: () => {

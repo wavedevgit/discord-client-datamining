@@ -86,7 +86,7 @@ function w(e) {
             game: S
         }) : S,
         Y = (null == P || null == (a = P.timestamps) ? void 0 : a.start) != null ? (E = P.timestamps.start) < 1e12 ? 1e3 * E : E : null,
-        K = r.useMemo(() => (function(e) {
+        W = r.useMemo(() => (function(e) {
             let {
                 activityLabel: t,
                 activityStartTimestampMs: n,
@@ -113,7 +113,7 @@ function w(e) {
             customStatusActivity: F
         }), [H, Y, V, F]);
     if (null == w) return null;
-    let W = null == w.banner ? null : null != (_ = (0, x.z)({
+    let K = null == w.banner ? null : null != (_ = (0, x.z)({
             id: w.id,
             banner: w.banner,
             canAnimate: A.kt.getSetting(),
@@ -125,7 +125,7 @@ function w(e) {
         children: [(0, i.jsx)("div", {
             className: T.CK,
             style: {
-                backgroundImage: null != W ? "url(".concat(W, ")") : void 0
+                backgroundImage: null != K ? "url(".concat(K, ")") : void 0
             }
         }), (0, i.jsxs)("div", {
             className: T.vK,
@@ -145,7 +145,7 @@ function w(e) {
                         displayNameStyles: k,
                         effectDisplayType: g.G.ANIMATED
                     }), (() => {
-                        switch (K.type) {
+                        switch (W.type) {
                             case "activity":
                                 return (0, i.jsxs)("div", {
                                     className: T.nU,
@@ -157,7 +157,7 @@ function w(e) {
                                         className: T.Yg,
                                         variant: "text-xs/medium",
                                         color: "text-subtle",
-                                        children: K.label
+                                        children: W.label
                                     })]
                                 });
                             case "voice_call":
@@ -171,14 +171,14 @@ function w(e) {
                                         className: T.Yg,
                                         variant: "text-xs/medium",
                                         color: "text-subtle",
-                                        children: K.label
+                                        children: W.label
                                     })]
                                 });
                             case "custom_status":
                                 return (0, i.jsx)("div", {
                                     className: T.nU,
                                     children: (0, i.jsx)(p.A, {
-                                        activity: K.customStatusActivity,
+                                        activity: W.customStatusActivity,
                                         className: T.tR,
                                         emojiClassName: T.qp,
                                         textClassName: T.Yg,
@@ -190,14 +190,14 @@ function w(e) {
                         }
                     })()]
                 })]
-            }), "activity" === K.type ? null == K.startTimestampMs ? null : (0, i.jsx)(o.Text, {
+            }), "activity" === W.type ? null == W.startTimestampMs ? null : (0, i.jsx)(o.Text, {
                 className: T.p0,
                 variant: "code",
                 tag: "div",
                 children: (0, i.jsx)(C, {
-                    startTimestampMs: K.startTimestampMs
+                    startTimestampMs: W.startTimestampMs
                 })
-            }) : "voice_call" === K.type ? null == U ? null : (0, i.jsx)(o.Text, {
+            }) : "voice_call" === W.type ? null == U ? null : (0, i.jsx)(o.Text, {
                 className: T.p0,
                 variant: "code",
                 tag: "div",

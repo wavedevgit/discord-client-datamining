@@ -1,11 +1,12 @@
 /** chunk id: 589051, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    E: () => D,
+    E: () => L,
     Fg: () => m,
     H: () => A,
     Jo: () => u,
     LA: () => f,
+    M8: () => D,
     NI: () => P,
     QC: () => g,
     X4: () => w,
@@ -380,6 +381,12 @@ function P(e) {
     })
 }
 
-function D() {
+function D(e) {
+    return R.useConfig({
+        location: e
+    })
+}
+
+function L() {
     m("OVERLAY_INITIALIZED"), y("OVERLAY_INITIALIZED"), I("OVERLAY_INITIALIZED"), T("OVERLAY_INITIALIZED"), N("OVERLAY_INITIALIZED"), P("OVERLAY_INITIALIZED")
 }

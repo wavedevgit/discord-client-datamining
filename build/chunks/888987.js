@@ -50,7 +50,7 @@ function A(e) {
         [G, V] = r.useState(!0),
         [z, F] = r.useState(!0),
         [H, Y] = r.useState(!0),
-        [K, W] = r.useState(!0),
+        [W, K] = r.useState(!0),
         [B, Z] = r.useState(!0);
     return t && !n ? null : (0, i.jsxs)("div", {
         className: a()(y.st, !l && y.Hk),
@@ -117,13 +117,13 @@ function A(e) {
                     children: ["(", (j.current / T.current * 100).toFixed(3), "%)"]
                 })]
             })]
-        }), (K || !t) && (0, i.jsxs)("div", {
+        }), (W || !t) && (0, i.jsxs)("div", {
             className: y.PG,
             children: [!t && (0, i.jsx)("div", {
                 className: y.On,
                 children: (0, i.jsx)(u.dOG, {
-                    checked: K,
-                    onChange: e => W(e)
+                    checked: W,
+                    onChange: e => K(e)
                 })
             }), (0, i.jsxs)(u.Text, {
                 variant: "text-md/normal",
