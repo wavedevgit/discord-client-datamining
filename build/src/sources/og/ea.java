@@ -2,47 +2,23 @@ package og;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class ea {
 
-    /* renamed from: a */
+    /* renamed from: a  reason: collision with root package name */
     private hc f43140a;
 
-    /* renamed from: b */
+    /* renamed from: b  reason: collision with root package name */
     private da f43141b;
 
-    /* renamed from: c */
+    /* renamed from: c  reason: collision with root package name */
     private ba f43142c;
 
-    /* renamed from: d */
+    /* renamed from: d  reason: collision with root package name */
     private wa f43143d;
 
-    /* renamed from: e */
+    /* renamed from: e  reason: collision with root package name */
     private za f43144e;
 
-    /* renamed from: f */
+    /* renamed from: f  reason: collision with root package name */
     private s2 f43145f;
-
-    public static /* bridge */ /* synthetic */ s2 a(ea eaVar) {
-        return eaVar.f43145f;
-    }
-
-    public static /* bridge */ /* synthetic */ ba b(ea eaVar) {
-        return eaVar.f43142c;
-    }
-
-    public static /* bridge */ /* synthetic */ da c(ea eaVar) {
-        return eaVar.f43141b;
-    }
-
-    public static /* bridge */ /* synthetic */ wa k(ea eaVar) {
-        return eaVar.f43143d;
-    }
-
-    public static /* bridge */ /* synthetic */ za l(ea eaVar) {
-        return eaVar.f43144e;
-    }
-
-    public static /* bridge */ /* synthetic */ hc m(ea eaVar) {
-        return eaVar.f43140a;
-    }
 
     public final ea d(s2 s2Var) {
         this.f43145f = s2Var;
