@@ -111,7 +111,7 @@ let et = e => {
             eT = null == eN ? void 0 : eN.last_granted_reward,
             ej = null == eN ? void 0 : eN.last_granted_reward_amount,
             ex = eh && eS && null != eT && null != ej,
-            eP = eh && eS && null != eN,
+            eP = eh && eS && !ex && null != eN,
             ew = (0, Q.gr)(),
             eL = null != eA && null != ed && ed.status === J.Dmq.CANCELED,
             {
