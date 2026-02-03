@@ -22,33 +22,28 @@ final class bl extends dl {
         this.f38133d = f13;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // mg.dl
-    public final float a() {
+    final float a() {
         return 0.0f;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // mg.dl
-    public final float b() {
+    final float b() {
         return this.f38132c;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // mg.dl
-    public final float c() {
+    final float c() {
         return this.f38130a;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // mg.dl
-    public final float d() {
+    final float d() {
         return this.f38133d;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // mg.dl
-    public final float e() {
+    final float e() {
         return this.f38131b;
     }
 
