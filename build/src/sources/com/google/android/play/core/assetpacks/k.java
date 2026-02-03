@@ -34,16 +34,20 @@ public final class k extends th.l0 {
 
     @Override // th.l0
     protected final void a() {
+        th.k0 k0Var;
+        th.v0 v0Var;
         String str;
         Bundle A;
         Bundle h10;
         try {
+            v0Var = this.f16483q.f16724d;
             str = this.f16483q.f16721a;
             A = x.A(this.f16479e, this.f16480i);
             h10 = x.h();
-            ((th.b0) this.f16483q.f16724d.e()).F0(str, A, h10, new u(this.f16483q, this.f16481o, this.f16479e, this.f16480i, this.f16482p));
+            ((th.b0) v0Var.e()).F0(str, A, h10, new u(this.f16483q, this.f16481o, this.f16479e, this.f16480i, this.f16482p));
         } catch (RemoteException e10) {
-            x.f16719g.c(e10, "notifyModuleCompleted", new Object[0]);
+            k0Var = x.f16719g;
+            k0Var.c(e10, "notifyModuleCompleted", new Object[0]);
         }
     }
 }
