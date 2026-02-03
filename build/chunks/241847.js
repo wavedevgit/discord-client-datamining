@@ -1,6 +1,6 @@
 /** chunk id: 241847, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => S
 }), n(896048);
 var l = n(627968),
     r = n(64700),
@@ -160,7 +160,7 @@ function C(e) {
     })
 }
 
-function x(e) {
+function S(e) {
     return (0, p.k)({
         channelId: e.channelId
     }) ? (0, l.jsx)(C, _({}, e)) : (0, l.jsx)("div", {

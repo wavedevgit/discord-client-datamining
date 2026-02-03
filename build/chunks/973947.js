@@ -1,6 +1,6 @@
 /** chunk id: 973947, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    I: () => S
+    I: () => x
 }), n(896048);
 var l = n(627968),
     r = n(64700),
@@ -25,7 +25,7 @@ var l = n(627968),
     O = n(985018),
     C = n(854147);
 
-function x(e) {
+function S(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             l = Object.keys(n);
@@ -43,15 +43,15 @@ function x(e) {
     }
     return e
 }
-let S = e => {
+let x = e => {
     let {
         voiceFilter: t,
         hasNitro: n,
         analyticsContext: i
     } = e, {
-        activeVoice: S,
+        activeVoice: x,
         mostRecentlyRequestedVoiceId: j
-    } = (0, y.f)(), I = (0, _.e)(t.id), T = t.id === S, N = !t.available && !t.temporarilyAvailable, P = t.temporarilyAvailable && !n && !T, w = !T && t.id === j, [R, D] = r.useState(!1);
+    } = (0, y.f)(), I = (0, _.e)(t.id), T = t.id === x, N = !t.available && !t.temporarilyAvailable, P = t.temporarilyAvailable && !n && !T, w = !T && t.id === j, [R, D] = r.useState(!1);
     r.useEffect(() => {
         let e = w ? setTimeout(() => D(w), 200) : void 0;
         return () => {
@@ -76,19 +76,19 @@ let S = e => {
         }),
         K = C[t.styleKey],
         W = r.useCallback(() => {
-            n || !N ? ((0, m.OR)(S === t.id ? null : t.id, i), P && p.default.track(v.HAw.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, x({
+            n || !N ? ((0, m.OR)(x === t.id ? null : t.id, i), P && p.default.track(v.HAw.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, S({
                 voice_filter_id: t.id
             }, (0, g.A)(i)))) : (0, d.n)()
-        }, [n, N, S, t.id, i, P]),
+        }, [n, N, x, t.id, i, P]),
         z = r.useCallback(() => {
-            p.default.track(v.HAw.VOICE_FILTER_PREVIEW_PLAYED, x({
+            p.default.track(v.HAw.VOICE_FILTER_PREVIEW_PLAYED, S({
                 voice_filter_id: t.id
             }, (0, g.A)(i))), H({
                 volume: .5,
                 outputChannel: E.a.VOICE
             }), (.25 > Math.random() || U > 0) && null != k && G(e => (e + 1) % k.length)
         }, [i, H, U, k, t.id]),
-        q = null != I ? O.intl.string(I.name) : "";
+        Y = null != I ? O.intl.string(I.name) : "";
     return (0, l.jsxs)("div", {
         className: a()(C.filter, K, {
             [C.selected]: T,
@@ -172,7 +172,7 @@ let S = e => {
                     children: [(0, l.jsxs)(u.Text, {
                         variant: "text-xs/medium",
                         color: t.underDevelopment ? "text-muted" : "text-strong",
-                        children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", q]
+                        children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", Y]
                     }), M && !L ? (0, l.jsx)(u.s3U, {
                         size: "xxs"
                     }) : null]
@@ -187,7 +187,7 @@ let S = e => {
                 }),
                 onClick: F ? B : z,
                 "aria-label": O.intl.formatToPlainString(O.t.gDzvjd, {
-                    voiceFilterName: q
+                    voiceFilterName: Y
                 }),
                 children: F ? (0, l.jsx)(u.wFz, {
                     size: "custom",

@@ -25,8 +25,8 @@ var l = n(627968),
     E = n(961350),
     O = n(696451),
     C = n(430452),
-    x = n(531685),
-    S = n(562153),
+    S = n(531685),
+    x = n(562153),
     j = n(51082),
     I = (n(729365), n(566566)),
     T = n(289552),
@@ -75,7 +75,7 @@ function k(e) {
         user: K,
         streamId: W,
         speaking: z
-    } = t, q = K.id === V, Y = (0, j.Ay)(t), J = (0, s.bG)([x.A], () => x.A.isFocused()), Z = (0, s.bG)([_.A], () => _.A.getWindowFocused(N.MLl.CHANNEL_CALL_POPOUT)), X = (0, s.bG)([C.A], () => null != K.id && C.A.isLocalVideoDisabled(K.id, (0, p.A)(t.type)), [K.id, t.type]), Q = (0, s.bG)([O.Ay], () => O.Ay.isGuestOrLurker(n.guild_id, K.id)), $ = S.Ay.getName(n.getGuildId(), n.id, K) + (Q ? " ".concat(w.intl.string(w.t["pFO/Ph"])) : ""), ee = z && (Z || J), et = o < 124 ? M : D, {
+    } = t, Y = K.id === V, q = (0, j.Ay)(t), J = (0, s.bG)([S.A], () => S.A.isFocused()), Z = (0, s.bG)([_.A], () => _.A.getWindowFocused(N.MLl.CHANNEL_CALL_POPOUT)), X = (0, s.bG)([C.A], () => null != K.id && C.A.isLocalVideoDisabled(K.id, (0, p.A)(t.type)), [K.id, t.type]), Q = (0, s.bG)([O.Ay], () => O.Ay.isGuestOrLurker(n.guild_id, K.id)), $ = x.Ay.getName(n.getGuildId(), n.id, K) + (Q ? " ".concat(w.intl.string(w.t["pFO/Ph"])) : ""), ee = z && (Z || J), et = o < 124 ? M : D, {
         avatarSrc: en,
         avatarDecorationSrc: el
     } = (0, y.A)({
@@ -96,8 +96,8 @@ function k(e) {
             selectedParticipant: t,
             user: n
         } = eo.current;
-        e.isGuildStageVoice() && !Y && (null == t ? void 0 : t.id) === n.id && u.A.selectParticipant(e.id, null)
-    }, [Y]), i && !X && !G && Y && !c && null != B && C.A.supports(P.O5.VIDEO)) ? null != ei && null == ea ? (0, l.jsx)(I.A, {
+        e.isGuildStageVoice() && !q && (null == t ? void 0 : t.id) === n.id && u.A.selectParticipant(e.id, null)
+    }, [q]), i && !X && !G && q && !c && null != B && C.A.supports(P.O5.VIDEO)) ? null != ei && null == ea ? (0, l.jsx)(I.A, {
         avError: ei,
         userId: t.id,
         width: o,
@@ -106,7 +106,7 @@ function k(e) {
         onResize: L,
         wrapperClassName: v !== f.N.CALL_TILE ? R.tN : void 0,
         className: R.Qs,
-        mirror: q,
+        mirror: Y,
         streamId: W,
         videoComponent: B,
         fit: T,

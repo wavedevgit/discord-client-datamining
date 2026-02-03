@@ -24,8 +24,8 @@ var l = n(627968),
     E = n(253932),
     O = n(617617),
     C = n(961350),
-    x = n(72314),
-    S = n(580745),
+    S = n(72314),
+    x = n(580745),
     j = n(834942),
     I = n(320501),
     T = n(576705),
@@ -93,8 +93,8 @@ function z(e, t) {
         for (r = 0, n = Object.getOwnPropertySymbols(e); r < n.length; r++) l = n[r], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (i[l] = e[l]);
     return i
 }
-let q = (0, s.animated)(u.fKU),
-    Y = r.memo(function(e) {
+let Y = (0, s.animated)(u.fKU),
+    q = r.memo(function(e) {
         var t, n, i;
         let s, h, m, {
                 className: g,
@@ -104,7 +104,7 @@ let q = (0, s.animated)(u.fKU),
                 messages: v,
                 unreadCount: E,
                 showNewMessagesBar: C,
-                messageDisplayCompact: S,
+                messageDisplayCompact: x,
                 channelStream: j,
                 uploads: I,
                 hasUnreads: N,
@@ -113,12 +113,12 @@ let q = (0, s.animated)(u.fKU),
                 keyboardModeEnabled: D,
                 filterAfterTimestamp: M,
                 showingQuarantineBanner: k,
-                hideSummaries: Y = !1,
+                hideSummaries: q = !1,
                 jumpBarClassName: J,
                 typingGradient: Z
             } = e,
-            [X, Q] = r.useState(null != (t = x.A.isAtBottom(y.id)) && t),
-            $ = r.useMemo(() => S ? (0, L.bW)({
+            [X, Q] = r.useState(null != (t = S.A.isAtBottom(y.id)) && t),
+            $ = r.useMemo(() => x ? (0, L.bW)({
                 compact: !0,
                 messageGroups: 30,
                 groupRange: 4,
@@ -132,11 +132,11 @@ let q = (0, s.animated)(u.fKU),
                 attachments: 8,
                 fontSize: w,
                 groupSpacing: A
-            }), [S, w, A]),
+            }), [x, w, A]),
             ee = (0, G.Ay)({
                 messages: v,
                 channel: y,
-                compact: S,
+                compact: x,
                 hasUnreads: N,
                 focusId: P,
                 placeholderHeight: $.totalHeight,
@@ -163,7 +163,7 @@ let q = (0, s.animated)(u.fKU),
                 messages: v,
                 unreadCount: E,
                 showNewMessagesBar: C,
-                messageDisplayCompact: S,
+                messageDisplayCompact: x,
                 channelStream: j,
                 uploads: I,
                 loadMore: ee.loadMore,
@@ -171,7 +171,7 @@ let q = (0, s.animated)(u.fKU),
                 specs: $,
                 filterAfterTimestamp: null != M ? M : en,
                 showingQuarantineBanner: k,
-                hideSummaries: Y,
+                hideSummaries: q,
                 jumpToPresent: () => {
                     if (v.hasPresent()) {
                         var e;
@@ -226,7 +226,7 @@ let q = (0, s.animated)(u.fKU),
             navigator: et,
             children: [null != es && es, (0, l.jsxs)("div", {
                 className: a()(V.Og, g, "group-spacing-".concat(A)),
-                children: [null == es && er, (0, l.jsxs)(q, W(K({
+                children: [null == es && er, (0, l.jsxs)(Y, W(K({
                     ref: eh,
                     customTheme: !0,
                     className: a()(b, V.XG, ep ? em : void 0),
@@ -294,7 +294,7 @@ let q = (0, s.animated)(u.fKU),
             }
         }(t), {
             messageGroupSpacing: O,
-            fontSize: x,
+            fontSize: S,
             messageDisplayCompact: R,
             renderSpoilers: L,
             keyboardModeEnabled: U
@@ -370,16 +370,16 @@ let q = (0, s.animated)(u.fKU),
                 messages: a,
                 channelStream: E,
                 oldestUnreadMessageId: s,
-                editingMessageId: (0, c.bG)([S.A], () => {
+                editingMessageId: (0, c.bG)([x.A], () => {
                     var t;
-                    return null == (t = S.A.getEditingMessage(e.id)) ? void 0 : t.id
+                    return null == (t = x.A.getEditingMessage(e.id)) ? void 0 : t.id
                 })
             }
         }(t);
         return (0, l.jsx)(y.Bs.Provider, {
             value: (0, D.A)(L, d),
             children: (0, l.jsx)(k.t, {
-                children: (0, l.jsx)(Y, W(K({}, u), {
+                children: (0, l.jsx)(q, W(K({}, u), {
                     messageGroupSpacing: O,
                     showNewMessagesBar: !0,
                     channel: t,
@@ -392,7 +392,7 @@ let q = (0, s.animated)(u.fKU),
                     hasUnreads: null != B,
                     canChat: _,
                     editingMessageId: V,
-                    fontSize: x,
+                    fontSize: S,
                     keyboardModeEnabled: U,
                     showingQuarantineBanner: n,
                     hideSummaries: i,

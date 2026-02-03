@@ -143,7 +143,8 @@ let F = "1193992107035983872",
                 questBarHero: "quests_bar_hero.webm",
                 questBarHeroVideo: null,
                 gameTile: "game_tile.png",
-                logotype: "game_logotype.png"
+                logotype: "game_logotype.png",
+                questBarHeroBlurhash: null
             },
             taskConfigV2: {
                 joinOperator: u.K.AND,

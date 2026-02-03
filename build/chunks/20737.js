@@ -24,8 +24,8 @@ var l = n(627968),
     E = n(253932),
     O = n(761640),
     C = n(186111),
-    x = n(576705),
-    S = n(461213),
+    S = n(576705),
+    x = n(461213),
     j = n(203982),
     I = n(723702),
     T = n(518960),
@@ -77,7 +77,7 @@ let G = r.memo(function(e) {
         editorTextContent: B,
         setValue: V,
         canOnlyUseTextCommands: K
-    } = e, W = (0, b.Us)(), z = r.useRef(null), q = r.useRef(null), Y = (0, s.bG)([S.A], () => S.A.getActivities()), J = (0, f.Et)(), Z = (0, s.bG)([p.A], () => p.A.getLastClipsSession()), X = (0, s.yK)([p.A], () => p.A.getNewClipIds()), Q = (0, s.bG)([O.Ay], () => null == O.Ay.getCurrentSidebarChannelId(F.id)), {
+    } = e, W = (0, b.Us)(), z = r.useRef(null), Y = r.useRef(null), q = (0, s.bG)([x.A], () => x.A.getActivities()), J = (0, f.Et)(), Z = (0, s.bG)([p.A], () => p.A.getLastClipsSession()), X = (0, s.yK)([p.A], () => p.A.getNewClipIds()), Q = (0, s.bG)([O.Ay], () => null == O.Ay.getCurrentSidebarChannelId(F.id)), {
         showClipsHeaderEntrypoint: $
     } = h.L_.useExperiment({
         location: "ChannelAttachButton"
@@ -85,7 +85,7 @@ let G = r.memo(function(e) {
         autoTrackExposure: !1
     }), {
         onShareClick: ee
-    } = (0, g.A)(F.id), et = (0, s.bG)([A.HP], () => A.HP.hasHotspot(A._2.CLIPS_CHANNEL_ATTACH_REMINDER)), en = (0, o.red)(e => (0, o.fDT)(e, D.nm)), el = (0, s.bG)([C.A], () => C.A.hasLayers()), er = (0, s.bG)([p.A], () => p.A.hasClips()), [ei, ea] = r.useState(null), es = (0, h.sw)() && (J || er), eo = F.isPrivate(), ec = (0, s.bG)([x.A], () => eo || x.A.can(R.xBc.ATTACH_FILES, F) && x.A.can(R.xBc.SEND_MESSAGES, F)), eu = (0, u.A)(Z);
+    } = (0, g.A)(F.id), et = (0, s.bG)([A.HP], () => A.HP.hasHotspot(A._2.CLIPS_CHANNEL_ATTACH_REMINDER)), en = (0, o.red)(e => (0, o.fDT)(e, D.nm)), el = (0, s.bG)([C.A], () => C.A.hasLayers()), er = (0, s.bG)([p.A], () => p.A.hasClips()), [ei, ea] = r.useState(null), es = (0, h.sw)() && (J || er), eo = F.isPrivate(), ec = (0, s.bG)([S.A], () => eo || S.A.can(R.xBc.ATTACH_FILES, F) && S.A.can(R.xBc.SEND_MESSAGES, F)), eu = (0, u.A)(Z);
 
     function ed() {
         (0, o.mMO)(async () => {
@@ -131,7 +131,7 @@ let G = r.memo(function(e) {
             hasClips: es,
             canUseApplicationCommands: !K,
             channel: F,
-            activities: Y,
+            activities: q,
             newClipsCount: eb,
             canPostPolls: em,
             appContext: W,
@@ -145,7 +145,7 @@ let G = r.memo(function(e) {
             colorClass: L.dW
         }),
         ev = (0, l.jsx)(o.YNO, {
-            targetElementRef: q,
+            targetElementRef: Y,
             shouldShow: null != ei,
             animation: o.YNO.Animation.NONE,
             align: "recentClips" === ei ? "center" : "left",
@@ -183,7 +183,7 @@ let G = r.memo(function(e) {
                 }
             },
             children: e => (0, l.jsx)(N.A, U(k({
-                ref: q,
+                ref: Y,
                 className: a()(L.g$, G),
                 childClassName: L.wh,
                 isActive: !1,

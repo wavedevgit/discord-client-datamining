@@ -1,6 +1,6 @@
 /** chunk id: 802085, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => x
 });
 var l = n(627968),
     r = n(64700),
@@ -24,7 +24,7 @@ var l = n(627968),
     E = n(397405),
     O = n(679740),
     C = n(206314);
-let x = r.memo(function(e) {
+let S = r.memo(function(e) {
         let {
             message: t,
             notice: n,
@@ -71,7 +71,7 @@ let x = r.memo(function(e) {
             })]
         })
     }),
-    S = r.memo(function(e) {
+    x = r.memo(function(e) {
         var t, n;
         let {
             className: i,
@@ -80,11 +80,11 @@ let x = r.memo(function(e) {
             children: f,
             content: m,
             onUpdate: g
-        } = e, y = null == (n = u.editedTimestamp) ? void 0 : n.toString(), S = r.useRef(!1), j = (0, c.bG)([p.A], () => p.A.getMessage(u.id), [u.id]), I = r.useCallback(() => {
+        } = e, y = null == (n = u.editedTimestamp) ? void 0 : n.toString(), x = r.useRef(!1), j = (0, c.bG)([p.A], () => p.A.getMessage(u.id), [u.id]), I = r.useCallback(() => {
             (null == j ? void 0 : j.isBlockedEdit) ? (0, h.j)(u.id) : d.A.deleteMessage(u.channel_id, u.id, !0)
         }, [u, j]);
         return r.useLayoutEffect(() => {
-            S.current ? null != g && g() : S.current = !0
+            x.current ? null != g && g() : x.current = !0
         }, [g, u.content, m, y, f]), (0, l.jsxs)("div", {
             id: (0, A.CJ)(u),
             className: a()(i, C.PT, {
@@ -103,7 +103,7 @@ let x = r.memo(function(e) {
                         children: ["(", v.intl.string(v.t.Z7eEx9), ")"]
                     })
                 })]
-            }), (0, l.jsx)(x, {
+            }), (0, l.jsx)(S, {
                 notice: null != (t = null == j ? void 0 : j.errorMessage) ? t : v.intl.string(v.t.zQ69pv),
                 message: u,
                 compact: s,

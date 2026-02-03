@@ -65,7 +65,7 @@ function v(e) {
         isBlocked: h.A.isBlocked(E)
     }), [E]), C = r.useCallback(() => {
         (0, p.xi)(t, [v])
-    }, [t, v]), x = (0, A.eT)(), S = r.useCallback(e => () => {
+    }, [t, v]), S = (0, A.eT)(), x = r.useCallback(e => () => {
         o.A.blockUser(E, {
             location: A.Rx
         }).then(() => {
@@ -105,7 +105,7 @@ function v(e) {
                         warningId: v,
                         senderId: E,
                         description: _.intl.string(_.t.DJMZX6),
-                        safetyTipRows: x.map((e, t) => (0, l.jsx)(u.B, {
+                        safetyTipRows: S.map((e, t) => (0, l.jsx)(u.B, {
                             index: t,
                             listType: "numbered",
                             title: e
@@ -155,7 +155,7 @@ function v(e) {
                         return e
                     }({}, n), o = o = {
                         userId: E,
-                        confirmBlock: S(e),
+                        confirmBlock: x(e),
                         onCancel: () => {
                             null == i || i(), (0, m._$)({
                                 channelId: t,

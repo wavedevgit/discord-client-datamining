@@ -1,6 +1,6 @@
 /** chunk id: 162792, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => x
 });
 var l = n(627968),
     r = n(64700),
@@ -54,19 +54,19 @@ function C(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let x = r.memo(function(e) {
+let S = r.memo(function(e) {
     var t;
     let {
         baseMessage: n,
-        referencedMessage: x,
-        channel: S,
+        referencedMessage: S,
+        channel: x,
         compact: j = !1,
         referencedUsernameProfile: I,
         referencedAvatarProfile: T,
         setPopout: N,
         isReplySpineClickable: P,
         showReplySpine: w
-    } = e, R = x.state === p.a.LOADED ? x.message : void 0, D = (0, A.X4)(R), M = o.m.useExperiment({
+    } = e, R = S.state === p.a.LOADED ? S.message : void 0, D = (0, A.X4)(R), M = o.m.useExperiment({
         location: "repliedMessage"
     }).enabled, L = (0, u.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), k = r.useMemo(() => {
         if (null == R) return null;
@@ -77,7 +77,7 @@ let x = r.memo(function(e) {
         }));
         if (e.type === v.lAJ.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.$)((0, c.WC)({
             username: null != D ? D.nick : e.author.username,
-            guildId: null == S ? void 0 : S.guild_id,
+            guildId: null == x ? void 0 : x.guild_id,
             roleSubscriptionData: e.roleSubscriptionData
         }));
         if (e.type === v.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.$)((0, d.P)({
@@ -98,7 +98,7 @@ let x = r.memo(function(e) {
                     formatInline: !0,
                     allowLinks: !0
                 },
-                n = e.isFirstMessageInForumPost(S) ? C(O({}, t), {
+                n = e.isFirstMessageInForumPost(x) ? C(O({}, t), {
                     noStyleAndInteraction: !0,
                     allowHeading: !0,
                     allowList: !0,
@@ -112,13 +112,13 @@ let x = r.memo(function(e) {
             return (0, g.Ay)(e, n).content
         }
         return null
-    }, [R, D, S, L, M]), {
+    }, [R, D, x, L, M]), {
         isReplyAuthorBlocked: U,
         isReplyAuthorIgnored: G
     } = (0, i.cf)([f.A], () => ({
         isReplyAuthorBlocked: null != R && f.A.isBlockedForMessage(R),
         isReplyAuthorIgnored: null != R && f.A.isIgnoredForMessage(R)
-    }), [R]), F = (0, y.r4)(null == R ? void 0 : R.author.id, S.id), H = (0, y.Ck)(n, R), B = (0, y.H9)(R, S, I, N), V = (0, y.Ge)(T, N), K = r.useCallback(() => {
+    }), [R]), F = (0, y.r4)(null == R ? void 0 : R.author.id, x.id), H = (0, y.Ck)(n, R), B = (0, y.H9)(R, x, I, N), V = (0, y.Ge)(T, N), K = r.useCallback(() => {
         N({
             referencedUsernameProfile: !1,
             referencedAvatarProfile: !1
@@ -127,9 +127,9 @@ let x = r.memo(function(e) {
     return (0, l.jsx)(b.A, {
         repliedAuthor: D,
         baseMessage: n,
-        channel: S,
+        channel: x,
         baseAuthor: W,
-        referencedMessage: x,
+        referencedMessage: S,
         content: k,
         compact: j,
         isReplyAuthorBlocked: U,
@@ -147,7 +147,7 @@ let x = r.memo(function(e) {
     })
 });
 
-function S(e) {
+function x(e) {
     let {
         message: t,
         channel: n,
@@ -160,7 +160,7 @@ function S(e) {
         isReplySpineClickable: u,
         showReplySpine: d = !0
     } = e;
-    return null != o && (0, l.jsx)(x, {
+    return null != o && (0, l.jsx)(S, {
         baseMessage: t,
         replyReference: o,
         referencedMessage: c,

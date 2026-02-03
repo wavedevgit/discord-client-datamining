@@ -60,13 +60,13 @@ function C(e) {
     }), I.emitChange()
 }
 
-function x() {
+function S() {
     y = null, null != l && (l.destroy(), l = null), null != v && v()
 }
 
-function S() {
+function x() {
     let e = null != y && null != y.application_id ? h.A.getApplicationActivity(y.application_id) : null;
-    if (null != y && (null == e || null == e.party || null == e.party.id)) return x()
+    if (null != y && (null == e || null == e.party || null == e.party.id)) return S()
 }
 class j extends(r = i.Ay.Store) {
     initialize() {
@@ -168,14 +168,14 @@ let I = new j(a.h, {
                 location: "Channel Text Area - Invite to Join Modal"
             }).then(() => C(n))
         },
-        ACTIVITY_INVITE_MODAL_CLOSE: x,
+        ACTIVITY_INVITE_MODAL_CLOSE: S,
         OVERLAY_SET_INPUT_LOCKED: function(e) {
             let {
                 locked: t
             } = e;
-            return !!t && null != y && (x(), !0)
+            return !!t && null != y && (S(), !0)
         },
-        LOCAL_ACTIVITY_UPDATE: S,
-        RPC_APP_DISCONNECTED: S
+        LOCAL_ACTIVITY_UPDATE: x,
+        RPC_APP_DISCONNECTED: x
     }),
     T = 21552 == n.j ? I : null

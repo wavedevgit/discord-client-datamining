@@ -22,8 +22,8 @@ var r, i, a, s = n(311907),
     E = n(652215),
     O = ((i = {})[i.FRIENDS = 0] = "FRIENDS", i[i.GUILD_MEMBERS = 1] = "GUILD_MEMBERS", i);
 let C = !1,
-    x = "",
-    S = 0,
+    S = "",
+    x = 0,
     j = 0,
     I = [],
     T = !1,
@@ -42,17 +42,17 @@ let C = !1,
     });
 
 function R() {
-    x = "", S = 0, j = 0, I = [], N = new Set, C = !1, P = null, w.clear()
+    S = "", x = 0, j = 0, I = [], N = new Set, C = !1, P = null, w.clear()
 }
 
 function D(e) {
-    x = e, j = 0, M()
+    S = e, j = 0, M()
 }
 
 function M() {
     if (!C) return !1;
     let e = A.A.getChannel(P);
-    if (0 === x.trim().length) return null != l && l.clearQuery(), I = function(e) {
+    if (0 === S.trim().length) return null != l && l.clearQuery(), I = function(e) {
         let t = y.A.getFriendIDs(),
             n = h.A.getConfig({
                 location: "PrivateChannelRecipientsInviteStore"
@@ -87,7 +87,7 @@ function M() {
                 location: "PrivateChannelRecipientsInviteStore"
             }).enabled;
         l.setQuery({
-            query: x,
+            query: S,
             filters: o ? void 0 : {
                 friends: !0,
                 staff: s,
@@ -131,7 +131,7 @@ function U(e) {
     let {
         results: t
     } = e;
-    if (!C || "" === x) return;
+    if (!C || "" === S) return;
     let n = [];
     for (let {
             id: e,
@@ -181,13 +181,13 @@ class V extends(r = s.Ay.Store) {
         return N
     }
     getQuery() {
-        return x
+        return S
     }
     getState() {
         return {
-            query: x,
+            query: S,
             selectedRow: j,
-            selectedSection: S,
+            selectedSection: x,
             selectedUsers: N,
             results: I,
             hasFriends: T
@@ -228,7 +228,7 @@ let K = new V(c.h, {
             P = e.channelId, D(e.query)
         },
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
-            S = e.section, j = e.row
+            x = e.section, j = e.row
         },
         PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function(e) {
             let {
