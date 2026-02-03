@@ -18,12 +18,10 @@ final class s extends o {
     @Override // com.google.android.play.core.assetpacks.o, th.d0
     public final void b0(Bundle bundle, Bundle bundle2) {
         AtomicBoolean atomicBoolean;
-        th.k0 k0Var;
         super.b0(bundle, bundle2);
         atomicBoolean = this.f16629e.f16726f;
         if (!atomicBoolean.compareAndSet(true, false)) {
-            k0Var = x.f16719g;
-            k0Var.e("Expected keepingAlive to be true, but was false.", new Object[0]);
+            x.f16719g.e("Expected keepingAlive to be true, but was false.", new Object[0]);
         }
         if (bundle.getBoolean("keep_alive")) {
             this.f16629e.f();
@@ -32,13 +30,9 @@ final class s extends o {
 
     @Override // com.google.android.play.core.assetpacks.o, th.d0
     public final void g(Bundle bundle) {
-        th.v0 v0Var;
-        th.k0 k0Var;
-        v0Var = this.f16629e.f16725e;
-        v0Var.u(this.f16574c);
+        this.f16629e.f16725e.u(this.f16574c);
         int i10 = bundle.getInt("error_code");
-        k0Var = x.f16719g;
-        k0Var.b("onError(%d)", Integer.valueOf(i10));
+        x.f16719g.b("onError(%d)", Integer.valueOf(i10));
         this.f16574c.d(new a(i10));
     }
 }
