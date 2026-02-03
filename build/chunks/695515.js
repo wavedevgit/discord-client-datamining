@@ -12,7 +12,7 @@ var i = n(518977),
     d = n(936926),
     E = n(191627);
 
-function c(t, e, n) {
+function _(t, e, n) {
     return e in t ? Object.defineProperty(t, e, {
         value: n,
         enumerable: !0,
@@ -21,14 +21,14 @@ function c(t, e, n) {
     }) : t[e] = n, t
 }
 
-function _(t) {
+function c(t) {
     for (var e = 1; e < arguments.length; e++) {
         var n = null != arguments[e] ? arguments[e] : {},
             i = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
             return Object.getOwnPropertyDescriptor(n, t).enumerable
         }))), i.forEach(function(e) {
-            c(t, e, n[e])
+            _(t, e, n[e])
         })
     }
     return t
@@ -47,8 +47,8 @@ function T(t, e) {
     }), t
 }
 let S = null,
-    f = null,
-    A = {},
+    A = null,
+    f = {},
     C = !1,
     I = Y(),
     N = P(),
@@ -60,8 +60,8 @@ let S = null,
     L = null,
     v = [],
     D = [],
-    m = null,
     U = null,
+    m = null,
     b = {},
     O = null,
     M = {};
@@ -90,9 +90,9 @@ function P() {
 
 function w() {
     let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
-    return arguments.length > 1 && arguments[1], A = t.length > 0 ? t.reduce((t, e) => T(_({}, t), {
+    return arguments.length > 1 && arguments[1], f = t.length > 0 ? t.reduce((t, e) => T(c({}, t), {
         [e.user_id]: e
-    }), {}) : {}, C = !0, A
+    }), {}) : {}, C = !0, f
 }
 
 function V(t) {
@@ -111,8 +111,8 @@ function H(t, e) {
 function k(t) {
     M = t.reduce((t, e) => {
         var n;
-        return T(_({}, t), {
-            [e.id]: T(_({}, (0, a.dangerouslyConstructGuildRecordFromUntypedObject)(e)), {
+        return T(c({}, t), {
+            [e.id]: T(c({}, (0, a.dangerouslyConstructGuildRecordFromUntypedObject)(e)), {
                 approximateMemberCount: null != (n = e.approximate_member_count) ? n : 0
             })
         })
@@ -153,11 +153,11 @@ function Q(t) {
         rangeStartId: s,
         topUserActivities: d,
         topGuildActivities: E,
-        totalSpendAmount: c,
-        totalSpendCurrency: _,
+        totalSpendAmount: _,
+        totalSpendCurrency: c,
         invoices: T
     } = n;
-    S = u, f = s, H(l), V(a), k(r), w(e), null != T && G(T), v = d, D = E, m = c, U = _, O = null != i ? i : null, h = !1, R = o.default.fromTimestamp(Date.now()), y = !0
+    S = u, A = s, H(l), V(a), k(r), w(e), null != T && G(T), v = d, D = E, U = _, m = c, O = null != i ? i : null, h = !1, R = o.default.fromTimestamp(Date.now()), y = !0
 }
 
 function B(t) {
@@ -189,9 +189,9 @@ function K(t) {
         topGuildActivities: s,
         totalSpendAmount: d,
         totalSpendCurrency: E,
-        invoices: c
+        invoices: _
     } = e;
-    S = r, f = a, H(n), V(i), k(l), null != c && G(c), v = u, D = s, h = !1, R = o.default.fromTimestamp(Date.now()), m = d, U = E
+    S = r, A = a, H(n), V(i), k(l), null != _ && G(_), v = u, D = s, h = !1, R = o.default.fromTimestamp(Date.now()), U = d, m = E
 }
 
 function z(t) {
@@ -243,7 +243,7 @@ function J(t) {
             user_id: e
         } = t;
         return void 0 === n[e]
-    }) && e.linked_users.length > Object.keys(A).length ? u.Ay.fetchLinkedUsers() : w(e.linked_users)
+    }) && e.linked_users.length > Object.keys(f).length ? u.Ay.fetchLinkedUsers() : w(e.linked_users)
 }
 
 function $(t) {
@@ -263,7 +263,7 @@ function tt(t) {
 }
 
 function te() {
-    S = null, f = null, A = {}, I = Y(), N = P(), M = {}, h = !1, R = null, g = F(), C = !1, v = [], D = [], m = null, U = null, b = {}, O = null, y = !1
+    S = null, A = null, f = {}, I = Y(), N = P(), M = {}, h = !1, R = null, g = F(), C = !1, v = [], D = [], U = null, m = null, b = {}, O = null, y = !1
 }
 class tn extends l.A {
     initialize() {
@@ -273,7 +273,7 @@ class tn extends l.A {
         let t = this.readSnapshot(tn.LATEST_SNAPSHOT_VERSION);
         null != t && (w(t.linkedUsers), k(t.guilds), H(t.teenActivity), N = t.teenActivityTotals.reduce((t, e) => {
             let [n, i] = e.split(":"), l = (0, s.k5)(n);
-            return void 0 === l ? t : T(_({}, t), {
+            return void 0 === l ? t : T(c({}, t), {
                 [l]: parseInt(i, 10)
             })
         }, P()))
@@ -283,7 +283,7 @@ class tn extends l.A {
         return {
             version: tn.LATEST_SNAPSHOT_VERSION,
             data: {
-                linkedUsers: Object.values(A),
+                linkedUsers: Object.values(f),
                 teenActivityTotals: Object.entries(N).map(t => {
                     let [e, n] = t;
                     return "".concat(e, ":").concat(n)
@@ -299,15 +299,15 @@ class tn extends l.A {
         return S
     }
     getLinkedUsers() {
-        return A
+        return f
     }
     getLinkTimestamp(t) {
         var e;
-        let n = A[t];
+        let n = f[t];
         return null == n ? null : null != (e = n.updated_at) ? e : n.created_at
     }
     getRangeStartTimestamp() {
-        return null == f ? null : o.default.extractTimestamp(f)
+        return null == A ? null : o.default.extractTimestamp(A)
     }
     getActionsForDisplayType(t) {
         let e = I.get(t);
@@ -326,7 +326,7 @@ class tn extends l.A {
         return g
     }
     getStartId() {
-        return f
+        return A
     }
     getIsInitialized() {
         return y
@@ -347,10 +347,10 @@ class tn extends l.A {
         return D
     }
     getTotalSpendAmount() {
-        return m
+        return U
     }
     getTotalSpendCurrency() {
-        return U
+        return m
     }
     getPurchaseInfo(t) {
         return b[t]
@@ -389,5 +389,5 @@ class tn extends l.A {
         })
     }
 }
-c(tn, "displayName", "FamilyCenterStore"), c(tn, "LATEST_SNAPSHOT_VERSION", 3);
+_(tn, "displayName", "FamilyCenterStore"), _(tn, "LATEST_SNAPSHOT_VERSION", 3);
 let ti = new tn

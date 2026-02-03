@@ -1,8 +1,9 @@
-/** chunk id: 936926, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    Eq: () => l
+/** chunk id: 936926, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    Eq: () => i
 });
-let i = (0, n(945810).mj)({
+let r = (0, n(945810).mj)({
     kind: "user",
     name: "2026-01-family-center-v3",
     defaultConfig: {
@@ -18,11 +19,11 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function l(t) {
+function i(e) {
     let {
-        location: e
-    } = t;
-    return i.getConfig({
-        location: e
+        location: t
+    } = e;
+    return r.getConfig({
+        location: t
     }).enabled
 }

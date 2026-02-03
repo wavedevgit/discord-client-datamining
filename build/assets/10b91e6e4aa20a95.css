@@ -1,0 +1,31 @@
+.background_eff18d {
+    background-color: var(--background-base-lower);
+    height: 100vh;
+    inset-inline-start: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000
+}
+
+.background_eff18d,
+.container_eff18d {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.container_eff18d {
+    flex-direction: column;
+    gap: var(--space-16);
+    max-width: 480px;
+    padding: var(--space-48)
+}
+
+.container_eff18d,
+.description_eff18d,
+.title_eff18d {
+    text-align: center
+}
+
+/*# sourceMappingURL=10b91e6e4aa20a95.css.map*/
