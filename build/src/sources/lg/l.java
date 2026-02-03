@@ -20,8 +20,9 @@ public final class l extends f {
         this.f37445p = i10;
     }
 
+    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // lg.f, lg.c
-    final int b(Object[] objArr, int i10) {
+    public final int b(Object[] objArr, int i10) {
         System.arraycopy(this.f37444o, 0, objArr, 0, this.f37445p);
         return this.f37445p;
     }
