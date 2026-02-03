@@ -12,9 +12,15 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
-/* JADX INFO: Access modifiers changed from: package-private */
+/*  JADX ERROR: ConcurrentModificationException in pass: FixAccessModifiers
+    java.util.ConcurrentModificationException
+    	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1013)
+    	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:967)
+    	at jadx.core.dex.visitors.FixAccessModifiers.fixClassVisibility(FixAccessModifiers.java:80)
+    	at jadx.core.dex.visitors.FixAccessModifiers.visit(FixAccessModifiers.java:34)
+    */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-public final class x implements t4 {
+final class x implements t4 {
 
     /* renamed from: g  reason: collision with root package name */
     private static final th.k0 f16719g = new th.k0("AssetPackServiceImpl");
@@ -40,10 +46,9 @@ public final class x implements t4 {
     /* renamed from: f  reason: collision with root package name */
     private final AtomicBoolean f16726f = new AtomicBoolean();
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: Type inference failed for: r5v0, types: [sh.a] */
     /* JADX WARN: Type inference failed for: r7v0, types: [sh.a] */
-    public x(Context context, b2 b2Var, o3 o3Var) {
+    x(Context context, b2 b2Var, o3 o3Var) {
         this.f16721a = context.getPackageName();
         this.f16722b = b2Var;
         this.f16723c = o3Var;
@@ -104,16 +109,14 @@ public final class x implements t4 {
         throw new w1("The Play Store app is not installed or is an unofficial version.", i10);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ Bundle l(int i10, String str, String str2, int i11) {
+    static /* bridge */ /* synthetic */ Bundle l(int i10, String str, String str2, int i11) {
         Bundle A = A(i10, str);
         A.putString("slice_id", str2);
         A.putInt("chunk_number", i11);
         return A;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ Bundle o(Map map) {
+    static /* bridge */ /* synthetic */ Bundle o(Map map) {
         Bundle h10 = h();
         ArrayList<? extends Parcelable> arrayList = new ArrayList<>();
         for (Map.Entry entry : map.entrySet()) {
@@ -126,8 +129,7 @@ public final class x implements t4 {
         return h10;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ ArrayList w(Collection collection) {
+    static /* bridge */ /* synthetic */ ArrayList w(Collection collection) {
         ArrayList arrayList = new ArrayList(collection.size());
         Iterator it = collection.iterator();
         while (it.hasNext()) {
@@ -138,8 +140,7 @@ public final class x implements t4 {
         return arrayList;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ List x(x xVar, List list) {
+    static /* bridge */ /* synthetic */ List x(x xVar, List list) {
         ArrayList arrayList = new ArrayList();
         Iterator it = list.iterator();
         while (it.hasNext()) {
