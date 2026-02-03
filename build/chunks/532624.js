@@ -4,7 +4,7 @@ let r;
 n.d(t, {
     Ay: () => ev,
     DV: () => k,
-    aS: () => V,
+    aS: () => F,
     xC: () => D
 }), n(896048), n(321073), n(747238), n(812715);
 var i, a = n(812729),
@@ -134,7 +134,7 @@ function G(e) {
         rawBacktickCode: i
     }), [...n, [S.zY.KEYBOARD_KEY, i, (0, b._$)()]])
 }
-let V = () => {
+let F = () => {
         let e = L();
         "shift" === e && (U("Default overlay keybind is only shift", e, null), e = "shift+`");
         let t = G(e);
@@ -146,7 +146,7 @@ let V = () => {
             shiftCode: n
         }) : null == r && U("Unable to get backtick code", e, t), j(t, !1)
     },
-    F = {},
+    V = {},
     B = {},
     H = 0,
     Y = !0,
@@ -160,8 +160,8 @@ function Q(e) {
     switch (e) {
         case D.id:
             return D;
-        case V().id:
-            return V();
+        case F().id:
+            return F();
         default:
             return B[e]
     }
@@ -210,12 +210,12 @@ function $(e, t) {
 }
 
 function ee() {
-    let e = V();
+    let e = F();
     null == l().find(B, t => e.action === t.action && t.enabled && t.shortcut.length > 0) && Y && !z && (es(e), z = !0)
 }
 
 function et() {
-    let e = V();
+    let e = F();
     z && (eo(e.id), z = !1)
 }
 
@@ -251,21 +251,21 @@ function ea(e, t, n, r) {
     } else {
         eo(e.toString());
         let i = (0, p.I)(document);
-        r.keyup && i.bindGlobal((0, b.dI)(t), () => n(!1), "keyup"), r.keydown && i.bindGlobal((0, b.dI)(t), () => n(!0), "keydown"), F[e] = i
+        r.keyup && i.bindGlobal((0, b.dI)(t), () => n(!1), "keyup"), r.keydown && i.bindGlobal((0, b.dI)(t), () => n(!0), "keydown"), V[e] = i
     }
 }
 
 function eo(e) {
     if (g.isPlatformEmbedded) E.Ay.inputEventUnregister(parseInt(e, 10));
     else {
-        let t = F[e];
+        let t = V[e];
         if (null != t) {
             let n = B[e];
             if (null != n) {
                 let e = W[n.action];
                 (null == e ? void 0 : e.isPressed) === !0 && T.nextTick(() => J(!1, e, n))
             }
-            t.reset(), F[e] = null
+            t.reset(), V[e] = null
         }
     }
 }
@@ -357,7 +357,7 @@ function e_(e) {
     let {
         keybinds: t
     } = e;
-    W = t, F = {}, H = 0, Object.values(B).filter(e => q.includes(e.action) && e.managed).length !== q.length && eE(), l().forEach(B, e => {
+    W = t, V = {}, H = 0, Object.values(B).filter(e => q.includes(e.action) && e.managed).length !== q.length && eE(), l().forEach(B, e => {
         H = Math.max(parseInt(e.id, 10), H) + 1;
         try {
             es(e)
@@ -476,7 +476,7 @@ class eb extends(i = c.Ay.DeviceSettingsStore) {
     }
     getOverlayKeybind() {
         let e = this.getKeybindForAction(v.hCu.TOGGLE_OVERLAY_INPUT_LOCK, !0);
-        return null != e ? e : V()
+        return null != e ? e : F()
     }
     getOverlayChatKeybind() {
         return this.getKeybindForAction(v.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, !0)

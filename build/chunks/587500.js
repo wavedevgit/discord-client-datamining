@@ -7,7 +7,7 @@ var r = n(627968),
     i = n(64700),
     a = n(503698),
     o = n.n(a),
-    s = n(353709),
+    s = n(92674),
     l = n(311907),
     c = n(397927),
     u = n(387755),
@@ -40,8 +40,8 @@ var r = n(627968),
     k = n(486020),
     U = n(313961),
     G = n(85448),
-    V = n(750765),
-    F = n(384059),
+    F = n(750765),
+    V = n(384059),
     B = n(480890),
     H = n(806931),
     Y = n(652215),
@@ -149,7 +149,7 @@ function es(e) {
             label: z.intl.string(z.t.WAI6xu),
             className: Z.hP,
             onClick: () => {
-                (0, F.X)(s, F.O.DISCONNECT), j.default.track(Y.HAw.RING_CALL_DECLINED, J({
+                (0, V.X)(s, V.O.DISCONNECT), j.default.track(Y.HAw.RING_CALL_DECLINED, J({
                     location: s,
                     guild_id: n.guild_id
                 }, (0, h.dI)(n))), u.A.stopRinging(n.id)
@@ -160,7 +160,7 @@ function es(e) {
                 let {
                     closePopout: t
                 } = e;
-                return (0, r.jsx)(V.A, {
+                return (0, r.jsx)(F.A, {
                     onClose: t,
                     onInteraction: (0, B.s)("VideoDeviceMenu", s, {
                         entrypoint: H.GK.CARET
@@ -193,7 +193,7 @@ function es(e) {
                     onCameraUnavailable: T.A,
                     onChange: () => {
                         var e;
-                        (0, F.X)(s, F.O.JOIN_VIDEO_CALL), j.default.track(Y.HAw.RING_CALL_ACCEPTED, J({
+                        (0, V.X)(s, V.O.JOIN_VIDEO_CALL), j.default.track(Y.HAw.RING_CALL_ACCEPTED, J({
                             location: s,
                             guild_id: n.guild_id
                         }, (0, h.dI)(n))), f.default.selectVoiceChannel(n.id, !0), (0, b.uh)(null != (e = n.guild_id) ? e : Y.ME, n.id)
@@ -226,9 +226,9 @@ function el(e) {
         id: A.id,
         icon: A.icon,
         size: ea
-    }) : null, S = null != (t = (0, g.Y)(h, ea, !0)) ? t : I, T = (0, E.Ay)(h), [C, N] = (0, l.yK)([L.A], () => [L.A.supports(K.O5.VIDEO), Object.keys(L.A.getVideoDevices()).length]), w = null != A ? "".concat(T, ", ").concat(A.name) : T, x = (0, l.bG)([M.A], () => M.A.isFocused()), j = (0, l.bG)([U.A], () => U.A.getMode(h.id)), V = i.useCallback(e => {
+    }) : null, S = null != (t = (0, g.Y)(h, ea, !0)) ? t : I, T = (0, E.Ay)(h), [C, N] = (0, l.yK)([L.A], () => [L.A.supports(K.O5.VIDEO), Object.keys(L.A.getVideoDevices()).length]), w = null != A ? "".concat(T, ", ").concat(A.name) : T, x = (0, l.bG)([M.A], () => M.A.isFocused()), j = (0, l.bG)([U.A], () => U.A.getMode(h.id)), F = i.useCallback(e => {
         null != e.top && null != e.left && d.A.move(e.left, e.top)
-    }, []), F = (0, c.zhh)({
+    }, []), V = (0, c.zhh)({
         value: +!!O,
         config: ee(J({}, s.config.stiff), {
             clamp: !0
@@ -298,7 +298,7 @@ function el(e) {
             },
             maxX: ec.width,
             maxY: ec.height,
-            onDragEnd: V,
+            onDragEnd: F,
             dragAnywhere: !0,
             children: (0, r.jsx)(c.NPJ, {
                 theme: O ? Y.NJ8.DARK : void 0,
@@ -307,9 +307,9 @@ function el(e) {
                         [Z.mY]: O
                     }, e),
                     style: ee(J({}, n), {
-                        minWidth: F.value.interpolate([0, 1], [el.width, er]),
-                        minHeight: F.value.interpolate([0, 1], [el.height, ei]),
-                        translateX: F.value.interpolate([0, 1], [0, -1 * Math.abs(er - el.width) / 2])
+                        minWidth: V.value.interpolate([0, 1], [el.width, er]),
+                        minHeight: V.value.interpolate([0, 1], [el.height, ei]),
+                        translateX: V.value.interpolate([0, 1], [0, -1 * Math.abs(er - el.width) / 2])
                     }),
                     children: [O ? (0, r.jsx)(eo, {
                         header: $

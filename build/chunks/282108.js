@@ -13,7 +13,7 @@ n.d(t, {
     gh: () => P,
     ku: () => E,
     mS: () => S,
-    nx: () => V,
+    nx: () => F,
     qo: () => w,
     s9: () => T,
     y5: () => A
@@ -41,7 +41,7 @@ let g = -1,
         let {
             channelId: t,
             authorId: n
-        } = V(e);
+        } = F(e);
         return null == t || null == e ? m.LO.NONE : b(t, n)
     },
     b = (e, t) => {
@@ -221,7 +221,7 @@ function M(e, t) {
     return !(0 === t.length || null == e || 0 === t.filter(t => !P(t, {
         type: _.D.Embed,
         media: e
-    })).length || "video" in e && null != e.video && (null == (n = e.video) ? void 0 : n.width) === 0 && (null == (r = e.video) ? void 0 : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? void 0 : i.width) === 0 && (null == (a = e.thumbnail) ? void 0 : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? void 0 : o.width) === 0 && (null == (s = e.image) ? void 0 : s.height) === 0 || "images" in e && (null == (l = e.images) ? void 0 : l.some(e => null != e && 0 === e.width && 0 === e.height))) && U(F(e), t)
+    })).length || "video" in e && null != e.video && (null == (n = e.video) ? void 0 : n.width) === 0 && (null == (r = e.video) ? void 0 : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? void 0 : i.width) === 0 && (null == (a = e.thumbnail) ? void 0 : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? void 0 : o.width) === 0 && (null == (s = e.image) ? void 0 : s.height) === 0 || "images" in e && (null == (l = e.images) ? void 0 : l.some(e => null != e && 0 === e.width && 0 === e.height))) && U(V(e), t)
 }
 
 function j(e, t) {
@@ -249,7 +249,7 @@ function G(e) {
     return null != e && [i.TO.BLOCK, i.TO.BLUR].includes(e)
 }
 
-function V(e) {
+function F(e) {
     var t, n;
     let r = null,
         i = null;
@@ -267,6 +267,6 @@ function V(e) {
     }
 }
 
-function F(e) {
+function V(e) {
     return null != e.content_scan_version ? e.content_scan_version : null != e.contentScanVersion || null != e.contentScanVersion ? e.contentScanVersion : null
 }

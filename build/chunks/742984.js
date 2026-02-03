@@ -3,9 +3,9 @@
 n.d(t, {
     TB: () => W,
     Wv: () => U,
-    kY: () => V,
+    kY: () => F,
     lx: () => G,
-    q1: () => F
+    q1: () => V
 }), n(938796), n(228524), n(65821), n(896048);
 var r = n(665260),
     i = n(155718),
@@ -96,7 +96,7 @@ function G(e, t) {
     }
 }
 
-function V(e, t) {
+function F(e, t) {
     var n;
     if (S.A.getChannelId(T.A.getGuildId()) !== t) return !1;
     let r = O.A.getChannel(t);
@@ -106,7 +106,7 @@ function V(e, t) {
     return !(null == r || null == i || null == a || r.isManaged() || a.hasFlag(x.nhx.SPAMMER) || I.A.isBlockedOrIgnoredForMessage(e) || a.id === i.id || C.A.getStatus() === x.clD.DND || E.NO.getSetting() || N.Ay.allowNoMessages(r))
 }
 
-function F(e, t) {
+function V(e, t) {
     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
         r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
         i = w.default.getCurrentUser(),

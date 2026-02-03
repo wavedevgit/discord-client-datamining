@@ -4,9 +4,9 @@ n.d(t, {
     $U: () => W,
     Cp: () => S,
     D$: () => L,
-    I5: () => F,
+    I5: () => V,
     Nc: () => x,
-    Os: () => V,
+    Os: () => F,
     P7: () => P,
     Qu: () => N,
     Ry: () => T,
@@ -137,7 +137,7 @@ function x(e) {
     let {
         numAvailableGuildBoostSlots: l,
         numCanceledGuildBoostSlots: c
-    } = Object.values(d.A.boostSlots).reduce((e, t) => (F(t) && e.numCanceledGuildBoostSlots++, t.isAvailable() && e.numAvailableGuildBoostSlots++, e), {
+    } = Object.values(d.A.boostSlots).reduce((e, t) => (V(t) && e.numCanceledGuildBoostSlots++, t.isAvailable() && e.numAvailableGuildBoostSlots++, e), {
         numAvailableGuildBoostSlots: 0,
         numCanceledGuildBoostSlots: 0
     });
@@ -189,12 +189,12 @@ function G(e) {
     return Math.max(e.features.has(_.GuildFeatures.MORE_EMOJI) ? h.EQ : h.Xn, r)
 }
 
-function V(e, t) {
+function F(e, t) {
     let n = (0, s.Z)(e.id).available;
     return Math.max(0, _.M2T[t] - n)
 }
 
-function F(e) {
+function V(e) {
     var t;
     return (null == (t = e.subscription) ? void 0 : t.status) === _.Dmq.CANCELED || e.canceled
 }

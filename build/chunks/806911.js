@@ -40,8 +40,8 @@ var r = n(627968),
     k = n(128286),
     U = n(528057),
     G = n(352018),
-    V = n(616356),
-    F = n(961350),
+    F = n(616356),
+    V = n(961350),
     B = n(430452),
     H = n(994500),
     Y = n(287809),
@@ -227,7 +227,7 @@ class ef extends i.PureComponent {
             participantOnScreen: n,
             isVideoEnabled: i,
             width: a
-        } = this.props, o = (0, A.m1)(e, Y.default, H.A), s = (null == n ? void 0 : n.id) === F.default.getId() && i, l = this.renderStreamState(), c = this.activeStreamForSelectedParticipant, u = null;
+        } = this.props, o = (0, A.m1)(e, Y.default, H.A), s = (null == n ? void 0 : n.id) === V.default.getId() && i, l = this.renderStreamState(), c = this.activeStreamForSelectedParticipant, u = null;
         return (null == n ? void 0 : n.type) !== ea.lp.ACTIVITY && (null != l ? u = l : ((null == n ? void 0 : n.type) === ea.lp.USER || (null == n ? void 0 : n.type) === ea.lp.STREAM) && (u = (0, r.jsx)(X.A, {
             paused: this.streamerPaused,
             streamId: t,
@@ -365,7 +365,7 @@ function ep(e) {
     let {
         channel: t,
         width: n
-    } = e, i = (0, c.bG)([W.A], () => W.A.getSpeaker(t.id)), a = (0, c.bG)([y.A], () => y.A.getParticipant(t.id, i), [t.id, i]), o = (0, c.bG)([B.A], () => l()(B.A.getVideoDevices()).values().first()), s = (0, c.bG)([K.A], () => null != a && a.type !== ea.lp.ACTIVITY && a.type !== ea.lp.HIDDEN_STREAM ? K.A.getStreamId(a.user.id, t.getGuildId(), (0, b.A)(a.type)) : null, [a, t]), d = null == o || o.disabled, f = !d, p = (0, c.bG)([B.A], () => !d && B.A.isVideoEnabled(), [d]), _ = (0, c.bG)([B.A], () => (0, C.A)(B.A)), h = (0, c.bG)([F.default], () => F.default.getId()), m = (0, c.bG)([V.A], () => V.A.getCurrentUserActiveStream()), g = null != a && "user" in a ? a.user.id : "", E = (0, S.A)((null == a ? void 0 : a.type) === ea.lp.STREAM ? u.x.STREAM : u.x.DEFAULT, g), O = (0, I.A)(g), v = (0, c.yK)([V.A], () => V.A.getAllActiveStreams());
+    } = e, i = (0, c.bG)([W.A], () => W.A.getSpeaker(t.id)), a = (0, c.bG)([y.A], () => y.A.getParticipant(t.id, i), [t.id, i]), o = (0, c.bG)([B.A], () => l()(B.A.getVideoDevices()).values().first()), s = (0, c.bG)([K.A], () => null != a && a.type !== ea.lp.ACTIVITY && a.type !== ea.lp.HIDDEN_STREAM ? K.A.getStreamId(a.user.id, t.getGuildId(), (0, b.A)(a.type)) : null, [a, t]), d = null == o || o.disabled, f = !d, p = (0, c.bG)([B.A], () => !d && B.A.isVideoEnabled(), [d]), _ = (0, c.bG)([B.A], () => (0, C.A)(B.A)), h = (0, c.bG)([V.default], () => V.default.getId()), m = (0, c.bG)([F.A], () => F.A.getCurrentUserActiveStream()), g = null != a && "user" in a ? a.user.id : "", E = (0, S.A)((null == a ? void 0 : a.type) === ea.lp.STREAM ? u.x.STREAM : u.x.DEFAULT, g), O = (0, I.A)(g), v = (0, c.yK)([F.A], () => F.A.getAllActiveStreams());
     return (0, r.jsx)(ef, {
         channel: t,
         streamId: s,

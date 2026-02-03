@@ -176,10 +176,10 @@ let L = 24,
         } = (0, N.A)(_, n, a, d), S = (0, s.bG)([p.A], () => p.A.isSyncing), {
             activeSubscription: L,
             activeSubscriptionListing: x
-        } = (0, E.A)(a), M = (null == x ? void 0 : x.id) === t, j = (null == L ? void 0 : L.status) === R.Dmq.CANCELED, [G, V] = i.useState(!1), [F, B] = i.useState(!1), H = i.useCallback(e => {
+        } = (0, E.A)(a), M = (null == x ? void 0 : x.id) === t, j = (null == L ? void 0 : L.status) === R.Dmq.CANCELED, [G, F] = i.useState(!1), [V, B] = i.useState(!1), H = i.useCallback(e => {
             let t = !1;
             null != e && (t = e.scrollHeight - e.clientHeight > 1), B(t)
-        }, []), [Y] = g.tx(t), [W] = g.I8(t), [K] = g.V_(t), [z] = g.hh(t), q = (0, y.A)(n, t), Z = null != K && null == L && q, Q = () => V(e => !e), X = (0, u.A)(w.Yl), [J, $] = i.useState(!1), ee = J || !X, et = () => $(e => !e), en = (0, s.bG)([f.A], () => f.A.isViewingServerShop(n)), er = (null == _ ? void 0 : _.published) === !0, ei = (null == _ ? void 0 : _.soft_deleted) === !0, ea = P.intl.string(P.t.KzmEA9);
+        }, []), [Y] = g.tx(t), [W] = g.I8(t), [K] = g.V_(t), [z] = g.hh(t), q = (0, y.A)(n, t), Z = null != K && null == L && q, Q = () => F(e => !e), X = (0, u.A)(w.Yl), [J, $] = i.useState(!1), ee = J || !X, et = () => $(e => !e), en = (0, s.bG)([f.A], () => f.A.isViewingServerShop(n)), er = (null == _ ? void 0 : _.published) === !0, ei = (null == _ ? void 0 : _.soft_deleted) === !0, ea = P.intl.string(P.t.KzmEA9);
         return (er || en) && !ei ? (0, r.jsxs)("article", {
             className: D.kL,
             "aria-label": Y,
@@ -241,12 +241,12 @@ let L = 24,
                             children: [(0, r.jsx)(c.Text, {
                                 variant: "text-sm/normal",
                                 color: "text-default",
-                                className: o()((!F || !G) && D.Zp),
+                                className: o()((!V || !G) && D.Zp),
                                 children: (0, r.jsx)("div", {
                                     ref: H,
                                     children: W
                                 })
-                            }), F && (0, r.jsx)(U, {
+                            }), V && (0, r.jsx)(U, {
                                 isViewAll: G,
                                 onToggle: Q,
                                 showMoreText: ea

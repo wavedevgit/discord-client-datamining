@@ -12,7 +12,7 @@ n.d(t, {
     Qz: () => k,
     RM: () => Y,
     T7: () => S,
-    Uc: () => V,
+    Uc: () => F,
     WQ: () => D,
     Zc: () => M,
     _V: () => C,
@@ -44,7 +44,7 @@ function d(e, t) {
     try {
         let n = c.u0[t.premiumType];
         if (null == n) return u.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), !1;
-        let r = F[n];
+        let r = V[n];
         if (null == r) return u.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), !1;
         return r.skuFeatures.includes(e)
     } catch (e) {
@@ -86,14 +86,14 @@ let j = new f(r.w.INCREASED_GUILD_LIMIT),
     k = new f(r.w.INCREASED_MESSAGE_LENGTH),
     U = new f("increasedVideoUploadQuality"),
     G = new f("uploadLargeFiles"),
-    V = new f("warpPrivateBrowsing"),
-    F = Object.freeze({
+    F = new f("warpPrivateBrowsing"),
+    V = Object.freeze({
         [c.pe.TIER_0]: new l.A(c.pe.TIER_0, [p, _, h, v, M, U, G, S]),
         [c.pe.TIER_1]: new l.A(c.pe.TIER_1, [p, _, y, b, v, C, w, D, U, G, S]),
-        [c.pe.TIER_2]: new l.A(c.pe.TIER_2, [p, _, h, m, g, y, b, O, v, A, T, C, N, w, R, D, L, x, M, j, k, U, G, S, I, P, E, V])
+        [c.pe.TIER_2]: new l.A(c.pe.TIER_2, [p, _, h, m, g, y, b, O, v, A, T, C, N, w, R, D, L, x, M, j, k, U, G, S, I, P, E, F])
     }),
-    B = [C, N, V],
-    H = [V];
+    B = [C, N, F],
+    H = [F];
 
 function Y(e, t, n) {
     return !((0, s.Z)("canUserUse", t) || null != t && t.isPremiumWithFractionalPremiumOnly() && B.includes(e) || n && H.includes(e)) && e.getFeatureValue(t)

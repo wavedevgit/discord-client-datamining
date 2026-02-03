@@ -43,8 +43,8 @@ var r = n(481613),
     k = n(95701),
     U = n(961350),
     G = n(734057),
-    V = n(808728),
-    F = n(696451),
+    F = n(808728),
+    V = n(696451),
     B = n(71393),
     H = n(958590),
     Y = n(576705),
@@ -133,7 +133,7 @@ function e_(e, t, n) {
     if ((null == n ? void 0 : n.targetType) === ei.yV.ROLE_SUBSCRIPTIONS_PURCHASE) return en.VV.ROLE_SUBSCRIPTIONS;
     if ((null == n ? void 0 : n.targetType) == null && !(0, k.QE)(t.type) && (0, T.K)(e)) return en.VV.GUILD_HOME;
     let a = G.A.getChannel(t.id);
-    return Y.A.can(ee.xBc.VIEW_CHANNEL, a) ? t.id : null != (r = null == (i = V.Ay.getDefaultChannel(e, !0, ee.xBc.CREATE_INSTANT_INVITE)) ? void 0 : i.id) ? r : t.id
+    return Y.A.can(ee.xBc.VIEW_CHANNEL, a) ? t.id : null != (r = null == (i = F.Ay.getDefaultChannel(e, !0, ee.xBc.CREATE_INSTANT_INVITE)) ? void 0 : i.id) ? r : t.id
 }
 
 function eh(e, t) {
@@ -191,7 +191,7 @@ function em(e) {
                     commandOrigin: O.iw.CHAT
                 }))
             };
-            !d && (0, S.V)(t, [B.A, K.default, F.Ay]) ? (0, I.Ze)(t, o) : o()
+            !d && (0, S.V)(t, [B.A, K.default, V.Ay]) ? (0, I.Ze)(t, o) : o()
         })
     }) : (0, g.AX)(h) && c === ei.yV.EMBEDDED_APPLICATION && null != u && ((0, M.pX)(ee.BVt.CHANNEL(null != t ? t : ee.ME, m)), (0, E.A)({
         channelId: m,

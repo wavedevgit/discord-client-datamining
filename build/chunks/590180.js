@@ -78,14 +78,14 @@ let m = new Map,
                 !e.has(r) && (null == t.unpublishedAt || t.unpublishedAt > n) && e.set(r, t)
             }), S = new Map([...(O = e).values()].map(e => [e.storeListingId, e])), v = new Map((0, p.P_)(O, !0).map(e => [e.skuId, e])), I = [...(A = new Map((0, p.P_)(O, !1).map(e => [e.storeListingId, e]))).values()]
         }
-        F(t, v), i = Date.now(), N = !1, r = void 0, a = void 0
+        V(t, v), i = Date.now(), N = !1, r = void 0, a = void 0
     },
-    V = e => {
+    F = e => {
         if (0 === e.shopHome.categories.length) return;
         let t = new Map(e.shopHome.categories.map(e => [e.skuId, e]));
         S = new Map([...(O = new Map([...O, ...t])).values()].map(e => [e.storeListingId, e])), v = new Map((0, p.P_)(O, !0).map(e => [e.skuId, e]))
     },
-    F = (e, t) => {
+    V = (e, t) => {
         if (0 === e.length) {
             T = b;
             return
@@ -190,7 +190,7 @@ let K = new W(c.h, {
     COLLECTIBLES_PRODUCT_FETCH: x,
     COLLECTIBLES_PRODUCT_FETCH_SUCCESS: j,
     COLLECTIBLES_PRODUCT_FETCH_FAILURE: M,
-    COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: V,
+    COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: F,
     COLLECTIBLES_SKIP_NUM_CATEGORIES: Y,
     LOGOUT: B
 })

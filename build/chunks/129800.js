@@ -1,7 +1,7 @@
 /** chunk id: 129800, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => F
+    A: () => V
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -188,7 +188,7 @@ function G(e) {
     })
 }
 
-function V(e) {
+function F(e) {
     let {
         context: t,
         commands: n,
@@ -217,7 +217,7 @@ function V(e) {
     })
 }
 
-function F(e) {
+function V(e) {
     var t;
     let {
         context: n,
@@ -265,13 +265,13 @@ function F(e) {
         l(E.length > 0)
     }, [l, E]), p || 0 !== E.length) ? (0, r.jsxs)("ul", {
         className: L.hQ,
-        children: [(0, r.jsx)(V, {
+        children: [(0, r.jsx)(F, {
             context: n,
             section: _,
             commands: b,
             headerName: P.intl.string(P.t.acSE0h),
             sectionName: o
-        }), (0, r.jsx)(V, {
+        }), (0, r.jsx)(F, {
             context: n,
             section: _,
             commands: p ? j : E,

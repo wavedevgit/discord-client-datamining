@@ -10,9 +10,9 @@ n.d(t, {
     cc: () => U,
     li: () => Y,
     qN: () => N,
-    r: () => V,
+    r: () => F,
     wO: () => B,
-    wT: () => F,
+    wT: () => V,
     x3: () => T,
     xT: () => W,
     yC: () => L
@@ -224,7 +224,7 @@ function G(e, t, n, r) {
     return e.type !== A.rbe.PRIVATE_THREAD || n || r || a.zy(t, A.xBc.MANAGE_THREADS) ? a.zy(t, A.xBc.SEND_MESSAGES_IN_THREADS) ? e.isLockedThread() && !a.zy(t, A.xBc.MANAGE_THREADS) ? a.TF(t, A.xBc.SEND_MESSAGES) : a.kg(t, A.xBc.SEND_MESSAGES) : a.TF(t, A.xBc.SEND_MESSAGES) : T
 }
 
-function V(e, t) {
+function F(e, t) {
     if (f.Le.has(e.type)) return !0;
     let {
         guild_id: n
@@ -239,7 +239,7 @@ function V(e, t) {
     })
 }
 
-function F(e) {
+function V(e) {
     var t;
     return i().some(E.A.getUnsafeMutableRoles(e.id), e => e.hoist && (0, _._m)(e, A.xBc.ADMINISTRATOR)) ? void 0 : null != (t = e.ownerId) ? t : void 0
 }

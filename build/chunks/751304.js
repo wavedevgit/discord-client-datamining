@@ -87,8 +87,8 @@ let P = i.memo(function(e) {
             onMouseLeave: k,
             onFocus: U,
             onBlur: G,
-            primaryCTAText: V,
-            secondaryCTAIcon: F,
+            primaryCTAText: F,
+            secondaryCTAIcon: V,
             productNameClassName: B,
             badgeClassName: H,
             cardClassName: Y,
@@ -177,14 +177,14 @@ let P = i.memo(function(e) {
                                         skuId: t.skuId,
                                         cardRef: ee,
                                         onClick: x,
-                                        text: V,
+                                        text: F,
                                         prioritizedCurrency: W,
                                         onClickAnalytics: K
                                     }), !R && (0, r.jsx)(b.A, {
                                         skuId: t.skuId,
                                         cardRef: ee,
                                         onClick: M,
-                                        icon: F,
+                                        icon: V,
                                         prioritizedCurrency: W,
                                         onClickAnalytics: K
                                     })]

@@ -40,8 +40,8 @@ var r = n(627968),
     k = n(735991),
     U = n(485878),
     G = n(169909),
-    V = n(155940),
-    F = n(902527),
+    F = n(155940),
+    V = n(902527),
     B = n(444230),
     H = n(783608),
     Y = n(984516),
@@ -295,7 +295,7 @@ function ec(e) {
         s = G.r0.LARGE_BANNER,
         {
             trackSectionImpressionRef: l
-        } = (0, F.A)({
+        } = (0, V.A)({
             sectionName: L.yK.ACTIVITIES,
             numItems: o.length,
             numVisibleItems: o.length
@@ -354,7 +354,7 @@ function eu(e) {
         sectionName: a
     }), {
         trackSectionImpressionRef: u
-    } = (0, F.A)({
+    } = (0, V.A)({
         sectionName: a,
         numItems: o.length,
         numVisibleItems: l.length
@@ -373,7 +373,7 @@ function eu(e) {
             })
         }), (0, r.jsx)("div", {
             className: Z.l2,
-            children: s ? et.map(e => (0, r.jsx)(V.A, {
+            children: s ? et.map(e => (0, r.jsx)(F.A, {
                 look: G.r0.ROW
             }, e)) : l.map((e, n) => {
                 let {
@@ -418,7 +418,7 @@ function ed(e) {
         return (0, r.jsxs)("div", {
             children: [(0, r.jsx)(H.A.Loading, {}), (0, r.jsx)("div", {
                 className: i === G.r0.ROW ? Z.l2 : Z.a2,
-                children: n.map(e => (0, r.jsx)(V.A, {
+                children: n.map(e => (0, r.jsx)(F.A, {
                     look: i
                 }, e))
             })]
@@ -496,7 +496,7 @@ function ef(e) {
         sectionOverallPosition: u
     }), {
         trackSectionImpressionRef: b
-    } = (0, F.A)({
+    } = (0, V.A)({
         sectionName: g,
         numItems: m.length,
         numVisibleItems: E.length

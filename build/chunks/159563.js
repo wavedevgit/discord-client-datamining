@@ -54,7 +54,7 @@ function d(e, t) {
 }
 
 function f(e) {
-    return F && e instanceof Map
+    return V && e instanceof Map
 }
 
 function p(e) {
@@ -259,13 +259,13 @@ n.d(t, {
     mq: () => en,
     vD: () => er
 });
-var U, G, V = "u" > typeof Symbol && "symbol" == typeof Symbol("x"),
-    F = "u" > typeof Map,
+var U, G, F = "u" > typeof Symbol && "symbol" == typeof Symbol("x"),
+    V = "u" > typeof Map,
     B = "u" > typeof Set,
     H = "u" > typeof Proxy && void 0 !== Proxy.revocable && "u" > typeof Reflect,
-    Y = V ? Symbol.for("immer-nothing") : ((U = {})["immer-nothing"] = !0, U),
-    W = V ? Symbol.for("immer-draftable") : "__$immer_draftable",
-    K = V ? Symbol.for("immer-state") : "__$immer_state",
+    Y = F ? Symbol.for("immer-nothing") : ((U = {})["immer-nothing"] = !0, U),
+    W = F ? Symbol.for("immer-draftable") : "__$immer_draftable",
+    K = F ? Symbol.for("immer-state") : "__$immer_state",
     z = "u" > typeof Symbol && Symbol.iterator || "@@iterator",
     q = "" + Object.prototype.constructor,
     Z = "u" > typeof Reflect && Reflect.ownKeys ? Reflect.ownKeys : void 0 !== Object.getOwnPropertySymbols ? function(e) {

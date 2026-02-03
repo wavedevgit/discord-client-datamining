@@ -165,7 +165,7 @@ function G(e) {
     U(t), X(t)
 }
 
-function V(e) {
+function F(e) {
     let t, {
         searchContext: n,
         tokens: r,
@@ -208,7 +208,7 @@ function V(e) {
     return I.set(s, f), c
 }
 
-function F(e) {
+function V(e) {
     var t, n, r;
     let {
         filter: i,
@@ -267,7 +267,7 @@ function H(e, t, n) {
     if (null != a && "" !== a) {
         w(t).forEach(e => {
             if (null == e) return;
-            let r = F({
+            let r = V({
                 filter: e,
                 currentToken: i,
                 searchContext: t,
@@ -334,7 +334,7 @@ function W(e) {
 function K(e, t, n) {
     switch (t.type) {
         case b.o$q.FILTER:
-            let r = F({
+            let r = V({
                 filter: t.filter,
                 currentToken: t.token,
                 searchContext: e,
@@ -438,7 +438,7 @@ class ee extends(r = o.Ay.Store) {
 v(ee, "displayName", "SearchAutocompleteStore");
 let et = new ee(s.h, {
         SEARCH_AUTOCOMPLETE_INITIALIZE: G,
-        SEARCH_AUTOCOMPLETE_QUERY_UPDATE: V,
+        SEARCH_AUTOCOMPLETE_QUERY_UPDATE: F,
         SEARCH_EDITOR_STATE_CLEAR: L,
         CHANNEL_CREATE: z,
         CHANNEL_DELETE: z,

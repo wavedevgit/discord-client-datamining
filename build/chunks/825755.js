@@ -115,14 +115,14 @@ function G(e) {
     I = t
 }
 
-function V(e) {
+function F(e) {
     let {
         message: t
     } = e;
     I = new o.Ey(t)
 }
 
-function F(e) {
+function V(e) {
     let {
         query: t
     } = e;
@@ -196,8 +196,8 @@ let Y = new H(a.h, {
     BRAINTREE_TOKENIZE_PAYPAL_SUCCESS: D,
     BRAINTREE_TOKENIZE_VENMO_START: L,
     BRAINTREE_TOKENIZE_VENMO_SUCCESS: x,
-    BRAINTREE_TOKENIZE_PAYPAL_FAIL: V,
-    BRAINTREE_TOKENIZE_VENMO_FAIL: V,
+    BRAINTREE_TOKENIZE_PAYPAL_FAIL: F,
+    BRAINTREE_TOKENIZE_VENMO_FAIL: F,
     ADYEN_CASH_APP_PAY_SUBMIT_SUCCESS: k,
     BILLING_PAYMENT_SOURCE_CREATE_START: U,
     MODAL_POP: U,
@@ -206,6 +206,6 @@ let Y = new H(a.h, {
     STRIPE_TOKEN_FAILURE: G,
     BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: N,
     LOGOUT: N,
-    BILLING_POPUP_BRIDGE_CALLBACK: F,
+    BILLING_POPUP_BRIDGE_CALLBACK: V,
     RESET_PAYMENT_ID: B
 })

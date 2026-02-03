@@ -6,7 +6,7 @@ n.d(t, {
 var r, i = n(627968),
     s = n(64700),
     l = n(218681),
-    a = n(353709),
+    a = n(92674),
     o = n(397927);
 let c = null != (r = window.ResizeObserver) ? r : l.t;
 

@@ -2,7 +2,7 @@
 "use strict";
 let r, i, a;
 n.d(t, {
-    A: () => eF
+    A: () => eV
 }), n(896048), n(457529), n(747238), n(321073), n(812715), n(938796);
 var o, s = n(735438),
     l = n.n(s),
@@ -72,8 +72,8 @@ let j = h.A.get(P.fg2.SPOTIFY),
     k = "wss://dealer.spotify.com/?access_token=",
     U = "hm://pusher/v1/connections/",
     G = 30 * C.A.Millis.SECOND,
-    V = 30 * C.A.Millis.SECOND,
-    F = 100,
+    F = 30 * C.A.Millis.SECOND,
+    V = 100,
     B = 5 * C.A.Millis.MINUTE,
     H = 5 * C.A.Millis.SECOND,
     Y = 1.5 * C.A.Millis.SECOND,
@@ -338,7 +338,7 @@ function eI(e) {
             });
             null == e ? (eo[t].push(c), f = !0) : (0, d.A)(e, c) || (Object.assign(e, c), f = !0), eE(t, c.id)
         } else eo[t] = [c], f = !0;
-    n ? null == ec || ec.start(V, eP) : (o = null, null == ec || ec.stop());
+    n ? null == ec || ec.start(F, eP) : (o = null, null == ec || ec.stop());
     let _ = b.A.getAccount(t, P.fg2.SPOTIFY);
     if (null == _) return f;
     let h = es[t],
@@ -458,7 +458,7 @@ function eD(e) {
                 checkSoundSharing: !0,
                 checkSoundboardSounds: !1
             });
-        t && n && null != r ? (ee.start(V, eP, !1), et.stop()) : et.start(F, () => ee.stop(), !1)
+        t && n && null != r ? (ee.start(F, eP, !1), et.stop()) : et.start(V, () => ee.stop(), !1)
     }
     return !1
 }
@@ -501,7 +501,7 @@ function ej(e) {
             sourceId: e,
             sound: n
         } = null == t ? void 0 : t.desktopSettings;
-        null != e && E.Ay.getObservedAppNameForWindow(e) === j.name && n ? (ec = new f.IX).start(V, eP) : (null == ec || ec.stop(), ec = null)
+        null != e && E.Ay.getObservedAppNameForWindow(e) === j.name && n ? (ec = new f.IX).start(F, eP) : (null == ec || ec.stop(), ec = null)
     } else null == t && (null == ec || ec.stop(), ec = null)
 }
 
@@ -548,7 +548,7 @@ function ek(e, t, n) {
     if (null != b && !0 !== b.is_active && (b = M(L({}, b), {
             is_active: !0
         })), null != S && [R.M0.PLAYLIST, R.M0.ALBUM].includes(S.type)) {
-        let n = eV.getPlayerState(e);
+        let n = eF.getPlayerState(e);
         y = null != n && null != n.context && n.context.uri === S.uri ? Promise.resolve(n.context) : S.type === R.M0.ALBUM ? Promise.resolve(S) : w.tB.get(e, t, {
             url: S.href
         }).then(e => {
@@ -691,7 +691,7 @@ class eG extends(o = u.Ay.Store) {
     }
 }
 D(eG, "displayName", "SpotifyStore");
-let eV = new eG(p.h, {
+let eF = new eG(p.h, {
         USER_CONNECTIONS_UPDATE: eO,
         CONNECTION_OPEN: eO,
         SPOTIFY_ACCOUNT_ACCESS_TOKEN: ev,
@@ -708,4 +708,4 @@ let eV = new eG(p.h, {
         VOICE_STATE_UPDATES: ex,
         MEDIA_ENGINE_SET_GO_LIVE_SOURCE: ej
     }),
-    eF = eV
+    eV = eF

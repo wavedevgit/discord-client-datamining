@@ -41,8 +41,8 @@ var r = n(961358),
     k = n(956743),
     U = n(339167),
     G = n(689969),
-    V = n(11358),
-    F = n(812892);
+    F = n(11358),
+    V = n(812892);
 
 function B(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -133,7 +133,7 @@ let K = {
         },
         tunes: {
             name: T.default.sem63B,
-            iconURL: V.A,
+            iconURL: F.A,
             splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(111, 134, 253, 0.50) 0%, rgba(111, 134, 253, 0.00) 100%)",
             baseColor: "#010A3C",
             styleKey: "tunes",
@@ -173,7 +173,7 @@ let K = {
         },
         villain: {
             name: T.default.kHmvdt,
-            iconURL: F.A,
+            iconURL: V.A,
             splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(219, 2, 34, 0.50) 0%, rgba(219, 2, 34, 0.00) 100%)",
             baseColor: "#3D0109",
             styleKey: "villain",

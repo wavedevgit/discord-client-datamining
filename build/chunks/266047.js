@@ -208,11 +208,11 @@ function G(e) {
     return E ? E = !1 : v(!0), k(e)
 }
 
-function V(e) {
+function F(e) {
     return U(e)
 }
 
-function F(e) {
+function V(e) {
     let {
         guildMembers: t
     } = e, n = !1;
@@ -399,9 +399,9 @@ class X extends(r = i.Ay.Store) {
 g(X, "displayName", "MemberSafetyStore");
 let J = new X(a.h, {
     CONNECTION_OPEN: G,
-    CONNECTION_OPEN_SUPPLEMENTAL: V,
+    CONNECTION_OPEN_SUPPLEMENTAL: F,
     LOCAL_MESSAGES_LOADED: B,
-    CACHE_LOADED: F,
+    CACHE_LOADED: V,
     PASSIVE_UPDATE_V2: H,
     GUILD_CREATE: A,
     GUILD_DELETE: I,

@@ -1,19 +1,19 @@
 /** chunk id: 761546, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => c
+    A: () => i
 });
 var n = r(627968);
 r(64700);
 var a = r(172218),
     s = r(397927),
     l = r(437290),
-    i = r(892448);
+    c = r(892448);
 
-function c(e) {
+function i(e) {
     let {
         users: t,
         isUserSelected: r,
-        onSelectionChange: c,
+        onSelectionChange: i,
         isFetching: o,
         onFetchMore: d,
         isUserDisabled: u,
@@ -25,7 +25,7 @@ function c(e) {
         e && !o && (null == d || d())
     });
     return b.length > 0 && 0 === t.length && null != x ? (0, n.jsxs)("div", {
-        className: i.t,
+        className: c.t,
         children: [(0, n.jsx)(s.Heading, {
             variant: "heading-md/semibold",
             color: "text-strong",
@@ -41,7 +41,7 @@ function c(e) {
             user: e,
             checked: r(e),
             disabled: !!(null == u ? void 0 : u(e)),
-            onChange: c,
+            onChange: i,
             tooltipConfig: h
         }, e.id)), o && (0, n.jsx)(s.y$y, {}), (0, n.jsx)("div", {
             ref: _

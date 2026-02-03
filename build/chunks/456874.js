@@ -181,7 +181,7 @@ function G(e) {
     t.forEach(D)
 }
 
-function V(e) {
+function F(e) {
     let {
         data: t
     } = e;
@@ -198,7 +198,7 @@ function V(e) {
     })
 }
 
-function F(e) {
+function V(e) {
     let {
         channel: t
     } = e;
@@ -335,10 +335,10 @@ let X = new Q(s.h, {
     RELATIONSHIP_ADD: Z,
     RELATIONSHIP_UPDATE: Z,
     RELATIONSHIP_REMOVE: Z,
-    SEARCH_MESSAGES_SUCCESS: V,
-    MOD_VIEW_SEARCH_MESSAGES_SUCCESS: V,
+    SEARCH_MESSAGES_SUCCESS: F,
+    MOD_VIEW_SEARCH_MESSAGES_SUCCESS: F,
     THREAD_DELETE: B,
-    CHANNEL_DELETE: F,
+    CHANNEL_DELETE: V,
     MESSAGE_CREATE: H,
     MESSAGE_UPDATE: W,
     MESSAGE_DELETE: K,

@@ -76,8 +76,8 @@ function k(e, t) {
 }
 let U = 10,
     G = 15e5,
-    V = 15e5,
-    F = 5 * C.A.Millis.SECOND;
+    F = 15e5,
+    V = 5 * C.A.Millis.SECOND;
 class B {
     setActionContext(e) {
         this.actionContext = e
@@ -184,7 +184,7 @@ class H extends c.A {
             })) ? void 0 : r.stats;
         if (null != E && h) {
             let e = E.transport.inboundBitrateEstimate;
-            null != e && e < 1e8 && (this.bandwidthSamples.push(e), this.bandwidthSamples.length > U && this.bandwidthSamples.shift(), this.bandwidthSamples.length === U && ((_ = i().mean(this.bandwidthSamples)) > V ? g = "HQ" : _ < G && (g = "LQ")))
+            null != e && e < 1e8 && (this.bandwidthSamples.push(e), this.bandwidthSamples.length > U && this.bandwidthSamples.shift(), this.bandwidthSamples.length === U && ((_ = i().mean(this.bandwidthSamples)) > F ? g = "HQ" : _ < G && (g = "LQ")))
         }
         let y = null != (t = null == (a = this._goLiveQualityManager) ? void 0 : a.isDowngraded()) && t;
         if ("HQ" === g && y ? (this.logger.info("Attempting to upgrade to HQ simulcast stream, bandwidth estimate: ".concat(_)), null == (o = this._goLiveQualityManager) || o.setGoLiveStreamDowngraded(!1)) : "LQ" === g && !y && m && (this.logger.info("Attempting to downgrade to LQ simulcast stream, bandwidth estimate: ".concat(_)), null == (s = this._goLiveQualityManager) || s.setGoLiveStreamDowngraded(!0)), h) {
@@ -288,7 +288,7 @@ class H extends c.A {
                     let n = b.A.getGoLiveSource();
                     switch (this.soundshareStats.traceEvent(null == n || null == (t = n.desktopSource) ? void 0 : t.soundshareSession, e), e.type) {
                         case "soundshare_attach_requested":
-                            this.errorTimer.start(F, () => {
+                            this.errorTimer.start(V, () => {
                                 l.h.dispatch({
                                     type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
                                     errorMessage: "Sound Hook Failed"

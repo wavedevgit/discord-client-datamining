@@ -81,15 +81,15 @@ function C(e) {
     let {
         stats: k,
         onClose: U
-    } = e, [G, V] = i.useState(!1), F = i.useRef(null);
+    } = e, [G, F] = i.useState(!1), V = i.useRef(null);
     i.useEffect(() => () => {
-        null != F.current && clearTimeout(F.current)
+        null != V.current && clearTimeout(V.current)
     }, []);
     let B = i.useCallback(() => {
         let e = T(k);
         (0, s.C)(e, () => {
-            V(!0), null != F.current && clearTimeout(F.current), F.current = window.setTimeout(() => {
-                V(!1), F.current = null
+            F(!0), null != V.current && clearTimeout(V.current), V.current = window.setTimeout(() => {
+                F(!1), V.current = null
             }, 2e3)
         }, () => {})
     }, [k]);

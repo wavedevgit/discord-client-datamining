@@ -49,7 +49,7 @@ function G(e, t, n) {
     }) : e[t] = n, e
 }
 
-function V(e) {
+function F(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -62,7 +62,7 @@ function V(e) {
     return e
 }
 
-function F(e, t) {
+function V(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
@@ -74,7 +74,7 @@ function F(e, t) {
 }
 
 function B(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
@@ -100,7 +100,7 @@ let H = (0, v.xI)(c.A.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
             onSelectSticker: v,
             closePopout: G
         } = e, {
-            location: F
+            location: V
         } = (0, d.p)(), {
             analyticsLocations: q
         } = (0, p.Ay)(f.A.STICKER_PICKER), Z = (null == (a = (0, E.V)()) ? void 0 : a.subscription_trial) != null, Q = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, A.P)(e => e.showPremiumUpsell), [ea, eo] = (0, h.RQ)(e => [e.searchQuery, e.isSearchSuggestion], s.x), es = i.useRef("");
@@ -155,12 +155,12 @@ let H = (0, v.xI)(c.A.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
                     case N.op.CREATE_STICKER:
                         O.default.track(k.HAw.OPEN_MODAL, {
                             type: k.JJy.CREATE_STICKER_MODAL,
-                            location: F
+                            location: V
                         }), (0, u.mMO)(async () => {
                             let {
                                 default: t
                             } = await Promise.all([n.e("29143"), n.e("64800")]).then(n.bind(n, 445002));
-                            return n => (0, r.jsx)(t, V({
+                            return n => (0, r.jsx)(t, F({
                                 guildId: e.guild_id
                             }, n))
                         });
@@ -168,7 +168,7 @@ let H = (0, v.xI)(c.A.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
                     case N.op.STICKER:
                         null != e.sticker && (0, I.G7)(e.sticker, ep, c) && eO(e)
                 }
-            }, [F, ep, c, eO]),
+            }, [V, ep, c, eO]),
             {
                 getItemProps: ew,
                 getRowProps: eR,
@@ -230,7 +230,7 @@ let H = (0, v.xI)(c.A.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
                 className: U.p$,
                 onClose: G
             }) : (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)("div", B(V({
+                children: [(0, r.jsx)("div", B(F({
                     ref: Q,
                     className: U.AD,
                     id: j.lq
@@ -267,7 +267,7 @@ let H = (0, v.xI)(c.A.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         role: "tabpanel",
         children: e.isLoading ? (0, r.jsx)(u.y$y, {
             className: U.Mz
-        }) : (0, r.jsx)(er, B(V({}, e), {
+        }) : (0, r.jsx)(er, B(F({}, e), {
             ref: t
         }))
     })),

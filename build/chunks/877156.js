@@ -13,90 +13,90 @@ var l = t(627968),
     d = t(674658),
     p = t(898461),
     m = t(837015),
-    g = t(61750),
-    E = t(235986),
+    E = t(61750),
+    g = t(235986),
     f = t(369496),
-    j = t(550111),
-    h = t(287809),
-    x = t(482132),
-    P = t(758836),
-    T = t(985018),
-    S = t(401506);
+    P = t(550111),
+    j = t(287809),
+    h = t(482132),
+    _ = t(758836),
+    x = t(985018),
+    T = t(401506);
 
 function A(e) {
     let {
         rewardSkuId: n,
         onClose: t
-    } = e, A = (0, i.bG)([h.default], () => h.default.getCurrentUser()), O = (0, i.bG)([o.A], () => o.A.useReducedMotion), {
-        analyticsLocations: b
-    } = (0, u.Ay)(), y = a._3J.SIZE_32, {
-        product: I,
-        isFetching: _
-    } = (0, d.q)(n), [v, C] = r.useState(!1), N = null == I ? void 0 : I.items[0], {
+    } = e, A = (0, i.bG)([j.default], () => j.default.getCurrentUser()), O = (0, i.bG)([o.A], () => o.A.useReducedMotion), {
+        analyticsLocations: S
+    } = (0, u.Ay)(), I = a._3J.SIZE_32, {
+        product: b,
+        isFetching: y
+    } = (0, d.q)(n), [v, R] = r.useState(!1), C = null == b ? void 0 : b.items[0], {
         isNameplateReward: M,
-        nameplateData: R,
+        nameplateData: N,
         rewardDeco: k
     } = r.useMemo(() => {
-        if (null == N) return {
+        if (null == C) return {
             isNameplateReward: !1,
             nameplateData: null,
             rewardDeco: void 0
         };
-        if ((0, m.F)(N)) {
+        if ((0, m.F)(C)) {
             var e;
             return {
                 isNameplateReward: !0,
                 nameplateData: {
-                    src: N.asset,
-                    palette: (0, f.H6)(null != (e = N.palette) ? e : "sky"),
-                    imgAlt: N.label
+                    src: C.asset,
+                    palette: (0, f.H6)(null != (e = C.palette) ? e : "sky"),
+                    imgAlt: C.label
                 },
                 rewardDeco: void 0
             }
         }
-        return (0, p.T)(N) ? {
+        return (0, p.T)(C) ? {
             isNameplateReward: !1,
             nameplateData: null,
-            rewardDeco: (0, c.A)(N.asset, y, !O)
+            rewardDeco: (0, c.A)(C.asset, I, !O)
         } : {
             isNameplateReward: !1,
             nameplateData: null,
             rewardDeco: void 0
         }
-    }, [N, y, O]);
-    return (0, l.jsx)(x.UX, {
+    }, [C, I, O]);
+    return (0, l.jsx)(h.UX, {
         children: (0, l.jsx)(a.jlY, {
-            align: E.A.Align.CENTER,
+            align: g.A.Align.CENTER,
             "data-migration-pending": !0,
             children: (0, l.jsxs)("div", {
-                className: S.W,
-                children: [M && null != R ? (0, l.jsx)("div", {
-                    className: S.D,
-                    onMouseEnter: () => C(!0),
-                    onMouseLeave: () => C(!1),
-                    children: (0, l.jsx)(j.a, {
+                className: T.W,
+                children: [M && null != N ? (0, l.jsx)("div", {
+                    className: T.D,
+                    onMouseEnter: () => R(!0),
+                    onMouseLeave: () => R(!1),
+                    children: (0, l.jsx)(P.a, {
                         user: A,
                         nameplate: null,
-                        nameplateData: R,
+                        nameplateData: N,
                         showPlaceholderUser: !0,
                         nameplatePreviewSize: "xsmall",
                         isHighlighted: v
                     })
                 }) : (0, l.jsx)(a.JsQ, {
                     "aria-label": null == A ? void 0 : A.username,
-                    size: y,
-                    src: null == A ? void 0 : A.getAvatarURL(void 0, (0, a.FT9)(y), !O),
+                    size: I,
+                    src: null == A ? void 0 : A.getAvatarURL(void 0, (0, a.FT9)(I), !O),
                     avatarDecoration: k
                 }), (0, l.jsx)(s.$nd, {
                     variant: "primary",
-                    text: T.intl.string(T.t.kMYVwv),
-                    loading: _,
+                    text: x.intl.string(x.t.kMYVwv),
+                    loading: y,
                     onClick: () => {
-                        null != I && (t(), (0, g.A)({
-                            product: I,
+                        null != b && (t(), (0, E.A)({
+                            product: b,
                             shouldShowPromotionalExperience: !0,
-                            analyticsLocations: b,
-                            purchaseType: P.gs.PROMOTIONAL
+                            analyticsLocations: S,
+                            purchaseType: _.gs.PROMOTIONAL
                         }))
                     }
                 })]

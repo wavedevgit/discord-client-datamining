@@ -40,8 +40,8 @@ var r = n(824120),
     k = n(734057),
     U = n(430452),
     G = n(383501),
-    V = n(412780),
-    F = n(873985),
+    F = n(412780),
+    V = n(873985),
     B = n(287809),
     H = n(954571),
     Y = n(353835),
@@ -441,7 +441,7 @@ class eR extends f.A {
                             sender_user_id: this.userId,
                             reason: r,
                             participant_type: "sender",
-                            guild_region: F.A.getRegion(this.hostname),
+                            guild_region: V.A.getRegion(this.hostname),
                             hostname: this.hostname,
                             hardware_enabled: U.A.getHardwareEncoding()
                         }), t, e.getNetworkStats(), e.getCodecUsageStats("sender", this.userId)), {
@@ -462,7 +462,7 @@ class eR extends f.A {
                         sender_user_id: t,
                         reason: r,
                         participant_type: "receiver",
-                        guild_region: F.A.getRegion(this.hostname),
+                        guild_region: V.A.getRegion(this.hostname),
                         hostname: this.hostname,
                         hardware_enabled: U.A.getHardwareEncoding()
                     }), i, e.getNetworkStats(), e.getCodecUsageStats("receiver", t)))
@@ -482,7 +482,7 @@ class eR extends f.A {
                 recovered: !1,
                 downgraded: !1
             });
-            let n = F.A.shouldIncludePreferredRegion() ? F.A.getPreferredRegion() : null,
+            let n = V.A.shouldIncludePreferredRegion() ? V.A.getPreferredRegion() : null,
                 i = U.A.getSettings(),
                 a = k.A.getChannel(this.channelId),
                 o = null == (u = R.A.getConnectionStats(this.getMediaEngineConnectionId())) || null == (c = u.stats.rtp.outbound.find(e => "audio" === e.type)) ? void 0 : c.sampleRateMismatchPercent,
@@ -665,7 +665,7 @@ class eR extends f.A {
             })
         }), f.on(p.yq.Error, t => {
             if (e !== this._socket) return;
-            let n = F.A.shouldIncludePreferredRegion() ? F.A.getPreferredRegion() : null;
+            let n = V.A.shouldIncludePreferredRegion() ? V.A.getPreferredRegion() : null;
             this.logger.error("Error occurred while connecting to RTC server: ".concat(t)), H.default.track(el.HAw.VOICE_CONNECTION_FAILURE, eh(ep({}, this._getAnalyticsProperties()), {
                 hostname: this.hostname,
                 port: this.port,
@@ -699,7 +699,7 @@ class eR extends f.A {
             }
             if (n === el.S7L.RTC_CONNECTING && this.state === el.S7L.RTC_DISCONNECTED ? this.reconnect() : this.state === el.S7L.NO_ROUTE && (0 === this._backoff.fails && this._handleNoRoute(), this._backoff.fail(this.reconnect)), this.state === el.S7L.RTC_CONNECTED) {
                 var r, i, a, o, s, l, c, u, d, p, h, g, E, y;
-                let e = F.A.shouldIncludePreferredRegion() ? F.A.getPreferredRegion() : null;
+                let e = V.A.shouldIncludePreferredRegion() ? V.A.getPreferredRegion() : null;
                 if (this._connecting) {
                     let t = U.A.getSettings(),
                         n = this._getAnalyticsProperties();
@@ -898,7 +898,7 @@ class eR extends f.A {
                 sender_user_id: e,
                 reason: "User disconnected",
                 participant_type: "receiver",
-                guild_region: F.A.getRegion(this.hostname),
+                guild_region: V.A.getRegion(this.hostname),
                 hostname: this.hostname,
                 hardware_enabled: U.A.getHardwareEncoding()
             }), t, s.getNetworkStats(), s.getCodecUsageStats("receiver", e))), s.destroyUser(e), null == (o = this._videoHealthManager) || o.deleteUser(e))
@@ -1363,7 +1363,7 @@ class eR extends f.A {
                 this.logger.info("Go Live Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null == (t = this._connection) || t.setLocalVideoSinkWants(e)
             }
         }));
-        this._remoteVideoSinkWants = ee.AE, es.X.on(es.N.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), es.X.on(es.N.WindowVisibilityChanged, this.windowVisibilityChanged), V.Ay.shouldRecordNextConnection() ? (this._recordingEnabled = !0, E.Et(!1)) : this._recordingEnabled = !1, W.A.addOnlineCallback(this._handleNetworkOnline), W.A.addOfflineCallback(this._handleNetworkOffline), (0, K.isDesktop)() && (this.powerMonitorListener = Z.A.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, U.A.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+        this._remoteVideoSinkWants = ee.AE, es.X.on(es.N.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), es.X.on(es.N.WindowVisibilityChanged, this.windowVisibilityChanged), F.Ay.shouldRecordNextConnection() ? (this._recordingEnabled = !0, E.Et(!1)) : this._recordingEnabled = !1, W.A.addOnlineCallback(this._handleNetworkOnline), W.A.addOfflineCallback(this._handleNetworkOffline), (0, K.isDesktop)() && (this.powerMonitorListener = Z.A.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, U.A.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
             this._supportedBandwidthEstimationExperiments = e
         })
     }

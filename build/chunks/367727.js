@@ -12,9 +12,9 @@ n.d(t, {
     Sx: () => Y,
     Tg: () => v,
     Uu: () => S,
-    Vh: () => V,
+    Vh: () => F,
     X0: () => B,
-    YV: () => F,
+    YV: () => V,
     bQ: () => A,
     cN: () => j,
     d6: () => H,
@@ -226,7 +226,7 @@ function U(e, t) {
 }
 let G = new Set([i.M.ACCOUNT_LINK_INVITE_FRIENDS, i.M.POST_ACCOUNT_CONNECTION_RTC_POPOVER, i.M.ACCOUNT_LINK_PROMPT]);
 
-function V(e, t, n, r) {
+function F(e, t, n, r) {
     if ((0, h.dD)(e) || _.A.hasUserHitDCCap(e, null == t ? void 0 : t.guildId)) return;
     let o = d.A.getConfig({
         location: "requestMarkDismissibleContentAsShown"
@@ -254,7 +254,7 @@ function V(e, t, n, r) {
     }))
 }
 
-function F(e, t) {
+function V(e, t) {
     ((0, h.dD)(e) || t.forceTrack) && Z(e, t), (0, p.Xw)(e)
 }
 
@@ -284,15 +284,15 @@ function W(e, t) {
 }
 async function K(e, t, n) {
     let r = W(e, n);
-    F(e, n), await A(e, t, r), B(e, n)
+    V(e, n), await A(e, t, r), B(e, n)
 }
 async function z(e, t, n) {
     let r = W(e, n);
-    F(e, n), await S(e, t, r), B(e, n)
+    V(e, n), await S(e, t, r), B(e, n)
 }
 async function q(e, t) {
     let n = W(e, t);
-    F(e, t), await I(e, n), B(e, t)
+    V(e, t), await I(e, n), B(e, t)
 }
 
 function Z(e, t) {

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     Bf: () => k,
-    Br: () => V,
+    Br: () => F,
     fr: () => B,
     m4: () => x,
     oS: () => G,
@@ -70,7 +70,7 @@ let x = {
         return Math.floor(Math.random() * n.length)
     };
 
-function V(e) {
+function F(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 32;
     if (null != e.id) {
         var n;
@@ -85,7 +85,7 @@ function V(e) {
     return null != i ? P.Ay.getURL(i.surrogates) : ""
 }
 
-function F(e, t) {
+function V(e, t) {
     return i()(e).map(e => {
         var n;
         return null != (n = e[t]) ? n : null
@@ -95,8 +95,8 @@ function F(e, t) {
 function B(e) {
     var t, n, r, i, a, o;
     if (e.length < 1) return "";
-    let s = F(e, "userId"),
-        l = F(e, "emojiName"),
+    let s = V(e, "userId"),
+        l = V(e, "emojiName"),
         c = l.length < 2 ? null != (t = null == l ? void 0 : l[0]) ? t : "" : l.join(", ");
     return s.length < 1 ? "" : 1 === s.length ? L.intl.formatToPlainString(L.t.yZYxzF, {
         firstUsername: null == (n = w.default.getUser(s[0])) ? void 0 : n.username,

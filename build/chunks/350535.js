@@ -9,7 +9,7 @@ n.d(t, {
     _$: () => I,
     dI: () => U,
     pi: () => j,
-    sg: () => V
+    sg: () => F
 }), n(896048), n(747238), n(812715), n(65821), n(321073), n(733351);
 var r = n(695497),
     i = n.n(r),
@@ -270,6 +270,6 @@ function G(e, t) {
     })
 }
 
-function V(e) {
+function F(e) {
     return null != e && "object" == typeof e && "nativeEvent" in e && 0 === e.nativeEvent.clientX && 0 === e.nativeEvent.clientY
 }

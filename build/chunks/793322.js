@@ -5,8 +5,8 @@ n.d(t, {
     F6: () => W,
     L$: () => B,
     LV: () => j,
-    WU: () => V,
-    jD: () => F,
+    WU: () => F,
+    jD: () => V,
     wf: () => Y
 }), n(591487), n(727858), n(747238), n(812715), n(896048);
 var r = n(397927),
@@ -160,7 +160,7 @@ function G() {
     })
 }
 
-function V() {
+function F() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "KEYBIND",
         t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
     k(e), i.h.dispatch(P({
@@ -168,13 +168,13 @@ function V() {
     }, j(t)))
 }
 
-function F() {
+function V() {
     U(C.HAw.QUICKSWITCHER_CLOSED), G()
 }
 
 function B() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "KEYBIND";
-    T.A.isOpen() ? F() : V(e)
+    T.A.isOpen() ? V() : F(e)
 }
 
 function H(e) {

@@ -143,7 +143,7 @@ function G(e) {
     return null == t || a()().diff(t, "day") < e
 }
 
-function V(e) {
+function F(e) {
     let {
         survey: t,
         isActionTriggered: n
@@ -157,7 +157,7 @@ function V(e) {
     C = i && a && !o ? t : null
 }
 
-function F(e) {
+function V(e) {
     let {
         id: t
     } = e;
@@ -189,7 +189,7 @@ function K(e) {
 
 function z() {
     let e = Object.values(T = null != T ? T : {})[0];
-    return null != e && j(e) ? void V({
+    return null != e && j(e) ? void F({
         type: "SURVEY_FETCHED",
         survey: e
     }) : null != C && void(C = null)
@@ -241,9 +241,9 @@ E(Q, "displayName", "SurveyStore"), E(Q, "persistKey", "SurveyStore"), E(Q, "mig
 let X = new Q(c.h, {
     CONNECTION_OPEN: M,
     CONNECTION_RESUMED: M,
-    SURVEY_FETCHED: V,
+    SURVEY_FETCHED: F,
     SURVEY_HIDE: Y,
-    SURVEY_OVERRIDE: F,
+    SURVEY_OVERRIDE: V,
     PUSH_NOTIFICATION_CLICK: B,
     DISPLAYED_INVITE_SHOW: H,
     LOGOUT: W,

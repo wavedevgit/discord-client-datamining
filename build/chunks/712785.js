@@ -41,8 +41,8 @@ var i = n(503698),
     k = n(531648),
     U = n(910607),
     G = n(753713),
-    V = n(8738),
-    F = n(707794),
+    F = n(8738),
+    V = n(707794),
     B = n(518477),
     H = n(652215),
     Y = n(360469),
@@ -119,7 +119,7 @@ function J(e) {
     }), ec = (0, C.A)(i), eu = null != ec.text && "" !== ec.text, {
         largeImage: ed,
         smallImage: ef
-    } = (0, h.XN)(i, q), ep = (0, F.A)({
+    } = (0, h.XN)(i, q), ep = (0, V.A)({
         location: "UserProfileActivityCard",
         user: t,
         currentUser: n,
@@ -332,7 +332,7 @@ function J(e) {
                 textId: er,
                 tags: e_()
             }, ec), {
-                contextMenu: (0, r.jsx)(V.A, {
+                contextMenu: (0, r.jsx)(F.A, {
                     display: "live",
                     user: t,
                     activity: i,

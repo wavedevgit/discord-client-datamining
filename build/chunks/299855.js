@@ -36,8 +36,8 @@ let r = n(64672),
     k = n(964580),
     U = n(861345),
     G = n(181817),
-    V = n(139328),
-    F = n(711002);
+    F = n(139328),
+    V = n(711002);
 e.exports = {
     parse: s,
     valid: l,
@@ -72,8 +72,8 @@ e.exports = {
     validRange: k,
     outside: U,
     gtr: G,
-    ltr: V,
-    intersects: F,
+    ltr: F,
+    intersects: V,
     simplifyRange: n(532879),
     subset: n(549566),
     SemVer: a,

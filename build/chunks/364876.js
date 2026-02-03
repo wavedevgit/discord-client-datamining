@@ -1,6 +1,6 @@
 /** chunk id: 364876, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    _: () => g
+    _: () => E
 });
 var l = t(627968);
 t(64700);
@@ -15,7 +15,7 @@ var r = t(877624),
     p = t(985018),
     m = t(686046);
 
-function g() {
+function E() {
     var e;
     let n = (0, i.bG)([u.A], () => {
             let e = u.A.getMarketingComponentByType(r.C.GIFT_CUSTOMIZATION_BANNER);
@@ -24,26 +24,26 @@ function g() {
         {
             claimableRewards: t
         } = (0, a.Pv)(),
-        g = (0, o.T)(null == n ? void 0 : n.asset),
-        E = (0, o.T)(null == n ? void 0 : n.backgroundAsset),
+        E = (0, o.T)(null == n ? void 0 : n.asset),
+        g = (0, o.T)(null == n ? void 0 : n.backgroundAsset),
         f = null == n ? void 0 : n.gradient,
-        j = null != f && null != f.colors && f.colors.length >= 2 ? (0, c.K5)({
+        P = null != f && null != f.colors && f.colors.length >= 2 ? (0, c.K5)({
             gradient: f.colors,
             angle: null != (e = f.angle) ? e : void 0
         }, {
             colorStops: [0, 12, 100]
         }) : void 0,
-        h = (0, c.gc)(null != E ? E : void 0);
-    null != h && (h.backgroundSize = "cover, auto", h.backgroundPosition = "right center, 0% 0%");
-    let x = (0, c.x)(h, j);
+        j = (0, c.gc)(null != g ? g : void 0);
+    null != j && (j.backgroundSize = "cover, auto", j.backgroundPosition = "right center, 0% 0%");
+    let h = (0, c.x)(j, P);
     return null == n || null == t ? null : (0, l.jsxs)("div", {
         className: m.qD,
-        style: x,
+        style: h,
         children: [(0, l.jsx)("div", {
             className: m.my,
             children: (0, l.jsx)(d.A, {
                 claimableRewards: t,
-                maxRewardImageSrc: null != g ? g : "",
+                maxRewardImageSrc: null != E ? E : "",
                 size: s._3J.SIZE_40,
                 imageScaling: 1.25
             })

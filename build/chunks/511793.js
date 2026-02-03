@@ -102,18 +102,18 @@ let x = (0, h.Fe)({
         webpackId: 885338,
         name: "VerifyConnectedAccountError"
     }),
-    V = (0, h.Fe)({
+    F = (0, h.Fe)({
         createPromise: () => Promise.all([n.e("34917"), n.e("52986")]).then(n.bind(n, 97649)),
         webpackId: 97649,
         name: "LinkConnectedAccount"
     }),
-    F = (0, h.Fe)({
+    V = (0, h.Fe)({
         createPromise: () => n.e("65893").then(n.bind(n, 599128)),
         webpackId: 599128,
         name: "LinkAuthorize"
     }),
     B = (0, h.Fe)({
-        createPromise: () => Promise.all([n.e("82832"), n.e("16864")]).then(n.bind(n, 60883)),
+        createPromise: () => Promise.all([n.e("50906"), n.e("16864")]).then(n.bind(n, 60883)),
         webpackId: 60883,
         name: "ActivateDevice"
     }),
@@ -125,7 +125,7 @@ let x = (0, h.Fe)({
         id: 885041
     }),
     Y = (0, h.Fe)({
-        createPromise: () => Promise.all([n.e("82832"), n.e("48330"), n.e("37372"), n.e("88890"), n.e("79023"), n.e("7726"), n.e("99673"), n.e("34078"), n.e("94531"), n.e("86142")]).then(n.bind(n, 998643)),
+        createPromise: () => Promise.all([n.e("50906"), n.e("48330"), n.e("37372"), n.e("88890"), n.e("79023"), n.e("7726"), n.e("99673"), n.e("34078"), n.e("94531"), n.e("86142")]).then(n.bind(n, 998643)),
         webpackId: 998643,
         name: "ViewsWithAuth"
     }),
@@ -276,10 +276,10 @@ class ei extends i.Component {
                 component: z
             }), (0, r.jsx)(_.A, {
                 path: N.BVt.CONNECTION_LINK(":type"),
-                component: V
+                component: F
             }), (0, r.jsx)(_.A, {
                 path: N.BVt.CONNECTION_LINK_AUTHORIZE(":type"),
-                component: F
+                component: V
             }), (0, r.jsx)(_.A, {
                 path: N.BVt.ACTIVATE,
                 component: B

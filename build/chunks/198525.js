@@ -1,11 +1,11 @@
 /** chunk id: 198525, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => F
+    A: () => V
 }), n(896048);
 var r = n(627968),
     i = n(64700),
-    a = n(353709),
+    a = n(92674),
     o = n(837381),
     s = n(311907),
     l = n(732955),
@@ -61,8 +61,8 @@ let k = "8px",
     U = "11px",
     G = 222;
 
-function V(e) {
-    var t, S, M, V, F;
+function F(e) {
+    var t, S, M, F, V;
     let {
         quest: B,
         memberListItemRef: H,
@@ -79,7 +79,7 @@ function V(e) {
         quest: B,
         questContent: E.uF.MEMBERS_LIST,
         sourceQuestContent: E.uF.MEMBERS_LIST
-    }), J = (null == B || null == (S = B.userStatus) ? void 0 : S.claimedAt) != null, $ = (null == B || null == (M = B.userStatus) ? void 0 : M.enrolledAt) != null, ee = (null == B || null == (V = B.userStatus) ? void 0 : V.completedAt) != null, et = (0, s.bG)([m.A], () => m.A.getState().theme), en = (0, c.Mw)(et) ? D.NJ.DARK : D.NJ.LIGHT, er = (0, s.bG)([_.A], () => _.A.useReducedMotion), {
+    }), J = (null == B || null == (S = B.userStatus) ? void 0 : S.claimedAt) != null, $ = (null == B || null == (M = B.userStatus) ? void 0 : M.enrolledAt) != null, ee = (null == B || null == (F = B.userStatus) ? void 0 : F.completedAt) != null, et = (0, s.bG)([m.A], () => m.A.getState().theme), en = (0, c.Mw)(et) ? D.NJ.DARK : D.NJ.LIGHT, er = (0, s.bG)([_.A], () => _.A.useReducedMotion), {
         ref: ei,
         height: ea
     } = (0, p.Ay)(), [eo, es] = i.useState(er), el = (0, h.aL)(), ec = (0, o.KF)();
@@ -213,7 +213,7 @@ function V(e) {
         "aria-expanded": eo,
         className: x.iE,
         style: {
-            width: null != (t = null == (F = H.current) ? void 0 : F.clientWidth) ? t : G,
+            width: null != (t = null == (V = H.current) ? void 0 : V.clientWidth) ? t : G,
             height: eu.height,
             overflow: eo ? "visible" : "hidden",
             borderRadius: ep
@@ -292,13 +292,13 @@ function V(e) {
     })
 }
 
-function F(e) {
+function V(e) {
     return (0, r.jsx)(S.R, {
         questOrQuests: e.quest,
         questContent: E.uF.MEMBERS_LIST,
         trackGuildAndChannelMetadata: !0,
         sourceQuestContent: E.uF.MEMBERS_LIST,
-        children: t => (0, r.jsx)(V, j({
+        children: t => (0, r.jsx)(F, j({
             impressionRef: t
         }, e))
     })

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => B,
-    k: () => V
+    k: () => F
 }), n(65821), n(142703), n(733351);
 var r = n(110259),
     i = n(136722),
@@ -114,14 +114,14 @@ let k = e => {
         })
     };
 
-function V(e) {
+function F(e) {
     return new Promise(t => y.A.addConditionalChangeListener(() => {
         let n = y.A.getGuild(e);
         return null == n || (t(n), !1)
     }))
 }
 
-function F(e, t) {
+function V(e, t) {
     return null != t ? t : (0, _.W)(e)
 }
 let B = {
@@ -192,9 +192,9 @@ let B = {
             throw (null == (c = t.body) ? void 0 : c.code) === N.t02.GUILD_AT_CAPACITY && G(), E && (null == (u = t.body) ? void 0 : u.code) === N.t02.UNKNOWN_GUILD && U(e), t
         }
     },
-    waitForGuild: V,
+    waitForGuild: F,
     async transitionToGuildSync(e, t, n, r) {
-        let i = F((await V(e)).id, n),
+        let i = V((await F(e)).id, n),
             a = t;
         (null == t ? void 0 : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (a = x(D({}, t), {
             welcomeModalChannelId: null != i ? i : void 0

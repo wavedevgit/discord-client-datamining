@@ -266,7 +266,7 @@ function G(e) {
             ref: s,
             lineHeight: c,
             lineCount: u
-        } = V(),
+        } = F(),
         d = i.useMemo(() => {
             if (null == c || null == u) return {
                 key: 0
@@ -320,7 +320,7 @@ function G(e) {
     })
 }
 
-function V() {
+function F() {
     let e = i.useRef(null),
         [t, n] = i.useState(null),
         [r, a] = i.useState(null);

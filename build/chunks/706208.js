@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(643479),
     i = n(761799);
 let a = {
-        isJpegFile: V,
-        findJpegOffsets: F
+        isJpegFile: F,
+        findJpegOffsets: V
     },
     o = 2,
     s = 65496,
@@ -44,11 +44,11 @@ let a = {
     U = "http://ns.adobe.com/xmp/extension/\0",
     G = "Photoshop 3.0";
 
-function V(e) {
+function F(e) {
     return !!e && e.byteLength >= o && e.getUint16(0) === s
 }
 
-function F(e) {
+function V(e) {
     let t, n, r, a, o, s, _, h, E, O = l;
     for (; O + c + 5 <= e.byteLength;) {
         if (i.A.USE_FILE && B(e, O)) t = e.getUint16(O + u), n = O + u;

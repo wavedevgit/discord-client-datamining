@@ -177,8 +177,8 @@ function G(e) {
         environment: w,
         setConfettiCanvas: R,
         customConfettiVisible: G,
-        setCustomConfettiVisible: V,
-        customConfettiDisplayOptions: F,
+        setCustomConfettiVisible: F,
+        customConfettiDisplayOptions: V,
         hideConfirmStepConfetti: B
     } = x({
         skuId: l
@@ -192,7 +192,7 @@ function G(e) {
         onClose: t,
         onComplete: n,
         skuIDs: H,
-        setCustomConfettiVisible: V
+        setCustomConfettiVisible: F
     }), z = (e, t, n) => (0, r.jsx)(U, {
         isGift: c,
         step: n,
@@ -212,7 +212,7 @@ function G(e) {
         children: [(0, r.jsx)(k, {
             environment: w,
             setConfettiCanvas: R,
-            customConfettiDisplayOptions: F,
+            customConfettiDisplayOptions: V,
             customConfettiVisible: G
         }), (0, r.jsx)(h.PaymentContextProvider, {
             loadId: s,

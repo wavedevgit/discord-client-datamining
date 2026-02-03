@@ -8,7 +8,7 @@ var l = n(627968),
     a = n.n(i),
     s = n(284009),
     o = n.n(s),
-    c = n(353709),
+    c = n(92674),
     u = n(835245),
     d = n(311907),
     h = n(827734),
@@ -253,8 +253,8 @@ let ee = r.memo(r.forwardRef(function(e, t) {
             return !!(!eF && (null == (t = eT.current) ? void 0 : t.onMoveSelection(e))) || (null == (n = eZ.current) ? void 0 : n.onMoveSelection(e)) || !1
         }, [eF])
     }), {
-        expressionPickerView: e5,
-        shouldHideExpressionPicker: e6,
+        expressionPickerView: e6,
+        shouldHideExpressionPicker: e5,
         handleOuterClick: e9
     } = (0, V.MD)(K, eN, U.id), e8 = (0, V.BX)(p), {
         currentAutocompleteType: e4,
@@ -476,7 +476,7 @@ let ee = r.memo(r.forwardRef(function(e, t) {
                     textValue: p,
                     focused: Y,
                     isEditorIdle: e8,
-                    expressionPickerView: e5,
+                    expressionPickerView: e6,
                     type: K,
                     editorRef: eN,
                     onSendMessage: eq,
@@ -486,7 +486,7 @@ let ee = r.memo(r.forwardRef(function(e, t) {
                     setValue: (e, t) => null == ee ? void 0 : ee(null, e, t),
                     position: eb
                 })]
-            }), e6 ? null : (0, l.jsx)(x.A, {
+            }), e5 ? null : (0, l.jsx)(x.A, {
                 positionTargetRef: eI,
                 type: K,
                 onSelectGIF: tn,

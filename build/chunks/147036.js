@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     CG: () => T,
-    DJ: () => V,
+    DJ: () => F,
     IP: () => w,
     Jg: () => x,
     Jz: () => P,
@@ -205,7 +205,7 @@ function G(e, t, n, r) {
     return null != t && o ? U(a, t.id, e.id, m.default.castChannelIdAsMessageId(e.id)) : null != r ? r : k(a, e.id, n)
 }
 
-function V(e) {
+function F(e) {
     if (null == e) return null;
     switch (e.type) {
         case g.rbe.GUILD_ANNOUNCEMENT:
